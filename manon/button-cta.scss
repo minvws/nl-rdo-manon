@@ -1,0 +1,85 @@
+/*---------------------------------------------------------------*/
+/*--------------------- button-cta.scss -------------------------*/
+/*---------------------------------------------------------------*/
+@use "button-cta-variables";
+
+button,
+a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  &.cta {
+    outline-style: var(--button-cta-outline-style);
+    outline-color: var(--button-cta-outline-color);
+    outline-width: var(--button-cta-outline-width);
+    outline-offset: var(--button-cta-outline-offset);
+    background-color: var(--button-cta-background-color);
+    border-width: var(--button-cta-border-width);
+    border-style: var(--button-cta-border-style);
+    border-color: var(--button-cta-border-color);
+    color: var(--button-cta-text-color);
+    -webkit-appearance: none; /* Reset ios button styling */
+    border-radius: var(--button-cta-border-radius);
+    webkit-border-radius: var(
+      --button-cta-border-radius
+    ); /* Reset ios button styling */
+
+    &:visited {
+      color: var(--button-cta-text-color);
+    }
+
+    &:hover,
+    &.hover {
+      outline-style: var(--button-cta-hover-outline-style);
+      outline-color: var(--button-cta-hover-outline-color);
+      outline-width: var(--button-cta-hover-outline-width);
+      outline-offset: var(--button-cta-hover-outline-offset);
+      background-color: var(--button-cta-hover-background-color);
+      color: var(--button-cta-hover-text-color);
+      border-style: var(--button-cta-hover-border-style);
+      border-color: var(
+        --button-cta-hover-border-color,
+        var(--application-base-accent-color-accent)
+      );
+      border-width: var(--button-cta-hover-border-width);
+    }
+
+    &:active,
+    &.active {
+      outline-style: var(--button-cta-active-outline-style);
+      outline-color: var(--button-cta-active-outline-color);
+      outline-width: var(--button-cta-active-outline-width);
+      outline-offset: var(--button-cta-active-outline-offset);
+      background-color: var(--button-cta-active-background-color);
+      color: var(--button-cta-active-text-color);
+      border-style: var(--button-cta-active-border-style);
+      border-color: var(
+        --button-cta-active-border-color,
+        var(--application-base-accent-color-accent)
+      );
+      border-width: var(--button-cta-active-border-width);
+    }
+
+    &:focus,
+    &.focus {
+      outline-style: var(--button-cta-focus-outline-style);
+      outline-color: var(--button-cta-focus-outline-color);
+      outline-width: var(--button-cta-focus-outline-width);
+      outline-offset: var(--button-cta-focus-outline-offset);
+      border-style: var(--button-cta-focus-border-style);
+      border-color: var(
+        --button-cta-focus-border-color,
+        var(--application-base-accent-color-accent)
+      );
+      border-width: var(--button-cta-focus-border-width);
+      background-color: var(
+        --button-cta-focus-background-color,
+        var(--application-base-accent-color-accent)
+      );
+      color: var(
+        --button-cta-focus-text-color,
+        var(--application-text-color-accent)
+      );
+    }
+  }
+}

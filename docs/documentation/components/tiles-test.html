@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tegelweergave testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./tiles.html">Tegelweergave</a></li>
+            <li><a href="./tiles-test.html" aria-current="page">Tegelweergave testpagina</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Tegelweergave testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+
+            <h2>Groep met tegels <code>div</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <div class="tiles column-3">
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="tiles column-3">
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>Lijst met tegels</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <ul class="tiles column-3">
+              <li role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </li>
+
+              <li role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </li>
+
+              <li role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </li>
+            </ul>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;ul class="tiles column-3">
+  &lt;li role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/li>
+
+  &lt;li role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/li>
+
+  &lt;li role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/li>
+&lt;/ul>
+              </code>
+            </pre>
+
+            <h2>50/50</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <div class="tiles fifty-fifty">
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="tiles fifty-fifty">
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>2/3e 1/3e</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <div class="tiles two-thirds-one-third">
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="tiles two-thirds-one-third">
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>1/3e 2/3e</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <div class="tiles one-third-two-thirds">
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+
+              <div role="group">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              </div>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="tiles two-thirds-one-third">
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+
+  &lt;div role="group">
+    &lt;h1>Lorem ipsum&lt;/h1>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.&lt;/p>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

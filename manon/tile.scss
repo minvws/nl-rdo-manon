@@ -1,0 +1,68 @@
+/*---------------------------------------------------------------*/
+/*-------------------------- tile.scss --------------------------*/
+/*---------------------------------------------------------------*/
+@use "tile-variables";
+
+%tile,
+.tile {
+  display: flex;
+  flex-direction: var(--tile-flex-direction, column);
+  gap: var(--tile-gap);
+  border-width: var(--tile-border-width);
+  border-style: var(--tile-border-style);
+  border-color: var(--tile-border-color);
+  box-sizing: border-box;
+  background-color: var(--tile-background-color);
+  color: var(--tile-text-color);
+  padding-top: var(--tile-padding-top);
+  padding-right: var(--tile-padding-right);
+  padding-bottom: var(--tile-padding-bottom);
+  padding-left: var(--tile-padding-left);
+  border-radius: var(--tile-border-radius);
+
+  > * {
+    box-sizing: border-box;
+    width: 100%;
+    color: inherit;
+  }
+
+  h1 {
+    font-size: var(--tile-title-font-size-text);
+    color: var(--tile-title-text-color, inherit);
+  }
+
+  h2 {
+    font-size: var(--tile-subtitle-font-size-text);
+    color: var(--tile-subtitle-text-color, inherit);
+  }
+
+  ul {
+    padding-left: 2rem;
+  }
+}
+
+.tiles {
+  align-items: var(--tiles-align-items);
+
+  /* render each div directly within a tiles group as a tile */
+  > div {
+    @extend %tile;
+  }
+}
+
+.tiles > div {
+  @extend %tile;
+}
+
+ul.tiles {
+  padding-left: 0;
+
+  > li {
+    @extend %tile;
+
+    > a {
+      color: var(--text-dark);
+      text-decoration: none;
+    }
+  }
+}

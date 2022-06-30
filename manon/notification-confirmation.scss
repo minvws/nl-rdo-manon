@@ -1,0 +1,40 @@
+/*---------------------------------------------------------------*/
+/*---------------- notification-confirmation.scss ---------------*/
+/*---------------------------------------------------------------*/
+@use "notification-base";
+@use "notification-confirmation-variables";
+
+p.confirmation,
+span.confirmation,
+section.confirmation,
+div.confirmation {
+  @extend %notification;
+  background-color: var(--notification-confirmation-background-color);
+  border-width: var(--notification-confirmation-border-width);
+  border-style: var(--notification-confirmation-border-style);
+  border-color: var(--notification-confirmation-border-color);
+
+  &:before {
+    content: var(--notification-confirmation-icon-before-content);
+  }
+
+  &:after {
+    content: var(--notification-confirmation-icon-after-content);
+  }
+}
+
+textarea.confirmation,
+select.confirmation,
+input.confirmation {
+  border-width: var(--notification-confirmation-border-width);
+  border-style: var(--notification-confirmation-border-style);
+  border-color: var(--notification-confirmation-border-color);
+
+  &:before {
+    content: var(--notification-confirmation-icon-before-content);
+  }
+
+  &:after {
+    content: var(--notification-confirmation-icon-after-content);
+  }
+}

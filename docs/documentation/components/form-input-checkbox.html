@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Selectievak - checkbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./forms.html">Formulieren</a></li>
+            <li><a href="./form-input-checkbox.html" aria-current="page">Selectievak - <code>checkbox</code></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <ul>
+          <li><a href="./form-input-checkbox.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Selectievak - <code>checkbox</code></h1>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+              <li>Plaats de <code>&lt;input></code> toe van het type <code>type="checkbox"</code>. Voorbeeld: <code>input type="checkbox"></code></li>
+              <li>Voeg direct daaropvolgend het bijbehorden <code>&lt;label></code> toe.</li>
+            </ol>
+
+             <p class="explanation"><strong>Tip:</strong> Om checkboxes een eigen gekozen kleur mee te geven kan gebruik gemaakt worden van <a href="./form-accent-color.html">accentkleur op formulierelementen</a>.</p>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+
+            <h2>Visueel voorbeeld:</h2>
+            <h3>Basis</h3>
+            <form action="" method="post">
+              <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox">
+              <label for="checkbox-example-base">Lorem ipsum dolor set amet</label>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;input type="checkbox" id="checkbox-example-base" name="standaard-checkbox">
+  &lt;label for="checkbox-example-base">Lorem ipsum dolor set amet&lt;/label>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h3>Gegroepeerd</h3>
+            <form action="" method="post">
+              <div>
+                <input type="checkbox" id="checkbox-example-grouped" name="standaard-checkbox">
+                <label for="checkbox-example-grouped">Lorem ipsum dolor set amet</label>
+              </div>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div>
+    &lt;input type="checkbox" id="checkbox-example-grouped" name="standaard-checkbox">
+    &lt;label for="checkbox-example-grouped">Lorem ipsum dolor set amet&lt;/label>
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h3>Verplicht</h3>
+            <form action="" method="post">
+              <div>
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <div class="horizontal-view">
+                  <input type="checkbox" id="checkbox-example-required-1" name="voorwaarden" required>
+                  <label for="checkbox-example-required-1">verplicht selectievak</label>
+                </div>
+              </div>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div>
+    &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+    &lt;div class="horizontal-view">
+      &lt;input type="checkbox" id="checkbox-example-required-1" name="voorwaarden" required>
+      &lt;label for="checkbox-example-required-1">verplicht selectievak&lt;/label>
+    &lt;/div>
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h3>Uitgeschakeld</h3>
+            <form action="" method="post">
+              <div>
+                <span class="nota-bene">Dit veld is uitgeschakeld</span>
+                <div class="horizontal-view">
+                  <input type="checkbox" id="checkbox-example-disabled" name="voorwaarden" disabled>
+                  <label for="checkbox-example-disabled">verplicht selectievak</label>
+                </div>
+              </div>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div>
+    &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+    &lt;div class="horizontal-view">
+      &lt;input type="checkbox" id="checkbox-example-disabled" name="voorwaarden" disabled>
+      &lt;label for="checkbox-example-disabled">verplicht selectievak&lt;/label>
+    &lt;/div>
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Bijbehorende bestanden</h1>
+            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <h2>Benodigd</h2>
+            <ul>
+              <li><code>form/form-checkbox.scss</code></li>
+            </ul>
+
+            <h2>Optioneel</h2>
+            <ul>
+              <li><code>form/form-checkbox-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <ul>
+              <li><a href="../variables.html#margin-right">margin-right</a></li>
+              <li><a href="../variables.html#vertical-align">vertical-align</a></li>
+              <li><a href="../variables.html#width">width</a></li>
+              <li><a href="../variables.html#height">height</a></li>
+            </ul>
+          </section>
+
+          <section id="related">
+            <h1>Gerelateerde pagina's</h1>
+            <a href="./form-input-checkbox-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

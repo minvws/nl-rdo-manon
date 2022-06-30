@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 50rem)" aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./layouts.html" aria-current="page">Layouts</a></li>
+            <li><a href="./layout-two-thirds-one-third.html" aria-current="page">Layout tweederde eenderde</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Layout tweederde eenderde</h1>
+            <p>Verdeling 66.66% - 33.33% vanaf het ingestelde breekpunt.</p>
+          </section>
+
+          <section id="requirements">
+            <h1>Benodigde bestanden</h1>
+            <p>Om gebruik te maken van de styling dienen de onderstaande bestanden ingeladen te zijn via het <code>manon.scss</code> bestand.</p>
+
+            <ul>
+              <li><code>layout/layout-base.scss</code></li>
+              <li><code>layout/layout-base-variables.scss</code></li>
+              <li><code>layout/layout-two-thirds-one-third.scss</code></li>
+              <li><code>layout/layout-two-thirds-one-third-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h2>Instelbare variabelen</h2>
+            <ul>
+              <li><a href="../variables.html#gap">gap</a></li>
+              <li><a href="../variables.html#breakpoints">breekpunten</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>Voorbeeld</h1>
+            <h2>Visueel voorbeeld:</h2>
+
+            <div class="two-thirds-one-third">
+              <div>
+                <h2>Lorem ipsum dolor set</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.</p>
+              </div>
+
+              <div>
+                <h2>Lorem ipsum dolor set</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.</p>
+              </div>
+            </div>
+
+            <h2>Html-voorbeeld:</h2>
+
+            <h3><code>div</code>:</h3>
+            <pre>
+              <code>
+&lt;div class="two-thirds-one-third">
+  &lt;div>
+    &lt;!-- Content -->
+  &lt;/div>
+
+  &lt;div>
+    &lt;!-- Content -->
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h3><code>section</code>:</h3>
+            <pre>
+              <code>
+&lt;section class="two-thirds-one-third">
+  &lt;div>
+    &lt;!-- Content -->
+  &lt;/div>
+
+  &lt;div>
+    &lt;!-- Content -->
+  &lt;/div>
+&lt;/section>
+              </code>
+            </pre>
+
+            <h3><code>article</code>:</h3>
+            <pre>
+              <code>
+&lt;article class="two-thirds-one-third">
+  &lt;div>
+    &lt;!-- Content -->
+  &lt;/div>
+
+  &lt;div>
+    &lt;!-- Content -->
+  &lt;/div>
+&lt;/article>
+              </code>
+            </pre>
+          </section>
+
+          <section id="related">
+            <h1>Gerelateerde pagina's</h1>
+            <a href="./layout-two-thirds-one-third-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

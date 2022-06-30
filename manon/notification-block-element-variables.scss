@@ -1,0 +1,33 @@
+/*---------------------------------------------------------------*/
+/*---------- notification-block-element-variables.scss ----------*/
+/*---------------------------------------------------------------*/
+:root {
+  --notification-block-element-flex-direction: column;
+  --notification-block-element-align-items: flex-start;
+  --notification-block-element-justify-content: flex-start;
+  --notification-block-element-position: relative;
+  --notification-block-element-width: var(--notification-base-width);
+  --notification-block-element-padding-top: 1.5rem;
+  --notification-block-element-padding-right: 1rem;
+  --notification-block-element-padding-bottom: 1.5rem;
+  --notification-block-element-padding-left: 1rem;
+  --notification-block-element-gap: 1rem;
+  --notification-block-element-text-color: #000;
+
+  /* Link */
+  --notification-block-element-link-text-color: var(
+    --link-block-element-text-color
+  );
+  --notification-block-element-link-hover-text-color: var(
+    --link-block-element-hover-text-color
+  );
+  --notification-block-element-link-visited-text-color: var(
+    --link-block-element-visited-text-color
+  );
+  --notification-block-element-link-visited-hover-text-color: var(
+    --link-block-element-visited-hover-text-color
+  );
+
+  /* Span */
+  --notification-block-element-span-font-weight: bold;
+}

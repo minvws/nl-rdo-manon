@@ -1,0 +1,12 @@
+/*---------------------------------------------------------------*/
+/*------------------ table-caption-variables.scss ---------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Table caption */
+  /* --table-base-caption-background-color: ; */
+  --table-base-caption-text-color: var(--de-emphasized-text-color);
+  --table-base-caption-font-size: var(--de-emphasized-font-size);
+  --table-base-caption-line-height: var(--de-emphasized-line-height);
+  --table-base-caption-padding: 1rem 0 0.5rem 0;
+  --table-base-caption-text-align: left;
+}

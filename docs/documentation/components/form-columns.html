@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Weergave in kolommen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./forms.html">Formulieren</a></li>
+            <li><a href="./form-columns.html" aria-current="page">Weergave in kolommen</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <ul>
+          <li><a href="./form-columns.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+          <li><a href="#issues">Bekende problemen</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Weergave in kolommen</h1>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+              <li>Groepeer de gewenste velden en geef de gewenste hoeveelheid kolommen op. Bijvoorbeeld: <code>class="column-2</code>.</li>
+            </ol>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+
+            <h2>Basis</h2>
+            <h3>Visueel voorbeeld:</h3>
+
+            <form action="" method="post">
+              <div class="column-2">
+                <div>
+                  <label for="voorbeeld-1-date-1-start">van</label>
+                  <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start">
+                </div>
+
+                <div>
+                  <label for="voorbeeld-1-date-1-end">tot</label>
+                  <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end">
+                </div>
+              </div>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
+  &lt;input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+          </section>
+
+          <section id="requirements">
+            <h1>Bijbehorende bestanden</h1>
+            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+
+            <h2>Benodigd</h2>
+            <ul>
+              <li><code>form/form-base.scss</code></li>
+            </ul>
+
+            <h2>Optioneel</h2>
+            <ul>
+              <li><code>form/form-base-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <p>Dit element heeft zelf geen instelbare variabelen.</p>
+
+            <p>Bijbehorende elementen:</p>
+            <ul>
+              <li><a href="./form-base.html">form-base</a></li>
+              <li>Gewenste layout, bijvoorbeeld:
+                <ul>
+                  <li><a href="./layout-column-2.html">layout-column-2</a></li>
+                  <li><a href="./layout-column-3.html">layout-column-3</a></li>
+                  <li><a href="./layout-column-4.html">layout-column-4</a></li>
+                </ul>
+                Voor alle beschikbare opties zie <a href="layouts.html#layout-types">layout weergave opties</a>.
+              </li>
+            </ul>
+          </section>
+
+          <section id="related">
+            <h1>Gerelateerde pagina's</h1>
+            <a href="./form-columns-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+
+          <section id="issues">
+            <h1>Bekende problemen</h1>
+
+            <ul>
+              <li><code>fieldset</code> met een <code>column-*</code>-class met daarbinnen een <code>&lt;input type="date"></code> kunnen buiten de breedte van het formulier lopen.</li>
+            </ul>
+          </section>
+
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

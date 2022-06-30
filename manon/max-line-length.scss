@@ -1,0 +1,20 @@
+/*---------------------------------------------------------------*/
+/*----------------- text/max-line-length.scss -------------------*/
+/*---------------------------------------------------------------*/
+@use "max-line-length-variables";
+
+$breakpoint: 24rem !default;
+
+p,
+a,
+span,
+li {
+  max-width: var(--max-line-length-max-width);
+  hyphens: var(--max-line-length-hyphens);
+  word-wrap: var(--max-line-length-word-wrap);
+
+  @media (min-width: $breakpoint) {
+    hyphens: var(--max-line-length-breakpoint-hyphens);
+    word-wrap: var(--max-line-length-breakpoint-word-wrap);
+  }
+}

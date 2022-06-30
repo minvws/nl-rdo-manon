@@ -1,0 +1,46 @@
+/*---------------------------------------------------------------*/
+/*------------------- components/list-base.scss -----------------*/
+/*---------------------------------------------------------------*/
+@use "list-base-variables";
+
+ul,
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--list-base-gap, 0.5rem);
+  padding: var(--list-base-padding, 0 0 0 2rem);
+  background-color: var(--list-base-background-color, inherit);
+  line-height: var(--list-base-line-height, inherit);
+  font-size: var(--list-base-font-size, inherit);
+  font-weight: var(--list-base-font-weight, inherit);
+  color: var(--list-base-text-color, inherit);
+  margin: 0;
+
+  li {
+    background-color: var(--list-base-item-background-color);
+    border-color: var(--list-base-item-border-color);
+    border-style: var(--list-base-item-border-style);
+    border-width: var(--list-base-item-border-width);
+    padding: var(--list-base-item-padding);
+    line-height: var(--list-base-line-height, inherit);
+    font-size: var(--list-base-font-size, inherit);
+    font-weight: var(--list-base-font-weight, inherit);
+    color: var(--list-base-text-color, inherit);
+
+    a {
+      line-height: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+    }
+  }
+}
+
+ul {
+  > li {
+    list-style: var(--list-base-item-style, initial);
+  }
+}
+
+ol > li {
+  display: list-item;
+}

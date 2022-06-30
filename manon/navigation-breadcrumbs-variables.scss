@@ -1,0 +1,27 @@
+/*---------------------------------------------------------------*/
+/*- components/navigation/navigation-breadcrumbs-variables.scss -*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Navigation */
+  /* --navigation-breadcrumbs-justify-content: ; */
+  /* --navigation-breadcrumbs-gap: ; */
+
+  /* List */
+  --navigation-breadcrumbs-list-padding: 0.5rem;
+  --navigation-breadcrumbs-list-gap: 0.5rem;
+  --navigation-breadcrumbs-list-vertical-align: center;
+
+  /* List item */
+  /* --navigation-breadcrumbs-list-item-background-color: ; */
+  /* --navigation-breadcrumbs-list-item-text-color: ; */
+  /* --navigation-breadcrumbs-list-item-min-height: ; */
+  --navigation-breadcrumbs-list-item-background-color-hover: var(
+    --application-base-accent-color-tint-1
+  );
+  /* --navigation-breadcrumbs-list-item-padding: ; */
+
+  /* Breadcrumb icon */
+  /* --navigation-breadcrumb-icon: "";*/ /* Note that the content needs to be placed within double quotes" */
+  /* --navigation-breadcrumbs-icon-margin-left: ; */
+  /* --navigation-breadcrumbs-icon-margin-right: ; */
+}

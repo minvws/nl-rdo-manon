@@ -1,0 +1,22 @@
+/*---------------------------------------------------------------*/
+/*--------------------------- logo.scss -------------------------*/
+/*---------------------------------------------------------------*/
+@use "logo-variables";
+
+.logo {
+  font-size: 0;
+  min-width: var(--logo-min-width);
+  width: var(--logo-width);
+  max-width: var(--logo-max-width);
+
+  img {
+    min-height: var(--logo-img-min-height);
+    height: var(--logo-img-height);
+    min-width: var(--logo-img-min-width);
+    width: var(--logo-img-width);
+    max-width: var(--logo-img-max-width);
+    max-height: var(--logo-img-max-height);
+    object-position: var(--logo-img-object-position);
+    object-fit: var(--logo-img-object-fit);
+  }
+}

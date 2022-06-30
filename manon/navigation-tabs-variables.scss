@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------*/
+/*--------- components/navigation-tabs-variables.scss ----------*/
+/*--------------------------------------------------------------*/
+:root {
+  --navigation-tabs-background-color: var(--application-base-accent-color);
+  --navigation-tabs-text-color: var(--application-base-accent-color-text-color);
+
+  /* List mobile behaviour */
+  --navigation-tabs-list-mobile-gap: 0;
+  --navigation-tabs-list-mobile-background-color: var(
+    --application-base-accent-color-darker
+  );
+  --navigation-tabs-list-mobile-text-color: var(
+    --application-base-accent-color-darker-text
+  );
+
+  /* List item */
+  --navigation-tabs-list-item-padding: 1rem 0.5rem;
+
+  /* List item Hover */
+  --navigation-tabs-list-item-hover-background-color: var(
+    --application-base-accent-color-tint-1
+  );
+  --navigation-tabs-list-item-hover-text-color: var(
+    --application-base-accent-color-tint-1-text-color
+  );
+
+  /* Link */
+  --navigation-tabs-link-text-decoration: none;
+}

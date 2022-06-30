@@ -1,0 +1,10 @@
+/*----------------------------------------------------------------------------------*/
+/*----------------------------- p-variables.scss -----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+:root {
+  --p-line-height: var(--application-base-line-height);
+  --p-font-size: var(--application-base-font-size);
+  --p-font-weight: var(--application-base-font-weight);
+  --p-text-color: var(--application-base-text-color);
+  --p-background-color: unset;
+}

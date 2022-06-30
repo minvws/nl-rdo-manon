@@ -1,0 +1,62 @@
+/*---------------------------------------------------------------*/
+/*-------------------------- tabs.scss --------------------------*/
+/*---------------------------------------------------------------*/
+@use "tabs-variables";
+
+.tabs {
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: var(--tabs-background-color, transparent);
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-width: var(--tabs-border-width);
+    border-style: var(--tabs-border-style);
+    border-color: var(--tabs-border-color);
+    gap: var(--tabs-gap);
+    padding-left: 0;
+
+    li {
+      list-style: none;
+
+      > a {
+        border-width: var(--tabs-item-border-width);
+        border-style: var(--tabs-item-border-style);
+        border-color: var(--tabs-item-border-color);
+        color: var(--tabs-item-text-color, inherit);
+        line-height: var(--tabs-item-line-height, inherit);
+        padding: var(--tabs-item-padding);
+        background-color: var(--tabs-item-background-color, transparent);
+        text-decoration: var(--tabs-item-text-decoration);
+        white-space: nowrap;
+
+        &:hover {
+          border-width: var(--tabs-item-hover-border-width);
+          border-style: var(--tabs-item-hover-border-style);
+          border-color: var(--tabs-item-hover-border-color);
+          color: var(--tabs-item-hover-text-color, inherit);
+          background-color: var(
+            --tabs-item-hover-background-color,
+            transparent
+          );
+        }
+      }
+
+      &[aria-current="page"] {
+        > a {
+          border-width: var(--tabs-item-active-border-width);
+          border-style: var(--tabs-item-active-border-style);
+          border-color: var(--tabs-item-active-border-color);
+          color: var(--tabs-item-active-text-color, inherit);
+          background-color: var(
+            --tabs-item-active-background-color,
+            transparent
+          );
+        }
+      }
+    }
+  }
+}

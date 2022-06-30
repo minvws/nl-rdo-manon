@@ -1,0 +1,28 @@
+/*---------------------------------------------------------------*/
+/*--------------------- button-icon.scss -------------------------*/
+/*---------------------------------------------------------------*/
+@use "button-icon-variables";
+
+button,
+a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  &.icon {
+    font-size: 0;
+    gap: 0;
+    min-width: var(--button-icon-min-width);
+    width: var(--button-icon-width);
+    min-height: var(--button-icon-min-height);
+    height: var(--button-icon-height);
+
+    &:before {
+      font-size: var(--button-icon-font-size);
+      font-family: var(--icon-base-font-family);
+      text-align: center;
+      margin-right: 0;
+      color: var(--button-icon-text-color, inherit);
+      line-height: 1;
+    }
+  }
+}

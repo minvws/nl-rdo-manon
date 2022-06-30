@@ -1,0 +1,34 @@
+/*---------------------------------------------------------------*/
+/*--------- form-help-button-centered-variables.scss ------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Button */
+  --form-help-button-width: 1rem;
+  --form-help-button-height: 1rem;
+  --form-help-button-padding-top: 0.75rem;
+  --form-help-button-padding-right: 0.75rem;
+  --form-help-button-padding-bottom: 0.75rem;
+  --form-help-button-padding-left: 0.75rem;
+
+  /* Positioning */
+  --form-help-button-total-height: calc(
+    (var(--form-help-button-height) + var(--form-help-button-padding-top))
+  );
+
+  /* Use either top or bottom. */
+  --form-help-button-top: calc(
+    50% - (var(--form-help-button-total-height) * 0.5)
+  );
+  /* --form-help-button-bottom: ; */
+
+  /* Use either left or right. */
+  --form-help-button-right: 0.5rem;
+  /* --form-help-button-left: ; */
+
+  --form-help-button-background-color: #3f51b5;
+
+  /* Button icon */
+  --form-help-button-icon-content: "?";
+  --form-help-button-icon-font-size: 0.9rem;
+  --form-help-button-icon-font-weight: bold;
+}

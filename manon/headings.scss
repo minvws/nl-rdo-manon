@@ -1,0 +1,62 @@
+/*---------------------------------------------------------------*/
+/*----------------------- headings.scss -------------------------*/
+/*---------------------------------------------------------------*/
+@use "headings-variables";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  hyphens: auto;
+  margin: 0;
+}
+
+h1,
+h1 > a {
+  font-size: var(--headings-h1-font-size, inherit);
+  color: var(--headings-h1-text-color, inherit);
+  font-weight: var(--headings-h1-font-weight, inherit);
+  line-height: var(--headings-h1-line-height, inherit);
+}
+
+h2,
+h2 > a {
+  font-size: var(--headings-h2-font-size, inherit);
+  color: var(--headings-h2-text-color, inherit);
+  font-weight: var(--headings-h2-font-weight, inherit);
+  line-height: var(--headings-h2-line-height, inherit);
+}
+
+h3,
+h3 > a {
+  font-size: var(--headings-h3-font-size, inherit);
+  color: var(--headings-h3-text-color, inherit);
+  font-weight: var(--headings-h3-font-weight, inherit);
+  line-height: var(--headings-h3-line-height, inherit);
+}
+
+h4,
+h4 > a {
+  font-size: var(--headings-h4-font-size, inherit);
+  color: var(--headings-h4-text-color, inherit);
+  font-weight: var(--headings-h4-font-weight, inherit);
+  line-height: var(--headings-h4-line-height, inherit);
+}
+
+h5,
+h5 > a {
+  font-size: var(--headings-h5-font-size);
+  color: var(--headings-h5-text-color);
+  font-weight: var(--headings-h5-font-weight);
+  line-height: var(--headings-h5-line-height, initial);
+}
+
+h6,
+h6 > a {
+  font-size: var(--headings-h6-font-size);
+  color: var(--headings-h6-text-color);
+  font-weight: var(--headings-h6-font-weight);
+  line-height: var(--headings-h6-line-height, initial);
+}

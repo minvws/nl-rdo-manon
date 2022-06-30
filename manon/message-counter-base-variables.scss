@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------*/
+/*-------- components/message-counter-base-variables.scss -------*/
+/*---------------------------------------------------------------*/
+:root {
+  --message-counter-base-padding: 0.25rem;
+  --message-counter-base-border-radius: 1.25rem;
+  --message-counter-font-size: 0.75rem;
+  --message-counter-base-background-color: var(--application-base-accent-color);
+  --message-counter-base-text-color: var(
+    --application-base-accent-color-text-color
+  );
+  --message-counter-base-height: 1rem;
+  --message-counter-base-min-width: 1rem;
+  /* --message-counter-base-border-width: ; */
+  /* --message-counter-base-border-style: ; */
+  /* --message-counter-base-border-color: ; */
+}

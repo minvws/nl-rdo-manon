@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Iconen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 50rem)" aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../components.html">Componenten</a></li>
+              <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./icons.html" aria-current="page">Iconen</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article id="button-base">
+        <div>
+          <section id="introduction">
+            <h1>Iconen</h1>
+            <p>Voor het toevoegen van iconen binnen de website kan gebruikt gemaakt worden van de unicode-codes.</p>
+
+            <ol>
+              <li>Voeg de class <code>icon</code> toe om gebruik te maken van de visuele weergave van een icoonknop.</li>
+              <li>Voeg iconen toe aan het project.
+                <ul>
+                  <li><a href="./iconset-create.html">Iconset aanmaken</a></li>
+                  <li><a href="./iconset-add.html">Iconset toevoegen</a></li>
+                </ul>
+              </li>
+              <li><a href="#usage">Iconen gebruiken.</a>
+                <ul>
+                  <li><a href="#icon-within-html">Iconen toevoegen binnen de HTML</a></li>
+                  <li><a href="#icon-within-css">Iconen toevoegen via CSS</a></li>
+                </ul>
+              </li>
+            </ol>
+          </section>
+
+          <section id="usage">
+            <h1>Iconen gebruiken</h1>
+
+            <h2 id="icon-within-html">Binnen HTML</h2>
+            <p>Iconen als afbeelding toevoegen.</p>
+
+            <h3>Visueel voorbeeld:</h3>
+            <img src="../../static/img/cat.svg" class="icon">
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;img src="cat.svg" class="icon">
+              </code>
+            </pre>
+
+            <h2 id="icon-within-css">Via CSS</h2>
+            <p>Het onderstaande voorbeeld bevat een <code>span</code>. Andere html-attributen zijn ook mogelijk. Onder andere: <code>a</code>, <code>p</code>, <code>button</code>.</p>
+            <p><strong>Let op:</strong> Voeg eerst een iconenset toe aan het project met indien nodig een eigen referentielijst. Voor meer informatie zie: <a href="./iconset-add.html">Iconset toevoegen</a></p>
+
+            <h3>Visueel voorbeeld:</h3>
+            <button class="icon icon-cat">Kat</button>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;button class="icon icon-cat">Kat&lt;/button>
+              </code>
+            </pre>
+          </section>
+
+          <section id="global-icon-font">
+            <h1>Applicatie icoonlettertype definieren</h1>
+            <ol>
+              <li>Voeg het icoonlettertype toe aan het project. Voor informatie zie: <a href="./iconset-add.html">Icoonset toevoegen</a>.</li>
+              <li>Defineer het lettertype binnen het bestand <code>manon/icon/icon-base-variables</code> via de variabele <code>font-family</code>. Bijvoorbeeld: <code>--icon-base-font-family: "Manon icons";</code>. Zie ook <a href="../import-styling.html#styling-override-variables">De styling van een component aanpassen</a>.</li>
+            </ol>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <ul>
+              <li><a href="../variables.html#font-family">font-family</a></li>
+            </ul>
+          </section>
+
+          <section id="related">
+            <h1>Gerelateerde pagina's</h1>
+            <a href="./icons-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

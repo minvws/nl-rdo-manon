@@ -1,0 +1,26 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------ components/divider-lines-content-block.scss -------------------*/
+/*----------------------------------------------------------------------------------*/
+@use "divider-lines-content-block-variables";
+
+%divider-line {
+  border-width: var(--divider-lines-content-block-border-width);
+  border-style: var(--divider-lines-content-block-border-style);
+  border-color: var(--divider-lines-content-block-border-color);
+
+  &:first-of-type {
+    border-width: var(--divider-lines-content-block-first-of-type-border-width);
+    border-style: var(--divider-lines-content-block-first-of-type-border-style);
+    border-color: var(--divider-lines-content-block-first-of-type-border-color);
+  }
+}
+
+main {
+  > article,
+  > section,
+  > div {
+    > div {
+      @extend %divider-line;
+    }
+  }
+}

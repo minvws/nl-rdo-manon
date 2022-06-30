@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Knoppen testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 50rem)" aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./button.html">Knoppen</a></li>
+            <li><a href="./button-test.html" aria-current="page">Knoppen testpagina</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article id="button-base">
+        <div>
+
+          <section id="introduction">
+            <h1>Knoppen testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+
+            <h2><code>button</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <button>Lorem ipsum</button>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;button>Lorem ipsum&lt;/button>
+              </code>
+            </pre>
+
+            <h2><code>button</code> disabled</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <button disabled>Lorem ipsum</button>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;button disabled>Lorem ipsum&lt;/button>
+              </code>
+            </pre>
+            <h3>States</h3>
+            <ul>
+              <li><button class="focus">Focus</button></li>
+              <li><button class="active">Active</button></li>
+              <li><button class="visited">Visited</button></li>
+              <li><button class="hover">Hover</button></li>
+              <li><button class="selected">Selected</button></li>
+            </ul>
+
+            <h2><code>button</code> met een afbeelding</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <button>Lorem ipsum <img src=""></button>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;button>Lorem ipsum &lt;img src="">&lt;/button>
+              </code>
+            </pre>
+
+            <h2>Link als knop</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <a href="./button-test.html" class="button ">Lorem ipsum</a>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;input class="button ">Lorem ipsum&lt;/a>
+              </code>
+            </pre>
+
+            <h2>Link als knop: disabled</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <a href="./button-test.html" class="button " disabled>Lorem ipsum</a>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;input class="button " disabled>Lorem ipsum&lt;/a>
+              </code>
+            </pre>
+
+            <h3>States</h3>
+            <ul>
+              <li><a href="./button-test.html" class="button  focus">Focus</a></li>
+              <li><a href="./button-test.html" class="button  active">Active</a></li>
+              <li><a href="./button-test.html" class="button  visited">Visited</a></li>
+              <li><a href="./button-test.html" class="button  hover">Hover</a></li>
+              <li><a href="./button-test.html" class="button  selected">Selected</a></li>
+            </ul>
+
+            <h2>Link als knop: met een afbeelding</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <a href="./button-test.html" class="button ">Lorem ipsum <img src=""></a>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;input class="button ">Lorem ipsum &lt;img src="">&lt;/a>
+              </code>
+            </pre>
+
+            <h2><code>input type="button"</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <input type="button" value="Button">
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;input type="button" value="Button">
+              </code>
+            </pre>
+
+            <h2><code>input type="button"</code>: disabled</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <input type="button" value="Button disabled" disabled>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;input type="button" value="Button disabled" disabled>
+              </code>
+            </pre>
+
+            <h3>States</h3>
+            <h3>Visueel voorbeeld:</h3>
+            <ul>
+              <li><input type="button" value="Focus" class="focus"></li>
+              <li><input type="button" value="Active" class="active"></li>
+              <li><input type="button" value="Visited" class="visited"></li>
+              <li><input type="button" value="Hover" class="hover"></li>
+              <li><input type="button" value="Selected" class="selected"></li>
+            </ul>
+
+            <h2><code>button type="submit"</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <button type="submit">Lorem ipsum</button>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;button type="submit">Lorem ipsum</button>
+              </code>
+            </pre>
+
+            <h2><code>button type="submit"</code>: disabled</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <button type="submit" disabled>Lorem ipsum</button>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;button type="submit" value="Button disabled" disabled>
+              </code>
+            </pre>
+
+            <h3>States</h3>
+            <h3>Visueel voorbeeld:</h3>
+            <ul>
+              <li><button type="submit" class="focus">Focus</button></li>
+              <li><button type="submit" class="active">Active</button></li>
+              <li><button type="submit" class="visited">Visited</button></li>
+              <li><button type="submit" class="hover">Hover</button></li>
+              <li><button type="submit" class="selected">Selected</button></li>
+            </ul>
+
+            <h2><code>input type="submit"</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <input type="submit" value="Input">
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;input type="submit" value="Input">
+              </code>
+            </pre>
+
+            <h2><code>input type="submit"</code>: disabled</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <input type="submit" value="Input" disabled>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;input type="submit" value="Input" disabled>
+              </code>
+            </pre>
+
+            <h2><code>button type="reset"</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <button type="reset">Lorem ipsum</button>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;button type="reset">Lorem ipsum</button>
+              </code>
+            </pre>
+
+            <h2><code>button type="reset"</code>: disabled</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <button type="reset" disabled>Lorem ipsum</button>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;button type="reset" value="Button disabled" disabled>
+              </code>
+            </pre>
+
+            <h3>States</h3>
+            <h3>Visueel voorbeeld:</h3>
+            <ul>
+              <li><button type="reset" class="focus">Focus</button></li>
+              <li><button type="reset" class="active">Active</button></li>
+              <li><button type="reset" class="visited">Visited</button></li>
+              <li><button type="reset" class="hover">Hover</button></li>
+              <li><button type="reset" class="selected">Selected</button></li>
+            </ul>
+
+            <h2><code>input type="reset"</code>: disabled</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <input type="reset" value="Input" disabled>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;input type="reset" value="Input" disabled>
+              </code>
+            </pre>
+
+            <h2><code>button type="reset"</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <input type="reset">
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;input type="reset">
+              </code>
+            </pre>
+
+            <h2><code>button type="reset"</code>: disabled</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <input type="reset" disabled>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;input type="reset" value="Button disabled" disabled>
+              </code>
+            </pre>
+
+            <h3>States</h3>
+            <h3>Visueel voorbeeld:</h3>
+            <ul>
+              <li><input type="reset" value="focus" class="focus"></li>
+              <li><input type="reset" value="active" class="active"></li>
+              <li><input type="reset" value="visited" class="visited"></li>
+              <li><input type="reset" value="hover" class="hover"></li>
+              <li><input type="reset" value="selected" class="selected"></li>
+            </ul>
+          </section>
+
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

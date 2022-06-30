@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tabel met actieknoppen testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 50rem)" aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../components.html">Componenten</a></li>
+              <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./table.html">Tabel</a></li>
+            <li><a href="./table-action-buttons.html">Tabel met actieknoppen</a></li>
+            <li><a href="./table-action-buttons-test.html" aria-current="page">Tabel met actieknoppen testpagina</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article id="button-base">
+        <div>
+
+          <section id="introduction">
+            <h1>Tabel met actieknoppen testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+
+            <h2>Knop als actieknop</h2>
+            <div class="horizontal-scroll">
+              <table>
+                <caption>Tabelvoorbeeld met actieknoppen:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Gebruikersnaam</th>
+                    <th scope="col">Bekijk profiel</th>
+                    <th scope="col">Wijzig wachtwoord</th>
+                    <th scope="col">Deactiveer</th>
+                    <th scope="col">Verwijder</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>Jane doe</td>
+                      <td>
+                          <form>
+                              <button type="submit" class="icon icon-cat action-button">Bekijk profiel</button>
+                          </form>
+                      </td>
+                      <td>
+                          <form>
+                              <button type="submit" class="icon icon-cat action-button">Wijzig wachtwoord</button>
+                          </form>
+                      </td>
+                      <td>
+                          <form>
+                              <button type="submit" class="icon icon-cat action-button">Deactiveer</button>
+                          </form>
+                      </td>
+                      <td>
+                          <form>
+                              <button type="submit" class="icon icon-cat action-button">Verwijder</button>
+                          </form>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2>Html-voorbeeld:</h2>
+            <h3><code>class</code> op indivuele knoppen</h3>
+            <pre>
+              <code>
+&lt;div class="horizontal-scroll">
+  &lt;table>
+    &lt;caption>Tabelvoorbeeld met actieknoppen:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Gebruikersnaam&lt;/th>
+        &lt;th scope="col">Bekijk profiel&lt;/th>
+        &lt;th scope="col">Wijzig wachtwoord&lt;/th>
+        &lt;th scope="col">Deactiveer&lt;/th>
+        &lt;th scope="col">Verwijder&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+          &lt;td>Jane doe&lt;/td>
+          &lt;td>
+              &lt;form>
+                  &lt;button type="submit" class="icon icon-cat action-button">Bekijk profiel&lt;/button>
+              &lt;/form>
+          &lt;/td>
+          &lt;td>
+              &lt;form>
+                  &lt;button type="submit" class="icon icon-cat action-button">Wijzig wachtwoord&lt;/button>
+              &lt;/form>
+          &lt;/td>
+          &lt;td>
+              &lt;form>
+                  &lt;button type="submit" class="icon icon-cat action-button">Deactiveer&lt;/button>
+              &lt;/form>
+          &lt;/td>
+          &lt;td>
+              &lt;form>
+                  &lt;button type="submit" class="icon icon-cat action-button">Verwijder&lt;/button>
+              &lt;/form>
+          &lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>Knop als actieknop</h2>
+            <div class="horizontal-scroll">
+              <table class="action-buttons">
+                <caption>Tabelvoorbeeld met actieknoppen:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Gebruikersnaam</th>
+                    <th scope="col">Bekijk profiel</th>
+                    <th scope="col">Wijzig wachtwoord</th>
+                    <th scope="col">Deactiveer</th>
+                    <th scope="col">Verwijder</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>Jane doe</td>
+                      <td>
+                          <form>
+                              <button type="submit" class="icon icon-cat">Bekijk profiel</button>
+                          </form>
+                      </td>
+                      <td>
+                          <form>
+                              <button type="submit" class="icon icon-cat">Wijzig wachtwoord</button>
+                          </form>
+                      </td>
+                      <td>
+                          <form>
+                              <button type="submit" class="icon icon-cat">Deactiveer</button>
+                          </form>
+                      </td>
+                      <td>
+                          <form>
+                              <button type="submit" class="icon icon-cat">Verwijder</button>
+                          </form>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2>Html-voorbeeld:</h2>
+            <h3><code>class</code> op indivuele knoppen</h3>
+            <pre>
+              <code>
+&lt;div class="horizontal-scroll">
+  &lt;table class="action-buttons">
+    &lt;caption>Tabelvoorbeeld met actieknoppen:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Gebruikersnaam&lt;/th>
+        &lt;th scope="col">Bekijk profiel&lt;/th>
+        &lt;th scope="col">Wijzig wachtwoord&lt;/th>
+        &lt;th scope="col">Deactiveer&lt;/th>
+        &lt;th scope="col">Verwijder&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+          &lt;td>Jane doe&lt;/td>
+          &lt;td>
+              &lt;form>
+                  &lt;button type="submit" class="icon icon-cat">Bekijk profiel&lt;/button>
+              &lt;/form>
+          &lt;/td>
+          &lt;td>
+              &lt;form>
+                  &lt;button type="submit" class="icon icon-cat">Wijzig wachtwoord&lt;/button>
+              &lt;/form>
+          &lt;/td>
+          &lt;td>
+              &lt;form>
+                  &lt;button type="submit" class="icon icon-cat">Deactiveer&lt;/button>
+              &lt;/form>
+          &lt;/td>
+          &lt;td>
+              &lt;form>
+                  &lt;button type="submit" class="icon icon-cat">Verwijder&lt;/button>
+              &lt;/form>
+          &lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

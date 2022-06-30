@@ -1,0 +1,13 @@
+/*---------------------------------------------------------------*/
+/*------------- notification-system-variables.scss --------------*/
+/*---------------------------------------------------------------*/
+:root {
+  --notification-system-background-color: #eee;
+  --notification-system-border-width: var(--notification-base-border-width);
+  --notification-system-border-style: var(--notification-base-border-style);
+  --notification-system-border-color: #c7c7c7;
+
+  /* Icon as before or after */
+  /* --notification-system-icon-before-content: ; */
+  /* --notification-system-icon-before-content: ; */
+}

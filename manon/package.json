@@ -1,0 +1,19 @@
+{
+  "name": "@minvws/manon",
+  "version": "v0.0.1",
+  "files": [
+    "*.scss",
+    "**/*.scss",
+    "*.js",
+    "**/*.js"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}

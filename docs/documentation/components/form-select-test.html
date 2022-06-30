@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Selectielijst testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./forms.html" aria-current="page">Formulieren</a></li>
+            <li><a href="./form-select.html">Selectielijst</a></li>
+            <li><a href="./form-select-test.html" aria-current="page">Selectielijst testpagina</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Selectielijst - <code>select</code> testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+            <h2>Basis</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <label for="select-base">Selectielijst</label>
+              <select id="select-base" name="select-base">
+                <option value="1">Optie 1</option>
+                <option value="2">Optie 2</option>
+                <option value="3">Optie 3</option>
+              </select>
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;label for="select-base">Selectielijst&lt;/label>
+  &lt;select id="select-base" name="select-base">
+    &lt;option value="1">Optie 1&lt;/option>
+    &lt;option value="2">Optie 2&lt;/option>
+    &lt;option value="3">Optie 3&lt;/option>
+  &lt;/select>
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Selectielijst gegroepeerd binnen <code>div</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <div>
+                <label for="select-div">Selectielijst</label>
+                <select id="select-div" name="select-div">
+                  <option value="1">Optie 1</option>
+                  <option value="2">Optie 2</option>
+                  <option value="3">Optie 3</option>
+                </select>
+              </div>
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div>
+    &lt;label for="select-div">Selectielijst&lt;/label>
+    &lt;select id="select-div" name="select-div">
+      &lt;option value="1">Optie 1&lt;/option>
+      &lt;option value="2">Optie 2&lt;/option>
+      &lt;option value="3">Optie 3&lt;/option>
+    &lt;/select>
+  &lt;/div>
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Selectielijst gegroepeerd binnen <code>div</code> horizontaal uitgelijnd</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <div class="horizontal-view">
+                <label for="select-div">Selectielijst</label>
+                <select id="select-div" name="select-div">
+                  <option value="1">Optie 1</option>
+                  <option value="2">Optie 2</option>
+                  <option value="3">Optie 3</option>
+                </select>
+              </div>
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div class="horizontal-view">
+    &lt;label for="select-div">Selectielijst&lt;/label>
+    &lt;select id="select-div" name="select-div">
+      &lt;option value="1">Optie 1&lt;/option>
+      &lt;option value="2">Optie 2&lt;/option>
+      &lt;option value="3">Optie 3&lt;/option>
+    &lt;/select>
+  &lt;/div>
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Selectielijst binnen <code>section</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <section>
+                <label for="select-section">Selectielijst</label>
+                <select id="select-section" name="select-section">
+                  <option value="1">Optie 1</option>
+                  <option value="2">Optie 2</option>
+                  <option value="3">Optie 3</option>
+                </select>
+              </section>
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;section>
+    &lt;label for="select-section">Selectielijst&lt;/label>
+    &lt;select id="select-section" name="select-section">
+      &lt;option value="1">Optie 1&lt;/option>
+      &lt;option value="2">Optie 2&lt;/option>
+      &lt;option value="3">Optie 3&lt;/option>
+    &lt;/select>
+  &lt;/section>
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Selectielijst gegroepeerd binnen <code>section</code> horizontaal uitgelijnd</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <section class="horizontal-view">
+                <label for="select-section">Selectielijst</label>
+                <select id="select-section" name="select-section">
+                  <option value="1">Optie 1</option>
+                  <option value="2">Optie 2</option>
+                  <option value="3">Optie 3</option>
+                </select>
+              </section>
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;section class="horizontal-view">
+    &lt;label for="select-section">Selectielijst&lt;/label>
+    &lt;select id="select-section" name="select-section">
+      &lt;option value="1">Optie 1&lt;/option>
+      &lt;option value="2">Optie 2&lt;/option>
+      &lt;option value="3">Optie 3&lt;/option>
+    &lt;/select>
+  &lt;/section>
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+           <h2>Selectielijst binnen <code>fieldset</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <fieldset>
+                <legend>Selectielijst binnen een fieldset voorbeeld</legend>
+                <label for="select-fieldset">Selectielijst</label>
+                <select id="select-fieldset" name="select-fieldset">
+                  <option value="1">Optie 1</option>
+                  <option value="2">Optie 2</option>
+                  <option value="3">Optie 3</option>
+                </select>
+              </fieldset>
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;fieldset>
+    &lt;legend>Selectielijst binnen een fieldset voorbeeld&lt;/legend>
+    &lt;label for="select-fieldset">Selectielijst&lt;/label>
+    &lt;select id="select-fieldset" name="select-fieldset">
+      &lt;option value="1">Optie 1&lt;/option>
+      &lt;option value="2">Optie 2&lt;/option>
+      &lt;option value="3">Optie 3&lt;/option>
+    &lt;/select>
+  &lt;/fieldset>
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Selectielijst gegroepeerd binnen <code>fieldset</code> horizontaal uitgelijnd</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <fieldset>
+                <legend>Selectielijst binnen een fieldset voorbeeld</legend>
+                <div class="horizontal-view">
+                  <label for="select-fieldset">Selectielijst</label>
+                  <select id="select-fieldset" name="select-fieldset">
+                    <option value="1">Optie 1</option>
+                    <option value="2">Optie 2</option>
+                    <option value="3">Optie 3</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;fieldset>
+    &lt;legend>Selectielijst binnen een fieldset voorbeeld&lt;/legend>
+    &lt;div class="horizontal-view">
+      &lt;label for="select-fieldset">Selectielijst&lt;/label>
+      &lt;select id="select-fieldset" name="select-fieldset">
+        &lt;option value="1">Optie 1&lt;/option>
+        &lt;option value="2">Optie 2&lt;/option>
+        &lt;option value="3">Optie 3&lt;/option>
+      &lt;/select>
+      &lt;/div>
+  &lt;/fieldset>
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2 id="form-dropdown-required">Verplicht</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <label for="select-required">Verplichte selectielijst</label>
+              <span class="nota-bene">Dit veld is verplicht</span>
+              <select id="select-required" name="select-required" required>
+                <option value="">--Please choose an option--</option>
+                <option value="1">Optie 1</option>
+                <option value="2">Optie 2</option>
+                <option value="3">Optie 3</option>
+              </select>
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;label for="select-required">Verplichte selectielijst&lt;/label>
+  &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+  &lt;select id="select-required" name="select-required" required>
+    &lt;option value="">--Please choose an option--&lt;/option>
+    &lt;option value="1">Optie 1&lt;/option>
+    &lt;option value="2">Optie 2&lt;/option>
+    &lt;option value="3">Optie 3&lt;/option>
+  &lt;/select>
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2 id="form-dropdown-disabled">Uitgeschakeld</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <label for="select-disabled-1">Uitgeschakelde selectielijst</label>
+              <select disabled id="select-disabled-1" name="select-disabled-1">
+                <option value="1">Optie 1</option>
+                <option value="2">Optie 2</option>
+                <option value="3">Optie 3</option>
+              </select>
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;label for="select-disabled">Uitgeschakelde selectielijst&lt;/label>
+  &lt;select disabled id="select-disabled" name="select-disabled">
+    &lt;option value="1">Optie 1&lt;/option>
+    &lt;option value="2">Optie 2&lt;/option>
+    &lt;option value="3">Optie 3&lt;/option>
+  &lt;/select>
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2 id="form-dropdown-selected">Voorgeselecteerde optie</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <label for="select-selected-1">Selectielijst met voorgeselecteerde optie</label>
+              <select id="select-selected-1" name="select-selected-1">
+                <option value="1">Optie 1</option>
+                <option value="2">Optie 2</option>
+                <option value="Voorgeselecteerd" selected>Voorgeselecteerd</option>
+              </select>
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;label for="select-selected">Selectielijst met voorgeselecteerde optie&lt;/label>
+  &lt;select id="select-selected" name="select-selected">
+    &lt;option value="1">Optie 1&lt;/option>
+    &lt;option value="2">Optie 2&lt;/option>
+    &lt;option value="Voorgeselecteerd" selected>Voorgeselecteerd&lt;/option>
+  &lt;/select>
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2 id="form-dropdown-optgroup">Gegroepeerde opties</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <label for="select-optgroup-1">Gegroepeerde opties</label>
+              <select id="select-optgroup-1" name="select-optgroup-1">
+                <optgroup label="Rollende objecten">
+                  <option value="Bal">Bal</option>
+                  <option value="Wiel">Wiel</option>
+                  <option value="Knikker">Knikker</option>
+                </optgroup>
+
+                <optgroup label="Slecht rollende objecten">
+                  <option value="Aambeeld">Aambeeld</option>
+                  <option value="Eiffeltoren">Eiffeltoren</option>
+                  <option value="Dinosaurus">Dinosaurus</option>
+                </optgroup>
+              </select>
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;label for="select-optgroup">Gegroepeerde opties&lt;/label>
+  &lt;select id="select-optgroup" name="select-optgroup">
+    &lt;optgroup label="Rollende objecten">
+      &lt;option value="Bal">Bal&lt;/option>
+      &lt;option value="Wiel">Wiel&lt;/option>
+      &lt;option value="Knikker">Knikker&lt;/option>
+    &lt;/optgroup>
+
+    &lt;optgroup label="Slecht rollende objecten">
+      &lt;option value="Aambeeld">Aambeeld&lt;/option>
+      &lt;option value="Eiffeltoren">Eiffeltoren&lt;/option>
+      &lt;option value="Dinosaurus">Dinosaurus&lt;/option>
+    &lt;/optgroup>
+  &lt;/select>
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

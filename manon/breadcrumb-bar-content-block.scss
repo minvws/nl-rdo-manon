@@ -1,0 +1,91 @@
+/*---------------------------------------------------------------*/
+/*------------- breadcrumb-bar-content-block.scss ---------------*/
+/*---------------------------------------------------------------*/
+@use "breadcrumb-bar-content-block-variables";
+
+.breadcrumb-bar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--breadcrumb-bar-background-color);
+  color: var(--breadcrumb-bar-text-color);
+  padding: 0;
+
+  > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: var(--breadcrumb-bar-content-block-padding-top);
+    padding-right: var(--breadcrumb-bar-content-block-padding-right);
+    padding-bottom: var(--breadcrumb-bar-content-block-padding-bottom);
+    padding-left: var(--breadcrumb-bar-content-block-padding-left);
+    gap: var(--breadcrumb-bar-content-block-gap);
+    box-sizing: border-box;
+    align-self: center;
+    max-width: var(--layout-header-content-block-max-width);
+
+    ul,
+    ol {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: var(--breadcrumb-bar-content-block-justify-content);
+      align-items: var(--breadcrumb-bar-content-block-list-vertical-align);
+      padding: var(--breadcrumb-bar-content-block-list-padding);
+      gap: var(--breadcrumb-bar-content-block-list-gap);
+      color: inherit;
+
+      li {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        list-style: none;
+        gap: var(--breadcrumb-bar-content-block-list-item-gap);
+
+        &:after {
+          content: var(--breadcrumb-bar-content-block-icon);
+          font-family: var(--breadcrumb-bar-icon-font-family, inherit);
+          margin-left: var(--breadcrumb-bar-content-block-icon-margin-left);
+          margin-right: var(--breadcrumb-bar-content-block-icon-margin-right);
+        }
+
+        &:hover {
+          color: var(--breadcrumb-bar-content-block-hover-text-color);
+
+          &:after {
+            color: var(--breadcrumb-bar-content-block-text-color);
+          }
+        }
+
+        &:last-child {
+          font-weight: var(
+            --breadcrumb-bar-content-block-list-item-last-child-font-weight
+          );
+
+          &:after {
+            content: none;
+          }
+        }
+
+        a {
+          word-break: break-word; /* Break words that won't fit the available space */
+          color: inherit;
+          text-decoration: var(
+            --breadcrumb-bar-content-block-link-text-decoration
+          );
+
+          &:hover {
+            text-decoration: var(
+              --breadcrumb-bar-content-block-link-hover-text-decoration
+            );
+          }
+
+          &:before {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}

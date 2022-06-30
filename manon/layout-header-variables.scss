@@ -1,0 +1,23 @@
+/*------------------------------------------------------------------------*/
+/*----------------------- layout-main-variables.scss ---------------------*/
+/*------------------------------------------------------------------------*/
+:root {
+  --layout-header-padding-top: 0;
+  --layout-header-padding-right: var(--layout-base-padding-right);
+  --layout-header-padding-bottom: 0;
+  --layout-header-padding-left: var(--layout-base-padding-bottom);
+  --layout-header-max-width: var(--layout-base-max-width);
+
+  /* Top level blocks */
+  --layout-header-gap: var(--layout-base-within-content-block-gap);
+
+  /* Content blocks directly within top level blocks */
+  --layout-header-content-block-gap: var(
+    --layout-base-within-content-block-gap
+  );
+
+  /* Spacing beteen all other blocks */
+  --layout-header-within-content-block-gap: var(
+    --layout-base-within-content-block-gap
+  );
+}

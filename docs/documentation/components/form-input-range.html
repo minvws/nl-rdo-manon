@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bereik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./forms.html">Formulieren</a></li>
+            <li><a href="./form-input-range.html" aria-current="page">Bereik</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <ul>
+          <li><a href="./form-input-range.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Bereik - <code>range</code></h1>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+              <li>Voeg de <code>&lt;range></code> toe. Zie onderstaand voorbeeld voor meer informatie.</li>
+            </ol>
+
+            <p class="explanation"><strong>Tip:</strong> Om bereik-invoervelden een eigen gekozen kleur mee te geven kan gebruik gemaakt worden van <a href="./form-accent-color.html">accentkleur op formulierelementen</a>.</p>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+
+            <h2>Basis</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <div>
+                <label for="range-example">Range</label>
+                <input type="range" id="range-example" name="range-example" min="0" max="100">
+              </div>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div>
+    &lt;label for="range-example">Range&lt;/label>
+    &lt;input type="range" id="range-example" name="range-example" min="0" max="100">
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Horizontaal uitgelijnd</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <div class="horizontal-view">
+                <label for="range-example">Range</label>
+                <input type="range" id="range-example" name="range-example" min="0" max="100">
+              </div>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div class="horizontal-view">
+    &lt;label for="range-example">Range&lt;/label>
+    &lt;input type="range" id="range-example" name="range-example" min="0" max="100">
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Bijbehorende bestanden</h1>
+            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+
+            <h2>Optioneel</h2>
+            <ul>
+              <li><code>form/form-base.scss</code></li>
+              <li><code>form/form-base-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <p>Dit element heeft zelf geen instelbare variabelen.</p>
+
+            <p>Bijbehorende elementen:</p>
+            <ul>
+              <li><a href="./form-base.html">form-base</a></li>
+            </ul>
+          </section>
+
+          <section id="related">
+            <h1>Gerelateerde pagina's</h1>
+            <a href="./form-input-range-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

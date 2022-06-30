@@ -1,0 +1,15 @@
+/*---------------------------------------------------------------*/
+/*-------- components/table-component/sticky-header.scss --------*/
+/*---------------------------------------------------------------*/
+@use "table-sticky-header-variables";
+
+.sticky-header {
+  max-height: var(--table-sticky-header-max-height);
+  position: relative;
+
+  th {
+    position: sticky;
+    top: -1px;
+    background-color: var(--table-sticky-header-background-color);
+  }
+}

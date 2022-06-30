@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------*/
+/*----------- critical-informational-labels.scss ----------------*/
+/*---------------------------------------------------------------*/
+@use "critical-informational-labels-variables";
+
+table {
+  .critical,
+  .high,
+  .medium,
+  .low,
+  .informational {
+    display: inline-block;
+    padding: var(--critical-informational-labels-padding);
+    min-width: var(--critical-informational-labels-min-width);
+    text-align: var(--critical-informational-labels-text-align);
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Headers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./headers.html">Headers</a></li>
+            <li><a href="./header-horizontal.html" aria-current="page">Horizontale header</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Horizontale header</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a odio nec orci accumsan eleifend sed eu lacus. Duis auctor pulvinar vehicula. Fusce nisl ex, tincidunt id pharetra ac, consectetur quis sem. Suspendisse convallis varius erat quis venenatis. Sed ut tincidunt est, in euismod lacus. Suspendisse sollicitudin fringilla luctus.</p>
+          </section>
+
+          <section id="requirements">
+            <h1>Benodigde bestanden</h1>
+            <ul>
+              <li><code>navigation/navigation-base"</code></li>
+              <li><code>navigation/navigation-base-variables</code></li>
+            </ul>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden:</h1>
+
+            <h2>Visueel voorbeeld:</h2>
+            <header>
+              <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+              <div>
+                <a href="./header-horizontal.html" class="logo">
+                  <img src="../../static/img/logo.svg" alt="Placeholder logo">
+                  Bedrijfs of productnaam
+                </a>
+
+                <nav aria-label="Hoofdnavigatie">
+                  <div>
+                    <ul>
+                      <li><a href="../../index.html">Home</a></li>
+                      <li><a href="../components.html">Componenten</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </header>
+
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+  &lt;header>
+    &lt;a href="#main-content" class="button focus-only">Ga direct naar inhoud&lt;/a>
+
+    &lt;nav aria-label="Hoofdnavigatie">
+      &lt;div>
+        &lt;ul>
+          &lt;li>&lt;a href="../../index.html">Home&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="../components.html">Componenten&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/div>
+    &lt;/nav>
+  &lt;/header>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

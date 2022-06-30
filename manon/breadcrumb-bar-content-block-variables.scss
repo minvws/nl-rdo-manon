@@ -1,0 +1,45 @@
+/*---------------------------------------------------------------*/
+/*--------- breadcrumb-bar-content-block-variables.scss ---------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Bar */
+  --breadcrumb-bar-background-color: var(
+    --application-base-tint-1-background-color,
+    var(--application-base-background-color)
+  );
+  --breadcrumb-bar-text-color: var(
+    --application-base-tint-1-text-color,
+    var(--application-base-text-color)
+  );
+
+  /* Bar content */
+  --breadcrumb-bar-content-block-padding-top: 1rem;
+  --breadcrumb-bar-content-block-padding-right: 3%;
+  --breadcrumb-bar-content-block-padding-bottom: 1rem;
+  --breadcrumb-bar-content-block-padding-left: 3%;
+  --breadcrumb-bar-content-block-gap: 1rem;
+  --layout-header-content-block-max-width: 80rem;
+
+  /* List */
+  --breadcrumb-bar-content-block-list-vertical-align: center;
+  --breadcrumb-bar-content-block-list-padding: 0;
+  --breadcrumb-bar-content-block-list-gap: 1rem;
+
+  /* List item */
+  --breadcrumb-bar-content-block-list-item-gap: 1rem;
+
+  /* Icon */
+  --breadcrumb-bar-icon-font-family: var(--icon-base-font-family);
+  --breadcrumb-bar-content-block-icon: ">";
+  /* --breadcrumb-bar-content-block-icon-margin-left: ; */
+  /* --breadcrumb-bar-content-block-icon-margin-right: ; */
+
+  /* Last item */
+  --breadcrumb-bar-content-block-list-item-last-child-font-weight: bold;
+
+  /* Link */
+  --breadcrumb-bar-content-block-link-text-decoration: none;
+
+  /* Link hover */
+  --breadcrumb-bar-content-block-link-hover-text-decoration: none;
+}

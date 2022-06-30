@@ -1,0 +1,65 @@
+/*---------------------------------------------------------------*/
+/*-------------- components/sidemenu-variables.scss -------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Side menu (Main) */
+  --sidemenu-base-main-padding-top: 0;
+  --sidemenu-base-main-padding-bottom: 0;
+  --sidemenu-base-main-gap: 3rem; /* Reserve space for the button */
+
+  /* Content container (top level div, section or article) */
+  /*--sidemenu-base-content-container-background-color: ; */
+  --sidemenu-base-content-container-padding-top: var(--main-base-padding-top);
+  --sidemenu-base-content-container-padding-right: var(
+    --layout-base-padding-right
+  );
+  --sidemenu-base-content-container-padding-bottom: var(
+    --main-base-padding-bottom
+  );
+  --sidemenu-base-content-container-padding-left: var(
+    --layout-base-padding-left
+  );
+
+  /* Nav inside side menu */
+  --sidemenu-base-nav-width: 18rem;
+  /* --sidemenu-base-nav-background-color: ; */
+  --sidemenu-base-nav-border-width: 0 1px 0 0;
+  --sidemenu-base-nav-border-style: solid;
+  --sidemenu-base-nav-border-color: #ccc;
+  /* Padding separated so it can be used to calculate the button position */
+  --sidemenu-base-nav-padding-top: 1rem;
+  --sidemenu-base-nav-padding-right: 1rem;
+  --sidemenu-base-nav-padding-bottom: 1rem;
+  --sidemenu-base-nav-padding-left: 1rem;
+  /* --sidemenu-base-nav-background-image: url("path/to/image/cat.svg"); */
+  /* --sidemenu-base-nav-background-repeat: ; */
+  /* --sidemenu-base-nav-background-size: ; */
+  /* --sidemenu-base-nav-background-position: ; */
+
+  /* List inside side menu */
+  /* --sidemenu-base-ul-padding: ;*/
+
+  /* Side menu button */
+  --sidemenu-base-toggle-button-min-width: 2.75rem;
+  --sidemenu-base-toggle-button-min-height: 2.75rem;
+  --sidemenu-base-toggle-button-font-size: 0;
+  --sidemenu-base-toggle-button-white-space: nowrap;
+  --sidemenu-base-toggle-button-font-weight: regular;
+
+  /* Side menu button before */
+  --sidemenu-base-button-before-font-size: 1rem;
+  --sidemenu-base-button-before-font-weight: var(
+    --sidemenu-base-toggle-button-font-weight
+  );
+  --sidemenu-base-button-before-white-space: var(
+    --sidemenu-base-toggle-button-white-space
+  );
+
+  /* add content within "", this could be text or a unicode for an icon*/
+
+  /* content on the button when the menu is collapsed */
+  --sidemenu-base-open-button-before-content: "≡";
+
+  /* content on the button when the menu is expanded */
+  --sidemenu-base-close-button-before-content: "X";
+}

@@ -1,0 +1,45 @@
+/*---------------------------------------------------------------*/
+/*-------------------- components/section.scss ------------------*/
+/*---------------------------------------------------------------*/
+@use "section-variables";
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: var(--section-align-items);
+  gap: var(--section-gap);
+  background-color: var(--section-background-color);
+  color: var(--section-text-color, inherit);
+  width: 100%;
+  box-sizing: border-box;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: var(--section-content-block-align-items);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    gap: var(--section-content-block-gap);
+
+    h1 {
+      margin-top: var(--section-title-margin-top);
+      margin-bottom: var(--section-title-margin-bottom);
+    }
+
+    h2 {
+      margin-top: var(--section-subtitle-margin-top);
+      margin-bottom: var(--section-subtitle-margin-bottom);
+    }
+  }
+
+  h1 {
+    margin-top: var(--section-title-margin-top);
+    margin-bottom: var(--section-title-margin-bottom);
+  }
+
+  h2 {
+    margin-top: var(--section-subtitle-margin-top);
+    margin-bottom: var(--section-subtitle-margin-bottom);
+  }
+}

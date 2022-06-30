@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Horizontaal uitgelijnd testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./horizontal-view.html">Horizontaal uitgelijnd</a></li>
+            <li><a href="./horizontal-view-test.html" aria-current="page">Horizontaal uitgelijnd testpagina</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Horizontaal uitgelijnd testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+            <h2>Horizontaal uitgelijnd</h2>
+            <h3>Visueel voorbeeld:</h3>
+
+            <div class="horizontal-view">
+              <button class="ghost">Terug</button>
+              <button>Verder</button>
+            </div>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="horizontal-view">
+  &lt;button class="ghost">Terug&lt;/button>
+  &lt;button>Verder&lt;/button>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h3>HTML-structuur-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="horizontal-view">
+  &lt;!-- horizontaal uit te lijnen content -->
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>Object met horizontaal uitgelijnde elementen</h2>
+            <h3>Visueel voorbeeld:</h3>
+
+            <div class="horizontal-view-group" id="horizontal-view-group">
+              <div>
+                <button class="ghost">Terug</button>
+                <button>Verder</button>
+              </div>
+
+              <div>
+                <button class="ghost">Terug</button>
+                <button>Verder</button>
+              </div>
+            </div>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="horizontal-view-group">
+  &lt;div>
+    &lt;button class="ghost">Terug&lt;/button>
+    &lt;button>Verder&lt;/button>
+  &lt;/div>
+
+  &lt;div>
+    &lt;button class="ghost">Terug&lt;/button>
+    &lt;button>Verder&lt;/button>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h3>HTML-structuur-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="horizontal-view-group" id="horizontal-view-group">
+  &lt;div>
+      &lt;!-- horizontaal uit te lijnen content -->
+  &lt;/div>
+
+  &lt;div>
+     &lt;!-- horizontaal uit te lijnen content -->
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>Horizontaal uitgelijnd formulier</h2>
+            <h3>Visueel voorbeeld:</h3>
+
+            <form action="" method="post" class="horizontal-view">
+              <div>
+                <label for="form-example-horizontal">Voorbeeld text input</label>
+                <input id="form-example-horizontal" name="form-example-horizontal" placeholder="voorbeeld text input" type="text">
+              </div>
+              <div>
+                <label for="form-example-horizontal-2">Voorbeeld text input</label>
+                <input id="form-example-horizontal-2" name="form-example-horizontal-2" placeholder="voorbeeld text input" type="text">
+              </div>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post" class="horizontal-view">
+  &lt;div>
+    &lt;label for="form-example-horizontal">Voorbeeld text input&lt;/label>
+    &lt;input id="form-example-horizontal" name="form-example-horizontal" placeholder="voorbeeld text input" type="text">
+  &lt;/div>
+  &lt;div>
+    &lt;label for="form-example-horizontal-2">Voorbeeld text input&lt;/label>
+    &lt;input id="form-example-horizontal-2" name="form-example-horizontal-2" placeholder="voorbeeld text input" type="text">
+  &lt;/div>
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Horizontaal uitgelijnd formulier <code>fieldset</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+
+            <form action="" method="post" class="horizontal-view">
+              <fieldset>
+                <legend>Lorem ipsum</legend>
+                <div>
+                  <label for="form-example-horizontal-fieldset">Voorbeeld text input</label>
+                  <input id="form-example-horizontal-fieldset" name="form-example-horizontal-fieldset" placeholder="voorbeeld text input" type="text">
+                </div>
+                <div>
+                  <label for="form-example-horizontal-fieldset-2">Voorbeeld text input</label>
+                  <input id="form-example-horizontal-fieldset-2" name="form-example-horizontal-fieldset-2" placeholder="voorbeeld text input" type="text">
+                </div>
+              </fieldset>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post" class="horizontal-view">
+  &lt;fieldset>
+    &lt;legend>Lorem ipsum&lt;/legend>
+    &lt;div>
+      &lt;label for="form-example-horizontal-fieldset">Voorbeeld text input&lt;/label>
+      &lt;input id="form-example-horizontal-fieldset" name="form-example-horizontal-fieldset" placeholder="voorbeeld text input" type="text">
+    &lt;/div>
+    &lt;div>
+      &lt;label for="form-example-horizontal-fieldset-2">Voorbeeld text input&lt;/label>
+      &lt;input id="form-example-horizontal-fieldset-2" name="form-example-horizontal-fieldset-2" placeholder="voorbeeld text input" type="text">
+    &lt;/div>
+  &lt;/fieldset>
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

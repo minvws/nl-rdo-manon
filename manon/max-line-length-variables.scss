@@ -1,0 +1,15 @@
+/*----------------------------------------------------------------------------------*/
+/*-------------------------- text/max-line-length-variables.scss -------------------*/
+/*----------------------------------------------------------------------------------*/
+:root {
+  --max-line-length-max-width: 40rem;
+  --max-line-length-hyphens: auto;
+  /* --max-line-length-word-wrap: ; */
+
+  /* After breakpoint */
+  --max-line-length-breakpoint-hyphens: none;
+  --max-line-length-breakpoint-word-wrap: var(
+    --max-line-length-word-wrap,
+    normal
+  );
+}

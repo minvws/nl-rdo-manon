@@ -1,0 +1,24 @@
+/*------------------------------------------------------------------------*/
+/*----------- components/header-navigation-base-variables.scss -----------*/
+/*------------------------------------------------------------------------*/
+:root {
+  --header-navigation-base-align-items: var(--layout-base-align-items);
+  --header-navigation-base-padding-top: var(--layout-base-padding-top);
+  --header-navigation-base-padding-right: var(--layout-base-padding-right);
+  --header-navigation-base-padding-bottom: var(--layout-base-padding-bottom);
+  --header-navigation-base-paddin-leftg: var(--layout-base-padding-left);
+  --header-navigation-base-max-width: var(--layout-base-max-width);
+  --header-navigation-base-gap: var(--layout-base-gap);
+  /* --header-navigation-base-background-color: ; */
+  /* --header-navigation-base-text-color: ; */
+
+  /* After breakpoint 1 */
+  --header-navigation-base-breakpoint-1-padding: var(
+    --header-navigation-base-padding
+  );
+
+  /* After breakpoint 2 */
+  --header-navigation-base-breakpoint-2-padding: var(
+    --header-navigation-base-breakpoint-1-padding
+  );
+}

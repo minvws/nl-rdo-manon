@@ -1,0 +1,34 @@
+/*----------------------------------------------------------------------------------*/
+/*----------------- components/divider-striping-content-block.scss -----------------*/
+/*----------------------------------------------------------------------------------*/
+@use "divider-striping-content-block-variables";
+
+main {
+  > section,
+  > article,
+  > div {
+    > *:nth-child(even) {
+      border-width: var(--divider-striping-content-block-border-width);
+      border-style: var(--divider-striping-content-block-border-style);
+      border-color: var(--divider-striping-content-block-border-color);
+      background-color: var(--divider-striping-content-block-background-color);
+    }
+  }
+}
+
+main {
+  > section,
+  > article,
+  > div {
+    > div {
+      > *:nth-child(even) {
+        border-width: var(--divider-striping-content-block-border-width);
+        border-style: var(--divider-striping-content-block-border-style);
+        border-color: var(--divider-striping-content-block-border-color);
+        background-color: var(
+          --divider-striping-content-block-background-color
+        );
+      }
+    }
+  }
+}

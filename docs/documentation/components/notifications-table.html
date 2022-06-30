@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Notifactie binnen tabellen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./notifications.html">Notificaties</a></li>
+            <li><a href="./notifications-table.html" aria-current="page">Notifactie binnen tabellen</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+          <ul>
+            <li><a href="./notifications-table.html">Introductie</a></li>
+            <li><a href="#examples">Voorbeelden</a></li>
+            <li><a href="#requirements">Bijbehorende bestanden</a></li>
+            <li><a href="#related">Gerelateerde pagina's</a></li>
+          </ul>
+        </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Notifactie binnen tabellen</h1>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+              <li>Voeg de notificatie toe op basis van een van de onderstaande voorbeelden.</li>
+              <li>Voeg de gewenste notificatie-type-<code>class</code> toe. Voor meer informatie zie: <a href="notifications.html#notification-types">Beschikbare weergaven</a>.</li>
+              <li>Voeg <code>role="group"</code> toe aan het notificatie-element om screenreader gebruikers erop te attenderen dat de content van de notificatie bij elkaar hoort.</li>
+              <li>Voeg <code>aria-label=""</code> toe aan het notificatie-element om screenreader gebruikers inzicht te geven in het type bericht. Bijvoorbeeld: <code>aria-label="foutmelding"</code>. Let op dat de content van het label in de taal van het document staat.</li>
+              <li>Voeg binnen het element een <code>span</code> toe zodat gebruikers (van screenreaders) weten wat de context van het bericht is. Bijvoorbeeld: <code>&lt;span>Foutmelding:&lt;/span></code>. Het is aan te raden om dit bericht voor alle gebruikers zichtbaar te houden zodat het voor iedereen duidelijk is. Denk hierbij ook aan kleurenblinden als er in het ontwerp enkel gebruik wordt gemaakt van kleuren als visuele onderscheidende factor op notificaties of iconen waarbij het kan zijn dat niet alle gebruikers het icoon zullen herkennen.</li>
+            </ol>
+
+            <h2>Aandachtspunten</h2>
+            <ul>
+              <li>Voeg de volledige code toe die in de voorbeelden staat om alle gebruikers een goede gebruikerservaring the bieden. Denk hierbij aan gebruikers die kleurenblind zijn of gebruikers die gebruik maken van hulptechnologiën.</li>
+              <li>Notificaties kunnen verborgen worden door de class <code>hidden</code> toe te voegen aan de notification</li>
+            </ul>
+          </section>
+
+          <section id="available-types">
+            <h1>Beschikbare weergaven</h1>
+            <div class="column-2">
+              <nav id="notification-table-types">
+                <ul>
+                  <li><a href="./notification-confirmation.html">Tabelrij <code>tr</code></a></li>
+                  <li><a href="./notification-warning.html">Tabelcel <code>td</code></a></li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+
+          <section id="examples">
+            <div class="horizontal-scroll">
+              <table>
+                <caption>Table with titlebar and title example:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Table header heading 1</th>
+                    <th scope="col">Table header heading 2</th>
+                    <th scope="col">Table header heading 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="warning">
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor set</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor set</td>
+                  </tr>
+                  <tr>
+                    <td class="explanation">Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor set</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th class="notification">Table footer heading 1</th>
+                    <th>Table footer heading 2</th>
+                    <th>Table footer heading 3</th>
+                  </tr>
+                  <tr>
+                    <td>Table footer 1</td>
+                    <td>Table footer 2</td>
+                    <td>Table footer 3</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </section>
+
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

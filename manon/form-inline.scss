@@ -1,0 +1,14 @@
+/*---------------------------------------------------------------*/
+/*----------------------- form-inline.scss ----------------------*/
+/*---------------------------------------------------------------*/
+@use "form-inline-variables";
+
+form.inline {
+  padding: 0;
+  background-color: transparent;
+  color: var(--form-inline-text-color);
+
+  button {
+    align-self: flex-start;
+  }
+}

@@ -1,0 +1,39 @@
+/*---------------------------------------------------------------*/
+/*--------------- components/navigation-tabs.scss ---------------*/
+/*---------------------------------------------------------------*/
+@use "navigation-tabs-variables";
+
+nav.tabs {
+  /*flex-wrap: nowrap;*/
+
+  /*> div {
+		display: flex;
+		padding: 0;
+	}*/
+
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    li {
+      a,
+      a:visited {
+        display: flex;
+        align-items: center;
+        color: inherit;
+        height: 100%;
+        padding: var(--navigation-tabs-list-item-padding);
+        box-sizing: border-box;
+
+        &:hover {
+          background-color: var(
+            --navigation-tabs-list-item-hover-background-color
+          );
+          color: var(--navigation-tabs-list-item-hover-text-color);
+          text-decoration: var(--navigation-tabs-link-text-decoration);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+/*---------------------------------------------------------------*/
+/*------------- form-fieldset-visually-hidden-help.scss ---------*/
+/*---------------------------------------------------------------*/
+@use "form-fieldset-visually-hidden-help-variables";
+/* Uses form-fieldset-visually-hidden */
+
+form.help {
+  > fieldset > fieldset {
+    .help-button {
+      top: var(--form-fieldset-visually-hidden-help-button-top);
+    }
+  }
+}

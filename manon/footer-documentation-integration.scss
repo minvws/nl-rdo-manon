@@ -1,0 +1,11 @@
+/*---------------------------------------------------------------*/
+/*------- components/footer-documentation-integration.scss ------*/
+/*---------------------------------------------------------------*/
+@use "footer";
+
+.test-cases,
+.documentation {
+  footer {
+    @extend %footer-style;
+  }
+}

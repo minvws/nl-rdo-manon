@@ -1,0 +1,38 @@
+/*---------------------------------------------------------------*/
+/*-------------------------- tile-groups.scss -------------------*/
+/*---------------------------------------------------------------*/
+@use "tile-groups-variables";
+
+%tile-groups,
+.tile {
+  > div,
+  > section {
+    display: flex;
+    flex-direction: var(--tile-groups-flex-direction, inherit);
+    gap: var(--tile-groups-gap, inherit);
+    border-width: var(--tile-groups-border-width);
+    border-style: var(--tile-groups-border-style);
+    border-color: var(--tile-groups-border-color);
+    padding-top: var(--tile-groups-padding-top);
+    padding-right: var(--tile-groups-padding-right);
+    padding-bottom: var(--tile-groups-padding-bottom);
+    padding-left: var(--tile-groups-padding-left);
+  }
+}
+
+.tiles {
+  /* render each div directly within a tiles group as a tile */
+  > div {
+    @extend %tile-groups;
+  }
+}
+
+.tiles > div {
+  @extend %tile-groups;
+}
+
+ul.tiles {
+  > li {
+    @extend %tile-groups;
+  }
+}

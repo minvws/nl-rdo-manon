@@ -1,0 +1,18 @@
+/*---------------------------------------------------------------*/
+/*------------- components/layout-column-2.scss -----------------*/
+/*---------------------------------------------------------------*/
+@use "layout-column-2-variables";
+
+$breakpoint: 42rem !default;
+
+.column-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: $breakpoint) {
+  .column-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}

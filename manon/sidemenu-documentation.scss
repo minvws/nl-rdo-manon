@@ -1,0 +1,13 @@
+/*---------------------------------------------------------------*/
+/*----------------- sidemenu-documentation.scss -----------------*/
+/*---------------------------------------------------------------*/
+/* Styling for documentation purposes and inline examples */
+.documentation {
+  main.sidemenu {
+    border: 1px solid #ccc;
+
+    &.no-js button.sidemenu-toggle {
+      display: none;
+    }
+  }
+}

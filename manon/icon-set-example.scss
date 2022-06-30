@@ -1,0 +1,35 @@
+/*----------------------------------------------------------------------------------*/
+/*----------------------- icon-set-example.scss ------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+:root {
+  --icon-cat: "\e900";
+  --icon-descending: "\e901";
+  --icon-ascending: "\e902";
+  --icon-sortable: "\e903";
+}
+
+.icon {
+  &:before {
+    position: static;
+    font-family: var(--icon-base-font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; /* Firefox */
+    font-smoothing: antialiased;
+  }
+
+  &.icon-cat:before {
+    content: "\e900";
+  }
+
+  &.icon-descending:before {
+    content: "\e901";
+  }
+
+  &.icon-ascending:before {
+    content: "\e902";
+  }
+
+  &.icon-sortable:before {
+    content: "\e903";
+  }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tabel met numerieke data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./table.html">Tabel</a></li>
+            <li><a href="./table-numerical-data.html" aria-current="page">Tabel met numerieke data</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+          <ul>
+            <li><a href="./table-numerical-data.html">Introductie</a></li>
+            <li><a href="#examples">Voorbeelden</a></li>
+            <li><a href="#requirements">Benodigdheden</a></li>
+            <li><a href="#related">Gerelateerde pagina's</a></li>
+          </ul>
+        </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Tabel met numerieke data</h1>
+            <p>Getallen worden visueel onderscheidend weergegeven van overige celdata om de gebruiksvriendelijkheid te vergroten.</p>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></li>
+              <li>Om gebruik te maken van de weergave voor numerieke data, voeg de class <code>number</code> toe aan de cellen die numerieke data bevatten en de bijbehorende titelblokken</li>
+            </ol>
+
+            <h2>Aandachtspunten</h2>
+            <ul>
+              <li>Getallen worden vaak rechts uitgelijnd voor leesbaarheid.</li>
+              <li>Voor consistentie wordt de titel van kolommen met numerieke data vaak op dezelfde manier uitgelijnd.</li>
+              <li>Getallen worden <dfn>mono-spaced</dfn> weergegeven, wat inhoud dat ieder getal dezelfde breedte heeft waardoor getallen onderling goed te vergelijken zijn.</li>
+            </ul>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+            <h2>Visueel voorbeeld:</h2>
+            <div class="horizontal-scroll">
+              <table>
+                <caption>Tabelvoorbeeld met numerieke data:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Table header heading</th>
+                    <th scope="col" class="number">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td class="number">52,12</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td class="number">110,00</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td class="number">2,00</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>Totaal</td>
+                    <td class="number">164,12</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <h2>HTML-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;div class="horizontal-scroll">
+  &lt;table>
+    &lt;caption>Tabelvoorbeeld met selectievak:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">&lt;input type="checkbox">&lt;/th>
+        &lt;th scope="col">Table header heading&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>&lt;input type="checkbox">&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Benodigdheden</h1>
+            <ul>
+              <li><code>table/table-base.scss</code></li>
+              <li><code>table/table-base-variables.scss</code></li>
+              <li><code>form/form-checkbox.scss</code></li>
+              <li><code>form/form-checkbox-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="related">
+            <h1>Gerelateerde pagina's</h1>
+            <a href="./table-numerical-data-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

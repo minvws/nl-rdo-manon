@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Headers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 50rem)" aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./headers.html" aria-current="page">Invoerveld</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <ul>
+          <li><a href="./headers.html">Introductie</a></li>
+          <li><a href="#available-types">Beschikbare weergaven</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Headers</h1>
+            <p>Hoofdnavigatie-elementen.</p>
+          </section>
+
+          <section id="available-types">
+            <h1>Beschikbare weergaven</h1>
+            <div class="column-3">
+              <nav id="form-types">
+                <ul>
+                  <li><a href="./header-horizontal.html">Horizontale header</a></li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

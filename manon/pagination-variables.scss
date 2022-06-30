@@ -1,0 +1,26 @@
+/*----------------------------------------------------------------------------------*/
+/*---------------------------- pagination-variables.scss ---------------------------*/
+/*----------------------------------------------------------------------------------*/
+:root {
+  --pagination-border-width: 1px 0 0 0;
+  --pagination-border-style: solid;
+  --pagination-border-color: #d7d7d7;
+  --pagination-padding-top: 0.5rem;
+  --pagination-gap: 0.25rem;
+
+  /* Item */
+  --pagination-item-height: 2rem;
+  --pagination-item-width: 2rem;
+  --pagination-item-padding: 0 0.5rem;
+  --pagination-item-text-color: var(--application-base-text-color);
+  /* --pagination-item-background-color: ; */
+  --pagination-item-text-decoration: none;
+
+  /* Selected - active item */
+  --pagination-item-active-background-color: var(
+    --application-base-accent-color
+  );
+  --pagination-item-active-text-color: var(
+    --application-base-accent-color-text-color
+  );
+}

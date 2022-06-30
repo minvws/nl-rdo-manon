@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Radioselecteerknop testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./forms.html" aria-current="page">Formulieren</a></li>
+            <li><a href="./form-input-radio.html">Radioselecteerknop</a></li>
+            <li><a href="./form-input-radio-test.html" aria-current="page">Radioselecteerknop testpagina</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Radioselecteerknop - <code>textarea</code> testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+            <h2>Basis</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <input
+                type="radio"
+                id="radio-example-base"
+                name="standaard-radiobutton"
+                value="value">
+              <label for="radio-example-base">Lorem ipsum dolor set amet</label>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+            <h3><code>section</code></h3>
+             <pre>
+              <code>
+ &lt;form action="" method="post">
+  &lt;input
+    type="radio"
+    id="radio-example-base"
+    name="standaard-radiobutton"
+    value="value">
+  &lt;label for="radio-example-base">Lorem ipsum dolor set amet&lt;/label>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Radioselecteerknop gegroepeerd binnen <code>div</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <div>
+                <input
+                  type="radio"
+                  id="radio-example-div"
+                  name="standaard-radiobutton"
+                  value="value">
+                <label for="radio-example-div">Lorem ipsum dolor set amet</label>
+              </div>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+            <h3><code>section</code></h3>
+             <pre>
+              <code>
+ &lt;form action="" method="post">
+  &lt;div>
+    &lt;input
+      type="radio"
+      id="radio-example-div"
+      name="standaard-radiobutton"
+      value="value">
+    &lt;label for="radio-example-div">Lorem ipsum dolor set amet&lt;/label>
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Radioselecteerknop gegroepeerd binnen <code>section</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <section>
+                <input
+                  type="radio"
+                  id="radio-example-section"
+                  name="standaard-radiobutton"
+                  value="value">
+                <label for="radio-example-section">Lorem ipsum dolor set amet</label>
+              </section>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+            <h3><code>section</code></h3>
+             <pre>
+              <code>
+ &lt;form action="" method="post">
+  &lt;section>
+    &lt;input
+      type="radio"
+      id="radio-example-section"
+      name="standaard-radiobutton"
+      value="value">
+    &lt;label for="radio-example-section">Lorem ipsum dolor set amet&lt;/label>
+  &lt;/section>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Radioselecteerknop gegroepeerd binnen <code>fieldset</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <fieldset>
+                <legend>Radioselecteerknop binnen een fieldset voorbeeld</legend>
+                <input
+                  type="radio"
+                  id="radio-example-fieldset"
+                  name="standaard-radiobutton"
+                  value="value">
+                <label for="radio-example-fieldset">Lorem ipsum dolor set amet</label>
+              </fieldset>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+            <h3><code>section</code></h3>
+             <pre>
+              <code>
+ &lt;form action="" method="post">
+  &lt;fieldset>
+    &lt;legend>Radioselecteerknop binnen een fieldset voorbeeld&lt;/legend>
+    &lt;input
+      type="radio"
+      id="radio-example-fieldset"
+      name="standaard-radiobutton"
+      value="value">
+    &lt;label for="radio-example-fieldset">Lorem ipsum dolor set amet&lt;/label>
+  &lt;/fieldset>
+&lt;/form>
+              </code>
+            </pre>
+
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

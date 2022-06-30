@@ -1,0 +1,13 @@
+/*---------------------------------------------------------------*/
+/*------------- components/table/table-number.scss --------------*/
+/*---------------------------------------------------------------*/
+@use "table-number-variables";
+
+.number {
+  text-align: var(--table-number-text-align);
+  font-variant-numeric: var(--table-number-font-family);
+}
+
+td.number input {
+  text-align: inherit;
+}

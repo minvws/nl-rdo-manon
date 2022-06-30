@@ -1,0 +1,14 @@
+/*------------------------------------------------------------------------*/
+/*--------------- layout-footer-content-block-variables.scss ---------------*/
+/*------------------------------------------------------------------------*/
+:root {
+  --layout-footer-content-block-min-height: 15rem;
+  --layout-footer-content-block-gap: 1.5rem;
+  --layout-footer-content-block-padding-top: var(--layout-base-padding-top);
+  --layout-footer-content-block-padding-right: var(--layout-base-padding-right);
+  --layout-footer-content-block-padding-bottom: var(
+    --layout-base-padding-bottom
+  );
+  --layout-footer-content-block-padding-left: var(--layout-base-padding-left);
+  --layout-footer-content-block-max-width: var(--layout-base-max-width);
+}

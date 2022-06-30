@@ -1,0 +1,48 @@
+/*---------------------------------------------------------------*/
+/*-------------- form-horizontal-view-fieldset.scss -------------*/
+/*---------------------------------------------------------------*/
+@use "form-horizontal-view-variables";
+@use "form-horizontal-view-fieldset-variables";
+
+$breakpoint: 24rem;
+
+/* Fieldset styling is a bit different compared to the default form styling.
+This is because of a couple of styling restrictions and issues concerning fieldsets and it's children.
+- Fieldsets can't use flexbox
+- When elements within the fieldset use flexbox, unwanted white-space appears at the bottom of the fieldset.
+The amount of whitespace depends on the length of the fieldset before flex positioning took place. And will not be removed after.
+
+The usage of fieldsets is recommended because it is the semantically correct element to use for form grouping.
+As well as it improves the experience for users who are using a screenreader to navigate the form.
+
+To prevent these issues to cause unexpected behaviour the fieldset and it's children within this set do no use flexbox for their positioning.
+But the alternative styling as you can see below.
+
+For more information on the bug see: https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers
+and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
+
+form.horizontal-view {
+  > fieldset {
+    > div {
+      @media (min-width: $breakpoint) {
+        > * {
+          width: var(--form-horizontal-view-input-max-width);
+        }
+
+        label {
+          width: var(--form-horizontal-view-label-max-width);
+          padding-right: var(--form-horizontal-view-gap);
+          margin-top: var(--form-horizontal-view-fieldset-label-margin-top);
+        }
+      }
+    }
+
+    .required {
+      label {
+        margin-top: var(
+          --form-horizontal-view-fieldset-label-required-margin-top
+        );
+      }
+    }
+  }
+}

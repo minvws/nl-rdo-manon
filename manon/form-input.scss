@@ -1,0 +1,23 @@
+/*---------------------------------------------------------------*/
+/*----------------------- form-input.scss ------------------------*/
+/*---------------------------------------------------------------*/
+@use "form-input-variables";
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: var(--form-input-padding-top);
+  padding-right: var(--form-input-padding-right);
+  padding-bottom: var(--form-input-padding-bottom);
+  padding-left: var(--form-input-padding-left);
+  background-color: var(--form-input-background-color);
+  color: var(--form-input-text-color, inherit);
+  font-size: var(--form-input-font-size, inherit);
+  line-height: var(--form-input-line-height, inherit);
+  font-weight: var(--form-input-font-weight, inherit);
+  min-height: var(--form-input-min-height, inherit);
+  border-width: var(--form-input-border-width);
+  border-style: var(--form-input-border-style);
+  border-color: var(--form-input-border-color);
+  border-radius: var(--form-input-border-radius);
+}

@@ -1,0 +1,48 @@
+/*---------------------------------------------------------------*/
+/*------------------------- nowrap.scss -------------------------*/
+/*---------------------------------------------------------------*/
+%nowrap,
+.nowrap {
+  white-space: nowrap;
+}
+
+table {
+  &.nowrap {
+    th,
+    td {
+      @extend %nowrap;
+    }
+  }
+
+  thead.nowrap {
+    th {
+      @extend %nowrap;
+    }
+  }
+
+  tbody.nowrap {
+    th,
+    td {
+      @extend %nowrap;
+    }
+  }
+
+  tfoot.nowrap {
+    th,
+    td {
+      @extend %nowrap;
+    }
+  }
+
+  td.nowrap {
+    @extend %nowrap;
+  }
+
+  th.nowrap {
+    @extend %nowrap;
+  }
+
+  tr.nowrap {
+    @extend %nowrap;
+  }
+}

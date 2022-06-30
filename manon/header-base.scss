@@ -1,0 +1,42 @@
+/*---------------------------------------------------------------*/
+/*--------------- components/header-base.scss -------------------*/
+/*---------------------------------------------------------------*/
+@use "header-base-variables";
+
+body > header,
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: var(--header-base-min-height);
+  padding: var(--header-base-padding);
+  background-color: var(--header-base-background-color);
+  color: var(--header-base-text-color);
+  box-sizing: border-box;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: var(--header-base-content-block-flex-grow);
+    width: 100%;
+    align-items: var(--header-base-content-block-align-items);
+    justify-content: var(--header-base-content-block-justify-content);
+    margin: 0 auto;
+    padding: var(--header-base-content-block-padding);
+    padding-top: var(--header-base-content-block-padding-top);
+    padding-bottom: var(--header-base-content-block-padding-bottom);
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: var(--header-base-title-font-size);
+    color: var(--header-base-title-text-color);
+    font-weight: var(--header-base-title-font-weight);
+
+    > a {
+      font-size: inherit;
+      color: inherit;
+      font-weight: inherit;
+    }
+  }
+}

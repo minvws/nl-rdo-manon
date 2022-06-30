@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gecomprimeerde weergave</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./table.html">Tabel</a></li>
+            <li><a href="./table-condensed.html" aria-current="page">Gecomprimeerde weergave</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+          <ul>
+            <li><a href="./table-condensed.html">Introductie</a></li>
+            <li><a href="#examples">Voorbeelden</a></li>
+            <li><a href="#requirements">Benodigdheden</a></li>
+            <li><a href="#variables">Variabelen</a></li>
+            <li><a href="#related">Gerelateerde pagina's</a></li>
+          </ul>
+        </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Gecomprimeerde weergave</h1>
+            <p>Voor het tonen van grote datasets kan het voor de gebruiksvriendelijkheid fijner zijn om de data gecomprimeerd weer te geven zodat het makkelijker is voor de gebruiker om overzicht te houden.</p>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></li>
+              <li>Voeg de class <code>condensed</code> toe op de <code>table</code>.</li>
+            </ol>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+            <h2>Visueel voorbeeld:</h2>
+            <p>In dit voorbeeld staat dat de <code>&lt;th></code> binnen de <code>&lt;thead></code> over de data in de kolommen gaan. En de <code>&lt;th></code> binnen de <code>&lt;tbody></code> over de data per rij gaan.</p>
+            <div class="horizontal-scroll">
+              <table class="condensed">
+                <caption>Tabelvoorbeeld met gecomprimeerde weergave.</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Table header heading 1</th>
+                    <th scope="col">Table header heading 2</th>
+                    <th scope="col">Table header heading 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor set</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor set</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor set</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;div class="horizontal-scroll">
+  &lt;table class="condensed">
+    &lt;caption>Simple table example:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Table header heading 1&lt;/th>
+        &lt;th scope="col">Table header heading 2&lt;/th>
+        &lt;th scope="col">Table header heading 3&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Benodigdheden</h1>
+            <ul>
+              <li><code>table/table-base.scss</code></li>
+              <li><code>table/table-base-variables.scss</code></li>
+              <li><code>table/table-condensed.scss</code></li>
+              <li><code>table/table-condensed-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <p class="system-notification" role="group" aria-label="systeembericht">Dit component heeft momenteel geen instelbare variabelen</p>
+          </section>
+
+          <section id="related">
+            <h1>Gerelateerde pagina's</h1>
+            <a href="./table-condensed-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tabelrij met checkbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./table.html">Tabel</a></li>
+            <li><a href="./table-checkbox.html" aria-current="page">Tabelrij met checkbox</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+          <ul>
+            <li><a href="./table-checkbox.html">Introductie</a></li>
+            <li><a href="#examples">Voorbeelden</a></li>
+            <li><a href="#requirements">Benodigdheden</a></li>
+            <li><a href="#related">Gerelateerde pagina's</a></li>
+          </ul>
+        </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Tabelrij met checkbox</h1>
+            <p>Voor het selecteren van rijen van een tabel.</p>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>Voeg de <code>checkbox</code> toe aan de benodigde cellen. Voor het voorbeeld zie: <a href="#examples">Voorbeelden</a></li>
+            </ol>
+
+            <h2>Aandachtspunten</h2>
+            <ul>
+              <li>Een <code>checkbox</code> binnen een tabel header cell <code>th</code> wordt vaak gebruikt om alle checkboxes binnen de tabel aan/uit te zetten.</li>
+              <li>Dit element bevat momenteel geen JavaScript of logica voorbeeld.</li>
+            </ul>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+            <h2>Visueel voorbeeld:</h2>
+            <div class="horizontal-scroll">
+              <form>
+                <table>
+                  <caption>Tabelvoorbeeld met selectievak:</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col"><input type="checkbox"></th>
+                      <th scope="col">Table header heading</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>Ipsum</td>
+                      <td><form><input type="submit" value="Lorem"></form></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+
+            <h2>HTML-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;div class="horizontal-scroll">
+  &lt;form>
+    &lt;table>
+      &lt;caption>Tabelvoorbeeld met selectievak:&lt;/caption>
+      &lt;thead>
+        &lt;tr>
+          &lt;th scope="col">&lt;input type="checkbox">&lt;/th>
+          &lt;th scope="col">Table header heading&lt;/th>
+          &lt;th scope="col">Action&lt;/th>
+        &lt;/tr>
+      &lt;/thead>
+      &lt;tbody>
+        &lt;tr>
+          &lt;td>&lt;input type="checkbox">&lt;/td>
+          &lt;td>Ipsum&lt;/td>
+          &lt;td>&lt;form>&lt;input type="submit" value="Lorem">&lt;/form>&lt;/td>
+        &lt;/tr>
+      &lt;/tbody>
+    &lt;/table>
+  &lt;/form>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Benodigdheden</h1>
+            <ul>
+              <li><code>table/table-base.scss</code></li>
+              <li><code>table/table-base-variables.scss</code></li>
+              <li><code>form/form-checkbox.scss</code></li>
+              <li><code>form/form-checkbox-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="related">
+            <h1>Gerelateerde pagina's</h1>
+            <a href="table-checkbox-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

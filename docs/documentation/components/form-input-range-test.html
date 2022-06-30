@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bereik testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./forms.html" aria-current="page">Formulieren</a></li>
+            <li><a href="./form-input-radio.html">Bereik</a></li>
+            <li><a href="./form-input-range-test.html" aria-current="page">Bereik testpagina</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Bereik - <code>textarea</code> testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+            <h2>Basis</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <label for="range-example-base">Range</label>
+              <input type="range" id="range-example-base" name="range-example-base" min="0" max="100">
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;label for="range-example-base">Range&lt;/label>
+  &lt;input type="range" id="range-example-base" name="range-example-base" min="0" max="100">
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Bereik gegroepeerd binnen <code>div</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <div>
+                <label for="range-example-div">Range</label>
+                <input type="range" id="range-example-div" name="range-example-div" min="0" max="100">
+              </div>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div>
+    &lt;label for="range-example-div">Range&lt;/label>
+    &lt;input type="range" id="range-example-div" name="range-example-div" min="0" max="100">
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Bereik gegroepeerd binnen <code>div</code> horizontaal uitgelijnd</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <div class="horizontal-view">
+                <label for="range-example-div">Range</label>
+                <input type="range" id="range-example-div" name="range-example-div" min="0" max="100">
+              </div>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div class="horizontal-view">
+    &lt;label for="range-example-div">Range&lt;/label>
+    &lt;input type="range" id="range-example-div" name="range-example-div" min="0" max="100">
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Bereik gegroepeerd binnen <code>section</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <section>
+                <label for="range-example-section">Range</label>
+                <input type="range" id="range-example-section" name="range-example-section" min="0" max="100">
+              </section>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;section>
+    &lt;label for="range-example-section">Range&lt;/label>
+    &lt;input type="range" id="range-example-section" name="range-example-section" min="0" max="100">
+  &lt;/section>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Bereik gegroepeerd binnen <code>section</code> horizontaal uitgelijnd</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <section class="horizontal-view">
+                <label for="range-example-section">Range</label>
+                <input type="range" id="range-example-section" name="range-example-section" min="0" max="100">
+              </section>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;section class="horizontal-view">
+    &lt;label for="range-example-section">Range&lt;/label>
+    &lt;input type="range" id="range-example-section" name="range-example-section" min="0" max="100">
+  &lt;/section>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Bereik gegroepeerd binnen <code>fieldset</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <fieldset>
+                <legend>bereik-invoerveld binnen een fieldset voorbeeld</legend>
+                <label for="range-example-fieldset">Range</label>
+                <input type="range" id="range-example-fieldset" name="range-example-fieldset" min="0" max="100">
+              </fieldset>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;fieldset>
+    &lt;legend>bereik-invoerveld binnen een fieldset voorbeeld&lt;/legend>
+    &lt;label for="range-example-fieldset">Range&lt;/label>
+    &lt;input type="range" id="range-example-fieldset" name="range-example-fieldset" min="0" max="100">
+  &lt;/fieldset>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Bereik gegroepeerd binnen <code>fieldset</code> horizontaal uitgelijnd</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <fieldset class="horizontal-view">
+                <legend>bereik-invoerveld binnen een fieldset voorbeeld</legend>
+                <label for="range-example-fieldset">Range</label>
+                <input type="range" id="range-example-fieldset" name="range-example-fieldset" min="0" max="100">
+              </fieldset>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+             <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;fieldset class="horizontal-view">
+    &lt;legend>bereik-invoerveld binnen een fieldset voorbeeld&lt;/legend>
+    &lt;label for="range-example-fieldset">Range&lt;/label>
+    &lt;input type="range" id="range-example-fieldset" name="range-example-fieldset" min="0" max="100">
+  &lt;/fieldset>
+&lt;/form>
+              </code>
+            </pre>
+
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tabel basisweergave</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/manon.css" rel="stylesheet">
+    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./table.html">Tabel</a></li>
+            <li><a href="./table-base.html" aria-current="page">Tabel basisweergave</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+          <ul>
+            <li><a href="./table-base.html">Introductie</a></li>
+            <li><a href="#table">Basisvoorbeeld tabel</a></li>
+            <li><a href="#table-footer">Tabel met footer</a></li>
+            <li><a href="#requirements">Benodigde bestanden</a></li>
+            <li><a href="#variables">Instelbare variabelen</a></li>
+          </ul>
+        </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Tabel</h1>
+            <p>Om data efficient en gebruiksvriendelijk weer te geven kan gebruik gemaakt worden van tabellen.</p>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+            <h2 id="table">Basisvoorbeeld tabel</h2>
+            <p>Het basisvoorbeeld bevat de basiselementen voor een nette, gebruiksvriendelijke en toegankelijke tabel.</p>
+            <h3>Visueel voorbeeld</h3>
+            <div class="horizontal-scroll">
+              <table>
+                <caption>Basisvoorbeeld tabel:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Table header heading 1</th>
+                    <th scope="col">Table header heading 2</th>
+                    <th scope="col">Table header heading 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor set</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor set</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor set</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor set</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="horizontal-scroll">
+  &lt;table>
+    &lt;caption>Basisvoorbeeld tabel:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Table header heading 1&lt;/th>
+        &lt;th scope="col">Table header heading 2&lt;/th>
+        &lt;th scope="col">Table header heading 3&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h1 id="table-footer">Tabel met footer</h1>
+            <p>Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden om een titel toe te voegen met daarin de omschrijving van de tabel. Voeg direct binnen de <code>table</code> een <code>caption</code> toe om de titel toe te voegen.</p>
+            <p>Visueel voorbeeld:</p>
+            <div class="horizontal-scroll">
+              <table>
+                <caption>Tabelvoorbeeld met footer:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Table header heading 1</th>
+                    <th scope="col">Table header heading 2</th>
+                    <th scope="col">Table header heading 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor set</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor set</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                    <td>Dolor set</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th scope="col">Table footer heading 1</th>
+                    <th scope="col">Table footer heading 2</th>
+                    <th scope="col">Table footer heading 3</th>
+                  </tr>
+                  <tr>
+                    <td>Table footer 1</td>
+                    <td>Table footer 2</td>
+                    <td>Table footer 3</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="horizontal-scroll">
+  &lt;table>
+    &lt;caption>Table with titlebar and title example:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Table header heading 1&lt;/th>
+        &lt;th scope="col">Table header heading 2&lt;/th>
+        &lt;th scope="col">Table header heading 3&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+        &lt;td>Dolor set&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+    &lt;tfoot>
+      &lt;tr>
+        &lt;th>Table footer heading 1&lt;/th>
+        &lt;th>Table footer heading 2&lt;/th>
+        &lt;th>Table footer heading 3&lt;/th>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Table footer 1&lt;/td>
+        &lt;td>Table footer 2&lt;/td>
+        &lt;td>Table footer 3&lt;/td>
+      &lt;/tr>
+    &lt;/tfoot>
+  &lt;/table>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Benodigde bestanden</h1>
+            <ul>
+              <li><code>table/table-base</code></li>
+              <li><code>table/table-base-variables</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <ul>
+              <li>Tabel
+                <ul>
+                  <li><a href="../variables.html#font-size">font-size</a></li>
+                  <li><a href="../variables.html#font-weight">font-weight</a></li>
+                  <li><a href="../variables.html#line-height">line-height</a></li>
+                  <li><a href="../variables.html#cell-padding">cell-padding</a></li>
+                  <li><a href="../variables.html#background-color">background-color</a></li>
+                  <li><a href="../variables.html#text-color">text-color</a></li>
+                  <li><a href="../variables.html#border-width">border-width</a></li>
+                  <li><a href="../variables.html#border-style">border-style</a></li>
+                  <li><a href="../variables.html#border-color">border-color</a></li>
+                </ul>
+              </li>
+              <li>Table head
+                <ul>
+                  <li><a href="../variables.html#background-color">background-color</a></li>
+                  <li><a href="../variables.html#text-color">text-color</a></li>
+                  <li><a href="../variables.html#border-width">border-width</a></li>
+                  <li><a href="../variables.html#border-style">border-style</a></li>
+                  <li><a href="../variables.html#border-color">border-color</a></li>
+                </ul>
+              </li>
+              <li>Table head cell (<code>th</code>)
+                <ul>
+                  <li><a href="../variables.html#border-width">border-width</a></li>
+                  <li><a href="../variables.html#border-style">border-style</a></li>
+                  <li><a href="../variables.html#border-color">border-color</a></li>
+                  <li><a href="../variables.html#padding">padding</a></li>
+                  <li><a href="../variables.html#font-weight">font-weight</a></li>
+                  <li><a href="../variables.html#font-size">font-size</a></li>
+                </ul>
+              </li>
+              <li>Table row (<code>tr</code>)
+                <ul>
+                  <li><a href="../variables.html#background-color-striping">background-color-striping</a></li>
+                  <li><a href="../variables.html#border-width">border-width</a></li>
+                  <li><a href="../variables.html#border-style">border-style</a></li>
+                  <li><a href="../variables.html#border-color">border-color</a></li>
+                </ul>
+              </li>
+              <li>Table cell (<code>td</code>)
+                <ul>
+                  <li><a href="../variables.html#padding">padding</a></li>
+                  <li><a href="../variables.html#gap">gap</a></li>
+                  <li><a href="../variables.html#backround-color">backround-color</a></li>
+                  <li><a href="../variables.html#border-width">border-width</a></li>
+                  <li><a href="../variables.html#border-style">border-style</a></li>
+                  <li><a href="../variables.html#border-color">border-color</a></li>
+                </ul>
+              </li>
+              <li>Table cell (<code>td</code>) binnen de eerste rij
+                <ul>
+                  <li><a href="../variables.html#border-width">border-width</a></li>
+                  <li><a href="../variables.html#border-style">border-style</a></li>
+                  <li><a href="../variables.html#border-color">border-color</a></li>
+                </ul>
+              </li>
+              <li>Table cell (<code>td</code>) binnen de laatste rij
+                <ul>
+                  <li><a href="../variables.html#border-width">border-width</a></li>
+                  <li><a href="../variables.html#border-style">border-style</a></li>
+                  <li><a href="../variables.html#border-color">border-color</a></li>
+                </ul>
+              </li>
+              <li>Table footer
+                <ul>
+                  <li><a href="../variables.html#background-color">background-color</a></li>
+                  <li><a href="../variables.html#text-color">text-color</a></li>
+                  <li><a href="../variables.html#font-weight">font-weight</a></li>
+                  <li><a href="../variables.html#padding">padding</a></li>
+                  <li><a href="../variables.html#border-width">border-width</a></li>
+                  <li><a href="../variables.html#border-style">border-style</a></li>
+                  <li><a href="../variables.html#border-color">border-color</a></li>
+                </ul>
+              </li>
+              <li>Table footer head
+                <ul>
+                  <li><a href="../variables.html#background-color">background-color</a></li>
+                  <li><a href="../variables.html#text-color">text-color</a></li>
+                  <li><a href="../variables.html#font-weight">font-weight</a></li>
+                  <li><a href="../variables.html#padding">padding</a></li>
+                  <li><a href="../variables.html#border-width">border-width</a></li>
+                  <li><a href="../variables.html#border-style">border-style</a></li>
+                  <li><a href="../variables.html#border-color">border-color</a></li>
+                </ul>
+              </li>
+              <li>Table footer cell
+                <ul>
+                  <li><a href="../variables.html#background-color">background-color</a></li>
+                  <li><a href="../variables.html#text-color">text-color</a></li>
+                  <li><a href="../variables.html#font-weight">font-weight</a></li>
+                  <li><a href="../variables.html#padding">padding</a></li>
+                  <li><a href="../variables.html#border-width">border-width</a></li>
+                  <li><a href="../variables.html#border-style">border-style</a></li>
+                  <li><a href="../variables.html#border-color">border-color</a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

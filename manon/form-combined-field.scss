@@ -1,0 +1,13 @@
+/*---------------------------------------------------------------*/
+/*------------------ form-combined-field.scss -------------------*/
+/*---------------------------------------------------------------*/
+
+.combined-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0;
+  flex-wrap: nowrap;
+}

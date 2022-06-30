@@ -1,0 +1,39 @@
+/*---------------------------------------------------------------*/
+/*------------------ table-condensed-variables.scss -------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Table condensed */
+  --table-condensed-font-size: 0.9rem;
+  --table-condensed-line-height: 1rem;
+
+  /* Table head cell */
+  --table-condensed-head-cell-padding: var(--table-base-head-cell-padding);
+  --table-condensed-head-cell-font-weight: var(
+    --table-base-head-cell-font-weight
+  );
+  --table-condensed-head-cell-font-size: var(--table-base-head-cell-font-size);
+
+  /* Table cell */
+  --table-condensed-cell-padding: var(--table-base-cell-padding);
+  --table-condensed-cell-font-weight: var(--table-base-cell-font-weight);
+  --table-condensed-cell-size: var(--table-base-cell-font-size);
+
+  /* Table footer */
+  --table-condensed-foot-padding: var(--table-base-foot-padding);
+  --table-condensed-foot-font-weight: var(--table-base-foot-font-weight);
+  --table-condensed-foot-size: var(--table-base-foot-font-size);
+
+  /* Table footer head cell (th) */
+  --table-condensed-foot-header-padding: var(--table-base-foot-header-padding);
+  --table-condensed-foot-header-font-weight: var(
+    --table-base-foot-header-font-weight
+  );
+  --table-condensed-foot-header-size: var(--table-base-foot-header-font-size);
+
+  /* Table footer cell (td) */
+  --table-condensed-foot-cell-padding: var(--table-base-foot-cell-padding);
+  --table-condensed-foot-cell-font-weight: var(
+    --table-base-foot-cell-font-weight
+  );
+  --table-condensed-foot-cell-size: var(--table-base-foot-cell-font-size);
+}
