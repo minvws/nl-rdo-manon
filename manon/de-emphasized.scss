@@ -1,0 +1,11 @@
+/*---------------------------------------------------------------*/
+/*-------------------- text/de-emphasized.scss ------------------*/
+/*---------------------------------------------------------------*/
+@use "de-emphasized-variables";
+
+.de-emphasized {
+  font-size: var(--de-emphasized-font-size, inherit);
+  font-weight: var(--de-emphasized-font-weight, inherit);
+  line-height: var(--de-emphasized-line-height, inherit);
+  color: var(--de-emphasized-text-color, inherit);
+}

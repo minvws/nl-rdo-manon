@@ -1,0 +1,28 @@
+/*---------------------------------------------------------------*/
+/*--------------- notification-base-variables.scss --------------*/
+/*---------------------------------------------------------------*/
+:root {
+  --notification-base-notification-text-color: #000;
+  --notification-base-width: 100%;
+  --notification-base-padding-top: 1.5rem;
+  --notification-base-padding-right: 1rem;
+  --notification-base-padding-bottom: 1.5rem;
+  --notification-base-padding-left: 1rem;
+  --notification-base-background-color: #f0f0f0;
+  --notification-base-border-width: 1px;
+  --notification-base-border-style: solid;
+  --notification-base-border-color: #a3a3a3;
+
+  /* Link */
+  --notification-base-link-text-color: var(--link-base-text-color);
+  --notification-base-link-hover-text-color: var(--link-base-hover-text-color);
+  --notification-base-link-visited-text-color: var(
+    --link-base-visited-text-color
+  );
+  --notification-base-link-visited-hover-text-color: var(
+    --link-base-visited-hover-text-color
+  );
+
+  /* Span */
+  --notification-base-span-font-weight: bold;
+}

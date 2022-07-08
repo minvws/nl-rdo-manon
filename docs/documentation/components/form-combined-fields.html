@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gecombineerde velden</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./forms.html">Formulieren</a></li>
+            <li>
+              <a href="./form-combined-fields.html" aria-current="page">Gecombineerde velden</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./form-combined-fields.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Gecombineerde velden</h1>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
+              <li>
+                Groepeer de gewenste velden en voeg de class
+                <code>combined-field</code>.
+              </li>
+            </ol>
+
+            <h2>Suggesties:</h2>
+            <ol>
+              <li>
+                Gecombineerde velden worden vaak gebruikt met icoonknoppen. Voor meer informatie
+                zie:
+                <a href="./button-icon.html">Icoonknoppen</a>.
+              </li>
+            </ol>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+
+            <h2>Invoerveld met icoonknop</h2>
+            <h3>Visueel voorbeeld:</h3>
+
+            <form action="" method="post">
+              <div>
+                <label for="voorbeeld-1-date-1-start">Ipsum</label>
+                <div class="combined-field">
+                  <input
+                    id="voorbeeld-1-date-1-start"
+                    name="voorbeeld-1-date-1-start"
+                    placeholder="lorem ipsum"
+                    type="text"
+                  />
+                  <button class="icon icon-cat">Cat</button>
+                </div>
+              </div>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div>
+    &lt;label for="voorbeeld-1-date-1-start">Ipsum&lt;/label>
+    &lt;div class="combined-field">
+      &lt;input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" placeholder="lorem ipsum" type="text">
+      &lt;button class="icon icon-cat">Cat&lt;/button>
+    &lt;/div>
+  &lt;/div>
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Bijbehorende bestanden</h1>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+
+            <h2>Benodigd</h2>
+            <ul>
+              <li><code>form/form-base.scss</code></li>
+              <li><code>form/form-combined-field.scss</code></li>
+            </ul>
+
+            <h2>Optioneel</h2>
+            <ul>
+              <li><code>form/form-base-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <p>Dit element heeft zelf geen instelbare variabelen.</p>
+
+            <p>Bijbehorende elementen:</p>
+            <ul>
+              <li><a href="./form-base.html">form-base</a></li>
+            </ul>
+          </section>
+
+          <section id="related">
+            <h1>Gerelateerde pagina's</h1>
+            <a href="./form-combined-fields-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

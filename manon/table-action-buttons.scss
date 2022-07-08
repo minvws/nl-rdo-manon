@@ -1,0 +1,63 @@
+/*---------------------------------------------------------------*/
+/*---------------- table-action-buttons.scss --------------------*/
+/*---------------------------------------------------------------*/
+@use "table-action-buttons-variables";
+
+%action-button {
+  /* Resetting button styling */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-height: unset;
+
+  background: var(--table-action-buttons-button-background-color);
+  justify-content: var(--table-action-buttons-button-justify-content);
+
+  &:before {
+    color: var(--table-action-buttons-button-text-color);
+    font-size: var(--table-action-buttons-button-font-size);
+  }
+
+  &:hover {
+    background: var(--table-action-buttons-button-hover-background-color);
+    border: 0;
+
+    &:before {
+      color: var(--table-action-buttons-button-hover-text-color);
+    }
+  }
+}
+
+/* Style a specific button within a table */
+table {
+  /* Resetting form styling */
+  form {
+    width: var(--table-action-buttons-width);
+    display: var(--table-action-buttons-form-display);
+    flex-direction: var(--table-action-buttons-flex-direction);
+    justify-content: var(--table-action-buttons-justify-content);
+    padding: 0;
+    background-color: transparent;
+  }
+
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    &.action-button {
+      @extend %action-button;
+    }
+  }
+
+  /* Style all buttons within a parent */
+  &.action-buttons {
+    button,
+    a.button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      @extend %action-button;
+    }
+  }
+}

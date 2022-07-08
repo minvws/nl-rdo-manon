@@ -1,0 +1,27 @@
+/*---------------------------------------------------------------*/
+/*---------------------- form-radio.scss ---------------------*/
+/*---------------------------------------------------------------*/
+@use "form-radio-variables";
+
+form {
+  input[type="radio"] {
+    margin: var(--form-radio-margin-right, 0);
+    padding: 0;
+    align-self: var(--form-radio-align-self);
+    vertical-align: var(--form-radio-vertical-align);
+    accent-color: var(--form-radio-background-color);
+    cursor: var(--form-radio-cursor);
+    width: 1.25rem;
+    height: 1.25rem;
+
+    & + label {
+      width: auto;
+      cursor: pointer;
+      margin-top: 0;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+}

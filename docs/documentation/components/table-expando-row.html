@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Uitklapbare tabel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./table.html">Tabel</a></li>
+            <li>
+              <a href="./table-expando-row.html" aria-current="page">Uitklapbare tabel</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./table-expando-row.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Benodigdheden</a></li>
+          <li><a href="#variables">Instelbare variabelen</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Uitklapbare tabel</h1>
+            <p>
+              Voor het tonen van complexe tabellen met bijbehorende details kan gekozen worden voor
+              een tabel met uitklapbare tabelrijen.
+            </p>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg een extra <code>&lt;tr></code> direct onder de bijbehorende zichtbare rij toe
+                om een uitklapbare rij toe te voegen.
+              </li>
+              <li>Geef de uitklapbare rij de class <code>expando-row</code>.</li>
+              <li>
+                Voeg binnen de uitklapbare rij een tabelcel toe die de volledige breedte gebruikt.
+                In dit voorbeeld
+                <code>&lt;td colspan="5">&lt;/td></code>. Vul als waarde van de
+                <code>colspan</code> de hoeveelheid kolommen van de tabel in.
+              </li>
+              <li>
+                Voeg direct binnen de tabelcel binnen de uitklapbare rij een
+                <code>&lt;span></code> toe met een omschrijvende tekst voor screenreader gebruikers.
+                Bijvoorbeeld:
+                <code>&lt;span class="sr-only">Extra details over lorem ipsum&lt;/span>.</code>
+                Voeg aan deze span de class <code>sr-only</code> toe om de span te verbergen voor
+                overige gebruikers.
+              </li>
+              <li>Vul de uitklapbare tabel met de gewenste data.</li>
+              <li>
+                Voeg aan de tabel een extra kolom toe met knoppen voor het bedienen van de
+                uitklapbare rijen.
+                <ul>
+                  <li>
+                    Gebruik als kolomtitel een korte omschrijvende tekst. Bijvoorbeeld met de tekst
+                    "details".
+                  </li>
+                  <li>
+                    Voeg voor iedere uitklapbare rij een knop toe met de class
+                    <code>expando-button</code>.
+                  </li>
+                  <li>
+                    Voeg een button-tekst toe die screenreader gebruikers toelicht dat de knop de
+                    rij zal openklappen, zoals bijvoorbeeld "Open details". Geef de
+                    <code>&lt;button></code> daarnaast een <code>data-close-label=""</code> met de
+                    bijbehorende tekst voor het dichtklappen van de rij. Bijvoorbeeld: "Sluit
+                    details".
+                  </li>
+                  <li>
+                    <strong>Voorbeeld:</strong>
+                    <code
+                      >&lt;button class="expando-button" data-close-label="Sluit details">Open
+                      details&lt;button></code
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Plaats
+                <code>&lt;script defer src="pad/naar/expando-rows.min.js">&lt;/script></code>
+                in de <code>&lt;head></code> van het document. Voor meer informatie zie:
+                <a href="../add-js.html">JavaScript toevoegen</a>
+              </li>
+            </ol>
+
+            <h2>Aandachtspunten</h2>
+            <ul>
+              <li>
+                <strong
+                  >Let op: Deze tabelstructuur kan als complex ervaren worden. Zeker in combinatie
+                  met hulptechnologiën. Maak enkel gebruik van deze opzet als het de gebruiker helpt
+                  om complexe de data te begrijpen.</strong
+                >
+              </li>
+              <li>
+                Wanneer JavaScript niet beschikbaar is, worden alle uitklapbare tabelrijen
+                uitgeklapt getoond en worden de expando-<code>&lt;button></code>s verborgen zodat
+                alle data ook beschikbaar is voor gebruikers zonder JavaScript.
+              </li>
+              <li>
+                Om een tabelrij standaard uitgeklapt te maken, voeg je
+                <code>aria-expanded="true"</code> toe aan de <code>&lt;button></code>. Verander
+                hierbij ook de button-tekst naar bijvoorbeeld "Sluit details", en vervang de
+                <code>data-close-label</code> door een <code>data-open-label</code> met bijbehorende
+                tekst zoals bijvoorbeeld "Open details.
+              </li>
+            </ul>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+            <h2>Visueel voorbeeld:</h2>
+            <div class="horizontal-scroll">
+              <table>
+                <caption>
+                  Voorbeeld uitklapbare tabelrijen:
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Risicolevel</th>
+                    <th scope="col">Bevindingstype</th>
+                    <th scope="col">Hoeveelheid</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="critical">Critical</span></td>
+                    <td>Lorem ipsum dolor set</td>
+                    <td class="number">4</td>
+                    <td>New</td>
+                    <td>
+                      <button class="expando-button" data-close-label="Sluit details">
+                        Open details
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="expando-row">
+                    <td colspan="5">
+                      <span class="sr-only">Lorem ipsum dolor set</span>
+                      <h1>Lorem ipsum details</h1>
+                      <p>De extra content.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="high">High</span></td>
+                    <td>Lorem ipsum dolor set</td>
+                    <td class="number">12</td>
+                    <td>New</td>
+                    <td>
+                      <button class="expando-button" data-close-label="Sluit details">
+                        Open details
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="expando-row">
+                    <td colspan="5">
+                      <span class="sr-only">Lorem ipsum dolor set</span>
+                      <h1>Lorem ipsum details</h1>
+                      <p>De extra content.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;div class="horizontal-scroll">
+  &lt;table>
+    &lt;caption>Voorbeeld uitklapbare tabelrijen:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Risicolevel&lt;/th>
+        &lt;th scope="col">Bevindingstype&lt;/th>
+        &lt;th scope="col">Hoeveelheid&lt;/th>
+        &lt;th scope="col">Status&lt;/th>
+        &lt;th scope="col">Details&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>&lt;span class="critical">Critical&lt;/span>&lt;/td>
+        &lt;td>Lorem ipsum dolor set&lt;/td>
+        &lt;td class="number">4&lt;/td>
+        &lt;td>New&lt;/td>
+        &lt;td>&lt;button class="expando-button" data-close-label="Sluit details">Open details&lt;/button>&lt;/td>
+      &lt;/tr>
+      &lt;tr class="expando-row">
+        &lt;td colspan="5">
+            &lt;span class="sr-only">Lorem ipsum dolor set&lt;/span>
+            &lt;h1>Lorem ipsum details&lt;/h1>
+            &lt;p>De extra content.&lt;/p>
+        &lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>&lt;span class="high">High&lt;/span>&lt;/td>
+        &lt;td>Lorem ipsum dolor set&lt;/td>
+        &lt;td class="number">12&lt;/td>
+        &lt;td>New&lt;/td>
+        &lt;td>&lt;button class="expando-button" data-close-label="Sluit details">Open details&lt;/button>&lt;/td>
+      &lt;/tr>
+      &lt;tr class="expando-row">
+        &lt;td colspan="5">
+            &lt;span class="sr-only">Lorem ipsum dolor set&lt;/span>
+            &lt;h1>Lorem ipsum details&lt;/h1>
+            &lt;p>De extra content.&lt;/p>
+        &lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Benodigdheden</h1>
+            <ul>
+              <li><code>table/table-expando-rows.scss</code></li>
+              <li><code>table/table-expando-rows-variables.scss</code></li>
+              <li><code>ja/expando-rows.js</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <ul>
+              <li>
+                Openklapbare cel
+                <ul>
+                  <li>
+                    <a href="../variables.html#background-color">background-color</a>
+                  </li>
+                  <li><a href="../variables.html#padding">padding</a></li>
+                </ul>
+              </li>
+              <li>
+                Content titel
+                <ul>
+                  <li><a href="../variables.html#font-size">font-size</a></li>
+                  <li>
+                    <a href="../variables.html#font-weight">font-weight</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Content subtitel
+                <ul>
+                  <li><a href="../variables.html#font-size">font-size</a></li>
+                  <li>
+                    <a href="../variables.html#font-weight">font-weight</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="../variables.html#breakpoints">Breekpunt</a></li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

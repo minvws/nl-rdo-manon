@@ -1,0 +1,34 @@
+/*---------------------------------------------------------------*/
+/*--------------------- tile-image-cover.scss -------------------*/
+/*---------------------------------------------------------------*/
+@use "tile-image-cover-variables";
+
+%tile-image-cover {
+  object-position: var(
+    --tile-image-cover-object-position,
+    var(--image-cover-object-position)
+  );
+  max-height: var(--tile-image-cover-max-height);
+  width: calc(100% + var(--tile-padding-right) + var(--tile-padding-left));
+  max-width: unset;
+
+  /* Overwriting any padding that the tile may have */
+  margin-top: calc(-1 * var(--tile-image-cover-margin-top));
+  margin-right: calc(-1 * var(--tile-image-cover-margin-right));
+  margin-left: calc(-1 * var(--tile-image-cover-margin-left));
+}
+
+.tile.image-cover {
+  img {
+    @extend %tile-image-cover;
+  }
+}
+
+.tiles.images-cover {
+  > div,
+  li {
+    img {
+      @extend %tile-image-cover;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+/*---------------------------------------------------------------*/
+/*----------------------- form-base.scss ------------------------*/
+/*---------------------------------------------------------------*/
+@use "form-base-variables";
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: var(--form-base-align-items);
+  justify-content: var(--form-base-justify-content);
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: var(--form-base-padding-top);
+  padding-right: var(--form-base-padding-right);
+  padding-bottom: var(--form-base-padding-bottom);
+  padding-left: var(--form-base-padding-left);
+  background-color: var(--form-base-background-color, inherit);
+  color: var(--form-base-text-color, inherit);
+  font-size: var(--form-base-font-size, inherit);
+  line-height: var(--form-base-line-height, inherit);
+  font-weight: var(--form-base-font-weight, inherit);
+  gap: var(--form-base-gap);
+  border-width: var(--form-base-border-width);
+  border-style: var(--form-base-border-style);
+  border-color: var(--form-base-border-color);
+
+  div,
+  fieldset {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--form-base-gap);
+  }
+
+  input,
+  textarea {
+    color: var(--form-base-input-text-color, inherit);
+  }
+
+  input,
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    min-height: 0;
+  }
+
+  .centered {
+    display: table-cell;
+    width: auto;
+    text-align: center;
+  }
+}

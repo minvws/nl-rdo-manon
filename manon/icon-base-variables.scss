@@ -1,0 +1,24 @@
+/*--------------------------------------------------------------*/
+/*--------- mixins/icon/icon-base-variables.scss ---------------*/
+/*--------------------------------------------------------------*/
+:root {
+  --icon-base-font-family: "Manon icons";
+  --icon-base-padding: 0.5rem;
+  --icon-base-width: 2.75rem;
+  --icon-base-height: 2.75rem;
+  --icon-base-min-width: 2.75rem;
+  --icon-base-min-height: 2.75rem;
+  --icon-base-font-size: var(--text-base-font-size);
+
+  /* Icon as :before */
+  --icon-base-before-font-size: var(--icon-base-font-size);
+
+  /* Image as icon */
+  --icon-base-image-width: var(--icon-base-width);
+  /* --icon-base-image-min-width: ; */
+  /* --icon-base-image-max-width: ; */
+  --icon-base-image-height: var(--icon-base-height);
+  /* --icon-base-image-min-height: ; */
+  /* --icon-base-image-max-height: ; */
+  --icon-base-image-padding: var(--icon-base-padding);
+}

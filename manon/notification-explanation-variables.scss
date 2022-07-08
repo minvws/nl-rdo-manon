@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------*/
+/*---------- notification-explanation-variables.scss ------------*/
+/*---------------------------------------------------------------*/
+:root {
+  --notification-explanation-background-color: #d9edff;
+  --notification-explanation-border-width: var(
+    --notification-base-border-width
+  );
+  --notification-explanation-border-style: var(
+    --notification-base-border-style
+  );
+  --notification-explanation-border-color: #a6c1d8;
+
+  /* Icon as before or after */
+  /* --notification-explanation-icon-before-content: ; */
+  /* --notification-explanation-icon-before-content: ; */
+}

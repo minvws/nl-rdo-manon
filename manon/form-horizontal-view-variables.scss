@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------*/
+/*------------- form-horizontal-view-variables.scss -------------*/
+/*---------------------------------------------------------------*/
+:root {
+  --form-horizontal-view-justify-content: var(--form-base-flex-justify-content);
+  --form-horizontal-view-gap: var(--form-base-gap);
+
+  /* Labels */
+  --form-horizontal-view-label-max-width: 33.33%;
+
+  /* Input fields */
+  --form-horizontal-view-input-max-width: 66.66%;
+
+  /* Fieldset form fields */
+  /* Usually the same as form-base-gap, but it has to be a single value */
+  --form-horizontal-view-fieldset-fields-margin-bottom: 1.25rem;
+}

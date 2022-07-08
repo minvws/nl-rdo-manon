@@ -1,0 +1,33 @@
+/*---------------------------------------------------------------*/
+/*---------------------- image-cover.scss -----------------------*/
+/*---------------------------------------------------------------*/
+@use "image-cover-variables";
+
+%image-cover {
+  object-fit: cover;
+  object-position: var(--image-cover-object-position);
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  height: 100%;
+  max-height: var(--image-cover-max-height);
+}
+
+.image-cover {
+  img {
+    @extend %image-cover;
+  }
+}
+
+.image-covers {
+  > div,
+  li {
+    img {
+      @extend %image-cover;
+    }
+  }
+}
+
+img.image-cover {
+  @extend %image-cover;
+}

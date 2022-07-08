@@ -1,0 +1,14 @@
+/*----------------------------------------------------------------------*/
+/*----------------- components/code-block-variables.scss ---------------*/
+/*----------------------------------------------------------------------*/
+:root {
+  --code-block-background-color: var(
+    --application-base-tint-1-background-color
+  );
+  --code-block-text-color: var(--application-base-tint-1-text-color, #000);
+  /* --code-block-padding: ; */
+  /* --code-block-max-width: ; */
+  /* --code-block-border-width: ; */
+  /* --code-block-border-style: ; */
+  /* --code-block-border-color: ; */
+}

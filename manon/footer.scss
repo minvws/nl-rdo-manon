@@ -1,0 +1,30 @@
+/*---------------------------------------------------------------*/
+/*----------------------- footer.scss ---------------------------*/
+/*---------------------------------------------------------------*/
+@use "footer-variables";
+
+body > footer,
+%footer-style {
+  display: flex;
+  justify-content: var(--footer-justify-content);
+  align-items: center;
+  min-height: var(--footer-min-height);
+  width: 100%;
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
+
+  a,
+  a:visited {
+    color: var(--footer-link-text-color, inherit);
+    text-decoration: var(--footer-link-text-decoration);
+
+    &:before,
+    &:hover {
+      color: var(--footer-link-hover-text-color);
+    }
+
+    &:hover {
+      text-decoration: var(--footer-link-hover-text-decoration);
+    }
+  }
+}

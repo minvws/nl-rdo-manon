@@ -1,0 +1,29 @@
+/*---------------------------------------------------------------*/
+/*----------------- layout-base-variables.scss ------------------*/
+/*---------------------------------------------------------------*/
+:root {
+  --layout-base-padding-top: 2rem;
+  --layout-base-padding-right: 3%;
+  --layout-base-padding-bottom: 2rem;
+  --layout-base-padding-left: 3%;
+  --layout-base-max-width: 80rem;
+  --layout-base-content-block-align-items: flex-start;
+
+  /* Spacing */
+
+  /* Top level blocks */
+  --layout-base-gap: 5rem;
+
+  /* Content blocks directly within top level blocks */
+  --layout-base-content-block-gap: 4rem;
+
+  /* Spacing beteen all other blocks */
+  --layout-base-within-content-block-gap: 2rem;
+
+  /* Titles */
+  --layout-base-content-block-title-margin-top: 2rem;
+  --layout-base-content-block-title-margin-bottom: 0;
+
+  --layout-base-content-block-subtitle-margin-top: 2rem;
+  --layout-base-content-block-subtitle-margin-bottom: 0;
+}

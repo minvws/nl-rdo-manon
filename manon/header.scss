@@ -1,0 +1,22 @@
+/*---------------------------------------------------------------*/
+/*------------------- components/header.scss --------------------*/
+/*---------------------------------------------------------------*/
+body > header,
+%main-header-style {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  > section,
+  > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    > div {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+/*---------------------------------------------------------------*/
+/*------------------- components/img-base.scss ------------------*/
+/*---------------------------------------------------------------*/
+@use "img-base-variables";
+
+img {
+  max-width: var(--img-base-max-width);
+  object-position: var(--img-base-object-position);
+  object-fit: var(--img-base-object-fit);
+}

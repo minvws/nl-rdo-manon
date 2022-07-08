@@ -1,0 +1,29 @@
+/*---------------------------------------------------------------*/
+/*----------------- components/tile-variables.scss --------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Tile */
+  /* --tile-background-color: ; */
+  /* --tile-text-color: ; */
+  /* --tile-flex-direction: ; */
+  --tile-gap: 1rem;
+  --tile-padding-top: 1.5rem;
+  --tile-padding-right: 1.5rem;
+  --tile-padding-bottom: 1.5rem;
+  --tile-padding-left: 1.5rem;
+  --tile-border-width: 1px;
+  --tile-border-style: solid;
+  --tile-border-color: #ccc;
+  /* --tile-border-radius: ; */
+
+  /* Tile title */
+  /* --tile-title-text-color: ; */
+  --tile-title-font-size: var(--font-size-text);
+
+  /* Tile subtitle */
+  /* --tile-subtitle-text-color: ; */
+  --tile-subtitle-font-size: var(--font-size-text);
+
+  /* Group of tiles */
+  --tiles-align-items: stretch;
+}

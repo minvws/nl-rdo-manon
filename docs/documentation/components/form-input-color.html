@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kleurselector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./forms.html">Formulieren</a></li>
+            <li>
+              <a href="./form-input-color.html" aria-current="page">Kleurselector</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./form-input-color.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Kleurselector</h1>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
+              <li>voeg <code>type="color"</code> toe aan het invoerveld.</li>
+              <li>
+                Voeg basiskleurwaarde met een hexidecimalekleurcode aan binnen:
+                <code>value</code>. Voorbeeld: <code>value="#ffffff"</code>. De ingevoerde kleur is
+                de kleur waarin het selectievak getoont wordt binnen het formulier voordat de
+                gebruiker een andere keuze maakt.
+              </li>
+            </ol>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+
+            <h2>Visueel voorbeeld:</h2>
+            <h3>direct</h3>
+            <form action="" method="post">
+              <label for="color-input-1">Selecteer de gewenste kleur</label>
+              <input id="color-input-1" name="color-input-1" type="color" value="#ffffff" />
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h2>HTML-voorbeeld:</h2>
+            <h3><code>section</code></h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;label for="color-input-1">Selecteer de gewenste kleur&lt;/label>
+  &lt;input id="color-input-1" name="color-input-1" type="color" value="#ffffff">
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Bijbehorende bestanden</h1>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+            <h2>Benodigd</h2>
+            <ul>
+              <li><code>form/form-base.scss</code></li>
+              <li><code>form/form-input.scss</code></li>
+            </ul>
+
+            <h2>Optioneel</h2>
+            <ul>
+              <li><code>form/form-base-variables.scss</code></li>
+              <li><code>form/form-input-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <p>Dit element heeft zelf geen instelbare variabelen.</p>
+
+            <p>Bijbehorende elementen:</p>
+            <ul>
+              <li><a href="./form-base.html">form-base</a></li>
+              <li><a href="./form-input.html">form-input</a></li>
+            </ul>
+          </section>
+
+          <section id="related">
+            <h1>Gerelateerde pagina's</h1>
+            <a href="./form-input-color-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

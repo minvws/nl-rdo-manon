@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Horizontaal uitgelijnd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li>
+              <a href="./horizontal-view.html" aria-current="page">Horizontaal uitgelijnd</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./horizontal-view.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Horizontaal uitgelijnd</h1>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
+              <li>
+                Voeg de class <code>horizontal-view</code> toe op het horizontaal uit te lijnen
+                element.
+              </li>
+            </ol>
+
+            <h2>Suggesties:</h2>
+            <ol>
+              <li>
+                Voor het horizontaal uitlijnen van meerdere objecten binnen een element voeg de
+                class <code>horizontal-view-group</code>. Voor meer informatie zie:
+                <a href="#horizontal-view-group">Object met horizontaal uitgelijnde componenten</a>
+              </li>
+            </ol>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+
+            <h2>Horizontaal uitgelijnd</h2>
+            <h3>Visueel voorbeeld:</h3>
+
+            <div class="horizontal-view">
+              <button class="ghost">Terug</button>
+              <button>Verder</button>
+            </div>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="horizontal-view">
+  &lt;button class="ghost">Terug&lt;/button>
+  &lt;button>Verder&lt;/button>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h3>HTML-structuur-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="horizontal-view">
+  &lt;!-- horizontaal uit te lijnen content -->
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>Object met horizontaal uitgelijnde elementen</h2>
+            <h3>Visueel voorbeeld:</h3>
+
+            <div class="horizontal-view-group" id="horizontal-view-group">
+              <div>
+                <button class="ghost">Terug</button>
+                <button>Verder</button>
+              </div>
+
+              <div>
+                <button class="ghost">Terug</button>
+                <button>Verder</button>
+              </div>
+            </div>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="horizontal-view-group">
+  &lt;div>
+    &lt;button class="ghost">Terug&lt;/button>
+    &lt;button>Verder&lt;/button>
+  &lt;/div>
+
+  &lt;div>
+    &lt;button class="ghost">Terug&lt;/button>
+    &lt;button>Verder&lt;/button>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h3>HTML-structuur-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="horizontal-view-group">
+  &lt;div>
+      &lt;!-- horizontaal uit te lijnen content -->
+  &lt;/div>
+
+  &lt;div>
+     &lt;!-- horizontaal uit te lijnen content -->
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Bijbehorende bestanden</h1>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+
+            <h2>Benodigd</h2>
+            <ul>
+              <li><code>form/form-base.scss</code></li>
+              <li><code>helper/horizontal-view.scss</code></li>
+            </ul>
+
+            <h2>Optioneel</h2>
+            <ul>
+              <li><code>form/form-base-variables.scss</code></li>
+              <li><code>helper/horizontal-view-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <ul>
+              <li><a href="../variables.html#gap">gap</a></li>
+              <li>
+                <a href="../variables.html#justify-content">justify-content</a>
+              </li>
+            </ul>
+          </section>
+
+          <section id="related">
+            <h1>Gerelateerde pagina's</h1>
+            <a href="./horizontal-view-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

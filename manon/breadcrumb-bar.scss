@@ -1,0 +1,77 @@
+/*---------------------------------------------------------------*/
+/*-------------------- breadcrumb-bar.scss ----------------------*/
+/*---------------------------------------------------------------*/
+@use "breadcrumb-bar-variables";
+
+.breadcrumb-bar {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: var(--breadcrumb-bar-justify-content);
+  align-items: var(--breadcrumb-bar-align-items);
+  box-sizing: border-box;
+  background-color: var(--breadcrumb-bar-background-color);
+  color: var(--breadcrumb-bar-text-color);
+  max-width: var(--breadcrumb-bar-max-width);
+  padding-top: var(--breadcrumb-bar-padding-top);
+  padding-right: var(--breadcrumb-bar-padding-right);
+  padding-bottom: var(--breadcrumb-bar-padding-bottom);
+  padding-left: var(--breadcrumb-bar-padding-left);
+
+  ul,
+  ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: var(--breadcrumb-bar-justify-content);
+    align-items: var(--breadcrumb-bar-list-vertical-align);
+    padding: var(--breadcrumb-bar-list-padding);
+    gap: var(--breadcrumb-bar-list-gap);
+    color: inherit;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      list-style: none;
+      gap: var(--breadcrumb-bar-list-item-gap);
+
+      &:after {
+        content: var(--breadcrumb-bar-icon);
+        margin-left: var(--breadcrumb-bar-icon-margin-left);
+        margin-right: var(--breadcrumb-bar-icon-margin-right);
+      }
+
+      &:hover {
+        color: var(--breadcrumb-bar-hover-text-color);
+
+        &:after {
+          color: var(--breadcrumb-bar-text-color);
+        }
+      }
+
+      &:last-child {
+        font-weight: var(--breadcrumb-bar-list-item-last-child-font-weight);
+
+        &:after {
+          content: none;
+        }
+      }
+
+      a {
+        word-break: break-word; /* Break words that won't fit the available space */
+        color: inherit;
+        text-decoration: var(--breadcrumb-bar-link-text-decoration);
+
+        &:hover {
+          text-decoration: var(--breadcrumb-bar-link-hover-text-decoration);
+        }
+
+        &:before {
+          content: none;
+        }
+      }
+    }
+  }
+}

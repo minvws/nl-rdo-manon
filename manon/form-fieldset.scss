@@ -1,0 +1,51 @@
+/*---------------------------------------------------------------*/
+/*---------------------- form-fieldset.scss ---------------------*/
+/*---------------------------------------------------------------*/
+@use "form-fieldset-variables";
+
+/* Fieldset styling is a bit different compared to the default form styling.
+This is because of a couple of styling restrictions and issues concerning fieldsets and it's children.
+- Fieldsets can't use flexbox 
+- When elements within the fieldset use flexbox, unwanted white-space appears at the bottom of the fieldset.
+The amount of whitespace depends on the length of the fieldset before flex positioning took place. And will not be removed after. 
+
+The usage of fieldsets is recommended because it is the semantically correct element to use for form grouping.
+As well as it improves the experience for users who are using a screenreader to navigate the form. 
+
+To prevent these issues to cause unexpected behaviour the fieldset and it's children within this set do no use flexbox for their positioning.
+But the alternative styling as you can see below.
+
+For more information on the bug see: https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers
+and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
+
+form {
+  > fieldset {
+    legend {
+      font-weight: var(--form-fieldset-legend-font-weight);
+      margin-bottom: var(--form-fieldset-legend-margin-bottom);
+    }
+
+    div {
+      display: block;
+      float: left; /* used to re-render the div so long labels won't run out of the div */
+      width: 100%;
+
+      > * {
+        float: left;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+      }
+    }
+
+    > *,
+		> fieldset /* Fieldsets within fieldsets ignore the "*" all selector */ {
+      margin-bottom: var(--form-fieldset-fields-margin-top);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

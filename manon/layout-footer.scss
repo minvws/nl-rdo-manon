@@ -1,0 +1,38 @@
+/*---------------------------------------------------------------*/
+/*--------------------- layout-footer.scss ----------------------*/
+/*---------------------------------------------------------------*/
+@use "layout-footer-variables";
+
+body > footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--layout-footer-gap);
+  padding-top: var(--layout-footer-padding-top);
+  padding-right: var(--layout-footer-padding-right);
+  padding-bottom: var(--layout-footer-padding-bottom);
+  padding-left: var(--layout-footer-padding-left);
+  box-sizing: border-box;
+  width: 100%;
+  align-self: center;
+  max-width: var(--layout-footer-max-width);
+  min-height: var(--footer-min-height);
+
+  > div,
+  > article,
+  > section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    gap: var(--layout-footer-content-block-gap);
+
+    div,
+    article,
+    section {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      gap: var(--layout-footer-within-content-block-gap);
+    }
+  }
+}

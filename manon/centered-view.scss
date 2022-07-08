@@ -1,0 +1,10 @@
+/*---------------------------------------------------------------*/
+/*--------------- components/centered-view.scss -----------------*/
+/*---------------------------------------------------------------*/
+%centered-view,
+.centered-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

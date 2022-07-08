@@ -1,0 +1,24 @@
+/*---------------------------------------------------------------*/
+/*------------ components/message-counter.scss ------------------*/
+/*---------------------------------------------------------------*/
+@use "message-counter-base-variables";
+
+.message-counter {
+  display: inline-flex;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  box-sizing: initial;
+  min-width: var(--message-counter-base-min-width);
+  height: var(--message-counter-base-height);
+  padding: var(--message-counter-base-padding);
+  margin: 0;
+  background-color: var(--message-counter-base-background-color);
+  color: var(--message-counter-base-text-color);
+  font-size: var(--message-counter-font-size);
+  border-width: var(--message-counter-base-border-with);
+  border-style: var(--message-counter-base-border-style);
+  border-color: var(--message-counter-base-border-color);
+  border-radius: var(--message-counter-base-border-radius);
+}

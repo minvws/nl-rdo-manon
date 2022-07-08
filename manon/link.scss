@@ -1,0 +1,65 @@
+/*---------------------------------------------------------------*/
+/*--------------------------- link.scss -------------------------*/
+/*---------------------------------------------------------------*/
+@use "link-variables";
+
+%visited-link-style {
+  background-color: var(--link-background-color);
+  color: var(--link-visited-text-color, inherit);
+
+  &:before {
+    color: inherit;
+  }
+
+  /* States */
+  &:hover,
+  &.hover {
+    color: var(--link-visited-hover-text-color, inherit);
+  }
+}
+
+a {
+  background-color: var(--link-background-color);
+  color: var(--link-text-color, inherit);
+  cursor: pointer;
+  white-space: break-spaces;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6 {
+    color: var(--link-text-color, inherit);
+  }
+
+  /* states */
+  &:hover,
+	&.hover /* Testing purposes */ {
+    color: var(--link-hover-text-color, inherit);
+  }
+
+  &:active,
+	&.active /* Testing purposes */ {
+    outline: 1px dotted #ccc;
+    outline-offset: 0.25rem; /* Adding some spacing between the content and the outline */
+    z-index: 1; /* Laying the focussed area on top of any follow up messages */
+  }
+
+  &:visited,
+	&.visited /* Testing purposes */ {
+    @extend %visited-link-style;
+
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+      @extend %visited-link-style;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Datum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./forms.html" aria-current="page">Formulieren</a></li>
+            <li><a href="./form-input-date.html">Datum</a></li>
+            <li>
+              <a href="./form-input-date-test.html" aria-current="page">Datum testpagina</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Datum</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+            <h2>Basis</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <label for="voorbeeld-date-base">Datum</label>
+              <input id="voorbeeld-date-base" name="voorbeeld-date-base" type="date" />
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;label for="voorbeeld-date-base">Datum&lt;/label>
+  &lt;input id="voorbeeld-date-base" name="voorbeeld-date-base" type="date">
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Input en label gegroepeerd binnen een <code>div</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <div>
+                <label for="voorbeeld-date-div">Datum</label>
+                <input id="voorbeeld-date-div" name="voorbeeld-date-div" type="date" />
+              </div>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div>
+    &lt;label for="voorbeeld-date-div">Datum&lt;/label>
+    &lt;input id="voorbeeld-date-div" name="voorbeeld-date-div" type="date">
+  &lt;/div>
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Input en label gegroepeerd binnen een <code>section</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <section>
+                <label for="voorbeeld-date-section">Datum</label>
+                <input id="voorbeeld-date-section" name="voorbeeld-date-section" type="date" />
+              </section>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;section>
+    &lt;label for="voorbeeld-date-section">Datum&lt;/label>
+    &lt;input id="voorbeeld-date-section" name="voorbeeld-date-section" type="date">
+  &lt;/section>
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Input en label gegroepeerd binnen een <code>fieldset</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <fieldset>
+                <legend>Datumveld voorbeeld</legend>
+                <label for="voorbeeld-date-fieldset">Datum</label>
+                <input id="voorbeeld-date-fieldset" name="voorbeeld-date-fieldset" type="date" />
+              </fieldset>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;fieldset>
+    &lt;legend>Datumveld voorbeeld&lt;/legend>
+    &lt;label for="voorbeeld-date-fieldset">Datum&lt;/label>
+    &lt;input id="voorbeeld-date-fieldset" name="voorbeeld-date-fieldset" type="date">
+  &lt;/fieldset>
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

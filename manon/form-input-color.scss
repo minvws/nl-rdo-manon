@@ -1,0 +1,19 @@
+/*---------------------------------------------------------------*/
+/*-------------------- form-input-color.scss --------------------*/
+/*---------------------------------------------------------------*/
+@use "form-input-color-variables";
+
+/* color input */
+form {
+  input[type="color"] {
+    flex-direction: column;
+    align-items: stretch;
+    cursor: pointer;
+    width: var(--form-input-color-width);
+    min-height: var(--form-input-color-min-height);
+    min-width: var(--form-input-color-min-width);
+    box-sizing: border-box;
+    padding: var(--form-input-color-padding);
+    align-self: flex-start;
+  }
+}

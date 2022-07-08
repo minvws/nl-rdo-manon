@@ -1,0 +1,37 @@
+/*---------------------------------------------------------------*/
+/*-------- components/layout-one-third-two-thirds.scss ----------*/
+/*---------------------------------------------------------------*/
+@use "layout-one-third-two-thirds-variables";
+
+$breakpoint: 42rem !default;
+
+div,
+section,
+article,
+header nav,
+footer {
+  &.one-third-two-thirds {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: var(--layout-one-third-two-thirds-gap);
+
+    > * {
+      &:first-child {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: $breakpoint) {
+      gap: var(--layout-one-third-two-thirds-breakpoint-gap);
+
+      > * {
+        width: 66.66%;
+
+        &:nth-child(odd) {
+          width: calc(33.33% - var(--layout-one-third-two-thirds-gap));
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@minvws/manon",
+  "version": "v1.0.0",
+  "license": "EUPL-1.2",
+  "files": [
+    "*.scss",
+    "**/*.scss",
+    "*.js",
+    "**/*.js"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}

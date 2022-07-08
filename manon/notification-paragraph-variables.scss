@@ -1,0 +1,21 @@
+/*---------------------------------------------------------------*/
+/*------------ notification-paragraph-variables.scss ------------*/
+/*---------------------------------------------------------------*/
+@use "notification-base-variables";
+
+:root {
+  --notification-paragraph-width: var(--notification-base-width);
+  --notification-paragraph-padding-top: var(--notification-base-padding-top);
+  --notification-paragraph-padding-right: var(
+    --notification-base-padding-right
+  );
+  --notification-paragraph-padding-bottom: var(
+    --notification-base-padding-bottom
+  );
+  --notification-paragraph-padding-left: var(--notification-base-padding-left);
+
+  /* span */
+  --notification-paragraph-span-font-weight: var(
+    --notification-base-span-font-weight
+  );
+}

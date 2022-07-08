@@ -1,0 +1,20 @@
+/*------------------------------------------------------------------------*/
+/*--------------- layout-main-content-block-variables.scss ---------------*/
+/*------------------------------------------------------------------------*/
+:root {
+  --layout-main-gap: var(--layout-block-gap);
+
+  /* Content blocks */
+  --layout-main-content-block-gap: 1.5rem;
+  --layout-main-content-block-padding-top: var(--layout-base-padding-top);
+  --layout-main-content-block-padding-right: var(--layout-base-padding-right);
+  --layout-main-content-block-padding-bottom: var(--layout-base-padding-bottom);
+  --layout-main-content-block-padding-left: var(--layout-base-padding-left);
+  --layout-main-content-block-max-width: var(--layout-base-max-width);
+
+  /* First element */
+  --layout-main-content-block-first-padding-top: 5rem;
+
+  /* Last element */
+  --layout-main-content-block-last-padding-bottom: 5rem;
+}

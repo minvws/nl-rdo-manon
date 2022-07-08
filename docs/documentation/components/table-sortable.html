@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sorteerbare tabel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./table.html">Tabel</a></li>
+            <li>
+              <a href="./table-sortable.html" aria-current="page">Sorteerbare tabel</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./table-sortable.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Benodigdheden</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Sorteerbare tabel</h1>
+            <p>
+              Om inzicht te krijgen in de data kan het behulpzaam zijn om de gebruiker de data te
+              laten sorteren. Bijvoorbeeld op basis van op of aflopende data.
+            </p>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg een <code>button</code> toe binnen de <code>th</code> om sorteerelemeent
+                klikbaar te maken.
+              </li>
+              <li>
+                Voeg binnen de knop een icoon toe indien gewenst. Voor meer informatie zie:
+                <a href="./button-icon.html">Icoonknoppen</a>
+              </li>
+              <li>
+                Voeg <code>abbr=""</code> toe aan de <code>&lt;th></code> met een korte duidelijke
+                omschrijving om de gebruikerservaring te verbeteren voor gebruikers die gebruik
+                maken van een screenreader.
+              </li>
+            </ol>
+
+            <h2>Aandachtspunten</h2>
+            <ul>
+              <li>Dit element bevat momenteel geen JavaScript of logica voorbeeld.</li>
+            </ul>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+            <h2>Visueel voorbeeld:</h2>
+            <div class="horizontal-scroll">
+              <table>
+                <caption>
+                  Tabelvoorbeeld met sorteerbare data:
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col" abbr="Ascending data">
+                      <button title="Sort descending">
+                        Descending <span class="icon icon-ascending"></span>
+                      </button>
+                    </th>
+                    <th scope="col" abbr="Descending data">
+                      <button title="Sort ascending">
+                        Ascending <span class="icon icon-descending"></span>
+                      </button>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem</td>
+                    <td>Ipsum</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;div class="horizontal-scroll">
+  &lt;table>
+    &lt;caption>Tabelvoorbeeld met sorteerbare data:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col" abbr="Ascending data">
+          &lt;button title="Sort descending">Descending &lt;span class="icon icon-ascending">&lt;/button>
+        &lt;/th>
+        &lt;th scope="col" abbr="Descending data">
+          &lt;button title="Sort ascending">Ascending &lt;span class="icon icon-descending">&lt;/span>&lt;/button>
+        &lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Lorem&lt;/td>
+        &lt;td>Ipsum&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+            </code>
+              </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Benodigdheden</h1>
+            <ul>
+              <li><code>table/table-base.scss</code></li>
+              <li><code>table/table-base-variables.scss</code></li>
+              <li><code>button/button-base.scss</code></li>
+              <li><code>button/button-base-variables.scss</code></li>
+              <li><code>icon/icon-base.scss</code></li>
+              <li><code>icon/icon-base-variables.scss</code></li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

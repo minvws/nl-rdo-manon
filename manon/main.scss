@@ -1,0 +1,20 @@
+/*---------------------------------------------------------------*/
+/*------------------------- main.scss ---------------------------*/
+/*---------------------------------------------------------------*/
+@use "main-variables";
+
+body > main,
+%main-style {
+  display: flex;
+  justify-content: var(--main-justify-content);
+  align-items: var(--main-align-items);
+  padding: var(--main-padding);
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  gap: var(--main-gap);
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+}

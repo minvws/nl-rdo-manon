@@ -1,0 +1,18 @@
+/*---------------------------------------------------------------*/
+/*------------------- footer-variables.scss ---------------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* --footer-min-height: ; */
+  --footer-justify-content: center;
+  /* --footer-min-height: ; */
+  --footer-background-color: var(--application-base-tint-1-background-color);
+  --footer-text-color: var(--application-base-tint-1-text-color);
+
+  /* Links */
+  /* --footer-link-text-color: ; */
+  --footer-link-text-decoration: none;
+
+  /* Links hover */
+  --footer-link-hover-text-color: var(--footer-link-text-color);
+  --footer-link-hover-text-decoration: underline;
+}

@@ -1,0 +1,71 @@
+/*---------------------------------------------------------------*/
+/*------------------- components/filter.scss --------------------*/
+/*---------------------------------------------------------------*/
+@use "filter-variables";
+
+.filter {
+  > form[hidden] {
+    display: none;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+    border-width: var(--filter-intro-border-width);
+    border-style: var(--filter-intro-border-style);
+    border-color: var(--filter-intro-border-color);
+    font-size: var(--filter-intro-font-size, inherit);
+    color: var(--filter-intro-text-color, inherit);
+
+    p {
+      font-size: inherit;
+      color: inherit;
+
+      > span {
+        font-size: var(--filter-intro-span-font-size, inherit);
+        color: var(--filter-intro-span-text-color, inherit);
+      }
+    }
+
+    button {
+      display: none;
+      background-color: var(--filter-button-background-color, inherit);
+      color: var(--filter-button-text-color, inherit);
+      border-width: var(--filter-button-border-width);
+      border-style: var(--filter-button-border-style);
+      border-color: var(--filter-button-border-color);
+      padding: var(--filter-button-padding);
+      min-height: var(--filter-button-min-height);
+      margin-left: var(--filter-button-margin-left);
+      font-size: var(--filter-button-font-size);
+      min-width: 0;
+
+      &:after {
+        font-family: var(--filter-button-icon-font-family, inherit);
+        line-height: var(--filter-button-icon-line-height);
+        font-size: var(--filter-button-icon-font-size, inherit);
+        font-weight: var(--filter-button-icon-font-weight, inherit);
+      }
+
+      &[aria-expanded="true"] {
+        &:after {
+          content: var(--filter-button-icon-before-close-content);
+        }
+      }
+
+      &[aria-expanded="false"] {
+        &:after {
+          content: var(--filter-button-icon-before-open-content);
+        }
+      }
+    }
+  }
+}
+
+.js-filters-loaded .filter > div > button {
+  display: inline-flex;
+}

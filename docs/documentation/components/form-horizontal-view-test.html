@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Horizontaal uitgelijnd testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./forms.html" aria-current="page">Formulieren</a></li>
+            <li>
+              <a href="./form-horizontal-view.html">Horizontaal uitgelijnd</a>
+            </li>
+            <li>
+              <a href="./form-horizontal-view-test.html" aria-current="page"
+                >Horizontaal uitgelijnd testpagina</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Horizontaal uitgelijnd testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+            <h2>Basis</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post" class="horizontal-view">
+              <div>
+                <label for="form-example-base">Voorbeeld text input</label>
+                <input
+                  id="form-example-base"
+                  name="form-example-base"
+                  placeholder="voorbeeld text input"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label for="form-example-base-2">Voorbeeld text input</label>
+                <input
+                  id="form-example-base-2"
+                  name="form-example-base-2"
+                  placeholder="voorbeeld text input"
+                  type="text"
+                />
+              </div>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;form action="" method="post" class="horizontal-view">
+  &lt;div>
+    &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
+    &lt;input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+  &lt;/div>
+  &lt;div>
+    &lt;label for="form-example-base-2">Voorbeeld text input&lt;/label>
+    &lt;input id="form-example-base-2" name="form-example-base-2" placeholder="voorbeeld text input" type="text">
+  &lt;/div>
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2><code>fieldset</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post" class="horizontal-view">
+              <fieldset>
+                <legend>Fieldset test</legend>
+                <div>
+                  <label for="form-example-base">Voorbeeld text input</label>
+                  <input
+                    id="form-example-base"
+                    name="form-example-base"
+                    placeholder="voorbeeld text input"
+                    type="text"
+                  />
+                </div>
+                <div>
+                  <label for="form-example-base-2">Voorbeeld text input</label>
+                  <input
+                    id="form-example-base-2"
+                    name="form-example-base-2"
+                    placeholder="voorbeeld text input"
+                    type="text"
+                  />
+                </div>
+              </fieldset>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;form action="" method="post" class="horizontal-view">
+  &lt;fieldset>
+    &lt;legend>Fieldset test&lt;/legend>
+    &lt;div>
+      &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
+      &lt;input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+    &lt;/div>
+    &lt;div>
+      &lt;label for="form-example-base-2">Voorbeeld text input&lt;/label>
+      &lt;input id="form-example-base-2" name="form-example-base-2" placeholder="voorbeeld text input" type="text">
+    &lt;/div>
+  &lt;/fieldset>
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

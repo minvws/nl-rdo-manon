@@ -1,0 +1,33 @@
+/*---------------------------------------------------------------*/
+/*---------------- components/layout-fifty-fifty.scss ------------------*/
+/*---------------------------------------------------------------*/
+@use "layout-fifty-fifty-variables";
+
+$breakpoint: 42rem !default;
+
+section,
+article,
+header nav,
+footer,
+div {
+  &.fifty-fifty {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: var(--layout-fifty-fifty-gap);
+    box-sizing: border-box;
+
+    > * {
+      width: 100%;
+    }
+
+    @media (min-width: $breakpoint) {
+      gap: var(--layout-fifty-fifty-breakpoint-gap);
+
+      > * {
+        flex-grow: 1;
+        max-width: calc(50% - var(--layout-fifty-fifty-gap));
+      }
+    }
+  }
+}

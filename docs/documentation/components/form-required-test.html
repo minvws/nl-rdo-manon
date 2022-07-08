@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Verplichte testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./forms.html" aria-current="page">Formulieren</a></li>
+            <li>
+              <a href="./form-required-test.html" aria-current="page"
+                >Invoerveld verplicht testpagina</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Invoerveld verplicht testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+            <h2>Invoerveld verplicht</h2>
+            <h3>Visueel voorbeeld:</h3>
+
+            <form action="" method="post">
+              <label for="voorbeeld-input-required">Ipsum</label>
+              <div>
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <input
+                  id="voorbeeld-input-required"
+                  name="voorbeeld-input-required"
+                  placeholder="lorem ipsum"
+                  type="text"
+                  required
+                />
+              </div>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <form action="" method="post">
+              <div>
+                <label for="voorbeeld-input-required">Ipsum</label>
+                <div>
+                  <span class="nota-bene">Dit veld is verplicht</span>
+                  <input
+                    id="voorbeeld-input-required"
+                    name="voorbeeld-input-required"
+                    placeholder="lorem ipsum"
+                    type="text"
+                    required
+                  />
+                </div>
+              </div>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <form action="" method="post" class="horizontal-view">
+              <div>
+                <label for="voorbeeld-input-required">Ipsum</label>
+                <div>
+                  <span class="nota-bene">Dit veld is verplicht</span>
+                  <input
+                    id="voorbeeld-input-required"
+                    name="voorbeeld-input-required"
+                    placeholder="lorem ipsum"
+                    type="text"
+                    required
+                  />
+                </div>
+              </div>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div>
+    &lt;label for="voorbeeld-input-required">Ipsum&lt;/label>
+    &lt;div>
+      &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+      &lt;input id="voorbeeld-input-required" name="voorbeeld-input-required" placeholder="lorem ipsum" type="text" required>
+    &lt;/div>
+  &lt;/div>
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Invoerveld verplicht</h2>
+            <h3>Visueel voorbeeld:</h3>
+
+            <form action="" method="post">
+              <div>
+                <label for="voorbeeld-input-required">Ipsum</label>
+                <div>
+                  <span class="nota-bene">Dit veld is verplicht</span>
+                  <input
+                    id="voorbeeld-input-required"
+                    name="voorbeeld-input-required"
+                    placeholder="lorem ipsum"
+                    type="text"
+                    required
+                  />
+                </div>
+              </div>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div>
+    &lt;label for="voorbeeld-input-required">Ipsum&lt;/label>
+    &lt;div>
+      &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+      &lt;input id="voorbeeld-input-required" name="voorbeeld-input-required" placeholder="lorem ipsum" type="text" required>
+    &lt;/div>
+  &lt;/div>
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

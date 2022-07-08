@@ -1,0 +1,16 @@
+/*---------------------------------------------------------------*/
+/*-------- components/divider-lines-base-variables.scss ---------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Divider */
+  --divider-lines-base-border-width: 1px 0 0 0;
+  --divider-lines-base-border-style: solid;
+  --divider-lines-base-border-color: #a4a4a4;
+  --divider-lines-subcontentblocks-padding-top: 2rem;
+
+  /* First of type */
+  --divider-lines-base-first-of-type-border-width: 0;
+  /* --divider-lines-base-first-of-type-border-style: ; */
+  /* --divider-lines-base-first-of-type-border-color: ; */
+  /* --divider-lines-base-first-of-type-padding-top: ; */
+}

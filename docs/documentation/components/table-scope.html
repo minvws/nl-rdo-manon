@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabelrichting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./table.html">Tabel</a></li>
+            <li>
+              <a href="./table-scope.html" aria-current="page">Tabelrichting</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./table-scope.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Benodigdheden</a></li>
+          <li><a href="#variables">Variabelen</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Tabelrichting</h1>
+            <p>Data in tabellen kan als rij of als kolom weergegeven worden.</p>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg <code>scope="col"</code> of <code>scope="row"</code> toe aan de tabelcellen
+                <code>th</code> of <code>td</code>. Afhankelijk van de richting. Voor meer
+                informatie zie: <a href="#examples">Voorbeelden</a>.
+              </li>
+            </ol>
+
+            <h2>Aandachtspunten</h2>
+            <ul>
+              <li>
+                Het is hierbij belangrijk om rekening te houden met gebruikers die gebruik maken van
+                hulptechnologiën zoals screenreaders. Om ook voor hen inzichtelijk te houden bij
+                welke data de titel hoort is het van belang dit aan te geven. Dit kan gedaan worden
+                door aan de <code>&lt;th></code> de tag <code>scope="col"</code> bij kolommen of
+                <code>scope="row"</code> bij rijen toe te voegen.
+              </li>
+            </ul>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+            <h2>Visueel voorbeeld:</h2>
+            <p>
+              In dit voorbeeld staat dat de <code>&lt;th></code> binnen de
+              <code>&lt;thead></code> over de data in de kolommen gaan. En de
+              <code>&lt;th></code> binnen de <code>&lt;tbody></code> over de data per rij gaan.
+            </p>
+            <div class="horizontal-scroll">
+              <table>
+                <caption>
+                  Tabelvoorbeeld met aangegeven scope:
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Naam</th>
+                    <th scope="col">Diersoort</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Manon</th>
+                    <td>Kat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Max</th>
+                    <td>Hond</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Keiko</th>
+                    <td>Kat</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;div class="horizontal-scroll">
+  &lt;table>
+    &lt;caption>Tabelvoorbeeld met aangegeven scope:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Naam&lt;/th>
+        &lt;th scope="col">Diersoort&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;th scope="row">Manon&lt;/th>
+        &lt;td>Kat&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;th scope="row">Max&lt;/th>
+        &lt;td>Hond&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;th scope="row">Keiko&lt;/th>
+        &lt;td>Kat&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Benodigdheden</h1>
+            <ul>
+              <li><code>table/table-base.scss</code></li>
+              <li><code>table/table-base-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <p class="system-notification" role="group" aria-label="systeembericht">
+              Dit component heeft momenteel geen instelbare variabelen
+            </p>
+          </section>
+
+          <section id="related">
+            <h1>Gerelateerde pagina's</h1>
+            <a href="./table-scope-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+/*---------------------------------------------------------------*/
+/*------------------- text/headings-variables.scss --------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* h1 */
+  --headings-h1-font-size: 30px;
+  /* --headings-h1-text-color: ; */
+  /* --headings-h1-font-weight: ; */
+  /* --headings-h1-line-height: ; */
+
+  /* h2 */
+  --headings-h2-font-size: 1.5rem;
+  /* --headings-h2-text-color: ; */
+  /* --headings-h2-font-weight: ; */
+  /* --headings-h2-line-height: ; */
+
+  /* h3 */
+  --headings-h3-font-size: 1.25rem;
+  /* --headings-h3-text-color: ; */
+  /* --headings-h3-font-weight: ; */
+  /* --headings-h3-line-height: ; */
+
+  /* h4 */
+  --headings-h4-font-size: var(--application-base-font-size);
+  /* --headings-h4-text-color: ; */
+  /* --headings-h4-font-weight: ; */
+  /* --headings-h4-line-height: ; */
+
+  /* h5 */
+  --headings-h5-font-size: var(--application-base-font-size);
+  /* --headings-h5-text-color: ; */
+  /* --headings-h5-font-weight: ; */
+  /* --headings-h5-line-height: ; */
+
+  /* h6 */
+  --headings-h6-font-size: var(--application-base-font-size);
+  /* --headings-h6-text-color: ; */
+  /* --headings-h6-font-weight: ; */
+  /* --headings-h6-line-height: ; */
+}

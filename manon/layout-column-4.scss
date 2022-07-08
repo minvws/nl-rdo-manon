@@ -1,0 +1,32 @@
+/*---------------------------------------------------------------*/
+/*------------ comoponents/layout-column-4.scss -----------------*/
+/*---------------------------------------------------------------*/
+@use "layout-column-4-variables";
+
+$breakpoint-1: 42rem !default;
+$breakpoint-2: 60rem !default;
+$breakpoint-3: 70rem !default;
+
+.column-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--layout-column-4-gap);
+}
+
+@media (min-width: $breakpoint-1) {
+  .column-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $breakpoint-2) {
+  .column-4 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: $breakpoint-3) {
+  .column-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,22 @@
+/*---------------------------------------------------------------*/
+/*----------------------- login-meta.scss -----------------------*/
+/*---------------------------------------------------------------*/
+@use "login-meta-variables";
+
+.login-meta {
+  display: flex;
+  flex-direction: var(--login-meta-flex-direction);
+  justify-content: var(--login-meta-justify-content);
+  padding-top: var(--login-meta-padding-top);
+  padding-right: var(--login-meta-padding-right);
+  padding-bottom: var(--login-meta-padding-bottom);
+  padding-left: var(--login-meta-padding-left);
+  gap: var(--login-meta-gap);
+  width: 100%;
+  max-width: unset;
+  flex-grow: 1;
+  margin: 0;
+  background-color: var(--login-meta-background-color);
+  color: var(--login-meta-text-color);
+  box-sizing: border-box;
+}

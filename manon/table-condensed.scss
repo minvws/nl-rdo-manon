@@ -1,0 +1,44 @@
+/*---------------------------------------------------------------*/
+/*---------------------- table-condensed.scss -------------------*/
+/*---------------------------------------------------------------*/
+@use "table-condensed-variables";
+
+table {
+  &.condensed {
+    font-size: var(--table-condensed-font-size);
+    line-height: var(--table-condensed-line-height);
+
+    thead {
+      th {
+        padding: var(--table-condensed-head-cell-padding);
+        font-weight: var(--table-condensed-head-cell-font-weight);
+        font-size: var(--table-condensed-head-cell-font-size);
+      }
+    }
+
+    td {
+      padding: var(--table-condensed-cell-padding);
+      font-weight: var(--table-condensed-cell-head-cell-font-weight);
+      font-size: var(--table-condensed-cell-head-cell-font-size);
+    }
+
+    tfoot {
+      font-weight: var(--table-foot-font-weight);
+      padding: var(--table-condensed-foot-padding);
+      font-size: var(--table-condensed-foot-font-size);
+      font-weight: var(--table-condensed-foot-font-weight);
+
+      th {
+        padding: var(--table-condensed-foot-header-padding);
+        font-size: var(--table-condensed-foot-header-font-size);
+        font-weight: var(--table-condensed-foot-header-font-weight);
+      }
+
+      td {
+        padding: var(--table-condensed-foot-cell-padding);
+        font-size: var(--table-condensed-foot-cell-font-size);
+        font-weight: var(--table-condensed-foot-cell-font-weight);
+      }
+    }
+  }
+}

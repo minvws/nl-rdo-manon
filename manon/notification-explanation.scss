@@ -1,0 +1,40 @@
+/*---------------------------------------------------------------*/
+/*---------------- notification-explanation.scss ----------------*/
+/*---------------------------------------------------------------*/
+@use "notification-base";
+@use "notification-explanation-variables";
+
+p.explanation,
+span.explanation,
+section.explanation,
+div.explanation {
+  @extend %notification;
+  background-color: var(--notification-explanation-background-color);
+  border-width: var(--notification-explanation-border-width);
+  border-style: var(--notification-explanation-border-style);
+  border-color: var(--notification-explanation-border-color);
+
+  &:before {
+    content: var(--notification-explanation-icon-before-content);
+  }
+
+  &:after {
+    content: var(--notification-explanation-icon-after-content);
+  }
+}
+
+textarea.explanation,
+select.explanation,
+input.explanation {
+  border-width: var(--notification-explanation-border-width);
+  border-style: var(--notification-explanation-border-style);
+  border-color: var(--notification-explanation-border-color);
+
+  &:before {
+    content: var(--notification-explanation-icon-before-content);
+  }
+
+  &:after {
+    content: var(--notification-explanation-icon-after-content);
+  }
+}

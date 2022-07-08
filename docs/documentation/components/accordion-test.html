@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Accordeon testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./accordion.html">Accordeon</a></li>
+            <li>
+              <a href="./accordion-test.html" aria-current="page">Accordeon testpagina</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Accordeon testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+            <h2>Basis</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <ul class="accordion">
+              <li>
+                <button id="example-accordion-ul-item-1">Voorbeeld-onderwerp 1</button>
+                <div aria-labelledby="example-accordion-ul-item-1">
+                  <h1>Titel van de content binnen het accordeon-element</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit
+                    egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at
+                    elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla
+                    lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit
+                    hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut
+                    sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum
+                    lorem.
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Dolor sit amet</li>
+                    <li>Consectetur adepiscing elit.</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button id="example-accordion-ul-item-2">Voorbeeld-onderwerp 2</button>
+                <div aria-labelledby="example-accordion-ul-item-2">
+                  <h1>Titel van de content binnen het accordeon-element</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit
+                    egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at
+                    elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla
+                    lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit
+                    hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut
+                    sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum
+                    lorem.
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Dolor sit amet</li>
+                    <li>Consectetur adepiscing elit.</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;ul class="accordion">
+  &lt;li>
+    &lt;button id="example-accordion-ul-item-1">Voorbeeld-onderwerp 1&lt;/button>
+    &lt;div aria-labelledby="example-accordion-ul-item-1">
+      &lt;h1>Titel van de content binnen het accordeon-element&lt;/h1>
+      &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.&lt;/p>
+      &lt;ul>
+        &lt;li>Lorem ipsum&lt;/li>
+        &lt;li>Dolor sit amet&lt;/li>
+        &lt;li>Consectetur adepiscing elit.&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/li>
+  &lt;li>
+    &lt;button id="example-accordion-ul-item-2">Voorbeeld-onderwerp 2&lt;/button>
+    &lt;div aria-labelledby="example-accordion-ul-item-2">
+      &lt;h1>Titel van de content binnen het accordeon-element&lt;/h1>
+      &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.&lt;/p>
+      &lt;ul>
+        &lt;li>Lorem ipsum&lt;/li>
+        &lt;li>Dolor sit amet&lt;/li>
+        &lt;li>Consectetur adepiscing elit.&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/li>
+&lt;/ul>
+              </code>
+            </pre>
+
+            <h2><code>div</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <div class="accordion">
+              <div>
+                <button id="example-accordion-div-item-1">Voorbeeld-onderwerp 1</button>
+                <div aria-labelledby="example-accordion-div-item-1">
+                  <h1>Titel van de content binnen het accordeon-element</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit
+                    egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at
+                    elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla
+                    lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit
+                    hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut
+                    sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum
+                    lorem.
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Dolor sit amet</li>
+                    <li>Consectetur adepiscing elit.</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <button id="example-accordion-div-item-2">Voorbeeld-onderwerp 2</button>
+                <div aria-labelledby="example-accordion-div-item-2">
+                  <h1>Titel van de content binnen het accordeon-element</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit
+                    egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at
+                    elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla
+                    lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit
+                    hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut
+                    sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum
+                    lorem.
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Dolor sit amet</li>
+                    <li>Consectetur adepiscing elit.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <h2>HTML-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;div class="accordion">
+  &lt;div>
+    &lt;button id="example-accordion-div-item-1">Voorbeeld-onderwerp 1&lt;/button>
+    &lt;div aria-labelledby="example-accordion-div-item-1">
+      &lt;h1>Titel van de content binnen het accordeon-element&lt;/h1>
+      &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.&lt;/p>
+      &lt;ul>
+        &lt;li>Lorem ipsum&lt;/li>
+        &lt;li>Dolor sit amet&lt;/li>
+        &lt;li>Consectetur adepiscing elit.&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+  &lt;div>
+    &lt;button id="example-accordion-div-item-2">Voorbeeld-onderwerp 2&lt;/button>
+    &lt;div aria-labelledby="example-accordion-div-item-2">
+      &lt;h1>Titel van de content binnen het accordeon-element&lt;/h1>
+      &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.&lt;/p>
+      &lt;ul>
+        &lt;li>Lorem ipsum&lt;/li>
+        &lt;li>Dolor sit amet&lt;/li>
+        &lt;li>Consectetur adepiscing elit.&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2><code>section</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <section class="accordion">
+              <div>
+                <button id="example-accordion-div-item-1">Voorbeeld-onderwerp 1</button>
+                <div aria-labelledby="example-accordion-div-item-1">
+                  <h1>Titel van de content binnen het accordeon-element</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit
+                    egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at
+                    elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla
+                    lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit
+                    hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut
+                    sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum
+                    lorem.
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Dolor sit amet</li>
+                    <li>Consectetur adepiscing elit.</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <button id="example-accordion-div-item-2">Voorbeeld-onderwerp 2</button>
+                <div aria-labelledby="example-accordion-div-item-2">
+                  <h1>Titel van de content binnen het accordeon-element</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit
+                    egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at
+                    elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla
+                    lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit
+                    hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut
+                    sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum
+                    lorem.
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Dolor sit amet</li>
+                    <li>Consectetur adepiscing elit.</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <h2>HTML-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;section class="accordion">
+  &lt;div>
+    &lt;button id="example-accordion-div-item-1">Voorbeeld-onderwerp 1&lt;/button>
+    &lt;div aria-labelledby="example-accordion-div-item-1">
+      &lt;h1>Titel van de content binnen het accordeon-element&lt;/h1>
+      &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.&lt;/p>
+      &lt;ul>
+        &lt;li>Lorem ipsum&lt;/li>
+        &lt;li>Dolor sit amet&lt;/li>
+        &lt;li>Consectetur adepiscing elit.&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+  &lt;div>
+    &lt;button id="example-accordion-div-item-2">Voorbeeld-onderwerp 2&lt;/button>
+    &lt;div aria-labelledby="example-accordion-div-item-2">
+      &lt;h1>Titel van de content binnen het accordeon-element&lt;/h1>
+      &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.&lt;/p>
+      &lt;ul>
+        &lt;li>Lorem ipsum&lt;/li>
+        &lt;li>Dolor sit amet&lt;/li>
+        &lt;li>Consectetur adepiscing elit.&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+&lt;/section>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

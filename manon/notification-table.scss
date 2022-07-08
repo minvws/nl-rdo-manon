@@ -1,0 +1,19 @@
+/*---------------------------------------------------------------*/
+/*---------------- notification-table-head.scss -----------------*/
+/*---------------------------------------------------------------*/
+@use "notification-base-variables";
+@use "notification-table-variables";
+
+table {
+  td,
+  th,
+  tr {
+    &.notification,
+    &.error,
+    &.warning,
+    &.confirmation,
+    &.explanation,
+    &.system {
+    }
+  }
+}

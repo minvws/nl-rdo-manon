@@ -1,0 +1,9 @@
+/*---------------------------------------------------------------*/
+/*------------ table-sticky-header-variables.scss ---------------*/
+/*---------------------------------------------------------------*/
+:root {
+  --table-sticky-header-max-height: 20rem;
+  --table-sticky-header-background-color: var(
+    --table-base-head-background-color
+  );
+}

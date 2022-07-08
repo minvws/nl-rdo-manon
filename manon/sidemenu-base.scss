@@ -1,0 +1,139 @@
+/*---------------------------------------------------------------*/
+/*------------------- sidemenu-base.scss ------------------------*/
+/*---------------------------------------------------------------*/
+@use "sidemenu-base-variables";
+
+$breakpoint: 55rem !default;
+
+main.sidemenu {
+  /* Places sidemenu next to the main content of the page */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: var(--sidemenu-base--main-padding-top);
+  padding-bottom: var(--sidemenu-base-main-padding-bottom);
+  gap: var(--sidemenu-base-main-gap);
+
+  @media (min-width: $breakpoint) {
+    flex-wrap: nowrap;
+  }
+
+  /* main content of the page */
+  > div,
+  > article,
+  > section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: var(--sidemenu-base-content-container-background-color);
+    padding-top: var(--sidemenu-base-content-container-padding-top);
+    padding-right: var(--sidemenu-base-content-container-padding-right);
+    padding-bottom: var(--sidemenu-base-content-container-padding-bottom);
+    padding-left: var(--sidemenu-base-content-container-padding-left);
+    box-sizing: border-box;
+
+    @media (min-width: $breakpoint) {
+      max-width: calc(
+        100% - var(--sidemenu-base-nav-width) - var(--sidemenu-base-main-gap)
+      );
+    }
+  }
+
+  > nav {
+    display: none;
+
+    @media (min-width: $breakpoint) {
+      /* nav */
+      margin: 0;
+      display: block;
+      width: var(--sidemenu-base-nav-width);
+      padding-top: var(--sidemenu-base-nav-padding-top);
+      padding-right: var(--sidemenu-base-nav-padding-right);
+      padding-bottom: var(--sidemenu-base-nav-padding-bottom);
+      padding-left: var(--sidemenu-base-nav-padding-left);
+      box-sizing: border-box;
+      position: relative;
+      background-color: var(--sidemenu-base-nav-background-color);
+      border-width: var(--sidemenu-base-nav-border-width);
+      border-style: var(--sidemenu-base-nav-border-style);
+      border-color: var(--sidemenu-base-nav-border-color);
+      background-image: var(--sidemenu-base-nav-background-image);
+      background-repeat: var(--sidemenu-base-nav-background-repeat);
+      background-size: var(--sidemenu-base-nav-background-size);
+      background-position: var(--sidemenu-base-nav-background-position);
+
+      /* List */
+      > ul {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: var(--sidemenu-base-ul-padding);
+        max-height: var(--sidemenu-base-max-height, 90vh);
+        overflow: auto;
+        /* Solves a bug in older safari versions where position sticky blocks overflow auto */
+        display: block;
+      }
+
+      button + ul {
+        /* Compensating for the reserved space for the icon.
+				Position sticky still reserves the space within the flow. */
+        margin-top: 0;
+      }
+
+      /* Button */
+      .sidemenu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: -webkit-sticky;
+        position: sticky;
+        gap: 0;
+        min-width: var(--sidemenu-base-toggle-button-min-width);
+        min-height: var(--sidemenu-base-toggle-button-min-height);
+        font-size: var(--sidemenu-base-toggle-button-font-size);
+        margin-left: calc(
+          var(--sidemenu-base-nav-width) - var(--sidemenu-base-nav-padding-left)
+        );
+        /* Needed to keep the button to stick to the top */
+        top: var(--sidemenu-button-margin-top, 1rem);
+        z-index: 2;
+
+        &:before {
+          content: var(--sidemenu-base-close-button-before-content, none);
+          font-size: var(--sidemenu-base-button-before-font-size);
+          font-weight: var(--sidemenu-base-button-before-font-weight);
+          white-space: var(--sidemenu-base-button-before-white-space);
+        }
+      }
+    }
+  }
+
+  &.sidemenu-closed {
+    @media (min-width: $breakpoint) {
+      > nav {
+        border: 0;
+        width: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        > ul {
+          display: none;
+        }
+
+        .sidemenu-toggle {
+          margin-left: 0;
+        }
+      }
+
+      .sidemenu-toggle {
+        &:before {
+          content: var(--sidemenu-base-open-button-before-content, none);
+        }
+      }
+
+      > div {
+        max-width: 100%;
+      }
+    }
+  }
+}

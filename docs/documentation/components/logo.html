@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Logo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./logo.html" aria-current="page">Logo</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Logo</h1>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+            <h2>Visuele voorbeeld:</h2>
+
+            <a href="./logo.html" class="logo">
+              <img src="../../static/img/logo.svg" alt="Placeholder logo" />
+              Bedrijfs of productnaam
+            </a>
+
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;a href="./logo.html" class="logo">
+  &lt;img src="../../static/img/logo.svg" alt="Placeholder logo">
+  Bedrijfs of productnaam
+&lt;/a>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Benodigde bestanden</h1>
+            <ul>
+              <li><code>logo/logo-base.scss</code></li>
+              <li><code>logo/logo-base-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <ul>
+              <li><a href="../variables.html#width">width</a></li>
+              <li><a href="../variables.html#min-width">min-width</a></li>
+              <li><a href="../variables.html#max-width">max-width</a></li>
+              <li><a href="../variables.html#height">height</a></li>
+              <li><a href="../variables.html#min-height">min-height</a></li>
+              <li><a href="../variables.html#max-height">max-height</a></li>
+              <li>
+                <a href="../variables.html#object-position">object-position</a>
+              </li>
+              <li><a href="../variables.html#object-fit">object-fit</a></li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

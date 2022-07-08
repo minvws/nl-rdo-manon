@@ -1,0 +1,68 @@
+/*---------------------------------------------------------------*/
+/*----------------------- form-help.scss ------------------------*/
+/*---------------------------------------------------------------*/
+@use "form-help-variables";
+
+form.help {
+  position: relative;
+  padding-right: var(--form-help-padding-right, var(--form-base-padding-right));
+
+  div {
+    position: relative;
+  }
+
+  > div,
+  > fieldset {
+    position: relative;
+
+    .help-button {
+      position: absolute;
+      top: var(--form-help-button-top);
+      right: var(--form-help-button-right, auto);
+
+      padding-top: var(--form-help-button-padding-top);
+      padding-right: var(--form-help-button-padding-right);
+      padding-bottom: var(--form-help-button-padding-bottom);
+      padding-left: var(--form-help-button-padding-left);
+      box-sizing: border-box;
+
+      border-width: var(--form-help-button-border-width);
+      border-style: var(--form-help-button-border-style);
+      border-color: var(--form-help-button-border-color);
+      border-radius: var(--form-help-button-border-radius);
+
+      min-width: 0;
+      width: var(--form-help-button-width);
+
+      min-height: 0;
+      height: var(--form-help-button-height);
+
+      background-color: var(--form-help-button-background-color, inherit);
+      color: var(--form-help-button-text-color, inherit);
+
+      &:hover {
+        background-color: var(--form-help-button-hover-background-color);
+        color: var(--form-help-button-hover-text-color);
+      }
+
+      &:before {
+        content: var(--form-help-button-icon-content);
+        font-family: var(--form-help-button-icon-font-family, inherit);
+        line-height: var(--form-help-button-icon-line-height);
+        font-size: var(--form-help-button-icon-font-size, inherit);
+        font-weight: var(--form-help-button-icon-font-weight, inherit);
+        vertical-align: middle;
+      }
+    }
+
+    p.explanation.collapsed,
+    div.explanation.collapsed {
+      display: none;
+    }
+  }
+
+  fieldset {
+    max-width: 100%;
+    min-width: 0;
+  }
+}

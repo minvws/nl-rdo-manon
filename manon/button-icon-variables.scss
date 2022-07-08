@@ -1,0 +1,15 @@
+/*---------------------------------------------------------------*/
+/*------------------- button-icon-variables.scss ----------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Button */
+  --button-icon-min-width: var(--icon-base-min-width);
+  --button-icon-base-width: var(--icon-base-width);
+  --button-icon-min-height: var(--icon-base-min-height);
+  --button-icon-base-height: var(--icon-base-height);
+
+  /* Icon */
+  --button-icon-font-size: var(--icon-base-font-size);
+  --button-icon-font-family: var(--icon-base-font-family);
+  /* --button-icon-icon-text-color: ; */
+}

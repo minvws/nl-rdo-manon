@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Layout authenticatie testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./layouts.html" aria-current="page">Layouts</a></li>
+            <li>
+              <a href="./layout-authentication.html">Layout authenticatie</a>
+            </li>
+            <li>
+              <a href="./layout-authentication-test.html" aria-current="page">testpagina</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Layout authenticatie testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+            <h2><code>div</code></h2>
+            <p><code>div</code> met <code>class="layout-authentication"</code>.</p>
+            <h3>Visueel voorbeeld:</h3>
+            <div class="layout-authentication">
+              <form>
+                <div>
+                  <label for="example-1-name-1">User name</label>
+                  <input type="text" id="example-1-name-1" />
+                </div>
+                <div>
+                  <label for="example-1-password-1">Password</label>
+                  <input type="password" id="example-1-password-1" />
+                </div>
+                <button type="submit">Lorem ipsum</button>
+              </form>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="layout-authentication">
+  &lt;form>
+    &lt;div>
+      &lt;label for="example-1-name-1">User name&lt;/label>
+      &lt;input type="text" id="example-1-name-1">
+    &lt;/div>
+    &lt;div>
+      &lt;label for="example-1-password-1">Password&lt;/label>
+      &lt;input type="password" id="example-1-password-1">
+    &lt;/div>
+    &lt;button type="submit">Lorem ipsum&lt;/button>
+  &lt;/form>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2><code>section</code></h2>
+            <p><code>section</code> met <code>class="layout-authentication"</code>.</p>
+            <h3>Visueel voorbeeld:</h3>
+            <section class="layout-authentication">
+              <form>
+                <div>
+                  <label for="example-2-name-1">User name</label>
+                  <input type="text" id="example-2-name-1" />
+                </div>
+                <div>
+                  <label for="example-2-password-1">Password</label>
+                  <input type="password" id="example-2-password-1" />
+                </div>
+                <button type="submit">Lorem ipsum</button>
+              </form>
+            </section>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;section class="layout-authentication">
+  &lt;form>
+    &lt;div>
+      &lt;label for="example-2-name-1">User name&lt;/label>
+      &lt;input type="text" id="example-2-name-1">
+    &lt;/div>
+    &lt;div>
+      &lt;label for="example-2-password-1">Password&lt;/label>
+      &lt;input type="password" id="example-2-password-1">
+    &lt;/div>
+    &lt;button type="submit">Lorem ipsum&lt;/button>
+  &lt;/form>
+&lt;/section>
+              </code>
+            </pre>
+
+            <h2><code>article</code></h2>
+            <p><code>article</code> met <code>class="layout-authentication"</code>.</p>
+            <h3>Visueel voorbeeld:</h3>
+            <article class="layout-authentication">
+              <form>
+                <div>
+                  <label for="example-3-name-1">User name</label>
+                  <input type="text" id="example-3-name-1" />
+                </div>
+                <div>
+                  <label for="example-3-password-1">Password</label>
+                  <input type="password" id="example-3-password-1" />
+                </div>
+                <button type="submit">Lorem ipsum</button>
+              </form>
+            </article>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;article class="layout-authentication">
+  &lt;form>
+    &lt;div>
+      &lt;label for="example-3-name-1">User name&lt;/label>
+      &lt;input type="text" id="example-3-name-1">
+    &lt;/div>
+    &lt;div>
+      &lt;label for="example-3-password-1">Password&lt;/label>
+      &lt;input type="password" id="example-3-password-1">
+    &lt;/div>
+    &lt;button type="submit">Lorem ipsum&lt;/button>
+  &lt;/form>
+&lt;/article>
+              </code>
+            </pre>
+
+            <h2><code>form</code></h2>
+            <p><code>form</code> met <code>class="layout-authentication"</code>.</p>
+            <h3>Visueel voorbeeld:</h3>
+            <form class="layout-authentication">
+              <div>
+                <label for="example-4-name-1">User name</label>
+                <input type="text" id="example-4-name-1" />
+              </div>
+              <div>
+                <label for="example-4-password-1">Password</label>
+                <input type="password" id="example-4-password-1" />
+              </div>
+              <button type="submit">Lorem ipsum</button>
+            </form>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form class="layout-authentication">
+  &lt;div>
+    &lt;label for="example-4-name-1">User name&lt;/label>
+    &lt;input type="text" id="example-4-name-1">
+  &lt;/div>
+  &lt;div>
+    &lt;label for="example-4-password-1">Password&lt;/label>
+    &lt;input type="password" id="example-4-password-1">
+  &lt;/div>
+  &lt;button type="submit">Lorem ipsum&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

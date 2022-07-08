@@ -1,0 +1,84 @@
+/*---------------------------------------------------------------*/
+/*----- components/navigation/navigation-breadcrumbs.scss -------*/
+/*---------------------------------------------------------------*/
+@use "navigation-breadcrumbs-variables";
+
+nav.breadcrumbs {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: var(
+    --navigation-breadcrumbs-justify-content,
+    var(--navigation-base-justify-content)
+  );
+  width: 100%;
+  background-color: var(
+    --navigation-breadcrumbs-background-color,
+    var(--navigation-base-background-color)
+  );
+  color: var(
+    --navigation-breadcrumbs-text-color,
+    var(--navigation-base-text-color)
+  );
+  gap: var(--navigation-breadcrumbs-gap, var(--navigation-base-gap), 0.5rem);
+
+  ul,
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: var(--navigation-breadcrumbs-list-padding);
+    gap: var(--navigation-breadcrumbs-list-gap, 0.5rem);
+    align-items: var(--navigation-breadcrumbs-list-vertical-align);
+
+    li {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      list-style: none;
+      gap: var(--navigation-breadcrumbs-list-item-gap, 0.5rem);
+
+      &:after {
+        content: var(--navigation-breadcrumb-icon, ">");
+        @extend %icon-text-styling;
+        margin-left: var(--navigation-breadcrumb-icon-margin-left, 1rem);
+        margin-right: var(--navigation-breadcrumb-icon-margin-right, 1rem);
+      }
+
+      &:last-child {
+        font-weight: bold;
+
+        &:after {
+          content: none;
+        }
+      }
+
+      a {
+        word-break: break-word; /* Break words that won't fit the available space */
+        color: inherit;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &:before {
+          content: none;
+        }
+      }
+    }
+  }
+
+  > div {
+    padding: 0;
+    display: flex;
+  }
+
+  & + button,
+  & + a.button,
+  & + input[type="button"],
+  & + input[type="submit"],
+  & + input[type="reset"] {
+    display: none;
+  }
+}

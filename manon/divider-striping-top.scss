@@ -1,0 +1,13 @@
+/*----------------------------------------------------------------------------------*/
+/*----------------- components/divider-striping-block.scss -------------------------*/
+/*----------------------------------------------------------------------------------*/
+@use "divider-striping-top-variables";
+
+main {
+  > *:nth-child(even) {
+    border-width: var(--divider-striping-top-border-width);
+    border-style: var(--divider-striping-top-border-style);
+    border-color: var(--divider-striping-top-border-color);
+    background-color: var(--divider-striping-top-background-color);
+  }
+}

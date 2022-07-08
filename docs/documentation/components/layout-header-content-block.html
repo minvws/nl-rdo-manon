@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Layout header contentblok</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav
+        data-open-label="Menu"
+        data-close-label="Sluit menu"
+        data-media="(min-width: 50rem)"
+        aria-label="Hoofdnavigatie"
+      >
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./layouts.html">Layouts</a></li>
+            <li>
+              <a href="./layout-header-content-block.html" aria-current="page"
+                >Layout header contentblok</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./layout-header-content-block.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Layout header contentblok</h1>
+            <p>
+              Basisweergave-component. Layoutkeuzes die toepassing hebben op het
+              <code>header</code>-element.
+            </p>
+            <p class="explanation">
+              <span>Tip:</span> Dit element erft stijlkeuzes van het algemene layout-bestand
+              <code>layout-base-variables.scss</code> indien deze aanwezig is. Als de header, main
+              en footer stijlkeuzes delen is het efficient om de keuzes in te stellen in dat bestand
+              om herhaling en inconsitentie te voorkomen. Voor meer informatie zie:
+              <a href="./layout-base.html">Basisweergave instellen</a>.
+            </p>
+
+            <h2>Benodigde stappen:</h2>
+            <ul>
+              <li>
+                Kies de gewenste basisweergaven. Voor beschikbare weergaven zie:
+                <a href="#layout-base">Basis-weergave</a>. Voor meer informatie over het kiezen van
+                de juiste weergave en het instellen ervan zie:
+                <a href="./layout-base-options.html">Basisweergave kiezen en instellen</a>.
+              </li>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
+            </ul>
+
+            <h2>Aandachtspunten</h2>
+            <ul>
+              <li>
+                Kies per project of in ieder geval per pagina maximaal een basisweergave om
+                tegenstrijdige stijlkeuzes te voorkomen.
+              </li>
+            </ul>
+          </section>
+
+          <section id="requirement">
+            <h1>Bijbehorende bestanden</h1>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+
+            <h2>Benodigd</h2>
+
+            <ul>
+              <li><code>layout-header-content-block.scss</code></li>
+            </ul>
+
+            <h2>Optioneel</h2>
+            <ul>
+              <li><code>layout-header-content-block-variables.scss</code></li>
+              <li><code>layout-base-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <ul>
+              <li><a href="../variables.html#padding-top">padding-top</a></li>
+              <li>
+                <a href="../variables.html#padding-right">padding-right</a>
+              </li>
+              <li>
+                <a href="../variables.html#padding-bottom">padding-bottom</a>
+              </li>
+              <li><a href="../variables.html#padding-left">padding-left</a></li>
+              <li><a href="../variables.html#max-width">max-width</a></li>
+              <li>
+                Top level blokken en onderliggende blokken:
+                <ul>
+                  <li><a href="../variables.html#gap">gap</a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+          <section id="examples">
+            <h2>Html-voorbeeld:</h2>
+
+            <h3><code>div</code>:</h3>
+            <pre>
+              <code>
+&lt;header>
+  &lt;div>
+    &lt;!-- Content -->
+  &lt;/div>
+&lt;/header>
+              </code>
+            </pre>
+
+            <h3><code>section</code>:</h3>
+            <pre>
+              <code>
+&lt;header>
+  &lt;section>
+    &lt;!-- Content -->
+  &lt;/section>
+&lt;/header>
+              </code>
+            </pre>
+
+            <h3><code>article</code>:</h3>
+            <pre>
+              <code>
+&lt;header>
+  &lt;article>
+    &lt;!-- Content -->
+  &lt;/article>
+&lt;/header>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

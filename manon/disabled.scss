@@ -1,0 +1,18 @@
+/*---------------------------------------------------------------*/
+/*---------------------- states/disbled.scss --------------------*/
+/*---------------------------------------------------------------*/
+@use "disabled-variables";
+
+*:disabled,
+*.disabled {
+  cursor: var(
+    --disabled-cursor
+  ) !important; /* Overwriting more specific selectors e.g "a.button" */
+  opacity: var(--disabled-opacity);
+
+  & + label,
+  & + label:before {
+    cursor: var(--disabled-cursor);
+    opacity: var(--disabled-opacity);
+  }
+}

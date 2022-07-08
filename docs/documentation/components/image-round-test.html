@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ronde afbeelding testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./image-round.html">Ronde afbeelding</a></li>
+            <li>
+              <a href="./image-round-test.html" aria-current="page">Ronde afbeelding testpagina</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Ronde afbeelding testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+            <h2>Enkel element</h2>
+            <div class="image-round">
+              <div class="image-container">
+                <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
+              </div>
+            </div>
+
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;div class="image-round">
+  &lt;div class="image-container">
+    &lt;img src="../../static/img/strand.jpg" alt="Foto van een strand">
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>Op <code>div</code></h2>
+            <div class="one-third-two-thirds">
+              <div class="image-round">
+                <div class="image-container">
+                  <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget mattis lorem.
+                Vivamus dapibus viverra quam, sit amet posuere ligula tristique eget. Pellentesque
+                venenatis neque et placerat placerat. Proin nec porttitor nisl. Pellentesque vitae
+                dui id lectus facilisis vehicula. Curabitur id sapien ultrices, consectetur ipsum
+                in, tincidunt erat. Praesent a rutrum est, rutrum lacinia justo. Donec ut odio nec
+                elit tincidunt maximus. Maecenas quis gravida metus.
+              </p>
+            </div>
+
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;div class="one-third-two-thirds">
+  &lt;div class="image-round">
+    &lt;div class="image-container">
+      &lt;img src="../../static/img/strand.jpg" alt="Foto van een strand">
+    &lt;/div>
+  &lt;/div>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget mattis lorem. Vivamus dapibus viverra quam, sit amet posuere ligula tristique eget. Pellentesque venenatis neque et placerat placerat. Proin nec porttitor nisl. Pellentesque vitae dui id lectus facilisis vehicula. Curabitur id sapien ultrices, consectetur ipsum in, tincidunt erat. Praesent a rutrum est, rutrum lacinia justo. Donec ut odio nec elit tincidunt maximus. Maecenas quis gravida metus.&lt;/p>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>Op elementen binnen <code>div</code></h2>
+            <div class="column-3 images-round">
+              <div>
+                <div class="image-container">
+                  <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
+                </div>
+              </div>
+
+              <div>
+                <div class="image-container">
+                  <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
+                </div>
+              </div>
+
+              <div>
+                <div class="image-container">
+                  <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
+                </div>
+              </div>
+            </div>
+
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;div class="one-third-two-thirds">
+  &lt;div class="image-round">
+    &lt;div class="image-container">
+      &lt;img src="../../static/img/strand.jpg" alt="Foto van een strand">
+    &lt;/div>
+  &lt;/div>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget mattis lorem. Vivamus dapibus viverra quam, sit amet posuere ligula tristique eget. Pellentesque venenatis neque et placerat placerat. Proin nec porttitor nisl. Pellentesque vitae dui id lectus facilisis vehicula. Curabitur id sapien ultrices, consectetur ipsum in, tincidunt erat. Praesent a rutrum est, rutrum lacinia justo. Donec ut odio nec elit tincidunt maximus. Maecenas quis gravida metus.&lt;/p>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>Op elementen binnen <code>ul</code></h2>
+            <ul class="column-3 images-round">
+              <li>
+                <div class="image-container">
+                  <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
+                </div>
+              </li>
+
+              <li>
+                <div class="image-container">
+                  <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
+                </div>
+              </li>
+
+              <li>
+                <div class="image-container">
+                  <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
+                </div>
+              </li>
+            </ul>
+
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;ul class="column-3 images-round">
+  &lt;li>
+    &lt;div class="image-container">
+      &lt;img src="../../static/img/strand.jpg" alt="Foto van een strand">
+    &lt;/div>
+  &lt;/li>
+
+   &lt;li>
+    &lt;div class="image-container">
+      &lt;img src="../../static/img/strand.jpg" alt="Foto van een strand">
+    &lt;/div>
+  &lt;/li>
+
+   &lt;li>
+    &lt;div class="image-container">
+      &lt;img src="../../static/img/strand.jpg" alt="Foto van een strand">
+    &lt;/div>
+  &lt;/li>
+&lt;/ul>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

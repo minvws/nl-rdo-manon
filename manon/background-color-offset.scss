@@ -1,0 +1,9 @@
+/*---------------------------------------------------------------*/
+/*----------- componets/background-color-offset.scss ------------*/
+/*---------------------------------------------------------------*/
+@use "background-color-offset-variables";
+
+.background-color-offset {
+  background-color: var(--background-color-offset-background-color);
+  color: var(--background-color-offset-text-color);
+}

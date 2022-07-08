@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ingelogd als testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./login-meta.html">Ingelogd als </a></li>
+            <li>
+              <a href="./login-meta-test.html" aria-current="page">Ingelogd als testpagina</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Ingelogd als testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+            <h2><code>div</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <div class="login-meta">
+              <p>Ingelogd als: <a href="">Jane Doe</a></p>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="login-meta">
+  &lt;p>Ingelogd als: &lt;a href="">Jane Doe&lt;/a>&lt;/p>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>Section</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <section class="login-meta">
+              <p>Ingelogd als: <a href="">Jane Doe</a></p>
+            </section>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;section class="login-meta">
+  &lt;p>Ingelogd als: &lt;a href="">Jane Doe&lt;/a>&lt;/p>
+&lt;/section>
+              </code>
+            </pre>
+
+            <h2><code>span</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <span class="login-meta">Ingelogd als: <a href="">Jane Doe</a></span>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;span class="login-meta">Ingelogd als: &lt;a href="">Jane Doe&lt;/a>&lt;/span>
+              </code>
+            </pre>
+
+            <h2><code>p</code></h2>
+            <h3>Visueel voorbeeld:</h3>
+            <p class="login-meta">Ingelogd als: <a href="">Jane Doe</a></p>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;p class="login-meta">Ingelogd als: &lt;a href="">Jane Doe&lt;/a>&lt;/p>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blok-element testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li>
+              <a href="./notifications.html" aria-current="page">Notifications</a>
+            </li>
+            <li>
+              <a href="./notifications-block-element.html">Blokelement</a>
+            </li>
+            <li>
+              <a href="./notifications-block-element-test.html" aria-current="page"
+                >Blokelement testpagina</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li>
+            <a href="#section">section</a>
+            <ul>
+              <li><a href="#error">Foutmelding</a></li>
+              <li><a href="#warning">Waarschuwing</a></li>
+              <li><a href="#confirmation">Bevestiging</a></li>
+              <li><a href="#explanation">Toelichting</a></li>
+              <li><a href="#system">Systeembericht</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#div">div</a>
+            <ul>
+              <li><a href="#error">Foutmelding</a></li>
+              <li><a href="#warning">Waarschuwing</a></li>
+              <li><a href="#confirmation">Bevestiging</a></li>
+              <li><a href="#explanation">Toelichting</a></li>
+              <li><a href="#system">Systeembericht</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Blok-element testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+            <h2 id="section"><code>section</code></h2>
+
+            <h3>Notificatie</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <section class="notification" role="group" aria-label="notificatie">
+              <span>Notificatie:</span>
+              <h1>Lorem ipsum dolor set</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula
+                pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus
+                tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur
+                felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan
+                ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                  consequat facilisis ac eu velit.
+                  <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+                </li>
+              </ul>
+              <button type="button">Lorem</button>
+            </section>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;section class="notification" role="group" aria-label="notificatie">
+  &lt;span>Notificatie:&lt;/span>
+  &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
+  &lt;ul>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. &lt;a href="">Lorem ipsum&lt;/a> consectetur adipiscing elit.&lt;/li>
+  &lt;/ul>
+  &lt;button type="button">Lorem&lt;/button>
+&lt;/section>
+              </code>
+            </pre>
+
+            <h3>Foutmelding</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <section class="error" role="group" aria-label="foutmelding">
+              <span>Foutmelding:</span>
+              <h1>Lorem ipsum dolor set</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula
+                pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus
+                tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur
+                felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan
+                ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                  consequat facilisis ac eu velit.
+                  <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+                </li>
+              </ul>
+              <button type="button">Lorem</button>
+            </section>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;section class="error" role="group" aria-label="foutmelding">
+  &lt;span>Foutmelding:&lt;/span>
+  &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
+  &lt;ul>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. &lt;a href="">Lorem ipsum&lt;/a> consectetur adipiscing elit.&lt;/li>
+  &lt;/ul>
+  &lt;button type="button">Lorem&lt;/button>
+&lt;/section>
+              </code>
+            </pre>
+
+            <h3>Waarchuwing:</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <section class="warning" role="group" aria-label="waarschuwing">
+              <span>Waarschuwing:</span>
+              <h1>Lorem ipsum dolor set</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula
+                pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus
+                tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur
+                felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan
+                ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                  consequat facilisis ac eu velit.
+                  <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+                </li>
+              </ul>
+              <button type="button">Lorem</button>
+            </section>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;section class="warning" role="group" aria-label="waarschuwing">
+  &lt;span>Waarschuwing:&lt;/span>
+  &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
+  &lt;ul>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. &lt;a href="">Lorem ipsum&lt;/a> consectetur adipiscing elit.&lt;/li>
+  &lt;/ul>
+  &lt;button type="button">Lorem&lt;/button>
+&lt;/section>
+              </code>
+            </pre>
+
+            <h3>Bevestiging:</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <section class="confirmation" role="group" aria-label="bevestiging">
+              <span>Bevestiging:</span>
+              <h1>Lorem ipsum dolor set</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula
+                pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus
+                tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur
+                felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan
+                ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                  consequat facilisis ac eu velit.
+                  <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+                </li>
+              </ul>
+              <button type="button">Lorem</button>
+            </section>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;section class="confirmation" role="group" aria-label="bevestiging">
+  &lt;span>Bevestiging:&lt;/span>
+  &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
+  &lt;ul>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. &lt;a href="">Lorem ipsum&lt;/a> consectetur adipiscing elit.&lt;/li>
+  &lt;/ul>
+  &lt;button type="button">Lorem&lt;/button>
+&lt;/section>
+              </code>
+            </pre>
+
+            <h3>Toelichting:</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <section class="explanation" role="group" aria-label="toelichting">
+              <span>Toelichting:</span>
+              <h1>Lorem ipsum dolor set</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula
+                pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus
+                tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur
+                felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan
+                ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                  consequat facilisis ac eu velit.
+                  <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+                </li>
+              </ul>
+              <button type="button">Lorem</button>
+            </section>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;section class="explanation" role="group" aria-label="toelichting">
+  &lt;span>Toelichting:&lt;/span>
+  &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
+  &lt;ul>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. &lt;a href="">Lorem ipsum&lt;/a> consectetur adipiscing elit.&lt;/li>
+  &lt;/ul>
+  &lt;button type="button">Lorem&lt;/button>
+&lt;/section>
+              </code>
+            </pre>
+
+            <h3>Systeembericht:</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <section class="system" role="group" aria-label="systeembericht">
+              <span>Systeembericht:</span>
+              <h1>Lorem ipsum dolor set</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula
+                pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus
+                tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur
+                felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan
+                ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                  consequat facilisis ac eu velit.
+                  <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+                </li>
+              </ul>
+              <button type="button">Lorem</button>
+            </section>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;section class="system" role="group" aria-label="systeembericht">
+  &lt;span>Systeembericht:&lt;/span>
+  &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
+  &lt;ul>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. &lt;a href="">Lorem ipsum&lt;/a> consectetur adipiscing elit.&lt;/li>
+  &lt;/ul>
+  &lt;button type="button">Lorem&lt;/button>
+&lt;/section>
+              </code>
+            </pre>
+
+            <h2><code>div</code></h2>
+            <h3>Notificatie:</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <div class="notification" role="group" aria-label="notificatie">
+              <span>Notificatie:</span>
+              <h1>Lorem ipsum dolor set</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula
+                pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus
+                tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur
+                felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan
+                ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                  consequat facilisis ac eu velit.
+                  <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+                </li>
+              </ul>
+              <button type="button">Lorem</button>
+            </div>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;div class="notification" role="group" aria-label="notificatie">
+  &lt;span>Notificatie:&lt;/span>
+  &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
+  &lt;ul>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. &lt;a href="">Lorem ipsum&lt;/a> consectetur adipiscing elit.&lt;/li>
+  &lt;/ul>
+  &lt;button type="button">Lorem&lt;/button>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h3>Foutmelding:</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <div class="error" role="group" aria-label="foutmelding">
+              <span>Foutmelding:</span>
+              <h1>Lorem ipsum dolor set</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula
+                pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus
+                tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur
+                felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan
+                ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                  consequat facilisis ac eu velit.
+                  <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+                </li>
+              </ul>
+              <button type="button">Lorem</button>
+            </div>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;div class="error" role="group" aria-label="foutmelding">
+  &lt;span>Foutmelding:&lt;/span>
+  &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
+  &lt;ul>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. &lt;a href="">Lorem ipsum&lt;/a> consectetur adipiscing elit.&lt;/li>
+  &lt;/ul>
+  &lt;button type="button">Lorem&lt;/button>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h3>Waarschuwing:</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <div class="warning" role="group" aria-label="waarchuwing">
+              <span>Waarchuwing:</span>
+              <h1>Lorem ipsum dolor set</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula
+                pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus
+                tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur
+                felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan
+                ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                  consequat facilisis ac eu velit.
+                  <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+                </li>
+              </ul>
+              <button type="button">Lorem</button>
+            </div>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;div class="warning" role="group" aria-label="waarchuwing">
+  &lt;span>Waarchuwing:&lt;/span>
+  &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
+  &lt;ul>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. &lt;a href="">Lorem ipsum&lt;/a> consectetur adipiscing elit.&lt;/li>
+  &lt;/ul>
+  &lt;button type="button">Lorem&lt;/button>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h3>Bevestiging:</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <div class="confirmation" role="group" aria-label="bevestiging">
+              <span>Bevestiging:</span>
+              <h1>Lorem ipsum dolor set</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula
+                pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus
+                tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur
+                felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan
+                ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                  consequat facilisis ac eu velit.
+                  <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+                </li>
+              </ul>
+              <button type="button">Lorem</button>
+            </div>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;div class="confirmation" role="group" aria-label="bevestiging">
+  &lt;span>Bevestiging:&lt;/span>
+  &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
+  &lt;ul>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. &lt;a href="">Lorem ipsum&lt;/a> consectetur adipiscing elit.&lt;/li>
+  &lt;/ul>
+  &lt;button type="button">Lorem&lt;/button>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h3>Toelichting:</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <div class="explanation" role="group" aria-label="toelichting">
+              <span>Toelichting:</span>
+              <h1>Lorem ipsum dolor set</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula
+                pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus
+                tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur
+                felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan
+                ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                  consequat facilisis ac eu velit.
+                  <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+                </li>
+              </ul>
+              <button type="button">Lorem</button>
+            </div>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;div class="explanation" role="group" aria-label="toelichting">
+  &lt;span>Toelichting:&lt;/span>
+  &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
+  &lt;ul>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. &lt;a href="">Lorem ipsum&lt;/a> consectetur adipiscing elit.&lt;/li>
+  &lt;/ul>
+  &lt;button type="button">Lorem&lt;/button>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h3>Systeembericht:</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <div class="system" role="group" aria-label="systeembericht">
+              <span>Systeembericht:</span>
+              <h1>Lorem ipsum dolor set</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula
+                pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus
+                tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur
+                felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan
+                ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                  consequat facilisis ac eu velit.
+                  <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+                </li>
+              </ul>
+              <button type="button">Lorem</button>
+            </div>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;div class="system" role="group" aria-label="systeembericht">
+  &lt;span>Systeembericht:&lt;/span>
+  &lt;h1>Lorem ipsum dolor set&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
+  &lt;ul>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. &lt;a href="">Lorem ipsum&lt;/a> consectetur adipiscing elit.&lt;/li>
+  &lt;/ul>
+  &lt;button type="button">Lorem&lt;/button>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

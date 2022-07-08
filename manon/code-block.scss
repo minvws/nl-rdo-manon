@@ -1,0 +1,29 @@
+/*---------------------------------------------------------------*/
+/*------------------- components/code-block.scss ----------------*/
+/*---------------------------------------------------------------*/
+@use "code-block-variables";
+
+pre,
+div.code-block {
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  max-width: var(--code-block-max-width);
+  box-sizing: border-box;
+  padding: var(--code-block-padding, 1rem);
+  background-color: var(--code-block-background-color, #f0f0f0);
+  color: var(--code-block-text-color, #000);
+  border-width: var(--code-block-border-width);
+  border-style: var(--code-block-border-style);
+  border-color: var(--code-block-border-color);
+  margin: 0;
+
+  > code {
+    white-space: unset;
+  }
+}
+
+div.code-block {
+  font-family: monospace;
+  white-space: pre;
+}

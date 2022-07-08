@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Basis-layout instellen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./layouts.html">Layouts</a></li>
+            <li>
+              <a href="./layout-base.html" aria-current="page">Basis-layout instellen</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Basis-layout instellen</h1>
+            <p>
+              Binnen het bestand <code>layout-base-variables.scss</code> kunnen algemene stijlkeuzes
+              ingevuld worden die door alle hoofdelementen gebruikt worden zodra dit
+              variabelen-bestand aanwezig is. Ieder hoofdelement heeft een eigen basisbestand
+              waarbinnen unieke waardes ingevuld kunnen worden voor het specifieke element. Voor
+              meer informatie zie
+              <a href="./layout-base-options.html">Basisweergave kiezen en instellen</a>.
+            </p>
+          </section>
+
+          <section id="requirements">
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+            <h2>Benodigd</h2>
+            <ul>
+              <li><code>layout-base-variables.scss</code></li>
+            </ul>
+
+            <h2>Optioneel</h2>
+            <p>
+              Voor het volledige overzicht van bestanden die op basis van dit variabelen-bestand
+              werken zie:
+              <a href="layouts.html#layout-base">Basisweergaven</a>.
+            </p>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <ul>
+              <li>
+                Algemene weergave:
+                <ul>
+                  <li>
+                    <a href="../variables.html#padding-top">padding-top</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#padding-right">padding-right</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#padding-bottom">padding-bottom</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#padding-left">padding-left</a>
+                  </li>
+                  <li><a href="../variables.html#max-width">max-width</a></li>
+                  <li>
+                    Op titels en subtitels:
+                    <ul>
+                      <li>
+                        <a href="../variables.html#margin-top">margin-top</a>
+                      </li>
+                      <li>
+                        <a href="../variables.html#margin-bottom">margin-bottom</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Witruimte tussen elementen:
+                <ul>
+                  <li>
+                    Content-blok:
+                    <ul>
+                      <li><a href="../variables.html#gap">gap</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    Binnen dieper gelegen blok-elementen:
+                    <ul>
+                      <li><a href="../variables.html#gap">gap</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+/*---------------------------------------------------------------*/
+/*------------------- application-base.scss ---------------------*/
+/*---------------------------------------------------------------*/
+@use "application-base-variables";
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  /* Set to always fill the page and the footer 		*/
+  /* will never be in the middle of the screen  		*/
+  min-height: 100vh;
+
+  /* Fallback set to a white because some browsers  	*/
+  /* (e.g: firefox on linux) do not use white as a 	*/
+  /* default color but this is often expected.		*/
+  background-color: var(--application-base-background-color, white);
+
+  color: var(--application-base-text-color, black);
+  font-family: var(--application-base-font-family, sans-serif);
+  font-size: var(--application-base-font-size, initial);
+  line-height: var(--application-base-line-height, initial);
+  font-weight: var(--application-base-font-weight, initial);
+  text-align: var(--application-base-text-align, initial);
+
+  /* When the page doesn't have enough content to 	*/
+  /* fill the screen height this will place the 		*/
+  /* footer at the bottom of the screen 				*/
+  > main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+}

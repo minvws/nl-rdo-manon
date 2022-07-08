@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------------*/
+/*- components/navigation/navigation-collapsible-menu-variables.scss -*/
+/*--------------------------------------------------------------------*/
+:root {
+  /* Navigation */
+
+  /* List */
+
+  /* List collapsed */
+  --navigation-collapsible-menu-list-collapsed-background-color: var(
+    --application-base-accent-color-tint-2
+  );
+  --navigation-collapsible-menu-list-collapsed-text-color: var(
+    --application-base-accent-color-tint-2-text-color
+  );
+
+  /* List item collapsed */
+  /* --navigation-collapsible-menu-list-item-collapsed-border-width: ; */
+  /* --navigation-collapsible-menu-list-item-collapsed-border-style: ; */
+  /* --navigation-collapsible-menu-list-item-collapsed-border-color: ; */
+  /* --navigation-collapsible-menu-list-item-collapsed-background-color: ; */
+
+  /* List item collapsed hover */
+  --navigation-collapsible-menu-list-item-collapsed-hover-background-color: var(
+    --application-base-accent-color-tint-1
+  );
+  --navigation-collapsible-menu-list-item-collapsed-hover-text-color: var(
+    --application-base-accent-color-tint-1-text-color
+  );
+  --navigation-collapsible-menu-list-item-collapsed-hover-background-color: #ccc;
+
+  /* Last list item border */
+  /* --navigation-collapsible-menu-list-item-last-child-collapsed-border-width: ; */
+  /* --navigation-collapsible-menu-list-item-last-child-collapsed-border-style: ; */
+  /* --navigation-collapsible-menu-list-item-last-child-collapsed-border-color: ; */
+
+  /* List item collapsed */
+  --navigation-collapsible-menu-list-item-collapsed-padding: 0.5rem 1rem;
+  --navigation-collapsible-menu-list-item-hover-background-color: var(
+    --application-base-accent-color-tint-1
+  );
+  --navigation-collapsible-menu-list-item-hover-text-color: var(
+    --application-base-accent-color-tint-1-text-color
+  );
+
+  /* Button */
+  --navigation-collapsible-menu-button-background-color: transparent;
+  /*--navigation-collapsible-menu-button-font-size: ; */
+  --navigation-collapsible-menu-button-height: var(
+    --font-size-text-line-height,
+    1.5rem
+  );
+  --navigation-collapsible-menu-button-min-height: var(
+    --navigation-base-min-height
+  );
+  --navigation-collapsible-menu-button-min-width: 2.75rem;
+
+  /* Icon */
+  --navigation-collapsible-menu-icon: "≡";
+  --navigation-collapsible-menu-icon-font-size: 1.5rem;
+  --navigation-collapsible-menu-icon-color: var(
+    --application-base-accent-color-text-color
+  );
+  /*--navigation-collapsible-menu-icon-font-size: ; */
+
+  /* Collapsed icon */
+  --navigation-collapsible-menu-icon-collapsed: "x";
+  --navigation-collapsible-menu-icon-collapsed-text-color: inherit;
+  /*--navigation-collapsible-menu-icon-collapsed-font-size: ; */
+}

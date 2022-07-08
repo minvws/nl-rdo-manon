@@ -1,0 +1,46 @@
+/*----------------------------------------------------------------------------------*/
+/*---------------------------- description-list.scss -------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@use "description-list-variables";
+
+$breakpoint: 24rem !default;
+
+dl {
+  width: var(--description-list-width, 100%);
+  max-width: var(--description-list-max-width);
+
+  > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--description-list-item-gap, 0 1rem);
+
+    &:nth-child(odd) {
+      background-color: var(--description-list-item-odd-background-color);
+    }
+  }
+
+  dt,
+  dd {
+    white-space: pre-wrap;
+    word-break: break-word;
+    padding: var(--description-list-item-padding, 0.5rem 0);
+    margin: 0;
+  }
+
+  dt {
+    font-weight: var(--description-list-item-title-font-weight, bolder);
+    background-color: var(--description-list-item-title-background-color);
+    color: var(--description-list-item-title-text-color);
+  }
+
+  dd {
+    background-color: var(--description-list-item-data-background-color);
+    color: var(--description-list-item-data-text-color);
+  }
+
+  @media (min-width: $breakpoint) {
+    div {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+}

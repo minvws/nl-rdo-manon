@@ -1,0 +1,67 @@
+/*---------------------------------------------------------------*/
+/*----------------- components/navigation.scss ------------------*/
+/*---------------------------------------------------------------*/
+@use "navigation-variables";
+
+body > header,
+%main-header-nav-style {
+  width: 100%;
+  box-sizing: border-box;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: var(--navigation-align-content);
+    width: var(--navigation-width);
+    max-width: var(--navigation-max-width);
+    margin: var(--navigation-margin);
+    min-height: var(--navigation-min-height);
+    gap: var(--navigation-gap);
+    box-sizing: border-box;
+    background-color: var(--navigation-background-color);
+    padding-top: var(--navigation-padding-top);
+    padding-right: var(--navigation-padding-right);
+    padding-bottom: var(--navigation-padding-bottom);
+    padding-left: var(--navigation-padding-left);
+
+    > div {
+      align-items: var(--navigation-align-content);
+      max-width: var(--navigation-content-block-max-width);
+      padding-top: var(--navigation-content-block-padding-top);
+      padding-right: var(--navigation-content-block-padding-right);
+      padding-bottom: var(--navigation-content-block-padding-bottom);
+      padding-left: var(--navigation-content-block-padding-left);
+    }
+
+    ul,
+    ol {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0;
+      gap: var(--navigation-list-gap, 0.5rem);
+      color: var(--navigation-text-color);
+      justify-content: var(--navigation-list-justify-content);
+      width: 100%;
+
+      li {
+        display: flex;
+        color: inherit;
+        list-style: none;
+        justify-content: var(--navigation-list-item-justify-content);
+
+        a,
+        a:visited {
+          color: inherit;
+          text-decoration: var(--navigation-link-text-decoration);
+
+          &:hover {
+            text-decoration: var(--navigation-link-hover-text-decoration);
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}

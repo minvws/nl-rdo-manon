@@ -1,0 +1,69 @@
+/*---------------------------------------------------------------*/
+/*----------------- form-horizontal-view.scss -------------------*/
+/*---------------------------------------------------------------*/
+@use "form-horizontal-view-variables";
+
+$breakpoint: 24rem !default;
+
+form.horizontal-view {
+  flex-direction: column;
+  gap: var(--form-horizontal-view-gap);
+
+  > div,
+  > section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: var(--form-horizontal-view-justify-content);
+    flex-wrap: wrap;
+    gap: var(--form-horizontal-view-gap);
+
+    > * {
+      flex-grow: 1;
+      box-sizing: border-box;
+    }
+
+    > button,
+    > a.button,
+    > input[type="button"],
+    > input[type="submit"],
+    > input[type="reset"] {
+      flex-grow: 0;
+    }
+
+    @media (min-width: $breakpoint) {
+      flex-wrap: nowrap;
+
+      > * {
+        max-width: var(--form-horizontal-view-input-max-width);
+      }
+
+      label {
+        max-width: var(--form-horizontal-view-label-max-width);
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint) {
+    > div.horizontal-view {
+      max-width: var(--form-horizontal-view-input-max-width);
+      margin-left: auto;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+
+      > * {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      > button,
+      > a.button,
+      > input[type="button"],
+      > input[type="submit"],
+      > input[type="reset"] {
+        flex-grow: 0;
+        width: auto;
+      }
+    }
+  }
+}

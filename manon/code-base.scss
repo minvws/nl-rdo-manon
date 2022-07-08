@@ -1,0 +1,19 @@
+/*---------------------------------------------------------------*/
+/*------------------- components/code-base.scss -----------------*/
+/*---------------------------------------------------------------*/
+@use "code-base-variables";
+
+$breakpoint: 24rem !default;
+
+/* Code */
+code {
+  background-color: var(--code-base-background-color, inherit);
+  color: var(--code-base-text-color, inherit);
+  font-size: var(--code-base-font-size, inherit);
+  width: 100%;
+  word-break: var(--code-base-word-break, inherit);
+
+  @media (min-width: $breakpoint) {
+    word-break: var(----code-base-breakpoint-word-break, break-word);
+  }
+}

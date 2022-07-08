@@ -1,0 +1,34 @@
+/*---------------------------------------------------------------*/
+/*--------------- components/notification-base.scss -------------*/
+/*---------------------------------------------------------------*/
+@use "notification-base-variables";
+
+%notification,
+.notification {
+  background-color: var(--notification-base-background-color);
+  color: var(--notification-base-notification-text-color);
+
+  &.hidden {
+    display: none;
+  }
+
+  a {
+    color: var(--notification-base-link-text-color);
+
+    &:hover {
+      color: var(--notification-base-link-hover-text-color);
+    }
+
+    &:visited {
+      color: var(--notification-base-link-visited-text-color);
+
+      &:hover {
+        color: var(--notification-base-link-visited-hover-text-color);
+      }
+
+      &:before {
+        color: inherit;
+      }
+    }
+  }
+}

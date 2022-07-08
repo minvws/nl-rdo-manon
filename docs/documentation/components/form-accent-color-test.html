@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Accentkleur op formulierelementen testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./forms.html" aria-current="page">Formulieren</a></li>
+            <li>
+              <a href="./form-accent-color.html">Accentkleur op formulierelementen</a>
+            </li>
+            <li>
+              <a href="./form-accent-color-test.html" aria-current="page"
+                >Accentkleur op formulierelementen testpagina</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Accentkleur op formulierelementen testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+            <h2>Basis</h2>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <div>
+                <input
+                  type="checkbox"
+                  id="checkbox-example-base"
+                  name="standaard-checkbox"
+                  checked
+                />
+                <label for="checkbox-example-base">Lorem ipsum dolor set amet</label>
+              </div>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div>
+    &lt;input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" checked>
+    &lt;label for="checkbox-example-base">Lorem ipsum dolor set amet&lt;/label>
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h3>Radioselectieknop - <code>radio</code></h3>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <div>
+                <input type="radio" id="radio-example-base" name="standaard-radio" checked />
+                <label for="radio-example-base">Lorem ipsum dolor set amet</label>
+              </div>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div>
+    &lt;input type="radio" id="radio-example-base" name="standaard-radio" checked>
+    &lt;label for="radio-example-base">Lorem ipsum dolor set amet&lt;/label>
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h3>Voortgangsbalk</h3>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <div class="horizontal-view">
+                <label
+                  for="progress-example"
+                  role="progressbar"
+                  aria-busy="true"
+                  aria-labelledby="progess-example"
+                  >Progress:</label
+                >
+                <progress id="progress-example" value="42" max="100">42%</progress>
+              </div>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div class="horizontal-view">
+    &lt;label for="progress-example" role="progressbar" aria-busy="true" aria-labelledby="progess-example">Progress:&lt;/label>
+    &lt;progress id="progress-example" value="42" max="100">42%&lt;/progress>
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h3>Bereik - <code>range</code></h3>
+            <h3>Visueel voorbeeld:</h3>
+            <form action="" method="post">
+              <div class="horizontal-view">
+                <label for="range-example">Range</label>
+                <input type="range" id="range-example" name="range-example" min="0" max="100" />
+              </div>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div class="horizontal-view">
+    &lt;label for="range-example">Range&lt;/label>
+    &lt;input type="range" id="range-example" name="range-example" min="0" max="100">
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

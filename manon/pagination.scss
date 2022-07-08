@@ -1,0 +1,56 @@
+/*---------------------------------------------------------------*/
+/*---------------------- pagination.scss ------------------------*/
+/*---------------------------------------------------------------*/
+@use "pagination-variables";
+
+.pagination {
+  > ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    padding-top: var(--pagination-padding-top);
+    border-width: var(--pagination-border-width);
+    border-style: var(--pagination-border-style);
+    border-color: var(--pagination-border-color);
+    gap: var(--pagination-gap);
+
+    > li {
+      margin-top: -0.1rem; /* fix for render issue; white space between this li and the parent ul border */
+      padding: 0;
+      list-style: none;
+
+      > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: var(--pagination-item-padding);
+        color: var(--pagination-item-text-color);
+        background-color: var(--pagination-item-background-color, transparent);
+        height: var(--pagination-item-height);
+        min-width: 2rem;
+        margin: 0;
+        text-decoration: var(--pagination-item-text-decoration);
+        white-space: nowrap;
+
+        &[aria-current] {
+          background-color: var(--pagination-item-active-background-color);
+          color: var(--pagination-item-active-text-color);
+        }
+
+        &::before {
+          content: none;
+        }
+      }
+
+      &:hover {
+        background-color: var(--pagination-item-active-background-color);
+
+        span,
+        a {
+          color: var(--pagination-item-active-text-color);
+        }
+      }
+    }
+  }
+}

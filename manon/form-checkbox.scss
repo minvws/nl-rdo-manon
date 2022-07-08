@@ -1,0 +1,25 @@
+/*---------------------------------------------------------------*/
+/*---------------------- form-checkbox.scss ---------------------*/
+/*---------------------------------------------------------------*/
+@use "form-checkbox-variables";
+
+form {
+  input[type="checkbox"] {
+    margin: var(--form-checkbox-margin-right, 0);
+    padding: 0;
+    vertical-align: var(--form-checkbox-vertical-align);
+    cursor: var(--form-checkbox-cursor);
+    width: var(--form-checkbox-width);
+    height: var(--form-checkbox-height);
+
+    & + label {
+      width: auto;
+      cursor: pointer;
+      margin-top: 0;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+}

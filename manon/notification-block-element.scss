@@ -1,0 +1,54 @@
+/*---------------------------------------------------------------*/
+/*------- components/notification/block-message.scss ------------*/
+/*---------------------------------------------------------------*/
+@use "notification-block-element-variables";
+
+div,
+section {
+  &.notification,
+  &.error,
+  &.warning,
+  &.confirmation,
+  &.explanation,
+  &.system {
+    display: flex;
+    flex-direction: var(--notification-block-element-flex-direction);
+    align-items: var(--notification-block-element-align-items);
+    justify-content: var(--notification-block-element-justify-content);
+    position: var(--notification-block-element-position);
+    width: var(--notification-block-element-width);
+    padding-top: var(--notification-block-element-padding-top);
+    padding-right: var(--notification-block-element-padding-right);
+    padding-bottom: var(--notification-block-element-padding-bottom);
+    padding-left: var(--notification-block-element-padding-left);
+    box-sizing: border-box;
+    gap: var(--notification-block-element-gap);
+    color: var(--notification-block-element-text-color);
+  }
+}
+
+/*{
+	
+
+	&:before {
+		position: absolute;
+		margin-right: 0;
+	}
+
+	@media (min-width: 24rem) {
+		padding: 1.5rem 3% 1.5rem calc(3% + 3rem);
+	}
+
+	> * {
+		margin: 0;
+	}
+
+	h1 {
+		font-size: var(--font-heading-size-small);
+	}
+
+	@media (min-width: 24rem) {
+		margin: 2.5rem 0;
+		align-items: flex-start;
+	}
+}*/

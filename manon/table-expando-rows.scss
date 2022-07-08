@@ -1,0 +1,49 @@
+/*---------------------------------------------------------------*/
+/*-------- components/table-component/expando-rows.scss ---------*/
+/*---------------------------------------------------------------*/
+@use "table-expando-rows-render-issue";
+@use "table-expando-rows-variables";
+
+$breakpoint: 24rem !default;
+
+table {
+  button.expando-button {
+    display: none;
+  }
+
+  tr.expando-row {
+    display: table-layout;
+
+    td {
+      background-color: var(--expando-rows-table-cell-background-color);
+      padding: var(--expando-rows-table-cell-padding);
+      position: relative;
+
+      @media (min-width: $breakpoint) {
+        padding: var(--expando-rows-table-cell-after-breakpoint-padding);
+      }
+
+      h1 {
+        font-size: var(--expando-rows-table-content-title-font-size);
+        font-weight: var(--expando-rows-table-content-title-font-weight);
+      }
+
+      h2 {
+        font-size: var(--expando-rows-table-content-subtitle-font-size);
+        font-weight: var(--expando-rows-table-content-subtitle-font-weight);
+      }
+    }
+  }
+}
+
+.js-expando-rows-loaded {
+  table {
+    tr.expando-row[hidden] {
+      display: none;
+    }
+
+    button.expando-button:not([hidden]) {
+      display: inline-flex;
+    }
+  }
+}
