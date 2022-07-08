@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Tabel met checkbox testpagina</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index">
     <header>
       <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-      <nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 50rem)" aria-label="Hoofdnavigatie">
+      <nav
+        data-open-label="Menu"
+        data-close-label="Sluit menu"
+        data-media="(min-width: 50rem)"
+        aria-label="Hoofdnavigatie"
+      >
         <div>
           <ul>
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="../components.html">Componenten</a></li>
-              <li><a href="../documentation.html">Documentatie</a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
           </ul>
         </div>
       </nav>
@@ -28,7 +33,11 @@
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./table.html">Tabel</a></li>
             <li><a href="./table-checkbox.html">Tabel met checkbox</a></li>
-            <li><a href="./table-checkbox-test.html" aria-current="page">Tabel met checkbox testpagina</a></li>
+            <li>
+              <a href="./table-checkbox-test.html" aria-current="page"
+                >Tabel met checkbox testpagina</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
@@ -37,7 +46,6 @@
     <main id="main-content" tabindex="-1">
       <article id="button-base">
         <div>
-
           <section id="introduction">
             <h1>Tabel met checkbox testpagina</h1>
             <p>Overzicht van het element in mogelijke structuren om te testen.</p>
@@ -45,24 +53,28 @@
 
           <section id="tests">
             <h1>Tests</h1>
-            <h2>Formulier om de tabel </h2>
+            <h2>Formulier om de tabel</h2>
             <h3>Visueel voorbeeld:</h3>
             <div class="horizontal-scroll">
               <form>
                 <table>
-                  <caption>Tabelvoorbeeld met selectievak:</caption>
+                  <caption>
+                    Tabelvoorbeeld met selectievak:
+                  </caption>
                   <thead>
                     <tr>
-                      <th scope="col"><input type="checkbox"></th>
+                      <th scope="col"><input type="checkbox" /></th>
                       <th scope="col">Table header heading</th>
                       <th scope="col">Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td><input type="checkbox"></td>
+                      <td><input type="checkbox" /></td>
                       <td>Ipsum</td>
-                      <td><form><input type="submit" value="Lorem"></form></td>
+                      <td>
+                        <form><input type="submit" value="Lorem" /></form>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -100,19 +112,27 @@
             <h3>Visueel voorbeeld:</h3>
             <div class="horizontal-scroll">
               <table>
-                <caption>Tabelvoorbeeld met selectievak:</caption>
+                <caption>
+                  Tabelvoorbeeld met selectievak:
+                </caption>
                 <thead>
                   <tr>
-                    <th scope="col"><form><input type="checkbox"></form></th>
+                    <th scope="col">
+                      <form><input type="checkbox" /></form>
+                    </th>
                     <th scope="col">Table header heading</th>
                     <th scope="col">Action</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><form><input type="checkbox"></form></td>
+                    <td>
+                      <form><input type="checkbox" /></form>
+                    </td>
                     <td>Ipsum</td>
-                    <td><form><input type="submit" value="Lorem"></form></td>
+                    <td>
+                      <form><input type="submit" value="Lorem" /></form>
+                    </td>
                   </tr>
                 </tbody>
               </table>

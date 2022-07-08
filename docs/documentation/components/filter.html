@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Filter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -34,7 +34,11 @@
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
         <ul>
           <li><a href="./filter.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
@@ -46,34 +50,83 @@
         <div>
           <section id="introduction">
             <h1>Filter</h1>
-            <p>Bij het tonen van grote of complexe datasets kan gebruik gemaakt worden van filters. Filters geven de gebruiker de mogelijkheid om enkel relevante data te zien.</p>
+            <p>
+              Bij het tonen van grote of complexe datasets kan gebruik gemaakt worden van filters.
+              Filters geven de gebruiker de mogelijkheid om enkel relevante data te zien.
+            </p>
 
-            <p>Denk bij het toevoegen van filters aan de verschillende gebruikers-behoeften en -vragen. Deze kunnen per gebruiker en per situatie verschillend zijn maar in veel gevallen kunnen de meest voorkomende vragen geidentificeerd worden. Filters kunnen ingezet worden om deze vragen sneller te beantwoorden.</p>
+            <p>
+              Denk bij het toevoegen van filters aan de verschillende gebruikers-behoeften en
+              -vragen. Deze kunnen per gebruiker en per situatie verschillend zijn maar in veel
+              gevallen kunnen de meest voorkomende vragen geidentificeerd worden. Filters kunnen
+              ingezet worden om deze vragen sneller te beantwoorden.
+            </p>
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Voeg de benodigde bestanden toe aan het project.
+              <li>
+                Voeg de benodigde bestanden toe aan het project.
                 <ul>
-                  <li>Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
-                  <li>Voeg het bijbehorende Javascript-bestand toe aan het project. Voor meer informatie zie: <a href="../add-js.html">JavaScript toevoegen</a>.</li>
+                  <li>
+                    Voor een overzicht van de benodigde en optionele bestanden zie:
+                    <a href="#requirements">Bijbehorende bestanden</a>.
+                  </li>
+                  <li>
+                    Voeg het bijbehorende Javascript-bestand toe aan het project. Voor meer
+                    informatie zie:
+                    <a href="../add-js.html">JavaScript toevoegen</a>.
+                  </li>
                 </ul>
               </li>
-              <li>Voeg een <code>&lt;section></code> of <code>&lt;div></code> toe met de class <code>filter</code> voor de correcte weergave.</li>
-              <li>Voeg binnen het element een formulier met de beschikbare filteropties toe. Voor meer informatie over zie: <a href="./forms.html">Formulieren</a>.</li>
+              <li>
+                Voeg een <code>&lt;section></code> of <code>&lt;div></code> toe met de class
+                <code>filter</code> voor de correcte weergave.
+              </li>
+              <li>
+                Voeg binnen het element een formulier met de beschikbare filteropties toe. Voor meer
+                informatie over zie:
+                <a href="./forms.html">Formulieren</a>.
+              </li>
             </ol>
 
             <h2>Optioneel:</h2>
             <ul>
-              <li>Voeg een <code>&lt;div></code> met extra informatie toe, bijvoorbeeld de hoeveelheid beschikbare resultaten.</li>
-                <li>Voeg de optie tot het in- en uit-klappen van de filters toe.
-                  <ul>
-                    <li>Voeg bij de extra information een <code>&lt;button></code> toe met als tekst "Verberg filters" (of vergelijkbaar). Geef het daarnaast een <code>data-show-filters-label</code>-attribuut met als waarde "Toon filters" (of vergelijkbaar).</li>
-                    <li>Plaats <code>&lt;script defer src="pad/naar/filters.min.js">&lt;/script></code> in de <code>&lt;head></code> van het document.</li>
-                    <li>Het <code>defer</code> attribuut zorgt ervoor dat het script in de achtergrond geladen wordt, zodat het tonen van de pagina niet geblokkeerd wordt.</li>
-                    <li>Wanneer JavaScript niet beschikbaar is, worden de filters altijd getoont en wordt de <code>&lt;button></code> verborgen.</li>
-                    <li>Om de filters standaard te verbergen, verander je de tekst van de button naar "Toon filters" (of vergelijkbaar), gebruik je een bijbehorend <code>data-hide-filters-label</code> (in plaats van <code>data-show-filters-label</code>) en voeg je <code>aria-expanded="false"</code> toe aan de <code>&lt;button></code>.
-                  </ul>
-                </li>
+              <li>
+                Voeg een <code>&lt;div></code> met extra informatie toe, bijvoorbeeld de hoeveelheid
+                beschikbare resultaten.
+              </li>
+              <li>
+                Voeg de optie tot het in- en uit-klappen van de filters toe.
+                <ul>
+                  <li>
+                    Voeg bij de extra information een
+                    <code>&lt;button></code> toe met als tekst "Verberg filters" (of vergelijkbaar).
+                    Geef het daarnaast een <code>data-show-filters-label</code>-attribuut met als
+                    waarde "Toon filters" (of vergelijkbaar).
+                  </li>
+                  <li>
+                    Plaats
+                    <code>&lt;script defer src="pad/naar/filters.min.js">&lt;/script></code>
+                    in de <code>&lt;head></code> van het document.
+                  </li>
+                  <li>
+                    Het <code>defer</code> attribuut zorgt ervoor dat het script in de achtergrond
+                    geladen wordt, zodat het tonen van de pagina niet geblokkeerd wordt.
+                  </li>
+                  <li>
+                    Wanneer JavaScript niet beschikbaar is, worden de filters altijd getoont en
+                    wordt de
+                    <code>&lt;button></code> verborgen.
+                  </li>
+                  <li>
+                    Om de filters standaard te verbergen, verander je de tekst van de button naar
+                    "Toon filters" (of vergelijkbaar), gebruik je een bijbehorend
+                    <code>data-hide-filters-label</code> (in plaats van
+                    <code>data-show-filters-label</code>) en voeg je
+                    <code>aria-expanded="false"</code> toe aan de <code>&lt;button></code>.
+                  </li>
+                </ul>
+              </li>
             </ul>
           </section>
 
@@ -85,9 +138,7 @@
             <section class="filter">
               <div>
                 <p><span>5.254</span> nieuwsberichten</p>
-                <button data-show-filters-label="Toon filters">
-                  Verberg filters
-                </button>
+                <button data-show-filters-label="Toon filters">Verberg filters</button>
               </div>
               <form action="" method="post" class="horizontal-view help">
                 <fieldset>
@@ -95,12 +146,19 @@
                   <div>
                     <label for="keyword">Trefwoord</label>
                     <div>
-                      <input id="keyword" name="keyword" placeholder="Bijvoorbeeld: fiets" type="text">
+                      <input
+                        id="keyword"
+                        name="keyword"
+                        placeholder="Bijvoorbeeld: fiets"
+                        type="text"
+                      />
                       <p
                         class="explanation"
                         data-open-label="Toelichting bij het veld: Trefwoord"
                         data-close-label="Sluit toelichting bij het veld: Trefwoord"
-                      ><span>toelichting:</span> Vul hier een trefwoord in waarop u wilt filteren.</p>
+                      >
+                        <span>toelichting:</span> Vul hier een trefwoord in waarop u wilt filteren.
+                      </p>
                     </div>
                   </div>
 
@@ -109,19 +167,32 @@
                     <div class="column-2">
                       <div>
                         <label for="date-range-start">van</label>
-                        <input id="date-range-start" name="date-range-start" value="DD-MM-JJJJ" type="date">
+                        <input
+                          id="date-range-start"
+                          name="date-range-start"
+                          value="DD-MM-JJJJ"
+                          type="date"
+                        />
                       </div>
 
                       <div>
                         <label for="date-range-end">tot</label>
-                        <input id="date-range-end" name="date-range-end" value="DD-MM-JJJJ" type="date">
+                        <input
+                          id="date-range-end"
+                          name="date-range-end"
+                          value="DD-MM-JJJJ"
+                          type="date"
+                        />
                       </div>
                     </div>
                     <p
                       class="explanation"
                       data-open-label="Toelichting bij het veld: Periode"
                       data-close-label="Sluit toelichting bij het veld: Periode"
-                    ><span>toelichting:</span> Vul hier een start- en/of einddatum als volgt in: DD-MM-JJJJ.</p>
+                    >
+                      <span>toelichting:</span> Vul hier een start- en/of einddatum als volgt in:
+                      DD-MM-JJJJ.
+                    </p>
                   </fieldset>
 
                   <div class="required">
@@ -205,7 +276,7 @@
               </code>
             </pre>
 
-             <h3>Structuur-voorbeeld:</h3>
+            <h3>Structuur-voorbeeld:</h3>
             <pre>
               <code>
 &lt;section class="filter">
@@ -228,7 +299,10 @@
 
           <section id="requirements">
             <h1>Bijbehorende bestanden</h1>
-            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
             <h2>Benodigd</h2>
             <ul>
               <li><code>filter.scss</code></li>
@@ -244,23 +318,32 @@
           <section id="variables">
             <h1>Instelbare variabelen</h1>
             <ul>
-              <li>Intro
+              <li>
+                Intro
                 <ul>
                   <li><a href="../variables.html#padding">padding</a></li>
-                  <li><a href="../variables.html#border-width">border-width</a></li>
-                  <li><a href="../variables.html#border-style">border-style</a></li>
-                  <li><a href="../variables.html#border-color">border-color</a></li>
+                  <li>
+                    <a href="../variables.html#border-width">border-width</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#border-style">border-style</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#border-color">border-color</a>
+                  </li>
                   <li><a href="../variables.html#font-size">font-size</a></li>
                   <li><a href="../variables.html#text-color">text-color</a></li>
                 </ul>
               </li>
-              <li><code>span</code>
+              <li>
+                <code>span</code>
                 <ul>
                   <li><a href="../variables.html#font-size">font-size</a></li>
                   <li><a href="../variables.html#text-color">text-color</a></li>
                 </ul>
               </li>
-              <li><code>button</code>
+              <li>
+                <code>button</code>
                 <ul>
                   <li><a href="../variables.html#text-color">text-color</a></li>
                   <li><a href="../variables.html#text-color">text-color</a></li>
@@ -273,7 +356,6 @@
             <h1>Gerelateerde pagina's</h1>
             <a href="./filter-test.html">Test- en voorbeelden-pagina</a>
           </section>
-
         </div>
       </article>
     </main>

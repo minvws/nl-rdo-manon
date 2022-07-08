@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Tabel bijschrift <code>caption</code> testpagina</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index">
     <header>
       <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-      <nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 50rem)" aria-label="Hoofdnavigatie">
+      <nav
+        data-open-label="Menu"
+        data-close-label="Sluit menu"
+        data-media="(min-width: 50rem)"
+        aria-label="Hoofdnavigatie"
+      >
         <div>
           <ul>
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="../components.html">Componenten</a></li>
-              <li><a href="../documentation.html">Documentatie</a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
           </ul>
         </div>
       </nav>
@@ -27,8 +32,14 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./table.html">Tabel</a></li>
-            <li><a href="./table-numerical-data.html">Tabel bijschrift <code>caption</code></a></li>
-            <li><a href="./table-caption-test.html" aria-current="page">Tabel bijschrift <code>caption</code> testpagina</a></li>
+            <li>
+              <a href="./table-numerical-data.html">Tabel bijschrift <code>caption</code></a>
+            </li>
+            <li>
+              <a href="./table-caption-test.html" aria-current="page"
+                >Tabel bijschrift <code>caption</code> testpagina</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
@@ -37,7 +48,6 @@
     <main id="main-content" tabindex="-1">
       <article id="button-base">
         <div>
-
           <section id="introduction">
             <h1>Tabel bijschrift <code>caption</code> testpagina</h1>
             <p>Overzicht van het element in mogelijke structuren om te testen.</p>
@@ -49,7 +59,9 @@
             <h2>Visueel voorbeeld:</h2>
             <div class="horizontal-scroll">
               <table>
-                <caption>Basisvoorbeeld tabel:</caption>
+                <caption>
+                  Basisvoorbeeld tabel:
+                </caption>
                 <thead>
                   <tr>
                     <th scope="col">Table header heading 1</th>
@@ -64,7 +76,7 @@
             </div>
 
             <h2>HTML-voorbeeld:</h2>
-             <pre>
+            <pre>
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>

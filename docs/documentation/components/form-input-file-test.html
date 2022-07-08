@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Bestand testpagina</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index">
@@ -28,7 +28,9 @@
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./forms.html" aria-current="page">Formulieren</a></li>
             <li><a href="./form-input-file.html">Bestand</a></li>
-            <li><a href="./form-input-file-test.html" aria-current="page">Bestand testpagina</a></li>
+            <li>
+              <a href="./form-input-file-test.html" aria-current="page">Bestand testpagina</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -48,11 +50,17 @@
             <h3>Visueel voorbeeld:</h3>
             <form action="" method="post">
               <label for="file-example-base">Upload bestand</label>
-              <input type="file" id="file-example-base" name="file-example-base" accept=".doc, .docx, .pdf" multiple>
+              <input
+                type="file"
+                id="file-example-base"
+                name="file-example-base"
+                accept=".doc, .docx, .pdf"
+                multiple
+              />
             </form>
 
             <h2>HTML-voorbeeld:</h2>
-             <pre>
+            <pre>
               <code>
 &lt;form action="" method="post">
   &lt;label for="file-example-base">Upload bestand&lt;/label>
@@ -66,12 +74,18 @@
             <form action="" method="post">
               <div>
                 <label for="file-example-div">Upload bestand</label>
-                <input type="file" id="file-example-div" name="file-example-div" accept=".doc, .docx, .pdf" multiple>
+                <input
+                  type="file"
+                  id="file-example-div"
+                  name="file-example-div"
+                  accept=".doc, .docx, .pdf"
+                  multiple
+                />
               </div>
             </form>
 
             <h2>HTML-voorbeeld:</h2>
-             <pre>
+            <pre>
               <code>
 &lt;form action="" method="post">
   &lt;div>
@@ -87,12 +101,18 @@
             <form action="" method="post">
               <section>
                 <label for="file-example-section">Upload bestand</label>
-                <input type="file" id="file-example-section" name="file-example-section" accept=".doc, .docx, .pdf" multiple>
+                <input
+                  type="file"
+                  id="file-example-section"
+                  name="file-example-section"
+                  accept=".doc, .docx, .pdf"
+                  multiple
+                />
               </section>
             </form>
 
             <h2>HTML-voorbeeld:</h2>
-             <pre>
+            <pre>
               <code>
 &lt;form action="" method="post">
   &lt;section>
@@ -109,13 +129,19 @@
               <fieldset>
                 <legend>Bestand-upload binnen een fieldset voorbeeld</legend>
                 <label for="file-example-fieldset">Upload bestand</label>
-                <input type="file" id="file-example-fieldset" name="file-example-fieldset" accept=".doc, .docx, .pdf" multiple>
+                <input
+                  type="file"
+                  id="file-example-fieldset"
+                  name="file-example-fieldset"
+                  accept=".doc, .docx, .pdf"
+                  multiple
+                />
               </fieldset>
             </form>
 
             <h2>HTML-voorbeeld:</h2>
             <h3><code>fieldset</code></h3>
-             <pre>
+            <pre>
               <code>
 &lt;form action="" method="post">
   &lt;fieldset>
@@ -125,7 +151,6 @@
 &lt;/form>
               </code>
             </pre>
-
           </section>
         </div>
       </article>

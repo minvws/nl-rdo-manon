@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>"sticky header"</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -27,36 +27,56 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./table.html">Tabel</a></li>
-            <li><a href="./table-sticky-header.html" aria-current="page">"sticky header"</a></li>
+            <li>
+              <a href="./table-sticky-header.html" aria-current="page">"sticky header"</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-          <ul>
-            <li><a href="./table-sticky-header.html">Introductie</a></li>
-            <li><a href="#examples">Voorbeelden</a></li>
-            <li><a href="#requirements">Benodigdheden</a></li>
-            <li><a href="#related">Gerelateerde pagina's</a></li>
-          </ul>
-        </nav>
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./table-sticky-header.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Benodigdheden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
       <article>
         <div>
           <section id="introduction">
             <h1>"sticky header"</h1>
-            <p>Voor lange tabellen kan het gewenst zijn om de tabel-header in het zicht te houden. Zodat de gebruiker de titels kan zien.</p>
+            <p>
+              Voor lange tabellen kan het gewenst zijn om de tabel-header in het zicht te houden.
+              Zodat de gebruiker de titels kan zien.
+            </p>
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Voeg de class <code>sticky-header</code> toe aan een <code>&lt;div></code> om de <code>&lt;table></code> heen. Deze is <code>&lt;div></code> is nodig om de <code>&lt;table></code> scrollbaar te maken.</li>
-              <li>Een <code>sticky-header</code>-tabel heeft een maximale hoogte van de schermhoogte. Mocht er een andere maximale hoogte gewenst zijn zodat de tabel bijvooreeld minder hoog blijft kan deze via het variabelenbestand overschreven worden.</li>
+              <li>
+                Voeg de class <code>sticky-header</code> toe aan een <code>&lt;div></code> om de
+                <code>&lt;table></code> heen. Deze is <code>&lt;div></code> is nodig om de
+                <code>&lt;table></code> scrollbaar te maken.
+              </li>
+              <li>
+                Een <code>sticky-header</code>-tabel heeft een maximale hoogte van de schermhoogte.
+                Mocht er een andere maximale hoogte gewenst zijn zodat de tabel bijvooreeld minder
+                hoog blijft kan deze via het variabelenbestand overschreven worden.
+              </li>
             </ol>
 
             <h2>Aandachtspunten</h2>
             <ul>
-              <li>Voeg een van de melding-classes toe aan een volledige tabelrij <code>tr</code> of aan een losse cel <code>th</code> / <code>td</code>. Beschikbare classes zijn:
+              <li>
+                Voeg een van de melding-classes toe aan een volledige tabelrij
+                <code>tr</code> of aan een losse cel <code>th</code> / <code>td</code>. Beschikbare
+                classes zijn:
                 <ul>
                   <li><code>error</code></li>
                   <li><code>warning</code></li>
@@ -64,7 +84,7 @@
                   <li><code>explanation</code></li>
                   <li><code>primary</code></li>
                 </ul>
-                Zie <a href="./notifications.html">Notifications</a>  voor meer informatie.
+                Zie <a href="./notifications.html">Notifications</a> voor meer informatie.
               </li>
             </ul>
           </section>
@@ -74,7 +94,9 @@
             <h2>Visueel voorbeeld:</h2>
             <div class="horizontal-scroll sticky-header">
               <table>
-                <caption>Tabelvoorbeeld met een sticky header.</caption>
+                <caption>
+                  Tabelvoorbeeld met een sticky header.
+                </caption>
                 <thead>
                   <tr>
                     <th scope="col">Heading 1</th>
@@ -217,7 +239,6 @@
             <h1>Gerelateerde pagina's</h1>
             <a href="./table-sticky-header-test.html">Test- en voorbeelden-pagina</a>
           </section>
-
         </div>
       </article>
     </main>

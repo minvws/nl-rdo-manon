@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Horizontale scroll</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -27,14 +27,20 @@
         <div>
           <ul>
             <li><a href="../components.html">Componenten</a></li>
-            <li><a href="./horizontal-scroll.html" aria-current="page">Horizontale scroll</a></li>
+            <li>
+              <a href="./horizontal-scroll.html" aria-current="page">Horizontale scroll</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
         <ul>
           <li><a href="./horizontal-scroll.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
@@ -46,12 +52,22 @@
         <div>
           <section id="introduction">
             <h1>Horizontale scroll</h1>
-            <p>Voor componenten die breder zijn dan het scherm maar wel horizontaal weergegeven dienen te worden.</p>
+            <p>
+              Voor componenten die breder zijn dan het scherm maar wel horizontaal weergegeven
+              dienen te worden.
+            </p>
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
-              <li>Voeg de class <code>horizontal-scroll</code> toe om het element over de horizontale as te laten scrollen als de content niet meer binnen de breedte van het scherm past.</li>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
+              <li>
+                Voeg de class <code>horizontal-scroll</code> toe om het element over de horizontale
+                as te laten scrollen als de content niet meer binnen de breedte van het scherm past.
+              </li>
             </ol>
           </section>
 
@@ -59,10 +75,15 @@
             <h1>Voorbeelden</h1>
             <h2>Basis</h2>
             <h3>Visueel voorbeeld:</h3>
-            <p><strong>Let op</strong>: het effect van de horizontale scroll is alleen zichtbaar als de content niet meer binnen de schermbreedte past.</p>
+            <p>
+              <strong>Let op</strong>: het effect van de horizontale scroll is alleen zichtbaar als
+              de content niet meer binnen de schermbreedte past.
+            </p>
             <div class="horizontal-scroll">
               <table>
-                <caption>Basisvoorbeeld tabel:</caption>
+                <caption>
+                  Basisvoorbeeld tabel:
+                </caption>
                 <thead>
                   <tr>
                     <th scope="col">Table header heading 1</th>
@@ -186,10 +207,15 @@
 
             <h2>Tabeltitel op een regel</h2>
             <h3>Visueel voorbeeld:</h3>
-            <p>Om te voorkomen dat de tabeltitels op meerdere regels getoont worden kan de class <code>nowrap</code> toegevoegd worden aan de <code>&lt;thead></code>.</p>
+            <p>
+              Om te voorkomen dat de tabeltitels op meerdere regels getoont worden kan de class
+              <code>nowrap</code> toegevoegd worden aan de <code>&lt;thead></code>.
+            </p>
             <div class="horizontal-scroll">
               <table>
-                <caption>Basisvoorbeeld tabel:</caption>
+                <caption>
+                  Basisvoorbeeld tabel:
+                </caption>
                 <thead class="nowrap">
                   <tr>
                     <th scope="col">Table header heading 1</th>
@@ -304,10 +330,16 @@
 
             <h2>Tabeltitel en content op een regel</h2>
             <h3>Visueel voorbeeld:</h3>
-            <p>Om te voorkomen dat de tabeltitels en content op meerdere regels getoont worden kan de class <code>nowrap</code> toegevoegd worden aan de omliggende <code>&lt;div></code> of de <code>&lt;table></code>.</p>
+            <p>
+              Om te voorkomen dat de tabeltitels en content op meerdere regels getoont worden kan de
+              class <code>nowrap</code> toegevoegd worden aan de omliggende <code>&lt;div></code> of
+              de <code>&lt;table></code>.
+            </p>
             <div class="horizontal-scroll nowrap">
               <table>
-                <caption>Basisvoorbeeld tabel:</caption>
+                <caption>
+                  Basisvoorbeeld tabel:
+                </caption>
                 <thead>
                   <tr>
                     <th scope="col">Table header heading 1</th>
@@ -434,7 +466,10 @@
 
           <section id="requirements">
             <h1>Bijbehorende bestanden</h1>
-            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
 
             <h2>Benodigd</h2>
             <ul>
@@ -456,7 +491,6 @@
             <h1>Gerelateerde pagina's</h1>
             <a href="./horizontal-scroll-test.html">Test- en voorbeelden-pagina</a>
           </section>
-
         </div>
       </article>
     </main>

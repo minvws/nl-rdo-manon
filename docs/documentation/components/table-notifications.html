@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Meldingen op tabel-elementen</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -27,38 +27,52 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./table.html">Tabel</a></li>
-            <li><a href="./table-notifications.html" aria-current="page">Meldingen op tabel-elementen</a></li>
+            <li>
+              <a href="./table-notifications.html" aria-current="page"
+                >Meldingen op tabel-elementen</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-          <ul>
-            <li><a href="./table-notifications.html">Introductie</a></li>
-            <li><a href="#examples">Voorbeelden</a></li>
-            <li><a href="#requirements">Benodigdheden</a></li>
-            <li><a href="#related">Gerelateerde pagina's</a></li>
-          </ul>
-        </nav>
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./table-notifications.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Benodigdheden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
       <article>
         <div>
           <section id="introduction">
             <h1>Meldingen op tabel-elementen</h1>
-            <p>Tabelelementen kunnen een meldig weergeven. Denk hierbij aan een foutmelding of een toelichting.</p>
-
-
-
+            <p>
+              Tabelelementen kunnen een meldig weergeven. Denk hierbij aan een foutmelding of een
+              toelichting.
+            </p>
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Voeg de <code>checkbox</code> toe aan de benodigde cellen. Voor het voorbeeld zie: <a href="#examples">Voorbeelden</a></li>
+              <li>
+                Voeg de <code>checkbox</code> toe aan de benodigde cellen. Voor het voorbeeld zie:
+                <a href="#examples">Voorbeelden</a>
+              </li>
             </ol>
 
             <h2>Aandachtspunten</h2>
             <ul>
-              <li>Voeg een van de melding-classes toe aan een volledige tabelrij <code>tr</code> of aan een losse cel <code>th</code> / <code>td</code>. Beschikbare classes zijn:
+              <li>
+                Voeg een van de melding-classes toe aan een volledige tabelrij
+                <code>tr</code> of aan een losse cel <code>th</code> / <code>td</code>. Beschikbare
+                classes zijn:
                 <ul>
                   <li><code>error</code></li>
                   <li><code>warning</code></li>
@@ -66,7 +80,7 @@
                   <li><code>explanation</code></li>
                   <li><code>primary</code></li>
                 </ul>
-                Zie <a href="./notifications.html">Notifications</a>  voor meer informatie.
+                Zie <a href="./notifications.html">Notifications</a> voor meer informatie.
               </li>
             </ul>
           </section>
@@ -76,7 +90,9 @@
             <h2>Visueel voorbeeld:</h2>
             <div class="horizontal-scroll">
               <table>
-                <caption>Tabelvoorbeeld meldingen:</caption>
+                <caption>
+                  Tabelvoorbeeld meldingen:
+                </caption>
                 <thead>
                   <tr>
                     <th scope="col">Table header heading 1</th>
@@ -166,8 +182,13 @@
               <li><code>table/table-base.scss</code></li>
               <li><code>table/table-base-variables.scss</code></li>
               <li><code>notification/notification-base.scss</code></li>
-              <li><code>notification/notification-base-variables.scss</code></li>
-              <li>Bijbehorende melding-type-bestanden. Voor meer informatie en beschikbare types zie: <a href="./notifications.html">Meldingen</a></li>
+              <li>
+                <code>notification/notification-base-variables.scss</code>
+              </li>
+              <li>
+                Bijbehorende melding-type-bestanden. Voor meer informatie en beschikbare types zie:
+                <a href="./notifications.html">Meldingen</a>
+              </li>
             </ul>
           </section>
 
@@ -175,7 +196,6 @@
             <h1>Gerelateerde pagina's</h1>
             <a href="./table-notifications-test.html">Test- en voorbeelden-pagina</a>
           </section>
-
         </div>
       </article>
     </main>

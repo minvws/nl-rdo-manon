@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Sorteerbare tabel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -27,36 +27,55 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./table.html">Tabel</a></li>
-            <li><a href="./table-sortable.html" aria-current="page">Sorteerbare tabel</a></li>
+            <li>
+              <a href="./table-sortable.html" aria-current="page">Sorteerbare tabel</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-          <ul>
-            <li><a href="./table-sortable.html">Introductie</a></li>
-            <li><a href="#examples">Voorbeelden</a></li>
-            <li><a href="#requirements">Benodigdheden</a></li>
-          </ul>
-        </nav>
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./table-sortable.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Benodigdheden</a></li>
+        </ul>
+      </nav>
       <article>
         <div>
           <section id="introduction">
             <h1>Sorteerbare tabel</h1>
-            <p>Om inzicht te krijgen in de data kan het behulpzaam zijn om de gebruiker de data te laten sorteren. Bijvoorbeeld op basis van op of aflopende data.</p>
+            <p>
+              Om inzicht te krijgen in de data kan het behulpzaam zijn om de gebruiker de data te
+              laten sorteren. Bijvoorbeeld op basis van op of aflopende data.
+            </p>
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Voeg een <code>button</code> toe binnen de <code>th</code> om sorteerelemeent klikbaar te maken.</li>
-              <li>Voeg binnen de knop een icoon toe indien gewenst. Voor meer informatie zie: <a href="./button-icon.html">Icoonknoppen</a></li>
-              <li>Voeg <code>abbr=""</code> toe aan de <code>&lt;th></code> met een korte duidelijke omschrijving om de gebruikerservaring te verbeteren voor gebruikers die gebruik maken van een screenreader.</li>
+              <li>
+                Voeg een <code>button</code> toe binnen de <code>th</code> om sorteerelemeent
+                klikbaar te maken.
+              </li>
+              <li>
+                Voeg binnen de knop een icoon toe indien gewenst. Voor meer informatie zie:
+                <a href="./button-icon.html">Icoonknoppen</a>
+              </li>
+              <li>
+                Voeg <code>abbr=""</code> toe aan de <code>&lt;th></code> met een korte duidelijke
+                omschrijving om de gebruikerservaring te verbeteren voor gebruikers die gebruik
+                maken van een screenreader.
+              </li>
             </ol>
 
             <h2>Aandachtspunten</h2>
             <ul>
-             <li>Dit element bevat momenteel geen JavaScript of logica voorbeeld.</li>
+              <li>Dit element bevat momenteel geen JavaScript of logica voorbeeld.</li>
             </ul>
           </section>
 
@@ -65,14 +84,20 @@
             <h2>Visueel voorbeeld:</h2>
             <div class="horizontal-scroll">
               <table>
-                <caption>Tabelvoorbeeld met sorteerbare data:</caption>
+                <caption>
+                  Tabelvoorbeeld met sorteerbare data:
+                </caption>
                 <thead>
                   <tr>
                     <th scope="col" abbr="Ascending data">
-                      <button title="Sort descending">Descending <span class="icon icon-ascending"></button>
+                      <button title="Sort descending">
+                        Descending <span class="icon icon-ascending"></span>
+                      </button>
                     </th>
                     <th scope="col" abbr="Descending data">
-                      <button title="Sort ascending">Ascending <span class="icon icon-descending"></span></button>
+                      <button title="Sort ascending">
+                        Ascending <span class="icon icon-descending"></span>
+                      </button>
                     </th>
                   </tr>
                 </thead>
@@ -119,8 +144,8 @@
     &lt;/tbody>
   &lt;/table>
 &lt;/div>
-              </code>
-            </pre>
+            </code>
+              </pre>
           </section>
 
           <section id="requirements">
@@ -134,7 +159,6 @@
               <li><code>icon/icon-base-variables.scss</code></li>
             </ul>
           </section>
-
         </div>
       </article>
     </main>

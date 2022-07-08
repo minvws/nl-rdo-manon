@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Notifactie op een paragraaf</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -27,21 +27,29 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./notifications.html">Notificaties</a></li>
-            <li><a href="./notifications-paragraph.html" aria-current="page">Notifactie op een paragraaf</a></li>
+            <li>
+              <a href="./notifications-paragraph.html" aria-current="page"
+                >Notifactie op een paragraaf</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-          <ul>
-            <li><a href="./notifications-paragraph.html">Introductie</a></li>
-            <li><a href="#examples">Voorbeelden</a></li>
-            <li><a href="#requirements">Bijbehorende bestanden</a></li>
-            <li><a href="#related">Gerelateerde pagina's</a></li>
-          </ul>
-        </nav>
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./notifications-paragraph.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
       <article>
         <div>
           <section id="introduction">
@@ -50,18 +58,48 @@
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
               <li>Voeg de notificatie toe op basis van een van de onderstaande voorbeelden.</li>
-              <li>Voeg de gewenste notificatie-type-<code>class</code> toe. Voor meer informatie zie: <a href="notifications.html#notification-types">Beschikbare weergaven</a>.</li>
-              <li>Voeg <code>role="group"</code> toe aan het notificatie-element om screenreader gebruikers erop te attenderen dat de content van de notificatie bij elkaar hoort.</li>
-              <li>Voeg <code>aria-label=""</code> toe aan het notificatie-element om screenreader gebruikers inzicht te geven in het type bericht. Bijvoorbeeld: <code>aria-label="foutmelding"</code>. Let op dat de content van het label in de taal van het document staat.</li>
-              <li>Voeg binnen het element een <code>span</code> toe zodat gebruikers (van screenreaders) weten wat de context van het bericht is. Bijvoorbeeld: <code>&lt;span>Foutmelding:&lt;/span></code>. Het is aan te raden om dit bericht voor alle gebruikers zichtbaar te houden zodat het voor iedereen duidelijk is. Denk hierbij ook aan kleurenblinden als er in het ontwerp enkel gebruik wordt gemaakt van kleuren als visuele onderscheidende factor op notificaties of iconen waarbij het kan zijn dat niet alle gebruikers het icoon zullen herkennen.</li>
+              <li>
+                Voeg de gewenste notificatie-type-<code>class</code> toe. Voor meer informatie zie:
+                <a href="notifications.html#notification-types">Beschikbare weergaven</a>.
+              </li>
+              <li>
+                Voeg <code>role="group"</code> toe aan het notificatie-element om screenreader
+                gebruikers erop te attenderen dat de content van de notificatie bij elkaar hoort.
+              </li>
+              <li>
+                Voeg <code>aria-label=""</code> toe aan het notificatie-element om screenreader
+                gebruikers inzicht te geven in het type bericht. Bijvoorbeeld:
+                <code>aria-label="foutmelding"</code>. Let op dat de content van het label in de
+                taal van het document staat.
+              </li>
+              <li>
+                Voeg binnen het element een <code>span</code> toe zodat gebruikers (van
+                screenreaders) weten wat de context van het bericht is. Bijvoorbeeld:
+                <code>&lt;span>Foutmelding:&lt;/span></code>. Het is aan te raden om dit bericht
+                voor alle gebruikers zichtbaar te houden zodat het voor iedereen duidelijk is. Denk
+                hierbij ook aan kleurenblinden als er in het ontwerp enkel gebruik wordt gemaakt van
+                kleuren als visuele onderscheidende factor op notificaties of iconen waarbij het kan
+                zijn dat niet alle gebruikers het icoon zullen herkennen.
+              </li>
             </ol>
 
             <h2>Aandachtspunten</h2>
             <ul>
-              <li>Voeg de volledige code toe die in de voorbeelden staat om alle gebruikers een goede gebruikerservaring the bieden. Denk hierbij aan gebruikers die kleurenblind zijn of gebruikers die gebruik maken van hulptechnologiën.</li>
-              <li>Notificaties kunnen verborgen worden door de class <code>hidden</code> toe te voegen aan de notification</li>
+              <li>
+                Voeg de volledige code toe die in de voorbeelden staat om alle gebruikers een goede
+                gebruikerservaring the bieden. Denk hierbij aan gebruikers die kleurenblind zijn of
+                gebruikers die gebruik maken van hulptechnologiën.
+              </li>
+              <li>
+                Notificaties kunnen verborgen worden door de class
+                <code>hidden</code> toe te voegen aan de notification
+              </li>
             </ul>
           </section>
 
@@ -69,11 +107,13 @@
             <h1>Voorbeelden</h1>
 
             <h2>Visueel voorbeeld:</h2>
-            <p class="error" role="group" aria-label="foutmelding"><span>Foutmelding:</span> Lorem <a href="">ipsum</a> dolor sit.</p>
+            <p class="error" role="group" aria-label="foutmelding">
+              <span>Foutmelding:</span> Lorem <a href="">ipsum</a> dolor sit.
+            </p>
 
             <h2>HTML-voorbeeld:</h2>
             <h3><code>section</code></h3>
-             <pre>
+            <pre>
               <code>
 &lt;p class="error" role="group" aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> Lorem ipsum dolor sit.&lt;/p>
               </code>
@@ -82,36 +122,61 @@
 
           <section id="requirements">
             <h1>Bijbehorende bestanden</h1>
-            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
             <h2>Benodigd</h2>
             <ul>
               <li><code>notification/notification-base.scss</code></li>
               <li><code>notification/notification-paragraph.scss</code></li>
-              <li>Bestanden behorend bij de gewenste notificatie type(s). Voor de beschikbare types zie: <a href="notifications.html#notification-types">Beschikbare weergaven</a></li>
+              <li>
+                Bestanden behorend bij de gewenste notificatie type(s). Voor de beschikbare types
+                zie:
+                <a href="notifications.html#notification-types">Beschikbare weergaven</a>
+              </li>
             </ul>
 
             <h2>Optioneel</h2>
             <ul>
-              <li><code>notification/notification-base-variables.scss</code></li>
-              <li><code>notification/notification-paragraph-variables.scss</code></li>
+              <li>
+                <code>notification/notification-base-variables.scss</code>
+              </li>
+              <li>
+                <code>notification/notification-paragraph-variables.scss</code>
+              </li>
               <li><code>text/link-base.scss</code></li>
               <li><code>text/link-base-variables.scss</code></li>
               <li><code>icon/icon-base.scss</code></li>
               <li><code>icon/icon-base-variables.scss</code></li>
-              <li>Variabelenbestanden behorend bij de gewenste notificatie type(s). Voor de beschikbare types zie: <a href="notifications.html#notification-types">Beschikbare weergaven</a></li>
+              <li>
+                Variabelenbestanden behorend bij de gewenste notificatie type(s). Voor de
+                beschikbare types zie:
+                <a href="notifications.html#notification-types">Beschikbare weergaven</a>
+              </li>
             </ul>
           </section>
 
           <section id="variables">
             <h1>Instelbare variabelen</h1>
             <ul>
-              <li>Paragraaf variabelen
+              <li>
+                Paragraaf variabelen
                 <ul>
-                  <li><a href="../variables.html#padding-top">padding-top</a></li>
-                  <li><a href="../variables.html#padding-right">padding-right</a></li>
-                  <li><a href="../variables.html#padding-bottom">padding-bottom</a></li>
-                  <li><a href="../variables.html#padding-left">padding-left</a></li>
+                  <li>
+                    <a href="../variables.html#padding-top">padding-top</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#padding-right">padding-right</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#padding-bottom">padding-bottom</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#padding-left">padding-left</a>
+                  </li>
                 </ul>
+              </li>
             </ul>
           </section>
 
@@ -119,7 +184,6 @@
             <h1>Gerelateerde pagina's</h1>
             <a href="./notifications-paragraph-test.html">Test- en voorbeelden-pagina</a>
           </section>
-
         </div>
       </article>
     </main>

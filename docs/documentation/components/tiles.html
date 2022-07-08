@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Tegelweergave</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -26,14 +26,20 @@
         <div>
           <ul>
             <li><a href="../components.html">Componenten</a></li>
-            <li><a href="./tiles.html" aria-current="page">Tegelweergave</a></li>
+            <li>
+              <a href="./tiles.html" aria-current="page">Tegelweergave</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
         <ul>
           <li><a href="./tiles.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
@@ -45,7 +51,11 @@
         <div>
           <section id="introduction">
             <h1>Tegelweergave</h1>
-            <p>Tegelweergave kan gebruikt worden om content visueel te groeperen om gebruikers te laten zien welke content bij elkaar hoort. Veel gebruikte toepassingen voor tegelweergave zijn bijvoorbeeld nieuwsberichten.</p>
+            <p>
+              Tegelweergave kan gebruikt worden om content visueel te groeperen om gebruikers te
+              laten zien welke content bij elkaar hoort. Veel gebruikte toepassingen voor
+              tegelweergave zijn bijvoorbeeld nieuwsberichten.
+            </p>
           </section>
 
           <section id="examples">
@@ -53,27 +63,41 @@
             <p>Beschikbare voorbeelden:</p>
             <nav aria-label="Document-navigatie">
               <ul>
-                <li><a href="#single-tile">Tegelweergave op enkel element</a></li>
+                <li>
+                  <a href="#single-tile">Tegelweergave op enkel element</a>
+                </li>
                 <li><a href="#tiles">Groep met tegels</a></li>
-                <li><a href="./tile-cover-image.html">Tegel met cover-afbeelding</a></li>
-                <li><a href="./tile-groups.html">Gegroepeerde content binnen tegels</a></li>
+                <li>
+                  <a href="./tile-cover-image.html">Tegel met cover-afbeelding</a>
+                </li>
+                <li>
+                  <a href="./tile-groups.html">Gegroepeerde content binnen tegels</a>
+                </li>
               </ul>
             </nav>
           </section>
 
           <section id="single-tile">
             <h1>Tegelweergave op enkel element</h1>
-            <p>Geschikt voor het weergeven van een element dat visueel gegroepeerd dient te zijn of visueel meer aandacht mag krijgen om de gebruiker te attenderen.</p>
+            <p>
+              Geschikt voor het weergeven van een element dat visueel gegroepeerd dient te zijn of
+              visueel meer aandacht mag krijgen om de gebruiker te attenderen.
+            </p>
 
             <p>Aandachtspunten:</p>
             <ul>
-              <li>Voeg <code>class="tile"</code> toe voor de tegelweergave op een enkel element.</li>
+              <li>
+                Voeg <code>class="tile"</code> toe voor de tegelweergave op een enkel element.
+              </li>
             </ul>
 
             <h3>Visueel voorbeeld:</h3>
             <div class="tile" role="group">
               <h1>Lorem ipsum dolor set</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
+                amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+              </p>
             </div>
 
             <h3>Html-voorbeeld:</h3>
@@ -94,7 +118,12 @@
             <p>Aandachtspunten:</p>
 
             <ul>
-              <li>Groepeer de elementen die met de tegelweergave weergegeven dienen te worden binnen een <code>div</code> of <code>ul</code> en geef deze <code>div</code> of <code>ul</code> de benodigde <code>class</code> mee. Bijvoorbeeld: <code>&lt;div class="tiles"></code></li>
+              <li>
+                Groepeer de elementen die met de tegelweergave weergegeven dienen te worden binnen
+                een <code>div</code> of <code>ul</code> en geef deze <code>div</code> of
+                <code>ul</code> de benodigde <code>class</code> mee. Bijvoorbeeld:
+                <code>&lt;div class="tiles"></code>
+              </li>
             </ul>
 
             <h3>Visueel voorbeeld:</h3>
@@ -102,17 +131,26 @@
             <div class="tiles column-3">
               <div role="group">
                 <h1>Lorem ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo
+                  sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+                </p>
               </div>
 
               <div role="group">
                 <h1>Lorem ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo
+                  sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+                </p>
               </div>
 
               <div role="group">
                 <h1>Lorem ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo
+                  sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+                </p>
               </div>
             </div>
 
@@ -142,23 +180,34 @@
           <section id="variables">
             <h1>Instelbare variabelen</h1>
             <ul>
-              <li>Tegel
+              <li>
+                Tegel
                 <ul>
-                  <li><a href="../variables.html#border-width">border-width</a></li>
-                  <li><a href="../variables.html#border-style">border-style</a></li>
-                  <li><a href="../variables.html#border-color">border-color</a></li>
-                  <li><a href="../variables.html#flex-direction">flex-direction</a></li>
+                  <li>
+                    <a href="../variables.html#border-width">border-width</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#border-style">border-style</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#border-color">border-color</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#flex-direction">flex-direction</a>
+                  </li>
                   <li><a href="../variables.html#gap">gap</a></li>
                   <li><a href="../variables.html#padding">padding</a></li>
                 </ul>
               </li>
-              <li>Titel
+              <li>
+                Titel
                 <ul>
                   <li><a href="../variables.html#text-color">text-color</a></li>
                   <li><a href="../variables.html#font-size">font-size</a></li>
                 </ul>
               </li>
-              <li>Subtitel
+              <li>
+                Subtitel
                 <ul>
                   <li><a href="../variables.html#text-color">text-color</a></li>
                   <li><a href="../variables.html#font-size">font-size</a></li>
@@ -169,7 +218,10 @@
 
           <section id="requirements">
             <h1>Bijbehorende bestanden</h1>
-            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
             <h2>Benodigd</h2>
             <ul>
               <li><code>tile/tile.scss</code></li>

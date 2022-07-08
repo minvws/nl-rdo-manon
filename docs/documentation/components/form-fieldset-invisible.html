@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Onzichtbare fieldset</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -29,14 +29,20 @@
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./forms.html">Formulieren</a></li>
             <li><a href="./form-fieldset.html">Fieldset</a></li>
-            <li><a href="./form-fieldset-invisible.html" aria-current="page">Onzichtbare fieldset</a></li>
+            <li>
+              <a href="./form-fieldset-invisible.html" aria-current="page">Onzichtbare fieldset</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
         <ul>
           <li><a href="./form-fieldset-invisible.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
@@ -48,11 +54,18 @@
         <div>
           <section id="introduction">
             <h1>Onzichtbare fieldset</h1>
-            <p>Visueel onzichtbare fieldset. Waarbij de fieldset toegevoegd is aan de HTML ten behoeve van toegankelijkheid maar niet zichtbaar getoont wordt.</p>
+            <p>
+              Visueel onzichtbare fieldset. Waarbij de fieldset toegevoegd is aan de HTML ten
+              behoeve van toegankelijkheid maar niet zichtbaar getoont wordt.
+            </p>
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
             </ol>
           </section>
 
@@ -67,17 +80,26 @@
                 <legend>Fieldset test</legend>
 
                 <label for="form-example-base">Voorbeeld text input</label>
-                <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+                <input
+                  id="form-example-base"
+                  name="form-example-base"
+                  placeholder="voorbeeld text input"
+                  type="text"
+                />
 
                 <label for="form-example-base-2">Voorbeeld text input</label>
-                <input id="form-example-base-2" name="form-example-base-2" placeholder="voorbeeld text input" type="text">
+                <input
+                  id="form-example-base-2"
+                  name="form-example-base-2"
+                  placeholder="voorbeeld text input"
+                  type="text"
+                />
               </fieldset>
               <button type="submit">Verzend</button>
             </form>
 
-
             <h2>HTML-voorbeeld:</h2>
-             <pre>
+            <pre>
               <code>
 &lt;form action="" method="post">
   &lt;fieldset>
@@ -98,7 +120,10 @@
 
           <section id="requirements">
             <h1>Bijbehorende bestanden</h1>
-            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
             <h2>Benodigd</h2>
             <ul>
               <li><code>form/form-base.scss</code></li>
@@ -122,7 +147,9 @@
               <li><a href="../variables.html#font-size">font-size</a></li>
               <li><a href="../variables.html#font-family">font-family</a></li>
               <li><a href="../variables.html#text-color">text-color</a></li>
-              <li><a href="../variables.html#background-color">background-color</a></li>
+              <li>
+                <a href="../variables.html#background-color">background-color</a>
+              </li>
               <li><a href="../variables.html#border-width">border-width</a></li>
               <li><a href="../variables.html#border-style">border-style</a></li>
               <li><a href="../variables.html#border-color">border-color</a></li>
@@ -131,7 +158,6 @@
             <p>Bijbehorende elementen:</p>
             <ul>
               <li><a href="./form-base.html">form-base</a></li>
-
             </ul>
           </section>
 
@@ -139,7 +165,6 @@
             <h1>Gerelateerde pagina's</h1>
             <a href="./form-input-textarea-test.html">Test- en voorbeelden-pagina</a>
           </section>
-
         </div>
       </article>
     </main>

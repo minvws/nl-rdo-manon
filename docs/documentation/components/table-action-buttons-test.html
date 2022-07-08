@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Tabel met actieknoppen testpagina</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index">
     <header>
       <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-      <nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 50rem)" aria-label="Hoofdnavigatie">
+      <nav
+        data-open-label="Menu"
+        data-close-label="Sluit menu"
+        data-media="(min-width: 50rem)"
+        aria-label="Hoofdnavigatie"
+      >
         <div>
           <ul>
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="../components.html">Componenten</a></li>
-              <li><a href="../documentation.html">Documentatie</a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
           </ul>
         </div>
       </nav>
@@ -27,8 +32,14 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./table.html">Tabel</a></li>
-            <li><a href="./table-action-buttons.html">Tabel met actieknoppen</a></li>
-            <li><a href="./table-action-buttons-test.html" aria-current="page">Tabel met actieknoppen testpagina</a></li>
+            <li>
+              <a href="./table-action-buttons.html">Tabel met actieknoppen</a>
+            </li>
+            <li>
+              <a href="./table-action-buttons-test.html" aria-current="page"
+                >Tabel met actieknoppen testpagina</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
@@ -37,7 +48,6 @@
     <main id="main-content" tabindex="-1">
       <article id="button-base">
         <div>
-
           <section id="introduction">
             <h1>Tabel met actieknoppen testpagina</h1>
             <p>Overzicht van het element in mogelijke structuren om te testen.</p>
@@ -49,7 +59,9 @@
             <h2>Knop als actieknop</h2>
             <div class="horizontal-scroll">
               <table>
-                <caption>Tabelvoorbeeld met actieknoppen:</caption>
+                <caption>
+                  Tabelvoorbeeld met actieknoppen:
+                </caption>
                 <thead>
                   <tr>
                     <th scope="col">Gebruikersnaam</th>
@@ -61,27 +73,33 @@
                 </thead>
                 <tbody>
                   <tr>
-                      <td>Jane doe</td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-cat action-button">Bekijk profiel</button>
-                          </form>
-                      </td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-cat action-button">Wijzig wachtwoord</button>
-                          </form>
-                      </td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-cat action-button">Deactiveer</button>
-                          </form>
-                      </td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-cat action-button">Verwijder</button>
-                          </form>
-                      </td>
+                    <td>Jane doe</td>
+                    <td>
+                      <form>
+                        <button type="submit" class="icon icon-cat action-button">
+                          Bekijk profiel
+                        </button>
+                      </form>
+                    </td>
+                    <td>
+                      <form>
+                        <button type="submit" class="icon icon-cat action-button">
+                          Wijzig wachtwoord
+                        </button>
+                      </form>
+                    </td>
+                    <td>
+                      <form>
+                        <button type="submit" class="icon icon-cat action-button">
+                          Deactiveer
+                        </button>
+                      </form>
+                    </td>
+                    <td>
+                      <form>
+                        <button type="submit" class="icon icon-cat action-button">Verwijder</button>
+                      </form>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -136,7 +154,9 @@
             <h2>Knop als actieknop</h2>
             <div class="horizontal-scroll">
               <table class="action-buttons">
-                <caption>Tabelvoorbeeld met actieknoppen:</caption>
+                <caption>
+                  Tabelvoorbeeld met actieknoppen:
+                </caption>
                 <thead>
                   <tr>
                     <th scope="col">Gebruikersnaam</th>
@@ -148,27 +168,27 @@
                 </thead>
                 <tbody>
                   <tr>
-                      <td>Jane doe</td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-cat">Bekijk profiel</button>
-                          </form>
-                      </td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-cat">Wijzig wachtwoord</button>
-                          </form>
-                      </td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-cat">Deactiveer</button>
-                          </form>
-                      </td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-cat">Verwijder</button>
-                          </form>
-                      </td>
+                    <td>Jane doe</td>
+                    <td>
+                      <form>
+                        <button type="submit" class="icon icon-cat">Bekijk profiel</button>
+                      </form>
+                    </td>
+                    <td>
+                      <form>
+                        <button type="submit" class="icon icon-cat">Wijzig wachtwoord</button>
+                      </form>
+                    </td>
+                    <td>
+                      <form>
+                        <button type="submit" class="icon icon-cat">Deactiveer</button>
+                      </form>
+                    </td>
+                    <td>
+                      <form>
+                        <button type="submit" class="icon icon-cat">Verwijder</button>
+                      </form>
+                    </td>
                   </tr>
                 </tbody>
               </table>

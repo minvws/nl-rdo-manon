@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Weergave in kolommen</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -28,14 +28,20 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./forms.html">Formulieren</a></li>
-            <li><a href="./form-columns.html" aria-current="page">Weergave in kolommen</a></li>
+            <li>
+              <a href="./form-columns.html" aria-current="page">Weergave in kolommen</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
         <ul>
           <li><a href="./form-columns.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
@@ -51,8 +57,15 @@
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
-              <li>Groepeer de gewenste velden en geef de gewenste hoeveelheid kolommen op. Bijvoorbeeld: <code>class="column-2</code>.</li>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
+              <li>
+                Groepeer de gewenste velden en geef de gewenste hoeveelheid kolommen op.
+                Bijvoorbeeld: <code>class="column-2</code>.
+              </li>
             </ol>
           </section>
 
@@ -66,12 +79,12 @@
               <div class="column-2">
                 <div>
                   <label for="voorbeeld-1-date-1-start">van</label>
-                  <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start">
+                  <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" />
                 </div>
 
                 <div>
                   <label for="voorbeeld-1-date-1-end">tot</label>
-                  <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end">
+                  <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" />
                 </div>
               </div>
               <button type="submit">Verzend</button>
@@ -88,12 +101,14 @@
 &lt;/form>
               </code>
             </pre>
-
           </section>
 
           <section id="requirements">
             <h1>Bijbehorende bestanden</h1>
-            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
 
             <h2>Benodigd</h2>
             <ul>
@@ -113,13 +128,15 @@
             <p>Bijbehorende elementen:</p>
             <ul>
               <li><a href="./form-base.html">form-base</a></li>
-              <li>Gewenste layout, bijvoorbeeld:
+              <li>
+                Gewenste layout, bijvoorbeeld:
                 <ul>
                   <li><a href="./layout-column-2.html">layout-column-2</a></li>
                   <li><a href="./layout-column-3.html">layout-column-3</a></li>
                   <li><a href="./layout-column-4.html">layout-column-4</a></li>
                 </ul>
-                Voor alle beschikbare opties zie <a href="layouts.html#layout-types">layout weergave opties</a>.
+                Voor alle beschikbare opties zie
+                <a href="layouts.html#layout-types">layout weergave opties</a>.
               </li>
             </ul>
           </section>
@@ -133,10 +150,13 @@
             <h1>Bekende problemen</h1>
 
             <ul>
-              <li><code>fieldset</code> met een <code>column-*</code>-class met daarbinnen een <code>&lt;input type="date"></code> kunnen buiten de breedte van het formulier lopen.</li>
+              <li>
+                <code>fieldset</code> met een <code>column-*</code>-class met daarbinnen een
+                <code>&lt;input type="date"></code> kunnen buiten de breedte van het formulier
+                lopen.
+              </li>
             </ul>
           </section>
-
         </div>
       </article>
     </main>

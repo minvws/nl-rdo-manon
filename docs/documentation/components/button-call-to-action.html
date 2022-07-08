@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Call to action button</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index">
     <header>
       <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-      <nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 50rem)" aria-label="Hoofdnavigatie">
+      <nav
+        data-open-label="Menu"
+        data-close-label="Sluit menu"
+        data-media="(min-width: 50rem)"
+        aria-label="Hoofdnavigatie"
+      >
         <div>
           <ul>
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="../components.html">Componenten</a></li>
-              <li><a href="../documentation.html">Documentatie</a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
           </ul>
         </div>
       </nav>
@@ -27,14 +32,20 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./button.html">Knoppen</a></li>
-            <li><a href="./button-call-to-action.html" aria-current="page">Call to action button</a></li>
+            <li>
+              <a href="./button-call-to-action.html" aria-current="page">Call to action button</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
         <ul>
           <li><a href="./button-call-to-action.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
@@ -76,7 +87,7 @@
             <h2><code>input type="button"</code></h2>
             <h3>Visuele weergave:</h3>
 
-            <input type="button" value="Lorem ipsum" class="cta">
+            <input type="button" value="Lorem ipsum" class="cta" />
 
             <h3>Html-voorbeeld:</h3>
             <pre>
@@ -85,11 +96,10 @@
                 </code>
             </pre>
 
-
             <h2><code>input type="button"</code> uitgeschakeld</h2>
             <h3>Visuele weergave:</h3>
 
-            <input type="button" value="Lorem ipsum" class="cta" disabled>
+            <input type="button" value="Lorem ipsum" class="cta" disabled />
 
             <h3>Html-voorbeeld:</h3>
             <pre>
@@ -101,7 +111,10 @@
 
           <section id="requirements">
             <h1>Bijbehorende bestanden</h1>
-            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
             <h2>Benodigd</h2>
             <ul>
               <li><code>button/button-cta.scss</code></li>

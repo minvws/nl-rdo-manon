@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Tabel met actieknoppen</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -27,39 +27,66 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./table.html">Tabel</a></li>
-            <li><a href="./table-action-buttons.html" aria-current="page">Tabel met actieknoppen</a></li>
+            <li>
+              <a href="./table-action-buttons.html" aria-current="page">Tabel met actieknoppen</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-          <ul>
-            <li><a href="./table-action-buttons.html">Introductie</a></li>
-            <li><a href="#examples">Voorbeelden</a></li>
-            <li><a href="#requirements">Benodigdheden</a></li>
-            <li><a href="#variables">Variabelen</a></li>
-            <li><a href="#related">Gerelateerde pagina's</a></li>
-          </ul>
-        </nav>
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./table-action-buttons.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Benodigdheden</a></li>
+          <li><a href="#variables">Variabelen</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
       <article>
         <div>
           <section id="introduction">
             <h1>Tabel met actieknoppen</h1>
-            <p>Herhalende content zoals actieknoppen kunnen visueel als iconen weergegeven worden.</p>
+            <p>
+              Herhalende content zoals actieknoppen kunnen visueel als iconen weergegeven worden.
+            </p>
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Om gebruik te maken van de visuele actieknop weergave, voeg de class <code>action-button</code> toe aan de button.</li>
-              <li> Als alle knoppen binnen een tabel weergegeven mogen worden als actieknop kan er ook gebruik gemaakt worden van de class <code>action-buttons</code> direct op de <code>&lt;table&gt;</code>.</li>
+              <li>
+                Om gebruik te maken van de visuele actieknop weergave, voeg de class
+                <code>action-button</code> toe aan de button.
+              </li>
+              <li>
+                Als alle knoppen binnen een tabel weergegeven mogen worden als actieknop kan er ook
+                gebruik gemaakt worden van de class
+                <code>action-buttons</code> direct op de <code>&lt;table&gt;</code>.
+              </li>
             </ol>
 
             <h2>Aandachtspunten</h2>
             <ul>
-              <li>Omdat niet alle gebruikers weten wat een icoon betekend is het verstandig om een omschrijvende tekst in de header te plaatsen.</li>
-              <li>Voor toegankelijkheid is het belangrijk om de tekst ook toe te voegen aan de knop ook al wordt deze visueel niet getoont. Screenreaders maken hier bijvoorbeeld gebruik van.</li>
-              <li>Voor tabellen met lange lijsten kan het de gebruiker helpen om gebruik te maken van de tabel met sticky header zodat de toelichting van de iconen altijd in beeld blijft. Voor meer informatie zie: <a href="./table-sticky-header.html">tabel met sticky header</a>.</li>
+              <li>
+                Omdat niet alle gebruikers weten wat een icoon betekend is het verstandig om een
+                omschrijvende tekst in de header te plaatsen.
+              </li>
+              <li>
+                Voor toegankelijkheid is het belangrijk om de tekst ook toe te voegen aan de knop
+                ook al wordt deze visueel niet getoont. Screenreaders maken hier bijvoorbeeld
+                gebruik van.
+              </li>
+              <li>
+                Voor tabellen met lange lijsten kan het de gebruiker helpen om gebruik te maken van
+                de tabel met sticky header zodat de toelichting van de iconen altijd in beeld
+                blijft. Voor meer informatie zie:
+                <a href="./table-sticky-header.html">tabel met sticky header</a>.
+              </li>
             </ul>
           </section>
 
@@ -68,7 +95,9 @@
             <h2>Visueel voorbeeld:</h2>
             <div class="horizontal-scroll">
               <table>
-                <caption>Tabelvoorbeeld met actieknoppen:</caption>
+                <caption>
+                  Tabelvoorbeeld met actieknoppen:
+                </caption>
                 <thead>
                   <tr>
                     <th scope="col">Gebruikersnaam</th>
@@ -80,27 +109,33 @@
                 </thead>
                 <tbody>
                   <tr>
-                      <td>Jane doe</td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-cat action-button">Bekijk profiel</button>
-                          </form>
-                      </td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-cat action-button">Wijzig wachtwoord</button>
-                          </form>
-                      </td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-cat action-button">Deactiveer</button>
-                          </form>
-                      </td>
-                      <td>
-                          <form>
-                              <button type="submit" class="icon icon-cat action-button">Verwijder</button>
-                          </form>
-                      </td>
+                    <td>Jane doe</td>
+                    <td>
+                      <form>
+                        <button type="submit" class="icon icon-cat action-button">
+                          Bekijk profiel
+                        </button>
+                      </form>
+                    </td>
+                    <td>
+                      <form>
+                        <button type="submit" class="icon icon-cat action-button">
+                          Wijzig wachtwoord
+                        </button>
+                      </form>
+                    </td>
+                    <td>
+                      <form>
+                        <button type="submit" class="icon icon-cat action-button">
+                          Deactiveer
+                        </button>
+                      </form>
+                    </td>
+                    <td>
+                      <form>
+                        <button type="submit" class="icon icon-cat action-button">Verwijder</button>
+                      </form>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -215,17 +250,25 @@
           <section id="variables">
             <h1>Instelbare variabelen</h1>
             <ul>
-              <li>Actieknop icoon
+              <li>
+                Actieknop icoon
                 <ul>
-                  <li><a href="../variables.html#background-color">background-color</a></li>
+                  <li>
+                    <a href="../variables.html#background-color">background-color</a>
+                  </li>
                   <li><a href="../variables.html#text-color">text-color</a></li>
                   <li><a href="../variables.html#font-size">font-size</a></li>
-                  <li><a href="../variables.html#justify-content">justify-content</a></li>
+                  <li>
+                    <a href="../variables.html#justify-content">justify-content</a>
+                  </li>
                 </ul>
               </li>
-              <li>Actieknop icoon hover
+              <li>
+                Actieknop icoon hover
                 <ul>
-                  <li><a href="../variables.html#background-color">background-color</a></li>
+                  <li>
+                    <a href="../variables.html#background-color">background-color</a>
+                  </li>
                   <li><a href="../variables.html#text-color">text-color</a></li>
                 </ul>
               </li>
@@ -236,7 +279,6 @@
             <h1>Gerelateerde pagina's</h1>
             <a href="./table-action-buttons-test.html">Test- en voorbeelden-pagina</a>
           </section>
-
         </div>
       </article>
     </main>

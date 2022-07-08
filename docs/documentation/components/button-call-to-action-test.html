@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>"Call to action" testpagina</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index">
     <header>
       <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-      <nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 50rem)" aria-label="Hoofdnavigatie">
+      <nav
+        data-open-label="Menu"
+        data-close-label="Sluit menu"
+        data-media="(min-width: 50rem)"
+        aria-label="Hoofdnavigatie"
+      >
         <div>
           <ul>
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="../components.html">Componenten</a></li>
-              <li><a href="../documentation.html">Documentatie</a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
           </ul>
         </div>
       </nav>
@@ -27,7 +32,11 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./button.html">Knoppen</a></li>
-            <li><a href="./button-call-to-action-test.html" aria-current="page">"Call to action" testpagina</a></li>
+            <li>
+              <a href="./button-call-to-action-test.html" aria-current="page"
+                >"Call to action" testpagina</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
@@ -36,7 +45,6 @@
     <main id="main-content" tabindex="-1">
       <article id="button-base">
         <div>
-
           <section id="introduction">
             <h1>"Call to action" testpagina</h1>
             <p>Overzicht van het element in mogelijke structuren om te testen.</p>
@@ -77,7 +85,7 @@
 
             <h2><code>button</code> met een afbeelding</h2>
             <h3>Visueel voorbeeld:</h3>
-            <button class="cta">Lorem ipsum <img src=""></button>
+            <button class="cta">Lorem ipsum <img src="" /></button>
 
             <h3>Html-voorbeeld:</h3>
             <pre>
@@ -110,16 +118,28 @@
 
             <h3>States</h3>
             <ul>
-              <li><a href="./button-call-to-action-test.html" class="button cta focus">Focus</a></li>
-              <li><a href="./button-call-to-action-test.html" class="button cta active">Active</a></li>
-              <li><a href="./button-call-to-action-test.html" class="button cta visited">Visited</a></li>
-              <li><a href="./button-call-to-action-test.html" class="button cta hover">Hover</a></li>
-              <li><a href="./button-call-to-action-test.html" class="button cta selected">Selected</a></li>
+              <li>
+                <a href="./button-call-to-action-test.html" class="button cta focus">Focus</a>
+              </li>
+              <li>
+                <a href="./button-call-to-action-test.html" class="button cta active">Active</a>
+              </li>
+              <li>
+                <a href="./button-call-to-action-test.html" class="button cta visited">Visited</a>
+              </li>
+              <li>
+                <a href="./button-call-to-action-test.html" class="button cta hover">Hover</a>
+              </li>
+              <li>
+                <a href="./button-call-to-action-test.html" class="button cta selected">Selected</a>
+              </li>
             </ul>
 
             <h2>Link als knop: met een afbeelding</h2>
             <h3>Visueel voorbeeld:</h3>
-            <a href="./button-call-to-action-test.html" class="button cta">Lorem ipsum <img src=""></a>
+            <a href="./button-call-to-action-test.html" class="button cta"
+              >Lorem ipsum <img src=""
+            /></a>
 
             <h3>Html-voorbeeld:</h3>
             <pre>
@@ -130,7 +150,7 @@
 
             <h2><code>input type="button"</code></h2>
             <h3>Visueel voorbeeld:</h3>
-            <input type="button" value="Button" class="cta">
+            <input type="button" value="Button" class="cta" />
 
             <h3>Html-voorbeeld:</h3>
             <pre>
@@ -141,7 +161,7 @@
 
             <h2><code>input type="button"</code>: disabled</h2>
             <h3>Visueel voorbeeld:</h3>
-            <input type="button" value="Button disabled" class="cta" disabled>
+            <input type="button" value="Button disabled" class="cta" disabled />
 
             <h3>Html-voorbeeld:</h3>
             <pre>
@@ -153,11 +173,15 @@
             <h3>States</h3>
             <h3>Visueel voorbeeld:</h3>
             <ul>
-              <li><input type="button" value="Focus" class="cta focus"></li>
-              <li><input type="button" value="Active" class="cta active"></li>
-              <li><input type="button" value="Visited" class="cta visited"></li>
-              <li><input type="button" value="Hover" class="cta hover"></li>
-              <li><input type="button" value="Selected" class="cta selected"></li>
+              <li><input type="button" value="Focus" class="cta focus" /></li>
+              <li><input type="button" value="Active" class="cta active" /></li>
+              <li>
+                <input type="button" value="Visited" class="cta visited" />
+              </li>
+              <li><input type="button" value="Hover" class="cta hover" /></li>
+              <li>
+                <input type="button" value="Selected" class="cta selected" />
+              </li>
             </ul>
 
             <h2><code>button type="submit"</code></h2>
@@ -167,7 +191,7 @@
             <h3>Html-voorbeeld:</h3>
             <pre>
               <code>
-&lt;button type="submit" class="cta">Lorem ipsum</button>
+&lt;button type="submit" class="cta">Lorem ipsum&lt;/button>
               </code>
             </pre>
 
@@ -187,14 +211,18 @@
             <ul>
               <li><button type="submit" class="cta focus">Focus</button></li>
               <li><button type="submit" class="cta active">Active</button></li>
-              <li><button type="submit" class="cta visited">Visited</button></li>
+              <li>
+                <button type="submit" class="cta visited">Visited</button>
+              </li>
               <li><button type="submit" class="cta hover">Hover</button></li>
-              <li><button type="submit" class="cta selected">Selected</button></li>
+              <li>
+                <button type="submit" class="cta selected">Selected</button>
+              </li>
             </ul>
 
             <h2><code>input type="submit"</code></h2>
             <h3>Visueel voorbeeld:</h3>
-            <input type="submit" value="Input" class="cta">
+            <input type="submit" value="Input" class="cta" />
 
             <h3>Html-voorbeeld:</h3>
             <pre>
@@ -205,7 +233,7 @@
 
             <h2><code>input type="submit"</code>: disabled</h2>
             <h3>Visueel voorbeeld:</h3>
-            <input type="submit" value="Input" class="cta" disabled>
+            <input type="submit" value="Input" class="cta" disabled />
 
             <h3>Html-voorbeeld:</h3>
             <pre>
@@ -221,7 +249,7 @@
             <h3>Html-voorbeeld:</h3>
             <pre>
               <code>
-&lt;button type="reset" class="cta">Lorem ipsum</button>
+&lt;button type="reset" class="cta">Lorem ipsum&lt;/button>
               </code>
             </pre>
 
@@ -243,14 +271,14 @@
               <li><button type="reset" class="cta active">Active</button></li>
               <li><button type="reset" class="cta visited">Visited</button></li>
               <li><button type="reset" class="cta hover">Hover</button></li>
-              <li><button type="reset" class="cta selected">Selected</button></li>
+              <li>
+                <button type="reset" class="cta selected">Selected</button>
+              </li>
             </ul>
-
-
 
             <h2><code>input type="reset"</code>: disabled</h2>
             <h3>Visueel voorbeeld:</h3>
-            <input type="reset" value="Input" class="cta" disabled>
+            <input type="reset" value="Input" class="cta" disabled />
 
             <h3>Html-voorbeeld:</h3>
             <pre>
@@ -261,7 +289,7 @@
 
             <h2><code>button type="reset"</code></h2>
             <h3>Visueel voorbeeld:</h3>
-            <input type="reset" class="cta">
+            <input type="reset" class="cta" />
 
             <h3>Html-voorbeeld:</h3>
             <pre>
@@ -272,7 +300,7 @@
 
             <h2><code>button type="reset"</code>: disabled</h2>
             <h3>Visueel voorbeeld:</h3>
-            <input type="reset" class="cta" disabled>
+            <input type="reset" class="cta" disabled />
 
             <h3>Html-voorbeeld:</h3>
             <pre>
@@ -284,11 +312,15 @@
             <h3>States</h3>
             <h3>Visueel voorbeeld:</h3>
             <ul>
-              <li><input type="reset" value="focus" class="cta focus"></li>
-              <li><input type="reset" value="active" class="cta active"></li>
-              <li><input type="reset" value="visited" class="cta visited"></li>
-              <li><input type="reset" value="hover" class="cta hover"></li>
-              <li><input type="reset" value="selected" class="cta selected"></li>
+              <li><input type="reset" value="focus" class="cta focus" /></li>
+              <li><input type="reset" value="active" class="cta active" /></li>
+              <li>
+                <input type="reset" value="visited" class="cta visited" />
+              </li>
+              <li><input type="reset" value="hover" class="cta hover" /></li>
+              <li>
+                <input type="reset" value="selected" class="cta selected" />
+              </li>
             </ul>
           </section>
         </div>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Hulpteksten testpagina</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index">
@@ -28,7 +28,9 @@
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./forms.html" aria-current="page">Formulieren</a></li>
             <li><a href="./form-accent-color.html">Hulpteksten</a></li>
-            <li><a href="./form-help-test.html" aria-current="page">Hulpteksten testpagina</a></li>
+            <li>
+              <a href="./form-help-test.html" aria-current="page">Hulpteksten testpagina</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -47,20 +49,25 @@
             <h2>Basis</h2>
             <h3>Visueel voorbeeld</h3>
             <form action="" method="post" class="help">
-              <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Help op simpel formulierveld</label>
+              <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+                >Help op simpel formulierveld</label
+              >
               <div>
                 <input
                   id="voorbeeld-text-input-met-hulptekst-simpel-1"
                   name="voorbeeld-text-input"
                   placeholder="voorbeeld text input"
                   type="text"
-                  aria-describedby="voorbeeld-text-input-met-hulptekst-simpel-1-message">
+                  aria-describedby="voorbeeld-text-input-met-hulptekst-simpel-1-message"
+                />
                 <p
                   class="explanation"
                   data-open-label="Toelichting bij het veld: Voorbeeld text input"
                   data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                  id="voorbeeld-text-input-met-hulptekst-simpel-1-message">
-                Lorem ipsum dolor set amet.</p>
+                  id="voorbeeld-text-input-met-hulptekst-simpel-1-message"
+                >
+                  Lorem ipsum dolor set amet.
+                </p>
               </div>
 
               <button type="submit">Verzend</button>
@@ -94,7 +101,9 @@
             <h2>Verplicht invoerveld</h2>
             <h3>Visueel voorbeeld</h3>
             <form action="" method="post" class="help">
-              <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Help op simpel formulierveld</label>
+              <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+                >Help op simpel formulierveld</label
+              >
               <div>
                 <span class="nota-bene">Dit veld is verplicht</span>
                 <div>
@@ -104,13 +113,16 @@
                     placeholder="lorem ipsum"
                     type="text"
                     aria-describedby="example-input-help-required-message"
-                    required>
+                    required
+                  />
                   <p
                     class="explanation"
                     data-open-label="Toelichting bij het veld: Voorbeeld text input"
                     data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                    id="example-input-help-required-message">
-                  Lorem ipsum dolor set amet.</p>
+                    id="example-input-help-required-message"
+                  >
+                    Lorem ipsum dolor set amet.
+                  </p>
                 </div>
               </div>
 
@@ -150,11 +162,18 @@
             <form action="" method="post" class="horizontal-view help">
               <div>
                 <label for="form-example-base">Voorbeeld text input</label>
-                <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+                <input
+                  id="form-example-base"
+                  name="form-example-base"
+                  placeholder="voorbeeld text input"
+                  type="text"
+                />
               </div>
 
               <div>
-                <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Help op simpel formulierveld</label>
+                <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+                  >Help op simpel formulierveld</label
+                >
                 <div>
                   <span class="nota-bene">Dit veld is verplicht</span>
                   <div>
@@ -164,19 +183,24 @@
                       placeholder="lorem ipsum"
                       type="text"
                       aria-describedby="example-input-help-required-message"
-                      required>
+                      required
+                    />
                     <p
                       class="explanation"
                       data-open-label="Toelichting bij het veld: Voorbeeld text input"
                       data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                      id="example-input-help-required-message">
-                    Lorem ipsum dolor set amet.</p>
+                      id="example-input-help-required-message"
+                    >
+                      Lorem ipsum dolor set amet.
+                    </p>
                   </div>
                 </div>
               </div>
 
               <div>
-                <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Help op simpel formulierveld</label>
+                <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+                  >Help op simpel formulierveld</label
+                >
                 <div>
                   <input
                     id="example-input-help-required"
@@ -184,77 +208,35 @@
                     placeholder="lorem ipsum"
                     type="text"
                     aria-describedby="example-input-help-required-message"
-                    required>
+                    required
+                  />
                   <p
                     class="explanation"
                     data-open-label="Toelichting bij het veld: Voorbeeld text input"
                     data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                    id="example-input-help-required-message">
-                  Lorem ipsum dolor set amet.</p>
+                    id="example-input-help-required-message"
+                  >
+                    Lorem ipsum dolor set amet.
+                  </p>
                 </div>
               </div>
 
-              <fieldset>
-                <legend>Fieldset test</legend>
-                <div>
-                <label for="form-example-base">Voorbeeld text input</label>
-                <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
-              </div>
-
-              <div class="required">
-                <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Help op simpel formulierveld</label>
-                <div>
-                  <span class="nota-bene">Dit veld is verplicht</span>
-                  <div>
-                    <input
-                      id="example-input-help-required"
-                      name="voorbeeld-text-input"
-                      placeholder="lorem ipsum"
-                      type="text"
-                      aria-describedby="example-input-help-required-message"
-                      required>
-                    <p
-                      class="explanation"
-                      data-open-label="Toelichting bij het veld: Voorbeeld text input"
-                      data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                      id="example-input-help-required-message">
-                    Lorem ipsum dolor set amet.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Help op simpel formulierveld</label>
-                <div>
-                  <input
-                    id="example-input-help-required"
-                    name="voorbeeld-text-input"
-                    placeholder="lorem ipsum"
-                    type="text"
-                    aria-describedby="example-input-help-required-message"
-                    required>
-                  <p
-                    class="explanation"
-                    data-open-label="Toelichting bij het veld: Voorbeeld text input"
-                    data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                    id="example-input-help-required-message">
-                  Lorem ipsum dolor set amet.</p>
-                </div>
-              </div>
-              </fieldset>
-              <button type="submit">Verzend</button>
-            </form>
-
-            <form action="" method="post" class="help">
               <fieldset>
                 <legend>Fieldset test</legend>
                 <div>
                   <label for="form-example-base">Voorbeeld text input</label>
-                  <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+                  <input
+                    id="form-example-base"
+                    name="form-example-base"
+                    placeholder="voorbeeld text input"
+                    type="text"
+                  />
                 </div>
 
                 <div class="required">
-                  <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Help op simpel formulierveld</label>
+                  <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+                    >Help op simpel formulierveld</label
+                  >
                   <div>
                     <span class="nota-bene">Dit veld is verplicht</span>
                     <div>
@@ -264,19 +246,24 @@
                         placeholder="lorem ipsum"
                         type="text"
                         aria-describedby="example-input-help-required-message"
-                        required>
+                        required
+                      />
                       <p
                         class="explanation"
                         data-open-label="Toelichting bij het veld: Voorbeeld text input"
                         data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                        id="example-input-help-required-message">
-                      Lorem ipsum dolor set amet.</p>
+                        id="example-input-help-required-message"
+                      >
+                        Lorem ipsum dolor set amet.
+                      </p>
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Help op simpel formulierveld</label>
+                  <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+                    >Help op simpel formulierveld</label
+                  >
                   <div>
                     <input
                       id="example-input-help-required"
@@ -284,13 +271,83 @@
                       placeholder="lorem ipsum"
                       type="text"
                       aria-describedby="example-input-help-required-message"
-                      required>
+                      required
+                    />
                     <p
                       class="explanation"
                       data-open-label="Toelichting bij het veld: Voorbeeld text input"
                       data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                      id="example-input-help-required-message">
-                    Lorem ipsum dolor set amet.</p>
+                      id="example-input-help-required-message"
+                    >
+                      Lorem ipsum dolor set amet.
+                    </p>
+                  </div>
+                </div>
+              </fieldset>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <form action="" method="post" class="help">
+              <fieldset>
+                <legend>Fieldset test</legend>
+                <div>
+                  <label for="form-example-base">Voorbeeld text input</label>
+                  <input
+                    id="form-example-base"
+                    name="form-example-base"
+                    placeholder="voorbeeld text input"
+                    type="text"
+                  />
+                </div>
+
+                <div class="required">
+                  <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+                    >Help op simpel formulierveld</label
+                  >
+                  <div>
+                    <span class="nota-bene">Dit veld is verplicht</span>
+                    <div>
+                      <input
+                        id="example-input-help-required"
+                        name="voorbeeld-text-input"
+                        placeholder="lorem ipsum"
+                        type="text"
+                        aria-describedby="example-input-help-required-message"
+                        required
+                      />
+                      <p
+                        class="explanation"
+                        data-open-label="Toelichting bij het veld: Voorbeeld text input"
+                        data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+                        id="example-input-help-required-message"
+                      >
+                        Lorem ipsum dolor set amet.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+                    >Help op simpel formulierveld</label
+                  >
+                  <div>
+                    <input
+                      id="example-input-help-required"
+                      name="voorbeeld-text-input"
+                      placeholder="lorem ipsum"
+                      type="text"
+                      aria-describedby="example-input-help-required-message"
+                      required
+                    />
+                    <p
+                      class="explanation"
+                      data-open-label="Toelichting bij het veld: Voorbeeld text input"
+                      data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+                      id="example-input-help-required-message"
+                    >
+                      Lorem ipsum dolor set amet.
+                    </p>
                   </div>
                 </div>
               </fieldset>

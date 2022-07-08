@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Foutmelding</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -27,56 +27,104 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./notifications.html">Notificaties</a></li>
-            <li><a href="./notification-error.html" aria-current="page">Foutmelding</a></li>
+            <li>
+              <a href="./notification-error.html" aria-current="page">Foutmelding</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-          <ul>
-            <li><a href="./notification-error.html">Introductie</a></li>
-            <li><a href="#examples">Voorbeelden</a>
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./notification-error.html">Introductie</a></li>
+          <li>
+            <a href="#examples">Voorbeelden</a>
+            <ul>
               <li><a href="#error-div">Blokelement</a></li>
               <li><a href="#error-paragraph">Paragraaf</a></li>
-              <li><a href="#error-table">Tabel-elementen</a>
+              <li>
+                <a href="#error-table">Tabel-elementen</a>
                 <ul>
-                  <li><a href="#error-th">Tabeltitel - <code>th</code></a></li>
-                  <li><a href="#error-td">Tabelcel - <code>td</code></a></li>
-                  <li><a href="#error-tr">Tabelrij - <code>tr</code></a></li>
+                  <li>
+                    <a href="#error-th">Tabeltitel - <code>th</code></a>
+                  </li>
+                  <li>
+                    <a href="#error-td">Tabelcel - <code>td</code></a>
+                  </li>
+                  <li>
+                    <a href="#error-tr">Tabelrij - <code>tr</code></a>
+                  </li>
                 </ul>
               </li>
-              <li><a href="#error-form">Formulier-elementen</a>
+              <li>
+                <a href="#error-form">Formulier-elementen</a>
                 <ul>
-                  <li><a href="#error-form-input">Invoerveld - <code>input</code></a></li>
-                  <li><a href="#error-form-textarea">Tekstveld - <code>textarea</code></a></li>
-                  <li><a href="#error-form-select">Selectielijst - <code>select</code></a></li>
-                  <li><a href="#error-form-datalist">Datalijst - <code>Datalist</code></a></li>
-                  <li><a href="#error-form-checkbox">Selectievak - <code>checkbox</code></a></li>
-                  <li><a href="#error-form-radio">Radio-selecteerknop - <code>radio</code></a></li>
+                  <li>
+                    <a href="#error-form-input">Invoerveld - <code>input</code></a>
+                  </li>
+                  <li>
+                    <a href="#error-form-textarea">Tekstveld - <code>textarea</code></a>
+                  </li>
+                  <li>
+                    <a href="#error-form-select">Selectielijst - <code>select</code></a>
+                  </li>
+                  <li>
+                    <a href="#error-form-datalist">Datalijst - <code>Datalist</code></a>
+                  </li>
+                  <li>
+                    <a href="#error-form-checkbox">Selectievak - <code>checkbox</code></a>
+                  </li>
+                  <li>
+                    <a href="#error-form-radio">Radio-selecteerknop - <code>radio</code></a>
+                  </li>
                 </ul>
               </li>
-            </li>
-            <li><a href="#requirements">Benodigdheden</a></li>
-          </ul>
-        </nav>
+            </ul>
+          </li>
+          <li><a href="#requirements">Benodigdheden</a></li>
+        </ul>
+      </nav>
       <article>
         <div>
           <section id="introduction">
             <h1>Foutmelding</h1>
-            <p>Gebruik om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het incorrect invoeren van data of een systeemfout.</p>
+            <p>
+              Gebruik om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het incorrect
+              invoeren van data of een systeemfout.
+            </p>
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></li>
-              <li>Voeg de benodigde HTML toe. Zie het voorbeeld per element voor de implementatiedetails.</li>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
+                instellen van componenten. Zie:
+                <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+              </li>
+              <li>
+                Voeg de benodigde HTML toe. Zie het voorbeeld per element voor de
+                implementatiedetails.
+              </li>
             </ol>
 
             <h2>Aandachtspunten</h2>
             <ul>
-              <li>Voeg de volledige code toe die in de voorbeelden staat om alle gebruikers een goede gebruikerservaring the bieden. Denk hierbij aan gebruikers die kleurenblind zijn of gebruikers die gebruik maken van hulptechnologiën.</li>
-              <li>Notificaties kunnen verborgen worden door de class <code>hidden</code> toe te voegen aan de notification</li>
+              <li>
+                Voeg de volledige code toe die in de voorbeelden staat om alle gebruikers een goede
+                gebruikerservaring the bieden. Denk hierbij aan gebruikers die kleurenblind zijn of
+                gebruikers die gebruik maken van hulptechnologiën.
+              </li>
+              <li>
+                Notificaties kunnen verborgen worden door de class
+                <code>hidden</code> toe te voegen aan de notification
+              </li>
             </ul>
           </section>
 
@@ -98,18 +146,29 @@
             <div class="error" role="group" aria-label="foutmelding">
               <span>Foutmelding:</span>
               <h1>Lorem ipsum dolor set</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula
+                pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus
+                tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur
+                felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan
+                ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+              </p>
               <ul>
                 <li>Lorem ipsum</li>
                 <li>Lorem ipsum</li>
                 <li>Lorem ipsum</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+                  consequat facilisis ac eu velit.
+                  <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+                </li>
               </ul>
               <button type="button">Lorem</button>
             </div>
 
             <h3>HTML-voorbeeld:</h3>
-             <pre>
+            <pre>
               <code>
 &lt;div class="error" role="group" aria-label="foutmelding">
   &lt;span>Foutmelding:&lt;/span>
@@ -127,7 +186,7 @@
             </pre>
 
             <h3>HTML-structuur voorbeeld:</h3>
-             <pre>
+            <pre>
               <code>
 &lt;div class="error" role="group" aria-label="foutmelding">
     &lt;span>Foutmelding:&lt;/span>
@@ -136,14 +195,19 @@
               </code>
             </pre>
 
-            <p>Voor meer informatie zie: <a href="./notifications-block-element.html">Blok-element</a></p>
+            <p>
+              Voor meer informatie zie:
+              <a href="./notifications-block-element.html">Blok-element</a>
+            </p>
 
             <h2 id="error-paragraph">Paragraaf</h2>
             <h3>Visueel voorbeeld:</h3>
-            <p class="error" role="group" aria-label="foutmelding"><span>Foutmelding:</span> Lorem ipsum dolor sit.</p>
+            <p class="error" role="group" aria-label="foutmelding">
+              <span>Foutmelding:</span> Lorem ipsum dolor sit.
+            </p>
 
             <h3>HTML-voorbeeld:</h3>
-             <pre>
+            <pre>
               <code>
 &lt;p class="error" role="group" aria-label="foutmelding">&lt;span>Foutmelding:&lt;/span> Lorem ipsum dolor sit amet &lt;/p>
               </code>
@@ -152,9 +216,15 @@
             <h2 id="error-table">Tabel-elementen</h2>
             <nav aria-label="Foutmelding tabelelementen subnavigatie">
               <ul>
-                <li><a href="#error-th">Tabeltitel - <code>th</code></a></li>
-                <li><a href="#error-td">Tabelcel - <code>td</code></a></li>
-                <li><a href="#error-tr">Tabelrij - <code>tr</code></a></li>
+                <li>
+                  <a href="#error-th">Tabeltitel - <code>th</code></a>
+                </li>
+                <li>
+                  <a href="#error-td">Tabelcel - <code>td</code></a>
+                </li>
+                <li>
+                  <a href="#error-tr">Tabelrij - <code>tr</code></a>
+                </li>
               </ul>
             </nav>
 
@@ -193,7 +263,7 @@
             </table>
 
             <h4>HTML-voorbeeld:</h4>
-             <pre>
+            <pre>
               <code>
 &lt;table>
   &lt;thead>
@@ -253,7 +323,6 @@
                   <td>15</td>
                   <td>168</td>
                 </tr>
-
               </tbody>
               <tfoot>
                 <tr>
@@ -264,7 +333,7 @@
             </table>
 
             <h4>HTML-voorbeeld:</h4>
-             <pre>
+            <pre>
               <code>
 &lt;table>
   &lt;thead>
@@ -304,7 +373,10 @@
 
             <p>Aandachtspunten:</p>
             <ul>
-              <li>Niet alle screenreaders lezen <code>aria-label</code> op een <code>tr</code> op. Voeg daarom de labels toe aan de <code>th</code> of de <code>td</code>.</li>
+              <li>
+                Niet alle screenreaders lezen <code>aria-label</code> op een <code>tr</code> op.
+                Voeg daarom de labels toe aan de <code>th</code> of de <code>td</code>.
+              </li>
             </ul>
 
             <h4>Visueel voorbeeld:</h4>
@@ -345,7 +417,7 @@
             </table>
 
             <h4>HTML-voorbeeld:</h4>
-             <pre>
+            <pre>
               <code>
 &lt;table>
   &lt;thead>
@@ -383,12 +455,24 @@
             <h2 id="error-form">Formulier-elementen</h2>
             <nav aria-label="Foutmelding formulierelementen subnavigatie">
               <ul>
-                <li><a href="#error-form-input">Invoerveld - <code>input</code></a></li>
-                <li><a href="#error-form-textarea">Tekstveld - <code>textarea</code></a></li>
-                <li><a href="#error-form-select">Selectielijst - <code>select</code></a></li>
-                <li><a href="#error-form-datalist">Datalijst - <code>Datalist</code></a></li>
-                <li><a href="#error-form-checkbox">Selectievak - <code>checkbox</code></a></li>
-                <li><a href="#error-form-radio">Radio-selecteerknop - <code>radio</code></a></li>
+                <li>
+                  <a href="#error-form-input">Invoerveld - <code>input</code></a>
+                </li>
+                <li>
+                  <a href="#error-form-textarea">Tekstveld - <code>textarea</code></a>
+                </li>
+                <li>
+                  <a href="#error-form-select">Selectielijst - <code>select</code></a>
+                </li>
+                <li>
+                  <a href="#error-form-datalist">Datalijst - <code>Datalist</code></a>
+                </li>
+                <li>
+                  <a href="#error-form-checkbox">Selectievak - <code>checkbox</code></a>
+                </li>
+                <li>
+                  <a href="#error-form-radio">Radio-selecteerknop - <code>radio</code></a>
+                </li>
               </ul>
             </nav>
 
@@ -398,7 +482,13 @@
             <form action="" method="post">
               <label for="input-error">Input</label>
               <div>
-                <input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message" aria-invalid="true">
+                <input
+                  id="input-error"
+                  class="error"
+                  value="Lorem ipsum"
+                  aria-describedby="input-error-message"
+                  aria-invalid="true"
+                />
                 <p class="error" id="input-error-message">
                   <span>foutmelding:</span> Lorem ipsum dolor set amet
                 </p>
@@ -426,7 +516,14 @@
             <form action="" method="post">
               <label for="voorbeeld-tekstveld-error">Voorbeeld tekstveld</label>
               <div>
-                <textarea id="voorbeeld-tekstveld-error" name="voorbeeld-tekstveld-error" placeholder="Jouw vraag of opmerking" class="error" aria-describedby="voorbeeld-tekstveld-error-message" aria-invalid="true"></textarea>
+                <textarea
+                  id="voorbeeld-tekstveld-error"
+                  name="voorbeeld-tekstveld-error"
+                  placeholder="Jouw vraag of opmerking"
+                  class="error"
+                  aria-describedby="voorbeeld-tekstveld-error-message"
+                  aria-invalid="true"
+                ></textarea>
                 <p class="error" id="voorbeeld-tekstveld-error-message">
                   <span>foutmelding:</span> Lorem ipsum dolor set amet
                 </p>
@@ -457,7 +554,13 @@
             <form action="" method="post">
               <label for="select-error">Selectielijst</label>
               <div>
-                <select id="select-error" name="select" class="error" aria-describedby="select-error-message" aria-invalid="true">
+                <select
+                  id="select-error"
+                  name="select"
+                  class="error"
+                  aria-describedby="select-error-message"
+                  aria-invalid="true"
+                >
                   <option value="1">Optie 1</option>
                   <option value="2">Optie 2</option>
                   <option value="3">Optie 3</option>
@@ -493,16 +596,23 @@
             <form action="" method="post">
               <label for="datalist-error">Input</label>
               <div>
-                <input id="datalist-error" class="error" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-error" aria-describedby="datalist-error-message" aria-invalid="true">
+                <input
+                  id="datalist-error"
+                  class="error"
+                  placeholder="Begin met typen of klik om een optie uit te kiezen"
+                  list="example-list-error"
+                  aria-describedby="datalist-error-message"
+                  aria-invalid="true"
+                />
                 <p class="error" id="datalist-error-message">
                   <span>foutmelding:</span> Lorem ipsum dolor set amet
                 </p>
               </div>
 
               <datalist id="example-list-error">
-                <option value="Optie 1">
-                <option value="Optie 2">
-                <option value="Optie 3">
+                <option value="Optie 1"></option>
+                <option value="Optie 2"></option>
+                <option value="Optie 3"></option>
               </datalist>
             </form>
 
@@ -532,7 +642,13 @@
             <h4>Visueel voorbeeld:</h4>
             <form action="" method="post">
               <div aria-describedby="checkbox-error-message">
-                <input type="checkbox" id="checkbox-error" name="standaard-checkbox" class="error" aria-invalid="true">
+                <input
+                  type="checkbox"
+                  id="checkbox-error"
+                  name="standaard-checkbox"
+                  class="error"
+                  aria-invalid="true"
+                />
                 <label for="checkbox-error">Lorem ipsum dolor set amet</label>
                 <p class="error" id="checkbox-error-message">
                   <span>foutmelding:</span> Lorem ipsum dolor set amet
@@ -560,7 +676,14 @@
             <h4>Visueel voorbeeld:</h4>
             <form action="" method="post">
               <div>
-                <input type="radio" id="radio-example-error" name="standaard-radiobutton" value="value" class="error" aria-invalid="true">
+                <input
+                  type="radio"
+                  id="radio-example-error"
+                  name="standaard-radiobutton"
+                  value="value"
+                  class="error"
+                  aria-invalid="true"
+                />
                 <label for="radio-example-error">Lorem ipsum dolor set amet</label>
                 <p class="error" id="radio-example-error-message">
                   <span>foutmelding:</span> Lorem ipsum dolor set amet
@@ -586,7 +709,10 @@
 
           <section id="requirements">
             <h1>Bijbehorende bestanden</h1>
-            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
             <h2>Benodigd</h2>
             <ul>
               <li><code>notification/notification-base.scss</code></li>
@@ -595,11 +721,14 @@
 
             <h2>Optioneel</h2>
             <ul>
-              <li><code>notification/notification-base-variables.scss</code></li>
-              <li><code>notification/notification-error-variables.scss</code></li>
+              <li>
+                <code>notification/notification-base-variables.scss</code>
+              </li>
+              <li>
+                <code>notification/notification-error-variables.scss</code>
+              </li>
             </ul>
           </section>
-          
         </div>
       </article>
     </main>

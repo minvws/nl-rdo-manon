@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Kleurselector volledig gevuld</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -28,33 +28,57 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./forms.html">Formulieren</a></li>
-            <li><a href="./form-input-color-filled.html" aria-current="page">Kleurselector volledig gevuld</a></li>
+            <li>
+              <a href="./form-input-color-filled.html" aria-current="page"
+                >Kleurselector volledig gevuld</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
         <ul>
           <li><a href="./form-input-color-filled.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
           <li><a href="#requirements">Bijbehorende bestanden</a></li>
           <li><a href="#related">Gerelateerde pagina's</a></li>
         </ul>
-        </nav>
+      </nav>
       <article>
         <div>
-          <p class="warning" role="group" aria-label="waarschuwing"><span>Waarschuwing:</span> Dit element maakt gebruik van experimentele CSS componenten: <code>::-webkit-color-swatch-wrapper</code> en <code>::-webkit-color-swatch</code>. Aangeraden wordt om dit component in deze vorm daarom niet in productie te gebruiken aangezien het kan zijn dat het component er anders uit ziet in verschillende browsers of dat de styling bij toekomstige updates kapot gaat. Als dit geen probleem is binnen jouw project kun je er voor kiezen dit component te gebruiken.</p>
-          
+          <p class="warning" role="group" aria-label="waarschuwing">
+            <span>Waarschuwing:</span> Dit element maakt gebruik van experimentele CSS componenten:
+            <code>::-webkit-color-swatch-wrapper</code> en <code>::-webkit-color-swatch</code>.
+            Aangeraden wordt om dit component in deze vorm daarom niet in productie te gebruiken
+            aangezien het kan zijn dat het component er anders uit ziet in verschillende browsers of
+            dat de styling bij toekomstige updates kapot gaat. Als dit geen probleem is binnen jouw
+            project kun je er voor kiezen dit component te gebruiken.
+          </p>
+
           <section id="introduction">
             <h1>Kleurselector volledig gevuld</h1>
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
               <li>voeg <code>type="color"</code> toe aan het invoerveld.</li>
-              <li>Voeg basiskleurwaarde met een hexidecimalekleurcode aan binnen: <code>value</code>. Voorbeeld: <code>value="#ffffff"</code>. De ingevoerde kleur is de kleur waarin het selectievak getoont wordt binnen het formulier voordat de gebruiker een andere keuze maakt.</li>
+              <li>
+                Voeg basiskleurwaarde met een hexidecimalekleurcode aan binnen:
+                <code>value</code>. Voorbeeld: <code>value="#ffffff"</code>. De ingevoerde kleur is
+                de kleur waarin het selectievak getoont wordt binnen het formulier voordat de
+                gebruiker een andere keuze maakt.
+              </li>
             </ol>
           </section>
 
@@ -65,14 +89,14 @@
             <h3>direct</h3>
             <form action="" method="post">
               <label for="color-input-1">Selecteer de gewenste kleur</label>
-              <input id="color-input-1" name="color-input-1" type="color" value="#ffffff">
+              <input id="color-input-1" name="color-input-1" type="color" value="#ffffff" />
 
               <button type="submit">Verzend</button>
             </form>
 
             <h2>HTML-voorbeeld:</h2>
             <h3><code>section</code></h3>
-             <pre>
+            <pre>
               <code>
 &lt;form action="" method="post">
   &lt;label for="color-input-1">Selecteer de gewenste kleur&lt;/label>
@@ -86,7 +110,10 @@
 
           <section id="requirements">
             <h1>Bijbehorende bestanden</h1>
-            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
             <h2>Benodigd</h2>
             <ul>
               <li><code>form/form-base.scss</code></li>
@@ -117,7 +144,6 @@
             <h1>Gerelateerde pagina's</h1>
             <a href="./form-input-color-filled-test.html">Test- en voorbeelden-pagina</a>
           </section>
-
         </div>
       </article>
     </main>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Accentkleur op formulierelementen</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -28,14 +28,22 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./forms.html">Formulieren</a></li>
-            <li><a href="./form-accent-color.html" aria-current="page">Accentkleur op formulierelementen</a></li>
+            <li>
+              <a href="./form-accent-color.html" aria-current="page"
+                >Accentkleur op formulierelementen</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
         <ul>
           <li><a href="./form-accent-color.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
@@ -45,11 +53,18 @@
       </nav>
       <article>
         <div>
-          <p class="warning" role="group" aria-label="waarschuwing"><span>Waarschuwing:</span> Dit element maakt gebruik van een nieuw CSS component. Moderne browsers geven aan dit element te ondersteunen. Het kan zijn dat de weergave in oude browsers anders zal zijn. Voor meer informatie zie: <a href="https://caniuse.com/?search=accent-color" rel="external">caniuse.com</a>.</p>
-          
+          <p class="warning" role="group" aria-label="waarschuwing">
+            <span>Waarschuwing:</span> Dit element maakt gebruik van een nieuw CSS component.
+            Moderne browsers geven aan dit element te ondersteunen. Het kan zijn dat de weergave in
+            oude browsers anders zal zijn. Voor meer informatie zie:
+            <a href="https://caniuse.com/?search=accent-color" rel="external">caniuse.com</a>.
+          </p>
+
           <section id="introduction">
             <h1>Accentkleur op formulierelementen</h1>
-            <p>De mogelijkheid om een accentkleur in te stellen. Deze kleur zal getoont worden op:</p>
+            <p>
+              De mogelijkheid om een accentkleur in te stellen. Deze kleur zal getoont worden op:
+            </p>
             <ul>
               <li>Geselecteerde selectievakken</li>
               <li>Geselecteerde radioselectieknoppen</li>
@@ -59,14 +74,20 @@
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
-              <li>Stel de accentkleur voor het project in binnen <code>applicatie-base-variables</code> of specifiek voor fomulierelementen in binnen <code>form-accent-color-variables</code>.</li>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
+              <li>
+                Stel de accentkleur voor het project in binnen
+                <code>applicatie-base-variables</code> of specifiek voor fomulierelementen in binnen
+                <code>form-accent-color-variables</code>.
+              </li>
             </ol>
 
             <h2>Aandachtspunten:</h2>
-            <ul>
-
-            </ul>
+            <ul></ul>
           </section>
 
           <section id="examples">
@@ -76,13 +97,18 @@
             <h2>Visueel voorbeeld:</h2>
             <form action="" method="post">
               <div>
-                <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" checked>
+                <input
+                  type="checkbox"
+                  id="checkbox-example-base"
+                  name="standaard-checkbox"
+                  checked
+                />
                 <label for="checkbox-example-base">Lorem ipsum dolor set amet</label>
               </div>
             </form>
 
             <h2>HTML-voorbeeld:</h2>
-             <pre>
+            <pre>
               <code>
 &lt;form action="" method="post">
   &lt;div>
@@ -97,13 +123,13 @@
             <h2>Visueel voorbeeld:</h2>
             <form action="" method="post">
               <div>
-                <input type="radio" id="radio-example-base" name="standaard-radio" checked>
+                <input type="radio" id="radio-example-base" name="standaard-radio" checked />
                 <label for="radio-example-base">Lorem ipsum dolor set amet</label>
               </div>
             </form>
 
             <h2>HTML-voorbeeld:</h2>
-             <pre>
+            <pre>
               <code>
 &lt;form action="" method="post">
   &lt;div>
@@ -118,18 +144,24 @@
             <h2>Visueel voorbeeld:</h2>
             <form action="" method="post">
               <div class="horizontal-view">
-                <label for="progress-example" role="progressbar" aria-busy="true" aria-labelledby="progess-example">Progress:</label>
+                <label
+                  for="progress-example"
+                  role="progressbar"
+                  aria-busy="true"
+                  aria-labelledby="progess-example"
+                  >Progress:</label
+                >
                 <progress id="progress-example" value="42" max="100">42%</progress>
               </div>
             </form>
 
             <h2>HTML-voorbeeld:</h2>
-             <pre>
+            <pre>
               <code>
 &lt;form action="" method="post">
   &lt;div class="horizontal-view">
-    &lt;label for="progress-example" role="progressbar" aria-busy="true" aria-labelledby="progess-example">Progress:</label>
-    &lt;progress id="progress-example" value="42" max="100">42%</progress>
+    &lt;label for="progress-example" role="progressbar" aria-busy="true" aria-labelledby="progess-example">Progress:&lt;/label>
+    &lt;progress id="progress-example" value="42" max="100">42%&lt;/progress>
   &lt;/div>
 &lt;/form>
               </code>
@@ -140,12 +172,12 @@
             <form action="" method="post">
               <div class="horizontal-view">
                 <label for="range-example">Range</label>
-                <input type="range" id="range-example" name="range-example" min="0" max="100">
+                <input type="range" id="range-example" name="range-example" min="0" max="100" />
               </div>
             </form>
 
             <h2>HTML-voorbeeld:</h2>
-             <pre>
+            <pre>
               <code>
 &lt;form action="" method="post">
   &lt;div class="horizontal-view">
@@ -155,12 +187,14 @@
 &lt;/form>
               </code>
             </pre>
-
           </section>
 
           <section id="requirements">
             <h1>Bijbehorende bestanden</h1>
-            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
             <h2>Benodigd</h2>
             <ul>
               <li><code>form/form-accent-color.scss</code></li>
@@ -181,7 +215,6 @@
             <p>Bijbehorende elementen:</p>
             <ul>
               <li><a href="./form-base.html">form-base</a></li>
-
             </ul>
           </section>
 
@@ -189,7 +222,6 @@
             <h1>Gerelateerde pagina's</h1>
             <a href="./form-accent-color-test.html">Test- en voorbeelden-pagina</a>
           </section>
-
         </div>
       </article>
     </main>

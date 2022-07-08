@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Artikel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index">
     <header>
       <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-      <nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 50rem)" aria-label="Hoofdnavigatie">
+      <nav
+        data-open-label="Menu"
+        data-close-label="Sluit menu"
+        data-media="(min-width: 50rem)"
+        aria-label="Hoofdnavigatie"
+      >
         <div>
           <ul>
             <li><a href="../../index.html">Home</a></li>
@@ -33,8 +38,12 @@
       </nav>
     </header>
 
-   <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
         <ul>
           <li><a href="./article.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
@@ -47,23 +56,42 @@
         <div>
           <section id="introduction">
             <h1>Artikel</h1>
-            <p>Basisweergave-component. Layoutkeuzes die toepassing hebben op het <code>article</code>-element.</p>
-            <p class="explanation"><span>Tip:</span> Dit element erft stijlkeuzes van het algemene layout-bestand <code>layout-base-variables.scss</code> indien deze aanwezig is. Als de header, main en footer stijlkeuzes delen is het efficient om de keuzes in te stellen in dat bestand om herhaling en inconsitentie te voorkomen. Voor meer informatie zie: <a href="./layout-base.html">Basisweergave instellen</a>.</p>
+            <p>
+              Basisweergave-component. Layoutkeuzes die toepassing hebben op het
+              <code>article</code>-element.
+            </p>
+            <p class="explanation">
+              <span>Tip:</span> Dit element erft stijlkeuzes van het algemene layout-bestand
+              <code>layout-base-variables.scss</code> indien deze aanwezig is. Als de header, main
+              en footer stijlkeuzes delen is het efficient om de keuzes in te stellen in dat bestand
+              om herhaling en inconsitentie te voorkomen. Voor meer informatie zie:
+              <a href="./layout-base.html">Basisweergave instellen</a>.
+            </p>
 
             <h2>Benodigde stappen:</h2>
             <ul>
-              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
             </ul>
 
             <h2>Aandachtspunten</h2>
             <ul>
-              <li>Dit component geeft stijlkeuzes mee voor alle <code>article</code> elementen.</li>
+              <li>
+                Dit component geeft stijlkeuzes mee voor alle
+                <code>article</code> elementen.
+              </li>
             </ul>
           </section>
 
           <section id="requirement">
             <h1>Bijbehorende bestanden</h1>
-            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
 
             <h2>Benodigd</h2>
 
@@ -83,15 +111,21 @@
             <ul>
               <li><a href="../variables.html#align-items">align-items</a></li>
               <li><a href="../variables.html#gap">gap</a></li>
-              <li><a href="../variables.html#background-color">background-color</a></li>
+              <li>
+                <a href="../variables.html#background-color">background-color</a>
+              </li>
               <li><a href="../variables.html#text-color">text-color</a></li>
-              <li>Titel en subitels:
+              <li>
+                Titel en subitels:
                 <ul>
                   <li><a href="../variables.html#margin-top">margin-top</a></li>
-                  <li><a href="../variables.html#margin-bottom">margin-bottom</a></li>
+                  <li>
+                    <a href="../variables.html#margin-bottom">margin-bottom</a>
+                  </li>
                 </ul>
               </li>
-              <li>Content binnen onderliggende blokken:
+              <li>
+                Content binnen onderliggende blokken:
                 <ul>
                   <li><a href="../variables.html#gap">gap</a></li>
                 </ul>

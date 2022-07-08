@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Layout authentication</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index">
     <header>
       <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-      <nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 50rem)" aria-label="Hoofdnavigatie">
+      <nav
+        data-open-label="Menu"
+        data-close-label="Sluit menu"
+        data-media="(min-width: 50rem)"
+        aria-label="Hoofdnavigatie"
+      >
         <div>
           <ul>
             <li><a href="../../index.html">Home</a></li>
@@ -27,7 +32,9 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./layouts.html" aria-current="page">Layouts</a></li>
-            <li><a href="./layout-authentication.html" aria-current="page">Layout authentication</a></li>
+            <li>
+              <a href="./layout-authentication.html" aria-current="page">Layout authentication</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -38,16 +45,25 @@
         <div>
           <section id="introduction">
             <h1>Layout authenticatie</h1>
-            <p>Weergave voor authenticatie-elementen. Login formulieren hebben vaak belang bij een smallere weergave dan overige formulieren.</p>
+            <p>
+              Weergave voor authenticatie-elementen. Login formulieren hebben vaak belang bij een
+              smallere weergave dan overige formulieren.
+            </p>
           </section>
 
           <section id="requirements">
             <h1>Benodigde bestanden</h1>
-            <p>Om gebruik te maken van de styling dienen de onderstaande bestanden ingeladen te zijn via het <code>manon.scss</code> bestand.</p>
+            <p>
+              Om gebruik te maken van de styling dienen de onderstaande bestanden ingeladen te zijn
+              via het
+              <code>manon.scss</code> bestand.
+            </p>
             <ul>
               <li><code>layout/layout-base/layout-base.scss</code></li>
               <li><code>layout/layout-base-variables.scss</code></li>
-              <li><code>layout/layout-authentication/layout-authentication.scss</code></li>
+              <li>
+                <code>layout/layout-authentication/layout-authentication.scss</code>
+              </li>
               <li><code>layout/layout-authentication-variables.scss</code></li>
             </ul>
           </section>
@@ -57,7 +73,9 @@
             <ul>
               <li><a href="../variables.html#max-width">max-width</a></li>
               <li><a href="../variables.html#padding">padding</a></li>
-              <li><a href="../variables.html#background-color">background-color</a></li>
+              <li>
+                <a href="../variables.html#background-color">background-color</a>
+              </li>
               <li><a href="../variables.html#text-color">text-color</a></li>
               <li><a href="../variables.html#breakpoints">Breekpunten</a></li>
             </ul>
@@ -70,11 +88,11 @@
               <form class="background-color-offset">
                 <div>
                   <label for="example-1-name-1">User name</label>
-                  <input type="text" id="example-1-name-1">
+                  <input type="text" id="example-1-name-1" />
                 </div>
                 <div>
                   <label for="example-1-password-1">Password</label>
-                  <input type="password" id="example-1-password-1">
+                  <input type="password" id="example-1-password-1" />
                 </div>
                 <button type="submit">Lorem ipsum</button>
               </form>

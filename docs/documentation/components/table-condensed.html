@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Gecomprimeerde weergave</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -27,31 +27,47 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./table.html">Tabel</a></li>
-            <li><a href="./table-condensed.html" aria-current="page">Gecomprimeerde weergave</a></li>
+            <li>
+              <a href="./table-condensed.html" aria-current="page">Gecomprimeerde weergave</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
-          <ul>
-            <li><a href="./table-condensed.html">Introductie</a></li>
-            <li><a href="#examples">Voorbeelden</a></li>
-            <li><a href="#requirements">Benodigdheden</a></li>
-            <li><a href="#variables">Variabelen</a></li>
-            <li><a href="#related">Gerelateerde pagina's</a></li>
-          </ul>
-        </nav>
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./table-condensed.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Benodigdheden</a></li>
+          <li><a href="#variables">Variabelen</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
       <article>
         <div>
           <section id="introduction">
             <h1>Gecomprimeerde weergave</h1>
-            <p>Voor het tonen van grote datasets kan het voor de gebruiksvriendelijkheid fijner zijn om de data gecomprimeerd weer te geven zodat het makkelijker is voor de gebruiker om overzicht te houden.</p>
+            <p>
+              Voor het tonen van grote datasets kan het voor de gebruiksvriendelijkheid fijner zijn
+              om de data gecomprimeerd weer te geven zodat het makkelijker is voor de gebruiker om
+              overzicht te houden.
+            </p>
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></li>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
+                instellen van componenten. Zie:
+                <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+              </li>
               <li>Voeg de class <code>condensed</code> toe op de <code>table</code>.</li>
             </ol>
           </section>
@@ -59,10 +75,16 @@
           <section id="examples">
             <h1>Voorbeelden</h1>
             <h2>Visueel voorbeeld:</h2>
-            <p>In dit voorbeeld staat dat de <code>&lt;th></code> binnen de <code>&lt;thead></code> over de data in de kolommen gaan. En de <code>&lt;th></code> binnen de <code>&lt;tbody></code> over de data per rij gaan.</p>
+            <p>
+              In dit voorbeeld staat dat de <code>&lt;th></code> binnen de
+              <code>&lt;thead></code> over de data in de kolommen gaan. En de
+              <code>&lt;th></code> binnen de <code>&lt;tbody></code> over de data per rij gaan.
+            </p>
             <div class="horizontal-scroll">
               <table class="condensed">
-                <caption>Tabelvoorbeeld met gecomprimeerde weergave.</caption>
+                <caption>
+                  Tabelvoorbeeld met gecomprimeerde weergave.
+                </caption>
                 <thead>
                   <tr>
                     <th scope="col">Table header heading 1</th>
@@ -138,14 +160,15 @@
 
           <section id="variables">
             <h1>Instelbare variabelen</h1>
-            <p class="system-notification" role="group" aria-label="systeembericht">Dit component heeft momenteel geen instelbare variabelen</p>
+            <p class="system-notification" role="group" aria-label="systeembericht">
+              Dit component heeft momenteel geen instelbare variabelen
+            </p>
           </section>
 
           <section id="related">
             <h1>Gerelateerde pagina's</h1>
             <a href="./table-condensed-test.html">Test- en voorbeelden-pagina</a>
           </section>
-
         </div>
       </article>
     </main>

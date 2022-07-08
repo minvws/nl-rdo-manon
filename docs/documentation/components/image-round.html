@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Ronde afbeelding</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -26,14 +26,20 @@
         <div>
           <ul>
             <li><a href="../components.html">Componenten</a></li>
-            <li><a href="./image-round.html" aria-current="page">Ronde afbeelding</a></li>
+            <li>
+              <a href="./image-round.html" aria-current="page">Ronde afbeelding</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
         <ul>
           <li><a href="./image-round.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
@@ -48,8 +54,17 @@
 
             <h2>Benodigde stappen</h2>
             <ol>
-              <li>Voeg de class <code>image-round</code> toe aan het omliggende element waar de <code>img</code> zich in bevind of direct op het <code>img</code>-element.</li>
-              <li>Voeg de container voor de afbeelding toe. Voorbeeld: <code>&lt;div class="image-container"></code>. Het toevoegen van de class-naam is in dit geval optioneel en toegevoegd voor leesbaarheid van de html. Een omliggende <code>div</code> is ook voldoende. De container is nodig om de afbeelding variabel naar ratio te kunnen schalen.</li>
+              <li>
+                Voeg de class <code>image-round</code> toe aan het omliggende element waar de
+                <code>img</code> zich in bevind of direct op het <code>img</code>-element.
+              </li>
+              <li>
+                Voeg de container voor de afbeelding toe. Voorbeeld:
+                <code>&lt;div class="image-container"></code>. Het toevoegen van de class-naam is in
+                dit geval optioneel en toegevoegd voor leesbaarheid van de html. Een omliggende
+                <code>div</code> is ook voldoende. De container is nodig om de afbeelding variabel
+                naar ratio te kunnen schalen.
+              </li>
             </ol>
           </section>
 
@@ -57,10 +72,13 @@
             <h1>Voorbeelden:</h1>
 
             <h2>Enkel element</h2>
-            <p>De afbeelding vult tot de maximale beschikbare breedte en schaalt de hoogte in dezelfde ratio. Dit betekend dat de afbeelding altijd rond blijft.</p>
+            <p>
+              De afbeelding vult tot de maximale beschikbare breedte en schaalt de hoogte in
+              dezelfde ratio. Dit betekend dat de afbeelding altijd rond blijft.
+            </p>
             <div class="image-round">
               <div class="image-container">
-                <img src="../../static/img/strand.jpg" alt="Foto van een strand">
+                <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
               </div>
             </div>
 
@@ -79,10 +97,17 @@
             <div class="one-third-two-thirds">
               <div class="image-round">
                 <div class="image-container">
-                  <img src="../../static/img/strand.jpg" alt="Foto van een strand">
+                  <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
                 </div>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget mattis lorem. Vivamus dapibus viverra quam, sit amet posuere ligula tristique eget. Pellentesque venenatis neque et placerat placerat. Proin nec porttitor nisl. Pellentesque vitae dui id lectus facilisis vehicula. Curabitur id sapien ultrices, consectetur ipsum in, tincidunt erat. Praesent a rutrum est, rutrum lacinia justo. Donec ut odio nec elit tincidunt maximus. Maecenas quis gravida metus.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget mattis lorem.
+                Vivamus dapibus viverra quam, sit amet posuere ligula tristique eget. Pellentesque
+                venenatis neque et placerat placerat. Proin nec porttitor nisl. Pellentesque vitae
+                dui id lectus facilisis vehicula. Curabitur id sapien ultrices, consectetur ipsum
+                in, tincidunt erat. Praesent a rutrum est, rutrum lacinia justo. Donec ut odio nec
+                elit tincidunt maximus. Maecenas quis gravida metus.
+              </p>
             </div>
 
             <h2>Html-voorbeeld:</h2>
@@ -103,19 +128,19 @@
             <div class="column-3 images-round">
               <div>
                 <div class="image-container">
-                  <img src="../../static/img/strand.jpg" alt="Foto van een strand">
+                  <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
                 </div>
               </div>
 
-               <div>
+              <div>
                 <div class="image-container">
-                  <img src="../../static/img/strand.jpg" alt="Foto van een strand">
+                  <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
                 </div>
               </div>
 
-               <div>
+              <div>
                 <div class="image-container">
-                  <img src="../../static/img/strand.jpg" alt="Foto van een strand">
+                  <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
                 </div>
               </div>
             </div>
@@ -138,19 +163,19 @@
             <ul class="column-3 images-round">
               <li>
                 <div class="image-container">
-                  <img src="../../static/img/strand.jpg" alt="Foto van een strand">
+                  <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
                 </div>
               </li>
 
-               <li>
+              <li>
                 <div class="image-container">
-                  <img src="../../static/img/strand.jpg" alt="Foto van een strand">
+                  <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
                 </div>
               </li>
 
-               <li>
+              <li>
                 <div class="image-container">
-                  <img src="../../static/img/strand.jpg" alt="Foto van een strand">
+                  <img src="../../static/img/strand.jpg" alt="Foto van een strand" />
                 </div>
               </li>
             </ul>
@@ -179,12 +204,14 @@
 &lt;/ul>
               </code>
             </pre>
-
           </section>
 
           <section id="requirements">
             <h1>Bijbehorende bestanden</h1>
-            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
             <h2>Benodigd</h2>
             <ul>
               <li><code>image/image-round.scss</code></li>
@@ -199,12 +226,14 @@
           <section id="variables">
             <h1>Instelbare variabelen</h1>
             <ul>
-              <li><a href="../variables.html#object-position">object-position</a></li>
+              <li>
+                <a href="../variables.html#object-position">object-position</a>
+              </li>
               <li><a href="../variables.html#max-width">max-width</a></li>
             </ul>
           </section>
 
-         <section id="related">
+          <section id="related">
             <h1>Gerelateerde pagina's</h1>
             <a href="./image-round-test.html">Test- en voorbeelden-pagina</a>
           </section>

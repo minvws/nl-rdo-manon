@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Variabelen</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../static/css/manon.css" rel="stylesheet">
-    <link href="../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../static/css/manon.css" rel="stylesheet" />
+    <link href="../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../static/js/manon.js"></script>
   </head>
   <body id="index">
@@ -15,9 +15,9 @@
       <nav aria-label="Hoofdnavigatie">
         <div>
           <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="./components.html">Componenten</a></li>
-              <li><a href="./documentation.html">Documentatie</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./components.html">Componenten</a></li>
+            <li><a href="./documentation.html">Documentatie</a></li>
           </ul>
         </div>
       </nav>
@@ -26,7 +26,9 @@
         <div>
           <ul>
             <li><a href="./documentation.html">Documentatie</a></li>
-            <li><a href="./variables.html" aria-current="page">Variabelen</a></li>
+            <li>
+              <a href="./variables.html" aria-current="page">Variabelen</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -36,7 +38,10 @@
       <article>
         <div>
           <h1>Variabelen</h1>
-          <p>Manon maakt gebruik van css-variabelen voor het instellen van stijlkeuzes en Sass variabelen voor het instellen van breekpunten.</p>
+          <p>
+            Manon maakt gebruik van css-variabelen voor het instellen van stijlkeuzes en Sass
+            variabelen voor het instellen van breekpunten.
+          </p>
           <dl>
             <div>
               <dt>Voorbeeld css-variabele</dt>
@@ -50,29 +55,50 @@
 
           <h2>Opbouw variabelennamen</h2>
           <p>Variabel-namen zijn opgebouwd uit de onderstaande onderdelen</p>
-          <p>Voorbeeld <code>--navigation-base-list-item-hover-background-color</code>.</p>
+          <p>
+            Voorbeeld
+            <code>--navigation-base-list-item-hover-background-color</code>.
+          </p>
           <ol>
-            <li>Componentnaam. In dit geval: <code>--navigation-base</code>. Dit is het basiscomponent voor navigatie.</li>
+            <li>
+              Componentnaam. In dit geval: <code>--navigation-base</code>. Dit is het basiscomponent
+              voor navigatie.
+            </li>
             <li>Object binnen het component. In dit geval <code>-list</code>.</li>
-            <li>Subobject(en) binnen het component. In dit geval <code>-item</code>.</li>
+            <li>
+              Subobject(en) binnen het component. In dit geval
+              <code>-item</code>.
+            </li>
             <li>State. In dit geval <code>-hover</code>.</li>
-            <li>Attribuut, verwijzing naar het css-attribuut. In dit geval <code>-background-color</code>.</li>
+            <li>
+              Attribuut, verwijzing naar het css-attribuut. In dit geval
+              <code>-background-color</code>.
+            </li>
           </ol>
 
           <h2>Variabelen instellen</h2>
-          <p>Alle instelbare componenten verwijzen naar een variabelen-bestand. Binnen dit bestand staan alle variabelen die beschikbaar zijn voor het component.</p>
+          <p>
+            Alle instelbare componenten verwijzen naar een variabelen-bestand. Binnen dit bestand
+            staan alle variabelen die beschikbaar zijn voor het component.
+          </p>
 
           <h3>Waarde aanpassen of invullen</h3>
-          <p class="warning" role="group" aria-label="let op"><span>Let op:</span> Aan deze instructies wordt nog gewerkt.</p>
+          <p class="warning" role="group" aria-label="let op">
+            <span>Let op:</span> Aan deze instructies wordt nog gewerkt.
+          </p>
 
           <h3 id="breakpoints">Breekpunten instellen</h3>
-          <p class="warning" role="group" aria-label="let op"><span>Let op:</span> Aan deze instructies wordt nog gewerkt.</p>
+          <p class="warning" role="group" aria-label="let op">
+            <span>Let op:</span> Aan deze instructies wordt nog gewerkt.
+          </p>
 
           <h2>Overzicht</h2>
 
           <div class="horizontal-scroll" id="variable-overview">
             <table>
-              <caption>Overzicht van types variabelen:</caption>
+              <caption>
+                Overzicht van types variabelen:
+              </caption>
 
               <thead>
                 <tr>
@@ -88,13 +114,25 @@
                   <td>*-padding</td>
                   <td>padding</td>
                   <td>Geeft padding aan de binnenkant van het element.</td>
-                  <td>Numerieke waarde.
+                  <td>
+                    Numerieke waarde.
                     <ul>
-                      <li>Alle waardes die binnen het padding-element binnen css gebruikt kunnen worden.</li>
-                      <li>De waarde geldt voor <code id="padding-top">padding-top</code>, <code id="padding-right">padding-right</code>, <code id="padding-bottom">padding-bottom</code>, <code id="padding-left">padding-left</code> in deze volgorde.</li>
-                      <li>Enkele waarde: Bijvoorbeeld <code>1rem</code>.
+                      <li>
+                        Alle waardes die binnen het padding-element binnen css gebruikt kunnen
+                        worden.
+                      </li>
+                      <li>
+                        De waarde geldt voor
+                        <code id="padding-top">padding-top</code>,
+                        <code id="padding-right">padding-right</code>,
+                        <code id="padding-bottom">padding-bottom</code>,
+                        <code id="padding-left">padding-left</code> in deze volgorde.
+                      </li>
+                      <li>
+                        Enkele waarde: Bijvoorbeeld <code>1rem</code>.
                         <ul>
-                          <li>Dit vertaald zich in:
+                          <li>
+                            Dit vertaald zich in:
                             <ul>
                               <li><code>padding-top: 1rem;</code></li>
                               <li><code>padding-right: 1rem;</code></li>
@@ -104,9 +142,11 @@
                           </li>
                         </ul>
                       </li>
-                      <li>Twee waardes bijvoorbeeld: <code>0.5rem 1rem</code>
+                      <li>
+                        Twee waardes bijvoorbeeld: <code>0.5rem 1rem</code>
                         <ul>
-                          <li>Dit vertaald zich in:
+                          <li>
+                            Dit vertaald zich in:
                             <ul>
                               <li><code>padding-top: 0.5rem;</code></li>
                               <li><code>padding-right: 1rem;</code></li>
@@ -116,9 +156,11 @@
                           </li>
                         </ul>
                       </li>
-                      <li>Vier waardes bijvoorbeeld: <code>0 0 1rem 0</code>
+                      <li>
+                        Vier waardes bijvoorbeeld: <code>0 0 1rem 0</code>
                         <ul>
-                          <li>Dit vertaald zich in:
+                          <li>
+                            Dit vertaald zich in:
                             <ul>
                               <li><code>padding-top: 0;</code></li>
                               <li><code>padding-right: 0;</code></li>
@@ -136,9 +178,13 @@
                   <td>*-padding-top</td>
                   <td>padding-top</td>
                   <td>Geeft padding aan de bovenkant binnen het element.</td>
-                  <td>Numerieke waarde.
+                  <td>
+                    Numerieke waarde.
                     <ul>
-                      <li>Alle waardes die binnen het padding-element binnen css gebruikt kunnen worden.</li>
+                      <li>
+                        Alle waardes die binnen het padding-element binnen css gebruikt kunnen
+                        worden.
+                      </li>
                       <li>Bijvoorbeeld <code>1rem</code> of <code>5px</code>.</li>
                     </ul>
                   </td>
@@ -148,9 +194,12 @@
                   <td>*-width</td>
                   <td>width</td>
                   <td>Breedte van het element</td>
-                  <td>Numerieke waarde.
+                  <td>
+                    Numerieke waarde.
                     <ul>
-                      <li>Alle waardes die binnen het width-element binnen css gebruikt kunnen worden.</li>
+                      <li>
+                        Alle waardes die binnen het width-element binnen css gebruikt kunnen worden.
+                      </li>
                       <li>Bijvoorbeeld <code>1rem</code> of <code>100%</code>.</li>
                     </ul>
                   </td>
@@ -160,9 +209,13 @@
                   <td>*-max-width</td>
                   <td>max-width</td>
                   <td>Maximale breedte van het element</td>
-                  <td>Numerieke waarde.
+                  <td>
+                    Numerieke waarde.
                     <ul>
-                      <li>Alle waardes die binnen het max-width-element binnen css gebruikt kunnen worden.</li>
+                      <li>
+                        Alle waardes die binnen het max-width-element binnen css gebruikt kunnen
+                        worden.
+                      </li>
                       <li>Bijvoorbeeld <code>1rem</code> of <code>100%</code>.</li>
                     </ul>
                   </td>
@@ -172,9 +225,13 @@
                   <td>*-min-width</td>
                   <td>min-width</td>
                   <td>Minimale breedte van het element</td>
-                  <td>Numerieke waarde.
+                  <td>
+                    Numerieke waarde.
                     <ul>
-                      <li>Alle waardes die binnen het min-width-element binnen css gebruikt kunnen worden.</li>
+                      <li>
+                        Alle waardes die binnen het min-width-element binnen css gebruikt kunnen
+                        worden.
+                      </li>
                       <li>Bijvoorbeeld <code>1rem</code> of <code>100%</code>.</li>
                     </ul>
                   </td>
@@ -184,9 +241,13 @@
                   <td>*-height</td>
                   <td>height</td>
                   <td>Hoogte van het element</td>
-                  <td>Numerieke waarde.
+                  <td>
+                    Numerieke waarde.
                     <ul>
-                      <li>Alle waardes die binnen het height-element binnen css gebruikt kunnen worden.</li>
+                      <li>
+                        Alle waardes die binnen het height-element binnen css gebruikt kunnen
+                        worden.
+                      </li>
                       <li>Bijvoorbeeld <code>1rem</code> of <code>100%</code>.</li>
                     </ul>
                   </td>
@@ -196,9 +257,13 @@
                   <td>*-min-height</td>
                   <td>min-height</td>
                   <td>Minimale hoogte van het element</td>
-                  <td>Numerieke waarde.
+                  <td>
+                    Numerieke waarde.
                     <ul>
-                      <li>Alle waardes die binnen het min-height-element binnen css gebruikt kunnen worden.</li>
+                      <li>
+                        Alle waardes die binnen het min-height-element binnen css gebruikt kunnen
+                        worden.
+                      </li>
                       <li>Bijvoorbeeld <code>1rem</code> of <code>100%</code>.</li>
                     </ul>
                   </td>
@@ -208,9 +273,13 @@
                   <td>*-max-height</td>
                   <td>max-height</td>
                   <td>Maximale hoogte van het element</td>
-                  <td>Numerieke waarde.
+                  <td>
+                    Numerieke waarde.
                     <ul>
-                      <li>Alle waardes die binnen het max-height-element binnen css gebruikt kunnen worden.</li>
+                      <li>
+                        Alle waardes die binnen het max-height-element binnen css gebruikt kunnen
+                        worden.
+                      </li>
                       <li>Bijvoorbeeld <code>1rem</code> of <code>100%</code>.</li>
                     </ul>
                   </td>
@@ -220,13 +289,25 @@
                   <td>*-margin</td>
                   <td>margin</td>
                   <td>Witruimte rondom het object.</td>
-                  <td>Numerieke waarde.
+                  <td>
+                    Numerieke waarde.
                     <ul>
-                      <li>Alle waardes die binnen het margin-element binnen css gebruikt kunnen worden.</li>
-                      <li>De waarde geldt voor <code id="margin-top">margin-top</code>, <code id="margin-right">margin-right</code>, <code id="margin-bottom">margin-bottom</code>, <code id="margin-left">padding-left</code> in deze volgorde.</li>
-                      <li>Enkele waarde: Bijvoorbeeld <code>1rem</code>.
+                      <li>
+                        Alle waardes die binnen het margin-element binnen css gebruikt kunnen
+                        worden.
+                      </li>
+                      <li>
+                        De waarde geldt voor
+                        <code id="margin-top">margin-top</code>,
+                        <code id="margin-right">margin-right</code>,
+                        <code id="margin-bottom">margin-bottom</code>,
+                        <code id="margin-left">padding-left</code> in deze volgorde.
+                      </li>
+                      <li>
+                        Enkele waarde: Bijvoorbeeld <code>1rem</code>.
                         <ul>
-                          <li>Dit vertaald zich in:
+                          <li>
+                            Dit vertaald zich in:
                             <ul>
                               <li><code>margin-top: 1rem;</code></li>
                               <li><code>margin-right: 1rem;</code></li>
@@ -236,9 +317,11 @@
                           </li>
                         </ul>
                       </li>
-                      <li>Twee waardes bijvoorbeeld: <code>0.5rem 1rem</code>
+                      <li>
+                        Twee waardes bijvoorbeeld: <code>0.5rem 1rem</code>
                         <ul>
-                          <li>Dit vertaald zich in:
+                          <li>
+                            Dit vertaald zich in:
                             <ul>
                               <li><code>margin-top: 0.5rem;</code></li>
                               <li><code>margin-right: 1rem;</code></li>
@@ -248,9 +331,11 @@
                           </li>
                         </ul>
                       </li>
-                      <li>Vier waardes bijvoorbeeld: <code>0 0 1rem 0</code>
+                      <li>
+                        Vier waardes bijvoorbeeld: <code>0 0 1rem 0</code>
                         <ul>
-                          <li>Dit vertaald zich in:
+                          <li>
+                            Dit vertaald zich in:
                             <ul>
                               <li><code>margin-top: 0;</code></li>
                               <li><code>margin-right: 0;</code></li>
@@ -270,7 +355,10 @@
                   <td>Manier waarop de afbeelding of video binnen de container geplaatst wordt.</td>
                   <td>
                     <ul>
-                      <li>Alle waardes die binnen het object-fit-element binnen css gebruikt kunnen worden.</li>
+                      <li>
+                        Alle waardes die binnen het object-fit-element binnen css gebruikt kunnen
+                        worden.
+                      </li>
                       <li>Bijvoorbeeld <code>contain</code> of <code>cover</code>.</li>
                     </ul>
                   </td>
@@ -282,9 +370,13 @@
                   <td>De radius van de hoeken van het element</td>
                   <td>
                     <ul>
-                      <li>Numerieke waarde
+                      <li>
+                        Numerieke waarde
                         <ul>
-                          <li>Alle waardes die binnen het border-radius-element binnen css gebruikt kunnen worden.</li>
+                          <li>
+                            Alle waardes die binnen het border-radius-element binnen css gebruikt
+                            kunnen worden.
+                          </li>
                           <li>Bijvoorbeeld <code>0.25rem 0 0 0</code> of <code>50%</code>.</li>
                         </ul>
                       </li>
@@ -295,11 +387,19 @@
                 <tr id="object-position">
                   <td>*-object-position</td>
                   <td>object-position</td>
-                  <td>Manier waarop de afbeelding of video binnen de container uitgelijnd wordt.</td>
+                  <td>
+                    Manier waarop de afbeelding of video binnen de container uitgelijnd wordt.
+                  </td>
                   <td>
                     <ul>
-                      <li>Alle waardes die binnen het object-position-element binnen css gebruikt kunnen worden.</li>
-                      <li>Bijvoorbeeld <code>center</code>, <code>top left</code> of <code>50% 0</code>.</li>
+                      <li>
+                        Alle waardes die binnen het object-position-element binnen css gebruikt
+                        kunnen worden.
+                      </li>
+                      <li>
+                        Bijvoorbeeld <code>center</code>, <code>top left</code> of
+                        <code>50% 0</code>.
+                      </li>
                     </ul>
                   </td>
                 </tr>
@@ -308,9 +408,13 @@
                   <td>*-padding-bottom</td>
                   <td>padding-bottom</td>
                   <td>Geeft padding aan de onderkant binnen het element.</td>
-                  <td>Numerieke waarde.
+                  <td>
+                    Numerieke waarde.
                     <ul>
-                      <li>Alle waardes die binnen het padding-element binnen css gebruikt kunnen worden.</li>
+                      <li>
+                        Alle waardes die binnen het padding-element binnen css gebruikt kunnen
+                        worden.
+                      </li>
                       <li>Bijvoorbeeld <code>1rem</code> of <code>5px</code>.</li>
                     </ul>
                   </td>
@@ -320,9 +424,13 @@
                   <td>*-min-height</td>
                   <td>min-height</td>
                   <td>Minimale hoogte van het component</td>
-                  <td>Numerieke waarde.
+                  <td>
+                    Numerieke waarde.
                     <ul>
-                      <li>Alle waardes die binnen het min-height-element binnen css gebruikt kunnen worden.</li>
+                      <li>
+                        Alle waardes die binnen het min-height-element binnen css gebruikt kunnen
+                        worden.
+                      </li>
                       <li>Bijvoorbeeld <code>1rem</code> of <code>100px</code>.</li>
                     </ul>
                   </td>
@@ -346,34 +454,59 @@
                   <td>*-font-size</td>
                   <td>font-size</td>
                   <td>Tekstgrootte</td>
-                  <td>Alle waardes die binnen het font-size-element binnen css gebruikt kunnen worden. Bijvoorbeeld een numerieke waarde in <code>px</code>, <code>rem</code> of <code>em</code>.</td>
+                  <td>
+                    Alle waardes die binnen het font-size-element binnen css gebruikt kunnen worden.
+                    Bijvoorbeeld een numerieke waarde in
+                    <code>px</code>, <code>rem</code> of <code>em</code>.
+                  </td>
                 </tr>
 
                 <tr id="font-family">
                   <td>*-font-family</td>
                   <td>font-family</td>
                   <td>Lettertype</td>
-                  <td>Alle waardes die binnen het font-family-element binnen css gebruikt kunnen worden. Bijvoorbeeld <code>sans-serif</code>, <code>serif</code>, of een lettertype dat beschikbaar is binnen het project <code>"Manon icons"</code></a>. Voor het toevoegen van lettertypes aan het project zie: <a href="./add-fonts.html">Lettertype toevoegen</a>.</td>
+                  <td>
+                    Alle waardes die binnen het font-family-element binnen css gebruikt kunnen
+                    worden. Bijvoorbeeld
+                    <code>sans-serif</code>, <code>serif</code>, of een lettertype dat beschikbaar
+                    is binnen het project <code>"Manon icons"</code>. Voor het toevoegen van
+                    lettertypes aan het project zie:
+                    <a href="./add-fonts.html">Lettertype toevoegen</a>.
+                  </td>
                 </tr>
 
                 <tr id="line-height">
                   <td>*-line-height</td>
                   <td>line-height</td>
                   <td>Regelhoogte</td>
-                  <td>Alle waardes die binnen het line-height-element binnen css gebruikt kunnen worden. Bijvoorbeeld een numerieke waarde in <code>px</code>, <code>rem</code> of <code>em</code>. Line-height kan ook relatief weergeven worden. Geef dit aan met enkel een waarde. Bijvoorbeeld: <code>2</code>. Hierbij wordt de regelhoogte gezet op 2 keer de hoogte van het lettertype. Stel dat het lettertype 16 is wordt de regelhoogte 32.</td>
+                  <td>
+                    Alle waardes die binnen het line-height-element binnen css gebruikt kunnen
+                    worden. Bijvoorbeeld een numerieke waarde in
+                    <code>px</code>, <code>rem</code> of <code>em</code>. Line-height kan ook
+                    relatief weergeven worden. Geef dit aan met enkel een waarde. Bijvoorbeeld:
+                    <code>2</code>. Hierbij wordt de regelhoogte gezet op 2 keer de hoogte van het
+                    lettertype. Stel dat het lettertype 16 is wordt de regelhoogte 32.
+                  </td>
                 </tr>
 
                 <tr id="font-weight">
                   <td>*-font-weight</td>
                   <td>font-weight</td>
                   <td>Dikte van de tekst indien beschikbaar binnen het lettertype.</td>
-                  <td>Alle waardes die binnen het font-weight-element binnen css gebruikt kunnen worden. Bijvoorbeeld: <code>light</code>, <code>300</code>, <code>regular</code>, <code>400</code>, <code>bolder</code>, <code>700</code></td>
+                  <td>
+                    Alle waardes die binnen het font-weight-element binnen css gebruikt kunnen
+                    worden. Bijvoorbeeld: <code>light</code>, <code>300</code>,
+                    <code>regular</code>, <code>400</code>, <code>bolder</code>, <code>700</code>
+                  </td>
                 </tr>
 
                 <tr id="striping">
                   <td>*-striping</td>
                   <td>background-color</td>
-                  <td>Achtergrondkleur van elementen om en om. De achtergrondkleur wordt geplaatst op <code>nth-child(odd)</code></td>
+                  <td>
+                    Achtergrondkleur van elementen om en om. De achtergrondkleur wordt geplaatst op
+                    <code>nth-child(odd)</code>
+                  </td>
                   <td>Kleurwaarde. Bijvoorbeeld hex, css kleurcode, rgb, rgba.</td>
                 </tr>
 
@@ -383,10 +516,16 @@
                   <td>Breedte van de omlijning</td>
                   <td>
                     <ul>
-                      <li>Alle waardes die binnen het border-width-element binnen css gebruikt kunnen worden. Bijvoorbeeld een numerieke waarde in <code>px</code>, <code>rem</code> of <code>em</code>.</li>
-                      <li>Enkele waarde: Bijvoorbeeld <code>1px</code>.
+                      <li>
+                        Alle waardes die binnen het border-width-element binnen css gebruikt kunnen
+                        worden. Bijvoorbeeld een numerieke waarde in <code>px</code>,
+                        <code>rem</code> of <code>em</code>.
+                      </li>
+                      <li>
+                        Enkele waarde: Bijvoorbeeld <code>1px</code>.
                         <ul>
-                          <li>Dit vertaald zich in:
+                          <li>
+                            Dit vertaald zich in:
                             <ul>
                               <li><code>border-top: 1px;</code></li>
                               <li><code>border-right: 1px;</code></li>
@@ -396,9 +535,11 @@
                           </li>
                         </ul>
                       </li>
-                      <li>Twee waardes bijvoorbeeld: <code>0 1px</code>
+                      <li>
+                        Twee waardes bijvoorbeeld: <code>0 1px</code>
                         <ul>
-                          <li>Dit vertaald zich in:
+                          <li>
+                            Dit vertaald zich in:
                             <ul>
                               <li><code>border-top: 0;</code></li>
                               <li><code>border-right: 1px;</code></li>
@@ -408,9 +549,11 @@
                           </li>
                         </ul>
                       </li>
-                      <li>Vier waardes bijvoorbeeld: <code>0 0 1px 0</code>
+                      <li>
+                        Vier waardes bijvoorbeeld: <code>0 0 1px 0</code>
                         <ul>
-                          <li>Dit vertaald zich in:
+                          <li>
+                            Dit vertaald zich in:
                             <ul>
                               <li><code>border-top: 0;</code></li>
                               <li><code>border-right: 0;</code></li>
@@ -428,7 +571,11 @@
                   <td>*-border-style</td>
                   <td>border-style</td>
                   <td>Stijl van de omlijning</td>
-                  <td>Alle waardes die binnen het border-style-element binnen css gebruikt kunnen worden. Bijvoorbeeld: <code>solid</code>, <code>dashed</code> of <code>dotted</code>.</td>
+                  <td>
+                    Alle waardes die binnen het border-style-element binnen css gebruikt kunnen
+                    worden. Bijvoorbeeld: <code>solid</code>, <code>dashed</code> of
+                    <code>dotted</code>.
+                  </td>
                 </tr>
 
                 <tr id="border-color">
@@ -442,21 +589,33 @@
                   <td>*-align-items</td>
                   <td>align-items</td>
                   <td>Positionering van de content van het element.</td>
-                  <td>Alle waardes die binnen het align-items-element binnen css gebruikt kunnen worden. align-items is onderdeel van flexbox. Opties zijn o.a: <code>flex-end</code>, <code>flex-start</code>, <code>center</code>.</td>
+                  <td>
+                    Alle waardes die binnen het align-items-element binnen css gebruikt kunnen
+                    worden. align-items is onderdeel van flexbox. Opties zijn o.a:
+                    <code>flex-end</code>, <code>flex-start</code>, <code>center</code>.
+                  </td>
                 </tr>
 
                 <tr id="flex-direction">
                   <td>*-flex-direction</td>
                   <td>flex-direction</td>
                   <td>Positionering van de content van het element.</td>
-                  <td>Alle waardes die binnen het flex-direction-element binnen css gebruikt kunnen worden. flex-direction is onderdeel van flexbox. Opties zijn: <code>row</code>, <code>row-reverse</code>, <code>column</code> en <code>column-reverse</code>.</td>
+                  <td>
+                    Alle waardes die binnen het flex-direction-element binnen css gebruikt kunnen
+                    worden. flex-direction is onderdeel van flexbox. Opties zijn: <code>row</code>,
+                    <code>row-reverse</code>, <code>column</code> en <code>column-reverse</code>.
+                  </td>
                 </tr>
 
                 <tr id="justify-content">
                   <td>*-justify-content</td>
                   <td>justify-content</td>
                   <td>Positionering van de content van het element.</td>
-                  <td>Alle waardes die binnen het justify-content-element binnen css gebruikt kunnen worden. justify-content is onderdeel van flexbox. Opties zijn o.a: <code>flex-end</code>, <code>flex-start</code>, <code>center</code>.</td>
+                  <td>
+                    Alle waardes die binnen het justify-content-element binnen css gebruikt kunnen
+                    worden. justify-content is onderdeel van flexbox. Opties zijn o.a:
+                    <code>flex-end</code>, <code>flex-start</code>, <code>center</code>.
+                  </td>
                 </tr>
 
                 <tr id="gap">
@@ -465,11 +624,15 @@
                   <td>Afstand tussen de elementen die direct binnen het element liggen.</td>
                   <td>
                     <ul>
-                      <li>Alle waardes die binnen het gap-element binnen css gebruikt kunnen worden.</li>
+                      <li>
+                        Alle waardes die binnen het gap-element binnen css gebruikt kunnen worden.
+                      </li>
                       <li>De waarde geldt voor row-gap column-gap in deze volgorde.</li>
-                      <li>Enkele waarde: Bijvoorbeeld <code>1rem</code>.
+                      <li>
+                        Enkele waarde: Bijvoorbeeld <code>1rem</code>.
                         <ul>
-                          <li>Dit vertaald zich in:
+                          <li>
+                            Dit vertaald zich in:
                             <ul>
                               <li><code>row-gap: 1rem;</code></li>
                               <li><code>column-gap: 1rem;</code></li>
@@ -477,9 +640,11 @@
                           </li>
                         </ul>
                       </li>
-                      <li>Twee waardes bijvoorbeeld: <code>0.5rem 1rem</code>
+                      <li>
+                        Twee waardes bijvoorbeeld: <code>0.5rem 1rem</code>
                         <ul>
-                          <li>Dit vertaald zich in:
+                          <li>
+                            Dit vertaald zich in:
                             <ul>
                               <li><code>row-gap: 0.5rem;</code></li>
                               <li><code>column-gap: 1rem;</code></li>

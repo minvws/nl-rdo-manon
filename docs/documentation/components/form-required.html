@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Verplichte velden</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -28,14 +28,20 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./forms.html">Formulieren</a></li>
-            <li><a href="./form-required.html" aria-current="page">Verplichte velden</a></li>
+            <li>
+              <a href="./form-required.html" aria-current="page">Verplichte velden</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
         <ul>
           <li><a href="./form-required.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
@@ -50,15 +56,34 @@
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
-              <li>Geef op de <code>&lt;input></code> aan dat het invoerveld verplicht is met het <code>required</code> attribuut.</li>
-              <li>Voeg een <code>&lt;span></code> toe boven het inputveld. Het is belangrijk om het bericht boven het invoerveld te plaatsen zodat de volgorde ook klopt voor gebruikers die gebruik maken van hulpmiddelen zoals een screenreader.</li>
-              <li>Indien het formulier horizontaal uitgelijnd is: groeppeer de <code>&lt;input></code> en de <code>&lt;span></code> samen in een <code>&lt;div></code>. Voor meer informatie zie <a href="./form-horizontal-view.html">Horizontaal uitgelijnd formulier</a>.</li>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
+              <li>
+                Geef op de <code>&lt;input></code> aan dat het invoerveld verplicht is met het
+                <code>required</code> attribuut.
+              </li>
+              <li>
+                Voeg een <code>&lt;span></code> toe boven het inputveld. Het is belangrijk om het
+                bericht boven het invoerveld te plaatsen zodat de volgorde ook klopt voor gebruikers
+                die gebruik maken van hulpmiddelen zoals een screenreader.
+              </li>
+              <li>
+                Indien het formulier horizontaal uitgelijnd is: groeppeer de
+                <code>&lt;input></code> en de <code>&lt;span></code> samen in een
+                <code>&lt;div></code>. Voor meer informatie zie
+                <a href="./form-horizontal-view.html">Horizontaal uitgelijnd formulier</a>.
+              </li>
             </ol>
 
             <h2>Suggesties:</h2>
             <ol>
-              <li>Verplichte velden worden vaak gebruikt met icoonknoppen. Voor meer informatie zie: <a href="./button-icon.html">Icoonknoppen</a>.</li>
+              <li>
+                Verplichte velden worden vaak gebruikt met icoonknoppen. Voor meer informatie zie:
+                <a href="./button-icon.html">Icoonknoppen</a>.
+              </li>
             </ol>
           </section>
 
@@ -73,7 +98,13 @@
                 <label for="voorbeeld-input-required">Ipsum</label>
                 <div>
                   <span class="nota-bene">Dit veld is verplicht</span>
-                  <input id="voorbeeld-input-required" name="voorbeeld-input-required" placeholder="lorem ipsum" type="text" required>
+                  <input
+                    id="voorbeeld-input-required"
+                    name="voorbeeld-input-required"
+                    placeholder="lorem ipsum"
+                    type="text"
+                    required
+                  />
                 </div>
               </div>
               <button type="submit">Verzend</button>
@@ -98,7 +129,10 @@
 
           <section id="requirements">
             <h1>Bijbehorende bestanden</h1>
-            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
 
             <h2>Benodigd</h2>
             <ul>

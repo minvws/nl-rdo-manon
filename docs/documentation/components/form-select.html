@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Selectielijst</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../../static/css/manon.css" rel="stylesheet">
-    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet">
-    <link href="../../static/img/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
@@ -28,14 +28,20 @@
           <ul>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="./forms.html">Formulieren</a></li>
-            <li><a href="./form-select.html" aria-current="page">Selectielijst</a></li>
+            <li>
+              <a href="./form-select.html" aria-current="page">Selectielijst</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
         <ul>
           <li><a href="./form-select.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
@@ -45,19 +51,37 @@
       </nav>
       <article>
         <div>
-          <p class="warning" role="group" aria-label="waarschuwing"><span>Waarschuwing:</span> Het <code>select</code>-element wordt binnen browsers en bestuurssystemen verschillend weergegeven. Hierdoor kan aangepaste styling onverwachte resultaten opleveren. Test daarom altijd grondig of gebruik de standaard weergave zonder visuele aanpassingen.</p>
+          <p class="warning" role="group" aria-label="waarschuwing">
+            <span>Waarschuwing:</span> Het <code>select</code>-element wordt binnen browsers en
+            bestuurssystemen verschillend weergegeven. Hierdoor kan aangepaste styling onverwachte
+            resultaten opleveren. Test daarom altijd grondig of gebruik de standaard weergave zonder
+            visuele aanpassingen.
+          </p>
           <section id="introduction">
             <h1>Selectielijst - <code>select</code></h1>
 
             <h2>Benodigde stappen:</h2>
             <ol>
-              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
-              <li>Voeg de <code>&lt;range></code> toe. Zie onderstaand voorbeeld voor meer informatie.</li>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
+              <li>
+                Voeg de <code>&lt;range></code> toe. Zie onderstaand voorbeeld voor meer informatie.
+              </li>
             </ol>
 
             <h2>Aandachtspunten:</h2>
             <ul>
-              <li>Als een selectielijst een verplicht invoerveld is, voeg dan altijd als eerste optie een lege optie toe: <code>&lt;option value="">--Please choose an option--&lt;/option></code> Zie <a href="#form-dropdown-required">Verplichte selectielijst</a> voor meer informatie.</li>
+              <li>
+                Als een selectielijst een verplicht invoerveld is, voeg dan altijd als eerste optie
+                een lege optie toe:
+                <code>&lt;option value="">--Please choose an option--&lt;/option></code>
+                Zie
+                <a href="#form-dropdown-required">Verplichte selectielijst</a>
+                voor meer informatie.
+              </li>
             </ul>
           </section>
 
@@ -78,7 +102,7 @@
             </form>
 
             <h2>HTML-voorbeeld:</h2>
-             <pre>
+            <pre>
               <code>
 &lt;form action="" method="post">
   &lt;label for="select-base">Selectielijst&lt;/label>
@@ -109,7 +133,7 @@
             </form>
 
             <h2>HTML-voorbeeld:</h2>
-             <pre>
+            <pre>
               <code>
 &lt;form action="" method="post">
   &lt;div>
@@ -164,7 +188,10 @@
 
           <section id="requirements">
             <h1>Bijbehorende bestanden</h1>
-            <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
 
             <h2>Benodigd</h2>
             <ul>
@@ -192,7 +219,6 @@
             <h1>Gerelateerde pagina's</h1>
             <a href="./form-select-test.html">Test- en voorbeelden-pagina</a>
           </section>
-
         </div>
       </article>
     </main>
