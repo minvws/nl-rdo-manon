@@ -1,0 +1,39 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  continuous-integration:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js version
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: "^7"
+
+      - name: Install
+        run: |
+          pnpm install
+
+      - name: Build
+        run: |
+          pnpm run --if-present --recursive build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.3.4
+        if: github.ref == 'refs/heads/main'
+        with:
+          branch: gh-pages
+          folder: docs/
