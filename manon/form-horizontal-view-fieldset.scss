@@ -27,9 +27,13 @@ form.horizontal-view {
       @media (min-width: $breakpoint) {
         > * {
           width: var(--form-horizontal-view-input-max-width);
+
+          /* float objects to move inputs into place even when there is no label */
+          float: right; 
         }
 
         label {
+          float: left;
           width: var(--form-horizontal-view-label-max-width);
           padding-right: var(--form-horizontal-view-gap);
           margin-top: var(--form-horizontal-view-fieldset-label-margin-top);
@@ -42,6 +46,32 @@ form.horizontal-view {
         margin-top: var(
           --form-horizontal-view-fieldset-label-required-margin-top
         );
+      }
+    }
+
+    .checkbox,
+    .radio-button {
+      margin-left: var(--form-horizontal-view-label-max-width);
+      width: var(--form-horizontal-view-input-max-width);
+
+      input,
+      label {
+        float: none;
+      }
+
+      input {
+        width: var(--form-checkbox-width);
+      }
+
+      /* Help button */
+      > button {
+        top: 0;
+      }
+
+      /* Help text */
+      > p,
+      > div {
+        width: 100%;
       }
     }
   }
