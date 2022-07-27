@@ -220,73 +220,82 @@
                   </p>
                 </div>
               </div>
-
-              <fieldset>
-                <legend>Fieldset test</legend>
-                <div>
-                  <label for="form-example-base">Voorbeeld text input</label>
-                  <input
-                    id="form-example-base"
-                    name="form-example-base"
-                    placeholder="voorbeeld text input"
-                    type="text"
-                  />
-                </div>
-
-                <div class="required">
-                  <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
-                    >Help op simpel formulierveld</label
-                  >
-                  <div>
-                    <span class="nota-bene">Dit veld is verplicht</span>
-                    <div>
-                      <input
-                        id="example-input-help-required"
-                        name="voorbeeld-text-input"
-                        placeholder="lorem ipsum"
-                        type="text"
-                        aria-describedby="example-input-help-required-message"
-                        required
-                      />
-                      <p
-                        class="explanation"
-                        data-open-label="Toelichting bij het veld: Voorbeeld text input"
-                        data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                        id="example-input-help-required-message"
-                      >
-                        Lorem ipsum dolor set amet.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
-                    >Help op simpel formulierveld</label
-                  >
-                  <div>
-                    <input
-                      id="example-input-help-required"
-                      name="voorbeeld-text-input"
-                      placeholder="lorem ipsum"
-                      type="text"
-                      aria-describedby="example-input-help-required-message"
-                      required
-                    />
-                    <p
-                      class="explanation"
-                      data-open-label="Toelichting bij het veld: Voorbeeld text input"
-                      data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                      id="example-input-help-required-message"
-                    >
-                      Lorem ipsum dolor set amet.
-                    </p>
-                  </div>
-                </div>
-              </fieldset>
+              
               <button type="submit">Verzend</button>
             </form>
 
+            <h3>HTML-voorbeeld</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post" class="horizontal-view help">
+  &lt;div>
+    &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
+    &lt;input
+      id="form-example-base"
+      name="form-example-base"
+      placeholder="voorbeeld text input"
+      type="text"
+    />
+  &lt;/div>
+
+  &lt;div>
+    &lt;label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+      >Help op simpel formulierveld&lt;/label
+    >
+    &lt;div>
+      &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+      &lt;div>
+        &lt;input
+          id="example-input-help-required"
+          name="voorbeeld-text-input"
+          placeholder="lorem ipsum"
+          type="text"
+          aria-describedby="example-input-help-required-message"
+          required
+        />
+        &lt;p
+          class="explanation"
+          data-open-label="Toelichting bij het veld: Voorbeeld text input"
+          data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+          id="example-input-help-required-message"
+        >
+          Lorem ipsum dolor set amet.
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div>
+    &lt;label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+      >Help op simpel formulierveld&lt;/label
+    >
+    &lt;div>
+      &lt;input
+        id="example-input-help-required"
+        name="voorbeeld-text-input"
+        placeholder="lorem ipsum"
+        type="text"
+        aria-describedby="example-input-help-required-message"
+        required
+      />
+      &lt;p
+        class="explanation"
+        data-open-label="Toelichting bij het veld: Voorbeeld text input"
+        data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+        id="example-input-help-required-message"
+      >
+        Lorem ipsum dolor set amet.
+      &lt;/p>
+    &lt;/div>
+  &lt;/div>
+  
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h2>Fieldset voorbeeld</h2>
+            <h3>Visueel voorbeeld</h3>
             <form action="" method="post" class="help">
               <fieldset>
                 <legend>Fieldset test</legend>
@@ -350,33 +359,104 @@
                     </p>
                   </div>
                 </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox-example-with-help-within-fieldset" name="standaard-checkbox">
+                  <label for="checkbox-example-with-help-within-fieldset">Lorem ipsum dolor set amet</label>
+                  <p
+                      class="explanation"
+                      data-open-label="Toelichting bij het veld: Voorbeeld text input"
+                      data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+                      id="example-input-help-required-message"
+                  >
+                    Lorem ipsum dolor set amet.
+                  </p>
+                </div>
               </fieldset>
               <button type="submit">Verzend</button>
             </form>
 
+            <h3>HTML-voorbeeld</h3>
+
             <pre>
               <code>
 &lt;form action="" method="post" class="help">
-  &lt;label for="example-input-help-required">Help op simpel formulierveld&lt;/label>
-  &lt;div>
-    &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+  &lt;fieldset>
+    &lt;legend>Fieldset test&lt;/legend>
     &lt;div>
+      &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
       &lt;input
-        id="example-input-help-required"
-        name="voorbeeld-text-input"
+        id="form-example-base"
+        name="form-example-base"
         placeholder="voorbeeld text input"
         type="text"
-        aria-describedby="example-input-help-required-message"
-        required>
-      &lt;p
-        class="explanation"
-        data-open-label="Toelichting bij het veld: Voorbeeld text input"
-        data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-        id="example-input-help-required-message">
-      Lorem ipsum dolor set amet.&lt;/p>
+      />
     &lt;/div>
-  &lt;/div>
 
+    &lt;div class="required">
+      &lt;label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+        >Help op simpel formulierveld&lt;/label
+      >
+      &lt;div>
+        &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+        &lt;div>
+          &lt;input
+            id="example-input-help-required"
+            name="voorbeeld-text-input"
+            placeholder="lorem ipsum"
+            type="text"
+            aria-describedby="example-input-help-required-message"
+            required
+          />
+          &lt;p
+            class="explanation"
+            data-open-label="Toelichting bij het veld: Voorbeeld text input"
+            data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+            id="example-input-help-required-message"
+          >
+            Lorem ipsum dolor set amet.
+          &lt;/p>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div>
+      &lt;label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+        >Help op simpel formulierveld&lt;/label
+      >
+      &lt;div>
+        &lt;input
+          id="example-input-help-required"
+          name="voorbeeld-text-input"
+          placeholder="lorem ipsum"
+          type="text"
+          aria-describedby="example-input-help-required-message"
+          required
+        />
+        &lt;p
+          class="explanation"
+          data-open-label="Toelichting bij het veld: Voorbeeld text input"
+          data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+          id="example-input-help-required-message"
+        >
+          Lorem ipsum dolor set amet.
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-example-with-help-within-fieldset" name="standaard-checkbox">
+      &lt;label for="checkbox-example-with-help-within-fieldset">Lorem ipsum dolor set amet&lt;/label>
+      &lt;p
+          class="explanation"
+          data-open-label="Toelichting bij het veld: Voorbeeld text input"
+          data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+          id="example-input-help-required-message"
+      >
+        Lorem ipsum dolor set amet.
+      &lt;/p>
+    &lt;/div>
+  &lt;/fieldset>
   &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
               </code>
