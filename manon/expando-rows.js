@@ -78,10 +78,10 @@ function initExpandoButtons(table) {
  */
 function initExpandoButton(button) {
   var iconOpenClasses = (
-    button.dataset.iconOpenClass || "icon icon-chevron-light-bottom"
+    button.dataset.iconOpenClass || "expando-button-open"
   ).split(/\s+/);
   var iconCloseClasses = (
-    button.dataset.iconCloseClass || "icon icon-chevron-light-top"
+    button.dataset.iconCloseClass || "expando-button-close"
   ).split(/\s+/);
 
   var buttonRow = closest(button, "tr");
