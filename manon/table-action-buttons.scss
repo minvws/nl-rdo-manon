@@ -11,6 +11,7 @@
   min-height: unset;
 
   background: var(--table-action-buttons-button-background-color);
+  color: var(--table-action-buttons-button-text-color);
   justify-content: var(--table-action-buttons-button-justify-content);
 
   &:before {
