@@ -186,16 +186,17 @@
     button.classList.add.apply(button.classList, expanded ? iconCloseClasses : iconOpenClasses);
     button.addEventListener("click", function() {
       var expand = button.getAttribute("aria-expanded") === "false";
-      button.setAttribute("aria-expanded", expand ? "true" : "false");
       if (expand) {
         button.innerHTML = closeLabel;
-        button.classList.remove.apply(button.classList, expanded ? iconOpenClasses : iconCloseClasses);
-        button.classList.add.apply(button.classList, expanded ? iconCloseClasses : iconOpenClasses);
+        button.setAttribute("aria-expanded", "true");
+        button.classList.remove.apply(button.classList, iconOpenClasses);
+        button.classList.add.apply(button.classList, iconCloseClasses);
         row.removeAttribute("hidden");
       } else {
         button.innerHTML = openLabel;
-        button.classList.remove.apply(button.classList, expanded ? iconCloseClasses : iconOpenClasses);
-        button.classList.add.apply(button.classList, expanded ? iconOpenClasses : iconCloseClasses);
+        button.setAttribute("aria-expanded", "false");
+        button.classList.remove.apply(button.classList, iconCloseClasses);
+        button.classList.add.apply(button.classList, iconOpenClasses);
         row.setAttribute("hidden", "");
       }
     });
