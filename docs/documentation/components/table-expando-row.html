@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Uitklapbare tabel</title>
+    <title>Uitklapbare tabelrij</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../../static/css/manon.css" rel="stylesheet" />
     <link href="../../static/img/favicon.ico" rel="shortcut icon" />
@@ -45,11 +45,14 @@
           <li><a href="./table-expando-row.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
           <li><a href="#requirements">Benodigdheden</a></li>
-          <li><a href="#variables">Instelbare variabelen</a></li>
+          <li><a href="#variables">Beschikbare variabelen</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
         </ul>
       </nav>
       <article>
         <div>
+          <p class="warning">Let op: Deze tabelstructuur kan als complex ervaren worden door gebruikers. Zeker in combinatie met hulptechnologiën. Maak enkel gebruik van deze opzet als het de gebruiker helpt om complexe de data te begrijpen.
+          </p>
           <section id="introduction">
             <h1>Uitklapbare tabel</h1>
             <p>
@@ -75,7 +78,7 @@
                 <code>&lt;span></code> toe met een omschrijvende tekst voor screenreader gebruikers.
                 Bijvoorbeeld:
                 <code>&lt;span class="sr-only">Extra details over lorem ipsum&lt;/span>.</code>
-                Voeg aan deze span de class <code>sr-only</code> toe om de span te verbergen voor
+                Voeg aan deze span de class <code>sr-only</code> toe om de span visueel te verbergen voor
                 overige gebruikers.
               </li>
               <li>Vul de uitklapbare tabel met de gewenste data.</li>
@@ -113,16 +116,15 @@
                 in de <code>&lt;head></code> van het document. Voor meer informatie zie:
                 <a href="../add-js.html">JavaScript toevoegen</a>
               </li>
+              <li>Open/sluit-icoon toevoegen:
+                <ul>
+                  <li>Voeg de gewenste icoon-classes toe via </li>
+                </ul>
             </ol>
 
             <h2>Aandachtspunten</h2>
             <ul>
-              <li>
-                <strong
-                  >Let op: Deze tabelstructuur kan als complex ervaren worden. Zeker in combinatie
-                  met hulptechnologiën. Maak enkel gebruik van deze opzet als het de gebruiker helpt
-                  om complexe de data te begrijpen.</strong
-                >
+              <li><strong>Let op: Deze tabelstructuur kan als complex ervaren worden door gebruikers. Zeker in combinatie met hulptechnologiën. Maak enkel gebruik van deze opzet als het de gebruiker helpt om complexe de data te begrijpen.</strong>
               </li>
               <li>
                 Wanneer JavaScript niet beschikbaar is, worden alle uitklapbare tabelrijen
@@ -163,9 +165,14 @@
                     <td class="number">4</td>
                     <td>New</td>
                     <td>
-                      <button class="expando-button" data-close-label="Sluit details" data-open-label="Open details">
-                        Open details
-                      </button>
+                      <button 
+                        class="expando-button"
+                        data-close-label="Sluit details"
+                        data-open-label="Open details"
+                        data-icon-open-class="icon icon-descending"
+                        data-icon-close-class="icon icon-ascending">
+                          Open details
+                        </button>
                     </td>
                   </tr>
                   <tr class="expando-row">
@@ -181,7 +188,12 @@
                     <td class="number">12</td>
                     <td>New</td>
                     <td>
-                      <button class="expando-button" data-close-label="Sluit details" data-open-label="Open details">
+                      <button 
+                      class="expando-button"
+                      data-close-label="Sluit details"
+                      data-open-label="Open details"
+                      data-icon-open-class="icon icon-descending"
+                      data-icon-close-class="icon icon-ascending">
                         Open details
                       </button>
                     </td>
@@ -202,7 +214,9 @@
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
-    &lt;caption>Voorbeeld uitklapbare tabelrijen:&lt;/caption>
+    &lt;caption>
+      Voorbeeld uitklapbare tabelrijen:
+    &lt;/caption>
     &lt;thead>
       &lt;tr>
         &lt;th scope="col">Risicolevel&lt;/th>
@@ -218,13 +232,22 @@
         &lt;td>Lorem ipsum dolor set&lt;/td>
         &lt;td class="number">4&lt;/td>
         &lt;td>New&lt;/td>
-        &lt;td>&lt;button class="expando-button" data-close-label="Sluit details">Open details&lt;/button>&lt;/td>
+        &lt;td>
+          &lt;button 
+            class="expando-button"
+            data-close-label="Sluit details"
+            data-open-label="Open details"
+            data-icon-open-class="icon icon-descending"
+            data-icon-close-class="icon icon-ascending">
+              Open details
+            &lt;/button>
+        &lt;/td>
       &lt;/tr>
       &lt;tr class="expando-row">
         &lt;td colspan="5">
-            &lt;span class="sr-only">Lorem ipsum dolor set&lt;/span>
-            &lt;h1>Lorem ipsum details&lt;/h1>
-            &lt;p>De extra content.&lt;/p>
+          &lt;span class="sr-only">Lorem ipsum dolor set&lt;/span>
+          &lt;h1>Lorem ipsum details&lt;/h1>
+          &lt;p>De extra content.&lt;/p>
         &lt;/td>
       &lt;/tr>
       &lt;tr>
@@ -232,13 +255,22 @@
         &lt;td>Lorem ipsum dolor set&lt;/td>
         &lt;td class="number">12&lt;/td>
         &lt;td>New&lt;/td>
-        &lt;td>&lt;button class="expando-button" data-close-label="Sluit details">Open details&lt;/button>&lt;/td>
+        &lt;td>
+          &lt;button 
+          class="expando-button"
+          data-close-label="Sluit details"
+          data-open-label="Open details"
+          data-icon-open-class="icon icon-descending"
+          data-icon-close-class="icon icon-ascending">
+            Open details
+          &lt;/button>
+        &lt;/td>
       &lt;/tr>
       &lt;tr class="expando-row">
         &lt;td colspan="5">
-            &lt;span class="sr-only">Lorem ipsum dolor set&lt;/span>
-            &lt;h1>Lorem ipsum details&lt;/h1>
-            &lt;p>De extra content.&lt;/p>
+          &lt;span class="sr-only">Lorem ipsum dolor set&lt;/span>
+          &lt;h1>Lorem ipsum details&lt;/h1>
+          &lt;p>De extra content.&lt;/p>
         &lt;/td>
       &lt;/tr>
     &lt;/tbody>
@@ -253,43 +285,95 @@
             <ul>
               <li><code>table/table-expando-rows.scss</code></li>
               <li><code>table/table-expando-rows-variables.scss</code></li>
-              <li><code>ja/expando-rows.js</code></li>
+              <li><code>expando-rows.js</code></li>
             </ul>
           </section>
 
           <section id="variables">
-            <h1>Instelbare variabelen</h1>
-            <ul>
-              <li>
-                Openklapbare cel
-                <ul>
-                  <li>
-                    <a href="../variables.html#background-color">background-color</a>
-                  </li>
-                  <li><a href="../variables.html#padding">padding</a></li>
-                </ul>
-              </li>
-              <li>
-                Content titel
-                <ul>
-                  <li><a href="../variables.html#font-size">font-size</a></li>
-                  <li>
-                    <a href="../variables.html#font-weight">font-weight</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Content subtitel
-                <ul>
-                  <li><a href="../variables.html#font-size">font-size</a></li>
-                  <li>
-                    <a href="../variables.html#font-weight">font-weight</a>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="../variables.html#breakpoints">Breekpunt</a></li>
-            </ul>
+            <h1>Beschikbare variabelen</h1>
+
+            <h2>Openklapbare cel</h2>
+            <div class="horizontal-scroll nowrap">
+              <table>
+                <caption>Overzicht beschikbare variabelen:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Naam</th>
+                    <th scope="col">CSS-attribuut</th>
+                    <th scope="col">Standaard waarde</th>
+                    <th scope="col">Scope</th>
+                    <th scope="col">Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>--expando-rows-table-cell-background-color</td>
+                    <td><a href="../variables.html#background-color">background-color</a></td>
+                    <td>#e5e5e5</td>
+                    <td>Openklapbare cel - td</td>
+                    <td>CSS</td>
+                  </tr>
+                  <tr>
+                    <td>--expando-rows-table-cell-padding</td>
+                    <td><a href="../variables.html#padding">padding</a></td>
+                    <td>2rem 1rem</td>
+                    <td>Openklapbare cel - td</td>
+                    <td>CSS</td>
+                  </tr>
+                  <tr>
+                    <td>--expando-rows-table-cell-after-breakpoint-padding</td>
+                    <td><a href="../variables.html#padding">padding</a></td>
+                    <td>2rem 3rem</td>
+                    <td>Openklapbare cel - td</td>
+                    <td>CSS</td>
+                  </tr>
+
+                  <tr>
+                    <td>--expando-rows-table-content-title-font-size</td>
+                    <td><a href="../variables.html#font-size">font-size</a></td>
+                    <td>1.25rem</td>
+                    <td>Titel binnen de openklapbare cel - h1</td>
+                    <td>CSS</td>
+                  </tr>
+                  <tr>
+                    <td>--expando-rows-table-content-title-font-weight</td>
+                    <td><a href="../variables.html#font-weight">font-weight</a></td>
+                    <td>bolder</td>
+                    <td>Titel binnen de openklapbare cel - h1</td>
+                    <td>CSS</td>
+                  </tr>
+
+                  <tr>
+                    <td>--expando-rows-table-content-subtitle-font-size</td>
+                    <td><a href="../variables.html#font-size">font-size</a></td>
+                    <td>1rem</td>
+                    <td>Subitel binnen de openklapbare cel - h2</td>
+                    <td>CSS</td>
+                  </tr>
+                  <tr>
+                    <td>--expando-rows-table-content-subtitle-font-weight</td>
+                    <td><a href="../variables.html#font-weight">font-weight</a></td>
+                    <td>bolder</td>
+                    <td>Subitel binnen de openklapbare cel - h2</td>
+                    <td>CSS</td>
+                  </tr>
+                  <tr>
+                    <td>$breakpoint</td>
+                    <td><a href="../variables.html#breakpoints">Breekpunt</a></td>
+                    <td>24rem !default</td>
+                    <td>Subitel binnen de openklapbare cel - h2</td>
+                    <td>SASS</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
+
+          <section id="related">
+            <h1>Gerelateerde pagina's</h1>
+            <a href="./table-expando-row-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+
         </div>
       </article>
     </main>
