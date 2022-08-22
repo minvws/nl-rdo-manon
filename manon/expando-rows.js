@@ -107,12 +107,12 @@ function initExpandoButton(button) {
   var expanded = button.getAttribute("aria-expanded") === "true";
   var closeLabel, openLabel;
   if (expanded) {
-    closeLabel = button.innerText;
-    openLabel = button.dataset.openLabel || "Open details";
+    closeLabel = button.innerText.trim();
+    openLabel = button.dataset.openLabel.trim() || "Open details";
     button.setAttribute("aria-expanded", "true");
   } else {
-    closeLabel = button.dataset.closeLabel || "Sluit details";
-    openLabel = button.innerText;
+    closeLabel = button.dataset.closeLabel.trim() || "Sluit details";
+    openLabel = button.innerText.trim();
     button.setAttribute("aria-expanded", "false");
     row.setAttribute("hidden", "");
   }
@@ -127,15 +127,20 @@ function initExpandoButton(button) {
 
   button.addEventListener("click", function () {
     var expand = button.getAttribute("aria-expanded") === "false";
-
     if (expand) {
-      button.innerHTML = closeLabel;
+      button.innerText = closeLabel;
+      button.setAttribute("data-open-label", openLabel);
+      button.removeAttribute("data-close-label");
+
       button.setAttribute("aria-expanded", "true");
       button.classList.remove.apply(button.classList, iconOpenClasses);
       button.classList.add.apply(button.classList, iconCloseClasses);
       row.removeAttribute("hidden");
     } else {
-      button.innerHTML = openLabel;
+      button.innerText = openLabel;
+      button.setAttribute("data-close-label", closeLabel);
+      button.removeAttribute("data-open-label");
+
       button.setAttribute("aria-expanded", "false");
       button.classList.remove.apply(button.classList, iconCloseClasses);
       button.classList.add.apply(button.classList, iconOpenClasses);
