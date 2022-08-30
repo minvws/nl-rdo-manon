@@ -1,6 +1,9 @@
 node_modules/
 .idea/
 .vscode/
-/tmp/
-/*.log
+tmp/
+*.log
 .DS_Store
+docs/static/css
+docs/static/js
+*.tgz
