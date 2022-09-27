@@ -129,8 +129,6 @@ function initExpandoButton(button) {
     var expand = button.getAttribute("aria-expanded") === "false";
     if (expand) {
       button.innerText = closeLabel;
-      button.setAttribute("data-open-label", openLabel);
-      button.removeAttribute("data-close-label");
 
       button.setAttribute("aria-expanded", "true");
       button.classList.remove.apply(button.classList, iconOpenClasses);
@@ -138,8 +136,6 @@ function initExpandoButton(button) {
       row.removeAttribute("hidden");
     } else {
       button.innerText = openLabel;
-      button.setAttribute("data-close-label", closeLabel);
-      button.removeAttribute("data-open-label");
 
       button.setAttribute("aria-expanded", "false");
       button.classList.remove.apply(button.classList, iconCloseClasses);
