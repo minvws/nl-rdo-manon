@@ -157,8 +157,8 @@
     }
   }
   function initExpandoButton(button) {
-    var iconOpenClasses = (button.dataset.iconOpenClass || "expando-button-open").split(/\s+/);
-    var iconCloseClasses = (button.dataset.iconCloseClass || "expando-button-close").split(/\s+/);
+    var iconOpenClasses = button.dataset.iconOpenClass.split(/\s+/);
+    var iconCloseClasses = button.dataset.iconCloseClass.split(/\s+/);
     var buttonRow = closest(button, "tr");
     var row = buttonRow.nextElementSibling;
     if (!(row instanceof HTMLElement) || !(row.tagName === "TR") || !row.classList.contains("expando-row")) {
