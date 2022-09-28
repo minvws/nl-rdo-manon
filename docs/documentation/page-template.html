@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pagina-sjabloon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../static/css/manon.css" rel="stylesheet" />
+    <link href="../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./components.html">Componenten</a></li>
+            <li><a href="./documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="./documentation.html">Documentatie</a></li>
+            <li>
+              <a href="./add-js.html" aria-current="page">Pagina-sjabloon</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Document-navigatie">
+        <ul>
+            <li><a href="#">Pagina-sjabloon</a>
+              <ul>
+                <li><a href="#visual-example">Viseel voorbeeld</a></li>
+                <li><a href="#html-example">Html-voorbeeld</a></li>
+              </ul>
+            </li>
+        </ul>
+      </nav>
+
+      <div>
+        <article>
+            <div>
+              <h1>Pagina-sjabloon</h1>
+              <p>Lege voorbeeldpagina.</p>
+              
+              <h2>Aandachtspunten:</h2>
+              <ul>
+                <li>Dit voorbeeld maakt gebruik van de onderstaande elementen. Zie de detail-pagina's voor meer informatie:
+                  <ul>
+                    <li><a href="header-main-nav.html">Header-element met hoofdnavigatie</a></li>
+                    <li><a href="skip-to-content.html">"Ga direct naar inhoud"-knop</a></li>
+                    <li><a href="footer.html">Footer</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <h2>Voorbeelden</h2>
+              <h3 id="visual-example">Visueel voorbeeld:</h3>
+              </div>
+                <header>
+                  <!-- Add content here -->
+                </header>
+
+                <main id="main-content" tabindex="-1">
+                  <section>
+                    <div>
+                      <!-- Add content here -->
+                    </div>
+                  </section>
+                </main>
+ 
+                <footer>
+                  <!-- Add content here -->
+                </footer>
+              <div>
+
+              <h3 id="html-example">html-voorbeeld:</h3>
+
+              <pre>
+                <code>
+&lt;!DOCTYPE html>
+&lt;html lang="nl">
+  &lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;title>Lorem ipsum&lt;/title>
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+    &lt;link href="static/css/main.css" rel="stylesheet"> &lt;!-- Add your stylesheet of choice -->
+    &lt;link href="static/img/favicon.ico" rel="shortcut icon">
+  &lt;/head>
+
+  &lt;header>
+    &lt;!-- Add content here -->
+  &lt;/header>
+
+  &lt;main id="main-content" tabindex="-1">
+    &lt;section>
+      &lt;div>
+        &lt;!-- Add content here -->
+      &lt;/div>
+    &lt;/section>
+  &lt;/main>
+
+  &lt;footer>
+    &lt;!-- Add content here -->
+  &lt;/footer>
+&lt;/html>
+                </code>
+              </pre>
+
+            </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

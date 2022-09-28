@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Voorbeeldproject Manon en Sass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../static/css/manon.css" rel="stylesheet" />
+    <link href="../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./components.html">Componenten</a></li>
+            <li>
+              <a href="./documentation.html" aria-current="page">Documentatie</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li>
+              <a href="./documentation.html" aria-current="page">Documentatie</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <h1>Voorbeeldproject Manon en Sass</h1>
+          <p>Stappenplan om een volledig nieuw project op te zetten met Manon en Sass.</p>
+
+          <section id="table-of-contents">
+            <nav>
+              <ul>
+                
+              </ul>
+            </nav>
+          </section>
+
+          <section id="steps">
+            <h1>Manon gebruiken binnen een project.</h1>
+            <p>Benodigdheden om Manon succesvol te installeren binnen een nieuw project</p>
+            <ol>
+              <li>Project - Het project waarbinnen Manon gebruikt gaat worden</li>
+              <li>NPM - Manon wordt aangeboden als een npm-package</li>
+              <li>Sass - Manon maakt gebruik van Sass om de styling te builden.</li>
+            </ol>
+
+            <h2 id="new-project">Nieuw project opzetten</h2>
+            <p>Projecten kunnen op veel manieren opgezet worden. Dit voorbeeld bevat een zo simpel mogelijke opzet om snel van start te kunnen. Dit kan altijd uitgebreid of omgebouwd worden.</p>
+            <ol>
+              <li>Maak een nieuwe map aan voor het nieuwe project.</li>
+              <li>Voeg de benodigde basisbestanden toe aan het project. Bijvoorbeeld:
+                <ul>
+                  <li>Een html-pagina. index.html</li>
+                  <li>Een css-bestand voor het project. main.css</li>
+                  <li>Een plek voor lettertypes, afbeeldingen en de css. Bijvoorbeeld een map <code>static</code> met daarbinnen de volgende mappen: 
+                    <ul>
+                      <li><code>img</code></li>
+                      <li><code>fonts</code></li>
+                      <li><code>css</code></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Laad het css-bestand in via de html. Voeg de link naar het css bestand toe aan de <code>head</code> van alle html-bestanden. Voorbeeld: <code>&lt;link href="./static/css/main.css" rel="stylesheet" /></code></li>
+            </ol>
+
+
+
+            <h2>NPM installeren</h2>
+            <ol>
+              <li>Controleer of npm aanwezig is op de computer. <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#checking-your-version-of-npm-and-nodejs">https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#checking-your-version-of-npm-and-nodejs</a></li>
+              <li>Installeer npm als deze nog niet aanwezig is op de computer. Volg de installatiestappen van npm <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm" rel="external">https://docs.npmjs.com/downloading-and-installing-node-js-and-npm</a>.</li>
+              <li>Update npm indien nodig en gewenst. <a href="https://docs.npmjs.com/cli/v8/commands/npm-update" rel="external">https://docs.npmjs.com/cli/v8/commands/npm-update</a>.</li>
+            </ol>
+
+            <h2>Manon installeren</h2>
+            <p>Voeg de npm-package van Manon toe aan het project:</p>
+            <ol>
+              <li><strong>Locatie selecteren</strong> Navigeer in de terminal naar de map waar je Manon wilt toevoegen. Bijvoorbeeld de hoofdmap van het nieuwe project.</li>
+              <li><strong>Manon package installeren</strong> Installeer de package door het commando <code>npm install @minvws/manon</code> uit te voeren via de terminal in de geselecteerde map. De package op npm is te bekijken op: <a href="https://www.npmjs.com/package/@minvws/manon" rel="external">https://www.npmjs.com/package/@minvws/manon</a> Deze stap is succesvol als de volgende bestanden automatisch zijn aangemaakt: <code>package.json</code> en de map <code>node-modules</code> aan binnen het project. Als de bestanden niet zijn aangemaakt voeg dan de NPM opzet handmatig toe.</li>
+              <li><strong>NPM opzet handmatig uitvoeren</strong> <i>Deze stap overslaan als de bestanden package.json en node-modules als succesvol zijn aangemaakt.</i> Voer het commando <code>npm init</code> uit in de map waar Manon geinstaleerd dient te worden. Er volgt een reeks vragen. Deze vragen kunnen ingevuld of overgeslagen worden. Als het bestand package.json nu aangemaakt is binnen het project kan de installatie van het pakket nogmaals uitgevoerd worden. Herhaal de stap <i>Manon package installeren</i>.</li>
+              <li><strong>Manon is geinstalleerd</strong> In de map <code>node-modules/minvws/manon</code> staan alle beschikbare componenten.</li>
+            </ol>
+
+            <h2>Manon gebruiken binnen het project</h2>
+            <ol>
+              <li><strong>Styling gebruiken</strong> Kies de gewenste componenten uit en importeer de css.
+                <ol>
+                  <li>Voeg een css bestand toe waarmee de benodigde css ingeladen gaat worden toe aan het project. Bijvoorbeeld binnen de css-map zoals deze aangemaakt is in <a href="#new-project">Nieuw project opzetten</a>. Noem deze bijvoorbeeld <code>manon.css</code>.</li>
+                  <li>Haal dit nieuwe css-bestand binnen in het project. Bijvoorbeeld door aan <code>main.css</code> een verwijzing toe te voegen. Bijvoorbeeld: <code>@import "manon.css";</code>
+                  <li>Voeg de benodigde manon-componenten toe via het <code>manon.css</code>-bestand. Voorbeeld: <code>@use "@minvws/manon/application-base";</code></li>
+                  <li>Voeg een css-bestand toe voor de variabelen. Bijvoorbeeld: <code>variables.css</code></li>
+                  <li>Haal dit nieuwe css-bestand binnen in het project. Bijvoorbeeld door aan <code>main.css</code> een verwijzing toe te voegen. Bijvoorbeeld: <code>@import "variables.css";</code>
+                  <li>Binnen het variabelenbestand kunnen de manon-component-variabelen toegevoegd en ingevuld worden.</li>
+                  <li><strong>Let op:</strong> Manon maakt gebruik van Sass om de css te "builden". Voeg sass toe aan het project om de css-wijzigingen te zien.</li>
+                </ol>
+              </li>
+            </ol>
+
+            <h2>Sass toevoegen</h2>
+            <ol>
+              <li>Voeg Sass toe aan het project. Volg hiervoor bijvoorbeeld de installatiedocumentatie van Sass zelf. <a href="https://sass-lang.com/install" rel="external">https://sass-lang.com/install</a></li>
+            </ol>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
