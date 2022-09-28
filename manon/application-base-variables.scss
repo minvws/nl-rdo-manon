@@ -16,12 +16,12 @@
   --application-base-font-weight: 300;
   --application-base-text-align: left;
 
-  /* Border radius */
-  /* You can use this variable to keep the  			*/
-  /* border radius consistent within your application */
-  /* Enable border radius for requested elements   	*/
-  /* within their element variable files.				*/
-  /* --application-base-border-radius: ; */
+  /* Border radius                                      */
+  /* You can use this variable to keep the  			      */
+  /* border radius consistent within your application   */
+  /* Enable border radius for requested elements   	    */
+  /* within their element variable files.				        */
+  /* --application-base-border-radius: ;                */
 
   /* Accent color */
   --application-base-accent-color: #931171;
@@ -29,7 +29,19 @@
 
   /* Accent color hover */
   --application-base-accent-color-hover: hotpink;
-  --application-base-accent-color-hover-text-color: #fff;
+  --application-base-accent-color-hover-text-color: black;
+
+  /* Accent color active */
+  --application-base-accent-color-active: hotpink;
+  --application-base-accent-color-active-text-color: black;
+
+  /* Accent color focus */
+  --application-base-accent-color-focus: hotpink;
+  --application-base-accent-color-focus-text-color: black;
+
+  /* Accent color selected */
+  --application-base-accent-color-selected: hotpink;
+  --application-base-accent-color-selected-text-color: black;
 
   /* --application-line-height: ; */
 
