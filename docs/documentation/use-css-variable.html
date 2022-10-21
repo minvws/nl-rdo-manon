@@ -27,7 +27,7 @@
           <ul>
             <li><a href="./documentation.html">Documentatie</a></li>
             <li>
-              <a href="./add-js.html" aria-current="page">CSS-variabelen gebruiken</a>
+              <a href="./use-css-variable.html" aria-current="page">CSS-variabelen gebruiken</a>
             </li>
           </ul>
         </div>
@@ -39,12 +39,12 @@
         <div>
           <section id="introduction">
             <h1>CSS-variabelen gebruiken</h1>
-            <p>Vaak is het mogelijk om keuzes op een hoog niveau te definieren, of te wel op een element dat in de html-strucuur eerder aangemaakt is. Als je in de praktijk merkt dat je een bepaalde stijlkeuze vaker moet definieren is het altijd goed om te kijken of dit op een hoger gelegen element kan. Dit bespaard werk en verkleint de kans op fouten.</p>
+            <p>Vaak is het mogelijk om keuzes op een hoog niveau te definiëren, of te wel op een element dat in de html-strucuur eerder aangemaakt is. Als je in de praktijk merkt dat je een bepaalde stijlkeuze vaker moet definiëren is het altijd goed om te kijken of dit op een hoger gelegen element kan. Dit bespaard werk en verkleint de kans op fouten.</p>
 
             <h2>Variabele gebruiken binnen een andere variabele</h2>
-            <p>De knoppen binnen het "button-base"-bestand maken bijvoorbeeld gebruik van de accentkleur als deze binnen het "application-base"-bestand gedifieerd staat.</p>
+            <p>De knoppen binnen het "button-base"-bestand maken bijvoorbeeld gebruik van de accentkleur als deze binnen het "application-base"-bestand gedefinieerd staat.</p>
             <p>Het onderstaande voorbeeld geeft weer hoe een variabele als waarde van een andere variabele gezet kan worden.</p>
-            <h3>HTML-voorbeeld:</h3>
+            <h3>CSS-voorbeeld:</h3>
             <pre>
               <code>
 :root {
@@ -53,9 +53,9 @@
               </code>
             </pre>
 
-            <p>Als de variabele niet altijd beschikbaar is, is het goed om een "fallback" mee te geven. Dan kan de applicatie daarop terugvallen mocht de ingevulde variabele niet gevuld of toegevoegd zijn. Dit kan alles zijn wat een CSS-variabele normaal als waarde kan accepteren. Bijvoobeeld een kleurcode, voor gedefineerde kleur of een andere variabele. Voeg een comma toe tussen de twee mogelijke waardes binnen de variabele.</p>
+            <p>Als de variabele niet altijd beschikbaar is, is het goed om een "fallback" mee te geven. Dan kan de applicatie daarop terugvallen mocht de ingevulde variabele niet gevuld of toegevoegd zijn. Dit kan alles zijn wat een CSS-variabele normaal als waarde kan accepteren. Bijvoobeeld een kleurcode, voor gedefinieerde kleur of een andere variabele. Voeg een comma toe tussen de twee mogelijke waardes binnen de variabele.</p>
 
-            <h3>HTML-voorbeeld met kleurcode als fallback:</h3>
+            <h3>CSS-voorbeeld met kleurcode als fallback:</h3>
             <pre>
               <code>
 :root {
@@ -64,7 +64,7 @@
               </code>
             </pre>
 
-            <h3>HTML-voorbeeld met voor gedefineerde kleur als fallback:</h3>
+            <h3>CSS-voorbeeld met voor gedefinieerde kleur als fallback:</h3>
             <pre>
               <code>
 :root {
@@ -73,7 +73,7 @@
               </code>
             </pre>
 
-            <h3>HTML-voorbeeld met variabele als fallback:</h3>
+            <h3>CSS-voorbeeld met variabele als fallback:</h3>
             <pre>
               <code>
 :root {
