@@ -64,11 +64,11 @@
   /* --button-base-focus-border-color: ; */
   /* --button-base-focus-border-width: ; */
   --button-base-focus-background-color: 
-    var(--application-base-accent-color-focues,
+    var(--application-base-accent-color-focus,
     var(--application-base-accent-color)
   );
   --button-base-focus-text-color: 
-    var(--application-base-accent-color-focues-text-color,
+    var(--application-base-accent-color-focus-text-color,
     var(--application-base-accent-color-text-color)
   );
 
