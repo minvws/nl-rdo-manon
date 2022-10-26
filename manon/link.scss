@@ -20,7 +20,7 @@
 
 a {
   background-color: var(--link-background-color);
-  color: var(--link-text-color, inherit);
+  color: var(--link-text-color, initial);
   cursor: pointer;
   white-space: break-spaces;
   overflow-wrap: break-word;
