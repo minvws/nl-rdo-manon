@@ -2,8 +2,16 @@
 /*---------- components/finn-small-variables.scss -----------*/
 /*-----------------------------------------------------------*/
 :root {
+  /* Colors */
+  --branding-color-1: LightSalmon;
+  --branding-color-2: SeaShell;
+
+  /* Branding color combinations. 
+  e.g if a branding color is used as a background-color. What should the text
+  and link colors be.
+
   /* Branding color 1 */
-  --branding-color-1-background-color: LightSalmon;
+  --branding-color-1-background-color: var(--branding-color-1);
   --branding-color-1-text-color: black;
 
   --branding-color-1-link-text-color: var(--branding-color-1-text-color);
@@ -13,7 +21,7 @@
   --branding-color-1-link-visited-hover-text-color: var(--branding-color-1-text-color);
 
   /* Branding color 2 */
-  --branding-color-2-background-color: SeaShell;
+  --branding-color-2-background-color: var(--branding-color-2);
   --branding-color-2-text-color: black;
 
   --branding-color-2-link-text-color: var(--branding-color-2-text-color);
