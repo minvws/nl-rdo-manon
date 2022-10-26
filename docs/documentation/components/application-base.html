@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Huisstijl toevoegen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li>
+              <a href="./application-base.html" aria-current="page">Huisstijl toevoegen</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./tiles.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Huisstijl toevoegen</h1>
+            <p>Een eigen visuele weergave voor de applicatie die aansluit bij de huisstijl. CSS maakt gebruik van een "cascading"-principe. Dit betekend dat je op een plek stijlkeuzes vast kunt leggen en dat alle onderliggende elementen deze stijlkeuzes kunnen overerven.</p>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg de benodigde bestanden toe aan het project.
+                <ul>
+                  <li>Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+                  <li>Vul de variabelen met de gewenste stijlkeuzes. Voor meer informatie zie het overzicht met <a href="#variables">instelbare variabelen</a>.</li>
+                  <li>Waar mogelijk zullen elementen gebruik maken van deze variabelen. Gebruik de variabelen of de classes om de kleuren toe te passen waar nodig.</li>
+                </ul>
+              </li>
+            </ol>
+
+            <p class="explanation"><span>Tip:</span> Vaak is het mogelijk om keuzes op een hoog niveau te definiëren, of te wel op een element dat in de html-strucuur eerder aangemaakt is. Als je in de praktijk merkt dat je een bepaalde stijlkeuze vaker moet definiëren is het altijd goed om te kijken of dit op een hoger gelegen element kan. Dit bespaart werk en verkleint de kans op fouten.</p>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden</h1>
+
+            <h2>Variabele gebruiken binnen een andere variabele</h2>
+            <p>De knoppen binnen het "button-base"-bestand maken gebruik van de accentkleur als deze binnen het "application-base"-bestand gedefinieerd staat. Voor meer informatie zie <a href="../use-css-variable.html">CSS-variabelen gebruiken</a></p>
+            <h3>CSS-voorbeeld:</h3>
+            <pre>
+              <code>
+:root {
+  --button-base-background-color: var(--application-base-accent-color);
+}
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Bijbehorende bestanden</h1>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten, zie
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+            <h2>Benodigd</h2>
+            <ul>
+              <li><code>application-base.scss</code></li>
+            </ul>
+
+            <h2>Optioneel</h2>
+            <ul>
+              <li><code>application-base-variables.scss</code></li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+/*---------------------------------------------------------------*/
+/*----------------- components/spot-medium.scss -----------------*/
+/*---------------------------------------------------------------*/
+@use "spot-medium-variables";
+
+%branding-color-1,
+.branding-color-1 {
+	background-color: var(--branding-color-1-background-color);
+	color: var(--branding-color-1-text-color);
+}
+
+%branding-color-2,
+.branding-color-2 {
+	background-color: var(--branding-color-2-background-color);
+	color: var(--branding-color-2-text-color);
+}
+
+%branding-color-accent-1,
+.branding-color-accent-1 {
+	background-color: var(--branding-color-accent-1-background-color);
+	color: var(--branding-color-accent-1-text-color);
+}
+
+%branding-color-accent-2,
+.branding-color-accent-2 {
+	background-color: var(--branding-color-accent-2-background-color);
+	color: var(--branding-color-accent-2-text-color);
+}
+
+%branding-color-accent-3,
+.branding-color-accent-3 {
+	background-color: var(--branding-color-accent-3-background-color);
+	color: var(--branding-color-accent-3-text-color);
+}

@@ -2,6 +2,16 @@
 /*------------------------- manon.scss --------------------------*/
 /*---------------------------------------------------------------*/
 /* Color sets */
+/* Spot */
+@use "@minvws/manon/spot-mini";
+@use "@minvws/manon/spot-small";
+@use "@minvws/manon/spot-medium";
+@use "@minvws/manon/spot-large";
+
+/* Finn */
+@use "@minvws/manon/finn-small";
+@use "@minvws/manon/finn-medium";
+@use "@minvws/manon/finn-large";
 
 /* Fonts */
 @use "fonts";
@@ -82,6 +92,7 @@
 @use "@minvws/manon/footer-documentation-integration";
 
 /* Components */
+@use "@minvws/manon/branding";
 @use "@minvws/manon/breadcrumb-bar-content-block";
 @use "@minvws/manon/navigation-documentation-integration";
 @use "@minvws/manon/navigation-collapsible-menu";
