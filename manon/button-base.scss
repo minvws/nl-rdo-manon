@@ -109,27 +109,6 @@ input[type="reset"] {
     );
   }
 
-  &.active {
-    outline-style: var(--button-base-active-outline-style);
-    outline-color: var(--button-base-active-outline-color);
-    outline-width: var(--button-base-active-outline-width);
-    outline-offset: var(--button-base-active-outline-offset);
-    border-style: var(--button-base-active-border-style);
-    border-color: var(
-      --button-base-active-border-color,
-      var(--application-base-accent-color-accent)
-    );
-    border-width: var(--button-base-active-border-width);
-    background-color: var(
-      --button-base-active-background-color,
-      var(--application-base-accent-color-accent)
-    );
-    color: var(
-      --button-base-active-text-color,
-      var(--application-text-color-accent)
-    );
-  }
-
   > img {
     max-width: var(
       --button-base-image-max-width
