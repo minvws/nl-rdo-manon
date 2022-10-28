@@ -12,6 +12,8 @@ body > footer,
   width: 100%;
   background-color: var(--footer-background-color);
   color: var(--footer-text-color);
+  padding: var(--footer-padding);
+  box-sizing: border-box;
 
   a,
   a:visited {

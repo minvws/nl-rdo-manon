@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Footer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./footer-base.html" aria-current="page">Footer</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="#introduction">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Footer</h1>
+            <p>De footer wordt vaak gebruikt als extra navigatiepunt en om aan te geven aan de gebruiker dat het einde van de pagina bereikt is.</p>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
+            </ol>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden:</h1>
+
+            <h2>Visueel voorbeeld:</h2>
+            <footer>
+              <nav aria-labelledby="footer-nav-1-heading">
+                <h1 id="footer-nav-1-heading">Lorem ipsum</h1>
+                <ul>
+                  <li><a href="./footer-base.html">Lorem</a></li>
+                  <li><a href="./footer-base.html">Ipsum</a></li>
+                  <li><a href="./footer-base.html">Dolor set amet</a></li>
+                </ul>
+              </nav>
+            </footer>
+
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;footer>
+  &lt;nav aria-labelledby="footer-nav-1-heading">
+    &lt;h1 id="footer-nav-1-heading">Lorem ipsum&lt;/h1>
+    &lt;ul>
+      &lt;li>&lt;a href="./footer-base.html">Lorem&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="./footer-base.html">Ipsum&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="./footer-base.html">Dolor set amet&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/nav>
+&lt;/footer>
+              </code>
+            </pre>
+
+            <h2>Structuur-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;footer>
+  &lt;!-- Content -->
+&lt;/footer>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Bijbehorende bestanden</h1>
+            <p>Voeg de (s)css-bestanden toe aan het project of importeer de bestanden.</p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+            <h2>Benodigd</h2>
+            <ul>
+              <li><code>footer-base.scss</code></li>
+            </ul>
+
+            <h2>Optioneel</h2>
+            <ul>
+              <li><code>footer-base-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <div class="horizontal-scroll">
+              <table class="nowrap">
+                <caption>Instelbare css-variabelen:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Naam</th>
+                    <th scope="col">Breekpunt</th>
+                    <th scope="col">Variabele</th>
+                    <th scope="col">CSS-attribuut</th>
+                    <th scope="col">Class</th>
+                    <th scope="col">Manon ingestelde waarde</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>min-height</td>
+                    <td>-</td>
+                    <td>--footer-min-height</td>
+                    <td><a href="../variables.html#min-height">min-height</a></td>
+                    <td>-</td>
+                    <td>10rem</td>
+                  </tr>
+
+                  <tr>
+                    <td>justify-content</td>
+                    <td>-</td>
+                    <td>--footer-justify-content</td>
+                    <td><a href="../variables.html#justify-content">justify-content</a></td>
+                    <td>-</td>
+                    <td>flex-end</td>
+                  </tr>
+
+                  <tr>
+                    <td>background-color</td>
+                    <td>-</td>
+                    <td>--footer-background-color</td>
+                    <td><a href="../variables.html#background-color">background-color</a></td>
+                    <td>-</td>
+                    <td>var(--application-base-tint-1-background-color)</td>
+                  </tr>
+
+                  <tr>
+                    <td>text-color</td>
+                    <td>-</td>
+                    <td>--footer-text-color</td>
+                    <td><a href="../variables.html#text-color">text-color</a></td>
+                    <td>-</td>
+                    <td>var(--application-base-tint-1-text-color)</td>
+                  </tr>
+
+                  <tr>
+                    <td>padding</td>
+                    <td>-</td>
+                    <td>--footer-padding</td>
+                    <td><a href="../variables.html#padding">padding</a></td>
+                    <td>-</td>
+                    <td>var(--application-base-padding)</td>
+                  </tr>
+                  
+
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
