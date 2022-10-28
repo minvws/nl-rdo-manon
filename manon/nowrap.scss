@@ -4,6 +4,10 @@
 %nowrap,
 .nowrap {
   white-space: nowrap;
+
+  a {
+    white-space: nowrap;
+  }
 }
 
 table {

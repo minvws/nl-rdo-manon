@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Verbergen - <dfn>hidden</dfn></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li>
+              <a href="./layout-centered.html" aria-current="page">Verbergen - <dfn>hidden</dfn></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./layout-centered.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#variables">Instelbare variabelen</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Verbergen - <dfn>hidden</dfn></h1>
+            <p>Object verbergen. Door middel van een <code>display:none</code> wordt het object verborgen.</p>
+            <p><strong>Let op:</strong> Screenreaders slaan over het algemeen ook objecten met <code>"display: none"</code> over voor hun gebruikers. <!-- Als dit niet de bedoeling is en de content wel beschikbaar dient te zijn voor screenreader gebruikers is de helper class <a href="">visually-hidden</a> waarschijnlijk de betere optie.--> </p>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
+              <li>
+                Voeg de class <code>hidden</code> aan het gewenste element.
+              </li>
+            </ol>
+          </section>
+
+          <section id="example">
+            <h1>Voorbeeld</h1>
+            <p>Onderstaand voorbeeld bevat twee paragrafen waarvan er een verborgen wordt.</p>
+
+            <div>
+              <p class="hidden">Voorbeeld paragraaf 1.</p>
+              <p>Voorbeeld paragraaf 2.</p>
+            </div>
+
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;div>
+  &lt;p class="hidden">Voorbeeld paragraaf 1.&lt;/p>
+  &lt;p>Voorbeeld paragraaf 2.&lt;/p>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h1>Bijbehorende bestanden</h1>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+            <h2>Benodigd</h2>
+            <ul>
+              <li><code>hidden.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <p>Dit element heeft zelf geen instelbare variabelen.</p>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

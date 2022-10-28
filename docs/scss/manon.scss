@@ -1,7 +1,17 @@
 /*---------------------------------------------------------------*/
-/*------------------------- shared.scss -------------------------*/
+/*------------------------- manon.scss --------------------------*/
 /*---------------------------------------------------------------*/
 /* Color sets */
+/* Spot */
+@use "@minvws/manon/spot-mini";
+@use "@minvws/manon/spot-small";
+@use "@minvws/manon/spot-medium";
+@use "@minvws/manon/spot-large";
+
+/* Finn */
+@use "@minvws/manon/finn-small";
+@use "@minvws/manon/finn-medium";
+@use "@minvws/manon/finn-large";
 
 /* Fonts */
 @use "fonts";
@@ -28,6 +38,7 @@
 @use "@minvws/manon/de-emphasized";
 @use "@minvws/manon/link";
 @use "@minvws/manon/nota-bene";
+@use "@minvws/manon/max-line-length";
 
 /* Helpers */
 @use "@minvws/manon/horizontal-view";
@@ -35,6 +46,7 @@
 @use "@minvws/manon/centered-view";
 @use "@minvws/manon/focus-only";
 @use "@minvws/manon/nowrap";
+@use "@minvws/manon/hidden";
 
 /* Layout */
 @use "@minvws/manon/layout-base-variables";
@@ -80,6 +92,7 @@
 @use "@minvws/manon/footer-documentation-integration";
 
 /* Components */
+@use "@minvws/manon/branding";
 @use "@minvws/manon/breadcrumb-bar-content-block";
 @use "@minvws/manon/navigation-documentation-integration";
 @use "@minvws/manon/navigation-collapsible-menu";
@@ -169,6 +182,3 @@
 
 /* Login meta */
 @use "@minvws/manon/login-meta";
-
-/* Theme styling */
-@use "theme";
