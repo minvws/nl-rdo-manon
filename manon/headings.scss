@@ -19,6 +19,7 @@ h1 > a {
   color: var(--headings-h1-text-color, inherit);
   font-weight: var(--headings-h1-font-weight, inherit);
   line-height: var(--headings-h1-line-height, inherit);
+  margin: var(--headings-h1-margin, inherit);
 }
 
 h2,
@@ -27,6 +28,7 @@ h2 > a {
   color: var(--headings-h2-text-color, inherit);
   font-weight: var(--headings-h2-font-weight, inherit);
   line-height: var(--headings-h2-line-height, inherit);
+  margin: var(--headings-h2-margin, inherit);
 }
 
 h3,
@@ -35,6 +37,7 @@ h3 > a {
   color: var(--headings-h3-text-color, inherit);
   font-weight: var(--headings-h3-font-weight, inherit);
   line-height: var(--headings-h3-line-height, inherit);
+  margin: var(--headings-h3-margin, inherit);
 }
 
 h4,
@@ -43,6 +46,7 @@ h4 > a {
   color: var(--headings-h4-text-color, inherit);
   font-weight: var(--headings-h4-font-weight, inherit);
   line-height: var(--headings-h4-line-height, inherit);
+  margin: var(--headings-h4-margin, inherit);
 }
 
 h5,
@@ -51,6 +55,7 @@ h5 > a {
   color: var(--headings-h5-text-color);
   font-weight: var(--headings-h5-font-weight);
   line-height: var(--headings-h5-line-height, initial);
+  margin: var(--headings-h5-margin, inherit);
 }
 
 h6,
@@ -59,4 +64,5 @@ h6 > a {
   color: var(--headings-h6-text-color);
   font-weight: var(--headings-h6-font-weight);
   line-height: var(--headings-h6-line-height, initial);
+  margin: var(--headings-h6-margin, inherit);
 }
