@@ -26,7 +26,7 @@
         <div>
           <ul>
             <li><a href="../components.html">Componenten</a></li>
-            <li><a href="./headings.html" aria-current="page">Titel</a></li>
+            <li><a href="./headings.html" aria-current="page">Titels</a></li>
           </ul>
         </div>
       </nav>
@@ -48,111 +48,45 @@
       <article>
         <div>
           <section id="introduction">
-            <h1>Titel</h1>
+            <h1>Titels</h1>
+            <p>Gebruik titels om structuur binnen de pagina aan te geven.</p>
+
+            <h2 class="heading-normal">Aandachtspunten:</h2>
+            <ul>
+              <li>Gebruik altijd een <code>h1</code> per pagina.*</li>
+              <li>Kies altijd het juiste titel-element uit <code>h1</code> > <code>h6</code> op basis van de structuur in de HTML. Niet op basis van de visuele weergave.</li>
+              <li>HTML-elementen h1 > h6 kunnen via de css voorzien worden van stijl. Voor meer informatie zie: <a href="#examples">voorbeelden</a>.</li>
+              <li>Als niet ieder gelijkwaardig titel-element, bijvoorbeeld een h1, dezelfde visuele stijling gebruikt kan de stijl gezet worden door middel van een voorgedefineerde set. Binnen deze set worden de beschikbare "heading-styles" vastgelegd. Denk bijvoorbeeld aan een "heading-large" of een "heading-small". Voor meer informatie hierover zie: <a href="heading-base-set.html">Titel basisset</a>.</li>
+            </ul>
+
+            <i>* Eerder was het gebruik van meerdere <code>h1</code>'s per pagina toegestaan. Dit is gewijzigd in de HTML-specs van whatwg. Voor meer informatie hierover zie: <a href="https://github.com/whatwg/html/commit/6682bdeee6fb08f5972bea92064fe250f1b4ec9c">de commit op whatwg</a>.</i>
+
           </section>
 
           <section id="examples">
-            <h1>Voorbeelden:</h1>
+            <h2>Voorbeelden:</h2>
+            <h3>Visueel voorbeeld:</h3>
 
-            <h2>Visueel voorbeeld:</h2>
-            <ul>
-              <li><h1>Heading XXL</h1></li>
-              <li><h2>Heading XL</h2></li>
-              <li><h3>Heading Large</h3></li>
-              <li><h4>Heading Normal</h4></li>
-              <li><h5>Heading Small</h5></li>
-              <li><h6>Heading XS</h6></li>
-            </ul>
-
-            <ul>
-              <li><h3 class="heading-xxl">Heading XXL</h3></li>
-              <li><h3 class="heading-xl">Heading XL</h3></li>
-              <li><h3 class="heading-large">Heading Large</h3></li>
-              <li><h3 class="heading-normal">Heading Normal</h3></li>
-              <li><h3 class="heading-small">Heading Small</h3></li>
-              <li><h3 class="heading-xs">Heading XS</h3></li>
-            </ul>
+            <div class="visual-example">
+              <h1>Dit is een h1</h1>
+              <h2>Dit is een h2</h2>
+              <h3>Dit is een h3</h3>
+              <h4>Dit is een h4</h4>
+              <h5>Dit is een h5</h5>
+              <h6>Dit is een h6</h6>
+            </div>
 
             <h3>HTML-voorbeeld:</h3>
             <pre>
               <code>
-&lt;ul>
-  &lt;li>&lt;h1>Heading XXL&lt;/h1>&lt;/li>
-  &lt;li>&lt;h2>Heading XL&lt;/h2>&lt;/li>
-  &lt;li>&lt;h3>Heading Large&lt;/h3>&lt;/li>
-  &lt;li>&lt;h4>Heading Regular&lt;/h4>&lt;/li>
-  &lt;li>&lt;h5>Heading Small&lt;/h5>&lt;/li>
-  &lt;li>&lt;h6>Heading XS&lt;/h6>&lt;/li>
-&lt;/ul>
+&lt;h1>Dit is een h1&lt;/h1>
+&lt;h2>Dit is een h2&lt;/h2>
+&lt;h3>Dit is een h3&lt;/h3>
+&lt;h4>Dit is een h4&lt;/h4>
+&lt;h5>Dit is een h5&lt;/h5>
+&lt;h6>Dit is een h6&lt;/h6>
               </code>
             </pre>
-
-            <h3>h1</h3>
-            <h4>Visueel voorbeeld:</h4>
-            <h1>Lorem ipsum</h1>
-
-            <h4>Html-voorbeeld:</h4>
-            <pre>
-              <code>
-&lt;h1>Lorem ipsum&lt;/h1>
-              </code>
-            </pre>
-
-            <h3>h2</h3>
-            <h4>Visueel voorbeeld:</h4>
-            <h2>Lorem ipsum</h2>
-
-            <h4>Html-voorbeeld:</h4>
-            <pre>
-              <code>
-&lt;h2>Lorem ipsum&lt;/h2>
-              </code>
-            </pre>
-
-            <h3>h3</h3>
-            <h4>Visueel voorbeeld:</h4>
-            <h3>Lorem ipsum</h3>
-
-            <h4>Html-voorbeeld:</h4>
-            <pre>
-              <code>
-&lt;h3>Lorem ipsum&lt;/h3>
-              </code>
-            </pre>
-
-            <h3>h4</h3>
-            <h4>Visueel voorbeeld:</h4>
-            <h4>Lorem ipsum</h4>
-
-            <h4>Html-voorbeeld:</h4>
-            <pre>
-              <code>
-&lt;h4>Lorem ipsum&lt;/h4>
-              </code>
-            </pre>
-
-            <h3>h5</h3>
-            <h4>Visueel voorbeeld:</h4>
-            <h5>Lorem ipsum</h5>
-
-            <h4>Html-voorbeeld:</h4>
-            <pre>
-              <code>
-&lt;h5>Lorem ipsum&lt;/h5>
-              </code>
-            </pre>
-
-            <h3>h6</h3>
-            <h4>Visueel voorbeeld:</h4>
-            <h6>Lorem ipsum</h6>
-
-            <h4>Html-voorbeeld:</h4>
-            <pre>
-              <code>
-&lt;h6>Lorem ipsum&lt;/h6>
-              </code>
-            </pre>
-          </section>
 
           <section id="requirements">
             <h2>Bijbehorende bestanden</h2>
@@ -174,21 +108,183 @@
 
           <section id="variables">
             <h2>Instelbare variabelen</h2>
-            <ul>
-              <li>
-                Per titel h1 - h6:
-                <ul>
-                  <li><a href="../variables.html#font-size">font-size</a></li>
-                  <li><a href="../variables.html#text-color">text-color</a></li>
-                  <li>
-                    <a href="../variables.html#font-weight">font-weight</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#line-height">line-height</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <div class="horizontal-scroll">
+              <table>
+                <caption>Instelbare variabelen tabel:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Naam</th>
+                    <th scope="col">Variabele</th>
+                    <th scope="col">CSS-attribuut</th>
+                    <th scope="col">Class</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th rowspan="5" scope="rowgroup">h1</th>
+                    <td>--h1-font-size</td>
+                    <td><a href="../variables.html#font-size">font-size</a></td>
+                    <td rowspan="5" scope="rowgroup">-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--h1-font-weight</td>
+                    <td><a href="../variables.html#font-weight">font-weight</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h1-line-height</td>
+                    <td><a href="../variables.html#line-height">line-height</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h1-text-color</td>
+                    <td><a href="../variables.html#text-color">color</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h1-margin</td>
+                    <td><a href="../variables.html#margin">margin</a></td>
+                  </tr>
+
+                  <tr>
+                    <th rowspan="5" scope="rowgroup">h2</th>
+                    <td>--h2-font-size</td>
+                    <td><a href="../variables.html#font-size">font-size</a></td>
+                    <td rowspan="5" scope="rowgroup">-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--h2-font-weight</td>
+                    <td><a href="../variables.html#font-weight">font-weight</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h2-line-height</td>
+                    <td><a href="../variables.html#line-height">line-height</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h2-text-color</td>
+                    <td><a href="../variables.html#text-color">color</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h2-margin</td>
+                    <td><a href="../variables.html#margin">margin</a></td>
+                  </tr>
+
+                  <tr>
+                    <th rowspan="5" scope="rowgroup">h3</th>
+                    <td>--h3-font-size</td>
+                    <td><a href="../variables.html#font-size">font-size</a></td>
+                    <td rowspan="5" scope="rowgroup">-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--h3-font-weight</td>
+                    <td><a href="../variables.html#font-weight">font-weight</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h3-line-height</td>
+                    <td><a href="../variables.html#line-height">line-height</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h3-text-color</td>
+                    <td><a href="../variables.html#text-color">color</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h3-margin</td>
+                    <td><a href="../variables.html#margin">margin</a></td>
+                  </tr>
+
+                  <tr>
+                    <th rowspan="5" scope="rowgroup">h4</th>
+                    <td>--h4-font-size</td>
+                    <td><a href="../variables.html#font-size">font-size</a></td>
+                    <td rowspan="5" scope="rowgroup">-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--h4-font-weight</td>
+                    <td><a href="../variables.html#font-weight">font-weight</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h4-line-height</td>
+                    <td><a href="../variables.html#line-height">line-height</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h4-text-color</td>
+                    <td><a href="../variables.html#text-color">color</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h4-margin</td>
+                    <td><a href="../variables.html#margin">margin</a></td>
+                  </tr>
+
+                  <tr>
+                    <th rowspan="5" scope="rowgroup">h5</th>
+                    <td>--h5-font-size</td>
+                    <td><a href="../variables.html#font-size">font-size</a></td>
+                    <td rowspan="5" scope="rowgroup">-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--h5-font-weight</td>
+                    <td><a href="../variables.html#font-weight">font-weight</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h5-line-height</td>
+                    <td><a href="../variables.html#line-height">line-height</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h5-text-color</td>
+                    <td><a href="../variables.html#text-color">color</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h5-margin</td>
+                    <td><a href="../variables.html#margin">margin</a></td>
+                  </tr>
+
+                  <tr>
+                    <th rowspan="5" scope="rowgroup">h6</th>
+                    <td>--h6-font-size</td>
+                    <td><a href="../variables.html#font-size">font-size</a></td>
+                    <td rowspan="5" scope="rowgroup">-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--h6-font-weight</td>
+                    <td><a href="../variables.html#font-weight">font-weight</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h6-line-height</td>
+                    <td><a href="../variables.html#line-height">line-height</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h6-text-color</td>
+                    <td><a href="../variables.html#text-color">color</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--h6-margin</td>
+                    <td><a href="../variables.html#margin">margin</a></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
           </section>
 
           <section id="related">

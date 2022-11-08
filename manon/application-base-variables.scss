@@ -11,7 +11,7 @@
 
   --application-base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, "Roboto Sans", "Noto Sans", sans-serif;
-  --application-base-font-size: 1rem; /* Default text size */
+  --application-base-font-size: 1.125rem; /* Default text size */
   --application-base-line-height: 1.5;
   --application-base-font-weight: 300;
   --application-base-text-align: left;
@@ -51,4 +51,7 @@
 
   /* Text */
   --text-base-font-size: 1rem;
+
+  /* Padding */
+  --application-base-padding: 1.5rem;
 }
