@@ -67,6 +67,7 @@
                 overzicht van beschikbare voorbeelden binnen Manon zie
                 <a href="forms.html#form-types">formulierelementen</a>.
               </li>
+              <li>Groepeer bijelkaarhorende elementen in een <code>div</code>. Bijvoorbeeld een <code>label</code> en een <code>input</code>.</li>
             </ol>
           </section>
 
@@ -87,15 +88,6 @@
                   type="text"
                 />
               </div>
-              <div>
-                <label for="form-example-base-2">Voorbeeld text input</label>
-                <input
-                  id="form-example-base-2"
-                  name="form-example-base-2"
-                  placeholder="voorbeeld text input"
-                  type="text"
-                />
-              </div>
               <button type="submit">Verzend</button>
             </form>
 
@@ -107,10 +99,6 @@
     &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
     &lt;input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
   &lt;/div>
-  &lt;div>
-    &lt;label for="form-example-base-2">Voorbeeld text input&lt;/label>
-    &lt;input id="form-example-base-2" name="form-example-base-2" placeholder="voorbeeld text input" type="text">
-  &lt;/div>
   &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
               </code>
@@ -118,18 +106,13 @@
 
             <h2><code>fieldset</code></h2>
             <h3>Aandachtspunten:</h3>
-            <p>
-              Fieldsets kunnen geen gebruik maken van flex-box. Hierdoor hebben fieldset andere
-              styling nodig dan de overige elementen. Voeg het .scss bestand:
-              <code>form-horizontal-view-fieldset.scss</code> toe aan het project om gebruik te
-              maken van fieldsets en een horizontaal weergegeven formulier.
-            </p>
+            <ul>
+              <li>Een fieldset is een groep met bijelkaarhorende formuliervragen. Groepeer deze vragen binnen een fieldset met in de <code>legend</code> een omschrijvende naam.</li>
+              <li>Fieldsets kunnen geen gebruik maken van flex-box. Hierdoor hebben fieldset andere styling nodig dan de overige elementen. <strong>Voeg het .scss bestand: <code>form-horizontal-view-fieldset.scss</code> toe</strong> aan het project om gebruik te maken van fieldsets en een horizontaal weergegeven formulier.</li>
 
-            <p>
-              Voeg optioneel het bestand:
-              <code>form-horizontal-view-fieldset-variables.scss</code> toe om de uitlijning van de
-              labels ten opzichte van de velden aan te passen.
-            </p>
+              <li>Voeg optioneel het bestand:<code>form-horizontal-view-fieldset-variables.scss</code> toe om de uitlijning van de labels ten opzichte van de velden aan te passen.</li>
+
+            </ul>
             <h3>Visueel voorbeeld:</h3>
             <form action="" method="post" class="horizontal-view">
               <fieldset>
@@ -139,15 +122,6 @@
                   <input
                     id="form-example-base"
                     name="form-example-base"
-                    placeholder="voorbeeld text input"
-                    type="text"
-                  />
-                </div>
-                <div>
-                  <label for="form-example-base-2">Voorbeeld text input</label>
-                  <input
-                    id="form-example-base-2"
-                    name="form-example-base-2"
                     placeholder="voorbeeld text input"
                     type="text"
                   />
@@ -165,10 +139,6 @@
     &lt;div>
       &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
       &lt;input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
-    &lt;/div>
-    &lt;div>
-      &lt;label for="form-example-base-2">Voorbeeld text input&lt;/label>
-      &lt;input id="form-example-base-2" name="form-example-base-2" placeholder="voorbeeld text input" type="text">
     &lt;/div>
   &lt;/fieldset>
   &lt;button type="submit">Verzend&lt;/button>
