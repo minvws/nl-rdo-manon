@@ -1,0 +1,12 @@
+/*---------------------------------------------------------------*/
+/*---------------------- visual-example.scss --------------------*/
+/*---------------------------------------------------------------*/
+@use "visual-example-variables";
+
+.visual-example {
+	border: var(--visual-example-border);
+	background-color: var(--visual-example-background-color);
+	color: var(--visual-example-text-color);
+	padding: var(--visual-example-padding);
+	box-sizing: border-box;
+}

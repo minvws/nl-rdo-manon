@@ -15,48 +15,54 @@ h6 {
 
 h1,
 h1 > a {
-  font-size: var(--headings-h1-font-size, inherit);
-  color: var(--headings-h1-text-color, inherit);
-  font-weight: var(--headings-h1-font-weight, inherit);
-  line-height: var(--headings-h1-line-height, inherit);
+  font-size: var(--h1-font-size, inherit);
+  color: var(--h1-text-color, inherit);
+  font-weight: var(--h1-font-weight, inherit);
+  line-height: var(--h1-line-height, inherit);
+  margin: var(--h1-margin, inherit);
 }
 
 h2,
 h2 > a {
-  font-size: var(--headings-h2-font-size, inherit);
-  color: var(--headings-h2-text-color, inherit);
-  font-weight: var(--headings-h2-font-weight, inherit);
-  line-height: var(--headings-h2-line-height, inherit);
+  font-size: var(--h2-font-size, inherit);
+  color: var(--h2-text-color, inherit);
+  font-weight: var(--h2-font-weight, inherit);
+  line-height: var(--h2-line-height, inherit);
+  margin: var(--h2-margin, inherit);
 }
 
 h3,
 h3 > a {
-  font-size: var(--headings-h3-font-size, inherit);
-  color: var(--headings-h3-text-color, inherit);
-  font-weight: var(--headings-h3-font-weight, inherit);
-  line-height: var(--headings-h3-line-height, inherit);
+  font-size: var(--h3-font-size, inherit);
+  color: var(--h3-text-color, inherit);
+  font-weight: var(--h3-font-weight, inherit);
+  line-height: var(--h3-line-height, inherit);
+  margin: var(--h3-margin, inherit);
 }
 
 h4,
 h4 > a {
-  font-size: var(--headings-h4-font-size, inherit);
-  color: var(--headings-h4-text-color, inherit);
-  font-weight: var(--headings-h4-font-weight, inherit);
-  line-height: var(--headings-h4-line-height, inherit);
+  font-size: var(--h4-font-size, inherit);
+  color: var(--h4-text-color, inherit);
+  font-weight: var(--h4-font-weight, inherit);
+  line-height: var(--h4-line-height, inherit);
+  margin: var(--h4-margin, inherit);
 }
 
 h5,
 h5 > a {
-  font-size: var(--headings-h5-font-size);
-  color: var(--headings-h5-text-color);
-  font-weight: var(--headings-h5-font-weight);
-  line-height: var(--headings-h5-line-height, initial);
+  font-size: var(--h5-font-size);
+  color: var(--h5-text-color);
+  font-weight: var(--h5-font-weight);
+  line-height: var(--h5-line-height, initial);
+  margin: var(--h5-margin, inherit);
 }
 
 h6,
 h6 > a {
-  font-size: var(--headings-h6-font-size);
-  color: var(--headings-h6-text-color);
-  font-weight: var(--headings-h6-font-weight);
-  line-height: var(--headings-h6-line-height, initial);
+  font-size: var(--h6-font-size);
+  color: var(--h6-text-color);
+  font-weight: var(--h6-font-weight);
+  line-height: var(--h6-line-height, initial);
+  margin: var(--h6-margin, inherit);
 }
