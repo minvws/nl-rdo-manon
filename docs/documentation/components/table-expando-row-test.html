@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Uitklapbare tabelrij testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/manon.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav
+        data-open-label="Menu"
+        data-close-label="Sluit menu"
+        data-media="(min-width: 50rem)"
+        aria-label="Hoofdnavigatie"
+      >
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./table.html">Tabel</a></li>
+            <li>
+              <a href="./table-expando-row.html">Uitklapbare tabel</a>
+            </li>
+            <li>
+              <a href="./table-expando-row-test.html" aria-current="page"
+                >Uitklapbare tabelrij testpagina</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article id="button-base">
+        <div>
+          <section id="introduction">
+            <h1>Uitklapbare tabelrij testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h1>Tests</h1>
+
+            <h2>Visueel voorbeeld:</h2>
+            <div class="horizontal-scroll">
+              <table>
+                <caption>
+                  Voorbeeld uitklapbare tabelrijen:
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Risicolevel</th>
+                    <th scope="col">Bevindingstype</th>
+                    <th scope="col">Hoeveelheid</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="critical">Critical</span></td>
+                    <td>Lorem ipsum dolor set</td>
+                    <td class="number">4</td>
+                    <td>New</td>
+                    <td>
+                      <button 
+                        class="expando-button"
+                        data-close-label="Sluit details"
+                        data-icon-open-class="icon icon-descending"
+                        data-icon-close-class="icon icon-ascending">
+                          Open details
+                        </button>
+                    </td>
+                  </tr>
+                  <tr class="expando-row">
+                    <td colspan="5">
+                      <span class="sr-only">Lorem ipsum dolor set</span>
+                      <h1>Lorem ipsum details</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper pulvinar eleifend. Aenean vitae erat quis mi scelerisque faucibus. Etiam cursus magna auctor vestibulum maximus.</p>
+
+                      <h2>Lorem ipsum details</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper pulvinar eleifend. Aenean vitae erat quis mi scelerisque faucibus. Etiam cursus magna auctor vestibulum maximus.</p>
+
+                      <div>
+                        <h2>Lorem ipsum</h2>
+                          <div class="fifty-fifty">
+                            <dl>
+                              <div>
+                                <dt>Naam</dt>
+                                <dd>Jane Doe</dd>
+                              </div>
+
+                              <div>
+                                <dt>Woonplaats</dt>
+                                <dd>Amsterdam</dd>
+                              </div>
+
+                              <div>
+                                <dt>Aanmelddatum</dt>
+                                <dd>03-05-2021</dd>
+                              </div>
+                            </dl>
+
+                            <dl>
+                              <div>
+                                <dt>Naam</dt>
+                                <dd>Jane Doe</dd>
+                              </div>
+
+                              <div>
+                                <dt>Woonplaats</dt>
+                                <dd>Amsterdam</dd>
+                              </div>
+
+                              <div>
+                                <dt>Aanmelddatum</dt>
+                                <dd>03-05-2021</dd>
+                              </div>
+                            </dl>
+                          </div>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="high">High</span></td>
+                    <td>Lorem ipsum dolor set</td>
+                    <td class="number">12</td>
+                    <td>New</td>
+                    <td>
+                      <button 
+                      class="expando-button"
+                      data-close-label="Sluit details"
+                      data-icon-open-class="icon icon-descending"
+                      data-icon-close-class="icon icon-ascending">
+                        Open details
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="expando-row">
+                    <td colspan="5">
+                      <span class="sr-only">Lorem ipsum dolor set</span>
+                      <h1>Lorem ipsum details</h1>
+                      <p>De extra content.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+ &lt;div class="horizontal-scroll">
+  &lt;table>
+    &lt;caption>
+      Voorbeeld uitklapbare tabelrijen:
+    &lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Risicolevel&lt;/th>
+        &lt;th scope="col">Bevindingstype&lt;/th>
+        &lt;th scope="col">Hoeveelheid&lt;/th>
+        &lt;th scope="col">Status&lt;/th>
+        &lt;th scope="col">Details&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>&lt;span class="critical">Critical&lt;/span>&lt;/td>
+        &lt;td>Lorem ipsum dolor set&lt;/td>
+        &lt;td class="number">4&lt;/td>
+        &lt;td>New&lt;/td>
+        &lt;td>
+          &lt;button 
+            class="expando-button"
+            data-close-label="Sluit details"
+            data-icon-open-class="icon icon-descending"
+            data-icon-close-class="icon icon-ascending">
+              Open details
+            &lt;/button>
+        &lt;/td>
+      &lt;/tr>
+      &lt;tr class="expando-row">
+        &lt;td colspan="5">
+          &lt;span class="sr-only">Lorem ipsum dolor set&lt;/span>
+          &lt;h1>Lorem ipsum details&lt;/h1>
+          &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper pulvinar eleifend. Aenean vitae erat quis mi scelerisque faucibus. Etiam cursus magna auctor vestibulum maximus.&lt;/p>
+
+          &lt;h2>Lorem ipsum details&lt;/h2>
+          &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper pulvinar eleifend. Aenean vitae erat quis mi scelerisque faucibus. Etiam cursus magna auctor vestibulum maximus.&lt;/p>
+
+          &lt;div>
+            &lt;h2>Lorem ipsum&lt;/h2>
+              &lt;div class="fifty-fifty">
+                &lt;dl>
+                  &lt;div>
+                    &lt;dt>Naam&lt;/dt>
+                    &lt;dd>Jane Doe&lt;/dd>
+                  &lt;/div>
+
+                  &lt;div>
+                    &lt;dt>Woonplaats&lt;/dt>
+                    &lt;dd>Amsterdam&lt;/dd>
+                  &lt;/div>
+
+                  &lt;div>
+                    &lt;dt>Aanmelddatum&lt;/dt>
+                    &lt;dd>03-05-2021&lt;/dd>
+                  &lt;/div>
+                &lt;/dl>
+
+                &lt;dl>
+                  &lt;div>
+                    &lt;dt>Naam&lt;/dt>
+                    &lt;dd>Jane Doe&lt;/dd>
+                  &lt;/div>
+
+                  &lt;div>
+                    &lt;dt>Woonplaats&lt;/dt>
+                    &lt;dd>Amsterdam&lt;/dd>
+                  &lt;/div>
+
+                  &lt;div>
+                    &lt;dt>Aanmelddatum&lt;/dt>
+                    &lt;dd>03-05-2021&lt;/dd>
+                  &lt;/div>
+                &lt;/dl>
+              &lt;/div>
+            &lt;/div>
+        &lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>&lt;span class="high">High&lt;/span>&lt;/td>
+        &lt;td>Lorem ipsum dolor set&lt;/td>
+        &lt;td class="number">12&lt;/td>
+        &lt;td>New&lt;/td>
+        &lt;td>
+          &lt;button 
+          class="expando-button"
+          data-close-label="Sluit details"
+          data-icon-open-class="icon icon-descending"
+          data-icon-close-class="icon icon-ascending">
+            Open details
+          &lt;/button>
+        &lt;/td>
+      &lt;/tr>
+      &lt;tr class="expando-row">
+        &lt;td colspan="5">
+          &lt;span class="sr-only">Lorem ipsum dolor set&lt;/span>
+          &lt;h1>Lorem ipsum details&lt;/h1>
+          &lt;p>De extra content.&lt;/p>
+        &lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
