@@ -15,14 +15,8 @@
   --application-base-line-height: 1.5;
   --application-base-font-weight: 300;
   --application-base-text-align: left;
-  --application-base-padding: 1rem;
-
-  /* Border radius                                      */
-  /* You can use this variable to keep the  			      */
-  /* border radius consistent within your application   */
-  /* Enable border radius for requested elements   	    */
-  /* within their element variable files.				        */
-  /* --application-base-border-radius: ;                */
+  --application-base-padding: 1.5rem;
+  --application-base-border-radius: 0;
 
   /* Accent color */
   --application-base-accent-color: #931171;
@@ -44,15 +38,7 @@
   --application-base-accent-color-selected: hotpink;
   --application-base-accent-color-selected-text-color: black;
 
-  /* --application-line-height: ; */
-
   /* Call to action color */
   --cta-background-color: green;
   --cta-text-color: #fff;
-
-  /* Text */
-  --text-base-font-size: 1rem;
-
-  /* Padding */
-  --application-base-padding: 1.5rem;
 }
