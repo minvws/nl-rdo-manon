@@ -1,0 +1,58 @@
+/*---------------------------------------------------------------*/
+/*------------------- headings-base-set.scss --------------------*/
+/*---------------------------------------------------------------*/
+@use "headings-base-set-variables";
+
+%heading-xxl,
+.heading-xxl {
+	font-size: var(--heading-xxl-font-size, inherit);
+	font-weight: var(--heading-xxl-font-weight, inherit);
+	line-height: var(--heading-xxl-line-height, inherit);
+	color: var(--heading-xxl-text-color, inherit);
+	margin: var(--heading-xxl-margin);
+}
+
+%heading-xl,
+.heading-xl {
+	font-size: var(--heading-xl-font-size, inherit);
+	font-weight: var(--heading-xl-font-weight, inherit);
+	line-height: var(--heading-xl-line-height, inherit);
+	color: var(--heading-xl-text-color, inherit);
+	margin: var(--heading-xl-margin);
+}
+
+%heading-large,
+.heading-large {
+	font-size: var(--heading-large-font-size, inherit);
+	font-weight: var(--heading-large-font-weight, inherit);
+	line-height: var(--heading-large-line-height, inherit);
+	color: var(--heading-large-text-color, inherit);
+	margin: var(--heading-large-margin);
+}
+
+%heading-normal,
+.heading-normal {
+	font-size: var(--heading-normal-font-size, inherit);
+	font-weight: var(--heading-normal-font-weight, inherit);
+	line-height: var(--heading-normal-line-height, inherit);
+	color: var(--heading-normal-text-color, inherit);
+	margin: var(--heading-normal-margin);
+}
+
+%heading-small,
+.heading-small {
+	font-size: var(--heading-small-font-size, inherit);
+	font-weight: var(--heading-small-font-weight, inherit);
+	line-height: var(--heading-small-line-height, inherit);
+	color: var(--heading-small-text-color, inherit);
+	margin: var(--heading-small-margin);
+}
+
+%heading-xs,
+.heading-xs {
+	font-size: var(--heading-xs-font-size, inherit);
+	font-weight: var(--heading-xs-font-weight, inherit);
+	line-height: var(--heading-xs-line-height, inherit);
+	color: var(--heading-xs-text-color, inherit);
+	margin: var(--heading-xs-margin);
+}

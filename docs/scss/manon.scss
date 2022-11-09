@@ -13,6 +13,9 @@
 @use "@minvws/manon/finn-medium";
 @use "@minvws/manon/finn-large";
 
+/* Headings sets */
+@use "@minvws/manon/headings-base-set";
+
 /* Fonts */
 @use "fonts";
 
@@ -89,7 +92,6 @@
 
 /* Footer */
 @use "@minvws/manon/footer";
-@use "@minvws/manon/footer-documentation-integration";
 
 /* Components */
 @use "@minvws/manon/branding";
@@ -107,8 +109,6 @@
 
 @use "@minvws/manon/list-base";
 @use "@minvws/manon/skip-to-content-base";
-@use "@minvws/manon/code-base";
-@use "@minvws/manon/code-block";
 @use "@minvws/manon/background-color-offset";
 @use "@minvws/manon/description-list";
 @use "@minvws/manon/message-counter-base";
@@ -182,3 +182,8 @@
 
 /* Login meta */
 @use "@minvws/manon/login-meta";
+
+/* Other */
+@use "@minvws/manon/code-base";
+@use "@minvws/manon/code-block";
+@use "@minvws/manon/visual-example";

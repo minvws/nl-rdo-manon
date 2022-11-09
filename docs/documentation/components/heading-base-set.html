@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Titel basisset</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./headings.html">Titels</a></li>
+            <li><a href="./heading-base-set.html" aria-current="page">Titel basisset</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="#introduction">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Titel basisset</h1>
+            <p>Basisset voor het stylen van titels.</p>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg de benodigde bestanden toe aan het project.
+                <ul>
+                  <li>Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+                  <li>Vul de variabelen met de gewenste weergaven. Voor meer informatie zie het overzicht met <a href="#variables">instelbare variabelen</a>.</li>
+                  <li>Pas de titelweergaven toe waar nodig. De titelweergaven kunnen op twee manieren toegepast worden. Door middel van variabelen binnen de CSS of door middel van classes binnen de HTML. Maak gebruik van de CSS-variabelen waar mogelijk en voeg alleen de classes toe in de HTML voor uitzonderingen om de code aanpasbaar en overzichtelijk te houden. Voor meer informatie hierover zie <a href="../use-css-variable.html">CSS-variabelen gebruiken</a>.</li>
+                </ul>
+              </li>
+            </ol>
+          </section>
+
+          <section id="examples">
+            <h2>Voorbeelden</h2>
+
+            <h3>Beschikbare opties</h3>
+            <ul>
+              <li>heading-xxl</li>
+              <li>heading-xl</li>
+              <li>heading-large</li>
+              <li>heading-normal</li>
+              <li>heading-small</li>
+              <li>heading-xs</li>
+            </ul>
+
+            <h3>HTML-element stijling ingesteld via CSS voorbeeld</h3>
+            <h4>Visueel voorbeeld:</h4>
+            
+            <div class="visual-example">
+              <h1>h1 met weergave heading XXL</h1>
+              <h2>h2 met weergave heading XL</h2>
+              <h3>h3 met weergave heading Large</h3>
+              <h4>h4 met weergave heading Normal</h4>
+              <h5>h5 met weergave heading Small</h5>
+              <h6>h6 met weergave heading XS</h6>
+            </div>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;h1>h1 met weergave heading XXL&lt;/h1>
+&lt;h2>h2 met weergave heading XL&lt;/h2>
+&lt;h3>h3 met weergave heading Large&lt;/h3>
+&lt;h4>h4 met weergave heading Normal&lt;/h4>
+&lt;h5>h5 met weergave heading Small&lt;/h5>
+&lt;h6>h6 met weergave heading XS&lt;/h6>
+              </code>
+            </pre>
+
+            <h3>Variabele gebruiken binnen een andere variabele</h3>
+            <p>In dit voorbeeld is de styling ingesteld door een van de variabelen uit deze set in te laden binnen de variabele om de h1 te stylen.</p>
+            <h4>CSS-voorbeeld:</h4>
+            <pre>
+              <code>
+:root {
+  --headings-h1-font-size: var(--heading-xxl-font-size);
+}
+              </code>
+            </pre>
+            <p>Voor meer informatie hierover zie <a href="../use-css-variable.html">CSS-variabelen gebruiken</a>.</p>
+
+            <h3>Class gebruiken binnen de HTML</h3>
+            <p>Dit voorbeeld maakt gebruik van de classes uit deze set direct op de HTML-elementen. Dit is een geschikte manier voor uitzonderingen.</p>
+            <p class="warning"><span>Waarschuwing:</span> Waar mogelijk is het altijd aan te raden zo min mogelijk classes te gebruiken maar om gebruik te maken van het overerven van CSS. Maar omdat een uitzondering soms nodig is, is het mogelijk om de titelweergaven ook direct in de html te kunnen definiëren door middel van een classes.</p>
+
+            <h4>Visueel voorbeeld:</h4>
+            <div class="visual-example">
+              <h3 class="heading-xxl">Heading XXL</h3>
+              <h3 class="heading-xl">Heading XL</h3>
+              <h3 class="heading-large">Heading Large</h3>
+              <h3 class="heading-normal">Heading Normal</h3>
+              <h3 class="heading-small">Heading Small</h3>
+              <h3 class="heading-xs">Heading XS</h3>
+            </div>
+            
+            <h4>HTML-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;h3 class="heading-xxl">Heading XXL&lt;/h3>
+&lt;h3 class="heading-xl">Heading XL&lt;/h3>
+&lt;h3 class="heading-large">Heading Large&lt;/h3>
+&lt;h3 class="heading-normal">Heading Normal&lt;/h3>
+&lt;h3 class="heading-small">Heading Small&lt;/h3>
+&lt;h3 class="heading-xs">Heading XS&lt;/h3>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h2>Bijbehorende bestanden</h2>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+            <h3>Benodigd</h3>
+            <ul>
+              <li><code>heading-base-set.scss</code></li>
+            </ul>
+
+            <h3>Optioneel</h3>
+            <ul>
+              <li><code>heading-base-set-variables.scss</code></li>
+            </ul>
+          </section>
+
+          <section id="variables">
+            <h2>Instelbare variabelen</h2>
+            <div class="horizontal-scroll">
+              <table>
+                <caption>Instelbare variabelen tabel:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Naam</th>
+                    <th scope="col">Variabele</th>
+                    <th scope="col">CSS-attribuut</th>
+                    <th scope="col">Class</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th rowspan="5" scope="rowgroup">heading-xxl</th>
+                    <td>--heading-xxl-font-size</td>
+                    <td><a href="../variables.html#font-size">font-size</a></td>
+                    <td rowspan="5" scope="rowgroup">heading-xxl</td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-xxl-font-weight</td>
+                    <td><a href="../variables.html#font-weight">font-weight</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-xxl-line-height</td>
+                    <td><a href="../variables.html#line-height">line-height</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-xxl-text-color</td>
+                    <td><a href="../variables.html#text-color">color</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-xxl-margin</td>
+                    <td><a href="../variables.html#margin">margin</a></td>
+                  </tr>
+
+                  <tr>
+                    <th rowspan="5" scope="rowgroup">heading-xl</th>
+                    <td>--heading-xl-font-size</td>
+                    <td><a href="../variables.html#font-size">font-size</a></td>
+                    <td rowspan="5" scope="rowgroup">heading-xl</td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-xl-font-weight</td>
+                    <td><a href="../variables.html#font-weight">font-weight</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-xl-line-height</td>
+                    <td><a href="../variables.html#line-height">line-height</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-xl-text-color</td>
+                    <td><a href="../variables.html#text-color">color</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-xl-margin</td>
+                    <td><a href="../variables.html#margin">margin</a></td>
+                  </tr>
+
+                  <tr>
+                    <th rowspan="5" scope="rowgroup">heading-large</th>
+                    <td>--heading-large-font-size</td>
+                    <td><a href="../variables.html#font-size">font-size</a></td>
+                    <td rowspan="5" scope="rowgroup">heading-large</td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-large-font-weight</td>
+                    <td><a href="../variables.html#font-weight">font-weight</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-large-line-height</td>
+                    <td><a href="../variables.html#line-height">line-height</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-large-text-color</td>
+                    <td><a href="../variables.html#text-color">color</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-large-margin</td>
+                    <td><a href="../variables.html#margin">margin</a></td>
+                  </tr>
+
+                  <tr>
+                    <th rowspan="5" scope="rowgroup">heading-normal</th>
+                    <td>--heading-normal-font-size</td>
+                    <td><a href="../variables.html#font-size">font-size</a></td>
+                    <td rowspan="5" scope="rowgroup">heading-normal</td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-normal-font-weight</td>
+                    <td><a href="../variables.html#font-weight">font-weight</a></td>
+                  </tr>
+                 
+                  <tr>
+                    <td>--heading-normal-line-height</td>
+                    <td><a href="../variables.html#line-height">line-height</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-normal-text-color</td>
+                    <td><a href="../variables.html#text-color">color</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-normal-margin</td>
+                    <td><a href="../variables.html#margin">margin</a></td>
+                  </tr>
+
+                  <tr>
+                    <th rowspan="5" scope="rowgroup">heading-small</th>
+                    <td>--heading-small-font-size</td>
+                    <td><a href="../variables.html#font-size">font-size</a></td>
+                    <td rowspan="5" scope="rowgroup">heading-small</td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-small-font-weight</td>
+                    <td><a href="../variables.html#font-weight">font-weight</a></td>
+                  </tr>
+
+
+                  <tr>
+                    <td>--heading-small-line-height</td>
+                    <td><a href="../variables.html#line-height">line-height</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-small-text-color</td>
+                    <td><a href="../variables.html#text-color">color</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-small-margin</td>
+                    <td><a href="../variables.html#margin">margin</a></td>
+                  </tr>
+
+                  <tr>
+                    <th rowspan="5" scope="rowgroup">heading-xs</th>
+                    <td>--heading-xs-font-size</td>
+                    <td><a href="../variables.html#font-size">font-size</a></td>
+                    <td rowspan="5" scope="rowgroup">heading-xs</td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-xs-font-weight</td>
+                    <td><a href="../variables.html#font-weight">font-weight</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-xs-line-height</td>
+                    <td><a href="../variables.html#line-height">line-height</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-xs-text-color</td>
+                    <td><a href="../variables.html#text-color">color</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>--heading-xs-margin</td>
+                    <td><a href="../variables.html#margin">margin</a></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

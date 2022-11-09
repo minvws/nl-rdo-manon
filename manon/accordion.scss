@@ -84,7 +84,7 @@ section.accordion {
 
 /* Collapsed state (only when JavaScript is loaded) */
 .js-accordion-loaded {
-  /* The expanded state */
+  /* The collapsed state */
   .accordion {
     button[aria-expanded="false"] {
       /* Open icon */
@@ -110,6 +110,7 @@ section.accordion {
       }
     }
 
+    /* The expanded state */
     button[aria-expanded="true"] {
       /* Close icon */
       &:before {
