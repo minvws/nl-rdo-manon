@@ -78,14 +78,15 @@ function initExpandoButtons(table) {
  */
 function initExpandoButton(button) {
   var iconOpenClasses = (
-    button.dataset.iconOpenClass || "icon icon-chevron-light-bottom"
+    button.dataset.iconOpenClass
   ).split(/\s+/);
   var iconCloseClasses = (
-    button.dataset.iconCloseClass || "icon icon-chevron-light-top"
+    button.dataset.iconCloseClass
   ).split(/\s+/);
 
   var buttonRow = closest(button, "tr");
   var row = buttonRow.nextElementSibling;
+
   if (
     !(row instanceof HTMLElement) ||
     !(row.tagName === "TR") ||
@@ -103,16 +104,15 @@ function initExpandoButton(button) {
     );
     return;
   }
-
   var expanded = button.getAttribute("aria-expanded") === "true";
   var closeLabel, openLabel;
   if (expanded) {
-    closeLabel = button.innerText;
-    openLabel = button.dataset.openLabel || "Open details";
+    closeLabel = button.innerText.trim();
+    openLabel = button.dataset.openLabel.trim() || "Open details";
     button.setAttribute("aria-expanded", "true");
   } else {
-    closeLabel = button.dataset.closeLabel || "Sluit details";
-    openLabel = button.innerText;
+    closeLabel = button.dataset.closeLabel.trim() || "Sluit details";
+    openLabel = button.innerText.trim();
     button.setAttribute("aria-expanded", "false");
     row.setAttribute("hidden", "");
   }
@@ -127,28 +127,19 @@ function initExpandoButton(button) {
 
   button.addEventListener("click", function () {
     var expand = button.getAttribute("aria-expanded") === "false";
-    button.setAttribute("aria-expanded", expand ? "true" : "false");
     if (expand) {
-      button.innerHTML = closeLabel;
-      button.classList.remove.apply(
-        button.classList,
-        expanded ? iconOpenClasses : iconCloseClasses
-      );
-      button.classList.add.apply(
-        button.classList,
-        expanded ? iconCloseClasses : iconOpenClasses
-      );
+      button.innerText = closeLabel;
+
+      button.setAttribute("aria-expanded", "true");
+      button.classList.remove.apply(button.classList, iconOpenClasses);
+      button.classList.add.apply(button.classList, iconCloseClasses);
       row.removeAttribute("hidden");
     } else {
-      button.innerHTML = openLabel;
-      button.classList.remove.apply(
-        button.classList,
-        expanded ? iconCloseClasses : iconOpenClasses
-      );
-      button.classList.add.apply(
-        button.classList,
-        expanded ? iconOpenClasses : iconCloseClasses
-      );
+      button.innerText = openLabel;
+
+      button.setAttribute("aria-expanded", "false");
+      button.classList.remove.apply(button.classList, iconCloseClasses);
+      button.classList.add.apply(button.classList, iconOpenClasses);
       row.setAttribute("hidden", "");
     }
   });
