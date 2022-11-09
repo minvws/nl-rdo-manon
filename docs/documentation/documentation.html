@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <title>Documentatie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../static/css/manon.css" rel="stylesheet" />
+    <link href="../static/css/main.css" rel="stylesheet" />
     <link href="../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../static/js/manon.js"></script>
   </head>
@@ -41,7 +41,7 @@
           <h1>Handleiding</h1>
 
           <section id="table-of-contents">
-            <nav>
+            <nav aria-label="Zijbalknavigatie">
               <ul>
                 <li>
                   <a href="#manon-quick-start">Manon gebruiken binnen een project</a>
@@ -61,6 +61,33 @@
             <p class="warning" role="group" aria-label="let op">
               <span>Let op:</span> Aan deze instructies wordt nog gewerkt.
             </p>
+          </section>
+          <section>
+              <h2>Manon installeren (lokaal docs bekijken)</h2>
+              <p>Manon maakt gebruik <a href="https://pnpm.io/installation">pnpm</a>, een package die beschikbaar is via npm.</p>
+              <ol>
+                <li>
+                    Manon downloaden: <code>git clone https://github.com/minvws/nl-rdo-manon.git</code>
+                </li>
+                <li>
+                    Open de folder waar Manon is geïnstalleerd, bijvoorbeeld: <code>cd nl-rdo-manon</code>
+                </li>
+                <li>
+                    Bekijk de pnpm <a href=" https://pnpm.io/installation">installatie instructies</a>
+                </li>
+                <li>
+                    Dependencies installeren: <code>pnpm install</code>
+                </li>
+                <li>
+                    Open de Manon documentatie folder: <code>cd docs</code>
+                </li>
+                <li>
+                    SCSS compilen naar CSS: <code>pnpm run build</code>
+                </li>
+                <li>
+                    De documentatie is nu lokaal te bekijken door het bestand <code>nl-rdo-manon/docs/index.html</code> te openen in je webbrowser
+                </li>
+              </ol>
           </section>
         </div>
       </article>

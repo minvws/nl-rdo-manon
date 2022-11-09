@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <title>Componenten</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../static/css/manon.css" rel="stylesheet" />
+    <link href="../static/css/main.css" rel="stylesheet" />
     <link href="../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
@@ -50,16 +50,16 @@
           <section>
             <h1>Beschikbare componenten</h1>
             <div class="column-4">
-              <nav>
-                <h1>Layout</h1>
+              <nav aria-labelledby="layout-heading">
+                <h1 id="layout-heading">Layout</h1>
                 <ul>
                   <li><a href="./components/layouts.html">Layouts</a></li>
                   <li><a href="./components/tiles.html">Tegelweergave</a></li>
                 </ul>
               </nav>
 
-              <nav>
-                <h1>Basis-componenten</h1>
+              <nav aria-labelledby="base-heading">
+                <h1 id="base-heading">Basis-componenten</h1>
                 <ul>
                   <li><a href="./components/button.html">Knoppen</a></li>
                   <li><a href="./components/forms.html">Formulieren</a></li>
@@ -70,8 +70,16 @@
                 </ul>
               </nav>
 
-              <nav>
-                <h1>Tekst-weergave</h1>
+              <nav aria-labelledby="colors-heading">
+                <h1 id="colors-heading">Kleuren</h1>
+                <ul>
+                  <li><a href="./components/application-base.html">Huisstijl toevoegen</a></li>
+                  <li><a href="./components/branding-colors.html">Kleurensets</a></li>
+                </ul>
+              </nav>
+
+              <nav aria-labelledby="text-heading">
+                <h1 id="text-heading">Tekst-weergave</h1>
                 <ul>
                   <li><a href="./components/paragraph.html">Paragraaf</a></li>
                   <li><a href="./components/headings.html">Titels</a></li>
@@ -85,8 +93,8 @@
                 </ul>
               </nav>
 
-              <nav>
-                <h1>Navigatie</h1>
+              <nav aria-labelledby="navigation-heading">
+                <h1 id="navigation-heading">Navigatie</h1>
                 <ul>
                   <li><a href="./components/side-menu.html">Zijmenu</a></li>
                   <li>
@@ -95,8 +103,8 @@
                 </ul>
               </nav>
 
-              <nav>
-                <h1>Helper-classes</h1>
+              <nav aria-labelledby="helper-classes-heading">
+                <h1 id="helper-classes-heading">Helper-classes</h1>
                 <ul>
                   <li>
                     <a href="./components/horizontal-view.html">Horizontaal uitgelijnd</a>
@@ -110,11 +118,17 @@
                   <li>
                     <a href="./components/horizontal-scroll.html">Horizontale scroll</a>
                   </li>
+                  <li>
+                    <a href="./components/nowrap.html">nowrap</a>
+                  </li>
+                  <li>
+                    <a href="./components/hidden.html">Verbergen - <dfn>hidden</dfn></a>
+                  </li>
                 </ul>
               </nav>
 
-              <nav>
-                <h1>Toegankelijkheid</h1>
+              <nav aria-labelledby="accessibility-heading">
+                <h1 id="accessibility-heading">Toegankelijkheid</h1>
                 <ul>
                   <li>
                     <a href="./components/max-line-length.html">Maximale regellengte</a>
@@ -122,8 +136,8 @@
                 </ul>
               </nav>
 
-              <nav>
-                <h1>Notificaties</h1>
+              <nav aria-labelledby="notifications-heading">
+                <h1 id="notifications-heading">Notificaties</h1>
                 <ul>
                   <li>
                     <a href="./components/message-counter.html">Notificatie-teller</a>
@@ -134,8 +148,8 @@
                 </ul>
               </nav>
 
-              <nav>
-                <h1>Afbeeldingen</h1>
+              <nav aria-labelledby="images-heading">
+                <h1 id="images-heading">Afbeeldingen</h1>
                 <ul>
                   <li><a href="./components/logo.html">Logo</a></li>
                   <li><a href="./components/icons.html">Iconen</a></li>
@@ -151,8 +165,8 @@
                 </ul>
               </nav>
 
-              <nav>
-                <h1>Overig</h1>
+              <nav aria-labelledby="miscellaneous-heading">
+                <h1 id="miscellaneous-heading">Overig</h1>
                 <ul>
                   <li><a href="./components/accordion.html">Accordeon</a></li>
                   <li><a href="./components/filter.html">Filter</a></li>

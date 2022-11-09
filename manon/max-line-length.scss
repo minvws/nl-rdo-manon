@@ -11,10 +11,10 @@ span,
 li {
   max-width: var(--max-line-length-max-width);
   hyphens: var(--max-line-length-hyphens);
-  word-wrap: var(--max-line-length-word-wrap);
+  word-break: var(--max-line-length-word-break);
 
   @media (min-width: $breakpoint) {
     hyphens: var(--max-line-length-breakpoint-hyphens);
-    word-wrap: var(--max-line-length-breakpoint-word-wrap);
+    word-break: var(--max-line-length-breakpoint-word-break);
   }
 }

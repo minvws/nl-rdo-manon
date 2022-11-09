@@ -1,0 +1,34 @@
+/*---------------------------------------------------------------*/
+/*----------------- components/finn-large.scss ------------------*/
+/*---------------------------------------------------------------*/
+@use "finn-large-variables";
+
+%branding-color-1,
+.branding-color-1 {
+	background-color: var(--branding-color-1-background-color);
+	color: var(--branding-color-1-text-color);
+}
+
+%branding-color-2,
+.branding-color-2 {
+	background-color: var(--branding-color-2-background-color);
+	color: var(--branding-color-2-text-color);
+}
+
+%branding-color-3,
+.branding-color-3 {
+	background-color: var(--branding-color-3-background-color);
+	color: var(--branding-color-3-text-color);
+}
+
+%branding-color-4,
+.branding-color-4 {
+	background-color: var(--branding-color-4-background-color);
+	color: var(--branding-color-4-text-color);
+}
+
+%branding-color-5,
+.branding-color-5 {
+	background-color: var(--branding-color-5-background-color);
+	color: var(--branding-color-5-text-color);
+}

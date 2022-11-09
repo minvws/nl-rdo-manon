@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <title>Maximale regellengte</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../../static/css/manon.css" rel="stylesheet" />
-    <link href="../../../manon/scss/text/max-line-length.css" rel="stylesheet" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
     <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
@@ -61,6 +60,15 @@
               adviseert een maximale regellengte van 80 karakters. Dit vertaald zich ongeveer tot
               40rem.
             </p>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
+            </ol>
           </section>
 
           <section id="examples">
@@ -81,38 +89,100 @@
             </pre>
           </section>
 
-          <section id="requirements">
-            <h1>Benodigde bestanden</h1>
-            <ul>
-              <li><code>max-line-length</code></li>
-              <li><code>max-line-length-variables</code></li>
-            </ul>
-          </section>
-
           <section id="variables">
             <h1>Instelbare variabelen</h1>
-            <ul>
-              <li><a href="../variables.html#max-width">max-width</a></li>
-              <li><a href="../variables.html#hyphens">hyphens</a></li>
-              <li><a href="../variables.html#word-wrap">word-wrap</a></li>
-              <li><a href="../variables.html#breakpoint">breakpoint</a></li>
-            </ul>
+            <div class="horizontal-scroll">
+              <table class="nowrap">
+                <caption>Instelbare css-variabelen tabel:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Naam</th>
+                    <th scope="col">Breekpunt</th>
+                    <th scope="col">Variabele</th>
+                    <th scope="col">CSS-attribuut</th>
+                    <th scope="col">Class</th>
+                    <th scope="col">Manon ingestelde waarde</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>max-width</td>
+                    <td>-</td>
+                    <td>--max-line-length-max-width</td>
+                    <td><a href="../variables.html#max-width">max-width</a></td>
+                    <td>-</td>
+                    <td>40rem</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" scope="rowgroup">hyphens</td>
+                    <td>Voor breekpunt</td>
+                    <td>--max-line-length-hyphens</td>
+                    <td rowspan="2" scope="rowgroup"><a href="../variables.html#hyphens">hyphens</a></td>
+                    <td rowspan="2" scope="rowgroup">-</td>
+                    <td>auto</td>
+                  </tr>
+
+                  <tr>
+                    <td>Na breekpunt</td>
+                    <td>--max-line-length-breakpoint-hyphens</td>
+                    <td>none</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" scope="rowgroup">word-break</td>
+                    <td>Voor breekpunt</td>
+                    <td>--max-line-length-word-break</td>
+                    <td rowspan="2" scope="rowgroup"><a href="../variables.html#word-break">word-break</a></td>
+                    <td rowspan="2" scope="rowgroup">-</td>
+                    <td>normal</td>
+                  </tr>
+
+                  <tr>
+                    <td>Na breekpunt</td>
+                    <td>--max-line-length-breakpoint-word-break</td>
+                    <td>var(--max-line-length-word-break, normal)</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+
+            <div class="horizontal-scroll">
+              <table class="nowrap">
+                <caption>Instelbare sass-variabelen tabel:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Manon ingestelde waarde</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Breekpunt</td>
+                    <td>24rem !default</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
           </section>
 
           <section id="requirements">
             <h1>Bijbehorende bestanden</h1>
+            <p>Voeg de (s)css-bestanden toe aan het project of importeer de bestanden.</p>
             <p>
               Voor meer informatie over importeren en instellen van componenten. Zie:
               <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
             </p>
             <h2>Benodigd</h2>
             <ul>
-              <li><code>text/max-line-length.scss</code></li>
+              <li><code>max-line-length</code></li>
             </ul>
 
             <h2>Optioneel</h2>
             <ul>
-              <li><code>text/max-line-length-variables.scss</code></li>
+              <li><code>max-line-length-variables</code></li>
             </ul>
           </section>
         </div>
