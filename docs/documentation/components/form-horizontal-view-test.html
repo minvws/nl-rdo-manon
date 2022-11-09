@@ -60,17 +60,118 @@
                   name="form-example-base"
                   placeholder="voorbeeld text input"
                   type="text"
-                />
+                >
               </div>
+
+              <div class="required">
+                <label for="voorbeeld-input-required">Ipsum</label>
+                <div>
+                  <span class="nota-bene">Dit veld is verplicht</span>
+                  <input id="voorbeeld-input-required" name="voorbeeld-input-required" placeholder="lorem ipsum" type="text" required>
+                </div>
+              </div>
+
               <div>
-                <label for="form-example-base-2">Voorbeeld text input</label>
-                <input
-                  id="form-example-base-2"
-                  name="form-example-base-2"
-                  placeholder="voorbeeld text input"
-                  type="text"
-                />
+                <label for="voorbeeld-date-1">Datum</label>
+                <input id="voorbeeld-date-1" name="voorbeeld-date-1" type="date">
               </div>
+
+              <div>
+                <label for="voorbeeld-email-1">Email</label>
+                <input id="voorbeeld-email-1" name="voorbeeld-email-1" type="email">
+              </div>
+
+              <div>
+                <label for="input-password-1">Wachtwoord</label>
+                <div>
+                  <p class="explanation" id="input-password-1-message"><span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleineletter en 1 cijfer.</p>
+                  <input
+                    id="input-password-1"
+                    name="input-password-1"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                    placeholder="wachtwoord"
+                    title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleineletter en 1 cijfer."
+                    type="password"
+                    aria-describedby="input-password-1-message">
+                </div> 
+              </div>
+
+              <div>
+                <label for="voorbeeld-tekstveld-base">Bericht</label>
+                <textarea id="voorbeeld-tekstveld-base" name="voorbeeld-tekstveld-base" placeholder="Jouw vraag of opmerking"></textarea>
+              </div>
+
+              <div>
+                <label for="select-base">Selectielijst</label>
+                <select id="select-base" name="select-base">
+                  <option value="1">Optie 1</option>
+                  <option value="2">Optie 2</option>
+                  <option value="3">Optie 3</option>
+                </select>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-example-grouped" name="standaard-checkbox">
+                <label for="checkbox-example-grouped">Selectievak</label>
+              </div>
+
+              <div class="checkbox required">
+                <div>
+                  <span class="nota-bene">Dit veld is verplicht</span>
+
+                  <div class="horizontal-view">
+                    <input type="checkbox" id="checkbox-example-grouped" name="standaard-checkbox" required>
+                    <label for="checkbox-example-grouped">Verplicht selectievak</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-example-disabled" name="voorwaarden" disabled>
+                <label for="checkbox-example-disabled">Uitgeschakeld selectievak</label>
+              </div>
+
+              <div class="radio-button">
+                <input
+                  type="radio"
+                  id="radio-example-default-5"
+                  name="standaard-radiobutton"
+                  value="value">
+                <label for="radio-example-default-5">Radio-button</label>
+              </div>
+
+              <div class="radio-button required">
+                <div>
+                  <span class="nota-bene">Dit veld is verplicht</span>
+
+                  <div class="horizontal-view">
+                    <input type="radio" id="radio-example-grouped" name="standaard-radio" required>
+                    <label for="radio-example-grouped">Verplichte radio-button</label>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="radio-button">
+                <input type="radio" id="radio-example-disabled" name="voorwaarden" disabled>
+                <label for="radio-example-disabled">Uitgeschakelde radio-button</label>
+              </div>
+
+              <div>
+                <label for="range-example">Range</label>
+                <input type="range" id="range-example" name="range-example" min="0" max="100">
+              </div>
+
+              <div>
+                <label for="color-input-1">Selecteer de gewenste kleur</label>
+                <input id="color-input-1" name="color-input-1" type="color" value="#ffffff">
+              </div>
+
+              <div>
+                <label for="color-input-1">Selecteer de gewenste kleur</label>
+                <input id="color-input-1" name="color-input-1" type="color" value="#ffffff">
+              </div>
+
               <button type="submit">Verzend</button>
             </form>
 
@@ -80,12 +181,123 @@
 &lt;form action="" method="post" class="horizontal-view">
   &lt;div>
     &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
-    &lt;input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+    &lt;input
+      id="form-example-base"
+      name="form-example-base"
+      placeholder="voorbeeld text input"
+      type="text"
+    >
   &lt;/div>
+
+  &lt;div class="required">
+    &lt;label for="voorbeeld-input-required">Ipsum&lt;/label>
+    &lt;div>
+      &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+      &lt;input id="voorbeeld-input-required" name="voorbeeld-input-required" placeholder="lorem ipsum" type="text" required>
+    &lt;/div>
+  &lt;/div>
+
   &lt;div>
-    &lt;label for="form-example-base-2">Voorbeeld text input&lt;/label>
-    &lt;input id="form-example-base-2" name="form-example-base-2" placeholder="voorbeeld text input" type="text">
+    &lt;label for="voorbeeld-date-1">Datum&lt;/label>
+    &lt;input id="voorbeeld-date-1" name="voorbeeld-date-1" type="date">
   &lt;/div>
+
+  &lt;div>
+    &lt;label for="voorbeeld-email-1">Email&lt;/label>
+    &lt;input id="voorbeeld-email-1" name="voorbeeld-email-1" type="email">
+  &lt;/div>
+
+  &lt;div>
+    &lt;label for="input-password-1">Wachtwoord&lt;/label>
+    &lt;div>
+      &lt;p class="explanation" id="input-password-1-message">&lt;span>Toelichting:&lt;/span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleineletter en 1 cijfer.&lt;/p>
+      &lt;input
+        id="input-password-1"
+        name="input-password-1"
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+        placeholder="wachtwoord"
+        title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleineletter en 1 cijfer."
+        type="password"
+        aria-describedby="input-password-1-message">
+    &lt;/div> 
+  &lt;/div>
+
+  &lt;div>
+    &lt;label for="voorbeeld-tekstveld-base">Bericht&lt;/label>
+    &lt;textarea id="voorbeeld-tekstveld-base" name="voorbeeld-tekstveld-base" placeholder="Jouw vraag of opmerking">&lt;/textarea>
+  &lt;/div>
+
+  &lt;div>
+    &lt;label for="select-base">Selectielijst&lt;/label>
+    &lt;select id="select-base" name="select-base">
+      &lt;option value="1">Optie 1&lt;/option>
+      &lt;option value="2">Optie 2&lt;/option>
+      &lt;option value="3">Optie 3&lt;/option>
+    &lt;/select>
+  &lt;/div>
+
+  &lt;div class="checkbox">
+    &lt;input type="checkbox" id="checkbox-example-grouped" name="standaard-checkbox">
+    &lt;label for="checkbox-example-grouped">Selectievak&lt;/label>
+  &lt;/div>
+
+  &lt;div class="checkbox required">
+    &lt;div>
+      &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+
+      &lt;div class="horizontal-view">
+        &lt;input type="checkbox" id="checkbox-example-grouped" name="standaard-checkbox" required>
+        &lt;label for="checkbox-example-grouped">Verplicht selectievak&lt;/label>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="checkbox">
+    &lt;input type="checkbox" id="checkbox-example-disabled" name="voorwaarden" disabled>
+    &lt;label for="checkbox-example-disabled">Uitgeschakeld selectievak&lt;/label>
+  &lt;/div>
+
+  &lt;div class="radio-button">
+    &lt;input
+      type="radio"
+      id="radio-example-default-5"
+      name="standaard-radiobutton"
+      value="value">
+    &lt;label for="radio-example-default-5">Radio-button&lt;/label>
+  &lt;/div>
+
+  &lt;div class="radio-button required">
+    &lt;div>
+      &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+
+      &lt;div class="horizontal-view">
+        &lt;input type="radio" id="radio-example-grouped" name="standaard-radio" required>
+        &lt;label for="radio-example-grouped">Verplichte radio-button&lt;/label>
+      &lt;/div>
+
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="radio-button">
+    &lt;input type="radio" id="radio-example-disabled" name="voorwaarden" disabled>
+    &lt;label for="radio-example-disabled">Uitgeschakelde radio-button&lt;/label>
+  &lt;/div>
+
+  &lt;div>
+    &lt;label for="range-example">Range&lt;/label>
+    &lt;input type="range" id="range-example" name="range-example" min="0" max="100">
+  &lt;/div>
+
+  &lt;div>
+    &lt;label for="color-input-1">Selecteer de gewenste kleur&lt;/label>
+    &lt;input id="color-input-1" name="color-input-1" type="color" value="#ffffff">
+  &lt;/div>
+
+  &lt;div>
+    &lt;label for="color-input-1">Selecteer de gewenste kleur&lt;/label>
+    &lt;input id="color-input-1" name="color-input-1" type="color" value="#ffffff">
+  &lt;/div>
+
   &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
               </code>
@@ -95,7 +307,8 @@
             <h4>Visueel voorbeeld:</h4>
             <form action="" method="post" class="horizontal-view">
               <fieldset>
-                <legend>Fieldset test</legend>
+                <legend>Invoervelden</legend>
+                
                 <div>
                   <label for="form-example-base">Voorbeeld text input</label>
                   <input
@@ -105,14 +318,124 @@
                     type="text"
                   />
                 </div>
+
+                <div class="required">
+                  <label for="voorbeeld-input-required">Ipsum</label>
+                  <div>
+                    <span class="nota-bene">Dit veld is verplicht</span>
+                    <input id="voorbeeld-input-required" name="voorbeeld-input-required" placeholder="lorem ipsum" type="text" required>
+                  </div>
+                </div>
+
                 <div>
-                  <label for="form-example-base-2">Voorbeeld text input</label>
+                  <label for="voorbeeld-date-1">Datum</label>
+                  <input id="voorbeeld-date-1" name="voorbeeld-date-1" type="date">
+                </div>
+
+                <div>
+                  <label for="voorbeeld-email-1">Email</label>
+                  <input id="voorbeeld-email-1" name="voorbeeld-email-1" type="email">
+                </div>
+
+                <div>
+                  <label for="input-password-1">Wachtwoord</label>
+                  <div>
+                    <p class="explanation" id="input-password-1-message"><span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleineletter en 1 cijfer.</p>
+                    <input
+                      id="input-password-1"
+                      name="input-password-1"
+                      pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                      placeholder="wachtwoord"
+                      title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleineletter en 1 cijfer."
+                      type="password"
+                      aria-describedby="input-password-1-message">
+                  </div> 
+                </div>
+
+                <div>
+                  <label for="voorbeeld-tekstveld-base">Bericht</label>
+                  <textarea id="voorbeeld-tekstveld-base" name="voorbeeld-tekstveld-base" placeholder="Jouw vraag of opmerking"></textarea>
+                </div>
+
+                <div>
+                  <label for="select-base">Selectielijst</label>
+                  <select id="select-base" name="select-base">
+                    <option value="1">Optie 1</option>
+                    <option value="2">Optie 2</option>
+                    <option value="3">Optie 3</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Checkboxes</legend>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox-example-grouped" name="standaard-checkbox">
+                  <label for="checkbox-example-grouped">Selectievak</label>
+                </div>
+
+                <div class="checkbox required">
+                  <div>
+                    <span class="nota-bene">Dit veld is verplicht</span>
+
+                    <div>
+                      <input type="checkbox" id="checkbox-example-grouped" name="standaard-checkbox" required>
+                      <label for="checkbox-example-grouped">Verplicht selectievak</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox-example-disabled" name="voorwaarden" disabled>
+                  <label for="checkbox-example-disabled">Uitgeschakeld selectievak</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>radio-buttons</legend>
+                <div class="radio-button">
                   <input
-                    id="form-example-base-2"
-                    name="form-example-base-2"
-                    placeholder="voorbeeld text input"
-                    type="text"
-                  />
+                    type="radio"
+                    id="radio-example-default-5"
+                    name="standaard-radiobutton"
+                    value="value">
+                  <label for="radio-example-default-5">Radio button</label>
+                </div>
+
+                <div class="radio-button required">
+                  <div>
+                    <span class="nota-bene">Dit veld is verplicht</span>
+
+                    <div>
+                      <input type="radio" id="radio-example-grouped" name="standaard-radio" required>
+                      <label for="radio-example-grouped">Verplichte radio-button</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="radio-button">
+                  <input type="radio" id="radio-example-disabled" name="voorwaarden" disabled>
+                  <label for="radio-example-disabled">uitgeschakelde radio-button</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Overig</legend>
+
+                <div>
+                  <label for="range-example">Range</label>
+                  <input type="range" id="range-example" name="range-example" min="0" max="100">
+                </div>
+
+                <div>
+                  <label for="color-input-1">Selecteer de gewenste kleur</label>
+                  <input id="color-input-1" name="color-input-1" type="color" value="#ffffff">
+                </div>
+
+                <div>
+                  <label for="color-input-1">Selecteer de gewenste kleur</label>
+                  <input id="color-input-1" name="color-input-1" type="color" value="#ffffff">
                 </div>
               </fieldset>
               <button type="submit">Verzend</button>
@@ -123,14 +446,135 @@
               <code>
 &lt;form action="" method="post" class="horizontal-view">
   &lt;fieldset>
-    &lt;legend>Fieldset test&lt;/legend>
+    &lt;legend>Invoervelden&lt;/legend>
+    
     &lt;div>
       &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
-      &lt;input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+      &lt;input
+        id="form-example-base"
+        name="form-example-base"
+        placeholder="voorbeeld text input"
+        type="text"
+      />
     &lt;/div>
+
+    &lt;div class="required">
+      &lt;label for="voorbeeld-input-required">Ipsum&lt;/label>
+      &lt;div>
+        &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+        &lt;input id="voorbeeld-input-required" name="voorbeeld-input-required" placeholder="lorem ipsum" type="text" required>
+      &lt;/div>
+    &lt;/div>
+
     &lt;div>
-      &lt;label for="form-example-base-2">Voorbeeld text input&lt;/label>
-      &lt;input id="form-example-base-2" name="form-example-base-2" placeholder="voorbeeld text input" type="text">
+      &lt;label for="voorbeeld-date-1">Datum&lt;/label>
+      &lt;input id="voorbeeld-date-1" name="voorbeeld-date-1" type="date">
+    &lt;/div>
+
+    &lt;div>
+      &lt;label for="voorbeeld-email-1">Email&lt;/label>
+      &lt;input id="voorbeeld-email-1" name="voorbeeld-email-1" type="email">
+    &lt;/div>
+
+    &lt;div>
+      &lt;label for="input-password-1">Wachtwoord&lt;/label>
+      &lt;div>
+        &lt;p class="explanation" id="input-password-1-message">&lt;span>Toelichting:&lt;/span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleineletter en 1 cijfer.&lt;/p>
+        &lt;input
+          id="input-password-1"
+          name="input-password-1"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+          placeholder="wachtwoord"
+          title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleineletter en 1 cijfer."
+          type="password"
+          aria-describedby="input-password-1-message">
+      &lt;/div> 
+    &lt;/div>
+
+    &lt;div>
+      &lt;label for="voorbeeld-tekstveld-base">Bericht&lt;/label>
+      &lt;textarea id="voorbeeld-tekstveld-base" name="voorbeeld-tekstveld-base" placeholder="Jouw vraag of opmerking">&lt;/textarea>
+    &lt;/div>
+
+    &lt;div>
+      &lt;label for="select-base">Selectielijst&lt;/label>
+      &lt;select id="select-base" name="select-base">
+        &lt;option value="1">Optie 1&lt;/option>
+        &lt;option value="2">Optie 2&lt;/option>
+        &lt;option value="3">Optie 3&lt;/option>
+      &lt;/select>
+    &lt;/div>
+  &lt;/fieldset>
+
+  &lt;fieldset>
+    &lt;legend>Checkboxes&lt;/legend>
+
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-example-grouped" name="standaard-checkbox">
+      &lt;label for="checkbox-example-grouped">Selectievak&lt;/label>
+    &lt;/div>
+
+    &lt;div class="checkbox required">
+      &lt;div>
+        &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+
+        &lt;div>
+          &lt;input type="checkbox" id="checkbox-example-grouped" name="standaard-checkbox" required>
+          &lt;label for="checkbox-example-grouped">Verplicht selectievak&lt;/label>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="checkbox">
+      &lt;input type="checkbox" id="checkbox-example-disabled" name="voorwaarden" disabled>
+      &lt;label for="checkbox-example-disabled">Uitgeschakeld selectievak&lt;/label>
+    &lt;/div>
+  &lt;/fieldset>
+
+  &lt;fieldset>
+    &lt;legend>radio-buttons&lt;/legend>
+    &lt;div class="radio-button">
+      &lt;input
+        type="radio"
+        id="radio-example-default-5"
+        name="standaard-radiobutton"
+        value="value">
+      &lt;label for="radio-example-default-5">Radio button&lt;/label>
+    &lt;/div>
+
+    &lt;div class="radio-button required">
+      &lt;div>
+        &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+        
+        &lt;div>
+          &lt;input type="radio" id="radio-example-grouped" name="standaard-radio" required>
+          &lt;label for="radio-example-grouped">Verplichte radio-button&lt;/label>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="radio-button">
+      &lt;input type="radio" id="radio-example-disabled" name="voorwaarden" disabled>
+      &lt;label for="radio-example-disabled">uitgeschakelde radio-button&lt;/label>
+    &lt;/div>
+  &lt;/fieldset>
+
+  &lt;fieldset>
+    &lt;legend>Overig&lt;/legend>
+
+    &lt;div>
+      &lt;label for="range-example">Range&lt;/label>
+      &lt;input type="range" id="range-example" name="range-example" min="0" max="100">
+    &lt;/div>
+
+    &lt;div>
+      &lt;label for="color-input-1">Selecteer de gewenste kleur&lt;/label>
+      &lt;input id="color-input-1" name="color-input-1" type="color" value="#ffffff">
+    &lt;/div>
+
+    &lt;div>
+      &lt;label for="color-input-1">Selecteer de gewenste kleur&lt;/label>
+      &lt;input id="color-input-1" name="color-input-1" type="color" value="#ffffff">
     &lt;/div>
   &lt;/fieldset>
   &lt;button type="submit">Verzend&lt;/button>

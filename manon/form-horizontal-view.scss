@@ -18,6 +18,59 @@ form.horizontal-view {
     flex-wrap: wrap;
     gap: var(--form-horizontal-view-gap);
 
+    &.checkbox {
+      gap: var(--form-checkbox-margin-right);
+
+      %horizontal-view-checkbox,
+      input[type="checkbox"] {
+        /* Align checkbox with input fields */
+        margin-left: calc(var(--form-horizontal-view-label-max-width) + var(--form-horizontal-view-gap));
+        flex-grow: 0;
+        margin-right: 0;
+
+        & + label {
+          max-width: 100%;
+        }
+      }
+
+      > div {
+        @extend %horizontal-view-checkbox;
+        gap: 0;
+
+        input[type="checkbox"] {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &.radio-button {
+      gap: var(--form-radio-margin-right);
+
+      %horizontal-view-radio,
+      input[type="radio"] {
+        /* Align radio with input fields */
+        margin-left: calc(var(--form-horizontal-view-label-max-width) + var(--form-horizontal-view-gap));
+        flex-grow: 0;
+        margin-right: 0;
+
+        & + label {
+          max-width: 100%;
+        }
+      }
+
+      > div {
+        @extend %horizontal-view-radio;
+
+        input[type="radio"] {
+          margin-left: 0;
+        }
+      }
+    }
+
+    input[type="color"] {
+      max-width: var(--form-input-color-max-width);
+    }
+
     > * {
       flex-grow: 1;
       box-sizing: border-box;
@@ -39,6 +92,7 @@ form.horizontal-view {
       }
 
       label {
+        width: 100%;
         max-width: var(--form-horizontal-view-label-max-width);
       }
     }
