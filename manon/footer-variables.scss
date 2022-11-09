@@ -2,14 +2,14 @@
 /*------------------- footer-variables.scss ---------------------*/
 /*---------------------------------------------------------------*/
 :root {
-  /* --footer-min-height: ; */
-  --footer-justify-content: center;
-  /* --footer-min-height: ; */
-  --footer-background-color: var(--application-base-tint-1-background-color);
-  --footer-text-color: var(--application-base-tint-1-text-color);
+  --footer-min-height: 10rem;
+  --footer-justify-content: flex-end;
+  --footer-background-color: var(--branding-color-1-background-color);
+  --footer-text-color: var(--branding-color-1-text-color);
+  --footer-padding: var(--application-base-padding);
 
   /* Links */
-  /* --footer-link-text-color: ; */
+  --footer-link-text-color: var(--footer-text-color);
   --footer-link-text-decoration: none;
 
   /* Links hover */
