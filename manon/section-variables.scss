@@ -9,18 +9,10 @@
   /* --section-text-color: ; */
 
   /* Section title */
-  --section-title-margin-top: var(--layout-base-content-block-title-margin-top);
-  --section-title-margin-bottom: var(
-    --layout-base-content-block-title-margin-bottom
-  );
+  --section-title-margin: var(--layout-base-content-block-title-margin);
 
   /* Section subtitle */
-  --section-subtitle-margin-top: var(
-    --layout-base-content-block-subtitle-margin-top
-  );
-  --section-subtitle-margin-bottom: var(
-    --layout-base-content-block-subtitle-margin-bottom
-  );
+  --section-subtitle-margin: var(--layout-base-content-block-subtitle-margin);
 
   /* Content block within sections */
   --section-content-block-gap: var(--section-gap);

@@ -21,9 +21,7 @@
   --layout-base-within-content-block-gap: 2rem;
 
   /* Titles */
-  --layout-base-content-block-title-margin-top: 2rem;
-  --layout-base-content-block-title-margin-bottom: 0;
+  --layout-base-content-block-title-margin: var(--heading-xl-margin);
 
-  --layout-base-content-block-subtitle-margin-top: 2rem;
-  --layout-base-content-block-subtitle-margin-bottom: 0;
+  --layout-base-content-block-subtitle-margin: var(--heading-large-margin);
 }
