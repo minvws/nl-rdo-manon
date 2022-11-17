@@ -12,6 +12,7 @@ main section {
   color: var(--section-text-color, inherit);
   width: 100%;
   box-sizing: border-box;
+  background-color: pink;
 
   > div {
     display: flex;
@@ -21,25 +22,5 @@ main section {
     box-sizing: border-box;
     margin: 0 auto;
     gap: var(--section-content-block-gap);
-
-    h1 {
-      margin-top: var(--section-title-margin-top);
-      margin-bottom: var(--section-title-margin-bottom);
-    }
-
-    h2 {
-      margin-top: var(--section-subtitle-margin-top);
-      margin-bottom: var(--section-subtitle-margin-bottom);
-    }
-  }
-
-  h1 {
-    margin-top: var(--section-title-margin-top);
-    margin-bottom: var(--section-title-margin-bottom);
-  }
-
-  h2 {
-    margin-top: var(--section-subtitle-margin-top);
-    margin-bottom: var(--section-subtitle-margin-bottom);
   }
 }

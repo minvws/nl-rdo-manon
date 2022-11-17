@@ -9,6 +9,7 @@
 	font-weight: var(--heading-xxl-font-weight, inherit);
 	line-height: var(--heading-xxl-line-height, inherit);
 	color: var(--heading-xxl-text-color, inherit);
+	background-color: var(--heading-xxl-background-color, inherit);
 	margin: var(--heading-xxl-margin);
 }
 
@@ -18,6 +19,7 @@
 	font-weight: var(--heading-xl-font-weight, inherit);
 	line-height: var(--heading-xl-line-height, inherit);
 	color: var(--heading-xl-text-color, inherit);
+	background-color: var(--heading-xl-background-color, inherit);
 	margin: var(--heading-xl-margin);
 }
 
@@ -27,6 +29,7 @@
 	font-weight: var(--heading-large-font-weight, inherit);
 	line-height: var(--heading-large-line-height, inherit);
 	color: var(--heading-large-text-color, inherit);
+	background-color: var(--heading-large-background-color, inherit);
 	margin: var(--heading-large-margin);
 }
 
@@ -36,6 +39,7 @@
 	font-weight: var(--heading-normal-font-weight, inherit);
 	line-height: var(--heading-normal-line-height, inherit);
 	color: var(--heading-normal-text-color, inherit);
+	background-color: var(--heading-normal-background-color, inherit);
 	margin: var(--heading-normal-margin);
 }
 
@@ -45,6 +49,7 @@
 	font-weight: var(--heading-small-font-weight, inherit);
 	line-height: var(--heading-small-line-height, inherit);
 	color: var(--heading-small-text-color, inherit);
+	background-color: var(--heading-small-background-color, inherit);
 	margin: var(--heading-small-margin);
 }
 
@@ -54,5 +59,6 @@
 	font-weight: var(--heading-xs-font-weight, inherit);
 	line-height: var(--heading-xs-line-height, inherit);
 	color: var(--heading-xs-text-color, inherit);
+	background-color: var(--heading-xs-background-color, inherit);
 	margin: var(--heading-xs-margin);
 }

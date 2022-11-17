@@ -4,12 +4,14 @@
 :root { 
   --heading-font-weight: bold;
   --heading-text-color: var(--application-base-text-color);
+  --heading-background-color: unset;
   --heading-line-height: var(--application-base-line-height);
 
   /* Heading XXL */
   --heading-xxl-font-size: 2.5rem;
   --heading-xxl-font-weight: var(--heading-font-weight);
   --heading-xxl-text-color: var(--heading-text-color);
+  --heading-xxl-background-color: var(--heading-background-color);
   --heading-xxl-line-height: var(--heading-line-height);
   --heading-xxl-margin: 0;
 
@@ -17,6 +19,7 @@
   --heading-xl-font-size: 2rem;
   --heading-xl-font-weight: var(--heading-font-weight);
   --heading-xl-text-color: var(--heading-text-color);
+  --heading-xl-background-color: var(--heading-background-color);
   --heading-xl-line-height: var(--heading-line-height);
   --heading-xl-margin: 0;
 
@@ -24,6 +27,7 @@
   --heading-large-font-size: 1.5rem;
   --heading-large-font-weight: var(--heading-font-weight);
   --heading-large-text-color: var(--heading-text-color);
+  --heading-large-background-color: var(--heading-background-color);
   --heading-large-line-height: var(--heading-line-height);
   --heading-large-margin: 0;
 
@@ -31,6 +35,7 @@
   --heading-normal-font-size: 1rem;
   --heading-normal-font-weight: var(--heading-font-weight);
   --heading-normal-text-color: var(--heading-text-color);
+  --heading-normal-background-color: var(--heading-background-color);
   --heading-normal-line-height: var(--heading-line-height);
   --heading-normal-margin: 0;
 
@@ -38,6 +43,7 @@
   --heading-small-font-size: 0.8rem;
   --heading-small-font-weight: var(--heading-font-weight);
   --heading-small-text-color: var(--heading-text-color);
+  --heading-small-background-color: var(--heading-background-color);
   --heading-small-line-height: var(--heading-line-height);
   --heading-small-margin: 0;
 
@@ -45,6 +51,7 @@
   --heading-xs-font-size: 0.7rem;
   --heading-xs-font-weight: var(--heading-font-weight);
   --heading-xs-text-color: var(--heading-text-color);
+  --heading-xs-background-color: var(--heading-background-color);
   --heading-xs-line-height: var(--heading-line-height);
   --heading-xs-margin: 0;
 }
