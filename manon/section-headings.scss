@@ -1,0 +1,60 @@
+/*---------------------------------------------------------------*/
+/*-------------------- section-headings.scss --------------------*/
+/*---------------------------------------------------------------*/
+@use "section-headings-variables";
+
+main section {
+  h1 {
+    font-size: var(--section-h1-font-size, inherit);
+    color: var(--section-h1-text-color, inherit);
+    background-color: var(--section-h1-background-color, transparent);
+    font-weight: var(--section-h1-font-weight, inherit);
+    line-height: var(--section-h1-line-height, inherit);
+    margin: var(--section-h1-margin, inherit);
+  }
+
+  h2 {
+    font-size: var(--section-h2-font-size, inherit);
+    color: var(--section-h2-text-color, inherit);
+    background-color: var(--section-h2-background-color, transparent);
+    font-weight: var(--section-h2-font-weight, inherit);
+    line-height: var(--section-h2-line-height, inherit);
+    margin: var(--section-h2-margin, inherit);
+  }
+
+  h3 {
+    font-size: var(--section-h3-font-size, inherit);
+    color: var(--section-h3-text-color, inherit);
+    background-color: var(--section-h3-background-color, transparent);
+    font-weight: var(--section-h3-font-weight, inherit);
+    line-height: var(--section-h3-line-height, inherit);
+    margin: var(--section-h3-margin, inherit);
+  }
+
+  h4 {
+    font-size: var(--section-h4-font-size, inherit);
+    color: var(--section-h4-text-color, inherit);
+    background-color: var(--section-h4-background-color, transparent);
+    font-weight: var(--section-h4-font-weight, inherit);
+    line-height: var(--section-h4-line-height, inherit);
+    margin: var(--section-h4-margin, inherit);
+  }
+
+  h5 {
+    font-size: var(--section-h5-font-size, inherit);
+    color: var(--section-h5-text-color, inherit);
+    background-color: var(--section-h5-background-color, transparent);
+    font-weight: var(--section-h5-font-weight, inherit);
+    line-height: var(--section-h5-line-height, inherit);
+    margin: var(--section-h5-margin, inherit);
+  }
+
+  h6 {
+    font-size: var(--section-h6-font-size, inherit);
+    color: var(--section-h6-text-color, inherit);
+    background-color: var(--section-h6-background-color, transparent);
+    font-weight: var(--section-h6-font-weight, inherit);
+    line-height: var(--section-h6-line-height, inherit);
+    margin: var(--section-h6-margin, inherit);
+  }
+}

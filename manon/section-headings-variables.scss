@@ -1,0 +1,53 @@
+/*------------------------------------------------------------------------*/
+/*------------------- section-headings-variables.scss --------------------*/
+/*------------------------------------------------------------------------*/
+
+:root {
+  /* h1 */
+  --section-h1-font-size: var(--h1-font-size);
+  --section-h1-color: var(--h1-color);
+  --section-h1-font-weight: var(--h1-font-weight);
+  --section-h1-line-height: var(--h1-line-height);
+  --section-h1-margin: var(--h1-margin);
+  --section-h1-background-color: var(--h1-background-color);
+ 
+  /* h2 */
+  --section-h2-font-size: var(--h2-font-size);
+  --section-h2-color: var(--h2-color);
+  --section-h2-font-weight: var(--h2-font-weight);
+  --section-h2-line-height: var(--h2-line-height);
+  --section-h2-margin: var(--h2-margin);
+  --section-h2-background-color: var(--h2-background-color);
+
+  /* h3 */
+  --section-h3-font-size: var(--h3-font-size);
+  --section-h3-color: var(--h3-color);
+  --section-h3-font-weight: var(--h3-font-weight);
+  --section-h3-line-height: var(--h3-line-height);
+  --section-h3-margin: var(--h3-margin);
+  --section-h3-background-color: var(--h3-background-color);
+ 
+  /* h4 */
+  --section-h4-font-size: var(--h4-font-size);
+  --section-h4-color: var(--h4-color);
+  --section-h4-font-weight: var(--h4-font-weight);
+  --section-h4-line-height: var(--h4-line-height);
+  --section-h4-margin: var(--h4-margin);
+  --section-h4-background-color: var(--h4-background-color);
+
+  /* h5 */
+  --section-h5-font-size: var(--h5-font-size);
+  --section-h5-color: var(--h5-color);
+  --section-h5-font-weight: var(--h5-font-weight);
+  --section-h5-line-height: var(--h5-line-height);
+  --section-h5-margin: var(--h5-margin);
+  --section-h5-background-color: var(--h5-background-color);
+ 
+  /* h6 */
+  --section-h6-font-size: var(--h6-font-size);
+  --section-h6-color: var(--h6-color);
+  --section-h6-font-weight: var(--h6-font-weight);
+  --section-h6-line-height: var(--h6-line-height);
+  --section-h6-margin: var(--h6-margin);
+  --section-h6-background-color: var(--h6-background-color);
+}
