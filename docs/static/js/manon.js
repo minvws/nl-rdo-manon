@@ -205,7 +205,7 @@
     var rows = table.querySelector("tbody").querySelectorAll("tr:not(.expando-row)");
     for (var i = 0; i < rows.length; i++) {
       var row = rows[i];
-      if (i % 2 == 0) {
+      if (i % 2) {
         row.classList.add("even");
         row.classList.remove("odd");
       } else {

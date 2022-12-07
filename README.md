@@ -29,3 +29,37 @@ https://fonts.google.com/specimen/Neuton/about
 ### Open Sans
 https://fonts.google.com/specimen/Open+Sans/about
 
+
+# English
+
+# Manon
+The documentation is located in the "docs" directory and online on https://minvws.github.io/nl-rdo-manon. Manon and the documentation is currently being developed. This means that it's possible that parts haven't been fully tested or added yet. It also means that as it is in development things may change. If you run into any issues that haven't been documented within the repository feel free to add them. This will make them visual and solvable. We highly appreciate the feedback and insight.
+
+## Wat
+Manon is a design framework that is based on the following principles
+
+### "Classless" when possible.
+Manon uses the power of css when possible. This means adding little to no classes within the HTML is preferred. That way the code layers stay as separate as possible which leads to code that is easy to read and maintain. Making it possible to change the visual look of the application without little to no changes within the HTML structure.
+
+### As small as possible
+Only use what you need. Separate components that can be used within a project without the need to add the whole set of options.
+
+### Adjustable
+Components are adjustable through variables. The small "only what I needed set" makes sure you don't need unnecessary overrides within your CSS. For more information on the available variables and how to use them see the documentation.
+
+## Origin
+During the vaccination campaign a lot of applications were launched and managed within a short time frame. With the strict branding requirements of the Rijksoverheid, the wish to produce accessible websites and due to the dynamic of the pandemic, the current solutions didn't meet the requirements. So within a short time frame the Ministerie of VWS produced a framework to do just that to simplify and optimize the production of their needed applications and sites. This framework has now been expanded and adjusted to be of use for a broader audience.
+
+With the biggest difference between Manon Rijk (the version which uses the Rijksoverheid branding) and Manon Open, this version which is for general use, is that the open version is adjustable. As well as the added possibility to only select and use the parts that are needed within your project.
+
+
+## License
+Zie [LICENSES.md](./LICENSES.md).
+
+All fonts used within Manon remain under their own license. For example:
+
+### Neuton
+https://fonts.google.com/specimen/Neuton/about
+
+### Open Sans
+https://fonts.google.com/specimen/Open+Sans/about
