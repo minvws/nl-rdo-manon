@@ -20,3 +20,12 @@ Het verschil tussen de Manon Rijk met de rijkshuisstijl en Manon Open voor algem
 
 ## Licentie
 Zie [LICENSES.md](./LICENSES.md).
+
+Alle lettertypes binnen Manon vallen onder en behouden hun eigen licentie. Voor meer informatie zie bijvoorbeeld: 
+
+### Neuton
+https://fonts.google.com/specimen/Neuton/about
+
+### Open Sans
+https://fonts.google.com/specimen/Open+Sans/about
+
