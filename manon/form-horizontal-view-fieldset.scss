@@ -42,11 +42,13 @@ form.horizontal-view {
     }
 
     .required {
-      label {
-        margin-top: var(
-          --form-horizontal-view-fieldset-label-required-margin-top
-        );
+      .nota-bene {
+        margin-bottom: var(--form-horizontal-view-fieldset-nota-bene-required-margin-bottom);
       }
+    }
+
+    input[type="color"] {
+      float: left;
     }
 
     .checkbox,
@@ -54,13 +56,24 @@ form.horizontal-view {
       margin-left: var(--form-horizontal-view-label-max-width);
       width: var(--form-horizontal-view-input-max-width);
 
+      .horizontal-view {
+        display: block;
+        gap: 0;
+      }
+
       input,
       label {
         float: none;
+        margin: 0;
       }
 
       input {
         width: var(--form-checkbox-width);
+        margin-right: var(--form-checkbox-margin-right);
+      }
+
+      label {
+        margin-top: 0;
       }
 
       /* Help button */

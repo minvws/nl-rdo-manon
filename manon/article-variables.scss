@@ -9,18 +9,10 @@
   /* --article-text-color: ; */
 
   /* article title */
-  --article-title-margin-top: var(--layout-base-content-block-title-margin-top);
-  --article-title-margin-bottom: var(
-    --layout-base-content-block-title-margin-bottom
-  );
+  --article-title-margin: var(--layout-base-content-block-title-margin);
 
   /* article subtitle */
-  --article-subtitle-margin-top: var(
-    --layout-base-content-block-subtitle-margin-top
-  );
-  --article-subtitle-margin-bottom: var(
-    --layout-base-content-block-subtitle-margin-bottom
-  );
+  --article-subtitle-margin: var(--layout-base-content-block-subtitle-margin);
 
   /* Content block within article's */
   --article-content-block-gap: var(--article-gap);

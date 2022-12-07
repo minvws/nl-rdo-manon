@@ -10,7 +10,9 @@ form {
     vertical-align: var(--form-checkbox-vertical-align);
     cursor: var(--form-checkbox-cursor);
     width: var(--form-checkbox-width);
+    min-width: var(--form-checkbox-width);
     height: var(--form-checkbox-height);
+    accent-color: var(--form-radio-background-color);
 
     & + label {
       width: auto;

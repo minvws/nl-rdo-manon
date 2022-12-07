@@ -12,6 +12,8 @@ form {
     width: var(--form-input-color-width);
     min-height: var(--form-input-color-min-height);
     min-width: var(--form-input-color-min-width);
+    max-height: var(--form-input-color-max-height);
+    max-width: var(--form-input-color-max-width);
     box-sizing: border-box;
     padding: var(--form-input-color-padding);
     align-self: flex-start;
