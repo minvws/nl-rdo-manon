@@ -150,15 +150,15 @@ function initExpandoButton(button) {
  * @param {HTMLElement} table
  */
 function updateZebra(table) {
-  var rows = table.querySelectorAll("tr:not(.expando-row)");
+  var rows = table.querySelector("tbody").querySelectorAll("tr:not(.expando-row)");
   for (var i = 0; i < rows.length; i++) {
     var row = rows[i];
     if (i % 2) {
-      row.classList.add("odd");
-      row.classList.remove("even");
-    } else {
       row.classList.add("even");
       row.classList.remove("odd");
+    } else {
+      row.classList.add("odd");
+      row.classList.remove("even");
     }
   }
 }
