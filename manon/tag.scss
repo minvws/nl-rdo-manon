@@ -1,0 +1,13 @@
+/*---------------------------------------------------------------*/
+/*--------------------------- tag.scss --------------------------*/
+/*---------------------------------------------------------------*/
+@use "tag-variables";
+
+%tag,
+.tag {
+  background-color: var(--tag-background-color);
+  color: var(--tag-text-color);
+  padding: var(--tag-padding);
+  border-radius: var(--tag-border-radius);
+  line-height: var(--tag-line-height);
+}
