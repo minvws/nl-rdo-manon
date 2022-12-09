@@ -50,6 +50,10 @@
   }
 }
 
+.tiles > div {
+  @extend %tile;
+}
+
 ul.tiles {
   padding-left: 0;
 
