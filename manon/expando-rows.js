@@ -108,10 +108,10 @@ function initExpandoButton(button) {
   var closeLabel, openLabel;
   if (expanded) {
     closeLabel = button.innerText.trim();
-    openLabel = button.dataset.openLabel.trim() || "Open details";
+    openLabel = (button.dataset.openLabel || "Open details").trim();
     button.setAttribute("aria-expanded", "true");
   } else {
-    closeLabel = button.dataset.closeLabel.trim() || "Sluit details";
+    closeLabel = (button.dataset.closeLabel || "Sluit details").trim();
     openLabel = button.innerText.trim();
     button.setAttribute("aria-expanded", "false");
     row.setAttribute("hidden", "");
