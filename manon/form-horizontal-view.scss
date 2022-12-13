@@ -104,14 +104,6 @@ form.horizontal-view {
         width: 100%;
         max-width: var(--form-horizontal-view-label-max-width);
       }
-
-      > button,
-      > a.button,
-      > input[type="button"],
-      > input[type="submit"],
-      > input[type="reset"] {
-        margin-left: 5rem;
-      }
     }
   }
 
