@@ -8,6 +8,15 @@ $breakpoint: 24rem !default;
 form.horizontal-view {
   flex-direction: column;
   gap: var(--form-horizontal-view-gap);
+  flex-wrap: wrap;
+
+  > button,
+  > a.button,
+  > input[type="button"],
+  > input[type="submit"],
+  > input[type="reset"] {
+    margin-left: var(--form-horizontal-view-button-margin-left);
+  }
 
   > div,
   > section {
@@ -94,6 +103,14 @@ form.horizontal-view {
       label {
         width: 100%;
         max-width: var(--form-horizontal-view-label-max-width);
+      }
+
+      > button,
+      > a.button,
+      > input[type="button"],
+      > input[type="submit"],
+      > input[type="reset"] {
+        margin-left: 5rem;
       }
     }
   }
