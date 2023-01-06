@@ -1,0 +1,15 @@
+/*---------------------------------------------------------------*/
+/*------------------------- tag-variables.scss ------------------*/
+/*---------------------------------------------------------------*/
+:root {
+  --tag-background-color: var(--branding-color-1-background-color);
+  --tag-text-color: var(--branding-color-1-text-color);
+  --tag-font-size: var(--application-base-font-size);
+  --tag-font-weight: bold;
+  --tag-line-height: var(--application-base-line-height);
+  --tag-padding: 0.25rem 0.5rem;
+  --tag-border-radius: 0.25rem;
+  --tag-border-weight: 0;
+  --tag-border-style: solid;
+  --tag-border-color: transparent;
+}
