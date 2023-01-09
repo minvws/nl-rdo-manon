@@ -13,6 +13,9 @@
 @use "@minvws/manon/finn-medium";
 @use "@minvws/manon/finn-large";
 
+/* Tags */
+@use "@minvws/manon/tag-colors-soft";
+
 /* Headings sets */
 @use "@minvws/manon/headings-base-set";
 
@@ -186,6 +189,8 @@
 /* Tags */
 @use "@minvws/manon/tag";
 @use "@minvws/manon/tags";
+@use "@minvws/manon/tags-6-3";
+@use "@minvws/manon/tags-6";
 
 /* Other */
 @use "@minvws/manon/code-base";

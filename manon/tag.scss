@@ -5,14 +5,34 @@
 
 %tag,
 .tag {
-  background-color: var(--tag-background-color);
-  color: var(--tag-text-color);
   font-size: var(--font-size);
   font-weight: var(--font-weight);
   line-height: var(--tag-line-height);
   padding: var(--tag-padding);
   border-radius: var(--tag-border-radius);
-  border-weight: var(--tag-border-weight);
-  border-style: var(--tag-border-style);
-  border-color: var(--tag-border-color);
+  border-width: var(--tag-border-width);
+
+  &.plain,
+  &.solid, 
+  &.dashed,
+  &.dotted {
+    border-width: var(--tag-border-width);
+  }
+
+  &.plain {
+    border-style: solid;
+    border-color: transparent;
+  }
+
+  &.solid {
+    border-style: solid;
+  }
+
+  &.dashed {
+    border-style: dashed;
+  }
+
+  &.dotted {
+    border-style: dotted;
+  }
 }

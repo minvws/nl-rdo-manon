@@ -32,3 +32,14 @@ ul.tags > li {
   @extend %tag;
   list-style: var(--tags-list-style);
 }
+
+table.tags {
+  display: table;
+  
+  td {
+    p,
+    span {
+      @extend %tag;
+    }
+  }
+}

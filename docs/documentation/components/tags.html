@@ -124,6 +124,54 @@
 &lt;/section>
                 </code>
               </pre>
+
+              <h3>Tags binnen een tabel</h3>
+              <p>Tabel-elementen visueel weergegeven als tag. Voor het direct aanspreken van een enkel element zie: <a href="tags.html">tags</a>.</p>
+              <h4>Visueel voorbeeld:</h4>
+              <div class="horizontal-scroll">
+                <table class="tags">
+                  <caption>Voorbeeld tag binnen tabel:</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Licht</th>
+                      <th scope="col">Medium</th>
+                      <th scope="col">Donker</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><p class="tags-color-1-light">Label</p></td>
+                      <td><p class="tags-color-1-medium">Label</p></td>
+                      <td><p class="tags-color-1-dark">Label</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h4>HTML-Voorbeeld:</h4>
+              <pre>
+                <code>
+&lt;div class="horizontal-scroll">
+  &lt;table class="tags">
+    &lt;caption>Voorbeeld tag binnen tabel:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Licht&lt;/th>
+        &lt;th scope="col">Medium&lt;/th>
+        &lt;th scope="col">Donker&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-1-light">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-1-medium">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-1-dark">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+                </code>
+              </pre>
             </section>
 
             <section id="requirements">
@@ -133,7 +181,7 @@
               
               <h3>Importeer component via NPM</h3>
 
-              <p><strong>Let op:</strong>Tags maakt gebruik van de volgende componenten die ingeladen dienen te zijn voor het tags-component.</p>
+              <p><strong>Let op:</strong> Tags maakt gebruik van de volgende componenten die ingeladen dienen te zijn voor het tags-component.</p>
                <ul>
                 <li><a href="tag.html">tag</a></li>
               </ul>
