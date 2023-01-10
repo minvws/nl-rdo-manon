@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tags kleurenset zes kleuren & drie tinten</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./tag.html">Tag</a></li>
+            <li><a href="./tags-6-3.html" aria-current="page">Tags kleurenset zes kleuren & drie tinten</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./tag.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
+        <article>
+          <div>
+            <section id="introduction">
+              <h1>Tags kleurenset zes kleuren & drie tinten</h1>
+              <p>Kleurensets voor tags.</p>
+
+              <h2>Benodigde stappen:</h2>
+              <ol>
+                <li>
+                  Voeg de benodigde bestanden toe aan het project.
+                  <ul>
+                    <li>Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+                    <li>Voeg de benodigde class toe op de gewenste elementen. Voor meer informatie over het implementeren zie de <a href="#examples">voorbeelden</a>.</li> 
+                  </ul>
+                </li>
+              </ol>
+            </section>
+
+            <section id="examples">
+              <h2>Voorbeelden</h2>
+
+              <h3>Kleuren met drie tinten</h3>
+              <p>Voorbeeld waarbij gebruik wordt gemaakt van de volledige kleurenset met zes basiskleuren en drie tinten per kleur.</p>
+
+              <h4>Visueel voorbeeld</h4>
+              <div class="horizontal-scroll">
+                <table class="tags">
+                  <caption>Kleuren-overzicht:</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Licht</th>
+                      <th scope="col">Medium</th>
+                      <th scope="col">Donker</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><p class="tags-color-1-light">Label</p></td>
+                      <td><p class="tags-color-1-medium">Label</p></td>
+                      <td><p class="tags-color-1-dark">Label</p></td>
+                    </tr>
+                    
+                    <tr>
+                      <td><p class="tags-color-2-light">Label</p></td>
+                      <td><p class="tags-color-2-medium">Label</p></td>
+                      <td><p class="tags-color-2-dark">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-3-light">Label</p></td>
+                      <td><p class="tags-color-3-medium">Label</p></td>
+                      <td><p class="tags-color-3-dark">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-4-light">Label</p></td>
+                      <td><p class="tags-color-4-medium">Label</p></td>
+                      <td><p class="tags-color-4-dark">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-5-light">Label</p></td>
+                      <td><p class="tags-color-5-medium">Label</p></td>
+                      <td><p class="tags-color-5-dark">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-6-light">Label</p></td>
+                      <td><p class="tags-color-6-medium">Label</p></td>
+                      <td><p class="tags-color-6-dark">Label</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h4>Html-voorbeeld</h4>
+              <pre>
+                <code>
+&lt;div class="horizontal-scroll">
+  &lt;table class="tags">
+    &lt;caption>Kleuren en types-overzicht:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Licht&lt;/th>
+        &lt;th scope="col">Medium&lt;/th>
+        &lt;th scope="col">Donker&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-1-light">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-1-medium">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-1-dark">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+      
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-2-light">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-2-medium">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-2-dark">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-3-light">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-3-medium">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-3-dark">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-4-light">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-4-medium">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-4-dark">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-5-light">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-5-medium">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-5-dark">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-6-light">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-6-medium">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-6-dark">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+      
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+                </code>
+              </pre>
+
+              <h3>Kleuren en types</h3>
+              <p>Voorbeeld waarbij gebruik wordt gemaakt van de volledige kleurenset en de beschikbare border-styles.</p>
+              <h4>Visueel voorbeeld</h4>
+              <div class="horizontal-scroll">
+                <table class="tags">
+                  <caption>Kleuren en types-overzicht:</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Licht</th>
+                      <th scope="col">Medium</th>
+                      <th scope="col">Donker</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><p class="tags-color-1-light plain">Label</p></td>
+                      <td><p class="tags-color-1-medium plain">Label</p></td>
+                      <td><p class="tags-color-1-dark plain">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-1-light solid">Label</p></td>
+                      <td><p class="tags-color-1-medium solid">Label</p></td>
+                      <td><p class="tags-color-1-dark solid">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-1-light dashed">Label</p></td>
+                      <td><p class="tags-color-1-medium dashed">Label</p></td>
+                      <td><p class="tags-color-1-dark dashed">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-1-light dotted">Label</p></td>
+                      <td><p class="tags-color-1-medium dotted">Label</p></td>
+                      <td><p class="tags-color-1-dark dotted">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-2-light plain">Label</p></td>
+                      <td><p class="tags-color-2-medium plain">Label</p></td>
+                      <td><p class="tags-color-2-dark plain">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-2-light solid">Label</p></td>
+                      <td><p class="tags-color-2-medium solid">Label</p></td>
+                      <td><p class="tags-color-2-dark solid">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-2-light dashed">Label</p></td>
+                      <td><p class="tags-color-2-medium dashed">Label</p></td>
+                      <td><p class="tags-color-2-dark dashed">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-2-light dotted">Label</p></td>
+                      <td><p class="tags-color-2-medium dotted">Label</p></td>
+                      <td><p class="tags-color-2-dark dotted">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-3-light plain">Label</p></td>
+                      <td><p class="tags-color-3-medium plain">Label</p></td>
+                      <td><p class="tags-color-3-dark plain">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-3-light solid">Label</p></td>
+                      <td><p class="tags-color-3-medium solid">Label</p></td>
+                      <td><p class="tags-color-3-dark solid">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-3-light dashed">Label</p></td>
+                      <td><p class="tags-color-3-medium dashed">Label</p></td>
+                      <td><p class="tags-color-3-dark dashed">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-3-light dotted">Label</p></td>
+                      <td><p class="tags-color-3-medium dotted">Label</p></td>
+                      <td><p class="tags-color-3-dark dotted">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-4-light plain">Label</p></td>
+                      <td><p class="tags-color-4-medium plain">Label</p></td>
+                      <td><p class="tags-color-4-dark plain">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-4-light solid">Label</p></td>
+                      <td><p class="tags-color-4-medium solid">Label</p></td>
+                      <td><p class="tags-color-4-dark solid">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-4-light dashed">Label</p></td>
+                      <td><p class="tags-color-4-medium dashed">Label</p></td>
+                      <td><p class="tags-color-4-dark dashed">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-4-light dotted">Label</p></td>
+                      <td><p class="tags-color-4-medium dotted">Label</p></td>
+                      <td><p class="tags-color-4-dark dotted">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-5-light plain">Label</p></td>
+                      <td><p class="tags-color-5-medium plain">Label</p></td>
+                      <td><p class="tags-color-5-dark plain">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-5-light solid">Label</p></td>
+                      <td><p class="tags-color-5-medium solid">Label</p></td>
+                      <td><p class="tags-color-5-dark solid">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-5-light dashed">Label</p></td>
+                      <td><p class="tags-color-5-medium dashed">Label</p></td>
+                      <td><p class="tags-color-5-dark dashed">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-5-light dotted">Label</p></td>
+                      <td><p class="tags-color-5-medium dotted">Label</p></td>
+                      <td><p class="tags-color-5-dark dotted">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-6-light plain">Label</p></td>
+                      <td><p class="tags-color-6-medium plain">Label</p></td>
+                      <td><p class="tags-color-6-dark plain">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-6-light solid">Label</p></td>
+                      <td><p class="tags-color-6-medium solid">Label</p></td>
+                      <td><p class="tags-color-6-dark solid">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-6-light dashed">Label</p></td>
+                      <td><p class="tags-color-6-medium dashed">Label</p></td>
+                      <td><p class="tags-color-6-dark dashed">Label</p></td>
+                    </tr>
+
+                    <tr>
+                      <td><p class="tags-color-6-light dotted">Label</p></td>
+                      <td><p class="tags-color-6-medium dotted">Label</p></td>
+                      <td><p class="tags-color-6-dark dotted">Label</p></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+
+              <h4>Html-voorbeeld</h4>
+              <pre>
+                <code>
+&lt;div class="horizontal-scroll">
+  &lt;table class="tags">
+    &lt;caption>Kleuren en types-overzicht:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Licht&lt;/th>
+        &lt;th scope="col">Medium&lt;/th>
+        &lt;th scope="col">Donker&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-1-light plain">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-1-medium plain">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-1-dark plain">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-1-light solid">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-1-medium solid">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-1-dark solid">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-1-light dashed">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-1-medium dashed">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-1-dark dashed">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-1-light dotted">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-1-medium dotted">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-1-dark dotted">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-2-light plain">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-2-medium plain">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-2-dark plain">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-2-light solid">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-2-medium solid">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-2-dark solid">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-2-light dashed">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-2-medium dashed">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-2-dark dashed">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-2-light dotted">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-2-medium dotted">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-2-dark dotted">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-3-light plain">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-3-medium plain">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-3-dark plain">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-3-light solid">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-3-medium solid">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-3-dark solid">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-3-light dashed">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-3-medium dashed">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-3-dark dashed">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-3-light dotted">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-3-medium dotted">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-3-dark dotted">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-4-light plain">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-4-medium plain">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-4-dark plain">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-4-light solid">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-4-medium solid">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-4-dark solid">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-4-light dashed">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-4-medium dashed">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-4-dark dashed">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-4-light dotted">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-4-medium dotted">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-4-dark dotted">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-5-light plain">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-5-medium plain">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-5-dark plain">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-5-light solid">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-5-medium solid">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-5-dark solid">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-5-light dashed">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-5-medium dashed">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-5-dark dashed">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-5-light dotted">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-5-medium dotted">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-5-dark dotted">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-6-light plain">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-6-medium plain">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-6-dark plain">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-6-light solid">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-6-medium solid">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-6-dark solid">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-6-light dashed">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-6-medium dashed">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-6-dark dashed">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-6-light dotted">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-6-medium dotted">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-6-dark dotted">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+      
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+                </code>
+              </pre>
+              
+            </section>
+
+            <section id="requirements">
+              <h2>Bijbehorende bestanden</h2>
+              <p>Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+              
+              <h3>Importeer component via NPM</h3>
+              <h4>CSS-voorbeeld:</h4>
+              <p>Het voorbeeld maakt gebruik van de kleurenset <code>tag-colors-soft</code>. Dit is optioneel. De variabelen binnen tags-6-3 kunnen naar keuze met kleuren (hex codes) of variabelen uit kleurensets gevuld worden.</p>
+              <p>Bij het gebruik van variabelen uit kleurensets dient de kleurenset altijd eerst ingeladen te worden zodat de variabelen uit die set beschikbaar zijn voor het tags-6-3-bestand.Zie onderstaand voorbeeld voor meer informatie.</p>
+              <pre>
+              <pre>
+                <code>
+/* Color sets */
+@use "@minvws/manon/tag-colors-soft";
+
+/* Tags */
+@use "@minvws/manon/tag";
+@use "@minvws/manon/tags-6";
+                </code>
+              </pre>
+            </section>
+
+            <section id="variables">
+              <h2>Instelbare variabelen</h2>
+              <div class="horizontal-scroll">
+                <table class="nowrap">
+                  <caption>Beschikbare instelbare variabelen:</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Variabele</th>
+                      <th scope="col">CSS-attribuut</th>
+                      <th scope="col">Manon ingestelde waarde</th>
+                      <th scope="col">Breekpunt</th>
+                      <th scope="col">Class</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>--tags-color-1-light-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-blue-light-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-1-light-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-blue-light-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-1-light-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-blue-light-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-1-medium-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-blue-medium-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-1-medium-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-blue-medium-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-1-medium-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-blue-medium-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-1-dark-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-blue-dark-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-1-dark-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-blue-dark-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-1-dark-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-blue-dark-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-2-light-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-green-light-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-2-light-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-green-light-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-2-light-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-green-light-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-2-medium-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-green-medium-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-2-medium-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-green-medium-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-2-medium-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-green-medium-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-2-dark-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-green-dark-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-2-dark-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-green-dark-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-2-dark-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-green-dark-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-3-light-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-yellow-light-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-3-light-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-yellow-light-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-3-light-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-yellow-light-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-3-medium-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-yellow-medium-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-3-medium-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-yellow-medium-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-3-medium-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-yellow-medium-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-3-dark-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-yellow-dark-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-3-dark-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-yellow-dark-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-3-dark-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-yellow-dark-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-4-light-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-orange-light-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-4-light-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-orange-light-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-4-light-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-orange-light-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-4-medium-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-orange-medium-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-4-medium-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-orange-medium-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-4-medium-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-orange-medium-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-4-dark-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-orange-dark-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-4-dark-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-orange-dark-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-4-dark-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-orange-dark-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-5-light-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-red-light-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-5-light-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-red-light-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-5-light-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-red-light-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-5-medium-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-red-medium-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-5-medium-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-red-medium-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-5-medium-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-red-medium-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-5-dark-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-red-dark-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-5-dark-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-red-dark-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-5-dark-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-red-dark-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-6-light-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-violet-light-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-6-light-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-violet-light-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-6-light-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-violet-light-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-6-medium-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-violet-medium-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-6-medium-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-violet-medium-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-6-medium-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-violet-medium-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-6-dark-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--tags-soft-violet-dark-background-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-6-dark-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--tags-soft-violet-dark-text-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tags-color-6-dark-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--tags-soft-violet-dark-border-color)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </article>
+    </main>
+  </body>
+</html>

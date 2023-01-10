@@ -4,9 +4,34 @@
 @use "tags-variables";
 @import "tag";
 
-%tags,
 .tags {
-  display: flex;
+  /* render each div directly within a tags group as a tag */
+  > p,
+  > span {
+    @extend %tag;
+  }
+}
+
+table.tags,
+table .tags {
+  td {
+    p,
+    span {
+      @extend %tag;
+    }
+  }
+}
+
+ul.tags {
+  padding: 0;
+
+  > li {
+    @extend %tag;
+    list-style: var(--tags-list-style);
+  }
+}
+
+.tags.horizontal-view {
   flex-direction: var(--tags-flex-direction, inherit);
   align-items: var(--tags-align-items);
   justify-content: var(--tags-justify-content);
@@ -16,19 +41,4 @@
   padding-right: var(--tags-padding-right);
   padding-bottom: var(--tags-padding-bottom);
   padding-left: var(--tags-padding-left);
-}
-
-.tags {
-  @extend %tags;
-
-  /* render each div directly within a tags group as a tag */
-  > p,
-  > span {
-    @extend %tag;
-  }
-}
-
-ul.tags > li {
-  @extend %tag;
-  list-style: var(--tags-list-style);
 }
