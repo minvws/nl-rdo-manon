@@ -67,7 +67,7 @@
             <section id="examples">
               <h2>Voorbeelden</h2>
               <h3>Visueel voorbeeld</h3>
-              <ul class="tags">
+              <ul class="tags horizontal-view">
                 <li class="tags-color-1">Label</p></li>
                 <li class="tags-color-2">Label</p></li>
                 <li class="tags-color-3">Label</p></li>
@@ -79,7 +79,7 @@
               <h3>Html-voorbeeld</h3>
               <pre>
                 <code>
-&lt;ul class="tags">
+&lt;ul class="tags horizontal-view">
   &lt;li class="tags-color-1">Label&lt;/p>&lt;/li>
   &lt;li class="tags-color-2">Label&lt;/p>&lt;/li>
   &lt;li class="tags-color-3">Label&lt;/p>&lt;/li>
@@ -92,7 +92,7 @@
 
               <h3>Visueel voorbeeld met types</h3>
               <p>Om de hoogte van alle tags gelijk te houden wordt de class <code>plain</code> toegevoegd. Visueel is er geen omlijning zichtbaar, maar deze wordt wel toegevoegd in de achtergrondkleur van de tag.</p>
-              <ul class="tags">
+              <ul class="tags horizontal-view">
                 <li class="tags-color-1 plain">Label</p></li>
                 <li class="tags-color-1 solid">Label</p></li>
                 <li class="tags-color-1 dashed">Label</p></li>
@@ -122,7 +122,7 @@
               <h3>Html-voorbeeld</h3>
               <pre>
                 <code>
-&lt;ul class="tags">
+&lt;ul class="tags horizontal-view">
   &lt;li class="tags-color-1 plain">Label&lt;/p>&lt;/li>
   &lt;li class="tags-color-1 solid">Label&lt;/p>&lt;/li>
   &lt;li class="tags-color-1 dashed">Label&lt;/p>&lt;/li>
@@ -176,6 +176,7 @@
 
 /* Tags */
 @use "@minvws/manon/tag";
+@use "@minvws/manon/tags";
 @use "@minvws/manon/tags-6";
                 </code>
               </pre>
