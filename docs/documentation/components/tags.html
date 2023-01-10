@@ -70,62 +70,62 @@
 
               <h3>Tags binnen een lijst</h3>
               <h4>Visueel voorbeeld:</h4>
-              <ul class="tags">
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
+              <ul class="tags horizontal-view">
+                <li class="tags-color-1-light">Lorem ipsum</li>
+                <li class="tags-color-2-light">Lorem ipsum</li>
+                <li class="tags-color-3-light">Lorem ipsum</li>
               </ul>
 
               <h4>HTML-Voorbeeld:</h4>
               <pre>
                 <code>
-&lt;ul class="tags">
-  &lt;li>Lorem ipsum&lt;/li>
-  &lt;li>Lorem ipsum&lt;/li>
-  &lt;li>Lorem ipsum&lt;/li>
+&lt;ul class="tags horizontal-view">
+  &lt;li class="tags-color-1-light">Lorem ipsum&lt;/li>
+  &lt;li class="tags-color-2-light">Lorem ipsum&lt;/li>
+  &lt;li class="tags-color-3-light">Lorem ipsum&lt;/li>
 &lt;/ul>
                 </code>
               </pre>
 
               <h3>Tags binnen een <code>div</code></h3>
               <h4>Visueel voorbeeld:</h4>
-              <div class="tags">
-                <p>Lorem ipsum</p>
-                <p>Lorem ipsum</p>
-                <p>Lorem ipsum</p>
+              <div class="tags horizontal-view">
+                <p class="tags-color-1-light">Lorem ipsum</p>
+                <p class="tags-color-2-light">Lorem ipsum</p>
+                <p class="tags-color-3-light">Lorem ipsum</p>
               </div>
 
               <h4>HTML-Voorbeeld:</h4>
               <pre>
                 <code>
-&lt;div class="tags">
-  &lt;p>Lorem ipsum&lt;/p>
-  &lt;p>Lorem ipsum&lt;/p>
-  &lt;p>Lorem ipsum&lt;/p>
+&lt;div class="tags horizontal-view">
+  &lt;p class="tags-color-1-light">Lorem ipsum&lt;/p>
+  &lt;p class="tags-color-2-light">Lorem ipsum&lt;/p>
+  &lt;p class="tags-color-3-light">Lorem ipsum&lt;/p>
 &lt;/div>
                 </code>
               </pre>
 
               <h3>Tags binnen een <code>section</code></h3>
               <h4>Visueel voorbeeld:</h4>
-              <section class="tags">
-                <p>Lorem ipsum</p>
-                <p>Lorem ipsum</p>
-                <p>Lorem ipsum</p>                
+              <section class="tags horizontal-view">
+                <p class="tags-color-1-light">Lorem ipsum</p>
+                <p class="tags-color-2-light">Lorem ipsum</p>
+                <p class="tags-color-3-light">Lorem ipsum</p>                
               </section>
 
               <h4>HTML-Voorbeeld:</h4>
               <pre>
                 <code>
-&lt;section class="tags">
-  &lt;p>Lorem ipsum&lt;/p>
-  &lt;p>Lorem ipsum&lt;/p>
-  &lt;p>Lorem ipsum&lt;/p>                
+&lt;section class="tags horizontal-view">
+  &lt;p class="tags-color-1-light">Lorem ipsum&lt;/p>
+  &lt;p class="tags-color-2-light">Lorem ipsum&lt;/p>
+  &lt;p class="tags-color-3-light">Lorem ipsum&lt;/p>                
 &lt;/section>
                 </code>
               </pre>
 
-              <h3>Tags binnen een tabel</h3>
+              <h3>Tags op tabel</h3>
               <p>Tabel-elementen visueel weergegeven als tag. Voor het direct aanspreken van een enkel element zie: <a href="tags.html">tags</a>.</p>
               <h4>Visueel voorbeeld:</h4>
               <div class="horizontal-scroll">
@@ -162,6 +162,54 @@
       &lt;/tr>
     &lt;/thead>
     &lt;tbody>
+      &lt;tr>
+        &lt;td>&lt;p class="tags-color-1-light">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-1-medium">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tags-color-1-dark">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+                </code>
+              </pre>
+
+              <h3>Tags binnen een tabel</h3>
+              <p>Tabel-elementen visueel weergegeven als tag. Voor het direct aanspreken van een enkel element zie: <a href="tags.html">tags</a>.</p>
+              <h4>Visueel voorbeeld:</h4>
+              <div class="horizontal-scroll">
+                <table>
+                  <caption>Voorbeeld tag binnen tabel:</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Licht</th>
+                      <th scope="col">Medium</th>
+                      <th scope="col">Donker</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tags">
+                    <tr>
+                      <td><p class="tags-color-1-light">Label</p></td>
+                      <td><p class="tags-color-1-medium">Label</p></td>
+                      <td><p class="tags-color-1-dark">Label</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h4>HTML-Voorbeeld:</h4>
+              <pre>
+                <code>
+&lt;div class="horizontal-scroll">
+  &lt;table>
+    &lt;caption>Voorbeeld tag binnen tabel:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Licht&lt;/th>
+        &lt;th scope="col">Medium&lt;/th>
+        &lt;th scope="col">Donker&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody class="tags">
       &lt;tr>
         &lt;td>&lt;p class="tags-color-1-light">Label&lt;/p>&lt;/td>
         &lt;td>&lt;p class="tags-color-1-medium">Label&lt;/p>&lt;/td>
