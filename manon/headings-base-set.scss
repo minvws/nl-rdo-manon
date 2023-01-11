@@ -5,6 +5,7 @@
 
 %heading-xxl,
 .heading-xxl {
+	font-family: var(--heading-xxl-font-family, inherit);
 	font-size: var(--heading-xxl-font-size, inherit);
 	font-weight: var(--heading-xxl-font-weight, inherit);
 	line-height: var(--heading-xxl-line-height, inherit);
@@ -14,6 +15,7 @@
 
 %heading-xl,
 .heading-xl {
+	font-family: var(--heading-xl-font-family, inherit);
 	font-size: var(--heading-xl-font-size, inherit);
 	font-weight: var(--heading-xl-font-weight, inherit);
 	line-height: var(--heading-xl-line-height, inherit);
@@ -23,6 +25,7 @@
 
 %heading-large,
 .heading-large {
+	font-family: var(--heading-large-font-family, inherit);
 	font-size: var(--heading-large-font-size, inherit);
 	font-weight: var(--heading-large-font-weight, inherit);
 	line-height: var(--heading-large-line-height, inherit);
@@ -32,6 +35,7 @@
 
 %heading-normal,
 .heading-normal {
+	font-family: var(--heading-normal-font-family, inherit);
 	font-size: var(--heading-normal-font-size, inherit);
 	font-weight: var(--heading-normal-font-weight, inherit);
 	line-height: var(--heading-normal-line-height, inherit);
@@ -41,6 +45,7 @@
 
 %heading-small,
 .heading-small {
+	font-family: var(--heading-small-font-family, inherit);
 	font-size: var(--heading-small-font-size, inherit);
 	font-weight: var(--heading-small-font-weight, inherit);
 	line-height: var(--heading-small-line-height, inherit);
@@ -50,6 +55,7 @@
 
 %heading-xs,
 .heading-xs {
+	font-family: var(--heading-xs-font-family, inherit);
 	font-size: var(--heading-xs-font-size, inherit);
 	font-weight: var(--heading-xs-font-weight, inherit);
 	line-height: var(--heading-xs-line-height, inherit);
