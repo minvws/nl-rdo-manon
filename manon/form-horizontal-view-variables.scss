@@ -14,4 +14,7 @@
   /* Fieldset form fields */
   /* Usually the same as form-base-gap, but it has to be a single value */
   --form-horizontal-view-fieldset-fields-margin-bottom: 1.25rem;
+
+  /* Submit button */
+  --form-horizontal-view-button-margin-left: calc(var(--form-horizontal-view-label-max-width) + var(--form-horizontal-view-gap));
 }

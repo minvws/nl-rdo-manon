@@ -87,5 +87,13 @@ form.horizontal-view {
         width: 100%;
       }
     }
+
+    &+ button,
+    &+ a.button,
+    &+ input[type="button"],
+    &+ input[type="submit"],
+    &+ input[type="reset"] {
+      margin-left: var(--form-horizontal-view-fieldset-button-margin-left);
+    }
   }
 }

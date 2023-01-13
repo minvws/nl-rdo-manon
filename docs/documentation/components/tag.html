@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tag</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li>
+              <a href="./tag.html" aria-current="page">Tag</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./tag.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
+        <article>
+          <div>
+            <section id="introduction">
+              <h1>Tag</h1>
+              <p>Visuele labels om bijvoorbeeld groeperingen aan te brengen binnen content en data-sets.</p>
+
+              <h2>Benodigde stappen:</h2>
+              <ol>
+                <li>
+                  Voeg de benodigde bestanden toe aan het project.
+                  <ul>
+                    <li>Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+                    <li>Voeg de benodigde class toe op de gewenste elementen. Voor meer informatie over het implementeren zie de <a href="#examples">voorbeelden</a>.</li> 
+                  </ul>
+                </li>
+              </ol>
+            </section>
+
+            <section id="examples">
+              <h2>Voorbeelden</h2>
+
+              <h3><code>p</code> als tag</h3>
+              <h4>Visueel voorbeeld:</h4>
+              <p class="tag tags-color-1">Lorem ipsum</p>
+
+              <h4>HTML-Voorbeeld:</h4>
+              <pre>
+                <code>
+&lt;p class="tag tags-color-1">Lorem ipsum&lt;/p>
+                </code>
+              </pre>
+
+              <h3><code>span</code> als tag</h3>
+              <h4>Visueel voorbeeld:</h4>
+              <span class="tag tags-color-1">Lorem ipsum</span>
+
+              <h4>HTML-Voorbeeld:</h4>
+              <pre>
+                <code>
+&lt;span class="tag tags-color-1">Lorem ipsum&lt;/span>
+                </code>
+              </pre>
+
+              <h3><code>li</code> als tag</h3>
+              <p>Lijst-element visueel weergegeven als tag. Voor het direct aanspreken van alle lijstelementen zie: <a href="tags.html">tags</a>.</p>
+              <h4>Visueel voorbeeld:</h4>
+              <ul>
+                <li class="tag tags-color-1">Lorem ipsum</li>
+              </ul>
+
+              <h4>HTML-Voorbeeld:</h4>
+              <pre>
+                <code>
+&lt;ul>
+  &lt;li class="tag tags-color-1">Lorem ipsum&lt;/li>
+&lt;/ul>
+                </code>
+              </pre>
+
+              <h3>Tags binnen een tabel</h3>
+              <p>Tabel-elementen visueel weergegeven als tag. Voor het direct aanspreken van alle tabelelementen zie: <a href="tags.html">tags</a>.</p>
+              <h4>Visueel voorbeeld:</h4>
+              <div class="horizontal-scroll">
+                <table>
+                  <caption>Voorbeeld tag binnen tabel:</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Licht</th>
+                      <th scope="col">Medium</th>
+                      <th scope="col">Donker</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><p class="tag tags-color-1-light">Label</p></td>
+                      <td><p class="tag tags-color-1-medium">Label</p></td>
+                      <td><p class="tag tags-color-1-dark">Label</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h4>HTML-Voorbeeld:</h4>
+              <pre>
+                <code>
+&lt;div class="horizontal-scroll">
+  &lt;table>
+    &lt;caption>Voorbeeld tag binnen tabel:&lt;/caption>
+    &lt;thead>
+      &lt;tr>
+        &lt;th scope="col">Licht&lt;/th>
+        &lt;th scope="col">Medium&lt;/th>
+        &lt;th scope="col">Donker&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>&lt;p class="tag tags-color-1-light">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tag tags-color-1-medium">Label&lt;/p>&lt;/td>
+        &lt;td>&lt;p class="tag tags-color-1-dark">Label&lt;/p>&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+&lt;/div>
+                </code>
+              </pre>
+
+              <h3>Tag styles</h3>
+
+              <p>Gebruik van verschillende <code>border-styles</code>.</p>
+
+              <p>Om de hoogte van alle tags gelijk te houden wordt de class <code>plain</code> toegevoegd. Visueel is er geen omlijning zichtbaar, maar deze wordt wel toegevoegd in de achtergrondkleur van de tag.</p>
+
+              <h4>Visueel voorbeeld:</h4>
+              <p class="tag tags-color-1 plain">Lorem ipsum</p>
+
+              <h4>HTML-Voorbeeld:</h4>
+              <pre>
+                <code>
+&lt;p class="tag tags-color-1 plain">Lorem ipsum&lt;/p>
+                </code>
+              </pre>
+
+              <h4>Visueel voorbeeld:</h4>
+              <p class="tag tags-color-1 solid">Lorem ipsum</p>
+
+              <h4>HTML-Voorbeeld:</h4>
+              <pre>
+                <code>
+&lt;p class="tag tags-color-1 solid">Lorem ipsum&lt;/p>
+                </code>
+              </pre>
+
+              <h4>Visueel voorbeeld:</h4>
+              <p class="tag tags-color-1 dotted">Lorem ipsum</p>
+
+              <h4>HTML-Voorbeeld:</h4>
+              <pre>
+                <code>
+&lt;p class="tag tags-color-1 dotted">Lorem ipsum&lt;/p>
+                </code>
+              </pre>
+
+              <h4>Visueel voorbeeld:</h4>
+              <p class="tag tags-color-1 dashed">Lorem ipsum</p>
+
+              <h4>HTML-Voorbeeld:</h4>
+              <pre>
+                <code>
+&lt;p class="tag tags-color-1 dashed">Lorem ipsum&lt;/p>
+                </code>
+              </pre>
+            </section>
+
+            <section id="requirements">
+              <h2>Bijbehorende bestanden</h2>
+              <p>Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a></p>
+              
+              <h3>Importeer component via NPM</h3>
+              <h4>CSS-voorbeeld:</h4>
+              <pre>
+                <code>
+@use "@minvws/manon/tag";
+                </code>
+              </pre>
+
+              <h3>Kleurensets</h3>
+              <p>De bruikbare kleuren voor de tags worden toegevoegd via kleurensets. Beschikbare sets zijn:</p>
+              <ul>
+                <li><a href="tags-6.html">Tags kleurenset zes kleuren</a></li>
+                <li><a href="tags-6-3.html">Tags kleurenset zes kleuren & drie tinten</a></li>
+              </ul>
+            </section>
+
+            <section id="variables">
+              <h2>Instelbare variabelen</h2>
+              <div class="horizontal-scroll">
+                <table class="nowrap">
+                  <caption>Beschikbare instelbare variabelen:</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Variabele</th>
+                      <th scope="col">CSS-attribuut</th>
+                      <th scope="col">Manon ingestelde waarde</th>
+                      <th scope="col">Breekpunt</th>
+                      <th scope="col">Class</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>--tag-font-size</td>
+                      <td><a href="../variables.html#font-size">font-size</a></td>
+                      <td>var(--application-base-font-size)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tag-font-weight</td>
+                      <td><a href="../variables.html#font-weight">font-weight</a></td>
+                      <td>bold</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tag-line-height</td>
+                      <td><a href="../variables.html#line-height">line-height</a></td>
+                      <td>var(--application-base-line-height)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tag-padding</td>
+                      <td><a href="../variables.html#padding">padding</a></td>
+                      <td>0.25rem 0.5rem</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tag-border-radius</td>
+                      <td><a href="../variables.html#border-radius">border-radius</a></td>
+                      <td>0.25rem</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--tag-border-width</td>
+                      <td><a href="../variables.html#border-width">border-width</a></td>
+                      <td>1px</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </article>
+    </main>
+  </body>
+</html>

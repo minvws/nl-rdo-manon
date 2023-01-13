@@ -14,12 +14,12 @@
   --button-base-min-height: 2.75rem;
   --button-base-background-color: var(--application-base-accent-color);
   --button-base-text-color: var(--application-base-accent-color-text-color);
-  /* --button-base-border-width: ; */
-  /* --button-base-border-style: ; */
-  /* --button-base-border-color: ; */
-  /* --button-base-font-size: ; */
-  /* --button-base-line-height: ; */
-  /* --button-base-font-weight: ; */
+  --button-base-border-width: none;
+  --button-base-border-style: unset;
+  --button-base-border-color: transparent;
+  --button-base-font-size: var(--application-base-font-size);
+  --button-base-line-height: var(--application-base-line-height);
+  --button-base-font-weight: var(--application-base-font-weight);
   --button-base-text-decoration: none;
   --button-base-border-radius: var(--application-base-border-radius);
 

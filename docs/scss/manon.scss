@@ -14,6 +14,9 @@
 @use "@minvws/manon/spot-medium";
 @use "@minvws/manon/spot-large";
 
+/* Tags */
+@use "@minvws/manon/tag-colors-soft";
+
 /* Headings sets */
 @use "@minvws/manon/headings-base-set";
 
@@ -184,7 +187,14 @@
 /* Login meta */
 @use "@minvws/manon/login-meta";
 
+/* Tags */
+@use "@minvws/manon/tag";
+@use "@minvws/manon/tags";
+@use "@minvws/manon/tags-6-3";
+@use "@minvws/manon/tags-6";
+
 /* Other */
 @use "@minvws/manon/code-base";
 @use "@minvws/manon/code-block";
 @use "@minvws/manon/visual-example";
+
