@@ -1,6 +1,7 @@
 /* Main project styles */
 @import "manon"; /* Manon components */
 @import "docs"; /* Docs overrides which aren't theme related */
+@import "fonts"; 
 
 /* Styling for visual examples out of their usual html-structure */
 @import "documentation-example-footer";

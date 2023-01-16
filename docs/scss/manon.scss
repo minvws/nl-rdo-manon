@@ -17,11 +17,9 @@
 /* Tags */
 @use "@minvws/manon/tag-colors-soft";
 
-/* Headings sets */
+/* Headings */
 @use "@minvws/manon/headings-base-set";
-
-/* Fonts */
-@use "fonts";
+@use "@minvws/manon/headings";
 
 /* Functions */
 
@@ -39,7 +37,6 @@
 @use "@minvws/manon/icon-set-example";
 
 /* Text */
-@use "@minvws/manon/headings";
 @use "@minvws/manon/p";
 @use "@minvws/manon/emphasized";
 @use "@minvws/manon/de-emphasized";

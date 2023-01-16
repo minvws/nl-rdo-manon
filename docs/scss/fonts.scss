@@ -1,13 +1,11 @@
 /*---------------------------------------------------------------*/
 /*------------------------- fonts.scss --------------------------*/
 /*---------------------------------------------------------------*/
-/* Manon icons */
+
+/* Neuton */
 @font-face {
-  font-family: "Manon icons";
-  font-weight: normal;
+  font-family: "Neuton";
+  font-weight: bold;
   font-style: normal;
-  src: url("../fonts/manon-icons-0.2.eot");
-  src: url("../fonts/manon-icons-0.2.woff") format("woff"),
-    url("../fonts/manon-icons-0.2.ttf") format("truetype"),
-    url("../fonts/manon-icons-0.2.svg") format("svg");
+  src: url("../fonts/neuton/Neuton-Bold.ttf") format("truetype");
 }
