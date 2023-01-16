@@ -3,7 +3,7 @@
 /*----------------------------------------------------------------------------------*/
 :root {
   --de-emphasized-font-size: 0.8rem;
-  /* --de-emphasized-font-weight: ; */
-  /* --de-emphasized-line-height: ; */
+  --de-emphasized-font-weight: var(--application-base-font-weight);
+  --de-emphasized-line-height: var(--application-base-line-height);
   --de-emphasized-text-color: #696969;
 }

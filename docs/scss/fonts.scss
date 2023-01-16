@@ -9,3 +9,56 @@
   font-style: normal;
   src: url("../fonts/neuton/Neuton-Bold.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Neuton";
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/neuton/Neuton-Italic.ttf") format("truetype");
+}
+
+/* Open sans */
+  /* Regular */
+  @font-face {
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-style: italic;
+    src: url("../fonts/open-sans/OpenSans-Italic.ttf") format("truetype");
+  }
+
+  /* Semi bold */
+  @font-face {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-style: normal;
+    src: url("../fonts/open-sans/OpenSans-SemiBold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-style: italic;
+    src: url("../fonts/open-sans/OpenSans-SemiBoldItalic.ttf") format("truetype");
+  }
+
+  /* Bold */
+  @font-face {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-style: normal;
+    src: url("../fonts/open-sans/OpenSans-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-style: italic;
+    src: url("../fonts/open-sans/OpenSans-BoldItalic.ttf") format("truetype");
+  }

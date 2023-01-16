@@ -1,0 +1,11 @@
+/* Application base styling - Variables */
+/* This file contains styling on high level elements such as the body */
+
+:root {
+	/* Body text */
+	--application-base-font-family: "Open Sans";
+	--application-base-line-height: 1.75;
+
+	/* Emphasized body text */
+	--emphasized-font-weight: 600; 
+}
