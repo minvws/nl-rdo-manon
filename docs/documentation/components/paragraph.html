@@ -51,6 +51,13 @@
         <div>
           <section id="introduction">
             <h1>Paragraaf</h1>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+              <li>Vul de variabelen met de gewenste stijlkeuzes. Voor meer informatie zie het overzicht met <a href="#variables">instelbare variabelen</a>.</li>
+            </ol>
+
             <p>
               Voor leesbaarheid en toegankelijkheid wordt aangeraden om de maximale regellengte te
               beperken tot 80 karakters. Voor meer informatie zie:
@@ -83,15 +90,14 @@
               <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
             </p>
 
-            <h3>Benodigd</h3>
-            <ul>
-              <li><code>p.scss</code></li>
-            </ul>
+            <h3>Importeer component via NPM</h3>
 
-            <h3>Optioneel</h3>
-            <ul>
-              <li><code>p-variables.scss</code></li>
-            </ul>
+            <h4>CSS-voorbeeld:</h4>
+            <pre>
+              <code>
+@use "@minvws/manon/p";
+              </code>
+            </pre>
           </section>
 
           <section id="variables">
@@ -102,63 +108,71 @@
                 <caption>Instelbare variabelen tabel:</caption>
                 <thead>
                   <tr>
-                    <th scope="col">Naam</th>
-                    <th scope="col">Breekpunt</th>
                     <th scope="col">Variabele</th>
                     <th scope="col">CSS-attribuut</th>
-                    <th scope="col">Class</th>
                     <th scope="col">Manon ingestelde waarde</th>
+                    <th scope="col">Breekpunt</th>
+                    <th scope="col">Class</th>
                   </tr>
+                  
                 </thead>
                 <tbody>
                   <tr>
-                    <td>line-height</td>
-                    <td>-</td>
-                    <td>--p-line-height</td>
+                    <td>--p-line-height</td>                    
                     <td><a href="../variables.html#line-height">line-height</a></td>
-                    <td>-</td>
                     <td>var(--application-base-line-height)</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>font-size</td>
-                    <td>-</td>
                     <td>--p-font-size</td>
                     <td><a href="../variables.html#font-size">font-size</a></td>
-                    <td>-</td>
                     <td>var(--application-base-font-size)</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>font-weight</td>
-                    <td>-</td>
                     <td>--p-font-weight</td>
                     <td><a href="../variables.html#font-weight">font-weight</a></td>
-                    <td>-</td>
                     <td>var(--application-base-font-weight)</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>text-color</td>
-                    <td>-</td>
                     <td>--p-text-color</td>
                     <td><a href="../variables.html#text-color">text-color</a></td>
-                    <td>-</td>
                     <td>var(--application-base-text-color)</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>background-color</td>
-                    <td>-</td>
                     <td>--p-background-color</td>
                     <td><a href="../variables.html#background-color">background-color</a></td>
-                    <td>-</td>
                     <td>unset</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
-
                 </tbody>
               </table>
             </div>
+
+            <h3>CSS</h3>
+              <p>Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw project. Kies en gebruik de benodigde variabelen.</p>
+              <pre>
+                <code>
+:root {
+  --p-line-height: ;
+  --p-font-size: ;
+  --p-font-weight: ;
+  --p-text-color: ;
+  --p-background-color: ;
+}
+                </code>
+              </pre>
           </section>
 
           <section id="related">

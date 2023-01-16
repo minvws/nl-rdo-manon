@@ -21,7 +21,9 @@ Het verschil tussen de Manon Rijk met de rijkshuisstijl en Manon Open voor algem
 ## Licentie
 Zie [LICENSES.md](./LICENSES.md).
 
-Alle lettertypes binnen Manon vallen onder en behouden hun eigen licentie. Voor meer informatie zie bijvoorbeeld: 
+Alle lettertypes binnen Manon vallen onder en behouden hun eigen licentie. Voor meer informatie zie bijvoorbeeld: Neuton & Open Sans.
+
+Voor meer informatie bekijk de bijbehorende mappen voor extra of specifiekere licenties (indien beschikbaar) of bezoek: 
 
 ### Neuton
 https://fonts.google.com/specimen/Neuton/about
@@ -56,10 +58,13 @@ With the biggest difference between Manon Rijk (the version which uses the Rijks
 ## License
 Zie [LICENSES.md](./LICENSES.md).
 
-All fonts used within Manon remain under their own license. For example:
+All fonts used within Manon remain under their own license. For example: Neuton & Open Sans.
+
+For more information check their respective folders for extra/ more specific license (if available) or visit:
 
 ### Neuton
 https://fonts.google.com/specimen/Neuton/about
 
 ### Open Sans
 https://fonts.google.com/specimen/Open+Sans/about
+
