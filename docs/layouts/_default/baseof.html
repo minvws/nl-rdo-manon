@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html {{ with .Site.LanguageCode }} lang="{{ . }}" {{ end }}>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="{{ .Site.BaseURL }}/favicon.ico">
+        <link rel="icon" href="{{ .Site.BaseURL }}/images/favicon.svg" type="image/svg+xml">
+
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/app.css">
+
+        <title itemprop="name">{{ .Title }} - {{ .Site.Params.Home }}</title>
+    </head>
+
+    <body>
+        <header>
+            {{ block "header" . }}{{ end }}
+        </header>
+        <main>
+            <article>
+                <div>
+                    {{ block "main" . }}{{ end }}
+                </div>
+            </article>
+        </main>
+        <footer>
+            {{ block "footer" . }}{{ end }}
+        </footer>
+    </body>
+
+    <script type="text/javascript" src="{{ .Site.BaseURL }}/js/app.js"></script>
+</html>

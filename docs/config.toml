@@ -1,0 +1,24 @@
+baseURL = "https://minvws.github.io/nl-rdo-manon/"
+title = "Manon"
+
+[menu]
+
+[[menu.main]]
+name = "Components"
+url = "components"
+weight = 10
+
+[[menu.main]]
+name = "Documentation"
+url = "documentation"
+weight = 20
+
+[languages]
+
+[languages.nl]
+languageName = "Nederlands"
+weight = 1
+
+[languages.en]
+languageName = "English"
+weight = 2
