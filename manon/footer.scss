@@ -7,7 +7,8 @@ body > footer,
 %footer-style {
   display: flex;
   justify-content: var(--footer-justify-content);
-  align-items: center;
+  align-items: var(--footer-align-items);
+  flex-wrap: var(--footer-flex-wrap);
   min-height: var(--footer-min-height);
   width: 100%;
   background-color: var(--footer-background-color);
