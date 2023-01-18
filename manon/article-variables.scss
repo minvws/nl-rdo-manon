@@ -3,17 +3,14 @@
 /*------------------------------------------------------------------------*/
 
 :root {
-  --article-align-items: var(--layout-base-content-block-align-items);
-  --article-gap: var(--layout-base-within-content-block-gap);
-  /* --article-background-color: ; */
-  /* --article-text-color: ; */
-
-  /* article title */
-  --article-title-margin: var(--layout-base-content-block-title-margin);
-
-  /* article subtitle */
-  --article-subtitle-margin: var(--layout-base-content-block-subtitle-margin);
-
-  /* Content block within article's */
-  --article-content-block-gap: var(--article-gap);
+  /* Layout */
+  --article-flex-direction: column;
+  --article-gap: 0;
+  --article-justify-content: flex-start;
+  --article-align-items: flex-start;
+  --article-padding-top: 0;
+  --article-padding-right: 0;
+  --article-padding-bottom: 0;
+  --article-padding-left: 0;
+  --article-max-width: unset;
 }

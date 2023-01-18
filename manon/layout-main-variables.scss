@@ -2,28 +2,44 @@
 /*----------------------- layout-main-variables.scss ---------------------*/
 /*------------------------------------------------------------------------*/
 :root {
+  /* Top level */
+  --layout-main-gap: 0;
   --layout-main-padding-top: var(--layout-base-padding-top);
+  --layout-main-padding-right: var(--layout-base-padding-right);
+  --layout-main-padding-bottom: var(--layout-base-padding-bottom);
+  --layout-main-padding-left: var(--layout-base-padding-left);
+  --layout-main-max-width: var(--layout-base-max-width);
+
+  /* Children */
+  --layout-main-child-gap: 0;
+  --layout-main-child-padding:0;
+
+  /* Grand children */
+  --layout-main-grandchild-gap: 2rem;
+  --layout-main-grandchild-padding: 0;
+
+  /*--layout-main-padding-top: var(--layout-base-padding-top);
   --layout-main-padding-right: var(--layout-base-padding-right);
   --layout-main-padding-bottom: var(--layout-base-padding-bottom);
   --layout-main-padding-left: var(--layout-base-padding-bottom);
   --layout-main-max-width: var(--layout-base-max-width);
 
   /* First element */
-  --layout-main-first-padding-top: calc(
+  /*--layout-main-first-padding-top: calc(
     5rem - var(--layout-base-content-block-title-margin-top)
   );
 
   /* Last element */
-  --layout-main-last-padding-bottom: 5rem;
+  /*--layout-main-last-padding-bottom: 5rem;
 
   /* Top level blocks */
-  --layout-main-gap: var(--layout-base-gap);
+  /*--layout-main-gap: var(--layout-base-gap);
 
   /* Content blocks directly within top level blocks */
-  --layout-main-content-block-gap: var(--layout-base-content-block-gap);
+  /*--layout-main-content-block-gap: var(--layout-base-content-block-gap);
 
   /* Spacing beteen all other blocks */
-  --layout-main-within-content-block-gap: var(
+  /*--layout-main-within-content-block-gap: var(
     --layout-base-within-content-block-gap
-  );
+  );*/
 }

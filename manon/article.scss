@@ -4,38 +4,18 @@
 @use "article-variables";
 
 main article {
+  /* Layout */
   display: flex;
-  flex-direction: column;
-  align-items: var(--article-align-items);
+  flex-direction: var(--article-flex-direction);
   gap: var(--article-gap);
-  background-color: var(--article-background-color);
-  color: var(--article-text-color, inherit);
+  justify-content: var(--article-justify-content);
+  align-items: var(--article-align-items);
   width: 100%;
+  margin: 0 auto;
   box-sizing: border-box;
-
-  > div {
-    display: flex;
-    flex-direction: column;
-    align-items: var(--article-content-block-align-items);
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0 auto;
-    gap: var(--article-content-block-gap);
-
-    h1 {
-      margin: var(--article-title-margin);
-    }
-
-    h2 {
-      margin: var(--article-subtitle-margin);
-    }
-  }
-
-  h1 {
-    margin: var(--article-title-margin);
-  }
-
-  h2 {
-    margin: var(--article-subtitle-margin);
-  }
+  padding-top: var(--article-padding-top);
+  padding-right: var(--article-padding-right);
+  padding-bottom: var(--article-padding-bottom);
+  padding-left: var(--article-padding-left);
+  max-width: var(--article-max-width);
 }

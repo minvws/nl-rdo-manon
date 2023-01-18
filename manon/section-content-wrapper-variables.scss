@@ -1,0 +1,16 @@
+/*------------------------------------------------------------------------*/
+/*----------------- section-content-wrapper-variables.scss ---------------*/
+/*------------------------------------------------------------------------*/
+
+:root {
+    /* Layout */
+    --section-content-wrapper-flex-direction: column;
+    --section-content-wrapper-gap: 2rem;
+    --section-content-wrapper-justify-content: flex-start;
+    --section-content-wrapper-align-items: flex-start;
+    --section-content-wrapper-padding-top: 0;
+    --section-content-wrapper-padding-right: 0;
+    --section-content-wrapper-padding-bottom: 0;
+    --section-content-wrapper-padding-left: 0;
+    --section-content-wrapper-max-width: 80rem;
+}

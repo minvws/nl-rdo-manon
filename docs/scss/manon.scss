@@ -56,15 +56,12 @@
 @use "@minvws/manon/layout-base-variables";
 
 /* @use "@minvws/manon/layout-header"; */
-@use "@minvws/manon/layout-header-content-block";
-/* @use "@minvws/manon/layout-main"; */
-@use "@minvws/manon/layout-main-content-block";
+/*@use "@minvws/manon/layout-header-content-block";*/
 /* @use "@minvws/manon/layout-footer";*/
-@use "@minvws/manon/layout-footer-content-block";
+/*@use "@minvws/manon/layout-footer-content-block";*/
 
 /* @use "@minvws/manon/layout-base-variables";
 @use "@minvws/manon/layout-header-content-block";*/
-/*@use "@minvws/manon/layout-main-content-block"; */
 /*@use "@minvws/manon/layout-footer-content-block";*/
 @use "@minvws/manon/layout-authentication";
 @use "@minvws/manon/layout-one-third-two-thirds";
@@ -82,14 +79,17 @@
 @use "@minvws/manon/navigation";
 
 /* Main */
-/*@use "@minvws/manon/main";
-@use "@minvws/manon/main-documentation-integration";*/
+@use "@minvws/manon/main";
+@use "@minvws/manon/main-content-wrapper";
+/*@use "@minvws/manon/main-documentation-integration";*/
 
 /* Article */
 @use "@minvws/manon/article";
+@use "@minvws/manon/article-content-wrapper";
 
 /* Section */
 @use "@minvws/manon/section";
+@use "@minvws/manon/section-content-wrapper";
 
 /* Footer */
 @use "@minvws/manon/footer";

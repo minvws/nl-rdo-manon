@@ -1,11 +1,14 @@
 /*------------------------------------------------------------------------*/
-/*---------------------- main-base-variables.scss ------------------------*/
+/*-------------------------- main-variables.scss -------------------------*/
 /*------------------------------------------------------------------------*/
 :root {
+  --main-flex-direction: column;
   --main-justify-content: flex-start;
-  /* --main-align-items: ; */
-  --main-base-padding-top: 5rem;
-  --main-base-padding-bottom: 5rem;
-  /* --main-background-color: ; */
-  /* --main-text-color: ; */
+  --main-align-items: flex-start;
+  --main-gap: 3rem;
+  --main-padding-top: 4rem;
+  --main-padding-right: 0;
+  --main-padding-bottom: 4rem;
+  --main-padding-left: 0;
+  --main-max-width: 100%;
 }
