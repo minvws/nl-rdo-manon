@@ -124,98 +124,128 @@
                 <caption>Instelbare css-variabelen:</caption>
                 <thead>
                   <tr>
-                    <th scope="col">Naam</th>
-                    <th scope="col">Breekpunt</th>
                     <th scope="col">Variabele</th>
                     <th scope="col">CSS-attribuut</th>
-                    <th scope="col">Class</th>
                     <th scope="col">Manon ingestelde waarde</th>
+                    <th scope="col">Breekpunt</th>
+                    <th scope="col">Class</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>min-height</td>
-                    <td>-</td>
                     <td>--footer-min-height</td>
                     <td><a href="../variables.html#min-height">min-height</a></td>
-                    <td>-</td>
                     <td>10rem</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>justify-content</td>
-                    <td>-</td>
                     <td>--footer-justify-content</td>
                     <td><a href="../variables.html#justify-content">justify-content</a></td>
-                    <td>-</td>
                     <td>flex-end</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>background-color</td>
+                    <td>--footer-flex-wrap</td>
+                    <td><a href="../variables.html#flex-wrap">flex-wrap</a></td>
+                    <td>wrap</td>
                     <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--footer-align-items</td>
+                    <td><a href="../variables.html#align-items">align-items</a></td>
+                    <td>center</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
                     <td>--footer-background-color</td>
                     <td><a href="../variables.html#background-color">background-color</a></td>
-                    <td>-</td>
                     <td>var(--application-base-tint-1-background-color)</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>text-color</td>
-                    <td>-</td>
                     <td>--footer-text-color</td>
                     <td><a href="../variables.html#text-color">text-color</a></td>
-                    <td>-</td>
                     <td>var(--application-base-tint-1-text-color)</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>padding</td>
-                    <td>-</td>
                     <td>--footer-padding</td>
                     <td><a href="../variables.html#padding">padding</a></td>
-                    <td>-</td>
                     <td>var(--application-base-padding)</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>link-text-color</td>
-                    <td>-</td>
                     <td>--footer-link-text-color</td>
                     <td><a href="../variables.html#text-color">text-color</a></td>
-                    <td>-</td>
                     <td>var(--footer-text-color)</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>link-text-decoration</td>
-                    <td>-</td>
                     <td>--footer-link-text-decoration</td>
                     <td><a href="../variables.html#text-decoration">text-decoration</a></td>
-                    <td>-</td>
                     <td>none</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>link-hover-text-color</td>
-                    <td>-</td>
                     <td>--footer-link-hover-text-color</td>
                     <td><a href="../variables.html#text-color">text-color</a></td>
-                    <td>-</td>
                     <td>var(--footer-link-text-color)</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>link-hover-text-decoration</td>
-                    <td>-</td>
                     <td>--footer-link-hover-text-decoration</td>
                     <td><a href="../variables.html#text-decoration">text-decoration</a></td>
-                    <td>-</td>
                     <td>underline</td>
+                    <td>-</td>
+                    <td>-</td>
                   </tr>
                 </tbody>
               </table>
             </div>
+
+            <h3>CSS</h3>
+              <p>Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw project. Kies en gebruik de benodigde variabelen.</p>
+              <pre>
+                <code>
+:root {
+  --footer-min-height: ;
+  --footer-justify-content: ;
+  --footer-align-items: ;
+  --footer-flex-wrap: ;
+  --footer-background-color: ;
+  --footer-text-color: ;
+  --footer-padding: ;
+
+  /* Links */
+  --footer-link-text-color: ;
+  --footer-link-text-decoration: ;
+
+  /* Links hover */
+  --footer-link-hover-text-color: ;
+  --footer-link-hover-text-decoration: ;
+}
+                </code>
+              </pre>
           </section>
         </div>
       </article>
