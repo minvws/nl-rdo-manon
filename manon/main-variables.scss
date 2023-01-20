@@ -2,13 +2,13 @@
 /*-------------------------- main-variables.scss -------------------------*/
 /*------------------------------------------------------------------------*/
 :root {
-  --main-flex-direction: column;
-  --main-justify-content: flex-start;
-  --main-align-items: flex-start;
-  --main-gap: 3rem;
-  --main-padding-top: 4rem;
+  --main-flex-direction: var(--content-flex-direction);
+  --main-justify-content: var(--content-justify-content);
+  --main-align-items: var(--content-align-items);
+  --main-gap: 0;
+  --main-padding-top: 0;
   --main-padding-right: 0;
-  --main-padding-bottom: 4rem;
+  --main-padding-bottom: var(--page-whitespace-bottom);
   --main-padding-left: 0;
   --main-max-width: 100%;
 }

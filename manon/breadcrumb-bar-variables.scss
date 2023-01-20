@@ -2,21 +2,17 @@
 /*---------------- breadcrumb-bar-variables.scss ----------------*/
 /*---------------------------------------------------------------*/
 :root {
-  --breadcrumb-bar-max-width: 100%;
+  --breadcrumb-bar-flex-direction: column;
   --breadcrumb-bar-justify-content: flex-start;
   --breadcrumb-bar-align-items: center;
-  --breadcrumb-bar-background-color: var(
-    --application-base-tint-1-background-color,
-    var(--application-base-background-color)
-  );
-  --breadcrumb-bar-text-color: var(
-    --application-base-tint-1-text-color,
-    var(--application-base-text-color)
-  );
+  --breadcrumb-bar-gap: 0;
   --breadcrumb-bar-padding-top: 1rem;
-  --breadcrumb-bar-padding-right: var(--layout-base-padding-right);
+  --breadcrumb-bar-padding-right: 0;
   --breadcrumb-bar-padding-bottom: 1rem;
-  --breadcrumb-bar-padding-left: var(--layout-base-padding-left);
+  --breadcrumb-bar-padding-left: 0;
+  --breadcrumb-bar-max-width: 100%;
+  --breadcrumb-bar-background-color: var(--branding-color-accent-5);
+  --breadcrumb-bar-text-color: var(--application-base-text-color);
 
   /* Hover */
   --breadcrumb-bar-hover-text-color: var(--application-base-text-color);

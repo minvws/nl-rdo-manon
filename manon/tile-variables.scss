@@ -3,18 +3,18 @@
 /*---------------------------------------------------------------*/
 :root {
   /* Tile */
-  /* --tile-background-color: ; */
-  /* --tile-text-color: ; */
-  /* --tile-flex-direction: ; */
-  --tile-gap: 1rem;
+  --tile-background-color: unset;
+  --tile-text-color: var(--application-base-text-color, inherit);
+  --tile-flex-direction: column;
+  --tile-gap: var(--content-gap);
   --tile-padding-top: 1.5rem;
-  --tile-padding-right: 1.5rem;
+  --tile-padding-right: 1rem;
   --tile-padding-bottom: 1.5rem;
-  --tile-padding-left: 1.5rem;
+  --tile-padding-left: 1rem;
   --tile-border-width: 1px;
   --tile-border-style: solid;
   --tile-border-color: #ccc;
-  /* --tile-border-radius: ; */
+  --tile-border-radius: 0.25rem;
 
   /* Tile title */
   /* --tile-title-text-color: ; */

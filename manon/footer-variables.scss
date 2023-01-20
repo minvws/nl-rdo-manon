@@ -2,13 +2,19 @@
 /*------------------- footer-variables.scss ---------------------*/
 /*---------------------------------------------------------------*/
 :root {
-  --footer-min-height: 10rem;
+  --footer-flex-direction: column;
+  --footer-gap: 0;
   --footer-justify-content: flex-end;
   --footer-align-items: center;
   --footer-flex-wrap: wrap;
+  --footer-min-height: 10rem;
   --footer-background-color: var(--branding-color-1-background-color);
   --footer-text-color: var(--branding-color-1-text-color);
-  --footer-padding: var(--application-base-padding);
+  --footer-padding-top: 0;
+  --footer-padding-right: 0;
+  --footer-padding-bottom: 0;
+  --footer-padding-left: 0;
+  --footer-max-width: 100%;
 
   /* Links */
   --footer-link-text-color: var(--footer-text-color);

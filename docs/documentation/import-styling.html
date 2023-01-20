@@ -37,101 +37,105 @@
     </header>
 
     <main id="main-content" tabindex="-1">
-      <article>
+      <section id="introduction">
         <div>
-          <section id="introduction">
-            <h1>Componenten gebruiken en styling toevoegen</h1>
-            <p>
-              Overzicht van de stappen om styling te importeren en componenten te gebruiken
-              binnen een project.
-            </p>
+          <h1>Componenten gebruiken en styling toevoegen</h1>
+          <p>
+            Overzicht van de stappen om styling te importeren en componenten te gebruiken
+            binnen een project.
+          </p>
 
-            <ol>
-              <li>
-                Voeg binnen het bestand <code>manon.scss</code> een referentie toe naar het gewenste
-                component of stylebestand.
-              </li>
-              <li>
-                Voeg indien gewenst ook een referentie toe naar het ingevulde variabelen bestand.
-              </li>
-            </ol>
+          <ol>
+            <li>
+              Voeg binnen het bestand <code>manon.scss</code> een referentie toe naar het gewenste
+              component of stylebestand.
+            </li>
+            <li>
+              Voeg indien gewenst ook een referentie toe naar het ingevulde variabelen bestand.
+            </li>
+          </ol>
 
-            <p>Aandachtspunten:</p>
-            <ul>
-              <li>Als er een basis-component aanwezig is dient deze altijd ingeladen te worden.</li>
-              <li>
-                Het basisbestand dient altijd ingeladen te worden voordat de uitzonderingen of
-                alternatieve weergaven ingeladen worden.
-              </li>
-            </ul>
+          <p>Aandachtspunten:</p>
+          <ul>
+            <li>Als er een basis-component aanwezig is dient deze altijd ingeladen te worden.</li>
+            <li>
+              Het basisbestand dient altijd ingeladen te worden voordat de uitzonderingen of
+              alternatieve weergaven ingeladen worden.
+            </li>
+          </ul>
 
-            <h2 id="examples">Voorbeelden</h2>
+          <h2 id="examples">Voorbeelden</h2>
 
-            <p>
-              Importeer de gewenste CSS binnen het project binnen het bestand:
-              <code>manon.scss</code>.
-            </p>
-            <pre>
-              <code>
+          <p>
+            Importeer de gewenste CSS binnen het project binnen het bestand:
+            <code>manon.scss</code>.
+          </p>
+          <pre>
+            <code>
 @use "@minvws/manon/layout/layout-base";
-              </code>
-            </pre>
+            </code>
+          </pre>
 
-            <p>
-              <strong>Let op:</strong> Indien er een basisbestand beschikbaar is dient deze altijd
-              ingeladen te worden voordat de uitzonderingen en speciale weergaven geimporteerd
-              worden.
-            </p>
+          <p>
+            <strong>Let op:</strong> Indien er een basisbestand beschikbaar is dient deze altijd
+            ingeladen te worden voordat de uitzonderingen en speciale weergaven geimporteerd
+            worden.
+          </p>
 
-            <pre>
-              <code>
+          <pre>
+            <code>
 @use "@minvws/manon/layout/layout-base";
 @use "@minvws/manon/layout/layout-column-2";
-              </code>
-            </pre>
-          </section>
-
-          <section>
-            <h2>Eigen component toevoegen aan een project</h2>
-            <p>
-              Het is ook mogelijk om eigen componenten te schrijven en toe te voegen aan het
-              project. Voeg in dat geval een referentie naar het benodigde css- of scss-bestand toe
-              aan het
-              <code>manon.scss</code>-bestand. Het is ook mogelijk om meerdere "stylesheets" in te
-              laden via de <code>head</code>.
-            </p>
-          </section>
-
-          <section id="styling-override-variables">
-            <h2>De styling van een component aanpassen</h2>
-            <p>Aanpassen van het component via beschikbare variabelen:</p>
-            <ol>
-              <li>
-                Voeg een kopie van het variabelenbestand van het component toe aan het project en
-                vol deze in met de gewenste stijlkeuzes om de styling van een component te
-                overschrijven via de beschikbare variabelen.
-              </li>
-              <li>
-                Vul het gekopieerde variabelenbestand in met de gewenste stijlkeuzes om de styling
-                van een component te overschrijven via de beschikbare variabelen. Voor informatie
-                over het aanpassen en overschrijven van variabelen zie
-                <a href="./variables.html">variabelen</a>
-              </li>
-              <li>
-                Voeg de referentie naar het nieuwe bestand toe aan het
-                <code>manon.scss</code>-bestand.
-              </li>
-            </ol>
-          </section>
-
-          <section id="styling-override">
-            <h2>De styling van een component overschrijven</h2>
-            <ul>
-              <li>Voeg de css met de gewenste overschrijvingen toe aan het project.</li>
-            </ul>
-          </section>
+            </code>
+          </pre>
         </div>
-      </article>
+      </section>
+
+      <section>
+        <div>
+          <h2>Eigen component toevoegen aan een project</h2>
+          <p>
+            Het is ook mogelijk om eigen componenten te schrijven en toe te voegen aan het
+            project. Voeg in dat geval een referentie naar het benodigde css- of scss-bestand toe
+            aan het
+            <code>manon.scss</code>-bestand. Het is ook mogelijk om meerdere "stylesheets" in te
+            laden via de <code>head</code>.
+          </p>
+        </div>
+      </section>
+
+      <section id="styling-override-variables">
+        <div>
+          <h2>De styling van een component aanpassen</h2>
+          <p>Aanpassen van het component via beschikbare variabelen:</p>
+          <ol>
+            <li>
+              Voeg een kopie van het variabelenbestand van het component toe aan het project en
+              vol deze in met de gewenste stijlkeuzes om de styling van een component te
+              overschrijven via de beschikbare variabelen.
+            </li>
+            <li>
+              Vul het gekopieerde variabelenbestand in met de gewenste stijlkeuzes om de styling
+              van een component te overschrijven via de beschikbare variabelen. Voor informatie
+              over het aanpassen en overschrijven van variabelen zie
+              <a href="./variables.html">variabelen</a>
+            </li>
+            <li>
+              Voeg de referentie naar het nieuwe bestand toe aan het
+              <code>manon.scss</code>-bestand.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="styling-override">
+        <div>
+          <h2>De styling van een component overschrijven</h2>
+          <ul>
+            <li>Voeg de css met de gewenste overschrijvingen toe aan het project.</li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>

@@ -4,13 +4,13 @@
 
 :root {
   /* Layout */
-  --article-flex-direction: column;
+  --article-flex-direction: var(--content-flex-direction);
+  --article-justify-content: var(--content-justify-content);
+  --article-align-items: var(--content-align-items);
   --article-gap: 0;
-  --article-justify-content: flex-start;
-  --article-align-items: flex-start;
   --article-padding-top: 0;
-  --article-padding-right: 0;
+  --article-padding-right: var(--page-whitespace-right);
   --article-padding-bottom: 0;
-  --article-padding-left: 0;
-  --article-max-width: unset;
+  --article-padding-left: var(--page-whitespace-left);
+  --article-max-width: 100%;
 }
