@@ -1,0 +1,7 @@
+<section>
+{{ if eq .Page.File.Ext "md" }}
+	{{ .Inner | markdownify }}
+{{ else }}
+	{{ .Inner | htmlUnescape | safeHTML }}
+{{ end }}
+</section>

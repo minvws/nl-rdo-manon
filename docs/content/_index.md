@@ -1,5 +1,10 @@
 # Manon
 
+{{% alert title="Let op:" %}}
+Aan deze instructies wordt nog gewerkt.
+{{% /alert %}}
+
+{{< blocks/section >}}
 ## Een bibliotheek vol componenten
 
 Manon biedt een bibliotheek met componenten aan, deze componenten bevatten
@@ -18,7 +23,7 @@ specifieke uitzonderingen waar gewenst.
 ## Gebruik alleen wat je nodig hebt
 
 Kies enkel de CSS toe die nodig is binnen jouw project. Dit kan een enkel
-component zijn of de hele set. Gebruik de bijbehorden HTML en JavaScript voor
+component zijn of de hele set. Gebruik de bijbehorende HTML en JavaScript voor
 het gewenste resultaat.
 
 ## Handige helpers
@@ -26,3 +31,4 @@ het gewenste resultaat.
 Voor veel voorkomende uitzonderingen voor unieke elementen bevat Manon
 "helper-classes". Deze classes kunnen gebruikt worden om een visuele
 uitzondering snel en efficient toe te passen binnen het project waar nodig.
+{{< /blocks/section >}}

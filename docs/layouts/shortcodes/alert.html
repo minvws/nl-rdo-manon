@@ -1,0 +1,8 @@
+<p class="warning" role="group" aria-label="let op">
+    {{ with .Get "title" }}<span>{{ . | safeHTML }}</span>{{ end }}
+    {{ if eq .Page.File.Ext "md" }}
+    {{ .Inner | markdownify }}
+    {{ else }}
+    {{ .Inner | htmlUnescape | safeHTML }}
+    {{ end }}
+</p>
