@@ -1,0 +1,23 @@
+<section>
+    {{ $parent := .Page }}
+
+    {{/* Make sure we get all the unique pages */}}
+    {{ $pages := (where .Site.Pages "Section" .Section).ByWeight }}
+    {{ $pages = (where $pages ".Parent" "!=" nil) }}
+    {{ $pages = (where $pages "Parent.File.UniqueID" "==" $parent.File.UniqueID) }}
+
+
+    {{/* debugging */}}
+    {{ print $parent }}
+    {{ print $pages }}
+
+    {{/* TODO: make configurable? */}}
+    <div class="column-4">
+        {{ range $pages }}
+
+        {{ .Title }}
+        {{ .Description }}
+
+        {{ end }}
+    </div>
+</section>

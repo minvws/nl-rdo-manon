@@ -1,0 +1,31 @@
+<a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+<nav aria-label="Hoofdnavigatie">
+    <div>
+        <ul>
+            <li>
+                <a href="{{ .Site.BaseURL }}" aria-current="page">Home</a>
+            </li>
+            {{ range .Site.Menus.main }}
+            <li>
+                <a href="{{ .URL | absLangURL }}">
+                    {{ .Name }}
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</nav>
+
+<nav class="breadcrumb-bar">
+    <div>
+        <ul>
+            <li>
+                <a href="./l1.html" aria-current="page">Test level 1</a>
+            </li>
+            <li>
+                <a href="./l2.html" aria-current="page">Test level 2</a>
+            </li>
+        </ul>
+    </div>
+</nav>

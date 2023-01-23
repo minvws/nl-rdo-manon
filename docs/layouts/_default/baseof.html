@@ -1,33 +1,24 @@
-<!DOCTYPE html>
-<html {{ with .Site.LanguageCode }} lang="{{ . }}" {{ end }}>
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    {{ partial "head.html" . }}
+</head>
 
-        <link rel="icon" href="{{ .Site.BaseURL }}/favicon.ico">
-        <link rel="icon" href="{{ .Site.BaseURL }}/images/favicon.svg" type="image/svg+xml">
+<body>
+    <header>
+        {{ partial "navbar.html" . }}
+    </header>
+    <main>
+        <article>
+            <div>
+                {{ block "main" . }}{{ end }}
+            </div>
+        </article>
+    </main>
+    {{ partial "footer.html" . }}
+</body>
 
-        <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/app.css">
+{{ partial "scripts.html" }}
 
-        <title itemprop="name">{{ .Title }} - {{ .Site.Params.Home }}</title>
-    </head>
-
-    <body>
-        <header>
-            {{ block "header" . }}{{ end }}
-        </header>
-        <main>
-            <article>
-                <div>
-                    {{ block "main" . }}{{ end }}
-                </div>
-            </article>
-        </main>
-        <footer>
-            {{ block "footer" . }}{{ end }}
-        </footer>
-    </body>
-
-    <script type="text/javascript" src="{{ .Site.BaseURL }}/js/app.js"></script>
 </html>
