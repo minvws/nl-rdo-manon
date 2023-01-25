@@ -1,24 +1,26 @@
 {
-  "private": true,
-  "engines": {
-    "node": ">=16"
-  },
-  "scripts": {
-    "build": "npm run build:css && npm run build:js",
-    "build:css": "sass scss/main.scss:static/css/main.css --no-source-map --load-path=node_modules/",
-    "build:js": "esbuild --bundle js/manon.js --outfile=static/js/manon.js",
-    "watch": "concurrently \"npm run watch:css\" \"npm run watch:js\"",
-    "watch:css": "sass scss/main.scss:static/css/main.css --no-source-map --load-path=node_modules/ --watch",
-    "watch:js": "esbuild --bundle js/manon.js --outfile=static/js/manon.js --watch",
-    "clean": "rimraf static/css static/js",
-    "format": "prettier --write ."
-  },
-  "devDependencies": {
-    "@minvws/manon": "workspace:*",
-    "concurrently": "^7.2.2",
-    "esbuild": "^0.14.48",
-    "prettier": "^2.6.2",
-    "rimraf": "^3.0.2",
-    "sass": "^1.51.0"
-  }
+    "private": true,
+    "engines": {
+        "node": ">=16"
+    },
+    "scripts": {
+        "build": "npm run build:css && npm run build:js && npm run copy:fonts && npm run copy:images",
+        "build:css": "sass assets/scss/main.scss:static/css/main.css --no-source-map --load-path=node_modules/",
+        "build:js": "esbuild --bundle assets/js/manon.js --outfile=static/js/manon.js",
+        "watch": "concurrently \"npm run watch:css\" \"npm run watch:js\"",
+        "watch:css": "sass assets/scss/main.scss:static/css/main.css --no-source-map --load-path=node_modules/ --watch",
+        "watch:js": "esbuild --bundle js/manon.js --outfile=static/js/manon.js --watch",
+        "copy:fonts": "cp -r assets/fonts/ static/",
+        "copy:images": "cp -r assets/img/ static/",
+        "clean": "rimraf static/css static/js",
+        "format": "prettier --write ."
+    },
+    "devDependencies": {
+        "@minvws/manon": "workspace:*",
+        "concurrently": "^7.2.2",
+        "esbuild": "^0.14.48",
+        "prettier": "^2.6.2",
+        "rimraf": "^3.0.2",
+        "sass": "^1.51.0"
+    }
 }

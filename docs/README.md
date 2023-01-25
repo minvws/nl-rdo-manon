@@ -1,4 +1,4 @@
-# Manon Docs
+# manon-docs
 
 ```
 $ docker build -t manon-docs .
