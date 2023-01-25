@@ -1,7 +1,7 @@
 # Manon
 
-{{% alert title="Let op:" %}}
-Aan deze instructies wordt nog gewerkt.
+{{% alert title="Let op" %}}
+Aan deze instructies **wordt** nog gewerkt.
 {{% /alert %}}
 
 {{< blocks/section >}}
