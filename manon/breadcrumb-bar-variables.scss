@@ -31,8 +31,8 @@
 
   /* Icon */
   --breadcrumb-bar-icon: ">";
-  /* --breadcrumb-bar-icon-margin-left: ; */
-  /* --breadcrumb-bar-icon-margin-right: ; */
+  --breadcrumb-bar-icon-margin-left: var(--application-base-gap);
+  --breadcrumb-bar-icon-margin-right: var(--application-base-gap);
 
   /* Last item */
   --breadcrumb-bar-list-item-last-child-font-weight: bold;
@@ -43,3 +43,5 @@
   /* Link hover */
   --breadcrumb-bar-link-hover-text-decoration: none;
 }
+
+
