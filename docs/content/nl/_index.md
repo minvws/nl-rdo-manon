@@ -1,7 +1,12 @@
+---
+title: "Manon"
+linkTitle: "Manon"
+---
+
 # Manon
 
-{{% alert title="Let op" %}}
-Aan deze instructies **wordt** nog gewerkt.
+{{% alert type="error" title="Let op" %}}
+Aan deze instructies wordt nog gewerkt.
 {{% /alert %}}
 
 {{< blocks/section >}}

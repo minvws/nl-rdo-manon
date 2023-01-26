@@ -8,9 +8,9 @@
 
     {{ range $pages }}
     <p>
-    <h5>
+    <h2>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </h5>
+    </h2>
     <p>{{ .Description | markdownify }}</p>
     </p>
     {{ end }}

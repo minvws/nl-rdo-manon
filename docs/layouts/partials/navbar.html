@@ -2,28 +2,13 @@
     <div>
         <ul>
             <li>
-                <a href="{{ .Site.BaseURL }}" aria-current="page">Home</a>
+                <a href="{{ .Site.BaseURL }}">Home</a>
             </li>
             {{ range .Site.Menus.main }}
             <li>
-                <a href="{{ .URL | absLangURL }}">
-                    {{ .Name }}
-                </a>
+                <a href="{{ .URL | absLangURL }}">{{ .Name }} </a>
             </li>
             {{ end }}
-        </ul>
-    </div>
-</nav>
-
-<nav class="breadcrumb-bar">
-    <div>
-        <ul>
-            <li>
-                <a href="./l1.html" aria-current="page">breadcrumb 1</a>
-            </li>
-            <li>
-                <a href="./l2.html" aria-current="page">breadcrumb 2</a>
-            </li>
         </ul>
     </div>
 </nav>
