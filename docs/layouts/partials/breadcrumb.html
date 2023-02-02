@@ -1,8 +1,19 @@
 <nav class="breadcrumb-bar">
     <div>
         <ul>
-            <li>
-            </li>
+            {{- template "breadcrumbitem" (dict "currentPage" . "lastVisistedPage" .) }}
         </ul>
     </div>
 </nav>
+
+{{/* We traverse up the pages, when it has a parent we call the template again */}}
+{{ define "breadcrumbitem" -}}
+{{ if .currentPage.Parent -}}
+{{ if not .currentPage.IsHome }}
+{{ template "breadcrumbitem" (dict "currentPage" .currentPage.Parent "lastVisitedPage" .lastVisitedPage) -}}
+{{ end -}}
+{{ end -}}
+<li>
+    <a href="{{ .currentPage.Permalink }}">{{ .currentPage.LinkTitle }}</a>
+</li>
+{{ end }}

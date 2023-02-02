@@ -8,8 +8,10 @@
 <body>
     <header>
         {{ partial "navbar.html" . }}
+        {{ partial "breadcrumb.html" . }}
     </header>
-    <main>
+    <main class="sidemenu">
+        {{ partial "sidemenu.html" . }}
         <article>
             <div>
                 {{ block "main" . }}{{ end }}

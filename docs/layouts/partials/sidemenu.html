@@ -1,0 +1,33 @@
+{{- $headers := findRE "<h[1-4].*?>(.|\n])+?</h[1-4]>" .Content -}}
+
+    <nav>
+        <ul>
+            {{ range $headers }}
+
+            {{ $lastLevel := $.Scratch.Get "lastLevel" }}
+            {{ $header := . }}
+            {{ $base := ($.Page.File.LogicalName) }}
+            {{ $anchorID := ($header | plainify | htmlUnescape | anchorize) }}
+
+            {{ $headerID := index (findRE "(id=\"([^\"]*?)\")" $header) 0}}
+            {{ $id := replace (replace $headerID "id=\"" "") "\"" "" }}
+
+            {{ $text := $header | plainify | htmlUnescape }}
+
+            {{ range findRE "[1-4]" . 1 }}
+            {{ $nextLevel := (int .) }}
+
+            {{ if gt $nextLevel $lastLevel }}
+            <ul>
+                {{ else if lt $nextLevel $lastLevel }}
+            </ul>
+            {{ end }}
+
+            <li><a href="{{ if $id }}#{{ $id }}{{ else }}#{{ $anchorID }}{{ end }}">{{ $text }}</a></li>
+            {{ $.Scratch.Set "lastLevel" $nextLevel}}
+
+            {{ end }}
+
+            {{ end }}
+        </ul>
+    </nav>
