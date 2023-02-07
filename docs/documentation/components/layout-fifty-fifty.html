@@ -35,31 +35,40 @@
       </nav>
     </header>
 
-    <main id="main-content" tabindex="-1">
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./tag.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
       <article>
         <div>
           <section id="introduction">
             <h1>Layout fifty-fifty</h1>
             <p>Verdeling 50% - 50% vanaf het ingestelde breekpunt.</p>
-          </section>
 
-          <section id="requirements">
-            <h2>Benodigde bestanden</h2>
-            <p>
-              Om gebruik te maken van de styling dienen de onderstaande bestanden ingeladen te zijn
-              via het
-              <code>manon.scss</code> bestand.
-            </p>
-            <ul>
-              <li><code>layout/layout-base.scss</code></li>
-              <li><code>layout/layout-base-variables.scss</code></li>
-              <li><code>layout/layout-fifty-fifty.scss</code></li>
-              <li><code>layout/layout-fifty-fifty-variables.scss</code></li>
-            </ul>
+            <h2>Benodigde stappen:</h2>
+              <ol>
+                <li>
+                  Voeg de benodigde bestanden toe aan het project.
+                  <ul>
+                    <li>Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+                    <li>Voeg de class <code>fifty-fifty</code> toe op het gewenste element. Voor meer informatie over het implementeren zie de <a href="#examples">voorbeelden</a>.</li>
+                  </ul>
+                </li>
+              </ol>
           </section>
 
           <section id="examples">
-            <h2>Voorbeeld</h2>
+            <h2>Voorbeelden</h2>
+          
             <h3>Visueel voorbeeld:</h3>
             <div class="fifty-fifty">
               <div>
@@ -128,6 +137,76 @@
               </code>
             </pre>
           </section>
+
+          <section id="requirements">
+            <h2>Bijbehorende bestanden</h2>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+
+            <h3>Importeer component via NPM</h3>
+
+            <p>Het is mogelijk om gebruik te maken van de layout-set. Door hier gebruik van te maken blijft de breedte tussen de blokken gelijk aan de daar gedefinieerde breedte.</p>
+
+            <h4>CSS-voorbeeld:</h4>
+            <pre>
+              <code>
+/* Layout set */
+@use "@minvws/manon/layout-set"; /* Optional */
+
+/* Headings */
+@use "@minvws/manon/fifty-fifty";
+              </code>
+            </pre>
+
+          <section id="variables">
+              <h2>Instelbare variabelen</h2>
+              <div class="horizontal-scroll">
+                <table class="nowrap">
+                  <caption>Beschikbare instelbare variabelen:</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Variabele</th>
+                      <th scope="col">CSS-attribuut</th>
+                      <th scope="col">Manon ingestelde waarde</th>
+                      <th scope="col">Breekpunt</th>
+                      <th scope="col">Class</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>--layout-fifty-fifty-gap</td>
+                      <td><a href="../variables.html#gap">gap</a></td>
+                      <td>var(--content-gap, 2rem)</td>
+                      <td>42rem</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--layout-fifty-fifty-breakpoint-gap</td>
+                      <td><a href="../variables.html#gap">gap</a></td>
+                      <td>var(--layout-fifty-fifty-gap)</td>
+                      <td>42rem</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>CSS</h3>
+              <p>Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw project. Kies en gebruik de benodigde variabelen.</p>
+
+              <p>Om stijlkeuzes door te voeren op alle titels gebruik de onderstaande variabelen. Hierbij kan ook verwezen worden naar stijlkeuzes in heading-sets als deze toegevoegd zijn aan het project. Voor een voorbeeld zie: <a href="heading-base-set.html">heading-base-set</a>.</p>
+              <pre>
+                <code>
+:root {
+  --layout-fifty-fifty-gap: ;
+  --layout-fifty-fifty-breakpoint-gap: ;
+}
+                </code>
+              </pre>
+            </section>
 
           <section id="related">
             <h2>Gerelateerde pagina's</h2>

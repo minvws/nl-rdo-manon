@@ -3,7 +3,7 @@
 /*---------------------------------------------------------------*/
 @use "article-variables";
 
-main article {
+article {
   /* Layout */
   display: flex;
   flex-direction: var(--article-flex-direction);

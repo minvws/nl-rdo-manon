@@ -7,8 +7,9 @@ main {
   > div {
     display: flex;
     flex-direction: var(--main-content-wrapper-flex-direction);
-    gap: var(--main-content-wrapper-gap);
+    justify-content: var(--main-content-wrapper-justify-content);
     align-items: var(--main-content-wrapper-align-items);
+    gap: var(--main-content-wrapper-gap);
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;

@@ -60,7 +60,7 @@
 @use "@minvws/manon/hidden";
 
 /* Layout */
-@use "@minvws/manon/layout-base-variables";
+/*@use "@minvws/manon/layout-base-variables";*/
 
 @use "@minvws/manon/layout-authentication";
 @use "@minvws/manon/layout-one-third-two-thirds";
@@ -81,7 +81,10 @@
 /* Main */
 @use "@minvws/manon/main";
 @use "@minvws/manon/main-content-wrapper";
-/*@use "@minvws/manon/main-documentation-integration";*/
+
+/* Div */
+@use "@minvws/manon/div";
+@use "@minvws/manon/div-content-wrapper";
 
 /* Article */
 @use "@minvws/manon/article";

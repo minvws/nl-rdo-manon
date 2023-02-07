@@ -4,12 +4,13 @@
 
 :root {
     /* Layout */
-    --main-content-wrapper-flex-direction: column;
-    --main-content-wrapper-gap: 2rem;
-    --main-content-wrapper-align-items: flex-start;
-    --main-content-wrapper-padding-top: 0;
-    --main-content-wrapper-padding-right: 0;
-    --main-content-wrapper-padding-bottom: 0;
-    --main-content-wrapper-padding-left: 0;
-    --main-content-wrapper-max-width: 80rem;
+    --main-content-wrapper-flex-direction: var(--content-flex-direction);
+    --main-content-wrapper-justify-content: var(--content-justify-content);
+    --main-content-wrapper-align-items: var(--content-align-items);
+    --main-content-wrapper-gap: var(--content-gap);
+    --main-content-wrapper-padding-top: var(--content-padding-top);
+    --main-content-wrapper-padding-right: var(--content-padding-right);
+    --main-content-wrapper-padding-bottom: var(--content-padding-bottom);
+    --main-content-wrapper-padding-left: var(--content-padding-left);
+    --main-content-wrapper-max-width: var(--content-max-width);
 }

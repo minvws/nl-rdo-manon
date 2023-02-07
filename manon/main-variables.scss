@@ -4,11 +4,10 @@
 :root {
   --main-flex-direction: var(--content-flex-direction);
   --main-justify-content: var(--content-justify-content);
-  --main-align-items: var(--content-align-items);
   --main-gap: 0;
   --main-padding-top: 0;
   --main-padding-right: 0;
-  --main-padding-bottom: var(--page-whitespace-bottom);
+  --main-padding-bottom: 0;
   --main-padding-left: 0;
   --main-max-width: 100%;
 }

@@ -7,9 +7,8 @@ body > main,
 %main-style {
   display: flex;
   flex-direction: var(--main-flex-direction);
-  gap: var(--main-gap);
   justify-content: var(--main-justify-content);
-  align-items: var(--main-align-items);
+  gap: var(--main-gap);
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;

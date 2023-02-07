@@ -6,9 +6,9 @@
 main section {
   display: flex;
   flex-direction: var(--section-flex-direction);
-  gap: var(--section-gap);
   justify-content: var(--section-justify-content);
   align-items: var(--section-align-items);
+  gap: var(--section-gap);
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;

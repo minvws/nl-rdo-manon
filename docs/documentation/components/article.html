@@ -2,7 +2,7 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <title>Artikel</title>
+    <title>Article</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../../static/css/main.css" rel="stylesheet" />
     <link href="../../static/img/favicon.ico" rel="shortcut icon" />
@@ -26,8 +26,7 @@
         <div>
           <ul>
             <li><a href="../components.html">Componenten</a></li>
-            <li><a href="./layouts.html">Layouts</a></li>
-            <li><a href="./article.html" aria-current="page">Artikel</a></li>
+            <li><a href="./article.html" aria-current="page">article</a></li>
           </ul>
         </div>
       </nav>
@@ -40,7 +39,7 @@
         aria-label="Document-navigatie"
       >
         <ul>
-          <li><a href="./article.html">Introductie</a></li>
+          <li><a href="./section.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
           <li><a href="#requirements">Bijbehorende bestanden</a></li>
           <li><a href="#related">Gerelateerde pagina's</a></li>
@@ -50,18 +49,7 @@
       <article>
         <div>
           <section id="introduction">
-            <h1>Artikel</h1>
-            <p>
-              Basisweergave-component. Layoutkeuzes die toepassing hebben op het
-              <code>article</code>-element.
-            </p>
-            <p class="explanation">
-              <span>Tip:</span> Dit element erft stijlkeuzes van het algemene layout-bestand
-              <code>layout-base-variables.scss</code> indien deze aanwezig is. Als de header, main
-              en footer stijlkeuzes delen is het efficient om de keuzes in te stellen in dat bestand
-              om herhaling en inconsitentie te voorkomen. Voor meer informatie zie:
-              <a href="./layout-base.html">Basisweergave instellen</a>.
-            </p>
+            <h1>Article <code>article</code></h1>
 
             <h2>Benodigde stappen:</h2>
             <ul>
@@ -70,58 +58,15 @@
                 en optionele bestanden zie:
                 <a href="#requirements">Bijbehorende bestanden</a>.
               </li>
+              <li>Maak gebruik van en layout set om stijlkeuzes voor de layout centraal vast te leggen en in verschillende componenten te gebruiken. Denk bijvoorbeeld aan het vastleggen van de afstand tussen de blokken binnen de <code>main</code>, een <code>article</code> en een <code>section</code>. Voor meer informatie zie: <a href="#layout-set">Gebruik maken van een layout-set</a>.</li>
             </ul>
 
-            <h2>Aandachtspunten</h2>
+            <h2 id="layout-set">Gebruik maken van een layout-set</h2>
+            <p>Layout-sets kunnen gebruikt worden om op een centrale plek de stijlkeuzes vast te leggen voor layout-gerelateerde keuzes.</p>
+
+            <p>Beschikbare styling sets voor layout zijn:</p>
             <ul>
-              <li>
-                Dit component geeft stijlkeuzes mee voor alle
-                <code>article</code> elementen.
-              </li>
-            </ul>
-          </section>
-
-          <section id="requirement">
-            <h2>Bijbehorende bestanden</h2>
-            <p>
-              Voor meer informatie over importeren en instellen van componenten. Zie:
-              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
-            </p>
-
-            <h3>Benodigd</h3>
-
-            <ul>
-              <li><code>article.scss</code></li>
-            </ul>
-
-            <h3>Optioneel</h3>
-            <ul>
-              <li><code>article-variables.scss</code></li>
-              <li><code>layout-base-variables.scss</code></li>
-            </ul>
-          </section>
-
-          <section id="variables">
-            <h2>Instelbare variabelen</h2>
-            <ul>
-              <li><a href="../variables.html#align-items">align-items</a></li>
-              <li><a href="../variables.html#gap">gap</a></li>
-              <li>
-                <a href="../variables.html#background-color">background-color</a>
-              </li>
-              <li><a href="../variables.html#text-color">text-color</a></li>
-              <li>
-                Titel en subitels:
-                <ul>
-                  <li><a href="../variables.html#margin">margin</a></li>
-                </ul>
-              </li>
-              <li>
-                Content binnen onderliggende blokken:
-                <ul>
-                  <li><a href="../variables.html#gap">gap</a></li>
-                </ul>
-              </li>
+              <li><a href="layout-set.html">Layout-basisset</a></li>
             </ul>
           </section>
 
@@ -137,6 +82,145 @@
               </code>
             </pre>
           </section>
+
+          <section id="requirements">
+            <h2>Bijbehorende bestanden</h2>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+
+            <h3>Importeer component via NPM</h3>
+
+            <h4>CSS-voorbeeld:</h4>
+            <pre>
+              <code>
+@use "@minvws/manon/article";
+              </code>
+            </pre>
+          </section>
+
+          <section id="variables">
+            <h2>Instelbare variabelen</h2>
+
+            <div class="horizontal-scroll">
+              <table class="nowrap">
+                <caption>Instelbare variabelen tabel:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Variabele</th>
+                    <th scope="col">CSS-attribuut</th>
+                    <th scope="col">Manon ingestelde waarde</th>
+                    <th scope="col">Breekpunt</th>
+                    <th scope="col">Class</th>
+                  </tr>
+                  
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>--article-flex-direction</td>                    
+                    <td><a href="../variables.html#flex-direction">flex-direction</a></td>
+                    <td>var(--content-flex-direction)</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--article-justify-content</td>                    
+                    <td><a href="../variables.html#justify-content">justify-content</a></td>
+                    <td>var(--content-justify-content)</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--article-align-items</td>                    
+                    <td><a href="../variables.html#align-items">align-items</a></td>
+                    <td>var(--content-align-items)</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--article-gap</td>                    
+                    <td><a href="../variables.html#gap">gap</a></td>
+                    <td>0</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--article-padding-top</td>                    
+                    <td><a href="../variables.html#padding-top">padding-top</a></td>
+                    <td>0</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--article-padding-right</td>                    
+                    <td><a href="../variables.html#padding-right">padding-right</a></td>
+                    <td>var(--page-whitespace-right)</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--article-padding-bottom</td>                    
+                    <td><a href="../variables.html#padding-bottom">padding-bottom</a></td>
+                    <td>0</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--article-padding-left</td>                    
+                    <td><a href="../variables.html#padding-left">padding-left</a></td>
+                    <td>var(--page-whitespace-left)</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--article-max-width</td>                    
+                    <td><a href="../variables.html#max-width">max-width</a></td>
+                    <td>100%</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>CSS</h3>
+              <p>Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw project. Kies en gebruik de benodigde variabelen.</p>
+              <pre>
+                <code>
+:root {
+  --article-flex-direction: ;
+  --article-justify-content: ;
+  --article-align-items: ;
+  --article-gap: ;
+  --article-padding-top: ;
+  --article-padding-right: ;
+  --article-padding-bottom: ;
+  --article-padding-left: ;
+  --article-max-width: ;
+}
+                </code>
+              </pre>
+          </section>
+
+          <section id="related">
+            <h2>Gerelateerde pagina's</h2>
+            <nav aria-label="Gerelateerde pagina's">
+              <ul>
+                <li><a href="article-test.html">Article test</a> Testpagina met de content gegroepeerd binnen <code>article</code>'s.</li>
+                <li><a href="./article-content-wrapper.html">Article content wrapper</a></li>
+              </ul>
+            </nav>
+          </section>
+          
         </div>
       </article>
     </main>

@@ -1,5 +1,17 @@
 /* Theme: Soft based on manon components */
+
+/* Base - Top level styling */
 @import "application-base"; /* Styling on the highest level */
+
+/* Styling sets. E.g color sets */
 @import "spot-large"; /* Branding colors */
-@import "headings-base-set"; /* Headings set basic */
+@import "headings-base-set"; /* Defining available heading styles */
+@import "layout-set"; /* Defining shared layout values */
+
+
+/* Layout */
+@import "section";
+
+/* Components */
 @import "tile";
+
