@@ -8,10 +8,9 @@
 @import "headings-base-set"; /* Defining available heading styles */
 @import "layout-set"; /* Defining shared layout values */
 
-
 /* Layout */
 @import "section";
 
 /* Components */
 @import "tile";
-
+@import "breadcrumb-bar";
