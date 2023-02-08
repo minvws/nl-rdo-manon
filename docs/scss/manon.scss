@@ -1,14 +1,16 @@
 /*---------------------------------------------------------------*/
 /*------------------------- manon.scss --------------------------*/
 /*---------------------------------------------------------------*/
-/* Color sets */
+/* Sets */
+@use "@minvws/manon/body-text-set";
+@use "@minvws/manon/headings-base-set";
 
-/* Finn */
+/* Color set Finn */
 @use "@minvws/manon/finn-small";
 @use "@minvws/manon/finn-medium";
 @use "@minvws/manon/finn-large";
 
-/* Spot */
+/* Color set Spot */
 @use "@minvws/manon/spot-mini";
 @use "@minvws/manon/spot-small";
 @use "@minvws/manon/spot-medium";
@@ -18,7 +20,6 @@
 @use "@minvws/manon/tag-colors-soft";
 
 /* Headings */
-@use "@minvws/manon/headings-base-set";
 @use "@minvws/manon/headings";
 
 /* Functions */

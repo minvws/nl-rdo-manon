@@ -83,11 +83,20 @@
               <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
             </p>
 
+            <h3>Aandachtspunten:</h3>
+            <ul>
+              <li>De standaard ingestelde waarden binnen Manon maken gebruik van de <a href="body-text-set.html">Body text set</a>. Om gebruik te maken van deze set. Laad de set eenmalig in voordat overige componenten er gebruik van maken. Zie onderstaand voorbeeld voor meer informatie.</li>
+            </ul>
+
             <h3>Importeer component via NPM</h3>
 
             <h4>CSS-voorbeeld:</h4>
             <pre>
               <code>
+/* Body text set */
+@use "@minvws/manon/body-text-set";
+
+/* De-emphasized */
 @use "@minvws/manon/de-emphasized";
               </code>
             </pre>
@@ -112,7 +121,7 @@
                     <tr>
                       <td>--emphasized-font-size</td>
                       <td><a href="../variables.html#font-size">font-size</a></td>
-                      <td>0.8rem</td>
+                      <td>var(--body-text-small-font-size)</td>
                       <td>-</td>
                       <td rowspan="4" scope="rowgroup">de-emphasized</td>
                     </tr>
@@ -120,21 +129,21 @@
                     <tr>
                       <td>--emphasized-font-weight</td>
                       <td><a href="../variables.html#font-weight">font-weight</a></td>
-                      <td>var(--application-base-font-weight)</td>
+                      <td>var(--body-text-small-font-weight)</td>
                       <td>-</td>
                     </tr>
 
                     <tr>
                       <td>--emphasized-line-height</td>
                       <td><a href="../variables.html#line-height">line-height</a></td>
-                      <td>var(--application-base-line-height)</td>
+                      <td>var(--body-text-small-line-height)</td>
                       <td>-</td>
                     </tr>
 
                     <tr>
                       <td>--emphasized-text-color</td>
                       <td><a href="../variables.html#text-color">text-color</a></td>
-                      <td>#696969</td>
+                      <td>var(--body-text-small-color)</td>
                       <td>-</td>
                     </tr>
 
