@@ -2,7 +2,7 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <title>Sectie content wrapper</title>
+    <title>Div content wrapper</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../../static/css/main.css" rel="stylesheet" />
     <link href="../../static/img/favicon.ico" rel="shortcut icon" />
@@ -26,8 +26,8 @@
         <div>
           <ul>
             <li><a href="../components.html">Componenten</a></li>
-            <li><a href="./section.html">Sectie</a></li>
-            <li><a href="./section-content-wrapper.html" aria-current="page">Sectie content wrapper</a></li>
+            <li><a href="./div.html">Div</a></li>
+            <li><a href="./div-content-wrapper.html" aria-current="page">Div content wrapper</a></li>
           </ul>
         </div>
       </nav>
@@ -50,7 +50,7 @@
       <article>
         <div>
           <section id="introduction">
-            <h1>Sectie content wrapper</h1>
+            <h1>Div content wrapper</h1>
 
             <h2>Benodigde stappen:</h2>
             <ul>
@@ -74,14 +74,14 @@
           <section id="examples">
             <h3>Html-voorbeeld:</h3>
 
-            <h4><code>section</code>:</h4>
+            <h4><code>div</code>:</h4>
             <pre>
               <code>
-&lt;section>
+&lt;div>
   &lt;div> &lt;!-- Content wrapper -->
     &lt;!-- Content -->
   &lt;div>
-&lt;/section>
+&lt;/div>
               </code>
             </pre>
           </section>
@@ -98,7 +98,7 @@
             <h4>CSS-voorbeeld:</h4>
             <pre>
               <code>
-@use "@minvws/manon/section-content-wrapper";
+@use "@minvws/manon/div-content-wrapper";
               </code>
             </pre>
           </section>
@@ -121,7 +121,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>--section-content-wrapper-flex-direction</td>
+                    <td>--div-content-wrapper-flex-direction</td>
                     <td><a href="../variables.html#flex-direction">flex-direction</a></td>
                     <td>var(--content-flex-direction)</td>
                     <td>-</td>
@@ -129,7 +129,7 @@
                   </tr>
 
                   <tr>
-                    <td>--section-content-wrapper-justify-content</td>                    
+                    <td>--div-content-wrapper-justify-content</td>                    
                     <td><a href="../variables.html#justify-content">justify-content</a></td>
                     <td>var(--content-justify-content)</td>
                     <td>-</td>
@@ -137,7 +137,7 @@
                   </tr>
 
                   <tr>
-                    <td>--section-content-wrapper-align-items</td>                    
+                    <td>--div-content-wrapper-align-items</td>                    
                     <td><a href="../variables.html#align-items">align-items</a></td>
                     <td>var(--content-align-items)</td>
                     <td>-</td>
@@ -145,7 +145,7 @@
                   </tr>
 
                   <tr>
-                    <td>--section-content-wrapper-gap</td>                    
+                    <td>--div-content-wrapper-gap</td>                    
                     <td><a href="../variables.html#gap">gap</a></td>
                     <td>var(--content-gap)</td>
                     <td>-</td>
@@ -153,7 +153,7 @@
                   </tr>
 
                   <tr>
-                    <td>--section-content-wrapper-padding-top</td>                    
+                    <td>--div-content-wrapper-padding-top</td>                    
                     <td><a href="../variables.html#padding-top">padding-top</a></td>
                     <td>var(--content-padding-top)</td>
                     <td>-</td>
@@ -161,7 +161,7 @@
                   </tr>
 
                   <tr>
-                    <td>--section-content-wrapper-padding-right</td>                    
+                    <td>--div-content-wrapper-padding-right</td>                    
                     <td><a href="../variables.html#padding-right">padding-right</a></td>
                     <td>var(--content-padding-right)</td>
                     <td>-</td>
@@ -169,7 +169,7 @@
                   </tr>
 
                   <tr>
-                    <td>--section-content-wrapper-padding-bottom</td>                    
+                    <td>--div-content-wrapper-padding-bottom</td>                    
                     <td><a href="../variables.html#padding-bottom">padding-bottom</a></td>
                     <td>var(--content-padding-bottom)</td>
                     <td>-</td>
@@ -177,7 +177,7 @@
                   </tr>
 
                   <tr>
-                    <td>--section-content-wrapper-padding-left</td>                    
+                    <td>--div-content-wrapper-padding-left</td>                    
                     <td><a href="../variables.html#padding-left">padding-left</a></td>
                     <td>var(--content-padding-left)</td>
                     <td>-</td>
@@ -185,7 +185,7 @@
                   </tr>
 
                   <tr>
-                    <td>--section-content-wrapper-max-width</td>                    
+                    <td>--div-content-wrapper-max-width</td>                    
                     <td><a href="../variables.html#max-width">max-width</a></td>
                     <td>var(--content-max-width)</td>
                     <td>-</td>
@@ -200,15 +200,15 @@
               <pre>
                 <code>
 :root {
-  --section-content-wrapper-flex-direction: ;
-  --section-content-wrapper-justify-content: ;
-  --section-content-wrapper-align-items: ;
-  --section-content-wrapper-gap: ;
-  --section-content-wrapper-padding-top: ;
-  --section-content-wrapper-padding-right: ;
-  --section-content-wrapper-padding-bottom: ;
-  --section-content-wrapper-padding-left: ;
-  --section-content-wrapper-max-width: ;
+  --div-content-wrapper-flex-direction: ;
+  --div-content-wrapper-justify-content: ;
+  --div-content-wrapper-align-items: ;
+  --div-content-wrapper-gap: ;
+  --div-content-wrapper-padding-top: ;
+  --div-content-wrapper-padding-right: ;
+  --div-content-wrapper-padding-bottom: ;
+  --div-content-wrapper-padding-left: ;
+  --div-content-wrapper-max-width: ;
 }
                 </code>
               </pre>
@@ -218,8 +218,8 @@
             <h2>Gerelateerde pagina's</h2>
             <nav aria-label="Gerelateerde pagina's">
               <ul>
-               <li><a href="section-content-wrapper-test.html">Sectie content wrapper test</a> Testpagina met de content gegroepeerd binnen <code>section</code>'s met een content wrapper.</li>
-                <li><a href="./section.html">Sectie</a> Content zonder content wrapper.</li>
+               <li><a href="div-content-wrapper-test.html">Div content wrapper test</a> Testpagina met de content gegroepeerd binnen <code>div</code>'s met een content wrapper.</li>
+                <li><a href="./div.html">Div</a> Content zonder content wrapper.</li>
               </ul>
             </nav>
           </section>

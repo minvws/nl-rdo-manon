@@ -2,10 +2,10 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <title>Section content wrapper test</title>
+    <title>Div content wrapper test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../../static/css/main.css" rel="stylesheet" />
-    <link href="../../static/css/docs-styling/section/section-content-wrapper-variables.css" rel="stylesheet" />
+    <link href="../../static/css/docs-styling/div/div-content-wrapper-variables.css" rel="stylesheet" />
     <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
@@ -27,9 +27,9 @@
         <div>
           <ul>
             <li><a href="../components.html">Componenten</a></li>
-            <li><a href="./section.html">Section</a></li>
-            <li><a href="./section-content-wrapper.html">Section content wrapper</a></li>
-            <li><a href="./section-content-wrapper-test.html" aria-current="page">section content wrapper testpagina</a>
+            <li><a href="./div.html">Div</a></li>
+            <li><a href="./div-content-wrapper.html">Div content wrapper</a></li>
+            <li><a href="./div-content-wrapper-test.html" aria-current="page">div content wrapper testpagina</a>
             </li>
           </ul>
         </div>
@@ -37,27 +37,27 @@
     </header>
 
     <main id="main-content" tabindex="-1">
-      <section>
+      <div>
         <div>
-          <h1>Content wrapper section</h1>
-          <p>Componenten gegroepeerd in <code>section</code>'s binnen de <code>main</code>.</p>
+          <h1>Content wrapper div</h1>
+          <p>Componenten gegroepeerd in <code>div</code>'s binnen de <code>main</code>.</p>
 
           <h2>HTML-voorbeeld:</h2>
           <pre>
             <code>
 &lt;main>
-  &lt;section> &lt;!-- This can be full width -->
+  &lt;div> &lt;!-- This can be full width -->
     &lt;div> &lt;!-- While the content width can be limited -->
       &lt;!-- content -->
     &lt;/div>
-  &lt;/section>
+  &lt;/div>
 &lt;/main>
             </code>
           </pre>
         </div>
       </div>
 
-      <section class="branding-color-accent-5">
+      <div class="branding-color-accent-5">
         <div>
           <h2>Gebruikte bestanden</h2>
           <p>Voor meer informatie over importeren en instellen van componenten. Zie: <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
@@ -68,7 +68,7 @@
           <h4>CSS-voorbeeld:</h4>
           <pre>
             <code>
-@use "@minvws/manon/section-content-wrapper";
+@use "@minvws/manon/div-content-wrapper";
             </code>
           </pre>
         </div>
@@ -90,20 +90,20 @@
   --main-padding-left: 0;
 
   /* Section */
-  --section-gap: 0;
-  --section-padding-top: 0;
-  --section-padding-right: 0;
-  --section-padding-bottom: 0;
-  --section-padding-left: 0;
+  --div-gap: 0;
+  --div-padding-top: 0;
+  --div-padding-right: 0;
+  --div-padding-bottom: 0;
+  --div-padding-left: 0;
  
   /* -- end of the style reset -- */
 
   /* Section content wrapper */
-  --section-content-wrapper-gap: var(--content-gap);
-  --section-content-wrapper-padding-top: var(--content-padding-top);
-  --section-content-wrapper-padding-right: var(--content-padding-right);
-  --section-content-wrapper-padding-bottom: var(--content-padding-bottom);
-  --section-content-wrapper-padding-left: var(--content-padding-left);
+  --div-content-wrapper-gap: var(--content-gap);
+  --div-content-wrapper-padding-top: var(--content-padding-top);
+  --div-content-wrapper-padding-right: var(--content-padding-right);
+  --div-content-wrapper-padding-bottom: var(--content-padding-bottom);
+  --div-content-wrapper-padding-left: var(--content-padding-left);
 }
 
             </code>
@@ -133,7 +133,7 @@
             </code>
           </pre>
         </div>
-      </section>
+      </div>
     </main>
   </body>
 </html>
