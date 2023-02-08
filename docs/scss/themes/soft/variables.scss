@@ -7,6 +7,11 @@
 @use "spot-large"; /* Branding colors */
 @use "body-text-set"; /* Body set */
 @use "headings-base-set"; /* Headings set basic */
+@use "layout-set"; /* Defining shared layout values */
+
+/* Layout */
+@use "section";
 
 /* Components */
 @use "breadcrumb-bar";
+@use "tile";

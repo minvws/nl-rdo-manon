@@ -5,18 +5,21 @@
 
 .breadcrumb-bar {
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
+  flex-direction: var(--breadcrumb-bar-flex-direction);
   justify-content: var(--breadcrumb-bar-justify-content);
   align-items: var(--breadcrumb-bar-align-items);
+  gap: var(--breadcrumb-bar-gap);
+  width: 100%;
+  margin: 0 auto;
   box-sizing: border-box;
-  background-color: var(--breadcrumb-bar-background-color);
-  color: var(--breadcrumb-bar-text-color);
-  max-width: var(--breadcrumb-bar-max-width);
   padding-top: var(--breadcrumb-bar-padding-top);
   padding-right: var(--breadcrumb-bar-padding-right);
   padding-bottom: var(--breadcrumb-bar-padding-bottom);
   padding-left: var(--breadcrumb-bar-padding-left);
+  max-width: var(--breadcrumb-bar-max-width);
+  flex-wrap: wrap;
+  background-color: var(--breadcrumb-bar-background-color);
+  color: var(--breadcrumb-bar-text-color);
 
   ul,
   ol {

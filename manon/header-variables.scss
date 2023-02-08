@@ -1,0 +1,16 @@
+/*------------------------------------------------------------------------*/
+/*-------------------------- header-variables.scss -----------------------*/
+/*------------------------------------------------------------------------*/
+
+:root {
+  /* Layout */
+  --header-flex-direction: var(--content-flex-direction);
+  --header-justify-content: var(--content-justify-content);
+  --header-align-items: center;
+  --header-gap: 0;
+  --header-padding-top: 0;
+  --header-padding-right: 0;
+  --header-padding-bottom: 0;
+  --header-padding-left: 0;
+  --header-max-width: 100%;
+}

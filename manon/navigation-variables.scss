@@ -4,8 +4,9 @@
 :root {
   /* Navigation layout */
   --navigation-gap: 0, 5rem;
+  --navigation-justify-items: center;
   --navigation-align-content: flex-end;
-  /* --navigation-min-height: ; */
+  --navigation-min-height: 4rem;
   --navigation-width: 100%;
   --navigation-max-width: 100%;
   --navigation-padding-top: 1rem;

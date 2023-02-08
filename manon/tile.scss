@@ -50,8 +50,12 @@
   }
 }
 
-.tiles > div {
-  @extend %tile;
+.tiles {
+  > div,
+  > nav,
+  > section {
+    @extend %tile;
+  }
 }
 
 ul.tiles {
