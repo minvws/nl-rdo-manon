@@ -3,8 +3,17 @@
 /*---------------------------------------------------------------*/
 :root {
   /* Navigation */
-  /* --navigation-breadcrumbs-justify-content: ; */
-  /* --navigation-breadcrumbs-gap: ; */
+  --navigation-breadcrumbs-flex-direction: column;
+  --navigation-breadcrumbs-justify-content: flex-start;
+  --navigation-breadcrumbs-align-items: center;
+  --navigation-breadcrumbs-gap: 0;
+  --navigation-breadcrumbs-padding-top: var(--content-padding-top);
+  --navigation-breadcrumbs-padding-right: var(--content-padding-right);
+  --navigation-breadcrumbs-padding-bottom: var(--content-padding-bottom);
+  --navigation-breadcrumbs-padding-left: var(--content-padding-left);
+  --navigation-breadcrumbs-max-width: var(--content-max-width);
+  --navigation-breadcrumbs-background-color: pink;
+  --navigation-breadcrumbs-text-color: var(--application-base-text-color);
 
   /* List */
   --navigation-breadcrumbs-list-padding: 0.5rem;

@@ -1,0 +1,15 @@
+/*------------------------------------------------------------------------*/
+/*----------------- section-content-wrapper-variables.scss ---------------*/
+/*------------------------------------------------------------------------*/
+
+:root {
+    --section-content-wrapper-flex-direction: var(--content-flex-direction);
+    --section-content-wrapper-justify-content: var(--content-justify-content);
+    --section-content-wrapper-align-items: var(--content-align-items);
+    --section-content-wrapper-gap: var(--content-gap);
+    --section-content-wrapper-padding-top: var(--content-padding-top);
+    --section-content-wrapper-padding-right: var(--content-padding-right);
+    --section-content-wrapper-padding-bottom: var(--content-padding-bottom);
+    --section-content-wrapper-padding-left: var(--content-padding-left);
+    --section-content-wrapper-max-width: var(--content-max-width);
+}

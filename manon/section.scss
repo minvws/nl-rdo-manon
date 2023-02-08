@@ -1,41 +1,20 @@
 /*---------------------------------------------------------------*/
-/*-------------------- components/section.scss ------------------*/
+/*------------------------- section.scss ------------------------*/
 /*---------------------------------------------------------------*/
 @use "section-variables";
 
 main section {
   display: flex;
-  flex-direction: column;
+  flex-direction: var(--section-flex-direction);
+  justify-content: var(--section-justify-content);
   align-items: var(--section-align-items);
   gap: var(--section-gap);
-  background-color: var(--section-background-color);
-  color: var(--section-text-color, inherit);
   width: 100%;
+  margin: 0 auto;
   box-sizing: border-box;
-
-  > div {
-    display: flex;
-    flex-direction: column;
-    align-items: var(--section-content-block-align-items);
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0 auto;
-    gap: var(--section-content-block-gap);
-
-    h1 {
-      margin: var(--section-title-margin);
-    }
-
-    h2 {
-      margin: var(--section-subtitle-margin);
-    }
-  }
-
-  h1 {
-    margin: var(--section-title-margin);
-  }
-
-  h2 {
-    margin: var(--section-subtitle-margin);
-  }
+  padding-top: var(--section-padding-top);
+  padding-right: var(--section-padding-right);
+  padding-bottom: var(--section-padding-bottom);
+  padding-left: var(--section-padding-left);
+  max-width: var(--section-max-width);
 }

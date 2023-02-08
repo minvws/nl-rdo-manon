@@ -3,17 +3,14 @@
 /*------------------------------------------------------------------------*/
 
 :root {
-  --section-align-items: var(--layout-base-content-block-align-items);
-  --section-gap: var(--layout-base-within-content-block-gap);
-  /* --section-background-color: ; */
-  /* --section-text-color: ; */
-
-  /* Section title */
-  --section-title-margin: var(--layout-base-content-block-title-margin);
-
-  /* Section subtitle */
-  --section-subtitle-margin: var(--layout-base-content-block-subtitle-margin);
-
-  /* Content block within sections */
-  --section-content-block-gap: var(--section-gap);
+  /* Layout */
+  --section-flex-direction: var(--content-flex-direction);
+  --section-justify-content: var(--content-justify-content);
+  --section-align-items: var(--content-align-items);
+  --section-gap: 0;
+  --section-padding-top: 0;
+  --section-padding-right: var(--page-whitespace-right);
+  --section-padding-bottom: 0;
+  --section-padding-left: var(--page-whitespace-left);
+  --section-max-width: 100%;
 }

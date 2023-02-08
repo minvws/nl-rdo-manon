@@ -6,15 +6,15 @@
 body > main,
 %main-style {
   display: flex;
+  flex-direction: var(--main-flex-direction);
   justify-content: var(--main-justify-content);
-  align-items: var(--main-align-items);
-  padding: var(--main-padding);
-  padding-top: var(--main-padding-top);
-  padding-bottom: var(--main-padding-bottom);
   gap: var(--main-gap);
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  background-color: var(--main-background-color);
-  color: var(--main-text-color);
+  padding-top: var(--main-padding-top);
+  padding-right: var(--main-padding-right);
+  padding-bottom: var(--main-padding-bottom);
+  padding-left: var(--main-padding-left);
+  max-width: var(--main-max-width);
 }
