@@ -1,26 +1,26 @@
 /*---------------------------------------------------------------*/
 /*------------------------- manon.scss --------------------------*/
 /*---------------------------------------------------------------*/
-/* Shared value sets. */
-	/* Colors */
-	@use "@minvws/manon/grey-15"; /* Color set with 15 shaded of grey */
+/* Sets */
+@use "@minvws/manon/body-text-set";
+@use "@minvws/manon/headings-base-set";
 
-	/* Finn */
-	/*@use "@minvws/manon/finn-small";
-	@use "@minvws/manon/finn-medium";
-	@use "@minvws/manon/finn-large";*/
+/* Colors */
+@use "@minvws/manon/grey-15"; /* Color set with 15 shaded of grey */
 
-	/* Spot */
-	/*@use "@minvws/manon/spot-mini";
-	@use "@minvws/manon/spot-small";
-	@use "@minvws/manon/spot-medium";*/
-	@use "@minvws/manon/spot-large";
+/* Finn */
+/*@use "@minvws/manon/finn-small";
+@use "@minvws/manon/finn-medium";
+@use "@minvws/manon/finn-large";*/
 
-	/* Headings */
-	@use "@minvws/manon/headings-base-set";
+/* Spot */
+/*@use "@minvws/manon/spot-mini";
+@use "@minvws/manon/spot-small";
+@use "@minvws/manon/spot-medium";*/
+@use "@minvws/manon/spot-large";
 
-	/* Layout */
-	@use "@minvws/manon/layout-set";
+/* Layout */
+@use "@minvws/manon/layout-set";
 
 /* Tags */
 @use "@minvws/manon/tag-colors-soft";
