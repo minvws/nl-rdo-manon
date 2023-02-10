@@ -2,7 +2,7 @@
 /*-------- components/layout-one-third-two-thirds-variables.scss ---------*/
 /*------------------------------------------------------------------------*/
 :root {
-  --layout-one-third-two-thirds-gap: var(--layout-base-content-block-gap);
+  --layout-one-third-two-thirds-gap: var(--content-gap);
   --layout-one-third-two-thirds-breakpoint-gap: var(
     --layout-one-third-two-thirds-gap
   );
