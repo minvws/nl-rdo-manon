@@ -37,42 +37,36 @@
       </nav>
     </header>
 
-    <main id="main-content" tabindex="-1">
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./two-thirds-one-third.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
       <article>
         <div>
           <section id="introduction">
             <h1>Layout tweederde eenderde</h1>
             <p>Verdeling 66.66% - 33.33% vanaf het ingestelde breekpunt.</p>
-          </section>
 
-          <section id="requirements">
-            <h2>Benodigde bestanden</h2>
-            <p>
-              Om gebruik te maken van de styling dienen de onderstaande bestanden ingeladen te zijn
-              via het
-              <code>manon.scss</code> bestand.
-            </p>
-
-            <ul>
-              <li><code>layout/layout-base.scss</code></li>
-              <li><code>layout/layout-base-variables.scss</code></li>
-              <li><code>layout/layout-two-thirds-one-third.scss</code></li>
+            <h2>Benodigde stappen:</h2>
+            <ol>
               <li>
-                <code>layout/layout-two-thirds-one-third-variables.scss</code>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.
               </li>
-            </ul>
+              <li>Voeg de class <code>two-thirds-one-third</code> toe aan de gewenste componenten. Voor meer informatie zie: <a href="#examples">Voorbeelden</a>.</li>
+            </ol>
           </section>
 
-          <section id="variables">
-            <h3>Instelbare variabelen</h3>
-            <ul>
-              <li><a href="../variables.html#gap">gap</a></li>
-              <li><a href="../variables.html#breakpoints">breekpunten</a></li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>Voorbeeld</h2>
+          <section id="examples">
+            <h2>Voorbeelden</h2>
             <h3>Visueel voorbeeld:</h3>
 
             <div class="two-thirds-one-third">
@@ -139,6 +133,70 @@
     &lt;!-- Content -->
   &lt;/div>
 &lt;/article>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h2>Bijbehorende bestanden</h2>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+
+            <h3>Aandachtspunten:</h3>
+            <ul>
+              <li>De standaard ingestelde waarden binnen Manon maken gebruik van de <a href="layout-set.html">Layout set</a>. Om gebruik te maken van deze set. Laad de set eenmalig in voordat overige componenten er gebruik van maken. Zie onderstaand voorbeeld voor meer informatie.</li>
+            </ul>
+
+            <h3>Importeer component via NPM</h3>
+
+            <h4>CSS-voorbeeld:</h4>
+            <pre>
+              <code>
+/* Layout set */
+@use "@minvws/manon/layout-set";
+
+/* Two thirds one third */
+@use "@minvws/manon/two-thirds-one-third";
+              </code>
+            </pre>
+          </section>
+
+          <section id="variables">
+            <h2>Instelbare variabelen</h2>
+            <p><strong>Let op:</strong> De uitlijning van horizontaal uitgelijnde tags werken alleen in combinatie met de class <code>horizotal-view</code>.</p>
+            <div class="horizontal-scroll">
+              <table class="nowrap">
+                <caption>Beschikbare instelbare variabelen:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Variabele</th>
+                    <th scope="col">CSS-attribuut</th>
+                    <th scope="col">Manon ingestelde waarde</th>
+                    <th scope="col">Breekpunt</th>
+                    <th scope="col">Class</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>--layout-two-thirds-one-third-gap</td>
+                    <td><a href="../variables.html#gap">gap</a></td>
+                    <td>var(--content-gap)</td>
+                    <td>42rem</td>
+                    <td>two-thirds-one-third</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>CSS</h3>
+            <p>Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw project. Kies en gebruik de benodigde variabelen.</p>
+            <pre>
+              <code>
+:root {
+  --layout-two-thirds-one-third-gap
+}
               </code>
             </pre>
           </section>
