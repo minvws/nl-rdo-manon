@@ -1,0 +1,13 @@
+/* Section */
+
+:root {
+  --section-flex-direction: var(--content-flex-direction);
+  --section-justify-content: var(--content-justify-content);
+  --section-align-items: var(--content-align-items);
+  --section-gap: var(--content-gap);
+  --section-padding-top: 0;
+  --section-padding-right: var(--page-whitespace-right);
+  --section-padding-bottom: 0;
+  --section-padding-left: var(--page-whitespace-left);
+  --section-max-width: 100%;
+}

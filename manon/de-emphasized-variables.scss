@@ -2,8 +2,8 @@
 /*------------------------ text/de-emphasized-variables.scss -----------------------*/
 /*----------------------------------------------------------------------------------*/
 :root {
-  --de-emphasized-font-size: 0.8rem;
-  --de-emphasized-font-weight: var(--application-base-font-weight);
-  --de-emphasized-line-height: var(--application-base-line-height);
-  --de-emphasized-text-color: #696969;
+  --de-emphasized-font-size: var(--body-text-small-font-size);
+  --de-emphasized-font-weight: var(--body-text-small-font-weight);
+  --de-emphasized-line-height: var(--body-text-small-line-height);
+  --de-emphasized-text-color: var(--body-text-small-color);
 }

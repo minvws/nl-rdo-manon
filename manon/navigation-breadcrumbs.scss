@@ -6,21 +6,21 @@
 nav.breadcrumbs {
   display: flex;
   flex-grow: 1;
-  flex-wrap: wrap;
-  justify-content: var(
-    --navigation-breadcrumbs-justify-content,
-    var(--navigation-base-justify-content)
-  );
+  flex-direction: var(--navigation-breadcrumbs-flex-direction);
+  justify-content: var(--navigation-breadcrumbs-justify-content);
+  align-items: var(--navigation-breadcrumbs-align-items);
+  gap: var(--navigation-breadcrumbs-gap);
   width: 100%;
-  background-color: var(
-    --navigation-breadcrumbs-background-color,
-    var(--navigation-base-background-color)
-  );
-  color: var(
-    --navigation-breadcrumbs-text-color,
-    var(--navigation-base-text-color)
-  );
-  gap: var(--navigation-breadcrumbs-gap, var(--navigation-base-gap), 0.5rem);
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: var(--navigation-breadcrumbs-padding-top);
+  padding-right: var(--navigation-breadcrumbs-padding-right);
+  padding-bottom: var(--navigation-breadcrumbs-padding-bottom);
+  padding-left: var(--navigation-breadcrumbs-padding-left);
+  max-width: var(--navigation-breadcrumbs-max-width);
+  flex-wrap: wrap;
+  background-color: var(--navigation-breadcrumbs-background-color);
+  color: var(--navigation-breadcrumbs-text-color);
 
   ul,
   ol {

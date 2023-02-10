@@ -1,0 +1,22 @@
+/*---------------------------------------------------------------*/
+/*-------------------- div-content-wrapper.scss -----------------*/
+/*---------------------------------------------------------------*/
+@use "div-content-wrapper-variables";
+
+main div {
+  div {
+    display: flex;
+    flex-direction: var(--div-content-wrapper-flex-direction);
+    justify-content: var(--div-content-wrapper-justify-content);
+    align-items: var(--div-content-wrapper-align-items);
+    gap: var(--div-content-wrapper-gap);
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: var(--div-content-wrapper-padding-top);
+    padding-right: var(--div-content-wrapper-padding-right);
+    padding-bottom: var(--div-content-wrapper-padding-bottom);
+    padding-left: var(--div-content-wrapper-padding-left);
+    max-width: var(--div-content-wrapper-max-width);
+  }
+}

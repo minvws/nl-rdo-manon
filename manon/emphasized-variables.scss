@@ -2,8 +2,8 @@
 /*------------------------- text/emphasized-variables.scss -------------------------*/
 /*----------------------------------------------------------------------------------*/
 :root {
-  --emphasized-font-size: var(--application-base-font-size);
-  --emphasized-font-weight: bold;
-  --emphasized-line-height: var(--application-base-line-height);
-  --emphasized-text-color: var(--application-base-text-color);
+  --emphasized-font-size: var(--body-text-large-font-size);
+  --emphasized-font-weight: var(--body-text-large-font-weight);
+  --emphasized-line-height: var(--body-text-large-line-height);
+  --emphasized-text-color: var(--body-text-large-color);
 }

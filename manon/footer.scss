@@ -6,15 +6,22 @@
 body > footer,
 %footer-style {
   display: flex;
+  flex-direction: var(--footer-flex-direction);
+  gap: var(--footer-gap);
   justify-content: var(--footer-justify-content);
   align-items: var(--footer-align-items);
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
   flex-wrap: var(--footer-flex-wrap);
   min-height: var(--footer-min-height);
-  width: 100%;
   background-color: var(--footer-background-color);
   color: var(--footer-text-color);
-  padding: var(--footer-padding);
-  box-sizing: border-box;
+  padding-top: var(--footer-padding-top);
+  padding-right: var(--footer-padding-right);
+  padding-bottom: var(--footer-padding-bottom);
+  padding-left: var(--footer-padding-left);
+  max-width: var(--footer-max-width);
 
   h1,
   h2,

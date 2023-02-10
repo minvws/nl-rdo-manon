@@ -1,0 +1,16 @@
+/*------------------------------------------------------------------------*/
+/*----------------- div-content-wrapper-variables.scss -------------------*/
+/*------------------------------------------------------------------------*/
+
+:root {
+    /* Layout */
+    --div-content-wrapper-flex-direction: var(--content-flex-direction);
+    --div-content-wrapper-justify-content: var(--content-justify-content);
+    --div-content-wrapper-align-items: var(--content-align-items);
+    --div-content-wrapper-gap: var(--content-gap);
+    --div-content-wrapper-padding-top: var(--content-padding-top);
+    --div-content-wrapper-padding-right: var(--content-padding-right);
+    --div-content-wrapper-padding-bottom: var(--content-padding-bottom);
+    --div-content-wrapper-padding-left: var(--content-padding-left);
+    --div-content-wrapper-max-width: var(--content-max-width);
+}
