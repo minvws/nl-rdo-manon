@@ -4,46 +4,39 @@
 :root {
   /* Navigation layout */
   --navigation-gap: 0, 5rem;
-  --navigation-justify-items: center;
-  --navigation-align-content: flex-end;
+  --navigation-justify-content: flex-end;
+  --navigation-align-items: center;
   --navigation-min-height: 4rem;
   --navigation-width: 100%;
-  --navigation-max-width: 100%;
-  --navigation-padding-top: 1rem;
-  --navigation-padding-right: var(--layout-base-padding-right);
-  --navigation-padding-bottom: 1rem;
-  --navigation-padding-left: var(--layout-base-padding-left);
+  --navigation-padding-top: 0;
+  --navigation-padding-right: 0;
+  --navigation-padding-bottom: 0;
+  --navigation-padding-left: 0;
   --navigation-margin: 0;
-  /* --navigation-background-color: var(--application-base-accent-color); */
-  /* --navigation-text-color: var(--application-base-accent-color-text-color); */
-
-  /* Content block - Usualy a div to match main content alignment */
-  --navigation-content-block-padding-top: var(
-    --layout-base-content-block-padding-top
-  );
-  --navigation-content-block-padding-right: var(
-    --layout-base-content-block-padding-right
-  );
-  --navigation-content-block-padding-bottom: var(
-    --layout-base-content-block-padding-bottom
-  );
-  --navigation-content-block-padding-left: var(
-    --layout-base-content-block-padding-left
-  );
-  --navigation-content-block-max-width: var(
-    --layout-base-content-block-max-width
+  --navigation-background-color: var(--application-base-accent-color);
+  --navigation-text-color: var(--application-base-accent-color-text-color);
+  --navigation-max-width: 100%;
+  
+  /* Content wrapper - Usualy a div to match main content alignment */
+  --navigation-content-wrapper-padding-top: 0;
+  --navigation-content-wrapper-padding-right: 0;
+  --navigation-content-wrapper-padding-bottom: 0;
+  --navigation-content-wrapper-padding-left: 0;
+  --navigation-content-wrapper-max-width: var(
+    --content-max-width
   );
 
   /* List */
-  /*--navigation-list-gap: ; */
-  --navigation-list-justify-content: flex-end;
+  --navigation-list-gap: 1rem;
+  --navigation-list-justify-content: var(--navigation-justify-content);
+  --navigation-list-align-items: var(--navigation-align-items);
+  --navigation-list-text-color: var(--navigation-text-color, var(--application-base-accent-color-text-color));
 
   /* List item */
-  /* --navigation-list-item-justify-content: center; */
-  /* --navigation-breadcrumbs-list-item-gap */
+  --navigation-list-item-text-color: var(--navigation-list-text-color, var(--application-base-accent-color-text-color));
 
   /* Link */
-  /* --navigation-link-text-decoration: ; */
+  --navigation-link-text-decoration: none;
 
   /* Link hover */
   --navigation-link-hover-text-decoration: underline;
