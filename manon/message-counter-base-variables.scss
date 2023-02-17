@@ -11,7 +11,7 @@
   );
   --message-counter-base-height: 1rem;
   --message-counter-base-min-width: 1rem;
-  /* --message-counter-base-border-width: ; */
-  /* --message-counter-base-border-style: ; */
-  /* --message-counter-base-border-color: ; */
+  --message-counter-base-border-width: 0;
+  --message-counter-base-border-style: solid;
+  --message-counter-base-border-color: transparent;
 }
