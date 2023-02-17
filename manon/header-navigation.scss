@@ -1,0 +1,114 @@
+/*---------------------------------------------------------------*/
+/*----------------- header-navigation.scss ----------------------*/
+/*---------------------------------------------------------------*/
+@use "header-navigation-variables";
+
+body > header,
+%header-navigation-style {
+  width: 100%;
+  box-sizing: border-box;
+
+  nav {
+    display: flex;
+    gap: var(--header-navigation-gap);
+    flex-direction: row;
+    justify-content: var(--header-navigation-justify-content);
+    align-items: var(--header-navigation-align-items);
+    width: var(--header-navigation-width);
+    margin: var(--header-navigation-margin);
+    min-height: var(--header-navigation-min-height);
+    box-sizing: border-box;
+    background-color: var(--header-navigation-background-color);
+    padding-top: var(--header-navigation-padding-top);
+    padding-right: var(--header-navigation-padding-right);
+    padding-bottom: var(--header-navigation-padding-bottom);
+    padding-left: var(--header-navigation-padding-left);
+    max-width: var(--header-navigation-max-width);
+
+    > button,
+    > a.button,
+    > input[type="button"],
+    > input[type="submit"],
+    > input[type="reset"]  {
+
+      justify-content: var(--header-navigation-button-justify-content);
+      align-self: var(--header-navigation-button-align-self);
+      min-width: var(--header-navigation-button-min-width);
+      min-height: var(--header-navigation-button-min-height);
+
+      background-color: var(--header-navigation-button-background-color);
+      color: var(--header-navigation-button-text-color);
+
+      font-size: var(--header-navigation-button-font-size);
+      font-weight: var(--header-navigation-button-font-weight);
+      line-height: var(--header-navigation-button-line-height);
+
+      border-width: var(--header-navigation-button-border-width);
+      border-style: var(--header-navigation-button-border-style);
+      border-color: var(--header-navigation-button-border-color);
+      border-radius: var(--header-navigation-button-border-radius);
+
+      padding-top: var(--header-navigation-button-padding-top);
+      padding-right: var(--header-navigation-button-padding-right);
+      padding-bottom: var(--header-navigation-button-padding-bottom);
+      padding-left: var(--header-navigation-button-padding-left);
+
+      &:visited {
+        color: var(--header-navigation-button-text-color);
+      }
+
+      &:hover {
+        text-decoration: var(--header-navigation-link-hover-text-decoration);
+        color: inherit;
+        background-color: var(--header-navigation-link-hover-background-color);
+        color: var(--header-navigation-link-hover-text-color);
+      }
+    }
+
+    ul,
+    ol {
+      display: flex;
+      gap: var(--header-navigation-list-gap);
+      justify-content: var(--header-navigation-list-justify-content);
+      align-items: var(--header-navigation-list-align-items);
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0;
+      color: var(--header-navigation-list-text-color);
+      width: 100%;
+      margin: 0;
+
+      li {
+        display: flex;
+        justify-content: var(--header-navigation-list-item-justify-content);
+        align-items: var(--header-navigation-list-item-align-items);
+        color: var(--header-navigation-list-item-text-color);
+        list-style: none;
+
+        a,
+        a.button {
+          color: var(--header-navigation-link-text-color);
+          text-decoration: var(--header-navigation-link-text-decoration);
+          display: flex;
+          justify-content: var(--header-navigation-link-justify-content);
+          align-items: var(--header-navigation-link-align-items);
+          padding-top: var(--header-navigation-link-padding-top);
+          padding-right: var(--header-navigation-link-padding-right);
+          padding-bottom: var(--header-navigation-link-padding-bottom);
+          padding-left: var(--header-navigation-link-padding-left);
+
+          &:visited {
+            color: var(--header-navigation-link-visited-text-color);
+          }
+
+          &:hover {
+            text-decoration: var(--header-navigation-link-hover-text-decoration);
+            color: inherit;
+            background-color: var(--header-navigation-link-hover-background-color);
+            color: var(--header-navigation-link-hover-text-color);
+          }
+        }
+      }
+    }
+  }
+}
