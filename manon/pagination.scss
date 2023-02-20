@@ -4,6 +4,8 @@
 @use "pagination-variables";
 
 .pagination {
+  width: 100%;
+
   > ul {
     display: flex;
     flex-direction: row;
@@ -13,6 +15,7 @@
     border-style: var(--pagination-border-style);
     border-color: var(--pagination-border-color);
     gap: var(--pagination-gap);
+    width: 100%;
 
     > li {
       margin-top: -0.1rem; /* fix for render issue; white space between this li and the parent ul border */
@@ -28,7 +31,7 @@
         color: var(--pagination-item-text-color);
         background-color: var(--pagination-item-background-color, transparent);
         height: var(--pagination-item-height);
-        min-width: 2rem;
+        min-width: var(--pagination-item-width);
         margin: 0;
         text-decoration: var(--pagination-item-text-decoration);
         white-space: nowrap;
