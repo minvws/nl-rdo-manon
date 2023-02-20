@@ -9,7 +9,16 @@
   border-color: var(--tabs-item-active-border-color);
   color: var(--tabs-item-active-text-color);
   background-color: var(--tabs-item-active-background-color);
+
+  &:hover {
+    border-width: var(--tabs-item-active-border-width);
+    border-style: var(--tabs-item-active-border-style);
+    border-color: var(--tabs-item-active-border-color);
+    color: var(--tabs-item-active-text-color);
+    background-color: var(--tabs-item-active-background-color);
+  }
 }
+
 .tabs {
   overflow: hidden;
   overflow-x: auto;
@@ -29,6 +38,7 @@
     border-color: var(--tabs-border-color);
     gap: var(--tabs-gap);
     padding-left: 0;
+    width: 100%;
 
     li {
       list-style: none;
