@@ -142,40 +142,6 @@ body > header nav {
     display: flex;
   }
 
-  ul {
-    background-color: transparent;
-    flex-direction: row;
-    align-items: flex-start;
-
-    li {
-      display: flex;
-      justify-content: center;
-      height: auto;
-      box-sizing: border-box;
-      background-color: var(
-        --navigation-collapsible-menu-list-item-background-color
-      );
-      color: var(--navigation-collapsible-menu-list-item-text-color);
-      border: 0;
-
-      &:hover {
-        background-color: var(
-          --navigation-collapsible-menu-list-item-background-color-hover
-        );
-        color: var(--navigation-collapsible-menu-list-item-hover-text-color);
-        border-color: var(--application-base-accent-color-tint-1);
-      }
-
-      a {
-        padding: var(--navigation-collapsible-menu-list-item-link-padding);
-      }
-
-      &:last-child {
-        border: inherit;
-      }
-    }
-  }
-
   button.menu_toggle {
     display: none;
 
