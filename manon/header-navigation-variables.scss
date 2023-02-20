@@ -55,6 +55,11 @@
   --header-navigation-link-hover-background-color: transparent;
   --header-navigation-link-hover-text-color: var(--header-navigation-text-color);
 
+  /* Link hover */
+  --header-navigation-link-active-text-decoration: var(--header-navigation-link-hover-text-decoration);
+  --header-navigation-link-active-background-color: var(--header-navigation-link-hover-background-color);
+  --header-navigation-link-active-text-color: var(--header-navigation-link-hover-text-color);
+
   /* Button */
   --header-navigation-button-justify-content: var(--button-base-justify-content, center);
   --header-navigation-button-align-self: center;
@@ -65,6 +70,7 @@
   --header-navigation-button-border-width: var(--button-base-border-width, 0);
   --header-navigation-button-border-style: var(--button-base-border-style, solid);
   --header-navigation-button-border-color: var(--button-base-border-color, black);
+  --header-navigation-button-border-radius: var(--button-base-border-radius, 0);
   --header-navigation-button-padding-top: 0;
   --header-navigation-button-padding-right: 0;
   --header-navigation-button-padding-bottom: 0;
@@ -72,5 +78,13 @@
   --header-navigation-button-font-size: var(--button-base-font-size, var(--application-base-font-size));
   --header-navigation-button-line-height: var(--button-base-line-height, var(--application-base-line-height));
   --header-navigation-button-font-weight: var(--button-base-font-weight, var(--application-base-font-weight));
-  --header-navigation-button-border-radius: var(--button-base-border-radius, 0);
+
+  /* Button hover */
+  --header-navigation-button-hover-background-color: var(--header-navigation-button-background-color);
+  --header-navigation-button-hover-text-color: var(--header-navigation-button-text-color);
+  --header-navigation-button-hover-border-width: var(--header-navigation-button-border-width);
+  --header-navigation-button-hover-border-style: var(--header-navigation-button-border-style);
+  --header-navigation-button-hover-border-color: var(--header-navigation-button-border-color);
+  --header-navigation-button-hover-border-radius: var(--header-navigation-button-border-radius);
+
 }
