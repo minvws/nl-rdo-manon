@@ -31,7 +31,8 @@
   --header-navigation-list-justify-content: var(--header-navigation-justify-content);
   --header-navigation-list-align-items: var(--header-navigation-align-items);
   --header-navigation-list-text-color: var(--header-navigation-text-color, var(--application-base-accent-color-text-color));
-
+  --header-navigation-list-width: 100%;
+  
   /* List item */
   --header-navigation-list-item-text-color: var(--header-navigation-list-text-color, var(--application-base-accent-color-text-color));
   --header-navigation-list-item-justify-content: var(--header-navigation-justify-content);
