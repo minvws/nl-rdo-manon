@@ -3,8 +3,8 @@ title: "Bibliotheek"
 linkTitle: "Bibliotheek"
 weight: 3
 description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.
+    Overzicht van alle componenten en elementen in het Manon CSS Library en
+    hoe deze te gebruiken.
 ---
 
 # Bibliotheek

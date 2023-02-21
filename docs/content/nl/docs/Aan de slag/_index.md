@@ -3,8 +3,15 @@ title: "Aan de slag"
 linkTitle: "Aan de slag"
 weight: 2
 description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.
+    Wat je moet weten om te beginnen met Manon
 ---
 
 # Aan de slag
+
+## Voorbereiding
+
+## Installatie
+
+## Configuratie
+
+## Gebruik
