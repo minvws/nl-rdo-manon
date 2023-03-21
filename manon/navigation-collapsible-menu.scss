@@ -136,8 +136,6 @@ button.menu_toggle {
 
 /* Above breakpoint */
 body > header nav {
-  padding: var(--navigation-base-padding, 0 0.5rem);
-
   > div {
     display: flex;
   }

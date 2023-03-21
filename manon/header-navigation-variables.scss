@@ -6,7 +6,7 @@
   --header-navigation-gap: 2rem;
   --header-navigation-justify-content: flex-start;
   --header-navigation-align-items: center;
-  --header-navigation-min-height: 4rem;
+  --header-navigation-min-height: 0;
   --header-navigation-width: 100%;
   --header-navigation-padding-top: 0;
   --header-navigation-padding-right: 0;
@@ -16,6 +16,10 @@
   --header-navigation-background-color: var(--application-base-accent-color);
   --header-navigation-text-color: var(--application-base-accent-color-text-color);
   --header-navigation-max-width: 100%;
+  --header-navigation-border-width: 0;
+  --header-navigation-border-style: solid;
+  --header-navigation-border-color: transparent;
+  --header-navigation-border-radius: 0;
   
   /* Content wrapper - Usualy a div to match main content alignment */
   --header-navigation-content-wrapper-padding-top: 0;
@@ -39,27 +43,50 @@
   --header-navigation-list-item-align-items: var(--header-navigation-align-items);
   
   /* Link */
-  --header-navigation-link-text-decoration: none;
   --header-navigation-link-justify-content: center;
   --header-navigation-link-align-items: center;
   --header-navigation-link-padding-top: 0;
   --header-navigation-link-padding-right: 0;
   --header-navigation-link-padding-bottom: 0;
   --header-navigation-link-padding-left: 0;
+  --header-navigation-link-min-height: 0;
+  --header-navigation-link-text-decoration: none;
   --header-navigation-link-text-color: var(--header-navigation-text-color, black);
+  --header-navigation-link-font-size: var(--text-set-font-size);
+  --header-navigation-link-line-height: var(--text-set-line-height);
+  --navigation-link-font-weight: var(--text-set-font-weight);
+  --header-navigation-link-border-width: 0;
+  --header-navigation-link-border-style: solid;
+  --header-navigation-link-border-color: transparent;
+  --header-navigation-link-border-radius: 0;
+
+  /* Link hover */
+  --header-navigation-link-hover-text-decoration: none;
+  --header-navigation-link-hover-background-color: transparent;
+  --header-navigation-link-hover-text-color: var(--header-navigation-text-color);
+  --header-navigation-link-hover-border-width: var(--header-navigation-link-border-width);
+  --header-navigation-link-hover-border-style: var(--header-navigation-link-border-style);
+  --header-navigation-link-hover-border-color: transparent;
+  --header-navigation-link-hover-border-radius: var(--header-navigation-link-border-radius);
+  --header-navigation-link-hover-font-weight: normal;
 
   /* Link visited */
   --header-navigation-link-visited-text-color: var(--header-navigation-link-text-color);
 
-  /* Link hover */
-  --header-navigation-link-hover-text-decoration: underline;
-  --header-navigation-link-hover-background-color: transparent;
-  --header-navigation-link-hover-text-color: var(--header-navigation-text-color);
+  /* Link visited hover */
+  --header-navigation-link-visited-hover-text-decoration: var(--header-navigation-link-hover-text-decoration);
+  --header-navigation-link-visited-hover-background-color: var(--header-navigation-link-hover-background-color);
+  --header-navigation-link-visited-hover-text-color: var(--header-navigation-link-hover-text-color);
 
-  /* Link hover */
+  /* Link active */
   --header-navigation-link-active-text-decoration: var(--header-navigation-link-hover-text-decoration);
   --header-navigation-link-active-background-color: var(--header-navigation-link-hover-background-color);
   --header-navigation-link-active-text-color: var(--header-navigation-link-hover-text-color);
+  --header-navigation-link-active-border-width: var(--header-navigation-link-border-width);
+  --header-navigation-link-active-border-style: var(--header-navigation-link-border-style);
+  --header-navigation-link-active-border-color: transparent;
+  --header-navigation-link-active-border-radius: var(--header-navigation-link-border-radius);
+  --header-navigation-link-active-font-weight: normal;
 
   /* Button */
   --header-navigation-button-justify-content: var(--button-base-justify-content, center);
