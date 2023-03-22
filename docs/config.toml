@@ -1,5 +1,6 @@
 baseURL = "https://minvws.github.io/nl-rdo-manon/"
 title = "Manon Docs"
+theme = "manon-docs"
 
 defaultContentLanguage = "nl"
 defaultContentLanguageInSubdir = true
