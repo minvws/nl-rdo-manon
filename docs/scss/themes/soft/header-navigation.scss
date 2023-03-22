@@ -3,5 +3,24 @@
 :root {
     --header-navigation-background-color: transparent;
     --header-navigation-text-color: var(--text-set-text-color);
-    --header-navigation-justify-content: flex-end;
+    --header-navigation-min-height: 0;
+    --header-navigation-padding-right: 2rem;
+    --header-navigation-padding-left: 2rem;
+
+    /* top border */
+    --header-navigation-border-width: 3px 0 0 0;
+    --header-navigation-border-color: var(--branding-color-1);
+
+    /* Menu items */
+    --header-navigation-link-border-width: 4px 0 0 0;
+    --header-navigation-link-border-color: transparent;
+    --header-navigation-link-min-height: 3rem;
+    --header-navigation-link-font-size: var(--body-text-medium-font-size);
+
+    /* Hover */
+    --header-navigation-link-hover-border-color: #ede1c7;
+    --header-navigation-link-hover-text-color: var(--application-base-text-color);
+
+    /* Active link */
+    --header-navigation-link-active-border-color: var(--branding-color-1);
 }
