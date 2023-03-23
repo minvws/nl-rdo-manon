@@ -8,12 +8,20 @@ table {
   td,
   th,
   tr {
-    &.notification,
-    &.error,
-    &.warning,
-    &.confirmation,
-    &.explanation,
+    &.error {
+      background-color: var(--notification-table-error-background-color);
+    }
+    &.warning {
+      background-color: var(--notification-table-warning-background-color);
+    }
+    &.confirmation {
+      background-color: var(--notification-table-confirmation-background-color);
+    }
+    &.explanation {
+      background-color: var(--notification-table-explanation-background-color);
+    }
     &.system {
+      background-color: var(--notification-table-system-background-color);
     }
   }
 }
