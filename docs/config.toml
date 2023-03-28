@@ -26,8 +26,5 @@ weight = 2
 
 [markup.goldmark]
 
-[markup.goldmark.parser]
-autoHeadingID = false
-
 [markup.goldmark.renderer]
 unsafe = true

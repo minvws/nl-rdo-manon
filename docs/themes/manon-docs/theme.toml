@@ -1,1 +1,6 @@
 name = "manon-docs"
+
+[markup.goldmark]
+
+[markup.goldmark.parser]
+autoHeadingID = true

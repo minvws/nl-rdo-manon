@@ -1,4 +1,5 @@
 <section>
+    <h1 id="{{ .Title | plainify | htmlUnescape | anchorize }}">{{ .Title }}</h1>
     {{ $parent := .Page }}
 
     {{/* Make sure we get all the unique pages */}}
@@ -8,7 +9,7 @@
 
     {{ range $pages }}
     <p>
-    <h2>
+    <h2 id="{{ .Title | plainify | htmlUnescape | anchorize }}">
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h2>
     <p>{{ .Description | markdownify }}</p>

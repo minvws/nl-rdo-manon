@@ -5,5 +5,3 @@ weight: 5
 description: >
     Hoe Manon te configureren
 ---
-
-# Maatwerk

@@ -6,5 +6,3 @@ description: >
     Overzicht van alle componenten en elementen in het Manon CSS Library en
     hoe deze te gebruiken.
 ---
-
-# Bibliotheek

@@ -1,7 +1,10 @@
-{{- $headers := findRE "<h[1-4].*?>(.|\n])+?</h[1-4]>" .Content -}}
-
-    <nav>
-        <ul>
+{{/* On section pages (_index.md) we can expect content and we want to
+differentiate between rendering the table of content for those or when
+we need to render by the pages */}}
+<nav>
+    {{ if gt (len .Content) 0 }}
+    <ul>
+        {{- $headers := findRE "<h[1-4].*?>(.|\n])+?</h[1-4]>" .Content -}}
             {{ range $headers }}
 
             {{ $lastLevel := $.Scratch.Get "lastLevel" }}
@@ -29,5 +32,19 @@
             {{ end }}
 
             {{ end }}
-        </ul>
-    </nav>
+
+    </ul>
+    {{ else }}
+    <ul>
+        {{ $parent := .Page }}
+
+        {{ $pages := (where .Site.Pages "Section" .Section).ByWeight }}
+        {{ $pages = (where $pages ".Parent" "!=" nil) }}
+        {{ $pages = (where $pages "Parent.File.UniqueID" "==" $parent.File.UniqueID) }}
+
+        {{ range $pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+    {{ end }}
+</nav>

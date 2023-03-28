@@ -5,5 +5,3 @@ weight: 1
 description: >
   Elementen zijn ...
 ---
-
-# Elementen

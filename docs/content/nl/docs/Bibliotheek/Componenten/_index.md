@@ -5,5 +5,3 @@ weight: 2
 description: >
     Componenten zijn ...
 ---
-
-# Components
