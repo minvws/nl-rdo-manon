@@ -28,3 +28,10 @@ weight = 2
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[markup.goldmark.parser]
+autoHeadingID = true
+
+[markup.highlight]
+codeFences = false
+noClasses = true
