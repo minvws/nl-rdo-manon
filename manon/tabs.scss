@@ -3,33 +3,55 @@
 /*---------------------------------------------------------------*/
 @use "tabs-variables";
 
+%active-link {
+  border-width: var(--tabs-item-active-border-width);
+  border-style: var(--tabs-item-active-border-style);
+  border-color: var(--tabs-item-active-border-color);
+  color: var(--tabs-item-active-text-color);
+  background-color: var(--tabs-item-active-background-color);
+
+  &:hover {
+    border-width: var(--tabs-item-active-hover-border-width);
+    border-style: var(--tabs-item-active-hover-border-style);
+    border-color: var(--tabs-item-active-hover-border-color);
+    color: var(--tabs-item-active-hover-text-color);
+    background-color: var(--tabs-item-active-hover-background-color);
+  }
+}
+
 .tabs {
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
-  background-color: var(--tabs-background-color, transparent);
+  background-color: var(--tabs-background-color);
+  width: 100%;
 
   ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    border-width: var(--tabs-border-width);
+    border-top-width: var(--tabs-border-top-width);
+    border-right-width: var(--tabs-border-right-width);
+    border-bottom-width: var(--tabs-border-bottom-width);
+    border-left-width: var(--tabs-border-left-width);
     border-style: var(--tabs-border-style);
     border-color: var(--tabs-border-color);
     gap: var(--tabs-gap);
     padding-left: 0;
+    width: 100%;
 
     li {
       list-style: none;
+      margin-bottom: calc(0 * var(--tabs-border-bottom-width));
 
       > a {
         border-width: var(--tabs-item-border-width);
         border-style: var(--tabs-item-border-style);
         border-color: var(--tabs-item-border-color);
-        color: var(--tabs-item-text-color, inherit);
-        line-height: var(--tabs-item-line-height, inherit);
+        color: var(--tabs-item-text-color);
+        line-height: var(--tabs-item-line-height);
         padding: var(--tabs-item-padding);
-        background-color: var(--tabs-item-background-color, transparent);
+        background-color: var(--tabs-item-background-color);
         text-decoration: var(--tabs-item-text-decoration);
         white-space: nowrap;
 
@@ -37,26 +59,23 @@
           border-width: var(--tabs-item-hover-border-width);
           border-style: var(--tabs-item-hover-border-style);
           border-color: var(--tabs-item-hover-border-color);
-          color: var(--tabs-item-hover-text-color, inherit);
-          background-color: var(
-            --tabs-item-hover-background-color,
-            transparent
-          );
+          color: var(--tabs-item-hover-text-color);
+          background-color: var(--tabs-item-hover-background-color);
         }
       }
 
+      /* aria-current on li */
       &[aria-current="page"] {
         > a {
-          border-width: var(--tabs-item-active-border-width);
-          border-style: var(--tabs-item-active-border-style);
-          border-color: var(--tabs-item-active-border-color);
-          color: var(--tabs-item-active-text-color, inherit);
-          background-color: var(
-            --tabs-item-active-background-color,
-            transparent
-          );
+          @extend %active-link;
         }
       }
+
+      /* aria current on a */
+      a[aria-current="page"] {
+        @extend %active-link;
+      }
+
     }
   }
 }

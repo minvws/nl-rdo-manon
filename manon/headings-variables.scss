@@ -4,11 +4,11 @@
 :root {
   /* Available variables to use within all heading types */
   --headings-font-family: var(--headings-base-set-font-family, var(--application-base-font-family));
-  --headings-font-size: 1.5rem;
-  --headings-font-weight: bold;
+  --headings-font-size: var(--headings-base-set-font-size, initial);
+  --headings-font-weight: var(--headings-base-set-font-weight, bold);
   --headings-line-height: var(--application-base-line-height);
   --headings-text-color: var(--application-base-text-color);
-  --headings-margin: 1rem;
+  --headings-margin: var(--application-base-gap, 1rem);
 
   /* h1 */
   --h1-font-family: var(--headings-font-family);

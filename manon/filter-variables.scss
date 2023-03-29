@@ -6,23 +6,23 @@
   --filter-intro-border-width: 0 0 1px 0;
   --filter-intro-border-style: solid;
   --filter-intro-border-color: #ccc;
-  /* --filter-intro-font-size: ; */
-  --filter-intro-text-color: #6c6c6c;
+  --filter-intro-font-size: var(--application-base-font-size, 1rem);
+  --filter-intro-text-color: var(--application-base-text-color, #000);
 
   /* Span */
   --filter-intro-span-font-size: 1.5rem;
-  --filter-intro-span-text-color: #000;
+  --filter-intro-span-text-color: var(--application-base-text-color, #000);
 
   /* Button */
-  /* --filter-button-background-color: ; */
-  /* --filter-button-text-color: ; */
-  /* --filter-button-border-width: ; */
-  /* --filter-button-border-style: ; */
-  /* --filter-button-border-color: ; */
+  --filter-button-background-color: transparent;
+  --filter-button-text-color: var(--application-base-text-color, #000);
+  --filter-button-border-width: 0;
+  --filter-button-border-style: 0;
+  --filter-button-border-color: 0;
   --filter-button-padding: 0 0.5rem;
-  /* --filter-button-min-height: ; */
+  --filter-button-min-height: 2.5rem;
   --filter-button-margin-left: auto;
-  --filter-button-font-size: 0;
+  --filter-button-font-size: var(--application-base-font-size, 0.9rem);
 
   /* Button icon */
   --filter-button-icon-font-family: var(--icon-base-font-family);

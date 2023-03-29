@@ -4,8 +4,8 @@
 .test-cases article {
   /* Header */
   > header {
-    @extend %main-header-style;
-    @extend %main-header-nav-style;
+    @extend %header-navigation-style;
+    @extend %header-navigation-content-wrapper-style;
     @extend %main-app-color-focus-style;
 
     /* Test case specific styling */

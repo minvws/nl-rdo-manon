@@ -1,0 +1,164 @@
+/*---------------------------------------------------------------*/
+/*----------------- header-navigation.scss ----------------------*/
+/*---------------------------------------------------------------*/
+@use "header-navigation-variables";
+%active-link {
+  text-decoration: var(--header-navigation-link-active-text-decoration);
+  background-color: var(--header-navigation-link-active-background-color);
+  color: var(--header-navigation-link-active-text-color);
+  border-width: var(--header-navigation-link-active-border-width);
+  border-style: var(--header-navigation-link-active-border-style);
+  border-color: var(--header-navigation-link-active-border-color);
+  border-radius: var(--header-navigation-link-active-border-radius);
+  font-weight: var(--header-navigation-link-active-font-weight);
+
+  &:hover {
+    text-decoration: var(--header-navigation-link-active-hover-text-decoration);
+    background-color: var(-header-navigation-link-active-hover-background-color);
+    color: var(--header-navigation-link-active-hover-text-color);
+    border-width: var(--header-navigation-link-hover-border-width);
+    border-style: var(--header-navigation-link-hover-border-style);
+    border-color: var(--header-navigation-link-hover-border-color);
+    border-radius: var(--header-navigation-link-hover-border-radius);
+  }
+}
+
+body > header,
+%header-navigation-style {
+  width: 100%;
+  box-sizing: border-box;
+
+  nav {
+    display: flex;
+    gap: var(--header-navigation-gap);
+    flex-direction: row;
+    justify-content: var(--header-navigation-justify-content);
+    align-items: var(--header-navigation-align-items);
+    width: var(--header-navigation-width);
+    margin: var(--header-navigation-margin);
+    min-height: var(--header-navigation-min-height);
+    box-sizing: border-box;
+    background-color: var(--header-navigation-background-color);
+    padding-top: var(--header-navigation-padding-top);
+    padding-right: var(--header-navigation-padding-right);
+    padding-bottom: var(--header-navigation-padding-bottom);
+    padding-left: var(--header-navigation-padding-left);
+    max-width: var(--header-navigation-max-width);
+    border-width: var(--header-navigation-border-width);
+    border-style: var(--header-navigation-border-style);
+    border-color: var(--header-navigation-border-color);
+    border-radius: var(--header-navigation-border-radius);
+
+    button,
+    a.button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"]  {
+      justify-content: var(--header-navigation-button-justify-content);
+      align-self: var(--header-navigation-button-align-self);
+      min-width: var(--header-navigation-button-min-width);
+      min-height: var(--header-navigation-button-min-height);
+
+      background-color: var(--header-navigation-button-background-color);
+      color: var(--header-navigation-button-text-color);
+
+      font-size: var(--header-navigation-button-font-size);
+      font-weight: var(--header-navigation-button-font-weight);
+      line-height: var(--header-navigation-button-line-height);
+
+      border-width: var(--header-navigation-button-border-width);
+      border-style: var(--header-navigation-button-border-style);
+      border-color: var(--header-navigation-button-border-color);
+      border-radius: var(--header-navigation-button-border-radius);
+
+      padding-top: var(--header-navigation-button-padding-top);
+      padding-right: var(--header-navigation-button-padding-right);
+      padding-bottom: var(--header-navigation-button-padding-bottom);
+      padding-left: var(--header-navigation-button-padding-left);
+
+      &:visited {
+        color: var(--header-navigation-button-text-color);
+      }
+
+      &:hover {
+        text-decoration: var(--header-navigation-link-hover-text-decoration);
+        background-color: var(--header-navigation-link-hover-background-color);
+        color: var(--header-navigation-link-hover-text-color);
+      }
+    }
+
+    ul,
+    ol {
+      display: flex;
+      gap: var(--header-navigation-list-gap);
+      justify-content: var(--header-navigation-list-justify-content);
+      align-items: var(--header-navigation-list-align-items);
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0;
+      color: var(--header-navigation-list-text-color);
+      width: var(--header-navigation-list-width);
+      margin: 0;
+
+      li {
+        display: flex;
+        justify-content: var(--header-navigation-list-item-justify-content);
+        align-items: var(--header-navigation-list-item-align-items);
+        color: var(--header-navigation-list-item-text-color);
+        list-style: none;
+
+        &[aria-current="page"] {
+        > a {
+            @extend %active-link;
+          }
+        }
+
+        a {
+          display: flex;
+          justify-content: var(--header-navigation-link-justify-content);
+          align-items: var(--header-navigation-link-align-items);
+          padding-top: var(--header-navigation-link-padding-top);
+          padding-right: var(--header-navigation-link-padding-right);
+          padding-bottom: var(--header-navigation-link-padding-bottom);
+          padding-left: var(--header-navigation-link-padding-left);
+          min-height: var(--header-navigation-link-min-height);
+          height: 100%;
+          text-decoration: var(--header-navigation-link-text-decoration);
+          color: var(--header-navigation-link-text-color);
+          font-size: var(--header-navigation-link-font-size);
+          line-height: var(--header-navigation-link-line-height);
+          font-weight: var(--header-navigation-link-font-weight);
+          border-width: var(--header-navigation-link-border-width);
+          border-style: var(--header-navigation-link-border-style);
+          border-color: var(--header-navigation-link-border-color);
+          border-radius: var(--header-navigation-link-border-radius);
+
+          &:visited {
+            color: var(--header-navigation-link-visited-text-color);
+            
+            &:hover {
+              text-decoration: var(--header-navigation-link-visited-hover-text-decoration);
+              background-color: var(--header-navigation-link-visited-hover-background-color);
+              color: var(--header-navigation-link-visited-hover-text-color);
+            }
+          }
+
+          /* aria current on a */
+          &[aria-current="page"] {
+            @extend %active-link;
+          }
+
+          &:hover {
+            background-color: var(--header-navigation-link-hover-background-color);
+            color: var(--header-navigation-link-hover-text-color);
+            border-width: var(--header-navigation-link-hover-border-width);
+            border-style: var(--header-navigation-link-hover-border-style);
+            border-color: var(--header-navigation-link-hover-border-color);
+            border-radius: var(--header-navigation-link-hover-border-radius);
+            font-weight: var(--header-navigation-link-hover-font-weight);
+          }
+        }
+      }
+    }
+  }
+}

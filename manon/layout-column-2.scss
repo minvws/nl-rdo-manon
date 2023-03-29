@@ -8,7 +8,7 @@ $breakpoint: 42rem !default;
 .column-2 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: var(--layout-column-2-gap);
 }
 
 @media (min-width: $breakpoint) {

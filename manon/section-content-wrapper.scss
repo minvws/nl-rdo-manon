@@ -1,0 +1,22 @@
+/*---------------------------------------------------------------*/
+/*---------------- section-content-wrapper.scss -----------------*/
+/*---------------------------------------------------------------*/
+@use "section-content-wrapper-variables";
+
+main section {
+  div {
+    display: flex;
+    flex-direction: var(--section-content-wrapper-flex-direction);
+    justify-content: var(--section-content-wrapper-justify-content);
+    align-items: var(--section-content-wrapper-align-items);
+    gap: var(--section-content-wrapper-gap);
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: var(--section-content-wrapper-padding-top);
+    padding-right: var(--section-content-wrapper-padding-right);
+    padding-bottom: var(--section-content-wrapper-padding-bottom);
+    padding-left: var(--section-content-wrapper-padding-left);
+    max-width: var(--section-content-wrapper-max-width);
+  }
+}

@@ -1,0 +1,14 @@
+/*---------------------------------------------------------------*/
+/*---------- navigation-content-wrapper-variables.scss ----------*/
+/*---------------------------------------------------------------*/
+:root {
+  --navigation-content-wrapper-flex-direction: var(--content-flex-direction);
+  --navigation-content-wrapper-justify-content: center;
+  --navigation-content-wrapper-align-items: var(--content-align-items);
+  --navigation-content-wrapper-gap: var(--content-gap);
+  --navigation-content-wrapper-padding-top: 0;
+  --navigation-content-wrapper-padding-right: var(--content-padding-right);
+  --navigation-content-wrapper-padding-bottom: 0;
+  --navigation-content-wrapper-padding-left: var(--content-padding-left);
+  --navigation-content-wrapper-max-width: 100%;
+}

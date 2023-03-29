@@ -1,7 +1,7 @@
 /*---------------------------------------------------------------*/
-/*--------- components/layout-column-3-variables.scss -----------*/
+/*---------------- layout-column-3-variables.scss ---------------*/
 /*---------------------------------------------------------------*/
 
 :root {
-  /* --layout-column-3-gap: ; */
+  --layout-column-3-gap: var(--content-gap);
 }

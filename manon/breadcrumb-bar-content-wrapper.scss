@@ -1,0 +1,23 @@
+/*---------------------------------------------------------------*/
+/*----------- breadcrumb-bar-content-wrapper.scss ---------------*/
+/*---------------------------------------------------------------*/
+@use "breadcrumb-bar-content-wrapper-variables";
+
+.breadcrumb-bar {
+  > div,
+  > div div {
+    display: flex;
+    flex-direction: var(--breadcrumb-bar-content-wrapper-flex-direction);
+    justify-content: var(--breadcrumb-bar-content-wrapper-justify-content);
+    align-items: var(--breadcrumb-bar-content-wrapper-align-items);
+    gap: var(--breadcrumb-bar-content-wrapper-gap);
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: var(--breadcrumb-bar-content-wrapper-padding-top);
+    padding-right: var(--breadcrumb-bar-content-wrapper-padding-right);
+    padding-bottom: var(--breadcrumb-bar-content-wrapper-padding-bottom);
+    padding-left: var(--breadcrumb-bar-content-wrapper-padding-left);
+    max-width: var(--breadcrumb-bar-content-wrapper-max-width);
+  }
+}

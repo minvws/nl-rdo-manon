@@ -1,0 +1,25 @@
+/*---------------------------------------------------------------*/
+/*---------------- navigation-content-wrapper.scss --------------*/
+/*---------------------------------------------------------------*/
+@use "navigation-content-wrapper-variables";
+
+body > header,
+%navigation-content-wrapper-style {
+  nav {
+    > div {
+      display: flex;
+      flex-direction: var(--navigation-content-wrapper-flex-direction);
+      justify-content: var(--navigation-content-wrapper-justify-content);
+      align-items: var(--navigation-content-wrapper-align-items);
+      gap: var(--navigation-content-wrapper-gap);
+      width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding-top: var(--navigation-content-wrapper-padding-top);
+      padding-right: var(--navigation-content-wrapper-padding-right);
+      padding-bottom: var(--navigation-content-wrapper-padding-bottom);
+      padding-left: var(--navigation-content-wrapper-padding-left);
+      max-width: var(--navigation-content-wrapper-max-width);
+    }
+  }
+}

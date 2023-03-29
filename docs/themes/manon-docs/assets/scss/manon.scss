@@ -1,24 +1,31 @@
 /*---------------------------------------------------------------*/
 /*------------------------- manon.scss --------------------------*/
 /*---------------------------------------------------------------*/
-/* Color sets */
+/* Sets */
+@use "@minvws/manon/body-text-set";
+@use "@minvws/manon/headings-base-set";
+
+/* Colors */
+@use "@minvws/manon/grey-15"; /* Color set with 15 shaded of grey */
 
 /* Finn */
-@use "@minvws/manon/finn-small";
+/*@use "@minvws/manon/finn-small";
 @use "@minvws/manon/finn-medium";
-@use "@minvws/manon/finn-large";
+@use "@minvws/manon/finn-large";*/
 
 /* Spot */
-@use "@minvws/manon/spot-mini";
+/*@use "@minvws/manon/spot-mini";
 @use "@minvws/manon/spot-small";
-@use "@minvws/manon/spot-medium";
+@use "@minvws/manon/spot-medium";*/
 @use "@minvws/manon/spot-large";
+
+/* Layout */
+@use "@minvws/manon/layout-set";
 
 /* Tags */
 @use "@minvws/manon/tag-colors-soft";
 
 /* Headings */
-@use "@minvws/manon/headings-base-set";
 @use "@minvws/manon/headings";
 
 /* Functions */
@@ -53,19 +60,8 @@
 @use "@minvws/manon/hidden";
 
 /* Layout */
-@use "@minvws/manon/layout-base-variables";
+/*@use "@minvws/manon/layout-base-variables";*/
 
-/* @use "@minvws/manon/layout-header"; */
-@use "@minvws/manon/layout-header-content-block";
-/* @use "@minvws/manon/layout-main"; */
-@use "@minvws/manon/layout-main-content-block";
-/* @use "@minvws/manon/layout-footer";*/
-@use "@minvws/manon/layout-footer-content-block";
-
-/* @use "@minvws/manon/layout-base-variables";
-@use "@minvws/manon/layout-header-content-block";*/
-/*@use "@minvws/manon/layout-main-content-block"; */
-/*@use "@minvws/manon/layout-footer-content-block";*/
 @use "@minvws/manon/layout-authentication";
 @use "@minvws/manon/layout-one-third-two-thirds";
 @use "@minvws/manon/layout-two-thirds-one-third";
@@ -75,44 +71,60 @@
 @use "@minvws/manon/layout-column-4";
 @use "@minvws/manon/layout-centered";
 
-/* Header */
-@use "@minvws/manon/header";
-
-/* Navigation */
-@use "@minvws/manon/navigation";
-
-/* Main */
-/*@use "@minvws/manon/main";
-@use "@minvws/manon/main-documentation-integration";*/
-
-/* Article */
-@use "@minvws/manon/article";
-
-/* Section */
-@use "@minvws/manon/section";
-
-/* Footer */
-@use "@minvws/manon/footer";
-
-/* Components */
-@use "@minvws/manon/branding";
-@use "@minvws/manon/breadcrumb-bar-content-block";
-@use "@minvws/manon/navigation-documentation-integration";
-@use "@minvws/manon/navigation-collapsible-menu";
-@use "@minvws/manon/accordion";
-@use "@minvws/manon/filter";
-
 /* Button */
 @use "@minvws/manon/button-base";
 @use "@minvws/manon/button-ghost";
 @use "@minvws/manon/button-cta";
 @use "@minvws/manon/button-icon";
 
+/* Header */
+@use "@minvws/manon/header";
+
+/* Header navigation */
+@use "@minvws/manon/header-navigation";
+@use "@minvws/manon/header-navigation-content-wrapper";
+
+/* Navigation */
+@use "@minvws/manon/navigation";
+@use "@minvws/manon/navigation-content-wrapper";
+
+/* Main */
+@use "@minvws/manon/main";
+@use "@minvws/manon/main-content-wrapper";
+
+/* Div */
+@use "@minvws/manon/div";
+@use "@minvws/manon/div-content-wrapper";
+
+/* Article */
+@use "@minvws/manon/article";
+@use "@minvws/manon/article-content-wrapper";
+@use "@minvws/manon/article-section";
+
+/* Section */
+@use "@minvws/manon/section";
+@use "@minvws/manon/section-content-wrapper";
+
+/* Breadcrumb bar */
+@use "@minvws/manon/breadcrumb-bar";
+@use "@minvws/manon/breadcrumb-bar-content-wrapper";
+
+/* Footer */
+@use "@minvws/manon/footer";
+
+/* Components */
+@use "@minvws/manon/branding";
+@use "@minvws/manon/navigation-documentation-integration";
+@use "@minvws/manon/navigation-collapsible-menu";
+@use "@minvws/manon/accordion";
+@use "@minvws/manon/filter";
+
 @use "@minvws/manon/list-base";
 @use "@minvws/manon/skip-to-content-base";
 @use "@minvws/manon/background-color-offset";
 @use "@minvws/manon/description-list";
 @use "@minvws/manon/message-counter-base";
+@use "@minvws/manon/tabs";
 
 /* Images */
 @use "@minvws/manon/logo";

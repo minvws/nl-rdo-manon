@@ -9,6 +9,7 @@ form.help {
 
   div {
     position: relative;
+    padding: 0;
   }
 
   > div,
@@ -19,6 +20,7 @@ form.help {
       position: absolute;
       top: var(--form-help-button-top);
       right: var(--form-help-button-right, auto);
+      font-size: 0;
 
       padding-top: var(--form-help-button-padding-top);
       padding-right: var(--form-help-button-padding-right);
@@ -31,6 +33,7 @@ form.help {
       border-color: var(--form-help-button-border-color);
       border-radius: var(--form-help-button-border-radius);
 
+      margin: 0;
       min-width: 0;
       width: var(--form-help-button-width);
 
@@ -64,5 +67,15 @@ form.help {
   fieldset {
     max-width: 100%;
     min-width: 0;
+    gap: 0;
+
+    .help-button {
+      gap: 0;
+      margin: 0;
+
+      &:before {
+        margin: 0;
+      }
+    }
   }
 }
