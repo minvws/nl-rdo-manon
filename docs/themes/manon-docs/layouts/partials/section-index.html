@@ -1,0 +1,19 @@
+<section>
+    <h1 id="{{ .Title | plainify | htmlUnescape | anchorize }}">{{ .Title }}</h1>
+    {{ $parent := .Page }}
+
+    {{/* Make sure we get all the unique pages */}}
+    {{ $pages := (where .Site.Pages "Section" .Section).ByWeight }}
+    {{ $pages = (where $pages ".Parent" "!=" nil) }}
+    {{ $pages = (where $pages "Parent.File.UniqueID" "==" $parent.File.UniqueID) }}
+
+    {{ range $pages }}
+    <p>
+    <h2 id="{{ .Title | plainify | htmlUnescape | anchorize }}">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+    <p>{{ .Description | markdownify }}</p>
+    </p>
+    {{ end }}
+    </div>
+</section>

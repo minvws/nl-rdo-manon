@@ -1,0 +1,37 @@
+baseURL = "https://minvws.github.io/nl-rdo-manon/"
+title = "Manon Docs"
+theme = "manon-docs"
+
+defaultContentLanguage = "nl"
+defaultContentLanguageInSubdir = true
+
+[menu]
+
+[[menu.main]]
+name = "Docs"
+url = "docs"
+weight = 10
+
+[languages]
+
+[languages.nl]
+contentDir = "content/nl"
+languageName = "Nederlands"
+weight = 1
+
+[languages.en]
+contentDir = "content/en"
+languageName = "English"
+weight = 2
+
+[markup.goldmark]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.goldmark.parser]
+autoHeadingID = true
+
+[markup.highlight]
+codeFences = false
+noClasses = true
