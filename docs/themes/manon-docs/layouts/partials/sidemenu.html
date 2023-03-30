@@ -4,8 +4,8 @@ we need to render by the pages */}}
 <nav>
     {{ if gt (len .Content) 0 }}
     <ul>
-        {{- $headers := findRE "<h[1-4].*?>(.|\n])+?</h[1-4]>" .Content -}}
-            {{ range $headers }}
+        {{- $headers := findRE "<h[2-4].*?>(.|\n])+?</h[2-4]>" .Content -}}
+        {{ range $headers }}
 
             {{ $lastLevel := $.Scratch.Get "lastLevel" }}
             {{ $header := . }}
@@ -18,21 +18,18 @@ we need to render by the pages */}}
             {{ $text := $header | plainify | htmlUnescape }}
 
             {{ range findRE "[1-4]" . 1 }}
-            {{ $nextLevel := (int .) }}
+                {{ $nextLevel := (int .) }}
 
-            {{ if gt $nextLevel $lastLevel }}
-            <ul>
-                {{ else if lt $nextLevel $lastLevel }}
-            </ul>
+                {{ if gt $nextLevel $lastLevel }}
+                <ul>
+                    {{ else if lt $nextLevel $lastLevel }}
+                </ul>
             {{ end }}
 
             <li><a href="{{ if $id }}#{{ $id }}{{ else }}#{{ $anchorID }}{{ end }}">{{ $text }}</a></li>
             {{ $.Scratch.Set "lastLevel" $nextLevel}}
-
             {{ end }}
-
-            {{ end }}
-
+        {{ end }}
     </ul>
     {{ else }}
     <ul>
@@ -43,7 +40,7 @@ we need to render by the pages */}}
         {{ $pages = (where $pages "Parent.File.UniqueID" "==" $parent.File.UniqueID) }}
 
         {{ range $pages }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
         {{ end }}
     </ul>
     {{ end }}
