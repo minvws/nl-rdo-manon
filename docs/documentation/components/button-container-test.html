@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Knoppen groeperen testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./button.html">Knoppen</a></li>
+            <li><a href="./button-container.html">Knoppen groeperen</a></li>
+            <li>
+              <a href="./button-container-test.html" aria-current="page"
+                >Knoppen groeperen testpagina</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Subtielere weergave testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h2>Tests</h2>
+            <h3>Basis</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <div class="button-container">
+                <button>Lorem ipsum</button>
+                <button>Lorem ipsum</button>
+            </div>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;div class="button-container">
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h3>Veel knoppen</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <div class="button-container">
+              <button>Lorem ipsum</button>
+              <button>Lorem ipsum</button>
+              <button>Lorem ipsum</button>
+              <button>Lorem ipsum</button>
+              <button>Lorem ipsum</button>
+              <button>Lorem ipsum</button>
+              <button>Lorem ipsum</button>
+              <button>Lorem ipsum</button>
+              <button>Lorem ipsum</button>
+              <button>Lorem ipsum</button>
+              <button>Lorem ipsum</button>
+              <button>Lorem ipsum</button>
+              <button>Lorem ipsum</button>
+              <button>Lorem ipsum</button>
+              <button>Lorem ipsum</button>
+            </div>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;div class="button-container">
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+    &lt;button>Lorem ipsum&lt;/button>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+
+          <section id="related">
+            <h2>Gerelateerde pagina's</h2>
+            <a href="./form-input-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

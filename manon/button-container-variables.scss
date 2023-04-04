@@ -1,0 +1,13 @@
+/*---------------------------------------------------------------*/
+/*--------- components/button-container-variables.scss ----------*/
+/*---------------------------------------------------------------*/
+:root {
+  --button-container-flex-direction: row;
+  --button-container-align-items: center;
+  --button-container-flex-wrap: wrap;
+  --button-container-gap: var(--application-base-gap-medium);
+  --button-container-padding-top: 0;
+  --button-container-padding-right: 0;
+  --button-container-padding-bottom: 0;
+  --button-container-padding-left: 0;
+}
