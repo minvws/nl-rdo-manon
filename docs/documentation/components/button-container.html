@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Knoppen groeperen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./button.html">Knoppen</a></li>
+            <li>
+              <a href="./button-container.html" aria-current="page">Knoppen groeperen</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./button-container.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
+      <article id="button-base">
+        <div>
+          <section id="introduction">
+            <h1>Knoppen groeperen</h1>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+              <li>Vul de variabelen met de gewenste stijlkeuzes. Voor meer informatie zie het overzicht met <a href="#variables">instelbare variabelen</a>.</li>
+              <li>Groepeer de knoppen binnen een <code>&lt;div></code> met de class <code>button-container</code>.</li>
+            </ol>
+          </section>
+
+          <section id="examples">
+            <h2>Voorbeelden:</h2>
+
+            <h3>Paragraaf</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <div class="button-container">
+                <button>Eerste knop</button>
+                <button>Tweede knop</button>
+            </div>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;div class="button-container">
+    &lt;button>Eerste knop&lt;/button>
+    &lt;button>Tweede knop&lt;/button>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h2>Bijbehorende bestanden</h2>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+
+            <h3>Importeer component via NPM</h3>
+
+            <h4>CSS-voorbeeld:</h4>
+            <pre>
+              <code>
+@use "@minvws/manon/button-container";
+              </code>
+            </pre>
+          </section>
+
+          <section id="variables">
+            <h2>Instelbare variabelen</h2>
+              <p><strong>Let op:</strong> De uitlijning van horizontaal uitgelijnde tags werken alleen in combinatie met de class <code>horizotal-view</code>.</p>
+              <div class="horizontal-scroll">
+                <table class="nowrap">
+                  <caption>Beschikbare instelbare variabelen:</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Variabele</th>
+                      <th scope="col">CSS-attribuut</th>
+                      <th scope="col">Manon ingestelde waarde</th>
+                      <th scope="col">Breekpunt</th>
+                      <th scope="col">Class</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>--button-container-flex-direction</td>
+                      <td><a href="../variables.html#flex-direction">flex-direction</a></td>
+                      <td>row</td>
+                      <td>-</td>
+                      <td rowspan="4" scope="rowgroup">button-container</td>
+
+                    <tr>
+                      <td>--button-container-align-items</td>
+                      <td><a href="../variables.html#align-items">align-items</a></td>
+                      <td>center</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--button-container-flex-wrap</td>
+                      <td><a href="../variables.html#flex-wrap">flex-wrap</a></td>
+                      <td>wrap</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--button-container-gap</td>
+                      <td><a href="../variables.html#gap">gap</a></td>
+                      <td>var(--application-base-gap-medium)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--button-container-padding-top</td>
+                      <td><a href="../variables.html#padding-top">padding-top</a></td>
+                      <td>0</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--button-container-padding-right</td>
+                      <td><a href="../variables.html#padding-right">padding-right</a></td>
+                      <td>0</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--button-container-padding-bottom</td>
+                      <td><a href="../variables.html#padding-bottom">padding-bottom</a></td>
+                      <td>0</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--button-container-padding-left</td>
+                      <td><a href="../variables.html#padding-left">padding-left</a></td>
+                      <td>0</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>CSS</h3>
+              <p>Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw project. Kies en gebruik de benodigde variabelen.</p>
+              <pre>
+                <code>
+:root {
+  --button-container-flex-direction: ;
+  --button-container-align-items: ;
+  --button-container-flex-wrap: ;
+  --button-container-gap: ;
+  --button-container-padding-top: ;
+  --button-container-padding-right: ;
+  --button-container-padding-bottom: ;
+  --button-container-padding-left: ;
+}
+                </code>
+              </pre>
+          </section>
+
+          <section id="related">
+            <h2>Gerelateerde pagina's</h2>
+            <a href="./button-container-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
