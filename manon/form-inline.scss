@@ -6,7 +6,9 @@
 form.inline {
   padding: 0;
   background-color: transparent;
+  gap: var(--form-inline-gap);
   color: var(--form-inline-text-color);
+  flex-direction: var(--form-inline-flex-direction);
 
   button {
     align-self: flex-start;
