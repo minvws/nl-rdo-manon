@@ -1,15 +1,17 @@
 /*---------------------------------------------------------------*/
 /*---------- notification-confirmation-variables.scss -----------*/
 /*---------------------------------------------------------------*/
+@use "colors/notification-colors";
+
 :root {
-  --notification-confirmation-background-color: #deffdb;
+  --notification-confirmation-background-color: var(--confirmation-background-color);
   --notification-confirmation-border-width: var(
     --notification-base-border-width
   );
   --notification-confirmation-border-style: var(
     --notification-base-border-style
   );
-  --notification-confirmation-border-color: #9ac596;
+  --notification-confirmation-border-color: var(--confirmation-border-color);
 
   /* Icon as before or after */
   /* --notification-confirmation-icon-before-content: ; */

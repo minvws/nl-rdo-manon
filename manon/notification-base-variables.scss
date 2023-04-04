@@ -1,17 +1,19 @@
 /*---------------------------------------------------------------*/
 /*--------------- notification-base-variables.scss --------------*/
 /*---------------------------------------------------------------*/
+@use "colors/notification-colors";
+
 :root {
-  --notification-base-notification-text-color: #000;
+  --notification-base-notification-text-color: var(--base-text-color);
   --notification-base-width: 100%;
   --notification-base-padding-top: 1.5rem;
   --notification-base-padding-right: 1rem;
   --notification-base-padding-bottom: 1.5rem;
   --notification-base-padding-left: 1rem;
-  --notification-base-background-color: #f0f0f0;
+  --notification-base-background-color: var(--base-background-color);
   --notification-base-border-width: 1px;
   --notification-base-border-style: solid;
-  --notification-base-border-color: #a3a3a3;
+  --notification-base-border-color: var(--base-border-color);
 
   /* Link */
   --notification-base-link-text-color: var(--link-base-text-color);

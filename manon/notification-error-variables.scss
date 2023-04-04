@@ -1,11 +1,13 @@
 /*---------------------------------------------------------------*/
 /*--------------- notification-error-variables.scss -------------*/
 /*---------------------------------------------------------------*/
+@use "colors/notification-colors";
+
 :root {
-  --notification-error-background-color: #ffd9d9;
+  --notification-error-background-color: var(--error-background-color);
   --notification-error-border-width: var(--notification-base-border-width);
   --notification-error-border-style: var(--notification-base-border-style);
-  --notification-error-border-color: #d98383;
+  --notification-error-border-color: var(--error-border-color);
 
   /* Icon as before or after */
   /* --notification-error-icon-before-content: ; */
