@@ -13,34 +13,32 @@
   --table-border-color: transparent;
   --table-text-align: var(--application-text-align);
   --table-font-weight: normal;
-
-  /* Use this variable to set a padding on all cells. */
   --table-cells-padding: 0.5rem;
 
   /* Table head */
-  --table-head-background-color: var(--application-accent-color);
-  --table-head-text-color: var(--application-accent-color-text-color);
+  --table-head-background-color: var(--application-base-accent-color);
+  --table-head-text-color: var(--application-base-accent-color-text-color);
   --table-head-border-width: var(--table-border-width);
   --table-head-border-style: var(--table-border-style);
   --table-head-border-color: var(--table-border-color);
   --table-head-text-align: var(--table-text-align);
 
   /* Table head cell (th) */
-  --table-head-cell-border-width: var(--table-border-width);
-  --table-head-cell-border-style: var(--table-border-style);
-  --table-head-cell-border-color: var(--table-border-color);
   --table-head-cell-padding: var(--table-cells-padding);
   --table-head-cell-font-weight: bolder;
   --table-head-cell-font-size: var(--table-font-size);
+  --table-head-cell-border-width: var(--table-border-width);
+  --table-head-cell-border-style: var(--table-border-style);
+  --table-head-cell-border-color: var(--table-border-color);
 
   /* Table head cell (th) binnen tbody */
+  --table-body-head-cell-padding: var(--table-cells-padding);
+  --table-body-head-cell-font-weight: var(--table-head-cell-font-weight);
+  --table-body-head-cell-background-color: var(--application-tint-1-background-color);
+  --table-body-head-cell-font-size: var(--table-font-size);
   --table-body-head-cell-border-width: 1px;
   --table-body-head-cell-border-style: solid;
   --table-body-head-cell-border-color: #ccc;
-  --table-body-head-cell-padding: var(--table-cells-padding);
-  --table-body-head-cell-font-weight: 700;
-  --table-body-head-cell-background-color: var(--application-tint-1-background-color);
-  --table-body-head-cell-font-size: var(--table-font-size);
 
   /* Table row */
   /* Zebra striping with opacity to keep background color. e.g for warnings or errors */
