@@ -1,0 +1,99 @@
+/*---------------------------------------------------------------*/
+/*----------- components/table/table-variables.scss -------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Table */
+  --table-font-size: var(--application-font-size);
+  --table-font-weight: var(--application-font-weight);
+  --table-line-height: var(--application-line-height);
+  --table-text-color: var(--application-text-color);
+  --table-background-color: transparent;
+  --table-border-width: 0;
+  --table-border-style: solid;
+  --table-border-color: transparent;
+  --table-text-align: var(--application-text-align);
+  --table-font-weight: normal;
+
+  /* Use this variable to set a padding on all cells. */
+  --table-cells-padding: 0.5rem;
+
+  /* Table head */
+  --table-head-background-color: var(--application-accent-color);
+  --table-head-text-color: var(--application-accent-color-text-color);
+  --table-head-border-width: var(--table-border-width);
+  --table-head-border-style: var(--table-border-style);
+  --table-head-border-color: var(--table-border-color);
+  --table-head-text-align: var(--table-text-align);
+
+  /* Table head cell (th) */
+  --table-head-cell-border-width: var(--table-border-width);
+  --table-head-cell-border-style: var(--table-border-style);
+  --table-head-cell-border-color: var(--table-border-color);
+  --table-head-cell-padding: var(--table-cells-padding);
+  --table-head-cell-font-weight: bolder;
+  --table-head-cell-font-size: var(--table-font-size);
+
+  /* Table head cell (th) binnen tbody */
+  --table-body-head-cell-border-width: 1px;
+  --table-body-head-cell-border-style: solid;
+  --table-body-head-cell-border-color: #ccc;
+  --table-body-head-cell-padding: var(--table-cells-padding);
+  --table-body-head-cell-font-weight: 700;
+  --table-body-head-cell-background-color: var(--application-tint-1-background-color);
+  --table-body-head-cell-font-size: var(--table-font-size);
+
+  /* Table row */
+  /* Zebra striping with opacity to keep background color. e.g for warnings or errors */
+  --table-row-background-color-striping: rgba(148, 148, 148, 0.1);
+  --table-row-border-width: var(--table-border-width);
+  --table-row-border-style: var(--table-border-style);
+  --table-row-border-color: var(--table-border-color);
+
+  /* Table cell (td) */
+  --table-cell-padding: var(--table-cells-padding);
+  --table-cell-background-color: transparent;
+  --table-cell-text-color: var(--table-text-color);
+  --table-cell-border-width: 1px;
+  --table-cell-border-style: solid;
+  --table-cell-border-color: #ccc;
+
+  /* Table cells within the first row */
+  --table-first-row-cell-border-width: var(--table-cell-border-width);
+  --table-first-row-cell-border-style: var(--table-cell-border-style);
+  --table-first-row-cell-border-color: var(--table-cell-border-color);
+
+  /* Table cells within the last row */
+  --table-last-row-cell-border-width: var(--table-cell-border-width);
+  --table-last-row-cell-border-style: var(--table-cell-border-style);
+  --table-last-row-cell-border-color: var(--table-cell-border-color);
+
+  /* Table footer */
+  --table-foot-background-color: #ddd;
+  --table-foot-padding: var(--table-cells-padding);
+  --table-foot-text-color: var(--table-text-color);
+  --table-foot-font-weight: var(--table-font-weight);
+  --table-foot-font-size: var(--table-font-size);
+  --table-foot-border-width: var(--table-border-width);
+  --table-foot-border-style: var(--table-border-style);
+  --table-foot-border-color: var(--table-border-color);
+
+  /* Table footer head */
+  --table-foot-header-padding: var(--table-foot-padding);
+  --table-foot-header-background-color: transparent;
+  --table-foot-header-text-color: var(--table-text-color);
+  --table-foot-header-font-weight: var(--table-font-weight);
+  --table-foot-header-font-size: var(--table-font-size);
+  --table-foot-header-border-width: var(--table-border-width);
+  --table-foot-header-border-style: var(--table-border-style);
+  --table-foot-header-border-color: var(--table-border-color);
+
+  /* Table footer cell styling */
+  --table-foot-cell-padding: var(--table-foot-padding);
+  --table-foot-cell-background-color: #f0f0f0;
+  --table-foot-cell-text-color: var(--table-text-color);
+  --table-foot-cell-font-weight: var(--table-font-weight);
+  --table-foot-cell-font-size: var(--table-font-size);
+  --table-foot-cell-border-width: var(--table-border-width);
+  --table-foot-cell-border-style: var(--table-border-style);
+  --table-foot-cell-border-color: var(--table-border-color);
+}
