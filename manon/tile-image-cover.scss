@@ -16,6 +16,7 @@
   margin-top: calc(-1 * var(--tile-image-cover-margin-top));
   margin-right: calc(-1 * var(--tile-image-cover-margin-right));
   margin-left: calc(-1 * var(--tile-image-cover-margin-left));
+  border-radius: var(--tile-border-radius) var(--tile-border-radius) 0 0;
 }
 
 .tile.image-cover {
