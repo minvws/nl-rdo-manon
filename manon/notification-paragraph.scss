@@ -3,7 +3,7 @@
 /*---------------------------------------------------------------*/
 @use "notification-paragraph-variables";
 
-p {
+p:not([hidden]) {
   &.notification,
   &.error,
   &.warning,
