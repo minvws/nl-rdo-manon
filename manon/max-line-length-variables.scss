@@ -7,9 +7,6 @@
   --max-line-length-word-break: normal;
 
   /* After breakpoint */
-  --max-line-length-breakpoint-hyphens: none;
-  --max-line-length-breakpoint-word-break: var(
-    --max-line-length-word-break,
-    normal
-  );
+  --max-line-length-breakpoint-hyphens: var(--max-line-length-hyphens, auto);
+  --max-line-length-breakpoint-word-break: var(--max-line-length-word-break, normal);
 }
