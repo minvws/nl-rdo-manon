@@ -1,0 +1,24 @@
+/*---------------------------------------------------------------*/
+/*-- components/language-selector/language-selector-form.scss ---*/
+/*---------------------------------------------------------------*/
+.language {
+	form {
+		label,
+		input {
+			width: auto;
+			margin: 0;
+			font-size: var(--de-emphasized-font-size);
+		}
+
+		label {
+			color: var(--grey-6);
+			align-items: center;
+			display: flex;
+		}
+
+		input {
+			min-height: 1.75rem;
+			border: 1px solid var(--branding-color-1);
+		}
+	}
+}

@@ -1,0 +1,117 @@
+/*---------------------------------------------------------------*/
+/*-- components/language-selector/language-selector-list.scss ---*/
+/*---------------------------------------------------------------*/
+.language {
+	/* Expand option list */
+	div[aria-expanded="true"] {
+		ul,
+		ul li {
+			display: block;
+		}
+	}
+
+	/* Hide option list */
+	div[aria-expanded="false"] {
+		ul,
+		ul li {
+			display: none;
+		}
+	}
+
+	.language-selector-options {
+		width: 8rem;
+
+		button {
+			background-color: transparent;
+			margin-left: 0;
+			font-size: 0.88889rem;
+			color: inherit;
+			padding: 0.125rem 0.5rem;
+			border: 1px solid #f3f3f3;
+			width: 100%;
+			max-width: 100%;
+			line-height: 1.5rem;
+			box-sizing: border-box;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			min-height: auto;
+
+			&[aria-current="true"] {
+				&:after {
+					content: "\E802";
+					@extend %icon-text-styling !optional;
+					font-size: var(--de-emphasized-font-size);
+					position: absolute;
+					right: 0.5rem;
+				}
+			}
+		}
+	}
+
+	ul {
+		position: static;
+		padding: 0;
+		margin: 0;
+		border: 1px solid var(--grey-2);
+		width: inherit;
+		box-sizing: border-box;
+
+		li {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			order: 1;
+			margin: 0;
+			background-color: #fff;
+			line-height: 0;
+
+			a {
+				text-decoration: none;
+				margin-left: 0;
+				font-size: var(--de-emphasized-font-size);
+				color: inherit;
+				padding: 0.125rem 0.5rem;
+				border-top: 1px solid var(--grey-1);
+				width: 100%;
+				max-width: 100%;
+				line-height: 1.5rem;
+				box-sizing: border-box;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+
+				&:hover {
+					background-color: var(--branding-color-2-background-color);
+				}
+			}
+
+			/* Selected language */
+			&[aria-current="true"] {
+				order: 0;
+				background-color: var(--button-base-background-color);
+				font-size: var(--de-emphasized-font-size);
+				font-family: inherit;
+				cursor: pointer;
+			}
+		}
+	}
+
+	div[aria-expanded="true"] {
+		width: 8rem; /* Reserving space for the absolute positioned ul */
+
+		ul {
+			position: absolute;
+			top: 26px;
+
+			li {
+				/* Selected language */
+				&[aria-current="true"] {
+					a {
+						cursor: default;
+					}
+				}
+			}
+		}
+	}
+}

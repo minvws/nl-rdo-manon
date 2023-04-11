@@ -1,0 +1,78 @@
+/*---------------------------------------------------------------*/
+/*--------- components/language-selector/language.scss ----------*/
+/*---------------------------------------------------------------*/
+@import "language-selector-form";
+@import "language-selector-list";
+
+.language {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+	width: auto;
+	flex-grow: initial;
+	z-index: 3;
+	position: absolute;
+	right: 1rem;
+	bottom: 0.5rem;
+	max-height: 1.75rem;
+	box-sizing: border-box;
+	width: 94%;
+	padding: 0;
+	margin: 0;
+
+	@media (min-width: 24rem) {
+		bottom: 1rem;
+	}
+
+	p,
+	p:first-of-type {
+		font-size: var(--de-emphasized-font-size);
+		margin: 0 0.5rem auto 0;
+		line-height: 2rem;
+		color: var(--grey-6);
+	}
+
+	> div {
+		flex-grow: unset;
+		margin-bottom: 0;
+		box-sizing: border-box;
+		flex-grow: 0;
+	}
+
+	a {
+		margin: 0 0 0 1rem;
+		white-space: nowrap;
+		text-decoration: none;
+		color: inherit;
+
+		&[aria-current="true"] {
+			text-decoration: underline;
+			text-decoration-color: var(--branding-color-1);
+			text-decoration-thickness: 2px;
+			text-underline-offset: 0.125em;
+		}
+
+		&:not([aria-current="true"]) {
+		}
+	}
+
+	.current-language {
+		background-color: #fff;
+		margin: 0 0 0 0.5rem;
+		padding: 0.25rem 0.5rem;
+		font-size: var(--de-emphasized-font-size);
+		font-family: inherit;
+		line-height: 1.5rem;
+		min-height: 1.5rem;
+		cursor: pointer;
+
+		&:after {
+			content: "\E802";
+			@extend %icon-text-styling !optional;
+			font-size: var(--de-emphasized-font-size);
+			margin-left: 0.5rem;
+		}
+	}
+}

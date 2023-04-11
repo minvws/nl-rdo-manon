@@ -440,4 +440,79 @@
     });
     prependNode(sidemenu, button);
   }
+
+  // ../manon/language-selector.js
+  onDomReady(initLanguageSelector);
+  onDomUpdate(initLanguageSelector);
+  function initLanguageSelector() {
+    var languageSelectorElements = document.querySelectorAll(".language-selector-options");
+    languageSelectorElements.forEach((languageSelectorElement) => {
+      languageSelectorElement.addEventListener("click", onClick);
+      languageSelectorElement.addEventListener("keydown", onKeyPress);
+    });
+  }
+  function onClick(e) {
+    var languageSelectorElement = e.target.closest(".language-selector-options");
+    var expanded = languageSelectorElement.getAttribute("aria-expanded") === "true";
+    languageSelectorElement.setAttribute("aria-expanded", expanded ? "false" : "true");
+  }
+  function onKeyPress(e) {
+    var languageSelectorElement = e.target.closest(".language-selector-options");
+    var expanded = languageSelectorElement.getAttribute("aria-expanded") === "true";
+    var listLength = languageSelectorElement.getElementsByTagName("li").length;
+    var selectorButton = languageSelectorElement.getElementsByTagName("button")[0];
+    var firstOption = languageSelectorElement.querySelector("li:first-of-type a");
+    var lastOption = languageSelectorElement.querySelector("li:last-of-type a");
+    if (selectorButton === document.activeElement) {
+      switch (e.code) {
+        case "Enter":
+          languageSelectorElement.setAttribute("aria-expanded", expanded ? "false" : "true");
+          e.preventDefault();
+          break;
+        case "Space":
+          languageSelectorElement.setAttribute("aria-expanded", expanded ? "false" : "true");
+          e.preventDefault();
+          break;
+          break;
+        case "Escape":
+          languageSelectorElement.setAttribute("aria-expanded", "false");
+          break;
+        case "ArrowUp":
+          languageSelectorElement.setAttribute("aria-expanded", "true");
+          languageSelectorElement.getElementsByTagName("li")[listLength - 1].getElementsByTagName("a")[0].focus();
+          e.preventDefault();
+          break;
+        case "ArrowDown":
+          languageSelectorElement.setAttribute("aria-expanded", "true");
+          firstOption.focus();
+          e.preventDefault();
+          break;
+      }
+      return;
+    }
+    if (languageSelectorElement.contains(document.activeElement)) {
+      switch (e.code) {
+        case "Escape":
+          selectorButton.focus();
+          languageSelectorElement.setAttribute("aria-expanded", "false");
+          break;
+        case "ArrowUp":
+          if (firstOption === document.activeElement) {
+            break;
+          } else {
+            document.activeElement.parentNode.previousElementSibling.getElementsByTagName("a")[0].focus();
+            e.preventDefault();
+          }
+          break;
+        case "ArrowDown":
+          if (lastOption === document.activeElement) {
+            break;
+          } else {
+            document.activeElement.parentNode.nextElementSibling.getElementsByTagName("a")[0].focus();
+            e.preventDefault();
+          }
+          break;
+      }
+    }
+  }
 })();
