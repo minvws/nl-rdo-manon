@@ -38,10 +38,6 @@ table {
 
 .js-expando-rows-loaded {
   table {
-    tr.expando-row[hidden] {
-      display: none;
-    }
-
     button.expando-button {
       display: inline-flex;
     }
