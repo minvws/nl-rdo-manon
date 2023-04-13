@@ -14,12 +14,12 @@
 
   &:hover {
     text-decoration: var(--header-navigation-link-active-hover-text-decoration);
-    background-color: var(-header-navigation-link-active-hover-background-color);
+    background-color: var(--header-navigation-link-active-hover-background-color);
     color: var(--header-navigation-link-active-hover-text-color);
-    border-width: var(--header-navigation-link-hover-border-width);
-    border-style: var(--header-navigation-link-hover-border-style);
-    border-color: var(--header-navigation-link-hover-border-color);
-    border-radius: var(--header-navigation-link-hover-border-radius);
+    border-width: var(--header-navigation-link-active-hover-border-width);
+    border-style: var(--header-navigation-link-active-hover-border-style);
+    border-color: var(--header-navigation-link-active-hover-border-color);
+    border-radius: var(--header-navigation-link-active-hover-border-radius);
   }
 }
 
