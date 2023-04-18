@@ -89,26 +89,25 @@ function onKeyPress(e) {
 				if (firstOption === document.activeElement) {
 					// Stop the script if the focus is on the first element.
 					break;
-				} else {
-					// Target the currently focused element -> <a>, go up a node -> <li>, select the previous sibling of the previous sibling and the a-node within and focus it.
-					document.activeElement.parentNode.previousElementSibling
-						.getElementsByTagName("a")[0]
-						.focus();
-					e.preventDefault();
 				}
-				break;
+        // Target the currently focused element -> <a>, go up a node -> <li>, select the previous sibling of the previous sibling and the a-node within and focus it.
+        document.activeElement.parentNode.previousElementSibling
+          .getElementsByTagName("a")[0]
+          .focus();
+        e.preventDefault();
+      break;
 			// If the DOWN key is pressed.
 			case "ArrowDown":
 				if (lastOption === document.activeElement) {
 					// Stop the script if the focus is on the last element.
 					break;
-				} else {
-					// Target the currently focused element -> <a>, go up a node -> <li>, select the next sibling of the next sibling and the a-node within and focus it.
-					document.activeElement.parentNode.nextElementSibling
-						.getElementsByTagName("a")[0]
-						.focus();
-					e.preventDefault();
-				}
+        }
+        // Target the currently focused element -> <a>, go up a node -> <li>, select the next sibling of the next sibling and the a-node within and focus it.
+        document.activeElement.parentNode.nextElementSibling
+          .getElementsByTagName("a")[0]
+          .focus();
+        e.preventDefault();
+
 				break;
 		}
 	}
