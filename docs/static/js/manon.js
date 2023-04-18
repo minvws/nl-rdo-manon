@@ -358,7 +358,7 @@
     var headers = document.querySelectorAll("header:not(.breadcrumbs)");
     for (var i = 0; i < headers.length; i++) {
       var nav = headers[i].querySelector("nav");
-      if (!(nav instanceof HTMLElement) || nav.querySelector(".menu_toggle")) {
+      if (!(nav instanceof HTMLElement) || nav.querySelector(".menu-toggle")) {
         continue;
       }
       var isCondensed = headers[i].className.indexOf("condensed") !== -1;
@@ -393,7 +393,7 @@
   }
   function createMenuButton(ul, openLabel, closeLabel) {
     var button = document.createElement("button");
-    button.className = "menu_toggle";
+    button.className = "menu-toggle";
     button.setAttribute("aria-controls", ul.id);
     button.setAttribute("aria-expanded", "false");
     var label = document.createElement("span");
