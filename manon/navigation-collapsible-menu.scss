@@ -9,6 +9,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 0;
+  border: 1px dashed black;
 
   /* Menu below breakpoint */
   ul,
@@ -136,6 +137,7 @@ button.menu_toggle {
 
 /* Above breakpoint */
 body > header nav {
+  border: 1px dashed green;
   > div {
     display: flex;
   }
