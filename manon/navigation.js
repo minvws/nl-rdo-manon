@@ -63,7 +63,6 @@ function makeResponsive(nav, isCondensed) {
 function createMenuButton(ul, openLabel, closeLabel) {
   var button = document.createElement("button");
   button.className = "menu_toggle";
-  button.setAttribute("hidden", "false");
   button.setAttribute("aria-controls", ul.id);
   button.setAttribute("aria-expanded", "false");
 
