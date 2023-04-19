@@ -36,6 +36,7 @@
     padding: var(--breadcrumb-bar-list-padding);
     gap: var(--breadcrumb-bar-list-gap);
     color: inherit;
+    background-color: transparent;
 
     li {
       display: flex;
@@ -44,6 +45,10 @@
       align-items: center;
       list-style: none;
       gap: var(--breadcrumb-bar-list-item-gap);
+
+      &:before {
+        display: none; /* Preventing default nav before to show up */
+      }
 
       &:after {
         content: var(--breadcrumb-bar-icon);

@@ -43,6 +43,7 @@ nav {
             font-size: var(--navigation-list-item-icon-font-size, inherit);
             vertical-align: middle;
             padding: var(--navigation-list-item-icon-padding);
+            display: var(--navigation-list-item-icon-display);
         }
 
         a,

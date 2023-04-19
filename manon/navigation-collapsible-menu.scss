@@ -51,6 +51,10 @@ body > header nav.collapsible-menu,
       color: var(--navigation-collapsible-menu-list-collapsed-text-color);
       background-color: var(--navigation-collapsible-menu-list-item-collapsed-background-color);
 
+      &:before {
+        display: none; /* Preventing default nav before to show up */
+      }
+
       &:last-child {
         border-width: var(--navigation-collapsible-menu-list-item-collapsed-last-item-border-width);
       }
