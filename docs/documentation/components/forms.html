@@ -45,8 +45,8 @@
           <section id="available-types">
             <h2>Beschikbare weergaven</h2>
             <div class="column-3">
-              <nav id="form-types">
-                <h3>Formulierelementen</h3>
+              <nav aria-labelledby="form-types-title" id="form-types">
+                <h3 id="form-types-title">Formulierelementen</h3>
                 <ul>
                   <li>
                     <a href="./form-input-range.html">Bereik - <code>range</code></a>
@@ -85,20 +85,22 @@
                   <li>
                     <a href="./form-select.html">Selectielijst - <code>select</code></a>
                   </li>
-                  <li>
-                    Fieldset
-                    <ul>
-                      <li><a href="./form-fieldset.html">Fieldset</a></li>
-                      <li>
-                        <a href="./form-fieldset-invisible.html">Onzichtbare fieldset</a>
-                      </li>
-                    </ul>
-                  </li>
                 </ul>
               </nav>
 
-              <nav id="form-layouts">
-                <h3>Weergaven</h3>
+              <nav aria-labelledby="form-fieldset-components-title" id="form-fieldset-components">
+                <h3 id="form-fieldset-components-title">Formulierelementen</h3>
+
+                <ul>
+                  <li><a href="./form-fieldset.html">Fieldset</a></li>
+                  <li><a href="./form-fieldset-invisible.html">Onzichtbare fieldset</a></li>
+                  <li><a href="./fieldset-radio.html">Fieldset radio-selecteerknop - <code>radio</code></a></li>
+                  <li><a href="./fieldset-checkbox.html">Fieldset selectievak - <code>checkbox</code></a></li>
+                </ul>
+              </nav>
+              
+              <nav aria-labelledby="form-layouts-title" id="form-layouts">
+                <h3 id="form-layouts-title">Weergaven</h3>
                 <ul>
                   <li><a href="./form-base.html">Basisweergave</a></li>
                   <li>

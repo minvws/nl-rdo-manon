@@ -14,10 +14,10 @@ form {
     input[type="radio"] {
       padding: 0;
       cursor: pointer;
-      width: var(--radio-width);
-      min-width: var(--radio-width);
-      height: var(--radio-height);
-      accent-color: var(--radio-accent-color);
+      width: var(--radio-input-width);
+      min-width: var(--radio-input-width);
+      height: var(--radio-input-height);
+      accent-color: var(--radio-input-accent-color);
   
       & + label {
         width: var(--radio-label-width);
