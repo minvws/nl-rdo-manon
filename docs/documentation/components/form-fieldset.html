@@ -46,13 +46,12 @@
           <li><a href="./form-fieldset.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
           <li><a href="#requirements">Bijbehorende bestanden</a></li>
-          <li><a href="#related">Gerelateerde pagina's</a></li>
         </ul>
       </nav>
       <article>
         <div>
           <section id="introduction">
-            <h1>Fieldset - <code>textarea</code></h1>
+            <h1>Fieldset - <code>fieldset</code></h1>
 
             <h2>Benodigde stappen:</h2>
             <ol>
@@ -61,26 +60,8 @@
                 en optionele bestanden zie:
                 <a href="#requirements">Bijbehorende bestanden</a>.
               </li>
-              <li>
-                Voeg de <code>&lt;textarea></code> toe. Zie onderstaand voorbeeld voor meer
-                informatie.
-              </li>
+              <li>Voeg de benodigde HTML toe. Voor meer informatie zie: <a href="#examples">Voorbeelden</a>.</li>
             </ol>
-
-            <h2>Aandachtspunten:</h2>
-            <ul>
-              <li>
-                Zorg ervoor dat het Fieldset een duidelijke vraag
-                en/of duidelijk doel heeft. Voeg een omschrijvend <code>&lt;label></code> toe en
-                stel een vraag of geef duidelijke richtlijnen mee door middel van een
-                <code>placeholder</code>-tekst.
-              </li>
-              <li>
-                <code>rows="number"</code> geeft de initiële hoogte van het Fieldset aan in de
-                hoeveelheid regels. Als er een langer bericht verwacht of aangemoedigd wordt is het
-                voor de gebruiker fijn om een hoger initieel tekstveld te hebben.
-              </li>
-            </ul>
           </section>
 
           <section id="examples">
@@ -89,13 +70,16 @@
             <h3>Visueel voorbeeld:</h3>
             <h4>Basis</h4>
             <form action="" method="post">
-              <label for="voorbeeld-tekstveld-base">Bericht</label>
-              <textarea
-                id="voorbeeld-tekstveld-base"
-                name="voorbeeld-tekstveld-base"
-                placeholder="Jouw vraag of opmerking"
-                rows="5"
-              ></textarea>
+              <fieldset>
+                <legend>Titel</legend>
+
+                <label for="example-input-base">Voorbeeld invoerveld</label>
+                <input
+                  id="example-input-base"
+                  name="example-input-base"
+                  placeholder="voorbeeld invoerveld"
+                  type="text">
+              </fieldset>
 
               <button type="submit">Verzend</button>
             </form>
@@ -104,8 +88,16 @@
             <pre>
               <code>
 &lt;form action="" method="post">
-  &lt;label for="voorbeeld-tekstveld-base">Bericht&lt;/label>
-  &lt;textarea id="voorbeeld-tekstveld-base" name="voorbeeld-tekstveld-base" placeholder="Jouw vraag of opmerking">&lt;/textarea>
+  &lt;fieldset>
+    &lt;legend>Titel&lt;/legend>
+
+    &lt;label for="example-input-base">Voorbeeld invoerveld&lt;/label>
+    &lt;input
+      id="example-input-base"
+      name="example-input-base"
+      placeholder="voorbeeld invoerveld"
+      type="text">
+  &lt;/fieldset>
 
   &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
@@ -119,51 +111,74 @@
               Voor meer informatie over importeren en instellen van componenten. Zie:
               <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
             </p>
-            <h3>Benodigd</h3>
-            <ul>
-              <li><code>form/form-base.scss</code></li>
-              <li><code>form/form-textarea.scss</code></li>
-            </ul>
 
-            <h3>Optioneel</h3>
-            <ul>
-              <li><code>form/form-base-variables.scss</code></li>
-              <li><code>form/form-textarea-variables.scss</code></li>
-            </ul>
+            <h3>Importeer component via NPM</h3>
+
+            <h4>CSS-voorbeeld:</h4>
+            <pre>
+              <code>
+@use "@minvws/manon/fieldset";
+              </code>
+            </pre>
           </section>
 
           <section id="variables">
-            <h2>Instelbare variabelen</h2>
-            <ul>
-              Velden binnen de
-              <code>fieldset</code>
-              <ul>
-                <li><a href="../variables.html#margin-top">margin-top</a></li>
-              </ul>
+              <h2>Instelbare variabelen</h2>
+              <div class="horizontal-scroll">
+                <table class="nowrap">
+                  <caption>Beschikbare instelbare variabelen:</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Variabele</th>
+                      <th scope="col">CSS-attribuut</th>
+                      <th scope="col">Manon ingestelde waarde</th>
+                      <th scope="col">Breekpunt</th>
+                      <th scope="col">Class</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>--form-fieldset-fields-margin-top</td>
+                      <td><a href="../variables.html#margin-top">margin-top</a></td>
+                      <td>var(--application-base-gap, 1rem)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                    
+                    <tr>
+                      <td>--form-fieldset-legend-font-weight</td>
+                      <td><a href="../variables.html#font-weight">font-weight</a></td>
+                      <td>var(--headings-font-weight, bold)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                    
+                    <tr>
+                      <td>--form-fieldset-legend-margin-bottom</td>
+                      <td><a href="../variables.html#margin-bottom">margin-bottom</a></td>
+                      <td>var(--application-base-gap, 1rem)</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
-              <li>
-                <code>legend</code>
-                <ul>
-                  <li>
-                    <a href="../variables.html#font-weight">font-weight</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#margin-bottom">margin-bottom</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+              <h3>CSS</h3>
+              <p>Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw project. Kies en gebruik de benodigde variabelen.</p>
+              <pre>
+                <code>
+:root {
+  /* Fields within the fieldset */
+  --form-fieldset-fields-margin-top: ;
 
-            <p>Bijbehorende elementen:</p>
-            <ul>
-              <li><a href="./form-base.html">form-base</a></li>
-            </ul>
-          </section>
-
-          <section id="related">
-            <h2>Gerelateerde pagina's</h2>
-            <a href="./form-input-textarea-test.html">Test- en voorbeelden-pagina</a>
-          </section>
+  /* Legend */
+  --form-fieldset-legend-font-weight: ;
+  --form-fieldset-legend-margin-bottom: ;
+}
+                </code>
+              </pre>
+            </section>
         </div>
       </article>
     </main>

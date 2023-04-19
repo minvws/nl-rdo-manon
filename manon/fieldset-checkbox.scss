@@ -1,0 +1,50 @@
+/*---------------------------------------------------------------*/
+/*-------------------- fieldset-checkbox.scss -------------------*/
+/*---------------------------------------------------------------*/
+@use "fieldset-checkbox-variables";
+
+form {
+    fieldset {
+        .checkbox {
+            padding: 0;
+            display: initial;
+    
+            input[type="checkbox"] {
+                padding: 0;
+                cursor: pointer;
+                width: var(--fieldset-checkbox-width);
+                min-width: var(--fieldset-checkbox-width);
+                height: var(--fieldset-checkbox-height);
+                accent-color: var(--fieldset-checkbox-accent-color);
+                margin-right: 0.5rem;
+                margin-top: var(--fieldset-checkbox-input-margin-top);
+            
+                & + label {
+                    width: var(--fieldset-checkbox-label-width);
+                    cursor: pointer;
+                }
+            
+                &:disabled {
+                    cursor: not-allowed;
+        
+                    & + label {
+                        cursor: not-allowed;
+                    }
+                }
+            }
+    
+            &.required {
+                flex-direction: column;
+
+                span {
+                    margin-bottom: var(--fieldset-checkbox-required-margin-bottom);
+                }
+
+                > div {
+                    padding: 0;
+                    display: initial;
+                }
+            }   
+        }
+    } 
+}

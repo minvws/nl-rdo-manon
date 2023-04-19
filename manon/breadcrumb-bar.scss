@@ -72,6 +72,7 @@
         color: inherit;
         text-decoration: var(--breadcrumb-bar-link-text-decoration);
         border: 0;
+        white-space: var(--breadcrumb-bar-link-white-space);
 
         &:hover {
           text-decoration: var(--breadcrumb-bar-link-hover-text-decoration);
