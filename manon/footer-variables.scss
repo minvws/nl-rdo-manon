@@ -3,24 +3,41 @@
 /*---------------------------------------------------------------*/
 :root {
   --footer-flex-direction: column;
-  --footer-gap: 0;
-  --footer-justify-content: flex-end;
-  --footer-align-items: center;
+  --footer-gap: var(--application-base-gap-medium);
+  --footer-justify-content: center;
+  --footer-align-items: flex-start;
   --footer-flex-wrap: wrap;
   --footer-min-height: 10rem;
   --footer-background-color: var(--branding-color-1-background-color);
   --footer-text-color: var(--branding-color-1-text-color);
-  --footer-padding-top: 0;
-  --footer-padding-right: 0;
-  --footer-padding-bottom: 0;
-  --footer-padding-left: 0;
+  --footer-padding-top: var(--content-padding-top);
+  --footer-padding-right: 5%;
+  --footer-padding-bottom: var(--content-padding-bottom);
+  --footer-padding-left: 5%;
   --footer-max-width: 100%;
 
   /* Links */
   --footer-link-text-color: var(--footer-text-color);
+  --footer-link-before-text-color: var(--footer-link-text-color);
   --footer-link-text-decoration: none;
+
+  /* Links visited */
+  --footer-link-visited-text-color: var(--footer-link-text-color);
+  --footer-link-visited-before-text-color: var(--footer-link-visited-text-color);
+  --footer-link-visited-text-decoration: var(--footer-link-text-decoration);
 
   /* Links hover */
   --footer-link-hover-text-color: var(--footer-link-text-color);
+  --footer-link-hover-before-text-color: var(--footer-link-hover-text-color);
   --footer-link-hover-text-decoration: underline;
+
+  /* Links visited hover */
+  --footer-link-visited-hover-text-color: var(--footer-link-text-color);
+  --footer-link-visited-hover-before-text-color: var(--footer-link-visited-hover-text-color);
+  --footer-link-visited-hover-text-decoration: var(--footer-link-hover-text-decoration);
+  
+  /* Links active */
+  --footer-link-active-text-color: var(--footer-link-text-color);
+  --footer-link-active-before-text-color: --footer-link-active-text-color;
+  --footer-link-active-text-decoration: var(--footer-link-hover-text-decoration);
 }

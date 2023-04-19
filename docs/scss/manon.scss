@@ -60,6 +60,12 @@
 @use "@minvws/manon/hidden";
 @use "@minvws/manon/visually-hidden";
 
+/* Fundamentals */
+@use "@minvws/manon/checkbox";
+@use "@minvws/manon/fieldset-checkbox";
+@use "@minvws/manon/radio";
+@use "@minvws/manon/fieldset-radio";
+
 /* Layout */
 /*@use "@minvws/manon/layout-base-variables";*/
 
@@ -71,6 +77,8 @@
 @use "@minvws/manon/layout-column-3";
 @use "@minvws/manon/layout-column-4";
 @use "@minvws/manon/layout-centered";
+@use "@minvws/manon/layout-form";
+
 
 /* Button */
 @use "@minvws/manon/button-base";
@@ -114,6 +122,7 @@
 
 /* Footer */
 @use "@minvws/manon/footer";
+@use "@minvws/manon/footer-two-thirds-one-third";
 
 /* Components */
 @use "@minvws/manon/branding";
@@ -121,6 +130,7 @@
 @use "@minvws/manon/navigation-collapsible-menu";
 @use "@minvws/manon/accordion";
 @use "@minvws/manon/filter";
+@use "@minvws/manon/card";
 
 @use "@minvws/manon/list-base";
 @use "@minvws/manon/skip-to-content";
@@ -146,7 +156,7 @@
 @use "@minvws/manon/sidemenu-documentation";
 
 /* Table */
-@use "@minvws/manon/table-base"; /* Needs to be first of the set */
+@use "@minvws/manon/table"; /* Needs to be first of the set */
 @use "@minvws/manon/table-action-buttons";
 @use "@minvws/manon/table-caption";
 @use "@minvws/manon/table-checkbox";

@@ -1,14 +1,26 @@
 /*---------------------------------------------------------------*/
-/*---- components/navigation/navigation-collapsible-menu.scss ---*/
+/*---------------- navigation-collapsible-menu.scss -------------*/
 /*---------------------------------------------------------------*/
 @use "navigation-collapsible-menu-variables";
 
+body > header nav.collapsible-menu,
 .collapsible-menu {
   display: flex;
   width: 100%;
+  max-width: var(--navigation-collapsible-menu-max-width);
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 0;
+  gap: var(--navigation-collapsible-menu-gap);
+  height: var(--navigation-collapsible-menu-height);
+
+   > div {
+    display: flex;
+    flex-direction: row;
+    gap: var(--navigation-collapsible-menu-gap);
+    box-sizing: border-box;
+    max-height: 100%;
+  }
 
   /* Menu below breakpoint */
   ul,
@@ -19,57 +31,36 @@
     margin: 0;
     padding: 0;
     gap: var(--navigation-collapsible-menu-list-collapsed-gap);
-    background-color: var(
-      --navigation-collapsible-menu-list-collapsed-background-color
-    );
+    background-color: var(--navigation-collapsible-menu-list-collapsed-background-color);
     order: 2;
+    position: absolute;
+    top: var(--navigation-collapsible-menu-list-top);
+    right: var(--navigation-collapsible-menu-list-right);
+    bottom: var(--navigation-collapsible-menu-list-bottom);
+    left: var(--navigation-collapsible-menu-list-left);
+    z-index: 20;
 
     li {
       display: flex;
       align-items: center;
       width: 100%;
       color: var(--navigation-collapsible-menu-list-collapsed-text-color);
-      border-width: var(
-        --navigation-collapsible-menu-list-item-collapsed-border-width
-      );
-      border-style: var(
-        --navigation-collapsible-menu-list-item-collapsed-border-style
-      );
-      border-color: var(
-        --navigation-collapsible-menu-list-item-collapsed-border-color
-      );
+      border-width: var(--navigation-collapsible-menu-list-item-collapsed-border-width);
+      border-style: var(--navigation-collapsible-menu-list-item-collapsed-border-style);
+      border-color: var(--navigation-collapsible-menu-list-item-collapsed-border-color);
       color: var(--navigation-collapsible-menu-list-collapsed-text-color);
-      background-color: var(
-        --navigation-collapsible-menu-list-item-collapsed-background-color
-      );
+      background-color: var(--navigation-collapsible-menu-list-item-collapsed-background-color);
+
+      &:before {
+        display: none; /* Preventing default nav before to show up */
+      }
 
       &:last-child {
-        border-width: var(
-          --navigation-collapsible-menu-list-item-last-child-collapsed-border-width,
-          var(--navigation-collapsible-menu-list-item-collapsed-border-width)
-        );
-        border-style: var(
-          --navigation-collapsible-menu-list-item-last-child-collapsed-border-style,
-          var(--navigation-collapsible-menu-list-item-collapsed-border-style)
-        );
-        border-color: var(
-          --navigation-collapsible-menu-list-item-last-child-collapsed-border-color,
-          var(--navigation-collapsible-menu-list-item-collapsed-border-color)
-        );
+        border-width: var(--navigation-collapsible-menu-list-item-collapsed-last-item-border-width);
       }
 
-      &:hover {
-        background-color: var(
-          --navigation-collapsible-menu-list-item-collapsed-hover-background-color
-        );
-        color: var(--navigation-collapsible-menu-list-item-hover-text-color);
-      }
-
-      [aria-current] {
-        background-color: var(
-          --navigation-collapsible-menu-list-item-hover-background-color
-        );
-        color: var(--navigation-collapsible-menu-list-item-hover-text-color);
+      &:first-child {
+        border-width: var(--navigation-collapsible-menu-list-item-collapsed-first-item-border-width);
       }
 
       a {
@@ -78,16 +69,37 @@
         padding: var(--navigation-collapsible-menu-list-item-collapsed-padding);
         box-sizing: border-box;
         text-decoration: var(--navigation-collapsible-link-text-decoration);
+        justify-content: var(--navigation-collapsible-link-justify-content);
+        border: 0;
+        background-color: var(--navigation-collapsible-menu-list-item-collapsed-background-color);
+        color: var(--navigation-collapsible-menu-list-collapsed-text-color);
+        white-space: nowrap;
+      }
 
-        &:hover {
-          color: var(--navigation-collapsible-menu-list-item-hover-text-color);
+      &:hover {
+        background-color: var(--navigation-collapsible-menu-list-item-collapsed-hover-background-color);
+        color: var(--navigation-collapsible-menu-list-item-hover-text-color);
+
+        a {
+          background-color: var(--navigation-collapsible-menu-list-item-collapsed-hover-background-color);
+          color: var(--navigation-collapsible-menu-list-item-collapsed-hover-text-color);
+          
+          &:visited {
+            background-color: var(--navigation-collapsible-menu-list-item-collapsed-hover-background-color);
+          }
         }
+      }
+
+      [aria-current] {
+        background-color: var(--navigation-collapsible-menu-list-item-hover-background-color);
+        color: var(--navigation-collapsible-menu-list-item-hover-text-color);
       }
     }
   }
 
-  button.menu_toggle {
+  button.menu-toggle {
     display: flex;
+    max-height: 100%;
 
     &[aria-expanded="false"] {
       & + ul,
@@ -102,7 +114,7 @@
 /* This button is only visisble when javascript is loaded. */
 /* Do not add the button to the html manually, JS will do this. */
 /* When JS isn't available the menu will be opened by default for accessibility. */
-button.menu_toggle {
+button.menu-toggle {
   display: flex;
   order: 1;
   margin-left: auto;
@@ -140,7 +152,7 @@ body > header nav {
     display: flex;
   }
 
-  button.menu_toggle {
+  button.menu-toggle {
     display: none;
 
     &[aria-expanded="false"] {

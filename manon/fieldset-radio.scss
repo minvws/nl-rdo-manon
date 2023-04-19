@@ -1,0 +1,57 @@
+/*---------------------------------------------------------------*/
+/*---------------------- fieldset-radio.scss --------------------*/
+/*---------------------------------------------------------------*/
+@use "fieldset-radio-variables";
+
+form {
+    fieldset {
+        .radio {
+            padding: 0;
+            display: initial;
+            margin: var(--fieldset-radio-margin);
+    
+            input[type="radio"] {
+                padding: 0;
+                cursor: pointer;
+                width: var(--fieldset-radio-input-width);
+                min-width: var(--fieldset-radio-input-width);
+                height: var(--fieldset-radio-input-height);
+                accent-color: var(--fieldset-radio-input-accent-color);
+                margin-right: 0.5rem;
+                margin-top: var(--fieldset-radio-input-margin-top);
+            
+                & + label {
+                    width: var(--fieldset-radio-label-width);
+                    cursor: pointer;
+                }
+            
+                &:disabled {
+                    cursor: not-allowed;
+        
+                    & + label {
+                        cursor: not-allowed;
+                    }
+                }
+            }
+    
+            &.required {
+                flex-direction: column;
+
+                span {
+                    margin-bottom: var(--fieldset-radio-required-margin-bottom);
+                }
+
+                > div {
+                    padding: 0;
+                    display: initial;
+                }
+            }   
+        }
+
+        fieldset {
+            .radio {
+                margin: var(--fieldset-radio-margin);
+            }
+        }
+    } 
+}

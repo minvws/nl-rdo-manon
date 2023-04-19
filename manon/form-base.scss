@@ -23,6 +23,7 @@ form {
   border-width: var(--form-base-border-width);
   border-style: var(--form-base-border-style);
   border-color: var(--form-base-border-color);
+  max-width: var(--form-base-max-width);
 
   div,
   fieldset {

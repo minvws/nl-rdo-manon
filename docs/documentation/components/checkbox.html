@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Selectievak - checkbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li>
+              <a href="./form-input-checkbox.html" aria-current="page">Selectievak</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./form-input-checkbox.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Selectievak - <code>checkbox</code></h1>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
+              <li>Voeg de benodigde HTML toe. Voor meer informatie zie: <a href="#examples">Voorbeelden</a>.</li>
+            </ol>
+          </section>
+
+          <section id="examples">
+            <h2>Voorbeelden</h2>
+
+            <h3>Visueel voorbeeld:</h3>
+            <h4>Basis</h4>
+            <form action="" method="post">
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox">
+                <label for="checkbox-example-base">Lorem ipsum dolor set amet</label>
+              </div>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div class="checkbox">
+    &lt;input type="checkbox" id="checkbox-example-base" name="standaard-checkbox">
+    &lt;label for="checkbox-example-base">Lorem ipsum dolor set amet&lt;/label>
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h4>Verplicht</h4>
+            <form action="" method="post">
+              <div class="checkbox required">
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <div>
+                  <input type="checkbox" id="checkbox-example-required-1" name="voorwaarden" required>
+                  <label for="checkbox-example-required-1">verplicht selectievak</label>
+                </div>
+              </div>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div class="checkbox required">
+    &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+    &lt;div>
+      &lt;input type="checkbox" id="checkbox-example-required-1" name="voorwaarden" required>
+      &lt;label for="checkbox-example-required-1">verplicht selectievak&lt;/label>
+    &lt;/div>
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h4>Uitgeschakeld</h4>
+            <form action="" method="post">
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-example-disabled" name="disabled-checkbox" disabled>
+                <label for="checkbox-example-disabled">Lorem ipsum dolor set amet</label>
+              </div>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div class="checkbox">
+    &lt;input type="checkbox" id="checkbox-example-disabled" name="disabled-checkbox" disabled>
+    &lt;label for="checkbox-example-disabled">Lorem ipsum dolor set amet&lt;/label>
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h4>Lijst</h4>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Examples</legend>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox-example-list-1" name="standaard-checkbox">
+                        <label for="checkbox-example-list-1">Lorem ipsum dolor set amet</label>
+                    </div>
+                    
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox-example-list-2" name="standaard-checkbox">
+                        <label for="checkbox-example-list-2">Lorem ipsum dolor set amet</label>
+                    </div>
+                    
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox-example-list-3" name="standaard-checkbox">
+                        <label for="checkbox-example-list-3">Lorem ipsum dolor set amet</label>
+                    </div>
+                    
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox-example-list-4" name="standaard-checkbox">
+                        <label for="checkbox-example-list-4">Lorem ipsum dolor set amet</label>
+                    </div>
+                </fieldset>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+    &lt;fieldset>
+        &lt;legend>Examples&lt;/legend>
+        &lt;div class="checkbox">
+            &lt;input type="checkbox" id="checkbox-example-list-1" name="standaard-checkbox">
+            &lt;label for="checkbox-example-list-1">Lorem ipsum dolor set amet&lt;/label>
+        &lt;/div>
+        
+        &lt;div class="checkbox">
+            &lt;input type="checkbox" id="checkbox-example-list-2" name="standaard-checkbox">
+            &lt;label for="checkbox-example-list-2">Lorem ipsum dolor set amet&lt;/label>
+        &lt;/div>
+        
+        &lt;div class="checkbox">
+            &lt;input type="checkbox" id="checkbox-example-list-3" name="standaard-checkbox">
+            &lt;label for="checkbox-example-list-3">Lorem ipsum dolor set amet&lt;/label>
+        &lt;/div>
+        
+        &lt;div class="checkbox">
+            &lt;input type="checkbox" id="checkbox-example-list-4" name="standaard-checkbox">
+            &lt;label for="checkbox-example-list-4">Lorem ipsum dolor set amet&lt;/label>
+        &lt;/div>
+    &lt;/fieldset>
+&lt;/form>
+              </code>
+            </pre>
+            
+            <h4>Lijst met "label"</h4>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Examples</legend>
+                    <fieldset>
+                        <legend>List label</legend>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox-example-list-label-1" name="standaard-checkbox">
+                            <label for="checkbox-example-list-label-1">Lorem ipsum dolor set amet</label>
+                        </div>
+                        
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox-example-list-label-2" name="standaard-checkbox">
+                            <label for="checkbox-example-list-label-2">Lorem ipsum dolor set amet</label>
+                        </div>
+                        
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox-example-list-label-3" name="standaard-checkbox">
+                            <label for="checkbox-example-list-label-3">Lorem ipsum dolor set amet</label>
+                        </div>
+                        
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox-example-list-label-4" name="standaard-checkbox">
+                            <label for="checkbox-example-list-label-4">Lorem ipsum dolor set amet</label>
+                        </div>
+                    </fieldset>
+                </fieldset>
+            </form>
+
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+    &lt;fieldset>
+        &lt;legend>Examples&lt;/legend>
+        &lt;fieldset>
+            &lt;legend>List label&lt;/legend>
+            &lt;div class="checkbox">
+                &lt;input type="checkbox" id="checkbox-example-list-label-1" name="standaard-checkbox">
+                &lt;label for="checkbox-example-list-label-1">Lorem ipsum dolor set amet&lt;/label>
+            &lt;/div>
+            
+            &lt;div class="checkbox">
+                &lt;input type="checkbox" id="checkbox-example-list-label-2" name="standaard-checkbox">
+                &lt;label for="checkbox-example-list-label-2">Lorem ipsum dolor set amet&lt;/label>
+            &lt;/div>
+            
+            &lt;div class="checkbox">
+                &lt;input type="checkbox" id="checkbox-example-list-label-3" name="standaard-checkbox">
+                &lt;label for="checkbox-example-list-label-3">Lorem ipsum dolor set amet&lt;/label>
+            &lt;/div>
+            
+            &lt;div class="checkbox">
+                &lt;input type="checkbox" id="checkbox-example-list-label-4" name="standaard-checkbox">
+                &lt;label for="checkbox-example-list-label-4">Lorem ipsum dolor set amet&lt;/label>
+            &lt;/div>
+        &lt;/fieldset>
+    &lt;/fieldset>
+&lt;/form>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h2>Bijbehorende bestanden</h2>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+
+            <h3>Importeer component via NPM</h3>
+
+            <h4>CSS-voorbeeld:</h4>
+            <pre>
+              <code>
+@use "@minvws/checkbox";
+              </code>
+            </pre>
+          </section>
+
+          <section id="variables">
+            <h2>Instelbare variabelen</h2>
+            <div class="horizontal-scroll">
+              <table class="nowrap">
+                <caption>Beschikbare instelbare variabelen:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Variabele</th>
+                    <th scope="col">CSS-attribuut</th>
+                    <th scope="col">Manon ingestelde waarde</th>
+                    <th scope="col">Breekpunt</th>
+                    <th scope="col">Class</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>--checkbox-gap</td>
+                    <td><a href="../variables.html#gap">gap</a></td>
+                    <td>0.75rem</td>
+                    <td>-</td>
+                    <td rowspan="7" scope="rowgroup">checkbox</td>
+                  </tr>
+
+                  <tr>
+                    <td>--checkbox-align-items</td>
+                    <td><a href="../variables.html#align-items">align-items</a></td>
+                    <td>flex-start</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--checkbox-width</td>
+                    <td><a href="../variables.html#width">width</a></td>
+                    <td>1.25rem</td>
+                    <td>-</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>--checkbox-height</td>
+                    <td><a href="../variables.html#height">height</a></td>
+                    <td>1.25rem</td>
+                    <td>-</td>
+                  </tr> 
+                  
+                  <tr>
+                    <td>--checkbox-accent-color</td>
+                    <td><a href="../variables.html#accent-color">accent-color</a></td>
+                    <td>var(--branding-color-1, initial)</td>
+                    <td>-</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>--checkbox-label-width</td>
+                    <td><a href="../variables.html#width">width</a></td>
+                    <td>auto</td>
+                    <td>-</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>--checkbox-required-gap</td>
+                    <td><a href="../variables.html#gap">gap</a></td>
+                    <td>var(--application-base-gap-small)</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>CSS</h3>
+            <p>Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw project. Kies en gebruik de benodigde variabelen.</p>
+            <pre>
+              <code>
+:root {
+  /* Checkbox */
+  --checkbox-gap: ;
+  --checkbox-align-items: ;
+
+  /* Box */
+  --checkbox-width: ;
+  --checkbox-height: ;
+  --checkbox-accent-color: ;
+
+  /* Label */
+  --checkbox-label-width: ;
+
+  /* Required */
+  --checkbox-required-gap: ;
+}
+              </code>
+            </pre>
+        </section>
+
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

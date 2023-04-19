@@ -88,6 +88,15 @@
   --header-navigation-link-active-border-radius: var(--header-navigation-link-border-radius);
   --header-navigation-link-active-font-weight: normal;
 
+  /* Link active and hover */
+  --header-navigation-link-active-hover-text-decoration: var(--header-navigation-link-hover-text-decoration);
+  --header-navigation-link-active-hover-background-color: var(--header-navigation-link-hover-background-color);
+  --header-navigation-link-active-hover-text-color: var(--header-navigation-link-hover-text-color);
+  --header-navigation-link-active-hover-border-width: var(--header-navigation-link-border-width);
+  --header-navigation-link-active-hover-border-style: var(--header-navigation-link-border-style);
+  --header-navigation-link-active-hover-border-color: transparent;
+  --header-navigation-link-active-hover-border-radius: var(--header-navigation-link-border-radius);
+
   /* Button */
   --header-navigation-button-justify-content: var(--button-base-justify-content, center);
   --header-navigation-button-align-self: center;
@@ -99,10 +108,10 @@
   --header-navigation-button-border-style: var(--button-base-border-style, solid);
   --header-navigation-button-border-color: var(--button-base-border-color, black);
   --header-navigation-button-border-radius: var(--button-base-border-radius, 0);
-  --header-navigation-button-padding-top: 0;
-  --header-navigation-button-padding-right: 0;
-  --header-navigation-button-padding-bottom: 0;
-  --header-navigation-button-padding-left: 0;
+  --header-navigation-button-padding-top: var(--button-base-padding-top);
+  --header-navigation-button-padding-right: var(--button-base-padding-right);
+  --header-navigation-button-padding-bottom: var(--button-base-padding-bottom);
+  --header-navigation-button-padding-left: var(--button-base-padding-left);
   --header-navigation-button-font-size: var(--button-base-font-size, var(--application-base-font-size));
   --header-navigation-button-line-height: var(--button-base-line-height, var(--application-base-line-height));
   --header-navigation-button-font-weight: var(--button-base-font-weight, var(--application-base-font-weight));
