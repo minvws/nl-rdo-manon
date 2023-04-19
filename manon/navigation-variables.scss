@@ -2,5 +2,63 @@
 /*-------------------- navigation-variables.scss ----------------*/
 /*---------------------------------------------------------------*/
 :root {
+  /* Title */
+  --navigation-title-font-family: var(--headings-font-family);
+  --navigation-title-font-size: var(--headings-font-size);
+  --navigation-title-font-weight: var(--headings-font-weight);
+  --navigation-title-line-height: var(--headings-line-height);
+  --navigation-title-text-color: var(--headings-text-color);
+
+  /* List */
+  --navigation-list-margin: var(--list-base-margin, 0);
+  --navigation-list-padding: var(--list-base-padding, 1.5rem);
+  --navigation-list-gap: var(--list-base-gap, 0.5rem);
+  --navigation-list-line-height: var(--list-base-line-height, 1.5);
+  --navigation-list-font-size: var(--list-base-font-size, 1rem);
+  --navigation-list-font-weight: var(--list-base-font-weight, normal);
+  --navigation-list-text-color: var(--list-base-text-color, var(--application-base-text-colo));
+  --navigation-list-background-color: var(--list-base-background-color, var(--application-base-background-color));
+
+  /* List item */
+  --navigation-list-item-padding: var(--list-base-item-padding, initial);
+  --navigation-list-item-background-color: var(--list-base-item-background-color, var(--application-base-text-colo));
+  --navigation-list-item-text-color: var(--list-base-item-text-color,var(--application-base-text-color));
+  --navigation-list-item-border-width: var(--list-base-item-border-width, 0);
+  --navigation-list-item-border-style: var(--list-base-item-border-style, solid);
+  --navigation-list-item-border-color: var(--list-base-item-border-color, transparent);
+  --navigation-list-item-list-style: var(--list-base-item-list-style, initial);
+
+  /* List item icon */
+  /* --accordion-button-icon-font-family: var(--icon-base-font-family); */
+  --navigation-list-item-icon-font-family: var(--icon-base-font-family);
+  --navigation-list-item-icon-line-height: var(--navigation-list-line-height);
+  --navigation-list-item-icon-content: "";
+  --navigation-list-item-icon-font-size: var(--navigation-title-font-size);
+  --navigation-list-item-icon-padding: 0 0.5rem 0 0;
+
+  /* Links */
+    /* Links */
+    --navigation-link-text-color: var(--navigation-text-color);
+    --navigation-link-before-text-color: var(--navigation-link-text-color);
+    --navigation-link-text-decoration: none;
   
+    /* Links visited */
+    --navigation-link-visited-text-color: var(--navigation-link-text-color);
+    --navigation-link-visited-before-text-color: var(--navigation-link-visited-text-color);
+    --navigation-link-visited-text-decoration: var(--navigation-link-text-decoration);
+  
+    /* Links hover */
+    --navigation-link-hover-text-color: var(--navigation-link-text-color);
+    --navigation-link-hover-before-text-color: var(--navigation-link-hover-text-color);
+    --navigation-link-hover-text-decoration: underline;
+  
+    /* Links visited hover */
+    --navigation-link-visited-hover-text-color: var(--navigation-link-text-color);
+    --navigation-link-visited-hover-before-text-color: var(--navigation-link-visited-hover-text-color);
+    --navigation-link-visited-hover-text-decoration: var(--navigation-link-hover-text-decoration);
+    
+    /* Links active */
+    --navigation-link-active-text-color: var(--navigation-link-text-color);
+    --navigation-link-active-before-text-color: --navigation-link-active-text-color;
+    --navigation-link-active-text-decoration: var(--navigation-link-hover-text-decoration);
 }

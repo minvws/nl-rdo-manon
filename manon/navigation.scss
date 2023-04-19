@@ -1,8 +1,91 @@
 /*---------------------------------------------------------------*/
-/*----------------- components/navigation.scss ------------------*/
+/*---------------------- navigation.scss ------------------------*/
 /*---------------------------------------------------------------*/
 @use "navigation-variables";
-
 nav {
-  
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--navigation-title-font-family);
+    font-size: var(--navigation-title-font-size);
+    font-weight: var(--navigation-title-font-weight);
+    line-height: var(--navigation-title-line-height);
+    color: var(--navigation-title-text-color);
+  }
+
+  ul {
+    margin: var(--navigation-list-margin);
+    padding: var(--navigation-list-padding);
+    gap: var(--navigation-list-gap);
+    line-height: var(--navigation-list-line-height);
+    font-size: var(--navigation-list-font-size);
+    font-weight: var(--navigation-list-font-weight);
+    color: var(--navigation-list-text-color);
+    background-color: var(--navigation-list-background-color); 
+
+    li {
+        padding: var(--navigation-list-item-padding);
+        background-color: var(--navigation-list-item-background-color);
+        color:  var(--navigation-list-item-text-color);
+        border-width: var(--navigation-list-item-border-width);
+        border-style: var(--navigation-list-item-border-style);
+        border-color: var(--navigation-list-item-border-color);
+        list-style: var(--navigation-list-item-list-style);
+
+        &:before {
+            content: var(--navigation-list-item-icon-content);
+            font-family: var(--navigation-list-item-icon-font-family, inherit);
+            line-height: var(--navigation-list-item-icon-line-height);
+            font-size: var(--navigation-list-item-icon-font-size, inherit);
+            vertical-align: middle;
+            padding: var(--navigation-list-item-icon-padding);
+        }
+
+        a,
+        a:visited {
+            color: var(--navigation-link-text-color);
+            text-decoration: var(--navigation-link-text-decoration);
+
+            &:before {
+                color: var(--navigation-list-item-icon-before-text-color);
+            }
+
+            &:active {
+                color: var(--navigation-link-active-text-color);
+
+                &:before {
+                    color: var(--navigation-link-active-before-text-color);
+                }
+            }
+
+            &:hover {
+                color: var(--navigation-link-hover-text-color);
+
+                &:before {
+                    color: var(--navigation-link-hover-before-text-color);
+                }
+            }
+
+            &:visited {
+                color: var(--navigation-link-visited-text-color);
+
+                &:before {
+                    color: var(--navigation-link-visited-before-text-color);
+                }
+
+                &:hover {
+                color: var(--navigation-link-visited-hover-text-color);
+
+                    &:before {
+                        color: var(--navigation-link-visited-hover-before-text-color);
+                    }
+                }
+            }
+        }
+    }
+  }
 }
