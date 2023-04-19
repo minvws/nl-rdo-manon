@@ -393,7 +393,8 @@
   }
   function createMenuButton(ul, openLabel, closeLabel) {
     var button = document.createElement("button");
-    button.className = "menu-toggle";
+
+    button.className = "menu_toggle";
     button.setAttribute("aria-controls", ul.id);
     button.setAttribute("aria-expanded", "false");
     var label = document.createElement("span");
