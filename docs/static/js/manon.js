@@ -473,7 +473,6 @@
           languageSelectorElement.setAttribute("aria-expanded", expanded ? "false" : "true");
           e.preventDefault();
           break;
-          break;
         case "Escape":
           languageSelectorElement.setAttribute("aria-expanded", "false");
           break;

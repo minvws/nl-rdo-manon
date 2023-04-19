@@ -52,7 +52,6 @@ function onKeyPress(e) {
 				);
 				e.preventDefault();
 				break;
-				break;
 			case "Escape":
 				languageSelectorElement.setAttribute("aria-expanded", "false");
 				break;
@@ -107,7 +106,6 @@ function onKeyPress(e) {
           .getElementsByTagName("a")[0]
           .focus();
         e.preventDefault();
-
 				break;
 		}
 	}
