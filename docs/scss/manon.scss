@@ -73,6 +73,8 @@
 @use "@minvws/manon/layout-column-3";
 @use "@minvws/manon/layout-column-4";
 @use "@minvws/manon/layout-centered";
+@use "@minvws/manon/layout-form";
+
 
 /* Button */
 @use "@minvws/manon/button-base";
@@ -123,6 +125,7 @@
 @use "@minvws/manon/navigation-collapsible-menu";
 @use "@minvws/manon/accordion";
 @use "@minvws/manon/filter";
+@use "@minvws/manon/card";
 
 @use "@minvws/manon/list-base";
 @use "@minvws/manon/skip-to-content";
