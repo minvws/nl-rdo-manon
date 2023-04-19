@@ -4,19 +4,17 @@
 @use "navigation-tabs-variables";
 
 nav.tabs {
-  /*flex-wrap: nowrap;*/
-
-  /*> div {
-		display: flex;
-		padding: 0;
-	}*/
-
   ul,
   ol {
     margin-top: 0;
     margin-bottom: 0;
 
     li {
+
+      &:before {
+        display: none; /* Preventing default nav before to show up */
+      }
+      
       a,
       a:visited {
         display: flex;

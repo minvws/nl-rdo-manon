@@ -107,6 +107,10 @@ body > header,
         color: var(--header-navigation-list-item-text-color);
         list-style: none;
 
+        &:before {
+          display: none; /* Preventing default nav before to show up */
+        }
+
         &[aria-current="page"] {
         > a {
             @extend %active-link;
