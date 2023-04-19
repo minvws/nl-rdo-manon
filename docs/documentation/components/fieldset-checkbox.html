@@ -2,7 +2,7 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <title>Selectievak - checkbox</title>
+    <title>Fieldset Selectievak - checkbox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../../static/css/main.css" rel="stylesheet" />
     <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
@@ -69,66 +69,84 @@
             <h3>Visueel voorbeeld:</h3>
             <h4>Basis</h4>
             <form action="" method="post">
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox">
-                <label for="checkbox-example-base">Lorem ipsum dolor set amet</label>
-              </div>
+                <fieldset>
+                    <legend>Examples</legend>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox">
+                            <label for="checkbox-example-base">Lorem ipsum dolor set amet</label>
+                        </div>
+                </fieldset>
             </form>
 
             <h3>HTML-voorbeeld:</h3>
             <pre>
               <code>
 &lt;form action="" method="post">
-  &lt;div class="checkbox">
-    &lt;input type="checkbox" id="checkbox-example-base" name="standaard-checkbox">
-    &lt;label for="checkbox-example-base">Lorem ipsum dolor set amet&lt;/label>
-  &lt;/div>
+    &lt;fieldset>
+        &lt;legend>Examples&lt;/legend>
+            &lt;div class="checkbox">
+                &lt;input type="checkbox" id="checkbox-example-base" name="standaard-checkbox">
+                &lt;label for="checkbox-example-base">Lorem ipsum dolor set amet&lt;/label>
+            &lt;/div>
+    &lt;/fieldset>
 &lt;/form>
               </code>
             </pre>
 
             <h4>Verplicht</h4>
             <form action="" method="post">
-              <div class="checkbox required">
-                <span class="nota-bene">Dit veld is verplicht</span>
-                <div>
-                  <input type="checkbox" id="checkbox-example-required-1" name="voorwaarden" required>
-                  <label for="checkbox-example-required-1">verplicht selectievak</label>
-                </div>
-              </div>
+                <fieldset>
+                    <legend>Examples</legend>
+                    <div class="checkbox required">
+                        <span class="nota-bene">Dit veld is verplicht</span>
+                        <div>
+                        <input type="checkbox" id="checkbox-example-required-1" name="voorwaarden" required>
+                        <label for="checkbox-example-required-1">verplicht selectievak</label>
+                        </div>
+                    </div>
+                </fieldset>
             </form>
 
             <h3>HTML-voorbeeld:</h3>
             <pre>
               <code>
 &lt;form action="" method="post">
-  &lt;div class="checkbox required">
-    &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
-    &lt;div>
-      &lt;input type="checkbox" id="checkbox-example-required-1" name="voorwaarden" required>
-      &lt;label for="checkbox-example-required-1">verplicht selectievak&lt;/label>
-    &lt;/div>
-  &lt;/div>
+    &lt;fieldset>
+        &lt;legend>Examples&lt;/legend>
+        &lt;div class="checkbox required">
+            &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+            &lt;div>
+            &lt;input type="checkbox" id="checkbox-example-required-1" name="voorwaarden" required>
+            &lt;label for="checkbox-example-required-1">verplicht selectievak&lt;/label>
+            &lt;/div>
+        &lt;/div>
+    &lt;/fieldset>
 &lt;/form>
               </code>
             </pre>
 
             <h4>Uitgeschakeld</h4>
             <form action="" method="post">
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-disabled" name="disabled-checkbox" disabled>
-                <label for="checkbox-example-disabled">Lorem ipsum dolor set amet</label>
-              </div>
+                <fieldset>
+                    <legend>Examples</legend>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox-example-disabled" name="disabled-checkbox" disabled>
+                        <label for="checkbox-example-disabled">Lorem ipsum dolor set amet</label>
+                    </div>
+                </fieldset>
             </form>
 
             <h3>HTML-voorbeeld:</h3>
             <pre>
               <code>
 &lt;form action="" method="post">
-  &lt;div class="checkbox">
-    &lt;input type="checkbox" id="checkbox-example-disabled" name="disabled-checkbox" disabled>
-    &lt;label for="checkbox-example-disabled">Lorem ipsum dolor set amet&lt;/label>
-  &lt;/div>
+    &lt;fieldset>
+        &lt;legend>Examples&lt;/legend>
+        &lt;div class="checkbox">
+            &lt;input type="checkbox" id="checkbox-example-disabled" name="disabled-checkbox" disabled>
+            &lt;label for="checkbox-example-disabled">Lorem ipsum dolor set amet&lt;/label>
+        &lt;/div>
+    &lt;/fieldset>
 &lt;/form>
               </code>
             </pre>
@@ -258,13 +276,13 @@
               Voor meer informatie over importeren en instellen van componenten. Zie:
               <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
             </p>
-
+           
             <h3>Importeer component via NPM</h3>
 
             <h4>CSS-voorbeeld:</h4>
             <pre>
               <code>
-@use "@minvws/checkbox";
+@use "@minvws/fieldset-checkbox";
               </code>
             </pre>
           </section>
@@ -285,51 +303,44 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>--checkbox-gap</td>
-                    <td><a href="../variables.html#gap">gap</a></td>
-                    <td>0.75rem</td>
+                    <td>--fieldset-checkbox-input-margin-top</td>
+                    <td><a href="../variables.html#margin-top">margin-top</a></td>
+                    <td>0.25rem</td>
                     <td>-</td>
                     <td rowspan="7" scope="rowgroup">checkbox</td>
                   </tr>
-
+                  
                   <tr>
-                    <td>--checkbox-align-items</td>
-                    <td><a href="../variables.html#align-items">align-items</a></td>
-                    <td>flex-start</td>
-                    <td>-</td>
-                  </tr>
-
-                  <tr>
-                    <td>--checkbox-width</td>
+                    <td>--fieldset-checkbox-width</td>
                     <td><a href="../variables.html#width">width</a></td>
                     <td>1.25rem</td>
                     <td>-</td>
                   </tr>
                   
                   <tr>
-                    <td>--checkbox-height</td>
+                    <td>--fieldset-checkbox-height</td>
                     <td><a href="../variables.html#height">height</a></td>
                     <td>1.25rem</td>
                     <td>-</td>
                   </tr> 
                   
                   <tr>
-                    <td>--checkbox-accent-color</td>
+                    <td>--fieldset-checkbox-accent-color</td>
                     <td><a href="../variables.html#accent-color">accent-color</a></td>
                     <td>var(--branding-color-1, initial)</td>
                     <td>-</td>
                   </tr>
                   
                   <tr>
-                    <td>--checkbox-label-width</td>
+                    <td>--fieldset-checkbox-label-width</td>
                     <td><a href="../variables.html#width">width</a></td>
                     <td>auto</td>
                     <td>-</td>
                   </tr>
                   
                   <tr>
-                    <td>--checkbox-required-gap</td>
-                    <td><a href="../variables.html#gap">gap</a></td>
+                    <td>--fieldset-checkbox-required-margin-bottom</td>
+                    <td><a href="../variables.html#margin-bottom">margin-bottom</a></td>
                     <td>var(--application-base-gap-small)</td>
                     <td>-</td>
                   </tr>
@@ -342,20 +353,19 @@
             <pre>
               <code>
 :root {
-  /* Checkbox */
-  --checkbox-gap: ;
-  --checkbox-align-items: ;
+    /* Checkbox */
+    --fieldset-checkbox-input-margin-top: ;
 
-  /* Box */
-  --checkbox-width: ;
-  --checkbox-height: ;
-  --checkbox-accent-color: ;
+    /* Box */
+    --fieldset-checkbox-width: ;
+    --fieldset-checkbox-height: ;
+    --fieldset-checkbox-accent-color: ;
 
-  /* Label */
-  --checkbox-label-width: ;
+    /* Label */
+    --fieldset-checkbox-label-width: ;
 
-  /* Required */
-  --checkbox-required-gap: ;
+    /* Required */
+    --fieldset-checkbox-required-margin-bottom: ;
 }
               </code>
             </pre>
