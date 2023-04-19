@@ -1,0 +1,19 @@
+/*------------------------------------------------------------------------*/
+/*-------------------------- radio-variables.scss ------------------------*/
+/*------------------------------------------------------------------------*/
+:root {
+  /* Radio button */
+  --radio-gap: 0.75rem;
+  --radio-align-items: center;
+
+  /* Box */
+  --radio-width: 1.25rem;
+  --radio-height: 1.25rem;
+  --radio-accent-color: var(--branding-color-1, initial);
+
+  /* Label */
+  --radio-label-width: auto;
+
+  /* Required */
+  --radio-required-gap: var(--application-base-gap-small);
+}

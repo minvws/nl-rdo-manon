@@ -1,0 +1,51 @@
+/*---------------------------------------------------------------*/
+/*-------------------------- radio.scss -------------------------*/
+/*---------------------------------------------------------------*/
+@use "radio-variables";
+
+form {
+  .radio {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: var(--radio-gap);
+    align-items: var(--radio-align-items);
+
+    input[type="radio"] {
+      padding: 0;
+      cursor: pointer;
+      width: var(--radio-width);
+      min-width: var(--radio-width);
+      height: var(--radio-height);
+      accent-color: var(--radio-accent-color);
+  
+      & + label {
+        width: var(--radio-label-width);
+        cursor: pointer;
+      }
+  
+      &:disabled {
+        cursor: not-allowed;
+
+        & + label {
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    &.required {
+      flex-direction: column;
+      gap: var(--radio-required-gap);
+      align-items: flex-start;
+      justify-content: var(--radio-align-items);
+
+      > div {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        gap: var(--radio-gap);
+        align-items: var(--radio-align-items);
+      }
+    }
+  }
+}
