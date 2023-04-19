@@ -12,7 +12,7 @@ export function initNaviation() {
   var headers = document.querySelectorAll("header:not(.breadcrumbs)");
   for (var i = 0; i < headers.length; i++) {
     var nav = headers[i].querySelector("nav");
-    if (!(nav instanceof HTMLElement) || nav.querySelector([".menu-toggle"])) {
+    if (!(nav instanceof HTMLElement) || nav.querySelector(".menu-toggle")) {
       continue;
     }
     var isCondensed = headers[i].className.indexOf("condensed") !== -1;
