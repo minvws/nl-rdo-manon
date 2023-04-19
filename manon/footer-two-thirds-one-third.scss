@@ -1,8 +1,8 @@
 /*---------------------------------------------------------------*/
 /*------------- footer-two-thirds-one-third.scss ----------------*/
 /*---------------------------------------------------------------*/
-@use "footer-two-thirds-one-third-variables";
 @use "layout-two-thirds-one-third";
+@use "footer-two-thirds-one-third-variables";
 
 $breakpoint: 42rem !default;
 
@@ -35,18 +35,26 @@ body > footer,
 
         > * {
             width: 100%;
-            border: 1px dashed red;
+            box-sizing: border-box;
+        }
+
+        > span, 
+        > p,
+        > a,
+        > span,
+        > li {
+            max-width: 100%;
         }
 
         @media (min-width: $breakpoint) {
             gap: var(----footer-two-thirds-one-third-gap);
 
             > * {
-            width: 33.33%;
+                width: 33.33%;
 
-            &:nth-child(odd) {
-                width: calc(66.66% - var(--footer-two-thirds-one-third-gap));
-            }
+                &:nth-child(odd) {
+                    width: calc(66.66% - var(--footer-two-thirds-one-third-gap));
+                }
             }
         }
     }
