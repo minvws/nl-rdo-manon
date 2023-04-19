@@ -1,0 +1,29 @@
+/*---------------------------------------------------------------*/
+/*--------- footer-two-thirds-one-third-variables.scss ----------*/
+/*---------------------------------------------------------------*/
+:root {
+  --footer-two-thirds-one-third-flex-direction: row;
+  --footer-two-thirds-one-third-gap: var(--content-gap);
+  --footer-two-thirds-one-third-justify-content: center;
+  --footer-two-thirds-one-third-align-items: flex-start;
+  --footer-two-thirds-one-third-flex-wrap: wrap;
+  --footer-two-thirds-one-third-min-height: 10rem;
+  --footer-two-thirds-one-third-background-color: var(--branding-color-1-background-color);
+  --footer-two-thirds-one-third-text-color: var(--branding-color-1-text-color);
+  --footer-two-thirds-one-third-padding-top: var(--content-padding-top);
+  --footer-two-thirds-one-third-padding-right: 5%;
+  --footer-two-thirds-one-third-padding-bottom: var(--content-padding-bottom);
+  --footer-two-thirds-one-third-padding-left: 5%;
+  --footer-two-thirds-one-third-max-width: 100%;
+
+  /* Links */
+  --footer-two-thirds-one-third-link-text-color: var(--footer-two-thirds-one-third-text-color);
+  --footer-two-thirds-one-third-link-text-decoration: none;
+
+  /* Links hover */
+  --footer-two-thirds-one-third-link-hover-text-color: var(--footer-two-thirds-one-third-link-text-color);
+  --footer-two-thirds-one-third-link-hover-text-decoration: underline;
+
+  /* After breakpoint */
+  --footer-two-thirds-one-third-breakpoint-1-gap: var(--footer-two-thirds-one-third-gap);
+}

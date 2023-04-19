@@ -2,7 +2,7 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <title>Footer</title>
+    <title>Footer tweederde eenderde</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../../static/css/main.css" rel="stylesheet" />
     <link href="../../static/img/favicon.ico" rel="shortcut icon" />
@@ -26,7 +26,8 @@
         <div>
           <ul>
             <li><a href="../components.html">Componenten</a></li>
-            <li><a href="./footer.html" aria-current="page">Footer</a></li>
+            <li><a href="./footer.html">Footer</a></li>
+            <li><a href="./footer-two-thirds-one-third.html" aria-current="page">Footer tweederde eenderde</a></li>
           </ul>
         </div>
       </nav>
@@ -42,14 +43,13 @@
           <li><a href="#introduction">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
           <li><a href="#requirements">Bijbehorende bestanden</a></li>
-          <li><a href="#related">Gerelateerde pagina's</a></li>
         </ul>
       </nav>
       <article>
         <div>
           <section id="introduction">
-            <h1>Footer</h1>
-            <p>De footer wordt vaak gebruikt als extra navigatiepunt en om aan te geven aan de gebruiker dat het einde van de pagina bereikt is.</p>
+            <h1>Footer tweederde eenderde</h1>
+            <p>Footer-element met een tweederde eenderde verdeling.</p>
 
             <h2>Benodigde stappen:</h2>
             <ol>
@@ -58,25 +58,17 @@
                 en optionele bestanden zie:
                 <a href="#requirements">Bijbehorende bestanden</a>.
               </li>
+              <li>Plaats de content in tweetallen binnen een <code>div</code> om gebruik te maken van de tweederde/eenderde uitlijning.</li>
             </ol>
           </section>
 
           <section id="examples">
-            <h1>Voorbeelden:</h1>
+            <h2>Voorbeelden:</h2>
 
-            <h2>Visueel voorbeeld:</h2>
-            <footer>
-              <nav aria-labelledby="footer-nav-1-heading">
-                <h1 id="footer-nav-1-heading">Lorem ipsum</h1>
-                <ul>
-                  <li><a href="./footer-base.html">Lorem</a></li>
-                  <li><a href="./footer-base.html">Ipsum</a></li>
-                  <li><a href="./footer-base.html">Dolor set amet</a></li>
-                </ul>
-              </nav>
-            </footer>
+            <h3>Visueel voorbeeld:</h3>
+            <p>Zie footer op deze pagina. <a href="#footer-two-thirds-one-third"></a></p>
 
-            <h2>Html-voorbeeld:</h2>
+            <h3>Html-voorbeeld:</h3>
             <pre>
               <code>
 &lt;footer>
@@ -92,7 +84,7 @@
               </code>
             </pre>
 
-            <h2>Structuur-voorbeeld:</h2>
+            <h3>Structuur-voorbeeld:</h3>
             <pre>
               <code>
 &lt;footer>
@@ -103,23 +95,23 @@
           </section>
 
           <section id="requirements">
-            <h1>Bijbehorende bestanden</h1>
+            <h2>Bijbehorende bestanden</h2>
             <p>Voeg de (s)css-bestanden toe aan het project of importeer de bestanden.</p>
             <p>
               Voor meer informatie over importeren en instellen van componenten. Zie:
               <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
             </p>
-            <h2>Importeer component via NPM</h2>
-            <h3>CSS-voorbeeld:</h3>
+            <h3>Importeer component via NPM</h3>
+            <h4>CSS-voorbeeld:</h4>
             <pre>
               <code>
-@use "@minvws/manon/footer";
+@use "@minvws/manon/footer-two-thirds-one-third";
               </code>
             </pre>
           </section>
 
           <section id="variables">
-            <h1>Instelbare variabelen</h1>
+            <h2>Instelbare variabelen</h2>
             <div class="horizontal-scroll">
               <table class="nowrap">
                 <caption>Instelbare css-variabelen:</caption>
@@ -134,7 +126,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>--footer-flex-direction</td>
+                    <td>--footer-two-thirds-one-third-flex-direction</td>
                     <td><a href="../variables.html#flex-direction">flex-direction</a></td>
                     <td>column</td>
                     <td>-</td>
@@ -142,31 +134,31 @@
                   </tr>
 
                   <tr>
-                    <td>--footer-gap</td>
+                    <td>--footer-two-thirds-one-third-gap</td>
                     <td><a href="../variables.html#gap">gap</a></td>
-                    <td>var(--application-base-gap-medium)</td>
+                    <td>0</td>
                     <td>-</td>
                     <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>--footer-justify-content</td>
+                    <td>--footer-two-thirds-one-third-justify-content</td>
                     <td><a href="../variables.html#justify-content">justify-content</a></td>
+                    <td>flex-end</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--footer-two-thirds-one-third-align-items</td>
+                    <td><a href="../variables.html#align-items">align-items</a></td>
                     <td>center</td>
                     <td>-</td>
                     <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>--footer-align-items</td>
-                    <td><a href="../variables.html#align-items">align-items</a></td>
-                    <td>flex-start</td>
-                    <td>-</td>
-                    <td>-</td>
-                  </tr>
-
-                  <tr>
-                    <td>--footer-flex-wrap</td>
+                    <td>--footer-two-thirds-one-third-flex-wrap</td>
                     <td><a href="../variables.html#flex-wrap">flex-wrap</a></td>
                     <td>wrap</td>
                     <td>-</td>
@@ -174,7 +166,7 @@
                   </tr>
 
                   <tr>
-                    <td>--footer-min-height</td>
+                    <td>--footer-two-thirds-one-third-min-height</td>
                     <td><a href="../variables.html#min-height">min-height</a></td>
                     <td>10rem</td>
                     <td>-</td>
@@ -182,7 +174,7 @@
                   </tr>
 
                   <tr>
-                    <td>--footer-background-color</td>
+                    <td>--footer-two-thirds-one-third-background-color</td>
                     <td><a href="../variables.html#background-color">background-color</a></td>
                     <td>var(--application-base-tint-1-background-color)</td>
                     <td>-</td>
@@ -190,7 +182,7 @@
                   </tr>
 
                   <tr>
-                    <td>--footer-text-color</td>
+                    <td>--footer-two-thirds-one-third-text-color</td>
                     <td><a href="../variables.html#text-color">text-color</a></td>
                     <td>var(--application-base-tint-1-text-color)</td>
                     <td>-</td>
@@ -198,39 +190,39 @@
                   </tr>
 
                   <tr>
-                    <td>--footer-padding-top</td>
+                    <td>--footer-two-thirds-one-third-padding-top</td>
                     <td><a href="../variables.html#padding-top">padding-top</a></td>
-                    <td>var(--content-padding-top)</td>
+                    <td>0</td>
                     <td>-</td>
                     <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>--footer-padding-right</td>
+                    <td>--footer-two-thirds-one-third-padding-right</td>
                     <td><a href="../variables.html#padding-right">padding-right</a></td>
-                    <td>5%</td>
+                    <td>0</td>
                     <td>-</td>
                     <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>--footer-padding-bottom</td>
+                    <td>--footer-two-thirds-one-third-padding-bottom</td>
                     <td><a href="../variables.html#padding-bottom">padding-bottom</a></td>
-                    <td>var(--content-padding-bottom)</td>
+                    <td>0</td>
                     <td>-</td>
                     <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>--footer-padding-left</td>
+                    <td>--footer-two-thirds-one-third-padding-left</td>
                     <td><a href="../variables.html#padding-left">padding-left</a></td>
-                    <td>5%</td>
+                    <td>0</td>
                     <td>-</td>
                     <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>--footer-max-width</td>
+                    <td>--footer-two-thirds-one-third-max-width</td>
                     <td><a href="../variables.html#max-width">max-width</a></td>
                     <td>100%</td>
                     <td>-</td>
@@ -238,7 +230,7 @@
                   </tr>
 
                   <tr>
-                    <td>--footer-link-text-color</td>
+                    <td>--footer-two-thirds-one-third-link-text-color</td>
                     <td><a href="../variables.html#text-color">text-color</a></td>
                     <td>var(--footer-text-color)</td>
                     <td>-</td>
@@ -246,7 +238,7 @@
                   </tr>
 
                   <tr>
-                    <td>--footer-link-text-decoration</td>
+                    <td>--footer-two-thirds-one-third-link-text-decoration</td>
                     <td><a href="../variables.html#text-decoration">text-decoration</a></td>
                     <td>none</td>
                     <td>-</td>
@@ -254,7 +246,7 @@
                   </tr>
 
                   <tr>
-                    <td>--footer-link-hover-text-color</td>
+                    <td>--footer-two-thirds-one-third-link-hover-text-color</td>
                     <td><a href="../variables.html#text-color">text-color</a></td>
                     <td>var(--footer-link-text-color)</td>
                     <td>-</td>
@@ -262,7 +254,7 @@
                   </tr>
 
                   <tr>
-                    <td>--footer-link-hover-text-decoration</td>
+                    <td>--footer-two-thirds-one-third-link-hover-text-decoration</td>
                     <td><a href="../variables.html#text-decoration">text-decoration</a></td>
                     <td>underline</td>
                     <td>-</td>
@@ -277,32 +269,51 @@
               <pre>
                 <code>
 :root {
-  --footer-min-height: ;
-  --footer-justify-content: ;
-  --footer-align-items: ;
-  --footer-flex-wrap: ;
-  --footer-background-color: ;
-  --footer-text-color: ;
-  --footer-padding: ;
-
-  /* Links */
-  --footer-link-text-color: ;
-  --footer-link-text-decoration: ;
-
-  /* Links hover */
-  --footer-link-hover-text-color: ;
-  --footer-link-hover-text-decoration: ;
+    --footer-two-thirds-one-third-flex-direction: ;
+    --footer-two-thirds-one-third-gap: ;
+    --footer-two-thirds-one-third-justify-content: ;
+    --footer-two-thirds-one-third-align-items: ;
+    --footer-two-thirds-one-third-flex-wrap: ;
+    --footer-two-thirds-one-third-min-height: ;
+    --footer-two-thirds-one-third-background-color: ;
+    --footer-two-thirds-one-third-text-color: ;
+    --footer-two-thirds-one-third-padding-top: ;
+    --footer-two-thirds-one-third-padding-right: ;
+    --footer-two-thirds-one-third-padding-bottom: ;
+    --footer-two-thirds-one-third-padding-left: ;
+    --footer-two-thirds-one-third-max-width: ;
+  
+    /* Links */
+    --footer-two-thirds-one-third-link-text-color: ;
+    --footer-two-thirds-one-third-link-text-decoration: ;
+  
+    /* Links hover */
+    --footer-two-thirds-one-third-link-hover-text-color: ;
+    --footer-two-thirds-one-third-link-hover-text-decoration: ;
+  
+    /* After breakpoint */
+    --footer-two-thirds-one-third-breakpoint-1-gap: ;
 }
                 </code>
               </pre>
           </section>
-
-          <section id="related">
-            <h2>Gerelateerde pagina's</h2>
-            <a href="./footer-two-thirds-one-third.html">Footer tweederde eenderde</a>
-          </section>
         </div>
       </article>
     </main>
+
+    <footer>
+        <div>
+            <span>Lorem ipsum dolor set</span>
+            <nav aria-labelledby="footer-nav-1-heading">
+                <h1 id="footer-nav-1-heading">Lorem ipsum</h1>
+                <ul>
+                    <li><a href="./footer-base.html">Lorem</a></li>
+                    <li><a href="./footer-base.html">Ipsum</a></li>
+                    <li><a href="./footer-base.html">Dolor set amet</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>Lorem ipsum volle breedte</p>
+    </footer>
   </body>
 </html>

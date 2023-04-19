@@ -1,0 +1,88 @@
+/*---------------------------------------------------------------*/
+/*------------- footer-two-thirds-one-third.scss ----------------*/
+/*---------------------------------------------------------------*/
+@use "layout-two-thirds-one-third";
+@use "footer-two-thirds-one-third-variables";
+
+$breakpoint: 42rem !default;
+
+body > footer,
+%footer-two-thirds-one-third-style {
+    display: flex;
+    flex-direction: var(--footer-two-thirds-one-third-flex-direction);
+    gap: var(--footer-two-thirds-one-third-gap);
+    justify-content: var(--footer-two-thirds-one-third-justify-content);
+    align-items: var(--footer-two-thirds-one-third-align-items);
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    flex-wrap: var(--footer-two-thirds-one-third-flex-wrap);
+    min-height: var(--footer-two-thirds-one-third-min-height);
+    background-color: var(--footer-two-thirds-one-third-background-color);
+    color: var(--footer-two-thirds-one-third-text-color);
+    padding-top: var(--footer-two-thirds-one-third-padding-top);
+    padding-right: var(--footer-two-thirds-one-third-padding-right);
+    padding-bottom: var(--footer-two-thirds-one-third-padding-bottom);
+    padding-left: var(--footer-two-thirds-one-third-padding-left);
+    max-width: var(--footer-two-thirds-one-third-max-width);
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: var(--layout-two-thirds-one-third-gap);
+        width: 100%;
+
+        > * {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        > span, 
+        > p,
+        > a,
+        > span,
+        > li {
+            max-width: 100%;
+        }
+
+        @media (min-width: $breakpoint) {
+            gap: var(----footer-two-thirds-one-third-gap);
+
+            > * {
+                width: 33.33%;
+
+                &:nth-child(odd) {
+                    width: calc(66.66% - var(--footer-two-thirds-one-third-gap));
+                }
+            }
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    li {
+        color: var(--footer-two-thirds-one-third-text-color);
+    }
+
+    a,
+    a:visited {
+        color: var(--footer-two-thirds-one-third-link-text-color, inherit);
+        text-decoration: var(--footer-two-thirds-one-third-link-text-decoration);
+
+        &:before,
+        &:hover {
+            color: var(--footer-two-thirds-one-third-link-hover-text-color);
+        }
+
+        &:hover {
+            text-decoration: var(--footer-two-thirds-one-third-link-hover-text-decoration);
+        }
+    }
+}
