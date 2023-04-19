@@ -61,7 +61,9 @@
 
 /* Fundamentals */
 @use "@minvws/manon/checkbox";
+@use "@minvws/manon/fieldset-checkbox";
 @use "@minvws/manon/radio";
+@use "@minvws/manon/fieldset-radio";
 
 /* Layout */
 /*@use "@minvws/manon/layout-base-variables";*/
@@ -167,9 +169,8 @@
 @use "@minvws/manon/form-input-color";
 @use "@minvws/manon/form-textarea";
 @use "@minvws/manon/form-checkbox";
-@use "@minvws/manon/fieldset-checkbox";
 @use "@minvws/manon/form-select";
-@use "@minvws/manon/form-radio";
+/*@use "@minvws/manon/form-radio";*/
 @use "@minvws/manon/form-accent-color";
 @use "@minvws/manon/form-horizontal-view";
 @use "@minvws/manon/form-button";
