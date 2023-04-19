@@ -34,7 +34,8 @@
   /* Table head cell (th) binnen tbody */
   --table-body-head-cell-padding: var(--table-cells-padding);
   --table-body-head-cell-font-weight: var(--table-head-cell-font-weight);
-  --table-body-head-cell-background-color: var(--application-tint-1-background-color);
+  --table-body-head-cell-background-color: var(--table-head-background-color);
+  --table-body-head-cell-text-color: var(--table-head-text-color);
   --table-body-head-cell-font-size: var(--table-font-size);
   --table-body-head-cell-border-width: 1px;
   --table-body-head-cell-border-style: solid;
@@ -76,8 +77,8 @@
   --table-foot-border-color: var(--table-border-color);
 
   /* Table footer head */
-  --table-foot-header-padding: var(--table-foot-padding);
   --table-foot-header-background-color: transparent;
+  --table-foot-header-padding: var(--table-foot-padding);
   --table-foot-header-text-color: var(--table-text-color);
   --table-foot-header-font-weight: var(--table-font-weight);
   --table-foot-header-font-size: var(--table-font-size);
@@ -86,8 +87,8 @@
   --table-foot-header-border-color: var(--table-border-color);
 
   /* Table footer cell styling */
-  --table-foot-cell-padding: var(--table-foot-padding);
   --table-foot-cell-background-color: #f0f0f0;
+  --table-foot-cell-padding: var(--table-foot-padding);
   --table-foot-cell-text-color: var(--table-text-color);
   --table-foot-cell-font-weight: var(--table-font-weight);
   --table-foot-cell-font-size: var(--table-font-size);
