@@ -1,6 +1,3 @@
-<script defer src="../static/js/language-selector.js"></script>
-
-
 <!DOCTYPE html>
 <html lang="nl">
   <head>
@@ -8,28 +5,26 @@
     <title>Taalselectie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../../static/css/main.css" rel="stylesheet" />
-    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
     <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
+    <script defer src="../static/js/language-selector.js"></script>
   </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-    <body id="index" class="documentation">
-      <header>
-        <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
-
-        <nav aria-label="Hoofdnavigatie">
-          <div>
-            <ul>
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
             <li><a href="../../index.html">Home</a></li>
             <li><a href="../components.html">Componenten</a></li>
             <li><a href="../documentation.html">Documentatie</a></li>
           </ul>
         </div>
-
-        <div class="language">
+        <div class="language-selector">
           <p>Kies een taal:</p>
           <p class="visually-hidden" id="language-selector-description">Select your language</p>
-          <div aria-describedby="language-selector-description" class="language-selector-options" aria-expanded="false">
+          <div class="language-selector-options" aria-describedby="language-selector-description" aria-expanded="false">
             <button aria-haspopup="listbox" aria-current="true">
               Papiamentu
             </button>
@@ -73,7 +68,7 @@
         aria-label="Document-navigatie"
       >
         <ul>
-          <li><a href="#introduction">Introductie</a></li>
+          <li><a href="./language-selector.html">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
           <li><a href="#requirements">Bijbehorende bestanden</a></li>
           <li><a href="#related">Gerelateerde pagina's</a></li>
@@ -90,276 +85,87 @@
             <h2>Benodigde stappen:</h2>
             <ol>
               <li>
-                Voeg de benodigde bestanden toe aan het project.
-                <ul>
-                  <li>
-                    Voor een overzicht van de benodigde en optionele bestanden zie:
-                    <a href="#requirements">Bijbehorende bestanden</a>.
-                  </li>
-                  <li>
-                    Voeg het bijbehorende Javascript-bestand toe aan het project. Voor meer
-                    informatie zie:
-                    <a href="../add-js.html">JavaScript toevoegen</a>.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Plaats een korte zichtbare tekst binnen een
-                <code>&lt;button></code>. Bijvoorbeeld een omschrijvende titel of een vraag. Deze
-                tekst is zichtbaar als de accordeon gesloten is. Zorg ervoor dat de gebruiker op
-                basis van deze tekst kan bepalen of de onderliggende informatie waardevol is.
-              </li>
-              <li>
-                Geef de <code>&lt;button></code> een unieke <code>id</code> en verwijs vanaf de
-                <code>&lt;div></code> via een <code>aria-labelledby</code> naar de<code>id</code>
-                van de <code>&lt;button></code> ten behoeve van toegankelijkheid.
-              </li>
-              <li>Groepeer de verborgen content binnen een <code>&lt;div></code>.</li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+              <li>Voeg de benodigde HTML toe. Voor meer informatie zie: <a href="examples">Voorbeelden</a>.</li>
             </ol>
-
-            <h2>Aandachtspunten:</h2>
-            <ul>
-              <li>
-                Standaard is het eerste onderdeel opengeklapt. Dit kan aangepast worden middels het
-                <code>aria-expanded</code>-attribuut van de <code>&lt;button></code>. Zie
-                onderstaande voorbeelden voor
-                <a href="#accordion-default-closed">Standaard dichtgeklapt</a>
-                en <a href="#accordion-default-open">Standaard opengeklapt</a>.
-              </li>
-            </ul>
           </section>
 
           <section id="examples">
-            <h2>Voorbeelden</h2>
+            <h2>Voorbeelden:</h2>
 
-            <h3><code>ul</code></h3>
+            <h3>Paragraaf</h3>
             <h4>Visueel voorbeeld:</h4>
-            <ul class="accordion">
-              <li>
-                <button id="example-accordion-ul-item-1">Voorbeeld-onderwerp 1</button>
-                <div aria-labelledby="example-accordion-ul-item-1">
-                  <h1>Titel van de content binnen het accordeon-element</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit
-                    egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at
-                    elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla
-                    lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit
-                    hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut
-                    sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum
-                    lorem.
-                  </p>
-                  <ul>
-                    <li>Lorem ipsum</li>
-                    <li>Dolor sit amet</li>
-                    <li>Consectetur adepiscing elit.</li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <button id="example-accordion-ul-item-2">Voorbeeld-onderwerp 2</button>
-                <div aria-labelledby="example-accordion-ul-item-2">
-                  <h1>Titel van de content binnen het accordeon-element</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit
-                    egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at
-                    elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla
-                    lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit
-                    hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut
-                    sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum
-                    lorem.
-                  </p>
-                  <ul>
-                    <li>Lorem ipsum</li>
-                    <li>Dolor sit amet</li>
-                    <li>Consectetur adepiscing elit.</li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-
-            <h4>HTML-voorbeeld:</h4>
-            <pre>
-              <code>
-&lt;ul class="accordion">
-  &lt;li>
-    &lt;button id="example-accordion-ul-item-1">Voorbeeld-onderwerp 1&lt;/button>
-    &lt;div aria-labelledby="example-accordion-ul-item-1">
-      &lt;h1>Titel van de content binnen het accordeon-element&lt;/h1>
-      &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.&lt;/p>
-      &lt;ul>
-        &lt;li>Lorem ipsum&lt;/li>
-        &lt;li>Dolor sit amet&lt;/li>
-        &lt;li>Consectetur adepiscing elit.&lt;/li>
-      &lt;/ul>
-    &lt;/div>
-  &lt;/li>
-  &lt;li>
-    &lt;button id="example-accordion-ul-item-2">Voorbeeld-onderwerp 2&lt;/button>
-    &lt;div aria-labelledby="example-accordion-ul-item-2">
-      &lt;h1>Titel van de content binnen het accordeon-element&lt;/h1>
-      &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.&lt;/p>
-      &lt;ul>
-        &lt;li>Lorem ipsum&lt;/li>
-        &lt;li>Dolor sit amet&lt;/li>
-        &lt;li>Consectetur adepiscing elit.&lt;/li>
-      &lt;/ul>
-    &lt;/div>
-  &lt;/li>
-&lt;/ul>
-              </code>
-            </pre>
-
-            <h3><code>div</code></h3>
-            <h4>Visueel voorbeeld:</h4>
-            <div class="accordion">
-              <div>
-                <button id="example-accordion-div-item-1">Voorbeeld-onderwerp 1</button>
-                <div aria-labelledby="example-accordion-div-item-1">
-                  <h1>Titel van de content binnen het accordeon-element</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit
-                    egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at
-                    elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla
-                    lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit
-                    hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut
-                    sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum
-                    lorem.
-                  </p>
-                  <ul>
-                    <li>Lorem ipsum</li>
-                    <li>Dolor sit amet</li>
-                    <li>Consectetur adepiscing elit.</li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <button id="example-accordion-div-item-2">Voorbeeld-onderwerp 2</button>
-                <div aria-labelledby="example-accordion-div-item-2">
-                  <h1>Titel van de content binnen het accordeon-element</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit
-                    egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at
-                    elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla
-                    lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit
-                    hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut
-                    sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum
-                    lorem.
-                  </p>
-                  <ul>
-                    <li>Lorem ipsum</li>
-                    <li>Dolor sit amet</li>
-                    <li>Consectetur adepiscing elit.</li>
-                  </ul>
-                </div>
+            <div class="language-selector">
+              <p>Kies een taal:</p>
+              <p class="visually-hidden" id="language-selector-description">Select your language</p>
+              <div class="language-selector-options" aria-describedby="language-selector-description" aria-expanded="false">
+                <button aria-haspopup="listbox" aria-current="true">
+                  Papiamentu
+                </button>
+                <ul role="listbox">
+                    <li>
+                      <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands</a>
+                    </li>
+                    <li>
+                      <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
+                    </li>
+                    <li>
+                      <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
+                    </li>
+                    <li aria-current="true">
+                      <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
+                    </li>
+                    <li>
+                      <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento</a>
+                    </li>
+                </ul>
               </div>
             </div>
 
-            <h3>HTML-voorbeeld:</h3>
+
+            <h4>Html-voorbeeld:</h4>
             <pre>
               <code>
-&lt;div class="accordion">
-  &lt;div>
-    &lt;button id="example-accordion-div-item-1">Voorbeeld-onderwerp 1&lt;/button>
-    &lt;div aria-labelledby="example-accordion-div-item-1">
-      &lt;h1>Titel van de content binnen het accordeon-element&lt;/h1>
-      &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.&lt;/p>
-      &lt;ul>
-        &lt;li>Lorem ipsum&lt;/li>
-        &lt;li>Dolor sit amet&lt;/li>
-        &lt;li>Consectetur adepiscing elit.&lt;/li>
-      &lt;/ul>
-    &lt;/div>
-  &lt;/div>
-  &lt;div>
-    &lt;button id="example-accordion-div-item-2">Voorbeeld-onderwerp 2&lt;/button>
-    &lt;div aria-labelledby="example-accordion-div-item-2">
-      &lt;h1>Titel van de content binnen het accordeon-element&lt;/h1>
-      &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.&lt;/p>
-      &lt;ul>
-        &lt;li>Lorem ipsum&lt;/li>
-        &lt;li>Dolor sit amet&lt;/li>
-        &lt;li>Consectetur adepiscing elit.&lt;/li>
-      &lt;/ul>
-    &lt;/div>
+&lt;div class="language-selector">
+  &lt;p>Kies een taal:&lt;/p>
+  &lt;p class="visually-hidden" id="language-selector-description">Select your language&lt;/p>
+  &lt;div class="language-selector-options" aria-describedby="language-selector-description" aria-expanded="false">
+    &lt;button aria-haspopup="listbox" aria-current="true">
+      Papiamentu
+    &lt;/button>
+    &lt;ul role="listbox">
+        &lt;li>
+          &lt;a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands&lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a hreflang="en" href="#" role="option" data-value="English" lang="en">English&lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk&lt;/a>
+        &lt;/li>
+        &lt;li aria-current="true">
+          &lt;a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu&lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento&lt;/a>
+        &lt;/li>
+    &lt;/ul>
   &lt;/div>
 &lt;/div>
               </code>
             </pre>
 
-            <h3><code>section</code></h3>
-            <h4>Visueel voorbeeld:</h4>
-            <section class="accordion">
-              <div>
-                <button id="example-accordion-div-item-1">Voorbeeld-onderwerp 1</button>
-                <div aria-labelledby="example-accordion-div-item-1">
-                  <h1>Titel van de content binnen het accordeon-element</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit
-                    egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at
-                    elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla
-                    lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit
-                    hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut
-                    sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum
-                    lorem.
-                  </p>
-                  <ul>
-                    <li>Lorem ipsum</li>
-                    <li>Dolor sit amet</li>
-                    <li>Consectetur adepiscing elit.</li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <button id="example-accordion-div-item-2">Voorbeeld-onderwerp 2</button>
-                <div aria-labelledby="example-accordion-div-item-2">
-                  <h1>Titel van de content binnen het accordeon-element</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit
-                    egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at
-                    elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla
-                    lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit
-                    hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut
-                    sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum
-                    lorem.
-                  </p>
-                  <ul>
-                    <li>Lorem ipsum</li>
-                    <li>Dolor sit amet</li>
-                    <li>Consectetur adepiscing elit.</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            <h3>HTML-voorbeeld:</h3>
+            <h4>Structuurvoorbeeld:</h4>
             <pre>
               <code>
-&lt;section class="accordion">
-  &lt;div>
-    &lt;button id="example-accordion-div-item-1">Voorbeeld-onderwerp 1&lt;/button>
-    &lt;div aria-labelledby="example-accordion-div-item-1">
-      &lt;h1>Titel van de content binnen het accordeon-element&lt;/h1>
-      &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.&lt;/p>
-      &lt;ul>
-        &lt;li>Lorem ipsum&lt;/li>
-        &lt;li>Dolor sit amet&lt;/li>
-        &lt;li>Consectetur adepiscing elit.&lt;/li>
-      &lt;/ul>
-    &lt;/div>
-  &lt;/div>
-  &lt;div>
-    &lt;button id="example-accordion-div-item-2">Voorbeeld-onderwerp 2&lt;/button>
-    &lt;div aria-labelledby="example-accordion-div-item-2">
-      &lt;h1>Titel van de content binnen het accordeon-element&lt;/h1>
-      &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.&lt;/p>
-      &lt;ul>
-        &lt;li>Lorem ipsum&lt;/li>
-        &lt;li>Dolor sit amet&lt;/li>
-        &lt;li>Consectetur adepiscing elit.&lt;/li>
-      &lt;/ul>
-    &lt;/div>
-  &lt;/div>
-&lt;/section>
+&lt;header>
+  &lt;nav aria-label="Hoofdnavigatie">
+
+    &lt;!-- Navigatie items -->
+    &lt;!-- Taalselectie -->
+
+  &lt;/nav>
+&lt;/header>
               </code>
             </pre>
           </section>
@@ -370,101 +176,339 @@
               Voor meer informatie over importeren en instellen van componenten. Zie:
               <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
             </p>
-            <h3>Benodigd</h3>
-            <ul>
-              <li><code>accordion.scss</code></li>
-              <li><code>accordion.js</code></li>
-            </ul>
 
-            <h3>Optioneel</h3>
-            <ul>
-              <li><code>accordion-variables.scss</code></li>
-            </ul>
+            <h3>Importeer component via NPM</h3>
+
+            <h4>CSS-voorbeeld:</h4>
+            <pre>
+              <code>
+@use "@minvws/manon/language-selector"
+              </code>
+            </pre>
           </section>
 
           <section id="variables">
-            <h2>Instelbare variabelen</h2>
-            <ul>
-              <li>
-                Accordeon list
-                <ul>
-                  <li><a href="../variables.html#gap">gap</a></li>
-                </ul>
-              </li>
-              <li>
-                <code>button</code>
-                <ul>
-                  <li><a href="../variables.html#padding">padding</a></li>
-                  <li>
-                    <a href="../variables.html#justify-content">justify-content</a>
-                  </li>
-                  <li><a href="../variables.html#font-size">font-size</a></li>
-                  <li>
-                    <a href="../variables.html#font-weight">font-weight</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#line-height">line-height</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#background-color">background-color</a>
-                  </li>
-                  <li><a href="../variables.html#text-color">text-color</a></li>
-                </ul>
-              </li>
-              <li>
-                Open en sluit icoon. Keuze uit <code>:before</code> of
-                <code>:after</code>
-                <ul>
-                  <li>
-                    <code>:before</code>
-                    <ul>
-                      <li><a href="../variables.html#icon">icon</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <code>:after</code>
-                    <ul>
-                      <li><a href="../variables.html#icon">icon</a></li>
-                      <li>
-                        <a href="../variables.html#margin-left">margin-left</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Content
-                <ul>
-                  <li><a href="../variables.html#padding">padding</a></li>
-                  <li><a href="../variables.html#gap">gap</a></li>
-                  <li><a href="../variables.html#font-size">font-size</a></li>
-                  <li>
-                    <a href="../variables.html#font-weight">font-weight</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#line-height">line-height</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#border-width">border-width</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#border-style">border-style</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#border-color">border-color</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#background-color">background-color</a>
-                  </li>
-                  <li><a href="../variables.html#text-color">text-color</a></li>
-                </ul>
-              </li>
-            </ul>
+              <h2>Instelbare variabelen</h2>
+              <div class="horizontal-scroll">
+                <table class="nowrap">
+                  <caption>Beschikbare instelbare variabelen:</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Variabele</th>
+                      <th scope="col">CSS-attribuut</th>
+                      <th scope="col">Manon ingestelde waarde</th>
+                      <th scope="col">Breekpunt</th>
+                      <th scope="col">Class</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>--language-selector-list-label-font-size</td>
+                      <td><a href="../variables.html#font-size">font-size</a></td>
+                      <td>var(--de-emphasized-font-size)</td>
+                      <td>-</td>
+                      <td rowspan="34" scope="rowgroup">language</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-label-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--de-emphasized-text-color, inherit)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-font-size</td>
+                      <td><a href="../variables.html#font-size">font-size</a></td>
+                      <td>var(--de-emphasized-font-size)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-font-weight</td>
+                      <td><a href="../variables.html#font-weight">font-weight</a></td>
+                      <td>var(--application-base-font-weight)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-width</td>
+                      <td><a href="../variables.html#width">width</a></td>
+                      <td>100%</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-max-width</td>
+                      <td><a href="../variables.html#max-width">max-width</a></td>
+                      <td>100%</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-border-width</td>
+                      <td><a href="../variables.html#border-width">border-width</a></td>
+                      <td>1px</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-border-style</td>
+                      <td><a href="../variables.html#border-style">border-style</a></td>
+                      <td>solid</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--grey-2)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-border-radius</td>
+                      <td><a href="../variables.html#border-radius">border-radius</a></td>
+                      <td>0px</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-item-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--application-base-background-color)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-item-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--application-base-text-color)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-item-link-border-width</td>
+                      <td><a href="../variables.html#border-width">border-width</a></td>
+                      <td>1px</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-item-link-border-style</td>
+                      <td><a href="../variables.html#border-style">border-style</a></td>
+                      <td>solid</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-item-link-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--grey-2)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-item-hover-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--branding-color-1-background-color)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-item-hover-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--branding-color-1-text-color)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-item-hover-font-size</td>
+                      <td><a href="../variables.html#font-size">font-size</a></td>
+                      <td>var(--language-selector-list-font-size)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-item-hover-font-weight</td>
+                      <td><a href="../variables.html#font-weight">font-weight</a></td>
+                      <td>var(--language-selector-list-font-weight)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-item-active-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>var(--branding-color-2-background-color)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-item-active-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--branding-color-2-text-color)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-item-active-font-size</td>
+                      <td><a href="../variables.html#font-size">font-size</a></td>
+                      <td>var(--language-selector-list-font-size)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-item-active-font-weight</td>
+                      <td><a href="../variables.html#font-weight">font-weight</a></td>
+                      <td>var(--language-selector-list-font-weight)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-button-background-color</td>
+                      <td><a href="../variables.html#background-color">background-color</a></td>
+                      <td>transparent</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-button-text-color</td>
+                      <td><a href="../variables.html#text-color">text-color</a></td>
+                      <td>var(--de-emphasized-text-color)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-button-font-size</td>
+                      <td><a href="../variables.html#font-size">font-size</a></td>
+                      <td>var(--de-emphasized-font-size)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-button-border-width</td>
+                      <td><a href="../variables.html#border-width">border-width</a></td>
+                      <td>1px</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-button-border-style</td>
+                      <td><a href="../variables.html#border-style">border-style</a></td>
+                      <td>solid</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-button-border-color</td>
+                      <td><a href="../variables.html#border-color">border-color</a></td>
+                      <td>var(--grey-2)</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-button-padding-top</td>
+                      <td><a href="../variables.html#padding-top">padding-top</a></td>
+                      <td>0.125rem</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-button-padding-right</td>
+                      <td><a href="../variables.html#padding">padding</a></td>
+                      <td>0.5rem</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-button-padding-bottom</td>
+                      <td><a href="../variables.html#padding-bottom">padding-bottom</a></td>
+                      <td>0.125rem</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-button-padding-left</td>
+                      <td><a href="../variables.html#padding">padding</a></td>
+                      <td>0.5rem</td>
+                      <td>-</td>
+                    </tr>
+
+                    <tr>
+                      <td>--language-selector-list-button-line-height</td>
+                      <td><a href="../variables.html#line-height">line-height</a></td>
+                      <td>1.5rem</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>CSS</h3>
+              <p>Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw project. Kies en gebruik de benodigde variabelen.</p>
+              <pre>
+                <code>
+:root {
+  /* Label */
+  --language-selector-list-label-font-size: ;
+  --language-selector-list-label-text-color: ;
+
+  /* List */
+  --language-selector-list-font-size: ;
+  --language-selector-list-font-weight: ;
+
+  --language-selector-list-width: ;
+  --language-selector-list-max-width: ;
+
+  --language-selector-list-border-width: ;
+  --language-selector-list-border-style: ;
+  --language-selector-list-border-color: ;
+  --language-selector-list-border-radius: ;
+
+  /* List item */
+  --language-selector-list-item-background-color: ;
+  --language-selector-list-item-text-color: ;
+
+  /* List item link */
+  --language-selector-list-item-link-border-width: ;
+  --language-selector-list-item-link-border-style: ;
+  --language-selector-list-item-link-border-color: ;
+
+  /* List item hover */
+  --language-selector-list-item-hover-background-color: ;
+  --language-selector-list-item-hover-text-color: ;
+  --language-selector-list-item-hover-font-size: ;
+  --language-selector-list-item-hover-font-weight: ;
+
+  /* List item active */
+  --language-selector-list-item-active-background-color: ;
+  --language-selector-list-item-active-text-color: ;
+  --language-selector-list-item-active-font-size: ;
+  --language-selector-list-item-active-font-weight: ;
+
+  /* Dropdown button */
+  --language-selector-list-button-background-color: ;
+  --language-selector-list-button-text-color: ;
+  --language-selector-list-button-font-size: ;
+
+  --language-selector-list-button-border-width: ;
+  --language-selector-list-button-border-style: ;
+  --language-selector-list-button-border-color: ;
+
+  --language-selector-list-button-padding-top: ;
+  --language-selector-list-button-padding-right: ;
+  --language-selector-list-button-padding-bottom: ;
+  --language-selector-list-button-padding-left: ;
+
+  --language-selector-list-button-line-height: ;
+}
+              </code>
+            </pre>
           </section>
 
           <section id="related">
             <h2>Gerelateerde pagina's</h2>
-            <a href="./accordion-test.html">Test- en voorbeelden-pagina</a>
+            <a href="./language-selector-test.html">Test- en voorbeelden-pagina</a>
           </section>
         </div>
       </article>

@@ -499,18 +499,16 @@
         case "ArrowUp":
           if (firstOption === document.activeElement) {
             break;
-          } else {
-            document.activeElement.parentNode.previousElementSibling.getElementsByTagName("a")[0].focus();
-            e.preventDefault();
           }
+          document.activeElement.parentNode.previousElementSibling.getElementsByTagName("a")[0].focus();
+          e.preventDefault();
           break;
         case "ArrowDown":
           if (lastOption === document.activeElement) {
             break;
-          } else {
-            document.activeElement.parentNode.nextElementSibling.getElementsByTagName("a")[0].focus();
-            e.preventDefault();
           }
+          document.activeElement.parentNode.nextElementSibling.getElementsByTagName("a")[0].focus();
+          e.preventDefault();
           break;
       }
     }

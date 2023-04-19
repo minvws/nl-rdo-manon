@@ -3,13 +3,14 @@
 /*---------------------------------------------------------------*/
 @use "language-selector-list-variables";
 
-body > header nav .language,
-.language {
+body > header nav .language-selector,
+.language-selector {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   font-size: var(--language-selector-list-label-font-size);
+  color: var(--language-selector-list-label-text-color);
   z-index: 2;
   width: auto;
   position: relative;
@@ -35,7 +36,8 @@ body > header nav .language,
 		}
 	}
 
-	.language-selector-options {
+  /* Language selector options */
+	> div {
 		width: 8rem;
 
 		button {
