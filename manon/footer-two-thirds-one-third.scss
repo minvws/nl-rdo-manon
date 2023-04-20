@@ -30,30 +30,29 @@ body > footer,
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: var(--layout-two-thirds-one-third-gap);
+        gap: var(--footer-two-thirds-one-third-gap);
         width: 100%;
 
         > * {
+            max-width: 100%;
             width: 100%;
             box-sizing: border-box;
         }
 
-        > span, 
-        > p,
-        > a,
-        > span,
-        > li {
-            max-width: 100%;
+        > section,
+        > article,
+        > div {
+            padding: 0;
         }
 
         @media (min-width: $breakpoint) {
-            gap: var(----footer-two-thirds-one-third-gap);
+            gap: var(--footer-two-thirds-one-third-breakpoint-gap);
 
             > * {
                 width: 33.33%;
 
                 &:nth-child(odd) {
-                    width: calc(66.66% - var(--footer-two-thirds-one-third-gap));
+                    width: calc(66.66% - var(--footer-two-thirds-one-third-breakpoint-gap));
                 }
             }
         }

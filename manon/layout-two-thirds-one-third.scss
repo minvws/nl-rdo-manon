@@ -13,17 +13,25 @@ $breakpoint: 42rem !default;
   width: 100%;
 
   > * {
+    max-width: 100%;
     width: 100%;
+    box-sizing: border-box;
+  }
+
+  > section,
+  > article,
+  > div {
+    padding: 0;
   }
 
   @media (min-width: $breakpoint) {
-    gap: var(--layout-two-thirds-one-third-breakpoint-1-gap);
+    gap: var(--layout-two-thirds-one-third-breakpoint-gap);
 
     > * {
       width: 33.33%;
 
       &:nth-child(odd) {
-        width: calc(66.66% - var(--layout-two-thirds-one-third-gap));
+        width: calc(66.66% - var(--layout-two-thirds-one-third-breakpoint-gap));
       }
     }
   }

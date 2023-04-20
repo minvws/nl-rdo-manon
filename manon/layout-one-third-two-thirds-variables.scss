@@ -3,7 +3,5 @@
 /*------------------------------------------------------------------------*/
 :root {
   --layout-one-third-two-thirds-gap: var(--content-gap);
-  --layout-one-third-two-thirds-breakpoint-gap: var(
-    --layout-one-third-two-thirds-gap
-  );
+  --layout-one-third-two-thirds-breakpoint-gap: var(--layout-one-third-two-thirds-gap);
 }
