@@ -95,13 +95,15 @@ body > footer,
           display: none; /* Preventing default nav before to show up */
         }
 
-        a {
+        a,
+        a:visited {
           @extend %link-styling;
         }
       }
     }
 
-		a {
+		a,
+    a:visited {
       @extend %link-styling;
 		}
 	}
