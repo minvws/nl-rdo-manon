@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Taalselectie testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./language-selector.html">Taalselectie </a></li>
+            <li>
+              <a href="./language-selector-test.html" aria-current="page"
+                >Taalselectie testpagina</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Taalselectie testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h2>Tests</h2>
+            <h3>Basis</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <div class="language-selector">
+              <p>Kies een taal:</p>
+              <p class="visually-hidden" id="language-selector-description">Select your language</p>
+              <div class="language-selector-options" aria-describedby="language-selector-description" aria-expanded="false">
+                <button aria-haspopup="listbox" aria-current="true">
+                  Papiamentu
+                </button>
+                <ul role="listbox">
+                    <li>
+                      <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands</a>
+                    </li>
+                    <li>
+                      <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
+                    </li>
+                    <li>
+                      <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
+                    </li>
+                    <li aria-current="true">
+                      <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
+                    </li>
+                    <li>
+                      <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;div class="language-selector">
+  &lt;p>Kies een taal:&lt;/p>
+  &lt;p class="visually-hidden" id="language-selector-description">Select your language&lt;/p>
+  &lt;div class="language-selector-options" aria-describedby="language-selector-description" aria-expanded="false">
+    &lt;button aria-haspopup="listbox" aria-current="true">
+      Papiamentu
+    &lt;/button>
+    &lt;ul role="listbox">
+        &lt;li>
+          &lt;a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands&lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a hreflang="en" href="#" role="option" data-value="English" lang="en">English&lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk&lt;/a>
+        &lt;/li>
+        &lt;li aria-current="true">
+          &lt;a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu&lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento&lt;/a>
+        &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
