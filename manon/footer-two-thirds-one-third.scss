@@ -30,7 +30,7 @@ body > footer,
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: var(--layout-two-thirds-one-third-gap);
+        gap: var(--footer-two-thirds-one-third-gap);
         width: 100%;
 
         > * {
@@ -46,14 +46,14 @@ body > footer,
         }
 
         @media (min-width: $breakpoint) {
-            gap: var(--footer-two-thirds-one-third-breakpoint-1-gap);
+            gap: var(--footer-two-thirds-one-third-breakpoint-gap);
 
             > * {
                 width: 33.33%;
 
                 &:nth-child(odd) {
-                        width: calc(66.66% - var(--footer-two-thirds-one-third-gap));
-                    }
+                    width: calc(66.66% - var(--footer-two-thirds-one-third-breakpoint-gap));
+                }
             }
         }
     }

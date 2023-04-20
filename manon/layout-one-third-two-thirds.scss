@@ -31,7 +31,7 @@ $breakpoint: 42rem !default;
       width: 66.66%;
 
       &:nth-child(odd) {
-        width: calc(33.33% - var(--layout-one-third-two-thirds-gap));
+        width: calc(33.33% - var(--layout-one-third-two-thirds-breakpoint-gap));
       }
     }
   }
