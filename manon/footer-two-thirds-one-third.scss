@@ -46,13 +46,13 @@ body > footer,
         }
 
         @media (min-width: $breakpoint) {
-            gap: var(--layout-two-thirds-one-third-breakpoint-1-gap);
+            gap: var(--footer-two-thirds-one-third-breakpoint-1-gap);
 
             > * {
             width: 33.33%;
 
             &:nth-child(odd) {
-                    width: calc(66.66% - var(--layout-two-thirds-one-third-gap));
+                    width: calc(66.66% - var(--footer-two-thirds-one-third-gap));
                 }
             }
         }
