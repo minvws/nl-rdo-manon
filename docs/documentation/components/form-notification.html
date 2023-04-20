@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Notificatie binnen formulier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../../manon/scss/form/form-input-color-filled.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./forms.html">Formulieren</a></li>
+            <li>
+              <a href="./form-notification.html" aria-current="page">Notificatie binnen formulier</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./form-notification.html">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Notificatie binnen formulier</h1>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+              </li>
+              <li>Voeg de benodigde HTML toe. Voor meer informatie zie <a href="#examples">Voorbeelden</a></li>
+            </ol>
+
+            <h2>Aandachtspunten:</h2>
+            <ul>
+                <li>Voor meer informatie over beschikbare notificatie-types en het gebruik zie: <a href="notifications.html">Notificaties</a>.</li>
+            </ul>
+          </section>
+
+          <section id="examples">
+            <h2>Voorbeelden</h2>
+            <p>Het basisvoorbeeld met een invoerveld en een verzendknop.</p>
+
+            <h3>Basis</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <form action="" method="post">
+                <label for="input-error">Input</label>
+                <div>
+                    <input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message" aria-invalid="true">
+                    <p class="error" id="input-error-message">
+                        <span>foutmelding:</span> Lorem ipsum dolor set amet
+                    </p>
+                </div>
+            </form>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+    &lt;label for="input-error">Input&lt;/label>
+    &lt;div>
+        &lt;input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message" aria-invalid="true">
+        &lt;p class="error" id="input-error-message">
+            &lt;span>foutmelding:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+    &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+          </section>
+
+          <section id="requirements">
+            <h2>Bijbehorende bestanden</h2>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+
+            <h3>Gerelateerd:</h3>
+            <ul>
+              <li>Voor meer informatie over beschikbare notificatie-types en het gebruik zie: <a href="notifications.html">Notificaties</a>.</li>
+            </ul>
+
+            <h3>Importeer component via NPM</h3>
+
+            <h4>CSS-voorbeeld:</h4>
+            <pre>
+              <code>
+/* Notification base component */
+@use "@minvws/manon/notification-base";
+
+/* Notification types, import what is needed */
+@use "@minvws/manon/notification-block-element";
+@use "@minvws/manon/notification-paragraph";
+@use "@minvws/manon/notification-table";
+@use "@minvws/manon/notification-error";
+@use "@minvws/manon/notification-warning";
+@use "@minvws/manon/notification-explanation";
+@use "@minvws/manon/notification-confirmation";
+@use "@minvws/manon/notification-system-message";
+              </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

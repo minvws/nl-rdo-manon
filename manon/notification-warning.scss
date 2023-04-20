@@ -8,7 +8,7 @@ p.warning,
 span.warning,
 section.warning,
 div.warning {
-  @extend %notification;
+  @include notification-base.notification;
   background-color: var(--notification-warning-background-color);
   border-width: var(--notification-warning-border-width);
   border-style: var(--notification-warning-border-style);

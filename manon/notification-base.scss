@@ -3,10 +3,11 @@
 /*---------------------------------------------------------------*/
 @use "notification-base-variables";
 
-%notification,
-.notification {
+@mixin notification {
   background-color: var(--notification-base-background-color);
   color: var(--notification-base-notification-text-color);
+  max-width: 100%;
+  width: 100%;
 
   &.hidden {
     display: none;
@@ -31,4 +32,8 @@
       }
     }
   }
+}
+
+.notification {
+  @include notification;
 }
