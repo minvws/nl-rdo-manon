@@ -13,13 +13,20 @@ $breakpoint: 42rem !default;
   width: 100%;
 
   > * {
-    &:first-child {
-      width: 100%;
-    }
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  > section,
+  > article,
+  > div {
+    padding: 0;
   }
 
   @media (min-width: $breakpoint) {
     gap: var(--layout-one-third-two-thirds-breakpoint-gap);
+    
     > * {
       width: 66.66%;
 
