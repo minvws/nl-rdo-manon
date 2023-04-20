@@ -72,10 +72,7 @@ body > header nav .language-selector,
 			&[aria-current="true"] {
 				&:after {
 					content: "\e901";
-          font-family: var(--icon-base-font-family);
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale; /* Firefox */
-          font-smoothing: antialiased;
+					font-family: var(--icon-base-font-family);
 					position: absolute;
 					right: var(--language-selector-list-button-padding-right);
 				}
@@ -84,6 +81,7 @@ body > header nav .language-selector,
 	}
 
 	ul {
+		position: static;
 		padding: 0;
 		margin: 0;
 		border-width: var(--language-selector-list-border-width);
@@ -104,20 +102,20 @@ body > header nav .language-selector,
       font-size: var(--language-selector-list-font-size);
 			line-height: 0;
 
-      &:first-child a {
-        border-top-width: 0;
-      }
+			&:first-child a {
+				border-top-width: 0;
+			}
 
-      &:hover {
-        background-color: var(--language-selector-list-item-hover-background-color);
-        color: var(--language-selector-list-item-hover-text-color);
-        font-size: var(--language-selector-list-item-hover-font-size);
-        font-weight: var(--language-selector-list-item-hover-font-weight);
-      }
+			&:hover {
+				background-color: var(--language-selector-list-item-hover-background-color);
+				color: var(--language-selector-list-item-hover-text-color);
+				font-size: var(--language-selector-list-item-hover-font-size);
+				font-weight: var(--language-selector-list-item-hover-font-weight);
+			}
 
 			a {
-        display: flex;
-        justify-content: flex-start;
+				display: flex;
+				justify-content: flex-start;
 				text-decoration: none;
 				margin-left: 0;
 				font-size: inherit;

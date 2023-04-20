@@ -8,7 +8,7 @@ p.explanation,
 span.explanation,
 section.explanation,
 div.explanation {
-  @extend %notification;
+  @include notification-base.notification;
   background-color: var(--notification-explanation-background-color);
   border-width: var(--notification-explanation-border-width);
   border-style: var(--notification-explanation-border-style);

@@ -8,7 +8,7 @@ p.confirmation,
 span.confirmation,
 section.confirmation,
 div.confirmation {
-  @extend %notification;
+  @include notification-base.notification;
   background-color: var(--notification-confirmation-background-color);
   border-width: var(--notification-confirmation-border-width);
   border-style: var(--notification-confirmation-border-style);

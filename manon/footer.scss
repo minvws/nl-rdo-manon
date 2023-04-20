@@ -86,7 +86,24 @@ body > footer,
 		color: var(--footer-link-text-color);
     text-decoration: var(--footer-link-text-decoration);
 
-		a {
+    ul,
+    ol {
+      background-color: transparent;
+
+      li {
+        &:before {
+          display: none; /* Preventing default nav before to show up */
+        }
+
+        a,
+        a:visited {
+          @extend %link-styling;
+        }
+      }
+    }
+
+		a,
+    a:visited {
       @extend %link-styling;
 		}
 	}
