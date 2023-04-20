@@ -1,19 +1,19 @@
 /*---------------------------------------------------------------*/
 /*------------------- notification-error.scss -------------------*/
 /*---------------------------------------------------------------*/
-@use "notification-base";
 @use "notification-error-variables";
+@import "notification-base";
 
 p.error,
 span.error,
 section.error,
 div.error {
-  @extend %notification;
+  @include notification;
   background-color: var(--notification-error-background-color);
   border-width: var(--notification-error-border-width);
   border-style: var(--notification-error-border-style);
   border-color: var(--notification-error-border-color);
-
+  
   &:before {
     content: var(--notification-error-icon-before-content);
   }

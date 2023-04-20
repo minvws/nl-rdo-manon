@@ -162,10 +162,16 @@
     var buttonRow = closest(button, "tr");
     var row = buttonRow.nextElementSibling;
     if (!(row instanceof HTMLElement) || !(row.tagName === "TR") || !row.classList.contains("expando-row")) {
-      console.warn("Could not find .expando-row corresponding to .expando-button:", button);
+      console.warn(
+        "Could not find .expando-row corresponding to .expando-button:",
+        button
+      );
       button.setAttribute("disabled", "");
       button.classList.add("action-button");
-      button.classList.add.apply(button.classList, expanded ? iconCloseClasses : iconOpenClasses);
+      button.classList.add.apply(
+        button.classList,
+        expanded ? iconCloseClasses : iconOpenClasses
+      );
       return;
     }
     var expanded = button.getAttribute("aria-expanded") === "true";
@@ -183,7 +189,10 @@
     ensureElementHasId(row);
     button.setAttribute("aria-controls", row.id);
     button.classList.add("action-button");
-    button.classList.add.apply(button.classList, expanded ? iconCloseClasses : iconOpenClasses);
+    button.classList.add.apply(
+      button.classList,
+      expanded ? iconCloseClasses : iconOpenClasses
+    );
     button.addEventListener("click", function() {
       var expand = button.getAttribute("aria-expanded") === "false";
       if (expand) {
@@ -238,7 +247,10 @@
     }
     var form = filter.querySelector("form");
     if (!(form instanceof HTMLElement)) {
-      console.error("Could not find <form> corresponding to filter toggle:", filterToggle);
+      console.error(
+        "Could not find <form> corresponding to filter toggle:",
+        filterToggle
+      );
       return;
     }
     var expanded = filterToggle.getAttribute("aria-expanded") !== "false";
@@ -277,7 +289,9 @@
   }
   function findCollapsibleExplanations() {
     var result = [];
-    var explanations = document.querySelectorAll("form.help div input + .explanation,form.help div textarea + .explanation,form.help div select + .explanation,form.help div div + .explanation,form.help div label + .explanation,form.help fieldset input + .explanation,form.help fieldset textarea + .explanation,form.help fieldset select + .explanation,form.help fieldset div + .explanation,form.help fieldset label + .explanation");
+    var explanations = document.querySelectorAll(
+      "form.help div input + .explanation,form.help div textarea + .explanation,form.help div select + .explanation,form.help div div + .explanation,form.help div label + .explanation,form.help fieldset input + .explanation,form.help fieldset textarea + .explanation,form.help fieldset select + .explanation,form.help fieldset div + .explanation,form.help fieldset label + .explanation"
+    );
     for (var i = 0; i < explanations.length; i++) {
       var explanation = explanations[i];
       if (!(explanation instanceof HTMLElement)) {
@@ -315,8 +329,14 @@
     button.addEventListener("click", function toggleExpanded() {
       var expand = button.getAttribute("aria-expanded") === "false";
       button.setAttribute("aria-expanded", expand ? "true" : "false");
-      button.classList.remove.apply(button.classList, expand ? iconOpenClasses : iconCloseClasses);
-      button.classList.add.apply(button.classList, expand ? iconCloseClasses : iconOpenClasses);
+      button.classList.remove.apply(
+        button.classList,
+        expand ? iconOpenClasses : iconCloseClasses
+      );
+      button.classList.add.apply(
+        button.classList,
+        expand ? iconCloseClasses : iconOpenClasses
+      );
       button.innerText = expand ? closeLabel : openLabel;
       if (expand) {
         explanation.classList.remove("collapsed");
@@ -351,17 +371,24 @@
       return;
     }
     ensureElementHasId(menu);
-    var button = createMenuButton(menu, nav.dataset.openLabel || "Menu", nav.dataset.closeLabel || "Sluit menu");
+    var button = createMenuButton(
+      menu,
+      nav.dataset.openLabel || "Menu",
+      nav.dataset.closeLabel || "Sluit menu"
+    );
     menu.parentNode.insertBefore(button.element, menu);
     if (!isCondensed) {
-      onMediaQueryMatch(nav.dataset.media || "(min-width: 42rem)", function(event) {
-        button.setExpanded(false);
-        if (event.matches) {
-          nav.classList.remove("collapsible-menu");
-        } else {
-          nav.classList.add("collapsible-menu");
+      onMediaQueryMatch(
+        nav.dataset.media || "(min-width: 42rem)",
+        function(event) {
+          button.setExpanded(false);
+          if (event.matches) {
+            nav.classList.remove("collapsible-menu");
+          } else {
+            nav.classList.add("collapsible-menu");
+          }
         }
-      });
+      );
     }
   }
   function createMenuButton(ul, openLabel, closeLabel) {
@@ -424,8 +451,14 @@
     }
     function setClosed(closed) {
       button.innerText = closed ? closeLabel : openLabel;
-      button.classList.remove.apply(button.classList, closed ? iconCloseClasses : iconOpenClasses);
-      button.classList.add.apply(button.classList, closed ? iconOpenClasses : iconCloseClasses);
+      button.classList.remove.apply(
+        button.classList,
+        closed ? iconCloseClasses : iconOpenClasses
+      );
+      button.classList.add.apply(
+        button.classList,
+        closed ? iconOpenClasses : iconCloseClasses
+      );
       button.setAttribute("aria-expanded", String(!closed));
       if (closed) {
         main.classList.add("sidemenu-closed");
@@ -444,7 +477,9 @@
   onDomReady(initLanguageSelector);
   onDomUpdate(initLanguageSelector);
   function initLanguageSelector() {
-    var languageSelectorElements = document.querySelectorAll(".language-selector-options");
+    var languageSelectorElements = document.querySelectorAll(
+      ".language-selector-options"
+    );
     languageSelectorElements.forEach((languageSelectorElement) => {
       languageSelectorElement.addEventListener("click", onClick);
       languageSelectorElement.addEventListener("keydown", onKeyPress);
@@ -453,7 +488,10 @@
   function onClick(e) {
     var languageSelectorElement = e.target.closest(".language-selector-options");
     var expanded = languageSelectorElement.getAttribute("aria-expanded") === "true";
-    languageSelectorElement.setAttribute("aria-expanded", expanded ? "false" : "true");
+    languageSelectorElement.setAttribute(
+      "aria-expanded",
+      expanded ? "false" : "true"
+    );
   }
   function onKeyPress(e) {
     var languageSelectorElement = e.target.closest(".language-selector-options");
@@ -465,11 +503,17 @@
     if (selectorButton === document.activeElement) {
       switch (e.code) {
         case "Enter":
-          languageSelectorElement.setAttribute("aria-expanded", expanded ? "false" : "true");
+          languageSelectorElement.setAttribute(
+            "aria-expanded",
+            expanded ? "false" : "true"
+          );
           e.preventDefault();
           break;
         case "Space":
-          languageSelectorElement.setAttribute("aria-expanded", expanded ? "false" : "true");
+          languageSelectorElement.setAttribute(
+            "aria-expanded",
+            expanded ? "false" : "true"
+          );
           e.preventDefault();
           break;
         case "Escape":
