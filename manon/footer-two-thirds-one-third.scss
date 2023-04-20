@@ -49,11 +49,11 @@ body > footer,
             gap: var(--footer-two-thirds-one-third-breakpoint-1-gap);
 
             > * {
-            width: 33.33%;
+                width: 33.33%;
 
-            &:nth-child(odd) {
-                    width: calc(66.66% - var(--footer-two-thirds-one-third-gap));
-                }
+                &:nth-child(odd) {
+                        width: calc(66.66% - var(--footer-two-thirds-one-third-gap));
+                    }
             }
         }
     }
