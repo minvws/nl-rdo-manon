@@ -46,8 +46,7 @@ nav {
             display: var(--navigation-list-item-icon-display);
         }
 
-        a,
-        a:visited {
+        a {
             color: var(--navigation-link-text-color);
             text-decoration: var(--navigation-link-text-decoration);
 
