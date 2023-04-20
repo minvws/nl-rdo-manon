@@ -112,7 +112,8 @@ body > header,
         }
 
         &[aria-current="page"] {
-        > a {
+        > a,
+        > a:visited {
             @extend %active-link;
           }
         }
