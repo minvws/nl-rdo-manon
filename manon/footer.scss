@@ -94,6 +94,10 @@ body > footer,
         &:before {
           display: none; /* Preventing default nav before to show up */
         }
+
+        a {
+          @extend %link-styling;
+        }
       }
     }
 
