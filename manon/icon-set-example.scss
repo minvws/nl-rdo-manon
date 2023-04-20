@@ -12,9 +12,6 @@
   &:before {
     position: static;
     font-family: var(--icon-base-font-family);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; /* Firefox */
-    font-smoothing: antialiased;
   }
 
   &.icon-cat:before {

@@ -41,8 +41,8 @@ body > header nav .language-selector,
 		width: 8rem;
 
 		button {
-      display: flex;
-      justify-content: flex-start;
+			display: flex;
+			justify-content: flex-start;
 			background-color: var(--language-selector-list-button-background-color);
 			margin-left: 0;
 			font-size: var(--language-selector-list-button-font-size);
@@ -59,7 +59,7 @@ body > header nav .language-selector,
 			line-height: var(--language-selector-list-button-line-height);
 			box-sizing: border-box;
 			white-space: nowrap;
-      text-align: left;
+      		text-align: left;
 			text-overflow: ellipsis;
 			overflow: hidden;
 			min-height: auto;
@@ -67,10 +67,7 @@ body > header nav .language-selector,
 			&[aria-current="true"] {
 				&:after {
 					content: "\e901";
-          font-family: var(--icon-base-font-family);
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale; /* Firefox */
-          font-smoothing: antialiased;
+					font-family: var(--icon-base-font-family);
 					position: absolute;
 					right: var(--language-selector-list-button-padding-right);
 				}
@@ -85,7 +82,7 @@ body > header nav .language-selector,
 		border-width: var(--language-selector-list-border-width);
 		border-style: var(--language-selector-list-border-style);
 		border-color: var(--language-selector-list-border-color);
-    border-top: 0;
+    	border-top: 0;
 		width: inherit;
 		box-sizing: border-box;
 
@@ -96,23 +93,23 @@ body > header nav .language-selector,
 			order: 1;
 			margin: 0;
 			background-color: var(--language-selector-list-item-background-color);
-      color: var(--language-selector-list-item-text-color);
+      		color: var(--language-selector-list-item-text-color);
 			line-height: 0;
 
-      &:first-child a {
-        border-top-width: 0;
-      }
+			&:first-child a {
+				border-top-width: 0;
+			}
 
-      &:hover {
-        background-color: var(--language-selector-list-item-hover-background-color);
-        color: var(--language-selector-list-item-hover-text-color);
-        font-size: var(--language-selector-list-item-hover-font-size);
-        font-weight: var(--language-selector-list-item-hover-font-weight);
-      }
+			&:hover {
+				background-color: var(--language-selector-list-item-hover-background-color);
+				color: var(--language-selector-list-item-hover-text-color);
+				font-size: var(--language-selector-list-item-hover-font-size);
+				font-weight: var(--language-selector-list-item-hover-font-weight);
+			}
 
 			a {
-        display: flex;
-        justify-content: flex-start;
+				display: flex;
+				justify-content: flex-start;
 				text-decoration: none;
 				margin-left: 0;
 				font-size: inherit;
@@ -130,20 +127,20 @@ body > header nav .language-selector,
 				overflow: hidden;
 
 				&:hover {
-          background-color: var(--language-selector-list-item-hover-background-color);
-          color: var(--language-selector-list-item-hover-text-color);
-          font-size: var(--language-selector-list-item-hover-font-size);
-          font-weight: var(--language-selector-list-item-hover-font-weight);
-        }
+					background-color: var(--language-selector-list-item-hover-background-color);
+					color: var(--language-selector-list-item-hover-text-color);
+					font-size: var(--language-selector-list-item-hover-font-size);
+					font-weight: var(--language-selector-list-item-hover-font-weight);
+				}
 			}
 
 			/* Selected language */
 			&[aria-current="true"] {
 				order: 0;
-        background-color: var(--language-selector-list-item-active-background-color);
-        color: var(--language-selector-list-item-active-text-color);
-        font-size: var(--language-selector-list-item-active-font-size);
-        font-weight: var(--language-selector-list-item-active-font-weight);
+				background-color: var(--language-selector-list-item-active-background-color);
+				color: var(--language-selector-list-item-active-text-color);
+				font-size: var(--language-selector-list-item-active-font-size);
+				font-weight: var(--language-selector-list-item-active-font-weight);
 				font-family: inherit;
 				cursor: pointer;
 			}
