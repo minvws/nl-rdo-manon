@@ -3,24 +3,58 @@
 /*---------------------------------------------------------------*/
 @use "link-variables";
 
-%visited-link-style {
+%link-styles {
   background-color: var(--link-background-color);
-  color: var(--link-visited-text-color, inherit);
+  color: var(--link-text-color);
 
   &:before {
-    color: inherit;
+    background-color: var(--link-before-background-color);
+    color: var(--link-before-text-color);
+  }
+}
+
+%link-hover {
+  background-color: var(--link-hover-background-color);
+  color: var(--link-hover-text-color);
+
+  &:before {
+    background-color: var(--link-hover-before-background-color);
+    color: var(--link-hover-before-text-color);
+  }
+}
+
+%link-active {
+  background-color: var(--link-active-background-color);
+  color: var(--link-active-text-color);
+}
+
+%link-visited {
+  background-color: var(--link-visited-background-color);
+  color: var(--link-visited-text-color);
+
+  &:hover {
+    background-color: var(--link-visited-hover-background-color);
+    color: var(--link-visited-hover-text-color);
   }
 
-  /* States */
-  &:hover,
-  &.hover {
-    color: var(--link-visited-hover-text-color, inherit);
+  &:before {
+    background-color: var(--link-visited-before-background-color);
+    color: var(--link-visited-before-text-color);
+
+    &:hover {
+      background-color: var(--link-visited-before-hover-background-color);
+      color: var(--link-visited-before-hover-text-color);
+    }
+  }
+
+  &:active {
+    background-color: var(--link-visited-active-background-color);
+    color: var(--link-visited-active-text-color);
   }
 }
 
 a {
-  background-color: var(--link-background-color);
-  color: var(--link-text-color, initial);
+  @extend %link-styles;
   cursor: pointer;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -32,13 +66,13 @@ a {
   > h4,
   > h5,
   > h6 {
-    color: var(--link-text-color, inherit);
+    @extend %link-styles;
   }
 
   /* states */
   &:hover,
 	&.hover /* Testing purposes */ {
-    color: var(--link-hover-text-color, inherit);
+    @extend %link-hover;
   }
 
   &:active,
@@ -50,7 +84,7 @@ a {
 
   &:visited,
 	&.visited /* Testing purposes */ {
-    @extend %visited-link-style;
+    @extend %link-visited;
 
     > h1,
     > h2,
@@ -58,7 +92,7 @@ a {
     > h4,
     > h5,
     > h6 {
-      @extend %visited-link-style;
+      @extend %link-visited;
     }
   }
 }

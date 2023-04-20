@@ -2,12 +2,44 @@
 /*------------------------------- link-variables.scss ------------------------------*/
 /*----------------------------------------------------------------------------------*/
 :root {
-  /* Link */
-  --link-background-color: transparent;
-  --link-text-color: #0000c2;
-  --link-hover-text-color: #000088;
+/* Default */
+--link-background-color: transparent;
+--link-text-color: #0000c2;
 
-  /* Visted link */
-  --link-visited-text-color: #5b109f;
-  --link-visited-hover-text-color: #400b6f;
+/* Hover */
+--link-before-background-color: var(--link-background-color);
+--link-before-text-color: var(--link-text-color);
+
+/* States */
+/* Hover */
+--link-hover-background-color: var(--link-background-color);
+--link-hover-text-color: #000088;
+
+/* Hover before */
+--link-hover-before-background-color: var(--link-background-color);
+--link-hover-before-text-color: var(--link-hover-text-color);
+
+/* Active */
+--link-active-background-color: var(--link-background-color);
+--link-active-text-color: var(--link-text-color);
+
+/* Visited */
+--link-visited-background-color: var(--link-background-color);
+--link-visited-text-color: #5b109f;
+
+/* Visited hover */
+--link-visited-hover-background-color: var(--link-background-color);
+--link-visited-hover-text-color: #400b6f;
+
+/* Visited before */
+--link-visited-before-background-color: var(--link-background-color);
+--link-visited-before-text-color: var(--link-visited-text-color);
+
+/* Visited before hover */
+--link-visited-before-hover-background-color: var(--link-background-color);
+--link-visited-before-hover-text-color: var(--link-visited-hover-text-color);
+
+/* visited active */
+--link-visited-active-background-color: var(--link-background-color);
+--link-visited-active-text-color: var(--link-visited-text-color);
 }
