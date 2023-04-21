@@ -5,6 +5,7 @@
 
 body > header nav .language-selector,
 .language-selector {
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -14,6 +15,7 @@ body > header nav .language-selector,
   z-index: 2;
   width: auto;
   position: relative;
+  margin: unset;
 
   > p {
     font-size: var(--language-selector-list-label-font-size);
@@ -39,10 +41,13 @@ body > header nav .language-selector,
   /* Language selector options */
 	> div {
 		width: 8rem;
+    padding: 0;
+    display: initial;
+    margin: unset;
 
 		button {
-			display: flex;
-			justify-content: flex-start;
+      display: flex;
+      justify-content: flex-start;
 			background-color: var(--language-selector-list-button-background-color);
 			margin-left: 0;
 			font-size: var(--language-selector-list-button-font-size);
@@ -59,7 +64,7 @@ body > header nav .language-selector,
 			line-height: var(--language-selector-list-button-line-height);
 			box-sizing: border-box;
 			white-space: nowrap;
-      		text-align: left;
+      text-align: left;
 			text-overflow: ellipsis;
 			overflow: hidden;
 			min-height: auto;
@@ -82,7 +87,7 @@ body > header nav .language-selector,
 		border-width: var(--language-selector-list-border-width);
 		border-style: var(--language-selector-list-border-style);
 		border-color: var(--language-selector-list-border-color);
-    	border-top: 0;
+    border-top: 0;
 		width: inherit;
 		box-sizing: border-box;
 
@@ -93,7 +98,8 @@ body > header nav .language-selector,
 			order: 1;
 			margin: 0;
 			background-color: var(--language-selector-list-item-background-color);
-      		color: var(--language-selector-list-item-text-color);
+      color: var(--language-selector-list-item-text-color);
+      font-size: var(--language-selector-list-font-size);
 			line-height: 0;
 
 			&:first-child a {
@@ -125,22 +131,24 @@ body > header nav .language-selector,
 				white-space: nowrap;
 				text-overflow: ellipsis;
 				overflow: hidden;
+        min-height: unset;
+        height: unset;
 
 				&:hover {
-					background-color: var(--language-selector-list-item-hover-background-color);
-					color: var(--language-selector-list-item-hover-text-color);
-					font-size: var(--language-selector-list-item-hover-font-size);
-					font-weight: var(--language-selector-list-item-hover-font-weight);
-				}
+          background-color: var(--language-selector-list-item-hover-background-color);
+          color: var(--language-selector-list-item-hover-text-color);
+          font-size: var(--language-selector-list-item-hover-font-size);
+          font-weight: var(--language-selector-list-item-hover-font-weight);
+        }
 			}
 
 			/* Selected language */
 			&[aria-current="true"] {
 				order: 0;
-				background-color: var(--language-selector-list-item-active-background-color);
-				color: var(--language-selector-list-item-active-text-color);
-				font-size: var(--language-selector-list-item-active-font-size);
-				font-weight: var(--language-selector-list-item-active-font-weight);
+        background-color: var(--language-selector-list-item-active-background-color);
+        color: var(--language-selector-list-item-active-text-color);
+        font-size: var(--language-selector-list-item-active-font-size);
+        font-weight: var(--language-selector-list-item-active-font-weight);
 				font-family: inherit;
 				cursor: pointer;
 			}
