@@ -5,60 +5,95 @@
 /* Default */
 --link-background-color: transparent;
 --link-text-color: #0000c2;
-
-/* Before */
---link-before-background-color: var(--link-background-color);
---link-before-text-color: var(--link-text-color);
-
-/* Hover */
---link-hover-background-color: var(--link-background-color);
---link-hover-text-color: var(--link-text-color);
+--link-text-decoration: initial;
 
 /* States */
 /* Hover */
 --link-hover-background-color: var(--link-background-color);
---link-hover-text-color: #000088;
-
-/* Hover before */
---link-hover-before-background-color: var(--link-background-color);
---link-hover-before-text-color: var(--link-hover-text-color);
+--link-hover-text-color: var(--link-text-color);
+--link-hover-text-decoration: var(--link-text-decoration);
 
 /* Active */
 --link-active-background-color: var(--link-background-color);
 --link-active-text-color: var(--link-text-color);
+--link-active-text-decoration: var(--link-text-decoration);
+
+/* Active Hover*/
+--link-active-hover-background-color: var(--link-active-background-color);
+--link-active-hover-text-color: var(--link-active-text-color);
+--link-active-hover-text-decoration: var(--link-text-decoration);
+
+/* Focus */
+--link-focus-background-color: var(--link-background-color);
+--link-focus-text-color: var(--link-text-color);
+--link-focus-text-decoration: var(--link-text-decoration);
+
+/* Focues Hover*/
+--link-focus-hover-background-color: var(--link-focus-background-color);
+--link-focus-hover-text-color: var(--link-focus-text-color);
+--link-focus-hover-text-decoration: var(--link-text-decoration);
 
 /* Visited */
 --link-visited-background-color: var(--link-background-color);
---link-visited-text-color: #5b109f;
+--link-visited-text-color: var(--link-text-color);
+--link-visited-text-decoration: var(--link-text-decoration);
 
 /* Visited hover */
 --link-visited-hover-background-color: var(--link-background-color);
---link-visited-hover-text-color: #400b6f;
+--link-visited-hover-text-color: var(--link-visited-text-color);
+--link-visited-hover-text-decoration: var(--link-text-decoration);
 
-/* Visited before */
---link-visited-before-background-color: var(--link-background-color);
---link-visited-before-text-color: var(--link-visited-text-color);
-
-/* Visited before hover */
---link-visited-before-hover-background-color: var(--link-background-color);
---link-visited-before-hover-text-color: var(--link-visited-hover-text-color);
+/* Visited icon hover */
+--link-visited-icon-hover-background-color: var(--link-background-color);
+--link-visited-icon-hover-text-color: var(--link-visited-hover-text-color);
+--link-visited-icon-hover-text-decoration: var(--link-text-decoration);
 
 /* visited active */
 --link-visited-active-background-color: var(--link-background-color);
 --link-visited-active-text-color: var(--link-visited-text-color);
+--link-visited-active-text-decoration: var(--link-text-decoration);
 
 /* Icon */
 --link-icon-font-family: var(--icon-font-family);
 --link-icon-font-size: var(--icon-font-size);
 --link-icon-padding-right: 0.5rem;
 --link-icon-padding-left: var(--icon-padding-left);
---link-icon-text-color: var(--icon-text-color);
 --link-icon-padding-right: 0.5rem;
 --link-icon-padding-left: 0;
 
+/* Icon at the end */
+--link-icon-after-padding-right: 0;
+--link-icon-after-padding-left: 0.5rem;
+
+
 /* Testen */
---link-background-color: lavender;
+--link-background-color: pink;
 --link-text-color: red;
---link-before-background-color: red;
---link-before-text-color: var(--link-text-color);
+
+--link-hover-background-color: yellow;
+--link-hover-text-color: black;
+
+/* Active */
+--link-active-background-color: palegreen;
+--link-active-text-color: green;
+
+/* Active hover */
+--link-active-hover-background-color: purple;
+--link-active-hover-text-color: lavender;
+
+/* Focus */
+--link-focus-background-color: blue;
+--link-focus-text-color: palegoldenrod;
+
+/* Focues Hover*/
+--link-focus-hover-background-color: salmon;
+--link-focus-hover-text-color: black;
+
+/* Visited */
+--link-visited-background-color: aliceblue;
+--link-visited-text-color: darkblue;
+
+/* Visited hover */
+--link-visited-hover-background-color: silver;
+--link-visited-hover-text-color: black;
 }

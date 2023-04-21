@@ -29,36 +29,20 @@
   --navigation-list-item-list-style: var(--list-base-item-list-style, initial);
 
   /* List item icon */
-  --navigation-list-item-icon-display: none; /* Set to initial when using an icon */
-  --navigation-list-item-icon-font-family: var(--icon-base-font-family);
-  --navigation-list-item-icon-line-height: var(--navigation-list-line-height);
-  --navigation-list-item-icon-content:  "";
-  --navigation-list-item-icon-font-size: var(--navigation-title-font-size);
-  --navigation-list-item-icon-padding: 0 0.5rem 0 0;
+  --navigation-list-icon-font-family: var(--icon-font-family);
+  --navigation-list-icon-font-size: var(--icon-font-size);
+  --navigation-list-icon-padding-right: 0.5rem;
+  --navigation-list-icon-padding-left: var(--icon-padding-left);
+  --navigation-list-icon-padding-right: 0.5rem;
+  --navigation-list-icon-padding-left: 0;
+
+  /* Icon at the end */
+  --navigation-list-icon-after-padding-right: 0;
+  --navigation-list-icon-after-padding-left: 0.5rem;
  
   /* Links */
-    /* Links */
-    --navigation-link-text-color: var(--navigation-text-color);
-    --navigation-link-before-text-color: var(--navigation-link-text-color);
-    --navigation-link-text-decoration: none;
-  
-    /* Links visited */
-    --navigation-link-visited-text-color: var(--navigation-link-text-color);
-    --navigation-link-visited-before-text-color: var(--navigation-link-visited-text-color);
-    --navigation-link-visited-text-decoration: var(--navigation-link-text-decoration);
-  
-    /* Links hover */
-    --navigation-link-hover-text-color: var(--navigation-link-text-color);
-    --navigation-link-hover-before-text-color: var(--navigation-link-hover-text-color);
-    --navigation-link-hover-text-decoration: underline;
-  
-    /* Links visited hover */
-    --navigation-link-visited-hover-text-color: var(--navigation-link-text-color);
-    --navigation-link-visited-hover-before-text-color: var(--navigation-link-visited-hover-text-color);
-    --navigation-link-visited-hover-text-decoration: var(--navigation-link-hover-text-decoration);
-    
-    /* Links active */
-    --navigation-link-active-text-color: var(--navigation-link-text-color);
-    --navigation-link-active-before-text-color: --navigation-link-active-text-color;
-    --navigation-link-active-text-decoration: var(--navigation-link-hover-text-decoration);
+  /* Default */
+  --navigation-link-background-color: var(--link-background-color);
+  --navigation-link-text-color: var(--link-text-color);
+  --navigation-link-text-decoration: none;
 }

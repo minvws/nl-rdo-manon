@@ -14,8 +14,7 @@
 }
 
 .icon {
-  &:before,
-  :after {
+  &:before {
     @include icon;
 
     font-family: var(--icon-font-family);

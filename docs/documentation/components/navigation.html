@@ -65,40 +65,144 @@
             <h2>Voorbeelden:</h2>
 
             <h4>Visueel voorbeeld:</h4>
-            <a href="#">Basis</a>
-            <a href="#"class="icon icon-cat">Met <code>:before</code></a>
-            <a href="#"class="icon-after icon-cat">Met <code>:after</code><span class="icon icon-cat">Kat icoon</span></a>
+            <nav>
+                <a href="#">Basis</a>
+                <a href="#"class="icon icon-cat">Met <code>:before</code></a>
+                <a href="#"class="icon-after icon-cat">Met <code>:after</code><span class="icon icon-cat">Kat icoon</span></a>
+                
+                <a href="#" class="hover">Hover <code>:hover</code></a>
+                
+                <a href="#" class="hover icon icon-cat">Hover met <code>:before:hover</code></a>
+                <a href="#" class="hover">Hover met <code>:before:hover</code> <span class="icon icon-cat"></span></a>
+                
+                <a href="#" class="active">Actieve link</a>
+                <a href="#" class="active icon icon-cat">Actieve link met icoon</a>
+                <a href="#" class="active">Actieve link met icoon achteraan <span class="icon icon-cat"></span></a>
+                <a href="#" class="active hover">Actieve link op hover</a>
+                <a href="#" class="active hover icon icon-cat">Actieve link met icoon op hover</a>
+                <a href="#" class="active hover">Actieve link met icoon achteraan op hover <span class="icon icon-cat"></span></a>
+                
+                <a href="#" class="focus">Link gefocust</a>
+                <a href="#" class="focus icon icon-cat">Link gefocust met icoon</a>
+                <a href="#" class="focus">Link gefocust met icoon achteraan <span class="icon icon-cat"></span></a>
+                <a href="#" class="focus hover">Link gefocust op hover</a>
+                <a href="#" class="focus hover icon icon-cat">Link gefocust met icoon op hover</a>
+                <a href="#" class="focus hover">Link gefocust met icoon achteraan op hover <span class="icon icon-cat"></span></a>
+                
+                <a href="#" class="visited">Bezochte link</a>
+                <a href="#" class="visited icon icon-cat">Bezochte link met icoon</a>
+                <a href="#" class="visited">Bezochte link met icoon achteraan <span class="icon icon-cat"></span></a>
+                <a href="#" class="visited hover">Bezochte link op hover</a>
+                <a href="#" class="visited hover icon icon-cat">Bezochte link met icoon op hover</a>
+                <a href="#" class="visited hover">Bezochte link met icoon achteraan op hover <span class="icon icon-cat"></span></a>
+            </nav>
             
-            <a href="#" class="hover">Hover <code>:hover</code></a>
-            <a href="#" class="hover icon icon-cat">Hover met <code>:before:hover</code></a>
-            <a href="#" class="hover">Hover met <code>:before:hover</code> <span class="icon icon-cat"></span></a>
-            
-            <a href="#" class="active">Actieve link</a>
-            <a href="#" class="active icon icon-cat">Actieve link met icoon</a>
-            <a href="#" class="active">Actieve link met icoon achteraan <span class="icon icon-cat"></span></a>
-            <a href="#" class="active hover">Actieve link op hover</a>
-            <a href="#" class="active hover icon icon-cat">Actieve link met icoon op hover</a>
-            <a href="#" class="active hover">Actieve link met icoon achteraan op hover <span class="icon icon-cat"></span></a>
-            
-            <a href="#" class="focus">Link gefocust</a>
-            <a href="#" class="focus icon icon-cat">Link gefocust met icoon</a>
-            <a href="#" class="focus">Link gefocust met icoon achteraan <span class="icon icon-cat"></span></a>
-            <a href="#" class="focus hover">Link gefocust op hover</a>
-            <a href="#" class="focus hover icon icon-cat">Link gefocust met icoon op hover</a>
-            <a href="#" class="focus hover">Link gefocust met icoon achteraan op hover <span class="icon icon-cat"></span></a>
-            
-            <a href="#" class="visited">Bezochte link</a>
-            <a href="#" class="visited icon icon-cat">Bezochte link met icoon</a>
-            <a href="#" class="visited">Bezochte link met icoon achteraan <span class="icon icon-cat"></span></a>
-            <a href="#" class="visited hover">Bezochte link op hover</a>
-            <a href="#" class="visited hover icon icon-cat">Bezochte link met icoon op hover</a>
-            <a href="#" class="visited hover">Bezochte link met icoon achteraan op hover <span class="icon icon-cat"></span></a>
-            
+            <h4>Navigatie-component met links</h4>
+            <nav>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">Lorem ipsum</a>
+            </nav>
+
             <h4>Html-voorbeeld:</h4>
             <pre>
               <code>
+&lt;nav>
+    &lt;a href="#">Lorem ipsum&lt;/a>
+    &lt;a href="#">Lorem ipsum&lt;/a>
+    &lt;a href="#">Lorem ipsum&lt;/a>
+&lt;/nav>
               </code>
             </pre>
+            
+            <h4>Navigatie-component met een lijst met links</h4>
+            <nav>
+                <ul>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                </ul>
+            </nav>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;nav>
+    &lt;ul>
+        &lt;li>&lt;a href="#">Lorem ipsum&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Lorem ipsum&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Lorem ipsum&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/nav>
+              </code>
+            </pre>
+            
+            <h4>Navigatie-component met een horizontaal uitgelijnde lijst met links</h4>
+            <nav>
+                <ul class="horizontal-view">
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                </ul>
+            </nav>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;nav>
+    &lt;ul class="horizontal-view">
+        &lt;li>&lt;a href="#">Lorem ipsum&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Lorem ipsum&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Lorem ipsum&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/nav>
+              </code>
+            </pre>
+
+            <h4>Link hover test</h4>
+            <nav>
+                <ul>
+                    <li><a href="#" class="hover">Lorem ipsum</a></li>
+                    <li><a href="#" class="hover icon icon-cat">Hover met <code>:before:hover</code></a></li>
+                    <li><a href="#" class="hover">Hover met <code>:before:hover</code> <span class="icon icon-cat"></span></a></li>
+                </ul>
+            </nav>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;nav>
+    &lt;ul>
+        &lt;li>&lt;a href="#" class="hover">Lorem ipsum&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#" class="hover icon icon-cat">Hover met &lt;code>:before:hover&lt;/code>&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#" class="hover">Hover met &lt;code>:before:hover&lt;/code> &lt;span class="icon icon-cat">&lt;/span>&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/nav>
+              </code>
+            </pre>
+            
+            <h4>Link active test</h4>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Lorem ipsum</a></li>
+                    <li><a href="#" class="active icon icon-cat">active met <code>:before:active</code></a></li>
+                    <li><a href="#" class="active">active met <code>:before:active</code> <span class="icon icon-cat"></span></a></li>
+                </ul>
+            </nav>
+
+            <h4>Html-voorbeeld:</h4>
+            <pre>
+              <code>
+&lt;nav>
+    &lt;ul>
+        &lt;li>&lt;a href="#" class="active">Lorem ipsum&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#" class="active icon icon-cat">active met &lt;code>:before:active&lt;/code>&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#" class="active">active met &lt;code>:before:active&lt;/code> &lt;span class="icon icon-cat">&lt;/span>&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/nav>
+              </code>
+            </pre>
+            
           </section>
 
           <section id="requirements">

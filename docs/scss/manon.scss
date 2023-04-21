@@ -97,6 +97,9 @@
 
 /* Navigation */
 @use "@minvws/manon/navigation";
+@use "@minvws/manon/navigation-link";
+@use "@minvws/manon/navigation-link-hover";
+@use "@minvws/manon/navigation-link-active";
 @use "@minvws/manon/navigation-content-wrapper";
 
 /* Main */

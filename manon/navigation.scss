@@ -2,6 +2,48 @@
 /*---------------------- navigation.scss ------------------------*/
 /*---------------------------------------------------------------*/
 @use "navigation-variables";
+@use "icon";
+
+/*%link-styles {
+  background-color: var(--navigation-link-background-color);
+  color: var(--navigation-link-text-color);
+
+  &:before {
+      background-color: var(--navigation-link-before-background-color);
+      color: var(--navigation-link-before-text-color);
+  }
+}
+
+%link-focus {
+  background-color: var(--navigation-link-focus-background-color);
+  color: var(--navigation-link-focus-text-color);
+
+  &:hover {
+      background-color: var(--navigation-link-focus-hover-background-color);
+      color: var(--navigation-link-focus-hover-text-color);
+  }
+}*/
+
+/*%link-visited {
+  background-color: var(--navigation-link-visited-background-color);
+  color: var(--navigation-link-visited-text-color);
+
+  &:before {
+    background-color: var(--navigation-link-visited-before-background-color);
+    color: var(--navigation-link-visited-before-text-color);
+
+    &:hover {
+      background-color: var(--navigation-link-visited-before-hover-background-color);
+      color: var(--navigation-link-visited-before-hover-text-color);
+    }
+  }
+
+  &:active {
+    background-color: var(--navigation-link-visited-active-background-color);
+    color: var(--navigation-link-visited-active-text-color);
+  }
+}*/
+
 nav {
 
   h1,
@@ -28,64 +70,35 @@ nav {
     background-color: var(--navigation-list-background-color); 
 
     li {
-        padding: var(--navigation-list-item-padding);
-        background-color: var(--navigation-list-item-background-color);
-        color:  var(--navigation-list-item-text-color);
-        border-width: var(--navigation-list-item-border-width);
-        border-style: var(--navigation-list-item-border-style);
-        border-color: var(--navigation-list-item-border-color);
-        list-style: var(--navigation-list-item-list-style);
+      padding: var(--navigation-list-item-padding);
+      background-color: var(--navigation-list-item-background-color);
+      color:  var(--navigation-list-item-text-color);
+      border-width: var(--navigation-list-item-border-width);
+      border-style: var(--navigation-list-item-border-style);
+      border-color: var(--navigation-list-item-border-color);
+      list-style: var(--navigation-list-item-list-style);
 
+      &.icon,
+      .icon {
         &:before {
-            content: var(--navigation-list-item-icon-content);
-            font-family: var(--navigation-list-item-icon-font-family, inherit);
-            line-height: var(--navigation-list-item-icon-line-height);
-            font-size: var(--navigation-list-item-icon-font-size, inherit);
-            vertical-align: middle;
-            padding: var(--navigation-list-item-icon-padding);
-            display: var(--navigation-list-item-icon-display);
+          @include icon.icon;
+          font-family: var(--navigation-link-icon-font-family);
+          font-size: var(--navigation-link-icon-font-size);
         }
+      }
 
-        a {
-            color: var(--navigation-link-text-color);
-            text-decoration: var(--navigation-link-text-decoration);
-
-            &:before {
-                color: var(--navigation-list-item-icon-before-text-color);
-            }
-
-            &:active {
-                color: var(--navigation-link-active-text-color);
-
-                &:before {
-                    color: var(--navigation-link-active-before-text-color);
-                }
-            }
-
-            &:hover {
-                color: var(--navigation-link-hover-text-color);
-
-                &:before {
-                    color: var(--navigation-link-hover-before-text-color);
-                }
-            }
-
-            &:visited {
-                color: var(--navigation-link-visited-text-color);
-
-                &:before {
-                    color: var(--navigation-link-visited-before-text-color);
-                }
-
-                &:hover {
-                color: var(--navigation-link-visited-hover-text-color);
-
-                    &:before {
-                        color: var(--navigation-link-visited-hover-before-text-color);
-                    }
-                }
-            }
+      &.icon{
+      &:before {
+            padding-right: var(--navigation-link-icon-padding-right);
+            padding-left: var(--navigation-link-icon-padding-left);
         }
+      }
+
+      > span:last-of-type {
+        font-size: 0;
+        padding-right: var(--navigation-link-icon-after-padding-right);
+        padding-left: var(--navigation-link-icon-after-padding-left);
+      }
     }
   }
 }

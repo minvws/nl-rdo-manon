@@ -2,6 +2,141 @@
 /*----------------------- footer.scss ---------------------------*/
 /*---------------------------------------------------------------*/
 @use "footer-variables";
+@use "icon";
+
+%link-styles {
+  background-color: var(--footer-link-background-color);
+  color: var(--footer-link-text-color);
+
+  &:before {
+    background-color: var(--footer-link-before-background-color);
+    color: var(--footer-link-before-text-color);
+  }
+}
+
+%link-hover {
+  background-color: var(--footer-link-hover-background-color);
+  color: var(--footer-link-hover-text-color);
+
+  &:before {
+    background-color: var(--footer-link-icon-hover-background-color);
+    color: var(--footer-link-icon-hover-text-color);
+  }
+
+  &:active,
+  &.active {
+    background-color: var(--footer-link-active-hover-background-color);
+    color: var(--footer-link-active-hover-text-color);
+  }
+  
+  &:focus,
+  &.focus {
+    background-color: var(--footer-link-focus-hover-background-color);
+    color: var(--footer-link-focus-hover-text-color);
+  }
+  
+  &:visited,
+  &.visited {
+    background-color: var(--footer-link-visited-hover-background-color);
+    color: var(--footer-link-visited-hover-text-color);
+  }
+}
+
+%link-active {
+  background-color: var(--footer-link-active-background-color);
+  color: var(--footer-link-active-text-color);
+
+  &:hover {
+    background-color: var(--footer-link-active-hover-background-color);
+    color: var(--footer-link-active-hover-text-color);
+  }
+}
+
+%link-focus {
+  background-color: var(--footer-link-focus-background-color);
+  color: var(--footer-link-focus-text-color);
+
+  &:hover {
+    background-color: var(--footer-link-focus-hover-background-color);
+    color: var(--footer-link-focus-hover-text-color);
+  }
+}
+
+%link-visited {
+  background-color: var(--footer-link-visited-background-color);
+  color: var(--footer-link-visited-text-color);
+
+  &:before {
+    background-color: var(--footer-link-visited-before-background-color);
+    color: var(--footer-link-visited-before-text-color);
+
+    &:hover {
+      background-color: var(--footer-link-visited-before-hover-background-color);
+      color: var(--footer-link-visited-before-hover-text-color);
+    }
+  }
+
+  &:active {
+    background-color: var(--footer-link-visited-active-background-color);
+    color: var(--footer-link-visited-active-text-color);
+  }
+}
+
+%footer-link-styling {
+  @extend %link-styles;
+
+  /* states */
+  &:hover,
+  &.hover /* Testing purposes */ {
+      @extend %link-hover;
+  }
+
+  &:active,
+  &.active /* Testing purposes */ {
+      @extend %link-active;
+  }
+
+  &:focus,
+  &.focus /* Testing purposes */ {
+      @extend %link-focus;
+  }
+
+  &:visited,
+  &.visited /* Testing purposes */ {
+    @extend %link-visited;
+
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+        @extend %link-visited;
+    }
+  }
+
+  &.icon,
+  .icon {
+  &:before {
+      @include icon.icon;
+      font-family: var(--footer-link-icon-font-family);
+      font-size: var(--footer-link-icon-font-size);
+    }
+  }
+
+  &.icon{
+  &:before {
+      padding-right: var(--footer-link-icon-padding-right);
+      padding-left: var(--footer-link-icon-padding-left);
+    }
+  }
+
+  > span:last-of-type {
+    font-size: 0;
+    padding-right: var(--footer-link-icon-after-padding-right);
+    padding-left: var(--footer-link-icon-after-padding-left);
+  }
+}
 
 body > footer,
 %footer-style {
@@ -35,50 +170,8 @@ body > footer,
     color: var(--footer-text-color);
   }
 
-  %link-styling {
-    color: var(--footer-link-text-color);
-    text-decoration: var(--footer-link-text-decoration);
-
-    &:before {
-      color: var(--footer-link-before-text-color);
-    }
-
-    &:active {
-      color: var(--footer-link-active-text-color);
-
-      &:before {
-        color: var(--footer-link-active-before-text-color);
-      }
-    }
-
-    &:hover {
-      color: var(--footer-link-hover-text-color);
-
-      &:before {
-        color: var(--footer-link-hover-before-text-color);
-      }
-    }
-
-    &:visited {
-      color: var(--footer-link-visited-text-color);
-
-      &:before {
-        color: var(--footer-link-visited-before-text-color);
-      }
-
-      &:hover {
-        color: var(--footer-link-visited-hover-text-color);
-
-        &:before {
-          color: var(--footer-link-visited-hover-before-text-color);
-        }
-      }
-    }
-  }
-
-  a,
-  a:visited {
-    @extend %link-styling;
+  a {
+    @extend %footer-link-styling;
   }
 
   nav,
@@ -95,16 +188,14 @@ body > footer,
           display: none; /* Preventing default nav before to show up */
         }
 
-        a,
-        a:visited {
-          @extend %link-styling;
+        a {
+          @extend %footer-link-styling;
         }
       }
     }
 
-		a,
-    a:visited {
-      @extend %link-styling;
-		}
+    a {
+      @extend %footer-link-styling;
+    }
 	}
 }
