@@ -1,9 +1,15 @@
-/*---------------------------------------------------------------*/
-/*----------------------- icon-variables.scss -------------------*/
-/*---------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+/*-------------------- icon-variables.scss ---------------------*/
+/*--------------------------------------------------------------*/
 :root {
-  /* Icon */
-  /* --icon-min-width: ; */
-  /* --icon-max-width: ; */
-  /* --icon-font-size: ; */
+  --icon-font-family: "Manon icons";
+  --icon-font-size: var(--application-base-font-size);
+  --icon-width: 2.75rem;
+  --icon-height: 2.75rem;
+
+  /* Image as icon */
+  --icon-image-width: var(--icon-width);
+  --icon-image-height: var(--icon-height);
+  --icon-image-min-height: var(--icon-image-width);
+  --icon-image-max-height: var(--icon-image-height);
 }

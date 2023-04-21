@@ -6,9 +6,13 @@
 --link-background-color: transparent;
 --link-text-color: #0000c2;
 
-/* Hover */
+/* Before */
 --link-before-background-color: var(--link-background-color);
 --link-before-text-color: var(--link-text-color);
+
+/* Hover */
+--link-hover-background-color: var(--link-background-color);
+--link-hover-text-color: var(--link-text-color);
 
 /* States */
 /* Hover */
@@ -42,4 +46,19 @@
 /* visited active */
 --link-visited-active-background-color: var(--link-background-color);
 --link-visited-active-text-color: var(--link-visited-text-color);
+
+/* Icon */
+--link-icon-font-family: var(--icon-font-family);
+--link-icon-font-size: var(--icon-font-size);
+--link-icon-padding-right: 0.5rem;
+--link-icon-padding-left: var(--icon-padding-left);
+--link-icon-text-color: var(--icon-text-color);
+--link-icon-padding-right: 0.5rem;
+--link-icon-padding-left: 0;
+
+/* Testen */
+--link-background-color: lavender;
+--link-text-color: red;
+--link-before-background-color: red;
+--link-before-text-color: var(--link-text-color);
 }

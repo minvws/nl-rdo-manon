@@ -2,6 +2,7 @@
 /*--------------------------- link.scss -------------------------*/
 /*---------------------------------------------------------------*/
 @use "link-variables";
+@use "icon";
 
 %link-styles {
   background-color: var(--link-background-color);
@@ -93,6 +94,18 @@ a {
     > h5,
     > h6 {
       @extend %link-visited;
+    }
+  }
+
+  &.icon {
+    &:before,
+    &:after {
+      @include icon.icon;
+      font-family: var(--link-icon-font-family);
+      font-size: var(--link-icon-font-size);
+      padding-right: var(--link-icon-padding-right);
+      padding-left: var(--link-icon-padding-left);
+      color: var(--link-icon-text-color);
     }
   }
 }

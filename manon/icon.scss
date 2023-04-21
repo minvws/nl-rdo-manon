@@ -1,0 +1,36 @@
+/*---------------------------------------------------------------------*/
+/*----------------------------- icon.scss -----------------------------*/
+/*---------------------------------------------------------------------*/
+@use "icon-variables";
+
+@mixin icon {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  line-height: 1;
+}
+
+.icon {
+  &:before,
+  :after {
+    @include icon;
+
+    font-family: var(--icon-font-family);
+    font-size: var(--icon-font-size);
+  }
+}
+
+img.icon {
+  object-position: center;
+  width: var(--icon-image-width);
+  min-width: var(--icon-image-width);
+  max-width: var(--icon-image-max-width);
+  height: var(--icon-image-height);
+  min-height: var(--icon-image-height);
+  max-height: var(--icon-image-max-height);
+  padding: 0;
+  box-sizing: border-box;
+}

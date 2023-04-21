@@ -2,6 +2,7 @@
 /*--------------------- button-icon.scss -------------------------*/
 /*---------------------------------------------------------------*/
 @use "button-icon-variables";
+@use "icon";
 
 button,
 a.button,
@@ -17,12 +18,12 @@ input[type="reset"] {
     height: var(--button-icon-height);
 
     &:before {
+      @include icon.icon;
+      font-family: var(--button-icon-font-family);
       font-size: var(--button-icon-font-size);
-      font-family: var(--icon-base-font-family);
-      text-align: center;
-      margin-right: 0;
-      color: var(--button-icon-text-color, inherit);
-      line-height: 1;
+      padding-right: var(--button-icon-padding-right);
+      padding-left: var(--button-icon-padding-left);
+      color: var(--button-icon-text-color);
     }
   }
 }

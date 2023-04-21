@@ -3,13 +3,17 @@
 /*---------------------------------------------------------------*/
 :root {
   /* Button */
-  --button-icon-min-width: var(--icon-base-min-width);
-  --button-icon-base-width: var(--icon-base-width);
-  --button-icon-min-height: var(--icon-base-min-height);
-  --button-icon-base-height: var(--icon-base-height);
-
+  --button-icon-min-width: 0;
+  --button-icon-width: auto;
+  --button-icon-min-height: var(--button-base-min-height);
+  --button-icon-height: var(--button-base-height);
+  
   /* Icon */
-  --button-icon-font-size: var(--icon-base-font-size);
-  --button-icon-font-family: var(--icon-base-font-family);
-  /* --button-icon-icon-text-color: ; */
+  --button-icon-font-family: var(--icon-font-family);
+  --button-icon-font-size: var(--icon-font-size);
+  --button-icon-padding-left: var(--icon-padding-left);
+  --button-icon-padding-right: var(--icon-padding-right);
+  --button-icon-text-color: var(--icon-text-color);
+  --button-icon-padding-right: 0;
+  --button-icon-padding-left: 0;
 }
