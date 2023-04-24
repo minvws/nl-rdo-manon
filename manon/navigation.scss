@@ -36,6 +36,19 @@ nav {
       border-style: var(--navigation-list-item-border-style);
       border-color: var(--navigation-list-item-border-color);
       list-style: var(--navigation-list-item-list-style);
+
+        &:before {
+            content: var(--navigation-list-item-icon-content);
+            font-family: var(--navigation-list-item-icon-font-family);
+            line-height: var(--navigation-list-item-icon-line-height);
+            font-size: var(--navigation-list-item-icon-font-size);
+            vertical-align: middle;
+            padding-top:  var(--navigation-list-item-icon-padding-top);
+            padding-right: var(--navigation-list-item-icon-padding-right);
+            padding-bottom:  var(--navigation-list-item-icon-padding-bottom);
+            padding-left:  var(--navigation-list-item-icon-padding-bottom);
+            display: var(--navigation-list-item-icon-display);
+        }
     }
   }
 }

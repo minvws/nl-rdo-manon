@@ -29,20 +29,12 @@
   --navigation-list-item-list-style: var(--list-base-item-list-style, initial);
 
   /* List item icon */
-  --navigation-list-icon-font-family: var(--icon-font-family);
-  --navigation-list-icon-font-size: var(--icon-font-size);
-  --navigation-list-icon-padding-right: 0.5rem;
-  --navigation-list-icon-padding-left: var(--icon-padding-left);
-  --navigation-list-icon-padding-right: 0.5rem;
-  --navigation-list-icon-padding-left: 0;
-
-  /* Icon at the end */
-  --navigation-list-icon-after-padding-right: 0;
-  --navigation-list-icon-after-padding-left: 0.5rem;
- 
-  /* Links */
-  /* Default */
-  --navigation-link-background-color: var(--link-background-color);
-  --navigation-link-text-color: var(--link-text-color);
-  --navigation-link-text-decoration: none;
+  --navigation-list-item-icon-content:"";
+  --navigation-list-item-icon-font-family: var(--icon-font-family);
+  --navigation-list-item-icon-font-size: var(--icon-font-size);
+  --navigation-list-item-icon-line-height: var(--application-base-line-height);
+  --navigation-list-item-icon-padding-top: 0;
+  --navigation-list-item-icon-padding-right: 0.5rem;
+  --navigation-list-item-icon-padding-bottom: 0;
+  --navigation-list-item-icon-padding-left: var(--icon-padding-left);
 }
