@@ -21,8 +21,9 @@
     --navigation-collapsible-menu-width: 100%;
 
     /* List collapsed */
-    --navigation-collapsible-menu-list-collapsed-background-color: var(--application-base-accent-color-tint-2);
+    --navigation-collapsible-menu-list-collapsed-background-color: var(--application-base-accent-color-tint-2, transparent);
     --navigation-collapsible-menu-list-collapsed-text-color: var(--application-base-accent-color-tint-2-text-color);
+    --navigation-collapsible-menu-list-collapsed-gap: 0;
 
       /* List item collapsed */
       --navigation-collapsible-menu-list-item-collapsed-border-width: 1px 0 0 0;

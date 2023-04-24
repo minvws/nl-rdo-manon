@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Header</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/css/docs-styling/header/header-example-variables.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+        <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+        <a href="./logo.html" class="logo">
+            <img src="../../static/img/logo.svg" alt="Placeholder logo">Bedrijfs of productnaam
+        </a>
+
+        <div>
+          <nav aria-label="Hoofdnavigatie">
+              <div>
+              <ul>
+                  <li><a href="../../index.html">Home</a></li>
+                  <li><a href="../components.html">Componenten</a></li>
+                  <li><a href="../documentation.html">Documentatie</a></li>
+              </ul>
+              </div>
+          </nav>
+
+          <div>
+            <nav aria-label="Hoofdnavigatie">
+                <div>
+                <ul>
+                    <li><a href="#">Uitloggen</a></li>
+                    <li><a href="#">Lorem</a></li>
+                </ul>
+                </div>
+            </nav>
+            <button>JP</button>
+          </div>
+        </div>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="#introduction">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Header visueel voorbeeld</h1>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+                <li>Voeg de benodigde HTML toe. Voor meer informatie zie: <a href="#examples">voorbeelden</a>.</li>
+              </li>
+            </ol>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden:</h1>
+            <p>Voor het visuele voorbeeld zie de header van deze pagina.</p>
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;header>
+    &lt;a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud&lt;/a>
+
+    &lt;nav aria-label="Hoofdnavigatie">
+        &lt;div>
+        &lt;ul>
+            &lt;li>&lt;a href="../../index.html">Home&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="../components.html">Componenten&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="../documentation.html">Documentatie&lt;/a>&lt;/li>
+        &lt;/ul>
+        &lt;/div>
+    &lt;/nav>
+&lt;/header>
+              </code>
+            </pre>
+            
+            <h2>Structuur-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;header>
+    &lt;!-- Skip to content button for accessibilty -->
+    &lt;a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud&lt;/a>
+    
+    &lt;!-- Header content  -->
+    &lt;nav aria-label="Hoofdnavigatie">
+        &lt;div>
+        &lt;ul>
+            &lt;li>&lt;a href="../../index.html">Home&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="../components.html">Componenten&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="../documentation.html">Documentatie&lt;/a>&lt;/li>
+        &lt;/ul>
+        &lt;/div>
+    &lt;/nav>
+&lt;/header>
+              </code>
+            </pre>
+
+          </section>
+          
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

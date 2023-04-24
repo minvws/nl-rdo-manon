@@ -19,6 +19,7 @@ body > header,
   padding-left: var(--header-padding-left);
   max-width: var(--header-max-width);
   background-color: var(--header-background-color);
+  min-height: var(--header-min-height);
 
   > section,
   > div {

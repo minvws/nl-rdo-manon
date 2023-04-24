@@ -20,4 +20,14 @@
   --header-navigation-link-icon-active-hover-background-color: var(--header-navigation-link-icon-active-hover-background-color);
   --header-navigation-link-icon-active-hover-text-color: var(--header-navigation-link-icon-active-hover-background-color);
   --header-navigation-link-icon-active-hover-text-decoration: var(--header-navigation-link-icon-active-hover-text-decoration);
+
+  /* Visible active link */
+  --header-navigation-link-active-visited-background-color: var(--header-navigation-link-icon-active-hover-background-color);
+  --header-navigation-link-active-visited-text-color: var(--header-navigation-link-icon-active-hover-text-color);
+  --header-navigation-link-active-visited-text-decoration: var(--header-navigation-link-icon-active-hover-text-decoration);
+  
+  /* Visible active link icon */
+  --header-navigation-link-icon-active-visited-background-color: var(--header-navigation-link-icon-active-hover-background-color);
+  --header-navigation-link-icon-active-visited-text-color: var(--header-navigation-link-icon-active-hover-text-color);
+  --header-navigation-link-icon-active-visited-text-decoration: var(--header-navigation-link-icon-active-hover-text-decoration);
 }

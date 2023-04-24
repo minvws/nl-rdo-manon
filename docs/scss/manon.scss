@@ -79,7 +79,6 @@
 @use "@minvws/manon/layout-centered";
 @use "@minvws/manon/layout-form";
 
-
 /* Button */
 @use "@minvws/manon/button-base";
 @use "@minvws/manon/button-container";
@@ -87,6 +86,15 @@
 @use "@minvws/manon/button-cta";
 @use "@minvws/manon/button-icon";
 @use "@minvws/manon/button-to-top";
+
+
+/* Navigation */
+@use "@minvws/manon/navigation";
+/*@use "@minvws/manon/navigation-link";
+@use "@minvws/manon/navigation-link-hover";
+@use "@minvws/manon/navigation-link-active";
+@use "@minvws/manon/navigation-link-visited";*/
+@use "@minvws/manon/navigation-content-wrapper";
 
 /* Header */
 @use "@minvws/manon/header";
@@ -98,14 +106,6 @@
 @use "@minvws/manon/header-navigation-link-active";
 @use "@minvws/manon/header-navigation-link-visited";
 @use "@minvws/manon/header-navigation-content-wrapper";
-
-/* Navigation */
-@use "@minvws/manon/navigation";
-@use "@minvws/manon/navigation-link";
-@use "@minvws/manon/navigation-link-hover";
-@use "@minvws/manon/navigation-link-active";
-@use "@minvws/manon/navigation-link-visited";
-@use "@minvws/manon/navigation-content-wrapper";
 
 /* Main */
 @use "@minvws/manon/main";
@@ -130,10 +130,10 @@
 
 /* Footer */
 @use "@minvws/manon/footer";
-@use "@minvws/manon/footer-link";
+/*@use "@minvws/manon/footer-link";
 @use "@minvws/manon/footer-link-hover";
 @use "@minvws/manon/footer-link-active";
-@use "@minvws/manon/footer-link-visited";
+@use "@minvws/manon/footer-link-visited";*/
 @use "@minvws/manon/footer-two-thirds-one-third";
 
 /* Components */
