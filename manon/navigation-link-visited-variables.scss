@@ -1,0 +1,23 @@
+/*---------------------------------------------------------------*/
+/*------------- navigation-link-visited-variables.scss -----------*/
+/*---------------------------------------------------------------*/
+:root {
+  --navigation-link-visited-background-color: var(--link-visited-background-color);
+  --navigation-link-visited-text-color: var(--link-visited-text-color);
+  --navigation-link-visited-text-decoration: var(--link-visited-text-decotation);
+
+  /* Icon */
+  --navigation-link-icon-visited-background-color: var(--navigation-link-icon-visited-background-color);
+  --navigation-link-icon-visited-text-color: var(--navigation-link-icon-visited-text-color);
+  --navigation-link-icon-visited-text-decoration: var(--navigation-link-icon-visited-text-decoration);
+
+  /* visited on hover */
+  --navigation-link-visited-hover-background-color: var(--link-visited-hover-background-color);
+  --navigation-link-visited-hover-text-color: var(--link-visited-hover-text-color);
+  --navigation-link-visited-hover-text-decoration: var(--link-visited-hover-text-decotation);
+
+  /* visited on hover icon */
+  --navigation-link-icon-visited-hover-background-color: var(--navigation-link-icon-visited-hover-background-color);
+  --navigation-link-icon-visited-hover-text-color: var(--navigation-link-icon-visited-hover-background-color);
+  --navigation-link-icon-visited-hover-text-decoration: var(--navigation-link-icon-visited-hover-text-decoration);
+}

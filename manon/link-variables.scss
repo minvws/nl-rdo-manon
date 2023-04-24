@@ -4,7 +4,7 @@
 :root {
 /* Default */
 --link-background-color: transparent;
---link-text-color: #0000c2;
+--link-text-color: #2f2f9a;
 --link-text-decoration: initial;
 
 /* States */
@@ -64,36 +64,4 @@
 /* Icon at the end */
 --link-icon-after-padding-right: 0;
 --link-icon-after-padding-left: 0.5rem;
-
-
-/* Testen */
---link-background-color: pink;
---link-text-color: red;
-
---link-hover-background-color: yellow;
---link-hover-text-color: black;
-
-/* Active */
---link-active-background-color: palegreen;
---link-active-text-color: green;
-
-/* Active hover */
---link-active-hover-background-color: purple;
---link-active-hover-text-color: lavender;
-
-/* Focus */
---link-focus-background-color: blue;
---link-focus-text-color: palegoldenrod;
-
-/* Focues Hover*/
---link-focus-hover-background-color: salmon;
---link-focus-hover-text-color: black;
-
-/* Visited */
---link-visited-background-color: aliceblue;
---link-visited-text-color: darkblue;
-
-/* Visited hover */
---link-visited-hover-background-color: silver;
---link-visited-hover-text-color: black;
 }

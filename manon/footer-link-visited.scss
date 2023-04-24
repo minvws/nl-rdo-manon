@@ -1,0 +1,37 @@
+/*---------------------------------------------------------------*/
+/*------------------ footer-link-visited.scss -------------------*/
+/*---------------------------------------------------------------*/
+@use "footer-link-visited-variables";
+
+body > footer,
+%footer-style {
+    nav {
+        a {
+            &:visited,
+            &.visited /* Testing purposes */ {
+                background-color: var(--footer-link-visited-background-color);
+                color: var(--footer-link-visited-text-color);
+                text-decoration: var(--footer-link-visited-text-decoration);
+
+                &:before {
+                    background-color: var(--footer-link-icon-visited-background-color);
+                    color: var(--footer-link-icon-visited-text-color);
+                    text-decoration: var(--footer-link-icon-visited-text-decoration);
+                }
+
+                &:hover,
+                &.hover /* Testing purposes */ {
+                    background-color: var(--footer-link-visited-hover-background-color);
+                    color: var(--footer-link-visited-hover-text-color);
+                    text-decoration: var(--footer-link-visited-hover-text-decoration);
+                    
+                    &:before {
+                        background-color: var(--footer-link-icon-visited-hover-background-color);
+                        color: var(--footer-link-icon-visited-hover-text-color);
+                        text-decoration: var(--footer-link-icon-visited-hover-text-decoration);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+/*---------------------------------------------------------------*/
+/*-------------------- footer-link-hover.scss -------------------*/
+/*---------------------------------------------------------------*/
+@use "footer-link-hover-variables";
+
+body > footer,
+%footer-style {
+    nav {
+        a {
+            &:hover,
+            &.hover /* Testing purposes */ {
+                background-color: var(--footer-link-hover-background-color);
+                color: var(--footer-link-hover-text-color);
+                text-decoration: var(--footer-link-hover-text-decoration);
+
+                &:before {
+                    background-color: var(--footer-link-icon-hover-background-color);
+                    color: var(--footer-link-icon-hover-text-color);
+                    text-decoration: var(--footer-link-icon-hover-text-decoration);
+                }
+            }
+        }
+    }
+}

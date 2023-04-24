@@ -16,6 +16,19 @@ nav {
                 color: var(--navigation-link-icon-active-text-color);
                 text-decoration: var(--navigation-link-icon-active-text-decoration);
             }
+
+            &:hover,
+            &.hover /* Testing purposes */ {
+                background-color: var(--navigation-link-active-hover-background-color);
+                color: var(--navigation-link-active-hover-text-color);
+                text-decoration: var(--navigation-link-active-hover-text-decoration);
+                
+                &:before {
+                    background-color: var(--navigation-link-icon-active-hover-background-color);
+                    color: var(--navigation-link-icon-active-hover-text-color);
+                    text-decoration: var(--navigation-link-icon-active-hover-text-decoration);
+                }
+            }
         }
     }
 }
