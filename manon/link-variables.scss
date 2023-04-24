@@ -2,12 +2,66 @@
 /*------------------------------- link-variables.scss ------------------------------*/
 /*----------------------------------------------------------------------------------*/
 :root {
-  /* Link */
-  --link-background-color: transparent;
-  --link-text-color: #0000c2;
-  --link-hover-text-color: #000088;
+/* Default */
+--link-background-color: transparent;
+--link-text-color: #2f2f9a;
+--link-text-decoration: initial;
 
-  /* Visted link */
-  --link-visited-text-color: #5b109f;
-  --link-visited-hover-text-color: #400b6f;
+/* States */
+/* Hover */
+--link-hover-background-color: var(--link-background-color);
+--link-hover-text-color: var(--link-text-color);
+--link-hover-text-decoration: var(--link-text-decoration);
+
+/* Active */
+--link-active-background-color: var(--link-background-color);
+--link-active-text-color: var(--link-text-color);
+--link-active-text-decoration: var(--link-text-decoration);
+
+/* Active Hover*/
+--link-active-hover-background-color: var(--link-active-background-color);
+--link-active-hover-text-color: var(--link-active-text-color);
+--link-active-hover-text-decoration: var(--link-text-decoration);
+
+/* Focus */
+--link-focus-background-color: var(--link-background-color);
+--link-focus-text-color: var(--link-text-color);
+--link-focus-text-decoration: var(--link-text-decoration);
+
+/* Focues Hover*/
+--link-focus-hover-background-color: var(--link-focus-background-color);
+--link-focus-hover-text-color: var(--link-focus-text-color);
+--link-focus-hover-text-decoration: var(--link-text-decoration);
+
+/* Visited */
+--link-visited-background-color: var(--link-background-color);
+--link-visited-text-color: var(--link-text-color);
+--link-visited-text-decoration: var(--link-text-decoration);
+
+/* Visited hover */
+--link-visited-hover-background-color: var(--link-background-color);
+--link-visited-hover-text-color: var(--link-visited-text-color);
+--link-visited-hover-text-decoration: var(--link-text-decoration);
+
+/* Visited icon hover */
+--link-visited-icon-hover-background-color: var(--link-background-color);
+--link-visited-icon-hover-text-color: var(--link-visited-hover-text-color);
+--link-visited-icon-hover-text-decoration: var(--link-text-decoration);
+
+/* visited active */
+--link-visited-active-background-color: var(--link-background-color);
+--link-visited-active-text-color: var(--link-visited-text-color);
+--link-visited-active-text-decoration: var(--link-text-decoration);
+
+/* Icon */
+--link-icon-font-family: var(--icon-font-family);
+--link-icon-font-size: var(--icon-font-size);
+--link-icon-padding-right: 0.5rem;
+--link-icon-padding-left: var(--icon-padding-left);
+--link-icon-padding-right: 0.5rem;
+--link-icon-padding-left: 0;
+
+/* Icon at the end */
+--link-icon-after-padding-right: 0;
+--link-icon-after-padding-left: 0.5rem;
 }

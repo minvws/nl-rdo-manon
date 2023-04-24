@@ -29,36 +29,12 @@
   --navigation-list-item-list-style: var(--list-base-item-list-style, initial);
 
   /* List item icon */
-  --navigation-list-item-icon-display: none; /* Set to initial when using an icon */
-  --navigation-list-item-icon-font-family: var(--icon-base-font-family);
-  --navigation-list-item-icon-line-height: var(--navigation-list-line-height);
-  --navigation-list-item-icon-content:  "";
-  --navigation-list-item-icon-font-size: var(--navigation-title-font-size);
-  --navigation-list-item-icon-padding: 0 0.5rem 0 0;
- 
-  /* Links */
-    /* Links */
-    --navigation-link-text-color: var(--navigation-text-color);
-    --navigation-link-before-text-color: var(--navigation-link-text-color);
-    --navigation-link-text-decoration: none;
-  
-    /* Links visited */
-    --navigation-link-visited-text-color: var(--navigation-link-text-color);
-    --navigation-link-visited-before-text-color: var(--navigation-link-visited-text-color);
-    --navigation-link-visited-text-decoration: var(--navigation-link-text-decoration);
-  
-    /* Links hover */
-    --navigation-link-hover-text-color: var(--navigation-link-text-color);
-    --navigation-link-hover-before-text-color: var(--navigation-link-hover-text-color);
-    --navigation-link-hover-text-decoration: underline;
-  
-    /* Links visited hover */
-    --navigation-link-visited-hover-text-color: var(--navigation-link-text-color);
-    --navigation-link-visited-hover-before-text-color: var(--navigation-link-visited-hover-text-color);
-    --navigation-link-visited-hover-text-decoration: var(--navigation-link-hover-text-decoration);
-    
-    /* Links active */
-    --navigation-link-active-text-color: var(--navigation-link-text-color);
-    --navigation-link-active-before-text-color: --navigation-link-active-text-color;
-    --navigation-link-active-text-decoration: var(--navigation-link-hover-text-decoration);
+  --navigation-list-item-icon-content:"";
+  --navigation-list-item-icon-font-family: var(--icon-font-family);
+  --navigation-list-item-icon-font-size: var(--icon-font-size);
+  --navigation-list-item-icon-line-height: var(--application-base-line-height);
+  --navigation-list-item-icon-padding-top: 0;
+  --navigation-list-item-icon-padding-right: 0.5rem;
+  --navigation-list-item-icon-padding-bottom: 0;
+  --navigation-list-item-icon-padding-left: var(--icon-padding-left);
 }

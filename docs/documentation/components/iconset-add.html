@@ -108,7 +108,7 @@
             <p>Ter info:</p>
             <ul>
               <li>
-                <code>@extend %icon-text-styling</code> voegt de styling toe zoals deze binnen
+                <code>@include icon</code> voegt de styling toe zoals deze binnen
                 <code>@minvws/manon/icon-base</code> gedefinieerd staat.
               </li>
             </ul>
@@ -123,7 +123,7 @@
 
   .icon {
     &:before {
-      @extend %icon-text-styling;
+      @include icon;
     }
 
     &.icon-cat:before {

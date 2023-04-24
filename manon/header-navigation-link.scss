@@ -1,0 +1,36 @@
+/*---------------------------------------------------------------*/
+/*---------------- header-navigation-link.scss ------------------*/
+/*---------------------------------------------------------------*/
+@use "header-navigation-link-variables";
+@use "icon";
+
+nav {
+    a {
+        background-color: var(--header-navigation-link-background-color);
+        color: var(--header-navigation-link-text-color);
+        text-decoration: var(--header-navigation-link-text-decoration);
+        
+        &.icon,
+        .icon {
+        &:before {
+            @include icon.icon;
+            font-family: var(--header-navigation-link-icon-font-family);
+            font-size: var(--header-navigation-link-icon-font-size);
+            
+          }
+        }
+
+        &.icon{
+        &:before {
+            padding-right: var(--header-navigation-link-icon-padding-right);
+            padding-left: var(--header-navigation-link-icon-padding-left);
+          }
+        }
+
+        > span:last-of-type {
+          font-size: 0;
+          padding-right: var(--header-navigation-link-icon-after-padding-right);
+          padding-left: var(--header-navigation-link-icon-after-padding-left);
+        }
+    }
+}

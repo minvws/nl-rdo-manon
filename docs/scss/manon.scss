@@ -40,7 +40,7 @@
 @use "@minvws/manon/application-base";
 
 /* Icon base and icon-sets */
-@use "@minvws/manon/icon-base";
+@use "@minvws/manon/icon";
 @use "@minvws/manon/icon-set-example";
 
 /* Text */
@@ -93,10 +93,18 @@
 
 /* Header navigation */
 @use "@minvws/manon/header-navigation";
+@use "@minvws/manon/header-navigation-link";
+@use "@minvws/manon/header-navigation-link-hover";
+@use "@minvws/manon/header-navigation-link-active";
+@use "@minvws/manon/header-navigation-link-visited";
 @use "@minvws/manon/header-navigation-content-wrapper";
 
 /* Navigation */
 @use "@minvws/manon/navigation";
+@use "@minvws/manon/navigation-link";
+@use "@minvws/manon/navigation-link-hover";
+@use "@minvws/manon/navigation-link-active";
+@use "@minvws/manon/navigation-link-visited";
 @use "@minvws/manon/navigation-content-wrapper";
 
 /* Main */
@@ -122,6 +130,10 @@
 
 /* Footer */
 @use "@minvws/manon/footer";
+@use "@minvws/manon/footer-link";
+@use "@minvws/manon/footer-link-hover";
+@use "@minvws/manon/footer-link-active";
+@use "@minvws/manon/footer-link-visited";
 @use "@minvws/manon/footer-two-thirds-one-third";
 
 /* Components */

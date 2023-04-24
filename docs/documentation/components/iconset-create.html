@@ -114,7 +114,7 @@
             <p>Ter info:</p>
             <ul>
               <li>
-                <code>@extend %icon-text-styling</code> voegt de styling toe zoals deze binnen
+                <code>@include icon</code> voegt de styling toe zoals deze binnen
                 <code>@minvws/manon/icon-base</code> gedefinieerd staat.
               </li>
               <li>
@@ -135,7 +135,7 @@
 
 .icon {
   &:before {
-    @extend %icon-text-styling;
+    @include icon;
   }
 
   &.icon-cat:before {
@@ -157,7 +157,7 @@
               <code>
 .icon {
   &:before {
-    @extend %icon-text-styling;
+    @include icon;
   }
 
   &.icon-cat:before {
@@ -174,7 +174,7 @@
               <code>
 .icon {
   &:after {
-    @extend %icon-text-styling;
+    @include icon;
   }
 
   &.icon-cat:after {
@@ -197,7 +197,7 @@
 .icon {
   &:before,
   &:after {
-    @extend %icon-text-styling;
+    @include icon;
   }
 
   &.icon-cat-before:before,

@@ -9,11 +9,6 @@
 }
 
 .icon {
-  &:before {
-    position: static;
-    font-family: var(--icon-base-font-family);
-  }
-
   &.icon-cat:before {
     content: "\e900";
   }

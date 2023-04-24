@@ -35,57 +35,7 @@ body > footer,
     color: var(--footer-text-color);
   }
 
-  %link-styling {
-    color: var(--footer-link-text-color);
-    text-decoration: var(--footer-link-text-decoration);
-
-    &:before {
-      color: var(--footer-link-before-text-color);
-    }
-
-    &:active {
-      color: var(--footer-link-active-text-color);
-
-      &:before {
-        color: var(--footer-link-active-before-text-color);
-      }
-    }
-
-    &:hover {
-      color: var(--footer-link-hover-text-color);
-
-      &:before {
-        color: var(--footer-link-hover-before-text-color);
-      }
-    }
-
-    &:visited {
-      color: var(--footer-link-visited-text-color);
-
-      &:before {
-        color: var(--footer-link-visited-before-text-color);
-      }
-
-      &:hover {
-        color: var(--footer-link-visited-hover-text-color);
-
-        &:before {
-          color: var(--footer-link-visited-hover-before-text-color);
-        }
-      }
-    }
-  }
-
-  a,
-  a:visited {
-    @extend %link-styling;
-  }
-
-  nav,
-  nav h1 {
-		color: var(--footer-link-text-color);
-    text-decoration: var(--footer-link-text-decoration);
-
+  nav {
     ul,
     ol {
       background-color: transparent;
@@ -94,17 +44,7 @@ body > footer,
         &:before {
           display: none; /* Preventing default nav before to show up */
         }
-
-        a,
-        a:visited {
-          @extend %link-styling;
-        }
       }
     }
-
-		a,
-    a:visited {
-      @extend %link-styling;
-		}
 	}
 }
