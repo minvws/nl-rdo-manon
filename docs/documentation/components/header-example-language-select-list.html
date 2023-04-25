@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Header met language selector list</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/css/docs-styling/header/header-example-language-select-list-variables.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+        <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+        <a href="./logo.html" class="logo">
+            <img src="../../static/img/logo-white.svg" alt="Placeholder logo">Bedrijfs of productnaam
+        </a>
+
+        <div>
+          <nav aria-label="Hoofdnavigatie">
+            <div>
+              <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../components.html">Componenten</a></li>
+                <li><a href="../documentation.html">Documentatie</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="language-selector">
+            <p>Kies een taal:</p>
+            <p class="visually-hidden" id="language-selector-description">Select your language</p>
+            <div class="language-selector-options" aria-describedby="language-selector-description" aria-expanded="false">
+              <button aria-haspopup="listbox" aria-current="true">
+                Papiamentu
+              </button>
+              <ul role="listbox">
+                  <li>
+                    <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands</a>
+                  </li>
+                  <li>
+                    <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
+                  </li>
+                  <li>
+                    <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
+                  </li>
+                  <li aria-current="true">
+                    <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
+                  </li>
+                  <li>
+                    <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <button class="round">LO</button>
+        </div>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="#introduction">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Header met language selector list visueel voorbeeld</h1>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+                <li>Voeg de benodigde HTML toe. Voor meer informatie zie: <a href="#examples">voorbeelden</a>.</li>
+              </li>
+            </ol>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden:</h1>
+            <p>Voor het visuele voorbeeld zie de header van deze pagina.</p>
+            <h2>Html-voorbeeld:</h2>
+            <pre>
+              <code>
+&lt;header>
+  &lt;a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud&lt;/a>
+
+  &lt;a href="./logo.html" class="logo">
+      &lt;img src="../../static/img/logo-white.svg" alt="Placeholder logo">Bedrijfs of productnaam
+  &lt;/a>
+
+  &lt;div>
+    &lt;nav aria-label="Hoofdnavigatie">
+      &lt;div>
+        &lt;ul>
+          &lt;li>&lt;a href="../../index.html">Home&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="../components.html">Componenten&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="../documentation.html">Documentatie&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/div>
+    &lt;/nav>
+    &lt;div class="language-selector">
+      &lt;p>Kies een taal:&lt;/p>
+      &lt;p class="visually-hidden" id="language-selector-description">Select your language&lt;/p>
+      &lt;div class="language-selector-options" aria-describedby="language-selector-description" aria-expanded="false">
+        &lt;button aria-haspopup="listbox" aria-current="true">
+          Papiamentu
+        &lt;/button>
+        &lt;ul role="listbox">
+            &lt;li>
+              &lt;a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands&lt;/a>
+            &lt;/li>
+            &lt;li>
+              &lt;a hreflang="en" href="#" role="option" data-value="English" lang="en">English&lt;/a>
+            &lt;/li>
+            &lt;li>
+              &lt;a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk&lt;/a>
+            &lt;/li>
+            &lt;li aria-current="true">
+              &lt;a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu&lt;/a>
+            &lt;/li>
+            &lt;li>
+              &lt;a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento&lt;/a>
+            &lt;/li>
+        &lt;/ul>
+      &lt;/div>
+    &lt;/div>
+    &lt;button class="round">LO&lt;/button>
+  &lt;/div>
+&lt;/header>
+              </code>
+            </pre>
+            
+              </code>
+            </pre>
+
+          </section>
+          
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

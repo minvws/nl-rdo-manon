@@ -14,4 +14,12 @@
   --header-padding-left: 0;
   --header-max-width: 100%;
   --header-background-color: transparent;
+  --header-min-height: 0;
+
+  /* Grouped content */
+  --header-content-wrapper-gap: 1rem;
+  --header-content-wrapper-flex-direction: row;
+  --header-content-wrapper-justify-content: flex-end;
+  --header-content-wrapper-align-items: center;
+  --header-content-wrapper-width: 100%;
 }

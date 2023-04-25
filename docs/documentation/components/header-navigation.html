@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Header</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index" class="documentation">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./header-navigation.html" aria-current="page">Header</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="#introduction">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
+          <li><a href="#related">Gerelateerde pagina's</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Header</h1>
+            <p>De header-navigation wordt vaak gebruikt als extra navigatiepunt en om aan te geven aan de gebruiker dat het einde van de pagina bereikt is.</p>
+
+            <h2>Benodigde stappen:</h2>
+            <ol>
+              <li>
+                Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde
+                en optionele bestanden zie:
+                <a href="#requirements">Bijbehorende bestanden</a>.
+                <li>Voeg de benodigde HTML toe. Voor meer informatie zie: <a href="#examples">voorbeelden</a>.</li>
+              </li>
+            </ol>
+          </section>
+
+          <section id="examples">
+            <h1>Voorbeelden:</h1>
+            <ul>
+                <li><a href="header-example.html">Navigatie</a></li>
+                <li><a href="header-example-logo.html">Navigatie en logo</a></li>
+                <li><a href="header-example-logo-above.html">Navigatie met Logo bovenaan</a></li>
+                <li><a href="header-example-multiple-menus.html">Navigatie met meerdere menu's</a></li>
+                <li><a href="header-example-language-select-list.html">Navigatie taalselectie</a></li>
+            </ul>            
+          </section>
+
+          <section id="requirements">
+            <h1>Bijbehorende bestanden</h1>
+            <p>Voeg de (s)css-bestanden toe aan het project of importeer de bestanden.</p>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+            <h2>Importeer component via NPM</h2>
+            <h3>CSS-voorbeeld:</h3>
+            <pre>
+              <code>
+@use "@minvws/manon/header-navigation";
+              </code>
+            </pre>
+          </section>
+
+          <section id="variables">
+            <h1>Instelbare variabelen</h1>
+            <div class="horizontal-scroll">
+              <table class="nowrap">
+                <caption>Instelbare css-variabelen:</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Variabele</th>
+                    <th scope="col">CSS-attribuut</th>
+                    <th scope="col">Manon ingestelde waarde</th>
+                    <th scope="col">Breekpunt</th>
+                    <th scope="col">Class</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>--header-navigation-flex-direction</td>
+                    <td><a href="../variables.html#flex-direction">flex-direction</a></td>
+                    <td>column</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-gap</td>
+                    <td><a href="../variables.html#gap">gap</a></td>
+                    <td>var(--application-base-gap-medium)</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-justify-content</td>
+                    <td><a href="../variables.html#justify-content">justify-content</a></td>
+                    <td>center</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-align-items</td>
+                    <td><a href="../variables.html#align-items">align-items</a></td>
+                    <td>flex-start</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-flex-wrap</td>
+                    <td><a href="../variables.html#flex-wrap">flex-wrap</a></td>
+                    <td>wrap</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-min-height</td>
+                    <td><a href="../variables.html#min-height">min-height</a></td>
+                    <td>10rem</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-background-color</td>
+                    <td><a href="../variables.html#background-color">background-color</a></td>
+                    <td>var(--application-base-tint-1-background-color)</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-text-color</td>
+                    <td><a href="../variables.html#text-color">text-color</a></td>
+                    <td>var(--application-base-tint-1-text-color)</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-padding-top</td>
+                    <td><a href="../variables.html#padding-top">padding-top</a></td>
+                    <td>var(--content-padding-top)</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-padding-right</td>
+                    <td><a href="../variables.html#padding-right">padding-right</a></td>
+                    <td>5%</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-padding-bottom</td>
+                    <td><a href="../variables.html#padding-bottom">padding-bottom</a></td>
+                    <td>var(--content-padding-bottom)</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-padding-left</td>
+                    <td><a href="../variables.html#padding-left">padding-left</a></td>
+                    <td>5%</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-max-width</td>
+                    <td><a href="../variables.html#max-width">max-width</a></td>
+                    <td>100%</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-link-text-color</td>
+                    <td><a href="../variables.html#text-color">text-color</a></td>
+                    <td>var(--header-navigation-text-color)</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-link-text-decoration</td>
+                    <td><a href="../variables.html#text-decoration">text-decoration</a></td>
+                    <td>none</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-link-hover-text-color</td>
+                    <td><a href="../variables.html#text-color">text-color</a></td>
+                    <td>var(--header-navigation-link-text-color)</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>--header-navigation-link-hover-text-decoration</td>
+                    <td><a href="../variables.html#text-decoration">text-decoration</a></td>
+                    <td>underline</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>CSS</h3>
+              <p>Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw project. Kies en gebruik de benodigde variabelen.</p>
+              <pre>
+                <code>
+:root {
+  --header-navigation-min-height: ;
+  --header-navigation-justify-content: ;
+  --header-navigation-align-items: ;
+  --header-navigation-flex-wrap: ;
+  --header-navigation-background-color: ;
+  --header-navigation-text-color: ;
+  --header-navigation-padding: ;
+
+  /* Links */
+  --header-navigation-link-text-color: ;
+  --header-navigation-link-text-decoration: ;
+
+  /* Links hover */
+  --header-navigation-link-hover-text-color: ;
+  --header-navigation-link-hover-text-decoration: ;
+}
+                </code>
+              </pre>
+          </section>
+
+          <section id="related">
+            <h2>Gerelateerde pagina's</h2>
+            <a href="./header-navigation-two-thirds-one-third.html">Hoofdnavigatie tweederde eenderde</a>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

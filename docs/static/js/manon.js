@@ -366,7 +366,7 @@
     }
   }
   function makeResponsive(nav, isCondensed) {
-    var menu = nav.querySelector("ul, ol");
+    var menu = nav.querySelector("div");
     if (!(menu instanceof HTMLElement)) {
       return;
     }

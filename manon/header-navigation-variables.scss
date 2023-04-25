@@ -1,13 +1,13 @@
 /*---------------------------------------------------------------*/
 /*-------------- header-navigation-variables.scss ---------------*/
 /*---------------------------------------------------------------*/
+
 :root {
   /* header-Navigation layout */
   --header-navigation-gap: 2rem;
   --header-navigation-justify-content: flex-start;
   --header-navigation-align-items: center;
-  --header-navigation-min-height: 0;
-  --header-navigation-width: 100%;
+  --header-navigation-min-height: 3rem;
   --header-navigation-padding-top: 0;
   --header-navigation-padding-right: 0;
   --header-navigation-padding-bottom: 0;
@@ -15,20 +15,20 @@
   --header-navigation-margin: 0;
   --header-navigation-background-color: var(--application-base-accent-color);
   --header-navigation-text-color: var(--application-base-accent-color-text-color);
+  --header-navigation-width: 100%;
   --header-navigation-max-width: 100%;
   --header-navigation-border-width: 0;
   --header-navigation-border-style: solid;
   --header-navigation-border-color: transparent;
   --header-navigation-border-radius: 0;
+  --header-navigation-position: relative;
   
   /* Content wrapper - Usualy a div to match main content alignment */
   --header-navigation-content-wrapper-padding-top: 0;
   --header-navigation-content-wrapper-padding-right: 0;
   --header-navigation-content-wrapper-padding-bottom: 0;
   --header-navigation-content-wrapper-padding-left: 0;
-  --header-navigation-content-wrapper-max-width: var(
-    --content-max-width
-  );
+  --header-navigation-content-wrapper-max-width: var(--content-max-width);
 
   /* List */
   --header-navigation-list-gap: 1rem;
@@ -124,5 +124,4 @@
   --header-navigation-button-hover-border-style: var(--header-navigation-button-border-style);
   --header-navigation-button-hover-border-color: var(--header-navigation-button-border-color);
   --header-navigation-button-hover-border-radius: var(--header-navigation-button-border-radius);
-
 }

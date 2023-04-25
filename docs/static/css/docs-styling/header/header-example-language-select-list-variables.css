@@ -1,0 +1,37 @@
+/*------------------------------------------------------------------------*/
+/*-------------------------- header-example.css --------------------------*/
+/*------------------------------------------------------------------------*/
+
+:root {
+  /* Header */
+  --header-padding-right: 1rem;
+  --header-padding-left: 1rem;
+  --header-min-height: 3rem;
+  --header-flex-direction: row;
+  --header-justify-content: space-between;
+  --header-background-color: #1b1b39;
+  --header-navigation-text-color: white;
+  --header-navigation-position: initial;
+
+  /* Grouped content */
+
+
+  /* Navigation */
+  --header-navigation-border-width: 0;
+  --header-navigation-width: auto;
+
+  /* Link styling */
+  --header-navigation-link-text-color: white;
+  --header-navigation-link-hover-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-visited-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-visited-hover-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-active-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-active-hover-text-color: var(--header-navigation-link-text-color);
+
+  /* Language selector list */
+  --language-selector-list-label-text-color: #fff;
+
+  /* Menu toggle button */
+  --navigation-collapsible-menu-button-background-color: transparent;
+  --navigation-collapsible-menu-icon-color: var(--header-navigation-link-text-color);
+}

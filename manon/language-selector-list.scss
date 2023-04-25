@@ -16,6 +16,8 @@ body > header nav .language-selector,
   width: auto;
   position: relative;
   margin: unset;
+  gap: var(--language-selector-list-label-gap);
+  color: var(--language-selector-list-label-text-color);
 
   > p {
     font-size: var(--language-selector-list-label-font-size);

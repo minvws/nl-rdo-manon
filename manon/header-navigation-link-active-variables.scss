@@ -7,9 +7,9 @@
   --header-navigation-link-active-text-decoration: var(--link-active-text-decotation);
 
   /* Icon */
-  --header-navigation-link-icon-active-background-color: var(--header-navigation-link-icon-active-background-color);
-  --header-navigation-link-icon-active-text-color: var(--header-navigation-link-icon-active-text-color);
-  --header-navigation-link-icon-active-text-decoration: var(--header-navigation-link-icon-active-text-decoration);
+  --header-navigation-link-icon-active-background-color: var(--header-navigation-link-active-background-color);
+  --header-navigation-link-icon-active-text-color: var(--header-navigation-link-active-text-color);
+  --header-navigation-link-icon-active-text-decoration: var(--header-navigation-link-active-text-decoration);
 
   /* Active on hover */
   --header-navigation-link-active-hover-background-color: var(--link-active-hover-background-color);
@@ -17,7 +17,17 @@
   --header-navigation-link-active-hover-text-decoration: var(--link-active-hover-text-decotation);
 
   /* Active on hover icon */
-  --header-navigation-link-icon-active-hover-background-color: var(--header-navigation-link-icon-active-hover-background-color);
-  --header-navigation-link-icon-active-hover-text-color: var(--header-navigation-link-icon-active-hover-background-color);
-  --header-navigation-link-icon-active-hover-text-decoration: var(--header-navigation-link-icon-active-hover-text-decoration);
+  --header-navigation-link-icon-active-hover-background-color: var(--header-navigation-link-active-hover-background-color);
+  --header-navigation-link-icon-active-hover-text-color: var(--header-navigation-link-active-hover-background-color);
+  --header-navigation-link-icon-active-hover-text-decoration: var(--header-navigation-link-active-hover-text-decoration);
+
+  /* Visible active link */
+  --header-navigation-link-active-visited-background-color: var(--header-navigation-link-active-hover-background-color);
+  --header-navigation-link-active-visited-text-color: var(--header-navigation-link-active-hover-text-color);
+  --header-navigation-link-active-visited-text-decoration: var(--header-navigation-link-active-hover-text-decoration);
+  
+  /* Visible active link icon */
+  --header-navigation-link-icon-active-visited-background-color: var(--header-navigation-link-active-hover-background-color);
+  --header-navigation-link-icon-active-visited-text-color: var(--header-navigation-link-active-hover-text-color);
+  --header-navigation-link-icon-active-visited-text-decoration: var(--header-navigation-link-active-hover-text-decoration);
 }

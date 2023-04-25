@@ -89,7 +89,6 @@
         }
 
         &[aria-current="page"] {
-          border: 1px dashed red;
           border: 0;
           font-weight: var(--breadcrumb-bar-list-item-last-child-font-weight);
 
