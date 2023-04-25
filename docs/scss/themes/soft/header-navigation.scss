@@ -1,6 +1,7 @@
 /* Header navigation */
 
 :root {
+    --header-min-height: 3rem;
     --header-navigation-background-color: transparent;
     --header-navigation-text-color: var(--text-set-text-color);
     --header-navigation-padding-right: 2rem;
@@ -14,6 +15,7 @@
     --header-navigation-link-border-width: 4px 0 0 0;
     --header-navigation-link-border-color: transparent;
     --header-navigation-link-min-height: 3rem;
+    --header-navigation-link-font-size: var(--body-text-medium-font-size);
     --header-navigation-link-font-size: var(--body-text-medium-font-size);
 
     /* Link styling */

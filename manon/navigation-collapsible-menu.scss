@@ -95,6 +95,7 @@ body > header nav.collapsible-menu,
   button.menu-toggle {
     display: flex;
     max-height: 100%;
+    padding: 0;
 
     & + div {
       z-index: var(--navigation-collapsible-content-z-index);

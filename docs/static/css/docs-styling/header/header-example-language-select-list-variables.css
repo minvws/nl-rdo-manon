@@ -6,7 +6,7 @@
   /* Header */
   --header-padding-right: 1rem;
   --header-padding-left: 1rem;
-  --header-min-height: 4rem;
+  --header-min-height: 3rem;
   --header-flex-direction: row;
   --header-justify-content: space-between;
   --header-background-color: #1b1b39;
