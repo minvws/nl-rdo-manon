@@ -77,7 +77,7 @@ body > header,
     border-radius: var(--header-navigation-border-radius);
     width: 100%;
     min-height: var(--header-navigation-min-height);
-    position: relative;
+    position: var(--header-navigation-position);
 
     ul,
     ol {

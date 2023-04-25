@@ -16,10 +16,18 @@
     --header-navigation-link-min-height: 3rem;
     --header-navigation-link-font-size: var(--body-text-medium-font-size);
 
+    /* Link styling */
+    --header-navigation-link-text-color: var(--application-base-text-color);
+    --header-navigation-link-visited-text-color: var(--header-navigation-link-text-color);
+
     /* Hover */
     --header-navigation-link-hover-border-color: #ede1c7;
-    --header-navigation-link-hover-text-color: var(--application-base-text-color);
+    --header-navigation-link-hover-text-color: var(--header-navigation-link-text-color);
+    --header-navigation-link-active-hover-border-color: #ede1c7;
+    --header-navigation-link-active-hover-text-color: var(--header-navigation-link-text-color);
 
     /* Active link */
     --header-navigation-link-active-border-color: var(--branding-color-1);
+    --header-navigation-link-active-text-color: var(--header-navigation-link-hover-text-color);
+    --header-navigation-link-visited-active-text-color: var(--header-navigation-link-hover-text-color);
 }
