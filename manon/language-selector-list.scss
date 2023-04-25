@@ -74,7 +74,7 @@ body > header nav .language-selector,
 			&[aria-current="true"] {
 				&:after {
 					content: "\e901";
-					font-family: var(--icon-base-font-family);
+					font-family: var(--icon-font-family);
 					position: absolute;
 					right: var(--language-selector-list-button-padding-right);
 				}
