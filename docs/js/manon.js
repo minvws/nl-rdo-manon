@@ -4,4 +4,4 @@ import "@minvws/manon/filters.js";
 import "@minvws/manon/form-help.js";
 import "@minvws/manon/navigation.js";
 import "@minvws/manon/sidemenu.js";
-import "@minvws/manon/language-selector";
+import "@minvws/manon/language-selector.js";
