@@ -6,20 +6,21 @@
 body > header nav.collapsible-menu,
 .collapsible-menu {
   display: flex;
-  width: 100%;
   max-width: var(--navigation-collapsible-menu-max-width);
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 0;
   gap: var(--navigation-collapsible-menu-gap);
-  height: var(--navigation-collapsible-menu-height);
+  min-height: var(--navigation-collapsible-menu-min-height);
+  justify-content: var(--navigation-collapsible-menu-justify-content);
 
-   > div {
+  > div {
     display: flex;
     flex-direction: row;
     gap: var(--navigation-collapsible-menu-gap);
     box-sizing: border-box;
     max-height: 100%;
+    padding: 0;
   }
 
   /* Menu below breakpoint */
@@ -32,13 +33,6 @@ body > header nav.collapsible-menu,
     padding: 0;
     gap: var(--navigation-collapsible-menu-list-collapsed-gap);
     background-color: var(--navigation-collapsible-menu-list-collapsed-background-color);
-    order: 2;
-    position: absolute;
-    top: var(--navigation-collapsible-menu-list-top);
-    right: var(--navigation-collapsible-menu-list-right);
-    bottom: var(--navigation-collapsible-menu-list-bottom);
-    left: var(--navigation-collapsible-menu-list-left);
-    z-index: 20;
 
     li {
       display: flex;
@@ -74,6 +68,7 @@ body > header nav.collapsible-menu,
         background-color: var(--navigation-collapsible-menu-list-item-collapsed-background-color);
         color: var(--navigation-collapsible-menu-list-collapsed-text-color);
         white-space: nowrap;
+        color: var(--navigation-collapsible-link-text-color);
       }
 
       &:hover {
@@ -101,9 +96,21 @@ body > header nav.collapsible-menu,
     display: flex;
     max-height: 100%;
 
+    & + div {
+      z-index: var(--navigation-collapsible-content-z-index);
+      width: var(--navigation-collapsible-content-width);
+      position: var(--navigation-collapsible-content-position);
+      display: flex;
+      flex-direction: column;
+      top: var(--navigation-collapsible-content-top);
+      right: var(--navigation-collapsible-content-right);
+      bottom: var(--navigation-collapsible-content-bottom);
+      left: var(--navigation-collapsible-content-left);
+      justify-content: flex-start;
+    }
+
     &[aria-expanded="false"] {
-      & + ul,
-      & + ol {
+      & ~ * {
         display: none;
       }
     }
@@ -122,9 +129,7 @@ button.menu-toggle {
   background-color: var(--navigation-collapsible-menu-button-background-color);
   color: var(--navigation-collapsible-menu-icon-color);
   font-size: var(--navigation-collapsible-menu-button-font-size, 0);
-  height: var(--navigation-collapsible-menu-button-height);
   height: 100%;
-  min-height: var(--navigation-collapsible-menu-button-min-height);
   min-width: var(--navigation-collapsible-menu-button-min-width);
 
   &:after {
@@ -139,8 +144,7 @@ button.menu-toggle {
 
   /* JS menu collapsed behaviour */
   &[aria-expanded="false"] {
-    & + ul,
-    & + ol {
+    & ~ * {
       display: none;
     }
   }
@@ -156,9 +160,15 @@ body > header nav {
     display: none;
 
     &[aria-expanded="false"] {
-      & + ul,
-      & + ol {
+      & ~ * {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        > * {
+          width: auto;
+        }
       }
     }
   }

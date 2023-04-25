@@ -2,16 +2,20 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <title>Header visueel voorbeeld</title>
+    <title>Header met logo bovenaan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../../static/css/main.css" rel="stylesheet" />
-    <link href="../../static/css/docs-styling/header/header-example-variables.css" rel="stylesheet" />
+    <link href="../../static/css/docs-styling/header/header-example-logo-above-variables.css" rel="stylesheet" />
     <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
     <header>
         <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+        <a href="./logo.html" class="logo">
+            <img src="../../static/img/logo.svg" alt="Placeholder logo">Bedrijfs of productnaam
+        </a>
 
         <div>
           <nav aria-label="Hoofdnavigatie">
@@ -21,9 +25,13 @@
                 <li><a href="../components.html">Componenten</a></li>
                 <li><a href="../documentation.html">Documentatie</a></li>
               </ul>
+
+              <ul>
+                <li><a href="#">Logout</a></li>
+              </ul>
             </div>
           </nav>
-         
+          
         </div>
     </header>
 
@@ -43,7 +51,7 @@
       <article>
         <div>
           <section id="introduction">
-            <h1>Header visueel voorbeeld</h1>
+            <h1>Header met logo bovenaan visueel voorbeeld</h1>
 
             <h2>Benodigde stappen:</h2>
             <ol>
@@ -65,21 +73,30 @@
 &lt;header>
     &lt;a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud&lt;/a>
 
+    &lt;a href="./logo.html" class="logo">
+        &lt;img src="../../static/img/logo.svg" alt="Placeholder logo">Bedrijfs of productnaam
+    &lt;/a>
+
     &lt;div>
-      &lt;nav aria-label="Hoofdnavigatie">
+        &lt;nav aria-label="Hoofdnavigatie">
         &lt;div>
-          &lt;ul>
+            &lt;ul>
             &lt;li>&lt;a href="../../index.html">Home&lt;/a>&lt;/li>
             &lt;li>&lt;a href="../components.html">Componenten&lt;/a>&lt;/li>
             &lt;li>&lt;a href="../documentation.html">Documentatie&lt;/a>&lt;/li>
-          &lt;/ul>
+            &lt;/ul>
+
+            &lt;ul>
+            &lt;li>&lt;a href="#">Logout&lt;/a>&lt;/li>
+            &lt;/ul>
         &lt;/div>
-      &lt;/nav>
-      
+        &lt;/nav>
+        
     &lt;/div>
 &lt;/header>
               </code>
             </pre>
+            
           </section>
           
         </div>

@@ -4,20 +4,24 @@
 :root {
   /* Navigation */
   --navigation-collapsible-menu-gap: 0;
-  --navigation-collapsible-menu-height: 3rem;
+  --navigation-collapsible-menu-min-height: var(--header-navigation-min-height, 4rem);
   --navigation-collapsible-menu-border-width: 0;
   --navigation-collapsible-menu-border-style: solid;
   --navigation-collapsible-menu-border-color: transparent;
   --navigation-collapsible-menu-background-color: transparent;
   --navigation-collapsible-menu-max-width: 100%;
+  --navigation-collapsible-menu-justify-content: center;
+
+  /* Collapsable content (div) */
+  --navigation-collapsible-content-width: 100%;
+  --navigation-collapsible-content-position: absolute;
+  --navigation-collapsible-content-z-index: 20;
+  --navigation-collapsible-content-top: var(--navigation-collapsible-menu-min-height);
+  --navigation-collapsible-content-right: auto;
+  --navigation-collapsible-content-bottom: auto;
+  --navigation-collapsible-content-left: 0;
 
   /* List */
-    --navigation-collapsible-menu-list-z-index: 20;
-    --navigation-collapsible-menu-list-postion: absolute;
-    --navigation-collapsible-menu-list-top: var(--navigation-collapsible-menu-height);
-    --navigation-collapsible-menu-list-right: auto;
-    --navigation-collapsible-menu-list-bottom: auto;
-    --navigation-collapsible-menu-list-left: auto;
     --navigation-collapsible-menu-width: 100%;
 
     /* List collapsed */
@@ -42,6 +46,7 @@
       /* Link */
       --navigation-collapsible-link-text-decoration: none;
       --navigation-collapsible-link-justify-content: flex-start;
+      --navigation-collapsible-link-text-color: black;
 
       /* List item collapsed hover */
       --navigation-collapsible-menu-list-item-collapsed-hover-background-color: var(--branding-color-1-background-color, #c0c0c0);

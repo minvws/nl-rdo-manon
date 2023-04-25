@@ -5,6 +5,8 @@
   /* Label */
   --language-selector-list-label-font-size: var(--de-emphasized-font-size);
   --language-selector-list-label-text-color: var(--de-emphasized-text-color, inherit);
+  --language-selector-list-label-gap: 0.5rem;
+  --language-selector-list-label-text-color: var(--application-base-text-color);
 
   /* List */
   --language-selector-list-font-size: var(--de-emphasized-font-size);

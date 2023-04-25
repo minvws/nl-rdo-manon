@@ -8,12 +8,41 @@ body > header,
   width: 100%;
   box-sizing: border-box;
 
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"]  {
+    justify-content: var(--header-navigation-button-justify-content);
+    align-self: var(--header-navigation-button-align-self);
+    min-width: var(--header-navigation-button-min-width);
+    min-height: var(--header-navigation-button-min-height);
+  
+    background-color: var(--header-navigation-button-background-color);
+    color: var(--header-navigation-button-text-color);
+  
+    font-size: var(--header-navigation-button-font-size);
+    font-weight: var(--header-navigation-button-font-weight);
+    line-height: var(--header-navigation-button-line-height);
+  
+    border-width: var(--header-navigation-button-border-width);
+    border-style: var(--header-navigation-button-border-style);
+    border-color: var(--header-navigation-button-border-color);
+    border-radius: var(--header-navigation-button-border-radius);
+  
+    padding-top: var(--header-navigation-button-padding-top);
+    padding-right: var(--header-navigation-button-padding-right);
+    padding-bottom: var(--header-navigation-button-padding-bottom);
+    padding-left: var(--header-navigation-button-padding-left);
+  }
+
   /* Grouped content */
   > div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap: 1rem;
 
     div {
       display: flex;
@@ -35,7 +64,6 @@ body > header,
     align-items: var(--header-navigation-align-items);
     width: var(--header-navigation-width);
     margin: var(--header-navigation-margin);
-    min-height: var(--header-navigation-min-height);
     box-sizing: border-box;
     background-color: var(--header-navigation-background-color);
     padding-top: var(--header-navigation-padding-top);
@@ -47,34 +75,9 @@ body > header,
     border-style: var(--header-navigation-border-style);
     border-color: var(--header-navigation-border-color);
     border-radius: var(--header-navigation-border-radius);
-
-    button,
-    a.button,
-    input[type="button"],
-    input[type="submit"],
-    input[type="reset"]  {
-      justify-content: var(--header-navigation-button-justify-content);
-      align-self: var(--header-navigation-button-align-self);
-      min-width: var(--header-navigation-button-min-width);
-      min-height: var(--header-navigation-button-min-height);
-
-      background-color: var(--header-navigation-button-background-color);
-      color: var(--header-navigation-button-text-color);
-
-      font-size: var(--header-navigation-button-font-size);
-      font-weight: var(--header-navigation-button-font-weight);
-      line-height: var(--header-navigation-button-line-height);
-
-      border-width: var(--header-navigation-button-border-width);
-      border-style: var(--header-navigation-button-border-style);
-      border-color: var(--header-navigation-button-border-color);
-      border-radius: var(--header-navigation-button-border-radius);
-
-      padding-top: var(--header-navigation-button-padding-top);
-      padding-right: var(--header-navigation-button-padding-right);
-      padding-bottom: var(--header-navigation-button-padding-bottom);
-      padding-left: var(--header-navigation-button-padding-left);
-    }
+    width: 100%;
+    min-height: var(--header-navigation-min-height);
+    position: relative;
 
     ul,
     ol {
