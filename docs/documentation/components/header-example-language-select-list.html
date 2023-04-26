@@ -19,7 +19,7 @@
 
         <div>
           <nav aria-label="Hoofdnavigatie">
-            <div>
+            <div class="collapsing-menu">
               <ul>
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="../components.html">Componenten</a></li>
@@ -54,6 +54,7 @@
               </ul>
             </div>
           </div>
+
           <button class="round">LO</button>
         </div>
     </header>
@@ -102,7 +103,7 @@
 
   &lt;div>
     &lt;nav aria-label="Hoofdnavigatie">
-      &lt;div>
+      &lt;div class="collapsing-menu">
         &lt;ul>
           &lt;li>&lt;a href="../../index.html">Home&lt;/a>&lt;/li>
           &lt;li>&lt;a href="../components.html">Componenten&lt;/a>&lt;/li>
@@ -110,6 +111,7 @@
         &lt;/ul>
       &lt;/div>
     &lt;/nav>
+
     &lt;div class="language-selector">
       &lt;p>Kies een taal:&lt;/p>
       &lt;p class="visually-hidden" id="language-selector-description">Select your language&lt;/p>
@@ -136,12 +138,52 @@
         &lt;/ul>
       &lt;/div>
     &lt;/div>
+    
     &lt;button class="round">LO&lt;/button>
   &lt;/div>
 &lt;/header>
               </code>
             </pre>
-            
+
+            <h2>CSS-voorbeeld:</h2>
+            <p>Ingestelde variabelen voor deze weergave</p>
+            <pre>
+              <code>
+:root {
+  /* Header */
+  --header-padding-right: 1rem;
+  --header-padding-left: 1rem;
+  --header-min-height: 3rem;
+  --header-flex-direction: row;
+  --header-justify-content: space-between;
+  --header-background-color: #1b1b39;
+  --header-navigation-text-color: white;
+  --header-navigation-position: initial;
+
+  /* Navigation */
+  --header-navigation-border-width: 0;
+  --header-navigation-width: auto;
+
+  /* Collapsible menu */
+  --navigation-collapsible-menu-menu-order: 1;
+
+  /* Link styling */
+  --header-navigation-link-text-color: white;
+  --header-navigation-link-hover-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-visited-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-visited-hover-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-active-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-active-hover-text-color: var(--header-navigation-link-text-color);
+
+  /* Language selector list */
+  --language-selector-list-label-text-color: #fff;
+
+  /* Menu toggle button */
+  --navigation-collapsible-menu-button-background-color: transparent;
+  --navigation-collapsible-menu-icon-color: var(--header-navigation-link-text-color);
+  --navigation-collapsible-menu-button-min-width: 0;
+  --navigation-collapsible-menu-button-width: auto;
+}
               </code>
             </pre>
 

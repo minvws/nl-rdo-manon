@@ -11,6 +11,7 @@ body > header nav.collapsible-menu,
   flex-direction: row;
   justify-content: var(--navigation-collapsible-menu-justify-content);
   gap: var(--navigation-collapsible-menu-gap);
+  width: auto;
   max-width: var(--navigation-collapsible-menu-max-width);
   min-height: var(--navigation-collapsible-menu-min-height);
   padding: 0;
@@ -22,6 +23,7 @@ body > header nav.collapsible-menu,
   border-style: var(--navigation-collapsible-menu-border-style);
   border-color: var(--navigation-collapsible-menu-border-color);
   background-color: var(--navigation-collapsible-menu-background-color);
+  order: var(--navigation-collapsible-menu-menu-order);
 
   .collapsing-menu {
     display: flex;
@@ -38,7 +40,7 @@ body > header nav.collapsible-menu,
     right: var(--navigation-collapsible-menu-collapsing-menu-right);
     bottom: var(--navigation-collapsible-menu-collapsing-menu-bottom);
     left: var(--navigation-collapsible-menu-collapsing-menu-left);
-
+  
     ul,
     ol {
       display: flex;
@@ -49,7 +51,7 @@ body > header nav.collapsible-menu,
       padding: 0;
       gap: var(--navigation-collapsible-menu-collapsing-menu-list-gap);
       background-color: var(--navigation-collapsible-menu-collapsing-menu-list-background-color);
-
+  
       li {
         display: flex;
         align-items: center;
@@ -63,19 +65,19 @@ body > header nav.collapsible-menu,
         padding-right: var(--navigation-collapsible-menu-collapsing-menu-list-item-padding-right);
         padding-bottom: var(--navigation-collapsible-menu-collapsing-menu-list-item-padding-bottom);
         padding-left: var(--navigation-collapsible-menu-collapsing-menu-list-item-padding-left);
-
+  
         &:before {
           display: none; /* Preventing default nav before to show up */
         }
-
+  
         &:last-child {
           border-width: var(--navigation-collapsible-menu-collapsing-menu-list-item-last-item-border-width);
         }
-
+  
         &:first-child {
           border-width: var(--navigation-collapsible-menu-collapsing-menu-list-item-first-item-border-width);
         }
-
+  
         a {
           width: 100%;
           max-width: 100%;
@@ -88,11 +90,11 @@ body > header nav.collapsible-menu,
           color: var(--navigation-collapsible-menu-collapsing-menu-list-item-link-text-color);
           white-space: nowrap;
         }
-
+  
         &:hover {
           background-color: var(--navigation-collapsible-menu-collapsing-menu-list-item-link-hover-background-color);
           color: var(--navigation-collapsible-menu-list-item-hover-text-color);
-
+  
           a {
             background-color: var(--navigation-collapsible-menu-collapsing-menu-list-item-link-hover-background-color);
             color: var(---navigation-collapsible-menu-collapsing-menu-list-item-link-hover-text-color);
@@ -102,7 +104,7 @@ body > header nav.collapsible-menu,
             }
           }
         }
-
+  
         [aria-current] {
           background-color: var(--navigation-collapsible-menu-collapsing-menu-list-item-link-hover-background-color);
           color: var(--navigation-collapsible-menu-collapsing-menu-list-item-link-hover-text-color);
@@ -140,6 +142,7 @@ button.menu-toggle {
   min-height: var(--navigation-collapsible-menu-button-min-height);
   min-width: var(--navigation-collapsible-menu-button-min-width);
   width: var(--navigation-collapsible-menu-button-width);
+  gap: 0;
 
   &:after {
     content: var(--navigation-collapsible-menu-icon);

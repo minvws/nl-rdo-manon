@@ -5,7 +5,7 @@
     <title>Header met navigatie met meerdere menus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../../static/css/main.css" rel="stylesheet" />
-    <link href="../../static/css/docs-styling/header/header-example-variables.css" rel="stylesheet" />
+    <link href="../../static/css/docs-styling/header/header-example-multiple-menus-variables.css" rel="stylesheet" />
     <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
@@ -13,22 +13,20 @@
     <header>
         <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-        <div>
-          <nav aria-label="Hoofdnavigatie">
-            <div>
-              <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../components.html">Componenten</a></li>
-                <li><a href="../documentation.html">Documentatie</a></li>
-              </ul>
-              
-              <ul>
-                <li><a href="#">Logout</a></li>
-                <li><a href="#">User settings</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+        <nav aria-label="Hoofdnavigatie">
+          <div class="collapsing-menu">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../components.html">Componenten</a></li>
+              <li><a href="../documentation.html">Documentatie</a></li>
+            </ul>
+            
+            <ul>
+              <li><a href="#">Logout</a></li>
+              <li><a href="#">User settings</a></li>
+            </ul>
+          </div>
+        </nav>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
@@ -86,6 +84,46 @@
       &lt;/nav>
     &lt;/div>
 &lt;/header>
+              </code>
+            </pre>
+
+            <h2>CSS-voorbeeld:</h2>
+            <p>Ingestelde variabelen voor deze weergave</p>
+
+            <pre>
+              <code>
+:root {
+  /* Header */
+  --header-padding-right: 0;
+  --header-padding-left: 0;
+  --header-min-height: 3rem;
+  --header-flex-direction: row;
+  --header-justify-content: space-between;
+  --header-background-color: #1b1b39;
+  --header-navigation-text-color: white;
+  --header-navigation-padding-right: 0;
+  --header-navigation-padding-left: 0;
+
+  /* Navigation */
+  --header-navigation-border-width: 0;
+  --header-navigation-width: auto;
+
+    /* Content wrapper */
+  --header-navigation-content-wrapper-flex-direction: row;
+  --header-navigation-content-wrapper-justify-content: space-between;
+
+  /* Link styling */
+  --header-navigation-link-text-color: white;
+  --header-navigation-link-hover-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-visited-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-visited-hover-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-active-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-active-hover-text-color: var(--header-navigation-link-text-color);
+
+  /* Menu toggle button */
+  --navigation-collapsible-menu-button-background-color: transparent;
+  --navigation-collapsible-menu-icon-color: var(--header-navigation-link-text-color);
+}
               </code>
             </pre>
           </section>

@@ -17,18 +17,16 @@
             <img src="../../static/img/logo-white.svg" alt="Placeholder logo">Bedrijfs of productnaam
         </a>
 
-        <div>
-          <nav aria-label="Hoofdnavigatie">
-            <div>
-              <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../components.html">Componenten</a></li>
-                <li><a href="../documentation.html">Documentatie</a></li>
-              </ul>
-            </div>
-          </nav>
+        <nav aria-label="Hoofdnavigatie">
+          <div class="collapsing-menu">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../components.html">Componenten</a></li>
+              <li><a href="../documentation.html">Documentatie</a></li>
+            </ul>
+          </div>
+        </nav>
           
-        </div>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
@@ -67,25 +65,60 @@
             <pre>
               <code>
 &lt;header>
-    &lt;a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud&lt;/a>
+  &lt;a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud&lt;/a>
 
-    &lt;a href="./logo.html" class="logo">
-        &lt;img src="../../static/img/logo-white.svg" alt="Placeholder logo">Bedrijfs of productnaam
-    &lt;/a>
+  &lt;a href="./logo.html" class="logo">
+      &lt;img src="../../static/img/logo-white.svg" alt="Placeholder logo">Bedrijfs of productnaam
+  &lt;/a>
 
-    &lt;div>
-      &lt;nav aria-label="Hoofdnavigatie">
-        &lt;div>
-          &lt;ul>
-            &lt;li>&lt;a href="../../index.html">Home&lt;/a>&lt;/li>
-            &lt;li>&lt;a href="../components.html">Componenten&lt;/a>&lt;/li>
-            &lt;li>&lt;a href="../documentation.html">Documentatie&lt;/a>&lt;/li>
-          &lt;/ul>
-        &lt;/div>
-      &lt;/nav>
-      
+  &lt;nav aria-label="Hoofdnavigatie">
+    &lt;div class="collapsing-menu">
+      &lt;ul>
+        &lt;li>&lt;a href="../../index.html">Home&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="../components.html">Componenten&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="../documentation.html">Documentatie&lt;/a>&lt;/li>
+      &lt;/ul>
     &lt;/div>
+  &lt;/nav>
+      
 &lt;/header>
+              </code>
+            </pre>
+
+            <h2>CSS-voorbeeld:</h2>
+            <p>Ingestelde variabelen voor deze weergave</p>
+
+            <pre>
+              <code>
+:root {
+  /* Header */
+  --header-padding-right: 1rem;
+  --header-padding-left: 1rem;
+  --header-min-height: 3rem;
+  --header-flex-direction: row;
+  --header-justify-content: space-between;
+  --header-background-color: #1b1b39;
+  --header-navigation-text-color: white;
+  --header-navigation-padding-right: 0;
+  --header-navigation-padding-left: 0;
+  --header-navigation-position: initial;
+
+  /* Navigation */
+  --header-navigation-border-width: 0;
+  --header-navigation-width: auto;
+
+  /* Link styling */
+  --header-navigation-link-text-color: white;
+  --header-navigation-link-hover-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-visited-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-visited-hover-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-active-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-active-hover-text-color: var(--header-navigation-link-text-color);
+
+  /* Menu toggle button */
+  --navigation-collapsible-menu-button-background-color: transparent;
+  --navigation-collapsible-menu-icon-color: var(--header-navigation-link-text-color);
+}
               </code>
             </pre>
           </section>
