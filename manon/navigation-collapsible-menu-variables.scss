@@ -11,6 +11,10 @@
   --navigation-collapsible-menu-background-color: transparent;
   --navigation-collapsible-menu-max-width: 100%;
   --navigation-collapsible-menu-justify-content: center;
+  --navigation-collapsable-menu-padding-top: var(--header-navigation-padding-top);
+  --navigation-collapsable-menu-padding-right: var(--header-navigation-padding-right);
+  --navigation-collapsable-menu-padding-bottom: var(--header-navigation-padding-bottom);
+  --navigation-collapsable-menu-padding-left: var(--header-navigation-padding-left);
 
   /* Collapsable content (div) */
   --navigation-collapsible-content-width: 100%;
