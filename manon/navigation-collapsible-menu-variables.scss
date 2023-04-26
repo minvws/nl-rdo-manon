@@ -68,4 +68,10 @@
     --navigation-collapsible-menu-icon-collapsed: "x";
     --navigation-collapsible-menu-icon-collapsed-font-size: var(--navigation-collapsible-menu-icon-font-size);
     --navigation-collapsible-menu-icon-collapsed-text-color: var(--navigation-collapsible-menu-icon-color);
+
+    /* Uncollapsed menu */
+    --navigation-collapsible-menu-uncollapsed-justify-content: var(--header-navigation-justify-content, space-between);
+    --navigatino-collapsible-menu-uncollapsed-align-items: var(--header-navigation-align-items, center);
+    --navigation-collapsible-menu-uncollapsed-flex-direction: row;
+    --navigation-collapsible-menu-uncollapsed-width: 100%;  
 }
