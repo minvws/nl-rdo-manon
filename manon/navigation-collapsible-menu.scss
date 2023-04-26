@@ -7,99 +7,105 @@ body > header nav.collapsible-menu,
 .collapsible-menu {
   /* Menu below breakpoint */
   display: flex;
-  max-width: var(--navigation-collapsible-menu-max-width);
-  flex-direction: row;
   flex-wrap: nowrap;
-  padding: 0;
-  gap: var(--navigation-collapsible-menu-gap);
-  min-height: var(--navigation-collapsible-menu-min-height);
+  flex-direction: row;
   justify-content: var(--navigation-collapsible-menu-justify-content);
-  padding-top: var(--navigation-collapsable-menu-padding-top);
-  padding-right: var(--navigation-collapsable-menu-padding-right);
-  padding-bottom: var(--navigation-collapsable-menu-padding-bottom);
-  padding-left: var(--navigation-collapsable-menu-padding-left);
+  gap: var(--navigation-collapsible-menu-gap);
+  max-width: var(--navigation-collapsible-menu-max-width);
+  min-height: var(--navigation-collapsible-menu-min-height);
+  padding: 0;
+  padding-top: var(--navigation-collapsible-menu-padding-top);
+  padding-right: var(--navigation-collapsible-menu-padding-right);
+  padding-bottom: var(--navigation-collapsible-menu-padding-bottom);
+  padding-left: var(--navigation-collapsible-menu-padding-left);
+  border-width: var(--navigation-collapsible-menu-border-width);
+  border-style: var(--navigation-collapsible-menu-border-style);
+  border-color: var(--navigation-collapsible-menu-border-color);
+  background-color: var(--navigation-collapsible-menu-background-color);
 
   .collapsing-menu {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    gap: var(--navigation-collapsible-menu-gap);
+    gap: var(--navigation-collapsible-menu-collapsing-menu-gap);
     box-sizing: border-box;
     max-height: 100%;
-    width: var(--navigation-collapsible-content-width);
+    width: var(--navigation-collapsible-menu-collapsing-menu-width);
     padding: 0;
-    z-index: var(--navigation-collapsible-content-z-index);
-    position: var(--navigation-collapsible-content-position);
-    top: var(--navigation-collapsible-content-top);
-    right: var(--navigation-collapsible-content-right);
-    bottom: var(--navigation-collapsible-content-bottom);
-    left: var(--navigation-collapsible-content-left);
-    width: var(--navigation-collapsible-menu-uncollapsed-width);
+    z-index: var(--navigation-collapsible-menu-collapsing-menu-z-index);
+    position: var(--navigation-collapsible-menu-collapsing-menu-position);
+    top: var(--navigation-collapsible-menu-collapsing-menu-top);
+    right: var(--navigation-collapsible-menu-collapsing-menu-right);
+    bottom: var(--navigation-collapsible-menu-collapsing-menu-bottom);
+    left: var(--navigation-collapsible-menu-collapsing-menu-left);
 
     ul,
     ol {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
+      width: 100%;
       margin: 0;
       padding: 0;
-      gap: var(--navigation-collapsible-menu-list-collapsed-gap);
-      background-color: var(--navigation-collapsible-menu-list-collapsed-background-color);
+      gap: var(--navigation-collapsible-menu-collapsing-menu-list-gap);
+      background-color: var(--navigation-collapsible-menu-collapsing-menu-list-background-color);
 
       li {
         display: flex;
         align-items: center;
         width: 100%;
-        color: var(--navigation-collapsible-menu-list-collapsed-text-color);
-        border-width: var(--navigation-collapsible-menu-list-item-collapsed-border-width);
-        border-style: var(--navigation-collapsible-menu-list-item-collapsed-border-style);
-        border-color: var(--navigation-collapsible-menu-list-item-collapsed-border-color);
-        color: var(--navigation-collapsible-menu-list-collapsed-text-color);
-        background-color: var(--navigation-collapsible-menu-list-item-collapsed-background-color);
+        background-color: var(--navigation-collapsible-menu-collapsing-menu-list-item-background-color);
+        color: var(--navigation-collapsible-menu-collapsing-menu-list-item-text-color);
+        border-width: var(--navigation-collapsible-menu-collapsing-menu-list-item-border-width);
+        border-style: var(--navigation-collapsible-menu-collapsing-menu-list-item-border-style);
+        border-color: var(--navigation-collapsible-menu-collapsing-menu-list-item-border-color);
+        padding-top: var(--navigation-collapsible-menu-collapsing-menu-list-item-padding-top);
+        padding-right: var(--navigation-collapsible-menu-collapsing-menu-list-item-padding-right);
+        padding-bottom: var(--navigation-collapsible-menu-collapsing-menu-list-item-padding-bottom);
+        padding-left: var(--navigation-collapsible-menu-collapsing-menu-list-item-padding-left);
 
         &:before {
           display: none; /* Preventing default nav before to show up */
         }
 
         &:last-child {
-          border-width: var(--navigation-collapsible-menu-list-item-collapsed-last-item-border-width);
+          border-width: var(--navigation-collapsible-menu-collapsing-menu-list-item-last-item-border-width);
         }
 
         &:first-child {
-          border-width: var(--navigation-collapsible-menu-list-item-collapsed-first-item-border-width);
+          border-width: var(--navigation-collapsible-menu-collapsing-menu-list-item-first-item-border-width);
         }
 
         a {
           width: 100%;
           max-width: 100%;
-          padding: var(--navigation-collapsible-menu-list-item-collapsed-padding);
+          padding: 0;
           box-sizing: border-box;
-          text-decoration: var(--navigation-collapsible-link-text-decoration);
-          justify-content: var(--navigation-collapsible-link-justify-content);
+          text-decoration: var(--navigation-collapsible-menu-collapsing-menu-list-item-link-text-decoration);
+          justify-content: var(--navigation-collapsible-menu-collapsing-menu-list-item-link-justify-content);
           border: 0;
-          background-color: var(--navigation-collapsible-menu-list-item-collapsed-background-color);
-          color: var(--navigation-collapsible-menu-list-collapsed-text-color);
+          background-color: transparent;
+          color: var(--navigation-collapsible-menu-collapsing-menu-list-item-link-text-color);
           white-space: nowrap;
-          color: var(--navigation-collapsible-link-text-color);
         }
 
         &:hover {
-          background-color: var(--navigation-collapsible-menu-list-item-collapsed-hover-background-color);
+          background-color: var(--navigation-collapsible-menu-collapsing-menu-list-item-link-hover-background-color);
           color: var(--navigation-collapsible-menu-list-item-hover-text-color);
 
           a {
-            background-color: var(--navigation-collapsible-menu-list-item-collapsed-hover-background-color);
-            color: var(--navigation-collapsible-menu-list-item-collapsed-hover-text-color);
+            background-color: var(--navigation-collapsible-menu-collapsing-menu-list-item-link-hover-background-color);
+            color: var(---navigation-collapsible-menu-collapsing-menu-list-item-link-hover-text-color);
             
             &:visited {
-              background-color: var(--navigation-collapsible-menu-list-item-collapsed-hover-background-color);
+              background-color: var(---navigation-collapsible-menu-collapsing-menu-list-item-link-hover-background-color);
             }
           }
         }
 
         [aria-current] {
-          background-color: var(--navigation-collapsible-menu-list-item-hover-background-color);
-          color: var(--navigation-collapsible-menu-list-item-hover-text-color);
+          background-color: var(--navigation-collapsible-menu-collapsing-menu-list-item-link-hover-background-color);
+          color: var(--navigation-collapsible-menu-collapsing-menu-list-item-link-hover-text-color);
         }
       }
     }
@@ -129,20 +135,23 @@ button.menu-toggle {
   margin-left: auto;
   border: 0;
   background-color: var(--navigation-collapsible-menu-button-background-color);
-  color: var(--navigation-collapsible-menu-icon-color);
-  font-size: var(--navigation-collapsible-menu-button-font-size, 0);
-  height: 100%;
+  font-size: var(--navigation-collapsible-menu-button-font-size);
+  height: var(--navigation-collapsible-menu-button-height);
+  min-height: var(--navigation-collapsible-menu-button-min-height);
   min-width: var(--navigation-collapsible-menu-button-min-width);
+  width: var(--navigation-collapsible-menu-button-width);
 
   &:after {
     content: var(--navigation-collapsible-menu-icon);
     font-size: var(--navigation-collapsible-menu-icon-font-size);
     line-height: initial;
+    color: var(--navigation-collapsible-menu-icon-color);
   }
 
   &[aria-expanded="true"]:after {
     content: var(--navigation-collapsible-menu-icon-collapsed);
-    color: var(--navigation-collapsible-menu-icon-collapsed-text-color);
+    font-size: var(--navigation-collapsible-menu-icon-collapsed-font-size);
+    color: var(--navigation-collapsible-menu-icon-color);
   }
 
   /* JS menu collapsed behaviour */
@@ -165,9 +174,6 @@ body > header nav {
     &[aria-expanded="false"] {
       & ~ * {
         display: flex;
-        flex-direction: var(--navigation-collapsible-menu-uncollapsed-flex-direction);
-        justify-content: var(--navigation-collapsible-menu-uncollapsed-justify-content);
-        align-items: var(--navigation-collapsible-menu-uncollapsed-align-items);
 
         > * {
           width: auto;
