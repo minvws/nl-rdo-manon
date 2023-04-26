@@ -18,7 +18,7 @@
   --breadcrumb-bar-content-block-padding-bottom: 1rem;
   --breadcrumb-bar-content-block-padding-left: 3%;
   --breadcrumb-bar-content-block-gap: 1rem;
-  --layout-header-content-block-max-width: 80rem;
+  --breadcrumb-bar-content-block-max-width: var(--layout-header-content-block-max-width);
 
   /* List */
   --breadcrumb-bar-content-block-list-vertical-align: center;
@@ -31,8 +31,8 @@
   /* Icon */
   --breadcrumb-bar-icon-font-family: var(--icon-font-family);
   --breadcrumb-bar-content-block-icon: ">";
-  /* --breadcrumb-bar-content-block-icon-margin-left: ; */
-  /* --breadcrumb-bar-content-block-icon-margin-right: ; */
+  --breadcrumb-bar-content-block-icon-margin-left: 0;
+  --breadcrumb-bar-content-block-icon-margin-right: 0;
 
   /* Last item */
   --breadcrumb-bar-content-block-list-item-last-child-font-weight: bold;

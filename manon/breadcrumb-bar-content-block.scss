@@ -22,7 +22,7 @@
     gap: var(--breadcrumb-bar-content-block-gap);
     box-sizing: border-box;
     align-self: center;
-    max-width: var(--layout-header-content-block-max-width);
+    max-width: var(--breadcrumb-bar-content-block-max-width);
 
     ul,
     ol {
@@ -45,7 +45,7 @@
 
         &:after {
           content: var(--breadcrumb-bar-content-block-icon);
-          font-family: var(--breadcrumb-bar-icon-font-family, inherit);
+          font-family: var(--breadcrumb-bar-icon-font-family);
           margin-left: var(--breadcrumb-bar-content-block-icon-margin-left);
           margin-right: var(--breadcrumb-bar-content-block-icon-margin-right);
         }
@@ -70,7 +70,6 @@
 
         a {
           word-break: break-word; /* Break words that won't fit the available space */
-          color: inherit;
           text-decoration: var(
             --breadcrumb-bar-content-block-link-text-decoration
           );
