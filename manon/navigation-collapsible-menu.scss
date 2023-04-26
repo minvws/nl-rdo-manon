@@ -163,7 +163,7 @@ body > header nav {
     &[aria-expanded="false"] {
       & ~ * {
         display: flex;
-        flex-direction: var(--navigation-collapsible-menu-uncollapsed-flex-directionw);
+        flex-direction: var(--navigation-collapsible-menu-uncollapsed-flex-direction);
         justify-content: var(--navigation-collapsible-menu-uncollapsed-justify-content);
         align-items: var(--navigation-collapsible-menu-uncollapsed-align-items);
         width: var(--navigation-collapsible-menu-uncollapsed-width);
