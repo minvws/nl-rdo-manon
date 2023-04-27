@@ -8,7 +8,7 @@
   object-position: var(--image-cover-object-position);
   width: 100%;
   max-width: 100%;
-  padding: 0;
+  padding: 0; /* Resetting padding */
   height: 100%;
   max-height: var(--image-cover-max-height);
 }
