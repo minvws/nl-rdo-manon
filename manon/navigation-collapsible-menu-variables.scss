@@ -14,7 +14,8 @@
   --navigation-collapsible-menu-padding-left: var(--header-navigation-padding-left);
   --navigation-collapsible-menu-border-style: solid;
   --navigation-collapsible-menu-border-color: transparent;
-  --navigation-collapsible-menu-background-color: transparent;
+  --navigation-collapsible-menu-background-color: var(--header-navigation-background-color);
+  --navigation-collapsible-menu-menu-order: 0;
 
   /* Collapsing menu */
   --navigation-collapsible-menu-collapsing-menu-gap: var(--navigation-collapsible-menu-gap);

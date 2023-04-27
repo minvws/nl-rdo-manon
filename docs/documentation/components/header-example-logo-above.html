@@ -17,22 +17,20 @@
             <img src="../../static/img/logo.svg" alt="Placeholder logo">Bedrijfs of productnaam
         </a>
 
-        <div>
-          <nav aria-label="Hoofdnavigatie">
-            <div>
-              <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../components.html">Componenten</a></li>
-                <li><a href="../documentation.html">Documentatie</a></li>
-              </ul>
+        <nav aria-label="Hoofdnavigatie">
+          <div class="collapsing-menu">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../components.html">Componenten</a></li>
+              <li><a href="../documentation.html">Documentatie</a></li>
+            </ul>
 
-              <ul>
-                <li><a href="#">Logout</a></li>
-              </ul>
-            </div>
-          </nav>
+            <ul>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+        </nav>
           
-        </div>
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
@@ -94,6 +92,47 @@
         
     &lt;/div>
 &lt;/header>
+              </code>
+            </pre>
+
+            <h2>CSS-voorbeeld:</h2>
+            <p>Ingestelde variabelen voor deze weergave</p>
+            <pre>
+              <code>
+:root {
+  /* Header */
+  --header-padding-right: 0;
+  --header-padding-left: 0;
+  --header-min-height: 10rem;
+  --header-flex-direction: column;
+  --header-justify-content: space-between;
+  --header-navigation-padding-right: 0;
+  --header-navigation-padding-left: 0;
+
+  /* Navigation */
+  --header-navigation-border-width: 0;
+  --header-navigation-width: auto;
+  --header-navigation-padding-left: 1rem;
+  --header-navigation-padding-right: 1rem;
+  --header-navigation-background-color: #1b1b39;
+  --header-navigation-text-color: white;
+
+  /* Content wrapper */
+  --header-navigation-content-wrapper-flex-direction: row;
+  --header-navigation-content-wrapper-justify-content: flex-start;
+
+  /* Link styling */
+  --header-navigation-link-text-color: white;
+  --header-navigation-link-hover-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-visited-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-visited-hover-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-active-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-active-hover-text-color: var(--header-navigation-link-text-color);
+
+  /* Menu toggle button */
+  --navigation-collapsible-menu-button-background-color: transparent;
+  --navigation-collapsible-menu-icon-color: var(--header-navigation-link-text-color);
+}
               </code>
             </pre>
             

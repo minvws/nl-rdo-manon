@@ -4,16 +4,13 @@
 
 :root {
   /* Header */
-  --header-padding-right: 1rem;
-  --header-padding-left: 1rem;
+  --header-padding-right: 0;
+  --header-padding-left: 0;
   --header-min-height: 10rem;
   --header-flex-direction: column;
   --header-justify-content: space-between;
-  --header-padding-left: 0;
-  --header-padding-right: 0;
-
-  /* Content wrapper (content within section and div) */
-  --header-content-wrapper-margin-top: initial;
+  --header-navigation-padding-right: 0;
+  --header-navigation-padding-left: 0;
 
   /* Navigation */
   --header-navigation-border-width: 0;
@@ -22,6 +19,10 @@
   --header-navigation-padding-right: 1rem;
   --header-navigation-background-color: #1b1b39;
   --header-navigation-text-color: white;
+
+  /* Content wrapper */
+  --header-navigation-content-wrapper-flex-direction: row;
+  --header-navigation-content-wrapper-justify-content: flex-start;
 
   /* Link styling */
   --header-navigation-link-text-color: white;

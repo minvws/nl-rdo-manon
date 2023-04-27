@@ -4,21 +4,23 @@
 
 :root {
   /* Header */
-  --header-padding-right: 1rem;
-  --header-padding-left: 1rem;
+  --header-padding-right: 0;
+  --header-padding-left: 0;
   --header-min-height: 3rem;
   --header-flex-direction: row;
   --header-justify-content: space-between;
   --header-background-color: #1b1b39;
   --header-navigation-text-color: white;
-  --header-navigation-position: initial;
+  --header-navigation-padding-right: 0;
+  --header-navigation-padding-left: 0;
 
   /* Navigation */
   --header-navigation-border-width: 0;
   --header-navigation-width: auto;
 
-  /* Collapsible menu */
-  --navigation-collapsible-menu-menu-order: 1;
+   /* Content wrapper */
+  --header-navigation-content-wrapper-flex-direction: row;
+  --header-navigation-content-wrapper-justify-content: space-between;
 
   /* Link styling */
   --header-navigation-link-text-color: white;
@@ -28,12 +30,7 @@
   --header-navigation-link-active-text-color: var(--header-navigation-link-text-color);
   --header-navigation-link-active-hover-text-color: var(--header-navigation-link-text-color);
 
-  /* Language selector list */
-  --language-selector-list-label-text-color: #fff;
-
   /* Menu toggle button */
   --navigation-collapsible-menu-button-background-color: transparent;
   --navigation-collapsible-menu-icon-color: var(--header-navigation-link-text-color);
-  --navigation-collapsible-menu-button-min-width: 0;
-  --navigation-collapsible-menu-button-width: auto;
 }
