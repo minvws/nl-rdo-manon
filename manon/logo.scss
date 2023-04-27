@@ -3,19 +3,24 @@
 /*---------------------------------------------------------------*/
 @use "logo-variables";
 
-.logo {
+.logo,
+a.logo,
+a:visited.logo {
   font-size: 0;
-  min-width: var(--logo-min-width);
   width: var(--logo-width);
-  max-width: var(--logo-max-width);
+  min-width: var(--logo-width);
+  max-width: var(--logo-width);
+  height: var(--logo-height);
+  min-height: var(--logo-height);
+  max-height: var(--logo-height);
+  background-color: var(--logo-background-color);
+  border-radius: var(--logo-border-radius);
 
   img {
-    min-height: var(--logo-img-min-height);
-    height: var(--logo-img-height);
-    min-width: var(--logo-img-min-width);
-    width: var(--logo-img-width);
-    max-width: var(--logo-img-max-width);
-    max-height: var(--logo-img-max-height);
+    height: var(--logo-height);
+    width:var(--logo-width);
+    padding: var(--logo-padding);
+    box-sizing: border-box;
     object-position: var(--logo-img-object-position);
     object-fit: var(--logo-img-object-fit);
   }
