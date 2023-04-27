@@ -3,16 +3,13 @@
 /*---------------------------------------------------------------*/
 :root {
   /* Logo */
-  --logo-min-width: 2.65rem;
-  /* --logo-width: ; */
-  /* --logo-max-width: ; */
+  --logo-width: 4rem;
+  --logo-height: 4rem;
+  --logo-background-color: transparent;
+  --logo-padding: 0.5rem;
+  --logo-border-radius: 0;
 
   /* Logo image */
-  /* --logo-img-height: ; */
-  --logo-img-min-height: 2rem;
-  /* --logo-img-height: ; */
-  --logo-img-max-width: 100%;
-  --logo-img-max-height: 2.5rem;
   --logo-img-object-position: center;
   --logo-img-object-fit: contain;
 }
