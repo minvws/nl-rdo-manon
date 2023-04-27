@@ -108,7 +108,7 @@ body > header nav .language-selector,
 		border-style: var(--language-selector-list-border-style);
 		border-color: var(--language-selector-list-border-color);
 		border-radius: var(--language-selector-list-border-radius);
-		width: inherit;
+		width: auto;
 		box-sizing: border-box;
 		background-color: var(--language-selector-list-background-color);
 		margin-top: var(--language-selector-list-margin-top);
@@ -147,15 +147,15 @@ body > header nav .language-selector,
 				margin-left: 0;
 				font-size: inherit;
 				color: inherit;
-				padding: 0.125rem 0.5rem;
+				padding: var(--language-selector-list-item-link-padding);
 				border-top-width: var(--language-selector-list-item-link-border-width);
 				border-top-style: var(--language-selector-list-item-link-border-style);
 				border-top-color: var(--language-selector-list-item-link-border-color);
 				width: 100%;
 				max-width: 100%;
-				line-height: 1.5rem;
+				line-height: var(--language-selector-list-item-link-line-height);
 				box-sizing: border-box;
-				white-space: nowrap;
+				white-space: var(--language-selector-list-item-link-white-space);
 				text-overflow: ellipsis;
 				overflow: hidden;
 				min-height: var(--language-selector-list-item-link-min-height);

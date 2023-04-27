@@ -71,6 +71,9 @@
   --language-selector-list-item-link-border-color: var(--grey-2);
   --language-selector-list-item-link-height: unset;
   --language-selector-list-item-link-min-height: unset;
+  --language-selector-list-item-link-padding: 0.125rem 0.5rem;
+  --language-selector-list-item-link-line-height: 1.5rem;
+  --language-selector-list-item-link-white-space: nowrap;
 
   /* List item hover */
   --language-selector-list-item-hover-background-color: var(--branding-color-1-background-color);
