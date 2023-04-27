@@ -18,6 +18,7 @@ body > header nav .language-selector,
   margin: unset;
   gap: var(--language-selector-list-label-gap);
   color: var(--language-selector-list-label-text-color);
+  max-width: var(--language-selector-list-label-max-width);
 
   > p {
     font-size: var(--language-selector-list-label-font-size);
@@ -43,41 +44,58 @@ body > header nav .language-selector,
   /* Language selector options */
 	> div {
 		width: 8rem;
-    padding: 0;
-    display: initial;
-    margin: unset;
+		padding: 0;
+		display: initial;
+		margin: unset;
 
 		button {
-      display: flex;
-      justify-content: flex-start;
+			display: flex;
+			justify-content: flex-start;
 			background-color: var(--language-selector-list-button-background-color);
 			margin-left: 0;
-			font-size: var(--language-selector-list-button-font-size);
+			box-sizing: border-box;
+
 			color: var(--language-selector-list-button-text-color);
+			font-size: var(--language-selector-list-button-font-size);
+			font-weight: var(--language-selector-list-button-font-weight);
+			line-height: var(--language-selector-list-button-line-height);
+			white-space: nowrap;
+			text-align: left;
+			text-overflow: ellipsis;
+			overflow: hidden;
+
 			padding-top: var(--language-selector-list-button-padding-top);
 			padding-right: var(--language-selector-list-button-padding-right);
 			padding-bottom: var(--language-selector-list-button-padding-bottom);
 			padding-left: var(--language-selector-list-button-padding-left);
+
 			border-width: var(--language-selector-list-button-border-width);
 			border-style: var(--language-selector-list-button-border-style);
 			border-color: var(--language-selector-list-button-border-color);
-			width: var(--language-selector-list-width);
-			max-width: var(--language-selector-list-max-width);
-			line-height: var(--language-selector-list-button-line-height);
-			box-sizing: border-box;
-			white-space: nowrap;
-      text-align: left;
-			text-overflow: ellipsis;
-			overflow: hidden;
-			min-height: auto;
 
-			&[aria-current="true"] {
-				&:after {
-					content: "\e901";
-					font-family: var(--icon-font-family);
-					position: absolute;
-					right: var(--language-selector-list-button-padding-right);
-				}
+			min-height: var(--language-selector-list-button-min-height);
+			width: var(--language-selector-list-button-width);
+			min-width: var(--language-selector-list-button-min-width);
+			max-width: var(--language-selector-list-button-max-width);
+
+			&:after {
+				content: var(--language-selector-list-button-icon);
+				font-family: var(--language-selector-list-button-icon-font-family);
+				margin-left: var(--language-selector-list-button-icon-margin-left);
+				font-size: var(--language-selector-list-button-icon-font-size);
+				color: var(--language-selector-list-button-icon-text-color);
+			}
+		}
+
+		&[aria-expanded="true"] button {
+			&:after {
+				content: var(--language-selector-list-closed-button-icon);
+			}
+		}
+
+		&[aria-expanded="false"] button {
+			&:after {
+				content: var(--language-selector-list-open-button-icon);
 			}
 		}
 	}
@@ -89,9 +107,16 @@ body > header nav .language-selector,
 		border-width: var(--language-selector-list-border-width);
 		border-style: var(--language-selector-list-border-style);
 		border-color: var(--language-selector-list-border-color);
-    border-top: 0;
+		border-radius: var(--language-selector-list-border-radius);
 		width: inherit;
 		box-sizing: border-box;
+		background-color: var(--language-selector-list-background-color);
+		margin-top: var(--language-selector-list-margin-top);
+		-webkit-box-shadow: var(--language-selector-list-box-shadow); 
+        box-shadow: var(--language-selector-list-box-shadow);
+		right: var(--language-selector-list-right);
+		left: var(--language-selector-list-left);
+		min-width: var(--language-selector-list-min-width);
 
 		li {
 			list-style: none;
@@ -100,8 +125,8 @@ body > header nav .language-selector,
 			order: 1;
 			margin: 0;
 			background-color: var(--language-selector-list-item-background-color);
-      color: var(--language-selector-list-item-text-color);
-      font-size: var(--language-selector-list-font-size);
+      		color: var(--language-selector-list-item-text-color);
+      		font-size: var(--language-selector-list-font-size);
 			line-height: 0;
 
 			&:first-child a {
@@ -133,24 +158,24 @@ body > header nav .language-selector,
 				white-space: nowrap;
 				text-overflow: ellipsis;
 				overflow: hidden;
-        min-height: unset;
-        height: unset;
+				min-height: var(--language-selector-list-item-link-min-height);
+				height: var(--language-selector-list-item-link-height);
 
 				&:hover {
-          background-color: var(--language-selector-list-item-hover-background-color);
-          color: var(--language-selector-list-item-hover-text-color);
-          font-size: var(--language-selector-list-item-hover-font-size);
-          font-weight: var(--language-selector-list-item-hover-font-weight);
-        }
+					background-color: var(--language-selector-list-item-hover-background-color);
+					color: var(--language-selector-list-item-hover-text-color);
+					font-size: var(--language-selector-list-item-hover-font-size);
+					font-weight: var(--language-selector-list-item-hover-font-weight);
+				}
 			}
 
 			/* Selected language */
 			&[aria-current="true"] {
 				order: 0;
-        background-color: var(--language-selector-list-item-active-background-color);
-        color: var(--language-selector-list-item-active-text-color);
-        font-size: var(--language-selector-list-item-active-font-size);
-        font-weight: var(--language-selector-list-item-active-font-weight);
+				background-color: var(--language-selector-list-item-active-background-color);
+				color: var(--language-selector-list-item-active-text-color);
+				font-size: var(--language-selector-list-item-active-font-size);
+				font-weight: var(--language-selector-list-item-active-font-weight);
 				font-family: inherit;
 				cursor: pointer;
 			}
@@ -158,8 +183,6 @@ body > header nav .language-selector,
 	}
 
 	div[aria-expanded="true"] {
-		width: 8rem; /* Reserving space for the absolute positioned ul */
-
 		ul {
 			position: absolute;
 
