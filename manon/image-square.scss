@@ -6,6 +6,7 @@
 /* Image container */
 %image-square-container {
   width: 100%;
+  padding: 0; /* Resetting padding */
   padding-bottom: 100%;
   position: relative;
 }
