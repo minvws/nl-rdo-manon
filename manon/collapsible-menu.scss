@@ -1,0 +1,143 @@
+/*---------------------------------------------------------------*/
+/*------------------- collapsible-menu.scss ---------------------*/
+/*---------------------------------------------------------------*/
+@use "collapsible-menu-variables";
+
+%link-styling {
+    border-top: var(--collapsible-menu-list-link-border-top);
+    display: flex;
+    justify-content: var(--collapsible-menu-list-link-justify-content);
+    align-items: center;
+    padding: var(--collapsible-menu-list-link-padding);
+    min-height: var(--collapsible-menu-list-link-min-height);
+    box-sizing: border-box;
+    color: var(--collapsible-menu-list-link-text-color);
+    width: 100%;
+    max-width: 100%;
+    white-space: var(--collapsible-menu-list-link-white-space);
+
+    &[aria-selected="true"] {
+        background-color: var(--collapsible-menu-list-link-selected-background-color);
+        font-weight: var(--collapsible-menu-list-link-selected-font-weight);
+
+        &:before {
+            content: "\e900";
+            font-family: var(--collapsible-menu-list-selected-icon-font-family);
+            margin-left: var(--collapsible-menu-list-selected-icon-margin-left);
+            font-size: var(--collapsible-menu-list-selected-icon-font-size);
+            color: var(--collapsible-menu-list-selected-icon-text-color);
+            margin-right: var(-collapsible-menu-list-selected-icon-margin-right);
+        }
+
+        &:hover {
+            border: 0;
+            border-top: 1px solid #f0f0f0;
+        }
+    }
+
+    &:hover {
+        border: 0;
+        border-top: 1px solid #f0f0f0;
+    }
+}
+
+.collapsible {
+    padding: 0;
+    width: auto;
+    margin: 0;
+    position: relative;
+
+    button,
+    a.button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+        &[aria-expanded="false"] {
+            + div {
+                ul,
+                ol,
+                div {
+                    display: none;
+                }
+            }
+        }
+
+        &[aria-expanded="true"] {
+            + div {
+                ul,
+                ol,
+                div {
+                    display: flex;
+                }
+            }
+        }
+
+        /* Collapsible content */
+        + div {
+            padding: 0;
+            position: relative;
+            gap: 0;
+            width: var(--collapsible-menu-width);
+            margin: 0;
+            display: flex;
+            justify-content: var(--collapsible-menu-justify-content);
+            align-items: stretch;
+            position: absolute;
+            top: var(--collapsible-menu-top);
+            right: var(--collapsible-menu-right);
+            left: var(--collapsible-menu-left);
+            z-index: var(--collapsible-menu-z-index);
+            -webkit-box-shadow: var(--collapsible-menu-box-shadow);
+            box-shadow: var(--collapsible-menu-box-shadow);
+
+            ul,
+            ol,
+            div {
+                width: 100%;
+                box-sizing: border-box;
+                padding: var(--collapsible-menu-padding);
+                gap: var(--collapsible-menu-gap);
+                border: var(--collapsible-menu-border);
+                background-color: var(--collapsible-menu-background-color);
+
+                li {
+                    list-style: var(--collapsible-menu-list-style);
+                    max-width: 100%;
+                    width: 100%;
+                    
+                    a {
+                        @extend %link-styling;
+                    }
+
+                    
+                    &:first-child {
+                        a {
+                            border-top: 0;
+                        }
+                    }
+                }
+
+                a {
+                    @extend %link-styling;
+                }
+
+                ~ ul,
+                ~ div {
+                    border-top: 0;
+                    
+                    li:first-child {
+                        a {
+                            border-top: 0;
+                        }
+                    }
+                }
+                
+                ~ div {
+                    a:first-child {
+                        border-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}

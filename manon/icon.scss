@@ -13,7 +13,8 @@
   line-height: 1;
 }
 
-.icon {
+.icon,
+.icon-only {
   &:before,
   &:after {
     @include icon;

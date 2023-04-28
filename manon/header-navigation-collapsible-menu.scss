@@ -1,0 +1,61 @@
+/*---------------------------------------------------------------*/
+/*------------ header-navigation-collapsible-menu.scss ----------*/
+/*---------------------------------------------------------------*/
+@use "header-navigation-collapsible-menu-variables";
+
+$breakpoint: 60rem !default;
+
+body > header nav {
+    .collapsible {
+        position: initial;
+
+        @media screen and (min-width: $breakpoint) { 
+            position: relative;
+            flex-grow: 1;
+            justify-content: flex-start;
+        }
+
+        button,
+        a.button,
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"] {
+            
+            + div {
+                left: 0;
+                top: 4rem;
+                width: 100%;
+            }
+
+            @media screen and (min-width: $breakpoint) {
+                &[aria-expanded=false],
+                &[aria-expanded=true] {
+                    display: none;
+                    
+                    + div {
+                        position: static;
+                        -webkit-box-shadow: none;
+                        box-shadow: none;
+
+                        ul,
+                        ol,
+                        div {
+                            display: flex;
+                            border: 0;
+                            width: auto;
+                            
+                            li {
+                                width: auto;
+
+                                a {
+                                    border: 0;
+                                }
+                            }
+                        }
+                    }
+                }                    
+            }
+            
+        }
+    }
+}
