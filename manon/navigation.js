@@ -20,7 +20,7 @@ export function initNaviation() {
   }
 }
 
-/**s
+/**
  * @param {HTMLElement} nav
  * @param {boolean} isCondensed
  */
