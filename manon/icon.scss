@@ -11,9 +11,14 @@
   text-align: center;
   padding: 0;
   line-height: 1;
+  font-style: normal;
 }
 
-.icon {
+.icon,
+.icon-only {
+  font-style: normal;
+  font-size: 0;
+
   &:before,
   &:after {
     @include icon;

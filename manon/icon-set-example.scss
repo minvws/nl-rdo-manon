@@ -8,7 +8,8 @@
   --icon-sortable: "\e903";
 }
 
-.icon {
+.icon,
+.icon-only {
   &.icon-cat:before {
     content: "\e900";
   }

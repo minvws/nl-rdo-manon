@@ -44,15 +44,8 @@ body > header,
     align-items: center;
     gap: 1rem;
 
-    div {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-
-      button {
-        align-self: center;
-      }
+    button {
+      align-self: center;
     }
   }
 

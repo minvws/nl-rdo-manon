@@ -115,4 +115,9 @@ input[type="reset"] {
       --button-base-image-max-width
     ); /* Limiting the use of images within buttons for readability. */
   }
+
+  /* Prevent elements within the button to block onclick events */
+  > * {
+    pointer-events: none;
+  }
 }

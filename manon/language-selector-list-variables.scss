@@ -3,9 +3,9 @@
 /*---------------------------------------------------------------*/
 :root {
   /* Label */
-  --language-selector-list-label-font-size: var(--de-emphasized-font-size);
+  --language-selector-list-label-font-size: 0;
   --language-selector-list-label-text-color: var(--de-emphasized-text-color, inherit);
-  --language-selector-list-label-gap: 0.5rem;
+  --language-selector-list-label-gap: 0;
   --language-selector-list-label-text-color: var(--application-base-text-color);
   --language-selector-list-label-max-width: unset;
 
@@ -32,10 +32,10 @@
   --language-selector-list-button-max-width: unset;
 
   /* Button icon */
-  --language-selector-list-button-icon-font-family: var(--icon-font-family);
+  --language-selector-list-button-icon-font-family: var(--collapsible-menu-list-selected-icon-font-family, var(--icon-font-family));
   --language-selector-list-button-icon-margin-left: 0.25rem;
-  --language-selector-list-button-icon-font-size: var(--icon-font-size);
-  --language-selector-list-button-icon-text-color: var(--language-selector-list-label-text-color);
+  --language-selector-list-button-icon-font-size: var(--collapsible-menu-list-selected-icon-font-size, var(--icon-font-size));
+  --language-selector-list-button-icon-text-color: var(--collapsible-menu-list-selected-icon-text-color, var(--language-selector-list-label-text-color));
 
   /* List opened button icon */
   --language-selector-list-open-button-icon: "\e901";

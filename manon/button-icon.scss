@@ -9,7 +9,8 @@ a.button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  &.icon {
+  &.icon,
+  &.icon-only {
     font-size: 0;
     gap: 0;
     min-width: var(--button-icon-min-width);

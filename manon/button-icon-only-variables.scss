@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------*/
+/*---------------- button-icon-only-variables.scss --------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Button */
+  --button-icon-only-min-width: 2.75rem;
+  --button-icon-only-width: auto;
+  --button-icon-only-min-height: var(--button-base-min-height);
+  --button-icon-only-height: var(--button-base-height);
+  
+  /* Icon */
+  --button-icon-only-font-family: var(--icon-font-family);
+  --button-icon-only-font-size: var(--icon-font-size);
+  --button-icon-only-text-color: var(--icon-text-color);
+  --button-icon-only-padding-right: 0;
+  --button-icon-only-padding-left: 0;
+}
