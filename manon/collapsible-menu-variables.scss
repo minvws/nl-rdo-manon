@@ -25,10 +25,14 @@
     --collapsible-menu-list-link-min-height: 3rem;
     --collapsible-menu-list-link-text-color: #000;
     --collapsible-menu-list-link-white-space: nowrap;
+    --collapsible-menu-list-link-hover: 1px solid #f0f0f0;
 
     /* List item link selected */
     --collapsible-menu-list-link-selected-background-color: #fff;
     --collapsible-menu-list-link-selected-font-weight: bold;
+
+    /* List item link selected hover */
+    --collapsible-menu-list-link-selected-hover: var(--collapsible-menu-list-link-hover);
 
     /* List item link selected icon */
     --collapsible-menu-list-selected-icon-font-family: var(--icon-font-family);

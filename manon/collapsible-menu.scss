@@ -31,13 +31,13 @@
 
         &:hover {
             border: 0;
-            border-top: 1px solid #f0f0f0;
+            border-top: var(--collapsible-menu-list-link-selected-hover);
         }
     }
 
     &:hover {
         border: 0;
-        border-top: 1px solid #f0f0f0;
+        border-top: var(--collapsible-menu-list-link-hover);
     }
 }
 
@@ -139,5 +139,10 @@
                 }
             }
         }
+    }
+
+    form {
+       background-color: transparent;
+       padding: 0; 
     }
 }
