@@ -16,9 +16,9 @@ body > header nav {
         input[type="reset"] {
             
             + div {
-                left: 0;
-                top: 4rem;
-                width: 100%;
+                left: var(--header-navigation-collapsible-menu-left);
+                top: var(--header-navigation-collapsible-menu-top);
+                width: var(--header-navigation-collapsible-menu-width);
             }
             
         }
