@@ -2,7 +2,7 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <title>Dropdown button</title>
+    <title>Inklapbaar menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../../static/css/main.css" rel="stylesheet" />
     <link href="../../static/img/favicon.ico" rel="shortcut icon" />
@@ -14,47 +14,47 @@
 
         <nav aria-label="Hoofdnavigatie">
             <a href="./logo.html" class="logo">
-                <img src="../../static/img/logo-white.svg" alt="Placeholder logo">Bedrijfs of productnaam
+              <img src="../../static/img/logo-white.svg" alt="Placeholder logo">Bedrijfs of productnaam
             </a>
 
             <div>
-                <div class="collapsible">
-                    <button class="dropdown icon-only" aria-expanded="false" aria-controls="collapsible-content-header">
-                        <span class="icon icon-cat"></span> Lorem ipsum
-                    </button>
-                    <div id="collapsible-content-header">
-                        <ul>
-                            <li><a href="../../index.html">Home</a></li>
-                            <li><a href="../components.html">Componenten</a></li>
-                            <li><a href="../documentation.html">Documentatie</a></li>
-                        </ul>
-                    </div>
+              <div class="collapsible horizontal-view">
+                <button class="icon-only" aria-expanded="false" aria-controls="collapsible-content-header">
+                  <i class="icon icon-cat">Lorem ipsum</i>
+                </button>
+                <div id="collapsible-content-header">
+                  <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../components.html">Componenten</a></li>
+                    <li><a href="../documentation.html">Documentatie</a></li>
+                  </ul>
                 </div>
+              </div>
 
-                <div class="language-selector">
-                    <p id="language-selector-description">Kies een taal:</p>
-                    <div class="language-selector-options" aria-describedby="language-selector-description" aria-expanded="false">
-                    <button aria-haspopup="listbox" aria-current="true">
-                        EN
-                    </button>
+                <div class="collapsible">
+                  <button aria-haspopup="listbox" aria-current="true" aria-expanded="false" aria-controls="collapsible-language-selector">
+                    EN <i class="icon icon-descending">Lorem ipsum</i>
+                  </button>
+                        
+                  <div>
                     <ul role="listbox">
-                        <li>
-                            <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands</a>
-                        </li>
-                        <li>
-                            <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
-                        </li>
-                        <li>
-                            <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
-                        </li>
-                        <li aria-current="true">
-                            <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
-                        </li>
-                        <li>
-                            <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento</a>
-                        </li>
-                    </ul>
-                    </div>
+                      <li>
+                        <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands</a>
+                      </li>
+                      <li>
+                        <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
+                      </li>
+                      <li>
+                        <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
+                      </li>
+                      <li aria-current="true">
+                        <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
+                      </li>
+                      <li>
+                        <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento</a>
+                      </li>
+                  </ul>
+                  </div>
                 </div>
             </div>
         </nav>
@@ -63,9 +63,8 @@
         <div>
           <ul>
             <li><a href="../components.html">Componenten</a></li>
-            <li><a href="./button.html">Knoppen</a></li>
             <li>
-              <a href="./button-dropdown.html" aria-current="page">Dropdown button</a>
+              <a href="./collapsible-menu.html" aria-current="page">Inklapbaar menu</a>
             </li>
           </ul>
         </div>
@@ -73,11 +72,10 @@
     </header>
 
     <main id="main-content" tabindex="-1">
-      <article id="button-base">
+      <article>
         <div>
           <section id="introduction">
-            <h1>Dropdown button</h1>
-            <p>Knop met dropdown menu.</p>
+            <h1>Inklapbaar menu</h1>
 
             <ol>
                 <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
@@ -89,10 +87,9 @@
             <h2><code>button</code></h2>
             <h3>Visuele weergave:</h3>
             
-            
             <div class="collapsible">
-                <button class="dropdown" aria-expanded="false" aria-controls="collapsible-content-1">Lorem ipsum</button>
-                <div>
+                <button aria-expanded="false" aria-controls="collapsible-button">Lorem ipsum</button>
+                <div id="collapsible-button">
                     <ul>
                         <li><a href="#">Item 1</a></li>
                         <li><a href="#" aria-selected="true">Huidige selectie</a></li>
@@ -100,10 +97,61 @@
                     </ul>
                 </div>
             </div>
-            
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="collapsible">
+  &lt;button aria-expanded="false" aria-controls="collapsible-button">Lorem ipsum&lt;/button>
+  &lt;div id="collapsible-button">
+      &lt;ul>
+          &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#" aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+      &lt;/ul>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>Met formulier</h2>
+            <h3>Visuele weergave:</h3>
             <div class="collapsible">
-                <button class="dropdown" aria-expanded="false" aria-controls="collapsible-content-2">Lorem ipsum</button>
-                <div>
+              <button aria-expanded="false" aria-controls="collapsible-button-form">Lorem ipsum</button>
+              <div id="collapsible-button-form">
+                <form>
+                  <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+                      <li><a href="#">Item 3</a></li>
+                  </ul>
+
+                </form>
+              </div>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="collapsible">
+  &lt;button aria-expanded="false" aria-controls="collapsible-button-form">Lorem ipsum&lt;/button>
+  &lt;div id="collapsible-button-form">
+      &lt;ul>
+          &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#" aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+      &lt;/ul>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+            
+            <h2>Dropdown ghost button</h2>
+            <h3>Visuele weergave:</h3>
+
+            <div class="collapsible">
+                <button class="dropdown ghost" aria-expanded="false" aria-controls="collapsible-button-ghost">Lorem ipsum</button>
+                <div id="collapsible-button-ghost">
                     <ul>
                         <li><a href="#">Item 1</a></li>
                         <li><a href="#" aria-selected="true">Huidige selectie</a></li>
@@ -111,10 +159,31 @@
                     </ul>
                 </div>
             </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="collapsible">
+  &lt;button class="dropdown ghost" aria-expanded="false" aria-controls="collapsible-button-ghost">Lorem ipsum&lt;/button>
+  &lt;div id="collapsible-button-ghost">
+      &lt;ul>
+          &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#"> aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+      &lt;/ul>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
             
+            <h2>Dropdown icoonknop</h2>
+            <h3>Visuele weergave:</h3>
+
             <div class="collapsible">
-                <button class="dropdown ghost" aria-expanded="false" aria-controls="collapsible-content-2">Lorem ipsum</button>
-                <div>
+                <button class="dropdown icon" aria-expanded="false" aria-controls="collapsible-icon">
+                  <i class="icon icon-cat">Lorem ipsum</i>
+                </button>
+                <div id="collapsible-icon">
                     <ul>
                         <li><a href="#">Item 1</a></li>
                         <li><a href="#" aria-selected="true">Huidige selectie</a></li>
@@ -122,22 +191,30 @@
                     </ul>
                 </div>
             </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="collapsible">
+  &lt;button class="dropdown icon" aria-expanded="false" aria-controls="collapsible-icon">
+    &lt;i class="icon icon-cat">Lorem ipsum&lt;/i>
+  &lt;/button>
+  &lt;div id="collapsible-icon">
+      &lt;ul>
+          &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#"> aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+      &lt;/ul>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
             
+            <h2>Dropdown met meerdere menu's</h2>
+            <h3>Visuele weergave:</h3>
             <div class="collapsible">
-                <button class="dropdown icon" aria-expanded="false" aria-controls="collapsible-content-2">
-                    <span class="icon icon-cat"></span> Lorem ipsum</button>
-                <div>
-                    <ul>
-                        <li><a href="#">Item 1</a></li>
-                        <li><a href="#" aria-selected="true">Huidige selectie</a></li>
-                        <li><a href="#">Item 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="collapsible">
-                <button class="dropdown" aria-expanded="false" aria-controls="collapsible-content-2">Lorem ipsum</button>
-                <div>
+                <button aria-expanded="false" aria-controls="collapsible-multiple-menus">Lorem ipsum</button>
+                <div id="collapsible-multiple-menus">
                     <ul>
                         <li><a href="#">Item 1</a></li>
                         <li><a href="#" aria-selected="true">Huidige selectie</a></li>
@@ -150,108 +227,106 @@
                     </ul>
                 </div>
             </div>
-            
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="collapsible">
+  &lt;button aria-expanded="false" aria-controls="collapsible-multiple-menus">Lorem ipsum&lt;/button>
+  &lt;div id="collapsible-multiple-menus">
+      &lt;ul>
+          &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#"> aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+      &lt;/ul>
+      &lt;ul>
+          &lt;li>&lt;a href="#">Sub menu Item 1&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Sub menu Item 2&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Sub menu Item 3&lt;/a>&lt;/li>
+      &lt;/ul>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>Dropdown taalselectie</h2>
+            <h3>Visuele weergave:</h3>
+
             <div class="collapsible">
-                <button class="dropdown" aria-expanded="false" aria-controls="collapsible-content-2">Lorem ipsum</button>
+              <button aria-haspopup="listbox" aria-current="true" aria-expanded="false" aria-controls="collapsible-language-selector">
+                EN <i class="icon icon-descending">Lorem ipsum</i>
+              </button>
+                    
                 <div>
-                    <ul>
-                        <li><a href="#">Item 1</a></li>
-                        <li><a href="#" aria-selected="true">Huidige selectie</a></li>
-                        <li><a href="#">Item 3</a></li>
-                    </ul>
-                    <div>
-                        <a href="#">Sub menu Item 1</a>
-                        <a href="#">Sub menu Item 2</a>
-                        <a href="#">Sub menu Item 3</a>
-                    </div>
+                  <ul role="listbox">
+                    <li>
+                      <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands</a>
+                    </li>
+                    <li>
+                      <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
+                    </li>
+                    <li>
+                      <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
+                    </li>
+                    <li aria-current="true">
+                      <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
+                    </li>
+                    <li>
+                      <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento</a>
+                    </li>
+                </ul>
                 </div>
             </div>
 
             <h3>Html-voorbeeld:</h3>
             <pre>
-                <code>
-&lt;button class="dropdown">Lorem ipsum&lt;/button>
-                </code>
+              <code>
+&lt;div class="collapsible">
+  &lt;button aria-haspopup="listbox" aria-current="true" aria-expanded="false" aria-controls="collapsible-language-selector">
+    EN &lt;i class="icon icon-descending">Lorem ipsum&lt;/i>
+  &lt;/button>
+  &lt;div id="collapsible-language-selector">
+      &lt;ul>
+          &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#"> aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+      &lt;/ul>
+  &lt;/div>
+&lt;/div>
+              </code>
             </pre>
 
-            <h2><code>button</code> uitgeschakeld</h2>
+            <h2>Horizontal view</h2>
+            <p>Boven het ingestelde breekpunt worden de items weergegeven en horizontaal uitgelijnd.</p>
             <h3>Visuele weergave:</h3>
-
-            <button class="dropdown" disabled>Lorem ipsum</button>
+            <div class="collapsible horizontal-view">
+                <button aria-expanded="false" aria-controls="collapsible-horizontal-view">Lorem ipsum</button>
+                <div id="collapsible-horizontal-view">
+                    <ul>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </div>
+            </div>
 
             <h3>Html-voorbeeld:</h3>
             <pre>
-                <code>
-&lt;button class="dropdown" disabled>button primary&lt;/button>
-                </code>
+              <code>
+&lt;div class="collapsible horizontal-view">
+  &lt;button aria-expanded="false" aria-controls="collapsible-horizontal-view">Lorem ipsum&lt;/button>
+  &lt;div id="collapsible-horizontal-view">
+      &lt;ul>
+          &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#"> aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+      &lt;/ul>
+  &lt;/div>
+&lt;/div>
+              </code>
             </pre>
           </section>
-
-          <section id="button-base-input">
-            <h2><code>input type="button"</code></h2>
-            <h3>Visuele weergave:</h3>
-
-            <input type="button" value="Lorem ipsum" class="dropdown" />
-
-            <h3>Html-voorbeeld:</h3>
-            <pre>
-                <code>
-&lt;input type="button" value="Lorem ipsum" class="dropdown">
-                </code>
-            </pre>
-
-            <h2><code>input type="button"</code> uitgeschakeld</h2>
-            <h3>Visuele weergave:</h3>
-
-            <input type="button" value="Lorem ipsum" class="dropdown" disabled />
-
-            <h3>Html-voorbeeld:</h3>
-            <pre>
-                <code>
-&lt;input type="button" value="Lorem ipsum" class="dropdown" disabled>
-                </code>
-            </pre>
-          </section>
-
-          <section id="variables">
-            <h2>Instelbare variabelen</h2>
-            <ul>
-              <li>
-                Knop, hover, active, focus.
-                <ul>
-                  <li>
-                    <a href="../variables.html#background-color">background-color</a>
-                  </li>
-                  <li><a href="../variables.html#text-color">text-color</a></li>
-                  <li>
-                    <a href="../variables.html#border-width">border-width</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#border-style">border-style</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#border-color">border-color</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#border-radius">border-radius</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#outline-style">outline-style</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#outline-color">outline-color</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#outline-width">outline-width</a>
-                  </li>
-                  <li>
-                    <a href="../variables.html#outline-offset">outline-offset</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </section>
-
+           
           <section id="related">
             <h2>Gerelateerde pagina's</h2>
             <a href="./button-dropdown-test.html">Test- en voorbeelden-pagina</a>

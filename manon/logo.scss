@@ -5,7 +5,8 @@
 
 .logo,
 a.logo,
-a:visited.logo {
+a:visited.logo,
+a:hover.logo {
   font-size: 0;
   width: var(--logo-width);
   min-width: var(--logo-width);
@@ -15,6 +16,7 @@ a:visited.logo {
   max-height: var(--logo-height);
   background-color: var(--logo-background-color);
   border-radius: var(--logo-border-radius);
+  margin: var(--logo-margin);
 
   img {
     height: var(--logo-height);

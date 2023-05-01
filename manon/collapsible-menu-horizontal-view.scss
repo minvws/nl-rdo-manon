@@ -1,0 +1,50 @@
+/*---------------------------------------------------------------*/
+/*------------ collapsible-menu-horizontal-view.scss ------------*/
+/*---------------------------------------------------------------*/
+@use "collapsible-menu-horizontal-view-variables";
+
+$breakpoint: 60rem !default;
+
+.collapsible.horizontal-view {
+
+    @media screen and (min-width: $breakpoint) { 
+        position: relative;
+        flex-grow: 1;
+        justify-content: flex-start;
+
+        button,
+        a.button,
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"] {
+
+            &[aria-expanded=false],
+            &[aria-expanded=true] {
+                display: none;
+                
+                + div {
+                    position: static;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+
+                    ul,
+                    ol,
+                    div {
+                        display: flex;
+                        border: 0;
+                        width: auto;
+                        flex-direction: row;
+                        
+                        li {
+                            width: auto;
+
+                            a {
+                                border: 0;
+                            }
+                        }
+                    }
+                }
+            } 
+        }  
+    }
+}
