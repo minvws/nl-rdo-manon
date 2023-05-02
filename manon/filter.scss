@@ -4,6 +4,9 @@
 @use "filter-variables";
 
 .filter {
+  padding: var(--filter-padding);
+  gap: var(--filter-gap);
+  
   > div {
     display: flex;
     flex-direction: row;

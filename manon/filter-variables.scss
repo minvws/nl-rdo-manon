@@ -2,6 +2,11 @@
 /*--------------------- filter-variables.scss -------------------*/
 /*---------------------------------------------------------------*/
 :root {
+  /* Filter */
+  --filter-padding: 0;
+  --filter-gap: 0;
+
+  /* Intro */
   --filter-intro-padding: 0.5rem 0;
   --filter-intro-border-width: 0 0 1px 0;
   --filter-intro-border-style: solid;
