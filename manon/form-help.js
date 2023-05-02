@@ -72,15 +72,8 @@ function collapseExplanation(explanation) {
   var button = document.createElement("button");
   var openLabel = explanation.dataset.openLabel || "Open uitleg";
   var closeLabel = explanation.dataset.closeLabel || "Sluit uitleg";
-  var iconOpenClasses = (
-    explanation.dataset.iconOpenClass || "icon icon-questionmark"
-  ).split(/\s+/);
-  var iconCloseClasses = (
-    explanation.dataset.iconCloseClass || "icon icon-close"
-  ).split(/\s+/);
 
   button.classList.add("help-button");
-  button.classList.add.apply(button.classList, iconOpenClasses);
   button.type = "button";
   button.setAttribute("aria-expanded", "false");
   button.setAttribute("aria-controls", explanation.id);
@@ -88,14 +81,6 @@ function collapseExplanation(explanation) {
   button.addEventListener("click", function toggleExpanded() {
     var expand = button.getAttribute("aria-expanded") === "false";
     button.setAttribute("aria-expanded", expand ? "true" : "false");
-    button.classList.remove.apply(
-      button.classList,
-      expand ? iconOpenClasses : iconCloseClasses
-    );
-    button.classList.add.apply(
-      button.classList,
-      expand ? iconCloseClasses : iconOpenClasses
-    );
     button.innerText = expand ? closeLabel : openLabel;
     if (expand) {
       explanation.classList.remove("collapsed");
