@@ -39,6 +39,7 @@ body > footer,
     ul,
     ol {
       background-color: transparent;
+      padding: var(--footer-nav-padding);
 
       li {
         &:before {
