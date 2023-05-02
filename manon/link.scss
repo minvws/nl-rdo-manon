@@ -2,7 +2,7 @@
 /*--------------------------- link.scss -------------------------*/
 /*---------------------------------------------------------------*/
 @use "link-variables";
-@use "icon";
+@use "mixins/icon";
 
 %link-styles {
   background-color: var(--link-background-color);

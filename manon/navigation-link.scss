@@ -2,7 +2,7 @@
 /*------------------- navigation-link.scss ----------------------*/
 /*---------------------------------------------------------------*/
 @use "navigation-link-variables";
-@use "icon";
+@use "mixins/icon";
 
 nav {
     a {

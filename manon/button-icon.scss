@@ -2,7 +2,7 @@
 /*--------------------- button-icon.scss -------------------------*/
 /*---------------------------------------------------------------*/
 @use "button-icon-variables";
-@use "icon";
+@use "mixins/icon";
 
 button,
 a.button,

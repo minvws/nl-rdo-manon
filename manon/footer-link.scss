@@ -2,7 +2,7 @@
 /*---------------------- footer-link.scss -----------------------*/
 /*---------------------------------------------------------------*/
 @use "footer-link-variables";
-@use "icon";
+@use "mixins/icon";
 
 body > footer,
 %footer-style {
