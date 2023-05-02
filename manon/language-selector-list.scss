@@ -48,13 +48,12 @@ body > header nav .language-selector,
 		display: initial;
 		margin: unset;
 
-		button {
+		> button {
 			display: flex;
 			justify-content: flex-start;
 			background-color: var(--language-selector-list-button-background-color);
 			margin-left: 0;
 			box-sizing: border-box;
-
 			color: var(--language-selector-list-button-text-color);
 			font-size: var(--language-selector-list-button-font-size);
 			font-weight: var(--language-selector-list-button-font-weight);
@@ -87,13 +86,13 @@ body > header nav .language-selector,
 			}
 		}
 
-		&[aria-expanded="true"] button {
+		&[aria-expanded="true"] > button {
 			&:after {
 				content: var(--language-selector-list-closed-button-icon);
 			}
 		}
 
-		&[aria-expanded="false"] button {
+		&[aria-expanded="false"] > button {
 			&:after {
 				content: var(--language-selector-list-open-button-icon);
 			}
@@ -113,7 +112,7 @@ body > header nav .language-selector,
 		background-color: var(--language-selector-list-background-color);
 		margin-top: var(--language-selector-list-margin-top);
 		-webkit-box-shadow: var(--language-selector-list-box-shadow); 
-        box-shadow: var(--language-selector-list-box-shadow);
+      box-shadow: var(--language-selector-list-box-shadow);
 		right: var(--language-selector-list-right);
 		left: var(--language-selector-list-left);
 		min-width: var(--language-selector-list-min-width);
@@ -125,8 +124,8 @@ body > header nav .language-selector,
 			order: 1;
 			margin: 0;
 			background-color: var(--language-selector-list-item-background-color);
-      		color: var(--language-selector-list-item-text-color);
-      		font-size: var(--language-selector-list-font-size);
+      color: var(--language-selector-list-item-text-color);
+      font-size: var(--language-selector-list-font-size);
 			line-height: 0;
 
 			&:first-child a {
@@ -167,6 +166,17 @@ body > header nav .language-selector,
 					font-size: var(--language-selector-list-item-hover-font-size);
 					font-weight: var(--language-selector-list-item-hover-font-weight);
 				}
+
+        > button {
+            background-color: transparent;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            align-items: center;
+            justify-content: flex-start;
+            font-weight: var(--language-selector-list-item-active-font-weight);
+        }
 			}
 
 			/* Selected language */
