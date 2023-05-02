@@ -33,6 +33,7 @@ form.help {
       border-color: var(--form-help-button-border-color);
       border-radius: var(--form-help-button-border-radius);
 
+      gap: 0;
       margin: 0;
       min-width: 0;
       width: var(--form-help-button-width);
@@ -76,7 +77,6 @@ form.help {
     gap: 0;
 
     .help-button {
-      gap: 0;
       margin: 0;
 
       &:before {
