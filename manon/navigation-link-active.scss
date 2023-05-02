@@ -10,6 +10,9 @@ nav {
             background-color: var(--navigation-link-active-background-color);
             color: var(--navigation-link-active-text-color);
             text-decoration: var(--navigation-link-active-text-decoration);
+            outline: var(--navigation-link-active-outline);
+            outline-offset: var(--navigation-link-active-outline-offset);
+            z-index: 1;
 
             &:before {
                 background-color: var(--navigation-link-icon-active-background-color);
