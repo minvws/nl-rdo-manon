@@ -49,12 +49,18 @@ form.help {
       }
 
       &:before {
-        content: var(--form-help-button-icon-content);
+        content: var(--form-help-button-icon);
         font-family: var(--form-help-button-icon-font-family, inherit);
         line-height: var(--form-help-button-icon-line-height);
         font-size: var(--form-help-button-icon-font-size, inherit);
         font-weight: var(--form-help-button-icon-font-weight, inherit);
         vertical-align: middle;
+      }
+
+      &[aria-expanded="true"] {
+        &:before {
+          content: var(--form-help-button-icon-expanded);
+        }
       }
     }
 
