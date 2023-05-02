@@ -2,7 +2,7 @@
 /*---------------- header-navigation-link.scss ------------------*/
 /*---------------------------------------------------------------*/
 @use "header-navigation-link-variables";
-@use "icon";
+@use "mixins/icon";
 
 %active-link {
   border-width: var(--header-navigation-link-active-border-width);
