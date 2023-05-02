@@ -4,8 +4,8 @@
 @use "filter-variables";
 
 .filter {
-  padding: 0;
-  gap: 0;
+  padding: var(--filter-padding);
+  gap: var(--filter-gap);
   
   > div {
     display: flex;
