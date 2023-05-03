@@ -99,10 +99,10 @@ main.sidemenu {
         z-index: 2;
 
         &:before {
-          content: var(--sidemenu-base-close-button-before-content, none);
-          font-size: var(--sidemenu-base-button-before-font-size);
-          font-weight: var(--sidemenu-base-button-before-font-weight);
-          white-space: var(--sidemenu-base-button-before-white-space);
+          content: var(--sidemenu-base-close-button-icon-content, none);
+          font-size: var(--sidemenu-base-button-icon-font-size);
+          font-weight: var(--sidemenu-base-button-icon-font-weight);
+          white-space: var(--sidemenu-base-button-icon-white-space);
         }
       }
     }
