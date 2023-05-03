@@ -24,6 +24,7 @@ and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 form.horizontal-view {
   > fieldset {
     > div {
+      display: block;
       gap: 0; /* resetting gap as it can not be used within fieldsets */
       
       @media (min-width: $breakpoint) {
