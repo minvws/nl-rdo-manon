@@ -3,20 +3,20 @@
 /*---------------------------------------------------------------*/
 :root {
   /* list */
-  /* --list-base-margin: ; */
-  /* --list-base-padding: ; */
-  /* --list-base-gap: ; */
+  --list-base-margin: 0;
+  --list-base-padding: 0;
+  --list-base-gap: 0;
   --list-base-line-height: 2.25; /* Increased line height for readabilty */
-  /* --list-base-font-size: ; */
-  /* --list-base-font-weight: ; */
-  /* --list-base-text-color: ; */
-  /* --list-base-background-color: ; */
+  --list-base-font-size: var(--application-base-font-size, 1rem);
+  --list-base-font-weight: var(--application-base-font-weight, normal);
+  --list-base-text-color: var(--application-base-text-color, #000);
+  --list-base-background-color: transparent;
 
   /* List item */
-  /* --list-base-item-padding: ; */
-  /* --list-base-item-background-color: ; */
-  /* --list-base-item-border-width: ; */
-  /* --list-base-item-border-style: ; */
-  /* --list-base-item-border-color: ; */
-  /* --list-base-item-style: ; */
+  --list-base-item-padding: 0.5rem 0;
+  --list-base-item-background-color: transparent;
+  --list-base-item-border-width: 0;
+  --list-base-item-border-style: solid;
+  --list-base-item-border-color: transparent;
+  --list-base-item-style: initial;
 }
