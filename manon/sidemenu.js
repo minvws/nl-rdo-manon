@@ -41,12 +41,6 @@ function addToggleButton(sidemenu) {
 
   var openLabel = sidemenu.dataset.openLabel || "Zijbalknavigatie";
   var closeLabel = sidemenu.dataset.closeLabel || "Sluit zijbalknavigatie";
-  var iconOpenClasses = (
-    sidemenu.dataset.iconOpenClass || "icon icon-hamburger"
-  ).split(/\s+/);
-  var iconCloseClasses = (
-    sidemenu.dataset.iconCloseClass || "icon icon-close"
-  ).split(/\s+/);
   var toggleButtonType = sidemenu.dataset.toggleButtonType || "ghost";
 
   var button = document.createElement("button");
@@ -59,14 +53,6 @@ function addToggleButton(sidemenu) {
 
   function setClosed(closed) {
     button.innerText = closed ? closeLabel : openLabel;
-    button.classList.remove.apply(
-      button.classList,
-      closed ? iconCloseClasses : iconOpenClasses
-    );
-    button.classList.add.apply(
-      button.classList,
-      closed ? iconOpenClasses : iconCloseClasses
-    );
     button.setAttribute("aria-expanded", String(!closed));
     if (closed) {
       main.classList.add("sidemenu-closed");
