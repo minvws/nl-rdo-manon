@@ -91,6 +91,7 @@ body > header,
         align-items: var(--header-navigation-list-item-align-items);
         color: var(--header-navigation-list-item-text-color);
         list-style: none;
+        padding: var(--header-navigation-list-item-padding);
 
         &:before {
           display: none; /* Preventing default nav before to show up */
