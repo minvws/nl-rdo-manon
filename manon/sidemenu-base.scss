@@ -10,7 +10,7 @@ main.sidemenu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: var(--sidemenu-base--main-padding-top);
+  padding-top: var(--sidemenu-base-main-padding-top);
   padding-bottom: var(--sidemenu-base-main-padding-bottom);
   gap: var(--sidemenu-base-main-gap);
 
@@ -74,10 +74,24 @@ main.sidemenu {
         display: block;
       }
 
+      
       button + ul {
         /* Compensating for the reserved space for the icon.
 				Position sticky still reserves the space within the flow. */
         margin-top: 0;
+      }
+
+      > ul li, 
+      button + ul li {
+        background-color: var(--sidemenu-base-list-item-background-color);
+        border-color: var(--sidemenu-base-list-item-border-color);
+        border-style: var(--sidemenu-base-list-item-border-style);
+        border-width: var(--sidemenu-base-list-item-border-width);
+        padding: var(--sidemenu-base-list-item-padding);
+        line-height: var(--sidemenu-base-list-item-line-height, inherit);
+        font-size: var(--sidemenu-base-list-item-font-size, inherit);
+        font-weight: var(--sidemenu-base-list-item-font-weight, inherit);
+        color: var(--sidemenu-base-list-item-text-color, inherit);
       }
 
       /* Button */

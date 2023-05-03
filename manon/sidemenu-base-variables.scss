@@ -24,13 +24,25 @@
   --sidemenu-base-nav-padding-right: 1rem;
   --sidemenu-base-nav-padding-bottom: 1rem;
   --sidemenu-base-nav-padding-left: 1rem;
-  --sidemenu-base-nav-background-image: url("path/to/image/cat.svg");
+  --sidemenu-base-nav-background-image: none;
   --sidemenu-base-nav-background-repeat: no-repeat;
   --sidemenu-base-nav-background-size: initial;
   --sidemenu-base-nav-background-position: initial;
 
   /* List inside side menu */
   --sidemenu-base-ul-padding: var(--list-base-padding, 0);
+
+  /* List item */
+  --sidemenu-base-list-item-background-color: var(--list-base-item-background-color, transparent);
+  --sidemenu-base-list-item-border-width: var(--list-base-item-border-width, 0);
+  --sidemenu-base-list-item-border-style: var(--list-base-item-border-style, solid);
+  --sidemenu-base-list-item-border-color: var(--list-base-item-border-color, transparent);
+  --sidemenu-base-list-item-padding: var(--list-base-item-padding, 0.25rem 0);
+  --sidemenu-base-list-item-item-style: var(--list-base-item-style, initial);
+  --sidemenu-base-list-item-line-height: var(--list-base-line-height, initial);
+  --sidemenu-base-list-item-font-size: var(--list-base-font-size, initial);
+  --sidemenu-base-list-item-font-weight: var(--list-base-font-weight, initial);
+  --sidemenu-base-list-item-text-color: var(--list-base-text-color, #000);
 
   /* Side menu button */
   --sidemenu-base-toggle-button-min-width: 2.75rem;
