@@ -105,20 +105,24 @@ main.sidemenu {
         min-width: var(--sidemenu-base-toggle-button-min-width);
         min-height: var(--sidemenu-base-toggle-button-min-height);
         font-size: var(--sidemenu-base-toggle-button-font-size);
-        margin-left: calc(
-          var(--sidemenu-base-nav-width) - var(--sidemenu-base-nav-padding-left)
-        );
+        margin-left: calc(var(--sidemenu-base-nav-width) - var(--sidemenu-base-nav-padding-left));
+
         /* Needed to keep the button to stick to the top */
         top: var(--sidemenu-button-margin-top, 1rem);
         z-index: 2;
 
         &:before {
           content: var(--sidemenu-base-close-button-icon-content, none);
-          font-size: var(--sidemenu-base-button-icon-font-size);
-          font-weight: var(--sidemenu-base-button-icon-font-weight);
-          white-space: var(--sidemenu-base-button-icon-white-space);
         }
+
+        &[aria-expanded="false"]{
+          &:before {
+            content: var(--sidemenu-base-open-button-icon-content, none);
+          }
+        }
+
       }
+
     }
   }
 
