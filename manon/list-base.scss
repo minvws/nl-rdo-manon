@@ -15,6 +15,7 @@ ol {
   font-weight: var(--list-base-font-weight, inherit);
   color: var(--list-base-text-color, inherit);
   margin: 0;
+  box-sizing: border-box;
 
   li {
     background-color: var(--list-base-item-background-color);
@@ -26,6 +27,7 @@ ol {
     font-size: var(--list-base-font-size, inherit);
     font-weight: var(--list-base-font-weight, inherit);
     color: var(--list-base-text-color, inherit);
+    box-sizing: border-box;
 
     a {
       line-height: inherit;
