@@ -19,9 +19,9 @@ ol {
 
   li {
     background-color: var(--list-base-item-background-color);
-    border-color: var(--list-base-item-border-color);
-    border-style: var(--list-base-item-border-style);
     border-width: var(--list-base-item-border-width);
+    border-style: var(--list-base-item-border-style);
+    border-color: var(--list-base-item-border-color);
     padding: var(--list-base-item-padding);
     line-height: var(--list-base-line-height, inherit);
     font-size: var(--list-base-font-size, inherit);

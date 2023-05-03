@@ -13,10 +13,14 @@
   --list-base-background-color: transparent;
 
   /* List item */
-  --list-base-item-padding: 0.25rem 0;
   --list-base-item-background-color: transparent;
   --list-base-item-border-width: 0;
   --list-base-item-border-style: solid;
   --list-base-item-border-color: transparent;
+  --list-base-item-padding: 0.25rem 0;
   --list-base-item-style: initial;
+  --list-base-line-height: var(--application-base-line-height, initial);
+  --list-base-font-size: var(--application-base-font-size, initial);
+  --list-base-font-weight: var(--application-base-font-weight, initial);
+  --list-base-text-color: var(--application-base-text-color, #000);
 }
