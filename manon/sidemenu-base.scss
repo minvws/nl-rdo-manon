@@ -113,7 +113,7 @@ main.sidemenu {
         z-index: 2;
 
         &:before {
-          content: var(--sidemenu-base-close-button-icon-content, none);
+          content: var(--sidemenu-base-expanded-button-icon, none);
           @include icon.icon;
           font-family: var(--sidemenu-base-button-icon-font-family);
           font-size: var(--sidemenu-base-button-icon-font-size);
