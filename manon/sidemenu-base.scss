@@ -125,7 +125,7 @@ main.sidemenu {
 
         &[aria-expanded="false"] {
           &:before {
-            content: var(--sidemenu-base-open-button-icon-content, none);
+            content: var(--sidemenu-base-collapsed-button-icon, none);
           }
         }
       }
