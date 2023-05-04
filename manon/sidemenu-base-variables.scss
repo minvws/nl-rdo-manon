@@ -62,7 +62,7 @@
   /* add content within "", this could be text or a unicode for an icon*/
 
   /* content on the button when the menu is collapsed */
-  --sidemenu-base-close-button-icon-content: "\e901";
+  --sidemenu-base-collapsed-button-icon: var(--icon-descending);
 
   /* content on the button when the menu is expanded */
   --sidemenu-base-open-button-icon-content: "\e902";
