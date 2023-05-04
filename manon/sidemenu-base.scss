@@ -117,6 +117,10 @@ main.sidemenu {
           @include icon.icon;
           font-family: var(--sidemenu-base-button-icon-font-family);
           font-size: var(--sidemenu-base-button-icon-font-size);
+          
+          /* Styling options for text input instead of icons */
+          font-weight: var(--sidemenu-base-button-icon-font-weight);
+          white-space: var(--sidemenu-base-button-icon-white-space);
         }
 
         &[aria-expanded="false"] {
