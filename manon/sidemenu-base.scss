@@ -149,12 +149,6 @@ main.sidemenu {
         }
       }
 
-      .sidemenu-toggle {
-        &:before {
-          content: var(--sidemenu-base-open-button-before-content, none);
-        }
-      }
-
       > div {
         max-width: 100%;
       }
