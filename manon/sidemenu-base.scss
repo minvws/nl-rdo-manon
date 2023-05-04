@@ -2,8 +2,9 @@
 /*------------------- sidemenu-base.scss ------------------------*/
 /*---------------------------------------------------------------*/
 @use "sidemenu-base-variables";
+@use "mixins/icon";
 
-$breakpoint: 55rem !default;
+$sidemenu-breakpoint: 55rem !default;
 
 main.sidemenu {
   /* Places sidemenu next to the main content of the page */
@@ -14,7 +15,7 @@ main.sidemenu {
   padding-bottom: var(--sidemenu-base-main-padding-bottom);
   gap: var(--sidemenu-base-main-gap);
 
-  @media (min-width: $breakpoint) {
+  @media (min-width: $sidemenu-breakpoint) {
     flex-wrap: nowrap;
   }
 
@@ -32,7 +33,7 @@ main.sidemenu {
     padding-left: var(--sidemenu-base-content-container-padding-left);
     box-sizing: border-box;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $sidemenu-breakpoint) {
       max-width: calc(
         100% - var(--sidemenu-base-nav-width) - var(--sidemenu-base-main-gap)
       );
@@ -42,7 +43,7 @@ main.sidemenu {
   > nav {
     display: none;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $sidemenu-breakpoint) {
       /* nav */
       margin: 0;
       display: block;
@@ -105,25 +106,34 @@ main.sidemenu {
         min-width: var(--sidemenu-base-toggle-button-min-width);
         min-height: var(--sidemenu-base-toggle-button-min-height);
         font-size: var(--sidemenu-base-toggle-button-font-size);
-        margin-left: calc(
-          var(--sidemenu-base-nav-width) - var(--sidemenu-base-nav-padding-left)
-        );
+        margin-left: calc(var(--sidemenu-base-nav-width) - var(--sidemenu-base-nav-padding-left));
+
         /* Needed to keep the button to stick to the top */
-        top: var(--sidemenu-button-margin-top, 1rem);
+        top: var(--sidemenu-button-margin-top);
         z-index: 2;
 
         &:before {
-          content: var(--sidemenu-base-close-button-icon-content, none);
+          content: var(--sidemenu-base-expanded-button-icon, none);
+          @include icon.icon;
+          font-family: var(--sidemenu-base-button-icon-font-family);
           font-size: var(--sidemenu-base-button-icon-font-size);
+          
+          /* Styling options for text input instead of icons */
           font-weight: var(--sidemenu-base-button-icon-font-weight);
           white-space: var(--sidemenu-base-button-icon-white-space);
+        }
+
+        &[aria-expanded="false"] {
+          &:before {
+            content: var(--sidemenu-base-collapsed-button-icon, none);
+          }
         }
       }
     }
   }
 
   &.sidemenu-closed {
-    @media (min-width: $breakpoint) {
+    @media (min-width: $sidemenu-breakpoint) {
       > nav {
         border: 0;
         width: 0;
@@ -136,12 +146,6 @@ main.sidemenu {
 
         .sidemenu-toggle {
           margin-left: 0;
-        }
-      }
-
-      .sidemenu-toggle {
-        &:before {
-          content: var(--sidemenu-base-open-button-before-content, none);
         }
       }
 
