@@ -2,6 +2,7 @@
 /*------------------- sidemenu-base.scss ------------------------*/
 /*---------------------------------------------------------------*/
 @use "sidemenu-base-variables";
+@use "mixins/icon";
 
 $breakpoint: 55rem !default;
 
@@ -108,21 +109,22 @@ main.sidemenu {
         margin-left: calc(var(--sidemenu-base-nav-width) - var(--sidemenu-base-nav-padding-left));
 
         /* Needed to keep the button to stick to the top */
-        top: var(--sidemenu-button-margin-top, 1rem);
+        top: var(--sidemenu-button-margin-top);
         z-index: 2;
 
         &:before {
           content: var(--sidemenu-base-close-button-icon-content, none);
+          @include icon.icon;
+          font-family: var(--sidemenu-base-button-icon-font-family);
+          font-size: var(--sidemenu-base-button-icon-font-size);
         }
 
-        &[aria-expanded="false"]{
+        &[aria-expanded="false"] {
           &:before {
             content: var(--sidemenu-base-open-button-icon-content, none);
           }
         }
-
       }
-
     }
   }
 

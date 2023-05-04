@@ -50,15 +50,19 @@
   --sidemenu-base-toggle-button-font-size: 0;
   --sidemenu-base-toggle-button-white-space: nowrap;
   --sidemenu-base-toggle-button-font-weight: normal;
+  --sidemenu-button-margin-top: 1rem;
 
   /* Side menu button icon */
   --sidemenu-base-button-icon-font-size: 1rem;
+  --sidemenu-base-button-icon-font-family: var(--icon-font-family);
+  --sidemenu-base-button-icon-font-size: var(--icon-font-size);
+  --sidemenu-base-button-icon-text-color: red;
 
   /* add content within "", this could be text or a unicode for an icon*/
 
   /* content on the button when the menu is collapsed */
-  --sidemenu-base-open-button-icon-content: "≡";
+  --sidemenu-base-close-button-icon-content: "\e901";
 
   /* content on the button when the menu is expanded */
-  --sidemenu-base-close-button-icon-content: "X";
+  --sidemenu-base-open-button-icon-content: "\e902";
 }
