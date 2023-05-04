@@ -3,8 +3,7 @@
 /*---------------------------------------------------------------*/
 @use "navigation-collapsible-menu-variables";
 
-body > header nav.collapsible-menu,
-.collapsible-menu {
+body > header nav.collapsible {
   /* Menu below breakpoint */
   display: flex;
   flex-wrap: nowrap;
@@ -24,8 +23,9 @@ body > header nav.collapsible-menu,
   border-color: var(--navigation-collapsible-menu-border-color);
   background-color: var(--navigation-collapsible-menu-background-color);
   order: var(--navigation-collapsible-menu-menu-order);
+  border: 1px dashed red;
 
-  .collapsing-menu {
+  .collapsing-item {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -40,6 +40,7 @@ body > header nav.collapsible-menu,
     right: var(--navigation-collapsible-menu-collapsing-menu-right);
     bottom: var(--navigation-collapsible-menu-collapsing-menu-bottom);
     left: var(--navigation-collapsible-menu-collapsing-menu-left);
+    border: 1px dashed green;
   
     ul,
     ol {

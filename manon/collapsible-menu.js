@@ -1,8 +1,8 @@
-const collapsibles = document.querySelectorAll(".collapsible");
+const collapsibleMenu = document.querySelectorAll(".collapsing-menu");
 
-collapsibles.forEach((collapsible) => {
+collapsibleMenu.forEach((collapsible) => {
     const collapsibleButton = collapsible.querySelector("button");
-   
+
     const toggle = () => {
         if (collapsibleButton.getAttribute("aria-expanded") == "true") {
             closeDropdown();

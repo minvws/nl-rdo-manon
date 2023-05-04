@@ -13,8 +13,8 @@
     <header>
         <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-        <nav aria-label="Hoofdnavigatie">
-          <div class="collapsing-menu">
+        <nav data-open-label="Menu" data-close-label="Sluit menu" data-media="(min-width: 42rem)" aria-label="Hoofdnavigatie" class="collapsible">
+          <div class="collapsing-item">
             <ul>
               <li><a href="../../index.html">Home</a></li>
               <li><a href="../components.html">Componenten</a></li>
@@ -26,11 +26,7 @@
     </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
-      <nav
-        data-open-label="Zijbalknavigatie"
-        data-close-label="Sluit zijbalknavigatie"
-        aria-label="Document-navigatie"
-      >
+      <nav>
         <ul>
           <li><a href="#introduction">Introductie</a></li>
           <li><a href="#examples">Voorbeelden</a></li>
