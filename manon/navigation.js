@@ -25,8 +25,8 @@ export function initNaviation() {
  * @param {boolean} isCondensed
  */
 function makeResponsive(nav, isCondensed) {
-  var menu = nav.querySelector(".collapsible");
-  console.log(nav);
+  var menu = nav.querySelector(".collapsing-menu");
+  console.log(menu);
   if (!(menu instanceof HTMLElement)) {
     return;
   }
@@ -37,7 +37,7 @@ function makeResponsive(nav, isCondensed) {
     nav.dataset.openLabel || "Menu",
     nav.dataset.closeLabel || "Sluit menu"
   );
- 
+
   menu.parentNode.insertBefore(button.element, menu);
 
   if (!isCondensed) {
@@ -46,10 +46,9 @@ function makeResponsive(nav, isCondensed) {
       function (event) {
         button.setExpanded(false);
         if (event.matches) {
-
-          nav.classList.remove("collapsing-item");
+          nav.classList.remove("collapsible-menu");
         } else {
-          nav.classList.add("collapsing-item");
+          nav.classList.add("collapsible-menu");
         }
       }
     );
