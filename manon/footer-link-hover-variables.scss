@@ -4,5 +4,10 @@
 :root {
   --footer-link-hover-background-color: var(--link-hover-background-color);
   --footer-link-hover-text-color: var(--link-hover-text-color);
-  --footer-link-hover-text-decoration: var(--link-hover-text-decotation);
+  --footer-link-hover-text-decoration: var(--link-hover-text-decoration);
+
+  /* Icon */
+  --footer-link-icon-hover-background-color: var(--footer-link-hover-background-color);
+  --footer-link-icon-hover-text-color: var(--footer-link-hover-text-color);
+  --footer-link-icon-hover-text-decoration: var(--footer-link-icon-text-decoration);
 }
