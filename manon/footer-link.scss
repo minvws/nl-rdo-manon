@@ -11,24 +11,19 @@ body > footer,
             background-color: var(--footer-link-background-color);
             color: var(--footer-link-text-color);
             text-decoration: var(--footer-link-text-decoration);
-            
+
             &.icon,
             .icon {
             &:before {
                 @include icon.icon;
                 font-family: var(--footer-link-icon-font-family);
                 font-size: var(--footer-link-icon-font-size);
-                
-              }
-            }
-    
-            &.icon{
-            &:before {
-                padding-right: var(--footer-link-icon-padding-right);
+                text-decoration: var(--footer-link-icon-text-decoration);
                 padding-left: var(--footer-link-icon-padding-left);
+                padding-right: var(--footer-link-icon-padding-right);
               }
             }
-    
+
             > span:last-of-type {
               font-size: 0;
               padding-right: var(--footer-link-icon-after-padding-right);
