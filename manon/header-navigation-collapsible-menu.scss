@@ -5,22 +5,193 @@
 
 $breakpoint: 60rem !default;
 
-/*body > header nav {
-    .collapsible.horizontal-view {
-        position: initial;
+body > header nav.collapsible-menu {
+    /* Menu below breakpoint */
+    button.menu-toggle {
+        display: none;
+    
+        &[aria-expanded="true"] {
+            /* Element that will be collapsed */
+            + .collapsible {
+                display: flex;
+                flex-direction: var(--navigation-collapsible-menu-flex-direction);
+                justify-content: var(--navigation-collapsible-menu-justify-content);
+                gap: var(--navigation-collapsible-menu-gap);
+                
+                max-height: initial;
+                height: auto;
+                max-width: var(--navigation-collapsible-menu-max-width);
+                width: var(--navigation-collapsible-menu-width);
+                z-index: var(--navigation-collapsible-menu-z-index);
+                
+                box-sizing: border-box;
+                padding-top: var(--navigation-collapsible-menu-padding-top);
+                padding-right: var(--navigation-collapsible-menu-padding-right);
+                padding-bottom: var(--navigation-collapsible-menu-padding-bottom);
+                padding-left: var(--navigation-collapsible-menu-padding-left);
+                
+                border-width: var(--navigation-collapsible-menu-border-width);
+                border-style: var(--navigation-collapsible-menu-border-style);
+                border-color: var(--navigation-collapsible-menu-border-color);
 
-        button,
-        a.button,
-        input[type="button"],
-        input[type="submit"],
-        input[type="reset"] {
+                background-color: var(--navigation-collapsible-menu-background-color);
+                color: var(--navigation-collapsible-menu-text-color);
+
+                -webkit-box-shadow: var(--navigation-collapsible-menu-box-shadow);
+                box-shadow: var(--navigation-collapsible-menu-box-shadow);
+
+                position: absolute;
+                top: var(--navigation-collapsible-menu-top);
+                left: var(--navigation-collapsible-menu-left);
+                right: var(--navigation-collapsible-menu-right);
             
-            + div {
-                left: var(--header-navigation-collapsible-menu-left);
-                top: var(--header-navigation-collapsible-menu-top);
-                width: var(--header-navigation-collapsible-menu-width);
+                ul,
+                ol {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    gap: var(--navigation-collapsible-menu-list-gap);
+                    background-color: var(--navigation-collapsible-menu-list-background-color);
+                
+                    li {
+                        display: flex;
+                        align-items: var(--navigation-collapsible-menu-list-item-align-items);
+
+                        width: 100%;
+
+                        background-color: var(--navigation-collapsible-menu-list-item-background-color);
+                        color: var(--navigation-collapsible-menu-list-item-text-color);
+
+                        border-width: var(--navigation-collapsible-menu-list-item-border-width);
+                        border-style: var(--navigation-collapsible-menu-list-item-border-style);
+                        border-color: var(--navigation-collapsible-menu-list-item-border-color);
+                
+                        &:before {
+                        display: none; /* Preventing default nav before to show up */
+                        }
+                
+                        &:last-child {
+                            border-width: var(--navigation-collapsible-menu-list-item-last-item-border-width);
+                        }
+                
+                        &:first-child {
+                            border-width: var(--navigation-collapsible-menu-list-item-first-item-border-width);
+                        }
+                
+                        a {
+                            width: 100%;
+                            max-width: 100%;
+                            padding: 0;
+                            box-sizing: border-box;
+                            text-decoration: var(--navigation-collapsible-menu-list-item-link-text-decoration);
+                            justify-content: var(--navigation-collapsible-menu-list-item-link-justify-content);
+                            border: 0;
+                            background-color: transparent;
+                            color: var(--navigation-collapsible-menu-list-item-link-text-color);
+                            white-space: nowrap;
+
+                            padding-top: var(--navigation-collapsible-menu-list-item-link-padding-top);
+                            padding-right: var(--navigation-collapsible-menu-list-item-link-padding-right);
+                            padding-bottom: var(--navigation-collapsible-menu-list-item-link-padding-bottom);
+                            padding-left: var(--navigation-collapsible-menu-list-item-link-padding-left);
+                        }
+                
+                        &:hover {
+                            background-color: var(--navigation-collapsible-menu-list-item-link-hover-background-color);
+                            color: var(--navigation-collapsible-menu-list-item-hover-text-color);
+                    
+                            a {
+                                background-color: var(--navigation-collapsible-menu-list-item-link-hover-background-color);
+                                color: var(---navigation-collapsible-menu-list-item-link-hover-text-color);
+                                
+                                &:visited {
+                                background-color: var(---navigation-collapsible-menu-list-item-link-hover-background-color);
+                                }
+                            }
+                        }
+                
+                        [aria-current] {
+                        background-color: var(--navigation-collapsible-menu-list-item-link-hover-background-color);
+                        color: var(--navigation-collapsible-menu-list-item-link-hover-text-color);
+                        }
+                    }
+                }
             }
-            
         }
     }
-}*/
+    
+    /* Manu button (Hamburger) */
+    button.menu-toggle {
+      display: flex;
+      max-height: 100%;
+      padding: 0;
+  
+    /* Hiding the menu items when collapsed */
+      &[aria-expanded="false"] {
+        & + .collapsible {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  /* collapsible menu button.
+  /* This button is only visisble when javascript is loaded. */
+  /* Do not add the button to the html manually, JS will do this. */
+  /* When JS isn't available the menu will be opened by default for accessibility. */
+  button.menu-toggle {
+    display: flex;
+    order: 1;
+    margin-left: auto;
+    border: 0;
+    background-color: var(--navigation-collapsible-menu-button-background-color);
+    font-size: var(--navigation-collapsible-menu-button-font-size);
+    height: var(--navigation-collapsible-menu-button-height);
+    min-height: var(--navigation-collapsible-menu-button-min-height);
+    min-width: var(--navigation-collapsible-menu-button-min-width);
+    width: var(--navigation-collapsible-menu-button-width);
+    gap: 0;
+  
+    &:after {
+      content: var(--navigation-collapsible-menu-icon);
+      font-size: var(--navigation-collapsible-menu-icon-font-size);
+      line-height: initial;
+      color: var(--navigation-collapsible-menu-icon-color);
+    }
+  
+    &[aria-expanded="true"]:after {
+      content: var(--navigation-collapsible-menu-icon-collapsed);
+      font-size: var(--navigation-collapsible-menu-icon-collapsed-font-size);
+      color: var(--navigation-collapsible-menu-icon-color);
+    }
+  
+    /* JS menu collapsed behaviour */
+    &[aria-expanded="false"] {
+      & ~ * {
+        display: none;
+      }
+    }
+  }
+  
+  /* Above breakpoint */
+  body > header nav {
+    > div {
+      display: flex;
+    }
+  
+    button.menu-toggle {
+      display: none;
+  
+      &[aria-expanded="false"] {
+        & ~ * {
+          display: flex;
+  
+          > * {
+            width: auto;
+          }
+        }
+      }
+    }
+  }

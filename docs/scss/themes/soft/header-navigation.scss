@@ -1,16 +1,10 @@
 /* Header navigation */
 
 :root {
-    --header-min-height: 3rem;
-    --header-navigation-background-color: transparent;
+    --header-navigation-background-color: #fff;
     --header-navigation-text-color: var(--text-set-text-color);
     --header-navigation-padding-right: 2%;
     --header-navigation-padding-left: 2%;
-    --header-navigation-justify-content: flex-start;
-
-    /* Grouped content */
-    --header-navigation-content-wrapper-flex-direction: row;
-    --header-navigation-content-wrapper-justify-content: flex-end;
 
     /* top border */
     --header-navigation-border-width: 3px 0 0 0;
