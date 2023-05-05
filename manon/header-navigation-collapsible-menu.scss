@@ -5,14 +5,14 @@
 
 $breakpoint: 60rem !default;
 
-body > header nav.collapsible-menu {
+body > header nav.collapsed {
     /* Menu below breakpoint */
     button.menu-toggle {
         display: none;
     
         &[aria-expanded="true"] {
             /* Element that will be collapsed */
-            + .collapsible {
+            + .collapsing-element {
                 display: flex;
                 flex-direction: var(--header-navigation-collapsible-menu-flex-direction);
                 justify-content: var(--header-navigation-collapsible-menu-justify-content);
@@ -130,7 +130,7 @@ body > header nav.collapsible-menu {
   
     /* Hiding the menu items when collapsed */
       &[aria-expanded="false"] {
-        & + .collapsible {
+        & + .collapsing-element {
           display: none;
         }
       }
