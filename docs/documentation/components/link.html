@@ -143,34 +143,26 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>--links-font-size</td>
-                    <td><a href="../variables.html#font-size">font-size</a></td>
-                    <td>var(--body-text-small-font-size)</td>
+                    <td>--link-background-color</td>
+                    <td><a href="../variables.html#background-color">background-color</a></td>
+                    <td>transparent</td>
                     <td>-</td>
                     <td rowspan="4" scope="rowgroup">links</td>
                   </tr>
 
                   <tr>
-                    <td>--links-font-weight</td>
-                    <td><a href="../variables.html#font-weight">font-weight</a></td>
-                    <td>var(--body-text-small-font-weight)</td>
+                    <td>--link-text-color</td>
+                    <td><a href="../variables.html#text-color">color</a></td>
+                    <td>#2f2f9a</td>
                     <td>-</td>
                   </tr>
 
                   <tr>
-                    <td>--links-line-height</td>
-                    <td><a href="../variables.html#line-height">line-height</a></td>
-                    <td>var(--body-text-small-line-height)</td>
+                    <td>--link-text-decoration</td>
+                    <td><a href="../variables.html#text-decoration">text-decoration</a></td>
+                    <td>initial</td>
                     <td>-</td>
                   </tr>
-
-                  <tr>
-                    <td>--links-text-color</td>
-                    <td><a href="../variables.html#text-color">text-color</a></td>
-                    <td>var(--body-text-small-color)</td>
-                    <td>-</td>
-                  </tr>
-
                 </tbody>
               </table>
             </div>
@@ -180,10 +172,72 @@
             <pre>
               <code>
 :root {
-  --links-font-size: ;
-  --links-font-weight: ;
-  --links-line-height: ;
-  --links-text-color: ;
+  --link-background-color: ;
+  --link-text-color: ;
+  --link-text-decoration: ;
+
+  /* State overrides */
+  /* Hover */
+  --link-hover-background-color: ;
+  --link-hover-text-color: ;
+  --link-hover-text-decoration: ;
+
+  /* Active */
+  --link-active-background-color: ;
+  --link-active-text-color: ;
+  --link-active-text-decoration: ;
+
+  /* Active Hover */
+  --link-active-hover-background-color: ;
+  --link-active-hover-text-color: ;
+  --link-active-hover-text-decoration: ;
+
+  /* Focus */
+  --link-focus-background-color: ;
+  --link-focus-text-color: ;
+  --link-focus-text-decoration: ;
+
+  /* Focus Hover */
+  --link-focus-hover-background-color: ;
+  --link-focus-hover-text-color: ;
+  --link-focus-hover-text-decoration: ;
+
+  /* Visited */
+  --link-visited-background-color: ;
+  --link-visited-text-color: ;
+  --link-visited-text-decoration: ;
+
+  /* Visited hover */
+  --link-visited-hover-background-color: ;
+  --link-visited-hover-text-color: ;
+  --link-visited-hover-text-decoration: ;
+
+  /* visited active */
+  --link-visited-active-background-color: ;
+  --link-visited-active-text-color: ;
+  --link-visited-active-text-decoration: ;
+
+  /* Icon */
+  --link-icon-font-family: ;
+  --link-icon-font-size: ;
+  --link-icon-padding-right: ;
+  --link-icon-padding-left: ;
+
+  /* Icon at the end */
+  --link-icon-after-padding-right: ;
+  --link-icon-after-padding-left: ;
+
+  /* Visited icon hover */
+  --link-visited-icon-hover-background-color: ;
+  --link-visited-icon-hover-text-color: ;
+  --link-visited-icon-hover-text-decoration: ;
+
+  /* External Icon */
+  --link-external-icon-font-family: ;
+  --link-external-icon-font-size: ;
+  --link-external-icon-padding-right: ;
+  --link-external-icon-padding-left: ;
+  --link-external-icon: ;
 }
               </code>
             </pre>
