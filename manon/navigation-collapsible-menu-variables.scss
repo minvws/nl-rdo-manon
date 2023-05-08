@@ -27,36 +27,36 @@
   --navigation-collapsible-menu-collapsing-menu-bottom: auto;
   --navigation-collapsible-menu-collapsing-menu-left: 0;
 
-    /* List */
-      --navigation-collapsible-menu-collapsing-menu-list-gap: var(--navigation-collapsible-menu-collapsing-menu-gap);
-      --navigation-collapsible-menu-collapsing-menu-list-background-color: transparent;
+  /* List */
+  --navigation-collapsible-menu-collapsing-menu-list-gap: var(--navigation-collapsible-menu-collapsing-menu-gap);
+  --navigation-collapsible-menu-collapsing-menu-list-background-color: transparent;
 
-      /* List item */
-        --navigation-collapsible-menu-collapsing-menu-list-item-background-color: var(--application-base-background-color, transparent);
-        --navigation-collapsible-menu-collapsing-menu-list-item-text-color: var(--application-base-text-color, transparent);
-        --navigation-collapsible-menu-collapsing-menu-list-item-border-width: 1px 0 0 0;
-        --navigation-collapsible-menu-collapsing-menu-list-item-border-style: solid;
-        --navigation-collapsible-menu-collapsing-menu-list-item-border-color: var(--grey-2, #000000);
-        --navigation-collapsible-menu-collapsing-menu-list-item-padding-top: 0;
-        --navigation-collapsible-menu-collapsing-menu-list-item-padding-right: 2rem;
-        --navigation-collapsible-menu-collapsing-menu-list-item-padding-bottom: 0;
-        --navigation-collapsible-menu-collapsing-menu-list-item-padding-left: 2rem;
-        
-        /* First collapsed list item */
-        --navigation-collapsible-menu-collapsing-menu-list-item-first-item-border-width: var(--navigation-collapsible-menu-collapsing-menu-list-item-border-width);
-        
-        /* Last collapsed list item */
-        --navigation-collapsible-menu-collapsing-menu-list-item-last-item-border-width: 1px 0;
+  /* List item */
+  --navigation-collapsible-menu-collapsing-menu-list-item-background-color: var(--application-base-background-color, transparent);
+  --navigation-collapsible-menu-collapsing-menu-list-item-text-color: var(--application-base-text-color, transparent);
+  --navigation-collapsible-menu-collapsing-menu-list-item-border-width: 1px 0 0 0;
+  --navigation-collapsible-menu-collapsing-menu-list-item-border-style: solid;
+  --navigation-collapsible-menu-collapsing-menu-list-item-border-color: var(--grey-2, #000000);
+  --navigation-collapsible-menu-collapsing-menu-list-item-padding-top: 0;
+  --navigation-collapsible-menu-collapsing-menu-list-item-padding-right: 2rem;
+  --navigation-collapsible-menu-collapsing-menu-list-item-padding-bottom: 0;
+  --navigation-collapsible-menu-collapsing-menu-list-item-padding-left: 2rem;
 
-        /* Link */
-        --navigation-collapsible-menu-collapsing-menu-list-item-link-justify-content: flex-start;
-        --navigation-collapsible-menu-collapsing-menu-list-item-link-text-color: black;
-        --navigation-collapsible-menu-collapsing-menu-list-item-link-text-decoration: var(--navigation-collapsible-link-text-decoration);
+  /* First collapsed list item */
+  --navigation-collapsible-menu-collapsing-menu-list-item-first-item-border-width: var(--navigation-collapsible-menu-collapsing-menu-list-item-border-width);
 
-        /* List item collapsed hover */
-        --navigation-collapsible-menu-collapsing-menu-list-item-link-hover-background-color: var(--branding-color-1-background-color, #c0c0c0);
-        --navigation-collapsible-menu-collapsing-menu-list-item-link-hover-text-color: var(--branding-color-1-text-color, #000000);
-      
+  /* Last collapsed list item */
+  --navigation-collapsible-menu-collapsing-menu-list-item-last-item-border-width: 1px 0;
+
+  /* Link */
+  --navigation-collapsible-menu-collapsing-menu-list-item-link-justify-content: flex-start;
+  --navigation-collapsible-menu-collapsing-menu-list-item-link-text-color: black;
+  --navigation-collapsible-menu-collapsing-menu-list-item-link-text-decoration: var(--navigation-collapsible-link-text-decoration);
+
+  /* List item collapsed hover */
+  --navigation-collapsible-menu-collapsing-menu-list-item-link-hover-background-color: var(--branding-color-1-background-color, #c0c0c0);
+  --navigation-collapsible-menu-collapsing-menu-list-item-link-hover-text-color: var(--branding-color-1-text-color, #000000);
+
   /* Button */
   --navigation-collapsible-menu-button-background-color: var(--application-base-background-color);
   --navigation-collapsible-menu-button-font-size: 0;
@@ -65,13 +65,13 @@
   --navigation-collapsible-menu-button-width: 2.75rem;
   --navigation-collapsible-menu-button-min-width: var(--button-base-min-width);
 
-    /* Icon */
-    --navigation-collapsible-menu-icon: "≡";
-    --navigation-collapsible-menu-icon-font-size: var(--application-base-font-size);
-    --navigation-collapsible-menu-icon-color: var(--application-base-text-color);
+  /* Icon */
+  --navigation-collapsible-menu-icon: "≡";
+  --navigation-collapsible-menu-icon-font-size: var(--application-base-font-size);
+  --navigation-collapsible-menu-icon-color: var(--application-base-text-color);
 
-    /* Collapsed icon */
-    --navigation-collapsible-menu-icon-collapsed: "x";
-    --navigation-collapsible-menu-icon-collapsed-font-size: var(--navigation-collapsible-menu-icon-font-size);
-    --navigation-collapsible-menu-icon-collapsed-color: var(--navigation-collapsible-menu-icon-color); 
+  /* Collapsed icon */
+  --navigation-collapsible-menu-icon-collapsed: "x";
+  --navigation-collapsible-menu-icon-collapsed-font-size: var(--navigation-collapsible-menu-icon-font-size);
+  --navigation-collapsible-menu-icon-collapsed-color: var(--navigation-collapsible-menu-icon-color);
 }

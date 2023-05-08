@@ -4,14 +4,13 @@
 :root {
   /* Label */
   --language-selector-list-label-font-size: 0;
-  --language-selector-list-label-text-color: var(--de-emphasized-text-color, inherit);
   --language-selector-list-label-gap: 0;
   --language-selector-list-label-text-color: var(--application-base-text-color);
   --language-selector-list-label-max-width: unset;
 
    /* Dropdown button */
   --language-selector-list-button-background-color: transparent;
-  
+
   --language-selector-list-button-text-color: var(--de-emphasized-text-color);
   --language-selector-list-button-font-size: var(--header-navigation-button-font-size, 1rem);
   --language-selector-list-button-font-weight: var(--header-navigation-button-min-height, normal);
@@ -21,11 +20,11 @@
   --language-selector-list-button-padding-right: 0.5rem;
   --language-selector-list-button-padding-bottom: 0.125rem;
   --language-selector-list-button-padding-left: 0.5rem;
-  
+
   --language-selector-list-button-border-width: 1px;
   --language-selector-list-button-border-style: solid;
   --language-selector-list-button-border-color: var(--grey-2);
-  
+
   --language-selector-list-button-min-height: var(--header-navigation-button-min-height, unset);
   --language-selector-list-button-width: 100%;
   --language-selector-list-button-min-width: 2.75rem;
