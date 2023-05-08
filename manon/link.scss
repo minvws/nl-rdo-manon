@@ -163,13 +163,4 @@ a {
     padding-right: var(--link-icon-after-padding-right);
     padding-left: var(--link-icon-after-padding-left);
   }
-
-  &[rel~=external]:before {
-    @include icon.icon;
-    font-family: var(--link-external-icon-font-family);
-    font-size: var(--link-external-icon-font-size);
-    content: var(--link-external-icon);
-    padding-right: var(--link-external-icon-padding-right);
-    padding-left: var(--link-external-icon-padding-left);
-  }
 }
