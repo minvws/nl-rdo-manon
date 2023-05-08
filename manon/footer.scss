@@ -39,9 +39,11 @@ body > footer,
     ul,
     ol {
       background-color: transparent;
-      padding: var(--footer-nav-padding);
+      padding: var(--footer-navigation-list-padding);
 
       li {
+        list-style: var(--footer-navigation-list-item-list-style);
+
         &:before {
           display: none; /* Preventing default nav before to show up */
         }
