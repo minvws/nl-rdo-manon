@@ -4,7 +4,7 @@
 :root {
   /* list */
   --list-base-margin: 0;
-  --list-base-padding: 0;
+  --list-base-padding: 0 0 0 1.5rem;
   --list-base-gap: 0;
   --list-base-line-height: var(--application-base-line-height, initial);
   --list-base-font-size: var(--application-base-font-size, initial);
@@ -19,4 +19,8 @@
   --list-base-item-border-color: transparent;
   --list-base-item-padding: 0.25rem 0;
   --list-base-item-style: initial;
+  --list-base-item-line-height: var(--list-base-line-height);
+  --list-base-item-font-size: var(--list-base-font-size);
+  --list-base-item-font-weight: var(--list-base-font-weight);
+  --list-base-item-text-color: var(--list-base-text-color);
 }
