@@ -13,13 +13,19 @@ body > header,
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+
   padding-top: var(--header-padding-top);
   padding-right: var(--header-padding-right);
   padding-bottom: var(--header-padding-bottom);
   padding-left: var(--header-padding-left);
+  
   max-width: var(--header-max-width);
   background-color: var(--header-background-color);
   min-height: var(--header-min-height);
+
+  border-width: var(--header-border-width);
+  border-style: var(--header-border-style);
+  border-color: var(--header-border-color);
 
   > section,
   > div {

@@ -10,21 +10,28 @@
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
+
     <header>
-        <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+      <div>
+          <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-        <a href="./logo.html" class="logo">
-            <img src="../../static/img/logo-white.svg" alt="Placeholder logo">Bedrijfs of productnaam
-        </a>
+          <a href="./logo.html" class="logo">
+              <img src="../../static/img/logo-white.svg" alt="Placeholder logo">Bedrijfs of productnaam
+          </a>
 
-        <div>
-          <nav aria-label="Hoofdnavigatie">
-            <div class="collapsing-menu">
-              <ul>
+          <nav 
+          data-open-label="Menu" 
+          data-close-label="Sluit menu" 
+          data-media="(min-width: 42rem)" 
+          aria-label="Hoofdnavigatie"
+          class="collapsible">
+
+            <div class="collapsing-element">
+                <ul>
                 <li><a href="../../index.html">Home</a></li>
-                <li><a href="../components.html">Componenten</a></li>
+                <li><a href="../components.html" aria-current="page">Componenten</a></li>
                 <li><a href="../documentation.html">Documentatie</a></li>
-              </ul>
+                </ul>
             </div>
           </nav>
 
@@ -54,10 +61,8 @@
               </ul>
             </div>
           </div>
-
-          <button class="round">LO</button>
-        </div>
-    </header>
+      </div>
+  </header>
 
     <main class="sidemenu" id="main-content" tabindex="-1">
       <nav
