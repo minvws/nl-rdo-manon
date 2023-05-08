@@ -11,7 +11,7 @@
     --footer-link-icon-font-size: var(--link-icon-font-size);
     --footer-link-icon-padding-right: var(--link-icon-padding-right);
     --footer-link-icon-padding-left: var(--link-icon-padding-left);
-    --footer-link-icon-text-decoration: var(--link-icon-text-decoration);
+    --footer-link-icon-text-decoration: var(--link-icon-text-decoration, none);
 
     /* Icon at the end */
     --footer-link-icon-after-padding-right: 0;
