@@ -37,9 +37,12 @@ ol {
   }
 }
 
+/*
+ * Nested Lists, eg. ol in ul
+ */
 ul {
   > li {
-    list-style: var(--list-base-item-style);
+    list-style: var(--list-base-item-list-style);
   }
 }
 
