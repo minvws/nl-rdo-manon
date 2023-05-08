@@ -53,8 +53,8 @@
   --link-icon-font-size: var(--icon-font-size);
   --link-icon-background-color: var(--link-background-color);
   --link-icon-text-color: var(--link-text-color);
-  --link-icon-padding-left: var(--icon-padding-left);
-  --link-icon-padding-right: var(--icon-padding-right);
+  --link-icon-padding-left: 0;
+  --link-icon-padding-right: 0.5rem;
   --link-icon-text-decoration: none;
 
   /* Icon at the end */
