@@ -6,6 +6,7 @@
   --sidemenu-base-main-padding-top: 0;
   --sidemenu-base-main-padding-bottom: 0;
   --sidemenu-base-main-gap: 3rem; /* Reserve space for the button */
+  --sidemenu-base-main-max-height: 90vh;
 
   /* Content container (top level div, section or article) */
   --sidemenu-base-content-container-background-color: transparent;
@@ -38,8 +39,8 @@
   --sidemenu-base-list-item-border-style: var(--list-base-item-border-style, solid);
   --sidemenu-base-list-item-border-color: var(--list-base-item-border-color, transparent);
   --sidemenu-base-list-item-padding: var(--list-base-item-padding, 0.25rem 0);
-  --sidemenu-base-list-item-item-style: var(--list-base-item-style, initial);
-  --sidemenu-base-list-item-line-height: var(--list-base-line-height, initial);
+  --sidemenu-base-list-item-list-style: var(--list-base-item-list-style, initial);
+  --sidemenu-base-list-item-line-height: var(--list-base-item-line-height, initial);
   --sidemenu-base-list-item-font-size: var(--list-base-font-size, initial);
   --sidemenu-base-list-item-font-weight: var(--list-base-font-weight, initial);
   --sidemenu-base-list-item-text-color: var(--list-base-text-color, #000);

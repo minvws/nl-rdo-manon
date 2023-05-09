@@ -69,30 +69,31 @@ main.sidemenu {
         position: sticky;
         top: 0;
         padding: var(--sidemenu-base-ul-padding);
-        max-height: var(--sidemenu-base-max-height, 90vh);
+        max-height: var(--sidemenu-base-main-max-height);
         overflow: auto;
         /* Solves a bug in older safari versions where position sticky blocks overflow auto */
         display: block;
       }
 
-      
+
       button + ul {
         /* Compensating for the reserved space for the icon.
 				Position sticky still reserves the space within the flow. */
         margin-top: 0;
       }
 
-      > ul li, 
+      > ul li,
       button + ul li {
         background-color: var(--sidemenu-base-list-item-background-color);
         border-color: var(--sidemenu-base-list-item-border-color);
         border-style: var(--sidemenu-base-list-item-border-style);
         border-width: var(--sidemenu-base-list-item-border-width);
         padding: var(--sidemenu-base-list-item-padding);
-        line-height: var(--sidemenu-base-list-item-line-height, inherit);
-        font-size: var(--sidemenu-base-list-item-font-size, inherit);
-        font-weight: var(--sidemenu-base-list-item-font-weight, inherit);
-        color: var(--sidemenu-base-list-item-text-color, inherit);
+        line-height: var(--sidemenu-base-list-item-line-height);
+        font-size: var(--sidemenu-base-list-item-font-size);
+        font-weight: var(--sidemenu-base-list-item-font-weight);
+        color: var(--sidemenu-base-list-item-text-color);
+        list-style: var(--sidemenu-base-list-item-list-style);
       }
 
       /* Button */
@@ -113,11 +114,11 @@ main.sidemenu {
         z-index: 2;
 
         &:before {
-          content: var(--sidemenu-base-expanded-button-icon, none);
           @include icon.icon;
+          content: var(--sidemenu-base-expanded-button-icon);
           font-family: var(--sidemenu-base-button-icon-font-family);
           font-size: var(--sidemenu-base-button-icon-font-size);
-          
+
           /* Styling options for text input instead of icons */
           font-weight: var(--sidemenu-base-button-icon-font-weight);
           white-space: var(--sidemenu-base-button-icon-white-space);
@@ -125,7 +126,7 @@ main.sidemenu {
 
         &[aria-expanded="false"] {
           &:before {
-            content: var(--sidemenu-base-collapsed-button-icon, none);
+            content: var(--sidemenu-base-collapsed-button-icon);
           }
         }
       }
