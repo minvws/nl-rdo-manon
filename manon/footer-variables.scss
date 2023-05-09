@@ -17,5 +17,6 @@
   --footer-max-width: 100%;
 
   /* Nav */
-  --footer-nav-padding: 0;
+  --footer-navigation-list-padding: 0;
+  --footer-navigation-list-item-list-style: var(--navigation-list-item-list-style, initial);
 }
