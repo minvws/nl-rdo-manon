@@ -5,7 +5,7 @@
 @use "mixins/collapsible";
 @use "mixins/icon";
 
-.collapsible {
+.collapsible.collapsed {
     @include collapsible.collapsible;
 
     .collapsing-element {
@@ -61,6 +61,7 @@
 
                 width: 100%;
                 max-width: 100%;
+                padding: 0;
 
                 background-color: var(--collapsing-element-list-item-background-color);
                 color: var(--collapsing-element-list-item-text-color);
@@ -104,33 +105,32 @@
 
                     &:before {
                         @include icon.icon;
-                        content: var(--collapsible-menu-list-selected-icon);
-                        font-family: var(--collapsible-menu-list-selected-icon-font-family);
-                        margin-left: var(--collapsible-menu-list-selected-icon-margin-left);
-                        font-size: var(--collapsible-menu-list-selected-icon-font-size);
-                        color: var(--collapsible-menu-list-selected-icon-text-color);
-                        margin-right: var(--collapsible-menu-list-selected-icon-margin-right);
+                        content: var(--collapsible-list-icon);
+                        font-family: var(--collapsible-list-icon-font-family);
+                        margin-left: var(--collapsible-list-icon-margin-left);
+                        font-size: var(--collapsible-list-icon-font-size);
+                        color: var(--collapsible-list-icon-text-color);
+                        margin-right: var(--collapsible-list-icon-margin-right);
                     }
 
                     &[aria-selected="true"],
                     &[aria-current="page"] {
-                        border: 1px dashed red;
-                        background-color: var(--collapsible-menu-list-link-selected-background-color);
-                        font-weight: var(--collapsible-menu-list-link-selected-font-weight);
+                        background-color: var(--collapsible-list-link-selected-background-color);
+                        font-weight: var(--collapsible-list-link-selected-font-weight);
                 
                         &:before {
                             @include icon.icon;
-                            content: var(--collapsible-menu-list-selected-icon);
-                            font-family: var(--collapsible-menu-list-selected-icon-font-family);
-                            margin-left: var(--collapsible-menu-list-selected-icon-margin-left);
-                            font-size: var(--collapsible-menu-list-selected-icon-font-size);
-                            color: var(--collapsible-menu-list-selected-icon-text-color);
-                            margin-right: var(--collapsible-menu-list-selected-icon-margin-right);
+                            content: var(--collapsible-list-selected-icon);
+                            font-family: var(--collapsible-list-selected-icon-font-family);
+                            margin-left: var(--collapsible-list-selected-icon-margin-left);
+                            font-size: var(--collapsible-list-selected-icon-font-size);
+                            color: var(--collapsible-list-selected-icon-text-color);
+                            margin-right: var(--collapsible-list-selected-icon-margin-right);
                         }
                 
                         &:hover {
                             border: 0;
-                            border-top: var(--collapsible-menu-list-link-selected-hover);
+                            border-top: var(--collapsible-list-link-selected-hover-background-color);
                         }
                     }
                 }

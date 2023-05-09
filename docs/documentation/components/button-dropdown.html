@@ -65,7 +65,7 @@
             <div 
               data-open-label="Dropdown menu" 
               data-close-label="Sluit dropdown menu" 
-              data-media="(min-width: 42rem)" 
+              data-media="(min-width: 100%)"
               aria-label="Acties"
               class="collapsible">
               
@@ -84,7 +84,7 @@
 &lt;div 
   data-open-label="Dropdown menu" 
   data-close-label="Sluit dropdown menu" 
-  data-media="(min-width: 42rem)" 
+  data-media="(min-width: 100%)" 
   aria-label="Acties"
   class="collapsible">
 
@@ -105,7 +105,7 @@
             <div 
               data-open-label="Dropdown menu" 
               data-close-label="Sluit dropdown menu" 
-              data-media="(min-width: 42rem)" 
+              data-media="(min-width: 100%)"
               aria-label="Acties"
               class="collapsible">
               
@@ -126,7 +126,7 @@
 &lt;div 
   data-open-label="Dropdown menu" 
   data-close-label="Sluit dropdown menu" 
-  data-media="(min-width: 42rem)" 
+  data-media="(min-width: 100%)" 
   aria-label="Acties"
   class="collapsible">
 
@@ -149,7 +149,8 @@
             <div 
               data-open-label="Dropdown menu" 
               data-close-label="Sluit dropdown menu" 
-              data-media="(min-width: 42rem)" 
+              data-media="(min-width: 100%)"
+              data-button-classes="ghost"
               aria-label="Acties"
               class="collapsible">
               
@@ -168,7 +169,8 @@
 &lt;div
   data-open-label="Dropdown menu" 
   data-close-label="Sluit dropdown menu" 
-  data-media="(min-width: 42rem)" 
+  data-media="(min-width: 100%)" 
+  data-button-classes="ghost"
   aria-label="Acties"
   class="collapsible">
 
@@ -189,12 +191,11 @@
             <div 
               data-open-label="Dropdown menu" 
               data-close-label="Sluit dropdown menu" 
-              data-media="(min-width: 42rem)" 
+              data-media="(min-width: 100%)"
+              data-button-classes="icon icon-cat"
               aria-label="Acties"
               class="collapsible">
 
-              <button class="icon icon-cat collapsible-toggle" aria-expanded="false"></button>
-              
               <div class="collapsing-element">
                   <ul>
                       <li><a href="#">Item 1</a></li>
@@ -210,7 +211,8 @@
 &lt;div 
   data-open-label="Dropdown menu" 
   data-close-label="Sluit dropdown menu" 
-  data-media="(min-width: 42rem)" 
+  data-media="(min-width: 100%)"
+  data-button-classes="icon icon-cat"
   aria-label="Acties"
   class="collapsible">
 
@@ -230,7 +232,7 @@
             <div 
               data-open-label="Dropdown menu" 
               data-close-label="Sluit dropdown menu" 
-              data-media="(min-width: 42rem)" 
+              data-media="(min-width: 100%)" 
               aria-label="Acties"
               class="collapsible">
               
@@ -255,7 +257,7 @@
 &lt;div 
   data-open-label="Dropdown menu" 
   data-close-label="Sluit dropdown menu" 
-  data-media="(min-width: 42rem)" 
+  data-media="(min-width: 100%)" 
   aria-label="Acties"
   class="collapsible">
 
@@ -282,16 +284,11 @@
             <div 
               data-open-label="Dropdown menu" 
               data-close-label="Sluit dropdown menu" 
-              data-media="(min-width: 42rem)" 
+              data-media="(min-width: 100%)" 
               aria-label="Acties"
               class="collapsible">
               
               <div class="collapsing-element">
-                <button aria-haspopup="listbox" aria-current="true" aria-expanded="false" aria-controls="collapsible-language-selector">
-                  EN <i class="icon icon-descending">Lorem ipsum</i>
-                </button>
-                    
-                <div>
                   <ul role="listbox">
                     <li>
                       <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands</a>
@@ -309,57 +306,42 @@
                       <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento</a>
                     </li>
                   </ul>
-                </div>
               </div>
             </div>
 
             <h3>Html-voorbeeld:</h3>
             <pre>
               <code>
-&lt;div class="collapsible">
-  &lt;button aria-haspopup="listbox" aria-current="true" aria-expanded="false" aria-controls="collapsible-language-selector">
-    EN &lt;i class="icon icon-descending">Lorem ipsum&lt;/i>
-  &lt;/button>
-  &lt;div id="collapsible-language-selector">
-      &lt;ul>
-          &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
-          &lt;li>&lt;a href="#" aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
-          &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+&lt;div 
+  data-open-label="Dropdown menu" 
+  data-close-label="Sluit dropdown menu" 
+  data-media="(min-width: 100%)" 
+  aria-label="Acties"
+  class="collapsible">
+  
+  &lt;div class="collapsing-element">
+      &lt;ul role="listbox">
+        &lt;li>
+          &lt;a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands&lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a hreflang="en" href="#" role="option" data-value="English" lang="en">English&lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk&lt;/a>
+        &lt;/li>
+        &lt;li aria-current="true">
+          &lt;a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu&lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento&lt;/a>
+        &lt;/li>
       &lt;/ul>
   &lt;/div>
 &lt;/div>
               </code>
             </pre>
 
-            <h2>Horizontal view</h2>
-            <p>Boven het ingestelde breekpunt worden de items weergegeven en horizontaal uitgelijnd.</p>
-            <h3>Visuele weergave:</h3>
-            <div class="collapsible horizontal-view">
-                <button aria-expanded="false" aria-controls="collapsible-horizontal-view">Lorem ipsum</button>
-                <div id="collapsible-horizontal-view">
-                    <ul>
-                        <li><a href="#">Item 1</a></li>
-                        <li><a href="#" aria-selected="true">Huidige selectie</a></li>
-                        <li><a href="#">Item 3</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <h3>Html-voorbeeld:</h3>
-            <pre>
-              <code>
-&lt;div class="collapsible horizontal-view">
-  &lt;button aria-expanded="false" aria-controls="collapsible-horizontal-view">Lorem ipsum&lt;/button>
-  &lt;div id="collapsible-horizontal-view">
-      &lt;ul>
-          &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
-          &lt;li>&lt;a href="#" aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
-          &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
-      &lt;/ul>
-  &lt;/div>
-&lt;/div>
-              </code>
-            </pre>
           </section>
            
           <section id="related">

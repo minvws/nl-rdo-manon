@@ -45,7 +45,6 @@ function makeResponsive(collapsibleElement, isCondensed) {
     collapsibleElement.dataset.buttonClasses || ""
   );
 
-  console.log("insert", collapsingElement.parentNode, collapsingElement, button.element);
   collapsingElement.parentNode.insertBefore(button.element, collapsingElement);
 
   if (!isCondensed) {
@@ -70,12 +69,12 @@ function makeResponsive(collapsibleElement, isCondensed) {
  * @return {{ element: HTMLButtonElement, setExpanded: (expanded: boolean) => void }}
  */
 function createMenuButton(collapsingElementId, openLabel, closeLabel, buttonClasses) {
-  console.log(collapsingElementId);
   var button = document.createElement("button");
-  button.className = "collapsible-toggle";
+  button.className = "collapsible-toggle ";
   button.className += buttonClasses;
   button.setAttribute("aria-controls", collapsingElementId);
   button.setAttribute("aria-expanded", "false");
+  button.setAttribute("aria-haspopup", "menu");
 
   var label = document.createElement("span");
   label.innerText = openLabel;
