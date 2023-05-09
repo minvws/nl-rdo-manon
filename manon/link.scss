@@ -15,6 +15,13 @@ a {
   @include link.link('link-');
 
   /* states */
+  &:visited,
+  &.visited /* Testing purposes */
+  {
+    @include link.link-and-icon-styling('link-visited-');
+    @include link.link-elements-styling('link-visited-');
+  }
+
   &:hover,
   &.hover /* Testing purposes */
   {
@@ -65,12 +72,5 @@ a {
     &.active {
       @include link.link-and-icon-styling('link-active-hover-');
     }
-  }
-
-  &:visited,
-  &.visited /* Testing purposes */
-  {
-    @include link.link-and-icon-styling('link-visited-');
-    @include link.link-elements-styling('link-visited-');
   }
 }
