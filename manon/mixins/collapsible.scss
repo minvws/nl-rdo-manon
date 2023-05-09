@@ -3,25 +3,41 @@
 /*---------------------------------------------------------------*/
 
 @mixin collapsible {
-    padding: 0;
-    gap: 0;
-    width: auto;
-    margin: 0;
-    position: relative;
+    
+    &.collapsed {
+        border: 1px dashed green;
 
-    button.collapsible-toggle  {
-        display: flex;
-        max-height: 100%;
         padding: 0;
+        gap: 0;
+        width: var(--collapsible-width, 100%);
+        max-width: var(--collapsible-max-width, 100%);
+        margin: 0;
+        position: relative;
+        border: 1px dashed red;
+
+        button.collapsible-toggle  {
+            display: flex;
+            max-height: 100%;
+            padding: 0;
+
+            + .collapsing-element {
+                display: flex;
+            }
+
+            &[aria-expanded="false"] {
+                & + .collapsing-element {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    /* Above breakpoint */
+    button.collapsible-toggle {
+        display: none;
 
         + .collapsing-element {
-            display: flex;
-        }
-
-        &[aria-expanded="false"] {
-            & + .collapsing-element {
-                display: none;
-            }
+            display: none;
         }
     }
 }

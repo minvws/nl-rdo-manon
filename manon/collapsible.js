@@ -15,8 +15,6 @@ export function initNaviation() {
   for (var i = 0; i < collapsible.length; i++) {
     var collapsibleElement = collapsible[i];
 
-    console.log(collapsibleElement);
-
     if (!(collapsible[i] instanceof HTMLElement) || collapsible[i].querySelector(".collapsible-toggle")) {
       continue;
     }
@@ -31,23 +29,23 @@ export function initNaviation() {
  * @param {boolean} isCondensed
  */
 function makeResponsive(collapsibleElement, isCondensed) {
-    var collapsingElement = collapsibleElement.querySelector(".collapsing-element");
-    
-    if (!(collapsingElement instanceof HTMLElement)) {
-        console.error("missing collapsing element for: ", collapsibleElement);
-        return;
-    }
+  var collapsingElement = collapsibleElement.querySelector(".collapsing-element");
+  
+  if (!(collapsingElement instanceof HTMLElement)) {
+      console.error("missing collapsing element for: ", collapsibleElement);
+      return;
+  }
 
-    ensureElementHasId(collapsingElement);
+  ensureElementHasId(collapsingElement);
 
-    var button = createMenuButton(
-        collapsingElement.id,
-        collapsingElement.dataset.openLabel || "Menu",
-        collapsingElement.dataset.closeLabel || "Sluit menu"
-    );
+  var button = createMenuButton(
+    collapsingElement.id,
+    collapsingElement.dataset.openLabel || "Menu",
+    collapsingElement.dataset.closeLabel || "Sluit menu"
+  );
 
-    console.log("insert", collapsingElement.parentNode, collapsingElement, button.element);
-    collapsingElement.parentNode.insertBefore(button.element, collapsingElement);
+  console.log("insert", collapsingElement.parentNode, collapsingElement, button.element);
+  collapsingElement.parentNode.insertBefore(button.element, collapsingElement);
 
   if (!isCondensed) {
     onMediaQueryMatch(

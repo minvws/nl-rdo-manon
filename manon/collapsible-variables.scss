@@ -4,6 +4,8 @@
 
 :root {
     /* Collapsible */
+    --collapsible-width: 100%;
+    --collapsible-max-width: 100%;
 
     /* Collapsing element */
     --collapsing-element-flex-direction: column;
@@ -14,10 +16,10 @@
     --collapsing-element-max-width: 100%;
     --collapsing-element-z-index: 20;
 
-    --collapsing-element-padding-top: 1rem;
-    --collapsing-element-padding-right: 1rem;
-    --collapsing-element-padding-bottom: 1rem;
-    --collapsing-element-padding-left: 1rem;
+    --collapsing-element-padding-top: 0;
+    --collapsing-element-padding-right: 0;
+    --collapsing-element-padding-bottom: 0;
+    --collapsing-element-padding-left: 0;
 
     --collapsing-element-border-width: 0;
     --collapsing-element-border-style: solid;
@@ -34,11 +36,11 @@
 
     /* List */
     --collapsing-element-list-gap: 0;
-    --collapsing-element-list-backgound-color: ;
+    --collapsing-element-list-backgound-color: transparent;
 
     /* List item */
     --collapsing-element-list-item-align-items: flex-start;
-
+    --collapsing-element-list-item-min-height: 3rem;
     --collapsing-element-list-item-background-color: transparent;
     --collapsing-element-list-item-text-color: #000;
 

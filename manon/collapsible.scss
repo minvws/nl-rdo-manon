@@ -38,5 +38,90 @@
         top: var(--collapsing-element-top);
         left: var(--collapsing-element-left);
         right: var(--collapsing-element-right);
+
+        form {
+            padding: 0;
+            background-color: transparent;
+        }
+
+        ul,
+        ol {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            gap: var(--collapsing-element-list-gap);
+            background-color: var(--collapsing-element-list-background-color);
+          
+            li {
+                display: flex;
+                align-items: var(--collapsing-element-list-item-align-items);
+
+                width: 100%;
+                max-width: 100%;
+
+                background-color: var(--collapsing-element-list-item-background-color);
+                color: var(--collapsing-element-list-item-text-color);
+
+                border-width: var(--collapsing-element-list-item-border-width);
+                border-style: var(--collapsing-element-list-item-border-style);
+                border-color: var(--collapsing-element-list-item-border-color);
+        
+                &:before {
+                display: none; /* Preventing default nav before to show up */
+                }
+        
+                &:last-child {
+                    border-width: var(--collapsing-element-list-item-last-item-border-width);
+                }
+        
+                &:first-child {
+                    border-width: var(--collapsing-element-list-item-first-item-border-width);
+                }
+        
+                a {
+                    display: flex;
+                    justify-content: var(--collapsing-element-list-item-link-justify-content);
+                    align-items: center;
+                    
+                    width: 100%;
+                    max-width: 100%;
+                    min-height: var(--collapsing-element-list-item-min-height);
+                    
+                    box-sizing: border-box;
+                    padding-top: var(--collapsing-element-list-item-link-padding-top);
+                    padding-right: var(--collapsing-element-list-item-link-padding-right);
+                    padding-bottom: var(--collapsing-element-list-item-link-padding-bottom);
+                    padding-left: var(--collapsing-element-list-item-link-padding-left);
+                    
+                    background-color: transparent;
+                    border: 0;
+                    color: var(--collapsing-element-list-item-link-text-color);
+                    text-decoration: var(--collapsing-element-list-item-link-text-decoration);
+                    white-space: nowrap;
+                }
+        
+                &:hover {
+                    background-color: var(--collapsing-element-list-item-link-hover-background-color);
+                    color: var(--collapsing-element-list-item-hover-text-color);
+            
+                    a {
+                        background-color: var(--collapsing-element-list-item-link-hover-background-color);
+                        color: var(---collapsing-element-list-item-link-hover-text-color);
+                        
+                        &:visited {
+                        background-color: var(---collapsing-element-list-item-link-hover-background-color);
+                        }
+                    }
+                }
+        
+                &[aria-current] {
+                    background-color: var(--collapsing-element-list-item-link-hover-background-color);
+                    color: var(--collapsing-element-list-item-link-hover-text-color);
+                }
+            }
+        }
+
     }
 }
