@@ -3,6 +3,7 @@
 /*---------------------------------------------------------------*/
 @use "header-navigation-link-variables";
 @use "mixins/icon";
+@use "mixins/link";
 
 %active-link {
   border-width: var(--header-navigation-link-active-border-width);
@@ -22,41 +23,22 @@
 body > header,
 %header-navigation-style {
   nav {
-      a {
-          background-color: var(--header-navigation-link-background-color);
-          color: var(--header-navigation-link-text-color);
-          text-decoration: var(--header-navigation-link-text-decoration);
-          
-          &.icon,
-          .icon {
-          &:before {
-              @include icon.icon;
-              font-family: var(--header-navigation-link-icon-font-family);
-              font-size: var(--header-navigation-link-icon-font-size);
-            }
-          }
-
-          &.icon{
-          &:before {
-              padding-right: var(--header-navigation-link-icon-padding-right);
-              padding-left: var(--header-navigation-link-icon-padding-left);
-            }
-          }
-
-          > span:last-of-type {
-            font-size: 0;
-            padding-right: var(--header-navigation-link-icon-after-padding-right);
-            padding-left: var(--header-navigation-link-icon-after-padding-left);
-          }
-      }
+    a {
+      @include link.link('--header-navigation-link-');
 
       ul,
       ol {
         li {
+
+          &[aria-current="page"] {
+            > a,
+            > a:visited {
+              @extend %active-link;
+            }
+          }
+
           a {
-            text-decoration: var(--header-navigation-link-text-decoration);
-            background-color: var(--header-navigation-link-background-color);
-            color: var(--header-navigation-link-text-color);
+            @include link.styling('header-navigation-link-');
             font-size: var(--header-navigation-link-font-size);
             line-height: var(--header-navigation-link-line-height);
             font-weight: var(--header-navigation-link-font-weight);
@@ -66,12 +48,12 @@ body > header,
               color: var(--header-navigation-link-hover-text-color);
               font-weight: var(--header-navigation-link-hover-font-weight);
             }
-  
+
             /* aria current on a */
             &[aria-current="page"] {
-             @extend %active-link;
+              @extend %active-link;
             }
-  
+
             &:hover {
               background-color: var(--header-navigation-link-hover-background-color);
               color: var(--header-navigation-link-hover-text-color);
@@ -82,14 +64,8 @@ body > header,
               font-weight: var(--header-navigation-link-hover-font-weight);
             }
           }
-
-          &[aria-current="page"] {
-            > a,
-            > a:visited {
-                @extend %active-link;
-              }
-          }
         }
-      } 
+      }
+    }
   }
 }
