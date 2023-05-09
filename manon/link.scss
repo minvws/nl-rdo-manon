@@ -22,8 +22,8 @@
   text-decoration: var(--link-hover-text-decoration);
 
   &:before {
-    background-color: var(--link-icon-hover-background-color);
-    color: var(--link-icon-hover-text-color);
+    background-color: var(--link-hover-icon-background-color);
+    color: var(--link-hover-icon-text-color);
     text-decoration: var(--link-hover-icon-text-decoration);
   }
 
@@ -33,14 +33,14 @@
     color: var(--link-active-hover-text-color);
     text-decoration: var(--link-active-hover-text-decoration);
   }
-  
+
   &:focus,
   &.focus {
     background-color: var(--link-focus-hover-background-color);
     color: var(--link-focus-hover-text-color);
     text-decoration: var(--link-focus-hover-text-decoration);
   }
-  
+
   &:visited,
   &.visited {
     background-color: var(--link-visited-hover-background-color);
@@ -115,22 +115,26 @@ a {
 
   /* states */
   &:hover,
-	&.hover /* Testing purposes */ {
+  &.hover /* Testing purposes */
+  {
     @extend %link-hover;
   }
 
   &:active,
-	&.active /* Testing purposes */ {
+  &.active /* Testing purposes */
+  {
     @extend %link-active;
   }
 
   &:focus,
-	&.focus /* Testing purposes */ {
+  &.focus /* Testing purposes */
+  {
     @extend %link-focus;
   }
 
   &:visited,
-	&.visited /* Testing purposes */ {
+  &.visited /* Testing purposes */
+  {
     @extend %link-visited;
 
     > h1,
@@ -149,16 +153,11 @@ a {
       @include icon.icon;
       font-family: var(--link-icon-font-family);
       font-size: var(--link-icon-font-size);
-    }
-  }
-
-  &.icon{
-    &:before {
       padding-right: var(--link-icon-padding-right);
       padding-left: var(--link-icon-padding-left);
     }
   }
-  
+
   > span:last-of-type {
     font-size: 0;
     padding-right: var(--link-icon-after-padding-right);

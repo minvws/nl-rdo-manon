@@ -7,13 +7,13 @@ ul,
 ol {
   display: flex;
   flex-direction: column;
-  gap: var(--list-base-gap, 0.5rem);
-  padding: var(--list-base-padding, 0 0 0 2rem);
-  background-color: var(--list-base-background-color, inherit);
-  line-height: var(--list-base-line-height, inherit);
-  font-size: var(--list-base-font-size, inherit);
-  font-weight: var(--list-base-font-weight, inherit);
-  color: var(--list-base-text-color, inherit);
+  gap: var(--list-base-gap);
+  padding: var(--list-base-padding);
+  background-color: var(--list-base-background-color);
+  line-height: var(--list-base-line-height);
+  font-size: var(--list-base-font-size);
+  font-weight: var(--list-base-font-weight);
+  color: var(--list-base-text-color);
   margin: 0;
   box-sizing: border-box;
 
@@ -23,10 +23,10 @@ ol {
     border-style: var(--list-base-item-border-style);
     border-color: var(--list-base-item-border-color);
     padding: var(--list-base-item-padding);
-    line-height: var(--list-base-line-height, inherit);
-    font-size: var(--list-base-font-size, inherit);
-    font-weight: var(--list-base-font-weight, inherit);
-    color: var(--list-base-text-color, inherit);
+    line-height: var(--list-base-item-line-height);
+    font-size: var(--list-base-item-font-size);
+    font-weight: var(--list-base-item-font-weight);
+    color: var(--list-base-item-text-color);
     box-sizing: border-box;
 
     a {
@@ -37,9 +37,12 @@ ol {
   }
 }
 
+/*
+ * Nested Lists, eg. ol in ul
+ */
 ul {
   > li {
-    list-style: var(--list-base-item-style, initial);
+    list-style: var(--list-base-item-list-style);
   }
 }
 
