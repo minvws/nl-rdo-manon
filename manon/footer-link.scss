@@ -2,44 +2,13 @@
 /*---------------------- footer-link.scss -----------------------*/
 /*---------------------------------------------------------------*/
 @use "footer-link-variables";
-@use "mixins/icon";
+@use "mixins/link";
 
 body > footer,
 %footer-style {
   nav {
     a {
-      background-color: var(--footer-link-background-color);
-      color: var(--footer-link-text-color);
-      text-decoration: var(--footer-link-text-decoration);
-
-      &:before {
-        @include icon.icon;
-        font-family: var(--footer-link-icon-font-family);
-        font-size: var(--footer-link-icon-font-size);
-        text-decoration: var(--footer-link-icon-text-decoration);
-        padding-left: var(--footer-link-icon-padding-left);
-        padding-right: var(--footer-link-icon-padding-right);
-
-        //content: ;
-      }
-
-      &.icon,
-      .icon {
-        &:before {
-          @include icon.icon;
-          font-family: var(--footer-link-icon-font-family);
-          font-size: var(--footer-link-icon-font-size);
-          text-decoration: var(--footer-link-icon-text-decoration);
-          padding-left: var(--footer-link-icon-padding-left);
-          padding-right: var(--footer-link-icon-padding-right);
-        }
-      }
-
-      > span:last-of-type {
-        font-size: 0;
-        padding-right: var(--footer-link-icon-after-padding-right);
-        padding-left: var(--footer-link-icon-after-padding-left);
-      }
+      @include link('footer-link-');
     }
   }
 }
