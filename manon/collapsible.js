@@ -73,6 +73,7 @@ function createMenuButton(collapsingElementId, openLabel, closeLabel, buttonClas
   console.log(collapsingElementId);
   var button = document.createElement("button");
   button.className = "collapsible-toggle";
+  button.className += buttonClasses;
   button.setAttribute("aria-controls", collapsingElementId);
   button.setAttribute("aria-expanded", "false");
 
