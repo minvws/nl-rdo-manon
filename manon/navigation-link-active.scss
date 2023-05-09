@@ -3,6 +3,7 @@
 /*---------------------------------------------------------------*/
 @use "navigation-link-active-variables";
 @use "mixins/link";
+@use "mixins/outline";
 
 nav {
   a {
@@ -11,9 +12,7 @@ nav {
     {
       @include link.link-and-icon-styling('navigation-link-active-');
 
-      outline: var(--navigation-link-active-outline);
-      outline-offset: var(--navigation-link-active-outline-offset);
-      z-index: 1;
+      @include outline.outline('navigation-link-active-');
 
       &:hover,
       &.hover /* Testing purposes */
