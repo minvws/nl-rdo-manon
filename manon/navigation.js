@@ -25,7 +25,7 @@ export function initNaviation() {
  * @param {boolean} isCondensed
  */
 function makeResponsive(nav, isCondensed) {
-  var menu = nav.querySelector(".collapsing-menu");
+  var menu = nav.querySelector(".collapsible");
   if (!(menu instanceof HTMLElement)) {
     return;
   }

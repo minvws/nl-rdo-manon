@@ -2,31 +2,34 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <title>Header visueel voorbeeld</title>
+    <title>Header content wrapper visueel voorbeeld</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/css/docs-styling/header/header-example-content-wrapper-variables.css" rel="stylesheet" />
     <link href="../../static/img/favicon.ico" rel="shortcut icon" />
     <script defer src="../../static/js/manon.js"></script>
   </head>
   <body id="index" class="documentation">
     <header>
-        <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+        <div>
+            <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-        <nav 
-          data-open-label="Menu" 
-          data-close-label="Sluit menu" 
-          data-media="(min-width: 30rem)" 
-          aria-label="Hoofdnavigatie"
-          class="collapsible">
+            <nav 
+            data-open-label="Menu" 
+            data-close-label="Sluit menu" 
+            data-media="(min-width: 30rem)" 
+            aria-label="Hoofdnavigatie"
+            class="collapsible">
 
-          <div class="collapsing-element">
-            <ul>
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="../components.html" aria-current="page">Componenten</a></li>
-              <li><a href="../documentation.html">Documentatie</a></li>
-            </ul>
-          </div>
-        </nav>
+            <div class="collapsing-element">
+                <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../components.html" aria-current="page">Componenten</a></li>
+                <li><a href="../documentation.html">Documentatie</a></li>
+                </ul>
+            </div>
+            </nav>
+        </div>
          
     </header>
 
@@ -62,24 +65,25 @@
             <pre>
               <code>
 &lt;header>
-  &lt;a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud&lt;/a>
+    &lt;div>
+        &lt;a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud&lt;/a>
 
-  &lt;nav 
-    data-open-label="Menu" 
-    data-close-label="Sluit menu" 
-    data-media="(min-width: 30rem)" 
-    aria-label="Hoofdnavigatie"
-    class="collapsible">
+        &lt;nav 
+            data-open-label="Menu" 
+            data-close-label="Sluit menu" 
+            data-media="(min-width: 30rem)" 
+            aria-label="Hoofdnavigatie"
+            class="collapsible">
 
-    &lt;div class="collapsing-element">
-      &lt;ul>
-        &lt;li>&lt;a href="../../index.html">Home&lt;/a>&lt;/li>
-        &lt;li>&lt;a href="../components.html" aria-current="page">Componenten&lt;/a>&lt;/li>
-        &lt;li>&lt;a href="../documentation.html">Documentatie&lt;/a>&lt;/li>
-      &lt;/ul>
+            &lt;div class="collapsing-element">
+            &lt;ul>
+                &lt;li>&lt;a href="../../index.html">Home&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="../components.html" aria-current="page">Componenten&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="../documentation.html">Documentatie&lt;/a>&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+        &lt;/nav>
     &lt;/div>
-  &lt;/nav>
-    
 &lt;/header>
               </code>
             </pre>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inklapbaar component</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <div>
+        <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+        <a href="./logo.html" class="logo">
+          <img src="../../static/img/logo-white.svg" alt="Placeholder logo">Bedrijfs of productnaam
+        </a>
+
+        <nav 
+          data-open-label="Menu" 
+          data-close-label="Sluit menu" 
+          data-media="(min-width: 42rem)" 
+          aria-label="Hoofdnavigatie"
+          class="collapsible">
+
+            <div class="collapsing-element">
+                <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../components.html" aria-current="page">Componenten</a></li>
+                <li><a href="../documentation.html">Documentatie</a></li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li>
+              <a href="./collapsible-menu.html" aria-current="page">Inklapbaar component</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Inklapbaar component</h1>
+
+            <ol>
+                <li>Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.</li>
+                <li>Voeg de benodigde HTML toe. Voor meer informatie zie: <a href="examples">Voorbeelden</a>.</li>
+            </ol>
+          </section>
+
+          <section id="examples">
+            <h2><code>button</code></h2>
+            <h3>Visuele weergave:</h3>
+            
+            <div 
+              data-open-label="Dropdown menu" 
+              data-close-label="Sluit dropdown menu" 
+              data-media="(min-width: 100%)"
+              aria-label="Acties"
+              class="collapsible">
+              
+              <div class="collapsing-element">
+                  <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+                      <li><a href="#">Item 3</a></li>
+                  </ul>
+              </div>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div 
+  data-open-label="Dropdown menu" 
+  data-close-label="Sluit dropdown menu" 
+  data-media="(min-width: 100%)" 
+  aria-label="Acties"
+  class="collapsible">
+
+  &lt;div class="collapsing-element">
+      &lt;ul>
+          &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#" aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+      &lt;/ul>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>Met formulier</h2>
+            <h3>Visuele weergave:</h3>
+
+            <div 
+              data-open-label="Dropdown menu" 
+              data-close-label="Sluit dropdown menu" 
+              data-media="(min-width: 100%)"
+              aria-label="Acties"
+              class="collapsible">
+              
+              <div class="collapsing-element">
+                <form>
+                  <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+                      <li><a href="#">Item 3</a></li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div 
+  data-open-label="Dropdown menu" 
+  data-close-label="Sluit dropdown menu" 
+  data-media="(min-width: 100%)" 
+  aria-label="Acties"
+  class="collapsible">
+
+  &lt;div class="collapsing-element">
+    &lt;form>
+      &lt;ul>
+          &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#" aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/form>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+            
+            <h2>Inklapbare ghost button</h2>
+            <h3>Visuele weergave:</h3>
+
+            <div 
+              data-open-label="Dropdown menu" 
+              data-close-label="Sluit dropdown menu" 
+              data-media="(min-width: 100%)"
+              data-button-classes="ghost"
+              aria-label="Acties"
+              class="collapsible">
+              
+              <div class="collapsing-element">
+                  <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+                      <li><a href="#">Item 3</a></li>
+                  </ul>
+              </div>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div
+  data-open-label="Dropdown menu" 
+  data-close-label="Sluit dropdown menu" 
+  data-media="(min-width: 100%)" 
+  data-button-classes="ghost"
+  aria-label="Acties"
+  class="collapsible">
+
+  &lt;div class="collapsing-element">
+      &lt;ul>
+          &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#" aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+      &lt;/ul>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+            
+            <h2>Inklapbare icoonknop</h2>
+            <h3>Visuele weergave:</h3>
+
+            <div 
+              data-open-label="Dropdown menu" 
+              data-close-label="Sluit dropdown menu" 
+              data-media="(min-width: 100%)"
+              data-button-classes="icon icon-cat"
+              aria-label="Acties"
+              class="collapsible">
+
+              <div class="collapsing-element">
+                  <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+                      <li><a href="#">Item 3</a></li>
+                  </ul>
+              </div>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div 
+  data-open-label="Dropdown menu" 
+  data-close-label="Sluit dropdown menu" 
+  data-media="(min-width: 100%)"
+  data-button-classes="icon icon-cat"
+  aria-label="Acties"
+  class="collapsible">
+
+  &lt;div class="collapsing-element">
+      &lt;ul>
+          &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#" aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+      &lt;/ul>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+            
+            <h2>Inklapbaar component met meerdere menu's</h2>
+            <h3>Visuele weergave:</h3>
+            <div 
+              data-open-label="Dropdown menu" 
+              data-close-label="Sluit dropdown menu" 
+              data-media="(min-width: 100%)" 
+              aria-label="Acties"
+              class="collapsible">
+              
+              <div class="collapsing-element">
+                <ul>
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+                  <li><a href="#">Item 3</a></li>
+                </ul>
+
+                <ul>
+                  <li><a href="#">Sub menu Item 1</a></li>
+                  <li><a href="#">Sub menu Item 2</a></li>
+                  <li><a href="#">Sub menu Item 3</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div 
+  data-open-label="Dropdown menu" 
+  data-close-label="Sluit dropdown menu" 
+  data-media="(min-width: 100%)" 
+  aria-label="Acties"
+  class="collapsible">
+
+  &lt;div class="collapsing-element">
+    &lt;ul>
+      &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#" aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+    &lt;/ul>
+
+    &lt;ul>
+      &lt;li>&lt;a href="#">Sub menu Item 1&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Sub menu Item 2&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Sub menu Item 3&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>Inklapbare taalselectie</h2>
+            <h3>Visuele weergave:</h3>
+
+            <div 
+              data-open-label="Dropdown menu" 
+              data-close-label="Sluit dropdown menu" 
+              data-media="(min-width: 100%)" 
+              aria-label="Acties"
+              class="collapsible">
+              
+              <div class="collapsing-element">
+                  <ul role="listbox">
+                    <li>
+                      <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands</a>
+                    </li>
+                    <li>
+                      <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
+                    </li>
+                    <li>
+                      <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
+                    </li>
+                    <li aria-current="true">
+                      <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
+                    </li>
+                    <li>
+                      <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div 
+  data-open-label="Dropdown menu" 
+  data-close-label="Sluit dropdown menu" 
+  data-media="(min-width: 100%)" 
+  aria-label="Acties"
+  class="collapsible">
+  
+  &lt;div class="collapsing-element">
+      &lt;ul role="listbox">
+        &lt;li>
+          &lt;a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands&lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a hreflang="en" href="#" role="option" data-value="English" lang="en">English&lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk&lt;/a>
+        &lt;/li>
+        &lt;li aria-current="true">
+          &lt;a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu&lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento&lt;/a>
+        &lt;/li>
+      &lt;/ul>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+          </section>
+           
+          <section id="related">
+            <h2>Gerelateerde pagina's</h2>
+            <a href="./button-dropdown-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

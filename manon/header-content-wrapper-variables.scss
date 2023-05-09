@@ -1,0 +1,15 @@
+/*---------------------------------------------------------------*/
+/*------------- header-content-wrapper-variables.scss -----------*/
+/*---------------------------------------------------------------*/
+:root {
+  --header-content-wrapper-flex-direction: var(--header-flex-direction, row);
+  --header-content-wrapper-justify-content: var(--header-justify-content, flex-start);
+  --header-content-wrapper-align-items: var(--header-align-items, center);
+  --header-content-wrapper-gap: var(--header-gap, 2rem);
+  --header-content-wrapper-padding-top: var(--header-padding-top, 0);
+  --header-content-wrapper-padding-right: var(--header-padding-right, 0);
+  --header-content-wrapper-padding-bottom: var(--header-padding-bottom, 0);
+  --header-content-wrapper-padding-left: var(--header-padding-left, 0);
+  --header-content-wrapper-max-width: var(--header-max-width, 100%);
+  --header-content-wrapper-position: static;
+}
