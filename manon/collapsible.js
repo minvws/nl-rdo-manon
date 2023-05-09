@@ -69,7 +69,7 @@ function makeResponsive(collapsibleElement, isCondensed) {
  * @param {string} closeLabel
  * @return {{ element: HTMLButtonElement, setExpanded: (expanded: boolean) => void }}
  */
-function createMenuButton(collapsingElementId, openLabel, closeLabel) {
+function createMenuButton(collapsingElementId, openLabel, closeLabel, buttonClasses) {
   console.log(collapsingElementId);
   var button = document.createElement("button");
   button.className = "collapsible-toggle";
