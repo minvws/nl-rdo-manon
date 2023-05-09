@@ -29,11 +29,6 @@ a {
     &.focus {
       @include link.link-and-icon-styling('link-focus-hover-');
     }
-
-    &:visited,
-    &.visited {
-      @include link.link-and-icon-styling('link-visited-hover-');
-    }
   }
 
   &:active,
@@ -66,20 +61,6 @@ a {
   &.visited /* Testing purposes */
   {
     @include link.link-and-icon-styling('link-visited-');
-
-    &:hover,
-    &.hover /* Testing purposes */
-    {
-      @include link.link-and-icon-styling('link-visited-hover-');
-    }
-
-    @include link.link-elements-styling('link-visited-') {
-      &:hover,
-      &.hover /* Testing purposes */
-      {
-        @include link.link-and-icon-styling('link-visited-hover-');
-      }
-    }
+    @include link.link-elements-styling('link-visited-');
   }
-
 }
