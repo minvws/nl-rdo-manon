@@ -48,6 +48,20 @@
     --collapsing-element-list-item-border-style: solid;
     --collapsing-element-list-item-border-color: #dbdbdb;
 
+    /* List item link selected */
+    --collapsible-menu-list-link-selected-background-color: red;
+    --collapsible-menu-list-link-selected-font-weight: bold;
+    
+    /* List item link selected hover */
+    --collapsible-menu-list-link-selected-hover: var(--collapsible-menu-list-link-hover);
+
+    /* List item link selected icon */
+    --collapsible-menu-list-selected-icon-font-family: var(--icon-font-family);
+    --collapsible-menu-list-selected-icon-font-size: var(--icon-font-size);
+    --collapsible-menu-list-selected-icon-text-color: var(--language-selector-list-label-text-color);
+    --collapsible-menu-list-selected-icon-margin-right: 0.5rem;
+    --collapsible-menu-list-selected-icon: "\e900";
+
     /* First collapsed list item */
     --collapsing-element-list-item-first-item-border-width: 0;
 

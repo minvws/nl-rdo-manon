@@ -89,7 +89,9 @@
                 padding-bottom: var(--collapsible-menu-list-item-link-padding-bottom);
                 padding-left: var(--collapsible-menu-list-item-link-padding-left);
 
-                &[aria-selected="true"] {
+                &[aria-selected="true"],
+                &[aria-current="page"] {
+                    border: 1px dashed red;
                     background-color: var(--collapsible-menu-list-link-selected-background-color);
                     font-weight: var(--collapsible-menu-list-link-selected-font-weight);
             

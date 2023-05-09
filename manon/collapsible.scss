@@ -3,6 +3,7 @@
 /*---------------------------------------------------------------*/
 @use "collapsible-variables";
 @use "mixins/collapsible";
+@use "mixins/icon";
 
 .collapsible {
     @include collapsible.collapsible;
@@ -100,6 +101,38 @@
                     color: var(--collapsing-element-list-item-link-text-color);
                     text-decoration: var(--collapsing-element-list-item-link-text-decoration);
                     white-space: nowrap;
+
+                    &:before {
+                        @include icon.icon;
+                        content: var(--collapsible-menu-list-selected-icon);
+                        font-family: var(--collapsible-menu-list-selected-icon-font-family);
+                        margin-left: var(--collapsible-menu-list-selected-icon-margin-left);
+                        font-size: var(--collapsible-menu-list-selected-icon-font-size);
+                        color: var(--collapsible-menu-list-selected-icon-text-color);
+                        margin-right: var(--collapsible-menu-list-selected-icon-margin-right);
+                    }
+
+                    &[aria-selected="true"],
+                    &[aria-current="page"] {
+                        border: 1px dashed red;
+                        background-color: var(--collapsible-menu-list-link-selected-background-color);
+                        font-weight: var(--collapsible-menu-list-link-selected-font-weight);
+                
+                        &:before {
+                            @include icon.icon;
+                            content: var(--collapsible-menu-list-selected-icon);
+                            font-family: var(--collapsible-menu-list-selected-icon-font-family);
+                            margin-left: var(--collapsible-menu-list-selected-icon-margin-left);
+                            font-size: var(--collapsible-menu-list-selected-icon-font-size);
+                            color: var(--collapsible-menu-list-selected-icon-text-color);
+                            margin-right: var(--collapsible-menu-list-selected-icon-margin-right);
+                        }
+                
+                        &:hover {
+                            border: 0;
+                            border-top: var(--collapsible-menu-list-link-selected-hover);
+                        }
+                    }
                 }
         
                 &:hover {

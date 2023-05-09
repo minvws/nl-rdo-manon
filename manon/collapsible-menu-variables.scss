@@ -75,7 +75,7 @@
     --collapsible-menu-button-min-width: 2.75rem;
 
     /* List item link selected */
-    --collapsible-menu-list-link-selected-background-color: #fff;
+    --collapsible-menu-list-link-selected-background-color: red;
     --collapsible-menu-list-link-selected-font-weight: bold;
 
     /* List item link selected hover */
@@ -86,5 +86,5 @@
     --collapsible-menu-list-selected-icon-font-size: var(--icon-font-size);
     --collapsible-menu-list-selected-icon-text-color: var(--language-selector-list-label-text-color);
     --collapsible-menu-list-selected-icon-margin-right: 0.5rem;
-    --collapsible-menu-list-selected-icon: none;
+    --collapsible-menu-list-selected-icon: "\e900";
 }
