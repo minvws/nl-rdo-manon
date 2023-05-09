@@ -5,15 +5,12 @@
 @mixin collapsible {
     
     &.collapsed {
-        border: 1px dashed green;
-
         padding: 0;
         gap: 0;
         width: var(--collapsible-width, 100%);
         max-width: var(--collapsible-max-width, 100%);
         margin: 0;
         position: relative;
-        border: 1px dashed red;
 
         button.collapsible-toggle  {
             display: flex;
