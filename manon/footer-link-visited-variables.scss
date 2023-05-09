@@ -7,9 +7,9 @@
   --footer-link-visited-text-decoration: var(--link-visited-text-decoration);
 
   /* Icon */
-  --footer-link-icon-visited-background-color: var(--footer-link-visited-background-color);
-  --footer-link-icon-visited-text-color: var(--footer-link-visited-text-color);
-  --footer-link-icon-visited-text-decoration: var(--footer-link-icon-text-decoration);
+  --footer-link-visited-icon-background-color: var(--footer-link-visited-background-color);
+  --footer-link-visited-icon-text-color: var(--footer-link-visited-text-color);
+  --footer-link-visited-icon-text-decoration: var(--footer-link-icon-text-decoration);
 
   /* visited on hover */
   --footer-link-visited-hover-background-color: var(--link-visited-hover-background-color);
@@ -19,5 +19,5 @@
   /* visited on hover icon */
   --footer-link-icon-visited-hover-background-color: var(--footer-link-visited-hover-background-color);
   --footer-link-icon-visited-hover-text-color: var(--footer-link-visited-hover-text-color);
-  --footer-link-icon-visited-hover-text-decoration: var(--footer-link-icon-visited-text-decoration);
+  --footer-link-icon-visited-hover-text-decoration: var(--footer-link-visited-icon-text-decoration);
 }
