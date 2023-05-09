@@ -42,6 +42,11 @@ a {
     {
       @include link.link-and-icon-styling('link-active-hover-');
     }
+
+    &:focus,
+    &.focus {
+      @include link.link-and-icon-styling('link-focus-hover-');
+    }
   }
 
   &:focus,
@@ -54,6 +59,11 @@ a {
     &.hover /* Testing purposes */
     {
       @include link.link-and-icon-styling('link-focus-hover-');
+    }
+
+    &:active,
+    &.active {
+      @include link.link-and-icon-styling('link-active-hover-');
     }
   }
 
