@@ -12,3 +12,12 @@
   line-height: 1;
   font-style: normal;
 }
+
+@mixin icon-format($prefix) {
+  @include icon;
+
+  font-family: var(--#{$prefix}icon-font-family);
+  font-size: var(--#{$prefix}icon-font-size);
+  padding-right: var(--#{$prefix}icon-padding-right);
+  padding-left: var(--#{$prefix}icon-padding-left);
+}

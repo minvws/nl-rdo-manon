@@ -1,0 +1,78 @@
+/*---------------------------------------------------------------------*/
+/*------------------------- mixins/icon.scss --------------------------*/
+/*---------------------------------------------------------------------*/
+@use "icon";
+
+
+@mixin styling($prefix) {
+  background-color: var(--#{$prefix}background-color);
+  color: var(--#{$prefix}text-color);
+  text-decoration: var(--#{$prefix}text-decoration);
+}
+
+@mixin link-and-icon-styling($prefix) {
+  @include styling($prefix);
+
+  &:before {
+    @include styling("#{$prefix}icon-");
+  }
+}
+
+@mixin link($prefix, $state: '') {
+  @include styling($prefix + $state);
+
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6 {
+    @include link-and-icon-styling($prefix);
+  }
+
+  &:before {
+    @include icon.icon-format($prefix);
+
+    content: var(--#{$prefix}#{$state}icon);
+  }
+
+  &.icon,
+  .icon {
+    &:before {
+      @include icon.icon-format($prefix);
+    }
+  }
+
+  > span.icon:last-of-type:not(:only-of-type) {
+    font-size: 0;
+    padding-right: var(--#{$prefix}#{$state}icon-last-padding-right);
+    padding-left: var(--#{$prefix}#{$state}icon-last-padding-left);
+  }
+}
+
+
+
+//@mixin navigation-link($name) {
+//  background-color: var(--navigation-link-#{$name}-background-color);
+//  color: var(--navigation-link-#{$name}-text-color);
+//  text-decoration: var(--navigation-link-#{$name}-text-decoration);
+//
+//  &:before {
+//    @include icon.icon-format('navigation-link-');
+//
+//    content: var(--navigation-link-#{$name}-icon);
+//  }
+//
+//  &.icon,
+//  .icon {
+//    &:before {
+//      @include icon.icon-format('navigation-link-');
+//    }
+//  }
+//
+//  > span.icon:last-of-type:not(:only-of-type) {
+//    font-size: 0;
+//    padding-right: var(--navigation-link-#{$name}-icon-last-padding-right);
+//    padding-left: var(--navigation-link-#{$name}-icon-last-padding-left);
+//  }
+//}

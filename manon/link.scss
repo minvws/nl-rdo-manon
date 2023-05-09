@@ -3,139 +3,80 @@
 /*---------------------------------------------------------------*/
 @use "link-variables";
 @use "mixins/icon";
-
-%link-styles {
-  background-color: var(--link-background-color);
-  color: var(--link-text-color);
-  text-decoration: var(--link-text-decoration);
-
-  &:before {
-    background-color: var(--link-icon-background-color);
-    color: var(--link-icon-text-color);
-    text-decoration: var(--link-icon-text-decoration);
-  }
-}
-
-%link-hover {
-  background-color: var(--link-hover-background-color);
-  color: var(--link-hover-text-color);
-  text-decoration: var(--link-hover-text-decoration);
-
-  &:before {
-    background-color: var(--link-hover-icon-background-color);
-    color: var(--link-hover-icon-text-color);
-    text-decoration: var(--link-hover-icon-text-decoration);
-  }
-
-  &:active,
-  &.active {
-    background-color: var(--link-active-hover-background-color);
-    color: var(--link-active-hover-text-color);
-    text-decoration: var(--link-active-hover-text-decoration);
-  }
-
-  &:focus,
-  &.focus {
-    background-color: var(--link-focus-hover-background-color);
-    color: var(--link-focus-hover-text-color);
-    text-decoration: var(--link-focus-hover-text-decoration);
-  }
-
-  &:visited,
-  &.visited {
-    background-color: var(--link-visited-hover-background-color);
-    color: var(--link-visited-hover-text-color);
-    text-decoration: var(--link-visited-hover-text-decoration);
-  }
-}
-
-%link-active {
-  background-color: var(--link-active-background-color);
-  color: var(--link-active-text-color);
-  text-decoration: var(--link-active-text-decoration);
-
-  &:hover {
-    background-color: var(--link-active-hover-background-color);
-    color: var(--link-active-hover-text-color);
-    text-decoration: var(--link-active-hover-text-decoration);
-  }
-}
-
-%link-focus {
-  background-color: var(--link-focus-background-color);
-  color: var(--link-focus-text-color);
-  text-decoration: var(--link-focus-text-decoration);
-
-  &:hover {
-    background-color: var(--link-focus-hover-background-color);
-    color: var(--link-focus-hover-text-color);
-    text-decoration: var(--link-focus-hover-text-decoration);
-  }
-}
-
-%link-visited {
-  background-color: var(--link-visited-background-color);
-  color: var(--link-visited-text-color);
-  text-decoration: var(--link-visited-text-decoration);
-
-  &:before {
-    background-color: var(--link-visited-icon-background-color);
-    color: var(--link-visited-icon-text-color);
-    text-decoration: var(--link-visited-icon-text-decoration);
-
-    &:hover {
-      background-color: var(--link-visited-icon-hover-background-color);
-      color: var(--link-visited-icon-hover-text-color);
-      text-decoration: var(--link-visited-icon-hover-text-decoration);
-    }
-  }
-
-  &:active {
-    background-color: var(--link-visited-active-background-color);
-    color: var(--link-visited-active-text-color);
-    text-decoration: var(--link-visited-active-text-decoration);
-  }
-}
+@use "mixins/link";
 
 a {
-  @extend %link-styles;
   cursor: pointer;
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
 
-  > h1,
-  > h2,
-  > h3,
-  > h4,
-  > h5,
-  > h6 {
-    @extend %link-styles;
-  }
+  @include link.link('link-');
 
   /* states */
   &:hover,
   &.hover /* Testing purposes */
   {
-    @extend %link-hover;
+    @include link.link-and-icon-styling('link-hover-');
+
+    &:active,
+    &.active {
+      @include link.link-and-icon-styling('link-active-hover-');
+    }
+
+    &:focus,
+    &.focus {
+      @include link.link-and-icon-styling('link-focus-hover-');
+    }
+
+    &:visited,
+    &.visited {
+      @include link.link-and-icon-styling('link-visited-hover-');
+    }
   }
 
   &:active,
   &.active /* Testing purposes */
   {
-    @extend %link-active;
+    @include link.link-and-icon-styling('link-active-');
+
+    outline: var(--link-active-outline);
+    outline-offset: var(--link-active-outline-offset);
+    z-index: 1;
+
+    &:hover {
+      @include link.link-and-icon-styling('link-active-hover-');
+    }
   }
 
   &:focus,
   &.focus /* Testing purposes */
   {
-    @extend %link-focus;
+    @include link.link-and-icon-styling('link-focus-');
+
+    outline: var(--link-focus-outline);
+    outline-offset: var(--link-focus-outline-offset);
+    z-index: 1;
+
+    &:hover {
+      @include link.link-and-icon-styling('link-focus-hover-');
+    }
   }
 
   &:visited,
   &.visited /* Testing purposes */
   {
-    @extend %link-visited;
+    @include link.link-and-icon-styling('link-visited-');
+
+    &:before {
+      &:hover {
+        @include link.link-and-icon-styling('link-visited-icon-hover-');
+      }
+    }
+
+    &:active {
+      @include link.styling('link-visited-active-');
+    }
 
     > h1,
     > h2,
@@ -143,24 +84,18 @@ a {
     > h4,
     > h5,
     > h6 {
-      @extend %link-visited;
+      @include link.link-and-icon-styling('link-visited-');
+
+      &:before {
+        &:hover {
+          @include link.styling('link-visited-icon-hover-');
+        }
+      }
+
+      &:active {
+        @include link.styling('link-visited-active-');
+      }
     }
   }
 
-  &.icon,
-  .icon {
-    &:before {
-      @include icon.icon;
-      font-family: var(--link-icon-font-family);
-      font-size: var(--link-icon-font-size);
-      padding-right: var(--link-icon-padding-right);
-      padding-left: var(--link-icon-padding-left);
-    }
-  }
-
-  > span:last-of-type {
-    font-size: 0;
-    padding-right: var(--link-icon-after-padding-right);
-    padding-left: var(--link-icon-after-padding-left);
-  }
 }
