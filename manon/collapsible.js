@@ -70,8 +70,7 @@ function makeResponsive(collapsibleElement, isCondensed) {
  */
 function createMenuButton(collapsingElementId, openLabel, closeLabel, buttonClasses) {
   var button = document.createElement("button");
-  button.className = "collapsible-toggle ";
-  button.className += buttonClasses;
+  button.className = "collapsible-toggle " + buttonClasses;
   button.setAttribute("aria-controls", collapsingElementId);
   button.setAttribute("aria-expanded", "false");
   button.setAttribute("aria-haspopup", "menu");
