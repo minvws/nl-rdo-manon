@@ -21,3 +21,7 @@
   padding-right: var(--#{$prefix}icon-padding-right);
   padding-left: var(--#{$prefix}icon-padding-left);
 }
+
+@mixin icon-content($prefix) {
+  content: var(--#{$prefix}icon);
+}
