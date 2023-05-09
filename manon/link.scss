@@ -12,6 +12,7 @@ a {
   word-break: break-word;
 
   @include link.link('link-');
+  @include link.link-elements-styling('link-');
 
   /* states */
   &:visited,

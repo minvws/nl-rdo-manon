@@ -20,8 +20,6 @@
 @mixin link($prefix) {
   @include styling($prefix);
 
-  @include link-elements-styling($prefix);
-
   &:before {
     @include icon.icon-format($prefix);
     @include icon.icon-content($prefix);
