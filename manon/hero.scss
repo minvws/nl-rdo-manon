@@ -10,6 +10,7 @@
   height: var(--hero-height);
   max-height: var(--hero-max-height);
   position: relative;
+  padding: 0;
 
   img {
     object-fit: cover;
