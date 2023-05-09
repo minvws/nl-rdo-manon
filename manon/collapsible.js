@@ -40,8 +40,9 @@ function makeResponsive(collapsibleElement, isCondensed) {
 
   var button = createMenuButton(
     collapsingElement.id,
-    collapsingElement.dataset.openLabel || "Menu",
-    collapsingElement.dataset.closeLabel || "Sluit menu"
+    collapsibleElement.dataset.openLabel || "Menu",
+    collapsibleElement.dataset.closeLabel || "Sluit menu",
+    collapsibleElement.dataset.buttonClasses || ""
   );
 
   console.log("insert", collapsingElement.parentNode, collapsingElement, button.element);
