@@ -1,0 +1,42 @@
+/*---------------------------------------------------------------*/
+/*----------------------- collapsible.scss ----------------------*/
+/*---------------------------------------------------------------*/
+@use "collapsible-variables";
+@use "mixins/collapsible";
+
+.collapsible {
+    @include collapsible.collapsible;
+
+    .collapsing-element {
+        flex-direction: var(--collapsing-element-flex-direction);
+        justify-content: var(--collapsing-element-justify-content);
+        gap: var(--collapsing-element-gap);
+
+        max-height: initial;
+        height: auto;
+        width: var(--collapsing-element-width);
+        max-width: var(--collapsing-element-max-width);
+        z-index: var(--collapsing-element-z-index);
+
+        box-sizing: border-box;
+        padding-top: var(--collapsing-element-padding-top);
+        padding-right: var(--collapsing-element-padding-right);
+        padding-bottom: var(--collapsing-element-padding-bottom);
+        padding-left: var(--collapsing-element-padding-left);
+        
+        border-width: var(--collapsing-element-border-width);
+        border-style: var(--collapsing-element-border-style);
+        border-color: var(--collapsing-element-border-color);
+
+        background-color: var(--collapsing-element-background-color);
+        color: var(--collapsing-element-text-color);
+
+        -webkit-box-shadow: var(-collapsing-element-box-shadow);
+        box-shadow: var(--collapsing-element-box-shadow);
+
+        position: absolute;
+        top: var(--collapsing-element-top);
+        left: var(--collapsing-element-left);
+        right: var(--collapsing-element-right);
+    }
+}

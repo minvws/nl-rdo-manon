@@ -2,8 +2,80 @@
 /*--------------- collapsible-menu-variables.scss ---------------*/
 /*---------------------------------------------------------------*/
 :root {
+    /* Collapsing element */
+    --collapsible-menu-flex-direction: column;
+    --collapsible-menu-justify-content: center;
+    --collapsible-menu-gap: 0;
+
+    --collapsible-menu-width: 100%;
+    --collapsible-menu-z-index: 20;
+    --collapsible-menu-max-width: 100%;
+
+    --collapsible-menu-padding-top: 0;
+    --collapsible-menu-padding-right: 0;
+    --collapsible-menu-padding-bottom: 0;
+    --collapsible-menu-padding-left: 0;
+
+    --collapsible-menu-border-width: 0;
+    --collapsible-menu-border-style: solid;
+    --collapsible-menu-border-color: transparent;
+
+    --collapsible-menu-background-color: # ffffff;
+    --collapsible-menu-menu-order: 0;
+
+    --collapsible-menu-background-color: #ffffff;
+    --collapsible-menu-text-color: #000000;
+
+    --collapsible-menu-box-shadow: 0px 8px 16px 0px rgba(17,20,22,0.15);
+
+    --collapsible-menu-top: 2.8rem;
+    --collapsible-menu-right: auto;
+    --collapsible-menu-left: 0;
+
     /* List */
-    --collapsible-menu-width: auto;
+    --collapsible-menu-list-gap: 0;
+    --collapsible-menu-list-background-color: #ffffff;
+
+    /* List item */
+    --collapsible-menu-list-item-align-items: flex-start;
+
+    --collapsible-menu-list-item-background-color: transparent;
+    --collapsible-menu-list-item-text-color: #000;
+
+    --collapsible-menu-list-item-border-width: 1px 0 0 0;
+    --collapsible-menu-list-item-border-style: solid;
+    --collapsible-menu-list-item-border-color: var(--grey-2, #dbdbdb);
+
+    /* First collapsed list item */
+    --collapsible-menu-list-item-first-item-border-width: 0;
+
+    /* Last collapsed list item */
+    --collapsible-menu-list-item-last-item-border-width: 1px 0;
+
+    /* Link */
+    --collapsible-menu-list-item-link-justify-content: flex-start;
+    --collapsible-menu-list-item-link-text-color: var(--collapsible-menu-text-color, #000);
+    --collapsible-menu-list-item-link-text-decoration: var(--navigation-collapsible-link-text-decoration);
+
+    --collapsible-menu-list-item-link-padding-top: 0;
+    --collapsible-menu-list-item-link-padding-right: 2rem;
+    --collapsible-menu-list-item-link-padding-bottom: 0;
+    --collapsible-menu-list-item-link-padding-left: 2rem;
+
+    /* List item collapsed hover */
+    --collapsible-menu-list-item-link-hover-background-color: var(--branding-color-1-background-color, #c0c0c0);
+    --collapsible-menu-list-item-link-hover-text-color: var(--branding-color-1-text-color, #000000);
+        
+    /* Button */
+    --collapsible-menu-button-background-color: var(--application-base-background-color);
+    --collapsible-menu-button-font-size: 0;
+    --collapsible-menu-button-height: 2.75rem;
+    --collapsible-menu-button-min-height: var(--button-base-min-height);
+    --collapsible-menu-button-width: 2.75rem;
+    --collapsible-menu-button-min-width: 2.75rem;
+
+    /* List */
+    /*--collapsible-menu-width: auto;
     --collapsible-menu-top: 2.75rem;
     --collapsible-menu-justify-content: flex-start;
     --collapsible-menu-right: auto;
@@ -13,30 +85,30 @@
     --collapsible-menu-padding: 0;
     --collapsible-menu-gap: 0;
     --collapsible-menu-border: 1px solid #f0f0f0;
-    --collapsible-menu-background-color: #fff;
+    --collapsible-menu-background-color: #fff;*/
 
     /* List item */
-    --collapsible-menu-list-style: none;
+    /*--collapsible-menu-list-style: none;*/
 
     /* List item link */
-    --collapsible-menu-list-link-border-top: 1px solid #f0f0f0;
+   /* --collapsible-menu-list-link-border-top: 1px solid #f0f0f0;
     --collapsible-menu-list-link-justify-content: flex-start;
     --collapsible-menu-list-link-padding: 0 1rem;
     --collapsible-menu-list-link-min-height: 3rem;
     --collapsible-menu-list-link-text-color: #000;
     --collapsible-menu-list-link-white-space: nowrap;
-    --collapsible-menu-list-link-hover: 1px solid #f0f0f0;
+    --collapsible-menu-list-link-hover: 1px solid #f0f0f0;*/
 
     /* List item link selected */
-    --collapsible-menu-list-link-selected-background-color: #fff;
-    --collapsible-menu-list-link-selected-font-weight: bold;
+    /*--collapsible-menu-list-link-selected-background-color: #fff;
+    --collapsible-menu-list-link-selected-font-weight: bold;*/
 
     /* List item link selected hover */
-    --collapsible-menu-list-link-selected-hover: var(--collapsible-menu-list-link-hover);
+    /*--collapsible-menu-list-link-selected-hover: var(--collapsible-menu-list-link-hover);*/
 
     /* List item link selected icon */
-    --collapsible-menu-list-selected-icon-font-family: var(--icon-font-family);
+    /*--collapsible-menu-list-selected-icon-font-family: var(--icon-font-family);
     --collapsible-menu-list-selected-icon-font-size: var(--icon-font-size);
     --collapsible-menu-list-selected-icon-text-color: var(--language-selector-list-label-text-color);
-    --collapsible-menu-list-selected-icon-margin-right: 0.5rem;
+    --collapsible-menu-list-selected-icon-margin-right: 0.5rem;*/
 }

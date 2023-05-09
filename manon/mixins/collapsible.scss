@@ -1,0 +1,27 @@
+/*---------------------------------------------------------------*/
+/*----------------------- collapsible.scss ----------------------*/
+/*---------------------------------------------------------------*/
+
+@mixin collapsible {
+    padding: 0;
+    gap: 0;
+    width: auto;
+    margin: 0;
+    position: relative;
+
+    button.collapsible-toggle  {
+        display: flex;
+        max-height: 100%;
+        padding: 0;
+
+        + .collapsing-element {
+            display: flex;
+        }
+
+        &[aria-expanded="false"] {
+            & + .collapsing-element {
+                display: none;
+            }
+        }
+    }
+}

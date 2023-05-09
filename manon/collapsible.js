@@ -8,14 +8,19 @@ onDomReady(initNaviation);
  * Add responsive behaviour to header navigation. Safe to call again to make a
  * newly added header navigation responsive.
  */
+
+/* Locate all collapsable components */
 export function initNaviation() {
   var collapsible = document.querySelectorAll(".collapsible");
   for (var i = 0; i < collapsible.length; i++) {
     var collapsibleElement = collapsible[i];
 
-    if (!(collapsible[i] instanceof HTMLElement) || collapsible[i].querySelector(".menu-toggle")) {
+    console.log(collapsibleElement);
+
+    if (!(collapsible[i] instanceof HTMLElement) || collapsible[i].querySelector(".collapsible-toggle")) {
       continue;
     }
+
     var isCondensed = collapsibleElement.className.indexOf("condensed") !== -1;
     makeResponsive(collapsibleElement, isCondensed);
   }
@@ -27,18 +32,21 @@ export function initNaviation() {
  */
 function makeResponsive(collapsibleElement, isCondensed) {
     var collapsingElement = collapsibleElement.querySelector(".collapsing-element");
+    
     if (!(collapsingElement instanceof HTMLElement)) {
+        console.error("missing collapsing element for: ", collapsibleElement);
         return;
     }
 
-    ensureElementHasId(collapsibleElement);
+    ensureElementHasId(collapsingElement);
 
     var button = createMenuButton(
-        collapsingElement,
+        collapsingElement.id,
         collapsingElement.dataset.openLabel || "Menu",
         collapsingElement.dataset.closeLabel || "Sluit menu"
     );
 
+    console.log("insert", collapsingElement.parentNode, collapsingElement, button.element);
     collapsingElement.parentNode.insertBefore(button.element, collapsingElement);
 
   if (!isCondensed) {
@@ -57,15 +65,16 @@ function makeResponsive(collapsibleElement, isCondensed) {
 }
 
 /**
- * @param {HTMLElement} ul
+ * @param {string} collapsingElementId
  * @param {string} openLabel
  * @param {string} closeLabel
  * @return {{ element: HTMLButtonElement, setExpanded: (expanded: boolean) => void }}
  */
-function createMenuButton(ul, openLabel, closeLabel) {
+function createMenuButton(collapsingElementId, openLabel, closeLabel) {
+  console.log(collapsingElementId);
   var button = document.createElement("button");
-  button.className = "menu-toggle";
-  button.setAttribute("aria-controls", ul.id);
+  button.className = "collapsible-toggle";
+  button.setAttribute("aria-controls", collapsingElementId);
   button.setAttribute("aria-expanded", "false");
 
   var label = document.createElement("span");

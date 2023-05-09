@@ -1,0 +1,86 @@
+/*---------------------------------------------------------------*/
+/*------------------ collapsible-variables.scss -----------------*/
+/*---------------------------------------------------------------*/
+
+:root {
+    /* Collapsible */
+
+    /* Collapsing element */
+    --collapsing-element-flex-direction: column;
+    --collapsing-element-justify-content: center;
+    --collapsing-element-gap: 0;
+
+    --collapsing-element-width: 100%;
+    --collapsing-element-max-width: 100%;
+    --collapsing-element-z-index: 20;
+
+    --collapsing-element-padding-top: 1rem;
+    --collapsing-element-padding-right: 1rem;
+    --collapsing-element-padding-bottom: 1rem;
+    --collapsing-element-padding-left: 1rem;
+
+    --collapsing-element-border-width: 0;
+    --collapsing-element-border-style: solid;
+    --collapsing-element-border-color: transparent;
+
+    --collapsing-element-background-color: #fff;
+    --collapsing-element-text-color: #000;
+
+    --collapsing-element-box-shadow: 0px 8px 16px 0px rgba(17,20,22,0.15);
+
+    --collapsing-element-top: 2.8rem;
+    --collapsing-element-right: auto;
+    --collapsing-element-left:  0;
+
+    /* List */
+    --collapsing-element-list-gap: 0;
+    --collapsing-element-list-backgound-color: ;
+
+    /* List item */
+    --collapsing-element-list-item-align-items: flex-start;
+
+    --collapsing-element-list-item-background-color: transparent;
+    --collapsing-element-list-item-text-color: #000;
+
+    --collapsing-element-list-item-border-width: 1px 0 0 0;
+    --collapsing-element-list-item-border-style: solid;
+    --collapsing-element-list-item-border-color: #dbdbdb;
+
+    /* First collapsed list item */
+    --collapsing-element-list-item-first-item-border-width: 0;
+
+    /* Last collapsed list item */
+    --collapsing-element-list-item-last-item-border-width: 1px 0;
+
+    /* Link */
+    --collapsing-element-list-item-link-justify-content: flex-start;
+    --collapsble-element-list-item-link-text-color: #000;
+    --collapsing-element-list-item-link-text-decoration: none;
+
+    --collapsing-element-list-item-link-padding-top: 0;
+    --collapsing-element-list-item-link-padding-right: 2rem;
+    --collapsing-element-list-item-link-padding-bottom: 0;
+    --collapsing-element-list-item-link-padding-left: 2rem;
+
+    /* List item collapsed hover */
+    --collapsing-element-list-item-link-hover-background-color: #c0c0c0;
+    --collapsing-element-list-item-link-hover-text-color: #000;
+      
+    /* Button */
+    --collapsing-element-button-background-color: var(--application-base-background-color);
+    --collapsing-element-button-font-sie: 0;
+    --collapsing-element-button-height: 2.75rem;
+    --collapsing-element-button-min-height: var(--button-base-min-height);
+    --collapsing-element-button-width: 2.75rem;
+    --collapsing-element-button-min-width: 2.75rem;
+
+    /* Icon */
+    --collapsing-element-icon: "≡";
+    --collapsing-element-icon-font-size: 1.75rem;
+    --collapsing-element-icon-color: var(--application-base-text-color);
+
+    /* Collapsed icon */
+    --collapsing-element-icon-collapsed: "x";
+    --collapsing-element-icon-collapsed-font-size: var(--collapsible-icon-font-size);
+    --collapsing-element-icon-collapsed-color: var(--collapsible-icon-color);
+}
