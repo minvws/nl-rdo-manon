@@ -18,6 +18,7 @@ But the alternative styling as you can see below.
 For more information on the bug see: https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers
 and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 
+main section form,
 form {
   > fieldset {
     legend {

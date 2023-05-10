@@ -5,9 +5,9 @@
 
 .nota-bene {
   margin: 0;
-  line-height: var(--nota-bene-line-height, inherit);
-  font-size: var(--nota-bene-font-size, inherit);
-  font-weight: var(--nota-bene-font-weight, inherit);
-  color: var(--nota-bene-text-color, inherit);
-  background-color: var(--nota-bene-background-color, transparent);
+  line-height: var(--nota-bene-line-height);
+  font-size: var(--nota-bene-font-size);
+  font-weight: var(--nota-bene-font-weight);
+  color: var(--nota-bene-text-color);
+  background-color: var(--nota-bene-background-color);
 }

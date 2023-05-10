@@ -41,8 +41,8 @@ form.help {
       min-height: 0;
       height: var(--form-help-button-height);
 
-      background-color: var(--form-help-button-background-color, inherit);
-      color: var(--form-help-button-text-color, inherit);
+      background-color: var(--form-help-button-background-color);
+      color: var(--form-help-button-text-color);
 
       &:hover {
         background-color: var(--form-help-button-hover-background-color);
@@ -51,10 +51,10 @@ form.help {
 
       &:before {
         content: var(--form-help-button-icon);
-        font-family: var(--form-help-button-icon-font-family, inherit);
+        font-family: var(--form-help-button-icon-font-family);
         line-height: var(--form-help-button-icon-line-height);
-        font-size: var(--form-help-button-icon-font-size, inherit);
-        font-weight: var(--form-help-button-icon-font-weight, inherit);
+        font-size: var(--form-help-button-icon-font-size);
+        font-weight: var(--form-help-button-icon-font-weight);
         vertical-align: middle;
       }
 
