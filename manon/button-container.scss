@@ -4,14 +4,38 @@
 @use "button-container-variables";
 
 .button-container {
+  $breakpoint: 24rem !default;
+
   display: flex;
   flex-direction: var(--button-container-flex-direction);
   align-items: var(--button-container-align-items);
   flex-wrap: var(--button-container-flex-wrap);
   gap: var(--button-container-gap);
+  
   padding-top: var(--button-container-padding-top);
   padding-right: var(--button-container-padding-right);
   padding-bottom: var(--button-container-padding-bottom);
   padding-left: var(--button-container-padding-left);
   margin: 0;
+
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (min-width: $breakpoint) {
+    button,
+    a.button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      width: auto;
+      max-width: 100%;
+      flex-grow: 0;
+    }
+  }
 }
