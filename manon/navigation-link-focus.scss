@@ -1,0 +1,23 @@
+/*---------------------------------------------------------------*/
+/*---------------- navigation-link-focus.scss ----- -------------*/
+/*---------------------------------------------------------------*/
+@use "navigation-link-active-variables";
+@use "mixins/link";
+@use "mixins/outline";
+
+nav {
+  a {
+    &:focus,
+    &.focus /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('navigation-link-focus-');
+      @include outline.outline('navigation-link-focus-');
+
+      &:hover,
+      &.hover /* Testing purposes */
+      {
+        @include link.link-and-icon-styling('navigation-link-focus-hover-');
+      }
+    }
+  }
+}

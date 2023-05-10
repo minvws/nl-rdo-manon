@@ -1,0 +1,29 @@
+/*---------------------------------------------------------------*/
+/*---------------- header-navigation-link-focus.scss ------------*/
+/*---------------------------------------------------------------*/
+@use "header-navigation-link-hover-variables";
+@use "mixins/link";
+
+%header-navigation-link-hover-styling {
+  a {
+    &:focus,
+    &.focus /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('header-navigation-link-focus-');
+    }
+  }
+}
+
+body > header,
+%header-navigation-style {
+  nav {
+    @extend %header-navigation-link-hover-styling;
+  }
+
+  ul,
+  ol {
+    li {
+      @extend %header-navigation-link-hover-styling;
+    }
+  }
+}

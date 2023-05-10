@@ -1,0 +1,25 @@
+/*---------------------------------------------------------------*/
+/*------------- navigation-link-focus-variables.scss -- ---------*/
+/*---------------------------------------------------------------*/
+:root {
+  --navigation-link-focus-background-color: var(--link-focus-background-color);
+  --navigation-link-focus-text-color: var(--link-focus-text-color);
+  --navigation-link-focus-text-decoration: var(--link-focus-text-decoration);
+  --navigation-link-focus-outline: unset;
+  --navigation-link-focus-outline-offset: 0;
+
+  /* Icon */
+  --navigation-link-focus-icon-background-color: var(--navigation-link-focus-background-color);
+  --navigation-link-focus-icon-text-color: var(--navigation-link-focus-text-color);
+  --navigation-link-focus-icon-text-decoration: var(--link-focus-icon-text-decoration);
+
+  /* focus on hover */
+  --navigation-link-focus-hover-background-color: var(--link-focus-hover-background-color);
+  --navigation-link-focus-hover-text-color: var(--link-focus-hover-text-color);
+  --navigation-link-focus-hover-text-decoration: var(--navigation-link-focus-text-decoration);
+
+  /* focus on hover icon */
+  --navigation-link-focus-hover-icon-background-color: var(--navigation-link-focus-hover-background-color);
+  --navigation-link-focus-hover-icon-text-color: var(--navigation-link-focus-hover-text-color);
+  --navigation-link-focus-hover-icon-text-decoration: var(--navigation-link-focus-icon-text-decoration);
+}

@@ -1,0 +1,19 @@
+/*---------------------------------------------------------------*/
+/*---------- header-navigation-link-focus-variables.scss --------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Link hover */
+  --header-navigation-link-focus-background-color: var(--navigation-link-focus-background-color);
+  --header-navigation-link-focus-text-color: var(--navigation-link-focus-text-color);
+  --header-navigation-link-focus-text-decoration: var(--navigation-link-focus-text-decoration);
+  --header-navigation-link-focus-border-width: var(--navigation-link-border-width);
+  --header-navigation-link-focus-border-style: var(--navigation-link-border-style);
+  --header-navigation-link-focus-border-color: var(--navigation-link-border-color);
+  --header-navigation-link-focus-border-radius: var(--navigation-link-border-radius);
+  --header-navigation-link-focus-font-weight: var(--navigation-link-font-weight);
+
+  /* Icon */
+  --header-navigation-link-focus-icon-background-color: var(--header-navigation-link-focus-background-color);
+  --header-navigation-link-focus-icon-text-color: var(--header-navigation-link-focus-text-color);
+  --header-navigation-link-focus-icon-text-decoration: var(--header-navigation-link-icon-text-decoration);
+}

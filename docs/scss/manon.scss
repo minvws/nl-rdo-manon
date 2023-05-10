@@ -48,7 +48,11 @@
 @use "@minvws/manon/emphasized";
 @use "@minvws/manon/de-emphasized";
 @use "@minvws/manon/link";
+@use "@minvws/manon/link-active";
 @use "@minvws/manon/link-external";
+@use "@minvws/manon/link-focus";
+@use "@minvws/manon/link-hover";
+@use "@minvws/manon/link-visited";
 @use "@minvws/manon/nota-bene";
 @use "@minvws/manon/max-line-length";
 
@@ -121,8 +125,9 @@
 @use "@minvws/manon/header-navigation";
 @use "@minvws/manon/header-navigation-content-wrapper";
 @use "@minvws/manon/header-navigation-link";
-@use "@minvws/manon/header-navigation-link-hover";
 @use "@minvws/manon/header-navigation-link-active";
+@use "@minvws/manon/header-navigation-link-focus";
+@use "@minvws/manon/header-navigation-link-hover";
 @use "@minvws/manon/header-navigation-link-visited";
 @use "@minvws/manon/header-navigation-collapsible";
 
