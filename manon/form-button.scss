@@ -5,24 +5,31 @@
 
 form {
   button,
+  a.button,
   input[type="button"],
   input[type="submit"],
   input[type="reset"] {
+    align-self: var(--form-button-align-self);
+
     width: auto;
     min-width: var(--form-button-min-width);
+    min-height: 0;
+    
     box-sizing: border-box;
     padding-top: var(--form-button-padding-top);
     padding-right: var(--form-button-padding-right);
     padding-bottom: var(--form-button-padding-bottom);
     padding-left: var(--form-button-padding-left);
+
     background-color: var(--form-button-background-color);
     color: var(--form-button-color);
+
     font-size: var(--form-button-font-size);
     line-height: var(--form-button-line-height);
     font-weight: var(--form-button-font-weight);
+
     border-width: var(--form-button-border-width);
     border-style: var(--form-button-border-style);
     border-color: var(--form-button-border-color);
-    align-self: var(--form-button-align-self);
   }
 }
