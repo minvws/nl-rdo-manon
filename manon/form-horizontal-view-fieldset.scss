@@ -96,7 +96,7 @@ form.horizontal-view {
     &+ input[type="button"],
     &+ input[type="submit"],
     &+ input[type="reset"] {
-      margin-left: var(--form-horizontal-view-fieldset-button-margin-left);
+      margin-left: calc(var(--form-horizontal-view-fieldset-button-margin-left) + var(--form-horizontal-view-gap)) ;
     }
   }
 }
