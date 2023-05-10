@@ -27,6 +27,22 @@ form.horizontal-view {
       display: block;
       gap: 0; /* resetting gap as it can not be used within fieldsets */
       margin-bottom: var(--form-base-gap); /* Adds margin instead of gap */
+
+      &.button-container {
+        width: 100%;
+        max-width: 100%;
+        float: right;
+
+        /* Countering margin bottom that will be set by buttons on the last line */
+        margin-bottom: calc(var(--form-base-gap) * -1); 
+        
+        button {
+          width: 100%;
+          float: left;
+          margin-right: var(--form-base-gap);
+          margin-bottom: var(--form-base-gap);
+        }
+      }
       
       @media (min-width: $breakpoint) {
         > * {
@@ -35,6 +51,16 @@ form.horizontal-view {
           /* float objects to move inputs into place even when there is no label */
           float: right;
         }
+
+        &.button-container {
+          width: calc(var(--form-horizontal-view-input-max-width) - var(--form-horizontal-view-gap));
+          
+          button {
+            width: auto;
+            margin-bottom: var(--form-base-gap);
+          }
+        }
+       
 
         > div {
           margin-bottom: 0;

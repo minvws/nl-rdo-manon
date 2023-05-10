@@ -8,8 +8,9 @@ form {
   input[type="button"],
   input[type="submit"],
   input[type="reset"] {
+    $breakpoint: 24rem !default;
+
     width: auto;
-    min-width: var(--form-button-min-width);
     box-sizing: border-box;
     padding-top: var(--form-button-padding-top);
     padding-right: var(--form-button-padding-right);
@@ -24,5 +25,9 @@ form {
     border-style: var(--form-button-border-style);
     border-color: var(--form-button-border-color);
     align-self: var(--form-button-align-self);
+
+    @media (min-width: $breakpoint) {
+      min-width: var(--form-button-min-width);
+    }
   }
 }
