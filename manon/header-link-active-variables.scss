@@ -1,0 +1,23 @@
+/*---------------------------------------------------------------*/
+/*--------------- header-link-active-variables.scss -------------*/
+/*---------------------------------------------------------------*/
+:root {
+  --header-link-active-background-color: var(--link-active-background-color);
+  --header-link-active-text-color: var(--link-active-text-color);
+  --header-link-active-text-decoration: var(--link-active-text-decoration);
+
+  /* Icon */
+  --header-link-active-icon-background-color: var(--header-link-active-background-color);
+  --header-link-active-icon-text-color: var(--header-link-active-text-color);
+  --header-link-active-icon-text-decoration: var(--header-link-icon-text-decoration);
+
+  /* Active on hover */
+  --header-link-active-hover-background-color: var(--link-active-hover-background-color);
+  --header-link-active-hover-text-color: var(--link-active-hover-text-color);
+  --header-link-active-hover-text-decoration: var(--link-active-hover-text-decoration);
+
+  /* Active on hover icon */
+  --header-link-active-hover-icon-background-color: var(--header-link-active-hover-background-color);
+  --header-link-active-hover-icon-text-color: var(--header-link-active-hover-text-color);
+  --header-link-active-hover-icon-text-decoration: var(--header-link-active-icon-text-decoration);
+}

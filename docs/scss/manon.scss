@@ -110,6 +110,11 @@
 
 /* Header */
 @use "@minvws/manon/header";
+@use "@minvws/manon/header-link";
+@use "@minvws/manon/header-link-active";
+@use "@minvws/manon/header-link-focus";
+@use "@minvws/manon/header-link-hover";
+@use "@minvws/manon/header-link-visited";
 @use "@minvws/manon/header-content-wrapper";
 
 /* Header navigation */

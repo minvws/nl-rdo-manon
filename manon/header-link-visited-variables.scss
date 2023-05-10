@@ -1,0 +1,13 @@
+/*---------------------------------------------------------------*/
+/*--------------- footer-link-visited-variables.scss ------------*/
+/*---------------------------------------------------------------*/
+:root {
+  --header-link-visited-background-color: var(--link-visited-background-color);
+  --header-link-visited-text-color: var(--link-visited-text-color);
+  --header-link-visited-text-decoration: var(--link-visited-text-decoration);
+
+  /* Icon */
+  --header-link-visited-icon-background-color: var(--header-link-visited-background-color);
+  --header-link-visited-icon-text-color: var(--header-link-visited-text-color);
+  --header-link-visited-icon-text-decoration: var(--header-link-icon-text-decoration);
+}
