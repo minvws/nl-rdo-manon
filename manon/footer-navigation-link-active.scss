@@ -1,0 +1,24 @@
+/*---------------------------------------------------------------*/
+/*-------------- footer-navigation-link-active.scss -------------*/
+/*---------------------------------------------------------------*/
+@use "footer-navigation-link-active-variables";
+@use "mixins/link";
+
+body > footer,
+%footer-style {
+  nav {
+    a {
+      &:active,
+      &.active /* Testing purposes */
+      {
+        @include link.link-and-icon-styling('footer-navigation-link-active-');
+
+        &:hover,
+        &.hover /* Testing purposes */
+        {
+          @include link.link-and-icon-styling('footer-navigation-link-active-hover-');
+        }
+      }
+    }
+  }
+}

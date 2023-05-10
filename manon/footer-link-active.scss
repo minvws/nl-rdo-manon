@@ -6,18 +6,16 @@
 
 body > footer,
 %footer-style {
-  nav {
-    a {
-      &:active,
-      &.active /* Testing purposes */
-      {
-        @include link.link-and-icon-styling('footer-link-active-');
+  a {
+    &:active,
+    &.active /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('footer-link-active-');
 
-        &:hover,
-        &.hover /* Testing purposes */
-        {
-          @include link.link-and-icon-styling('footer-link-active-hover-');
-        }
+      &:hover,
+      &.hover /* Testing purposes */
+      {
+        @include link.link-and-icon-styling('footer-link-active-hover-');
       }
     }
   }

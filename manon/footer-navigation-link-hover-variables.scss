@@ -1,0 +1,13 @@
+/*---------------------------------------------------------------*/
+/*---------- footer-navigation-link-hover-variables.scss --------*/
+/*---------------------------------------------------------------*/
+:root {
+  --footer-navigation-link-hover-background-color: var(--navigation-link-hover-background-color);
+  --footer-navigation-link-hover-text-color: var(--navigation-link-hover-text-color);
+  --footer-navigation-link-hover-text-decoration: var(--navigation-link-hover-text-decoration);
+
+  /* Icon */
+  --footer-navigation-link-hover-icon-background-color: var(--footer-navigation-link-hover-background-color);
+  --footer-navigation-link-hover-icon-text-color: var(--footer-navigation-link-hover-text-color);
+  --footer-navigation-link-hover-icon-text-decoration: var(--footer-navigation-link-icon-text-decoration);
+}

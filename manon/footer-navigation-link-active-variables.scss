@@ -1,0 +1,23 @@
+/*---------------------------------------------------------------*/
+/*-------- footer-navigation-link-active-variables.scss ---------*/
+/*---------------------------------------------------------------*/
+:root {
+  --footer-navigation-link-active-background-color: var(--navigation-link-active-background-color);
+  --footer-navigation-link-active-text-color: var(--navigation-link-active-text-color);
+  --footer-navigation-link-active-text-decoration: var(--navigation-link-active-text-decoration);
+
+  /* Icon */
+  --footer-navigation-link-active-icon-background-color: var(--footer-navigation-link-active-background-color);
+  --footer-navigation-link-active-icon-text-color: var(--footer-navigation-link-active-text-color);
+  --footer-navigation-link-active-icon-text-decoration: var(--footer-navigation-link-icon-text-decoration);
+
+  /* Active on hover */
+  --footer-navigation-link-active-hover-background-color: var(--navigation-link-active-hover-background-color);
+  --footer-navigation-link-active-hover-text-color: var(--navigation-link-active-hover-text-color);
+  --footer-navigation-link-active-hover-text-decoration: var(--navigation-link-active-hover-text-decoration);
+
+  /* Active on hover icon */
+  --footer-navigation-link-active-hover-icon-background-color: var(--footer-navigation-link-active-hover-background-color);
+  --footer-navigation-link-active-hover-icon-text-color: var(--footer-navigation-link-active-hover-text-color);
+  --footer-navigation-link-active-hover-icon-text-decoration: var(--footer-navigation-link-active-icon-text-decoration);
+}

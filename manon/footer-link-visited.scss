@@ -6,13 +6,11 @@
 
 body > footer,
 %footer-style {
-  nav {
-    a {
-      &:visited,
-      &.visited /* Testing purposes */
-      {
-        @include link.link-and-icon-styling('footer-link-visited-');
-      }
+  a {
+    &:visited,
+    &.visited /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('footer-link-visited-');
     }
   }
 }

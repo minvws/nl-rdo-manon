@@ -6,13 +6,11 @@
 
 body > footer,
 %footer-style {
-  nav {
-    a {
-      &:hover,
-      &.hover /* Testing purposes */
-      {
-        @include link.link-and-icon-styling('footer-link-hover-');
-      }
+  a {
+    &:hover,
+    &.hover /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('footer-link-hover-');
     }
   }
 }
