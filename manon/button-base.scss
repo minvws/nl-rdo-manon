@@ -8,37 +8,43 @@ a.button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  display: var(--button-base-flex);
-  box-sizing: border-box;
+  $breakpoint: 24rem !default;
+
+  justify-content: var(--button-base-justify-content);
   align-items: center;
   align-self: flex-start;
-  justify-content: var(--button-base-justify-content);
   gap: var(--button-base-gap);
+
+  box-sizing: border-box;
+  
   padding-top: var(--button-base-padding-top);
   padding-right: var(--button-base-padding-right);
   padding-bottom: var(--button-base-padding-bottom);
   padding-left: var(--button-base-padding-left);
   margin: 0;
-  min-width: var(--button-base-min-width);
+  
+  width: auto;
   min-height: var(--button-base-min-height);
+  
   background-color: var(--button-base-background-color);
+  color: var(--button-base-text-color, inherit);
+  
   border-width: var(--button-base-border-width);
   border-style: var(--button-base-border-style);
   border-color: var(--button-base-border-color);
-  color: var(--button-base-text-color, inherit);
+  border-radius: var(--button-base-border-radius, inherit);
+  /* Reset ios button styling */
+  webkit-border-radius: var(--button-base-border-radius); 
+  /* Reset ios button styling */
+  -webkit-appearance: var(--button-base-webkit-appearance); 
+  
+  cursor: pointer;
+  overflow-wrap: break-word;
+
   font-size: var(--button-base-font-size, inherit);
   font-weight: var(--button-base-font-weight, inherit);
   line-height: var(--button-base-line-height, inherit);
   text-decoration: var(--button-base-text-decoration);
-  border-radius: var(--button-base-border-radius, inherit);
-  webkit-border-radius: var(
-    --button-base-border-radius
-  ); /* Reset ios button styling */
-  -webkit-appearance: var(
-    --button-base-webkit-appearance
-  ); /* Reset ios button styling */
-  cursor: pointer;
-  width: auto;
 
   &:visited {
     color: var(--button-base-text-color);
@@ -120,4 +126,17 @@ input[type="reset"] {
   > * {
     pointer-events: none;
   }
+
+  @media (min-width: $breakpoint) {
+    min-width: var(--button-base-min-width);
+  }
+}
+
+/* Buttons can not be flex containers */
+/* But these elements can. So using flex box where possible. */
+a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  display: flex;
 }

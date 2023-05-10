@@ -9,12 +9,15 @@ form {
   input[type="button"],
   input[type="submit"],
   input[type="reset"] {
+    $breakpoint: 24rem !default;
+
     align-self: var(--form-button-align-self);
 
     width: auto;
     min-width: var(--form-button-min-width);
     min-height: 0;
-    
+
+    width: auto;
     box-sizing: border-box;
     padding-top: var(--form-button-padding-top);
     padding-right: var(--form-button-padding-right);
@@ -31,5 +34,9 @@ form {
     border-width: var(--form-button-border-width);
     border-style: var(--form-button-border-style);
     border-color: var(--form-button-border-color);
+
+    @media (min-width: $breakpoint) {
+      min-width: var(--form-button-min-width);
+    }
   }
 }

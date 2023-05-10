@@ -3,19 +3,20 @@
 /*---------------------------------------------------------------*/
 @use "form-horizontal-view-variables";
 
-$breakpoint: 24rem !default;
-
 form.horizontal-view {
+  $breakpoint: 24rem !default;
+  $label-column: calc(var(--form-horizontal-view-label-max-width) + var(--form-horizontal-view-gap));
+
   flex-direction: column;
   gap: var(--form-horizontal-view-gap);
   flex-wrap: wrap;
 
-  > button,
-  > a.button,
-  > input[type="button"],
-  > input[type="submit"],
-  > input[type="reset"] {
-    margin-left: var(--form-horizontal-view-button-margin-left);
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    margin-left: 0;
   }
 
   > div,
@@ -33,7 +34,7 @@ form.horizontal-view {
       %horizontal-view-checkbox,
       input[type="checkbox"] {
         /* Align checkbox with input fields */
-        margin-left: calc(var(--form-horizontal-view-label-max-width) + var(--form-horizontal-view-gap));
+        margin-left: $label-column;
         flex-grow: 0;
         margin-right: 0;
 
@@ -58,7 +59,7 @@ form.horizontal-view {
       %horizontal-view-radio,
       input[type="radio"] {
         /* Align radio with input fields */
-        margin-left: calc(var(--form-horizontal-view-label-max-width) + var(--form-horizontal-view-gap));
+        margin-left: $label-column;
         flex-grow: 0;
         margin-right: 0;
 
@@ -108,25 +109,22 @@ form.horizontal-view {
   }
 
   @media (min-width: $breakpoint) {
-    > div.horizontal-view {
+    > button,
+    > a.button,
+    > input[type="button"],
+    > input[type="submit"],
+    > input[type="reset"] {
+      width: auto;
+      max-width: 100%;
+      margin-left: $label-column;
+      flex-grow: 0;
+    }
+    
+    > div.horizontal-view,
+    > div.button-container {
       max-width: var(--form-horizontal-view-input-max-width);
-      margin-left: auto;
-      justify-content: flex-end;
+      margin-left: $label-column;
       flex-wrap: wrap;
-
-      > * {
-        width: 100%;
-        max-width: 100%;
-      }
-
-      > button,
-      > a.button,
-      > input[type="button"],
-      > input[type="submit"],
-      > input[type="reset"] {
-        flex-grow: 0;
-        width: auto;
-      }
     }
   }
 }
