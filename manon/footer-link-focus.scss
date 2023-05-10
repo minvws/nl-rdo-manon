@@ -1,0 +1,24 @@
+/*---------------------------------------------------------------*/
+/*------------------- footer-link-focus.scss --------------------*/
+/*---------------------------------------------------------------*/
+@use "footer-link-visited-variables";
+@use "mixins/link";
+
+body > footer,
+%footer-style {
+  nav {
+    a {
+      &:focus,
+      &.focus /* Testing purposes */
+      {
+        @include link.link-and-icon-styling('footer-link-focus-');
+
+        &:hover,
+        &.hover /* Testing purposes */
+        {
+          @include link.link-and-icon-styling('footer-link-focus-hover-');
+        }
+      }
+    }
+  }
+}

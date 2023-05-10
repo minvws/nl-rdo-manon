@@ -1,0 +1,23 @@
+/*---------------------------------------------------------------*/
+/*---------------- footer-link-focus-variables.scss -------------*/
+/*---------------------------------------------------------------*/
+:root {
+  --footer-link-focus-background-color: var(--link-focus-background-color);
+  --footer-link-focus-text-color: var(--link-focus-text-color);
+  --footer-link-focus-text-decoration: var(--link-focus-text-decoration);
+
+  /* Icon */
+  --footer-link-focus-icon-background-color: var(--footer-link-focus-background-color);
+  --footer-link-focus-icon-text-color: var(--footer-link-focus-text-color);
+  --footer-link-focus-icon-text-decoration: var(--footer-link-icon-text-decoration);
+
+  /* Hover on focus */
+  --footer-link-focus-hover-background-color: var(--link-focus-hover-background-color);
+  --footer-link-focus-hover-text-color: var(--link-focus-hover-text-color);
+  --footer-link-focus-hover-text-decoration: var(--link-focus-hover-text-decoration);
+
+  /* Active on hover icon */
+  --footer-link-focus-hover-icon-background-color: var(--footer-link-focus-hover-background-color);
+  --footer-link-focus-hover-icon-text-color: var(--footer-link-focus-hover-text-color);
+  --footer-link-focus-hover-icon-text-decoration: var(--footer-link-focus-icon-text-decoration);
+}
