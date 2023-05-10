@@ -49,9 +49,6 @@
             <h3>Basis</h3>
             <h4>Visueel voorbeeld</h4>
             <form action="" method="post" class="help">
-              <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
-                >Help op simpel formulierveld</label
-              >
               <div>
                 <input
                   id="voorbeeld-text-input-met-hulptekst-simpel-1"
@@ -77,7 +74,6 @@
             <pre>
               <code>
 &lt;form action="" method="post" class="help">
-  &lt;label for="voorbeeld-text-input-met-hulptekst-simpel-1">Help op simpel formulierveld&lt;/label>
   &lt;div>
     &lt;input
       id="voorbeeld-text-input-met-hulptekst-simpel-1"
@@ -101,9 +97,6 @@
             <h3>Verplicht invoerveld</h3>
             <h4>Visueel voorbeeld</h4>
             <form action="" method="post" class="help">
-              <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
-                >Help op simpel formulierveld</label
-              >
               <div>
                 <span class="nota-bene">Dit veld is verplicht</span>
                 <div>
@@ -125,6 +118,132 @@
                   </p>
                 </div>
               </div>
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <form action="" method="post" class="horizontal-view help">
+              <div>
+                <label for="example-input-base">Voorbeeld invoerveld</label>
+                <div>
+                  <span class="nota-bene">Dit veld is verplicht</span>
+                  <div>
+                    <input
+                      id="example-input-help-required"
+                      name="voorbeeld-text-input"
+                      placeholder="lorem ipsum"
+                      type="text"
+                      aria-describedby="example-input-help-required-message"
+                      required
+                    />
+                    <p
+                      class="explanation"
+                      data-open-label="Toelichting bij het veld: Voorbeeld text input"
+                      data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+                      id="example-input-help-required-message"
+                    >
+                      Lorem ipsum dolor set amet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <pre>
+              <code>
+&lt;form action="" method="post" class="help">
+  &lt;div>
+    &lt;span class="nota-bene">Dit veld is verplicht&lt;/span>
+    &lt;div>
+      &lt;input
+        id="example-input-help-required"
+        name="voorbeeld-text-input"
+        placeholder="voorbeeld text input"
+        type="text"
+        aria-describedby="example-input-help-required-message"
+        required>
+      &lt;p
+        class="explanation"
+        data-open-label="Toelichting bij het veld: Voorbeeld text input"
+        data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+        id="example-input-help-required-message">
+      Lorem ipsum dolor set amet.&lt;/p>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h3>Verplicht invoerveld binnen fieldset</h3>
+            <h4>Visueel voorbeeld</h4>
+            <form action="" method="post" class="help">
+              <fieldset>
+                <legend for="voorbeeld-text-input-met-hulptekst-verplicht-fieldset">
+                  Help op simpel formulierveld
+                </legend>
+
+                <label for="example-input-base">Voorbeeld invoerveld</label>
+                <div>
+                  <span class="nota-bene">Dit veld is verplicht</span>
+                  <div>
+                    <input
+                      id="example-input-help-required"
+                      name="voorbeeld-text-input"
+                      placeholder="lorem ipsum"
+                      type="text"
+                      aria-describedby="example-input-help-required-message"
+                      required
+                    />
+                    <p
+                      class="explanation"
+                      data-open-label="Toelichting bij het veld: Voorbeeld text input"
+                      data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+                      id="example-input-help-required-message"
+                    >
+                      Lorem ipsum dolor set amet.
+                    </p>
+                  </div>
+                </div>
+              </fieldset>
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <form action="" method="post" class=" horizontal-view help">
+              <fieldset>
+                <legend for="voorbeeld-text-input-met-hulptekst-verplicht-fieldset">
+                  Help op simpel formulierveld
+                </legend>
+
+                <div>
+                  <label for="example-input-base">Voorbeeld invoerveld</label>
+                  <div>
+                    <span class="nota-bene">Dit veld is verplicht</span>
+                    <div>
+                      <input
+                        id="example-input-help-required"
+                        name="voorbeeld-text-input"
+                        placeholder="lorem ipsum"
+                        type="text"
+                        aria-describedby="example-input-help-required-message"
+                        required
+                      />
+                      <p
+                        class="explanation"
+                        data-open-label="Toelichting bij het veld: Voorbeeld text input"
+                        data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+                        id="example-input-help-required-message"
+                      >
+                        Lorem ipsum dolor set amet.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
 
               <button type="submit">Verzend</button>
             </form>

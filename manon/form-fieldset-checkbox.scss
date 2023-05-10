@@ -1,27 +1,26 @@
 /*---------------------------------------------------------------*/
-/*---------------------- fieldset-radio.scss --------------------*/
+/*----------------- form-fieldset-checkbox.scss -----------------*/
 /*---------------------------------------------------------------*/
-@use "fieldset-radio-variables";
+@use "form-fieldset-checkbox-variables";
 
 form {
     fieldset {
-        .radio {
+        .checkbox {
             padding: 0;
             display: initial;
-            margin: var(--fieldset-radio-margin);
     
-            input[type="radio"] {
+            input[type="checkbox"] {
                 padding: 0;
                 cursor: pointer;
-                width: var(--fieldset-radio-input-width);
-                min-width: var(--fieldset-radio-input-width);
-                height: var(--fieldset-radio-input-height);
-                accent-color: var(--fieldset-radio-input-accent-color);
+                width: var(--form-fieldset-checkbox-width);
+                min-width: var(--form-fieldset-checkbox-width);
+                height: var(--form-fieldset-checkbox-height);
+                accent-color: var(--form-fieldset-checkbox-accent-color);
                 margin-right: 0.5rem;
-                margin-top: var(--fieldset-radio-input-margin-top);
+                margin-top: var(--form-fieldset-checkbox-input-margin-top);
             
                 & + label {
-                    width: var(--fieldset-radio-label-width);
+                    width: var(--form-fieldset-checkbox-label-width);
                     cursor: pointer;
                 }
             
@@ -38,7 +37,7 @@ form {
                 flex-direction: column;
 
                 span {
-                    margin-bottom: var(--fieldset-radio-required-margin-bottom);
+                    margin-bottom: var(--form-fieldset-checkbox-required-margin-bottom);
                 }
 
                 > div {
@@ -46,12 +45,6 @@ form {
                     display: initial;
                 }
             }   
-        }
-
-        fieldset {
-            .radio {
-                margin: var(--fieldset-radio-margin);
-            }
         }
     } 
 }

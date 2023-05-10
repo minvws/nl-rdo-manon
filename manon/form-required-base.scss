@@ -14,11 +14,11 @@ form {
   padding-right: var(--form-required-base-padding-right);
   padding-bottom: var(--form-required-base-padding-bottom);
   padding-left: var(--form-required-base-padding-left);
-  background-color: var(--form-required-base-background-color, inherit);
-  color: var(--form-required-base-text-color, inherit);
-  font-size: var(--form-required-base-font-size, inherit);
-  line-height: var(--form-required-base-line-height, inherit);
-  font-weight: var(--form-required-base-font-weight, inherit);
+  background-color: var(--form-required-base-background-color);
+  color: var(--form-required-base-text-color);
+  font-size: var(--form-required-base-font-size);
+  line-height: var(--form-required-base-line-height);
+  font-weight: var(--form-required-base-font-weight);
   gap: var(--form-required-base-gap);
   border-width: var(--form-required-base-border-width);
   border-style: var(--form-required-base-border-style);
@@ -29,4 +29,8 @@ form {
     width: 100%;
     box-sizing: border-box;
   }
+}
+
+body {
+  background-color: pink;
 }
