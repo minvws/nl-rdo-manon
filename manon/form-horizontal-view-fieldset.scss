@@ -26,13 +26,18 @@ form.horizontal-view {
     > div {
       display: block;
       gap: 0; /* resetting gap as it can not be used within fieldsets */
+      margin-bottom: var(--form-base-gap); /* Adds margin instead of gap */
       
       @media (min-width: $breakpoint) {
         > * {
           width: calc(var(--form-horizontal-view-input-max-width) - var(--form-horizontal-view-gap));
           gap: 0; /* resetting gap as it can not be used within fieldsets */
           /* float objects to move inputs into place even when there is no label */
-          float: right; 
+          float: right;
+        }
+
+        > div {
+          margin-bottom: 0;
         }
 
         label {
