@@ -2,36 +2,23 @@
 /*-------------- header-navigation-link-visited.scss ------------*/
 /*---------------------------------------------------------------*/
 @use "header-navigation-link-visited-variables";
+@use "mixins/link";
 
 body > header,
 %header-navigation-style {
-    nav {
-        a {
-            &:visited,
-            &.visited /* Testing purposes */ {
-                background-color: var(--header-navigation-link-visited-background-color);
-                color: var(--header-navigation-link-visited-text-color);
-                text-decoration: var(--header-navigation-link-visited-text-decoration);
+  nav {
+    a {
+      &:visited,
+      &.visited /* Testing purposes */
+      {
+        @include link.link-and-icon-styling('header-navigation-link-visited-');
 
-                &:before {
-                    background-color: var(--header-navigation-link-icon-visited-background-color);
-                    color: var(--header-navigation-link-icon-visited-text-color);
-                    text-decoration: var(--header-navigation-link-icon-visited-text-decoration);
-                }
-
-                &:hover,
-                &.hover /* Testing purposes */ {
-                    background-color: var(--header-navigation-link-visited-hover-background-color);
-                    color: var(--header-navigation-link-visited-hover-text-color);
-                    text-decoration: var(--header-navigation-link-visited-hover-text-decoration);
-                    
-                    &:before {
-                        background-color: var(--header-navigation-link-icon-visited-hover-background-color);
-                        color: var(--header-navigation-link-icon-visited-hover-text-color);
-                        text-decoration: var(--header-navigation-link-icon-visited-hover-text-decoration);
-                    }
-                }
-            }
+        &:hover,
+        &.hover /* Testing purposes */
+        {
+          @include link.link-and-icon-styling('header-navigation-link-visited-hover-');
         }
+      }
     }
+  }
 }

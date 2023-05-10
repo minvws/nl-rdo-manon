@@ -2,22 +2,18 @@
 /*---------- header-navigation-link-hover-variables.scss --------*/
 /*---------------------------------------------------------------*/
 :root {
-  --header-navigation-link-hover-background-color: var(--link-hover-background-color);
-  --header-navigation-link-hover-text-color: var(--link-hover-text-color);
-  --header-navigation-link-hover-text-decoration: var(--link-hover-text-decoration);
+  /* Link hover */
+  --header-navigation-link-hover-background-color: var(--navigation-link-hover-background-color);
+  --header-navigation-link-hover-text-color: var(--navigation-link-hover-text-color);
+  --header-navigation-link-hover-text-decoration: var(--navigation-link-hover-text-decoration);
+  --header-navigation-link-hover-border-width: var(--navigation-link-border-width);
+  --header-navigation-link-hover-border-style: var(--navigation-link-border-style);
+  --header-navigation-link-hover-border-color: var(--navigation-link-border-color);
+  --header-navigation-link-hover-border-radius: var(--navigation-link-border-radius);
+  --header-navigation-link-hover-font-weight: var(--navigation-link-font-weight);
 
    /* Icon */
-   --header-navigation-link-icon-hover-background-color: var(--header-navigation-link-hover-background-color);
-   --header-navigation-link-icon-hover-text-color: var(--header-navigation-link-hover-text-color);
-   --header-navigation-link-icon-hover-text-decoration: var(--header-navigation-link-hover-text-decoration);
-
-   /* Active on hover */
-   --header-navigation-link-hover-hover-background-color: var(--link-hover-hover-background-color);
-   --header-navigation-link-hover-hover-text-color: var(--link-hover-hover-text-color);
-   --header-navigation-link-hover-hover-text-decoration: var(--link-hover-hover-text-decoration);
-
-   /* Active on hover icon */
-   --header-navigation-link-icon-hover-hover-background-color: var(--header-navigation-link-hover-hover-background-color);
-   --header-navigation-link-icon-hover-hover-text-color: var(--header-navigation-link-hover-hover-background-color);
-   --header-navigation-link-icon-hover-hover-text-decoration: var(--header-navigation-link-hover-hover-text-decoration);
+   --header-navigation-link-hover-icon-background-color: var(--header-navigation-link-hover-background-color);
+   --header-navigation-link-hover-icon-text-color: var(--header-navigation-link-hover-text-color);
+   --header-navigation-link-hover-icon-text-decoration: var(--header-navigation-link-icon-text-decoration);
 }

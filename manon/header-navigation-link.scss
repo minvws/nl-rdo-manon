@@ -5,67 +5,11 @@
 @use "mixins/icon";
 @use "mixins/link";
 
-%active-link {
-  border-width: var(--header-navigation-link-active-border-width);
-  border-style: var(--header-navigation-link-active-border-style);
-  border-color: var(--header-navigation-link-active-border-color);
-  border-radius: var(--header-navigation-link-active-border-radius);
-  font-weight: var(--header-navigation-link-active-font-weight);
-
-  &:hover {
-    border-width: var(--header-navigation-link-active-hover-border-width);
-    border-style: var(--header-navigation-link-active-hover-border-style);
-    border-color: var(--header-navigation-link-active-hover-border-color);
-    border-radius: var(--header-navigation-link-active-hover-border-radius);
-  }
-}
-
 body > header,
 %header-navigation-style {
   nav {
     a {
       @include link.link('header-navigation-link-');
-
-      ul,
-      ol {
-        li {
-
-          &[aria-current="page"] {
-            > a,
-            > a:visited {
-              @extend %active-link;
-            }
-          }
-
-          a {
-            @include link.link-and-icon-styling('header-navigation-link-');
-            font-size: var(--header-navigation-link-font-size);
-            line-height: var(--header-navigation-link-line-height);
-            font-weight: var(--header-navigation-link-font-weight);
-
-            &:hover {
-              background-color: var(--header-navigation-link-hover-background-color);
-              color: var(--header-navigation-link-hover-text-color);
-              font-weight: var(--header-navigation-link-hover-font-weight);
-            }
-
-            /* aria current on a */
-            &[aria-current="page"] {
-              @extend %active-link;
-            }
-
-            &:hover {
-              background-color: var(--header-navigation-link-hover-background-color);
-              color: var(--header-navigation-link-hover-text-color);
-              border-width: var(--header-navigation-link-hover-border-width);
-              border-style: var(--header-navigation-link-hover-border-style);
-              border-color: var(--header-navigation-link-hover-border-color);
-              border-radius: var(--header-navigation-link-hover-border-radius);
-              font-weight: var(--header-navigation-link-hover-font-weight);
-            }
-          }
-        }
-      }
     }
   }
 }

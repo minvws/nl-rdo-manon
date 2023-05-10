@@ -1,0 +1,13 @@
+/*---------------------------------------------------------------*/
+/*------------------------- link-hover.scss ---------------------*/
+/*---------------------------------------------------------------*/
+@use "footer-link-hover-variables";
+@use "mixins/link";
+
+a {
+  &:hover,
+  &.hover /* Testing purposes */
+  {
+    @include link.link-and-icon-styling('link-hover-');
+  }
+}

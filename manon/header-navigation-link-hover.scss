@@ -2,23 +2,28 @@
 /*---------------- header-navigation-link-hover.scss ------------*/
 /*---------------------------------------------------------------*/
 @use "header-navigation-link-hover-variables";
+@use "mixins/link";
+
+%header-navigation-link-hover-styling {
+  a {
+    &:hover,
+    &.hover /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('header-navigation-link-hover-');
+    }
+  }
+}
 
 body > header,
 %header-navigation-style {
-    nav {
-        a {
-            &:hover,
-            &.hover /* Testing purposes */ {
-                background-color: var(--header-navigation-link-hover-background-color);
-                color: var(--header-navigation-link-hover-text-color);
-                text-decoration: var(--header-navigation-link-hover-text-decoration);
+  nav {
+    @extend %header-navigation-link-hover-styling;
+  }
 
-                &:before {
-                    background-color: var(--header-navigation-link-icon-hover-background-color);
-                    color: var(--header-navigation-link-icon-hover-text-color);
-                    text-decoration: var(--header-navigation-link-icon-hover-text-decoration);
-                }
-            }
-        }
+  ul,
+  ol {
+    li {
+      @extend %header-navigation-link-hover-styling;
     }
+  }
 }

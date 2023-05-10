@@ -2,22 +2,18 @@
 /*--------- header-navigation-link-active-variables.scss --------*/
 /*---------------------------------------------------------------*/
 :root {
+  /* Link active */
   --header-navigation-link-active-background-color: var(--navigation-link-active-background-color);
   --header-navigation-link-active-text-color: var(--navigation-link-active-text-color);
   --header-navigation-link-active-text-decoration: var(--navigation-link-active-text-decoration);
+  --header-navigation-link-active-border-width: var(--navigation-link-border-width);
+  --header-navigation-link-active-border-style: var(--navigation-link-border-style);
+  --header-navigation-link-active-border-color: var(--navigation-link-border-color);
+  --header-navigation-link-active-border-radius: var(--navigation-link-border-radius);
+  --header-navigation-link-active-font-weight: var(--navigation-link-font-weight);
 
   /* Icon */
   --header-navigation-link-active-icon-background-color: var(--header-navigation-link-active-background-color);
   --header-navigation-link-active-icon-text-color: var(--header-navigation-link-active-text-color);
-  --header-navigation-link-active-icon-text-decoration: var(--navigation-link-icon-text-decoration);
-
-  /* Active on hover */
-  --header-navigation-link-active-hover-background-color: var(--navigation-link-active-hover-background-color);
-  --header-navigation-link-active-hover-text-color: var(--navigation-link-active-hover-text-color);
-  --header-navigation-link-active-hover-text-decoration: var(--navigation-link-active-hover-text-decoration);
-
-  /* Active on hover icon */
-  --header-navigation-link-active-hover-icon-background-color: var(--header-navigation-link-active-hover-background-color);
-  --header-navigation-link-active-hover-icon-text-color: var(--header-navigation-link-active-hover-text-color);
-  --header-navigation-link-active-hover-icon-text-decoration: var(--header-navigation-link-active-icon-text-decoration);
+  --header-navigation-link-active-icon-text-decoration: var(--header-navigation-link-icon-text-decoration);
 }

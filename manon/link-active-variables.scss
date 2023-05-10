@@ -1,0 +1,14 @@
+/*---------------------------------------------------------------*/
+/*------------------ link-active-variables.scss -----------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Active */
+  --link-active-background-color: var(--link-background-color);
+  --link-active-text-color: var(--link-text-color);
+  --link-active-text-decoration: var(--link-text-decoration);
+
+  /* Icon */
+  --link-active-icon-background-color: var(--link-active-background-color);
+  --link-active-icon-text-color: var(--link-active-text-color);
+  --link-active-icon-text-decoration: var(--link-icon-text-decoration);
+}

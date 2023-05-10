@@ -4,9 +4,16 @@
 @use "icon";
 
 @mixin styling($prefix) {
+  font-size: var(--#{$prefix}font-size);
+  font-weight: var(--#{$prefix}font-weight);
+  line-height: var(--#{$prefix}line-height);
   background-color: var(--#{$prefix}background-color);
   color: var(--#{$prefix}text-color);
   text-decoration: var(--#{$prefix}text-decoration);
+  border-width: var(--#{$prefix}border-width);
+  border-style: var(--#{$prefix}border-style);
+  border-color: var(--#{$prefix}border-color);
+  border-radius: var(--#{$prefix}border-radius);
 }
 
 @mixin link-and-icon-styling($prefix) {

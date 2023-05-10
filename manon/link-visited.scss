@@ -1,0 +1,28 @@
+/*---------------------------------------------------------------*/
+/*------------------ footer-link-visited.scss -------------------*/
+/*---------------------------------------------------------------*/
+@use "footer-link-visited-variables";
+@use "mixins/link";
+
+
+a {
+  /* states */
+  &:visited,
+  &.visited /* Testing purposes */
+  {
+    @include link.link-and-icon-styling('link-visited-');
+    @include link.link-elements-styling('link-visited-');
+
+    &:hover,
+    &.hover /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('link-visited-hover-');
+    }
+
+    &:active,
+    &.active /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('link-visited-active-');
+    }
+  }
+}

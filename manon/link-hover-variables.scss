@@ -1,0 +1,13 @@
+/*---------------------------------------------------------------*/
+/*-------------------- link-hover-variables.scss ----------------*/
+/*---------------------------------------------------------------*/
+:root {
+  --link-hover-background-color: var(--link-hover-background-color);
+  --link-hover-text-color: var(--link-hover-text-color);
+  --link-hover-text-decoration: var(--link-hover-text-decoration);
+
+  /* Icon */
+  --link-hover-icon-background-color: var(--link-hover-background-color);
+  --link-hover-icon-text-color: var(--link-hover-text-color);
+  --link-hover-icon-text-decoration: var(--link-icon-text-decoration);
+}

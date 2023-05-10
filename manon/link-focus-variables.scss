@@ -1,0 +1,25 @@
+/*---------------------------------------------------------------*/
+/*------------------- link-focus-variables.scss -----------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Focus */
+  --link-focus-background-color: var(--link-background-color);
+  --link-focus-text-color: var(--link-text-color);
+  --link-focus-text-decoration: var(--link-text-decoration);
+
+
+  /* Icon */
+  --link-focus-icon-background-color: var(--link-focus-background-color);
+  --link-focus-icon-text-color: var(--link-focus-text-color);
+  --link-focus-icon-text-decoration: var(--link-icon-text-decoration);
+
+  /* Hover on focus */
+  --link-focus-hover-background-color: var(--link-focus-background-color);
+  --link-focus-hover-text-color: var(--link-focus-text-color);
+  --link-focus-hover-text-decoration: var(--link-focus-text-decoration);
+
+  /* Active on hover icon */
+  --link-focus-hover-icon-background-color: var(--link-focus-hover-background-color);
+  --link-focus-hover-icon-text-color: var(--link-focus-hover-text-color);
+  --link-focus-hover-icon-text-decoration: var(--link-focus-icon-text-decoration);
+}

@@ -1,0 +1,26 @@
+/*---------------------------------------------------------------*/
+/*----------------------- link-focus.scss -----------------------*/
+/*---------------------------------------------------------------*/
+@use "footer-link-focus-variables";
+@use "mixins/link";
+@use "mixins/outline";
+
+a {
+  &:focus,
+  &.focus /* Testing purposes */
+  {
+    @include link.link-and-icon-styling('link-focus-');
+    @include outline.outline('link-focus-');
+
+    &:hover,
+    &.hover /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('link-focus-hover-');
+    }
+
+    &:active,
+    &.active {
+      @include link.link-and-icon-styling('link-focus-active-');
+    }
+  }
+}
