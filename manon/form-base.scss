@@ -51,12 +51,7 @@ main {
         color: var(--form-base-input-text-color, inherit);
       }
 
-      input,
-      button,
-      a.button,
-      input[type="button"],
-      input[type="submit"],
-      input[type="reset"] {
+      input {
         min-height: 0;
       }
 
