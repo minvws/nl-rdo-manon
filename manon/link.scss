@@ -13,4 +13,5 @@ a {
 
   @include link.link('link-');
   @include link.link-elements-styling('link-');
+  @include outline.outline('link-');
 }

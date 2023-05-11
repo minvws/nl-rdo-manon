@@ -1,10 +1,13 @@
 /*---------------------------------------------------------------*/
 /*-------------------- link-hover-variables.scss ----------------*/
 /*---------------------------------------------------------------*/
+@use "mixins/link";
+@use "mixins/outline";
+
 :root {
-  --link-hover-background-color: var(--link-hover-background-color);
-  --link-hover-text-color: var(--link-hover-text-color);
-  --link-hover-text-decoration: var(--link-hover-text-decoration);
+  /* Hover */
+  @include link.styling-variables('link-hover-', 'link-');
+  @include outline.outline-variables('link-hover-', 'link-');
 
   /* Icon */
   --link-hover-icon-background-color: var(--link-hover-background-color);

@@ -1,34 +1,17 @@
 /*---------------------------------------------------------------*/
 /*--------------- footer-link-visited-variables.scss ------------*/
 /*---------------------------------------------------------------*/
+
+@use "mixins/link";
+@use "mixins/outline";
+
 :root {
   /* Visited */
-  --link-visited-background-color: var(--link-background-color);
-  --link-visited-text-color: var(--link-text-color);
-  --link-visited-text-decoration: var(--link-text-decoration);
+  @include link.styling-variables('link-visited-', 'link-');
+  @include outline.outline-variables('link-visited-', 'link-');
 
   /* Icon visited */
   --link-visited-icon-background-color: var(--link-visited-background-color);
   --link-visited-icon-text-color: var(--link-visited-text-color);
   --link-visited-icon-text-decoration: var(--link-icon-text-decoration);
-
-  /* Visited hover */
-  --link-visited-hover-background-color: var(--link-visited-background-color);
-  --link-visited-hover-text-color: var(--link-visited-text-color);
-  --link-visited-hover-text-decoration: var(--link-visited-text-decoration);
-
-  /* Icon visited hover */
-  --link-visited-hover-icon-background-color: var(--link-visited-hover-background-color);
-  --link-visited-hover-icon-text-color: var(--link-visited-hover-text-color);
-  --link-visited-hover-icon-text-decoration: var(--link-visited-icon-text-decoration);
-
-  /* Visited active */
-  --link-visited-active-background-color: var(--link-visited-background-color);
-  --link-visited-active-text-color: var(--link-visited-text-color);
-  --link-visited-active-text-decoration: var(--link-visited-text-decoration);
-
-  /* Icon visited active */
-  --link-visited-active-icon-background-color: var(--link-visited-hover-background-color);
-  --link-visited-active-icon-text-color: var(--link-visited-hover-text-color);
-  --link-visited-active-icon-text-decoration: var(--link-visited-icon-text-decoration);
 }

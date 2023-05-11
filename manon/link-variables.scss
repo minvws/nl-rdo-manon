@@ -3,21 +3,37 @@
 /*----------------------------------------------------------------------------------*/
 :root {
   /* Default */
+  --link-font-size: inherit;
+  --link-text-font-weight: --text-set-font-weight;
+  --link-line-height: inherit;
   --link-background-color: transparent;
   --link-text-color: #2f2f9a;
   --link-text-decoration: initial;
-  --link-text-font-weight: --text-set-font-weight;
+  --link-border-width: 0;
+  --link-border-style: none;
+  --link-border-color: transparent;
+  --link-border-radius: 0;
 
-  /* Icon */
+  /* Icon styling-variables */
   --link-icon-font-family: var(--icon-font-family);
   --link-icon-font-size: var(--icon-font-size);
+  --link-icon-font-weight: var(--icon-font-weight);
   --link-icon-background-color: var(--link-background-color);
   --link-icon-text-color: var(--link-text-color);
   --link-icon-padding-left: 0;
   --link-icon-padding-right: 0.5rem;
   --link-icon-text-decoration: none;
+  --link-icon-border-width: 0;
+  --link-icon-border-style: none;
+  --link-icon-border-color: transparent;
+  --link-icon-border-radius: 0;
 
   /* Icon at the end */
   --link-icon-last-padding-right: 0;
   --link-icon-last-padding-left: 0.5rem;
+
+  /* Outline variables */
+  --link-outline: none;
+  --link-outline-offset: 0;
+  --link-z-index: auto;
 }
