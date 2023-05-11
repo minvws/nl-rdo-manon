@@ -3,7 +3,8 @@
 /*---------------------------------------------------------------*/
 @use "notification-paragraph-variables";
 
-p {
+p,
+span {
   &.notification,
   &.error,
   &.warning,

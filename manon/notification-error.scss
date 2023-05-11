@@ -2,7 +2,7 @@
 /*------------------- notification-error.scss -------------------*/
 /*---------------------------------------------------------------*/
 @use "notification-error-variables";
-@import "notification-base";
+@import "notification";
 
 p.error,
 span.error,
@@ -15,26 +15,12 @@ div.error {
   border-color: var(--notification-error-border-color);
   
   &:before {
-    content: var(--notification-error-icon-before-content);
-  }
-
-  &:after {
-    content: var(--notification-error-icon-after-content);
-  }
-}
-
-textarea.error,
-select.error,
-input.error {
-  border-width: var(--notification-error-border-width);
-  border-style: var(--notification-error-border-style);
-  border-color: var(--notification-error-border-color);
-
-  &:before {
-    content: var(--notification-error-icon-before-content);
-  }
-
-  &:after {
-    content: var(--notification-error-icon-after-content);
+    font-family: var(--notification-error-icon-font-family);
+    font-size: var(--notification-error-icon-font-size);
+    padding-right: var(--notification-error-icon-padding-right);
+    padding-left: var(--notification-error-icon-padding-left);
+    color: var(--notification-error-icon-text-color);
+    margin-right: var(--notification-error-icon-margin-right);
+    content: var(--notification-error-icon-content);
   }
 }

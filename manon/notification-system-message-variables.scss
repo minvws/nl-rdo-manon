@@ -5,11 +5,16 @@
 
 :root {
   --notification-system-background-color: var(--system-background-color);
-  --notification-system-border-width: var(--notification-base-border-width);
-  --notification-system-border-style: var(--notification-base-border-style);
+  --notification-system-border-width: var(--notification-border-width);
+  --notification-system-border-style: var(--notification-border-style);
   --notification-system-border-color: var(--system-border-color);
 
-  /* Icon as before or after */
-  /* --notification-system-icon-before-content: ; */
-  /* --notification-system-icon-before-content: ; */
+  /* Icon */
+  --notification-system-icon-font-family: var(--notification-icon-font-family);
+  --notification-system-icon-font-size: var(--notification-icon-font-size);
+  --notification-system-icon-text-color: var(--notification-icon-text-color);
+  --notification-system-icon-padding-right: var(--notification-icon-padding-right);
+  --notification-system-icon-padding-left: var(--notification-icon-padding-left);
+  --notification-system-icon-margin-right: var(--notification-icon-margin-right);
+  --notification-system-icon-content: none;
 }

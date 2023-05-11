@@ -1,40 +1,26 @@
 /*---------------------------------------------------------------*/
 /*---------------- notification-confirmation.scss ---------------*/
 /*---------------------------------------------------------------*/
-@use "notification-base";
+@use "notification";
 @use "notification-confirmation-variables";
 
 p.confirmation,
 span.confirmation,
 section.confirmation,
 div.confirmation {
-  @include notification-base.notification;
+  @include notification.notification;
   background-color: var(--notification-confirmation-background-color);
   border-width: var(--notification-confirmation-border-width);
   border-style: var(--notification-confirmation-border-style);
   border-color: var(--notification-confirmation-border-color);
 
   &:before {
-    content: var(--notification-confirmation-icon-before-content);
-  }
-
-  &:after {
-    content: var(--notification-confirmation-icon-after-content);
-  }
-}
-
-textarea.confirmation,
-select.confirmation,
-input.confirmation {
-  border-width: var(--notification-confirmation-border-width);
-  border-style: var(--notification-confirmation-border-style);
-  border-color: var(--notification-confirmation-border-color);
-
-  &:before {
-    content: var(--notification-confirmation-icon-before-content);
-  }
-
-  &:after {
-    content: var(--notification-confirmation-icon-after-content);
+    font-family: var(--notification-confirmation-icon-font-family);
+    font-size: var(--notification-confirmation-icon-font-size);
+    padding-right: var(--notification-confirmation-icon-padding-right);
+    padding-left: var(--notification-confirmation-icon-padding-left);
+    color: var(--notification-confirmation-icon-text-color);
+    margin-right: var(--notification-confirmation-icon-margin-right);
+    content: var(--notification-confirmation-icon-content);
   }
 }

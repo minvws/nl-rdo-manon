@@ -197,6 +197,7 @@
 @use "@minvws/manon/form-combined-field";
 @use "@minvws/manon/form-help";
 
+
 /* Fieldset */
 @use "@minvws/manon/form-fieldset";
 @use "@minvws/manon/form-fieldset-visually-hidden";
@@ -207,7 +208,7 @@
 @use "@minvws/manon/form-fieldset-radio";
 
 /* Notifications */
-@use "@minvws/manon/notification-base";
+@use "@minvws/manon/notification";
 @use "@minvws/manon/notification-block-element";
 @use "@minvws/manon/notification-paragraph";
 @use "@minvws/manon/notification-table";
@@ -216,6 +217,7 @@
 @use "@minvws/manon/notification-explanation";
 @use "@minvws/manon/notification-confirmation";
 @use "@minvws/manon/notification-system-message";
+@use "@minvws/manon/notification-form";
 
 /* Dividers */
 /* @use "@minvws/manon/divider-lines-base-variables"; */

@@ -71,6 +71,179 @@
 &lt;/form>
               </code>
             </pre>
+
+            <h3>Notificatie direct binnen formulier</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <form action="" method="post">
+              <p class="explanation" role="group" aria-label="Toelichting">
+                <span>Toelichting:</span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula.
+              </p>
+
+              <label for="form-example-base">Voorbeeld text input</label>
+              <input
+                id="form-example-base"
+                name="form-example-base"
+                placeholder="voorbeeld text input"
+                type="text"
+              />
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;p class="explanation" role="group" aria-label="Toelichting">
+    &lt;span>Toelichting:&lt;/span>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula.
+  &lt;/p>
+
+  &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
+  &lt;input
+    id="form-example-base"
+    name="form-example-base"
+    placeholder="voorbeeld text input"
+    type="text"
+  />
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+            
+            <h3>Bloknotificatie direct binnen formulier</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <form action="" method="post">
+              <div class="explanation" role="group" aria-label="Toelichting">
+                <span>Toelichting:</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+              </div>
+
+              <label for="form-example-base">Voorbeeld text input</label>
+              <input
+                id="form-example-base"
+                name="form-example-base"
+                placeholder="voorbeeld text input"
+                type="text"
+              />
+
+              <button type="submit">Verzend</button>
+            </form>
+
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;div class="explanation" role="group" aria-label="Toelichting">
+    &lt;span>Toelichting:&lt;/span>
+    &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
+  &lt;/div>
+
+  &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
+  &lt;input
+    id="form-example-base"
+    name="form-example-base"
+    placeholder="voorbeeld text input"
+    type="text"
+  />
+
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h3>Notificatie op invoerveld</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <form action="" method="post">
+              <label for="input-error">Input</label>
+              <div>
+                <p class="error" id="input-error-message">
+                    <span>Foutmelding:</span> Lorem ipsum dolor set amet
+                </p>
+                  <input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message" aria-invalid="true">
+              </div>
+              
+              <label for="input-explanation">Input</label>
+              <div>
+                <input id="input-explanation" class="explanation" value="Lorem ipsum" aria-describedby="input-explanation-message" aria-invalid="true">
+                <p class="explanation" id="input-explanation-message">
+                  <span>Toelichting:</span> Lorem ipsum dolor set amet
+                </p>
+              </div>
+              
+              <label for="input-warning">Input</label>
+              <div>
+                <input id="input-warning" class="warning" value="Lorem ipsum" aria-describedby="input-warning-message" aria-invalid="true">
+                <p class="warning" id="input-warning-message">
+                  <span>Waarschuwing:</span> Lorem ipsum dolor set amet
+                </p>
+              </div>
+              
+              <label for="input-confirmation">Input</label>
+              <div>
+                <p class="confirmation" id="input-confirmation-message">
+                    <span>Bevestiging:</span> Lorem ipsum dolor set amet
+                </p>
+                  <input id="input-confirmation" class="confirmation" value="Lorem ipsum" aria-describedby="input-confirmation-message" aria-invalid="true">
+              </div>
+              
+              <label for="input-system">Input</label>
+              <div>
+                <p class="system" id="input-system-message">
+                    <span>Systeembericht:</span> Lorem ipsum dolor set amet
+                </p>
+                  <input id="input-system" class="system" value="Lorem ipsum" aria-describedby="input-system-message" aria-invalid="true">
+              </div>
+          </form>
+
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;label for="input-error">Input&lt;/label>
+  &lt;div>
+    &lt;p class="error" id="input-error-message">
+        &lt;span>Foutmelding:&lt;/span> Lorem ipsum dolor set amet
+    &lt;/p>
+      &lt;input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message" aria-invalid="true">
+  &lt;/div>
+  
+  &lt;label for="input-explanation">Input&lt;/label>
+  &lt;div>
+    &lt;input id="input-explanation" class="explanation" value="Lorem ipsum" aria-describedby="input-explanation-message" aria-invalid="true">
+    &lt;p class="explanation" id="input-explanation-message">
+      &lt;span>Toelichting:&lt;/span> Lorem ipsum dolor set amet
+    &lt;/p>
+  &lt;/div>
+  
+  &lt;label for="input-warning">Input&lt;/label>
+  &lt;div>
+    &lt;input id="input-warning" class="warning" value="Lorem ipsum" aria-describedby="input-warning-message" aria-invalid="true">
+    &lt;p class="warning" id="input-warning-message">
+      &lt;span>Waarschuwing:&lt;/span> Lorem ipsum dolor set amet
+    &lt;/p>
+  &lt;/div>
+  
+  &lt;label for="input-confirmation">Input&lt;/label>
+  &lt;div>
+    &lt;p class="confirmation" id="input-confirmation-message">
+        &lt;span>Bevestiging:&lt;/span> Lorem ipsum dolor set amet
+    &lt;/p>
+      &lt;input id="input-confirmation" class="confirmation" value="Lorem ipsum" aria-describedby="input-confirmation-message" aria-invalid="true">
+  &lt;/div>
+  
+  &lt;label for="input-system">Input&lt;/label>
+  &lt;div>
+    &lt;p class="system" id="input-system-message">
+        &lt;span>Systeembericht:&lt;/span> Lorem ipsum dolor set amet
+    &lt;/p>
+      &lt;input id="input-system" class="system" value="Lorem ipsum" aria-describedby="input-system-message" aria-invalid="true">
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
           </section>
         </div>
       </article>

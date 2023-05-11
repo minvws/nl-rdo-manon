@@ -1,40 +1,26 @@
 /*---------------------------------------------------------------*/
 /*------------------- notification-warning.scss -----------------*/
 /*---------------------------------------------------------------*/
-@use "notification-base";
+@use "notification";
 @use "notification-warning-variables";
 
 p.warning,
 span.warning,
 section.warning,
 div.warning {
-  @include notification-base.notification;
+  @include notification.notification;
   background-color: var(--notification-warning-background-color);
   border-width: var(--notification-warning-border-width);
   border-style: var(--notification-warning-border-style);
   border-color: var(--notification-warning-border-color);
 
   &:before {
-    content: var(--notification-warning-icon-before-content);
-  }
-
-  &:after {
-    content: var(--notification-warning-icon-after-content);
-  }
-}
-
-textarea.warning,
-select.warning,
-input.warning {
-  border-width: var(--notification-warning-border-width);
-  border-style: var(--notification-warning-border-style);
-  border-color: var(--notification-warning-border-color);
-
-  &:before {
-    content: var(--notification-warning-icon-before-content);
-  }
-
-  &:after {
-    content: var(--notification-warning-icon-after-content);
+    font-family: var(--notification-warning-icon-font-family);
+    font-size: var(--notification-warning-icon-font-size);
+    padding-right: var(--notification-warning-icon-padding-right);
+    padding-left: var(--notification-warning-icon-padding-left);
+    color: var(--notification-warning-icon-text-color);
+    margin-right: var(--notification-warning-icon-margin-right);
+    content: var(--notification-warning-icon-content);
   }
 }
