@@ -11,6 +11,24 @@ body > header,
     &.visited /* Testing purposes */
     {
       @include link.link-and-icon-styling('header-link-visited-');
+
+      &:hover,
+      &.hover /* Testing purposes */
+      {
+        @include link.link-and-icon-styling('header-link-visited-hover-');
+      }
+
+      &:focus,
+      &.focus /* Testing purposes */
+      {
+        @include link.link-and-icon-styling('header-link-visited-focus-');
+      }
+
+      &:active,
+      &.active /* Testing purposes */
+      {
+        @include link.link-and-icon-styling('header-link-visited-active-');
+      }
     }
   }
 }

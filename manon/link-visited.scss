@@ -19,6 +19,12 @@ a {
       @include link.link-and-icon-styling('link-visited-hover-');
     }
 
+    &:focus,
+    &.focus /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('link-visited-focus-');
+    }
+
     &:active,
     &.active /* Testing purposes */
     {
