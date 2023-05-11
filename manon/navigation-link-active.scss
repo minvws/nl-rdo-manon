@@ -11,7 +11,6 @@ nav {
     &.active /* Testing purposes */
     {
       @include link.link-and-icon-styling('navigation-link-active-');
-
       @include outline.outline('navigation-link-active-');
     }
   }
