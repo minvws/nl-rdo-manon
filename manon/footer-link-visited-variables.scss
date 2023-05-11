@@ -1,10 +1,12 @@
 /*---------------------------------------------------------------*/
 /*--------------- footer-link-visited-variables.scss ------------*/
 /*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
 :root {
-  --footer-link-visited-background-color: var(--link-visited-background-color);
-  --footer-link-visited-text-color: var(--link-visited-text-color);
-  --footer-link-visited-text-decoration: var(--link-visited-text-decoration);
+  /* Visited */
+  @include link.styling-variables('footer-link-visited-', 'link-visited-');
 
   /* Icon */
   --footer-link-visited-icon-background-color: var(--footer-link-visited-background-color);
