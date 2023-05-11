@@ -2,18 +2,11 @@
 /*---------- notification-explanation-variables.scss ------------*/
 /*---------------------------------------------------------------*/
 @use "colors/notification-colors";
+@use "mixins/notification-type";
 
-:root {
-  --notification-explanation-background-color: var(--explanation-background-color);
-  --notification-explanation-border-width: var(
-    --notification-base-border-width
-  );
-  --notification-explanation-border-style: var(
-    --notification-base-border-style
-  );
-  --notification-explanation-border-color: var(--explanation-border-color);
-
-  /* Icon as before or after */
-  /* --notification-explanation-icon-before-content: ; */
-  /* --notification-explanation-icon-before-content: ; */
+p.explanation,
+span.explanation,
+section.explanation,
+div.explanation {
+  @include notification-type.notification-type-variables("explanation");
 }

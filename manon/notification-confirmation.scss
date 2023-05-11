@@ -1,40 +1,14 @@
 /*---------------------------------------------------------------*/
 /*---------------- notification-confirmation.scss ---------------*/
 /*---------------------------------------------------------------*/
-@use "notification-base";
+@use "notification";
 @use "notification-confirmation-variables";
+@use "mixins/notification-type";
 
 p.confirmation,
 span.confirmation,
 section.confirmation,
 div.confirmation {
-  @include notification-base.notification;
-  background-color: var(--notification-confirmation-background-color);
-  border-width: var(--notification-confirmation-border-width);
-  border-style: var(--notification-confirmation-border-style);
-  border-color: var(--notification-confirmation-border-color);
-
-  &:before {
-    content: var(--notification-confirmation-icon-before-content);
-  }
-
-  &:after {
-    content: var(--notification-confirmation-icon-after-content);
-  }
-}
-
-textarea.confirmation,
-select.confirmation,
-input.confirmation {
-  border-width: var(--notification-confirmation-border-width);
-  border-style: var(--notification-confirmation-border-style);
-  border-color: var(--notification-confirmation-border-color);
-
-  &:before {
-    content: var(--notification-confirmation-icon-before-content);
-  }
-
-  &:after {
-    content: var(--notification-confirmation-icon-after-content);
-  }
+  @include notification.notification;
+  @include notification-type.notification-type("confirmation");
 }

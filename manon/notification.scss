@@ -1,0 +1,62 @@
+/*---------------------------------------------------------------*/
+/*----------------------- notification.scss ---------------------*/
+/*---------------------------------------------------------------*/
+@use "notification-variables";
+@use "mixins/icon";
+
+@mixin notification {
+  background-color: var(--notification-background-color);
+  color: var(--notification-text-color);
+  max-width: 100%;
+  width: 100%;
+
+  a {
+    color: var(--notification-link-text-color);
+
+    &:hover {
+      color: var(--notification-link-hover-text-color);
+    }
+
+    &:visited {
+      color: var(--notification-link-visited-text-color);
+
+      &:hover {
+        color: var(--notification-link-visited-hover-text-color);
+      }
+
+      &:before {
+        color: inherit;
+      }
+    }
+  }
+
+  > span:first-of-type {
+    font-weight: var(--notification-span-font-weight);
+  }
+}
+
+.notification {
+  @include notification;
+}
+
+/* Icon */
+p, 
+span,
+section,
+div {
+  &.error, 
+  &.warning, 
+  &.explanation,
+  &.confirmation, 
+  &.system {
+    &:before {
+      @include icon.icon;
+      font-family: var(--notification-icon-font-family);
+      font-size: var(--notification-icon-font-size);
+      padding-right: var(--notification-icon-padding-right);
+      padding-left: var(--notification-icon-padding-left);
+      color: var(--notification-icon-text-color);
+      margin-right: var(--notification-icon-margin-right);
+    }
+  }
+}

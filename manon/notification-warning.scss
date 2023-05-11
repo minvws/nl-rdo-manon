@@ -1,40 +1,14 @@
 /*---------------------------------------------------------------*/
 /*------------------- notification-warning.scss -----------------*/
 /*---------------------------------------------------------------*/
-@use "notification-base";
+@use "notification";
 @use "notification-warning-variables";
+@use "mixins/notification-type";
 
 p.warning,
 span.warning,
 section.warning,
 div.warning {
-  @include notification-base.notification;
-  background-color: var(--notification-warning-background-color);
-  border-width: var(--notification-warning-border-width);
-  border-style: var(--notification-warning-border-style);
-  border-color: var(--notification-warning-border-color);
-
-  &:before {
-    content: var(--notification-warning-icon-before-content);
-  }
-
-  &:after {
-    content: var(--notification-warning-icon-after-content);
-  }
-}
-
-textarea.warning,
-select.warning,
-input.warning {
-  border-width: var(--notification-warning-border-width);
-  border-style: var(--notification-warning-border-style);
-  border-color: var(--notification-warning-border-color);
-
-  &:before {
-    content: var(--notification-warning-icon-before-content);
-  }
-
-  &:after {
-    content: var(--notification-warning-icon-after-content);
-  }
+  @include notification.notification;
+  @include notification-type.notification-type("warning");
 }

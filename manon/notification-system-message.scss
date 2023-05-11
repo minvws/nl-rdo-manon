@@ -1,40 +1,14 @@
 /*---------------------------------------------------------------*/
 /*-------------------- notification-system.scss -----------------*/
 /*---------------------------------------------------------------*/
-@use "notification-base";
+@use "notification";
 @use "notification-system-message-variables";
+@use "mixins/notification-type";
 
 p.system,
 span.system,
 section.system,
 div.system {
-  @include notification-base.notification;
-  background-color: var(--notification-system-background-color);
-  border-width: var(--notification-system-border-width);
-  border-style: var(--notification-system-border-style);
-  border-color: var(--notification-system-border-color);
-
-  &:before {
-    content: var(--notification-system-icon-before-content);
-  }
-
-  &:after {
-    content: var(--notification-system-icon-after-content);
-  }
-}
-
-textarea.system,
-select.system,
-input.system {
-  border-width: var(--notification-system-border-width);
-  border-style: var(--notification-system-border-style);
-  border-color: var(--notification-system-border-color);
-
-  &:before {
-    content: var(--notification-system-icon-before-content);
-  }
-
-  &:after {
-    content: var(--notification-system-icon-after-content);
-  }
+  @include notification.notification;
+  @include notification-type.notification-type("system");
 }
