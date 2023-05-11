@@ -1,17 +1,12 @@
 /*---------------------------------------------------------------*/
 /*------------- header-navigation-link-variables.scss -----------*/
 /*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
 :root {
-  --header-navigation-link-font-size: var(--navigation-link-font-size);
-  --header-navigation-link-font-weight: var(--navigation-link-text-font-weight);
-  --header-navigation-link-line-height: var(--navigation-link-line-height);
-  --header-navigation-link-background-color: var(--navigation-link-background-color);
-  --header-navigation-link-text-color: var(--navigation-link-text-color);
-  --header-navigation-link-text-decoration: var(--navigation-link-text-decoration);
-  --header-navigation-link-border-width: var(--navigation-link-border-width);
-  --header-navigation-link-border-style: var(--navigation-link-border-style);
-  --header-navigation-link-border-color: var(--navigation-link-border-color);
-  --header-navigation-link-border-radius: var(--navigation-link-border-radius);
+  /* Link */
+  @include link.styling-variables('header-navigation-link-', 'navigation-link-');
 
   /* Icon */
   --header-navigation-link-icon-font-family: var(--navigation-link-icon-font-family);
@@ -19,6 +14,9 @@
   --header-navigation-link-icon-padding-right: var(--navigation-link-icon-padding-right);
   --header-navigation-link-icon-padding-left: var(--navigation-link-icon-padding-left);
   --header-navigation-link-icon-text-decoration: var(--navigation-link-icon-text-decoration);
+
+  --header-navigation-link-icon-background-color: var(--header-navigation-link-background-color);
+  --header-navigation-link-icon-text-color: var(--header-navigation-link-text-color);
 
   /* Icon at the end */
   --header-navigation-link-icon-last-padding-right: var(--navigation-link-icon-last-padding-right);

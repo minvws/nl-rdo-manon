@@ -1,16 +1,12 @@
 /*---------------------------------------------------------------*/
 /*--------- header-navigation-link-active-variables.scss --------*/
 /*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
 :root {
   /* Link active */
-  --header-navigation-link-active-background-color: var(--navigation-link-active-background-color);
-  --header-navigation-link-active-text-color: var(--navigation-link-active-text-color);
-  --header-navigation-link-active-text-decoration: var(--navigation-link-active-text-decoration);
-  --header-navigation-link-active-border-width: var(--navigation-link-border-width);
-  --header-navigation-link-active-border-style: var(--navigation-link-border-style);
-  --header-navigation-link-active-border-color: var(--navigation-link-border-color);
-  --header-navigation-link-active-border-radius: var(--navigation-link-border-radius);
-  --header-navigation-link-active-font-weight: var(--navigation-link-font-weight);
+  @include link.styling-variables('header-navigation-link-active-', 'navigation-link-active-');
 
   /* Icon */
   --header-navigation-link-active-icon-background-color: var(--header-navigation-link-active-background-color);
