@@ -3,24 +3,12 @@
 /*---------------------------------------------------------------*/
 @use "notification";
 @use "notification-system-message-variables";
+@use "mixins/notification-type";
 
 p.system,
 span.system,
 section.system,
 div.system {
   @include notification.notification;
-  background-color: var(--notification-system-background-color);
-  border-width: var(--notification-system-border-width);
-  border-style: var(--notification-system-border-style);
-  border-color: var(--notification-system-border-color);
-
-  &:before {
-    font-family: var(--notification-system-icon-font-family);
-    font-size: var(--notification-system-icon-font-size);
-    padding-right: var(--notification-system-icon-padding-right);
-    padding-left: var(--notification-system-icon-padding-left);
-    color: var(--notification-system-icon-text-color);
-    margin-right: var(--notification-system-icon-margin-right);
-    content: var(--notification-system-icon-content);
-  }
+  @include notification-type.notification-type("system");
 }

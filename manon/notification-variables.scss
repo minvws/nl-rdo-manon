@@ -4,7 +4,7 @@
 @use "colors/notification-colors";
 
 :root {
-  --notification-notification-text-color: var(--base-text-color);
+  --notification-text-color: var(--base-text-color);
   --notification-width: 100%;
   --notification-padding-top: 1.5rem;
   --notification-padding-right: 1rem;

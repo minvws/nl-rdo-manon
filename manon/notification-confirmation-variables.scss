@@ -2,23 +2,8 @@
 /*---------- notification-confirmation-variables.scss -----------*/
 /*---------------------------------------------------------------*/
 @use "colors/notification-colors";
+@use "mixins/notification-type";
 
 :root {
-  --notification-confirmation-background-color: var(--confirmation-background-color);
-  --notification-confirmation-border-width: var(
-    --notification-border-width
-  );
-  --notification-confirmation-border-style: var(
-    --notification-border-style
-  );
-  --notification-confirmation-border-color: var(--confirmation-border-color);
-
-  /* Icon */
-  --notification-confirmation-icon-font-family: var(--notification-icon-font-family);
-  --notification-confirmation-icon-font-size: var(--notification-icon-font-size);
-  --notification-confirmation-icon-text-color: var(--notification-icon-text-color);
-  --notification-confirmation-icon-padding-right: var(--notification-icon-padding-right);
-  --notification-confirmation-icon-padding-left: var(--notification-icon-padding-left);
-  --notification-confirmation-icon-margin-right: var(--notification-icon-margin-right);
-  --notification-confirmation-icon-content: none;
+  @include notification-type.notification-type-variables("confirmation");
 }

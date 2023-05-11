@@ -3,24 +3,12 @@
 /*---------------------------------------------------------------*/
 @use "notification";
 @use "notification-confirmation-variables";
+@use "mixins/notification-type";
 
 p.confirmation,
 span.confirmation,
 section.confirmation,
 div.confirmation {
   @include notification.notification;
-  background-color: var(--notification-confirmation-background-color);
-  border-width: var(--notification-confirmation-border-width);
-  border-style: var(--notification-confirmation-border-style);
-  border-color: var(--notification-confirmation-border-color);
-
-  &:before {
-    font-family: var(--notification-confirmation-icon-font-family);
-    font-size: var(--notification-confirmation-icon-font-size);
-    padding-right: var(--notification-confirmation-icon-padding-right);
-    padding-left: var(--notification-confirmation-icon-padding-left);
-    color: var(--notification-confirmation-icon-text-color);
-    margin-right: var(--notification-confirmation-icon-margin-right);
-    content: var(--notification-confirmation-icon-content);
-  }
+  @include notification-type.notification-type("confirmation");
 }

@@ -3,24 +3,12 @@
 /*---------------------------------------------------------------*/
 @use "notification";
 @use "notification-explanation-variables";
+@use "mixins/notification-type";
 
 p.explanation,
 span.explanation,
 section.explanation,
 div.explanation {
   @include notification.notification;
-  background-color: var(--notification-explanation-background-color);
-  border-width: var(--notification-explanation-border-width);
-  border-style: var(--notification-explanation-border-style);
-  border-color: var(--notification-explanation-border-color);
-
-  &:before {
-    font-family: var(--notification-explanation-icon-font-family);
-    font-size: var(--notification-explanation-icon-font-size);
-    padding-right: var(--notification-explanation-icon-padding-right);
-    padding-left: var(--notification-explanation-icon-padding-left);
-    color: var(--notification-explanation-icon-text-color);
-    margin-right: var(--notification-explanation-icon-margin-right);
-    content: var(--notification-explanation-icon-content);
-  }
+  @include notification-type.notification-type("explanation");
 }

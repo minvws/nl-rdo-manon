@@ -1,0 +1,38 @@
+/*---------------------------------------------------------------------*/
+/*------------------ mixins/notification-type.scss --------------------*/
+/*---------------------------------------------------------------------*/
+
+@mixin notification-type($type) {
+    background-color: var(--notification-#{$type}-background-color);
+    color: var(--notification-#{$type}-text-color);
+    border-width: var(--notification-#{$type}-border-width);
+    border-style: var(--notification-#{$type}-border-style);
+    border-color: var(--notification-#{$type}-border-color);
+  
+    &:before {
+      font-family: var(--notification-#{$type}-icon-font-family);
+      font-size: var(--notification-#{$type}-icon-font-size);
+      padding-right: var(--notification-#{$type}-icon-padding-right);
+      padding-left: var(--notification-#{$type}-icon-padding-left);
+      color: var(--notification-#{$type}-icon-text-color);
+      margin-right: var(--notification-#{$type}-icon-margin-right);
+      content: var(--notification-#{$type}-icon);
+    }
+}
+
+@mixin notification-type-variables($type) {
+    --notification-#{$type}-background-color: var(--#{$type}-background-color);
+    --notification-#{$type}-text-color: var(--#{$type}-text-color);
+    --notification-#{$type}-border-width: var(--notification-border-width);
+    --notification-#{$type}-border-style: var(--notification-border-style);
+    --notification-#{$type}-border-color: var(--#{$type}-border-color);
+  
+    /* Icon */
+    --notification-#{$type}-icon-font-family: var(--notification-icon-font-family);
+    --notification-#{$type}-icon-font-size: var(--notification-icon-font-size);
+    --notification-#{$type}-icon-text-color: var(--notification-icon-text-color);
+    --notification-#{$type}-icon-padding-right: var(--notification-icon-padding-right);
+    --notification-#{$type}-icon-padding-left: var(--notification-icon-padding-left);
+    --notification-#{$type}-icon-margin-right: var(--notification-icon-margin-right);
+    --notification-#{$type}-icon-content: none;
+}

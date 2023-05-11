@@ -2,19 +2,8 @@
 /*--------------- notification-error-variables.scss -------------*/
 /*---------------------------------------------------------------*/
 @use "colors/notification-colors";
+@use "mixins/notification-type";
 
 :root {
-  --notification-error-background-color: var(--error-background-color);
-  --notification-error-border-width: var(--notification-border-width);
-  --notification-error-border-style: var(--notification-border-style);
-  --notification-error-border-color: var(--error-border-color);
-
-  /* Icon */
-  --notification-error-icon-font-family: var(--notification-icon-font-family);
-  --notification-error-icon-font-size: var(--notification-icon-font-size);
-  --notification-error-icon-text-color: var(--notification-icon-text-color);
-  --notification-error-icon-padding-right: var(--notification-icon-padding-right);
-  --notification-error-icon-padding-left: var(--notification-icon-padding-left);
-  --notification-error-icon-margin-right: var(--notification-icon-margin-right);
-  --notification-error-icon-content: none;
+  @include notification-type.notification-type-variables("error");
 }

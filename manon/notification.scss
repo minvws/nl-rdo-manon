@@ -6,7 +6,7 @@
 
 @mixin notification {
   background-color: var(--notification-background-color);
-  color: var(--notification-notification-text-color);
+  color: var(--notification-text-color);
   max-width: 100%;
   width: 100%;
 

@@ -2,19 +2,8 @@
 /*-------------- notification-warning-variables.scss ------------*/
 /*---------------------------------------------------------------*/
 @use "colors/notification-colors";
+@use "mixins/notification-type";
 
 :root {
-  --notification-warning-background-color: var(--warning-background-color);
-  --notification-warning-border-width: var(--notification-border-width);
-  --notification-warning-border-style: var(--notification-border-style);
-  --notification-warning-border-color: var(--warning-border-color);
-
-  /* Icon */
-  --notification-warning-icon-font-family: var(--notification-icon-font-family);
-  --notification-warning-icon-font-size: var(--notification-icon-font-size);
-  --notification-warning-icon-text-color: var(--notification-icon-text-color);
-  --notification-warning-icon-padding-right: var(--notification-icon-padding-right);
-  --notification-warning-icon-padding-left: var(--notification-icon-padding-left);
-  --notification-warning-icon-margin-right: var(--notification-icon-margin-right);
-  --notification-warning-icon-content: none;
+  @include notification-type.notification-type-variables("warning");
 }

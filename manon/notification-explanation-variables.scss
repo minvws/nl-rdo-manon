@@ -2,19 +2,11 @@
 /*---------- notification-explanation-variables.scss ------------*/
 /*---------------------------------------------------------------*/
 @use "colors/notification-colors";
+@use "mixins/notification-type";
 
-:root {
-  --notification-explanation-background-color: var(--explanation-background-color);
-  --notification-explanation-border-width: var(--notification-border-width);
-  --notification-explanation-border-style: var(--notification-border-style);
-  --notification-explanation-border-color: var(--explanation-border-color);
-
-  /* Icon */
-  --notification-explanation-icon-font-family: var(--notification-icon-font-family);
-  --notification-explanation-icon-font-size: var(--notification-icon-font-size);
-  --notification-explanation-icon-text-color: var(--notification-icon-text-color);
-  --notification-explanation-icon-padding-right: var(--notification-icon-padding-right);
-  --notification-explanation-icon-padding-left: var(--notification-icon-padding-left);
-  --notification-explanation-icon-margin-right: var(--notification-icon-margin-right);
-  --notification-explanation-icon-content: none;
+p.explanation,
+span.explanation,
+section.explanation,
+div.explanation {
+  @include notification-type.notification-type-variables("explanation");
 }
