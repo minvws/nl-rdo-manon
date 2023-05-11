@@ -12,12 +12,6 @@ nav {
     {
       @include link.link-and-icon-styling('navigation-link-focus-');
       @include outline.outline('navigation-link-focus-');
-
-      &:hover,
-      &.hover /* Testing purposes */
-      {
-        @include link.link-and-icon-styling('navigation-link-focus-hover-');
-      }
     }
   }
 }

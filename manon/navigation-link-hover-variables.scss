@@ -1,8 +1,15 @@
 /*---------------------------------------------------------------*/
 /*------------- navigation-link-hover-variables.scss ------------*/
 /*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
 :root {
-  --navigation-link-hover-background-color: var(--link-hover-background-color);
-  --navigation-link-hover-text-color: var(--link-hover-text-color);
-  --navigation-link-hover-text-decoration: var(--link-hover-text-decoration);
+  /* Link hover */
+  @include link.styling-variables('navigation-link-hover-', 'link-hover-');
+
+  /* Icon */
+  --navigation-link-hover-icon-background-color: var(--navigation-link-hover-background-color);
+  --navigation-link-hover-icon-text-color: var(--navigation-link-hover-text-color);
+  --navigation-link-hover-icon-text-decoration: var(--navigation-link-icon-text-decoration);
 }

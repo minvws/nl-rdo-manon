@@ -5,10 +5,11 @@
 @use "mixins/link";
 
 nav {
-    a {
-        &:hover,
-        &.hover /* Testing purposes */ {
-          @include link.link-and-icon-styling('navigation-link-hover-');
-        }
+  a {
+    &:hover,
+    &.hover /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('navigation-link-hover-');
     }
+  }
 }

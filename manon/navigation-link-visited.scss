@@ -9,26 +9,7 @@ nav {
     &:visited,
     &.visited /* Testing purposes */
     {
-
       @include link.link-and-icon-styling('navigation-link-visited-');
-
-      &:hover,
-      &.hover /* Testing purposes */
-      {
-        @include link.link-and-icon-styling('navigation-link-visited-hover-');
-      }
-
-      &:focus,
-      &.focus /* Testing purposes */
-      {
-        @include link.link-and-icon-styling('navigation-link-visited-focus-');
-      }
-
-      &:active,
-      &.active /* Testing purposes */
-      {
-        @include link.link-and-icon-styling('navigation-link-visited-active-');
-      }
     }
   }
 }
