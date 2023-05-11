@@ -12,12 +12,6 @@ body > footer,
       &.active /* Testing purposes */
       {
         @include link.link-and-icon-styling('footer-navigation-link-active-');
-
-        &:hover,
-        &.hover /* Testing purposes */
-        {
-          @include link.link-and-icon-styling('footer-navigation-link-active-hover-');
-        }
       }
     }
   }

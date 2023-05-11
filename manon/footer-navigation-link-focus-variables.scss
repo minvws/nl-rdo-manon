@@ -1,23 +1,15 @@
 /*---------------------------------------------------------------*/
 /*---------- footer-navigation-link-focus-variables.scss --------*/
 /*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
 :root {
-  --footer-navigation-link-focus-background-color: var(--navigation-link-focus-background-color);
-  --footer-navigation-link-focus-text-color: var(--navigation-link-focus-text-color);
-  --footer-navigation-link-focus-text-decoration: var(--navigation-link-focus-text-decoration);
+  /* Focus */
+  @include link.styling-variables('footer-navigation-link-focus-', 'navigation-link-focus-');
 
   /* Icon */
   --footer-navigation-link-focus-icon-background-color: var(--footer-navigation-link-focus-background-color);
   --footer-navigation-link-focus-icon-text-color: var(--footer-navigation-link-focus-text-color);
   --footer-navigation-link-focus-icon-text-decoration: var(--footer-navigation-link-icon-text-decoration);
-
-  /* Hover on focus */
-  --footer-navigation-link-focus-hover-background-color: var(--navigation-link-focus-hover-background-color);
-  --footer-navigation-link-focus-hover-text-color: var(--navigation-link-focus-hover-text-color);
-  --footer-navigation-link-focus-hover-text-decoration: var(--navigation-link-focus-hover-text-decoration);
-
-  /* Active on hover icon */
-  --footer-navigation-link-focus-hover-icon-background-color: var(--footer-navigation-link-focus-hover-background-color);
-  --footer-navigation-link-focus-hover-icon-text-color: var(--footer-navigation-link-focus-hover-text-color);
-  --footer-navigation-link-focus-hover-icon-text-decoration: var(--footer-navigation-link-focus-icon-text-decoration);
 }

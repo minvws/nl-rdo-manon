@@ -1,10 +1,12 @@
 /*---------------------------------------------------------------*/
 /*---------- footer-navigation-link-hover-variables.scss --------*/
 /*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
 :root {
-  --footer-navigation-link-hover-background-color: var(--navigation-link-hover-background-color);
-  --footer-navigation-link-hover-text-color: var(--navigation-link-hover-text-color);
-  --footer-navigation-link-hover-text-decoration: var(--navigation-link-hover-text-decoration);
+  /* Hover */
+  @include link.styling-variables('footer-navigation-link-hover-', 'navigation-link-hover-');
 
   /* Icon */
   --footer-navigation-link-hover-icon-background-color: var(--footer-navigation-link-hover-background-color);
