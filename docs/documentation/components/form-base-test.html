@@ -155,48 +155,17 @@
             </pre>
 
             <h3>Notificatie op invoerveld</h3>
-            <h4>Visueel voorbeeld:</h4>
+            <h4>Visueel voorbeeld foutmelding:</h4>
             <form action="" method="post">
               <label for="input-error">Input</label>
               <div>
+                <input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message" aria-invalid="true">
                 <p class="error" id="input-error-message">
                     <span>Foutmelding:</span> Lorem ipsum dolor set amet
                 </p>
-                  <input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message" aria-invalid="true">
               </div>
-              
-              <label for="input-explanation">Input</label>
-              <div>
-                <input id="input-explanation" class="explanation" value="Lorem ipsum" aria-describedby="input-explanation-message" aria-invalid="true">
-                <p class="explanation" id="input-explanation-message">
-                  <span>Toelichting:</span> Lorem ipsum dolor set amet
-                </p>
-              </div>
-              
-              <label for="input-warning">Input</label>
-              <div>
-                <input id="input-warning" class="warning" value="Lorem ipsum" aria-describedby="input-warning-message" aria-invalid="true">
-                <p class="warning" id="input-warning-message">
-                  <span>Waarschuwing:</span> Lorem ipsum dolor set amet
-                </p>
-              </div>
-              
-              <label for="input-confirmation">Input</label>
-              <div>
-                <p class="confirmation" id="input-confirmation-message">
-                    <span>Bevestiging:</span> Lorem ipsum dolor set amet
-                </p>
-                  <input id="input-confirmation" class="confirmation" value="Lorem ipsum" aria-describedby="input-confirmation-message" aria-invalid="true">
-              </div>
-              
-              <label for="input-system">Input</label>
-              <div>
-                <p class="system" id="input-system-message">
-                    <span>Systeembericht:</span> Lorem ipsum dolor set amet
-                </p>
-                  <input id="input-system" class="system" value="Lorem ipsum" aria-describedby="input-system-message" aria-invalid="true">
-              </div>
-          </form>
+              <button type="submit">Verzend</button>
+            </form>
 
             <p>Html-voorbeeld:</p>
             <pre>
@@ -204,28 +173,88 @@
 &lt;form action="" method="post">
   &lt;label for="input-error">Input&lt;/label>
   &lt;div>
+    &lt;input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message" aria-invalid="true">
     &lt;p class="error" id="input-error-message">
         &lt;span>Foutmelding:&lt;/span> Lorem ipsum dolor set amet
     &lt;/p>
-      &lt;input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message" aria-invalid="true">
   &lt;/div>
-  
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+            
+            <h4>Visueel voorbeeld toelichting:</h4>
+            <form action="" method="post">
+              <label for="input-explanation">Input</label>
+              <div>
+                <p class="explanation" id="input-explanation-message">
+                  <span>Toelichting:</span> Lorem ipsum dolor set amet
+                </p>
+                <input id="input-explanation" class="explanation" value="Lorem ipsum" aria-describedby="input-explanation-message" aria-invalid="true">
+              </div>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;form action="" method="post">
   &lt;label for="input-explanation">Input&lt;/label>
   &lt;div>
-    &lt;input id="input-explanation" class="explanation" value="Lorem ipsum" aria-describedby="input-explanation-message" aria-invalid="true">
     &lt;p class="explanation" id="input-explanation-message">
       &lt;span>Toelichting:&lt;/span> Lorem ipsum dolor set amet
     &lt;/p>
+    &lt;input id="input-explanation" class="explanation" value="Lorem ipsum" aria-describedby="input-explanation-message" aria-invalid="true">
   &lt;/div>
-  
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+            
+            <h4>Visueel voorbeeld waarschuwing:</h4>
+            <form action="" method="post">
+              <label for="input-warning">Input</label>
+              <div>
+                <p class="warning" id="input-warning-message">
+                  <span>Waarschuwing:</span> Lorem ipsum dolor set amet
+                </p>
+                <input id="input-warning" class="warning" value="Lorem ipsum" aria-describedby="input-warning-message" aria-invalid="true">
+              </div>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;form action="" method="post">
   &lt;label for="input-warning">Input&lt;/label>
   &lt;div>
-    &lt;input id="input-warning" class="warning" value="Lorem ipsum" aria-describedby="input-warning-message" aria-invalid="true">
     &lt;p class="warning" id="input-warning-message">
       &lt;span>Waarschuwing:&lt;/span> Lorem ipsum dolor set amet
     &lt;/p>
+    &lt;input id="input-warning" class="warning" value="Lorem ipsum" aria-describedby="input-warning-message" aria-invalid="true">
   &lt;/div>
-  
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+            
+            <h4>Visueel voorbeeld bevestiging:</h4>
+            <form action="" method="post">
+              <label for="input-confirmation">Input</label>
+              <div>
+                <p class="confirmation" id="input-confirmation-message">
+                    <span>Bevestiging:</span> Lorem ipsum dolor set amet
+                </p>
+                  <input id="input-confirmation" class="confirmation" value="Lorem ipsum" aria-describedby="input-confirmation-message" aria-invalid="true">
+              </div>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;form action="" method="post">
   &lt;label for="input-confirmation">Input&lt;/label>
   &lt;div>
     &lt;p class="confirmation" id="input-confirmation-message">
@@ -233,15 +262,37 @@
     &lt;/p>
       &lt;input id="input-confirmation" class="confirmation" value="Lorem ipsum" aria-describedby="input-confirmation-message" aria-invalid="true">
   &lt;/div>
-  
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h4>Visueel voorbeeld systeembericht</h4>
+            <form action="" method="post">
+              <label for="input-system">Input</label>
+              <div>
+                <p class="system" id="input-system-message">
+                    <span>Systeembericht:</span> Lorem ipsum dolor set amet
+                </p>
+                  <input id="input-system" class="system" value="Lorem ipsum" aria-describedby="input-system-message" aria-invalid="true">
+              </div>
+              <button type="submit">Verzend</button>
+            </form>
+
+          <p>Html-voorbeeld:</p>
+            <pre>
+              <code>
+&lt;form action="" method="post">
   &lt;label for="input-system">Input&lt;/label>
   &lt;div>
     &lt;p class="system" id="input-system-message">
         &lt;span>Systeembericht:&lt;/span> Lorem ipsum dolor set amet
     &lt;/p>
-      &lt;input id="input-system" class="system" value="Lorem ipsum" aria-describedby="input-system-message" aria-invalid="true">
+    &lt;input id="input-system" class="system" value="Lorem ipsum" aria-describedby="input-system-message" aria-invalid="true">
   &lt;/div>
+  &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
+    
               </code>
             </pre>
           </section>

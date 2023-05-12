@@ -37,16 +37,16 @@ form {
     > div {
         p,
         span {
-            /* Message types that come before fields */
-            &.warning,
-            &.explanation {
+            /* Message types that come after fields */
+            &.error {
                 margin-top: var(--notification-form-fields-gap);
             }
 
-            /* Message types that come after fields */
-            &.error,
+             /* Message types that come before fields */
+            &.warning,
             &.confirmation,
-            &.system {
+            &.system,
+            &.explanation {
                 margin-bottom: var(--notification-form-fields-gap);
             }
 
