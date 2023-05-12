@@ -14,9 +14,9 @@
 
   /* Bar content */
   --breadcrumb-bar-content-block-padding-top: 1rem;
-  --breadcrumb-bar-content-block-padding-right: 3%;
+  --breadcrumb-bar-content-block-padding-right: var(--content-padding-right);
   --breadcrumb-bar-content-block-padding-bottom: 1rem;
-  --breadcrumb-bar-content-block-padding-left: 3%;
+  --breadcrumb-bar-content-block-padding-left: var(--content-padding-left);
   --breadcrumb-bar-content-block-gap: 1rem;
   --breadcrumb-bar-content-block-max-width: var(--layout-header-content-block-max-width);
 

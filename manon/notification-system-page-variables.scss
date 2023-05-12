@@ -1,9 +1,9 @@
 /*---------------------------------------------------------------*/
-/*---------- notification-explanation-variables.scss ------------*/
+/*----------- notification-system-page-variables.scss -----------*/
 /*---------------------------------------------------------------*/
 @use "colors/notification-colors";
 @use "mixins/notification-type";
 
-:root {
-  @include notification-type.notification-type-variables("explanation");
+:root { 
+    @include notification-type.notification-page-type-variables("system");
 }

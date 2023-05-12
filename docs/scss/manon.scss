@@ -213,10 +213,15 @@
 @use "@minvws/manon/notification-paragraph";
 @use "@minvws/manon/notification-table";
 @use "@minvws/manon/notification-error";
+@use "@minvws/manon/notification-error-page";
 @use "@minvws/manon/notification-warning";
+@use "@minvws/manon/notification-warning-page";
 @use "@minvws/manon/notification-explanation";
+@use "@minvws/manon/notification-explanation-page";
 @use "@minvws/manon/notification-confirmation";
+@use "@minvws/manon/notification-confirmation-page";
 @use "@minvws/manon/notification-system-message";
+@use "@minvws/manon/notification-system-page";
 @use "@minvws/manon/notification-form";
 
 /* Dividers */
