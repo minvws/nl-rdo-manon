@@ -21,10 +21,12 @@ and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 main section form,
 form {
   > fieldset {
+   
     legend {
       font-weight: var(--form-fieldset-legend-font-weight);
       margin-bottom: var(--form-fieldset-legend-margin-bottom);
     }
+    
 
     div {
       display: block;
@@ -37,6 +39,20 @@ form {
         max-width: 100%;
         box-sizing: border-box;
         margin: 0;
+      }
+    }
+
+    /* Notifications */
+    > div {
+      &.error,
+      &.warning,
+      &.explanation,
+      &.confirmation,
+      &.system {
+        > * {
+          max-width: 100%;
+          width: 100%;
+        }
       }
     }
 
