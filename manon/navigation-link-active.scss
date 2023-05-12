@@ -2,36 +2,16 @@
 /*---------------- navigation-link-active.scss ------------------*/
 /*---------------------------------------------------------------*/
 @use "navigation-link-active-variables";
+@use "mixins/link";
+@use "mixins/outline";
 
 nav {
-    a {
-        &:active,
-        &.active /* Testing purposes */ {
-            background-color: var(--navigation-link-active-background-color);
-            color: var(--navigation-link-active-text-color);
-            text-decoration: var(--navigation-link-active-text-decoration);
-            outline: var(--navigation-link-active-outline);
-            outline-offset: var(--navigation-link-active-outline-offset);
-            z-index: 1;
-
-            &:before {
-                background-color: var(--navigation-link-icon-active-background-color);
-                color: var(--navigation-link-icon-active-text-color);
-                text-decoration: var(--navigation-link-icon-active-text-decoration);
-            }
-
-            &:hover,
-            &.hover /* Testing purposes */ {
-                background-color: var(--navigation-link-active-hover-background-color);
-                color: var(--navigation-link-active-hover-text-color);
-                text-decoration: var(--navigation-link-active-hover-text-decoration);
-                
-                &:before {
-                    background-color: var(--navigation-link-icon-active-hover-background-color);
-                    color: var(--navigation-link-icon-active-hover-text-color);
-                    text-decoration: var(--navigation-link-icon-active-hover-text-decoration);
-                }
-            }
-        }
+  a {
+    &:active,
+    &.active /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('navigation-link-active-');
+      @include outline.outline('navigation-link-active-');
     }
+  }
 }

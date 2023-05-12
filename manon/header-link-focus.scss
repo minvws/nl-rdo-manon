@@ -1,0 +1,16 @@
+/*---------------------------------------------------------------*/
+/*------------------- header-link-focus.scss --------------------*/
+/*---------------------------------------------------------------*/
+@use "header-link-focus-variables";
+@use "mixins/link";
+
+body > header,
+%header-style {
+  a {
+    &:focus,
+    &.focus /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('header-link-focus-');
+    }
+  }
+}

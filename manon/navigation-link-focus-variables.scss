@@ -1,0 +1,15 @@
+/*---------------------------------------------------------------*/
+/*------------- navigation-link-focus-variables.scss -- ---------*/
+/*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
+:root {
+  /* Link focus */
+  @include link.styling-variables('navigation-link-focus-', 'link-focus-');
+
+  /* Icon */
+  --navigation-link-focus-icon-background-color: var(--navigation-link-focus-background-color);
+  --navigation-link-focus-icon-text-color: var(--navigation-link-focus-text-color);
+  --navigation-link-focus-icon-text-decoration: var(--navigation-link-icon-text-decoration);
+}

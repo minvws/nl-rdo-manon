@@ -1,25 +1,15 @@
 /*---------------------------------------------------------------*/
 /*------------- navigation-link-active-variables.scss -----------*/
 /*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
 :root {
-  --navigation-link-active-background-color: var(--link-active-background-color);
-  --navigation-link-active-text-color: var(--link-active-text-color);
-  --navigation-link-active-text-decoration: var(--link-active-text-decoration);
-  --navigation-link-active-outline: unset;
-  --navigation-link-active-outline-offset: 0;
+  /* Active */
+  @include link.styling-variables('navigation-link-active-', 'link-active-');
 
   /* Icon */
-  --navigation-link-icon-active-background-color: var(--navigation-link-active-background-color);
-  --navigation-link-icon-active-text-color: var(--navigation-link-active-text-color);
-  --navigation-link-icon-active-text-decoration: var(--navigation-link-active-);
-
-  /* Active on hover */
-  --navigation-link-active-hover-background-color: var(--link-active-hover-background-color);
-  --navigation-link-active-hover-text-color: var(--link-active-hover-text-color);
-  --navigation-link-active-hover-text-decoration: var(--link-active-hover-text-decoration);
-
-  /* Active on hover icon */
-  --navigation-link-icon-active-hover-background-color: var(--navigation-link-active-hover-background-color);
-  --navigation-link-icon-active-hover-text-color: var(--navigation-link-active-hover-text-color);
-  --navigation-link-icon-active-hover-text-decoration: var(--navigation-link-icon-active-text-decoration);
+  --navigation-link-active-icon-background-color: var(--navigation-link-active-background-color);
+  --navigation-link-active-icon-text-color: var(--navigation-link-active-text-color);
+  --navigation-link-active-icon-text-decoration: var(--navigation-link-icon-text-decoration);
 }

@@ -2,33 +2,16 @@
 /*---------------- navigation-link-visited.scss ------------------*/
 /*---------------------------------------------------------------*/
 @use "navigation-link-visited-variables";
+@use "mixins/link";
+@use "mixins/outline";
 
 nav {
-    a {
-        &:visited,
-        &.visited /* Testing purposes */ {
-            background-color: var(--navigation-link-visited-background-color);
-            color: var(--navigation-link-visited-text-color);
-            text-decoration: var(--navigation-link-visited-text-decoration);
-
-            &:before {
-                background-color: var(--navigation-link-icon-visited-background-color);
-                color: var(--navigation-link-icon-visited-text-color);
-                text-decoration: var(--navigation-link-icon-visited-text-decoration);
-            }
-
-            &:hover,
-            &.hover /* Testing purposes */ {
-                background-color: var(--navigation-link-visited-hover-background-color);
-                color: var(--navigation-link-visited-hover-text-color);
-                text-decoration: var(--navigation-link-visited-hover-text-decoration);
-                
-                &:before {
-                    background-color: var(--navigation-link-icon-visited-hover-background-color);
-                    color: var(--navigation-link-icon-visited-hover-text-color);
-                    text-decoration: var(--navigation-link-icon-visited-hover-text-decoration);
-                }
-            }
-        }
+  a {
+    &:visited,
+    &.visited /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('navigation-link-visited-');
+      @include outline.outline('navigation-link-visited-');
     }
+  }
 }

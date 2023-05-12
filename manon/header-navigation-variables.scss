@@ -22,26 +22,26 @@
   --header-navigation-border-style: solid;
   --header-navigation-border-color: transparent;
   --header-navigation-border-radius: 0;
-  
+
   --header-navigation-position: relative;
-  
+
   --header-navigation-background-color: var(--application-base-accent-color, #fff);
   --header-navigation-text-color: var(--application-base-accent-color-text-color);
-  
+
   /* List */
   --header-navigation-list-gap: 1rem;
   --header-navigation-list-justify-content: var(--header-navigation-justify-content);
   --header-navigation-list-align-items: var(--header-navigation-align-items);
   --header-navigation-list-text-color: var(--header-navigation-text-color, var(--application-base-accent-color-text-color));
   --header-navigation-list-width: 100%;
-  
+
   /* List item */
   --header-navigation-list-item-background-color: transparent;
   --header-navigation-list-item-text-color: var(--header-navigation-list-text-color, var(--application-base-accent-color-text-color));
   --header-navigation-list-item-justify-content: var(--header-navigation-justify-content);
   --header-navigation-list-item-align-items: var(--header-navigation-align-items);
   --header-navigation-list-item-padding: 0;
-  
+
   /* Link */
   --header-navigation-link-justify-content: center;
   --header-navigation-link-align-items: center;
@@ -50,52 +50,6 @@
   --header-navigation-link-padding-bottom: 0;
   --header-navigation-link-padding-left: 0;
   --header-navigation-link-min-height: 0;
-  --header-navigation-link-text-decoration: none;
-  --header-navigation-link-text-color: var(--header-navigation-text-color, black);
-  --header-navigation-link-font-size: var(--text-set-font-size);
-  --header-navigation-link-line-height: var(--text-set-line-height);
-  --navigation-link-font-weight: var(--text-set-font-weight);
-  --header-navigation-link-border-width: 0;
-  --header-navigation-link-border-style: solid;
-  --header-navigation-link-border-color: transparent;
-  --header-navigation-link-border-radius: 0;
-
-  /* Link hover */
-  --header-navigation-link-hover-text-decoration: none;
-  --header-navigation-link-hover-background-color: transparent;
-  --header-navigation-link-hover-text-color: var(--header-navigation-text-color);
-  --header-navigation-link-hover-border-width: var(--header-navigation-link-border-width);
-  --header-navigation-link-hover-border-style: var(--header-navigation-link-border-style);
-  --header-navigation-link-hover-border-color: transparent;
-  --header-navigation-link-hover-border-radius: var(--header-navigation-link-border-radius);
-  --header-navigation-link-hover-font-weight: normal;
-
-  /* Link visited */
-  --header-navigation-link-visited-text-color: var(--header-navigation-link-text-color);
-
-  /* Link visited hover */
-  --header-navigation-link-visited-hover-text-decoration: var(--header-navigation-link-hover-text-decoration);
-  --header-navigation-link-visited-hover-background-color: var(--header-navigation-link-hover-background-color);
-  --header-navigation-link-visited-hover-text-color: var(--header-navigation-link-hover-text-color);
-
-  /* Link active */
-  --header-navigation-link-active-text-decoration: var(--header-navigation-link-hover-text-decoration);
-  --header-navigation-link-active-background-color: var(--header-navigation-link-hover-background-color);
-  --header-navigation-link-active-text-color: var(--header-navigation-link-hover-text-color);
-  --header-navigation-link-active-border-width: var(--header-navigation-link-border-width);
-  --header-navigation-link-active-border-style: var(--header-navigation-link-border-style);
-  --header-navigation-link-active-border-color: transparent;
-  --header-navigation-link-active-border-radius: var(--header-navigation-link-border-radius);
-  --header-navigation-link-active-font-weight: normal;
-
-  /* Link active and hover */
-  --header-navigation-link-active-hover-text-decoration: var(--header-navigation-link-hover-text-decoration);
-  --header-navigation-link-active-hover-background-color: var(--header-navigation-link-hover-background-color);
-  --header-navigation-link-active-hover-text-color: var(--header-navigation-link-hover-text-color);
-  --header-navigation-link-active-hover-border-width: var(--header-navigation-link-border-width);
-  --header-navigation-link-active-hover-border-style: var(--header-navigation-link-border-style);
-  --header-navigation-link-active-hover-border-color: transparent;
-  --header-navigation-link-active-hover-border-radius: var(--header-navigation-link-border-radius);
 
   /* Button */
   --header-navigation-button-justify-content: var(--button-base-justify-content, center);

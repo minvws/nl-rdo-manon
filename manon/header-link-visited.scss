@@ -1,0 +1,16 @@
+/*---------------------------------------------------------------*/
+/*------------------ header-link-visited.scss -------------------*/
+/*---------------------------------------------------------------*/
+@use "header-link-visited-variables";
+@use "mixins/link";
+
+body > header,
+%header-style {
+  a {
+    &:visited,
+    &.visited /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('header-link-visited-');
+    }
+  }
+}

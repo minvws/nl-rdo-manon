@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------*/
+/*------------------ link-active-variables.scss -----------------*/
+/*---------------------------------------------------------------*/
+
+@use "mixins/link";
+@use "mixins/outline";
+
+:root {
+  /* Active */
+  @include link.styling-variables('link-active-', 'link-');
+  @include outline.outline-variables('link-active-', 'link-');
+
+  /* Icon */
+  --link-active-icon-background-color: var(--link-active-background-color);
+  --link-active-icon-text-color: var(--link-active-text-color);
+  --link-active-icon-text-decoration: var(--link-icon-text-decoration);
+}

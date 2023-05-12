@@ -1,0 +1,15 @@
+/*---------------------------------------------------------------*/
+/*--------- footer-navigation-link-visited-variables.scss -------*/
+/*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
+:root {
+  /* Visited */
+  @include link.styling-variables('footer-navigation-link-visited-', 'navigation-link-visited-');
+
+  /* Icon */
+  --footer-navigation-link-visited-icon-background-color: var(--footer-navigation-link-visited-background-color);
+  --footer-navigation-link-visited-icon-text-color: var(--footer-navigation-link-visited-text-color);
+  --footer-navigation-link-visited-icon-text-decoration: var(--footer-navigation-link-icon-text-decoration);
+}

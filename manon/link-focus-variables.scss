@@ -1,0 +1,18 @@
+/*---------------------------------------------------------------*/
+/*------------------- link-focus-variables.scss -----------------*/
+/*---------------------------------------------------------------*/
+
+@use "mixins/link";
+@use "mixins/outline";
+
+:root {
+  /* Focus */
+  @include link.styling-variables('link-focus-', 'link-');
+  @include outline.outline-variables('link-focus-', 'link-');
+
+
+  /* Icon */
+  --link-focus-icon-background-color: var(--link-focus-background-color);
+  --link-focus-icon-text-color: var(--link-focus-text-color);
+  --link-focus-icon-text-decoration: var(--link-icon-text-decoration);
+}

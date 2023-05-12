@@ -1,0 +1,16 @@
+/*---------------------------------------------------------------*/
+/*------------------- footer-link-focus.scss --------------------*/
+/*---------------------------------------------------------------*/
+@use "footer-link-focus-variables";
+@use "mixins/link";
+
+body > footer,
+%footer-style {
+  a {
+    &:focus,
+    &.focus /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('footer-link-focus-');
+    }
+  }
+}

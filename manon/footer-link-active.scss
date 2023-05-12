@@ -2,36 +2,15 @@
 /*-------------------- footer-link-active.scss ------------------*/
 /*---------------------------------------------------------------*/
 @use "footer-link-active-variables";
+@use "mixins/link";
 
 body > footer,
 %footer-style {
-    nav {
-        a {
-            &:active,
-            &.active /* Testing purposes */ {
-                background-color: var(--footer-link-active-background-color);
-                color: var(--footer-link-active-text-color);
-                text-decoration: var(--footer-link-active-text-decoration);
-
-                &:before {
-                    background-color: var(--footer-link-icon-active-background-color);
-                    color: var(--footer-link-icon-active-text-color);
-                    text-decoration: var(--footer-link-icon-active-text-decoration);
-                }
-
-                &:hover,
-                &.hover /* Testing purposes */ {
-                    background-color: var(--footer-link-active-hover-background-color);
-                    color: var(--footer-link-active-hover-text-color);
-                    text-decoration: var(--footer-link-active-hover-text-decoration);
-                    
-                    &:before {
-                        background-color: var(--footer-link-icon-active-hover-background-color);
-                        color: var(--footer-link-icon-active-hover-text-color);
-                        text-decoration: var(--footer-link-icon-active-hover-text-decoration);
-                    }
-                }
-            }
-        }
+  a {
+    &:active,
+    &.active /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('footer-link-active-');
     }
+  }
 }

@@ -1,0 +1,16 @@
+/*---------------------------------------------------------------*/
+/*-------------------- header-link-active.scss ------------------*/
+/*---------------------------------------------------------------*/
+@use "header-link-active-variables";
+@use "mixins/link";
+
+body > header,
+%header-style {
+  a {
+    &:active,
+    &.active /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('header-link-active-');
+    }
+  }
+}

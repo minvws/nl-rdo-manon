@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------*/
+/*--------------- footer-link-visited-variables.scss ------------*/
+/*---------------------------------------------------------------*/
+
+@use "mixins/link";
+@use "mixins/outline";
+
+:root {
+  /* Visited */
+  @include link.styling-variables('link-visited-', 'link-');
+  @include outline.outline-variables('link-visited-', 'link-');
+
+  /* Icon visited */
+  --link-visited-icon-background-color: var(--link-visited-background-color);
+  --link-visited-icon-text-color: var(--link-visited-text-color);
+  --link-visited-icon-text-decoration: var(--link-icon-text-decoration);
+}

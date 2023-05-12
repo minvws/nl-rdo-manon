@@ -2,49 +2,40 @@
 /*-------------- header-navigation-link-active.scss -------------*/
 /*---------------------------------------------------------------*/
 @use "header-navigation-link-active-variables";
+@use "mixins/link";
+
+%header-navigation-link-active-styling {
+  a {
+    /* aria current on a */
+    &[aria-current="page"] {
+      @include link.link('header-navigation-link-active-');
+    }
+
+    &:active,
+    &.active /* Testing purposes */
+    {
+      @include link.link-and-icon-styling('header-navigation-link-active-');
+    }
+  }
+}
 
 body > header,
 %header-navigation-style {
-    nav {
-        a {
-            &:active,
-            &.active /* Testing purposes */ {
-                background-color: var(--header-navigation-link-active-background-color);
-                color: var(--header-navigation-link-active-text-color);
-                text-decoration: var(--header-navigation-link-active-text-decoration);
+  nav {
+    @extend %header-navigation-link-active-styling;
 
-                &:before {
-                    background-color: var(--header-navigation-link-icon-active-background-color);
-                    color: var(--header-navigation-link-icon-active-text-color);
-                    text-decoration: var(--header-navigation-link-icon-active-text-decoration);
-                }
+    ul,
+    ol {
+      li {
+        @extend %header-navigation-link-active-styling;
 
-                &:hover,
-                &.hover /* Testing purposes */ {
-                    background-color: var(--header-navigation-link-active-hover-background-color);
-                    color: var(--header-navigation-link-active-hover-text-color);
-                    text-decoration: var(--header-navigation-link-active-hover-text-decoration);
-                    
-                    &:before {
-                        background-color: var(--header-navigation-link-icon-active-hover-background-color);
-                        color: var(--header-navigation-link-icon-active-hover-text-color);
-                        text-decoration: var(--header-navigation-link-icon-active-hover-text-decoration);
-                    }
-                }
-
-                &:visited,
-                &.visited {
-                    background-color: var(--header-navigation-link-active-visited-background-color);
-                    color: var(--header-navigation-link-active-visited-text-color);
-                    text-decoration: var(--header-navigation-link-active-visited-text-decoration);
-
-                    &:before {
-                        background-color: var(--header-navigation-link-icon-active-visited-background-color);
-                        color: var(--header-navigation-link-icon-active-visited-text-color);
-                        text-decoration: var(--header-navigation-link-icon-active-visited-text-decoration);
-                    }
-                }
-            }
+        &[aria-current="page"] {
+          > a,
+          > a:visited {
+            @include link.link('header-navigation-link-active-');
+          }
         }
+      }
     }
+  }
 }
