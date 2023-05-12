@@ -53,6 +53,17 @@ form.horizontal-view {
       }
     }
 
+    /* Notifications */
+    &.error,
+    &.warning,
+    &.explanation,
+    &.confirmation,
+    &.system {
+      > * {
+        max-width: 100%;
+      }
+    }
+
     &.radio-button {
       gap: var(--form-radio-margin-right);
 
