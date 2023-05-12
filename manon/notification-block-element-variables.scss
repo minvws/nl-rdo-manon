@@ -6,7 +6,7 @@
   --notification-block-element-align-items: var(--content-align-items);
   --notification-block-element-justify-content: var(--content-justify-content);
   --notification-block-element-position: relative;
-  --notification-block-element-width: var(--notification-base-width, 100%);
+  --notification-block-element-width: var(--notification-width, 100%);
   --notification-block-element-padding-top: 0;
   --notification-block-element-padding-right: var(--page-whitespace-right);
   --notification-block-element-padding-bottom: 0;

@@ -2,14 +2,8 @@
 /*------------- notification-system-variables.scss --------------*/
 /*---------------------------------------------------------------*/
 @use "colors/notification-colors";
+@use "mixins/notification-type";
 
 :root {
-  --notification-system-background-color: var(--system-background-color);
-  --notification-system-border-width: var(--notification-base-border-width);
-  --notification-system-border-style: var(--notification-base-border-style);
-  --notification-system-border-color: var(--system-border-color);
-
-  /* Icon as before or after */
-  /* --notification-system-icon-before-content: ; */
-  /* --notification-system-icon-before-content: ; */
+  @include notification-type.notification-type-variables("system");
 }

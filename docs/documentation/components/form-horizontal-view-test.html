@@ -26,7 +26,7 @@
         <div>
           <ul>
             <li><a href="../components.html">Componenten</a></li>
-            <li><a href="./forms.html" aria-current="page">Formulieren</a></li>
+            <li><a href="./forms.html">Formulieren</a></li>
             <li>
               <a href="./form-horizontal-view.html">Horizontaal uitgelijnd</a>
             </li>
@@ -109,6 +109,7 @@
               <li><a href="#fieldset">Fieldset</a></li>
             </ul>
           </li>
+          <li><a href="#button-container">Gegroepeerde buttons</a></li>
         </ul>
       </nav>
       <article>
@@ -745,6 +746,47 @@
               </code>
             </pre>
 
+            <h3 id="button-container">Gegroepeerde knoppen</h3>
+            <h4 id="button-container-base">Basisweergave</h4>
+            <h5>Visueel voorbeeld:</h5>
+
+            <form action="" method="post" class="horizontal-view">
+              <div>
+                <label for="form-example-base">Voorbeeld text input</label>
+                <input
+                  id="form-example-base"
+                  name="form-example-base"
+                  placeholder="voorbeeld text input"
+                  type="text"
+                />
+              </div>
+              <div class="button-container">
+                <button>Cancel</button>
+                <button type="submit">Verzend</button>
+              </div>
+            </form>
+
+            <h5>HTML-voorbeeld:</h5>
+            <pre>
+              <code>
+&lt;form action="" method="post" class="horizontal-view">
+  &lt;div>
+    &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
+    &lt;input
+      id="form-example-base"
+      name="form-example-base"
+      placeholder="voorbeeld text input"
+      type="text"
+    />
+  &lt;/div>
+  &lt;div class="button-container">
+    &lt;button>Cancel&lt;/button>
+    &lt;button type="submit">Verzend&lt;/button>
+  &lt;/div>
+&lt;/form>
+              </code>
+            </pre>
+
             <h4 id="color-picker-required">Verplicht</h4>
             <h5>Visueel voorbeeld:</h5>
 
@@ -778,8 +820,17 @@
             <h2 id="fieldset"><code>fieldset</code></h2>
             <h3>Visueel voorbeeld:</h3>
             <form action="" method="post" class="horizontal-view">
+              <div class="explanation" role="group" aria-label="toelichting">
+                <span>Toelichting:</span>
+                <p>Dit is een voorbeeld van een notificatie direct binnen het formulier.</p>
+              </div>
               <fieldset>
                 <legend>Invoervelden</legend>
+
+                <div class="explanation" role="group" aria-label="toelichting">
+                  <span>Toelichting:</span>
+                  <p>Dit is een voorbeeld van een notificatie direct binnen een fieldset.</p>
+                </div>
                 
                 <div>
                   <label for="form-example-base">Voorbeeld text input</label>
@@ -1040,6 +1091,51 @@
     &lt;/div>
   &lt;/fieldset>
   &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h3 id="button-container">Gegroepeerde knoppen binnen fieldset</h3>
+            <h4 id="button-container-base">Basisweergave</h4>
+            <h5>Visueel voorbeeld:</h5>
+
+            <form action="" method="post" class="horizontal-view">
+              <fieldset>
+                <legend>Lorem ipsum</legend>
+                <div>
+                  <label for="form-example-base">Voorbeeld text input</label>
+                  <input
+                    id="form-example-base"
+                    name="form-example-base"
+                    placeholder="voorbeeld text input"
+                    type="text"
+                  />
+                </div>
+
+                <div class="button-container">
+                  <button>Cancel</button>
+                  <button type="submit">Verzend</button>
+                </div>
+              </fieldset>
+            </form>
+
+            <h5>HTML-voorbeeld:</h5>
+            <pre>
+              <code>
+&lt;form action="" method="post" class="horizontal-view">
+  &lt;div>
+    &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
+    &lt;input
+      id="form-example-base"
+      name="form-example-base"
+      placeholder="voorbeeld text input"
+      type="text"
+    />
+  &lt;/div>
+  &lt;div class="button-container">
+    &lt;button>Cancel&lt;/button>
+    &lt;button type="submit">Verzend&lt;/button>
+  &lt;/div>
 &lt;/form>
               </code>
             </pre>

@@ -14,9 +14,9 @@
 
   --header-navigation-margin: 0;
   --header-navigation-padding-top: 0;
-  --header-navigation-padding-right: var(--content-padding-right, 1rem);
+  --header-navigation-padding-right: var(--page-whitespace-right);
   --header-navigation-padding-bottom: 0;
-  --header-navigation-padding-left: var(--content-padding-left, 1rem);
+  --header-navigation-padding-left: var(--page-whitespace-left);
 
   --header-navigation-border-width: 0;
   --header-navigation-border-style: solid;
@@ -27,13 +27,6 @@
 
   --header-navigation-background-color: var(--application-base-accent-color, #fff);
   --header-navigation-text-color: var(--application-base-accent-color-text-color);
-
-  /* Content wrapper - Usualy a div to match main content alignment */
-  --header-navigation-content-wrapper-padding-top: 0;
-  --header-navigation-content-wrapper-padding-right: 0;
-  --header-navigation-content-wrapper-padding-bottom: 0;
-  --header-navigation-content-wrapper-padding-left: 0;
-  --header-navigation-content-wrapper-max-width: var(--content-max-width);
 
   /* List */
   --header-navigation-list-gap: 1rem;
@@ -76,4 +69,12 @@
   --header-navigation-button-font-size: var(--button-base-font-size, var(--application-base-font-size));
   --header-navigation-button-line-height: var(--button-base-line-height, var(--application-base-line-height));
   --header-navigation-button-font-weight: var(--button-base-font-weight, var(--application-base-font-weight));
+
+  /* Button hover */
+  --header-navigation-button-hover-background-color: var(--header-navigation-button-background-color);
+  --header-navigation-button-hover-text-color: var(--header-navigation-button-text-color);
+  --header-navigation-button-hover-border-width: var(--header-navigation-button-border-width);
+  --header-navigation-button-hover-border-style: var(--header-navigation-button-border-style);
+  --header-navigation-button-hover-border-color: var(--header-navigation-button-border-color);
+  --header-navigation-button-hover-border-radius: var(--header-navigation-button-border-radius);
 }

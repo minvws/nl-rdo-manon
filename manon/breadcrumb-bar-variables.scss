@@ -7,9 +7,9 @@
   --breadcrumb-bar-align-items: center;
   --breadcrumb-bar-gap: 0;
   --breadcrumb-bar-padding-top: 0;
-  --breadcrumb-bar-padding-right: 0;
+  --breadcrumb-bar-padding-right: var(--page-whitespace-right);
   --breadcrumb-bar-padding-bottom: 0;
-  --breadcrumb-bar-padding-left: 0;
+  --breadcrumb-bar-padding-left: var(--page-whitespace-left);
   --breadcrumb-bar-max-width: 100%;
   --breadcrumb-bar-background-color: var(--branding-color-accent-5);
   --breadcrumb-bar-text-color: var(--application-base-text-color);

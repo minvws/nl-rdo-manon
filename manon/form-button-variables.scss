@@ -2,18 +2,23 @@
 /*------------------------- form-button-variables.scss -------------------*/
 /*------------------------------------------------------------------------*/
 :root {
+  --form-button-align-self: var(--button-base-align-self);
+
   --form-button-min-width: var(--button-base-min-width);
+  
   --form-button-padding-top: var(--button-base-padding-top);
   --form-button-padding-right: var(--button-base-padding-right);
   --form-button-padding-bottom: var(--button-base-padding-bottom);
   --form-button-padding-left: var(--button-base-padding-left);
+
   --form-button-background-color: var(--button-base-background-color);
   --form-button-color: var(--button-base-text-color);
+
   --form-button-font-size: var(--application-base-font-size);
   --form-button-line-height: var(--text-base-line-height);
   --form-button-font-weight: var(--text-base-font-weight);
+  
   --form-button-border-width: var(--button-base-border-width);
   --form-button-border-style: var(--button-base-border-style);
   --form-button-border-color: var(--button-base-border-color);
-  --form-button-align-self: var(--button-base-align-self);
 }

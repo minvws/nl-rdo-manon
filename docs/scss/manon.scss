@@ -68,9 +68,7 @@
 
 /* Fundamentals */
 @use "@minvws/manon/checkbox";
-@use "@minvws/manon/fieldset-checkbox";
 @use "@minvws/manon/radio";
-@use "@minvws/manon/fieldset-radio";
 
 /* Layout */
 /*@use "@minvws/manon/layout-base-variables";*/
@@ -218,23 +216,32 @@
 @use "@minvws/manon/form-combined-field";
 @use "@minvws/manon/form-help";
 
+
 /* Fieldset */
 @use "@minvws/manon/form-fieldset";
 @use "@minvws/manon/form-fieldset-visually-hidden";
 @use "@minvws/manon/form-horizontal-view-fieldset";
 @use "@minvws/manon/form-fieldset-visually-hidden-horizontal-view";
 @use "@minvws/manon/form-fieldset-visually-hidden-help";
+@use "@minvws/manon/form-fieldset-checkbox";
+@use "@minvws/manon/form-fieldset-radio";
 
 /* Notifications */
-@use "@minvws/manon/notification-base";
+@use "@minvws/manon/notification";
 @use "@minvws/manon/notification-block-element";
 @use "@minvws/manon/notification-paragraph";
 @use "@minvws/manon/notification-table";
 @use "@minvws/manon/notification-error";
+@use "@minvws/manon/notification-error-page";
 @use "@minvws/manon/notification-warning";
+@use "@minvws/manon/notification-warning-page";
 @use "@minvws/manon/notification-explanation";
+@use "@minvws/manon/notification-explanation-page";
 @use "@minvws/manon/notification-confirmation";
+@use "@minvws/manon/notification-confirmation-page";
 @use "@minvws/manon/notification-system-message";
+@use "@minvws/manon/notification-system-page";
+@use "@minvws/manon/notification-form";
 
 /* Dividers */
 /* @use "@minvws/manon/divider-lines-base-variables"; */

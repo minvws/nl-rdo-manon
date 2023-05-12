@@ -9,8 +9,8 @@
     --breadcrumb-bar-content-wrapper-align-items: var(--content-align-items);
     --breadcrumb-bar-content-wrapper-gap: var(--content-gap);
     --breadcrumb-bar-content-wrapper-padding-top: 0;
-    --breadcrumb-bar-content-wrapper-padding-right: var(--page-whitespace-right);
+    --breadcrumb-bar-content-wrapper-padding-right: var(--content-padding-right, 1rem);
     --breadcrumb-bar-content-wrapper-padding-bottom: 0;
-    --breadcrumb-bar-content-wrapper-padding-left: var(--page-whitespace-left);
-    --breadcrumb-bar-content-wrapper-max-width: 100%;
+    --breadcrumb-bar-content-wrapper-padding-left:  var(--content-padding-left, 1rem);
+    --breadcrumb-bar-content-wrapper-max-width: var(--content-max-width, 100%);
 }
