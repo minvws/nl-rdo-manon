@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------*/
+/*---------------- notification-confirmation.scss ---------------*/
+/*---------------------------------------------------------------*/
+@use "notification";
+@use "notification-confirmation-page-variables";
+@use "mixins/notification-type";
+
+main  {
+    > section,
+    > article,
+    > div {
+        &.confirmation {
+            @include notification.notification;
+            @include notification-type.notification-page-type("confirmation");
+        }
+    }
+}

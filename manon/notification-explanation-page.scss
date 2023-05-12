@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------*/
+/*---------------- notification-explanation.scss ----------------*/
+/*---------------------------------------------------------------*/
+@use "notification";
+@use "notification-explanation-page-variables";
+@use "mixins/notification-type";
+
+main  {
+    > section,
+    > article,
+    > div {
+        &.explanation {
+            @include notification.notification;
+            @include notification-type.notification-page-type("explanation");
+        }
+    }
+}

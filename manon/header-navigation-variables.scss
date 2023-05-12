@@ -14,9 +14,9 @@
 
   --header-navigation-margin: 0;
   --header-navigation-padding-top: 0;
-  --header-navigation-padding-right: 0;
+  --header-navigation-padding-right: var(--page-whitespace-right);
   --header-navigation-padding-bottom: 0;
-  --header-navigation-padding-left: 0;
+  --header-navigation-padding-left: var(--page-whitespace-left);
 
   --header-navigation-border-width: 0;
   --header-navigation-border-style: solid;
@@ -28,13 +28,6 @@
   --header-navigation-background-color: var(--application-base-accent-color, #fff);
   --header-navigation-text-color: var(--application-base-accent-color-text-color);
   
-  /* Content wrapper - Usualy a div to match main content alignment */
-  --header-navigation-content-wrapper-padding-top: 0;
-  --header-navigation-content-wrapper-padding-right: 0;
-  --header-navigation-content-wrapper-padding-bottom: 0;
-  --header-navigation-content-wrapper-padding-left: 0;
-  --header-navigation-content-wrapper-max-width: var(--content-max-width);
-
   /* List */
   --header-navigation-list-gap: 1rem;
   --header-navigation-list-justify-content: var(--header-navigation-justify-content);
