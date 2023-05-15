@@ -4,5 +4,5 @@
 :root {
   --image-square-object-position: center;
   --image-square-max-width: 20rem;
-  --image-square-border-radius: --application-base-border-radius;
+  --image-square-border-radius: var(--application-base-border-radius);
 }
