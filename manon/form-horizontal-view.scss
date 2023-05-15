@@ -59,6 +59,11 @@ form.horizontal-view {
     &.explanation,
     &.confirmation,
     &.system {
+      flex-direction: var(--form-horizontal-view-notification-block-element-flex-direction);
+      justify-content: var(--form-horizontal-view-notification-block-element-justify-content);
+      align-items: var(--form-horizontal-view-notification-block-element-align-items);
+      gap: var(--form-horizontal-view-notification-block-element-gap);
+
       > * {
         max-width: 100%;
       }

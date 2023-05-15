@@ -192,31 +192,16 @@
               Voor meer informatie over importeren en instellen van componenten. Zie:
               <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
             </p>
-            <h3>Benodigd</h3>
-            <ul>
-              <li><code>notification/notification.scss</code></li>
-              <li><code>notification/notification-block-element.scss</code></li>
-              <li>
-                Bestanden behorend bij de gewenste notificatie type(s). Voor de beschikbare types
-                zie:
-                <a href="notifications.html#notification-types">Beschikbare weergaven</a>
-              </li>
-            </ul>
 
-            <h3>Optioneel</h3>
-            <ul>
-              <li>
-                <code>notification/notification-variables.scss</code>
-              </li>
-              <li>
-                <code>notification/notification-page-notification-variables.scss</code>
-              </li>
-              <li>
-                Variabelenbestanden behorend bij de gewenste notificatie type(s). Voor de
-                beschikbare types zie:
-                <a href="notifications.html#notification-types">Beschikbare weergaven</a>
-              </li>
-            </ul>
+            <h3>Importeer component via NPM</h3>
+
+            <h4>CSS-voorbeeld:</h4>
+            <pre>
+              <code>
+@use "@minvws/manon/notification";
+@use "@minvws/manon/notification-block-element";
+              </code>
+            </pre>
           </section>
 
           <section id="variables">
