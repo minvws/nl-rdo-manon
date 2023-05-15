@@ -68,6 +68,7 @@ body > header,
     width: 100%;
     min-height: var(--header-navigation-min-height);
     position: var(--header-navigation-position);
+    white-space: var(--header-navigation-white-space);
 
     ul,
     ol {
