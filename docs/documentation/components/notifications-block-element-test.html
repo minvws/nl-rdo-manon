@@ -719,6 +719,55 @@
               </code>
             </pre>
 
+            <h3>Blocknotificatie binnen fieldset in horizontaal uitgelijnd formulier</h3>
+            <h4>Toelichting:</h4>
+            <h5>Visueel voorbeeld:</h5>
+
+            <form action="" method="post" class="horizontal-view">
+              <fieldset>
+                <legend>Test voor bloknotificatie</legend>
+
+                <div class="explanation" role="group" aria-label="toelichting">
+                  <span>Toelichting:</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+  
+                <div>
+                  <label for="form-example-base">Voorbeeld text input</label>
+                  <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+                </div>
+              </fieldset>
+              
+              <button type="submit">Verzend</button>
+            </form>
+
+            <h5>Html-voorbeeld:</h5>
+            <pre>
+              <code>
+&lt;form action="" method="post" class="horizontal-view">
+  &lt;fieldset>
+    &lt;legend>Test voor bloknotificatie&lt;/legend>
+
+    &lt;div class="explanation" role="group" aria-label="toelichting">
+      &lt;span>Toelichting:&lt;/span>
+      &lt;p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div>
+      &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
+      &lt;input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+    &lt;/div>
+  &lt;/fieldset>
+  
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
             <h3>Blocknotificatie binnen horizontaal uitgelijnd formulier met helpteksten</h3>
             <h4>Toelichting:</h4>
             <h5>Visueel voorbeeld:</h5>
