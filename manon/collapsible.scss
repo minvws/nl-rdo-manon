@@ -32,7 +32,7 @@
         background-color: var(--collapsing-element-background-color);
         color: var(--collapsing-element-text-color);
 
-        -webkit-box-shadow: var(-collapsing-element-box-shadow);
+        -webkit-box-shadow: var(--collapsing-element-box-shadow);
         box-shadow: var(--collapsing-element-box-shadow);
 
         position: absolute;
