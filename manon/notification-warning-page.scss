@@ -5,13 +5,21 @@
 @use "notification-warning-page-variables";
 @use "mixins/notification-type";
 
+%notifictions-warning-page-styling {
+    @include notification.notification;
+    @include notification-type.notification-page-type("warning");
+}
+
 main  {
+    &.warning {
+        @extend %notifictions-warning-page-styling;
+    }
+
     > section,
     > article,
     > div {
         &.warning {
-            @include notification.notification;
-            @include notification-type.notification-page-type("warning");
+            @extend %notifictions-warning-page-styling;
         }
     }
 }

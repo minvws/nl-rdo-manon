@@ -5,13 +5,21 @@
 @use "notification-explanation-page-variables";
 @use "mixins/notification-type";
 
+%notifictions-explanation-page-styling {
+    @include notification.notification;
+    @include notification-type.notification-page-type("explanation");
+}
+
 main  {
+    &.explanation {
+        @extend %notifictions-explanation-page-styling;
+    }
+
     > section,
     > article,
     > div {
         &.explanation {
-            @include notification.notification;
-            @include notification-type.notification-page-type("explanation");
+            @extend %notifictions-explanation-page-styling;
         }
     }
 }
