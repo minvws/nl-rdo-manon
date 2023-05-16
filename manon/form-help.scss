@@ -17,6 +17,7 @@ form.help {
     position: relative;
 
     .help-button {
+      display: flex;
       position: absolute;
       top: var(--form-help-button-top);
       right: var(--form-help-button-right, auto);
@@ -78,9 +79,11 @@ form.help {
 
     .help-button {
       margin: 0;
+      display: block;
 
       &:before {
         margin: 0;
+        width: 100%;
       }
     }
   }
