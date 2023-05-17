@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --ignore-scripts
 
-      - name: NPM Audit
+      - name: npm audit
         run: npm audit
         working-directory: ./manon
 
