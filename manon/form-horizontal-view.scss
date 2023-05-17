@@ -76,6 +76,15 @@ form.horizontal-view {
       }
     }
 
+    &.checkbox,
+    &.radio {
+      justify-content: flex-start;
+
+      > .nota-bene {
+        margin-left: $label-column;
+      }
+    }
+
     /* Notifications */
     &.error,
     &.warning,

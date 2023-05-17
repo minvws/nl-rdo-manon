@@ -36,8 +36,8 @@ form {
     &.required {
       flex-direction: column;
       gap: var(--radio-required-gap);
-      align-items: var(--radio-align-items);
-      justify-content: var(--radio-justify-content);
+      align-items: flex-start;
+      justify-content: var(--radio-align-items); /* Using alignment value because the flex direction is column */
 
       > div {
         padding: 0;

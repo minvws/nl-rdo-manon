@@ -36,8 +36,8 @@ form {
     &.required {
       flex-direction: column;
       gap: var(--checkbox-required-gap);
-      align-items: flex-start;
-      justify-content: var(--checkbox-align-items);
+      align-items: var(--checkbox-align-items);
+      justify-content: var(--checkbox-justify-content);
 
       > div {
         padding: 0;
