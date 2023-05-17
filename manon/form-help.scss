@@ -64,6 +64,11 @@ form.help {
           content: var(--form-help-button-icon-expanded);
         }
       }
+
+      + .explanation {
+        margin-bottom: 0;
+        margin-top: var(--form-help-button-explanation-gap);
+      }
     }
 
     p.explanation.collapsed,
@@ -80,6 +85,10 @@ form.help {
     .help-button {
       margin: 0;
       display: block;
+
+      + .explanation {
+        margin-top: 0;
+      }
 
       &:before {
         margin: 0;

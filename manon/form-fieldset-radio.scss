@@ -19,6 +19,7 @@ form {
                 accent-color: var(--form-fieldset-radio-input-accent-color);
                 margin-right: 0.5rem;
                 margin-top: var(--form-fieldset-radio-input-margin-top);
+                margin-left: 0;
             
                 & + label {
                     width: var(--form-fieldset-radio-label-width);
