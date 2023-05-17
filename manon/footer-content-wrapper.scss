@@ -1,0 +1,22 @@
+/*---------------------------------------------------------------*/
+/*---------------- footer-content-wrapper.scss ------------------*/
+/*---------------------------------------------------------------*/
+@use "footer-content-wrapper-variables";
+
+main footer {
+    div {
+        display: flex;
+        flex-direction: var(--footer-content-wrapper-flex-direction);
+        justify-content: var(--footer-content-wrapper-justify-content);
+        align-items: var(--footer-content-wrapper-align-items);
+        gap: var(--footer-content-wrapper-gap);
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding-top: var(--footer-content-wrapper-padding-top);
+        padding-right: var(--footer-content-wrapper-padding-right);
+        padding-bottom: var(--footer-content-wrapper-padding-bottom);
+        padding-left: var(--footer-content-wrapper-padding-left);
+        max-width: var(--footer-content-wrapper-max-width);
+    }
+}
