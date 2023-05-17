@@ -12,10 +12,14 @@
     "node": ">=16"
   },
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "lint:css": "stylelint \"**/*.scss\"",
+    "lint:css:fix": "npm run lint:css -- --fix"
   },
   "devDependencies": {
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "stylelint": "^15.6.2",
+    "stylelint-config-standard-scss": "^9.0.0"
   },
   "repository": {
     "type": "git",
