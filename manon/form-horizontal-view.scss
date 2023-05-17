@@ -69,7 +69,7 @@ form.horizontal-view {
       }
     }
 
-    &.radio-button {
+    &.radio {
       gap: var(--form-radio-margin-right);
 
       %horizontal-view-radio,
