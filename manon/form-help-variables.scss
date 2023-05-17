@@ -37,6 +37,9 @@
   --form-help-button-icon-font-size: 0.9rem;
   --form-help-button-icon-font-weight: bold;
 
+  /* Explanation */
+  --form-help-button-explanation-gap: var(--notification-form-fields-gap);
+  
   /* To center text within the button set the line-height to 1 */
   --form-help-button-icon-line-height: 1;
 }

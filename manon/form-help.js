@@ -92,7 +92,7 @@ function collapseExplanation(explanation) {
 
   // Insert the button after the .explanation
   if (explanation.nextSibling) {
-    explanation.parentNode.insertBefore(button, explanation.nextSibling);
+    explanation.parentNode.insertBefore(button, explanation);
   } else {
     explanation.parentNode.append(button);
   }
