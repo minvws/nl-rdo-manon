@@ -25,9 +25,9 @@
     --header-navigation-collapsible-menu-order: var(--collapsing-element-order, 0);
 
     --header-navigation-collapsible-background-color: var(--header-navigation-background-color, #fff);
-    --header-navigation-collapsible-text-color: var( --header-navigation-text-color, #000);
+    --header-navigation-collapsible-text-color: var(--header-navigation-text-color, #000);
 
-    --header-navigation-collapsible-box-shadow: var(--collapsing-element-box-shadow, 0px 8px 16px 0px rgba(17,20,22,0.15));
+    --header-navigation-collapsible-box-shadow: var(--collapsing-element-box-shadow, 0px 8px 16px 0px rgba(17, 20, 22, 0.15));
 
     --header-navigation-collapsible-top: var(--collapsing-element-top, 2.8rem);
     --header-navigation-collapsible-right: var(--collapsing-element-right, auto);
@@ -51,7 +51,7 @@
     --header-navigation-collapsible-list-item-first-item-border-width: var(--collapsing-element-list-item-first-item-border-width, 0);
 
     /* Last collapsed list item */
-    --header-navigation-collapsible-list-item-last-item-border-width: var( --collapsing-element-list-item-last-item-border-width, 1px 0);
+    --header-navigation-collapsible-list-item-last-item-border-width: var(--collapsing-element-list-item-last-item-border-width, 1px 0);
 
     /* Link */
     --header-navigation-collapsible-list-item-link-justify-content: var(--collapsing-element-list-item-link-justify-content, flex-start);
@@ -66,12 +66,12 @@
     /* List item collapsed hover */
     --header-navigation-collapsible-list-item-link-hover-background-color: var(--collapsing-element-list-item-link-hover-background-color, #c0c0c0);
     --header-navigation-collapsible-list-item-link-hover-text-color: var(--collapsing-element-list-item-link-hover-text-color, #000);
-    
+    --header-navigation-collapsible-list-item-hover-text-decoration: var(--header-navigation-collapsible-list-item-link-text-decoration);
+
     /* Button */
-    --header-navigation-collapsible-button-background-color: var(--collapsing-element-button-background-color,  var(--application-base-background-color));
+    --header-navigation-collapsible-button-background-color: var(--collapsing-element-button-background-color, var(--application-base-background-color));
     --header-navigation-collapsible-button-font-size: var(--collapsing-element-button-font-size, 0);
-    --header-navigation-collapsible-button-height: var(--collapsing-element-button-height, 2.75rem)
-    --header-navigation-collapsible-button-min-height: var(--collapsing-element-button-min-height, var(--button-base-min-height));
+    --header-navigation-collapsible-button-height: var(--collapsing-element-button-height, 2.75rem) --header-navigation-collapsible-button-min-height: var(--collapsing-element-button-min-height, var(--button-base-min-height));
     --header-navigation-collapsible-button-width: var(--collapsing-element-button-width, 2.75rem);
     --header-navigation-collapsible-button-min-width: var(--collapsing-element-button-min-width, 2.75rem);
 
@@ -83,5 +83,5 @@
     /* Collapsed icon */
     --header-navigation-collapsible-icon-collapsed: "x";
     --header-navigation-collapsible-icon-collapsed-font-size: var(--header-navigation-collapsible-icon-font-size);
-    --header-navigation-collapsible-icon-collapsed-color: var(--header-navigation-collapsible-icon-color); 
+    --header-navigation-collapsible-icon-collapsed-color: var(--header-navigation-collapsible-icon-color);
 }
