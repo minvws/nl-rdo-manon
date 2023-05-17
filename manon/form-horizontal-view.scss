@@ -45,7 +45,6 @@ form.horizontal-view {
 
       > div {
         @extend %horizontal-view-checkbox;
-        gap: 0;
 
         input[type="checkbox"] {
           margin-left: 0;
@@ -53,23 +52,7 @@ form.horizontal-view {
       }
     }
 
-    /* Notifications */
-    &.error,
-    &.warning,
-    &.explanation,
-    &.confirmation,
-    &.system {
-      flex-direction: var(--form-horizontal-view-notification-block-element-flex-direction);
-      justify-content: var(--form-horizontal-view-notification-block-element-justify-content);
-      align-items: var(--form-horizontal-view-notification-block-element-align-items);
-      gap: var(--form-horizontal-view-notification-block-element-gap);
-
-      > * {
-        max-width: 100%;
-      }
-    }
-
-    &.radio-button {
+    &.radio {
       gap: var(--form-radio-margin-right);
 
       %horizontal-view-radio,
@@ -90,6 +73,22 @@ form.horizontal-view {
         input[type="radio"] {
           margin-left: 0;
         }
+      }
+    }
+
+    /* Notifications */
+    &.error,
+    &.warning,
+    &.explanation,
+    &.confirmation,
+    &.system {
+      flex-direction: var(--form-horizontal-view-notification-block-element-flex-direction);
+      justify-content: var(--form-horizontal-view-notification-block-element-justify-content);
+      align-items: var(--form-horizontal-view-notification-block-element-align-items);
+      gap: var(--form-horizontal-view-notification-block-element-gap);
+
+      > * {
+        max-width: 100%;
       }
     }
 

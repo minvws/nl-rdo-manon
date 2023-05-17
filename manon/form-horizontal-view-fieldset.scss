@@ -22,6 +22,9 @@ For more information on the bug see: https://github.com/philipwalton/flexbugs#9-
 and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 
 form.horizontal-view {
+  $label-column: calc(var(--form-horizontal-view-label-max-width) + var(--form-horizontal-view-gap));
+  $input-column: calc(var(--form-horizontal-view-input-max-width) - var(--form-horizontal-view-gap));
+
   > fieldset {
     > div {
       display: block;
@@ -46,14 +49,14 @@ form.horizontal-view {
       
       @media (min-width: $breakpoint) {
         > * {
-          width: calc(var(--form-horizontal-view-input-max-width) - var(--form-horizontal-view-gap));
+          width: $input-column;
           gap: 0; /* resetting gap as it can not be used within fieldsets */
           /* float objects to move inputs into place even when there is no label */
           float: right;
         }
 
         &.button-container {
-          width: calc(var(--form-horizontal-view-input-max-width) - var(--form-horizontal-view-gap));
+          width: $input-column;
           
           button {
             width: auto;
@@ -61,7 +64,6 @@ form.horizontal-view {
           }
         }
        
-
         > div {
           margin-bottom: 0;
         }
@@ -78,6 +80,7 @@ form.horizontal-view {
     .required {
       .nota-bene {
         margin-bottom: var(--form-horizontal-view-fieldset-nota-bene-required-margin-bottom);
+        float: left;
       }
     }
 
@@ -86,9 +89,10 @@ form.horizontal-view {
     }
 
     .checkbox,
-    .radio-button {
-      margin-left: var(--form-horizontal-view-label-max-width);
-      width: var(--form-horizontal-view-input-max-width);
+    .radio {
+      margin-left: 0;
+      width: $input-column;
+      float: right;
 
       .horizontal-view {
         display: block;
@@ -127,7 +131,7 @@ form.horizontal-view {
     &+ input[type="button"],
     &+ input[type="submit"],
     &+ input[type="reset"] {
-      margin-left: calc(var(--form-horizontal-view-fieldset-button-margin-left) + var(--form-horizontal-view-gap)) ;
+      margin-left: $label-column;
     }
   }
 }
