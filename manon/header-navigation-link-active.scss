@@ -5,34 +5,43 @@
 @use "mixins/link";
 
 %header-navigation-link-active-styling {
-  a {
-    /* aria current on a */
-    &[aria-current="page"] {
-      @include link.link('header-navigation-link-active-');
-    }
-
-    &:active,
-    &.active /* Testing purposes */
-    {
-      @include link.link-and-icon-styling('header-navigation-link-active-');
-    }
-  }
+  @include link.link-and-icon-styling('header-navigation-link-active-');
 }
 
-body > header,
+%header-navigation-current-link-active-styling {
+  @include link.link('header-navigation-link-active-');
+}
+
+body>header,
 %header-navigation-style {
   nav {
-    @extend %header-navigation-link-active-styling;
+
+    a,
+    a:active,
+    a.active {
+      @extend %header-navigation-link-active-styling;
+    }
+
+    a[aria-current="page"],
+    a[aria-current="page"]:visited {
+      @extend %header-navigation-current-link-active-styling;
+    }
 
     ul,
     ol {
       li {
-        @extend %header-navigation-link-active-styling;
+
+        a,
+        a:active,
+        a.active {
+          @extend %header-navigation-link-active-styling;
+        }
 
         &[aria-current="page"] {
-          > a,
-          > a:visited {
-            @include link.link('header-navigation-link-active-');
+
+          >a,
+          >a:visited {
+            @extend %header-navigation-current-link-active-styling;
           }
         }
       }

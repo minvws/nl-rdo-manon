@@ -39,7 +39,7 @@
     }
   }
 
-  > span.icon:last-of-type:not(:only-of-type) {
+  >span.icon:last-of-type:not(:only-of-type) {
     font-size: 0;
     padding-right: var(--#{$prefix}icon-last-padding-right);
     padding-left: var(--#{$prefix}icon-last-padding-left);
@@ -47,17 +47,17 @@
 }
 
 @mixin link-elements-styling($prefix) {
-  > h1,
-  > h2,
-  > h3,
-  > h4,
-  > h5,
-  > h6 {
+
+  >h1,
+  >h2,
+  >h3,
+  >h4,
+  >h5,
+  >h6 {
     @include link-and-icon-styling($prefix);
     @content;
   }
 }
-
 
 @mixin styling-variables($prefix, $parentPrefix) {
   --#{$prefix}font-size: var(--#{$parentPrefix}font-size);

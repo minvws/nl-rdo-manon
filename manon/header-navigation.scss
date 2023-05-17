@@ -3,7 +3,7 @@
 /*---------------------------------------------------------------*/
 @use "header-navigation-variables";
 
-body > header,
+body>header,
 %header-navigation-style {
   width: 100%;
   box-sizing: border-box;
@@ -12,24 +12,24 @@ body > header,
   a.button,
   input[type="button"],
   input[type="submit"],
-  input[type="reset"]  {
+  input[type="reset"] {
     justify-content: var(--header-navigation-button-justify-content);
     align-self: var(--header-navigation-button-align-self);
     min-width: var(--header-navigation-button-min-width);
     min-height: var(--header-navigation-button-min-height);
-  
+
     background-color: var(--header-navigation-button-background-color);
     color: var(--header-navigation-button-text-color);
-  
+
     font-size: var(--header-navigation-button-font-size);
     font-weight: var(--header-navigation-button-font-weight);
     line-height: var(--header-navigation-button-line-height);
-  
+
     border-width: var(--header-navigation-button-border-width);
     border-style: var(--header-navigation-button-border-style);
     border-color: var(--header-navigation-button-border-color);
     border-radius: var(--header-navigation-button-border-radius);
-  
+
     padding-top: var(--header-navigation-button-padding-top);
     padding-right: var(--header-navigation-button-padding-right);
     padding-bottom: var(--header-navigation-button-padding-bottom);
@@ -92,7 +92,8 @@ body > header,
         padding: var(--header-navigation-list-item-padding);
 
         &:before {
-          display: none; /* Preventing default nav before to show up */
+          display: none;
+          /* Preventing default nav before to show up */
         }
 
         a {
@@ -105,20 +106,6 @@ body > header,
           padding-left: var(--header-navigation-link-padding-left);
           min-height: var(--header-navigation-link-min-height);
           height: 100%;
-          font-size: var(--header-navigation-link-font-size);
-          line-height: var(--header-navigation-link-line-height);
-          font-weight: var(--header-navigation-link-font-weight);
-          border-width: var(--header-navigation-link-border-width);
-          border-style: var(--header-navigation-link-border-style);
-          border-color: var(--header-navigation-link-border-color);
-          border-radius: var(--header-navigation-link-border-radius);
-
-          &:hover {
-            border-width: var(--header-navigation-link-hover-border-width);
-            border-style: var(--header-navigation-link-hover-border-style);
-            border-color: var(--header-navigation-link-hover-border-color);
-            border-radius: var(--header-navigation-link-hover-border-radius);
-          }
         }
       }
     }
