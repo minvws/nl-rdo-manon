@@ -30,22 +30,6 @@ form.horizontal-view {
       margin-bottom: var(--form-base-gap);
       /* Adds margin instead of gap */
 
-      &.button-container {
-        width: 100%;
-        max-width: 100%;
-        float: right;
-
-        /* Countering margin bottom that will be set by buttons on the last line */
-        margin-bottom: calc(var(--form-base-gap) * -1);
-
-        button {
-          width: 100%;
-          float: left;
-          margin-right: var(--form-base-gap);
-          margin-bottom: var(--form-base-gap);
-        }
-      }
-
       @media (min-width: $breakpoint) {
         >* {
           width: var(--input-column);
@@ -53,15 +37,6 @@ form.horizontal-view {
           /* resetting gap as it can not be used within fieldsets */
           /* float objects to move inputs into place even when there is no label */
           float: right;
-        }
-
-        &.button-container {
-          width: var(--input-column);
-
-          button {
-            width: auto;
-            margin-bottom: var(--form-base-gap);
-          }
         }
 
         >div {
@@ -78,9 +53,8 @@ form.horizontal-view {
     }
 
     .required {
-
       .nota-bene {
-        margin-bottom: var(--form-horizontal-view-fieldset-nota-bene-required-margin-bottom);
+        margin-bottom: var(--form-base-required-gap);
         float: left;
       }
     }
@@ -114,7 +88,6 @@ form.horizontal-view {
 
       label {
         margin-top: 0;
-        background-color: pink;
         display: block;
         float: left;
       }
@@ -133,12 +106,19 @@ form.horizontal-view {
 
     .checkbox input[type=checkbox]+label {
       max-width: calc(100% - var(--form-fieldset-checkbox-width));
-      background-color: green;
     }
 
     .radio input[type=radio]+label {
       max-width: calc(100% - var(--radio-input-width));
-      background-color: purple;
+    }
+
+    >button,
+    >a.button,
+    >input[type="button"],
+    >input[type="submit"],
+    >input[type="reset"],
+    >a {
+      margin-left: var(--label-column);
     }
 
     &+button,

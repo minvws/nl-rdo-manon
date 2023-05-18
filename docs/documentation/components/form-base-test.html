@@ -421,7 +421,6 @@
                 <label for="checkbox-example-list-4">Lorem ipsum dolor set amet</label>
               </div>
             </fieldset>
-            <button type="submit">Verzend</button>
 
             <div class="radio">
               <input type="radio" id="radio-example-default-1" name="standaard-radiobutton" value="value">
@@ -431,6 +430,16 @@
             <div class="radio">
               <input type="radio" id="radio-example-checked-1" name="standaard-radiobutton" value="value" checked>
               <label for="radio-example-checked-1">Lorem ipsum dolor set amet</label>
+            </div>
+
+            <div>
+              <div class="radio">
+                <input type="radio" id="radio-example-checked-1-notification" name="standaard-radiobutton" value="value"
+                  checked>
+                <label for="radio-example-checked-1-notification">Lorem ipsum dolor set amet</label>
+              </div>
+              <p class="error" id="radio-example-checked-1-notification-message"><span>Foutmelding</span> Lorem ipsum
+              </p>
             </div>
 
             <div>
@@ -670,7 +679,6 @@
                 <option value="Dinosaurus">Dinosaurus</option>
               </optgroup>
             </select>
-            <button>Test button</button>
             <a href="">Link within form test</a>
 
             <div class="button-container">
@@ -903,10 +911,13 @@
 
             <div class="required">
               <label for="text-form-username-1">Gebruikersnaam</label>
-              <input id="text-form-username-1" name="text-form-username-1" pattern="^[a-zA-Z0-9_.-]*$"
-                placeholder="gebruikersnaam" required
-                title="Gebruikersnaam mag alleen alfanumerieke tekens (letters A-Z, cijfers 0-9) bevatten, met uitzondering van onderstrepingstekens."
-                type="text">
+              <div>
+                <span class="nota-bene">Dit veld is verplicht</span>
+                <input id="text-form-username-1" name="text-form-username-1" pattern="^[a-zA-Z0-9_.-]*$"
+                  placeholder="gebruikersnaam" required
+                  title="Gebruikersnaam mag alleen alfanumerieke tekens (letters A-Z, cijfers 0-9) bevatten, met uitzondering van onderstrepingstekens."
+                  type="text">
+              </div>
             </div>
 
             <div>
@@ -1863,7 +1874,7 @@
                 </div>
               </div>
 
-              <button>Test button</button>
+              <button>Test button</button><br>
               <a href="">Link within form test</a>
             </fieldset>
 
@@ -1888,8 +1899,9 @@
           <form method="post">
             <fieldset>
               <legend>Multiple choice radioknoppen en selectievakken test</legend>
-              <div>
-                <span class="nota-bene">Dit veld is verplicht</span>
+              <span class="nota-bene">Dit veld is verplicht</span>
+
+              <div class="checkbox">
                 <input type="checkbox" id="grouped-choice-list-checkbox-1" name="option-1">
                 <label for="grouped-choice-list-checkbox-1">Optie 1</label>
               </div>
@@ -1970,47 +1982,47 @@
           <form method="post" class="horizontal-view">
             <fieldset class="grouped-choice-list">
               <legend>Multiple choice radioknoppen en selectievakken test kolommen</legend>
-              <div class="checkbox required">
+
+              <div class="option-group required">
                 <span class="nota-bene">Dit veld is verplicht</span>
-                <div>
+                <div class="checkbox">
                   <input type="checkbox" id="grouped-choice-list-checkbox-7" name="option-1">
                   <label for="grouped-choice-list-checkbox-7">Enkele optie</label>
                 </div>
               </div>
-              <div class="required">
+
+              <div class=" option-group required">
                 <span class="nota-bene">Dit veld is verplicht</span>
 
-                <div>
+                <div class="checkbox">
                   <input type="checkbox" id="grouped-choice-list-checkbox-8" name="option-1">
                   <label for="grouped-choice-list-checkbox-8">Optie 1</label>
                 </div>
 
-                <div>
+                <div class="checkbox">
                   <input type="checkbox" id="grouped-choice-list-checkbox-9" name="option-2">
                   <label for="grouped-choice-list-checkbox-9">Optie 2</label>
                 </div>
 
-                <div>
+                <div class="checkbox">
                   <input type="checkbox" id="grouped-choice-list-checkbox-10" name="option-3">
                   <label for="grouped-choice-list-checkbox-10">Optie 3</label>
                 </div>
               </div>
 
-              <div>
-                <div>
-                  <input type="checkbox" id="grouped-choice-list-checkbox-11" name="option-1">
-                  <label for="grouped-choice-list-checkbox-11">Optie 1</label>
-                </div>
+              <div class="checkbox">
+                <input type="checkbox" id="grouped-choice-list-checkbox-11" name="option-1">
+                <label for="grouped-choice-list-checkbox-11">Optie 1</label>
+              </div>
 
-                <div>
-                  <input type="checkbox" id="grouped-choice-list-checkbox-12" name="option-2">
-                  <label for="grouped-choice-list-checkbox-12">Optie 2</label>
-                </div>
+              <div class="checkbox">
+                <input type="checkbox" id="grouped-choice-list-checkbox-12" name="option-2">
+                <label for="grouped-choice-list-checkbox-12">Optie 2</label>
+              </div>
 
-                <div>
-                  <input type="checkbox" id="grouped-choice-list-checkbox-13" name="option-3">
-                  <label for="grouped-choice-list-checkbox-13">Optie 3</label>
-                </div>
+              <div class="checkbox">
+                <input type="checkbox" id="grouped-choice-list-checkbox-13" name="option-3">
+                <label for="grouped-choice-list-checkbox-13">Optie 3</label>
               </div>
             </fieldset>
 
@@ -2111,196 +2123,6 @@
                 </div>
               </fieldset>
             </fieldset>
-          </form>
-
-          <h2 id="alternative-select">Alternatieve weergave select</h2>
-          <form method="post">
-            <label for="ro-select-1">Selectielijst</label>
-            <div class="ro-select">
-              <select id="ro-select-1" name="ro-select">
-                <option value="1">Optie 1</option>
-                <option value="2">Optie 2</option>
-                <option value="3">Optie 3</option>
-              </select>
-            </div>
-
-            <label for="ro-select-required-3">Verplichte selectielijst</label>
-            <span class="nota-bene">Dit veld is verplicht</span>
-            <div class="ro-select">
-              <select id="ro-select-required-3" name="ro-select-required-3" required>
-                <option value="">--Please choose an option--</option>
-                <option value="1">Optie 1</option>
-                <option value="2">Optie 2</option>
-                <option value="3">Optie 3</option>
-              </select>
-            </div>
-
-            <label for="ro-select-disabled-1">Uitgeschakelde selectielijst</label>
-            <div class="ro-select">
-              <select disabled id="ro-select-disabled-1" name="ro-select-disabled-1">
-                <option value="1">Optie 1</option>
-                <option value="2">Optie 2</option>
-                <option value="3">Optie 3</option>
-              </select>
-            </div>
-
-            <label for="ro-select-selected-1">Selectielijst met voorgeselecteerde optie</label>
-            <div class="ro-select">
-              <select id="ro-select-selected-1" name="ro-select-selected-1">
-                <option value="1">Optie 1</option>
-                <option value="3">Optie 2</option>
-                <option value="2" selected>Voorgeselecteerd</option>
-              </select>
-            </div>
-
-            <label for="select-mulitple-size-4">Meerdere opties selecteren</label>
-            <div class="explanation" role="group" id="select-mulitple-size-4-message">
-              <span>Toelichting:</span>
-              <p>Het selecteren van meerdere opties hangt af van uw gebruikte systeem. Enkele
-                voorbeelden:</p>
-              <ul>
-                <li>Windows: Houd de <code>ctrl</code>-knop ingedrukt en selecteer met de muis de
-                  gewenste opties.
-                </li>
-                <li>Mac: Houd de <code>cmd</code>-knop ingedrukt en selecteer met de muis de gewenste
-                  opties.
-                </li>
-              </ul>
-            </div>
-
-            <div class="ro-select">
-              <select id="select-mulitple-size-4" name="select-mulitple-size-4" multiple size="3"
-                aria-describedby="select-mulitple-size-4-message">
-                <option value="1">Optie 1</option>
-                <option value="2">Optie 2</option>
-                <option value="3">Optie 3</option>
-                <option value="4">Optie 4</option>
-                <option value="5">Optie 5</option>
-                <option value="6">Optie 6</option>
-              </select>
-            </div>
-
-            <label for="select-optgroup-5">Gegroepeerde opties</label>
-            <div class="ro-select">
-              <select id="select-optgroup-5" name="select-optgroup-5">
-                <optgroup label="Rollende objecten">
-                  <option value="Bal">Bal</option>
-                  <option value="Wiel">Wiel</option>
-                  <option value="Knikker">Knikker</option>
-                </optgroup>
-
-                <optgroup label="Slecht rollende objecten">
-                  <option value="Aambeeld">Aambeeld</option>
-                  <option value="Eiffeltoren">Eiffeltoren</option>
-                  <option value="Dinosaurus">Dinosaurus</option>
-                </optgroup>
-              </select>
-            </div>
-
-            <button type="submit">Verzend</button>
-          </form>
-
-          <h2 id="alternative-select-column">Alternatieve weergave select in kolommen</h2>
-          <form class="horizontal-view" method="post">
-            <div>
-              <label for="ro-select-2">Selectielijst</label>
-              <div class="ro-select">
-                <select id="ro-select-2" name="ro-select">
-                  <option value="1">Optie 1</option>
-                  <option value="2">Optie 2</option>
-                  <option value="3">Optie 3</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="required">
-              <label for="ro-select-required-4">Verplichte selectielijst</label>
-              <div>
-                <span class="nota-bene">Dit veld is verplicht</span>
-                <div class="ro-select">
-                  <select id="ro-select-required-4" name="ro-select-required-4" required>
-                    <option value="">--Please choose an option--</option>
-                    <option value="1">Optie 1</option>
-                    <option value="2">Optie 2</option>
-                    <option value="3">Optie 3</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <label for="ro-select-disabled-2">Uitgeschakelde selectielijst</label>
-              <div class="ro-select">
-                <select disabled id="ro-select-disabled-2" name="ro-select-disabled-2">
-                  <option value="1">Optie 1</option>
-                  <option value="2">Optie 2</option>
-                  <option value="3">Optie 3</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label for="ro-select-selected-2">Selectielijst met voorgeselecteerde optie</label>
-              <div class="ro-select">
-                <select id="ro-select-selected-2" name="ro-select-selected-2">
-                  <option value="1">Optie 1</option>
-                  <option value="3">Optie 2</option>
-                  <option value="2" selected>Voorgeselecteerd</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label for="select-mulitple-size-5">Meerdere opties selecteren</label>
-              <div>
-                <div class="explanation" role="group" id="select-mulitple-size-5-message">
-                  <span>Toelichting:</span>
-                  <p>Het selecteren van meerdere opties hangt af van uw gebruikte systeem. Enkele
-                    voorbeelden:</p>
-                  <ul>
-                    <li>Windows: Houd de <code>ctrl</code>-knop ingedrukt en selecteer met de muis de
-                      gewenste opties.
-                    </li>
-                    <li>Mac: Houd de <code>cmd</code>-knop ingedrukt en selecteer met de muis de
-                      gewenste opties.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="ro-select">
-                  <select id="select-mulitple-size-5" name="select-mulitple-size-5" multiple size="3"
-                    aria-describedby="select-mulitple-size-5-message">
-                    <option value="1">Optie 1</option>
-                    <option value="2">Optie 2</option>
-                    <option value="3">Optie 3</option>
-                    <option value="4">Optie 4</option>
-                    <option value="5">Optie 5</option>
-                    <option value="6">Optie 6</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <label for="select-optgroup-6">Gegroepeerde opties</label>
-              <div class="ro-select">
-                <select id="select-optgroup-6" name="select-optgroup-6">
-                  <optgroup label="Rollende objecten">
-                    <option value="Bal">Bal</option>
-                    <option value="Wiel">Wiel</option>
-                    <option value="Knikker">Knikker</option>
-                  </optgroup>
-
-                  <optgroup label="Slecht rollende objecten">
-                    <option value="Aambeeld">Aambeeld</option>
-                    <option value="Eiffeltoren">Eiffeltoren</option>
-                    <option value="Dinosaurus">Dinosaurus</option>
-                  </optgroup>
-                </select>
-              </div>
-            </div>
-
-            <button type="submit">Verzend</button>
           </form>
 
           <h2 id="collapsed-help">Formulier met ingeklapte hulpteksten</h2>
@@ -2445,38 +2267,6 @@
                 <option value="3">Optie 3</option>
               </select>
               <p class="explanation" id="select-with-collapsed-explanation-1-message">
-                <span>Toelichting:</span> Lorem ipsum dolor set amet.
-              </p>
-            </div>
-
-            <label for="ro-select-with-explanation-3">Voorbeeld select (alternatieve weergave) met
-              reguliere toelichting</label>
-            <div>
-              <p class="explanation" id="ro-select-with-explanation-3-message">
-                <span>Toelichting:</span> Lorem ipsum dolor set amet.
-              </p>
-              <div class="ro-select">
-                <select id="ro-select-with-explanation-3" name="ro-select-with-explanation-3"
-                  aria-describedby="ro-select-with-explanation-3-message">
-                  <option value="1">Optie 1</option>
-                  <option value="2">Optie 2</option>
-                  <option value="3">Optie 3</option>
-                </select>
-              </div>
-            </div>
-
-            <label for="ro-select-with-collapsed-explanation-2">Voorbeeld select (alternatieve
-              weergave) met ingeklapte toelichting</label>
-            <div>
-              <div class="ro-select">
-                <select id="ro-select-with-collapsed-explanation-2" name="ro-select-with-collapsed-explanation-2"
-                  aria-describedby="ro-select-with-collapsed-explanation-2-message">
-                  <option value="1">Optie 1</option>
-                  <option value="2">Optie 2</option>
-                  <option value="3">Optie 3</option>
-                </select>
-              </div>
-              <p class="explanation" id="ro-select-with-collapsed-explanation-2-message">
                 <span>Toelichting:</span> Lorem ipsum dolor set amet.
               </p>
             </div>
@@ -2716,39 +2506,6 @@
               </div>
             </div>
 
-            <div>
-              <label for="ro-select-with-explanation-2">Voorbeeld selectielijst (alternatieve
-                weergave) met reguliere toelichting</label>
-              <div>
-                <p class="explanation" id="ro-select-with-explanation-2-message">
-                  <span>Toelichting:</span> Lorem ipsum dolor set amet.
-                </p>
-                <div class="ro-select">
-                  <select id="ro-select-with-explanation-2" name="ro-select-with-explanation-2"
-                    aria-describedby="ro-select-with-explanation-2-message">
-                    <option value="1">Optie 1</option>
-                    <option value="2">Optie 2</option>
-                    <option value="3">Optie 3</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <label for="ro-select-with-collapsed-explanation-4">Voorbeeld selectielijst
-                (alternatieve weergave) met ingeklapte toelichting</label>
-              <div>
-                <div class="ro-select">
-                  <select id="ro-select-with-collapsed-explanation-4" name="ro-select-with-collapsed-explanation-4">
-                    <option value="1">Optie 1</option>
-                    <option value="2">Optie 2</option>
-                    <option value="3">Optie 3</option>
-                  </select>
-                </div>
-                <p class="explanation">Lorem ipsum dolor set amet.</p>
-              </div>
-            </div>
-
             <fieldset>
               <legend>Radio-selectielijst met reguliere toelichting</legend>
               <div>
@@ -2820,54 +2577,6 @@
       </div>
     </article>
 
-    <article id="form-hero">
-      <div>
-        <h2>Formulier binnen Hero-sectie</h2>
-      </div>
-
-      <section class="hero">
-        <img src="../../static/img/vws-hero_zorg-welzijn.jpg" alt="vws hero zorg en welzijn">
-        <div class="one-third-two-thirds">
-          <div class="tile">
-            <h3>Lorem ipsum dolor set</h3>
-            <nav aria-label="Voorbeeld navigatie formulier binnen hero">
-              <ul>
-                <li><a href="">Lorem ipsum</a></li>
-                <li><a href="">Dolor sit amet</a></li>
-                <li><a href="">Consectetur</a></li>
-              </ul>
-            </nav>
-          </div>
-
-          <form class="search">
-            <input type="text" placeholder="Zoeken">
-            <button type="submit">Zoeken</button>
-          </form>
-        </div>
-      </section>
-    </article>
-
-    <article id="one-line">
-      <div>
-        <h3>Formulier op een regel</h3>
-        <form method="post" class="inline">
-          <div class="button-container">
-            <button type="submit">Haal gegevens op</button>
-          </div>
-        </form>
-
-        <h2 id="one-line-grouped">Gegroepeerde knoppen</h2>
-        <div class="button-container">
-          <button>Button</button>
-          <input type="button" value="Input">
-          <a href="#" class="button">Link</a>
-          <form method="post" class="inline">
-            <button type="submit">button in inline</button>
-          </form>
-        </div>
-      </div>
-    </article>
-
     <article id="form-within-tabel">
       <div>
         <h3>Formulier binnen tabellen</h3>
@@ -2877,14 +2586,22 @@
             <caption>Tabelvoorbeeld met selectievak:</caption>
             <thead>
               <tr>
-                <th><input type="checkbox"></th>
+                <th>
+                  <div class="checkbox">
+                    <input type="checkbox" id="table-header-checkbox" name="table-header_checkbox">
+                  </div>
+                </th>
                 <th>Table header heading</th>
                 <th>Action</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><input type="checkbox"></td>
+                <td>
+                  <div class="checkbox">
+                    <input type="checkbox" id="table-checkbox" name="table_checkbox">
+                  </div>
+                </td>
                 <td>Ipsum</td>
                 <td>
                   <form><input type="submit" value="Lorem"></form>
@@ -2909,9 +2626,9 @@
                 <td>Lorem</td>
                 <td>Ipsum</td>
                 <td>
-                  <div>
+                  <div class="horizontal-view">
                     <form>
-                      <button type="submit" class="icon icon-home" value="Lorem">Home</button>
+                      <button type="submit" class="icon-only icon-cat" value="Lorem">Home</button>
                     </form>
                     <form><input type="submit" value="Lorem"></form>
                     <form><input type="submit" value="Lorem"></form>

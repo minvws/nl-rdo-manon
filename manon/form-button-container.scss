@@ -1,0 +1,60 @@
+/*---------------------------------------------------------------*/
+/*---------------- form-button-container.scss -------------------*/
+/*---------------------------------------------------------------*/
+@use "form-button-container-variables";
+
+%fieldset-button-container-styling {
+    float: var(--form-button-container-fieldset-float);
+    /* Removing gap as it is not supported within fieldsets */
+    gap: 0;
+    width: auto;
+
+    /* Countering margin bottom that will be set by buttons on the last line */
+    margin-right: calc((var(--button-container-gap) * -1)/2);
+    margin-bottom: calc(var(--button-container-gap) * -1);
+    margin-left: calc((var(--button-container-gap) * -1)/2);
+
+    button,
+    a.button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+        float: left;
+        width: auto;
+        margin-right: calc(var(--button-container-gap)/2);
+        margin-left: calc(var(--button-container-gap)/2);
+        margin-bottom: var(--button-container-gap);
+    }
+}
+
+form {
+    .button-container {
+        align-self: var(--form-button-container-align-self);
+        width: auto;
+    }
+
+    fieldset {
+        .button-container {
+            @extend %fieldset-button-container-styling;
+        }
+
+        >div {
+            &.button-container {
+                @extend %fieldset-button-container-styling;
+            }
+        }
+    }
+
+    &.horizontal-view {
+        fieldset {
+            .button-container {
+                @extend %fieldset-button-container-styling;
+                margin-left: calc(var(--label-column) - (var(--button-container-gap)/2));
+            }
+        }
+
+        >div.button-container {
+            gap: var(--button-container-gap);
+        }
+    }
+}

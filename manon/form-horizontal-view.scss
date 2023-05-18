@@ -26,10 +26,14 @@ form.horizontal-view {
     justify-content: var(--form-horizontal-view-justify-content);
     flex-wrap: wrap;
     gap: var(--form-horizontal-view-gap);
+    margin: 0;
 
     &.checkbox {
       gap: var(--form-checkbox-margin-right);
+      margin: 0;
       margin-left: var(--label-column);
+      gap: var(--form-horizontal-view-gap);
+      max-width: var(--input-column);
 
       %horizontal-view-checkbox,
       input[type="checkbox"] {
@@ -95,6 +99,7 @@ form.horizontal-view {
       justify-content: var(--form-horizontal-view-notification-block-element-justify-content);
       align-items: var(--form-horizontal-view-notification-block-element-align-items);
       gap: var(--form-horizontal-view-notification-block-element-gap);
+      margin: 0;
 
       >* {
         max-width: 100%;
@@ -132,19 +137,7 @@ form.horizontal-view {
     }
   }
 
-  .required {
-    border: 1px dashed red;
-
-    >.nota-bene,
-    >.radio,
-    >.checkbox {
-      border: 1px dashed green;
-    }
-  }
-
   .option-group {
-    border: 1px dashed aqua;
-    background-color: lightblue;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

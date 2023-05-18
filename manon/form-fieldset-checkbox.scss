@@ -8,6 +8,7 @@ form {
         .checkbox {
             padding: 0;
             display: initial;
+            margin: var(--form-fieldset-checkbox-margin);
 
             input[type="checkbox"] {
                 padding: 0;
@@ -20,7 +21,7 @@ form {
                 margin-top: var(--form-fieldset-checkbox-input-margin-top);
 
                 &+label {
-                    width: var(--form-fieldset-checkbox-label-width);
+                    width: calc(100% - var(--form-fieldset-checkbox-width));
                     cursor: pointer;
                     padding-left: 0.5rem;
                     margin: 0;
@@ -39,12 +40,18 @@ form {
                 flex-direction: column;
 
                 span {
-                    margin-bottom: var(--form-fieldset-checkbox-required-margin-bottom);
+                    margin-bottom: var(--form-base-required-gap);
                 }
 
                 >div {
                     padding: 0;
                     display: initial;
+                }
+            }
+
+            fieldset {
+                .checkbox {
+                    margin: var(--form-fieldset-checkbox-margin);
                 }
             }
         }

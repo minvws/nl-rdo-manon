@@ -193,7 +193,6 @@
 
 /* Table */
 @use "@minvws/manon/table";
-/* Needs to be first of the set */
 @use "@minvws/manon/table-action-buttons";
 @use "@minvws/manon/table-caption";
 @use "@minvws/manon/table-checkbox";
@@ -202,6 +201,8 @@
 @use "@minvws/manon/table-sticky-header";
 @use "@minvws/manon/table-summary";
 @use "@minvws/manon/table-condensed";
+@use "@minvws/manon/table-form";
+
 
 /* Form */
 @use "@minvws/manon/form-base";
@@ -214,11 +215,12 @@
 @use "@minvws/manon/form-accent-color";
 @use "@minvws/manon/form-horizontal-view";
 @use "@minvws/manon/form-button";
+@use "@minvws/manon/form-button-container";
 @use "@minvws/manon/form-button-grouped-horizontal";
 @use "@minvws/manon/form-inline";
 @use "@minvws/manon/form-combined-field";
 @use "@minvws/manon/form-help";
-@use "@minvws/manon/form-option-group";
+@use "@minvws/manon/form-grouped-choice-list";
 
 /* Fieldset */
 @use "@minvws/manon/form-fieldset";

@@ -4,8 +4,9 @@
 @use "form-checkbox-variables";
 
 form {
+  $checkbox-input-width: calc(var(--checkbox-width) + var(--checkbox-gap));
+
   input[type="checkbox"] {
-    margin-right: var(--form-checkbox-margin-right, 0);
     padding: 0;
     vertical-align: var(--form-checkbox-vertical-align);
     cursor: var(--form-checkbox-cursor);
@@ -13,6 +14,8 @@ form {
     min-width: var(--form-checkbox-width);
     height: var(--form-checkbox-height);
     accent-color: var(--form-radio-background-color);
+    margin-left: 0;
+    margin-right: 0;
 
     &+label {
       width: auto;
@@ -40,6 +43,29 @@ form {
     p.explanation,
     p.primary {
       margin: 0;
+    }
+
+    +p.error,
+    +p.warning,
+    +p.confirmation,
+    +p.explanation,
+    +p.primary {
+      max-width: calc(100% - ($checkbox-input-width));
+      margin-left: $checkbox-input-width;
+    }
+  }
+
+  .option-group {
+    .checkbox {
+
+      +p.error,
+      +p.warning,
+      +p.confirmation,
+      +p.explanation,
+      +p.primary {
+        max-width: calc(var(--input-column) - ($checkbox-input-width));
+        margin-left: calc(var(--label-column) + $checkbox-input-width);
+      }
     }
   }
 }

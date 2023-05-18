@@ -20,20 +20,21 @@ and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 
 main section form,
 form {
-  > fieldset {
-   
+  >fieldset {
+
     legend {
       font-weight: var(--form-fieldset-legend-font-weight);
       margin-bottom: var(--form-fieldset-legend-margin-bottom);
     }
-    
+
 
     div {
       display: block;
-      float: left; /* used to re-render the div so long labels won't run out of the div */
+      float: left;
+      /* used to re-render the div so long labels won't run out of the div */
       width: 100%;
 
-      > * {
+      >* {
         float: left;
         width: 100%;
         max-width: 100%;
@@ -43,26 +44,32 @@ form {
     }
 
     /* Notifications */
-    > div {
+    >div {
+
       &.error,
       &.warning,
       &.explanation,
       &.confirmation,
       &.system {
-        > * {
+        >* {
           max-width: 100%;
           width: 100%;
         }
       }
     }
 
-    > *,
-		> fieldset /* Fieldsets within fieldsets ignore the "*" all selector */ {
+    /* Fieldsets within fieldsets ignore the "*" all selector */
+    >*,
+    >fieldset {
       margin-bottom: var(--form-fieldset-fields-margin-top);
 
       &:last-child {
         margin-bottom: 0;
       }
+    }
+
+    .nota-bene {
+      padding-bottom: 0;
     }
   }
 }

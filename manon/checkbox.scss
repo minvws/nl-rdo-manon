@@ -3,50 +3,48 @@
 /*---------------------------------------------------------------*/
 @use "checkbox-variables";
 
-form {
-  .checkbox {
+.checkbox {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: var(--checkbox-gap);
+  align-items: var(--checkbox-align-items);
+
+  input[type="checkbox"] {
     padding: 0;
-    display: flex;
-    flex-direction: row;
-    gap: var(--checkbox-gap);
-    align-items: var(--checkbox-align-items);
-    border: 1px dashed brown;
+    cursor: pointer;
+    width: var(--checkbox-width);
+    min-width: var(--checkbox-width);
+    height: var(--checkbox-height);
+    min-height: var(--checkbox-height);
+    accent-color: var(--checkbox-accent-color);
 
-    input[type="checkbox"] {
-      padding: 0;
+    &+label {
+      width: var(--checkbox-label-width);
       cursor: pointer;
-      width: var(--checkbox-width);
-      min-width: var(--checkbox-width);
-      height: var(--checkbox-height);
-      accent-color: var(--checkbox-accent-color);
-
-      &+label {
-        width: var(--checkbox-label-width);
-        cursor: pointer;
-      }
-
-      &:disabled {
-        cursor: not-allowed;
-
-        &+label {
-          cursor: not-allowed;
-        }
-      }
     }
 
-    &.required {
-      flex-direction: column;
-      gap: var(--checkbox-required-gap);
-      align-items: flex-start;
-      justify-content: var(--radio-align-items);
-      /* Using alignment value because the flex direction is column */
+    &:disabled {
+      cursor: not-allowed;
 
-      >div {
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        gap: var(--checkbox-gap);
+      &+label {
+        cursor: not-allowed;
       }
+    }
+  }
+
+  &.required {
+    flex-direction: column;
+    gap: var(--checkbox-required-gap);
+    align-items: flex-start;
+    justify-content: var(--radio-align-items);
+    /* Using alignment value because the flex direction is column */
+
+    >div {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      gap: var(--checkbox-gap);
     }
   }
 }

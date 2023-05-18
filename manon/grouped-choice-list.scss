@@ -1,0 +1,14 @@
+/*---------------------------------------------------------------*/
+/*------------- form-grouped-choice-list-radio.scss -------------*/
+/*---------------------------------------------------------------*/
+
+form {
+    .grouped-choice-list {
+        background-color: pink;
+        border: 1px dashed red;
+
+        legend {
+            background-color: palegreen;
+        }
+    }
+}

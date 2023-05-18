@@ -22,9 +22,9 @@ form {
                 margin-right: 0;
 
                 &+label {
-                    width: var(--form-fieldset-radio-label-width);
+                    width: calc(100% - var(--form-fieldset-radio-input-width));
                     cursor: pointer;
-                    padding-left: 0.5rem;
+                    padding-left: var(--radio-gap);
                     margin: 0;
                 }
 
