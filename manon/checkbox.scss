@@ -10,6 +10,7 @@ form {
     flex-direction: row;
     gap: var(--checkbox-gap);
     align-items: var(--checkbox-align-items);
+    border: 1px dashed brown;
 
     input[type="checkbox"] {
       padding: 0;
@@ -18,16 +19,16 @@ form {
       min-width: var(--checkbox-width);
       height: var(--checkbox-height);
       accent-color: var(--checkbox-accent-color);
-  
-      & + label {
+
+      &+label {
         width: var(--checkbox-label-width);
         cursor: pointer;
       }
-  
+
       &:disabled {
         cursor: not-allowed;
 
-        & + label {
+        &+label {
           cursor: not-allowed;
         }
       }
@@ -37,9 +38,10 @@ form {
       flex-direction: column;
       gap: var(--checkbox-required-gap);
       align-items: flex-start;
-      justify-content: var(--radio-align-items); /* Using alignment value because the flex direction is column */
+      justify-content: var(--radio-align-items);
+      /* Using alignment value because the flex direction is column */
 
-      > div {
+      >div {
         padding: 0;
         display: flex;
         flex-direction: row;

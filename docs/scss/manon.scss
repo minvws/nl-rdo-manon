@@ -6,7 +6,8 @@
 @use "@minvws/manon/headings-base-set";
 
 /* Colors */
-@use "@minvws/manon/grey-15"; /* Color set with 15 shaded of grey */
+@use "@minvws/manon/grey-15";
+/* Color set with 15 shaded of grey */
 
 /* Finn */
 /*@use "@minvws/manon/finn-small";
@@ -191,7 +192,8 @@
 @use "@minvws/manon/sidemenu-documentation";
 
 /* Table */
-@use "@minvws/manon/table"; /* Needs to be first of the set */
+@use "@minvws/manon/table";
+/* Needs to be first of the set */
 @use "@minvws/manon/table-action-buttons";
 @use "@minvws/manon/table-caption";
 @use "@minvws/manon/table-checkbox";
@@ -216,7 +218,7 @@
 @use "@minvws/manon/form-inline";
 @use "@minvws/manon/form-combined-field";
 @use "@minvws/manon/form-help";
-
+@use "@minvws/manon/form-option-group";
 
 /* Fieldset */
 @use "@minvws/manon/form-fieldset";
@@ -263,4 +265,3 @@
 @use "@minvws/manon/code-base";
 @use "@minvws/manon/code-block";
 @use "@minvws/manon/visual-example";
-

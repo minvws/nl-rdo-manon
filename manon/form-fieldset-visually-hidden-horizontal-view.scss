@@ -7,20 +7,21 @@
 $breakpoint-1: 24rem !default;
 
 form.horizontal-view {
-  > fieldset > fieldset {
+
+  >fieldset>fieldset {
     legend {
       font-weight: inherit;
       margin: 0;
       box-sizing: border-box;
-      width: var(--form-horizontal-view-label-max-width);
+      width: var(--label-column);
       float: left;
       padding-right: var(--form-horizontal-view-gap);
       margin-top: var(--form-horizontal-view-fieldset-label-margin-top);
     }
 
-    > * {
+    >* {
       @media (min-width: $breakpoint-1) {
-        width: var(--form-horizontal-view-input-max-width);
+        width: var(--input-column);
         float: right;
       }
     }
