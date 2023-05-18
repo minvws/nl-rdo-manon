@@ -30,6 +30,10 @@ form {
     width: 100%;
     box-sizing: border-box;
     padding: 0;
+
+    &.horizontal-view {
+      flex-wrap: nowrap;
+    }
   }
 
   div {

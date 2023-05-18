@@ -5,6 +5,7 @@
 
 form {
   $radio-input-width: calc(var(--radio-input-width) + var(--radio-gap));
+  $breakpoint-1: 24rem !default;
 
   input[type="radio"] {
     padding: 0;
@@ -46,13 +47,16 @@ form {
       margin: 0;
     }
 
-    +p.error,
-    +p.warning,
-    +p.confirmation,
-    +p.explanation,
-    +p.primary {
-      max-width: calc(100% - ($radio-input-width));
-      margin-left: $radio-input-width;
+    @media (min-width: $breakpoint-1) {
+
+      +p.error,
+      +p.warning,
+      +p.confirmation,
+      +p.explanation,
+      +p.primary {
+        max-width: calc(100% - ($radio-input-width));
+        margin-left: $radio-input-width;
+      }
     }
   }
 

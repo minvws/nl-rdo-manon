@@ -10,4 +10,10 @@
   --button-container-padding-right: 0;
   --button-container-padding-bottom: 0;
   --button-container-padding-left: 0;
+
+  /* Button */
+  --button-container-button-width: var(--form-button-width);
+
+  /* After breakpoint */
+  --button-container-button-after-breakpoint-width: var(--form-button-after-breakpoint-width);
 }

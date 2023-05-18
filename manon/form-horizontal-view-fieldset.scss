@@ -4,7 +4,6 @@
 @use "form-horizontal-view-variables";
 @use "form-horizontal-view-fieldset-variables";
 
-$breakpoint: 24rem;
 
 /* Fieldset styling is a bit different compared to the default form styling.
 This is because of a couple of styling restrictions and issues concerning fieldsets and it's children.
@@ -22,19 +21,22 @@ For more information on the bug see: https://github.com/philipwalton/flexbugs#9-
 and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 
 form.horizontal-view {
+  $breakpoint: 24rem;
+
   >fieldset {
     >div {
       display: block;
-      gap: 0;
       /* resetting gap as it can not be used within fieldsets */
-      margin-bottom: var(--form-base-gap);
+      gap: 0;
       /* Adds margin instead of gap */
+      margin-bottom: var(--form-base-gap);
+
 
       @media (min-width: $breakpoint) {
         >* {
           width: var(--input-column);
-          gap: 0;
           /* resetting gap as it can not be used within fieldsets */
+          gap: 0;
           /* float objects to move inputs into place even when there is no label */
           float: right;
         }
@@ -66,8 +68,12 @@ form.horizontal-view {
     >.checkbox,
     >.radio {
       margin-left: 0;
-      width: var(--input-column);
+      width: 100%;
       float: right;
+
+      @media (min-width: $breakpoint) {
+        width: var(--input-column);
+      }
 
       .horizontal-view {
         display: block;
@@ -112,21 +118,24 @@ form.horizontal-view {
       max-width: calc(100% - var(--radio-input-width));
     }
 
-    >button,
-    >a.button,
-    >input[type="button"],
-    >input[type="submit"],
-    >input[type="reset"],
-    >a {
-      margin-left: var(--label-column);
-    }
+    @media (min-width: $breakpoint) {
 
-    &+button,
-    &+a.button,
-    &+input[type="button"],
-    &+input[type="submit"],
-    &+input[type="reset"] {
-      margin-left: var(--label-column);
+      >button,
+      >a.button,
+      >input[type="button"],
+      >input[type="submit"],
+      >input[type="reset"],
+      >a {
+        margin-left: var(--label-column);
+      }
+
+      &+button,
+      &+a.button,
+      &+input[type="button"],
+      &+input[type="submit"],
+      &+input[type="reset"] {
+        margin-left: var(--label-column);
+      }
     }
   }
 }

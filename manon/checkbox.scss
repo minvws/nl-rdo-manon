@@ -9,6 +9,7 @@
   flex-direction: row;
   gap: var(--checkbox-gap);
   align-items: var(--checkbox-align-items);
+  flex-wrap: nowrap;
 
   input[type="checkbox"] {
     padding: 0;
@@ -34,11 +35,12 @@
   }
 
   &.required {
-    flex-direction: column;
     gap: var(--checkbox-required-gap);
+    /* Set values instead of variables to prevent layout breaks */
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: var(--radio-align-items);
     /* Using alignment value because the flex direction is column */
+    justify-content: var(--radio-align-items);
 
     >div {
       padding: 0;

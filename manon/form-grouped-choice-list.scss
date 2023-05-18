@@ -3,15 +3,20 @@
 /*---------------------------------------------------------------*/
 
 form.horizontal-view {
+    $breakpoint: 24rem !default;
+
     .grouped-choice-list {
 
         legend {
-            margin: 0;
             font-weight: normal;
-            margin-bottom: -2rem;
-            position: absolute;
-            max-width: var(--label-column);
-            padding: 0;
+            width: auto;
+            margin: 0;
+
+            @media (min-width: $breakpoint) {
+                position: absolute;
+                max-width: var(--label-column);
+                padding: 0;
+            }
         }
     }
 }

@@ -31,9 +31,13 @@ form.horizontal-view {
     &.checkbox {
       gap: var(--form-checkbox-margin-right);
       margin: 0;
-      margin-left: var(--label-column);
-      gap: var(--form-horizontal-view-gap);
-      max-width: var(--input-column);
+      gap: var(--checkbox-gap);
+      flex-wrap: nowrap;
+
+      @media (min-width: $breakpoint) {
+        max-width: var(--input-column);
+        margin-left: var(--label-column);
+      }
 
       %horizontal-view-checkbox,
       input[type="checkbox"] {
@@ -43,7 +47,7 @@ form.horizontal-view {
         margin-right: 0;
 
         &+label {
-          max-width: 100%;
+          max-width: calc(100% - var(--checkbox-width));
         }
       }
 
@@ -58,16 +62,20 @@ form.horizontal-view {
 
     &.radio {
       gap: var(--form-radio-margin-right);
+      flex-wrap: nowrap;
 
       %horizontal-view-radio,
       input[type="radio"] {
-        /* Align radio with input fields */
-        margin-left: var(--label-column);
         flex-grow: 0;
         margin-right: 0;
 
         &+label {
-          max-width: 100%;
+          max-width: calc(100% - var(--radio-input-width));
+        }
+
+        @media (min-width: $breakpoint) {
+          /* Align radio with input fields */
+          margin-left: var(--label-column);
         }
       }
 
