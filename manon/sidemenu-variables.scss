@@ -1,0 +1,75 @@
+/*---------------------------------------------------------------*/
+/*------------------ sidemenu-variables.scss --------------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Side menu (Main) */
+  --sidemenu-main-padding-top: 0;
+  --sidemenu-main-padding-bottom: 0;
+
+  /* Please note that gap and width need to use
+  the same type of unit to work. e.g px, rem, em 
+  As they are used to calculate the page content width. */
+  --sidemenu-main-gap: 0rem;
+  --sidemenu-nav-width: 18rem;
+
+  /* Reserve space for the button */
+  --sidemenu-main-max-height: 90vh;
+
+  /* Content container (top level div, section or article) */
+  --sidemenu-content-container-background-color: transparent;
+  --sidemenu-content-container-padding-top: var(--content-padding-top);
+  --sidemenu-content-container-padding-right: var(--page-whitespace-right);
+  --sidemenu-content-container-padding-bottom: var(--content-padding-bottom);
+  --sidemenu-content-container-padding-left: var(--page-whitespace-left);
+
+  /* Nav inside side menu */
+  --sidemenu-nav-background-color: transparent;
+  --sidemenu-nav-border-width: 0 1px 0 0;
+  --sidemenu-nav-border-style: solid;
+  --sidemenu-nav-border-color: #ccc;
+  --sidemenu-nav-padding-top: 1rem;
+  --sidemenu-nav-padding-right: 1rem;
+  --sidemenu-nav-padding-bottom: 1rem;
+  --sidemenu-nav-padding-left: 1rem;
+  --sidemenu-nav-background-image: unset;
+  --sidemenu-nav-background-repeat: no-repeat;
+  --sidemenu-nav-background-size: initial;
+  --sidemenu-nav-background-position: initial;
+
+  /* List inside side menu */
+  --sidemenu-ul-padding: var(--list-base-padding, 0);
+
+  /* List item */
+  --sidemenu-list-item-background-color: var(--list-base-item-background-color, transparent);
+  --sidemenu-list-item-border-width: var(--list-base-item-border-width, 0);
+  --sidemenu-list-item-border-style: var(--list-base-item-border-style, solid);
+  --sidemenu-list-item-border-color: var(--list-base-item-border-color, transparent);
+  --sidemenu-list-item-padding: var(--list-base-item-padding, 0.25rem 0);
+  --sidemenu-list-item-list-style: var(--list-base-item-list-style, initial);
+  --sidemenu-list-item-line-height: var(--list-base-item-line-height, initial);
+  --sidemenu-list-item-font-size: var(--list-base-font-size, initial);
+  --sidemenu-list-item-font-weight: var(--list-base-font-weight, initial);
+  --sidemenu-list-item-text-color: var(--list-base-text-color, #000);
+
+  /* Side menu button */
+  --sidemenu-toggle-button-min-width: 2.75rem;
+  --sidemenu-toggle-button-min-height: 2.75rem;
+  --sidemenu-toggle-button-font-size: 0;
+  --sidemenu-toggle-button-white-space: nowrap;
+  --sidemenu-toggle-button-font-weight: normal;
+  --sidemenu-button-margin-top: 1rem;
+
+  /* Side menu button icon */
+  --sidemenu-button-icon-font-family: var(--icon-font-family);
+  --sidemenu-button-icon-font-size: var(--icon-font-size);
+  --sidemenu-button-icon-font-weight: initial;
+  --sidemenu-button-icon-white-space: initial;
+
+  /* add content within "", this could be text or a unicode for an icon*/
+
+  /* content on the button when the menu is collapsed */
+  --sidemenu-collapsed-button-icon: var(--icon-descending);
+
+  /* content on the button when the menu is expanded */
+  --sidemenu-expanded-button-icon: var(--icon-ascending);
+}
