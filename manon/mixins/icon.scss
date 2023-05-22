@@ -23,6 +23,15 @@
   padding-left: var(--#{$prefix}icon-padding-left);
 }
 
+@mixin icon-format-variables($prefix, $parentPrefix) {
+  --#{$prefix}icon: none;
+  --#{$prefix}icon-font-family: var(--icon-font-family);
+  --#{$prefix}icon-font-size: var(--icon-font-size);
+  --#{$prefix}icon-text-decoration: var(--#{$parentPrefix}text-decoration);
+  --#{$prefix}icon-padding-right: 0.5rem;
+  --#{$prefix}icon-padding-left: 0;
+}
+
 @mixin icon-content($prefix) {
   content: var(--#{$prefix}icon);
 }
