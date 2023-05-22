@@ -2,6 +2,7 @@
 /*-------------------- breadcrumb-bar.scss ----------------------*/
 /*---------------------------------------------------------------*/
 @use "breadcrumb-bar-variables";
+@use "mixins/icon";
 
 .breadcrumb-bar {
   display: flex;
@@ -47,11 +48,18 @@
       gap: var(--breadcrumb-bar-list-item-gap);
 
       &:before {
-        display: none; /* Preventing default nav before to show up */
+        display: none;
+        /* Preventing default nav before to show up */
       }
 
       &:after {
+
+        @include icon.icon;
+        @include icon.icon-format(breadcrumb-bar-);
+
         content: var(--breadcrumb-bar-icon);
+        padding-right: var(--breadcrumb-bar-icon-padding-right);
+        padding-left: var(--breadcrumb-bar-icon-padding-left);
         margin-left: var(--breadcrumb-bar-icon-margin-left);
         margin-right: var(--breadcrumb-bar-icon-margin-right);
       }
@@ -73,7 +81,8 @@
       }
 
       a {
-        word-break: break-word; /* Break words that won't fit the available space */
+        word-break: break-word;
+        /* Break words that won't fit the available space */
         color: inherit;
         text-decoration: var(--breadcrumb-bar-link-text-decoration);
         border: 0;
