@@ -3,21 +3,21 @@
 /*---------------------------------------------------------------------*/
 
 @mixin notification-type($type) {
-    background-color: var(--notification-#{$type}-background-color);
-    color: var(--notification-#{$type}-text-color);
-    border-width: var(--notification-#{$type}-border-width);
-    border-style: var(--notification-#{$type}-border-style);
-    border-color: var(--notification-#{$type}-border-color);
-  
-    &:before {
-      font-family: var(--notification-#{$type}-icon-font-family);
-      font-size: var(--notification-#{$type}-icon-font-size);
-      padding-right: var(--notification-#{$type}-icon-padding-right);
-      padding-left: var(--notification-#{$type}-icon-padding-left);
-      color: var(--notification-#{$type}-icon-text-color);
-      margin-right: var(--notification-#{$type}-icon-margin-right);
-      content: var(--notification-#{$type}-icon);
-    }
+  background-color: var(--notification-#{$type}-background-color);
+  color: var(--notification-#{$type}-text-color);
+  border-width: var(--notification-#{$type}-border-width);
+  border-style: var(--notification-#{$type}-border-style);
+  border-color: var(--notification-#{$type}-border-color);
+
+  &:before {
+    font-family: var(--notification-#{$type}-icon-font-family);
+    font-size: var(--notification-#{$type}-icon-font-size);
+    padding-right: var(--notification-#{$type}-icon-padding-right);
+    padding-left: var(--notification-#{$type}-icon-padding-left);
+    color: var(--notification-#{$type}-icon-text-color);
+    margin-right: var(--notification-#{$type}-icon-margin-right);
+    content: var(--notification-#{$type}-icon);
+  }
 }
 
 @mixin notification-type-variables($type) {
@@ -47,19 +47,19 @@
   padding-left: var(--notification-#{$type}-page-padding-left);
   gap: var(--notification-#{$type}-page-gap);
 
-  > span:first-of-type {
+  >span:first-of-type {
     font-weight: var(--notification-#{$type}-page-span-font-weight);
   }
 
   /* Content wrapper */
-  > div {
+  >div {
     padding-top: var(--notification-#{$type}-page-content-wrapper-padding-top);
     padding-right: var(--notification-#{$type}-page-content-wrapper-padding-right);
     padding-bottom: var(--notification-#{$type}-page-content-wrapper-padding-bottom);
     padding-left: var(--notification-#{$type}-page-content-wrapper-padding-left);
     gap: var(--notification-#{$type}-page-content-wrapper-gap);
 
-    > span:first-of-type {
+    >span:first-of-type {
       font-weight: var(--notification-#{$type}-page-span-font-weight);
     }
   }
