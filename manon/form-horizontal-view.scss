@@ -5,7 +5,6 @@
 
 form.horizontal-view {
   $breakpoint: 24rem !default;
-  $label-column: calc(var(--form-horizontal-view-label-max-width) + var(--form-horizontal-view-gap));
 
   flex-direction: column;
   gap: var(--form-horizontal-view-gap);
@@ -19,31 +18,40 @@ form.horizontal-view {
     margin-left: 0;
   }
 
-  > div,
-  > section {
+  >div,
+  >section {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: var(--form-horizontal-view-justify-content);
     flex-wrap: wrap;
     gap: var(--form-horizontal-view-gap);
+    margin: 0;
 
     &.checkbox {
       gap: var(--form-checkbox-margin-right);
+      margin: 0;
+      gap: var(--checkbox-gap);
+      flex-wrap: nowrap;
+
+      @media (min-width: $breakpoint) {
+        max-width: var(--input-column);
+        margin-left: var(--label-column);
+      }
 
       %horizontal-view-checkbox,
       input[type="checkbox"] {
         /* Align checkbox with input fields */
-        margin-left: $label-column;
+        margin-left: 0;
         flex-grow: 0;
         margin-right: 0;
 
-        & + label {
-          max-width: 100%;
+        &+label {
+          max-width: calc(100% - var(--checkbox-width));
         }
       }
 
-      > div {
+      >div {
         @extend %horizontal-view-checkbox;
 
         input[type="checkbox"] {
@@ -54,20 +62,24 @@ form.horizontal-view {
 
     &.radio {
       gap: var(--form-radio-margin-right);
+      flex-wrap: nowrap;
 
       %horizontal-view-radio,
       input[type="radio"] {
-        /* Align radio with input fields */
-        margin-left: $label-column;
         flex-grow: 0;
         margin-right: 0;
 
-        & + label {
-          max-width: 100%;
+        &+label {
+          max-width: calc(100% - var(--radio-input-width));
+        }
+
+        @media (min-width: $breakpoint) {
+          /* Align radio with input fields */
+          margin-left: var(--label-column);
         }
       }
 
-      > div {
+      >div {
         @extend %horizontal-view-radio;
 
         input[type="radio"] {
@@ -80,8 +92,8 @@ form.horizontal-view {
     &.radio {
       justify-content: flex-start;
 
-      > .nota-bene {
-        margin-left: $label-column;
+      >.nota-bene {
+        margin-left: var(--label-column);
       }
     }
 
@@ -95,8 +107,9 @@ form.horizontal-view {
       justify-content: var(--form-horizontal-view-notification-block-element-justify-content);
       align-items: var(--form-horizontal-view-notification-block-element-align-items);
       gap: var(--form-horizontal-view-notification-block-element-gap);
+      margin: 0;
 
-      > * {
+      >* {
         max-width: 100%;
       }
     }
@@ -105,24 +118,24 @@ form.horizontal-view {
       max-width: var(--form-input-color-max-width);
     }
 
-    > * {
+    >* {
       flex-grow: 1;
       box-sizing: border-box;
     }
 
-    > button,
-    > a.button,
-    > input[type="button"],
-    > input[type="submit"],
-    > input[type="reset"] {
+    >button,
+    >a.button,
+    >input[type="button"],
+    >input[type="submit"],
+    >input[type="reset"] {
       flex-grow: 0;
     }
 
     @media (min-width: $breakpoint) {
       flex-wrap: nowrap;
 
-      > * {
-        max-width: var(--form-horizontal-view-input-max-width);
+      >* {
+        max-width: var(--input-column);
       }
 
       label {
@@ -132,22 +145,35 @@ form.horizontal-view {
     }
   }
 
+  .option-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (min-width: $breakpoint) {
+      >* {
+        margin-left: var(--label-column);
+      }
+    }
+  }
+
   @media (min-width: $breakpoint) {
-    > button,
-    > a.button,
-    > input[type="button"],
-    > input[type="submit"],
-    > input[type="reset"] {
+
+    >button,
+    >a.button,
+    >input[type="button"],
+    >input[type="submit"],
+    >input[type="reset"] {
       width: auto;
       max-width: 100%;
-      margin-left: $label-column;
+      margin-left: var(--label-column);
       flex-grow: 0;
     }
-    
-    > div.horizontal-view,
-    > div.button-container {
-      max-width: var(--form-horizontal-view-input-max-width);
-      margin-left: $label-column;
+
+    >div.horizontal-view,
+    >div.button-container {
+      max-width: var(--input-column);
+      margin-left: var(--label-column);
       flex-wrap: wrap;
     }
   }

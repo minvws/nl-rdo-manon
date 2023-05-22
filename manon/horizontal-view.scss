@@ -8,7 +8,8 @@ $breakpoint: 50rem !default;
 %horizontal-view,
 .horizontal-view {
   display: flex;
-  flex-direction: row !important; /* Preventing specificity issues */
+  flex-direction: row !important;
+  /* Preventing specificity issues */
   align-items: center;
   justify-content: var(--horizontal-view-justify-content);
   flex-wrap: wrap;
@@ -19,6 +20,6 @@ $breakpoint: 50rem !default;
   }
 }
 
-.horizontal-view-group > div {
+.horizontal-view-group>div {
   @extend %horizontal-view;
 }

@@ -9,7 +9,7 @@ form {
             padding: 0;
             display: initial;
             margin: var(--form-fieldset-radio-margin);
-    
+
             input[type="radio"] {
                 padding: 0;
                 cursor: pointer;
@@ -17,24 +17,26 @@ form {
                 min-width: var(--form-fieldset-radio-input-width);
                 height: var(--form-fieldset-radio-input-height);
                 accent-color: var(--form-fieldset-radio-input-accent-color);
-                margin-right: 0.5rem;
                 margin-top: var(--form-fieldset-radio-input-margin-top);
                 margin-left: 0;
-            
-                & + label {
-                    width: var(--form-fieldset-radio-label-width);
+                margin-right: 0;
+
+                &+label {
+                    width: calc(100% - var(--form-fieldset-radio-input-width));
                     cursor: pointer;
+                    padding-left: var(--radio-gap);
+                    margin: 0;
                 }
-            
+
                 &:disabled {
                     cursor: not-allowed;
-        
-                    & + label {
+
+                    &+label {
                         cursor: not-allowed;
                     }
                 }
             }
-    
+
             &.required {
                 flex-direction: column;
 
@@ -42,11 +44,11 @@ form {
                     margin-bottom: var(--form-fieldset-radio-required-margin-bottom);
                 }
 
-                > div {
+                >div {
                     padding: 0;
                     display: initial;
                 }
-            }   
+            }
         }
 
         fieldset {
@@ -54,5 +56,5 @@ form {
                 margin: var(--form-fieldset-radio-margin);
             }
         }
-    } 
+    }
 }

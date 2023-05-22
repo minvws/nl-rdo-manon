@@ -25,17 +25,15 @@
 
   /* Reset ios button styling */
   /* --button-base-webkit-appearance: none; */
-  --button-base-align-self: flex-end;
+  --button-base-align-self: flex-start;
 
   /* Hover */
-  --button-base-hover-background-color: 
+  --button-base-hover-background-color:
     var(--application-base-accent-color-hover,
-    var(--application-base-accent-color)
-  );
-  --button-base-hover-text-color: 
+      var(--application-base-accent-color));
+  --button-base-hover-text-color:
     var(--application-base-accent-color-hover-text-color,
-    var(--application-base-accent-color-text-color)
-  );
+      var(--application-base-accent-color-text-color));
 
   /* Active */
   /* --button-base-active-outline-style: ; */
@@ -45,14 +43,12 @@
   /* --button-base-active-border-style: ; */
   /* --button-base-active-border-color: ; */
   /* --button-base-active-border-width: ; */
-  --button-base-active-background-color: 
+  --button-base-active-background-color:
     var(--application-base-accent-color-active,
-    var(--application-base-accent-color)
-  );
-  --button-base-active-text-color: 
+      var(--application-base-accent-color));
+  --button-base-active-text-color:
     var(--application-base-accent-color-active-text-color,
-    var(--application-base-accent-color-text-color)
-  );
+      var(--application-base-accent-color-text-color));
 
   /* Focus */
   /* --button-base-focus-outline-style: ; */
@@ -62,14 +58,12 @@
   /* --button-base-focus-border-style: ; */
   /* --button-base-focus-border-color: ; */
   /* --button-base-focus-border-width: ; */
-  --button-base-focus-background-color: 
+  --button-base-focus-background-color:
     var(--application-base-accent-color-focus,
-    var(--application-base-accent-color)
-  );
-  --button-base-focus-text-color: 
+      var(--application-base-accent-color));
+  --button-base-focus-text-color:
     var(--application-base-accent-color-focus-text-color,
-    var(--application-base-accent-color-text-color)
-  );
+      var(--application-base-accent-color-text-color));
 
   /* Selected */
   /* --button-base-selected-outline-style: ; */
@@ -79,14 +73,12 @@
   /* --button-base-selected-border-style: ; */
   /* --button-base-selected-border-color: ; */
   /* --button-base-selected-border-width: ; */
-  --button-base-selected-background-color: 
+  --button-base-selected-background-color:
     var(--application-base-accent-color-selected,
-    var(--application-base-accent-color)
-  );
-  --button-base-selected-text-color: 
+      var(--application-base-accent-color));
+  --button-base-selected-text-color:
     var(--application-base-accent-color-selected-text-color,
-    var(--application-base-accent-color-text-color)
-  );
+      var(--application-base-accent-color-text-color));
 
   /* Image */
   --button-base-image-max-width: 1.5rem;

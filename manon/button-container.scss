@@ -11,7 +11,7 @@
   align-items: var(--button-container-align-items);
   flex-wrap: var(--button-container-flex-wrap);
   gap: var(--button-container-gap);
-  
+
   padding-top: var(--button-container-padding-top);
   padding-right: var(--button-container-padding-right);
   padding-bottom: var(--button-container-padding-bottom);
@@ -28,6 +28,7 @@
   }
 
   @media (min-width: $breakpoint) {
+
     button,
     a.button,
     input[type="button"],

@@ -4,31 +4,43 @@
 @use "table-checkbox-variables";
 
 %table-checkbox {
-  margin: var(--table-checkbox-margin-right, 0);
-  padding: 0;
-  cursor: var(--table-checkbox-cursor);
-  width: var(--table-checkbox-width);
-  height: var(--table-checkbox-height);
+  input[type="checkbox"] {
+    margin: var(--table-checkbox-margin-right, 0);
+    padding: 0;
+    cursor: var(--table-checkbox-cursor);
+    width: var(--table-checkbox-width);
+    height: var(--table-checkbox-height);
 
-  & + label {
-    width: auto;
-    cursor: pointer;
-    margin-top: 0;
+    &+label {
+      width: auto;
+      cursor: pointer;
+      margin-top: 0;
+    }
   }
-}
 
-form {
-  table {
-    input[type="checkbox"] {
-      @extend %table-checkbox;
+  th,
+  td {
+    input[type="checkbox"]:only-child {
+      margin: 0 auto;
     }
   }
 }
 
 table {
+  @extend %table-checkbox;
+}
+
+/* Form within table */
+table {
   form {
-    input[type="checkbox"] {
-      @extend %table-checkbox;
-    }
+    @extend %table-checkbox;
+  }
+}
+
+/* Table within form */
+form {
+
+  table {
+    @extend %table-checkbox;
   }
 }

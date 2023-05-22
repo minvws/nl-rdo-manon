@@ -4,7 +4,6 @@
 @use "form-horizontal-view-variables";
 @use "form-horizontal-view-fieldset-variables";
 
-$breakpoint: 24rem;
 
 /* Fieldset styling is a bit different compared to the default form styling.
 This is because of a couple of styling restrictions and issues concerning fieldsets and it's children.
@@ -22,55 +21,33 @@ For more information on the bug see: https://github.com/philipwalton/flexbugs#9-
 and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 
 form.horizontal-view {
-  $label-column: calc(var(--form-horizontal-view-label-max-width) + var(--form-horizontal-view-gap));
-  $input-column: calc(var(--form-horizontal-view-input-max-width) - var(--form-horizontal-view-gap));
+  $breakpoint: 24rem;
 
-  > fieldset {
-    > div {
+  >fieldset {
+    >div {
       display: block;
-      gap: 0; /* resetting gap as it can not be used within fieldsets */
-      margin-bottom: var(--form-base-gap); /* Adds margin instead of gap */
+      /* resetting gap as it can not be used within fieldsets */
+      gap: 0;
+      /* Adds margin instead of gap */
+      margin-bottom: var(--form-base-gap);
 
-      &.button-container {
-        width: 100%;
-        max-width: 100%;
-        float: right;
 
-        /* Countering margin bottom that will be set by buttons on the last line */
-        margin-bottom: calc(var(--form-base-gap) * -1); 
-        
-        button {
-          width: 100%;
-          float: left;
-          margin-right: var(--form-base-gap);
-          margin-bottom: var(--form-base-gap);
-        }
-      }
-      
       @media (min-width: $breakpoint) {
-        > * {
-          width: $input-column;
-          gap: 0; /* resetting gap as it can not be used within fieldsets */
+        >* {
+          width: var(--input-column);
+          /* resetting gap as it can not be used within fieldsets */
+          gap: 0;
           /* float objects to move inputs into place even when there is no label */
           float: right;
         }
 
-        &.button-container {
-          width: $input-column;
-          
-          button {
-            width: auto;
-            margin-bottom: var(--form-base-gap);
-          }
-        }
-       
-        > div {
+        >div {
           margin-bottom: 0;
         }
 
         label {
           float: left;
-          width: var(--form-horizontal-view-label-max-width);
+          width: var(--label-column);
           padding-right: var(--form-horizontal-view-gap);
           margin-top: var(--form-horizontal-view-fieldset-label-margin-top);
         }
@@ -79,7 +56,7 @@ form.horizontal-view {
 
     .required {
       .nota-bene {
-        margin-bottom: var(--form-horizontal-view-fieldset-nota-bene-required-margin-bottom);
+        margin-bottom: var(--form-base-required-gap);
         float: left;
       }
     }
@@ -88,11 +65,15 @@ form.horizontal-view {
       float: left;
     }
 
-    .checkbox,
-    .radio {
+    >.checkbox,
+    >.radio {
       margin-left: 0;
-      width: $input-column;
+      width: 100%;
       float: right;
+
+      @media (min-width: $breakpoint) {
+        width: var(--input-column);
+      }
 
       .horizontal-view {
         display: block;
@@ -108,30 +89,53 @@ form.horizontal-view {
       input {
         width: var(--form-checkbox-width);
         margin-right: var(--form-checkbox-margin-right);
+        float: left;
       }
 
       label {
         margin-top: 0;
+        display: block;
+        float: left;
       }
 
       /* Help button */
-      > button {
+      >button {
         top: 0;
       }
 
       /* Help text */
-      > p,
-      > div {
+      >p,
+      >div {
         width: 100%;
       }
     }
 
-    &+ button,
-    &+ a.button,
-    &+ input[type="button"],
-    &+ input[type="submit"],
-    &+ input[type="reset"] {
-      margin-left: $label-column;
+    .checkbox input[type=checkbox]+label {
+      max-width: calc(100% - var(--form-fieldset-checkbox-width));
+    }
+
+    .radio input[type=radio]+label {
+      max-width: calc(100% - var(--radio-input-width));
+    }
+
+    @media (min-width: $breakpoint) {
+
+      >button,
+      >a.button,
+      >input[type="button"],
+      >input[type="submit"],
+      >input[type="reset"],
+      >a {
+        margin-left: var(--label-column);
+      }
+
+      &+button,
+      &+a.button,
+      &+input[type="button"],
+      &+input[type="submit"],
+      &+input[type="reset"] {
+        margin-left: var(--label-column);
+      }
     }
   }
 }

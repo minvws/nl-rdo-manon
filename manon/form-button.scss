@@ -4,6 +4,7 @@
 @use "form-button-variables";
 
 form {
+
   button,
   a.button,
   input[type="button"],
@@ -13,11 +14,10 @@ form {
 
     align-self: var(--form-button-align-self);
 
-    width: auto;
+    width: var(--form-button-width);
     min-width: var(--form-button-min-width);
     min-height: 0;
 
-    width: auto;
     box-sizing: border-box;
     padding-top: var(--form-button-padding-top);
     padding-right: var(--form-button-padding-right);
@@ -36,6 +36,7 @@ form {
     border-color: var(--form-button-border-color);
 
     @media (min-width: $breakpoint) {
+      width: var(--form-button-after-breakpoint-width);
       min-width: var(--form-button-min-width);
     }
   }

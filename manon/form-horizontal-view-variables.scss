@@ -22,5 +22,8 @@
   --form-horizontal-view-notification-block-element-flex-direction: var(--notification-block-element-flex-direction);
   --form-horizontal-view-notification-block-element-justify-content: var(--notification-block-element-justify-content);
   --form-horizontal-view-notification-block-element-align-items: var(--notification-block-element-align-items);
-  --form-horizontal-view-notification-block-element-gap: var(--notification-block-element-gap);
+  --form-horizontal-view-notification-block-element-gap: var(--form-base-gap);
+
+  --label-column: calc(var(--form-horizontal-view-label-max-width) + var(--form-horizontal-view-gap));
+  --input-column: calc(var(--form-horizontal-view-input-max-width) - var(--form-horizontal-view-gap));
 }

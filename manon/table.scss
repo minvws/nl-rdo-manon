@@ -71,13 +71,12 @@ table {
   }
 
   tr {
+
     /* Zebra striping with opacity to keep background color. e.g for warnings or errors */
     &:nth-child(even):not(.odd),
     &:nth-child(odd).even {
-      background-color: var(
-        --table-row-background-color-striping,
-        inherit
-      );
+      background-color: var(--table-row-background-color-striping,
+          inherit);
     }
 
     &:first-of-type td {
@@ -123,6 +122,24 @@ table {
       padding: var(--table-foot-cell-padding);
       font-weight: var(--table-foot-cell-font-weight);
       font-size: var(--table-foot-cell-font-size);
+    }
+  }
+}
+
+/* Resetting inherited layout padding */
+main {
+
+  section,
+  section div,
+  article,
+  article div,
+  div,
+  div div {
+    table {
+      div {
+        gap: var(--table-gap);
+        padding: 0;
+      }
     }
   }
 }
