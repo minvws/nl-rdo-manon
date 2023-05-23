@@ -1,6 +1,8 @@
 /*---------------------------------------------------------------*/
-/*------ header-navigation-collapsible-variables.scss ------*/
+/*-------- header-navigation-collapsible-variables.scss ---------*/
 /*---------------------------------------------------------------*/
+@use "mixins/link";
+@use "mixins/icon";
 
 :root {
     /* Collapsing element */
@@ -21,7 +23,6 @@
     --header-navigation-collapsible-border-style: var(--collapsing-element-border-style, solid);
     --header-navigation-collapsible-border-color: var(--collapsing-element-border-color, transparent);
 
-    --header-navigation-collapsible-background-color: var(--header-navigation-background-color, #fff);
     --header-navigation-collapsible-menu-order: var(--collapsing-element-order, 0);
 
     --header-navigation-collapsible-background-color: var(--header-navigation-background-color, #fff);
@@ -40,7 +41,7 @@
     /* List item */
     --header-navigation-collapsible-list-item-align-items: var(--collapsing-element-list-item-align-items, flex-start);
 
-    --header-navigation-collapsible-list-item-background-color: var(--header-navigation-collapsible-list-background-color, transparent);
+    --header-navigation-collapsible-list-item-background-color: var(--header-navigation-list-item-background-color, transparent);
     --header-navigation-collapsible-list-item-text-color: var(--header-navigation-collapsible-text-color, #000);
 
     --header-navigation-collapsible-list-item-border-width: var(--collapsing-element-list-item-border-width, 1px 0 0 0);
@@ -57,6 +58,7 @@
     --header-navigation-collapsible-list-item-link-justify-content: var(--collapsing-element-list-item-link-justify-content, flex-start);
     --header-navigation-collapsible-list-item-link-text-color: var(--collapsing-element-list-item-link-text-color, #000);
     --header-navigation-collapsible-list-item-link-text-decoration: var(--collapsing-element-list-item-link-text-decoration, none);
+    --header-navigation-collapsible-list-item-link-background-color: var(--header-navigation-link-background-color, transparent);
 
     --header-navigation-collapsible-list-item-link-padding-top: var(--collapsing-element-list-item-link-padding-top, 0);
     --header-navigation-collapsible-list-item-link-padding-right: var(--collapsing-element-list-item-link-padding-right, 2rem);
@@ -67,6 +69,12 @@
     --header-navigation-collapsible-list-item-link-hover-background-color: var(--collapsing-element-list-item-link-hover-background-color, #c0c0c0);
     --header-navigation-collapsible-list-item-link-hover-text-color: var(--collapsing-element-list-item-link-hover-text-color, #000);
     --header-navigation-collapsible-list-item-hover-text-decoration: var(--header-navigation-collapsible-list-item-link-text-decoration);
+
+    /* Current page */
+    @include link.styling-variables('header-navigation-collapsible-list-item-link-selected-', 'header-navigation-link-active-');
+
+    /* Icon */
+    @include icon.icon-format-variables('header-navigation-collapsible-list-item-link-selected-', 'header-navigation-link-active-');
 
     /* Button */
     --header-navigation-collapsible-button-background-color: var(--collapsing-element-button-background-color, var(--application-base-background-color));

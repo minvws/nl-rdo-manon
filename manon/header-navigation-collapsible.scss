@@ -3,6 +3,8 @@
 /*---------------------------------------------------------------*/
 @use "header-navigation-collapsible-variables";
 @use "mixins/collapsible";
+@use "mixins/link";
+@use "mixins/icon";
 
 body>header nav.collapsible {
   @include collapsible.collapsible;
@@ -115,7 +117,7 @@ body>header nav.collapsible {
                 text-decoration: var(--header-navigation-collapsible-list-item-link-text-decoration);
                 justify-content: var(--header-navigation-collapsible-list-item-link-justify-content);
                 border: 0;
-                background-color: transparent;
+                background-color: var(--header-navigation-collapsible-list-item-link-background-color);
                 color: var(--header-navigation-collapsible-list-item-link-text-color);
                 white-space: nowrap;
 
@@ -123,6 +125,10 @@ body>header nav.collapsible {
                 padding-right: var(--header-navigation-collapsible-list-item-link-padding-right);
                 padding-bottom: var(--header-navigation-collapsible-list-item-link-padding-bottom);
                 padding-left: var(--header-navigation-collapsible-list-item-link-padding-left);
+
+                &[aria-current] {
+                  @include link.link-and-icon-styling('header-navigation-collapsible-list-item-link-selected-');
+                }
               }
 
               &:hover {
@@ -141,9 +147,7 @@ body>header nav.collapsible {
               }
 
               &[aria-current] {
-                background-color: var(--header-navigation-collapsible-list-item-link-selected-background-color);
-                color: var(--header-navigation-collapsible-list-item-link-selected-text-color);
-                text-decoration: var(--header-navigation-collapsible-list-item-link-selected-text-decoration);
+                @include link.link-and-icon-styling('header-navigation-collapsible-list-item-link-selected-');
               }
             }
           }
