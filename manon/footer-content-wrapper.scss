@@ -4,7 +4,7 @@
 @use "footer-content-wrapper-variables";
 
 footer {
-    div {
+    > div {
         display: flex;
         flex-direction: var(--footer-content-wrapper-flex-direction);
         justify-content: var(--footer-content-wrapper-justify-content);
