@@ -21,6 +21,8 @@
   text-decoration: var(--#{$prefix}icon-text-decoration);
   padding-right: var(--#{$prefix}icon-padding-right);
   padding-left: var(--#{$prefix}icon-padding-left);
+  background-color: var(--#{$prefix}icon-background-color);
+  color: var(--#{$prefix}icon-text-color);
 }
 
 @mixin icon-format-variables($prefix, $parentPrefix) {
@@ -30,6 +32,8 @@
   --#{$prefix}icon-text-decoration: var(--#{$parentPrefix}text-decoration);
   --#{$prefix}icon-padding-right: 0.5rem;
   --#{$prefix}icon-padding-left: 0;
+  --#{$prefix}icon-background-color: var(--#{$parentPrefix}background-color);
+  --#{$prefix}icon-text-color: var(--#{$parentPrefix}text-color);
 }
 
 @mixin icon-content($prefix) {
