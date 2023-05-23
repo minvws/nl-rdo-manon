@@ -21,7 +21,6 @@
     --header-navigation-collapsible-border-style: var(--collapsing-element-border-style, solid);
     --header-navigation-collapsible-border-color: var(--collapsing-element-border-color, transparent);
 
-    --header-navigation-collapsible-background-color: var(--header-navigation-background-color, #fff);
     --header-navigation-collapsible-menu-order: var(--collapsing-element-order, 0);
 
     --header-navigation-collapsible-background-color: var(--header-navigation-background-color, #fff);
@@ -40,7 +39,7 @@
     /* List item */
     --header-navigation-collapsible-list-item-align-items: var(--collapsing-element-list-item-align-items, flex-start);
 
-    --header-navigation-collapsible-list-item-background-color: var(--header-navigation-collapsible-list-background-color, transparent);
+    --header-navigation-collapsible-list-item-background-color: var(--header-navigation-list-item-background-color, transparent);
     --header-navigation-collapsible-list-item-text-color: var(--header-navigation-collapsible-text-color, #000);
 
     --header-navigation-collapsible-list-item-border-width: var(--collapsing-element-list-item-border-width, 1px 0 0 0);
