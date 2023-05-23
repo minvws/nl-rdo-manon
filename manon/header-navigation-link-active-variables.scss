@@ -14,5 +14,5 @@
   // --header-navigation-link-active-icon-text-color: var(--header-navigation-link-active-text-color);
   // --header-navigation-link-active-icon-text-decoration: var(--header-navigation-link-icon-text-decoration);
 
-  @include icon.icon-format-variables('header-navigation-link-active-', 'navigation-link-active-');
+  @include icon.icon-format-variables('header-navigation-link-active-', 'header-navigation-link-active-');
 }
