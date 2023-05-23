@@ -1,0 +1,40 @@
+name: Npm
+
+on:
+  push:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --ignore-scripts
+
+      - name: npm audit
+        run: npm audit
+        working-directory: ./manon
+
+      - name: Lint SCSS
+        run: npm run lint:css
+        working-directory: ./manon
+        continue-on-error: true
+
+      - name: Build Docs CSS and JS
+        run: npm run build
+        working-directory: ./docs
