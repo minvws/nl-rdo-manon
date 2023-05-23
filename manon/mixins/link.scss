@@ -14,6 +14,7 @@
   border-style: var(--#{$prefix}border-style);
   border-color: var(--#{$prefix}border-color);
   border-radius: var(--#{$prefix}border-radius);
+  box-sizing: border-box;
 }
 
 @mixin link-and-icon-styling($prefix) {

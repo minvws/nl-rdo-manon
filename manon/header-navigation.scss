@@ -89,7 +89,8 @@ body>header,
         align-items: var(--header-navigation-list-item-align-items);
         color: var(--header-navigation-list-item-text-color);
         list-style: none;
-        padding: var(--header-navigation-list-item-padding);
+        padding: 0;
+        box-sizing: border-box;
 
         &:before {
           display: none;
@@ -105,7 +106,6 @@ body>header,
           padding-bottom: var(--header-navigation-link-padding-bottom);
           padding-left: var(--header-navigation-link-padding-left);
           min-height: var(--header-navigation-link-min-height);
-          height: 100%;
         }
       }
     }

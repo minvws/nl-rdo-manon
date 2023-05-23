@@ -16,7 +16,6 @@ body>header,
 %header-navigation-style {
   nav {
 
-    a,
     a:active,
     a.active {
       @extend %header-navigation-link-active-styling;
@@ -31,7 +30,6 @@ body>header,
     ol {
       li {
 
-        a,
         a:active,
         a.active {
           @extend %header-navigation-link-active-styling;
