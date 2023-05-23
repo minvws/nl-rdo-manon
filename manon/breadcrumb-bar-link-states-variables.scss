@@ -1,0 +1,19 @@
+/*---------------------------------------------------------------*/
+/*---------- breadcrumb-bar-link-states-variables.scss ----------*/
+/*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
+$breadcrumb-bar-states: 'active', 'focus', 'hover', 'visited';
+
+:root {
+  @each $state in $breadcrumb-bar-states {
+    /* Breadcrumb Bar Link State */
+    @include link.styling-variables('breadcrumb-bar-link-' + $state + '-', 'link-' + $state + '-');
+
+    /* Breadcrumb Bar Link Icon State */
+    --breadcrumb-bar-link-#{$state}-icon-background-color: var(--breadcrumb-bar-link-#{$state}-background-color);
+    --breadcrumb-bar-link-#{$state}-icon-text-color: var(--breadcrumb-bar-link-#{$state}-text-color);
+    --breadcrumb-bar-link-#{$state}-icon-text-decoration: var(--breadcrumb-bar-link-icon-text-decoration);
+  }
+}
