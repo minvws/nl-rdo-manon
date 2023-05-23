@@ -5,7 +5,7 @@
 @use "mixins/icon";
 @use "mixins/link";
 
-body > header,
+body>header,
 %header-navigation-style {
   nav {
     a {
