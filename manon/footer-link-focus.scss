@@ -4,12 +4,14 @@
 @use "footer-link-focus-variables";
 @use "mixins/link";
 
-body > footer,
+body>footer,
 %footer-style {
   a {
     &:focus,
-    &.focus /* Testing purposes */
-    {
+    &.focus
+
+    /* Testing purposes */
+      {
       @include link.link-and-icon-styling('footer-link-focus-');
     }
   }

@@ -1,15 +1,17 @@
 /*---------------------------------------------------------------*/
 /*------------------ footer-link-visited.scss -------------------*/
 /*---------------------------------------------------------------*/
-@use "footer-link-visited-variables";
+@use "link-visited-variables";
 @use "mixins/link";
 @use "mixins/outline";
 
 a {
   /* states */
   &:visited,
-  &.visited /* Testing purposes */
-  {
+  &.visited
+
+  /* Testing purposes */
+    {
     @include link.link-and-icon-styling('link-visited-');
     @include link.link-elements-styling('link-visited-');
     @include outline.outline('link-visited-');
