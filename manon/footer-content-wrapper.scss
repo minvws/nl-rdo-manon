@@ -3,7 +3,7 @@
 /*---------------------------------------------------------------*/
 @use "footer-content-wrapper-variables";
 
-main footer {
+footer {
     div {
         display: flex;
         flex-direction: var(--footer-content-wrapper-flex-direction);
