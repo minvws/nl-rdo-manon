@@ -1,14 +1,16 @@
 /*---------------------------------------------------------------*/
 /*------------------------- link-hover.scss ---------------------*/
 /*---------------------------------------------------------------*/
-@use "footer-link-hover-variables";
+@use "link-hover-variables";
 @use "mixins/link";
 @use "mixins/outline";
 
 a {
   &:hover,
-  &.hover /* Testing purposes */
-  {
+  &.hover
+
+  /* Testing purposes */
+    {
     @include link.link-and-icon-styling('link-hover-');
     @include link.link-elements-styling('link-hover-');
     @include outline.outline('link-hover-');
