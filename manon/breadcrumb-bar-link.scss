@@ -1,0 +1,18 @@
+/*---------------------------------------------------------------*/
+/*----------------- breadcrumb-bar-link.scss --------------------*/
+/*---------------------------------------------------------------*/
+@use "breadcrumb-bar-link-variables";
+@use "mixins/link";
+
+.breadcrumb-bar,
+body > header nav.breadcrumb-bar {
+  ul,
+  ol {
+    li {
+      a {
+        @include link.link('breadcrumb-bar-link-');
+      }
+    }
+  }
+}
+
