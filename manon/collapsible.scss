@@ -144,11 +144,11 @@
 
                     a {
                         background-color: var(--collapsing-element-list-item-link-hover-background-color);
-                        color: var(---collapsing-element-list-item-link-hover-text-color);
+                        color: var(--collapsing-element-list-item-link-hover-text-color);
                         text-decoration: var(--collapsing-element-list-link-hover-text-decoration);
 
                         &:visited {
-                            background-color: var(---collapsing-element-list-item-link-hover-background-color);
+                            background-color: var(--collapsing-element-list-item-link-hover-background-color);
                         }
                     }
                 }
