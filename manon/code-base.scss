@@ -14,6 +14,6 @@ code {
   word-break: var(--code-base-word-break, inherit);
 
   @media (min-width: $breakpoint) {
-    word-break: var(----code-base-breakpoint-word-break, break-word);
+    word-break: var(--code-base-breakpoint-word-break, break-word);
   }
 }
