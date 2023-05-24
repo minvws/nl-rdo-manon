@@ -15,10 +15,10 @@
   },
   "devDependencies": {
     "@minvws/manon": "workspace:*",
-    "concurrently": "^7.2.2",
-    "esbuild": "^0.14.48",
-    "prettier": "^2.6.2",
+    "concurrently": "^7.6.0",
+    "esbuild": "^0.14.54",
+    "prettier": "^2.8.8",
     "rimraf": "^3.0.2",
-    "sass": "^1.51.0"
+    "sass": "^1.62.1"
   }
 }

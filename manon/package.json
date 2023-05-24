@@ -1,6 +1,6 @@
 {
   "name": "@minvws/manon",
-  "version": "v12.1.0",
+  "version": "v12.2.0",
   "license": "EUPL-1.2",
   "files": [
     "*.scss",
@@ -17,7 +17,7 @@
     "lint:css:fix": "npm run lint:css -- --fix"
   },
   "devDependencies": {
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.8",
     "stylelint": "^15.6.2",
     "stylelint-config-standard-scss": "^9.0.0"
   },
