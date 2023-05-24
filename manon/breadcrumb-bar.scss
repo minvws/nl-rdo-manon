@@ -85,15 +85,6 @@
           text-decoration: var(--breadcrumb-bar-link-hover-text-decoration);
           border: 0;
         }
-
-        &[aria-current="page"] {
-          border: 0;
-          font-weight: var(--breadcrumb-bar-list-item-last-child-font-weight);
-
-          &:hover {
-            border: 0;
-          }
-        }
       }
     }
   }
