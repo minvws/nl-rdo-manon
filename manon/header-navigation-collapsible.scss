@@ -138,10 +138,10 @@ body>header nav.collapsible {
 
                 a {
                   background-color: var(--header-navigation-collapsible-list-item-link-hover-background-color);
-                  color: var(---header-navigation-collapsible-list-item-link-hover-text-color);
+                  color: var(--header-navigation-collapsible-list-item-link-hover-text-color);
 
                   &:visited {
-                    background-color: var(---header-navigation-collapsible-list-item-link-hover-background-color);
+                    background-color: var(--header-navigation-collapsible-list-item-link-hover-background-color);
                   }
                 }
               }
