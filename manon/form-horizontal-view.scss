@@ -158,16 +158,32 @@ form.horizontal-view {
   }
 
   @media (min-width: $breakpoint) {
+    %align-to-input {
+      width: auto;
+      max-width: 100%;
+      margin-left: var(--label-column);
+      flex-grow: 0;
+    }
 
     >button,
     >a.button,
     >input[type="button"],
     >input[type="submit"],
-    >input[type="reset"] {
-      width: auto;
-      max-width: 100%;
-      margin-left: var(--label-column);
-      flex-grow: 0;
+    >input[type="reset"],
+    >a {
+      @extend %align-to-input;
+    }
+
+    >div {
+
+      >button,
+      >a.button,
+      >input[type="button"],
+      >input[type="submit"],
+      >input[type="reset"],
+      >a {
+        @extend %align-to-input;
+      }
     }
 
     >div.horizontal-view,
