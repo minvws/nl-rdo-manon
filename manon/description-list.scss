@@ -5,15 +5,24 @@
 
 $breakpoint: 24rem !default;
 
+main div dl,
+main section dl,
+main article dl,
 dl {
   width: var(--description-list-width, 100%);
   max-width: var(--description-list-max-width);
   margin: 0;
 
+
+
   >div {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--description-list-item-gap, 0 1rem);
+
+    flex-direction: var(--description-list-flex-direction);
+    gap: var(--description-list-gap);
+    padding: 0;
 
     &:nth-child(odd) {
       background-color: var(--description-list-item-odd-background-color);
