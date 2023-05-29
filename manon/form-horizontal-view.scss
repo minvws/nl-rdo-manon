@@ -25,7 +25,7 @@ form.horizontal-view {
     align-items: center;
     justify-content: var(--form-horizontal-view-justify-content);
     flex-wrap: wrap;
-    gap: var(--form-horizontal-view-gap);
+    gap: var(--form-horizontal-view-group-gap) var(--form-horizontal-view-group-vertical-gap);
     margin: 0;
 
     &.checkbox {

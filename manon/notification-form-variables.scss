@@ -29,7 +29,7 @@
 
     /* Space between fields and notifications */
     /* Please note that the default spacing is --form-base-gap */
-    --notification-form-fields-gap: calc(var(--form-base-gap) * -1);
+    --notification-form-fields-gap: calc(var(--form-group-gap) * -1);
 
     /* Fields notification icon */
     --notification-form-fields-icon-font-family: var(--icon-font-family);
@@ -41,13 +41,13 @@
 
     /* Fields notification error icon */
     --notification-form-fields-error-icon: var(--notification-error-icon-content);
-    
+
     /* Fields notification warning icon */
     --notification-form-fields-warning-icon: var(--notification-warning-icon-content);
-    
+
     /* Fields notification explanation icon */
     --notification-form-fields-explanation-icon: var(--notification-explanation-icon-content);
-    
+
     /* Fields notification confirmation icon */
     --notification-form-fields-confirmation-icon: var(--notification-confirmation-icon-content);
 
