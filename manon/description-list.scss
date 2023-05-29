@@ -8,8 +8,9 @@ $breakpoint: 24rem !default;
 dl {
   width: var(--description-list-width, 100%);
   max-width: var(--description-list-max-width);
+  margin: 0;
 
-  > div {
+  >div {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--description-list-item-gap, 0 1rem);
