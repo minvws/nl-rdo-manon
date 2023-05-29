@@ -4,12 +4,20 @@
 @use "div-content-wrapper-variables";
 
 main div {
-  div {
+
+  div,
+  section,
+  article {
     display: flex;
     flex-direction: var(--div-content-wrapper-flex-direction);
     justify-content: var(--div-content-wrapper-justify-content);
     align-items: var(--div-content-wrapper-align-items);
     gap: var(--div-content-wrapper-gap);
+  }
+
+  >div,
+  >section,
+  >article {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;

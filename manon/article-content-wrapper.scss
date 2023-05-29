@@ -4,12 +4,21 @@
 @use "article-content-wrapper-variables";
 
 main article {
-  > div {
+
+  div,
+  section,
+  article {
     display: flex;
     flex-direction: var(--article-content-wrapper-flex-direction);
     gap: var(--article-content-wrapper-gap);
     justify-content: var(--article-content-wrapper-justify-content);
     align-items: var(--article-content-wrapper-align-items);
+    margin: 0;
+  }
+
+  >div,
+  >section,
+  >article {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
