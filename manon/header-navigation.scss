@@ -99,14 +99,9 @@ body>header,
         }
 
         a {
-          display: flex;
-          justify-content: var(--header-navigation-link-justify-content);
-          align-items: var(--header-navigation-link-align-items);
-          padding-top: var(--header-navigation-link-padding-top);
-          padding-right: var(--header-navigation-link-padding-right);
-          padding-bottom: var(--header-navigation-link-padding-bottom);
-          padding-left: var(--header-navigation-link-padding-left);
-          min-height: var(--header-navigation-link-min-height);
+          height: 100%;
+          display: inline-flex;
+          align-items: center;
         }
       }
     }
