@@ -3,23 +3,24 @@
 /*---------------------------------------------------------------*/
 :root {
   /* Description-list */
-  /* --description-list-width: auto; */
-  /* --description-list-max-width: ; */
+  --description-list-width: 100%;
+  --description-list-max-width: 100%;
+  --description-list-flex-direction: row;
+  --description-list-gap: 0;
 
   /* Description list item */
   --description-list-item-padding: 0.5rem 1rem;
-  --description-list-item-odd-background-color: var(
-    --application-base-tint-1-background-color,
-    #f0f0f0
-  );
-  /* --description-list-item-gap: ; */
+  --description-list-item-odd-background-color: var(--application-base-tint-1-background-color,
+      #f0f0f0);
+  --description-list-item-gap: var(--application-base-gap);
+  --description-list-item-flex-direction: row;
 
   /* Description list item title (dt) */
-  /* --description-list-item-title-font-weight: ; */
-  /* --description-list-item-title-background-color: ; */
-  /* --description-list-item-title-text-color: ; */
+  --description-list-item-title-font-weight: var(--application-base-font-weight);
+  --description-list-item-title-background-color: transparent;
+  --description-list-item-title-text-color: var(--application-base-tint-1-text-color);
 
   /* Description list item title (dd) */
-  /* --description-list-item-data-background-color: ; */
-  /* --description-list-item-data-text-color: ; */
+  --description-list-item-data-background-color: var(--description-list-item-title-background-color);
+  --description-list-item-data-text-color: var(--description-list-item-title-text-color);
 }
