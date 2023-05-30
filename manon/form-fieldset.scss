@@ -19,6 +19,8 @@ For more information on the bug see: https://github.com/philipwalton/flexbugs#9-
 and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 
 main section form,
+main article form,
+main div form,
 form {
   >fieldset {
 

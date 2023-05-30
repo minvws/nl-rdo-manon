@@ -49,4 +49,10 @@
       gap: var(--checkbox-gap);
     }
   }
+
+  +.nota-bene {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: calc(var(--checkbox-width) + var(--checkbox-gap));
+  }
 }
