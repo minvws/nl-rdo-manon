@@ -4,14 +4,24 @@
 @use "footer-content-wrapper-variables";
 
 footer {
-    div {
+
+    div,
+    section,
+    article {
         display: flex;
         flex-direction: var(--footer-content-wrapper-flex-direction);
         justify-content: var(--footer-content-wrapper-justify-content);
         align-items: var(--footer-content-wrapper-align-items);
         gap: var(--footer-content-wrapper-gap);
+        margin: 0;
+    }
+
+    >div,
+    >section,
+    >article {
         width: 100%;
         margin: 0 auto;
+        max-width: var(--section-content-wrapper-max-width);
         box-sizing: border-box;
         padding-top: var(--footer-content-wrapper-padding-top);
         padding-right: var(--footer-content-wrapper-padding-right);
