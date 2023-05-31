@@ -1,6 +1,5 @@
 {
   "name": "@minvws/manon",
-  "version": "v13.0.0",
   "license": "EUPL-1.2",
   "files": [
     "*.scss",
