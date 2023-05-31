@@ -11,7 +11,8 @@ body > header nav.breadcrumb-bar {
   ul,
   ol {
     li {
-      a {
+      a,
+      a[aria-current="page"] {
         @each $state in $breadcrumb-bar-states {
           &:#{$state},
           &.#{$state} /* Testing purposes */
@@ -19,10 +20,10 @@ body > header nav.breadcrumb-bar {
             @include link.link-and-icon-styling('breadcrumb-bar-link-' + $state + '-');
           }
         }
+      }
 
-        &[aria-current="page"] {
-          @include link.link-and-icon-styling('breadcrumb-bar-link-active-');
-        }
+      &[aria-current="page"] {
+        @include link.link-and-icon-styling('breadcrumb-bar-link-active-');
       }
     }
   }
