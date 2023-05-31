@@ -1,7 +1,10 @@
 name: Publish package to npmjs
+
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - v*
+
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
@@ -20,10 +23,14 @@ jobs:
           node-version: 16
           registry-url: 'https://registry.npmjs.org'
 
+      - run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - name: Publish
         # pnpm checks whether you are on the main branch when running publish,
         # but github will checkout the tag, so we need to disable the check
-        run: cd manon && pnpm publish --no-git-checks
+        run: |
+          cd manon
+          npm version --no-git-tag-version ${{ env.RELEASE_VERSION }}
+          pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -44,9 +51,13 @@ jobs:
           node-version: 16
           registry-url: 'https://npm.pkg.github.com'
 
+      - run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - name: Publish
         # pnpm checks whether you are on the main branch when running publish,
         # but github will checkout the tag, so we need to disable the check
-        run: cd manon && pnpm publish --no-git-checks
+        run: |
+          cd manon
+          npm version --no-git-tag-version ${{ env.RELEASE_VERSION }}
+          pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
