@@ -7,6 +7,13 @@
   /* Link */
   @include link.styling-variables('header-navigation-link-', 'navigation-link-');
 
+  --header-navigation-link-align-items: center;
+  --header-navigation-link-justify-content: center;
+  --header-navigation-link-padding-top: 0;
+  --header-navigation-link-padding-right: 0;
+  --header-navigation-link-padding-bottom: 0;
+  --header-navigation-link-padding-left: 0;
+
   /* Icon */
   --header-navigation-link-icon-font-family: var(--navigation-link-icon-font-family);
   --header-navigation-link-icon-font-size: var(--navigation-link-icon-font-size);
