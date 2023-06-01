@@ -3,17 +3,12 @@
 /*------------------------------------------------------------------------*/
 :root {
   --layout-authentication-max-width: 40rem;
-  --layout-authentication-padding: var(--layout-authentication-padding);
-  /* --layout-authentication-background-color: ; */
-  /* --layout-authentiaction-text-color: ; */
+  --layout-authentication-background-color: var(--application-base-background-color);
+  --layout-authentiaction-text-color: var(--application-base-text-color);
 
   /* After breakpoint 1 */
-  --layout-authentication-breakpoint-1-padding: var(
-    --layout-authentication-padding
-  );
+  --layout-authentication-breakpoint-1-padding: var(--layout-authentication-padding);
 
   /* After breakpoint 2 */
-  --layout-authentication-breakpoint-2-padding: var(
-    --layout-authentication-breakpoint-1-padding
-  );
+  --layout-authentication-breakpoint-2-padding: var(--layout-authentication-breakpoint-1-padding);
 }
