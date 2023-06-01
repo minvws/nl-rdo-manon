@@ -17,13 +17,5 @@ form {
     margin: 0 auto;
     background-color: var(--layout-authentication-background-color);
     color: var(--layout-authentication-text-color);
-
-    @media (min-width: $breakpoint-1) {
-      padding: var(--layout-authentication-breakpoint-1-padding);
-    }
-
-    @media (min-width: $breakpoint-2) {
-      padding: var(--layout-authentication-breakpoint-2-padding);
-    }
   }
 }
