@@ -2,30 +2,12 @@
 /*---------------- article-content-wrapper.scss -----------------*/
 /*---------------------------------------------------------------*/
 @use "article-content-wrapper-variables";
+@use "mixins/content-wrapper";
 
-main article {
+main article div {
+  @include content-wrapper.nested('article');
+}
 
-  div,
-  section,
-  article {
-    display: flex;
-    flex-direction: var(--article-content-wrapper-flex-direction);
-    gap: var(--article-content-wrapper-gap);
-    justify-content: var(--article-content-wrapper-justify-content);
-    align-items: var(--article-content-wrapper-align-items);
-    margin: 0;
-  }
-
-  >div,
-  >section,
-  >article {
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding-top: var(--article-content-wrapper-padding-top);
-    padding-right: var(--article-content-wrapper-padding-right);
-    padding-bottom: var(--article-content-wrapper-padding-bottom);
-    padding-left: var(--article-content-wrapper-padding-left);
-    max-width: var(--article-content-wrapper-max-width);
-  }
+main>article>div {
+  @include content-wrapper.styling('article');
 }

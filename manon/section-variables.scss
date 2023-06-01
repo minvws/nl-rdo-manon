@@ -1,16 +1,9 @@
 /*------------------------------------------------------------------------*/
 /*-------------------------- section-variables.scss ----------------------*/
 /*------------------------------------------------------------------------*/
+@use "mixins/layout";
 
 :root {
   /* Layout */
-  --section-flex-direction: var(--content-flex-direction);
-  --section-justify-content: var(--content-justify-content);
-  --section-align-items: var(--content-align-items);
-  --section-gap: 0;
-  --section-padding-top: 0;
-  --section-padding-right: var(--page-whitespace-right);
-  --section-padding-bottom: 0;
-  --section-padding-left: var(--page-whitespace-left);
-  --section-max-width: 100%;
+  @include layout.layout-variables('section');
 }
