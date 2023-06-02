@@ -6,5 +6,7 @@
 form {
   select {
     width: var(--form-select-width);
+    font-family: var(--application-base-font-family);
+    font-size: var(--application-base-font-size);
   }
 }
