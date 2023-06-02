@@ -10,5 +10,4 @@ main div div {
 
 main>div>div {
   @include content-wrapper.styling('div');
-  background-color: plum;
 }
