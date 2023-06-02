@@ -4,10 +4,10 @@
 @use "footer-content-wrapper-variables";
 @use "mixins/content-wrapper";
 
-main footer {
+main footer div {
     @include content-wrapper.nested('footer');
 }
 
-main>footer {
+main>footer>div {
     @include content-wrapper.styling('footer');
 }
