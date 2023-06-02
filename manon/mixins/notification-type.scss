@@ -47,7 +47,7 @@
   padding-left: var(--notification-#{$type}-page-padding-left);
   gap: var(--notification-#{$type}-page-gap);
 
-  >span:first-of-type {
+  span:first-of-type {
     font-weight: var(--notification-#{$type}-page-span-font-weight);
   }
 
@@ -59,7 +59,7 @@
     padding-left: var(--notification-#{$type}-page-content-wrapper-padding-left);
     gap: var(--notification-#{$type}-page-content-wrapper-gap);
 
-    >span:first-of-type {
+    span:first-of-type {
       font-weight: var(--notification-#{$type}-page-span-font-weight);
     }
   }

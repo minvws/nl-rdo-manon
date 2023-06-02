@@ -10,14 +10,14 @@
     @include notification-type.notification-page-type("confirmation");
 }
 
-main  {
+main {
     &.confirmation {
         @extend %notifictions-confirmation-page-styling;
     }
 
-    > section,
-    > article,
-    > div {
+    >section,
+    >article,
+    >div {
         &.confirmation {
             @extend %notifictions-confirmation-page-styling;
         }

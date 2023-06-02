@@ -30,7 +30,7 @@
     }
   }
 
-  > span:first-of-type {
+  span:first-of-type {
     font-weight: var(--notification-span-font-weight);
   }
 }
@@ -40,14 +40,15 @@
 }
 
 /* Icon */
-p, 
+p,
 span,
 section,
 div {
-  &.error, 
-  &.warning, 
+
+  &.error,
+  &.warning,
   &.explanation,
-  &.confirmation, 
+  &.confirmation,
   &.system {
     &:before {
       @include icon.icon;
