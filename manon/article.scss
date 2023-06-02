@@ -2,20 +2,8 @@
 /*----------------------- article.scss --------------------------*/
 /*---------------------------------------------------------------*/
 @use "article-variables";
+@use "mixins/layout";
 
-article {
-  /* Layout */
-  display: flex;
-  flex-direction: var(--article-flex-direction);
-  gap: var(--article-gap);
-  justify-content: var(--article-justify-content);
-  align-items: var(--article-align-items);
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding-top: var(--article-padding-top);
-  padding-right: var(--article-padding-right);
-  padding-bottom: var(--article-padding-bottom);
-  padding-left: var(--article-padding-left);
-  max-width: var(--article-max-width);
+main article {
+  @include layout.layout('article');
 }

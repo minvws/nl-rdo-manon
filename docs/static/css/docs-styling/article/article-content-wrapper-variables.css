@@ -5,7 +5,7 @@
 :root {
   /* Resetting previously set styles. */
   /* This is only needed if these styles have been added */
-  
+
   /* Main */
   --main-gap: 0;
   --main-padding-top: 0;
@@ -19,7 +19,7 @@
   --article-padding-right: 0;
   --article-padding-bottom: 0;
   --article-padding-left: 0;
- 
+
   /* -- end of the style reset -- */
 
   /* Section content wrapper */

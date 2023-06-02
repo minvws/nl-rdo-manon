@@ -2,31 +2,12 @@
 /*---------------- footer-content-wrapper.scss ------------------*/
 /*---------------------------------------------------------------*/
 @use "footer-content-wrapper-variables";
+@use "mixins/content-wrapper";
 
-footer {
+footer div {
+    @include content-wrapper.nested('footer');
+}
 
-    div,
-    section,
-    article {
-        display: flex;
-        flex-direction: var(--footer-content-wrapper-flex-direction);
-        justify-content: var(--footer-content-wrapper-justify-content);
-        align-items: var(--footer-content-wrapper-align-items);
-        gap: var(--footer-content-wrapper-gap);
-        margin: 0;
-    }
-
-    >div,
-    >section,
-    >article {
-        width: 100%;
-        margin: 0 auto;
-        max-width: var(--section-content-wrapper-max-width);
-        box-sizing: border-box;
-        padding-top: var(--footer-content-wrapper-padding-top);
-        padding-right: var(--footer-content-wrapper-padding-right);
-        padding-bottom: var(--footer-content-wrapper-padding-bottom);
-        padding-left: var(--footer-content-wrapper-padding-left);
-        max-width: var(--footer-content-wrapper-max-width);
-    }
+footer>div {
+    @include content-wrapper.styling('footer');
 }

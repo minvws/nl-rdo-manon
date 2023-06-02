@@ -2,19 +2,9 @@
 /*------------------------- main.scss ---------------------------*/
 /*---------------------------------------------------------------*/
 @use "main-variables";
+@use "mixins/layout";
 
-body > main,
+body>main,
 %main-style {
-  display: flex;
-  flex-direction: var(--main-flex-direction);
-  justify-content: var(--main-justify-content);
-  gap: var(--main-gap);
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding-top: var(--main-padding-top);
-  padding-right: var(--main-padding-right);
-  padding-bottom: var(--main-padding-bottom);
-  padding-left: var(--main-padding-left);
-  max-width: var(--main-max-width);
+  @include layout.layout('main');
 }

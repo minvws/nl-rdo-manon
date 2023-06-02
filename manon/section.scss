@@ -2,19 +2,8 @@
 /*------------------------- section.scss ------------------------*/
 /*---------------------------------------------------------------*/
 @use "section-variables";
+@use "mixins/layout";
 
 main section {
-  display: flex;
-  flex-direction: var(--section-flex-direction);
-  justify-content: var(--section-justify-content);
-  align-items: var(--section-align-items);
-  gap: var(--section-gap);
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding-top: var(--section-padding-top);
-  padding-right: var(--section-padding-right);
-  padding-bottom: var(--section-padding-bottom);
-  padding-left: var(--section-padding-left);
-  max-width: var(--section-max-width);
+  @include layout.layout('section');
 }

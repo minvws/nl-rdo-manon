@@ -1,16 +1,18 @@
 /* Theme: Soft based on manon components */
 
 /* Base - Top level styling */
-@use "application-base"; /* Styling on the highest level */
+@use "application-base";
+/* Styling on the highest level */
 
 /* Styling sets. E.g color sets */
-@use "spot-large"; /* Branding colors */
-@use "body-text-set"; /* Body set */
-@use "headings-base-set"; /* Headings set basic */
-@use "layout-set"; /* Defining shared layout values */
+/* Branding colors */
+@use "spot-large";
 
-/* Layout */
-@use "section";
+/* Body set */
+@use "body-text-set";
+
+/* Headings set basic */
+@use "headings-base-set";
 
 /* Components */
 @use "breadcrumb-bar";
