@@ -8,6 +8,7 @@ main section div {
   @include content-wrapper.nested('section');
 }
 
-main>section>div {
+main > section > div,
+main.sidemenu div > section > div {
   @include content-wrapper.styling('section');
 }
