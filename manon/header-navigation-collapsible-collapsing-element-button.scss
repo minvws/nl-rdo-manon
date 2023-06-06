@@ -13,26 +13,26 @@
   input[type="button"],
   input[type="submit"],
   input[type="reset"] {
-    @include link.styling("#{$prefix}button-");
+    @include link.styling("#{$prefix}");
 
-    width: var(--#{$prefix}button-width);
-    text-align: var(--#{$prefix}button-text-align);
+    width: var(--#{$prefix}width);
+    text-align: var(--#{$prefix}text-align);
 
-    padding-top: var(--#{$prefix}button-padding-top);
-    padding-right: var(--#{$prefix}button-padding-right);
-    padding-bottom: var(--#{$prefix}button-padding-bottom);
-    padding-left: var(--#{$prefix}button-padding-left);
+    padding-top: var(--#{$prefix}padding-top);
+    padding-right: var(--#{$prefix}padding-right);
+    padding-bottom: var(--#{$prefix}padding-bottom);
+    padding-left: var(--#{$prefix}padding-left);
   }
 }
 
 body>header nav.collapsible.collapsed {
   .collapsing-element {
-    @include button('header-navigation-collapsible-collapsing-element-');
+    @include button('header-navigation-collapsible-collapsing-element-button-');
 
     ul,
     ol {
       li {
-        @include button('header-navigation-collapsible-collapsing-element-list-item-');
+        @include button('header-navigation-collapsible-collapsing-element-list-item-button-');
       }
     }
   }
