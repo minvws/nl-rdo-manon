@@ -81,12 +81,56 @@
             <h3>Html-voorbeeld:</h3>
             <pre>
               <code>
+&lt;div
+  data-open-label="Dropdown menu"
+  data-close-label="Sluit dropdown menu"
+  data-media="(min-width: 100%)"
+  aria-label="Acties"
+  class="collapsible">
+
+  &lt;div class="collapsing-element">
+      &lt;ul>
+          &lt;li>&lt;a href="#">Item 1&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#" aria-selected="true">Huidige selectie&lt;/a>&lt;/li>
+          &lt;li>&lt;a href="#">Item 3&lt;/a>&lt;/li>
+      &lt;/ul>
+  &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2>Template <code>button</code></h2>
+            <h3>Visuele weergave:</h3>
+
+            <div
+              data-open-label="Dropdown menu"
+              data-close-label="Sluit dropdown menu"
+              data-media="(min-width: 100%)"
+              aria-label="Acties"
+              class="collapsible">
+
+              <button>Button</button>
+
+              <div class="collapsing-element">
+                  <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+                      <li><a href="#">Item 3</a></li>
+                  </ul>
+              </div>
+            </div>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+              <code>
 &lt;div 
   data-open-label="Dropdown menu" 
   data-close-label="Sluit dropdown menu" 
   data-media="(min-width: 100%)" 
   aria-label="Acties"
   class="collapsible">
+
+  &lt;button>Button&lt;/button>
 
   &lt;div class="collapsing-element">
       &lt;ul>
@@ -202,6 +246,25 @@
                       <li><a href="#" aria-selected="true">Huidige selectie</a></li>
                       <li><a href="#">Item 3</a></li>
                   </ul>
+
+                  <div
+                    data-open-label="Dropdown menu"
+                    data-close-label="Sluit dropdown menu"
+                    data-media="(min-width: 100%)"
+                    data-button-classes="icon icon-cat"
+                    aria-label="Acties"
+                    class="collapsible">
+
+                    <div class="collapsing-element">
+                        <ul>
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+                            <li><a href="#">Item 3</a></li>
+                        </ul>
+                    </div>
+                  </div>
+
+
               </div>
             </div>
 

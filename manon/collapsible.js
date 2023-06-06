@@ -30,7 +30,7 @@ export function initNaviation() {
  */
 function makeResponsive(collapsibleElement, isCondensed) {
   var collapsingElement = collapsibleElement.querySelector(".collapsing-element");
-  
+
   if (!(collapsingElement instanceof HTMLElement)) {
       console.error("missing collapsing element for: ", collapsibleElement);
       return;
@@ -69,24 +69,38 @@ function makeResponsive(collapsibleElement, isCondensed) {
  * @return {{ element: HTMLButtonElement, setExpanded: (expanded: boolean) => void }}
  */
 function createMenuButton(collapsingElementId, openLabel, closeLabel, buttonClasses) {
-  var button = document.createElement("button");
-  button.className = "collapsible-toggle " + buttonClasses;
-  button.setAttribute("aria-controls", collapsingElementId);
-  button.setAttribute("aria-expanded", "false");
-  button.setAttribute("aria-haspopup", "menu");
+    var buttonElement = document.getElementById(collapsingElementId).parentElement.querySelector(".collapsible > button");
 
-  var label = document.createElement("span");
-  label.innerText = openLabel;
-  label.className = "sr-only";
-  ensureElementHasId(label);
+    if(buttonElement) {
+      var button = buttonElement
+    } else {
+      var button = document.createElement("button");
+    }
 
-  button.appendChild(label);
-  button.setAttribute("aria-labelledby", label.id);
+    button.className = "collapsible-toggle " + buttonClasses;
+    button.setAttribute("aria-controls", collapsingElementId);
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-haspopup", "menu");
+
+    var label = document.createElement("span");
+    if(buttonElement) {
+      label.innerText = button.innerHTML;
+      button.innerHTML = "";
+    } else {
+      label.innerText = openLabel;
+    }
+    label.className = "sr-only";
+    ensureElementHasId(label);
+
+    button.appendChild(label);
+    button.setAttribute("aria-labelledby", label.id);
 
   function setExpanded(expanded) {
     if (expanded !== (button.getAttribute("aria-expanded") === "true")) {
       button.setAttribute("aria-expanded", String(expanded));
-      label.innerText = expanded ? closeLabel : openLabel;
+      if(!buttonElement) {
+        label.innerText = expanded ? closeLabel : openLabel;
+      }
     }
   }
 
