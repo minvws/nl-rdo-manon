@@ -12,10 +12,6 @@ dl {
   width: var(--description-list-width, 100%);
   max-width: var(--description-list-max-width);
   margin: 0;
-  display: flex;
-  flex-direction: var(--description-list-flex-direction);
-  flex-wrap: wrap;
-  gap: var(--description-list-gap);
 
   >div {
     display: flex;
