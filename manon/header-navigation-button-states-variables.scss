@@ -1,0 +1,19 @@
+/*---------------------------------------------------------------*/
+/*------- header-navigation-button-states-variables.scss --------*/
+/*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
+$header-navigation-button-states: 'active', 'focus', 'hover';
+
+:root {
+  @each $state in $header-navigation-button-states {
+    /* Header navigation button state */
+    @include link.styling-variables('header-navigation-button-' + $state + '-', 'button-' + $state + '-');
+
+    /* Header navigation button icon state */
+    --header-navigation-button-#{$state}-icon-background-color: var(--header-navigation-button-#{$state}-background-color);
+    --header-navigation-button-#{$state}-icon-text-color: var(--header-navigation-button-#{$state}-text-color);
+    --header-navigation-button-#{$state}-icon-text-decoration: var(--header-navigation-button-text-decoration);
+  }
+}
