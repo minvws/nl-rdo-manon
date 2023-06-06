@@ -15,9 +15,9 @@
   --button-base-height: unset;
   --button-base-background-color: var(--application-base-accent-color);
   --button-base-text-color: var(--application-base-accent-color-text-color);
-  --button-base-border-width: none;
-  --button-base-border-style: unset;
-  --button-base-border-color: transparent;
+  --button-base-border-width: 2px;
+  --button-base-border-style: solid;
+  --button-base-border-color: var(--button-base-background-color);
   --button-base-font-size: var(--application-base-font-size);
   --button-base-line-height: var(--application-base-line-height);
   --button-base-font-weight: var(--application-base-font-weight);

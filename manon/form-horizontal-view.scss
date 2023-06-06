@@ -191,6 +191,15 @@ form.horizontal-view {
       max-width: var(--input-column);
       margin-left: var(--label-column);
       flex-wrap: wrap;
+
+      button,
+      a.button,
+      input[type="button"],
+      input[type="submit"],
+      input[type="reset"] {
+        max-width: 100%;
+        margin-left: 0;
+      }
     }
   }
 }
