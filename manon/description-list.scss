@@ -32,7 +32,7 @@ dl {
     white-space: var(--description-list-item-white-space);
     word-break: break-word;
     box-sizing: border-box;
-    padding: var(--description-list-item-padding, 0.5rem 0);
+    padding: var(--description-list-item-padding);
     margin: 0;
     width: calc(50% - (var(--description-list-item-gap) / 2));
   }
