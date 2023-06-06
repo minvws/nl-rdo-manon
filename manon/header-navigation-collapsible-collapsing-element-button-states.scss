@@ -6,33 +6,32 @@
 @use "mixins/link";
 @use "mixins/icon";
 
+$header-navigation-button-states: 'active', 'focus', 'hover';
 
-@mixin button($prefix) {
+@mixin button-states($prefix) {
   button,
   a.button,
   input[type="button"],
   input[type="submit"],
   input[type="reset"] {
-    @include link.styling("#{$prefix}button-");
-
-    width: var(--#{$prefix}button-width);
-    text-align: var(--#{$prefix}button-text-align);
-
-    padding-top: var(--#{$prefix}button-padding-top);
-    padding-right: var(--#{$prefix}button-padding-right);
-    padding-bottom: var(--#{$prefix}button-padding-bottom);
-    padding-left: var(--#{$prefix}button-padding-left);
+    @each $state in $header-navigation-button-states {
+      &:#{$state},
+      &.#{$state} /* Testing purposes */
+      {
+        @include link.styling('#{$prefix}-' + $state + '-');
+      }
+    }
   }
 }
 
 body>header nav.collapsible.collapsed {
   .collapsing-element {
-    @include button('header-navigation-collapsible-collapsing-element-');
+    @include button-states('header-navigation-collapsible-collapsing-element-');
 
     ul,
     ol {
       li {
-        @include button('header-navigation-collapsible-collapsing-element-list-item-');
+        @include button-states('header-navigation-collapsible-collapsing-element-list-item-');
       }
     }
   }

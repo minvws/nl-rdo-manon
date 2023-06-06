@@ -3,16 +3,12 @@
 /*--------------------------------------------------------------------------*/
 @use "mixins/link";
 
+$header-navigation-button-states: 'active', 'focus', 'hover';
+
 @mixin button-styling($prefix, $parent) {
-  @include link.styling-variables($prefix, $parent);
-
-  --#{$prefix}width: var(--#{$parent}width);
-  --#{$prefix}text-align: var(--#{$parent}text-align);
-
-  --#{$prefix}padding-top: var(--#{$parent}padding-top);
-  --#{$prefix}padding-right: var(--#{$parent}padding-right);
-  --#{$prefix}padding-bottom: var(--#{$parent}padding-bottom);
-  --#{$prefix}padding-left: var(--#{$parent}padding-left);
+  @each $state in $header-navigation-button-states {
+    @include link.styling-variables("#{$prefix}#{$state}", "#{$prefix}#{$state}");
+  }
 }
 
 :root {
