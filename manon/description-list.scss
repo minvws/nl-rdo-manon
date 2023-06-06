@@ -22,8 +22,9 @@ dl {
     flex-direction: var(--description-list-item-flex-direction);
     gap: var(--description-list-item-gap);
     flex-direction: var(--description-list-flex-direction);
-    padding: 0;
+    padding: var(--description-list-item-padding);
     flex-wrap: wrap;
+    width: 100%;
 
     &:nth-child(odd) {
       background-color: var(--description-list-item-odd-background-color);
@@ -32,7 +33,7 @@ dl {
 
   dt,
   dd {
-    white-space: pre-wrap;
+    white-space: var(--description-list-item-white-space);
     word-break: break-word;
     box-sizing: border-box;
     padding: var(--description-list-item-padding, 0.5rem 0);
