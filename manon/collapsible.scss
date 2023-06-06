@@ -5,160 +5,164 @@
 @use "mixins/collapsible";
 @use "mixins/icon";
 
-.collapsible.collapsed {
-    @include collapsible.collapsible;
+.collapsible {
+  @include collapsible.collapsible;
+
+  .collapsed {
 
     .collapsing-element {
-        flex-direction: var(--collapsing-element-flex-direction);
-        justify-content: var(--collapsing-element-justify-content);
-        gap: var(--collapsing-element-gap);
+      flex-direction: var(--collapsing-element-flex-direction);
+      justify-content: var(--collapsing-element-justify-content);
+      gap: var(--collapsing-element-gap);
 
-        max-height: initial;
-        height: auto;
-        width: var(--collapsing-element-width);
-        max-width: var(--collapsing-element-max-width);
-        z-index: var(--collapsing-element-z-index);
+      max-height: initial;
+      height: auto;
+      width: var(--collapsing-element-width);
+      max-width: var(--collapsing-element-max-width);
+      z-index: var(--collapsing-element-z-index);
 
-        box-sizing: border-box;
-        padding-top: var(--collapsing-element-padding-top);
-        padding-right: var(--collapsing-element-padding-right);
-        padding-bottom: var(--collapsing-element-padding-bottom);
-        padding-left: var(--collapsing-element-padding-left);
+      box-sizing: border-box;
+      padding-top: var(--collapsing-element-padding-top);
+      padding-right: var(--collapsing-element-padding-right);
+      padding-bottom: var(--collapsing-element-padding-bottom);
+      padding-left: var(--collapsing-element-padding-left);
 
-        border-width: var(--collapsing-element-border-width);
-        border-style: var(--collapsing-element-border-style);
-        border-color: var(--collapsing-element-border-color);
+      border-width: var(--collapsing-element-border-width);
+      border-style: var(--collapsing-element-border-style);
+      border-color: var(--collapsing-element-border-color);
 
-        background-color: var(--collapsing-element-background-color);
-        color: var(--collapsing-element-text-color);
+      background-color: var(--collapsing-element-background-color);
+      color: var(--collapsing-element-text-color);
 
-        -webkit-box-shadow: var(--collapsing-element-box-shadow);
-        box-shadow: var(--collapsing-element-box-shadow);
+      -webkit-box-shadow: var(--collapsing-element-box-shadow);
+      box-shadow: var(--collapsing-element-box-shadow);
 
-        position: absolute;
-        top: var(--collapsing-element-top);
-        left: var(--collapsing-element-left);
-        right: var(--collapsing-element-right);
+      position: absolute;
+      top: var(--collapsing-element-top);
+      left: var(--collapsing-element-left);
+      right: var(--collapsing-element-right);
 
-        form {
-            padding: 0;
-            background-color: transparent;
-        }
+      form {
+        padding: 0;
+        background-color: transparent;
+      }
 
-        ul,
-        ol {
+      ul,
+      ol {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        gap: var(--collapsing-element-list-gap);
+        background-color: var(--collapsing-element-list-background-color);
+
+        li {
+          display: flex;
+          align-items: var(--collapsing-element-list-item-align-items);
+
+          width: 100%;
+          max-width: 100%;
+          padding: 0;
+
+          background-color: var(--collapsing-element-list-item-background-color);
+          color: var(--collapsing-element-list-item-text-color);
+
+          border-width: var(--collapsing-element-list-item-border-width);
+          border-style: var(--collapsing-element-list-item-border-style);
+          border-color: var(--collapsing-element-list-item-border-color);
+
+          &:before {
+            display: none;
+            /* Preventing default nav before to show up */
+          }
+
+          &:last-child {
+            border-width: var(--collapsing-element-list-item-last-item-border-width);
+          }
+
+          &:first-child {
+            border-width: var(--collapsing-element-list-item-first-item-border-width);
+          }
+
+          a {
             display: flex;
-            flex-direction: column;
+            justify-content: var(--collapsing-element-list-item-link-justify-content);
+            align-items: center;
+
             width: 100%;
-            margin: 0;
-            padding: 0;
-            gap: var(--collapsing-element-list-gap);
-            background-color: var(--collapsing-element-list-background-color);
+            max-width: 100%;
+            min-height: var(--collapsing-element-list-item-min-height);
 
-            li {
-                display: flex;
-                align-items: var(--collapsing-element-list-item-align-items);
+            box-sizing: border-box;
+            padding-top: var(--collapsing-element-list-item-link-padding-top);
+            padding-right: var(--collapsing-element-list-item-link-padding-right);
+            padding-bottom: var(--collapsing-element-list-item-link-padding-bottom);
+            padding-left: var(--collapsing-element-list-item-link-padding-left);
 
-                width: 100%;
-                max-width: 100%;
-                padding: 0;
+            background-color: transparent;
+            border: 0;
+            color: var(--collapsing-element-list-item-link-text-color);
+            text-decoration: var(--collapsing-element-list-item-link-text-decoration);
+            white-space: nowrap;
 
-                background-color: var(--collapsing-element-list-item-background-color);
-                color: var(--collapsing-element-list-item-text-color);
-
-                border-width: var(--collapsing-element-list-item-border-width);
-                border-style: var(--collapsing-element-list-item-border-style);
-                border-color: var(--collapsing-element-list-item-border-color);
-
-                &:before {
-                    display: none;
-                    /* Preventing default nav before to show up */
-                }
-
-                &:last-child {
-                    border-width: var(--collapsing-element-list-item-last-item-border-width);
-                }
-
-                &:first-child {
-                    border-width: var(--collapsing-element-list-item-first-item-border-width);
-                }
-
-                a {
-                    display: flex;
-                    justify-content: var(--collapsing-element-list-item-link-justify-content);
-                    align-items: center;
-
-                    width: 100%;
-                    max-width: 100%;
-                    min-height: var(--collapsing-element-list-item-min-height);
-
-                    box-sizing: border-box;
-                    padding-top: var(--collapsing-element-list-item-link-padding-top);
-                    padding-right: var(--collapsing-element-list-item-link-padding-right);
-                    padding-bottom: var(--collapsing-element-list-item-link-padding-bottom);
-                    padding-left: var(--collapsing-element-list-item-link-padding-left);
-
-                    background-color: transparent;
-                    border: 0;
-                    color: var(--collapsing-element-list-item-link-text-color);
-                    text-decoration: var(--collapsing-element-list-item-link-text-decoration);
-                    white-space: nowrap;
-
-                    &:before {
-                        @include icon.icon;
-                        content: var(--collapsing-element-list-icon);
-                        font-family: var(--collapsing-element-list-icon-font-family);
-                        margin-left: var(--collapsing-element-list-icon-margin-left);
-                        font-size: var(--collapsing-element-list-icon-font-size);
-                        color: var(--collapsing-element-list-icon-text-color);
-                        margin-right: var(--collapsing-element-list-icon-margin-right);
-                    }
-
-                    &[aria-selected="true"],
-                    &[aria-current="page"] {
-                        background-color: var(--collapsing-element-list-link-selected-background-color);
-                        font-weight: var(--collapsing-element-list-link-selected-font-weight);
-                        text-decoration: var(--collapsing-element-list-link-selected-text-decoration);
-
-                        &:before {
-                            @include icon.icon;
-                            content: var(--collapsing-element-list-selected-icon);
-                            font-family: var(--collapsing-element-list-selected-icon-font-family);
-                            margin-left: var(--collapsing-element-list-selected-icon-margin-left);
-                            font-size: var(--collapsing-element-list-selected-icon-font-size);
-                            color: var(--collapsing-element-list-selected-icon-text-color);
-                            margin-right: var(--collapsing-element-list-selected-icon-margin-right);
-                        }
-
-                        &:hover {
-                            border: 0;
-                            border-top: var(--collapsing-element-list-link-selected-hover-background-color);
-                            text-decoration: var(--collapsing-element-list-link-selected-hover-text-decoration);
-                        }
-                    }
-                }
-
-                &:hover {
-                    background-color: var(--collapsing-element-list-item-link-hover-background-color);
-                    color: var(--collapsing-element-list-item-hover-text-color);
-
-                    a {
-                        background-color: var(--collapsing-element-list-item-link-hover-background-color);
-                        color: var(--collapsing-element-list-item-link-hover-text-color);
-                        text-decoration: var(--collapsing-element-list-link-hover-text-decoration);
-
-                        &:visited {
-                            background-color: var(--collapsing-element-list-item-link-hover-background-color);
-                        }
-                    }
-                }
-
-                &[aria-current] {
-                    background-color: var(--collapsing-element-list-item-link-hover-background-color);
-                    color: var(--collapsing-element-list-item-link-hover-text-color);
-                }
+            &:before {
+              @include icon.icon;
+              content: var(--collapsing-element-list-icon);
+              font-family: var(--collapsing-element-list-icon-font-family);
+              margin-left: var(--collapsing-element-list-icon-margin-left);
+              font-size: var(--collapsing-element-list-icon-font-size);
+              color: var(--collapsing-element-list-icon-text-color);
+              margin-right: var(--collapsing-element-list-icon-margin-right);
             }
+
+            &[aria-selected="true"],
+            &[aria-current="page"] {
+              background-color: var(--collapsing-element-list-link-selected-background-color);
+              font-weight: var(--collapsing-element-list-link-selected-font-weight);
+              text-decoration: var(--collapsing-element-list-link-selected-text-decoration);
+
+              &:before {
+                @include icon.icon;
+                content: var(--collapsing-element-list-selected-icon);
+                font-family: var(--collapsing-element-list-selected-icon-font-family);
+                margin-left: var(--collapsing-element-list-selected-icon-margin-left);
+                font-size: var(--collapsing-element-list-selected-icon-font-size);
+                color: var(--collapsing-element-list-selected-icon-text-color);
+                margin-right: var(--collapsing-element-list-selected-icon-margin-right);
+              }
+
+              &:hover {
+                border: 0;
+                border-top: var(--collapsing-element-list-link-selected-hover-background-color);
+                text-decoration: var(--collapsing-element-list-link-selected-hover-text-decoration);
+              }
+            }
+          }
+
+          &:hover {
+            background-color: var(--collapsing-element-list-item-link-hover-background-color);
+            color: var(--collapsing-element-list-item-hover-text-color);
+
+            a {
+              background-color: var(--collapsing-element-list-item-link-hover-background-color);
+              color: var(--collapsing-element-list-item-link-hover-text-color);
+              text-decoration: var(--collapsing-element-list-link-hover-text-decoration);
+
+              &:visited {
+                background-color: var(--collapsing-element-list-item-link-hover-background-color);
+              }
+            }
+          }
+
+          &[aria-current] {
+            background-color: var(--collapsing-element-list-item-link-hover-background-color);
+            color: var(--collapsing-element-list-item-link-hover-text-color);
+          }
         }
+      }
 
     }
+  }
+
 }
