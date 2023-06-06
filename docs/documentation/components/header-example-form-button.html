@@ -2,7 +2,7 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <title>Header met navigatie met meerdere menus</title>
+    <title>Header met navigatie met meerdere menus en form button</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../../static/css/main.css" rel="stylesheet" />
     <link href="../../static/css/docs-styling/header/header-example-multiple-menus-variables.css" rel="stylesheet" />
@@ -33,7 +33,12 @@
                 </ul>
 
                 <ul>
-                  <li><a href="#" class="button">Logout</a></li>
+                  <li>
+                    <form action="http://localhost/logout" method="POST" class="inline">
+                      <input type="hidden" name="_token" value="">
+                      <button type="submit">Logout</button>
+                    </form>
+                  </li>
                 </ul>
             </div>
           </nav>
@@ -56,7 +61,7 @@
       <article>
         <div>
           <section id="introduction">
-            <h1>Header met meerdere menus visueel voorbeeld</h1>
+            <h1>Header met navigatie met meerdere menus en form button</h1>
 
             <h2>Benodigde stappen:</h2>
             <ol>
@@ -98,7 +103,12 @@
             &lt;/ul>
 
             &lt;ul>
-              &lt;li>&lt;a href="#">Logout&lt;/a>&lt;/li>
+              &lt;li>
+                &lt;form action="http://localhost/logout" method="POST" class="inline">
+                  &lt;input type="hidden" name="_token" value="">
+                  &lt;button type="submit">Logout&lt;/button>
+                &lt;/form>
+              &lt;/li>
             &lt;/ul>
         &lt;/div>
       &lt;/nav>
