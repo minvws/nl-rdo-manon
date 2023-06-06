@@ -12,6 +12,7 @@ input {
   padding-left: var(--form-input-padding-left);
   background-color: var(--form-input-background-color);
   color: var(--form-input-text-color, inherit);
+  font-family: var(--form-input-font-family, inherit);
   font-size: var(--form-input-font-size, inherit);
   line-height: var(--form-input-line-height, inherit);
   font-weight: var(--form-input-font-weight, inherit);
