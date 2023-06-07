@@ -18,12 +18,12 @@ body > header,
 %header-navigation-style {
   nav {
     @extend %header-navigation-link-hover-styling;
-  }
 
-  ul,
-  ol {
-    li {
-      @extend %header-navigation-link-hover-styling;
+    ul,
+    ol {
+      li {
+        @extend %header-navigation-link-hover-styling;
+      }
     }
   }
 }

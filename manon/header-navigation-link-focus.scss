@@ -4,7 +4,7 @@
 @use "header-navigation-link-focus-variables";
 @use "mixins/link";
 
-%header-navigation-link-hover-styling {
+%header-navigation-link-focus-styling {
   a {
     &:focus,
     &.focus /* Testing purposes */
@@ -17,13 +17,13 @@
 body > header,
 %header-navigation-style {
   nav {
-    @extend %header-navigation-link-hover-styling;
-  }
+    @extend %header-navigation-link-focus-styling;
 
-  ul,
-  ol {
-    li {
-      @extend %header-navigation-link-hover-styling;
+    ul,
+    ol {
+      li {
+        @extend %header-navigation-link-focus-styling;
+      }
     }
   }
 }
