@@ -41,9 +41,6 @@ function makeResponsive(collapsibleElement, isCondensed) {
   var button = createMenuButton(
     collapsibleElement,
     collapsingElement.id,
-    collapsibleElement.dataset.openLabel || "Menu",
-    collapsibleElement.dataset.closeLabel || "Sluit menu",
-    collapsibleElement.dataset.buttonClasses || ""
   );
 
   if (!isCondensed) {
@@ -64,26 +61,27 @@ function makeResponsive(collapsibleElement, isCondensed) {
 /**
  * @param {HTMLElement} collapsibleElement
  * @param {string} collapsingElementId
- * @param {string} openLabel
- * @param {string} closeLabel
  * @return {{ setExpanded: (expanded: boolean) => void }}
  */
-function createMenuButton(collapsibleElement, collapsingElementId, openLabel, closeLabel, buttonClasses) {
-    var buttonElement = collapsibleElement.querySelector(".collapsible-toggle");
-    var button;
+function createMenuButton(collapsibleElement, collapsingElementId) {
+    // Init button variables
+    var buttonOpenLabel = collapsibleElement.dataset.buttonOpenLabel;
+    var buttonCloseLabel = collapsibleElement.dataset.buttonCloseLabel;
+    var openLabel = collapsibleElement.dataset.openLabel || "Menu";
+    var closeLabel = collapsibleElement.dataset.closeLabel || "Sluit menu";
+    var buttonClasses = collapsibleElement.dataset.buttonClasses || "";
 
-    if(buttonElement) {
-      button = buttonElement
-      button.className += (" " + buttonClasses)
-    } else {
-      button = document.createElement("button");
-      button.className = "collapsible-toggle " + buttonClasses;
-    }
+    // Create button HTML element with classes and content
+    var button = document.createElement("button");
+    button.className = "collapsible-toggle " + buttonClasses;
+    button.innerHTML = buttonOpenLabel || openLabel;
 
+    // Configure button aria attributes
     button.setAttribute("aria-controls", collapsingElementId);
     button.setAttribute("aria-expanded", "false");
     button.setAttribute("aria-haspopup", "menu");
 
+    // Add <span> for screen readers (thus .visually-hidden)
     var label = document.createElement("span");
     label.innerText = openLabel;
     label.className = "visually-hidden";
@@ -95,9 +93,8 @@ function createMenuButton(collapsibleElement, collapsingElementId, openLabel, cl
   function setExpanded(expanded) {
     if (expanded !== (button.getAttribute("aria-expanded") === "true")) {
       button.setAttribute("aria-expanded", String(expanded));
-      if(!buttonElement) {
-        label.innerText = expanded ? closeLabel : openLabel;
-      }
+      button.innerHTML = expanded ? (buttonCloseLabel || closeLabel) : (buttonOpenLabel || openLabel);
+      label.innerText = expanded ? closeLabel : openLabel;
     }
   }
 
@@ -105,9 +102,8 @@ function createMenuButton(collapsibleElement, collapsingElementId, openLabel, cl
     setExpanded(button.getAttribute("aria-expanded") === "false");
   });
 
-  if(!buttonElement) {
-    collapsibleElement.insertBefore(button, collapsibleElement.firstChild);
-  }
+  // Insert button as first child element of "collapsibleElement" (root element)
+  collapsibleElement.insertBefore(button, collapsibleElement.firstChild);
 
   return {
     setExpanded: setExpanded,
