@@ -903,8 +903,8 @@
               <option value="3">Optie 3</option>
             </select>
 
-            <label for="select-mulitple-size-1">Meerdere opties selecteren</label>
-            <div class="explanation" role="group" id="select-mulitple-size-1-message">
+            <label for="select-multiple-size-1">Meerdere opties selecteren</label>
+            <div class="explanation" role="group" id="select-multiple-size-1-message">
               <span>Toelichting:</span>
               <p>Het selecteren van meerdere opties hangt af van uw gebruikte systeem. Enkele
                 voorbeelden:</p>
@@ -918,8 +918,8 @@
               </ul>
             </div>
 
-            <select id="select-mulitple-size-1" name="select-mulitple-size-1" multiple size="3"
-              aria-describedby="select-mulitple-size-1-message">
+            <select id="select-multiple-size-1" name="select-multiple-size-1" multiple size="3"
+              aria-describedby="select-multiple-size-1-message">
               <option value="1">Optie 1</option>
               <option value="2">Optie 2</option>
               <option value="3">Optie 3</option>
@@ -1197,37 +1197,38 @@
                 type="text">
             </div>
 
-            <div>
-              <label for="voorbeeld-text-input-error-with-link">Voorbeeld invoerveld
-                foutmelding</label>
+            <div class="notification">
+              <p class="error" id="voorbeeld-text-input-error-with-link-message">
+                <span>Foutmelding:</span> Lorem ipsum <a href="">dolor set amet</a>
+              </p>
+
               <div>
+                <label for="voorbeeld-text-input-error-with-link">Voorbeeld invoerveld
+                  foutmelding</label>
                 <input id="voorbeeld-text-input-error-with-link" class="error"
                   name="voorbeeld-text-input-error-with-link" placeholder="Voorbeeld invoerveld foutmelding" type="text"
                   aria-describedby="voorbeeld-text-input-error-with-link-message" aria-invalid="true">
-                <p class="error" id="voorbeeld-text-input-error-with-link-message">
-                  <span>Foutmelding:</span> Lorem ipsum <a href="">dolor set amet</a>
-                </p>
               </div>
             </div>
 
-            <div>
-              <label for="voorbeeld-text-input-warning-2">Voorbeeld invoerveld waarschuwing</label>
+            <div class="notification">
+              <p class="warning" id="voorbeeld-text-input-warning-2-message">
+                <span>Waarschuwing:</span> Lorem ipsum
+              </p>
               <div>
-                <p class="warning" id="voorbeeld-text-input-warning-2-message">
-                  <span>Waarschuwing:</span> Lorem ipsum
-                </p>
+                <label for="voorbeeld-text-input-warning-2">Voorbeeld invoerveld waarschuwing</label>
                 <input id="voorbeeld-text-input-warning-2" class="warning" name="voorbeeld-text-input-warning-2"
                   placeholder="Voorbeeld invoerveld waarschuwing" type="text"
                   aria-describedby="voorbeeld-text-input-warning-2-message">
               </div>
             </div>
 
-            <div>
-              <label for="voorbeeld-text-input-explanation-2">Voorbeeld invoerveld toelichting</label>
+            <div class="notification">
+              <p class="explanation" id="voorbeeld-text-input-explanation-2-message">
+                <span>Toelichting:</span> Lorem ipsum
+              </p>
               <div>
-                <p class="explanation" id="voorbeeld-text-input-explanation-2-message">
-                  <span>Toelichting:</span> Lorem ipsum
-                </p>
+                <label for="voorbeeld-text-input-explanation-2">Voorbeeld invoerveld toelichting</label>
                 <input id="voorbeeld-text-input-explanation-2" class="explanation"
                   name="voorbeeld-text-input-explanation-2" placeholder="Voorbeeld invoerveld toelichting" type="text"
                   aria-describedby="voorbeeld-text-input-explanation-2-message">
@@ -1257,14 +1258,15 @@
               </p>
             </div>
 
-            <div>
-              <label for="voorbeeld-text-input-4">Voorbeeld text input</label>
+            <div class="notification">
+              <p class="explanation" id="voorbeeld-text-input-4-message">
+                <span>Toelichting:</span> Lorem ipsum dolor set amet.
+              </p>
+              
               <div>
+                <label for="voorbeeld-text-input-4">Voorbeeld text input</label>
                 <input id="voorbeeld-text-input-4" name="voorbeeld-text-input-4" placeholder="voorbeeld text input"
                   type="text" aria-describedby="voorbeeld-text-input-4-message">
-                <p class="explanation" id="voorbeeld-text-input-4-message">
-                  <span>Toelichting:</span> Lorem ipsum dolor set amet.
-                </p>
               </div>
             </div>
 
@@ -1305,22 +1307,23 @@
               </div>
             </div>
 
-            <div>
-              <label for="select-multiple-2">Meerdere opties selecteren</label>
+            <div class="notification">
+              <div class="explanation" role="group" id="select-multiple-2-message">
+                <span>Toelichting:</span>
+                <p>Het selecteren van meerdere opties hangt af van uw gebruikte systeem. Enkele
+                  voorbeelden:</p>
+                <ul>
+                  <li>Windows: Houd de <code>ctrl</code>-knop ingedrukt en selecteer met de muis de
+                    gewenste opties.
+                  </li>
+                  <li>Mac: Houd de <code>cmd</code>-knop ingedrukt en selecteer met de muis de
+                    gewenste opties.
+                  </li>
+                </ul>
+              </div>
+              
               <div>
-                <div class="explanation" role="group" id="select-multiple-2-message">
-                  <span>Toelichting:</span>
-                  <p>Het selecteren van meerdere opties hangt af van uw gebruikte systeem. Enkele
-                    voorbeelden:</p>
-                  <ul>
-                    <li>Windows: Houd de <code>ctrl</code>-knop ingedrukt en selecteer met de muis de
-                      gewenste opties.
-                    </li>
-                    <li>Mac: Houd de <code>cmd</code>-knop ingedrukt en selecteer met de muis de
-                      gewenste opties.
-                    </li>
-                  </ul>
-                </div>
+                <label for="select-multiple-2">Meerdere opties selecteren</label>
                 <select id="select-multiple-2" name="select-multiple-2" multiple
                   aria-describedby="select-multiple-2-message">
                   <option value="1">Optie 1</option>
@@ -1330,25 +1333,25 @@
               </div>
             </div>
 
-            <div>
-              <label for="select-mulitple-size-2">Meerdere opties selecteren</label>
+            <div class="notification">
+              <div class="explanation" role="group" id="select-multiple-size-2-message">
+                <span>Toelichting:</span>
+                <p>Het selecteren van meerdere opties hangt af van uw gebruikte systeem. Enkele
+                  voorbeelden:</p>
+                <ul>
+                  <li>Windows: Houd de <code>ctrl</code>-knop ingedrukt en selecteer met de muis de
+                    gewenste opties.
+                  </li>
+                  <li>Mac: Houd de <code>cmd</code>-knop ingedrukt en selecteer met de muis de
+                    gewenste opties.
+                  </li>
+                </ul>
+              </div>
+              
               <div>
-                <div class="explanation" role="group" id="select-mulitple-size-2-message">
-                  <span>Toelichting:</span>
-                  <p>Het selecteren van meerdere opties hangt af van uw gebruikte systeem. Enkele
-                    voorbeelden:</p>
-                  <ul>
-                    <li>Windows: Houd de <code>ctrl</code>-knop ingedrukt en selecteer met de muis de
-                      gewenste opties.
-                    </li>
-                    <li>Mac: Houd de <code>cmd</code>-knop ingedrukt en selecteer met de muis de
-                      gewenste opties.
-                    </li>
-                  </ul>
-                </div>
-
-                <select id="select-mulitple-size-2" name="select-mulitple-size-2" multiple size="3"
-                  aria-describedby="select-mulitple-size-2-message">
+                <label for="select-multiple-size-2">Meerdere opties selecteren</label>
+                <select id="select-multiple-size-2" name="select-multiple-size-2" multiple size="3"
+                  aria-describedby="select-multiple-size-2-message">
                   <option value="1">Optie 1</option>
                   <option value="2">Optie 2</option>
                   <option value="3">Optie 3</option>
@@ -2056,22 +2059,23 @@
                 </div>
               </div>
 
-              <div>
-                <label for="select-multiple">Meerdere opties selecteren</label>
+              <div class="notification">
+                <div class="explanation" role="group" id="select-multiple-message">
+                  <span>Toelichting:</span>
+                  <p>Het selecteren van meerdere opties hangt af van uw gebruikte systeem. Enkele
+                    voorbeelden:</p>
+                  <ul>
+                    <li>Windows: Houd de <code>ctrl</code>-knop ingedrukt en selecteer met de muis
+                      de gewenste opties.
+                    </li>
+                    <li>Mac: Houd de <code>cmd</code>-knop ingedrukt en selecteer met de muis de
+                      gewenste opties.
+                    </li>
+                  </ul>
+                </div>
+                
                 <div>
-                  <div class="explanation" role="group" id="select-multiple-message">
-                    <span>Toelichting:</span>
-                    <p>Het selecteren van meerdere opties hangt af van uw gebruikte systeem. Enkele
-                      voorbeelden:</p>
-                    <ul>
-                      <li>Windows: Houd de <code>ctrl</code>-knop ingedrukt en selecteer met de muis
-                        de gewenste opties.
-                      </li>
-                      <li>Mac: Houd de <code>cmd</code>-knop ingedrukt en selecteer met de muis de
-                        gewenste opties.
-                      </li>
-                    </ul>
-                  </div>
+                  <label for="select-multiple">Meerdere opties selecteren</label>
                   <select id="select-multiple" name="select-multiple" multiple
                     aria-describedby="select-multiple-message">
                     <option value="1">Optie 1</option>
@@ -2081,25 +2085,26 @@
                 </div>
               </div>
 
-              <div>
-                <label for="select-mulitple-size-3">Meerdere opties selecteren</label>
-                <div>
-                  <div class="explanation" role="group" id="select-mulitple-size-3-message">
-                    <span>Toelichting:</span>
-                    <p>Het selecteren van meerdere opties hangt af van uw gebruikte systeem. Enkele
-                      voorbeelden:</p>
-                    <ul>
-                      <li>Windows: Houd de <code>ctrl</code>-knop ingedrukt en selecteer met de muis
-                        de gewenste opties.
-                      </li>
-                      <li>Mac: Houd de <code>cmd</code>-knop ingedrukt en selecteer met de muis de
-                        gewenste opties.
-                      </li>
-                    </ul>
-                  </div>
+              <div class="notification">
+                <div class="explanation" role="group" id="select-multiple-size-3-message">
+                  <span>Toelichting:</span>
+                  <p>Het selecteren van meerdere opties hangt af van uw gebruikte systeem. Enkele
+                    voorbeelden:</p>
+                  <ul>
+                    <li>Windows: Houd de <code>ctrl</code>-knop ingedrukt en selecteer met de muis
+                      de gewenste opties.
+                    </li>
+                    <li>Mac: Houd de <code>cmd</code>-knop ingedrukt en selecteer met de muis de
+                      gewenste opties.
+                    </li>
+                  </ul>
+                </div>
 
-                  <select id="select-mulitple-size-3" name="select-mulitple-size-3" multiple size="3"
-                    aria-describedby="select-mulitple-size-3-message">
+                <div>
+                <label for="select-multiple-size-3">Meerdere opties selecteren</label>
+
+                  <select id="select-multiple-size-3" name="select-multiple-size-3" multiple size="3"
+                    aria-describedby="select-multiple-size-3-message">
                     <option value="1">Optie 1</option>
                     <option value="2">Optie 2</option>
                     <option value="3">Optie 3</option>
@@ -2655,52 +2660,55 @@
                 naam. Lorem ipsum dolor set amet.</label>
             </div>
 
-            <div>
-              <label for="help-simpel-voorbeeld-text-input-error-1">Voorbeeld invoerveld
-                foutmelding</label>
+            <div class="notification">
+              
               <div>
+                <label for="help-simpel-voorbeeld-text-input-error-1">Voorbeeld invoerveld
+                  foutmelding</label>
                 <input id="help-simpel-voorbeeld-text-input-error-1" class="error"
                   name="help-simpel-voorbeeld-text-input-error-1" placeholder="Voorbeeld invoerveld foutmelding"
                   type="text" aria-describedby="help-simpel-voorbeeld-text-input-error-1-message" aria-invalid="true">
-                <p class="error" id="help-simpel-voorbeeld-text-input-error-1-message">
-                  <span>Foutmelding:</span> Lorem ipsum dolor set amet
-                </p>
               </div>
+              <p class="error" id="help-simpel-voorbeeld-text-input-error-1-message">
+                <span>Foutmelding:</span> Lorem ipsum dolor set amet
+              </p>
             </div>
 
-            <div>
-              <label for="help-simpel-voorbeeld-text-input-explanation-2">Voorbeeld invoerveld met
-                reguliere toelichting</label>
+            <div class="notification">
+              <p class="explanation" id="help-simpel-voorbeeld-text-input-explanation-2-message">
+                <span>Toelichting:</span> Lorem ipsum dolor set amet.
+              </p>
+
               <div>
-                <p class="explanation" id="help-simpel-voorbeeld-text-input-explanation-2-message">
-                  <span>Toelichting:</span> Lorem ipsum dolor set amet.
-                </p>
+                <label for="help-simpel-voorbeeld-text-input-explanation-2">Voorbeeld invoerveld met
+                  reguliere toelichting</label>
                 <input id="help-simpel-voorbeeld-text-input-explanation-2" class="explanation"
                   name="help-simpel-voorbeeld-text-input-explanation-2" placeholder="Voorbeeld invoerveld toelichting"
                   type="text" aria-describedby="help-simpel-voorbeeld-text-input-explanation-2-message">
               </div>
             </div>
 
-            <div>
-              <label for="help-simpel-voorbeeld-text-input-warning-2">Voorbeeld invoerveld
-                waarschuwing</label>
+            <div class="notification">
+              <p class="warning" id="help-simpel-voorbeeld-text-input-warning-2-message">
+                <span>Waarschuwing:</span> Lorem ipsum dolor set amet
+              </p>
+              
               <div>
-                <p class="warning" id="help-simpel-voorbeeld-text-input-warning-2-message">
-                  <span>Waarschuwing:</span> Lorem ipsum dolor set amet
-                </p>
+                <label for="help-simpel-voorbeeld-text-input-warning-2">Voorbeeld invoerveld
+                  waarschuwing</label>
                 <input id="help-simpel-voorbeeld-text-input-warning-2" class="warning"
                   name="help-simpel-voorbeeld-text-input-warning-2" placeholder="Voorbeeld invoerveld waarschuwing"
                   type="text" aria-describedby="help-simpel-voorbeeld-text-input-warning-2-message">
               </div>
             </div>
 
-            <div>
-              <label for="help-simpel-voorbeeld-tekstveld-5">Voorbeeld tekstveld met reguliere
-                toelichting</label>
+            <div class="notification">
+              <p class="explanation" id="help-simpel-voorbeeld-tekstveld-5-message">
+                <span>Toelichting:</span> Lorem ipsum dolor set amet.
+              </p>
               <div>
-                <p class="explanation" id="help-simpel-voorbeeld-tekstveld-5-message">
-                  <span>Toelichting:</span> Lorem ipsum dolor set amet.
-                </p>
+                <label for="help-simpel-voorbeeld-tekstveld-5">Voorbeeld tekstveld met reguliere
+                  toelichting</label>
                 <textarea id="help-simpel-voorbeeld-tekstveld-5" name="help-simpel-voorbeeld-tekstveld-5"
                   placeholder="Jouw vraag of opmerking" rows="5"
                   aria-describedby="help-simpel-voorbeeld-tekstveld-5-message">
@@ -2708,19 +2716,20 @@
               </div>
             </div>
 
-            <div>
-              <label for="help-simpel-voorbeeld-text-input-collapsed-explanation-2">Voorbeeld
-                invoerveld met ingeklapte toelichting</label>
+            <div class="notification">
+             
               <div>
+                <label for="help-simpel-voorbeeld-text-input-collapsed-explanation-2">Voorbeeld
+                  invoerveld met ingeklapte toelichting</label>
                 <input id="help-simpel-voorbeeld-text-input-collapsed-explanation-2" class="explanation"
                   name="help-simpel-voorbeeld-text-input-collapsed-explanation-2"
                   placeholder="Voorbeeld invoerveld toelichting" type="text"
                   aria-describedby="help-simpel-voorbeeld-text-input-collapsed-explanation-2-message">
-                <p class="explanation" data-open-label="Toelichting bij het veld: Voorbeeld text input"
+              </div>
+              <p class="explanation" data-open-label="Toelichting bij het veld: Voorbeeld text input"
                   data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
                   id="help-simpel-voorbeeld-text-input-collapsed-explanation-2-message"><span>Toelichting:</span> Lorem
                   ipsum dolor set amet.</p>
-              </div>
             </div>
 
             <div>
@@ -2738,13 +2747,14 @@
               </div>
             </div>
 
-            <div>
-              <label for="select-with-explanation-1">Voorbeeld selectielijst met reguliere
-                toelichting</label>
+            <div class="notification">
+              <p class="explanation" id="select-with-explanation-1-message">
+                <span>Toelichting:</span> Lorem ipsum dolor set amet.
+              </p>
+             
               <div>
-                <p class="explanation" id="select-with-explanation-1-message">
-                  <span>Toelichting:</span> Lorem ipsum dolor set amet.
-                </p>
+                <label for="select-with-explanation-1">Voorbeeld selectielijst met reguliere
+                  toelichting</label>
                 <select id="select-with-explanation-1" name="select-with-explanation-1"
                   aria-describedby="select-with-explanation-1-message">
                   <option value="1">Optie 1</option>

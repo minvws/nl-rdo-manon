@@ -141,10 +141,6 @@ form.horizontal-view {
 
     /* Notifications */
     %notification-styling {
-      flex-direction: var(--form-horizontal-view-notification-block-element-flex-direction);
-      justify-content: var(--form-horizontal-view-notification-block-element-justify-content);
-      align-items: var(--form-horizontal-view-notification-block-element-align-items);
-      gap: var(--form-horizontal-view-notification-block-element-gap);
       margin: 0;
       max-width: var(--input-column);
       margin-left: auto;
@@ -156,7 +152,9 @@ form.horizontal-view {
       +div {
         @extend %form-row-styling;
 
-        input {
+        input,
+        select,
+        textarea {
           @extend %input-styling;
         }
 
@@ -171,16 +169,35 @@ form.horizontal-view {
 
       >div {
         max-width: 100%;
+        @extend %form-row-styling;
+
+        /* Block Notifications */
+        &.error,
+        &.warning,
+        &.explanation,
+        &.confirmation,
+        &.system {
+          @extend %notification-styling;
+          flex-direction: var(--form-horizontal-view-notification-block-element-flex-direction);
+          justify-content: var(--form-horizontal-view-notification-block-element-justify-content);
+          align-items: var(--form-horizontal-view-notification-block-element-align-items);
+          gap: var(--form-horizontal-view-notification-block-element-gap);
+        }
       }
     }
 
-    /* Block Notifications */
-    &.error,
-    &.warning,
-    &.explanation,
-    &.confirmation,
-    &.system {
-      @extend %notification-styling;
+    input,
+    .textarea,
+    .select {
+
+      &.error,
+      &.warning,
+      &.explanation,
+      &.confirmation,
+      &.system {
+        margin-left: unset;
+        width: 100%;
+      }
     }
 
     /* Notifications */
@@ -190,6 +207,10 @@ form.horizontal-view {
     .confirmation,
     .system {
       @extend %notification-styling;
+      flex-direction: var(--form-horizontal-view-notification-flex-direction);
+      justify-content: var(--form-horizontal-view-notification-justify-content);
+      align-items: var(--form-horizontal-view-notification-align-items);
+      gap: var(--form-horizontal-view-notification-gap);
     }
 
     @media (min-width: $breakpoint) {

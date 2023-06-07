@@ -15,6 +15,8 @@ form {
         padding-right: var(--notification-form-block-padding-right);
         padding-bottom: var(--notification-form-block-padding-bottom);
         padding-left: var(--notification-form-block-padding-left);
+        flex-direction: column;
+        align-items: flex-start;
 
         >span:first-of-type {
             font-weight: var(--notification-form-span-font-weight);

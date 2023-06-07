@@ -79,6 +79,16 @@ form.horizontal-view {
           label {
             @extend %label-styling;
           }
+
+          /* Block Notifications */
+          &.error,
+          &.warning,
+          &.explanation,
+          &.confirmation,
+          &.system {
+            max-width: var(--input-column);
+            margin-left: auto;
+          }
         }
       }
     }
