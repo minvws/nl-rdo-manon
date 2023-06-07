@@ -3,7 +3,7 @@
 /*---------------------------------------------------------------*/
 
 @mixin collapsible {
-    
+
     &.collapsed {
         padding: 0;
         gap: 0;
@@ -15,7 +15,6 @@
         button.collapsible-toggle  {
             display: flex;
             max-height: 100%;
-            padding: 0;
 
             + .collapsing-element {
                 display: flex;
