@@ -7,7 +7,7 @@
   --sidemenu-main-padding-bottom: 0;
 
   /* Please note that gap and width need to use
-  the same type of unit to work. e.g px, rem, em 
+  the same type of unit to work. e.g px, rem, em
   As they are used to calculate the page content width. */
   --sidemenu-main-gap: 0rem;
   --sidemenu-nav-width: 18rem;
@@ -16,11 +16,10 @@
   --sidemenu-main-max-height: 90vh;
 
   /* Content container (top level div, section or article) */
-  --sidemenu-content-container-background-color: transparent;
-  --sidemenu-content-container-padding-top: var(--content-padding-top);
-  --sidemenu-content-container-padding-right: var(--page-whitespace-right);
-  --sidemenu-content-container-padding-bottom: var(--content-padding-bottom);
-  --sidemenu-content-container-padding-left: var(--page-whitespace-left);
+  --sidemenu-content-container-padding-top: 0;
+  --sidemenu-content-container-padding-right: 0;
+  --sidemenu-content-container-padding-bottom: 0;
+  --sidemenu-content-container-padding-left: 0;
 
   /* Nav inside side menu */
   --sidemenu-nav-background-color: transparent;

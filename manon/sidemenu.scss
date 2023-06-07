@@ -27,8 +27,6 @@ main.sidemenu {
   >section {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    background-color: var(--sidemenu-content-container-background-color);
     padding-top: var(--sidemenu-content-container-padding-top);
     padding-right: var(--sidemenu-content-container-padding-right);
     padding-bottom: var(--sidemenu-content-container-padding-bottom);
