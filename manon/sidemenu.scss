@@ -27,10 +27,6 @@ main.sidemenu {
   >section {
     display: flex;
     flex-direction: column;
-    padding-top: var(--sidemenu-content-container-padding-top);
-    padding-right: var(--sidemenu-content-container-padding-right);
-    padding-bottom: var(--sidemenu-content-container-padding-bottom);
-    padding-left: var(--sidemenu-content-container-padding-left);
     box-sizing: border-box;
 
     @media (min-width: $sidemenu-breakpoint) {
