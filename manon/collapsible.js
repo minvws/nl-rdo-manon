@@ -74,6 +74,7 @@ function createMenuButton(collapsibleElement, collapsingElementId, openLabel, cl
 
     if(buttonElement) {
       button = buttonElement
+      button.className += (" " + buttonClasses)
     } else {
       button = document.createElement("button");
       button.className = "collapsible-toggle " + buttonClasses;
