@@ -13,20 +13,16 @@
   a {
     color: var(--notification-link-text-color);
 
-    &:hover {
-      color: var(--notification-link-hover-text-color);
-    }
-
     &:visited {
       color: var(--notification-link-visited-text-color);
-
-      &:hover {
-        color: var(--notification-link-visited-hover-text-color);
-      }
 
       &:before {
         color: inherit;
       }
+    }
+
+    &:hover {
+      color: var(--notification-link-hover-text-color);
     }
   }
 
