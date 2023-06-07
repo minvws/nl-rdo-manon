@@ -3,6 +3,13 @@
 /*---------------------------------------------------------------------*/
 @use "icon";
 
+$states: (
+  "visited",
+  "hover",
+  "active",
+  "focus",
+);
+
 @mixin styling($prefix) {
   font-size: var(--#{$prefix}font-size);
   font-weight: var(--#{$prefix}font-weight);
