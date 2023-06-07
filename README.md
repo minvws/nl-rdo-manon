@@ -1,8 +1,8 @@
 # Manon
-De documentation staat in de "docs" directory en online op https://minvws.github.io/nl-rdo-manon. Er wordt momenteel nog hard gewerkt aan Manon en de documentatie. Het kan daarom zijn dat sommige onderdelen nog niet volledig getest zijn of nog missen. Kom je een probleem tegen dat nog niet gedocumenteerd staat binnen de issues op de manon repository meld ze vooral. Dan maakt ze inzichtelijk en oplosbaar.
+De documentatie is te vinden op https://minvws.github.io/nl-rdo-manon die wordt gegenereerd op basis van de de docs directory op deze repo. Er wordt momenteel nog hard gewerkt aan Manon en de documentatie. Het kan daarom zijn dat sommige onderdelen nog niet volledig getest zijn of nog missen. Kom je een probleem tegen dat nog niet gedocumenteerd staat binnen de issues op de manon repository meld ze vooral. Dan maakt ze inzichtelijk en oplosbaar.
 
 ## Wat
-Manon is een design framework dat gebruik maakt van de volgende principes
+Manon is een design framework dat gebruik maakt van de volgende principes:
 
 ### "Classless" waar mogelijk. 
 Als er gestyled kan worden op basis van de HTML-structuur heeft dit de voorkeur. Gescheiden code-lagen voor zover dit mogelijk is. Dit zorgt voor overzichtelijke goed onderhoudbare code waarbij de visuele weergave efficient aangepast kan worden met zo min mogelijk aanpassingen binnen de HTML. Bijvoorbeeld door een ander CSS-component in te laden voor dezelfde HTML-structuur.
@@ -35,10 +35,10 @@ https://fonts.google.com/specimen/Open+Sans/about
 # English
 
 # Manon
-The documentation is located in the "docs" directory and online on https://minvws.github.io/nl-rdo-manon. Manon and the documentation is currently being developed. This means that it's possible that parts haven't been fully tested or added yet. It also means that as it is in development things may change. If you run into any issues that haven't been documented within the repository feel free to add them. This will make them visual and solvable. We highly appreciate the feedback and insight.
+The documentation can be found on https://minvws.github.io/nl-rdo-manon, it is generated using the docs directory on this repo. Manon and the documentation is currently being developed. This means that it's possible that parts haven't been fully tested or added yet. It also means that as it is in development things may change. If you run into any issues that haven't been documented within the repository feel free to add them. This will make them visual and solvable. We highly appreciate the feedback and insight.
 
 ## Wat
-Manon is a design framework that is based on the following principles
+Manon is a design framework that is based on the following principles:
 
 ### "Classless" when possible.
 Manon uses the power of css when possible. This means adding little to no classes within the HTML is preferred. That way the code layers stay as separate as possible which leads to code that is easy to read and maintain. Making it possible to change the visual look of the application without little to no changes within the HTML structure.
