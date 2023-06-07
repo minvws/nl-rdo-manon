@@ -77,9 +77,8 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula.
             </p>
 
-            <label for="form-example-base">Voorbeeld text input</label>
-            <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text" />
-
+            <label for="form-example-explanation-base">Voorbeeld text input</label>
+            <input id="form-example-explanation-base" name="form-example-explanation-base" placeholder="voorbeeld text input" type="text" />
             <button type="submit">Verzend</button>
           </form>
 
@@ -92,14 +91,8 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula.
   &lt;/p>
 
-  &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
-  &lt;input
-    id="form-example-base"
-    name="form-example-base"
-    placeholder="voorbeeld text input"
-    type="text"
-  />
-
+  &lt;label for="form-example-explanation-base">Voorbeeld text input&lt;/label>
+  &lt;input id="form-example-explanation-base" name="form-example-explanation-base" placeholder="voorbeeld text input" type="text" />
   &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
             </code>
@@ -114,8 +107,8 @@
                 varius eget. Mauris euismod a augue sit amet condimentum.</p>
             </div>
 
-            <label for="form-example-base">Voorbeeld text input</label>
-            <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text" />
+            <label for="form-example-explanation-block-base">Voorbeeld text input</label>
+            <input id="form-example-explanation-block-base" name="form-example-explanation-block-base" placeholder="voorbeeld text input" type="text" />
 
             <button type="submit">Verzend</button>
           </form>
@@ -129,10 +122,10 @@
     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
   &lt;/div>
 
-  &lt;label for="form-example-base">Voorbeeld text input&lt;/label>
+  &lt;label for="form-example-explanation-block-base">Voorbeeld text input&lt;/label>
   &lt;input
-    id="form-example-base"
-    name="form-example-base"
+    id="form-example-explanation-block-base"
+    name="form-example-explanation-block-base"
     placeholder="voorbeeld text input"
     type="text"
   />
@@ -146,10 +139,37 @@
           <h4>Visueel voorbeeld foutmelding:</h4>
           <form action="" method="post">
             <label for="input-error">Input</label>
-            <div>
-              <input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message"
+            <input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message"
                 aria-invalid="true">
-              <p class="error" id="input-error-message">
+            <p class="error" id="input-error-message">
+              <span>Foutmelding:</span> Lorem ipsum dolor set amet
+            </p>
+            <button type="submit">Verzend</button>
+          </form>
+
+          <p>Html-voorbeeld:</p>
+          <pre>
+              <code>
+&lt;form action="" method="post">
+  &lt;label for="input-error">Input&lt;/label>
+  &lt;input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message"
+      aria-invalid="true">
+  &lt;p class="error" id="input-error-message">
+    &lt;span>Foutmelding:&lt;/span> Lorem ipsum dolor set amet
+  &lt;/p>
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+          <h3>Notificatie gegroepeerd met invoerveld (onder)</h3>
+          <h4>Visueel voorbeeld foutmelding:</h4>
+          <form action="" method="post">
+            <div class="notification">
+              <label for="notifiction-grouped-below-error">Input</label>
+              <input id="notifiction-grouped-below-error" class="error" value="Lorem ipsum" aria-describedby="notifiction-grouped-below-error-message"
+                  aria-invalid="true">
+              <p class="error" id="notifiction-grouped-below-error-message">
                 <span>Foutmelding:</span> Lorem ipsum dolor set amet
               </p>
             </div>
@@ -160,11 +180,11 @@
           <pre>
               <code>
 &lt;form action="" method="post">
-  &lt;label for="input-error">Input&lt;/label>
-  &lt;div>
-    &lt;input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message" aria-invalid="true">
-    &lt;p class="error" id="input-error-message">
-        &lt;span>Foutmelding:&lt;/span> Lorem ipsum dolor set amet
+  &lt;div class="notification">
+    &lt;label for="notifiction-grouped-below-error">Input&lt;/label>
+    &lt;input id="notifiction-grouped-below-error" class="error" value="Lorem ipsum" aria-describedby="notifiction-grouped-below-error-message" aria-invalid="true">
+    &lt;p class="error" id="notifiction-grouped-below-error-message">
+      &lt;span>Foutmelding:&lt;/span> Lorem ipsum dolor set amet
     &lt;/p>
   &lt;/div>
   &lt;button type="submit">Verzend&lt;/button>
@@ -172,15 +192,15 @@
               </code>
             </pre>
 
-          <h4>Visueel voorbeeld toelichting:</h4>
+          <h4>Notificatie gegroepeerd met invoerveld (boven)</h4>
           <form action="" method="post">
-            <label for="input-explanation">Input</label>
-            <div>
-              <p class="explanation" id="input-explanation-message">
+            <label for="notification-grouped-above-explanation">Input</label>
+            <div class="notification">
+              <p class="explanation" id="notification-grouped-above-explanation-message">
                 <span>Toelichting:</span> Lorem ipsum dolor set amet
               </p>
-              <input id="input-explanation" class="explanation" value="Lorem ipsum"
-                aria-describedby="input-explanation-message" aria-invalid="true">
+              <input id="notification-grouped-above-explanation" class="explanation" value="Lorem ipsum"
+                aria-describedby="notification-grouped-above-explanation-message" aria-invalid="true">
             </div>
             <button type="submit">Verzend</button>
           </form>
@@ -189,12 +209,13 @@
           <pre>
               <code>
 &lt;form action="" method="post">
-  &lt;label for="input-explanation">Input&lt;/label>
-  &lt;div>
-    &lt;p class="explanation" id="input-explanation-message">
+  &lt;label for="notification-grouped-above-explanation">Input&lt;/label>
+  &lt;div class="notification">
+    &lt;p class="explanation" id="notification-grouped-above-explanation-message">
       &lt;span>Toelichting:&lt;/span> Lorem ipsum dolor set amet
     &lt;/p>
-    &lt;input id="input-explanation" class="explanation" value="Lorem ipsum" aria-describedby="input-explanation-message" aria-invalid="true">
+    &lt;input id="notification-grouped-above-explanation" class="explanation" value="Lorem ipsum"
+      aria-describedby="notification-grouped-above-explanation-message" aria-invalid="true">
   &lt;/div>
   &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
@@ -203,12 +224,12 @@
 
           <h4>Visueel voorbeeld waarschuwing:</h4>
           <form action="" method="post">
-            <label for="input-warning">Input</label>
-            <div>
-              <p class="warning" id="input-warning-message">
+            <label for="notification-grouped-above-warning">Input</label>
+            <div class="notification">
+              <p class="warning" id="notification-grouped-above-warning-message">
                 <span>Waarschuwing:</span> Lorem ipsum dolor set amet
               </p>
-              <input id="input-warning" class="warning" value="Lorem ipsum" aria-describedby="input-warning-message"
+              <input id="notification-grouped-above-warning" class="warning" value="Lorem ipsum" aria-describedby="notification-grouped-above-warning-message"
                 aria-invalid="true">
             </div>
             <button type="submit">Verzend</button>
@@ -218,12 +239,13 @@
           <pre>
               <code>
 &lt;form action="" method="post">
-  &lt;label for="input-warning">Input&lt;/label>
-  &lt;div>
-    &lt;p class="warning" id="input-warning-message">
+  &lt;label for="notification-grouped-above-warning">Input&lt;/label>
+  &lt;div class="notification">
+    &lt;p class="warning" id="notification-grouped-above-warning-message">
       &lt;span>Waarschuwing:&lt;/span> Lorem ipsum dolor set amet
     &lt;/p>
-    &lt;input id="input-warning" class="warning" value="Lorem ipsum" aria-describedby="input-warning-message" aria-invalid="true">
+    &lt;input id="notification-grouped-above-warning" class="warning" value="Lorem ipsum" aria-describedby="notification-grouped-above-warning-message"
+      aria-invalid="true">
   &lt;/div>
   &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
@@ -232,13 +254,13 @@
 
           <h4>Visueel voorbeeld bevestiging:</h4>
           <form action="" method="post">
-            <label for="input-confirmation">Input</label>
-            <div>
-              <p class="confirmation" id="input-confirmation-message">
+            <label for="notification-grouped-above-confirmation">Input</label>
+            <div class="notification">
+              <p class="confirmation" id="notification-grouped-above-confirmation-message">
                 <span>Bevestiging:</span> Lorem ipsum dolor set amet
               </p>
-              <input id="input-confirmation" class="confirmation" value="Lorem ipsum"
-                aria-describedby="input-confirmation-message" aria-invalid="true">
+              <input id="notification-grouped-above-confirmation" class="confirmation" value="Lorem ipsum"
+                aria-describedby="notification-grouped-above-confirmation-message" aria-invalid="true">
             </div>
             <button type="submit">Verzend</button>
           </form>
@@ -247,12 +269,13 @@
           <pre>
               <code>
 &lt;form action="" method="post">
-  &lt;label for="input-confirmation">Input&lt;/label>
-  &lt;div>
-    &lt;p class="confirmation" id="input-confirmation-message">
-        &lt;span>Bevestiging:&lt;/span> Lorem ipsum dolor set amet
+  &lt;label for="notification-grouped-above-confirmation">Input&lt;/label>
+  &lt;div class="notification">
+    &lt;p class="confirmation" id="notification-grouped-above-confirmation-message">
+      &lt;span>Bevestiging:&lt;/span> Lorem ipsum dolor set amet
     &lt;/p>
-      &lt;input id="input-confirmation" class="confirmation" value="Lorem ipsum" aria-describedby="input-confirmation-message" aria-invalid="true">
+    &lt;input id="notification-grouped-above-confirmation" class="confirmation" value="Lorem ipsum"
+      aria-describedby="notification-grouped-above-confirmation-message" aria-invalid="true">
   &lt;/div>
   &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
@@ -261,12 +284,12 @@
 
           <h4>Visueel voorbeeld systeembericht</h4>
           <form action="" method="post">
-            <label for="input-system">Input</label>
-            <div>
-              <p class="system" id="input-system-message">
+            <label for="notification-grouped-aboce-system">Input</label>
+            <div class="notification">
+              <p class="system" id="notification-grouped-aboce-system-message">
                 <span>Systeembericht:</span> Lorem ipsum dolor set amet
               </p>
-              <input id="input-system" class="system" value="Lorem ipsum" aria-describedby="input-system-message"
+              <input id="notification-grouped-aboce-system" class="system" value="Lorem ipsum" aria-describedby="notification-grouped-aboce-system-message"
                 aria-invalid="true">
             </div>
             <button type="submit">Verzend</button>
@@ -276,16 +299,16 @@
           <pre>
               <code>
 &lt;form action="" method="post">
-  &lt;label for="input-system">Input&lt;/label>
-  &lt;div>
-    &lt;p class="system" id="input-system-message">
-        &lt;span>Systeembericht:&lt;/span> Lorem ipsum dolor set amet
+  &lt;label for="notification-grouped-aboce-system">Input&lt;/label>
+  &lt;div class="notification">
+    &lt;p class="system" id="notification-grouped-aboce-system-message">
+      &lt;span>Systeembericht:&lt;/span> Lorem ipsum dolor set amet
     &lt;/p>
-    &lt;input id="input-system" class="system" value="Lorem ipsum" aria-describedby="input-system-message" aria-invalid="true">
+    &lt;input id="notification-grouped-aboce-system" class="system" value="Lorem ipsum" aria-describedby="notification-grouped-aboce-system-message"
+      aria-invalid="true">
   &lt;/div>
   &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
-
               </code>
             </pre>
 
@@ -643,7 +666,7 @@
               <label for="checkbox-example-disabled">Lorem ipsum dolor set amet</label>
             </div>
 
-            <div>
+            <div class="notification">
               <div class="checkbox">
                 <input type="checkbox" id="checkbox-example-error-1" name="voorwaarden" value="checkbox input error"
                   class="error" aria-describedby="checkbox-example-error-1-message">
@@ -652,7 +675,7 @@
               <p class="error" id="checkbox-example-error-1-message"><span>Foutmelding</span> Lorem ipsum</p>
             </div>
 
-            <div class="required">
+            <div class="required notification">
               <span class="nota-bene">Dit veld is verplicht</span>
               <div class="checkbox">
                 <input type="checkbox" id="checkbox-example-required-with-error" name="verplicht" required>
@@ -695,7 +718,7 @@
               <label for="radio-example-checked-1">Lorem ipsum dolor set amet</label>
             </div>
 
-            <div>
+            <div class="notification">
               <div class="radio">
                 <input type="radio" id="radio-example-checked-1-notification" name="standaard-radiobutton" value="value"
                   checked>
@@ -741,7 +764,7 @@
                   amet</label>
               </div>
 
-              <div>
+              <div class="notification">
                 <div class="radio">
                   <input type="radio" id="radio-list-long-name-2" name="radio-option" value="value long name"
                     class="error" aria-label="foutmelding">
@@ -756,62 +779,74 @@
               <input id="color-input-1" name="color-input" type="color" value="#ffffff">
             </div>
 
-            <label for="voorbeeld-text-input-error-1">Voorbeeld invoerveld foutmelding</label>
-            <div>
-              <input id="voorbeeld-text-input-error-1" class="error" name="voorbeeld-text-input-error-1"
-                aria-describedby="voorbeeld-text-input-error-1-message" placeholder="Voorbeeld invoerveld foutmelding"
-                type="text" aria-invalid="true">
-              <p class="error" id="voorbeeld-text-input-error-1-message"><span>Foutmelding:</span> Lorem ipsum dolor
-                set amet</p>
+            <div class="notification">
+              <label for="voorbeeld-text-input-error-1">Voorbeeld invoerveld foutmelding</label>
+              <div>
+                <input id="voorbeeld-text-input-error-1" class="error" name="voorbeeld-text-input-error-1"
+                  aria-describedby="voorbeeld-text-input-error-1-message" placeholder="Voorbeeld invoerveld foutmelding"
+                  type="text" aria-invalid="true">
+                <p class="error" id="voorbeeld-text-input-error-1-message"><span>Foutmelding:</span> Lorem ipsum dolor
+                  set amet</p>
+              </div>
             </div>
 
-            <label for="voorbeeld-text-input-explanation-1">Voorbeeld invoerveld toelichting</label>
-            <div>
-              <p class="explanation" id="voorbeeld-text-input-explanation-1-message"><span>Toelichting:</span> Lorem
-                ipsum
-                dolor set amet</p>
-              <input id="voorbeeld-text-input-explanation-1" class="explanation"
-                name="voorbeeld-text-input-explanation-1" placeholder="Voorbeeld invoerveld toelichting" type="text"
-                aria-describedby="voorbeeld-text-input-explanation-1-message">
+            <div class="notification">
+              <label for="voorbeeld-text-input-explanation-1">Voorbeeld invoerveld toelichting</label>
+              <div>
+                <p class="explanation" id="voorbeeld-text-input-explanation-1-message"><span>Toelichting:</span> Lorem
+                  ipsum
+                  dolor set amet</p>
+                <input id="voorbeeld-text-input-explanation-1" class="explanation"
+                  name="voorbeeld-text-input-explanation-1" placeholder="Voorbeeld invoerveld toelichting" type="text"
+                  aria-describedby="voorbeeld-text-input-explanation-1-message">
+              </div>
             </div>
 
-            <label for="voorbeeld-text-input-warning-1">Voorbeeld invoerveld waarschuwing</label>
-            <div>
-              <p class="warning" id="voorbeeld-text-input-warning-1-message"><span>Waarschuwing:</span> Lorem ipsum
-                dolor set amet</p>
-              <input id="voorbeeld-text-input-warning-1" class="warning" name="voorbeeld-text-input-warning-1"
-                placeholder="Voorbeeld invoerveld waarschuwing" type="text"
-                aria-describedby="voorbeeld-text-input-warning-1-message">
+            <div class="notification">
+              <label for="voorbeeld-text-input-warning-1">Voorbeeld invoerveld waarschuwing</label>
+              <div>
+                <p class="warning" id="voorbeeld-text-input-warning-1-message"><span>Waarschuwing:</span> Lorem ipsum
+                  dolor set amet</p>
+                <input id="voorbeeld-text-input-warning-1" class="warning" name="voorbeeld-text-input-warning-1"
+                  placeholder="Voorbeeld invoerveld waarschuwing" type="text"
+                  aria-describedby="voorbeeld-text-input-warning-1-message">
+              </div>
             </div>
 
-            <label for="voorbeeld-tekstveld-error">Voorbeeld tekstveld foutmelding</label>
-            <div>
-              <textarea id="voorbeeld-tekstveld-error" class="error" name="voorbeeld-tekstveld-error"
-                placeholder="Voorbeeld tekstveld foutmelding" rows="3"
-                aria-describedby="voorbeeld-tekstveld-error-message" aria-invalid="true"></textarea>
-              <p class="error" id="voorbeeld-tekstveld-error-message">
-                <span>Foutmelding:</span> Lorem ipsum dolor set amet
-              </p>
+            <div class="notification">
+              <label for="voorbeeld-tekstveld-error">Voorbeeld tekstveld foutmelding</label>
+              <div>
+                <textarea id="voorbeeld-tekstveld-error" class="error" name="voorbeeld-tekstveld-error"
+                  placeholder="Voorbeeld tekstveld foutmelding" rows="3"
+                  aria-describedby="voorbeeld-tekstveld-error-message" aria-invalid="true"></textarea>
+                <p class="error" id="voorbeeld-tekstveld-error-message">
+                  <span>Foutmelding:</span> Lorem ipsum dolor set amet
+                </p>
+              </div>
             </div>
 
-            <label for="voorbeeld-tekstveld-explanation">Voorbeeld tekstveld toelichting</label>
-            <div>
-              <p class="explanation" id="voorbeeld-tekstveld-explanation-message">
-                <span>Toelichting:</span> Lorem ipsum dolor set amet
-              </p>
-              <textarea id="voorbeeld-tekstveld-explanation" class="explanation" name="voorbeeld-tekstveld-explanation"
-                placeholder="Voorbeeld tekstveld toelichting" rows="3"
-                aria-describedby="voorbeeld-tekstveld-explanation-message"></textarea>
+            <div class="notification">
+              <label for="voorbeeld-tekstveld-explanation">Voorbeeld tekstveld toelichting</label>
+              <div>
+                <p class="explanation" id="voorbeeld-tekstveld-explanation-message">
+                  <span>Toelichting:</span> Lorem ipsum dolor set amet
+                </p>
+                <textarea id="voorbeeld-tekstveld-explanation" class="explanation" name="voorbeeld-tekstveld-explanation"
+                  placeholder="Voorbeeld tekstveld toelichting" rows="3"
+                  aria-describedby="voorbeeld-tekstveld-explanation-message"></textarea>
+              </div>
             </div>
 
-            <label for="voorbeeld-tekstveld-warning">Voorbeeld tekstveld waarschuwing</label>
-            <div>
-              <p class="warning" id="voorbeeld-tekstveld-warning-message">
-                <span>Waarschuwing:</span> Lorem ipsum dolor set amet
-              </p>
-              <textarea id="voorbeeld-tekstveld-warning" class="warning" name="voorbeeld-tekstveld-warning"
-                placeholder="Voorbeeld tekstveld waarschuwing" rows="3"
-                aria-describedby="voorbeeld-tekstveld-warning-message"></textarea>
+            <div class="notification">
+              <label for="voorbeeld-tekstveld-warning">Voorbeeld tekstveld waarschuwing</label>
+              <div>
+                <p class="warning" id="voorbeeld-tekstveld-warning-message">
+                  <span>Waarschuwing:</span> Lorem ipsum dolor set amet
+                </p>
+                <textarea id="voorbeeld-tekstveld-warning" class="warning" name="voorbeeld-tekstveld-warning"
+                  placeholder="Voorbeeld tekstveld waarschuwing" rows="3"
+                  aria-describedby="voorbeeld-tekstveld-warning-message"></textarea>
+              </div>
             </div>
 
             <label for="select-1">Selectielijst</label>
@@ -844,17 +879,19 @@
               <option value="2" selected>Voorgeselecteerd</option>
             </select>
 
-            <label for="select-error">Selectielijst met foutmelding</label>
-            <div>
-              <p class="error" id="select-error-message">
-                <span>Foutmelding:</span> Lorem ipsum dolor set amet
-              </p>
-              <select id="select-error" name="select" class="error" aria-describedby="select-error-message"
-                aria-invalid="true">
-                <option value="1">Optie 1</option>
-                <option value="2">Optie 2</option>
-                <option value="3">Optie 3</option>
-              </select>
+            <div class="notification">
+              <label for="select-error">Selectielijst met foutmelding</label>
+              <div>
+                <p class="error" id="select-error-message">
+                  <span>Foutmelding:</span> Lorem ipsum dolor set amet
+                </p>
+                <select id="select-error" name="select" class="error" aria-describedby="select-error-message"
+                  aria-invalid="true">
+                  <option value="1">Optie 1</option>
+                  <option value="2">Optie 2</option>
+                  <option value="3">Optie 3</option>
+                </select>
+              </div>
             </div>
 
             <label for="select-explanation">Selectielijst met toelichting</label>
@@ -1235,7 +1272,7 @@
               </div>
             </div>
 
-            <div class="option-group">
+            <div class="option-group notification">
               <div class="checkbox">
                 <input type="checkbox" id="checkbox-example-default-3" name="standaard-checkbox" aria-invalid="true"
                   aria-describedby="checkbox-example-default-3-message">
@@ -1246,7 +1283,7 @@
               </p>
             </div>
 
-            <div class="option-group required">
+            <div class="option-group required notification">
               <span class="nota-bene">Dit veld is verplicht</span>
               <div class="checkbox">
                 <input type="checkbox" id="checkbox-example-required-3" name="voorwaarden" required aria-invalid="true"
@@ -1593,35 +1630,41 @@
 
             <fieldset>
               <legend>Meldingen</legend>
-              <label for="voorbeeld-text-input-error-4">Voorbeeld invoerveld foutmelding</label>
+              <div class="notification">
+                <label for="voorbeeld-text-input-error-4">Voorbeeld invoerveld foutmelding</label>
 
-              <div>
-                <input id="voorbeeld-text-input-error-4" class="error" name="voorbeeld-text-input-error-4"
-                  placeholder="Voorbeeld invoerveld foutmelding" type="text"
-                  aria-describedby="voorbeeld-text-input-error-4-message" aria-invalid="true">
-                <p class="error" id="voorbeeld-text-input-error-4-message">
-                  <span>Foutmelding:</span> Lorem ipsum dolor set amet
-                </p>
+                <div>
+                  <input id="voorbeeld-text-input-error-4" class="error" name="voorbeeld-text-input-error-4"
+                    placeholder="Voorbeeld invoerveld foutmelding" type="text"
+                    aria-describedby="voorbeeld-text-input-error-4-message" aria-invalid="true">
+                  <p class="error" id="voorbeeld-text-input-error-4-message">
+                    <span>Foutmelding:</span> Lorem ipsum dolor set amet
+                  </p>
+                </div>
               </div>
 
-              <label for="voorbeeld-text-input-explanation-4">Voorbeeld invoerveld toelichting</label>
-              <div>
-                <p class="explanation" id="voorbeeld-text-input-explanation-4-message">
-                  <span>Toelichting:</span> Lorem ipsum dolor set amet
-                </p>
-                <input id="voorbeeld-text-input-explanation-4" class="explanation"
-                  name="voorbeeld-text-input-explanation-4" placeholder="Voorbeeld invoerveld toelichting" type="text"
-                  aria-describedby="voorbeeld-text-input-explanation-4">
+              <div class="notification">
+                <label for="voorbeeld-text-input-explanation-4">Voorbeeld invoerveld toelichting</label>
+                <div>
+                  <p class="explanation" id="voorbeeld-text-input-explanation-4-message">
+                    <span>Toelichting:</span> Lorem ipsum dolor set amet
+                  </p>
+                  <input id="voorbeeld-text-input-explanation-4" class="explanation"
+                    name="voorbeeld-text-input-explanation-4" placeholder="Voorbeeld invoerveld toelichting" type="text"
+                    aria-describedby="voorbeeld-text-input-explanation-4">
+                </div>
               </div>
 
-              <label for="voorbeeld-text-input-warning-5">Voorbeeld invoerveld waarschuwing</label>
-              <div>
-                <p class="warning" id="voorbeeld-text-input-warning-5-message">
-                  <span>Waarschuwing:</span> Lorem ipsum dolor set amet
-                </p>
-                <input id="voorbeeld-text-input-warning-5" class="warning" name="voorbeeld-text-input-warning-5"
-                  placeholder="Voorbeeld invoerveld waarschuwing" type="text"
-                  aria-describedby="voorbeeld-text-input-warning-5-message">
+              <div class="notification">
+                <label for="voorbeeld-text-input-warning-5">Voorbeeld invoerveld waarschuwing</label>
+                <div>
+                  <p class="warning" id="voorbeeld-text-input-warning-5-message">
+                    <span>Waarschuwing:</span> Lorem ipsum dolor set amet
+                  </p>
+                  <input id="voorbeeld-text-input-warning-5" class="warning" name="voorbeeld-text-input-warning-5"
+                    placeholder="Voorbeeld invoerveld waarschuwing" type="text"
+                    aria-describedby="voorbeeld-text-input-warning-5-message">
+                </div>
               </div>
             </fieldset>
 
@@ -1921,7 +1964,7 @@
 
             <fieldset>
               <legend>Velden met validatie</legend>
-              <div>
+              <div class="notification">
                 <label for="text-form-username-3">Gebruikersnaam</label>
                 <div>
                   <input id="text-form-username-3" name="text-form-username-3" pattern="^[a-zA-Z0-9_.-]*$"
@@ -1934,19 +1977,17 @@
                 </div>
               </div>
 
-              <div>
-                <label for="text-form-password-2">Wachtwoord</label>
-
+              <div class="notification">
                 <div>
+                  <label for="text-form-password-2">Wachtwoord</label>
                   <input id="text-form-password-2" name="text-form-password-2"
                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" placeholder="wachtwoord"
                     aria-describedby="text-form-password-2-message" type="password">
-
-                  <p class="explanation" id="text-form-password-2-message">
-                    <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan
-                    minimaal 1 hoofdletter, 1 kleineletter en 1 cijfer.
-                  </p>
                 </div>
+                <p class="explanation" id="text-form-password-2-message">
+                  <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan
+                  minimaal 1 hoofdletter, 1 kleineletter en 1 cijfer.
+                </p>
               </div>
             </fieldset>
 
