@@ -4,7 +4,7 @@
 
 @use "mixins/link";
 
-$breadcrumb-bar-states: 'active', 'focus', 'hover', 'visited';
+$breadcrumb-bar-states: 'visited', 'hover', 'active', 'focus';
 
 :root {
   @each $state in $breadcrumb-bar-states {

@@ -49,11 +49,11 @@
 @use "@minvws/manon/emphasized";
 @use "@minvws/manon/de-emphasized";
 @use "@minvws/manon/link";
-@use "@minvws/manon/link-active";
 @use "@minvws/manon/link-external";
-@use "@minvws/manon/link-focus";
-@use "@minvws/manon/link-hover";
 @use "@minvws/manon/link-visited";
+@use "@minvws/manon/link-hover";
+@use "@minvws/manon/link-active";
+@use "@minvws/manon/link-focus";
 @use "@minvws/manon/nota-bene";
 @use "@minvws/manon/max-line-length";
 
@@ -100,36 +100,36 @@
 /* Navigation */
 @use "@minvws/manon/navigation";
 @use "@minvws/manon/navigation-link";
+@use "@minvws/manon/navigation-link-visited";
+@use "@minvws/manon/navigation-link-hover";
 @use "@minvws/manon/navigation-link-active";
 @use "@minvws/manon/navigation-link-focus";
-@use "@minvws/manon/navigation-link-hover";
-@use "@minvws/manon/navigation-link-visited";
 @use "@minvws/manon/navigation-content-wrapper";
 
 /* Footer navigation */
 @use "@minvws/manon/footer-navigation-link";
+@use "@minvws/manon/footer-navigation-link-visited";
+@use "@minvws/manon/footer-navigation-link-hover";
 @use "@minvws/manon/footer-navigation-link-active";
 @use "@minvws/manon/footer-navigation-link-focus";
-@use "@minvws/manon/footer-navigation-link-hover";
-@use "@minvws/manon/footer-navigation-link-visited";
 
 /* Header */
 @use "@minvws/manon/header";
 @use "@minvws/manon/header-link";
+@use "@minvws/manon/header-link-visited";
+@use "@minvws/manon/header-link-hover";
 @use "@minvws/manon/header-link-active";
 @use "@minvws/manon/header-link-focus";
-@use "@minvws/manon/header-link-hover";
-@use "@minvws/manon/header-link-visited";
 @use "@minvws/manon/header-content-wrapper";
 
 /* Header navigation */
 @use "@minvws/manon/header-navigation";
 @use "@minvws/manon/header-navigation-content-wrapper";
 @use "@minvws/manon/header-navigation-link";
+@use "@minvws/manon/header-navigation-link-visited";
+@use "@minvws/manon/header-navigation-link-hover";
 @use "@minvws/manon/header-navigation-link-active";
 @use "@minvws/manon/header-navigation-link-focus";
-@use "@minvws/manon/header-navigation-link-hover";
-@use "@minvws/manon/header-navigation-link-visited";
 @use "@minvws/manon/header-navigation-collapsible";
 @use "@minvws/manon/header-navigation-collapsible-collapsing-element-button";
 @use "@minvws/manon/header-navigation-collapsible-collapsing-element-button-states";
@@ -163,10 +163,10 @@
 /* Footer */
 @use "@minvws/manon/footer";
 @use "@minvws/manon/footer-link";
+@use "@minvws/manon/footer-link-visited";
+@use "@minvws/manon/footer-link-hover";
 @use "@minvws/manon/footer-link-active";
 @use "@minvws/manon/footer-link-focus";
-@use "@minvws/manon/footer-link-hover";
-@use "@minvws/manon/footer-link-visited";
 @use "@minvws/manon/footer-two-thirds-one-third";
 
 /* Components */
