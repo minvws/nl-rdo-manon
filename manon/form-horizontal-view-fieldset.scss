@@ -21,9 +21,30 @@ For more information on the bug see: https://github.com/philipwalton/flexbugs#9-
 and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 
 form.horizontal-view {
-  $breakpoint: 24rem;
+  $breakpoint: 32rem;
 
   >fieldset {
+
+    %input-styling {
+      @media (min-width: $breakpoint) {
+        width: var(--input-column);
+        /* resetting gap as it can not be used within fieldsets */
+        gap: 0;
+        /* float objects to move inputs into place even when there is no label */
+        float: right;
+      }
+    }
+
+    %label-styling {
+      margin-top: var(--form-horizontal-view-fieldset-label-margin-top);
+
+      @media (min-width: $breakpoint) {
+        float: left;
+        width: var(--label-column);
+        padding-right: var(--form-horizontal-view-gap);
+      }
+    }
+
     >div {
       display: block;
       /* resetting gap as it can not be used within fieldsets */
@@ -31,25 +52,33 @@ form.horizontal-view {
       /* Adds margin instead of gap */
       margin-bottom: var(--form-base-gap);
 
+      >* {
+        @extend %input-styling;
+      }
+
+      label {
+        @extend %label-styling;
+      }
+
 
       @media (min-width: $breakpoint) {
-        >* {
-          width: var(--input-column);
-          /* resetting gap as it can not be used within fieldsets */
-          gap: 0;
-          /* float objects to move inputs into place even when there is no label */
-          float: right;
-        }
-
         >div {
           margin-bottom: 0;
         }
+      }
 
-        label {
-          float: left;
-          width: var(--label-column);
-          padding-right: var(--form-horizontal-view-gap);
-          margin-top: var(--form-horizontal-view-fieldset-label-margin-top);
+      &.notification {
+
+        >div {
+          width: 100%;
+
+          >* {
+            @extend %input-styling;
+          }
+
+          label {
+            @extend %label-styling;
+          }
         }
       }
     }

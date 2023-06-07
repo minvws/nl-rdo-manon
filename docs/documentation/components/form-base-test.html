@@ -480,6 +480,77 @@
 &lt;/form>
               </code>
             </pre>
+
+            <h3>Invoerveld met notificatie</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <form action="" method="post" class="horizontal-view">
+              <div class="notification">
+                <p class="explanation" id="notification-message"><span>Toelichting:</span> Lorem ipsum dolor set amet</p>
+                
+                <div>
+                    <label for="notification">IBAN-nummer</label>
+                    <input id="notification" name="iban" placeholder="Lorem ipsum dolor set" type="text">
+                </div>
+              </div>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <p>Html-voorbeeld:</p>
+            <pre>
+                <code>
+&lt;form action="" method="post" class="horizontal-view">
+  &lt;div class="notification">
+    &lt;p class="explanation" id="notification-message">&lt;span>Toelichting:&lt;/span> Lorem ipsum dolor set amet&lt;/p>
+    
+    &lt;div>
+        &lt;label for="notification">IBAN-nummer&lt;/label>
+        &lt;input id="notification" name="iban" placeholder="Lorem ipsum dolor set" type="text">
+    &lt;/div>
+  &lt;/div>
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+
+            <h3>Invoerveld met notificatie binnen fieldset</h3>
+            <h4>Visueel voorbeeld:</h4>
+            <form action="" method="post" class="horizontal-view">
+              <fieldset>
+                <legend>Lorem ipsum</legend>
+
+                <div class="notification">
+                  <p class="explanation" id="notification-2-message"><span>Toelichting:</span> Lorem ipsum dolor set amet</p>
+                  
+                  <div>
+                      <label for="notification-2">IBAN-nummer</label>
+                      <input id="notification-2" name="iban" placeholder="Lorem ipsum dolor set" type="text">
+                  </div>
+                </div>
+              </fieldset>
+              <button type="submit">Verzend</button>
+            </form>
+
+            <p>Html-voorbeeld:</p>
+            <pre>
+                <code>
+&lt;form action="" method="post" class="horizontal-view">
+  &lt;fieldset>
+    &lt;legend>Lorem ipsum&lt;/legend>
+
+    &lt;div class="notification">
+      &lt;p class="explanation" id="notification-2-message">&lt;span>Toelichting:&lt;/span> Lorem ipsum dolor set amet&lt;/p>
+      
+      &lt;div>
+          &lt;label for="notification-2">IBAN-nummer&lt;/label>
+          &lt;input id="notification-2" name="iban" placeholder="Lorem ipsum dolor set" type="text">
+      &lt;/div>
+    &lt;/div>
+  &lt;/fieldset>
+  &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+        </section>
         </section>
 
         <section>

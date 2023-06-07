@@ -6,6 +6,32 @@
 form.horizontal-view {
   $breakpoint: 24rem !default;
 
+  /* Form rows */
+  %form-row-styling {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: var(--form-horizontal-view-justify-content);
+    flex-wrap: wrap;
+    gap: var(--form-horizontal-view-group-gap) var(--form-horizontal-view-group-vertical-gap);
+    margin: 0;
+  }
+
+  /* Input */
+  %input-styling {
+    @media (min-width: $breakpoint) {
+      max-width: var(--input-column);
+    }
+  }
+
+  /* Label */
+  %label-styling {
+    @media (min-width: $breakpoint) {
+      width: 100%;
+      max-width: var(--form-horizontal-view-label-max-width);
+    }
+  }
+
   flex-direction: column;
   gap: var(--form-horizontal-view-gap);
   flex-wrap: wrap;
@@ -20,13 +46,21 @@ form.horizontal-view {
 
   >div,
   >section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: var(--form-horizontal-view-justify-content);
-    flex-wrap: wrap;
-    gap: var(--form-horizontal-view-group-gap) var(--form-horizontal-view-group-vertical-gap);
-    margin: 0;
+    @extend %form-row-styling;
+
+    >* {
+      flex-grow: 1;
+      box-sizing: border-box;
+    }
+
+    input[type="color"] {
+      max-width: var(--form-input-color-max-width);
+      @extend %input-styling;
+    }
+
+    label {
+      @extend %label-styling;
+    }
 
     &.checkbox {
       gap: var(--form-checkbox-margin-right);
@@ -97,32 +131,6 @@ form.horizontal-view {
       }
     }
 
-    /* Notifications */
-    &.error,
-    &.warning,
-    &.explanation,
-    &.confirmation,
-    &.system {
-      flex-direction: var(--form-horizontal-view-notification-block-element-flex-direction);
-      justify-content: var(--form-horizontal-view-notification-block-element-justify-content);
-      align-items: var(--form-horizontal-view-notification-block-element-align-items);
-      gap: var(--form-horizontal-view-notification-block-element-gap);
-      margin: 0;
-
-      >* {
-        max-width: 100%;
-      }
-    }
-
-    input[type="color"] {
-      max-width: var(--form-input-color-max-width);
-    }
-
-    >* {
-      flex-grow: 1;
-      box-sizing: border-box;
-    }
-
     >button,
     >a.button,
     >input[type="button"],
@@ -131,16 +139,64 @@ form.horizontal-view {
       flex-grow: 0;
     }
 
+    /* Notifications */
+    %notification-styling {
+      flex-direction: var(--form-horizontal-view-notification-block-element-flex-direction);
+      justify-content: var(--form-horizontal-view-notification-block-element-justify-content);
+      align-items: var(--form-horizontal-view-notification-block-element-align-items);
+      gap: var(--form-horizontal-view-notification-block-element-gap);
+      margin: 0;
+      max-width: var(--input-column);
+      margin-left: auto;
+
+      >* {
+        max-width: 100%;
+      }
+
+      +div {
+        @extend %form-row-styling;
+
+        input {
+          @extend %input-styling;
+        }
+
+        label {
+          @extend %label-styling;
+        }
+      }
+    }
+
+    &.notification {
+      flex-wrap: wrap;
+
+      >div {
+        max-width: 100%;
+      }
+    }
+
+    /* Block Notifications */
+    &.error,
+    &.warning,
+    &.explanation,
+    &.confirmation,
+    &.system {
+      @extend %notification-styling;
+    }
+
+    /* Notifications */
+    .error,
+    .warning,
+    .explanation,
+    .confirmation,
+    .system {
+      @extend %notification-styling;
+    }
+
     @media (min-width: $breakpoint) {
       flex-wrap: nowrap;
 
       >* {
         max-width: var(--input-column);
-      }
-
-      label {
-        width: 100%;
-        max-width: var(--form-horizontal-view-label-max-width);
       }
     }
   }

@@ -5,7 +5,6 @@
 
 form {
 
-    div.notification,
     div.error,
     div.warning,
     div.confirmation,
@@ -16,8 +15,8 @@ form {
         padding-right: var(--notification-form-block-padding-right);
         padding-bottom: var(--notification-form-block-padding-bottom);
         padding-left: var(--notification-form-block-padding-left);
-    
-        > span:first-of-type {
+
+        >span:first-of-type {
             font-weight: var(--notification-form-span-font-weight);
         }
 
@@ -34,15 +33,17 @@ form {
         }
     }
 
-    > div {
+    >div {
+
         p,
         span {
+
             /* Message types that come after fields */
             &.error {
                 margin-top: var(--notification-form-fields-gap);
             }
 
-             /* Message types that come before fields */
+            /* Message types that come before fields */
             &.warning,
             &.confirmation,
             &.system,
@@ -62,15 +63,15 @@ form {
             &.error:before {
                 content: var(--notification-form-fields-error-icon);
             }
-            
+
             &.warning:before {
                 content: var(--notification-form-fields-warning-icon);
             }
-            
+
             &.explanation:before {
                 content: var(--notification-form-fields-explanation-icon);
             }
-            
+
             &.confirmation:before {
                 content: var(--notification-form-fields-confirmation-icon);
             }
@@ -80,6 +81,7 @@ form {
     textarea,
     select,
     input {
+
         &.error,
         &.explanation,
         &.warning,
@@ -89,19 +91,19 @@ form {
             border-style: var(--notification-form-fields-border-style);
         }
 
-        &.error{
+        &.error {
             border-color: var(--notification-form-fields-error-border-color);
         }
 
-        &.explanation{
+        &.explanation {
             border-color: var(--notification-form-fields-explanation-border-color);
         }
 
-        &.warning{
+        &.warning {
             border-color: var(--notification-form-fields-warning-border-color);
         }
 
-        &.confirmation{
+        &.confirmation {
             border-color: var(--notification-form-fields-confirmation-border-color);
         }
 
