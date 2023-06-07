@@ -12,7 +12,5 @@
 
 
   /* Icon */
-  --link-focus-icon-background-color: var(--link-focus-background-color);
-  --link-focus-icon-text-color: var(--link-focus-text-color);
-  --link-focus-icon-text-decoration: var(--link-icon-text-decoration);
+  @include link.icon-styling-variables('link-focus-icon-', 'focus');
 }

@@ -3,9 +3,9 @@
 /*----------------------------------------------------------------------------------*/
 :root {
   /* Default */
-  --link-font-size: inherit;
-  --link-text-font-weight: --text-set-font-weight;
-  --link-line-height: inherit;
+  --link-font-size: var(--application-base-font-size);
+  --link-text-font-weight: var(--application-base-font-weight);
+  --link-line-height: var(--application-base-line-height);
   --link-background-color: transparent;
   --link-text-color: #2f2f9a;
   --link-text-decoration: initial;
