@@ -9,7 +9,5 @@
   @include link.styling-variables('navigation-link-visited-', 'link-visited-');
 
   /* Icon */
-  --navigation-link-icon-visited-background-color: var(--navigation-link-visited-background-color);
-  --navigation-link-icon-visited-text-color: var(--navigation-link-visited-text-color);
-  --navigation-link-icon-visited-text-decoration: var(--navigation-link-icon-text-decoration);
+  @include link.icon-styling-variables('navigation-link-visited-icon-', 'navigation-link-', 'visited');
 }

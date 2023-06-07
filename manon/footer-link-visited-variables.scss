@@ -9,7 +9,5 @@
   @include link.styling-variables('footer-link-visited-', 'link-visited-');
 
   /* Icon */
-  --footer-link-visited-icon-background-color: var(--footer-link-visited-background-color);
-  --footer-link-visited-icon-text-color: var(--footer-link-visited-text-color);
-  --footer-link-visited-icon-text-decoration: var(--footer-link-icon-text-decoration);
+  @include link.icon-styling-variables('footer-link-visited-icon-', 'footer-link-', 'visited');
 }

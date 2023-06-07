@@ -11,5 +11,5 @@
   @include outline.outline-variables('link-visited-', 'link-');
 
   /* Icon */
-  @include link.icon-styling-variables('link-visited-icon-', 'visited');
+  @include link.icon-styling-variables('link-visited-icon-', 'link-', 'visited');
 }

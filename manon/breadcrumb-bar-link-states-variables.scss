@@ -9,11 +9,9 @@ $breadcrumb-bar-states: 'visited', 'hover', 'active', 'focus';
 :root {
   @each $state in $breadcrumb-bar-states {
     /* Breadcrumb Bar Link State */
-    @include link.styling-variables('breadcrumb-bar-link-' + $state + '-', 'link-' + $state + '-');
+    @include link.styling-variables('breadcrumb-bar-link-#{$state}-', 'link-#{$state}-');
 
-    /* Breadcrumb Bar Link Icon State */
-    --breadcrumb-bar-link-#{$state}-icon-background-color: var(--breadcrumb-bar-link-#{$state}-background-color);
-    --breadcrumb-bar-link-#{$state}-icon-text-color: var(--breadcrumb-bar-link-#{$state}-text-color);
-    --breadcrumb-bar-link-#{$state}-icon-text-decoration: var(--breadcrumb-bar-link-icon-text-decoration);
+    /* Icon */
+    @include link.icon-styling-variables('breadcrumb-bar-link-#{$state}-icon-', 'breadcrumb-bar-link-', $state);
   }
 }

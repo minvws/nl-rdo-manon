@@ -9,7 +9,5 @@
   @include link.styling-variables('header-navigation-link-focus-', 'navigation-link-focus-');
 
   /* Icon */
-  --header-navigation-link-focus-icon-background-color: var(--header-navigation-link-focus-background-color);
-  --header-navigation-link-focus-icon-text-color: var(--header-navigation-link-focus-text-color);
-  --header-navigation-link-focus-icon-text-decoration: var(--header-navigation-link-icon-text-decoration);
+  @include link.icon-styling-variables('header-navigation-link-focus-icon-', 'header-navigation-link-', 'focus');
 }

@@ -9,7 +9,5 @@
   @include link.styling-variables('footer-navigation-link-hover-', 'navigation-link-hover-');
 
   /* Icon */
-  --footer-navigation-link-hover-icon-background-color: var(--footer-navigation-link-hover-background-color);
-  --footer-navigation-link-hover-icon-text-color: var(--footer-navigation-link-hover-text-color);
-  --footer-navigation-link-hover-icon-text-decoration: var(--footer-navigation-link-icon-text-decoration);
+  @include link.icon-styling-variables('footer-navigation-link-hover-icon-', 'footer-navigation-link-', 'hover');
 }

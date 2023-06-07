@@ -10,5 +10,5 @@
   @include outline.outline-variables('link-hover-', 'link-');
 
   /* Icon */
-  @include link.icon-styling-variables('link-hover-icon-', 'hover');
+  @include link.icon-styling-variables('link-hover-icon-', 'link-', 'hover');
 }

@@ -11,5 +11,5 @@
   @include outline.outline-variables('link-active-', 'link-');
 
   /* Icon */
-  @include link.icon-styling-variables('link-active-icon-', 'active');
+  @include link.icon-styling-variables('link-active-icon-', 'link-', 'active');
 }
