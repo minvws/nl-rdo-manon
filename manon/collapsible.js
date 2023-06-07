@@ -30,7 +30,7 @@ export function initNaviation() {
  */
 function makeResponsive(collapsibleElement, isCondensed) {
   var collapsingElement = collapsibleElement.querySelector(".collapsing-element");
-  
+
   if (!(collapsingElement instanceof HTMLElement)) {
       console.error("missing collapsing element for: ", collapsibleElement);
       return;
@@ -39,13 +39,9 @@ function makeResponsive(collapsibleElement, isCondensed) {
   ensureElementHasId(collapsingElement);
 
   var button = createMenuButton(
+    collapsibleElement,
     collapsingElement.id,
-    collapsibleElement.dataset.openLabel || "Menu",
-    collapsibleElement.dataset.closeLabel || "Sluit menu",
-    collapsibleElement.dataset.buttonClasses || ""
   );
-
-  collapsingElement.parentNode.insertBefore(button.element, collapsingElement);
 
   if (!isCondensed) {
     onMediaQueryMatch(
@@ -63,29 +59,41 @@ function makeResponsive(collapsibleElement, isCondensed) {
 }
 
 /**
+ * @param {HTMLElement} collapsibleElement
  * @param {string} collapsingElementId
- * @param {string} openLabel
- * @param {string} closeLabel
- * @return {{ element: HTMLButtonElement, setExpanded: (expanded: boolean) => void }}
+ * @return {{ setExpanded: (expanded: boolean) => void }}
  */
-function createMenuButton(collapsingElementId, openLabel, closeLabel, buttonClasses) {
-  var button = document.createElement("button");
-  button.className = "collapsible-toggle " + buttonClasses;
-  button.setAttribute("aria-controls", collapsingElementId);
-  button.setAttribute("aria-expanded", "false");
-  button.setAttribute("aria-haspopup", "menu");
+function createMenuButton(collapsibleElement, collapsingElementId) {
+    // Init button variables
+    var buttonOpenLabel = collapsibleElement.dataset.buttonOpenLabel;
+    var buttonCloseLabel = collapsibleElement.dataset.buttonCloseLabel;
+    var openLabel = collapsibleElement.dataset.openLabel || "Menu";
+    var closeLabel = collapsibleElement.dataset.closeLabel || "Sluit menu";
+    var buttonClasses = collapsibleElement.dataset.buttonClasses || "";
 
-  var label = document.createElement("span");
-  label.innerText = openLabel;
-  label.className = "sr-only";
-  ensureElementHasId(label);
+    // Create button HTML element with classes and content
+    var button = document.createElement("button");
+    button.className = "collapsible-toggle " + buttonClasses;
+    button.innerText = buttonOpenLabel || openLabel;
 
-  button.appendChild(label);
-  button.setAttribute("aria-labelledby", label.id);
+    // Configure button aria attributes
+    button.setAttribute("aria-controls", collapsingElementId);
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-haspopup", "menu");
+
+    // Add <span> for screen readers (thus .visually-hidden)
+    var label = document.createElement("span");
+    label.innerText = openLabel;
+    label.className = "visually-hidden";
+    ensureElementHasId(label);
+
+    button.appendChild(label);
+    button.setAttribute("aria-labelledby", label.id);
 
   function setExpanded(expanded) {
     if (expanded !== (button.getAttribute("aria-expanded") === "true")) {
       button.setAttribute("aria-expanded", String(expanded));
+      button.innerText = expanded ? (buttonCloseLabel || closeLabel) : (buttonOpenLabel || openLabel);
       label.innerText = expanded ? closeLabel : openLabel;
     }
   }
@@ -94,8 +102,10 @@ function createMenuButton(collapsingElementId, openLabel, closeLabel, buttonClas
     setExpanded(button.getAttribute("aria-expanded") === "false");
   });
 
+  // Insert button as first child element of "collapsibleElement" (root element)
+  collapsibleElement.insertBefore(button, collapsibleElement.firstChild);
+
   return {
-    element: button,
     setExpanded: setExpanded,
   };
 }
