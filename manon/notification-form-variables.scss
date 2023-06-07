@@ -28,8 +28,8 @@
     --notification-form-fields-system-border-color: var(--system-border-color);
 
     /* For combined fields and messages */
-    --notification-before-message-border-width: 0 1px 1px 1px;
-    --notification-after-message-border-width: 0 1px 1px 1px;
+    --notification-field-after-notification-border-width: 0 1px 1px 1px;
+    --notification-after-field-border-width: 0 1px 1px 1px;
 
     /* Space between fields and notifications */
     /* Please note that the default spacing is --form-base-gap */

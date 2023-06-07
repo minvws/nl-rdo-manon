@@ -46,6 +46,42 @@ form {
     }
 
     /* Notifications */
+
+    /*  The option to connect the input fields and notifications */
+    /* Message above input */
+    .error,
+    .warning,
+    .confirmation,
+    .explanation,
+    .system {
+      margin-bottom: 0;
+
+      +input,
+      +select,
+      +textarea {
+        margin: 0;
+        margin-top: var(--form-fieldset-notification-before-gap);
+        border-width: var(--form-fieldset-field-after-notification-border-width);
+      }
+
+    }
+
+    /* Message below input */
+    input,
+    select,
+    textarea {
+
+      +.error,
+      +.warning,
+      +.confirmation,
+      +.explanation,
+      +.system {
+        margin: 0;
+        margin-top: var(--form-fieldset-notification-after-gap);
+        border-width: var(--form-fieldset-notification-after-field-border-width);
+      }
+    }
+
     >div {
 
       &.error,
@@ -63,7 +99,7 @@ form {
     /* Fieldsets within fieldsets ignore the "*" all selector */
     >*,
     >fieldset {
-      margin-bottom: var(--form-fieldset-fields-margin-top);
+      margin-bottom: var(--form-fieldset-fields-gap);
 
       &:last-child {
         margin-bottom: 0;

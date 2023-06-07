@@ -80,12 +80,11 @@ form {
     .explanation,
     .system {
 
-
         +input,
         +select,
         +textarea {
             margin-top: var(--notification-form-fields-gap);
-            border-width: var(--notification-before-message-border-width);
+            border-width: var(--notification-field-after-notification-border-width);
         }
 
     }
@@ -101,7 +100,7 @@ form {
         +.explanation,
         +.system {
             margin-top: var(--notification-form-fields-gap);
-            border-width: var(--notification-after-message-border-width);
+            border-width: var(--notification-after-field-border-width);
         }
     }
 

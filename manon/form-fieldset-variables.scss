@@ -3,7 +3,15 @@
 /*---------------------------------------------------------------*/
 :root {
   /* Fields within the fieldset */
-  --form-fieldset-fields-margin-top: var(--application-base-gap, 1rem);
+  --form-fieldset-fields-gap: var(--application-base-gap, 1rem);
+
+  /*  Spacing between notifications and fields */
+  --form-fieldset-notification-before-gap: 0;
+  --form-fieldset-notification-after-gap: 0;
+
+  /* For combined fields and messages */
+  --form-fieldset-field-after-notification-border-width: 0 1px 1px 1px;
+  --form-fieldset-notification-after-field-border-width: 0 1px 1px 1px;
 
   /* Legend */
   --form-fieldset-legend-font-weight: var(--headings-font-weight, bold);
