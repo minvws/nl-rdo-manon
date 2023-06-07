@@ -4,7 +4,7 @@
 @use "breadcrumb-bar-link-states-variables";
 @use "mixins/link";
 
-$breadcrumb-bar-states: 'active', 'focus', 'hover', 'visited';
+$breadcrumb-bar-states: 'visited', 'hover', 'active', 'focus';
 
 .breadcrumb-bar,
 body > header nav.breadcrumb-bar {
