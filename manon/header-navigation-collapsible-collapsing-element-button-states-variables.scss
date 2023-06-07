@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------------------*/
+/*--- header-navigation-collapsible-collapsing-element-button-variables ----*/
+/*--------------------------------------------------------------------------*/
+@use "mixins/link";
+
+$header-navigation-button-states: 'active', 'focus', 'hover';
+
+@mixin button-styling($prefix, $parent) {
+  @each $state in $header-navigation-button-states {
+    @include link.styling-variables("#{$prefix}#{$state}", "#{$prefix}#{$state}");
+  }
+}
+
+:root {
+  @include button-styling('header-navigation-collapsible-collapsing-element-button-', 'button-base-');
+  @include button-styling('header-navigation-collapsible-collapsing-element-list-item-button-', 'header-navigation-collapsible-collapsing-element-button-');
+}
