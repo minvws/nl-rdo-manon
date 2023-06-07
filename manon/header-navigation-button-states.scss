@@ -6,19 +6,21 @@
 
 $header-navigation-button-states: 'active', 'focus', 'hover';
 
-body>header,
+body > header,
 %header-navigation-style {
+  nav {
 
-  button,
-  a.button,
-  input[type="button"],
-  input[type="submit"],
-  input[type="reset"] {
-    @each $state in $header-navigation-button-states {
-      &:#{$state},
-      &.#{$state} /* Testing purposes */
-      {
-        @include link.link-and-icon-styling('header-navigation-button-' + $state + '-');
+    button,
+    a.button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      @each $state in $header-navigation-button-states {
+        &:#{$state},
+        &.#{$state} /* Testing purposes */
+        {
+          @include link.link-and-icon-styling('header-navigation-button-' + $state + '-');
+        }
       }
     }
   }
