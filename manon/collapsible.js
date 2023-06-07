@@ -15,7 +15,7 @@ export function initNaviation() {
   for (var i = 0; i < collapsible.length; i++) {
     var collapsibleElement = collapsible[i];
 
-    if (!(collapsible[i] instanceof HTMLElement) || collapsible[i].querySelector(".collapsible-toggle")) {
+    if (!(collapsible[i] instanceof HTMLElement)) {
       continue;
     }
 
@@ -39,13 +39,12 @@ function makeResponsive(collapsibleElement, isCondensed) {
   ensureElementHasId(collapsingElement);
 
   var button = createMenuButton(
+    collapsibleElement,
     collapsingElement.id,
     collapsibleElement.dataset.openLabel || "Menu",
     collapsibleElement.dataset.closeLabel || "Sluit menu",
     collapsibleElement.dataset.buttonClasses || ""
   );
-
-  collapsingElement.parentNode.insertBefore(button.element, collapsingElement);
 
   if (!isCondensed) {
     onMediaQueryMatch(
@@ -63,20 +62,20 @@ function makeResponsive(collapsibleElement, isCondensed) {
 }
 
 /**
+ * @param {HTMLElement} collapsibleElement
  * @param {string} collapsingElementId
  * @param {string} openLabel
  * @param {string} closeLabel
- * @return {{ element: HTMLButtonElement, setExpanded: (expanded: boolean) => void }}
+ * @return {{ setExpanded: (expanded: boolean) => void }}
  */
-function createMenuButton(collapsingElementId, openLabel, closeLabel, buttonClasses) {
-    var buttonElement = document.getElementById(collapsingElementId).parentElement.querySelector("button.collapsible-toggle");
-
-    console.log(buttonElement)
+function createMenuButton(collapsibleElement, collapsingElementId, openLabel, closeLabel, buttonClasses) {
+    var buttonElement = collapsibleElement.querySelector(".collapsible-toggle");
+    var button;
 
     if(buttonElement) {
-      var button = buttonElement
+      button = buttonElement
     } else {
-      var button = document.createElement("button");
+      button = document.createElement("button");
       button.className = "collapsible-toggle " + buttonClasses;
     }
 
@@ -105,8 +104,11 @@ function createMenuButton(collapsingElementId, openLabel, closeLabel, buttonClas
     setExpanded(button.getAttribute("aria-expanded") === "false");
   });
 
+  if(!buttonElement) {
+    collapsibleElement.insertBefore(button, collapsibleElement.firstChild);
+  }
+
   return {
-    element: button,
     setExpanded: setExpanded,
   };
 }
