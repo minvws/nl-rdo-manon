@@ -27,9 +27,14 @@
     --notification-form-fields-confirmation-border-color: var(--confirmation-border-color);
     --notification-form-fields-system-border-color: var(--system-border-color);
 
+    /* For combined fields and messages */
+    --notification-before-message-border-width: 0 1px 1px 1px;
+    --notification-after-message-border-width: 0 1px 1px 1px;
+
     /* Space between fields and notifications */
     /* Please note that the default spacing is --form-base-gap */
-    --notification-form-fields-gap: calc(var(--form-group-gap) * -1);
+    --notification-form-fields-gap: calc(var(--form-base-gap) * -1);
+    --notification-form-group-gap: calc(var(--form-group-gap) * -1);
 
     /* Fields notification icon */
     --notification-form-fields-icon-font-family: var(--icon-font-family);
@@ -40,17 +45,17 @@
     --notification-form-fields-icon-margin-right: 0.5rem;
 
     /* Fields notification error icon */
-    --notification-form-fields-error-icon: var(--notification-error-icon-content);
+    --notification-form-fields-error-icon: none;
 
     /* Fields notification warning icon */
-    --notification-form-fields-warning-icon: var(--notification-warning-icon-content);
+    --notification-form-fields-warning-icon: none;
 
     /* Fields notification explanation icon */
-    --notification-form-fields-explanation-icon: var(--notification-explanation-icon-content);
+    --notification-form-fields-explanation-icon: none;
 
     /* Fields notification confirmation icon */
-    --notification-form-fields-confirmation-icon: var(--notification-confirmation-icon-content);
+    --notification-form-fields-confirmation-icon: none;
 
     /* Fields notification system icon */
-    --notification-form-fields-system-icon: var(--notification-system-icon-content);
+    --notification-form-fields-system-icon: none;
 }
