@@ -79,7 +79,8 @@
     /* Button */
     --header-navigation-collapsible-button-background-color: var(--collapsing-element-button-background-color, var(--application-base-background-color));
     --header-navigation-collapsible-button-font-size: var(--collapsing-element-button-font-size, 0);
-    --header-navigation-collapsible-button-height: var(--collapsing-element-button-height, 2.75rem) --header-navigation-collapsible-button-min-height: var(--collapsing-element-button-min-height, var(--button-base-min-height));
+    --header-navigation-collapsible-button-height: var(--collapsing-element-button-height, 2.75rem);
+    --header-navigation-collapsible-button-min-height: var(--collapsing-element-button-min-height, var(--button-base-min-height));
     --header-navigation-collapsible-button-width: var(--collapsing-element-button-width, 2.75rem);
     --header-navigation-collapsible-button-min-width: var(--collapsing-element-button-min-width, 2.75rem);
 
