@@ -29,6 +29,7 @@ body>header nav.collapsible {
         font-size: var(--header-navigation-collapsible-icon-font-size);
         line-height: initial;
         color: var(--header-navigation-collapsible-icon-color);
+        background-color: transparent;
       }
 
       &[aria-expanded="true"]:before {
