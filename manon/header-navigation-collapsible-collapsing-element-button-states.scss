@@ -1,7 +1,7 @@
 /*---------------------------------------------------------------*/
 /*  header-navigation-collapsible-collapsing-element-button.scss */
 /*---------------------------------------------------------------*/
-@use "header-navigation-collapsible-collapsing-element-button-variables";
+@use "header-navigation-collapsible-collapsing-element-button-states-variables";
 @use "mixins/collapsible";
 @use "mixins/link";
 @use "mixins/icon";
@@ -18,7 +18,7 @@ $header-navigation-button-states: 'active', 'focus', 'hover';
       &:#{$state},
       &.#{$state} /* Testing purposes */
       {
-        @include link.styling("#{$prefix}-#{$state}-");
+        @include link.styling("#{$prefix}#{$state}-");
       }
     }
   }

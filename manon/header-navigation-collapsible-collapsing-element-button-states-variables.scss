@@ -7,7 +7,7 @@ $header-navigation-button-states: 'active', 'focus', 'hover';
 
 @mixin button-styling($prefix, $parent) {
   @each $state in $header-navigation-button-states {
-    @include link.styling-variables("#{$prefix}#{$state}", "#{$prefix}#{$state}");
+    @include link.styling-variables("#{$prefix}#{$state}-", "#{$parent}#{$state}-");
   }
 }
 
