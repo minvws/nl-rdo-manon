@@ -15,7 +15,7 @@ export function initNaviation() {
   for (var i = 0; i < collapsible.length; i++) {
     var collapsibleElement = collapsible[i];
 
-    if (!(collapsible[i] instanceof HTMLElement)) {
+    if (!(collapsible[i] instanceof HTMLElement) || collapsible[i].querySelector(".collapsible-toggle")) {
       continue;
     }
 
