@@ -23,6 +23,7 @@ main article form,
 main div form,
 form {
   >fieldset {
+    margin: var(--form-fieldset-margin);
 
     legend {
       font-weight: var(--form-fieldset-legend-font-weight);

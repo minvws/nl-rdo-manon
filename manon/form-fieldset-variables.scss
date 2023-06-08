@@ -2,6 +2,8 @@
 /*----------------- form-fieldset-variables.scss ----------------*/
 /*---------------------------------------------------------------*/
 :root {
+  --form-fieldset-margin: 0;
+
   /* Fields within the fieldset */
   --form-fieldset-fields-gap: var(--application-base-gap, 1rem);
 
