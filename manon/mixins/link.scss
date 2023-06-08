@@ -27,7 +27,8 @@ $states: (
 @mixin link-and-icon-styling($prefix) {
   @include styling($prefix);
 
-  &:before {
+  &:before,
+  .icon:before {
     @include styling("#{$prefix}icon-");
   }
 }
