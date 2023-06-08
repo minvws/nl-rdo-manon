@@ -103,7 +103,7 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   });
 
   // Insert button as element directly before the "collapsingElement"
-  collapsibleElement.insertBefore(button, collapsingElement);
+  collapsingElement.parentNode.insertBefore(button, collapsingElement);
 
   return {
     setExpanded: setExpanded,
