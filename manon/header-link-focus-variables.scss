@@ -9,7 +9,5 @@
   @include link.styling-variables('header-link-focus-', 'link-focus-');
 
   /* Icon */
-  --header-link-focus-icon-background-color: var(--header-link-focus-background-color);
-  --header-link-focus-icon-text-color: var(--header-link-focus-text-color);
-  --header-link-focus-icon-text-decoration: var(--header-link-icon-text-decoration);
+  @include link.icon-styling-variables('header-link-focus-icon-', 'header-link-', 'focus');
 }

@@ -9,7 +9,5 @@
   @include link.styling-variables('footer-navigation-link-active-', 'navigation-link-active-');
 
   /* Icon */
-  --footer-navigation-link-active-icon-background-color: var(--footer-navigation-link-active-background-color);
-  --footer-navigation-link-active-icon-text-color: var(--footer-navigation-link-active-text-color);
-  --footer-navigation-link-active-icon-text-decoration: var(--footer-navigation-link-icon-text-decoration);
+  @include link.icon-styling-variables('footer-navigation-link-active-icon-', 'footer-navigation-link-', 'active');
 }

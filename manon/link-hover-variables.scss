@@ -10,7 +10,5 @@
   @include outline.outline-variables('link-hover-', 'link-');
 
   /* Icon */
-  --link-hover-icon-background-color: var(--link-hover-background-color);
-  --link-hover-icon-text-color: var(--link-hover-text-color);
-  --link-hover-icon-text-decoration: var(--link-icon-text-decoration);
+  @include link.icon-styling-variables('link-hover-icon-', 'link-', 'hover');
 }

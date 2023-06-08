@@ -9,7 +9,5 @@
   @include link.styling-variables('header-link-hover-', 'link-hover-');
 
   /* Icon */
-  --header-link-hover-icon-background-color: var(--header-link-hover-background-color);
-  --header-link-hover-icon-text-color: var(--header-link-hover-text-color);
-  --header-link-hover-icon-text-decoration: var(--header-link-icon-text-decoration);
+  @include link.icon-styling-variables('header-link-hover-icon-', 'header-link-', 'hover');
 }

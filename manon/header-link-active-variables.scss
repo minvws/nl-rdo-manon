@@ -9,7 +9,5 @@
   @include link.styling-variables('header-link-active-', 'link-active-');
 
   /* Icon */
-  --header-link-active-icon-background-color: var(--header-link-active-background-color);
-  --header-link-active-icon-text-color: var(--header-link-active-text-color);
-  --header-link-active-icon-text-decoration: var(--header-link-icon-text-decoration);
+  @include link.icon-styling-variables('header-link-active-icon-', 'header-link-', 'active');
 }

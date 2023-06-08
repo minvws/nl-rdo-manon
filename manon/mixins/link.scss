@@ -3,6 +3,13 @@
 /*---------------------------------------------------------------------*/
 @use "icon";
 
+$states: (
+  "visited",
+  "hover",
+  "active",
+  "focus",
+);
+
 @mixin styling($prefix) {
   font-size: var(--#{$prefix}font-size);
   font-weight: var(--#{$prefix}font-weight);
@@ -71,4 +78,17 @@
   --#{$prefix}border-style: var(--#{$parentPrefix}border-style);
   --#{$prefix}border-color: var(--#{$parentPrefix}border-color);
   --#{$prefix}border-radius: var(--#{$parentPrefix}border-radius);
+}
+
+@mixin icon-styling-variables($prefix, $parentPrefix, $state) {
+  --#{$prefix}font-size: var(--#{$parentPrefix}icon-font-size);
+  --#{$prefix}font-weight: var(--#{$parentPrefix}icon-font-weight);
+  --#{$prefix}line-height: var(--#{$parentPrefix}icon-line-height);
+  --#{$prefix}background-color: var(--#{$parentPrefix}#{$state}-background-color);
+  --#{$prefix}text-color: var(--#{$parentPrefix}#{$state}-text-color);
+  --#{$prefix}text-decoration: var(--#{$parentPrefix}icon-text-decoration);
+  --#{$prefix}border-width: var(--#{$parentPrefix}icon-border-width);
+  --#{$prefix}border-style: var(--#{$parentPrefix}icon-border-style);
+  --#{$prefix}border-color: var(--#{$parentPrefix}icon-border-color);
+  --#{$prefix}border-radius: var(--#{$parentPrefix}icon-border-radius);
 }

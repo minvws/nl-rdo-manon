@@ -2,15 +2,24 @@
 /*-------------------- link-external.scss -----------------------*/
 /*---------------------------------------------------------------*/
 @use "link-external-variables";
+@use "mixins/link";
 @use "mixins/icon";
 
 a {
-  &[rel~=external]:before {
-    @include icon.icon;
-    font-family: var(--link-external-icon-font-family);
-    font-size: var(--link-external-icon-font-size);
-    content: var(--link-external-icon);
-    padding-right: var(--link-external-icon-padding-right);
-    padding-left: var(--link-external-icon-padding-left);
+  &[rel~=external] {
+    &:before {
+      @include icon.icon;
+      font-family: var(--link-external-icon-font-family);
+      font-size: var(--link-external-icon-font-size);
+      content: var(--link-external-icon);
+      padding-right: var(--link-external-icon-padding-right);
+      padding-left: var(--link-external-icon-padding-left);
+    }
+
+    @each $state in link.$states {
+      &:#{$state}:before {
+        font-size: var(--link-external-icon-font-size);
+      }
+    }
   }
 }
