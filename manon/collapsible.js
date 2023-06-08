@@ -40,7 +40,7 @@ function makeResponsive(collapsibleElement, isCondensed) {
 
   var button = createMenuButton(
     collapsibleElement,
-    collapsingElement.id,
+    collapsingElement,
   );
 
   if (!isCondensed) {
@@ -60,10 +60,10 @@ function makeResponsive(collapsibleElement, isCondensed) {
 
 /**
  * @param {HTMLElement} collapsibleElement
- * @param {string} collapsingElementId
+ * @param {HTMLElement} collapsingElement
  * @return {{ setExpanded: (expanded: boolean) => void }}
  */
-function createMenuButton(collapsibleElement, collapsingElementId) {
+function createMenuButton(collapsibleElement, collapsingElement) {
     // Init button variables
     var buttonOpenLabel = collapsibleElement.dataset.buttonOpenLabel;
     var buttonCloseLabel = collapsibleElement.dataset.buttonCloseLabel;
@@ -77,7 +77,7 @@ function createMenuButton(collapsibleElement, collapsingElementId) {
     button.innerText = buttonOpenLabel || openLabel;
 
     // Configure button aria attributes
-    button.setAttribute("aria-controls", collapsingElementId);
+    button.setAttribute("aria-controls", collapsingElement.id);
     button.setAttribute("aria-expanded", "false");
     button.setAttribute("aria-haspopup", "menu");
 
@@ -102,8 +102,8 @@ function createMenuButton(collapsibleElement, collapsingElementId) {
     setExpanded(button.getAttribute("aria-expanded") === "false");
   });
 
-  // Insert button as first child element of "collapsibleElement" (root element)
-  collapsibleElement.insertBefore(button, collapsibleElement.firstChild);
+  // Insert button as element directly before the "collapsingElement"
+  collapsibleElement.insertBefore(button, collapsingElement);
 
   return {
     setExpanded: setExpanded,
