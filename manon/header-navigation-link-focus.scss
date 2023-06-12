@@ -6,16 +6,15 @@
 
 %header-navigation-link-focus-styling {
   a {
-
     &:focus,
     /* Testing purposes */
     &.focus {
-      @include link.link-and-icon-styling('header-navigation-link-focus-');
+      @include link.link-and-icon-styling("header-navigation-link-focus-");
     }
   }
 }
 
-body>header,
+body > header,
 .page-header,
 %header-navigation-style {
   nav {
