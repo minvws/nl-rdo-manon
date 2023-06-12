@@ -7,8 +7,8 @@
 %header-navigation-link-focus-styling {
   a {
 
-    /* Testing purposes */
     &:focus,
+    /* Testing purposes */
     &.focus {
       @include link.link-and-icon-styling('header-navigation-link-focus-');
     }

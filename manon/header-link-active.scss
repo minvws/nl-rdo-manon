@@ -9,8 +9,8 @@ body>header,
 %header-style {
   a {
 
-    /* Testing purposes */
     &:active,
+    /* Testing purposes */
     &.active {
       @include link.link-and-icon-styling('header-link-active-');
     }

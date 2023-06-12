@@ -7,8 +7,8 @@
 %header-navigation-link-hover-styling {
   a {
 
-    /* Testing purposes */
     &:hover,
+    /* Testing purposes */
     &.hover {
       @include link.link-and-icon-styling('header-navigation-link-hover-');
     }
