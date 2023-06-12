@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Notificatie binnen formulier met fieldsets</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="../../static/css/main.css" rel="stylesheet" />
+        <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+        <script defer src="../../static/js/manon.js"></script>
+    </head>
+
+    <body id="index" class="documentation">
+        <header>
+            <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+            <nav aria-label="Hoofdnavigatie">
+                <div>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../components.html">Componenten</a></li>
+                        <li><a href="../documentation.html">Documentatie</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <nav class="breadcrumb-bar">
+                <div>
+                    <ul>
+                        <li><a href="../components.html">Componenten</a></li>
+                        <li><a href="./forms.html">Formulieren</a></li>
+                        <li><a href="./form-notification.html">Notificatie binnen formulier met fieldsets</a></li>
+                        <li>
+                            <a href="#" aria-current="page">Tests en voorbeelden</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <article>
+                <div>
+                    <section id="introduction">
+                        <h1>Notificatie binnen formulier met fieldsets testpagina</h1>
+                        <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+                    </section>
+
+                    <section id="tests">
+                        <h2>Voorbeelden</h2>
+                        <h3>Notificatie onder het invoerveld</h3>
+                        <h4>Visueel voorbeeld foutmelding:</h4>
+                        <form action="" method="post">
+                            <fieldset>
+                                <legend>Lorem ipsum</legend>
+                                <label for="input-error">Input</label>
+                                <input id="input-error" class="error" value="Lorem ipsum"
+                                    aria-describedby="input-error-message" aria-invalid="true">
+                                <p class="error" id="input-error-message">
+                                    <span>Foutmelding:</span> Lorem ipsum dolor set amet
+                                </p>
+                            </fieldset>
+                            
+                            <button type="submit">Verzend</button>
+                        </form>
+
+                        <p>Html-voorbeeld:</p>
+                        <pre>
+                            <code>
+&lt;form action="" method="post">
+    &lt;fieldset>
+        &lt;legend>Lorem ipsum&lt;/legend>
+        &lt;label for="input-error">Input&lt;/label>
+        &lt;input id="input-error" class="error" value="Lorem ipsum"
+            aria-describedby="input-error-message" aria-invalid="true">
+        &lt;p class="error" id="input-error-message">
+            &lt;span>Foutmelding:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+    &lt;/fieldset>
+    
+    &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+                            </code>
+                        </pre>
+
+                        <h3>Notificatie boven het invoerveld</h3>
+                        <h4>Visueel voorbeeld toelichting:</h4>
+                        <form action="" method="post">
+                            <fieldset>
+                                <legend>Lorem ipsum</legend>
+                                <label for="input-explanation">Input</label>
+                                <p class="explanation" id="input-explanation-message">
+                                    <span>Toelichting:</span> Lorem ipsum dolor set amet
+                                </p>
+                                <input id="input-explanation" class="explanation" value="Lorem ipsum"
+                                        aria-describedby="input-explanation-message" aria-invalid="true">
+                            </fieldset>
+                            <button type="submit">Verzend</button>
+                        </form>
+
+                        <p>Html-voorbeeld:</p>
+                        <pre>
+                            <code>
+&lt;form action="" method="post">
+    &lt;fieldset>
+        &lt;legend>Lorem ipsum&lt;/legend>
+        &lt;label for="input-explanation">Input&lt;/label>
+        &lt;p class="explanation" id="input-explanation-message">
+            &lt;span>Toelichting:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+        &lt;input id="input-explanation" class="explanation" value="Lorem ipsum"
+                aria-describedby="input-explanation-message" aria-invalid="true">
+    &lt;/fieldset>
+    &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+                            </code>
+                        </pre>
+
+                        <h3>Notificatie boven checkbox</h3>
+                        <h4>Visueel voorbeeld toelichting:</h4>
+                        <form action="" method="post">
+                            <fieldset>
+                                <legend>Lorem ipsum</legend>
+                                <p class="explanation" id="checkbox-explanation">
+                                    <span>Toelichting:</span> Lorem ipsum dolor set amet
+                                </p>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="checkbox-explanation" name="standaard-checkbox">
+                                    <label for="checkbox-explanation">Lorem ipsum</label>
+                                </div>
+                            </fieldset>
+                            <button type="submit">Verzend</button>
+                        </form>
+
+                        <p>Html-voorbeeld:</p>
+                        <pre>
+                            <code>
+&lt;form action="" method="post">
+    &lt;fieldset>
+        &lt;legend>Lorem ipsum&lt;/legend>
+        &lt;p class="explanation" id="checkbox-explanation">
+            &lt;span>Toelichting:&lt;/span> Lorem ipsum dolor set amet
+        &lt;/p>
+        &lt;div class="checkbox">
+            &lt;input type="checkbox" id="checkbox-explanation" name="standaard-checkbox">
+            &lt;label for="checkbox-explanation">Lorem ipsum&lt;/label>
+        &lt;/div>
+    &lt;/fieldset>
+    &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+                            </code>
+                        </pre>
+
+                        <h3>Notificatie boven radio-button</h3>
+                        <h4>Visueel voorbeeld toelichting:</h4>
+                        <form action="" method="post">
+                            <p class="explanation" id="radio-explanation-message">
+                                <span>Toelichting:</span> Lorem ipsum dolor set amet
+                            </p>
+                            <div class="radio">
+                                <input type="radio" id="radio-explanation" name="radio-option-2" value="value 1"
+                                  aria-describedby="radio-explanation-message">
+                                <label for="radio-explanation">Optie 1</label>
+                              </div>
+                            <button type="submit">Verzend</button>
+                        </form>
+
+                        <p>Html-voorbeeld:</p>
+                        <pre>
+                            <code>
+&lt;form action="" method="post">
+    &lt;p class="explanation" id="radio-explanation-message">
+        &lt;span>Toelichting:&lt;/span> Lorem ipsum dolor set amet
+    &lt;/p>
+    &lt;div class="radio">
+        &lt;input type="radio" id="radio-explanation" name="radio-option-2" value="value 1"
+            aria-describedby="radio-explanation-message">
+        &lt;label for="radio-explanation">Optie 1&lt;/label>
+        &lt;/div>
+    &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+                            </code>
+                        </pre>
+
+                        <h3>Link binnen notificatie</h3>
+                        <h4>Visueel voorbeeld waarschuwing:</h4>
+                        <form action="" method="post">
+                            <fieldset>
+                                <legend>Lorem ipsum</legend>
+                                <label for="input-warning-link">Input</label>
+                                <input id="input-warning-link" class="warning" value="Lorem ipsum"
+                                    aria-describedby="input-warning-link-message" aria-invalid="true">
+                                <p class="warning" id="input-warning-link-message">
+                                    <span>Waarschuwing:</span> Lorem <a href="ipsum dolor">ipsum dolor</a> set amet
+                                </p>
+                            </fieldset>
+                            <button type="submit">Verzend</button>
+                        </form>
+
+                        <p>Html-voorbeeld:</p>
+                        <pre>
+                            <code>
+&lt;form action="" method="post">
+    &lt;fieldset>
+        &lt;legend>Lorem ipsum&lt;/legend>
+        &lt;label for="input-warning-link">Input&lt;/label>
+        &lt;input id="input-warning-link" class="warning" value="Lorem ipsum"
+            aria-describedby="input-warning-link-message" aria-invalid="true">
+        &lt;p class="warning" id="input-warning-link-message">
+            &lt;span>Waarschuwing:&lt;/span> Lorem &lt;a href="ipsum dolor">ipsum dolor&lt;/a> set amet
+        &lt;/p>
+    &lt;/fieldset>
+    &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+                            </code>
+                        </pre>
+
+                        <h3>Bloknotificatie:</h3>
+                        <h4>Visueel voorbeeld:</h4>
+                        <form action="" method="post">
+                            <fieldset>
+                                <legend>Lorem ipsum</legend>
+                                <label for="input-error-block">Input</label>
+                                <input id="input-error-block" class="error" value="Lorem ipsum"
+                                    aria-describedby="input-error-block-message" aria-invalid="true">
+                                    <div class="error" role="group" aria-label="foutmelding">
+                                        <span>Foutmelding:</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+                                        <ul>
+                                        <li>Lorem ipsum</li>
+                                        <li>Lorem ipsum</li>
+                                        </ul>
+                                    </div>
+                                </fieldset>
+                            <button type="submit">Verzend</button>
+                        </form>
+
+                        <p>Html-voorbeeld:</p>
+                        <pre>
+                            <code>
+&lt;form action="" method="post">
+    &lt;fieldset>
+        &lt;legend>Lorem ipsum&lt;/legend>
+        &lt;label for="input-error-block">Input&lt;/label>
+        &lt;input id="input-error-block" class="error" value="Lorem ipsum"
+            aria-describedby="input-error-block-message" aria-invalid="true">
+            &lt;div class="error" role="group" aria-label="foutmelding">
+                &lt;span>Foutmelding:&lt;/span>
+                &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.&lt;/p>
+                &lt;ul>
+                &lt;li>Lorem ipsum&lt;/li>
+                &lt;li>Lorem ipsum&lt;/li>
+                &lt;/ul>
+            &lt;/div>
+        &lt;/fieldset>
+    &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+                            </code>
+                        </pre>
+
+                        <h3>Span:</h3>
+                        <h4>Visueel voorbeeld:</h4>
+                        <form action="" method="post">
+                            <fieldset>
+                                <legend>Lorem ipsum</legend>
+                                <label for="input-confirmation">Input</label>
+                                <input id="input-confirmation" class="confirmation" value="Lorem ipsum"
+                                    aria-describedby="input-confirmation-message" aria-invalid="true">
+                                    <span class="confirmation" id="input-confirmation-message">
+                                        <span>Bevestiging:</span> Lorem ipsum dolor set amet
+                                    </span>
+                                <button type="submit">Verzend</button>
+                            </fieldset>
+                        </form>
+
+                        <p>Html-voorbeeld:</p>
+                        <pre>
+                            <code>
+&lt;form action="" method="post">
+    &lt;fieldset>
+        &lt;legend>Lorem ipsum&lt;/legend>
+        &lt;label for="input-confirmation">Input&lt;/label>
+        &lt;input id="input-confirmation" class="confirmation" value="Lorem ipsum"
+            aria-describedby="input-confirmation-message" aria-invalid="true">
+            &lt;span class="confirmation" id="input-confirmation-message">
+                &lt;span>Bevestiging:&lt;/span> Lorem ipsum dolor set amet
+            &lt;/span>
+        &lt;button type="submit">Verzend&lt;/button>
+    &lt;/fieldset>
+&lt;/form>
+                            </code>
+                        </pre>
+
+                        <h3>Gegroepeerde content met notificatie</h3>
+                        <p><strong>Let op:</strong> Deze opbouw is niet nodig. Dit is enkel een test om te controleren of het visueel goed blijft gaan.</p>
+                        <h4>Visueel voorbeeld gegroepeerde input en label:</h4>
+                        <form action="" method="post">
+                            <fieldset>
+                                <legend>Lorem ipsum</legend>
+                                <div>
+                                    <label for="input-error-grouped-label">Input</label>
+                                    <input id="input-error-grouped-label" class="error" value="Lorem ipsum"
+                                        aria-describedby="input-error-grouped-label-message" aria-invalid="true">
+                                </div>
+                                <p class="error" id="input-error-grouped-label-message">
+                                    <span>Foutmelding:</span> Lorem <a href="ipsum dolor">ipsum dolor</a> set amet
+                                </p>
+                            </fieldset>
+                            <button type="submit">Verzend</button>
+                        </form>
+
+                        <p>Html-voorbeeld:</p>
+                        <pre>
+                            <code>
+&lt;form action="" method="post">
+    &lt;fieldset>
+        &lt;legend>Lorem ipsum&lt;/legend>
+        &lt;div>
+            &lt;label for="input-error-grouped-label">Input&lt;/label>
+            &lt;input id="input-error-grouped-label" class="error" value="Lorem ipsum"
+                aria-describedby="input-error-grouped-label-message" aria-invalid="true">
+        &lt;/div>
+        &lt;p class="error" id="input-error-grouped-label-message">
+            &lt;span>Foutmelding:&lt;/span> Lorem &lt;a href="ipsum dolor">ipsum dolor&lt;/a> set amet
+        &lt;/p>
+    &lt;/fieldset>
+    &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+                            </code>
+                        </pre>
+
+                        <h4>Visueel voorbeeld gegroepeerde input en notificatie:</h4>
+                        <form action="" method="post">
+                            <fieldset>
+                                <legend>Lorem ipsum</legend>
+                                <label for="input-error-grouped-notification">Input</label>
+                                <div>
+                                    <input id="input-error-grouped-notification" class="error" value="Lorem ipsum"
+                                        aria-describedby="input-error-grouped-notification-message" aria-invalid="true">
+                                    <p class="error" id="input-error-grouped-notification-message">
+                                        <span>Foutmelding:</span> Lorem <a href="ipsum dolor">ipsum dolor</a> set amet
+                                    </p>
+                                </div>
+                            </fieldset>
+
+                            <button type="submit">Verzend</button>
+                        </form>
+
+                        <p>Html-voorbeeld:</p>
+                        <pre>
+                            <code>
+&lt;form action="" method="post">
+    &lt;fieldset>
+        &lt;legend>Lorem ipsum&lt;/legend>
+        &lt;label for="input-error-grouped-notification">Input&lt;/label>
+        &lt;div>
+            &lt;input id="input-error-grouped-notification" class="error" value="Lorem ipsum"
+                aria-describedby="input-error-grouped-notification-message" aria-invalid="true">
+            &lt;p class="error" id="input-error-grouped-notification-message">
+                &lt;span>Foutmelding:&lt;/span> Lorem &lt;a href="ipsum dolor">ipsum dolor&lt;/a> set amet
+            &lt;/p>
+        &lt;/div>
+    &lt;/fieldset>
+
+    &lt;button type="submit">Verzend&lt;/button>
+&lt;/form>
+                            </code>
+                        </pre>
+                    </section>
+
+                </div>
+            </article>
+        </main>
+    </body>
+
+</html>
