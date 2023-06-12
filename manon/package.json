@@ -12,6 +12,7 @@
   },
   "scripts": {
     "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint:css": "stylelint \"**/*.scss\"",
     "lint:css:fix": "npm run lint:css -- --fix"
   },
