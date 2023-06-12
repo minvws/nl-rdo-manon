@@ -4,12 +4,15 @@
 @use "header-link-focus-variables";
 @use "mixins/link";
 
-body > header,
+body>header,
+.page-header,
 %header-style {
   a {
     &:focus,
-    &.focus /* Testing purposes */
-    {
+    &.focus
+
+    /* Testing purposes */
+      {
       @include link.link-and-icon-styling('header-link-focus-');
     }
   }

@@ -9,6 +9,7 @@
 $header-navigation-button-states: 'active', 'focus', 'hover';
 
 @mixin button-states($prefix) {
+
   button,
   a.button,
   input[type="button"],
@@ -16,15 +17,18 @@ $header-navigation-button-states: 'active', 'focus', 'hover';
   input[type="reset"] {
     @each $state in $header-navigation-button-states {
       &:#{$state},
-      &.#{$state} /* Testing purposes */
-      {
+      &.#{$state}
+
+      /* Testing purposes */
+        {
         @include link.styling("#{$prefix}#{$state}-");
       }
     }
   }
 }
 
-body>header nav.collapsible.collapsed {
+body>header nav.collapsible.collapsed,
+.page-header nav.collapsible.collapsed {
   .collapsing-element {
     @include button-states('header-navigation-collapsible-collapsing-element-button-');
 

@@ -3,12 +3,13 @@
 /*---------------------------------------------------------------*/
 @use "layout-header-content-block-variables";
 
-body > header {
+body>header,
+.page-header {
   display: flex;
   flex-direction: column;
   min-height: var(--layout-header-content-block-min-height);
 
-  > div {
+  >div {
     display: flex;
     flex-direction: column;
     width: 100%;

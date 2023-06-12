@@ -3,10 +3,11 @@
 /*---------------------------------------------------------------*/
 @use "header-navigation-content-wrapper-variables";
 
-body > header,
+body>header,
+.page-header,
 %header-navigation-content-wrapper-style {
   nav {
-    > div {
+    >div {
       display: flex;
       flex-direction: var(--header-navigation-content-wrapper-flex-direction);
       justify-content: var(--header-navigation-content-wrapper-justify-content);

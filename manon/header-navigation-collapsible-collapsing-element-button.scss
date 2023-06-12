@@ -8,6 +8,7 @@
 
 
 @mixin button($prefix) {
+
   button,
   a.button,
   input[type="button"],
@@ -25,7 +26,8 @@
   }
 }
 
-body>header nav.collapsible.collapsed {
+body>header nav.collapsible.collapsed,
+.page-header nav.collapsible.collapsed {
   .collapsing-element {
     @include button('header-navigation-collapsible-collapsing-element-button-');
 

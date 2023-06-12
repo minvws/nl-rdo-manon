@@ -6,6 +6,7 @@
 @use "mixins/link";
 
 body>header,
+.page-header,
 %header-navigation-style {
   nav {
     a {
