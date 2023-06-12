@@ -3,7 +3,8 @@
 /*---------------------------------------------------------------*/
 @use "footer-variables";
 
-body > footer,
+body>footer,
+.page-footer,
 %footer-style {
   display: flex;
   flex-direction: var(--footer-flex-direction);
@@ -36,6 +37,7 @@ body > footer,
   }
 
   nav {
+
     ul,
     ol {
       background-color: transparent;
@@ -45,9 +47,10 @@ body > footer,
         list-style: var(--footer-navigation-list-item-list-style);
 
         &:before {
-          display: none; /* Preventing default nav before to show up */
+          /* Preventing default nav before to show up */
+          display: none;
         }
       }
     }
-	}
+  }
 }

@@ -4,12 +4,14 @@
 @use "footer-link-visited-variables";
 @use "mixins/link";
 
-body > footer,
+body>footer,
+.page-footer,
 %footer-style {
   a {
+
     &:visited,
-    &.visited /* Testing purposes */
-    {
+    /* Testing purposes */
+    &.visited {
       @include link.link-and-icon-styling('footer-link-visited-');
     }
   }

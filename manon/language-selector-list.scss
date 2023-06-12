@@ -3,30 +3,32 @@
 /*---------------------------------------------------------------*/
 @use "language-selector-list-variables";
 
-body > header nav .language-selector,
+body>header nav .language-selector,
+.page-header nav .language-selector,
 .language-selector {
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: var(--language-selector-list-label-font-size);
-  color: var(--language-selector-list-label-text-color);
-  z-index: 2;
-  width: auto;
-  position: relative;
-  margin: unset;
-  gap: var(--language-selector-list-label-gap);
-  color: var(--language-selector-list-label-text-color);
-  max-width: var(--language-selector-list-label-max-width);
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: var(--language-selector-list-label-font-size);
+	color: var(--language-selector-list-label-text-color);
+	z-index: 2;
+	width: auto;
+	position: relative;
+	margin: unset;
+	gap: var(--language-selector-list-label-gap);
+	color: var(--language-selector-list-label-text-color);
+	max-width: var(--language-selector-list-label-max-width);
 
-  > p {
-    font-size: var(--language-selector-list-label-font-size);
-    white-space: nowrap;
-  }
+	>p {
+		font-size: var(--language-selector-list-label-font-size);
+		white-space: nowrap;
+	}
 
 	/* Expand option list */
 	div[aria-expanded="true"] {
+
 		ul,
 		ul li {
 			display: block;
@@ -35,20 +37,21 @@ body > header nav .language-selector,
 
 	/* Hide option list */
 	div[aria-expanded="false"] {
+
 		ul,
 		ul li {
 			display: none;
 		}
 	}
 
-  /* Language selector options */
-	> div {
+	/* Language selector options */
+	>div {
 		width: auto;
 		padding: 0;
 		display: initial;
 		margin: unset;
 
-		> button {
+		>button {
 			display: flex;
 			justify-content: flex-start;
 			background-color: var(--language-selector-list-button-background-color);
@@ -86,13 +89,13 @@ body > header nav .language-selector,
 			}
 		}
 
-		&[aria-expanded="true"] > button {
+		&[aria-expanded="true"]>button {
 			&:after {
 				content: var(--language-selector-list-closed-button-icon);
 			}
 		}
 
-		&[aria-expanded="false"] > button {
+		&[aria-expanded="false"]>button {
 			&:after {
 				content: var(--language-selector-list-open-button-icon);
 			}
@@ -111,8 +114,8 @@ body > header nav .language-selector,
 		box-sizing: border-box;
 		background-color: var(--language-selector-list-background-color);
 		margin-top: var(--language-selector-list-margin-top);
-		-webkit-box-shadow: var(--language-selector-list-box-shadow); 
-      box-shadow: var(--language-selector-list-box-shadow);
+		-webkit-box-shadow: var(--language-selector-list-box-shadow);
+		box-shadow: var(--language-selector-list-box-shadow);
 		right: var(--language-selector-list-right);
 		left: var(--language-selector-list-left);
 		min-width: var(--language-selector-list-min-width);
@@ -124,8 +127,8 @@ body > header nav .language-selector,
 			order: 1;
 			margin: 0;
 			background-color: var(--language-selector-list-item-background-color);
-      color: var(--language-selector-list-item-text-color);
-      font-size: var(--language-selector-list-font-size);
+			color: var(--language-selector-list-item-text-color);
+			font-size: var(--language-selector-list-font-size);
 			line-height: 0;
 
 			&:first-child a {
@@ -167,16 +170,16 @@ body > header nav .language-selector,
 					font-weight: var(--language-selector-list-item-hover-font-weight);
 				}
 
-        > button {
-            background-color: transparent;
-            border: 0;
-            margin: 0;
-            padding: 0;
-            text-align: left;
-            align-items: center;
-            justify-content: flex-start;
-            font-weight: var(--language-selector-list-button-font-weight);
-        }
+				>button {
+					background-color: transparent;
+					border: 0;
+					margin: 0;
+					padding: 0;
+					text-align: left;
+					align-items: center;
+					justify-content: flex-start;
+					font-weight: var(--language-selector-list-button-font-weight);
+				}
 			}
 
 			/* Selected language */
@@ -197,6 +200,7 @@ body > header nav .language-selector,
 			position: absolute;
 
 			li {
+
 				/* Selected language */
 				&[aria-current="true"] {
 					a {

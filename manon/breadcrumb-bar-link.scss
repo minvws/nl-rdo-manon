@@ -10,9 +10,8 @@ body > header nav.breadcrumb-bar {
   ol {
     li {
       a {
-        @include link.link('breadcrumb-bar-link-');
+        @include link.link("breadcrumb-bar-link-");
       }
     }
   }
 }
-

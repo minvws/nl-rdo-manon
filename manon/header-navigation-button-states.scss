@@ -4,12 +4,12 @@
 @use "header-navigation-button-states-variables";
 @use "mixins/link";
 
-$header-navigation-button-states: 'active', 'focus', 'hover';
+$header-navigation-button-states: "active", "focus", "hover";
 
 body > header,
+.page-header,
 %header-navigation-style {
   nav {
-
     button,
     a.button,
     input[type="button"],
@@ -17,9 +17,11 @@ body > header,
     input[type="reset"] {
       @each $state in $header-navigation-button-states {
         &:#{$state},
-        &.#{$state} /* Testing purposes */
-        {
-          @include link.link-and-icon-styling('header-navigation-button-' + $state + '-');
+        /* Testing purposes */
+        &.#{$state} {
+          @include link.link-and-icon-styling(
+            "header-navigation-button-" + $state + "-"
+          );
         }
       }
     }

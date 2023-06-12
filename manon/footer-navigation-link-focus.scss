@@ -4,13 +4,15 @@
 @use "footer-navigation-link-focus-variables";
 @use "mixins/link";
 
-body > footer,
+body>footer,
+.page-footer,
 %footer-style {
   nav {
     a {
+
       &:focus,
-      &.focus /* Testing purposes */
-      {
+      /* Testing purposes */
+      &.focus {
         @include link.link-and-icon-styling('footer-navigation-link-focus-');
       }
     }

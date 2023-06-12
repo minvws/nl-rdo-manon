@@ -6,7 +6,8 @@
 
 $breakpoint: 42rem !default;
 
-body > footer,
+body>footer,
+.page-footer,
 %footer-two-thirds-one-third-style {
     display: flex;
     flex-direction: var(--footer-two-thirds-one-third-flex-direction);
@@ -33,22 +34,22 @@ body > footer,
         gap: var(--footer-two-thirds-one-third-gap);
         width: 100%;
 
-        > * {
+        >* {
             max-width: 100%;
             width: 100%;
             box-sizing: border-box;
         }
 
-        > section,
-        > article,
-        > div {
+        >section,
+        >article,
+        >div {
             padding: 0;
         }
 
         @media (min-width: $breakpoint) {
             gap: var(--footer-two-thirds-one-third-breakpoint-gap);
 
-            > * {
+            >* {
                 width: 33.33%;
 
                 &:nth-child(odd) {

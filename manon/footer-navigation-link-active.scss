@@ -4,13 +4,15 @@
 @use "footer-navigation-link-active-variables";
 @use "mixins/link";
 
-body > footer,
+body>footer,
+.page-footer,
 %footer-style {
   nav {
     a {
+
       &:active,
-      &.active /* Testing purposes */
-      {
+      /* Testing purposes */
+      &.active {
         @include link.link-and-icon-styling('footer-navigation-link-active-');
       }
     }

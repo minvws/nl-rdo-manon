@@ -7,14 +7,15 @@
 %header-navigation-link-focus-styling {
   a {
     &:focus,
-    &.focus /* Testing purposes */
-    {
-      @include link.link-and-icon-styling('header-navigation-link-focus-');
+    /* Testing purposes */
+    &.focus {
+      @include link.link-and-icon-styling("header-navigation-link-focus-");
     }
   }
 }
 
 body > header,
+.page-header,
 %header-navigation-style {
   nav {
     @extend %header-navigation-link-focus-styling;

@@ -4,7 +4,7 @@
 @use "breadcrumb-bar-link-states-variables";
 @use "mixins/link";
 
-$breadcrumb-bar-states: 'visited', 'hover', 'active', 'focus';
+$breadcrumb-bar-states: "visited", "hover", "active", "focus";
 
 .breadcrumb-bar,
 body > header nav.breadcrumb-bar {
@@ -15,17 +15,18 @@ body > header nav.breadcrumb-bar {
       a[aria-current="page"] {
         @each $state in $breadcrumb-bar-states {
           &:#{$state},
-          &.#{$state} /* Testing purposes */
-          {
-            @include link.link-and-icon-styling('breadcrumb-bar-link-' + $state + '-');
+          /* Testing purposes */
+          &.#{$state} {
+            @include link.link-and-icon-styling(
+              "breadcrumb-bar-link-" + $state + "-"
+            );
           }
         }
       }
 
       &[aria-current="page"] {
-        @include link.link-and-icon-styling('breadcrumb-bar-link-active-');
+        @include link.link-and-icon-styling("breadcrumb-bar-link-active-");
       }
     }
   }
 }
-

@@ -4,6 +4,7 @@
 @use "header-navigation-variables";
 
 body>header,
+.page-header,
 %header-navigation-style {
   width: 100%;
   box-sizing: border-box;

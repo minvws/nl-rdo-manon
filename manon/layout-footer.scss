@@ -3,7 +3,8 @@
 /*---------------------------------------------------------------*/
 @use "layout-footer-variables";
 
-body > footer {
+body>footer,
+.page-footer {
   display: flex;
   flex-direction: column;
   gap: var(--layout-footer-gap);
@@ -17,9 +18,9 @@ body > footer {
   max-width: var(--layout-footer-max-width);
   min-height: var(--footer-min-height);
 
-  > div,
-  > article,
-  > section {
+  >div,
+  >article,
+  >section {
     display: flex;
     flex-direction: column;
     width: 100%;

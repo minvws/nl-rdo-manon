@@ -6,7 +6,6 @@
 @use "mixins/link";
 @use "mixins/icon";
 
-
 @mixin button($prefix) {
   button,
   a.button,
@@ -25,14 +24,21 @@
   }
 }
 
-body>header nav.collapsible.collapsed {
-  .collapsing-element {
-    @include button('header-navigation-collapsible-collapsing-element-button-');
+body > header,
+.page-header {
+  nav.collapsible.collapsed {
+    .collapsing-element {
+      @include button(
+        "header-navigation-collapsible-collapsing-element-button-"
+      );
 
-    ul,
-    ol {
-      li {
-        @include button('header-navigation-collapsible-collapsing-element-list-item-button-');
+      ul,
+      ol {
+        li {
+          @include button(
+            "header-navigation-collapsible-collapsing-element-list-item-button-"
+          );
+        }
       }
     }
   }

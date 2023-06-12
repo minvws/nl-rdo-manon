@@ -3,8 +3,8 @@
 /*---------------------------------------------------------------*/
 @use "header-base-variables";
 
-body > header,
-.header {
+body>header,
+.page-header {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -14,7 +14,7 @@ body > header,
   color: var(--header-base-text-color);
   box-sizing: border-box;
 
-  > div {
+  >div {
     display: flex;
     flex-direction: column;
     flex-grow: var(--header-base-content-block-flex-grow);
@@ -33,7 +33,7 @@ body > header,
     color: var(--header-base-title-text-color);
     font-weight: var(--header-base-title-font-weight);
 
-    > a {
+    >a {
       font-size: inherit;
       color: inherit;
       font-weight: inherit;

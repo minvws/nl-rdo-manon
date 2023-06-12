@@ -4,12 +4,14 @@
 @use "footer-link-hover-variables";
 @use "mixins/link";
 
-body > footer,
+body>footer,
+.page-footer,
 %footer-style {
   a {
+
     &:hover,
-    &.hover /* Testing purposes */
-    {
+    /* Testing purposes */
+    &.hover {
       @include link.link-and-icon-styling('footer-link-hover-');
     }
   }

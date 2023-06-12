@@ -6,7 +6,7 @@
 @use "mixins/link";
 @use "mixins/icon";
 
-$header-navigation-button-states: 'active', 'focus', 'hover';
+$header-navigation-button-states: "active", "focus", "hover";
 
 @mixin button-states($prefix) {
   button,
@@ -16,22 +16,29 @@ $header-navigation-button-states: 'active', 'focus', 'hover';
   input[type="reset"] {
     @each $state in $header-navigation-button-states {
       &:#{$state},
-      &.#{$state} /* Testing purposes */
-      {
+      /* Testing purposes */
+      &.#{$state} {
         @include link.styling("#{$prefix}#{$state}-");
       }
     }
   }
 }
 
-body>header nav.collapsible.collapsed {
-  .collapsing-element {
-    @include button-states('header-navigation-collapsible-collapsing-element-button-');
+body > header,
+.page-header {
+  nav.collapsible.collapsed {
+    .collapsing-element {
+      @include button-states(
+        "header-navigation-collapsible-collapsing-element-button-"
+      );
 
-    ul,
-    ol {
-      li {
-        @include button-states('header-navigation-collapsible-collapsing-element-list-item-button-');
+      ul,
+      ol {
+        li {
+          @include button-states(
+            "header-navigation-collapsible-collapsing-element-list-item-button-"
+          );
+        }
       }
     }
   }
