@@ -16,11 +16,10 @@ $header-navigation-button-states: 'active', 'focus', 'hover';
   input[type="submit"],
   input[type="reset"] {
     @each $state in $header-navigation-button-states {
-      &:#{$state},
-      &.#{$state}
 
       /* Testing purposes */
-        {
+      &:#{$state},
+      &.#{$state} {
         @include link.styling("#{$prefix}#{$state}-");
       }
     }

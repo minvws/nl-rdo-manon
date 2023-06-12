@@ -6,11 +6,10 @@
 
 %header-navigation-link-hover-styling {
   a {
-    &:hover,
-    &.hover
 
     /* Testing purposes */
-      {
+    &:hover,
+    &.hover {
       @include link.link-and-icon-styling('header-navigation-link-hover-');
     }
   }

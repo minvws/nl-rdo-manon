@@ -9,11 +9,10 @@ body>header,
 %header-navigation-style {
   nav {
     a {
-      &:visited,
-      &.visited
 
       /* Testing purposes */
-        {
+      &:visited,
+      &.visited {
         @include link.link-and-icon-styling('header-navigation-link-visited-');
       }
     }

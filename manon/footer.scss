@@ -47,8 +47,8 @@ body>footer,
         list-style: var(--footer-navigation-list-item-list-style);
 
         &:before {
-          display: none;
           /* Preventing default nav before to show up */
+          display: none;
         }
       }
     }
