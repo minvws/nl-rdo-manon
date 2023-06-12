@@ -19,9 +19,13 @@
 
   --branding-color-1-link-text-color: var(--branding-color-1-text-color);
   --branding-color-1-link-active-text-color: var(--branding-color-1-text-color);
-  --branding-color-1-link-visited-text-color: var(--branding-color-1-text-color);
+  --branding-color-1-link-visited-text-color: var(
+    --branding-color-1-text-color
+  );
   --branding-color-1-link-hover-text-color: var(--branding-color-1-text-color);
-  --branding-color-1-link-visited-hover-text-color: var(--branding-color-1-text-color);
+  --branding-color-1-link-visited-hover-text-color: var(
+    --branding-color-1-text-color
+  );
 
   /* Branding color 2 */
   --branding-color-2-background-color: var(--branding-color-2);
@@ -29,9 +33,13 @@
 
   --branding-color-2-link-text-color: var(--branding-color-2-text-color);
   --branding-color-2-link-active-text-color: var(--branding-color-2-text-color);
-  --branding-color-2-link-visited-text-color: var(--branding-color-2-text-color);
+  --branding-color-2-link-visited-text-color: var(
+    --branding-color-2-text-color
+  );
   --branding-color-2-link-hover-text-color: var(--branding-color-2-text-color);
-  --branding-color-2-link-visited-hover-text-color: var(--branding-color-2-text-color);
+  --branding-color-2-link-visited-hover-text-color: var(
+    --branding-color-2-text-color
+  );
 
   /* Branding color 3 */
   --branding-color-3-background-color: var(--branding-color-3);
@@ -39,9 +47,13 @@
 
   --branding-color-3-link-text-color: var(--branding-color-3-text-color);
   --branding-color-3-link-active-text-color: var(--branding-color-3-text-color);
-  --branding-color-3-link-visited-text-color: var(--branding-color-3-text-color);
+  --branding-color-3-link-visited-text-color: var(
+    --branding-color-3-text-color
+  );
   --branding-color-3-link-hover-text-color: var(--branding-color-3-text-color);
-  --branding-color-3-link-visited-hover-text-color: var(--branding-color-3-text-color);
+  --branding-color-3-link-visited-hover-text-color: var(
+    --branding-color-3-text-color
+  );
 
   /* Branding color 4 */
   --branding-color-4-background-color: var(--branding-color-4);
@@ -49,9 +61,13 @@
 
   --branding-color-4-link-text-color: var(--branding-color-4-text-color);
   --branding-color-4-link-active-text-color: var(--branding-color-4-text-color);
-  --branding-color-4-link-visited-text-color: var(--branding-color-4-text-color);
+  --branding-color-4-link-visited-text-color: var(
+    --branding-color-4-text-color
+  );
   --branding-color-4-link-hover-text-color: var(--branding-color-4-text-color);
-  --branding-color-4-link-visited-hover-text-color: var(--branding-color-4-text-color);
+  --branding-color-4-link-visited-hover-text-color: var(
+    --branding-color-4-text-color
+  );
 
   /* Branding color 5 */
   --branding-color-5-background-color: var(--branding-color-5);
@@ -59,7 +75,11 @@
 
   --branding-color-5-link-text-color: var(--branding-color-5-text-color);
   --branding-color-5-link-active-text-color: var(--branding-color-5-text-color);
-  --branding-color-5-link-visited-text-color: var(--branding-color-5-text-color);
+  --branding-color-5-link-visited-text-color: var(
+    --branding-color-5-text-color
+  );
   --branding-color-5-link-hover-text-color: var(--branding-color-5-text-color);
-  --branding-color-5-link-visited-hover-text-color: var(--branding-color-5-text-color);
+  --branding-color-5-link-visited-hover-text-color: var(
+    --branding-color-5-text-color
+  );
 }

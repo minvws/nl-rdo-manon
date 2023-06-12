@@ -11,7 +11,7 @@ section {
   &.confirmation,
   &.explanation,
   &.system {
-  	display: flex;
+    display: flex;
     flex-direction: var(--notification-block-element-flex-direction);
     justify-content: var(--notification-block-element-justify-content);
     align-items: var(--notification-block-element-align-items);

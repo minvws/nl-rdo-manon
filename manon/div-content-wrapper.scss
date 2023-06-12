@@ -5,9 +5,9 @@
 @use "mixins/content-wrapper";
 
 main div div {
-  @include content-wrapper.nested('div');
+  @include content-wrapper.nested("div");
 }
 
-main>div>div {
-  @include content-wrapper.styling('div');
+main > div > div {
+  @include content-wrapper.styling("div");
 }

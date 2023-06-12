@@ -6,9 +6,12 @@
 
 :root {
   /* Header navigation button */
-  @include link.styling-variables('header-navigation-button-', 'button-base-');
+  @include link.styling-variables("header-navigation-button-", "button-base-");
 
-  --header-navigation-button-justify-content: var(--button-base-justify-content, center);
+  --header-navigation-button-justify-content: var(
+    --button-base-justify-content,
+    center
+  );
   --header-navigation-button-align-self: center;
   --header-navigation-button-min-width: var(--button-base-min-width, 0);
   --header-navigation-button-min-height: var(--button-base-min-height, 2.75rem);

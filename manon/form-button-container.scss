@@ -4,69 +4,70 @@
 @use "form-button-container-variables";
 
 %fieldset-button-container-styling {
-    $breakpoint: 24rem !default;
+  $breakpoint: 24rem !default;
 
-    float: var(--form-button-container-fieldset-float);
-    /* Removing gap as it is not supported within fieldsets */
-    gap: 0;
-    width: auto;
+  float: var(--form-button-container-fieldset-float);
+  /* Removing gap as it is not supported within fieldsets */
+  gap: 0;
+  width: auto;
 
-    /* Countering margin bottom that will be set by buttons on the last line */
-    margin-right: calc((var(--button-container-gap) * -1)/2);
-    margin-bottom: calc(var(--button-container-gap) * -1);
-    margin-left: calc((var(--button-container-gap) * -1)/2);
+  /* Countering margin bottom that will be set by buttons on the last line */
+  margin-right: calc((var(--button-container-gap) * -1) / 2);
+  margin-bottom: calc(var(--button-container-gap) * -1);
+  margin-left: calc((var(--button-container-gap) * -1) / 2);
 
-    button,
-    a.button,
-    input[type="button"],
-    input[type="submit"],
-    input[type="reset"] {
-        float: left;
-        width: var(--button-container-button-width);
-        margin-right: calc(var(--button-container-gap)/2);
-        margin-left: calc(var(--button-container-gap)/2);
-        margin-bottom: var(--button-container-gap);
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    float: left;
+    width: var(--button-container-button-width);
+    margin-right: calc(var(--button-container-gap) / 2);
+    margin-left: calc(var(--button-container-gap) / 2);
+    margin-bottom: var(--button-container-gap);
 
-        @media (min-width: $breakpoint) {
-            width: var(--button-container-button-after-breakpoint-width);
-        }
+    @media (min-width: $breakpoint) {
+      width: var(--button-container-button-after-breakpoint-width);
     }
-
+  }
 }
 
 form {
-    $breakpoint: 24rem !default;
+  $breakpoint: 24rem !default;
 
+  .button-container {
+    align-self: var(--form-button-container-align-self);
+    width: auto;
+  }
+
+  fieldset {
     .button-container {
-        align-self: var(--form-button-container-align-self);
-        width: auto;
+      @extend %fieldset-button-container-styling;
     }
 
+    > div {
+      &.button-container {
+        @extend %fieldset-button-container-styling;
+      }
+    }
+  }
+
+  &.horizontal-view {
     fieldset {
-        .button-container {
-            @extend %fieldset-button-container-styling;
-        }
+      .button-container {
+        @extend %fieldset-button-container-styling;
 
-        >div {
-            &.button-container {
-                @extend %fieldset-button-container-styling;
-            }
+        @media (min-width: $breakpoint) {
+          margin-left: calc(
+            var(--label-column) - (var(--button-container-gap) / 2)
+          );
         }
+      }
     }
 
-    &.horizontal-view {
-        fieldset {
-            .button-container {
-                @extend %fieldset-button-container-styling;
-
-                @media (min-width: $breakpoint) {
-                    margin-left: calc(var(--label-column) - (var(--button-container-gap)/2));
-                }
-            }
-        }
-
-        >div.button-container {
-            gap: var(--button-container-gap);
-        }
+    > div.button-container {
+      gap: var(--button-container-gap);
     }
+  }
 }

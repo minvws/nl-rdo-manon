@@ -3,7 +3,10 @@
 /*---------------------------------------------------------------*/
 :root {
   /* Available variables to use within all heading types */
-  --headings-font-family: var(--headings-base-set-font-family, var(--application-base-font-family));
+  --headings-font-family: var(
+    --headings-base-set-font-family,
+    var(--application-base-font-family)
+  );
   --headings-font-size: var(--headings-base-set-font-size, initial);
   --headings-font-weight: var(--headings-base-set-font-weight, bold);
   --headings-line-height: var(--application-base-line-height);

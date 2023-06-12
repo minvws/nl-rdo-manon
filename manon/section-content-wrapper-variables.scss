@@ -4,5 +4,5 @@
 @use "mixins/content-wrapper";
 
 :root {
-    @include content-wrapper.content-wrapper-variables('section');
+  @include content-wrapper.content-wrapper-variables("section");
 }

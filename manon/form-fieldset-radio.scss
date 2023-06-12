@@ -4,57 +4,57 @@
 @use "form-fieldset-radio-variables";
 
 form {
-    fieldset {
-        .radio {
-            padding: 0;
-            display: initial;
-            margin: var(--form-fieldset-radio-margin);
+  fieldset {
+    .radio {
+      padding: 0;
+      display: initial;
+      margin: var(--form-fieldset-radio-margin);
 
-            input[type="radio"] {
-                padding: 0;
-                cursor: pointer;
-                width: var(--form-fieldset-radio-input-width);
-                min-width: var(--form-fieldset-radio-input-width);
-                height: var(--form-fieldset-radio-input-height);
-                accent-color: var(--form-fieldset-radio-input-accent-color);
-                margin-top: var(--form-fieldset-radio-input-margin-top);
-                margin-left: 0;
-                margin-right: 0;
+      input[type="radio"] {
+        padding: 0;
+        cursor: pointer;
+        width: var(--form-fieldset-radio-input-width);
+        min-width: var(--form-fieldset-radio-input-width);
+        height: var(--form-fieldset-radio-input-height);
+        accent-color: var(--form-fieldset-radio-input-accent-color);
+        margin-top: var(--form-fieldset-radio-input-margin-top);
+        margin-left: 0;
+        margin-right: 0;
 
-                &+label {
-                    width: calc(100% - var(--form-fieldset-radio-input-width));
-                    cursor: pointer;
-                    padding-left: var(--radio-gap);
-                    margin: 0;
-                }
-
-                &:disabled {
-                    cursor: not-allowed;
-
-                    &+label {
-                        cursor: not-allowed;
-                    }
-                }
-            }
-
-            &.required {
-                flex-direction: column;
-
-                span {
-                    margin-bottom: var(--form-fieldset-radio-required-margin-bottom);
-                }
-
-                >div {
-                    padding: 0;
-                    display: initial;
-                }
-            }
+        & + label {
+          width: calc(100% - var(--form-fieldset-radio-input-width));
+          cursor: pointer;
+          padding-left: var(--radio-gap);
+          margin: 0;
         }
 
-        fieldset {
-            .radio {
-                margin: var(--form-fieldset-radio-margin);
-            }
+        &:disabled {
+          cursor: not-allowed;
+
+          & + label {
+            cursor: not-allowed;
+          }
         }
+      }
+
+      &.required {
+        flex-direction: column;
+
+        span {
+          margin-bottom: var(--form-fieldset-radio-required-margin-bottom);
+        }
+
+        > div {
+          padding: 0;
+          display: initial;
+        }
+      }
     }
+
+    fieldset {
+      .radio {
+        margin: var(--form-fieldset-radio-margin);
+      }
+    }
+  }
 }

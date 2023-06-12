@@ -5,18 +5,17 @@
 @use "mixins/link";
 
 %header-navigation-link-active-styling {
-  @include link.link-and-icon-styling('header-navigation-link-active-');
+  @include link.link-and-icon-styling("header-navigation-link-active-");
 }
 
 %header-navigation-current-link-active-styling {
-  @include link.link('header-navigation-link-active-');
+  @include link.link("header-navigation-link-active-");
 }
 
-body>header,
+body > header,
 .page-header,
 %header-navigation-style {
   nav {
-
     a:active,
     a.active {
       @extend %header-navigation-link-active-styling;
@@ -30,16 +29,14 @@ body>header,
     ul,
     ol {
       li {
-
         a:active,
         a.active {
           @extend %header-navigation-link-active-styling;
         }
 
         &[aria-current="page"] {
-
-          >a,
-          >a:visited {
+          > a,
+          > a:visited {
             @extend %header-navigation-current-link-active-styling;
           }
         }

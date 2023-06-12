@@ -3,15 +3,15 @@
 /*---------------------------------------------------------------*/
 @use "layout-footer-content-block-variables";
 
-body>footer,
+body > footer,
 .page-footer {
   display: flex;
   flex-direction: column;
   min-height: var(--layout-footer-content-block-min-height);
 
-  >section,
-  >article,
-  >div {
+  > section,
+  > article,
+  > div {
     display: flex;
     flex-direction: column;
     width: 100%;

@@ -4,16 +4,15 @@
 @use "header-link-hover-variables";
 @use "mixins/link";
 
-body>header,
+body > header,
 .page-header,
 %header-style {
   a {
     &:hover,
     &.hover
 
-    /* Testing purposes */
-      {
-      @include link.link-and-icon-styling('header-link-hover-');
+    /* Testing purposes */ {
+      @include link.link-and-icon-styling("header-link-hover-");
     }
   }
 }

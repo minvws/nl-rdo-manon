@@ -6,8 +6,12 @@
 
 :root {
   /* Visited */
-  @include link.styling-variables('footer-link-visited-', 'link-visited-');
+  @include link.styling-variables("footer-link-visited-", "link-visited-");
 
   /* Icon */
-  @include link.icon-styling-variables('footer-link-visited-icon-', 'footer-link-', 'visited');
+  @include link.icon-styling-variables(
+    "footer-link-visited-icon-",
+    "footer-link-",
+    "visited"
+  );
 }

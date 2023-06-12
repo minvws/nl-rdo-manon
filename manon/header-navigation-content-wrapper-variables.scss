@@ -2,13 +2,27 @@
 /*------ header-navigation-content-wrapper-variables.scss -------*/
 /*---------------------------------------------------------------*/
 :root {
-  --header-navigation-content-wrapper-flex-direction: var(--header-navigation-flex-direction, row);
-  --header-navigation-content-wrapper-justify-content: var(--header-navigation-justify-content, flex-start);
-  --header-navigation-content-wrapper-align-items: var(--header-navigation-align-items, center);
+  --header-navigation-content-wrapper-flex-direction: var(
+    --header-navigation-flex-direction,
+    row
+  );
+  --header-navigation-content-wrapper-justify-content: var(
+    --header-navigation-justify-content,
+    flex-start
+  );
+  --header-navigation-content-wrapper-align-items: var(
+    --header-navigation-align-items,
+    center
+  );
   --header-navigation-content-wrapper-gap: var(--header-navigation-gap, 2rem);
   --header-navigation-content-wrapper-padding-top: 0;
-  --header-navigation-content-wrapper-padding-right: var(--content-padding-right);
+  --header-navigation-content-wrapper-padding-right: var(
+    --content-padding-right
+  );
   --header-navigation-content-wrapper-padding-bottom: 0;
   --header-navigation-content-wrapper-padding-left: var(--content-padding-left);
-  --header-navigation-content-wrapper-max-width: var(--header-navigation-max-width, 100%);
+  --header-navigation-content-wrapper-max-width: var(
+    --header-navigation-max-width,
+    100%
+  );
 }

@@ -22,13 +22,11 @@ main section form,
 main article form,
 main div form,
 form {
-  >fieldset {
-
+  > fieldset {
     legend {
       font-weight: var(--form-fieldset-legend-font-weight);
       margin-bottom: var(--form-fieldset-legend-margin-bottom);
     }
-
 
     div {
       display: block;
@@ -36,7 +34,7 @@ form {
       float: left;
       width: 100%;
 
-      >* {
+      > * {
         float: left;
         width: 100%;
         max-width: 100%;
@@ -46,14 +44,13 @@ form {
     }
 
     /* Notifications */
-    >div {
-
+    > div {
       &.error,
       &.warning,
       &.explanation,
       &.confirmation,
       &.system {
-        >* {
+        > * {
           max-width: 100%;
           width: 100%;
         }
@@ -61,8 +58,8 @@ form {
     }
 
     /* Fieldsets within fieldsets ignore the "*" all selector */
-    >*,
-    >fieldset {
+    > *,
+    > fieldset {
       margin-bottom: var(--form-fieldset-fields-margin-top);
 
       &:last-child {

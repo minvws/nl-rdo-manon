@@ -18,7 +18,7 @@ form {
     margin-left: 0;
     margin-right: 0;
 
-    &+label {
+    & + label {
       width: auto;
       cursor: pointer;
       margin-top: 0;
@@ -30,7 +30,7 @@ form {
   }
 
   .checkbox {
-    >div {
+    > div {
       padding: 0;
       display: flex;
       flex-direction: row;
@@ -47,12 +47,11 @@ form {
     }
 
     @media (min-width: $breakpoint-1) {
-
-      +p.error,
-      +p.warning,
-      +p.confirmation,
-      +p.explanation,
-      +p.primary {
+      + p.error,
+      + p.warning,
+      + p.confirmation,
+      + p.explanation,
+      + p.primary {
         max-width: calc(100% - ($checkbox-input-width));
         margin-left: $checkbox-input-width;
       }
@@ -62,12 +61,11 @@ form {
   @media (min-width: $breakpoint-1) {
     .option-group {
       .checkbox {
-
-        +p.error,
-        +p.warning,
-        +p.confirmation,
-        +p.explanation,
-        +p.primary {
+        + p.error,
+        + p.warning,
+        + p.confirmation,
+        + p.explanation,
+        + p.primary {
           max-width: calc(var(--input-column) - ($checkbox-input-width));
           margin-left: calc(var(--label-column) + $checkbox-input-width);
         }

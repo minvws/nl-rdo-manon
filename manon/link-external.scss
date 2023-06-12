@@ -6,7 +6,7 @@
 @use "mixins/icon";
 
 a {
-  &[rel~=external] {
+  &[rel~="external"] {
     &:before {
       @include icon.icon;
       font-family: var(--link-external-icon-font-family);

@@ -10,11 +10,10 @@ nav.tabs {
     margin-bottom: 0;
 
     li {
-
       &:before {
         display: none; /* Preventing default nav before to show up */
       }
-      
+
       a,
       a:visited {
         display: flex;

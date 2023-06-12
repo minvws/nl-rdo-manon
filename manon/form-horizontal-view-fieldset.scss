@@ -4,7 +4,6 @@
 @use "form-horizontal-view-variables";
 @use "form-horizontal-view-fieldset-variables";
 
-
 /* Fieldset styling is a bit different compared to the default form styling.
 This is because of a couple of styling restrictions and issues concerning fieldsets and it's children.
 - Fieldsets can't use flexbox
@@ -23,17 +22,16 @@ and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 form.horizontal-view {
   $breakpoint: 24rem;
 
-  >fieldset {
-    >div {
+  > fieldset {
+    > div {
       display: block;
       /* resetting gap as it can not be used within fieldsets */
       gap: 0;
       /* Adds margin instead of gap */
       margin-bottom: var(--form-base-gap);
 
-
       @media (min-width: $breakpoint) {
-        >* {
+        > * {
           width: var(--input-column);
           /* resetting gap as it can not be used within fieldsets */
           gap: 0;
@@ -41,7 +39,7 @@ form.horizontal-view {
           float: right;
         }
 
-        >div {
+        > div {
           margin-bottom: 0;
         }
 
@@ -65,8 +63,8 @@ form.horizontal-view {
       float: left;
     }
 
-    >.checkbox,
-    >.radio {
+    > .checkbox,
+    > .radio {
       margin-left: 0;
       width: 100%;
       float: right;
@@ -99,41 +97,40 @@ form.horizontal-view {
       }
 
       /* Help button */
-      >button {
+      > button {
         top: 0;
       }
 
       /* Help text */
-      >p,
-      >div {
+      > p,
+      > div {
         width: 100%;
       }
     }
 
-    .checkbox input[type=checkbox]+label {
+    .checkbox input[type="checkbox"] + label {
       max-width: calc(100% - var(--form-fieldset-checkbox-width));
     }
 
-    .radio input[type=radio]+label {
+    .radio input[type="radio"] + label {
       max-width: calc(100% - var(--radio-input-width));
     }
 
     @media (min-width: $breakpoint) {
-
-      >button,
-      >a.button,
-      >input[type="button"],
-      >input[type="submit"],
-      >input[type="reset"],
-      >a {
+      > button,
+      > a.button,
+      > input[type="button"],
+      > input[type="submit"],
+      > input[type="reset"],
+      > a {
         margin-left: var(--label-column);
       }
 
-      &+button,
-      &+a.button,
-      &+input[type="button"],
-      &+input[type="submit"],
-      &+input[type="reset"] {
+      & + button,
+      & + a.button,
+      & + input[type="button"],
+      & + input[type="submit"],
+      & + input[type="reset"] {
         margin-left: var(--label-column);
       }
     }

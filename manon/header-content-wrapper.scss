@@ -3,10 +3,10 @@
 /*---------------------------------------------------------------*/
 @use "header-content-wrapper-variables";
 
-body>header,
+body > header,
 .page-header,
 %header-content-wrapper-style {
-  >div {
+  > div {
     display: flex;
     flex-direction: var(--header-content-wrapper-flex-direction);
     justify-content: var(--header-content-wrapper-justify-content);
