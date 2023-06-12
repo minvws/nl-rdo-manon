@@ -8,11 +8,10 @@ body>footer,
 .page-footer,
 %footer-style {
   a {
-    &:hover,
-    &.hover
 
+    &:hover,
     /* Testing purposes */
-      {
+    &.hover {
       @include link.link-and-icon-styling('footer-link-hover-');
     }
   }

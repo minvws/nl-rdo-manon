@@ -8,11 +8,10 @@ body>header,
 .page-header,
 %header-style {
   a {
-    &:focus,
-    &.focus
 
+    &:focus,
     /* Testing purposes */
-      {
+    &.focus {
       @include link.link-and-icon-styling('header-link-focus-');
     }
   }
