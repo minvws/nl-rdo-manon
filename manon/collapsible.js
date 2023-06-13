@@ -75,6 +75,7 @@ function createMenuButton(collapsibleElement, collapsingElement) {
 
   // Create button HTML element with classes and content
   var button = document.createElement("button");
+  button.type = "button";
   button.className = "collapsible-toggle " + buttonClasses;
   button.innerText = buttonOpenLabel || openLabel;
 
