@@ -12,21 +12,3 @@
 .horizontal-center {
   @extend %horizontal-center-styling;
 }
-
-article,
-section,
-footer,
-.page-footer,
-.page-header,
-body > header {
-  &.horizontal-center {
-    @extend %horizontal-center-styling;
-  }
-
-  > div,
-  div {
-    &.horizontal-center {
-      @extend %horizontal-center-styling;
-    }
-  }
-}
