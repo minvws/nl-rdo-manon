@@ -2,7 +2,7 @@
 
 import { ensureElementHasId, onMediaQueryMatch, onDomReady } from "./utils.js";
 
-onDomReady(initNaviation);
+onDomReady(initNavigation);
 
 /**
  * Add responsive behaviour to header navigation. Safe to call again to make a
@@ -10,7 +10,7 @@ onDomReady(initNaviation);
  */
 
 /* Locate all collapsable components */
-export function initNaviation() {
+export function initNavigation() {
   var collapsible = document.querySelectorAll(".collapsible");
   for (var i = 0; i < collapsible.length; i++) {
     var collapsibleElement = collapsible[i];
