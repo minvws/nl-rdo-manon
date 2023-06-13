@@ -10,44 +10,44 @@ section,
 article,
 div,
 p,
-span, {
-    &.card {
-        display: flex;
-        gap: var(--card-gap);
-        padding-top: var(--card-padding-top);
-        padding-right: var(--card-padding-right);
-        padding-bottom: var(--card-padding-bottom);
-        padding-left: var(--card-padding-left);
-        background-color: var(--card-background-color);
-        color: var(--card-text-color);
-        border-radius: var(--card-border-radius);
-        width: 100%;
-        max-width: var(--card-max-width);
-        -webkit-box-shadow: var(--card-box-shadow); 
-        box-shadow: var(--card-box-shadow);
-        margin: 0 auto;
-        border-width: var(--card-border-width);
-        border-style: var(--card-border-style);
-        border-color: var(--card-border-color);
+span {
+  &.card {
+    display: flex;
+    gap: var(--card-gap);
+    padding-top: var(--card-padding-top);
+    padding-right: var(--card-padding-right);
+    padding-bottom: var(--card-padding-bottom);
+    padding-left: var(--card-padding-left);
+    background-color: var(--card-background-color);
+    color: var(--card-text-color);
+    border-radius: var(--card-border-radius);
+    width: 100%;
+    max-width: var(--card-max-width);
+    -webkit-box-shadow: var(--card-box-shadow);
+    box-shadow: var(--card-box-shadow);
+    margin: 0 auto;
+    border-width: var(--card-border-width);
+    border-style: var(--card-border-style);
+    border-color: var(--card-border-color);
 
-        @media (min-width: $breakpoint-1) {
-            gap: var(--card-gap-breakpoint-1);
-            padding-top: var(--card-breakpoint-1-padding-top);
-            padding-right: var(--card-breakpoint-1-padding-right);
-            padding-bottom: var(--card-breakpoint-1-padding-bottom);
-            padding-left: var(--card-breakpoint-1-padding-left);
-            max-width: var(--card-breakpoint-1-max-width);
-            border-radius: var(--card-breakpoint-1-border-radius);
-        }
-
-        @media (min-width: $breakpoint-2) {
-            gap: var(--card-gap-breakpoint-2);
-            padding-top: var(--card-breakpoint-2-padding-top);
-            padding-right: var(--card-breakpoint-2-padding-right);
-            padding-bottom: var(--card-breakpoint-2-padding-bottom);
-            padding-left: var(--card-breakpoint-2-padding-left);
-            max-width: var(--card-breakpoint-2-max-width);
-            border-radius: var(--card-breakpoint-2-border-radius);
-        }
+    @media (min-width: $breakpoint-1) {
+      gap: var(--card-gap-breakpoint-1);
+      padding-top: var(--card-breakpoint-1-padding-top);
+      padding-right: var(--card-breakpoint-1-padding-right);
+      padding-bottom: var(--card-breakpoint-1-padding-bottom);
+      padding-left: var(--card-breakpoint-1-padding-left);
+      max-width: var(--card-breakpoint-1-max-width);
+      border-radius: var(--card-breakpoint-1-border-radius);
     }
+
+    @media (min-width: $breakpoint-2) {
+      gap: var(--card-gap-breakpoint-2);
+      padding-top: var(--card-breakpoint-2-padding-top);
+      padding-right: var(--card-breakpoint-2-padding-right);
+      padding-bottom: var(--card-breakpoint-2-padding-bottom);
+      padding-left: var(--card-breakpoint-2-padding-left);
+      max-width: var(--card-breakpoint-2-max-width);
+      border-radius: var(--card-breakpoint-2-border-radius);
+    }
+  }
 }

@@ -53,8 +53,8 @@
       }
 
       &:after {
-        @include icon.icon-format('breadcrumb-bar-');
-        @include icon.icon-content('breadcrumb-bar-');
+        @include icon.icon-format("breadcrumb-bar-");
+        @include icon.icon-content("breadcrumb-bar-");
 
         margin-left: var(--breadcrumb-bar-icon-margin-left);
         margin-right: var(--breadcrumb-bar-icon-margin-right);

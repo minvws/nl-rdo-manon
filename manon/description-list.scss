@@ -13,7 +13,7 @@ dl {
   max-width: var(--description-list-max-width);
   margin: 0;
 
-  >div {
+  > div {
     display: flex;
     flex-direction: var(--description-list-item-flex-direction);
     gap: var(--description-list-item-gap);

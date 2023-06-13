@@ -5,17 +5,23 @@
   --tags-color-1-border-color: var(--tags-soft-blue-light-border-color);
 
   /* Color 2 */
-  --tags-color-2-background-color: var(--tags-soft-green-light-background-color);
+  --tags-color-2-background-color: var(
+    --tags-soft-green-light-background-color
+  );
   --tags-color-2-text-color: var(--tags-soft-green-light-text-color);
   --tags-color-2-border-color: var(--tags-soft-green-light-border-color);
 
   /* Color 3 */
-  --tags-color-3-background-color: var(--tags-soft-yellow-light-background-color);
+  --tags-color-3-background-color: var(
+    --tags-soft-yellow-light-background-color
+  );
   --tags-color-3-text-color: var(--tags-soft-yellow-light-text-color);
   --tags-color-3-border-color: var(--tags-soft-yellow-light-border-color);
 
   /* Color 4 */
-  --tags-color-4-background-color: var(--tags-soft-orange-light-background-color);
+  --tags-color-4-background-color: var(
+    --tags-soft-orange-light-background-color
+  );
   --tags-color-4-text-color: var(--tags-soft-orange-light-text-color);
   --tags-color-4-border-color: var(--tags-soft-orange-light-border-color);
 
@@ -25,7 +31,9 @@
   --tags-color-5-border-color: var(--tags-soft-red-light-border-color);
 
   /* Color 6 */
-  --tags-color-6-background-color: var(--tags-soft-violet-light-background-color);
+  --tags-color-6-background-color: var(
+    --tags-soft-violet-light-background-color
+  );
   --tags-color-6-text-color: var(--tags-soft-violet-light-text-color);
   --tags-color-6-border-color: var(--tags-soft-violet-light-border-color);
 }

@@ -4,12 +4,12 @@
 @use "footer-navigation-link-variables";
 @use "mixins/link";
 
-body>footer,
+body > footer,
 .page-footer,
 %footer-style {
   nav {
     a {
-      @include link.link('footer-navigation-link-');
+      @include link.link("footer-navigation-link-");
     }
   }
 }

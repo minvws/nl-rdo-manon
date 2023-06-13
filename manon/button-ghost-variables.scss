@@ -16,7 +16,9 @@
 
   /* Hover */
   --button-ghost-hover-background-color: var(--application-base-accent-color);
-  --button-ghost-hover-text-color: var(--application-base-accent-color-text-color);
+  --button-ghost-hover-text-color: var(
+    --application-base-accent-color-text-color
+  );
   --button-ghost-hover-border-width: var(--button-ghost-border-width);
   --button-ghost-hover-border-style: var(--button-ghost-border-style);
   --button-ghost-hover-border-color: var(--button-ghost-border-color);

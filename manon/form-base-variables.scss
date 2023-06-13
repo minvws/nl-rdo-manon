@@ -8,10 +8,14 @@
   --form-base-padding-right: 2rem;
   --form-base-padding-bottom: 2rem;
   --form-base-padding-left: 2rem;
-  --form-base-background-color: var(--application-base-tint-1-background-color,
-      var(--application-base-background-color));
-  --form-base-text-color: var(--application-base-tint-1-text-color,
-      var(--application-base-text-color));
+  --form-base-background-color: var(
+    --application-base-tint-1-background-color,
+    var(--application-base-background-color)
+  );
+  --form-base-text-color: var(
+    --application-base-tint-1-text-color,
+    var(--application-base-text-color)
+  );
   --form-base-font-size: var(--application-base-font-size);
   --form-base-line-height: var(--application-base-line-height);
   --form-base-font-weight: var(--application-base-font-weight);

@@ -26,7 +26,7 @@ $breakpoint: 42rem !default;
 
   @media (min-width: $breakpoint) {
     gap: var(--layout-one-third-two-thirds-breakpoint-gap);
-    
+
     > * {
       width: 66.66%;
 

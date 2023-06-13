@@ -6,8 +6,12 @@
 
 :root {
   /* Link focus */
-  @include link.styling-variables('navigation-link-focus-', 'link-focus-');
+  @include link.styling-variables("navigation-link-focus-", "link-focus-");
 
   /* Icon */
-  @include link.icon-styling-variables('navigation-link-focus-icon-', 'navigation-link-', 'focus');
+  @include link.icon-styling-variables(
+    "navigation-link-focus-icon-",
+    "navigation-link-",
+    "focus"
+  );
 }

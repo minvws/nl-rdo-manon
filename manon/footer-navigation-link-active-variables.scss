@@ -6,8 +6,15 @@
 
 :root {
   /* Active */
-  @include link.styling-variables('footer-navigation-link-active-', 'navigation-link-active-');
+  @include link.styling-variables(
+    "footer-navigation-link-active-",
+    "navigation-link-active-"
+  );
 
   /* Icon */
-  @include link.icon-styling-variables('footer-navigation-link-active-icon-', 'footer-navigation-link-', 'active');
+  @include link.icon-styling-variables(
+    "footer-navigation-link-active-icon-",
+    "footer-navigation-link-",
+    "active"
+  );
 }

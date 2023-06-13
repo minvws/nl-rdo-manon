@@ -4,16 +4,15 @@
 @use "header-navigation-link-visited-variables";
 @use "mixins/link";
 
-body>header,
+body > header,
 .page-header,
 %header-navigation-style {
   nav {
     a {
-
       &:visited,
       /* Testing purposes */
       &.visited {
-        @include link.link-and-icon-styling('header-navigation-link-visited-');
+        @include link.link-and-icon-styling("header-navigation-link-visited-");
       }
     }
   }

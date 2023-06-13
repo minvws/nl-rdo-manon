@@ -3,7 +3,7 @@
 /*---------------------------------------------------------------*/
 @use "header-variables";
 
-body>header,
+body > header,
 .page-header,
 %main-header-style {
   display: flex;
@@ -28,8 +28,8 @@ body>header,
   border-style: var(--header-border-style);
   border-color: var(--header-border-color);
 
-  >section,
-  >div {
+  > section,
+  > div {
     display: flex;
     flex-direction: var(--header-content-wrapper-flex-direction);
     justify-content: var(--header-content-wrapper-justify-content);

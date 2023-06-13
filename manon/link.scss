@@ -11,7 +11,7 @@ a {
   word-wrap: break-word;
   word-break: break-word;
 
-  @include link.link('link-');
-  @include link.link-elements-styling('link-');
-  @include outline.outline('link-');
+  @include link.link("link-");
+  @include link.link-elements-styling("link-");
+  @include outline.outline("link-");
 }

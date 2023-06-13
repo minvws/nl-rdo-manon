@@ -4,7 +4,7 @@
 @use "main-variables";
 @use "mixins/layout";
 
-body>main,
+body > main,
 %main-style {
-  @include layout.layout('main');
+  @include layout.layout("main");
 }

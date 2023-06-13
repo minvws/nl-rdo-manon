@@ -3,12 +3,7 @@
 /*---------------------------------------------------------------------*/
 @use "icon";
 
-$states: (
-  "visited",
-  "hover",
-  "active",
-  "focus",
-);
+$states: ("visited", "hover", "active", "focus");
 
 @mixin styling($prefix) {
   font-size: var(--#{$prefix}font-size);
@@ -48,7 +43,7 @@ $states: (
     }
   }
 
-  >span.icon:last-of-type:not(:only-of-type) {
+  > span.icon:last-of-type:not(:only-of-type) {
     font-size: 0;
     padding-right: var(--#{$prefix}icon-last-padding-right);
     padding-left: var(--#{$prefix}icon-last-padding-left);
@@ -56,13 +51,12 @@ $states: (
 }
 
 @mixin link-elements-styling($prefix) {
-
-  >h1,
-  >h2,
-  >h3,
-  >h4,
-  >h5,
-  >h6 {
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6 {
     @include link-and-icon-styling($prefix);
     @content;
   }
@@ -85,7 +79,9 @@ $states: (
   --#{$prefix}font-size: var(--#{$parentPrefix}icon-font-size);
   --#{$prefix}font-weight: var(--#{$parentPrefix}icon-font-weight);
   --#{$prefix}line-height: var(--#{$parentPrefix}icon-line-height);
-  --#{$prefix}background-color: var(--#{$parentPrefix}#{$state}-background-color);
+  --#{$prefix}background-color: var(
+    --#{$parentPrefix}#{$state}-background-color
+  );
   --#{$prefix}text-color: var(--#{$parentPrefix}#{$state}-text-color);
   --#{$prefix}text-decoration: var(--#{$parentPrefix}icon-text-decoration);
   --#{$prefix}border-width: var(--#{$parentPrefix}icon-border-width);

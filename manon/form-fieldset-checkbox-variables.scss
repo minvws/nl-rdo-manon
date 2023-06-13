@@ -2,18 +2,20 @@
 /*------------------ form-fieldset-checkbox-variables.scss ---------------*/
 /*------------------------------------------------------------------------*/
 :root {
-    /* Checkbox */
-    --form-fieldset-checkbox-input-margin-top: 0.25rem;
+  /* Checkbox */
+  --form-fieldset-checkbox-input-margin-top: 0.25rem;
 
-    /* Box */
-    --form-fieldset-checkbox-width: 1.25rem;
-    --form-fieldset-checkbox-height: 1.25rem;
-    --form-fieldset-checkbox-accent-color: var(--branding-color-1, initial);
-    --form-fieldset-checkbox-margin: 0.25rem 0;
+  /* Box */
+  --form-fieldset-checkbox-width: 1.25rem;
+  --form-fieldset-checkbox-height: 1.25rem;
+  --form-fieldset-checkbox-accent-color: var(--branding-color-1, initial);
+  --form-fieldset-checkbox-margin: 0.25rem 0;
 
-    /* Label */
-    --form-fieldset-checkbox-label-width: auto;
+  /* Label */
+  --form-fieldset-checkbox-label-width: auto;
 
-    /* Required */
-    --form-fieldset-checkbox-required-margin-bottom: var(--application-base-gap-small);
+  /* Required */
+  --form-fieldset-checkbox-required-margin-bottom: var(
+    --application-base-gap-small
+  );
 }

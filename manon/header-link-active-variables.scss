@@ -6,8 +6,12 @@
 
 :root {
   /* Active */
-  @include link.styling-variables('header-link-active-', 'link-active-');
+  @include link.styling-variables("header-link-active-", "link-active-");
 
   /* Icon */
-  @include link.icon-styling-variables('header-link-active-icon-', 'header-link-', 'active');
+  @include link.icon-styling-variables(
+    "header-link-active-icon-",
+    "header-link-",
+    "active"
+  );
 }

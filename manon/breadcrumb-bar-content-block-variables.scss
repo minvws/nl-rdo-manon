@@ -18,7 +18,9 @@
   --breadcrumb-bar-content-block-padding-bottom: 1rem;
   --breadcrumb-bar-content-block-padding-left: var(--content-padding-left);
   --breadcrumb-bar-content-block-gap: 1rem;
-  --breadcrumb-bar-content-block-max-width: var(--layout-header-content-block-max-width);
+  --breadcrumb-bar-content-block-max-width: var(
+    --layout-header-content-block-max-width
+  );
 
   /* List */
   --breadcrumb-bar-content-block-list-vertical-align: center;

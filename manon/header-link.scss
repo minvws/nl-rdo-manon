@@ -4,10 +4,10 @@
 @use "header-link-variables";
 @use "mixins/link";
 
-body>header,
+body > header,
 .page-header,
 %header-style {
   a {
-    @include link.link('header-link-');
+    @include link.link("header-link-");
   }
 }

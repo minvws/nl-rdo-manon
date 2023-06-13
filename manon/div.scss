@@ -5,5 +5,5 @@
 @use "mixins/layout";
 
 main div {
-  @include layout.layout('div');
+  @include layout.layout("div");
 }

@@ -6,7 +6,7 @@
 
 :root {
   /* Footer Link */
-  @include link.styling-variables('footer-link-', 'link-');
+  @include link.styling-variables("footer-link-", "link-");
 
   /* Icon */
   --footer-link-icon-font-family: var(--link-icon-font-family);

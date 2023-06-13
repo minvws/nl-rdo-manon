@@ -3,20 +3,19 @@
 /*---------------------------------------------------------------*/
 
 form.horizontal-view {
-    $breakpoint: 24rem !default;
+  $breakpoint: 24rem !default;
 
-    .grouped-choice-list {
+  .grouped-choice-list {
+    legend {
+      font-weight: normal;
+      width: auto;
+      margin: 0;
 
-        legend {
-            font-weight: normal;
-            width: auto;
-            margin: 0;
-
-            @media (min-width: $breakpoint) {
-                position: absolute;
-                max-width: var(--label-column);
-                padding: 0;
-            }
-        }
+      @media (min-width: $breakpoint) {
+        position: absolute;
+        max-width: var(--label-column);
+        padding: 0;
+      }
     }
+  }
 }

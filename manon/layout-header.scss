@@ -3,7 +3,7 @@
 /*---------------------------------------------------------------*/
 @use "layout-header-variables";
 
-body>header,
+body > header,
 .page-header {
   display: flex;
   flex-direction: column;
@@ -17,9 +17,9 @@ body>header,
   align-self: center;
   max-width: var(--layout-header-max-width);
 
-  >div,
-  >article,
-  >section {
+  > div,
+  > article,
+  > section {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;

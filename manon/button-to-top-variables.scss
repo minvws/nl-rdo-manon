@@ -2,27 +2,31 @@
 /*-------------------- button-to-top-variables.scss ------------------------*/
 /*--------------------------------------------------------------------------*/
 :root {
-	--button-to-top-position: fixed;
-	--button-to-top-background-color: var(--application-base-accent-color);
-	--button-to-top-text-color: var(--application-base-accent-color-text-color);
-	--button-to-top-bottom: 1rem;
-	--button-to-top-right: 1rem;
-	--button-to-top-left: auto;
-	--button-to-top-font-size: 0;
-	--button-to-top-width: 2.75rem;
-	--button-to-top-height: 2.75rem;
-	--button-to-top-min-width: var(--button-to-top-width);
-	--button-to-top-min-height: var(--button-to-top-height);
-	--button-to-top-border-radius: 0.25rem;
-	--button-to-top-border-width: 0;
-	--button-to-top-border-style: solid;
-	--button-to-top-border-color: transparent;
+  --button-to-top-position: fixed;
+  --button-to-top-background-color: var(--application-base-accent-color);
+  --button-to-top-text-color: var(--application-base-accent-color-text-color);
+  --button-to-top-bottom: 1rem;
+  --button-to-top-right: 1rem;
+  --button-to-top-left: auto;
+  --button-to-top-font-size: 0;
+  --button-to-top-width: 2.75rem;
+  --button-to-top-height: 2.75rem;
+  --button-to-top-min-width: var(--button-to-top-width);
+  --button-to-top-min-height: var(--button-to-top-height);
+  --button-to-top-border-radius: 0.25rem;
+  --button-to-top-border-width: 0;
+  --button-to-top-border-style: solid;
+  --button-to-top-border-color: transparent;
 
-	/* Hover */
-	--button-to-top-hover-background-color: var(--application-base-accent-color-hover);
-	--button-to-top-hover-text-color: var(--application-base-accent-color-hover-text-color);
-	--button-to-top-hover-border-color: transparent;
+  /* Hover */
+  --button-to-top-hover-background-color: var(
+    --application-base-accent-color-hover
+  );
+  --button-to-top-hover-text-color: var(
+    --application-base-accent-color-hover-text-color
+  );
+  --button-to-top-hover-border-color: transparent;
 
-	/* Icon */
-	--button-to-top-icon-color: var(--button-to-top-text-color);
+  /* Icon */
+  --button-to-top-icon-color: var(--button-to-top-text-color);
 }
