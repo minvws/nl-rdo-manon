@@ -3,12 +3,8 @@
 /*---------------------------------------------------------------*/
 @use "horizontal-center-variables";
 
-%horizontal-center-styling {
+.horizontal-center {
   /* Preventing specificity issues */
   max-width: var(--horizontal-center-max-width) !important;
   margin: 0 auto;
-}
-
-.horizontal-center {
-  @extend %horizontal-center-styling;
 }
