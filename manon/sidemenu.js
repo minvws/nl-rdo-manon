@@ -44,6 +44,7 @@ function addToggleButton(sidemenu) {
   var toggleButtonType = sidemenu.dataset.toggleButtonType || "ghost";
 
   var button = document.createElement("button");
+  button.type = "button";
   button.classList.add(toggleButtonType, "sidemenu-toggle");
   button.setAttribute("aria-controls", ul.id);
 
