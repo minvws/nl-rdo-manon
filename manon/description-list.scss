@@ -13,7 +13,7 @@ dl {
   max-width: var(--description-list-max-width);
   margin: 0;
 
-  >div {
+  > div {
     display: flex;
     flex-direction: var(--description-list-item-flex-direction);
     gap: var(--description-list-item-gap);
@@ -32,7 +32,6 @@ dl {
     white-space: var(--description-list-item-white-space);
     word-break: break-word;
     box-sizing: border-box;
-    padding: var(--description-list-item-padding);
     margin: 0;
     width: calc(50% - (var(--description-list-item-gap) / 2));
   }
@@ -41,11 +40,13 @@ dl {
     font-weight: var(--description-list-item-title-font-weight, bolder);
     background-color: var(--description-list-item-title-background-color);
     color: var(--description-list-item-title-text-color);
+    padding: var(--description-list-item-title-padding);
   }
 
   dd {
     background-color: var(--description-list-item-data-background-color);
     color: var(--description-list-item-data-text-color);
+    padding: var(--description-list-item-data-padding);
   }
 
   @media (min-width: $breakpoint) {

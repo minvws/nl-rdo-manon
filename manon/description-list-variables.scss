@@ -7,19 +7,31 @@
   --description-list-max-width: 100%;
 
   /* Description list item */
-  --description-list-item-odd-background-color: var(--application-base-tint-1-background-color,
-      #f0f0f0);
+  --description-list-item-odd-background-color: var(
+    --application-base-tint-1-background-color,
+    #f0f0f0
+  );
   --description-list-item-gap: var(--application-base-gap);
   --description-list-item-flex-direction: row;
   --description-list-item-white-space: initial;
   --description-list-item-padding: 0.25rem;
 
   /* Description list item title (dt) */
-  --description-list-item-title-font-weight: var(--application-base-font-weight);
+  --description-list-item-title-font-weight: var(
+    --application-base-font-weight
+  );
   --description-list-item-title-background-color: transparent;
-  --description-list-item-title-text-color: var(--application-base-tint-1-text-color);
+  --description-list-item-title-text-color: var(
+    --application-base-tint-1-text-color
+  );
+  --description-list-item-title-padding: 0;
 
   /* Description list item title (dd) */
-  --description-list-item-data-background-color: var(--description-list-item-title-background-color);
-  --description-list-item-data-text-color: var(--description-list-item-title-text-color);
+  --description-list-item-data-background-color: var(
+    --description-list-item-title-background-color
+  );
+  --description-list-item-data-text-color: var(
+    --description-list-item-title-text-color
+  );
+  --description-list-item-data-padding: 0;
 }
