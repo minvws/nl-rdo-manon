@@ -27,7 +27,9 @@
   --button-cta-hover-outline-offset: initial;
 
   /* Active */
-  --button-cta-active-background-color: var(--button-cta-hover-background-color);
+  --button-cta-active-background-color: var(
+    --button-cta-hover-background-color
+  );
   --button-cta-active-text-color: var(--button-cta-hover-text-color);
   --button-cta-active-border-width: var(--button-cta-border-width);
   --button-cta-active-border-style: var(--button-cta-border-style);
@@ -36,7 +38,6 @@
   --button-cta-active-outline-color: initial;
   --button-cta-active-outline-width: initial;
   --button-cta-active-outline-offset: initial;
-
 
   /* Focus */
   --button-cta-focus-background-color: var(--button-cta-hover-background-color);

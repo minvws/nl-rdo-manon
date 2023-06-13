@@ -19,10 +19,10 @@ form {
     margin-left: 0;
     margin-right: 0;
 
-    &+label {
+    & + label {
       width: auto;
       cursor: pointer;
-      margin-top: 0
+      margin-top: 0;
     }
 
     &:disabled {
@@ -31,7 +31,7 @@ form {
   }
 
   .radio {
-    >div {
+    > div {
       padding: 0;
       display: flex;
       flex-direction: row;
@@ -48,12 +48,11 @@ form {
     }
 
     @media (min-width: $breakpoint-1) {
-
-      +p.error,
-      +p.warning,
-      +p.confirmation,
-      +p.explanation,
-      +p.primary {
+      + p.error,
+      + p.warning,
+      + p.confirmation,
+      + p.explanation,
+      + p.primary {
         max-width: calc(100% - ($radio-input-width));
         margin-left: $radio-input-width;
       }
@@ -62,12 +61,11 @@ form {
 
   .option-group {
     .radio {
-
-      +p.error,
-      +p.warning,
-      +p.confirmation,
-      +p.explanation,
-      +p.primary {
+      + p.error,
+      + p.warning,
+      + p.confirmation,
+      + p.explanation,
+      + p.primary {
         max-width: calc(var(--input-column) - ($radio-input-width));
         margin-left: calc(var(--label-column) + $radio-input-width);
       }

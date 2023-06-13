@@ -5,7 +5,10 @@
 
 :root {
   /* Link */
-  @include link.styling-variables('header-navigation-link-', 'navigation-link-');
+  @include link.styling-variables(
+    "header-navigation-link-",
+    "navigation-link-"
+  );
 
   --header-navigation-link-justify-content: center;
   --header-navigation-link-align-items: center;
@@ -16,12 +19,26 @@
   --header-navigation-link-min-height: 0;
 
   /* Icon */
-  --header-navigation-link-icon-font-family: var(--navigation-link-icon-font-family);
-  --header-navigation-link-icon-font-size: var(--navigation-link-icon-font-size);
-  --header-navigation-link-icon-padding-right: var(--navigation-link-icon-padding-right);
-  --header-navigation-link-icon-padding-left: var(--navigation-link-icon-padding-left);
-  --header-navigation-link-icon-text-decoration: var(--navigation-link-icon-text-decoration);
+  --header-navigation-link-icon-font-family: var(
+    --navigation-link-icon-font-family
+  );
+  --header-navigation-link-icon-font-size: var(
+    --navigation-link-icon-font-size
+  );
+  --header-navigation-link-icon-padding-right: var(
+    --navigation-link-icon-padding-right
+  );
+  --header-navigation-link-icon-padding-left: var(
+    --navigation-link-icon-padding-left
+  );
+  --header-navigation-link-icon-text-decoration: var(
+    --navigation-link-icon-text-decoration
+  );
 
-  --header-navigation-link-icon-background-color: var(--header-navigation-link-background-color);
-  --header-navigation-link-icon-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-icon-background-color: var(
+    --header-navigation-link-background-color
+  );
+  --header-navigation-link-icon-text-color: var(
+    --header-navigation-link-text-color
+  );
 }

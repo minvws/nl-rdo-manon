@@ -20,7 +20,7 @@
     min-height: var(--checkbox-height);
     accent-color: var(--checkbox-accent-color);
 
-    &+label {
+    & + label {
       width: var(--checkbox-label-width);
       cursor: pointer;
     }
@@ -28,7 +28,7 @@
     &:disabled {
       cursor: not-allowed;
 
-      &+label {
+      & + label {
         cursor: not-allowed;
       }
     }
@@ -42,7 +42,7 @@
     /* Using alignment value because the flex direction is column */
     justify-content: var(--radio-align-items);
 
-    >div {
+    > div {
       padding: 0;
       display: flex;
       flex-direction: row;
@@ -50,7 +50,7 @@
     }
   }
 
-  +.nota-bene {
+  + .nota-bene {
     padding-bottom: 0;
     margin-bottom: 0;
     margin-left: calc(var(--checkbox-width) + var(--checkbox-gap));

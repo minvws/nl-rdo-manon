@@ -16,6 +16,12 @@
 }
 
 :root {
-  @include button-styling('header-navigation-collapsible-collapsing-element-button-', 'button-base-');
-  @include button-styling('header-navigation-collapsible-collapsing-element-list-item-button-', 'header-navigation-collapsible-collapsing-element-button-');
+  @include button-styling(
+    "header-navigation-collapsible-collapsing-element-button-",
+    "button-base-"
+  );
+  @include button-styling(
+    "header-navigation-collapsible-collapsing-element-list-item-button-",
+    "header-navigation-collapsible-collapsing-element-button-"
+  );
 }

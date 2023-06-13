@@ -32,13 +32,19 @@
   --tabs-item-active-border-width: 0 0 1px 0;
   --tabs-item-active-border-style: solid;
   --tabs-item-active-border-color: var(--application-base-accent-color);
-  --tabs-item-active-text-color: var(--application-base-accent-color, var(--tabs-border-color));
+  --tabs-item-active-text-color: var(
+    --application-base-accent-color,
+    var(--tabs-border-color)
+  );
   --tabs-item-active-background-color: var(--tabs-item-background-color);
 
   /* List item active hover */
   --tabs-item-active-hover-border-width: 0 0 1px 0;
   --tabs-item-active-hover-border-style: solid;
   --tabs-item-active-hover-border-color: var(--application-base-accent-color);
-  --tabs-item-active-hover-text-color: var(--application-base-accent-color, var(--tabs-border-color));
+  --tabs-item-active-hover-text-color: var(
+    --application-base-accent-color,
+    var(--tabs-border-color)
+  );
   --tabs-item-active-hover-background-color: var(--tabs-item-background-color);
 }

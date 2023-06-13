@@ -5,5 +5,5 @@
 @use "mixins/layout";
 
 main section {
-  @include layout.layout('section');
+  @include layout.layout("section");
 }

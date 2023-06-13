@@ -7,7 +7,9 @@
 $sidemenu-breakpoint: 55rem !default;
 
 main.sidemenu {
-  $page-content-width: calc(var(--sidemenu-nav-width) + var(--sidemenu-main-gap));
+  $page-content-width: calc(
+    var(--sidemenu-nav-width) + var(--sidemenu-main-gap)
+  );
 
   /* Places sidemenu next to the main content of the page */
   display: flex;
@@ -22,9 +24,9 @@ main.sidemenu {
   }
 
   /* main content of the page */
-  >div,
-  >article,
-  >section {
+  > div,
+  > article,
+  > section {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -34,7 +36,7 @@ main.sidemenu {
     }
   }
 
-  >nav {
+  > nav {
     display: none;
 
     @media (min-width: $sidemenu-breakpoint) {
@@ -58,7 +60,7 @@ main.sidemenu {
       background-position: var(--sidemenu-nav-background-position);
 
       /* List */
-      >ul {
+      > ul {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
@@ -69,15 +71,14 @@ main.sidemenu {
         display: block;
       }
 
-
-      button+ul {
+      button + ul {
         /* Compensating for the reserved space for the icon.
 				Position sticky still reserves the space within the flow. */
         margin-top: 0;
       }
 
-      >ul li,
-      button+ul li {
+      > ul li,
+      button + ul li {
         background-color: var(--sidemenu-list-item-background-color);
         border-color: var(--sidemenu-list-item-border-color);
         border-style: var(--sidemenu-list-item-border-style);
@@ -101,7 +102,9 @@ main.sidemenu {
         min-width: var(--sidemenu-toggle-button-min-width);
         min-height: var(--sidemenu-toggle-button-min-height);
         font-size: var(--sidemenu-toggle-button-font-size);
-        margin-left: calc(var(--sidemenu-nav-width) - var(--sidemenu-nav-padding-left));
+        margin-left: calc(
+          var(--sidemenu-nav-width) - var(--sidemenu-nav-padding-left)
+        );
 
         /* Needed to keep the button to stick to the top */
         top: var(--sidemenu-button-margin-top);
@@ -129,13 +132,13 @@ main.sidemenu {
 
   &.sidemenu-closed {
     @media (min-width: $sidemenu-breakpoint) {
-      >nav {
+      > nav {
         border: 0;
         width: 0;
         padding-left: 0;
         padding-right: 0;
 
-        >ul {
+        > ul {
           display: none;
         }
 
@@ -144,7 +147,7 @@ main.sidemenu {
         }
       }
 
-      >div {
+      > div {
         max-width: 100%;
       }
     }

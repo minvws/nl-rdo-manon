@@ -4,10 +4,10 @@
 @use "footer-link-variables";
 @use "mixins/link";
 
-body>footer,
+body > footer,
 .page-footer,
 %footer-style {
   a {
-    @include link.link('footer-link-');
+    @include link.link("footer-link-");
   }
 }

@@ -5,8 +5,12 @@
 
 :root {
   /* Focus */
-  @include link.styling-variables('footer-link-focus-', 'link-focus-');
+  @include link.styling-variables("footer-link-focus-", "link-focus-");
 
   /* Icon */
-  @include link.icon-styling-variables('footer-link-focus-icon-', 'footer-link-', 'focus');
+  @include link.icon-styling-variables(
+    "footer-link-focus-icon-",
+    "footer-link-",
+    "focus"
+  );
 }

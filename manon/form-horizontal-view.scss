@@ -18,14 +18,15 @@ form.horizontal-view {
     margin-left: 0;
   }
 
-  >div,
-  >section {
+  > div,
+  > section {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: var(--form-horizontal-view-justify-content);
     flex-wrap: wrap;
-    gap: var(--form-horizontal-view-group-gap) var(--form-horizontal-view-group-vertical-gap);
+    gap: var(--form-horizontal-view-group-gap)
+      var(--form-horizontal-view-group-vertical-gap);
     margin: 0;
 
     &.checkbox {
@@ -46,12 +47,12 @@ form.horizontal-view {
         flex-grow: 0;
         margin-right: 0;
 
-        &+label {
+        & + label {
           max-width: calc(100% - var(--checkbox-width));
         }
       }
 
-      >div {
+      > div {
         @extend %horizontal-view-checkbox;
 
         input[type="checkbox"] {
@@ -69,7 +70,7 @@ form.horizontal-view {
         flex-grow: 0;
         margin-right: 0;
 
-        &+label {
+        & + label {
           max-width: calc(100% - var(--radio-input-width));
         }
 
@@ -79,7 +80,7 @@ form.horizontal-view {
         }
       }
 
-      >div {
+      > div {
         @extend %horizontal-view-radio;
 
         input[type="radio"] {
@@ -92,7 +93,7 @@ form.horizontal-view {
     &.radio {
       justify-content: flex-start;
 
-      >.nota-bene {
+      > .nota-bene {
         margin-left: var(--label-column);
       }
     }
@@ -103,13 +104,19 @@ form.horizontal-view {
     &.explanation,
     &.confirmation,
     &.system {
-      flex-direction: var(--form-horizontal-view-notification-block-element-flex-direction);
-      justify-content: var(--form-horizontal-view-notification-block-element-justify-content);
-      align-items: var(--form-horizontal-view-notification-block-element-align-items);
+      flex-direction: var(
+        --form-horizontal-view-notification-block-element-flex-direction
+      );
+      justify-content: var(
+        --form-horizontal-view-notification-block-element-justify-content
+      );
+      align-items: var(
+        --form-horizontal-view-notification-block-element-align-items
+      );
       gap: var(--form-horizontal-view-notification-block-element-gap);
       margin: 0;
 
-      >* {
+      > * {
         max-width: 100%;
       }
     }
@@ -118,23 +125,23 @@ form.horizontal-view {
       max-width: var(--form-input-color-max-width);
     }
 
-    >* {
+    > * {
       flex-grow: 1;
       box-sizing: border-box;
     }
 
-    >button,
-    >a.button,
-    >input[type="button"],
-    >input[type="submit"],
-    >input[type="reset"] {
+    > button,
+    > a.button,
+    > input[type="button"],
+    > input[type="submit"],
+    > input[type="reset"] {
       flex-grow: 0;
     }
 
     @media (min-width: $breakpoint) {
       flex-wrap: nowrap;
 
-      >* {
+      > * {
         max-width: var(--input-column);
       }
 
@@ -151,7 +158,7 @@ form.horizontal-view {
     align-items: flex-start;
 
     @media (min-width: $breakpoint) {
-      >* {
+      > * {
         margin-left: var(--label-column);
       }
     }
@@ -165,29 +172,28 @@ form.horizontal-view {
       flex-grow: 0;
     }
 
-    >button,
-    >a.button,
-    >input[type="button"],
-    >input[type="submit"],
-    >input[type="reset"],
-    >a {
+    > button,
+    > a.button,
+    > input[type="button"],
+    > input[type="submit"],
+    > input[type="reset"],
+    > a {
       @extend %align-to-input;
     }
 
-    >div {
-
-      >button,
-      >a.button,
-      >input[type="button"],
-      >input[type="submit"],
-      >input[type="reset"],
-      >a {
+    > div {
+      > button,
+      > a.button,
+      > input[type="button"],
+      > input[type="submit"],
+      > input[type="reset"],
+      > a {
         @extend %align-to-input;
       }
     }
 
-    >div.horizontal-view,
-    >div.button-container {
+    > div.horizontal-view,
+    > div.button-container {
       max-width: var(--input-column);
       margin-left: var(--label-column);
       flex-wrap: wrap;

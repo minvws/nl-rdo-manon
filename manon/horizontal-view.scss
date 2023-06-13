@@ -20,6 +20,6 @@ $breakpoint: 50rem !default;
   }
 }
 
-.horizontal-view-group>div {
+.horizontal-view-group > div {
   @extend %horizontal-view;
 }

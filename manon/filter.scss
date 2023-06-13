@@ -8,7 +8,7 @@
   gap: var(--filter-gap);
   width: var(--filter-width);
 
-  >div {
+  > div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,7 +26,7 @@
       font-size: inherit;
       color: inherit;
 
-      >span {
+      > span {
         font-size: var(--filter-intro-span-font-size, inherit);
         color: var(--filter-intro-span-text-color, inherit);
       }
@@ -67,6 +67,6 @@
   }
 }
 
-.js-filters-loaded .filter>div>button {
+.js-filters-loaded .filter > div > button {
   display: inline-flex;
 }

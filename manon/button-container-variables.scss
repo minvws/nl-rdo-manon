@@ -15,5 +15,7 @@
   --button-container-button-width: var(--form-button-width);
 
   /* After breakpoint */
-  --button-container-button-after-breakpoint-width: var(--form-button-after-breakpoint-width);
+  --button-container-button-after-breakpoint-width: var(
+    --form-button-after-breakpoint-width
+  );
 }

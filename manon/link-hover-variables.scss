@@ -6,9 +6,9 @@
 
 :root {
   /* Hover */
-  @include link.styling-variables('link-hover-', 'link-');
-  @include outline.outline-variables('link-hover-', 'link-');
+  @include link.styling-variables("link-hover-", "link-");
+  @include outline.outline-variables("link-hover-", "link-");
 
   /* Icon */
-  @include link.icon-styling-variables('link-hover-icon-', 'link-', 'hover');
+  @include link.icon-styling-variables("link-hover-icon-", "link-", "hover");
 }

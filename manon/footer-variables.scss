@@ -18,5 +18,8 @@
 
   /* Nav */
   --footer-navigation-list-padding: 0;
-  --footer-navigation-list-item-list-style: var(--navigation-list-item-list-style, initial);
+  --footer-navigation-list-item-list-style: var(
+    --navigation-list-item-list-style,
+    initial
+  );
 }

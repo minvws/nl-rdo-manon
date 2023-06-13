@@ -5,9 +5,9 @@
 @use "mixins/content-wrapper";
 
 footer div {
-    @include content-wrapper.nested('footer');
+  @include content-wrapper.nested("footer");
 }
 
-footer>div {
-    @include content-wrapper.styling('footer');
+footer > div {
+  @include content-wrapper.styling("footer");
 }

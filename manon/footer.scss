@@ -3,7 +3,7 @@
 /*---------------------------------------------------------------*/
 @use "footer-variables";
 
-body>footer,
+body > footer,
 .page-footer,
 %footer-style {
   display: flex;
@@ -37,7 +37,6 @@ body>footer,
   }
 
   nav {
-
     ul,
     ol {
       background-color: transparent;

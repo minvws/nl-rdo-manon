@@ -78,16 +78,22 @@
         }
 
         &:last-child {
-          border-width: var(--collapsing-element-list-item-last-item-border-width);
+          border-width: var(
+            --collapsing-element-list-item-last-item-border-width
+          );
         }
 
         &:first-child {
-          border-width: var(--collapsing-element-list-item-first-item-border-width);
+          border-width: var(
+            --collapsing-element-list-item-first-item-border-width
+          );
         }
 
         a {
           display: flex;
-          justify-content: var(--collapsing-element-list-item-link-justify-content);
+          justify-content: var(
+            --collapsing-element-list-item-link-justify-content
+          );
           align-items: center;
 
           width: 100%;
@@ -97,13 +103,17 @@
           box-sizing: border-box;
           padding-top: var(--collapsing-element-list-item-link-padding-top);
           padding-right: var(--collapsing-element-list-item-link-padding-right);
-          padding-bottom: var(--collapsing-element-list-item-link-padding-bottom);
+          padding-bottom: var(
+            --collapsing-element-list-item-link-padding-bottom
+          );
           padding-left: var(--collapsing-element-list-item-link-padding-left);
 
           background-color: transparent;
           border: 0;
           color: var(--collapsing-element-list-item-link-text-color);
-          text-decoration: var(--collapsing-element-list-item-link-text-decoration);
+          text-decoration: var(
+            --collapsing-element-list-item-link-text-decoration
+          );
           white-space: nowrap;
 
           &:before {
@@ -118,49 +128,74 @@
 
           &[aria-selected="true"],
           &[aria-current="page"] {
-            background-color: var(--collapsing-element-list-link-selected-background-color);
-            font-weight: var(--collapsing-element-list-link-selected-font-weight);
-            text-decoration: var(--collapsing-element-list-link-selected-text-decoration);
+            background-color: var(
+              --collapsing-element-list-link-selected-background-color
+            );
+            font-weight: var(
+              --collapsing-element-list-link-selected-font-weight
+            );
+            text-decoration: var(
+              --collapsing-element-list-link-selected-text-decoration
+            );
 
             &:before {
               @include icon.icon;
               content: var(--collapsing-element-list-selected-icon);
-              font-family: var(--collapsing-element-list-selected-icon-font-family);
-              margin-left: var(--collapsing-element-list-selected-icon-margin-left);
+              font-family: var(
+                --collapsing-element-list-selected-icon-font-family
+              );
+              margin-left: var(
+                --collapsing-element-list-selected-icon-margin-left
+              );
               font-size: var(--collapsing-element-list-selected-icon-font-size);
               color: var(--collapsing-element-list-selected-icon-text-color);
-              margin-right: var(--collapsing-element-list-selected-icon-margin-right);
+              margin-right: var(
+                --collapsing-element-list-selected-icon-margin-right
+              );
             }
 
             &:hover {
               border: 0;
-              border-top: var(--collapsing-element-list-link-selected-hover-background-color);
-              text-decoration: var(--collapsing-element-list-link-selected-hover-text-decoration);
+              border-top: var(
+                --collapsing-element-list-link-selected-hover-background-color
+              );
+              text-decoration: var(
+                --collapsing-element-list-link-selected-hover-text-decoration
+              );
             }
           }
         }
 
         &:hover {
-          background-color: var(--collapsing-element-list-item-link-hover-background-color);
+          background-color: var(
+            --collapsing-element-list-item-link-hover-background-color
+          );
           color: var(--collapsing-element-list-item-hover-text-color);
 
           a {
-            background-color: var(--collapsing-element-list-item-link-hover-background-color);
+            background-color: var(
+              --collapsing-element-list-item-link-hover-background-color
+            );
             color: var(--collapsing-element-list-item-link-hover-text-color);
-            text-decoration: var(--collapsing-element-list-link-hover-text-decoration);
+            text-decoration: var(
+              --collapsing-element-list-link-hover-text-decoration
+            );
 
             &:visited {
-              background-color: var(--collapsing-element-list-item-link-hover-background-color);
+              background-color: var(
+                --collapsing-element-list-item-link-hover-background-color
+              );
             }
           }
         }
 
         &[aria-current] {
-          background-color: var(--collapsing-element-list-item-link-hover-background-color);
+          background-color: var(
+            --collapsing-element-list-item-link-hover-background-color
+          );
           color: var(--collapsing-element-list-item-link-hover-text-color);
         }
       }
     }
-
   }
 }

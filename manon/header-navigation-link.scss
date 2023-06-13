@@ -5,12 +5,12 @@
 @use "mixins/icon";
 @use "mixins/link";
 
-body>header,
+body > header,
 .page-header,
 %header-navigation-style {
   nav {
     a {
-      @include link.link('header-navigation-link-');
+      @include link.link("header-navigation-link-");
 
       height: 100%;
       display: inline-flex;

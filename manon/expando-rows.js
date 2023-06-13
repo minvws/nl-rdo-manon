@@ -77,12 +77,8 @@ function initExpandoButtons(table) {
  * @param {HTMLElement} button
  */
 function initExpandoButton(button) {
-  var iconOpenClasses = (
-    button.dataset.iconOpenClass
-  ).split(/\s+/);
-  var iconCloseClasses = (
-    button.dataset.iconCloseClass
-  ).split(/\s+/);
+  var iconOpenClasses = button.dataset.iconOpenClass.split(/\s+/);
+  var iconCloseClasses = button.dataset.iconCloseClass.split(/\s+/);
 
   var buttonRow = closest(button, "tr");
   var row = buttonRow.nextElementSibling;
@@ -150,7 +146,9 @@ function initExpandoButton(button) {
  * @param {HTMLElement} table
  */
 function updateZebra(table) {
-  var rows = table.querySelector("tbody").querySelectorAll("tr:not(.expando-row)");
+  var rows = table
+    .querySelector("tbody")
+    .querySelectorAll("tr:not(.expando-row)");
   for (var i = 0; i < rows.length; i++) {
     var row = rows[i];
     if (i % 2) {

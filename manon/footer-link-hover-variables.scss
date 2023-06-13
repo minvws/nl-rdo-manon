@@ -6,8 +6,12 @@
 
 :root {
   /* Hover */
-  @include link.styling-variables('footer-link-hover-', 'link-hover-');
+  @include link.styling-variables("footer-link-hover-", "link-hover-");
 
   /* Icon */
-  @include link.icon-styling-variables('footer-link-hover-icon-', 'footer-link-', 'hover');
+  @include link.icon-styling-variables(
+    "footer-link-hover-icon-",
+    "footer-link-",
+    "hover"
+  );
 }

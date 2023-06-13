@@ -18,12 +18,12 @@ form {
       min-width: var(--radio-input-width);
       height: var(--radio-input-height);
       accent-color: var(--radio-input-accent-color);
-  
+
       & + label {
         width: var(--radio-label-width);
         cursor: pointer;
       }
-  
+
       &:disabled {
         cursor: not-allowed;
 
@@ -37,7 +37,9 @@ form {
       flex-direction: column;
       gap: var(--radio-required-gap);
       align-items: flex-start;
-      justify-content: var(--radio-align-items); /* Using alignment value because the flex direction is column */
+      justify-content: var(
+        --radio-align-items
+      ); /* Using alignment value because the flex direction is column */
 
       > div {
         padding: 0;

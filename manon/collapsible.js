@@ -15,7 +15,10 @@ export function initNaviation() {
   for (var i = 0; i < collapsible.length; i++) {
     var collapsibleElement = collapsible[i];
 
-    if (!(collapsible[i] instanceof HTMLElement) || collapsible[i].querySelector(".collapsible-toggle")) {
+    if (
+      !(collapsible[i] instanceof HTMLElement) ||
+      collapsible[i].querySelector(".collapsible-toggle")
+    ) {
       continue;
     }
 
@@ -29,19 +32,18 @@ export function initNaviation() {
  * @param {boolean} isCondensed
  */
 function makeResponsive(collapsibleElement, isCondensed) {
-  var collapsingElement = collapsibleElement.querySelector(".collapsing-element");
+  var collapsingElement = collapsibleElement.querySelector(
+    ".collapsing-element"
+  );
 
   if (!(collapsingElement instanceof HTMLElement)) {
-      console.error("missing collapsing element for: ", collapsibleElement);
-      return;
+    console.error("missing collapsing element for: ", collapsibleElement);
+    return;
   }
 
   ensureElementHasId(collapsingElement);
 
-  var button = createMenuButton(
-    collapsibleElement,
-    collapsingElement,
-  );
+  var button = createMenuButton(collapsibleElement, collapsingElement);
 
   if (!isCondensed) {
     onMediaQueryMatch(
@@ -49,9 +51,9 @@ function makeResponsive(collapsibleElement, isCondensed) {
       function (event) {
         button.setExpanded(false);
         if (event.matches) {
-            collapsibleElement.classList.remove("collapsed");
+          collapsibleElement.classList.remove("collapsed");
         } else {
-            collapsibleElement.classList.add("collapsed");
+          collapsibleElement.classList.add("collapsed");
         }
       }
     );
@@ -64,36 +66,38 @@ function makeResponsive(collapsibleElement, isCondensed) {
  * @return {{ setExpanded: (expanded: boolean) => void }}
  */
 function createMenuButton(collapsibleElement, collapsingElement) {
-    // Init button variables
-    var buttonOpenLabel = collapsibleElement.dataset.buttonOpenLabel;
-    var buttonCloseLabel = collapsibleElement.dataset.buttonCloseLabel;
-    var openLabel = collapsibleElement.dataset.openLabel || "Menu";
-    var closeLabel = collapsibleElement.dataset.closeLabel || "Sluit menu";
-    var buttonClasses = collapsibleElement.dataset.buttonClasses || "";
+  // Init button variables
+  var buttonOpenLabel = collapsibleElement.dataset.buttonOpenLabel;
+  var buttonCloseLabel = collapsibleElement.dataset.buttonCloseLabel;
+  var openLabel = collapsibleElement.dataset.openLabel || "Menu";
+  var closeLabel = collapsibleElement.dataset.closeLabel || "Sluit menu";
+  var buttonClasses = collapsibleElement.dataset.buttonClasses || "";
 
-    // Create button HTML element with classes and content
-    var button = document.createElement("button");
-    button.className = "collapsible-toggle " + buttonClasses;
-    button.innerText = buttonOpenLabel || openLabel;
+  // Create button HTML element with classes and content
+  var button = document.createElement("button");
+  button.className = "collapsible-toggle " + buttonClasses;
+  button.innerText = buttonOpenLabel || openLabel;
 
-    // Configure button aria attributes
-    button.setAttribute("aria-controls", collapsingElement.id);
-    button.setAttribute("aria-expanded", "false");
-    button.setAttribute("aria-haspopup", "menu");
+  // Configure button aria attributes
+  button.setAttribute("aria-controls", collapsingElement.id);
+  button.setAttribute("aria-expanded", "false");
+  button.setAttribute("aria-haspopup", "menu");
 
-    // Add <span> for screen readers (thus .visually-hidden)
-    var label = document.createElement("span");
-    label.innerText = openLabel;
-    label.className = "visually-hidden";
-    ensureElementHasId(label);
+  // Add <span> for screen readers (thus .visually-hidden)
+  var label = document.createElement("span");
+  label.innerText = openLabel;
+  label.className = "visually-hidden";
+  ensureElementHasId(label);
 
-    button.appendChild(label);
-    button.setAttribute("aria-labelledby", label.id);
+  button.appendChild(label);
+  button.setAttribute("aria-labelledby", label.id);
 
   function setExpanded(expanded) {
     if (expanded !== (button.getAttribute("aria-expanded") === "true")) {
       button.setAttribute("aria-expanded", String(expanded));
-      button.innerText = expanded ? (buttonCloseLabel || closeLabel) : (buttonOpenLabel || openLabel);
+      button.innerText = expanded
+        ? buttonCloseLabel || closeLabel
+        : buttonOpenLabel || openLabel;
       label.innerText = expanded ? closeLabel : openLabel;
     }
   }

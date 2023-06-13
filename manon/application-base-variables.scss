@@ -24,11 +24,15 @@
 
   /* Accent color */
   --application-base-accent-color: var(--branding-color-1-background-color);
-  --application-base-accent-color-text-color: var(--branding-color-1-text-color);
+  --application-base-accent-color-text-color: var(
+    --branding-color-1-text-color
+  );
 
   /* Accent color hover */
   --application-base-accent-color-hover: var(--branding-color-2);
-  --application-base-accent-color-hover-text-color: var(--branding-color-2-link-hover-text-color);
+  --application-base-accent-color-hover-text-color: var(
+    --branding-color-2-link-hover-text-color
+  );
 
   /* Accent color active */
   --application-base-accent-color-active: hotpink;

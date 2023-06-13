@@ -33,10 +33,16 @@
   --sidemenu-ul-padding: var(--list-base-padding, 0);
 
   /* List item */
-  --sidemenu-list-item-background-color: var(--list-base-item-background-color, transparent);
+  --sidemenu-list-item-background-color: var(
+    --list-base-item-background-color,
+    transparent
+  );
   --sidemenu-list-item-border-width: var(--list-base-item-border-width, 0);
   --sidemenu-list-item-border-style: var(--list-base-item-border-style, solid);
-  --sidemenu-list-item-border-color: var(--list-base-item-border-color, transparent);
+  --sidemenu-list-item-border-color: var(
+    --list-base-item-border-color,
+    transparent
+  );
   --sidemenu-list-item-padding: var(--list-base-item-padding, 0.25rem 0);
   --sidemenu-list-item-list-style: var(--list-base-item-list-style, initial);
   --sidemenu-list-item-line-height: var(--list-base-item-line-height, initial);

@@ -6,5 +6,7 @@
   --form-horizontal-view-fieldset-label-margin-top: 0.75rem;
 
   /* button */
-  --form-horizontal-view-fieldset-button-margin-left: var(--form-horizontal-view-label-max-width);
+  --form-horizontal-view-fieldset-button-margin-left: var(
+    --form-horizontal-view-label-max-width
+  );
 }

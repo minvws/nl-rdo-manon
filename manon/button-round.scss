@@ -8,11 +8,11 @@ a.button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-    &.round {
-        margin: auto 0;
-        min-width: initial;
-        border-radius: 50%;
-        width: 2.75rem;
-        height: 2.75rem;
-    }
+  &.round {
+    margin: auto 0;
+    min-width: initial;
+    border-radius: 50%;
+    width: 2.75rem;
+    height: 2.75rem;
+  }
 }

@@ -3,14 +3,14 @@
 /*------------------------------------------------------------------------*/
 
 :root {
-    /* Layout */
-    --article-section-flex-direction: var(--content-flex-direction);
-    --article-section-justify-content: var(--content-justify-content);
-    --article-section-align-items: var(--content-align-items);
-    --article-section-gap: var(--content-gap);
-    --article-section-padding-top: 0;
-    --article-section-padding-right: var(--content-padding-right);
-    --article-section-padding-bottom: 0;
-    --article-section-padding-left: var(--content-padding-left);
-    --article-section-max-width: 100%;
+  /* Layout */
+  --article-section-flex-direction: var(--content-flex-direction);
+  --article-section-justify-content: var(--content-justify-content);
+  --article-section-align-items: var(--content-align-items);
+  --article-section-gap: var(--content-gap);
+  --article-section-padding-top: 0;
+  --article-section-padding-right: var(--content-padding-right);
+  --article-section-padding-bottom: 0;
+  --article-section-padding-left: var(--content-padding-left);
+  --article-section-max-width: 100%;
 }

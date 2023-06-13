@@ -11,7 +11,7 @@
     width: var(--table-checkbox-width);
     height: var(--table-checkbox-height);
 
-    &+label {
+    & + label {
       width: auto;
       cursor: pointer;
       margin-top: 0;
@@ -39,7 +39,6 @@ table {
 
 /* Table within form */
 form {
-
   table {
     @extend %table-checkbox;
   }

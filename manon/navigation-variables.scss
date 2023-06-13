@@ -16,20 +16,38 @@
   --navigation-list-line-height: var(--list-base-line-height, 1.5);
   --navigation-list-font-size: var(--list-base-font-size, 1rem);
   --navigation-list-font-weight: var(--list-base-font-weight, normal);
-  --navigation-list-text-color: var(--list-base-text-color, var(--application-base-text-colo));
-  --navigation-list-background-color: var(--list-base-background-color, transparent);
+  --navigation-list-text-color: var(
+    --list-base-text-color,
+    var(--application-base-text-colo)
+  );
+  --navigation-list-background-color: var(
+    --list-base-background-color,
+    transparent
+  );
 
   /* List item */
   --navigation-list-item-padding: var(--list-base-item-padding, initial);
-  --navigation-list-item-background-color: var(--list-base-item-background-color, transparent);
-  --navigation-list-item-text-color: var(--list-base-item-text-color,var(--application-base-text-color));
+  --navigation-list-item-background-color: var(
+    --list-base-item-background-color,
+    transparent
+  );
+  --navigation-list-item-text-color: var(
+    --list-base-item-text-color,
+    var(--application-base-text-color)
+  );
   --navigation-list-item-border-width: var(--list-base-item-border-width, 0);
-  --navigation-list-item-border-style: var(--list-base-item-border-style, solid);
-  --navigation-list-item-border-color: var(--list-base-item-border-color, transparent);
+  --navigation-list-item-border-style: var(
+    --list-base-item-border-style,
+    solid
+  );
+  --navigation-list-item-border-color: var(
+    --list-base-item-border-color,
+    transparent
+  );
   --navigation-list-item-list-style: var(--list-base-item-list-style, initial);
 
   /* List item icon */
-  --navigation-list-item-icon-content:"";
+  --navigation-list-item-icon-content: "";
   --navigation-list-item-icon-font-family: var(--icon-font-family);
   --navigation-list-item-icon-font-size: var(--icon-font-size);
   --navigation-list-item-icon-line-height: var(--application-base-line-height);

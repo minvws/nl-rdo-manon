@@ -5,10 +5,10 @@
 @use "mixins/content-wrapper";
 
 main article div {
-  @include content-wrapper.nested('article');
+  @include content-wrapper.nested("article");
 }
 
 main > article > div,
 main.sidemenu > div > article > div {
-  @include content-wrapper.styling('article');
+  @include content-wrapper.styling("article");
 }

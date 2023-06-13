@@ -6,14 +6,19 @@
 
 :root {
   /* Breadcrumb Bar Link */
-  @include link.styling-variables('breadcrumb-bar-link-', 'link-');
+  @include link.styling-variables("breadcrumb-bar-link-", "link-");
 
   /* Icon */
   --breadcrumb-bar-link-icon-font-family: var(--link-icon-font-family);
-  --breadcrumb-bar-link-icon-padding-right: var(--link-icon-padding-right, 0.5rem);
+  --breadcrumb-bar-link-icon-padding-right: var(
+    --link-icon-padding-right,
+    0.5rem
+  );
   --breadcrumb-bar-link-icon-padding-left: var(--link-icon-padding-left, 0);
 
-  --breadcrumb-bar-link-icon-background-color: var(--breadcrumb-bar-link-background-color);
+  --breadcrumb-bar-link-icon-background-color: var(
+    --breadcrumb-bar-link-background-color
+  );
   --breadcrumb-bar-link-icon-text-color: var(--breadcrumb-bar-link-text-color);
 
   /* Icon at the end */

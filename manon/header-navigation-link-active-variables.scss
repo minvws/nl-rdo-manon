@@ -7,8 +7,14 @@
 
 :root {
   /* Link active */
-  @include link.styling-variables('header-navigation-link-active-', 'navigation-link-active-');
+  @include link.styling-variables(
+    "header-navigation-link-active-",
+    "navigation-link-active-"
+  );
 
   /* Icon */
-  @include icon.icon-format-variables('header-navigation-link-active-', 'header-navigation-link-active-');
+  @include icon.icon-format-variables(
+    "header-navigation-link-active-",
+    "header-navigation-link-active-"
+  );
 }

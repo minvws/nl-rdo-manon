@@ -9,10 +9,9 @@ a {
   &:hover,
   &.hover
 
-  /* Testing purposes */
-    {
-    @include link.link-and-icon-styling('link-hover-');
-    @include link.link-elements-styling('link-hover-');
-    @include outline.outline('link-hover-');
+  /* Testing purposes */ {
+    @include link.link-and-icon-styling("link-hover-");
+    @include link.link-elements-styling("link-hover-");
+    @include outline.outline("link-hover-");
   }
 }

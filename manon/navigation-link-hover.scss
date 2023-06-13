@@ -8,10 +8,9 @@
 nav {
   a {
     &:hover,
-    &.hover /* Testing purposes */
-    {
-      @include link.link-and-icon-styling('navigation-link-hover-');
-      @include outline.outline('navigation-link-hover-');
+    &.hover /* Testing purposes */ {
+      @include link.link-and-icon-styling("navigation-link-hover-");
+      @include outline.outline("navigation-link-hover-");
     }
   }
 }

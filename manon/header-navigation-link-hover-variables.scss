@@ -6,8 +6,15 @@
 
 :root {
   /* Link hover */
-  @include link.styling-variables('header-navigation-link-hover-', 'navigation-link-hover-');
+  @include link.styling-variables(
+    "header-navigation-link-hover-",
+    "navigation-link-hover-"
+  );
 
   /* Icon */
-  @include link.icon-styling-variables('header-navigation-link-hover-icon-', 'header-navigation-link-', 'hover');
+  @include link.icon-styling-variables(
+    "header-navigation-link-hover-icon-",
+    "header-navigation-link-",
+    "hover"
+  );
 }

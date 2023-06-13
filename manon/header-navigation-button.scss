@@ -4,17 +4,16 @@
 @use "header-navigation-button-variables";
 @use "mixins/link";
 
-body>header,
+body > header,
 .page-header,
 %header-navigation-style {
   nav {
-
     button,
     a.button,
     input[type="button"],
     input[type="submit"],
     input[type="reset"] {
-      @include link.link('header-navigation-button-');
+      @include link.link("header-navigation-button-");
 
       justify-content: var(--header-navigation-button-justify-content);
       align-self: var(--header-navigation-button-align-self);

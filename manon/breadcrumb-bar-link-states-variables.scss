@@ -4,14 +4,21 @@
 
 @use "mixins/link";
 
-$breadcrumb-bar-states: 'visited', 'hover', 'active', 'focus';
+$breadcrumb-bar-states: "visited", "hover", "active", "focus";
 
 :root {
   @each $state in $breadcrumb-bar-states {
     /* Breadcrumb Bar Link State */
-    @include link.styling-variables('breadcrumb-bar-link-#{$state}-', 'link-#{$state}-');
+    @include link.styling-variables(
+      "breadcrumb-bar-link-#{$state}-",
+      "link-#{$state}-"
+    );
 
     /* Icon */
-    @include link.icon-styling-variables('breadcrumb-bar-link-#{$state}-icon-', 'breadcrumb-bar-link-', $state);
+    @include link.icon-styling-variables(
+      "breadcrumb-bar-link-#{$state}-icon-",
+      "breadcrumb-bar-link-",
+      $state
+    );
   }
 }

@@ -8,7 +8,7 @@
 
 nav {
   a {
-    @include link.link('navigation-link-');
-    @include outline.outline('navigation-link-');
+    @include link.link("navigation-link-");
+    @include outline.outline("navigation-link-");
   }
 }
