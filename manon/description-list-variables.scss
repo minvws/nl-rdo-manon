@@ -24,6 +24,7 @@
   --description-list-item-title-text-color: var(
     --application-base-tint-1-text-color
   );
+  --description-list-item-title-padding: 0;
 
   /* Description list item title (dd) */
   --description-list-item-data-background-color: var(
@@ -32,4 +33,5 @@
   --description-list-item-data-text-color: var(
     --description-list-item-title-text-color
   );
+  --description-list-item-data-padding: 0;
 }
