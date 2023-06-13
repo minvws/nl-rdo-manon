@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Horizontaal gecentreerd testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./forms.html">Formulieren</a></li>
+            <li>
+              <a href="./form-horizontal-center.html">Horizontaal uitgelijnd</a>
+            </li>
+            <li>
+              <a href="./form-horizontal-center-test.html" aria-current="page"
+                >Horizontaal gecentreerd testpagina</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sidemenu" id="main-content" tabindex="-1">
+      <nav
+        data-open-label="Zijbalknavigatie"
+        data-close-label="Sluit zijbalknavigatie"
+        aria-label="Document-navigatie"
+      >
+        <ul>
+          <li><a href="./form-input-checkbox.html">Introductie</a></li>
+          <li><a href="#tests">Tests en voorbeelden</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Horizontaal gecentreerd testpagina</h1>
+          </section>
+
+          <section id="tests">
+            <h2><code>div</code></h2>
+            
+            <h3>Visueel voorbeeld:</h3>
+            <div class="horizontal-center">
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris luctus, vel pharetra arcu egestas.</p>
+            </div>
+            
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="horizontal-center">
+  &lt;h1>Lorem ipsum&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris luctus, vel pharetra arcu egestas.&lt;/p>
+&lt;/div>
+              </code>
+            </pre>
+
+            <h2><code>section</code></h2>
+
+            <h3>Visueel voorbeeld:</h3>
+            <section class="horizontal-center">
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris luctus, vel pharetra arcu egestas.</p>
+            </section>
+            
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;section class="horizontal-center">
+  &lt;h1>Lorem ipsum&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris luctus, vel pharetra arcu egestas.&lt;/p>
+&lt;/section>
+              </code>
+            </pre>
+
+            <h2><code>article</code></h2>
+
+            <h3>Visueel voorbeeld:</h3>
+            <article class="horizontal-center">
+              <h1>Lorem ipsum</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris luctus, vel pharetra arcu egestas.</p>
+            </article>
+            
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;article class="horizontal-center">
+  &lt;h1>Lorem ipsum&lt;/h1>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris luctus, vel pharetra arcu egestas.&lt;/p>
+&lt;/article>
+              </code>
+            </pre>
+
+            <h2><code>Formulier</code></h2>
+
+            <h3>Visueel voorbeeld:</h3>
+              <form class="background-color-offset horizontal-center">
+                <div>
+                  <label for="example-div-name-1">User name</label>
+                  <input type="text" id="example-div-name-1" />
+                </div>
+                <div>
+                  <label for="example-div-password-1">Password</label>
+                  <input type="password" id="example-div-password-1" />
+                </div>
+                <button type="submit">Lorem ipsum</button>
+              </form>
+            
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;form class="background-color-offset horizontal-center">
+  &lt;div>
+    &lt;label for="example-div-name-1">User name&lt;/label>
+    &lt;input type="text" id="example-div-name-1" />
+  &lt;/div>
+  &lt;div>
+    &lt;label for="example-div-password-1">Password&lt;/label>
+    &lt;input type="password" id="example-div-password-1" />
+  &lt;/div>
+  &lt;button type="submit">Lorem ipsum&lt;/button>
+&lt;/form>
+              </code>
+            </pre>
+          </section>
+
+          <article class="horizontal-center">
+            <h2><code>article</code> direct binnen main</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris luctus, vel pharetra arcu egestas.</p>
+            
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;article class="horizontal-center">
+  &lt;h2>&lt;code>article&lt;/code> direct binnen main&lt;/h2>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris luctus, vel pharetra arcu egestas.&lt;/p>
+&lt;/article>
+              </code>
+            </pre>
+          </article>
+
+          <section class="horizontal-center">
+            <h2><code>section</code> direct binnen main</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris luctus, vel pharetra arcu egestas.</p>
+            
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;section class="horizontal-center">
+  &lt;h2>&lt;code>section&lt;/code> direct binnen main&lt;/h2>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris luctus, vel pharetra arcu egestas.&lt;/p>
+&lt;/section>
+              </code>
+            </pre>
+          </section>
+
+          <div class="horizontal-center">
+            <h2><code>div</code> direct binnen main</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris luctus, vel pharetra arcu egestas.</p>
+            
+            <h3>HTML-voorbeeld:</h3>
+            <pre>
+              <code>
+&lt;div class="horizontal-center">
+  &lt;h2>&lt;code>div&lt;/code> direct binnen main&lt;/h2>
+  &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris luctus, vel pharetra arcu egestas.&lt;/p>
+&lt;/div>
+              </code>
+            </pre>
+          </div>
+          
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
