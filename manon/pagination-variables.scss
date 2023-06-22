@@ -2,25 +2,114 @@
 /*---------------------------- pagination-variables.scss ---------------------------*/
 /*----------------------------------------------------------------------------------*/
 :root {
+  --pagination-justify-content: space-between;
+  --pagination-align-items: center;
   --pagination-border-width: 1px 0 0 0;
   --pagination-border-style: solid;
   --pagination-border-color: #d7d7d7;
   --pagination-padding-top: 0.5rem;
   --pagination-gap: 0.25rem;
 
+  /* List */
+  --pagination-list-gap: 0.25rem;
+
   /* Item */
   --pagination-item-height: 2rem;
   --pagination-item-width: 2rem;
-  --pagination-item-padding: 0 0.5rem;
-  --pagination-item-text-color: var(--application-base-text-color);
-  --pagination-item-background-color: transparent;
-  --pagination-item-text-decoration: none;
 
-  /* Selected - active item */
-  --pagination-item-active-background-color: var(
+  /* Link */
+  --pagination-link-background-color: transparent;
+  --pagination-link-text-color: var(--application-base-text-color);
+  --pagination-link-border-width: 0;
+  --pagination-link-border-style: solid;
+  --pagination-link-border-color: transparent;
+  --pagination-link-border-radius: 0.25rem;
+  --pagination-link-text-decoration: none;
+
+  /* Hover */
+  --pagination-link-hover-background-color: var(
     --application-base-accent-color
   );
-  --pagination-item-active-text-color: var(
+  --pagination-link-hover-text-color: var(
     --application-base-accent-color-text-color
   );
+  --pagination-link-hover-border-width: var(--pagination-link-border-width);
+  --pagination-link-hover-border-style: var(--pagination-link-border-style);
+  --pagination-link-hover-border-color: var(--pagination-link-border-color);
+  --pagination-link-hover-text-decoration: var(
+    --pagination-link-text-decoration
+  );
+
+  /* Selected - active item */
+  --pagination-link-active-background-color: var(
+    --application-base-accent-color
+  );
+  --pagination-link-active-text-color: var(
+    --application-base-accent-color-text-color
+  );
+
+  /* Adjacent selecotor - Previous and Next */
+  --pagination-adjacent-background-color: var(
+    --pagination-link-background-color
+  );
+  --pagination-adjacent-text-color: var(--pagination-link-text-color);
+  --pagination-adjacent-border-width: var(--pagination-link-border-width);
+  --pagination-adjacent-border-style: var(--pagination-link-border-style);
+  --pagination-adjacent-border-color: var(--pagination-link-border-color);
+  --pagination-adjacent-border-radius: var(--pagination-link-border-radius);
+  --pagination-adjacent-padding: 0 0.5rem;
+  --pagination-adjacent-white-space: nowrap;
+
+  /* Hover */
+  --pagination-adjacent-hover-background-color: #f0f0f0;
+  --pagination-adjacent-hover-text-color: var(--pagination-adjacent-text-color);
+  --pagination-adjacent-hover-border-width: var(
+    --pagination-adjacent-border-width
+  );
+  --pagination-adjacent-hover-border-style: var(
+    --pagination-adjacent-border-style
+  );
+  --pagination-adjacent-hover-border-color: var(
+    --pagination-adjacent-border-color
+  );
+
+  /* Icon */
+  --pagination-adjacent-icon-font-family: var(--icon-font-family);
+  --pagination-adjacent-icon-font-size: var(--icon-font-size);
+  --pagination-adjacent-icon-padding-right: 0;
+  --pagination-adjacent-icon-padding-left: 0;
+
+  /* Previous */
+  --pagination-adjacent-previous-padding: var(--pagination-adjacent-padding);
+  --pagination-previous-icon: "<";
+  --pagination-previous-icon-font-family: var(
+    --pagination-adjacent-icon-font-family
+  );
+  --pagination-previous-icon-font-size: var(
+    --pagination-adjacent-icon-font-size
+  );
+  --pagination-previous-icon-padding-right: var(
+    --pagination-adjacent-icon-padding-right
+  );
+  --pagination-previous-icon-padding-left: var(
+    --pagination-adjacent-icon-padding-left
+  );
+  --pagination-previous-icon-margin-left: 0;
+  --pagination-previous-icon-margin-right: 0.5rem;
+
+  /* Next */
+  --pagination-adjacent-next-padding: var(--pagination-adjacent-padding);
+  --pagination-next-icon: ">";
+  --pagination-next-icon-font-family: var(
+    --pagination-adjacent-icon-font-family
+  );
+  --pagination-next-icon-font-size: var(--pagination-adjacent-icon-font-size);
+  --pagination-next-icon-padding-right: var(
+    --pagination-adjacent-icon-padding-right
+  );
+  --pagination-next-icon-padding-left: var(
+    --pagination-adjacent-icon-padding-left
+  );
+  --pagination-next-icon-margin-left: 0.5rem;
+  --pagination-next-icon-margin-right: 0;
 }
