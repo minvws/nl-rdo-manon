@@ -13,6 +13,8 @@ footer,
 div,
 form {
   &.layout-authentication {
+    width: 100%;
+    box-sizing: border-box;
     max-width: var(--layout-authentication-max-width);
     margin: 0 auto;
     background-color: var(--layout-authentication-background-color);

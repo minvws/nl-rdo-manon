@@ -10,6 +10,13 @@ $breakpoint-2: 60rem !default;
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--layout-column-3-gap);
+  width: 100%;
+  box-sizing: border-box;
+
+  > * {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 @media (min-width: $breakpoint-1) {

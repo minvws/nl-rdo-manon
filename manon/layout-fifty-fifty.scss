@@ -15,10 +15,12 @@ div {
     flex-wrap: wrap;
     flex-direction: row;
     gap: var(--layout-fifty-fifty-gap);
+    width: 100%;
     box-sizing: border-box;
 
     > * {
       width: 100%;
+      box-sizing: border-box;
     }
 
     @media (min-width: $breakpoint) {
