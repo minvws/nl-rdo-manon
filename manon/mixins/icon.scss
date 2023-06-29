@@ -9,7 +9,6 @@
   justify-content: center;
   text-align: center;
   padding: 0;
-  line-height: 1;
   font-style: normal;
 }
 
@@ -18,6 +17,7 @@
 
   font-family: var(--#{$prefix}icon-font-family);
   font-size: var(--#{$prefix}icon-font-size);
+  line-height: var(--#{$prefix}icon-line-height);
   text-decoration: var(--#{$prefix}icon-text-decoration);
   padding-right: var(--#{$prefix}icon-padding-right);
   padding-left: var(--#{$prefix}icon-padding-left);
@@ -29,6 +29,7 @@
   --#{$prefix}icon: none;
   --#{$prefix}icon-font-family: var(--#{$parentPrefix}icon-font-family);
   --#{$prefix}icon-font-size: var(--#{$parentPrefix}icon-font-size);
+  --#{$prefix}icon-line-height: var(--#{$parentPrefix}icon-line-height);
   --#{$prefix}icon-text-decoration: var(--#{$parentPrefix}icon-text-decoration);
   --#{$prefix}icon-padding-right: 0.5rem;
   --#{$prefix}icon-padding-left: 0;
