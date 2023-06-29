@@ -6,6 +6,26 @@ on:
     branches: [main]
 
 jobs:
+  audit:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'pnpm'
+
+      - name: npm audit
+        run: npm audit
+        working-directory: ./manon
+
   build:
     runs-on: ubuntu-20.04
 
@@ -25,10 +45,6 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --ignore-scripts
-
-      - name: npm audit
-        run: npm audit
-        working-directory: ./manon
 
       - name: Lint SCSS
         run: npm run lint:css
