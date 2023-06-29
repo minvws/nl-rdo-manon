@@ -33,7 +33,9 @@
   --#{$prefix}icon-text-decoration: var(--#{$parentPrefix}icon-text-decoration);
   --#{$prefix}icon-padding-right: 0.5rem;
   --#{$prefix}icon-padding-left: 0;
-  --#{$prefix}icon-background-color: var(--#{$parentPrefix}#{$state}background-color);
+  --#{$prefix}icon-background-color: var(
+    --#{$parentPrefix}#{$state}background-color
+  );
   --#{$prefix}icon-text-color: var(--#{$parentPrefix}#{$state}text-color);
 }
 
