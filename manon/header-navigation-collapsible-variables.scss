@@ -185,7 +185,8 @@
   /* Icon */
   @include icon.icon-format-variables(
     "header-navigation-collapsible-list-item-link-selected-",
-    "header-navigation-link-active-"
+    "header-navigation-link-",
+    "active-"
   );
 
   /* Button */

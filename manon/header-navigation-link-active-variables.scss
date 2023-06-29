@@ -15,6 +15,7 @@
   /* Icon */
   @include icon.icon-format-variables(
     "header-navigation-link-active-",
-    "header-navigation-link-active-"
+    "header-navigation-link-",
+    "active-"
   );
 }
