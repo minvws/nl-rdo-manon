@@ -37,3 +37,17 @@ form {
     }
   }
 }
+
+section,
+article,
+div {
+  &.layout-form {
+    width: 100%;
+    box-sizing: border-box;
+
+    > div {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}

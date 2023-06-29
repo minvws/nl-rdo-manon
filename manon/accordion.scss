@@ -32,6 +32,8 @@
   border-color: var(--accordion-content-border-color);
   background-color: var(--accordion-content-background-color);
   color: var(--accordion-content-text-color, inherit);
+  width: 100%;
+  box-sizing: border-box;
 
   > *:first-child {
     margin-top: 0;
@@ -46,6 +48,7 @@ ul.accordion {
   > li {
     list-style: none;
     width: 100%;
+    max-width: 100%;
 
     > button {
       @extend %accordion-button;
