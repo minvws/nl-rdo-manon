@@ -8,7 +8,13 @@ $breakpoint: 24rem !default;
 p,
 a,
 span,
-li {
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   max-width: var(--max-line-length-max-width);
   hyphens: var(--max-line-length-hyphens);
   word-break: var(--max-line-length-word-break);
