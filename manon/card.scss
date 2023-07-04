@@ -6,6 +6,8 @@
 $breakpoint-1: 24rem !default;
 $breakpoint-2: 42rem !default;
 
+main > section > div,
+main.sidemenu div > section > div,
 section,
 article,
 div,
@@ -21,7 +23,7 @@ span {
     background-color: var(--card-background-color);
     color: var(--card-text-color);
     border-radius: var(--card-border-radius);
-    width: 100%;
+    width: var(--card-width);
     max-width: var(--card-max-width);
     -webkit-box-shadow: var(--card-box-shadow);
     box-shadow: var(--card-box-shadow);
@@ -29,6 +31,7 @@ span {
     border-width: var(--card-border-width);
     border-style: var(--card-border-style);
     border-color: var(--card-border-color);
+    box-sizing: border-box;
 
     @media (min-width: $breakpoint-1) {
       gap: var(--card-gap-breakpoint-1);
