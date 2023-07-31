@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabbladen testpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li>
+              <a href="./tabs.html">Tabbladen</a>
+            </li>
+            <li>
+              <a href="./tabs-test.html" aria-current="page">Tabbladen testpagina</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <div>
+          <section id="introduction">
+            <h1>Tabbladen testpagina</h1>
+            <p>Overzicht van het element in mogelijke structuren om te testen.</p>
+          </section>
+
+          <section id="tests">
+            <h2>Tests</h2>
+            <h2><code>nav</code> met class tabs</h2>
+            <div class="tabs">
+                <ul>
+                    <li><a href="#" aria-current="page">Optie 1</a></li>
+                    <li><a href="#">Optie 2</a></li>
+                    <li><a href="#">Optie 3</a></li>
+                    <li><a href="#">Optie 4</a></li>
+                </ul>
+            </div>
+
+        <p>Html-voorbeeld:</p>
+            <pre>
+                <code>
+&lt;div class="tabs">
+    &lt;ul>
+        &lt;li>&lt;a href="#" aria-current="page">Optie 1&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Optie 2&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Optie 3&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Optie 4&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/div>
+
+                </code>
+            </pre>
+
+            <h2><code>span</code> op <code>aria-current</code>.</h2>
+            <div class="tabs">
+                <ul>
+                    <li><span aria-current="page">Optie 1</span></li>
+                    <li><a href="#">Optie 2</a></li>
+                    <li><a href="#">Optie 3</a></li>
+                    <li><a href="#">Optie 4</a></li>
+                </ul>
+            </div>
+
+        <p>Html-voorbeeld:</p>
+            <pre>
+                <code>
+&lt;div class="tabs">
+    &lt;ul>
+        &lt;li>&lt;span aria-current="page">Optie 1&lt;/span>&lt;/li>
+        &lt;li>&lt;a href="#">Optie 2&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Optie 3&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Optie 4&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/div>
+
+                </code>
+            </pre>
+
+            <h2><code>aria-current</code> op <code>li</code></h2>
+            <div class="tabs">
+                <ul>
+                    <li aria-current="page"><a href="#">Optie 1</a></li>
+                    <li><a href="#">Optie 2</a></li>
+                    <li><a href="#">Optie 3</a></li>
+                    <li><a href="#">Optie 4</a></li>
+                </ul>
+            </div>
+
+        <p>Html-voorbeeld:</p>
+            <pre>
+                <code>
+&lt;div class="tabs">
+    &lt;ul>
+        &lt;li aria-current="page">&lt;a href="#">Optie 1&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Optie 2&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Optie 3&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Optie 4&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/div>
+                </code>
+            </pre>
+            
+            <h2>Section</h2>
+            <section class="tabs">
+                <ul>
+                    <li><a href="#" aria-current="page">Optie 1</a></li>
+                    <li><a href="#">Optie 2</a></li>
+                    <li><a href="#">Optie 3</a></li>
+                    <li><a href="#">Optie 4</a></li>
+                </ul>
+            </section>
+
+        <p>Html-voorbeeld:</p>
+            <pre>
+                <code>
+&lt;section class="tabs">
+    &lt;ul>
+        &lt;li>&lt;a href="#" aria-current="page">Optie 1&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Optie 2&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Optie 3&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Optie 4&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/section>
+
+                </code>
+            </pre>
+
+            <h2>Zonder container</h2>
+            <ul class="tabs">
+                <li><a href="#" aria-current="page">Optie 1</a></li>
+                <li><a href="#">Optie 2</a></li>
+                <li><a href="#">Optie 3</a></li>
+                <li><a href="#">Optie 4</a></li>
+            </ul>
+
+        <p>Html-voorbeeld:</p>
+            <pre>
+                <code>
+&lt;ul class="tabs">
+    &lt;li>&lt;a href="#" aria-current="page">Optie 1&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">Optie 2&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">Optie 3&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">Optie 4&lt;/a>&lt;/li>
+&lt;/ul>
+                </code>
+            </pre>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

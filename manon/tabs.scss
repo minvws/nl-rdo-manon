@@ -3,7 +3,27 @@
 /*---------------------------------------------------------------*/
 @use "tabs-variables";
 
-%active-link {
+%tabs-link-styling {
+  border-width: var(--tabs-item-border-width);
+  border-style: var(--tabs-item-border-style);
+  border-color: var(--tabs-item-border-color);
+  color: var(--tabs-item-text-color);
+  line-height: var(--tabs-item-line-height);
+  padding: var(--tabs-item-padding);
+  background-color: var(--tabs-item-background-color);
+  text-decoration: var(--tabs-item-text-decoration);
+  white-space: nowrap;
+
+  &:hover {
+    border-width: var(--tabs-item-hover-border-width);
+    border-style: var(--tabs-item-hover-border-style);
+    border-color: var(--tabs-item-hover-border-color);
+    color: var(--tabs-item-hover-text-color);
+    background-color: var(--tabs-item-hover-background-color);
+  }
+}
+
+%tabs-active-item-styling {
   border-width: var(--tabs-item-active-border-width);
   border-style: var(--tabs-item-active-border-style);
   border-color: var(--tabs-item-active-border-color);
@@ -19,62 +39,63 @@
   }
 }
 
-.tabs {
+%tabs-parent-styling {
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
   background-color: var(--tabs-background-color);
   width: 100%;
+}
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    border-top-width: var(--tabs-border-top-width);
-    border-right-width: var(--tabs-border-right-width);
-    border-bottom-width: var(--tabs-border-bottom-width);
-    border-left-width: var(--tabs-border-left-width);
-    border-style: var(--tabs-border-style);
-    border-color: var(--tabs-border-color);
-    gap: var(--tabs-gap);
-    padding-left: 0;
-    width: 100%;
+%tabs-list-styling {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-top-width: var(--tabs-border-top-width);
+  border-right-width: var(--tabs-border-right-width);
+  border-bottom-width: var(--tabs-border-bottom-width);
+  border-left-width: var(--tabs-border-left-width);
+  border-style: var(--tabs-border-style);
+  border-color: var(--tabs-border-color);
+  gap: var(--tabs-gap);
+  padding-left: 0;
+  width: 100%;
 
-    li {
-      list-style: none;
-      margin-bottom: calc(0 * var(--tabs-border-bottom-width));
+  li {
+    list-style: none;
+    margin-bottom: calc(0 * var(--tabs-border-bottom-width));
 
-      > a {
-        border-width: var(--tabs-item-border-width);
-        border-style: var(--tabs-item-border-style);
-        border-color: var(--tabs-item-border-color);
-        color: var(--tabs-item-text-color);
-        line-height: var(--tabs-item-line-height);
-        padding: var(--tabs-item-padding);
-        background-color: var(--tabs-item-background-color);
-        text-decoration: var(--tabs-item-text-decoration);
-        white-space: nowrap;
+    > a,
+    span {
+      @extend %tabs-link-styling;
 
-        &:hover {
-          border-width: var(--tabs-item-hover-border-width);
-          border-style: var(--tabs-item-hover-border-style);
-          border-color: var(--tabs-item-hover-border-color);
-          color: var(--tabs-item-hover-text-color);
-          background-color: var(--tabs-item-hover-background-color);
-        }
-      }
-
-      /* aria-current on li */
-      &[aria-current="page"] {
-        > a {
-          @extend %active-link;
-        }
-      }
-
-      /* aria current on a */
-      a[aria-current="page"] {
-        @extend %active-link;
+      &[aria-current] {
+        @extend %tabs-active-item-styling;
       }
     }
+
+    /* aria-current on li */
+    &[aria-current="page"] {
+      > a,
+      > span {
+        @extend %tabs-active-item-styling;
+      }
+    }
+
+    span {
+      cursor: default;
+    }
+  }
+}
+
+ul.tabs {
+  @extend %tabs-list-styling;
+}
+
+.tabs {
+  @extend %tabs-parent-styling;
+
+  ul {
+    @extend %tabs-list-styling;
   }
 }
