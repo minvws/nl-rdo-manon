@@ -15,7 +15,7 @@ form {
 
     width: var(--form-button-width);
     min-width: var(--form-button-min-width);
-    min-height: 0;
+    min-height: var(--form-button-min-height);
 
     box-sizing: border-box;
     padding-top: var(--form-button-padding-top);
