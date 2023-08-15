@@ -37,9 +37,9 @@ https://fonts.google.com/specimen/Open+Sans/about
 # English
 
 # Manon
-The documentation can be found on https://minvws.github.io/nl-rdo-manon, it is generated using the docs directory on this repo. Manon and the documentation is currently being developed. This means that it's possible that parts haven't been fully tested or added yet. It also means that as it is in development things may change. If you run into any issues that haven't been documented within the repository feel free to add them. This will make them visual and solvable. We highly appreciate the feedback and insight.
+The documentation can be found on https://minvws.github.io/nl-rdo-manon, it is generated using the docs directory on this repo. Manon and the documentation are currently being developed. This means that it's possible that parts haven't been fully tested or added yet. It also means that as it is in development things may change. If you run into any issues that haven't been documented within the repository feel free to add them. This will make them visual and solvable. We highly appreciate the feedback and insight.
 
-## Wat
+## What
 Manon is a design framework that is based on the following principles:
 
 ### "Classless" when possible.
@@ -52,9 +52,9 @@ Only use what you need. Separate components that can be used within a project wi
 Components are adjustable through variables. The small "only what I needed set" makes sure you don't need unnecessary overrides within your CSS. For more information on the available variables and how to use them see the documentation.
 
 ## Origin
-During the vaccination campaign a lot of applications were launched and managed within a short time frame. With the strict branding requirements of the Rijksoverheid, the wish to produce accessible websites and due to the dynamic of the pandemic, the current solutions didn't meet the requirements. So within a short time frame the Ministerie of VWS produced a framework to do just that to simplify and optimize the production of their needed applications and sites. This framework has now been expanded and adjusted to be of use for a broader audience.
+During the vaccination campaign a lot of applications were launched and managed within a short time frame. With the strict branding requirements of the Rijksoverheid, the wish to produce accessible websites and due to the dynamic of the pandemic, the current solutions didn't meet the requirements. So within a short time frame the Ministry of Welfare, Healthcare and Sports produced a framework to do just that to simplify and optimize the production of their needed applications and sites. This framework has now been expanded and adjusted to be of use to a broader audience.
 
-With the biggest difference between Manon Rijk (the version which uses the Rijksoverheid branding) and Manon Open, this version which is for general use, is that the open version is adjustable. As well as the added possibility to only select and use the parts that are needed within your project.
+The biggest difference between Manon Rijk (the version which uses the Rijksoverheid branding) and Manon Open, this version which is for general use, is that the open version is adjustable. As well as the added possibility to only select and use the parts that are needed within your project.
 
 
 ## License
@@ -62,7 +62,7 @@ Zie [LICENSES.md](./LICENSES.md).
 
 All fonts used within Manon remain under their own license. For example: Neuton & Open Sans.
 
-For more information check their respective folders for extra/ more specific license (if available) or visit:
+For more information check their respective folders for extra/ more specific licenses (if available) or visit:
 
 ### Neuton
 https://fonts.google.com/specimen/Neuton/about
