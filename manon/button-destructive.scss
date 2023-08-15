@@ -1,0 +1,91 @@
+/*---------------------------------------------------------------*/
+/*----------------- button-destructive.scss ---------------------*/
+/*---------------------------------------------------------------*/
+@use "button-destructive-variables";
+
+button,
+a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  &.destructive {
+    outline-style: var(--button-destructive-outline-style);
+    outline-color: var(--button-destructive-outline-color);
+    outline-width: var(--button-destructive-outline-width);
+    outline-offset: var(--button-destructive-outline-offset);
+    background-color: var(--button-destructive-background-color);
+    border-width: var(--button-destructive-border-width);
+    border-style: var(--button-destructive-border-style);
+    border-color: var(--button-destructive-border-color);
+    color: var(--button-destructive-text-color);
+    -webkit-appearance: none; /* Reset ios button styling */
+    border-radius: var(--button-destructive-border-radius);
+    webkit-border-radius: var(
+      --button-destructive-border-radius
+    ); /* Reset ios button styling */
+
+    &:visited {
+      color: var(--button-destructive-text-color);
+    }
+
+    &:hover,
+    &.hover {
+      outline-style: var(--button-destructive-hover-outline-style);
+      outline-color: var(--button-destructive-hover-outline-color);
+      outline-width: var(--button-destructive-hover-outline-width);
+      outline-offset: var(--button-destructive-hover-outline-offset);
+      background-color: var(--button-destructive-hover-background-color);
+      color: var(--button-destructive-hover-text-color);
+      border-style: var(--button-destructive-hover-border-style);
+      border-color: var(
+        --button-destructive-hover-border-color,
+        var(--application-base-accent-color-accent)
+      );
+      border-width: var(--button-destructive-hover-border-width);
+    }
+
+    &:active,
+    &.active {
+      outline-style: var(--button-destructive-active-outline-style);
+      outline-color: var(--button-destructive-active-outline-color);
+      outline-width: var(--button-destructive-active-outline-width);
+      outline-offset: var(--button-destructive-active-outline-offset);
+      background-color: var(--button-destructive-active-background-color);
+      color: var(--button-destructive-active-text-color);
+      border-style: var(--button-destructive-active-border-style);
+      border-color: var(
+        --button-destructive-active-border-color,
+        var(--application-base-accent-color-accent)
+      );
+      border-width: var(--button-destructive-active-border-width);
+    }
+
+    &:focus,
+    &.focus {
+      outline-style: var(--button-destructive-focus-outline-style);
+      outline-color: var(--button-destructive-focus-outline-color);
+      outline-width: var(--button-destructive-focus-outline-width);
+      outline-offset: var(--button-destructive-focus-outline-offset);
+      border-style: var(--button-destructive-focus-border-style);
+      border-color: var(
+        --button-destructive-focus-border-color,
+        var(--application-base-accent-color-accent)
+      );
+      border-width: var(--button-destructive-focus-border-width);
+      background-color: var(
+        --button-destructive-focus-background-color,
+        var(--application-base-accent-color-accent)
+      );
+      color: var(
+        --button-destructive-focus-text-color,
+        var(--application-text-color-accent)
+      );
+    }
+
+    > img {
+      max-width: var(
+        --button-base-image-max-width
+      ); /* Limiting the use of images within buttons for readability. */
+    }
+  }
+}

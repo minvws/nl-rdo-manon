@@ -1,0 +1,74 @@
+/*---------------------------------------------------------------*/
+/*----------- components/button-destructive-variables.scss -------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* Button */
+  --button-destructive-background-color: #de2b2b;
+  --button-destructive-text-color: white;
+  --button-destructive-border-width: 2px;
+  --button-destructive-border-style: solid;
+  --button-destructive-border-color: var(--button-destructive-background-color);
+  --button-destructive-border-radius: var(--button-base-border-radius);
+  --button-destructive-outline-style: initial;
+  --button-destructive-outline-color: initial;
+  --button-destructive-outline-width: initial;
+  --button-destructive-outline-offset: initial;
+
+  /* Hover */
+  --button-destructive-hover-background-color: #ae1f1f;
+  --button-destructive-hover-text-color: var(--button-destructive-text-color);
+  --button-destructive-hover-border-width: var(
+    --button-destructive-border-width
+  );
+  --button-destructive-hover-border-style: var(
+    --button-destructive-border-style
+  );
+  --button-destructive-hover-border-color: var(
+    --button-destructive-hover-background-color
+  );
+  --button-destructive-hover-border-radius: var(
+    --button-destructive-border-radius
+  );
+  --button-destructive-hover-outline-style: initial;
+  --button-destructive-hover-outline-color: initial;
+  --button-destructive-hover-outline-width: initial;
+  --button-destructive-hover-outline-offset: initial;
+
+  /* Active */
+  --button-destructive-active-border-width: var(
+    --button-destructive-border-width
+  );
+  --button-destructive-active-border-style: var(
+    --button-destructive-border-style
+  );
+  --button-destructive-active-border-color: var(
+    --button-destructive-border-color
+  );
+  --button-destructive-active-background-color: var(
+    --button-destructive-background-color
+  );
+  --button-destructive-active-text-color: var(--button-destructive-text-color);
+  --button-destructive-active-outline-style: initial;
+  --button-destructive-active-outline-color: initial;
+  --button-destructive-active-outline-width: initial;
+  --button-destructive-active-outline-offset: initial;
+
+  /* Focus */
+  --button-destructive-focus-border-width: var(
+    --button-destructive-border-width
+  );
+  --button-destructive-focus-border-style: var(
+    --button-destructive-border-style
+  );
+  --button-destructive-focus-border-color: var(
+    --button-destructive-border-color
+  );
+  --button-destructive-focus-background-color: var(
+    --button-destructive-background-color
+  );
+  --button-destructive-focus-text-color: var(--button-destructive-text-color);
+  --button-destructive-focus-outline-style: initial;
+  --button-destructive-focus-outline-color: initial;
+  --button-destructive-focus-outline-width: initial;
+  --button-destructive-focus-outline-offset: initial;
+}

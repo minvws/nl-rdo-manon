@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Destructieve knop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/img/favicon.ico" rel="shortcut icon" />
+    <script defer src="../../static/js/manon.js"></script>
+  </head>
+  <body id="index">
+    <header>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav aria-label="Hoofdnavigatie">
+        <div>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="../documentation.html">Documentatie</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb-bar">
+        <div>
+          <ul>
+            <li><a href="../components.html">Componenten</a></li>
+            <li><a href="./button.html">Knoppen</a></li>
+            <li>
+              <a href="./button-destructive.html" aria-current="page">Destructieve knop</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article id="button-base">
+        <div>
+          <section id="introduction">
+            <h1>Destructieve knop</h1>
+            <p>Opvallende weergave voor knoppen die een destructieve actie initiëren.</p>
+
+            <ol>
+              <li>
+                Voeg de class <code>destructive</code> toe om gebruik te maken van de visuele weergave van
+                een destructieve knop.
+              </li>
+            </ol>
+          </section>
+
+          <section id="examples">
+            <h2><code>button</code></h2>
+            <h3>Visuele weergave:</h3>
+
+            <button class="destructive">Lorem ipsum</button>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+                <code>
+&lt;button class="destructive">Lorem ipsum&lt;/button>
+                </code>
+            </pre>
+
+            <h2><code>button</code> uitgeschakeld</h2>
+            <h3>Visuele weergave:</h3>
+
+            <button class="destructive" disabled>Lorem ipsum</button>
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+                <code>
+&lt;button class="destructive" disabled>button primary&lt;/button>
+                </code>
+            </pre>
+          </section>
+
+          <section id="button-base-input">
+            <h2><code>input type="button"</code></h2>
+            <h3>Visuele weergave:</h3>
+
+            <input type="button" value="Lorem ipsum" class="destructive" />
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+                <code>
+&lt;input type="button" value="Lorem ipsum" class="destructive">
+                </code>
+            </pre>
+
+            <h2><code>input type="button"</code> uitgeschakeld</h2>
+            <h3>Visuele weergave:</h3>
+
+            <input type="button" value="Lorem ipsum" class="destructive" disabled />
+
+            <h3>Html-voorbeeld:</h3>
+            <pre>
+                <code>
+&lt;input type="button" value="Lorem ipsum" class="destructive" disabled>
+                </code>
+            </pre>
+          </section>
+
+          <section id="variables">
+            <h2>Instelbare variabelen</h2>
+            <ul>
+              <li>
+                Knop, hover, active, focus.
+                <ul>
+                  <li>
+                    <a href="../variables.html#background-color">background-color</a>
+                  </li>
+                  <li><a href="../variables.html#text-color">text-color</a></li>
+                  <li>
+                    <a href="../variables.html#border-width">border-width</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#border-style">border-style</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#border-color">border-color</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#border-radius">border-radius</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#outline-style">outline-style</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#outline-color">outline-color</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#outline-width">outline-width</a>
+                  </li>
+                  <li>
+                    <a href="../variables.html#outline-offset">outline-offset</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+          <section id="related">
+            <h2>Gerelateerde pagina's</h2>
+            <a href="./button-destructive-test.html">Test- en voorbeelden-pagina</a>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
