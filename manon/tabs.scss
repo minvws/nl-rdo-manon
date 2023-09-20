@@ -51,10 +51,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  border-top-width: var(--tabs-border-top-width);
-  border-right-width: var(--tabs-border-right-width);
-  border-bottom-width: var(--tabs-border-bottom-width);
-  border-left-width: var(--tabs-border-left-width);
+  border-width: var(--tabs-border-width);
   border-style: var(--tabs-border-style);
   border-color: var(--tabs-border-color);
   gap: var(--tabs-gap);
