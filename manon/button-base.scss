@@ -129,23 +129,19 @@ input[type="reset"] {
     pointer-events: none;
   }
 
+  /* Buttons can not be flex containers as it gives issues with line breaks */
+  /* It does work on wider screens. So using flex box where possible. */
   @media (min-width: $breakpoint) {
     min-width: var(--button-base-min-width);
+    display: flex;
   }
 }
 
 /* Buttons can not be flex containers as it gives issues with line breaks */
-/* It does work on wider screens and on other elements. */
-/* So using flex box where possible. */
+/* It does work on other elements. So using flex box where possible. */
 a.button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   display: flex;
-}
-
-@media (min-width: $breakpoint) {
-  button {
-    display: flex;
-  }
 }

@@ -6,44 +6,40 @@
   --accordion-gap: 0.5rem; /* Space between accordion items */
 
   /* Button */
+  --accordion-button-display: flex;
   --accordion-button-padding: 0 1rem;
   --accordion-button-justify-content: flex-start;
-  /*  --accordion-button-font-size: ; */
-  /* --accordion-button-font-weight: ; */
-  /* --accordion-button-line-height: ; */
+  --accordion-button-font-size: var(--application-base-font-size);
+  --accordion-button-font-weight: var(--application-base-font-weight);
+  --accordion-button-line-height: var(--application-base-line-height);
   --accordion-button-background-color: var(--button-base-background-color);
   --accordion-button-text-color: var(--button-base-text-color);
 
   /* Button icon */
   /* Side menu button before */
   --accordion-button-icon-before-font-size: 1rem;
-  /* --accordion-button-icon-before-font-weight: ; */
-  /* --accordion-button-icon-before-white-space: ; */
-
   --accordion-button-icon-after-font-size: 1rem;
-  /* --accordion-button-icon-after-font-weight: ; */
-  /* --accordion-button-icon-after-white-space: ; */
 
   /* add content within "", this could be text or a unicode for an icon*/
   /* Choose before or after */
   --accordion-button-icon-font-family: var(--icon-font-family);
 
   /* content on the button when the menu is collapsed */
-  /* --accordion-button-icon-before-open-content: "v"; */
+  --accordion-button-icon-before-open-content: none;
   --accordion-button-icon-after-open-content: "v";
 
   /* content on the button when the menu is expanded */
-  /* --accordion-button-icon-before-close-content: "^"; */
-  /* --accordion-button-icon-font-family: var(--icon-font-family); */
+  --accordion-button-icon-before-close-content: none;
+  --accordion-button-icon-font-family: var(--icon-font-family);
   --accordion-button-icon-after-close-content: "^";
   --accordion-button-icon-after-margin-left: auto;
 
   /* Content */
   --accordion-content-padding: 2rem 1rem;
   --accordion-content-gap: 1rem;
-  /* --accordion-content-font-size: ; */
-  /* --accordion-content-font-weight: ; */
-  /* --accordion-content-line-height: ; */
+  --accordion-content-font-size: var(--application-base-font-size);
+  --accordion-content-font-weight: var(--application-base-font-weight);
+  --accordion-content-line-height: var(--application-base-line-height);
   --accordion-content-border-width: 1px;
   --accordion-content-border-style: solid;
   --accordion-content-border-color: #ccc;
