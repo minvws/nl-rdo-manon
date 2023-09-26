@@ -2,7 +2,10 @@
 /*------------------------------ tabs-variables.scss -------------------------------*/
 /*----------------------------------------------------------------------------------*/
 :root {
-  --tabs-border-width: 0 0 1px 0;
+  --tabs-border-top-width: 0;
+  --tabs-border-right-width: 0;
+  --tabs-border-bottom-width: 1px;
+  --tabs-border-left-width: 0;
   --tabs-border-style: solid;
   --tabs-border-color: #ccc;
   --tabs-background-color: transparent;
