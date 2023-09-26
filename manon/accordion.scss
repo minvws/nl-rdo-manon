@@ -9,6 +9,7 @@
 }
 
 %accordion-button {
+  display: var(--accordion-button-display);
   width: 100%;
   padding: var(--accordion-button-padding);
   font-size: var(--accordion-font-size, inherit);
@@ -95,16 +96,12 @@ section.accordion {
         content: var(--accordion-button-icon-before-open-content, none);
         font-family: var(--accordion-button-icon-font-family, inherit);
         font-size: var(--accordion-button-icon-before-font-size);
-        font-weight: var(--accordion-button-icon-before-font-weight);
-        white-space: var(--accordion-button-icon-before-white-space);
       }
 
       &:after {
         content: var(--accordion-button-icon-after-open-content, none);
         font-family: var(--accordion-button-icon-font-family, inherit);
         font-size: var(--accordion-button-icon-after-font-size);
-        font-weight: var(--accordion-button-icon-after-font-weight);
-        white-space: var(--accordion-button-icon-after-white-space);
         margin-left: auto;
       }
 
