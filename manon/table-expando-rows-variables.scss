@@ -16,4 +16,12 @@
 
   /* After breakpoint */
   --expando-rows-table-cell-after-breakpoint-padding: 2rem 3rem;
+
+  /* Parent row styling when their content is expanded */
+  --expando-rows-row-background-color: transparent;
+  --expando-rows-row-striping-background-color: var(
+    --table-row-background-color-striping,
+    initial
+  );
+  --expando-rows-row-font-weight: bold;
 }
