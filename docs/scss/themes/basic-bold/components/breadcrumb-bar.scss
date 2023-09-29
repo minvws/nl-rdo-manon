@@ -1,0 +1,12 @@
+/* Breadcrumb bar */
+
+:root {
+  --breadcrumb-bar-background-color: transparent;
+  --breadcrumb-bar-padding-top: 1rem;
+  --breadcrumb-bar-padding-bottom: 1rem;
+
+  /* Links */
+  --breadcrumb-bar-link-text-color: var(--application-base-text-color);
+  --breadcrumb-bar-link-hover-text-color: var(--application-base-text-color);
+  --breadcrumb-bar-link-visited-text-color: var(--application-base-text-color);
+}
