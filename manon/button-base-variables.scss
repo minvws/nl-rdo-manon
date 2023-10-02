@@ -45,9 +45,9 @@
   /* --button-base-active-outline-color: ; */
   /* --button-base-active-outline-width: ; */
   /* --button-base-active-outline-offset: ; */
-  /* --button-base-active-border-style: ; */
+  --button-base-active-border-style: solid;
   /* --button-base-active-border-color: ; */
-  /* --button-base-active-border-width: ; */
+  --button-base-active-border-width: 2px;
   --button-base-active-background-color: var(
     --application-base-accent-color-active,
     var(--application-base-accent-color)
@@ -62,9 +62,9 @@
   /* --button-base-focus-outline-color: ; */
   /* --button-base-focus-outline-width: ; */
   /* --button-base-focus-outline-offset: ; */
-  /* --button-base-focus-border-style: ; */
+  --button-base-focus-border-style: solid;
   /* --button-base-focus-border-color: ; */
-  /* --button-base-focus-border-width: ; */
+  --button-base-focus-border-width: 2px;
   --button-base-focus-background-color: var(
     --application-base-accent-color-focus,
     var(--application-base-accent-color)
@@ -79,9 +79,9 @@
   /* --button-base-selected-outline-color: ; */
   /* --button-base-selected-outline-width: ; */
   /* --button-base-selected-outline-offset: ; */
-  /* --button-base-selected-border-style: ; */
+  --button-base-selected-border-style: solid;
   /* --button-base-selected-border-color: ; */
-  /* --button-base-selected-border-width: ; */
+  --button-base-selected-border-width: 2px;
   --button-base-selected-background-color: var(
     --application-base-accent-color-selected,
     var(--application-base-accent-color)
