@@ -53,29 +53,54 @@
             <h1>Sorteerbare tabel</h1>
             <p>
               Om inzicht te krijgen in de data kan het behulpzaam zijn om de gebruiker de data te
-              laten sorteren. Bijvoorbeeld op basis van op of aflopende data.
+              laten sorteren.
             </p>
 
             <h2>Benodigde stappen:</h2>
             <ol>
               <li>
-                Voeg een <code>button</code> toe binnen de <code>th</code> om sorteerelemeent
-                klikbaar te maken.
+                Voeg een <code>&lt;button></code> toe binnen de <code>&lt;th></code> van elke sorteerbare kolom.
+                <ul>
+                  <li>Voeg de <code>&lt;button></code> alleen toe aan sorteerbare kolommen. Niet elke kolom hoeft sorteerbaar te zijn.</li>
+                  <li>Plaats de tekst van de kolomkop in de <code>&lt;button></code>, zodat de hele kolomkop klikbaar is.</li>
+                </ul>
               </li>
               <li>
-                Voeg binnen de knop een icoon toe indien gewenst. Voor meer informatie zie:
-                <a href="./button-icon.html">Icoonknoppen</a>
+                Voeg binnen de knop van elke sorteerbare kolom een icoon toe. Voor meer informatie zie:
+                <a href="./icons.html">Iconen</a>.
+                <ul>
+                  <li>Zorg dat de gebruikte Icoonset iconen heeft voor ongesoorteerde data, oplopend gesorteerde data en aflopend gesorteerde data.</li>
+                  <li>Gebruik bij voorkeur iconen met ingevulde driehoeken, bijvoorbeeld <span class="icon icon-sortable">driehoeken omhoog en omlaag</span> voor ongesorteerd, <span class="icon icon-ascending">driehoek omhoog</span> voor oplopend gesorteerd en <span class="icon icon-descending">driehoek omlaag</span> voor aflopend gesorteerd.</li>
+                </ul>
               </li>
               <li>
-                Voeg <code>abbr=""</code> toe aan de <code>&lt;th></code> met een korte duidelijke
-                omschrijving om de gebruikerservaring te verbeteren voor gebruikers die gebruik
-                maken van een screenreader.
+                Voeg een toelichting over de sorteerknoppen toe aan de <code>&lt;caption></code>. Bijvoorbeeld: "kolomkoppen met knoppen zijn sorteerbaar".
+                <ul>
+                  <li>Indien gewenst kan deze tekst visueel verborgen worden met de <code>visually-hidden</code> class.</li>
+                  <li>Zorg ervoor dat er een punt of komma staat tussen de bestaande caption-tekst en deze hint-tekst. Bij gebruik van een <code>visually-hidden</code> <code>&lt;>span></code> kan bijvoorbeeld een komma toegevoegd worden voorafgaand  aan de hint-tekst.</li>
+                </ul>
+              </li>
+              <li>
+                Voeg een <code>abbr=""</code> toe aan de <code>&lt;th></code> indien de tekst in de <code>&lt;th></code> erg lang is.
+                <ul>
+                  <li>De kortere omschrijving in de <code>abbr=""</code> wordt gebruikt door screenreaders bij het voorlezen van een cel in de bijbehorende kolom.</li>
+                </ul>
               </li>
             </ol>
 
             <h2>Aandachtspunten</h2>
             <ul>
-              <li>Dit element bevat momenteel geen JavaScript of logica voorbeeld.</li>
+              <li>Het is voor dit component nodig om het dynamische gedrag zelf via JavaScript te implementeren. De exacte implementatie is afhankelijk van de context.</li>
+              <li>Sorteer de inhoud van de tabel wanneer de gebruiker op één van de knoppen in de kolomkoppen klikt.</li>
+              <li>Draai de sorteervolgorde om, wanneer de gebruiker op de knop klikt van de kolom waar op dit moment op gesorteerd wordt.</li>
+              <li>Zorg ervoor dat elke kolomkop het juiste icoon heeft, afhankelijk van de huidige sortering van de tabel.</li>
+              <li>
+                Voeg <code>aria-sort=""</code> toe aan de <code>&lt;th></code> van de kolom waarop gesorteerd wordt.
+                <ul>
+                  <li>Gebruik <code>aria-sort="ascending"</code> wanneer de sortering oplopend is.</li>
+                  <li>Gebruik <code>aria-sort="descending"</code> wanneer de sortering aflopend is.</li>
+                </ul>
+              </li>
             </ul>
           </section>
 
@@ -83,20 +108,23 @@
             <h2>Voorbeelden</h2>
             <h3>Visueel voorbeeld:</h3>
             <div class="horizontal-scroll">
-              <table>
+              <table id="sortable-table-example">
                 <caption>
-                  Tabelvoorbeeld met sorteerbare data:
+                  Tabelvoorbeeld met sorteerbare data
+                  <span class="visually-hidden">, kolomkoppen met knoppen zijn sorteerbaar</span>
                 </caption>
                 <thead>
                   <tr>
-                    <th scope="col" abbr="Ascending data">
-                      <button title="Sort descending">
-                        Descending <span class="icon icon-ascending"></span>
+                    <th scope="col">
+                      <button>
+                        Voornaam
+                        <span class="icon icon-sortable"></span>
                       </button>
                     </th>
-                    <th scope="col" abbr="Descending data">
-                      <button title="Sort ascending">
-                        Ascending <span class="icon icon-descending"></span>
+                    <th scope="col" abbr="Achternaam">
+                      <button>
+                        Achternaam (met tussenvoegsel)
+                        <span class="icon icon-sortable"></span>
                       </button>
                     </th>
                   </tr>
@@ -104,12 +132,20 @@
 
                 <tbody>
                   <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
+                    <td>Janine</td>
+                    <td>Hinde</td>
                   </tr>
                   <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
+                    <td>Henk</td>
+                    <td>de Vries</td>
+                  </tr>
+                  <tr>
+                    <td>Maria</td>
+                    <td>Lin</td>
+                  </tr>
+                  <tr>
+                    <td>John</td>
+                    <td>Doe</td>
                   </tr>
                 </tbody>
               </table>
@@ -120,26 +156,43 @@
               <code>
 &lt;div class="horizontal-scroll">
   &lt;table>
-    &lt;caption>Tabelvoorbeeld met sorteerbare data:&lt;/caption>
+    &lt;caption>
+      Tabelvoorbeeld met sorteerbare data
+      &lt;span class="visually-hidden">, kolomkoppen met knoppen zijn sorteerbaar&lt;/span>
+    &lt;/caption>
     &lt;thead>
       &lt;tr>
-        &lt;th scope="col" abbr="Ascending data">
-          &lt;button title="Sort descending">Descending &lt;span class="icon icon-ascending">&lt;/button>
+        &lt;th scope="col">
+          &lt;button>
+            Voornaam
+            &lt;span class="icon icon-sortable">&lt;/span>
+          &lt;/button>
         &lt;/th>
-        &lt;th scope="col" abbr="Descending data">
-          &lt;button title="Sort ascending">Ascending &lt;span class="icon icon-descending">&lt;/span>&lt;/button>
+        &lt;th scope="col" abbr="Achternaam">
+          &lt;button>
+            Achternaam (met tussenvoegsel)
+            &lt;span class="icon icon-sortable">&lt;/span>
+          &lt;/button>
         &lt;/th>
       &lt;/tr>
     &lt;/thead>
 
     &lt;tbody>
       &lt;tr>
-        &lt;td>Lorem&lt;/td>
-        &lt;td>Ipsum&lt;/td>
+        &lt;td>Janine&lt;/td>
+        &lt;td>Hinde&lt;/td>
       &lt;/tr>
       &lt;tr>
-        &lt;td>Lorem&lt;/td>
-        &lt;td>Ipsum&lt;/td>
+        &lt;td>Henk&lt;/td>
+        &lt;td>de Vries&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Maria&lt;/td>
+        &lt;td>Lin&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>John&lt;/td>
+        &lt;td>Doe&lt;/td>
       &lt;/tr>
     &lt;/tbody>
   &lt;/table>

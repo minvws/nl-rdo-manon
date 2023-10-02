@@ -5,3 +5,4 @@ import "@minvws/manon/form-help.js";
 import "@minvws/manon/collapsible.js";
 import "@minvws/manon/sidemenu.js";
 import "@minvws/manon/language-selector.js";
+import "./sortable-table.js";
