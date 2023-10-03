@@ -43,3 +43,14 @@ table {
     }
   }
 }
+
+.expanded-row {
+  background-color: var(--expando-rows-row-background-color);
+  font-weight: var(--expando-rows-row-font-weight);
+
+  /* Zebra striping with opacity to keep background color. e.g for warnings or errors */
+  &:nth-child(even):not(.odd),
+  &:nth-child(odd).even {
+    background-color: var(--expando-rows-row-striping-background-color);
+  }
+}
