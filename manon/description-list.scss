@@ -5,10 +5,7 @@
 
 $breakpoint: 24rem !default;
 
-main div dl,
-main section dl,
-main article dl,
-dl {
+%dl-styling {
   width: var(--description-list-width, 100%);
   max-width: var(--description-list-max-width);
   margin: 0;
@@ -20,6 +17,9 @@ dl {
     padding: var(--description-list-item-padding);
     flex-wrap: wrap;
     width: 100%;
+    border-width: var(--description-list-border-width);
+    border-style: var(--description-list-border-style);
+    border-color: var(--description-list-border-color);
 
     &:nth-child(odd) {
       background-color: var(--description-list-item-odd-background-color);
@@ -32,25 +32,42 @@ dl {
     word-break: break-word;
     box-sizing: border-box;
     margin: 0;
-    width: calc(50% - (var(--description-list-item-gap) / 2));
   }
 
   dt {
-    font-weight: var(--description-list-item-title-font-weight, bolder);
+    font-weight: var(--description-list-item-title-font-weight);
     background-color: var(--description-list-item-title-background-color);
     color: var(--description-list-item-title-text-color);
     padding: var(--description-list-item-title-padding);
+    width: var(--description-list-item-title-width);
   }
 
   dd {
     background-color: var(--description-list-item-data-background-color);
     color: var(--description-list-item-data-text-color);
     padding: var(--description-list-item-data-padding);
+    font-weight: var(--description-list-item-data-font-weight);
+    width: var(--description-list-item-data-width);
   }
 
   @media (min-width: $breakpoint) {
     div {
-      grid-template-columns: 1fr 2fr;
+      flex-direction: var(
+        --description-list-item-flex-direction-after-breakpoint
+      );
     }
   }
+}
+
+main div,
+main section,
+main article {
+  form dl,
+  dl {
+    @extend %dl-styling;
+  }
+}
+
+dl {
+  @extend %dl-styling;
 }
