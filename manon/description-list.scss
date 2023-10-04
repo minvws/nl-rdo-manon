@@ -52,7 +52,9 @@ $breakpoint: 24rem !default;
 
   @media (min-width: $breakpoint) {
     div {
-      flex-direction: row;
+      flex-direction: var(
+        --description-list-item-flex-direction-after-breakpoint
+      );
     }
   }
 }
