@@ -77,8 +77,8 @@ function initExpandoButtons(table) {
  * @param {HTMLElement} button
  */
 function initExpandoButton(button) {
-  var iconOpenClasses = button.dataset.iconOpenClass.split(/\s+/);
-  var iconCloseClasses = button.dataset.iconCloseClass.split(/\s+/);
+  var iconOpenClasses = button.dataset.iconOpenClass?.split(/\s+/) || [];
+  var iconCloseClasses = button.dataset.iconCloseClass?.split(/\s+/) || [];
 
   var buttonRow = closest(button, "tr");
   var row = buttonRow.nextElementSibling;
