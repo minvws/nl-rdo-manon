@@ -22,16 +22,6 @@ table {
       @media (min-width: $breakpoint) {
         padding: var(--expando-rows-table-cell-after-breakpoint-padding);
       }
-
-      h1 {
-        font-size: var(--expando-rows-table-content-title-font-size);
-        font-weight: var(--expando-rows-table-content-title-font-weight);
-      }
-
-      h2 {
-        font-size: var(--expando-rows-table-content-subtitle-font-size);
-        font-weight: var(--expando-rows-table-content-subtitle-font-weight);
-      }
     }
   }
 }
