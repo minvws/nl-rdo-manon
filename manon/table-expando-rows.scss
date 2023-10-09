@@ -22,16 +22,6 @@ table {
       @media (min-width: $breakpoint) {
         padding: var(--expando-rows-table-cell-after-breakpoint-padding);
       }
-
-      h1 {
-        font-size: var(--expando-rows-table-content-title-font-size);
-        font-weight: var(--expando-rows-table-content-title-font-weight);
-      }
-
-      h2 {
-        font-size: var(--expando-rows-table-content-subtitle-font-size);
-        font-weight: var(--expando-rows-table-content-subtitle-font-weight);
-      }
     }
   }
 }
@@ -41,5 +31,16 @@ table {
     button.expando-button {
       display: inline-flex;
     }
+  }
+}
+
+.expanded-row {
+  background-color: var(--expando-rows-row-background-color);
+  font-weight: var(--expando-rows-row-font-weight);
+
+  /* Zebra striping with opacity to keep background color. e.g for warnings or errors */
+  &:nth-child(even):not(.odd),
+  &:nth-child(odd).even {
+    background-color: var(--expando-rows-row-striping-background-color);
   }
 }

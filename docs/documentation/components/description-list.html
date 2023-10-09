@@ -38,59 +38,105 @@
       <article>
         <div>
           <h1>Description list</h1>
-        </div>
-      </article>
 
-      <article>
-        <div>
-          <h2>Voorbeeld</h2>
-          <h3>Visuele weergave:</h3>
-          <dl>
-            <div>
-              <dt>Naam</dt>
-              <dd>Jane Doe</dd>
-            </div>
+          <section>
+            <h2>Voorbeeld</h2>
+            <h3>Visuele weergave:</h3>
+            <dl>
+              <div>
+                <dt>Naam</dt>
+                <dd>Jane Doe</dd>
+              </div>
 
-            <div>
-              <dt>Woonplaats</dt>
-              <dd>Amsterdam</dd>
-            </div>
+              <div>
+                <dt>Woonplaats</dt>
+                <dd>Amsterdam</dd>
+              </div>
 
-            <div>
-              <dt>Aanmelddatum</dt>
-              <dd>03-05-2021</dd>
-            </div>
-          </dl>
+              <div>
+                <dt>Aanmelddatum</dt>
+                <dd>03-05-2021</dd>
+              </div>
+            </dl>
 
-          <h3>Html-voorbeeld:</h3>
-          <pre>
+            <h3>Html-voorbeeld:</h3>
+            <pre>
               <code>
-&lt;dl>
-  &lt;div>
-    &lt;dt>Naam&lt;/dt>
-    &lt;dd>Jane Doe&lt;/dd>
-  &lt;/div>
+  &lt;dl>
+    &lt;div>
+      &lt;dt>Naam&lt;/dt>
+      &lt;dd>Jane Doe&lt;/dd>
+    &lt;/div>
 
-  &lt;div>
-    &lt;dt>Woonplaats&lt;/dt>
-    &lt;dd>Amsterdam&lt;/dd>
-  &lt;/div>
+    &lt;div>
+      &lt;dt>Woonplaats&lt;/dt>
+      &lt;dd>Amsterdam&lt;/dd>
+    &lt;/div>
 
-  &lt;div>
-    &lt;dt>Aanmelddatum&lt;/dt>
-    &lt;dd>03-05-2021&lt;/dd>
-  &lt;/div>
-&lt;/dl>
+    &lt;div>
+      &lt;dt>Aanmelddatum&lt;/dt>
+      &lt;dd>03-05-2021&lt;/dd>
+    &lt;/div>
+  &lt;/dl>
               </code>
             </pre>
+          </section>
 
-          <h3>Benodigde bestanden</h3>
-          <ul>
-            <li><code>description-list/description-list-base</code></li>
-            <li>
-              <code>description-list/description-list-base-variables</code>
-            </li>
-          </ul>
+          <section id="requirements">
+            <h2>Bijbehorende bestanden</h2>
+            <p>
+              Voor meer informatie over importeren en instellen van componenten. Zie:
+              <a href="../import-styling.html">Componenten gebruiken en styling toevoegen</a>
+            </p>
+
+            <h3>Importeer component via NPM</h3>
+
+            <h4>CSS-voorbeeld:</h4>
+            <pre>
+              <code>
+    @use "@minvws/manon/description-list";
+              </code>
+            </pre>
+          </section>
+
+          <section id="variables">
+            <h2>Instelbare variabelen</h2>
+            <h3>CSS</h3>
+            <p>Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw project. Kies en gebruik de benodigde variabelen.</p>
+            <pre>
+              <code>
+  :root {
+    /* Description-list */
+    --description-list-width: ;
+    --description-list-max-width: ;
+
+    /* Description list item */
+    --description-list-item-odd-background-color: ;
+    --description-list-item-gap: ;
+    --description-list-item-flex-direction: ;
+    --description-list-item-white-space: ;
+    --description-list-item-padding: ;
+    --description-list-border-width: ;
+    --description-list-border-style: ;
+    --description-list-border-color: ;
+
+    /* Description list item title (dt) */
+    --description-list-item-title-font-weight: ;
+    --description-list-item-title-background-color: ;
+    --description-list-item-title-text-color: ;
+    --description-list-item-title-padding: ;
+    --description-list-item-title-width: ;
+
+    /* Description list item title (dd) */
+    --description-list-item-data-background-color: ;
+    --description-list-item-data-text-color: ;
+    --description-list-item-data-padding: ;
+    --description-list-item-data-font-weight: ;
+    --description-list-item-data-width: ;
+  }
+            </code>
+          </pre>
+          </section>
         </div>
       </article>
     </main>

@@ -19,13 +19,15 @@
   --tabs-item-line-height: var(--application-base-line-height);
   --tabs-item-background-color: var(--tabs-background-color);
   --tabs-item-text-decoration: none;
+  --tabs-item-font-weight: var(--application-base-font-weight);
 
   /* List item hover */
-  --tabs-item-hover-border-width: 0 0 4px 0;
+  --tabs-item-hover-border-width: 0;
   --tabs-item-hover-border-style: solid;
   --tabs-item-hover-border-color: var(--application-base-accent-color);
   --tabs-item-hover-text-color: black;
   --tabs-item-hover-background-color: var(--tabs-item-background-color);
+  --tabs-item-hover-font-weight: var(--tabs-item-font-weight);
 
   /* List item active */
   --tabs-item-active-border-width: 0 0 4px 0;
@@ -34,6 +36,7 @@
   --tabs-item-active-text-color: black;
   --tabs-item-active-background-color: var(--tabs-item-background-color);
   --tabs-item-padding: 0.5rem 0;
+  --tabs-item-active-font-weight: bold;
 
   /* List item active hover */
   --tabs-item-active-hover-border-width: 0 0 4px 0;
@@ -41,4 +44,5 @@
   --tabs-item-active-hover-border-color: var(--application-base-accent-color);
   --tabs-item-active-hover-text-color: black;
   --tabs-item-active-hover-background-color: var(--tabs-item-background-color);
+  --tabs-item-active-hover-font-weight: var(--tabs-item-active-font-weight);
 }
