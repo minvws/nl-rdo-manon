@@ -130,7 +130,7 @@ function initExpandoButton(button) {
       button.setAttribute("aria-expanded", "true");
       button.classList.remove.apply(button.classList, iconOpenClasses);
       button.classList.add.apply(button.classList, iconCloseClasses);
-      button.parentElement.parentElement.classList.add("expanded-row")
+      button.parentElement.parentElement.classList.add("expanded-row");
       row.removeAttribute("hidden");
     } else {
       button.innerText = openLabel;
@@ -138,7 +138,7 @@ function initExpandoButton(button) {
       button.setAttribute("aria-expanded", "false");
       button.classList.remove.apply(button.classList, iconCloseClasses);
       button.classList.add.apply(button.classList, iconOpenClasses);
-      button.parentElement.parentElement.classList.remove("expanded-row")
+      button.parentElement.parentElement.classList.remove("expanded-row");
       row.setAttribute("hidden", "");
     }
   });
