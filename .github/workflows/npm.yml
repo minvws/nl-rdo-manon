@@ -16,9 +16,8 @@ jobs:
         with:
           version: 8
 
-      - name: npm audit
-        run: npm audit
-        working-directory: ./manon
+      - name: Check known security issues
+        run: pnpm audit
 
   build:
     runs-on: ubuntu-20.04
