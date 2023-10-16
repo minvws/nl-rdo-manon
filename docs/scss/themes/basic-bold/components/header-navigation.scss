@@ -1,15 +1,11 @@
 /* Header navigation */
 
 :root {
-  /* Header */
-  --header-content-wrapper-gap: 0;
-  --header-border-width: 0 0 1px 0;
-  --header-border-color: #ccc;
-
   /* Content wrapper */
   --header-content-wrapper-align-items: stretch;
-  --header-content-wrapper-padding-right: var(--page-whitespace-right);
-  --header-content-wrapper-padding-left: var(--page-whitespace-left);
+  --header-content-wrapper-padding-right: 0;
+  --header-content-wrapper-padding-left: 0;
+  --header-content-wrapper-flex-direction: column;
 
   /* Header navigation */
   --header-navigation-background-color: #fff;
@@ -17,10 +13,12 @@
   --header-navigation-max-width: 100%;
   --header-navigation-align-items: stretch;
   --header-navigation-justify-content: space-between;
+  --header-navigation-border-width: 0 0 1px 0;
+  --header-navigation-border-color: #cccccc;
 
   /* Content wrapper */
   --header-navigation-content-wrapper-gap: 0;
-  --header-navigation-content-wrapper-max-width: var(--content-max-width);
+  --header-navigation-content-wrapper-max-width: 100%;
   --header-navigation-content-wrapper-justify-content: flex-end;
 
   /* List */
