@@ -61,7 +61,10 @@ $breakpoint: 24rem !default;
 
 main div,
 main section,
-main article {
+main section > div,
+main article,
+main article > div {
+  form fieldset dl,
   form dl,
   dl {
     @extend %dl-styling;
