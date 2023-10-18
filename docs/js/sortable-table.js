@@ -16,10 +16,11 @@ function initSortableTable() {
     var sortStatus = getSortStatus(thead);
     var columnIndex = getColumnIndex(button.parentElement);
     if (columnIndex === sortStatus.columnIndex) {
-      sortStatus.direction = sortStatus.direction === 'ascending' ? 'descending' : 'ascending';
+      sortStatus.direction = sortStatus.direction === "ascending" ? "descending" : "ascending";
     } else {
       sortStatus.columnIndex = columnIndex;
-      sortStatus.direction = 'ascending';
+      sortStatus.direction = "ascending";
+      sortStatus.numeric = button.parentElement && button.parentElement.dataset.sortStrategy === "numeric";
     }
     updateSortButtons(thead, sortStatus);
     sortTableBody(tbody, sortStatus);
@@ -37,7 +38,8 @@ function getSortStatus(thead) {
   }
   return {
     columnIndex: getColumnIndex(sorted),
-    direction: sorted.getAttribute("aria-sort")
+    direction: sorted.getAttribute("aria-sort"),
+    numeric: sorted.dataset.sortStrategy === "numeric"
   }
 }
 
@@ -65,10 +67,18 @@ function updateSortButtons(thead, sortStatus) {
 
 function sortTableBody(tbody, sortStatus) {
   var cells = tbody.querySelectorAll("tr > td:nth-of-type(" + (sortStatus.columnIndex + 1) + ")");
-  var comparator = sortStatus.direction === "ascending"
-    ? function (a, b) { return ('' + a.innerText).localeCompare(b.innerText); }
-    : function (a, b) { return ('' + b.innerText).localeCompare(a.innerText); };
-  Array.prototype.slice.call(cells).sort(comparator).forEach(function (cell) {
+  Array.prototype.slice.call(cells).sort(getComparator(sortStatus)).forEach(function (cell) {
     tbody.appendChild(cell.parentNode);
   });
+}
+
+function getComparator(sortStatus) {
+  const numeric = sortStatus.numeric;
+  return sortStatus.direction === "ascending"
+    ? function(a, b) {
+        return ("" + a.innerText).localeCompare(b.innerText, undefined, { numeric: numeric });
+      }
+    : function(a, b) {
+        return ("" + b.innerText).localeCompare(a.innerText, undefined, { numeric: numeric });
+      }
 }
