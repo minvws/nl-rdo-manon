@@ -52,8 +52,8 @@ function initFilterToggle(filterToggle) {
     hideLabel = filterToggle.dataset.hideFiltersLabel || "Verberg filters";
     showLabel = filterToggle.innerText;
   }
-  ensureElementHasId(filter);
-  filterToggle.setAttribute("aria-controls", filter.id);
+  ensureElementHasId(form);
+  filterToggle.setAttribute("aria-controls", form.id);
   if (expanded) {
     filterToggle.setAttribute("aria-expanded", "true");
   } else {
