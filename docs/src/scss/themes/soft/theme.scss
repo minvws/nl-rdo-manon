@@ -1,0 +1,21 @@
+/* Theme: Soft based on manon components */
+
+/* Base - Top level styling */
+@use "application-base";
+/* Styling on the highest level */
+
+/* Styling sets. E.g color sets */
+/* Branding colors */
+@use "spot-large";
+
+/* Body set */
+@use "body-text-set";
+
+/* Headings set basic */
+@use "headings-base-set";
+
+/* Components */
+@use "breadcrumb-bar";
+@use "tile";
+@use "header-navigation";
+@use "logo";

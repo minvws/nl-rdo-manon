@@ -44,11 +44,12 @@ jobs:
       - name: Install dependencies
         run: pnpm install --ignore-scripts
 
-      - name: Build js and css
-        run: pnpm run --recursive build
+      - name: Build the documentation
+        working-directory: docs
+        run: pnpm run build
 
-      - name: Copy documentation
-        run: mkdir _site && cp -r docs/documentation docs/index.html docs/js docs/static _site/
+      - name: Copy the documentation
+        run: mv docs/build _site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2

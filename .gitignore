@@ -4,6 +4,4 @@ node_modules/
 tmp/
 *.log
 .DS_Store
-docs/static/css/main.css
-docs/static/js
 *.tgz
