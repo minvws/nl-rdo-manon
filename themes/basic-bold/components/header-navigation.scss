@@ -6,6 +6,8 @@
   --header-content-wrapper-padding-right: 0;
   --header-content-wrapper-padding-left: 0;
   --header-content-wrapper-flex-direction: column;
+  --header-navigation-padding-left: 0;
+  --header-navigation-padding-right: 0;
 
   /* Header navigation */
   --header-navigation-background-color: #fff;
@@ -13,8 +15,6 @@
   --header-navigation-max-width: 100%;
   --header-navigation-align-items: stretch;
   --header-navigation-justify-content: space-between;
-  --header-navigation-border-width: 0 0 1px 0;
-  --header-navigation-border-color: #cccccc;
 
   /* Content wrapper */
   --header-navigation-content-wrapper-gap: 0;
@@ -33,15 +33,21 @@
 
   /* Link styling */
   --header-navigation-link-text-color: var(--application-base-text-color);
-  --header-navigation-link-visited-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-visited-text-color: var(
+    --header-navigation-link-text-color
+  );
 
   /* Hover */
   --header-navigation-link-hover-border-color: #ede1c7;
-  --header-navigation-link-hover-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-hover-text-color: var(
+    --header-navigation-link-text-color
+  );
 
   /* Active link */
   --header-navigation-link-active-border-color: var(--branding-color-1);
-  --header-navigation-link-active-text-color: var(--header-navigation-link-hover-text-color);
+  --header-navigation-link-active-text-color: var(
+    --header-navigation-link-hover-text-color
+  );
   --header-navigation-link-visited-active-text-color: var(
     --header-navigation-link-hover-text-color
   );
