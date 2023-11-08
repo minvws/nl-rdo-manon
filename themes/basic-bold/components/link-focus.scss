@@ -1,0 +1,6 @@
+/* Link focus styling */
+
+:root {
+  --link-focus-text-decoration: underline;
+  --link-focus-hover-text-decoration: var(--link-focus-text-decoration);
+}
