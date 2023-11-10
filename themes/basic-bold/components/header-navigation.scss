@@ -1,13 +1,13 @@
 /* Header navigation */
 
 :root {
-  /* Content wrapper */
-  --header-content-wrapper-align-items: stretch;
-  --header-content-wrapper-padding-right: 0;
-  --header-content-wrapper-padding-left: 0;
-  --header-content-wrapper-flex-direction: column;
-  --header-navigation-padding-left: 0;
-  --header-navigation-padding-right: 0;
+  --header-navigation-padding-top: 0.5rem;
+  --header-navigation-padding-right: var(--page-whitespace-right);
+  --header-navigation-padding-bottom: 0.5rem;
+  --header-navigation-padding-left: var(--page-whitespace-right);
+  --header-navigation-border-width: 0 0 1px 0;
+  --header-navigation-border-style: solid;
+  --header-navigation-border-color: #ccc;
 
   /* Header navigation */
   --header-navigation-background-color: #fff;
@@ -16,41 +16,9 @@
   --header-navigation-align-items: stretch;
   --header-navigation-justify-content: space-between;
 
-  /* Content wrapper */
-  --header-navigation-content-wrapper-gap: 0;
-  --header-navigation-content-wrapper-max-width: 100%;
-  --header-navigation-content-wrapper-justify-content: flex-end;
-
   /* List */
   --header-navigation-list-align-content: stretch;
   --header-navigation-list-width: auto;
-
-  /* Menu items links */
-  --header-navigation-link-border-width: 4px 0 0 0;
-  --header-navigation-link-border-color: transparent;
-  --header-navigation-link-min-height: 3rem;
-  --header-navigation-link-font-size: var(--body-text-medium-font-size);
-
-  /* Link styling */
-  --header-navigation-link-text-color: var(--application-base-text-color);
-  --header-navigation-link-visited-text-color: var(
-    --header-navigation-link-text-color
-  );
-
-  /* Hover */
-  --header-navigation-link-hover-border-color: #ede1c7;
-  --header-navigation-link-hover-text-color: var(
-    --header-navigation-link-text-color
-  );
-
-  /* Active link */
-  --header-navigation-link-active-border-color: var(--branding-color-1);
-  --header-navigation-link-active-text-color: var(
-    --header-navigation-link-hover-text-color
-  );
-  --header-navigation-link-visited-active-text-color: var(
-    --header-navigation-link-hover-text-color
-  );
 
   /* Collapsed icon */
   --navigation-collapsible-menu-icon-font-size: 2rem;

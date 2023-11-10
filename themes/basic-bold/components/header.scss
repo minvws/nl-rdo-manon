@@ -2,10 +2,10 @@
 
 :root {
   --header-content-wrapper-gap: 0;
-  --header-border-width: 0 0 1px 0;
-  --header-border-color: #ccc;
-  --header-padding-top: 0.5rem;
-  --header-padding-right: var(--page-whitespace-right);
-  --header-padding-bottom: 0.5rem;
-  --header-padding-left: var(--page-whitespace-left);
+  --header-border-width: 0;
+  --header-border-color: transparent;
+  --header-padding-top: 0;
+  --header-padding-right: 0;
+  --header-padding-bottom: 0;
+  --header-padding-left: 0;
 }
