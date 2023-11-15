@@ -11,6 +11,9 @@ importers:
       '@minvws/manon':
         specifier: workspace:*
         version: link:../manon
+      '@minvws/manon-themes':
+        specifier: workspace:*
+        version: link:../themes
       '@sveltejs/adapter-static':
         specifier: ^2.0.3
         version: 2.0.3(@sveltejs/kit@1.27.6)
