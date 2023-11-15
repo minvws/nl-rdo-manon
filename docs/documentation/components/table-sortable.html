@@ -69,6 +69,7 @@
                 Voeg binnen de knop van elke sorteerbare kolom een icoon toe. Voor meer informatie zie:
                 <a href="./icons.html">Iconen</a>.
                 <ul>
+                  <li>Voeg <code>aria-hidden="true"</code> aan de <code>&lt;span></code> van het icoon, om te voorkomen dat het icoon in de toegankelijke naam van de knop opgenomen wordt.</li>
                   <li>Zorg dat de gebruikte Icoonset iconen heeft voor ongesoorteerde data, oplopend gesorteerde data en aflopend gesorteerde data.</li>
                   <li>Gebruik bij voorkeur iconen met ingevulde driehoeken, bijvoorbeeld <span class="icon icon-sortable">driehoeken omhoog en omlaag</span> voor ongesorteerd, <span class="icon icon-ascending">driehoek omhoog</span> voor oplopend gesorteerd en <span class="icon icon-descending">driehoek omlaag</span> voor aflopend gesorteerd.</li>
                 </ul>
@@ -120,19 +121,19 @@
                     <th scope="col">
                       <button>
                         Voornaam
-                        <span class="icon icon-sortable"></span>
+                        <span class="icon icon-sortable" aria-hidden="true"></span>
                       </button>
                     </th>
                     <th scope="col" abbr="Achternaam">
                       <button>
                         Achternaam (met tussenvoegsel)
-                        <span class="icon icon-sortable"></span>
+                        <span class="icon icon-sortable" aria-hidden="true"></span>
                       </button>
                     </th>
                     <th scope="col" data-sort-strategy="numeric">
                       <button>
                         Leeftijd
-                        <span class="icon icon-sortable"></span>
+                        <span class="icon icon-sortable" aria-hidden="true"></span>
                       </button>
                     </th>
                   </tr>
@@ -177,19 +178,19 @@
         &lt;th scope="col">
           &lt;button>
             Voornaam
-            &lt;span class="icon icon-sortable">&lt;/span>
+            &lt;span class="icon icon-sortable" aria-hidden="true">&lt;/span>
           &lt;/button>
         &lt;/th>
         &lt;th scope="col" abbr="Achternaam">
           &lt;button>
             Achternaam (met tussenvoegsel)
-            &lt;span class="icon icon-sortable">&lt;/span>
+            &lt;span class="icon icon-sortable" aria-hidden="true">&lt;/span>
           &lt;/button>
         &lt;/th>
         &lt;th scope="col">
           &lt;button>
             Leeftijd
-            &lt;span class="icon icon-sortable">&lt;/span>
+            &lt;span class="icon icon-sortable" aria-hidden="true">&lt;/span>
           &lt;/button>
         &lt;/th>
       &lt;/tr>
