@@ -34,7 +34,7 @@ span {
     box-sizing: border-box;
 
     @media (min-width: $breakpoint-1) {
-      gap: var(--card-gap-breakpoint-1);
+      gap: var(--card-breakpoint-1-gap);
       padding-top: var(--card-breakpoint-1-padding-top);
       padding-right: var(--card-breakpoint-1-padding-right);
       padding-bottom: var(--card-breakpoint-1-padding-bottom);
@@ -44,7 +44,7 @@ span {
     }
 
     @media (min-width: $breakpoint-2) {
-      gap: var(--card-gap-breakpoint-2);
+      gap: var(--card-breakpoint-2-gap);
       padding-top: var(--card-breakpoint-2-padding-top);
       padding-right: var(--card-breakpoint-2-padding-right);
       padding-bottom: var(--card-breakpoint-2-padding-bottom);
