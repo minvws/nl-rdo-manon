@@ -1,6 +1,7 @@
 node_modules/
 .idea/
 .vscode/
+.netlify/
 tmp/
 *.log
 .DS_Store
