@@ -19,13 +19,13 @@ $breakpoint-2: 60rem !default;
   }
 }
 
-@media (min-width: $breakpoint-1) {
+@media (width >= $breakpoint-1) {
   .column-3 {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: $breakpoint-2) {
+@media (width >= $breakpoint-2) {
   .column-3 {
     grid-template-columns: 1fr 1fr 1fr;
   }

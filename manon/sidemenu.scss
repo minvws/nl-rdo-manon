@@ -19,7 +19,7 @@ main.sidemenu {
   padding-bottom: var(--sidemenu-main-padding-bottom);
   gap: var(--sidemenu-main-gap);
 
-  @media (min-width: $sidemenu-breakpoint) {
+  @media (width >= $sidemenu-breakpoint) {
     flex-wrap: nowrap;
   }
 
@@ -31,7 +31,7 @@ main.sidemenu {
     flex-direction: column;
     box-sizing: border-box;
 
-    @media (min-width: $sidemenu-breakpoint) {
+    @media (width >= $sidemenu-breakpoint) {
       max-width: calc(100% - $page-content-width);
     }
   }
@@ -39,7 +39,7 @@ main.sidemenu {
   > nav {
     display: none;
 
-    @media (min-width: $sidemenu-breakpoint) {
+    @media (width >= $sidemenu-breakpoint) {
       /* nav */
       margin: 0;
       display: block;
@@ -131,7 +131,7 @@ main.sidemenu {
   }
 
   &.sidemenu-closed {
-    @media (min-width: $sidemenu-breakpoint) {
+    @media (width >= $sidemenu-breakpoint) {
       > nav {
         border: 0;
         width: 0;

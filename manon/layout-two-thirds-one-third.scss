@@ -24,7 +24,7 @@ $breakpoint: 42rem !default;
     padding: 0;
   }
 
-  @media (min-width: $breakpoint) {
+  @media (width >= $breakpoint) {
     gap: var(--layout-two-thirds-one-third-breakpoint-gap);
 
     > * {

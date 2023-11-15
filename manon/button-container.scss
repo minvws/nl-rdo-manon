@@ -27,7 +27,7 @@
     max-width: 100%;
   }
 
-  @media (min-width: $breakpoint) {
+  @media (width >= $breakpoint) {
     button,
     a.button,
     input[type="button"],

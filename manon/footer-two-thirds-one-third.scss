@@ -46,7 +46,7 @@ body > footer,
       padding: 0;
     }
 
-    @media (min-width: $breakpoint) {
+    @media (width >= $breakpoint) {
       gap: var(--footer-two-thirds-one-third-breakpoint-gap);
 
       > * {

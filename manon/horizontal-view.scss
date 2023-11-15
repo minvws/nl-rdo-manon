@@ -15,7 +15,7 @@ $breakpoint: 50rem !default;
   flex-wrap: wrap;
   gap: var(--horizontal-view-gap);
 
-  @media (min-width: $breakpoint) {
+  @media (width >= $breakpoint) {
     flex-wrap: nowrap;
   }
 }

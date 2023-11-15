@@ -50,7 +50,7 @@ $breakpoint: 24rem !default;
     width: var(--description-list-item-data-width);
   }
 
-  @media (min-width: $breakpoint) {
+  @media (width >= $breakpoint) {
     div {
       flex-direction: var(
         --description-list-item-flex-direction-after-breakpoint

@@ -19,7 +19,7 @@ h6 {
   hyphens: var(--max-line-length-hyphens);
   word-break: var(--max-line-length-word-break);
 
-  @media (min-width: $breakpoint) {
+  @media (width >= $breakpoint) {
     hyphens: var(--max-line-length-breakpoint-hyphens);
     word-break: var(--max-line-length-breakpoint-word-break);
   }

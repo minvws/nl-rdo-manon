@@ -34,7 +34,7 @@ form {
     border-style: var(--form-button-border-style);
     border-color: var(--form-button-border-color);
 
-    @media (min-width: $breakpoint) {
+    @media (width >= $breakpoint) {
       width: var(--form-button-after-breakpoint-width);
       min-width: var(--form-button-min-width);
     }

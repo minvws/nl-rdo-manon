@@ -54,6 +54,7 @@ ul.images-round {
 
   li {
     list-style: none;
+
     > div {
       @extend %image-round-container;
 
