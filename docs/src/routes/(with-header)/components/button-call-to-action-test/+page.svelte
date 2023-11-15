@@ -35,7 +35,7 @@
 
         <h3><code>button</code> disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button class="cta" disabled={true}>Lorem ipsum</button>
+        <button class="cta" disabled>Lorem ipsum</button>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -79,7 +79,7 @@
 
         <h3>Link als knop: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="./button-call-to-action-test" class="button cta" disabled={true}>Lorem ipsum</a>
+        <a href="./button-call-to-action-test" class="button cta" disabled>Lorem ipsum</a>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -136,7 +136,7 @@
 
         <h3><code>input type="button"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <input type="button" value="Button disabled" class="cta" disabled={true} />
+        <input type="button" value="Button disabled" class="cta" disabled />
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -174,7 +174,7 @@
 
         <h3><code>button type="submit"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button type="submit" class="cta" disabled={true}>Lorem ipsum</button>
+        <button type="submit" class="cta" disabled>Lorem ipsum</button>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -212,7 +212,7 @@
 
         <h3><code>input type="submit"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <input type="submit" value="Input" class="cta" disabled={true} />
+        <input type="submit" value="Input" class="cta" disabled />
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -236,7 +236,7 @@
 
         <h3><code>button type="reset"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button type="reset" class="cta" disabled={true}>Lorem ipsum</button>
+        <button type="reset" class="cta" disabled>Lorem ipsum</button>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -260,7 +260,7 @@
 
         <h3><code>input type="reset"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <input type="reset" value="Input" class="cta" disabled={true} />
+        <input type="reset" value="Input" class="cta" disabled />
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -284,7 +284,7 @@
 
         <h3><code>button type="reset"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <input type="reset" class="cta" disabled={true} />
+        <input type="reset" class="cta" disabled />
 
         <h4>HTML-voorbeeld:</h4>
         <Code

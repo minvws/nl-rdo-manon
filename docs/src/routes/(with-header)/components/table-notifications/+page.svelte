@@ -50,7 +50,8 @@
               <li><code>explanation</code></li>
               <li><code>primary</code></li>
             </ul>
-            Zie <a href="./notifications">Notifications</a> voor meer informatie.
+            Zie
+            <a href="./notifications">Notifications</a> voor meer informatie.
           </li>
         </ul>
       </section>

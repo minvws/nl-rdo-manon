@@ -82,7 +82,9 @@
               <ul>
                 <li>Draai een build: <code>pnpm run build</code></li>
                 <li>Het resultaat is te vinden in de folder <code>docs/build</code></li>
-                <li>Gebruik <code>pnpm preview</code> om de gebouwde documentatie lokaal in te zien</li>
+                <li>
+                  Gebruik <code>pnpm preview</code> om de gebouwde documentatie lokaal in te zien
+                </li>
               </ul>
             </li>
           </ul>

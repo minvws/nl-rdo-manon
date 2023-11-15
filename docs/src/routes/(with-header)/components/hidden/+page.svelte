@@ -53,7 +53,7 @@
 
         <div>
           <p class="hidden">Voorbeeld paragraaf 1.</p>
-          <p hidden={true}>Voorbeeld paragraaf 2.</p>
+          <p hidden>Voorbeeld paragraaf 2.</p>
           <p>Voorbeeld paragraaf 3.</p>
         </div>
 

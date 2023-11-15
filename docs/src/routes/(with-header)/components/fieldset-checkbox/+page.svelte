@@ -81,7 +81,7 @@
                   type="checkbox"
                   id="checkbox-example-required-1"
                   name="voorwaarden"
-                  required={true}
+                  required
                 />
                 <label for="checkbox-example-required-1">verplicht selectievak</label>
               </div>
@@ -117,7 +117,7 @@
                 type="checkbox"
                 id="checkbox-example-disabled"
                 name="disabled-checkbox"
-                disabled={true}
+                disabled
               />
               <label for="checkbox-example-disabled">Lorem ipsum dolor sit amet</label>
             </div>

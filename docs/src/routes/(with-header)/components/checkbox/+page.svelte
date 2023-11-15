@@ -69,12 +69,7 @@
           <div class="required">
             <span class="nota-bene">Dit veld is verplicht</span>
             <div class="checkbox">
-              <input
-                type="checkbox"
-                id="checkbox-example-required-1"
-                name="voorwaarden"
-                required={true}
-              />
+              <input type="checkbox" id="checkbox-example-required-1" name="voorwaarden" required />
               <label for="checkbox-example-required-1">verplicht selectievak</label>
             </div>
           </div>
@@ -103,7 +98,7 @@
               type="checkbox"
               id="checkbox-example-disabled"
               name="disabled-checkbox"
-              disabled={true}
+              disabled
             />
             <label for="checkbox-example-disabled">Lorem ipsum dolor sit amet</label>
           </div>

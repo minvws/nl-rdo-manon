@@ -129,7 +129,7 @@
         <form action="" method="post">
           <label for="select-required">Verplichte selectielijst</label>
           <span class="nota-bene">Dit veld is verplicht</span>
-          <select id="select-required" name="select-required" required={true}>
+          <select id="select-required" name="select-required" required>
             <option value="">--Please choose an option--</option>
             <option value="1">Optie 1</option>
             <option value="2">Optie 2</option>

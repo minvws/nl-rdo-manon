@@ -35,7 +35,7 @@
 
         <h3><code>button</code> disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button class="icon icon-cat" disabled={true}>Kat</button>
+        <button class="icon icon-cat" disabled>Kat</button>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -66,7 +66,7 @@
 
         <h3><code>button</code> met een afbeelding: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button disabled={true}>Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></button>
+        <button disabled>Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></button>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -114,7 +114,7 @@
 
         <h3>Link als knop: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="./icons-test" class="button icon icon-cat" disabled={true}>Lorem ipsum</a>
+        <a href="./icons-test" class="button icon icon-cat" disabled>Lorem ipsum</a>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -180,7 +180,7 @@
 
         <h3><code>button type="submit"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button type="submit" class="icon icon-cat" disabled={true}>Lorem ipsum</button>
+        <button type="submit" class="icon icon-cat" disabled>Lorem ipsum</button>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -221,7 +221,7 @@
 
         <h3><code>button type="reset"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button type="reset" class="icon icon-cat" disabled={true}>Lorem ipsum</button>
+        <button type="reset" class="icon icon-cat" disabled>Lorem ipsum</button>
 
         <h4>HTML-voorbeeld:</h4>
         <Code

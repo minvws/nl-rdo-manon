@@ -61,12 +61,7 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <div>
-            <input
-              type="checkbox"
-              id="checkbox-example-base"
-              name="standaard-checkbox"
-              checked={true}
-            />
+            <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" checked />
             <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
           </div>
         </form>
@@ -88,7 +83,7 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <div>
-            <input type="radio" id="radio-example-base" name="standaard-radio" checked={true} />
+            <input type="radio" id="radio-example-base" name="standaard-radio" checked />
             <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
           </div>
         </form>

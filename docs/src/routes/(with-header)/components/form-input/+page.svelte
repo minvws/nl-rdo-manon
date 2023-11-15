@@ -101,7 +101,7 @@
             placeholder="gebruikersnaam"
             title="Gebruikersnaam"
             type="text"
-            required={true}
+            required
           />
 
           <button type="submit">Verzend</button>
@@ -138,7 +138,7 @@
             placeholder="gebruikersnaam"
             title="Gebruikersnaam"
             type="text"
-            disabled={true}
+            disabled
           />
           <button type="submit">Verzend</button>
         </form>

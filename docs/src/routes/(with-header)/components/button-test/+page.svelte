@@ -35,7 +35,7 @@
 
         <h3><code>button</code> disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button disabled={true}>Lorem ipsum</button>
+        <button disabled>Lorem ipsum</button>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -79,7 +79,7 @@
 
         <h3>Link als knop: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="./button-test" class="button" disabled={true}>Lorem ipsum</a>
+        <a href="./button-test" class="button" disabled>Lorem ipsum</a>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -134,7 +134,7 @@
 
         <h3><code>input type="button"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <input type="button" value="Button disabled" disabled={true} />
+        <input type="button" value="Button disabled" disabled />
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -168,7 +168,7 @@
 
         <h3><code>button type="submit"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button type="submit" disabled={true}>Lorem ipsum</button>
+        <button type="submit" disabled>Lorem ipsum</button>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -202,7 +202,7 @@
 
         <h3><code>input type="submit"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <input type="submit" value="Input" disabled={true} />
+        <input type="submit" value="Input" disabled />
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -226,7 +226,7 @@
 
         <h3><code>button type="reset"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button type="reset" disabled={true}>Lorem ipsum</button>
+        <button type="reset" disabled>Lorem ipsum</button>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -248,7 +248,7 @@
 
         <h3><code>input type="reset"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <input type="reset" value="Input" disabled={true} />
+        <input type="reset" value="Input" disabled />
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -272,7 +272,7 @@
 
         <h3><code>button type="reset"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <input type="reset" disabled={true} />
+        <input type="reset" disabled />
 
         <h4>HTML-voorbeeld:</h4>
         <Code

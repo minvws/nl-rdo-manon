@@ -29,7 +29,7 @@
             id="file-example-base"
             name="file-example-base"
             accept=".doc, .docx, .pdf"
-            multiple={true}
+            multiple
           />
         </form>
 
@@ -54,7 +54,7 @@
               id="file-example-div"
               name="file-example-div"
               accept=".doc, .docx, .pdf"
-              multiple={true}
+              multiple
             />
           </div>
         </form>
@@ -82,7 +82,7 @@
               id="file-example-section"
               name="file-example-section"
               accept=".doc, .docx, .pdf"
-              multiple={true}
+              multiple
             />
           </section>
         </form>
@@ -111,7 +111,7 @@
               id="file-example-fieldset"
               name="file-example-fieldset"
               accept=".doc, .docx, .pdf"
-              multiple={true}
+              multiple
             />
           </fieldset>
         </form>

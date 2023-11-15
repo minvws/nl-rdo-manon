@@ -76,12 +76,7 @@
             <div class="required">
               <span class="nota-bene">Dit veld is verplicht</span>
               <div class="radio">
-                <input
-                  type="radio"
-                  id="radio-example-required-1"
-                  name="voorwaarden"
-                  required={true}
-                />
+                <input type="radio" id="radio-example-required-1" name="voorwaarden" required />
                 <label for="radio-example-required-1">verplicht Radio-selecteerknop</label>
               </div>
             </div>
@@ -112,12 +107,7 @@
           <fieldset>
             <legend>Examples</legend>
             <div class="radio">
-              <input
-                type="radio"
-                id="radio-example-disabled"
-                name="disabled-radio"
-                disabled={true}
-              />
+              <input type="radio" id="radio-example-disabled" name="disabled-radio" disabled />
               <label for="radio-example-disabled">Lorem ipsum dolor sit amet</label>
             </div>
           </fieldset>

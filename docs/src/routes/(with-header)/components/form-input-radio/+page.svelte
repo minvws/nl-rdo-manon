@@ -75,7 +75,7 @@
                 type="radio"
                 id="radio-button-example-required-1"
                 name="voorwaarden"
-                required={true}
+                required
               />
               <label for="radio-button-example-required-1">verplicht Radio-selecteerknop</label>
             </div>
@@ -106,7 +106,7 @@
               type="radio"
               id="radio-button-example-disabled"
               name="disabled-radio-button"
-              disabled={true}
+              disabled
             />
             <label for="radio-button-example-disabled">Lorem ipsum dolor sit amet</label>
           </div>

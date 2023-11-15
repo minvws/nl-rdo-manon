@@ -151,7 +151,7 @@
                 name="input-example-required"
                 placeholder="lorem ipsum"
                 type="text"
-                required={true}
+                required
               />
             </div>
           </div>
@@ -251,7 +251,7 @@
                 id="date-example-required"
                 name="voorbeeld verplicht dataveld"
                 type="date"
-                required={true}
+                required
               />
             </div>
           </div>
@@ -310,7 +310,7 @@
                 id="email-example-required"
                 name="voorbeeld-email-required"
                 type="email"
-                required={true}
+                required
               />
             </div>
           </div>
@@ -402,7 +402,7 @@
                 title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
                 type="password"
                 aria-describedby="password-example-required-message"
-                required={true}
+                required
               />
             </div>
           </div>
@@ -599,7 +599,7 @@
                 type="checkbox"
                 id="checkbox-example-required"
                 name="standaard-checkbox"
-                required={true}
+                required
               />
               <label for="checkbox-example-required">Verplicht selectievak</label>
             </div>
@@ -628,12 +628,7 @@
 
         <form action="" method="post" class="horizontal-view">
           <div class="checkbox">
-            <input
-              type="checkbox"
-              id="checkbox-example-disabled"
-              name="voorwaarden"
-              disabled={true}
-            />
+            <input type="checkbox" id="checkbox-example-disabled" name="voorwaarden" disabled />
             <label for="checkbox-example-disabled">Uitgeschakeld selectievak</label>
           </div>
         </form>
@@ -687,12 +682,7 @@
             <span class="nota-bene">Dit veld is verplicht</span>
 
             <div class="radio">
-              <input
-                type="radio"
-                id="radio-example-required"
-                name="radio verplicht"
-                required={true}
-              />
+              <input type="radio" id="radio-example-required" name="radio verplicht" required />
               <label for="radio-example-required">Verplichte radio-button</label>
             </div>
           </div>
@@ -721,12 +711,7 @@
 
         <form action="" method="post" class="horizontal-view">
           <div class="radio">
-            <input
-              type="radio"
-              id="radio-example-disabled"
-              name="radio uitgeschakeld"
-              disabled={true}
-            />
+            <input type="radio" id="radio-example-disabled" name="radio uitgeschakeld" disabled />
             <label for="radio-example-disabled">Uitgeschakelde radio-button</label>
           </div>
         </form>
@@ -946,7 +931,7 @@
                   name="voorbeeld-input-required"
                   placeholder="lorem ipsum"
                   type="text"
-                  required={true}
+                  required
                 />
               </div>
             </div>
@@ -1019,7 +1004,7 @@
                   type="checkbox"
                   id="checkbox-example-fieldset-required"
                   name="selectievak binnen fieldset"
-                  required={true}
+                  required
                 />
                 <label for="checkbox-example-fieldset-required">Verplicht selectievak</label>
               </div>
@@ -1030,7 +1015,7 @@
                 type="checkbox"
                 id="checkbox-example-disabled-fieldset"
                 name="uitgeschakeld selectievak binnen fieldset"
-                disabled={true}
+                disabled
               />
               <label for="checkbox-example-disabled-fieldset">Uitgeschakeld selectievak</label>
             </div>
@@ -1052,12 +1037,7 @@
               <span class="nota-bene">Dit veld is verplicht</span>
 
               <div class="radio">
-                <input
-                  type="radio"
-                  id="radio-example-grouped"
-                  name="standaard-radio"
-                  required={true}
-                />
+                <input type="radio" id="radio-example-grouped" name="standaard-radio" required />
                 <label for="radio-example-grouped">Verplichte radio-button</label>
               </div>
             </div>
@@ -1067,7 +1047,7 @@
                 type="radio"
                 id="radio-example-disabled-fieldset"
                 name="voorbeeld uitgeschakeld radio-button binnen fieldset"
-                disabled={true}
+                disabled
               />
               <label for="radio-example-disabled-fieldset">uitgeschakelde radio-button</label>
             </div>

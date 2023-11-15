@@ -84,7 +84,7 @@
                 placeholder="lorem ipsum"
                 type="text"
                 aria-describedby="example-input-help-required-message"
-                required={true}
+                required
               />
               <p
                 class="explanation"
@@ -146,7 +146,7 @@
                   placeholder="lorem ipsum"
                   type="text"
                   aria-describedby="example-input-help-required-message"
-                  required={true}
+                  required
                 />
                 <p
                   class="explanation"
@@ -213,7 +213,7 @@
                   placeholder="lorem ipsum"
                   type="text"
                   aria-describedby="example-input-help-required-message"
-                  required={true}
+                  required
                 />
                 <p
                   class="explanation"
@@ -282,7 +282,7 @@
                     placeholder="lorem ipsum"
                     type="text"
                     aria-describedby="example-input-help-required-message"
-                    required={true}
+                    required
                   />
                   <p
                     class="explanation"
@@ -364,7 +364,7 @@
                   placeholder="lorem ipsum"
                   type="text"
                   aria-describedby="example-input-help-required-message"
-                  required={true}
+                  required
                 />
                 <p
                   class="explanation"
@@ -389,7 +389,7 @@
                 placeholder="lorem ipsum"
                 type="text"
                 aria-describedby="example-input-help-required-message"
-                required={true}
+                required
               />
               <p
                 class="explanation"
@@ -504,7 +504,7 @@
                     placeholder="lorem ipsum"
                     type="text"
                     aria-describedby="example-input-help-required-message"
-                    required={true}
+                    required
                   />
                   <p
                     class="explanation"
@@ -529,7 +529,7 @@
                   placeholder="lorem ipsum"
                   type="text"
                   aria-describedby="example-input-help-required-message"
-                  required={true}
+                  required
                 />
                 <p
                   class="explanation"

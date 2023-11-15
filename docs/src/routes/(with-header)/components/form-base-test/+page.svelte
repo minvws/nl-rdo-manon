@@ -645,7 +645,7 @@
               type="checkbox"
               id="checkbox-example-checked-base"
               name="checked-checkbox"
-              checked={true}
+              checked
             />
             <label for="checkbox-example-checked-base">Lorem ipsum dolor sit amet</label>
           </div>
@@ -653,12 +653,7 @@
           <div class="required">
             <span class="nota-bene">Dit veld is verplicht</span>
             <div class="checkbox">
-              <input
-                type="checkbox"
-                id="checkbox-example-required"
-                name="verplicht"
-                required={true}
-              />
+              <input type="checkbox" id="checkbox-example-required" name="verplicht" required />
               <label for="checkbox-example-required">verplicht selectievak</label>
             </div>
           </div>
@@ -668,7 +663,7 @@
               type="checkbox"
               id="checkbox-example-disabled"
               name="disabled-checkbox"
-              disabled={true}
+              disabled
             />
             <label for="checkbox-example-disabled">Lorem ipsum dolor sit amet</label>
           </div>
@@ -697,7 +692,7 @@
                 type="checkbox"
                 id="checkbox-example-required-with-error"
                 name="verplicht"
-                required={true}
+                required
               />
               <label for="checkbox-example-required-with-error"
                 >verplicht selectievak met notificatie</label
@@ -747,7 +742,7 @@
               id="radio-example-checked-1"
               name="standaard-radiobutton"
               value="value"
-              checked={true}
+              checked
             />
             <label for="radio-example-checked-1">Lorem ipsum dolor sit amet</label>
           </div>
@@ -759,7 +754,7 @@
                 id="radio-example-checked-1-notification"
                 name="standaard-radiobutton"
                 value="value"
-                checked={true}
+                checked
               />
               <label for="radio-example-checked-1-notification">Lorem ipsum dolor sit amet</label>
             </div>
@@ -771,12 +766,7 @@
           <div>
             <span class="nota-bene">Dit veld is verplicht</span>
             <div class="radio">
-              <input
-                type="radio"
-                id="radio-example-required-1"
-                name="voorwaarden"
-                required={true}
-              />
+              <input type="radio" id="radio-example-required-1" name="voorwaarden" required />
               <label for="radio-example-required-1">Dit veld is verplicht</label>
             </div>
           </div>
@@ -787,7 +777,7 @@
               id="radio-example-disabled-1"
               name="disabled-radiobutton"
               value="value"
-              disabled={true}
+              disabled
             />
             <label for="radio-example-disabled-1">Uitgeschakeld keuzevak</label>
           </div>
@@ -943,7 +933,7 @@
 
           <label for="select-required-1">Verplichte selectielijst</label>
           <span class="nota-bene">Dit veld is verplicht</span>
-          <select id="select-required-1" name="select-required-1" required={true}>
+          <select id="select-required-1" name="select-required-1" required>
             <option value="">--Please choose an option--</option>
             <option value="1">Optie 1</option>
             <option value="2">Optie 2</option>
@@ -951,7 +941,7 @@
           </select>
 
           <label for="select-disabled-1">Uitgeschakelde selectielijst</label>
-          <select disabled={true} id="select-disabled-1" name="select-disabled-1">
+          <select disabled id="select-disabled-1" name="select-disabled-1">
             <option value="1">Optie 1</option>
             <option value="2">Optie 2</option>
             <option value="3">Optie 3</option>
@@ -961,7 +951,7 @@
           <select id="select-selected-1" name="select-selected-1">
             <option value="1">Optie 1</option>
             <option value="3">Optie 2</option>
-            <option value="2" selected={true}>Voorgeselecteerd</option>
+            <option value="2" selected>Voorgeselecteerd</option>
           </select>
 
           <label for="select-error">Selectielijst met foutmelding</label>
@@ -1037,7 +1027,7 @@
           <select
             id="select-multiple-1"
             name="select-multiple-1"
-            multiple={true}
+            multiple
             aria-describedby="select-multiple-1-message"
           >
             <option value="1">Optie 1</option>
@@ -1067,7 +1057,7 @@
           <select
             id="select-mulitple-size-1"
             name="select-mulitple-size-1"
-            multiple={true}
+            multiple
             size="3"
             aria-describedby="select-mulitple-size-1-message"
           >
@@ -1201,7 +1191,7 @@
                 placeholder="gebruikersnaam"
                 title="Gebruikersnaam"
                 type="text"
-                required={true}
+                required
               />
             </div>
           </div>
@@ -1239,7 +1229,7 @@
               type="checkbox"
               id="checkbox-example-checked-2"
               name="checked-checkbox"
-              checked={true}
+              checked
             />
             <label for="checkbox-example-checked-2">Lorem ipsum dolor sit amet</label>
           </div>
@@ -1247,12 +1237,7 @@
           <div class="option-group required">
             <span class="nota-bene">Dit veld is verplicht</span>
             <div class="checkbox">
-              <input
-                type="checkbox"
-                id="checkbox-example-required-2"
-                name="voorwaarden"
-                required={true}
-              />
+              <input type="checkbox" id="checkbox-example-required-2" name="voorwaarden" required />
               <label for="checkbox-example-required-2">verplicht selectievak</label>
             </div>
           </div>
@@ -1263,7 +1248,7 @@
               id="checkbox-example-disabled-2"
               name="voorwaarden"
               value="disabled checkbox input"
-              disabled={true}
+              disabled
             />
             <label for="checkbox-example-disabled-2">Uitgeschakeld selectievak</label>
           </div>
@@ -1333,7 +1318,7 @@
               id="radio-example-default-2"
               name="standaard-radiobutton"
               value="value"
-              checked={true}
+              checked
             />
             <label for="radio-example-default-2">Lorem ipsum dolor sit amet</label>
           </div>
@@ -1345,7 +1330,7 @@
                 type="radio"
                 id="radio-example-required-2"
                 name="verplichte-radiobutton"
-                required={true}
+                required
               />
               <label for="radio-example-required-2">verplicht keuzeveld</label>
             </div>
@@ -1357,7 +1342,7 @@
               id="radio-example-disabled-2"
               name="disabled-radiobutton"
               value="value"
-              disabled={true}
+              disabled
             />
             <label for="radio-example-disabled-2">Uitgeschakeld keuzevak</label>
           </div>
@@ -1407,7 +1392,7 @@
                 name="text-form-username-1"
                 pattern={"^[a-zA-Z0-9_.-]*$"}
                 placeholder="gebruikersnaam"
-                required={true}
+                required
                 title="Gebruikersnaam mag alleen alfanumerieke tekens (letters A-Z, cijfers 0-9) bevatten, met uitzondering van onderstrepingstekens."
                 type="text"
               />
@@ -1513,7 +1498,7 @@
                 type="checkbox"
                 id="checkbox-example-required-3"
                 name="voorwaarden"
-                required={true}
+                required
                 aria-invalid="true"
                 aria-describedby="checkbox-example-required-3-message"
               />
@@ -1556,11 +1541,7 @@
             <div>
               <span class="nota-bene">Dit veld is verplicht</span>
               <div>
-                <select
-                  id="required_single_select-1"
-                  name="required_single_select-1"
-                  required={true}
-                >
+                <select id="required_single_select-1" name="required_single_select-1" required>
                   <option value="">--Please choose an option--</option>
                   <option value="1">Optie 1</option>
                   <option value="2">Optie 2</option>
@@ -1573,7 +1554,7 @@
           <div>
             <label for="disabled_single_select-1">Disabled single select</label>
             <div>
-              <select disabled={true} id="disabled_single_select-1" name="disabled_single_select-1">
+              <select disabled id="disabled_single_select-1" name="disabled_single_select-1">
                 <option value="1">Optie 1</option>
                 <option value="2">Optie 2</option>
                 <option value="3">Optie 3</option>
@@ -1604,7 +1585,7 @@
               <select
                 id="select-multiple-2"
                 name="select-multiple-2"
-                multiple={true}
+                multiple
                 aria-describedby="select-multiple-2-message"
               >
                 <option value="1">Optie 1</option>
@@ -1638,7 +1619,7 @@
               <select
                 id="select-mulitple-size-2"
                 name="select-mulitple-size-2"
-                multiple={true}
+                multiple
                 size="3"
                 aria-describedby="select-mulitple-size-2-message"
               >
@@ -1810,7 +1791,7 @@
                 type="checkbox"
                 id="checkbox-example-checked-3"
                 name="checked-checkbox"
-                checked={true}
+                checked
               />
               <label for="checkbox-example-checked-3">Geselecteerd selectievak</label>
             </div>
@@ -1822,7 +1803,7 @@
                   type="checkbox"
                   id="checkbox-example-required-4"
                   name="voorwaarden"
-                  required={true}
+                  required
                 />
                 <label for="checkbox-example-required-4">verplicht selectievak</label>
               </div>
@@ -1834,7 +1815,7 @@
                 id="checkbox-example-disabled-3"
                 name="voorwaarden"
                 value="disabled checkbox input"
-                disabled={true}
+                disabled
               />
               <label for="checkbox-example-disabled-3">Uitgeschakeld selectievak</label>
             </div>
@@ -1889,19 +1870,14 @@
                 id="radio-example-checked-2"
                 name="standaard-radiobutton"
                 value="value"
-                checked={true}
+                checked
               />
               <label for="radio-example-checked-2">Lorem ipsum dolor sit amet</label>
             </div>
 
             <div class="radio required">
               <span class="nota-bene">Dit veld is verplicht</span>
-              <input
-                type="radio"
-                id="radio-example-required-3"
-                name="voorwaarden"
-                required={true}
-              />
+              <input type="radio" id="radio-example-required-3" name="voorwaarden" required />
               <label for="radio-example-required-3">Dit veld is verplicht</label>
             </div>
 
@@ -1911,7 +1887,7 @@
                 id="radio-example-disabled-3"
                 name="disabled-radiobutton"
                 value="value"
-                disabled={true}
+                disabled
               />
               <label for="radio-example-disabled-3">Uitgeschakeld keuzevak</label>
             </div>
@@ -2018,7 +1994,7 @@
 
             <label for="select-required-2">Verplichte selectielijst</label>
             <span class="nota-bene">Dit veld is verplicht</span>
-            <select id="select-required-2" name="select-required-2" required={true}>
+            <select id="select-required-2" name="select-required-2" required>
               <option value="">--Please choose an option--</option>
               <option value="1">Optie 1</option>
               <option value="2">Optie 2</option>
@@ -2026,7 +2002,7 @@
             </select>
 
             <label for="select-disabled-2">Uitgeschakelde selectielijst</label>
-            <select disabled={true} id="select-disabled-2" name="select-disabled-2">
+            <select disabled id="select-disabled-2" name="select-disabled-2">
               <option value="1">Optie 1</option>
               <option value="2">Optie 2</option>
               <option value="3">Optie 3</option>
@@ -2036,7 +2012,7 @@
             <select id="select-selected-2" name="select-selected-2">
               <option value="1">Optie 1</option>
               <option value="3">Optie 2</option>
-              <option value="2" selected={true}>Voorgeselecteerd</option>
+              <option value="2" selected>Voorgeselecteerd</option>
             </select>
 
             <label for="select-optgroup-3">Gegroepeerde opties</label>
@@ -2167,7 +2143,7 @@
                   placeholder="gebruikersnaam"
                   title="Gebruikersnaam"
                   type="text"
-                  required={true}
+                  required
                 />
               </div>
             </div>
@@ -2186,7 +2162,7 @@
                   placeholder="gebruikersnaam"
                   title="Gebruikersnaam"
                   type="text"
-                  required={true}
+                  required
                 />
               </div>
             </div>
@@ -2203,7 +2179,7 @@
                     placeholder="gebruikersnaam"
                     title="Gebruikersnaam"
                     type="text"
-                    required={true}
+                    required
                   />
                 </div>
               </div>
@@ -2249,7 +2225,7 @@
                 type="checkbox"
                 id="checkbox-example-checked-4"
                 name="checked-checkbox"
-                checked={true}
+                checked
               />
               <label for="checkbox-example-checked-4">Lorem ipsum dolor sit amet</label>
             </div>
@@ -2261,7 +2237,7 @@
                   type="checkbox"
                   id="checkbox-example-required-5"
                   name="voorwaarden"
-                  required={true}
+                  required
                 />
                 <label for="checkbox-example-required-5">verplicht selectievak</label>
               </div>
@@ -2273,7 +2249,7 @@
                 id="checkbox-example-disabled-4"
                 name="voorwaarden"
                 value="disabled checkbox input"
-                disabled={true}
+                disabled
               />
               <label for="checkbox-example-disabled-4">Uitgeschakeld selectievak</label>
             </div>
@@ -2318,7 +2294,7 @@
                   id="radio-example-default-4"
                   name="standaard-radiobutton"
                   value="value"
-                  checked={true}
+                  checked
                 />
                 <label for="radio-example-default-4">Lorem ipsum dolor sit amet</label>
               </div>
@@ -2330,7 +2306,7 @@
                     type="radio"
                     id="radio-example-required-4"
                     name="verplichte-radiobutton"
-                    required={true}
+                    required
                   />
                   <label for="radio-example-required-4">verplicht keuzeveld</label>
                 </div>
@@ -2342,7 +2318,7 @@
                   id="radio-example-disabled-4"
                   name="disabled-radiobutton"
                   value="value"
-                  disabled={true}
+                  disabled
                 />
                 <label for="radio-example-disabled-4">Uitgeschakeld keuzevak</label>
               </div>
@@ -2412,7 +2388,7 @@
                   pattern={"^[a-zA-Z0-9_.-]*$"}
                   placeholder="gebruikersnaam"
                   aria-describedby="text-form-username-3-message"
-                  required={true}
+                  required
                   type="text"
                 />
 
@@ -2532,7 +2508,7 @@
                   type="checkbox"
                   id="checkbox-example-required-6"
                   name="voorwaarden"
-                  required={true}
+                  required
                   aria-describedby="checkbox-example-required-6-message"
                   aria-invalid="true"
                 />
@@ -2562,11 +2538,7 @@
               <div>
                 <span class="nota-bene">Dit veld is verplicht</span>
                 <div>
-                  <select
-                    id="required_single_select-2"
-                    name="required_single_select-2"
-                    required={true}
-                  >
+                  <select id="required_single_select-2" name="required_single_select-2" required>
                     <option value="">--Please choose an option--</option>
                     <option value="1">Optie 1</option>
                     <option value="2">Optie 2</option>
@@ -2579,11 +2551,7 @@
             <div>
               <label for="disabled_single_select-2">Disabled single select</label>
               <div>
-                <select
-                  disabled={true}
-                  id="disabled_single_select-2"
-                  name="disabled_single_select-2"
-                >
+                <select disabled id="disabled_single_select-2" name="disabled_single_select-2">
                   <option value="1">Optie 1</option>
                   <option value="2">Optie 2</option>
                   <option value="3">Optie 3</option>
@@ -2614,7 +2582,7 @@
                 <select
                   id="select-multiple"
                   name="select-multiple"
-                  multiple={true}
+                  multiple
                   aria-describedby="select-multiple-message"
                 >
                   <option value="1">Optie 1</option>
@@ -2648,7 +2616,7 @@
                 <select
                   id="select-mulitple-size-3"
                   name="select-mulitple-size-3"
-                  multiple={true}
+                  multiple
                   size="3"
                   aria-describedby="select-mulitple-size-3-message"
                 >

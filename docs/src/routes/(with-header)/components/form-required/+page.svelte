@@ -66,7 +66,7 @@
                 name="voorbeeld-input-required"
                 placeholder="lorem ipsum"
                 type="text"
-                required={true}
+                required
               />
             </div>
           </div>

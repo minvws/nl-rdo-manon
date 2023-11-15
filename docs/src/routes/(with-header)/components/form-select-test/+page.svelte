@@ -267,7 +267,7 @@
         <form action="" method="post">
           <label for="select-required">Verplichte selectielijst</label>
           <span class="nota-bene">Dit veld is verplicht</span>
-          <select id="select-required" name="select-required" required={true}>
+          <select id="select-required" name="select-required" required>
             <option value="">--Please choose an option--</option>
             <option value="1">Optie 1</option>
             <option value="2">Optie 2</option>
@@ -301,7 +301,7 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <label for="select-disabled-1">Uitgeschakelde selectielijst</label>
-          <select disabled={true} id="select-disabled-1" name="select-disabled-1">
+          <select disabled id="select-disabled-1" name="select-disabled-1">
             <option value="1">Optie 1</option>
             <option value="2">Optie 2</option>
             <option value="3">Optie 3</option>
@@ -335,7 +335,7 @@
           <select id="select-selected-1" name="select-selected-1">
             <option value="1">Optie 1</option>
             <option value="2">Optie 2</option>
-            <option value="Voorgeselecteerd" selected={true}>Voorgeselecteerd</option>
+            <option value="Voorgeselecteerd" selected>Voorgeselecteerd</option>
           </select>
 
           <button type="submit">Verzend</button>

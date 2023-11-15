@@ -32,7 +32,7 @@
               name="voorbeeld-input-required"
               placeholder="lorem ipsum"
               type="text"
-              required={true}
+              required
             />
           </div>
           <button type="submit">Verzend</button>
@@ -48,7 +48,7 @@
                 name="voorbeeld-input-required"
                 placeholder="lorem ipsum"
                 type="text"
-                required={true}
+                required
               />
             </div>
           </div>
@@ -65,7 +65,7 @@
                 name="voorbeeld-input-required"
                 placeholder="lorem ipsum"
                 type="text"
-                required={true}
+                required
               />
             </div>
           </div>
@@ -102,7 +102,7 @@
                 name="voorbeeld-input-required"
                 placeholder="lorem ipsum"
                 type="text"
-                required={true}
+                required
               />
             </div>
           </div>

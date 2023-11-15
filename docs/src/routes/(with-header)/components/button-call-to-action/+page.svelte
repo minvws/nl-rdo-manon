@@ -41,7 +41,7 @@
         <h2><code>button</code> uitgeschakeld</h2>
         <h3>Visuele weergave:</h3>
 
-        <button class="cta" disabled={true}>Lorem ipsum</button>
+        <button class="cta" disabled>Lorem ipsum</button>
 
         <h3>HTML-voorbeeld:</h3>
         <Code
@@ -69,7 +69,7 @@
         <h2><code>input type="button"</code> uitgeschakeld</h2>
         <h3>Visuele weergave:</h3>
 
-        <input type="button" value="Lorem ipsum" class="cta" disabled={true} />
+        <input type="button" value="Lorem ipsum" class="cta" disabled />
 
         <h3>HTML-voorbeeld:</h3>
         <Code

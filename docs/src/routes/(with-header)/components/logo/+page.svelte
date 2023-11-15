@@ -21,7 +21,11 @@
         <h2>Voorbeelden</h2>
         <h3>Visuele voorbeeld:</h3>
 
-        <a href="./logo" class="logo" aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam">
+        <a
+          href="./logo"
+          class="logo"
+          aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam"
+        >
           <img src="$img/logo.svg" alt="Logo bedrijfs- of product-naam" />
           Bedrijfs- of product-naam
         </a>

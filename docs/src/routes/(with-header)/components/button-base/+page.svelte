@@ -31,7 +31,7 @@
         <h2><code>button</code> uitgeschakeld</h2>
         <h3>Visuele weergave:</h3>
 
-        <button disabled={true}>Lorem ipsum</button>
+        <button disabled>Lorem ipsum</button>
 
         <h3>HTML-voorbeeld:</h3>
         <Code
@@ -59,7 +59,7 @@
         <h2><code>input type="button"</code> uitgeschakeld</h2>
         <h3>Visuele weergave:</h3>
 
-        <input type="button" value="Lorem ipsum" disabled={true} />
+        <input type="button" value="Lorem ipsum" disabled />
 
         <h3>HTML-voorbeeld:</h3>
         <Code
