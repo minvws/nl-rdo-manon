@@ -1,7 +1,9 @@
 <script>
   import "$scss/main.scss";
   import { onMount } from "svelte";
-  onMount(() => import("$lib/manon.js"));
+  import { initManon } from "$lib/manon.js";
+
+  onMount(initManon);
 </script>
 
 <svelte:head>
