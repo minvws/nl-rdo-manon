@@ -26,7 +26,7 @@ export function initCollapsible() {
 }
 
 /** @deprecated */
-export { initCollapsible as initNavigation }
+export { initCollapsible as initNavigation };
 
 /**
  * @param {HTMLElement} collapsibleElement
