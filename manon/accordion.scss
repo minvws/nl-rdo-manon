@@ -44,6 +44,7 @@
 ul.accordion {
   padding-left: 0;
   width: 100%;
+
   @extend %accordion;
 
   > li {
