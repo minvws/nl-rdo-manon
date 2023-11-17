@@ -92,7 +92,6 @@
   gap: var(--pagination-list-gap);
 
   li {
-    margin-top: -0.1rem; /* fix for render issue; white space between this li and the parent ul border */
     padding: 0;
     list-style: none;
     display: flex;
