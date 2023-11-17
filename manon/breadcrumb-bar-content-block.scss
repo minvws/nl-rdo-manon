@@ -43,7 +43,7 @@
         list-style: none;
         gap: var(--breadcrumb-bar-content-block-list-item-gap);
 
-        &:after {
+        &::after {
           content: var(--breadcrumb-bar-content-block-icon);
           font-family: var(--breadcrumb-bar-icon-font-family);
           margin-left: var(--breadcrumb-bar-content-block-icon-margin-left);
@@ -53,7 +53,7 @@
         &:hover {
           color: var(--breadcrumb-bar-content-block-hover-text-color);
 
-          &:after {
+          &::after {
             color: var(--breadcrumb-bar-content-block-text-color);
           }
         }
@@ -63,7 +63,7 @@
             --breadcrumb-bar-content-block-list-item-last-child-font-weight
           );
 
-          &:after {
+          &::after {
             content: none;
           }
         }
@@ -80,7 +80,7 @@
             );
           }
 
-          &:before {
+          &::before {
             content: none;
           }
         }

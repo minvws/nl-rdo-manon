@@ -92,13 +92,13 @@ section.accordion {
   .accordion {
     button[aria-expanded="false"] {
       /* Open icon */
-      &:before {
+      &::before {
         content: var(--accordion-button-icon-before-open-content, none);
         font-family: var(--accordion-button-icon-font-family, inherit);
         font-size: var(--accordion-button-icon-before-font-size);
       }
 
-      &:after {
+      &::after {
         content: var(--accordion-button-icon-after-open-content, none);
         font-family: var(--accordion-button-icon-font-family, inherit);
         font-size: var(--accordion-button-icon-after-font-size);
@@ -113,7 +113,7 @@ section.accordion {
     /* The expanded state */
     button[aria-expanded="true"] {
       /* Close icon */
-      &:before {
+      &::before {
         content: var(--accordion-button-icon-before-close-content, none);
         font-family: var(--accordion-button-icon-font-family, inherit);
         font-size: var(--accordion-button-icon-before-font-size);
@@ -121,7 +121,7 @@ section.accordion {
         white-space: var(--accordion-button-icon-before-white-space);
       }
 
-      &:after {
+      &::after {
         content: var(--accordion-button-icon-after-close-content, none);
         font-family: var(--accordion-button-icon-font-family, inherit);
         font-size: var(--accordion-button-icon-after-font-size);

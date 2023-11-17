@@ -78,7 +78,7 @@ body > header nav .language-selector,
       min-width: var(--language-selector-list-button-min-width);
       max-width: var(--language-selector-list-button-max-width);
 
-      &:after {
+      &::after {
         content: var(--language-selector-list-button-icon);
         font-family: var(--language-selector-list-button-icon-font-family);
         margin-left: var(--language-selector-list-button-icon-margin-left);
@@ -88,13 +88,13 @@ body > header nav .language-selector,
     }
 
     &[aria-expanded="true"] > button {
-      &:after {
+      &::after {
         content: var(--language-selector-list-closed-button-icon);
       }
     }
 
     &[aria-expanded="false"] > button {
-      &:after {
+      &::after {
         content: var(--language-selector-list-open-button-icon);
       }
     }

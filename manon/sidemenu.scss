@@ -110,7 +110,7 @@ main.sidemenu {
         top: var(--sidemenu-button-margin-top);
         z-index: 2;
 
-        &:before {
+        &::before {
           @include icon.icon;
           content: var(--sidemenu-expanded-button-icon);
           font-family: var(--sidemenu-button-icon-font-family);
@@ -122,7 +122,7 @@ main.sidemenu {
         }
 
         &[aria-expanded="false"] {
-          &:before {
+          &::before {
             content: var(--sidemenu-collapsed-button-icon);
           }
         }

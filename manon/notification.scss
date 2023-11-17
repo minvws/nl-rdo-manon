@@ -16,7 +16,7 @@
     &:visited {
       color: var(--notification-link-visited-text-color);
 
-      &:before {
+      &::before {
         color: inherit;
       }
     }
@@ -45,7 +45,7 @@ div {
   &.explanation,
   &.confirmation,
   &.system {
-    &:before {
+    &::before {
       @include icon.icon;
       font-family: var(--notification-icon-font-family);
       font-size: var(--notification-icon-font-size);

@@ -78,7 +78,7 @@ body > footer,
     color: var(--footer-two-thirds-one-third-link-text-color, inherit);
     text-decoration: var(--footer-two-thirds-one-third-link-text-decoration);
 
-    &:before,
+    &::before,
     &:hover {
       color: var(--footer-two-thirds-one-third-link-hover-text-color);
     }

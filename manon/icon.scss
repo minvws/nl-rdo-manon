@@ -9,8 +9,8 @@
   font-style: normal;
   font-size: 0;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     font-family: var(--icon-font-family);
     font-size: var(--icon-font-size);
   }
