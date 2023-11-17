@@ -30,7 +30,6 @@ form.horizontal-view {
     margin: 0;
 
     &.checkbox {
-      gap: var(--form-checkbox-margin-right);
       margin: 0;
       gap: var(--checkbox-gap);
       flex-wrap: nowrap;
