@@ -34,7 +34,7 @@ input[type="reset"] {
   border-color: var(--button-base-border-color);
   border-radius: var(--button-base-border-radius);
   /* Reset ios button styling */
-  webkit-border-radius: var(--button-base-border-radius);
+  -webkit-border-radius: var(--button-base-border-radius);
   /* Reset ios button styling */
   -webkit-appearance: var(--button-base-webkit-appearance);
 
