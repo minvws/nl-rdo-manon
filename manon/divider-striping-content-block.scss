@@ -13,13 +13,7 @@ main {
       border-color: var(--divider-striping-content-block-border-color);
       background-color: var(--divider-striping-content-block-background-color);
     }
-  }
-}
 
-main {
-  > section,
-  > article,
-  > div {
     > div {
       > *:nth-child(even) {
         border-width: var(--divider-striping-content-block-border-width);

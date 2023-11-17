@@ -31,6 +31,19 @@ body > header nav .language-selector,
     ul li {
       display: block;
     }
+
+    ul {
+      position: absolute;
+
+      li {
+        /* Selected language */
+        &[aria-current="true"] {
+          a {
+            cursor: default;
+          }
+        }
+      }
+    }
   }
 
   /* Hide option list */
@@ -194,21 +207,6 @@ body > header nav .language-selector,
         font-weight: var(--language-selector-list-item-active-font-weight);
         font-family: inherit;
         cursor: pointer;
-      }
-    }
-  }
-
-  div[aria-expanded="true"] {
-    ul {
-      position: absolute;
-
-      li {
-        /* Selected language */
-        &[aria-current="true"] {
-          a {
-            cursor: default;
-          }
-        }
       }
     }
   }
