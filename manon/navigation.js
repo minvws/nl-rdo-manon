@@ -68,7 +68,7 @@ function createMenuButton(ul, openLabel, closeLabel) {
 
   var label = document.createElement("span");
   label.innerText = openLabel;
-  label.className = "sr-only";
+  label.className = "visually-hidden";
   ensureElementHasId(label);
 
   button.appendChild(label);
