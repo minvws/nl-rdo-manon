@@ -6,6 +6,7 @@
 
 $sidemenu-breakpoint: 55rem !default;
 
+body.sidemenu,
 main.sidemenu {
   $page-content-width: calc(
     var(--sidemenu-nav-width) + var(--sidemenu-main-gap)
@@ -152,4 +153,9 @@ main.sidemenu {
       }
     }
   }
+}
+
+/* Use to set the width of the page content. */
+.page-content {
+  width: 100%;
 }
