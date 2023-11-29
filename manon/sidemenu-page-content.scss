@@ -1,0 +1,13 @@
+/*---------------------------------------------------------------*/
+/*----------------------- sidemenu.scss -------------------------*/
+/*---------------------------------------------------------------*/
+
+/* Use to set the width of the page-content based 
+on the html structure without adding a class. */
+
+body.sidemenu,
+main.sidemenu {
+  > nav + * {
+    width: 100%;
+  }
+}
