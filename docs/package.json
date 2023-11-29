@@ -5,16 +5,17 @@
   },
   "scripts": {
     "build": "npm run build:css && npm run build:js",
-    "build:css": "sass scss/main.scss:static/css/main.css --no-source-map --load-path=node_modules/",
+    "build:css": "sass --no-source-map --load-path=node_modules/ scss/main.scss:static/css/main.css",
     "build:js": "esbuild --bundle js/manon.js --outfile=static/js/manon.js",
     "watch": "concurrently \"npm run watch:css\" \"npm run watch:js\"",
-    "watch:css": "sass scss/main.scss:static/css/main.css --no-source-map --load-path=node_modules/ --watch",
+    "watch:css": "sass --no-source-map --load-path=node_modules/ --watch scss/main.scss:static/css/main.css",
     "watch:js": "esbuild --bundle js/manon.js --outfile=static/js/manon.js --watch",
     "clean": "rimraf static/css static/js",
     "format": "prettier --write ."
   },
   "devDependencies": {
     "@minvws/manon": "workspace:*",
+    "@minvws/manon-themes": "workspace:*",
     "concurrently": "^7.6.0",
     "esbuild": "^0.14.54",
     "prettier": "^2.8.8",
