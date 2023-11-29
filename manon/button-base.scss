@@ -56,7 +56,7 @@ input[type="reset"] {
   &.hover {
     background-color: var(--button-base-hover-background-color);
     color: var(--button-base-hover-text-color);
-    border-color: var(--button-base-hover-background-color);
+    border-color: var(--button-base-hover-border-color);
   }
 
   &:active,

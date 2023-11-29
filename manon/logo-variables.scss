@@ -6,11 +6,30 @@
   --logo-width: 3rem;
   --logo-height: 3rem;
   --logo-background-color: transparent;
-  --logo-padding: 0.5rem;
+  --logo-padding: 0;
   --logo-border-radius: 0;
   --logo-margin: 0.5rem 0;
+  --logo-display: flex;
+  --logo-flex-direction: row;
+  --logo-justify-content: center;
+  --logo-align-items: flex-start;
+  --logo-gap: 0.5rem;
+
+  /* Logo text */
+  --logo-font-size: 0;
+  --logo-font-weight: initial;
+  --logo-white-space: initial;
+  --logo-text-color: var(--application-base-text-color);
+
+  /* Hover */
+  --logo-hover-text-color: var(--logo-text-color);
 
   /* Logo image */
   --logo-img-object-position: center;
   --logo-img-object-fit: contain;
+  --logo-img-width: var(--logo-width);
+  --logo-img-height: var(--logo-height);
+  --logo-img-border-radius: 0;
+  --logo-img-background-color: transparent;
+  --logo-img-padding: 0.5rem;
 }
