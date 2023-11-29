@@ -10,6 +10,14 @@ body > header,
 .page-header,
 %header-navigation-style {
   nav {
+    a.button {
+      &:visited,
+        /* Testing purposes */
+      &.visited {
+        @include link.link-and-icon-styling("header-navigation-button-");
+      }
+    }
+
     button,
     a.button,
     input[type="button"],

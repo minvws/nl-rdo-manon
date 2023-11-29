@@ -86,6 +86,9 @@
                 informatie over zie:
                 <a href="./forms.html">Formulieren</a>.
               </li>
+              <li>
+                Geef het formulier met <code>aria-label</code> een korte toegankelijke naam.
+              </li>
             </ol>
 
             <h2>Optioneel:</h2>
@@ -93,6 +96,9 @@
               <li>
                 Voeg een <code>&lt;div></code> met extra informatie toe, bijvoorbeeld de hoeveelheid
                 beschikbare resultaten.
+              </li>
+              <li>
+                Als het formulier een heading heeft, is het mogelijk om die te gebruiken als toegankelijke naam. Geef de heading dan een <code>id</code> en verwijs daarnaar op het formulier met <code>aria-labelledby</code>. Laat in dit geval <code>aria-label</code> weg.
               </li>
               <li>
                 Voeg de optie tot het in- en uit-klappen van de filters toe.
@@ -139,7 +145,7 @@
                 <p><span>5.254</span> nieuwsberichten</p>
                 <button data-show-filters-label="Toon filters">Verberg filters</button>
               </div>
-              <form action="" method="post" class="horizontal-view help">
+              <form aria-label="Filters" action="" method="post" class="horizontal-view help">
                 <fieldset>
                   <legend>Filter op datum</legend>
                   <div>
@@ -221,7 +227,7 @@
       Verberg filters
     &lt;/button>
   &lt;/div>
-  &lt;form action="" method="post" class="horizontal-view help">
+  &lt;form aria-label="Filters" action="" method="post" class="horizontal-view help">
     &lt;fieldset>
       &lt;legend>Filter op datum&lt;/legend>
       &lt;div>
@@ -285,7 +291,7 @@
       Toon filters
     &lt;/button>
   &lt;/div>
-  &lt;form action="" method="post">
+  &lt;form aria-label="Filters" action="" method="post">
     &lt;fieldset>
       &lt;legend>Filteropties&lt;/legend>
       &lt;!-- Voeg de opties van het filter toe -->

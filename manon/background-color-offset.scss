@@ -6,4 +6,17 @@
 .background-color-offset {
   background-color: var(--background-color-offset-background-color);
   color: var(--background-color-offset-text-color);
+  margin-top: var(--background-color-offset-margin-top);
+  margin-bottom: var(--background-color-offset-margin-bottom);
+  padding-top: var(--background-color-offset-padding-top);
+  padding-bottom: var(--background-color-offset-padding-bottom);
+
+  > div {
+    margin-top: var(--background-color-offset-content-wrapper-margin-top);
+    margin-bottom: var(--background-color-offset-content-wrapper-margin-bottom);
+    padding-top: var(--background-color-offset-content-wrapper-padding-top);
+    padding-bottom: var(
+      --background-color-offset-content-wrapper-padding-bottom
+    );
+  }
 }
