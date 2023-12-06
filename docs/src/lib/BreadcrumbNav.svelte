@@ -2,11 +2,7 @@
   import { page } from "$app/stores";
   import { getBreadcrumbs } from "$lib/breadcrumbs.js";
   import NavLink from "./NavLink.svelte";
-
-  /** @type {import('./types').BreadcrumbNames} */
-  export let breadcrumbNames = {};
-
-  $: breadcrumbs = getBreadcrumbs($page.route.id, breadcrumbNames);
+  $: breadcrumbs = getBreadcrumbs($page.route.id, $page.data.breadcrumbNames);
 </script>
 
 {#if breadcrumbs.length > 1}

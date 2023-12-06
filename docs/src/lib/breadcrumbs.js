@@ -20,7 +20,7 @@ export function getBreadcrumbs(routeId, breadcrumbNames) {
 /**
  * @return {Promise<import('./types').BreadcrumbNames>}
  */
-export async function getBreadcrumbNames() {
+export async function loadBreadcrumbNames() {
   const modules = import.meta.glob("../routes/**/+page.svelte");
   /** @type import('./types').BreadcrumbNames */
   const names = {};
