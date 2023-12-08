@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -11,6 +11,9 @@ importers:
       '@minvws/manon':
         specifier: workspace:*
         version: link:../manon
+      '@minvws/manon-themes':
+        specifier: workspace:*
+        version: link:../themes
       concurrently:
         specifier: ^7.6.0
         version: 7.6.0
@@ -38,6 +41,8 @@ importers:
       stylelint-config-standard-scss:
         specifier: ^9.0.0
         version: 9.0.0(postcss@8.4.31)(stylelint@15.10.3)
+
+  themes: {}
 
 packages:
 

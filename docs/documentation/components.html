@@ -12,19 +12,30 @@
 
 <body id="index">
   <header>
-    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+    <div>
+        <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-    <nav aria-label="Hoofdnavigatie">
-      <div>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li>
-            <a href="./components.html" aria-current="page">Componenten</a>
-          </li>
-          <li><a href="./documentation.html">Documentatie</a></li>
-        </ul>
-      </div>
-    </nav>
+        <nav
+        data-open-label="Menu"
+        data-close-label="Sluit menu"
+        data-media="(min-width: 30rem)"
+        aria-label="Hoofdnavigatie"
+        class="collapsible">
+          <a href="./logo.html" class="logo">
+            <img src="../static/img/cat-white.svg" alt="Placeholder logo">Manon
+          </a>
+
+          <div class="collapsing-element">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li>
+                <a href="./components.html" aria-current="page">Componenten</a>
+              </li>
+              <li><a href="./documentation.html">Documentatie</a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
   </header>
 
   <main id="main-content" tabindex="-1">
@@ -43,7 +54,7 @@
       <div>
         <h2>Basisopmaak</h2>
         <div class="column-2">
-          <nav aria-labelledby="text-heading">
+          <nav aria-labelledby="layout-text-heading">
             <h3 id="layout-text-heading">Tekst</h3>
             <ul>
               <li><a href="./components/font.html">Lettertype toevoegen</a></li>
@@ -173,7 +184,7 @@
                 <li><a href="./components/tag.html">Tag</a></li>
                 <li><a href="./components/tabs.html">Tabbladen</a></li>
                 <li><a href="./components/tiles.html">Tegelweergave</a></li>
-                <li><a href="./components/side-menu.html">Zijmenu</a></li>
+                <li><a href="./components/sidemenu.html">Zijmenu</a></li>
                 <li><a href="./components/language-selector.html">Taalselectie</a></li>
               </ul>
             </nav>
@@ -240,6 +251,22 @@
       </div>
     </section>
   </main>
+
+  <footer>
+    <div class="two-thirds-one-third">
+        <span class="slogan">Manon</span>
+        <nav aria-labelledby="example-footer-1-nav-1-heading">
+        <h1 id="example-footer-1-nav-1-heading">Over deze site</h1>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="./components.html" aria-current="page">Componenten</a>
+          </li>
+          <li><a href="./documentation.html">Documentatie</a></li>
+        </ul>
+        </nav>
+    </div>
+</footer>
 </body>
 
 </html>

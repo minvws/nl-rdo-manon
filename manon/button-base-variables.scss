@@ -39,6 +39,7 @@
     --application-base-accent-color-hover-text-color,
     var(--application-base-accent-color-text-color)
   );
+  --button-base-hover-border-color: var(--button-base-hover-background-color);
 
   /* Active */
   /* --button-base-active-outline-style: ; */

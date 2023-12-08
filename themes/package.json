@@ -1,0 +1,17 @@
+{
+  "name": "@minvws/manon-themes",
+  "license": "EUPL-1.2",
+  "files": [
+    "**/*.scss",
+    "**/*.ico",
+    "**/*.png",
+    "**/*.svg",
+    "**/*.ttf",
+    "**/*.woff",
+    "**/*.woff2"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minvws/nl-rdo-manon.git"
+  }
+}

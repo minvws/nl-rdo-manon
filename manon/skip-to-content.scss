@@ -12,8 +12,6 @@ a.button.skip-to-content {
   font-size: 0;
   padding: 0;
   border: 0;
-  background-color: var(--skip-to-content-background-color);
-  color: var(--skip-to-content-text-color);
   max-width: 100%;
 
   &:focus {
@@ -23,11 +21,13 @@ a.button.skip-to-content {
     width: var(--skip-to-content-width);
     padding: var(--skip-to-content-padding);
     text-align: var(--skip-to-content-text-align);
-    font-size: var(--application-font-size);
+    font-size: var(--skip-to-content-font-size);
     min-height: var(--skip-to-content-min-height);
     border-width: var(--skip-to-content-border-width);
     border-style: var(--skip-to-content-border-style);
     border-color: var(--skip-to-content-border-color);
+    background-color: var(--skip-to-content-background-color);
+    color: var(--skip-to-content-text-color);
   }
 
   &:hover {

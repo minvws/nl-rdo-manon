@@ -4,6 +4,7 @@
 @use "breadcrumb-bar-variables";
 @use "mixins/icon";
 
+.page-header .breadcrumb-bar,
 .breadcrumb-bar {
   display: flex;
   flex-direction: var(--breadcrumb-bar-flex-direction);
