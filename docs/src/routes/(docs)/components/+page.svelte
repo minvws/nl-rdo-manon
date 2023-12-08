@@ -26,7 +26,7 @@
     <div>
       <h2>Basisopmaak</h2>
       <div class="column-2">
-        <nav aria-labelledby="text-heading">
+        <nav aria-labelledby="layout-text-heading">
           <h3 id="layout-text-heading">Tekst</h3>
           <ul>
             <li><a href="./components/font">Lettertype toevoegen</a></li>
@@ -177,7 +177,7 @@
               <li><a href="./components/tag">Tag</a></li>
               <li><a href="./components/tabs">Tabbladen</a></li>
               <li><a href="./components/tiles">Tegelweergave</a></li>
-              <li><a href="./components/side-menu">Zijmenu</a></li>
+              <li><a href="./components/sidemenu">Zijmenu</a></li>
               <li><a href="./components/language-selector">Taalselectie</a></li>
             </ul>
           </nav>

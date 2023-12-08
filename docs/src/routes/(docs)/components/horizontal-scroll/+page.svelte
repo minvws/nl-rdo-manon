@@ -167,7 +167,7 @@
 `}
         />
 
-        <h4>Html-structuur-voorbeeld:</h4>
+        <h4>HTML-structuur-voorbeeld:</h4>
         <Code
           language="html"
           code={`
@@ -422,7 +422,7 @@
 `}
         />
 
-        <h4>Html-structuur-voorbeeld:</h4>
+        <h4>HTML-structuur-voorbeeld:</h4>
         <Code
           language="html"
           code={`

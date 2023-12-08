@@ -60,33 +60,4 @@ body > footer,
       }
     }
   }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  span,
-  li {
-    color: var(--footer-two-thirds-one-third-text-color);
-  }
-
-  a,
-  a:visited {
-    color: var(--footer-two-thirds-one-third-link-text-color, inherit);
-    text-decoration: var(--footer-two-thirds-one-third-link-text-decoration);
-
-    &:before,
-    &:hover {
-      color: var(--footer-two-thirds-one-third-link-hover-text-color);
-    }
-
-    &:hover {
-      text-decoration: var(
-        --footer-two-thirds-one-third-link-hover-text-decoration
-      );
-    }
-  }
 }

@@ -1,18 +1,25 @@
+<!--
+NB: the @ in this file's filename, +page@.svelte, is there to break out of the
+layout at (docs)/+layout.svelte.
+See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-of-layouts
+-->
+
 <script context="module">
-  export const breadcrumb = "Header met navigatie met meerdere menus en form button";
+  export const breadcrumb = "Header met navigatie met meerdere menus";
 </script>
 
 <script>
   import { onMount } from "svelte";
-  import SiteNavLinks from "$lib/SiteNavLinks.svelte";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
+  import SiteNavLinks from "$lib/SiteNavLinks.svelte";
+  import DefaultFooter from "$lib/DefaultFooter.svelte";
   import { initCollapsible } from "$lib/manon.js";
   onMount(initCollapsible);
 </script>
 
 <svelte:head>
-  <title>Header met navigatie met meerdere menus en form button</title>
+  <title>Header met navigatie met meerdere menus</title>
 </svelte:head>
 
 <header>
@@ -24,19 +31,14 @@
     <nav
       data-open-label="Menu"
       data-close-label="Sluit menu"
-      data-media="(min-width: 42rem)"
+      data-media="(min-width: 30rem)"
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
       <div class="collapsing-element">
         <SiteNavLinks />
         <ul>
-          <li>
-            <form class="inline">
-              <input type="hidden" name="_token" value="" />
-              <button type="submit">Logout</button>
-            </form>
-          </li>
+          <li><a href="#">Logout</a></li>
         </ul>
       </div>
     </nav>
@@ -55,7 +57,7 @@
   <article>
     <div>
       <section id="introduction">
-        <h1>Header met navigatie met meerdere menus en form button</h1>
+        <h1>Header met meerdere menus visueel voorbeeld</h1>
 
         <h2>Benodigde stappen:</h2>
         <ol>
@@ -82,7 +84,7 @@
   <div>
       <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-      <a href="/" class="logo">
+      <a href="./logo" class="logo">
           <img src="/img/logo-white.svg" alt="Placeholder logo">Manon
       </a>
 
@@ -101,12 +103,7 @@
             </ul>
 
             <ul>
-              <li>
-                <form action="http://localhost/logout" method="POST" class="inline">
-                  <input type="hidden" name="_token" value="">
-                  <button type="submit">Logout</button>
-                </form>
-              </li>
+              <li><a href="#">Logout</a></li>
             </ul>
         </div>
       </nav>
@@ -162,6 +159,8 @@
     </div>
   </article>
 </main>
+
+<DefaultFooter />
 
 <style>
   :root {

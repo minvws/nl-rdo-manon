@@ -43,7 +43,7 @@
       </section>
 
       <section id="examples">
-        <h2>Voorbeelden:</h2>
+        <h2>Voorbeelden</h2>
 
         <h3>Paragraaf</h3>
         <h4>Visueel voorbeeld:</h4>

@@ -1,12 +1,19 @@
+<!--
+NB: the @ in this file's filename, +page@.svelte, is there to break out of the
+layout at (docs)/+layout.svelte.
+See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-of-layouts
+-->
+
 <script context="module">
   export const breadcrumb = "Header content wrapper visueel voorbeeld";
 </script>
 
 <script>
   import { onMount } from "svelte";
-  import SiteNavLinks from "$lib/SiteNavLinks.svelte";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
+  import SiteNavLinks from "$lib/SiteNavLinks.svelte";
+  import DefaultFooter from "$lib/DefaultFooter.svelte";
   import { initCollapsible } from "$lib/manon.js";
   onMount(initCollapsible);
 </script>
@@ -144,3 +151,5 @@
     --header-navigation-position: static;
   }
 </style>
+
+<DefaultFooter />

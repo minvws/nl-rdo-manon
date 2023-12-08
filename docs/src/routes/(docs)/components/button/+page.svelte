@@ -27,7 +27,7 @@
       </section>
 
       <section id="button-html">
-        <h2>Html-element kiezen</h2>
+        <h2>HTML-element kiezen</h2>
         <p>
           Knoppen kunnen op verschillende manieren opgebouwd worden. Iets wat er visueel als een
           knop uit ziet kan in de html een link zijn. Welk html-element geschikt is hangt af van de

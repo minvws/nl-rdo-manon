@@ -2,7 +2,6 @@
   import { onMount } from "svelte";
   import { browser } from "$app/environment";
   import { initSidemenus } from "$lib/manon.js";
-
   onMount(initSidemenus);
 </script>
 

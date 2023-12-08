@@ -1,25 +1,29 @@
+<!--
+NB: the @ in this file's filename, +page@.svelte, is there to break out of the
+layout at (docs)/+layout.svelte.
+See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-of-layouts
+-->
+
 <script context="module">
-  export const breadcrumb = "Header met logo bovenaan";
+  export const breadcrumb = "Header visueel voorbeeld";
 </script>
 
 <script>
   import { onMount } from "svelte";
-  import SiteNavLinks from "$lib/SiteNavLinks.svelte";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
+  import SiteNavLinks from "$lib/SiteNavLinks.svelte";
+  import DefaultFooter from "$lib/DefaultFooter.svelte";
   import { initCollapsible } from "$lib/manon.js";
   onMount(initCollapsible);
 </script>
 
 <svelte:head>
-  <title>Header met logo bovenaan</title>
+  <title>Header visueel voorbeeld</title>
 </svelte:head>
 
 <header>
   <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
-  <a href="/" class="logo">
-    <img src="$img/logo-white.svg" alt="Placeholder logo" />Manon
-  </a>
   <nav
     data-open-label="Menu"
     data-close-label="Sluit menu"
@@ -29,9 +33,6 @@
   >
     <div class="collapsing-element">
       <SiteNavLinks />
-      <ul>
-        <li><a href="#">Logout</a></li>
-      </ul>
     </div>
   </nav>
 </header>
@@ -48,7 +49,7 @@
   <article>
     <div>
       <section id="introduction">
-        <h1>Header met logo bovenaan visueel voorbeeld</h1>
+        <h1>Header visueel voorbeeld</h1>
 
         <h2>Benodigde stappen:</h2>
         <ol>
@@ -72,13 +73,9 @@
           language="html"
           code={`
 <header>
-    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-    <a href="./logo" class="logo">
-      <img src="/img/logo-white.svg" alt="Placeholder logo">Manon
-    </a>
-
-    <nav
+  <nav
     data-open-label="Menu"
     data-close-label="Sluit menu"
     data-media="(min-width: 30rem)"
@@ -86,17 +83,14 @@
     class="collapsible">
 
     <div class="collapsing-element">
-        <ul>
+      <ul>
         <li><a href="../../index">Home</a></li>
         <li><a href="../components" aria-current="page">Componenten</a></li>
         <li><a href="../documentation">Documentatie</a></li>
-        </ul>
-
-        <ul>
-          <li><a href="#">Logout</a></li>
-        </ul>
+      </ul>
     </div>
   </nav>
+
 </header>
 `}
         />
@@ -107,37 +101,36 @@
           language="css"
           code={`
 :root {
-  /* Header */
-  --header-padding-right: 0;
-  --header-padding-left: 0;
-  --header-min-height: 10rem;
-  --header-flex-direction: column;
-  --header-justify-content: space-between;
-  --header-navigation-padding-right: 0;
-  --header-navigation-padding-left: 0;
+  --header-navigation-background-color: #fff;
+  --header-navigation-text-color: var(--text-set-text-color);
+  --header-navigation-padding-right: 2%;
+  --header-navigation-padding-left: 2%;
 
-  /* Navigation */
-  --header-navigation-border-width: 0;
-  --header-navigation-width: auto;
-  --header-navigation-padding-left: 1rem;
-  --header-navigation-padding-right: 1rem;
-  --header-navigation-background-color: #1b1b39;
-  --header-navigation-text-color: white;
+  /* top border */
+  --header-navigation-border-width: 3px 0 0 0;
+  --header-navigation-border-color: var(--branding-color-1);
 
-  /* Content wrapper */
-  --header-navigation-content-wrapper-flex-direction: row;
-  --header-navigation-content-wrapper-justify-content: flex-start;
+  /* Menu items links */
+  --header-navigation-link-border-width: 4px 0 0 0;
+  --header-navigation-link-border-color: transparent;
+  --header-navigation-link-min-height: 3rem;
+  --header-navigation-link-font-size: var(--body-text-medium-font-size);
 
   /* Link styling */
-  --header-navigation-link-text-color: white;
-  --header-navigation-link-hover-text-color: var(--header-navigation-link-text-color);
+  --header-navigation-link-text-color: var(--application-base-text-color);
   --header-navigation-link-visited-text-color: var(--header-navigation-link-text-color);
-  --header-navigation-link-visited-hover-text-color: var(--header-navigation-link-text-color);
-  --header-navigation-link-active-text-color: var(--header-navigation-link-text-color);
 
-  /* Menu toggle button */
-  --navigation-collapsible-menu-button-background-color: transparent;
-  --navigation-collapsible-menu-icon-color: var(--header-navigation-link-text-color);
+  /* Hover */
+  --header-navigation-link-hover-border-color: #ede1c7;
+  --header-navigation-link-hover-text-color: var(--header-navigation-link-text-color);
+
+  /* Active link */
+  --header-navigation-link-active-border-color: var(--branding-color-1);
+  --header-navigation-link-active-text-color: var(--header-navigation-link-hover-text-color);
+  --header-navigation-link-visited-active-text-color: var(--header-navigation-link-hover-text-color);
+
+  /* Collapsed icon */
+  --navigation-collapsible-menu-icon-font-size: 2rem;
 }
 `}
         />
@@ -145,3 +138,5 @@
     </div>
   </article>
 </main>
+
+<DefaultFooter />

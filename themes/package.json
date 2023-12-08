@@ -2,8 +2,13 @@
   "name": "@minvws/manon-themes",
   "license": "EUPL-1.2",
   "files": [
-    "*.scss",
-    "**/*.scss"
+    "**/*.scss",
+    "**/*.ico",
+    "**/*.png",
+    "**/*.svg",
+    "**/*.ttf",
+    "**/*.woff",
+    "**/*.woff2"
   ],
   "repository": {
     "type": "git",

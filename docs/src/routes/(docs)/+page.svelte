@@ -46,7 +46,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="background-color-offset">
     <div>
       <h2>Wat is Manon</h2>
       <p>

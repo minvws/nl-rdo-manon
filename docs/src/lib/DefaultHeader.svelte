@@ -3,7 +3,7 @@
   import BreadcrumbNav from "$lib/BreadcrumbNav.svelte";
 </script>
 
-<header>
+<header {...$$props}>
   <div>
     <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
     <SiteNav />

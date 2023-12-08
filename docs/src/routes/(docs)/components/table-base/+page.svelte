@@ -212,7 +212,7 @@
             <caption>Beschikbare instelbare variabelen:</caption>
             <thead>
               <tr>
-                <th scope="col">Html-attribuut</th>
+                <th scope="col">HTML-attribuut</th>
                 <th scope="col">Variabele</th>
                 <th scope="col">CSS-attribuut</th>
                 <th scope="col">Manon ingestelde waarde</th>

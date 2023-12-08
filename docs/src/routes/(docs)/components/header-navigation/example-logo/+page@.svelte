@@ -1,26 +1,30 @@
+<!--
+NB: the @ in this file's filename, +page@.svelte, is there to break out of the
+layout at (docs)/+layout.svelte.
+See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-of-layouts
+-->
+
 <script context="module">
-  export const breadcrumb = "Header met navigatie met meerdere menus";
+  export const breadcrumb = "Header voorbeeld met logo";
 </script>
 
 <script>
   import { onMount } from "svelte";
-  import SiteNavLinks from "$lib/SiteNavLinks.svelte";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
+  import SiteNavLinks from "$lib/SiteNavLinks.svelte";
+  import DefaultFooter from "$lib/DefaultFooter.svelte";
   import { initCollapsible } from "$lib/manon.js";
   onMount(initCollapsible);
 </script>
 
 <svelte:head>
-  <title>Header met navigatie met meerdere menus</title>
+  <title>Header voorbeeld met logo</title>
 </svelte:head>
 
 <header>
   <div>
     <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
-    <a href="/" class="logo">
-      <img src="$img/logo-white.svg" alt="Placeholder logo" />Manon
-    </a>
     <nav
       data-open-label="Menu"
       data-close-label="Sluit menu"
@@ -28,11 +32,11 @@
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
+      <a href="/" class="logo">
+        <img src="$img/cat-white.svg" alt="Placeholder logo" />Manon
+      </a>
       <div class="collapsing-element">
         <SiteNavLinks />
-        <ul>
-          <li><a href="#">Logout</a></li>
-        </ul>
       </div>
     </nav>
   </div>
@@ -50,7 +54,7 @@
   <article>
     <div>
       <section id="introduction">
-        <h1>Header met meerdere menus visueel voorbeeld</h1>
+        <h1>Header voorbeeld met logo visueel voorbeeld</h1>
 
         <h2>Benodigde stappen:</h2>
         <ol>
@@ -77,7 +81,7 @@
   <div>
       <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-      <a href="./logo" class="logo">
+      <a href="/" class="logo">
           <img src="/img/logo-white.svg" alt="Placeholder logo">Manon
       </a>
 
@@ -90,13 +94,9 @@
 
         <div class="collapsing-element">
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/components">Componenten</a></li>
-              <li><a href="/documentation">Documentatie</a></li>
-            </ul>
-
-            <ul>
-              <li><a href="#">Logout</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/components" aria-current="page">Componenten</a></li>
+            <li><a href="/documentation">Documentatie</a></li>
             </ul>
         </div>
       </nav>
@@ -152,6 +152,8 @@
     </div>
   </article>
 </main>
+
+<DefaultFooter />
 
 <style>
   :root {
