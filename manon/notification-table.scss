@@ -12,44 +12,50 @@ table {
       background-color: var(--notification-table-error-background-color);
       color: var(--notification-table-error-text-color);
     }
+
     &.warning {
       background-color: var(--notification-table-warning-background-color);
       color: var(--notification-table-warning-text-color);
     }
+
     &.confirmation {
       background-color: var(--notification-table-confirmation-background-color);
       color: var(--notification-table-confirmation-text-color);
     }
+
     &.explanation {
       background-color: var(--notification-table-explanation-background-color);
       color: var(--notification-table-explanation-text-color);
     }
+
     &.system {
       background-color: var(--notification-table-system-background-color);
       color: var(--notification-table-system-text-color);
     }
   }
-}
 
-// Darken even rows for zebra effect
-table {
+  // Darken even rows for zebra effect
   tr {
     &.error:nth-child(even):not(.odd) {
       background-color: var(--notification-table-error-background-color);
       filter: brightness(90%);
     }
+
     &.warning:nth-child(even):not(.odd) {
       background-color: var(--notification-table-warning-background-color);
       filter: brightness(90%);
     }
+
     &.confirmation:nth-child(even):not(.odd) {
       background-color: var(--notification-table-confirmation-background-color);
       filter: brightness(90%);
     }
+
     &.explanation:nth-child(even):not(.odd) {
       background-color: var(--notification-table-explanation-background-color);
       filter: brightness(90%);
     }
+
     &.system:nth-child(even):not(.odd) {
       background-color: var(--notification-table-system-background-color);
       filter: brightness(90%);

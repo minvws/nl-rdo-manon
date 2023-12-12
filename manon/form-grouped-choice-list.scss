@@ -11,7 +11,7 @@ form.horizontal-view {
       width: auto;
       margin: 0;
 
-      @media (min-width: $breakpoint) {
+      @media (width >= $breakpoint) {
         position: absolute;
         max-width: var(--label-column);
         padding: 0;

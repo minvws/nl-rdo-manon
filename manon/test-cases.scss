@@ -47,7 +47,7 @@
       padding: 0.5rem 1rem;
       width: 100%;
 
-      @media (min-width: 37.5rem) {
+      @media (width >= 37.5rem) {
         width: unset;
         flex-grow: 1;
       }
@@ -58,7 +58,7 @@
     li {
       display: flex;
 
-      @media (min-width: 50rem) {
+      @media (width >= 50rem) {
         flex-wrap: nowrap;
         justify-content: space-between;
       }
@@ -67,7 +67,7 @@
         width: 100%;
         display: flex;
 
-        @media (min-width: 50rem) {
+        @media (width >= 50rem) {
           width: unset;
           flex-wrap: nowrap;
         }

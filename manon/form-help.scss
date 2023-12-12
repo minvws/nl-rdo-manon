@@ -50,7 +50,7 @@ form.help {
         color: var(--form-help-button-hover-text-color);
       }
 
-      &:before {
+      &::before {
         content: var(--form-help-button-icon);
         font-family: var(--form-help-button-icon-font-family);
         line-height: var(--form-help-button-icon-line-height);
@@ -60,7 +60,7 @@ form.help {
       }
 
       &[aria-expanded="true"] {
-        &:before {
+        &::before {
           content: var(--form-help-button-icon-expanded);
         }
       }
@@ -90,7 +90,7 @@ form.help {
         margin-top: 0;
       }
 
-      &:before {
+      &::before {
         margin: 0;
         width: 100%;
       }

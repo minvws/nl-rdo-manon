@@ -36,7 +36,7 @@
     @extend %pagination-active-item-styling;
   }
 
-  &:before {
+  &::before {
     content: none;
   }
 }
@@ -63,7 +63,7 @@
   &.previous {
     padding: var(--pagination-adjacent-previous-padding);
 
-    &:before {
+    &::before {
       @include icon.icon-format("pagination-previous-");
       @include icon.icon-content("pagination-previous-");
 
@@ -75,7 +75,7 @@
   &.next {
     padding: var(--pagination-adjacent-next-padding);
 
-    &:after {
+    &::after {
       @include icon.icon-format("pagination-next-");
       @include icon.icon-content("pagination-next-");
 
@@ -92,7 +92,6 @@
   gap: var(--pagination-list-gap);
 
   li {
-    margin-top: -0.1rem; /* fix for render issue; white space between this li and the parent ul border */
     padding: 0;
     list-style: none;
     display: flex;
@@ -105,7 +104,7 @@
 
     box-sizing: border-box;
 
-    &:before {
+    &::before {
       content: none;
     }
 

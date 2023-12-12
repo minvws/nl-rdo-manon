@@ -23,7 +23,7 @@ div {
       box-sizing: border-box;
     }
 
-    @media (min-width: $breakpoint) {
+    @media (width >= $breakpoint) {
       gap: var(--layout-fifty-fifty-breakpoint-gap);
 
       > * {

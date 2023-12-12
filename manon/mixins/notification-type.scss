@@ -9,7 +9,7 @@
   border-style: var(--notification-#{$type}-border-style);
   border-color: var(--notification-#{$type}-border-color);
 
-  &:before {
+  &::before {
     font-family: var(--notification-#{$type}-icon-font-family);
     font-size: var(--notification-#{$type}-icon-font-size);
     padding-right: var(--notification-#{$type}-icon-padding-right);

@@ -19,7 +19,7 @@ table {
       padding: var(--expando-rows-table-cell-padding);
       position: relative;
 
-      @media (min-width: $breakpoint) {
+      @media (width >= $breakpoint) {
         padding: var(--expando-rows-table-cell-after-breakpoint-padding);
       }
     }

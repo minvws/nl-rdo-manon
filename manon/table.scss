@@ -41,7 +41,7 @@ table {
     a:hover {
       color: inherit;
 
-      &:before {
+      &::before {
         color: inherit;
       }
     }

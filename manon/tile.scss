@@ -44,13 +44,7 @@
 .tiles {
   align-items: var(--tiles-align-items);
 
-  /* render each div directly within a tiles group as a tile */
-  > div {
-    @extend %tile;
-  }
-}
-
-.tiles {
+  /* render each div, nav or section directly within a tiles group as a tile */
   > div,
   > nav,
   > section {

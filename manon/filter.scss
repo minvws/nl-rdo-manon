@@ -45,7 +45,7 @@
       font-size: var(--filter-button-font-size);
       min-width: 0;
 
-      &:after {
+      &::after {
         font-family: var(--filter-button-icon-font-family, inherit);
         line-height: var(--filter-button-icon-line-height);
         font-size: var(--filter-button-icon-font-size, inherit);
@@ -53,13 +53,13 @@
       }
 
       &[aria-expanded="true"] {
-        &:after {
+        &::after {
           content: var(--filter-button-icon-before-close-content);
         }
       }
 
       &[aria-expanded="false"] {
-        &:after {
+        &::after {
           content: var(--filter-button-icon-before-open-content);
         }
       }

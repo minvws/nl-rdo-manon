@@ -54,6 +54,7 @@ ul.images-square {
 
   li {
     list-style: none;
+
     > div {
       @extend %image-square-container;
 

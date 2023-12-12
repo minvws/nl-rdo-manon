@@ -7,7 +7,7 @@
 
 a {
   &[rel~="external"] {
-    &:before {
+    &::before {
       @include icon.icon;
       font-family: var(--link-external-icon-font-family);
       font-size: var(--link-external-icon-font-size);
@@ -17,7 +17,7 @@ a {
     }
 
     @each $state in link.$states {
-      &:#{$state}:before {
+      &:#{$state}::before {
         font-size: var(--link-external-icon-font-size);
       }
     }

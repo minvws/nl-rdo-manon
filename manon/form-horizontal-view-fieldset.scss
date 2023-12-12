@@ -30,7 +30,7 @@ form.horizontal-view {
       /* Adds margin instead of gap */
       margin-bottom: var(--form-base-gap);
 
-      @media (min-width: $breakpoint) {
+      @media (width >= $breakpoint) {
         > * {
           width: var(--input-column);
           /* resetting gap as it can not be used within fieldsets */
@@ -69,7 +69,7 @@ form.horizontal-view {
       width: 100%;
       float: right;
 
-      @media (min-width: $breakpoint) {
+      @media (width >= $breakpoint) {
         width: var(--input-column);
       }
 
@@ -116,7 +116,7 @@ form.horizontal-view {
       max-width: calc(100% - var(--radio-input-width));
     }
 
-    @media (min-width: $breakpoint) {
+    @media (width >= $breakpoint) {
       > button,
       > a.button,
       > input[type="button"],

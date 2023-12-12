@@ -27,7 +27,7 @@
     margin-left: calc(var(--button-container-gap) / 2);
     margin-bottom: var(--button-container-gap);
 
-    @media (min-width: $breakpoint) {
+    @media (width >= $breakpoint) {
       width: var(--button-container-button-after-breakpoint-width);
     }
   }
@@ -58,7 +58,7 @@ form {
       .button-container {
         @extend %fieldset-button-container-styling;
 
-        @media (min-width: $breakpoint) {
+        @media (width >= $breakpoint) {
           margin-left: calc(
             var(--label-column) - (var(--button-container-gap) / 2)
           );

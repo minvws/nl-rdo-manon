@@ -19,7 +19,7 @@ form.horizontal-view {
     }
 
     > * {
-      @media (min-width: $breakpoint-1) {
+      @media (width >= $breakpoint-1) {
         width: var(--input-column);
         float: right;
       }

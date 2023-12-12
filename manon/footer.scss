@@ -45,7 +45,7 @@ body > footer,
       li {
         list-style: var(--footer-navigation-list-item-list-style);
 
-        &:before {
+        &::before {
           /* Preventing default nav before to show up */
           display: none;
         }

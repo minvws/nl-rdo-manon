@@ -13,7 +13,7 @@ code {
   width: 100%;
   word-break: var(--code-base-word-break, inherit);
 
-  @media (min-width: $breakpoint) {
+  @media (width >= $breakpoint) {
     word-break: var(--code-base-breakpoint-word-break, break-word);
   }
 }

@@ -43,7 +43,7 @@
 
   /* Table row */
   /* Zebra striping with opacity to keep background color. e.g for warnings or errors */
-  --table-row-background-color-striping: rgba(148, 148, 148, 0.1);
+  --table-row-background-color-striping: rgb(148 148 148 / 0.1);
   --table-row-border-width: var(--table-border-width);
   --table-row-border-style: var(--table-border-style);
   --table-row-border-color: var(--table-border-color);

@@ -14,7 +14,7 @@
   color: var(--table-action-buttons-button-text-color);
   justify-content: var(--table-action-buttons-button-justify-content);
 
-  &:before {
+  &::before {
     color: var(--table-action-buttons-button-text-color);
     font-size: var(--table-action-buttons-button-font-size);
   }
@@ -23,7 +23,7 @@
     background: var(--table-action-buttons-button-hover-background-color);
     border: 0;
 
-    &:before {
+    &::before {
       color: var(--table-action-buttons-button-hover-text-color);
     }
   }
