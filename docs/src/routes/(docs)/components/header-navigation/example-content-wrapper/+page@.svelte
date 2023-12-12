@@ -9,6 +9,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import { onMount } from "svelte";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
