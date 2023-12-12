@@ -9,6 +9,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import { onMount } from "svelte";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
@@ -25,7 +26,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 <header>
   <div>
     <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
-    <a href="/" class="logo">
+    <a href="{base}/" class="logo">
       <img src="$img/logo-white.svg" alt="Placeholder logo" />Manon
     </a>
     <nav

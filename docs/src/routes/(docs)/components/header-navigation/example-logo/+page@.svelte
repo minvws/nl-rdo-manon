@@ -9,6 +9,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import { onMount } from "svelte";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
@@ -32,7 +33,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-      <a href="/" class="logo">
+      <a href="{base}/" class="logo">
         <img src="$img/cat-white.svg" alt="Placeholder logo" />Manon
       </a>
       <div class="collapsing-element">

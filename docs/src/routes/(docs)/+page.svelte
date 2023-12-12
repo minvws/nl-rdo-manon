@@ -2,6 +2,10 @@
   export const breadcrumb = "Manon";
 </script>
 
+<script>
+  import { base } from "$app/paths";
+</script>
+
 <svelte:head>
   <title>Manon</title>
 </svelte:head>
@@ -52,9 +56,9 @@
       <p>
         Manon biedt een bibliotheek met componenten. Deze componenten bevatten voorbeeld-HTML en
         worden geleverd met hun eigen CSS en JavaScript. Bekijk alle componenten in <a
-          href="/components">de componentenbibliotheek</a
+          href="{base}/components">de componentenbibliotheek</a
         >. Installeer Manon voor je eigen project met behulp van
-        <a href="/documentation">deze instructies.</a>
+        <a href="{base}/documentation">deze instructies.</a>
       </p>
     </div>
   </section>
@@ -100,7 +104,7 @@
           </p>
 
           <p>
-            In de <a href="/components">componentenbibliotheek</a> vind je het volledige overzicht met
+            In de <a href="{base}/components">componentenbibliotheek</a> vind je het volledige overzicht met
             beschikbare componenten.
           </p>
         </div>

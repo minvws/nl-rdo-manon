@@ -9,6 +9,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import { onMount, onDestroy } from "svelte";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
@@ -79,7 +80,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
               Voeg de referentie naar het Javascript bestand,
               <code>sidemenu.js</code>, toe aan de HTML-pagina's die gebruik dienen te maken van het
               inklapbare zijmenu. Voor meer informatie zie:
-              <a href="/add-js">JavaScript referentie toevoegen</a>.
+              <a href="{base}/add-js">JavaScript referentie toevoegen</a>.
             </li>
             <li>
               Om het menu standaard gesloten te tonen tot de gebruiker het menu opent. Voeg de class <code
@@ -187,7 +188,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
           <h2>Bijbehorende bestanden</h2>
           <p>
             Voor meer informatie over importeren en instellen van componenten. Zie:
-            <a href="/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
           </p>
 
           <h3>Importeer component via NPM</h3>

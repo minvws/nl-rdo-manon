@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   import { onMount } from "svelte";
   import SiteNavLinks from "$lib/SiteNavLinks.svelte";
   import { initCollapsible } from "$lib/manon.js";
@@ -12,7 +13,7 @@
   aria-label="Hoofdnavigatie"
   class="collapsible"
 >
-  <a href="/components/logo" class="logo">
+  <a href="{base}/components/logo" class="logo">
     <img src="../img/cat-white.svg" alt="Placeholder logo" />Manon
   </a>
   <div class="collapsing-element">

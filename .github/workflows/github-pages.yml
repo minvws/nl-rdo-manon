@@ -46,6 +46,8 @@ jobs:
 
       - name: Build the documentation
         working-directory: docs
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: pnpm run build
 
       - name: Copy the documentation
