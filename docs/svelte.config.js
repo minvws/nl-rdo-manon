@@ -15,7 +15,8 @@ const config = {
       $img: "src/img",
     },
     paths: {
-      base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+      base: process.argv.includes('dev') ? '' : process.env.BASE_PATH,
+      relative: true
     }
   },
   preprocess: [vitePreprocess(), importAssets()],
