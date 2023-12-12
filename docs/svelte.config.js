@@ -14,6 +14,9 @@ const config = {
       $scss: "src/scss",
       $img: "src/img",
     },
+    paths: {
+      base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+    }
   },
   preprocess: [vitePreprocess(), importAssets()],
   onwarn: (warning, handler) => {
