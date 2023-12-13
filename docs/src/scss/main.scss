@@ -1,11 +1,11 @@
 /* Main project styles */
-@import "manon"; /* Manon components */
-@import "docs"; /* Docs overrides which aren't theme related */
-@import "fonts";
+@use "manon"; /* Manon components */
+@use "docs"; /* Docs overrides which aren't theme related */
+@use "docs-icons";
 
 /* Styling for visual examples out of their usual html-structure */
-@import "documentation-example-footer";
-@import "documentation-example-main";
+@use "documentation-example-footer";
+@use "documentation-example-main";
 
 /* Theme */
-@import "@minvws/manon-themes/basic-bold/theme";
+@use "@minvws/manon-themes/basic-bold";

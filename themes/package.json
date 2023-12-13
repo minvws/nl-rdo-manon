@@ -10,8 +10,13 @@
     "**/*.woff",
     "**/*.woff2"
   ],
+  "peerDepencency": {
+    "@minvws/manon": "workspace:*",
+    "sass": ">=1.23"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/minvws/nl-rdo-manon.git"
+    "url": "https://github.com/minvws/nl-rdo-manon.git",
+    "directory": "themes"
   }
 }
