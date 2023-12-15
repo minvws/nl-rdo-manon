@@ -32,7 +32,7 @@
 
         <p>In dit voorbeeld staat het zijmenu binnen de pagina bij de content.
           Gebruik deze weergave alleen als de inhoud van het zijmenu specifiek over de content gaat. Bijvoorbeeld een inhoudsopgave.
-          Hoort het zijmenu niet bij de inhoud van de pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie <a href="./next-to-page">Zijmenu naast de pagina</a>.</p>
+          Hoort het zijmenu niet bij de inhoud van de pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie <a href="{base}/components/sidemenu/next-to-page">Zijmenu naast de pagina</a>.</p>
       </section>
 
       <section id="examples">

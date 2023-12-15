@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -132,7 +133,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./table-scope-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/table-scope-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

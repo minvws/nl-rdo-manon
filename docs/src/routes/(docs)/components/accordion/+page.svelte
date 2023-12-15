@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -41,7 +42,7 @@
               <li>
                 Voeg het bijbehorende Javascript-bestand toe aan het project. Voor meer informatie
                 zie:
-                <a href="../add-js">JavaScript toevoegen</a>.
+                <a href="{base}/add-js">JavaScript toevoegen</a>.
               </li>
             </ul>
           </li>
@@ -307,7 +308,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>
@@ -327,27 +328,27 @@
           <li>
             Accordeon list
             <ul>
-              <li><a href="../variables#gap">gap</a></li>
+              <li><a href="{base}/variables#gap">gap</a></li>
             </ul>
           </li>
           <li>
             <code>button</code>
             <ul>
-              <li><a href="../variables#padding">padding</a></li>
+              <li><a href="{base}/variables#padding">padding</a></li>
               <li>
-                <a href="../variables#justify-content">justify-content</a>
+                <a href="{base}/variables#justify-content">justify-content</a>
               </li>
-              <li><a href="../variables#font-size">font-size</a></li>
+              <li><a href="{base}/variables#font-size">font-size</a></li>
               <li>
-                <a href="../variables#font-weight">font-weight</a>
-              </li>
-              <li>
-                <a href="../variables#line-height">line-height</a>
+                <a href="{base}/variables#font-weight">font-weight</a>
               </li>
               <li>
-                <a href="../variables#background-color">background-color</a>
+                <a href="{base}/variables#line-height">line-height</a>
               </li>
-              <li><a href="../variables#text-color">text-color</a></li>
+              <li>
+                <a href="{base}/variables#background-color">background-color</a>
+              </li>
+              <li><a href="{base}/variables#text-color">text-color</a></li>
             </ul>
           </li>
           <li>
@@ -357,15 +358,15 @@
               <li>
                 <code>:before</code>
                 <ul>
-                  <li><a href="../variables#icon">icon</a></li>
+                  <li><a href="{base}/variables#icon">icon</a></li>
                 </ul>
               </li>
               <li>
                 <code>:after</code>
                 <ul>
-                  <li><a href="../variables#icon">icon</a></li>
+                  <li><a href="{base}/variables#icon">icon</a></li>
                   <li>
-                    <a href="../variables#margin-left">margin-left</a>
+                    <a href="{base}/variables#margin-left">margin-left</a>
                   </li>
                 </ul>
               </li>
@@ -374,28 +375,28 @@
           <li>
             Content
             <ul>
-              <li><a href="../variables#padding">padding</a></li>
-              <li><a href="../variables#gap">gap</a></li>
-              <li><a href="../variables#font-size">font-size</a></li>
+              <li><a href="{base}/variables#padding">padding</a></li>
+              <li><a href="{base}/variables#gap">gap</a></li>
+              <li><a href="{base}/variables#font-size">font-size</a></li>
               <li>
-                <a href="../variables#font-weight">font-weight</a>
+                <a href="{base}/variables#font-weight">font-weight</a>
               </li>
               <li>
-                <a href="../variables#line-height">line-height</a>
+                <a href="{base}/variables#line-height">line-height</a>
               </li>
               <li>
-                <a href="../variables#border-width">border-width</a>
+                <a href="{base}/variables#border-width">border-width</a>
               </li>
               <li>
-                <a href="../variables#border-style">border-style</a>
+                <a href="{base}/variables#border-style">border-style</a>
               </li>
               <li>
-                <a href="../variables#border-color">border-color</a>
+                <a href="{base}/variables#border-color">border-color</a>
               </li>
               <li>
-                <a href="../variables#background-color">background-color</a>
+                <a href="{base}/variables#background-color">background-color</a>
               </li>
-              <li><a href="../variables#text-color">text-color</a></li>
+              <li><a href="{base}/variables#text-color">text-color</a></li>
             </ul>
           </li>
         </ul>
@@ -403,7 +404,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./accordion-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/accordion-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

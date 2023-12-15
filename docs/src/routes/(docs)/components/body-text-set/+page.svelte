@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -42,7 +43,7 @@
               <li>
                 Pas de stijlkeuzes toe waar nodig. De stijlkeuzes kunnen door middel van variabelen
                 binnen de CSS toegepast worden. Voor meer informatie hierover zie <a
-                  href="../use-css-variable">CSS-variabelen gebruiken</a
+                  href="{base}/use-css-variable">CSS-variabelen gebruiken</a
                 >.
               </li>
             </ul>
@@ -106,7 +107,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -139,7 +140,7 @@
             <tbody>
               <tr>
                 <td>--text-set-font-family</td>
-                <td><a href="../variables#font-family">font-family</a></td>
+                <td><a href="{base}/variables#font-family">font-family</a></td>
                 <td
                   >-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Roboto Sans", "Noto
                   Sans", sans-serif</td
@@ -150,7 +151,7 @@
 
               <tr>
                 <td>--text-set-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>1.25rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -158,7 +159,7 @@
 
               <tr>
                 <td>--text-set-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>normal</td>
                 <td>-</td>
                 <td>-</td>
@@ -166,7 +167,7 @@
 
               <tr>
                 <td>--text-set-strong-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>bold</td>
                 <td>-</td>
                 <td>-</td>
@@ -174,7 +175,7 @@
 
               <tr>
                 <td>--text-set-line-height</td>
-                <td><a href="../variables#line-height">line-height</a></td>
+                <td><a href="{base}/variables#line-height">line-height</a></td>
                 <td>1.5</td>
                 <td>-</td>
                 <td>-</td>
@@ -182,7 +183,7 @@
 
               <tr>
                 <td>--text-set-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>#000</td>
                 <td>-</td>
                 <td>-</td>
@@ -190,7 +191,7 @@
 
               <tr>
                 <td>--text-set-text-align</td>
-                <td><a href="../variables#text-align">text-align</a></td>
+                <td><a href="{base}/variables#text-align">text-align</a></td>
                 <td>left</td>
                 <td>-</td>
                 <td>-</td>
@@ -215,7 +216,7 @@
               <tr>
                 <th rowspan="5" scope="rowgroup">body text small</th>
                 <td>--body-text-small-set-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>0.8rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -223,7 +224,7 @@
 
               <tr>
                 <td>--body-text-small-set-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>var(--text-set-font-weight)</td>
                 <td>-</td>
                 <td>-</td>
@@ -231,7 +232,7 @@
 
               <tr>
                 <td>--body-text-small-set-line-height</td>
-                <td><a href="../variables#line-height">line-height</a></td>
+                <td><a href="{base}/variables#line-height">line-height</a></td>
                 <td>var(--text-set-line-height)</td>
                 <td>-</td>
                 <td>-</td>
@@ -239,7 +240,7 @@
 
               <tr>
                 <td>--body-text-small-set-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>#696969</td>
                 <td>-</td>
                 <td>-</td>
@@ -247,7 +248,7 @@
 
               <tr>
                 <td>--text-set-small-text-align</td>
-                <td><a href="../variables#text-align">text-align</a></td>
+                <td><a href="{base}/variables#text-align">text-align</a></td>
                 <td>var(--text-set-text-align)</td>
                 <td>-</td>
                 <td>-</td>
@@ -256,7 +257,7 @@
               <tr>
                 <th rowspan="5" scope="rowgroup">body text medium</th>
                 <td>--body-text-medium-set-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>0.8rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -264,7 +265,7 @@
 
               <tr>
                 <td>--body-text-medium-set-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>var(--text-set-font-weight)</td>
                 <td>-</td>
                 <td>-</td>
@@ -272,7 +273,7 @@
 
               <tr>
                 <td>--body-text-medium-set-line-height</td>
-                <td><a href="../variables#line-height">line-height</a></td>
+                <td><a href="{base}/variables#line-height">line-height</a></td>
                 <td>var(--text-set-line-height)</td>
                 <td>-</td>
                 <td>-</td>
@@ -280,7 +281,7 @@
 
               <tr>
                 <td>--body-text-medium-set-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>#696969</td>
                 <td>-</td>
                 <td>-</td>
@@ -288,7 +289,7 @@
 
               <tr>
                 <td>--text-set-medium-text-align</td>
-                <td><a href="../variables#text-align">text-align</a></td>
+                <td><a href="{base}/variables#text-align">text-align</a></td>
                 <td>var(--text-set-text-align)</td>
                 <td>-</td>
                 <td>-</td>
@@ -297,7 +298,7 @@
               <tr>
                 <th rowspan="5" scope="rowgroup">body text large</th>
                 <td>--body-text-large-set-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>0.8rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -305,7 +306,7 @@
 
               <tr>
                 <td>--body-text-large-set-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>var(--text-set-font-weight)</td>
                 <td>-</td>
                 <td>-</td>
@@ -313,7 +314,7 @@
 
               <tr>
                 <td>--body-text-large-set-line-height</td>
-                <td><a href="../variables#line-height">line-height</a></td>
+                <td><a href="{base}/variables#line-height">line-height</a></td>
                 <td>var(--text-set-line-height)</td>
                 <td>-</td>
                 <td>-</td>
@@ -321,7 +322,7 @@
 
               <tr>
                 <td>--body-text-large-set-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>#696969</td>
                 <td>-</td>
                 <td>-</td>
@@ -329,7 +330,7 @@
 
               <tr>
                 <td>--text-set-large-text-align</td>
-                <td><a href="../variables#text-align">text-align</a></td>
+                <td><a href="{base}/variables#text-align">text-align</a></td>
                 <td>var(--text-set-text-align)</td>
                 <td>-</td>
                 <td>-</td>

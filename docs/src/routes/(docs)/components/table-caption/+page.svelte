@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -37,7 +38,7 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
           </li>
           <li>Voeg de <code>caption</code> direct direct binnen de <code>table</code> toe.</li>
           <li>
@@ -136,19 +137,19 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="../variables#background-color">background-color</a>
+            <a href="{base}/variables#background-color">background-color</a>
           </li>
-          <li><a href="../variables#text-color">text-color</a></li>
-          <li><a href="../variables#font-size">font-size</a></li>
-          <li><a href="../variables#line-height">line-height</a></li>
-          <li><a href="../variables#padding">padding</a></li>
-          <li><a href="../variables#text-align">text-align</a></li>
+          <li><a href="{base}/variables#text-color">text-color</a></li>
+          <li><a href="{base}/variables#font-size">font-size</a></li>
+          <li><a href="{base}/variables#line-height">line-height</a></li>
+          <li><a href="{base}/variables#padding">padding</a></li>
+          <li><a href="{base}/variables#text-align">text-align</a></li>
         </ul>
       </section>
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./table-caption-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/table-caption-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

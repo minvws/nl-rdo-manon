@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
 
@@ -66,7 +67,7 @@
 
         <h3>Link als knop</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="./button-destructive-test" class="button destructive">Lorem ipsum</a>
+        <a href="{base}/components/button-destructive-test" class="button destructive">Lorem ipsum</a>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -78,7 +79,7 @@
 
         <h3>Link als knop: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="./button-destructive-test" class="button destructive" disabled>Lorem ipsum</a>
+        <a href="{base}/components/button-destructive-test" class="button destructive" disabled>Lorem ipsum</a>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -91,22 +92,22 @@
         <h4>States</h4>
         <ul>
           <li>
-            <a href="./button-destructive-test" class="button destructive focus">Focus</a>
+            <a href="{base}/components/button-destructive-test" class="button destructive focus">Focus</a>
           </li>
           <li>
-            <a href="./button-destructive-test" class="button destructive active">Active</a>
+            <a href="{base}/components/button-destructive-test" class="button destructive active">Active</a>
           </li>
           <li>
-            <a href="./button-destructive-test" class="button destructive visited">Visited</a>
+            <a href="{base}/components/button-destructive-test" class="button destructive visited">Visited</a>
           </li>
           <li>
-            <a href="./button-destructive-test" class="button destructive hover">Hover</a>
+            <a href="{base}/components/button-destructive-test" class="button destructive hover">Hover</a>
           </li>
         </ul>
 
         <h3>Link als knop: met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="./button-destructive-test" class="button destructive"
+        <a href="{base}/components/button-destructive-test" class="button destructive"
           >Lorem ipsum <img src="$img/cat.svg" /></a
         >
 

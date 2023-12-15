@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -48,7 +49,7 @@
               <li>
                 Voeg het bijbehorende Javascript-bestand toe aan het project. Voor meer informatie
                 zie:
-                <a href="../add-js">JavaScript toevoegen</a>.
+                <a href="{base}/add-js">JavaScript toevoegen</a>.
               </li>
             </ul>
           </li>
@@ -59,7 +60,7 @@
           <li>
             Voeg binnen het element een formulier met de beschikbare filteropties toe. Voor meer
             informatie over zie:
-            <a href="./forms">Formulieren</a>.
+            <a href="{base}/components/forms">Formulieren</a>.
           </li>
           <li>
             Geef het formulier met <code>aria-label</code> een korte toegankelijke naam.
@@ -283,7 +284,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>
@@ -303,32 +304,32 @@
           <li>
             Intro
             <ul>
-              <li><a href="../variables#padding">padding</a></li>
+              <li><a href="{base}/variables#padding">padding</a></li>
               <li>
-                <a href="../variables#border-width">border-width</a>
+                <a href="{base}/variables#border-width">border-width</a>
               </li>
               <li>
-                <a href="../variables#border-style">border-style</a>
+                <a href="{base}/variables#border-style">border-style</a>
               </li>
               <li>
-                <a href="../variables#border-color">border-color</a>
+                <a href="{base}/variables#border-color">border-color</a>
               </li>
-              <li><a href="../variables#font-size">font-size</a></li>
-              <li><a href="../variables#text-color">text-color</a></li>
+              <li><a href="{base}/variables#font-size">font-size</a></li>
+              <li><a href="{base}/variables#text-color">text-color</a></li>
             </ul>
           </li>
           <li>
             <code>span</code>
             <ul>
-              <li><a href="../variables#font-size">font-size</a></li>
-              <li><a href="../variables#text-color">text-color</a></li>
+              <li><a href="{base}/variables#font-size">font-size</a></li>
+              <li><a href="{base}/variables#text-color">text-color</a></li>
             </ul>
           </li>
           <li>
             <code>button</code>
             <ul>
-              <li><a href="../variables#text-color">text-color</a></li>
-              <li><a href="../variables#text-color">text-color</a></li>
+              <li><a href="{base}/variables#text-color">text-color</a></li>
+              <li><a href="{base}/variables#text-color">text-color</a></li>
             </ul>
           </li>
         </ul>
@@ -336,7 +337,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./filter-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/filter-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

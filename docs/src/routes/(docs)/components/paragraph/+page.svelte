@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -40,7 +41,7 @@
         <p>
           Voor leesbaarheid en toegankelijkheid wordt aangeraden om de maximale regellengte te
           beperken tot 80 karakters. Voor meer informatie zie:
-          <a href="./max-line-length">maximale regellengte</a> en
+          <a href="{base}/components/max-line-length">maximale regellengte</a> en
           <a href="https://www.w3.org/TR/WCAG21/#visual-presentation" rel="external"
             >w3.org - Success Criterion 1.4.8 Visual Presentation</a
           >.
@@ -75,7 +76,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -107,7 +108,7 @@
             <tbody>
               <tr>
                 <td>--p-line-height</td>
-                <td><a href="../variables#line-height">line-height</a></td>
+                <td><a href="{base}/variables#line-height">line-height</a></td>
                 <td>var(--application-base-line-height)</td>
                 <td>-</td>
                 <td>-</td>
@@ -115,7 +116,7 @@
 
               <tr>
                 <td>--p-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>var(--application-base-font-size)</td>
                 <td>-</td>
                 <td>-</td>
@@ -123,7 +124,7 @@
 
               <tr>
                 <td>--p-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>var(--application-base-font-weight)</td>
                 <td>-</td>
                 <td>-</td>
@@ -131,7 +132,7 @@
 
               <tr>
                 <td>--p-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>var(--application-base-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -139,7 +140,7 @@
 
               <tr>
                 <td>--p-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>unset</td>
                 <td>-</td>
                 <td>-</td>
@@ -169,7 +170,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./paragraph-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/paragraph-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

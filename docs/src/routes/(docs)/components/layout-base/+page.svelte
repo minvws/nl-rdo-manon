@@ -2,6 +2,10 @@
   export const breadcrumb = "Basis-layout instellen";
 </script>
 
+<script>
+  import { base } from "$app/paths";
+</script>
+
 <svelte:head>
   <title>Basis-layout instellen</title>
 </svelte:head>
@@ -16,14 +20,14 @@
           ingevuld worden die door alle hoofdelementen gebruikt worden zodra dit variabelen-bestand
           aanwezig is. Ieder hoofdelement heeft een eigen basisbestand waarbinnen unieke waardes
           ingevuld kunnen worden voor het specifieke element. Voor meer informatie zie
-          <a href="./layout-base-options">Basisweergave kiezen en instellen</a>.
+          <a href="{base}/components/layout-base-options">Basisweergave kiezen en instellen</a>.
         </p>
       </section>
 
       <section id="requirements">
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h2>Benodigd</h2>
         <ul>
@@ -45,23 +49,23 @@
             Algemene weergave:
             <ul>
               <li>
-                <a href="../variables#padding-top">padding-top</a>
+                <a href="{base}/variables#padding-top">padding-top</a>
               </li>
               <li>
-                <a href="../variables#padding-right">padding-right</a>
+                <a href="{base}/variables#padding-right">padding-right</a>
               </li>
               <li>
-                <a href="../variables#padding-bottom">padding-bottom</a>
+                <a href="{base}/variables#padding-bottom">padding-bottom</a>
               </li>
               <li>
-                <a href="../variables#padding-left">padding-left</a>
+                <a href="{base}/variables#padding-left">padding-left</a>
               </li>
-              <li><a href="../variables#max-width">max-width</a></li>
+              <li><a href="{base}/variables#max-width">max-width</a></li>
               <li>
                 Op titels en subtitels:
                 <ul>
                   <li>
-                    <a href="../variables#margin">margin</a>
+                    <a href="{base}/variables#margin">margin</a>
                   </li>
                 </ul>
               </li>
@@ -73,13 +77,13 @@
               <li>
                 Content-blok:
                 <ul>
-                  <li><a href="../variables#gap">gap</a></li>
+                  <li><a href="{base}/variables#gap">gap</a></li>
                 </ul>
               </li>
               <li>
                 Binnen dieper gelegen blok-elementen:
                 <ul>
-                  <li><a href="../variables#gap">gap</a></li>
+                  <li><a href="{base}/variables#gap">gap</a></li>
                 </ul>
               </li>
             </ul>

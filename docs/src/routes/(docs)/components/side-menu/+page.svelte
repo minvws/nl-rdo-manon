@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -176,7 +177,7 @@
             Voeg de referentie naar het Javascript bestand,
             <code>sidemenu.js</code>, toe aan de HTML-pagina's die gebruik dienen te maken van het
             inklapbare zijmenu. Voor meer informatie zie:
-            <a href="../add-js">JavaScript referentie toevoegen</a>.
+            <a href="{base}/add-js">JavaScript referentie toevoegen</a>.
           </li>
         </ol>
 
@@ -208,7 +209,7 @@
                 Voeg een kopie van het variabelenbestand
                 <code>manon/scss/sidemenu/sidemenu-variables</code> toe aan het project. Voor meer
                 informatie zie:
-                <a href="../import-styling#styling-override-variables"
+                <a href="{base}/import-styling#styling-override-variables"
                   >Componenten gebruiken en styling aanpassen - De styling van een een component
                   aanpassen</a
                 >.
@@ -336,7 +337,7 @@
             Voeg de referentie naar het Javascript bestand,
             <code>sidemenu.js</code>, toe aan de HTML-pagina's die gebruik dienen te maken van het
             inklapbare zijmenu. Voor meer informatie zie:
-            <a href="../add-js">JavaScript referentie toevoegen</a>.
+            <a href="{base}/add-js">JavaScript referentie toevoegen</a>.
           </li>
         </ol>
 
@@ -368,7 +369,7 @@
                 Voeg een kopie van het variabelenbestand
                 <code>manon/scss/sidemenu/sidemenu-variables</code> toe aan het project. Voor meer
                 informatie zie:
-                <a href="../import-styling#styling-override-variables"
+                <a href="{base}/import-styling#styling-override-variables"
                   >Componenten gebruiken en styling aanpassen - De styling van een een component
                   aanpassen</a
                 >.

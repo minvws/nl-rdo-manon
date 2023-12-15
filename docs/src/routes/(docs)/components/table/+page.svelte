@@ -2,6 +2,10 @@
   export const breadcrumb = "Tabel";
 </script>
 
+<script>
+  import { base } from "$app/paths";
+</script>
+
 <svelte:head>
   <title>Tabel</title>
 </svelte:head>
@@ -23,15 +27,15 @@
           <nav aria-labelledby="types-heading">
             <h3 id="types-heading">Types</h3>
             <ul>
-              <li><a href="./table-base">Basisweergave</a></li>
-              <li><a href="./table-sortable">Sorteerbare tabel</a></li>
+              <li><a href="{base}/components/table-base">Basisweergave</a></li>
+              <li><a href="{base}/components/table-sortable">Sorteerbare tabel</a></li>
               <li>
-                <a href="./table-expando-row">Uitklapbare tabel</a>
+                <a href="{base}/components/table-expando-row">Uitklapbare tabel</a>
               </li>
               <li>
-                <a href="./table-sticky-header">"sticky header"-tabel</a>
+                <a href="{base}/components/table-sticky-header">"sticky header"-tabel</a>
               </li>
-              <li><a href="./table-summary">Samenvattingstabel</a></li>
+              <li><a href="{base}/components/table-summary">Samenvattingstabel</a></li>
             </ul>
           </nav>
 
@@ -39,15 +43,15 @@
             <h3 id="elements-heading">Elementen</h3>
             <ul>
               <li>
-                <a href="./table-action-buttons">Actieknoppen</a>
+                <a href="{base}/components/table-action-buttons">Actieknoppen</a>
               </li>
-              <li><a href="./table-checkbox">Checkboxes</a></li>
-              <li><a href="./table-notifications">Meldingen</a></li>
+              <li><a href="{base}/components/table-checkbox">Checkboxes</a></li>
+              <li><a href="{base}/components/table-notifications">Meldingen</a></li>
               <li>
-                <a href="./table-numerical-data">Numerieke data</a>
+                <a href="{base}/components/table-numerical-data">Numerieke data</a>
               </li>
               <li>
-                <a href="./table-caption">Tabel bijschrift <code>caption</code></a>
+                <a href="{base}/components/table-caption">Tabel bijschrift <code>caption</code></a>
               </li>
             </ul>
           </nav>
@@ -56,14 +60,14 @@
             <h3 id="styling-heading">Opmaak-opties</h3>
             <ul>
               <li>
-                <a href="./table-multiple-rows">Tabeldata over meerdere rijen</a>
+                <a href="{base}/components/table-multiple-rows">Tabeldata over meerdere rijen</a>
               </li>
               <li>
-                <a href="./table-multiple-columns">Tabeldata over meerdere kolommen</a>
+                <a href="{base}/components/table-multiple-columns">Tabeldata over meerdere kolommen</a>
               </li>
-              <li><a href="./table-scope">Tabelrichting</a></li>
+              <li><a href="{base}/components/table-scope">Tabelrichting</a></li>
               <li>
-                <a href="./table-condensed">Gecomprimeerde weergave</a>
+                <a href="{base}/components/table-condensed">Gecomprimeerde weergave</a>
               </li>
             </ul>
           </nav>
@@ -72,7 +76,7 @@
             <h3 id="helper-classes-heading">Helper-classes</h3>
             <ul>
               <li>
-                <a href="../components/nowrap">nowrap</a>
+                <a href="{base}/components/nowrap">nowrap</a>
               </li>
             </ul>
           </nav>

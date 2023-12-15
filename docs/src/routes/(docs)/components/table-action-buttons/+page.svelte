@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -54,7 +55,7 @@
             Voor tabellen met lange lijsten kan het de gebruiker helpen om gebruik te maken van de
             tabel met sticky header zodat de toelichting van de iconen altijd in beeld blijft. Voor
             meer informatie zie:
-            <a href="./table-sticky-header">tabel met sticky header</a>.
+            <a href="{base}/components/table-sticky-header">tabel met sticky header</a>.
           </li>
         </ul>
       </section>
@@ -221,12 +222,12 @@
             Actieknop icoon
             <ul>
               <li>
-                <a href="../variables#background-color">background-color</a>
+                <a href="{base}/variables#background-color">background-color</a>
               </li>
-              <li><a href="../variables#text-color">text-color</a></li>
-              <li><a href="../variables#font-size">font-size</a></li>
+              <li><a href="{base}/variables#text-color">text-color</a></li>
+              <li><a href="{base}/variables#font-size">font-size</a></li>
               <li>
-                <a href="../variables#justify-content">justify-content</a>
+                <a href="{base}/variables#justify-content">justify-content</a>
               </li>
             </ul>
           </li>
@@ -234,9 +235,9 @@
             Actieknop icoon hover
             <ul>
               <li>
-                <a href="../variables#background-color">background-color</a>
+                <a href="{base}/variables#background-color">background-color</a>
               </li>
-              <li><a href="../variables#text-color">text-color</a></li>
+              <li><a href="{base}/variables#text-color">text-color</a></li>
             </ul>
           </li>
         </ul>
@@ -244,7 +245,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./table-action-buttons-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/table-action-buttons-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

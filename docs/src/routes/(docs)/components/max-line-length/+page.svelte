@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -82,7 +83,7 @@
                 <td>max-width</td>
                 <td>-</td>
                 <td>--max-line-length-max-width</td>
-                <td><a href="../variables#max-width">max-width</a></td>
+                <td><a href="{base}/variables#max-width">max-width</a></td>
                 <td>-</td>
                 <td>40rem</td>
               </tr>
@@ -91,7 +92,7 @@
                 <td rowspan="2" scope="rowgroup">hyphens</td>
                 <td>Voor breekpunt</td>
                 <td>--max-line-length-hyphens</td>
-                <td rowspan="2" scope="rowgroup"><a href="../variables#hyphens">hyphens</a></td>
+                <td rowspan="2" scope="rowgroup"><a href="{base}/variables#hyphens">hyphens</a></td>
                 <td rowspan="2" scope="rowgroup">-</td>
                 <td>auto</td>
               </tr>
@@ -107,7 +108,7 @@
                 <td>Voor breekpunt</td>
                 <td>--max-line-length-word-break</td>
                 <td rowspan="2" scope="rowgroup"
-                  ><a href="../variables#word-break">word-break</a></td
+                  ><a href="{base}/variables#word-break">word-break</a></td
                 >
                 <td rowspan="2" scope="rowgroup">-</td>
                 <td>normal</td>
@@ -146,7 +147,7 @@
         <p>Voeg de (s)css-bestanden toe aan het project of importeer de bestanden.</p>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>

@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
 
@@ -32,7 +33,7 @@
     <h2>Gebruikte componenten</h2>
     <p>
       Voor meer informatie over importeren en instellen van componenten. Zie: <a
-        href="../import-styling">Componenten gebruiken en styling toevoegen</a
+        href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a
       >
     </p>
 

@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
 
@@ -22,7 +23,7 @@
         <h3>Visuele voorbeeld:</h3>
 
         <a
-          href="./logo"
+          href="{base}/components/logo"
           class="logo"
           aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam"
         >
@@ -34,7 +35,7 @@
         <Code
           language="html"
           code={`
-<a href="./logo" class="logo" aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam">
+<a href="{base}/components/logo" class="logo" aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam">
   <img src="/logo.svg" alt="Logo bedrijfs- of product-naam" />
   Bedrijfs- of product-naam
 </a>
@@ -53,16 +54,16 @@
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="../variables#width">width</a></li>
-          <li><a href="../variables#min-width">min-width</a></li>
-          <li><a href="../variables#max-width">max-width</a></li>
-          <li><a href="../variables#height">height</a></li>
-          <li><a href="../variables#min-height">min-height</a></li>
-          <li><a href="../variables#max-height">max-height</a></li>
+          <li><a href="{base}/variables#width">width</a></li>
+          <li><a href="{base}/variables#min-width">min-width</a></li>
+          <li><a href="{base}/variables#max-width">max-width</a></li>
+          <li><a href="{base}/variables#height">height</a></li>
+          <li><a href="{base}/variables#min-height">min-height</a></li>
+          <li><a href="{base}/variables#max-height">max-height</a></li>
           <li>
-            <a href="../variables#object-position">object-position</a>
+            <a href="{base}/variables#object-position">object-position</a>
           </li>
-          <li><a href="../variables#object-fit">object-fit</a></li>
+          <li><a href="{base}/variables#object-fit">object-fit</a></li>
         </ul>
       </section>
     </div>

@@ -2,6 +2,10 @@
   export const breadcrumb = "Notificaties";
 </script>
 
+<script>
+  import { base } from "$app/paths";
+</script>
+
 <svelte:head>
   <title>Notificaties</title>
 </svelte:head>
@@ -37,18 +41,18 @@
           <nav id="notification-types">
             <h3>Notificatie-types</h3>
             <ul>
-              <li><a href="./notification-error">Foutmelding</a></li>
+              <li><a href="{base}/components/notification-error">Foutmelding</a></li>
               <li>
-                <a href="./notification-warning">Waarschuwing</a>
+                <a href="{base}/components/notification-warning">Waarschuwing</a>
               </li>
               <li>
-                <a href="./notification-confirmation">Bevestiging</a>
+                <a href="{base}/components/notification-confirmation">Bevestiging</a>
               </li>
               <li>
-                <a href="./notification-explanation">Toelichting</a>
+                <a href="{base}/components/notification-explanation">Toelichting</a>
               </li>
               <li>
-                <a href="./notification-system-message">Systeemberichten</a>
+                <a href="{base}/components/notification-system-message">Systeemberichten</a>
               </li>
             </ul>
           </nav>
@@ -57,13 +61,13 @@
             <h3>Weergaven</h3>
             <ul>
               <li>
-                <a href="./notifications-block-element">Blokelement</a>
+                <a href="{base}/components/notifications-block-element">Blokelement</a>
               </li>
               <li>
-                <a href="./notifications-paragraph">Paragraaf</a>
+                <a href="{base}/components/notifications-paragraph">Paragraaf</a>
               </li>
-              <li><a href="./notifications-table">Tabel</a></li>
-              <li><a href="./notifications-page">Pagina-notificatie</a></li>
+              <li><a href="{base}/components/notifications-table">Tabel</a></li>
+              <li><a href="{base}/components/notifications-page">Pagina-notificatie</a></li>
             </ul>
           </nav>
         </div>

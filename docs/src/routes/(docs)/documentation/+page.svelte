@@ -2,6 +2,10 @@
   export const breadcrumb = "Documentatie";
 </script>
 
+<script>
+  import { base } from "$app/paths";
+</script>
+
 <svelte:head>
   <title>Documentatie</title>
 </svelte:head>
@@ -27,11 +31,11 @@
           <li>
             <a href="#manon-quick-start">Manon gebruiken binnen een project</a>
           </li>
-          <li><a href="./add-fonts">Lettertype toevoegen</a></li>
-          <li><a href="./add-js">JavaScript toevoegen</a></li>
-          <li><a href="./variables">Variabelen</a></li>
+          <li><a href="{base}/add-fonts">Lettertype toevoegen</a></li>
+          <li><a href="{base}/add-js">JavaScript toevoegen</a></li>
+          <li><a href="{base}/variables">Variabelen</a></li>
           <li>
-            <a href="./import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
           </li>
         </ul>
       </nav>

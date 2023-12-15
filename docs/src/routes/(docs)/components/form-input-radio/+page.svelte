@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -130,7 +131,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Aandachtspunten:</h3>
@@ -175,7 +176,7 @@
             <tbody>
               <tr>
                 <td>--radio-gap</td>
-                <td><a href="../variables#gap">gap</a></td>
+                <td><a href="{base}/variables#gap">gap</a></td>
                 <td>0.75rem</td>
                 <td>-</td>
                 <td rowspan="7" scope="rowgroup">radio-button</td>
@@ -183,42 +184,42 @@
 
               <tr>
                 <td>--radio-align-items</td>
-                <td><a href="../variables#align-items">align-items</a></td>
+                <td><a href="{base}/variables#align-items">align-items</a></td>
                 <td>center</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--radio-width</td>
-                <td><a href="../variables#width">width</a></td>
+                <td><a href="{base}/variables#width">width</a></td>
                 <td>1.25rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--radio-height</td>
-                <td><a href="../variables#height">height</a></td>
+                <td><a href="{base}/variables#height">height</a></td>
                 <td>1.25rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--radio-accent-color</td>
-                <td><a href="../variables#accent-color">accent-color</a></td>
+                <td><a href="{base}/variables#accent-color">accent-color</a></td>
                 <td>var(--branding-color-1, initial)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--radio-label-width</td>
-                <td><a href="../variables#width">width</a></td>
+                <td><a href="{base}/variables#width">width</a></td>
                 <td>auto</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--radio-required-gap</td>
-                <td><a href="../variables#gap">gap</a></td>
+                <td><a href="{base}/variables#gap">gap</a></td>
                 <td>var(--application-base-gap-small)</td>
                 <td>-</td>
               </tr>
@@ -255,7 +256,7 @@
       </section>
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./form-input-radio-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/form-input-radio-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

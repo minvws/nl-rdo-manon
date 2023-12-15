@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -124,7 +125,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -163,7 +164,7 @@
               <tbody>
                 <tr>
                   <td>--layout-fifty-fifty-gap</td>
-                  <td><a href="../variables#gap">gap</a></td>
+                  <td><a href="{base}/variables#gap">gap</a></td>
                   <td>var(--content-gap, 2rem)</td>
                   <td>42rem</td>
                   <td>-</td>
@@ -171,7 +172,7 @@
 
                 <tr>
                   <td>--layout-fifty-fifty-breakpoint-gap</td>
-                  <td><a href="../variables#gap">gap</a></td>
+                  <td><a href="{base}/variables#gap">gap</a></td>
                   <td>var(--layout-fifty-fifty-gap)</td>
                   <td>42rem</td>
                   <td>-</td>
@@ -204,7 +205,7 @@
 
         <section id="related">
           <h2>Gerelateerde pagina's</h2>
-          <a href="./layout-fifty-fifty-test">Test- en voorbeelden-pagina</a>
+          <a href="{base}/components/layout-fifty-fifty-test">Test- en voorbeelden-pagina</a>
         </section>
       </section>
     </div>

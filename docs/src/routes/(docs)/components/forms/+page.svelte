@@ -2,6 +2,10 @@
   export const breadcrumb = "Formulieren";
 </script>
 
+<script>
+  import { base } from "$app/paths";
+</script>
+
 <svelte:head>
   <title>Formulieren</title>
 </svelte:head>
@@ -23,36 +27,36 @@
             <h3 id="form-types-title">Formulierelementen</h3>
             <ul>
               <li>
-                <a href="./form-input-range">Bereik - <code>range</code></a>
+                <a href="{base}/components/form-input-range">Bereik - <code>range</code></a>
               </li>
               <li>
-                <a href="./form-input-file">Bestand - <code>file</code></a>
+                <a href="{base}/components/form-input-file">Bestand - <code>file</code></a>
               </li>
-              <li><a href="./form-input-date">Datum</a></li>
-              <li><a href="./form-input-email">Email</a></li>
+              <li><a href="{base}/components/form-input-date">Datum</a></li>
+              <li><a href="{base}/components/form-input-email">Email</a></li>
               <li>
-                <a href="./form-input">Invoerveld - <code>input</code></a>
+                <a href="{base}/components/form-input">Invoerveld - <code>input</code></a>
               </li>
               <li>
                 Kleurselector
                 <ul>
                   <li>
-                    <a href="./form-input-color">Kleurselector</a>
+                    <a href="{base}/components/form-input-color">Kleurselector</a>
                   </li>
                   <li>
-                    <a href="./form-input-color-filled">Kleurselector volledig gevuld</a>
+                    <a href="{base}/components/form-input-color-filled">Kleurselector volledig gevuld</a>
                   </li>
                 </ul>
               </li>
-              <li><a href="./form-notification">Notificatie</a></li>
-              <li><a href="./form-input-radio">Radio-selecteerknop - <code>radio</code></a></li>
-              <li><a href="./form-input-password">Wachtwoord</a></li>
-              <li><a href="./checkbox">Selectievak - <code>checkbox</code></a></li>
+              <li><a href="{base}/components/form-notification">Notificatie</a></li>
+              <li><a href="{base}/components/form-input-radio">Radio-selecteerknop - <code>radio</code></a></li>
+              <li><a href="{base}/components/form-input-password">Wachtwoord</a></li>
+              <li><a href="{base}/components/checkbox">Selectievak - <code>checkbox</code></a></li>
               <li>
-                <a href="./form-input-textarea">Tekstveld - <code>textarea</code></a>
+                <a href="{base}/components/form-input-textarea">Tekstveld - <code>textarea</code></a>
               </li>
               <li>
-                <a href="./form-select">Selectielijst - <code>select</code></a>
+                <a href="{base}/components/form-select">Selectielijst - <code>select</code></a>
               </li>
             </ul>
           </nav>
@@ -61,13 +65,13 @@
             <h3 id="form-fieldset-components-title">Fieldset</h3>
 
             <ul>
-              <li><a href="./form-fieldset">Fieldset</a></li>
-              <li><a href="./form-fieldset-invisible">Onzichtbare fieldset</a></li>
+              <li><a href="{base}/components/form-fieldset">Fieldset</a></li>
+              <li><a href="{base}/components/form-fieldset-invisible">Onzichtbare fieldset</a></li>
               <li>
-                <a href="./fieldset-radio">Fieldset radio-selecteerknop - <code>radio</code></a>
+                <a href="{base}/components/fieldset-radio">Fieldset radio-selecteerknop - <code>radio</code></a>
               </li>
               <li>
-                <a href="./fieldset-checkbox">Fieldset selectievak - <code>checkbox</code></a>
+                <a href="{base}/components/fieldset-checkbox">Fieldset selectievak - <code>checkbox</code></a>
               </li>
             </ul>
           </nav>
@@ -75,28 +79,28 @@
           <nav aria-labelledby="form-layouts-title" id="form-layouts">
             <h3 id="form-layouts-title">Weergaven</h3>
             <ul>
-              <li><a href="./form-base">Basisweergave</a></li>
+              <li><a href="{base}/components/form-base">Basisweergave</a></li>
               <li>
-                <a href="./form-accent-color">Accentkleur op formulierelementen</a>
+                <a href="{base}/components/form-accent-color">Accentkleur op formulierelementen</a>
               </li>
               <li>
-                <a href="./form-combined-fields">Gecombineerde formuliervelden</a>
+                <a href="{base}/components/form-combined-fields">Gecombineerde formuliervelden</a>
               </li>
               <li>
-                <a href="./form-columns">Weergave in kolommen</a>
+                <a href="{base}/components/form-columns">Weergave in kolommen</a>
               </li>
               <li>
-                <a href="./form-horizontal-view">Horizontaal uitgelijnd formulier</a>
+                <a href="{base}/components/form-horizontal-view">Horizontaal uitgelijnd formulier</a>
               </li>
-              <li><a href="./form-inline">"inline"-formulier</a></li>
+              <li><a href="{base}/components/form-inline">"inline"-formulier</a></li>
             </ul>
           </nav>
 
           <nav id="form-communication">
             <h3>Berichten en meldingen</h3>
             <ul>
-              <li><a href="./form-required">Verplichte velden</a></li>
-              <li><a href="./form-help">Hulpteksten</a></li>
+              <li><a href="{base}/components/form-required">Verplichte velden</a></li>
+              <li><a href="{base}/components/form-help">Hulpteksten</a></li>
             </ul>
           </nav>
         </div>

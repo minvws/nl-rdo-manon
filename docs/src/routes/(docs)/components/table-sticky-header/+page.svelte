@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -56,7 +57,7 @@
               <li><code>explanation</code></li>
               <li><code>primary</code></li>
             </ul>
-            Zie<a href="./notifications">Notifications</a> voor meer informatie.
+            Zie<a href="{base}/components/notifications">Notifications</a> voor meer informatie.
           </li>
         </ul>
       </section>
@@ -208,7 +209,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./table-sticky-header-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/table-sticky-header-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
 
@@ -27,8 +28,8 @@
           <li>
             Voeg iconen toe aan het project.
             <ul>
-              <li><a href="./iconset-create">Iconset aanmaken</a></li>
-              <li><a href="./iconset-add">Iconset toevoegen</a></li>
+              <li><a href="{base}/components/iconset-create">Iconset aanmaken</a></li>
+              <li><a href="{base}/components/iconset-add">Iconset toevoegen</a></li>
             </ul>
           </li>
           <li>
@@ -70,7 +71,7 @@
         <p>
           <strong>Let op:</strong> Voeg eerst een iconenset toe aan het project met indien nodig een
           eigen referentielijst. Voor meer informatie zie:
-          <a href="./iconset-add">Iconset toevoegen</a>
+          <a href="{base}/components/iconset-add">Iconset toevoegen</a>
         </p>
 
         <h4>Visueel voorbeeld:</h4>
@@ -90,14 +91,14 @@
         <ol>
           <li>
             Voeg het icoonlettertype toe aan het project. Voor informatie zie:
-            <a href="./iconset-add">Icoonset toevoegen</a>.
+            <a href="{base}/components/iconset-add">Icoonset toevoegen</a>.
           </li>
           <li>
             Defineer het lettertype binnen het bestand
             <code>manon/icon/icon-base-variables</code> via de variabele
             <code>font-family</code>. Bijvoorbeeld:
             <code>--icon-font-family: "Manon icons";</code>. Zie ook
-            <a href="../import-styling#styling-override-variables"
+            <a href="{base}/import-styling#styling-override-variables"
               >De styling van een component aanpassen</a
             >.
           </li>
@@ -107,13 +108,13 @@
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="../variables#font-family">font-family</a></li>
+          <li><a href="{base}/variables#font-family">font-family</a></li>
         </ul>
       </section>
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./icons-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/icons-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

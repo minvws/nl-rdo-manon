@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
 
@@ -45,7 +46,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -78,7 +79,7 @@
             <tbody>
               <tr>
                 <td>--notification-explanation-page-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>var(--explanation-background-color)</td>
                 <td>-</td>
                 <td rowspan="24" scope="rowgroup">explanation</td>
@@ -86,161 +87,161 @@
 
               <tr>
                 <td>--notification-explanation-page-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
                 <td>var(--explanation-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-border-width</td>
-                <td><a href="../variables#border-width">border-width</a></td>
+                <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>var(--notification-border-width)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-border-style</td>
-                <td><a href="../variables#border-style">border-style</a></td>
+                <td><a href="{base}/variables#border-style">border-style</a></td>
                 <td>var(--notification-border-style)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-border-color</td>
-                <td><a href="../variables#border-color">border-color</a></td>
+                <td><a href="{base}/variables#border-color">border-color</a></td>
                 <td>var(--explanation-border-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-padding-top</td>
-                <td><a href="../variables#padding-top">padding-top</a></td>
+                <td><a href="{base}/variables#padding-top">padding-top</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-padding-right</td>
-                <td><a href="../variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/variables#padding-right">padding-right</a></td>
                 <td>var(--page-whitespace-right)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td> --notification-explanation-page-padding-bottom</td>
-                <td><a href="../variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-padding-left</td>
-                <td><a href="../variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/variables#padding-left">padding-left</a></td>
                 <td>var(--page-whitespace-left)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-gap</td>
-                <td><a href="../variables#gap">gap</a></td>
+                <td><a href="{base}/variables#gap">gap</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-span-font-weight</td>
-                <td><a href="../variables#span-font-weight">span-font-weight</a></td>
+                <td><a href="{base}/variables#span-font-weight">span-font-weight</a></td>
                 <td>var(--notification-span-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-pagecontent-wrapper-padding-top</td>
-                <td><a href="../variables#padding-top">padding-top</a></td>
+                <td><a href="{base}/variables#padding-top">padding-top</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-pagecontent-wrapper-padding-right</td>
-                <td><a href="../variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/variables#padding-right">padding-right</a></td>
                 <td>var(--content-padding-right)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td> --notification-explanation-pagecontent-wrapper-padding-bottom</td>
-                <td><a href="../variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-pagecontent-wrapper-padding-left</td>
-                <td><a href="../variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/variables#padding-left">padding-left</a></td>
                 <td>var(--content-padding-left)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-pagecontent-wrapper-gap</td>
-                <td><a href="../variables#gap">gap</a></td>
+                <td><a href="{base}/variables#gap">gap</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-pagecontent-wrapper-span-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-icon-font-family</td>
-                <td><a href="../variables#font-family">font-family</a></td>
+                <td><a href="{base}/variables#font-family">font-family</a></td>
                 <td>var(--notification-icon-font-family)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-icon-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>var(--notification-icon-font-size)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-icon-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
                 <td>var(--notification-icon-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-icon-padding-right</td>
-                <td><a href="../variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/variables#padding-right">padding-right</a></td>
                 <td>var(--notification-icon-padding-right)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-icon-padding-left</td>
-                <td><a href="../variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/variables#padding-left">padding-left</a></td>
                 <td>var(--notification-icon-padding-left)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-icon-margin-right</td>
-                <td><a href="../variables#margin-right">margin-right</a></td>
+                <td><a href="{base}/variables#margin-right">margin-right</a></td>
                 <td>var(--notification-icon-margin-right)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-explanation-page-icon</td>
-                <td><a href="../variables#content">content</a></td>
+                <td><a href="{base}/variables#content">content</a></td>
                 <td>var(--notification-icon)</td>
                 <td>-</td>
               </tr>

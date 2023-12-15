@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -44,7 +45,7 @@
                 Door middel van variabelen binnen de CSS of door middel van classes binnen de HTML.
                 Maak gebruik van de CSS-variabelen waar mogelijk en voeg alleen de classes toe in de
                 HTML voor uitzonderingen om de code aanpasbaar en overzichtelijk te houden. Voor
-                meer informatie hierover zie <a href="../use-css-variable"
+                meer informatie hierover zie <a href="{base}/use-css-variable"
                   >CSS-variabelen gebruiken</a
                 >.
               </li>
@@ -95,7 +96,7 @@
 `}
         />
         <p>
-          Voor meer informatie hierover zie <a href="../use-css-variable"
+          Voor meer informatie hierover zie <a href="{base}/use-css-variable"
             >CSS-variabelen gebruiken</a
           >.
         </p>
@@ -110,7 +111,7 @@
         <p>
           De knoppen binnen het "button-base"-bestand maken gebruik van de accentkleur als deze
           binnen het "application-base"-bestand gedefinieerd staat. Voor meer informatie zie <a
-            href="../use-css-variable">CSS-variabelen gebruiken</a
+            href="{base}/use-css-variable">CSS-variabelen gebruiken</a
           >.
         </p>
 
@@ -136,7 +137,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>
@@ -172,37 +173,37 @@
 
               <tr>
                 <td>--branding-color-1-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-1-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-1-link-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-1-link-active-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-1-link-visited-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-1-link-hover-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-1-link-visited-hover-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
@@ -214,37 +215,37 @@
 
               <tr>
                 <td>--branding-color-2-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-2-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-2-link-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-2-link-active-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-2-link-visited-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-2-link-hover-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-2-link-visited-hover-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
@@ -256,37 +257,37 @@
 
               <tr>
                 <td>--branding-color-3-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-3-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-3-link-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-3-link-active-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-3-link-visited-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-3-link-hover-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-3-link-visited-hover-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
               </tr>
             </tbody>
           </table>

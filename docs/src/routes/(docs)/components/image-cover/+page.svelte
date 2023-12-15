@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -71,7 +72,7 @@
         <h3>Op een tegel</h3>
         <p>
           Dit voorbeeld maakt gebruik van
-          <a href="./tiles#single-tile">Tegelweergave</a>.
+          <a href="{base}/components/tiles#single-tile">Tegelweergave</a>.
         </p>
         <div role="group" class="tile image-cover">
           <img src="$img/strand.jpg" alt="Foto van een strand" />
@@ -97,7 +98,7 @@
         <h3>Op een groep met tegels</h3>
         <p>
           Dit voorbeeld maakt gebruik van
-          <a href="./tiles">Tegelweergave</a>.
+          <a href="{base}/components/tiles">Tegelweergave</a>.
         </p>
         <div class="tiles image-covers column-3">
           <div role="group">
@@ -159,7 +160,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>
@@ -176,15 +177,15 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="../variables#object-position">object-position</a>
+            <a href="{base}/variables#object-position">object-position</a>
           </li>
-          <li><a href="../variables#max-height">max-height</a></li>
+          <li><a href="{base}/variables#max-height">max-height</a></li>
         </ul>
       </section>
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./image-cover-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/image-cover-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

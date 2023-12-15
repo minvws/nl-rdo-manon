@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -48,7 +49,7 @@
           <code>table</code>
           of de omliggende <code>div</code> zullen alle onderliggende tekst-elementen niet afbreken.
           Verschillende voorbeelden en opties zijn beschikbaar op de
-          <a href="./nowrap-test">Test- en voorbeelden-pagina</a>.
+          <a href="{base}/components/nowrap-test">Test- en voorbeelden-pagina</a>.
         </p>
       </section>
 
@@ -57,7 +58,7 @@
         <h3>Basis</h3>
         <p class="explanation">
           <span>Toelichting:</span> In dit voorbeeld wordt er ook gebruik gemaakt van de
-          <dfn>helper-class</dfn> <a href="./horizontal-scroll">horizontal-scroll</a> om te
+          <dfn>helper-class</dfn> <a href="{base}/components/horizontal-scroll">horizontal-scroll</a> om te
           voorkomen dat het voorbeeld-element de layout van de pagina breekt. Zonder deze toevoeging
           zou de tekst het scherm uitlopen. De class <code>horizontal-scroll</code> voegt op de maximale
           beschikbare breedte de scrollbalk toe.
@@ -165,7 +166,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Benodigd</h3>
@@ -181,7 +182,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./nowrap-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/nowrap-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

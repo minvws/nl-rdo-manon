@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -223,70 +224,70 @@
               <tr>
                 <td rowspan="10" scope="rowgroup">table</td>
                 <td>--table-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>var(--application-font-size)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>var(--application-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-line-height</td>
-                <td><a href="../variables#line-height">line-height</a></td>
+                <td><a href="{base}/variables#line-height">line-height</a></td>
                 <td>var(--application-line-height)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-cell-padding</td>
-                <td><a href="../variables#cell-padding">cell-padding</a></td>
+                <td><a href="{base}/variables#cell-padding">cell-padding</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>transparent</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>var(--application-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-text-align</td>
-                <td><a href="../variables#text-align">text-align</a></td>
+                <td><a href="{base}/variables#text-align">text-align</a></td>
                 <td>var(--application-text-align)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-border-width</td>
-                <td><a href="../variables#border-width">border-width</a></td>
+                <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>0</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-border-style</td>
-                <td><a href="../variables#border-style">border-style</a></td>
+                <td><a href="{base}/variables#border-style">border-style</a></td>
                 <td>solid</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-border-color</td>
-                <td><a href="../variables#border-color">border-color</a></td>
+                <td><a href="{base}/variables#border-color">border-color</a></td>
                 <td>transparent</td>
                 <td>-</td>
               </tr>
@@ -294,42 +295,42 @@
               <tr>
                 <td rowspan="6" scope="rowgroup">thead</td>
                 <td>--table-backround-color</td>
-                <td><a href="../variables#backround-color">backround-color</a></td>
+                <td><a href="{base}/variables#backround-color">backround-color</a></td>
                 <td>var(--application-accent-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>var(--application-base-accent-color-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-border-width</td>
-                <td><a href="../variables#border-width">border-width</a></td>
+                <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>var(--table-border-width)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-border-style</td>
-                <td><a href="../variables#border-style">border-style</a></td>
+                <td><a href="{base}/variables#border-style">border-style</a></td>
                 <td>var(--table-border-style)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-border-color</td>
-                <td><a href="../variables#border-color">border-color</a></td>
+                <td><a href="{base}/variables#border-color">border-color</a></td>
                 <td>var(--table-border-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-text-align</td>
-                <td><a href="../variables#text-align">text-align</a></td>
+                <td><a href="{base}/variables#text-align">text-align</a></td>
                 <td>var(--table-text-align)</td>
                 <td>-</td>
               </tr>
@@ -337,42 +338,42 @@
               <tr>
                 <td rowspan="6" scope="rowgroup">th</td>
                 <td>--table-head-cell-cell-padding</td>
-                <td><a href="../variables#cell-padding">cell-padding</a></td>
+                <td><a href="{base}/variables#cell-padding">cell-padding</a></td>
                 <td>var(--table-cells-padding)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-head-cell-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>bolder</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-head-cell-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>var(--table-font-size)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-head-cell-border-width</td>
-                <td><a href="../variables#border-width">border-width</a></td>
+                <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>var(--table-border-width)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-head-cell-border-style</td>
-                <td><a href="../variables#border-style">border-style</a></td>
+                <td><a href="{base}/variables#border-style">border-style</a></td>
                 <td>var(--table-border-style)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-head-cell-border-color</td>
-                <td><a href="../variables#border-color">border-color</a></td>
+                <td><a href="{base}/variables#border-color">border-color</a></td>
                 <td>var(--table-border-color)</td>
                 <td>-</td>
               </tr>
@@ -380,56 +381,56 @@
               <tr>
                 <td rowspan="8" scope="rowgroup">th within tbody</td>
                 <td>--table-body-head-cell-padding</td>
-                <td><a href="../variables#cell-padding">cell-padding</a></td>
+                <td><a href="{base}/variables#cell-padding">cell-padding</a></td>
                 <td>var(--table-cells-padding)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-body-head-cell-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>bolder</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-body-head-cell-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>var(--table-background-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-body-head-cell-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>var(--table-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-body-head-cell-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>var(--table-font-size)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-body-head-cell-border-width</td>
-                <td><a href="../variables#border-width">border-width</a></td>
+                <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>var(--table-border-width)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-body-head-cell-border-style</td>
-                <td><a href="../variables#border-style">border-style</a></td>
+                <td><a href="{base}/variables#border-style">border-style</a></td>
                 <td>var(--table-border-style)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-body-head-cell-border-color</td>
-                <td><a href="../variables#border-color">border-color</a></td>
+                <td><a href="{base}/variables#border-color">border-color</a></td>
                 <td>var(--table-border-color)</td>
                 <td>-</td>
               </tr>
@@ -437,28 +438,28 @@
               <tr>
                 <td rowspan="4" scope="rowgroup">Table row - Zebra striping</td>
                 <td>--table-row-background-color-striping</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>rgba(148, 148, 148, 0.1)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-row-border-width</td>
-                <td><a href="../variables#width">width</a></td>
+                <td><a href="{base}/variables#width">width</a></td>
                 <td>var(--table-border-width)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-row-border-style</td>
-                <td><a href="../variables#border-style">border-style</a></td>
+                <td><a href="{base}/variables#border-style">border-style</a></td>
                 <td>var(--table-border-style)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-row-border-color</td>
-                <td><a href="../variables#border-color">border-color</a></td>
+                <td><a href="{base}/variables#border-color">border-color</a></td>
                 <td>var(--table-border-color)</td>
                 <td>-</td>
               </tr>
@@ -466,42 +467,42 @@
               <tr>
                 <td rowspan="6" scope="rowgroup">Table cell (td)</td>
                 <td>--table-cell-padding</td>
-                <td><a href="../variables#padding">padding</a></td>
+                <td><a href="{base}/variables#padding">padding</a></td>
                 <td>var(--table-cells-padding)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-cell-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>transparent</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-cell-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>var(--table-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-cell-border-width</td>
-                <td><a href="../variables#border-width">border-width</a></td>
+                <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>1px</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-cell-border-style</td>
-                <td><a href="../variables#border-style">border-style</a></td>
+                <td><a href="{base}/variables#border-style">border-style</a></td>
                 <td>solid</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-cell-border-color</td>
-                <td><a href="../variables#border-color">border-color</a></td>
+                <td><a href="{base}/variables#border-color">border-color</a></td>
                 <td>#ccc</td>
                 <td>-</td>
               </tr>
@@ -509,21 +510,21 @@
               <tr>
                 <td rowspan="3" scope="rowgroup">Table cells within the first row</td>
                 <td>--table-first-row-cell-border-width</td>
-                <td><a href="../variables#border-width">border-width</a></td>
+                <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>var(--table-cell-border-width)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-first-row-cell-border-style</td>
-                <td><a href="../variables#border-style">border-style</a></td>
+                <td><a href="{base}/variables#border-style">border-style</a></td>
                 <td>var(--table-cell-border-style)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-first-row-cell-border-color</td>
-                <td><a href="../variables#border-color">border-color</a></td>
+                <td><a href="{base}/variables#border-color">border-color</a></td>
                 <td>var(--table-cell-border-color)</td>
                 <td>-</td>
               </tr>
@@ -531,21 +532,21 @@
               <tr>
                 <td rowspan="3" scope="rowgroup">Table cells within the last row</td>
                 <td>--table-last-row-cell-border-width</td>
-                <td><a href="../variables#border-width">border-width</a></td>
+                <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>var(--table-cell-border-width)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-last-row-cell-border-style</td>
-                <td><a href="../variables#border-style">border-style</a></td>
+                <td><a href="{base}/variables#border-style">border-style</a></td>
                 <td>var(--table-cell-border-style)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-last-row-cell-border-color</td>
-                <td><a href="../variables#border-color">border-color</a></td>
+                <td><a href="{base}/variables#border-color">border-color</a></td>
                 <td>var(--table-cell-border-color)</td>
                 <td>-</td>
               </tr>
@@ -553,56 +554,56 @@
               <tr>
                 <td rowspan="8" scope="rowgroup">Table footer</td>
                 <td>--table-foot-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>#ddd</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-padding</td>
-                <td><a href="../variables#padding">padding</a></td>
+                <td><a href="{base}/variables#padding">padding</a></td>
                 <td>var(--table-cells-padding)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>var(--table-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>var(--table-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>var(--table-font-size)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-border-width</td>
-                <td><a href="../variables#border-width">border-width</a></td>
+                <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>var(--table-border-width)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-border-style</td>
-                <td><a href="../variables#border-style">border-style</a></td>
+                <td><a href="{base}/variables#border-style">border-style</a></td>
                 <td>var(--table-border-style)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-border-color</td>
-                <td><a href="../variables#border-color">border-color</a></td>
+                <td><a href="{base}/variables#border-color">border-color</a></td>
                 <td>var(--table-border-color)</td>
                 <td>-</td>
               </tr>
@@ -610,56 +611,56 @@
               <tr>
                 <td rowspan="8" scope="rowgroup">Table footer head</td>
                 <td>--table-foot-header-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>transparent</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-header-padding</td>
-                <td><a href="../variables#padding">padding</a></td>
+                <td><a href="{base}/variables#padding">padding</a></td>
                 <td>var(--table-foot-padding)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-header-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>var(--table-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-header-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>var(--table-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-header-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>var(--table-font-size)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-header-border-width</td>
-                <td><a href="../variables#border-width">border-width</a></td>
+                <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>var(--table-border-width)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-header-border-style</td>
-                <td><a href="../variables#border-style">border-style</a></td>
+                <td><a href="{base}/variables#border-style">border-style</a></td>
                 <td>var(--table-border-style)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-header-border-color</td>
-                <td><a href="../variables#border-color">border-color</a></td>
+                <td><a href="{base}/variables#border-color">border-color</a></td>
                 <td>var(--table-border-color)</td>
                 <td>-</td>
               </tr>
@@ -667,56 +668,56 @@
               <tr>
                 <td rowspan="8" scope="rowgroup">Table footer cell styling</td>
                 <td>--table-foot-cell-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>#f0f0f0</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-cell-padding</td>
-                <td><a href="../variables#padding">padding</a></td>
+                <td><a href="{base}/variables#padding">padding</a></td>
                 <td>var(--table-foot-padding)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-cell-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>var(--table-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-cell-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>var(--table-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-cell-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>var(--table-font-size)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-cell-border-width</td>
-                <td><a href="../variables#border-width">border-width</a></td>
+                <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>var(--table-border-width)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-cell-border-style</td>
-                <td><a href="../variables#border-style">border-style</a></td>
+                <td><a href="{base}/variables#border-style">border-style</a></td>
                 <td>var(--table-border-style)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--table-foot-cell-border-color</td>
-                <td><a href="../variables#border-color">border-color</a></td>
+                <td><a href="{base}/variables#border-color">border-color</a></td>
                 <td>var(--table-border-color)</td>
                 <td>-</td>
               </tr>

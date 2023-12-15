@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -30,7 +31,7 @@
           <li>
             Voeg <code>class="tile"</code> toe voor de Gegroepeerde content binnen tegels op een
             enkel element. Voor meer informatie zie:
-            <a href="./tiles">tegelweergave</a>
+            <a href="{base}/components/tiles">tegelweergave</a>
           </li>
           <li>
             Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
@@ -77,20 +78,20 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="../variables#flex-direction">flex-direction</a>
+            <a href="{base}/variables#flex-direction">flex-direction</a>
           </li>
-          <li><a href="../variables#gap">gap</a></li>
-          <li><a href="../variables#border-width">border-width</a></li>
-          <li><a href="../variables#border-style">border-style</a></li>
-          <li><a href="../variables#border-color">border-color</a></li>
-          <li><a href="../variables#padding-top">padding-top</a></li>
+          <li><a href="{base}/variables#gap">gap</a></li>
+          <li><a href="{base}/variables#border-width">border-width</a></li>
+          <li><a href="{base}/variables#border-style">border-style</a></li>
+          <li><a href="{base}/variables#border-color">border-color</a></li>
+          <li><a href="{base}/variables#padding-top">padding-top</a></li>
           <li>
-            <a href="../variables#padding-right">padding-right</a>
+            <a href="{base}/variables#padding-right">padding-right</a>
           </li>
           <li>
-            <a href="../variables#padding-bottom">padding-bottom</a>
+            <a href="{base}/variables#padding-bottom">padding-bottom</a>
           </li>
-          <li><a href="../variables#padding-left">padding-left</a></li>
+          <li><a href="{base}/variables#padding-left">padding-left</a></li>
         </ul>
       </section>
 
@@ -98,7 +99,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>
@@ -115,7 +116,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./tile-groups-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/tile-groups-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -33,7 +34,7 @@
           <code>layout-base-variables.scss</code> indien dit aanwezig is. Als de header, main en
           footer stijlkeuzes delen is het efficient om de keuzes in te stellen in dat bestand om
           herhaling en inconsitentie te voorkomen. Voor meer informatie zie:
-          <a href="./layout-base">Basisweergave instellen</a>.
+          <a href="{base}/components/layout-base">Basisweergave instellen</a>.
         </p>
 
         <h2>Benodigde stappen:</h2>
@@ -42,7 +43,7 @@
             Kies de gewenste basisweergaven. Voor beschikbare weergaven zie:
             <a href="#layout-base">Basis-weergave</a>. Voor meer informatie over het kiezen van de
             juiste weergave en het instellen ervan zie:
-            <a href="./layout-base-options">Basisweergave kiezen en instellen</a>.
+            <a href="{base}/components/layout-base-options">Basisweergave kiezen en instellen</a>.
           </li>
           <li>
             Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
@@ -64,7 +65,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Benodigd</h3>
@@ -83,20 +84,20 @@
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="../variables#padding-top">padding-top</a></li>
+          <li><a href="{base}/variables#padding-top">padding-top</a></li>
           <li>
-            <a href="../variables#padding-right">padding-right</a>
+            <a href="{base}/variables#padding-right">padding-right</a>
           </li>
           <li>
-            <a href="../variables#padding-bottom">padding-bottom</a>
+            <a href="{base}/variables#padding-bottom">padding-bottom</a>
           </li>
-          <li><a href="../variables#padding-left">padding-left</a></li>
-          <li><a href="../variables#max-width">max-width</a></li>
+          <li><a href="{base}/variables#padding-left">padding-left</a></li>
+          <li><a href="{base}/variables#max-width">max-width</a></li>
           <li>
             Eerste element:
             <ul>
               <li>
-                <a href="../variables#padding-top">padding-top</a>
+                <a href="{base}/variables#padding-top">padding-top</a>
               </li>
             </ul>
           </li>
@@ -104,14 +105,14 @@
             Laatste element:
             <ul>
               <li>
-                <a href="../variables#padding-bottom">padding-bottom</a>
+                <a href="{base}/variables#padding-bottom">padding-bottom</a>
               </li>
             </ul>
           </li>
           <li>
             Top level blokken en onderliggende blokken:
             <ul>
-              <li><a href="../variables#gap">gap</a></li>
+              <li><a href="{base}/variables#gap">gap</a></li>
             </ul>
           </li>
         </ul>

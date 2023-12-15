@@ -49,7 +49,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 
           <p>
             Gaat de inhoud van het zijmenu over de inhoud van de content. En hoort het bij de
-            content. Gebruik dan: <a href="./in-page">Zijmenu binnen de pagina</a>.
+            content. Gebruik dan: <a href="{base}/components/sidemenu/in-page">Zijmenu binnen de pagina</a>.
           </p>
 
           <nav aria-labelledby="table-of-contents">

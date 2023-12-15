@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
 
@@ -19,7 +20,7 @@
         <ol>
           <li>
             Maak een icoonlettertype of importeer een icoonlettertype. Voor meer informatie zie:
-            <a href="./iconset-create">Iconenset aanmaken</a>
+            <a href="{base}/components/iconset-create">Iconenset aanmaken</a>
           </li>
           <li>
             Bij een eigen icoonlettertype of bij het importeren van een iconenset zonder
@@ -29,7 +30,7 @@
           <li>
             Voeg bij een eigen opgestelde referentielijst het bestand toe aan het project via
             <code>manon.scss</code>. Voor meer informatie zie:
-            <a href="../import-styling">Styling importeren</a>.
+            <a href="{base}/import-styling">Styling importeren</a>.
           </li>
           <li>
             Voeg het icoonlettertype toe aan het project binnen:

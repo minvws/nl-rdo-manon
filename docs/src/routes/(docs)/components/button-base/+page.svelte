@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
 
@@ -74,7 +75,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Import scss-file</h3>
         <Code
@@ -110,133 +111,133 @@
               <tr>
                 <th>--button-base-flex</th>
                 <td>--button-base-flex</td>
-                <td><a href="../variables#display">display</a></td>
+                <td><a href="{base}/variables#display">display</a></td>
                 <td>inline-flex</td>
               </tr>
 
               <tr>
                 <th>--button-base-gap</th>
                 <td>--button-base-gap</td>
-                <td><a href="../variables#gap">gap</a></td>
+                <td><a href="{base}/variables#gap">gap</a></td>
                 <td>0.5rem</td>
               </tr>
 
               <tr>
                 <th>--button-base-padding-top</th>
                 <td>--button-base-padding-top</td>
-                <td><a href="../variables#padding-top">padding-top</a></td>
+                <td><a href="{base}/variables#padding-top">padding-top</a></td>
                 <td>0.25rem</td>
               </tr>
 
               <tr>
                 <th>--button-base-padding-right</th>
                 <td>--button-base-padding-right</td>
-                <td><a href="../variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/variables#padding-right">padding-right</a></td>
                 <td>1rem</td>
               </tr>
 
               <tr>
                 <th>--button-base-padding-bottom</th>
                 <td>--button-base-padding-bottom</td>
-                <td><a href="../variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
                 <td>0.25rem</td>
               </tr>
 
               <tr>
                 <th>--button-base-padding-left</th>
                 <td>--button-base-padding-left</td>
-                <td><a href="../variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/variables#padding-left">padding-left</a></td>
                 <td>1rem</td>
               </tr>
 
               <tr>
                 <th>--button-base-justify-content</th>
                 <td>--button-base-justify-content</td>
-                <td><a href="../variables#justify-content">justify-content</a></td>
+                <td><a href="{base}/variables#justify-content">justify-content</a></td>
                 <td>center</td>
               </tr>
 
               <tr>
                 <th>--button-base-min-width</th>
                 <td>--button-base-min-width</td>
-                <td><a href="../variables#min-width">min-width</a></td>
+                <td><a href="{base}/variables#min-width">min-width</a></td>
                 <td>8rem</td>
               </tr>
 
               <tr>
                 <th>--button-base-min-height</th>
                 <td>--button-base-min-height</td>
-                <td><a href="../variables#min-height">min-height</a></td>
+                <td><a href="{base}/variables#min-height">min-height</a></td>
                 <td>2.75rem</td>
               </tr>
 
               <tr>
                 <th>--button-base-background-color</th>
                 <td>--button-base-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>var(--application-base-accent-color)</td>
               </tr>
 
               <tr>
                 <th>--button-base-text-color</th>
                 <td>--button-base-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
                 <td>var(--application-base-accent-color-text-color)</td>
               </tr>
 
               <tr>
                 <th>--button-base-border-width</th>
                 <td>--button-base-border-width</td>
-                <td><a href="../variables#border-width">border-width</a></td>
+                <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>none</td>
               </tr>
 
               <tr>
                 <th>--button-base-border-style</th>
                 <td>--button-base-border-style</td>
-                <td><a href="../variables#border-style">border-style</a></td>
+                <td><a href="{base}/variables#border-style">border-style</a></td>
                 <td>unset</td>
               </tr>
 
               <tr>
                 <th>--button-base-border-color</th>
                 <td>--button-base-border-color</td>
-                <td><a href="../variables#border-color">border-color</a></td>
+                <td><a href="{base}/variables#border-color">border-color</a></td>
                 <td>transparent</td>
               </tr>
 
               <tr>
                 <th>--button-base-font-size</th>
                 <td>--button-base-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>var(--application-base-font-size)</td>
               </tr>
 
               <tr>
                 <th>--button-base-line-height</th>
                 <td>--button-base-line-height</td>
-                <td><a href="../variables#line-height">line-height</a></td>
+                <td><a href="{base}/variables#line-height">line-height</a></td>
                 <td>var(--application-base-line-height)</td>
               </tr>
 
               <tr>
                 <th>--button-base-font-weight</th>
                 <td>--button-base-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>var(--application-base-font-weight)</td>
               </tr>
 
               <tr>
                 <th>--button-base-text-decoration</th>
                 <td>--button-base-text-decoration</td>
-                <td><a href="../variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/variables#text-decoration">text-decoration</a></td>
                 <td>none</td>
               </tr>
 
               <tr>
                 <th>--button-base-border-radius</th>
                 <td>--button-base-border-radius</td>
-                <td><a href="../variables#border-radius">border-radius</a></td>
+                <td><a href="{base}/variables#border-radius">border-radius</a></td>
                 <td>var(--application-base-border-radius)</td>
               </tr>
             </tbody>
@@ -246,7 +247,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./button-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/button-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

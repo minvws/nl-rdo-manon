@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -38,7 +39,7 @@
               <li>
                 Voeg het bijbehorende Javascript-bestand toe aan het project. Voor meer informatie
                 zie:
-                <a href="../add-js">JavaScript toevoegen</a>.
+                <a href="{base}/add-js">JavaScript toevoegen</a>.
               </li>
             </ul>
           </li>
@@ -214,7 +215,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>
@@ -233,50 +234,50 @@
           <li>
             <code>button</code>
             <ul>
-              <li><a href="../variables#width">width</a></li>
-              <li><a href="../variables#height">height</a></li>
+              <li><a href="{base}/variables#width">width</a></li>
+              <li><a href="{base}/variables#height">height</a></li>
               <li>
-                <a href="../variables#padding-top">padding-top</a>
+                <a href="{base}/variables#padding-top">padding-top</a>
               </li>
               <li>
-                <a href="../variables#padding-right">padding-right</a>
+                <a href="{base}/variables#padding-right">padding-right</a>
               </li>
               <li>
-                <a href="../variables#padding-bottom">padding-bottom</a>
+                <a href="{base}/variables#padding-bottom">padding-bottom</a>
               </li>
               <li>
-                <a href="../variables#padding-left">padding-left</a>
+                <a href="{base}/variables#padding-left">padding-left</a>
               </li>
-              <li><a href="../variables#top">top</a></li>
-              <li><a href="../variables#right">right</a></li>
+              <li><a href="{base}/variables#top">top</a></li>
+              <li><a href="{base}/variables#right">right</a></li>
               <li>
-                <a href="../variables#border-width">border-width</a>
-              </li>
-              <li>
-                <a href="../variables#border-style">border-style</a>
+                <a href="{base}/variables#border-width">border-width</a>
               </li>
               <li>
-                <a href="../variables#border-color">border-color</a>
+                <a href="{base}/variables#border-style">border-style</a>
               </li>
               <li>
-                <a href="../variables#border-radius">border-radius</a>
+                <a href="{base}/variables#border-color">border-color</a>
               </li>
               <li>
-                <a href="../variables#background-color">background-color</a>
+                <a href="{base}/variables#border-radius">border-radius</a>
               </li>
-              <li><a href="../variables#text-color">text-color</a></li>
+              <li>
+                <a href="{base}/variables#background-color">background-color</a>
+              </li>
+              <li><a href="{base}/variables#text-color">text-color</a></li>
             </ul>
           </li>
           <li>
             Icoon
             <ul>
-              <li><a href="../variables#content">content</a></li>
-              <li><a href="../variables#font-size">font-size</a></li>
+              <li><a href="{base}/variables#content">content</a></li>
+              <li><a href="{base}/variables#font-size">font-size</a></li>
               <li>
-                <a href="../variables#font-weight">font-weight</a>
+                <a href="{base}/variables#font-weight">font-weight</a>
               </li>
               <li>
-                <a href="../variables#line-height">line-height</a>
+                <a href="{base}/variables#line-height">line-height</a>
               </li>
             </ul>
           </li>
@@ -284,14 +285,14 @@
 
         <p>Bijbehorende elementen:</p>
         <ul>
-          <li><a href="./form-base">form-base</a></li>
+          <li><a href="{base}/components/form-base">form-base</a></li>
           <li>Formulierelementen</li>
         </ul>
       </section>
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./form-help-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/form-help-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

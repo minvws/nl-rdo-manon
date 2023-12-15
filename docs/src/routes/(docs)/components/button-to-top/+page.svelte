@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -79,7 +80,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -110,7 +111,7 @@
             <tbody>
               <tr>
                 <td>--button-to-top-position</td>
-                <td><a href="../variables#position">position</a></td>
+                <td><a href="{base}/variables#position">position</a></td>
                 <td>fixed</td>
                 <td>-</td>
                 <td rowspan="4" scope="rowgroup">to-top</td>
@@ -118,119 +119,119 @@
 
               <tr>
                 <td>--button-to-top-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>var(--application-base-accent-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-text-color</td>
-                <td><a href="../variables#color">color</a></td>
+                <td><a href="{base}/variables#color">color</a></td>
                 <td>var(--application-base-accent-color-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-bottom</td>
-                <td><a href="../variables#bottom">bottom</a></td>
+                <td><a href="{base}/variables#bottom">bottom</a></td>
                 <td>1rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-right</td>
-                <td><a href="../variables#right">right</a></td>
+                <td><a href="{base}/variables#right">right</a></td>
                 <td>1rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-left</td>
-                <td><a href="../variables#left">left</a></td>
+                <td><a href="{base}/variables#left">left</a></td>
                 <td>auto</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>0</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-width</td>
-                <td><a href="../variables#width">width</a></td>
+                <td><a href="{base}/variables#width">width</a></td>
                 <td>2.75rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-height</td>
-                <td><a href="../variables#height">height</a></td>
+                <td><a href="{base}/variables#height">height</a></td>
                 <td>2.75rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-min-height</td>
-                <td><a href="../variables#min-height">min-height</a></td>
+                <td><a href="{base}/variables#min-height">min-height</a></td>
                 <td>var(--button-to-top-width)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-min-width</td>
-                <td><a href="../variables#min-width">min-width</a></td>
+                <td><a href="{base}/variables#min-width">min-width</a></td>
                 <td>var(--button-to-top-height)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-border-radius</td>
-                <td><a href="../variables#border-radius">border-radius</a></td>
+                <td><a href="{base}/variables#border-radius">border-radius</a></td>
                 <td>50%</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-border-width</td>
-                <td><a href="../variables#border-width">border-width</a></td>
+                <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>0</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-border-style</td>
-                <td><a href="../variables#border-style">border-style</a></td>
+                <td><a href="{base}/variables#border-style">border-style</a></td>
                 <td>solid</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-border-color</td>
-                <td><a href="../variables#border-color">border-color</a></td>
+                <td><a href="{base}/variables#border-color">border-color</a></td>
                 <td>transparent</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-hover-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>var(--application-base-accent-color-hover)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-hover-text-color</td>
-                <td><a href="../variables#color">text-color</a></td>
+                <td><a href="{base}/variables#color">text-color</a></td>
                 <td>var(--application-base-accent-color-hover-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-hover-border-color</td>
-                <td><a href="../variables#border-color">text-border-color</a></td>
+                <td><a href="{base}/variables#border-color">text-border-color</a></td>
                 <td>transparent</td>
                 <td>-</td>
               </tr>
