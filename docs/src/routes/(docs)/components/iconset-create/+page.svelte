@@ -112,11 +112,11 @@
 
 .icon,
 .icon-only {
-  &amp;:before {
+  &:before {
     @include icon;
   }
 
-  &amp;.icon-cat:before {
+  &.icon-cat:before {
     content: var(--icon-cat);
     font-family: "Manon icons";
   }
@@ -136,11 +136,11 @@
           code={`
 .icon,
 .icon-only {
-  &amp;:before {
+  &:before {
     @include icon;
   }
 
-  &amp;.icon-cat:before {
+  &.icon-cat:before {
     content: var(--icon-cat);
     font-family: "Manon icons";
   }
@@ -155,11 +155,11 @@
           code={`
 .icon,
 .icon-only {
-  &amp;:after {
+  &:after {
     @include icon;
   }
 
-  &amp;.icon-cat:after {
+  &.icon-cat:after {
     content: var(--icon-cat);
     font-family: "Manon icons";
   }
@@ -179,13 +179,13 @@
           code={`
 .icon,
 .icon-only {
-  &amp;:before,
-  &amp;:after {
+  &:before,
+  &:after {
     @include icon;
   }
 
-  &amp;.icon-cat-before:before,
-  &amp;.icon-cat-after:after {
+  &.icon-cat-before:before,
+  &.icon-cat-after:after {
     content: var(--icon-cat);
     font-family: "Manon icons";
   }

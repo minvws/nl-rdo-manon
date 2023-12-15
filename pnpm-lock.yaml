@@ -7,6 +7,10 @@ settings:
 importers:
 
   docs:
+    dependencies:
+      highlight.js:
+        specifier: ^11.9.0
+        version: 11.9.0
     devDependencies:
       '@minvws/manon':
         specifier: workspace:*
@@ -38,9 +42,6 @@ importers:
       svelte-check:
         specifier: ^3.6.2
         version: 3.6.2(sass@1.69.5)(svelte@4.2.8)
-      svelte-highlight:
-        specifier: ^7.4.2
-        version: 7.4.2
       svelte-preprocess-import-assets:
         specifier: ^1.1.0
         version: 1.1.0(svelte@4.2.8)
@@ -1063,7 +1064,7 @@ packages:
   /highlight.js@11.9.0:
     resolution: {integrity: sha512-fJ7cW7fQGCYAkgv4CPfwFHrfd/cLS4Hau96JuJ+ZTOWhjnhoeN1ub1tFmALm/+lW5z4WCAuAV9bm05AP0mS6Gw==}
     engines: {node: '>=12.0.0'}
-    dev: true
+    dev: false
 
   /hosted-git-info@4.1.0:
     resolution: {integrity: sha512-kyCuEOWjJqZuDbRHzL8V93NzQhwIB71oFWSyzVo+KPZI+pnQPPxucdkrOZvkLRnrf5URsQM+IJ09Dw29cRALIA==}
@@ -2006,12 +2007,6 @@ packages:
       - sass
       - stylus
       - sugarss
-    dev: true
-
-  /svelte-highlight@7.4.2:
-    resolution: {integrity: sha512-J0AGYK1bJCc5t4P8bT7NuCc0224XurJKF57YUJPxj8sqbfAYICyom5+spF2fyPHGKgZtkX8jNQLGwHgPzfCapA==}
-    dependencies:
-      highlight.js: 11.9.0
     dev: true
 
   /svelte-hmr@0.15.3(svelte@4.2.8):
