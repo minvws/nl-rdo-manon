@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -105,7 +106,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Aandachtspunten:</h3>
@@ -150,7 +151,7 @@
             <tbody>
               <tr>
                 <td>--link-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>transparent</td>
                 <td>-</td>
                 <td rowspan="4" scope="rowgroup">links</td>
@@ -158,14 +159,14 @@
 
               <tr>
                 <td>--link-text-color</td>
-                <td><a href="../variables#text-color">color</a></td>
+                <td><a href="{base}/variables#text-color">color</a></td>
                 <td>#2f2f9a</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--link-text-decoration</td>
-                <td><a href="../variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/variables#text-decoration">text-decoration</a></td>
                 <td>initial</td>
                 <td>-</td>
               </tr>

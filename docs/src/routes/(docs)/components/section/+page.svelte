@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -72,7 +73,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -104,7 +105,7 @@
             <tbody>
               <tr>
                 <td>--section-flex-direction</td>
-                <td><a href="../variables#flex-direction">flex-direction</a></td>
+                <td><a href="{base}/variables#flex-direction">flex-direction</a></td>
                 <td>var(--content-flex-direction)</td>
                 <td>-</td>
                 <td>-</td>
@@ -112,7 +113,7 @@
 
               <tr>
                 <td>--section-justify-content</td>
-                <td><a href="../variables#justify-content">justify-content</a></td>
+                <td><a href="{base}/variables#justify-content">justify-content</a></td>
                 <td>var(--content-justify-content)</td>
                 <td>-</td>
                 <td>-</td>
@@ -120,7 +121,7 @@
 
               <tr>
                 <td>--section-align-items</td>
-                <td><a href="../variables#align-items">align-items</a></td>
+                <td><a href="{base}/variables#align-items">align-items</a></td>
                 <td>var(--content-align-items)</td>
                 <td>-</td>
                 <td>-</td>
@@ -128,7 +129,7 @@
 
               <tr>
                 <td>--section-gap</td>
-                <td><a href="../variables#gap">gap</a></td>
+                <td><a href="{base}/variables#gap">gap</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -136,7 +137,7 @@
 
               <tr>
                 <td>--section-padding-top</td>
-                <td><a href="../variables#padding-top">padding-top</a></td>
+                <td><a href="{base}/variables#padding-top">padding-top</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -144,7 +145,7 @@
 
               <tr>
                 <td>--section-padding-right</td>
-                <td><a href="../variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/variables#padding-right">padding-right</a></td>
                 <td>var(--page-whitespace-right)</td>
                 <td>-</td>
                 <td>-</td>
@@ -152,7 +153,7 @@
 
               <tr>
                 <td>--section-padding-bottom</td>
-                <td><a href="../variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -160,7 +161,7 @@
 
               <tr>
                 <td>--section-padding-left</td>
-                <td><a href="../variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/variables#padding-left">padding-left</a></td>
                 <td>var(--page-whitespace-left)</td>
                 <td>-</td>
                 <td>-</td>
@@ -168,7 +169,7 @@
 
               <tr>
                 <td>--section-max-width</td>
-                <td><a href="../variables#max-width">max-width</a></td>
+                <td><a href="{base}/variables#max-width">max-width</a></td>
                 <td>100%</td>
                 <td>-</td>
                 <td>-</td>
@@ -208,7 +209,7 @@
               <a href="section-test">Sectie test</a> Testpagina met de content gegroepeerd binnen
               <code>section</code>'s.
             </li>
-            <li><a href="./section-content-wrapper">Sectie content wrapper</a></li>
+            <li><a href="{base}/components/section-content-wrapper">Sectie content wrapper</a></li>
           </ul>
         </nav>
       </section>

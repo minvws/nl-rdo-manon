@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -78,7 +79,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -109,7 +110,7 @@
             <tbody>
               <tr>
                 <td>--horizontal-center-max-width</td>
-                <td><a href="../variables#max-width">max-width</a></td>
+                <td><a href="{base}/variables#max-width">max-width</a></td>
                 <td>var(--body-text-small-max-width)</td>
                 <td>-</td>
                 <td>horizontal-center</td>
@@ -135,7 +136,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./horizontal-center-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/horizontal-center-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

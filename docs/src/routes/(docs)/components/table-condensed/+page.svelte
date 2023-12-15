@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -38,7 +39,7 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
           </li>
           <li>Voeg de class <code>condensed</code> toe op de <code>table</code>.</li>
         </ol>
@@ -138,7 +139,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./table-condensed-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/table-condensed-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

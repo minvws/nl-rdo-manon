@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -49,9 +50,9 @@
 <nav class="breadcrumb-bar">
     <div>
         <ul>
-            <li><a href="../components">Componenten</a></li>
+            <li><a href="{base}/components">Componenten</a></li>
             <li>
-                <a href="./breadcrumb-bar" aria-current="page">Kruimelpad - breadcrumb-bar</a>
+                <a href="{base}/components/breadcrumb-bar" aria-current="page">Kruimelpad - breadcrumb-bar</a>
             </li>
         </ul>
     </div>
@@ -69,9 +70,9 @@
     <nav aria-label="Hoofdnavigatie">
         <div>
             <ul>
-                <li><a href="../../index">Home</a></li>
-                <li><a href="../components">Componenten</a></li>
-                <li><a href="../documentation">Documentatie</a></li>
+                <li><a href="{base}/../index">Home</a></li>
+                <li><a href="{base}/components">Componenten</a></li>
+                <li><a href="{base}/documentation">Documentatie</a></li>
             </ul>
         </div>
     </nav>
@@ -79,9 +80,9 @@
     <nav class="breadcrumb-bar">
         <div>
             <ul>
-                <li><a href="../components">Componenten</a></li>
+                <li><a href="{base}/components">Componenten</a></li>
                 <li>
-                    <a href="./breadcrumb-bar" aria-current="page">Kruimelpad - breadcrumb-bar</a>
+                    <a href="{base}/components/breadcrumb-bar" aria-current="page">Kruimelpad - breadcrumb-bar</a>
                 </li>
             </ul>
         </div>

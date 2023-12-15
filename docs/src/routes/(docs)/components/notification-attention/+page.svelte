@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -78,7 +79,7 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
           </li>
           <li>
             Voeg de benodigde HTML toe. Zie het voorbeeld per element voor de implementatiedetails.
@@ -170,7 +171,7 @@
 
         <p>
           Voor meer informatie zie:
-          <a href="./notifications-block-element">Blok-element</a>
+          <a href="{base}/components/notifications-block-element">Blok-element</a>
         </p>
 
         <h3 id="attention-paragraph">Paragraaf</h3>
@@ -694,7 +695,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>

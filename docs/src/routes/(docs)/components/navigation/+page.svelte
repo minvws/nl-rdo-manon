@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -248,7 +249,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Aandachtspunten:</h3>
@@ -293,7 +294,7 @@
             <tbody>
               <tr>
                 <td>--links-font-size</td>
-                <td><a href="../variables#font-size">font-size</a></td>
+                <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>var(--body-text-small-font-size)</td>
                 <td>-</td>
                 <td rowspan="4" scope="rowgroup">links</td>
@@ -301,21 +302,21 @@
 
               <tr>
                 <td>--links-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>var(--body-text-small-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--links-line-height</td>
-                <td><a href="../variables#line-height">line-height</a></td>
+                <td><a href="{base}/variables#line-height">line-height</a></td>
                 <td>var(--body-text-small-line-height)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--links-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>var(--body-text-small-color)</td>
                 <td>-</td>
               </tr>

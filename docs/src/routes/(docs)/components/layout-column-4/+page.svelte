@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
 
@@ -151,7 +152,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./layout-column-4-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/layout-column-4-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

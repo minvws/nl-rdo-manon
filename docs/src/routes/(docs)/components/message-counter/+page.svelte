@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
 
@@ -89,20 +90,20 @@
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="../variables#padding">padding</a></li>
+          <li><a href="{base}/variables#padding">padding</a></li>
           <li>
-            <a href="../variables#border-radius">border-radius</a>
+            <a href="{base}/variables#border-radius">border-radius</a>
           </li>
-          <li><a href="../variables#font-size">font-size</a></li>
+          <li><a href="{base}/variables#font-size">font-size</a></li>
           <li>
-            <a href="../variables#background-color">background-color</a>
+            <a href="{base}/variables#background-color">background-color</a>
           </li>
-          <li><a href="../variables#text-color">text-color</a></li>
-          <li><a href="../variables#height">height</a></li>
-          <li><a href="../variables#min-width">min-width</a></li>
-          <li><a href="../variables#border-width">border-width</a></li>
-          <li><a href="../variables#border-style">border-style</a></li>
-          <li><a href="../variables#border-color">border-color</a></li>
+          <li><a href="{base}/variables#text-color">text-color</a></li>
+          <li><a href="{base}/variables#height">height</a></li>
+          <li><a href="{base}/variables#min-width">min-width</a></li>
+          <li><a href="{base}/variables#border-width">border-width</a></li>
+          <li><a href="{base}/variables#border-style">border-style</a></li>
+          <li><a href="{base}/variables#border-color">border-color</a></li>
         </ul>
       </section>
 

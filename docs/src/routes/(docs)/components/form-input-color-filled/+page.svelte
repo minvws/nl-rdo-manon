@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -82,7 +83,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>
@@ -105,14 +106,14 @@
 
         <p>Bijbehorende elementen:</p>
         <ul>
-          <li><a href="./form-base">form-base</a></li>
-          <li><a href="./form-input">form-input</a></li>
+          <li><a href="{base}/components/form-base">form-base</a></li>
+          <li><a href="{base}/components/form-input">form-input</a></li>
         </ul>
       </section>
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./form-input-color-filled-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/form-input-color-filled-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

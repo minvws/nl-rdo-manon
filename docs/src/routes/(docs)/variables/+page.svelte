@@ -2,6 +2,10 @@
   export const breadcrumb = "Variabelen";
 </script>
 
+<script>
+  import { base } from "$app/paths";
+</script>
+
 <svelte:head>
   <title>Variabelen</title>
 </svelte:head>
@@ -439,7 +443,7 @@
                 <code>sans-serif</code>, <code>serif</code>, of een lettertype dat beschikbaar is
                 binnen het project <code>"Manon icons"</code>. Voor het toevoegen van lettertypes
                 aan het project zie:
-                <a href="./add-fonts">Lettertype toevoegen</a>.
+                <a href="{base}/add-fonts">Lettertype toevoegen</a>.
               </td>
             </tr>
 

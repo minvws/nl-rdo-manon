@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -95,7 +96,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>
@@ -134,16 +135,16 @@
             Paragraaf variabelen
             <ul>
               <li>
-                <a href="../variables#padding-top">padding-top</a>
+                <a href="{base}/variables#padding-top">padding-top</a>
               </li>
               <li>
-                <a href="../variables#padding-right">padding-right</a>
+                <a href="{base}/variables#padding-right">padding-right</a>
               </li>
               <li>
-                <a href="../variables#padding-bottom">padding-bottom</a>
+                <a href="{base}/variables#padding-bottom">padding-bottom</a>
               </li>
               <li>
-                <a href="../variables#padding-left">padding-left</a>
+                <a href="{base}/variables#padding-left">padding-left</a>
               </li>
             </ul>
           </li>
@@ -152,7 +153,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./notifications-paragraph-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/notifications-paragraph-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

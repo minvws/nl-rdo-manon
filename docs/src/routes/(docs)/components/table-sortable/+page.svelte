@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -36,7 +37,7 @@
           </li>
           <li>
             Voeg binnen de knop een icoon toe indien gewenst. Voor meer informatie zie:
-            <a href="./button-icon">Icoonknoppen</a>
+            <a href="{base}/components/button-icon">Icoonknoppen</a>
           </li>
           <li>
             Voeg <code>abbr=""</code> toe aan de <code>&lt;th&gt;</code> met een korte duidelijke omschrijving

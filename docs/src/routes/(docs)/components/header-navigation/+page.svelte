@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -46,20 +47,20 @@
       <section id="examples">
         <h1>Voorbeelden:</h1>
         <ul>
-          <li><a href="./header-navigation/example">Navigatie</a></li>
+          <li><a href="{base}/components/header-navigation/example">Navigatie</a></li>
           <li>
-            <a href="./header-navigation/example-content-wrapper">Navigatie met content wrapper</a>
+            <a href="{base}/components/header-navigation/example-content-wrapper">Navigatie met content wrapper</a>
           </li>
-          <li><a href="./header-navigation/example-logo">Navigatie en logo</a></li>
-          <li><a href="./header-navigation/example-logo-above">Navigatie met Logo bovenaan</a></li>
+          <li><a href="{base}/components/header-navigation/example-logo">Navigatie en logo</a></li>
+          <li><a href="{base}/components/header-navigation/example-logo-above">Navigatie met Logo bovenaan</a></li>
           <li>
-            <a href="./header-navigation/example-multiple-menus">Navigatie met meerdere menu's</a>
-          </li>
-          <li>
-            <a href="./header-navigation/example-language-select-list">Navigatie taalselectie</a>
+            <a href="{base}/components/header-navigation/example-multiple-menus">Navigatie met meerdere menu's</a>
           </li>
           <li>
-            <a href="./header-navigation/example-form-button">Navigatie met formulier knop</a>
+            <a href="{base}/components/header-navigation/example-language-select-list">Navigatie taalselectie</a>
+          </li>
+          <li>
+            <a href="{base}/components/header-navigation/example-form-button">Navigatie met formulier knop</a>
           </li>
         </ul>
       </section>
@@ -69,7 +70,7 @@
         <p>Voeg de (s)css-bestanden toe aan het project of importeer de bestanden.</p>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h2>Importeer component via NPM</h2>
         <h3>CSS-voorbeeld:</h3>
@@ -98,7 +99,7 @@
             <tbody>
               <tr>
                 <td>--header-navigation-flex-direction</td>
-                <td><a href="../variables#flex-direction">flex-direction</a></td>
+                <td><a href="{base}/variables#flex-direction">flex-direction</a></td>
                 <td>column</td>
                 <td>-</td>
                 <td>-</td>
@@ -106,7 +107,7 @@
 
               <tr>
                 <td>--header-navigation-gap</td>
-                <td><a href="../variables#gap">gap</a></td>
+                <td><a href="{base}/variables#gap">gap</a></td>
                 <td>var(--application-base-gap-medium)</td>
                 <td>-</td>
                 <td>-</td>
@@ -114,7 +115,7 @@
 
               <tr>
                 <td>--header-navigation-justify-content</td>
-                <td><a href="../variables#justify-content">justify-content</a></td>
+                <td><a href="{base}/variables#justify-content">justify-content</a></td>
                 <td>center</td>
                 <td>-</td>
                 <td>-</td>
@@ -122,7 +123,7 @@
 
               <tr>
                 <td>--header-navigation-align-items</td>
-                <td><a href="../variables#align-items">align-items</a></td>
+                <td><a href="{base}/variables#align-items">align-items</a></td>
                 <td>flex-start</td>
                 <td>-</td>
                 <td>-</td>
@@ -130,7 +131,7 @@
 
               <tr>
                 <td>--header-navigation-flex-wrap</td>
-                <td><a href="../variables#flex-wrap">flex-wrap</a></td>
+                <td><a href="{base}/variables#flex-wrap">flex-wrap</a></td>
                 <td>wrap</td>
                 <td>-</td>
                 <td>-</td>
@@ -138,7 +139,7 @@
 
               <tr>
                 <td>--header-navigation-min-height</td>
-                <td><a href="../variables#min-height">min-height</a></td>
+                <td><a href="{base}/variables#min-height">min-height</a></td>
                 <td>10rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -146,7 +147,7 @@
 
               <tr>
                 <td>--header-navigation-background-color</td>
-                <td><a href="../variables#background-color">background-color</a></td>
+                <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>var(--application-base-tint-1-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -154,7 +155,7 @@
 
               <tr>
                 <td>--header-navigation-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>var(--application-base-tint-1-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -162,7 +163,7 @@
 
               <tr>
                 <td>--header-navigation-padding-top</td>
-                <td><a href="../variables#padding-top">padding-top</a></td>
+                <td><a href="{base}/variables#padding-top">padding-top</a></td>
                 <td>var(--content-padding-top)</td>
                 <td>-</td>
                 <td>-</td>
@@ -170,7 +171,7 @@
 
               <tr>
                 <td>--header-navigation-padding-right</td>
-                <td><a href="../variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/variables#padding-right">padding-right</a></td>
                 <td>5%</td>
                 <td>-</td>
                 <td>-</td>
@@ -178,7 +179,7 @@
 
               <tr>
                 <td>--header-navigation-padding-bottom</td>
-                <td><a href="../variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
                 <td>var(--content-padding-bottom)</td>
                 <td>-</td>
                 <td>-</td>
@@ -186,7 +187,7 @@
 
               <tr>
                 <td>--header-navigation-padding-left</td>
-                <td><a href="../variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/variables#padding-left">padding-left</a></td>
                 <td>5%</td>
                 <td>-</td>
                 <td>-</td>
@@ -194,7 +195,7 @@
 
               <tr>
                 <td>--header-navigation-max-width</td>
-                <td><a href="../variables#max-width">max-width</a></td>
+                <td><a href="{base}/variables#max-width">max-width</a></td>
                 <td>100%</td>
                 <td>-</td>
                 <td>-</td>
@@ -202,7 +203,7 @@
 
               <tr>
                 <td>--header-navigation-link-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>var(--header-navigation-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -210,7 +211,7 @@
 
               <tr>
                 <td>--header-navigation-link-text-decoration</td>
-                <td><a href="../variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/variables#text-decoration">text-decoration</a></td>
                 <td>none</td>
                 <td>-</td>
                 <td>-</td>
@@ -218,7 +219,7 @@
 
               <tr>
                 <td>--header-navigation-link-hover-text-color</td>
-                <td><a href="../variables#text-color">text-color</a></td>
+                <td><a href="{base}/variables#text-color">text-color</a></td>
                 <td>var(--header-navigation-link-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -226,7 +227,7 @@
 
               <tr>
                 <td>--header-navigation-link-hover-text-decoration</td>
-                <td><a href="../variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/variables#text-decoration">text-decoration</a></td>
                 <td>underline</td>
                 <td>-</td>
                 <td>-</td>

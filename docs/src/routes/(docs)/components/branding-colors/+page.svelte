@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
 
@@ -26,9 +27,9 @@
             <h2>Finn</h2>
             <p>Set met gelijkwaardige kleuren</p>
             <ul>
-              <li><a href="./finn-small">Klein (twee kleuren)</a></li>
-              <li><a href="./finn-medium">Middel (drie kleuren)</a></li>
-              <li><a href="./finn-large">Groot (vijf kleuren)</a></li>
+              <li><a href="{base}/components/finn-small">Klein (twee kleuren)</a></li>
+              <li><a href="{base}/components/finn-medium">Middel (drie kleuren)</a></li>
+              <li><a href="{base}/components/finn-large">Groot (vijf kleuren)</a></li>
             </ul>
           </nav>
 
@@ -36,15 +37,15 @@
             <h2>Spot</h2>
             <p>Huisstijlkleuren met accentkleuren</p>
             <ul>
-              <li><a href="./spot-mini">Spot mini (twee hoofdkleuren en een accentkleur)</a></li>
+              <li><a href="{base}/components/spot-mini">Spot mini (twee hoofdkleuren en een accentkleur)</a></li>
               <li>
-                <a href="./spot-small">Spot klein (twee hoofdkleuren en twee accentkleuren)</a>
+                <a href="{base}/components/spot-small">Spot klein (twee hoofdkleuren en twee accentkleuren)</a>
               </li>
               <li>
-                <a href="./spot-medium">Spot middel (twee hoofdkleuren en drie accentkleuren)</a>
+                <a href="{base}/components/spot-medium">Spot middel (twee hoofdkleuren en drie accentkleuren)</a>
               </li>
               <li>
-                <a href="./spot-large">Spot groot (twee hoofdkleuren en vijf accentkleuren)</a>
+                <a href="{base}/components/spot-large">Spot groot (twee hoofdkleuren en vijf accentkleuren)</a>
               </li>
             </ul>
           </nav>

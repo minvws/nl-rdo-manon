@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -41,10 +42,10 @@
             </li>
             <li><a href="#tiles">Groep met tegels</a></li>
             <li>
-              <a href="./tile-cover-image">Tegel met cover-afbeelding</a>
+              <a href="{base}/components/tile-cover-image">Tegel met cover-afbeelding</a>
             </li>
             <li>
-              <a href="./tile-groups">Gegroepeerde content binnen tegels</a>
+              <a href="{base}/components/tile-groups">Gegroepeerde content binnen tegels</a>
             </li>
           </ul>
         </nav>
@@ -161,33 +162,33 @@
             Tegel
             <ul>
               <li>
-                <a href="../variables#border-width">border-width</a>
+                <a href="{base}/variables#border-width">border-width</a>
               </li>
               <li>
-                <a href="../variables#border-style">border-style</a>
+                <a href="{base}/variables#border-style">border-style</a>
               </li>
               <li>
-                <a href="../variables#border-color">border-color</a>
+                <a href="{base}/variables#border-color">border-color</a>
               </li>
               <li>
-                <a href="../variables#flex-direction">flex-direction</a>
+                <a href="{base}/variables#flex-direction">flex-direction</a>
               </li>
-              <li><a href="../variables#gap">gap</a></li>
-              <li><a href="../variables#padding">padding</a></li>
+              <li><a href="{base}/variables#gap">gap</a></li>
+              <li><a href="{base}/variables#padding">padding</a></li>
             </ul>
           </li>
           <li>
             Titel
             <ul>
-              <li><a href="../variables#text-color">text-color</a></li>
-              <li><a href="../variables#font-size">font-size</a></li>
+              <li><a href="{base}/variables#text-color">text-color</a></li>
+              <li><a href="{base}/variables#font-size">font-size</a></li>
             </ul>
           </li>
           <li>
             Subtitel
             <ul>
-              <li><a href="../variables#text-color">text-color</a></li>
-              <li><a href="../variables#font-size">font-size</a></li>
+              <li><a href="{base}/variables#text-color">text-color</a></li>
+              <li><a href="{base}/variables#font-size">font-size</a></li>
             </ul>
           </li>
         </ul>
@@ -197,7 +198,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>
@@ -212,7 +213,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./tiles-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/tiles-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

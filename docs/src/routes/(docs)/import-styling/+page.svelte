@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
 
@@ -90,7 +91,7 @@
           Vul het gekopieerde variabelenbestand in met de gewenste stijlkeuzes om de styling van een
           component te overschrijven via de beschikbare variabelen. Voor informatie over het
           aanpassen en overschrijven van variabelen zie
-          <a href="./variables">variabelen</a>
+          <a href="{base}/variables">variabelen</a>
         </li>
         <li>
           Voeg de referentie naar het nieuwe bestand toe aan het

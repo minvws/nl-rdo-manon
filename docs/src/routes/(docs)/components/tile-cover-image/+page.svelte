@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -29,14 +30,14 @@
           <li>
             Voeg <code>class="tile"</code> toe voor de Tegelweergave met cover-afbeelding op een
             enkel element. Voor meer informatie zie:
-            <a href="./tiles">tegelweergave</a>
+            <a href="{base}/components/tiles">tegelweergave</a>
           </li>
           <li>
             Voeg de class <code>image-cover</code> toe voor de correcte weergave. Voor meer
             informatie zie: <a href="#tile-image-cover">tegel met cover-afbeelding</a> of
             <a href="#tiles-image-cover">groep met tegels met cover-afbeelding</a>. Voor meer
             informatie over cover-afbeelding zie
-            <a href="./image-cover">cover-afbeelding</a>
+            <a href="{base}/components/image-cover">cover-afbeelding</a>
           </li>
         </ul>
       </section>
@@ -155,7 +156,7 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="../variables#object-position">object-position</a>
+            <a href="{base}/variables#object-position">object-position</a>
           </li>
         </ul>
       </section>
@@ -164,7 +165,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>

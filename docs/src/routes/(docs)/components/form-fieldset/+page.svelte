@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -85,7 +86,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -116,7 +117,7 @@
             <tbody>
               <tr>
                 <td>--form-fieldset-fields-margin-top</td>
-                <td><a href="../variables#margin-top">margin-top</a></td>
+                <td><a href="{base}/variables#margin-top">margin-top</a></td>
                 <td>var(--application-base-gap, 1rem)</td>
                 <td>-</td>
                 <td>-</td>
@@ -124,7 +125,7 @@
 
               <tr>
                 <td>--form-fieldset-legend-font-weight</td>
-                <td><a href="../variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/variables#font-weight">font-weight</a></td>
                 <td>var(--headings-font-weight, bold)</td>
                 <td>-</td>
                 <td>-</td>
@@ -132,7 +133,7 @@
 
               <tr>
                 <td>--form-fieldset-legend-margin-bottom</td>
-                <td><a href="../variables#margin-bottom">margin-bottom</a></td>
+                <td><a href="{base}/variables#margin-bottom">margin-bottom</a></td>
                 <td>var(--application-base-gap, 1rem)</td>
                 <td>-</td>
                 <td>-</td>

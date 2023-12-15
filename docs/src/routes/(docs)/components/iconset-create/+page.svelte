@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
 
@@ -24,7 +25,7 @@
           <li>
             Voeg het icoonlettertype toe aan het project binnen:
             <code>fonts.scss</code>. Voor meer informatie zie:
-            <a href="../add-fonts">Lettertype toevoegen</a>.
+            <a href="{base}/add-fonts">Lettertype toevoegen</a>.
           </li>
           <li>
             Maak een referentielijst voor het toevoegen van classes. Voor meer informatie zie:
@@ -33,7 +34,7 @@
           <li>
             Voeg de referentielijst toe aan het project via
             <code>manon.scss</code>. Voor meer informatie zie:
-            <a href="../import-styling">Styling importeren</a>.
+            <a href="{base}/import-styling">Styling importeren</a>.
           </li>
         </ol>
       </section>
@@ -64,7 +65,7 @@
           <li>
             Laad het nieuwe referentiebestand in binnen het project via
             <code>manon.scss</code>. Voor meer informatie zie:
-            <a href="../import-styling">Styling importeren</a>.
+            <a href="{base}/import-styling">Styling importeren</a>.
           </li>
           <li>
             Maak binnen de <code>:root</code> de css-variabelen aan met de referenties naar de
@@ -199,19 +200,19 @@
           <li>
             Voeg het icoonlettertype toe aan het project. Voor informatie over het toevoegen van een
             lettertype zie:
-            <a href="../add-fonts">Lettertype toevoegen</a>.
+            <a href="{base}/add-fonts">Lettertype toevoegen</a>.
           </li>
           <li>
             Voeg de referentie naar het lettertype toe via het
             <code>fonts.scss</code>-bestand.
-            <a href="../import-styling">Styling importeren</a>.
+            <a href="{base}/import-styling">Styling importeren</a>.
           </li>
           <li>
             Defineer het lettertype binnen het bestand
             <code>manon/icon/icon-base-variables</code> via de variabele
             <code>font-family</code>. Bijvoorbeeld:
             <code>--icon-font-family: "Manon icons";</code>. Zie ook
-            <a href="../import-styling#styling-override-variables"
+            <a href="{base}/import-styling#styling-override-variables"
               >De styling van een component aanpassen</a
             >.
           </li>

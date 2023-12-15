@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -80,7 +81,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Benodigd</h3>
@@ -100,13 +101,13 @@
 
         <p>Bijbehorende elementen:</p>
         <ul>
-          <li><a href="./form-base">form-base</a></li>
+          <li><a href="{base}/components/form-base">form-base</a></li>
           <li>
             Gewenste layout, bijvoorbeeld:
             <ul>
-              <li><a href="./layout-column-2">layout-column-2</a></li>
-              <li><a href="./layout-column-3">layout-column-3</a></li>
-              <li><a href="./layout-column-4">layout-column-4</a></li>
+              <li><a href="{base}/components/layout-column-2">layout-column-2</a></li>
+              <li><a href="{base}/components/layout-column-3">layout-column-3</a></li>
+              <li><a href="{base}/components/layout-column-4">layout-column-4</a></li>
             </ul>
             Voor alle beschikbare opties zie
             <a href="layouts#layout-types">layout weergave opties</a>.
@@ -116,7 +117,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./form-columns-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/form-columns-test">Test- en voorbeelden-pagina</a>
       </section>
 
       <section id="issues">

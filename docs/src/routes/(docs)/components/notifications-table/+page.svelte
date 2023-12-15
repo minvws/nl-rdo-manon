@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
 
@@ -77,10 +78,10 @@
           <nav id="notification-table-types">
             <ul>
               <li>
-                <a href="./notification-confirmation">Tabelrij <code>tr</code></a>
+                <a href="{base}/components/notification-confirmation">Tabelrij <code>tr</code></a>
               </li>
               <li>
-                <a href="./notification-warning">Tabelcel <code>td</code></a>
+                <a href="{base}/components/notification-warning">Tabelcel <code>td</code></a>
               </li>
             </ul>
           </nav>

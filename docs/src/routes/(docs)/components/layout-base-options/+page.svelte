@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
 
@@ -106,7 +107,7 @@
           ingesteld worden. De onderliggende bestanden, layout-header, main en footer, zullen de
           instellingen volgen. Specifeke instellingen die binnen een van de onderliggende bestanden
           worden opgegeven overschrijven de centrale keuzes. Voor meer informatie zie:
-          <a href="./layout-base">Basisweergave instellen</a>.
+          <a href="{base}/components/layout-base">Basisweergave instellen</a>.
         </p>
 
         <h4>Voorbeeld</h4>

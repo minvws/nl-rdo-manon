@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -281,7 +282,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -312,7 +313,7 @@
             <tbody>
               <tr>
                 <td>--fieldset-checkbox-input-margin-top</td>
-                <td><a href="../variables#margin-top">margin-top</a></td>
+                <td><a href="{base}/variables#margin-top">margin-top</a></td>
                 <td>0.25rem</td>
                 <td>-</td>
                 <td rowspan="7" scope="rowgroup">checkbox</td>
@@ -320,35 +321,35 @@
 
               <tr>
                 <td>--fieldset-checkbox-width</td>
-                <td><a href="../variables#width">width</a></td>
+                <td><a href="{base}/variables#width">width</a></td>
                 <td>1.25rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--fieldset-checkbox-height</td>
-                <td><a href="../variables#height">height</a></td>
+                <td><a href="{base}/variables#height">height</a></td>
                 <td>1.25rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--fieldset-checkbox-accent-color</td>
-                <td><a href="../variables#accent-color">accent-color</a></td>
+                <td><a href="{base}/variables#accent-color">accent-color</a></td>
                 <td>var(--branding-color-1, initial)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--fieldset-checkbox-label-width</td>
-                <td><a href="../variables#width">width</a></td>
+                <td><a href="{base}/variables#width">width</a></td>
                 <td>auto</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--fieldset-checkbox-required-margin-bottom</td>
-                <td><a href="../variables#margin-bottom">margin-bottom</a></td>
+                <td><a href="{base}/variables#margin-bottom">margin-bottom</a></td>
                 <td>var(--application-base-gap-small)</td>
                 <td>-</td>
               </tr>
@@ -385,7 +386,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./fieldset-checkbox-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/fieldset-checkbox-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -160,7 +161,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h2>Benodigd</h2>
         <ul>
@@ -178,31 +179,31 @@
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="../variables#padding-top">padding-top</a></li>
+          <li><a href="{base}/variables#padding-top">padding-top</a></li>
           <li>
-            <a href="../variables#padding-right">padding-right</a>
+            <a href="{base}/variables#padding-right">padding-right</a>
           </li>
           <li>
-            <a href="../variables#padding-bottom">padding-bottom</a>
+            <a href="{base}/variables#padding-bottom">padding-bottom</a>
           </li>
-          <li><a href="../variables#padding-left">padding-left</a></li>
+          <li><a href="{base}/variables#padding-left">padding-left</a></li>
           <li>
-            <a href="../variables#background-color">background-color</a>
+            <a href="{base}/variables#background-color">background-color</a>
           </li>
-          <li><a href="../variables#text-color">text-color</a></li>
-          <li><a href="../variables#font-size">font-size</a></li>
-          <li><a href="../variables#line-height">line-height</a></li>
-          <li><a href="../variables#font-weight">font-weight</a></li>
-          <li><a href="../variables#min-height">min-height</a></li>
-          <li><a href="../variables#border-width">border-width</a></li>
-          <li><a href="../variables#border-style">border-style</a></li>
-          <li><a href="../variables#border-color">border-color</a></li>
+          <li><a href="{base}/variables#text-color">text-color</a></li>
+          <li><a href="{base}/variables#font-size">font-size</a></li>
+          <li><a href="{base}/variables#line-height">line-height</a></li>
+          <li><a href="{base}/variables#font-weight">font-weight</a></li>
+          <li><a href="{base}/variables#min-height">min-height</a></li>
+          <li><a href="{base}/variables#border-width">border-width</a></li>
+          <li><a href="{base}/variables#border-style">border-style</a></li>
+          <li><a href="{base}/variables#border-color">border-color</a></li>
         </ul>
       </section>
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./form-input-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/form-input-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

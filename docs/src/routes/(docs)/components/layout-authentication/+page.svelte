@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
 
@@ -41,13 +42,13 @@
       <section id="variables">
         <h3>Instelbare variabelen</h3>
         <ul>
-          <li><a href="../variables#max-width">max-width</a></li>
-          <li><a href="../variables#padding">padding</a></li>
+          <li><a href="{base}/variables#max-width">max-width</a></li>
+          <li><a href="{base}/variables#padding">padding</a></li>
           <li>
-            <a href="../variables#background-color">background-color</a>
+            <a href="{base}/variables#background-color">background-color</a>
           </li>
-          <li><a href="../variables#text-color">text-color</a></li>
-          <li><a href="../variables#breakpoints">Breekpunten</a></li>
+          <li><a href="{base}/variables#text-color">text-color</a></li>
+          <li><a href="{base}/variables#breakpoints">Breekpunten</a></li>
         </ul>
       </section>
 
@@ -117,7 +118,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./layout-authentication-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/layout-authentication-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

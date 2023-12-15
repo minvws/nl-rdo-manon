@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -46,7 +47,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Benodigd</h3>
@@ -64,30 +65,30 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="../variables#flex-direction">flex-direction</a>
+            <a href="{base}/variables#flex-direction">flex-direction</a>
           </li>
           <li>
-            <a href="../variables#justify-content">justify-content</a>
+            <a href="{base}/variables#justify-content">justify-content</a>
           </li>
-          <li><a href="../variables#align-items">align-items</a></li>
-          <li><a href="../variables#padding-top">padding-top</a></li>
+          <li><a href="{base}/variables#align-items">align-items</a></li>
+          <li><a href="{base}/variables#padding-top">padding-top</a></li>
           <li>
-            <a href="../variables#padding-right">padding-right</a>
+            <a href="{base}/variables#padding-right">padding-right</a>
           </li>
           <li>
-            <a href="../variables#padding-bottom">padding-bottom</a>
+            <a href="{base}/variables#padding-bottom">padding-bottom</a>
           </li>
-          <li><a href="../variables#padding-left">padding-left</a></li>
-          <li><a href="../variables#gap">gap</a></li>
+          <li><a href="{base}/variables#padding-left">padding-left</a></li>
+          <li><a href="{base}/variables#gap">gap</a></li>
           <li>
-            <a href="../variables#background-color">background-color</a>
+            <a href="{base}/variables#background-color">background-color</a>
           </li>
         </ul>
       </section>
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./login-meta-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/login-meta-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

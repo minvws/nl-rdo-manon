@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -40,7 +41,7 @@
           </li>
           <li>
             Groepeer de formulierelementen voor toegankelijkheid en gebruikersgemak. Zie
-            <a href="./form-fieldset">Invoervelden groeperen</a> voor meer informatie.
+            <a href="{base}/components/form-fieldset">Invoervelden groeperen</a> voor meer informatie.
           </li>
           <li>
             Voeg indien nodig of ten behoeve van gebruikersgemak meldingen, toelichtingen en
@@ -86,7 +87,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Benodigd</h3>
@@ -103,42 +104,42 @@
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="../variables#align-items">align-items</a></li>
+          <li><a href="{base}/variables#align-items">align-items</a></li>
           <li>
-            <a href="../variables#justify-content">justify-content</a>
+            <a href="{base}/variables#justify-content">justify-content</a>
           </li>
-          <li><a href="../variables#padding-top">padding-top</a></li>
+          <li><a href="{base}/variables#padding-top">padding-top</a></li>
           <li>
-            <a href="../variables#padding-right">padding-right</a>
+            <a href="{base}/variables#padding-right">padding-right</a>
           </li>
           <li>
-            <a href="../variables#padding-bottom">padding-bottom</a>
+            <a href="{base}/variables#padding-bottom">padding-bottom</a>
           </li>
-          <li><a href="../variables#padding-left">padding-left</a></li>
+          <li><a href="{base}/variables#padding-left">padding-left</a></li>
           <li>
-            <a href="../variables#background-color">background-color</a>
+            <a href="{base}/variables#background-color">background-color</a>
           </li>
-          <li><a href="../variables#text-color">text-color</a></li>
-          <li><a href="../variables#font-size">font-size</a></li>
-          <li><a href="../variables#line-height">line-height</a></li>
-          <li><a href="../variables#font-weight">font-weight</a></li>
-          <li><a href="../variables#gap">gap</a></li>
-          <li><a href="../variables#border-width">border-width</a></li>
-          <li><a href="../variables#border-style">border-style</a></li>
-          <li><a href="../variables#border-color">border-color</a></li>
-          <li><a href="../variables#breakpoint">breakpoint</a></li>
-          <li><a href="../variables#max-width">max-width</a></li>
+          <li><a href="{base}/variables#text-color">text-color</a></li>
+          <li><a href="{base}/variables#font-size">font-size</a></li>
+          <li><a href="{base}/variables#line-height">line-height</a></li>
+          <li><a href="{base}/variables#font-weight">font-weight</a></li>
+          <li><a href="{base}/variables#gap">gap</a></li>
+          <li><a href="{base}/variables#border-width">border-width</a></li>
+          <li><a href="{base}/variables#border-style">border-style</a></li>
+          <li><a href="{base}/variables#border-color">border-color</a></li>
+          <li><a href="{base}/variables#breakpoint">breakpoint</a></li>
+          <li><a href="{base}/variables#max-width">max-width</a></li>
         </ul>
 
         <p>Bijbehorende elementen:</p>
         <ul>
-          <li><a href="./form-base">form-base</a></li>
+          <li><a href="{base}/components/form-base">form-base</a></li>
         </ul>
       </section>
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="./form-base-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/form-base-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

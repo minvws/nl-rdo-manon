@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
 
@@ -23,7 +24,7 @@
         <h3><dfn>nowrap</dfn> op een <code>p</code></h3>
         <p class="explanation">
           <span>Toelichting:</span> In dit voorbeeld wordt er ook gebruik gemaakt van de
-          <dfn>helper-class</dfn> <a href="./horizontal-scroll">horizontal-scroll</a> om te
+          <dfn>helper-class</dfn> <a href="{base}/components/horizontal-scroll">horizontal-scroll</a> om te
           voorkomen dat het voorbeeld-element de layout van de pagina breekt. Zonder deze toevoeging
           zou de tekst het scherm uitlopen. De class <code>horizontal-scroll</code> voegt op de maximale
           beschikbare breedte de scrollbalk toe.

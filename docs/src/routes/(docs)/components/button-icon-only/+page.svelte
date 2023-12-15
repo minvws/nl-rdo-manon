@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
 
@@ -25,7 +26,7 @@
           </li>
           <li>
             Voeg de class van het gewenste icoon toe op de knop. Voor meer informatie zie:
-            <a href="./icons">Iconen</a>.
+            <a href="{base}/components/icons">Iconen</a>.
           </li>
         </ol>
 
@@ -55,7 +56,7 @@
         <h2><code>button</code> met <code>img</code></h2>
         <h3>Visuele weergave:</h3>
 
-        <button href="./button-icon" class="icon-only">
+        <button href="{base}/components/button-icon" class="icon-only">
           Lorem ipsum <img src="$img/cat.svg" alt="Kat" />
         </button>
 
@@ -63,14 +64,14 @@
         <Code
           language="html"
           code={`
-<button href="./button-icon" class="icon-only">Lorem ipsum <img src="path/to/img.svg" alt="Kat"></button>
+<button href="{base}/components/button-icon" class="icon-only">Lorem ipsum <img src="path/to/img.svg" alt="Kat"></button>
 `}
         />
 
         <h2>Link als knop met <code>img</code></h2>
         <h3>Visuele weergave:</h3>
 
-        <a href="./button-icon" class="button icon-only"
+        <a href="{base}/components/button-icon" class="button icon-only"
           >Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></a
         >
 
@@ -78,7 +79,7 @@
         <Code
           language="html"
           code={`
-<a href="./button-icon" class="button icon-only">Lorem ipsum <img src="path/to/img.svg" alt="Kat"></a>
+<a href="{base}/components/button-icon" class="button icon-only">Lorem ipsum <img src="path/to/img.svg" alt="Kat"></a>
 `}
         />
       </section>
@@ -90,32 +91,32 @@
             Knop, hover, active, focus.
             <ul>
               <li>
-                <a href="../variables#background-color">background-color</a>
+                <a href="{base}/variables#background-color">background-color</a>
               </li>
-              <li><a href="../variables#text-color">text-color</a></li>
+              <li><a href="{base}/variables#text-color">text-color</a></li>
               <li>
-                <a href="../variables#border-width">border-width</a>
-              </li>
-              <li>
-                <a href="../variables#border-style">border-style</a>
+                <a href="{base}/variables#border-width">border-width</a>
               </li>
               <li>
-                <a href="../variables#border-color">border-color</a>
+                <a href="{base}/variables#border-style">border-style</a>
               </li>
               <li>
-                <a href="../variables#border-radius">border-radius</a>
+                <a href="{base}/variables#border-color">border-color</a>
               </li>
               <li>
-                <a href="../variables#outline-style">outline-style</a>
+                <a href="{base}/variables#border-radius">border-radius</a>
               </li>
               <li>
-                <a href="../variables#outline-color">outline-color</a>
+                <a href="{base}/variables#outline-style">outline-style</a>
               </li>
               <li>
-                <a href="../variables#outline-width">outline-width</a>
+                <a href="{base}/variables#outline-color">outline-color</a>
               </li>
               <li>
-                <a href="../variables#outline-offset">outline-offset</a>
+                <a href="{base}/variables#outline-width">outline-width</a>
+              </li>
+              <li>
+                <a href="{base}/variables#outline-offset">outline-offset</a>
               </li>
             </ul>
           </li>

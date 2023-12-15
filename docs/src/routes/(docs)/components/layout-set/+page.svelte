@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -42,7 +43,7 @@
               <li>
                 Pas de layoutkeuzes toe waar nodig. De layoutkeuzes kunnen door middel van
                 variabelen binnen de CSS worden toegevoegd. Voor meer informatie hierover zie <a
-                  href="../use-css-variable">CSS-variabelen gebruiken</a
+                  href="{base}/use-css-variable">CSS-variabelen gebruiken</a
                 >.
               </li>
             </ul>
@@ -69,7 +70,7 @@
 `}
         />
         <p>
-          Voor meer informatie hierover zie <a href="../use-css-variable"
+          Voor meer informatie hierover zie <a href="{base}/use-css-variable"
             >CSS-variabelen gebruiken</a
           >.
         </p>
@@ -79,7 +80,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="../import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -142,7 +143,7 @@
 
               <tr>
                 <td>--content-flex-direction</td>
-                <td><a href="../variables#flex-direction">flex-direction</a></td>
+                <td><a href="{base}/variables#flex-direction">flex-direction</a></td>
                 <td>column</td>
                 <td>-</td>
                 <td>-</td>
@@ -150,7 +151,7 @@
 
               <tr>
                 <td>--content-justify-content</td>
-                <td><a href="../variables#justify-content">justify-content</a></td>
+                <td><a href="{base}/variables#justify-content">justify-content</a></td>
                 <td>flex-start</td>
                 <td>-</td>
                 <td>-</td>
@@ -158,7 +159,7 @@
 
               <tr>
                 <td>--content-align-items</td>
-                <td><a href="../variables#align-items">align-items</a></td>
+                <td><a href="{base}/variables#align-items">align-items</a></td>
                 <td>flex-start</td>
                 <td>-</td>
                 <td>-</td>
@@ -166,7 +167,7 @@
 
               <tr>
                 <td>--content-gap</td>
-                <td><a href="../variables#gap">gap</a></td>
+                <td><a href="{base}/variables#gap">gap</a></td>
                 <td>2rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -174,7 +175,7 @@
 
               <tr>
                 <td>--content-padding-top</td>
-                <td><a href="../variables#padding-top">padding-top</a></td>
+                <td><a href="{base}/variables#padding-top">padding-top</a></td>
                 <td>2rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -182,7 +183,7 @@
 
               <tr>
                 <td>--content-padding-right</td>
-                <td><a href="../variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/variables#padding-right">padding-right</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -190,7 +191,7 @@
 
               <tr>
                 <td>--content-padding-bottom</td>
-                <td><a href="../variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
                 <td>2rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -198,7 +199,7 @@
 
               <tr>
                 <td>--content-padding-left</td>
-                <td><a href="../variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/variables#padding-left">padding-left</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -206,7 +207,7 @@
 
               <tr>
                 <td>--content-max-width</td>
-                <td><a href="../variables#max-width">max-width</a></td>
+                <td><a href="{base}/variables#max-width">max-width</a></td>
                 <td>100%</td>
                 <td>-</td>
                 <td>-</td>
