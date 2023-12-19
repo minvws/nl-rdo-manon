@@ -40,11 +40,10 @@
       <h2 id="examples">Voorbeelden</h2>
 
       <p>
-        Importeer de gewenste CSS binnen het project binnen het bestand:
-        <code>manon.scss</code>.
+        Importeer in de <code>.sass</code> of <code>.scss</code> van je project de gewenste componenten:
       </p>
       <Code
-        language="css"
+        language="scss"
         code={`
 @use "@minvws/manon/layout/layout-base";
 `}

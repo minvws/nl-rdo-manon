@@ -10,7 +10,7 @@
   <section id="introduction">
     <div>
       <h1>JavaScript toevoegen</h1>
-      <p class="warning" role="group" aria-label="let op">
+      <p class="warning" role="group">
         <span>Let op:</span> Aan deze instructies wordt nog gewerkt.
       </p>
     </div>

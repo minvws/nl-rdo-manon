@@ -104,8 +104,8 @@
           </p>
 
           <p>
-            In de <a href="{base}/components">componentenbibliotheek</a> vind je het volledige overzicht met
-            beschikbare componenten.
+            In de <a href="{base}/components">componentenbibliotheek</a> vind je het volledige overzicht
+            met beschikbare componenten.
           </p>
         </div>
 
