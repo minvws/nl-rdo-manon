@@ -3,14 +3,14 @@
 /*---------------------------------------------------------------*/
 @use "form-button-variables";
 
+$breakpoint: 24rem !default;
+
 form {
   button,
   a.button,
   input[type="button"],
   input[type="submit"],
   input[type="reset"] {
-    $breakpoint: 24rem !default;
-
     align-self: var(--form-button-align-self);
 
     width: var(--form-button-width);

@@ -4,6 +4,8 @@
 @use "form-horizontal-view-variables";
 @use "form-horizontal-view-fieldset-variables";
 
+$breakpoint: 24rem;
+
 /* Fieldset styling is a bit different compared to the default form styling.
 This is because of a couple of styling restrictions and issues concerning fieldsets and it's children.
 - Fieldsets can't use flexbox
@@ -20,8 +22,6 @@ For more information on the bug see: https://github.com/philipwalton/flexbugs#9-
 and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 
 form.horizontal-view {
-  $breakpoint: 24rem;
-
   > fieldset {
     > div {
       display: block;

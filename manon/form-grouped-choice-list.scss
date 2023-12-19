@@ -2,9 +2,9 @@
 /*------------- form-grouped-choice-list-radio.scss -------------*/
 /*---------------------------------------------------------------*/
 
-form.horizontal-view {
-  $breakpoint: 24rem !default;
+$breakpoint: 24rem !default;
 
+form.horizontal-view {
   .grouped-choice-list {
     legend {
       font-weight: normal;

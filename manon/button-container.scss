@@ -3,8 +3,9 @@
 /*---------------------------------------------------------------*/
 @use "button-container-variables";
 
+$breakpoint: 24rem !default;
+
 .button-container {
-  $breakpoint: 24rem !default;
 
   display: flex;
   flex-direction: var(--button-container-flex-direction);
