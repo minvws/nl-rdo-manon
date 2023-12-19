@@ -1,4 +1,4 @@
-$manon-font-path: "@minvws/manon-themes/soft/fonts" !default;
+@use "variables";
 
 /* Neuton */
 @font-face {
@@ -6,7 +6,7 @@ $manon-font-path: "@minvws/manon-themes/soft/fonts" !default;
   font-weight: bold;
   font-style: normal;
   font-display: var(--text-magazine-font-display, swap);
-  src: url("#{$manon-font-path}/Neuton/Neuton-Bold.woff2") format("woff2");
+  src: url("#{variables.$font-path}/Neuton/Neuton-Bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -14,7 +14,7 @@ $manon-font-path: "@minvws/manon-themes/soft/fonts" !default;
   font-weight: normal;
   font-style: italic;
   font-display: var(--text-magazine-font-display, swap);
-  src: url("#{$manon-font-path}/Neuton/Neuton-Italic.woff2") format("woff2");
+  src: url("#{variables.$font-path}/Neuton/Neuton-Italic.woff2") format("woff2");
 }
 
 /* Open sans */
@@ -24,7 +24,7 @@ $manon-font-path: "@minvws/manon-themes/soft/fonts" !default;
   font-weight: normal;
   font-style: normal;
   font-display: var(--text-body-font-display, swap);
-  src: url("#{$manon-font-path}/OpenSans/OpenSans-Regular.woff2") format("woff2");
+  src: url("#{variables.$font-path}/OpenSans/OpenSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -32,7 +32,7 @@ $manon-font-path: "@minvws/manon-themes/soft/fonts" !default;
   font-weight: normal;
   font-style: italic;
   font-display: var(--text-body-font-display, swap);
-  src: url("#{$manon-font-path}/OpenSans/OpenSans-Italic.woff2") format("woff2");
+  src: url("#{variables.$font-path}/OpenSans/OpenSans-Italic.woff2") format("woff2");
 }
 
 /* Semi bold */
@@ -41,7 +41,7 @@ $manon-font-path: "@minvws/manon-themes/soft/fonts" !default;
   font-weight: 600;
   font-style: normal;
   font-display: var(--text-body-font-display, swap);
-  src: url("#{$manon-font-path}/OpenSans/OpenSans-SemiBold.woff2") format("woff2");
+  src: url("#{variables.$font-path}/OpenSans/OpenSans-SemiBold.woff2") format("woff2");
 }
 
 @font-face {
@@ -49,7 +49,7 @@ $manon-font-path: "@minvws/manon-themes/soft/fonts" !default;
   font-weight: 600;
   font-style: italic;
   font-display: var(--text-body-font-display, swap);
-  src: url("#{$manon-font-path}/OpenSans/OpenSans-SemiBoldItalic.woff2") format("woff2");
+  src: url("#{variables.$font-path}/OpenSans/OpenSans-SemiBoldItalic.woff2") format("woff2");
 }
 
 /* Icon font */
@@ -58,9 +58,9 @@ $manon-font-path: "@minvws/manon-themes/soft/fonts" !default;
   font-weight: normal;
   font-style: normal;
   font-display: var(--text-icon-font-display, block);
-  src: url("#{$manon-font-path}/icons/manon-soft-icons-0.3.eot");
+  src: url("#{variables.$font-path}/icons/manon-soft-icons-0.3.eot");
   src:
-    url("#{$manon-font-path}/icons/manon-soft-icons-0.3.woff") format("woff"),
-    url("#{$manon-font-path}/icons/manon-soft-icons-0.3.ttf") format("truetype"),
-    url("#{$manon-font-path}/icons/manon-soft-icons-0.3.svg#manon-soft-icons") format("svg");
+    url("#{variables.$font-path}/icons/manon-soft-icons-0.3.woff") format("woff"),
+    url("#{variables.$font-path}/icons/manon-soft-icons-0.3.ttf") format("truetype"),
+    url("#{variables.$font-path}/icons/manon-soft-icons-0.3.svg#manon-soft-icons") format("svg");
 }

@@ -1,7 +1,10 @@
 /* Theme: Soft based on manon components */
 
+/* Variables */
+@forward "variables";
+
 /* Fonts & icons */
-@forward "fonts";
+@use "fonts";
 @use "icons";
 
 /* Top level styling */

@@ -1,7 +1,10 @@
 /* Theme: Basic bold */
 
+/* Variables */
+@forward "variables";
+
 /* Fonts & icons */
-@forward "fonts";
+@use "fonts";
 @use "icons";
 
 /* Styling on the highest level */
