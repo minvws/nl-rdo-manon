@@ -10,6 +10,9 @@
     "**/*.woff",
     "**/*.woff2"
   ],
+  "scripts": {
+    "npm-version": "npm version"
+  },
   "peerDepencency": {
     "@minvws/manon": "workspace:*",
     "sass": ">=1.23"
