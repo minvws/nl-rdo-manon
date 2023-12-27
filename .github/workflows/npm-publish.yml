@@ -29,7 +29,7 @@ jobs:
         # but github will checkout the tag, so we need to disable the check
         run: |
           pnpm --recursive npm-version --no-git-tag-version ${{ env.RELEASE_VERSION }}
-          pnpm --recursive publish --no-git-checks
+          pnpm --recursive publish --no-git-checks --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -56,6 +56,6 @@ jobs:
         # but github will checkout the tag, so we need to disable the check
         run: |
           pnpm --recursive npm-version --no-git-tag-version ${{ env.RELEASE_VERSION }}
-          pnpm --recursive publish --no-git-checks
+          pnpm --recursive publish --no-git-checks --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
