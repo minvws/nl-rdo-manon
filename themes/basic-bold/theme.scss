@@ -1,5 +1,12 @@
 /* Theme: Basic bold */
 
+/* Variables */
+@forward "variables";
+
+/* Fonts & icons */
+@use "fonts";
+@use "icons";
+
 /* Styling on the highest level */
 @use "application-base";
 
@@ -18,6 +25,7 @@
 /* Components */
 @use "components/breadcrumb-bar";
 
+@use "components/icon";
 @use "components/logo";
 @use "components/pagination";
 @use "components/sidemenu";

@@ -1,21 +1,24 @@
 /* Theme: Soft based on manon components */
-/* Base - Top level styling */
+
+/* Variables */
+@forward "variables";
+
+/* Fonts & icons */
+@use "fonts";
+@use "icons";
+
+/* Top level styling */
 @use "application-base";
-/* Styling on the highest level */
 
-/* Styling sets. E.g color sets */
-/* Branding colors */
-@use "spot-large";
-
-/* Body set */
-@use "body-text-set";
-
-/* Headings set basic */
-@use "headings-base-set";
+/* Fundamentals */
+@use "fundamentals/spot-large";
+@use "fundamentals/body-text-set";
+@use "fundamentals/headings-base-set";
 
 /* Components */
-@use "breadcrumb-bar";
-@use "tile";
-@use "header-navigation";
-@use "logo";
-@use "background-color-offset";
+@use "components/icon";
+@use "components/breadcrumb-bar";
+@use "components/tile";
+@use "components/header-navigation";
+@use "components/logo";
+@use "components/background-color-offset";

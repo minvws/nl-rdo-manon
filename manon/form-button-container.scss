@@ -3,9 +3,9 @@
 /*---------------------------------------------------------------*/
 @use "form-button-container-variables";
 
-%fieldset-button-container-styling {
-  $breakpoint: 24rem !default;
+$breakpoint: 24rem !default;
 
+%fieldset-button-container-styling {
   float: var(--form-button-container-fieldset-float);
   /* Removing gap as it is not supported within fieldsets */
   gap: 0;
@@ -34,8 +34,6 @@
 }
 
 form {
-  $breakpoint: 24rem !default;
-
   .button-container {
     align-self: var(--form-button-container-align-self);
     width: auto;

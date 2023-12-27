@@ -2,7 +2,7 @@
 /*-------------------------- tags.scss --------------------------*/
 /*---------------------------------------------------------------*/
 @use "tags-variables";
-@import "tag";
+@use "tag";
 
 .tags {
   /* render each div directly within a tags group as a tag */
