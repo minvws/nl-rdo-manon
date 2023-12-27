@@ -28,7 +28,7 @@ jobs:
         # pnpm checks whether you are on the main branch when running publish,
         # but github will checkout the tag, so we need to disable the check
         run: |
-          pnpm --recursive npm-version --no-git-tag-version ${{ env.RELEASE_VERSION }}
+          pnpm --recursive npm-version -- --no-git-tag-version ${{ env.RELEASE_VERSION }}
           pnpm --recursive publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -55,7 +55,7 @@ jobs:
         # pnpm checks whether you are on the main branch when running publish,
         # but github will checkout the tag, so we need to disable the check
         run: |
-          pnpm --recursive npm-version --no-git-tag-version ${{ env.RELEASE_VERSION }}
+          pnpm --recursive npm-version -- --no-git-tag-version ${{ env.RELEASE_VERSION }}
           pnpm --recursive publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
