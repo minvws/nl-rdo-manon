@@ -9,7 +9,7 @@
   z-index: var(--focus-z-index);
   position: relative;
 
-  + label:before {
+  + label::before {
     outline: var(--focus-outline);
     z-index: var(--focus-z-index);
     position: relative;

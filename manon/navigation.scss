@@ -36,7 +36,7 @@ nav {
       border-color: var(--navigation-list-item-border-color);
       list-style: var(--navigation-list-item-list-style);
 
-      &:before {
+      &::before {
         content: var(--navigation-list-item-icon-content);
         font-family: var(--navigation-list-item-icon-font-family);
         line-height: var(--navigation-list-item-icon-line-height);

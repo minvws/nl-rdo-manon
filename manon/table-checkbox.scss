@@ -27,19 +27,11 @@
 }
 
 table {
+  /* Table within form */
   @extend %table-checkbox;
-}
 
-/* Form within table */
-table {
+  /* Form within table */
   form {
-    @extend %table-checkbox;
-  }
-}
-
-/* Table within form */
-form {
-  table {
     @extend %table-checkbox;
   }
 }

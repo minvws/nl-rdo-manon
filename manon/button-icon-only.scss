@@ -19,7 +19,7 @@ input[type="reset"] {
     background-color: transparent;
     border: 0;
 
-    &:before {
+    &::before {
       @include icon.icon;
       font-family: var(--button-icon-only-font-family);
       font-size: var(--button-icon-only-font-size);

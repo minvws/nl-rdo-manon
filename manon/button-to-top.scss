@@ -28,7 +28,7 @@ button.to-top {
     border-color: var(--button-to-top-hover-border-color);
   }
 
-  &:before {
+  &::before {
     color: var(--button-to-top-icon-color);
   }
 }

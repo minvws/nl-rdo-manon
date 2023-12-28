@@ -10,19 +10,19 @@
 
 .icon,
 .icon-only {
-  &.icon-cat:before {
+  &.icon-cat::before {
     content: "\e900";
   }
 
-  &.icon-descending:before {
+  &.icon-descending::before {
     content: "\e901";
   }
 
-  &.icon-ascending:before {
+  &.icon-ascending::before {
     content: "\e902";
   }
 
-  &.icon-sortable:before {
+  &.icon-sortable::before {
     content: "\e903";
   }
 }

@@ -18,7 +18,7 @@ input[type="reset"] {
     min-height: var(--button-icon-min-height);
     height: var(--button-icon-height);
 
-    &:before {
+    &::before {
       @include icon.icon;
       font-family: var(--button-icon-font-family);
       font-size: var(--button-icon-font-size);

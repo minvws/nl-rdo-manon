@@ -33,19 +33,19 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
           cache: 'pnpm'
 
       - name: Install dependencies
         run: pnpm install --ignore-scripts
 
       - name: Lint SCSS
-        run: npm run lint:css
+        run: pnpm run lint:css
         working-directory: ./manon
         continue-on-error: true
 
       - name: Build Docs CSS and JS
-        run: npm run build
+        run: pnpm run build
         working-directory: ./docs
 
   formatter-check:
@@ -62,7 +62,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
           cache: 'pnpm'
 
       - name: Install dependencies

@@ -2,16 +2,16 @@
 /*------------- form-grouped-choice-list-radio.scss -------------*/
 /*---------------------------------------------------------------*/
 
-form.horizontal-view {
-  $breakpoint: 24rem !default;
+$breakpoint: 24rem !default;
 
+form.horizontal-view {
   .grouped-choice-list {
     legend {
       font-weight: normal;
       width: auto;
       margin: 0;
 
-      @media (min-width: $breakpoint) {
+      @media (width >= $breakpoint) {
         position: absolute;
         max-width: var(--label-column);
         padding: 0;

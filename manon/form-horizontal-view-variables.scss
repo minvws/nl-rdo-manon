@@ -44,7 +44,8 @@
       var(--form-horizontal-view-group-vertical-gap)
   );
   --input-column: calc(
-    var(--form-horizontal-view-input-max-width) -
-      var(--form-horizontal-view-group-vertical-gap)
+    var(--form-horizontal-view-input-max-width) - var(
+        --form-horizontal-view-group-vertical-gap
+      )
   );
 }
