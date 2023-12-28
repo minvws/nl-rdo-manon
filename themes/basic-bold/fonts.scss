@@ -1,0 +1,49 @@
+@use "variables";
+
+/* Open sans */
+/* Regular */
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-display: var(--text-body-font-display, swap);
+  src: url("#{variables.$font-path}/OpenSans/OpenSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: italic;
+  font-display: var(--text-body-font-display, swap);
+  src: url("#{variables.$font-path}/OpenSans/OpenSans-Italic.woff2") format("woff2");
+}
+
+/* Semi bold */
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-style: normal;
+  font-display: var(--text-body-font-display, swap);
+  src: url("#{variables.$font-path}/OpenSans/OpenSans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-style: italic;
+  font-display: var(--text-body-font-display, swap);
+  src: url("#{variables.$font-path}/OpenSans/OpenSans-SemiBoldItalic.woff2") format("woff2");
+}
+
+/* Icon font */
+@font-face {
+  font-family: "manon-basic-bold-icons";
+  font-weight: normal;
+  font-style: normal;
+  font-display: var(--text-icon-font-display, block);
+  src: url("#{variables.$font-path}/icons/manon-basic-bold-icons-0.3.eot");
+  src:
+    url("#{variables.$font-path}/icons/manon-basic-bold-icons-0.3.woff") format("woff"),
+    url("#{variables.$font-path}/icons/manon-basic-bold-icons-0.3.ttf") format("truetype"),
+    url("#{variables.$font-path}/icons/manon-basic-bold-icons-0.3.svg#manon-basic-bold-icons") format("svg");
+}
