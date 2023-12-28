@@ -3,9 +3,9 @@
 /*---------------------------------------------------------------*/
 @use "form-button-container-variables";
 
-%fieldset-button-container-styling {
-  $breakpoint: 24rem !default;
+$breakpoint: 24rem !default;
 
+%fieldset-button-container-styling {
   float: var(--form-button-container-fieldset-float);
   /* Removing gap as it is not supported within fieldsets */
   gap: 0;
@@ -27,15 +27,13 @@
     margin-left: calc(var(--button-container-gap) / 2);
     margin-bottom: var(--button-container-gap);
 
-    @media (min-width: $breakpoint) {
+    @media (width >= $breakpoint) {
       width: var(--button-container-button-after-breakpoint-width);
     }
   }
 }
 
 form {
-  $breakpoint: 24rem !default;
-
   .button-container {
     align-self: var(--form-button-container-align-self);
     width: auto;
@@ -58,7 +56,7 @@ form {
       .button-container {
         @extend %fieldset-button-container-styling;
 
-        @media (min-width: $breakpoint) {
+        @media (width >= $breakpoint) {
           margin-left: calc(
             var(--label-column) - (var(--button-container-gap) / 2)
           );

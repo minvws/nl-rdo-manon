@@ -1,3 +1,5 @@
 packages:
-- manon
 - docs
+- manon
+- themes
+- examples/*

@@ -65,7 +65,7 @@ body > header,
         padding: 0;
         box-sizing: border-box;
 
-        &:before {
+        &::before {
           display: none;
           /* Preventing default nav before to show up */
         }

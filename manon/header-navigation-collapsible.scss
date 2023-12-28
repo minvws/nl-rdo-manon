@@ -25,7 +25,7 @@ body > header nav.collapsible {
       width: var(--header-navigation-collapsible-button-width);
       gap: 0;
 
-      &:before {
+      &::before {
         content: var(--header-navigation-collapsible-icon);
         font-size: var(--header-navigation-collapsible-icon-font-size);
         line-height: initial;
@@ -33,7 +33,7 @@ body > header nav.collapsible {
         background-color: transparent;
       }
 
-      &[aria-expanded="true"]:before {
+      &[aria-expanded="true"]::before {
         content: var(--header-navigation-collapsible-icon-collapsed);
         font-size: var(
           --header-navigation-collapsible-icon-collapsed-font-size
@@ -112,7 +112,7 @@ body > header nav.collapsible {
                 --header-navigation-collapsible-list-item-border-color
               );
 
-              &:before {
+              &::before {
                 display: none;
                 /* Preventing default nav before to show up */
               }

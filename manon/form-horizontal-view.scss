@@ -3,9 +3,9 @@
 /*---------------------------------------------------------------*/
 @use "form-horizontal-view-variables";
 
-form.horizontal-view {
-  $breakpoint: 24rem !default;
+$breakpoint: 24rem !default;
 
+form.horizontal-view {
   flex-direction: column;
   gap: var(--form-horizontal-view-gap);
   flex-wrap: wrap;
@@ -30,12 +30,11 @@ form.horizontal-view {
     margin: 0;
 
     &.checkbox {
-      gap: var(--form-checkbox-margin-right);
       margin: 0;
       gap: var(--checkbox-gap);
       flex-wrap: nowrap;
 
-      @media (min-width: $breakpoint) {
+      @media (width >= $breakpoint) {
         max-width: var(--input-column);
         margin-left: var(--label-column);
       }
@@ -74,7 +73,7 @@ form.horizontal-view {
           max-width: calc(100% - var(--radio-input-width));
         }
 
-        @media (min-width: $breakpoint) {
+        @media (width >= $breakpoint) {
           /* Align radio with input fields */
           margin-left: var(--label-column);
         }
@@ -138,7 +137,7 @@ form.horizontal-view {
       flex-grow: 0;
     }
 
-    @media (min-width: $breakpoint) {
+    @media (width >= $breakpoint) {
       flex-wrap: nowrap;
 
       > * {
@@ -157,14 +156,14 @@ form.horizontal-view {
     flex-direction: column;
     align-items: flex-start;
 
-    @media (min-width: $breakpoint) {
+    @media (width >= $breakpoint) {
       > * {
         margin-left: var(--label-column);
       }
     }
   }
 
-  @media (min-width: $breakpoint) {
+  @media (width >= $breakpoint) {
     %align-to-input {
       width: auto;
       max-width: 100%;

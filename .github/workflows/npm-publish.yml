@@ -18,9 +18,9 @@ jobs:
           version: 8
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
           registry-url: 'https://registry.npmjs.org'
 
       - run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
@@ -28,9 +28,8 @@ jobs:
         # pnpm checks whether you are on the main branch when running publish,
         # but github will checkout the tag, so we need to disable the check
         run: |
-          cd manon
-          npm version --no-git-tag-version ${{ env.RELEASE_VERSION }}
-          pnpm publish --no-git-checks
+          pnpm --recursive npm-version --no-git-tag-version ${{ env.RELEASE_VERSION }}
+          pnpm --recursive publish --no-git-checks --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -46,9 +45,9 @@ jobs:
           version: 8
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
           registry-url: 'https://npm.pkg.github.com'
 
       - run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
@@ -56,8 +55,7 @@ jobs:
         # pnpm checks whether you are on the main branch when running publish,
         # but github will checkout the tag, so we need to disable the check
         run: |
-          cd manon
-          npm version --no-git-tag-version ${{ env.RELEASE_VERSION }}
-          pnpm publish --no-git-checks
+          pnpm --recursive npm-version --no-git-tag-version ${{ env.RELEASE_VERSION }}
+          pnpm --recursive publish --no-git-checks --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

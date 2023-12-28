@@ -11,7 +11,7 @@
   opacity: var(--disabled-opacity);
 
   & + label,
-  & + label:before {
+  & + label::before {
     cursor: var(--disabled-cursor);
     opacity: var(--disabled-opacity);
   }

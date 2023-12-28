@@ -4,6 +4,7 @@
 @use "breadcrumb-bar-variables";
 @use "mixins/icon";
 
+.page-header .breadcrumb-bar,
 .breadcrumb-bar {
   display: flex;
   flex-direction: var(--breadcrumb-bar-flex-direction);
@@ -47,12 +48,12 @@
       list-style: none;
       gap: var(--breadcrumb-bar-list-item-gap);
 
-      &:before {
+      &::before {
         display: none;
         /* Preventing default nav before to show up */
       }
 
-      &:after {
+      &::after {
         @include icon.icon-format("breadcrumb-bar-");
         @include icon.icon-content("breadcrumb-bar-");
 
@@ -63,7 +64,7 @@
       &:hover {
         color: var(--breadcrumb-bar-hover-text-color);
 
-        &:after {
+        &::after {
           color: var(--breadcrumb-bar-text-color);
         }
       }
@@ -71,7 +72,7 @@
       &:last-child {
         font-weight: var(--breadcrumb-bar-list-item-last-child-font-weight);
 
-        &:after {
+        &::after {
           content: none;
         }
       }

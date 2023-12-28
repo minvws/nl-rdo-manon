@@ -2,15 +2,13 @@
 
 import { ensureElementHasId, onMediaQueryMatch, onDomReady } from "./utils.js";
 
-onDomReady(initNavigation);
+onDomReady(initCollapsible);
 
 /**
- * Add responsive behaviour to header navigation. Safe to call again to make a
- * newly added header navigation responsive.
+ * Add responsive behaviour to collapsible components. Safe to call again to
+ * make a newly added collapsible components.
  */
-
-/* Locate all collapsable components */
-export function initNavigation() {
+export function initCollapsible() {
   var collapsible = document.querySelectorAll(".collapsible");
   for (var i = 0; i < collapsible.length; i++) {
     var collapsibleElement = collapsible[i];
@@ -27,6 +25,9 @@ export function initNavigation() {
   }
 }
 
+/** @deprecated */
+export { initCollapsible as initNavigation };
+
 /**
  * @param {HTMLElement} collapsibleElement
  * @param {boolean} isCondensed
@@ -37,7 +38,7 @@ function makeResponsive(collapsibleElement, isCondensed) {
   );
 
   if (!(collapsingElement instanceof HTMLElement)) {
-    console.error("missing collapsing element for: ", collapsibleElement);
+    console.error("Missing collapsing element for: ", collapsibleElement);
     return;
   }
 

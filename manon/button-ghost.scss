@@ -20,7 +20,7 @@ input[type="reset"] {
     color: var(--button-ghost-text-color);
     -webkit-appearance: none; /* Reset ios button styling */
     border-radius: var(--button-ghost-border-radius);
-    webkit-border-radius: var(
+    -webkit-border-radius: var(
       --button-ghost-border-radius
     ); /* Reset ios button styling */
 

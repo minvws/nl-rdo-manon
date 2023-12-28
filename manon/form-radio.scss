@@ -47,7 +47,7 @@ form {
       margin: 0;
     }
 
-    @media (min-width: $breakpoint-1) {
+    @media (width >= $breakpoint-1) {
       + p.error,
       + p.warning,
       + p.confirmation,

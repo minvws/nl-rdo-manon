@@ -7,23 +7,39 @@
 a.logo,
 a:visited.logo,
 a:hover.logo {
-  font-size: 0;
+  display: var(--logo-display);
+  flex-direction: var(--logo-flex-direction);
+  justify-content: var(--logo-justify-content);
+  align-items: var(--logo-align-items);
+  white-space: var(--logo-white-space);
+  gap: var(--logo-gap);
+
   width: var(--logo-width);
-  min-width: var(--logo-width);
-  max-width: var(--logo-width);
   height: var(--logo-height);
-  min-height: var(--logo-height);
-  max-height: var(--logo-height);
-  background-color: var(--logo-background-color);
-  border-radius: var(--logo-border-radius);
+
   margin: var(--logo-margin);
 
+  font-size: var(--logo-font-size);
+  font-weight: var(--logo-font-weight);
+  color: var(--logo-text-color);
+
+  background-color: var(--logo-background-color);
+  border-radius: var(--logo-border-radius);
+
   img {
-    height: var(--logo-height);
-    width: var(--logo-width);
-    padding: var(--logo-padding);
+    height: var(--logo-img-height);
+    min-height: var(--logo-img-height);
+    max-height: var(--logo-img-height);
+
+    width: var(--logo-img-width);
+    min-width: var(--logo-img-width);
+    max-width: var(--logo-img-width);
+
+    padding: var(--logo-img-padding);
+    border-radius: var(--logo-img-border-radius);
     box-sizing: border-box;
     object-position: var(--logo-img-object-position);
     object-fit: var(--logo-img-object-fit);
+    background-color: var(--logo-img-background-color);
   }
 }

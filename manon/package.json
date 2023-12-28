@@ -7,22 +7,24 @@
     "*.js",
     "**/*.js"
   ],
-  "engines": {
-    "node": ">=16"
-  },
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint:css": "stylelint \"**/*.scss\"",
-    "lint:css:fix": "npm run lint:css -- --fix"
+    "lint:css:fix": "npm run lint:css -- --fix",
+    "npm-version": "npm version"
+  },
+  "peerDepencency": {
+    "sass": ">=1.23"
   },
   "devDependencies": {
-    "prettier": "^2.8.8",
-    "stylelint": "^15.10.3",
-    "stylelint-config-standard-scss": "^9.0.0"
+    "prettier": "^3.0.3",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard-scss": "^11.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/minvws/nl-rdo-manon.git"
+    "url": "https://github.com/minvws/nl-rdo-manon.git",
+    "directory": "manon"
   }
 }

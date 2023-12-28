@@ -1,9 +1,8 @@
 node_modules/
 .idea/
 .vscode/
+.netlify/
 tmp/
 *.log
 .DS_Store
-docs/static/css/main.css
-docs/static/js
 *.tgz

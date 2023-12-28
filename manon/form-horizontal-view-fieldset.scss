@@ -4,6 +4,8 @@
 @use "form-horizontal-view-variables";
 @use "form-horizontal-view-fieldset-variables";
 
+$breakpoint: 24rem;
+
 /* Fieldset styling is a bit different compared to the default form styling.
 This is because of a couple of styling restrictions and issues concerning fieldsets and it's children.
 - Fieldsets can't use flexbox
@@ -20,8 +22,6 @@ For more information on the bug see: https://github.com/philipwalton/flexbugs#9-
 and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 
 form.horizontal-view {
-  $breakpoint: 24rem;
-
   > fieldset {
     > div {
       display: block;
@@ -30,7 +30,7 @@ form.horizontal-view {
       /* Adds margin instead of gap */
       margin-bottom: var(--form-base-gap);
 
-      @media (min-width: $breakpoint) {
+      @media (width >= $breakpoint) {
         > * {
           width: var(--input-column);
           /* resetting gap as it can not be used within fieldsets */
@@ -69,7 +69,7 @@ form.horizontal-view {
       width: 100%;
       float: right;
 
-      @media (min-width: $breakpoint) {
+      @media (width >= $breakpoint) {
         width: var(--input-column);
       }
 
@@ -116,7 +116,7 @@ form.horizontal-view {
       max-width: calc(100% - var(--radio-input-width));
     }
 
-    @media (min-width: $breakpoint) {
+    @media (width >= $breakpoint) {
       > button,
       > a.button,
       > input[type="button"],

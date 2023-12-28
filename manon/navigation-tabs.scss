@@ -10,7 +10,7 @@ nav.tabs {
     margin-bottom: 0;
 
     li {
-      &:before {
+      &::before {
         display: none; /* Preventing default nav before to show up */
       }
 
