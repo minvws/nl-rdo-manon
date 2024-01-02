@@ -13,7 +13,7 @@
   "scripts": {
     "npm-version": "npm version"
   },
-  "peerDepencency": {
+  "peerDependencies": {
     "@minvws/manon": "workspace:*",
     "sass": ">=1.23"
   },
