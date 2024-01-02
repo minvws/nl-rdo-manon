@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "@minvws/manon": "workspace:*",
-    "@minvws/manon-themes": "workspace:*"
+    "@minvws/manon-themes": "workspace:*",
+    "highlight.js": "^11.9.0"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^2.0.3",
@@ -24,7 +25,6 @@
     "sass": "^1.69.5",
     "svelte": "^4.2.8",
     "svelte-check": "^3.6.2",
-    "svelte-highlight": "^7.4.2",
     "svelte-preprocess-import-assets": "^1.1.0",
     "typescript": "^5.3.3",
     "vite": "^4.5.1"

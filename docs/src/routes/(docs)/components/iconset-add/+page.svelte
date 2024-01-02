@@ -98,11 +98,11 @@
 
 .icon,
 .icon-only {
-  &amp;:before {
+  &:before {
     @include icon;
   }
 
-  &amp;.icon-cat:before {
+  &.icon-cat:before {
     content: var(--icon-cat);
     font-family: "Manon icons";
   }

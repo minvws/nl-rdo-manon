@@ -1,20 +1,36 @@
-<script>
-  import Highlight from "svelte-highlight";
-  import xml from "svelte-highlight/languages/xml";
-  import css from "svelte-highlight/languages/css";
-  import scss from "svelte-highlight/languages/scss";
-  import plaintext from "svelte-highlight/languages/plaintext";
-  import "svelte-highlight/styles/github.css";
-
-  const lang = { html: xml, css, scss, plaintext };
-
-  /** @type {'html' | 'css' | 'scss' | 'plaintext'} */
-  export let language = "html";
-  export let code = "";
-
-  const trimPattern = /^\s+|\s+$/g;
-
-  $: trimmed = code.replace(trimPattern, "");
+<script context="module">
+  import hljs from "highlight.js/lib/core";
+  import xml from "highlight.js/lib/languages/xml";
+  import css from "highlight.js/lib/languages/css";
+  import scss from "highlight.js/lib/languages/scss";
+  import plaintext from "highlight.js/lib/languages/plaintext";
+  hljs.registerLanguage("html", xml);
+  hljs.registerLanguage("css", css);
+  hljs.registerLanguage("scss", scss);
+  hljs.registerLanguage("plaintext", plaintext);
 </script>
 
-<Highlight language={lang[language] || plaintext} code={trimmed} />
+<script>
+  import "highlight.js/styles/github.css";
+
+  const trim = (markup) => markup.replace(/^(\s*\n)+/, "").replace(/\n\s*$/, "");
+
+  /** @type {'html' | 'css' | 'scss' | 'plaintext'} */
+  export let language = "plaintext";
+  export let code = "";
+  $: trimmed = trim(code);
+  $: highlighted = hljs.highlight(trimmed, { language }).value;
+</script>
+
+{@html `<!--
+${trimmed}
+-->`}
+<pre><code>{@html highlighted}</code></pre>
+
+<style>
+  code {
+    padding: 1rem;
+    overflow-x: auto;
+    background-color: #ffffff;
+  }
+</style>
