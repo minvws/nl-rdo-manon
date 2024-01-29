@@ -102,7 +102,6 @@
       <h2 id="instructions-heading">Meer instructies</h2>
       <nav aria-labelledby="instructions-heading">
         <ul>
-          <li><a href="{base}/documentation/add-icons">Iconen toevoegen</a></li>
           <li><a href="{base}/documentation/add-js">JavaScript toevoegen</a></li>
           <li><a href="{base}/documentation/variables">Variabelen</a></li>
           <li>

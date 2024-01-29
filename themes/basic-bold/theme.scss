@@ -3,9 +3,8 @@
 /* Variables */
 @forward "variables";
 
-/* Fonts & icons */
+/* Fonts */
 @use "fonts";
-@use "icons";
 
 /* Styling on the highest level */
 @use "application-base";
@@ -23,8 +22,9 @@
 @use "layout/section";
 
 /* Components */
+@use "components/accordion";
 @use "components/breadcrumb-bar";
-
+@use "components/filter";
 @use "components/icon";
 @use "components/logo";
 @use "components/pagination";

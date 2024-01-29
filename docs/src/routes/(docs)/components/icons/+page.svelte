@@ -5,116 +5,103 @@
 <script>
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
+  import SideMenu from "$lib/SideMenu.svelte";
 </script>
 
 <svelte:head>
   <title>Iconen</title>
 </svelte:head>
 
-<main id="main-content" tabindex="-1">
-  <article id="button-base">
+<main class="sidemenu" id="main-content" tabindex="-1">
+  <SideMenu>
+    <ul>
+      <li><a href="#introduction">Introductie</a></li>
+      <li><a href="#usage">Iconen gebruiken</a></li>
+      <li><a href="#examples">Voorbeelden</a></li>
+      <li><a href="#available-icons">Beschikbare iconen</a></li>
+      <li><a href="#add-other-icons">Andere iconen toevoegen</a></li>
+      <li><a href="#related">Gerelateerde pagina's</a></li>
+    </ul>
+  </SideMenu>
+  <article>
     <div>
       <section id="introduction">
         <h1>Iconen</h1>
         <p>
-          Voor het toevoegen van iconen binnen de website kan gebruikt gemaakt worden van de
-          unicode-codes.
+          Voor het toevoegen van iconen binnen de website kan gebruik gemaakt worden van een
+          icoon-lettertype via de classes <code>icon</code> en
+          <code>icon-{"{naam}"}</code>.
         </p>
-
-        <ol>
-          <li>
-            Voeg de class <code>icon</code> toe om gebruik te maken van de visuele weergave van een icoonknop.
-          </li>
-          <li>
-            Voeg iconen toe aan het project.
-            <ul>
-              <li><a href="{base}/components/iconset-create">Iconset aanmaken</a></li>
-              <li><a href="{base}/components/iconset-add">Iconset toevoegen</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#usage">Iconen gebruiken.</a>
-            <ul>
-              <li>
-                <a href="#icon-within">Iconen toevoegen binnen de HTML</a>
-              </li>
-              <li>
-                <a href="#icon-within-css">Iconen toevoegen via CSS</a>
-              </li>
-            </ul>
-          </li>
-        </ol>
+        <p>
+          Standaard maken deze classes gebruik van het meegeleverde icoon-lettertype van het thema.
+          Zie <a href="#available-icons">beschikbare iconen</a> voor meer informatie over deze
+          standaard iconen. Daarnaast is het mogelijk om applicatie-specifieke iconen toe te voegen.
+          Zie hiervoor <a href="#add-other-icons">andere iconen toevoegen</a>.
+        </p>
       </section>
-
       <section id="usage">
         <h2>Iconen gebruiken</h2>
-
-        <h3 id="icon-within-html">Binnen HTML</h3>
-        <p>Iconen als afbeelding toevoegen.</p>
-
-        <h4>Visueel voorbeeld:</h4>
-        <img src="$img/cat.svg" class="icon" />
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<img src="cat.svg" class="icon">
-`}
-        />
-
-        <h3 id="icon-within-css">Via CSS</h3>
         <p>
-          Het onderstaande voorbeeld bevat een <code>span</code>. Andere html-attributen zijn ook
-          mogelijk. Onder andere: <code>a</code>, <code>p</code>, <code>button</code>.
+          Iconen kunnen toegepast worden op allerlei HTML-elementen, waaronder <code>span</code>,
+          <code>a</code>, <code>p</code> en <code>button</code>.
         </p>
-        <p>
-          <strong>Let op:</strong> Voeg eerst een iconenset toe aan het project met indien nodig een
-          eigen referentielijst. Voor meer informatie zie:
-          <a href="{base}/components/iconset-add">Iconset toevoegen</a>
-        </p>
-
-        <h4>Visueel voorbeeld:</h4>
-        <button class="icon icon-cat">Kat</button>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<button class="icon icon-cat">Kat</button>
-`}
-        />
-      </section>
-
-      <section id="global-icon-font">
-        <h2>Applicatie icoonlettertype definiëren</h2>
+        <h3>Benodigde stappen</h3>
         <ol>
+          <li>Voeg de <code>icon</code> class toe aan het element.</li>
           <li>
-            Voeg het icoonlettertype toe aan het project. Voor informatie zie:
-            <a href="{base}/components/iconset-add">Icoonset toevoegen</a>.
+            Voeg een <code>icon-{"{naam}"}</code> class toe, bijvoorbeeld
+            <code>icon-check</code>
+            om het <span class="icon icon-check">check</span>-icoon te gebruiken.
           </li>
           <li>
-            Defineer het lettertype binnen het bestand
-            <code>manon/icon/icon-base-variables</code> via de variabele
-            <code>font-family</code>. Bijvoorbeeld:
-            <code>--icon-font-family: "Manon icons";</code>. Zie ook
-            <a href="{base}/import-styling#styling-override-variables"
-              >De styling van een component aanpassen</a
-            >.
+            Voeg een toegankelijke naam toe binnen het element. Deze wordt visueel verborgen, maar
+            is belangrijk voor screenreader-gebruikers en voor wanneer CSS niet geladen kan worden.
           </li>
         </ol>
       </section>
-
-      <section id="variables">
-        <h2>Instelbare variabelen</h2>
+      <section id="examples">
+        <h2>Voorbeelden</h2>
+        <h3><code>span</code></h3>
+        <h4>Visueel voorbeeld</h4>
+        <span class="icon icon-calendar">Kalender</span>
+        <h4>HTML-voorbeeld</h4>
+        <Code language="html" code={`<span class="icon icon-calendar">Kalender</span>`} />
+        <h3><code>button</code></h3>
+        <h4>Visueel voorbeeld</h4>
+        <button class="icon icon-on-off">Aan- of uitschakelen</button>
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`<button class="icon icon-on-off">Aan- of uitschakelen</button>`}
+        />
+      </section>
+      <section id="available-icons">
+        <h2>Beschikbare iconen</h2>
+        <p>
+          De thema's worden geleverd met een icoon-lettertype en met <code>icon-{"{naam}"}</code>
+          classes voor een aantal standaard-sets. Zie de
+          <a href="{base}/components/icons/default-sets">standaard icoon-sets</a> voor een overzicht
+          van de beschikbare iconen.
+        </p>
+      </section>
+      <section id="add-other-icons">
+        <h2>Andere iconen toevoegen</h2>
+        <p>
+          Er zijn twee manieren om iconen te gebruiken die niet beschikbaar zijn in de icoon-sets
+          van het thema:
+        </p>
         <ul>
-          <li><a href="{base}/variables#font-family">font-family</a></li>
+          <li>Gebruik een losse <a href="{base}/components/image-icon">icoon-afbeelding</a>.</li>
+          <li>
+            Voeg een applicatie-specifieke icoon-set toe. Zie <a
+              href="{base}/components/icons/add-set">icoon-set toevoegen</a
+            > voor instructies.
+          </li>
         </ul>
       </section>
-
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="{base}/components/icons-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/icons/test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

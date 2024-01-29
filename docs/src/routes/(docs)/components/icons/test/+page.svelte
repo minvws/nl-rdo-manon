@@ -1,5 +1,5 @@
 <script context="module">
-  export const breadcrumb = "iconen testpagina";
+  export const breadcrumb = "Iconen testpagina";
 </script>
 
 <script>
@@ -8,14 +8,14 @@
 </script>
 
 <svelte:head>
-  <title>iconen testpagina</title>
+  <title>Iconen testpagina</title>
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article id="icon-base">
+  <article>
     <div>
       <section id="introduction">
-        <h1>iconen testpagina</h1>
+        <h1>Iconen testpagina</h1>
         <p>Overzicht van het element in mogelijke structuren om te testen.</p>
       </section>
 
@@ -103,7 +103,7 @@
 
         <h3>Link als knop</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/icons-test" class="button icon icon-cat">Lorem ipsum</a>
+        <a href="{base}/components/icons/test" class="button icon icon-cat">Lorem ipsum</a>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -115,7 +115,7 @@
 
         <h3>Link als knop: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/icons-test" class="button icon icon-cat" disabled>Lorem ipsum</a>
+        <a href="{base}/components/icons/test" class="button icon icon-cat" disabled>Lorem ipsum</a>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -127,35 +127,35 @@
 
         <h3>Link als knop icoon erachter</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/icons-test">Lorem ipsum<span class="icon icon-cat"></span></a>
+        <a href="{base}/components/icons/test">Lorem ipsum<span class="icon icon-cat"></span></a>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
           language="html"
           code={`
-<a href="{base}/components/icons-test" class="icon-after icon-cat">Lorem ipsum
+<a href="{base}/components/icons/test" class="icon-after icon-cat">Lorem ipsum
 `}
         />
 
         <h4>States</h4>
         <ul>
           <li>
-            <a href="{base}/components/icons-test" class="button icon icon-cat focus">Focus</a>
+            <a href="{base}/components/icons/test" class="button icon icon-cat focus">Focus</a>
           </li>
           <li>
-            <a href="{base}/components/icons-test" class="button icon icon-cat active">Active</a>
+            <a href="{base}/components/icons/test" class="button icon icon-cat active">Active</a>
           </li>
           <li>
-            <a href="{base}/components/icons-test" class="button icon icon-cat visited">Visited</a>
+            <a href="{base}/components/icons/test" class="button icon icon-cat visited">Visited</a>
           </li>
           <li>
-            <a href="{base}/components/icons-test" class="button icon icon-cat hover">Hover</a>
+            <a href="{base}/components/icons/test" class="button icon icon-cat hover">Hover</a>
           </li>
         </ul>
 
         <h3>Link als knop: met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/icons-test" class="button icon icon-cat"
+        <a href="{base}/components/icons/test" class="button icon icon-cat"
           >Lorem ipsum <img src="$img/cat.svg" /></a
         >
 
@@ -265,16 +265,16 @@
         <h4>Visueel voorbeeld:</h4>
         <ul>
           <li>
-            <a href="{base}/components/icons-test" class="icon icon-cat focus">Focus</a>
+            <a href="{base}/components/icons/test" class="icon icon-cat focus">Focus</a>
           </li>
           <li>
-            <a href="{base}/components/icons-test" class="icon icon-cat active">Active</a>
+            <a href="{base}/components/icons/test" class="icon icon-cat active">Active</a>
           </li>
           <li>
-            <a href="{base}/components/icons-test" class="icon icon-cat visited">Visited</a>
+            <a href="{base}/components/icons/test" class="icon icon-cat visited">Visited</a>
           </li>
           <li>
-            <a href="{base}/components/icons-test" class="icon icon-cat hover">Hover</a>
+            <a href="{base}/components/icons/test" class="icon icon-cat hover">Hover</a>
           </li>
         </ul>
 
@@ -294,22 +294,22 @@
         <h4>Visueel voorbeeld:</h4>
         <ul>
           <li>
-            <a href="{base}/components/icons-test" class="focus"
+            <a href="{base}/components/icons/test" class="focus"
               ><img src="$img/cat.svg" alt="Kat" class="icon" />Focus</a
             >
           </li>
           <li>
-            <a href="{base}/components/icons-test" class="active"
+            <a href="{base}/components/icons/test" class="active"
               ><img src="$img/cat.svg" alt="Kat" class="icon" />Active</a
             >
           </li>
           <li>
-            <a href="{base}/components/icons-test" class="visited"
+            <a href="{base}/components/icons/test" class="visited"
               ><img src="$img/cat.svg" alt="Kat" class="icon" />Visited</a
             >
           </li>
           <li>
-            <a href="{base}/components/icons-test" class="hover"
+            <a href="{base}/components/icons/test" class="hover"
               ><img src="$img/cat.svg" alt="Kat" class="icon" />Hover</a
             >
           </li>

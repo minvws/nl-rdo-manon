@@ -153,8 +153,8 @@
                 Afbeeldingen - <code>img</code>
                 <ul>
                   <li><a href="{base}/components/logo">Logo</a></li>
-                  <li><a href="{base}/components/icons">Iconen</a></li>
                   <li><a href="{base}/components/image-cover">Cover-afbeelding</a></li>
+                  <li><a href="{base}/components/image-icon">Icoon-afbeelding</a></li>
                   <li><a href="{base}/components/image-round">Ronde afbeelding</a></li>
                   <li><a href="{base}/components/image-square">Vierkante afbeelding</a></li>
                 </ul>
@@ -170,16 +170,17 @@
               <li><a href="{base}/components/accordion">Accordeon</a></li>
               <li><a href="{base}/components/filter">Filter</a></li>
               <li><a href="{base}/components/header-navigation">Header</a></li>
+              <li><a href="{base}/components/icons">Iconen</a></li>
               <li><a href="{base}/components/login-meta">Ingelogd als</a></li>
               <li><a href="{base}/components/collapsible">Inklapbaar component</a></li>
               <li><a href="{base}/components/card">Kaart</a></li>
               <li><a href="{base}/components/breadcrumb-bar">Kruimelpad - breadcrumb-bar</a></li>
               <li><a href="{base}/components/pagination">Paginering</a></li>
-              <li><a href="{base}/components/tag">Tag</a></li>
+              <li><a href="{base}/components/language-selector">Taalselectie</a></li>
               <li><a href="{base}/components/tabs">Tabbladen</a></li>
+              <li><a href="{base}/components/tag">Tag</a></li>
               <li><a href="{base}/components/tiles">Tegelweergave</a></li>
               <li><a href="{base}/components/sidemenu">Zijmenu</a></li>
-              <li><a href="{base}/components/language-selector">Taalselectie</a></li>
             </ul>
           </nav>
 

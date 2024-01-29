@@ -1,0 +1,9 @@
+/* Filter */
+
+@use "sass:map";
+@use "icon";
+
+:root {
+  --filter-button-icon-before-open-content: #{map.get(icon.$glyphs, descending)};
+  --filter-button-icon-before-close-content: #{map.get(icon.$glyphs, ascending)};
+}

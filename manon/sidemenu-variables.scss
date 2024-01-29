@@ -67,8 +67,8 @@
   /* add content within "", this could be text or a unicode for an icon*/
 
   /* content on the button when the menu is collapsed */
-  --sidemenu-collapsed-button-icon: var(--icon-descending);
+  --sidemenu-collapsed-button-icon: ⯆;
 
   /* content on the button when the menu is expanded */
-  --sidemenu-expanded-button-icon: var(--icon-ascending);
+  --sidemenu-expanded-button-icon: ⯅;
 }
