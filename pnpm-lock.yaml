@@ -39,14 +39,14 @@ importers:
         specifier: ^5.0.5
         version: 5.0.5
       sass:
-        specifier: ^1.69.7
-        version: 1.69.7
+        specifier: ^1.70.0
+        version: 1.70.0
       svelte:
         specifier: ^4.2.9
         version: 4.2.9
       svelte-check:
         specifier: ^3.6.3
-        version: 3.6.3(sass@1.69.7)(svelte@4.2.9)
+        version: 3.6.3(sass@1.70.0)(svelte@4.2.9)
       svelte-preprocess-import-assets:
         specifier: ^1.1.0
         version: 1.1.0(svelte@4.2.9)
@@ -55,7 +55,7 @@ importers:
         version: 5.3.3
       vite:
         specifier: ^5.0.12
-        version: 5.0.12(sass@1.69.7)
+        version: 5.0.12(sass@1.70.0)
 
   examples/laravel-mix:
     dependencies:
@@ -73,11 +73,11 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       sass:
-        specifier: ^1.69.7
-        version: 1.69.7
+        specifier: ^1.70.0
+        version: 1.70.0
       sass-loader:
         specifier: ^14.0.0
-        version: 14.0.0(sass@1.69.7)(webpack@5.89.0)
+        version: 14.0.0(sass@1.70.0)(webpack@5.89.0)
 
   examples/sass-cli:
     dependencies:
@@ -89,8 +89,8 @@ importers:
         version: link:../../themes
     devDependencies:
       sass:
-        specifier: ^1.69.7
-        version: 1.69.7
+        specifier: ^1.70.0
+        version: 1.70.0
 
   examples/vite:
     dependencies:
@@ -102,11 +102,11 @@ importers:
         version: link:../../themes
     devDependencies:
       sass:
-        specifier: ^1.69.7
-        version: 1.69.7
+        specifier: ^1.70.0
+        version: 1.70.0
       vite:
         specifier: ^5.0.12
-        version: 5.0.12(sass@1.69.7)
+        version: 5.0.12(sass@1.70.0)
 
   manon:
     devDependencies:
@@ -1810,7 +1810,7 @@ packages:
       sirv: 2.0.4
       svelte: 4.2.9
       tiny-glob: 0.2.9
-      vite: 5.0.12(sass@1.69.7)
+      vite: 5.0.12(sass@1.70.0)
     dev: true
 
   /@sveltejs/vite-plugin-svelte-inspector@2.0.0(@sveltejs/vite-plugin-svelte@3.0.2)(svelte@4.2.9)(vite@5.0.12):
@@ -1824,7 +1824,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 3.0.2(svelte@4.2.9)(vite@5.0.12)
       debug: 4.3.4
       svelte: 4.2.9
-      vite: 5.0.12(sass@1.69.7)
+      vite: 5.0.12(sass@1.70.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1843,7 +1843,7 @@ packages:
       magic-string: 0.30.5
       svelte: 4.2.9
       svelte-hmr: 0.15.3(svelte@4.2.9)
-      vite: 5.0.12(sass@1.69.7)
+      vite: 5.0.12(sass@1.70.0)
       vitefu: 0.2.5(vite@5.0.12)
     transitivePeerDependencies:
       - supports-color
@@ -5806,7 +5806,7 @@ packages:
       rimraf: 2.7.1
     dev: true
 
-  /sass-loader@14.0.0(sass@1.69.7)(webpack@5.89.0):
+  /sass-loader@14.0.0(sass@1.70.0)(webpack@5.89.0):
     resolution: {integrity: sha512-oceP9wWbep/yRJ2+sMbCzk0UsXsDzdNis+N8nu9i5GwPXjy6v3DNB6TqfJLSpPO9k4+B8x8p/CEgjA9ZLkoLug==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
@@ -5823,7 +5823,7 @@ packages:
         optional: true
     dependencies:
       neo-async: 2.6.2
-      sass: 1.69.7
+      sass: 1.70.0
       webpack: 5.89.0(webpack-cli@4.10.0)
     dev: true
 
@@ -5837,8 +5837,8 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
-  /sass@1.69.7:
-    resolution: {integrity: sha512-rzj2soDeZ8wtE2egyLXgOOHQvaC2iosZrkF6v3EUG+tBwEvhqUCzm0VP3k9gHF9LXbSrRhT5SksoI56Iw8NPnQ==}
+  /sass@1.70.0:
+    resolution: {integrity: sha512-uUxNQ3zAHeAx5nRFskBnrWzDUJrrvpCPD5FNAoRvTi0WwremlheES3tg+56PaVtCs5QDRX5CBLxxKMDJMEa1WQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -6382,7 +6382,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /svelte-check@3.6.3(sass@1.69.7)(svelte@4.2.9):
+  /svelte-check@3.6.3(sass@1.70.0)(svelte@4.2.9):
     resolution: {integrity: sha512-Q2nGnoysxUnB9KjnjpQLZwdjK62DHyW6nuH/gm2qteFnDk0lCehe/6z8TsIvYeKjC6luKaWxiNGyOcWiLLPSwA==}
     hasBin: true
     peerDependencies:
@@ -6395,7 +6395,7 @@ packages:
       picocolors: 1.0.0
       sade: 1.8.1
       svelte: 4.2.9
-      svelte-preprocess: 5.1.3(sass@1.69.7)(svelte@4.2.9)(typescript@5.3.3)
+      svelte-preprocess: 5.1.3(sass@1.70.0)(svelte@4.2.9)(typescript@5.3.3)
       typescript: 5.3.3
     transitivePeerDependencies:
       - '@babel/core'
@@ -6437,7 +6437,7 @@ packages:
       svelte-parse-markup: 0.1.2(svelte@4.2.9)
     dev: true
 
-  /svelte-preprocess@5.1.3(sass@1.69.7)(svelte@4.2.9)(typescript@5.3.3):
+  /svelte-preprocess@5.1.3(sass@1.70.0)(svelte@4.2.9)(typescript@5.3.3):
     resolution: {integrity: sha512-xxAkmxGHT+J/GourS5mVJeOXZzne1FR5ljeOUAMXUkfEhkLEllRreXpbl3dIYJlcJRfL1LO1uIAPpBpBfiqGPw==}
     engines: {node: '>= 16.0.0', pnpm: ^8.0.0}
     requiresBuild: true
@@ -6478,7 +6478,7 @@ packages:
       '@types/pug': 2.0.10
       detect-indent: 6.1.0
       magic-string: 0.30.5
-      sass: 1.69.7
+      sass: 1.70.0
       sorcery: 0.11.0
       strip-indent: 3.0.0
       svelte: 4.2.9
@@ -6742,7 +6742,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite@5.0.12(sass@1.69.7):
+  /vite@5.0.12(sass@1.70.0):
     resolution: {integrity: sha512-4hsnEkG3q0N4Tzf1+t6NdN9dg/L3BM+q8SWgbSPnJvrgH2kgdyzfVJwbR1ic69/4uMJJ/3dqDZZE5/WwqW8U1w==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -6773,7 +6773,7 @@ packages:
       esbuild: 0.19.11
       postcss: 8.4.33
       rollup: 4.9.5
-      sass: 1.69.7
+      sass: 1.70.0
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
@@ -6786,7 +6786,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 5.0.12(sass@1.69.7)
+      vite: 5.0.12(sass@1.70.0)
     dev: true
 
   /vm-browserify@1.1.2:
