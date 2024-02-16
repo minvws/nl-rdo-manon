@@ -21,7 +21,7 @@
           <li>
             <p>
               Je werkt aan een applicatie, die iconen nodig heeft die niet beschikbaar zijn in de <a
-                href="{base}/components/icons/default-sets">standaard icoon-sets</a
+                href="{base}/components/icons#default-iconset">standaard icoon-sets</a
               >
               van het thema. Volg dan deze instructies:
               <a href="#application-icon-set">Een applicatie-specifieke icoon-set toevoegen</a>
@@ -119,8 +119,8 @@ $glyphs: (
             <p>
               Maak een icoon-lettertype met behulp van software of online tools om lettertypes en
               svg fonts mee te maken. Maak notitie van de UTF-8 codes van de verschillende iconen.
-              Zorg er bij voorkeur voor dat het icoon-lettertype zo veel mogelijk van de iconen uit <a
-                href="{base}/components/icons/default-sets">de standaard-sets</a
+              Zorg er bij voorkeur voor dat het icoon-lettertype alle iconen uit <a
+                href="{base}/components/icons#default-iconset">de standaard-sets</a
               > bevat.
             </p>
           </li>
@@ -204,8 +204,14 @@ $glyphs: (
               de <code>--icon-font-family</code> property ingesteld is.
             </p>
           </li>
-          <li>Stel de juiste UTF-8-karakters in voor componenten die een pseudo-element gebruiken voor een icoon. Als je de <code>define-icons</code> mixin gebruikt heb en dus een Sass map voor de icoon-glyphs, dan kan je deze uitlezen met de <code>map.get</code>-functie uit <code>sass:map</code>:
-          <Code language="scss" code={`
+          <li>
+            Stel de juiste UTF-8-karakters in voor componenten die een pseudo-element gebruiken voor
+            een icoon. Als je de <code>define-icons</code> mixin gebruikt heb en dus een Sass map
+            voor de icoon-glyphs, dan kan je deze uitlezen met de <code>map.get</code>-functie uit
+            <code>sass:map</code>:
+            <Code
+              language="scss"
+              code={`
 @use "sass:map";
 @use "icon";
 
@@ -219,7 +225,8 @@ $glyphs: (
   /* Sidemenu */
   --sidemenu-collapsed-button-icon: #{map.get(icon.$glyphs, descending)};
   --sidemenu-expanded-button-icon: #{map.get(icon.$glyphs, ascending)};
-}`}/>
+}`}
+            />
           </li>
         </ol>
       </section>

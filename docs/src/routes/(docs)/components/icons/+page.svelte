@@ -6,6 +6,32 @@
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
+
+  const icons = [
+    "home",
+    "search",
+    "hamburger",
+    "close",
+    "questionmark",
+    "sort",
+    "ascending",
+    "descending",
+    "chevron-up",
+    "chevron-down",
+    "chevron-left",
+    "chevron-right",
+    "check",
+    "download",
+    "heart",
+    "lock-closed",
+    "on-off",
+    "outgoing",
+    "reset",
+    "smartphone",
+    "to-top",
+    "trash",
+    "user",
+  ];
 </script>
 
 <svelte:head>
@@ -79,9 +105,22 @@
         <h2>Beschikbare iconen</h2>
         <p>
           De thema's worden geleverd met een icoon-lettertype en met <code>icon-{"{naam}"}</code>
-          classes voor een aantal standaard-sets. Zie de
-          <a href="{base}/components/icons/default-sets">standaard icoon-sets</a> voor een overzicht
-          van de beschikbare iconen.
+          classes voor een set standaard iconen:
+        </p>
+        <ul id="default-iconset" class="background-color-offset grid-iconset">
+          {#each icons as icon}
+            <li>
+              <span class="icon icon-{icon}" aria-hidden="true" />
+              <code lang="en">{icon}</code>
+            </li>
+          {/each}
+        </ul>
+        <p>
+          Elk thema zou ernaar moeten streven de iconen in deze set te implementeren. Iconen die in
+          een thema niet beschikbaar zijn, moeten door het thema als &#x25A1; (het unicode-character <code
+            >U+25A1</code
+          > <span lang="en">"missing glyph"</span>) aangeboden worden. Extra iconen kunnen als
+          aparte module aangeboden worden.
         </p>
       </section>
       <section id="add-other-icons">
@@ -106,3 +145,22 @@
     </div>
   </article>
 </main>
+
+<style>
+  #default-iconset {
+    padding: 1rem;
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  #default-iconset li {
+    padding: 1rem;
+    list-style-type: none;
+    background: #fff;
+    hyphens: none;
+    display: grid;
+    grid-template-columns: 1rem auto;
+    gap: 0.5rem;
+  }
+</style>
