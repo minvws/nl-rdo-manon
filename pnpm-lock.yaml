@@ -45,8 +45,8 @@ importers:
         specifier: ^4.2.12
         version: 4.2.12
       svelte-check:
-        specifier: ^3.6.4
-        version: 3.6.4(sass@1.70.0)(svelte@4.2.12)
+        specifier: ^3.6.7
+        version: 3.6.7(sass@1.70.0)(svelte@4.2.12)
       svelte-preprocess-import-assets:
         specifier: ^1.1.0
         version: 1.1.0(svelte@4.2.12)
@@ -136,7 +136,7 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.21
+      '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
   /@ampproject/remapping@2.3.0:
@@ -1630,7 +1630,7 @@ packages:
     dependencies:
       '@jridgewell/set-array': 1.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
-      '@jridgewell/trace-mapping': 0.3.21
+      '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
   /@jridgewell/gen-mapping@0.3.5:
@@ -6522,14 +6522,14 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /svelte-check@3.6.4(sass@1.70.0)(svelte@4.2.12):
-    resolution: {integrity: sha512-mY/dqucqm46p72M8yZmn81WPZx9mN6uuw8UVfR3ZKQeLxQg5HDGO3HHm5AZuWZPYNMLJ+TRMn+TeN53HfQ/vsw==}
+  /svelte-check@3.6.7(sass@1.70.0)(svelte@4.2.12):
+    resolution: {integrity: sha512-tKEjemK9FYCySAseCaIt+ps5o0XRvLC7ECjyJXXtO7vOQhR9E6JavgoUbGP1PCulD2OTcB/fi9RjV3nyF1AROw==}
     hasBin: true
     peerDependencies:
       svelte: ^3.55.0 || ^4.0.0-next.0 || ^4.0.0 || ^5.0.0-next.0
     dependencies:
-      '@jridgewell/trace-mapping': 0.3.21
-      chokidar: 3.5.3
+      '@jridgewell/trace-mapping': 0.3.25
+      chokidar: 3.6.0
       fast-glob: 3.3.2
       import-fresh: 3.3.0
       picocolors: 1.0.0
