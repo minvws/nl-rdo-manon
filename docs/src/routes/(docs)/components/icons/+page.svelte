@@ -89,9 +89,9 @@
         <h2>Voorbeelden</h2>
         <h3><code>span</code></h3>
         <h4>Visueel voorbeeld</h4>
-        <span class="icon icon-calendar">Kalender</span>
+        <span class="icon icon-user">Gebruiker</span>
         <h4>HTML-voorbeeld</h4>
-        <Code language="html" code={`<span class="icon icon-calendar">Kalender</span>`} />
+        <Code language="html" code={`<span class="icon icon-user">Gebruiker</span>`} />
         <h3><code>button</code></h3>
         <h4>Visueel voorbeeld</h4>
         <button class="icon icon-on-off">Aan- of uitschakelen</button>
