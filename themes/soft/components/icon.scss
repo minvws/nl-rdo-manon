@@ -1,5 +1,36 @@
 /* Icon */
 
+@use "../fonts/tabler-icons/glyphs";
+@use "@minvws/manon/mixins/icon";
+
+$glyphs: (
+  "chevron-left": glyphs.$ti-icon-chevron-left,
+  "chevron-right": glyphs.$ti-icon-chevron-right,
+  "chevron-up": glyphs.$ti-icon-chevron-up,
+  "chevron-down": glyphs.$ti-icon-chevron-down,
+  "close": glyphs.$ti-icon-x,
+  "home": glyphs.$ti-icon-home,
+  "lock-closed": glyphs.$ti-icon-lock,
+  "on-off": glyphs.$ti-icon-power,
+  "search": glyphs.$ti-icon-search,
+  "smartphone": glyphs.$ti-icon-device-mobile,
+  "download": glyphs.$ti-icon-download,
+  "user": glyphs.$ti-icon-user,
+  "to-top": glyphs.$ti-icon-arrow-bar-to-up,
+  "reset": glyphs.$ti-icon-refresh,
+  "trash": glyphs.$ti-icon-trash,
+  "outgoing": glyphs.$ti-icon-arrow-up-right,
+  "sort": glyphs.$ti-icon-caret-up-down-filled,
+  "ascending": glyphs.$ti-icon-caret-up-filled,
+  "descending": glyphs.$ti-icon-caret-down-filled,
+  "heart": glyphs.$ti-icon-heart,
+  "questionmark": glyphs.$ti-icon-question-mark,
+  "check": glyphs.$ti-icon-check,
+  "hamburger": glyphs.$ti-icon-menu-2,
+);
+
 :root {
-  --icon-font-family: "manon-soft-icons";
+  --icon-font-family: "tabler-icons";
 }
+
+@include icon.define-icons($glyphs);

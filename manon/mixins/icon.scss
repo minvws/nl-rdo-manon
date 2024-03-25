@@ -42,3 +42,17 @@
 @mixin icon-content($prefix) {
   content: var(--#{$prefix}icon);
 }
+
+@mixin define-icons($glyphs, $position: "before", $font-family: null) {
+  .icon,
+  .icon-only {
+    @each $name, $glyph in $glyphs {
+      &.icon-#{$name}::#{$position} {
+        @if $font-family {
+          font-family: $font-family;
+        }
+        content: $glyph;
+      }
+    }
+  }
+}

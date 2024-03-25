@@ -37,13 +37,13 @@
 
 /* Icon font */
 @font-face {
-  font-family: "manon-basic-bold-icons";
+  font-family: "tabler-icons";
   font-weight: normal;
   font-style: normal;
   font-display: var(--text-icon-font-display, block);
-  src: url("#{variables.$font-path}/icons/manon-basic-bold-icons-0.3.eot");
-  src:
-    url("#{variables.$font-path}/icons/manon-basic-bold-icons-0.3.woff") format("woff"),
-    url("#{variables.$font-path}/icons/manon-basic-bold-icons-0.3.ttf") format("truetype"),
-    url("#{variables.$font-path}/icons/manon-basic-bold-icons-0.3.svg#manon-basic-bold-icons") format("svg");
+  src: url('#{variables.$font-path}/tabler-icons/tabler-icons.eot?v2.44.0');
+  src: url('#{variables.$font-path}/tabler-icons/tabler-icons.eot?#iefix-v2.44.0') format('embedded-opentype'),
+    url('#{variables.$font-path}/tabler-icons/tabler-icons.woff2?v2.44.0') format('woff2'),
+    url('#{variables.$font-path}/tabler-icons/tabler-icons.woff?') format('woff'),
+    url('#{variables.$font-path}/tabler-icons/tabler-icons.ttf?v2.44.0') format('truetype');
 }
