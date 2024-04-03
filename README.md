@@ -1,6 +1,6 @@
 # Manon
 
-> [INFO]
+> [!NOTE]
 > For English, see [English](#english)
 
 De documentatie is te vinden op https://minvws.github.io/nl-rdo-manon. Deze wordt gegenereerd op basis van de [docs](./docs) directory binnen deze repo.
