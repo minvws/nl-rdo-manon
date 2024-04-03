@@ -11,6 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
+        with:
+          registry-url: "https://registry.npmjs.org"
       - name: Get semver from tag
         run: |
           RELEASE_VERSION=${GITHUB_REF#refs/*/}
@@ -32,6 +34,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
+        with:
+          registry-url: "https://npm.pkg.github.com"
       - name: Get semver from tag
         run: |
           RELEASE_VERSION=${GITHUB_REF#refs/*/}
