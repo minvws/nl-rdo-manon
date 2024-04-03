@@ -5,7 +5,8 @@
     "*.scss",
     "**/*.scss",
     "*.js",
-    "**/*.js"
+    "**/*.js",
+    "**/*.license"
   ],
   "scripts": {
     "format": "prettier --write .",

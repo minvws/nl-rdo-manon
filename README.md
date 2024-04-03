@@ -1,5 +1,9 @@
 # Manon
-De documentatie is te vinden op https://minvws.github.io/nl-rdo-manon. Deze wordt gegenereerd op basis van de docs directory binnen deze repo.
+
+> [INFO]
+> For English, see [English](#english)
+
+De documentatie is te vinden op https://minvws.github.io/nl-rdo-manon. Deze wordt gegenereerd op basis van de [docs](./docs) directory binnen deze repo.
 
 Er wordt momenteel nog hard gewerkt aan Manon en de documentatie. Het kan daarom zijn dat sommige onderdelen nog niet volledig getest zijn of nog missen. Kom je een probleem tegen dat nog niet gedocumenteerd staat binnen de issues op de manon repository meld ze vooral. Dan maakt ze inzichtelijk en oplosbaar.
 
@@ -21,23 +25,15 @@ Tijdens de vaccinatiecampagne werden er in korte tijd veel websites gelanceerd e
 Het verschil tussen de Manon Rijk met de rijkshuisstijl en Manon Open voor algemeen gebruik is dat het pakket variabel en instelbaar is gemaakt. Waar de eerste versie van Manon een pakket was dat als geheel werd geimplementeerd is Manon Open geschreven zodat je zelf kan uitkiezen welke componenten en welke stukken CSS je wilt toevoegen. Hierdoor hoef je weinig overrides te doen en krijg je een zo klein mogelijk CSS-bestand.
 
 ## Licentie
-Zie [LICENSES.md](./LICENSES.md).
 
-Alle lettertypes binnen Manon vallen onder en behouden hun eigen licentie. Voor meer informatie zie bijvoorbeeld: Neuton & Open Sans.
-
-Voor meer informatie bekijk de bijbehorende mappen voor extra of specifiekere licenties (indien beschikbaar) of bezoek: 
-
-### Neuton
-https://fonts.google.com/specimen/Neuton/about
-
-### Open Sans
-https://fonts.google.com/specimen/Open+Sans/about
-
+Deze repository gebruikt de [REUSE Specfication v3.0](https://reuse.software/spec/). Zie [.reuse/dep5](./.reuse/dep5) en de individuele `*.license`-bestanden voor copyright- en licentie-informatie.
 
 # English
 
 # Manon
-The documentation can be found on https://minvws.github.io/nl-rdo-manon, it is generated using the docs directory on this repo. Manon and the documentation are currently being developed. This means that it's possible that parts haven't been fully tested or added yet. It also means that as it is in development things may change. If you run into any issues that haven't been documented within the repository feel free to add them. This will make them visual and solvable. We highly appreciate the feedback and insight.
+The documentation can be found on https://minvws.github.io/nl-rdo-manon. It is generated from the [docs](./docs) directory on this repo.
+
+Manon and the documentation are currently being developed. This means that it's possible that parts haven't been fully tested or added yet. It also means that as it is in development things may change. If you run into any issues that haven't been documented within the repository feel free to add them. This will make them visual and solvable. We highly appreciate the feedback and insight.
 
 ## What
 Manon is a design framework that is based on the following principles:
@@ -58,15 +54,5 @@ The biggest difference between Manon Rijk (the version which uses the Rijksoverh
 
 
 ## License
-Zie [LICENSES.md](./LICENSES.md).
 
-All fonts used within Manon remain under their own license. For example: Neuton & Open Sans.
-
-For more information check their respective folders for extra/ more specific licenses (if available) or visit:
-
-### Neuton
-https://fonts.google.com/specimen/Neuton/about
-
-### Open Sans
-https://fonts.google.com/specimen/Open+Sans/about
-
+This repository follows the [REUSE Specfication v3.0](https://reuse.software/spec/). Please see [.reuse/dep5](./.reuse/dep5) and the individual `*.license` files for copyright and license information.
