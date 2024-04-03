@@ -5,6 +5,9 @@
     "pnpm": "^8.0.0"
   },
   "scripts": {
-    "dev": "pnpm run --dir docs dev"
+    "dev": "pnpm run --dir docs dev",
+    "build": "pnpm run --dir docs build",
+    "lint": "pnpm run --dir manon lint:css",
+    "format:check": "pnpm run --dir manon format:check"
   }
 }
