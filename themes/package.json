@@ -6,9 +6,11 @@
     "**/*.ico",
     "**/*.png",
     "**/*.svg",
+    "**/*.eot",
     "**/*.ttf",
     "**/*.woff",
-    "**/*.woff2"
+    "**/*.woff2",
+    "**/*.license"
   ],
   "scripts": {
     "npm-version": "npm version"
