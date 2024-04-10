@@ -85,14 +85,11 @@ main.sidemenu {
         border-style: var(--sidemenu-list-item-border-style);
         border-width: var(--sidemenu-list-item-border-width);
         padding: var(--sidemenu-list-item-padding);
+        line-height: var(--sidemenu-list-item-line-height);
+        font-size: var(--sidemenu-list-item-font-size);
+        font-weight: var(--sidemenu-list-item-font-weight);
+        color: var(--sidemenu-list-item-text-color);
         list-style: var(--sidemenu-list-item-list-style);
-
-        a {
-          line-height: var(--sidemenu-list-item-line-height);
-          font-size: var(--sidemenu-list-item-font-size);
-          font-weight: var(--sidemenu-list-item-font-weight);
-          color: var(--sidemenu-list-item-text-color);
-        }
       }
 
       /* Button */
