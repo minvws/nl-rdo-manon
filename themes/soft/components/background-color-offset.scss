@@ -1,9 +1,0 @@
-/* Backgroundcolor offset */
-
-:root {
-  --background-color-offset-background-color: #f0f0f0;
-  --background-color-offset-margin-top: var(--content-padding-top);
-  --background-color-offset-margin-bottom: var(--content-padding-bottom);
-  --background-color-offset-padding-top: calc(var(--content-padding-top) * 2);
-  --background-color-offset-padding-bottom: calc(var(--content-padding-bottom) * 2);
-}
