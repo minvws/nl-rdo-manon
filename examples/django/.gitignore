@@ -1,4 +1,6 @@
- __pycache__/
- node_modules/
- static/
- *.sqlite3
+static/
+*.log
+*.pot
+*.pyc
+*.sqlite3
+__pycache__/
