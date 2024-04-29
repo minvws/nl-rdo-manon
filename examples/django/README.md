@@ -1,0 +1,1 @@
+# Manon Django Example Implementation

@@ -1,0 +1,12 @@
+volumes:
+  postgres:
+    driver: local
+
+services:
+  django:
+    build:
+      context: django-project
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./django-project:/app
