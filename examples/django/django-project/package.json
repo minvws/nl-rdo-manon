@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "css:watch": "sass -w app/assets/scss/main.scss app/static/css/main.css --load-path=node_modules/",
+    "css:build": "sass app/assets/scss/main.scss app/static/css/main.css --load-path=node_modules/"
+  },
+  "devDependencies": {
+    "sass": "1.75.0"
+  },
+  "dependencies": {
+    "@minvws/manon": "16.1.0",
+    "@minvws/manon-themes": "16.3.0-beta.2"
+  }
+}

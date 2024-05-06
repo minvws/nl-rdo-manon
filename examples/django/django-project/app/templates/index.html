@@ -1,3 +1,27 @@
-{% extends "base.html" %} {% block body %}
-<h1>Hello, world!</h1>
-{% endblock %}
+{% extends "base.html" %}
+
+{% block title %}Django Manon Example Project{% endblock title %}
+
+{% block main %}
+<main>
+  <section id="introduction" class="branding-color-accent-5">
+    <div>
+      <h1>Django Manon Example Project</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </section>
+  <section>
+    <div>
+      <h2>Test</h2>
+      <div class="column-2">
+        <nav>
+          <h3>Test 1</h3>
+        </nav>
+        <nav>
+          <h3>Test 2</h3>
+        </nav>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock main %}
