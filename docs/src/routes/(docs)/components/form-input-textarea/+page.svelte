@@ -61,11 +61,14 @@
         <h4>Basis</h4>
         <form action="" method="post">
           <label for="voorbeeld-tekstveld-base">Bericht</label>
+          <span class="nota-bene" id="voorbeeld-tekstveld-base-explanation"
+            >Jouw vraag of opmerking
+          </span>
           <textarea
             id="voorbeeld-tekstveld-base"
             name="voorbeeld-tekstveld-base"
-            placeholder="Jouw vraag of opmerking"
             rows="5"
+            aria-describedby="voorbeeld-tekstveld-base-explanation"
           ></textarea>
 
           <button type="submit">Verzend</button>
@@ -77,7 +80,15 @@
           code={`
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-base">Bericht</label>
-  <textarea id="voorbeeld-tekstveld-base" name="voorbeeld-tekstveld-base" placeholder="Jouw vraag of opmerking"></textarea>
+  <span class="nota-bene" id="voorbeeld-tekstveld-base-explanation">
+    Jouw vraag of opmerking
+  </span>
+  <textarea
+    id="voorbeeld-tekstveld-base"
+    name="voorbeeld-tekstveld-base"
+    rows="5"
+    aria-describedby="voorbeeld-tekstveld-base-explanation">
+  </textarea>
 
   <button type="submit">Verzend</button>
 </form>
