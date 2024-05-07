@@ -20,7 +20,7 @@ from django.urls import include, path
 from django.views.generic import TemplateView
 
 urlpatterns = [
-    path("polls/", include("polls.urls")),
+    path("polls/", include("polls.urls", namespace="polls")),
     path("admin/", admin.site.urls),
     path("", TemplateView.as_view(template_name="index.html"), name="index"),
 ]

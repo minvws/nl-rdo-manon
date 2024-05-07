@@ -4,3 +4,5 @@ services:
       context: django-project
     ports:
       - "8000:8000"
+    environment:
+      - DJANGO_SUPERUSER_PASSWORD=admin
