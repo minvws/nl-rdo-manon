@@ -44,7 +44,7 @@
 
       <section id="examples">
         <h2>Voorbeelden</h2>
-        <h3>Tegel met cover-afbeelding op enkel element</h3>
+        <h3 id="tile-image-cover">Tegel met cover-afbeelding op enkel element</h3>
 
         <ul>
           <li>Voeg de class <code>image-cover</code> toe.</li>
@@ -72,7 +72,7 @@
 `}
         />
 
-        <h3>Groep tegels met cover-afbeeldingen</h3>
+        <h3 id="tiles-image-cover">Groep tegels met cover-afbeeldingen</h3>
         <ul>
           <li>
             Voeg de class <code>images-cover</code> toe aan het omliggende element. Geschikte
