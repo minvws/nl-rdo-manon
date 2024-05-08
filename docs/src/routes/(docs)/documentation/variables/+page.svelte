@@ -440,10 +440,9 @@
               <td>
                 Alle waardes die binnen het font-family-element binnen CSS gebruikt kunnen worden.
                 Bijvoorbeeld
-                <code>sans-serif</code>, <code>serif</code>, of een lettertype dat beschikbaar is
-                binnen het project <code>"Manon icons"</code>. Voor het toevoegen van lettertypes
-                aan het project zie:
-                <a href="{base}/add-fonts">Lettertype toevoegen</a>.
+                <code>sans-serif</code>, <code>serif</code>. Voor het toevoegen van lettertypes aan
+                het project zie:
+                <a href="{base}/components/font#add-fonts">Lettertype toevoegen</a>.
               </td>
             </tr>
 
