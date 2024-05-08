@@ -346,7 +346,7 @@
 `}
         />
 
-        <h4 id="error-th">Foutmelding op tabelrij</h4>
+        <h4 id="error-tr">Foutmelding op tabelrij</h4>
 
         <p>Aandachtspunten:</p>
         <ul>

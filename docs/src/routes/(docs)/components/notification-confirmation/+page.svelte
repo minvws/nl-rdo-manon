@@ -354,7 +354,7 @@
 `}
         />
 
-        <h4 id="confirmation-th">Bevestiging op tabelrij</h4>
+        <h4 id="confirmation-tr">Bevestiging op tabelrij</h4>
 
         <p>Aandachtspunten:</p>
         <ul>

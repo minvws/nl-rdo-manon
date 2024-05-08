@@ -346,7 +346,7 @@
 `}
         />
 
-        <h4 id="attention-th">Attentie op tabelrij</h4>
+        <h4 id="attention-tr">Attentie op tabelrij</h4>
 
         <p>Aandachtspunten:</p>
         <ul>

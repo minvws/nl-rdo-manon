@@ -354,7 +354,7 @@
 `}
         />
 
-        <h4 id="system-th">Systeembericht op tabelrij</h4>
+        <h4 id="system-tr">Systeembericht op tabelrij</h4>
 
         <p>Aandachtspunten:</p>
         <ul>

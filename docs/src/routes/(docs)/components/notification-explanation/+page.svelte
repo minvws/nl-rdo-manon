@@ -352,7 +352,7 @@
 `}
         />
 
-        <h4 id="explanation-th">Toelichting op tabelrij</h4>
+        <h4 id="explanation-tr">Toelichting op tabelrij</h4>
 
         <p>Aandachtspunten:</p>
         <ul>

@@ -350,7 +350,7 @@
 `}
         />
 
-        <h4 id="warning-th">Waarschuwing op tabelrij</h4>
+        <h4 id="warning-tr">Waarschuwing op tabelrij</h4>
 
         <p>Aandachtspunten:</p>
         <ul>
