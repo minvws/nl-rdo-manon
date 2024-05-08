@@ -41,7 +41,7 @@
         </ul>
       </section>
 
-      <section id="single-tile">
+      <section id="examples">
         <h2>Voorbeelden</h2>
         <h3>Enkel element <code>div</code></h3>
 

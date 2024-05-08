@@ -47,7 +47,7 @@
         </ol>
       </section>
 
-      <section id="example">
+      <section id="examples">
         <h2>Voorbeeld</h2>
         <p>Onderstaand voorbeeld bevat drie paragrafen waarvan er twee verborgen worden.</p>
 

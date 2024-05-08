@@ -15,12 +15,7 @@
   <SideMenu>
     <ul>
       <li><a href="#introduction">Introductie</a></li>
-      <li>
-        <a href="#examples">Voorbeelden</a>
-        <ul>
-          <li><a href="#basic">Basis</a></li>
-        </ul>
-      </li>
+      <li><a href="#tests">Tests</a></li>
     </ul>
   </SideMenu>
   <article>

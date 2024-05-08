@@ -35,7 +35,7 @@
         </p>
       </section>
 
-      <section id="example">
+      <section id="examples">
         <h2>Voorbeeld</h2>
         <h3>Visueel voorbeeld:</h3>
         <div class="centered">
