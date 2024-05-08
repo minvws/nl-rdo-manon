@@ -150,7 +150,7 @@
 
               <tr>
                 <td>--notification-error-page-span-font-weight</td>
-                <td><a href="{base}/documentation/variables#span-font-weight">span-font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">span-font-weight</a></td>
                 <td>var(--notification-span-font-weight)</td>
                 <td>-</td>
               </tr>

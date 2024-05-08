@@ -245,7 +245,7 @@
 
               <tr>
                 <td>--table-cell-padding</td>
-                <td><a href="{base}/documentation/variables#cell-padding">cell-padding</a></td>
+                <td><a href="{base}/documentation/variables#padding">padding</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
@@ -294,8 +294,8 @@
 
               <tr>
                 <th rowspan="6" scope="rowgroup">thead</th>
-                <td>--table-backround-color</td>
-                <td><a href="{base}/documentation/variables#backround-color">backround-color</a></td>
+                <td>--table-background-color</td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--application-accent-color)</td>
                 <td>-</td>
               </tr>
@@ -337,8 +337,8 @@
 
               <tr>
                 <th rowspan="6" scope="rowgroup">th</th>
-                <td>--table-head-cell-cell-padding</td>
-                <td><a href="{base}/documentation/variables#cell-padding">cell-padding</a></td>
+                <td>--table-head-cell-padding</td>
+                <td><a href="{base}/documentation/variables#padding">padding</a></td>
                 <td>var(--table-cells-padding)</td>
                 <td>-</td>
               </tr>
@@ -381,7 +381,7 @@
               <tr>
                 <th rowspan="8" scope="rowgroup">th within tbody</th>
                 <td>--table-body-head-cell-padding</td>
-                <td><a href="{base}/documentation/variables#cell-padding">cell-padding</a></td>
+                <td><a href="{base}/documentation/variables#padding">padding</a></td>
                 <td>var(--table-cells-padding)</td>
                 <td>-</td>
               </tr>

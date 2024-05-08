@@ -150,7 +150,7 @@
 
               <tr>
                 <td>--notification-confirmation-page-span-font-weight</td>
-                <td><a href="{base}/documentation/variables#span-font-weight">span-font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">span-font-weight</a></td>
                 <td>var(--notification-span-font-weight)</td>
                 <td>-</td>
               </tr>
@@ -268,21 +268,21 @@
     --notification-confirmation-page-padding-bottom: ;
     --notification-confirmation-page-padding-left: ;
     --notification-confirmation-page-gap: ;
-  
+
     /* First span */
     --notification-confirmation-page-span-font-weight: ;
-  
-  
+
+
     /* Content wrapper */
     --notification-confirmation-page-content-wrapper-padding-top: ;
     --notification-confirmation-page-content-wrapper-padding-right: ;
     --notification-confirmation-page-content-wrapper-padding-bottom: ;
     --notification-confirmation-page-content-wrapper-padding-left: ;
     --notification-confirmation-page-content-wrapper-gap: ;
-  
+
     /* First span */
     --notification-confirmation-page-content-wrapper-span-font-weight: ;
-  
+
     /* Icon */
     --notification-confirmation-page-icon-font-family: ;
     --notification-confirmation-page-icon-font-size: ;

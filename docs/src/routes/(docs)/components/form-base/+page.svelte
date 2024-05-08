@@ -127,7 +127,7 @@
           <li><a href="{base}/documentation/variables#border-width">border-width</a></li>
           <li><a href="{base}/documentation/variables#border-style">border-style</a></li>
           <li><a href="{base}/documentation/variables#border-color">border-color</a></li>
-          <li><a href="{base}/documentation/variables#breakpoint">breakpoint</a></li>
+          <li><a href="{base}/documentation/variables#breakpoints">breakpoint</a></li>
           <li><a href="{base}/documentation/variables#max-width">max-width</a></li>
         </ul>
 

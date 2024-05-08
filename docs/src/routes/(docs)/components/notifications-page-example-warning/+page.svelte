@@ -150,7 +150,7 @@
 
               <tr>
                 <td>--notification-warning-page-span-font-weight</td>
-                <td><a href="{base}/documentation/variables#span-font-weight">span-font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">span-font-weight</a></td>
                 <td>var(--notification-span-font-weight)</td>
                 <td>-</td>
               </tr>
@@ -268,21 +268,21 @@
     --notification-warning-page-padding-bottom: ;
     --notification-warning-page-padding-left: ;
     --notification-warning-page-gap: ;
-  
+
     /* First span */
     --notification-warning-page-span-font-weight: ;
-  
-  
+
+
     /* Content wrapper */
     --notification-warning-page-content-wrapper-padding-top: ;
     --notification-warning-page-content-wrapper-padding-right: ;
     --notification-warning-page-content-wrapper-padding-bottom: ;
     --notification-warning-page-content-wrapper-padding-left: ;
     --notification-warning-page-content-wrapper-gap: ;
-  
+
     /* First span */
     --notification-warning-page-content-wrapper-span-font-weight: ;
-  
+
     /* Icon */
     --notification-warning-page-icon-font-family: ;
     --notification-warning-page-icon-font-size: ;

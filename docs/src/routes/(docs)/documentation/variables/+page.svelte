@@ -644,7 +644,7 @@
             <tr id="word-break">
               <td>*-word-break</td>
               <td>word-break</td>
-              <td>Beïnvloed hoe een regel afgebroken wordt.</td>
+              <td>Hoe een regel afgebroken wordt.</td>
               <td>
                 Alle waardes die binnen het word-break-element binnen CSS gebruikt kunnen worden.
                 Bijvoorbeeld: <code>normal</code>,
@@ -655,11 +655,161 @@
             <tr id="hyphens">
               <td>*-hyphens</td>
               <td>hyphens</td>
-              <td>Beïnvloed hoe een woorden afgebroken worden.</td>
+              <td>Hoe woorden afgebroken worden.</td>
               <td>
                 Alle waardes die binnen het hyphens-element binnen CSS gebruikt kunnen worden.
                 Bijvoorbeeld: <code>none</code> en <code>auto</code>.
               </td>
+            </tr>
+
+            <tr id="icon">
+              <td>*-icon-*</td>
+              <td></td>
+              <td>Weergave van een icoon via pseudo-content.</td>
+              <td>
+                De manier waarop pseudo-content-iconen geconfigureerd worden, verschilt per
+                component. Raadpleeg de broncode van het component.
+              </td>
+            </tr>
+
+            <tr id="text-align">
+              <td>*-text-align</td>
+              <td>text-align</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="outline-color">
+              <td>*-outline-color</td>
+              <td>outline-color</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="outline-color">
+              <td>*-outline-color</td>
+              <td>outline-color</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="outline-offset">
+              <td>*-outline-offset</td>
+              <td>outline-offset</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="outline-style">
+              <td>*-outline-style</td>
+              <td>outline-style</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="outline-width">
+              <td>*-outline-width</td>
+              <td>outline-width</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="position">
+              <td>*-position</td>
+              <td>position</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="top">
+              <td>*-top</td>
+              <td>top</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="right">
+              <td>*-right</td>
+              <td>right</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="bottom">
+              <td>*-bottom</td>
+              <td>bottom</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="left">
+              <td>*-left</td>
+              <td>left</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="color">
+              <td>*-color</td>
+              <td>color</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="display">
+              <td>*-display</td>
+              <td>display</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="text-decoration">
+              <td>*-text-decoration</td>
+              <td>text-decoration</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="box-shadow">
+              <td>*-box-shadow</td>
+              <td>box-shadow</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="accent-color">
+              <td>*-accent-color</td>
+              <td>accent-color</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="max-z-index">
+              <td>*-max-z-index</td>
+              <td>max-z-index</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="resize">
+              <td>*-resize</td>
+              <td>resize</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="content">
+              <td>*-content</td>
+              <td>content</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr id="list-style">
+              <td>*-list-style</td>
+              <td>list-style</td>
+              <td></td>
+              <td></td>
             </tr>
           </tbody>
         </table>

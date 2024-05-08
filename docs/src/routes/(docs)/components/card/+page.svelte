@@ -153,13 +153,13 @@
 
               <tr>
                 <td>--card-background-color</td>
-                <td><a href="{base}/documentation/variables#--card-background-color">--card-background-color</a></td>
+                <td><code>--card-background-color</code></td>
                 <td>var(--application-base-background-color)</td>
               </tr>
 
               <tr>
                 <td>--card-text-color</td>
-                <td><a href="{base}/documentation/variables#--card-text-color">--card-text-color</a></td>
+                <td><code>--card-text-color</code></td>
                 <td>var(--application-base-text-color)</td>
               </tr>
 

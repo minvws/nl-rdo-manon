@@ -15,14 +15,13 @@
 <main class="sidemenu" id="main-content" tabindex="-1">
   <SideMenu>
     <ul>
-      <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
 
-  <article id="button-base">
+  <article id="examples">
     <div>
       <h1>Call to action button</h1>
       <section id="button-base-button">
