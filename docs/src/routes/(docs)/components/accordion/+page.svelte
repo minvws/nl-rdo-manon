@@ -64,10 +64,7 @@
         <ul>
           <li>
             Standaard is het eerste onderdeel opengeklapt. Dit kan aangepast worden middels het
-            <code>aria-expanded</code>-attribuut van de <code>&lt;button&gt;</code>. Zie
-            onderstaande voorbeelden voor
-            <a href="#accordion-default-closed">Standaard dichtgeklapt</a>
-            en <a href="#accordion-default-open">Standaard opengeklapt</a>.
+            <code>aria-expanded</code>-attribuut van de <code>&lt;button&gt;</code>.
           </li>
         </ul>
       </section>
