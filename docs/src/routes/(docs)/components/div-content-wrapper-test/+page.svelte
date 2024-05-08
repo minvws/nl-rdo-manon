@@ -38,7 +38,7 @@
       <h2>Gebruikte bestanden</h2>
       <p>
         Voor meer informatie over importeren en instellen van componenten. Zie: <a
-          href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a
+          href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a
         >
       </p>
 

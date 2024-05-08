@@ -75,7 +75,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Import scss-file</h3>
         <Code

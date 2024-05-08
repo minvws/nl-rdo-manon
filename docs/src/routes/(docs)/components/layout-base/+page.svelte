@@ -27,7 +27,7 @@
       <section id="requirements">
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h2>Benodigd</h2>
         <ul>

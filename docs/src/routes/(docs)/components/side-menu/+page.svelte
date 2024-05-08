@@ -209,7 +209,7 @@
                 Voeg een kopie van het variabelenbestand
                 <code>manon/scss/sidemenu/sidemenu-variables</code> toe aan het project. Voor meer
                 informatie zie:
-                <a href="{base}/import-styling#styling-override-variables"
+                <a href="{base}/documentation/import-styling#styling-override-variables"
                   >Componenten gebruiken en styling aanpassen - De styling van een een component
                   aanpassen</a
                 >.
@@ -369,7 +369,7 @@
                 Voeg een kopie van het variabelenbestand
                 <code>manon/scss/sidemenu/sidemenu-variables</code> toe aan het project. Voor meer
                 informatie zie:
-                <a href="{base}/import-styling#styling-override-variables"
+                <a href="{base}/documentation/import-styling#styling-override-variables"
                   >Componenten gebruiken en styling aanpassen - De styling van een een component
                   aanpassen</a
                 >.
