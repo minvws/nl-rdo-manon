@@ -172,7 +172,7 @@
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="{base}/variables#accent-color">accent-color</a></li>
+          <li><a href="{base}/documentation/variables#accent-color">accent-color</a></li>
         </ul>
 
         <p>Bijbehorende elementen:</p>

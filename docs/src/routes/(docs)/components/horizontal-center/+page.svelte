@@ -110,7 +110,7 @@
             <tbody>
               <tr>
                 <td>--horizontal-center-max-width</td>
-                <td><a href="{base}/variables#max-width">max-width</a></td>
+                <td><a href="{base}/documentation/variables#max-width">max-width</a></td>
                 <td>var(--body-text-small-max-width)</td>
                 <td>-</td>
                 <td>horizontal-center</td>

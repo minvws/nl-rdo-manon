@@ -108,7 +108,7 @@
             <tbody>
               <tr>
                 <td>--footer-two-thirds-one-third-flex-direction</td>
-                <td><a href="{base}/variables#flex-direction">flex-direction</a></td>
+                <td><a href="{base}/documentation/variables#flex-direction">flex-direction</a></td>
                 <td>column</td>
                 <td>-</td>
                 <td>-</td>
@@ -116,7 +116,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-gap</td>
-                <td><a href="{base}/variables#gap">gap</a></td>
+                <td><a href="{base}/documentation/variables#gap">gap</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -124,7 +124,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-justify-content</td>
-                <td><a href="{base}/variables#justify-content">justify-content</a></td>
+                <td><a href="{base}/documentation/variables#justify-content">justify-content</a></td>
                 <td>flex-end</td>
                 <td>-</td>
                 <td>-</td>
@@ -132,7 +132,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-align-items</td>
-                <td><a href="{base}/variables#align-items">align-items</a></td>
+                <td><a href="{base}/documentation/variables#align-items">align-items</a></td>
                 <td>center</td>
                 <td>-</td>
                 <td>-</td>
@@ -140,7 +140,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-flex-wrap</td>
-                <td><a href="{base}/variables#flex-wrap">flex-wrap</a></td>
+                <td><a href="{base}/documentation/variables#flex-wrap">flex-wrap</a></td>
                 <td>wrap</td>
                 <td>-</td>
                 <td>-</td>
@@ -148,7 +148,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-min-height</td>
-                <td><a href="{base}/variables#min-height">min-height</a></td>
+                <td><a href="{base}/documentation/variables#min-height">min-height</a></td>
                 <td>10rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -156,7 +156,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--application-base-tint-1-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -164,7 +164,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--application-base-tint-1-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -172,7 +172,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-padding-top</td>
-                <td><a href="{base}/variables#padding-top">padding-top</a></td>
+                <td><a href="{base}/documentation/variables#padding-top">padding-top</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -180,7 +180,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-padding-right</td>
-                <td><a href="{base}/variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/documentation/variables#padding-right">padding-right</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -188,7 +188,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-padding-bottom</td>
-                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/documentation/variables#padding-bottom">padding-bottom</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -196,7 +196,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-padding-left</td>
-                <td><a href="{base}/variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/documentation/variables#padding-left">padding-left</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -204,7 +204,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-max-width</td>
-                <td><a href="{base}/variables#max-width">max-width</a></td>
+                <td><a href="{base}/documentation/variables#max-width">max-width</a></td>
                 <td>100%</td>
                 <td>-</td>
                 <td>-</td>
@@ -212,7 +212,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-link-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--footer-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -220,7 +220,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-link-text-decoration</td>
-                <td><a href="{base}/variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td>
                 <td>none</td>
                 <td>-</td>
                 <td>-</td>
@@ -228,7 +228,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-link-hover-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--footer-link-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -236,7 +236,7 @@
 
               <tr>
                 <td>--footer-two-thirds-one-third-link-hover-text-decoration</td>
-                <td><a href="{base}/variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td>
                 <td>underline</td>
                 <td>-</td>
                 <td>-</td>

@@ -95,7 +95,7 @@
                 <th scope="row">max-width</th>
                 <td>-</td>
                 <td>--max-line-length-max-width</td>
-                <td><a href="{base}/variables#max-width">max-width</a></td>
+                <td><a href="{base}/documentation/variables#max-width">max-width</a></td>
                 <td>-</td>
                 <td>40rem</td>
               </tr>
@@ -104,7 +104,7 @@
                 <th rowspan="2" scope="rowgroup">hyphens</th>
                 <td>Voor breekpunt</td>
                 <td>--max-line-length-hyphens</td>
-                <td rowspan="2"><a href="{base}/variables#hyphens">hyphens</a></td>
+                <td rowspan="2"><a href="{base}/documentation/variables#hyphens">hyphens</a></td>
                 <td rowspan="2">-</td>
                 <td>auto</td>
               </tr>
@@ -119,7 +119,7 @@
                 <th rowspan="2" scope="rowgroup">word-break</th>
                 <td>Voor breekpunt</td>
                 <td>--max-line-length-word-break</td>
-                <td rowspan="2"><a href="{base}/variables#word-break">word-break</a></td>
+                <td rowspan="2"><a href="{base}/documentation/variables#word-break">word-break</a></td>
                 <td rowspan="2">-</td>
                 <td>normal</td>
               </tr>

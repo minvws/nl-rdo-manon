@@ -185,7 +185,7 @@
               <tr>
                 <th rowspan="6" scope="rowgroup">heading-base-set</th>
                 <td>--headings-base-set-font-family</td>
-                <td><a href="{base}/variables#font-family">font-family</a></td>
+                <td><a href="{base}/documentation/variables#font-family">font-family</a></td>
                 <td>var(--application-base-font-family)</td>
                 <td>-</td>
                 <th rowspan="6" scope="rowgroup">-</th>
@@ -193,35 +193,35 @@
 
               <tr>
                 <td>--headings-base-set-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>1.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--headings-base-set-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>bold</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--headings-base-set-line-height</td>
-                <td><a href="{base}/variables#line-height">line-height</a></td>
+                <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>var(--application-base-line-height)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--headings-base-set-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>var(--application-base-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--headings-base-set-margin</td>
-                <td><a href="{base}/variables#margin">margin</a></td>
+                <td><a href="{base}/documentation/variables#margin">margin</a></td>
                 <td>0</td>
                 <td>-</td>
               </tr>
@@ -229,7 +229,7 @@
               <tr>
                 <th rowspan="6" scope="rowgroup">heading-xxl</th>
                 <td>--heading-xxl-font-family</td>
-                <td><a href="{base}/variables#font-family">font-family</a></td>
+                <td><a href="{base}/documentation/variables#font-family">font-family</a></td>
                 <td>var(--headings-base-set-font-family)</td>
                 <td>-</td>
                 <th rowspan="6" scope="rowgroup">heading-xxl</th>
@@ -237,35 +237,35 @@
 
               <tr>
                 <td>--heading-xxl-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>2.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-xxl-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>var(--headings-base-set-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-xxl-line-height</td>
-                <td><a href="{base}/variables#line-height">line-height</a></td>
+                <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>var(--headings-base-set-line-height)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-xxl-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>var(--headings-base-set-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-xxl-margin</td>
-                <td><a href="{base}/variables#margin">margin</a></td>
+                <td><a href="{base}/documentation/variables#margin">margin</a></td>
                 <td>var(--headings-base-set-margin)</td>
                 <td>-</td>
               </tr>
@@ -273,7 +273,7 @@
               <tr>
                 <th rowspan="6" scope="rowgroup">heading-xl</th>
                 <td>--heading-xl-font-family</td>
-                <td><a href="{base}/variables#font-family">font-family</a></td>
+                <td><a href="{base}/documentation/variables#font-family">font-family</a></td>
                 <td>var(--headings-base-set-font-family)</td>
                 <td>-</td>
                 <th rowspan="6" scope="rowgroup">heading-xl</th>
@@ -281,35 +281,35 @@
 
               <tr>
                 <td>--heading-xl-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>2rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-xl-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>var(--headings-base-set-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-xl-line-height</td>
-                <td><a href="{base}/variables#line-height">line-height</a></td>
+                <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>var(--headings-base-set-line-height)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-xl-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>var(--headings-base-set-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-xl-margin</td>
-                <td><a href="{base}/variables#margin">margin</a></td>
+                <td><a href="{base}/documentation/variables#margin">margin</a></td>
                 <td>var(--headings-base-set-margin)</td>
                 <td>-</td>
               </tr>
@@ -317,7 +317,7 @@
               <tr>
                 <th rowspan="6" scope="rowgroup">heading-large</th>
                 <td>--heading-large-font-family</td>
-                <td><a href="{base}/variables#font-family">font-family</a></td>
+                <td><a href="{base}/documentation/variables#font-family">font-family</a></td>
                 <td>var(--headings-base-set-font-family)</td>
                 <td>-</td>
                 <th rowspan="6" scope="rowgroup">heading-large</th>
@@ -325,35 +325,35 @@
 
               <tr>
                 <td>--heading-large-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>1.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-large-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>var(--headings-base-set-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-large-line-height</td>
-                <td><a href="{base}/variables#line-height">line-height</a></td>
+                <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>var(--headings-base-set-line-height)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-large-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>var(--headings-base-set-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-large-margin</td>
-                <td><a href="{base}/variables#margin">margin</a></td>
+                <td><a href="{base}/documentation/variables#margin">margin</a></td>
                 <td>var(--headings-base-set-margin)</td>
                 <td>-</td>
               </tr>
@@ -361,7 +361,7 @@
               <tr>
                 <th rowspan="6" scope="rowgroup">heading-normal</th>
                 <td>--heading-normal-font-family</td>
-                <td><a href="{base}/variables#font-family">font-family</a></td>
+                <td><a href="{base}/documentation/variables#font-family">font-family</a></td>
                 <td>var(--headings-base-set-font-family)</td>
                 <td>-</td>
                 <th rowspan="6" scope="rowgroup">heading-normal</th>
@@ -369,35 +369,35 @@
 
               <tr>
                 <td>--heading-normal-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>1rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-normal-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>var(--headings-base-set-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-normal-line-height</td>
-                <td><a href="{base}/variables#line-height">line-height</a></td>
+                <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>var(--headings-base-set-line-height)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-normal-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>var(--headings-base-set-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-normal-margin</td>
-                <td><a href="{base}/variables#margin">margin</a></td>
+                <td><a href="{base}/documentation/variables#margin">margin</a></td>
                 <td>var(--headings-base-set-margin)</td>
                 <td>-</td>
               </tr>
@@ -405,7 +405,7 @@
               <tr>
                 <th rowspan="6" scope="rowgroup">heading-small</th>
                 <td>--heading-small-font-family</td>
-                <td><a href="{base}/variables#font-family">font-family</a></td>
+                <td><a href="{base}/documentation/variables#font-family">font-family</a></td>
                 <td>var(--headings-base-set-font-family)</td>
                 <td>-</td>
                 <th rowspan="6" scope="rowgroup">heading-small</th>
@@ -413,35 +413,35 @@
 
               <tr>
                 <td>--heading-small-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>0.8rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-small-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>var(--headings-base-set-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-small-line-height</td>
-                <td><a href="{base}/variables#line-height">line-height</a></td>
+                <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>var(--headings-base-set-line-height)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-small-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>var(--headings-base-set-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-small-margin</td>
-                <td><a href="{base}/variables#margin">margin</a></td>
+                <td><a href="{base}/documentation/variables#margin">margin</a></td>
                 <td>var(--headings-base-set-margin)</td>
                 <td>-</td>
               </tr>
@@ -449,7 +449,7 @@
               <tr>
                 <th rowspan="6" scope="rowgroup">heading-xs</th>
                 <td>--heading-xs-font-family</td>
-                <td><a href="{base}/variables#font-family">font-family</a></td>
+                <td><a href="{base}/documentation/variables#font-family">font-family</a></td>
                 <td>var(--headings-base-set-font-family)</td>
                 <td>-</td>
                 <th rowspan="6" scope="rowgroup">heading-xs</th>
@@ -457,35 +457,35 @@
 
               <tr>
                 <td>--heading-xs-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>0.7rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-xs-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>var(--headings-base-set-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-xs-line-height</td>
-                <td><a href="{base}/variables#line-height">line-height</a></td>
+                <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>var(--headings-base-set-line-height)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-xs-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>var(--headings-base-set-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--heading-xs-margin</td>
-                <td><a href="{base}/variables#margin">margin</a></td>
+                <td><a href="{base}/documentation/variables#margin">margin</a></td>
                 <td>var(--headings-base-set-margin)</td>
                 <td>-</td>
               </tr>

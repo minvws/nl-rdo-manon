@@ -108,7 +108,7 @@
             <tbody>
               <tr>
                 <td>--p-line-height</td>
-                <td><a href="{base}/variables#line-height">line-height</a></td>
+                <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>var(--application-base-line-height)</td>
                 <td>-</td>
                 <td>-</td>
@@ -116,7 +116,7 @@
 
               <tr>
                 <td>--p-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>var(--application-base-font-size)</td>
                 <td>-</td>
                 <td>-</td>
@@ -124,7 +124,7 @@
 
               <tr>
                 <td>--p-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>var(--application-base-font-weight)</td>
                 <td>-</td>
                 <td>-</td>
@@ -132,7 +132,7 @@
 
               <tr>
                 <td>--p-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--application-base-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -140,7 +140,7 @@
 
               <tr>
                 <td>--p-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>unset</td>
                 <td>-</td>
                 <td>-</td>

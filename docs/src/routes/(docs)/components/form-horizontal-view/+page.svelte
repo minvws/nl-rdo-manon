@@ -161,19 +161,19 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="{base}/variables#justify-content">justify-content</a>
+            <a href="{base}/documentation/variables#justify-content">justify-content</a>
           </li>
-          <li><a href="{base}/variables#gap">gap</a></li>
+          <li><a href="{base}/documentation/variables#gap">gap</a></li>
           <li>
             Label
             <ul>
-              <li><a href="{base}/variables#max-width">max-width</a></li>
+              <li><a href="{base}/documentation/variables#max-width">max-width</a></li>
             </ul>
           </li>
           <li>
             Invoervelden
             <ul>
-              <li><a href="{base}/variables#max-width">max-width</a></li>
+              <li><a href="{base}/documentation/variables#max-width">max-width</a></li>
             </ul>
           </li>
         </ul>

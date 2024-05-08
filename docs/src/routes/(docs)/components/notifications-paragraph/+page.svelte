@@ -135,16 +135,16 @@
             Paragraaf variabelen
             <ul>
               <li>
-                <a href="{base}/variables#padding-top">padding-top</a>
+                <a href="{base}/documentation/variables#padding-top">padding-top</a>
               </li>
               <li>
-                <a href="{base}/variables#padding-right">padding-right</a>
+                <a href="{base}/documentation/variables#padding-right">padding-right</a>
               </li>
               <li>
-                <a href="{base}/variables#padding-bottom">padding-bottom</a>
+                <a href="{base}/documentation/variables#padding-bottom">padding-bottom</a>
               </li>
               <li>
-                <a href="{base}/variables#padding-left">padding-left</a>
+                <a href="{base}/documentation/variables#padding-left">padding-left</a>
               </li>
             </ul>
           </li>

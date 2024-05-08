@@ -328,27 +328,27 @@
           <li>
             Accordeon list
             <ul>
-              <li><a href="{base}/variables#gap">gap</a></li>
+              <li><a href="{base}/documentation/variables#gap">gap</a></li>
             </ul>
           </li>
           <li>
             <code>button</code>
             <ul>
-              <li><a href="{base}/variables#padding">padding</a></li>
+              <li><a href="{base}/documentation/variables#padding">padding</a></li>
               <li>
-                <a href="{base}/variables#justify-content">justify-content</a>
+                <a href="{base}/documentation/variables#justify-content">justify-content</a>
               </li>
-              <li><a href="{base}/variables#font-size">font-size</a></li>
+              <li><a href="{base}/documentation/variables#font-size">font-size</a></li>
               <li>
-                <a href="{base}/variables#font-weight">font-weight</a>
-              </li>
-              <li>
-                <a href="{base}/variables#line-height">line-height</a>
+                <a href="{base}/documentation/variables#font-weight">font-weight</a>
               </li>
               <li>
-                <a href="{base}/variables#background-color">background-color</a>
+                <a href="{base}/documentation/variables#line-height">line-height</a>
               </li>
-              <li><a href="{base}/variables#text-color">text-color</a></li>
+              <li>
+                <a href="{base}/documentation/variables#background-color">background-color</a>
+              </li>
+              <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
             </ul>
           </li>
           <li>
@@ -358,15 +358,15 @@
               <li>
                 <code>:before</code>
                 <ul>
-                  <li><a href="{base}/variables#icon">icon</a></li>
+                  <li><a href="{base}/documentation/variables#icon">icon</a></li>
                 </ul>
               </li>
               <li>
                 <code>:after</code>
                 <ul>
-                  <li><a href="{base}/variables#icon">icon</a></li>
+                  <li><a href="{base}/documentation/variables#icon">icon</a></li>
                   <li>
-                    <a href="{base}/variables#margin-left">margin-left</a>
+                    <a href="{base}/documentation/variables#margin-left">margin-left</a>
                   </li>
                 </ul>
               </li>
@@ -375,28 +375,28 @@
           <li>
             Content
             <ul>
-              <li><a href="{base}/variables#padding">padding</a></li>
-              <li><a href="{base}/variables#gap">gap</a></li>
-              <li><a href="{base}/variables#font-size">font-size</a></li>
+              <li><a href="{base}/documentation/variables#padding">padding</a></li>
+              <li><a href="{base}/documentation/variables#gap">gap</a></li>
+              <li><a href="{base}/documentation/variables#font-size">font-size</a></li>
               <li>
-                <a href="{base}/variables#font-weight">font-weight</a>
+                <a href="{base}/documentation/variables#font-weight">font-weight</a>
               </li>
               <li>
-                <a href="{base}/variables#line-height">line-height</a>
+                <a href="{base}/documentation/variables#line-height">line-height</a>
               </li>
               <li>
-                <a href="{base}/variables#border-width">border-width</a>
+                <a href="{base}/documentation/variables#border-width">border-width</a>
               </li>
               <li>
-                <a href="{base}/variables#border-style">border-style</a>
+                <a href="{base}/documentation/variables#border-style">border-style</a>
               </li>
               <li>
-                <a href="{base}/variables#border-color">border-color</a>
+                <a href="{base}/documentation/variables#border-color">border-color</a>
               </li>
               <li>
-                <a href="{base}/variables#background-color">background-color</a>
+                <a href="{base}/documentation/variables#background-color">background-color</a>
               </li>
-              <li><a href="{base}/variables#text-color">text-color</a></li>
+              <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
             </ul>
           </li>
         </ul>

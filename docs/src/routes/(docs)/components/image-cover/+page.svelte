@@ -177,9 +177,9 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="{base}/variables#object-position">object-position</a>
+            <a href="{base}/documentation/variables#object-position">object-position</a>
           </li>
-          <li><a href="{base}/variables#max-height">max-height</a></li>
+          <li><a href="{base}/documentation/variables#max-height">max-height</a></li>
         </ul>
       </section>
 

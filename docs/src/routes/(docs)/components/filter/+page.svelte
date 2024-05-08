@@ -304,32 +304,32 @@
           <li>
             Intro
             <ul>
-              <li><a href="{base}/variables#padding">padding</a></li>
+              <li><a href="{base}/documentation/variables#padding">padding</a></li>
               <li>
-                <a href="{base}/variables#border-width">border-width</a>
+                <a href="{base}/documentation/variables#border-width">border-width</a>
               </li>
               <li>
-                <a href="{base}/variables#border-style">border-style</a>
+                <a href="{base}/documentation/variables#border-style">border-style</a>
               </li>
               <li>
-                <a href="{base}/variables#border-color">border-color</a>
+                <a href="{base}/documentation/variables#border-color">border-color</a>
               </li>
-              <li><a href="{base}/variables#font-size">font-size</a></li>
-              <li><a href="{base}/variables#text-color">text-color</a></li>
+              <li><a href="{base}/documentation/variables#font-size">font-size</a></li>
+              <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
             </ul>
           </li>
           <li>
             <code>span</code>
             <ul>
-              <li><a href="{base}/variables#font-size">font-size</a></li>
-              <li><a href="{base}/variables#text-color">text-color</a></li>
+              <li><a href="{base}/documentation/variables#font-size">font-size</a></li>
+              <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
             </ul>
           </li>
           <li>
             <code>button</code>
             <ul>
-              <li><a href="{base}/variables#text-color">text-color</a></li>
-              <li><a href="{base}/variables#text-color">text-color</a></li>
+              <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
+              <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
             </ul>
           </li>
         </ul>

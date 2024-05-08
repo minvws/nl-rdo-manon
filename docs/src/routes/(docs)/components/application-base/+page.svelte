@@ -132,7 +132,7 @@
               <tr>
                 <th rowspan="2" scope="rowgroup">application-base</th>
                 <td>--application-base-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>-</td>
                 <td>#fff</td>
                 <td>-</td>
@@ -140,7 +140,7 @@
 
               <tr>
                 <td>--application-base-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>var(--text-set-text-color)</td>
                 <td>-</td>
@@ -149,7 +149,7 @@
               <tr>
                 <th rowspan="2" scope="rowgroup">application-base-tint-1</th>
                 <td>--application-base-tint-1-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>-</td>
                 <td>#f5f5f5</td>
                 <td>-</td>
@@ -157,7 +157,7 @@
 
               <tr>
                 <td>--application-base-tint-1-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
                 <td>-</td>
@@ -174,7 +174,7 @@
 
               <tr>
                 <td>--application-base-accent-color-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#fff</td>
                 <td>-</td>
@@ -190,7 +190,7 @@
 
               <tr>
                 <td>--application-base-accent-color-hover-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
                 <td>-</td>
@@ -206,7 +206,7 @@
 
               <tr>
                 <td>--application-base-accent-color-active-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
                 <td>-</td>
@@ -222,7 +222,7 @@
 
               <tr>
                 <td>--application-base-accent-color-focus-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
                 <td>-</td>
@@ -238,7 +238,7 @@
 
               <tr>
                 <td>--application-base-accent-color-selected-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
                 <td>-</td>
@@ -255,7 +255,7 @@
 
               <tr>
                 <td>--cta-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#fff</td>
                 <td>-</td>
@@ -264,7 +264,7 @@
               <tr>
                 <th>application-base-font-family</th>
                 <td>--application-base-font-family</td>
-                <td><a href="{base}/variables#font-family">font-family</a></td>
+                <td><a href="{base}/documentation/variables#font-family">font-family</a></td>
                 <td>-</td>
                 <td>var(--text-set-font-family)</td>
                 <td>-</td>
@@ -273,7 +273,7 @@
               <tr>
                 <th>application-base-font-size</th>
                 <td>--application-base-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>-</td>
                 <td>var(--text-set-font-size)</td>
                 <td>-</td>
@@ -282,7 +282,7 @@
               <tr>
                 <th>application-base-line-height</th>
                 <td>--application-base-line-height</td>
-                <td><a href="{base}/variables#line-height">line-height</a></td>
+                <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>-</td>
                 <td>var(--text-set-line-height)</td>
                 <td>-</td>
@@ -291,7 +291,7 @@
               <tr>
                 <th>application-base-font-weight</th>
                 <td>--application-base-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>-</td>
                 <td>var(--text-set-font-weight)</td>
                 <td>-</td>
@@ -300,7 +300,7 @@
               <tr>
                 <th>application-base-text-align</th>
                 <td>--application-base-text-align</td>
-                <td><a href="{base}/variables#text-align">text-align</a></td>
+                <td><a href="{base}/documentation/variables#text-align">text-align</a></td>
                 <td>-</td>
                 <td>var(--text-set-text-align)</td>
                 <td>-</td>
@@ -309,7 +309,7 @@
               <tr>
                 <th>application-base-padding</th>
                 <td>--application-base-padding</td>
-                <td><a href="{base}/variables#padding">padding</a></td>
+                <td><a href="{base}/documentation/variables#padding">padding</a></td>
                 <td>-</td>
                 <td>1.5rem</td>
                 <td>-</td>
@@ -318,7 +318,7 @@
               <tr>
                 <th>application-base-border-radius</th>
                 <td>--application-base-border-radius</td>
-                <td><a href="{base}/variables#border-radius">border-radius</a></td>
+                <td><a href="{base}/documentation/variables#border-radius">border-radius</a></td>
                 <td>-</td>
                 <td>0</td>
                 <td>-</td>

@@ -164,7 +164,7 @@
               <tbody>
                 <tr>
                   <td>--layout-fifty-fifty-gap</td>
-                  <td><a href="{base}/variables#gap">gap</a></td>
+                  <td><a href="{base}/documentation/variables#gap">gap</a></td>
                   <td>var(--content-gap, 2rem)</td>
                   <td>42rem</td>
                   <td>-</td>
@@ -172,7 +172,7 @@
 
                 <tr>
                   <td>--layout-fifty-fifty-breakpoint-gap</td>
-                  <td><a href="{base}/variables#gap">gap</a></td>
+                  <td><a href="{base}/documentation/variables#gap">gap</a></td>
                   <td>var(--layout-fifty-fifty-gap)</td>
                   <td>42rem</td>
                   <td>-</td>

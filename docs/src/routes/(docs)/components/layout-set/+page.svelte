@@ -143,7 +143,7 @@
 
               <tr>
                 <td>--content-flex-direction</td>
-                <td><a href="{base}/variables#flex-direction">flex-direction</a></td>
+                <td><a href="{base}/documentation/variables#flex-direction">flex-direction</a></td>
                 <td>column</td>
                 <td>-</td>
                 <td>-</td>
@@ -151,7 +151,7 @@
 
               <tr>
                 <td>--content-justify-content</td>
-                <td><a href="{base}/variables#justify-content">justify-content</a></td>
+                <td><a href="{base}/documentation/variables#justify-content">justify-content</a></td>
                 <td>flex-start</td>
                 <td>-</td>
                 <td>-</td>
@@ -159,7 +159,7 @@
 
               <tr>
                 <td>--content-align-items</td>
-                <td><a href="{base}/variables#align-items">align-items</a></td>
+                <td><a href="{base}/documentation/variables#align-items">align-items</a></td>
                 <td>flex-start</td>
                 <td>-</td>
                 <td>-</td>
@@ -167,7 +167,7 @@
 
               <tr>
                 <td>--content-gap</td>
-                <td><a href="{base}/variables#gap">gap</a></td>
+                <td><a href="{base}/documentation/variables#gap">gap</a></td>
                 <td>2rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -175,7 +175,7 @@
 
               <tr>
                 <td>--content-padding-top</td>
-                <td><a href="{base}/variables#padding-top">padding-top</a></td>
+                <td><a href="{base}/documentation/variables#padding-top">padding-top</a></td>
                 <td>2rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -183,7 +183,7 @@
 
               <tr>
                 <td>--content-padding-right</td>
-                <td><a href="{base}/variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/documentation/variables#padding-right">padding-right</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -191,7 +191,7 @@
 
               <tr>
                 <td>--content-padding-bottom</td>
-                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/documentation/variables#padding-bottom">padding-bottom</a></td>
                 <td>2rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -199,7 +199,7 @@
 
               <tr>
                 <td>--content-padding-left</td>
-                <td><a href="{base}/variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/documentation/variables#padding-left">padding-left</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -207,7 +207,7 @@
 
               <tr>
                 <td>--content-max-width</td>
-                <td><a href="{base}/variables#max-width">max-width</a></td>
+                <td><a href="{base}/documentation/variables#max-width">max-width</a></td>
                 <td>100%</td>
                 <td>-</td>
                 <td>-</td>

@@ -78,20 +78,20 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="{base}/variables#flex-direction">flex-direction</a>
+            <a href="{base}/documentation/variables#flex-direction">flex-direction</a>
           </li>
-          <li><a href="{base}/variables#gap">gap</a></li>
-          <li><a href="{base}/variables#border-width">border-width</a></li>
-          <li><a href="{base}/variables#border-style">border-style</a></li>
-          <li><a href="{base}/variables#border-color">border-color</a></li>
-          <li><a href="{base}/variables#padding-top">padding-top</a></li>
+          <li><a href="{base}/documentation/variables#gap">gap</a></li>
+          <li><a href="{base}/documentation/variables#border-width">border-width</a></li>
+          <li><a href="{base}/documentation/variables#border-style">border-style</a></li>
+          <li><a href="{base}/documentation/variables#border-color">border-color</a></li>
+          <li><a href="{base}/documentation/variables#padding-top">padding-top</a></li>
           <li>
-            <a href="{base}/variables#padding-right">padding-right</a>
+            <a href="{base}/documentation/variables#padding-right">padding-right</a>
           </li>
           <li>
-            <a href="{base}/variables#padding-bottom">padding-bottom</a>
+            <a href="{base}/documentation/variables#padding-bottom">padding-bottom</a>
           </li>
-          <li><a href="{base}/variables#padding-left">padding-left</a></li>
+          <li><a href="{base}/documentation/variables#padding-left">padding-left</a></li>
         </ul>
       </section>
 

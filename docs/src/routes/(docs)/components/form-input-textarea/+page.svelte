@@ -107,19 +107,19 @@
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="{base}/variables#width">width</a></li>
-          <li><a href="{base}/variables#resize">resize</a></li>
-          <li><a href="{base}/variables#min-height">min-height</a></li>
-          <li><a href="{base}/variables#padding">padding</a></li>
-          <li><a href="{base}/variables#font-size">font-size</a></li>
-          <li><a href="{base}/variables#font-family">font-family</a></li>
-          <li><a href="{base}/variables#text-color">text-color</a></li>
+          <li><a href="{base}/documentation/variables#width">width</a></li>
+          <li><a href="{base}/documentation/variables#resize">resize</a></li>
+          <li><a href="{base}/documentation/variables#min-height">min-height</a></li>
+          <li><a href="{base}/documentation/variables#padding">padding</a></li>
+          <li><a href="{base}/documentation/variables#font-size">font-size</a></li>
+          <li><a href="{base}/documentation/variables#font-family">font-family</a></li>
+          <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
           <li>
-            <a href="{base}/variables#background-color">background-color</a>
+            <a href="{base}/documentation/variables#background-color">background-color</a>
           </li>
-          <li><a href="{base}/variables#border-width">border-width</a></li>
-          <li><a href="{base}/variables#border-style">border-style</a></li>
-          <li><a href="{base}/variables#border-color">border-color</a></li>
+          <li><a href="{base}/documentation/variables#border-width">border-width</a></li>
+          <li><a href="{base}/documentation/variables#border-style">border-style</a></li>
+          <li><a href="{base}/documentation/variables#border-color">border-color</a></li>
         </ul>
 
         <p>Bijbehorende elementen:</p>

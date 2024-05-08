@@ -168,7 +168,7 @@
             <tbody>
               <tr>
                 <td>--layout-one-third-two-thirds-gap</td>
-                <td><a href="{base}/variables#gap">gap</a></td>
+                <td><a href="{base}/documentation/variables#gap">gap</a></td>
                 <td>var(--content-gap)</td>
                 <td>42rem</td>
                 <td>one-third-two-thirds</td>

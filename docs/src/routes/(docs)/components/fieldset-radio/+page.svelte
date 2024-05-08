@@ -286,7 +286,7 @@
             <tbody>
               <tr>
                 <td>--fieldset-radio-input-margin-top</td>
-                <td><a href="{base}/variables#margin-top">margin-top</a></td>
+                <td><a href="{base}/documentation/variables#margin-top">margin-top</a></td>
                 <td>0.25rem</td>
                 <td>-</td>
                 <th rowspan="7" scope="rowgroup">radio</th>
@@ -294,35 +294,35 @@
 
               <tr>
                 <td>--fieldset-radio-width</td>
-                <td><a href="{base}/variables#width">width</a></td>
+                <td><a href="{base}/documentation/variables#width">width</a></td>
                 <td>1.25rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--fieldset-radio-height</td>
-                <td><a href="{base}/variables#height">height</a></td>
+                <td><a href="{base}/documentation/variables#height">height</a></td>
                 <td>1.25rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--fieldset-radio-accent-color</td>
-                <td><a href="{base}/variables#accent-color">accent-color</a></td>
+                <td><a href="{base}/documentation/variables#accent-color">accent-color</a></td>
                 <td>var(--branding-color-1, initial)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--fieldset-radio-label-width</td>
-                <td><a href="{base}/variables#width">width</a></td>
+                <td><a href="{base}/documentation/variables#width">width</a></td>
                 <td>auto</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--fieldset-radio-required-margin-bottom</td>
-                <td><a href="{base}/variables#margin-bottom">margin-bottom</a></td>
+                <td><a href="{base}/documentation/variables#margin-bottom">margin-bottom</a></td>
                 <td>var(--application-base-gap-small)</td>
                 <td>-</td>
               </tr>

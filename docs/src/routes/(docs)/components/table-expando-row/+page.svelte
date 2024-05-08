@@ -295,21 +295,21 @@
                   <tbody>
                     <tr>
                       <td>--expando-rows-table-cell-background-color</td>
-                      <td><a href="{base}/variables#background-color">background-color</a></td>
+                      <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                       <td>#e5e5e5</td>
                       <td>Openklapbare cel - td</td>
                       <td>CSS</td>
                     </tr>
                     <tr>
                       <td>--expando-rows-table-cell-padding</td>
-                      <td><a href="{base}/variables#padding">padding</a></td>
+                      <td><a href="{base}/documentation/variables#padding">padding</a></td>
                       <td>2rem 1rem</td>
                       <td>Openklapbare cel - td</td>
                       <td>CSS</td>
                     </tr>
                     <tr>
                       <td>--expando-rows-table-cell-after-breakpoint-padding</td>
-                      <td><a href="{base}/variables#padding">padding</a></td>
+                      <td><a href="{base}/documentation/variables#padding">padding</a></td>
                       <td>2rem 3rem</td>
                       <td>Openklapbare cel - td</td>
                       <td>CSS</td>
@@ -317,28 +317,28 @@
 
                     <tr>
                       <td>$breakpoint</td>
-                      <td><a href="{base}/variables#breakpoints">Breekpunt</a></td>
+                      <td><a href="{base}/documentation/variables#breakpoints">Breekpunt</a></td>
                       <td>24rem !default</td>
                       <td>Subtitel binnen de openklapbare cel - h2</td>
                       <td>SASS</td>
                     </tr>
                     <tr>
                       <td>--expando-rows-row-background-color</td>
-                      <td><a href="{base}/variables#background-color">background-color</a></td>
+                      <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                       <td>transparent</td>
                       <td>De openklapbare rij</td>
                       <td>CSS</td>
                     </tr>
                     <tr>
                       <td>--expando-rows-row-striping-background-color</td>
-                      <td><a href="{base}/variables#background-color">background-color</a></td>
+                      <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                       <td>var(--table-row-background-color-striping, initial)</td>
                       <td>De openklapbare rij</td>
                       <td>CSS</td>
                     </tr>
                     <tr>
                       <td>--expando-rows-row-font-weight</td>
-                      <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                      <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                       <td>bold</td>
                       <td>De openklapbare rij</td>
                       <td>CSS</td>

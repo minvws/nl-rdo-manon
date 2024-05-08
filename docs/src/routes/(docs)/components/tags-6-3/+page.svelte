@@ -543,7 +543,7 @@
             <tbody>
               <tr>
                 <td>--tags-color-1-light-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-blue-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -551,7 +551,7 @@
 
               <tr>
                 <td>--tags-color-1-light-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-blue-light-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -559,7 +559,7 @@
 
               <tr>
                 <td>--tags-color-1-light-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-blue-light-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -567,7 +567,7 @@
 
               <tr>
                 <td>--tags-color-1-medium-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-blue-medium-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -575,7 +575,7 @@
 
               <tr>
                 <td>--tags-color-1-medium-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-blue-medium-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -583,7 +583,7 @@
 
               <tr>
                 <td>--tags-color-1-medium-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-blue-medium-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -591,7 +591,7 @@
 
               <tr>
                 <td>--tags-color-1-dark-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-blue-dark-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -599,7 +599,7 @@
 
               <tr>
                 <td>--tags-color-1-dark-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-blue-dark-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -607,7 +607,7 @@
 
               <tr>
                 <td>--tags-color-1-dark-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-blue-dark-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -615,7 +615,7 @@
 
               <tr>
                 <td>--tags-color-2-light-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-green-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -623,7 +623,7 @@
 
               <tr>
                 <td>--tags-color-2-light-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-green-light-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -631,7 +631,7 @@
 
               <tr>
                 <td>--tags-color-2-light-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-green-light-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -639,7 +639,7 @@
 
               <tr>
                 <td>--tags-color-2-medium-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-green-medium-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -647,7 +647,7 @@
 
               <tr>
                 <td>--tags-color-2-medium-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-green-medium-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -655,7 +655,7 @@
 
               <tr>
                 <td>--tags-color-2-medium-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-green-medium-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -663,7 +663,7 @@
 
               <tr>
                 <td>--tags-color-2-dark-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-green-dark-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -671,7 +671,7 @@
 
               <tr>
                 <td>--tags-color-2-dark-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-green-dark-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -679,7 +679,7 @@
 
               <tr>
                 <td>--tags-color-2-dark-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-green-dark-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -687,7 +687,7 @@
 
               <tr>
                 <td>--tags-color-3-light-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-yellow-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -695,7 +695,7 @@
 
               <tr>
                 <td>--tags-color-3-light-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-yellow-light-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -703,7 +703,7 @@
 
               <tr>
                 <td>--tags-color-3-light-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-yellow-light-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -711,7 +711,7 @@
 
               <tr>
                 <td>--tags-color-3-medium-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-yellow-medium-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -719,7 +719,7 @@
 
               <tr>
                 <td>--tags-color-3-medium-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-yellow-medium-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -727,7 +727,7 @@
 
               <tr>
                 <td>--tags-color-3-medium-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-yellow-medium-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -735,7 +735,7 @@
 
               <tr>
                 <td>--tags-color-3-dark-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-yellow-dark-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -743,7 +743,7 @@
 
               <tr>
                 <td>--tags-color-3-dark-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-yellow-dark-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -751,7 +751,7 @@
 
               <tr>
                 <td>--tags-color-3-dark-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-yellow-dark-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -759,7 +759,7 @@
 
               <tr>
                 <td>--tags-color-4-light-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-orange-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -767,7 +767,7 @@
 
               <tr>
                 <td>--tags-color-4-light-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-orange-light-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -775,7 +775,7 @@
 
               <tr>
                 <td>--tags-color-4-light-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-orange-light-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -783,7 +783,7 @@
 
               <tr>
                 <td>--tags-color-4-medium-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-orange-medium-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -791,7 +791,7 @@
 
               <tr>
                 <td>--tags-color-4-medium-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-orange-medium-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -799,7 +799,7 @@
 
               <tr>
                 <td>--tags-color-4-medium-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-orange-medium-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -807,7 +807,7 @@
 
               <tr>
                 <td>--tags-color-4-dark-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-orange-dark-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -815,7 +815,7 @@
 
               <tr>
                 <td>--tags-color-4-dark-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-orange-dark-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -823,7 +823,7 @@
 
               <tr>
                 <td>--tags-color-4-dark-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-orange-dark-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -831,7 +831,7 @@
 
               <tr>
                 <td>--tags-color-5-light-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-red-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -839,7 +839,7 @@
 
               <tr>
                 <td>--tags-color-5-light-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-red-light-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -847,7 +847,7 @@
 
               <tr>
                 <td>--tags-color-5-light-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-red-light-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -855,7 +855,7 @@
 
               <tr>
                 <td>--tags-color-5-medium-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-red-medium-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -863,7 +863,7 @@
 
               <tr>
                 <td>--tags-color-5-medium-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-red-medium-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -871,7 +871,7 @@
 
               <tr>
                 <td>--tags-color-5-medium-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-red-medium-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -879,7 +879,7 @@
 
               <tr>
                 <td>--tags-color-5-dark-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-red-dark-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -887,7 +887,7 @@
 
               <tr>
                 <td>--tags-color-5-dark-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-red-dark-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -895,7 +895,7 @@
 
               <tr>
                 <td>--tags-color-5-dark-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-red-dark-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -903,7 +903,7 @@
 
               <tr>
                 <td>--tags-color-6-light-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-violet-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -911,7 +911,7 @@
 
               <tr>
                 <td>--tags-color-6-light-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-violet-light-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -919,7 +919,7 @@
 
               <tr>
                 <td>--tags-color-6-light-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-violet-light-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -927,7 +927,7 @@
 
               <tr>
                 <td>--tags-color-6-medium-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-violet-medium-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -935,7 +935,7 @@
 
               <tr>
                 <td>--tags-color-6-medium-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-violet-medium-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -943,7 +943,7 @@
 
               <tr>
                 <td>--tags-color-6-medium-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-violet-medium-border-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -951,7 +951,7 @@
 
               <tr>
                 <td>--tags-color-6-dark-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--tags-soft-violet-dark-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -959,7 +959,7 @@
 
               <tr>
                 <td>--tags-color-6-dark-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--tags-soft-violet-dark-text-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -967,7 +967,7 @@
 
               <tr>
                 <td>--tags-color-6-dark-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--tags-soft-violet-dark-border-color)</td>
                 <td>-</td>
                 <td>-</td>

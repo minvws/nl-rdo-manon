@@ -294,7 +294,7 @@
             <tbody>
               <tr>
                 <td>--links-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>var(--body-text-small-font-size)</td>
                 <td>-</td>
                 <th rowspan="4" scope="rowgroup">links</th>
@@ -302,21 +302,21 @@
 
               <tr>
                 <td>--links-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>var(--body-text-small-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--links-line-height</td>
-                <td><a href="{base}/variables#line-height">line-height</a></td>
+                <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>var(--body-text-small-line-height)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--links-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--body-text-small-color)</td>
                 <td>-</td>
               </tr>

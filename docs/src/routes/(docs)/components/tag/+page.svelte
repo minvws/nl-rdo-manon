@@ -246,7 +246,7 @@
             <tbody>
               <tr>
                 <td>--tag-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>var(--application-base-font-size)</td>
                 <td>-</td>
                 <td>-</td>
@@ -254,7 +254,7 @@
 
               <tr>
                 <td>--tag-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>bold</td>
                 <td>-</td>
                 <td>-</td>
@@ -262,7 +262,7 @@
 
               <tr>
                 <td>--tag-line-height</td>
-                <td><a href="{base}/variables#line-height">line-height</a></td>
+                <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>var(--application-base-line-height)</td>
                 <td>-</td>
                 <td>-</td>
@@ -270,7 +270,7 @@
 
               <tr>
                 <td>--tag-padding</td>
-                <td><a href="{base}/variables#padding">padding</a></td>
+                <td><a href="{base}/documentation/variables#padding">padding</a></td>
                 <td>0.25rem 0.5rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -278,7 +278,7 @@
 
               <tr>
                 <td>--tag-border-radius</td>
-                <td><a href="{base}/variables#border-radius">border-radius</a></td>
+                <td><a href="{base}/documentation/variables#border-radius">border-radius</a></td>
                 <td>0.25rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -286,7 +286,7 @@
 
               <tr>
                 <td>--tag-border-width</td>
-                <td><a href="{base}/variables#border-width">border-width</a></td>
+                <td><a href="{base}/documentation/variables#border-width">border-width</a></td>
                 <td>1px</td>
                 <td>-</td>
                 <td>-</td>

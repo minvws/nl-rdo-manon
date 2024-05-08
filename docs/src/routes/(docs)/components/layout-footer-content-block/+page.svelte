@@ -85,20 +85,20 @@
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="{base}/variables#min-height">min-height</a></li>
-          <li><a href="{base}/variables#padding-top">padding-top</a></li>
+          <li><a href="{base}/documentation/variables#min-height">min-height</a></li>
+          <li><a href="{base}/documentation/variables#padding-top">padding-top</a></li>
           <li>
-            <a href="{base}/variables#padding-right">padding-right</a>
+            <a href="{base}/documentation/variables#padding-right">padding-right</a>
           </li>
           <li>
-            <a href="{base}/variables#padding-bottom">padding-bottom</a>
+            <a href="{base}/documentation/variables#padding-bottom">padding-bottom</a>
           </li>
-          <li><a href="{base}/variables#padding-left">padding-left</a></li>
-          <li><a href="{base}/variables#max-width">max-width</a></li>
+          <li><a href="{base}/documentation/variables#padding-left">padding-left</a></li>
+          <li><a href="{base}/documentation/variables#max-width">max-width</a></li>
           <li>
             Top level blokken en onderliggende blokken:
             <ul>
-              <li><a href="{base}/variables#gap">gap</a></li>
+              <li><a href="{base}/documentation/variables#gap">gap</a></li>
             </ul>
           </li>
         </ul>

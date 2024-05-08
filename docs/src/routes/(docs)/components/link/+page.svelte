@@ -151,7 +151,7 @@
             <tbody>
               <tr>
                 <td>--link-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>transparent</td>
                 <td>-</td>
                 <th rowspan="4" scope="rowgroup">links</th>
@@ -159,14 +159,14 @@
 
               <tr>
                 <td>--link-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>#2f2f9a</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--link-text-decoration</td>
-                <td><a href="{base}/variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td>
                 <td>initial</td>
                 <td>-</td>
               </tr>

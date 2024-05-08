@@ -176,7 +176,7 @@
             <tbody>
               <tr>
                 <td>--radio-gap</td>
-                <td><a href="{base}/variables#gap">gap</a></td>
+                <td><a href="{base}/documentation/variables#gap">gap</a></td>
                 <td>0.75rem</td>
                 <td>-</td>
                 <th rowspan="7" scope="rowgroup">radio-button</th>
@@ -184,42 +184,42 @@
 
               <tr>
                 <td>--radio-align-items</td>
-                <td><a href="{base}/variables#align-items">align-items</a></td>
+                <td><a href="{base}/documentation/variables#align-items">align-items</a></td>
                 <td>center</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--radio-width</td>
-                <td><a href="{base}/variables#width">width</a></td>
+                <td><a href="{base}/documentation/variables#width">width</a></td>
                 <td>1.25rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--radio-height</td>
-                <td><a href="{base}/variables#height">height</a></td>
+                <td><a href="{base}/documentation/variables#height">height</a></td>
                 <td>1.25rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--radio-accent-color</td>
-                <td><a href="{base}/variables#accent-color">accent-color</a></td>
+                <td><a href="{base}/documentation/variables#accent-color">accent-color</a></td>
                 <td>var(--branding-color-1, initial)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--radio-label-width</td>
-                <td><a href="{base}/variables#width">width</a></td>
+                <td><a href="{base}/documentation/variables#width">width</a></td>
                 <td>auto</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--radio-required-gap</td>
-                <td><a href="{base}/variables#gap">gap</a></td>
+                <td><a href="{base}/documentation/variables#gap">gap</a></td>
                 <td>var(--application-base-gap-small)</td>
                 <td>-</td>
               </tr>

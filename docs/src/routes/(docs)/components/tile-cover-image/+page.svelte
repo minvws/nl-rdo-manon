@@ -156,7 +156,7 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="{base}/variables#object-position">object-position</a>
+            <a href="{base}/documentation/variables#object-position">object-position</a>
           </li>
         </ul>
       </section>

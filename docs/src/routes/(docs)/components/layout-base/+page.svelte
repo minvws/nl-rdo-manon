@@ -49,23 +49,23 @@
             Algemene weergave:
             <ul>
               <li>
-                <a href="{base}/variables#padding-top">padding-top</a>
+                <a href="{base}/documentation/variables#padding-top">padding-top</a>
               </li>
               <li>
-                <a href="{base}/variables#padding-right">padding-right</a>
+                <a href="{base}/documentation/variables#padding-right">padding-right</a>
               </li>
               <li>
-                <a href="{base}/variables#padding-bottom">padding-bottom</a>
+                <a href="{base}/documentation/variables#padding-bottom">padding-bottom</a>
               </li>
               <li>
-                <a href="{base}/variables#padding-left">padding-left</a>
+                <a href="{base}/documentation/variables#padding-left">padding-left</a>
               </li>
-              <li><a href="{base}/variables#max-width">max-width</a></li>
+              <li><a href="{base}/documentation/variables#max-width">max-width</a></li>
               <li>
                 Op titels en subtitels:
                 <ul>
                   <li>
-                    <a href="{base}/variables#margin">margin</a>
+                    <a href="{base}/documentation/variables#margin">margin</a>
                   </li>
                 </ul>
               </li>
@@ -77,13 +77,13 @@
               <li>
                 Content-blok:
                 <ul>
-                  <li><a href="{base}/variables#gap">gap</a></li>
+                  <li><a href="{base}/documentation/variables#gap">gap</a></li>
                 </ul>
               </li>
               <li>
                 Binnen dieper gelegen blok-elementen:
                 <ul>
-                  <li><a href="{base}/variables#gap">gap</a></li>
+                  <li><a href="{base}/documentation/variables#gap">gap</a></li>
                 </ul>
               </li>
             </ul>
