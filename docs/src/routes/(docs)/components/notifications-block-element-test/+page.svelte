@@ -17,21 +17,21 @@
       <li>
         <a href="#section">section</a>
         <ul>
-          <li><a href="#error">Foutmelding</a></li>
-          <li><a href="#warning">Waarschuwing</a></li>
-          <li><a href="#confirmation">Bevestiging</a></li>
-          <li><a href="#explanation">Toelichting</a></li>
-          <li><a href="#system">Systeembericht</a></li>
+          <li><a href="#section-error">Foutmelding</a></li>
+          <li><a href="#section-warning">Waarschuwing</a></li>
+          <li><a href="#section-confirmation">Bevestiging</a></li>
+          <li><a href="#section-explanation">Toelichting</a></li>
+          <li><a href="#section-system">Systeembericht</a></li>
         </ul>
       </li>
       <li>
         <a href="#div">div</a>
         <ul>
-          <li><a href="#error">Foutmelding</a></li>
-          <li><a href="#warning">Waarschuwing</a></li>
-          <li><a href="#confirmation">Bevestiging</a></li>
-          <li><a href="#explanation">Toelichting</a></li>
-          <li><a href="#system">Systeembericht</a></li>
+          <li><a href="#div-error">Foutmelding</a></li>
+          <li><a href="#div-warning">Waarschuwing</a></li>
+          <li><a href="#div-confirmation">Bevestiging</a></li>
+          <li><a href="#div-explanation">Toelichting</a></li>
+          <li><a href="#div-system">Systeembericht</a></li>
         </ul>
       </li>
     </ul>
@@ -92,7 +92,7 @@
 `}
         />
 
-        <h4>Foutmelding</h4>
+        <h4 id="section-error">Foutmelding</h4>
         <h5>Visueel voorbeeld:</h5>
         <section class="error" role="group" aria-label="foutmelding">
           <span>Foutmelding:</span>
@@ -137,7 +137,7 @@
 `}
         />
 
-        <h4>Waarchuwing:</h4>
+        <h4 id="section-warning">Waarchuwing:</h4>
         <h5>Visueel voorbeeld:</h5>
         <section class="warning" role="group" aria-label="waarschuwing">
           <span>Waarschuwing:</span>
@@ -182,7 +182,7 @@
 `}
         />
 
-        <h4>Bevestiging:</h4>
+        <h4 id="section-confirmation">Bevestiging:</h4>
         <h5>Visueel voorbeeld:</h5>
         <section class="confirmation" role="group" aria-label="bevestiging">
           <span>Bevestiging:</span>
@@ -227,7 +227,7 @@
 `}
         />
 
-        <h4>Toelichting:</h4>
+        <h4 id="section-explanation">Toelichting:</h4>
         <h5>Visueel voorbeeld:</h5>
         <section class="explanation" role="group" aria-label="toelichting">
           <span>Toelichting:</span>
@@ -272,7 +272,7 @@
 `}
         />
 
-        <h4>Systeembericht:</h4>
+        <h4 id="section-system">Systeembericht:</h4>
         <h5>Visueel voorbeeld:</h5>
         <section class="system" role="group" aria-label="systeembericht">
           <span>Systeembericht:</span>
@@ -317,7 +317,7 @@
 `}
         />
 
-        <h3><code>div</code></h3>
+        <h3 id="div"><code>div</code></h3>
         <h4>Notificatie:</h4>
         <h5>Visueel voorbeeld:</h5>
         <div class="notification" role="group" aria-label="notificatie">
@@ -363,7 +363,7 @@
 `}
         />
 
-        <h4>Foutmelding:</h4>
+        <h4 id="div-error">Foutmelding:</h4>
         <h5>Visueel voorbeeld:</h5>
         <div class="error" role="group" aria-label="foutmelding">
           <span>Foutmelding:</span>
@@ -408,7 +408,7 @@
 `}
         />
 
-        <h4>Waarschuwing:</h4>
+        <h4 id="div-warning">Waarschuwing:</h4>
         <h5>Visueel voorbeeld:</h5>
         <div class="warning" role="group" aria-label="waarchuwing">
           <span>Waarchuwing:</span>
@@ -453,7 +453,7 @@
 `}
         />
 
-        <h4>Bevestiging:</h4>
+        <h4 id="div-confirmation">Bevestiging:</h4>
         <h5>Visueel voorbeeld:</h5>
         <div class="confirmation" role="group" aria-label="bevestiging">
           <span>Bevestiging:</span>
@@ -498,7 +498,7 @@
 `}
         />
 
-        <h4>Toelichting:</h4>
+        <h4 id="div-explanation">Toelichting:</h4>
         <h5>Visueel voorbeeld:</h5>
         <div class="explanation" role="group" aria-label="toelichting">
           <span>Toelichting:</span>
@@ -543,7 +543,7 @@
 `}
         />
 
-        <h4>Systeembericht:</h4>
+        <h4 id="div-system">Systeembericht:</h4>
         <h5>Visueel voorbeeld:</h5>
         <div class="system" role="group" aria-label="systeembericht">
           <span>Systeembericht:</span>
