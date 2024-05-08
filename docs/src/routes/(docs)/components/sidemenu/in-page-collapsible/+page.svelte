@@ -59,7 +59,7 @@
             Voeg de referentie naar het Javascript bestand,
             <code>sidemenu.js</code>, toe aan de HTML-pagina's die gebruik dienen te maken van het
             inklapbare zijmenu. Voor meer informatie zie:
-            <a href="{base}/add-js">JavaScript referentie toevoegen</a>.
+            <a href="{base}/documentation/add-js">JavaScript referentie toevoegen</a>.
           </li>
         </ol>
 

@@ -80,7 +80,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
               Voeg de referentie naar het Javascript bestand,
               <code>sidemenu.js</code>, toe aan de HTML-pagina's die gebruik dienen te maken van het
               inklapbare zijmenu. Voor meer informatie zie:
-              <a href="{base}/add-js">JavaScript referentie toevoegen</a>.
+              <a href="{base}/documentation/add-js">JavaScript referentie toevoegen</a>.
             </li>
             <li>
               Om het menu standaard gesloten te tonen tot de gebruiker het menu opent. Voeg de class <code

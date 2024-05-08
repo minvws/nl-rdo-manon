@@ -42,7 +42,7 @@
               <li>
                 Voeg het bijbehorende Javascript-bestand toe aan het project. Voor meer informatie
                 zie:
-                <a href="{base}/add-js">JavaScript toevoegen</a>.
+                <a href="{base}/documentation/add-js">JavaScript toevoegen</a>.
               </li>
             </ul>
           </li>

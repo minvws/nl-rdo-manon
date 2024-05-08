@@ -89,7 +89,7 @@
             Plaats
             <code>&lt;script defer src="pad/naar/expando-rows.min.js"&gt;&lt;/script&gt;</code>
             in de <code>&lt;head&gt;</code> van het document. Voor meer informatie zie:
-            <a href="{base}/add-js">JavaScript toevoegen</a>
+            <a href="{base}/documentation/add-js">JavaScript toevoegen</a>
           </li>
           <li>
             Open/sluit-icoon toevoegen:
