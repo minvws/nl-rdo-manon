@@ -18,7 +18,6 @@
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
   <article>
@@ -126,7 +125,7 @@
         <td><p class="tags-color-1-medium">Label</p></td>
         <td><p class="tags-color-1-dark">Label</p></td>
       </tr>
-      
+
       <tr>
         <td><p class="tags-color-2-light">Label</p></td>
         <td><p class="tags-color-2-medium">Label</p></td>
@@ -156,7 +155,7 @@
         <td><p class="tags-color-6-medium">Label</p></td>
         <td><p class="tags-color-6-dark">Label</p></td>
       </tr>
-      
+
     </tbody>
   </table>
 </div>
@@ -485,7 +484,7 @@
         <td><p class="tags-color-6-medium dotted">Label</p></td>
         <td><p class="tags-color-6-dark dotted">Label</p></td>
       </tr>
-      
+
     </tbody>
   </table>
 </div>

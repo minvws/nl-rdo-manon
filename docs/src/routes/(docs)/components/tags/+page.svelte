@@ -18,7 +18,6 @@
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
   <article>
@@ -109,7 +108,7 @@
 <section class="tags horizontal-view">
   <p class="tags-color-1-light">Lorem ipsum</p>
   <p class="tags-color-2-light">Lorem ipsum</p>
-  <p class="tags-color-3-light">Lorem ipsum</p>                
+  <p class="tags-color-3-light">Lorem ipsum</p>
 </section>
 `}
         />

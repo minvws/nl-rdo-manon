@@ -21,10 +21,6 @@
 
         <ol>
           <li>
-            Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
-            optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.
-          </li>
-          <li>
             Voeg de benodigde HTML toe. Voor meer informatie zie: <a href="#examples">Voorbeelden</a
             >.
           </li>

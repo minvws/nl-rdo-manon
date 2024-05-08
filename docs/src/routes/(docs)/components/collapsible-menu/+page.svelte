@@ -18,7 +18,6 @@
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
   <article>
@@ -430,10 +429,10 @@
     --navigation-collapsible-menu-list-item-collapsed-background-color: ;
     --navigation-collapsible-menu-list-item-collapsed-text-color: ;
     --navigation-collapsible-menu-list-item-collapsed-padding: ;
-    
+
     /* First collapsed list item */
     --navigation-collapsible-menu-list-item-collapsed-first-item-border-width: ;
-    
+
     /* Last collapsed list item */
     --navigation-collapsible-menu-list-item-collapsed-last-item-border-width: ;
 
@@ -444,7 +443,7 @@
     /* List item collapsed hover */
     --navigation-collapsible-menu-list-item-collapsed-hover-background-color: ;
     --navigation-collapsible-menu-list-item-collapsed-hover-text-color: ;
-        
+
     /* Button */
     --navigation-collapsible-menu-button-background-color: ;
     --navigation-collapsible-menu-button-font-size: ;

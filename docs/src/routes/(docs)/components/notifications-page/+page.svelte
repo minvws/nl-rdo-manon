@@ -25,11 +25,6 @@
 
         <h2>Benodigde stappen:</h2>
         <ol>
-          <li>
-            Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
-            optionele bestanden zie:
-            <a href="#requirements">Bijbehorende bestanden</a>.
-          </li>
           <li>Voeg de notificatie toe direct binnen <code>main</code></li>
           <li>
             Voeg de gewenste notificatie-type-<code>class</code> toe. Voor meer informatie zie:

@@ -17,8 +17,6 @@
     <ul>
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
-      <li><a href="#requirements">Bijbehorende bestanden</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
 
@@ -45,11 +43,6 @@
             <a href="#layout-base">Basis-weergave</a>. Voor meer informatie over het kiezen van de
             juiste weergave en het instellen ervan zie:
             <a href="{base}/components/layout-base-options">Basisweergave kiezen en instellen</a>.
-          </li>
-          <li>
-            Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
-            optionele bestanden zie:
-            <a href="#requirements">Bijbehorende bestanden</a>.
           </li>
         </ul>
 

@@ -18,7 +18,6 @@
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
   <article>
@@ -49,72 +48,80 @@
         <h4>Visueel voorbeeld:</h4>
         <nav>
           <ul>
-            <li><a href="#a">Basis</a></li>
-            <li><a href="#b" class="icon icon-cat">Met <code>:before</code></a></li>
+            <li><a href="navigation">Basis</a></li>
+            <li><a href="navigation" class="icon icon-cat">Met <code>:before</code></a></li>
             <li>
-              <a href="#c" class="icon-after icon-cat"
+              <a href="navigation" class="icon-after icon-cat"
                 >Met <code>:after</code><span class="icon icon-cat">Kat icoon</span></a
               >
             </li>
 
-            <li><a href="#d" class="hover">Hover <code>:hover</code></a></li>
+            <li><a href="navigation" class="hover">Hover <code>:hover</code></a></li>
 
             <li>
-              <a href="#e" class="hover icon icon-cat">Hover met <code>:before:hover</code></a>
+              <a href="navigation" class="hover icon icon-cat"
+                >Hover met <code>:before:hover</code></a
+              >
             </li>
             <li>
-              <a href="#f" class="hover"
+              <a href="navigation" class="hover"
                 >Hover met <code>:before:hover</code> <span class="icon icon-cat"></span></a
               >
             </li>
 
-            <li><a href="#g" class="active">Actieve link</a></li>
-            <li><a href="#h" class="active icon icon-cat">Actieve link met icoon</a></li>
+            <li><a href="navigation" class="active">Actieve link</a></li>
+            <li><a href="navigation" class="active icon icon-cat">Actieve link met icoon</a></li>
             <li>
-              <a href="#i" class="active"
+              <a href="navigation" class="active"
                 >Actieve link met icoon achteraan <span class="icon icon-cat"></span></a
               >
             </li>
-            <li><a href="#j" class="active hover">Actieve link op hover</a></li>
+            <li><a href="navigation" class="active hover">Actieve link op hover</a></li>
             <li>
-              <a href="#k" class="active hover icon icon-cat">Actieve link met icoon op hover</a>
+              <a href="navigation" class="active hover icon icon-cat"
+                >Actieve link met icoon op hover</a
+              >
             </li>
             <li>
-              <a href="#l" class="active hover"
+              <a href="navigation" class="active hover"
                 >Actieve link met icoon achteraan op hover <span class="icon icon-cat"></span></a
               >
             </li>
 
-            <li><a href="#m" class="focus">Link gefocust</a></li>
-            <li><a href="#n" class="focus icon icon-cat">Link gefocust met icoon</a></li>
+            <li><a href="navigation" class="focus">Link gefocust</a></li>
+            <li><a href="navigation" class="focus icon icon-cat">Link gefocust met icoon</a></li>
             <li>
-              <a href="#o" class="focus"
+              <a href="navigation" class="focus"
                 >Link gefocust met icoon achteraan <span class="icon icon-cat"></span></a
               >
             </li>
-            <li><a href="#p" class="focus hover">Link gefocust op hover</a></li>
+            <li><a href="navigation" class="focus hover">Link gefocust op hover</a></li>
             <li>
-              <a href="#q" class="focus hover icon icon-cat">Link gefocust met icoon op hover</a>
+              <a href="navigation" class="focus hover icon icon-cat"
+                >Link gefocust met icoon op hover</a
+              >
             </li>
             <li>
-              <a href="#r" class="focus hover"
+              <a href="navigation" class="focus hover"
                 >Link gefocust met icoon achteraan op hover <span class="icon icon-cat"></span></a
               >
             </li>
 
-            <li><a href="#s" class="visited">Bezochte link</a></li>
-            <li><a href="#t" class="visited icon icon-cat">Bezochte link met icoon</a></li>
+            <li><a href="navigation" class="visited">Bezochte link</a></li>
+            <li><a href="navigation" class="visited icon icon-cat">Bezochte link met icoon</a></li>
             <li>
-              <a href="#u" class="visited"
+              <a href="navigation" class="visited"
                 >Bezochte link met icoon achteraan <span class="icon icon-cat"></span></a
               >
             </li>
-            <li><a href="#v" class="visited hover">Bezochte link op hover</a></li>
+            <li><a href="navigation" class="visited hover">Bezochte link op hover</a></li>
             <li>
-              <a href="#w" class="visited hover icon icon-cat">Bezochte link met icoon op hover</a>
+              <a href="navigation" class="visited hover icon icon-cat"
+                >Bezochte link met icoon op hover</a
+              >
             </li>
             <li>
-              <a href="#x" class="visited hover"
+              <a href="navigation" class="visited hover"
                 >Bezochte link met icoon achteraan op hover <span class="icon icon-cat"></span></a
               >
             </li>
@@ -122,10 +129,10 @@
         </nav>
 
         <h4>Navigatie-component met links</h4>
-        <nav id="nav-a">
-          <a href="#nav-a">Lorem ipsum</a>
-          <a href="#nav-a">Lorem ipsum</a>
-          <a href="#nav-a">Lorem ipsum</a>
+        <nav>
+          <a href="navigation">Lorem ipsum</a>
+          <a href="navigation">Lorem ipsum</a>
+          <a href="navigation">Lorem ipsum</a>
         </nav>
 
         <h4>HTML-voorbeeld:</h4>
@@ -141,11 +148,11 @@
         />
 
         <h4>Navigatie-component met een lijst met links</h4>
-        <nav id="nav-ul">
+        <nav>
           <ul>
-            <li><a href="#nav-ul">Lorem ipsum</a></li>
-            <li><a href="#nav-ul">Lorem ipsum</a></li>
-            <li><a href="#nav-ul">Lorem ipsum</a></li>
+            <li><a href="navigation">Lorem ipsum</a></li>
+            <li><a href="navigation">Lorem ipsum</a></li>
+            <li><a href="navigation">Lorem ipsum</a></li>
           </ul>
         </nav>
 
@@ -164,11 +171,11 @@
         />
 
         <h4>Navigatie-component met een horizontaal uitgelijnde lijst met links</h4>
-        <nav id="nav-ul-horizontal">
+        <nav>
           <ul class="horizontal-view">
-            <li><a href="#nav-ul-horizontal">Lorem ipsum</a></li>
-            <li><a href="#nav-ul-horizontal">Lorem ipsum</a></li>
-            <li><a href="#nav-ul-horizontal">Lorem ipsum</a></li>
+            <li><a href="navigation">Lorem ipsum</a></li>
+            <li><a href="navigation">Lorem ipsum</a></li>
+            <li><a href="navigation">Lorem ipsum</a></li>
           </ul>
         </nav>
 
@@ -191,7 +198,9 @@
           <ul>
             <li><a href="#nav-a-hover" class="hover">Lorem ipsum</a></li>
             <li>
-              <a href="#nav-a-hover" class="hover icon icon-cat">Hover met <code>:before:hover</code></a>
+              <a href="#nav-a-hover" class="hover icon icon-cat"
+                >Hover met <code>:before:hover</code></a
+              >
             </li>
             <li>
               <a href="#nav-a-hover" class="hover"
@@ -220,7 +229,9 @@
           <ul>
             <li><a href="#nav-a-active" class="active">Lorem ipsum</a></li>
             <li>
-              <a href="#nav-a-active" class="active icon icon-cat">active met <code>:before:active</code></a>
+              <a href="#nav-a-active" class="active icon icon-cat"
+                >active met <code>:before:active</code></a
+              >
             </li>
             <li>
               <a href="#nav-a-active" class="active"
@@ -249,7 +260,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Aandachtspunten:</h3>
