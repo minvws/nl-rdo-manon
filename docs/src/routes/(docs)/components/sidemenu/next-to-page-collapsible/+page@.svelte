@@ -10,20 +10,28 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 
 <script>
   import { base } from "$app/paths";
-  import { onMount, onDestroy } from "svelte";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
   import DefaultHeader from "$lib/DefaultHeader.svelte";
   import DefaultFooter from "$lib/DefaultFooter.svelte";
 
-  // Add the "sidemenu" class to the <body> tag while this page is mounted.
-  onMount(() => document.body.classList.add("sidemenu"));
-  onDestroy(() => document.body.classList.remove("sidemenu"));
+  /** @type {import('svelte/action')}  */
+  function sidemenuClass(node) {
+    // Add the "sidemenu" class while this page is mounted.
+    node.classList.add("sidemenu");
+    return {
+      destroy() {
+        node.classList.remove("sidemenu");
+      },
+    };
+  }
 </script>
 
 <svelte:head>
   <title>Zijmenu naast de pagina</title>
 </svelte:head>
+
+<svelte:body use:sidemenuClass />
 
 <SideMenu>
   <ul>
@@ -49,7 +57,9 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 
           <p>
             Gaat de inhoud van het zijmenu over de inhoud van de content. En hoort het bij de
-            content. Gebruik dan: <a href="{base}/components/sidemenu/in-page">Zijmenu binnen de pagina</a>.
+            content. Gebruik dan: <a href="{base}/components/sidemenu/in-page"
+              >Zijmenu binnen de pagina</a
+            >.
           </p>
 
           <nav aria-labelledby="table-of-contents">
@@ -131,7 +141,9 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
           <p>Zie het zijmenu van deze pagina.</p>
 
           <h4>HTML-voorbeeld</h4>
-<Code language="html" code={`
+          <Code
+            language="html"
+            code={`
 <body class="sidemenu">
   <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Zijbalknavigatie">
     <!-- Zijmenu content -->
@@ -151,7 +163,8 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
     </footer>
   </div>
 </body>
-`} />
+`}
+          />
 
           <h3 id="sidemenu-expandable">Uitklapbaar zijmenu</h3>
           <p>Het menu is standaard ingeklapt en kan door de gebruiker uitgeklapt worden.</p>
@@ -161,7 +174,9 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
           </ol>
 
           <h4 id="sidemenu-structure">HTML-voorbeeld structuur</h4>
-<Code language="html" code={`
+          <Code
+            language="html"
+            code={`
 <body class="sidemenu sidemenu-closed">
   <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Zijbalknavigatie">
     <!-- Zijmenu content -->
@@ -181,7 +196,8 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
     </footer>
   </div>
 </body>
-`} />
+`}
+          />
         </section>
 
         <section id="requirements">
@@ -194,9 +210,12 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
           <h3>Importeer component via NPM</h3>
 
           <h4>CSS-voorbeeld:</h4>
-<Code language="css" code={`
+          <Code
+            language="css"
+            code={`
 @use "@minvws/manon/sidemenu";
-`} />
+`}
+          />
         </section>
       </div>
     </article>

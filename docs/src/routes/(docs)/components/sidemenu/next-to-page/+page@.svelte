@@ -10,20 +10,28 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 
 <script>
   import { base } from "$app/paths";
-  import { onMount, onDestroy } from "svelte";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
   import DefaultHeader from "$lib/DefaultHeader.svelte";
   import DefaultFooter from "$lib/DefaultFooter.svelte";
 
-  // Add the "sidemenu" class to the <body> tag while this page is mounted.
-  onMount(() => document.body.classList.add("sidemenu"));
-  onDestroy(() => document.body.classList.remove("sidemenu"));
+  /** @type {import('svelte/action')}  */
+  function sidemenuClass(node) {
+    // Add the "sidemenu" class while this page is mounted.
+    node.classList.add("sidemenu");
+    return {
+      destroy() {
+        node.classList.remove("sidemenu");
+      },
+    };
+  }
 </script>
 
 <svelte:head>
   <title>Zijmenu naast de pagina</title>
 </svelte:head>
+
+<svelte:body use:sidemenuClass />
 
 <SideMenu>
   <ul>
