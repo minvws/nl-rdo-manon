@@ -48,9 +48,9 @@
           <nav aria-labelledby="footer-nav-1-heading">
             <h1 id="footer-nav-1-heading">Lorem ipsum</h1>
             <ul>
-              <li><a href="#">Dolor</a></li>
-              <li><a href="#">Sit</a></li>
-              <li><a href="#">Amet</a></li>
+              <li><a href="footer">Dolor</a></li>
+              <li><a href="footer">Sit</a></li>
+              <li><a href="footer">Amet</a></li>
             </ul>
           </nav>
         </footer>

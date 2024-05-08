@@ -13,6 +13,7 @@
 <script>
   import "highlight.js/styles/github.css";
 
+  /** @param {string} markup */
   const trim = (markup) => markup.replace(/^(\s*\n)+/, "").replace(/\n\s*$/, "");
 
   /** @type {'html' | 'css' | 'scss' | 'plaintext'} */

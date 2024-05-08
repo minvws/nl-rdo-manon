@@ -31,8 +31,7 @@
         </p>
         <p>
           <strong>Let op:</strong> Screenreaders slaan over het algemeen ook objecten met
-          <code>"display: none"</code>
-          over voor hun gebruikers. <!-- Als dit niet de bedoeling is en de content wel beschikbaar dient te zijn voor screenreader gebruikers is de helper class <a href="">visually-hidden</a> waarschijnlijk de betere optie.-->
+          <code>"display: none"</code> over voor hun gebruikers.
         </p>
 
         <h2>Benodigde stappen:</h2>

@@ -48,12 +48,12 @@
 
         <h3 id="tabs-class">Tabbladen</h3>
         <p>Visueel voorbeeld:</p>
-        <div class="tabs">
+        <div class="tabs" id="tabs">
           <ul>
             <li><span aria-current="page">Optie 1</span></li>
-            <li><a href="#">Optie 2</a></li>
-            <li><a href="#">Optie 3</a></li>
-            <li><a href="#">Optie 4</a></li>
+            <li><a href="tabs">Optie 2</a></li>
+            <li><a href="tabs">Optie 3</a></li>
+            <li><a href="tabs">Optie 4</a></li>
           </ul>
         </div>
 
@@ -73,12 +73,12 @@
         />
 
         <h4><code>aria-current</code> op <code>li</code></h4>
-        <div class="tabs">
+        <div class="tabs" id="li">
           <ul>
             <li aria-current="page"><span>Optie 1</span></li>
-            <li><a href="#">Optie 2</a></li>
-            <li><a href="#">Optie 3</a></li>
-            <li><a href="#">Optie 4</a></li>
+            <li><a href="#li">Optie 2</a></li>
+            <li><a href="#li">Optie 3</a></li>
+            <li><a href="#li">Optie 4</a></li>
           </ul>
         </div>
 

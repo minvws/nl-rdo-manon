@@ -82,7 +82,7 @@
                 <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>var(--confirmation-background-color)</td>
                 <td>-</td>
-                <td rowspan="24" scope="rowgroup">confirmation</td>
+                <th rowspan="24" scope="rowgroup">confirmation</th>
               </tr>
 
               <tr>

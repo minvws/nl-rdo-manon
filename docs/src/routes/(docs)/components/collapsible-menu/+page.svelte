@@ -119,7 +119,7 @@
                 <td>--navigation-collapsible-menu-gap</td>
                 <td><a href="{base}/variables#gap">gap</a></td>
                 <td>0</td>
-                <td rowspan="39" scope="rowgroup">42rem</td>
+                <th rowspan="39" scope="rowgroup">42rem</th>
                 <td>-</td>
               </tr>
 

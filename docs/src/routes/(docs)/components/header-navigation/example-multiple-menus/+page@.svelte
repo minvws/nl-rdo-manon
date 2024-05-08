@@ -39,7 +39,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
       <div class="collapsing-element">
         <SiteNavLinks />
         <ul>
-          <li><a href="#">Logout</a></li>
+          <li><a href="example-multiple-menus">Logout</a></li>
         </ul>
       </div>
     </nav>

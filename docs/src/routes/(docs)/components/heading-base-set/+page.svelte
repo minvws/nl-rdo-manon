@@ -188,7 +188,7 @@
                 <td><a href="{base}/variables#font-family">font-family</a></td>
                 <td>var(--application-base-font-family)</td>
                 <td>-</td>
-                <td rowspan="6" scope="rowgroup">-</td>
+                <th rowspan="6" scope="rowgroup">-</th>
               </tr>
 
               <tr>
@@ -232,7 +232,7 @@
                 <td><a href="{base}/variables#font-family">font-family</a></td>
                 <td>var(--headings-base-set-font-family)</td>
                 <td>-</td>
-                <td rowspan="6" scope="rowgroup">heading-xxl</td>
+                <th rowspan="6" scope="rowgroup">heading-xxl</th>
               </tr>
 
               <tr>
@@ -276,7 +276,7 @@
                 <td><a href="{base}/variables#font-family">font-family</a></td>
                 <td>var(--headings-base-set-font-family)</td>
                 <td>-</td>
-                <td rowspan="6" scope="rowgroup">heading-xl</td>
+                <th rowspan="6" scope="rowgroup">heading-xl</th>
               </tr>
 
               <tr>
@@ -320,7 +320,7 @@
                 <td><a href="{base}/variables#font-family">font-family</a></td>
                 <td>var(--headings-base-set-font-family)</td>
                 <td>-</td>
-                <td rowspan="6" scope="rowgroup">heading-large</td>
+                <th rowspan="6" scope="rowgroup">heading-large</th>
               </tr>
 
               <tr>
@@ -364,7 +364,7 @@
                 <td><a href="{base}/variables#font-family">font-family</a></td>
                 <td>var(--headings-base-set-font-family)</td>
                 <td>-</td>
-                <td rowspan="6" scope="rowgroup">heading-normal</td>
+                <th rowspan="6" scope="rowgroup">heading-normal</th>
               </tr>
 
               <tr>
@@ -408,7 +408,7 @@
                 <td><a href="{base}/variables#font-family">font-family</a></td>
                 <td>var(--headings-base-set-font-family)</td>
                 <td>-</td>
-                <td rowspan="6" scope="rowgroup">heading-small</td>
+                <th rowspan="6" scope="rowgroup">heading-small</th>
               </tr>
 
               <tr>
@@ -452,7 +452,7 @@
                 <td><a href="{base}/variables#font-family">font-family</a></td>
                 <td>var(--headings-base-set-font-family)</td>
                 <td>-</td>
-                <td rowspan="6" scope="rowgroup">heading-xs</td>
+                <th rowspan="6" scope="rowgroup">heading-xs</th>
               </tr>
 
               <tr>

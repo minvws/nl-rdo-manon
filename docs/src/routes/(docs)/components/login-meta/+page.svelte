@@ -32,7 +32,7 @@
 
         <h3>Ingelogd als informatie</h3>
         <h4>Visueel voorbeeld:</h4>
-        <p class="login-meta">Ingelogd als: <a href="">Jane Doe</a></p>
+        <p class="login-meta">Ingelogd als: <a href="login-meta">Jane Doe</a></p>
 
         <h4>HTML-voorbeeld:</h4>
         <Code

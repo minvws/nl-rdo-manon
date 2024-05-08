@@ -96,7 +96,7 @@
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
               consequat facilisis ac eu velit.
-              <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+              <a href="notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
             </li>
           </ul>
           <button type="button">Lorem</button>

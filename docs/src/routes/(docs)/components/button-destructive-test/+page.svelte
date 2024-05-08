@@ -55,19 +55,21 @@
 
         <h3><code>button</code> met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button class="destructive">Lorem ipsum <img src="$img/cat.svg" /></button>
+        <button class="destructive">Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></button>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
           language="html"
           code={`
-<button class="destructive">Lorem ipsum <img src="$img/cat.svg"></button>
+<button class="destructive">Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></button>
 `}
         />
 
         <h3>Link als knop</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/button-destructive-test" class="button destructive">Lorem ipsum</a>
+        <a href="{base}/components/button-destructive-test" class="button destructive"
+          >Lorem ipsum</a
+        >
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -77,45 +79,41 @@
 `}
         />
 
-        <h3>Link als knop: disabled</h3>
-        <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/button-destructive-test" class="button destructive" disabled>Lorem ipsum</a>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input class="button destructive" disabled>Lorem ipsum</a>
-`}
-        />
-
         <h4>States</h4>
         <ul>
           <li>
-            <a href="{base}/components/button-destructive-test" class="button destructive focus">Focus</a>
+            <a href="{base}/components/button-destructive-test" class="button destructive focus"
+              >Focus</a
+            >
           </li>
           <li>
-            <a href="{base}/components/button-destructive-test" class="button destructive active">Active</a>
+            <a href="{base}/components/button-destructive-test" class="button destructive active"
+              >Active</a
+            >
           </li>
           <li>
-            <a href="{base}/components/button-destructive-test" class="button destructive visited">Visited</a>
+            <a href="{base}/components/button-destructive-test" class="button destructive visited"
+              >Visited</a
+            >
           </li>
           <li>
-            <a href="{base}/components/button-destructive-test" class="button destructive hover">Hover</a>
+            <a href="{base}/components/button-destructive-test" class="button destructive hover"
+              >Hover</a
+            >
           </li>
         </ul>
 
         <h3>Link als knop: met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
         <a href="{base}/components/button-destructive-test" class="button destructive"
-          >Lorem ipsum <img src="$img/cat.svg" /></a
+          >Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></a
         >
 
         <h4>HTML-voorbeeld:</h4>
         <Code
           language="html"
           code={`
-<input class="button destructive">Lorem ipsum <img src="/img/cat.svg"></a>
+<input class="button destructive">Lorem ipsum <img src="/img/cat.svg" alt="Kat" /></a>
 `}
         />
 

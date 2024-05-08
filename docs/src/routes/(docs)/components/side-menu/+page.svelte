@@ -76,10 +76,10 @@
         <main class="no-js sidemenu">
           <nav aria-label="Zijbalknavigatie zonder javascript voorbeeld">
             <ul>
-              <li><a href="">Voorbeeld link 1</a></li>
-              <li><a href="">Voorbeeld link 2</a></li>
-              <li><a href="">Voorbeeld link 3</a></li>
-              <li><a href="">Voorbeeld link 4</a></li>
+              <li><a href="side-menu">Voorbeeld link 1</a></li>
+              <li><a href="side-menu">Voorbeeld link 2</a></li>
+              <li><a href="side-menu">Voorbeeld link 3</a></li>
+              <li><a href="side-menu">Voorbeeld link 4</a></li>
             </ul>
           </nav>
           <article>
@@ -234,10 +234,10 @@
         <main class="sidemenu">
           <SideMenu>
             <ul>
-              <li><a href="">Voorbeeld link 1</a></li>
-              <li><a href="">Voorbeeld link 2</a></li>
-              <li><a href="">Voorbeeld link 3</a></li>
-              <li><a href="">Voorbeeld link 4</a></li>
+              <li><a href="side-menu">Voorbeeld link 1</a></li>
+              <li><a href="side-menu">Voorbeeld link 2</a></li>
+              <li><a href="side-menu">Voorbeeld link 3</a></li>
+              <li><a href="side-menu">Voorbeeld link 4</a></li>
             </ul>
           </SideMenu>
           <article>
@@ -406,10 +406,10 @@
             aria-label="Zijbalknavigatie voorbeeld"
           >
             <ul>
-              <li><a href="">Voorbeeld link 1</a></li>
-              <li><a href="">Voorbeeld link 2</a></li>
-              <li><a href="">Voorbeeld link 3</a></li>
-              <li><a href="">Voorbeeld link 4</a></li>
+              <li><a href="side-menu">Voorbeeld link 1</a></li>
+              <li><a href="side-menu">Voorbeeld link 2</a></li>
+              <li><a href="side-menu">Voorbeeld link 3</a></li>
+              <li><a href="side-menu">Voorbeeld link 4</a></li>
             </ul>
           </nav>
           <article>

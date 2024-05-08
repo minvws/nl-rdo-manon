@@ -21,14 +21,14 @@
       <section id="tests">
         <h2>Tests</h2>
         <h2><code>nav</code> met class tabs</h2>
-        <div class="tabs">
+        <nav class="tabs" id="nav">
           <ul>
-            <li><a href="#" aria-current="page">Optie 1</a></li>
-            <li><a href="#">Optie 2</a></li>
-            <li><a href="#">Optie 3</a></li>
-            <li><a href="#">Optie 4</a></li>
+            <li><a href="#nav" aria-current="page">Optie 1</a></li>
+            <li><a href="#nav">Optie 2</a></li>
+            <li><a href="#nav">Optie 3</a></li>
+            <li><a href="#nav">Optie 4</a></li>
           </ul>
-        </div>
+        </nav>
 
         <p>HTML-voorbeeld:</p>
         <Code
@@ -47,12 +47,12 @@
         />
 
         <h2><code>span</code> op <code>aria-current</code>.</h2>
-        <div class="tabs">
+        <div class="tabs" id="span">
           <ul>
             <li><span aria-current="page">Optie 1</span></li>
-            <li><a href="#">Optie 2</a></li>
-            <li><a href="#">Optie 3</a></li>
-            <li><a href="#">Optie 4</a></li>
+            <li><a href="#span">Optie 2</a></li>
+            <li><a href="#span">Optie 3</a></li>
+            <li><a href="#span">Optie 4</a></li>
           </ul>
         </div>
 
@@ -73,12 +73,12 @@
         />
 
         <h2><code>aria-current</code> op <code>li</code></h2>
-        <div class="tabs">
+        <div class="tabs" id="li">
           <ul>
-            <li aria-current="page"><a href="#">Optie 1</a></li>
-            <li><a href="#">Optie 2</a></li>
-            <li><a href="#">Optie 3</a></li>
-            <li><a href="#">Optie 4</a></li>
+            <li aria-current="page"><a href="#li">Optie 1</a></li>
+            <li><a href="#li">Optie 2</a></li>
+            <li><a href="#li">Optie 3</a></li>
+            <li><a href="#li">Optie 4</a></li>
           </ul>
         </div>
 
@@ -98,12 +98,12 @@
         />
 
         <h2>Section</h2>
-        <section class="tabs">
+        <section class="tabs" id="section">
           <ul>
-            <li><a href="#" aria-current="page">Optie 1</a></li>
-            <li><a href="#">Optie 2</a></li>
-            <li><a href="#">Optie 3</a></li>
-            <li><a href="#">Optie 4</a></li>
+            <li><a href="#section" aria-current="page">Optie 1</a></li>
+            <li><a href="#section">Optie 2</a></li>
+            <li><a href="#section">Optie 3</a></li>
+            <li><a href="#section">Optie 4</a></li>
           </ul>
         </section>
 
@@ -124,11 +124,11 @@
         />
 
         <h2>Zonder container</h2>
-        <ul class="tabs">
-          <li><a href="#" aria-current="page">Optie 1</a></li>
-          <li><a href="#">Optie 2</a></li>
-          <li><a href="#">Optie 3</a></li>
-          <li><a href="#">Optie 4</a></li>
+        <ul class="tabs" id="no-container">
+          <li><a href="#no-container" aria-current="page">Optie 1</a></li>
+          <li><a href="#no-container">Optie 2</a></li>
+          <li><a href="#no-container">Optie 3</a></li>
+          <li><a href="#no-container">Optie 4</a></li>
         </ul>
 
         <p>HTML-voorbeeld:</p>

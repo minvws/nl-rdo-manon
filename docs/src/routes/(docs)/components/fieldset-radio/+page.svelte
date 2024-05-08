@@ -289,7 +289,7 @@
                 <td><a href="{base}/variables#margin-top">margin-top</a></td>
                 <td>0.25rem</td>
                 <td>-</td>
-                <td rowspan="7" scope="rowgroup">radio</td>
+                <th rowspan="7" scope="rowgroup">radio</th>
               </tr>
 
               <tr>

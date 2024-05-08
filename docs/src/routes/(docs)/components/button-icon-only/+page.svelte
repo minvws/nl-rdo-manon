@@ -56,7 +56,7 @@
         <h2><code>button</code> met <code>img</code></h2>
         <h3>Visuele weergave:</h3>
 
-        <button href="{base}/components/button-icon" class="icon-only">
+        <button class="icon-only">
           Lorem ipsum <img src="$img/cat.svg" alt="Kat" />
         </button>
 

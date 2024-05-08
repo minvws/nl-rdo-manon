@@ -133,7 +133,7 @@
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
               consequat facilisis ac eu velit.
-              <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+              <a href="notification-attention">Lorem ipsum</a> consectetur adipiscing elit.
             </li>
           </ul>
           <button type="button">Lorem</button>
@@ -665,7 +665,6 @@
               name="standaard-radiobutton"
               value="value"
               class="attention"
-              aria-invalid="true"
             />
             <label for="radio-example-attention">Lorem ipsum dolor sit amet</label>
             <p class="attention" id="radio-example-attention-message">
@@ -680,7 +679,7 @@
           code={`
 <form action="" method="post">
   <div>
-    <input type="radio" id="radio-example-attention" name="standaard-radiobutton" value="value" class="attention" aria-invalid="true">
+    <input type="radio" id="radio-example-attention" name="standaard-radiobutton" value="value" class="attention">
     <label for="radio-example-attention">Lorem ipsum dolor sit amet</label>
     <p class="attention" id="radio-example-attention-message">
       <span>toelichting:</span> Lorem ipsum dolor sit amet

@@ -55,13 +55,13 @@
 
         <h3><code>button</code> met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button class="ghost">Lorem ipsum <img src="$img/cat.svg" /></button>
+        <button class="ghost">Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></button>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
           language="html"
           code={`
-<button class="ghost">Lorem ipsum <img src="/img/cat.svg"></button>
+<button class="ghost">Lorem ipsum <img src="/img/cat.svg" alt="Kat" /></button>
 `}
         />
 
@@ -74,18 +74,6 @@
           language="html"
           code={`
 <input class="button ghost">Lorem ipsum</a>
-`}
-        />
-
-        <h3>Link als knop: disabled</h3>
-        <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/button-ghost-test" class="button ghost" disabled>Lorem ipsum</a>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input class="button ghost" disabled>Lorem ipsum</a>
 `}
         />
 
@@ -107,14 +95,15 @@
 
         <h3>Link als knop: met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/button-ghost-test" class="button ghost">Lorem ipsum <img src="$img/cat.svg" /></a
+        <a href="{base}/components/button-ghost-test" class="button ghost"
+          >Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></a
         >
 
         <h4>HTML-voorbeeld:</h4>
         <Code
           language="html"
           code={`
-<input class="button ghost">Lorem ipsum <img src="/img/cat.svg"></a>
+<input class="button ghost">Lorem ipsum <img src="/img/cat.svg" alt="Kat" /></a>
 `}
         />
 

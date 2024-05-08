@@ -107,7 +107,7 @@
                 <td><a href="{base}/variables#flex-direction">flex-direction</a></td>
                 <td>row</td>
                 <td>-</td>
-                <td rowspan="4" scope="rowgroup">button-container</td>
+                <th rowspan="4" scope="rowgroup">button-container</th>
               </tr><tr>
                 <td>--button-container-align-items</td>
                 <td><a href="{base}/variables#align-items">align-items</a></td>

@@ -56,13 +56,13 @@
 
         <h3><code>button</code> met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button class="cta">Lorem ipsum <img src="$img/cat.svg" /></button>
+        <button class="cta">Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></button>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
           language="html"
           code={`
-<button class="cta">Lorem ipsum <img src="/img/cat.svg"></button>
+<button class="cta">Lorem ipsum <img src="/img/cat.svg" alt="Kat" /></button>
 `}
         />
 
@@ -78,48 +78,44 @@
 `}
         />
 
-        <h3>Link als knop: disabled</h3>
-        <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/button-call-to-action-test" class="button cta" disabled>Lorem ipsum</a>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input class="button cta" disabled>Lorem ipsum</a>
-`}
-        />
-
         <h4>States</h4>
         <ul>
           <li>
-            <a href="{base}/components/button-call-to-action-test" class="button cta focus">Focus</a>
+            <a href="{base}/components/button-call-to-action-test" class="button cta focus">Focus</a
+            >
           </li>
           <li>
-            <a href="{base}/components/button-call-to-action-test" class="button cta active">Active</a>
+            <a href="{base}/components/button-call-to-action-test" class="button cta active"
+              >Active</a
+            >
           </li>
           <li>
-            <a href="{base}/components/button-call-to-action-test" class="button cta visited">Visited</a>
+            <a href="{base}/components/button-call-to-action-test" class="button cta visited"
+              >Visited</a
+            >
           </li>
           <li>
-            <a href="{base}/components/button-call-to-action-test" class="button cta hover">Hover</a>
+            <a href="{base}/components/button-call-to-action-test" class="button cta hover">Hover</a
+            >
           </li>
           <li>
-            <a href="{base}/components/button-call-to-action-test" class="button cta selected">Selected</a>
+            <a href="{base}/components/button-call-to-action-test" class="button cta selected"
+              >Selected</a
+            >
           </li>
         </ul>
 
         <h3>Link als knop: met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
         <a href="{base}/components/button-call-to-action-test" class="button cta"
-          >Lorem ipsum <img src="$img/cat.svg" /></a
+          >Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></a
         >
 
         <h4>HTML-voorbeeld:</h4>
         <Code
           language="html"
           code={`
-<input class="button cta">Lorem ipsum <img src="/img/cat.svg"></a>
+<input class="button cta">Lorem ipsum <img src="/img/cat.svg" alt="Kat" /></a>
 `}
         />
 

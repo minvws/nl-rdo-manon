@@ -293,7 +293,7 @@
                 <td><a href="{base}/variables#gap">gap</a></td>
                 <td>0.75rem</td>
                 <td>-</td>
-                <td rowspan="7" scope="rowgroup">checkbox</td>
+                <th rowspan="7" scope="rowgroup">checkbox</th>
               </tr>
 
               <tr>

@@ -123,8 +123,8 @@
                 <td>--card-gap</td>
                 <td><a href="{base}/variables#gap">gap</a></td>
                 <td>var(--application-base-gap-medium)</td>
-                <td rowspan="13" scope="rowgroup">-</td>
-                <td rowspan="25" scope="rowgroup">card</td>
+                <th rowspan="13" scope="rowgroup">-</th>
+                <th rowspan="25" scope="rowgroup">card</th>
               </tr>
 
               <tr>
@@ -203,7 +203,7 @@
                 <td>--card-breakpoint-1-gap</td>
                 <td><a href="{base}/variables#gap">gap</a></td>
                 <td>var(--card-gap)</td>
-                <td rowspan="6" scope="rowgroup">24rem</td>
+                <th rowspan="6" scope="rowgroup">24rem</th>
               </tr>
 
               <tr>
@@ -240,7 +240,7 @@
                 <td>--card-breakpoint-2-gap</td>
                 <td><a href="{base}/variables#gap">gap</a></td>
                 <td> var(--card-breakpoint-1-gap)</td>
-                <td rowspan="6" scope="rowgroup">42rem</td>
+                <th rowspan="6" scope="rowgroup">42rem</th>
               </tr>
 
               <tr>

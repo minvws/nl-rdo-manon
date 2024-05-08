@@ -122,10 +122,10 @@
         </nav>
 
         <h4>Navigatie-component met links</h4>
-        <nav>
-          <a href="#">Lorem ipsum</a>
-          <a href="#">Lorem ipsum</a>
-          <a href="#">Lorem ipsum</a>
+        <nav id="nav-a">
+          <a href="#nav-a">Lorem ipsum</a>
+          <a href="#nav-a">Lorem ipsum</a>
+          <a href="#nav-a">Lorem ipsum</a>
         </nav>
 
         <h4>HTML-voorbeeld:</h4>
@@ -141,11 +141,11 @@
         />
 
         <h4>Navigatie-component met een lijst met links</h4>
-        <nav>
+        <nav id="nav-ul">
           <ul>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#nav-ul">Lorem ipsum</a></li>
+            <li><a href="#nav-ul">Lorem ipsum</a></li>
+            <li><a href="#nav-ul">Lorem ipsum</a></li>
           </ul>
         </nav>
 
@@ -164,11 +164,11 @@
         />
 
         <h4>Navigatie-component met een horizontaal uitgelijnde lijst met links</h4>
-        <nav>
+        <nav id="nav-ul-horizontal">
           <ul class="horizontal-view">
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#nav-ul-horizontal">Lorem ipsum</a></li>
+            <li><a href="#nav-ul-horizontal">Lorem ipsum</a></li>
+            <li><a href="#nav-ul-horizontal">Lorem ipsum</a></li>
           </ul>
         </nav>
 
@@ -187,14 +187,14 @@
         />
 
         <h4>Link hover test</h4>
-        <nav>
+        <nav id="nav-a-hover">
           <ul>
-            <li><a href="#" class="hover">Lorem ipsum</a></li>
+            <li><a href="#nav-a-hover" class="hover">Lorem ipsum</a></li>
             <li>
-              <a href="#" class="hover icon icon-cat">Hover met <code>:before:hover</code></a>
+              <a href="#nav-a-hover" class="hover icon icon-cat">Hover met <code>:before:hover</code></a>
             </li>
             <li>
-              <a href="#" class="hover"
+              <a href="#nav-a-hover" class="hover"
                 >Hover met <code>:before:hover</code> <span class="icon icon-cat"></span></a
               >
             </li>
@@ -216,14 +216,14 @@
         />
 
         <h4>Link active test</h4>
-        <nav>
+        <nav id="nav-a-active">
           <ul>
-            <li><a href="#" class="active">Lorem ipsum</a></li>
+            <li><a href="#nav-a-active" class="active">Lorem ipsum</a></li>
             <li>
-              <a href="#" class="active icon icon-cat">active met <code>:before:active</code></a>
+              <a href="#nav-a-active" class="active icon icon-cat">active met <code>:before:active</code></a>
             </li>
             <li>
-              <a href="#" class="active"
+              <a href="#nav-a-active" class="active"
                 >active met <code>:before:active</code> <span class="icon icon-cat"></span></a
               >
             </li>
@@ -297,7 +297,7 @@
                 <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>var(--body-text-small-font-size)</td>
                 <td>-</td>
-                <td rowspan="4" scope="rowgroup">links</td>
+                <th rowspan="4" scope="rowgroup">links</th>
               </tr>
 
               <tr>

@@ -178,7 +178,7 @@
                 <th rowspan="8" scope="rowgroup">branding-color-1</th>
                 <td>--branding-color-1</td>
                 <td>CSS-variable</td>
-                <td rowspan="8" scope="rowgroup">branding-color-1</td>
+                <th rowspan="8" scope="rowgroup">branding-color-1</th>
               </tr>
 
               <tr>
@@ -220,7 +220,7 @@
                 <th rowspan="8" scope="rowgroup">branding-color-2</th>
                 <td>--branding-color-2</td>
                 <td>CSS-variable</td>
-                <td rowspan="8" scope="rowgroup">branding-color-2</td>
+                <th rowspan="8" scope="rowgroup">branding-color-2</th>
               </tr>
 
               <tr>
@@ -262,7 +262,7 @@
                 <th rowspan="8" scope="rowgroup">branding-color-3</th>
                 <td>--branding-color-3</td>
                 <td>CSS-variable</td>
-                <td rowspan="8" scope="rowgroup">branding-color-3</td>
+                <th rowspan="8" scope="rowgroup">branding-color-3</th>
               </tr>
 
               <tr>
@@ -304,7 +304,7 @@
                 <th rowspan="8" scope="rowgroup">branding-color-4</th>
                 <td>--branding-color-4</td>
                 <td>CSS-variable</td>
-                <td rowspan="8" scope="rowgroup">branding-color-4</td>
+                <th rowspan="8" scope="rowgroup">branding-color-4</th>
               </tr>
 
               <tr>
@@ -346,7 +346,7 @@
                 <th rowspan="8" scope="rowgroup">branding-color-5</th>
                 <td>--branding-color-5</td>
                 <td>CSS-variable</td>
-                <td rowspan="8" scope="rowgroup">branding-color-5</td>
+                <th rowspan="8" scope="rowgroup">branding-color-5</th>
               </tr>
 
               <tr>

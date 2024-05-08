@@ -156,8 +156,8 @@
                 <td>--layout-form-padding</td>
                 <td><a href="{base}/variables#padding">padding</a></td>
                 <td>var(--content-padding-top, 0)</td>
-                <td rowspan="5" scope="rowgroup">-</td>
-                <td rowspan="15" scope="rowgroup">layout-form</td>
+                <th rowspan="5" scope="rowgroup">-</th>
+                <th rowspan="15" scope="rowgroup">layout-form</th>
               </tr>
 
               <tr>
@@ -188,7 +188,7 @@
                 <td>--layout-form-breakpoint-1-padding</td>
                 <td><a href="{base}/variables#padding">padding</a></td>
                 <td>var(--layout-form-padding-top)</td>
-                <td rowspan="5" scope="rowgroup">24rem</td>
+                <th rowspan="5" scope="rowgroup">24rem</th>
               </tr>
 
               <tr>
@@ -219,7 +219,7 @@
                 <td>--layout-form-breakpoint-2-padding-top</td>
                 <td><a href="{base}/variables#padding-top">padding-top</a></td>
                 <td>var(--layout-form-breakpoint-1-padding-top)</td>
-                <td rowspan="5" scope="rowgroup">42rem</td>
+                <th rowspan="5" scope="rowgroup">42rem</th>
               </tr>
 
               <tr>

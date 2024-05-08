@@ -79,7 +79,7 @@
 
         <h3>Visueel voorbeeld:</h3>
         <p class="error" role="group" aria-label="foutmelding">
-          <span>Foutmelding:</span> Lorem <a href="">ipsum</a> dolor sit.
+          <span>Foutmelding:</span> Lorem <a href="notifications-paragraph">ipsum</a> dolor sit.
         </p>
 
         <h3>HTML-voorbeeld:</h3>

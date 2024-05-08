@@ -115,7 +115,7 @@
                 <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>var(--body-text-small-font-size)</td>
                 <td>-</td>
-                <td rowspan="4" scope="rowgroup">de-emphasized</td>
+                <th rowspan="4" scope="rowgroup">de-emphasized</th>
               </tr>
 
               <tr>

@@ -179,7 +179,7 @@
                 <td><a href="{base}/variables#gap">gap</a></td>
                 <td>0.75rem</td>
                 <td>-</td>
-                <td rowspan="7" scope="rowgroup">radio-button</td>
+                <th rowspan="7" scope="rowgroup">radio-button</th>
               </tr>
 
               <tr>

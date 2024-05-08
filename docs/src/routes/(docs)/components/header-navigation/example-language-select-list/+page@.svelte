@@ -47,25 +47,37 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
         aria-describedby="language-selector-description"
         aria-expanded="false"
       >
-        <button aria-haspopup="listbox" lang="pap-CW"> Papiamentu </button>
+        <button aria-haspopup="listbox" lang="pap-CW">Papiamentu</button>
         <ul role="listbox">
-          <li>
-            <a hreflang="nl" href="." role="option" data-value="Nederlands" lang="nl">Nederlands</a>
-          </li>
-          <li>
-            <a hreflang="en" href="." role="option" data-value="English" lang="en">English</a>
-          </li>
-          <li>
-            <a hreflang="fy" href="." role="option" data-value="Frysk" lang="fy">Frysk</a>
-          </li>
-          <li aria-current="true">
-            <a hreflang="pap-CW" href="." role="option" data-value="Papiamentu" lang="pap-CW"
-              >Papiamentu</a
+          <li role="option" aria-selected="false">
+            <a hreflang="nl" href="example-language-select-list" data-value="Nederlands" lang="nl"
+              >Nederlands</a
             >
           </li>
-          <li>
-            <a hreflang="pap-AW" href="." role="option" data-value="Papiamento" lang="pap-AW"
-              >Papiamento</a
+          <li role="option" aria-selected="false">
+            <a hreflang="en" href="example-language-select-list" data-value="English" lang="en"
+              >English</a
+            >
+          </li>
+          <li role="option" aria-selected="false">
+            <a hreflang="fy" href="example-language-select-list" data-value="Frysk" lang="fy"
+              >Frysk</a
+            >
+          </li>
+          <li role="option" aria-selected="true" aria-current="true">
+            <a
+              hreflang="pap-CW"
+              href="example-language-select-list"
+              data-value="Papiamentu"
+              lang="pap-CW">Papiamentu</a
+            >
+          </li>
+          <li role="option" aria-selected="false">
+            <a
+              hreflang="pap-AW"
+              href="example-language-select-list"
+              data-value="Papiamento"
+              lang="pap-AW">Papiamento</a
             >
           </li>
         </ul>
@@ -210,6 +222,8 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
   </article>
 </main>
 
+<DefaultFooter />
+
 <style>
   :root {
     /* Content wrapper */
@@ -222,5 +236,3 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
     --header-navigation-collapsible-menu-top: 4rem;
   }
 </style>
-
-<DefaultFooter />

@@ -82,7 +82,7 @@
                 <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>var(--error-background-color)</td>
                 <td>-</td>
-                <td rowspan="24" scope="rowgroup">error</td>
+                <th rowspan="24" scope="rowgroup">error</th>
               </tr>
 
               <tr>

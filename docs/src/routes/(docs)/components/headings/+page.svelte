@@ -188,8 +188,8 @@
           <h2>Aandachtspunten:</h2>
           <ul>
             <li>
-              De standaard ingestelde waarden binnen Manon maken gebruik van de <a href=""
-                >headings-base-set</a
+              De standaard ingestelde waarden binnen Manon maken gebruik van de <code
+                >headings-base-set</code
               >.
             </li>
             <li>

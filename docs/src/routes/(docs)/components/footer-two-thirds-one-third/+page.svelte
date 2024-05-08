@@ -44,7 +44,7 @@
         <h2>Voorbeelden:</h2>
 
         <h3>Visueel voorbeeld:</h3>
-        <p>Zie footer op deze pagina. <a href="#footer-two-thirds-one-third"></a></p>
+        <p>Zie <a href="#footer-heading">de footer op deze pagina</a>.</p>
 
         <h3>HTML-voorbeeld:</h3>
         <Code

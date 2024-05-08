@@ -222,7 +222,7 @@
             </thead>
             <tbody>
               <tr>
-                <td rowspan="10" scope="rowgroup">table</td>
+                <th rowspan="10" scope="rowgroup">table</th>
                 <td>--table-font-size</td>
                 <td><a href="{base}/variables#font-size">font-size</a></td>
                 <td>var(--application-font-size)</td>
@@ -293,7 +293,7 @@
               </tr>
 
               <tr>
-                <td rowspan="6" scope="rowgroup">thead</td>
+                <th rowspan="6" scope="rowgroup">thead</th>
                 <td>--table-backround-color</td>
                 <td><a href="{base}/variables#backround-color">backround-color</a></td>
                 <td>var(--application-accent-color)</td>
@@ -336,7 +336,7 @@
               </tr>
 
               <tr>
-                <td rowspan="6" scope="rowgroup">th</td>
+                <th rowspan="6" scope="rowgroup">th</th>
                 <td>--table-head-cell-cell-padding</td>
                 <td><a href="{base}/variables#cell-padding">cell-padding</a></td>
                 <td>var(--table-cells-padding)</td>
@@ -379,7 +379,7 @@
               </tr>
 
               <tr>
-                <td rowspan="8" scope="rowgroup">th within tbody</td>
+                <th rowspan="8" scope="rowgroup">th within tbody</th>
                 <td>--table-body-head-cell-padding</td>
                 <td><a href="{base}/variables#cell-padding">cell-padding</a></td>
                 <td>var(--table-cells-padding)</td>
@@ -436,7 +436,7 @@
               </tr>
 
               <tr>
-                <td rowspan="4" scope="rowgroup">Table row - Zebra striping</td>
+                <th rowspan="4" scope="rowgroup">Table row - Zebra striping</th>
                 <td>--table-row-background-color-striping</td>
                 <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>rgba(148, 148, 148, 0.1)</td>
@@ -465,7 +465,7 @@
               </tr>
 
               <tr>
-                <td rowspan="6" scope="rowgroup">Table cell (td)</td>
+                <th rowspan="6" scope="rowgroup">Table cell (td)</th>
                 <td>--table-cell-padding</td>
                 <td><a href="{base}/variables#padding">padding</a></td>
                 <td>var(--table-cells-padding)</td>
@@ -508,7 +508,7 @@
               </tr>
 
               <tr>
-                <td rowspan="3" scope="rowgroup">Table cells within the first row</td>
+                <th rowspan="3" scope="rowgroup">Table cells within the first row</th>
                 <td>--table-first-row-cell-border-width</td>
                 <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>var(--table-cell-border-width)</td>
@@ -530,7 +530,7 @@
               </tr>
 
               <tr>
-                <td rowspan="3" scope="rowgroup">Table cells within the last row</td>
+                <th rowspan="3" scope="rowgroup">Table cells within the last row</th>
                 <td>--table-last-row-cell-border-width</td>
                 <td><a href="{base}/variables#border-width">border-width</a></td>
                 <td>var(--table-cell-border-width)</td>
@@ -552,7 +552,7 @@
               </tr>
 
               <tr>
-                <td rowspan="8" scope="rowgroup">Table footer</td>
+                <th rowspan="8" scope="rowgroup">Table footer</th>
                 <td>--table-foot-background-color</td>
                 <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>#ddd</td>
@@ -609,7 +609,7 @@
               </tr>
 
               <tr>
-                <td rowspan="8" scope="rowgroup">Table footer head</td>
+                <th rowspan="8" scope="rowgroup">Table footer head</th>
                 <td>--table-foot-header-background-color</td>
                 <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>transparent</td>
@@ -666,7 +666,7 @@
               </tr>
 
               <tr>
-                <td rowspan="8" scope="rowgroup">Table footer cell styling</td>
+                <th rowspan="8" scope="rowgroup">Table footer cell styling</th>
                 <td>--table-foot-cell-background-color</td>
                 <td><a href="{base}/variables#background-color">background-color</a></td>
                 <td>#f0f0f0</td>

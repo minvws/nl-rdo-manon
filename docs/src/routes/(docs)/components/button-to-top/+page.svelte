@@ -114,7 +114,7 @@
                 <td><a href="{base}/variables#position">position</a></td>
                 <td>fixed</td>
                 <td>-</td>
-                <td rowspan="4" scope="rowgroup">to-top</td>
+                <th rowspan="4" scope="rowgroup">to-top</th>
               </tr>
 
               <tr>
