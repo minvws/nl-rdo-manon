@@ -11,7 +11,7 @@
   <title>Pagina-notificatie bevestiging voorbeeld</title>
 </svelte:head>
 
-<main>
+<main id="main-content">
   <section class="confirmation" role="group" aria-label="bevestiging">
     <div>
       <span>Bevestiging:</span>

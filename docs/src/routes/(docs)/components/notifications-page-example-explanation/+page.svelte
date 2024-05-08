@@ -11,7 +11,7 @@
   <title>Pagina-notificatie toelichting voorbeeld</title>
 </svelte:head>
 
-<main>
+<main id="main-content">
   <section class="explanation" role="group" aria-label="toelichting">
     <div>
       <span>Toelichting:</span>
@@ -268,21 +268,21 @@
     --notification-explanation-page-padding-bottom: ;
     --notification-explanation-page-padding-left: ;
     --notification-explanation-page-gap: ;
-  
+
     /* First span */
     --notification-explanation-page-span-font-weight: ;
-  
-  
+
+
     /* Content wrapper */
     --notification-explanation-page-content-wrapper-padding-top: ;
     --notification-explanation-page-content-wrapper-padding-right: ;
     --notification-explanation-page-content-wrapper-padding-bottom: ;
     --notification-explanation-page-content-wrapper-padding-left: ;
     --notification-explanation-page-content-wrapper-gap: ;
-  
+
     /* First span */
     --notification-explanation-page-content-wrapper-span-font-weight: ;
-  
+
     /* Icon */
     --notification-explanation-page-icon-font-family: ;
     --notification-explanation-page-icon-font-size: ;

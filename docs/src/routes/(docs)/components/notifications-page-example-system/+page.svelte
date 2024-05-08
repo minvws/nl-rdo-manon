@@ -11,7 +11,7 @@
   <title>Pagina-notificatie systeembericht voorbeeld</title>
 </svelte:head>
 
-<main>
+<main id="main-content">
   <section class="system" role="group" aria-label="systeembericht">
     <div>
       <span>Systeembericht:</span>
@@ -268,21 +268,21 @@
     --notification-system-page-padding-bottom: ;
     --notification-system-page-padding-left: ;
     --notification-system-page-gap: ;
-  
+
     /* First span */
     --notification-system-page-span-font-weight: ;
-  
-  
+
+
     /* Content wrapper */
     --notification-system-page-content-wrapper-padding-top: ;
     --notification-system-page-content-wrapper-padding-right: ;
     --notification-system-page-content-wrapper-padding-bottom: ;
     --notification-system-page-content-wrapper-padding-left: ;
     --notification-system-page-content-wrapper-gap: ;
-  
+
     /* First span */
     --notification-system-page-content-wrapper-span-font-weight: ;
-  
+
     /* Icon */
     --notification-system-page-icon-font-family: ;
     --notification-system-page-icon-font-size: ;

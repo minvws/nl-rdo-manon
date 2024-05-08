@@ -11,7 +11,7 @@
   <title>Pagina-notificatie foutmelding voorbeeld</title>
 </svelte:head>
 
-<main>
+<main id="main-content">
   <section class="error" role="group" aria-label="foutmelding">
     <div>
       <span>Foutmelding:</span>
@@ -268,21 +268,21 @@
     --notification-error-page-padding-bottom: ;
     --notification-error-page-padding-left: ;
     --notification-error-page-gap: ;
-  
+
     /* First span */
     --notification-error-page-span-font-weight: ;
-  
-  
+
+
     /* Content wrapper */
     --notification-error-page-content-wrapper-padding-top: ;
     --notification-error-page-content-wrapper-padding-right: ;
     --notification-error-page-content-wrapper-padding-bottom: ;
     --notification-error-page-content-wrapper-padding-left: ;
     --notification-error-page-content-wrapper-gap: ;
-  
+
     /* First span */
     --notification-error-page-content-wrapper-span-font-weight: ;
-  
+
     /* Icon */
     --notification-error-page-icon-font-family: ;
     --notification-error-page-icon-font-size: ;

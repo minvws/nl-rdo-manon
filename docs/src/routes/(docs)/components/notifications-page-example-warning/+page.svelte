@@ -11,7 +11,7 @@
   <title>Pagina-notificatie waarschuwing voorbeeld</title>
 </svelte:head>
 
-<main>
+<main id="main-content">
   <section class="warning" role="group" aria-label="waarschuwing">
     <div>
       <span>Waarschuwing:</span>
