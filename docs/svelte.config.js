@@ -23,13 +23,6 @@ const config = {
     },
   },
   preprocess: [vitePreprocess(), importAssets()],
-  onwarn: (warning, handler) => {
-    // @TODO
-    if (warning.code.startsWith("a11y-")) {
-      return;
-    }
-    handler(warning);
-  },
 };
 
 export default config;
