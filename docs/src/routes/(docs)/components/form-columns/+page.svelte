@@ -112,7 +112,7 @@
               <li><a href="{base}/components/layout-column-4">layout-column-4</a></li>
             </ul>
             Voor alle beschikbare opties zie
-            <a href="layouts#layout-types">layout weergave opties</a>.
+            <a href="{base}/components#layout">Layout</a>.
           </li>
         </ul>
       </section>
