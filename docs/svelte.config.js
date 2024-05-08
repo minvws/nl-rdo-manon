@@ -8,8 +8,6 @@ const config = {
   kit: {
     adapter: adapter(),
     prerender: {
-      handleHttpError: "warn",
-      handleMissingId: "warn",
       // see also: src/routes/+layout.js
       entries: ["*", ...Object.keys(redirects)],
     },
