@@ -46,7 +46,7 @@
                 classes binnen de HTML. Maak gebruik van de CSS-variabelen waar mogelijk en voeg
                 alleen de classes toe in de HTML voor uitzonderingen om de code aanpasbaar en
                 overzichtelijk te houden. Voor meer informatie hierover zie <a
-                  href="{base}/use-css-variable">CSS-variabelen gebruiken</a
+                  href="{base}/documentation/use-css-variable">CSS-variabelen gebruiken</a
                 >.
               </li>
             </ul>
@@ -107,7 +107,7 @@
 `}
         />
         <p>
-          Voor meer informatie hierover zie <a href="{base}/use-css-variable"
+          Voor meer informatie hierover zie <a href="{base}/documentation/use-css-variable"
             >CSS-variabelen gebruiken</a
           >.
         </p>

@@ -43,7 +43,7 @@
               <li>
                 Pas de stijlkeuzes toe waar nodig. De stijlkeuzes kunnen door middel van variabelen
                 binnen de CSS toegepast worden. Voor meer informatie hierover zie <a
-                  href="{base}/use-css-variable">CSS-variabelen gebruiken</a
+                  href="{base}/documentation/use-css-variable">CSS-variabelen gebruiken</a
                 >.
               </li>
             </ul>

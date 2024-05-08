@@ -67,7 +67,7 @@
         <p>
           De knoppen binnen het "button-base"-bestand maken gebruik van de accentkleur als deze
           binnen het "application-base"-bestand gedefinieerd staat. Voor meer informatie zie <a
-            href="{base}/use-css-variable">CSS-variabelen gebruiken</a
+            href="{base}/documentation/use-css-variable">CSS-variabelen gebruiken</a
           >
         </p>
         <h4>CSS-voorbeeld:</h4>

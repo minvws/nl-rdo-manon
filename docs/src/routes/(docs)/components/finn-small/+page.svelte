@@ -45,7 +45,7 @@
                 Door middel van variabelen binnen de CSS of door middel van classes binnen de HTML.
                 Maak gebruik van de CSS-variabelen waar mogelijk en voeg alleen de classes toe in de
                 HTML voor uitzonderingen om de code aanpasbaar en overzichtelijk te houden. Voor
-                meer informatie hierover zie <a href="{base}/use-css-variable"
+                meer informatie hierover zie <a href="{base}/documentation/use-css-variable"
                   >CSS-variabelen gebruiken</a
                 >.
               </li>
@@ -91,7 +91,7 @@
 `}
         />
         <p>
-          Voor meer informatie hierover zie <a href="{base}/use-css-variable"
+          Voor meer informatie hierover zie <a href="{base}/documentation/use-css-variable"
             >CSS-variabelen gebruiken</a
           >.
         </p>
@@ -106,7 +106,7 @@
         <p>
           De knoppen binnen het "button-base"-bestand maken gebruik van de accentkleur als deze
           binnen het "application-base"-bestand gedefinieerd staat. Voor meer informatie zie <a
-            href="{base}/use-css-variable">CSS-variabelen gebruiken</a
+            href="{base}/documentation/use-css-variable">CSS-variabelen gebruiken</a
           >.
         </p>
 

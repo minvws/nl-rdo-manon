@@ -43,7 +43,7 @@
               <li>
                 Pas de layoutkeuzes toe waar nodig. De layoutkeuzes kunnen door middel van
                 variabelen binnen de CSS worden toegevoegd. Voor meer informatie hierover zie <a
-                  href="{base}/use-css-variable">CSS-variabelen gebruiken</a
+                  href="{base}/documentation/use-css-variable">CSS-variabelen gebruiken</a
                 >.
               </li>
             </ul>
@@ -70,7 +70,7 @@
 `}
         />
         <p>
-          Voor meer informatie hierover zie <a href="{base}/use-css-variable"
+          Voor meer informatie hierover zie <a href="{base}/documentation/use-css-variable"
             >CSS-variabelen gebruiken</a
           >.
         </p>
