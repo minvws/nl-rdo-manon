@@ -8,7 +8,6 @@ const config = {
   kit: {
     adapter: adapter(),
     prerender: {
-      // see also: src/routes/+layout.js
       entries: ["*", ...Object.keys(redirects)],
     },
     alias: {

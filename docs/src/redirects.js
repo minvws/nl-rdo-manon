@@ -1,4 +1,11 @@
-/** @type {Record<string, string>} */
+/**
+ * Record mapping old URLs to new URLs. The root +layout.js uses this to
+ * generate redirect pages for the old URLs during a build. The keys (old URLs)
+ * are added to the kit.prerender.entries array in svelte.config.js to ensure
+ * they are included in the build.
+ *
+ * @type {Record<string, string>}
+ */
 export const redirects = {
   "/documentation/components.html": "/components",
   "/documentation/components/body-text-set.html": "/components/body-text-set",
