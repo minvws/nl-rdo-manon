@@ -7,6 +7,7 @@
   hljs.registerLanguage("html", xml);
   hljs.registerLanguage("css", css);
   hljs.registerLanguage("scss", scss);
+  // @ts-ignore: the "plaintext" language is has no `contains`, presumably intentionally
   hljs.registerLanguage("plaintext", plaintext);
 </script>
 

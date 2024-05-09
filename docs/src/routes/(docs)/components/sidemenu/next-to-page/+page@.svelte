@@ -15,7 +15,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
   import DefaultHeader from "$lib/DefaultHeader.svelte";
   import DefaultFooter from "$lib/DefaultFooter.svelte";
 
-  /** @type {import('svelte/action')}  */
+  /** @type {import('svelte/action').Action}  */
   function sidemenuClass(node) {
     // Add the "sidemenu" class while this page is mounted.
     node.classList.add("sidemenu");
