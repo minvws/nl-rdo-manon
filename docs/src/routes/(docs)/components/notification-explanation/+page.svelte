@@ -205,78 +205,7 @@
 
         <h4 id="explanation-th">Toelichting op tabeltitel</h4>
 
-        <h5>Visueel voorbeeld:</h5>
-        <table>
-          <thead>
-            <tr>
-              <th class="explanation" aria-label="Toelichting">
-                <span>Toelichting:</span> Lorem
-              </th>
-              <th class="explanation" aria-label="Toelichting">
-                <span>Toelichting:</span> Ipsum
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>12</td>
-              <td>42</td>
-            </tr>
-
-            <tr>
-              <td>15</td>
-              <td>168</td>
-            </tr>
-
-            <tr>
-              <td>123</td>
-              <td>2</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Lorem ipsum</td>
-              <td>Dolor sit amet</td>
-            </tr>
-          </tfoot>
-        </table>
-
-        <h5>HTML-voorbeeld:</h5>
-        <Code
-          language="html"
-          code={`
-<table>
-  <thead>
-    <tr>
-      <th class="explanation" aria-label="Toelichting"><span>Toelichting:</span> Lorem</th>
-      <th class="explanation" aria-label="Toelichting"><span>Toelichting:</span> Ipsum</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>12</td>
-      <td>42</td>
-    </tr>
-
-    <tr>
-      <td>15</td>
-      <td>168</td>
-    </tr>
-
-    <tr>
-      <td>123</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>Lorem ipsum</td>
-      <td>Dolor sit amet</td>
-    </tr>
-  </tfoot>
-</table>
-`}
-        />
+        <p class="warning"><span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven hoe een tabeltitel als toelichting opgemaakt kan worden. Deze instructies zijn weggehaald, omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.</p>
 
         <h4 id="explanation-td">Toelichting op Tabelcel</h4>
 
@@ -365,9 +294,9 @@
         <h5>Visueel voorbeeld:</h5>
         <table>
           <thead>
-            <tr class="explanation">
-              <th aria-label="Toelichting"><span>Toelichting:</span> Lorem</th>
-              <th aria-label="Toelichting"><span>Toelichting:</span> Ipsum</th>
+            <tr>
+              <th>Lorem</th>
+              <th>Ipsum</th>
             </tr>
           </thead>
           <tbody>
@@ -405,9 +334,9 @@
           code={`
 <table>
   <thead>
-    <tr class="explanation">
-      <th aria-label="Toelichting"><span>Toelichting:</span> Lorem</th>
-      <th aria-label="Toelichting"><span>Toelichting:</span> Ipsum</th>
+    <tr>
+      <th>Lorem</th>
+      <th>Ipsum</th>
     </tr>
   </thead>
   <tbody>
