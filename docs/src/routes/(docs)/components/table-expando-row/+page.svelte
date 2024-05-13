@@ -96,7 +96,7 @@
           </li>
           <li>
             Plaats
-            <code>{`<script defer src="pad/naar/expando-rows.min.js"></script>`}</code>
+            <code>&lt;script defer src="pad/naar/expando-rows.min.js"&gt;&lt;/script&gt;</code>
             in de <code>{`<head>`}</code> van het document. Voor meer informatie zie:
             <a href="{base}/documentation/add-js">JavaScript toevoegen</a>
           </li>
