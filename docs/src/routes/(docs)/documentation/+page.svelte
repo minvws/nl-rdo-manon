@@ -125,7 +125,7 @@
         <li>
           Download Manon:
           <Code
-            lanuage="plaintext"
+            language="plaintext"
             code={`
 git clone https://github.com/minvws/nl-rdo-manon.git
 cd nl-rdo-manon
@@ -134,7 +134,7 @@ cd nl-rdo-manon
         </li>
         <li>
           Installeer de dependencies:
-          <Code lanuage="plaintext" code="pnpm install" />
+          <Code language="plaintext" code="pnpm install" />
         </li>
         <li>
           Bouw en open de documentatie:
@@ -144,7 +144,7 @@ cd nl-rdo-manon
               <ul>
                 <li>
                   Start een development-server:
-                  <Code lanuage="plaintext" code="pnpm run dev" />
+                  <Code language="plaintext" code="pnpm run dev" />
                 </li>
                 <li>
                   Open de genoemde URL, meestal is dat <a
@@ -160,7 +160,7 @@ cd nl-rdo-manon
                 <li>
                   Draai een build:
                   <Code
-                    lanuage="plaintext"
+                    language="plaintext"
                     code={`
 cd docs
 pnpm run build

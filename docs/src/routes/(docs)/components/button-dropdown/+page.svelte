@@ -41,9 +41,9 @@
         >
           <div class="collapsing-element">
             <ul>
-              <li><a href="#">Item 1</a></li>
-              <li><a href="#" aria-selected="true">Huidige selectie</a></li>
-              <li><a href="#">a</a></li>
+              <li><a href="collapsible">Item 1</a></li>
+              <li><a href="collapsible">Huidige selectie</a></li>
+              <li><a href="collapsible">a</a></li>
             </ul>
           </div>
         </div>
@@ -62,7 +62,7 @@ class="collapsible">
 <div class="collapsing-element">
     <ul>
         <li><a href="#">Item 1</a></li>
-        <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+        <li><a href="#">Huidige selectie</a></li>
         <li><a href="#">Item 3</a></li>
     </ul>
 </div>
@@ -83,9 +83,9 @@ class="collapsible">
           >
             <div class="collapsing-element">
               <ul>
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#" aria-selected="true">Huidige selectie</a></li>
-                <li><a href="#">Item 3 long name test lorem ipsum dolor sit amet</a></li>
+                <li><a href="collapsible">Item 1</a></li>
+                <li><a href="collapsible">Huidige selectie</a></li>
+                <li><a href="collapsible">Item 3 long name test lorem ipsum dolor sit amet</a></li>
               </ul>
             </div>
           </div>
@@ -99,9 +99,9 @@ class="collapsible">
           >
             <div class="collapsing-element">
               <ul>
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#" aria-selected="true">Huidige selectie</a></li>
-                <li><a href="#">Item 3 long name test lorem ipsum dolor sit amet</a></li>
+                <li><a href="collapsible">Item 1</a></li>
+                <li><a href="collapsible">Huidige selectie</a></li>
+                <li><a href="collapsible">Item 3 long name test lorem ipsum dolor sit amet</a></li>
               </ul>
             </div>
           </div>
@@ -121,7 +121,7 @@ class="collapsible">
 <div class="collapsing-element">
     <ul>
         <li><a href="#">Item 1</a></li>
-        <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+        <li><a href="#">Huidige selectie</a></li>
         <li><a href="#">Item 3</a></li>
     </ul>
 </div>

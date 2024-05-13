@@ -80,20 +80,20 @@
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="{base}/variables#padding">padding</a></li>
+          <li><a href="{base}/documentation/variables#padding">padding</a></li>
           <li>
-            <a href="{base}/variables#border-radius">border-radius</a>
+            <a href="{base}/documentation/variables#border-radius">border-radius</a>
           </li>
-          <li><a href="{base}/variables#font-size">font-size</a></li>
+          <li><a href="{base}/documentation/variables#font-size">font-size</a></li>
           <li>
-            <a href="{base}/variables#background-color">background-color</a>
+            <a href="{base}/documentation/variables#background-color">background-color</a>
           </li>
-          <li><a href="{base}/variables#text-color">text-color</a></li>
-          <li><a href="{base}/variables#height">height</a></li>
-          <li><a href="{base}/variables#min-width">min-width</a></li>
-          <li><a href="{base}/variables#border-width">border-width</a></li>
-          <li><a href="{base}/variables#border-style">border-style</a></li>
-          <li><a href="{base}/variables#border-color">border-color</a></li>
+          <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
+          <li><a href="{base}/documentation/variables#height">height</a></li>
+          <li><a href="{base}/documentation/variables#min-width">min-width</a></li>
+          <li><a href="{base}/documentation/variables#border-width">border-width</a></li>
+          <li><a href="{base}/documentation/variables#border-style">border-style</a></li>
+          <li><a href="{base}/documentation/variables#border-color">border-color</a></li>
         </ul>
       </section>
 

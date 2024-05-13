@@ -187,7 +187,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>
@@ -204,9 +204,9 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="{base}/variables#object-position">object-position</a>
+            <a href="{base}/documentation/variables#object-position">object-position</a>
           </li>
-          <li><a href="{base}/variables#max-width">max-width</a></li>
+          <li><a href="{base}/documentation/variables#max-width">max-width</a></li>
         </ul>
       </section>
 

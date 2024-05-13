@@ -222,12 +222,12 @@
             Actieknop icoon
             <ul>
               <li>
-                <a href="{base}/variables#background-color">background-color</a>
+                <a href="{base}/documentation/variables#background-color">background-color</a>
               </li>
-              <li><a href="{base}/variables#text-color">text-color</a></li>
-              <li><a href="{base}/variables#font-size">font-size</a></li>
+              <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
+              <li><a href="{base}/documentation/variables#font-size">font-size</a></li>
               <li>
-                <a href="{base}/variables#justify-content">justify-content</a>
+                <a href="{base}/documentation/variables#justify-content">justify-content</a>
               </li>
             </ul>
           </li>
@@ -235,9 +235,9 @@
             Actieknop icoon hover
             <ul>
               <li>
-                <a href="{base}/variables#background-color">background-color</a>
+                <a href="{base}/documentation/variables#background-color">background-color</a>
               </li>
-              <li><a href="{base}/variables#text-color">text-color</a></li>
+              <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
             </ul>
           </li>
         </ul>

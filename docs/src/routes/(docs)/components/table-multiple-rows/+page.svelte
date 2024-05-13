@@ -34,7 +34,7 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
           </li>
           <li>
             Om een datacel over meerdere rijen te plaatsen gebruik een

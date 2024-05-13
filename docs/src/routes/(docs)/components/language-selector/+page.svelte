@@ -54,24 +54,24 @@
           >
             <button aria-haspopup="listbox" aria-current="true"> Papiamentu </button>
             <ul role="listbox">
-              <li>
-                <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl"
+              <li role="option" aria-selected="false">
+                <a hreflang="nl" href="language-selector" data-value="Nederlands" lang="nl"
                   >Nederlands</a
                 >
               </li>
-              <li>
-                <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
+              <li role="option" aria-selected="false">
+                <a hreflang="en" href="language-selector" data-value="English" lang="en">English</a>
               </li>
-              <li>
-                <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
+              <li role="option" aria-selected="false">
+                <a hreflang="fy" href="language-selector" data-value="Frysk" lang="fy">Frysk</a>
               </li>
-              <li aria-current="true">
-                <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW"
+              <li role="option" aria-selected="true" aria-current="true">
+                <a hreflang="pap-CW" href="language-selector" data-value="Papiamentu" lang="pap-CW"
                   >Papiamentu</a
                 >
               </li>
-              <li>
-                <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW"
+              <li role="option" aria-selected="false">
+                <a hreflang="pap-AW" href="language-selector" data-value="Papiamento" lang="pap-AW"
                   >Papiamento</a
                 >
               </li>
@@ -90,20 +90,20 @@
       Papiamentu
     </button>
     <ul role="listbox">
-        <li>
-          <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="nl" href="#" data-value="Nederlands" lang="nl">Nederlands</a>
         </li>
-        <li>
-          <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="en" href="#" data-value="English" lang="en">English</a>
         </li>
-        <li>
-          <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="fy" href="#" data-value="Frysk" lang="fy">Frysk</a>
         </li>
-        <li aria-current="true">
-          <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
+        <li role="option" aria-selected="true" aria-current="true">
+          <a hreflang="pap-CW" href="#" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
         </li>
-        <li>
-          <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="pap-AW" href="#" data-value="Papiamento" lang="pap-AW">Papiamento</a>
         </li>
     </ul>
   </div>
@@ -131,7 +131,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -162,239 +162,239 @@
             <tbody>
               <tr>
                 <td>--language-selector-list-label-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>var(--de-emphasized-font-size)</td>
                 <td>-</td>
-                <td rowspan="34" scope="rowgroup">language</td>
+                <th rowspan="34" scope="rowgroup">language</th>
               </tr>
 
               <tr>
                 <td>--language-selector-list-label-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--de-emphasized-text-color, inherit)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>var(--de-emphasized-font-size)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>var(--application-base-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-width</td>
-                <td><a href="{base}/variables#width">width</a></td>
+                <td><a href="{base}/documentation/variables#width">width</a></td>
                 <td>100%</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-max-width</td>
-                <td><a href="{base}/variables#max-width">max-width</a></td>
+                <td><a href="{base}/documentation/variables#max-width">max-width</a></td>
                 <td>100%</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-border-width</td>
-                <td><a href="{base}/variables#border-width">border-width</a></td>
+                <td><a href="{base}/documentation/variables#border-width">border-width</a></td>
                 <td>1px</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-border-style</td>
-                <td><a href="{base}/variables#border-style">border-style</a></td>
+                <td><a href="{base}/documentation/variables#border-style">border-style</a></td>
                 <td>solid</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--grey-2)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-border-radius</td>
-                <td><a href="{base}/variables#border-radius">border-radius</a></td>
+                <td><a href="{base}/documentation/variables#border-radius">border-radius</a></td>
                 <td>0px</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-item-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--application-base-background-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-item-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--application-base-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-item-link-border-width</td>
-                <td><a href="{base}/variables#border-width">border-width</a></td>
+                <td><a href="{base}/documentation/variables#border-width">border-width</a></td>
                 <td>1px</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-item-link-border-style</td>
-                <td><a href="{base}/variables#border-style">border-style</a></td>
+                <td><a href="{base}/documentation/variables#border-style">border-style</a></td>
                 <td>solid</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-item-link-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--grey-2)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-item-hover-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--branding-color-1-background-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-item-hover-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--branding-color-1-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-item-hover-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>var(--language-selector-list-font-size)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-item-hover-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>var(--language-selector-list-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-item-active-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>var(--branding-color-2-background-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-item-active-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--branding-color-2-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-item-active-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>var(--language-selector-list-font-size)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-item-active-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>var(--language-selector-list-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-button-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>transparent</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-button-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--de-emphasized-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-button-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>var(--de-emphasized-font-size)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-button-border-width</td>
-                <td><a href="{base}/variables#border-width">border-width</a></td>
+                <td><a href="{base}/documentation/variables#border-width">border-width</a></td>
                 <td>1px</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-button-border-style</td>
-                <td><a href="{base}/variables#border-style">border-style</a></td>
+                <td><a href="{base}/documentation/variables#border-style">border-style</a></td>
                 <td>solid</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-button-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--grey-2)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-button-padding-top</td>
-                <td><a href="{base}/variables#padding-top">padding-top</a></td>
+                <td><a href="{base}/documentation/variables#padding-top">padding-top</a></td>
                 <td>0.125rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-button-padding-right</td>
-                <td><a href="{base}/variables#padding">padding</a></td>
+                <td><a href="{base}/documentation/variables#padding">padding</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-button-padding-bottom</td>
-                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/documentation/variables#padding-bottom">padding-bottom</a></td>
                 <td>0.125rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-button-padding-left</td>
-                <td><a href="{base}/variables#padding">padding</a></td>
+                <td><a href="{base}/documentation/variables#padding">padding</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-button-line-height</td>
-                <td><a href="{base}/variables#line-height">line-height</a></td>
+                <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>1.5rem</td>
                 <td>-</td>
               </tr>

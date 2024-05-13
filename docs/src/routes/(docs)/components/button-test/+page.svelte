@@ -56,13 +56,13 @@
 
         <h3><code>button</code> met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button>Lorem ipsum <img src="$img/cat.svg" /></button>
+        <button>Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></button>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
           language="html"
           code={`
-<button>Lorem ipsum <img src="/img/cat.svg"></button>
+<button>Lorem ipsum <img src="/img/cat.svg" alt="Kat" /></button>
 `}
         />
 
@@ -75,18 +75,6 @@
           language="html"
           code={`
 <input class="button ">Lorem ipsum</a>
-`}
-        />
-
-        <h3>Link als knop: disabled</h3>
-        <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/button-test" class="button" disabled>Lorem ipsum</a>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input class="button " disabled>Lorem ipsum</a>
 `}
         />
 
@@ -111,13 +99,15 @@
 
         <h3>Link als knop: met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/button-test" class="button">Lorem ipsum <img src="$img/cat.svg" /></a>
+        <a href="{base}/components/button-test" class="button"
+          >Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></a
+        >
 
         <h4>HTML-voorbeeld:</h4>
         <Code
           language="html"
           code={`
-<input class="button ">Lorem ipsum <img src="/img/cat.svg"></a>
+<input class="button ">Lorem ipsum <img src="/img/cat.svg" alt="Kat" /></a>
 `}
         />
 

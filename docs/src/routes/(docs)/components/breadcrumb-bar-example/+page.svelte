@@ -17,8 +17,6 @@
     <ul>
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
-      <li><a href="#requirements">Bijbehorende bestanden</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
   <article>
@@ -28,11 +26,6 @@
 
         <h2>Benodigde stappen:</h2>
         <ol>
-          <li>
-            Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
-            optionele bestanden zie:
-            <a href="#requirements">Bijbehorende bestanden</a>.
-          </li>
           <li>
             Voeg de benodigde HTML toe. Voor meer informatie zie: <a href="#examples">voorbeelden</a
             >.
@@ -113,18 +106,18 @@
     --breadcrumb-bar-border-color: transparent;
     --breadcrumb-bar-border-radius: 0;
     --breadcrumb-bar-min-height: 0;
-  
+
     /* Hover */
     --breadcrumb-bar-hover-text-color: var(--application-base-text-color);
-  
+
     /* List */
     --breadcrumb-bar-list-padding: 0;
     --breadcrumb-bar-list-gap: 1rem;
     --breadcrumb-bar-list-vertical-align: center;
-  
+
     /* List item */
     --breadcrumb-bar-list-item-gap: 1rem;
-  
+
     /* Icon */
     --breadcrumb-bar-icon: ">";
     --breadcrumb-bar-icon-font-family: var(--icon-font-family);
@@ -133,14 +126,14 @@
     --breadcrumb-bar-icon-padding-left: 0;
     --breadcrumb-bar-icon-margin-left: 0;
     --breadcrumb-bar-icon-margin-right: 0;
-  
+
     /* Last item / current page */
     --breadcrumb-bar-list-item-last-child-font-weight: bold;
-  
+
     /* Link */
     --breadcrumb-bar-link-text-decoration: none;
     --breadcrumb-bar-link-white-space: nowrap;
-  
+
     /* Link hover */
     --breadcrumb-bar-link-hover-text-decoration: none;
 }

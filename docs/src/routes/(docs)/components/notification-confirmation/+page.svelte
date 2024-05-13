@@ -79,7 +79,7 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
           </li>
           <li>
             Voeg de benodigde HTML toe. Zie het voorbeeld per element voor de implementatiedetails.
@@ -133,7 +133,7 @@
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
               consequat facilisis ac eu velit.
-              <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+              <a href="notification-confirmation">Lorem ipsum</a> consectetur adipiscing elit.
             </li>
           </ul>
           <button type="button">Lorem</button>
@@ -354,7 +354,7 @@
 `}
         />
 
-        <h4 id="confirmation-th">Bevestiging op tabelrij</h4>
+        <h4 id="confirmation-tr">Bevestiging op tabelrij</h4>
 
         <p>Aandachtspunten:</p>
         <ul>
@@ -473,7 +473,6 @@
               class="confirmation"
               value="Lorem ipsum"
               aria-describedby="input-confirmation-message"
-              aria-invalid="true"
             />
             <p class="confirmation" id="input-confirmation-message">
               <span>bevestiging:</span> Lorem ipsum dolor sit amet
@@ -488,7 +487,7 @@
 <form action="" method="post">
     <label for="input-confirmation">Input</label>
     <div>
-        <input id="input-confirmation" class="confirmation" value="Lorem ipsum" aria-describedby="input-confirmation-message" aria-invalid="true">
+        <input id="input-confirmation" class="confirmation" value="Lorem ipsum" aria-describedby="input-confirmation-message">
         <p class="confirmation" id="input-confirmation-message">
             <span>waarschuwing:</span> Lorem ipsum dolor sit amet
         </p>
@@ -509,7 +508,6 @@
               placeholder="Jouw vraag of opmerking"
               class="confirmation"
               aria-describedby="voorbeeld-tekstveld-confirmation-message"
-              aria-invalid="true"
             ></textarea>
             <p class="confirmation" id="voorbeeld-tekstveld-confirmation-message">
               <span>bevestiging:</span> Lorem ipsum dolor sit amet
@@ -526,7 +524,7 @@
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-confirmation">Voorbeeld tekstveld</label>
   <div>
-    <textarea id="voorbeeld-tekstveld-confirmation" name="voorbeeld-tekstveld-confirmation" placeholder="Jouw vraag of opmerking" class="confirmation" aria-describedby="voorbeeld-tekstveld-confirmation-message" aria-invalid="true"></textarea>
+    <textarea id="voorbeeld-tekstveld-confirmation" name="voorbeeld-tekstveld-confirmation" placeholder="Jouw vraag of opmerking" class="confirmation" aria-describedby="voorbeeld-tekstveld-confirmation-message"></textarea>
     <p class="confirmation" id="voorbeeld-tekstveld-confirmation-message">
       <span>waarschuwing:</span> Lorem ipsum dolor sit amet
     </p>
@@ -547,7 +545,6 @@
               name="select"
               class="confirmation"
               aria-describedby="select-confirmation-message"
-              aria-invalid="true"
             >
               <option value="1">Optie 1</option>
               <option value="2">Optie 2</option>
@@ -566,7 +563,7 @@
 <form action="" method="post">
   <label for="select-confirmation">Selectielijst</label>
   <div>
-    <select id="select-confirmation" name="select" class="confirmation" aria-describedby="select-confirmation-message" aria-invalid="true">
+    <select id="select-confirmation" name="select" class="confirmation" aria-describedby="select-confirmation-message">
       <option value="1">Optie 1</option>
       <option value="2">Optie 2</option>
       <option value="3">Optie 3</option>
@@ -591,7 +588,6 @@
               placeholder="Begin met typen of klik om een optie uit te kiezen"
               list="example-list-confirmation"
               aria-describedby="datalist-confirmation-message"
-              aria-invalid="true"
             />
             <p class="confirmation" id="datalist-confirmation-message">
               <span>bevestiging:</span> Lorem ipsum dolor sit amet
@@ -612,7 +608,7 @@
 <form action="" method="post">
   <label for="datalist-confirmation">Input</label>
   <div>
-    <input id="datalist-confirmation" class="confirmation" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-confirmation" aria-describedby="datalist-confirmation-message" aria-invalid="true">
+    <input id="datalist-confirmation" class="confirmation" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-confirmation" aria-describedby="datalist-confirmation-message">
     <p class="confirmation" id="datalist-confirmation-message">
       <span>waarschuwing:</span> Lorem ipsum dolor sit amet
     </p>
@@ -637,7 +633,6 @@
               id="checkbox-confirmation"
               name="standaard-checkbox"
               class="confirmation"
-              aria-invalid="true"
             />
             <label for="checkbox-confirmation">Lorem ipsum dolor sit amet</label>
             <p class="confirmation" id="checkbox-confirmation-message">
@@ -652,7 +647,7 @@
           code={`
 <form action="" method="post">
   <div aria-describedby="checkbox-confirmation-message">
-    <input type="checkbox" id="checkbox-confirmation" name="standaard-checkbox" class="confirmation" aria-invalid="true">
+    <input type="checkbox" id="checkbox-confirmation" name="standaard-checkbox" class="confirmation">
     <label for="checkbox-confirmation">Lorem ipsum dolor sit amet</label>
     <p class="confirmation" id="checkbox-confirmation-message">
       <span>waarschuwing:</span> Lorem ipsum dolor sit amet
@@ -673,7 +668,6 @@
               name="standaard-radiobutton"
               value="value"
               class="confirmation"
-              aria-invalid="true"
             />
             <label for="radio-example-confirmation">Lorem ipsum dolor sit amet</label>
             <p class="confirmation" id="radio-example-confirmation-message">
@@ -688,7 +682,7 @@
           code={`
 <form action="" method="post">
   <div>
-    <input type="radio" id="radio-example-confirmation" name="standaard-radiobutton" value="value" class="confirmation" aria-invalid="true">
+    <input type="radio" id="radio-example-confirmation" name="standaard-radiobutton" value="value" class="confirmation">
     <label for="radio-example-confirmation">Lorem ipsum dolor sit amet</label>
     <p class="confirmation" id="radio-example-confirmation-message">
       <span>waarschuwing:</span> Lorem ipsum dolor sit amet
@@ -703,7 +697,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>

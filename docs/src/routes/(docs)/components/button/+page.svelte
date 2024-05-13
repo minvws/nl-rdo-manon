@@ -19,8 +19,8 @@
         <h2>Snelstart</h2>
         <ol>
           <li>
-            Bepaal welk html-element geschikt is. Zie
-            <a href="#button">Beschikbare types</a> voor meer informatie.
+            Bepaal welk HTML-element geschikt is. Zie
+            <a href="#button-html">HTML-element kiezen</a> voor meer informatie.
           </li>
           <li>
             Bepaal welke stijl geschikt is voor de knop.

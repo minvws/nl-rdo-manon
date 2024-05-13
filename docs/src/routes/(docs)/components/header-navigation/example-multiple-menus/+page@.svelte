@@ -39,7 +39,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
       <div class="collapsing-element">
         <SiteNavLinks />
         <ul>
-          <li><a href="#">Logout</a></li>
+          <li><a href="example-multiple-menus">Logout</a></li>
         </ul>
       </div>
     </nav>
@@ -51,8 +51,6 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
     <ul>
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
-      <li><a href="#requirements">Bijbehorende bestanden</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
   <article>
@@ -62,11 +60,6 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 
         <h2>Benodigde stappen:</h2>
         <ol>
-          <li>
-            Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
-            optionele bestanden zie:
-            <a href="#requirements">Bijbehorende bestanden</a>.
-          </li>
           <li>
             Voeg de benodigde HTML toe. Voor meer informatie zie: <a href="#examples">voorbeelden</a
             >.

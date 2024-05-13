@@ -38,7 +38,7 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
           </li>
           <li>Voeg de <code>caption</code> direct direct binnen de <code>table</code> toe.</li>
           <li>
@@ -137,13 +137,13 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="{base}/variables#background-color">background-color</a>
+            <a href="{base}/documentation/variables#background-color">background-color</a>
           </li>
-          <li><a href="{base}/variables#text-color">text-color</a></li>
-          <li><a href="{base}/variables#font-size">font-size</a></li>
-          <li><a href="{base}/variables#line-height">line-height</a></li>
-          <li><a href="{base}/variables#padding">padding</a></li>
-          <li><a href="{base}/variables#text-align">text-align</a></li>
+          <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
+          <li><a href="{base}/documentation/variables#font-size">font-size</a></li>
+          <li><a href="{base}/documentation/variables#line-height">line-height</a></li>
+          <li><a href="{base}/documentation/variables#padding">padding</a></li>
+          <li><a href="{base}/documentation/variables#text-align">text-align</a></li>
         </ul>
       </section>
 

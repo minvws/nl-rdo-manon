@@ -73,7 +73,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -105,7 +105,7 @@
             <tbody>
               <tr>
                 <td>--div-flex-direction</td>
-                <td><a href="{base}/variables#flex-direction">flex-direction</a></td>
+                <td><a href="{base}/documentation/variables#flex-direction">flex-direction</a></td>
                 <td>var(--content-flex-direction)</td>
                 <td>-</td>
                 <td>-</td>
@@ -113,7 +113,7 @@
 
               <tr>
                 <td>--div-justify-content</td>
-                <td><a href="{base}/variables#justify-content">justify-content</a></td>
+                <td><a href="{base}/documentation/variables#justify-content">justify-content</a></td>
                 <td>var(--content-justify-content)</td>
                 <td>-</td>
                 <td>-</td>
@@ -121,7 +121,7 @@
 
               <tr>
                 <td>--div-align-items</td>
-                <td><a href="{base}/variables#align-items">align-items</a></td>
+                <td><a href="{base}/documentation/variables#align-items">align-items</a></td>
                 <td>var(--content-align-items)</td>
                 <td>-</td>
                 <td>-</td>
@@ -129,7 +129,7 @@
 
               <tr>
                 <td>--div-gap</td>
-                <td><a href="{base}/variables#gap">gap</a></td>
+                <td><a href="{base}/documentation/variables#gap">gap</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -137,7 +137,7 @@
 
               <tr>
                 <td>--div-padding-top</td>
-                <td><a href="{base}/variables#padding-top">padding-top</a></td>
+                <td><a href="{base}/documentation/variables#padding-top">padding-top</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -145,7 +145,7 @@
 
               <tr>
                 <td>--div-padding-right</td>
-                <td><a href="{base}/variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/documentation/variables#padding-right">padding-right</a></td>
                 <td>var(--page-whitespace-right)</td>
                 <td>-</td>
                 <td>-</td>
@@ -153,7 +153,7 @@
 
               <tr>
                 <td>--div-padding-bottom</td>
-                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/documentation/variables#padding-bottom">padding-bottom</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -161,7 +161,7 @@
 
               <tr>
                 <td>--div-padding-left</td>
-                <td><a href="{base}/variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/documentation/variables#padding-left">padding-left</a></td>
                 <td>var(--page-whitespace-left)</td>
                 <td>-</td>
                 <td>-</td>
@@ -169,7 +169,7 @@
 
               <tr>
                 <td>--div-max-width</td>
-                <td><a href="{base}/variables#max-width">max-width</a></td>
+                <td><a href="{base}/documentation/variables#max-width">max-width</a></td>
                 <td>100%</td>
                 <td>-</td>
                 <td>-</td>

@@ -22,6 +22,14 @@ jobs:
       - name: Check formatting
         run: pnpm run format:check
 
+  check-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - name: Check formatting
+        run: pnpm run --dir docs check
+
   build-docs:
     runs-on: ubuntu-latest
     steps:

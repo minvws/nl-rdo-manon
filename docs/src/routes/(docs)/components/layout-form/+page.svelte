@@ -109,7 +109,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Aandachtspunten:</h3>
@@ -154,95 +154,95 @@
             <tbody>
               <tr>
                 <td>--layout-form-padding</td>
-                <td><a href="{base}/variables#padding">padding</a></td>
+                <td><a href="{base}/documentation/variables#padding">padding</a></td>
                 <td>var(--content-padding-top, 0)</td>
-                <td rowspan="5" scope="rowgroup">-</td>
-                <td rowspan="15" scope="rowgroup">layout-form</td>
+                <th rowspan="5" scope="rowgroup">-</th>
+                <th rowspan="15" scope="rowgroup">layout-form</th>
               </tr>
 
               <tr>
                 <td>--layout-form-padding-right</td>
-                <td><a href="{base}/variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/documentation/variables#padding-right">padding-right</a></td>
                 <td>var(--content-padding-right, 0)</td>
               </tr>
 
               <tr>
                 <td>--layout-form-padding-bottom</td>
-                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/documentation/variables#padding-bottom">padding-bottom</a></td>
                 <td>var(--content-padding-bottom, 0)</td>
               </tr>
 
               <tr>
                 <td>--layout-form-padding-left</td>
-                <td><a href="{base}/variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/documentation/variables#padding-left">padding-left</a></td>
                 <td>var(--content-padding-left, 0)</td>
               </tr>
 
               <tr>
                 <td>--layout-form-max-width</td>
-                <td><a href="{base}/variables#max-width">max-width</a></td>
+                <td><a href="{base}/documentation/variables#max-width">max-width</a></td>
                 <td>50rem</td>
               </tr>
 
               <tr>
                 <td>--layout-form-breakpoint-1-padding</td>
-                <td><a href="{base}/variables#padding">padding</a></td>
+                <td><a href="{base}/documentation/variables#padding">padding</a></td>
                 <td>var(--layout-form-padding-top)</td>
-                <td rowspan="5" scope="rowgroup">24rem</td>
+                <th rowspan="5" scope="rowgroup">24rem</th>
               </tr>
 
               <tr>
                 <td>--layout-form-breakpoint-1-padding-right</td>
-                <td><a href="{base}/variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/documentation/variables#padding-right">padding-right</a></td>
                 <td>var(--layout-form-padding-right)</td>
               </tr>
 
               <tr>
                 <td>--layout-form-breakpoint-1-padding-bottom</td>
-                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/documentation/variables#padding-bottom">padding-bottom</a></td>
                 <td>var(--layout-form-padding-bottom)</td>
               </tr>
 
               <tr>
                 <td>--layout-form-breakpoint-1-padding-left</td>
-                <td><a href="{base}/variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/documentation/variables#padding-left">padding-left</a></td>
                 <td>var(--layout-form-padding-left)</td>
               </tr>
 
               <tr>
                 <td>--layout-form-breakpoint-1-max-width</td>
-                <td><a href="{base}/variables#max-width">max-width</a></td>
+                <td><a href="{base}/documentation/variables#max-width">max-width</a></td>
                 <td>var(--layout-form-max-width)</td>
               </tr>
 
               <tr>
                 <td>--layout-form-breakpoint-2-padding-top</td>
-                <td><a href="{base}/variables#padding-top">padding-top</a></td>
+                <td><a href="{base}/documentation/variables#padding-top">padding-top</a></td>
                 <td>var(--layout-form-breakpoint-1-padding-top)</td>
-                <td rowspan="5" scope="rowgroup">42rem</td>
+                <th rowspan="5" scope="rowgroup">42rem</th>
               </tr>
 
               <tr>
                 <td>--layout-form-breakpoint-2-padding-right</td>
-                <td><a href="{base}/variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/documentation/variables#padding-right">padding-right</a></td>
                 <td>var(--layout-form-breakpoint-1-padding-right)</td>
               </tr>
 
               <tr>
                 <td>--layout-form-breakpoint-2-padding-bottom</td>
-                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/documentation/variables#padding-bottom">padding-bottom</a></td>
                 <td>var(--layout-form-breakpoint-1-padding-bottom)</td>
               </tr>
 
               <tr>
                 <td>--layout-form-breakpoint-2-padding-left</td>
-                <td><a href="{base}/variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/documentation/variables#padding-left">padding-left</a></td>
                 <td>var(--layout-form-breakpoint-1-padding-left)</td>
               </tr>
 
               <tr>
                 <td>--layout-form-breakpoint-2-max-width</td>
-                <td><a href="{base}/variables#max-width">max-width</a></td>
+                <td><a href="{base}/documentation/variables#max-width">max-width</a></td>
                 <td>var(--layout-form-breakpoint-1-max-width)</td>
               </tr>
             </tbody>

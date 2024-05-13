@@ -56,7 +56,7 @@
         <h2><code>button</code> met <code>img</code></h2>
         <h3>Visuele weergave:</h3>
 
-        <button href="{base}/components/button-icon" class="icon-only">
+        <button class="icon-only">
           Lorem ipsum <img src="$img/cat.svg" alt="Kat" />
         </button>
 
@@ -91,32 +91,32 @@
             Knop, hover, active, focus.
             <ul>
               <li>
-                <a href="{base}/variables#background-color">background-color</a>
+                <a href="{base}/documentation/variables#background-color">background-color</a>
               </li>
-              <li><a href="{base}/variables#text-color">text-color</a></li>
+              <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
               <li>
-                <a href="{base}/variables#border-width">border-width</a>
-              </li>
-              <li>
-                <a href="{base}/variables#border-style">border-style</a>
+                <a href="{base}/documentation/variables#border-width">border-width</a>
               </li>
               <li>
-                <a href="{base}/variables#border-color">border-color</a>
+                <a href="{base}/documentation/variables#border-style">border-style</a>
               </li>
               <li>
-                <a href="{base}/variables#border-radius">border-radius</a>
+                <a href="{base}/documentation/variables#border-color">border-color</a>
               </li>
               <li>
-                <a href="{base}/variables#outline-style">outline-style</a>
+                <a href="{base}/documentation/variables#border-radius">border-radius</a>
               </li>
               <li>
-                <a href="{base}/variables#outline-color">outline-color</a>
+                <a href="{base}/documentation/variables#outline-style">outline-style</a>
               </li>
               <li>
-                <a href="{base}/variables#outline-width">outline-width</a>
+                <a href="{base}/documentation/variables#outline-color">outline-color</a>
               </li>
               <li>
-                <a href="{base}/variables#outline-offset">outline-offset</a>
+                <a href="{base}/documentation/variables#outline-width">outline-width</a>
+              </li>
+              <li>
+                <a href="{base}/documentation/variables#outline-offset">outline-offset</a>
               </li>
             </ul>
           </li>

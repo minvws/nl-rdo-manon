@@ -213,7 +213,7 @@
               aria-invalid="true"
             />
             <p class="error" id="input-error-message">
-              <span>Foutmelding:</span> Lorem <a href="#">ipsum dolor</a> set amet
+              <span>Foutmelding:</span> Lorem <a href="form-notification-test">ipsum dolor</a> set amet
             </p>
           </div>
           <button type="submit">Verzend</button>

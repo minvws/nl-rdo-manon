@@ -16,8 +16,6 @@
     <ul>
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
-      <li><a href="#requirements">Bijbehorende bestanden</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
   <article>
@@ -27,11 +25,6 @@
 
         <h2>Benodigde stappen:</h2>
         <ol>
-          <li>
-            Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
-            optionele bestanden zie:
-            <a href="#requirements">Bijbehorende bestanden</a>.
-          </li>
           <li>Voeg de notificatie toe op basis van een van de onderstaande voorbeelden.</li>
           <li>
             Voeg de gewenste notificatie-type-<code>class</code> toe. Voor meer informatie zie:

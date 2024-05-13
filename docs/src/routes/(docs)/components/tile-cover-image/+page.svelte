@@ -42,9 +42,9 @@
         </ul>
       </section>
 
-      <section id="single-tile">
+      <section id="examples">
         <h2>Voorbeelden</h2>
-        <h3>Tegel met cover-afbeelding op enkel element</h3>
+        <h3 id="tile-image-cover">Tegel met cover-afbeelding op enkel element</h3>
 
         <ul>
           <li>Voeg de class <code>image-cover</code> toe.</li>
@@ -72,7 +72,7 @@
 `}
         />
 
-        <h3>Groep tegels met cover-afbeeldingen</h3>
+        <h3 id="tiles-image-cover">Groep tegels met cover-afbeeldingen</h3>
         <ul>
           <li>
             Voeg de class <code>images-cover</code> toe aan het omliggende element. Geschikte
@@ -156,7 +156,7 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="{base}/variables#object-position">object-position</a>
+            <a href="{base}/documentation/variables#object-position">object-position</a>
           </li>
         </ul>
       </section>
@@ -165,7 +165,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>

@@ -32,25 +32,45 @@
           >
             <button aria-haspopup="listbox" aria-current="true"> Papiamentu </button>
             <ul role="listbox">
-              <li>
-                <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl"
-                  >Nederlands</a
+              <li role="option" aria-selected="false">
+                <a
+                  hreflang="nl"
+                  href="language-selector-test"
+                  data-value="Nederlands"
+                  lang="nl">Nederlands</a
                 >
               </li>
-              <li>
-                <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
-              </li>
-              <li>
-                <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
-              </li>
-              <li aria-current="true">
-                <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW"
-                  >Papiamentu</a
+              <li role="option" aria-selected="false">
+                <a
+                  hreflang="en"
+                  href="language-selector-test"
+                  data-value="English"
+                  lang="en">English</a
                 >
               </li>
-              <li>
-                <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW"
-                  >Papiamento</a
+              <li role="option" aria-selected="false">
+                <a
+                  hreflang="fy"
+                  href="language-selector-test"
+                  data-value="Frysk"
+                  lang="fy">Frysk</a
+                >
+              </li>
+              <li role="option" aria-selected="true">
+                <a
+                  hreflang="pap-CW"
+                  href="language-selector-test"
+                  aria-current="true"
+                  data-value="Papiamentu"
+                  lang="pap-CW">Papiamentu</a
+                >
+              </li>
+              <li role="option" aria-selected="false">
+                <a
+                  hreflang="pap-AW"
+                  href="language-selector-test"
+                  data-value="Papiamento"
+                  lang="pap-AW">Papiamento</a
                 >
               </li>
             </ul>
@@ -69,20 +89,20 @@
       Papiamentu
     </button>
     <ul role="listbox">
-        <li>
-          <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="nl" href="#" data-value="Nederlands" lang="nl">Nederlands</a>
         </li>
-        <li>
-          <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="en" href="#" data-value="English" lang="en">English</a>
         </li>
-        <li>
-          <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="fy" href="#" data-value="Frysk" lang="fy">Frysk</a>
         </li>
-        <li aria-current="true">
-          <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
+        <li role="option" aria-selected="true" aria-current="true">
+          <a hreflang="pap-CW" href="#" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
         </li>
-        <li>
-          <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="pap-AW" href="#" data-value="Papiamento" lang="pap-AW">Papiamento</a>
         </li>
     </ul>
   </div>

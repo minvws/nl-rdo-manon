@@ -373,7 +373,7 @@
 
         <div role="group" class="tile">
           <h1>Lorem ipsum</h1>
-          <img src="$img/strand.jpg" />
+          <img src="$img/strand.jpg" alt="" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
             amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -381,7 +381,7 @@
         </div>
 
         <div role="group" class="tile cover-image">
-          <img src="$img/strand.jpg" />
+          <img src="$img/strand.jpg" alt="" />
           <h1>Lorem ipsum</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
@@ -393,7 +393,7 @@
         <h4>Visueel voorbeeld:</h4>
         <div class="tiles cover-images column-4">
           <div role="group">
-            <img src="$img/strand.jpg" />
+            <img src="$img/strand.jpg" alt="" />
             <h1>Lorem ipsum</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
@@ -402,7 +402,7 @@
           </div>
 
           <div role="group">
-            <img src="$img/strand.jpg" />
+            <img src="$img/strand.jpg" alt="" />
             <h1>Lorem ipsum</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
@@ -411,7 +411,7 @@
           </div>
 
           <div role="group">
-            <img src="$img/strand.jpg" />
+            <img src="$img/strand.jpg" alt="" />
             <h1>Lorem ipsum</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
@@ -420,7 +420,7 @@
           </div>
 
           <div role="group">
-            <img src="$img/strand.jpg" />
+            <img src="$img/strand.jpg" alt="" />
             <h1>Lorem ipsum</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
