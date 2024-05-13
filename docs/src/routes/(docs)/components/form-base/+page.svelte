@@ -87,7 +87,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Benodigd</h3>
@@ -104,31 +104,31 @@
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="{base}/variables#align-items">align-items</a></li>
+          <li><a href="{base}/documentation/variables#align-items">align-items</a></li>
           <li>
-            <a href="{base}/variables#justify-content">justify-content</a>
+            <a href="{base}/documentation/variables#justify-content">justify-content</a>
           </li>
-          <li><a href="{base}/variables#padding-top">padding-top</a></li>
+          <li><a href="{base}/documentation/variables#padding-top">padding-top</a></li>
           <li>
-            <a href="{base}/variables#padding-right">padding-right</a>
+            <a href="{base}/documentation/variables#padding-right">padding-right</a>
           </li>
           <li>
-            <a href="{base}/variables#padding-bottom">padding-bottom</a>
+            <a href="{base}/documentation/variables#padding-bottom">padding-bottom</a>
           </li>
-          <li><a href="{base}/variables#padding-left">padding-left</a></li>
+          <li><a href="{base}/documentation/variables#padding-left">padding-left</a></li>
           <li>
-            <a href="{base}/variables#background-color">background-color</a>
+            <a href="{base}/documentation/variables#background-color">background-color</a>
           </li>
-          <li><a href="{base}/variables#text-color">text-color</a></li>
-          <li><a href="{base}/variables#font-size">font-size</a></li>
-          <li><a href="{base}/variables#line-height">line-height</a></li>
-          <li><a href="{base}/variables#font-weight">font-weight</a></li>
-          <li><a href="{base}/variables#gap">gap</a></li>
-          <li><a href="{base}/variables#border-width">border-width</a></li>
-          <li><a href="{base}/variables#border-style">border-style</a></li>
-          <li><a href="{base}/variables#border-color">border-color</a></li>
-          <li><a href="{base}/variables#breakpoint">breakpoint</a></li>
-          <li><a href="{base}/variables#max-width">max-width</a></li>
+          <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
+          <li><a href="{base}/documentation/variables#font-size">font-size</a></li>
+          <li><a href="{base}/documentation/variables#line-height">line-height</a></li>
+          <li><a href="{base}/documentation/variables#font-weight">font-weight</a></li>
+          <li><a href="{base}/documentation/variables#gap">gap</a></li>
+          <li><a href="{base}/documentation/variables#border-width">border-width</a></li>
+          <li><a href="{base}/documentation/variables#border-style">border-style</a></li>
+          <li><a href="{base}/documentation/variables#border-color">border-color</a></li>
+          <li><a href="{base}/documentation/variables#breakpoints">breakpoint</a></li>
+          <li><a href="{base}/documentation/variables#max-width">max-width</a></li>
         </ul>
 
         <p>Bijbehorende elementen:</p>

@@ -7,12 +7,14 @@
   hljs.registerLanguage("html", xml);
   hljs.registerLanguage("css", css);
   hljs.registerLanguage("scss", scss);
+  // @ts-ignore: the "plaintext" language is has no `contains`, presumably intentionally
   hljs.registerLanguage("plaintext", plaintext);
 </script>
 
 <script>
   import "highlight.js/styles/github.css";
 
+  /** @param {string} markup */
   const trim = (markup) => markup.replace(/^(\s*\n)+/, "").replace(/\n\s*$/, "");
 
   /** @type {'html' | 'css' | 'scss' | 'plaintext'} */

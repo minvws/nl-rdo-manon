@@ -79,7 +79,7 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
           </li>
           <li>
             Voeg de benodigde HTML toe. Zie het voorbeeld per element voor de implementatiedetails.
@@ -133,7 +133,7 @@
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
               consequat facilisis ac eu velit.
-              <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+              <a href="notification-warning">Lorem ipsum</a> consectetur adipiscing elit.
             </li>
           </ul>
           <button type="button">Lorem</button>
@@ -350,7 +350,7 @@
 `}
         />
 
-        <h4 id="warning-th">Waarschuwing op tabelrij</h4>
+        <h4 id="warning-tr">Waarschuwing op tabelrij</h4>
 
         <p>Aandachtspunten:</p>
         <ul>
@@ -669,7 +669,6 @@
               name="standaard-radiobutton"
               value="value"
               class="warning"
-              aria-invalid="true"
             />
             <label for="radio-example-warning">Lorem ipsum dolor sit amet</label>
             <p class="warning" id="radio-example-warning-message">
@@ -684,7 +683,7 @@
           code={`
 <form action="" method="post">
   <div>
-    <input type="radio" id="radio-example-warning" name="standaard-radiobutton" value="value" class="warning" aria-invalid="true">
+    <input type="radio" id="radio-example-warning" name="standaard-radiobutton" value="value" class="warning" >
     <label for="radio-example-warning">Lorem ipsum dolor sit amet</label>
     <p class="warning" id="radio-example-warning-message">
       <span>waarschuwing:</span> Lorem ipsum dolor sit amet
@@ -699,7 +698,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>

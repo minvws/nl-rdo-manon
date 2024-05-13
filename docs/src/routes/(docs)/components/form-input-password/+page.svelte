@@ -40,8 +40,10 @@
           <li>
             Vertel de gebruiker welke eisen er gesteld zijn. Dit kan met een notificatie of met een
             openklapbare hulptekst. Voor meer informatie zie:
-            <a href="notification-explanation#explanation-paragraph">toelichting - paragraaf</a>
-            en <a href="#form-message-help">ingeklapte hulpteksten</a>.
+            <a href="{base}/components/notification-explanation#explanation-paragraph"
+              >toelichting - paragraaf</a
+            >
+            en <a href="{base}/components/form-help">hulpteksten</a>.
           </li>
           <li>
             Om berichten visueel te koppelen aan een inputveld kunnen de
@@ -148,7 +150,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h3>Benodigd</h3>
         <ul>

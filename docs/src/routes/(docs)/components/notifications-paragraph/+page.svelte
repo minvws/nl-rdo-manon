@@ -79,7 +79,7 @@
 
         <h3>Visueel voorbeeld:</h3>
         <p class="error" role="group" aria-label="foutmelding">
-          <span>Foutmelding:</span> Lorem <a href="">ipsum</a> dolor sit.
+          <span>Foutmelding:</span> Lorem <a href="notifications-paragraph">ipsum</a> dolor sit.
         </p>
 
         <h3>HTML-voorbeeld:</h3>
@@ -96,7 +96,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>
@@ -135,16 +135,16 @@
             Paragraaf variabelen
             <ul>
               <li>
-                <a href="{base}/variables#padding-top">padding-top</a>
+                <a href="{base}/documentation/variables#padding-top">padding-top</a>
               </li>
               <li>
-                <a href="{base}/variables#padding-right">padding-right</a>
+                <a href="{base}/documentation/variables#padding-right">padding-right</a>
               </li>
               <li>
-                <a href="{base}/variables#padding-bottom">padding-bottom</a>
+                <a href="{base}/documentation/variables#padding-bottom">padding-bottom</a>
               </li>
               <li>
-                <a href="{base}/variables#padding-left">padding-left</a>
+                <a href="{base}/documentation/variables#padding-left">padding-left</a>
               </li>
             </ul>
           </li>

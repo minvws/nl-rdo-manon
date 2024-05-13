@@ -18,7 +18,6 @@
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
   <article>
@@ -55,12 +54,24 @@
         </p>
 
         <h3>HTML-voorbeeld:</h3>
-        <Code
-          language="html"
-          code={`
-<p>Er is geen aangepaste html nodig om gebruik te maken van dit component zodra de styling is toegevoegd aan het project. De styling heeft invloed op de volgende elementen: <code><p></code>, <code><a href=""></code>, <code><span></code> en <code><li></code>.</p>
-`}
-        />
+        <p>
+          Er is geen aangepaste HTML nodig om gebruik te maken van dit component zodra de styling is
+          toegevoegd aan het project. De styling heeft invloed op de volgende elementen:
+        </p>
+        <ul>
+          <li>
+            <code>{`<p></p>`}</code>
+          </li>
+          <li>
+            <code>{`<a></a>`}</code>
+          </li>
+          <li>
+            <code>{`<span></span>`}</code>
+          </li>
+          <li>
+            <code>{`<li></li>`}</code>
+          </li>
+        </ul>
       </section>
 
       <section id="variables">
@@ -80,20 +91,20 @@
             </thead>
             <tbody>
               <tr>
-                <td>max-width</td>
+                <th scope="row">max-width</th>
                 <td>-</td>
                 <td>--max-line-length-max-width</td>
-                <td><a href="{base}/variables#max-width">max-width</a></td>
+                <td><a href="{base}/documentation/variables#max-width">max-width</a></td>
                 <td>-</td>
                 <td>40rem</td>
               </tr>
 
               <tr>
-                <td rowspan="2" scope="rowgroup">hyphens</td>
+                <th rowspan="2" scope="rowgroup">hyphens</th>
                 <td>Voor breekpunt</td>
                 <td>--max-line-length-hyphens</td>
-                <td rowspan="2" scope="rowgroup"><a href="{base}/variables#hyphens">hyphens</a></td>
-                <td rowspan="2" scope="rowgroup">-</td>
+                <td rowspan="2"><a href="{base}/documentation/variables#hyphens">hyphens</a></td>
+                <td rowspan="2">-</td>
                 <td>auto</td>
               </tr>
 
@@ -104,13 +115,11 @@
               </tr>
 
               <tr>
-                <td rowspan="2" scope="rowgroup">word-break</td>
+                <th rowspan="2" scope="rowgroup">word-break</th>
                 <td>Voor breekpunt</td>
                 <td>--max-line-length-word-break</td>
-                <td rowspan="2" scope="rowgroup"
-                  ><a href="{base}/variables#word-break">word-break</a></td
-                >
-                <td rowspan="2" scope="rowgroup">-</td>
+                <td rowspan="2"><a href="{base}/documentation/variables#word-break">word-break</a></td>
+                <td rowspan="2">-</td>
                 <td>normal</td>
               </tr>
 
@@ -147,7 +156,7 @@
         <p>Voeg de (s)css-bestanden toe aan het project of importeer de bestanden.</p>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>

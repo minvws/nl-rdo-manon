@@ -4,7 +4,7 @@
  * @return {Array<import('./types').Breadcrumb>}
  */
 export function getBreadcrumbs(routeId, breadcrumbNames) {
-  if (!routeId) return [];
+  if (!routeId || !breadcrumbNames) return [];
   const breadcrumbs = [];
   let route = "";
   for (const segment of routeId.split("/")) {

@@ -35,7 +35,7 @@
         </p>
       </section>
 
-      <section id="example">
+      <section id="examples">
         <h2>Voorbeeld</h2>
         <h3>Visueel voorbeeld:</h3>
         <div class="centered">
@@ -59,7 +59,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>

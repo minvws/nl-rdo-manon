@@ -23,7 +23,7 @@
         <h3>Foutmelding</h3>
         <h4>Visueel voorbeeld:</h4>
         <p class="error" role="group" aria-label="foutmelding">
-          <span>Foutmelding:</span> Lorem <a href="">ipsum</a> dolor sit.
+          <span>Foutmelding:</span> Lorem <a href="notifications-table-test">ipsum</a> dolor sit.
         </p>
 
         <h4>HTML-voorbeeld:</h4>
@@ -37,7 +37,7 @@
         <h3>Waarschuwing</h3>
         <h4>Visueel voorbeeld:</h4>
         <p class="warning" role="group" aria-label="waarschuwing">
-          <span>Waarschuwing:</span> Lorem <a href="">ipsum</a> dolor sit.
+          <span>Waarschuwing:</span> Lorem <a href="notifications-table-test">ipsum</a> dolor sit.
         </p>
 
         <h4>HTML-voorbeeld:</h4>
@@ -51,7 +51,7 @@
         <h3>Toelichting</h3>
         <h4>Visueel voorbeeld:</h4>
         <p class="explanation" role="group" aria-label="toelichting">
-          <span>Toelichting:</span> Lorem <a href="">ipsum</a> dolor sit.
+          <span>Toelichting:</span> Lorem <a href="notifications-table-test">ipsum</a> dolor sit.
         </p>
 
         <h4>HTML-voorbeeld:</h4>
@@ -65,7 +65,7 @@
         <h3>Bevestiging</h3>
         <h4>Visueel voorbeeld:</h4>
         <p class="confirmation" role="group" aria-label="bevestiging">
-          <span>Bevestiging:</span> Lorem <a href="">ipsum</a> dolor sit.
+          <span>Bevestiging:</span> Lorem <a href="notifications-table-test">ipsum</a> dolor sit.
         </p>
 
         <h4>HTML-voorbeeld:</h4>
@@ -79,7 +79,7 @@
         <h3>Systeembericht</h3>
         <h4>Visueel voorbeeld:</h4>
         <p class="system" role="group" aria-label="systeembericht">
-          <span>Systeembericht:</span> Lorem <a href="">ipsum</a> dolor sit.
+          <span>Systeembericht:</span> Lorem <a href="notifications-table-test">ipsum</a> dolor sit.
         </p>
 
         <h4>HTML-voorbeeld:</h4>

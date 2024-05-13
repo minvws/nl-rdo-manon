@@ -187,8 +187,8 @@
             />
           </div>
           <div class="button-container">
-            <a class="button ghost" type="submit">Annuleren</a>
-            <button type="submit">Verzend</button>
+            <a class="button ghost" href="form-horizontal-view-test">Annuleren</a>
+            <button>Verzend</button>
           </div>
         </form>
 

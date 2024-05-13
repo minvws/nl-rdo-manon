@@ -15,14 +15,13 @@
 <main class="sidemenu" id="main-content" tabindex="-1">
   <SideMenu>
     <ul>
-      <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
 
-  <article id="button-base">
+  <article id="examples">
     <div>
       <h1>Call to action button</h1>
       <section id="button-base-button">
@@ -85,7 +84,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over het importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>

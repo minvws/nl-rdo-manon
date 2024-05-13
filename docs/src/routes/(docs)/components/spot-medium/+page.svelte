@@ -45,7 +45,7 @@
                 Door middel van variabelen binnen de CSS of door middel van classes binnen de HTML.
                 Maak gebruik van de CSS-variabelen waar mogelijk en voeg alleen de classes toe in de
                 HTML voor uitzonderingen om de code aanpasbaar en overzichtelijk te houden. Voor
-                meer informatie hierover zie <a href="{base}/use-css-variable"
+                meer informatie hierover zie <a href="{base}/documentation/use-css-variable"
                   >CSS-variabelen gebruiken</a
                 >.
               </li>
@@ -106,7 +106,7 @@
 `}
         />
         <p>
-          Voor meer informatie hierover zie <a href="{base}/use-css-variable"
+          Voor meer informatie hierover zie <a href="{base}/documentation/use-css-variable"
             >CSS-variabelen gebruiken</a
           >.
         </p>
@@ -121,7 +121,7 @@
         <p>
           De knoppen binnen het "button-base"-bestand maken gebruik van de accentkleur als deze
           binnen het "application-base"-bestand gedefinieerd staat. Voor meer informatie zie <a
-            href="{base}/use-css-variable">CSS-variabelen gebruiken</a
+            href="{base}/documentation/use-css-variable">CSS-variabelen gebruiken</a
           >.
         </p>
 
@@ -147,7 +147,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>
@@ -178,210 +178,210 @@
                 <th rowspan="8" scope="rowgroup">branding-color-1</th>
                 <td>--branding-color-1</td>
                 <td>CSS-variable</td>
-                <td rowspan="8" scope="rowgroup">branding-color-1</td>
+                <th rowspan="8" scope="rowgroup">branding-color-1</th>
               </tr>
 
               <tr>
                 <td>--branding-color-1-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-1-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-1-link-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-1-link-active-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-1-link-visited-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-1-link-hover-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-1-link-visited-hover-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <th rowspan="8" scope="rowgroup">branding-color-2</th>
                 <td>--branding-color-2</td>
                 <td>CSS-variable</td>
-                <td rowspan="8" scope="rowgroup">branding-color-2</td>
+                <th rowspan="8" scope="rowgroup">branding-color-2</th>
               </tr>
 
               <tr>
                 <td>--branding-color-2-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-2-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-2-link-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-2-link-active-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-2-link-visited-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-2-link-hover-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-2-link-visited-hover-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <th rowspan="8" scope="rowgroup">branding-color-accent-1</th>
                 <td>--branding-color-accent-1</td>
                 <td>CSS-variable</td>
-                <td rowspan="8" scope="rowgroup">branding-color-accent-1</td>
+                <th rowspan="8" scope="rowgroup">branding-color-accent-1</th>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-1-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-1-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-1-link-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-1-link-active-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-1-link-visited-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-1-link-hover-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-1-link-visited-hover-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <th rowspan="8" scope="rowgroup">branding-color-accent-2</th>
                 <td>--branding-color-accent-2</td>
                 <td>CSS-variable</td>
-                <td rowspan="8" scope="rowgroup">branding-color-accent-2</td>
+                <th rowspan="8" scope="rowgroup">branding-color-accent-2</th>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-2-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-2-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-2-link-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-2-link-active-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-2-link-visited-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-2-link-hover-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-2-link-visited-hover-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <th rowspan="8" scope="rowgroup">branding-color-accent-3</th>
                 <td>--branding-color-accent-3</td>
                 <td>CSS-variable</td>
-                <td rowspan="8" scope="rowgroup">branding-color-accent-3</td>
+                <th rowspan="8" scope="rowgroup">branding-color-accent-3</th>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-3-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-3-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-3-link-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-3-link-active-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-3-link-visited-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-3-link-hover-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
 
               <tr>
                 <td>--branding-color-accent-3-link-visited-hover-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
               </tr>
             </tbody>
           </table>

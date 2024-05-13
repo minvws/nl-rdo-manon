@@ -42,13 +42,13 @@
       <section id="variables">
         <h3>Instelbare variabelen</h3>
         <ul>
-          <li><a href="{base}/variables#max-width">max-width</a></li>
-          <li><a href="{base}/variables#padding">padding</a></li>
+          <li><a href="{base}/documentation/variables#max-width">max-width</a></li>
+          <li><a href="{base}/documentation/variables#padding">padding</a></li>
           <li>
-            <a href="{base}/variables#background-color">background-color</a>
+            <a href="{base}/documentation/variables#background-color">background-color</a>
           </li>
-          <li><a href="{base}/variables#text-color">text-color</a></li>
-          <li><a href="{base}/variables#breakpoints">Breekpunten</a></li>
+          <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
+          <li><a href="{base}/documentation/variables#breakpoints">Breekpunten</a></li>
         </ul>
       </section>
 

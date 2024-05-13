@@ -66,7 +66,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Aandachtspunten:</h3>
@@ -115,29 +115,29 @@
             <tbody>
               <tr>
                 <td>--emphasized-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>var(--body-text-large-font-size)</td>
                 <td>-</td>
-                <td rowspan="4" scope="rowgroup">emphasized</td>
+                <th rowspan="4" scope="rowgroup">emphasized</th>
               </tr>
 
               <tr>
                 <td>--emphasized-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>var(--body-text-large-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--emphasized-line-height</td>
-                <td><a href="{base}/variables#line-height">line-height</a></td>
+                <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>var(--body-text-large-line-height)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--emphasized-text-color</td>
-                <td><a href="{base}/variables#text-color">text-color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
                 <td>var(--body-text-large-color)</td>
                 <td>-</td>
               </tr>

@@ -156,7 +156,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h4>Benodigd</h4>
         <ul>
@@ -172,7 +172,7 @@
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="{base}/variables#accent-color">accent-color</a></li>
+          <li><a href="{base}/documentation/variables#accent-color">accent-color</a></li>
         </ul>
 
         <p>Bijbehorende elementen:</p>

@@ -62,7 +62,7 @@
         <h3>Visuele weergave binnen formulier:</h3>
         <form action="" method="post" class="horizontal-view">
           <div>
-            <label>Lorem ipsum</label>
+            <label for="voorbeeld-text-input-1">Lorem ipsum</label>
             <input
               id="voorbeeld-text-input-1"
               name="voorbeeld-text-input-1"
@@ -93,7 +93,7 @@
             </dl>
           </fieldset>
           <div>
-            <label>Lorem ipsum</label>
+            <label for="voorbeeld-text-input-2">Lorem ipsum</label>
             <input
               id="voorbeeld-text-input-2"
               name="voorbeeld-text-input-2"
@@ -149,7 +149,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>

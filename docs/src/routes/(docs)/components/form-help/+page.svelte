@@ -39,7 +39,7 @@
               <li>
                 Voeg het bijbehorende Javascript-bestand toe aan het project. Voor meer informatie
                 zie:
-                <a href="{base}/add-js">JavaScript toevoegen</a>.
+                <a href="{base}/documentation/add-js">JavaScript toevoegen</a>.
               </li>
             </ul>
           </li>
@@ -215,7 +215,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>
@@ -234,50 +234,50 @@
           <li>
             <code>button</code>
             <ul>
-              <li><a href="{base}/variables#width">width</a></li>
-              <li><a href="{base}/variables#height">height</a></li>
+              <li><a href="{base}/documentation/variables#width">width</a></li>
+              <li><a href="{base}/documentation/variables#height">height</a></li>
               <li>
-                <a href="{base}/variables#padding-top">padding-top</a>
+                <a href="{base}/documentation/variables#padding-top">padding-top</a>
               </li>
               <li>
-                <a href="{base}/variables#padding-right">padding-right</a>
+                <a href="{base}/documentation/variables#padding-right">padding-right</a>
               </li>
               <li>
-                <a href="{base}/variables#padding-bottom">padding-bottom</a>
+                <a href="{base}/documentation/variables#padding-bottom">padding-bottom</a>
               </li>
               <li>
-                <a href="{base}/variables#padding-left">padding-left</a>
+                <a href="{base}/documentation/variables#padding-left">padding-left</a>
               </li>
-              <li><a href="{base}/variables#top">top</a></li>
-              <li><a href="{base}/variables#right">right</a></li>
+              <li><a href="{base}/documentation/variables#top">top</a></li>
+              <li><a href="{base}/documentation/variables#right">right</a></li>
               <li>
-                <a href="{base}/variables#border-width">border-width</a>
-              </li>
-              <li>
-                <a href="{base}/variables#border-style">border-style</a>
+                <a href="{base}/documentation/variables#border-width">border-width</a>
               </li>
               <li>
-                <a href="{base}/variables#border-color">border-color</a>
+                <a href="{base}/documentation/variables#border-style">border-style</a>
               </li>
               <li>
-                <a href="{base}/variables#border-radius">border-radius</a>
+                <a href="{base}/documentation/variables#border-color">border-color</a>
               </li>
               <li>
-                <a href="{base}/variables#background-color">background-color</a>
+                <a href="{base}/documentation/variables#border-radius">border-radius</a>
               </li>
-              <li><a href="{base}/variables#text-color">text-color</a></li>
+              <li>
+                <a href="{base}/documentation/variables#background-color">background-color</a>
+              </li>
+              <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
             </ul>
           </li>
           <li>
             Icoon
             <ul>
-              <li><a href="{base}/variables#content">content</a></li>
-              <li><a href="{base}/variables#font-size">font-size</a></li>
+              <li><a href="{base}/documentation/variables#content">content</a></li>
+              <li><a href="{base}/documentation/variables#font-size">font-size</a></li>
               <li>
-                <a href="{base}/variables#font-weight">font-weight</a>
+                <a href="{base}/documentation/variables#font-weight">font-weight</a>
               </li>
               <li>
-                <a href="{base}/variables#line-height">line-height</a>
+                <a href="{base}/documentation/variables#line-height">line-height</a>
               </li>
             </ul>
           </li>

@@ -79,7 +79,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -110,7 +110,7 @@
             <tbody>
               <tr>
                 <td>--horizontal-center-max-width</td>
-                <td><a href="{base}/variables#max-width">max-width</a></td>
+                <td><a href="{base}/documentation/variables#max-width">max-width</a></td>
                 <td>var(--body-text-small-max-width)</td>
                 <td>-</td>
                 <td>horizontal-center</td>
