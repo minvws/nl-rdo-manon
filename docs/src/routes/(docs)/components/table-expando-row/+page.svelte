@@ -38,57 +38,68 @@
         <h2>Benodigde stappen:</h2>
         <ol>
           <li>
-            Voeg een extra <code>&lt;tr&gt;</code> direct onder de bijbehorende zichtbare rij toe om
-            een uitklapbare rij toe te voegen.
-          </li>
-          <li>Geef de uitklapbare rij de class <code>expando-row</code>.</li>
-          <li>
-            Voeg binnen de uitklapbare rij een tabelcel toe die de volledige breedte gebruikt. In
-            dit voorbeeld
-            <code>&lt;td colspan="5"&gt;&lt;/td&gt;</code>. Vul als waarde van de
-            <code>colspan</code> de hoeveelheid kolommen van de tabel in.
-          </li>
-          <li>
-            Voeg direct binnen de tabelcel binnen de uitklapbare rij een
-            <code>&lt;span&gt;</code> toe met een omschrijvende tekst voor screenreader gebruikers.
-            Bijvoorbeeld:
-            <code>&lt;span class="sr-only"&gt;Extra details over lorem ipsum&lt;/span&gt;.</code>
-            Voeg aan deze span de class <code>sr-only</code> toe om de span visueel te verbergen voor
-            overige gebruikers.
-          </li>
-          <li>Vul de uitklapbare tabel met de gewenste data.</li>
-          <li>
-            Voeg aan de tabel een extra kolom toe met knoppen voor het bedienen van de uitklapbare
-            rijen.
+            Voeg aan de tabel een extra kolom toe voor de knoppen voor het bedienen van de
+            uitklapbare rijen.
             <ul>
+              <li>
+                Geef de <code>{`<th>`}</code> van deze kolom een <code>id</code>.
+              </li>
               <li>
                 Gebruik als kolomtitel een korte omschrijvende tekst. Bijvoorbeeld met de tekst
                 "details".
               </li>
+            </ul>
+          </li>
+          <li>
+            Voeg een extra <code>{`<tr>`}</code> toe direct onder de bijbehorende zichtbare rij om een
+            uitklapbare rij toe te voegen.
+          </li>
+          <li>Geef de uitklapbare rij de class <code>expando-row</code>.</li>
+          <li>
+            Zorg dat de zichtbare rij een <code>{`<th>`}</code> met <code>scope="row"</code>
+            heeft, die de rij uniek identificeert. Gebruik hiervoor bijvoorbeeld een naam of
+            <code>ID</code>. Geef deze <code>{`<th>`}</code> een <code>id</code>.
+          </li>
+          <li>
+            Voeg binnen de uitklapbare rij een tabelcel toe.
+            <ul>
               <li>
-                Voeg voor iedere uitklapbare rij een knop toe met de class
-                <code>expando-button</code>.
+                Zorg er met <code>colspan</code> voor dat de cel de volledige breedte gebruikt. Vul
+                als waarde de hoeveelheid kolommen van de tabel in, inclusief de "details"-kolom. In
+                dit voorbeeld: <code>{`<td colspan="5"></td>`}</code>.
               </li>
               <li>
-                Voeg een button-tekst toe die screenreader gebruikers toelicht dat de knop de rij
-                zal openklappen, zoals bijvoorbeeld "Open details". Geef de
-                <code>&lt;button&gt;</code> daarnaast een <code>data-close-label=""</code> met de bijbehorende
-                tekst voor het dichtklappen van de rij. Bijvoorbeeld: "Sluit details".
+                Geef de tabelcel het <code>headers</code>-attribuut, en gebruik dat om te verwijzen
+                naar de <code>id</code>'s van de <code>{`<th>`}</code>'s van de openklapbare rij en
+                de "details"-kolom (in die volgorde). In dit voorbeeld:
+                <code>headers="lorem-ipsum-header details-header"</code>
+              </li>
+            </ul>
+          </li>
+          <li>Vul de uitklapbare tabel met de gewenste data.</li>
+          <li>
+            Voeg voor iedere uitklapbare rij een knop toe aan de "details"-kolom met de class
+            <code>expando-button</code>.
+            <ul>
+              <li>
+                Voeg een button-tekst toe die screenreader gebruikers toelicht dat de knop de
+                uitklapbare rij bedient. Verwijs daarin naar de inhoud (bijvoorbeeld "details") en
+                het onderwerp (bijvoorbeeld de naam of ID van de rij).
               </li>
               <li>
                 <strong>HTML-voorbeeld:</strong>
                 <code>
-                  &lt;button class="expando-button" data-close-label="Sluit details"
+                  {`<button class="expando-button"
                   data-icon-open-class="icon icon-descending" data-icon-close-class="icon
-                  icon-ascending" type="button"&gt; Open details &lt;/button&gt;
+                  icon-ascending">Lorem ipsum details</button>`}
                 </code>
               </li>
             </ul>
           </li>
           <li>
             Plaats
-            <code>&lt;script defer src="pad/naar/expando-rows.min.js"&gt;&lt;/script&gt;</code>
-            in de <code>&lt;head&gt;</code> van het document. Voor meer informatie zie:
+            <code>{`<script defer src="pad/naar/expando-rows.min.js"></script>`}</code>
+            in de <code>{`<head>`}</code> van het document. Voor meer informatie zie:
             <a href="{base}/documentation/add-js">JavaScript toevoegen</a>
           </li>
           <li>
@@ -116,12 +127,12 @@
               </li>
               <li>
                 Wanneer JavaScript niet beschikbaar is, worden alle uitklapbare tabelrijen
-                uitgeklapt getoond en worden de expando-<code>&lt;button&gt;</code>s verborgen zodat
+                uitgeklapt getoond en worden de expando-<code>{`<button>`}</code>s verborgen zodat
                 alle data ook beschikbaar is voor gebruikers zonder JavaScript.
               </li>
               <li>
                 Om een tabelrij standaard uitgeklapt te maken, voeg je
-                <code>aria-expanded="true"</code> toe aan de <code>&lt;button&gt;</code>. Verander
+                <code>aria-expanded="true"</code> toe aan de <code>{`<button>`}</code>. Verander
                 hierbij ook de button-tekst naar bijvoorbeeld "Sluit details", en vervang de
                 <code>data-close-label</code> door een <code>data-open-label</code> met bijbehorende
                 tekst zoals bijvoorbeeld "Open details.
@@ -140,12 +151,12 @@
                       <th scope="col">Risicolevel</th>
                       <th scope="col">Hoeveelheid</th>
                       <th scope="col">Status</th>
-                      <th scope="col">Details</th>
+                      <th scope="col" id="details-header">Details</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">Lorem ipsum</th>
+                      <th scope="row" id="lorem-ipsum-header">Lorem ipsum</th>
                       <td><span class="critical">Critical</span></td>
                       <td class="number">4</td>
                       <td>New</td>
@@ -160,13 +171,13 @@
                       </td>
                     </tr>
                     <tr class="expando-row">
-                      <td colspan="5">
+                      <td colspan="5" headers="lorem-ipsum-header details-header">
                         <h4>Details</h4>
                         <p>Dit zijn de details over de bevinding "lorem ipsum"</p>
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">Dolor sit amet</th>
+                      <th scope="row" id="dolor-sit-amet-header">Dolor sit amet</th>
                       <td><span class="high">High</span></td>
                       <td class="number">12</td>
                       <td>New</td>
@@ -181,7 +192,7 @@
                       </td>
                     </tr>
                     <tr class="expando-row">
-                      <td colspan="5">
+                      <td colspan="5" headers="dolor-sit-amet-header details-header">
                         <h4>Details</h4>
                         <p>Dit zijn de details over de bevinding "dolor sit amet".</p>
                       </td>
@@ -203,12 +214,12 @@
         <th scope="col">Risicolevel</th>
         <th scope="col">Hoeveelheid</th>
         <th scope="col">Status</th>
-        <th scope="col">Details</th>
+        <th scope="col" id="details-header">Details</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope="row">Lorem ipsum</th>
+        <th scope="row" id="lorem-ipsum-header">Lorem ipsum</th>
         <td><span class="critical">Critical</span></td>
         <td class="number">4</td>
         <td>New</td>
@@ -223,13 +234,13 @@
         </td>
       </tr>
       <tr class="expando-row">
-        <td colspan="5">
+        <td colspan="5" headers="lorem-ipsum-header details-header">
           <h4>Details</h4>
           <p>Dit zijn de details over de bevinding "lorem ipsum"</p>
         </td>
       </tr>
       <tr>
-        <th scope="row">Dolor sit amet</th>
+        <th scope="row" id="dolor-sit-amet-header">Dolor sit amet</th>
         <td><span class="high">High</span></td>
         <td class="number">12</td>
         <td>New</td>
@@ -244,7 +255,7 @@
         </td>
       </tr>
       <tr class="expando-row">
-        <td colspan="5">
+        <td colspan="5" headers="dolor-sit-amet-header details-header">
           <h4>Details</h4>
           <p>Dit zijn de details over de bevinding "dolor sit amet".</p>
         </td>
@@ -252,6 +263,7 @@
     </tbody>
   </table>
 </div>
+
 `}
               />
             </section>
@@ -283,7 +295,11 @@
                   <tbody>
                     <tr>
                       <td>--expando-rows-table-cell-background-color</td>
-                      <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                      <td
+                        ><a href="{base}/documentation/variables#background-color"
+                          >background-color</a
+                        ></td
+                      >
                       <td>#e5e5e5</td>
                       <td>Openklapbare cel - td</td>
                       <td>CSS</td>
@@ -312,14 +328,22 @@
                     </tr>
                     <tr>
                       <td>--expando-rows-row-background-color</td>
-                      <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                      <td
+                        ><a href="{base}/documentation/variables#background-color"
+                          >background-color</a
+                        ></td
+                      >
                       <td>transparent</td>
                       <td>De openklapbare rij</td>
                       <td>CSS</td>
                     </tr>
                     <tr>
                       <td>--expando-rows-row-striping-background-color</td>
-                      <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                      <td
+                        ><a href="{base}/documentation/variables#background-color"
+                          >background-color</a
+                        ></td
+                      >
                       <td>var(--table-row-background-color-striping, initial)</td>
                       <td>De openklapbare rij</td>
                       <td>CSS</td>
