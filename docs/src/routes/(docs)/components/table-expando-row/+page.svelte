@@ -133,11 +133,11 @@
               <h3>Visueel voorbeeld:</h3>
               <div class="horizontal-scroll">
                 <table>
-                  <caption> Voorbeeld uitklapbare tabelrijen: </caption>
+                  <caption>Voorbeeld uitklapbare tabelrijen:</caption>
                   <thead>
                     <tr>
-                      <th scope="col">Risicolevel</th>
                       <th scope="col">Bevindingstype</th>
+                      <th scope="col">Risicolevel</th>
                       <th scope="col">Hoeveelheid</th>
                       <th scope="col">Status</th>
                       <th scope="col">Details</th>
@@ -145,51 +145,45 @@
                   </thead>
                   <tbody>
                     <tr>
+                      <th scope="row">Lorem ipsum</th>
                       <td><span class="critical">Critical</span></td>
-                      <td>Lorem ipsum dolor set</td>
                       <td class="number">4</td>
                       <td>New</td>
                       <td>
                         <button
                           class="expando-button"
-                          data-close-label="Sluit details"
                           data-icon-open-class="icon icon-descending"
                           data-icon-close-class="icon icon-ascending"
-                          type="button"
                         >
-                          Open details
+                          Lopem ipsum details
                         </button>
                       </td>
                     </tr>
                     <tr class="expando-row">
                       <td colspan="5">
-                        <span class="sr-only">Lorem ipsum dolor set</span>
-                        <h1>Lorem ipsum details</h1>
-                        <p>De extra content.</p>
+                        <h4>Details</h4>
+                        <p>Dit zijn de details over de bevinding "lorem ipsum"</p>
                       </td>
                     </tr>
                     <tr>
+                      <th scope="row">Dolor sit amet</th>
                       <td><span class="high">High</span></td>
-                      <td>Lorem ipsum dolor set</td>
                       <td class="number">12</td>
                       <td>New</td>
                       <td>
                         <button
                           class="expando-button"
-                          data-close-label="Sluit details"
                           data-icon-open-class="icon icon-descending"
                           data-icon-close-class="icon icon-ascending"
-                          type="button"
                         >
-                          Open details
+                          Dolor sit amet details
                         </button>
                       </td>
                     </tr>
                     <tr class="expando-row">
                       <td colspan="5">
-                        <span class="sr-only">Lorem ipsum dolor set</span>
-                        <h1>Lorem ipsum details</h1>
-                        <p>De extra content.</p>
+                        <h4>Details</h4>
+                        <p>Dit zijn de details over de bevinding "dolor sit amet".</p>
                       </td>
                     </tr>
                   </tbody>
@@ -202,13 +196,11 @@
                 code={`
 <div class="horizontal-scroll">
   <table>
-    <caption>
-      Voorbeeld uitklapbare tabelrijen:
-    </caption>
+    <caption>Voorbeeld uitklapbare tabelrijen:</caption>
     <thead>
       <tr>
-        <th scope="col">Risicolevel</th>
         <th scope="col">Bevindingstype</th>
+        <th scope="col">Risicolevel</th>
         <th scope="col">Hoeveelheid</th>
         <th scope="col">Status</th>
         <th scope="col">Details</th>
@@ -216,49 +208,45 @@
     </thead>
     <tbody>
       <tr>
+        <th scope="row">Lorem ipsum</th>
         <td><span class="critical">Critical</span></td>
-        <td>Lorem ipsum dolor set</td>
         <td class="number">4</td>
         <td>New</td>
         <td>
           <button
             class="expando-button"
-            data-close-label="Sluit details"
             data-icon-open-class="icon icon-descending"
             data-icon-close-class="icon icon-ascending"
-            type="button">
-              Open details
-            </button>
-        </td>
-      </tr>
-      <tr class="expando-row">
-        <td colspan="5">
-          <span class="sr-only">Lorem ipsum dolor set</span>
-          <h1>Lorem ipsum details</h1>
-          <p>De extra content.</p>
-        </td>
-      </tr>
-      <tr>
-        <td><span class="high">High</span></td>
-        <td>Lorem ipsum dolor set</td>
-        <td class="number">12</td>
-        <td>New</td>
-        <td>
-          <button
-          class="expando-button"
-          data-close-label="Sluit details"
-          data-icon-open-class="icon icon-descending"
-          data-icon-close-class="icon icon-ascending"
-          type="button">
-            Open details
+          >
+            Lopem ipsum details
           </button>
         </td>
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-          <span class="sr-only">Lorem ipsum dolor set</span>
-          <h1>Lorem ipsum details</h1>
-          <p>De extra content.</p>
+          <h4>Details</h4>
+          <p>Dit zijn de details over de bevinding "lorem ipsum"</p>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Dolor sit amet</th>
+        <td><span class="high">High</span></td>
+        <td class="number">12</td>
+        <td>New</td>
+        <td>
+          <button
+            class="expando-button"
+            data-icon-open-class="icon icon-descending"
+            data-icon-close-class="icon icon-ascending"
+          >
+            Dolor sit amet details
+          </button>
+        </td>
+      </tr>
+      <tr class="expando-row">
+        <td colspan="5">
+          <h4>Details</h4>
+          <p>Dit zijn de details over de bevinding "dolor sit amet".</p>
         </td>
       </tr>
     </tbody>
