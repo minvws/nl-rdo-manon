@@ -96,9 +96,9 @@
                   </li>
                   <li>
                     De waarde geldt voor
-                    <code id="padding-top">padding-top</code>,
+                    <code>padding-top</code>,
                     <code id="padding-right">padding-right</code>,
-                    <code id="padding-bottom">padding-bottom</code>,
+                    <code>padding-bottom</code>,
                     <code id="padding-left">padding-left</code> in deze volgorde.
                   </li>
                   <li>
@@ -385,22 +385,6 @@
               </td>
             </tr>
 
-            <tr id="min-height">
-              <td>*-min-height</td>
-              <td>min-height</td>
-              <td>Minimale hoogte van het component</td>
-              <td>
-                Numerieke waarde.
-                <ul>
-                  <li>
-                    Alle waardes die binnen het min-height-element binnen CSS gebruikt kunnen
-                    worden.
-                  </li>
-                  <li>Bijvoorbeeld <code>1rem</code> of <code>100px</code>.</li>
-                </ul>
-              </td>
-            </tr>
-
             <tr id="text-color">
               <td>*-text-color</td>
               <td>color</td>
@@ -675,13 +659,6 @@
             <tr id="text-align">
               <td>*-text-align</td>
               <td>text-align</td>
-              <td></td>
-              <td></td>
-            </tr>
-
-            <tr id="outline-color">
-              <td>*-outline-color</td>
-              <td>outline-color</td>
               <td></td>
               <td></td>
             </tr>
