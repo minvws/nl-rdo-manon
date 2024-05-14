@@ -3,16 +3,26 @@
 
 {% block main %}
 <main>
-  <h1>{{ question.question_text }}</h1>
+  <section id="introduction" class="branding-color-accent-5">
+    <div>
+      <h1>Polls example app</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </section>
+  <section>
+    <div>
+      <h1>{{ question.question_text }}</h1>
 
-  <ul>
-    {% for choice in question.choice_set.all %}
-    <li>
-      {{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}
-    </li>
-    {% endfor %}
-  </ul>
+      <ul>
+        {% for choice in question.choice_set.all %}
+        <li>
+          {{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}
+        </li>
+        {% endfor %}
+      </ul>
 
-  <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+      <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+    </div>
+  </section>
 </main>
 {% endblock main %}
