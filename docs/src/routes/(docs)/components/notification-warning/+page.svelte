@@ -79,7 +79,9 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling"
+              >Componenten gebruiken en styling toevoegen</a
+            >
           </li>
           <li>
             Voeg de benodigde HTML toe. Zie het voorbeeld per element voor de implementatiedetails.
@@ -502,7 +504,6 @@
             <textarea
               id="voorbeeld-tekstveld-warning"
               name="voorbeeld-tekstveld-warning"
-              placeholder="Jouw vraag of opmerking"
               class="warning"
               aria-describedby="voorbeeld-tekstveld-warning-message"
               aria-invalid="true"
@@ -522,11 +523,18 @@
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-warning">Voorbeeld tekstveld</label>
   <div>
-    <textarea id="voorbeeld-tekstveld-warning" name="voorbeeld-tekstveld-warning" placeholder="Jouw vraag of opmerking" class="warning" aria-describedby="voorbeeld-tekstveld-warning-message" aria-invalid="true"></textarea>
+    <textarea
+      id="voorbeeld-tekstveld-warning"
+      name="voorbeeld-tekstveld-warning"
+      class="warning"
+      aria-describedby="voorbeeld-tekstveld-warning-message"
+      aria-invalid="true"
+    ></textarea>
     <p class="warning" id="voorbeeld-tekstveld-warning-message">
       <span>waarschuwing:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
+
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -584,7 +592,6 @@
             <input
               id="datalist-warning"
               class="warning"
-              placeholder="Begin met typen of klik om een optie uit te kiezen"
               list="example-list-warning"
               aria-describedby="datalist-warning-message"
               aria-invalid="true"
@@ -608,16 +615,22 @@
 <form action="" method="post">
   <label for="datalist-warning">Input</label>
   <div>
-    <input id="datalist-warning" class="warning" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-warning" aria-describedby="datalist-warning-message" aria-invalid="true">
+    <input
+      id="datalist-warning"
+      class="warning"
+      list="example-list-warning"
+      aria-describedby="datalist-warning-message"
+      aria-invalid="true"
+    />
     <p class="warning" id="datalist-warning-message">
       <span>waarschuwing:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
 
   <datalist id="example-list-warning">
-    <option value="Optie 1">
-    <option value="Optie 2">
-    <option value="Optie 3">
+    <option value="Optie 1"></option>
+    <option value="Optie 2"></option>
+    <option value="Optie 3"></option>
   </datalist>
 </form>
 `}
@@ -698,7 +711,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h3>Benodigd</h3>
         <ul>
