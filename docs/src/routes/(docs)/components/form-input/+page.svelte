@@ -56,10 +56,9 @@
           <input
             id="example-input-base"
             name="example-input-base"
-            placeholder="voorbeeld invoerveld"
             type="text"
           />
-          <button type="submit" class="ghost">Terug</button>
+          <button type="submit">Verzend</button>
         </form>
 
         <h4>HTML-voorbeeld:</h4>
@@ -68,8 +67,11 @@
           code={`
 <form action="" method="post">
   <label for="example-input-base">Voorbeeld invoerveld</label>
-  <input id="example-input-base" name="example-input-base" placeholder="voorbeeld invoerveld" type="text">
-
+  <input
+    id="example-input-base"
+    name="example-input-base"
+    type="text"
+  />
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -99,12 +101,9 @@
           <input
             id="example-input-required"
             name="example-input-required"
-            placeholder="gebruikersnaam"
-            title="Gebruikersnaam"
             type="text"
             required
           />
-
           <button type="submit">Verzend</button>
         </form>
 
@@ -115,8 +114,12 @@
 <form action="" method="post">
   <label for="example-input-required">Gebruikersnaam</label>
   <span class="nota-bene">Dit veld is verplicht</span>
-  <input id="example-input-required" name="example-input-required" placeholder="gebruikersnaam" title="Gebruikersnaam" type="text" required>
-
+  <input
+    id="example-input-required"
+    name="example-input-required"
+    type="text"
+    required
+  />
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -136,8 +139,6 @@
           <input
             id="example-input-disabled"
             name="example-input-disabled"
-            placeholder="gebruikersnaam"
-            title="Gebruikersnaam"
             type="text"
             disabled
           />
@@ -150,7 +151,12 @@
           code={`
 <form action="" method="post">
   <label for="example-input-disabled">Gebruikersnaam</label>
-  <input id="example-input-disabled" name="example-input-disabled" placeholder="gebruikersnaam" title="Gebruikersnaam" type="text" disabled>
+  <input
+    id="example-input-disabled"
+    name="example-input-disabled"
+    type="text"
+    disabled
+  />
   <button type="submit">Verzend</button>
 </form>
 `}
