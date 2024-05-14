@@ -503,7 +503,6 @@
             <textarea
               id="voorbeeld-tekstveld-explanation"
               name="voorbeeld-tekstveld-explanation"
-              placeholder="Jouw vraag of opmerking"
               class="explanation"
               aria-describedby="voorbeeld-tekstveld-explanation-message"
             ></textarea>
@@ -522,11 +521,17 @@
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-explanation">Voorbeeld tekstveld</label>
   <div>
-    <textarea id="voorbeeld-tekstveld-explanation" name="voorbeeld-tekstveld-explanation" placeholder="Jouw vraag of opmerking" class="explanation" aria-describedby="voorbeeld-tekstveld-explanation-message"></textarea>
+    <textarea
+      id="voorbeeld-tekstveld-explanation"
+      name="voorbeeld-tekstveld-explanation"
+      class="explanation"
+      aria-describedby="voorbeeld-tekstveld-explanation-message"
+    ></textarea>
     <p class="explanation" id="voorbeeld-tekstveld-explanation-message">
       <span>toelichting:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
+
   <button type="submit">Verzend</button>
 </form>
 `}
