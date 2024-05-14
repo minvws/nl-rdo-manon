@@ -44,7 +44,7 @@
             Zorg er voor gebruiksvriendelijkheid voor dat het tekstveld een duidelijke vraag en/of
             duidelijk doel heeft. Voeg een omschrijvend <code>&lt;label&gt;</code> toe en stel een
             vraag of geef duidelijke richtlijnen mee door middel van een
-            <code>placeholder</code>-tekst.
+            <a href="nota-bene">nota-bene</a>.
           </li>
           <li>
             <code>rows="number"</code> geeft de initiële hoogte van het tekstveld aan in de hoeveelheid
@@ -100,7 +100,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h3>Benodigd</h3>
         <ul>
