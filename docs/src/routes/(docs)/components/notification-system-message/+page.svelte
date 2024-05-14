@@ -79,7 +79,9 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling"
+              >Componenten gebruiken en styling toevoegen</a
+            >
           </li>
           <li>
             Voeg de benodigde HTML toe. Zie het voorbeeld per element voor de implementatiedetails.
@@ -505,7 +507,6 @@
             <textarea
               id="voorbeeld-tekstveld-system"
               name="voorbeeld-tekstveld-system"
-              placeholder="Jouw vraag of opmerking"
               class="system"
               aria-describedby="voorbeeld-tekstveld-system-message"
             ></textarea>
@@ -524,11 +525,17 @@
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-system">Voorbeeld tekstveld</label>
   <div>
-    <textarea id="voorbeeld-tekstveld-system" name="voorbeeld-tekstveld-system" placeholder="Jouw vraag of opmerking" class="system" aria-describedby="voorbeeld-tekstveld-system-message"></textarea>
+    <textarea
+      id="voorbeeld-tekstveld-system"
+      name="voorbeeld-tekstveld-system"
+      class="system"
+      aria-describedby="voorbeeld-tekstveld-system-message"
+    ></textarea>
     <p class="system" id="voorbeeld-tekstveld-system-message">
-      <span>system:</span> Lorem ipsum dolor sit amet
+      <span>systeembericht:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
+
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -585,7 +592,6 @@
             <input
               id="datalist-system"
               class="system"
-              placeholder="Begin met typen of klik om een optie uit te kiezen"
               list="example-list-system"
               aria-describedby="datalist-system-message"
             />
@@ -608,16 +614,21 @@
 <form action="" method="post">
   <label for="datalist-system">Input</label>
   <div>
-    <input id="datalist-system" class="system" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-system" aria-describedby="datalist-system-message">
+    <input
+      id="datalist-system"
+      class="system"
+      list="example-list-system"
+      aria-describedby="datalist-system-message"
+    />
     <p class="system" id="datalist-system-message">
-      <span>system:</span> Lorem ipsum dolor sit amet
+      <span>systeembericht:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
 
   <datalist id="example-list-system">
-    <option value="Optie 1">
-    <option value="Optie 2">
-    <option value="Optie 3">
+    <option value="Optie 1"></option>
+    <option value="Optie 2"></option>
+    <option value="Optie 3"></option>
   </datalist>
 </form>
 `}
@@ -628,12 +639,7 @@
         <h5>Visueel voorbeeld:</h5>
         <form action="" method="post">
           <div aria-describedby="checkbox-system-message">
-            <input
-              type="checkbox"
-              id="checkbox-system"
-              name="standaard-checkbox"
-              class="system"
-            />
+            <input type="checkbox" id="checkbox-system" name="standaard-checkbox" class="system" />
             <label for="checkbox-system">Lorem ipsum dolor sit amet</label>
             <p class="system" id="checkbox-system-message">
               <span>systeembericht:</span> Lorem ipsum dolor sit amet
@@ -697,7 +703,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h3>Benodigd</h3>
         <ul>
