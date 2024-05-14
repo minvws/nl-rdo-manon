@@ -60,12 +60,7 @@
             <label for="nota-bene-input">Ipsum</label>
             <div>
               <span class="nota-bene">Dit veld is verplicht</span>
-              <input
-                id="nota-bene-input"
-                name="nota-bene-input"
-                placeholder="lorem ipsum"
-                type="text"
-              />
+              <input id="nota-bene-input" name="nota-bene-input" type="text" />
             </div>
           </div>
           <button type="submit">Verzend</button>
@@ -80,7 +75,11 @@
     <label for="nota-bene-input">Ipsum</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
-        <input id="nota-bene-input" name="nota-bene-input" placeholder="lorem ipsum" type="text">
+      <input
+        id="nota-bene-input"
+        name="nota-bene-input"
+        type="text"
+      />
     </div>
   </div>
   <button type="submit">Verzend</button>
@@ -93,7 +92,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Benodigd</h3>
