@@ -610,7 +610,6 @@
           <input
             id="form-example-base"
             name="form-example-base"
-            placeholder="voorbeeld text input"
             type="text"
           />
 
@@ -638,7 +637,7 @@
   </div>
 
   <label for="form-example-base">Voorbeeld text input</label>
-  <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+  <input id="form-example-base" name="form-example-base" type="text">
 
   <button type="submit">Verzend</button>
 </form>
@@ -668,7 +667,6 @@
             <input
               id="form-example-base"
               name="form-example-base"
-              placeholder="voorbeeld text input"
               type="text"
             />
           </div>
@@ -697,7 +695,7 @@
 
   <div>
     <label for="form-example-base">Voorbeeld text input</label>
-    <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+    <input id="form-example-base" name="form-example-base" type="text">
   </div>
   <button type="submit">Verzend</button>
 </form>
@@ -722,7 +720,6 @@
               <input
                 id="form-example-base"
                 name="form-example-base"
-                placeholder="voorbeeld text input"
                 type="text"
               />
             </div>
@@ -748,7 +745,7 @@
 
     <div>
       <label for="form-example-base">Voorbeeld text input</label>
-      <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+      <input id="form-example-base" name="form-example-base" type="text">
     </div>
   </fieldset>
 
@@ -781,7 +778,6 @@
               <input
                 id="example-input-help-required"
                 name="voorbeeld-text-input"
-                placeholder="lorem ipsum"
                 type="text"
                 aria-describedby="example-input-help-required-message"
                 required
@@ -826,7 +822,6 @@
       <input
         id="example-input-help-required"
         name="voorbeeld-text-input"
-        placeholder="lorem ipsum"
         type="text"
         aria-describedby="example-input-help-required-message"
         required
