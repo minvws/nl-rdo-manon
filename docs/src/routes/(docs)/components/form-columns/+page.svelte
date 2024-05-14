@@ -54,7 +54,6 @@
               <label for="voorbeeld-1-date-1-start">van</label>
               <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" />
             </div>
-
             <div>
               <label for="voorbeeld-1-date-1-end">tot</label>
               <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" />
@@ -68,9 +67,16 @@
           language="html"
           code={`
 <form action="" method="post">
-  <label for="form-example-base">Voorbeeld text input</label>
-  <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
-
+  <div class="column-2">
+    <div>
+      <label for="voorbeeld-1-date-1-start">van</label>
+      <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" />
+    </div>
+    <div>
+      <label for="voorbeeld-1-date-1-end">tot</label>
+      <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" />
+    </div>
+  </div>
   <button type="submit">Verzend</button>
 </form>
 `}
