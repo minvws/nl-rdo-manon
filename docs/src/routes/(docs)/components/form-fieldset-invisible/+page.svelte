@@ -48,22 +48,10 @@
         <form action="" method="post">
           <fieldset>
             <legend>Fieldset test</legend>
-
             <label for="form-example-base">Voorbeeld text input</label>
-            <input
-              id="form-example-base"
-              name="form-example-base"
-              placeholder="voorbeeld text input"
-              type="text"
-            />
-
+            <input id="form-example-base" name="form-example-base" type="text" />
             <label for="form-example-base-2">Voorbeeld text input</label>
-            <input
-              id="form-example-base-2"
-              name="form-example-base-2"
-              placeholder="voorbeeld text input"
-              type="text"
-            />
+            <input id="form-example-base-2" name="form-example-base-2" type="text" />
           </fieldset>
           <button type="submit">Verzend</button>
         </form>
@@ -75,16 +63,21 @@
 <form action="" method="post">
   <fieldset>
     <legend>Fieldset test</legend>
-
     <label for="form-example-base">Voorbeeld text input</label>
-    <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
-
+    <input
+      id="form-example-base"
+      name="form-example-base"
+      type="text"
+    />
     <label for="form-example-base-2">Voorbeeld text input</label>
-    <input id="form-example-base-2" name="form-example-base-2" placeholder="voorbeeld text input" type="text">
+    <input
+      id="form-example-base-2"
+      name="form-example-base-2"
+      type="text"
+    />
   </fieldset>
   <button type="submit">Verzend</button>
 </form>
-
 `}
         />
       </section>
@@ -93,7 +86,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h3>Benodigd</h3>
         <ul>
