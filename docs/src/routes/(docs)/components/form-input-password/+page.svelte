@@ -68,12 +68,9 @@
             id="input-password-1"
             name="input-password-1"
             pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
-            placeholder="wachtwoord"
-            title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
             type="password"
             aria-describedby="input-password-1-message"
           />
-
           <button type="submit">Verzend</button>
         </form>
 
@@ -84,16 +81,17 @@
           code={`
 <form action="" method="post">
   <label for="input-password-1">Wachtwoord</label>
-  <p class="explanation" id="input-password-1-message"><span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer.</p>
+  <p class="explanation" id="input-password-1-message">
+    <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter,
+    1 kleine letter en 1 cijfer.
+  </p>
   <input
     id="input-password-1"
     name="input-password-1"
-    pattern="{"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}"
-    placeholder="wachtwoord"
-    title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
+    pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
     type="password"
-    aria-describedby="input-password-1-message">
-
+    aria-describedby="input-password-1-message"
+  />
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -102,22 +100,19 @@
         <h4>Toelichting gegroepeerd met het invoerveld</h4>
         <form action="" method="post">
           <div>
-            <label for="input-password-1">Wachtwoord</label>
-            <p class="explanation" id="input-password-1-message">
+            <label for="input-password-2">Wachtwoord</label>
+            <p class="explanation" id="input-password-2-message">
               <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1
               hoofdletter, 1 kleine letter en 1 cijfer.
             </p>
             <input
-              id="input-password-1"
-              name="input-password-1"
+              id="input-password-2"
+              name="input-password-2"
               pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
-              placeholder="wachtwoord"
-              title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
               type="password"
-              aria-describedby="input-password-1-message"
+              aria-describedby="input-password-2-message"
             />
           </div>
-
           <button type="submit">Verzend</button>
         </form>
 
@@ -128,18 +123,19 @@
           code={`
 <form action="" method="post">
   <div>
-    <label for="input-password-1">Wachtwoord</label>
-    <p class="explanation" id="input-password-1-message"><span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer.</p>
+    <label for="input-password-2">Wachtwoord</label>
+    <p class="explanation" id="input-password-2-message">
+      <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1
+      hoofdletter, 1 kleine letter en 1 cijfer.
+    </p>
     <input
-      id="input-password-1"
-      name="input-password-1"
-      pattern="{"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}"
-      placeholder="wachtwoord"
-      title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
+      id="input-password-2"
+      name="input-password-2"
+      pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
       type="password"
-      aria-describedby="input-password-1-message">
+      aria-describedby="input-password-2-message"
+    />
   </div>
-
   <button type="submit">Verzend</button>
 </form>
 `}
