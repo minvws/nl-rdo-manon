@@ -24,13 +24,8 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <label for="voorbeeld-tekstveld-base">Bericht</label>
-          <textarea
-            id="voorbeeld-tekstveld-base"
-            name="voorbeeld-tekstveld-base"
-            placeholder="Jouw vraag of opmerking"
-            rows="5"
+          <textarea id="voorbeeld-tekstveld-base" name="voorbeeld-tekstveld-base" rows="5"
           ></textarea>
-
           <button type="submit">Verzend</button>
         </form>
 
@@ -40,8 +35,8 @@
           code={`
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-base">Bericht</label>
-  <textarea id="voorbeeld-tekstveld-base" name="voorbeeld-tekstveld-base" placeholder="Jouw vraag of opmerking"></textarea>
-
+  <textarea id="voorbeeld-tekstveld-base" name="voorbeeld-tekstveld-base" rows="5"
+  ></textarea>
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -52,14 +47,9 @@
         <form action="" method="post">
           <div>
             <label for="voorbeeld-tekstveld-div">Bericht</label>
-            <textarea
-              id="voorbeeld-tekstveld-div"
-              name="voorbeeld-tekstveld-div"
-              placeholder="Jouw vraag of opmerking"
-              rows="5"
+            <textarea id="voorbeeld-tekstveld-div" name="voorbeeld-tekstveld-div" rows="5"
             ></textarea>
           </div>
-
           <button type="submit">Verzend</button>
         </form>
 
@@ -70,9 +60,9 @@
 <form action="" method="post">
   <div>
     <label for="voorbeeld-tekstveld-div">Bericht</label>
-    <textarea id="voorbeeld-tekstveld-div" name="voorbeeld-tekstveld-1" placeholder="Jouw vraag of opmerking"></textarea>
+    <textarea id="voorbeeld-tekstveld-div" name="voorbeeld-tekstveld-div" rows="5"
+    ></textarea>
   </div>
-
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -83,14 +73,9 @@
         <form action="" method="post">
           <section>
             <label for="voorbeeld-tekstveld-section">Bericht</label>
-            <textarea
-              id="voorbeeld-tekstveld-section"
-              name="voorbeeld-tekstveld-section"
-              placeholder="Jouw vraag of opmerking"
-              rows="5"
+            <textarea id="voorbeeld-tekstveld-section" name="voorbeeld-tekstveld-section" rows="5"
             ></textarea>
           </section>
-
           <button type="submit">Verzend</button>
         </form>
 
@@ -101,9 +86,12 @@
 <form action="" method="post">
   <section>
     <label for="voorbeeld-tekstveld-section">Bericht</label>
-    <textarea id="voorbeeld-tekstveld-section" name="voorbeeld-tekstveld-section" placeholder="Jouw vraag of opmerking"></textarea>
+    <textarea
+      id="voorbeeld-tekstveld-section"
+      name="voorbeeld-tekstveld-section"
+      rows="5"
+    ></textarea>
   </section>
-
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -115,14 +103,9 @@
           <fieldset>
             <legend>Tekstveld binnen een fieldset voorbeeld</legend>
             <label for="voorbeeld-tekstveld-fieldset">Bericht</label>
-            <textarea
-              id="voorbeeld-tekstveld-fieldset"
-              name="voorbeeld-tekstveld-fieldset"
-              placeholder="Jouw vraag of opmerking"
-              rows="5"
+            <textarea id="voorbeeld-tekstveld-fieldset" name="voorbeeld-tekstveld-fieldset" rows="5"
             ></textarea>
           </fieldset>
-
           <button type="submit">Verzend</button>
         </form>
 
@@ -134,9 +117,12 @@
   <fieldset>
     <legend>Tekstveld binnen een fieldset voorbeeld</legend>
     <label for="voorbeeld-tekstveld-fieldset">Bericht</label>
-    <textarea id="voorbeeld-tekstveld-fieldset" name="voorbeeld-tekstveld-fieldset" placeholder="Jouw vraag of opmerking"></textarea>
+    <textarea
+      id="voorbeeld-tekstveld-fieldset"
+      name="voorbeeld-tekstveld-fieldset"
+      rows="5"
+    ></textarea>
   </fieldset>
-
   <button type="submit">Verzend</button>
 </form>
 `}
