@@ -31,7 +31,7 @@ form {
     div {
       display: block;
       /* used to re-renders the div so long labels won't run out of the div */
-      float: none;
+      float: left;
       width: 100%;
 
       > * {

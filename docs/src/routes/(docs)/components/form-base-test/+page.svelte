@@ -367,13 +367,13 @@
         <h3>Link direct binnen formulier</h3>
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
-          <label for="form-example-base">Voorbeeld text input</label>
+          <label for="form-link">Voorbeeld text input</label>
 
           <div>
-            <span class="nota-bene" id="form-example-base-explanation"
+            <span class="nota-bene" id="form-link-explanation"
               >Voorbeeld van een instructietekst
             </span>
-            <input id="form-example-base" name="form-example-base" type="text" />
+            <input id="form-link" name="form-link" type="text" />
           </div>
 
           <a href="form-base-test">Lorem ipsum dolor set</a>
@@ -386,13 +386,13 @@
           language="html"
           code={`
 <form action="" method="post">
-  <label for="form-example-base">Voorbeeld text input</label>
+  <label for="form-link">Voorbeeld text input</label>
 
   <div>
-    <span class="nota-bene" id="form-example-base-explanation"
+    <span class="nota-bene" id="form-link-explanation"
       >Voorbeeld van een instructietekst
     </span>
-    <input id="form-example-base" name="form-example-base" type="text" />
+    <input id="form-link" name="form-link" type="text" />
   </div>
 
   <a href="#">Lorem ipsum dolor set</a>
@@ -993,10 +993,13 @@
                   value="value long name"
                   class="error"
                   aria-label="foutmelding"
+                  aria-describedby="radio-list-long-name-2-message"
                 />
                 <label for="radio-list-long-name-2">Radio label met error</label>
               </div>
-              <p class="error" id=""><span>Foutmelding:</span> Lorem ipsum</p>
+              <p class="error" id="radio-list-long-name-2-message">
+                <span>Foutmelding:</span> Lorem ipsum
+              </p>
             </div>
           </fieldset>
 
@@ -1371,7 +1374,7 @@
           <div>
             <label for="voorbeeld-phonenumber-2">Voorbeeld telefoonnummer</label>
             <div>
-              <span class="nota-bene" id="voorbeeld-phonenumber-3-explanation"
+              <span class="nota-bene" id="voorbeeld-phonenumber-2-explanation"
                 >Vul jouw telefoonnummer in, bijvoorbeeld: 0612345678
               </span>
 
@@ -1379,33 +1382,40 @@
                 id="voorbeeld-phonenumber-2"
                 pattern={"[0-9]{10}"}
                 name="voorbeeld-phonenumber-2"
-                placeholder="e.g 0612345678"
                 type="tel"
+                aria-describedby="voorbeeld-phonenumber-2-explanation"
               />
             </div>
           </div>
 
           <div>
             <label for="voorbeeld-tekstveld-2">Voorbeeld tekstveld</label>
-            <textarea
-              id="voorbeeld-tekstveld-2"
-              name="voorbeeld-tekstveld-2"
-              placeholder="Jouw vraag of opmerking"
-              rows="5"
-            ></textarea>
+            <div>
+              <span class="nota-bene" id="voorbeeld-tekstveld-2-explanation"
+                >Voorbeeld van een instructietekst
+              </span>
+              <textarea
+                id="voorbeeld-tekstveld-2"
+                name="voorbeeld-tekstveld-2"
+                rows="5"
+                aria-describedby="voorbeeld-tekstveld-2-explanation"
+              ></textarea>
+            </div>
           </div>
 
           <div>
             <label for="text-form-username-4">Gebruikersnaam</label>
             <div class="required">
-              <span class="nota-bene">Dit veld is verplicht</span>
+              <span class="nota-bene" id="text-form-username-4-explanation"
+                >Dit veld is verplicht</span
+              >
               <input
                 id="text-form-username-4"
                 name="text-form-username-4"
-                placeholder="gebruikersnaam"
                 title="Gebruikersnaam"
                 type="text"
                 required
+                aria-describedby="text-form-username-4-explanation"
               />
             </div>
           </div>
@@ -1413,13 +1423,13 @@
           <div class="required">
             <label for="inputveld-knop">Voorbeeld inputveld met knop</label>
             <div>
-              <span class="nota-bene">Dit veld is verplicht</span>
+              <span class="nota-bene" id="inputveld-knop-explanation">Dit veld is verplicht</span>
               <div class="horizontal-view">
                 <input
                   id="inputveld-knop"
                   name="inputveld-knop"
-                  placeholder="Lorem ipsum"
                   type="text"
+                  aria-describedby="inputveld-knop-explanation"
                 />
                 <button class="icon icon-cat">Annuleren</button>
               </div>
@@ -3128,7 +3138,7 @@
           </fieldset>
         </form>
 
-        <h2 id="grouped-options">Gegroepeerde radioknoppen en selectievakken</h2>
+        <h2 id="grouped-options-2">Gegroepeerde radioknoppen en selectievakken</h2>
         <form method="post" class="horizontal-view">
           <fieldset class="grouped-choice-list">
             <legend>Multiple choice radioknoppen en selectievakken test kolommen</legend>
@@ -3403,7 +3413,7 @@
           >
 
           <div>
-            <span class="nota-bene" id="help-simpel-voorbeeld-text-input-error-2-instruction"
+            <span class="nota-bene" id="help-simpel-voorbeeld-text-input-error-2-explanation"
               >Voorbeeld van een instructietekst
             </span>
             <input
@@ -3411,13 +3421,10 @@
               class="error"
               name="help-simpel-voorbeeld-text-input-error-2"
               type="text"
-              aria-describedby="help-simpel-voorbeeld-text-input-error-2-message"
+              aria-describedby="help-simpel-voorbeeld-text-input-error-2-message help-simpel-voorbeeld-text-input-error-2-explanation"
               aria-invalid="true"
             />
-            <p
-              class="error"
-              id="help-simpel-voorbeeld-text-input-error-2-message help-simpel-voorbeeld-text-input-error-2-instruction"
-            >
+            <p class="error" id="help-simpel-voorbeeld-text-input-error-2-message">
               <span>Foutmelding:</span> Lorem ipsum dolor sit amet
             </p>
           </div>
@@ -3433,7 +3440,7 @@
             <div>
               <span
                 class="nota-bene"
-                id="help-simpel-voorbeeld-text-input-explanation-1-instruction"
+                id="help-simpel-voorbeeld-text-input-explanation-1-explanation"
                 >Voorbeeld van een instructietekst
               </span>
               <input
@@ -3441,7 +3448,7 @@
                 class="explanation"
                 name="help-simpel-voorbeeld-text-input-explanation-1"
                 type="text"
-                aria-describedby="help-simpel-voorbeeld-text-input-explanation-1-message help-simpel-voorbeeld-text-input-explanation-1-instruction"
+                aria-describedby="help-simpel-voorbeeld-text-input-explanation-1-message help-simpel-voorbeeld-text-input-explanation-1-explanation"
               />
             </div>
           </div>
@@ -3453,14 +3460,19 @@
             <p class="warning" id="help-simpel-voorbeeld-text-input-warning-1-message">
               <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
             </p>
-            <input
-              id="help-simpel-voorbeeld-text-input-warning-1"
-              class="warning"
-              name="help-simpel-voorbeeld-text-input-warning-1"
-              placeholder="Voorbeeld invoerveld waarschuwing"
-              type="text"
-              aria-describedby="help-simpel-voorbeeld-text-input-warning-1-message"
-            />
+
+            <div>
+              <span class="nota-bene" id="help-simpel-voorbeeld-text-input-warning-1-explanation"
+                >Voorbeeld van een instructietekst
+              </span>
+              <input
+                id="help-simpel-voorbeeld-text-input-warning-1"
+                class="warning"
+                name="help-simpel-voorbeeld-text-input-warning-1"
+                type="text"
+                aria-describedby="help-simpel-voorbeeld-text-input-warning-1-message help-simpel-voorbeeld-text-input-warning-1-explanation"
+              />
+            </div>
           </div>
 
           <label for="help-simpel-voorbeeld-tekstveld-2"
@@ -3470,25 +3482,35 @@
             <p class="explanation" id="help-simpel-voorbeeld-tekstveld-2-message">
               <span>Toelichting:</span> Lorem ipsum dolor sit amet.
             </p>
-            <textarea
-              id="help-simpel-voorbeeld-tekstveld-2"
-              name="help-simpel-voorbeeld-tekstveld-2"
-              placeholder="Jouw vraag of opmerking"
-              rows="5"
-              aria-describedby="help-simpel-voorbeeld-tekstveld-2-message"
-            ></textarea>
+
+            <div>
+              <span class="nota-bene" id="help-simpel-voorbeeld-tekstveld-2-explanation"
+                >Voorbeeld van een instructietekst
+              </span>
+              <textarea
+                id="help-simpel-voorbeeld-tekstveld-2"
+                name="help-simpel-voorbeeld-tekstveld-2"
+                rows="5"
+                aria-describedby="help-simpel-voorbeeld-tekstveld-2-message help-simpel-voorbeeld-tekstveld-2-explanation"
+              ></textarea>
+            </div>
           </div>
 
           <label for="help-simpel-voorbeeld-text-input-collapsed-explanation-1"
             >Voorbeeld invoerveld met ingeklapte toelichting</label
           >
           <div>
+            <span
+              class="nota-bene"
+              id="help-simpel-voorbeeld-text-input-collapsed-explanation-1-explanation"
+              >Voorbeeld van een instructietekst
+            </span>
             <input
               id="help-simpel-voorbeeld-text-input-collapsed-explanation-1"
               class="explanation"
               name="help-simpel-voorbeeld-text-input-collapsed-explanation-1"
-              placeholder="Voorbeeld invoerveld toelichting"
               type="text"
+              aria-describedby="help-simpel-voorbeeld-text-input-collapsed-explanation-1-explanation"
             />
             <p
               class="explanation"
@@ -3503,12 +3525,14 @@
             >Voorbeeld tekstveld met reguliere toelichting</label
           >
           <div>
+            <span class="nota-bene" id="help-simpel-voorbeeld-tekstveld-3-explanation"
+              >Voorbeeld van een instructietekst
+            </span>
             <textarea
               id="help-simpel-voorbeeld-tekstveld-3"
               name="help-simpel-voorbeeld-tekstveld-3"
-              placeholder="Jouw vraag of opmerking"
               rows="5"
-              aria-describedby="help-simpel-voorbeeld-tekstveld-3-message"
+              aria-describedby="help-simpel-voorbeeld-tekstveld-3-message help-simpel-voorbeeld-tekstveld-3-explanation"
             ></textarea>
             <p class="explanation" id="help-simpel-voorbeeld-tekstveld-3-message">
               <span>Toelichting:</span> Lorem ipsum dolor sit amet.
@@ -3681,22 +3705,32 @@
 
           <div>
             <label for="help-simpel-voorbeeld-text-input-2">Voorbeeld text input</label>
-            <input
-              id="help-simpel-voorbeeld-text-input-2"
-              name="help-simpel-voorbeeld-text-input-2"
-              placeholder="voorbeeld text input"
-              type="text"
-            />
+            <div>
+              <span class="nota-bene" id="help-simpel-voorbeeld-text-input-2-explanation"
+                >Voorbeeld van een instructietekst
+              </span>
+              <input
+                id="help-simpel-voorbeeld-text-input-2"
+                name="help-simpel-voorbeeld-text-input-2"
+                type="text"
+                aria-describedby="help-simpel-voorbeeld-text-input-2-explanation"
+              />
+            </div>
           </div>
 
           <div>
             <label for="help-simpel-voorbeeld-tekstveld-4">Voorbeeld tekstveld</label>
-            <textarea
-              id="help-simpel-voorbeeld-tekstveld-4"
-              name="help-simpel-voorbeeld-tekstveld-4"
-              placeholder="Jouw vraag of opmerking"
-              rows="5"
-            ></textarea>
+            <div>
+              <span class="nota-bene" id="help-simpel-voorbeeld-tekstveld-4-explanation"
+                >Voorbeeld van een instructietekst
+              </span>
+              <textarea
+                id="help-simpel-voorbeeld-tekstveld-4"
+                name="help-simpel-voorbeeld-tekstveld-4"
+                rows="5"
+                aria-describedby="help-simpel-voorbeeld-tekstveld-4-explanation"
+              ></textarea>
+            </div>
           </div>
 
           <div class="checkbox">
@@ -3715,13 +3749,15 @@
               >Voorbeeld invoerveld foutmelding</label
             >
             <div>
+              <span class="nota-bene" id="help-simpel-voorbeeld-text-input-error-1-explanation"
+                >Voorbeeld van een instructietekst
+              </span>
               <input
                 id="help-simpel-voorbeeld-text-input-error-1"
                 class="error"
                 name="help-simpel-voorbeeld-text-input-error-1"
-                placeholder="Voorbeeld invoerveld foutmelding"
                 type="text"
-                aria-describedby="help-simpel-voorbeeld-text-input-error-1-message"
+                aria-describedby="help-simpel-voorbeeld-text-input-error-1-message help-simpel-voorbeeld-text-input-error-1-explanation"
                 aria-invalid="true"
               />
               <p class="error" id="help-simpel-voorbeeld-text-input-error-1-message">
@@ -3738,14 +3774,21 @@
               <p class="explanation" id="help-simpel-voorbeeld-text-input-explanation-2-message">
                 <span>Toelichting:</span> Lorem ipsum dolor sit amet.
               </p>
-              <input
-                id="help-simpel-voorbeeld-text-input-explanation-2"
-                class="explanation"
-                name="help-simpel-voorbeeld-text-input-explanation-2"
-                placeholder="Voorbeeld invoerveld toelichting"
-                type="text"
-                aria-describedby="help-simpel-voorbeeld-text-input-explanation-2-message"
-              />
+
+              <div>
+                <span
+                  class="nota-bene"
+                  id="help-simpel-voorbeeld-text-input-explanation-2-explanation"
+                  >Voorbeeld van een instructietekst
+                </span>
+                <input
+                  id="help-simpel-voorbeeld-text-input-explanation-2"
+                  class="explanation"
+                  name="help-simpel-voorbeeld-text-input-explanation-2"
+                  type="text"
+                  aria-describedby="help-simpel-voorbeeld-text-input-explanation-2-message help-simpel-voorbeeld-text-input-explanation-2-explanation"
+                />
+              </div>
             </div>
           </div>
 
@@ -3757,14 +3800,19 @@
               <p class="warning" id="help-simpel-voorbeeld-text-input-warning-2-message">
                 <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
               </p>
-              <input
-                id="help-simpel-voorbeeld-text-input-warning-2"
-                class="warning"
-                name="help-simpel-voorbeeld-text-input-warning-2"
-                placeholder="Voorbeeld invoerveld waarschuwing"
-                type="text"
-                aria-describedby="help-simpel-voorbeeld-text-input-warning-2-message"
-              />
+
+              <div>
+                <span class="nota-bene" id="help-simpel-voorbeeld-text-input-warning-2-explanation"
+                  >Voorbeeld van een instructietekst
+                </span>
+                <input
+                  id="help-simpel-voorbeeld-text-input-warning-2"
+                  class="warning"
+                  name="help-simpel-voorbeeld-text-input-warning-2"
+                  type="text"
+                  aria-describedby="help-simpel-voorbeeld-text-input-warning-2-message help-simpel-voorbeeld-text-input-warning-2-explanation"
+                />
+              </div>
             </div>
           </div>
 
@@ -3776,14 +3824,18 @@
               <p class="explanation" id="help-simpel-voorbeeld-tekstveld-5-message">
                 <span>Toelichting:</span> Lorem ipsum dolor sit amet.
               </p>
-              <textarea
-                id="help-simpel-voorbeeld-tekstveld-5"
-                name="help-simpel-voorbeeld-tekstveld-5"
-                placeholder="Jouw vraag of opmerking"
-                rows="5"
-                aria-describedby="help-simpel-voorbeeld-tekstveld-5-message"
-              >
-              </textarea>
+              <div>
+                <span class="nota-bene" id="help-simpel-voorbeeld-tekstveld-5-explanation"
+                  >Voorbeeld van een instructietekst
+                </span>
+                <textarea
+                  id="help-simpel-voorbeeld-tekstveld-5"
+                  name="help-simpel-voorbeeld-tekstveld-5"
+                  rows="5"
+                  aria-describedby="help-simpel-voorbeeld-tekstveld-5-message help-simpel-voorbeeld-tekstveld-5-explanation"
+                >
+                </textarea>
+              </div>
             </div>
           </div>
 
@@ -3792,13 +3844,17 @@
               >Voorbeeld invoerveld met ingeklapte toelichting</label
             >
             <div>
+              <span
+                class="nota-bene"
+                id="help-simpel-voorbeeld-text-input-collapsed-explanation-2-explanation"
+                >Voorbeeld van een instructietekst
+              </span>
               <input
                 id="help-simpel-voorbeeld-text-input-collapsed-explanation-2"
                 class="explanation"
                 name="help-simpel-voorbeeld-text-input-collapsed-explanation-2"
-                placeholder="Voorbeeld invoerveld toelichting"
                 type="text"
-                aria-describedby="help-simpel-voorbeeld-text-input-collapsed-explanation-2-message"
+                aria-describedby="help-simpel-voorbeeld-text-input-collapsed-explanation-2-message help-simpel-voorbeeld-text-input-collapsed-explanation-2-explanation"
               />
               <p
                 class="explanation"
@@ -3816,12 +3872,14 @@
               >Voorbeeld tekstveld met reguliere toelichting</label
             >
             <div>
+              <span class="nota-bene" id="help-simpel-voorbeeld-tekstveld-6-explanation"
+                >Voorbeeld van een instructietekst
+              </span>
               <textarea
                 id="help-simpel-voorbeeld-tekstveld-6"
                 name="help-simpel-voorbeeld-tekstveld-6"
-                placeholder="Jouw vraag of opmerking"
                 rows="5"
-                aria-describedby="help-simpel-voorbeeld-tekstveld-6-message"
+                aria-describedby="help-simpel-voorbeeld-tekstveld-6-message help-simpel-voorbeeld-tekstveld-6-explanation"
               ></textarea>
 
               <p class="explanation" id="help-simpel-voorbeeld-tekstveld-6-message">
