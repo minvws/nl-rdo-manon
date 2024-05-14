@@ -518,13 +518,13 @@
         <form action="" method="post">
           <div class="column-2">
             <div>
-              <label for="voorbeeld-1-date-1-start">van</label>
-              <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" />
+              <label for="voorbeeld-date-start">van</label>
+              <input id="voorbeeld-date-start" name="voorbeeld-date-start" />
             </div>
 
             <div>
-              <label for="voorbeeld-1-date-1-end">tot</label>
-              <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" />
+              <label for="voorbeeld-date-end">tot</label>
+              <input id="voorbeeld-date-end" name="voorbeeld-date-end" />
             </div>
           </div>
           <button type="submit">Verzend</button>
@@ -537,13 +537,13 @@
 <form action="" method="post">
   <div class="column-2">
     <div>
-      <label for="voorbeeld-1-date-1-start">van</label>
-      <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start">
+      <label for="voorbeeld-date-start">van</label>
+      <input id="voorbeeld-date-start" name="voorbeeld-date-start">
     </div>
 
     <div>
-      <label for="voorbeeld-1-date-1-end">tot</label>
-      <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end">
+      <label for="voorbeeld-date-end">tot</label>
+      <input id="voorbeeld-date-end" name="voorbeeld-date-end">
     </div>
   </div>
   <button type="submit">Verzend</button>
@@ -557,13 +557,13 @@
           <fieldset class="column-2">
             <legend>Datum gecombineerd op een regel test</legend>
             <div>
-              <label for="voorbeeld-1-date-1-start">van</label>
-              <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" />
+              <label for="voorbeeld-fieldset-date-start">van</label>
+              <input id="voorbeeld-fieldset-date-start" name="voorbeeld-fieldset-date-start" />
             </div>
 
             <div>
-              <label for="voorbeeld-1-date-1-end">tot</label>
-              <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" />
+              <label for="voorbeeld-fieldset-date-end">tot</label>
+              <input id="voorbeeld-fieldset-date-end" name="voorbeeld-fieldset-date-end" />
             </div>
           </fieldset>
           <button type="submit">Verzend</button>
@@ -577,13 +577,13 @@
   <fieldset class="column-2">
     <legend>Datum gecombineerd op een regel test</legend>
     <div>
-      <label for="voorbeeld-1-date-1-start">van</label>
-      <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start">
+      <label for="voorbeeld-fieldset-date-start">van</label>
+      <input id="voorbeeld-fieldset-date-start" name="voorbeeld-fieldset-date-start">
     </div>
 
     <div>
-      <label for="voorbeeld-1-date-1-end">tot</label>
-      <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end">
+      <label for="voorbeeld-fieldset-date-end">tot</label>
+      <input id="voorbeeld-fieldset-date-end" name="voorbeeld-1-date-3-end">
     </div>
   </fieldset>
   <button type="submit">Verzend</button>
