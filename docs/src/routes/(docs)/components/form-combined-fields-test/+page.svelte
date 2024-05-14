@@ -56,12 +56,12 @@
         <form action="" method="post">
           <div class="combined-field">
             <div>
-              <label for="voorbeeld-combined-inputs">Ipsum</label>
-              <input id="voorbeeld-combined-inputs" name="voorbeeld-combined-inputs" type="text" />
+              <label for="voorbeeld-combined-inputs-1">Ipsum</label>
+              <input id="voorbeeld-combined-inputs-1" name="voorbeeld-combined-inputs-1" type="text" />
             </div>
             <div>
-              <label for="voorbeeld-combined-inputs">Ipsum</label>
-              <input id="voorbeeld-combined-inputs" name="voorbeeld-combined-inputs" type="text" />
+              <label for="voorbeeld-combined-inputs-2">Ipsum</label>
+              <input id="voorbeeld-combined-inputs-2" name="voorbeeld-combined-inputs-2" type="text" />
             </div>
           </div>
 
@@ -75,12 +75,12 @@
 <form action="" method="post">
   <div class="combined-field">
     <div>
-      <label for="voorbeeld-combined-inputs">Ipsum</label>
-      <input id="voorbeeld-combined-inputs" name="voorbeeld-combined-inputs" type="text">
+      <label for="voorbeeld-combined-inputs-1">Ipsum</label>
+      <input id="voorbeeld-combined-inputs-1" name="voorbeeld-combined-inputs-1" type="text">
     </div>
     <div>
-      <label for="voorbeeld-combined-inputs">Ipsum</label>
-      <input id="voorbeeld-combined-inputs" name="voorbeeld-combined-inputs" type="text">
+      <label for="voorbeeld-combined-inputs-2">Ipsum</label>
+      <input id="voorbeeld-combined-inputs-2" name="voorbeeld-combined-inputs-2" type="text">
     </div>
   </div>
 
