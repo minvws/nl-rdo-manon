@@ -606,12 +606,8 @@
             </ul>
           </div>
 
-          <label for="form-example-base">Voorbeeld text input</label>
-          <input
-            id="form-example-base"
-            name="form-example-base"
-            type="text"
-          />
+          <label for="form-example-1">Voorbeeld text input</label>
+          <input id="form-example-1" name="form-example-1" type="text" />
 
           <button type="submit">Verzend</button>
         </form>
@@ -636,8 +632,8 @@
     </ul>
   </div>
 
-  <label for="form-example-base">Voorbeeld text input</label>
-  <input id="form-example-base" name="form-example-base" type="text">
+  <label for="form-example-1">Voorbeeld text input</label>
+  <input id="form-example-1" name="form-example-1" type="text">
 
   <button type="submit">Verzend</button>
 </form>
@@ -663,12 +659,8 @@
           </div>
 
           <div>
-            <label for="form-example-base">Voorbeeld text input</label>
-            <input
-              id="form-example-base"
-              name="form-example-base"
-              type="text"
-            />
+            <label for="form-example-2">Voorbeeld text input</label>
+            <input id="form-example-2" name="form-example-2" type="text" />
           </div>
           <button type="submit">Verzend</button>
         </form>
@@ -694,8 +686,8 @@
   </div>
 
   <div>
-    <label for="form-example-base">Voorbeeld text input</label>
-    <input id="form-example-base" name="form-example-base" type="text">
+    <label for="form-example-2">Voorbeeld text input</label>
+    <input id="form-example-2" name="form-example-2" type="text">
   </div>
   <button type="submit">Verzend</button>
 </form>
@@ -717,11 +709,7 @@
 
             <div>
               <label for="form-example-base">Voorbeeld text input</label>
-              <input
-                id="form-example-base"
-                name="form-example-base"
-                type="text"
-              />
+              <input id="form-example-base" name="form-example-base" type="text" />
             </div>
           </fieldset>
 
