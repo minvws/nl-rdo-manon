@@ -43,6 +43,11 @@
             Zorg dat de checkbox een toegankelijk label heeft dat de rij uniek identificeert.
             <ul>
               <li>
+                Staat de checkbox in een cel met tekst? Gebruik dan bij voorkeur die tekst als
+                label. Identificeert de tekst de rij niet (voldoende)? Overweeg dan of de plaatsing
+                van de checkbox wel duidelijk genoeg is.
+              </li>
+              <li>
                 Gebruik als label bijvoorbeeld een naam, ID of andere unieke informatie uit de
                 tabelrij. Zorg dat het label geen informatie bevat die niet ook visueel aanwezig is.
               </li>
@@ -54,6 +59,12 @@
                 met het <code>id</code> van de checkbox.
               </li>
             </ul>
+          </li>
+          <li>
+            Staan de checkboxes in een eigen kolom zonder header-tekst? Voeg dan een visueel
+            verborgen tekst toe aan de header. Bijvoorbeeld: <code
+              >{`<th><span class="visually-hidden">Selectie</span></th>`}</code
+            >.
           </li>
         </ol>
 
