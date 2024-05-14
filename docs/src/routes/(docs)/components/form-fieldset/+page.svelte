@@ -47,16 +47,13 @@
         <form action="" method="post">
           <fieldset>
             <legend>Titel</legend>
-
             <label for="example-input-base">Voorbeeld invoerveld</label>
             <input
               id="example-input-base"
               name="example-input-base"
-              placeholder="voorbeeld invoerveld"
               type="text"
             />
           </fieldset>
-
           <button type="submit">Verzend</button>
         </form>
 
@@ -67,15 +64,13 @@
 <form action="" method="post">
   <fieldset>
     <legend>Titel</legend>
-
     <label for="example-input-base">Voorbeeld invoerveld</label>
     <input
       id="example-input-base"
       name="example-input-base"
-      placeholder="voorbeeld invoerveld"
-      type="text">
+      type="text"
+    />
   </fieldset>
-
   <button type="submit">Verzend</button>
 </form>
 `}
