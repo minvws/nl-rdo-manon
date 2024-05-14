@@ -588,7 +588,6 @@
             <input
               id="datalist-explanation"
               class="explanation"
-              placeholder="Begin met typen of klik om een optie uit te kiezen"
               list="example-list-explanation"
               aria-describedby="datalist-explanation-message"
             />
@@ -611,16 +610,21 @@
 <form action="" method="post">
   <label for="datalist-explanation">Input</label>
   <div>
-    <input id="datalist-explanation" class="explanation" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-explanation" aria-describedby="datalist-explanation-message">
+    <input
+      id="datalist-explanation"
+      class="explanation"
+      list="example-list-explanation"
+      aria-describedby="datalist-explanation-message"
+    />
     <p class="explanation" id="datalist-explanation-message">
       <span>toelichting:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
 
   <datalist id="example-list-explanation">
-    <option value="Optie 1">
-    <option value="Optie 2">
-    <option value="Optie 3">
+    <option value="Optie 1"></option>
+    <option value="Optie 2"></option>
+    <option value="Optie 3"></option>
   </datalist>
 </form>
 `}
