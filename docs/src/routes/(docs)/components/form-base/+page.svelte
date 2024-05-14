@@ -59,12 +59,18 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <label for="form-example-base">Voorbeeld text input</label>
-          <input
-            id="form-example-base"
-            name="form-example-base"
-            placeholder="voorbeeld text input"
-            type="text"
-          />
+
+          <div>
+            <span class="nota-bene" id="form-example-base-explanation"
+              >Voorbeeld van een instructietekst
+            </span>
+            <input
+              id="form-example-base"
+              name="form-example-base"
+              type="text"
+              aria-describedby="form-example-base-explanation"
+            />
+          </div>
 
           <button type="submit">Verzend</button>
         </form>
@@ -75,7 +81,18 @@
           code={`
 <form action="" method="post">
   <label for="form-example-base">Voorbeeld text input</label>
-  <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+
+  <div>
+    <span class="nota-bene" id="form-example-base-explanation"
+      >Voorbeeld van een instructietekst
+    </span>
+    <input
+      id="form-example-base"
+      name="form-example-base"
+      type="text"
+      aria-describedby="form-example-base-explanation"
+    />
+  </div>
 
   <button type="submit">Verzend</button>
 </form>

@@ -62,7 +62,7 @@
         <form action="" method="post">
           <label for="voorbeeld-tekstveld-base">Bericht</label>
           <span class="nota-bene" id="voorbeeld-tekstveld-base-explanation"
-            >Stel jouw vraag of voeg jouw opmerking toe:
+            >Stel jouw vraag of voeg jouw opmerking toe
           </span>
           <textarea
             id="voorbeeld-tekstveld-base"
