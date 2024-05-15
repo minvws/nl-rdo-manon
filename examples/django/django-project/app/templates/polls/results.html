@@ -11,15 +11,26 @@
   </section>
   <section>
     <div>
-      <h1>{{ question.question_text }}</h1>
+      <h1>Poll: {{ question.question_text }}</h1>
 
-      <ul>
-        {% for choice in question.choice_set.all %}
-        <li>
-          {{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}
-        </li>
-        {% endfor %}
-      </ul>
+      <div class="horizontal-scroll">
+        <table>
+          <caption>Results</caption>
+          <thead>
+            <tr>
+              <th scope="col">Choice</th>
+              <th scope="col">Votes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for choice in question.choice_set.all %}
+            <tr>
+              <td>{{ choice.choice_text }}</td>
+              <td>{{ choice.votes }} vote{{ choice.votes|pluralize }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+      </div>
 
       <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
     </div>

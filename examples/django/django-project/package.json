@@ -1,10 +1,12 @@
 {
   "scripts": {
+    "watch": "concurrently \"npm run css:watch\"",
     "css:watch": "sass -w app/assets/scss/main.scss app/static/css/main.css --load-path=node_modules/",
     "css:build": "sass app/assets/scss/main.scss app/static/css/main.css --load-path=node_modules/"
   },
   "devDependencies": {
-    "sass": "1.75.0"
+    "concurrently": "^8.2.2",
+    "sass": "^1.75.0"
   },
   "dependencies": {
     "@minvws/manon": "16.1.0",

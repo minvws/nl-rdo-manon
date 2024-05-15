@@ -1,15 +1,6 @@
-FROM node:22-alpine as build
-WORKDIR /app
-COPY . .
-
-RUN npm install && \
-  npm run css:build
-
-# ---
-
 FROM python:3.12
 
-COPY --from=build /app /app
+COPY . /app
 
 WORKDIR /app
 
