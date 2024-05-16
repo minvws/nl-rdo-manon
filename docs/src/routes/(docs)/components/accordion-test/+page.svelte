@@ -100,8 +100,8 @@
         <h4>Visueel voorbeeld:</h4>
         <div class="accordion">
           <div>
-            <button id="example-accordion-div-item-1">Voorbeeld-onderwerp 1</button>
-            <div aria-labelledby="example-accordion-div-item-1">
+            <button id="example-1-accordion-item-1">Voorbeeld-onderwerp 1</button>
+            <div aria-labelledby="example-1-accordion-item-1">
               <h1>Titel van de content binnen het accordeon-element</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
@@ -119,8 +119,8 @@
             </div>
           </div>
           <div>
-            <button id="example-accordion-div-item-2">Voorbeeld-onderwerp 2</button>
-            <div aria-labelledby="example-accordion-div-item-2">
+            <button id="example-1-accordion-item-2">Voorbeeld-onderwerp 2</button>
+            <div aria-labelledby="example-1-accordion-item-2">
               <h1>Titel van de content binnen het accordeon-element</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
@@ -145,10 +145,17 @@
           code={`
 <div class="accordion">
   <div>
-    <button id="example-accordion-div-item-1">Voorbeeld-onderwerp 1</button>
-    <div aria-labelledby="example-accordion-div-item-1">
+    <button id="example-1-accordion-item-1">Voorbeeld-onderwerp 1</button>
+    <div aria-labelledby="example-1-accordion-item-1">
       <h1>Titel van de content binnen het accordeon-element</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
+        leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam
+        ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat
+        volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu.
+        Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean
+        quis libero gravida, fringilla odio venenatis, condimentum lorem.
+      </p>
       <ul>
         <li>Lorem ipsum</li>
         <li>Dolor sit amet</li>
@@ -157,10 +164,17 @@
     </div>
   </div>
   <div>
-    <button id="example-accordion-div-item-2">Voorbeeld-onderwerp 2</button>
-    <div aria-labelledby="example-accordion-div-item-2">
+    <button id="example-1-accordion-item-2">Voorbeeld-onderwerp 2</button>
+    <div aria-labelledby="example-1-accordion-item-2">
       <h1>Titel van de content binnen het accordeon-element</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
+        leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam
+        ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat
+        volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu.
+        Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean
+        quis libero gravida, fringilla odio venenatis, condimentum lorem.
+      </p>
       <ul>
         <li>Lorem ipsum</li>
         <li>Dolor sit amet</li>
@@ -176,8 +190,8 @@
         <h4>Visueel voorbeeld:</h4>
         <section class="accordion">
           <div>
-            <button id="example-accordion-div-item-1">Voorbeeld-onderwerp 1</button>
-            <div aria-labelledby="example-accordion-div-item-1">
+            <button id="example-2-accordion-item-1">Voorbeeld-onderwerp 1</button>
+            <div aria-labelledby="example-2-accordion-item-1">
               <h1>Titel van de content binnen het accordeon-element</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
@@ -195,8 +209,8 @@
             </div>
           </div>
           <div>
-            <button id="example-accordion-div-item-2">Voorbeeld-onderwerp 2</button>
-            <div aria-labelledby="example-accordion-div-item-2">
+            <button id="example-2-accordion-item-2">Voorbeeld-onderwerp 2</button>
+            <div aria-labelledby="example-2-accordion-item-2">
               <h1>Titel van de content binnen het accordeon-element</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
@@ -221,10 +235,17 @@
           code={`
 <section class="accordion">
   <div>
-    <button id="example-accordion-div-item-1">Voorbeeld-onderwerp 1</button>
-    <div aria-labelledby="example-accordion-div-item-1">
+    <button id="example-2-accordion-item-1">Voorbeeld-onderwerp 1</button>
+    <div aria-labelledby="example-2-accordion-item-1">
       <h1>Titel van de content binnen het accordeon-element</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
+        leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam
+        ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat
+        volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu.
+        Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean
+        quis libero gravida, fringilla odio venenatis, condimentum lorem.
+      </p>
       <ul>
         <li>Lorem ipsum</li>
         <li>Dolor sit amet</li>
@@ -233,10 +254,17 @@
     </div>
   </div>
   <div>
-    <button id="example-accordion-div-item-2">Voorbeeld-onderwerp 2</button>
-    <div aria-labelledby="example-accordion-div-item-2">
+    <button id="example-2-accordion-item-2">Voorbeeld-onderwerp 2</button>
+    <div aria-labelledby="example-2-accordion-item-2">
       <h1>Titel van de content binnen het accordeon-element</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis, condimentum lorem.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
+        leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam
+        ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat
+        volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu.
+        Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean
+        quis libero gravida, fringilla odio venenatis, condimentum lorem.
+      </p>
       <ul>
         <li>Lorem ipsum</li>
         <li>Dolor sit amet</li>

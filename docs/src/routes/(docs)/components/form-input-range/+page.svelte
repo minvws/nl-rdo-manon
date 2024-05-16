@@ -52,8 +52,8 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <div>
-            <label for="range-example">Range</label>
-            <input type="range" id="range-example" name="range-example" min="0" max="100" />
+            <label for="range-example-1">Range</label>
+            <input type="range" id="range-example-1" name="range-example-1" min="0" max="100" />
           </div>
         </form>
 
@@ -63,8 +63,8 @@
           code={`
 <form action="" method="post">
   <div>
-    <label for="range-example">Range</label>
-    <input type="range" id="range-example" name="range-example" min="0" max="100">
+    <label for="range-example-1">Range</label>
+    <input type="range" id="range-example-1" name="range-example-1" min="0" max="100">
   </div>
 </form>
 `}
@@ -74,8 +74,8 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <div class="horizontal-view">
-            <label for="range-example">Range</label>
-            <input type="range" id="range-example" name="range-example" min="0" max="100" />
+            <label for="range-example-2">Range</label>
+            <input type="range" id="range-example-2" name="range-example-2" min="0" max="100" />
           </div>
         </form>
 
@@ -85,8 +85,8 @@
           code={`
 <form action="" method="post">
   <div class="horizontal-view">
-    <label for="range-example">Range</label>
-    <input type="range" id="range-example" name="range-example" min="0" max="100">
+    <label for="range-example-2">Range</label>
+    <input type="range" id="range-example-2" name="range-example-2" min="0" max="100">
   </div>
 </form>
 `}
@@ -97,7 +97,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">
+            Componenten gebruiken en styling toevoegen
+          </a>
         </p>
 
         <h3>Optioneel</h3>
