@@ -56,8 +56,8 @@
         <p>Visueel voorbeeld:</p>
         <form action="" method="post" class="horizontal-view">
           <div>
-            <label for="form-example-base">Voorbeeld text input</label>
-            <input id="form-example-base" name="form-example-base" type="text" />
+            <label for="form-example-1">Voorbeeld text input</label>
+            <input id="form-example-1" name="form-example-1" type="text" />
           </div>
           <button type="submit">Verzend</button>
         </form>
@@ -68,8 +68,8 @@
           code={`
 <form action="" method="post" class="horizontal-view">
 <div>
-<label for="form-example-base">Voorbeeld text input</label>
-<input id="form-example-base" name="form-example-base" type="text">
+<label for="form-example-1">Voorbeeld text input</label>
+<input id="form-example-1" name="form-example-1" type="text">
 </div>
 <button type="submit">Verzend</button>
 </form>
@@ -101,8 +101,8 @@
           <fieldset>
             <legend>Fieldset test</legend>
             <div>
-              <label for="form-example-base">Voorbeeld text input</label>
-              <input id="form-example-base" name="form-example-base" type="text" />
+              <label for="form-example-2">Voorbeeld text input</label>
+              <input id="form-example-2" name="form-example-2" type="text" />
             </div>
           </fieldset>
           <button type="submit">Verzend</button>
@@ -116,8 +116,8 @@
 <fieldset>
 <legend>Fieldset test</legend>
 <div>
-  <label for="form-example-base">Voorbeeld text input</label>
-  <input id="form-example-base" name="form-example-base" type="text">
+  <label for="form-example-2">Voorbeeld text input</label>
+  <input id="form-example-2" name="form-example-2" type="text">
 </div>
 </fieldset>
 <button type="submit">Verzend</button>
