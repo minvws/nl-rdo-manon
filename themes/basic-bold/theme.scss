@@ -26,6 +26,7 @@
 @use "components/breadcrumb-bar";
 @use "components/button-base";
 @use "components/button-cta";
+@use "components/button-ghost";
 @use "components/filter";
 @use "components/footer-navigation-link";
 @use "components/footer";
@@ -37,7 +38,6 @@
 @use "components/skip-to-content";
 @use "components/tile";
 @use "components/notification";
-
 
 /* Header */
 @use "components/header";
