@@ -26,22 +26,33 @@
           <div class="column-2">
             <div>
               <label for="voorbeeld-invoerveld-1">Voorbeeld invoerveld</label>
-              <input
-                id="voorbeeld-invoerveld-1"
-                name="voorbeeld-invoerveld-1"
-                placeholder="voorbeeld invoerveld"
-                type="text"
-              />
+              <div>
+                <span class="nota-bene" id="voorbeeld-invoerveld-1-explanation"
+                  >Voorbeeld van een instructietekst
+                </span>
+                <input
+                  id="voorbeeld-invoerveld-1"
+                  name="voorbeeld-invoerveld-1"
+                  type="text"
+                  aria-describedby="voorbeeld-invoerveld-1-explanation"
+                />
+              </div>
             </div>
 
             <div>
               <label for="voorbeeld-invoerveld-2">Voorbeeld invoerveld</label>
-              <input
-                id="voorbeeld-invoerveld-2"
-                name="voorbeeld-invoerveld-2"
-                placeholder="voorbeeld invoerveld"
-                type="text"
-              />
+
+              <div>
+                <span class="nota-bene" id="voorbeeld-invoerveld-2-explanation"
+                  >Voorbeeld van een instructietekst
+                </span>
+                <input
+                  id="voorbeeld-invoerveld-2"
+                  name="voorbeeld-invoerveld-2"
+                  type="text"
+                  aria-describedby="voorbeeld-invoerveld-2-explanation"
+                />
+              </div>
             </div>
           </div>
           <button type="submit">Verzend</button>
@@ -55,12 +66,33 @@
   <div class="column-2">
     <div>
       <label for="voorbeeld-invoerveld-1">Voorbeeld invoerveld</label>
-      <input id="voorbeeld-invoerveld-1" name="voorbeeld-invoerveld-1" placeholder="voorbeeld invoerveld" type="text">
+      <div>
+        <span class="nota-bene" id="voorbeeld-invoerveld-1-explanation"
+          >Voorbeeld van een instructietekst
+        </span>
+        <input
+          id="voorbeeld-invoerveld-1"
+          name="voorbeeld-invoerveld-1"
+          type="text"
+          aria-describedby="voorbeeld-invoerveld-1-explanation"
+        />
+      </div>
     </div>
 
     <div>
       <label for="voorbeeld-invoerveld-2">Voorbeeld invoerveld</label>
-      <input id="voorbeeld-invoerveld-2" name="voorbeeld-invoerveld-2" placeholder="voorbeeld invoerveld" type="text">
+
+      <div>
+        <span class="nota-bene" id="voorbeeld-invoerveld-2-explanation"
+          >Voorbeeld van een instructietekst
+        </span>
+        <input
+          id="voorbeeld-invoerveld-2"
+          name="voorbeeld-invoerveld-2"
+          type="text"
+          aria-describedby="voorbeeld-invoerveld-2-explanation"
+        />
+      </div>
     </div>
   </div>
   <button type="submit">Verzend</button>
@@ -78,7 +110,6 @@
               <input
                 id="voorbeeld-invoerveld-fieldset-1"
                 name="voorbeeld-invoerveld-fieldset-1"
-                placeholder="voorbeeld invoerveld"
                 type="text"
               />
             </div>
@@ -88,7 +119,6 @@
               <input
                 id="voorbeeld-invoerveld-fieldset-2"
                 name="voorbeeld-invoerveld-fieldset-2"
-                placeholder="voorbeeld invoerveld"
                 type="text"
               />
             </div>
@@ -101,17 +131,26 @@
           language="html"
           code={`
 <form action="" method="post">
-  <div class="column-2">
+  <fieldset class="column-2">
+    <legend>Column 2 op een <code>fieldset</code></legend>
     <div>
       <label for="voorbeeld-invoerveld-fieldset-1">Voorbeeld invoerveld</label>
-      <input id="voorbeeld-invoerveld-fieldset-1" name="voorbeeld-invoerveld-fieldset-1" placeholder="voorbeeld invoerveld" type="text">
+      <input
+        id="voorbeeld-invoerveld-fieldset-1"
+        name="voorbeeld-invoerveld-fieldset-1"
+        type="text"
+      />
     </div>
 
     <div>
       <label for="voorbeeld-invoerveld-fieldset-2">Voorbeeld invoerveld</label>
-      <input id="voorbeeld-invoerveld-fieldset-2" name="voorbeeld-invoerveld-fieldset-2" placeholder="voorbeeld invoerveld" type="text">
+      <input
+        id="voorbeeld-invoerveld-fieldset-2"
+        name="voorbeeld-invoerveld-fieldset-2"
+        type="text"
+      />
     </div>
-  </div>
+  </fieldset>
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -123,32 +162,50 @@
           <div class="column-3">
             <div>
               <label for="voorbeeld-invoerveld-column-3-1">Voornaam</label>
-              <input
-                id="voorbeeld-invoerveld-column-3-1"
-                name="voorbeeld-invoerveld-column-3-1"
-                placeholder="Jan"
-                type="text"
-              />
+
+              <div>
+                <span class="nota-bene" id="voorbeeld-invoerveld-column-3-1-explanation"
+                  >Volledige naam, spaties zijn toegestaan. Bijvoorbeeld "Jan Jaap"
+                </span>
+                <input
+                  id="voorbeeld-invoerveld-column-3-1"
+                  name="voorbeeld-invoerveld-column-3-1"
+                  type="text"
+                  aria-describedby="voorbeeld-invoerveld-column-3-1-explanation"
+                />
+              </div>
             </div>
 
             <div>
               <label for="voorbeeld-invoerveld-column-3-2">Tussenvoegsel</label>
-              <input
-                id="voorbeeld-invoerveld-column-3-2"
-                name="voorbeeld-invoerveld-column-3-2"
-                placeholder="van der"
-                type="text"
-              />
+
+              <div>
+                <span class="nota-bene" id="voorbeeld-invoerveld-column-3-2-explanation"
+                  >Bijvoorbeeld: "van der"
+                </span>
+                <input
+                  id="voorbeeld-invoerveld-column-3-2"
+                  name="voorbeeld-invoerveld-column-3-2"
+                  type="text"
+                  aria-describedby="voorbeeld-invoerveld-column-3-2-explanation"
+                />
+              </div>
             </div>
 
             <div>
               <label for="voorbeeld-invoerveld-column-3-3">Achternaam</label>
-              <input
-                id="voorbeeld-invoerveld-column-3-3"
-                name="voorbeeld-invoerveld-column-3-3"
-                placeholder="Zanden"
-                type="text"
-              />
+
+              <div>
+                <span class="nota-bene" id="voorbeeld-invoerveld-column-3-3-explanation"
+                  >Bijvoorbeeld: "Zanden Brouwer"
+                </span>
+                <input
+                  id="voorbeeld-invoerveld-column-3-3"
+                  name="voorbeeld-invoerveld-column-3-3"
+                  type="text"
+                  aria-describedby="voorbeeld-invoerveld-column-3-3-explanation"
+                />
+              </div>
             </div>
           </div>
           <button type="submit">Verzend</button>
@@ -162,17 +219,50 @@
   <div class="column-3">
     <div>
       <label for="voorbeeld-invoerveld-column-3-1">Voornaam</label>
-      <input id="voorbeeld-invoerveld-column-3-1" name="voorbeeld-invoerveld-column-3-1" placeholder="Jan" type="text">
+
+      <div>
+        <span class="nota-bene" id="voorbeeld-invoerveld-column-3-1-explanation"
+          >Volledige naam, spaties zijn toegestaan. Bijvoorbeeld "Jan Jaap"
+        </span>
+        <input
+          id="voorbeeld-invoerveld-column-3-1"
+          name="voorbeeld-invoerveld-column-3-1"
+          type="text"
+          aria-describedby="voorbeeld-invoerveld-column-3-1-explanation"
+        />
+      </div>
     </div>
 
     <div>
       <label for="voorbeeld-invoerveld-column-3-2">Tussenvoegsel</label>
-      <input id="voorbeeld-invoerveld-column-3-2" name="voorbeeld-invoerveld-column-3-2" placeholder="van der" type="text">
+
+      <div>
+        <span class="nota-bene" id="voorbeeld-invoerveld-column-3-2-explanation"
+          >Bijvoorbeeld: "van der"
+        </span>
+        <input
+          id="voorbeeld-invoerveld-column-3-2"
+          name="voorbeeld-invoerveld-column-3-2"
+          type="text"
+          aria-describedby="voorbeeld-invoerveld-column-3-2-explanation"
+        />
+      </div>
     </div>
 
     <div>
       <label for="voorbeeld-invoerveld-column-3-3">Achternaam</label>
-      <input id="voorbeeld-invoerveld-column-3-3" name="voorbeeld-invoerveld-column-3-3" placeholder="Zanden" type="text">
+
+      <div>
+        <span class="nota-bene" id="voorbeeld-invoerveld-column-3-3-explanation"
+          >Bijvoorbeeld: "Zanden Brouwer"
+        </span>
+        <input
+          id="voorbeeld-invoerveld-column-3-3"
+          name="voorbeeld-invoerveld-column-3-3"
+          type="text"
+          aria-describedby="voorbeeld-invoerveld-column-3-3-explanation"
+        />
+      </div>
     </div>
   </div>
   <button type="submit">Verzend</button>
@@ -186,31 +276,28 @@
           <fieldset class="column-3">
             <legend>Column-3 op een <code>fieldset</code></legend>
             <div>
-              <label for="voorbeeld-invoerveld-column-3-1">Voornaam</label>
+              <label for="voorbeeld-invoerveld-column-3-fieldset-1">Voornaam</label>
               <input
-                id="voorbeeld-invoerveld-column-3-1"
-                name="voorbeeld-invoerveld-column-3-1"
-                placeholder="Jan"
+                id="voorbeeld-invoerveld-column-3-fieldset-1"
+                name="voorbeeld-invoerveld-column-3-fieldset-1"
                 type="text"
               />
             </div>
 
             <div>
-              <label for="voorbeeld-invoerveld-column-3-2">Tussenvoegsel</label>
+              <label for="voorbeeld-invoerveld-column-3-fieldset-2">Tussenvoegsel</label>
               <input
-                id="voorbeeld-invoerveld-column-3-2"
-                name="voorbeeld-invoerveld-column-3-2"
-                placeholder="van der"
+                id="voorbeeld-invoerveld-column-3-fieldset-2"
+                name="voorbeeld-invoerveld-column-3-fieldset-2"
                 type="text"
               />
             </div>
 
             <div>
-              <label for="voorbeeld-invoerveld-column-3-3">Achternaam</label>
+              <label for="voorbeeld-invoerveld-column-3-fieldset-3">Achternaam</label>
               <input
-                id="voorbeeld-invoerveld-column-3-3"
-                name="voorbeeld-invoerveld-column-3-3"
-                placeholder="Zanden"
+                id="voorbeeld-invoerveld-column-3-fieldset-3"
+                name="voorbeeld-invoerveld-column-3-fieldset-3"
                 type="text"
               />
             </div>
@@ -223,22 +310,35 @@
           language="html"
           code={`
 <form action="" method="post">
-  <div class="column-3">
+  <fieldset class="column-3">
+    <legend>Column-3 op een <code>fieldset</code></legend>
     <div>
-      <label for="voorbeeld-invoerveld-column-3-1">Voornaam</label>
-      <input id="voorbeeld-invoerveld-column-3-1" name="voorbeeld-invoerveld-column-3-1" placeholder="Jan" type="text">
+      <label for="voorbeeld-invoerveld-column-3-fieldset-1">Voornaam</label>
+      <input
+        id="voorbeeld-invoerveld-column-3-fieldset-1"
+        name="voorbeeld-invoerveld-column-3-fieldset-1"
+        type="text"
+      />
     </div>
 
     <div>
-      <label for="voorbeeld-invoerveld-column-3-2">Tussenvoegsel</label>
-      <input id="voorbeeld-invoerveld-column-3-2" name="voorbeeld-invoerveld-column-3-2" placeholder="van der" type="text">
+      <label for="voorbeeld-invoerveld-column-3-fieldset-2">Tussenvoegsel</label>
+      <input
+        id="voorbeeld-invoerveld-column-3-fieldset-2"
+        name="voorbeeld-invoerveld-column-3-fieldset-2"
+        type="text"
+      />
     </div>
 
     <div>
-      <label for="voorbeeld-invoerveld-column-3-3">Achternaam</label>
-      <input id="voorbeeld-invoerveld-column-3-3" name="voorbeeld-invoerveld-column-3-3" placeholder="Zanden" type="text">
+      <label for="voorbeeld-invoerveld-column-3-fieldset-3">Achternaam</label>
+      <input
+        id="voorbeeld-invoerveld-column-3-fieldset-3"
+        name="voorbeeld-invoerveld-column-3-fieldset-3"
+        type="text"
+      />
     </div>
-  </div>
+  </fieldset>
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -253,7 +353,6 @@
               <input
                 id="voorbeeld-invoerveld-column-4-1"
                 name="voorbeeld-invoerveld-column-4-1"
-                placeholder="lorem"
                 type="text"
               />
             </div>
@@ -263,7 +362,6 @@
               <input
                 id="voorbeeld-invoerveld-column-4-2"
                 name="voorbeeld-invoerveld-column-4-2"
-                placeholder="ipsum"
                 type="text"
               />
             </div>
@@ -273,7 +371,6 @@
               <input
                 id="voorbeeld-invoerveld-column-4-3"
                 name="voorbeeld-invoerveld-column-4-3"
-                placeholder="dolor"
                 type="text"
               />
             </div>
@@ -283,7 +380,6 @@
               <input
                 id="voorbeeld-invoerveld-column-4-4"
                 name="voorbeeld-invoerveld-column-4-4"
-                placeholder="set"
                 type="text"
               />
             </div>
@@ -295,21 +391,42 @@
         <Code
           language="html"
           code={`
-<form action="" method="post">
-  <div class="column-3">
+ <form action="" method="post">
+  <div class="column-4">
     <div>
-      <label for="voorbeeld-invoerveld-column-4-1">Voornaam</label>
-      <input id="voorbeeld-invoerveld-column-4-1" name="voorbeeld-invoerveld-column-4-1" placeholder="Jan" type="text">
+      <label for="voorbeeld-invoerveld-column-4-1">Lorem</label>
+      <input
+        id="voorbeeld-invoerveld-column-4-1"
+        name="voorbeeld-invoerveld-column-4-1"
+        type="text"
+      />
     </div>
 
     <div>
-      <label for="voorbeeld-invoerveld-column-4-2">Tussenvoegsel</label>
-      <input id="voorbeeld-invoerveld-column-4-2" name="voorbeeld-invoerveld-column-4-2" placeholder="van der" type="text">
+      <label for="voorbeeld-invoerveld-column-4-2">Ipsum</label>
+      <input
+        id="voorbeeld-invoerveld-column-4-2"
+        name="voorbeeld-invoerveld-column-4-2"
+        type="text"
+      />
     </div>
 
     <div>
-      <label for="voorbeeld-invoerveld-column-4-3">Achternaam</label>
-      <input id="voorbeeld-invoerveld-column-4-3" name="voorbeeld-invoerveld-column-4-3" placeholder="Zanden" type="text">
+      <label for="voorbeeld-invoerveld-column-4-3">Dolor</label>
+      <input
+        id="voorbeeld-invoerveld-column-4-3"
+        name="voorbeeld-invoerveld-column-4-3"
+        type="text"
+      />
+    </div>
+
+    <div>
+      <label for="voorbeeld-invoerveld-column-4-4">Set</label>
+      <input
+        id="voorbeeld-invoerveld-column-4-4"
+        name="voorbeeld-invoerveld-column-4-4"
+        type="text"
+      />
     </div>
   </div>
   <button type="submit">Verzend</button>
@@ -327,7 +444,6 @@
               <input
                 id="voorbeeld-invoerveld-column-4-fieldset-1"
                 name="voorbeeld-invoerveld-column-4-fieldset-1"
-                placeholder="lorem"
                 type="text"
               />
             </div>
@@ -337,7 +453,6 @@
               <input
                 id="voorbeeld-invoerveld-column-4-fieldset-2"
                 name="voorbeeld-invoerveld-column-4-fieldset-2"
-                placeholder="ipsum"
                 type="text"
               />
             </div>
@@ -347,7 +462,6 @@
               <input
                 id="voorbeeld-invoerveld-column-4-fieldset-3"
                 name="voorbeeld-invoerveld-column-4-fieldset-3"
-                placeholder="dolor"
                 type="text"
               />
             </div>
@@ -357,7 +471,6 @@
               <input
                 id="voorbeeld-invoerveld-column-4-fieldset-4"
                 name="voorbeeld-invoerveld-column-4-fieldset-4"
-                placeholder="set"
                 type="text"
               />
             </div>
@@ -374,22 +487,38 @@
     <legend>Column 4 binnen <code>fieldset</code></legend>
     <div>
       <label for="voorbeeld-invoerveld-column-4-fieldset-1">Lorem</label>
-      <input id="voorbeeld-invoerveld-column-4-fieldset-1" name="voorbeeld-invoerveld-column-4-fieldset-1" placeholder="lorem" type="text">
+      <input
+        id="voorbeeld-invoerveld-column-4-fieldset-1"
+        name="voorbeeld-invoerveld-column-4-fieldset-1"
+        type="text"
+      />
     </div>
 
     <div>
       <label for="voorbeeld-invoerveld-column-4-fieldset-2">Ipsum</label>
-      <input id="voorbeeld-invoerveld-column-4-fieldset-2" name="voorbeeld-invoerveld-column-4-fieldset-2" placeholder="ipsum" type="text">
+      <input
+        id="voorbeeld-invoerveld-column-4-fieldset-2"
+        name="voorbeeld-invoerveld-column-4-fieldset-2"
+        type="text"
+      />
     </div>
 
     <div>
       <label for="voorbeeld-invoerveld-column-4-fieldset-3">Dolor</label>
-      <input id="voorbeeld-invoerveld-column-4-fieldset-3" name="voorbeeld-invoerveld-column-4-fieldset-3" placeholder="dolor" type="text">
+      <input
+        id="voorbeeld-invoerveld-column-4-fieldset-3"
+        name="voorbeeld-invoerveld-column-4-fieldset-3"
+        type="text"
+      />
     </div>
 
     <div>
       <label for="voorbeeld-invoerveld-column-4-fieldset-4">Set</label>
-      <input id="voorbeeld-invoerveld-column-4-fieldset-4" name="voorbeeld-invoerveld-column-4-fieldset-4" placeholder="set" type="text">
+      <input
+        id="voorbeeld-invoerveld-column-4-fieldset-4"
+        name="voorbeeld-invoerveld-column-4-fieldset-4"
+        type="text"
+      />
     </div>
   </fieldset>
   <button type="submit">Verzend</button>
@@ -402,13 +531,13 @@
         <form action="" method="post">
           <div class="column-2">
             <div>
-              <label for="voorbeeld-1-date-1-start">van</label>
-              <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" />
+              <label for="voorbeeld-date-start">van</label>
+              <input id="voorbeeld-date-start" name="voorbeeld-date-start" />
             </div>
 
             <div>
-              <label for="voorbeeld-1-date-1-end">tot</label>
-              <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" />
+              <label for="voorbeeld-date-end">tot</label>
+              <input id="voorbeeld-date-end" name="voorbeeld-date-end" />
             </div>
           </div>
           <button type="submit">Verzend</button>
@@ -421,13 +550,13 @@
 <form action="" method="post">
   <div class="column-2">
     <div>
-      <label for="voorbeeld-1-date-1-start">van</label>
-      <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start">
+      <label for="voorbeeld-date-start">van</label>
+      <input id="voorbeeld-date-start" name="voorbeeld-date-start">
     </div>
 
     <div>
-      <label for="voorbeeld-1-date-1-end">tot</label>
-      <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end">
+      <label for="voorbeeld-date-end">tot</label>
+      <input id="voorbeeld-date-end" name="voorbeeld-date-end">
     </div>
   </div>
   <button type="submit">Verzend</button>
@@ -441,13 +570,13 @@
           <fieldset class="column-2">
             <legend>Datum gecombineerd op een regel test</legend>
             <div>
-              <label for="voorbeeld-1-date-1-start">van</label>
-              <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" />
+              <label for="voorbeeld-fieldset-date-start">van</label>
+              <input id="voorbeeld-fieldset-date-start" name="voorbeeld-fieldset-date-start" />
             </div>
 
             <div>
-              <label for="voorbeeld-1-date-1-end">tot</label>
-              <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" />
+              <label for="voorbeeld-fieldset-date-end">tot</label>
+              <input id="voorbeeld-fieldset-date-end" name="voorbeeld-fieldset-date-end" />
             </div>
           </fieldset>
           <button type="submit">Verzend</button>
@@ -461,13 +590,13 @@
   <fieldset class="column-2">
     <legend>Datum gecombineerd op een regel test</legend>
     <div>
-      <label for="voorbeeld-1-date-1-start">van</label>
-      <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start">
+      <label for="voorbeeld-fieldset-date-start">van</label>
+      <input id="voorbeeld-fieldset-date-start" name="voorbeeld-fieldset-date-start">
     </div>
 
     <div>
-      <label for="voorbeeld-1-date-1-end">tot</label>
-      <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end">
+      <label for="voorbeeld-fieldset-date-end">tot</label>
+      <input id="voorbeeld-fieldset-date-end" name="voorbeeld-1-date-3-end">
     </div>
   </fieldset>
   <button type="submit">Verzend</button>

@@ -203,16 +203,16 @@
         <h3>Link binnen notificatie</h3>
         <h4>Visueel voorbeeld foutmelding:</h4>
         <form action="" method="post">
-          <label for="input-error">Input</label>
+          <label for="input-link-error">Input</label>
           <div>
             <input
-              id="input-error"
+              id="input-link-error"
               class="error"
               value="Lorem ipsum"
-              aria-describedby="input-error-message"
+              aria-describedby="input-link-error-message"
               aria-invalid="true"
             />
-            <p class="error" id="input-error-message">
+            <p class="error" id="input-link-error-message">
               <span>Foutmelding:</span> Lorem <a href="form-notification-test">ipsum dolor</a> set amet
             </p>
           </div>
@@ -224,11 +224,11 @@
           language="html"
           code={`
 <form action="" method="post">
-    <label for="input-error">Input</label>
+    <label for="input-link-error">Input</label>
     <div>
-        <input id="input-error" class="error" value="Lorem ipsum"
-            aria-describedby="input-error-message" aria-invalid="true">
-        <p class="error" id="input-error-message">
+        <input id="input-link-error" class="error" value="Lorem ipsum"
+            aria-describedby="input-link-error-message" aria-invalid="true">
+        <p class="error" id="input-link-error-message">
             <span>Foutmelding:</span> Lorem <a href="ipsum dolor">ipsum dolor</a> set amet
         </p>
     </div>

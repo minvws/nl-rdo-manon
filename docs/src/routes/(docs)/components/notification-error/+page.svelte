@@ -79,7 +79,9 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling"
+              >Componenten gebruiken en styling toevoegen</a
+            >
           </li>
           <li>
             Voeg de benodigde HTML toe. Zie het voorbeeld per element voor de implementatiedetails.
@@ -431,7 +433,6 @@
             <textarea
               id="voorbeeld-tekstveld-error"
               name="voorbeeld-tekstveld-error"
-              placeholder="Jouw vraag of opmerking"
               class="error"
               aria-describedby="voorbeeld-tekstveld-error-message"
               aria-invalid="true"
@@ -451,11 +452,18 @@
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-error">Voorbeeld tekstveld</label>
   <div>
-    <textarea id="voorbeeld-tekstveld-error" name="voorbeeld-tekstveld-error" placeholder="Jouw vraag of opmerking" class="error" aria-describedby="voorbeeld-tekstveld-error-message" aria-invalid="true"></textarea>
+    <textarea
+      id="voorbeeld-tekstveld-error"
+      name="voorbeeld-tekstveld-error"
+      class="error"
+      aria-describedby="voorbeeld-tekstveld-error-message"
+      aria-invalid="true"
+    ></textarea>
     <p class="error" id="voorbeeld-tekstveld-error-message">
       <span>foutmelding:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
+
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -513,7 +521,6 @@
             <input
               id="datalist-error"
               class="error"
-              placeholder="Begin met typen of klik om een optie uit te kiezen"
               list="example-list-error"
               aria-describedby="datalist-error-message"
               aria-invalid="true"
@@ -537,16 +544,22 @@
 <form action="" method="post">
   <label for="datalist-error">Input</label>
   <div>
-    <input id="datalist-error" class="error" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-error" aria-describedby="datalist-error-message" aria-invalid="true">
+    <input
+      id="datalist-error"
+      class="error"
+      list="example-list-error"
+      aria-describedby="datalist-error-message"
+      aria-invalid="true"
+    />
     <p class="error" id="datalist-error-message">
       <span>foutmelding:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
 
   <datalist id="example-list-error">
-    <option value="Optie 1">
-    <option value="Optie 2">
-    <option value="Optie 3">
+    <option value="Optie 1"></option>
+    <option value="Optie 2"></option>
+    <option value="Optie 3"></option>
   </datalist>
 </form>
 `}
@@ -627,7 +640,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h3>Benodigd</h3>
         <ul>

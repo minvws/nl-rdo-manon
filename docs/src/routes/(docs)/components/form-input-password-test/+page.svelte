@@ -32,12 +32,9 @@
             id="input-password-base"
             name="input-password-base"
             pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
-            placeholder="wachtwoord"
-            title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
             type="password"
             aria-describedby="input-password-base-message"
           />
-
           <button type="submit">Verzend</button>
         </form>
 
@@ -46,17 +43,18 @@
           language="html"
           code={`
 <form action="" method="post">
-  <label for="input-password-base">Wachtwoord</label>
-  <p class="explanation" id="input-password-base-message"><span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer.</p>
+  <label for="input-password-1">Wachtwoord</label>
+  <p class="explanation" id="input-password-1-message">
+    <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter,
+    1 kleine letter en 1 cijfer.
+  </p>
   <input
     id="input-password-base"
     name="input-password-base"
-    pattern="{"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}"
-    placeholder="wachtwoord"
-    title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
+    pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
     type="password"
-    aria-describedby="input-password-base-message">
-
+    aria-describedby="input-password-base-message"
+  />
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -78,13 +76,10 @@
               id="input-password-div"
               name="input-password-div"
               pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
-              placeholder="wachtwoord"
-              title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
               type="password"
               aria-describedby="input-password-div-message"
             />
           </div>
-
           <button type="submit">Verzend</button>
         </form>
 
@@ -95,17 +90,18 @@
 <form action="" method="post">
   <div>
     <label for="input-password-div">Wachtwoord</label>
-    <p class="explanation" id="input-password-div-message"><span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer.</p>
+    <p class="explanation" id="input-password-div-message">
+      <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1
+      hoofdletter, 1 kleine letter en 1 cijfer.
+    </p>
     <input
       id="input-password-div"
       name="input-password-div"
-      pattern="{"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}"
-      placeholder="wachtwoord"
-      title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
+      pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
       type="password"
-      aria-describedby="input-password-div-message">
+      aria-describedby="input-password-div-message"
+    />
   </div>
-
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -124,13 +120,10 @@
               id="input-password-section"
               name="input-password-section"
               pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
-              placeholder="wachtwoord"
-              title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
               type="password"
               aria-describedby="input-password-section-message"
             />
           </section>
-
           <button type="submit">Verzend</button>
         </form>
 
@@ -141,17 +134,18 @@
 <form action="" method="post">
   <section>
     <label for="input-password-section">Wachtwoord</label>
-    <p class="explanation" id="input-password-section-message"><span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer.</p>
+    <p class="explanation" id="input-password-section-message">
+      <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1
+      hoofdletter, 1 kleine letter en 1 cijfer.
+    </p>
     <input
       id="input-password-section"
       name="input-password-section"
-      pattern="{"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}"
-      placeholder="wachtwoord"
-      title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
+      pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
       type="password"
-      aria-describedby="input-password-section-message">
+      aria-describedby="input-password-section-message"
+    />
   </section>
-
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -171,13 +165,10 @@
               id="input-password-fieldset"
               name="input-password-fieldset"
               pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
-              placeholder="wachtwoord"
-              title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
               type="password"
               aria-describedby="input-password-fieldset-message"
             />
           </fieldset>
-
           <button type="submit">Verzend</button>
         </form>
 
@@ -189,17 +180,18 @@
   <fieldset>
     <legend>Wachtwoord binnen fieldset voorbeeld</legend>
     <label for="input-password-fieldset">Wachtwoord</label>
-    <p class="explanation" id="input-password-fieldset-message"><span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer.</p>
+    <p class="explanation" id="input-password-fieldset-message">
+      <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1
+      hoofdletter, 1 kleine letter en 1 cijfer.
+    </p>
     <input
       id="input-password-fieldset"
       name="input-password-fieldset"
-      pattern="{"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}"
-      placeholder="wachtwoord"
-      title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
+      pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
       type="password"
-      aria-describedby="input-password-fieldset-message">
+      aria-describedby="input-password-fieldset-message"
+    />
   </fieldset>
-
   <button type="submit">Verzend</button>
 </form>
 `}

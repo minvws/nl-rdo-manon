@@ -104,21 +104,11 @@
         <form action="" method="post" class="horizontal-view">
           <div>
             <label for="form-example-horizontal">Voorbeeld text input</label>
-            <input
-              id="form-example-horizontal"
-              name="form-example-horizontal"
-              placeholder="voorbeeld text input"
-              type="text"
-            />
+            <input id="form-example-horizontal" name="form-example-horizontal" type="text" />
           </div>
           <div>
             <label for="form-example-horizontal-2">Voorbeeld text input</label>
-            <input
-              id="form-example-horizontal-2"
-              name="form-example-horizontal-2"
-              placeholder="voorbeeld text input"
-              type="text"
-            />
+            <input id="form-example-horizontal-2" name="form-example-horizontal-2" type="text" />
           </div>
           <button type="submit">Verzend</button>
         </form>
@@ -130,11 +120,11 @@
 <form action="" method="post" class="horizontal-view">
   <div>
     <label for="form-example-horizontal">Voorbeeld text input</label>
-    <input id="form-example-horizontal" name="form-example-horizontal" placeholder="voorbeeld text input" type="text">
+    <input id="form-example-horizontal" name="form-example-horizontal"type="text">
   </div>
   <div>
     <label for="form-example-horizontal-2">Voorbeeld text input</label>
-    <input id="form-example-horizontal-2" name="form-example-horizontal-2" placeholder="voorbeeld text input" type="text">
+    <input id="form-example-horizontal-2" name="form-example-horizontal-2" type="text">
   </div>
   <button type="submit">Verzend</button>
 </form>
@@ -152,7 +142,6 @@
               <input
                 id="form-example-horizontal-fieldset"
                 name="form-example-horizontal-fieldset"
-                placeholder="voorbeeld text input"
                 type="text"
               />
             </div>
@@ -161,7 +150,6 @@
               <input
                 id="form-example-horizontal-fieldset-2"
                 name="form-example-horizontal-fieldset-2"
-                placeholder="voorbeeld text input"
                 type="text"
               />
             </div>
@@ -178,11 +166,11 @@
     <legend>Lorem ipsum</legend>
     <div>
       <label for="form-example-horizontal-fieldset">Voorbeeld text input</label>
-      <input id="form-example-horizontal-fieldset" name="form-example-horizontal-fieldset" placeholder="voorbeeld text input" type="text">
+      <input id="form-example-horizontal-fieldset" name="form-example-horizontal-fieldset" type="text">
     </div>
     <div>
       <label for="form-example-horizontal-fieldset-2">Voorbeeld text input</label>
-      <input id="form-example-horizontal-fieldset-2" name="form-example-horizontal-fieldset-2" placeholder="voorbeeld text input" type="text">
+      <input id="form-example-horizontal-fieldset-2" name="form-example-horizontal-fieldset-2" type="text">
     </div>
   </fieldset>
   <button type="submit">Verzend</button>

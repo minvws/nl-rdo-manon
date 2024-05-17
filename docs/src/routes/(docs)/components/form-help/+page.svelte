@@ -87,7 +87,6 @@
             <input
               id="voorbeeld-text-input-met-hulptekst-simpel-1"
               name="voorbeeld-text-input"
-              placeholder="voorbeeld text input"
               type="text"
               aria-describedby="voorbeeld-text-input-met-hulptekst-simpel-1-message"
             />
@@ -114,7 +113,6 @@
     <input
       id="voorbeeld-text-input-met-hulptekst-simpel-1"
       name="voorbeeld-text-input"
-      placeholder="voorbeeld text input"
       type="text"
       aria-describedby="voorbeeld-text-input-met-hulptekst-simpel-1-message">
     <p
@@ -162,7 +160,6 @@
               <input
                 id="example-input-help-required"
                 name="voorbeeld-text-input"
-                placeholder="lorem ipsum"
                 type="text"
                 aria-describedby="example-input-help-required-message"
                 required
@@ -192,7 +189,6 @@
       <input
         id="example-input-help-required"
         name="voorbeeld-text-input"
-        placeholder="voorbeeld text input"
         type="text"
         aria-describedby="example-input-help-required-message"
         required>
@@ -215,7 +211,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h3>Benodigd</h3>
         <ul>

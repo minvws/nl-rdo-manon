@@ -44,7 +44,7 @@
             Zorg er voor gebruiksvriendelijkheid voor dat het tekstveld een duidelijke vraag en/of
             duidelijk doel heeft. Voeg een omschrijvend <code>&lt;label&gt;</code> toe en stel een
             vraag of geef duidelijke richtlijnen mee door middel van een
-            <code>placeholder</code>-tekst.
+            <a href="nota-bene">nota-bene</a>.
           </li>
           <li>
             <code>rows="number"</code> geeft de initiële hoogte van het tekstveld aan in de hoeveelheid
@@ -61,11 +61,14 @@
         <h4>Basis</h4>
         <form action="" method="post">
           <label for="voorbeeld-tekstveld-base">Bericht</label>
+          <span class="nota-bene" id="voorbeeld-tekstveld-base-explanation"
+            >Stel jouw vraag of voeg jouw opmerking toe
+          </span>
           <textarea
             id="voorbeeld-tekstveld-base"
             name="voorbeeld-tekstveld-base"
-            placeholder="Jouw vraag of opmerking"
             rows="5"
+            aria-describedby="voorbeeld-tekstveld-base-explanation"
           ></textarea>
 
           <button type="submit">Verzend</button>
@@ -77,7 +80,15 @@
           code={`
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-base">Bericht</label>
-  <textarea id="voorbeeld-tekstveld-base" name="voorbeeld-tekstveld-base" placeholder="Jouw vraag of opmerking"></textarea>
+  <span class="nota-bene" id="voorbeeld-tekstveld-base-explanation">
+    Stel jouw vraag of voeg jouw opmerking toe:
+  </span>
+  <textarea
+    id="voorbeeld-tekstveld-base"
+    name="voorbeeld-tekstveld-base"
+    rows="5"
+    aria-describedby="voorbeeld-tekstveld-base-explanation">
+  </textarea>
 
   <button type="submit">Verzend</button>
 </form>
@@ -89,7 +100,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h3>Benodigd</h3>
         <ul>

@@ -606,13 +606,8 @@
             </ul>
           </div>
 
-          <label for="form-example-base">Voorbeeld text input</label>
-          <input
-            id="form-example-base"
-            name="form-example-base"
-            placeholder="voorbeeld text input"
-            type="text"
-          />
+          <label for="form-example-1">Voorbeeld text input</label>
+          <input id="form-example-1" name="form-example-1" type="text" />
 
           <button type="submit">Verzend</button>
         </form>
@@ -637,8 +632,8 @@
     </ul>
   </div>
 
-  <label for="form-example-base">Voorbeeld text input</label>
-  <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+  <label for="form-example-1">Voorbeeld text input</label>
+  <input id="form-example-1" name="form-example-1" type="text">
 
   <button type="submit">Verzend</button>
 </form>
@@ -664,13 +659,8 @@
           </div>
 
           <div>
-            <label for="form-example-base">Voorbeeld text input</label>
-            <input
-              id="form-example-base"
-              name="form-example-base"
-              placeholder="voorbeeld text input"
-              type="text"
-            />
+            <label for="form-example-2">Voorbeeld text input</label>
+            <input id="form-example-2" name="form-example-2" type="text" />
           </div>
           <button type="submit">Verzend</button>
         </form>
@@ -696,8 +686,8 @@
   </div>
 
   <div>
-    <label for="form-example-base">Voorbeeld text input</label>
-    <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+    <label for="form-example-2">Voorbeeld text input</label>
+    <input id="form-example-2" name="form-example-2" type="text">
   </div>
   <button type="submit">Verzend</button>
 </form>
@@ -719,12 +709,7 @@
 
             <div>
               <label for="form-example-base">Voorbeeld text input</label>
-              <input
-                id="form-example-base"
-                name="form-example-base"
-                placeholder="voorbeeld text input"
-                type="text"
-              />
+              <input id="form-example-base" name="form-example-base" type="text" />
             </div>
           </fieldset>
 
@@ -748,7 +733,7 @@
 
     <div>
       <label for="form-example-base">Voorbeeld text input</label>
-      <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+      <input id="form-example-base" name="form-example-base" type="text">
     </div>
   </fieldset>
 
@@ -781,7 +766,6 @@
               <input
                 id="example-input-help-required"
                 name="voorbeeld-text-input"
-                placeholder="lorem ipsum"
                 type="text"
                 aria-describedby="example-input-help-required-message"
                 required
@@ -826,7 +810,6 @@
       <input
         id="example-input-help-required"
         name="voorbeeld-text-input"
-        placeholder="lorem ipsum"
         type="text"
         aria-describedby="example-input-help-required-message"
         required

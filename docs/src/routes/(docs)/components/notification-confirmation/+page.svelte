@@ -434,7 +434,6 @@
             <textarea
               id="voorbeeld-tekstveld-confirmation"
               name="voorbeeld-tekstveld-confirmation"
-              placeholder="Jouw vraag of opmerking"
               class="confirmation"
               aria-describedby="voorbeeld-tekstveld-confirmation-message"
             ></textarea>
@@ -453,11 +452,17 @@
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-confirmation">Voorbeeld tekstveld</label>
   <div>
-    <textarea id="voorbeeld-tekstveld-confirmation" name="voorbeeld-tekstveld-confirmation" placeholder="Jouw vraag of opmerking" class="confirmation" aria-describedby="voorbeeld-tekstveld-confirmation-message"></textarea>
+    <textarea
+      id="voorbeeld-tekstveld-confirmation"
+      name="voorbeeld-tekstveld-confirmation"
+      class="confirmation"
+      aria-describedby="voorbeeld-tekstveld-confirmation-message"
+    ></textarea>
     <p class="confirmation" id="voorbeeld-tekstveld-confirmation-message">
-      <span>waarschuwing:</span> Lorem ipsum dolor sit amet
+      <span>bevestiging:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
+
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -514,7 +519,6 @@
             <input
               id="datalist-confirmation"
               class="confirmation"
-              placeholder="Begin met typen of klik om een optie uit te kiezen"
               list="example-list-confirmation"
               aria-describedby="datalist-confirmation-message"
             />
@@ -537,16 +541,21 @@
 <form action="" method="post">
   <label for="datalist-confirmation">Input</label>
   <div>
-    <input id="datalist-confirmation" class="confirmation" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-confirmation" aria-describedby="datalist-confirmation-message">
+    <input
+      id="datalist-confirmation"
+      class="confirmation"
+      list="example-list-confirmation"
+      aria-describedby="datalist-confirmation-message"
+    />
     <p class="confirmation" id="datalist-confirmation-message">
-      <span>waarschuwing:</span> Lorem ipsum dolor sit amet
+      <span>bevestiging:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
 
   <datalist id="example-list-confirmation">
-    <option value="Optie 1">
-    <option value="Optie 2">
-    <option value="Optie 3">
+    <option value="Optie 1"></option>
+    <option value="Optie 2"></option>
+    <option value="Optie 3"></option>
   </datalist>
 </form>
 `}

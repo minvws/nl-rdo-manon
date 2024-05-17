@@ -23,11 +23,11 @@
         <h3>Basis</h3>
         <h4>Visueel voorbeeld</h4>
         <form action="" method="post" class="help">
+          <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Lorem ipsum</label>
           <div>
             <input
               id="voorbeeld-text-input-met-hulptekst-simpel-1"
               name="voorbeeld-text-input"
-              placeholder="voorbeeld text input"
               type="text"
               aria-describedby="voorbeeld-text-input-met-hulptekst-simpel-1-message"
             />
@@ -49,11 +49,11 @@
           language="html"
           code={`
 <form action="" method="post" class="help">
+  <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Lorem ipsum</label>
   <div>
     <input
       id="voorbeeld-text-input-met-hulptekst-simpel-1"
       name="voorbeeld-text-input"
-      placeholder="voorbeeld text input"
       type="text"
       aria-describedby="voorbeeld-text-input-met-hulptekst-simpel-1-message"
     />
@@ -63,7 +63,7 @@
       data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
       id="voorbeeld-text-input-met-hulptekst-simpel-1-message"
     >
-    <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+      <span>Toelichting:</span> Lorem ipsum dolor sit amet.
     </p>
   </div>
 
@@ -75,13 +75,13 @@
         <h3>Verplicht invoerveld</h3>
         <h4>Visueel voorbeeld</h4>
         <form action="" method="post" class="help">
+          <label for="example-input-help-required">Lorem ipsum</label>
           <div>
             <span class="nota-bene">Dit veld is verplicht</span>
             <div>
               <input
                 id="example-input-help-required"
                 name="voorbeeld-text-input"
-                placeholder="lorem ipsum"
                 type="text"
                 aria-describedby="example-input-help-required-message"
                 required
@@ -105,13 +105,13 @@
           language="html"
           code={`
 <form action="" method="post" class="help">
+  <label for="example-input-help-required">Lorem ipsum</label>
   <div>
     <span class="nota-bene">Dit veld is verplicht</span>
     <div>
       <input
         id="example-input-help-required"
         name="voorbeeld-text-input"
-        placeholder="lorem ipsum"
         type="text"
         aria-describedby="example-input-help-required-message"
         required
@@ -122,7 +122,7 @@
         data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
         id="example-input-help-required-message"
       >
-      <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+        <span>Toelichting:</span> Lorem ipsum dolor sit amet.
       </p>
     </div>
   </div>
@@ -136,23 +136,22 @@
         <h4>Visueel voorbeeld</h4>
         <form action="" method="post" class="horizontal-view help">
           <div>
-            <label for="example-input-base">Voorbeeld invoerveld</label>
+            <label for="example-input-help-required-horizontal">Voorbeeld invoerveld</label>
             <div>
               <span class="nota-bene">Dit veld is verplicht</span>
               <div>
                 <input
-                  id="example-input-help-required"
+                  id="example-input-help-required-horizontal"
                   name="voorbeeld-text-input"
-                  placeholder="lorem ipsum"
                   type="text"
-                  aria-describedby="example-input-help-required-message"
+                  aria-describedby="example-input-help-required-horizontal-message"
                   required
                 />
                 <p
                   class="explanation"
                   data-open-label="Toelichting bij het veld: Voorbeeld text input"
                   data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                  id="example-input-help-required-message"
+                  id="example-input-help-required-horizontal-message"
                 >
                   <span>Toelichting:</span> Lorem ipsum dolor sit amet.
                 </p>
@@ -169,24 +168,24 @@
           code={`
 <form action="" method="post" class="horizontal-view help">
   <div>
-    <label for="example-input-base">Voorbeeld invoerveld</label>
+    <label for="example-input-help-required-horizontal">Voorbeeld invoerveld</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
       <div>
         <input
-          id="example-input-help-required"
+          id="example-input-help-required-horizontal"
           name="voorbeeld-text-input"
-          placeholder="lorem ipsum"
           type="text"
-          aria-describedby="example-input-help-required-message"
-          required>
+          aria-describedby="example-input-help-required-horizontal-message"
+          required
+        />
         <p
           class="explanation"
           data-open-label="Toelichting bij het veld: Voorbeeld text input"
           data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-          id="example-input-help-required-message"
+          id="example-input-help-required-horizontal-message"
         >
-        <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+          <span>Toelichting:</span> Lorem ipsum dolor sit amet.
         </p>
       </div>
     </div>
@@ -203,23 +202,22 @@
           <fieldset>
             <legend>Help op simpel formulierveld</legend>
 
-            <label for="example-input-base">Voorbeeld invoerveld</label>
+            <label for="example-input-help-required-fieldset">Voorbeeld invoerveld</label>
             <div>
               <span class="nota-bene">Dit veld is verplicht</span>
               <div>
                 <input
-                  id="example-input-help-required"
+                  id="example-input-help-required-fieldset"
                   name="voorbeeld-text-input"
-                  placeholder="lorem ipsum"
                   type="text"
-                  aria-describedby="example-input-help-required-message"
+                  aria-describedby="example-input-help-required-fieldset-message"
                   required
                 />
                 <p
                   class="explanation"
                   data-open-label="Toelichting bij het veld: Voorbeeld text input"
                   data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                  id="example-input-help-required-message"
+                  id="example-input-help-required-fieldset-message"
                 >
                   <span>Toelichting:</span> Lorem ipsum dolor sit amet.
                 </p>
@@ -237,24 +235,24 @@
   <fieldset>
     <legend>Help op simpel formulierveld</legend>
 
-    <label for="example-input-base">Voorbeeld invoerveld</label>
+    <label for="example-input-help-required-fieldset">Voorbeeld invoerveld</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
       <div>
         <input
-          id="example-input-help-required"
+          id="example-input-help-required-fieldset"
           name="voorbeeld-text-input"
-          placeholder="lorem ipsum"
           type="text"
-          aria-describedby="example-input-help-required-message"
-          required>
+          aria-describedby="example-input-help-required-fieldset-message"
+          required
+        />
         <p
           class="explanation"
           data-open-label="Toelichting bij het veld: Voorbeeld text input"
           data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-          id="example-input-help-required-message"
+          id="example-input-help-required-fieldset-message"
         >
-        <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+          <span>Toelichting:</span> Lorem ipsum dolor sit amet.
         </p>
       </div>
     </div>
@@ -272,23 +270,24 @@
             <legend>Help op simpel formulierveld</legend>
 
             <div>
-              <label for="example-input-base">Voorbeeld invoerveld</label>
+              <label for="example-input-help-required-fieldset-horizontal"
+                >Voorbeeld invoerveld</label
+              >
               <div>
                 <span class="nota-bene">Dit veld is verplicht</span>
                 <div>
                   <input
-                    id="example-input-help-required"
+                    id="example-input-help-required-fieldset-horizontal"
                     name="voorbeeld-text-input"
-                    placeholder="lorem ipsum"
                     type="text"
-                    aria-describedby="example-input-help-required-message"
+                    aria-describedby="example-input-help-required-fieldset-horizontal-message"
                     required
                   />
                   <p
                     class="explanation"
                     data-open-label="Toelichting bij het veld: Voorbeeld text input"
                     data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                    id="example-input-help-required-message"
+                    id="example-input-help-required-fieldset-horizontal-message"
                   >
                     <span>Toelichting:</span> Lorem ipsum dolor sit amet.
                   </p>
@@ -309,24 +308,26 @@
     <legend>Help op simpel formulierveld</legend>
 
     <div>
-      <label for="example-input-base">Voorbeeld invoerveld</label>
+      <label for="example-input-help-required-fieldset-horizontal"
+        >Voorbeeld invoerveld</label
+      >
       <div>
         <span class="nota-bene">Dit veld is verplicht</span>
         <div>
           <input
-            id="example-input-help-required"
+            id="example-input-help-required-fieldset-horizontal"
             name="voorbeeld-text-input"
-            placeholder="lorem ipsum"
             type="text"
-            aria-describedby="example-input-help-required-message"
-            required>
+            aria-describedby="example-input-help-required-fieldset-horizontal-message"
+            required
+          />
           <p
             class="explanation"
             data-open-label="Toelichting bij het veld: Voorbeeld text input"
             data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-            id="example-input-help-required-message"
+            id="example-input-help-required-fieldset-horizontal-message"
           >
-          <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+            <span>Toelichting:</span> Lorem ipsum dolor sit amet.
           </p>
         </div>
       </div>
@@ -343,12 +344,7 @@
         <form action="" method="post" class="horizontal-view help">
           <div>
             <label for="form-example-base">Voorbeeld text input</label>
-            <input
-              id="form-example-base"
-              name="form-example-base"
-              placeholder="voorbeeld text input"
-              type="text"
-            />
+            <input id="form-example-base" name="form-example-base" type="text" />
           </div>
 
           <div>
@@ -359,18 +355,17 @@
               <span class="nota-bene">Dit veld is verplicht</span>
               <div>
                 <input
-                  id="example-input-help-required"
+                  id="example-input-help-horizontal"
                   name="voorbeeld-text-input"
-                  placeholder="lorem ipsum"
                   type="text"
-                  aria-describedby="example-input-help-required-message"
+                  aria-describedby="example-input-help-horizontal-message"
                   required
                 />
                 <p
                   class="explanation"
                   data-open-label="Toelichting bij het veld: Voorbeeld text input"
                   data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                  id="example-input-help-required-message"
+                  id="example-input-help-horizontal-message"
                 >
                   <span>Toelichting:</span> Lorem ipsum dolor sit amet.
                 </p>
@@ -384,18 +379,17 @@
             >
             <div>
               <input
-                id="example-input-help-required"
+                id="example-input-help-horizontal-required"
                 name="voorbeeld-text-input"
-                placeholder="lorem ipsum"
                 type="text"
-                aria-describedby="example-input-help-required-message"
+                aria-describedby="example-input-help-horizontal-required-message"
                 required
               />
               <p
                 class="explanation"
                 data-open-label="Toelichting bij het veld: Voorbeeld text input"
                 data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                id="example-input-help-required-message"
+                id="example-input-help-horizontal-required-message"
               >
                 <span>Toelichting:</span> Lorem ipsum dolor sit amet.
               </p>
@@ -412,12 +406,7 @@
 <form action="" method="post" class="horizontal-view help">
   <div>
     <label for="form-example-base">Voorbeeld text input</label>
-    <input
-      id="form-example-base"
-      name="form-example-base"
-      placeholder="voorbeeld text input"
-      type="text"
-    />
+    <input id="form-example-base" name="form-example-base" type="text" />
   </div>
 
   <div>
@@ -428,20 +417,19 @@
       <span class="nota-bene">Dit veld is verplicht</span>
       <div>
         <input
-          id="example-input-help-required"
+          id="example-input-help-horizontal"
           name="voorbeeld-text-input"
-          placeholder="lorem ipsum"
           type="text"
-          aria-describedby="example-input-help-required-message"
+          aria-describedby="example-input-help-horizontal-message"
           required
         />
         <p
           class="explanation"
           data-open-label="Toelichting bij het veld: Voorbeeld text input"
           data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-          id="example-input-help-required-message"
+          id="example-input-help-horizontal-message"
         >
-        <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+          <span>Toelichting:</span> Lorem ipsum dolor sit amet.
         </p>
       </div>
     </div>
@@ -453,18 +441,17 @@
     >
     <div>
       <input
-        id="example-input-help-required"
+        id="example-input-help-horizontal-required"
         name="voorbeeld-text-input"
-        placeholder="lorem ipsum"
         type="text"
-        aria-describedby="example-input-help-required-message"
+        aria-describedby="example-input-help-horizontal-required-message"
         required
       />
       <p
         class="explanation"
         data-open-label="Toelichting bij het veld: Voorbeeld text input"
         data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-        id="example-input-help-required-message"
+        id="example-input-help-horizontal-required-message"
       >
         <span>Toelichting:</span> Lorem ipsum dolor sit amet.
       </p>
@@ -482,13 +469,8 @@
           <fieldset>
             <legend>Fieldset test</legend>
             <div>
-              <label for="form-example-base">Voorbeeld text input</label>
-              <input
-                id="form-example-base"
-                name="form-example-base"
-                placeholder="voorbeeld text input"
-                type="text"
-              />
+              <label for="form-fieldset-test">Voorbeeld text input</label>
+              <input id="form-fieldset-test" name="form-fieldset-test" type="text" />
             </div>
 
             <div class="required">
@@ -499,18 +481,17 @@
                 <span class="nota-bene">Dit veld is verplicht</span>
                 <div>
                   <input
-                    id="example-input-help-required"
+                    id="example-input-help-required-basic"
                     name="voorbeeld-text-input"
-                    placeholder="lorem ipsum"
                     type="text"
-                    aria-describedby="example-input-help-required-message"
+                    aria-describedby="example-input-help-required-basic-message"
                     required
                   />
                   <p
                     class="explanation"
                     data-open-label="Toelichting bij het veld: Voorbeeld text input"
                     data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                    id="example-input-help-required-message"
+                    id="example-input-help-required-basic-message"
                   >
                     <span>Toelichting:</span> Lorem ipsum dolor sit amet.
                   </p>
@@ -524,18 +505,17 @@
               >
               <div>
                 <input
-                  id="example-input-help-required"
+                  id="example-input-help-required-2"
                   name="voorbeeld-text-input"
-                  placeholder="lorem ipsum"
                   type="text"
-                  aria-describedby="example-input-help-required-message"
+                  aria-describedby="example-input-help-required-2-message"
                   required
                 />
                 <p
                   class="explanation"
                   data-open-label="Toelichting bij het veld: Voorbeeld text input"
                   data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                  id="example-input-help-required-message"
+                  id="example-input-help-required-2-message"
                 >
                   <span>Toelichting:</span> Lorem ipsum dolor sit amet.
                 </p>
@@ -555,7 +535,7 @@
                 class="explanation"
                 data-open-label="Toelichting bij het veld: Voorbeeld text input"
                 data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                id="example-input-help-required-message"
+                id="checkbox-example-with-help-within-fieldset-message"
               >
                 <span>Toelichting:</span> Lorem ipsum dolor sit amet.
               </p>
@@ -568,7 +548,7 @@
                 class="explanation"
                 data-open-label="Toelichting bij het veld: Voorbeeld text input"
                 data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-                id="example-input-help-required-message"
+                id="radio-example-base-message"
               >
                 <span>Toelichting:</span> Lorem ipsum dolor sit amet.
               </p>
@@ -675,13 +655,8 @@
   <fieldset>
     <legend>Fieldset test</legend>
     <div>
-      <label for="form-example-base">Voorbeeld text input</label>
-      <input
-        id="form-example-base"
-        name="form-example-base"
-        placeholder="voorbeeld text input"
-        type="text"
-      />
+      <label for="form-fieldset-test">Voorbeeld text input</label>
+      <input id="form-fieldset-test" name="form-fieldset-test" type="text" />
     </div>
 
     <div class="required">
@@ -692,18 +667,17 @@
         <span class="nota-bene">Dit veld is verplicht</span>
         <div>
           <input
-            id="example-input-help-required"
+            id="example-input-help-required-basic"
             name="voorbeeld-text-input"
-            placeholder="lorem ipsum"
             type="text"
-            aria-describedby="example-input-help-required-message"
+            aria-describedby="example-input-help-required-basic-message"
             required
           />
           <p
             class="explanation"
             data-open-label="Toelichting bij het veld: Voorbeeld text input"
             data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-            id="example-input-help-required-message"
+            id="example-input-help-required-basic-message"
           >
             <span>Toelichting:</span> Lorem ipsum dolor sit amet.
           </p>
@@ -717,45 +691,50 @@
       >
       <div>
         <input
-          id="example-input-help-required"
+          id="example-input-help-required-2"
           name="voorbeeld-text-input"
-          placeholder="lorem ipsum"
           type="text"
-          aria-describedby="example-input-help-required-message"
+          aria-describedby="example-input-help-required-2-message"
           required
         />
         <p
           class="explanation"
           data-open-label="Toelichting bij het veld: Voorbeeld text input"
           data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-          id="example-input-help-required-message"
+          id="example-input-help-required-2-message"
         >
-        <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+          <span>Toelichting:</span> Lorem ipsum dolor sit amet.
         </p>
       </div>
     </div>
 
     <div class="checkbox">
-      <input type="checkbox" id="checkbox-example-with-help-within-fieldset" name="standaard-checkbox">
-      <label for="checkbox-example-with-help-within-fieldset">Lorem ipsum dolor sit amet</label>
+      <input
+        type="checkbox"
+        id="checkbox-example-with-help-within-fieldset"
+        name="standaard-checkbox"
+      />
+      <label for="checkbox-example-with-help-within-fieldset"
+        >Lorem ipsum dolor sit amet</label
+      >
       <p
-          class="explanation"
-          data-open-label="Toelichting bij het veld: Voorbeeld text input"
-          data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-          id="example-input-help-required-message"
+        class="explanation"
+        data-open-label="Toelichting bij het veld: Voorbeeld text input"
+        data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+        id="checkbox-example-with-help-within-fieldset-message"
       >
         <span>Toelichting:</span> Lorem ipsum dolor sit amet.
       </p>
     </div>
 
     <div class="radio">
-      <input type="radio" id="radio-example-base" name="standaard-radio">
+      <input type="radio" id="radio-example-base" name="standaard-radio" />
       <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
       <p
-          class="explanation"
-          data-open-label="Toelichting bij het veld: Voorbeeld text input"
-          data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-          id="example-input-help-required-message"
+        class="explanation"
+        data-open-label="Toelichting bij het veld: Voorbeeld text input"
+        data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+        id="radio-example-base-message"
       >
         <span>Toelichting:</span> Lorem ipsum dolor sit amet.
       </p>
@@ -764,31 +743,31 @@
     <fieldset>
       <legend>Examples</legend>
       <p
-          class="explanation"
-          data-open-label="Toelichting bij het veld: Voorbeeld text input"
-          data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-          id="example-radio-list-fieldset-help-required-message"
+        class="explanation"
+        data-open-label="Toelichting bij het veld: Voorbeeld text input"
+        data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+        id="example-radio-list-fieldset-help-required-message"
       >
         <span>Toelichting:</span> Lorem ipsum dolor sit amet.
       </p>
       <div class="radio">
-          <input type="radio" id="radio-example-list-1" name="standaard-radio">
-          <label for="radio-example-list-1">Lorem ipsum dolor sit amet</label>
+        <input type="radio" id="radio-example-list-1" name="standaard-radio" />
+        <label for="radio-example-list-1">Lorem ipsum dolor sit amet</label>
       </div>
 
       <div class="radio">
-          <input type="radio" id="radio-example-list-2" name="standaard-radio">
-          <label for="radio-example-list-2">Lorem ipsum dolor sit amet</label>
+        <input type="radio" id="radio-example-list-2" name="standaard-radio" />
+        <label for="radio-example-list-2">Lorem ipsum dolor sit amet</label>
       </div>
 
       <div class="radio">
-          <input type="radio" id="radio-example-list-3" name="standaard-radio">
-          <label for="radio-example-list-3">Lorem ipsum dolor sit amet</label>
+        <input type="radio" id="radio-example-list-3" name="standaard-radio" />
+        <label for="radio-example-list-3">Lorem ipsum dolor sit amet</label>
       </div>
 
       <div class="radio">
-          <input type="radio" id="radio-example-list-4" name="standaard-radio">
-          <label for="radio-example-list-4">Lorem ipsum dolor sit amet</label>
+        <input type="radio" id="radio-example-list-4" name="standaard-radio" />
+        <label for="radio-example-list-4">Lorem ipsum dolor sit amet</label>
       </div>
     </fieldset>
 
@@ -796,60 +775,59 @@
       <legend>Examples</legend>
 
       <div class="radio">
-        <input type="radio" id="radio-example-list-2-1" name="standaard-radio">
+        <input type="radio" id="radio-example-list-2-1" name="standaard-radio" />
         <label for="radio-example-list-2-1">Lorem ipsum dolor sit amet</label>
 
         <p
-        class="explanation"
-        data-open-label="Toelichting bij het veld: Voorbeeld text input"
-        data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-        id="example-radio-list-item-help-required-message"
+          class="explanation"
+          data-open-label="Toelichting bij het veld: Voorbeeld text input"
+          data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+          id="example-radio-list-item-help-required-message"
         >
-        <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+          <span>Toelichting:</span> Lorem ipsum dolor sit amet.
         </p>
       </div>
 
       <div class="radio">
-          <input type="radio" id="radio-example-list-2-2" name="standaard-radio">
-          <label for="radio-example-list-2-2">Lorem ipsum dolor sit amet</label>
+        <input type="radio" id="radio-example-list-2-2" name="standaard-radio" />
+        <label for="radio-example-list-2-2">Lorem ipsum dolor sit amet</label>
 
-          <p
+        <p
           class="explanation"
           data-open-label="Toelichting bij het veld: Voorbeeld text input"
           data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
           id="example-radio-list-item-help-required-message-2"
-          >
+        >
           <span>Toelichting:</span> Lorem ipsum dolor sit amet.
-          </p>
+        </p>
       </div>
 
       <div class="radio">
-          <input type="radio" id="radio-example-list-2-3" name="standaard-radio">
-          <label for="radio-example-list-2-3">Lorem ipsum dolor sit amet</label>
-          <p
+        <input type="radio" id="radio-example-list-2-3" name="standaard-radio" />
+        <label for="radio-example-list-2-3">Lorem ipsum dolor sit amet</label>
+        <p
           class="explanation"
           data-open-label="Toelichting bij het veld: Voorbeeld text input"
           data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
           id="example-radio-list-item-help-required-message-3"
-          >
-            <span>Toelichting:</span> Lorem ipsum dolor sit amet.
-          </p>
+        >
+          <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+        </p>
       </div>
 
       <div class="radio">
-          <input type="radio" id="radio-example-list-2-4" name="standaard-radio">
-          <label for="radio-example-list-2-4">Lorem ipsum dolor sit amet</label>
-          <p
+        <input type="radio" id="radio-example-list-2-4" name="standaard-radio" />
+        <label for="radio-example-list-2-4">Lorem ipsum dolor sit amet</label>
+        <p
           class="explanation"
           data-open-label="Toelichting bij het veld: Voorbeeld text input"
           data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
           id="example-radio-list-item-help-required-message-4"
-          >
+        >
           <span>Toelichting:</span> Lorem ipsum dolor sit amet.
-          </p>
+        </p>
       </div>
     </fieldset>
-
   </fieldset>
   <button type="submit">Verzend</button>
 </form>

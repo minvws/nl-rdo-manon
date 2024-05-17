@@ -27,7 +27,6 @@
           <input
             id="voorbeeld-invoerveld-direct"
             name="voorbeeld-invoerveld-direct"
-            placeholder="voorbeeld invoerveld"
             type="text"
           />
           <button type="submit">Verzend</button>
@@ -39,7 +38,11 @@
           code={`
 <form action="" method="post">
   <label for="voorbeeld-invoerveld-direct">Voorbeeld invoerveld</label>
-  <input id="voorbeeld-invoerveld-direct" name="voorbeeld-invoerveld-direct" placeholder="voorbeeld invoerveld" type="text">
+  <input
+    id="voorbeeld-invoerveld-direct"
+    name="voorbeeld-invoerveld-direct"
+    type="text"
+  />
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -53,7 +56,6 @@
             <input
               id="voorbeeld-invoerveld-div"
               name="voorbeeld-invoerveld-div"
-              placeholder="voorbeeld invoerveld"
               type="text"
             />
           </div>
@@ -67,7 +69,11 @@
 <form action="" method="post">
   <div>
     <label for="voorbeeld-invoerveld-div">Voorbeeld invoerveld</label>
-    <input id="voorbeeld-invoerveld-div" name="voorbeeld-invoerveld-div" placeholder="voorbeeld invoerveld" type="text">
+    <input
+      id="voorbeeld-invoerveld-div"
+      name="voorbeeld-invoerveld-div"
+      type="text"
+    />
   </div>
   <button type="submit">Verzend</button>
 </form>
@@ -82,7 +88,6 @@
             <input
               id="voorbeeld-invoerveld-section"
               name="voorbeeld-invoerveld-section"
-              placeholder="voorbeeld invoerveld"
               type="text"
             />
           </section>
@@ -96,7 +101,11 @@
 <form action="" method="post">
   <section>
     <label for="voorbeeld-invoerveld-section">Voorbeeld invoerveld</label>
-    <input id="voorbeeld-invoerveld-section" name="voorbeeld-invoerveld-section" placeholder="voorbeeld invoerveld" type="text">
+    <input
+      id="voorbeeld-invoerveld-section"
+      name="voorbeeld-invoerveld-section"
+      type="text"
+    />
   </section>
   <button type="submit">Verzend</button>
 </form>
@@ -112,7 +121,6 @@
             <input
               id="voorbeeld-invoerveld-fieldset"
               name="voorbeeld-invoerveld-fieldset"
-              placeholder="voorbeeld invoerveld"
               type="text"
             />
           </fieldset>
@@ -125,8 +133,13 @@
           code={`
 <form action="" method="post">
   <fieldset>
+    <legend>Invoerveld test</legend>
     <label for="voorbeeld-invoerveld-fieldset">Voorbeeld invoerveld</label>
-    <input id="voorbeeld-invoerveld-fieldset" name="voorbeeld-invoerveld-fieldset" placeholder="voorbeeld invoerveld" type="text">
+    <input
+      id="voorbeeld-invoerveld-fieldset"
+      name="voorbeeld-invoerveld-fieldset"
+      type="text"
+    />
   </fieldset>
   <button type="submit">Verzend</button>
 </form>

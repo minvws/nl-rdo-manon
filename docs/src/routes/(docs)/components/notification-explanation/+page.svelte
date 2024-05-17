@@ -432,7 +432,6 @@
             <textarea
               id="voorbeeld-tekstveld-explanation"
               name="voorbeeld-tekstveld-explanation"
-              placeholder="Jouw vraag of opmerking"
               class="explanation"
               aria-describedby="voorbeeld-tekstveld-explanation-message"
             ></textarea>
@@ -451,11 +450,17 @@
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-explanation">Voorbeeld tekstveld</label>
   <div>
-    <textarea id="voorbeeld-tekstveld-explanation" name="voorbeeld-tekstveld-explanation" placeholder="Jouw vraag of opmerking" class="explanation" aria-describedby="voorbeeld-tekstveld-explanation-message"></textarea>
+    <textarea
+      id="voorbeeld-tekstveld-explanation"
+      name="voorbeeld-tekstveld-explanation"
+      class="explanation"
+      aria-describedby="voorbeeld-tekstveld-explanation-message"
+    ></textarea>
     <p class="explanation" id="voorbeeld-tekstveld-explanation-message">
       <span>toelichting:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
+
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -512,7 +517,6 @@
             <input
               id="datalist-explanation"
               class="explanation"
-              placeholder="Begin met typen of klik om een optie uit te kiezen"
               list="example-list-explanation"
               aria-describedby="datalist-explanation-message"
             />
@@ -535,16 +539,21 @@
 <form action="" method="post">
   <label for="datalist-explanation">Input</label>
   <div>
-    <input id="datalist-explanation" class="explanation" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-explanation" aria-describedby="datalist-explanation-message">
+    <input
+      id="datalist-explanation"
+      class="explanation"
+      list="example-list-explanation"
+      aria-describedby="datalist-explanation-message"
+    />
     <p class="explanation" id="datalist-explanation-message">
       <span>toelichting:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
 
   <datalist id="example-list-explanation">
-    <option value="Optie 1">
-    <option value="Optie 2">
-    <option value="Optie 3">
+    <option value="Optie 1"></option>
+    <option value="Optie 2"></option>
+    <option value="Optie 3"></option>
   </datalist>
 </form>
 `}

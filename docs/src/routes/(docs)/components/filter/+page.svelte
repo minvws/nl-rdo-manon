@@ -128,18 +128,20 @@
               <div>
                 <label for="keyword">Trefwoord</label>
                 <div>
+                  <span class="nota-bene" id="keyword-explanation">Bijvoorbeeld: fiets</span>
                   <input
                     id="keyword"
                     name="keyword"
-                    placeholder="Bijvoorbeeld: fiets"
                     type="text"
+                    aria-describedby="keyword-explanation"
                   />
                   <p
                     class="explanation"
                     data-open-label="Toelichting bij het veld: Trefwoord"
                     data-close-label="Sluit toelichting bij het veld: Trefwoord"
                   >
-                    <span>toelichting:</span> Vul hier een trefwoord in waarop u wilt filteren.
+                    <span>toelichting:</span> Vul hier een trefwoord in waarop u wilt filteren. Dit kan
+                    een los woord zijn of een combinatie van woorden.
                   </p>
                 </div>
               </div>
@@ -200,9 +202,7 @@
 <section class="filter">
   <div>
     <p><span>5.254</span> nieuwsberichten</p>
-    <button data-show-filters-label="Toon filters">
-      Verberg filters
-    </button>
+    <button data-show-filters-label="Toon filters">Verberg filters</button>
   </div>
   <form aria-label="Filters" action="" method="post" class="horizontal-view help">
     <fieldset>
@@ -210,12 +210,21 @@
       <div>
         <label for="keyword">Trefwoord</label>
         <div>
-          <input id="keyword" name="keyword" placeholder="Bijvoorbeeld: fiets" type="text">
+          <span class="nota-bene" id="keyword-explanation">Bijvoorbeeld: fiets</span>
+          <input
+            id="keyword"
+            name="keyword"
+            type="text"
+            aria-describedby="keyword-explanation"
+          />
           <p
             class="explanation"
             data-open-label="Toelichting bij het veld: Trefwoord"
             data-close-label="Sluit toelichting bij het veld: Trefwoord"
-          ><span>toelichting:</span> Vul hier een trefwoord in waarop u wilt filteren.</p>
+          >
+            <span>toelichting:</span> Vul hier een trefwoord in waarop u wilt filteren. Dit kan
+            een los woord zijn of een combinatie van woorden.
+          </p>
         </div>
       </div>
 
@@ -224,19 +233,31 @@
         <div class="column-2">
           <div>
             <label for="date-range-start">van</label>
-            <input id="date-range-start" name="date-range-start" value="DD-MM-JJJJ" type="date">
+            <input
+              id="date-range-start"
+              name="date-range-start"
+              value="DD-MM-JJJJ"
+              type="date"
+            />
           </div>
 
           <div>
             <label for="date-range-end">tot</label>
-            <input id="date-range-end" name="date-range-end" value="DD-MM-JJJJ" type="date">
+            <input
+              id="date-range-end"
+              name="date-range-end"
+              value="DD-MM-JJJJ"
+              type="date"
+            />
           </div>
         </div>
         <p
           class="explanation"
           data-open-label="Toelichting bij het veld: Periode"
           data-close-label="Sluit toelichting bij het veld: Periode"
-        ><span>toelichting:</span> Vul hier een start- en/of einddatum als volgt in: DD-MM-JJJJ.</p>
+        >
+          <span>toelichting:</span> Vul hier een start- en/of einddatum als volgt in: DD-MM-JJJJ.
+        </p>
       </fieldset>
 
       <div class="required">
