@@ -47,6 +47,9 @@
   --pagination-link-active-text-color: var(
     --application-base-accent-color-text-color
   );
+  --pagination-link-active-border-width: var(--pagination-link-border-width);
+  --pagination-link-active-border-style: var(--pagination-link-border-style);
+  --pagination-link-active-border-color: var(--pagination-link-border-color);
 
   /* Adjacent selecotor - Previous and Next */
   --pagination-adjacent-background-color: var(

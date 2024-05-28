@@ -7,6 +7,9 @@
 %pagination-active-item-styling {
   background-color: var(--pagination-link-active-background-color);
   color: var(--pagination-link-active-text-color);
+  border-width: var(--pagination-link-active-border-width);
+  border-style: var(--pagination-link-active-border-style);
+  border-color: var(--pagination-link-active-border-color);
 }
 
 %pagination-link-styling {
