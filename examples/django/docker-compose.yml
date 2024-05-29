@@ -3,7 +3,7 @@ services:
     build:
       context: django-project
     ports:
-      - "8000:8000"
+      - "${PORT:-8000}:8000"
     environment:
       - DJANGO_SUPERUSER_PASSWORD=admin
     volumes:
