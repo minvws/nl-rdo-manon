@@ -1,8 +1,8 @@
 {
   "scripts": {
     "watch": "concurrently \"npm run css:watch\"",
-    "css:watch": "sass -w app/assets/scss/main.scss app/static/css/main.css --load-path=node_modules/",
-    "css:build": "sass app/assets/scss/main.scss app/static/css/main.css --load-path=node_modules/"
+    "css:watch": "sass -w assets/scss/main.scss app/static/css/main.css --load-path=node_modules/",
+    "css:build": "sass assets/scss/main.scss app/static/css/main.css --load-path=node_modules/"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
