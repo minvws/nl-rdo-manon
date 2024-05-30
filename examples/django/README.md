@@ -27,17 +27,16 @@ The project is structured as follows:
 ├── django-project
 │   ├── app
 │   │   ├── app
-│   │   ├── assets
-│   │   ├── assets
-│   │   │   └── scss
-│   │   │       ├── main.scss
-│   │   │       └── manon-components.scss
-│   │   ├── app
 │   │   ├── polls
 │   │   ├── static
 │   │   ├── templates
 │   │   ├── db.sqlite3
 │   │   └── manage.py
+│   ├── assets
+│   │   ├── img
+│   │   └── scss
+│   │       ├── main.scss
+│   │       └── manon-components.scss
 │   ├── Dockerfile
 │   ├── package.json
 │   ├── package-lock.json
@@ -58,6 +57,10 @@ In this example we've created a `main.scss` file in the `assets/scss` folder
 which imports the `manon-components.scss` file. Additionally, we import the
 `@minvws/manon-themes/basic-bold` theme. These dependencies are managed by npm
 and the `package.json` file.
+
+> [!NOTE]
+> This example doesn't use `pnpm`, meaning local changes done to `manon` or
+> `manon-themes` will not be reflected in the example project.
 
 ## Running the example
 

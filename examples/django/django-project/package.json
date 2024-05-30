@@ -1,8 +1,10 @@
 {
   "scripts": {
+    "build": "npm run css:build && npm run img:build",
     "watch": "concurrently \"npm run css:watch\"",
+    "css:build": "sass assets/scss/main.scss app/static/css/main.css --load-path=node_modules/",
     "css:watch": "sass -w assets/scss/main.scss app/static/css/main.css --load-path=node_modules/",
-    "css:build": "sass assets/scss/main.scss app/static/css/main.css --load-path=node_modules/"
+    "img:build": "mkdir -p app/static/img/ && cp -r assets/img/* app/static/img/"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",

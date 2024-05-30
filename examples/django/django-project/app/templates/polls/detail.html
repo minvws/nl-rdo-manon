@@ -11,7 +11,7 @@
   </section>
   <section>
     <div>
-      {% if error_message %}<p class="error" role="group" aria-label="error"><span>Error:</span>{{ error_message }}</p>{% endif %}
+      {% if error_message %}<p class="error" role="group" aria-label="error"><span>Error: </span>{{ error_message }}</p>{% endif %}
       <form action="{% url 'polls:vote' question.id %}" method="post">
         {% csrf_token %}
         <fieldset>

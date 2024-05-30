@@ -19,6 +19,7 @@ services:
       - -c
       - |
         npm install
-        npm run css:watch
+        npm run build
+        npm run watch
     volumes:
       - ./django-project:/app
