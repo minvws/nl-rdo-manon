@@ -40,6 +40,8 @@ jobs:
 
   sonarcloud:
     runs-on: ubuntu-latest
+    env:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -47,12 +49,8 @@ jobs:
       - name: 'Run SonarCloud scanner'
         if: ${{contains(github.ref, '/pull/')}}
         uses: SonarSource/sonarcloud-github-action@v2.2.0
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       - name: 'Run SonarCloud scanner'
         if: ${{!contains(github.ref, '/pull/')}}
         uses: SonarSource/sonarcloud-github-action@v2.2.0
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: -Dsonar.branch.name=${{ github.ref_name }}
