@@ -4,6 +4,24 @@
 @use "button-icon-variables";
 @use "mixins/icon";
 
+@mixin icon {
+  font-size: 0;
+  gap: 0;
+  min-width: var(--button-icon-min-width);
+  width: var(--button-icon-width);
+  min-height: var(--button-icon-min-height);
+  height: var(--button-icon-height);
+
+  &::before {
+    @include icon.icon;
+    font-family: var(--button-icon-font-family);
+    font-size: var(--button-icon-font-size);
+    padding-right: var(--button-icon-padding-right);
+    padding-left: var(--button-icon-padding-left);
+    color: var(--button-icon-text-color);
+  }
+}
+
 button,
 a.button,
 input[type="button"],
@@ -11,20 +29,6 @@ input[type="submit"],
 input[type="reset"] {
   &.icon,
   &.icon-only {
-    font-size: 0;
-    gap: 0;
-    min-width: var(--button-icon-min-width);
-    width: var(--button-icon-width);
-    min-height: var(--button-icon-min-height);
-    height: var(--button-icon-height);
-
-    &::before {
-      @include icon.icon;
-      font-family: var(--button-icon-font-family);
-      font-size: var(--button-icon-font-size);
-      padding-right: var(--button-icon-padding-right);
-      padding-left: var(--button-icon-padding-left);
-      color: var(--button-icon-text-color);
-    }
+    @include icon;
   }
 }

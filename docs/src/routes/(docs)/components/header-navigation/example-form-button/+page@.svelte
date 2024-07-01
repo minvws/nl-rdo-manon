@@ -115,50 +115,6 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 </header>
 `}
         />
-
-        <h2>CSS-voorbeeld:</h2>
-        <p>Ingestelde variabelen voor deze weergave</p>
-
-        <Code
-          language="css"
-          code={`
-:root {
-  /* Header */
-  --header-padding-right: 1rem;
-  --header-padding-left: 1rem;
-  --header-min-height: 3rem;
-  --header-flex-direction: row;
-  --header-justify-content: space-between;
-  --header-background-color: #1b1b39;
-  --header-navigation-text-color: white;
-  --header-navigation-padding-right: 0;
-  --header-navigation-padding-left: 0;
-  --header-navigation-position: initial;
-
-  /* Header Content wrapper */
-  --header-content-wrapper-position: relative;
-
-  /* Navigation */
-  --header-navigation-border-width: 0;
-  --header-navigation-width: auto;
-  --header-navigation-position: static;
-
-  /* Link styling */
-  --header-navigation-link-text-color: white;
-  --header-navigation-link-hover-text-color: var(--header-navigation-link-text-color);
-  --header-navigation-link-visited-text-color: var(--header-navigation-link-text-color);
-  --header-navigation-link-visited-hover-text-color: var(--header-navigation-link-text-color);
-  --header-navigation-link-active-text-color: var(--header-navigation-link-text-color);
-
-  /* Menu toggle button */
-  --navigation-collapsible-menu-button-background-color: transparent;
-  --navigation-collapsible-menu-icon-color: var(--header-navigation-link-text-color);
-
-  /* Collapsible menu */
-  --header-navigation-collapsible-menu-top: 4rem;
-}
-`}
-        />
       </section>
     </div>
   </article>
@@ -168,11 +124,21 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 
 <style>
   :root {
+    /* Header */
+    --header-border-width: 0 0 1px 0;
+    --header-border-color: #ccc;
+    --header-padding-right: var(--page-whitespace-right);
+    --header-padding-left: var(--page-whitespace-left);
+
     /* Content wrapper */
     --header-content-wrapper-position: relative;
 
     /* Header navigation */
     --header-navigation-position: static;
+    --header-navigation-border-width: 0;
+    --header-navigation-padding-right: 0;
+    --header-navigation-padding-left: 0;
+    --header-navigation-content-wrapper-gap: 1rem;
 
     /* Collapsible menu */
     --header-navigation-collapsible-menu-top: 4rem;

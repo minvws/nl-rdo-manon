@@ -48,28 +48,48 @@
         <ul>
           <li><a href="{base}/components/header-navigation/example">Navigatie</a></li>
           <li>
-            <a href="{base}/components/header-navigation/example-content-wrapper">Navigatie met content wrapper</a>
+            <a href="{base}/components/header-navigation/example-content-wrapper"
+              >Navigatie met content wrapper</a
+            >
+          </li>
+          <li>
+            <a href="{base}/components/header-navigation/example-search">Navigatie met zoekveld</a>
           </li>
           <li><a href="{base}/components/header-navigation/example-logo">Navigatie en logo</a></li>
-          <li><a href="{base}/components/header-navigation/example-logo-above">Navigatie met Logo bovenaan</a></li>
           <li>
-            <a href="{base}/components/header-navigation/example-multiple-menus">Navigatie met meerdere menu's</a>
+            <a href="{base}/components/header-navigation/example-logo-above"
+              >Navigatie met Logo bovenaan</a
+            >
           </li>
           <li>
-            <a href="{base}/components/header-navigation/example-language-select-list">Navigatie taalselectie</a>
+            <a href="{base}/components/header-navigation/example-multiple-menus"
+              >Navigatie met meerdere menu's</a
+            >
           </li>
           <li>
-            <a href="{base}/components/header-navigation/example-form-button">Navigatie met formulier knop</a>
+            <a href="{base}/components/header-navigation/example-language-select-list"
+              >Navigatie taalselectie</a
+            >
+          </li>
+          <li>
+            <a href="{base}/components/header-navigation/example-form-button"
+              >Navigatie met formulier knop</a
+            >
           </li>
         </ul>
       </section>
 
       <section id="requirements">
         <h1>Bijbehorende bestanden</h1>
-        <p>Voeg de (s)css-bestanden toe aan het project of importeer de bestanden.</p>
+        <p>
+          Voeg de (s)css-bestanden toe aan het project of importeer de bestanden. Hiervoor kunnen de
+          bestanden gebruikt worden uit beschikbare Manon-thema's. Of uit zelf gemaakte thema's.
+        </p>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h2>Importeer component via NPM</h2>
         <h3>CSS-voorbeeld:</h3>
@@ -114,7 +134,8 @@
 
               <tr>
                 <td>--header-navigation-justify-content</td>
-                <td><a href="{base}/documentation/variables#justify-content">justify-content</a></td>
+                <td><a href="{base}/documentation/variables#justify-content">justify-content</a></td
+                >
                 <td>center</td>
                 <td>-</td>
                 <td>-</td>
@@ -146,7 +167,10 @@
 
               <tr>
                 <td>--header-navigation-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--application-base-tint-1-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -210,7 +234,8 @@
 
               <tr>
                 <td>--header-navigation-link-text-decoration</td>
-                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td
+                >
                 <td>none</td>
                 <td>-</td>
                 <td>-</td>
@@ -226,7 +251,8 @@
 
               <tr>
                 <td>--header-navigation-link-hover-text-decoration</td>
-                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td
+                >
                 <td>underline</td>
                 <td>-</td>
                 <td>-</td>
