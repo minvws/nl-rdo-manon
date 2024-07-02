@@ -2,53 +2,53 @@
 
 /* Open sans */
 /* Regular */
-// @font-face {
-//   font-family: "Open Sans";
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: var(--text-body-font-display, swap);
-//   src: url("#{variables.$font-path}/OpenSans/OpenSans-Regular.woff2") format("woff2");
-// }
+@font-face {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-display: var(--text-body-font-display, swap);
+  src: url("#{variables.$font-path}/IBMPlexSans/IBMPlexSans-Regular.ttf") format("ttf");
+}
 
-// @font-face {
-//   font-family: "Open Sans";
-//   font-weight: normal;
-//   font-style: italic;
-//   font-display: var(--text-body-font-display, swap);
-//   src: url("#{variables.$font-path}/OpenSans/OpenSans-Italic.woff2") format("woff2");
-// }
+@font-face {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-display: var(--text-body-font-display, swap);
+  src: url("#{variables.$font-path}/IBMPlexSans/IBMPlexSans-Italic.ttf") format("ttf");
+}
 
 /* Semi bold */
-// @font-face {
-//   font-family: "Open Sans";
-//   font-weight: 600;
-//   font-style: normal;
-//   font-display: var(--text-body-font-display, swap);
-//   src: url("#{variables.$font-path}/OpenSans/OpenSans-SemiBold.woff2") format("woff2");
-// }
+@font-face {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-display: var(--text-body-font-display, swap);
+  src: url("#{variables.$font-path}/IBMPlexSans/IBMPlexSans-SemiBold.ttf") format("ttf");
+}
 
-// @font-face {
-//   font-family: "Open Sans";
-//   font-weight: 600;
-//   font-style: italic;
-//   font-display: var(--text-body-font-display, swap);
-//   src: url("#{variables.$font-path}/OpenSans/OpenSans-SemiBoldItalic.woff2") format("woff2");
-// }
+@font-face {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-display: var(--text-body-font-display, swap);
+  src: url("#{variables.$font-path}/IBMPlexSans/IBMPlexSans-SemiBoldItalic.ttf") format("ttf");
+}
 
 /* Icon font */
-// @font-face {
-//   font-family: "tabler-icons";
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: var(--text-icon-font-display, block);
-//   src: url("#{variables.$font-path}/tabler-icons/tabler-icons.eot?v2.44.0");
-//   src:
-//     url("#{variables.$font-path}/tabler-icons/tabler-icons.eot?#iefix-v2.44.0")
-//       format("embedded-opentype"),
-//     url("#{variables.$font-path}/tabler-icons/tabler-icons.woff2?v2.44.0")
-//       format("woff2"),
-//     url("#{variables.$font-path}/tabler-icons/tabler-icons.woff?")
-//       format("woff"),
-//     url("#{variables.$font-path}/tabler-icons/tabler-icons.ttf?v2.44.0")
-//       format("truetype");
-// }
+@font-face {
+  font-family: "tabler-icons";
+  font-weight: normal;
+  font-style: normal;
+  font-display: var(--text-icon-font-display, block);
+  src: url("#{variables.$font-path}/tabler-icons/tabler-icons.eot?v3.4.0");
+  src:
+   url("#{variables.$font-path}/tabler-icons/tabler-icons.eot?#iefix-v3.4.0")
+     format("embedded-opentype"),
+   url("#{variables.$font-path}/tabler-icons/tabler-icons.woff2?v3.4.0")
+     format("woff2"),
+   url("#{variables.$font-path}/tabler-icons/tabler-icons.woff?")
+     format("woff"),
+   url("#{variables.$font-path}/tabler-icons/tabler-icons.ttf?v3.4.0")
+     format("truetype");
+}
