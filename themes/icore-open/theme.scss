@@ -10,8 +10,10 @@
 @use "application-base";
 
 /* Fundamentals */
+@use "fundamentals/border-radii";
 @use "fundamentals/colors";
 @use "fundamentals/headings-base-set";
+@use "fundamentals/shadows";
 @use "fundamentals/spacing";
 
 /* Layout */
