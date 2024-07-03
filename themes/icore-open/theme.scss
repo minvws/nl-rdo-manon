@@ -27,6 +27,21 @@
 @use "components/form-button";
 @use "components/form-input";
 @use "components/form-textarea";
+@use "components/header-content-wrapper";
+@use "components/header-navigation-collapsible";
 @use "components/header-navigation";
 @use "components/header";
+@use "components/icons";
+@use "components/logo";
 @use "components/radio-input";
+@use "components/table";
+
+/* Layout */
+@use "components/main";
+@use "components/section";
+@use "components/section-content-wrapper";
+
+/* Theme specific components */
+/* These are components that aren't build on an exsisting Manon component
+And are specific to this theme */
+@use "theme-specific-components/visually-grouped";

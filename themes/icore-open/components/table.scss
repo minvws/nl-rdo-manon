@@ -1,0 +1,61 @@
+/* Table */
+
+:root {
+  /* Base */
+  --table-background-color: #ffffff;
+  --table-text-color: var(--application-base-text-color);
+  --table-text-align: left;
+
+  /* Table header */
+  --table-head-background-color: #ffffff;
+  --table-head-border-width: 0 0 2px 0;
+  --table-head-border-style: solid;
+  --table-head-border-color: #01689b;
+  --table-head-cell-padding: var(--spacing-075);
+
+  /* Table row */
+  --table-row-background-color-striping: transparent;
+
+  /* th */
+  --table-head-cell-font-size: 1rem;
+
+  /* Table body header */
+  --table-body-head-cell-border-width: 0;
+  --table-body-head-cell-background-color: transparent;
+
+  /* Table cell */
+  --table-cell-border-width: 0 0 1px 0;
+  --table-cell-border-style: solid;
+  --table-cell-border-color: #cccccc;
+  --table-cell-padding: 0.5rem 1rem;
+  --table-cells-padding: 0.25rem 1rem;
+
+  /* Actions */
+  --table-action-buttons-button-font-size: var(--icon-font-size);
+  --table-action-buttons-button-text-color: var(--link-text-color);
+  --table-action-buttons-button-hover-text-color: var(--link-text-color);
+
+  /* Table footer */
+  --table-foot-background-color: var(--white);
+  --table-foot-font-weight: 600;
+  --table-foot-font-size: var(--table-font-size);
+  --table-foot-border-width: 2px 0 0 0;
+  --table-foot-border-color: #01689b;
+
+  /* Table footer cell */
+  --table-foot-header-background-color: var(--white);
+  --table-foot-header-border-width: var(--table-cell-border-width);
+  --table-foot-header-border-style: var(--table-cell-border-style);
+  --table-foot-header-border-color: var(--table-cell-border-color);
+
+  /* Table footer cell */
+  --table-foot-cell-background-color: var(--white);
+  --table-foot-cell-border-width: var(--table-cell-border-width);
+  --table-foot-cell-border-style: var(--table-cell-border-style);
+  --table-foot-cell-border-color: var(--table-cell-border-color);
+}
+
+/* Custom styling */
+table thead th:first-child {
+  padding-left: 0;
+}
