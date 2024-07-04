@@ -112,6 +112,55 @@ importers:
         specifier: ^5.2.11
         version: 5.2.11(sass@1.77.6)
 
+  icore_open_docs:
+    dependencies:
+      '@minvws/manon':
+        specifier: workspace:*
+        version: link:../manon
+      '@minvws/manon-themes':
+        specifier: workspace:*
+        version: link:../themes
+      highlight.js:
+        specifier: ^11.9.0
+        version: 11.9.0
+    devDependencies:
+      '@sveltejs/adapter-static':
+        specifier: ^3.0.2
+        version: 3.0.2(@sveltejs/kit@2.5.18)
+      '@sveltejs/kit':
+        specifier: ^2.5.18
+        version: 2.5.18(@sveltejs/vite-plugin-svelte@3.1.1)(svelte@4.2.12)(vite@5.2.11)
+      '@sveltejs/vite-plugin-svelte':
+        specifier: ^3.1.1
+        version: 3.1.1(svelte@4.2.12)(vite@5.2.11)
+      prettier:
+        specifier: ^3.2.5
+        version: 3.2.5
+      prettier-plugin-svelte:
+        specifier: ^3.2.5
+        version: 3.2.5(prettier@3.2.5)(svelte@4.2.12)
+      rimraf:
+        specifier: ^5.0.7
+        version: 5.0.7
+      sass:
+        specifier: ^1.77.6
+        version: 1.77.6
+      svelte:
+        specifier: ^4.2.12
+        version: 4.2.12
+      svelte-check:
+        specifier: ^3.8.4
+        version: 3.8.4(sass@1.77.6)(svelte@4.2.12)
+      svelte-preprocess-import-assets:
+        specifier: ^1.1.0
+        version: 1.1.0(svelte@4.2.12)
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
+      vite:
+        specifier: ^5.2.11
+        version: 5.2.11(sass@1.77.6)
+
   manon:
     devDependencies:
       prettier:
@@ -5709,7 +5758,7 @@ packages:
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.7
-      picocolors: 1.0.0
+      picocolors: 1.0.1
       source-map-js: 1.2.0
     dev: true
 
