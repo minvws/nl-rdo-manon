@@ -16,7 +16,7 @@
     "npm-version": "npm version"
   },
   "peerDepencency": {
-    "sass": ">=1.23"
+    "sass": ">=1.77.6"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
