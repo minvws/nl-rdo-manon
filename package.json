@@ -9,5 +9,10 @@
     "build": "pnpm run --dir docs build",
     "lint": "pnpm run --dir manon lint:css",
     "format:check": "pnpm run --dir manon format:check"
+  },
+  "pnpm": {
+    "overrides": {
+      "braces@<3.0.3": ">=3.0.3"
+    }
   }
 }
