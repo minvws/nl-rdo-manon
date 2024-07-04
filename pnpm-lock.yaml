@@ -21,8 +21,8 @@ importers:
         version: 11.9.0
     devDependencies:
       '@sveltejs/adapter-static':
-        specifier: ^3.0.1
-        version: 3.0.1(@sveltejs/kit@2.5.18)
+        specifier: ^3.0.2
+        version: 3.0.2(@sveltejs/kit@2.5.18)
       '@sveltejs/kit':
         specifier: ^2.5.18
         version: 2.5.18(@sveltejs/vite-plugin-svelte@3.0.2)(svelte@4.2.12)(vite@5.2.11)
@@ -1936,8 +1936,8 @@ packages:
     dev: true
     optional: true
 
-  /@sveltejs/adapter-static@3.0.1(@sveltejs/kit@2.5.18):
-    resolution: {integrity: sha512-6lMvf7xYEJ+oGeR5L8DFJJrowkefTK6ZgA4JiMqoClMkKq0s6yvsd3FZfCFvX1fQ0tpCD7fkuRVHsnUVgsHyNg==}
+  /@sveltejs/adapter-static@3.0.2(@sveltejs/kit@2.5.18):
+    resolution: {integrity: sha512-/EBFydZDwfwFfFEuF1vzUseBoRziwKP7AoHAwv+Ot3M084sE/HTVBHf9mCmXfdM9ijprY5YEugZjleflncX5fQ==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
     dependencies:
