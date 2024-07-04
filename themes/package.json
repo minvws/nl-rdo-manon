@@ -16,8 +16,7 @@
     "npm-version": "npm version"
   },
   "peerDependencies": {
-    "@minvws/manon": "workspace:*",
-    "sass": ">=1.23"
+    "@minvws/manon": "workspace:*"
   },
   "repository": {
     "type": "git",
