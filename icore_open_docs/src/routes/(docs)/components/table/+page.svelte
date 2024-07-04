@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Tabel</h1>
@@ -42,7 +42,7 @@
                 <a href="{base}/components/table-action-buttons">Actieknoppen</a>
               </li>
               <li><a href="{base}/components/table-checkbox">Checkboxes</a></li>
-              <li><a href="{base}/components/table-notifications">Meldingen</a></li>
+              <!-- <li><a href="{base}/components/table-notifications">Meldingen</a></li> -->
               <li>
                 <a href="{base}/components/table-numerical-data">Numerieke data</a>
               </li>
@@ -63,10 +63,10 @@
                   >Tabeldata over meerdere kolommen</a
                 >
               </li>
-              <li><a href="{base}/components/table-scope">Tabelrichting</a></li>
-              <li>
+              <!-- <li><a href="{base}/components/table-scope">Tabelrichting</a></li> -->
+              <!-- <li>
                 <a href="{base}/components/table-condensed">Gecomprimeerde weergave</a>
-              </li>
+              </li> -->
             </ul>
           </nav>
 

@@ -15,6 +15,7 @@
   padding-bottom: var(--#{$prefix}-padding-bottom);
   padding-left: var(--#{$prefix}-padding-left);
   max-width: var(--#{$prefix}-max-width);
+  overflow: hidden;
 }
 
 @mixin layout-variables($prefix) {

@@ -22,7 +22,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Tabel met actieknoppen</h1>
@@ -70,7 +70,7 @@
               <tr>
                 <th scope="col">Gebruikersnaam</th>
                 <th scope="col">Bekijk profiel</th>
-                <th scope="col">Wijzig wachtwoord</th>
+                <th scope="col">Goedkeuren</th>
                 <th scope="col">Deactiveer</th>
                 <th scope="col">Verwijder</th>
               </tr>
@@ -80,26 +80,26 @@
                 <td>Jane doe</td>
                 <td>
                   <form>
-                    <button type="submit" class="icon icon-cat action-button">
+                    <button type="submit" class="icon icon-user action-button">
                       Bekijk profiel
                     </button>
                   </form>
                 </td>
                 <td>
                   <form>
-                    <button type="submit" class="icon icon-cat action-button">
-                      Wijzig wachtwoord
+                    <button type="submit" class="icon icon-check action-button">Goedkeuren</button>
+                  </form>
+                </td>
+                <td>
+                  <form>
+                    <button type="submit" class="icon icon-close action-button">
+                      Deactiveer
                     </button>
                   </form>
                 </td>
                 <td>
                   <form>
-                    <button type="submit" class="icon icon-cat action-button"> Deactiveer </button>
-                  </form>
-                </td>
-                <td>
-                  <form>
-                    <button type="submit" class="icon icon-cat action-button">Verwijder</button>
+                    <button type="submit" class="icon icon-trash action-button">Verwijder</button>
                   </form>
                 </td>
               </tr>
@@ -119,7 +119,7 @@
       <tr>
         <th scope="col">Gebruikersnaam</th>
         <th scope="col">Bekijk profiel</th>
-        <th scope="col">Wijzig wachtwoord</th>
+        <th scope="col">Goedkeuren</th>
         <th scope="col">Deactiveer</th>
         <th scope="col">Verwijder</th>
       </tr>
@@ -129,22 +129,22 @@
           <td>Jane doe</td>
           <td>
               <form>
-                  <button type="submit" class="icon icon-cat action-button">Bekijk profiel</button>
+                  <button type="submit" class="icon icon-user action-button">Bekijk profiel</button>
               </form>
           </td>
           <td>
               <form>
-                  <button type="submit" class="icon icon-cat action-button">Wijzig wachtwoord</button>
+                  <button type="submit" class="icon icon-check action-button">Goedkeuren</button>
               </form>
           </td>
           <td>
               <form>
-                  <button type="submit" class="icon icon-cat action-button">Deactiveer</button>
+                  <button type="submit" class="icon icon-close action-button">Deactiveer</button>
               </form>
           </td>
           <td>
               <form>
-                  <button type="submit" class="icon icon-cat action-button">Verwijder</button>
+                  <button type="submit" class="icon icon-trash action-button">Verwijder</button>
               </form>
           </td>
       </tr>
@@ -165,7 +165,7 @@
       <tr>
         <th scope="col">Gebruikersnaam</th>
         <th scope="col">Bekijk profiel</th>
-        <th scope="col">Wijzig wachtwoord</th>
+        <th scope="col">Goedkeuren</th>
         <th scope="col">Deactiveer</th>
         <th scope="col">Verwijder</th>
       </tr>
@@ -180,7 +180,7 @@
           </td>
           <td>
               <form>
-                  <button type="submit">Wijzig wachtwoord</button>
+                  <button type="submit">Goedkeuren</button>
               </form>
           </td>
           <td>

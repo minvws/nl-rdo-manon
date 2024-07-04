@@ -63,7 +63,7 @@
       <li><a href="#requirements">Benodigdheden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Toelichting</h1>
@@ -79,7 +79,9 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling"
+              >Componenten gebruiken en styling toevoegen</a
+            >
           </li>
           <li>
             Voeg de benodigde HTML toe. Zie het voorbeeld per element voor de implementatiedetails.
@@ -205,7 +207,11 @@
 
         <h4 id="explanation-th">Toelichting op tabeltitel</h4>
 
-        <p class="warning"><span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven hoe een tabeltitel als toelichting opgemaakt kan worden. Deze instructies zijn weggehaald, omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.</p>
+        <p class="warning">
+          <span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven
+          hoe een tabeltitel als toelichting opgemaakt kan worden. Deze instructies zijn weggehaald,
+          omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.
+        </p>
 
         <h4 id="explanation-td">Toelichting op Tabelcel</h4>
 
@@ -633,7 +639,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h3>Benodigd</h3>
         <ul>

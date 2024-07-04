@@ -2,15 +2,47 @@
 
 :root {
   --button-base-border-radius: var(--border-radius-m);
-  --button-base-background-color: #fff;
+  --button-base-background-color: var(--white);
   --button-base-border-width: 1px;
   --button-base-border-color: #d4d4d4;
   --button-base-text-color: #006fb3;
   --button-base-font-size: 1rem;
 
   /* Hover */
-  --button-base-hover-background-color: #fff;
+  --button-base-hover-background-color: var(--button-base-background-color);
   --button-base-hover-border-color: #005c94;
   --button-base-hover-text-color: #005c94;
   --button-base-hover-border-radius: var(--button-base-border-radius);
+
+  /* Active */
+  --button-base-active-background-color: var(
+    --button-base-hover-background-color
+  );
+
+  --button-base-active-border-color: var(--button-base-hover-border-color);
+  --button-base-active-text-color: var(--button-base-hover-text-color);
+
+  /* Focus */
+  --button-base-focus-background-color: var(
+    --button-base-hover-background-color
+  );
+
+  --button-base-focus-border-color: var(--button-base-hover-border-color);
+  --button-base-focus-text-color: var(--button-base-hover-text-color);
+
+  /* Selected */
+  --button-base-selected-background-color: var(
+    --button-base-hover-background-color
+  );
+
+  --button-base-selected-border-color: var(--button-base-hover-border-color);
+  --button-base-selected-text-color: var(--button-base-hover-text-color);
+
+  /* Visisted */
+  --button-base-visited-background-color: var(
+    --button-base-hover-background-color
+  );
+
+  --button-base-visited-border-color: var(--button-base-hover-border-color);
+  --button-base-visited-text-color: var(--button-base-hover-text-color);
 }

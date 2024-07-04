@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Paragraaf</h1>
@@ -76,7 +76,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -140,7 +142,10 @@
 
               <tr>
                 <td>--p-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>unset</td>
                 <td>-</td>
                 <td>-</td>

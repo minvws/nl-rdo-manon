@@ -12,7 +12,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Iconen testpagina</h1>
@@ -472,9 +472,7 @@
             <button aria-haspopup="listbox" aria-current="true"> Papiamentu </button>
             <ul role="listbox">
               <li role="option" aria-selected="false">
-                <a hreflang="nl" href="test" data-value="Nederlands" lang="nl"
-                  >Nederlands</a
-                >
+                <a hreflang="nl" href="test" data-value="Nederlands" lang="nl">Nederlands</a>
               </li>
               <li role="option" aria-selected="false">
                 <a hreflang="en" href="test" data-value="English" lang="en">English</a>
@@ -483,13 +481,11 @@
                 <a hreflang="fy" href="test" data-value="Frysk" lang="fy">Frysk</a>
               </li>
               <li role="option" aria-selected="true" aria-current="true">
-                <a hreflang="pap-CW" href="test" data-value="Papiamentu" lang="pap-CW"
-                  >Papiamentu</a
+                <a hreflang="pap-CW" href="test" data-value="Papiamentu" lang="pap-CW">Papiamentu</a
                 >
               </li>
               <li role="option" aria-selected="false">
-                <a hreflang="pap-AW" href="test" data-value="Papiamento" lang="pap-AW"
-                  >Papiamento</a
+                <a hreflang="pap-AW" href="test" data-value="Papiamento" lang="pap-AW">Papiamento</a
                 >
               </li>
             </ul>

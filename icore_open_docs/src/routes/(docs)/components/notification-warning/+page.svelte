@@ -63,7 +63,7 @@
       <li><a href="#requirements">Benodigdheden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Waarschuwing</h1>
@@ -207,7 +207,11 @@
 
         <h4 id="warning-th">Waarschuwing op tabeltitel</h4>
 
-        <p class="warning"><span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven hoe een tabeltitel als waarschuwing opgemaakt kan worden. Deze instructies zijn weggehaald, omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.</p>
+        <p class="warning">
+          <span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven
+          hoe een tabeltitel als waarschuwing opgemaakt kan worden. Deze instructies zijn
+          weggehaald, omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.
+        </p>
 
         <h4 id="warning-td">Waarschuwing op Tabelcel</h4>
 

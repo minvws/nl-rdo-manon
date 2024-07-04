@@ -45,7 +45,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
   <DefaultHeader class="page-header" />
 
   <main id="main-content" tabindex="-1">
-    <article>
+    <article class="visually-grouped">
       <div>
         <section id="introduction">
           <h1>Zijmenu naast de pagina</h1>
@@ -57,7 +57,9 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 
           <p>
             Gaat de inhoud van het zijmenu over de inhoud van de content. En hoort het bij de
-            content. Gebruik dan: <a href="{base}/components/sidemenu/in-page">Zijmenu binnen de pagina</a>
+            content. Gebruik dan: <a href="{base}/components/sidemenu/in-page"
+              >Zijmenu binnen de pagina</a
+            >
           </p>
 
           <nav aria-labelledby="table-of-contents">
@@ -130,7 +132,9 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
           <h2>Bijbehorende bestanden</h2>
           <p>
             Voor meer informatie over importeren en instellen van componenten. Zie:
-            <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling"
+              >Componenten gebruiken en styling toevoegen</a
+            >
           </p>
 
           <h3>Importeer component via NPM</h3>

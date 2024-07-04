@@ -5,7 +5,7 @@
   --header-navigation-padding-top: 0;
   --header-navigation-padding-right: var(--page-whitespace-right);
   --header-navigation-padding-bottom: 0;
-  --header-navigation-padding-left: var(--page-whitespace-right);
+  --header-navigation-padding-left: var(--page-whitespace-left);
   --header-navigation-min-height: 5rem;
   --header-navigation-position: static;
 
@@ -24,17 +24,29 @@
   --header-navigation-link-background-color: transparent;
   --header-navigation-link-padding-right: 1rem;
   --header-navigation-link-padding-left: 1rem;
+  --header-navigation-link-font-weight: bold;
 
   /* Link hover */
   --header-navigation-link-hover-background-color: var(--grey-1);
+  --header-navigation-link-hover-font-weight: var(
+    --header-navigation-link-font-weight
+  );
 
   /* Link active */
   --header-navigation-link-active-background-color: var(
     --header-navigation-link-hover-background-color
   );
+  --header-navigation-link-active-font-weight: var(
+    --header-navigation-link-font-weight
+  );
 
   /* Link focus */
   --header-navigation-link-focus-text-decoration: underline;
+
+  /* Visited */
+  --header-navigation-link-visited-font-weight: var(
+    --header-navigation-link-font-weight
+  );
 
   /* List */
   --header-navigation-list-align-content: stretch;

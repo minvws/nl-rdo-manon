@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Tags kleurenset zes kleuren &amp; drie tinten</h1>
@@ -496,7 +496,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -542,7 +544,10 @@
             <tbody>
               <tr>
                 <td>--tags-color-1-light-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-blue-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -566,7 +571,10 @@
 
               <tr>
                 <td>--tags-color-1-medium-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-blue-medium-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -590,7 +598,10 @@
 
               <tr>
                 <td>--tags-color-1-dark-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-blue-dark-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -614,7 +625,10 @@
 
               <tr>
                 <td>--tags-color-2-light-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-green-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -638,7 +652,10 @@
 
               <tr>
                 <td>--tags-color-2-medium-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-green-medium-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -662,7 +679,10 @@
 
               <tr>
                 <td>--tags-color-2-dark-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-green-dark-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -686,7 +706,10 @@
 
               <tr>
                 <td>--tags-color-3-light-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-yellow-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -710,7 +733,10 @@
 
               <tr>
                 <td>--tags-color-3-medium-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-yellow-medium-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -734,7 +760,10 @@
 
               <tr>
                 <td>--tags-color-3-dark-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-yellow-dark-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -758,7 +787,10 @@
 
               <tr>
                 <td>--tags-color-4-light-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-orange-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -782,7 +814,10 @@
 
               <tr>
                 <td>--tags-color-4-medium-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-orange-medium-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -806,7 +841,10 @@
 
               <tr>
                 <td>--tags-color-4-dark-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-orange-dark-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -830,7 +868,10 @@
 
               <tr>
                 <td>--tags-color-5-light-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-red-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -854,7 +895,10 @@
 
               <tr>
                 <td>--tags-color-5-medium-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-red-medium-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -878,7 +922,10 @@
 
               <tr>
                 <td>--tags-color-5-dark-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-red-dark-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -902,7 +949,10 @@
 
               <tr>
                 <td>--tags-color-6-light-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-violet-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -926,7 +976,10 @@
 
               <tr>
                 <td>--tags-color-6-medium-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-violet-medium-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -950,7 +1003,10 @@
 
               <tr>
                 <td>--tags-color-6-dark-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-violet-dark-background-color)</td>
                 <td>-</td>
                 <td>-</td>

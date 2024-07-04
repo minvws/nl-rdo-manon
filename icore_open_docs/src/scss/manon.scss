@@ -23,9 +23,6 @@
 /* Layout */
 @use "@minvws/manon/layout-set";
 
-/* Tags */
-// @use "@minvws/manon/tag-colors-soft";
-
 /* Headings */
 @use "@minvws/manon/headings";
 
@@ -45,15 +42,15 @@
 
 /* Text */
 @use "@minvws/manon/p";
-// @use "@minvws/manon/emphasized";
-// @use "@minvws/manon/de-emphasized";
+@use "@minvws/manon/emphasized";
+@use "@minvws/manon/de-emphasized";
 @use "@minvws/manon/link";
 @use "@minvws/manon/link-external";
 @use "@minvws/manon/link-visited";
 @use "@minvws/manon/link-hover";
 @use "@minvws/manon/link-active";
 @use "@minvws/manon/link-focus";
-// @use "@minvws/manon/nota-bene";
+@use "@minvws/manon/nota-bene";
 // @use "@minvws/manon/max-line-length";
 
 /* Helpers */
@@ -75,19 +72,19 @@
 /* Layout */
 /*@use "@minvws/manon/layout-base-variables";*/
 
-// @use "@minvws/manon/layout-authentication";
-// @use "@minvws/manon/layout-one-third-two-thirds";
-// @use "@minvws/manon/layout-two-thirds-one-third";
-// @use "@minvws/manon/layout-fifty-fifty";
+@use "@minvws/manon/layout-authentication";
+@use "@minvws/manon/layout-one-third-two-thirds";
+@use "@minvws/manon/layout-two-thirds-one-third";
+@use "@minvws/manon/layout-fifty-fifty";
 @use "@minvws/manon/layout-column-2";
 @use "@minvws/manon/layout-column-3";
 @use "@minvws/manon/layout-column-4";
-// @use "@minvws/manon/layout-centered";
-// @use "@minvws/manon/layout-form";
+@use "@minvws/manon/layout-centered";
+@use "@minvws/manon/layout-form";
 
 /* Button */
 @use "@minvws/manon/button-base";
-// @use "@minvws/manon/button-container";
+@use "@minvws/manon/button-container";
 // @use "@minvws/manon/button-dropdown";
 // @use "@minvws/manon/button-ghost";
 // @use "@minvws/manon/button-destructive";
@@ -174,7 +171,7 @@
 // @use "@minvws/manon/accordion";
 // @use "@minvws/manon/filter";
 // @use "@minvws/manon/card";
-// @use "@minvws/manon/list-base";
+@use "@minvws/manon/list-base";
 @use "@minvws/manon/skip-to-content";
 // @use "@minvws/manon/background-color-offset";
 // @use "@minvws/manon/description-list";
@@ -266,10 +263,11 @@
 // @use "@minvws/manon/login-meta";
 
 /* Tags */
-// @use "@minvws/manon/tag";
-// @use "@minvws/manon/tags";
-// @use "@minvws/manon/tags-6-3";
-// @use "@minvws/manon/tags-6";
+@use "@minvws/manon/tag-colors-soft";
+@use "@minvws/manon/tag";
+@use "@minvws/manon/tags";
+@use "@minvws/manon/tags-6-3";
+@use "@minvws/manon/tags-6";
 
 /* Other */
 @use "@minvws/manon/code-base";

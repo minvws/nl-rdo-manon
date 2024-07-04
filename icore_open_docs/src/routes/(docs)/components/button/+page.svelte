@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <div>
       <h1>Knoppen</h1>
 
@@ -109,8 +109,8 @@
         <h2>Beschikbare button-types</h2>
         <ul>
           <li><a href="{base}/components/button-base">Basis-weergave</a></li>
-          <!-- <li><a href="{base}/components/button-container">Knoppen groeperen</a></li>
-          <li><a href="{base}/components/button-dropdown">Dropdown button</a></li>
+          <li><a href="{base}/components/button-container">Knoppen groeperen</a></li>
+          <!-- <li><a href="{base}/components/button-dropdown">Dropdown button</a></li>
           <li><a href="{base}/components/button-ghost">Ghost button</a></li>
           <li><a href="{base}/components/button-destructive">Destructieve knop</a></li>
           <li>

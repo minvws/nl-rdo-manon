@@ -6,8 +6,13 @@
   --breadcrumb-bar-content-wrapper-max-width: 100%;
   --breadcrumb-bar-padding-top: 1rem;
   --breadcrumb-bar-padding-bottom: 1rem;
-  --breadcrumb-bar-background-color: var(--white);
+  --breadcrumb-bar-background-color: transparent;
+  --breadcrumb-bar-font-size: var(--body-text-small-font-size);
   --breadcrumb-bar-text-color: var(--application-base-text-color);
+
+  /* List */
+  --breadcrumb-bar-list-gap: var(--spacing-050);
+  --breadcrumb-bar-list-item-gap: var(--breadcrumb-bar-list-gap);
 
   /* Links */
   --breadcrumb-bar-link-text-color: var(--application-base-text-color);

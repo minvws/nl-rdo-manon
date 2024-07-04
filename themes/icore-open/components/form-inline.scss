@@ -4,12 +4,12 @@
   --form-button-font-size: 1rem;
 }
 
-form {
+form.inline {
   button,
   a.button,
   input[type="button"],
   input[type="submit"],
   input[type="reset"] {
-    margin-top: var(--spacing-100);
+    margin-top: 0;
   }
 }

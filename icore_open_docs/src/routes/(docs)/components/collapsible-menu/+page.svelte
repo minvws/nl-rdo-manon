@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Inklapbaar menu</h1>
@@ -75,7 +75,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Aandachtspunten:</h3>
@@ -152,7 +154,10 @@
 
               <tr>
                 <td>--navigation-collapsible-menu-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>transparent</td>
                 <td>-</td>
               </tr>
@@ -215,7 +220,10 @@
 
               <tr>
                 <td>--navigation-collapsible-menu-list-collapsed-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--application-base-accent-color-tint-2)</td>
                 <td>-</td>
               </tr>
@@ -250,7 +258,10 @@
 
               <tr>
                 <td>--navigation-collapsible-menu-list-item-collapsed-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--application-base-background-color, transparent)</td>
                 <td>-</td>
               </tr>
@@ -285,21 +296,26 @@
 
               <tr>
                 <td>--navigation-collapsible-link-text-decoration</td>
-                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td
+                >
                 <td>none</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--navigation-collapsible-link-justify-content</td>
-                <td><a href="{base}/documentation/variables#justify-content">justify-content</a></td>
+                <td><a href="{base}/documentation/variables#justify-content">justify-content</a></td
+                >
                 <td>flex-start</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--navigation-collapsible-menu-list-item-collapsed-hover-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--branding-color-1-background-color, #c0c0c0)</td>
                 <td>-</td>
               </tr>
@@ -313,7 +329,10 @@
 
               <tr>
                 <td>--navigation-collapsible-menu-button-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--application-base-background-color)</td>
                 <td>-</td>
               </tr>

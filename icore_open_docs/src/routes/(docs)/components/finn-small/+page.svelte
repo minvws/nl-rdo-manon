@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Finn klein</h1>
@@ -132,7 +132,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten, zie
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h3>Benodigd</h3>
         <ul>
@@ -168,7 +170,10 @@
 
               <tr>
                 <td>--branding-color-1-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
               </tr>
 
               <tr>
@@ -210,7 +215,10 @@
 
               <tr>
                 <td>--branding-color-2-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
               </tr>
 
               <tr>

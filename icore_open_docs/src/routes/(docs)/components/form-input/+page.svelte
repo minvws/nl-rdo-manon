@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Invoerveld</h1>
@@ -53,11 +53,7 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <label for="example-input-base">Voorbeeld invoerveld</label>
-          <input
-            id="example-input-base"
-            name="example-input-base"
-            type="text"
-          />
+          <input id="example-input-base" name="example-input-base" type="text" />
           <button type="submit">Verzend</button>
         </form>
 
@@ -98,12 +94,7 @@
         <form action="" method="post">
           <label for="example-input-required">Gebruikersnaam</label>
           <span class="nota-bene">Dit veld is verplicht</span>
-          <input
-            id="example-input-required"
-            name="example-input-required"
-            type="text"
-            required
-          />
+          <input id="example-input-required" name="example-input-required" type="text" required />
           <button type="submit">Verzend</button>
         </form>
 
@@ -136,12 +127,7 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <label for="example-input-disabled">Gebruikersnaam</label>
-          <input
-            id="example-input-disabled"
-            name="example-input-disabled"
-            type="text"
-            disabled
-          />
+          <input id="example-input-disabled" name="example-input-disabled" type="text" disabled />
           <button type="submit">Verzend</button>
         </form>
 
@@ -167,7 +153,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h2>Benodigd</h2>
         <ul>

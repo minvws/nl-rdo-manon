@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Links</h1>
@@ -105,7 +105,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Aandachtspunten:</h3>
@@ -150,7 +152,10 @@
             <tbody>
               <tr>
                 <td>--link-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>transparent</td>
                 <td>-</td>
                 <th rowspan="4" scope="rowgroup">links</th>
@@ -165,7 +170,8 @@
 
               <tr>
                 <td>--link-text-decoration</td>
-                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td
+                >
                 <td>initial</td>
                 <td>-</td>
               </tr>

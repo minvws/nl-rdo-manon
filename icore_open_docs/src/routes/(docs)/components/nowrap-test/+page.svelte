@@ -12,7 +12,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Horizontale scroll testpagina</h1>
@@ -24,10 +24,11 @@
         <h3><dfn>nowrap</dfn> op een <code>p</code></h3>
         <p class="explanation">
           <span>Toelichting:</span> In dit voorbeeld wordt er ook gebruik gemaakt van de
-          <dfn>helper-class</dfn> <a href="{base}/components/horizontal-scroll">horizontal-scroll</a> om te
-          voorkomen dat het voorbeeld-element de layout van de pagina breekt. Zonder deze toevoeging
-          zou de tekst het scherm uitlopen. De class <code>horizontal-scroll</code> voegt op de maximale
-          beschikbare breedte de scrollbalk toe.
+          <dfn>helper-class</dfn>
+          <a href="{base}/components/horizontal-scroll">horizontal-scroll</a>
+          om te voorkomen dat het voorbeeld-element de layout van de pagina breekt. Zonder deze
+          toevoeging zou de tekst het scherm uitlopen. De class <code>horizontal-scroll</code> voegt
+          op de maximale beschikbare breedte de scrollbalk toe.
         </p>
         <h4>Visueel voorbeeld:</h4>
         <p class="nowrap horizontal-scroll">

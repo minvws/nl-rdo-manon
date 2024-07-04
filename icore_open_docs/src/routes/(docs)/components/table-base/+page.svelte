@@ -20,7 +20,7 @@
       <li><a href="#requirements">Benodigde bestanden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Tabel</h1>

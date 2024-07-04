@@ -33,16 +33,16 @@
                 <li><a href="{base}/components/heading-base-set">Titel basisset</a></li>
               </ul>
             </li>
-            <!-- <li>
+            <li>
               <strong>Tekstweergaven</strong>
               <ul>
-                <li><a href="{base}/components/body-text-set">Body text set</a></li>
+                <!-- <li><a href="{base}/components/body-text-set">Body text set</a></li> -->
                 <li><a href="{base}/components/paragraph">Paragraaf</a></li>
                 <li><a href="{base}/components/emphasized">Benadrukte weergave</a></li>
                 <li><a href="{base}/components/de-emphasized">Subtielere weergave</a></li>
                 <li><a href="{base}/components/nota-bene">Nota bene</a></li>
               </ul>
-            </li> -->
+            </li>
           </ul>
         </nav>
 
@@ -93,7 +93,7 @@
     </div>
   </section>
 
-  <!-- <section id="layout">
+  <section id="layout" class="visually-grouped">
     <div>
       <h2>Layout</h2>
       <div class="column-2">
@@ -124,7 +124,7 @@
         </nav>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <section id="components" class="visually-grouped">
     <div>
@@ -173,7 +173,7 @@
               <!-- <li><a href="{base}/components/pagination">Paginering</a></li> -->
               <!-- <li><a href="{base}/components/language-selector">Taalselectie</a></li> -->
               <!-- <li><a href="{base}/components/tabs">Tabbladen</a></li> -->
-              <!-- <li><a href="{base}/components/tag">Tag</a></li> -->
+              <li><a href="{base}/components/tag">Tag</a></li>
               <!-- <li><a href="{base}/components/tiles">Tegelweergave</a></li> -->
               <!-- <li><a href="{base}/components/sidemenu">Zijmenu</a></li> -->
             </ul>

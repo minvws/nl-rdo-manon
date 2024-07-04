@@ -20,7 +20,7 @@
       <li><a href="#requirements">Benodigdheden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Sorteerbare tabel</h1>

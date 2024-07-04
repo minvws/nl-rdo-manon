@@ -112,6 +112,19 @@ body > header nav.collapsible {
                 --header-navigation-collapsible-list-item-border-color
               );
 
+              padding-top: var(
+                --header-navigation-collapsible-list-item-padding-top
+              );
+              padding-right: var(
+                --header-navigation-collapsible-list-item-padding-right
+              );
+              padding-bottom: var(
+                --header-navigation-collapsible-list-item-padding-bottom
+              );
+              padding-left: var(
+                --header-navigation-collapsible-list-item-padding-left
+              );
+
               &::before {
                 display: none;
                 /* Preventing default nav before to show up */

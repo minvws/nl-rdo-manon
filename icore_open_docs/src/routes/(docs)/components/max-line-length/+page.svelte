@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Maximale regellengte</h1>
@@ -118,7 +118,9 @@
                 <th rowspan="2" scope="rowgroup">word-break</th>
                 <td>Voor breekpunt</td>
                 <td>--max-line-length-word-break</td>
-                <td rowspan="2"><a href="{base}/documentation/variables#word-break">word-break</a></td>
+                <td rowspan="2"
+                  ><a href="{base}/documentation/variables#word-break">word-break</a></td
+                >
                 <td rowspan="2">-</td>
                 <td>normal</td>
               </tr>
@@ -156,7 +158,9 @@
         <p>Voeg de (s)css-bestanden toe aan het project of importeer de bestanden.</p>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h3>Benodigd</h3>
         <ul>

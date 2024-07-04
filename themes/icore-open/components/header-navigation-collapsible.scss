@@ -3,4 +3,39 @@
 :root {
   /* Collapsible menu */
   --header-navigation-collapsible-menu-top: 4rem;
+  --header-navigation-collapsible-background-color: var(--white);
+  --header-navigation-collapsible-top: var(--header-navigation-min-height);
+
+  /* Menu item */
+  --header-navigation-collapsible-list-item-padding-top: var(--spacing-050);
+  --header-navigation-collapsible-list-item-padding-right: var(--spacing-100);
+  --header-navigation-collapsible-list-item-padding-bottom: var(--spacing-050);
+  --header-navigation-collapsible-list-item-padding-left: var(--spacing-100);
+
+  /* Menu item link */
+  --header-navigation-collapsible-list-item-link-padding-right: 0;
+  --header-navigation-collapsible-list-item-link-padding-left: 0;
+
+  /* Selected link */
+  --header-navigation-collapsible-list-item-link-selected-background-color: transparent;
+  --header-navigation-collapsible-list-item-link-selected-text-color: var(
+    -header-navigation-collapsible-list-item-link-text-color
+  );
+
+  /* Button */
+  --header-navigation-collapsible-button-background-color: transparent;
+
+  /* Icon */
+  --header-navigation-collapsible-icon-color: var(--white);
+  --header-navigation-button-icon-font-family: var(--icon-font-family);
+  --header-navigation-collapsible-icon-font-size: var(
+    --body-text-large-font-size
+  );
+  --header-navigation-collapsible-icon-collapsed: "\eb55";
+  --header-navigation-collapsible-icon: "\ec42";
+}
+
+body > header nav.collapsible.collapsed button.collapsible-toggle {
+  margin-right: var(--page-whitespace-right);
+  border-radius: var(--button-base-border-radius);
 }

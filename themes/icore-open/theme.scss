@@ -10,6 +10,7 @@
 @use "application-base";
 
 /* Fundamentals */
+@use "fundamentals/body-text-set";
 @use "fundamentals/border-radii";
 @use "fundamentals/colors";
 @use "fundamentals/headings-base-set";
@@ -25,6 +26,7 @@
 @use "components/form-accent-color";
 @use "components/form-base";
 @use "components/form-button";
+@use "components/form-inline";
 @use "components/form-input";
 @use "components/form-textarea";
 @use "components/header-content-wrapper";
@@ -34,7 +36,9 @@
 @use "components/icons";
 @use "components/logo";
 @use "components/radio-input";
+@use "components/sidemenu";
 @use "components/table";
+@use "components/table-caption";
 
 /* Layout */
 @use "components/main";

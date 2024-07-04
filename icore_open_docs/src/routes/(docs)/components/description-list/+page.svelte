@@ -12,7 +12,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <div>
       <h1>Description list</h1>
 

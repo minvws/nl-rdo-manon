@@ -17,7 +17,7 @@
       <li><a href="#introduction">Introductie</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Kleurensets</h1>
@@ -37,15 +37,25 @@
             <h2>Spot</h2>
             <p>Huisstijlkleuren met accentkleuren</p>
             <ul>
-              <li><a href="{base}/components/spot-mini">Spot mini (twee hoofdkleuren en een accentkleur)</a></li>
               <li>
-                <a href="{base}/components/spot-small">Spot klein (twee hoofdkleuren en twee accentkleuren)</a>
+                <a href="{base}/components/spot-mini"
+                  >Spot mini (twee hoofdkleuren en een accentkleur)</a
+                >
               </li>
               <li>
-                <a href="{base}/components/spot-medium">Spot middel (twee hoofdkleuren en drie accentkleuren)</a>
+                <a href="{base}/components/spot-small"
+                  >Spot klein (twee hoofdkleuren en twee accentkleuren)</a
+                >
               </li>
               <li>
-                <a href="{base}/components/spot-large">Spot groot (twee hoofdkleuren en vijf accentkleuren)</a>
+                <a href="{base}/components/spot-medium"
+                  >Spot middel (twee hoofdkleuren en drie accentkleuren)</a
+                >
+              </li>
+              <li>
+                <a href="{base}/components/spot-large"
+                  >Spot groot (twee hoofdkleuren en vijf accentkleuren)</a
+                >
               </li>
             </ul>
           </nav>
