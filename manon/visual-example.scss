@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-main > section > div, 
+main > section > div,
 main.sidemenu div > section > div {
   &.visual-example {
     @extend %visual-example;
