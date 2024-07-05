@@ -7,13 +7,19 @@
 }
 
 .shadow-s {
-  shadow: var(--shadow-s);
+  box-shadow: var(--shadow-s);
+  -webkit-box-shadow: var(--shadow-s);
+  -moz-box-shadow: var(--shadow-s);
 }
 
 .shadow-m {
-  shadow: var(--shadow-m);
+  box-shadow: var(--shadow-m);
+  -webkit-box-shadow: var(--shadow-m);
+  -moz-box-shadow: var(--shadow-m);
 }
 
 .shadow-l {
-  shadow: var(--shadow-l);
+  box-shadow: var(--shadow-l);
+  -webkit-box-shadow: var(--shadow-l);
+  -moz-box-shadow: var(--shadow-l);
 }
