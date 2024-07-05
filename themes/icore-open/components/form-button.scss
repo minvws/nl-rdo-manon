@@ -1,0 +1,15 @@
+/* Form button */
+
+:root {
+  --form-button-font-size: 1rem;
+}
+
+form {
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    margin-top: var(--spacing-100);
+  }
+}

@@ -116,6 +116,11 @@
     #dbdbdb
   );
 
+  --header-navigation-collapsible-list-item-padding-top: 0;
+  --header-navigation-collapsible-list-item-padding-right: 0;
+  --header-navigation-collapsible-list-item-padding-bottom: 0;
+  --header-navigation-collapsible-list-item-padding-left: 0;
+
   /* First collapsed list item */
   --header-navigation-collapsible-list-item-first-item-border-width: var(
     --collapsing-element-list-item-first-item-border-width,

@@ -1,0 +1,20 @@
+/* Sidemenu */
+
+:root {
+  --sidemenu-nav-border-width: 0;
+  --sidemenu-nav-border-color: transparent;
+  --sidemenu-main-padding-bottom: var(--main-padding-bottom);
+}
+
+main.sidemenu {
+  padding-left: 0;
+}
+
+body.sidemenu > nav .sidemenu-toggle,
+main.sidemenu > nav .sidemenu-toggle {
+  --sidemenu-button-icon-font-family: var(--icon-font-family);
+  --sidemenu-expanded-button-icon: "\ec42";
+  --sidemenu-collapsed-button-icon: "\ec42";
+
+  margin-left: 0;
+}

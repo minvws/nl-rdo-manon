@@ -1,0 +1,24 @@
+/* Visually grouped */
+
+%visually-grouped {
+  background-color: var(--white);
+  padding-top: var(--spacing-100);
+  padding-right: var(--spacing-150);
+  padding-bottom: var(--spacing-150);
+  padding-left: var(--spacing-150);
+}
+
+.visually-grouped {
+  @extend %visually-grouped;
+}
+
+main > section > div,
+main.sidemenu div > section > div,
+main > article > div,
+main.sidemenu div > article > div,
+main > div,
+main.sidemenu div {
+  &.visually-grouped {
+    @extend %visually-grouped;
+  }
+}
