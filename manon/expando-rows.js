@@ -101,14 +101,9 @@ function initExpandoButton(button) {
     return;
   }
   var expanded = button.getAttribute("aria-expanded") === "true";
-  var closeLabel, openLabel;
   if (expanded) {
-    closeLabel = button.innerText.trim();
-    openLabel = (button.dataset.openLabel || "Open details").trim();
     button.setAttribute("aria-expanded", "true");
   } else {
-    closeLabel = (button.dataset.closeLabel || "Sluit details").trim();
-    openLabel = button.innerText.trim();
     button.setAttribute("aria-expanded", "false");
     row.setAttribute("hidden", "");
   }
@@ -125,16 +120,12 @@ function initExpandoButton(button) {
     var expand = button.getAttribute("aria-expanded") === "false";
 
     if (expand) {
-      button.innerText = closeLabel;
-
       button.setAttribute("aria-expanded", "true");
       button.classList.remove.apply(button.classList, iconOpenClasses);
       button.classList.add.apply(button.classList, iconCloseClasses);
       button.parentElement.parentElement.classList.add("expanded-row");
       row.removeAttribute("hidden");
     } else {
-      button.innerText = openLabel;
-
       button.setAttribute("aria-expanded", "false");
       button.classList.remove.apply(button.classList, iconCloseClasses);
       button.classList.add.apply(button.classList, iconOpenClasses);
