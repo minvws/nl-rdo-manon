@@ -139,7 +139,7 @@
             <ul>
               <li><a href="{base}/components/button">Knoppen - <code>button</code></a></li>
               <li><a href="{base}/components/forms">Formulieren - <code>form</code></a></li>
-              <!-- <li><a href="{base}/components/link">Link <code>a</code></a></li> -->
+              <li><a href="{base}/components/link">Link <code>a</code></a></li>
               <li><a href="{base}/components/table">Tabellen - <code>table</code></a></li>
               <!-- <li>
                 <a href="{base}/components/description-list">Description list - <code>dl</code></a>
