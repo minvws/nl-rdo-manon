@@ -4,7 +4,10 @@
 @forward "variables";
 
 /* Fonts */
-@use "fonts";
+@use "fonts/fonts";
+
+/* Color Scemes */
+@use "color-schemes/color-schemes";
 
 /* Styling on the highest level */
 @use "application-base";
