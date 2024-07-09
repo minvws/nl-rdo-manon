@@ -2,7 +2,7 @@
 
 :root {
   --button-base-border-radius: var(--border-radius-m);
-  --button-base-background-color: var(--white);
+  --button-base-background-color: #{$oc-pink-9};
   --button-base-border-width: 1px;
   --button-base-border-color: #d4d4d4;
   --button-base-text-color: #006fb3;
