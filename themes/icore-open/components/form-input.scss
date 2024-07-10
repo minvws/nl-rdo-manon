@@ -1,5 +1,7 @@
 /* Form input */
 
+@use "../color-scheme";
+
 :root {
   --form-input-border-radius: var(--border-radius-s);
   --form-input-border-width: 1px;
