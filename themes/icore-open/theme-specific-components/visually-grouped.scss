@@ -1,7 +1,9 @@
 /* Visually grouped */
 
+@use "../color-scheme";
+
 %visually-grouped {
-  background-color: var(--white);
+  background-color: #{color-scheme.$oc-white};
   padding-top: var(--spacing-100);
   padding-right: var(--spacing-150);
   padding-bottom: var(--spacing-150);

@@ -1,17 +1,19 @@
 /* Button base styling */
 
+@use "../color-scheme";
+
 :root {
   --button-base-border-radius: var(--border-radius-m);
-  --button-base-background-color: var(--white);
+  --button-base-background-color: #{color-scheme.$oc-white};
   --button-base-border-width: 1px;
-  --button-base-border-color: #d4d4d4;
-  --button-base-text-color: #006fb3;
+  --button-base-border-color: #{color-scheme.$oc-gray-3};
+  --button-base-text-color: #{color-scheme.$oc-blue-8};
   --button-base-font-size: 1rem;
 
   /* Hover */
   --button-base-hover-background-color: var(--button-base-background-color);
-  --button-base-hover-border-color: #005c94;
-  --button-base-hover-text-color: #005c94;
+  --button-base-hover-border-color: #{color-scheme.$oc-blue-9};
+  --button-base-hover-text-color: #{color-scheme.$oc-blue-9};
   --button-base-hover-border-radius: var(--button-base-border-radius);
 
   /* Active */
@@ -27,8 +29,12 @@
     --button-base-hover-background-color
   );
 
-  --button-base-focus-border-color: var(--button-base-hover-border-color);
-  --button-base-focus-text-color: var(--button-base-hover-text-color);
+  --button-base-focus-border-color: #{color-scheme.$oc-blue-6};
+  --button-base-focus-text-color: #{color-scheme.$oc-blue-8};
+  --button-base-focus-outline-style: solid;
+  --button-base-focus-outline-color: #{color-scheme.$oc-gray-3};
+  --button-base-focus-outline-width: 1px;
+  --button-base-focus-outline-offset: -0.25rem;
 
   /* Selected */
   --button-base-selected-background-color: var(

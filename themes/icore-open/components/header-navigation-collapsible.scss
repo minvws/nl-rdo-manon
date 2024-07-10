@@ -1,9 +1,11 @@
 /* Header collapsible */
 
+@use "../color-scheme";
+
 :root {
   /* Collapsible menu */
   --header-navigation-collapsible-menu-top: 4rem;
-  --header-navigation-collapsible-background-color: var(--white);
+  --header-navigation-collapsible-background-color: #{color-scheme.$oc-white};
   --header-navigation-collapsible-top: var(--header-navigation-min-height);
 
   /* Menu item */
@@ -26,7 +28,7 @@
   --header-navigation-collapsible-button-background-color: transparent;
 
   /* Icon */
-  --header-navigation-collapsible-icon-color: var(--white);
+  --header-navigation-collapsible-icon-color: #{color-scheme.$oc-white};
   --header-navigation-button-icon-font-family: var(--icon-font-family);
   --header-navigation-collapsible-icon-font-size: var(
     --body-text-large-font-size

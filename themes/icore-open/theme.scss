@@ -6,16 +6,12 @@
 /* Fonts */
 @use "fonts/fonts";
 
-/* Color Scemes */
-@use "color-schemes/color-schemes";
-
 /* Styling on the highest level */
 @use "application-base";
 
 /* Fundamentals */
 @use "fundamentals/body-text-set";
 @use "fundamentals/border-radii";
-@use "fundamentals/colors";
 @use "fundamentals/headings-base-set";
 @use "fundamentals/shadows";
 @use "fundamentals/spacing";
@@ -25,6 +21,7 @@
 /* Components */
 @use "components/breadcrumb-bar";
 @use "components/button-base";
+@use "components/code";
 @use "components/footer";
 @use "components/form-accent-color";
 @use "components/form-base";
@@ -37,12 +34,18 @@
 @use "components/header-navigation";
 @use "components/header";
 @use "components/icons";
-@use "components/link";
 @use "components/logo";
 @use "components/radio-input";
 @use "components/sidemenu";
 @use "components/table";
 @use "components/table-caption";
+
+/* Link */
+@use "components/link";
+@use "components/link-hover";
+@use "components/link-visited";
+@use "components/link-visited-hover";
+@use "components/link-focus";
 
 /* Layout */
 @use "components/main";
