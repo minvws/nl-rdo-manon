@@ -4,15 +4,15 @@
 
 :root {
   /* Base */
-  --table-background-color: #ffffff;
+  --table-background-color: #{color-scheme.$oc-white};
   --table-text-color: var(--application-base-text-color);
   --table-text-align: left;
 
   /* Table header */
-  --table-head-background-color: #ffffff;
+  --table-head-background-color: #{color-scheme.$oc-white};
   --table-head-border-width: 0 0 2px 0;
   --table-head-border-style: solid;
-  --table-head-border-color: #01689b;
+  --table-head-border-color: #{color-scheme.$oc-blue-8};
   --table-head-cell-padding: var(--spacing-075);
 
   /* Table row */
@@ -28,7 +28,7 @@
   /* Table cell */
   --table-cell-border-width: 0 0 1px 0;
   --table-cell-border-style: solid;
-  --table-cell-border-color: #cccccc;
+  --table-cell-border-color: #{color-scheme.$oc-gray-3};
   --table-cell-padding: 0.5rem 1rem;
   --table-cells-padding: 0.25rem 1rem;
 
@@ -42,7 +42,7 @@
   --table-foot-font-weight: 600;
   --table-foot-font-size: var(--table-font-size);
   --table-foot-border-width: 2px 0 0 0;
-  --table-foot-border-color: #01689b;
+  --table-foot-border-color: #{color-scheme.$oc-blue-8};
 
   /* Table footer cell */
   --table-foot-header-background-color: #{color-scheme.$oc-white};

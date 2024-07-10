@@ -7,5 +7,5 @@
   --form-base-font-size: 1rem;
   --form-base-font-weight: bold;
   --form-base-gap: var(--spacing-025);
-  --form-base-background-color: #fff;
+  --form-base-background-color: #{color-scheme.$oc-white};
 }

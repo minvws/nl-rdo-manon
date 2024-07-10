@@ -4,5 +4,5 @@
   --form-input-border-radius: var(--border-radius-s);
   --form-input-border-width: 1px;
   --form-input-border-style: solid;
-  --form-input-border-color: #888;
+  --form-input-border-color: #{color-scheme.$oc-gray-6};
 }
