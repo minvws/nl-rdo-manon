@@ -35,7 +35,8 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
     >
       <div class="collapsing-element">
         <SiteNavLinks />
-        <ul>
+        <ul class="actions">
+          <li><a href="#" class="avatar">A</a></li>
           <li>
             <form class="inline">
               <input type="hidden" name="_token" value="" />
@@ -93,7 +94,8 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
               <li><a href="/documentation">Documentatie</a></li>
             </ul>
 
-            <ul>
+            <ul class="actions">
+              <li><a href="#" class="avatar">A</a></li>
               <li>
                 <form action="http://localhost/logout" method="POST" class="inline">
                   <input type="hidden" name="_token" value="">
