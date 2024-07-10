@@ -19,5 +19,9 @@ form {
     margin: 0 auto;
     background-color: var(--layout-authentication-background-color);
     color: var(--layout-authentication-text-color);
+    padding-top: var(--layout-authentication-padding-top, inherit);
+    padding-right: var(--layout-authentication-padding-right, inherit);
+    padding-bottom: var(--layout-authentication-padding-bottom, inherit);
+    padding-left: var(--layout-authentication-padding-left, inherit);
   }
 }

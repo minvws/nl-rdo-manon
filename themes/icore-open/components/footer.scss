@@ -4,4 +4,6 @@
 
 :root {
   --footer-background-color: #{color-scheme.$oc-white};
+  --footer-navigation-list-item-list-style: none;
+  --footer-align-items: flex-end;
 }

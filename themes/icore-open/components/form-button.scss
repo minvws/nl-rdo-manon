@@ -2,14 +2,5 @@
 
 :root {
   --form-button-font-size: 1rem;
-}
-
-form {
-  button,
-  a.button,
-  input[type="button"],
-  input[type="submit"],
-  input[type="reset"] {
-    margin-top: var(--spacing-100);
-  }
+  --form-button-margin-top: var(--spacing-050);
 }
