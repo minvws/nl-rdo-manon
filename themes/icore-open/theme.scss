@@ -17,12 +17,15 @@
 @use "fundamentals/spacing";
 
 /* Layout */
+@use "components/layout-authentication";
 
 /* Components */
 @use "components/breadcrumb-bar";
 @use "components/button-base";
 @use "components/code";
 @use "components/footer";
+@use "components/footer-navigation-link";
+@use "components/form-fieldset";
 @use "components/form-accent-color";
 @use "components/form-base";
 @use "components/form-button";
@@ -49,6 +52,7 @@
 
 /* Layout */
 @use "components/main";
+@use "components/main-content-wrapper";
 @use "components/section";
 @use "components/section-content-wrapper";
 
