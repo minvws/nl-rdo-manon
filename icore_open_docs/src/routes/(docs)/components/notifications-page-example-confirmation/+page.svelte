@@ -58,7 +58,6 @@
           language="css"
           code={`
 @use "@minvws/manon/notification";
-@use "@minvws/manon/notification-confirmation-message";
 @use "@minvws/manon/notification-confirmation-page";
 `}
         />
