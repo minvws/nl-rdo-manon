@@ -110,15 +110,15 @@
         <ul>
           <li><a href="{base}/components/button-base">Basis-weergave</a></li>
           <li><a href="{base}/components/button-container">Knoppen groeperen</a></li>
-          <!-- <li><a href="{base}/components/button-dropdown">Dropdown button</a></li>
-          <li><a href="{base}/components/button-ghost">Ghost button</a></li>
-          <li><a href="{base}/components/button-destructive">Destructieve knop</a></li>
+          <!-- <li><a href="{base}/components/button-dropdown">Dropdown button</a></li> -->
+          <!-- <li><a href="{base}/components/button-ghost">Ghost button</a></li> -->
+          <!-- <li><a href="{base}/components/button-destructive">Destructieve knop</a></li> -->
           <li>
             <a href="{base}/components/button-call-to-action">Call to action button</a>
           </li>
-          <li><a href="{base}/components/button-icon">Icoonknoppen</a></li>
-          <li><a href="{base}/components/button-icon-only">Icoonknoppen zonder achtergrond</a></li>
-          <li><a href="{base}/components/button-to-top">Terug naar hoofdmenu</a></li> -->
+          <!-- <li><a href="{base}/components/button-icon">Icoonknoppen</a></li> -->
+          <!-- <li><a href="{base}/components/button-icon-only">Icoonknoppen zonder achtergrond</a></li> -->
+          <!-- <li><a href="{base}/components/button-to-top">Terug naar hoofdmenu</a></li> -->
         </ul>
       </section>
     </div>
