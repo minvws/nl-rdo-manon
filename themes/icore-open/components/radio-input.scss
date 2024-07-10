@@ -1,5 +1,7 @@
 /* Radio input */
 
+@use "../color-scheme";
+
 :root {
   --radio-input-accent-color: #{color-scheme.$oc-blue-8};
 }
