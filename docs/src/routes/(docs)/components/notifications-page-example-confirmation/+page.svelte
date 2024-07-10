@@ -46,7 +46,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -56,7 +58,6 @@
           language="css"
           code={`
 @use "@minvws/manon/notification";
-@use "@minvws/manon/notification-confirmation-message";
 @use "@minvws/manon/notification-confirmation-page";
 `}
         />
@@ -79,7 +80,10 @@
             <tbody>
               <tr>
                 <td>--notification-confirmation-page-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--confirmation-background-color)</td>
                 <td>-</td>
                 <th rowspan="24" scope="rowgroup">confirmation</th>
