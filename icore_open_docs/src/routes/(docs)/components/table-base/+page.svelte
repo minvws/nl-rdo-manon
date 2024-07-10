@@ -17,7 +17,6 @@
     <ul>
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
-      <li><a href="#requirements">Benodigde bestanden</a></li>
     </ul>
   </SideMenu>
   <article class="visually-grouped">
