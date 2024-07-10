@@ -22,20 +22,6 @@
           <li><a href="#explanation-div">Blokelement</a></li>
           <li><a href="#explanation-paragraph">Paragraaf</a></li>
           <li>
-            <a href="#explanation-table">Tabel-elementen</a>
-            <ul>
-              <li>
-                <a href="#explanation-th">Tabeltitel - <code>th</code></a>
-              </li>
-              <li>
-                <a href="#explanation-td">Tabelcel - <code>td</code></a>
-              </li>
-              <li>
-                <a href="#explanation-tr">Tabelrij - <code>tr</code></a>
-              </li>
-            </ul>
-          </li>
-          <li>
             <a href="#explanation-form">Formulier-elementen</a>
             <ul>
               <li>
@@ -110,7 +96,6 @@
           <ul>
             <li><a href="#explanation-div">Blokelement</a></li>
             <li><a href="#explanation-paragraph">Paragraaf</a></li>
-            <li><a href="#explanation-table">Tabel-elementen</a></li>
             <li><a href="#explanation-form">Formulier-elementen</a></li>
           </ul>
         </nav>
@@ -204,172 +189,6 @@
             </li>
           </ul>
         </nav>
-
-        <h4 id="explanation-th">Toelichting op tabeltitel</h4>
-
-        <p class="warning">
-          <span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven
-          hoe een tabeltitel als toelichting opgemaakt kan worden. Deze instructies zijn weggehaald,
-          omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.
-        </p>
-
-        <h4 id="explanation-td">Toelichting op Tabelcel</h4>
-
-        <h5>Visueel voorbeeld:</h5>
-        <table>
-          <thead>
-            <tr>
-              <th>Lorem</th>
-              <th>Ipsum</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>12</td>
-              <td>42</td>
-            </tr>
-
-            <tr>
-              <td class="explanation" aria-label="Toelichting"><span>Toelichting:</span> 15</td>
-              <td class="explanation" aria-label="Toelichting">
-                <span>Toelichting:</span> 168
-              </td>
-            </tr>
-
-            <tr>
-              <td>15</td>
-              <td>168</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Lorem ipsum</td>
-              <td>Dolor sit amet</td>
-            </tr>
-          </tfoot>
-        </table>
-
-        <h5>HTML-voorbeeld:</h5>
-        <Code
-          language="html"
-          code={`
-<table>
-  <thead>
-    <tr>
-      <th>Lorem</th>
-      <th>Ipsum</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>12</td>
-      <td>42</td>
-    </tr>
-
-    <tr>
-      <td class="explanation" aria-label="Toelichting"><span>Toelichting:</span> 15</td>
-      <td class="explanation" aria-label="Toelichting"><span>Toelichting:</span> 168</td>
-    </tr>
-
-    <tr>
-      <td>15</td>
-      <td>168</td>
-    </tr>
-
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>Lorem ipsum</td>
-      <td>Dolor sit amet</td>
-    </tr>
-  </tfoot>
-</table>
-`}
-        />
-
-        <h4 id="explanation-tr">Toelichting op tabelrij</h4>
-
-        <p>Aandachtspunten:</p>
-        <ul>
-          <li>
-            Niet alle screenreaders lezen <code>aria-label</code> op een <code>tr</code> op. Voeg
-            daarom de labels toe aan de <code>th</code> of de <code>td</code>.
-          </li>
-        </ul>
-
-        <h5>Visueel voorbeeld:</h5>
-        <table>
-          <thead>
-            <tr>
-              <th>Lorem</th>
-              <th>Ipsum</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>15</td>
-              <td>168</td>
-            </tr>
-
-            <tr class="explanation">
-              <td aria-label="Toelichting"><span>Toelichting:</span> 12</td>
-              <td aria-label="Toelichting"><span>Toelichting:</span> 42</td>
-            </tr>
-
-            <tr class="explanation">
-              <td aria-label="Toelichting"><span>Toelichting:</span> 12</td>
-              <td aria-label="Toelichting"><span>Toelichting:</span> 42</td>
-            </tr>
-
-            <tr>
-              <td>123</td>
-              <td>2</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Lorem ipsum</td>
-              <td>Dolor sit amet</td>
-            </tr>
-          </tfoot>
-        </table>
-
-        <h5>HTML-voorbeeld:</h5>
-        <Code
-          language="html"
-          code={`
-<table>
-  <thead>
-    <tr>
-      <th>Lorem</th>
-      <th>Ipsum</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>15</td>
-      <td>168</td>
-    </tr>
-
-    <tr class="explanation">
-      <td aria-label="Toelichting"><span>Toelichting:</span> 12</td>
-      <td aria-label="Toelichting"><span>Toelichting:</span> 42</td>
-    </tr>
-
-    <tr>
-      <td>123</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>Lorem ipsum</td>
-      <td>Dolor sit amet</td>
-    </tr>
-  </tfoot>
-</table>
-`}
-        />
 
         <h3 id="explanation-form">Formulier-elementen</h3>
         <nav aria-label="Toelichting formulierelementen subnavigatie">

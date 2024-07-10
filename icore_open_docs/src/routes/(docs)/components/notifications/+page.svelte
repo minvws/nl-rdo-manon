@@ -51,9 +51,9 @@
               <li>
                 <a href="{base}/components/notification-explanation">Toelichting</a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="{base}/components/notification-system-message">Systeemberichten</a>
-              </li>
+              </li> -->
             </ul>
           </nav>
 
@@ -66,7 +66,7 @@
               <li>
                 <a href="{base}/components/notifications-paragraph">Paragraaf</a>
               </li>
-              <li><a href="{base}/components/notifications-table">Tabel</a></li>
+              <!-- <li><a href="{base}/components/notifications-table">Tabel</a></li> -->
               <li><a href="{base}/components/notifications-page">Pagina-notificatie</a></li>
             </ul>
           </nav>
