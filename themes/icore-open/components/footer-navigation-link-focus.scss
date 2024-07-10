@@ -1,0 +1,10 @@
+/* Footer navigation link focus */
+
+@use "../color-scheme";
+
+:root {
+  --footer-navigation-link-focus-text-color: #{color-scheme.$oc-blue-8};
+  --footer-navigation-link-focus-text-decoration: #{color-scheme.$oc-blue-8};
+  --footer-navigation-link-focus-outline: 1px solid #{color-scheme.$oc-blue-8};
+  --footer-navigation-link-focus-outline-offset: 0.25rem;
+}

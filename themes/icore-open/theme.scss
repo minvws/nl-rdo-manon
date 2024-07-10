@@ -19,12 +19,23 @@
 /* Layout */
 @use "components/layout-authentication";
 
+/* Link */
+@use "components/link";
+@use "components/link-hover";
+@use "components/link-visited";
+@use "components/link-visited-hover";
+@use "components/link-focus";
+@use "components/footer-navigation-link";
+@use "components/footer-navigation-link-visited";
+@use "components/footer-navigation-link-hover";
+@use "components/footer-navigation-link-active";
+@use "components/footer-navigation-link-focus.scss";
+
 /* Components */
 @use "components/breadcrumb-bar";
 @use "components/button-base";
 @use "components/code";
 @use "components/footer";
-@use "components/footer-navigation-link";
 @use "components/form-fieldset";
 @use "components/form-accent-color";
 @use "components/form-base";
@@ -43,18 +54,13 @@
 @use "components/table";
 @use "components/table-caption";
 
-/* Link */
-@use "components/link";
-@use "components/link-hover";
-@use "components/link-visited";
-@use "components/link-visited-hover";
-@use "components/link-focus";
-
 /* Layout */
 @use "components/main";
 @use "components/main-content-wrapper";
 @use "components/section";
 @use "components/section-content-wrapper";
+@use "components/article";
+@use "components/article-content-wrapper";
 
 /* Notifications */
 @use "components/notification-block-element";
