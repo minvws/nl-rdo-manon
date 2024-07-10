@@ -1,7 +1,9 @@
 /* Link */
 
+@use "../color-scheme";
+
 :root {
-  --link-text-color: #1971c2;
+  --link-text-color: #{color-scheme.$oc-blue-8};
   --link-font-weight: normal;
   --link-text-decoration: underline;
 }

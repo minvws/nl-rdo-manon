@@ -1,5 +1,7 @@
 /* Table */
 
+@use "../color-scheme";
+
 :root {
   /* Base */
   --table-background-color: #ffffff;
@@ -36,20 +38,20 @@
   --table-action-buttons-button-hover-text-color: var(--link-text-color);
 
   /* Table footer */
-  --table-foot-background-color: var(--white);
+  --table-foot-background-color: #{color-scheme.$oc-white};
   --table-foot-font-weight: 600;
   --table-foot-font-size: var(--table-font-size);
   --table-foot-border-width: 2px 0 0 0;
   --table-foot-border-color: #01689b;
 
   /* Table footer cell */
-  --table-foot-header-background-color: var(--white);
+  --table-foot-header-background-color: #{color-scheme.$oc-white};
   --table-foot-header-border-width: var(--table-cell-border-width);
   --table-foot-header-border-style: var(--table-cell-border-style);
   --table-foot-header-border-color: var(--table-cell-border-color);
 
   /* Table footer cell */
-  --table-foot-cell-background-color: var(--white);
+  --table-foot-cell-background-color: #{color-scheme.$oc-white};
   --table-foot-cell-border-width: var(--table-cell-border-width);
   --table-foot-cell-border-style: var(--table-cell-border-style);
   --table-foot-cell-border-color: var(--table-cell-border-color);

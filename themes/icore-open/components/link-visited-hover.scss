@@ -1,0 +1,7 @@
+/* Link Visited Hover */
+
+@use "../color-scheme";
+
+:root {
+  --link-visited-hover-text-color: #{color-scheme.$oc-grape-9};
+}

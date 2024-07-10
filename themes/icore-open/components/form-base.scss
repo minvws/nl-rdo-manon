@@ -1,7 +1,9 @@
 /* Form input */
 
+@use "../color-scheme";
+
 :root {
-  --form-base-text-color: #3b3b3b;
+  --form-base-text-color: #{color-scheme.$oc-gray-9};
   --form-base-font-size: 1rem;
   --form-base-font-weight: bold;
   --form-base-gap: var(--spacing-025);

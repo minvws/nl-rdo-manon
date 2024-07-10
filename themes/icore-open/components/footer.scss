@@ -1,5 +1,7 @@
 /* Footer */
 
+@use "../color-scheme";
+
 :root {
-  --footer-background-color: #fff;
+  --footer-background-color: #{color-scheme.$oc-white};
 }
