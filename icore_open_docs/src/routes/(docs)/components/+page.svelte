@@ -179,17 +179,17 @@
             </ul>
           </nav>
 
-          <!-- <nav aria-labelledby="notifications-heading">
+          <nav aria-labelledby="notifications-heading">
             <h4 id="notifications-heading">Notificaties</h4>
             <ul>
-              <li>
+              <!-- <li>
                 <a href="{base}/components/message-counter">Notificatie-teller</a>
-              </li>
+              </li> -->
               <li>
                 <a href="{base}/components/notifications">Notificaties</a>
               </li>
             </ul>
-          </nav> -->
+          </nav>
         </div>
       </div>
     </div>

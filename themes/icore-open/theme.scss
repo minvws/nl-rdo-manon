@@ -52,6 +52,9 @@
 @use "components/section";
 @use "components/section-content-wrapper";
 
+/* Notifications */
+@use "components/notification-error";
+
 /* Theme specific components */
 /* These are components that aren't build on an exsisting Manon component
 And are specific to this theme */
