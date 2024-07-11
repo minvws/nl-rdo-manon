@@ -34,7 +34,7 @@
   font-weight: 600;
   font-style: italic;
   font-display: var(--text-body-font-display, swap);
-  src: url("#{variables.$font-path}/IBMPlexSans/IBMPlexSans-SemiBoldItalic.ttf") format("truetype");
+  src: url("#{variables.$font-path}/IBMPlexSans/IBMPlexSans-SemiBoldItalic.ttf");
 }
 
 /* Icon font */
