@@ -43,14 +43,14 @@ importers:
         specifier: ^5.0.8
         version: 5.0.8
       sass:
-        specifier: ^1.77.6
-        version: 1.77.6
+        specifier: ^1.77.8
+        version: 1.77.8
       svelte:
         specifier: ^4.2.18
         version: 4.2.18
       svelte-check:
         specifier: ^3.8.4
-        version: 3.8.4(sass@1.77.6)(svelte@4.2.18)
+        version: 3.8.4(sass@1.77.8)(svelte@4.2.18)
       svelte-preprocess-import-assets:
         specifier: ^1.1.0
         version: 1.1.0(svelte@4.2.18)
@@ -59,7 +59,7 @@ importers:
         version: 5.5.3
       vite:
         specifier: ^5.3.3
-        version: 5.3.3(sass@1.77.6)
+        version: 5.3.3(sass@1.77.8)
 
   examples/laravel-mix:
     dependencies:
@@ -77,11 +77,11 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       sass:
-        specifier: ^1.77.6
-        version: 1.77.6
+        specifier: ^1.77.8
+        version: 1.77.8
       sass-loader:
         specifier: ^14.2.1
-        version: 14.2.1(sass@1.77.6)(webpack@5.92.1)
+        version: 14.2.1(sass@1.77.8)(webpack@5.92.1)
 
   examples/sass-cli:
     dependencies:
@@ -93,8 +93,8 @@ importers:
         version: link:../../themes
     devDependencies:
       sass:
-        specifier: ^1.77.6
-        version: 1.77.6
+        specifier: ^1.77.8
+        version: 1.77.8
 
   examples/vite:
     dependencies:
@@ -106,11 +106,11 @@ importers:
         version: link:../../themes
     devDependencies:
       sass:
-        specifier: ^1.77.6
-        version: 1.77.6
+        specifier: ^1.77.8
+        version: 1.77.8
       vite:
         specifier: ^5.3.3
-        version: 5.3.3(sass@1.77.6)
+        version: 5.3.3(sass@1.77.8)
 
   icore_open_docs:
     dependencies:
@@ -143,14 +143,14 @@ importers:
         specifier: ^5.0.8
         version: 5.0.8
       sass:
-        specifier: ^1.77.6
-        version: 1.77.6
+        specifier: ^1.77.8
+        version: 1.77.8
       svelte:
         specifier: ^4.2.18
         version: 4.2.18
       svelte-check:
         specifier: ^3.8.4
-        version: 3.8.4(sass@1.77.6)(svelte@4.2.18)
+        version: 3.8.4(sass@1.77.8)(svelte@4.2.18)
       svelte-preprocess-import-assets:
         specifier: ^1.1.0
         version: 1.1.0(svelte@4.2.18)
@@ -159,7 +159,7 @@ importers:
         version: 5.5.3
       vite:
         specifier: ^5.3.3
-        version: 5.3.3(sass@1.77.6)
+        version: 5.3.3(sass@1.77.8)
 
   manon:
     devDependencies:
@@ -1987,7 +1987,7 @@ packages:
       sirv: 2.0.4
       svelte: 4.2.18
       tiny-glob: 0.2.9
-      vite: 5.3.3(sass@1.77.6)
+      vite: 5.3.3(sass@1.77.8)
     dev: true
 
   /@sveltejs/vite-plugin-svelte-inspector@2.1.0(@sveltejs/vite-plugin-svelte@3.1.1)(svelte@4.2.18)(vite@5.3.3):
@@ -2001,7 +2001,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 3.1.1(svelte@4.2.18)(vite@5.3.3)
       debug: 4.3.5
       svelte: 4.2.18
-      vite: 5.3.3(sass@1.77.6)
+      vite: 5.3.3(sass@1.77.8)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2020,7 +2020,7 @@ packages:
       magic-string: 0.30.10
       svelte: 4.2.18
       svelte-hmr: 0.16.0(svelte@4.2.18)
-      vite: 5.3.3(sass@1.77.6)
+      vite: 5.3.3(sass@1.77.8)
       vitefu: 0.2.5(vite@5.3.3)
     transitivePeerDependencies:
       - supports-color
@@ -6078,7 +6078,7 @@ packages:
       rimraf: 2.7.1
     dev: true
 
-  /sass-loader@14.2.1(sass@1.77.6)(webpack@5.92.1):
+  /sass-loader@14.2.1(sass@1.77.8)(webpack@5.92.1):
     resolution: {integrity: sha512-G0VcnMYU18a4N7VoNDegg2OuMjYtxnqzQWARVWCIVSZwJeiL9kg8QMsuIZOplsJgTzZLF6jGxI3AClj8I9nRdQ==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
@@ -6100,12 +6100,12 @@ packages:
         optional: true
     dependencies:
       neo-async: 2.6.2
-      sass: 1.77.6
+      sass: 1.77.8
       webpack: 5.92.1(webpack-cli@4.10.0)
     dev: true
 
-  /sass@1.77.6:
-    resolution: {integrity: sha512-ByXE1oLD79GVq9Ht1PeHWCPMPB8XHpBuz1r85oByKHjZY6qV6rWnQovQzXJXuQ/XyE1Oj3iPk3lo28uzaRA2/Q==}
+  /sass@1.77.8:
+    resolution: {integrity: sha512-4UHg6prsrycW20fqLGPShtEvo/WyHRVRHwOP4DzkUrObWoWI05QBSfzU71TVB7PFaL104TwNaHpjlWXAZbQiNQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -6654,7 +6654,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /svelte-check@3.8.4(sass@1.77.6)(svelte@4.2.18):
+  /svelte-check@3.8.4(sass@1.77.8)(svelte@4.2.18):
     resolution: {integrity: sha512-61aHMkdinWyH8BkkTX9jPLYxYzaAAz/FK/VQqdr2FiCQQ/q04WCwDlpGbHff1GdrMYTmW8chlTFvRWL9k0A8vg==}
     hasBin: true
     peerDependencies:
@@ -6665,7 +6665,7 @@ packages:
       picocolors: 1.0.1
       sade: 1.8.1
       svelte: 4.2.18
-      svelte-preprocess: 5.1.4(sass@1.77.6)(svelte@4.2.18)(typescript@5.5.3)
+      svelte-preprocess: 5.1.4(sass@1.77.8)(svelte@4.2.18)(typescript@5.5.3)
       typescript: 5.5.3
     transitivePeerDependencies:
       - '@babel/core'
@@ -6707,7 +6707,7 @@ packages:
       svelte-parse-markup: 0.1.2(svelte@4.2.18)
     dev: true
 
-  /svelte-preprocess@5.1.4(sass@1.77.6)(svelte@4.2.18)(typescript@5.5.3):
+  /svelte-preprocess@5.1.4(sass@1.77.8)(svelte@4.2.18)(typescript@5.5.3):
     resolution: {integrity: sha512-IvnbQ6D6Ao3Gg6ftiM5tdbR6aAETwjhHV+UKGf5bHGYR69RQvF1ho0JKPcbUON4vy4R7zom13jPjgdOWCQ5hDA==}
     engines: {node: '>= 16.0.0'}
     requiresBuild: true
@@ -6748,7 +6748,7 @@ packages:
       '@types/pug': 2.0.10
       detect-indent: 6.1.0
       magic-string: 0.30.10
-      sass: 1.77.6
+      sass: 1.77.8
       sorcery: 0.11.1
       strip-indent: 3.0.0
       svelte: 4.2.18
@@ -7024,7 +7024,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite@5.3.3(sass@1.77.6):
+  /vite@5.3.3(sass@1.77.8):
     resolution: {integrity: sha512-NPQdeCU0Dv2z5fu+ULotpuq5yfCS1BzKUIPhNbP3YBfAMGJXbt2nS+sbTFu+qchaqWTD+H3JK++nRwr6XIcp6A==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -7055,7 +7055,7 @@ packages:
       esbuild: 0.21.5
       postcss: 8.4.39
       rollup: 4.13.0
-      sass: 1.77.6
+      sass: 1.77.8
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
@@ -7068,7 +7068,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 5.3.3(sass@1.77.6)
+      vite: 5.3.3(sass@1.77.8)
     dev: true
 
   /vm-browserify@1.1.2:
