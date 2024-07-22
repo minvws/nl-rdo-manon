@@ -175,21 +175,6 @@
 `}
         />
 
-        <h3 id="explanation-table">Tabel-elementen</h3>
-        <nav aria-label="Toelichting tabelelementen subnavigatie">
-          <ul>
-            <li>
-              <a href="#explanation-th">Tabeltitel - <code>th</code></a>
-            </li>
-            <li>
-              <a href="#explanation-td">Tabelcel - <code>td</code></a>
-            </li>
-            <li>
-              <a href="#explanation-tr">Tabelrij - <code>tr</code></a>
-            </li>
-          </ul>
-        </nav>
-
         <h3 id="explanation-form">Formulier-elementen</h3>
         <nav aria-label="Toelichting formulierelementen subnavigatie">
           <ul>
