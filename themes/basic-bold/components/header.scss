@@ -2,10 +2,14 @@
 
 :root {
   --header-content-wrapper-gap: 0;
-  --header-border-width: 0;
-  --header-border-color: transparent;
+  --header-background-color: #fff;
+
   --header-padding-top: 0;
   --header-padding-right: 0;
   --header-padding-bottom: 0;
   --header-padding-left: 0;
+
+  --header-border-width: 0;
+  --header-border-style: solid;
+  --header-border-color: transparent;
 }

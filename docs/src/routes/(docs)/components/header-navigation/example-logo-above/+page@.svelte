@@ -88,9 +88,9 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 
     <div class="collapsing-element">
         <ul>
-        <li><a href="../../index">Home</a></li>
-        <li><a href="../components" aria-current="page">Componenten</a></li>
-        <li><a href="../documentation">Documentatie</a></li>
+          <li><a href="../../index">Home</a></li>
+          <li><a href="../components" aria-current="page">Componenten</a></li>
+          <li><a href="../documentation">Documentatie</a></li>
         </ul>
 
         <ul>
@@ -99,47 +99,6 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
     </div>
   </nav>
 </header>
-`}
-        />
-
-        <h2>CSS-voorbeeld:</h2>
-        <p>Ingestelde variabelen voor deze weergave</p>
-        <Code
-          language="css"
-          code={`
-:root {
-  /* Header */
-  --header-padding-right: 0;
-  --header-padding-left: 0;
-  --header-min-height: 10rem;
-  --header-flex-direction: column;
-  --header-justify-content: space-between;
-  --header-navigation-padding-right: 0;
-  --header-navigation-padding-left: 0;
-
-  /* Navigation */
-  --header-navigation-border-width: 0;
-  --header-navigation-width: auto;
-  --header-navigation-padding-left: 1rem;
-  --header-navigation-padding-right: 1rem;
-  --header-navigation-background-color: #1b1b39;
-  --header-navigation-text-color: white;
-
-  /* Content wrapper */
-  --header-navigation-content-wrapper-flex-direction: row;
-  --header-navigation-content-wrapper-justify-content: flex-start;
-
-  /* Link styling */
-  --header-navigation-link-text-color: white;
-  --header-navigation-link-hover-text-color: var(--header-navigation-link-text-color);
-  --header-navigation-link-visited-text-color: var(--header-navigation-link-text-color);
-  --header-navigation-link-visited-hover-text-color: var(--header-navigation-link-text-color);
-  --header-navigation-link-active-text-color: var(--header-navigation-link-text-color);
-
-  /* Menu toggle button */
-  --navigation-collapsible-menu-button-background-color: transparent;
-  --navigation-collapsible-menu-icon-color: var(--header-navigation-link-text-color);
-}
 `}
         />
       </section>
