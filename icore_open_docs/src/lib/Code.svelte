@@ -24,9 +24,6 @@
   $: highlighted = hljs.highlight(trimmed, { language }).value;
 </script>
 
-{@html `<!--
-${trimmed}
--->`}
 <pre><code>{@html highlighted}</code></pre>
 
 <style>
