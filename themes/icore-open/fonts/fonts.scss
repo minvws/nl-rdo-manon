@@ -37,6 +37,23 @@
   src: url("#{variables.$font-path}/IBMPlexSans/IBMPlexSans-SemiBoldItalic.ttf");
 }
 
+/* Bold */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-weight: bold;
+  font-style: normal;
+  font-display: var(--text-body-font-display, swap);
+  src: url("#{variables.$font-path}/IBMPlexSans/IBMPlexSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-weight: bold;
+  font-style: italic;
+  font-display: var(--text-body-font-display, swap);
+  src: url("#{variables.$font-path}/IBMPlexSans/IBMPlexSans-BoldItalic.ttf");
+}
+
 /* Icon font */
 @font-face {
   font-family: "tabler-icons";
