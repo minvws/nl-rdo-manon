@@ -8,11 +8,15 @@
 a {
   /* states */
   &:visited,
-  &.visited
-
-  /* Testing purposes */ {
+  &.visited {
     @include link.link-and-icon-styling("link-visited-");
     @include link.link-elements-styling("link-visited-");
     @include outline.outline("link-visited-");
+
+    &:hover,
+    &.hover {
+      @include link.link-and-icon-styling("link-visited-hover-");
+      @include link.link-elements-styling("link-visited-hover-");
+    }
   }
 }
