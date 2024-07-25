@@ -96,11 +96,11 @@
 
 /* Navigation */
 @use "@minvws/manon/navigation";
-// @use "@minvws/manon/navigation-link";
-// @use "@minvws/manon/navigation-link-visited";
-// @use "@minvws/manon/navigation-link-hover";
-// @use "@minvws/manon/navigation-link-active";
-// @use "@minvws/manon/navigation-link-focus";
+@use "@minvws/manon/navigation-link";
+@use "@minvws/manon/navigation-link-visited";
+@use "@minvws/manon/navigation-link-hover";
+@use "@minvws/manon/navigation-link-active";
+@use "@minvws/manon/navigation-link-focus";
 @use "@minvws/manon/navigation-content-wrapper";
 
 /* Footer navigation */
@@ -112,10 +112,10 @@
 
 /* Header */
 @use "@minvws/manon/header";
-// @use "@minvws/manon/header-link";
-// @use "@minvws/manon/header-link-visited";
-// @use "@minvws/manon/header-link-hover";
-// @use "@minvws/manon/header-link-active";
+@use "@minvws/manon/header-link";
+@use "@minvws/manon/header-link-visited";
+@use "@minvws/manon/header-link-hover";
+@use "@minvws/manon/header-link-active";
 @use "@minvws/manon/header-link-focus";
 @use "@minvws/manon/header-content-wrapper";
 
