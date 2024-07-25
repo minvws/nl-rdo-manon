@@ -25,28 +25,8 @@
   --header-navigation-link-padding-right: 1rem;
   --header-navigation-link-padding-left: 1rem;
   --header-navigation-link-font-weight: bold;
-
-  /* Link hover */
-  --header-navigation-link-hover-background-color: #{color-scheme.$oc-gray-7};
-  --header-navigation-link-hover-font-weight: var(
-    --header-navigation-link-font-weight
-  );
-
-  /* Link active */
-  --header-navigation-link-active-background-color: var(
-    --header-navigation-link-hover-background-color
-  );
-  --header-navigation-link-active-font-weight: var(
-    --header-navigation-link-font-weight
-  );
-
-  /* Link focus */
-  --header-navigation-link-focus-text-decoration: underline;
-
-  /* Visited */
-  --header-navigation-link-visited-font-weight: var(
-    --header-navigation-link-font-weight
-  );
+  --header-navigation-link-text-color: #{color-scheme.$oc-white};
+  --header-navigation-link-text-decoration: none;
 
   /* List */
   --header-navigation-list-align-content: stretch;

@@ -42,14 +42,9 @@
   --header-navigation-button-focus-font-weight: var(
     --header-navigation-button-hover-font-weight
   );
-}
-
-body > header nav button {
-  &:focus {
-    outline-offset: 0;
-    outline-width: 0;
-    box-shadow: 0 0 0 2px #{color-scheme.$oc-blue-6};
-    border-radius: 0.25rem;
-    z-index: 2;
-  }
+  --header-navigation-button-focus-border-radius: 0.25rem;
+  --header-navigation-button-focus-outline: 0;
+  --header-navigation-button-focus-outline-offset: 0;
+  --header-navigation-button-focus-box-shadow: 0 0 0 2px #{color-scheme.$oc-blue-6};
+  --header-navigation-button-focus-z-index: 2;
 }
