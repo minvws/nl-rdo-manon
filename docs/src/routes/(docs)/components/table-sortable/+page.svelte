@@ -3,7 +3,6 @@
 </script>
 
 <script>
-  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 
@@ -26,10 +25,17 @@
     .slice()
     .sort(
       sortDirection === "ascending"
-      ? (a, b) => ("" + a[sortColumn]).localeCompare(b[sortColumn], undefined, { numeric })
-      : (a, b) => ("" + b[sortColumn]).localeCompare(a[sortColumn], undefined, { numeric }),
-    )
+        ? (a, b) =>
+            sortColumn
+              ? ("" + a[sortColumn]).localeCompare(String(b[sortColumn]), undefined, { numeric })
+              : 0
+        : (a, b) =>
+            sortColumn
+              ? ("" + b[sortColumn]).localeCompare(String(a[sortColumn]), undefined, { numeric })
+              : 0,
+    );
 
+  /** @type {(column: 'firstname'|'lastname'|'age') => void} */
   const toggleSort = (column) => {
     if (column === sortColumn) {
       sortDirection = sortDirection === "ascending" ? "descending" : "ascending";
