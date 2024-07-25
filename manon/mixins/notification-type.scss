@@ -3,11 +3,13 @@
 /*---------------------------------------------------------------------*/
 
 @mixin notification-type($type) {
-  background-color: var(--notification-#{$type}-background-color);
-  color: var(--notification-#{$type}-text-color);
-  border-width: var(--notification-#{$type}-border-width);
-  border-style: var(--notification-#{$type}-border-style);
-  border-color: var(--notification-#{$type}-border-color);
+  & {
+    background-color: var(--notification-#{$type}-background-color);
+    color: var(--notification-#{$type}-text-color);
+    border-width: var(--notification-#{$type}-border-width);
+    border-style: var(--notification-#{$type}-border-style);
+    border-color: var(--notification-#{$type}-border-color);
+  }
 
   &::before {
     font-family: var(--notification-#{$type}-icon-font-family);
@@ -49,11 +51,14 @@
 
 @mixin notification-page-type($type) {
   @include notification-type($type);
-  padding-top: var(--notification-#{$type}-page-padding-top);
-  padding-right: var(--notification-#{$type}-page-padding-right);
-  padding-bottom: var(--notification-#{$type}-page-padding-bottom);
-  padding-left: var(--notification-#{$type}-page-padding-left);
-  gap: var(--notification-#{$type}-page-gap);
+
+  & {
+    padding-top: var(--notification-#{$type}-page-padding-top);
+    padding-right: var(--notification-#{$type}-page-padding-right);
+    padding-bottom: var(--notification-#{$type}-page-padding-bottom);
+    padding-left: var(--notification-#{$type}-page-padding-left);
+    gap: var(--notification-#{$type}-page-gap);
+  }
 
   span:first-of-type {
     font-weight: var(--notification-#{$type}-page-span-font-weight);

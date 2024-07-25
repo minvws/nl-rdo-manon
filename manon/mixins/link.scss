@@ -20,7 +20,9 @@ $states: ("visited", "hover", "active", "focus");
 }
 
 @mixin link-and-icon-styling($prefix) {
-  @include styling($prefix);
+  & {
+    @include styling($prefix);
+  }
 
   &::before,
   .icon::before {
@@ -29,7 +31,9 @@ $states: ("visited", "hover", "active", "focus");
 }
 
 @mixin link($prefix) {
-  @include styling($prefix);
+  & {
+    @include styling($prefix);
+  }
 
   &::before {
     @include icon.icon-format($prefix);
