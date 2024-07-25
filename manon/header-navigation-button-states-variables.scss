@@ -3,6 +3,7 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 $header-navigation-button-states: "active", "focus", "hover";
 
@@ -25,4 +26,9 @@ $header-navigation-button-states: "active", "focus", "hover";
       --header-navigation-button-text-decoration
     );
   }
+
+  @include outline.outline-variables(
+    "header-navigation-button-focus-",
+    "button-focus-"
+  );
 }

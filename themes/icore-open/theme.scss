@@ -46,7 +46,6 @@
 @use "components/form-inline";
 @use "components/form-input";
 @use "components/form-textarea";
-
 @use "components/header";
 @use "components/icons";
 @use "components/logo";
@@ -58,6 +57,7 @@
 /* Header */
 @use "components/header-navigation";
 @use "components/header-content-wrapper";
+@use "components/header-navigation-button";
 @use "components/header-navigation-collapsible";
 @use "components/header-navigation-link-hover";
 @use "components/header-navigation-link-active";
