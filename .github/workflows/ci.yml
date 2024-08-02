@@ -2,8 +2,8 @@ name: CI
 
 on:
   push:
-  pull_request:
     branches: [main]
+  pull_request:
 
 jobs:
   lint:
@@ -37,3 +37,22 @@ jobs:
       - uses: ./.github/actions/setup
       - name: Build Docs
         run: pnpm run build
+
+  sonarcloud:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: 'Run SonarCloud scanner'
+        if: ${{contains(github.ref, '/pull/')}}
+        uses: SonarSource/sonarcloud-github-action@v2.2.0
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: 'Run SonarCloud scanner'
+        if: ${{!contains(github.ref, '/pull/')}}
+        uses: SonarSource/sonarcloud-github-action@v2.2.0
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: -Dsonar.branch.name=${{ github.ref_name }}
