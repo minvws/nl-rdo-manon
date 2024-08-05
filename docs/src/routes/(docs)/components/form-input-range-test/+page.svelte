@@ -64,8 +64,14 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <div class="horizontal-view">
-            <label for="range-example-div">Range</label>
-            <input type="range" id="range-example-div" name="range-example-div" min="0" max="100" />
+            <label for="range-example-div-horizontal">Range</label>
+            <input
+              type="range"
+              id="range-example-div-horizontal"
+              name="range-example-div-horizontal"
+              min="0"
+              max="100"
+            />
           </div>
         </form>
 
@@ -75,8 +81,8 @@
           code={`
 <form action="" method="post">
   <div class="horizontal-view">
-    <label for="range-example-div">Range</label>
-    <input type="range" id="range-example-div" name="range-example-div" min="0" max="100">
+    <label for="range-example-div-horizontal">Range</label>
+    <input type="range" id="range-example-div-horizontal" name="range-example-div-horizontal" min="0" max="100">
   </div>
 </form>
 `}
@@ -114,11 +120,11 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <section class="horizontal-view">
-            <label for="range-example-section">Range</label>
+            <label for="range-example-section-horizontal">Range</label>
             <input
               type="range"
-              id="range-example-section"
-              name="range-example-section"
+              id="range-example-section-horizontal"
+              name="range-example-section-horizontal"
               min="0"
               max="100"
             />
@@ -131,8 +137,8 @@
           code={`
 <form action="" method="post">
   <section class="horizontal-view">
-    <label for="range-example-section">Range</label>
-    <input type="range" id="range-example-section" name="range-example-section" min="0" max="100">
+    <label for="range-example-section-horizontal">Range</label>
+    <input type="range" id="range-example-section-horizontal" name="range-example-section-horizontal" min="0" max="100">
   </section>
 </form>
 `}
@@ -173,11 +179,11 @@
         <form action="" method="post">
           <fieldset class="horizontal-view">
             <legend>bereik-invoerveld binnen een fieldset voorbeeld</legend>
-            <label for="range-example-fieldset">Range</label>
+            <label for="range-example-fieldset-horizontal">Range</label>
             <input
               type="range"
-              id="range-example-fieldset"
-              name="range-example-fieldset"
+              id="range-example-fieldset-horizontal"
+              name="range-example-fieldset-horizontal"
               min="0"
               max="100"
             />
@@ -191,8 +197,8 @@
 <form action="" method="post">
   <fieldset class="horizontal-view">
     <legend>bereik-invoerveld binnen een fieldset voorbeeld</legend>
-    <label for="range-example-fieldset">Range</label>
-    <input type="range" id="range-example-fieldset" name="range-example-fieldset" min="0" max="100">
+    <label for="range-example-fieldset-horizontal">Range</label>
+    <input type="range" id="range-example-fieldset-horizontal" name="range-example-fieldset-horizontal" min="0" max="100">
   </fieldset>
 </form>
 `}

@@ -3,6 +3,24 @@
 /*---------------------------------------------------------------*/
 @use "notification-block-element-variables";
 
+%block-notification {
+  display: flex;
+  flex-direction: var(--notification-block-element-flex-direction);
+  justify-content: var(--notification-block-element-justify-content);
+  align-items: var(--notification-block-element-align-items);
+  gap: var(--notification-block-element-gap);
+  width: var(--notification-block-element-width);
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: var(--notification-block-element-padding-top);
+  padding-right: var(--notification-block-element-padding-right);
+  padding-bottom: var(--notification-block-element-padding-bottom);
+  padding-left: var(--notification-block-element-padding-left);
+  max-width: var(--notification-block-element-max-width);
+  position: var(--notification-block-element-position);
+  color: var(--notification-block-element-text-color);
+}
+
 div,
 section {
   &.notification,
@@ -11,20 +29,24 @@ section {
   &.confirmation,
   &.explanation,
   &.system {
-    display: flex;
-    flex-direction: var(--notification-block-element-flex-direction);
-    justify-content: var(--notification-block-element-justify-content);
-    align-items: var(--notification-block-element-align-items);
-    gap: var(--notification-block-element-gap);
-    width: var(--notification-block-element-width);
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding-top: var(--notification-block-element-padding-top);
-    padding-right: var(--notification-block-element-padding-right);
-    padding-bottom: var(--notification-block-element-padding-bottom);
-    padding-left: var(--notification-block-element-padding-left);
-    max-width: var(--notification-block-element-max-width);
-    position: var(--notification-block-element-position);
-    color: var(--notification-block-element-text-color);
+    @extend %block-notification;
+  }
+}
+
+main,
+main.sidemenu {
+  > article,
+  > section,
+  > div,
+  div,
+  section {
+    &.notification,
+    &.error,
+    &.warning,
+    &.confirmation,
+    &.explanation,
+    &.system {
+      @extend %block-notification;
+    }
   }
 }

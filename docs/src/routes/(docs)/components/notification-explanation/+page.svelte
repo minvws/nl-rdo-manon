@@ -79,7 +79,7 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
           </li>
           <li>
             Voeg de benodigde HTML toe. Zie het voorbeeld per element voor de implementatiedetails.
@@ -133,7 +133,7 @@
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
               consequat facilisis ac eu velit.
-              <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+              <a href="notification-explanation">Lorem ipsum</a> consectetur adipiscing elit.
             </li>
           </ul>
           <button type="button">Lorem</button>
@@ -205,78 +205,7 @@
 
         <h4 id="explanation-th">Toelichting op tabeltitel</h4>
 
-        <h5>Visueel voorbeeld:</h5>
-        <table>
-          <thead>
-            <tr>
-              <th class="explanation" aria-label="Toelichting">
-                <span>Toelichting:</span> Lorem
-              </th>
-              <th class="explanation" aria-label="Toelichting">
-                <span>Toelichting:</span> Ipsum
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>12</td>
-              <td>42</td>
-            </tr>
-
-            <tr>
-              <td>15</td>
-              <td>168</td>
-            </tr>
-
-            <tr>
-              <td>123</td>
-              <td>2</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Lorem ipsum</td>
-              <td>Dolor sit amet</td>
-            </tr>
-          </tfoot>
-        </table>
-
-        <h5>HTML-voorbeeld:</h5>
-        <Code
-          language="html"
-          code={`
-<table>
-  <thead>
-    <tr>
-      <th class="explanation" aria-label="Toelichting"><span>Toelichting:</span> Lorem</th>
-      <th class="explanation" aria-label="Toelichting"><span>Toelichting:</span> Ipsum</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>12</td>
-      <td>42</td>
-    </tr>
-
-    <tr>
-      <td>15</td>
-      <td>168</td>
-    </tr>
-
-    <tr>
-      <td>123</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>Lorem ipsum</td>
-      <td>Dolor sit amet</td>
-    </tr>
-  </tfoot>
-</table>
-`}
-        />
+        <p class="warning"><span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven hoe een tabeltitel als toelichting opgemaakt kan worden. Deze instructies zijn weggehaald, omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.</p>
 
         <h4 id="explanation-td">Toelichting op Tabelcel</h4>
 
@@ -352,7 +281,7 @@
 `}
         />
 
-        <h4 id="explanation-th">Toelichting op tabelrij</h4>
+        <h4 id="explanation-tr">Toelichting op tabelrij</h4>
 
         <p>Aandachtspunten:</p>
         <ul>
@@ -365,9 +294,9 @@
         <h5>Visueel voorbeeld:</h5>
         <table>
           <thead>
-            <tr class="explanation">
-              <th aria-label="Toelichting"><span>Toelichting:</span> Lorem</th>
-              <th aria-label="Toelichting"><span>Toelichting:</span> Ipsum</th>
+            <tr>
+              <th>Lorem</th>
+              <th>Ipsum</th>
             </tr>
           </thead>
           <tbody>
@@ -405,9 +334,9 @@
           code={`
 <table>
   <thead>
-    <tr class="explanation">
-      <th aria-label="Toelichting"><span>Toelichting:</span> Lorem</th>
-      <th aria-label="Toelichting"><span>Toelichting:</span> Ipsum</th>
+    <tr>
+      <th>Lorem</th>
+      <th>Ipsum</th>
     </tr>
   </thead>
   <tbody>
@@ -471,7 +400,6 @@
               class="explanation"
               value="Lorem ipsum"
               aria-describedby="input-explanation-message"
-              aria-invalid="true"
             />
             <p class="explanation" id="input-explanation-message">
               <span>toelichting:</span> Lorem ipsum dolor sit amet
@@ -486,7 +414,7 @@
 <form action="" method="post">
     <label for="input-explanation">Input</label>
     <div>
-        <input id="input-explanation" class="explanation" value="Lorem ipsum" aria-describedby="input-explanation-message" aria-invalid="true">
+        <input id="input-explanation" class="explanation" value="Lorem ipsum" aria-describedby="input-explanation-message">
         <p class="explanation" id="input-explanation-message">
             <span>toelichting:</span> Lorem ipsum dolor sit amet
         </p>
@@ -504,10 +432,8 @@
             <textarea
               id="voorbeeld-tekstveld-explanation"
               name="voorbeeld-tekstveld-explanation"
-              placeholder="Jouw vraag of opmerking"
               class="explanation"
               aria-describedby="voorbeeld-tekstveld-explanation-message"
-              aria-invalid="true"
             ></textarea>
             <p class="explanation" id="voorbeeld-tekstveld-explanation-message">
               <span>toelichting:</span> Lorem ipsum dolor sit amet
@@ -524,11 +450,17 @@
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-explanation">Voorbeeld tekstveld</label>
   <div>
-    <textarea id="voorbeeld-tekstveld-explanation" name="voorbeeld-tekstveld-explanation" placeholder="Jouw vraag of opmerking" class="explanation" aria-describedby="voorbeeld-tekstveld-explanation-message" aria-invalid="true"></textarea>
+    <textarea
+      id="voorbeeld-tekstveld-explanation"
+      name="voorbeeld-tekstveld-explanation"
+      class="explanation"
+      aria-describedby="voorbeeld-tekstveld-explanation-message"
+    ></textarea>
     <p class="explanation" id="voorbeeld-tekstveld-explanation-message">
       <span>toelichting:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
+
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -545,7 +477,6 @@
               name="select"
               class="explanation"
               aria-describedby="select-explanation-message"
-              aria-invalid="true"
             >
               <option value="1">Optie 1</option>
               <option value="2">Optie 2</option>
@@ -564,7 +495,7 @@
 <form action="" method="post">
   <label for="select-explanation">Selectielijst</label>
   <div>
-    <select id="select-explanation" name="select" class="explanation" aria-describedby="select-explanation-message" aria-invalid="true">
+    <select id="select-explanation" name="select" class="explanation" aria-describedby="select-explanation-message">
       <option value="1">Optie 1</option>
       <option value="2">Optie 2</option>
       <option value="3">Optie 3</option>
@@ -586,10 +517,8 @@
             <input
               id="datalist-explanation"
               class="explanation"
-              placeholder="Begin met typen of klik om een optie uit te kiezen"
               list="example-list-explanation"
               aria-describedby="datalist-explanation-message"
-              aria-invalid="true"
             />
             <p class="explanation" id="datalist-explanation-message">
               <span>toelichting:</span> Lorem ipsum dolor sit amet
@@ -610,16 +539,21 @@
 <form action="" method="post">
   <label for="datalist-explanation">Input</label>
   <div>
-    <input id="datalist-explanation" class="explanation" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-explanation" aria-describedby="datalist-explanation-message" aria-invalid="true">
+    <input
+      id="datalist-explanation"
+      class="explanation"
+      list="example-list-explanation"
+      aria-describedby="datalist-explanation-message"
+    />
     <p class="explanation" id="datalist-explanation-message">
       <span>toelichting:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
 
   <datalist id="example-list-explanation">
-    <option value="Optie 1">
-    <option value="Optie 2">
-    <option value="Optie 3">
+    <option value="Optie 1"></option>
+    <option value="Optie 2"></option>
+    <option value="Optie 3"></option>
   </datalist>
 </form>
 `}
@@ -635,7 +569,6 @@
               id="checkbox-explanation"
               name="standaard-checkbox"
               class="explanation"
-              aria-invalid="true"
             />
             <label for="checkbox-explanation">Lorem ipsum dolor sit amet</label>
             <p class="explanation" id="checkbox-explanation-message">
@@ -650,7 +583,7 @@
           code={`
 <form action="" method="post">
   <div aria-describedby="checkbox-explanation-message">
-    <input type="checkbox" id="checkbox-explanation" name="standaard-checkbox" class="explanation" aria-invalid="true">
+    <input type="checkbox" id="checkbox-explanation" name="standaard-checkbox" class="explanation">
     <label for="checkbox-explanation">Lorem ipsum dolor sit amet</label>
     <p class="explanation" id="checkbox-explanation-message">
       <span>toelichting:</span> Lorem ipsum dolor sit amet
@@ -671,7 +604,6 @@
               name="standaard-radiobutton"
               value="value"
               class="explanation"
-              aria-invalid="true"
             />
             <label for="radio-example-explanation">Lorem ipsum dolor sit amet</label>
             <p class="explanation" id="radio-example-explanation-message">
@@ -686,7 +618,7 @@
           code={`
 <form action="" method="post">
   <div>
-    <input type="radio" id="radio-example-explanation" name="standaard-radiobutton" value="value" class="explanation" aria-invalid="true">
+    <input type="radio" id="radio-example-explanation" name="standaard-radiobutton" value="value" class="explanation">
     <label for="radio-example-explanation">Lorem ipsum dolor sit amet</label>
     <p class="explanation" id="radio-example-explanation-message">
       <span>toelichting:</span> Lorem ipsum dolor sit amet
@@ -701,7 +633,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h3>Benodigd</h3>
         <ul>

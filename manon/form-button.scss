@@ -23,6 +23,8 @@ form {
     padding-bottom: var(--form-button-padding-bottom);
     padding-left: var(--form-button-padding-left);
 
+    margin-top: var(--form-button-margin-top, inherit);
+
     background-color: var(--form-button-background-color);
     color: var(--form-button-color);
 

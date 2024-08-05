@@ -17,8 +17,8 @@
       <section id="introduction">
         <h1>Notificatie-teller</h1>
         <p>
-          Gebruik om de gebruiker te attenderen en te informeren over nieuwe berichten of
-          notificaties.
+          De notificatie-teller is bedoeld om de gebruiker te attenderen en te informeren over
+          nieuwe berichten of notificaties.
         </p>
 
         <ul>
@@ -27,10 +27,24 @@
             geven als een notificatie-teller.
           </li>
           <li>
-            Voeg <code>aria-label=""</code> toe met een duidelijke omschrijving toe voor gebruiker die
-            gebruik maken van screenreaders. Bijvoorbeeld: "Nieuwe berichten", "Ongelezen berichten"
-            of "Nieuwe berichten binnen afspraken". Houdt de omschrijving kort maar zorg voor voldoende
-            context.
+            Overweeg of het nodig is een toegankelijk label toe te voegen.
+            <ul>
+              <li>
+                <strong>Let op</strong>: in vorige versies van deze documentatie werd aangeraden om
+                de notificatie-teller een <code>aria-label</code> te geven.
+                <strong>Dat was incorrect.</strong>
+              </li>
+              <li>
+                Is uit context duidelijk waar de teller bij hoort? Bijvoorbeeld in een link zoals: <a
+                  href="message-counter">Berichten <span class="message-counter">42</span></a
+                >, of in een tabel met duidelijke headers? Dan is het <b>niet</b> nodig een extra label
+                toe te voegen.
+              </li>
+              <li>
+                Wordt de teller gebruikt in combinatie met bijvoorbeeld een icoon? Zorg dan dat het
+                icoon een duidelijk tekst-alternatief heeft.
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -38,72 +52,48 @@
       <section id="examples">
         <h2>Voorbeelden</h2>
 
-        <h3>Visuele voorbeeld:</h3>
-        <span class="message-counter" aria-label="Nieuwe berichten">1</span>
+        <h3>Als los element</h3>
+        <h4>Visueel voorbeeld</h4>
+        <span class="message-counter">1</span>
 
-        <h3>HTML-voorbeeld:</h3>
-        <h4><code>span</code></h4>
+        <h4>HTML-voorbeeld</h4>
+        <Code language="html" code={`<span class="message-counter">1</span>`} />
+
+        <h3><code>In een link</code></h3>
+        <h4>Visueel voorbeeld</h4>
+        <a href="message-counter">Berichten <span class="message-counter">42</span></a>
+
+        <h4>HTML-voorbeeld</h4>
         <Code
           language="html"
-          code={`
-<span class="message-counter" aria-label="Nieuwe berichten">1</span>
-`}
+          code={`<a href="message-counter">Berichten <span class="message-counter">42</span></a>`}
         />
 
-        <h4><code>p</code></h4>
-        <Code
-          language="html"
-          code={`
-<p class="message-counter" aria-label="Nieuwe berichten">1</p>
-`}
-        />
+        <h3>Lang getal</h3>
+        <h4>Visueel voorbeeld</h4>
+        <span class="message-counter">12.830</span>
 
-        <h4><code>div</code></h4>
-        <Code
-          language="html"
-          code={`
-<div class="message-counter" aria-label="Nieuwe berichten">1</div>
-`}
-        />
-
-        <h4><code>li</code></h4>
-        <Code
-          language="html"
-          code={`
-<ul>
-  <li class="message-counter" aria-label="Nieuwe berichten">1</li>
-</ul>
-`}
-        />
-
-        <h4>Visueel voorbeeld lang getal:</h4>
-        <span class="message-counter" aria-label="Nieuwe berichten">12.830</span>
-
-        <Code
-          language="html"
-          code={`
-<span class="message-counter" aria-label="Nieuwe berichten">12.830</span>
-`}
-        />
+        <h4>HTML-voorbeeld</h4>
+        <Code language="html" code={`<span class="message-counter">12.830</span>`} />
       </section>
 
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="{base}/variables#padding">padding</a></li>
+          <li><a href="{base}/documentation/variables#padding">padding</a></li>
           <li>
-            <a href="{base}/variables#border-radius">border-radius</a>
+            <a href="{base}/documentation/variables#border-radius">border-radius</a>
           </li>
-          <li><a href="{base}/variables#font-size">font-size</a></li>
+          <li><a href="{base}/documentation/variables#font-size">font-size</a></li>
           <li>
-            <a href="{base}/variables#background-color">background-color</a>
+            <a href="{base}/documentation/variables#background-color">background-color</a>
           </li>
-          <li><a href="{base}/variables#text-color">text-color</a></li>
-          <li><a href="{base}/variables#height">height</a></li>
-          <li><a href="{base}/variables#min-width">min-width</a></li>
-          <li><a href="{base}/variables#border-width">border-width</a></li>
-          <li><a href="{base}/variables#border-style">border-style</a></li>
-          <li><a href="{base}/variables#border-color">border-color</a></li>
+          <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
+          <li><a href="{base}/documentation/variables#height">height</a></li>
+          <li><a href="{base}/documentation/variables#min-width">min-width</a></li>
+          <li><a href="{base}/documentation/variables#border-width">border-width</a></li>
+          <li><a href="{base}/documentation/variables#border-style">border-style</a></li>
+          <li><a href="{base}/documentation/variables#border-color">border-color</a></li>
         </ul>
       </section>
 

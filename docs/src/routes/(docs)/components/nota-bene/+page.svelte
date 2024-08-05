@@ -60,12 +60,7 @@
             <label for="nota-bene-input">Ipsum</label>
             <div>
               <span class="nota-bene">Dit veld is verplicht</span>
-              <input
-                id="nota-bene-input"
-                name="nota-bene-input"
-                placeholder="lorem ipsum"
-                type="text"
-              />
+              <input id="nota-bene-input" name="nota-bene-input" type="text" />
             </div>
           </div>
           <button type="submit">Verzend</button>
@@ -80,7 +75,11 @@
     <label for="nota-bene-input">Ipsum</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
-        <input id="nota-bene-input" name="nota-bene-input" placeholder="lorem ipsum" type="text">
+      <input
+        id="nota-bene-input"
+        name="nota-bene-input"
+        type="text"
+      />
     </div>
   </div>
   <button type="submit">Verzend</button>
@@ -93,7 +92,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Benodigd</h3>
@@ -110,10 +111,10 @@
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="{base}/variables#line-height">line-height</a></li>
-          <li><a href="{base}/variables#font-size">font-size</a></li>
-          <li><a href="{base}/variables#font-weight">font-weight</a></li>
-          <li><a href="{base}/variables#text-color">text-color</a></li>
+          <li><a href="{base}/documentation/variables#line-height">line-height</a></li>
+          <li><a href="{base}/documentation/variables#font-size">font-size</a></li>
+          <li><a href="{base}/documentation/variables#font-weight">font-weight</a></li>
+          <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
         </ul>
 
         <p>Bijbehorende elementen:</p>

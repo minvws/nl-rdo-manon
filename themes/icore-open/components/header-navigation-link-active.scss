@@ -1,0 +1,14 @@
+/* Header navigation link active */
+
+@use "../color-scheme";
+
+:root {
+  --header-navigation-link-active-text-color: #{color-scheme.$oc-white};
+  --header-navigation-link-active-text-decoration: none;
+  --header-navigation-link-active-background-color: var(
+    --header-navigation-link-hover-background-color
+  );
+  --header-navigation-link-active-font-weight: var(
+    --header-navigation-link-font-weight
+  );
+}

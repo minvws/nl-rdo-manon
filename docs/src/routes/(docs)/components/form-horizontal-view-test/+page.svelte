@@ -97,24 +97,19 @@
       </section>
 
       <section id="tests">
-        <h2>Basisformulier</h2>
+        <h2 id="input">Basisformulier</h2>
         <p>Formulier zonder gebruik van fieldset</p>
 
-        <h3 id="input">Invoerveld</h3>
+        <h3 id="input-base">Invoerveld</h3>
         <p>Basis-invoerveld met verschillende states</p>
 
-        <h4 id="input-base">Basisweergave:</h4>
+        <h4 id="input-basic-view">Basisweergave:</h4>
         <h5>Visueel voorbeeld:</h5>
 
         <form action="" method="post" class="horizontal-view">
           <div>
             <label for="input-example">Voorbeeld text input</label>
-            <input
-              id="input-example"
-              name="input-example"
-              placeholder="voorbeeld text input"
-              type="text"
-            />
+            <input id="input-example" name="input-example" type="text" />
           </div>
           <button type="submit">Verzend</button>
         </form>
@@ -129,7 +124,6 @@
     <input
       id="input-example"
       name="input-example"
-      placeholder="voorbeeld text input"
       type="text"
     >
   </div>
@@ -149,7 +143,6 @@
               <input
                 id="input-example-required"
                 name="input-example-required"
-                placeholder="lorem ipsum"
                 type="text"
                 required
               />
@@ -166,29 +159,24 @@
     <label for="input-example-required">Ipsum</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
-      <input id="input-example-required" name="voorbeeld-input-required" placeholder="lorem ipsum" type="text" required>
+      <input id="input-example-required" name="voorbeeld-input-required" type="text" required>
     </div>
   </div>
 </form>
 `}
         />
 
-        <h4 id="input-base">Gegroepeerde knoppen:</h4>
+        <h4 id="grouped-buttons">Gegroepeerde knoppen:</h4>
         <h5>Visueel voorbeeld:</h5>
 
         <form action="" method="post" class="horizontal-view">
           <div>
             <label for="input-example-grouped">Voorbeeld text input</label>
-            <input
-              id="input-example-grouped"
-              name="input-example-grouped"
-              placeholder="voorbeeld text input"
-              type="text"
-            />
+            <input id="input-example-grouped" name="input-example-grouped" type="text" />
           </div>
           <div class="button-container">
-            <a class="button ghost" type="submit">Annuleren</a>
-            <button type="submit">Verzend</button>
+            <a class="button ghost" href="form-horizontal-view-test">Annuleren</a>
+            <button>Verzend</button>
           </div>
         </form>
 
@@ -202,7 +190,6 @@
     <input
       id="input-example-grouped"
       name="input-example-grouped"
-      placeholder="voorbeeld text input"
       type="text"
     >
   </div>
@@ -347,15 +334,17 @@
                 <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal
                 1 hoofdletter, 1 kleineletter en 1 cijfer.
               </p>
-              <input
-                id="password-example"
-                name="password-example"
-                pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
-                placeholder="wachtwoord"
-                title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
-                type="password"
-                aria-describedby="password-example-message"
-              />
+
+              <div>
+                <input
+                  id="password-example"
+                  name="password-example"
+                  pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
+                  title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
+                  type="password"
+                  aria-describedby="password-example-message"
+                />
+              </div>
             </div>
           </div>
         </form>
@@ -368,15 +357,21 @@
   <div>
     <label for="password-example">Wachtwoord</label>
     <div>
-      <p class="explanation" id="password-example-message"><span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer.</p>
-      <input
-        id="password-example"
-        name="password-example"
-        pattern="{"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}"
-        placeholder="wachtwoord"
-        title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
-        type="password"
-        aria-describedby="password-example-message">
+      <p class="explanation" id="password-example-message">
+        <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal
+        1 hoofdletter, 1 kleineletter en 1 cijfer.
+      </p>
+
+      <div>
+        <input
+          id="password-example"
+          name="password-example"
+          pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
+          title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
+          type="password"
+          aria-describedby="password-example-message"
+        />
+      </div>
     </div>
   </div>
 </form>
@@ -398,7 +393,6 @@
                 id="password-example-required"
                 name="password-example-required"
                 pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
-                placeholder="wachtwoord"
                 title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
                 type="password"
                 aria-describedby="password-example-required-message"
@@ -421,7 +415,6 @@
         id="password-example-required"
         name="password-example-required"
         pattern="{"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}"
-        placeholder="wachtwoord"
         title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
         type="password"
         aria-describedby="password-example-required-message"
@@ -440,11 +433,17 @@
         <form action="" method="post" class="horizontal-view">
           <div>
             <label for="textarea-example">Bericht</label>
-            <textarea
-              id="textarea-example"
-              name="Tekstveld voorbeeld"
-              placeholder="Jouw vraag of opmerking"
-            ></textarea>
+
+            <div>
+              <span class="nota-bene" id="textarea-example-explanation"
+                >Jouw vraag of opmerking
+              </span>
+              <textarea
+                id="textarea-example"
+                name="Tekstveld voorbeeld"
+                aria-describedby="textarea-example-explanation"
+              ></textarea>
+            </div>
           </div>
         </form>
 
@@ -455,7 +454,17 @@
 <form action="" method="post" class="horizontal-view">
   <div>
     <label for="textarea-example">Bericht</label>
-    <textarea id="textarea-example" name="Tekstveld voorbeeld" placeholder="Jouw vraag of opmerking"></textarea>
+
+    <div>
+      <span class="nota-bene" id="textarea-example-explanation"
+        >Jouw vraag of opmerking
+      </span>
+      <textarea
+        id="textarea-example"
+        name="Tekstveld voorbeeld"
+        aria-describedby="textarea-example-explanation"
+      ></textarea>
+    </div>
   </div>
 </form>
 `}
@@ -468,11 +477,13 @@
           <div class="required">
             <label for="voorbeeld-tekstveld-required">Bericht</label>
             <div>
-              <span class="nota-bene">Dit veld is verplicht</span>
+              <span class="nota-bene" id="voorbeeld-tekstveld-required-explanation"
+                >Dit veld is verplicht. Stel jouw vraag of vul jouw opmerking in.
+              </span>
               <textarea
                 id="voorbeeld-tekstveld-required"
                 name="voorbeeld-tekstveld-required"
-                placeholder="Jouw vraag of opmerking"
+                aria-describedby="voorbeeld-tekstveld-required-explanation"
               ></textarea>
             </div>
           </div>
@@ -485,7 +496,16 @@
 <form action="" method="post" class="horizontal-view">
   <div class="required">
     <label for="voorbeeld-tekstveld-required">Bericht</label>
-    <textarea id="voorbeeld-tekstveld-required" name="voorbeeld-tekstveld-required" placeholder="Jouw vraag of opmerking"></textarea>
+    <div>
+      <span class="nota-bene" id="voorbeeld-tekstveld-required-explanation"
+        >Dit veld is verplicht. Stel jouw vraag of vul jouw opmerking in.
+      </span>
+      <textarea
+        id="voorbeeld-tekstveld-required"
+        name="voorbeeld-tekstveld-required"
+        aria-describedby="voorbeeld-tekstveld-required-explanation"
+      ></textarea>
+    </div>
   </div>
 </form>
 `}
@@ -825,13 +845,8 @@
 
         <form action="" method="post" class="horizontal-view">
           <div>
-            <label for="form-example-base">Voorbeeld text input</label>
-            <input
-              id="form-example-base"
-              name="form-example-base"
-              placeholder="voorbeeld text input"
-              type="text"
-            />
+            <label for="grouped-buttons-example">Voorbeeld text input</label>
+            <input id="grouped-buttons-example" name="grouped-buttons-example" type="text" />
           </div>
           <div class="button-container">
             <button>Cancel</button>
@@ -845,11 +860,10 @@
           code={`
 <form action="" method="post" class="horizontal-view">
   <div>
-    <label for="form-example-base">Voorbeeld text input</label>
+    <label for="grouped-buttons-example">Voorbeeld text input</label>
     <input
-      id="form-example-base"
-      name="form-example-base"
-      placeholder="voorbeeld text input"
+      id="grouped-buttons-example"
+      name="grouped-buttons-example"
       type="text"
     />
   </div>
@@ -913,13 +927,8 @@
             </div>
 
             <div>
-              <label for="form-example-base">Voorbeeld text input</label>
-              <input
-                id="form-example-base"
-                name="form-example-base"
-                placeholder="voorbeeld text input"
-                type="text"
-              />
+              <label for="fieldset-example">Voorbeeld text input</label>
+              <input id="fieldset-example" name="fieldset-example" type="text" />
             </div>
 
             <div class="required">
@@ -929,7 +938,6 @@
                 <input
                   id="voorbeeld-input-required"
                   name="voorbeeld-input-required"
-                  placeholder="lorem ipsum"
                   type="text"
                   required
                 />
@@ -957,7 +965,6 @@
                   id="input-password-1"
                   name="input-password-1"
                   pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
-                  placeholder="wachtwoord"
                   title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
                   type="password"
                   aria-describedby="input-password-1-message"
@@ -967,11 +974,16 @@
 
             <div>
               <label for="voorbeeld-tekstveld-base">Bericht</label>
-              <textarea
-                id="voorbeeld-tekstveld-base"
-                name="voorbeeld-tekstveld-base"
-                placeholder="Jouw vraag of opmerking"
-              ></textarea>
+              <div>
+                <span class="nota-bene" id="voorbeeld-tekstveld-base-explanation"
+                  >Stel een vraag of geef een opmerking
+                </span>
+                <textarea
+                  id="voorbeeld-tekstveld-base"
+                  name="voorbeeld-tekstveld-base"
+                  aria-describedby="voorbeeld-tekstveld-base-explanation"
+                ></textarea>
+              </div>
             </div>
 
             <div>
@@ -1085,55 +1097,76 @@
           language="html"
           code={`
 <form action="" method="post" class="horizontal-view">
+  <div class="explanation" role="group" aria-label="toelichting">
+    <span>Toelichting:</span>
+    <p>Dit is een voorbeeld van een notificatie direct binnen het formulier.</p>
+  </div>
   <fieldset>
     <legend>Invoervelden</legend>
 
+    <div class="explanation" role="group" aria-label="toelichting">
+      <span>Toelichting:</span>
+      <p>Dit is een voorbeeld van een notificatie direct binnen een fieldset.</p>
+    </div>
+
     <div>
-      <label for="form-example-base">Voorbeeld text input</label>
-      <input
-        id="form-example-base"
-        name="form-example-base"
-        placeholder="voorbeeld text input"
-        type="text"
-      />
+      <label for="fieldset-example">Voorbeeld text input</label>
+      <input id="fieldset-example" name="fieldset-example" type="text" />
     </div>
 
     <div class="required">
       <label for="voorbeeld-input-required">Ipsum</label>
       <div>
         <span class="nota-bene">Dit veld is verplicht</span>
-        <input id="voorbeeld-input-required" name="voorbeeld-input-required" placeholder="lorem ipsum" type="text" required>
+        <input
+          id="voorbeeld-input-required"
+          name="voorbeeld-input-required"
+          type="text"
+          required
+        />
       </div>
     </div>
 
     <div>
       <label for="voorbeeld-date-1">Datum</label>
-      <input id="voorbeeld-date-1" name="voorbeeld-date-1" type="date">
+      <input id="voorbeeld-date-1" name="voorbeeld-date-1" type="date" />
     </div>
 
     <div>
       <label for="voorbeeld-email-1">Email</label>
-      <input id="voorbeeld-email-1" name="voorbeeld-email-1" type="email">
+      <input id="voorbeeld-email-1" name="voorbeeld-email-1" type="email" />
     </div>
 
     <div>
       <label for="input-password-1">Wachtwoord</label>
       <div>
-        <p class="explanation" id="input-password-1-message"><span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer.</p>
+        <p class="explanation" id="input-password-1-message">
+          <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal
+          1 hoofdletter, 1 kleine letter en 1 cijfer.
+        </p>
         <input
           id="input-password-1"
           name="input-password-1"
-          pattern="{"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}"
-          placeholder="wachtwoord"
+          pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
           title="Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter, 1 kleine letter en 1 cijfer."
           type="password"
-          aria-describedby="input-password-1-message">
+          aria-describedby="input-password-1-message"
+        />
       </div>
     </div>
 
     <div>
       <label for="voorbeeld-tekstveld-base">Bericht</label>
-      <textarea id="voorbeeld-tekstveld-base" name="voorbeeld-tekstveld-base" placeholder="Jouw vraag of opmerking"></textarea>
+      <div>
+        <span class="nota-bene" id="voorbeeld-tekstveld-base-explanation"
+          >Stel een vraag of geef een opmerking
+        </span>
+        <textarea
+          id="voorbeeld-tekstveld-base"
+          name="voorbeeld-tekstveld-base"
+          aria-describedby="voorbeeld-tekstveld-base-explanation"
+        ></textarea>
+      </div>
     </div>
 
     <div>
@@ -1150,21 +1183,35 @@
     <legend>Checkboxes</legend>
 
     <div class="checkbox">
-      <input type="checkbox" id="checkbox-example-fieldset" name="voorbeeld selectievak binnen fieldset">
+      <input
+        type="checkbox"
+        id="checkbox-example-fieldset"
+        name="voorbeeld selectievak binnen fieldset"
+      />
       <label for="checkbox-example-fieldset">Selectievak</label>
     </div>
 
-    <div class="required">
+    <div class="option-group required">
       <span class="nota-bene">Dit veld is verplicht</span>
 
       <div class="checkbox">
-        <input type="checkbox" id="checkbox-example-fieldset-required" name="selectievak binnen fieldset" required>
+        <input
+          type="checkbox"
+          id="checkbox-example-fieldset-required"
+          name="selectievak binnen fieldset"
+          required
+        />
         <label for="checkbox-example-fieldset-required">Verplicht selectievak</label>
       </div>
     </div>
 
     <div class="checkbox">
-      <input type="checkbox" id="checkbox-example-disabled-fieldset" name="uitgeschakeld selectievak binnen fieldset" disabled>
+      <input
+        type="checkbox"
+        id="checkbox-example-disabled-fieldset"
+        name="uitgeschakeld selectievak binnen fieldset"
+        disabled
+      />
       <label for="checkbox-example-disabled-fieldset">Uitgeschakeld selectievak</label>
     </div>
   </fieldset>
@@ -1176,21 +1223,27 @@
         type="radio"
         id="radio-example-default-5"
         name="standaard-radiobutton"
-        value="value">
+        value="value"
+      />
       <label for="radio-example-default-5">Radio button</label>
     </div>
 
-    <div class="required">
+    <div class="option-group required">
       <span class="nota-bene">Dit veld is verplicht</span>
 
       <div class="radio">
-        <input type="radio" id="radio-example-grouped" name="standaard-radio" required>
+        <input type="radio" id="radio-example-grouped" name="standaard-radio" required />
         <label for="radio-example-grouped">Verplichte radio-button</label>
       </div>
     </div>
 
     <div class="radio">
-      <input type="radio" id="radio-example-disabled-fieldset" name="voorbeeld uitgeschakeld radio-button binnen fieldset" disabled>
+      <input
+        type="radio"
+        id="radio-example-disabled-fieldset"
+        name="voorbeeld uitgeschakeld radio-button binnen fieldset"
+        disabled
+      />
       <label for="radio-example-disabled-fieldset">uitgeschakelde radio-button</label>
     </div>
   </fieldset>
@@ -1200,12 +1253,23 @@
 
     <div>
       <label for="range-example-fieldset">Range</label>
-      <input type="range" id="range-example-fieldset" name="voorbeeld bereik binnen fieldset" min="0" max="100">
+      <input
+        type="range"
+        id="range-example-fieldset"
+        name="voorbeeld bereik binnen fieldset"
+        min="0"
+        max="100"
+      />
     </div>
 
     <div>
       <label for="color-picker-fieldset">Selecteer de gewenste kleur</label>
-      <input id="color-picker-fieldset" name="voorbeeld kleurselector binnen fieldset" type="color" value="#ffffff">
+      <input
+        id="color-picker-fieldset"
+        name="voorbeeld kleurselector binnen fieldset"
+        type="color"
+        value="#ffffff"
+      />
     </div>
   </fieldset>
   <button type="submit">Verzend</button>
@@ -1213,19 +1277,18 @@
 `}
         />
 
-        <h3 id="button-container">Gegroepeerde knoppen binnen fieldset</h3>
-        <h4 id="button-container-base">Basisweergave</h4>
+        <h3 id="button-container-fieldset">Gegroepeerde knoppen binnen fieldset</h3>
+        <h4 id="button-container-fieldset-base">Basisweergave</h4>
         <h5>Visueel voorbeeld:</h5>
 
         <form action="" method="post" class="horizontal-view">
           <fieldset>
             <legend>Lorem ipsum</legend>
             <div>
-              <label for="form-example-base">Voorbeeld text input</label>
+              <label for="grouped-buttons-within-fieldset">Voorbeeld text input</label>
               <input
-                id="form-example-base"
-                name="form-example-base"
-                placeholder="voorbeeld text input"
+                id="grouped-buttons-within-fieldset"
+                name="grouped-buttons-within-fieldset"
                 type="text"
               />
             </div>
@@ -1243,11 +1306,10 @@
           code={`
 <form action="" method="post" class="horizontal-view">
   <div>
-    <label for="form-example-base">Voorbeeld text input</label>
+    <label for="grouped-buttons-within-fieldset">Voorbeeld text input</label>
     <input
-      id="form-example-base"
-      name="form-example-base"
-      placeholder="voorbeeld text input"
+      id="grouped-buttons-within-fieldset"
+      name="grouped-buttons-within-fieldset"
       type="text"
     />
   </div>

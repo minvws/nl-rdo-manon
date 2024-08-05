@@ -79,7 +79,9 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling"
+              >Componenten gebruiken en styling toevoegen</a
+            >
           </li>
           <li>
             Voeg de benodigde HTML toe. Zie het voorbeeld per element voor de implementatiedetails.
@@ -133,7 +135,7 @@
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
               consequat facilisis ac eu velit.
-              <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+              <a href="notification-error">Lorem ipsum</a> consectetur adipiscing elit.
             </li>
           </ul>
           <button type="button">Lorem</button>
@@ -205,74 +207,7 @@
 
         <h4 id="error-th">Foutmelding op tabeltitel</h4>
 
-        <h5>Visueel voorbeeld:</h5>
-        <table>
-          <thead>
-            <tr>
-              <th class="error" aria-label="foutmelding"><span>Foutmelding:</span> Lorem</th>
-              <th class="error" aria-label="foutmelding"><span>Foutmelding:</span> Ipsum</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>12</td>
-              <td>42</td>
-            </tr>
-
-            <tr>
-              <td>15</td>
-              <td>168</td>
-            </tr>
-
-            <tr>
-              <td>123</td>
-              <td>2</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Lorem ipsum</td>
-              <td>Dolor sit amet</td>
-            </tr>
-          </tfoot>
-        </table>
-
-        <h5>HTML-voorbeeld:</h5>
-        <Code
-          language="html"
-          code={`
-<table>
-  <thead>
-    <tr>
-      <th class="error" aria-label="foutmelding"><span>Foutmelding:</span> Lorem</th>
-      <th class="error" aria-label="foutmelding"><span>Foutmelding:</span> Ipsum</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>12</td>
-      <td>42</td>
-    </tr>
-
-    <tr>
-      <td>15</td>
-      <td>168</td>
-    </tr>
-
-    <tr>
-      <td>123</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>Lorem ipsum</td>
-      <td>Dolor sit amet</td>
-    </tr>
-  </tfoot>
-</table>
-`}
-        />
+        <p class="warning"><span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven hoe een tabeltitel als foutmelding opgemaakt kan worden. Deze instructies zijn weggehaald, omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.</p>
 
         <h4 id="error-td">Foutmelding op Tabelcel</h4>
 
@@ -346,7 +281,7 @@
 `}
         />
 
-        <h4 id="error-th">Foutmelding op tabelrij</h4>
+        <h4 id="error-tr">Foutmelding op tabelrij</h4>
 
         <p>Aandachtspunten:</p>
         <ul>
@@ -359,9 +294,9 @@
         <h5>Visueel voorbeeld:</h5>
         <table>
           <thead>
-            <tr class="error">
-              <th aria-label="foutmelding"><span>Foutmelding:</span> Lorem</th>
-              <th aria-label="foutmelding"><span>Foutmelding:</span> Ipsum</th>
+            <tr>
+              <th>Lorem</th>
+              <th>Ipsum</th>
             </tr>
           </thead>
           <tbody>
@@ -399,9 +334,9 @@
           code={`
 <table>
   <thead>
-    <tr class="error">
-      <th aria-label="foutmelding"><span>Foutmelding:</span> Lorem</th>
-      <th aria-label="foutmelding"><span>Foutmelding:</span> Ipsum</th>
+    <tr>
+      <th>Lorem</th>
+      <th>Ipsum</th>
     </tr>
   </thead>
   <tbody>
@@ -498,7 +433,6 @@
             <textarea
               id="voorbeeld-tekstveld-error"
               name="voorbeeld-tekstveld-error"
-              placeholder="Jouw vraag of opmerking"
               class="error"
               aria-describedby="voorbeeld-tekstveld-error-message"
               aria-invalid="true"
@@ -518,11 +452,18 @@
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-error">Voorbeeld tekstveld</label>
   <div>
-    <textarea id="voorbeeld-tekstveld-error" name="voorbeeld-tekstveld-error" placeholder="Jouw vraag of opmerking" class="error" aria-describedby="voorbeeld-tekstveld-error-message" aria-invalid="true"></textarea>
+    <textarea
+      id="voorbeeld-tekstveld-error"
+      name="voorbeeld-tekstveld-error"
+      class="error"
+      aria-describedby="voorbeeld-tekstveld-error-message"
+      aria-invalid="true"
+    ></textarea>
     <p class="error" id="voorbeeld-tekstveld-error-message">
       <span>foutmelding:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
+
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -580,7 +521,6 @@
             <input
               id="datalist-error"
               class="error"
-              placeholder="Begin met typen of klik om een optie uit te kiezen"
               list="example-list-error"
               aria-describedby="datalist-error-message"
               aria-invalid="true"
@@ -604,16 +544,22 @@
 <form action="" method="post">
   <label for="datalist-error">Input</label>
   <div>
-    <input id="datalist-error" class="error" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-error" aria-describedby="datalist-error-message" aria-invalid="true">
+    <input
+      id="datalist-error"
+      class="error"
+      list="example-list-error"
+      aria-describedby="datalist-error-message"
+      aria-invalid="true"
+    />
     <p class="error" id="datalist-error-message">
       <span>foutmelding:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
 
   <datalist id="example-list-error">
-    <option value="Optie 1">
-    <option value="Optie 2">
-    <option value="Optie 3">
+    <option value="Optie 1"></option>
+    <option value="Optie 2"></option>
+    <option value="Optie 3"></option>
   </datalist>
 </form>
 `}
@@ -665,7 +611,6 @@
               name="standaard-radiobutton"
               value="value"
               class="error"
-              aria-invalid="true"
             />
             <label for="radio-example-error">Lorem ipsum dolor sit amet</label>
             <p class="error" id="radio-example-error-message">
@@ -680,7 +625,7 @@
           code={`
 <form action="" method="post">
   <div>
-    <input type="radio" id="radio-example-error" name="standaard-radiobutton" value="value" class="error" aria-invalid="true">
+    <input type="radio" id="radio-example-error" name="standaard-radiobutton" value="value" class="error">
     <label for="radio-example-error">Lorem ipsum dolor sit amet</label>
     <p class="error" id="radio-example-error-message">
       <span>foutmelding:</span> Lorem ipsum dolor sit amet
@@ -695,7 +640,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h3>Benodigd</h3>
         <ul>

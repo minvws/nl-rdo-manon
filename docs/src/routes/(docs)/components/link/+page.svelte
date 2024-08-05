@@ -18,7 +18,6 @@
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
   <article>
@@ -47,52 +46,52 @@
         <h2>Voorbeelden:</h2>
 
         <h4>Visueel voorbeeld:</h4>
-        <a href="#">Basis</a>
-        <a href="#" class="icon icon-cat">Met <code>:before</code></a>
-        <a href="#" class="icon-after icon-cat"
+        <a href="link">Basis</a>
+        <a href="link" class="icon icon-cat">Met <code>:before</code></a>
+        <a href="link" class="icon-after icon-cat"
           >Met <code>:after</code><span class="icon icon-cat">Kat icoon</span></a
         >
 
-        <a href="#" class="hover">Hover <code>:hover</code></a>
-        <a href="#" class="hover icon icon-cat">Hover met <code>:before:hover</code></a>
-        <a href="#" class="hover"
+        <a href="link" class="hover">Hover <code>:hover</code></a>
+        <a href="link" class="hover icon icon-cat">Hover met <code>:before:hover</code></a>
+        <a href="link" class="hover"
           >Hover met <code>:before:hover</code> <span class="icon icon-cat"></span></a
         >
 
-        <a href="#" class="active">Actieve link</a>
-        <a href="#" class="active icon icon-cat">Actieve link met icoon</a>
-        <a href="#" class="active"
+        <a href="link" class="active">Actieve link</a>
+        <a href="link" class="active icon icon-cat">Actieve link met icoon</a>
+        <a href="link" class="active"
           >Actieve link met icoon achteraan <span class="icon icon-cat"></span></a
         >
-        <a href="#" class="active hover">Actieve link op hover</a>
-        <a href="#" class="active hover icon icon-cat">Actieve link met icoon op hover</a>
-        <a href="#" class="active hover"
+        <a href="link" class="active hover">Actieve link op hover</a>
+        <a href="link" class="active hover icon icon-cat">Actieve link met icoon op hover</a>
+        <a href="link" class="active hover"
           >Actieve link met icoon achteraan op hover <span class="icon icon-cat"></span></a
         >
 
-        <a href="#" class="focus">Link gefocust</a>
-        <a href="#" class="focus icon icon-cat">Link gefocust met icoon</a>
-        <a href="#" class="focus"
+        <a href="link" class="focus">Link gefocust</a>
+        <a href="link" class="focus icon icon-cat">Link gefocust met icoon</a>
+        <a href="link" class="focus"
           >Link gefocust met icoon achteraan <span class="icon icon-cat"></span></a
         >
-        <a href="#" class="focus hover">Link gefocust op hover</a>
-        <a href="#" class="focus hover icon icon-cat">Link gefocust met icoon op hover</a>
-        <a href="#" class="focus hover"
+        <a href="link" class="focus hover">Link gefocust op hover</a>
+        <a href="link" class="focus hover icon icon-cat">Link gefocust met icoon op hover</a>
+        <a href="link" class="focus hover"
           >Link gefocust met icoon achteraan op hover <span class="icon icon-cat"></span></a
         >
 
-        <a href="#" class="visited">Bezochte link</a>
-        <a href="#" class="visited icon icon-cat">Bezochte link met icoon</a>
-        <a href="#" class="visited"
+        <a href="link" class="visited">Bezochte link</a>
+        <a href="link" class="visited icon icon-cat">Bezochte link met icoon</a>
+        <a href="link" class="visited"
           >Bezochte link met icoon achteraan <span class="icon icon-cat"></span></a
         >
-        <a href="#" class="visited hover">Bezochte link op hover</a>
-        <a href="#" class="visited hover icon icon-cat">Bezochte link met icoon op hover</a>
-        <a href="#" class="visited hover"
+        <a href="link" class="visited hover">Bezochte link op hover</a>
+        <a href="link" class="visited hover icon icon-cat">Bezochte link met icoon op hover</a>
+        <a href="link" class="visited hover"
           >Bezochte link met icoon achteraan op hover <span class="icon icon-cat"></span></a
         >
 
-        <a href="#" rel="external">Externe link</a>
+        <a href="link" rel="external">Externe link</a>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -106,7 +105,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Aandachtspunten:</h3>
@@ -151,22 +150,22 @@
             <tbody>
               <tr>
                 <td>--link-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
                 <td>transparent</td>
                 <td>-</td>
-                <td rowspan="4" scope="rowgroup">links</td>
+                <th rowspan="4" scope="rowgroup">links</th>
               </tr>
 
               <tr>
                 <td>--link-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>#2f2f9a</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--link-text-decoration</td>
-                <td><a href="{base}/variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td>
                 <td>initial</td>
                 <td>-</td>
               </tr>

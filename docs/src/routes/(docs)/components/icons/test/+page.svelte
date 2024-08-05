@@ -113,18 +113,6 @@
 `}
         />
 
-        <h3>Link als knop: disabled</h3>
-        <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/icons/test" class="button icon icon-cat" disabled>Lorem ipsum</a>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input class="button icon icon-cat" disabled>Lorem ipsum</a>
-`}
-        />
-
         <h3>Link als knop icoon erachter</h3>
         <h4>Visueel voorbeeld:</h4>
         <a href="{base}/components/icons/test">Lorem ipsum<span class="icon icon-cat"></span></a>
@@ -156,14 +144,14 @@
         <h3>Link als knop: met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
         <a href="{base}/components/icons/test" class="button icon icon-cat"
-          >Lorem ipsum <img src="$img/cat.svg" /></a
+          >Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></a
         >
 
         <h4>HTML-voorbeeld:</h4>
         <Code
           language="html"
           code={`
-<input class="button icon icon-cat">Lorem ipsum <img src="/img/cat.svg"></a>
+<input class="button icon icon-cat">Lorem ipsum <img src="/img/cat.svg" alt="Kat" /></a>
 `}
         />
 
@@ -251,7 +239,7 @@
 
         <h3>Link</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="" class="icon icon-cat">Lorem ipsum</a>
+        <a href="test" class="icon icon-cat">Lorem ipsum</a>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -280,7 +268,7 @@
 
         <h3>Link met afbeelding als icoon</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href=""><img src="$img/cat.svg" alt="Kat" class="icon" />Lorem ipsum</a>
+        <a href="test"><img src="$img/cat.svg" alt="Kat" class="icon" />Lorem ipsum</a>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -483,24 +471,24 @@
           >
             <button aria-haspopup="listbox" aria-current="true"> Papiamentu </button>
             <ul role="listbox">
-              <li>
-                <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl"
+              <li role="option" aria-selected="false">
+                <a hreflang="nl" href="test" data-value="Nederlands" lang="nl"
                   >Nederlands</a
                 >
               </li>
-              <li>
-                <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
+              <li role="option" aria-selected="false">
+                <a hreflang="en" href="test" data-value="English" lang="en">English</a>
               </li>
               <li>
-                <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
+                <a hreflang="fy" href="test" data-value="Frysk" lang="fy">Frysk</a>
               </li>
-              <li aria-current="true">
-                <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW"
+              <li role="option" aria-selected="true" aria-current="true">
+                <a hreflang="pap-CW" href="test" data-value="Papiamentu" lang="pap-CW"
                   >Papiamentu</a
                 >
               </li>
-              <li>
-                <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW"
+              <li role="option" aria-selected="false">
+                <a hreflang="pap-AW" href="test" data-value="Papiamento" lang="pap-AW"
                   >Papiamento</a
                 >
               </li>
@@ -520,20 +508,20 @@
       Papiamentu
     </button>
     <ul role="listbox">
-        <li>
-          <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="nl" href="#" data-value="Nederlands" lang="nl">Nederlands</a>
         </li>
-        <li>
-          <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="en" href="#" data-value="English" lang="en">English</a>
         </li>
-        <li>
-          <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="fy" href="#" data-value="Frysk" lang="fy">Frysk</a>
         </li>
-        <li aria-current="true">
-          <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
+        <li role="option" aria-selected="true" aria-current="true">
+          <a hreflang="pap-CW" href="#" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
         </li>
-        <li>
-          <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="pap-AW" href="#" data-value="Papiamento" lang="pap-AW">Papiamento</a>
         </li>
     </ul>
   </div>

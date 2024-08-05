@@ -3,6 +3,7 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 :root {
   /* Link focus */
@@ -10,6 +11,9 @@
     "header-navigation-link-focus-",
     "navigation-link-focus-"
   );
+
+  /* Link focus outline */
+  @include outline.outline-variables("header-navigation-link-focus-", initial);
 
   /* Icon */
   @include link.icon-styling-variables(

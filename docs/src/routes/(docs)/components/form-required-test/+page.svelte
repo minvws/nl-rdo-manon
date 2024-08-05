@@ -24,13 +24,12 @@
         <h4>Visueel voorbeeld:</h4>
 
         <form action="" method="post">
-          <label for="voorbeeld-input-required">Ipsum</label>
+          <label for="voorbeeld-input-required-1">Ipsum</label>
           <div>
             <span class="nota-bene">Dit veld is verplicht</span>
             <input
-              id="voorbeeld-input-required"
-              name="voorbeeld-input-required"
-              placeholder="lorem ipsum"
+              id="voorbeeld-input-required-1"
+              name="voorbeeld-input-required-1"
               type="text"
               required
             />
@@ -40,13 +39,12 @@
 
         <form action="" method="post">
           <div>
-            <label for="voorbeeld-input-required">Ipsum</label>
+            <label for="voorbeeld-input-required-2">Ipsum</label>
             <div>
               <span class="nota-bene">Dit veld is verplicht</span>
               <input
-                id="voorbeeld-input-required"
-                name="voorbeeld-input-required"
-                placeholder="lorem ipsum"
+                id="voorbeeld-input-required-2"
+                name="voorbeeld-input-required-2"
                 type="text"
                 required
               />
@@ -57,13 +55,12 @@
 
         <form action="" method="post" class="horizontal-view">
           <div>
-            <label for="voorbeeld-input-required">Ipsum</label>
+            <label for="voorbeeld-input-required-3">Ipsum</label>
             <div>
               <span class="nota-bene">Dit veld is verplicht</span>
               <input
-                id="voorbeeld-input-required"
-                name="voorbeeld-input-required"
-                placeholder="lorem ipsum"
+                id="voorbeeld-input-required-3"
+                name="voorbeeld-input-required-3"
                 type="text"
                 required
               />
@@ -76,12 +73,17 @@
         <Code
           language="html"
           code={`
-<form action="" method="post">
+<form action="" method="post" class="horizontal-view">
   <div>
-    <label for="voorbeeld-input-required">Ipsum</label>
+    <label for="voorbeeld-input-required-3">Ipsum</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
-      <input id="voorbeeld-input-required" name="voorbeeld-input-required" placeholder="lorem ipsum" type="text" required>
+      <input
+        id="voorbeeld-input-required-3"
+        name="voorbeeld-input-required-3"
+        type="text"
+        required
+      />
     </div>
   </div>
   <button type="submit">Verzend</button>
@@ -94,13 +96,12 @@
 
         <form action="" method="post">
           <div>
-            <label for="voorbeeld-input-required">Ipsum</label>
+            <label for="voorbeeld-input-required-5">Ipsum</label>
             <div>
               <span class="nota-bene">Dit veld is verplicht</span>
               <input
-                id="voorbeeld-input-required"
-                name="voorbeeld-input-required"
-                placeholder="lorem ipsum"
+                id="voorbeeld-input-required-5"
+                name="voorbeeld-input-required-5"
                 type="text"
                 required
               />
@@ -115,10 +116,15 @@
           code={`
 <form action="" method="post">
   <div>
-    <label for="voorbeeld-input-required">Ipsum</label>
+    <label for="voorbeeld-input-required-5">Ipsum</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
-      <input id="voorbeeld-input-required" name="voorbeeld-input-required" placeholder="lorem ipsum" type="text" required>
+      <input
+        id="voorbeeld-input-required-5"
+        name="voorbeeld-input-required-5"
+        type="text"
+        required
+      />
     </div>
   </div>
   <button type="submit">Verzend</button>

@@ -18,7 +18,6 @@
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
   <article>
@@ -109,7 +108,7 @@
 <section class="tags horizontal-view">
   <p class="tags-color-1-light">Lorem ipsum</p>
   <p class="tags-color-2-light">Lorem ipsum</p>
-  <p class="tags-color-3-light">Lorem ipsum</p>                
+  <p class="tags-color-3-light">Lorem ipsum</p>
 </section>
 `}
         />
@@ -223,7 +222,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -267,7 +266,7 @@
             <tbody>
               <tr>
                 <td>--tags-flex-direction</td>
-                <td><a href="{base}/variables#flex-direction">flex-direction</a></td>
+                <td><a href="{base}/documentation/variables#flex-direction">flex-direction</a></td>
                 <td>row</td>
                 <td>-</td>
                 <td>-</td>
@@ -275,7 +274,7 @@
 
               <tr>
                 <td>--tags-align-items</td>
-                <td><a href="{base}/variables#align-items">align-items</a></td>
+                <td><a href="{base}/documentation/variables#align-items">align-items</a></td>
                 <td>center</td>
                 <td>-</td>
                 <td>-</td>
@@ -283,7 +282,7 @@
 
               <tr>
                 <td>--tags-justify-content</td>
-                <td><a href="{base}/variables#justify-content">justify-content</a></td>
+                <td><a href="{base}/documentation/variables#justify-content">justify-content</a></td>
                 <td>left</td>
                 <td>-</td>
                 <td>-</td>
@@ -291,7 +290,7 @@
 
               <tr>
                 <td>--tags-flex-wrap</td>
-                <td><a href="{base}/variables#flex-wrap">flex-wrap</a></td>
+                <td><a href="{base}/documentation/variables#flex-wrap">flex-wrap</a></td>
                 <td>wrap</td>
                 <td>-</td>
                 <td>-</td>
@@ -299,7 +298,7 @@
 
               <tr>
                 <td>--tags-gap</td>
-                <td><a href="{base}/variables#gap">gap</a></td>
+                <td><a href="{base}/documentation/variables#gap">gap</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
                 <td>-</td>
@@ -307,7 +306,7 @@
 
               <tr>
                 <td>--tags-padding-top</td>
-                <td><a href="{base}/variables#padding-top">padding-top</a></td>
+                <td><a href="{base}/documentation/variables#padding-top">padding-top</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -315,7 +314,7 @@
 
               <tr>
                 <td>--tags-padding-right</td>
-                <td><a href="{base}/variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/documentation/variables#padding-right">padding-right</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -323,7 +322,7 @@
 
               <tr>
                 <td>--tags-padding-bottom</td>
-                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/documentation/variables#padding-bottom">padding-bottom</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -331,7 +330,7 @@
 
               <tr>
                 <td>--tags-padding-left</td>
-                <td><a href="{base}/variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/documentation/variables#padding-left">padding-left</a></td>
                 <td>0</td>
                 <td>-</td>
                 <td>-</td>
@@ -339,7 +338,7 @@
 
               <tr>
                 <td>--tags-list-style</td>
-                <td><a href="{base}/variables#list-style">list-style</a></td>
+                <td><a href="{base}/documentation/variables#list-style">list-style</a></td>
                 <td>none</td>
                 <td>-</td>
                 <td>-</td>

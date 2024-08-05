@@ -56,13 +56,8 @@
         <p>Visueel voorbeeld:</p>
         <form action="" method="post" class="horizontal-view">
           <div>
-            <label for="form-example-base">Voorbeeld text input</label>
-            <input
-              id="form-example-base"
-              name="form-example-base"
-              placeholder="voorbeeld text input"
-              type="text"
-            />
+            <label for="form-example-1">Voorbeeld text input</label>
+            <input id="form-example-1" name="form-example-1" type="text" />
           </div>
           <button type="submit">Verzend</button>
         </form>
@@ -73,8 +68,8 @@
           code={`
 <form action="" method="post" class="horizontal-view">
 <div>
-<label for="form-example-base">Voorbeeld text input</label>
-<input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+<label for="form-example-1">Voorbeeld text input</label>
+<input id="form-example-1" name="form-example-1" type="text">
 </div>
 <button type="submit">Verzend</button>
 </form>
@@ -106,13 +101,8 @@
           <fieldset>
             <legend>Fieldset test</legend>
             <div>
-              <label for="form-example-base">Voorbeeld text input</label>
-              <input
-                id="form-example-base"
-                name="form-example-base"
-                placeholder="voorbeeld text input"
-                type="text"
-              />
+              <label for="form-example-2">Voorbeeld text input</label>
+              <input id="form-example-2" name="form-example-2" type="text" />
             </div>
           </fieldset>
           <button type="submit">Verzend</button>
@@ -126,8 +116,8 @@
 <fieldset>
 <legend>Fieldset test</legend>
 <div>
-  <label for="form-example-base">Voorbeeld text input</label>
-  <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
+  <label for="form-example-2">Voorbeeld text input</label>
+  <input id="form-example-2" name="form-example-2" type="text">
 </div>
 </fieldset>
 <button type="submit">Verzend</button>
@@ -140,7 +130,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Benodigd</h3>
@@ -161,19 +153,19 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="{base}/variables#justify-content">justify-content</a>
+            <a href="{base}/documentation/variables#justify-content">justify-content</a>
           </li>
-          <li><a href="{base}/variables#gap">gap</a></li>
+          <li><a href="{base}/documentation/variables#gap">gap</a></li>
           <li>
             Label
             <ul>
-              <li><a href="{base}/variables#max-width">max-width</a></li>
+              <li><a href="{base}/documentation/variables#max-width">max-width</a></li>
             </ul>
           </li>
           <li>
             Invoervelden
             <ul>
-              <li><a href="{base}/variables#max-width">max-width</a></li>
+              <li><a href="{base}/documentation/variables#max-width">max-width</a></li>
             </ul>
           </li>
         </ul>

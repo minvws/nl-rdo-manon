@@ -11,6 +11,12 @@
     "navigation-link-focus-"
   );
 
+  /* Visited focus */
+  @include link.styling-variables(
+    "footer-navigation-link-visited-focus-",
+    "footer-navigation-link-focus-"
+  );
+
   /* Icon */
   @include link.icon-styling-variables(
     "footer-navigation-link-focus-icon-",

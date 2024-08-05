@@ -23,8 +23,8 @@
         <h4>Basis</h4>
         <form action="" method="post">
           <div class="checkbox">
-            <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" />
-            <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
+            <input type="checkbox" id="checkbox-example-1" name="standaard-checkbox" />
+            <label for="checkbox-example-1">Lorem ipsum dolor sit amet</label>
           </div>
         </form>
 
@@ -34,8 +34,8 @@
           code={`
 <form action="" method="post">
   <div class="checkbox">
-    <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox">
-    <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
+    <input type="checkbox" id="checkbox-example-1" name="standaard-checkbox">
+    <label for="checkbox-example-1">Lorem ipsum dolor sit amet</label>
   </div>
 </form>
 `}
@@ -234,8 +234,8 @@
         <form action="" method="post">
           <div>
             <div class="checkbox">
-              <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" />
-              <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
+              <input type="checkbox" id="checkbox-example-2" name="standaard-checkbox" />
+              <label for="checkbox-example-2">Lorem ipsum dolor sit amet</label>
             </div>
             <span class="nota-bene">Lorem ipsum dolor sit amet.</span>
           </div>
@@ -248,8 +248,8 @@
 <form action="" method="post">
     <div>
         <div class="checkbox">
-            <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox">
-            <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
+            <input type="checkbox" id="checkbox-example-2" name="standaard-checkbox">
+            <label for="checkbox-example-2">Lorem ipsum dolor sit amet</label>
         </div>
         <span class="nota-bene">Lorem ipsum dolor sit amet.</span>
     </div>

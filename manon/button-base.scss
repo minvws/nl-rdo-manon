@@ -57,6 +57,7 @@ input[type="reset"] {
     background-color: var(--button-base-hover-background-color);
     color: var(--button-base-hover-text-color);
     border-color: var(--button-base-hover-border-color);
+    border-radius: var(--button-base-hover-border-radius, initial);
   }
 
   &:active,

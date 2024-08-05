@@ -40,12 +40,7 @@
             <label for="nota-bene-input">Ipsum</label>
             <div>
               <span class="nota-bene">Dit veld is verplicht</span>
-              <input
-                id="nota-bene-input"
-                name="nota-bene-input"
-                placeholder="lorem ipsum"
-                type="text"
-              />
+              <input id="nota-bene-input" name="nota-bene-input" type="text" />
             </div>
           </div>
           <button type="submit">Verzend</button>
@@ -60,7 +55,11 @@
     <label for="nota-bene-input">Ipsum</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
-        <input id="nota-bene-input" name="nota-bene-input" placeholder="lorem ipsum" type="text">
+      <input
+        id="nota-bene-input"
+        name="nota-bene-input"
+        type="text"
+      />
     </div>
   </div>
   <button type="submit">Verzend</button>

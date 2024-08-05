@@ -61,46 +61,44 @@
 
         <h3>Visuele weergave binnen formulier:</h3>
         <form action="" method="post" class="horizontal-view">
-          <div>
-            <label>Lorem ipsum</label>
-            <input
-              id="voorbeeld-text-input-1"
-              name="voorbeeld-text-input-1"
-              placeholder="voorbeeld text input"
-              type="text"
-            />
-          </div>
-
           <fieldset>
             <legend>Persoonsgegevens</legend>
-            <dl>
+
+            <div>
+              <label for="username">Gebruikersnaam</label>
               <div>
-                <dt>Naam</dt>
-                <dd>Jane Doe</dd>
+                <span class="nota-bene" id="username-explanation">Bijvoorbeeld Jane Doe </span>
+                <input
+                  id="username"
+                  name="username"
+                  type="text"
+                  aria-describedby="username-explanation"
+                />
               </div>
-              <div>
-                <dt>Geboortedatum</dt>
-                <dd>01-01-1984</dd>
-              </div>
-              <div>
-                <dt>Geslacht</dt>
-                <dd>Vrouw</dd>
-              </div>
-              <div>
-                <dt>Woonplaats</dt>
-                <dd>Loremstad</dd>
-              </div>
-            </dl>
+            </div>
+
+            <fieldset>
+              <legend>Persoonsgegevens</legend>
+              <dl>
+                <div>
+                  <dt>Naam</dt>
+                  <dd>Jane Doe</dd>
+                </div>
+                <div>
+                  <dt>Geboortedatum</dt>
+                  <dd>01-01-1984</dd>
+                </div>
+                <div>
+                  <dt>Geslacht</dt>
+                  <dd>Vrouw</dd>
+                </div>
+                <div>
+                  <dt>Woonplaats</dt>
+                  <dd>Loremstad</dd>
+                </div>
+              </dl>
+            </fieldset>
           </fieldset>
-          <div>
-            <label>Lorem ipsum</label>
-            <input
-              id="voorbeeld-text-input-2"
-              name="voorbeeld-text-input-2"
-              placeholder="voorbeeld text input"
-              type="text"
-            />
-          </div>
           <button>Lorem ipsum</button>
         </form>
 
@@ -109,36 +107,46 @@
           language="html"
           code={`
 <form action="" method="post" class="horizontal-view">
-  <div>
-      <label>Lorem ipsum</label>
-      <input id="voorbeeld-text-input-1" name="voorbeeld-text-input-1" placeholder="voorbeeld text input" type="text">
-  </div>
-
   <fieldset>
+    <legend>Persoonsgegevens</legend>
+
+    <div>
+      <label>Gebruikersnaam</label>
+      <div>
+        <span class="nota-bene" id="voorbeeld-text-input-1-explanation"
+          >Bijvoorbeeld Jane Doe
+        </span>
+        <input
+          id="voorbeeld-text-input-1"
+          name="voorbeeld-text-input-1"
+          type="text"
+          aria-describedby="voorbeeld-text-input-1-explanation"
+        />
+      </div>
+    </div>
+
+    <fieldset>
       <legend>Persoonsgegevens</legend>
       <dl>
-          <div>
-              <dt>Naam</dt>
-              <dd>Jane Doe</dd>
-          </div>
-          <div>
-              <dt>Geboortedatum</dt>
-              <dd>01-01-1984</dd>
-          </div>
-          <div>
-              <dt>Geslacht</dt>
-              <dd>Vrouw</dd>
-          </div>
-          <div>
-              <dt>Woonplaats</dt>
-              <dd>Loremstad</dd>
-          </div>
+        <div>
+          <dt>Naam</dt>
+          <dd>Jane Doe</dd>
+        </div>
+        <div>
+          <dt>Geboortedatum</dt>
+          <dd>01-01-1984</dd>
+        </div>
+        <div>
+          <dt>Geslacht</dt>
+          <dd>Vrouw</dd>
+        </div>
+        <div>
+          <dt>Woonplaats</dt>
+          <dd>Loremstad</dd>
+        </div>
       </dl>
+    </fieldset>
   </fieldset>
-  <div>
-      <label>Lorem ipsum</label>
-      <input id="voorbeeld-text-input-2" name="voorbeeld-text-input-2" placeholder="voorbeeld text input" type="text">
-  </div>
   <button>Lorem ipsum</button>
 </form>
 `}
@@ -149,7 +157,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Importeer component via NPM</h3>

@@ -79,7 +79,9 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling"
+              >Componenten gebruiken en styling toevoegen</a
+            >
           </li>
           <li>
             Voeg de benodigde HTML toe. Zie het voorbeeld per element voor de implementatiedetails.
@@ -133,7 +135,7 @@
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
               consequat facilisis ac eu velit.
-              <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+              <a href="notification-system-message">Lorem ipsum</a> consectetur adipiscing elit.
             </li>
           </ul>
           <button type="button">Lorem</button>
@@ -205,78 +207,7 @@
 
         <h4 id="system-th">Systeembericht op tabeltitel</h4>
 
-        <h5>Visueel voorbeeld:</h5>
-        <table>
-          <thead>
-            <tr>
-              <th class="system" aria-label="Systeembericht">
-                <span>Systeembericht:</span> Lorem
-              </th>
-              <th class="system" aria-label="Systeembericht">
-                <span>Systeembericht:</span> Ipsum
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>12</td>
-              <td>42</td>
-            </tr>
-
-            <tr>
-              <td>15</td>
-              <td>168</td>
-            </tr>
-
-            <tr>
-              <td>123</td>
-              <td>2</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Lorem ipsum</td>
-              <td>Dolor sit amet</td>
-            </tr>
-          </tfoot>
-        </table>
-
-        <h5>HTML-voorbeeld:</h5>
-        <Code
-          language="html"
-          code={`
-<table>
-  <thead>
-    <tr>
-      <th class="system" aria-label="Systeembericht"><span>Systeembericht:</span> Lorem</th>
-      <th class="system" aria-label="Systeembericht"><span>Systeembericht:</span> Ipsum</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>12</td>
-      <td>42</td>
-    </tr>
-
-    <tr>
-      <td>15</td>
-      <td>168</td>
-    </tr>
-
-    <tr>
-      <td>123</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>Lorem ipsum</td>
-      <td>Dolor sit amet</td>
-    </tr>
-  </tfoot>
-</table>
-`}
-        />
+        <p class="warning"><span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven hoe een tabeltitel als systeembericht opgemaakt kan worden. Deze instructies zijn weggehaald, omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.</p>
 
         <h4 id="system-td">Systeembericht op Tabelcel</h4>
 
@@ -354,7 +285,7 @@
 `}
         />
 
-        <h4 id="system-th">Systeembericht op tabelrij</h4>
+        <h4 id="system-tr">Systeembericht op tabelrij</h4>
 
         <p>Aandachtspunten:</p>
         <ul>
@@ -367,9 +298,9 @@
         <h5>Visueel voorbeeld:</h5>
         <table>
           <thead>
-            <tr class="system">
-              <th aria-label="Systeembericht"><span>Systeembericht:</span> Lorem</th>
-              <th aria-label="Systeembericht"><span>Systeembericht:</span> Ipsum</th>
+            <tr>
+              <th>Lorem</th>
+              <th>Ipsum</th>
             </tr>
           </thead>
           <tbody>
@@ -407,9 +338,9 @@
           code={`
 <table>
   <thead>
-    <tr class="system">
-      <th aria-label="Systeembericht"><span>Systeembericht:</span> Lorem</th>
-      <th aria-label="Systeembericht"><span>Systeembericht:</span> Ipsum</th>
+    <tr>
+      <th>Lorem</th>
+      <th>Ipsum</th>
     </tr>
   </thead>
   <tbody>
@@ -473,7 +404,6 @@
               class="system"
               value="Lorem ipsum"
               aria-describedby="input-system-message"
-              aria-invalid="true"
             />
             <p class="system" id="input-system-message">
               <span>systeembericht:</span> Lorem ipsum dolor sit amet
@@ -488,7 +418,7 @@
 <form action="" method="post">
     <label for="input-system">Input</label>
     <div>
-        <input id="input-system" class="system" value="Lorem ipsum" aria-describedby="input-system-message" aria-invalid="true">
+        <input id="input-system" class="system" value="Lorem ipsum" aria-describedby="input-system-message">
         <p class="system" id="input-system-message">
             <span>system:</span> Lorem ipsum dolor sit amet
         </p>
@@ -506,10 +436,8 @@
             <textarea
               id="voorbeeld-tekstveld-system"
               name="voorbeeld-tekstveld-system"
-              placeholder="Jouw vraag of opmerking"
               class="system"
               aria-describedby="voorbeeld-tekstveld-system-message"
-              aria-invalid="true"
             ></textarea>
             <p class="system" id="voorbeeld-tekstveld-system-message">
               <span>systeembericht:</span> Lorem ipsum dolor sit amet
@@ -526,11 +454,17 @@
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-system">Voorbeeld tekstveld</label>
   <div>
-    <textarea id="voorbeeld-tekstveld-system" name="voorbeeld-tekstveld-system" placeholder="Jouw vraag of opmerking" class="system" aria-describedby="voorbeeld-tekstveld-system-message" aria-invalid="true"></textarea>
+    <textarea
+      id="voorbeeld-tekstveld-system"
+      name="voorbeeld-tekstveld-system"
+      class="system"
+      aria-describedby="voorbeeld-tekstveld-system-message"
+    ></textarea>
     <p class="system" id="voorbeeld-tekstveld-system-message">
-      <span>system:</span> Lorem ipsum dolor sit amet
+      <span>systeembericht:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
+
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -547,7 +481,6 @@
               name="select"
               class="system"
               aria-describedby="select-system-message"
-              aria-invalid="true"
             >
               <option value="1">Optie 1</option>
               <option value="2">Optie 2</option>
@@ -566,7 +499,7 @@
 <form action="" method="post">
   <label for="select-system">Selectielijst</label>
   <div>
-    <select id="select-system" name="select" class="system" aria-describedby="select-system-message" aria-invalid="true">
+    <select id="select-system" name="select" class="system" aria-describedby="select-system-message">
       <option value="1">Optie 1</option>
       <option value="2">Optie 2</option>
       <option value="3">Optie 3</option>
@@ -588,10 +521,8 @@
             <input
               id="datalist-system"
               class="system"
-              placeholder="Begin met typen of klik om een optie uit te kiezen"
               list="example-list-system"
               aria-describedby="datalist-system-message"
-              aria-invalid="true"
             />
             <p class="system" id="datalist-system-message">
               <span>systeembericht:</span> Lorem ipsum dolor sit amet
@@ -612,16 +543,21 @@
 <form action="" method="post">
   <label for="datalist-system">Input</label>
   <div>
-    <input id="datalist-system" class="system" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-system" aria-describedby="datalist-system-message" aria-invalid="true">
+    <input
+      id="datalist-system"
+      class="system"
+      list="example-list-system"
+      aria-describedby="datalist-system-message"
+    />
     <p class="system" id="datalist-system-message">
-      <span>system:</span> Lorem ipsum dolor sit amet
+      <span>systeembericht:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
 
   <datalist id="example-list-system">
-    <option value="Optie 1">
-    <option value="Optie 2">
-    <option value="Optie 3">
+    <option value="Optie 1"></option>
+    <option value="Optie 2"></option>
+    <option value="Optie 3"></option>
   </datalist>
 </form>
 `}
@@ -632,13 +568,7 @@
         <h5>Visueel voorbeeld:</h5>
         <form action="" method="post">
           <div aria-describedby="checkbox-system-message">
-            <input
-              type="checkbox"
-              id="checkbox-system"
-              name="standaard-checkbox"
-              class="system"
-              aria-invalid="true"
-            />
+            <input type="checkbox" id="checkbox-system" name="standaard-checkbox" class="system" />
             <label for="checkbox-system">Lorem ipsum dolor sit amet</label>
             <p class="system" id="checkbox-system-message">
               <span>systeembericht:</span> Lorem ipsum dolor sit amet
@@ -652,7 +582,7 @@
           code={`
 <form action="" method="post">
   <div aria-describedby="checkbox-system-message">
-    <input type="checkbox" id="checkbox-system" name="standaard-checkbox" class="system" aria-invalid="true">
+    <input type="checkbox" id="checkbox-system" name="standaard-checkbox" class="system">
     <label for="checkbox-system">Lorem ipsum dolor sit amet</label>
     <p class="system" id="checkbox-system-message">
       <span>system:</span> Lorem ipsum dolor sit amet
@@ -673,7 +603,6 @@
               name="standaard-radiobutton"
               value="value"
               class="system"
-              aria-invalid="true"
             />
             <label for="radio-example-system">Lorem ipsum dolor sit amet</label>
             <p class="system" id="radio-example-system-message">
@@ -688,7 +617,7 @@
           code={`
 <form action="" method="post">
   <div>
-    <input type="radio" id="radio-example-system" name="standaard-radiobutton" value="value" class="system" aria-invalid="true">
+    <input type="radio" id="radio-example-system" name="standaard-radiobutton" value="value" class="system">
     <label for="radio-example-system">Lorem ipsum dolor sit amet</label>
     <p class="system" id="radio-example-system-message">
       <span>system:</span> Lorem ipsum dolor sit amet
@@ -703,7 +632,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h3>Benodigd</h3>
         <ul>

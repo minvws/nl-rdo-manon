@@ -26,12 +26,7 @@
           <div>
             <label for="voorbeeld-input-button">Ipsum</label>
             <div class="combined-field">
-              <input
-                id="voorbeeld-input-button"
-                name="voorbeeld-input-button"
-                placeholder="lorem ipsum"
-                type="text"
-              />
+              <input id="voorbeeld-input-button" name="voorbeeld-input-button" type="text" />
               <button class="icon icon-cat">Cat</button>
             </div>
           </div>
@@ -46,7 +41,7 @@
   <div>
     <label for="voorbeeld-input-button">Ipsum</label>
     <div class="combined-field">
-      <input id="voorbeeld-input-button" name="voorbeeld-input-button" placeholder="lorem ipsum" type="text">
+      <input id="voorbeeld-input-button" name="voorbeeld-input-button" type="text">
       <button class="icon icon-cat">Cat</button>
     </div>
   </div>
@@ -61,22 +56,12 @@
         <form action="" method="post">
           <div class="combined-field">
             <div>
-              <label for="voorbeeld-combined-inputs">Ipsum</label>
-              <input
-                id="voorbeeld-combined-inputs"
-                name="voorbeeld-combined-inputs"
-                placeholder="lorem ipsum"
-                type="text"
-              />
+              <label for="voorbeeld-combined-inputs-1">Ipsum</label>
+              <input id="voorbeeld-combined-inputs-1" name="voorbeeld-combined-inputs-1" type="text" />
             </div>
             <div>
-              <label for="voorbeeld-combined-inputs">Ipsum</label>
-              <input
-                id="voorbeeld-combined-inputs"
-                name="voorbeeld-combined-inputs"
-                placeholder="lorem ipsum"
-                type="text"
-              />
+              <label for="voorbeeld-combined-inputs-2">Ipsum</label>
+              <input id="voorbeeld-combined-inputs-2" name="voorbeeld-combined-inputs-2" type="text" />
             </div>
           </div>
 
@@ -90,12 +75,12 @@
 <form action="" method="post">
   <div class="combined-field">
     <div>
-      <label for="voorbeeld-combined-inputs">Ipsum</label>
-      <input id="voorbeeld-combined-inputs" name="voorbeeld-combined-inputs" placeholder="lorem ipsum" type="text">
+      <label for="voorbeeld-combined-inputs-1">Ipsum</label>
+      <input id="voorbeeld-combined-inputs-1" name="voorbeeld-combined-inputs-1" type="text">
     </div>
     <div>
-      <label for="voorbeeld-combined-inputs">Ipsum</label>
-      <input id="voorbeeld-combined-inputs" name="voorbeeld-combined-inputs" placeholder="lorem ipsum" type="text">
+      <label for="voorbeeld-combined-inputs-2">Ipsum</label>
+      <input id="voorbeeld-combined-inputs-2" name="voorbeeld-combined-inputs-2" type="text">
     </div>
   </div>
 

@@ -5,15 +5,53 @@
 
 $breakpoint: 24rem !default;
 
-/* Code */
-code {
+%code {
   background-color: var(--code-base-background-color, inherit);
   color: var(--code-base-text-color, inherit);
-  font-size: var(--code-base-font-size, inherit);
   width: 100%;
   word-break: var(--code-base-word-break, inherit);
+  padding: var(--code-base-padding, inherit);
 
   @media (width >= $breakpoint) {
     word-break: var(--code-base-breakpoint-word-break, break-word);
+  }
+}
+
+/* Code */
+code {
+  @extend %code;
+  font-size: var(--code-base-font-size, inherit);
+}
+
+/* Code within text elements */
+span,
+li,
+p {
+  > code {
+    @extend %code;
+  }
+}
+
+/* Code within headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  > code {
+    @extend %code;
+  }
+}
+
+/* Code within links */
+a {
+  &:hover,
+  &:visited,
+  &:focus,
+  &:active {
+    > code {
+      @extend %code;
+    }
   }
 }

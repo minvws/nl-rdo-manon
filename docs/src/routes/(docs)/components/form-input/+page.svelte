@@ -56,10 +56,9 @@
           <input
             id="example-input-base"
             name="example-input-base"
-            placeholder="voorbeeld invoerveld"
             type="text"
           />
-          <button type="submit" class="ghost">Terug</button>
+          <button type="submit">Verzend</button>
         </form>
 
         <h4>HTML-voorbeeld:</h4>
@@ -68,8 +67,11 @@
           code={`
 <form action="" method="post">
   <label for="example-input-base">Voorbeeld invoerveld</label>
-  <input id="example-input-base" name="example-input-base" placeholder="voorbeeld invoerveld" type="text">
-
+  <input
+    id="example-input-base"
+    name="example-input-base"
+    type="text"
+  />
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -99,12 +101,9 @@
           <input
             id="example-input-required"
             name="example-input-required"
-            placeholder="gebruikersnaam"
-            title="Gebruikersnaam"
             type="text"
             required
           />
-
           <button type="submit">Verzend</button>
         </form>
 
@@ -115,8 +114,12 @@
 <form action="" method="post">
   <label for="example-input-required">Gebruikersnaam</label>
   <span class="nota-bene">Dit veld is verplicht</span>
-  <input id="example-input-required" name="example-input-required" placeholder="gebruikersnaam" title="Gebruikersnaam" type="text" required>
-
+  <input
+    id="example-input-required"
+    name="example-input-required"
+    type="text"
+    required
+  />
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -136,8 +139,6 @@
           <input
             id="example-input-disabled"
             name="example-input-disabled"
-            placeholder="gebruikersnaam"
-            title="Gebruikersnaam"
             type="text"
             disabled
           />
@@ -150,7 +151,12 @@
           code={`
 <form action="" method="post">
   <label for="example-input-disabled">Gebruikersnaam</label>
-  <input id="example-input-disabled" name="example-input-disabled" placeholder="gebruikersnaam" title="Gebruikersnaam" type="text" disabled>
+  <input
+    id="example-input-disabled"
+    name="example-input-disabled"
+    type="text"
+    disabled
+  />
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -161,7 +167,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
         <h2>Benodigd</h2>
         <ul>
@@ -179,25 +185,25 @@
       <section id="variables">
         <h2>Instelbare variabelen</h2>
         <ul>
-          <li><a href="{base}/variables#padding-top">padding-top</a></li>
+          <li><a href="{base}/documentation/variables#padding-top">padding-top</a></li>
           <li>
-            <a href="{base}/variables#padding-right">padding-right</a>
+            <a href="{base}/documentation/variables#padding-right">padding-right</a>
           </li>
           <li>
-            <a href="{base}/variables#padding-bottom">padding-bottom</a>
+            <a href="{base}/documentation/variables#padding-bottom">padding-bottom</a>
           </li>
-          <li><a href="{base}/variables#padding-left">padding-left</a></li>
+          <li><a href="{base}/documentation/variables#padding-left">padding-left</a></li>
           <li>
-            <a href="{base}/variables#background-color">background-color</a>
+            <a href="{base}/documentation/variables#background-color">background-color</a>
           </li>
-          <li><a href="{base}/variables#text-color">text-color</a></li>
-          <li><a href="{base}/variables#font-size">font-size</a></li>
-          <li><a href="{base}/variables#line-height">line-height</a></li>
-          <li><a href="{base}/variables#font-weight">font-weight</a></li>
-          <li><a href="{base}/variables#min-height">min-height</a></li>
-          <li><a href="{base}/variables#border-width">border-width</a></li>
-          <li><a href="{base}/variables#border-style">border-style</a></li>
-          <li><a href="{base}/variables#border-color">border-color</a></li>
+          <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
+          <li><a href="{base}/documentation/variables#font-size">font-size</a></li>
+          <li><a href="{base}/documentation/variables#line-height">line-height</a></li>
+          <li><a href="{base}/documentation/variables#font-weight">font-weight</a></li>
+          <li><a href="{base}/documentation/variables#min-height">min-height</a></li>
+          <li><a href="{base}/documentation/variables#border-width">border-width</a></li>
+          <li><a href="{base}/documentation/variables#border-style">border-style</a></li>
+          <li><a href="{base}/documentation/variables#border-color">border-color</a></li>
         </ul>
       </section>
 

@@ -11,7 +11,7 @@
   <title>Pagina-notificatie bevestiging voorbeeld</title>
 </svelte:head>
 
-<main>
+<main id="main-content">
   <section class="confirmation" role="group" aria-label="bevestiging">
     <div>
       <span>Bevestiging:</span>
@@ -46,7 +46,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Importeer component via NPM</h3>
@@ -56,7 +58,6 @@
           language="css"
           code={`
 @use "@minvws/manon/notification";
-@use "@minvws/manon/notification-confirmation-message";
 @use "@minvws/manon/notification-confirmation-page";
 `}
         />
@@ -79,169 +80,172 @@
             <tbody>
               <tr>
                 <td>--notification-confirmation-page-background-color</td>
-                <td><a href="{base}/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--confirmation-background-color)</td>
                 <td>-</td>
-                <td rowspan="24" scope="rowgroup">confirmation</td>
+                <th rowspan="24" scope="rowgroup">confirmation</th>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>var(--confirmation-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-border-width</td>
-                <td><a href="{base}/variables#border-width">border-width</a></td>
+                <td><a href="{base}/documentation/variables#border-width">border-width</a></td>
                 <td>var(--notification-border-width)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-border-style</td>
-                <td><a href="{base}/variables#border-style">border-style</a></td>
+                <td><a href="{base}/documentation/variables#border-style">border-style</a></td>
                 <td>var(--notification-border-style)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-border-color</td>
-                <td><a href="{base}/variables#border-color">border-color</a></td>
+                <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
                 <td>var(--confirmation-border-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-padding-top</td>
-                <td><a href="{base}/variables#padding-top">padding-top</a></td>
+                <td><a href="{base}/documentation/variables#padding-top">padding-top</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-padding-right</td>
-                <td><a href="{base}/variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/documentation/variables#padding-right">padding-right</a></td>
                 <td>var(--page-whitespace-right)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td> --notification-confirmation-page-padding-bottom</td>
-                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/documentation/variables#padding-bottom">padding-bottom</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-padding-left</td>
-                <td><a href="{base}/variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/documentation/variables#padding-left">padding-left</a></td>
                 <td>var(--page-whitespace-left)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-gap</td>
-                <td><a href="{base}/variables#gap">gap</a></td>
+                <td><a href="{base}/documentation/variables#gap">gap</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-span-font-weight</td>
-                <td><a href="{base}/variables#span-font-weight">span-font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">span-font-weight</a></td>
                 <td>var(--notification-span-font-weight)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-pagecontent-wrapper-padding-top</td>
-                <td><a href="{base}/variables#padding-top">padding-top</a></td>
+                <td><a href="{base}/documentation/variables#padding-top">padding-top</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-pagecontent-wrapper-padding-right</td>
-                <td><a href="{base}/variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/documentation/variables#padding-right">padding-right</a></td>
                 <td>var(--content-padding-right)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td> --notification-confirmation-pagecontent-wrapper-padding-bottom</td>
-                <td><a href="{base}/variables#padding-bottom">padding-bottom</a></td>
+                <td><a href="{base}/documentation/variables#padding-bottom">padding-bottom</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-pagecontent-wrapper-padding-left</td>
-                <td><a href="{base}/variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/documentation/variables#padding-left">padding-left</a></td>
                 <td>var(--content-padding-left)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-pagecontent-wrapper-gap</td>
-                <td><a href="{base}/variables#gap">gap</a></td>
+                <td><a href="{base}/documentation/variables#gap">gap</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-pagecontent-wrapper-span-font-weight</td>
-                <td><a href="{base}/variables#font-weight">font-weight</a></td>
+                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>0.5rem</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-icon-font-family</td>
-                <td><a href="{base}/variables#font-family">font-family</a></td>
+                <td><a href="{base}/documentation/variables#font-family">font-family</a></td>
                 <td>var(--notification-icon-font-family)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-icon-font-size</td>
-                <td><a href="{base}/variables#font-size">font-size</a></td>
+                <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>var(--notification-icon-font-size)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-icon-text-color</td>
-                <td><a href="{base}/variables#text-color">color</a></td>
+                <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>var(--notification-icon-text-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-icon-padding-right</td>
-                <td><a href="{base}/variables#padding-right">padding-right</a></td>
+                <td><a href="{base}/documentation/variables#padding-right">padding-right</a></td>
                 <td>var(--notification-icon-padding-right)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-icon-padding-left</td>
-                <td><a href="{base}/variables#padding-left">padding-left</a></td>
+                <td><a href="{base}/documentation/variables#padding-left">padding-left</a></td>
                 <td>var(--notification-icon-padding-left)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-icon-margin-right</td>
-                <td><a href="{base}/variables#margin-right">margin-right</a></td>
+                <td><a href="{base}/documentation/variables#margin-right">margin-right</a></td>
                 <td>var(--notification-icon-margin-right)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--notification-confirmation-page-icon</td>
-                <td><a href="{base}/variables#content">content</a></td>
+                <td><a href="{base}/documentation/variables#content">content</a></td>
                 <td>var(--notification-icon)</td>
                 <td>-</td>
               </tr>
@@ -268,21 +272,21 @@
     --notification-confirmation-page-padding-bottom: ;
     --notification-confirmation-page-padding-left: ;
     --notification-confirmation-page-gap: ;
-  
+
     /* First span */
     --notification-confirmation-page-span-font-weight: ;
-  
-  
+
+
     /* Content wrapper */
     --notification-confirmation-page-content-wrapper-padding-top: ;
     --notification-confirmation-page-content-wrapper-padding-right: ;
     --notification-confirmation-page-content-wrapper-padding-bottom: ;
     --notification-confirmation-page-content-wrapper-padding-left: ;
     --notification-confirmation-page-content-wrapper-gap: ;
-  
+
     /* First span */
     --notification-confirmation-page-content-wrapper-span-font-weight: ;
-  
+
     /* Icon */
     --notification-confirmation-page-icon-font-family: ;
     --notification-confirmation-page-icon-font-size: ;

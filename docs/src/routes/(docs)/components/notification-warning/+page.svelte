@@ -79,7 +79,9 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling"
+              >Componenten gebruiken en styling toevoegen</a
+            >
           </li>
           <li>
             Voeg de benodigde HTML toe. Zie het voorbeeld per element voor de implementatiedetails.
@@ -133,7 +135,7 @@
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
               consequat facilisis ac eu velit.
-              <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+              <a href="notification-warning">Lorem ipsum</a> consectetur adipiscing elit.
             </li>
           </ul>
           <button type="button">Lorem</button>
@@ -205,78 +207,7 @@
 
         <h4 id="warning-th">Waarschuwing op tabeltitel</h4>
 
-        <h5>Visueel voorbeeld:</h5>
-        <table>
-          <thead>
-            <tr>
-              <th class="warning" aria-label="waarschuwing">
-                <span>Waarschuwing:</span> Lorem
-              </th>
-              <th class="warning" aria-label="waarschuwing">
-                <span>Waarschuwing:</span> Ipsum
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>12</td>
-              <td>42</td>
-            </tr>
-
-            <tr>
-              <td>15</td>
-              <td>168</td>
-            </tr>
-
-            <tr>
-              <td>123</td>
-              <td>2</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Lorem ipsum</td>
-              <td>Dolor sit amet</td>
-            </tr>
-          </tfoot>
-        </table>
-
-        <h5>HTML-voorbeeld:</h5>
-        <Code
-          language="html"
-          code={`
-<table>
-  <thead>
-    <tr>
-      <th class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> Lorem</th>
-      <th class="warning" aria-label="waarschuwing"><span>Waarschuwing:</span> Ipsum</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>12</td>
-      <td>42</td>
-    </tr>
-
-    <tr>
-      <td>15</td>
-      <td>168</td>
-    </tr>
-
-    <tr>
-      <td>123</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>Lorem ipsum</td>
-      <td>Dolor sit amet</td>
-    </tr>
-  </tfoot>
-</table>
-`}
-        />
+        <p class="warning"><span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven hoe een tabeltitel als waarschuwing opgemaakt kan worden. Deze instructies zijn weggehaald, omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.</p>
 
         <h4 id="warning-td">Waarschuwing op Tabelcel</h4>
 
@@ -350,7 +281,7 @@
 `}
         />
 
-        <h4 id="warning-th">Waarschuwing op tabelrij</h4>
+        <h4 id="warning-tr">Waarschuwing op tabelrij</h4>
 
         <p>Aandachtspunten:</p>
         <ul>
@@ -363,9 +294,9 @@
         <h5>Visueel voorbeeld:</h5>
         <table>
           <thead>
-            <tr class="warning">
-              <th aria-label="waarschuwing"><span>Waarschuwing:</span> Lorem</th>
-              <th aria-label="waarschuwing"><span>Waarschuwing:</span> Ipsum</th>
+            <tr>
+              <th>Lorem</th>
+              <th>Ipsum</th>
             </tr>
           </thead>
           <tbody>
@@ -403,9 +334,9 @@
           code={`
 <table>
   <thead>
-    <tr class="warning">
-      <th aria-label="waarschuwing"><span>Waarschuwing:</span> Lorem</th>
-      <th aria-label="waarschuwing"><span>Waarschuwing:</span> Ipsum</th>
+    <tr>
+      <th>Lorem</th>
+      <th>Ipsum</th>
     </tr>
   </thead>
   <tbody>
@@ -502,7 +433,6 @@
             <textarea
               id="voorbeeld-tekstveld-warning"
               name="voorbeeld-tekstveld-warning"
-              placeholder="Jouw vraag of opmerking"
               class="warning"
               aria-describedby="voorbeeld-tekstveld-warning-message"
               aria-invalid="true"
@@ -522,11 +452,18 @@
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-warning">Voorbeeld tekstveld</label>
   <div>
-    <textarea id="voorbeeld-tekstveld-warning" name="voorbeeld-tekstveld-warning" placeholder="Jouw vraag of opmerking" class="warning" aria-describedby="voorbeeld-tekstveld-warning-message" aria-invalid="true"></textarea>
+    <textarea
+      id="voorbeeld-tekstveld-warning"
+      name="voorbeeld-tekstveld-warning"
+      class="warning"
+      aria-describedby="voorbeeld-tekstveld-warning-message"
+      aria-invalid="true"
+    ></textarea>
     <p class="warning" id="voorbeeld-tekstveld-warning-message">
       <span>waarschuwing:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
+
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -584,7 +521,6 @@
             <input
               id="datalist-warning"
               class="warning"
-              placeholder="Begin met typen of klik om een optie uit te kiezen"
               list="example-list-warning"
               aria-describedby="datalist-warning-message"
               aria-invalid="true"
@@ -608,16 +544,22 @@
 <form action="" method="post">
   <label for="datalist-warning">Input</label>
   <div>
-    <input id="datalist-warning" class="warning" placeholder="Begin met typen of klik om een optie uit te kiezen" list="example-list-warning" aria-describedby="datalist-warning-message" aria-invalid="true">
+    <input
+      id="datalist-warning"
+      class="warning"
+      list="example-list-warning"
+      aria-describedby="datalist-warning-message"
+      aria-invalid="true"
+    />
     <p class="warning" id="datalist-warning-message">
       <span>waarschuwing:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
 
   <datalist id="example-list-warning">
-    <option value="Optie 1">
-    <option value="Optie 2">
-    <option value="Optie 3">
+    <option value="Optie 1"></option>
+    <option value="Optie 2"></option>
+    <option value="Optie 3"></option>
   </datalist>
 </form>
 `}
@@ -669,7 +611,6 @@
               name="standaard-radiobutton"
               value="value"
               class="warning"
-              aria-invalid="true"
             />
             <label for="radio-example-warning">Lorem ipsum dolor sit amet</label>
             <p class="warning" id="radio-example-warning-message">
@@ -684,7 +625,7 @@
           code={`
 <form action="" method="post">
   <div>
-    <input type="radio" id="radio-example-warning" name="standaard-radiobutton" value="value" class="warning" aria-invalid="true">
+    <input type="radio" id="radio-example-warning" name="standaard-radiobutton" value="value" class="warning" >
     <label for="radio-example-warning">Lorem ipsum dolor sit amet</label>
     <p class="warning" id="radio-example-warning-message">
       <span>waarschuwing:</span> Lorem ipsum dolor sit amet
@@ -699,7 +640,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
         <h3>Benodigd</h3>
         <ul>

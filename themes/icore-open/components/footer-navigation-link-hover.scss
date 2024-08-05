@@ -1,0 +1,7 @@
+/* footer navigation link hover */
+
+@use "../color-scheme";
+
+:root {
+  --footer-navigation-link-hover-text-color: #{color-scheme.$oc-blue-9};
+}

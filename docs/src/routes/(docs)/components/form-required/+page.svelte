@@ -65,7 +65,6 @@
               <input
                 id="voorbeeld-input-required"
                 name="voorbeeld-input-required"
-                placeholder="lorem ipsum"
                 type="text"
                 required
               />
@@ -83,7 +82,12 @@
     <label for="voorbeeld-input-required">Ipsum</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
-      <input id="voorbeeld-input-required" name="voorbeeld-input-required" placeholder="lorem ipsum" type="text" required>
+      <input
+        id="voorbeeld-input-required"
+        name="voorbeeld-input-required"
+        type="text"
+        required
+      />
     </div>
   </div>
   <button type="submit">Verzend</button>
@@ -96,7 +100,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Benodigd</h3>

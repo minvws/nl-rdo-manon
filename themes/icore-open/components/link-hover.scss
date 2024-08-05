@@ -1,0 +1,8 @@
+/* Link Hover */
+
+@use "../color-scheme";
+
+:root {
+  --link-hover-text-color: #{color-scheme.$oc-blue-9};
+  --link-hover-icon-text-color: #{color-scheme.$oc-blue-9};
+}

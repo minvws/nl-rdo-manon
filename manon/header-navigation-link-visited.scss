@@ -13,6 +13,16 @@ body > header,
       /* Testing purposes */
       &.visited {
         @include link.link-and-icon-styling("header-navigation-link-visited-");
+
+        &:hover,
+        &.hover {
+          @include link.link-and-icon-styling(
+            "header-navigation-link-visited-hover-"
+          );
+          @include link.link-elements-styling(
+            "header-navigation-link-visited-hover-"
+          );
+        }
       }
     }
   }

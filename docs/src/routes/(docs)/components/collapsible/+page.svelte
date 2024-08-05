@@ -21,10 +21,6 @@
 
         <ol>
           <li>
-            Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
-            optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.
-          </li>
-          <li>
             Voeg de benodigde HTML toe. Voor meer informatie zie: <a href="#examples">Voorbeelden</a
             >.
           </li>
@@ -69,9 +65,9 @@
         >
           <div class="collapsing-element">
             <ul>
-              <li><a href="#">Item 1</a></li>
-              <li><a href="#" aria-selected="true">Huidige selectie</a></li>
-              <li><a href="#">Item 3</a></li>
+              <li><a href="collapsible">Item 1</a></li>
+              <li><a href="collapsible">Huidige selectie</a></li>
+              <li><a href="collapsible">Item 3</a></li>
             </ul>
           </div>
         </div>
@@ -90,7 +86,7 @@
   <div class="collapsing-element">
       <ul>
           <li><a href="#">Item 1</a></li>
-          <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+          <li><a href="#">Huidige selectie</a></li>
           <li><a href="#">Item 3</a></li>
       </ul>
   </div>
@@ -138,9 +134,9 @@
         >
           <div class="collapsing-element">
             <ul>
-              <li><a href="#">Item 1</a></li>
-              <li><a href="#" aria-selected="true">Huidige selectie</a></li>
-              <li><a href="#">Item 3</a></li>
+              <li><a href="collapsible">Item 1</a></li>
+              <li><a href="collapsible">Huidige selectie</a></li>
+              <li><a href="collapsible">Item 3</a></li>
             </ul>
           </div>
         </div>
@@ -161,7 +157,7 @@
   <div class="collapsing-element">
       <ul>
           <li><a href="#">Item 1</a></li>
-          <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+          <li><a href="#">Huidige selectie</a></li>
           <li><a href="#">Item 3</a></li>
       </ul>
   </div>
@@ -182,9 +178,9 @@
           <div class="collapsing-element">
             <form>
               <ul>
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#" aria-selected="true">Huidige selectie</a></li>
-                <li><a href="#">Item 3</a></li>
+                <li><a href="collapsible">Item 1</a></li>
+                <li><a href="collapsible">Huidige selectie</a></li>
+                <li><a href="collapsible">Item 3</a></li>
               </ul>
             </form>
           </div>
@@ -205,7 +201,7 @@
     <form>
       <ul>
           <li><a href="#">Item 1</a></li>
-          <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+          <li><a href="#">Huidige selectie</a></li>
           <li><a href="#">Item 3</a></li>
       </ul>
     </form>
@@ -227,9 +223,9 @@
         >
           <div class="collapsing-element">
             <ul>
-              <li><a href="#">Item 1</a></li>
-              <li><a href="#" aria-selected="true">Huidige selectie</a></li>
-              <li><a href="#">Item 3</a></li>
+              <li><a href="collapsible">Item 1</a></li>
+              <li><a href="collapsible">Huidige selectie</a></li>
+              <li><a href="collapsible">Item 3</a></li>
             </ul>
           </div>
         </div>
@@ -249,7 +245,7 @@
   <div class="collapsing-element">
       <ul>
           <li><a href="#">Item 1</a></li>
-          <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+          <li><a href="#">Huidige selectie</a></li>
           <li><a href="#">Item 3</a></li>
       </ul>
   </div>
@@ -270,9 +266,9 @@
         >
           <div class="collapsing-element">
             <ul>
-              <li><a href="#">Item 1</a></li>
-              <li><a href="#" aria-selected="true">Huidige selectie</a></li>
-              <li><a href="#">Item 3</a></li>
+              <li><a href="collapsible">Item 1</a></li>
+              <li><a href="collapsible">Huidige selectie</a></li>
+              <li><a href="collapsible">Item 3</a></li>
             </ul>
           </div>
         </div>
@@ -292,7 +288,7 @@
   <div class="collapsing-element">
       <ul>
           <li><a href="#">Item 1</a></li>
-          <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+          <li><a href="#">Huidige selectie</a></li>
           <li><a href="#">Item 3</a></li>
       </ul>
   </div>
@@ -311,15 +307,15 @@
         >
           <div class="collapsing-element">
             <ul>
-              <li><a href="#">Item 1</a></li>
-              <li><a href="#" aria-selected="true">Huidige selectie</a></li>
-              <li><a href="#">Item 3</a></li>
+              <li><a href="collapsible">Item 1</a></li>
+              <li><a href="collapsible">Huidige selectie</a></li>
+              <li><a href="collapsible">Item 3</a></li>
             </ul>
 
             <ul>
-              <li><a href="#">Sub menu Item 1</a></li>
-              <li><a href="#">Sub menu Item 2</a></li>
-              <li><a href="#">Sub menu Item 3</a></li>
+              <li><a href="collapsible">Sub menu Item 1</a></li>
+              <li><a href="collapsible">Sub menu Item 2</a></li>
+              <li><a href="collapsible">Sub menu Item 3</a></li>
             </ul>
           </div>
         </div>
@@ -338,7 +334,7 @@
   <div class="collapsing-element">
     <ul>
       <li><a href="#">Item 1</a></li>
-      <li><a href="#" aria-selected="true">Huidige selectie</a></li>
+      <li><a href="#">Huidige selectie</a></li>
       <li><a href="#">Item 3</a></li>
     </ul>
 
@@ -364,24 +360,22 @@
         >
           <div class="collapsing-element">
             <ul role="listbox">
-              <li>
-                <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl"
-                  >Nederlands</a
-                >
+              <li role="option" aria-selected="false">
+                <a hreflang="nl" href="collapsible" data-value="Nederlands" lang="nl">Nederlands</a>
               </li>
-              <li>
-                <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
+              <li role="option" aria-selected="false">
+                <a hreflang="en" href="collapsible" data-value="English" lang="en">English</a>
               </li>
-              <li>
-                <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
+              <li role="option" aria-selected="false">
+                <a hreflang="fy" href="collapsible" data-value="Frysk" lang="fy">Frysk</a>
               </li>
-              <li aria-current="true">
-                <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW"
+              <li role="option" aria-selected="true" aria-current="true">
+                <a hreflang="pap-CW" href="collapsible" data-value="Papiamentu" lang="pap-CW"
                   >Papiamentu</a
                 >
               </li>
-              <li>
-                <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW"
+              <li role="option" aria-selected="false">
+                <a hreflang="pap-AW" href="collapsible" data-value="Papiamento" lang="pap-AW"
                   >Papiamento</a
                 >
               </li>
@@ -402,20 +396,20 @@
 
   <div class="collapsing-element">
       <ul role="listbox">
-        <li>
-          <a hreflang="nl" href="#" role="option" data-value="Nederlands" lang="nl">Nederlands</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="nl" href="collapsible" data-value="Nederlands" lang="nl">Nederlands</a>
         </li>
-        <li>
-          <a hreflang="en" href="#" role="option" data-value="English" lang="en">English</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="en" href="collapsible" data-value="English" lang="en">English</a>
         </li>
-        <li>
-          <a hreflang="fy" href="#" role="option" data-value="Frysk" lang="fy">Frysk</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="fy" href="collapsible" data-value="Frysk" lang="fy">Frysk</a>
         </li>
-        <li aria-current="true">
-          <a hreflang="pap-CW" href="#" role="option" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
+        <li role="option" aria-selected="true" aria-current="true">
+          <a hreflang="pap-CW" href="collapsible" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
         </li>
-        <li>
-          <a hreflang="pap-AW" href="#" role="option" data-value="Papiamento" lang="pap-AW">Papiamento</a>
+        <li role="option" aria-selected="false">
+          <a hreflang="pap-AW" href="collapsible" data-value="Papiamento" lang="pap-AW">Papiamento</a>
         </li>
       </ul>
   </div>

@@ -9,6 +9,7 @@ body > header,
   > div {
     display: flex;
     flex-direction: var(--header-content-wrapper-flex-direction);
+    flex-wrap: var(--header-content-wrapper-flex-wrap);
     justify-content: var(--header-content-wrapper-justify-content);
     align-items: var(--header-content-wrapper-align-items);
     gap: var(--header-content-wrapper-gap);

@@ -54,7 +54,6 @@
               <label for="voorbeeld-1-date-1-start">van</label>
               <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" />
             </div>
-
             <div>
               <label for="voorbeeld-1-date-1-end">tot</label>
               <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" />
@@ -68,9 +67,16 @@
           language="html"
           code={`
 <form action="" method="post">
-  <label for="form-example-base">Voorbeeld text input</label>
-  <input id="form-example-base" name="form-example-base" placeholder="voorbeeld text input" type="text">
-
+  <div class="column-2">
+    <div>
+      <label for="voorbeeld-1-date-1-start">van</label>
+      <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" />
+    </div>
+    <div>
+      <label for="voorbeeld-1-date-1-end">tot</label>
+      <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" />
+    </div>
+  </div>
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -81,7 +87,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Benodigd</h3>
@@ -110,7 +118,7 @@
               <li><a href="{base}/components/layout-column-4">layout-column-4</a></li>
             </ul>
             Voor alle beschikbare opties zie
-            <a href="layouts#layout-types">layout weergave opties</a>.
+            <a href="{base}/components#layout">Layout</a>.
           </li>
         </ul>
       </section>

@@ -32,7 +32,7 @@
 
         <h3>Ingelogd als informatie</h3>
         <h4>Visueel voorbeeld:</h4>
-        <p class="login-meta">Ingelogd als: <a href="">Jane Doe</a></p>
+        <p class="login-meta">Ingelogd als: <a href="login-meta">Jane Doe</a></p>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -47,7 +47,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
 
         <h3>Benodigd</h3>
@@ -65,23 +65,23 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="{base}/variables#flex-direction">flex-direction</a>
+            <a href="{base}/documentation/variables#flex-direction">flex-direction</a>
           </li>
           <li>
-            <a href="{base}/variables#justify-content">justify-content</a>
+            <a href="{base}/documentation/variables#justify-content">justify-content</a>
           </li>
-          <li><a href="{base}/variables#align-items">align-items</a></li>
-          <li><a href="{base}/variables#padding-top">padding-top</a></li>
+          <li><a href="{base}/documentation/variables#align-items">align-items</a></li>
+          <li><a href="{base}/documentation/variables#padding-top">padding-top</a></li>
           <li>
-            <a href="{base}/variables#padding-right">padding-right</a>
+            <a href="{base}/documentation/variables#padding-right">padding-right</a>
           </li>
           <li>
-            <a href="{base}/variables#padding-bottom">padding-bottom</a>
+            <a href="{base}/documentation/variables#padding-bottom">padding-bottom</a>
           </li>
-          <li><a href="{base}/variables#padding-left">padding-left</a></li>
-          <li><a href="{base}/variables#gap">gap</a></li>
+          <li><a href="{base}/documentation/variables#padding-left">padding-left</a></li>
+          <li><a href="{base}/documentation/variables#gap">gap</a></li>
           <li>
-            <a href="{base}/variables#background-color">background-color</a>
+            <a href="{base}/documentation/variables#background-color">background-color</a>
           </li>
         </ul>
       </section>
