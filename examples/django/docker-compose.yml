@@ -1,0 +1,25 @@
+services:
+  django:
+    build:
+      context: django-project
+    ports:
+      - "${PORT:-8000}:8000"
+    environment:
+      - DJANGO_SUPERUSER_PASSWORD=admin
+    volumes:
+      - ./django-project:/app
+    depends_on:
+      - node
+
+  node:
+    image: node:22-alpine
+    working_dir: /app
+    command:
+      - /bin/sh
+      - -c
+      - |
+        npm install
+        npm run build
+        npm run watch
+    volumes:
+      - ./django-project:/app

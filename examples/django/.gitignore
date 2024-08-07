@@ -1,0 +1,6 @@
+static/
+*.log
+*.pot
+*.pyc
+*.sqlite3
+__pycache__/

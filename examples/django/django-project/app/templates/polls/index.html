@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Polls{% endblock title %}
+
+{% block main %}
+<main>
+  <section id="introduction" class="branding-color-accent-5">
+    <div>
+      <h1>Polls example app</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur tempus ex, quis aliquam nisi vestibulum id. Etiam pulvinar id diam ut egestas. Etiam tincidunt arcu sodales, cursus felis vel, vehicula nibh.</p>
+    </div>
+  </section>
+  <section>
+    <div>
+      <h2>Recent polls</h2>
+      {% if latest_question_list %}
+      <ul>
+        {% for question in latest_question_list %}
+        <li>
+          <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p>No polls are available.</p>
+      {% endif %}
+    </div>
+  </section>
+</main>
+{% endblock main %}

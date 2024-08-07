@@ -1,0 +1,14 @@
+{% block footer %}
+<footer>
+  <div class="two-thirds-one-third">
+    <span class="slogan">Django / Manon</span>
+    <nav aria-labelledby="footer-heading">
+      <h1 id="footer-heading">About this site</h1>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="{% url 'polls:index' %}">Polls</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+{% endblock footer %}

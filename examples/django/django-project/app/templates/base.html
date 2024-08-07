@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  {% load static %}
+  <head>
+    {% block head %}
+    <title>{% block title %}Django Manon Example{% endblock %}</title>
+    {% endblock head %}
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+  </head>
+
+  <body>
+    {% include "header.html" %}
+
+    {% block main %} {% endblock main %}
+
+    {% include "footer.html" %}
+  </body>
+</html>

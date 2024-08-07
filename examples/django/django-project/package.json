@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build": "npm run css:build && npm run img:build",
+    "watch": "concurrently \"npm run css:watch\"",
+    "css:build": "sass assets/scss/main.scss app/static/css/main.css --load-path=node_modules/",
+    "css:watch": "sass -w assets/scss/main.scss app/static/css/main.css --load-path=node_modules/",
+    "img:build": "mkdir -p app/static/img/ && cp -r assets/img/* app/static/img/"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "sass": "^1.75.0"
+  },
+  "dependencies": {
+    "@minvws/manon": "16.1.0",
+    "@minvws/manon-themes": "16.3.0-beta.2"
+  }
+}
