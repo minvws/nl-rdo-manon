@@ -35,13 +35,4 @@
   --filter-button-icon-font-family: var(--icon-font-family);
   --filter-button-icon-font-size: var(--icon-font-size);
   --filter-button-icon-font-weight: bold;
-
-  /* To center text within the button set the line-height to 1 */
-  --filter-button-icon-line-height: 1;
-
-  /* content on the button when the menu is collapsed */
-  --filter-button-icon-before-open-content: "⯆";
-
-  /* content on the button when the menu is expanded */
-  --filter-button-icon-before-close-content: "⯅";
 }
