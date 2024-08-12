@@ -58,10 +58,11 @@
         <h3>Basis</h3>
         <p class="explanation">
           <span>Toelichting:</span> In dit voorbeeld wordt er ook gebruik gemaakt van de
-          <dfn>helper-class</dfn> <a href="{base}/components/horizontal-scroll">horizontal-scroll</a> om te
-          voorkomen dat het voorbeeld-element de layout van de pagina breekt. Zonder deze toevoeging
-          zou de tekst het scherm uitlopen. De class <code>horizontal-scroll</code> voegt op de maximale
-          beschikbare breedte de scrollbalk toe.
+          <dfn>helper-class</dfn>
+          <a href="{base}/components/horizontal-scroll">horizontal-scroll</a>
+          om te voorkomen dat het voorbeeld-element de layout van de pagina breekt. Zonder deze
+          toevoeging zou de tekst het scherm uitlopen. De class <code>horizontal-scroll</code> voegt
+          op de maximale beschikbare breedte de scrollbalk toe.
         </p>
         <h4>Visueel voorbeeld:</h4>
         <p class="nowrap horizontal-scroll">
@@ -166,13 +167,19 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
-        <h3>Benodigd</h3>
-        <ul>
-          <li><code>nowrap.scss</code></li>
-        </ul>
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/nowrap";
+      `}
+        />
       </section>
 
       <section id="variables">

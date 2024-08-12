@@ -5,13 +5,22 @@
 <script>
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
+  import SideMenu from "$lib/SideMenu.svelte";
 </script>
 
 <svelte:head>
   <title>Layout form</title>
 </svelte:head>
 
-<main id="main-content" tabindex="-1">
+<main class="sidemenu" id="main-content" tabindex="-1">
+  <SideMenu>
+    <ul>
+      <li><a href="#introduction">Introductie</a></li>
+      <li><a href="#examples">Voorbeelden</a></li>
+      <li><a href="#requirements">Bijbehorende bestanden</a></li>
+    </ul>
+  </SideMenu>
+
   <article>
     <div>
       <section id="introduction">
@@ -109,7 +118,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Aandachtspunten:</h3>

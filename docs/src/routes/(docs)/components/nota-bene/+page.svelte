@@ -97,15 +97,14 @@
           >
         </p>
 
-        <h3>Benodigd</h3>
-        <ul>
-          <li><code>text/nota-bene.scss</code></li>
-        </ul>
-
-        <h3>Optioneel</h3>
-        <ul>
-          <li><code>text/nota-bene-variables.scss</code></li>
-        </ul>
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/nota-bene";
+      `}
+        />
       </section>
 
       <section id="variables">
