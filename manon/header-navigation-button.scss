@@ -15,16 +15,18 @@ body > header,
     input[type="reset"] {
       @include link.link("header-navigation-button-");
 
-      justify-content: var(--header-navigation-button-justify-content);
-      align-self: var(--header-navigation-button-align-self);
-      min-width: var(--header-navigation-button-min-width);
-      min-height: var(--header-navigation-button-min-height);
-      height: var(--header-navigation-button-height);
+      & {
+        justify-content: var(--header-navigation-button-justify-content);
+        align-self: var(--header-navigation-button-align-self);
+        min-width: var(--header-navigation-button-min-width);
+        min-height: var(--header-navigation-button-min-height);
+        height: var(--header-navigation-button-height);
 
-      padding-top: var(--header-navigation-button-padding-top);
-      padding-right: var(--header-navigation-button-padding-right);
-      padding-bottom: var(--header-navigation-button-padding-bottom);
-      padding-left: var(--header-navigation-button-padding-left);
+        padding-top: var(--header-navigation-button-padding-top);
+        padding-right: var(--header-navigation-button-padding-right);
+        padding-bottom: var(--header-navigation-button-padding-bottom);
+        padding-left: var(--header-navigation-button-padding-left);
+      }
     }
   }
 }

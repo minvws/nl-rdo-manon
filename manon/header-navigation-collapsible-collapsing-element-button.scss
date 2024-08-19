@@ -14,13 +14,14 @@
   input[type="reset"] {
     @include link.styling("#{$prefix}");
 
-    width: var(--#{$prefix}width);
-    text-align: var(--#{$prefix}text-align);
-
-    padding-top: var(--#{$prefix}padding-top);
-    padding-right: var(--#{$prefix}padding-right);
-    padding-bottom: var(--#{$prefix}padding-bottom);
-    padding-left: var(--#{$prefix}padding-left);
+    & {
+      width: var(--#{$prefix}width);
+      text-align: var(--#{$prefix}text-align);
+      padding-top: var(--#{$prefix}padding-top);
+      padding-right: var(--#{$prefix}padding-right);
+      padding-bottom: var(--#{$prefix}padding-bottom);
+      padding-left: var(--#{$prefix}padding-left);
+    }
   }
 }
 

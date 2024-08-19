@@ -21,11 +21,14 @@ input[type="reset"] {
 
     &::before {
       @include icon.icon;
-      font-family: var(--button-icon-only-font-family);
-      font-size: var(--button-icon-only-font-size);
-      padding-right: var(--button-icon-only-padding-right);
-      padding-left: var(--button-icon-only-padding-left);
-      color: var(--button-icon-only-text-color);
+
+      & {
+        font-family: var(--button-icon-only-font-family);
+        font-size: var(--button-icon-only-font-size);
+        padding-right: var(--button-icon-only-padding-right);
+        padding-left: var(--button-icon-only-padding-left);
+        color: var(--button-icon-only-text-color);
+      }
     }
   }
 }
