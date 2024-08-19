@@ -47,12 +47,15 @@ div {
   &.system {
     &::before {
       @include icon.icon;
-      font-family: var(--notification-icon-font-family);
-      font-size: var(--notification-icon-font-size);
-      padding-right: var(--notification-icon-padding-right);
-      padding-left: var(--notification-icon-padding-left);
-      color: var(--notification-icon-text-color);
-      margin-right: var(--notification-icon-margin-right);
+
+      & {
+        font-family: var(--notification-icon-font-family);
+        font-size: var(--notification-icon-font-size);
+        padding-right: var(--notification-icon-padding-right);
+        padding-left: var(--notification-icon-padding-left);
+        color: var(--notification-icon-text-color);
+        margin-right: var(--notification-icon-margin-right);
+      }
     }
   }
 }

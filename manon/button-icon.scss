@@ -20,11 +20,14 @@ input[type="reset"] {
 
     &::before {
       @include icon.icon;
-      font-family: var(--button-icon-font-family);
-      font-size: var(--button-icon-font-size);
-      padding-right: var(--button-icon-padding-right);
-      padding-left: var(--button-icon-padding-left);
-      color: var(--button-icon-text-color);
+
+      & {
+        font-family: var(--button-icon-font-family);
+        font-size: var(--button-icon-font-size);
+        padding-right: var(--button-icon-padding-right);
+        padding-left: var(--button-icon-padding-left);
+        color: var(--button-icon-text-color);
+      }
     }
   }
 }

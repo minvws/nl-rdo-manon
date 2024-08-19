@@ -70,8 +70,10 @@
       @include icon.icon-format("pagination-previous-");
       @include icon.icon-content("pagination-previous-");
 
-      margin-left: var(--pagination-previous-icon-margin-left);
-      margin-right: var(--pagination-previous-icon-margin-right);
+      & {
+        margin-left: var(--pagination-previous-icon-margin-left);
+        margin-right: var(--pagination-previous-icon-margin-right);
+      }
     }
   }
 
@@ -82,8 +84,10 @@
       @include icon.icon-format("pagination-next-");
       @include icon.icon-content("pagination-next-");
 
-      margin-left: var(--pagination-next-icon-margin-left);
-      margin-right: var(--pagination-next-icon-margin-right);
+      & {
+        margin-left: var(--pagination-next-icon-margin-left);
+        margin-right: var(--pagination-next-icon-margin-right);
+      }
     }
   }
 }

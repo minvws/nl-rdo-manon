@@ -3,26 +3,30 @@
 /*---------------------------------------------------------------------*/
 
 @mixin icon {
-  position: static;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0;
-  font-style: normal;
+  & {
+    position: static;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    font-style: normal;
+  }
 }
 
 @mixin icon-format($prefix) {
   @include icon;
 
-  font-family: var(--#{$prefix}icon-font-family);
-  font-size: var(--#{$prefix}icon-font-size);
-  line-height: var(--#{$prefix}icon-line-height);
-  text-decoration: var(--#{$prefix}icon-text-decoration);
-  padding-right: var(--#{$prefix}icon-padding-right);
-  padding-left: var(--#{$prefix}icon-padding-left);
-  background-color: var(--#{$prefix}icon-background-color);
-  color: var(--#{$prefix}icon-text-color);
+  & {
+    font-family: var(--#{$prefix}icon-font-family);
+    font-size: var(--#{$prefix}icon-font-size);
+    line-height: var(--#{$prefix}icon-line-height);
+    text-decoration: var(--#{$prefix}icon-text-decoration);
+    padding-right: var(--#{$prefix}icon-padding-right);
+    padding-left: var(--#{$prefix}icon-padding-left);
+    background-color: var(--#{$prefix}icon-background-color);
+    color: var(--#{$prefix}icon-text-color);
+  }
 }
 
 @mixin icon-format-variables($prefix, $parentPrefix, $state) {
@@ -40,7 +44,9 @@
 }
 
 @mixin icon-content($prefix) {
-  content: var(--#{$prefix}icon);
+  & {
+    content: var(--#{$prefix}icon);
+  }
 }
 
 @mixin define-icons($glyphs, $position: "before", $font-family: null) {

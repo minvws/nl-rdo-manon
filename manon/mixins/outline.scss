@@ -1,9 +1,11 @@
 @mixin outline($prefix) {
-  outline: var(--#{$prefix}outline);
-  outline-offset: var(--#{$prefix}outline-offset);
-  z-index: var(--#{$prefix}z-index, 1);
-  box-shadow: var(--#{$prefix}box-shadow);
-  border-radius: var(--#{$prefix}border-radius);
+  & {
+    outline: var(--#{$prefix}outline);
+    outline-offset: var(--#{$prefix}outline-offset);
+    z-index: var(--#{$prefix}z-index, 1);
+    box-shadow: var(--#{$prefix}box-shadow);
+    border-radius: var(--#{$prefix}border-radius);
+  }
 }
 
 @mixin outline-variables($prefix, $parentPrefix) {
