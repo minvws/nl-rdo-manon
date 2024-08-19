@@ -135,18 +135,26 @@
           >
         </p>
 
-        <h3>Benodigd</h3>
-        <ul>
-          <li><code>form/form-base.scss</code></li>
-          <li><code>form/form-horizontal-view.scss</code></li>
-        </ul>
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/form-base";
+@use "@minvws/manon/form-horizontal-view";
 
-        <h3>Optioneel</h3>
-        <ul>
-          <li><code>form/form-base-variables.scss</code></li>
-          <li><code>form/form-horizontal-view-variables.scss</code></li>
-          <li><code>form/form-horizontal-view-fieldset.scss</code></li>
-        </ul>
+/* Optional */
+@use "@minvws/manon/form-horizontal-view-fieldset";
+      `}
+        />
+
+        <h5>Optioneel:</h5>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/form-horizontal-view-fieldset";
+      `}
+        />
       </section>
 
       <section id="variables">

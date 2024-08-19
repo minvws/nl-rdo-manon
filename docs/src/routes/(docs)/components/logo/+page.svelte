@@ -5,13 +5,22 @@
 <script>
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
+  import SideMenu from "$lib/SideMenu.svelte";
 </script>
 
 <svelte:head>
   <title>Logo</title>
 </svelte:head>
 
-<main id="main-content" tabindex="-1">
+<main class="sidemenu" id="main-content" tabindex="-1">
+  <SideMenu>
+    <ul>
+      <li><a href="#introduction">Introductie</a></li>
+      <li><a href="#examples">Voorbeelden</a></li>
+      <li><a href="#requirements">Bijbehorende bestanden</a></li>
+    </ul>
+  </SideMenu>
+
   <article>
     <div>
       <section id="introduction">
@@ -44,11 +53,22 @@
       </section>
 
       <section id="requirements">
-        <h2>Benodigde bestanden</h2>
-        <ul>
-          <li><code>logo/logo-base.scss</code></li>
-          <li><code>logo/logo-base-variables.scss</code></li>
-        </ul>
+        <h2>Bijbehorende bestanden</h2>
+        <p>
+          Voor meer informatie over importeren en instellen van componenten. Zie:
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
+        </p>
+
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/logo";
+      `}
+        />
       </section>
 
       <section id="variables">

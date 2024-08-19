@@ -269,12 +269,23 @@
             </section>
 
             <section id="requirements">
-              <h2>Benodigdheden</h2>
-              <ul>
-                <li><code>table/table-expando-rows.scss</code></li>
-                <li><code>table/table-expando-rows-variables.scss</code></li>
-                <li><code>expando-rows.js</code></li>
-              </ul>
+              <h2>Bijbehorende bestanden</h2>
+              <p>
+                Voor meer informatie over importeren en instellen van componenten. Zie:
+                <a href="{base}/documentation/import-styling"
+                  >Componenten gebruiken en styling toevoegen</a
+                >
+              </p>
+
+              <h3>Importeer component via NPM</h3>
+              <h4>CSS-voorbeeld:</h4>
+              <Code
+                language="css"
+                code={`
+@use "@minvws/manon/table";
+@use "@minvws/manon/table-expando-rows";
+      `}
+              />
             </section>
 
             <section id="variables">
@@ -295,7 +306,11 @@
                   <tbody>
                     <tr>
                       <td>--expando-rows-table-cell-background-color</td>
-                      <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                      <td
+                        ><a href="{base}/documentation/variables#background-color"
+                          >background-color</a
+                        ></td
+                      >
                       <td>#e5e5e5</td>
                       <td>Openklapbare cel - td</td>
                       <td>CSS</td>
@@ -324,14 +339,22 @@
                     </tr>
                     <tr>
                       <td>--expando-rows-row-background-color</td>
-                      <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                      <td
+                        ><a href="{base}/documentation/variables#background-color"
+                          >background-color</a
+                        ></td
+                      >
                       <td>transparent</td>
                       <td>De openklapbare rij</td>
                       <td>CSS</td>
                     </tr>
                     <tr>
                       <td>--expando-rows-row-striping-background-color</td>
-                      <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                      <td
+                        ><a href="{base}/documentation/variables#background-color"
+                          >background-color</a
+                        ></td
+                      >
                       <td>var(--table-row-background-color-striping, initial)</td>
                       <td>De openklapbare rij</td>
                       <td>CSS</td>

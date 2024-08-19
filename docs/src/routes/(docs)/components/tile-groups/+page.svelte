@@ -99,19 +99,20 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
-        <h3>Benodigd</h3>
-        <ul>
-          <li><code>tile/tile.scss</code></li>
-          <li><code>tile/tile-groups.scss</code></li>
-        </ul>
 
-        <h3>Optioneel</h3>
-        <ul>
-          <li><code>tile/tile-variables.scss</code></li>
-          <li><code>tile/tile-groups-variables.scss</code></li>
-        </ul>
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/tile";
+@use "@minvws/manon/tile-groups";
+      `}
+        />
       </section>
 
       <section id="related">

@@ -150,17 +150,16 @@
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>
-        <h3>Benodigd</h3>
-        <ul>
-          <li><code>form/form-base.scss</code></li>
-          <li><code>form/form-input.scss</code></li>
-        </ul>
 
-        <h3>Optioneel</h3>
-        <ul>
-          <li><code>form/form-base-variables.scss</code></li>
-          <li><code>form/form-input-variables.scss</code></li>
-        </ul>
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/form-base";
+@use "@minvws/manon/form-input";
+      `}
+        />
       </section>
 
       <section id="variables">

@@ -207,7 +207,11 @@
 
         <h4 id="warning-th">Waarschuwing op tabeltitel</h4>
 
-        <p class="warning"><span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven hoe een tabeltitel als waarschuwing opgemaakt kan worden. Deze instructies zijn weggehaald, omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.</p>
+        <p class="warning">
+          <span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven
+          hoe een tabeltitel als waarschuwing opgemaakt kan worden. Deze instructies zijn
+          weggehaald, omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.
+        </p>
 
         <h4 id="warning-td">Waarschuwing op Tabelcel</h4>
 
@@ -644,21 +648,16 @@
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>
-        <h3>Benodigd</h3>
-        <ul>
-          <li><code>notification/notification.scss</code></li>
-          <li><code>notification/notification-warning.scss</code></li>
-        </ul>
 
-        <h3>Optioneel</h3>
-        <ul>
-          <li>
-            <code>notification/notification-variables.scss</code>
-          </li>
-          <li>
-            <code>notification/notification-warning-variables.scss</code>
-          </li>
-        </ul>
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/notification";
+@use "@minvws/manon/notification-warning";
+      `}
+        />
       </section>
     </div>
   </article>
