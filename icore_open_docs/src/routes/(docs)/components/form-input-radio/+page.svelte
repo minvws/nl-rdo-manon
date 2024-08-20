@@ -152,7 +152,8 @@
         <Code
           language="css"
           code={`
-@use "@minvws/form-radio";
+@use "@minvws/manon/radio";
+@use "@minvws/manon/form-radio";
 `}
         />
       </section>

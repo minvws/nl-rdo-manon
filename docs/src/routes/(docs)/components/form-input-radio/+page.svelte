@@ -131,7 +131,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Aandachtspunten:</h3>
@@ -150,7 +152,8 @@
         <Code
           language="css"
           code={`
-@use "@minvws/form-radio";
+@use "@minvws/manon/radio";
+@use "@minvws/manon/form-radio";
 `}
         />
       </section>
