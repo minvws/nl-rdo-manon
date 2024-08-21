@@ -271,6 +271,7 @@
           language="css"
           code={`
 @use "@minvws/manon/checkbox";
+@use "@minvws/manon/form-checkbox";
 `}
         />
       </section>
