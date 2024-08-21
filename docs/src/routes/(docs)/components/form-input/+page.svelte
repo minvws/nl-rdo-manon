@@ -53,11 +53,7 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <label for="example-input-base">Voorbeeld invoerveld</label>
-          <input
-            id="example-input-base"
-            name="example-input-base"
-            type="text"
-          />
+          <input id="example-input-base" name="example-input-base" type="text" />
           <button type="submit">Verzend</button>
         </form>
 
@@ -98,12 +94,7 @@
         <form action="" method="post">
           <label for="example-input-required">Gebruikersnaam</label>
           <span class="nota-bene">Dit veld is verplicht</span>
-          <input
-            id="example-input-required"
-            name="example-input-required"
-            type="text"
-            required
-          />
+          <input id="example-input-required" name="example-input-required" type="text" required />
           <button type="submit">Verzend</button>
         </form>
 
@@ -136,12 +127,7 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <label for="example-input-disabled">Gebruikersnaam</label>
-          <input
-            id="example-input-disabled"
-            name="example-input-disabled"
-            type="text"
-            disabled
-          />
+          <input id="example-input-disabled" name="example-input-disabled" type="text" disabled />
           <button type="submit">Verzend</button>
         </form>
 
@@ -167,19 +153,20 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
-        <h2>Benodigd</h2>
-        <ul>
-          <li><code>form/form-base.scss</code></li>
-          <li><code>form/form-input.scss</code></li>
-        </ul>
 
-        <h2>Optioneel</h2>
-        <ul>
-          <li><code>form/form-base-variables.scss</code></li>
-          <li><code>form/form-input-variables.scss</code></li>
-        </ul>
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/form-base";
+@use "@minvws/manon/form-input";
+      `}
+        />
       </section>
 
       <section id="variables">

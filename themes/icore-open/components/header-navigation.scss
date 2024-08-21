@@ -1,0 +1,37 @@
+/* Header navigation */
+@use "../color-scheme";
+
+:root {
+  --header-navigation-padding-top: 0;
+  --header-navigation-padding-right: var(--page-whitespace-right);
+  --header-navigation-padding-bottom: 0;
+  --header-navigation-padding-left: var(--page-whitespace-left);
+  --header-navigation-min-height: 5rem;
+  --header-navigation-position: static;
+
+  /* Header navigation */
+  --header-navigation-background-color: #{color-scheme.$oc-gray-9};
+  --header-navigation-text-color: #{color-scheme.$oc-white};
+  --header-navigation-font-weight: bold;
+  --header-navigation-max-width: 100%;
+  --header-navigation-align-items: stretch;
+  --header-navigation-justify-content: space-between;
+
+  /* List */
+  --header-navigation-list-gap: 0;
+
+  /* Link*/
+  --header-navigation-link-background-color: transparent;
+  --header-navigation-link-padding-right: 1rem;
+  --header-navigation-link-padding-left: 1rem;
+  --header-navigation-link-font-weight: bold;
+  --header-navigation-link-text-color: #{color-scheme.$oc-white};
+  --header-navigation-link-text-decoration: none;
+
+  /* List */
+  --header-navigation-list-align-content: stretch;
+  --header-navigation-list-width: auto;
+
+  /* Collapsed icon */
+  --navigation-collapsible-menu-icon-font-size: 2rem;
+}

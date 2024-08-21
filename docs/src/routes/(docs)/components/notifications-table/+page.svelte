@@ -4,6 +4,7 @@
 
 <script>
   import { base } from "$app/paths";
+  import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
 
@@ -123,6 +124,26 @@
             </tfoot>
           </table>
         </div>
+      </section>
+
+      <section id="requirements">
+        <h2>Bijbehorende bestanden</h2>
+        <p>
+          Voor meer informatie over importeren en instellen van componenten. Zie:
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
+        </p>
+
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/notification";
+@use "@minvws/manon/notification-table";
+      `}
+        />
       </section>
     </div>
   </article>

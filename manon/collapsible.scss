@@ -118,12 +118,15 @@
 
           &::before {
             @include icon.icon;
-            content: var(--collapsing-element-list-icon);
-            font-family: var(--collapsing-element-list-icon-font-family);
-            margin-left: var(--collapsing-element-list-icon-margin-left);
-            font-size: var(--collapsing-element-list-icon-font-size);
-            color: var(--collapsing-element-list-icon-text-color);
-            margin-right: var(--collapsing-element-list-icon-margin-right);
+
+            & {
+              content: var(--collapsing-element-list-icon);
+              font-family: var(--collapsing-element-list-icon-font-family);
+              margin-left: var(--collapsing-element-list-icon-margin-left);
+              font-size: var(--collapsing-element-list-icon-font-size);
+              color: var(--collapsing-element-list-icon-text-color);
+              margin-right: var(--collapsing-element-list-icon-margin-right);
+            }
           }
 
           &[aria-selected="true"],
@@ -140,18 +143,23 @@
 
             &::before {
               @include icon.icon;
-              content: var(--collapsing-element-list-selected-icon);
-              font-family: var(
-                --collapsing-element-list-selected-icon-font-family
-              );
-              margin-left: var(
-                --collapsing-element-list-selected-icon-margin-left
-              );
-              font-size: var(--collapsing-element-list-selected-icon-font-size);
-              color: var(--collapsing-element-list-selected-icon-text-color);
-              margin-right: var(
-                --collapsing-element-list-selected-icon-margin-right
-              );
+
+              & {
+                content: var(--collapsing-element-list-selected-icon);
+                font-family: var(
+                  --collapsing-element-list-selected-icon-font-family
+                );
+                margin-left: var(
+                  --collapsing-element-list-selected-icon-margin-left
+                );
+                font-size: var(
+                  --collapsing-element-list-selected-icon-font-size
+                );
+                color: var(--collapsing-element-list-selected-icon-text-color);
+                margin-right: var(
+                  --collapsing-element-list-selected-icon-margin-right
+                );
+              }
             }
 
             &:hover {

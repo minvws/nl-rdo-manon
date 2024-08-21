@@ -5,16 +5,25 @@
 <script>
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
+  import SideMenu from "$lib/SideMenu.svelte";
 </script>
 
 <svelte:head>
   <title>Icoon-afbeelding</title>
 </svelte:head>
 
-<main id="main-content" tabindex="-1">
+<main class="sidemenu" id="main-content" tabindex="-1">
+  <SideMenu>
+    <ul>
+      <li><a href="#introduction">Introductie</a></li>
+      <li><a href="#examples">Voorbeelden</a></li>
+      <li><a href="#requirements">Bijbehorende bestanden</a></li>
+      <li><a href="#related">Gerelateerde pagina's</a></li>
+    </ul>
+  </SideMenu>
   <article>
     <div>
-      <section>
+      <section id="introduction">
         <h1>Icoon-afbeelding</h1>
         <p>
           Het <a href="{base}/components/icons">Icoon-component</a> kan gebruikt wordt met unicode-codes
@@ -32,7 +41,9 @@
           Voeg hiervoor de class <code>icon</code> toe aan het <code>{`<img>`}</code> element om gebruik
           te maken van de visuele weergave van een icoon.
         </p>
+      </section>
 
+      <section id="examples">
         <h2>Voorbeeld</h2>
 
         <h3>Visueel voorbeeld:</h3>
@@ -44,6 +55,25 @@
           code={`
 <img src="cat.svg" class="icon" alt="Kat" />
 `}
+        />
+      </section>
+
+      <section id="requirements">
+        <h2>Bijbehorende bestanden</h2>
+        <p>
+          Voor meer informatie over importeren en instellen van componenten. Zie:
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
+        </p>
+
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/icon";
+      `}
         />
       </section>
 

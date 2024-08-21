@@ -1,0 +1,40 @@
+/* Icons */
+
+@use "../fonts/tabler-icons/glyphs";
+@use "@minvws/manon/mixins/icon";
+
+$glyphs: (
+  "ascending": glyphs.$ti-icon-caret-up-filled,
+  "check": glyphs.$ti-icon-check,
+  "chevron-down": glyphs.$ti-icon-chevron-down,
+  "chevron-left": glyphs.$ti-icon-chevron-left,
+  "chevron-light-down": glyphs.$ti-icon-chevron-compact-down,
+  "chevron-light-left": glyphs.$ti-icon-chevron-compact-left,
+  "chevron-light-right": glyphs.$ti-icon-chevron-compact-right,
+  "chevron-light-up": glyphs.$ti-icon-chevron-compact-up,
+  "chevron-right": glyphs.$ti-icon-chevron-right,
+  "chevron-up": glyphs.$ti-icon-chevron-up,
+  "close": glyphs.$ti-icon-x,
+  "descending": glyphs.$ti-icon-caret-down-filled,
+  "download": glyphs.$ti-icon-download,
+  "hamburger": glyphs.$ti-icon-menu-2,
+  "heart": glyphs.$ti-icon-heart,
+  "home": glyphs.$ti-icon-home,
+  "lock-closed": glyphs.$ti-icon-lock,
+  "on-off": glyphs.$ti-icon-power,
+  "outgoing": glyphs.$ti-icon-arrow-up-right,
+  "questionmark": glyphs.$ti-icon-question-mark,
+  "reset": glyphs.$ti-icon-refresh,
+  "search": glyphs.$ti-icon-search,
+  "smartphone": glyphs.$ti-icon-device-mobile,
+  "sort": glyphs.$ti-icon-caret-up-down-filled,
+  "to-top": glyphs.$ti-icon-arrow-bar-to-up,
+  "trash": glyphs.$ti-icon-trash,
+  "user": glyphs.$ti-icon-user,
+);
+
+:root {
+  --icon-font-family: "tabler-icons";
+}
+
+@include icon.define-icons($glyphs);

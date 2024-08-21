@@ -113,13 +113,16 @@ main.sidemenu {
 
         &::before {
           @include icon.icon;
-          content: var(--sidemenu-expanded-button-icon);
-          font-family: var(--sidemenu-button-icon-font-family);
-          font-size: var(--sidemenu-button-icon-font-size);
 
-          /* Styling options for text input instead of icons */
-          font-weight: var(--sidemenu-button-icon-font-weight);
-          white-space: var(--sidemenu-button-icon-white-space);
+          & {
+            content: var(--sidemenu-expanded-button-icon);
+            font-family: var(--sidemenu-button-icon-font-family);
+            font-size: var(--sidemenu-button-icon-font-size);
+
+            /* Styling options for text input instead of icons */
+            font-weight: var(--sidemenu-button-icon-font-weight);
+            white-space: var(--sidemenu-button-icon-white-space);
+          }
         }
 
         &[aria-expanded="false"] {

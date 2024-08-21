@@ -79,7 +79,9 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling"
+              >Componenten gebruiken en styling toevoegen</a
+            >
           </li>
           <li>
             Voeg de benodigde HTML toe. Zie het voorbeeld per element voor de implementatiedetails.
@@ -205,7 +207,11 @@
 
         <h4 id="explanation-th">Toelichting op tabeltitel</h4>
 
-        <p class="warning"><span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven hoe een tabeltitel als toelichting opgemaakt kan worden. Deze instructies zijn weggehaald, omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.</p>
+        <p class="warning">
+          <span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven
+          hoe een tabeltitel als toelichting opgemaakt kan worden. Deze instructies zijn weggehaald,
+          omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.
+        </p>
 
         <h4 id="explanation-td">Toelichting op Tabelcel</h4>
 
@@ -633,23 +639,20 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
-        <h3>Benodigd</h3>
-        <ul>
-          <li><code>notification/notification.scss</code></li>
-          <li><code>notification/notification-explanation.scss</code></li>
-        </ul>
 
-        <h3>Optioneel</h3>
-        <ul>
-          <li>
-            <code>notification/notification-variables.scss</code>
-          </li>
-          <li>
-            <code>notification/notification-explanation-variables.scss</code>
-          </li>
-        </ul>
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/notification";
+@use "@minvws/manon/notification-explanation";
+      `}
+        />
       </section>
     </div>
   </article>

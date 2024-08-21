@@ -156,17 +156,19 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
-        <h4>Benodigd</h4>
-        <ul>
-          <li><code>form/form-accent-color.scss</code></li>
-        </ul>
 
-        <h4>Optioneel</h4>
-        <ul>
-          <li><code>form/form-accent-color-variables.scss</code></li>
-        </ul>
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/form-accent-color";
+      `}
+        />
       </section>
 
       <section id="variables">

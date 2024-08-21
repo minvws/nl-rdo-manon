@@ -37,7 +37,9 @@
             optionele bestanden zie:
             <a href="#requirements">Benodigdheden</a>. Voor meer informatie over importeren en
             instellen van componenten. Zie:
-            <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling"
+              >Componenten gebruiken en styling toevoegen</a
+            >
           </li>
           <li>
             Voeg de class <code>summary</code> toe aan de <code>&lt;table&gt;</code> om gebruik te maken
@@ -206,11 +208,22 @@
       </section>
 
       <section id="requirements">
-        <h2>Benodigdheden</h2>
-        <ul>
-          <li><code>table/table-base.scss</code></li>
-          <li><code>table/table-base-variables.scss</code></li>
-        </ul>
+        <h2>Bijbehorende bestanden</h2>
+        <p>
+          Voor meer informatie over importeren en instellen van componenten. Zie:
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
+        </p>
+
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/table";
+      `}
+        />
       </section>
 
       <section id="variables">

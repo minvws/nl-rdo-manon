@@ -1,0 +1,25 @@
+/* Theme shadow */
+
+:root {
+  --shadow-s: box-shadow: 0px 2px 4px 0px rgba(17, 20, 22, 0.75);
+  --shadow-m: box-shadow: 0px 8px 16px 0px rgba(17, 20, 22, 0.15);
+  --shadow-l: box-shadow: 0px 16px 48px 0px rgba(17, 20, 22, 0.17);
+}
+
+.shadow-s {
+  box-shadow: var(--shadow-s);
+  -webkit-box-shadow: var(--shadow-s);
+  -moz-box-shadow: var(--shadow-s);
+}
+
+.shadow-m {
+  box-shadow: var(--shadow-m);
+  -webkit-box-shadow: var(--shadow-m);
+  -moz-box-shadow: var(--shadow-m);
+}
+
+.shadow-l {
+  box-shadow: var(--shadow-l);
+  -webkit-box-shadow: var(--shadow-l);
+  -moz-box-shadow: var(--shadow-l);
+}

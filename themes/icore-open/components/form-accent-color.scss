@@ -1,0 +1,7 @@
+/* Form accent color */
+
+@use "../color-scheme";
+
+:root {
+  --form-accent-color-color: #{color-scheme.$oc-blue-8};
+}

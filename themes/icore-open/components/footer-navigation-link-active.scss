@@ -1,0 +1,7 @@
+/* Footer navigation link active */
+
+@use "../color-scheme";
+
+:root {
+  --footer-navigation-link-active-text-color: #{color-scheme.$oc-blue-9};
+}

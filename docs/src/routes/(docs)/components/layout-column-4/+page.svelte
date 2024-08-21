@@ -5,33 +5,28 @@
 <script>
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
+  import SideMenu from "$lib/SideMenu.svelte";
 </script>
 
 <svelte:head>
   <title>Layout vier kolommen</title>
 </svelte:head>
 
-<main id="main-content" tabindex="-1">
+<main class="sidemenu" id="main-content" tabindex="-1">
+  <SideMenu>
+    <ul>
+      <li><a href="#introduction">Introductie</a></li>
+      <li><a href="#examples">Voorbeelden</a></li>
+      <li><a href="#requirements">Bijbehorende bestanden</a></li>
+      <li><a href="#related">Gerelateerde pagina's</a></li>
+    </ul>
+  </SideMenu>
+
   <article>
     <div>
       <section id="introduction">
         <h1>Layout vier kolommen</h1>
         <p>Verdeling in drie gelijke kolommen vanaf de ingestelde breekpunten.</p>
-      </section>
-
-      <section id="requirements">
-        <h2>Benodigde bestanden</h2>
-        <p>
-          Om gebruik te maken van de styling dienen de onderstaande bestanden ingeladen te zijn via
-          het
-          <code>manon.scss</code> bestand.
-        </p>
-        <ul>
-          <li><code>layout/layout-base.scss</code></li>
-          <li><code>layout/layout-base-variables.scss</code></li>
-          <li><code>layout/layout-column-4.scss</code></li>
-          <li><code>layout/layout-column-4-variables.scss</code></li>
-        </ul>
       </section>
 
       <section id="examples">
@@ -147,6 +142,26 @@
   </div>
 </article>
 `}
+        />
+      </section>
+
+      <section id="requirements">
+        <h2>Bijbehorende bestanden</h2>
+        <p>
+          Voor meer informatie over importeren en instellen van componenten. Zie:
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
+        </p>
+
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/layout-base";
+@use "@minvws/manon/layout-column-4";
+      `}
         />
       </section>
 

@@ -207,6 +207,25 @@
       </section>
 
       <section id="requirements">
+        <h2>Bijbehorende bestanden</h2>
+        <p>
+          Voor meer informatie over importeren en instellen van componenten. Zie:
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
+        </p>
+
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/table";
+      `}
+        />
+      </section>
+
+      <section id="variables">
         <h2>Instelbare variabelen</h2>
         <div class="horizontal-scroll">
           <table class="nowrap">
@@ -252,7 +271,10 @@
 
               <tr>
                 <td>--table-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>transparent</td>
                 <td>-</td>
               </tr>
@@ -295,7 +317,10 @@
               <tr>
                 <th rowspan="6" scope="rowgroup">thead</th>
                 <td>--table-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--application-accent-color)</td>
                 <td>-</td>
               </tr>
@@ -395,7 +420,10 @@
 
               <tr>
                 <td>--table-body-head-cell-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--table-background-color)</td>
                 <td>-</td>
               </tr>
@@ -438,7 +466,10 @@
               <tr>
                 <th rowspan="4" scope="rowgroup">Table row - Zebra striping</th>
                 <td>--table-row-background-color-striping</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>rgba(148, 148, 148, 0.1)</td>
                 <td>-</td>
               </tr>
@@ -474,7 +505,10 @@
 
               <tr>
                 <td>--table-cell-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>transparent</td>
                 <td>-</td>
               </tr>
@@ -554,7 +588,10 @@
               <tr>
                 <th rowspan="8" scope="rowgroup">Table footer</th>
                 <td>--table-foot-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>#ddd</td>
                 <td>-</td>
               </tr>
@@ -611,7 +648,10 @@
               <tr>
                 <th rowspan="8" scope="rowgroup">Table footer head</th>
                 <td>--table-foot-header-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>transparent</td>
                 <td>-</td>
               </tr>
@@ -668,7 +708,10 @@
               <tr>
                 <th rowspan="8" scope="rowgroup">Table footer cell styling</th>
                 <td>--table-foot-cell-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>#f0f0f0</td>
                 <td>-</td>
               </tr>

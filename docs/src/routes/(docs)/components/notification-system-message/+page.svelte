@@ -207,7 +207,11 @@
 
         <h4 id="system-th">Systeembericht op tabeltitel</h4>
 
-        <p class="warning"><span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven hoe een tabeltitel als systeembericht opgemaakt kan worden. Deze instructies zijn weggehaald, omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.</p>
+        <p class="warning">
+          <span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven
+          hoe een tabeltitel als systeembericht opgemaakt kan worden. Deze instructies zijn
+          weggehaald, omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.
+        </p>
 
         <h4 id="system-td">Systeembericht op Tabelcel</h4>
 
@@ -636,23 +640,16 @@
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>
-        <h3>Benodigd</h3>
-        <ul>
-          <li><code>notification/notification.scss</code></li>
-          <li>
-            <code>notification/notification-system-message.scss</code>
-          </li>
-        </ul>
 
-        <h3>Optioneel</h3>
-        <ul>
-          <li>
-            <code>notification/notification-variables.scss</code>
-          </li>
-          <li>
-            <code>notification/notification-system-message-variables.scss</code>
-          </li>
-        </ul>
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/notification";
+@use "@minvws/manon/notification-system-message";
+      `}
+        />
       </section>
     </div>
   </article>

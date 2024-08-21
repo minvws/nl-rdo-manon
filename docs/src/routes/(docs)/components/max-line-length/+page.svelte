@@ -57,21 +57,27 @@
         <p>
           Er is geen aangepaste HTML nodig om gebruik te maken van dit component zodra de styling is
           toegevoegd aan het project. De styling heeft invloed op de volgende elementen:
+          <code>p</code> <code>a</code> <code>span</code> <code>li</code>
         </p>
-        <ul>
-          <li>
-            <code>{`<p></p>`}</code>
-          </li>
-          <li>
-            <code>{`<a></a>`}</code>
-          </li>
-          <li>
-            <code>{`<span></span>`}</code>
-          </li>
-          <li>
-            <code>{`<li></li>`}</code>
-          </li>
-        </ul>
+      </section>
+
+      <section id="requirements">
+        <h2>Bijbehorende bestanden</h2>
+        <p>
+          Voor meer informatie over importeren en instellen van componenten. Zie:
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
+        </p>
+
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/max-line-length";
+      `}
+        />
       </section>
 
       <section id="variables">
@@ -118,7 +124,9 @@
                 <th rowspan="2" scope="rowgroup">word-break</th>
                 <td>Voor breekpunt</td>
                 <td>--max-line-length-word-break</td>
-                <td rowspan="2"><a href="{base}/documentation/variables#word-break">word-break</a></td>
+                <td rowspan="2"
+                  ><a href="{base}/documentation/variables#word-break">word-break</a></td
+                >
                 <td rowspan="2">-</td>
                 <td>normal</td>
               </tr>
@@ -149,24 +157,6 @@
             </tbody>
           </table>
         </div>
-      </section>
-
-      <section id="requirements">
-        <h2>Bijbehorende bestanden</h2>
-        <p>Voeg de (s)css-bestanden toe aan het project of importeer de bestanden.</p>
-        <p>
-          Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
-        </p>
-        <h3>Benodigd</h3>
-        <ul>
-          <li><code>max-line-length</code></li>
-        </ul>
-
-        <h3>Optioneel</h3>
-        <ul>
-          <li><code>max-line-length-variables</code></li>
-        </ul>
       </section>
     </div>
   </article>

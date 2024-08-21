@@ -83,18 +83,20 @@
       <section id="requirements">
         <h2>Bijbehorende bestanden</h2>
         <p>
-          Voor meer informatie over het importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          Voor meer informatie over importeren en instellen van componenten. Zie:
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
-        <h3>Benodigd</h3>
-        <ul>
-          <li><code>button/button-cta.scss</code></li>
-        </ul>
 
-        <h3>Optioneel</h3>
-        <ul>
-          <li><code>button/button-cta-variables-variables.scss</code></li>
-        </ul>
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+      @use "@minvws/manon/button-cta";
+      `}
+        />
       </section>
 
       <section id="related">

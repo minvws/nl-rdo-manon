@@ -96,36 +96,20 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
-        <h3>Benodigd</h3>
-        <ul>
-          <li><code>notification/notification.scss</code></li>
-          <li><code>notification/notification-paragraph.scss</code></li>
-          <li>
-            Bestanden behorend bij de gewenste notificatie type(s). Voor de beschikbare types zie:
-            <a href="notifications#notification-types">Beschikbare weergaven</a>
-          </li>
-        </ul>
 
-        <h3>Optioneel</h3>
-        <ul>
-          <li>
-            <code>notification/notification-variables.scss</code>
-          </li>
-          <li>
-            <code>notification/notification-paragraph-variables.scss</code>
-          </li>
-          <li><code>text/link-base.scss</code></li>
-          <li><code>text/link-base-variables.scss</code></li>
-          <li><code>icon/icon-base.scss</code></li>
-          <li><code>icon/icon-base-variables.scss</code></li>
-          <li>
-            Variabelenbestanden behorend bij de gewenste notificatie type(s). Voor de beschikbare
-            types zie:
-            <a href="notifications#notification-types">Beschikbare weergaven</a>
-          </li>
-        </ul>
+        <h3>Importeer component via NPM</h3>
+        <h4>CSS-voorbeeld:</h4>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/notification";
+@use "@minvws/manon/notification-paragraph";
+      `}
+        />
       </section>
 
       <section id="variables">
