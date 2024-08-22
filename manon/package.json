@@ -11,13 +11,17 @@
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "lint:css": "stylelint \"**/*.scss\"",
+    "lint:css:fix": "npm run lint:css -- --fix",
     "npm-version": "npm version"
   },
   "peerDepencency": {
     "sass": ">=1.77.6"
   },
   "devDependencies": {
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "stylelint": "^16.8.2",
+    "stylelint-config-standard-scss": "^13.1.0"
   },
   "repository": {
     "type": "git",
