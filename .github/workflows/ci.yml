@@ -6,6 +6,14 @@ on:
     branches: [main]
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - name: Lint SCSS
+        run: pnpm run lint
+
   check-formatting:
     runs-on: ubuntu-latest
     steps:
@@ -19,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-      - name: Check docs markup and types
+      - name: Check formatting
         run: pnpm run --dir docs check
 
   build-docs:
