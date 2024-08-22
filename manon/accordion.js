@@ -45,7 +45,7 @@ function initAccordion(accordion) {
     }
 
     // Set up the initial `aria-expanded` state.
-    if (button.getAttribute("aria-expanded") === "true") {
+    if (button.hasAttribute("aria-expanded")) {
       hasAriaExpandedMarkup = true;
     } else {
       button.setAttribute("aria-expanded", "false");

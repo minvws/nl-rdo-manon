@@ -139,7 +139,7 @@
           </div>
         </div>
 
-        <h3>HTML-voorbeeld:</h3>
+        <h4>HTML-voorbeeld:</h4>
         <Code
           language="html"
           code={`
@@ -229,7 +229,7 @@
           </div>
         </section>
 
-        <h3>HTML-voorbeeld:</h3>
+        <h4>HTML-voorbeeld:</h4>
         <Code
           language="html"
           code={`
@@ -275,6 +275,90 @@
 </section>
 `}
         />
+
+        <h3>Expliciete <code>aria-expanded="true"</code> (ander onderdeel standaard opengeklapt)</h3>
+        <ul class="accordion">
+          <li>
+            <button id="example-3-item-1">Voorbeeld-onderwerp 1</button>
+            <div aria-labelledby="example-3-item-1">
+              <h1>Titel van de content binnen het accordeon-element</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
+                leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam
+                ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat
+                volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu.
+                Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean
+                quis libero gravida, fringilla odio venenatis, condimentum lorem.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Dolor sit amet</li>
+                <li>Consectetur adepiscing elit.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button aria-expanded="true" id="example-3-item-2">Voorbeeld-onderwerp 2</button>
+            <div aria-labelledby="example-3-item-2">
+              <h1>Titel van de content binnen het accordeon-element</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
+                leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam
+                ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat
+                volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu.
+                Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean
+                quis libero gravida, fringilla odio venenatis, condimentum lorem.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Dolor sit amet</li>
+                <li>Consectetur adepiscing elit.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <h3>Expliciete <code>aria-expanded="false"</code> (eerste onderdeel dichtgeklapt)</h3>
+        <ul class="accordion">
+          <li>
+            <button aria-expanded="false" id="example-3-item-1">Voorbeeld-onderwerp 1</button>
+            <div aria-labelledby="example-3-item-1">
+              <h1>Titel van de content binnen het accordeon-element</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
+                leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam
+                ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat
+                volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu.
+                Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean
+                quis libero gravida, fringilla odio venenatis, condimentum lorem.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Dolor sit amet</li>
+                <li>Consectetur adepiscing elit.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button id="example-3-item-2">Voorbeeld-onderwerp 2</button>
+            <div aria-labelledby="example-3-item-2">
+              <h1>Titel van de content binnen het accordeon-element</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
+                leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam
+                ac. Fusce sed justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat
+                volutpat. Aenean risus sem, tempor at rhoncus in, suscipit hendrerit arcu.
+                Suspendisse ultricies semper sapien eget lobortis. Phasellus ut sodales sem. Aenean
+                quis libero gravida, fringilla odio venenatis, condimentum lorem.
+              </p>
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Dolor sit amet</li>
+                <li>Consectetur adepiscing elit.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </section>
     </div>
   </article>
