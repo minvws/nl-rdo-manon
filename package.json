@@ -9,5 +9,12 @@
     "build": "pnpm run --dir docs build",
     "lint": "pnpm run --dir manon lint:css",
     "format:check": "pnpm run --dir manon format:check"
+  },
+  "pnpm": {
+    "auditConfig": {
+      "ignoreCves": [
+        "CVE-2024-4067"
+      ]
+    }
   }
 }
