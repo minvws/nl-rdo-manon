@@ -65,6 +65,19 @@
           <li>
             Standaard is het eerste onderdeel opengeklapt. Dit kan aangepast worden middels het
             <code>aria-expanded</code>-attribuut van de <code>&lt;button&gt;</code>.
+            <ul>
+              <li>
+                Voeg <code>aria-expanded="false"</code> toe aan de <code>{`<button>`}</code> van het
+                eerste onderdeel om te voorkomen dat het standaard opengeklapt is.
+              </li>
+              <li>
+                Voeg <code>aria-expanded="true"</code> toe aan de <code>{`<button>`}</code> van een
+                ander onderdeel om te zorgen dat dat onderdeel standaard opengeklapt is. Let op: dit
+                zorgt ervoor dat het eerste onderdeel niet meer standaard opengeklapt is. Om te
+                zorgen dat het eerste onderdeel óók standaard opengeklapt is, kan je ook daar
+                <code>aria-expanded="true"</code> toevoegen.
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
