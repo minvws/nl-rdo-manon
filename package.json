@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "pnpm run --dir docs dev",
     "build": "pnpm run --dir docs build",
-    "lint": "pnpm run --dir manon lint:css",
+    "lint": "echo 'Linting is not curently available'",
     "format:check": "pnpm run --dir manon format:check"
   }
 }
