@@ -133,7 +133,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
             <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
           </p>
 
-          <h3>Importeer component via NPM</h3>
+          <h3>Importeer component via npm</h3>
 
           <h4>CSS-voorbeeld:</h4>
           <Code

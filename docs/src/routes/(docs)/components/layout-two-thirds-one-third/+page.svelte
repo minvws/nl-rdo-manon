@@ -132,7 +132,7 @@
           </li>
         </ul>
 
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
 
         <h3>CSS-voorbeeld:</h3>
         <Code

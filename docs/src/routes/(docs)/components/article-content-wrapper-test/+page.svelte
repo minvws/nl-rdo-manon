@@ -42,7 +42,7 @@
         >
       </p>
 
-      <h3>NPM-componenten</h3>
+      <h3>npm-componenten</h3>
 
       <h4>CSS-voorbeeld:</h4>
       <Code
