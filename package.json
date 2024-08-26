@@ -11,10 +11,8 @@
     "format:check": "pnpm run --dir manon format:check"
   },
   "pnpm": {
-    "auditConfig": {
-      "ignoreCves": [
-        "CVE-2024-4067"
-      ]
+    "overrides": {
+      "micromatch@<4.0.8": ">=4.0.8"
     }
   }
 }
