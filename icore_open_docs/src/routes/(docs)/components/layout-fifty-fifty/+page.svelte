@@ -130,7 +130,7 @@
           >
         </p>
 
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
 
         <p>
           Het is mogelijk om gebruik te maken van de layout-set. Door hier gebruik van te maken

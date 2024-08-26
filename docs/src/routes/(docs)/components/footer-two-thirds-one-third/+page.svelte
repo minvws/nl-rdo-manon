@@ -81,7 +81,7 @@
           Voor meer informatie over importeren en instellen van componenten. Zie:
           <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
         </p>
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
         <h4>CSS-voorbeeld:</h4>
         <Code
           language="css"

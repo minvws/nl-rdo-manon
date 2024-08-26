@@ -501,7 +501,7 @@
           >
         </p>
 
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
         <h4>CSS-voorbeeld:</h4>
         <p>
           Het voorbeeld maakt gebruik van de kleurenset <code>tag-colors-soft</code>. Dit is

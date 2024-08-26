@@ -227,7 +227,7 @@
           >
         </p>
 
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
 
         <p>
           <strong>Let op:</strong> Tags maakt gebruik van de volgende componenten die ingeladen dienen

@@ -157,7 +157,7 @@
           </li>
         </ul>
 
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
         <p>
           Het voorbeeld maakt gebruik van de kleurenset <code>tag-colors-soft</code>. Dit is
           optioneel. De variabelen binnen tags-6 kunnen naar keuze met kleuren (hex codes) of
