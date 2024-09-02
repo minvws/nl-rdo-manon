@@ -6,8 +6,8 @@
 </script>
 
 <svelte:head>
-  <link href="$img/favicon.svg" rel="icon" type="image/svg+xml">
-  <link href="$img/favicon.ico" rel="shortcut icon">
+  <link href="$img/favicon.svg" rel="icon" type="image/svg+xml" />
+  <link href="$img/favicon.ico" rel="shortcut icon" />
 </svelte:head>
 
 <slot />

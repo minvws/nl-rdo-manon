@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <p class="warning" role="group" aria-label="waarschuwing">
         <span>Waarschuwing:</span> Dit element maakt gebruik van experimentele CSS componenten:
@@ -87,7 +87,6 @@
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>
-
         <h3>Importeer component via npm</h3>
         <h4>CSS-voorbeeld:</h4>
         <Code
@@ -96,7 +95,7 @@
 @use "@minvws/manon/form-base";
 @use "@minvws/manon/form-input-color";
 @use "@minvws/manon/form-input-color-filled";
-      `}
+`}
         />
       </section>
 

@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content">
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Notificatie binnen formulier testpagina</h1>

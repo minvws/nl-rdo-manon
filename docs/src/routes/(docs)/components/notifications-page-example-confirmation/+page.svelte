@@ -19,7 +19,7 @@
     </div>
   </section>
 
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Pagina-notificatie bevestiging voorbeeld</h1>

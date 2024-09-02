@@ -22,20 +22,6 @@
           <li><a href="#error-div">Blokelement</a></li>
           <li><a href="#error-paragraph">Paragraaf</a></li>
           <li>
-            <a href="#error-table">Tabel-elementen</a>
-            <ul>
-              <li>
-                <a href="#error-th">Tabeltitel - <code>th</code></a>
-              </li>
-              <li>
-                <a href="#error-td">Tabelcel - <code>td</code></a>
-              </li>
-              <li>
-                <a href="#error-tr">Tabelrij - <code>tr</code></a>
-              </li>
-            </ul>
-          </li>
-          <li>
             <a href="#error-form">Formulier-elementen</a>
             <ul>
               <li>
@@ -63,7 +49,7 @@
       <li><a href="#requirements">Benodigdheden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Foutmelding</h1>
@@ -110,7 +96,6 @@
           <ul>
             <li><a href="#error-div">Blokelement</a></li>
             <li><a href="#error-paragraph">Paragraaf</a></li>
-            <li><a href="#error-table">Tabel-elementen</a></li>
             <li><a href="#error-form">Formulier-elementen</a></li>
           </ul>
         </nav>
@@ -187,185 +172,6 @@
           language="html"
           code={`
 <p class="error" role="group" aria-label="foutmelding"><span>Foutmelding:</span> Lorem ipsum dolor sit amet </p>
-`}
-        />
-
-        <h3 id="error-table">Tabel-elementen</h3>
-        <nav aria-label="Foutmelding tabelelementen subnavigatie">
-          <ul>
-            <li>
-              <a href="#error-th">Tabeltitel - <code>th</code></a>
-            </li>
-            <li>
-              <a href="#error-td">Tabelcel - <code>td</code></a>
-            </li>
-            <li>
-              <a href="#error-tr">Tabelrij - <code>tr</code></a>
-            </li>
-          </ul>
-        </nav>
-
-        <h4 id="error-th">Foutmelding op tabeltitel</h4>
-
-        <p class="warning">
-          <span>Waarschuwing:</span> In een vorige versie van de documentatie werd hier beschreven
-          hoe een tabeltitel als foutmelding opgemaakt kan worden. Deze instructies zijn weggehaald,
-          omdat dit omwille de toegankelijkheid sterk <strong>afgeraden</strong> wordt.
-        </p>
-
-        <h4 id="error-td">Foutmelding op Tabelcel</h4>
-
-        <h5>Visueel voorbeeld:</h5>
-        <table>
-          <thead>
-            <tr>
-              <th>Lorem</th>
-              <th>Ipsum</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>12</td>
-              <td>42</td>
-            </tr>
-
-            <tr>
-              <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 15</td>
-              <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 168</td>
-            </tr>
-
-            <tr>
-              <td>15</td>
-              <td>168</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Lorem ipsum</td>
-              <td>Dolor sit amet</td>
-            </tr>
-          </tfoot>
-        </table>
-
-        <h5>HTML-voorbeeld:</h5>
-        <Code
-          language="html"
-          code={`
-<table>
-  <thead>
-    <tr>
-      <th>Lorem</th>
-      <th>Ipsum</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>12</td>
-      <td>42</td>
-    </tr>
-
-    <tr>
-      <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 15</td>
-      <td class="error" aria-label="foutmelding"><span>Foutmelding:</span> 168</td>
-    </tr>
-
-    <tr>
-      <td>15</td>
-      <td>168</td>
-    </tr>
-
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>Lorem ipsum</td>
-      <td>Dolor sit amet</td>
-    </tr>
-  </tfoot>
-</table>
-`}
-        />
-
-        <h4 id="error-tr">Foutmelding op tabelrij</h4>
-
-        <p>Aandachtspunten:</p>
-        <ul>
-          <li>
-            Niet alle screenreaders lezen <code>aria-label</code> op een <code>tr</code> op. Voeg
-            daarom de labels toe aan de <code>th</code> of de <code>td</code>.
-          </li>
-        </ul>
-
-        <h5>Visueel voorbeeld:</h5>
-        <table>
-          <thead>
-            <tr>
-              <th>Lorem</th>
-              <th>Ipsum</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>15</td>
-              <td>168</td>
-            </tr>
-
-            <tr class="error">
-              <td aria-label="foutmelding"><span>Foutmelding:</span> 12</td>
-              <td aria-label="foutmelding"><span>Foutmelding:</span> 42</td>
-            </tr>
-
-            <tr class="error">
-              <td aria-label="foutmelding"><span>Foutmelding:</span> 12</td>
-              <td aria-label="foutmelding"><span>Foutmelding:</span> 42</td>
-            </tr>
-
-            <tr>
-              <td>123</td>
-              <td>2</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Lorem ipsum</td>
-              <td>Dolor sit amet</td>
-            </tr>
-          </tfoot>
-        </table>
-
-        <h5>HTML-voorbeeld:</h5>
-        <Code
-          language="html"
-          code={`
-<table>
-  <thead>
-    <tr>
-      <th>Lorem</th>
-      <th>Ipsum</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>15</td>
-      <td>168</td>
-    </tr>
-
-    <tr class="error">
-      <td aria-label="foutmelding"><span>Foutmelding:</span> 12</td>
-      <td aria-label="foutmelding"><span>Foutmelding:</span> 42</td>
-    </tr>
-
-    <tr>
-      <td>123</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>Lorem ipsum</td>
-      <td>Dolor sit amet</td>
-    </tr>
-  </tfoot>
-</table>
 `}
         />
 
@@ -648,7 +454,6 @@
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>
-
         <h3>Importeer component via npm</h3>
         <h4>CSS-voorbeeld:</h4>
         <Code
@@ -656,7 +461,7 @@
           code={`
 @use "@minvws/manon/notification";
 @use "@minvws/manon/notification-error";
-      `}
+`}
         />
       </section>
     </div>

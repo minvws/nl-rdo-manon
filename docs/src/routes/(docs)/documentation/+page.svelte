@@ -12,8 +12,8 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <section id="introduction" class="branding-color-accent-5">
-    <div>
+  <section id="introduction">
+    <div class="spacing-0">
       <h1>Documentatie</h1>
       <p>
         Manon is een modulair framework. Dat betekent dat je zelf kiest welke componenten je
@@ -22,7 +22,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="visually-grouped">
     <div>
       <h2>Snel aan de slag</h2>
       <p>
@@ -97,7 +97,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="visually-grouped">
     <div>
       <h2 id="instructions-heading">Meer instructies</h2>
       <nav aria-labelledby="instructions-heading">
@@ -114,7 +114,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="visually-grouped">
     <div>
       <h2>Manon installeren voor development</h2>
       <p>

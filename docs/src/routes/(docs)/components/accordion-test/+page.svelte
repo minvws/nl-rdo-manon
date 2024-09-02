@@ -276,7 +276,9 @@
 `}
         />
 
-        <h3>Expliciete <code>aria-expanded="true"</code> (ander onderdeel standaard opengeklapt)</h3>
+        <h3>
+          Expliciete <code>aria-expanded="true"</code> (ander onderdeel standaard opengeklapt)
+        </h3>
         <ul class="accordion">
           <li>
             <button id="example-3-item-1">Voorbeeld-onderwerp 1</button>

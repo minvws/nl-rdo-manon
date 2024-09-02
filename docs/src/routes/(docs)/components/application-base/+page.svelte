@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Stijlkeuzes op applicatie-niveau</h1>
@@ -85,7 +85,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Aandachtspunten:</h3>
@@ -132,7 +134,10 @@
               <tr>
                 <th rowspan="2" scope="rowgroup">application-base</th>
                 <td>--application-base-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>-</td>
                 <td>#fff</td>
                 <td>-</td>
@@ -149,7 +154,10 @@
               <tr>
                 <th rowspan="2" scope="rowgroup">application-base-tint-1</th>
                 <td>--application-base-tint-1-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>-</td>
                 <td>#f5f5f5</td>
                 <td>-</td>

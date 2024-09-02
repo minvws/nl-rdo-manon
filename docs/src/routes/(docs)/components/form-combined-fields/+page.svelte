@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Gecombineerde velden</h1>
@@ -99,7 +99,7 @@
           code={`
 @use "@minvws/manon/form-base";
 @use "@minvws/manon/form-combined-field";
-      `}
+`}
         />
       </section>
 
