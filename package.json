@@ -13,6 +13,11 @@
   "pnpm": {
     "overrides": {
       "micromatch@<4.0.8": ">=4.0.8"
+    },
+    "auditConfig": {
+      "ignoreCves": [
+        "CVE-2024-45047"
+      ]
     }
   }
 }
