@@ -154,10 +154,10 @@
   <section id="other" class="visually-grouped">
     <h2 id="other-heading">Overig</h2>
     <p class="warning">
-      Let op: de documentatie over deze onderdelen is waarschijnlijk onvolledig of incorrect.
+      Let op: de documentatie over deze componenten is waarschijnlijk onvolledig of incorrect.
     </p>
     <p>
-      Dit zijn onderdelen die geïmplementeerd zijn in Manon, maar overbodig geworden of juist nog
+      Dit zijn componenten die geïmplementeerd zijn in Manon, maar overbodig geworden of juist nog
       niet (volledig) ondersteund worden door het <i>iCore Open</i>-thema.
     </p>
     <nav aria-labelledby="other-heading">
