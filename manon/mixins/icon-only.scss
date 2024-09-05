@@ -1,0 +1,40 @@
+/*---------------------------------------------------------------------*/
+/*------------------------- mixins/icon.scss --------------------------*/
+/*---------------------------------------------------------------------*/
+@use "icon";
+
+@mixin icon-only {
+  &.icon-only {
+    font-size: 0;
+    gap: 0;
+    background-color: transparent;
+    border: 0;
+
+    &::before {
+      & {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@mixin icon-only-format($prefix) {
+  @include icon-only;
+
+  & {
+    min-width: var(--#{$prefix}icon-only-min-width);
+    width: var(--#{$prefix}icon-only-width);
+    min-height: var(--#{$prefix}icon-only-min-height);
+    height: var(--#{$prefix}icon-only-height);
+
+    &::before {
+      & {
+        font-family: var(--#{$prefix}icon-only-font-family);
+        font-size: var(--#{$prefix}icon-only-font-size);
+        padding-right: var(--#{$prefix}icon-only-padding-right);
+        padding-left: var(--#{$prefix}icon-only-padding-left);
+        color: var(--#{$prefix}icon-only-text-color);
+      }
+    }
+  }
+}

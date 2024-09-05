@@ -5,7 +5,7 @@
 @use "mixins/link";
 @use "mixins/icon";
 @use "button-icon";
-@use "button-icon-only";
+@use "mixins/icon-only";
 @use "mixins/outline";
 
 $header-navigation-button-states: "active", "focus", "hover";
@@ -46,16 +46,16 @@ body > header,
           );
         }
 
-        &.icon-only {
-          @include button-icon-only.icon-only;
-        }
+        // @include icon-only.icon-only;
+        @include icon-only.icon-only-format("header-navigation-button-");
 
         &.icon {
           @include icon.icon-format("header-navigation-button-" + $state + "-");
           @include icon.icon-content(
             "header-navigation-button-" + $state + "-"
           );
-          @include button-icon.icon;
+          // @include button-icon.icon;
+          // @include icon-only.icon-only-format("header-navigation-button-");
         }
       }
 

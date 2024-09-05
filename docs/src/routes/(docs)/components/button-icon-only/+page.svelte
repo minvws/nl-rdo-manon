@@ -107,7 +107,9 @@
         <Code
           language="css"
           code={`
-      @use "@minvws/manon/button-icon-only";
+@use "@minvws/manon/button-base";
+@use "@minvws/manon/icon";
+@use "@minvws/manon/button-icon-only";
       `}
         />
       </section>

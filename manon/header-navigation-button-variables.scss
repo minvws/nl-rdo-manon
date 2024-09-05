@@ -1,23 +1,17 @@
 /*---------------------------------------------------------------*/
 /*---------- header-navigation-button-variables.scss ------------*/
 /*---------------------------------------------------------------*/
-
-@use "mixins/link";
+@use "mixins/button";
+@use "mixins/outline";
 
 :root {
-  /* Header navigation button */
-  @include link.styling-variables("header-navigation-button-", "button-base-");
-
-  --header-navigation-button-justify-content: var(
-    --button-base-justify-content,
-    center
+  @include button.styling-variables(
+    "header-navigation-button-",
+    "button-base-"
   );
-  --header-navigation-button-align-self: center;
-  --header-navigation-button-min-width: var(--button-base-min-width, 0);
-  --header-navigation-button-min-height: var(--button-base-min-height, 2.75rem);
-  --header-navigation-button-height: var(--button-base-height);
-  --header-navigation-button-padding-top: var(--button-base-padding-top);
-  --header-navigation-button-padding-right: var(--button-base-padding-right);
-  --header-navigation-button-padding-bottom: var(--button-base-padding-bottom);
-  --header-navigation-button-padding-left: var(--button-base-padding-left);
+
+  @include outline.outline-variables(
+    "header-navigation-button-focus-",
+    "button-base-focus-"
+  );
 }

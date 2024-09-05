@@ -42,7 +42,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
           <li>
             <form class="inline">
               <input type="hidden" name="_token" value="" />
-              <button type="submit">Logout</button>
+              <a href="#" class="button" type="submit">Logout</a>
             </form>
           </li>
         </ul>

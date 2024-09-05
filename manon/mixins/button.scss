@@ -1,0 +1,206 @@
+/*---------------------------------------------------------------------*/
+/*---------------------------- button.scss ----------------------------*/
+/*---------------------------------------------------------------------*/
+@use "icon";
+
+$states: ("hover", "active", "focus");
+
+@mixin styling($prefix) {
+  & {
+    /* Alignment */
+    justify-content: var(--#{$prefix}justify-content);
+    align-items: center;
+    align-self: flex-start;
+    gap: var(--#{$prefix}gap);
+
+    /* Styling */
+    background-color: var(--#{$prefix}background-color);
+    color: var(--#{$prefix}text-color);
+    font-family: var(--#{$prefix}font-family);
+    font-size: var(--#{$prefix}font-size);
+    font-weight: var(--#{$prefix}font-weight);
+    line-height: var(--#{$prefix}line-height);
+    text-decoration: var(--#{$prefix}text-decoration);
+    text-align: var(--#{$prefix}text-align);
+
+    /* Spacing */
+    padding-top: var(--#{$prefix}padding-top);
+    padding-right: var(--#{$prefix}padding-right);
+    padding-bottom: var(--#{$prefix}padding-bottom);
+    padding-left: var(--#{$prefix}padding-left);
+    margin: 0;
+    box-sizing: border-box;
+
+    /* Sizing */
+    width: auto;
+    min-width: var(--#{$prefix}min-width);
+    height: var(--#{$prefix}height);
+    min-height: var(--#{$prefix}min-height);
+
+    /* Border */
+    border-width: var(--#{$prefix}border-width);
+    border-style: var(--#{$prefix}border-style);
+    border-color: var(--#{$prefix}border-color);
+    border-radius: var(--#{$prefix}border-radius);
+
+    /* Reset ios button styling */
+    -webkit-border-radius: var(--#{$prefix}border-radius);
+    /* Reset ios button styling */
+    -webkit-appearance: var(--#{$prefix}webkit-appearance);
+
+    /* Behaviour */
+    cursor: pointer;
+    overflow-wrap: break-word;
+
+    &:hover,
+    &.hover {
+      background-color: var(--#{$prefix}hover-background-color);
+      color: var(--#{$prefix}hover-text-color);
+      border-color: var(--#{$prefix}hover-border-color);
+      border-width: var(--#{$prefix}hover-border-width);
+      border-style: var(--#{$prefix}hover-border-style);
+      border-radius: var(--#{$prefix}hover-border-radius);
+    }
+
+    &:active,
+    &.active {
+      // outline-style: var(--#{$prefix}active-outline-style);
+      // outline-color: var(--#{$prefix}active-outline-color);
+      // outline-width: var(--#{$prefix}active-outline-width);
+      // outline-offset: var(--#{$prefix}active-outline-offset);
+      background-color: var(--#{$prefix}active-background-color);
+      color: var(--#{$prefix}active-text-color);
+      border-style: var(--#{$prefix}active-border-style);
+      border-color: var(--#{$prefix}active-border-color);
+      border-width: var(--#{$prefix}active-border-width);
+      border-radius: var(--#{$prefix}active-border-radius);
+    }
+
+    &:focus,
+    &.focus {
+      // outline-style: var(--#{$prefix}focus-outline-style);
+      // outline-color: var(--#{$prefix}focus-outline-color);
+      // outline-width: var(--#{$prefix}focus-outline-width);
+      // outline-offset: var(--#{$prefix}focus-outline-offset);
+      border-style: var(--#{$prefix}focus-border-style);
+      border-color: var(--#{$prefix}focus-border-color);
+      border-width: var(--#{$prefix}focus-border-width);
+      border-radius: var(--#{$prefix}focus-border-radius);
+      background-color: var(
+        --#{$prefix}focus-background-color,
+        var(--application-base-accent-color-accent)
+      );
+      color: var(
+        --#{$prefix}focus-text-color,
+        var(--application-text-color-accent)
+      );
+    }
+  }
+
+  /* Limiting the width of images within buttons for readability. */
+  > img {
+    max-width: var(--#{$prefix}image-max-width);
+  }
+
+  /* Prevent elements within the button to block onclick events */
+  > * {
+    pointer-events: none;
+  }
+
+  /* Buttons can not be flex containers as it gives issues with line breaks */
+  /* It does work on wider screens. So using flex box where possible. */
+  $breakpoint: 24rem !default;
+
+  @media (width >= $breakpoint) {
+    min-width: var(--#{$prefix}min-width);
+    display: flex;
+  }
+}
+
+@mixin button($prefix) {
+  @include styling($prefix);
+}
+
+@mixin styling-variables($prefix, $parentPrefix) {
+  --#{$prefix}justify-content: var(--#{$parentPrefix}justify-content);
+  --#{$prefix}gap: var(--#{$parentPrefix}gap);
+  --#{$prefix}background-color: var(--#{$parentPrefix}background-color);
+  --#{$prefix}text-color: var(--#{$parentPrefix}text-color);
+  --#{$prefix}font-family: var(--#{$parentPrefix}font-family);
+  --#{$prefix}font-size: var(--#{$parentPrefix}font-size);
+  --#{$prefix}font-weight: var(--#{$parentPrefix}font-weight);
+  --#{$prefix}line-height: var(--#{$parentPrefix}line-height);
+  --#{$prefix}text-decoration: var(--#{$parentPrefix}text-decoration);
+  --#{$prefix}text-align: var(--#{$parentPrefix}text-align);
+  --#{$prefix}padding-top: var(--#{$parentPrefix}padding-top);
+  --#{$prefix}padding-right: var(--#{$parentPrefix}padding-right);
+  --#{$prefix}padding-bottom: var(--#{$parentPrefix}padding-bottom);
+  --#{$prefix}padding-left: var(--#{$parentPrefix}padding-left);
+  --#{$prefix}height: var(--#{$parentPrefix}height);
+  --#{$prefix}min-height: var(--#{$parentPrefix}min-height);
+  --#{$prefix}width: var(--#{$parentPrefix}width);
+  --#{$prefix}min-width: var(--#{$parentPrefix}min-width);
+  --#{$prefix}border-width: var(--#{$parentPrefix}border-width);
+  --#{$prefix}border-style: var(--#{$parentPrefix}border-style);
+  --#{$prefix}border-color: var(--#{$parentPrefix}border-color);
+  --#{$prefix}border-radius: var(--#{$parentPrefix}border-radius);
+  --#{$prefix}border-radius: var(--#{$parentPrefix}border-radius);
+  --#{$prefix}webkit-appearance: var(--#{$parentPrefix}webkit-appearance);
+  --#{$prefix}image-max-width: var(--#{$parentPrefix}image-max-width);
+
+  /* Hover */
+  --#{$prefix}hover-background-color: var(
+    --#{$parentPrefix}hover-background-color
+  );
+  --#{$prefix}hover-text-color: var(--#{$parentPrefix}hover-text-color);
+  --#{$prefix}hover-border-color: var(--#{$parentPrefix}hover-border-color);
+  --#{$prefix}hover-border-width: var(--#{$parentPrefix}hover-border-width);
+  --#{$prefix}hover-border-style: var(--#{$parentPrefix}hover-border-style);
+  --#{$prefix}hover-border-radius: var(--#{$parentPrefix}hover-border-radius);
+
+  /* Active */
+  // --#{$prefix}active-outline-style: var(--#{$parentPrefix}active-outline-style);
+  // --#{$prefix}active-outline-color: var(--#{$parentPrefix}active-outline-color);
+  // --#{$prefix}active-outline-width: var(--#{$parentPrefix}active-outline-width);
+  // --#{$prefix}active-outline-offset: var(
+  //   --#{$parentPrefix}active-outline-offset
+  // );
+  --#{$prefix}active-background-color: var(
+    --#{$parentPrefix}active-background-color
+  );
+  --#{$prefix}active-text-color: var(--#{$parentPrefix}active-text-color);
+  --#{$prefix}active-border-style: var(--#{$parentPrefix}active-border-style);
+
+  --#{$prefix}active-border-color: var(--#{$parentPrefix}active-border-color);
+  --#{$prefix}active-border-width: var(--#{$parentPrefix}active-border-width);
+  --#{$prefix}active-border-radius: var(--#{$parentPrefix}active-border-radius);
+
+  /* Focus */
+  // --#{$prefix}focus-outline-style: var(--#{$parentPrefix}focus-outline-style);
+  // --#{$prefix}focus-outline-color: var(--#{$parentPrefix}focus-outline-color);
+  // --#{$prefix}focus-outline-width: var(--#{$parentPrefix}focus-outline-width);
+  // --#{$prefix}focus-outline-offset: var(--#{$parentPrefix}focus-outline-offset);
+  --#{$prefix}focus-border-width: var(--#{$parentPrefix}focus-border-width);
+  --#{$prefix}focus-border-style: var(--#{$parentPrefix}focus-border-style);
+  --#{$prefix}focus-border-color: var(--#{$parentPrefix}focus-border-color);
+  --#{$prefix}focus-border-radius: var(--#{$parentPrefix}focus-border-radius);
+  --#{$prefix}focus-background-color: var(
+    --#{$parentPrefix}focus-background-color
+  );
+  --#{$prefix}focus-text-color: var(--#{$parentPrefix}focus-text-color);
+}
+
+/* Used for links that visually look like buttons */
+@mixin link-button-styling($prefix) {
+  &:visited {
+    color: var(--#{$prefix}text-color);
+  }
+}
+
+@mixin link-button($prefix) {
+  @include link-button-styling($prefix);
+}
+
+@mixin link-button-styling-variables($prefix, $parentPrefix) {
+  --#{$prefix}text-color: var(--#{$parentPrefix}text-color);
+}
