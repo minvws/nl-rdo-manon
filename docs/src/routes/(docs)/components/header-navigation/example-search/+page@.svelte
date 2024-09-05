@@ -34,8 +34,6 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
     class="collapsible"
   >
     <button type="submit" class="icon-only icon-cat">Zoeken</button>
-    <button type="submit" class="icon icon-cat">Zoeken</button>
-
     <div class="collapsing-element">
       <SiteNavLinks />
 
@@ -60,7 +58,6 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
     <div>
       <section id="introduction">
         <h1>Header met een zoekveld visueel voorbeeld</h1>
-        <button type="submit" class="icon icon-cat">Zoeken</button>
 
         <h2>Benodigde stappen:</h2>
         <ol>

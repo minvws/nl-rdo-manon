@@ -2,13 +2,17 @@
 /*------------------- button-icon-only.scss ---------------------*/
 /*---------------------------------------------------------------*/
 @use "button-icon-only-variables";
-@use "mixins/icon-only";
 @use "mixins/icon";
+@use "mixins/button";
+@use "mixins/outline";
+@use "mixins/icon-only";
 
 button,
 a.button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  @include icon-only.icon-only-format("button-");
+  &.icon-only {
+    @include icon-only.icon-only("button-icon-only-");
+  }
 }

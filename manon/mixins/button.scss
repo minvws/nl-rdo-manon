@@ -5,7 +5,7 @@
 
 $states: ("hover", "active", "focus");
 
-@mixin styling($prefix) {
+@mixin button-styling($prefix) {
   & {
     /* Alignment */
     justify-content: var(--#{$prefix}justify-content);
@@ -64,10 +64,6 @@ $states: ("hover", "active", "focus");
 
     &:active,
     &.active {
-      // outline-style: var(--#{$prefix}active-outline-style);
-      // outline-color: var(--#{$prefix}active-outline-color);
-      // outline-width: var(--#{$prefix}active-outline-width);
-      // outline-offset: var(--#{$prefix}active-outline-offset);
       background-color: var(--#{$prefix}active-background-color);
       color: var(--#{$prefix}active-text-color);
       border-style: var(--#{$prefix}active-border-style);
@@ -78,10 +74,6 @@ $states: ("hover", "active", "focus");
 
     &:focus,
     &.focus {
-      // outline-style: var(--#{$prefix}focus-outline-style);
-      // outline-color: var(--#{$prefix}focus-outline-color);
-      // outline-width: var(--#{$prefix}focus-outline-width);
-      // outline-offset: var(--#{$prefix}focus-outline-offset);
       border-style: var(--#{$prefix}focus-border-style);
       border-color: var(--#{$prefix}focus-border-color);
       border-width: var(--#{$prefix}focus-border-width);
@@ -118,10 +110,10 @@ $states: ("hover", "active", "focus");
 }
 
 @mixin button($prefix) {
-  @include styling($prefix);
+  @include button-styling($prefix);
 }
 
-@mixin styling-variables($prefix, $parentPrefix) {
+@mixin button-variables($prefix, $parentPrefix) {
   --#{$prefix}justify-content: var(--#{$parentPrefix}justify-content);
   --#{$prefix}gap: var(--#{$parentPrefix}gap);
   --#{$prefix}background-color: var(--#{$parentPrefix}background-color);
@@ -159,12 +151,6 @@ $states: ("hover", "active", "focus");
   --#{$prefix}hover-border-radius: var(--#{$parentPrefix}hover-border-radius);
 
   /* Active */
-  // --#{$prefix}active-outline-style: var(--#{$parentPrefix}active-outline-style);
-  // --#{$prefix}active-outline-color: var(--#{$parentPrefix}active-outline-color);
-  // --#{$prefix}active-outline-width: var(--#{$parentPrefix}active-outline-width);
-  // --#{$prefix}active-outline-offset: var(
-  //   --#{$parentPrefix}active-outline-offset
-  // );
   --#{$prefix}active-background-color: var(
     --#{$parentPrefix}active-background-color
   );
@@ -176,10 +162,6 @@ $states: ("hover", "active", "focus");
   --#{$prefix}active-border-radius: var(--#{$parentPrefix}active-border-radius);
 
   /* Focus */
-  // --#{$prefix}focus-outline-style: var(--#{$parentPrefix}focus-outline-style);
-  // --#{$prefix}focus-outline-color: var(--#{$parentPrefix}focus-outline-color);
-  // --#{$prefix}focus-outline-width: var(--#{$parentPrefix}focus-outline-width);
-  // --#{$prefix}focus-outline-offset: var(--#{$parentPrefix}focus-outline-offset);
   --#{$prefix}focus-border-width: var(--#{$parentPrefix}focus-border-width);
   --#{$prefix}focus-border-style: var(--#{$parentPrefix}focus-border-style);
   --#{$prefix}focus-border-color: var(--#{$parentPrefix}focus-border-color);

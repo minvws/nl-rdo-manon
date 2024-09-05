@@ -1,40 +1,46 @@
 /*---------------------------------------------------------------------*/
-/*------------------------- mixins/icon.scss --------------------------*/
+/*------------------------- mixins/icon-only.scss ---------------------*/
 /*---------------------------------------------------------------------*/
 @use "icon";
+@use "button";
+@use "outline";
 
-@mixin icon-only {
-  &.icon-only {
-    font-size: 0;
-    gap: 0;
-    background-color: transparent;
-    border: 0;
+@mixin icon-only($prefix) {
+  background-color: var(--#{$prefix}background-color);
+  border-width: var(--#{$prefix}border-width);
+  font-size: var(--#{$prefix}font-size);
+  min-width: var(--#{$prefix}min-width);
+  gap: var(--#{$prefix}gap);
+  padding-right: var(--#{$prefix}padding-right);
+  padding-left: var(--#{$prefix}padding-left);
 
-    &::before {
-      & {
-        background-color: transparent;
-      }
-    }
+  /* Icon */
+  &::before {
+    font-size: var(--#{$prefix}icon-font-size);
+  }
+
+  /* Hover */
+  &:hover {
+    background-color: var(--#{$prefix}hover-background-color);
+    border-width: var(--#{$prefix}hover-border-width);
   }
 }
 
-@mixin icon-only-format($prefix) {
-  @include icon-only;
+@mixin icon-only-variables($prefix, $parentPrefix) {
+  --#{$prefix}background-color: var(--#{$parentPrefix}background-color);
+  --#{$prefix}border-width: var(--#{$parentPrefix}border-width);
+  --#{$prefix}font-size: var(--#{$parentPrefix}font-size);
+  --#{$prefix}min-width: var(--#{$parentPrefix}min-width);
+  --#{$prefix}gap: var(--#{$parentPrefix}gap);
+  --#{$prefix}padding-right: var(--#{$parentPrefix}padding-right);
+  --#{$prefix}padding-left: var(--#{$parentPrefix}padding-left);
 
-  & {
-    min-width: var(--#{$prefix}icon-only-min-width);
-    width: var(--#{$prefix}icon-only-width);
-    min-height: var(--#{$prefix}icon-only-min-height);
-    height: var(--#{$prefix}icon-only-height);
+  /* Icon */
+  --#{$prefix}icon-font-size: var(--#{$parentPrefix}icon-font-size);
 
-    &::before {
-      & {
-        font-family: var(--#{$prefix}icon-only-font-family);
-        font-size: var(--#{$prefix}icon-only-font-size);
-        padding-right: var(--#{$prefix}icon-only-padding-right);
-        padding-left: var(--#{$prefix}icon-only-padding-left);
-        color: var(--#{$prefix}icon-only-text-color);
-      }
-    }
-  }
+  /* Hover */
+  --#{$prefix}hover-background-color: var(
+    --#{$parentPrefix}hover-background-color
+  );
+  --#{$prefix}hover-border-width: var(--#{$parentPrefix}hover-border-width);
 }

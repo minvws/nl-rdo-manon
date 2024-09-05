@@ -1,17 +1,23 @@
 /*---------------------------------------------------------------*/
 /*---------------- button-icon-only-variables.scss --------------*/
 /*---------------------------------------------------------------*/
-:root {
-  /* Button */
-  --button-icon-only-min-width: 2.75rem;
-  --button-icon-only-width: auto;
-  --button-icon-only-min-height: var(--button-base-min-height);
-  --button-icon-only-height: var(--button-base-height);
+@use "mixins/button";
+@use "mixins/outline";
+@use "mixins/icon-only";
 
-  /* Icon */
-  --button-icon-only-font-family: var(--icon-font-family);
-  --button-icon-only-font-size: var(--icon-font-size);
-  --button-icon-only-text-color: var(--icon-text-color);
+:root {
+  --button-icon-only-background-color: transparent;
+  --button-icon-only-border-width: 0;
+  --button-icon-only-font-size: 0;
+  --button-icon-only-min-width: 2.75rem;
+  --button-icon-only-gap: 0;
   --button-icon-only-padding-right: 0;
   --button-icon-only-padding-left: 0;
+
+  /* Icon */
+  --button-icon-only-icon-font-size: 1rem;
+
+  /* Hover */
+  --button-icon-only-hover-background-color: transparent;
+  --button-icon-only-hover-border-width: 0;
 }
