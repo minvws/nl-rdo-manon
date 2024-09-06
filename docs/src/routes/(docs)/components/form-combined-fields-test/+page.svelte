@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Gecombineerde testpagina</h1>
@@ -57,11 +57,19 @@
           <div class="combined-field">
             <div>
               <label for="voorbeeld-combined-inputs-1">Ipsum</label>
-              <input id="voorbeeld-combined-inputs-1" name="voorbeeld-combined-inputs-1" type="text" />
+              <input
+                id="voorbeeld-combined-inputs-1"
+                name="voorbeeld-combined-inputs-1"
+                type="text"
+              />
             </div>
             <div>
               <label for="voorbeeld-combined-inputs-2">Ipsum</label>
-              <input id="voorbeeld-combined-inputs-2" name="voorbeeld-combined-inputs-2" type="text" />
+              <input
+                id="voorbeeld-combined-inputs-2"
+                name="voorbeeld-combined-inputs-2"
+                type="text"
+              />
             </div>
           </div>
 

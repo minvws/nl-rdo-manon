@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <p class="warning" role="group" aria-label="waarschuwing">
         <span>Waarschuwing:</span> Het <code>select</code>-element wordt binnen browsers en
@@ -177,7 +177,7 @@
           code={`
 @use "@minvws/manon/form-base";
 @use "@minvws/manon/form-select";
-      `}
+`}
         />
       </section>
 

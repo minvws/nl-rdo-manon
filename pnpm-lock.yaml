@@ -89,55 +89,6 @@ importers:
         specifier: ^5.4.1
         version: 5.4.1(@types/node@20.11.30)(sass@1.77.8)(terser@5.29.2)
 
-  icore_open_docs:
-    dependencies:
-      '@minvws/manon':
-        specifier: workspace:*
-        version: link:../manon
-      '@minvws/manon-themes':
-        specifier: workspace:*
-        version: link:../themes
-      highlight.js:
-        specifier: ^11.10.0
-        version: 11.10.0
-    devDependencies:
-      '@sveltejs/adapter-static':
-        specifier: ^3.0.4
-        version: 3.0.4(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.19)(vite@5.4.1(@types/node@20.11.30)(sass@1.77.8)(terser@5.29.2)))(svelte@4.2.19)(vite@5.4.1(@types/node@20.11.30)(sass@1.77.8)(terser@5.29.2)))
-      '@sveltejs/kit':
-        specifier: ^2.5.24
-        version: 2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.19)(vite@5.4.1(@types/node@20.11.30)(sass@1.77.8)(terser@5.29.2)))(svelte@4.2.19)(vite@5.4.1(@types/node@20.11.30)(sass@1.77.8)(terser@5.29.2))
-      '@sveltejs/vite-plugin-svelte':
-        specifier: ^3.1.1
-        version: 3.1.1(svelte@4.2.19)(vite@5.4.1(@types/node@20.11.30)(sass@1.77.8)(terser@5.29.2))
-      prettier:
-        specifier: ^3.3.3
-        version: 3.3.3
-      prettier-plugin-svelte:
-        specifier: ^3.2.6
-        version: 3.2.6(prettier@3.3.3)(svelte@4.2.19)
-      rimraf:
-        specifier: ^6.0.1
-        version: 6.0.1
-      sass:
-        specifier: ^1.77.8
-        version: 1.77.8
-      svelte:
-        specifier: ^4.2.19
-        version: 4.2.19
-      svelte-check:
-        specifier: ^3.8.6
-        version: 3.8.6(@babel/core@7.24.7)(postcss-load-config@3.1.4(postcss@8.4.41))(postcss@8.4.41)(sass@1.77.8)(svelte@4.2.19)
-      svelte-preprocess-import-assets:
-        specifier: ^1.1.0
-        version: 1.1.0(svelte@4.2.19)
-      typescript:
-        specifier: ^5.5.3
-        version: 5.5.3
-      vite:
-        specifier: ^5.4.1
-        version: 5.4.1(@types/node@20.11.30)(sass@1.77.8)(terser@5.29.2)
-
   manon:
     devDependencies:
       prettier:

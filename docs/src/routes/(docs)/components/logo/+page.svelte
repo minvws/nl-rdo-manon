@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
 
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Logo</h1>

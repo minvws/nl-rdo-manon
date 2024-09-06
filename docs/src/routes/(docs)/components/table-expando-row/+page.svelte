@@ -21,7 +21,7 @@
       <li><a href="#variables">Beschikbare variabelen</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <p class="warning">
         Let op: Deze tabelstructuur kan als complex ervaren worden door gebruikers. Zeker in
@@ -284,7 +284,7 @@
                 code={`
 @use "@minvws/manon/table";
 @use "@minvws/manon/table-expando-rows";
-      `}
+`}
               />
             </section>
 

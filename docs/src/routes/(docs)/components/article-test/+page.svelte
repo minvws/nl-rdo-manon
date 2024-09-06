@@ -12,7 +12,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <h1>article</h1>
     <p>Componenten gegroepeerd in <code>article</code>'s.</p>
 
@@ -21,7 +21,7 @@
       language="html"
       code={`
 <main>
-  <article>
+  <article class="visually-grouped">
     <!-- Content -->
   </article>
 </main>
@@ -29,7 +29,7 @@
     />
   </article>
 
-  <article>
+  <article class="visually-grouped">
     <h2>Gebruikte componenten</h2>
     <p>
       Voor meer informatie over importeren en instellen van componenten. Zie: <a
@@ -49,7 +49,7 @@
     />
   </article>
 
-  <article>
+  <article class="visually-grouped">
     <h3>Ingestelde waarden</h3>
     <h4>CSS-voorbeeld</h4>
     <Code

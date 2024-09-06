@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Horizontaal uitgelijnd</h1>
@@ -146,7 +146,7 @@
           language="css"
           code={`
 @use "@minvws/manon/horizontal-view";
-      `}
+`}
         />
       </section>
 

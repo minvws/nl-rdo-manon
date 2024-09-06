@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Tabel bijschrift <code>caption</code></h1>
@@ -141,7 +141,7 @@
           code={`
 @use "@minvws/manon/table";
 @use "@minvws/manon/table-caption";
-      `}
+`}
         />
       </section>
 

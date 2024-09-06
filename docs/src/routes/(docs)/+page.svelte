@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <section class="warning" role="group" aria-label="let op">
+  <section class="warning">
     <div>
       <p>
         <span>Let op:</span> Aan deze handleiding wordt nog gewerkt.
@@ -19,38 +19,17 @@
     </div>
   </section>
 
-  <section class="branding-color-accent-5" id="introduction">
+  <section id="introduction">
     <div>
       <h1>Welkom bij Manon</h1>
       <p>
-        Manon is een variabel en instelbaar front-end framework. Een Open Source-project ontwikkeld
+        Manon is een variabel en instelbaar front-end framework. Het is Open Source en ontwikkeld
         door het Ministerie van Volksgezondheid, Welzijn en Sport.
       </p>
     </div>
   </section>
 
   <section>
-    <div>
-      <h2>Ontstaan van Manon</h2>
-      <p>
-        Tijdens de vaccinatiecampagne werden er in korte tijd veel websites gelanceerd en in beheer
-        genomen. Om onnodige herhalingen te voorkomen en om snel volgens de rijkshuisstijl te kunnen
-        bouwen is door het Ministerie van VWS in korte tijd een framework gebouwd.
-      </p>
-      <p>
-        Door vanuit een centraal punt te werken konden problemen direct voor alle websites
-        tegelijkertijd opgelost worden.
-      </p>
-      <p>
-        Om dit pakket aan te kunnen bieden aan een breder publiek is Manon herschreven. Hierbij is
-        Manon instelbaar geworden zodat het werkt met een huisstijl naar keuze. Daarnaast is Manon
-        nu zo geschreven dat alleen benodigde code ingeladen kan worden. Deze handleiding helpt je
-        met het gebruik ervan.
-      </p>
-    </div>
-  </section>
-
-  <section class="background-color-offset">
     <div>
       <h2>Wat is Manon</h2>
       <p>
@@ -67,11 +46,11 @@
     <div>
       <h2>Gedachte achter Manon</h2>
       <p>
-        Uitgangspunt bij het bouwen van een website is de scheiding tussen content, markup, beeld,
-        CSS en eventueel javascript. Hoe strikter deze gescheiden zijn, des te eenvoudiger is het om
-        een toegankelijke en goed te beheren website te bouwen. Het is niet eenvoudig om een goed
-        framework te vinden waarin dit consequent wordt toegepast. Hiervoor is 'Manon' geschreven,
-        dat een strikte scheiding hanteert tussen de content, markup en styles.
+        Een belangrijk uitgangspunt bij het bouwen van een website is de scheiding tussen content,
+        markup, beeld, CSS en eventueel JavaScript. Hoe strikter deze gescheiden zijn, hoe
+        eenvoudiger het is om een toegankelijke en goed te beheren website te bouwen. Het is niet
+        eenvoudig om een goed framework te vinden waarin dit consequent wordt toegepast. Hiervoor is
+        'Manon' geschreven, dat een strikte scheiding hanteert tussen de content, markup en styles.
       </p>
     </div>
   </section>

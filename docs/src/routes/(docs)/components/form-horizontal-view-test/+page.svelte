@@ -89,7 +89,7 @@
       <li><a href="#button-container">Gegroepeerde buttons</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Horizontaal uitgelijnde testpagina</h1>

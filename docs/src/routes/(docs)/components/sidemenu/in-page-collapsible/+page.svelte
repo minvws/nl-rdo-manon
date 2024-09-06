@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
 
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>In- uit-klapbaar zijmenu binnen de pagina</h1>
@@ -153,7 +153,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Importeer component via npm</h3>

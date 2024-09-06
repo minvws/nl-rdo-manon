@@ -18,10 +18,11 @@
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
+      <li><a href="#variables">Instelbare variabelen</a></li>
     </ul>
   </SideMenu>
 
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Notificatie-teller</h1>

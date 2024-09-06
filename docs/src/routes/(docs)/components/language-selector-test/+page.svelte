@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Taalselectie testpagina</h1>
@@ -33,27 +33,17 @@
             <button aria-haspopup="listbox" aria-current="true"> Papiamentu </button>
             <ul role="listbox">
               <li role="option" aria-selected="false">
-                <a
-                  hreflang="nl"
-                  href="language-selector-test"
-                  data-value="Nederlands"
-                  lang="nl">Nederlands</a
+                <a hreflang="nl" href="language-selector-test" data-value="Nederlands" lang="nl"
+                  >Nederlands</a
                 >
               </li>
               <li role="option" aria-selected="false">
-                <a
-                  hreflang="en"
-                  href="language-selector-test"
-                  data-value="English"
-                  lang="en">English</a
+                <a hreflang="en" href="language-selector-test" data-value="English" lang="en"
+                  >English</a
                 >
               </li>
               <li role="option" aria-selected="false">
-                <a
-                  hreflang="fy"
-                  href="language-selector-test"
-                  data-value="Frysk"
-                  lang="fy">Frysk</a
+                <a hreflang="fy" href="language-selector-test" data-value="Frysk" lang="fy">Frysk</a
                 >
               </li>
               <li role="option" aria-selected="true">
