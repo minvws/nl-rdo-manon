@@ -11,17 +11,13 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Tabel</h1>
-        <p>
-          Om data efficient en gebruiksvriendelijk weer te geven kan gebruik gemaakt worden van
-          tabellen.
-        </p>
       </section>
 
-      <section id="available-types">
+      <section id="available-types" class="visually-grouped">
         <h2>Beschikbare weergaven</h2>
         <div class="column-2">
           <nav aria-labelledby="types-heading">
@@ -46,13 +42,16 @@
                 <a href="{base}/components/table-action-buttons">Actieknoppen</a>
               </li>
               <li><a href="{base}/components/table-checkbox">Checkboxes</a></li>
-              <li><a href="{base}/components/table-notifications">Meldingen</a></li>
               <li>
                 <a href="{base}/components/table-numerical-data">Numerieke data</a>
               </li>
               <li>
                 <a href="{base}/components/table-caption">Tabel bijschrift <code>caption</code></a>
               </li>
+            </ul>
+            <h4>Andere elementen (niet ondersteund door iCore Open)</h4>
+            <ul>
+              <li><a href="{base}/components/table-notifications">Meldingen</a></li>
             </ul>
           </nav>
 
@@ -63,8 +62,13 @@
                 <a href="{base}/components/table-multiple-rows">Tabeldata over meerdere rijen</a>
               </li>
               <li>
-                <a href="{base}/components/table-multiple-columns">Tabeldata over meerdere kolommen</a>
+                <a href="{base}/components/table-multiple-columns"
+                  >Tabeldata over meerdere kolommen</a
+                >
               </li>
+            </ul>
+            <h4>Andere opmaak-opties (niet ondersteund door iCore Open)</h4>
+            <ul>
               <li><a href="{base}/components/table-scope">Tabelrichting</a></li>
               <li>
                 <a href="{base}/components/table-condensed">Gecomprimeerde weergave</a>

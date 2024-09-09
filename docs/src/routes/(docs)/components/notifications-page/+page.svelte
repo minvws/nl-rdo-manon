@@ -17,7 +17,7 @@
       <li><a href="#examples">Voorbeelden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Pagina-notificatie</h1>

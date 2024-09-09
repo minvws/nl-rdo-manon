@@ -26,9 +26,6 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 <header>
   <div>
     <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
-    <a href="{base}/" class="logo">
-      <img src="$img/logo-white.svg" alt="Placeholder logo" />Manon
-    </a>
     <nav
       data-open-label="Menu"
       data-close-label="Sluit menu"
@@ -53,7 +50,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
       <li><a href="#examples">Voorbeelden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Header met meerdere menus visueel voorbeeld</h1>
@@ -68,9 +65,9 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
       </section>
 
       <section id="examples">
-        <h1>Voorbeelden:</h1>
+        <h2>Voorbeelden:</h2>
         <p>Voor het visuele voorbeeld zie de header van deze pagina.</p>
-        <h2>HTML-voorbeeld:</h2>
+        <h3>HTML-voorbeeld:</h3>
         <Code
           language="html"
           code={`
@@ -78,17 +75,12 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
   <div>
       <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-      <a href="./logo" class="logo">
-          <img src="/img/logo-white.svg" alt="Placeholder logo">Manon
-      </a>
-
       <nav
       data-open-label="Menu"
       data-close-label="Sluit menu"
       data-media="(min-width: 30rem)"
       aria-label="Hoofdnavigatie"
       class="collapsible">
-
         <div class="collapsing-element">
             <ul>
               <li><a href="/">Home</a></li>

@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Tags kleurenset zes kleuren</h1>
@@ -143,7 +143,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <p>
@@ -157,7 +159,7 @@
           </li>
         </ul>
 
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
         <p>
           Het voorbeeld maakt gebruik van de kleurenset <code>tag-colors-soft</code>. Dit is
           optioneel. De variabelen binnen tags-6 kunnen naar keuze met kleuren (hex codes) of
@@ -202,7 +204,10 @@
             <tbody>
               <tr>
                 <td>--tags-color-1-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-blue-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -226,7 +231,10 @@
 
               <tr>
                 <td>--tags-color-2-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-green-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -250,7 +258,10 @@
 
               <tr>
                 <td>--tags-color-3-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-yellow-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -274,7 +285,10 @@
 
               <tr>
                 <td>--tags-color-4-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-orange-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -298,7 +312,10 @@
 
               <tr>
                 <td>--tags-color-5-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-red-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -322,7 +339,10 @@
 
               <tr>
                 <td>--tags-color-6-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--tags-soft-violet-light-background-color)</td>
                 <td>-</td>
                 <td>-</td>

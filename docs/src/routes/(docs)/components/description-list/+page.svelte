@@ -12,7 +12,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <div>
       <h1>Description list</h1>
 
@@ -162,7 +162,7 @@
           >
         </p>
 
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
 
         <h4>CSS-voorbeeld:</h4>
         <Code

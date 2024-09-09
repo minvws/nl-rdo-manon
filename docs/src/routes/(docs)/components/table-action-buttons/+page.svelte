@@ -22,7 +22,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Tabel met actieknoppen</h1>
@@ -70,7 +70,7 @@
               <tr>
                 <th scope="col">Gebruikersnaam</th>
                 <th scope="col">Bekijk profiel</th>
-                <th scope="col">Wijzig wachtwoord</th>
+                <th scope="col">Goedkeuren</th>
                 <th scope="col">Deactiveer</th>
                 <th scope="col">Verwijder</th>
               </tr>
@@ -80,26 +80,26 @@
                 <td>Jane doe</td>
                 <td>
                   <form>
-                    <button type="submit" class="icon icon-cat action-button">
+                    <button type="submit" class="icon icon-user action-button">
                       Bekijk profiel
                     </button>
                   </form>
                 </td>
                 <td>
                   <form>
-                    <button type="submit" class="icon icon-cat action-button">
-                      Wijzig wachtwoord
+                    <button type="submit" class="icon icon-check action-button">Goedkeuren</button>
+                  </form>
+                </td>
+                <td>
+                  <form>
+                    <button type="submit" class="icon icon-close action-button">
+                      Deactiveer
                     </button>
                   </form>
                 </td>
                 <td>
                   <form>
-                    <button type="submit" class="icon icon-cat action-button"> Deactiveer </button>
-                  </form>
-                </td>
-                <td>
-                  <form>
-                    <button type="submit" class="icon icon-cat action-button">Verwijder</button>
+                    <button type="submit" class="icon icon-trash action-button">Verwijder</button>
                   </form>
                 </td>
               </tr>
@@ -119,7 +119,7 @@
       <tr>
         <th scope="col">Gebruikersnaam</th>
         <th scope="col">Bekijk profiel</th>
-        <th scope="col">Wijzig wachtwoord</th>
+        <th scope="col">Goedkeuren</th>
         <th scope="col">Deactiveer</th>
         <th scope="col">Verwijder</th>
       </tr>
@@ -129,22 +129,22 @@
           <td>Jane doe</td>
           <td>
               <form>
-                  <button type="submit" class="icon icon-cat action-button">Bekijk profiel</button>
+                  <button type="submit" class="icon icon-user action-button">Bekijk profiel</button>
               </form>
           </td>
           <td>
               <form>
-                  <button type="submit" class="icon icon-cat action-button">Wijzig wachtwoord</button>
+                  <button type="submit" class="icon icon-check action-button">Goedkeuren</button>
               </form>
           </td>
           <td>
               <form>
-                  <button type="submit" class="icon icon-cat action-button">Deactiveer</button>
+                  <button type="submit" class="icon icon-close action-button">Deactiveer</button>
               </form>
           </td>
           <td>
               <form>
-                  <button type="submit" class="icon icon-cat action-button">Verwijder</button>
+                  <button type="submit" class="icon icon-trash action-button">Verwijder</button>
               </form>
           </td>
       </tr>
@@ -165,7 +165,7 @@
       <tr>
         <th scope="col">Gebruikersnaam</th>
         <th scope="col">Bekijk profiel</th>
-        <th scope="col">Wijzig wachtwoord</th>
+        <th scope="col">Goedkeuren</th>
         <th scope="col">Deactiveer</th>
         <th scope="col">Verwijder</th>
       </tr>
@@ -180,7 +180,7 @@
           </td>
           <td>
               <form>
-                  <button type="submit">Wijzig wachtwoord</button>
+                  <button type="submit">Goedkeuren</button>
               </form>
           </td>
           <td>
@@ -202,25 +202,17 @@
       </section>
 
       <section id="requirements">
-        <h2>Bijbehorende bestanden</h2>
-        <p>
-          Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling"
-            >Componenten gebruiken en styling toevoegen</a
-          >
-        </p>
-
-        <h3>Importeer component via NPM</h3>
-        <h4>CSS-voorbeeld:</h4>
-        <Code
-          language="css"
-          code={`
-@use "@minvws/manon/table";
-@use "@minvws/manon/button-base";
-@use "@minvws/manon/icon";
-@use "@minvws/manon/table-action-buttons";
-      `}
-        />
+        <h2>Benodigdheden</h2>
+        <ul>
+          <li><code>table/table-base.scss</code></li>
+          <li><code>table/table-base-variables.scss</code></li>
+          <li><code>button/button-base.scss</code></li>
+          <li><code>button/button-base-variables.scss</code></li>
+          <li><code>icon/icon-base.scss</code></li>
+          <li><code>icon/icon-base-variables.scss</code></li>
+          <li><code>table/table-action-buttons.scss</code></li>
+          <li><code>table/table-action-buttons-variables.scss</code></li>
+        </ul>
       </section>
 
       <section id="variables">

@@ -21,43 +21,45 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Titels</h1>
         <p>Gebruik titels om structuur binnen de pagina aan te geven.</p>
 
-        <h2 class="heading-normal">Aandachtspunten:</h2>
-        <ul>
-          <li>Gebruik altijd een <code>h1</code> per pagina.*</li>
-          <li>
-            Kies altijd het juiste titel-element uit <code>h1</code> &gt; <code>h6</code> op basis van
-            de structuur in de HTML. Niet op basis van de visuele weergave.
-          </li>
-          <li>
-            HTML-elementen h1 &gt; h6 kunnen via de css voorzien worden van stijl. Voor meer
-            informatie zie: <a href="#examples">voorbeelden</a>.
-          </li>
-          <li>
-            Als niet ieder gelijkwaardig titel-element, bijvoorbeeld een h1, dezelfde visuele
-            stijling gebruikt kan de stijl gezet worden door middel van een voorgedefineerde set.
-            Binnen deze set worden de beschikbare "heading-styles" vastgelegd. Denk bijvoorbeeld aan
-            een "heading-large" of een "heading-small". Voor meer informatie hierover zie: <a
-              href="heading-base-set">Titel basisset</a
-            >.
-          </li>
-        </ul>
+        <div class="visually-grouped">
+          <h2 class="heading-normal">Aandachtspunten:</h2>
+          <ul>
+            <li>Gebruik altijd een <code>h1</code> per pagina.*</li>
+            <li>
+              Kies altijd het juiste titel-element uit <code>h1</code> &gt; <code>h6</code> op basis
+              van de structuur in de HTML. Niet op basis van de visuele weergave.
+            </li>
+            <li>
+              HTML-elementen h1 &gt; h6 kunnen via de css voorzien worden van stijl. Voor meer
+              informatie zie: <a href="#examples">voorbeelden</a>.
+            </li>
+            <li>
+              Als niet ieder gelijkwaardig titel-element, bijvoorbeeld een h1, dezelfde visuele
+              stijling gebruikt kan de stijl gezet worden door middel van een voorgedefineerde set.
+              Binnen deze set worden de beschikbare "heading-styles" vastgelegd. Denk bijvoorbeeld
+              aan een "heading-large" of een "heading-small". Voor meer informatie hierover zie: <a
+                href="heading-base-set">Titel basisset</a
+              >.
+            </li>
+          </ul>
 
-        <i
-          >* Eerder was het gebruik van meerdere <code>h1</code>'s per pagina toegestaan. Dit is
-          gewijzigd in de HTML-specs van whatwg. Voor meer informatie hierover zie:
-          <a href="https://github.com/whatwg/html/commit/6682bdeee6fb08f5972bea92064fe250f1b4ec9c"
-            >de commit op whatwg</a
-          >.</i
-        >
+          <i
+            >* Eerder was het gebruik van meerdere <code>h1</code>'s per pagina toegestaan. Dit is
+            gewijzigd in de HTML-specs van whatwg. Voor meer informatie hierover zie:
+            <a href="https://github.com/whatwg/html/commit/6682bdeee6fb08f5972bea92064fe250f1b4ec9c"
+              >de commit op whatwg</a
+            >.</i
+          >
+        </div>
       </section>
 
-      <section id="examples">
+      <section id="examples" class="visually-grouped">
         <h2>Voorbeelden:</h2>
         <h3>Visueel voorbeeld:</h3>
 
@@ -167,10 +169,12 @@
           <h2>Bijbehorende bestanden</h2>
           <p>
             Voor meer informatie over importeren en instellen van componenten. Zie:
-            <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+            <a href="{base}/documentation/import-styling"
+              >Componenten gebruiken en styling toevoegen</a
+            >
           </p>
 
-          <h3>Importeer component via NPM</h3>
+          <h3>Importeer component via npm</h3>
 
           <h4>SCSS-voorbeeld:</h4>
           <Code

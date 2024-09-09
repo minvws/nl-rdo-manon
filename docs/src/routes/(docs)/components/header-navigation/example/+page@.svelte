@@ -44,7 +44,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
       <li><a href="#examples">Voorbeelden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Header visueel voorbeeld</h1>
@@ -59,9 +59,9 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
       </section>
 
       <section id="examples">
-        <h1>Voorbeelden:</h1>
+        <h2>Voorbeelden:</h2>
         <p>Voor het visuele voorbeeld zie de header van deze pagina.</p>
-        <h2>HTML-voorbeeld:</h2>
+        <h3>HTML-voorbeeld:</h3>
         <Code
           language="html"
           code={`

@@ -22,7 +22,7 @@
     </ul>
   </SideMenu>
 
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Article content wrapper</h1>
@@ -62,7 +62,7 @@
         <Code
           language="html"
           code={`
-<article>
+<article class="visually-grouped">
   <div> <!-- Content wrapper -->
     <!-- Content -->
   <div>
@@ -75,10 +75,12 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
 
         <h4>CSS-voorbeeld:</h4>
         <Code
@@ -115,7 +117,8 @@
 
               <tr>
                 <td>--article-content-wrapper-justify-content</td>
-                <td><a href="{base}/documentation/variables#justify-content">justify-content</a></td>
+                <td><a href="{base}/documentation/variables#justify-content">justify-content</a></td
+                >
                 <td>var(--content-justify-content)</td>
                 <td>-</td>
                 <td>-</td>

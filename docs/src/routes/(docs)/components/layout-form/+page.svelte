@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
 
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Layout form</h1>
@@ -133,7 +133,7 @@
           </li>
         </ul>
 
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
 
         <h4>CSS-voorbeeld:</h4>
         <Code

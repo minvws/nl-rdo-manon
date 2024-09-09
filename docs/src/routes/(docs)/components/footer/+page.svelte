@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Footer</h1>
@@ -88,9 +88,11 @@
         <p>Voeg de (s)css-bestanden toe aan het project of importeer de bestanden.</p>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
-        <h2>Importeer component via NPM</h2>
+        <h2>Importeer component via npm</h2>
         <h3>CSS-voorbeeld:</h3>
         <Code
           language="css"
@@ -133,7 +135,8 @@
 
               <tr>
                 <td>--footer-justify-content</td>
-                <td><a href="{base}/documentation/variables#justify-content">justify-content</a></td>
+                <td><a href="{base}/documentation/variables#justify-content">justify-content</a></td
+                >
                 <td>center</td>
                 <td>-</td>
                 <td>-</td>
@@ -165,7 +168,10 @@
 
               <tr>
                 <td>--footer-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--application-base-tint-1-background-color)</td>
                 <td>-</td>
                 <td>-</td>
@@ -229,7 +235,8 @@
 
               <tr>
                 <td>--footer-link-text-decoration</td>
-                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td
+                >
                 <td>none</td>
                 <td>-</td>
                 <td>-</td>
@@ -245,7 +252,8 @@
 
               <tr>
                 <td>--footer-link-hover-text-decoration</td>
-                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td
+                >
                 <td>underline</td>
                 <td>-</td>
                 <td>-</td>

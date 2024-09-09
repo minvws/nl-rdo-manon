@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Layout fifty-fifty</h1>
@@ -130,7 +130,7 @@
           >
         </p>
 
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
 
         <p>
           Het is mogelijk om gebruik te maken van de layout-set. Door hier gebruik van te maken

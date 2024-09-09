@@ -23,7 +23,7 @@
     </ul>
   </SideMenu>
 
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Layout gecentreerd</h1>
@@ -63,15 +63,14 @@
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>
-
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
         <h4>CSS-voorbeeld:</h4>
         <Code
           language="css"
           code={`
 @use "@minvws/manon/layout-base";
 @use "@minvws/manon/layout-centered";
-      `}
+`}
         />
       </section>
 

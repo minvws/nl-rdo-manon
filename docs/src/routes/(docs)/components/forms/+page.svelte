@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Formulieren</h1>
@@ -44,16 +44,23 @@
                     <a href="{base}/components/form-input-color">Kleurselector</a>
                   </li>
                   <li>
-                    <a href="{base}/components/form-input-color-filled">Kleurselector volledig gevuld</a>
+                    <a href="{base}/components/form-input-color-filled"
+                      >Kleurselector volledig gevuld</a
+                    >
                   </li>
                 </ul>
               </li>
               <li><a href="{base}/components/form-notification">Notificatie</a></li>
-              <li><a href="{base}/components/form-input-radio">Radio-selecteerknop - <code>radio</code></a></li>
+              <li>
+                <a href="{base}/components/form-input-radio"
+                  >Radio-selecteerknop - <code>radio</code></a
+                >
+              </li>
               <li><a href="{base}/components/form-input-password">Wachtwoord</a></li>
               <li><a href="{base}/components/checkbox">Selectievak - <code>checkbox</code></a></li>
               <li>
-                <a href="{base}/components/form-input-textarea">Tekstveld - <code>textarea</code></a>
+                <a href="{base}/components/form-input-textarea">Tekstveld - <code>textarea</code></a
+                >
               </li>
               <li>
                 <a href="{base}/components/form-select">Selectielijst - <code>select</code></a>
@@ -68,10 +75,14 @@
               <li><a href="{base}/components/form-fieldset">Fieldset</a></li>
               <li><a href="{base}/components/form-fieldset-invisible">Onzichtbare fieldset</a></li>
               <li>
-                <a href="{base}/components/fieldset-radio">Fieldset radio-selecteerknop - <code>radio</code></a>
+                <a href="{base}/components/fieldset-radio"
+                  >Fieldset radio-selecteerknop - <code>radio</code></a
+                >
               </li>
               <li>
-                <a href="{base}/components/fieldset-checkbox">Fieldset selectievak - <code>checkbox</code></a>
+                <a href="{base}/components/fieldset-checkbox"
+                  >Fieldset selectievak - <code>checkbox</code></a
+                >
               </li>
             </ul>
           </nav>
@@ -90,7 +101,8 @@
                 <a href="{base}/components/form-columns">Weergave in kolommen</a>
               </li>
               <li>
-                <a href="{base}/components/form-horizontal-view">Horizontaal uitgelijnd formulier</a>
+                <a href="{base}/components/form-horizontal-view">Horizontaal uitgelijnd formulier</a
+                >
               </li>
               <li><a href="{base}/components/form-inline">"inline"-formulier</a></li>
             </ul>

@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Taalselectie</h1>
@@ -131,10 +131,12 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
 
         <h4>CSS-voorbeeld:</h4>
         <Code
@@ -233,7 +235,10 @@
 
               <tr>
                 <td>--language-selector-list-item-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--application-base-background-color)</td>
                 <td>-</td>
               </tr>
@@ -268,7 +273,10 @@
 
               <tr>
                 <td>--language-selector-list-item-hover-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--branding-color-1-background-color)</td>
                 <td>-</td>
               </tr>
@@ -296,7 +304,10 @@
 
               <tr>
                 <td>--language-selector-list-item-active-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>var(--branding-color-2-background-color)</td>
                 <td>-</td>
               </tr>
@@ -324,7 +335,10 @@
 
               <tr>
                 <td>--language-selector-list-button-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>transparent</td>
                 <td>-</td>
               </tr>

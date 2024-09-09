@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Fieldset - <code>fieldset</code></h1>
@@ -48,11 +48,7 @@
           <fieldset>
             <legend>Titel</legend>
             <label for="example-input-base">Voorbeeld invoerveld</label>
-            <input
-              id="example-input-base"
-              name="example-input-base"
-              type="text"
-            />
+            <input id="example-input-base" name="example-input-base" type="text" />
           </fieldset>
           <button type="submit">Verzend</button>
         </form>
@@ -81,10 +77,12 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
 
         <h4>CSS-voorbeeld:</h4>
         <Code

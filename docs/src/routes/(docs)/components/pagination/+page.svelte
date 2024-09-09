@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Paginering</h1>
@@ -50,7 +50,9 @@
         <p>Visueel voorbeeld:</p>
         <nav class="pagination" aria-label="Paginering" id="pagination-nav">
           <ul>
-            <li><a href="#pagination-nav" aria-label="Ga naar pagina 1" aria-current="true">1</a></li>
+            <li>
+              <a href="#pagination-nav" aria-label="Ga naar pagina 1" aria-current="true">1</a>
+            </li>
             <li><a href="#pagination-nav" aria-label="Ga naar pagina 2">2</a></li>
             <li><a href="#pagination-nav" aria-label="Ga naar pagina 3">3</a></li>
             <li><a href="#pagination-nav" aria-label="Ga naar pagina 4">4</a></li>
@@ -77,15 +79,26 @@
 
         <h4>Met class <code>pagination</code> en "vorige" en "volgende links.</h4>
         <nav class="pagination" aria-label="Paginering" id="pagination-next-prev">
-          <a href="#pagination-next-prev" aria-label="Ga naar de vorige pagina" class="adjacent previous">Vorige</a>
+          <a
+            href="#pagination-next-prev"
+            aria-label="Ga naar de vorige pagina"
+            class="adjacent previous">Vorige</a
+          >
           <ul>
             <li><a href="#pagination-next-prev" aria-label="Ga naar pagina 1">1</a></li>
-            <li><a href="#pagination-next-prev" aria-label="Ga naar pagina 2" aria-current="true">2</a></li>
+            <li>
+              <a href="#pagination-next-prev" aria-label="Ga naar pagina 2" aria-current="true">2</a
+              >
+            </li>
             <li><a href="#pagination-next-prev" aria-label="Ga naar pagina 3">3</a></li>
             <li><a href="#pagination-next-prev" aria-label="Ga naar pagina 4">4</a></li>
             <li><a href="#pagination-next-prev" aria-label="Ga naar pagina 5">5</a></li>
           </ul>
-          <a href="#pagination-next-prev" aria-label="Ga naar de volgende pagina" class="adjacent next">Volgende</a>
+          <a
+            href="#pagination-next-prev"
+            aria-label="Ga naar de volgende pagina"
+            class="adjacent next">Volgende</a
+          >
         </nav>
 
         <p>HTML-voorbeeld:</p>
@@ -111,10 +124,12 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
 
         <h4>CSS-voorbeeld:</h4>
         <Code

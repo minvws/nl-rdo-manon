@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Invoerveld testpagina</h1>
@@ -24,11 +24,7 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <label for="voorbeeld-invoerveld-direct">Voorbeeld invoerveld</label>
-          <input
-            id="voorbeeld-invoerveld-direct"
-            name="voorbeeld-invoerveld-direct"
-            type="text"
-          />
+          <input id="voorbeeld-invoerveld-direct" name="voorbeeld-invoerveld-direct" type="text" />
           <button type="submit">Verzend</button>
         </form>
 
@@ -53,11 +49,7 @@
         <form action="" method="post">
           <div>
             <label for="voorbeeld-invoerveld-div">Voorbeeld invoerveld</label>
-            <input
-              id="voorbeeld-invoerveld-div"
-              name="voorbeeld-invoerveld-div"
-              type="text"
-            />
+            <input id="voorbeeld-invoerveld-div" name="voorbeeld-invoerveld-div" type="text" />
           </div>
           <button type="submit">Verzend</button>
         </form>

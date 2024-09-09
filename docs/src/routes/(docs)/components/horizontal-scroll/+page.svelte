@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Horizontale scroll</h1>
@@ -445,13 +445,13 @@
           >
         </p>
 
-        <h3>Importeer component via NPM</h3>
+        <h3>Importeer component via npm</h3>
         <h4>CSS-voorbeeld:</h4>
         <Code
           language="css"
           code={`
 @use "@minvws/manon/horizontal-scroll";
-      `}
+`}
         />
 
         <h5>Optioneel:</h5>
@@ -459,7 +459,7 @@
           language="css"
           code={`
 @use "@minvws/manon/nowrap";
-      `}
+`}
         />
       </section>
 
