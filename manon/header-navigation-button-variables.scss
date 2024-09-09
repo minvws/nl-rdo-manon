@@ -7,12 +7,10 @@
 
 :root {
   @include button.button-variables("header-navigation-button-", "button-base-");
-
   @include outline.outline-variables(
     "header-navigation-button-focus-",
     "button-base-focus-"
   );
-
   @include icon-only.icon-only-variables(
     "header-navigation-button-icon-only-",
     "button-icon-only-"

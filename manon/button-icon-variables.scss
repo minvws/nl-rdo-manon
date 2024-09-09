@@ -6,7 +6,6 @@
 
 :root {
   @include button.button-variables("button-icon-", "button-base-");
-
   @include outline.outline-variables(
     "button-icon-focus-",
     "button-base-focus-"
