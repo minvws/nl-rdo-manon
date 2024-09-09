@@ -85,7 +85,11 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
     class="collapsible"
   >
     <div class="collapsing-element">
-      <SiteNavLinks />
+      <ul>
+        <li><a href="../../index">Home</a></li>
+        <li><a href="../components" aria-current="page">Componenten</a></li>
+        <li><a href="../documentation">Documentatie</a></li>
+      </ul>
 
       <div>
         <form class="inline">
