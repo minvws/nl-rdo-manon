@@ -33,7 +33,7 @@
           <h2>Link als button: <code>a</code></h2>
           <h3>Visuele weergave:</h3>
 
-          <a href="#" class="button">Lorem ipsum</a>
+          <a href="button-base" class="button">Lorem ipsum</a>
 
           <h3>HTML-voorbeeld:</h3>
           <Code
