@@ -31,9 +31,8 @@
 
   --button-base-focus-border-color: #{color-scheme.$oc-blue-6};
   --button-base-focus-text-color: #{color-scheme.$oc-blue-8};
-  --button-base-focus-outline-style: solid;
-  --button-base-focus-outline-color: #{color-scheme.$oc-gray-3};
-  --button-base-focus-outline-width: 1px;
+  --button-base-focus-outline: 1px solid #{color-scheme.$oc-gray-3};
+  // --button-base-focus-outline-width: 1px;
   --button-base-focus-outline-offset: -0.25rem;
 
   /* Selected */

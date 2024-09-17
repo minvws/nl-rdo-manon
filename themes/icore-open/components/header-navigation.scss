@@ -17,9 +17,6 @@
   --header-navigation-align-items: stretch;
   --header-navigation-justify-content: space-between;
 
-  /* List */
-  --header-navigation-list-gap: 0;
-
   /* Link*/
   --header-navigation-link-background-color: transparent;
   --header-navigation-link-padding-right: 1rem;
@@ -29,8 +26,12 @@
   --header-navigation-link-text-decoration: none;
 
   /* List */
+  --header-navigation-list-gap: 0;
   --header-navigation-list-align-content: stretch;
   --header-navigation-list-width: auto;
+
+  /* Input */
+  --header-navigation-input-algin-self: center;
 
   /* Collapsed icon */
   --navigation-collapsible-menu-icon-font-size: 2rem;

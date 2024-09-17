@@ -1,21 +1,30 @@
 <script context="module">
-  export const breadcrumb = "Knoppen basisweergave";
+  export const breadcrumb = "Knoppen (basisweergave)";
 </script>
 
 <script>
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
+  import SideMenu from "$lib/SideMenu.svelte";
 </script>
 
 <svelte:head>
-  <title>Knoppen basisweergave</title>
+  <title>Knoppen (basisweergave)</title>
 </svelte:head>
 
-<main id="main-content" tabindex="-1">
-  <article id="button-base">
+<main class="sidemenu" id="main-content" tabindex="-1">
+  <SideMenu>
+    <ul>
+      <li><a href="#examples">Voorbeelden</a></li>
+      <li><a href="#requirements">Bijbehorende bestanden</a></li>
+      <li><a href="#related">Gerelateerde pagina's</a></li>
+    </ul>
+  </SideMenu>
+
+  <article id="examples" class="visually-grouped">
     <div>
-      <h1>Basisweergave</h1>
-      <section id="button-base-button" class="visually-grouped">
+      <h1>Knoppen (basisweergave)</h1>
+      <section id="button-base-button">
         <h2><code>button</code></h2>
         <h3>Visuele weergave:</h3>
 
@@ -28,7 +37,24 @@
 <button>Lorem ipsum</button>
 `}
         />
+      </section>
 
+      <section id="button-base-link-button">
+        <h2>Link als button: <code>a</code></h2>
+        <h3>Visuele weergave:</h3>
+
+        <a href="button-base" class="button">Lorem ipsum</a>
+
+        <h3>HTML-voorbeeld:</h3>
+        <Code
+          language="html"
+          code={`
+<a href="#" class="button">Lorem ipsum</a>
+  `}
+        />
+      </section>
+
+      <section id="button-base-disabled">
         <h2><code>button</code> uitgeschakeld</h2>
         <h3>Visuele weergave:</h3>
 
@@ -43,7 +69,7 @@
         />
       </section>
 
-      <section id="button-base-input" class="visually-grouped">
+      <section id="button-base-input">
         <h2><code>input type="button"</code></h2>
         <h3>Visuele weergave:</h3>
 
@@ -71,7 +97,7 @@
         />
       </section>
 
-      <section id="requirements" class="visually-grouped">
+      <section id="requirements">
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
@@ -96,7 +122,7 @@
         />
       </section>
 
-      <section id="related" class="visually-grouped">
+      <section id="related">
         <h2>Gerelateerde pagina's</h2>
         <a href="{base}/components/button-test">Test- en voorbeelden-pagina</a>
       </section>

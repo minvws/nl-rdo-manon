@@ -53,6 +53,9 @@
               >Navigatie met content wrapper</a
             >
           </li>
+          <li>
+            <a href="{base}/components/header-navigation/example-search">Navigatie met zoekveld</a>
+          </li>
           <li><a href="{base}/components/header-navigation/example-logo">Navigatie en logo</a></li>
           <li>
             <a href="{base}/components/header-navigation/example-multiple-menus"
@@ -81,8 +84,11 @@
       </section>
 
       <section id="requirements">
-        <h2>Bijbehorende bestanden</h2>
-        <p>Voeg de (s)css-bestanden toe aan het project of importeer de bestanden.</p>
+        <h1>Bijbehorende bestanden</h1>
+        <p>
+          Voeg de (s)css-bestanden toe aan het project of importeer de bestanden. Hiervoor kunnen de
+          bestanden gebruikt worden uit beschikbare Manon-thema's. Of uit zelf gemaakte thema's.
+        </p>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
           <a href="{base}/documentation/import-styling"

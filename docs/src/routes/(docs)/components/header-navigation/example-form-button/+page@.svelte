@@ -40,7 +40,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
           <li>
             <form class="inline">
               <input type="hidden" name="_token" value="" />
-              <button type="submit">Logout</button>
+              <a href="#" class="button" type="submit">Logout</a>
             </form>
           </li>
         </ul>
@@ -116,3 +116,22 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 </main>
 
 <DefaultFooter />
+
+<style>
+  :root {
+    /* Header */
+    --header-border-width: 0 0 1px 0;
+    --header-border-color: #ccc;
+
+    /* Content wrapper */
+    --header-content-wrapper-position: relative;
+
+    /* Header navigation */
+    --header-navigation-position: static;
+    --header-navigation-border-width: 0;
+    --header-navigation-content-wrapper-gap: 1rem;
+
+    /* Collapsible menu */
+    --header-navigation-collapsible-menu-top: 4rem;
+  }
+</style>

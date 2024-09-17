@@ -5,7 +5,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 -->
 
 <script context="module">
-  export const breadcrumb = "Header met navigatie met meerdere menus";
+  export const breadcrumb = "Header met navigatie met een zoekveld";
 </script>
 
 <script>
@@ -20,27 +20,30 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 </script>
 
 <svelte:head>
-  <title>Header met navigatie met meerdere menus</title>
+  <title>Header met navigatie met een zoekveld</title>
 </svelte:head>
 
 <header>
-  <div>
-    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
-    <nav
-      data-open-label="Menu"
-      data-close-label="Sluit menu"
-      data-media="(min-width: 30rem)"
-      aria-label="Hoofdnavigatie"
-      class="collapsible"
-    >
-      <div class="collapsing-element">
-        <SiteNavLinks />
-        <ul>
-          <li><a href="example-multiple-menus">Logout</a></li>
-        </ul>
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+  <nav
+    data-open-label="Menu"
+    data-close-label="Sluit menu"
+    data-media="(min-width:42rem)"
+    aria-label="Hoofdnavigatie"
+    class="collapsible"
+  >
+    <div class="collapsing-element">
+      <SiteNavLinks />
+
+      <div>
+        <form class="inline">
+          <input type="text" placeholder="Zoeken" />
+          <button type="submit" class="icon-only icon-search">Zoeken</button>
+        </form>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
 
 <main class="sidemenu" id="main-content" tabindex="-1">
@@ -53,7 +56,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
   <article class="visually-grouped">
     <div>
       <section id="introduction">
-        <h1>Header met meerdere menus visueel voorbeeld</h1>
+        <h1>Header met een zoekveld visueel voorbeeld</h1>
 
         <h2>Benodigde stappen:</h2>
         <ol>
@@ -65,35 +68,37 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
       </section>
 
       <section id="examples">
-        <h2>Voorbeelden:</h2>
+        <h1>Voorbeelden:</h1>
         <p>Voor het visuele voorbeeld zie de header van deze pagina.</p>
-        <h3>HTML-voorbeeld:</h3>
+        <h2>HTML-voorbeeld:</h2>
         <Code
           language="html"
           code={`
 <header>
-  <div>
-      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-      <nav
-      data-open-label="Menu"
-      data-close-label="Sluit menu"
-      data-media="(min-width: 30rem)"
-      aria-label="Hoofdnavigatie"
-      class="collapsible">
-        <div class="collapsing-element">
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/components">Componenten</a></li>
-              <li><a href="/documentation">Documentatie</a></li>
-            </ul>
+  <nav
+    data-open-label="Menu"
+    data-close-label="Sluit menu"
+    data-media="(min-width:42rem)"
+    aria-label="Hoofdnavigatie"
+    class="collapsible"
+  >
+    <div class="collapsing-element">
+      <ul>
+        <li><a href="../../index">Home</a></li>
+        <li><a href="../components" aria-current="page">Componenten</a></li>
+        <li><a href="../documentation">Documentatie</a></li>
+      </ul>
 
-            <ul>
-              <li><a href="#">Logout</a></li>
-            </ul>
-        </div>
-      </nav>
-  </div>
+      <div>
+        <form class="inline">
+          <input type="text" placeholder="Zoeken" />
+          <button type="submit" class="icon-only icon-search">Zoeken</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 </header>
 `}
         />
@@ -117,7 +122,15 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
     --header-navigation-position: static;
     --header-navigation-border-width: 0;
 
+    /* Header navigation content */
+    --header-navigation-content-wrapper-gap: 1rem;
+
     /* Collapsible menu */
     --header-navigation-collapsible-menu-top: 4rem;
+
+    /* Header nav icon */
+    --header-navigation-button-hover-font-size: 0;
+    --header-navigation-button-hover-background-color: transparent;
+    --header-navigation-button-hover-color: var(--button-icon-only-text-color);
   }
 </style>
