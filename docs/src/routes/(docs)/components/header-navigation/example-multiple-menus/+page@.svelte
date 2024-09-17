@@ -109,8 +109,6 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
     /* Header */
     --header-border-width: 0 0 1px 0;
     --header-border-color: #ccc;
-    --header-padding-right: var(--page-whitespace-right);
-    --header-padding-left: var(--page-whitespace-left);
 
     /* Content wrapper */
     --header-content-wrapper-position: relative;
@@ -118,8 +116,6 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
     /* Header navigation */
     --header-navigation-position: static;
     --header-navigation-border-width: 0;
-    --header-navigation-padding-right: 0;
-    --header-navigation-padding-left: 0;
 
     /* Collapsible menu */
     --header-navigation-collapsible-menu-top: 4rem;

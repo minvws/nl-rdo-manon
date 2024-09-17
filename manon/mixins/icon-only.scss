@@ -23,6 +23,7 @@
   &:hover {
     background-color: var(--#{$prefix}hover-background-color);
     border-width: var(--#{$prefix}hover-border-width);
+    font-size: var(--#{$prefix}hover-font-size);
   }
 }
 

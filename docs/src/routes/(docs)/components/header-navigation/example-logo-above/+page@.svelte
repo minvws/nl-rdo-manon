@@ -26,7 +26,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 <header>
   <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
   <a href="{base}/" class="logo">
-    <img src="$img/logo-white.svg" alt="Placeholder logo" />Manon
+    <img src="$img/logo.svg" alt="Placeholder logo" />Manon
   </a>
   <nav
     data-open-label="Menu"
@@ -76,7 +76,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
     <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
     <a href="./logo" class="logo">
-      <img src="/img/logo-white.svg" alt="Placeholder logo">Manon
+      <img src="/img/logo.svg" alt="Placeholder logo">Manon
     </a>
 
     <nav
