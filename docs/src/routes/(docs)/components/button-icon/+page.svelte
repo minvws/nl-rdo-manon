@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
 
-  <article id="button-base">
+  <article id="button-base" class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Icoonknoppen</h1>
@@ -52,7 +52,7 @@
         <h2><code>button</code></h2>
         <h3>Visuele weergave:</h3>
 
-        <button class="icon icon-cat">Lorem ipsum</button>
+        <button class="icon icon-chevron-down">Lorem ipsum</button>
 
         <h3>HTML-voorbeeld:</h3>
         <Code

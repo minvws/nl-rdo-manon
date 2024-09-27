@@ -18,8 +18,8 @@
   @include icon;
 
   & {
-    font-family: var(--#{$prefix}icon-font-family);
-    font-size: var(--#{$prefix}icon-font-size);
+    font-family: var(--#{$prefix}icon-font-family, var(--icon-font-family));
+    font-size: var(--#{$prefix}icon-font-size, var(--icon-font-size));
     line-height: var(--#{$prefix}icon-line-height);
     text-decoration: var(--#{$prefix}icon-text-decoration);
     padding-right: var(--#{$prefix}icon-padding-right);
