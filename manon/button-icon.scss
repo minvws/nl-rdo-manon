@@ -11,26 +11,26 @@ a.button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  &.icon,
-  .icon {
+  &.icon {
     gap: 0;
     min-width: 0;
 
     @include button.button("button-icon-");
+  }
 
-    &:focus,
-    &.focus {
-      @include outline.outline("button-icon-focus-");
-
-      &:visited,
-      &.visited {
-        @include outline.outline("button-icon-focus-");
-      }
-    }
-
+  .icon {
     &::before {
       @include icon.icon-format("button-icon-");
       @include icon.icon-content("button-icon-");
+    }
+  }
+}
+
+a.button {
+  &.icon {
+    &:visited,
+    &.visited {
+      @include outline.outline("button-icon-focus-");
     }
   }
 }

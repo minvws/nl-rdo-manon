@@ -52,13 +52,32 @@
         <h2><code>button</code></h2>
         <h3>Visuele weergave:</h3>
 
-        <button class="icon icon-chevron-down">Lorem ipsum</button>
+        <button class="icon icon-search" aria-label="search">Search</button>
 
         <h3>HTML-voorbeeld:</h3>
         <Code
           language="html"
           code={`
-<button class="icon icon-cat">Lorem ipsum</button>
+<button class="icon icon-search" aria-label="search">Search</button>
+`}
+        />
+
+        <h2><code>button</code> met <code>span</code></h2>
+        <h3>Visuele weergave:</h3>
+
+        <button class="ghost">
+          <span aria-hidden="true" class="icon icon-search"></span>
+          Search
+        </button>
+
+        <h3>HTML-voorbeeld:</h3>
+        <Code
+          language="html"
+          code={`
+<button class="ghost">
+  <span aria-hidden="true" class="icon icon-search"></span>
+  Search
+</button>
 `}
         />
 
@@ -66,7 +85,7 @@
         <h3>Visuele weergave:</h3>
 
         <button class="icon">
-          Lorem ipsum <img src="$img/cat-white.svg" alt="Kat" />
+          Lorem ipsum <img src="$img/cat.svg" alt="Kat" />
         </button>
 
         <h3>HTML-voorbeeld:</h3>
