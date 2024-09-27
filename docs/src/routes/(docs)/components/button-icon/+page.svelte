@@ -100,7 +100,7 @@
         <h3>Visuele weergave:</h3>
 
         <a href="{base}/components/button-icon" class="button icon"
-          >Lorem ipsum <img src="$img/cat-white.svg" alt="Kat" /></a
+          >Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></a
         >
 
         <h3>HTML-voorbeeld:</h3>
