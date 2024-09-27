@@ -404,17 +404,17 @@
             </ul>
           </li>
           <li>
-            Open en sluit icoon. Keuze uit <code>:before</code> of
-            <code>:after</code>
+            Open en sluit icoon. Keuze uit <code>::before</code> of
+            <code>::after</code>
             <ul>
               <li>
-                <code>:before</code>
+                <code>::before</code>
                 <ul>
                   <li><a href="{base}/documentation/variables#icon">icon</a></li>
                 </ul>
               </li>
               <li>
-                <code>:after</code>
+                <code>::after</code>
                 <ul>
                   <li><a href="{base}/documentation/variables#icon">icon</a></li>
                   <li>

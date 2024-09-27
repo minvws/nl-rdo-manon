@@ -49,10 +49,10 @@
         <nav>
           <ul>
             <li><a href="navigation">Basis</a></li>
-            <li><a href="navigation" class="icon icon-cat">Met <code>:before</code></a></li>
+            <li><a href="navigation" class="icon icon-cat">Met <code>::before</code></a></li>
             <li>
               <a href="navigation" class="icon-after icon-cat"
-                >Met <code>:after</code><span class="icon icon-cat">Kat icoon</span></a
+                >Met <code>::after</code><span class="icon icon-cat">Kat icoon</span></a
               >
             </li>
 
@@ -60,12 +60,12 @@
 
             <li>
               <a href="navigation" class="hover icon icon-cat"
-                >Hover met <code>:before:hover</code></a
+                >Hover met <code>::before:hover</code></a
               >
             </li>
             <li>
               <a href="navigation" class="hover"
-                >Hover met <code>:before:hover</code> <span class="icon icon-cat"></span></a
+                >Hover met <code>::before:hover</code> <span class="icon icon-cat"></span></a
               >
             </li>
 
@@ -199,12 +199,12 @@
             <li><a href="#nav-a-hover" class="hover">Lorem ipsum</a></li>
             <li>
               <a href="#nav-a-hover" class="hover icon icon-cat"
-                >Hover met <code>:before:hover</code></a
+                >Hover met <code>::before:hover</code></a
               >
             </li>
             <li>
               <a href="#nav-a-hover" class="hover"
-                >Hover met <code>:before:hover</code> <span class="icon icon-cat"></span></a
+                >Hover met <code>::before:hover</code> <span class="icon icon-cat"></span></a
               >
             </li>
           </ul>
@@ -217,8 +217,8 @@
 <nav>
     <ul>
         <li><a href="#" class="hover">Lorem ipsum</a></li>
-        <li><a href="#" class="hover icon icon-cat">Hover met <code>:before:hover</code></a></li>
-        <li><a href="#" class="hover">Hover met <code>:before:hover</code> <span class="icon icon-cat"></span></a></li>
+        <li><a href="#" class="hover icon icon-cat">Hover met <code>::before:hover</code></a></li>
+        <li><a href="#" class="hover">Hover met <code>::before:hover</code> <span class="icon icon-cat"></span></a></li>
     </ul>
 </nav>
 `}
@@ -230,12 +230,12 @@
             <li><a href="#nav-a-active" class="active">Lorem ipsum</a></li>
             <li>
               <a href="#nav-a-active" class="active icon icon-cat"
-                >active met <code>:before:active</code></a
+                >active met <code>::before:active</code></a
               >
             </li>
             <li>
               <a href="#nav-a-active" class="active"
-                >active met <code>:before:active</code> <span class="icon icon-cat"></span></a
+                >active met <code>::before:active</code> <span class="icon icon-cat"></span></a
               >
             </li>
           </ul>
@@ -248,8 +248,8 @@
 <nav>
     <ul>
         <li><a href="#" class="active">Lorem ipsum</a></li>
-        <li><a href="#" class="active icon icon-cat">active met <code>:before:active</code></a></li>
-        <li><a href="#" class="active">active met <code>:before:active</code> <span class="icon icon-cat"></span></a></li>
+        <li><a href="#" class="active icon icon-cat">active met <code>::before:active</code></a></li>
+        <li><a href="#" class="active">active met <code>::before:active</code> <span class="icon icon-cat"></span></a></li>
     </ul>
 </nav>
 `}

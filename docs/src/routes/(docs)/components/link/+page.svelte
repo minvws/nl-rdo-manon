@@ -47,15 +47,15 @@
 
         <h4>Visueel voorbeeld:</h4>
         <a href="link">Basis</a>
-        <a href="link" class="icon icon-cat">Met <code>:before</code></a>
+        <a href="link" class="icon icon-cat">Met <code>::before</code></a>
         <a href="link" class="icon-after icon-cat"
-          >Met <code>:after</code><span class="icon icon-cat">Kat icoon</span></a
+          >Met <code>::after</code><span class="icon icon-cat">Kat icoon</span></a
         >
 
         <a href="link" class="hover">Hover <code>:hover</code></a>
-        <a href="link" class="hover icon icon-cat">Hover met <code>:before:hover</code></a>
+        <a href="link" class="hover icon icon-cat">Hover met <code>::before:hover</code></a>
         <a href="link" class="hover"
-          >Hover met <code>:before:hover</code> <span class="icon icon-cat"></span></a
+          >Hover met <code>::before:hover</code> <span class="icon icon-cat"></span></a
         >
 
         <a href="link" class="active">Actieve link</a>
