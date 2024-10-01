@@ -8,7 +8,7 @@
 @mixin icon-only($prefix) {
   background-color: var(--#{$prefix}background-color);
   border-width: var(--#{$prefix}border-width);
-  font-size: var(--#{$prefix}font-size);
+  font-size: 0;
   min-width: var(--#{$prefix}min-width);
   gap: var(--#{$prefix}gap);
   padding-right: var(--#{$prefix}padding-right);
@@ -23,7 +23,7 @@
   &:hover {
     background-color: var(--#{$prefix}hover-background-color);
     border-width: var(--#{$prefix}hover-border-width);
-    font-size: var(--#{$prefix}hover-font-size);
+    font-size: 0;
   }
 }
 
