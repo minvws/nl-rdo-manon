@@ -96,6 +96,17 @@
         <span class="icon icon-user">Gebruiker</span>
         <h4>HTML-voorbeeld</h4>
         <Code language="html" code={`<span class="icon icon-user">Gebruiker</span>`} />
+
+        <h3>Icoon binnen link<code>a</code></h3>
+        <h4>Visueel voorbeeld</h4>
+        <a href="#"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>
+
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`<a href="#"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>`}
+        />
+
         <h3><code>button</code></h3>
         <h4>Visueel voorbeeld</h4>
         <button class="icon icon-on-off">Aan- of uitschakelen</button>
