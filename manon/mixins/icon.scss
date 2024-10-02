@@ -50,6 +50,8 @@
 }
 
 @mixin define-icons($glyphs, $position: "before", $font-family: null) {
+  /* Specified for link as buttons to allow a.button icons to be overwritten by using the variable. */
+  a.button .icon,
   .icon,
   .icon-only {
     @each $name, $glyph in $glyphs {

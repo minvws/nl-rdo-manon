@@ -53,8 +53,9 @@
 
         <h3>pseudo-element op button</h3>
         <p class="warning" role="group" aria-label="waarschuwing">
-          <span>Waarschuwing:</span> Dit voorbeeld wordt uitgefaseerd omdat het niet de voorkeur heeft
-          omwille van toegankelijkheid. Gebruik in plaats hiervan een van de overige voorbeelden.
+          <span>Waarschuwing:</span> Het voorbeeld met een pseudo-element direct op button wordt uitgefaseerd
+          omdat het niet de voorkeur heeft omwille van toegankelijkheid. Gebruik in plaats hiervan een
+          van de overige voorbeelden.
         </p>
 
         <h4>Visueel voorbeeld</h4>

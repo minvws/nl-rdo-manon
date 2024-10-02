@@ -110,8 +110,9 @@
         <h3><code>button</code></h3>
         <h4>Visueel voorbeeld pseudo-element op button</h4>
         <p class="warning" role="group" aria-label="waarschuwing">
-          <span>Waarschuwing:</span> Dit voorbeeld wordt uitgefaseerd omdat het niet de voorkeur heeft
-          omwille van toegankelijkheid. Gebruik in plaats hiervan een van de overige voorbeelden.
+          <span>Waarschuwing:</span> Het voorbeeld met een pseudo-element direct op button wordt uitgefaseerd
+          omdat het niet de voorkeur heeft omwille van toegankelijkheid. Gebruik in plaats hiervan een
+          van de overige voorbeelden.
         </p>
         <button class="icon icon-on-off" aria-label="Aan- of uitschakelen"
           >Aan- of uitschakelen</button
