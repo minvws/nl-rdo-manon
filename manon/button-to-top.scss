@@ -3,6 +3,21 @@
 /*---------------------------------------------------------------*/
 @use "button-to-top-variables";
 
+%icon-styling {
+  & {
+    color: var(--button-to-top-icon-color);
+
+    &:hover,
+    &:visited,
+    &:visited:hover {
+      color: var(
+        --button-to-top-icon-color-hover,
+        var(--button-to-top-icon-color)
+      );
+    }
+  }
+}
+
 .to-top,
 a.button.to-top,
 button.to-top {
@@ -21,14 +36,21 @@ button.to-top {
   border-color: var(--button-to-top-border-color);
   background-color: var(--button-to-top-background-color);
   color: var(--button-to-top-text-color);
+  gap: var(--button-to-top-gap, 0);
 
   &:hover {
     background-color: var(--button-to-top-hover-background-color);
     color: var(--button-to-top-hover-text-color);
     border-color: var(--button-to-top-hover-border-color);
-  }
 
+    .icon {
+      ::before {
+        @extend %icon-styling;
+      }
+    }
+  }
+  .icon::before,
   &::before {
-    color: var(--button-to-top-icon-color);
+    @extend %icon-styling;
   }
 }
