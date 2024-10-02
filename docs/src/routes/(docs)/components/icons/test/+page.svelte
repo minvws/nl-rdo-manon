@@ -350,25 +350,25 @@
         <ul>
           <li>
             Default:
-            <a href="loremipsumdolorsetabc">
+            <a href="./test">
               <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
             </a>
           </li>
           <li>
             Focus:
-            <a href="loremipsumdolorsetabc" class="focus">
+            <a href="./test" class="focus">
               <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
             </a>
           </li>
           <li>
             Active:
-            <a href="loremipsumdolorsetabc" class="active">
+            <a href="./test" class="active">
               <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
             </a>
           </li>
           <li>
             Hover:
-            <a href="loremipsumdolorsetabc" class="hover">
+            <a href="./test" class="hover">
               <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
             </a>
           </li>
