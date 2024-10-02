@@ -28,21 +28,6 @@
           >.
         </p>
 
-        <p>Aandachtspunten:</p>
-        <ul>
-          <li>
-            Als het icoon puur decoratief is, kan deze verborgen worden voor
-            screenreader-gebruikers. Dit kan doormiddel van een <code>aria-hidden="true"</code> op de
-            svg.
-          </li>
-          <li>
-            Als het icoon opzichzelfstaand is dient deze een kort en duidelijk label te krijgen als
-            alternatief voor screenreader-gebruikers. Bijvoorbeeld:
-            <code>aria-label="Gebruikersprofiel"</code>. Het icoon dient in dit geval ook
-            <code>role="img"</code> te krijgen.
-          </li>
-        </ul>
-
         <h4>Visueel voorbeeld opzichzelfstaand icoon</h4>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -62,29 +47,6 @@
           <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
           <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
         </svg>
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-user"
-  role="img"
-  aria-label="Gebruikersprofiel">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-          `}
-        />
 
         <h3><code>button</code></h3>
         <h4>Visueel voorbeeld pseudo-element op button</h4>
@@ -96,26 +58,11 @@
         <button class="icon icon-on-off" aria-label="Aan- of uitschakelen"
           >Aan- of uitschakelen</button
         >
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`<button class="icon icon-on-off" aria-label="Aan- of uitschakelen">Aan- of uitschakelen</button>`}
-        />
 
         <h4>Visueel voorbeeld <code>button</code> met <code>span</code></h4>
         <button>
           <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
         </button>
-
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
-<button>
-  <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
-</button>
-          `}
-        />
 
         <h3><code>svg</code> binnen een <code>button</code></h3>
         <h4>Visueel voorbeeld</h4>
@@ -139,31 +86,6 @@
           >
           Aan- of uitschakelen
         </button>
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
-<button>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="16"
-    height="16"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    class="icon icon-tabler icons-tabler-outline icon-tabler-power"
-    aria-hidden="true">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-    <path d="M7 6a7.75 7.75 0 1 0 10 0"/>
-    <path d="M12 4l0 8" />
-    </svg>
-  Aan- of uitschakelen
-</button>
-          `}
-        />
 
         <h3><code>button</code> disabled</h3>
         <h4>Visueel voorbeeld pseudo-element op button</h4>
@@ -175,26 +97,11 @@
         <button class="icon icon-on-off" aria-label="Aan- of uitschakelen" disabled
           >Aan- of uitschakelen</button
         >
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`<button class="icon icon-on-off" aria-label="Aan- of uitschakelen" disabled>Aan- of uitschakelen</button>`}
-        />
 
         <h4>Visueel voorbeeld <code>button</code> met <code>span</code></h4>
         <button disabled>
           <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
         </button>
-
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
-<button disabled>
-  <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
-</button>
-          `}
-        />
 
         <h4>States</h4>
         <ul>
@@ -222,25 +129,9 @@
         <h4>Visueel voorbeeld:</h4>
         <button>Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></button>
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<button>Lorem ipsum <img src="/img/cat.svg" alt="Kat"></button>
-`}
-        />
-
         <h3><code>button</code> met een afbeelding: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
         <button disabled>Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></button>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<button disabled>Lorem ipsum <img src="/img/cat.svg" alt="Kat"></button>
-`}
-        />
 
         <h4>States</h4>
         <ul>
@@ -273,43 +164,15 @@
         </p>
         <a href="./icon/components/icons/test" class="button icon icon-user">Lorem ipsum</a>
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input class="button icon icon-cat">Lorem ipsum</a>
-`}
-        />
-
         <a href="./test" class="button">
           <span class="icon icon-user" aria-hidden="true"></span>Inloggen
         </a>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<a href="./test" class="button">
-  <span class="icon icon-user" aria-hidden="true"></span>Inloggen
-</a>
-`}
-        />
 
         <h3>Link als knop icoon erachter</h3>
         <h4>Visueel voorbeeld:</h4>
         <a href="./test" class="button">
           Inloggen <span class="icon icon-user" aria-hidden="true"></span>
         </a>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<a href="./test" class="button">
-  Inloggen <span class="icon icon-user" aria-hidden="true"></span>
-</a>
-`}
-        />
 
         <h3><code>svg</code> binnen een link</h3>
         <h4>Visueel voorbeeld</h4>
@@ -333,32 +196,6 @@
           >
           Inloggen
         </a>
-
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
-<a href="./icons">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="16"
-    height="16"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    class="icon icon-tabler icons-tabler-outline icon-tabler-user"
-    aria-hidden="true">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/>
-    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-  </svg>
-  Inloggen
-</a>
-          `}
-        />
 
         <h4>States</h4>
         <ul>
@@ -392,14 +229,6 @@
         <h4>Visueel voorbeeld:</h4>
         <a href="./test" class="button">Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></a>
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input class="button">Lorem ipsum <img src="/img/cat.svg" alt="Kat" /></a>
-`}
-        />
-
         <h3>pseudo-element op buttonme type="submit"</h3>
         <p class="warning" role="group" aria-label="waarschuwing">
           <span>Waarschuwing:</span> Het voorbeeld met een pseudo-element direct op button wordt uitgefaseerd
@@ -410,27 +239,11 @@
         <h4>Visueel voorbeeld</h4>
         <button class="icon icon-search" aria-label="Zoeken" type="submit">Zoeken</button>
 
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`<button class="icon icon-search" aria-label="Zoeken" type="submit">Zoeken</button>`}
-        />
-
         <h3><code>button type="submit"</code> met <code>span</code></h3>
         <h4>Visueel voorbeeld</h4>
         <button type="submit">
           <span class="icon icon-search" aria-hidden="true"></span>Zoeken
         </button>
-
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
-<button type="submit">
-  <span class="icon icon-search" aria-hidden="true"></span>Zoeken
-</button>
-          `}
-        />
 
         <h3>pseudo-element op disabled button met type="submit"</h3>
         <p class="warning" role="group" aria-label="waarschuwing">
@@ -442,27 +255,11 @@
         <h4>Visueel voorbeeld</h4>
         <button class="icon icon-search" aria-label="Zoeken" type="submit" disabled>Zoeken</button>
 
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`<button class="icon icon-search" aria-label="Zoeken" type="submit" disabled>Zoeken</button>`}
-        />
-
         <h3><code>button type="submit"</code> met <code>span</code></h3>
         <h4>Visueel voorbeeld</h4>
         <button type="submit" disabled>
           <span class="icon icon-search" aria-hidden="true"></span>Zoeken
         </button>
-
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
-<button type="submit" disabled>
-  <span class="icon icon-search" aria-hidden="true"></span>Zoeken
-</button>
-          `}
-        />
 
         <h4>States</h4>
         <h4>Visueel voorbeeld:</h4>
@@ -497,27 +294,11 @@
         <h4>Visueel voorbeeld</h4>
         <button class="icon icon-search" aria-label="Zoeken" type="reset">Zoeken</button>
 
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`<button class="icon icon-search" aria-label="Zoeken" type="reset">Zoeken</button>`}
-        />
-
         <h3><code>button type="reset"</code> met <code>span</code></h3>
         <h4>Visueel voorbeeld</h4>
         <button type="reset">
           <span class="icon icon-search" aria-hidden="true"></span>Zoeken
         </button>
-
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
-<button type="reset">
-  <span class="icon icon-search" aria-hidden="true"></span>Zoeken
-</button>
-          `}
-        />
 
         <h3>pseudo-element op disabled button met type="reset"</h3>
         <p class="warning" role="group" aria-label="waarschuwing">
@@ -529,27 +310,11 @@
         <h4>Visueel voorbeeld</h4>
         <button class="icon icon-search" aria-label="Zoeken" type="reset" disabled>Zoeken</button>
 
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`<button class="icon icon-search" aria-label="Zoeken" type="reset" disabled>Zoeken</button>`}
-        />
-
         <h3><code>button type="reset"</code> met <code>span</code></h3>
         <h4>Visueel voorbeeld</h4>
         <button type="reset" disabled>
           <span class="icon icon-search" aria-hidden="true"></span>Zoeken
         </button>
-
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
-<button type="reset" disabled>
-  <span class="icon icon-search" aria-hidden="true"></span>Zoeken
-</button>
-          `}
-        />
 
         <h4>States</h4>
         <h4>Visueel voorbeeld:</h4>
@@ -580,46 +345,30 @@
           <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
         </a>
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<a href="./test">
-  <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
-</a>
-`}
-        />
-
         <h4>States</h4>
         <h4>Visueel voorbeeld:</h4>
         <ul>
           <li>
-            Focus:
-            <a href="./test" class="focus">
+            Default:
+            <a href="loremipsumdolorsetabc">
               <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
             </a>
           </li>
           <li>
-            Focus visited:
-            <a href="./test" class="focus visited">
+            Focus:
+            <a href="loremipsumdolorsetabc" class="focus">
               <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
             </a>
           </li>
           <li>
             Active:
-            <a href="./test" class="active">
-              <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
-            </a>
-          </li>
-          <li>
-            Active visited:
-            <a href="./test" class="active visited">
+            <a href="loremipsumdolorsetabc" class="active">
               <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
             </a>
           </li>
           <li>
             Hover:
-            <a href="./test" class="hover">
+            <a href="loremipsumdolorsetabc" class="hover">
               <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
             </a>
           </li>
@@ -640,14 +389,6 @@
         <h3>Link met afbeelding als icoon</h3>
         <h4>Visueel voorbeeld:</h4>
         <a href="./test"><img src="$img/cat.svg" alt="Kat" class="icon" />Lorem ipsum</a>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<a href="./test"><img src="/img/cat.svg" alt="Kat" class="icon">Lorem ipsum</a>
-`}
-        />
 
         <h4>States</h4>
         <h4>Visueel voorbeeld:</h4>
@@ -676,14 +417,6 @@
         <h4>Visueel voorbeeld:</h4>
         <span class="icon icon-cat">Lorem ipsum</span>
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<span class="icon icon-cat">Lorem ipsum</span>
-`}
-        />
-
         <h3><code>span</code> met svg-icoon</h3>
         <h4>Visueel voorbeeld</h4>
         <span>
@@ -705,43 +438,10 @@
           </svg>
           Inloggen
         </span>
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
-<span>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="16"
-    height="16"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    class="icon icon-tabler icons-tabler-outline icon-tabler-user"
-    aria-hidden="true">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/>
-    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-  </svg>
-  Inloggen
-</span>
-          `}
-        />
 
         <h3><code>span</code> met afbeelding als icoon</h3>
         <h4>Visueel voorbeeld:</h4>
         <span><img src="$img/cat.svg" alt="Kat" class="icon" />Lorem ipsum</span>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<span><img src="/img/cat.svg" alt="Kat" class="icon">Lorem ipsum</span>
-`}
-        />
 
         <h3><code>li</code></h3>
         <h4>Visueel voorbeeld:</h4>
@@ -749,39 +449,13 @@
           <li class="icon icon-cat">Lorem ipsum</li>
         </ul>
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<ul>
-  <li class="icon icon-cat">Lorem ipsum</li>
-</ul>
-`}
-        />
-
         <h3><code>div</code></h3>
         <h4>Visueel voorbeeld:</h4>
         <div class="icon icon-cat">Lorem ipsum</div>
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<div class="icon icon-cat">Lorem ipsum</div>
-`}
-        />
-
         <h3><code>div</code> met afbeelding als icoon</h3>
         <h4>Visueel voorbeeld:</h4>
         <div><img src="$img/cat.svg" alt="Kat" class="icon" />Lorem ipsum</div>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<div><img src="/img/cat.svg" alt="Kat">Lorem ipsum</div>
-`}
-        />
 
         <h3><code>table</code></h3>
         <h4>Visueel voorbeeld:</h4>
@@ -832,60 +506,6 @@
             </tbody>
           </table>
         </div>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<div class="horizontal-scroll">
-  <table>
-    <caption> Tabelvoorbeeld met actieknoppen: </caption>
-    <thead>
-      <tr>
-        <th scope="col">Gebruikersnaam</th>
-        <th scope="col">Bekijk profiel</th>
-        <th scope="col">Reset</th>
-        <th scope="col">Deactiveer</th>
-        <th scope="col">Verwijder</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Jane doe</td>
-        <td>
-          <form>
-            <button type="submit" class="icon-only">
-              <span class="icon icon-user" aria-hidden="true"></span>Bekijk profiel
-            </button>
-          </form>
-        </td>
-        <td>
-          <form>
-            <button type="submit" class="icon-only">
-              <span class="icon icon-reset" aria-hidden="true"></span>Reset
-            </button>
-          </form>
-        </td>
-        <td>
-          <form>
-            <button type="submit" class="icon-only">
-              <span class="icon icon-lock-closed" aria-hidden="true"></span>Deactiveer
-            </button>
-          </form>
-        </td>
-        <td>
-          <form>
-            <button type="submit" class="icon-only">
-              <span class="icon icon-trash" aria-hidden="true"></span>Verwijder
-            </button>
-          </form>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-`}
-        />
       </section>
     </div>
   </article>

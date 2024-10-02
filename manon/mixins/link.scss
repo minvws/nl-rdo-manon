@@ -18,7 +18,6 @@ $states: ("visited", "hover", "active", "focus");
     border-color: var(--#{$prefix}border-color);
     border-radius: var(--#{$prefix}border-radius);
     box-sizing: border-box;
-    display: inline-block; /* Keeping focus border as one shape */
   }
 }
 
