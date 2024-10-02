@@ -153,14 +153,14 @@
             svg.
           </li>
           <li>
-            Als het icoon opzichzelfstaand is dient deze een kort en duidelijk label te krijgen als
+            Als het icoon informatief is dient deze een kort en duidelijk label te krijgen als
             alternatief voor screenreader-gebruikers. Bijvoorbeeld:
             <code>aria-label="Gebruikersprofiel"</code>. Het icoon dient in dit geval ook
             <code>role="img"</code> te krijgen.
           </li>
         </ul>
 
-        <h4>Visueel voorbeeld opzichzelfstaand icoon</h4>
+        <h4>Visueel voorbeeld informatief icoon</h4>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"

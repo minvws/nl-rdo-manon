@@ -28,7 +28,7 @@
           >.
         </p>
 
-        <h4>Visueel voorbeeld opzichzelfstaand icoon</h4>
+        <h4>Visueel voorbeeld informatief icoon</h4>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
