@@ -21,6 +21,70 @@
 
       <section id="tests">
         <h2>Tests</h2>
+        <h3><code>svg</code></h3>
+        <p>
+          Voorbeelden met een svg-icoon uit de <a href="https://tabler.io/icons" rel="external"
+            >tabler iconen set</a
+          >.
+        </p>
+
+        <p>Aandachtspunten:</p>
+        <ul>
+          <li>
+            Als het icoon puur decoratief is, kan deze verborgen worden voor
+            screenreader-gebruikers. Dit kan doormiddel van een <code>aria-hidden="true"</code> op de
+            svg.
+          </li>
+          <li>
+            Als het icoon opzichzelfstaand is dient deze een kort en duidelijk label te krijgen als
+            alternatief voor screenreader-gebruikers. Bijvoorbeeld:
+            <code>aria-label="Gebruikersprofiel"</code>. Het icoon dient in dit geval ook
+            <code>role="img"</code> te krijgen.
+          </li>
+        </ul>
+
+        <h4>Visueel voorbeeld opzichzelfstaand icoon</h4>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-user"
+          role="img"
+          aria-label="Gebruikersprofiel"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+          <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+        </svg>
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-user"
+  role="img"
+  aria-label="Gebruikersprofiel">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+          `}
+        />
 
         <h3><code>button</code></h3>
         <h4>Visueel voorbeeld pseudo-element op button</h4>
@@ -49,6 +113,54 @@
           code={`
 <button>
   <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
+</button>
+          `}
+        />
+
+        <h3><code>svg</code> binnen een <code>button</code></h3>
+        <h4>Visueel voorbeeld</h4>
+
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-power"
+            aria-hidden="true"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+              d="M7 6a7.75 7.75 0 1 0 10 0"
+            /><path d="M12 4l0 8" /></svg
+          >
+          Aan- of uitschakelen
+        </button>
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`
+<button>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="icon icon-tabler icons-tabler-outline icon-tabler-power"
+    aria-hidden="true">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M7 6a7.75 7.75 0 1 0 10 0"/>
+    <path d="M12 4l0 8" />
+    </svg>
+  Aan- of uitschakelen
 </button>
           `}
         />
@@ -197,6 +309,55 @@
   Inloggen <span class="icon icon-user" aria-hidden="true"></span>
 </a>
 `}
+        />
+
+        <h3><code>svg</code> binnen een link</h3>
+        <h4>Visueel voorbeeld</h4>
+
+        <a href="./icons">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-user"
+            aria-hidden="true"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+              d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+            /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg
+          >
+          Inloggen
+        </a>
+
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`
+<a href="./icons">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="icon icon-tabler icons-tabler-outline icon-tabler-user"
+    aria-hidden="true">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/>
+    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+  </svg>
+  Inloggen
+</a>
+          `}
         />
 
         <h4>States</h4>
@@ -521,6 +682,53 @@
           code={`
 <span class="icon icon-cat">Lorem ipsum</span>
 `}
+        />
+
+        <h3><code>span</code> met svg-icoon</h3>
+        <h4>Visueel voorbeeld</h4>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-user"
+            aria-hidden="true"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+              d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+            /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+          </svg>
+          Inloggen
+        </span>
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`
+<span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="icon icon-tabler icons-tabler-outline icon-tabler-user"
+    aria-hidden="true">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/>
+    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+  </svg>
+  Inloggen
+</span>
+          `}
         />
 
         <h3><code>span</code> met afbeelding als icoon</h3>

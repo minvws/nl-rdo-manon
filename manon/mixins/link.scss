@@ -7,7 +7,7 @@ $states: ("visited", "hover", "active", "focus");
 
 @mixin styling($prefix) {
   & {
-    font-size: var(--#{$prefix}font-size);
+    font-size: var(--#{$prefix}font-size, 1rem);
     font-weight: var(--#{$prefix}font-weight);
     line-height: var(--#{$prefix}line-height);
     background-color: var(--#{$prefix}background-color);
@@ -18,6 +18,7 @@ $states: ("visited", "hover", "active", "focus");
     border-color: var(--#{$prefix}border-color);
     border-radius: var(--#{$prefix}border-radius);
     box-sizing: border-box;
+    display: inline-block; /* Keeping focus border as one shape */
   }
 }
 
