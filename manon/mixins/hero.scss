@@ -1,6 +1,8 @@
 /*---------------------------------------------------------------------*/
 /*------------------------- mixins/hero.scss --------------------------*/
 /*---------------------------------------------------------------------*/
+@use "tile";
+@use "list";
 
 @mixin hero-content-container {
   & {
@@ -16,5 +18,20 @@
     padding-bottom: var(--hero-content-container-padding-bottom);
     padding-left: var(--hero-content-container-padding-left);
     z-index: 1;
+    color: var(--hero-content-container-text-color);
+
+    .tile {
+      @include tile.tile("hero-tile-");
+
+      ul,
+      ol {
+        @include list.list("hero-tile-list-");
+      }
+    }
+
+    ul,
+    ol {
+      @include list.list("hero-list-");
+    }
   }
 }
