@@ -1,30 +1,7 @@
 /*----------------------------------------------------------------------------------*/
-/*---------------------------------- hero.scss -------------------------------------*/
+/*--------------------------------- hero-div.scss -----------------------------------*/
 /*----------------------------------------------------------------------------------*/
-@use "hero-variables";
-
 .hero {
-  display: flex;
-  width: 100%;
-  min-height: var(--hero-min-height);
-  height: var(--hero-height);
-  max-height: var(--hero-max-height);
-  position: relative;
-  padding: 0;
-  background-color: var(--hero-background-color);
-
-  img {
-    object-fit: cover;
-    object-position: var(--hero-image-object-position);
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 0;
-  }
-
   > div {
     display: flex;
     flex-direction: var(--hero-content-container-flex-direction);
@@ -38,15 +15,5 @@
     padding-bottom: var(--hero-content-container-padding-bottom);
     padding-left: var(--hero-content-container-padding-left);
     z-index: 1;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: var(--hero-title-font-size);
-    color: var(--hero-title-text-color);
   }
 }
