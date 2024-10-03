@@ -1,19 +1,10 @@
 /*----------------------------------------------------------------------------------*/
-/*--------------------------------- hero-div.scss -----------------------------------*/
+/*--------------------------------- hero-div.scss ----------------------------------*/
 /*----------------------------------------------------------------------------------*/
+@use "mixins/hero";
+
 .hero {
   > div {
-    display: flex;
-    flex-direction: var(--hero-content-container-flex-direction);
-    justify-content: var(--hero-content-container-justify-content);
-    align-items: var(--hero-content-container-align-items);
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    padding-top: var(--hero-content-container-padding-top);
-    padding-right: var(--hero-content-container-padding-right);
-    padding-bottom: var(--hero-content-container-padding-bottom);
-    padding-left: var(--hero-content-container-padding-left);
-    z-index: 1;
+    @include hero.hero-content-container;
   }
 }
