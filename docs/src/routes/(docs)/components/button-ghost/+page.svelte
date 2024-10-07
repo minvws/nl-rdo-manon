@@ -22,7 +22,7 @@
     </ul>
   </SideMenu>
 
-  <article id="button-base">
+  <article id="button-ghost" class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Ghost button</h1>
@@ -64,7 +64,7 @@
         />
       </section>
 
-      <section id="button-base-input">
+      <section id="button-ghost-input">
         <h2><code>input type="button"</code></h2>
         <h3>Visuele weergave:</h3>
 
