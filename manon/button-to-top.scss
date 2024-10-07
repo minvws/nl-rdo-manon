@@ -49,6 +49,7 @@ button.to-top {
       }
     }
   }
+
   .icon::before,
   &::before {
     @extend %icon-styling;
