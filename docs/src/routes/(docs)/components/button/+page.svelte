@@ -4,18 +4,26 @@
 
 <script>
   import { base } from "$app/paths";
+  import SideMenu from "$lib/SideMenu.svelte";
 </script>
 
 <svelte:head>
   <title>Knoppen</title>
 </svelte:head>
 
-<main id="main-content" tabindex="-1">
-  <article>
+<main class="sidemenu" id="main-content" tabindex="-1">
+  <SideMenu>
+    <ul>
+      <li><a href="#quickstart">Snelstart</a></li>
+      <li><a href="#button-html">HTML-element kiezen</a></li>
+      <li><a href="#button-types">Soorten knoppen</a></li>
+    </ul>
+  </SideMenu>
+  <article class="visually-grouped">
     <div>
       <h1>Knoppen</h1>
 
-      <section id="button-quick-start">
+      <section id="quickstart" class="visually-grouped">
         <h2>Snelstart</h2>
         <ol>
           <li>
@@ -23,14 +31,14 @@
             <a href="#button-html">HTML-element kiezen</a> voor meer informatie.
           </li>
           <li>
-            Bepaal welke stijl geschikt is voor de knop.
-            <a href="#button-types">Beschikbare button types</a>
+            Bepaal welke stijl geschikt is voor de knop. Kies een van de
+            <a href="#button-types">soorten knoppen</a>.
           </li>
           <li>Kopiëer de voorbeeldcode van het gekozen component.</li>
         </ol>
       </section>
 
-      <section id="button-html">
+      <section id="button-html" class="visually-grouped">
         <h2>HTML-element kiezen</h2>
         <p>
           Knoppen kunnen op verschillende manieren opgebouwd worden. Iets wat er visueel als een
@@ -105,17 +113,21 @@
         </div>
       </section>
 
-      <section id="button-types">
-        <h2>Beschikbare button-types</h2>
+      <section id="button-types" class="visually-grouped">
+        <h2>Soorten knoppen</h2>
+        <h3>Ondersteund door het <i>iCore Open</i> thema:</h3>
         <ul>
           <li><a href="{base}/components/button-base">Basis-weergave</a></li>
           <li><a href="{base}/components/button-container">Knoppen groeperen</a></li>
-          <li><a href="{base}/components/button-dropdown">Dropdown button</a></li>
-          <li><a href="{base}/components/button-ghost">Ghost button</a></li>
-          <li><a href="{base}/components/button-destructive">Destructieve knop</a></li>
           <li>
             <a href="{base}/components/button-call-to-action">Call to action button</a>
           </li>
+        </ul>
+        <h3>Overige soorten knoppen:</h3>
+        <ul>
+          <li><a href="{base}/components/button-dropdown">Dropdown button</a></li>
+          <li><a href="{base}/components/button-ghost">Ghost button</a></li>
+          <li><a href="{base}/components/button-destructive">Destructieve knop</a></li>
           <li><a href="{base}/components/button-icon">Icoonknoppen</a></li>
           <li><a href="{base}/components/button-icon-only">Icoonknoppen zonder achtergrond</a></li>
           <li><a href="{base}/components/button-to-top">Terug naar hoofdmenu</a></li>

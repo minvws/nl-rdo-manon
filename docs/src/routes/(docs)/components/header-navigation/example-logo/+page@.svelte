@@ -50,7 +50,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
       <li><a href="#examples">Voorbeelden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Header voorbeeld met logo visueel voorbeeld</h1>
@@ -96,50 +96,6 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
       </nav>
   </div>
 </header>
-`}
-        />
-
-        <h2>CSS-voorbeeld:</h2>
-        <p>Ingestelde variabelen voor deze weergave</p>
-
-        <Code
-          language="css"
-          code={`
-:root {
-  /* Header */
-  --header-padding-right: 1rem;
-  --header-padding-left: 1rem;
-  --header-min-height: 3rem;
-  --header-flex-direction: row;
-  --header-justify-content: space-between;
-  --header-background-color: #1b1b39;
-  --header-navigation-text-color: white;
-  --header-navigation-padding-right: 0;
-  --header-navigation-padding-left: 0;
-  --header-navigation-position: initial;
-
-  /* Header Content wrapper */
-  --header-content-wrapper-position: relative;
-
-  /* Navigation */
-  --header-navigation-border-width: 0;
-  --header-navigation-width: auto;
-  --header-navigation-position: static;
-
-  /* Link styling */
-  --header-navigation-link-text-color: white;
-  --header-navigation-link-hover-text-color: var(--header-navigation-link-text-color);
-  --header-navigation-link-visited-text-color: var(--header-navigation-link-text-color);
-  --header-navigation-link-visited-hover-text-color: var(--header-navigation-link-text-color);
-  --header-navigation-link-active-text-color: var(--header-navigation-link-text-color);
-
-  /* Menu toggle button */
-  --navigation-collapsible-menu-button-background-color: transparent;
-  --navigation-collapsible-menu-icon-color: var(--header-navigation-link-text-color);
-
-  /* Collapsible menu */
-  --header-navigation-collapsible-menu-top: 4rem;
-}
 `}
         />
       </section>

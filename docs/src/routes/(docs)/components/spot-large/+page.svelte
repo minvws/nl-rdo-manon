@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Spot large</h1>
@@ -161,10 +161,9 @@
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>
-
-        <h3>Import via npm-package</h3>
+        <h3>Importeer component via npm</h3>
         <Code
-          language="html"
+          language="scss"
           code={`
 @use "@minvws/manon/spot-large";
 `}

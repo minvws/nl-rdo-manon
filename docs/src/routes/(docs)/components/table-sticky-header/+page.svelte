@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>"sticky header"</h1>
@@ -213,7 +213,7 @@
           code={`
 @use "@minvws/manon/table";
 @use "@minvws/manon/sticky-header";
-      `}
+`}
         />
       </section>
 

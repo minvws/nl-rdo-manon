@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Ronde afbeelding</h1>
@@ -191,14 +191,13 @@
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>
-
         <h3>Importeer component via npm</h3>
         <h4>CSS-voorbeeld:</h4>
         <Code
           language="css"
           code={`
 @use "@minvws/manon/image-round";
-      `}
+`}
         />
       </section>
 

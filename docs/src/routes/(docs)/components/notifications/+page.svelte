@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Notificaties</h1>
@@ -51,6 +51,9 @@
               <li>
                 <a href="{base}/components/notification-explanation">Toelichting</a>
               </li>
+            </ul>
+            <h4>Andere notificatie-types (niet ondersteund door iCore Open)</h4>
+            <ul>
               <li>
                 <a href="{base}/components/notification-system-message">Systeemberichten</a>
               </li>
@@ -66,8 +69,11 @@
               <li>
                 <a href="{base}/components/notifications-paragraph">Paragraaf</a>
               </li>
-              <li><a href="{base}/components/notifications-table">Tabel</a></li>
               <li><a href="{base}/components/notifications-page">Pagina-notificatie</a></li>
+            </ul>
+            <h4>Andere weergaven (niet ondersteund door iCore Open)</h4>
+            <ul>
+              <li><a href="{base}/components/notifications-table">Tabel</a></li>
             </ul>
           </nav>
         </div>

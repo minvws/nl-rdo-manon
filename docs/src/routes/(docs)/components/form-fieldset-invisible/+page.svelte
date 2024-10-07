@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Onzichtbare fieldset</h1>
@@ -90,7 +90,6 @@
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>
-
         <h3>Importeer component via npm</h3>
         <h4>CSS-voorbeeld:</h4>
         <Code
@@ -98,7 +97,7 @@
           code={`
 @use "@minvws/manon/form-base";
 @use "@minvws/manon/form-fieldset";
-      `}
+`}
         />
       </section>
 

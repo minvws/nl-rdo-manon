@@ -1,0 +1,18 @@
+/*---------------------------------------------------------------*/
+/*------------ header-navigation-form-inline.scss ---------------*/
+/*---------------------------------------------------------------*/
+@use "header-navigation-form-inline-variables";
+
+body > header,
+.page-header {
+  nav {
+    form.inline {
+      padding: 0;
+      background-color: transparent;
+      gap: var(--header-navigation-form-inline-gap);
+      color: var(--header-navigation-form-inline-text-color);
+      flex-direction: var(--header-navigation-form-inline-flex-direction);
+      width: var(--header-navigation-form-inline-width);
+    }
+  }
+}

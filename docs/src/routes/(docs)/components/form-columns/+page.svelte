@@ -22,7 +22,7 @@
       <li><a href="#issues">Bekende problemen</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Weergave in kolommen</h1>
@@ -98,7 +98,7 @@
           language="css"
           code={`
 @use "@minvws/manon/form-base";
-      `}
+`}
         />
       </section>
 

@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Links</h1>
@@ -47,15 +47,15 @@
 
         <h4>Visueel voorbeeld:</h4>
         <a href="link">Basis</a>
-        <a href="link" class="icon icon-cat">Met <code>:before</code></a>
+        <a href="link" class="icon icon-cat">Met <code>::before</code></a>
         <a href="link" class="icon-after icon-cat"
-          >Met <code>:after</code><span class="icon icon-cat">Kat icoon</span></a
+          >Met <code>::after</code><span class="icon icon-cat">Kat icoon</span></a
         >
 
         <a href="link" class="hover">Hover <code>:hover</code></a>
-        <a href="link" class="hover icon icon-cat">Hover met <code>:before:hover</code></a>
+        <a href="link" class="hover icon icon-cat">Hover met <code>::before:hover</code></a>
         <a href="link" class="hover"
-          >Hover met <code>:before:hover</code> <span class="icon icon-cat"></span></a
+          >Hover met <code>::before:hover</code> <span class="icon icon-cat"></span></a
         >
 
         <a href="link" class="active">Actieve link</a>
@@ -105,7 +105,9 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Aandachtspunten:</h3>
@@ -150,7 +152,10 @@
             <tbody>
               <tr>
                 <td>--link-background-color</td>
-                <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
+                <td
+                  ><a href="{base}/documentation/variables#background-color">background-color</a
+                  ></td
+                >
                 <td>transparent</td>
                 <td>-</td>
                 <th rowspan="4" scope="rowgroup">links</th>
@@ -165,7 +170,8 @@
 
               <tr>
                 <td>--link-text-decoration</td>
-                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td>
+                <td><a href="{base}/documentation/variables#text-decoration">text-decoration</a></td
+                >
                 <td>initial</td>
                 <td>-</td>
               </tr>

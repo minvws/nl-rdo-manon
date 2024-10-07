@@ -18,7 +18,7 @@
     </ul>
   </SideMenu>
 
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Zijmenu</h1>
@@ -34,14 +34,11 @@
         <ul>
           <li><a href="sidemenu/in-page">Zijmenu binnen de pagina</a></li>
           <li>
-            <a href="sidemenu/in-page-collapsible">In- uit-klapbaar zijmenu binnen de pagina</a
-            >
+            <a href="sidemenu/in-page-collapsible">In- uit-klapbaar zijmenu binnen de pagina</a>
           </li>
           <li><a href="sidemenu/next-to-page">Zijmenu naast de pagina</a></li>
           <li>
-            <a href="sidemenu/next-to-page-collapsible"
-              >In- uit-klapbaar zijmenu naast de pagina</a
-            >
+            <a href="sidemenu/next-to-page-collapsible">In- uit-klapbaar zijmenu naast de pagina</a>
           </li>
         </ul>
       </section>

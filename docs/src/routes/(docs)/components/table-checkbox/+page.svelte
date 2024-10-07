@@ -28,7 +28,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Tabelrij met checkbox</h1>
@@ -212,7 +212,7 @@
           code={`
 @use "@minvws/manon/table";
 @use "@minvws/manon/form-checkbox";
-      `}
+`}
         />
       </section>
 

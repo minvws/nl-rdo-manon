@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Paginering testpagina</h1>
@@ -50,7 +50,9 @@
 
         <h2><code>nav</code> met class pagination en "vorige" en "volgende links.</h2>
         <nav class="pagination" aria-label="Paginering" id="next-prev">
-          <a href="#next-prev" aria-label="Ga naar de vorige pagina" class="adjacent previous">Vorige</a>
+          <a href="#next-prev" aria-label="Ga naar de vorige pagina" class="adjacent previous"
+            >Vorige</a
+          >
           <ul>
             <li><a href="#next-prev" aria-label="Ga naar pagina 1">1</a></li>
             <li><a href="#next-prev" aria-label="Ga naar pagina 2" aria-current="true">2</a></li>
@@ -58,7 +60,9 @@
             <li><a href="#next-prev" aria-label="Ga naar pagina 4">4</a></li>
             <li><a href="#next-prev" aria-label="Ga naar pagina 5">5</a></li>
           </ul>
-          <a href="#next-prev" aria-label="Ga naar de volgende pagina" class="adjacent next">Volgende</a>
+          <a href="#next-prev" aria-label="Ga naar de volgende pagina" class="adjacent next"
+            >Volgende</a
+          >
         </nav>
 
         <p>HTML-voorbeeld:</p>
@@ -85,13 +89,21 @@
             >Vorige</span
           >
           <ul>
-            <li><a href="#disabled-next-or-prev" aria-label="Ga naar pagina 1" aria-current="true">1</a></li>
+            <li>
+              <a href="#disabled-next-or-prev" aria-label="Ga naar pagina 1" aria-current="true"
+                >1</a
+              >
+            </li>
             <li><a href="#disabled-next-or-prev" aria-label="Ga naar pagina 2">2</a></li>
             <li><a href="#disabled-next-or-prev" aria-label="Ga naar pagina 3">3</a></li>
             <li><a href="#disabled-next-or-prev" aria-label="Ga naar pagina 4">4</a></li>
             <li><a href="#disabled-next-or-prev" aria-label="Ga naar pagina 5">5</a></li>
           </ul>
-          <a href="#disabled-next-or-prev" aria-label="Ga naar de volgende pagina" class="adjacent next">Volgende</a>
+          <a
+            href="#disabled-next-or-prev"
+            aria-label="Ga naar de volgende pagina"
+            class="adjacent next">Volgende</a
+          >
         </nav>
 
         <p>HTML-voorbeeld:</p>

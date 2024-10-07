@@ -20,41 +20,43 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Titel basisset</h1>
         <p>Basisset voor het stylen van titels.</p>
 
-        <h2>Benodigde stappen:</h2>
-        <ol>
-          <li>
-            Voeg de benodigde bestanden toe aan het project.
-            <ul>
-              <li>
-                Voor een overzicht van de benodigde en optionele bestanden zie: <a
-                  href="#requirements">Bijbehorende bestanden</a
-                >.
-              </li>
-              <li>
-                Vul de variabelen met de gewenste weergaven. Voor meer informatie zie het overzicht
-                met <a href="#variables">instelbare variabelen</a>.
-              </li>
-              <li>
-                Pas de titelweergaven toe waar nodig. De titelweergaven kunnen op twee manieren
-                toegepast worden. Door middel van variabelen binnen de CSS of door middel van
-                classes binnen de HTML. Maak gebruik van de CSS-variabelen waar mogelijk en voeg
-                alleen de classes toe in de HTML voor uitzonderingen om de code aanpasbaar en
-                overzichtelijk te houden. Voor meer informatie hierover zie <a
-                  href="{base}/documentation/use-css-variable">CSS-variabelen gebruiken</a
-                >.
-              </li>
-            </ul>
-          </li>
-        </ol>
+        <div class="visually-grouped">
+          <h2>Benodigde stappen:</h2>
+          <ol>
+            <li>
+              Voeg de benodigde bestanden toe aan het project.
+              <ul>
+                <li>
+                  Voor een overzicht van de benodigde en optionele bestanden zie: <a
+                    href="#requirements">Bijbehorende bestanden</a
+                  >.
+                </li>
+                <li>
+                  Vul de variabelen met de gewenste weergaven. Voor meer informatie zie het
+                  overzicht met <a href="#variables">instelbare variabelen</a>.
+                </li>
+                <li>
+                  Pas de titelweergaven toe waar nodig. De titelweergaven kunnen op twee manieren
+                  toegepast worden. Door middel van variabelen binnen de CSS of door middel van
+                  classes binnen de HTML. Maak gebruik van de CSS-variabelen waar mogelijk en voeg
+                  alleen de classes toe in de HTML voor uitzonderingen om de code aanpasbaar en
+                  overzichtelijk te houden. Voor meer informatie hierover zie <a
+                    href="{base}/documentation/use-css-variable">CSS-variabelen gebruiken</a
+                  >.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
       </section>
 
-      <section id="examples">
+      <section id="examples" class="visually-grouped">
         <h2>Voorbeelden</h2>
 
         <h3>Beschikbare opties</h3>
@@ -148,11 +150,13 @@
         />
       </section>
 
-      <section id="requirements">
+      <section id="requirements" class="visually-grouped">
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+          <a href="{base}/documentation/import-styling"
+            >Componenten gebruiken en styling toevoegen</a
+          >
         </p>
 
         <h3>Importeer component via npm</h3>
@@ -166,7 +170,7 @@
         />
       </section>
 
-      <section id="variables">
+      <section id="variables" class="visually-grouped">
         <h2>Instelbare variabelen</h2>
         <div class="horizontal-scroll nowrap">
           <table>

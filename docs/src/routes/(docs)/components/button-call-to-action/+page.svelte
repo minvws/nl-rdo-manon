@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
 
-  <article id="examples">
+  <article id="examples" class="visually-grouped">
     <div>
       <h1>Call to action button</h1>
       <section id="button-base-button">
@@ -83,12 +83,11 @@
       <section id="requirements">
         <h2>Bijbehorende bestanden</h2>
         <p>
-          Voor meer informatie over importeren en instellen van componenten. Zie:
+          Voor meer informatie over het importeren en instellen van componenten. Zie:
           <a href="{base}/documentation/import-styling"
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>
-
         <h3>Importeer component via npm</h3>
         <h4>CSS-voorbeeld:</h4>
         <Code

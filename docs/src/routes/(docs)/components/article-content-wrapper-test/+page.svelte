@@ -12,7 +12,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article>
+  <article class="visually-grouped">
     <div>
       <h1>Article content wrapper</h1>
       <p>Componenten gegroepeerd in <code>article</code>'s.</p>
@@ -22,7 +22,7 @@
         language="html"
         code={`
 <main>
-  <article> <!-- This can be full width -->
+  <article class="visually-grouped"> <!-- This can be full width -->
     <div> <!-- While the content width can be limited -->
       <!-- content -->
     </div>
@@ -42,7 +42,7 @@
         >
       </p>
 
-      <h3>npm-componenten</h3>
+      <h3>Importeer component via npm</h3>
 
       <h4>CSS-voorbeeld:</h4>
       <Code

@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Gegroepeerde content binnen tegels</h1>
@@ -111,7 +111,7 @@
           code={`
 @use "@minvws/manon/tile";
 @use "@minvws/manon/tile-groups";
-      `}
+`}
         />
       </section>
 

@@ -19,6 +19,15 @@
     --header-navigation-button-font-weight
   );
 
+  /* Icon only */
+  --header-navigation-button-icon-only-font-size: 0;
+  --header-navigation-button-hover-icon-font-size: var(
+    --header-navigation-button-icon-only-icon-font-size
+  );
+
+  /* Icon only hover */
+  --header-navigation-button-icon-only-hover-font-size: 0;
+
   /* Active */
   --header-navigation-button-active-background-color: var(
     --header-navigation-button-hover-background-color

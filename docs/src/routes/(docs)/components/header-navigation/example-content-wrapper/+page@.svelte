@@ -47,7 +47,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
       <li><a href="#examples">Voorbeelden</a></li>
     </ul>
   </SideMenu>
-  <article>
+  <article class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Header visueel voorbeeld</h1>
@@ -91,59 +91,9 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
 </header>
 `}
         />
-
-        <h2>CSS-voorbeeld:</h2>
-        <p>Ingestelde variabelen voor deze weergave</p>
-        <Code
-          language="css"
-          code={`
-:root {
-  --header-navigation-background-color: #fff;
-  --header-navigation-text-color: var(--text-set-text-color);
-  --header-navigation-padding-right: 2%;
-  --header-navigation-padding-left: 2%;
-
-  /* top border */
-  --header-navigation-border-width: 3px 0 0 0;
-  --header-navigation-border-color: var(--branding-color-1);
-
-  /* Menu items links */
-  --header-navigation-link-border-width: 4px 0 0 0;
-  --header-navigation-link-border-color: transparent;
-  --header-navigation-link-min-height: 3rem;
-  --header-navigation-link-font-size: var(--body-text-medium-font-size);
-
-  /* Link styling */
-  --header-navigation-link-text-color: var(--application-base-text-color);
-  --header-navigation-link-visited-text-color: var(--header-navigation-link-text-color);
-
-  /* Hover */
-  --header-navigation-link-hover-border-color: #ede1c7;
-  --header-navigation-link-hover-text-color: var(--header-navigation-link-text-color);
-
-  /* Active link */
-  --header-navigation-link-active-border-color: var(--branding-color-1);
-  --header-navigation-link-active-text-color: var(--header-navigation-link-hover-text-color);
-  --header-navigation-link-visited-active-text-color: var(--header-navigation-link-hover-text-color);
-
-  /* Collapsed icon */
-  --navigation-collapsible-menu-icon-font-size: 2rem;
-}
-`}
-        />
       </section>
     </div>
   </article>
 </main>
-
-<style>
-  :root {
-    /* Content wrapper */
-    --header-content-wrapper-position: relative;
-
-    /* Header navigation */
-    --header-navigation-position: static;
-  }
-</style>
 
 <DefaultFooter />
