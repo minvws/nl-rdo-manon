@@ -134,13 +134,13 @@
 
         <h3>Icoon binnen link<code>a</code> visueel weergegeven als knop</h3>
         <h4>Visueel voorbeeld</h4>
-        <a href="./icons" class="button"
+        <a href="./button-icon" class="button"
           ><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a
         >
         <h4>HTML-voorbeeld</h4>
         <Code
           language="html"
-          code={`<a href="./icons" class="button"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>`}
+          code={`<a href="./button-icon" class="button"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>`}
         />
 
         <h4>Visueel voorbeeld, <code>svg</code> binnen een link, visueel weergegeven als knop</h4>
@@ -149,7 +149,7 @@
             >tabler iconen set</a
           >.
         </p>
-        <a href="./icons" class="button">
+        <a href="./button-icon" class="button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -173,7 +173,7 @@
         <Code
           language="html"
           code={`
-<a href="./icons" class="button">
+<a href="./button-icon" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
