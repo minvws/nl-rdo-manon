@@ -23,7 +23,8 @@ input[type="reset"] {
   }
 }
 
-a.button {
+a.button,
+a:visited.button {
   @include button.link-button("link-button-base-");
 }
 
