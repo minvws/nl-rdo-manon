@@ -11,6 +11,7 @@
   max-height: var(--hero-max-height);
   position: relative;
   padding: 0;
+  background-color: var(--hero-background-color);
 
   img {
     object-fit: cover;
@@ -21,7 +22,7 @@
     height: 100%;
     position: absolute;
     top: 0;
-    z-index: -1;
+    z-index: 0;
   }
 
   h1,
