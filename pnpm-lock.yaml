@@ -24,8 +24,8 @@ importers:
         version: 11.10.0
     devDependencies:
       '@sveltejs/adapter-static':
-        specifier: ^3.0.4
-        version: 3.0.4(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.19)(vite@5.4.8(@types/node@20.11.30)(sass@1.79.4)(terser@5.29.2)))(svelte@4.2.19)(vite@5.4.8(@types/node@20.11.30)(sass@1.79.4)(terser@5.29.2)))
+        specifier: ^3.0.5
+        version: 3.0.5(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.19)(vite@5.4.8(@types/node@20.11.30)(sass@1.79.4)(terser@5.29.2)))(svelte@4.2.19)(vite@5.4.8(@types/node@20.11.30)(sass@1.79.4)(terser@5.29.2)))
       '@sveltejs/kit':
         specifier: ^2.5.24
         version: 2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.19)(vite@5.4.8(@types/node@20.11.30)(sass@1.79.4)(terser@5.29.2)))(svelte@4.2.19)(vite@5.4.8(@types/node@20.11.30)(sass@1.79.4)(terser@5.29.2))
@@ -413,8 +413,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@sveltejs/adapter-static@3.0.4':
-    resolution: {integrity: sha512-Qm4GAHCnRXwfWG9/AtnQ7mqjyjTs7i0Opyb8H2KH9rMR7fLxqiPx/tXeoE6HHo66+72CjyOb4nFH3lrejY4vzA==}
+  '@sveltejs/adapter-static@3.0.5':
+    resolution: {integrity: sha512-kFJR7RxeB6FBvrKZWAEzIALatgy11ISaaZbcPup8JdWUdrmmfUHHTJ738YHJTEfnCiiXi6aX8Q6ePY7tnSMD6Q==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
@@ -1445,7 +1445,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.22.4':
     optional: true
 
-  '@sveltejs/adapter-static@3.0.4(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.19)(vite@5.4.8(@types/node@20.11.30)(sass@1.79.4)(terser@5.29.2)))(svelte@4.2.19)(vite@5.4.8(@types/node@20.11.30)(sass@1.79.4)(terser@5.29.2)))':
+  '@sveltejs/adapter-static@3.0.5(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.19)(vite@5.4.8(@types/node@20.11.30)(sass@1.79.4)(terser@5.29.2)))(svelte@4.2.19)(vite@5.4.8(@types/node@20.11.30)(sass@1.79.4)(terser@5.29.2)))':
     dependencies:
       '@sveltejs/kit': 2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.19)(vite@5.4.8(@types/node@20.11.30)(sass@1.79.4)(terser@5.29.2)))(svelte@4.2.19)(vite@5.4.8(@types/node@20.11.30)(sass@1.79.4)(terser@5.29.2))
 
