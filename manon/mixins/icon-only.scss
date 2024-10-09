@@ -7,10 +7,11 @@
 
 @mixin icon-only($prefix) {
   background-color: var(--#{$prefix}background-color);
+  color: var(--#{$prefix}text-color);
   border-width: var(--#{$prefix}border-width);
-  font-size: var(--#{$prefix}font-size);
+  font-size: 0;
   min-width: var(--#{$prefix}min-width);
-  gap: var(--#{$prefix}gap);
+  gap: var(--#{$prefix}gap, 0);
   padding-right: var(--#{$prefix}padding-right);
   padding-left: var(--#{$prefix}padding-left);
 
@@ -23,12 +24,13 @@
   &:hover {
     background-color: var(--#{$prefix}hover-background-color);
     border-width: var(--#{$prefix}hover-border-width);
-    font-size: var(--#{$prefix}hover-font-size);
+    font-size: 0;
   }
 }
 
 @mixin icon-only-variables($prefix, $parentPrefix) {
   --#{$prefix}background-color: var(--#{$parentPrefix}background-color);
+  --#{$prefix}text-color: var(--#{$parentPrefix}text-color);
   --#{$prefix}border-width: var(--#{$parentPrefix}border-width);
   --#{$prefix}font-size: var(--#{$parentPrefix}font-size);
   --#{$prefix}min-width: var(--#{$parentPrefix}min-width);
