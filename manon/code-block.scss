@@ -7,6 +7,7 @@ pre,
 div.code-block {
   display: flex;
   overflow: auto;
+  overflow-x: auto;
   width: 100%;
   max-width: var(--code-block-max-width);
   box-sizing: border-box;
@@ -20,6 +21,8 @@ div.code-block {
 
   > code {
     white-space: unset;
+    background-color: var(--code-block-code-background-color);
+    padding: var(--code-block-code-padding);
   }
 }
 
