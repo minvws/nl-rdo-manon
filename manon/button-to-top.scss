@@ -26,8 +26,13 @@ button.to-top,
   &:hover {
     background-color: var(--button-to-top-hover-background-color);
     color: var(--button-to-top-hover-text-color);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
     border-radius: var(--button-to-top-border-radius);
-    border-color: var(--button-to-top-hover-border-color);
+    border-color: var(--button-to-top-border-color);
   }
 
   &.icon,
