@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
 
-  <article id="button-base">
+  <article id="button-base" class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Icoonknoppen zonder achtergrond</h1>
@@ -50,16 +50,106 @@
 
       <section id="examples">
         <h2><code>button</code></h2>
-        <h3>Visuele weergave:</h3>
 
-        <button class="icon-only icon-cat">Lorem ipsum</button>
+        <h3>pseudo-element op button</h3>
+        <p class="warning" role="group" aria-label="waarschuwing">
+          <span>Waarschuwing:</span> Het voorbeeld met een pseudo-element direct op button wordt uitgefaseerd
+          omdat het niet de voorkeur heeft omwille van toegankelijkheid. Gebruik in plaats hiervan een
+          van de overige voorbeelden.
+        </p>
 
-        <h3>HTML-voorbeeld:</h3>
+        <h4>Visueel voorbeeld</h4>
+        <button class="icon icon-only icon-search" aria-label="Zoeken">Zoeken</button>
+
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`<button class="icon icon-only icon-search" aria-label="Zoeken">Zoeken</button>`}
+        />
+
+        <h3><code>button</code> met <code>span</code></h3>
+        <h4>Visueel voorbeeld</h4>
+        <button class="icon-only">
+          <span class="icon icon-search" aria-hidden="true"></span>Zoeken
+        </button>
+
+        <h4>HTML-voorbeeld</h4>
         <Code
           language="html"
           code={`
-<button class="icon-only icon-cat">Lorem ipsum</button>
-`}
+<button class="icon-only">
+  <span class="icon icon-search" aria-hidden="true"></span>Zoeken
+</button>
+          `}
+        />
+
+        <h3><code>svg</code> binnen een <code>button</code></h3>
+
+        <p>
+          Voorbeeld met een svg-icoon uit de <a href="https://tabler.io/icons" rel="external"
+            >tabler iconen set</a
+          >.
+        </p>
+
+        <p>Aandachtspunten:</p>
+        <ul>
+          <li>
+            Als het icoon puur decoratief is, kan deze verborgen worden voor
+            screenreader-gebruikers. Dit kan doormiddel van een <code>aria-hidden="true"</code> op de
+            svg.
+          </li>
+          <li>
+            Als het icoon informatief is dient deze een kort en duidelijk label te krijgen als
+            alternatief voor screenreader-gebruikers. Bijvoorbeeld:
+            <code>aria-label="Gebruikersprofiel"</code>. Het icoon dient in dit geval ook
+            <code>role="img"</code> te krijgen.
+          </li>
+        </ul>
+        <h4>Visueel voorbeeld</h4>
+
+        <button class="icon-only">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+            aria-hidden="true"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+              d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"
+            /><path d="M21 21l-6 -6" /></svg
+          >
+          Zoeken
+        </button>
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`
+<button class="icon-only">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+    aria-hidden="true">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+    <path d="M21 21l-6 -6" />
+  </svg>
+  Zoeken
+</button>
+          `}
         />
 
         <h2><code>button</code> met <code>img</code></h2>

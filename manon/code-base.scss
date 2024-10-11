@@ -11,6 +11,7 @@ $breakpoint: 24rem !default;
   width: 100%;
   word-break: var(--code-base-word-break, inherit);
   padding: var(--code-base-padding, 0);
+  box-sizing: border-box;
 
   @media (width >= $breakpoint) {
     word-break: var(--code-base-breakpoint-word-break, break-word);
