@@ -25,11 +25,3 @@
 </script>
 
 <pre><code>{@html highlighted}</code></pre>
-
-<style>
-  code {
-    padding: 1rem;
-    overflow-x: auto;
-    background-color: #ffffff;
-  }
-</style>
