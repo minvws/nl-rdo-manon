@@ -177,6 +177,18 @@ $states: ("hover", "active", "focus");
 @mixin link-button-styling($prefix) {
   &:visited {
     color: var(--#{$prefix}text-color);
+
+    &::before {
+      color: var(--#{$prefix}text-color);
+    }
+
+    span.icon::before {
+      color: var(--#{$prefix}text-color);
+    }
+  }
+
+  &.icon::before {
+    color: var(--#{$prefix}text-color);
   }
 }
 

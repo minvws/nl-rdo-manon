@@ -12,7 +12,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article id="button-base">
+  <article id="button-base" class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>"Destructieve testpagina</h1>
@@ -26,25 +26,10 @@
         <h4>Visueel voorbeeld:</h4>
         <button class="destructive">Lorem ipsum</button>
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<button class="destructive">Lorem ipsum</button>
-`}
-        />
-
         <h3><code>button</code> disabled</h3>
         <h4>Visueel voorbeeld:</h4>
         <button class="destructive" disabled>Lorem ipsum</button>
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<button class="destructive" disabled>Lorem ipsum</button>
-`}
-        />
         <h4>States</h4>
         <ul>
           <li><button class="destructive focus">Focus</button></li>
@@ -55,29 +40,19 @@
 
         <h3><code>button</code> met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
-        <button class="destructive">Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></button>
+        <button class="destructive">Lorem ipsum <img src="$img/cat-white.svg" alt="Kat" /></button>
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<button class="destructive">Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></button>
-`}
-        />
+        <h3><code>button</code> met een icoon</h3>
+        <h4>Visueel voorbeeld:</h4>
+        <button class="destructive">
+          <span class="icon icon-trash" aria-hidden="true"></span>Verwijderen
+        </button>
 
         <h3>Link als knop</h3>
         <h4>Visueel voorbeeld:</h4>
         <a href="{base}/components/button-destructive-test" class="button destructive"
           >Lorem ipsum</a
         >
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input class="button destructive">Lorem ipsum</a>
-`}
-        />
 
         <h4>States</h4>
         <ul>
@@ -106,40 +81,16 @@
         <h3>Link als knop: met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
         <a href="{base}/components/button-destructive-test" class="button destructive"
-          >Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></a
+          >Lorem ipsum <img src="$img/cat-white.svg" alt="Kat" /></a
         >
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input class="button destructive">Lorem ipsum <img src="/img/cat.svg" alt="Kat" /></a>
-`}
-        />
 
         <h3><code>input type="button"</code></h3>
         <h4>Visueel voorbeeld:</h4>
         <input type="button" value="Button" class="destructive" />
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input type="button" value="Button" class="destructive">
-`}
-        />
-
         <h3><code>input type="button"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
         <input type="button" value="Button disabled" class="destructive" disabled />
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input type="button" value="Button disabled" class="destructive" disabled>
-`}
-        />
 
         <h4>States</h4>
         <h4>Visueel voorbeeld:</h4>
@@ -158,25 +109,9 @@
         <h4>Visueel voorbeeld:</h4>
         <button type="submit" class="destructive">Lorem ipsum</button>
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<button type="submit" class="destructive">Lorem ipsum</button>
-`}
-        />
-
         <h3><code>button type="submit"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
         <button type="submit" class="destructive" disabled>Lorem ipsum</button>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<button type="submit" value="Button disabled" class="destructive" disabled>
-`}
-        />
 
         <h4>States</h4>
         <h4>Visueel voorbeeld:</h4>
@@ -195,49 +130,17 @@
         <h4>Visueel voorbeeld:</h4>
         <input type="submit" value="Input" class="destructive" />
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input type="submit" value="Input" class="destructive">
-`}
-        />
-
         <h3><code>input type="submit"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
         <input type="submit" value="Input" class="destructive" disabled />
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input type="submit" value="Input" class="destructive" disabled>
-`}
-        />
 
         <h3><code>button type="reset"</code></h3>
         <h4>Visueel voorbeeld:</h4>
         <button type="reset" class="destructive">Lorem ipsum</button>
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<button type="reset" class="destructive">Lorem ipsum</button>
-`}
-        />
-
         <h3><code>button type="reset"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
         <button type="reset" class="destructive" disabled>Lorem ipsum</button>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<button type="reset" value="Button disabled" class="destructive" disabled>
-`}
-        />
 
         <h4>States</h4>
         <h4>Visueel voorbeeld:</h4>
@@ -254,37 +157,13 @@
         <h4>Visueel voorbeeld:</h4>
         <input type="reset" value="Input" class="destructive" disabled />
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input type="reset" value="Input" class="destructive" disabled>
-`}
-        />
-
         <h3><code>input type="reset"</code></h3>
         <h4>Visueel voorbeeld:</h4>
         <input type="reset" class="destructive" />
 
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input type="reset" class="destructive">
-`}
-        />
-
         <h3><code>input type="reset"</code>: disabled</h3>
         <h4>Visueel voorbeeld:</h4>
         <input type="reset" class="destructive" disabled />
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<input type="reset" value="Button disabled" class="destructive" disabled>
-`}
-        />
 
         <h4>States</h4>
         <h4>Visueel voorbeeld:</h4>
