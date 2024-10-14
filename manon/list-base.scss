@@ -2,39 +2,11 @@
 /*------------------- components/list-base.scss -----------------*/
 /*---------------------------------------------------------------*/
 @use "list-base-variables";
+@use "mixins/list";
 
 ul,
 ol {
-  display: flex;
-  flex-direction: column;
-  gap: var(--list-base-gap);
-  padding: var(--list-base-padding);
-  background-color: var(--list-base-background-color);
-  line-height: var(--list-base-line-height);
-  font-size: var(--list-base-font-size);
-  font-weight: var(--list-base-font-weight);
-  color: var(--list-base-text-color);
-  margin: 0;
-  box-sizing: border-box;
-
-  li {
-    background-color: var(--list-base-item-background-color);
-    border-width: var(--list-base-item-border-width);
-    border-style: var(--list-base-item-border-style);
-    border-color: var(--list-base-item-border-color);
-    padding: var(--list-base-item-padding);
-    line-height: var(--list-base-item-line-height);
-    font-size: var(--list-base-item-font-size);
-    font-weight: var(--list-base-item-font-weight);
-    color: var(--list-base-item-text-color);
-    box-sizing: border-box;
-
-    a {
-      line-height: inherit;
-      font-size: inherit;
-      font-weight: inherit;
-    }
-  }
+  @include list.list("list-base-");
 }
 
 /*
