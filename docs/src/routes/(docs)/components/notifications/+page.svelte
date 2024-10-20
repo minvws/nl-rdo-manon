@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Notificaties";
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
 </script>
 

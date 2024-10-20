@@ -4,18 +4,18 @@ layout at (docs)/+layout.svelte.
 See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-of-layouts
 -->
 
-<script context="module">
+<script module>
   export const breadcrumb = "Header met logo bovenaan";
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import { onMount } from "svelte";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
   import SiteNavLinks from "$lib/SiteNavLinks.svelte";
   import DefaultFooter from "$lib/DefaultFooter.svelte";
-  import { initCollapsible } from "$lib/manon.js";
+  import { initCollapsible } from "$lib/manon";
   onMount(initCollapsible);
 </script>
 

@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Notificatie binnen formulier";
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";

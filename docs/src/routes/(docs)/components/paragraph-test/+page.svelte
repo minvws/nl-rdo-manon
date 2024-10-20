@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Paragraaf testpagina";
 </script>
 
-<script>
+<script lang="ts">
   import Code from "$lib/Code.svelte";
 </script>
 
