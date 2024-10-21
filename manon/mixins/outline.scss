@@ -2,6 +2,7 @@
   & {
     outline: var(--#{$prefix}outline);
     outline-offset: var(--#{$prefix}outline-offset);
+    outline-color: var(--#{$prefix}outline-color, black);
     z-index: var(--#{$prefix}z-index, 1);
     box-shadow: var(--#{$prefix}box-shadow);
     border-radius: var(--#{$prefix}border-radius);
@@ -11,6 +12,7 @@
 @mixin outline-variables($prefix, $parentPrefix) {
   --#{$prefix}outline: var(--#{$parentPrefix}outline);
   --#{$prefix}outline-offset: var(--#{$parentPrefix}outline-offset);
+  --#{$prefix}outline-color: var(--#{$parentPrefix}outline-color);
   --#{$prefix}z-index: var(--#{$parentPrefix}z-index);
   --#{$prefix}box-shadow: var(--#{$parentPrefix}box-shadow);
   --#{$prefix}border-radius: var(--#{$parentPrefix}border-radius);
