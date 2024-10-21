@@ -1,9 +1,9 @@
-/**
- * @param {string | null} routeId
- * @param {import('./types').BreadcrumbNames} breadcrumbNames
- * @return {Array<import('./types').Breadcrumb>}
- */
-export function getBreadcrumbs(routeId, breadcrumbNames) {
+import type { Breadcrumb, BreadcrumbNames } from "./types";
+
+export function getBreadcrumbs(
+  routeId: string | null,
+  breadcrumbNames: BreadcrumbNames,
+): Array<Breadcrumb> {
   if (!routeId || !breadcrumbNames) return [];
   const breadcrumbs = [];
   let route = "";
@@ -17,19 +17,15 @@ export function getBreadcrumbs(routeId, breadcrumbNames) {
   return breadcrumbs;
 }
 
-/**
- * @return {Promise<import('./types').BreadcrumbNames>}
- */
-export async function loadBreadcrumbNames() {
+export async function loadBreadcrumbNames(): Promise<BreadcrumbNames> {
   const modules = import.meta.glob("../routes/**/+page.svelte");
-  /** @type import('./types').BreadcrumbNames */
-  const names = {};
+  const names: BreadcrumbNames = {};
   await Promise.all(
     Object.entries(modules).map(async ([key, value]) => {
       key = routeFromModulePath(key);
       if (!key) return;
       const name = (await nameFromModule(value)) || nameFromKey(key);
-      names[/** @type {import('./types').Route} */ (key)] = name;
+      names[key] = name;
     }),
   );
   return names;
@@ -40,10 +36,8 @@ const routeSegmentPattern = /\/[^+.(\/]+/g;
 /**
  * Strip the "../routes/" prefix, "/+page.svelte" suffix, and any route
  * "(group)/"s from the module path.
- * @param {string} path
- * @return {string}
  */
-function routeFromModulePath(path) {
+function routeFromModulePath(path: string): string {
   routeSegmentPattern.lastIndex = 0;
   let route = "";
   let match;
@@ -54,20 +48,12 @@ function routeFromModulePath(path) {
   return route;
 }
 
-/**
- * @param {() => Promise<any>} mod
- * @return {Promise<string>}
- */
-async function nameFromModule(mod) {
-  const name = /** @type {any} */ (await mod()).breadcrumb;
+async function nameFromModule(mod: () => Promise<any>): Promise<string> {
+  const name = (await mod()).breadcrumb;
   return typeof name === "string" ? name : "";
 }
 
-/**
- * @param {string} key
- * @return {string}
- */
-function nameFromKey(key) {
+function nameFromKey(key: string): string {
   const parts = key.split("/");
   if (parts.length < 3) return "";
   const name = parts[parts.length - 2];

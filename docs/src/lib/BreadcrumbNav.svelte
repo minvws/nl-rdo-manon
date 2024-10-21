@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import { page } from "$app/stores";
-  import { getBreadcrumbs } from "$lib/breadcrumbs.js";
+  import { getBreadcrumbs } from "$lib/breadcrumbs";
   import NavLink from "./NavLink.svelte";
-  $: breadcrumbs = getBreadcrumbs($page.route.id, $page.data.breadcrumbNames);
+  let breadcrumbs = $derived(getBreadcrumbs($page.route.id, $page.data.breadcrumbNames));
 </script>
 
 {#if breadcrumbs.length > 1}

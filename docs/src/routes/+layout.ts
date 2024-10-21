@@ -1,11 +1,11 @@
+import type { LayoutLoad } from "./$types";
 import { redirect } from "@sveltejs/kit";
 import { redirects } from "../redirects.js";
 import { base } from "$app/paths";
 
 export const prerender = true;
 
-/** @type {import('./$types').LayoutLoad} */
-export function load({ url }) {
+export const load: LayoutLoad = ({ url }) => {
   let { pathname } = url;
   if (base && pathname.startsWith(base)) {
     pathname = pathname.replace(base, "");
@@ -13,4 +13,4 @@ export function load({ url }) {
   if (pathname in redirects) {
     return redirect(301, base + redirects[pathname]);
   }
-}
+};

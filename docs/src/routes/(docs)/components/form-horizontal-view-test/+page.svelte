@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Horizontaal uitgelijnde testpagina";
 </script>
 
-<script>
+<script lang="ts">
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>

@@ -4,19 +4,19 @@ layout at (docs)/+layout.svelte.
 See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-of-layouts
 -->
 
-<script context="module">
+<script module>
   export const breadcrumb = "Zijmenu naast de pagina";
 </script>
 
-<script>
+<script lang="ts">
+  import type { Action } from "svelte/action";
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
   import DefaultHeader from "$lib/DefaultHeader.svelte";
   import DefaultFooter from "$lib/DefaultFooter.svelte";
 
-  /** @type {import('svelte/action').Action}  */
-  function sidemenuClass(node) {
+  const sidemenuClass: Action = (node) => {
     // Add the "sidemenu" class while this page is mounted.
     node.classList.add("sidemenu");
     return {

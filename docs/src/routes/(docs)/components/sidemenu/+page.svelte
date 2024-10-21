@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Zijmenu";
 </script>
 
-<script>
+<script lang="ts">
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
 

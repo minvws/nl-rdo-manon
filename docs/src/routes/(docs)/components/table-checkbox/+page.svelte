@@ -1,15 +1,16 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Tabelrij met checkbox";
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
-  let lorem = false;
-  let ipsum = false;
-  let dolor = false;
-  $: allSelected = lorem && ipsum && dolor;
+
+  let lorem = $state(false);
+  let ipsum = $state(false);
+  let dolor = $state(false);
+  let allSelected = $derived(lorem && ipsum && dolor);
   const toggleAll = () => {
     lorem = ipsum = dolor = !(lorem && ipsum && dolor);
   };
@@ -118,7 +119,7 @@
                 <tr>
                   <th scope="col">
                     <span class="visually-hidden">Selectie</span>
-                    <input type="checkbox" bind:checked={allSelected} on:change={toggleAll} />
+                    <input type="checkbox" checked={allSelected} onchange={toggleAll} />
                   </th>
                   <th scope="col">Naam</th>
                   <th scope="col">Actie</th>

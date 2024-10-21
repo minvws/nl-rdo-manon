@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Meldingen op tabel-elementen";
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";

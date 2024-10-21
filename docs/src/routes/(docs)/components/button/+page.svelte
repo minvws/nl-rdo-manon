@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Knoppen";
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>

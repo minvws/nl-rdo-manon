@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Div content wrapper test";
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>

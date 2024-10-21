@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Iconen";
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
@@ -357,7 +357,7 @@
         <ul id="default-iconset" class="background-color-offset grid-iconset">
           {#each icons as icon}
             <li>
-              <span class="icon icon-{icon}" aria-hidden="true" />
+              <span class="icon icon-{icon}" aria-hidden="true"></span>
               <code lang="en">{icon}</code>
             </li>
           {/each}

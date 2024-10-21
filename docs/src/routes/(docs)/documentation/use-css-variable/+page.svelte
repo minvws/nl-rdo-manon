@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "CSS-variabelen gebruiken";
 </script>
 
-<script>
+<script lang="ts">
   import Code from "$lib/Code.svelte";
 </script>
 

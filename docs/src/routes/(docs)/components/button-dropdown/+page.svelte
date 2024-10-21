@@ -1,12 +1,12 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Dropdown button";
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import { onMount } from "svelte";
   import Code from "$lib/Code.svelte";
-  import { initCollapsible } from "$lib/manon.js";
+  import { initCollapsible } from "$lib/manon";
   onMount(initCollapsible);
   import SideMenu from "$lib/SideMenu.svelte";
 </script>

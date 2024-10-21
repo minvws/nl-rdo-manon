@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Pagina-notificatie waarschuwing voorbeeld";
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
