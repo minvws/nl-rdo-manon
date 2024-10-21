@@ -162,7 +162,7 @@
           omdat het niet de voorkeur heeft omwille van toegankelijkheid. Gebruik in plaats hiervan een
           van de overige voorbeelden.
         </p>
-        <a href="./icon/components/icons/test" class="button icon icon-user">Lorem ipsum</a>
+        <a href="./test" class="button icon icon-user">Lorem ipsum</a>
 
         <a href="./test" class="button">
           <span class="icon icon-user" aria-hidden="true"></span>Inloggen
@@ -177,7 +177,7 @@
         <h3><code>svg</code> binnen een link</h3>
         <h4>Visueel voorbeeld</h4>
 
-        <a href="./icons">
+        <a href="./test">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
