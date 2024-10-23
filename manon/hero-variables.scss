@@ -1,10 +1,12 @@
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------- hero-variables.scss -----------------------------*/
 /*----------------------------------------------------------------------------------*/
+@use "mixins/tile";
+@use "mixins/list";
+
 :root {
   --hero-min-height: 30rem;
   --hero-height: auto;
-  /* --hero-max-height: ; */
 
   /* Title */
   --hero-title-font-size: 2rem;
@@ -12,4 +14,8 @@
 
   /* Image */
   --hero-image-object-position: center;
+
+  @include tile.tile-variables("hero-tile-", "tile-");
+  @include list.list-variables("hero-tile-list-", "hero-list-");
+  @include list.list-variables("hero-list-", "list-base-");
 }
