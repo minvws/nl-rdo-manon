@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Destructieve knop";
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
@@ -22,7 +22,7 @@
     </ul>
   </SideMenu>
 
-  <article id="button-base">
+  <article id="button-base" class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Destructieve knop</h1>

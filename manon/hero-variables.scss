@@ -5,7 +5,8 @@
 @use "mixins/list";
 
 :root {
-  --hero-height: 30rem;
+  --hero-min-height: 30rem;
+  --hero-height: auto;
 
   /* Title */
   --hero-title-font-size: 2rem;

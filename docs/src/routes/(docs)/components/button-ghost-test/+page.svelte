@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = '"Ghost button" testpagina';
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
 </script>
@@ -12,7 +12,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article id="button-base">
+  <article id="button-base" class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>"Ghost button" testpagina</h1>

@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Icoonknoppen";
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
 
-  <article id="button-base">
+  <article id="button-base" class="visually-grouped">
     <div>
       <section id="introduction">
         <h1>Icoonknoppen</h1>
@@ -49,47 +49,150 @@
       </section>
 
       <section id="examples">
-        <h2><code>button</code></h2>
-        <h3>Visuele weergave:</h3>
-
-        <button class="icon icon-cat">Lorem ipsum</button>
-
-        <h3>HTML-voorbeeld:</h3>
+        <h2>Voorbeelden</h2>
+        <h3><code>button</code></h3>
+        <h4>Visueel voorbeeld pseudo-element op button</h4>
+        <p class="warning" role="group" aria-label="waarschuwing">
+          <span>Waarschuwing:</span> Het voorbeeld met een pseudo-element direct op button wordt uitgefaseerd
+          omdat het niet de voorkeur heeft omwille van toegankelijkheid. Gebruik in plaats hiervan een
+          van de overige voorbeelden.
+        </p>
+        <button class="icon icon-on-off" aria-label="Aan- of uitschakelen"
+          >Aan- of uitschakelen</button
+        >
+        <h4>HTML-voorbeeld</h4>
         <Code
           language="html"
-          code={`
-<button class="icon icon-cat">Lorem ipsum</button>
-`}
+          code={`<button class="icon icon-on-off" aria-label="Aan- of uitschakelen">Aan- of uitschakelen</button>`}
         />
 
-        <h2><code>button</code> met <code>img</code></h2>
-        <h3>Visuele weergave:</h3>
-
-        <button class="icon">
-          Lorem ipsum <img src="$img/cat-white.svg" alt="Kat" />
+        <h4>Visueel voorbeeld <code>button</code> met <code>span</code></h4>
+        <button>
+          <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
         </button>
 
-        <h3>HTML-voorbeeld:</h3>
+        <h4>HTML-voorbeeld</h4>
         <Code
           language="html"
           code={`
-<button href="{base}/components/button-icon" class="icon">Lorem ipsum <img src="path/to/img.svg" alt="Kat"></button>
-`}
+<button>
+  <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
+</button>
+          `}
         />
 
-        <h2>Link als knop met <code>img</code></h2>
-        <h3>Visuele weergave:</h3>
-
-        <a href="{base}/components/button-icon" class="button icon"
-          >Lorem ipsum <img src="$img/cat-white.svg" alt="Kat" /></a
-        >
-
-        <h3>HTML-voorbeeld:</h3>
+        <h4>Visueel voorbeeld <code>svg</code> binnen een <code>button</code></h4>
+        <p>
+          Voorbeeld met een svg-icoon uit de <a href="https://tabler.io/icons" rel="external"
+            >tabler iconen set</a
+          >.
+        </p>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-power"
+            aria-hidden="true"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+              d="M7 6a7.75 7.75 0 1 0 10 0"
+            /><path d="M12 4l0 8" /></svg
+          >
+          Aan- of uitschakelen
+        </button>
+        <h4>HTML-voorbeeld</h4>
         <Code
           language="html"
           code={`
-<a href="{base}/components/button-icon" class="button icon">Lorem ipsum <img src="path/to/img.svg" alt="Kat"></a>
-`}
+<button>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="icon icon-tabler icons-tabler-outline icon-tabler-power"
+    aria-hidden="true">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M7 6a7.75 7.75 0 1 0 10 0"/>
+    <path d="M12 4l0 8" />
+    </svg>
+  Aan- of uitschakelen
+</button>
+          `}
+        />
+
+        <h3>Icoon binnen link<code>a</code> visueel weergegeven als knop</h3>
+        <h4>Visueel voorbeeld</h4>
+        <a href="./button-icon" class="button"
+          ><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a
+        >
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`<a href="./button-icon" class="button"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>`}
+        />
+
+        <h4>Visueel voorbeeld, <code>svg</code> binnen een link, visueel weergegeven als knop</h4>
+        <p>
+          Voorbeeld met een svg-icoon uit de <a href="https://tabler.io/icons" rel="external"
+            >tabler iconen set</a
+          >.
+        </p>
+        <a href="./button-icon" class="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-user"
+            aria-hidden="true"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+              d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"
+            /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg
+          >
+          Inloggen
+        </a>
+
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`
+<a href="./button-icon" class="button">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="icon icon-tabler icons-tabler-outline icon-tabler-user"
+    aria-hidden="true">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/>
+    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+  </svg>
+  Inloggen
+</a>
+          `}
         />
       </section>
 
@@ -112,45 +215,6 @@
 @use "@minvws/manon/button-icon";
       `}
         />
-      </section>
-
-      <section id="variables">
-        <h2>Instelbare variabelen</h2>
-        <ul>
-          <li>
-            Knop, hover, active, focus.
-            <ul>
-              <li>
-                <a href="{base}/documentation/variables#background-color">background-color</a>
-              </li>
-              <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
-              <li>
-                <a href="{base}/documentation/variables#border-width">border-width</a>
-              </li>
-              <li>
-                <a href="{base}/documentation/variables#border-style">border-style</a>
-              </li>
-              <li>
-                <a href="{base}/documentation/variables#border-color">border-color</a>
-              </li>
-              <li>
-                <a href="{base}/documentation/variables#border-radius">border-radius</a>
-              </li>
-              <li>
-                <a href="{base}/documentation/variables#outline-style">outline-style</a>
-              </li>
-              <li>
-                <a href="{base}/documentation/variables#outline-color">outline-color</a>
-              </li>
-              <li>
-                <a href="{base}/documentation/variables#outline-width">outline-width</a>
-              </li>
-              <li>
-                <a href="{base}/documentation/variables#outline-offset">outline-offset</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
       </section>
     </div>
   </article>

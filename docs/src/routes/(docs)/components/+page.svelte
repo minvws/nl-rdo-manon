@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Componenten";
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import NavLink from "$lib/NavLink.svelte";
 </script>

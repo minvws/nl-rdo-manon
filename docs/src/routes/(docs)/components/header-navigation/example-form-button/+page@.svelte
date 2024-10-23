@@ -4,18 +4,17 @@ layout at (docs)/+layout.svelte.
 See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-of-layouts
 -->
 
-<script context="module">
+<script module>
   export const breadcrumb = "Header met navigatie met meerdere menus en form button";
 </script>
 
-<script>
-  import { base } from "$app/paths";
+<script lang="ts">
   import { onMount } from "svelte";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
   import SiteNavLinks from "$lib/SiteNavLinks.svelte";
   import DefaultFooter from "$lib/DefaultFooter.svelte";
-  import { initCollapsible } from "$lib/manon.js";
+  import { initCollapsible } from "$lib/manon";
   onMount(initCollapsible);
 </script>
 
@@ -40,7 +39,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
           <li>
             <form class="inline">
               <input type="hidden" name="_token" value="" />
-              <a href="#" class="button" type="submit">Logout</a>
+              <a href="./example-form-button" class="button" type="submit">Logout</a>
             </form>
           </li>
         </ul>
@@ -96,7 +95,7 @@ See: https://kit.svelte.dev/docs/advanced-routing#advanced-layouts-breaking-out-
             </ul>
 
             <ul class="actions">
-              <li><a href="#" class="avatar">A</a></li>
+              <li><a href="./example-form-button" class="avatar">A</a></li>
               <li>
                 <form action="http://localhost/logout" method="POST" class="inline">
                   <input type="hidden" name="_token" value="">

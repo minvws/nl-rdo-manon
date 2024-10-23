@@ -45,6 +45,7 @@ $states: ("hover", "active", "focus");
 
     /* Reset ios button styling */
     -webkit-border-radius: var(--#{$prefix}border-radius);
+
     /* Reset ios button styling */
     -webkit-appearance: var(--#{$prefix}webkit-appearance);
 
@@ -175,6 +176,18 @@ $states: ("hover", "active", "focus");
 /* Used for links that visually look like buttons */
 @mixin link-button-styling($prefix) {
   &:visited {
+    color: var(--#{$prefix}text-color);
+
+    &::before {
+      color: var(--#{$prefix}text-color);
+    }
+
+    span.icon::before {
+      color: var(--#{$prefix}text-color);
+    }
+  }
+
+  &.icon::before {
     color: var(--#{$prefix}text-color);
   }
 }

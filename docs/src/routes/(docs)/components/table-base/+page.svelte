@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Tabel basisweergave";
 </script>
 
-<script>
+<script lang="ts">
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
@@ -16,7 +16,14 @@
   <SideMenu>
     <ul>
       <li><a href="#introduction">Introductie</a></li>
-      <li><a href="#examples">Voorbeelden</a></li>
+      <li>
+        <a href="#examples">Voorbeelden</a>
+        <ul>
+          <li><a href="#example-base">Basis</a></li>
+          <li><a href="#example-footer">Tabel met footer</a></li>
+          <li><a href="#example-row-headers">Tabel met rij-headers</a></li>
+        </ul>
+      </li>
       <li><a href="#requirements">Benodigde bestanden</a></li>
     </ul>
   </SideMenu>
@@ -37,38 +44,38 @@
 
         <h2>Voorbeelden</h2>
 
-        <h3>Basis</h3>
+        <h3 id="example-base">Basis</h3>
         <h4>Visueel voorbeeld</h4>
         <div class="horizontal-scroll">
           <table>
-            <caption> Basisvoorbeeld tabel: </caption>
+            <caption>Basisvoorbeeld tabel:</caption>
             <thead>
               <tr>
-                <th scope="col">Table header heading 1</th>
-                <th scope="col">Table header heading 2</th>
-                <th scope="col">Table header heading 3</th>
+                <th scope="col">Kolom 1</th>
+                <th scope="col">Kolom 2</th>
+                <th scope="col">Kolom 3</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Lorem</td>
                 <td>Ipsum</td>
-                <td>Dolor set</td>
+                <td>Dolor sit amet</td>
               </tr>
               <tr>
                 <td>Lorem</td>
                 <td>Ipsum</td>
-                <td>Dolor set</td>
+                <td>Dolor sit amet</td>
               </tr>
               <tr>
                 <td>Lorem</td>
                 <td>Ipsum</td>
-                <td>Dolor set</td>
+                <td>Dolor sit amet</td>
               </tr>
               <tr>
                 <td>Lorem</td>
                 <td>Ipsum</td>
-                <td>Dolor set</td>
+                <td>Dolor sit amet</td>
               </tr>
             </tbody>
           </table>
@@ -83,31 +90,31 @@
     <caption>Basisvoorbeeld tabel:</caption>
     <thead>
       <tr>
-        <th scope="col">Table header heading 1</th>
-        <th scope="col">Table header heading 2</th>
-        <th scope="col">Table header heading 3</th>
+        <th scope="col">Kolom 1</th>
+        <th scope="col">Kolom 2</th>
+        <th scope="col">Kolom 3</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit amet</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit amet</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit amet</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit amet</td>
       </tr>
     </tbody>
   </table>
@@ -115,38 +122,38 @@
 `}
         />
 
-        <h2>Tabel met footer</h2>
+        <h3 id="example-footer">Tabel met footer</h3>
         <p>
           Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden om een
           titel toe te voegen met daarin de omschrijving van de tabel. Voeg direct binnen de
           <code>table</code> een <code>caption</code> toe om de titel toe te voegen.
         </p>
-        <p>Visueel voorbeeld:</p>
+        <h4>Visueel voorbeeld:</h4>
         <div class="horizontal-scroll">
           <table>
-            <caption> Tabelvoorbeeld met footer: </caption>
+            <caption>Tabelvoorbeeld met footer:</caption>
             <thead>
               <tr>
-                <th scope="col">Table header heading 1</th>
-                <th scope="col">Table header heading 2</th>
-                <th scope="col">Table header heading 3</th>
+                <th scope="col">Kolom 1</th>
+                <th scope="col">Kolom 2</th>
+                <th scope="col">Kolom 3</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Lorem</td>
                 <td>Ipsum</td>
-                <td>Dolor set</td>
+                <td>Dolor sit amet</td>
               </tr>
               <tr>
                 <td>Lorem</td>
                 <td>Ipsum</td>
-                <td>Dolor set</td>
+                <td>Dolor sit amet</td>
               </tr>
               <tr>
                 <td>Lorem</td>
                 <td>Ipsum</td>
-                <td>Dolor set</td>
+                <td>Dolor sit amet</td>
               </tr>
             </tbody>
             <tfoot>
@@ -170,29 +177,29 @@
           code={`
 <div class="horizontal-scroll">
   <table>
-    <caption>Table with titlebar and title example:</caption>
+    <caption>Tabelvoorbeeld met footer:</caption>
     <thead>
       <tr>
-        <th scope="col">Table header heading 1</th>
-        <th scope="col">Table header heading 2</th>
-        <th scope="col">Table header heading 3</th>
+        <th scope="col">Kolom 1</th>
+        <th scope="col">Kolom 2</th>
+        <th scope="col">Kolom 3</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit amet</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit amet</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit amet</td>
       </tr>
     </tbody>
     <tfoot>
@@ -207,6 +214,84 @@
         <td>Table footer 3</td>
       </tr>
     </tfoot>
+  </table>
+</div>
+`}
+        />
+
+        <h3 id="example-row-headers">Tabel met rij-headers</h3>
+        <h4>Visueel voorbeeld</h4>
+        <div class="horizontal-scroll">
+          <table>
+            <caption>Basisvoorbeeld tabel met rij-headers:</caption>
+            <thead>
+              <tr>
+                <th scope="col">Kolom 1</th>
+                <th scope="col">Kolom 2</th>
+                <th scope="col">Kolom 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Rij 1</th>
+                <td>Lorem ipsum</td>
+                <td>Dolor sit amet</td>
+              </tr>
+              <tr>
+                <th scope="row">Rij 2</th>
+                <td>Lorem ipsum</td>
+                <td>Dolor sit amet</td>
+              </tr>
+              <tr>
+                <th scope="row">Rij 3</th>
+                <td>Lorem ipsum</td>
+                <td>Dolor sit amet</td>
+              </tr>
+              <tr>
+                <th scope="row">Rij 4</th>
+                <td>Lorem ipsum</td>
+                <td>Dolor sit amet</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>HTML-voorbeeld:</h4>
+        <Code
+          language="html"
+          code={`
+<div class="horizontal-scroll">
+  <table>
+    <caption>Basisvoorbeeld tabel:</caption>
+    <thead>
+      <tr>
+        <th scope="col">Kolom 1</th>
+        <th scope="col">Kolom 2</th>
+        <th scope="col">Kolom 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+    </tbody>
   </table>
 </div>
 `}

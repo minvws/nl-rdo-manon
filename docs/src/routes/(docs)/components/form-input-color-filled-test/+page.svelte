@@ -1,8 +1,8 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Kleurselector volledig gevuld";
 </script>
 
-<script>
+<script lang="ts">
   import Code from "$lib/Code.svelte";
 </script>
 

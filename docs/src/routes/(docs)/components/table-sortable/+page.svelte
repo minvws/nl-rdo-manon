@@ -1,10 +1,12 @@
-<script context="module">
+<script module>
   export const breadcrumb = "Sorteerbare tabel";
 </script>
 
-<script>
+<script lang="ts">
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
+
+  type Column = "firstname" | "lastname" | "age";
 
   const demoTableRows = [
     { firstname: "Janine", lastname: "Hinde", age: 16 },
@@ -13,30 +15,29 @@
     { firstname: "John", lastname: "Doe", age: 64 },
   ];
 
-  /** @type {'firstname'|'lastname'|'age'|undefined} */
-  let sortColumn = undefined;
+  let sortColumn: Column | undefined = $state(undefined);
 
-  /** @type {'ascending'|'descending'} */
-  let sortDirection = "ascending";
+  let sortDirection: "ascending" | "descending" = $state("ascending");
 
-  $: numeric = sortColumn === "age";
+  let numeric = $derived(sortColumn === "age");
 
-  $: sortedDemoTableRows = demoTableRows
-    .slice()
-    .sort(
-      sortDirection === "ascending"
-        ? (a, b) =>
-            sortColumn
-              ? ("" + a[sortColumn]).localeCompare(String(b[sortColumn]), undefined, { numeric })
-              : 0
-        : (a, b) =>
-            sortColumn
-              ? ("" + b[sortColumn]).localeCompare(String(a[sortColumn]), undefined, { numeric })
-              : 0,
-    );
+  let sortedDemoTableRows = $derived(
+    demoTableRows
+      .slice()
+      .sort(
+        sortDirection === "ascending"
+          ? (a, b) =>
+              sortColumn
+                ? ("" + a[sortColumn]).localeCompare(String(b[sortColumn]), undefined, { numeric })
+                : 0
+          : (a, b) =>
+              sortColumn
+                ? ("" + b[sortColumn]).localeCompare(String(a[sortColumn]), undefined, { numeric })
+                : 0,
+      ),
+  );
 
-  /** @type {(column: 'firstname'|'lastname'|'age') => void} */
-  const toggleSort = (column) => {
+  const toggleSort: (column: Column) => void = (column): void => {
     if (column === sortColumn) {
       sortDirection = sortDirection === "ascending" ? "descending" : "ascending";
     } else {
@@ -184,7 +185,7 @@
             <thead>
               <tr>
                 <th scope="col" aria-sort={sortColumn === "firstname" ? sortDirection : undefined}>
-                  <button class="sort" on:click={() => toggleSort("firstname")}>
+                  <button class="sort" onclick={() => toggleSort("firstname")}>
                     Voornaam
                     <span
                       aria-hidden="true"
@@ -194,7 +195,7 @@
                         sortDirection === "ascending"}
                       class:icon-descending={sortColumn === "firstname" &&
                         sortDirection === "descending"}
-                    />
+                    ></span>
                   </button>
                 </th>
                 <th
@@ -202,7 +203,7 @@
                   abbr="Achternaam"
                   aria-sort={sortColumn === "lastname" ? sortDirection : undefined}
                 >
-                  <button class="sort" on:click={() => toggleSort("lastname")}>
+                  <button class="sort" onclick={() => toggleSort("lastname")}>
                     Achternaam (met tussenvoegsel)
                     <span
                       aria-hidden="true"
@@ -212,7 +213,7 @@
                         sortDirection === "ascending"}
                       class:icon-descending={sortColumn === "lastname" &&
                         sortDirection === "descending"}
-                    />
+                    ></span>
                   </button>
                 </th>
                 <th
@@ -220,7 +221,7 @@
                   class="number"
                   aria-sort={sortColumn === "age" ? sortDirection : undefined}
                 >
-                  <button class="sort" on:click={() => toggleSort("age")}>
+                  <button class="sort" onclick={() => toggleSort("age")}>
                     Leeftijd
                     <span
                       aria-hidden="true"
@@ -228,7 +229,7 @@
                       class:icon-sortable={sortColumn !== "age"}
                       class:icon-ascending={sortColumn === "age" && sortDirection === "ascending"}
                       class:icon-descending={sortColumn === "age" && sortDirection === "descending"}
-                    />
+                    ></span>
                   </button>
                 </th>
               </tr>
