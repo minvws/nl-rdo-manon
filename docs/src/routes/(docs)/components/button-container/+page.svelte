@@ -83,6 +83,10 @@
 @use "@minvws/manon/button-container";
 `}
         />
+        <p>
+          <b>Let op:</b> de volgode waarin de componenten geïmporteerd worden is belangrijk. Dit
+          component moet <b>na</b> de overige <code>button-</code>componenten geïmporteerd worden.
+        </p>
       </section>
 
       <section id="variables">
