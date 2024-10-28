@@ -25,10 +25,10 @@ importers:
     devDependencies:
       '@sveltejs/adapter-static':
         specifier: ^3.0.5
-        version: 3.0.5(@sveltejs/kit@2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))
+        version: 3.0.5(@sveltejs/kit@2.7.3(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))
       '@sveltejs/kit':
-        specifier: ^2.7.2
-        version: 2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2))
+        specifier: ^2.7.3
+        version: 2.7.3(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^4.0.0
         version: 4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2))
@@ -497,8 +497,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
-  '@sveltejs/kit@2.7.2':
-    resolution: {integrity: sha512-bFwrl+0bNr0/DHQZM0INwwSPNYqDjfsKRhUoa6rj9d8tDZzszBrJ3La6/HVFxWGONEigtG+SzHXa1BEa1BLdwA==}
+  '@sveltejs/kit@2.7.3':
+    resolution: {integrity: sha512-Vx7nq5MJ86I8qXYsVidC5PX6xm+uxt8DydvOdmJoyOK7LvGP18OFEG359yY+aa51t6pENvqZAMqAREQQx1OI2Q==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -918,9 +918,6 @@ packages:
   lru-cache@11.0.0:
     resolution: {integrity: sha512-Qv32eSV1RSCfhY3fpPE2GNZ8jgM9X7rdAfemLWqTUxwiyIC4jJ6Sy0fZ8H+oLWevO6i4/bizg7c8d8i6bxrzbA==}
     engines: {node: 20 || >=22}
-
-  magic-string@0.30.10:
-    resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
 
   magic-string@0.30.12:
     resolution: {integrity: sha512-Ea8I3sQMVXr8JhN4z+H/d8zwo+tYDgHE9+5G4Wnrwhs0gaK9fXTKx0Tw5Xwsd/bCPTTZNRAdpyzvoeORe9LYpw==}
@@ -1590,11 +1587,11 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.22.4':
     optional: true
 
-  '@sveltejs/adapter-static@3.0.5(@sveltejs/kit@2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))':
+  '@sveltejs/adapter-static@3.0.5(@sveltejs/kit@2.7.3(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))':
     dependencies:
-      '@sveltejs/kit': 2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2))
+      '@sveltejs/kit': 2.7.3(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2))
 
-  '@sveltejs/kit@2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2))':
+  '@sveltejs/kit@2.7.3(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2))':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2))
       '@types/cookie': 0.6.0
@@ -1603,7 +1600,7 @@ snapshots:
       esm-env: 1.0.0
       import-meta-resolve: 4.1.0
       kleur: 4.1.5
-      magic-string: 0.30.10
+      magic-string: 0.30.12
       mrmime: 2.0.0
       sade: 1.8.1
       set-cookie-parser: 2.6.0
@@ -1979,10 +1976,6 @@ snapshots:
   lodash.truncate@4.4.2: {}
 
   lru-cache@11.0.0: {}
-
-  magic-string@0.30.10:
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.4.15
 
   magic-string@0.30.12:
     dependencies:
