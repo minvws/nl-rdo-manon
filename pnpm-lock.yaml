@@ -24,8 +24,8 @@ importers:
         version: 11.10.0
     devDependencies:
       '@sveltejs/adapter-static':
-        specifier: ^3.0.5
-        version: 3.0.5(@sveltejs/kit@2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))
+        specifier: ^3.0.6
+        version: 3.0.6(@sveltejs/kit@2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))
       '@sveltejs/kit':
         specifier: ^2.7.2
         version: 2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2))
@@ -492,8 +492,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@sveltejs/adapter-static@3.0.5':
-    resolution: {integrity: sha512-kFJR7RxeB6FBvrKZWAEzIALatgy11ISaaZbcPup8JdWUdrmmfUHHTJ738YHJTEfnCiiXi6aX8Q6ePY7tnSMD6Q==}
+  '@sveltejs/adapter-static@3.0.6':
+    resolution: {integrity: sha512-MGJcesnJWj7FxDcB/GbrdYD3q24Uk0PIL4QIX149ku+hlJuj//nxUbb0HxUTpjkecWfHjVveSUnUaQWnPRXlpg==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
@@ -1590,7 +1590,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.22.4':
     optional: true
 
-  '@sveltejs/adapter-static@3.0.5(@sveltejs/kit@2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))':
+  '@sveltejs/adapter-static@3.0.6(@sveltejs/kit@2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))':
     dependencies:
       '@sveltejs/kit': 2.7.2(@sveltejs/vite-plugin-svelte@4.0.0(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2)))(svelte@5.0.3)(vite@5.4.10(@types/node@20.11.30)(sass@1.80.3)(terser@5.29.2))
 
