@@ -6,7 +6,7 @@ inputs:
     description: "Registry URL to setup up for auth. Passed on to actions/setup-node."
     default: ""
   audit-level:
-    description: "npm audit-level <info|low|moderate|high|ciritical|none>"
+    description: "npm audit-level <info|low|moderate|high|critical|none>"
     default: "high"
 
 runs:
