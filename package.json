@@ -9,10 +9,5 @@
     "build": "pnpm run --dir docs build",
     "lint": "pnpm run --dir manon lint:css",
     "format:check": "pnpm run --dir manon format:check"
-  },
-  "pnpm": {
-    "overrides": {
-      "cookie@<0.7.0": ">=0.7.0"
-    }
   }
 }
