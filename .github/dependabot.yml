@@ -14,3 +14,13 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      svelte:
+        patterns:
+          - '@sveltejs/*'
+          - 'svelte'
+          - 'svelte-*'
+      prettier:
+        patterns:
+          - 'prettier'
+          - 'prettier-*'
