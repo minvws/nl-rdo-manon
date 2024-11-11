@@ -7,6 +7,15 @@ on:
     branches: [main, 'release/**']
 
 jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit dependencies
+        uses: ./.github/actions/setup
+        with:
+          audit-level: moderate
+
   lint:
     runs-on: ubuntu-latest
     steps:
@@ -28,7 +37,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-      - name: Check formatting
+      - name: Run svelte-check on docs
         run: pnpm run --dir docs check
 
   build-docs:
@@ -36,5 +45,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-      - name: Build Docs
+      - name: Build docs
         run: pnpm run build

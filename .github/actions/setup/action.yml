@@ -3,9 +3,11 @@ description: "Setup Node.js and pnpm and install dependencies"
 
 inputs:
   registry-url:
-    required: false
     description: "Registry URL to setup up for auth. Passed on to actions/setup-node."
     default: ""
+  audit-level:
+    description: "npm audit-level <info|low|moderate|high|critical|none>"
+    default: "high"
 
 runs:
   using: "composite"
@@ -34,7 +36,7 @@ runs:
 
     - name: Audit dependencies
       shell: bash
-      run: pnpm audit
+      run: pnpm audit --audit-level=${{ inputs.audit-level }}
 
     - name: Install dependencies
       shell: bash
