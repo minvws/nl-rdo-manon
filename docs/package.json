@@ -23,7 +23,7 @@
     "prettier": "^3.3.3",
     "prettier-plugin-svelte": "^3.2.7",
     "rimraf": "^6.0.1",
-    "sass": "^1.80.3",
+    "sass": "^1.81.0",
     "svelte": "^5.1.14",
     "svelte-check": "^4.0.6",
     "svelte-preprocess-import-assets": "^1.1.0",
