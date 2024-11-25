@@ -21,7 +21,7 @@
     "@sveltejs/kit": "^2.8.0",
     "@sveltejs/vite-plugin-svelte": "^4.0.0",
     "prettier": "^3.3.3",
-    "prettier-plugin-svelte": "^3.2.7",
+    "prettier-plugin-svelte": "^3.3.2",
     "rimraf": "^6.0.1",
     "sass": "^1.80.3",
     "svelte": "^5.1.14",
