@@ -1,18 +1,22 @@
-name: Publish package to npmjs and GitHub Packages
+name: Publish package to npm and GitHub Packages
 
 on:
   push:
-    tags:
-      - v*
+    tags: ["v*"]
 
 jobs:
   publish-npm:
+    name: Publish to npm
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
         with:
           registry-url: "https://registry.npmjs.org"
+
       - name: Get semver from tag
         run: |
           RELEASE_VERSION=${GITHUB_REF#refs/*/}
@@ -30,12 +34,17 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   publish-github:
+    name: Publish to GitHub
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
         with:
           registry-url: "https://npm.pkg.github.com"
+
       - name: Get semver from tag
         run: |
           RELEASE_VERSION=${GITHUB_REF#refs/*/}

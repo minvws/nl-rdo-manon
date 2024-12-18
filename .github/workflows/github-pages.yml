@@ -1,27 +1,22 @@
-# Simple workflow for deploying documentation to GitHub Pages
-name: Deploy docs to Pages
+name: Deploy docs to GitHub Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -33,20 +28,20 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
-      - name: Build the documentation
+      - name: Build
         working-directory: docs
         env:
-          BASE_PATH: '/${{ github.event.repository.name }}'
+          BASE_PATH: "/${{ github.event.repository.name }}"
         run: pnpm run build
 
-      - name: Copy the documentation
+      - name: Move files
         run: mv docs/build _site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
-  # Deployment job
   deploy:
+    name: Deploy
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
