@@ -15,12 +15,17 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      svelte:
+      build:
         patterns:
-          - '@sveltejs/*'
-          - 'svelte'
-          - 'svelte-*'
-      prettier:
+          - sass
+          - "svelte"
+          - "svelte-*"
+          - "@sveltejs/*"
+          - typescript
+          - vite
+      lint:
         patterns:
-          - 'prettier'
-          - 'prettier-*'
+          - "prettier"
+          - "prettier-*"
+          - "stylelint"
+          - "stylelint-*"

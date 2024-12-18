@@ -8,8 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --no-tsconfig",
-    "check:watch": "svelte-kit sync && svelte-check --no-tsconfig --watch",
-    "clean": "rimraf build .svelte-kit"
+    "check:watch": "svelte-kit sync && svelte-check --no-tsconfig --watch"
   },
   "dependencies": {
     "@minvws/manon": "workspace:*",
@@ -22,7 +21,6 @@
     "@sveltejs/vite-plugin-svelte": "^5.0.1",
     "prettier": "^3.4.1",
     "prettier-plugin-svelte": "^3.3.2",
-    "rimraf": "^6.0.1",
     "sass": "^1.81.0",
     "svelte": "^5.2.10",
     "svelte-check": "^4.1.0",
