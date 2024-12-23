@@ -16,16 +16,16 @@
     "highlight.js": "^11.10.0"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "^3.0.6",
-    "@sveltejs/kit": "^2.12.1",
-    "@sveltejs/vite-plugin-svelte": "^5.0.2",
+    "@sveltejs/adapter-static": "^3.0.8",
+    "@sveltejs/kit": "^2.15.0",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "prettier": "^3.4.2",
     "prettier-plugin-svelte": "^3.3.2",
     "sass": "^1.83.0",
-    "svelte": "^5.14.3",
+    "svelte": "^5.15.0",
     "svelte-check": "^4.1.1",
     "svelte-preprocess-import-assets": "^1.1.0",
     "typescript": "^5.7.2",
-    "vite": "^6.0.3"
+    "vite": "^6.0.5"
   }
 }
