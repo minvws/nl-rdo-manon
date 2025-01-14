@@ -38,13 +38,7 @@
             href="{base}/components/sidemenu/next-to-page">Zijmenu naast de pagina</a
           >.
         </p>
-      </section>
-
-      <section id="examples">
-        <h2>Voorbeelden</h2>
-        <h3 id="sidemenu">Zijmenu</h3>
-
-        <h4>Benodigde stappen</h4>
+        <h2>Benodigde stappen</h2>
         <ol>
           <li>Voeg de class <code>sidemenu</code> toe aan de <code>main</code>.</li>
           <li>
@@ -57,7 +51,7 @@
           </li>
         </ol>
 
-        <h4>Aandachtspunten</h4>
+        <h2>Aandachtspunten</h2>
         <ul>
           <li>
             <p>
@@ -66,57 +60,45 @@
             </p>
           </li>
         </ul>
+      </section>
+
+      <section id="examples">
+        <h2>Voorbeelden</h2>
+        <h3>Zijmenu</h3>
 
         <h4>Visueel voorbeeld</h4>
-
-        <main class="no-js sidemenu">
-          <nav aria-label="Zijbalknavigatie zonder javascript voorbeeld">
-            <ul>
-              <li><a href="#sidemenu">Voorbeeld link 1</a></li>
-              <li><a href="#sidemenu">Voorbeeld link 2</a></li>
-              <li><a href="#sidemenu">Voorbeeld link 3</a></li>
-              <li><a href="#sidemenu">Voorbeeld link 4</a></li>
-            </ul>
-          </nav>
-          <article class="visually-grouped">
-            <div>
-              <h1>Lorem ipsum</h1>
-              <p>Dolor set amet conseqtetur adepicing elit</p>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus ac turpis
-                convallis vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Maecenas ut fringilla tortor. Nulla ultrices enim
-                sit amet tellus venenatis, lacinia dapibus risus auctor.
-              </p>
-              <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Vivamus accumsan dui sed diam placerat, quis ultrices enim viverra.</li>
-                <li>Aenean posuere enim a hendrerit viverra.</li>
-                <li>Phasellus eu justo ac orci tempus bibendum eu in est.</li>
-              </ul>
-            </div>
-          </article>
-        </main>
+        <div class="resize">
+          <iframe src="{base}/examples/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
+        </div>
 
         <h4>HTML-voorbeeld</h4>
         <Code
           language="html"
           code={`
+<header class="page-header">
+  <div>
+    <nav>
+      <div class="collapsing-element">
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
 <main class="sidemenu">
   <nav aria-label="Zijbalknavigatie">
     <ul>
-      <li><a href="">Voorbeeld link 1</a></li>
-      <li><a href="">Voorbeeld link 2</a></li>
-      <li><a href="">Voorbeeld link 3</a></li>
-      <li><a href="">Voorbeeld link 4</a></li>
+      <li><a href="/">Voorbeeld link 1</a></li>
+      <li><a href="/">Voorbeeld link 2</a></li>
+      <li><a href="/">Voorbeeld link 3</a></li>
+      <li><a href="/">Voorbeeld link 4</a></li>
     </ul>
   </nav>
   <article class="visually-grouped">
     <div>
       <h1>Lorem ipsum</h1>
       <p>Dolor set amet conseqtetur adepicing elit</p>
-
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus ac turpis convallis vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas ut fringilla tortor. Nulla ultrices enim sit amet tellus venenatis, lacinia dapibus risus auctor.</p>
       <ul>
         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -141,7 +123,7 @@
   </nav>
 
   <div>
-    <!-- Overige pagina content. -->
+    <!-- Overige pagina content -->
   </div>
 
 </main>

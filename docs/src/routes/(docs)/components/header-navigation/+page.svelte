@@ -16,7 +16,18 @@
   <SideMenu>
     <ul>
       <li><a href="#introduction">Introductie</a></li>
-      <li><a href="#examples">Voorbeelden</a></li>
+      <li>
+        <a href="#examples">Voorbeelden</a>
+        <ul>
+          <li><a href="#example-navigation">Navigatie</a></li>
+          <li><a href="#example-with-content-wrapper">Navigatie met content wrapper</a></li>
+          <li><a href="#example-with-search">Navigatie met zoekveld</a></li>
+          <li><a href="#example-with-logo">Navigatie en logo</a></li>
+          <li><a href="#example-with-multiple-menus">Navigatie met meerdere menu's</a></li>
+          <li><a href="#example-with-form-button">Navigatie met formulier-knop</a></li>
+          <li><a href="#example-with-logo-above">Navigatie met logo bovenaan</a></li>
+        </ul>
+      </li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
@@ -29,7 +40,7 @@
           gebruiker dat het einde van de pagina bereikt is.
         </p>
 
-        <h2>Benodigde stappen:</h2>
+        <h2>Benodigde stappen</h2>
         <ol>
           <li>
             Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
@@ -44,43 +55,270 @@
       </section>
 
       <section id="examples">
-        <h2>Voorbeelden:</h2>
-        <h3>Ondersteund door het <i>iCore Open</i> thema:</h3>
+        <h2>Voorbeelden</h2>
+        <h3 id="example-navigation">Navigatie</h3>
+        <h4>Visueel voorbeeld</h4>
+        <div class="resize">
+          <iframe src="{base}/examples/header-navigation" title="Voorbeeld"></iframe>
+        </div>
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`
+<header>
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+  <nav
+    data-open-label="Menu"
+    data-close-label="Sluit menu"
+    data-media="(min-width: 30rem)"
+    aria-label="Hoofdnavigatie"
+    class="collapsible"
+  >
+    <div class="collapsing-element">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/components">Componenten</a></li>
+        <li><a href="/documentation">Documentatie</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+`}
+        />
+
+        <h3 id="example-with-content-wrapper">Navigatie met content wrapper</h3>
+        <h4>Visueel voorbeeld</h4>
+        <div class="resize">
+          <iframe src="{base}/examples/header-navigation-with-content-wrapper" title="Voorbeeld"
+          ></iframe>
+        </div>
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`
+<header>
+  <div>
+    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+    <nav
+      data-open-label="Menu"
+      data-close-label="Sluit menu"
+      data-media="(min-width: 30rem)"
+      aria-label="Hoofdnavigatie"
+      class="collapsible"
+    >
+      <div class="collapsing-element">
         <ul>
-          <li><a href="{base}/components/header-navigation/example">Navigatie</a></li>
-          <li>
-            <a href="{base}/components/header-navigation/example-content-wrapper"
-              >Navigatie met content wrapper</a
-            >
-          </li>
-          <li>
-            <a href="{base}/components/header-navigation/example-search">Navigatie met zoekveld</a>
-          </li>
-          <li><a href="{base}/components/header-navigation/example-logo">Navigatie en logo</a></li>
-          <li>
-            <a href="{base}/components/header-navigation/example-multiple-menus"
-              >Navigatie met meerdere menu's</a
-            >
-          </li>
-          <li>
-            <a href="{base}/components/header-navigation/example-form-button"
-              >Navigatie met formulier knop</a
-            >
-          </li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/components">Componenten</a></li>
+          <li><a href="/documentation">Documentatie</a></li>
         </ul>
-        <h3>Overige voorbeelden:</h3>
+      </div>
+    </nav>
+  </div>
+</header>
+`}
+        />
+
+        <h3 id="example-with-search">Navigatie met zoekveld</h3>
+        <h4>Visueel voorbeeld</h4>
+        <div class="resize">
+          <iframe src="{base}/examples/header-navigation-with-search" title="Voorbeeld"></iframe>
+        </div>
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`
+<header>
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+  <nav
+    data-open-label="Menu"
+    data-close-label="Sluit menu"
+    data-media="(min-width:42rem)"
+    aria-label="Hoofdnavigatie"
+    class="collapsible"
+  >
+    <div class="collapsing-element">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/components">Componenten</a></li>
+        <li><a href="/documentation">Documentatie</a></li>
+      </ul>
+
+      <div>
+        <form class="inline">
+          <input type="text" placeholder="Zoeken" />
+          <button type="submit" class="icon-only icon-search">Zoeken</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+`}
+        />
+
+        <h3 id="example-with-logo">Navigatie en logo</h3>
+        <h4>Visueel voorbeeld</h4>
+        <div class="resize">
+          <iframe src="{base}/examples/header-navigation-with-logo" title="Voorbeeld"></iframe>
+        </div>
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`
+<header>
+  <div>
+    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+    <nav
+      data-open-label="Menu"
+      data-close-label="Sluit menu"
+      data-media="(min-width: 30rem)"
+      aria-label="Hoofdnavigatie"
+      class="collapsible"
+    >
+      <a href="/" class="logo">
+        <img src="/img/logo-white.svg" alt="Placeholder logo">Manon
+      </a>
+
+      <div class="collapsing-element">
         <ul>
-          <li>
-            <a href="{base}/components/header-navigation/example-logo-above"
-              >Navigatie met Logo bovenaan</a
-            >
-          </li>
-          <li>
-            <a href="{base}/components/header-navigation/example-language-select-list"
-              >Navigatie taalselectie</a
-            >
-          </li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/components">Componenten</a></li>
+          <li><a href="/documentation">Documentatie</a></li>
         </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+`}
+        />
+
+        <h3 id="example-with-multiple-menus">Navigatie met meerdere menu's</h3>
+        <h4>Visueel voorbeeld</h4>
+        <div class="resize">
+          <iframe src="{base}/examples/header-navigation-with-multiple-menus" title="Voorbeeld"></iframe>
+        </div>
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`
+<header>
+  <div>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav
+        data-open-label="Menu"
+        data-close-label="Sluit menu"
+        data-media="(min-width: 30rem)"
+        aria-label="Hoofdnavigatie"
+        class="collapsible"
+      >
+        <div class="collapsing-element">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/components">Componenten</a></li>
+            <li><a href="/documentation">Documentatie</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="/logout">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+  </div>
+</header>
+`}
+        />
+
+        <h3 id="example-with-form-button">Navigatie met formulier-knop</h3>
+        <h4>Visueel voorbeeld</h4>
+        <div class="resize">
+          <iframe src="{base}/examples/header-navigation-with-form-button" title="Voorbeeld"
+          ></iframe>
+        </div>
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`
+<header>
+  <div>
+      <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+      <nav
+        data-open-label="Menu"
+        data-close-label="Sluit menu"
+        data-media="(min-width: 30rem)"
+        aria-label="Hoofdnavigatie"
+        class="collapsible"
+      >
+        <div class="collapsing-element">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/components">Componenten</a></li>
+            <li><a href="/documentation">Documentatie</a></li>
+          </ul>
+
+          <ul class="actions">
+            <li><a href="/examples/header-navigation-with-form-button" class="avatar">A</a></li>
+            <li>
+              <form action="/logout" method="POST" class="inline">
+                <input type="hidden" name="_token" value="">
+                <button type="submit">Logout</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </div>
+</header>
+`}
+        />
+
+        <h3 id="example-with-logo-above">Navigatie met logo bovenaan</h3>
+        <h4>Visueel voorbeeld</h4>
+        <div class="resize">
+          <iframe
+            src="{base}/examples/header-navigation-with-logo-above"
+            title="Voorbeeld"
+            style:height="15rem"
+          ></iframe>
+        </div>
+        <h4>HTML-voorbeeld</h4>
+        <Code
+          language="html"
+          code={`
+<header>
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+  <a href="/" class="logo">
+    <img src="/img/logo.svg" alt="Placeholder logo">Manon
+  </a>
+
+  <nav
+    data-open-label="Menu"
+    data-close-label="Sluit menu"
+    data-media="(min-width: 30rem)"
+    aria-label="Hoofdnavigatie"
+    class="collapsible"
+  >
+    <div class="collapsing-element">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/components">Componenten</a></li>
+        <li><a href="/documentation">Documentatie</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+`}
+        />
       </section>
 
       <section id="requirements">

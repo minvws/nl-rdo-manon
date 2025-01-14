@@ -1,5 +1,5 @@
 <script module>
-  export const breadcrumb = "In- en uit-klapbaar zijmenu binnen de pagina";
+  export const breadcrumb = "In- en uit-klapbaar zijmenu naast de pagina";
 </script>
 
 <script lang="ts">
@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-  <title>Zijmenu</title>
+  <title>Zijmenu naast de pagina</title>
 </svelte:head>
 
 <main class="sidemenu" id="main-content" tabindex="-1">
@@ -20,46 +20,48 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-
   <article class="visually-grouped">
     <div>
       <section id="introduction">
-        <h1>In- uit-klapbaar zijmenu binnen de pagina</h1>
+        <h1>In- uit-klapbaar zijmenu naast de pagina</h1>
+        <p>Voor het plaatsen van een zijmenu naast de pagina.</p>
         <p>
-          Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het navigeren voor de
-          gebruiker toegankelijk en overzichtelijk te houden. In dit voorbeeld staat het zijmenu
-          binnen de pagina bij de content. Dus tussen de header en footer.
+          Gebruik deze weergave als de inhoud van het zijmenu niet over de content van de pagina
+          gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
+        </p>
+
+        <p>
+          Gaat de inhoud van het zijmenu over de inhoud van de content. En hoort het bij de content.
+          Gebruik dan: <a href="{base}/components/sidemenu/in-page">Zijmenu binnen de pagina</a>.
         </p>
 
         <h2>Aandachtspunten</h2>
         <ul>
           <li>Deze versie maakt gebruik van JavaScript.</li>
-          <li>
-            De knop wordt automatisch toegevoegd. Deze hoeft dus niet handmatig in de html opgenomen
-            te worden.
-          </li>
-          <li>
-            Zonder JavaScript wordt de knop niet toegevoegd en wordt het zijmenu getoond zonder deze
-            in te klappen.
-          </li>
         </ul>
 
         <h2>Benodigde stappen</h2>
         <ol>
-          <li>Voeg de class <code>sidemenu</code> toe aan de <code>main</code>.</li>
+          <li>Voeg de class <code>sidemenu</code> toe aan de <code>body</code>.</li>
           <li>
-            Voeg direct binnen de <code>main</code> een <code>nav</code> toe met de gewenste inhoud.
+            Voeg direct binnen de <code>body</code> een <code>nav</code> toe met de gewenste inhoud.
           </li>
           <li>
             Groepeer de overige content in een enkel element indien dat nog niet gebeurd is.
-            Bijvoorbeeld: <code>div</code>, <code>article</code> of <code>section</code>. Voor meer
-            informatie zie: <a href="#sidemenu-structure">Voorbeeld sidemenu structuur</a>.
+            Bijvoorbeeld: <code>div</code>. Voor meer informatie zie:
+            <a href="#sidemenu-structure">Voorbeeld sidemenu structuur</a>.
           </li>
           <li>
             Voeg de referentie naar het Javascript bestand,
             <code>sidemenu.js</code>, toe aan de HTML-pagina's die gebruik dienen te maken van het
             inklapbare zijmenu. Voor meer informatie zie:
             <a href="{base}/documentation/add-js">JavaScript referentie toevoegen</a>.
+          </li>
+          <li>
+            Om het menu standaard gesloten te tonen tot de gebruiker het menu opent. Voeg de class <code
+              >sidemenu-closed</code
+            >
+            toe aan de <code>body</code>.
           </li>
         </ol>
 
@@ -93,18 +95,19 @@
           Om het menu standaard gesloten te tonen tot de gebruiker het menu opent. Voeg de class <code
             >sidemenu-closed</code
           >
-          toe aan de <code>body</code>. Voor meer informatie zie:
-          <a href="#sidemenu-expandable">Uitklapbaar zijmenu</a>.
+          toe aan de <code>body</code>.
         </p>
       </section>
 
       <section id="examples">
         <h2>Voorbeelden</h2>
-
         <h3 id="sidemenu-collapsible">Inklapbaar zijmenu</h3>
         <h4>Visueel voorbeeld</h4>
         <div class="resize">
-          <iframe src="{base}/examples/sidemenu-in-page-collapsible" title="Voorbeeld" height="320px"
+          <iframe
+            src="{base}/examples/sidemenu-next-to-page-collapsible"
+            title="Voorbeeld"
+            height="320px"
           ></iframe>
         </div>
 
@@ -112,20 +115,25 @@
         <Code
           language="html"
           code={`
-<main class="sidemenu">
-
-  <nav
-    data-open-label="Zijbalknavigatie"
-    data-close-label="Sluit zijbalknavigatie"
-    aria-label="Zijbalknavigatie">
+<body class="sidemenu">
+  <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Zijbalknavigatie">
     <!-- Zijmenu content -->
   </nav>
 
-  <div>
-    <!-- Overige pagina content. -->
-  </div>
+  <div class="page-content">
+    <header>
+      <!-- Inhoud van de header. -->
+    </header>
 
-</main>
+    <main>
+      <!-- Overige pagina content. -->
+    </main>
+
+    <footer>
+      <!-- Inhoud van de footer. -->
+    </footer>
+  </div>
+</body>
 `}
         />
 
@@ -138,7 +146,10 @@
 
         <h4>Visueel voorbeeld</h4>
         <div class="resize">
-          <iframe src="{base}/examples/sidemenu-in-page-expandable" title="Voorbeeld" height="320px"
+          <iframe
+            src="{base}/examples/sidemenu-next-to-page-expandable"
+            title="Voorbeeld"
+            height="320px"
           ></iframe>
         </div>
 
@@ -146,20 +157,25 @@
         <Code
           language="html"
           code={`
-<main class="sidemenu sidemenu-closed">
-
-  <nav
-    data-open-label="Zijbalknavigatie"
-    data-close-label="Sluit zijbalknavigatie"
-    aria-label="Zijbalknavigatie">
+<body class="sidemenu sidemenu-closed">
+  <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Zijbalknavigatie">
     <!-- Zijmenu content -->
   </nav>
 
-  <div>
-    <!-- Overige pagina content. -->
-  </div>
+  <div class="page-content">
+    <header>
+      <!-- Inhoud van de header. -->
+    </header>
 
-</main>
+    <main>
+      <!-- Overige pagina content. -->
+    </main>
+
+    <footer>
+      <!-- Inhoud van de footer. -->
+    </footer>
+  </div>
+</body>
 `}
         />
       </section>
