@@ -4,11 +4,15 @@
 
 <script lang="ts">
   import { base } from "$app/paths";
+  import DefaultHeader from "$lib/DefaultHeader.svelte";
+  import DefaultFooter from "$lib/DefaultFooter.svelte";
 </script>
 
 <svelte:head>
   <title>Manon</title>
 </svelte:head>
+
+<DefaultHeader />
 
 <main id="main-content" tabindex="-1">
   <section class="warning">
@@ -101,3 +105,5 @@
     </div>
   </section>
 </main>
+
+<DefaultFooter />
