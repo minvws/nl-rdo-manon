@@ -1,11 +1,11 @@
 <script>
-  import { base } from "$app/paths";
+  import { page } from "$app/state";
 </script>
 
 <header>
   <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-  <a href="{base}/" class="logo">
+  <a href={page.url.pathname} class="logo">
     <img src="$img/logo.svg" alt="Placeholder logo" />Manon
   </a>
 
@@ -18,13 +18,13 @@
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="{base}/">Home</a></li>
-        <li><a href="{base}/components">Componenten</a></li>
-        <li><a href="{base}/documentation">Documentatie</a></li>
+        <li><a href={page.url.pathname}>Voorbeeld-link 1</a></li>
+        <li><a href={page.url.pathname}>Voorbeeld-link 2</a></li>
+        <li><a href={page.url.pathname}>Voorbeeld-link 3</a></li>
       </ul>
 
       <ul>
-        <li><a href="{base}/">Logout</a></li>
+        <li><a href={page.url.pathname}>Logout</a></li>
       </ul>
     </div>
   </nav>

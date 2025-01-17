@@ -1,5 +1,5 @@
 <script>
-  import { base } from "$app/paths";
+  import { page } from "$app/state";
 </script>
 
 <header>
@@ -13,15 +13,15 @@
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-      <a href="{base}/" class="logo">
+      <a href={page.url.pathname} class="logo">
         <img src="$img/logo-white.svg" alt="Placeholder logo" />Manon
       </a>
 
       <div class="collapsing-element">
         <ul>
-          <li><a href="{base}/">Home</a></li>
-          <li><a href="{base}/components">Componenten</a></li>
-          <li><a href="{base}/documentation">Documentatie</a></li>
+          <li><a href={page.url.pathname}>Voorbeeld-link 1</a></li>
+          <li><a href={page.url.pathname}>Voorbeeld-link 2</a></li>
+          <li><a href={page.url.pathname}>Voorbeeld-link 3</a></li>
         </ul>
       </div>
     </nav>

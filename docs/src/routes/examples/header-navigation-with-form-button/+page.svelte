@@ -1,5 +1,5 @@
 <script>
-  import { base } from "$app/paths";
+  import { page } from "$app/state";
 </script>
 
 <header>
@@ -15,15 +15,15 @@
     >
       <div class="collapsing-element">
         <ul>
-          <li><a href="{base}/">Home</a></li>
-          <li><a href="{base}/components">Componenten</a></li>
-          <li><a href="{base}/documentation">Documentatie</a></li>
+          <li><a href={page.url.pathname}>Voorbeeld-link 1</a></li>
+          <li><a href={page.url.pathname}>Voorbeeld-link 2</a></li>
+          <li><a href={page.url.pathname}>Voorbeeld-link 3</a></li>
         </ul>
 
         <ul class="actions">
-          <li><a href="{base}/examples/header-navigation-with-form-button" class="avatar">A</a></li>
+          <li><a href={page.url.pathname} class="avatar">A</a></li>
           <li>
-            <form action="{base}/" method="POST" class="inline">
+            <form action={page.url.pathname} method="POST" class="inline">
               <input type="hidden" name="_token" value="" />
               <button type="submit">Logout</button>
             </form>
