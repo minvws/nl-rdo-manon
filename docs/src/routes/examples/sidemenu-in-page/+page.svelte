@@ -7,7 +7,7 @@
     <nav>
       <div class="collapsing-element">
         <ul>
-          <li><a href="{base}/">Home</a></li>
+          <li><a href={page.url.pathname}>Home</a></li>
         </ul>
       </div>
     </nav>
