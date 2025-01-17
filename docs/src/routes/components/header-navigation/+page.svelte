@@ -333,8 +333,8 @@
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>
-        <h2>Importeer component via npm</h2>
-        <h3>CSS-voorbeeld:</h3>
+        <h3>Importeer component via npm</h3>
+        <h4>CSS-voorbeeld</h4>
         <Code
           language="css"
           code={`
