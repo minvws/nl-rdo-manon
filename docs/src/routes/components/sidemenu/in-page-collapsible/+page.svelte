@@ -175,7 +175,7 @@
 
         <h3>Importeer component via npm</h3>
 
-        <h4>CSS-voorbeeld:</h4>
+        <h4>CSS-voorbeeld</h4>
         <Code
           language="css"
           code={`
