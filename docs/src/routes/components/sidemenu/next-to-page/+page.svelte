@@ -6,8 +6,6 @@
   import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
-  import DefaultHeader from "$lib/DefaultHeader.svelte";
-  import DefaultFooter from "$lib/DefaultFooter.svelte";
 </script>
 
 <svelte:head>
