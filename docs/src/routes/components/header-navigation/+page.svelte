@@ -59,7 +59,7 @@
         <h3 id="example-navigation">Navigatie</h3>
         <h4>Visueel voorbeeld</h4>
         <div class="resize">
-          <iframe src="{base}/examples/header-navigation" title="Voorbeeld"></iframe>
+          <iframe src="{base}/examples/header-navigation" title="Voorbeeld" height="240px"></iframe>
         </div>
         <h4>HTML-voorbeeld</h4>
         <Code
@@ -90,7 +90,10 @@
         <h3 id="example-with-content-wrapper">Navigatie met content wrapper</h3>
         <h4>Visueel voorbeeld</h4>
         <div class="resize">
-          <iframe src="{base}/examples/header-navigation-with-content-wrapper" title="Voorbeeld"
+          <iframe
+            src="{base}/examples/header-navigation-with-content-wrapper"
+            title="Voorbeeld"
+            height="240px"
           ></iframe>
         </div>
         <h4>HTML-voorbeeld</h4>
@@ -124,7 +127,11 @@
         <h3 id="example-with-search">Navigatie met zoekveld</h3>
         <h4>Visueel voorbeeld</h4>
         <div class="resize">
-          <iframe src="{base}/examples/header-navigation-with-search" title="Voorbeeld"></iframe>
+          <iframe
+            src="{base}/examples/header-navigation-with-search"
+            title="Voorbeeld"
+            height="240px"
+          ></iframe>
         </div>
         <h4>HTML-voorbeeld</h4>
         <Code
@@ -162,7 +169,8 @@
         <h3 id="example-with-logo">Navigatie en logo</h3>
         <h4>Visueel voorbeeld</h4>
         <div class="resize">
-          <iframe src="{base}/examples/header-navigation-with-logo" title="Voorbeeld"></iframe>
+          <iframe src="{base}/examples/header-navigation-with-logo" title="Voorbeeld" height="240px"
+          ></iframe>
         </div>
         <h4>HTML-voorbeeld</h4>
         <Code
@@ -199,7 +207,11 @@
         <h3 id="example-with-multiple-menus">Navigatie met meerdere menu's</h3>
         <h4>Visueel voorbeeld</h4>
         <div class="resize">
-          <iframe src="{base}/examples/header-navigation-with-multiple-menus" title="Voorbeeld"></iframe>
+          <iframe
+            src="{base}/examples/header-navigation-with-multiple-menus"
+            title="Voorbeeld"
+            height="240px"
+          ></iframe>
         </div>
         <h4>HTML-voorbeeld</h4>
         <Code
@@ -236,7 +248,10 @@
         <h3 id="example-with-form-button">Navigatie met formulier-knop</h3>
         <h4>Visueel voorbeeld</h4>
         <div class="resize">
-          <iframe src="{base}/examples/header-navigation-with-form-button" title="Voorbeeld"
+          <iframe
+            src="{base}/examples/header-navigation-with-form-button"
+            title="Voorbeeld"
+            height="240px"
           ></iframe>
         </div>
         <h4>HTML-voorbeeld</h4>
@@ -283,7 +298,7 @@
           <iframe
             src="{base}/examples/header-navigation-with-logo-above"
             title="Voorbeeld"
-            style:height="15rem"
+            height="320px"
           ></iframe>
         </div>
         <h4>HTML-voorbeeld</h4>
