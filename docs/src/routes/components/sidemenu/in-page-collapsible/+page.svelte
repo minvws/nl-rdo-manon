@@ -1,5 +1,5 @@
 <script module>
-  export const breadcrumb = "In- en uit-klapbaar zijmenu binnen de pagina";
+  export const breadcrumb = "In- en uitklapbaar zijmenu binnen de pagina";
 </script>
 
 <script lang="ts">

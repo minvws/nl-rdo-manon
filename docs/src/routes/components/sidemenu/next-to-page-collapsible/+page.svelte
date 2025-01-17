@@ -1,5 +1,5 @@
 <script module>
-  export const breadcrumb = "In- en uit-klapbaar zijmenu naast de pagina";
+  export const breadcrumb = "In- en uitklapbaar zijmenu naast de pagina";
 </script>
 
 <script lang="ts">
@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-  <title>Zijmenu naast de pagina</title>
+  <title>In- en uitklapbaar zijmenu naast de pagina</title>
 </svelte:head>
 
 <main class="sidemenu" id="main-content" tabindex="-1">
@@ -23,7 +23,7 @@
   <article class="visually-grouped">
     <div>
       <section id="introduction">
-        <h1>In- uit-klapbaar zijmenu naast de pagina</h1>
+        <h1>In- en uitklapbaar zijmenu naast de pagina</h1>
         <p>Voor het plaatsen van een zijmenu naast de pagina.</p>
         <p>
           Gebruik deze weergave als de inhoud van het zijmenu niet over de content van de pagina
