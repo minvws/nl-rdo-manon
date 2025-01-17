@@ -322,7 +322,7 @@
       </section>
 
       <section id="requirements">
-        <h1>Bijbehorende bestanden</h1>
+        <h2>Bijbehorende bestanden</h2>
         <p>
           Voeg de (s)css-bestanden toe aan het project of importeer de bestanden. Hiervoor kunnen de
           bestanden gebruikt worden uit beschikbare Manon-thema's. Of uit zelf gemaakte thema's.
