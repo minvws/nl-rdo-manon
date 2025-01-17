@@ -24,7 +24,7 @@
   <article class="visually-grouped">
     <div>
       <section id="introduction">
-        <h1>In- uit-klapbaar zijmenu binnen de pagina</h1>
+        <h1>In- en uitklapbaar zijmenu binnen de pagina</h1>
         <p>
           Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het navigeren voor de
           gebruiker toegankelijk en overzichtelijk te houden. In dit voorbeeld staat het zijmenu
