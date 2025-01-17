@@ -19,14 +19,12 @@
 
 <main class="sidemenu sidemenu-closed">
   <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie">
-    <div>
-      <ul>
-        <li><a href="{base}/">Voorbeeld link 1</a></li>
-        <li><a href="{base}/">Voorbeeld link 2</a></li>
-        <li><a href="{base}/">Voorbeeld link 3</a></li>
-        <li><a href="{base}/">Voorbeeld link 4</a></li>
-      </ul>
-    </div>
+    <ul>
+      <li><a href="{base}/">Voorbeeld link 1</a></li>
+      <li><a href="{base}/">Voorbeeld link 2</a></li>
+      <li><a href="{base}/">Voorbeeld link 3</a></li>
+      <li><a href="{base}/">Voorbeeld link 4</a></li>
+    </ul>
   </nav>
   <article class="visually-grouped">
     <div>
