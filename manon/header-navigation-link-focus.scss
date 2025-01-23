@@ -29,8 +29,6 @@ body > header,
 
     a[aria-current="page"],
     a[aria-current="page"]:visited {
-      @extend %header-navigation-current-link-focus-styling;
-
       &:focus {
         @extend %header-navigation-current-link-focus-styling;
         @extend %header-navigation-link-focus-outline;
