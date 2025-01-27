@@ -19,7 +19,7 @@
       <li>
         <a href="#examples">Voorbeelden</a>
         <ul>
-          <li><a href="#example-navigation">Navigatie</a></li>
+          <li><a href="#example-only-navigation">Alleen navigatie</a></li>
           <li><a href="#example-with-content-wrapper">Navigatie met content wrapper</a></li>
           <li><a href="#example-with-search">Navigatie met zoekveld</a></li>
           <li><a href="#example-with-logo">Navigatie en logo</a></li>
@@ -56,7 +56,7 @@
 
       <section id="examples">
         <h2>Voorbeelden</h2>
-        <h3 id="example-navigation">Navigatie</h3>
+        <h3 id="example-only-navigation">Alleen navigatie</h3>
         <h4>Visueel voorbeeld</h4>
         <div class="resize">
           <iframe src="{base}/examples/header-navigation" title="Voorbeeld" height="240px"></iframe>
