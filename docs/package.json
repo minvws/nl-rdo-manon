@@ -13,7 +13,7 @@
   "dependencies": {
     "@minvws/manon": "workspace:*",
     "@minvws/manon-themes": "workspace:*",
-    "highlight.js": "^11.10.0"
+    "highlight.js": "^11.11.1"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.6",
