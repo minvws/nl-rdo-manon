@@ -44,7 +44,7 @@ nav:
 #### HTML-voorbeeld:
 
 ```html
-<button disabled>button primary</button>
+<button disabled>Lorem ipsum</button>
 ```
 
 ### `input type="button"`
