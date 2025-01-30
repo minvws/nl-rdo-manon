@@ -290,7 +290,7 @@
         <h2>Instelbare variabelen</h2>
         <p>
           <strong>Let op:</strong> De uitlijning van horizontaal uitgelijnde tags werken alleen in
-          combinatie met de class <code>horizotal-view</code>.
+          combinatie met de class <code>horizontal-view</code>.
         </p>
         <div class="horizontal-scroll">
           <table class="nowrap">

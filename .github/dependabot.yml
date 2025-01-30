@@ -17,6 +17,7 @@ updates:
     groups:
       build:
         patterns:
+          - mdsvex
           - sass
           - "svelte"
           - "svelte-*"
