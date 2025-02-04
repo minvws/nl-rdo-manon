@@ -7,10 +7,7 @@
 @use "mixins/outline";
 
 button,
-a.button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
+a.button {
   &.icon {
     gap: 0;
     min-width: 0;

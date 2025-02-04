@@ -8,10 +8,7 @@
 @use "mixins/icon-only";
 
 button,
-a.button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
+a.button {
   &.icon-only {
     @include icon-only.icon-only("button-icon-only-");
   }
