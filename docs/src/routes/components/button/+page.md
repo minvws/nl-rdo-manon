@@ -76,12 +76,12 @@ onderstaande tabel staan enkele veelvoorkomende voorbeelden.
 - [Basisweergave](/components/button/button-base)
 - [Knoppen groeperen](/components/button/button-container)
 - [Call to action button](/components/button/call-to-action)
+- [Icoonknoppen](/components/button/icon)
+- [Icoonknoppen zonder achtergrond](/components/button-icon-only)
 
 ### Overige soorten knoppen:
 
 - [Dropdown button](/components/button-dropdown)
 - [Ghost button](/components/button-ghost)
 - [Destructieve knop](/components/button-destructive)
-- [Icoonknoppen](/components/button-icon)
-- [Icoonknoppen zonder achtergrond](/components/button-icon-only)
 - [Terug naar hoofdmenu](/components/button-to-top)

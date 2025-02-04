@@ -30,12 +30,11 @@
         <h2>Benodigde stappen:</h2>
         <ol>
           <li>
-            Voeg de class <code>icon</code> toe aan de knop om gebruik te maken van de visuele weergave
-            van een icoonknop.
+            Voeg de class <code>icon-only</code> toe aan de knop om gebruik te maken van de visuele weergave
+            van een icoonknop zonder achtergrond.
           </li>
           <li>
-            Voeg de class van het gewenste icoon toe op de knop. Voor meer informatie zie:
-            <a href="{base}/components/icons">Iconen</a>.
+            Voeg een icoon toe aan de knop. Zie voor meer informatie: <a href="{base}/components/buttons/icon">Icoonknop</a>.
           </li>
         </ol>
 
