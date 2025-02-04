@@ -34,7 +34,7 @@
             van een icoonknop zonder achtergrond.
           </li>
           <li>
-            Voeg een icoon toe aan de knop. Zie voor meer informatie: <a href="{base}/components/buttons/icon">Icoonknop</a>.
+            Voeg een icoon toe aan de knop. Zie voor meer informatie: <a href="{base}/components/button/icon">Icoonknop</a>.
           </li>
         </ol>
 
@@ -162,14 +162,14 @@
         <Code
           language="html"
           code={`
-<button href="{base}/components/button-icon" class="icon-only">Lorem ipsum <img src="path/to/img.svg" alt="Kat"></button>
+<button href="{base}/components/button/icon" class="icon-only">Lorem ipsum <img src="path/to/img.svg" alt="Kat"></button>
 `}
         />
 
         <h2>Link als knop met <code>img</code></h2>
         <h3>Visuele weergave:</h3>
 
-        <a href="{base}/components/button-icon" class="button icon-only"
+        <a href="{base}/components/button/icon" class="button icon-only"
           >Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></a
         >
 
@@ -177,7 +177,7 @@
         <Code
           language="html"
           code={`
-<a href="{base}/components/button-icon" class="button icon-only">Lorem ipsum <img src="path/to/img.svg" alt="Kat"></a>
+<a href="{base}/components/button/icon" class="button icon-only">Lorem ipsum <img src="path/to/img.svg" alt="Kat"></a>
 `}
         />
       </section>

@@ -43,7 +43,7 @@
         <ol>
           <li>
             Gecombineerde velden worden vaak gebruikt met icoonknoppen. Voor meer informatie zie:
-            <a href="{base}/components/button-icon">Icoonknoppen</a>.
+            <a href="{base}/components/button/icon">Icoonknoppen</a>.
           </li>
         </ol>
       </section>

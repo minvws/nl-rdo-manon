@@ -38,14 +38,14 @@ breadcrumb: Testpagina
 
 ### `a` met `span`-icoon
 
-<a class="button">
+<a href="./" class="button">
   <span aria-hidden="true" class="icon icon-search"></span>
   Zoeken
 </a>
 
 ### `a` met `svg`-icoon
 
-<a class="button">
+<a href="./" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -102,18 +102,18 @@ breadcrumb: Testpagina
 
 ### `a.button` met pseudo-content-icoon
 
-<a class="button icon icon-search">Zoeken</a>
+<a href="./" class="button icon icon-search">Zoeken</a>
 
 ### `a.button` met `span`-icoon
 
-<a class="button">
+<a href="./" class="button">
   <span aria-hidden="true" class="icon icon-search"></span>
   <span class="visually-hidden">Zoeken</span>
 </a>
 
 ### `a.button` met `svg`-icoon
 
-<a class="button">
+<a href="./" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -170,18 +170,18 @@ breadcrumb: Testpagina
 
 ### `a.button.icon-only` met pseudo-content-icoon
 
-<a class="button icon-only icon icon-search">Zoeken</a>
+<a href="./" class="button icon-only icon icon-search">Zoeken</a>
 
 ### `a.button.icon-only` met `span`-icoon
 
-<a class="button icon-only">
+<a href="./" class="button icon-only">
   <span aria-hidden="true" class="icon icon-search"></span>
   <span class="visually-hidden">Zoeken</span>
 </a>
 
 ### `a.button.icon-only` met `svg`-icoon
 
-<a class="button icon-only">
+<a href="./" class="button icon-only">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"

@@ -102,7 +102,7 @@ De onderstaande voorbeelden gaan ervan uit dat het icoon **decoratief** is.
 
 #### Visueel voorbeeld
 
-<a href="./button-icon" class="button">
+<a href="./" class="button">
   <span class="icon icon-user" aria-hidden="true"></span>
   Inloggen
 </a>
@@ -110,7 +110,7 @@ De onderstaande voorbeelden gaan ervan uit dat het icoon **decoratief** is.
 #### HTML-voorbeeld
 
 ```html
-<a href="./button-icon" class="button">
+<a href="./" class="button">
   <span class="icon icon-user" aria-hidden="true"></span>
   Inloggen
 </a>
@@ -120,7 +120,7 @@ De onderstaande voorbeelden gaan ervan uit dat het icoon **decoratief** is.
 
 #### Visueel voorbeeld
 
-<a href="./button-icon" class="button">
+<a href="./" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -143,7 +143,7 @@ De onderstaande voorbeelden gaan ervan uit dat het icoon **decoratief** is.
 #### HTML-voorbeeld
 
 ```html
-<a href="./button-icon" class="button">
+<a href="./" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -241,7 +241,7 @@ Een icoon op een knop zonder tekst is per definitie **informatief**. Zorg er daa
 
 #### Visueel voorbeeld
 
-<a href="./button-icon" class="button">
+<a href="./" class="button">
   <span class="icon icon-user" aria-hidden="true"></span>
   <span class="visually-hidden">Inloggen</span>
 </a>
@@ -249,7 +249,7 @@ Een icoon op een knop zonder tekst is per definitie **informatief**. Zorg er daa
 #### HTML-voorbeeld
 
 ```html
-<a href="./button-icon" class="button">
+<a href="./" class="button">
   <span class="icon icon-user" aria-hidden="true"></span>
   <span class="visually-hidden">Inloggen</span>
 </a>
@@ -259,7 +259,7 @@ Een icoon op een knop zonder tekst is per definitie **informatief**. Zorg er daa
 
 #### Visueel voorbeeld
 
-<a href="./button-icon" class="button">
+<a href="./" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -282,7 +282,7 @@ Een icoon op een knop zonder tekst is per definitie **informatief**. Zorg er daa
 #### HTML-voorbeeld
 
 ```html
-<a href="./button-icon" class="button">
+<a href="./" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -331,14 +331,14 @@ Gebruik bij voorkeur één van de andere opties. Geef anders de link een <code>a
 
 #### Visueel voorbeeld
 
-<a href="./button-icon" class="button icon icon-on-off" aria-label="Aan- of uitschakelen">
+<a href="./" class="button icon icon-on-off" aria-label="Aan- of uitschakelen">
   Aan- of uitschakelen
 </a>
 
 #### HTML-voorbeeld
 
 ```html
-<a href="./button-icon" class="button icon icon-on-off" aria-label="Aan- of uitschakelen">
+<a href="./" class="button icon icon-on-off" aria-label="Aan- of uitschakelen">
   Aan- of uitschakelen
 </a>
 ```
