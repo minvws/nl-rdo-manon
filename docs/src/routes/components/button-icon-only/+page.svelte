@@ -30,12 +30,11 @@
         <h2>Benodigde stappen:</h2>
         <ol>
           <li>
-            Voeg de class <code>icon</code> toe aan de knop om gebruik te maken van de visuele weergave
-            van een icoonknop.
+            Voeg de class <code>icon-only</code> toe aan de knop om gebruik te maken van de visuele weergave
+            van een icoonknop zonder achtergrond.
           </li>
           <li>
-            Voeg de class van het gewenste icoon toe op de knop. Voor meer informatie zie:
-            <a href="{base}/components/icons">Iconen</a>.
+            Voeg een icoon toe aan de knop. Zie voor meer informatie: <a href="{base}/components/button/icon">Icoonknop</a>.
           </li>
         </ol>
 
@@ -163,14 +162,14 @@
         <Code
           language="html"
           code={`
-<button href="{base}/components/button-icon" class="icon-only">Lorem ipsum <img src="path/to/img.svg" alt="Kat"></button>
+<button href="{base}/components/button/icon" class="icon-only">Lorem ipsum <img src="path/to/img.svg" alt="Kat"></button>
 `}
         />
 
         <h2>Link als knop met <code>img</code></h2>
         <h3>Visuele weergave:</h3>
 
-        <a href="{base}/components/button-icon" class="button icon-only"
+        <a href="{base}/components/button/icon" class="button icon-only"
           >Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></a
         >
 
@@ -178,7 +177,7 @@
         <Code
           language="html"
           code={`
-<a href="{base}/components/button-icon" class="button icon-only">Lorem ipsum <img src="path/to/img.svg" alt="Kat"></a>
+<a href="{base}/components/button/icon" class="button icon-only">Lorem ipsum <img src="path/to/img.svg" alt="Kat"></a>
 `}
         />
       </section>

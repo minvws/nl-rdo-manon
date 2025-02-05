@@ -11,4 +11,6 @@
     "button-base-focus-"
   );
   @include button.link-button-styling-variables("button-icon-", "button-base-");
+  --button-icon-font-size: 0;
+  --button-icon-gap: 0;
 }
