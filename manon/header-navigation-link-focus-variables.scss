@@ -17,7 +17,10 @@
   );
 
   /* Link focus outline */
-  @include outline.outline-variables("header-navigation-link-focus-", initial);
+  @include outline.outline-variables(
+    "header-navigation-link-focus-",
+    "navigation-link-focus-"
+  );
 
   /* Icon */
   @include link.icon-styling-variables(
