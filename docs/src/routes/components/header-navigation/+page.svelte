@@ -157,7 +157,10 @@
       <div>
         <form class="inline">
           <input type="text" placeholder="Zoeken" />
-          <button type="submit" class="icon-only icon-search">Zoeken</button>
+          <button type="submit">
+            <span class="icon icon-search" aria-hidden="true"></span>
+            <span class="visually-hidden">Zoeken</span>
+          </button>
         </form>
       </div>
     </div>
