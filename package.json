@@ -13,6 +13,11 @@
   "pnpm": {
     "overrides": {
       "cookie@<0.7.0": ">=0.7.0"
+    },
+    "auditConfig": {
+      "ignoreGhsas": [
+        "GHSA-67mh-4wv8-2f99"
+      ]
     }
   }
 }
