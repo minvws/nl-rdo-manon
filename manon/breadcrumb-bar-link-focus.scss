@@ -1,0 +1,9 @@
+/*---------------------------------------------------------------*/
+/*------------- breadcrumb-bar-link-focus.scss ------------------*/
+/*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
+.breadcrumb-bar {
+  @include link.full-configuration(--link-focus, --breadcrumb-bar-link-focus);
+}

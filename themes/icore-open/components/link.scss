@@ -3,7 +3,22 @@
 @use "../color-scheme";
 
 :root {
+  // Link
   --link-text-color: #{color-scheme.$oc-blue-8};
   --link-font-weight: normal;
   --link-text-decoration: underline;
+  --link-outline-offset: 0.25rem;
+
+  // Hover
+  --link-hover-text-color: #{color-scheme.$oc-blue-9};
+
+  // Focus
+  --link-focus-text-color: #{color-scheme.$oc-blue-8};
+  --link-focus-box-shadow: 0 0 0 0.25rem white;
+  --link-focus-outline: 0.125rem solid var(--link-focus-text-color);
+
+  // Active
+  --link-active-text-color: #{color-scheme.$oc-blue-9};
+  --link-active-box-shadow: 0 0 0 0.25rem white;
+  --link-active-outline: 0.125rem solid var(--link-active-text-color);
 }

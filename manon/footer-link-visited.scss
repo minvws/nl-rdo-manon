@@ -1,16 +1,23 @@
 /*---------------------------------------------------------------*/
 /*------------------ footer-link-visited.scss -------------------*/
 /*---------------------------------------------------------------*/
-@use "footer-link-visited-variables";
+
 @use "mixins/link";
 
 body > footer,
 .page-footer,
 %footer-style {
-  a {
-    &:visited,
-    &.visited {
-      @include link.link-and-icon-styling("footer-link-visited-");
-    }
-  }
+  @include link.full-configuration(--link-visited, --footer-link-visited);
+  @include link.full-configuration(
+    --link-visited-hover,
+    --footer-link-visited-hover
+  );
+  @include link.full-configuration(
+    --link-visited-focus,
+    --footer-link-visited-focus
+  );
+  @include link.full-configuration(
+    --link-visited-active,
+    --footer-link-visited-active
+  );
 }

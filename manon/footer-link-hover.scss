@@ -1,16 +1,11 @@
 /*---------------------------------------------------------------*/
 /*-------------------- footer-link-hover.scss -------------------*/
 /*---------------------------------------------------------------*/
-@use "footer-link-hover-variables";
+
 @use "mixins/link";
 
 body > footer,
 .page-footer,
 %footer-style {
-  a {
-    &:hover,
-    &.hover {
-      @include link.link-and-icon-styling("footer-link-hover-");
-    }
-  }
+  @include link.full-configuration(--link-hover, --footer-link-hover);
 }

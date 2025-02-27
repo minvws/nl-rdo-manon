@@ -1,15 +1,23 @@
 /*---------------------------------------------------------------*/
 /*----------------------- link-focus.scss -----------------------*/
 /*---------------------------------------------------------------*/
-@use "link-focus-variables";
+
 @use "mixins/link";
-@use "mixins/outline";
+@use "mixins/heading";
 
 a {
   &:focus,
   &.focus {
-    @include link.link-and-icon-styling("link-focus-");
-    @include link.link-elements-styling("link-focus-");
-    @include outline.outline("link-focus-");
+    @include link.full-styles(--link-focus, --link);
+  }
+}
+
+@include heading.all {
+  a:focus,
+  a.focus {
+    font-family: revert;
+    font-size: revert;
+    font-weight: revert;
+    line-height: revert;
   }
 }

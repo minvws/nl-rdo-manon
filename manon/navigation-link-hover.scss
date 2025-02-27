@@ -1,16 +1,9 @@
 /*---------------------------------------------------------------*/
 /*---------------- navigation-link-hover.scss -------------------*/
 /*---------------------------------------------------------------*/
-@use "navigation-link-hover-variables";
+
 @use "mixins/link";
-@use "mixins/outline";
 
 nav {
-  a {
-    &:hover,
-    &.hover {
-      @include link.link-and-icon-styling("navigation-link-hover-");
-      @include outline.outline("navigation-link-hover-");
-    }
-  }
+  @include link.full-configuration(--link-hover, --navigation-link-hover);
 }

@@ -1,17 +1,17 @@
 /*---------------------------------------------------------------*/
 /*----------------- breadcrumb-bar-link.scss --------------------*/
 /*---------------------------------------------------------------*/
-@use "breadcrumb-bar-link-variables";
+
 @use "mixins/link";
 
-.breadcrumb-bar,
-body > header nav.breadcrumb-bar {
-  ul,
-  ol {
-    li {
-      a {
-        @include link.link("breadcrumb-bar-link-");
-      }
-    }
+.breadcrumb-bar {
+  @include link.full-configuration(--link, --breadcrumb-bar-link);
+
+  li a {
+    word-break: break-word;
+    /* Break words that won't fit the available space */
+    white-space: var(--breadcrumb-bar-link-white-space, nowrap);
+    padding-right: var(--breadcrumb-bar-link-padding-right, 0);
+    padding-left: var(--breadcrumb-bar-link-padding-left, 0);
   }
 }

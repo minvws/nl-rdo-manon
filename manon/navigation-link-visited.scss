@@ -1,16 +1,21 @@
 /*---------------------------------------------------------------*/
 /*---------------- navigation-link-visited.scss ------------------*/
 /*---------------------------------------------------------------*/
-@use "navigation-link-visited-variables";
+
 @use "mixins/link";
-@use "mixins/outline";
 
 nav {
-  a {
-    &:visited,
-    &.visited {
-      @include link.link-and-icon-styling("navigation-link-visited-");
-      @include outline.outline("navigation-link-visited-");
-    }
-  }
+  @include link.full-configuration(--link-visited, --navigation-link-visited);
+  @include link.full-configuration(
+    --link-visited-hover,
+    --navigation-link-visited-hover
+  );
+  @include link.full-configuration(
+    --link-visited-focus,
+    --navigation-link-visited-focus
+  );
+  @include link.full-configuration(
+    --link-visited-active,
+    --navigation-link-visited-active
+  );
 }

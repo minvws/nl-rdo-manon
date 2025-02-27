@@ -1,16 +1,9 @@
 /*---------------------------------------------------------------*/
 /*---------------- navigation-link-active.scss ------------------*/
 /*---------------------------------------------------------------*/
-@use "navigation-link-active-variables";
+
 @use "mixins/link";
-@use "mixins/outline";
 
 nav {
-  a {
-    &:active,
-    &.active {
-      @include link.link-and-icon-styling("navigation-link-active-");
-      @include outline.outline("navigation-link-active-");
-    }
-  }
+  @include link.full-configuration(--link-active, --navigation-link-active);
 }

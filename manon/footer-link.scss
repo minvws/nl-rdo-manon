@@ -1,13 +1,13 @@
 /*---------------------------------------------------------------*/
 /*---------------------- footer-link.scss -----------------------*/
 /*---------------------------------------------------------------*/
-@use "footer-link-variables";
+
 @use "mixins/link";
 
 body > footer,
 .page-footer,
 %footer-style {
   a {
-    @include link.link("footer-link-");
+    @include link.full-configuration(--link, --footer-link);
   }
 }

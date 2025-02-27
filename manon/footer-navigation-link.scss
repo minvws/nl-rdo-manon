@@ -1,15 +1,13 @@
 /*---------------------------------------------------------------*/
 /*---------------- footer-navigation-link.scss ------------------*/
 /*---------------------------------------------------------------*/
-@use "footer-navigation-link-variables";
+
 @use "mixins/link";
 
 body > footer,
 .page-footer,
 %footer-style {
   nav {
-    a {
-      @include link.link("footer-navigation-link-");
-    }
+    @include link.full-configuration(--link, --footer-navigation-link);
   }
 }

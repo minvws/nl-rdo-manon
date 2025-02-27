@@ -1,16 +1,11 @@
 /*---------------------------------------------------------------*/
 /*-------------------- footer-link-active.scss ------------------*/
 /*---------------------------------------------------------------*/
-@use "footer-link-active-variables";
+
 @use "mixins/link";
 
 body > footer,
 .page-footer,
 %footer-style {
-  a {
-    &:active,
-    &.active {
-      @include link.link-and-icon-styling("footer-link-active-");
-    }
-  }
+  @include link.full-configuration(--link-active, --footer-link-active);
 }

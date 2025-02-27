@@ -1,21 +1,61 @@
 /*---------------------------------------------------------------*/
 /*------------------ link-visited.scss -------------------*/
 /*---------------------------------------------------------------*/
-@use "link-visited-variables";
+
 @use "mixins/link";
-@use "mixins/outline";
+@use "mixins/heading";
 
 a {
   &:visited,
   &.visited {
-    @include link.link-and-icon-styling("link-visited-");
-    @include link.link-elements-styling("link-visited-");
-    @include outline.outline("link-visited-");
+    @include link.full-styles(--link-visited, --link);
 
     &:hover,
     &.hover {
-      @include link.link-and-icon-styling("link-visited-hover-");
-      @include link.link-elements-styling("link-visited-hover-");
+      @include link.full-styles(
+        --link-visited-hover,
+        --link-visited,
+        --link-hover,
+        --link
+      );
+    }
+
+    &:focus,
+    &.focus {
+      @include link.full-styles(
+        --link-visited-focus,
+        --link-visited,
+        --link-focus,
+        --link
+      );
+    }
+
+    &:active,
+    &.active {
+      @include link.full-styles(
+        --link-visited-active,
+        --link-visited,
+        --link-active,
+        --link
+      );
+    }
+  }
+}
+
+@include heading.all {
+  a:visited,
+  a.visited {
+    &,
+    &:hover,
+    &.hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      font-family: revert;
+      font-size: revert;
+      font-weight: revert;
+      line-height: revert;
     }
   }
 }

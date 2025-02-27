@@ -1,16 +1,9 @@
 /*---------------------------------------------------------------*/
 /*---------------- navigation-link-focus.scss ----- -------------*/
 /*---------------------------------------------------------------*/
-@use "navigation-link-focus-variables";
+
 @use "mixins/link";
-@use "mixins/outline";
 
 nav {
-  a {
-    &:focus,
-    &.focus {
-      @include link.link-and-icon-styling("navigation-link-focus-");
-      @include outline.outline("navigation-link-focus-");
-    }
-  }
+  @include link.full-configuration(--link-focus, --navigation-link-focus);
 }

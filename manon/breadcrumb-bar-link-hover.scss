@@ -1,0 +1,9 @@
+/*---------------------------------------------------------------*/
+/*------------- breadcrumb-bar-link-hover.scss ------------------*/
+/*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
+.breadcrumb-bar {
+  @include link.full-configuration(--link-hover, --breadcrumb-bar-link-hover);
+}

@@ -1,29 +1,25 @@
 /*---------------------------------------------------------------*/
 /*---------------- header-navigation-link-hover.scss ------------*/
 /*---------------------------------------------------------------*/
-@use "header-navigation-link-hover-variables";
-@use "mixins/link";
 
-%header-navigation-link-hover-styling {
-  a {
-    &:hover,
-    &.hover {
-      @include link.link-and-icon-styling("header-navigation-link-hover-");
-    }
-  }
-}
+@use "mixins/link";
 
 body > header,
 .page-header,
 %header-navigation-style {
-  nav {
-    @extend %header-navigation-link-hover-styling;
+  nav:not(.breadcrumb-bar) {
+    @include link.full-configuration(
+      --link-hover,
+      --header-navigation-link-hover
+    );
 
-    ul,
-    ol {
-      li {
-        @extend %header-navigation-link-hover-styling;
-      }
+    [aria-current="page"],
+    .current {
+      @include link.full-configuration(
+        --link-hover,
+        --header-navigation-current-link-hover,
+        --header-navigation-link-hover
+      );
     }
   }
 }

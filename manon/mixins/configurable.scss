@@ -1,0 +1,166 @@
+@use "sass:string";
+@use "sass:list";
+@use "sass:meta";
+
+/// Create a var() stack from the given values.
+@function -vars($values...) {
+  $left: "";
+  $right: "";
+  $end: false;
+  @each $value in $values {
+    @if $value == "" {
+      @error "Properties cannot be empty.";
+    }
+    @if string.index("#{$value}", "--") == 1 {
+      $left: if($left == "", "var(#{$value}", "#{$left}, var(#{$value}");
+      $right: $right + ")";
+    } @else if $end or $left == "" {
+      @error "Fallback value can only be used as the last element of the stack.";
+    } @else {
+      $left: $left + ", " + $value;
+    }
+  }
+  @return string.unquote($left + $right);
+}
+
+/// Test if string starts with `--`.
+@function -isCustomProperty($value) {
+  @return string.index("#{$value}", "--") == 1;
+}
+
+/// Prefix a custom property with an underscore, e.g. `--yay` to `--_yay`.
+@function -private($property) {
+  @if not -isCustomProperty($property) {
+    @error "Not a custom property: #{$property}.";
+  }
+  @return string.unquote("--_" + string.slice($property, 3));
+}
+
+/// Append a property name to each of a stack of prefixes.
+///
+/// @param {String} $property
+/// @param {List} $stack
+/// @param {String} $fallback [null] - Optional final fallback value.
+/// @example
+///   $stack: prefix(color, --widget-hover, --widget, black);
+///   /* $stack: (--widget-hover-color, --widget-color, black); */
+@function prefix($property, $stack, $fallback: null) {
+  $result: ();
+  @each $prefix in $stack {
+    @if not -isCustomProperty($prefix) {
+      @error "Invalid prefix: #{$prefix}.";
+    }
+    $result: list.append($result, string.unquote($prefix + "-" + $property));
+  }
+  @return if($fallback, list.append($result, $fallback), $result);
+}
+
+/// Flatten a potentially nested arglist into a single flat list.
+@function -flatten($list...) {
+  $flat: ();
+  @each $item in $list {
+    $type: meta.type-of($item);
+    $flat: if(
+      $type == "list" or $type == "arglist",
+      list.join($flat, -flatten($item...)),
+      list.append($flat, $item)
+    );
+  }
+  @return $flat;
+}
+
+/// Create a configurable property from a stack of custom property names and an
+/// optional fallback value. The first custom property name should be the one
+/// theme authors are expected to use to configure a component.
+/// TODO: update description.
+///
+/// If the last item in the list is a regular value, it is used as the final
+/// fallback. Otherwise, the final fallback will be `revert`.
+///
+/// @param {List} $properties...
+///
+/// @example
+///   .widget {
+///     font-size: conf.property(--widget-font-size);
+///     tabindex: conf.property(--widget-tabindex, 0);
+///     /* result: */
+///     font-size: var(--_widget-font-size, var(--widget-font-size, revert));
+///     tabindex: var(--_widget-tabindex, var(--widget-tabindex, 0));
+///   }
+/// @example
+///   a:visited {
+///     color: conf.property(--link-visited-text-color, --link-text-color);
+///     /* result: */
+///     color: var(
+///       --_link-visited-text-color,
+///       var(--_link-text-color,
+///       var(--link-visited-text-color,
+///       var(--link-text-color, revert))));
+///   }
+@function property($properties...) {
+  @if list.length($properties) < 1 {
+    @error "Properties list cannot be empty.";
+  }
+  $properties: -flatten($properties);
+  $targets: ();
+  $stack: ();
+  $fallback: null;
+  @each $property in $properties {
+    @if $fallback {
+      @error "Fallback property must be last.";
+    }
+    @if -isCustomProperty($property) {
+      $targets: list.append($targets, -private($property));
+      $stack: list.append($stack, $property);
+    } @else {
+      $fallback: $property;
+    }
+  }
+  $stack: list.join($targets, $stack);
+  $stack: list.append($stack, if($fallback, $fallback, revert));
+  @return -vars($stack...);
+}
+
+/// Set up a configuration context for the given properties using the given
+/// prefixes, starting with the base component's prefix (the "target"), followed
+/// by one or more configuration context prefixes.
+///
+/// @prop {List} - Which configurable properties to include.
+/// @prop {List} $prefixes... - List of prefixes, starting with that of the base component.
+/// @example
+///   .nested-widget {
+///     conf.context(
+///       (font-size, text-color)
+///       --widget,
+///       --nested-widget,
+///     );
+///     /* result: */
+///     --_widget-font-size: var(--nested-widget-font-size);
+///     --_widget-text-color: var(--nested-widget-text-color);
+///   }
+@mixin context($properties, $prefixes...) {
+  $length: list.length($prefixes);
+  @if $length < 2 {
+    @error "Prefixes list should be at least 2 items long.";
+  }
+  $basePrefix: list.nth($prefixes, 1);
+  $stack: ();
+  @for $i from 1 through $length {
+    $value: list.nth($prefixes, $i);
+    @if $value == "" {
+      @error "Prefixes cannot be empty.";
+    }
+    @if list.index($stack, $value) {
+      @error "Duplicate prefix: #{$value}.";
+    }
+    @if $i != 1 {
+      $stack: list.append($stack, $value);
+    }
+  }
+
+  @each $property in $properties {
+    $target: string.unquote(-private(#{$basePrefix}-#{$property}));
+    $prefixed: prefix($property, $stack);
+    #{$target}: -vars($prefixed...);
+  }
+}

@@ -1,28 +1,52 @@
 /*---------------------------------------------------------------*/
 /*-------------- header-navigation-link-visited.scss ------------*/
 /*---------------------------------------------------------------*/
-@use "header-navigation-link-visited-variables";
+
 @use "mixins/link";
 
 body > header,
 .page-header,
 %header-navigation-style {
-  nav {
-    a {
-      &:visited,
-      &.visited {
-        @include link.link-and-icon-styling("header-navigation-link-visited-");
+  nav:not(.breadcrumb-bar) {
+    @include link.full-configuration(
+      --link-visited,
+      --header-navigation-link-visited
+    );
+    @include link.full-configuration(
+      --link-visited-hover,
+      --header-navigation-link-visited-hover
+    );
+    @include link.full-configuration(
+      --link-visited-focus,
+      --header-navigation-link-visited-focus
+    );
+    @include link.full-configuration(
+      --link-visited-active,
+      --header-navigation-link-visited-active
+    );
 
-        &:hover,
-        &.hover {
-          @include link.link-and-icon-styling(
-            "header-navigation-link-visited-hover-"
-          );
-          @include link.link-elements-styling(
-            "header-navigation-link-visited-hover-"
-          );
-        }
-      }
+    [aria-current="page"],
+    .current {
+      @include link.full-configuration(
+        --link-visited,
+        --header-navigation-current-link-visited,
+        --header-navigation-link-visited
+      );
+      @include link.full-configuration(
+        --link-visited-hover,
+        --header-navigation-current-link-visited-hover,
+        --header-navigation-link-visited-hover
+      );
+      @include link.full-configuration(
+        --link-visited-focus,
+        --header-navigation-current-link-visited-focus,
+        --header-navigation-link-visited-focus
+      );
+      @include link.full-configuration(
+        --link-visited-active,
+        --header-navigation-current-link-visited-active,
+        --header-navigation-link-visited-active
+      );
     }
   }
 }

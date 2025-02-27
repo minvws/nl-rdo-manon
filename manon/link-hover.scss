@@ -1,15 +1,23 @@
 /*---------------------------------------------------------------*/
 /*------------------------- link-hover.scss ---------------------*/
 /*---------------------------------------------------------------*/
-@use "link-hover-variables";
+
 @use "mixins/link";
-@use "mixins/outline";
+@use "mixins/heading";
 
 a {
   &:hover,
   &.hover {
-    @include link.link-and-icon-styling("link-hover-");
-    @include link.link-elements-styling("link-hover-");
-    @include outline.outline("link-hover-");
+    @include link.full-styles(--link-hover, --link);
+  }
+}
+
+@include heading.all {
+  a:hover,
+  a.hover {
+    font-family: revert;
+    font-size: revert;
+    font-weight: revert;
+    line-height: revert;
   }
 }

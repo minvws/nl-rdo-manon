@@ -1,0 +1,27 @@
+/* Header navigation link */
+
+@use "../color-scheme";
+
+:root {
+  // Link
+  --header-navigation-link-text-color: #{color-scheme.$oc-white};
+  --header-navigation-link-font-weight: bold;
+  --header-navigation-link-text-decoration: none;
+
+  // Hover
+  --header-navigation-link-hover-text-color: #{color-scheme.$oc-white};
+  --header-navigation-link-hover-background-color: #{color-scheme.$oc-gray-7};
+
+  // Focus
+  --header-navigation-link-focus-z-index: 2;
+  --header-navigation-link-focus-box-shadow: 0 0 0 0.25rem white;
+  --header-navigation-link-focus-outline: 0.125rem solid black;
+
+  // Active
+  --header-navigation-link-active-background-color: #{color-scheme.$oc-gray-7};
+  --header-navigation-link-active-box-shadow: 0 0 0 0.25rem white;
+  --header-navigation-link-active-outline: 0.125rem solid black;
+
+  // Current
+  --header-navigation-current-link-background-color: #{color-scheme.$oc-gray-7};
+}
