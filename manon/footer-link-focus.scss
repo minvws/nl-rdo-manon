@@ -9,9 +9,7 @@ body > footer,
 %footer-style {
   a {
     &:focus,
-    &.focus
-
-    /* Testing purposes */ {
+    &.focus {
       @include link.link-and-icon-styling("footer-link-focus-");
     }
   }

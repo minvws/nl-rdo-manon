@@ -9,7 +9,6 @@ body > header,
 %header-style {
   a {
     &:focus,
-    /* Testing purposes */
     &.focus {
       @include link.link-and-icon-styling("header-link-focus-");
     }

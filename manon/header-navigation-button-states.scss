@@ -15,7 +15,6 @@ body > header,
   nav {
     a.button {
       &:visited,
-        /* Testing purposes */
       &.visited {
         @include link.link-and-icon-styling("header-navigation-button-");
       }
@@ -38,7 +37,6 @@ body > header,
     input[type="reset"] {
       @each $state in $header-navigation-button-states {
         &:#{$state},
-        /* Testing purposes */
         &.#{$state} {
           @include link.link-and-icon-styling(
             "header-navigation-button-" + $state + "-"

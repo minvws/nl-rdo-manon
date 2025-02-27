@@ -6,7 +6,6 @@
 @use "mixins/outline";
 
 a {
-  /* states */
   &:visited,
   &.visited {
     @include link.link-and-icon-styling("link-visited-");

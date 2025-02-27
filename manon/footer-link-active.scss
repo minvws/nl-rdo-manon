@@ -9,7 +9,6 @@ body > footer,
 %footer-style {
   a {
     &:active,
-    /* Testing purposes */
     &.active {
       @include link.link-and-icon-styling("footer-link-active-");
     }

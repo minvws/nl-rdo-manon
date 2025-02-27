@@ -9,7 +9,6 @@ body > footer,
 %footer-style {
   a {
     &:visited,
-    /* Testing purposes */
     &.visited {
       @include link.link-and-icon-styling("footer-link-visited-");
     }

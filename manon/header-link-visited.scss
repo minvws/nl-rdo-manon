@@ -9,7 +9,6 @@ body > header,
 %header-style {
   a {
     &:visited,
-    /* Testing purposes */
     &.visited {
       @include link.link-and-icon-styling("header-link-visited-");
     }

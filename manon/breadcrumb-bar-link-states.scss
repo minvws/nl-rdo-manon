@@ -15,7 +15,6 @@ body > header nav.breadcrumb-bar {
       a[aria-current="page"] {
         @each $state in $breadcrumb-bar-states {
           &:#{$state},
-          /* Testing purposes */
           &.#{$state} {
             @include link.link-and-icon-styling(
               "breadcrumb-bar-link-" + $state + "-"

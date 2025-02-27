@@ -8,7 +8,7 @@
 nav {
   a {
     &:visited,
-    &.visited /* Testing purposes */ {
+    &.visited {
       @include link.link-and-icon-styling("navigation-link-visited-");
       @include outline.outline("navigation-link-visited-");
     }

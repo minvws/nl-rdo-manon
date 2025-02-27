@@ -10,7 +10,6 @@ body > header,
   nav {
     a {
       &:visited,
-      /* Testing purposes */
       &.visited {
         @include link.link-and-icon-styling("header-navigation-link-visited-");
 

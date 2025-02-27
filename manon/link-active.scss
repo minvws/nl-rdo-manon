@@ -7,9 +7,7 @@
 
 a {
   &:active,
-  &.active
-
-  /* Testing purposes */ {
+  &.active {
     @include link.link-and-icon-styling("link-active-");
     @include link.link-elements-styling("link-active-");
     @include outline.outline("link-active-");

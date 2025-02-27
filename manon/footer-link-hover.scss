@@ -9,7 +9,6 @@ body > footer,
 %footer-style {
   a {
     &:hover,
-    /* Testing purposes */
     &.hover {
       @include link.link-and-icon-styling("footer-link-hover-");
     }
