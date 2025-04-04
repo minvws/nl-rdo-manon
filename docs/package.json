@@ -27,6 +27,6 @@
     "svelte-check": "^4.1.5",
     "svelte-preprocess-import-assets": "^1.1.0",
     "typescript": "^5.8.2",
-    "vite": "^6.2.4"
+    "vite": "^6.2.5"
   }
 }
