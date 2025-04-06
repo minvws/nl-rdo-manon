@@ -17,16 +17,16 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.8",
-    "@sveltejs/kit": "^2.20.2",
+    "@sveltejs/kit": "^2.20.4",
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "mdsvex": "^0.12.3",
     "prettier": "^3.5.3",
     "prettier-plugin-svelte": "^3.3.3",
-    "sass": "^1.86.0",
-    "svelte": "^5.25.3",
+    "sass": "^1.86.3",
+    "svelte": "^5.25.7",
     "svelte-check": "^4.1.5",
     "svelte-preprocess-import-assets": "^1.1.0",
-    "typescript": "^5.8.2",
+    "typescript": "^5.8.3",
     "vite": "^6.2.5"
   }
 }
