@@ -1,8 +1,26 @@
-/* Link Visited */
+/* Visited Link */
 
 @use "../color-scheme";
 
 :root {
+  // Link
   --link-visited-text-color: #{color-scheme.$oc-grape-8};
-  --link-visited-icon-text-color: #{color-scheme.$oc-grape-8};
+  --link-visited-font-weight: normal;
+  --link-visited-text-decoration: underline;
+  --link-visited-outline-offset: 0.25rem;
+
+  // Hover
+  --link-visited-hover-text-color: #{color-scheme.$oc-grape-9};
+
+  // Focus
+  --link-visited-focus-text-color: #{color-scheme.$oc-grape-8};
+  --link-visited-focus-box-shadow: 0 0 0 0.25rem white;
+  --link-visited-focus-outline: 0.125rem solid
+    var(--link-visited-focus-text-color);
+
+  // Active
+  --link-visited-active-text-color: #{color-scheme.$oc-grape-9};
+  --link-visited-active-box-shadow: 0 0 0 0.25rem white;
+  --link-visited-active-outline: 0.125rem solid
+    var(--link-visited-active-text-color);
 }

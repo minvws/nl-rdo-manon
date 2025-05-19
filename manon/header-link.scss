@@ -1,13 +1,11 @@
 /*---------------------------------------------------------------*/
 /*---------------------- header-link.scss -----------------------*/
 /*---------------------------------------------------------------*/
-@use "header-link-variables";
+
 @use "mixins/link";
 
 body > header,
 .page-header,
 %header-style {
-  a {
-    @include link.link("header-link-");
-  }
+  @include link.full-configuration(--link, --header-link);
 }

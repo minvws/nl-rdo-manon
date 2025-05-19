@@ -13,8 +13,7 @@ h6 {
   margin: 0;
 }
 
-h1,
-h1 > a {
+h1 {
   font-family: var(--h1-font-family, var(--application-base-font-family));
   font-size: var(--h1-font-size, inherit);
   color: var(--h1-text-color, inherit);
@@ -23,8 +22,7 @@ h1 > a {
   margin: var(--h1-margin, inherit);
 }
 
-h2,
-h2 > a {
+h2 {
   font-family: var(--h2-font-family, var(--application-base-font-family));
   font-size: var(--h2-font-size, inherit);
   color: var(--h2-text-color, inherit);
@@ -33,8 +31,7 @@ h2 > a {
   margin: var(--h2-margin, inherit);
 }
 
-h3,
-h3 > a {
+h3 {
   font-family: var(--h3-font-family, var(--application-base-font-family));
   font-size: var(--h3-font-size, inherit);
   color: var(--h3-text-color, inherit);
@@ -43,8 +40,7 @@ h3 > a {
   margin: var(--h3-margin, inherit);
 }
 
-h4,
-h4 > a {
+h4 {
   font-family: var(--h4-font-family, var(--application-base-font-family));
   font-size: var(--h4-font-size, inherit);
   color: var(--h4-text-color, inherit);
@@ -53,8 +49,7 @@ h4 > a {
   margin: var(--h4-margin, inherit);
 }
 
-h5,
-h5 > a {
+h5 {
   font-family: var(--h5-font-family, var(--application-base-font-family));
   font-size: var(--h5-font-size);
   color: var(--h5-text-color);
@@ -63,8 +58,7 @@ h5 > a {
   margin: var(--h5-margin, inherit);
 }
 
-h6,
-h6 > a {
+h6 {
   font-family: var(--h6-font-family, var(--application-base-font-family));
   font-size: var(--h6-font-size);
   color: var(--h6-text-color);
