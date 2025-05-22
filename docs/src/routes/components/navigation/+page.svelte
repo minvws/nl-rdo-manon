@@ -46,6 +46,71 @@
         <h2>Voorbeelden:</h2>
 
         <h4>Visueel voorbeeld:</h4>
+
+        <h4>Navigatie-component met links</h4>
+        <nav>
+          <a href="links">Lorem ipsum</a>
+          <a href="links">Lorem ipsum</a>
+          <a href="links">Lorem ipsum</a>
+        </nav>
+
+        <h4>HTML-voorbeeld:</h4>
+        <Code
+          language="html"
+          code={`
+<nav>
+    <a href="#">Lorem ipsum</a>
+    <a href="#">Lorem ipsum</a>
+    <a href="#">Lorem ipsum</a>
+</nav>
+`}
+        />
+
+        <h4>Navigatie-component met een lijst met links</h4>
+        <nav>
+          <ul>
+            <li><a href="links">Lorem ipsum</a></li>
+            <li><a href="links">Lorem ipsum</a></li>
+            <li><a href="links">Lorem ipsum</a></li>
+          </ul>
+        </nav>
+
+        <h4>HTML-voorbeeld:</h4>
+        <Code
+          language="html"
+          code={`
+<nav>
+    <ul>
+        <li><a href="#">Lorem ipsum</a></li>
+        <li><a href="#">Lorem ipsum</a></li>
+        <li><a href="#">Lorem ipsum</a></li>
+    </ul>
+</nav>
+`}
+        />
+
+        <h4>Navigatie-component met een horizontaal uitgelijnde lijst met links</h4>
+        <nav>
+          <ul class="horizontal-view">
+            <li><a href="links">Lorem ipsum</a></li>
+            <li><a href="links">Lorem ipsum</a></li>
+            <li><a href="links">Lorem ipsum</a></li>
+          </ul>
+        </nav>
+
+        <h4>HTML-voorbeeld:</h4>
+        <Code
+          language="html"
+          code={`
+<nav>
+    <ul class="horizontal-view">
+        <li><a href="#">Lorem ipsum</a></li>
+        <li><a href="#">Lorem ipsum</a></li>
+        <li><a href="#">Lorem ipsum</a></li>
+    </ul>
+</nav>
+`}
+        />
       </section>
 
       <section id="requirements">
