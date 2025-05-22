@@ -49,9 +49,9 @@
 
         <h4>Navigatie-component met links</h4>
         <nav>
-          <a href="links">Lorem ipsum</a>
-          <a href="links">Lorem ipsum</a>
-          <a href="links">Lorem ipsum</a>
+          <a href="navigation">Lorem ipsum</a>
+          <a href="navigation">Lorem ipsum</a>
+          <a href="navigation">Lorem ipsum</a>
         </nav>
 
         <h4>HTML-voorbeeld:</h4>
@@ -69,9 +69,9 @@
         <h4>Navigatie-component met een lijst met links</h4>
         <nav>
           <ul>
-            <li><a href="links">Lorem ipsum</a></li>
-            <li><a href="links">Lorem ipsum</a></li>
-            <li><a href="links">Lorem ipsum</a></li>
+            <li><a href="navigation">Lorem ipsum</a></li>
+            <li><a href="navigation">Lorem ipsum</a></li>
+            <li><a href="navigation">Lorem ipsum</a></li>
           </ul>
         </nav>
 
@@ -92,9 +92,9 @@
         <h4>Navigatie-component met een horizontaal uitgelijnde lijst met links</h4>
         <nav>
           <ul class="horizontal-view">
-            <li><a href="links">Lorem ipsum</a></li>
-            <li><a href="links">Lorem ipsum</a></li>
-            <li><a href="links">Lorem ipsum</a></li>
+            <li><a href="navigation">Lorem ipsum</a></li>
+            <li><a href="navigation">Lorem ipsum</a></li>
+            <li><a href="navigation">Lorem ipsum</a></li>
           </ul>
         </nav>
 
