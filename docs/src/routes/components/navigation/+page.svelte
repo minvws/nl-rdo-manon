@@ -136,7 +136,7 @@
               <tr>
                 <td>--navigation-list-margin</td>
                 <td><a href="{base}/documentation/variables#margin">margin</a></td>
-                <td>var(--navigation-list-margin)</td>
+                <td>0</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -144,7 +144,7 @@
               <tr>
                 <td>--navigation-list-padding</td>
                 <td><a href="{base}/documentation/variables#padding">padding</a></td>
-                <td>var(--navigation-list-padding)</td>
+                <td>0 0 0 1.5rem</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -152,7 +152,7 @@
               <tr>
                 <td>--navigation-list-gap</td>
                 <td><a href="{base}/documentation/variables#gap">gap</a></td>
-                <td>var(--navigation-list-gap)</td>
+                <td>0.5rem</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -160,7 +160,7 @@
               <tr>
                 <td>--navigation-list-line-height</td>
                 <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
-                <td>var(--navigation-list-line-height)</td>
+                <td>1.5</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -168,7 +168,7 @@
               <tr>
                 <td>--navigation-list-font-size</td>
                 <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
-                <td>var(--navigation-list-font-size)</td>
+                <td>1rem</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -176,7 +176,7 @@
               <tr>
                 <td>--navigation-list-font-weight</td>
                 <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
-                <td>var(--navigation-list-font-weight)</td>
+                <td>normal</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -192,7 +192,7 @@
               <tr>
                 <td>--navigation-list-background-color</td>
                 <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
-                <td>var(--navigation-list-background-color)</td>
+                <td>transparent</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -200,7 +200,7 @@
               <tr>
                 <td>--navigation-list-item-padding</td>
                 <td><a href="{base}/documentation/variables#padding">padding</a></td>
-                <td>var(--navigation-list-item-padding)</td>
+                <td>initial</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -208,7 +208,7 @@
               <tr>
                 <td>--navigation-list-item-background-color</td>
                 <td><a href="{base}/documentation/variables#background-color">background-color</a></td>
-                <td>var(--navigation-list-item-background-color)</td>
+                <td>transparent</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -224,7 +224,7 @@
               <tr>
                 <td>--navigation-list-item-border-width</td>
                 <td><a href="{base}/documentation/variables#border-width">border-width</a></td>
-                <td>var(--navigation-list-item-border-width)</td>
+                <td>0</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -232,7 +232,7 @@
               <tr>
                 <td>--navigation-list-item-border-style</td>
                 <td><a href="{base}/documentation/variables#border-style">border-style</a></td>
-                <td>var(--navigation-list-item-border-style)</td>
+                <td>solid</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -240,7 +240,7 @@
               <tr>
                 <td>--navigation-list-item-border-color</td>
                 <td><a href="{base}/documentation/variables#border-color">border-color</a></td>
-                <td>var(--navigation-list-item-border-color)</td>
+                <td>transparent</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -248,7 +248,7 @@
               <tr>
                 <td>--navigation-list-item-list-style</td>
                 <td><a href="{base}/documentation/variables#list-style">list-style</a></td>
-                <td>var(--navigation-list-item-list-style)</td>
+                <td>initial</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -288,7 +288,7 @@
               <tr>
                 <td>--navigation-list-item-icon-padding-top</td>
                 <td><a href="{base}/documentation/variables#padding-top">padding-top</a></td>
-                <td>var(--navigation-list-item-icon-padding-top)</td>
+                <td>0</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -296,7 +296,7 @@
               <tr>
                 <td>--navigation-list-item-icon-padding-right</td>
                 <td><a href="{base}/documentation/variables#padding-right">padding-right</a></td>
-                <td>var(--navigation-list-item-icon-padding-right)</td>
+                <td>0.5rem</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -304,15 +304,15 @@
               <tr>
                 <td>--navigation-list-item-icon-padding-bottom</td>
                 <td><a href="{base}/documentation/variables#padding-bottom">padding-bottom</a></td>
-                <td>var(--navigation-list-item-icon-padding-bottom)</td>
+                <td>0</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
 
-             <tr>
-                <td>--navigation-list-item-icon-padding-bottom</td>
+              <tr>
+                <td>--navigation-list-item-icon-padding-left</td>
                 <td><a href="{base}/documentation/variables#padding-left">padding-left</a></td>
-                <td>var(--navigation-list-item-icon-padding-bottom)</td>
+                <td>0</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -346,33 +346,34 @@
   --navigation-title-text-color: ;
 
   /* List */
-  --navigation-list-margin: 0;
-  --navigation-list-padding: 0 0 0 1.5rem;
-  --navigation-list-gap: 0.5rem;
-  --navigation-list-line-height: 1.5;
-  --navigation-list-font-size: 1rem;
-  --navigation-list-font-weight: normal;
+  --navigation-list-margin: ;
+  --navigation-list-padding: ;
+  --navigation-list-gap: ;
+  --navigation-list-line-height: ;
+  --navigation-list-font-size: ;
+  --navigation-list-font-weight: ;
   --navigation-list-text-color: ;
   --navigation-list-background-color: ;
 
   /* List item */
-  --navigation-list-item-padding: initial;
-  --navigation-list-item-background-color: transparent;
+  --navigation-list-item-padding: ;
+  --navigation-list-item-background-color: ;
   --navigation-list-item-text-color: ;
-  --navigation-list-item-border-width: 0;
-  --navigation-list-item-border-style: solid;
-  --navigation-list-item-border-color: transparent);
-  --navigation-list-item-list-style: initial;
+  --navigation-list-item-border-width: ;
+  --navigation-list-item-border-style: ;
+  --navigation-list-item-border-color: ;
+  --navigation-list-item-list-style: ;
 
   /* List item icon */
-  --navigation-list-item-icon-content: "";
+  --navigation-list-item-icon-content: ;
   --navigation-list-item-icon-font-family: ;
   --navigation-list-item-icon-font-size: ;
   --navigation-list-item-icon-line-height: ;
-  --navigation-list-item-icon-padding-top: 0;
-  --navigation-list-item-icon-padding-right: 0.5rem;
-  --navigation-list-item-icon-padding-bottom: 0;
+  --navigation-list-item-icon-padding-top: ;
+  --navigation-list-item-icon-padding-right: ;
+  --navigation-list-item-icon-padding-bottom: ;
   --navigation-list-item-icon-padding-left: ;
+  --navigation-list-item-icon-display: ;
 }
 `}
         />
