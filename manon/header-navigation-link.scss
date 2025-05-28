@@ -3,12 +3,14 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 body > header,
 .page-header,
 %header-navigation-style {
   nav:not(.breadcrumb-bar) {
-    @include link.full-configuration(--link, --header-navigation-link);
+    @include link.configuration(--link, --header-navigation-link);
+    @include outline.configuration(--link, --header-navigation-link);
 
     a {
       height: 100%;
@@ -24,7 +26,12 @@ body > header,
 
     [aria-current="page"],
     .current {
-      @include link.full-configuration(
+      @include link.configuration(
+        --link,
+        --header-navigation-current-link,
+        --header-navigation-link
+      );
+      @include outline.configuration(
         --link,
         --header-navigation-current-link,
         --header-navigation-link

@@ -3,9 +3,11 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 body > header,
 .page-header,
 %header-style {
-  @include link.full-configuration(--link-focus, --header-link-focus);
+  @include link.configuration(--link-focus, --header-link-focus);
+  @include outline.configuration(--link-focus, --header-link-focus);
 }

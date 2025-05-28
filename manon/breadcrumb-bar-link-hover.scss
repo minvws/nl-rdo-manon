@@ -3,7 +3,9 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 .breadcrumb-bar {
-  @include link.full-configuration(--link-hover, --breadcrumb-bar-link-hover);
+  @include link.configuration(--link-hover, --breadcrumb-bar-link-hover);
+  @include outline.configuration(--link-hover, --breadcrumb-bar-link-hover);
 }

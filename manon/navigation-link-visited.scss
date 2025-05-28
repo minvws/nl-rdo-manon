@@ -3,18 +3,32 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 nav {
-  @include link.full-configuration(--link-visited, --navigation-link-visited);
-  @include link.full-configuration(
+  @include link.configuration(--link-visited, --navigation-link-visited);
+  @include outline.configuration(--link-visited, --navigation-link-visited);
+  @include link.configuration(
     --link-visited-hover,
     --navigation-link-visited-hover
   );
-  @include link.full-configuration(
+  @include outline.configuration(
+    --link-visited-hover,
+    --navigation-link-visited-hover
+  );
+  @include link.configuration(
     --link-visited-focus,
     --navigation-link-visited-focus
   );
-  @include link.full-configuration(
+  @include outline.configuration(
+    --link-visited-focus,
+    --navigation-link-visited-focus
+  );
+  @include link.configuration(
+    --link-visited-active,
+    --navigation-link-visited-active
+  );
+  @include outline.configuration(
     --link-visited-active,
     --navigation-link-visited-active
   );

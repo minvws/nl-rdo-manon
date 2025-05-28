@@ -3,11 +3,13 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 body > footer,
 .page-footer,
 %footer-style {
   a {
-    @include link.full-configuration(--link, --footer-link);
+    @include link.configuration(--link, --footer-link);
+    @include outline.configuration(--link, --footer-link);
   }
 }

@@ -3,7 +3,9 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 .breadcrumb-bar {
-  @include link.full-configuration(--link-focus, --breadcrumb-bar-link-focus);
+  @include link.configuration(--link-focus, --breadcrumb-bar-link-focus);
+  @include outline.configuration(--link-focus, --breadcrumb-bar-link-focus);
 }

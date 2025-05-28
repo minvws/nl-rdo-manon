@@ -3,12 +3,14 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 body > footer,
 .page-footer,
 %footer-style {
   nav {
-    @include link.full-configuration(
+    @include link.configuration(--link-focus, --footer-navigation-link-focus);
+    @include outline.configuration(
       --link-focus,
       --footer-navigation-link-focus
     );

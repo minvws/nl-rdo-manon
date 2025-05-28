@@ -3,19 +3,26 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 body > header,
 .page-header,
 %header-navigation-style {
   nav:not(.breadcrumb-bar) {
-    @include link.full-configuration(
+    @include link.configuration(--link-active, --header-navigation-link-active);
+    @include outline.configuration(
       --link-active,
       --header-navigation-link-active
     );
 
     [aria-current="page"],
     .current {
-      @include link.full-configuration(
+      @include link.configuration(
+        --link-active,
+        --header-navigation-current-link-active,
+        --header-navigation-link-active
+      );
+      @include outline.configuration(
         --link-active,
         --header-navigation-current-link-active,
         --header-navigation-link-active

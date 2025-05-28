@@ -3,15 +3,23 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 @use "mixins/heading";
 
 a[aria-current="page"],
 a.current {
-  @include link.full-styles(--link-current, --link);
+  @include link.styles(--link-current, --link);
+  @include outline.styles(--link-current, --link);
 
   &:hover,
   &.hover {
-    @include link.full-styles(
+    @include link.styles(
+      --link-current-hover,
+      --link-current,
+      --link-hover,
+      --link
+    );
+    @include outline.styles(
       --link-current-hover,
       --link-current,
       --link-hover,
@@ -21,7 +29,13 @@ a.current {
 
   &:focus,
   &.focus {
-    @include link.full-styles(
+    @include link.styles(
+      --link-current-focus,
+      --link-current,
+      --link-focus,
+      --link
+    );
+    @include outline.styles(
       --link-current-focus,
       --link-current,
       --link-focus,
@@ -31,7 +45,13 @@ a.current {
 
   &:active,
   &.active {
-    @include link.full-styles(
+    @include link.styles(
+      --link-current-active,
+      --link-current,
+      --link-active,
+      --link
+    );
+    @include outline.styles(
       --link-current-active,
       --link-current,
       --link-active,

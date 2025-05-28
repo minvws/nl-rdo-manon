@@ -3,16 +3,24 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 @use "mixins/heading";
 
 a {
   &:visited,
   &.visited {
-    @include link.full-styles(--link-visited, --link);
+    @include link.styles(--link-visited, --link);
+    @include outline.styles(--link-visited, --link);
 
     &:hover,
     &.hover {
-      @include link.full-styles(
+      @include link.styles(
+        --link-visited-hover,
+        --link-visited,
+        --link-hover,
+        --link
+      );
+      @include outline.styles(
         --link-visited-hover,
         --link-visited,
         --link-hover,
@@ -22,7 +30,13 @@ a {
 
     &:focus,
     &.focus {
-      @include link.full-styles(
+      @include link.styles(
+        --link-visited-focus,
+        --link-visited,
+        --link-focus,
+        --link
+      );
+      @include outline.styles(
         --link-visited-focus,
         --link-visited,
         --link-focus,
@@ -32,7 +46,13 @@ a {
 
     &:active,
     &.active {
-      @include link.full-styles(
+      @include link.styles(
+        --link-visited-active,
+        --link-visited,
+        --link-active,
+        --link
+      );
+      @include outline.styles(
         --link-visited-active,
         --link-visited,
         --link-active,

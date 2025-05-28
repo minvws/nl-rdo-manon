@@ -3,7 +3,9 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 nav {
-  @include link.full-configuration(--link-hover, --navigation-link-hover);
+  @include link.configuration(--link-hover, --navigation-link-hover);
+  @include outline.configuration(--link-hover, --navigation-link-hover);
 }

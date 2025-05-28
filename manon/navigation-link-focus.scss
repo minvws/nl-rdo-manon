@@ -3,7 +3,9 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 nav {
-  @include link.full-configuration(--link-focus, --navigation-link-focus);
+  @include link.configuration(--link-focus, --navigation-link-focus);
+  @include outline.configuration(--link-focus, --navigation-link-focus);
 }

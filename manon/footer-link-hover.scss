@@ -3,9 +3,11 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 body > footer,
 .page-footer,
 %footer-style {
-  @include link.full-configuration(--link-hover, --footer-link-hover);
+  @include link.configuration(--link-hover, --footer-link-hover);
+  @include outline.configuration(--link-hover, --footer-link-hover);
 }

@@ -3,19 +3,26 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 body > header,
 .page-header,
 %header-navigation-style {
   nav:not(.breadcrumb-bar) {
-    @include link.full-configuration(
+    @include link.configuration(--link-hover, --header-navigation-link-hover);
+    @include outline.configuration(
       --link-hover,
       --header-navigation-link-hover
     );
 
     [aria-current="page"],
     .current {
-      @include link.full-configuration(
+      @include link.configuration(
+        --link-hover,
+        --header-navigation-current-link-hover,
+        --header-navigation-link-hover
+      );
+      @include outline.configuration(
         --link-hover,
         --header-navigation-current-link-hover,
         --header-navigation-link-hover

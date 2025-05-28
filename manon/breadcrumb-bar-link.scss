@@ -3,9 +3,11 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 .breadcrumb-bar {
-  @include link.full-configuration(--link, --breadcrumb-bar-link);
+  @include link.configuration(--link, --breadcrumb-bar-link);
+  @include outline.configuration(--link, --breadcrumb-bar-link);
 
   li a {
     word-break: break-word;

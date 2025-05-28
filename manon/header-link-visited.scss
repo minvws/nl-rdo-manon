@@ -3,20 +3,34 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 body > header,
 .page-header,
 %header-style {
-  @include link.full-configuration(--link-visited, --header-link-visited);
-  @include link.full-configuration(
+  @include link.configuration(--link-visited, --header-link-visited);
+  @include outline.configuration(--link-visited, --header-link-visited);
+  @include link.configuration(
     --link-visited-hover,
     --header-link-visited-hover
   );
-  @include link.full-configuration(
+  @include outline.configuration(
+    --link-visited-hover,
+    --header-link-visited-hover
+  );
+  @include link.configuration(
     --link-visited-focus,
     --header-link-visited-focus
   );
-  @include link.full-configuration(
+  @include outline.configuration(
+    --link-visited-focus,
+    --header-link-visited-focus
+  );
+  @include link.configuration(
+    --link-visited-active,
+    --header-link-visited-active
+  );
+  @include outline.configuration(
     --link-visited-active,
     --header-link-visited-active
   );

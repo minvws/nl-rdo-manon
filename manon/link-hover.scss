@@ -3,12 +3,14 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 @use "mixins/heading";
 
 a {
   &:hover,
   &.hover {
-    @include link.full-styles(--link-hover, --link);
+    @include link.styles(--link-hover, --link);
+    @include outline.styles(--link-hover, --link);
   }
 }
 

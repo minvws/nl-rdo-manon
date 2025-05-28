@@ -58,29 +58,6 @@
   );
 }
 
-/// Apply configurable link, icon and outline styles to a base link selector.
-/// Then, for each specific link component, make it configurable by applying the
-/// `full-configuration` mixin to an appropriate context selector.
-/// @prop {List} $prefixes... - The configurable property prefix followed by optional fallback prefixes.
-@mixin full-styles($prefixes...) {
-  @include styles($prefixes...);
-  @include outline.styles($prefixes...);
-
-  &::before {
-    @include icon.styles($prefixes...);
-  }
-}
-
-/// Set up a link, icon and outline configuration context using the given
-/// prefixes, starting with the base component's prefix (the "target"), followed
-/// by one or more configuration context prefixes.
-/// @prop {List} $prefixes... - The configurable property prefix, usually the base component's name, followed by optional fallback prefixes.
-@mixin full-configuration($prefixes...) {
-  @include configuration($prefixes...);
-  @include outline.configuration($prefixes...);
-  @include icon.configuration($prefixes...);
-}
-
 ////////////////////////////////// DEPRECATED //////////////////////////////////
 
 /// @deprecated

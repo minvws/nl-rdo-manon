@@ -3,12 +3,14 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 @use "mixins/heading";
 
 a {
   &:active,
   &.active {
-    @include link.full-styles(--link-active, --link);
+    @include link.styles(--link-active, --link);
+    @include outline.styles(--link-active, --link);
   }
 }
 

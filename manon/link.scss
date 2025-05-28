@@ -3,6 +3,7 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 @use "mixins/heading";
 
 a {
@@ -12,7 +13,8 @@ a {
   word-break: break-word;
   box-sizing: border-box;
 
-  @include link.full-styles(--link);
+  @include link.styles(--link);
+  @include outline.styles(--link);
 }
 
 @include heading.all {
