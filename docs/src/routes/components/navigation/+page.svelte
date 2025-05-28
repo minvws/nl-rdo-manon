@@ -26,8 +26,6 @@
         <h1>Navigation</h1>
         <h2>Benodigde stappen</h2>
         <h3>Importeer component via npm</h3>
-
-        <h4>CSS-voorbeeld:</h4>
         <Code
           language="css"
           code={`
@@ -73,7 +71,7 @@
       <section id="examples">
         <h2>Voorbeelden:</h2>
 
-        <h4>Visueel voorbeeld:</h4>
+        <h3>Visueel voorbeeld:</h3>
 
         <h4>Navigatie-component met links</h4>
         <nav>
