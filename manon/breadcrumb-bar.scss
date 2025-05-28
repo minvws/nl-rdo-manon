@@ -80,8 +80,8 @@
       }
 
       a {
-        word-break: break-word;
         /* Break words that won't fit the available space */
+        overflow-wrap: anywhere;
         white-space: var(--breadcrumb-bar-link-white-space);
         padding-right: var(--breadcrumb-bar-link-padding-right);
         padding-left: var(--breadcrumb-bar-link-padding-left);

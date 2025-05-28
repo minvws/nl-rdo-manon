@@ -69,7 +69,8 @@
         }
 
         a {
-          word-break: break-word; /* Break words that won't fit the available space */
+          /* Break words that won't fit the available space */
+          overflow-wrap: anywhere;
           text-decoration: var(
             --breadcrumb-bar-content-block-link-text-decoration
           );
