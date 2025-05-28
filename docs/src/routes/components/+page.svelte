@@ -107,6 +107,7 @@
             <li><a href="{base}/components/header-navigation">Header</a></li>
             <li><a href="{base}/components/icons">Iconen</a></li>
             <li><a href="{base}/components/tag">Tag</a></li>
+            <li><a href="{base}/components/skip-to-content">Ga direct naar inhoud-knop</a></li>
           </ul>
         </nav>
 
@@ -213,7 +214,6 @@
             <li><a href="{base}/components/tabs">Tabbladen</a></li>
             <li><a href="{base}/components/tiles">Tegelweergave</a></li>
             <li><a href="{base}/components/sidemenu">Zijmenu</a></li>
-            <li><a href="{base}/components/skip-to-content">Ga direct naar inhoud-knop</a></li>
           </ul>
         </li>
 
