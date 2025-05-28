@@ -16,8 +16,8 @@
   <SideMenu>
     <ul>
       <li><a href="#introduction">Introductie</a></li>
-      <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
+      <li><a href="#examples">Voorbeelden</a></li>
     </ul>
   </SideMenu>
   <article class="visually-grouped">
