@@ -1,10 +1,17 @@
 /* Theme border radius */
 
 :root {
+  --border-radius-xs: 0.125rem;
   --border-radius-s: 0.25rem;
   --border-radius-m: 0.5rem;
+  --border-radius-l: 1rem;
   --border-radius-l: 1.5rem;
+  --border-radius-l: 2rem;
   --border-radius-round: 50%;
+}
+
+.border-radius-xs {
+  border-radius: var(--border-radius-xs);
 }
 
 .border-radius-s {
@@ -17,6 +24,14 @@
 
 .border-radius-l {
   border-radius: var(--border-radius-l);
+}
+
+.border-radius-xl {
+  border-radius: var(--border-radius-xl);
+}
+
+.border-radius-xxl {
+  border-radius: var(--border-radius-xxl);
 }
 
 .border-radius-round {
