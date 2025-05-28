@@ -71,7 +71,7 @@
         </div>
 
         <div>
-          <p>Html-voorbeeld header:</p>
+          <p>HTML-voorbeeld header:</p>
           <pre>
                 <code>
 &lt;header>
