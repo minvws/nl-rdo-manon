@@ -1,10 +1,10 @@
 /*---------------------------------------------------------------*/
 /*-------------------- breadcrumb-bar.scss ----------------------*/
 /*---------------------------------------------------------------*/
+
 @use "breadcrumb-bar-variables";
 @use "mixins/icon";
 
-.page-header .breadcrumb-bar,
 .breadcrumb-bar {
   display: flex;
   flex-direction: var(--breadcrumb-bar-flex-direction);
@@ -76,19 +76,6 @@
 
         &::after {
           content: none;
-        }
-      }
-
-      a {
-        word-break: break-word;
-        /* Break words that won't fit the available space */
-        white-space: var(--breadcrumb-bar-link-white-space);
-        padding-right: var(--breadcrumb-bar-link-padding-right);
-        padding-left: var(--breadcrumb-bar-link-padding-left);
-
-        &:hover {
-          text-decoration: var(--breadcrumb-bar-link-hover-text-decoration);
-          border: 0;
         }
       }
     }

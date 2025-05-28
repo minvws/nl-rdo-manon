@@ -19,7 +19,7 @@ a {
       }
     }
 
-    @each $state in link.$states {
+    @each $state in ("visited", "hover", "focus", "active") {
       &:#{$state}::before {
         font-size: var(--link-external-icon-font-size);
       }

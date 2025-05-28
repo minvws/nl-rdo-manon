@@ -1,0 +1,6 @@
+@use "configurable" as *;
+
+$stack: (--a, --b, --c);
+@debug property(prefix(color, $stack, none)...);
+
+@debug property(prefix(color, $stack), none);

@@ -1,28 +1,34 @@
 /*---------------------------------------------------------------*/
 /*---------------- header-navigation-link.scss ------------------*/
 /*---------------------------------------------------------------*/
-@use "header-navigation-link-variables";
-@use "mixins/icon";
+
 @use "mixins/link";
 
 body > header,
 .page-header,
 %header-navigation-style {
-  nav {
-    a {
-      @include link.link("header-navigation-link-");
+  nav:not(.breadcrumb-bar) {
+    @include link.full-configuration(--link, --header-navigation-link);
 
-      & {
-        height: 100%;
-        display: inline-flex;
-        align-items: var(--header-navigation-link-align-items);
-        justify-content: var(--header-navigation-link-justify-content);
-        padding-top: var(--header-navigation-link-padding-top);
-        padding-right: var(--header-navigation-link-padding-right);
-        padding-bottom: var(--header-navigation-link-padding-bottom);
-        padding-left: var(--header-navigation-link-padding-left);
-        min-height: var(--header-navigation-link-min-height);
-      }
+    a {
+      height: 100%;
+      display: inline-flex;
+      align-items: var(--header-navigation-link-align-items, center);
+      justify-content: var(--header-navigation-link-justify-content, center);
+      padding-top: var(--header-navigation-link-padding-top, 0);
+      padding-right: var(--header-navigation-link-padding-right, 0);
+      padding-bottom: var(--header-navigation-link-padding-bottom, 0);
+      padding-left: var(--header-navigation-link-padding-left, 0);
+      min-height: var(--header-navigation-link-min-height, 0);
+    }
+
+    [aria-current="page"],
+    .current {
+      @include link.full-configuration(
+        --link,
+        --header-navigation-current-link,
+        --header-navigation-link
+      );
     }
   }
 }

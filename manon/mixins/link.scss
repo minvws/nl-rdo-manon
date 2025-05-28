@@ -1,36 +1,122 @@
 /*---------------------------------------------------------------------*/
-/*---------------------------- link.scss ------------------------------*/
+/*------------------------ mixins/link.scss ---------------------------*/
 /*---------------------------------------------------------------------*/
+
+@use "configurable" as c;
+@use "outline";
 @use "icon";
 
-$states: ("visited", "hover", "active", "focus");
+/// Apply configurable link styles to a base link selector. Then, for
+/// each specific link component, make it configurable by applying the
+/// `configuration` mixin to an appropriate context selector.
+/// @prop {List} $prefixes... - The configurable property prefix followed by optional fallback prefixes.
+/// @example
+///   a {
+///     link.styles(--link);
+///   }
+///   a:visited {
+///     link.styles(--link-visited, --link);
+///   }
+@mixin styles($prefixes...) {
+  font-size: c.property(c.prefix(font-size, $prefixes));
+  font-weight: c.property(c.prefix(font-weight, $prefixes));
+  line-height: c.property(c.prefix(line-height, $prefixes));
+  background-color: c.property(c.prefix(background-color, $prefixes));
+  color: c.property(c.prefix(text-color, $prefixes));
+  text-decoration: c.property(c.prefix(text-decoration, $prefixes));
+  border-width: c.property(c.prefix(border-width, $prefixes));
+  border-style: c.property(c.prefix(border-style, $prefixes));
+  border-color: c.property(c.prefix(border-color, $prefixes));
+  border-radius: c.property(c.prefix(border-radius, $prefixes));
+}
 
-@mixin styling($prefix) {
-  & {
-    font-size: var(--#{$prefix}font-size, 1rem);
-    font-weight: var(--#{$prefix}font-weight);
-    line-height: var(--#{$prefix}line-height);
-    background-color: var(--#{$prefix}background-color);
-    color: var(--#{$prefix}text-color);
-    text-decoration: var(--#{$prefix}text-decoration);
-    border-width: var(--#{$prefix}border-width);
-    border-style: var(--#{$prefix}border-style);
-    border-color: var(--#{$prefix}border-color);
-    border-radius: var(--#{$prefix}border-radius);
-    box-sizing: border-box;
+/// Set up a link configuration context using the given prefixes, starting
+/// with the base component's prefix (the "target"), followed by one or more
+/// configuration context prefixes.
+/// @prop {List} $prefixes... - The configurable property prefix, usually the base component's name, followed by optional fallback prefixes.
+/// @example
+///   .widget {
+///     link.configuration(link, widget-link);
+///     link.configuration(visited-link, widget-visited-link, widget-link);
+///     // et cetera
+///   }
+@mixin configuration($prefixes...) {
+  @include c.context(
+    (
+      font-size,
+      font-weight,
+      line-height,
+      background-color,
+      text-color,
+      text-decoration,
+      border-width,
+      border-style,
+      border-color,
+      border-radius
+    ),
+    $prefixes...
+  );
+}
+
+/// Apply configurable link, icon and outline styles to a base link selector.
+/// Then, for each specific link component, make it configurable by applying the
+/// `full-configuration` mixin to an appropriate context selector.
+/// @prop {List} $prefixes... - The configurable property prefix followed by optional fallback prefixes.
+@mixin full-styles($prefixes...) {
+  @include styles($prefixes...);
+  @include outline.styles($prefixes...);
+
+  &::before {
+    @include icon.styles($prefixes...);
   }
 }
 
+/// Set up a link, icon and outline configuration context using the given
+/// prefixes, starting with the base component's prefix (the "target"), followed
+/// by one or more configuration context prefixes.
+/// @prop {List} $prefixes... - The configurable property prefix, usually the base component's name, followed by optional fallback prefixes.
+@mixin full-configuration($prefixes...) {
+  @include configuration($prefixes...);
+  @include outline.configuration($prefixes...);
+  @include icon.configuration($prefixes...);
+}
+
+////////////////////////////////// DEPRECATED //////////////////////////////////
+
+/// @deprecated
+@mixin styling($prefix) {
+  @warn "DEPRECATED: use link.styles & link.configurable instead.";
+
+  box-sizing: border-box;
+
+  font-size: var(--#{$prefix}font-size, 1rem);
+  font-weight: var(--#{$prefix}font-weight);
+  line-height: var(--#{$prefix}line-height);
+  background-color: var(--#{$prefix}background-color);
+  color: var(--#{$prefix}text-color);
+  text-decoration: var(--#{$prefix}text-decoration);
+  border-width: var(--#{$prefix}border-width);
+  border-style: var(--#{$prefix}border-style);
+  border-color: var(--#{$prefix}border-color);
+  border-radius: var(--#{$prefix}border-radius);
+}
+
+/// @deprecated
 @mixin link-and-icon-styling($prefix) {
+  @warn "DEPRECATED: use link.styles & link.configurable instead.";
+
   @include styling($prefix);
 
   &::before,
   .icon::before {
-    @include styling("#{$prefix}icon-");
+    @include styling(#{$prefix}icon-);
   }
 }
 
+/// @deprecated
 @mixin link($prefix) {
+  @warn "DEPRECATED: use link.styles & link.configurable instead.";
+
   @include styling($prefix);
 
   &::before {
@@ -47,12 +133,16 @@ $states: ("visited", "hover", "active", "focus");
 
   > span.icon:last-of-type:not(:only-of-type) {
     font-size: 0;
+
     padding-right: var(--#{$prefix}icon-last-padding-right);
     padding-left: var(--#{$prefix}icon-last-padding-left);
   }
 }
 
+/// @deprecated
 @mixin link-elements-styling($prefix) {
+  @warn "DEPRECATED: use link.styles & link.configurable instead.";
+
   > h1,
   > h2,
   > h3,
@@ -64,7 +154,10 @@ $states: ("visited", "hover", "active", "focus");
   }
 }
 
+/// @deprecated
 @mixin styling-variables($prefix, $parentPrefix) {
+  @warn "DEPRECATED: use link.styles & link.configurable instead.";
+
   --#{$prefix}font-size: var(--#{$parentPrefix}font-size);
   --#{$prefix}font-weight: var(--#{$parentPrefix}font-weight);
   --#{$prefix}line-height: var(--#{$parentPrefix}line-height);
@@ -77,7 +170,10 @@ $states: ("visited", "hover", "active", "focus");
   --#{$prefix}border-radius: var(--#{$parentPrefix}border-radius);
 }
 
+/// @deprecated
 @mixin icon-styling-variables($prefix, $parentPrefix, $state) {
+  @warn "DEPRECATED: use link.styles & link.configurable instead.";
+
   --#{$prefix}font-size: var(--#{$parentPrefix}icon-font-size);
   --#{$prefix}font-weight: var(--#{$parentPrefix}icon-font-weight);
   --#{$prefix}line-height: var(--#{$parentPrefix}icon-line-height);

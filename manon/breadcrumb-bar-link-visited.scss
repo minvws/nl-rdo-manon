@@ -1,0 +1,24 @@
+/*---------------------------------------------------------------*/
+/*------------- breadcrumb-bar-link-visited.scss ----------------*/
+/*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
+.breadcrumb-bar {
+  @include link.full-configuration(
+    --link-visited,
+    --breadcrumb-bar-link-visited
+  );
+  @include link.full-configuration(
+    --link-visited-hover,
+    --breadcrumb-bar-link-visited-hover
+  );
+  @include link.full-configuration(
+    --link-visited-focus,
+    --breadcrumb-bar-link-visited-focus
+  );
+  @include link.full-configuration(
+    --link-visited-active,
+    --breadcrumb-bar-link-visited-active
+  );
+}
