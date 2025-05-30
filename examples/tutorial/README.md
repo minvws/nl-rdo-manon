@@ -25,7 +25,7 @@ Let's update our `package.json` to include the necessary dependencies.
 ```json
 {
   "scripts": {
-    "build": "sass --load-path=node_modules main.scss dist/main.css"
+    "build": "sass --load-path=node_modules main.scss css/main.css"
   },
   "dependencies": {
     "@minvws/manon": "latest",
@@ -46,11 +46,11 @@ Let's break down what we've defined here:
   us to apply different styles to our components easily. We've provided
   a basic theme called `basic-bold` that we will use in our project.
 
-- `sass`: This is a CSS preprocessor, itt compiles our `.scss` files into
+- `sass`: This is a CSS preprocessor, it compiles our `.scss` files into
   `.css` files.
 
 - `scripts.build`: This script compiles our `main.scss` file into a
-  `dist/main.css` file, which we will use in our HTML.
+  `css/main.css` file, which we will use in our HTML.
 
 Now, we can install the dependencies by running:
 
@@ -74,7 +74,7 @@ will be the main HTML file for our page.
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manon Tutorial</title>
-    <link rel="stylesheet" href="dist/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <h1>Hello, Manon!</h1>
@@ -120,7 +120,6 @@ First, we need to import the header navigation component in our `main.scss` file
 @use "@minvws/manon/application-base";
 
 // Add the following:
-@use "@minvws/manon/navigation";
 @use "@minvws/manon/header-navigation";
 
 @use "@minvws/manon-themes/basic-bold";
@@ -136,7 +135,7 @@ Let's update our `index.html` file:
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manon Tutorial</title>
-    <link rel="stylesheet" href="dist/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <!-- Add the following: -->
@@ -155,7 +154,9 @@ Let's update our `index.html` file:
 
 ### Main
 
-For the main content, we will need to import the `layout-set`, `main`, and `section`
+For the main content, we will need to import the `layout-set`, `main`, and
+`section` components into our `main.scss` file. This will allow us to create a
+structured layout for our page.
 
 ```scss
 @use "@minvws/manon/application-base";
