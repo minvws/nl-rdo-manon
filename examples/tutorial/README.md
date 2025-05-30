@@ -2,7 +2,9 @@
 
 ## Introduction
 
-TODO
+...
+
+You can explore the source code of this tutorial on ...
 
 ## Installation
 
@@ -44,8 +46,8 @@ Let's break down what we've defined here:
   us to apply different styles to our components easily. We've provided
   a basic theme called `basic-bold` that we will use in our project.
 
-- `sass`: This is a CSS preprocessor that allows us to write styles in a more
-  maintainable way. It compiles our `.scss` files into `.css` files.
+- `sass`: This is a CSS preprocessor, itt compiles our `.scss` files into
+  `.css` files.
 
 - `scripts.build`: This script compiles our `main.scss` file into a
   `dist/main.css` file, which we will use in our HTML.
@@ -56,9 +58,11 @@ Now, we can install the dependencies by running:
 npm install
 ```
 
+Once the installation is complete, we can start building our project.
+
 ## Create a basic page
 
-### Prerequisites
+In this section, we will create a basic page ...
 
 First create a `index.html` file in the root of your project directory. This
 will be the main HTML file for our page.
@@ -83,10 +87,8 @@ this file we're going to add the individual components that we're going to
 use in our page, and the theme we want to apply.
 
 ```scss
+// Import the Manon framework and its components
 @use "@minvws/manon/application-base";
-@use "@minvws/manon/main";
-@use "@minvws/manon/section";
-@use "@minvws/manon/footer";
 
 // Theme that we're going to use for our page
 @use "@minvws/manon-themes/basic-bold";
@@ -105,12 +107,27 @@ npm run build
 Open the `index.html` file in your browser to see the result. You should see a
 header with the text "Hello, Manon!" styled with the Manon framework.
 
-### Layout
+## Layout
 
-- Main
-- Section
-- Header
-- Footer
+We're going to create a basic layout for our page using the Manon framework.
+We'll start with the header, main content, and footer sections. The Manon framework provides
+
+### Header
+
+First, we need to import the header navigation component in our `main.scss` file:
+
+```scss
+@use "@minvws/manon/application-base";
+
+// Add the following:
+@use "@minvws/manon/navigation";
+@use "@minvws/manon/header-navigation";
+
+@use "@minvws/manon-themes/basic-bold";
+```
+
+We need to add the necessary HTML elements to create a layout for our page.
+Let's update our `index.html` file:
 
 ```html
 <!doctype html>
@@ -122,19 +139,35 @@ header with the text "Hello, Manon!" styled with the Manon framework.
     <link rel="stylesheet" href="dist/main.css" />
   </head>
   <body>
-    <header></header>
-    <main>
-      <section></section>
-    </main>
-    <footer></footer>
+    <!-- Add the following: -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
   </body>
 </html>
 ```
 
-### Content
+### Main
 
-- Heading (H1)
-- Heading (H2)
-- Paragraph
+For the main content, we will need to import the `layout-set`, `main`, and `section`
 
-### Variables
+```scss
+@use "@minvws/manon/application-base";
+@use "@minvws/manon/navigation";
+@use "@minvws/manon/header-navigation";
+
+// Add the following:
+@use "@minvws/manon/layout-set";
+@use "@minvws/manon/main";
+@use "@minvws/manon/section";
+
+@use "@minvws/manon-themes/basic-bold";
+```
+
+### Footer
