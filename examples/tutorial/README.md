@@ -2,8 +2,8 @@
 
 ## Introduction
 
-In this tutorial, we will learn how to use the Manon framework to create a
-basic web page. In this tutorial, we will cover the following topics:
+In this tutorial, we’ll use the Manon framework to build a basic web page.
+We’ll cover the following topics:
 
 - Setting up a Manon project
 - Creating a basic page
@@ -55,11 +55,11 @@ Let's break down what we've defined here:
   us to apply different styles to our components easily. We've provided
   a basic theme called `basic-bold` that we will use in our project.
 
-- `sass`: This will install the Sass command line utility, which we will use to
-  compile our Sass files into CSS. This will be used to compile our `main.scss`
+- `sass`: This will install the `sass` command line utility, which we will use to
+  compile our sass files into CSS. This will be used to compile our `main.scss`
   file into a `css/main.css` file. And this will be called by the `build` script.
 
-- `scripts.build`: This script calls the Sass command line utility to compiles
+- `scripts.build`: This script calls the `sass` command line utility to compile
   our `main.scss` file into a `css/main.css` file, which we will use in our HTML.
 
 Now, we can install the dependencies we defined by running:
@@ -201,29 +201,33 @@ Next, we will update our `index.html` file to include the main content area.
 
     <!-- Add the following: -->
     <main>
-      <article>
-        <section>
-          <h1>Hello, Manon!</h1>
-          <p>
-            Welcome to the Manon tutorial. In this tutorial, we will learn how
-            to use Manon to create a basic web page.
-          </p>
-          <h2>Welcome to the Manon Tutorial</h2>
-          <p>
-            Welcome to the Manon tutorial. In this tutorial, we will learn how
-            to use Manon to create a basic web page.
-          </p>
-          <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ol>
-        </section>
-      </article>
+      <section>
+        <h1>Hello, Manon!</h1>
+        <p>
+          Welcome to the Manon tutorial. In this tutorial, we will learn how to
+          use Manon to create a basic web page.
+        </p>
+        <h2>Welcome to the Manon Tutorial</h2>
+        <p>
+          Welcome to the Manon tutorial. In this tutorial, we will learn how to
+          use Manon to create a basic web page.
+        </p>
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ol>
+      </section>
     </main>
   </body>
 </html>
 ```
+
+Now, we have a basic layout with a header and main content area. The main
+content area should contain a section that includes a heading and
+paragraph. You can add more content to the section as needed.
+
+TODO: Add link to relevant documentation for adding more content
 
 ### Footer
 
@@ -253,7 +257,7 @@ Next, we will update our `index.html` file to include the footer section.
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manon Tutorial</title>
-    <link rel="stylesheet" href="dist/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header>
@@ -277,3 +281,17 @@ Next, we will update our `index.html` file to include the footer section.
   </body>
 </html>
 ```
+
+## Working with components
+
+TODO: perhaps add an explanation on how to customize a component.
+
+## Putting it all together
+
+TODO: add a final section that shows the complete code of the `index.html` and  
+`main.scss` files.
+
+TODO: add final project structure, or show this in the beginning
+
+TODO: prior we're missing some element attributes, or configuration that
+are important for a11y, we should mention it.
