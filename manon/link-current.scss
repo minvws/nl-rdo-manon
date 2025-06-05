@@ -1,0 +1,59 @@
+/*---------------------------------------------------------------*/
+/*----------------------- link-current.scss -----------------------*/
+/*---------------------------------------------------------------*/
+
+@use "mixins/link";
+@use "mixins/heading";
+
+a[aria-current="page"],
+a.current {
+  @include link.full-styles(--link-current, --link);
+
+  &:hover,
+  &.hover {
+    @include link.full-styles(
+      --link-current-hover,
+      --link-current,
+      --link-hover,
+      --link
+    );
+  }
+
+  &:focus,
+  &.focus {
+    @include link.full-styles(
+      --link-current-focus,
+      --link-current,
+      --link-focus,
+      --link
+    );
+  }
+
+  &:active,
+  &.active {
+    @include link.full-styles(
+      --link-current-active,
+      --link-current,
+      --link-active,
+      --link
+    );
+  }
+}
+
+@include heading.all {
+  a[aria-current="page"],
+  a.current {
+    &,
+    &:hover,
+    &.hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      font-family: revert;
+      font-size: revert;
+      font-weight: revert;
+      line-height: revert;
+    }
+  }
+}
