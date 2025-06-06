@@ -110,7 +110,7 @@ will be the main HTML file for our page.
 Second, create a `main.scss` file in the root of your project directory. In
 this file we're going to add the individual components that we're going to use
 in our page, and the theme we want to apply. Throughout the tutorial, we'll be
-adding more components to these files as we build out our page.
+adding more components to these files as we expand our page.
 
 ```scss
 // Import the Manon framework and its components
