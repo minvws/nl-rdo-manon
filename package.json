@@ -9,7 +9,7 @@
     "build": "pnpm run --dir docs build",
     "lint": "pnpm run --dir manon lint:css",
     "format:check": "pnpm run --dir manon format:check",
-    "test": "sass --no-source-map tests/manon"
+    "test": "sass --no-source-map --style=compressed tests/manon/**/*.scss tests/manon/manon.css"
   },
   "pnpm": {
     "overrides": {
