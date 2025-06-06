@@ -13,7 +13,7 @@ We’ll cover the following topics:
 We will do this by incrementally updating our project, following the likely steps
 you would take when building a web page with Manon.
 
-You can explore the final project and its source code ...
+You can explore the final project and its source code [here]()
 
 ## Installation
 
@@ -24,12 +24,19 @@ we're ready to start building our Manon project.
 First, we need to create a new project directory and initialize it with npm.
 
 ```bash
+# Create a new directory for the project
 mkdir manon-tutorial
 cd manon-tutorial
+
+# Initialize the project with npm
 npm init -y
 ```
 
-Let's update our `package.json` to include the necessary dependencies.
+The `npm init -y` command will create a `package.json` file with default
+values. This file will be used to manage our project dependencies and scripts.
+
+Let's update our `package.json` to include the necessary dependencies. For
+now we'll just replace the contents of the `package.json` file with the following:
 
 ```json
 {
@@ -67,6 +74,12 @@ Now, we can install the dependencies we defined by running:
 ```bash
 npm install
 ```
+
+This command will read the `package.json` file and install the necessary
+dependencies into a `node_modules` directory in our project. It will also
+create a `package-lock.json` file that locks the versions of the installed
+dependencies, ensuring that the same versions are used when the project is
+installed in the future.
 
 Once the installation is complete, we can start building our project.
 
@@ -108,13 +121,17 @@ adding more components to these files as we build out our page.
 
 Whenever you want to use additional components, you can import them in this
 `main.scss` file. See the available components that you can use in the
-[Manon documentation](https://manon.minvws.nl/). (TODO: add link to)
+[Manon documentation](https://manon.minvws.nl/).
 
 Now, we can build our styles by running the following command:
 
 ```bash
 npm run build
 ```
+
+This command will execute the `build` script defined in our `package.json`, which
+will compile our `main.scss` file into a `css/main.css` file. This CSS file will
+be linked in our `index.html` file, allowing us to apply the styles to our page.
 
 Open the `index.html` file in your browser to see the result. You should see a
 header with the text "Hello, Manon!" styled with the Manon framework.
@@ -137,8 +154,22 @@ First, we need to import the header navigation component in our `main.scss` file
 @use "@minvws/manon-themes/basic-bold";
 ```
 
-Second we need to add the necessary HTML elements to create a layout for our
-page. Let's update our `index.html` file:
+Second we're going to add the following HTML to our `index.html` file to create a
+header with navigation links:
+
+```html
+<header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+```
+
+Now, our `index.html` file should look like this:
 
 ```html
 <!doctype html>
@@ -150,7 +181,6 @@ page. Let's update our `index.html` file:
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <!-- Add the following: -->
     <header>
       <nav>
         <ul>
@@ -170,20 +200,41 @@ For the main content, we will need to import the `layout-set`, `main`, and
 `section` components into our `main.scss` file. This will allow us to create a
 structured layout for our page.
 
-```scss
-@use "@minvws/manon/application-base";
-@use "@minvws/manon/navigation";
-@use "@minvws/manon/header-navigation";
+Add the following imports to your `main.scss` file:
 
-// Add the following:
+```scss
 @use "@minvws/manon/layout-set";
 @use "@minvws/manon/main";
 @use "@minvws/manon/section";
-
-@use "@minvws/manon-themes/basic-bold";
 ```
 
 Next, we will update our `index.html` file to include the main content area.
+
+Add the following HTML to your `index.html` file, just after the header section:
+
+```html
+<main>
+  <section>
+    <h1>Hello, Manon!</h1>
+    <p>
+      Welcome to the Manon tutorial. In this tutorial, we will learn how to use
+      Manon to create a basic web page.
+    </p>
+    <h2>Welcome to the Manon Tutorial</h2>
+    <p>
+      Welcome to the Manon tutorial. In this tutorial, we will learn how to use
+      Manon to create a basic web page.
+    </p>
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+  </section>
+</main>
+```
+
+Now, our `index.html` file should look like this:
 
 ```html
 <!doctype html>
@@ -198,8 +249,6 @@ Next, we will update our `index.html` file to include the main content area.
     <header>
       <!-- .... -->
     </header>
-
-    <!-- Add the following: -->
     <main>
       <section>
         <h1>Hello, Manon!</h1>
@@ -235,20 +284,30 @@ To add a footer to our page, we will import the footer component into our
 `main.scss` file. This will allow us to create a footer section with
 navigation links.
 
+Add the following import to your `main.scss` file:
+
 ```scss
-@use "@minvws/manon/application-base";
-@use "@minvws/manon/header-navigation";
-@use "@minvws/manon/layout-set";
-@use "@minvws/manon/main";
-@use "@minvws/manon/section";
-
-// Add the following:
 @use "@minvws/manon/footer";
-
-@use "@minvws/manon-themes/basic-bold";
 ```
 
-Next, we will update our `index.html` file to include the footer section.
+Next, we will update our `index.html` file to include the footer section. Add
+the following HTML to your `index.html` file, just before the closing `</body>`
+tag:
+
+```html
+<footer>
+  <nav>
+    <h1>Manon Tutorial</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</footer>
+```
+
+Now, our `index.html` file should look like this:
 
 ```html
 <!doctype html>
@@ -266,8 +325,6 @@ Next, we will update our `index.html` file to include the footer section.
     <main>
       <!-- .... -->
     </main>
-
-    <!-- Add the following: -->
     <footer>
       <nav>
         <h1>Manon Tutorial</h1>
@@ -295,3 +352,5 @@ TODO: add final project structure, or show this in the beginning
 
 TODO: prior we're missing some element attributes, or configuration that
 are important for a11y, we should mention it.
+
+## Next steps
