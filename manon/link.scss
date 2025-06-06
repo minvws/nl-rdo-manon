@@ -11,6 +11,7 @@ a {
   word-wrap: break-word;
   word-break: break-word;
   box-sizing: border-box;
+
   @include link.full-styles(--link);
 }
 

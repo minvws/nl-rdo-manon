@@ -104,7 +104,6 @@
 /// @deprecated
 @mixin link-and-icon-styling($prefix) {
   @warn "DEPRECATED: use link.styles & link.configurable instead.";
-
   @include styling($prefix);
 
   &::before,
@@ -116,7 +115,6 @@
 /// @deprecated
 @mixin link($prefix) {
   @warn "DEPRECATED: use link.styles & link.configurable instead.";
-
   @include styling($prefix);
 
   &::before {
