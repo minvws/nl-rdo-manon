@@ -13,7 +13,8 @@ We’ll cover the following topics:
 We will do this by incrementally updating our project, following the likely steps
 you would take when building a web page with Manon.
 
-You can explore the final project and its source code [here]()
+You can explore the final project and its source code
+[here](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial).
 
 ## Installation
 
@@ -146,12 +147,7 @@ We'll start with the header, main content, and footer sections.
 First, we need to import the header navigation component in our `main.scss` file:
 
 ```scss
-@use "@minvws/manon/application-base";
-
-// Add the following:
 @use "@minvws/manon/header-navigation";
-
-@use "@minvws/manon-themes/basic-bold";
 ```
 
 Second we're going to add the following HTML to our `index.html` file to create a
@@ -196,9 +192,12 @@ Now, our `index.html` file should look like this:
 
 ### Main
 
-For the main content, we will need to import the `layout-set`, `main`, and
-`section` components into our `main.scss` file. This will allow us to create a
-structured layout for our page.
+For the main content, we will need to import the
+[`layout-set`](https://minvws.github.io/nl-rdo-manon/components/section#layout-set),
+`main`, and
+[`section`](https://minvws.github.io/nl-rdo-manon/components/section)
+components into our `main.scss` file. This will allow us to create a structured
+layout for our page.
 
 Add the following imports to your `main.scss` file:
 
@@ -280,9 +279,9 @@ TODO: Add link to relevant documentation for adding more content
 
 ### Footer
 
-To add a footer to our page, we will import the footer component into our
-`main.scss` file. This will allow us to create a footer section with
-navigation links.
+To add a [footer](https://minvws.github.io/nl-rdo-manon/components/footer) to
+our page, we will import the footer component into our `main.scss` file. This
+will allow us to create a footer section with navigation links.
 
 Add the following import to your `main.scss` file:
 
@@ -339,18 +338,23 @@ Now, our `index.html` file should look like this:
 </html>
 ```
 
-## Working with components
+## Forms
 
-TODO: perhaps add an explanation on how to customize a component.
+TODO: perhaps add a section on how to create a form
 
 ## Putting it all together
 
-TODO: add a final section that shows the complete code of the `index.html` and  
-`main.scss` files.
-
-TODO: add final project structure, or show this in the beginning
+Now that we have our basic layout with a header, main content area, and footer,
+we can start adding more components to our page. We can use the Manon framework
+to add various components such as buttons, forms, and more. See the [Manon
+documentation - Components](https://minvws.github.io/nl-rdo-manon/components)
+for a list of available components and how to use them.
 
 TODO: prior we're missing some element attributes, or configuration that
 are important for a11y, we should mention it.
 
 ## Next steps
+
+### Integration
+
+### Theme building
