@@ -45,8 +45,8 @@ now we'll just replace the contents of the `package.json` file with the followin
     "build": "sass --load-path=node_modules main.scss css/main.css"
   },
   "dependencies": {
-    "@minvws/manon": "latest",
-    "@minvws/manon-themes": "latest"
+    "@minvws/manon": ">=17.0.0-rc.0",
+    "@minvws/manon-themes": ">=17.0.0-rc.0"
   },
   "devDependencies": {
     "sass": "^1.89.0"
@@ -82,15 +82,15 @@ create a `package-lock.json` file that locks the versions of the installed
 dependencies, ensuring that the same versions are used when the project is
 installed in the future.
 
-Once the installation is complete, we can start building our project.
+The installation of the dependencies will be complete once the `npm install`
+command is finished. Once the installation is complete, we can start building
+our project.
 
 ## Create a basic page
 
-In this section, we will create a basic page just to get started with, and
-make sure everything is set up correctly.
-
-First create a `index.html` file in the root of your project directory. This
-will be the main HTML file for our page.
+In this section, we will create a basic page just to get started with, and make
+sure everything is set up correctly. First create a `index.html` file in the
+root of your project directory. This will be the main HTML file for our page.
 
 ```html
 <!doctype html>
@@ -144,7 +144,9 @@ We'll start with the header, main content, and footer sections.
 
 ### Header
 
-First, we need to import the header navigation component in our `main.scss` file:
+First, we need to import the header navigation component
+([docs](https://minvws.github.io/nl-rdo-manon/components/header-navigation)) in
+our `main.scss` file. So, add the following import to your `main.scss` file:
 
 ```scss
 @use "@minvws/manon/header-navigation";
@@ -193,11 +195,11 @@ Now, our `index.html` file should look like this:
 ### Main
 
 For the main content, we will need to import the
-[`layout-set`](https://minvws.github.io/nl-rdo-manon/components/section#layout-set),
-`main`, and
-[`section`](https://minvws.github.io/nl-rdo-manon/components/section)
-components into our `main.scss` file. This will allow us to create a structured
-layout for our page.
+`layout-set`([docs](https://minvws.github.io/nl-rdo-manon/components/section#layout-set)),
+`main`, and `section`
+([docs](https://minvws.github.io/nl-rdo-manon/components/section)) components
+into our `main.scss` file. This will allow us to create a structured layout for
+our page.
 
 Add the following imports to your `main.scss` file:
 
@@ -208,8 +210,8 @@ Add the following imports to your `main.scss` file:
 ```
 
 Next, we will update our `index.html` file to include the main content area.
-
-Add the following HTML to your `index.html` file, just after the header section:
+Add the following HTML to your `index.html` file, just after the header
+section:
 
 ```html
 <main>
@@ -337,10 +339,6 @@ Now, our `index.html` file should look like this:
   </body>
 </html>
 ```
-
-## Forms
-
-TODO: perhaps add a section on how to create a form
 
 ## Putting it all together
 
