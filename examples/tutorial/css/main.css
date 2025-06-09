@@ -1,0 +1,856 @@
+/*---------------------------------------------------------------*/
+/*------------------- application-base.scss ---------------------*/
+/*---------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*---------------- application-base/application-base-variables.scss ----------------*/
+/*----------------------------------------------------------------------------------*/
+:root {
+  /* Application background color */
+  --application-base-background-color: #fff;
+  --application-base-text-color: var(--text-set-text-color);
+  --application-base-tint-1-background-color: #f5f5f5;
+  --application-base-tint-1-text-color: #000;
+  --application-base-font-family: var(--text-set-font-family);
+  --application-base-font-size: var(--text-set-font-size);
+  --application-base-font-weight: var(--text-set-font-weight);
+  --application-base-line-height: var(--text-set-line-height);
+  --application-base-text-align: var(--text-set-text-align);
+  --application-base-padding: 1.5rem;
+  --application-base-border-radius: 0;
+  --application-base-gap: 1rem;
+  --application-base-gap-medium: 0.5rem;
+  --application-base-gap-small: 0.25rem;
+  /* Accent color */
+  --application-base-accent-color: var(--branding-color-1-background-color);
+  --application-base-accent-color-text-color: var(
+    --branding-color-1-text-color
+  );
+  /* Accent color hover */
+  --application-base-accent-color-hover: var(--branding-color-2);
+  --application-base-accent-color-hover-text-color: var(
+    --branding-color-2-link-hover-text-color
+  );
+  /* Accent color active */
+  --application-base-accent-color-active: hotpink;
+  --application-base-accent-color-active-text-color: black;
+  /* Accent color focus */
+  --application-base-accent-color-focus: hotpink;
+  --application-base-accent-color-focus-text-color: black;
+  /* Accent color selected */
+  --application-base-accent-color-selected: hotpink;
+  --application-base-accent-color-selected-text-color: black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  /* Set to always fill the page and the footer 		*/
+  /* will never be in the middle of the screen  		*/
+  min-height: 100vh;
+  /* Fallback set to a white because some browsers  	*/
+  /* (e.g: firefox on linux) do not use white as a 	*/
+  /* default color but this is often expected.		*/
+  background-color: var(--application-base-background-color, white);
+  color: var(--application-base-text-color, black);
+  font-family: var(--application-base-font-family, sans-serif);
+  font-size: var(--application-base-font-size, initial);
+  line-height: var(--application-base-line-height, initial);
+  font-weight: var(--application-base-font-weight, initial);
+  text-align: var(--application-base-text-align, initial);
+  /* When the page doesn't have enough content to 	*/
+  /* fill the screen height this will place the 		*/
+  /* footer at the bottom of the screen 				*/
+}
+body > main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Theme: Basic bold */
+/* Variables */
+/* Fonts & icons */
+/* Open sans */
+/* Regular */
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-display: var(--text-body-font-display, swap);
+  src: url("@minvws/manon-themes/basic-bold/fonts/OpenSans/OpenSans-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: italic;
+  font-display: var(--text-body-font-display, swap);
+  src: url("@minvws/manon-themes/basic-bold/fonts/OpenSans/OpenSans-Italic.woff2") format("woff2");
+}
+/* Semi bold */
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-style: normal;
+  font-display: var(--text-body-font-display, swap);
+  src: url("@minvws/manon-themes/basic-bold/fonts/OpenSans/OpenSans-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-style: italic;
+  font-display: var(--text-body-font-display, swap);
+  src: url("@minvws/manon-themes/basic-bold/fonts/OpenSans/OpenSans-SemiBoldItalic.woff2") format("woff2");
+}
+/* Icon font */
+@font-face {
+  font-family: "manon-basic-bold-icons";
+  font-weight: normal;
+  font-style: normal;
+  font-display: var(--text-icon-font-display, block);
+  src: url("@minvws/manon-themes/basic-bold/fonts/icons/manon-basic-bold-icons-0.3.eot");
+  src: url("@minvws/manon-themes/basic-bold/fonts/icons/manon-basic-bold-icons-0.3.woff") format("woff"), url("@minvws/manon-themes/basic-bold/fonts/icons/manon-basic-bold-icons-0.3.ttf") format("truetype"), url("@minvws/manon-themes/basic-bold/fonts/icons/manon-basic-bold-icons-0.3.svg#manon-basic-bold-icons") format("svg");
+}
+.icon.icon-descending::before,
+.icon-only.icon-descending::before {
+  content: "\e901";
+}
+.icon.icon-ascending::before,
+.icon-only.icon-ascending::before {
+  content: "\e902";
+}
+.icon.icon-sort::before,
+.icon-only.icon-sort::before {
+  content: "\e903";
+}
+
+/* Styling on the highest level */
+/* Application base styling - Variables */
+/* This file contains styling on high level elements such as the body */
+:root {
+  --application-base-text-color: #1a1a1a;
+  --application-font-size: 1rem;
+  /* Accent color */
+  --application-base-accent-color: #c4d8c4;
+  --application-base-accent-color-text-color: #000;
+  /* Accent color hover */
+  --application-base-accent-color-hover: var(--application-base-accent-color);
+  --application-base-accent-color-hover-text-color: var(
+    --application-base-accent-color-text-color
+  );
+  /* Accent color active */
+  --application-base-accent-color-active: var(--application-base-accent-color);
+  --application-base-accent-color-active-text-color: black;
+  /* Accent color focus */
+  --application-base-accent-color-focus: var(--application-base-accent-color);
+  --application-base-accent-color-focus-text-color: black;
+  /* Accent color selected */
+  --application-base-accent-color-selected: var(
+    --application-base-accent-color
+  );
+  --application-base-accent-color-selected-text-color: black;
+}
+
+/* Fundamentals */
+:root {
+  /* Color sets */
+  /* Spot large */
+  /* Main colors */
+  /* Gold */
+  --branding-color-1: #E1C282;
+  /* Pink */
+  --branding-color-2: #F7D0D3;
+  /* Accent colors */
+  /* Dark navy */
+  --branding-color-accent-1: #111416;
+  /* Soft blue */
+  --branding-color-accent-2: #5B76A9;
+  /* Soft green */
+  --branding-color-accent-3: #6FB07D;
+  /* Soft red */
+  --branding-color-accent-4: #B95D5D;
+  /* Soft gold */
+  --branding-color-accent-5: #FFF4DD;
+  /* Branding color combinations. 
+  e.g if a branding color is used as a background-color. What should the text
+  and link colors be.
+
+  /* Branding color 1 */
+  --branding-color-1-background-color: var(--branding-color-1);
+  --branding-color-1-text-color: black;
+  --branding-color-1-link-text-color: var(--branding-color-1-text-color);
+  --branding-color-1-link-active-text-color: var(--branding-color-1-text-color);
+  --branding-color-1-link-visited-text-color: var(--branding-color-1-text-color);
+  --branding-color-1-link-hover-text-color: var(--branding-color-1-text-color);
+  --branding-color-1-link-visited-hover-text-color: var(--branding-color-1-text-color);
+  /* Branding color 2 */
+  --branding-color-2-background-color: var(--branding-color-2);
+  --branding-color-2-text-color: black;
+  --branding-color-2-link-text-color: var(--branding-color-2-text-color);
+  --branding-color-2-link-active-text-color: var(--branding-color-2-text-color);
+  --branding-color-2-link-visited-text-color: var(--branding-color-2-text-color);
+  --branding-color-2-link-hover-text-color: var(--branding-color-2-text-color);
+  --branding-color-2-link-visited-hover-text-color: var(--branding-color-2-text-color);
+  /* Accent color 1 */
+  --branding-color-accent-1-background-color: var(--branding-color-accent-1);
+  --branding-color-accent-1-text-color: white;
+  --branding-color-accent-1-link-text-color: var(--branding-color-accent-1-text-color);
+  --branding-color-accent-1-link-active-text-color: var(--branding-color-accent-1-text-color);
+  --branding-color-accent-1-link-visited-text-color: var(--branding-color-accent-1-text-color);
+  --branding-color-accent-1-link-hover-text-color: var(--branding-color-accent-1-text-color);
+  --branding-color-accent-1-link-visited-hover-text-color: var(--branding-color-accent-1-text-color);
+  /* Accent color 2 */
+  --branding-color-accent-2-background-color: var(--branding-color-accent-2);
+  --branding-color-accent-2-text-color: white;
+  --branding-color-accent-2-link-text-color: var(--branding-color-accent-2-text-color);
+  --branding-color-accent-2-link-active-text-color: var(--branding-color-accent-2-text-color);
+  --branding-color-accent-2-link-visited-text-color: var(--branding-color-accent-2-text-color);
+  --branding-color-accent-2-link-hover-text-color: var(--branding-color-accent-2-text-color);
+  --branding-color-accent-2-link-visited-hover-text-color: var(--branding-color-accent-2-text-color);
+  /* Accent color 3 */
+  --branding-color-accent-3-background-color: var(--branding-color-accent-3);
+  --branding-color-accent-3-text-color: black;
+  --branding-color-accent-3-link-text-color: var(--branding-color-accent-3-text-color);
+  --branding-color-accent-3-link-active-text-color: var(--branding-color-accent-3-text-color);
+  --branding-color-accent-3-link-visited-text-color: var(--branding-color-accent-3-text-color);
+  --branding-color-accent-3-link-hover-text-color: var(--branding-color-accent-3-text-color);
+  --branding-color-accent-3-link-visited-hover-text-color: var(--branding-color-accent-3-text-color);
+  /* Accent color 4 */
+  --branding-color-accent-4-background-color: var(--branding-color-accent-4);
+  --branding-color-accent-4-text-color: black;
+  --branding-color-accent-4-link-text-color: var(--branding-color-accent-4-text-color);
+  --branding-color-accent-4-link-active-text-color: var(--branding-color-accent-4-text-color);
+  --branding-color-accent-4-link-visited-text-color: var(--branding-color-accent-4-text-color);
+  --branding-color-accent-4-link-hover-text-color: var(--branding-color-accent-4-text-color);
+  --branding-color-accent-4-link-visited-hover-text-color: var(--branding-color-accent-4-text-color);
+  /* Accent color 5 */
+  --branding-color-accent-5-background-color: var(--branding-color-accent-5);
+  --branding-color-accent-5-text-color: black;
+  --branding-color-accent-5-link-text-color: var(--branding-color-accent-5-text-color);
+  --branding-color-accent-5-link-active-text-color: var(--branding-color-accent-5-text-color);
+  --branding-color-accent-5-link-visited-text-color: var(--branding-color-accent-5-text-color);
+  --branding-color-accent-5-link-hover-text-color: var(--branding-color-accent-5-text-color);
+  --branding-color-accent-5-link-visited-hover-text-color: var(--branding-color-accent-5-text-color);
+}
+
+/* color set */
+/* Theme colors */
+:root {
+  --basic-bold-accent-color-1: #c4d8c4; /* Green */
+  --basic-bold-accent-color-2: #ffea9e; /* Yellow */
+}
+
+/* body-text-set - variables */
+:root {
+  /* Available variables to use within all text types */
+  --text-set-font-family: "Open Sans", sans-serif;
+  --text-set-font-size: 1rem;
+  --text-set-font-weight: normal;
+  --text-set-strong-font-weight: 600;
+  --text-set-line-height: 1.75;
+  --text-set-text-color: #000;
+  --text-set-text-align: left;
+  /* Body text small */
+  --body-text-small-font-size: 0.8rem;
+  --body-text-small-font-weight: var(--text-set-font-weight);
+  --body-text-small-line-height: var(--text-set-line-height);
+  --body-text-small-color: #696969;
+  --body-text-small-text-align: var(--text-set-text-align);
+  /* Strong */
+  --body-text-small-strong-font-weight: var(--text-set-strong-font-weight);
+  /* Body text medium */
+  --body-text-medium-font-size: var(--text-set-font-size);
+  --body-text-medium-font-weight: var(--text-set-font-weight);
+  --body-text-medium-line-height: var(--text-set-line-height);
+  --body-text-medium-color: var(--text-set-text-color);
+  --body-text-medium-text-align: var(--text-set-text-align);
+  /* Strong */
+  --body-text-medium-strong-font-weight: var(--text-set-strong-font-weight);
+  /* Body text large */
+  --body-text-large-font-size: 1.5rem;
+  --body-text-large-font-weight: var(--text-set-font-weight);
+  --body-text-large-line-height: var(--text-set-line-height);
+  --body-text-large-color: var(--text-set-text-color);
+  --body-text-large-text-align: var(--text-set-text-align);
+  /* Strong */
+  --body-text-large-strong-font-weight: var(--text-set-strong-font-weight);
+}
+
+/* Heading set basic - Variables */
+:root {
+  --headings-base-set-font-family: "Open Sans", sans-serif;
+}
+
+/* Theme spacing */
+:root {
+  --spacing-xxxl: 5rem;
+  --spacing-xxl: 4rem;
+  --spacing-xl: 3rem;
+  --spacing-l: 2rem;
+  --spacing-m: 1.5rem;
+  --spacing-s: 1rem;
+  --spacing-xs: 0.5rem;
+  --spacing-xxs: 0.25rem;
+}
+
+.spacing-xxxl {
+  gap: var(--spacing-xxxl);
+}
+
+.spacing-xxl {
+  gap: var(--spacing-xxl);
+}
+
+.spacing-xl {
+  gap: var(--spacing-xl);
+}
+
+.spacing-l {
+  gap: var(--spacing-l);
+}
+
+.spacing-m {
+  gap: var(--spacing-m);
+}
+
+.spacing-s {
+  gap: var(--spacing-s);
+}
+
+.spacing-xs {
+  gap: var(--spacing-xs);
+}
+
+.spacing-xxs {
+  gap: var(--spacing-xxs);
+}
+
+/* Layout */
+/* Article */
+:root {
+  --article-content-wrapper-padding-top: 0;
+  --article-content-wrapper-gap: var(--spacing-xl);
+  /* Sections within an article */
+  --article-section-gap: var(--spacing-l);
+}
+
+/* Main */
+:root {
+  --main-padding-top: 0;
+  --main-padding-bottom: 0;
+  --main-flex-direction: column;
+  --sidemenu-main-padding-top: var(--main-padding-top);
+  --sidemenu-main-padding-bottom: var(--main-padding-bottom);
+}
+
+/* Section */
+:root {
+  --section-content-wrapper-padding-top: var(--spacing-xl);
+  --section-content-wrapper-padding-bottom: var(--spacing-xl);
+  --section-content-wrapper-gap: var(--spacing-s);
+}
+
+/* Components */
+/* Breadcrumb bar */
+:root {
+  --breadcrumb-bar-background-color: transparent;
+  --breadcrumb-bar-padding-top: 1rem;
+  --breadcrumb-bar-padding-bottom: 1rem;
+  --breadcrumb-bar-content-wrapper-max-width: 100%;
+  --breadcrumb-bar-padding-top: 0;
+  --breadcrumb-bar-padding-bottom: 0;
+  /* Links */
+  --breadcrumb-bar-link-text-color: var(--application-base-text-color);
+  --breadcrumb-bar-link-hover-text-color: var(--application-base-text-color);
+  --breadcrumb-bar-link-visited-text-color: var(--application-base-text-color);
+}
+
+/* Icon */
+:root {
+  --icon-font-family: "manon-basic-bold-icons";
+}
+
+/* Logo */
+:root {
+  --logo-width: auto;
+  --logo-height: auto;
+  --logo-font-size: var(--application-base-font-size);
+  --logo-white-space: nowrap;
+  --logo-font-weight: bold;
+  --logo-align-items: center;
+  /* Img */
+  --logo-img-background-color: #1a1a1a;
+  --logo-img-width: 2rem;
+  --logo-img-height: 2rem;
+  --logo-img-border-radius: 50%;
+}
+
+/* Pagination */
+:root {
+  --pagination-border-width: 0;
+  --pagination-link-active-background-color: var(--basic-bold-accent-color-1);
+  /* Hover */
+  --pagination-link-hover-background-color: var(--basic-bold-accent-color-1);
+}
+
+/* Side menu */
+:root {
+  /* Nav */
+  --sidemenu-nav-border-width: 0;
+  --sidemenu-nav-padding-top: 0;
+  /* List */
+  --sidemenu-ul-padding: 0;
+  /* List item */
+  --sidemenu-list-item-text-color: var(--application-base-text-color);
+  --sidemenu-list-item-list-style: none;
+}
+
+/* Tile styling */
+:root {
+  --tile-border-radius: 0.5rem;
+}
+
+/* Button base styling */
+:root {
+  --button-base-border-radius: 5rem;
+  --button-base-background-color: #c4d8c4;
+  /* Hover */
+  --button-base-hover-background-color: #d5eed5;
+  --button-base-hover-border-color: var(--button-base-hover-background-color);
+}
+
+/* Call to action button styling */
+:root {
+  --button-cta-background-color: #ffea9e;
+  --button-cta-text-color: #1a1a1a;
+}
+
+/* Form input styling */
+:root {
+  --form-input-border-width: 1px;
+  --form-input-border-style: solid;
+  --form-input-border-color: #000;
+  --form-input-border-radius: 0.25rem;
+}
+
+/* Footer styling */
+:root {
+  --footer-background-color: #1a1a1a;
+  --footer-text-color: #fff;
+  --footer-navigation-list-item-list-style: none;
+}
+
+/* Footer navigation link styling */
+:root {
+  --footer-navigation-link-text-color: #fff;
+  --footer-navigation-link-hover-text-color: var(
+    --footer-navigation-link-text-color
+  );
+  --footer-navigation-link-focus-text-color: var(
+    --footer-navigation-link-text-color
+  );
+  /* Visited */
+  --footer-navigation-link-visited-text-color: var(
+    --footer-navigation-link-text-color
+  );
+  --footer-navigation-link-visited-hover-text-color: var(
+    --footer-navigation-link-text-color
+  );
+}
+
+/* Skip to content styling */
+/* Header */
+/* Header */
+:root {
+  --header-content-wrapper-gap: 0;
+  --header-border-width: 0;
+  --header-border-color: transparent;
+  --header-padding-top: 0;
+  --header-padding-right: 0;
+  --header-padding-bottom: 0;
+  --header-padding-left: 0;
+}
+
+/* Header content wrapper */
+:root {
+  --header-content-wrapper-align-items: stretch;
+  --header-content-wrapper-padding-right: 0;
+  --header-content-wrapper-padding-left: 0;
+  --header-content-wrapper-flex-direction: column;
+}
+
+/* Header navigation */
+:root {
+  --header-navigation-padding-top: 0.5rem;
+  --header-navigation-padding-right: var(--page-whitespace-right);
+  --header-navigation-padding-bottom: 0.5rem;
+  --header-navigation-padding-left: var(--page-whitespace-right);
+  --header-navigation-border-width: 0 0 1px 0;
+  --header-navigation-border-style: solid;
+  --header-navigation-border-color: #ccc;
+  /* Header navigation */
+  --header-navigation-background-color: #fff;
+  --header-navigation-text-color: var(--text-set-text-color);
+  --header-navigation-max-width: 100%;
+  --header-navigation-align-items: stretch;
+  --header-navigation-justify-content: space-between;
+  /* List */
+  --header-navigation-list-align-content: stretch;
+  --header-navigation-list-width: auto;
+  /* Collapsed icon */
+  --navigation-collapsible-menu-icon-font-size: 2rem;
+}
+
+/* Header navigation content wrapper */
+:root {
+  --header-navigation-content-wrapper-gap: 0;
+  --header-navigation-content-wrapper-max-width: 100%;
+  --header-navigation-content-wrapper-justify-content: flex-end;
+}
+
+/* Header navigation link */
+:root {
+  --header-navigation-link-border-width: 4px 0 0 0;
+  --header-navigation-link-border-color: transparent;
+  --header-navigation-link-min-height: unset;
+  --header-navigation-link-font-size: var(--body-text-medium-font-size);
+  /* Link styling */
+  --header-navigation-link-text-color: var(--application-base-text-color);
+  --header-navigation-link-visited-text-color: var(
+    --header-navigation-link-text-color
+  );
+  /* Hover */
+  --header-navigation-link-hover-border-color: #ede1c7;
+  --header-navigation-link-hover-text-color: var(
+    --header-navigation-link-text-color
+  );
+  /* Active link */
+  --header-navigation-link-active-border-color: var(--branding-color-1);
+  --header-navigation-link-active-text-color: var(
+    --header-navigation-link-hover-text-color
+  );
+  --header-navigation-link-visited-active-text-color: var(
+    --header-navigation-link-hover-text-color
+  );
+}
+
+/*---------------------------------------------------------------*/
+/*----------------- header-navigation.scss ----------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*-------------- header-navigation-variables.scss ---------------*/
+/*---------------------------------------------------------------*/
+:root {
+  /* header-Navigation layout */
+  --header-navigation-gap: var(--content-gap, 2rem);
+  --header-navigation-justify-content: var(
+    --content-justify-content,
+    flex-start
+  );
+  --header-navigation-align-items: center;
+  --header-navigation-min-height: 3rem;
+  --header-navigation-width: 100%;
+  --header-navigation-max-width: var(--content-max-width, 100%);
+  --header-navigation-margin: 0;
+  --header-navigation-padding-top: 0;
+  --header-navigation-padding-right: var(--page-whitespace-right);
+  --header-navigation-padding-bottom: 0;
+  --header-navigation-padding-left: var(--page-whitespace-left);
+  --header-navigation-border-width: 0;
+  --header-navigation-border-style: solid;
+  --header-navigation-border-color: transparent;
+  --header-navigation-border-radius: 0;
+  --header-navigation-position: relative;
+  --header-navigation-white-space: nowrap;
+  --header-navigation-background-color: var(
+    --application-base-accent-color,
+    #fff
+  );
+  --header-navigation-text-color: var(
+    --application-base-accent-color-text-color
+  );
+  /* List */
+  --header-navigation-list-gap: 1rem;
+  --header-navigation-list-justify-content: var(
+    --header-navigation-justify-content
+  );
+  --header-navigation-list-align-items: var(--header-navigation-align-items);
+  --header-navigation-list-text-color: var(
+    --header-navigation-text-color,
+    var(--application-base-accent-color-text-color)
+  );
+  --header-navigation-list-width: 100%;
+  /* List item */
+  --header-navigation-list-item-background-color: transparent;
+  --header-navigation-list-item-text-color: var(
+    --header-navigation-list-text-color,
+    var(--application-base-accent-color-text-color)
+  );
+  --header-navigation-list-item-justify-content: stretch;
+  --header-navigation-list-item-align-items: stretch;
+}
+
+body > header,
+.page-header {
+  width: 100%;
+  box-sizing: border-box;
+  /* Grouped content */
+}
+body > header div,
+.page-header div {
+  display: flex;
+  flex-direction: row;
+}
+body > header div button,
+.page-header div button {
+  align-self: center;
+}
+body > header nav,
+.page-header nav {
+  display: flex;
+  gap: var(--header-navigation-gap);
+  flex-direction: row;
+  justify-content: var(--header-navigation-justify-content);
+  align-items: var(--header-navigation-align-items);
+  width: var(--header-navigation-width);
+  margin: var(--header-navigation-margin);
+  box-sizing: border-box;
+  background-color: var(--header-navigation-background-color);
+  padding-top: var(--header-navigation-padding-top);
+  padding-right: var(--header-navigation-padding-right);
+  padding-bottom: var(--header-navigation-padding-bottom);
+  padding-left: var(--header-navigation-padding-left);
+  max-width: var(--header-navigation-max-width);
+  border-width: var(--header-navigation-border-width);
+  border-style: var(--header-navigation-border-style);
+  border-color: var(--header-navigation-border-color);
+  border-radius: var(--header-navigation-border-radius);
+  min-height: var(--header-navigation-min-height);
+  position: var(--header-navigation-position);
+  white-space: var(--header-navigation-white-space);
+}
+body > header nav ul,
+body > header nav ol,
+.page-header nav ul,
+.page-header nav ol {
+  display: flex;
+  gap: var(--header-navigation-list-gap);
+  justify-content: var(--header-navigation-list-justify-content);
+  align-items: var(--header-navigation-list-align-items);
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  color: var(--header-navigation-list-text-color);
+  width: var(--header-navigation-list-width);
+  margin: 0;
+}
+body > header nav ul li,
+body > header nav ol li,
+.page-header nav ul li,
+.page-header nav ol li {
+  display: flex;
+  justify-content: var(--header-navigation-list-item-justify-content);
+  align-items: var(--header-navigation-list-item-align-items);
+  color: var(--header-navigation-list-item-text-color);
+  background-color: var(--header-navigation-list-item-background-color);
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+body > header nav ul li::before,
+body > header nav ol li::before,
+.page-header nav ul li::before,
+.page-header nav ol li::before {
+  display: none;
+  /* Preventing default nav before to show up */
+}
+
+/*--------------------------------------------------------------------------*/
+/*-------------------------- layout-set.scss -------------------------------*/
+/*--------------------------------------------------------------------------*/
+/* Set to share layout values over multiple components. 
+	Such as main, section, articles and divs. 								*/
+:root {
+  /* Page */
+  --page-whitespace-top: 4rem;
+  --page-whitespace-right: 2%;
+  --page-whitespace-bottom: 4rem;
+  --page-whitespace-left: 2%;
+  /* Content */
+  --content-flex-direction: column;
+  --content-justify-content: flex-start;
+  --content-align-items: flex-start;
+  --content-gap: 2rem;
+  --content-padding-top: 2rem;
+  --content-padding-right: 0;
+  --content-padding-bottom: 2rem;
+  --content-padding-left: 0;
+  --content-max-width: 80rem;
+}
+
+/*---------------------------------------------------------------*/
+/*------------------------- main.scss ---------------------------*/
+/*---------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*-------------------------- main-variables.scss -------------------------*/
+/*------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*-------------------------- mixins/layout.scss -----------------------*/
+/*---------------------------------------------------------------------*/
+:root {
+  --main-flex-direction: var(--content-flex-direction);
+  --main-justify-content: var(--content-justify-content);
+  --main-align-items: var(--content-align-items);
+  --main-gap: 0;
+  --main-padding-top: 0;
+  --main-padding-right: var(--page-whitespace-right);
+  --main-padding-bottom: 0;
+  --main-padding-left: var(--page-whitespace-left);
+  --main-max-width: 100%;
+  --main-align-items: stretch;
+  --main-padding-right: 0;
+  --main-padding-left: 0;
+}
+
+body > main {
+  display: flex;
+  flex-direction: var(--main-flex-direction);
+  justify-content: var(--main-justify-content);
+  align-items: var(--main-align-items);
+  gap: var(--main-gap);
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: var(--main-padding-top);
+  padding-right: var(--main-padding-right);
+  padding-bottom: var(--main-padding-bottom);
+  padding-left: var(--main-padding-left);
+  max-width: var(--main-max-width);
+}
+
+/*---------------------------------------------------------------*/
+/*------------------------- section.scss ------------------------*/
+/*---------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*-------------------------- section-variables.scss ----------------------*/
+/*------------------------------------------------------------------------*/
+:root {
+  /* Layout */
+  --section-flex-direction: var(--content-flex-direction);
+  --section-justify-content: var(--content-justify-content);
+  --section-align-items: var(--content-align-items);
+  --section-gap: 0;
+  --section-padding-top: 0;
+  --section-padding-right: var(--page-whitespace-right);
+  --section-padding-bottom: 0;
+  --section-padding-left: var(--page-whitespace-left);
+  --section-max-width: 100%;
+}
+
+main section {
+  display: flex;
+  flex-direction: var(--section-flex-direction);
+  justify-content: var(--section-justify-content);
+  align-items: var(--section-align-items);
+  gap: var(--section-gap);
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: var(--section-padding-top);
+  padding-right: var(--section-padding-right);
+  padding-bottom: var(--section-padding-bottom);
+  padding-left: var(--section-padding-left);
+  max-width: var(--section-max-width);
+}
+
+/*---------------------------------------------------------------*/
+/*----------------------- footer.scss ---------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*------------------- footer-variables.scss ---------------------*/
+/*---------------------------------------------------------------*/
+:root {
+  --footer-flex-direction: column;
+  --footer-gap: var(--application-base-gap-medium);
+  --footer-justify-content: center;
+  --footer-align-items: flex-start;
+  --footer-flex-wrap: wrap;
+  --footer-min-height: 10rem;
+  --footer-background-color: var(--branding-color-1-background-color);
+  --footer-text-color: var(--branding-color-1-text-color);
+  --footer-padding-top: var(--content-padding-top);
+  --footer-padding-right: 5%;
+  --footer-padding-bottom: var(--content-padding-bottom);
+  --footer-padding-left: 5%;
+  --footer-max-width: 100%;
+  /* Nav */
+  --footer-navigation-list-padding: 0;
+  --footer-navigation-list-item-list-style: var(
+    --navigation-list-item-list-style,
+    initial
+  );
+}
+
+body > footer,
+.page-footer {
+  display: flex;
+  flex-direction: var(--footer-flex-direction);
+  gap: var(--footer-gap);
+  justify-content: var(--footer-justify-content);
+  align-items: var(--footer-align-items);
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  flex-wrap: var(--footer-flex-wrap);
+  min-height: var(--footer-min-height);
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
+  padding-top: var(--footer-padding-top);
+  padding-right: var(--footer-padding-right);
+  padding-bottom: var(--footer-padding-bottom);
+  padding-left: var(--footer-padding-left);
+  max-width: var(--footer-max-width);
+}
+body > footer h1,
+body > footer h2,
+body > footer h3,
+body > footer h4,
+body > footer h5,
+body > footer h6,
+body > footer p,
+body > footer span,
+body > footer li,
+.page-footer h1,
+.page-footer h2,
+.page-footer h3,
+.page-footer h4,
+.page-footer h5,
+.page-footer h6,
+.page-footer p,
+.page-footer span,
+.page-footer li {
+  color: var(--footer-text-color);
+}
+body > footer nav ul,
+body > footer nav ol,
+.page-footer nav ul,
+.page-footer nav ol {
+  background-color: transparent;
+  padding: var(--footer-navigation-list-padding);
+}
+body > footer nav ul li,
+body > footer nav ol li,
+.page-footer nav ul li,
+.page-footer nav ol li {
+  list-style: var(--footer-navigation-list-item-list-style);
+}
+body > footer nav ul li::before,
+body > footer nav ol li::before,
+.page-footer nav ul li::before,
+.page-footer nav ol li::before {
+  /* Preventing default nav before to show up */
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */

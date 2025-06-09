@@ -45,8 +45,8 @@ now we'll just replace the contents of the `package.json` file with the followin
     "build": "sass --load-path=node_modules main.scss css/main.css"
   },
   "dependencies": {
-    "@minvws/manon": ">=17.0.0-rc.0",
-    "@minvws/manon-themes": ">=17.0.0-rc.0"
+    "@minvws/manon": "^16.3.0-beta.2",
+    "@minvws/manon-themes": "^16.3.0-beta.2"
   },
   "devDependencies": {
     "sass": "^1.89.0"
@@ -217,19 +217,17 @@ section:
 <main>
   <section>
     <h1>Hello, Manon!</h1>
-    <p>
-      Welcome to the Manon tutorial. In this tutorial, we will learn how to use
-      Manon to create a basic web page.
-    </p>
     <h2>Welcome to the Manon Tutorial</h2>
     <p>
       Welcome to the Manon tutorial. In this tutorial, we will learn how to use
       Manon to create a basic web page.
     </p>
+    <p>We’ll cover the following topics:</p>
     <ol>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
+      <li>Setting up a Manon project</li>
+      <li>Creating a basic page</li>
+      <li>Creating a layout with header, main content, and footer</li>
+      <li>Adding components to the page</li>
     </ol>
   </section>
 </main>
@@ -253,19 +251,17 @@ Now, our `index.html` file should look like this:
     <main>
       <section>
         <h1>Hello, Manon!</h1>
-        <p>
-          Welcome to the Manon tutorial. In this tutorial, we will learn how to
-          use Manon to create a basic web page.
-        </p>
         <h2>Welcome to the Manon Tutorial</h2>
         <p>
           Welcome to the Manon tutorial. In this tutorial, we will learn how to
           use Manon to create a basic web page.
         </p>
+        <p>We’ll cover the following topics:</p>
         <ol>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+          <li>Setting up a Manon project</li>
+          <li>Creating a basic page</li>
+          <li>Creating a layout with header, main content, and footer</li>
+          <li>Adding components to the page</li>
         </ol>
       </section>
     </main>
@@ -276,8 +272,6 @@ Now, our `index.html` file should look like this:
 Now, we have a basic layout with a header and main content area. The main
 content area should contain a section that includes a heading and
 paragraph. You can add more content to the section as needed.
-
-TODO: Add link to relevant documentation for adding more content
 
 ### Footer
 
@@ -347,12 +341,3 @@ we can start adding more components to our page. We can use the Manon framework
 to add various components such as buttons, forms, and more. See the [Manon
 documentation - Components](https://minvws.github.io/nl-rdo-manon/components)
 for a list of available components and how to use them.
-
-TODO: prior we're missing some element attributes, or configuration that
-are important for a11y, we should mention it.
-
-## Next steps
-
-### Integration
-
-### Theme building
