@@ -1,0 +1,59 @@
+@use "true" as *;
+@use "../../mixins/configurable";
+
+@include describe("prefix") {
+  @include it("appends property to prefixes") {
+    @include assert-equal(
+      configurable.prefix(color, (--primary --secondary)),
+      (--primary-color --secondary-color)
+    );
+  }
+  @include it("handles optional fallback value") {
+    @include assert-equal(
+      configurable.prefix(color, (--primary --secondary), revert),
+      (--primary-color --secondary-color revert)
+    );
+  }
+}
+
+@include describe("property") {
+  @include it("creates var() stack with default revert fallback") {
+    @include assert-equal(
+      configurable.property(--primary-color),
+      var(--_primary-color, var(--primary-color, revert))
+    );
+  }
+
+  @include it("creates var() stack with custom fallback") {
+    @include assert-equal(
+      configurable.property(--primary-color, black),
+      var(--_primary-color, var(--primary-color, black))
+    );
+  }
+  @include it("creates var() stack with multiple properties") {
+    @include assert-equal(
+      configurable.property(--primary-color, --secondary-color, black),
+      var(
+        --_primary-color,
+        var(
+          --_secondary-color,
+          var(--primary-color, var(--secondary-color, black))
+        )
+      )
+    );
+  }
+}
+
+@include describe("context") {
+  @include it("compiles") {
+    @include assert {
+      @include output {
+        @include configurable.context((color, background), --base, --component);
+      }
+      @include expect {
+        --_base-color: var(--component-color);
+        --_base-background: var(--component-background);
+      }
+    }
+  }
+}

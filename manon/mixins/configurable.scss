@@ -7,10 +7,12 @@
   $left: "";
   $right: "";
   $end: false;
+
   @each $value in $values {
     @if $value == "" {
       @error "Properties cannot be empty.";
     }
+
     @if string.index("#{$value}", "--") == 1 {
       $left: if($left == "", "var(#{$value}", "#{$left}, var(#{$value}");
       $right: $right + ")";
@@ -20,19 +22,21 @@
       $left: $left + ", " + $value;
     }
   }
+
   @return string.unquote($left + $right);
 }
 
 /// Test if string starts with `--`.
-@function -isCustomProperty($value) {
+@function -is-custom-property($value) {
   @return string.index("#{$value}", "--") == 1;
 }
 
 /// Prefix a custom property with an underscore, e.g. `--yay` to `--_yay`.
 @function -private($property) {
-  @if not -isCustomProperty($property) {
+  @if not -is-custom-property($property) {
     @error "Not a custom property: #{$property}.";
   }
+
   @return string.unquote("--_" + string.slice($property, 3));
 }
 
@@ -46,18 +50,22 @@
 ///   /* $stack: (--widget-hover-color, --widget-color, black); */
 @function prefix($property, $stack, $fallback: null) {
   $result: ();
+
   @each $prefix in $stack {
-    @if not -isCustomProperty($prefix) {
+    @if not -is-custom-property($prefix) {
       @error "Invalid prefix: #{$prefix}.";
     }
+
     $result: list.append($result, string.unquote($prefix + "-" + $property));
   }
+
   @return if($fallback, list.append($result, $fallback), $result);
 }
 
 /// Flatten a potentially nested arglist into a single flat list.
 @function -flatten($list...) {
   $flat: ();
+
   @each $item in $list {
     $type: meta.type-of($item);
     $flat: if(
@@ -66,6 +74,7 @@
       list.append($flat, $item)
     );
   }
+
   @return $flat;
 }
 
@@ -101,23 +110,28 @@
   @if list.length($properties) < 1 {
     @error "Properties list cannot be empty.";
   }
+
   $properties: -flatten($properties);
   $targets: ();
   $stack: ();
   $fallback: null;
+
   @each $property in $properties {
     @if $fallback {
       @error "Fallback property must be last.";
     }
-    @if -isCustomProperty($property) {
+
+    @if -is-custom-property($property) {
       $targets: list.append($targets, -private($property));
       $stack: list.append($stack, $property);
     } @else {
       $fallback: $property;
     }
   }
+
   $stack: list.join($targets, $stack);
   $stack: list.append($stack, if($fallback, $fallback, revert));
+
   @return -vars($stack...);
 }
 
@@ -140,26 +154,32 @@
 ///   }
 @mixin context($properties, $prefixes...) {
   $length: list.length($prefixes);
+
   @if $length < 2 {
     @error "Prefixes list should be at least 2 items long.";
   }
-  $basePrefix: list.nth($prefixes, 1);
+
+  $base-prefix: list.nth($prefixes, 1);
   $stack: ();
+
   @for $i from 1 through $length {
     $value: list.nth($prefixes, $i);
+
     @if $value == "" {
       @error "Prefixes cannot be empty.";
     }
+
     @if list.index($stack, $value) {
       @error "Duplicate prefix: #{$value}.";
     }
+
     @if $i != 1 {
       $stack: list.append($stack, $value);
     }
   }
 
   @each $property in $properties {
-    $target: string.unquote(-private(#{$basePrefix}-#{$property}));
+    $target: string.unquote(-private(#{$base-prefix}-#{$property}));
     $prefixed: prefix($property, $stack);
     #{$target}: -vars($prefixed...);
   }
