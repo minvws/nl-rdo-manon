@@ -66,6 +66,13 @@
         <h2>Voorbeelden</h2>
 
         <h4>Visueel voorbeeld</h4>
+        <div class="explanation" role="group" aria-label="Toelichting">
+            <span>Toelichting:</span>
+            <p>De <strong>"Ga direct naar inhoud"-knop</strong> is standaard verborgen voor visuele gebruikers,
+            maar wordt zichtbaar wanneer deze focus krijgt via toetsenbordnavigatie.
+            Dit zorgt ervoor dat de knop niet de visuele opmaak verstoort, maar wel beschikbaar blijft voor gebruikers die er baat bij hebben.
+            Gebruik de <strong>Tab-toets</strong> om de knop te activeren en zichtbaar te maken in het onderstaande voorbeeld.</p>
+        </div>
         <div class="resize">
           <iframe src="{base}/examples/skip-to-content" title="Voorbeeld" height="240px"></iframe>
         </div>
