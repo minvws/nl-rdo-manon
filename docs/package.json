@@ -21,7 +21,7 @@
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "mdsvex": "^0.12.6",
     "prettier": "^3.5.3",
-    "prettier-plugin-svelte": "^3.3.3",
+    "prettier-plugin-svelte": "^3.4.0",
     "sass": "^1.89.0",
     "svelte": "^5.31.1",
     "svelte-check": "^4.2.1",
