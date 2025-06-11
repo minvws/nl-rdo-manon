@@ -3,7 +3,7 @@
 /*---------------------------------------------------------------*/
 @use "notification-block-element-variables";
 
-%block-notification {
+@mixin block-notification {
   display: flex;
   flex-direction: var(--notification-block-element-flex-direction);
   justify-content: var(--notification-block-element-justify-content);
@@ -29,7 +29,7 @@ section {
   &.confirmation,
   &.explanation,
   &.system {
-    @extend %block-notification;
+    @include block-notification;
   }
 }
 
@@ -46,7 +46,7 @@ main.sidemenu {
     &.confirmation,
     &.explanation,
     &.system {
-      @extend %block-notification;
+      @include block-notification;
     }
   }
 }
