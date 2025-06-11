@@ -27,13 +27,13 @@
 }
 
 /// Test if string starts with `--`.
-@function is-custom-property($value) {
+@function -is-custom-property($value) {
   @return string.index("#{$value}", "--") == 1;
 }
 
 /// Prefix a custom property with an underscore, e.g. `--yay` to `--_yay`.
 @function -private($property) {
-  @if not is-custom-property($property) {
+  @if not -is-custom-property($property) {
     @error "Not a custom property: #{$property}.";
   }
 
@@ -52,7 +52,7 @@
   $result: ();
 
   @each $prefix in $stack {
-    @if not is-custom-property($prefix) {
+    @if not -is-custom-property($prefix) {
       @error "Invalid prefix: #{$prefix}.";
     }
 
@@ -121,7 +121,7 @@
       @error "Fallback property must be last.";
     }
 
-    @if is-custom-property($property) {
+    @if -is-custom-property($property) {
       $targets: list.append($targets, -private($property));
       $stack: list.append($stack, $property);
     } @else {
