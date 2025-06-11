@@ -1,14 +1,9 @@
 /*---------------------------------------------------------------*/
 /*------------------- navigation-link.scss ----------------------*/
 /*---------------------------------------------------------------*/
-@use "navigation-link-variables";
-@use "mixins/icon";
+
 @use "mixins/link";
-@use "mixins/outline";
 
 nav {
-  a {
-    @include link.link("navigation-link-");
-    @include outline.outline("navigation-link-");
-  }
+  @include link.full-configuration(--link, --navigation-link);
 }

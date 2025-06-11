@@ -4,6 +4,7 @@ export async function initManon() {
     import("@minvws/manon/expando-rows.js"),
     import("@minvws/manon/filters.js"),
     import("@minvws/manon/form-help.js"),
+    import("@minvws/manon/navigation.js"),
     import("@minvws/manon/language-selector.js"),
   ]);
 }

@@ -1,3 +1,53 @@
+/*---------------------------------------------------------------------*/
+/*---------------------- mixins/outline.scss --------------------------*/
+/*---------------------------------------------------------------------*/
+
+@use "configurable" as c;
+
+/// Apply configurable outline styles to a base element. Then, for each
+/// component that uses it, make it configurable by applying the `configuration`
+/// mixin to an appropriate context selector.
+/// @prop {List} $prefixes... - The configurable property prefix followed by optional fallback prefixes.
+/// @example
+///   a {
+///     outline.styles(--link);
+///   }
+///   a:visited {
+///     outline.styles(--link-visited, --link);
+///   }
+@mixin styles($prefixes...) {
+  outline: c.property(c.prefix(outline, $prefixes));
+  outline-offset: c.property(c.prefix(outline-offset, $prefixes));
+  z-index: c.property(c.prefix(z-index, $prefixes), 1);
+  box-shadow: c.property(c.prefix(box-shadow, $prefixes));
+  border-radius: c.property(c.prefix(border-radius, $prefixes));
+}
+
+/// Set up an outline configuration context using the given prefixes, starting
+/// with the base component's prefix (the "target"), followed by one or more
+/// configuration context prefixes.
+/// @prop {List} $prefixes... - List of prefixes, starting with that of the base component.
+/// @example
+///   .widget {
+///     outline.configuration(--link, --widget-link);
+///     outline.configuration(--visited-link, --widget-visited-link, --widget-link);
+///     // et cetera
+///   }
+@mixin configuration($prefixes...) {
+  @include c.context(
+    (
+      outline,
+      outline-offset,
+      outline-color,
+      z-index,
+      box-shadow,
+      border-radius
+    ),
+    $prefixes...
+  );
+}
+
+/// @deprecated
 @mixin outline($prefix) {
   & {
     outline: var(--#{$prefix}outline);
@@ -9,6 +59,7 @@
   }
 }
 
+/// @deprecated
 @mixin outline-variables($prefix, $parentPrefix) {
   --#{$prefix}outline: var(--#{$parentPrefix}outline);
   --#{$prefix}outline-offset: var(--#{$parentPrefix}outline-offset);

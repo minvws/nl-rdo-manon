@@ -1,16 +1,25 @@
 /*---------------------------------------------------------------*/
 /*--------------------------- link.scss -------------------------*/
 /*---------------------------------------------------------------*/
-@use "link-variables";
+
 @use "mixins/link";
-@use "mixins/outline";
+@use "mixins/heading";
 
 a {
   cursor: pointer;
   overflow-wrap: anywhere;
   word-wrap: break-word;
+  word-break: break-word;
+  box-sizing: border-box;
 
-  @include link.link("link-");
-  @include link.link-elements-styling("link-");
-  @include outline.outline("link-");
+  @include link.full-styles(--link);
+}
+
+@include heading.all {
+  a {
+    font-family: revert;
+    font-size: revert;
+    font-weight: revert;
+    line-height: revert;
+  }
 }

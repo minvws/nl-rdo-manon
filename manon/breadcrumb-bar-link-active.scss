@@ -1,0 +1,9 @@
+/*---------------------------------------------------------------*/
+/*------------- breadcrumb-bar-link-active.scss -----------------*/
+/*---------------------------------------------------------------*/
+
+@use "mixins/link";
+
+.breadcrumb-bar {
+  @include link.full-configuration(--link-active, --breadcrumb-bar-link-active);
+}
