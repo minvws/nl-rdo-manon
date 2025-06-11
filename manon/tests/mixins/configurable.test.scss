@@ -1,120 +1,59 @@
-@use "../../../manon/mixins/configurable" as *;
-@use "sass:meta";
-@use "sass:list";
-@use "sass:string";
+@use "true" as *;
+@use "../../mixins/configurable";
 
-// Helper function to normalize values for comparison
-@function normalize-value($value) {
-  @if meta.type-of($value) == "string" {
-    @return string.unquote($value);
+@include describe("prefix") {
+  @include it("appends property to prefixes") {
+    @include assert-equal(
+      configurable.prefix(color, (--primary --secondary)),
+      (--primary-color --secondary-color)
+    );
   }
-  @return $value;
+  @include it("handles optional fallback value") {
+    @include assert-equal(
+      configurable.prefix(color, (--primary --secondary), revert),
+      (--primary-color --secondary-color revert)
+    );
+  }
 }
 
-// Helper function to assert equality with better list handling
-@function assert-equal($actual, $expected, $message: "") {
-  // Convert both to strings for comparison
-  $actual-str: "#{normalize-value($actual)}";
-  $expected-str: "#{normalize-value($expected)}";
-
-  @if $actual-str != $expected-str {
-    @error "FAILED: #{$message} - Expected: #{$expected-str}, Got: #{$actual-str}";
+@include describe("property") {
+  @include it("creates var() stack with default revert fallback") {
+    @include assert-equal(
+      configurable.property(--primary-color),
+      var(--_primary-color, var(--primary-color, revert))
+    );
   }
-  @debug "PASSED: #{$message}";
-  @return true;
+
+  @include it("creates var() stack with custom fallback") {
+    @include assert-equal(
+      configurable.property(--primary-color, black),
+      var(--_primary-color, var(--primary-color, black))
+    );
+  }
+  @include it("creates var() stack with multiple properties") {
+    @include assert-equal(
+      configurable.property(--primary-color, --secondary-color, black),
+      var(
+        --_primary-color,
+        var(
+          --_secondary-color,
+          var(--primary-color, var(--secondary-color, black))
+        )
+      )
+    );
+  }
 }
 
-// Helper function to assert list contents
-@function assert-list-equal($actual, $expected, $message: "") {
-  @if list.length($actual) != list.length($expected) {
-    @error "FAILED: #{$message} - Different lengths. Expected: #{list.length($expected)}, Got: #{list.length($actual)}";
-  }
-
-  @for $i from 1 through list.length($actual) {
-    $actual-item: normalize-value(list.nth($actual, $i));
-    $expected-item: normalize-value(list.nth($expected, $i));
-    @if $actual-item != $expected-item {
-      @error "FAILED: #{$message} - Item #{$i} differs. Expected: #{$expected-item}, Got: #{$actual-item}";
+@include describe("context") {
+  @include it("compiles") {
+    @include assert {
+      @include output {
+        @include configurable.context((color, background), --base, --component);
+      }
+      @include expect {
+        --_base-color: var(--component-color);
+        --_base-background: var(--component-background);
+      }
     }
   }
-
-  @debug "PASSED: #{$message}";
-  @return true;
 }
-
-// Helper function to assert true
-@function assert-true($value, $message: "") {
-  @if not $value {
-    @error "FAILED: #{$message} - Expected true, got #{$value}";
-  }
-  @debug "PASSED: #{$message}";
-  @return true;
-}
-
-// Helper function to assert false
-@function assert-false($value, $message: "") {
-  @if $value {
-    @error "FAILED: #{$message} - Expected false, got #{$value}";
-  }
-  @debug "PASSED: #{$message}";
-  @return true;
-}
-
-@debug "=== Starting Configurable Module Tests ===";
-
-// Test is-custom-property function
-@debug "--- Testing is-custom-property function ---";
-$_: assert-true(is-custom-property('--test-prop'), 'Should identify custom property');
-$_: assert-false(is-custom-property('test-prop'), 'Should reject non-custom property');
-
-// Test prefix function
-@debug "--- Testing prefix function ---";
-$stack: (--primary, --secondary);
-$result: prefix('color', $stack);
-$_: assert-list-equal($result, (--primary-color, --secondary-color), 'Should append property to prefixes');
-
-// Test with unquoted fallback to match what the function returns
-$result-with-fallback: prefix('color', (--primary), black);
-$expected-fallback: (--primary-color, black);
-$_: assert-list-equal($result-with-fallback, $expected-fallback, 'Should handle fallback value');
-
-// Test property function
-@debug "--- Testing property function ---";
-$prop-result: property(--primary-color);
-$expected-prop: var(--_primary-color, var(--primary-color, revert));
-$_: assert-equal($prop-result, $expected-prop, 'Should create var() stack with revert fallback');
-
-// Test property function with multiple properties
-$multi-prop-result: property(--primary-color, --secondary-color, black);
-@debug "PASSED: Property function with multiple properties compiles";
-
-// Test context mixin by checking if it compiles without errors
-@debug "--- Testing context mixin ---";
-.test-context {
-  @include context(
-        (color, background),
-      --base,
-      --theme
-  );
-}
-@debug "PASSED: Context mixin compiles without errors";
-
-// Test error cases by checking they compile
-@debug "--- Testing edge cases ---";
-
-// Test single property
-$single-result: prefix('margin', (--spacing));
-$_: assert-list-equal($single-result, (--spacing-margin), 'Should handle single prefix');
-
-// Test is-custom-property with different formats
-$_: assert-true(is-custom-property('--var-name-with-dashes'), 'Should handle dashed property names');
-$_: assert-false(is-custom-property('-single-dash'), 'Should reject single dash properties');
-
-// Debug actual vs expected
-@debug "--- Debug Info ---";
-$debug-result: prefix('color', (--primary), black);
-@debug "Actual result: #{$debug-result}";
-@debug "First item: #{list.nth($debug-result, 1)} (type: #{meta.type-of(list.nth($debug-result, 1))})";
-@debug "Second item: #{list.nth($debug-result, 2)} (type: #{meta.type-of(list.nth($debug-result, 2))})";
-
-@debug "=== All tests completed successfully ===";
