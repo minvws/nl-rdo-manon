@@ -9,14 +9,11 @@
     "build": "pnpm run --dir docs build",
     "lint": "pnpm run --dir manon lint:css",
     "format:check": "pnpm run --dir manon format:check",
-    "test": "sass --no-source-map --style=compressed tests/manon/**/*.scss tests/manon/manon.css"
+    "test": "pnpm run --dir manon test"
   },
   "pnpm": {
     "overrides": {
       "cookie@<0.7.0": ">=0.7.0"
     }
-  },
-  "devDependencies": {
-    "sass": "^1.89.1"
   }
 }
