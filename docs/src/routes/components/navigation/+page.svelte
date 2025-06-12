@@ -1,5 +1,5 @@
 <script module>
-  export const breadcrumb = "Navigation";
+  export const breadcrumb = "Navigatie";
 </script>
 
 <script lang="ts">
@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-  <title>Navigation</title>
+  <title>Navigatie</title>
 </svelte:head>
 
 <main class="sidemenu" id="main-content" tabindex="-1">
@@ -23,7 +23,7 @@
   <article class="visually-grouped">
     <div>
       <section id="introduction">
-        <h1>Navigation</h1>
+        <h1>Navigatie</h1>
         <h2>Benodigde stappen</h2>
         <h3>Importeer component via npm</h3>
         <Code

@@ -107,7 +107,7 @@
             <li><a href="{base}/components/header-navigation">Header</a></li>
             <li><a href="{base}/components/icons">Iconen</a></li>
             <li><a href="{base}/components/tag">Tag</a></li>
-            <li><a href="{base}/components/navigation">Navigation - <code>nav</code></a></li>
+            <li><a href="{base}/components/navigation">Navigatie - <code>nav</code></a></li>
           </ul>
         </nav>
 
