@@ -74,32 +74,26 @@
         <h3>Visueel voorbeeld:</h3>
 
         <h4>Navigatie-component met links</h4>
-        <nav>
-          <a href="navigation">Lorem ipsum</a>
-          <a href="navigation">Lorem ipsum</a>
-          <a href="navigation">Lorem ipsum</a>
-        </nav>
+        <div class="resize">
+          <iframe src="{base}/examples/navigation-with-links" title="Voorbeeld" height="240px"></iframe>
+        </div>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
           language="html"
           code={`
 <nav>
-    <a href="#">Lorem ipsum</a>
-    <a href="#">Lorem ipsum</a>
-    <a href="#">Lorem ipsum</a>
+    <a href="#">Voorbeeld-link 1</a>
+    <a href="#">Voorbeeld-link 2</a>
+    <a href="#">Voorbeeld-link 3</a>
 </nav>
 `}
         />
 
         <h4>Navigatie-component met een lijst met links</h4>
-        <nav>
-          <ul>
-            <li><a href="navigation">Lorem ipsum</a></li>
-            <li><a href="navigation">Lorem ipsum</a></li>
-            <li><a href="navigation">Lorem ipsum</a></li>
-          </ul>
-        </nav>
+        <div class="resize">
+          <iframe src="{base}/examples/navigation-with-list-of-links" title="Voorbeeld" height="240px"></iframe>
+        </div>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -107,22 +101,18 @@
           code={`
 <nav>
     <ul>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li><a href="#">Lorem ipsum</a></li>
+        <li><a href="#">Voorbeeld-link 1</a></li>
+        <li><a href="#">Voorbeeld-link 2</a></li>
+        <li><a href="#">Voorbeeld-link 3</a></li>
     </ul>
 </nav>
 `}
         />
 
         <h4>Navigatie-component met een horizontaal uitgelijnde lijst met links</h4>
-        <nav>
-          <ul class="horizontal-view">
-            <li><a href="navigation">Lorem ipsum</a></li>
-            <li><a href="navigation">Lorem ipsum</a></li>
-            <li><a href="navigation">Lorem ipsum</a></li>
-          </ul>
-        </nav>
+        <div class="resize">
+          <iframe src="{base}/examples/navigation-with-horizontal-view" title="Voorbeeld" height="240px"></iframe>
+        </div>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -130,9 +120,9 @@
           code={`
 <nav>
     <ul class="horizontal-view">
-        <li><a href="#">Lorem ipsum</a></li>
-        <li><a href="#">Lorem ipsum</a></li>
-        <li><a href="#">Lorem ipsum</a></li>
+        <li><a href="#">Voorbeeld-link 1/a></li>
+        <li><a href="#">Voorbeeld-link 2</a></li>
+        <li><a href="#">Voorbeeld-link 3</a></li>
     </ul>
 </nav>
 `}
