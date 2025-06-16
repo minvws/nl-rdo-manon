@@ -16,9 +16,9 @@
 <main>
   <nav>
     <ul class="horizontal-view">
-      <li><a href="navigation">Voorbeeld-link 1</a></li>
-      <li><a href="navigation">Voorbeeld-link 2</a></li>
-      <li><a href="navigation">Voorbeeld-link 3</a></li>
+      <li><a href="{page.url.pathname}">Voorbeeld-link 1</a></li>
+      <li><a href="{page.url.pathname}">Voorbeeld-link 2</a></li>
+      <li><a href="{page.url.pathname}">Voorbeeld-link 3</a></li>
     </ul>
   </nav>
 </main>
