@@ -45,8 +45,8 @@ now we'll just replace the contents of the `package.json` file with the followin
     "build": "sass --load-path=node_modules main.scss css/main.css"
   },
   "dependencies": {
-    "@minvws/manon": "^16.3.0-beta.2",
-    "@minvws/manon-themes": "^16.3.0-beta.2"
+    "@minvws/manon": "^17.0.0-rc.1",
+    "@minvws/manon-themes": "^17.0.0-rc.1"
   },
   "devDependencies": {
     "sass": "^1.89.0"
@@ -61,7 +61,7 @@ Let's break down what we've defined here:
 
 - `@minvws/manon-themes`: This package contains the themes for Manon, allowing
   us to apply different styles to our components easily. We've provided
-  a basic theme called `basic-bold` that we will use in our project.
+  a basic theme called `icore-open` that we will use in our project.
 
 - `sass`: This will install the `sass` command line utility, which we will use to
   compile our sass files into CSS. This will be used to compile our `main.scss`
@@ -117,7 +117,7 @@ adding more components to these files as we expand our page.
 @use "@minvws/manon/application-base";
 
 // Theme that we're going to use for our page
-@use "@minvws/manon-themes/basic-bold";
+@use "@minvws/manon-themes/icore-open";
 ```
 
 Whenever you want to use additional components, you can import them in this
@@ -156,7 +156,7 @@ Our `main.scss` file should now look like this:
 
 ```scss
 @use "@minvws/manon/application-base";
-@use "@minvws/manon-themes/basic-bold";
+@use "@minvws/manon-themes/icore-open";
 @use "@minvws/manon/header-navigation";
 ```
 
@@ -222,7 +222,7 @@ Now, our `main.scss` file should look like this:
 
 ```scss
 @use "@minvws/manon/application-base";
-@use "@minvws/manon-themes/basic-bold";
+@use "@minvws/manon-themes/icore-open";
 @use "@minvws/manon/header-navigation";
 @use "@minvws/manon/layout-set";
 @use "@minvws/manon/main";
@@ -309,7 +309,7 @@ Now, our `main.scss` file should look like this:
 
 ```scss
 @use "@minvws/manon/application-base";
-@use "@minvws/manon-themes/basic-bold";
+@use "@minvws/manon-themes/icore-open";
 @use "@minvws/manon/header-navigation";
 @use "@minvws/manon/layout-set";
 @use "@minvws/manon/main";
