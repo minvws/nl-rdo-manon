@@ -7,9 +7,8 @@
 
 a {
   cursor: pointer;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
   word-wrap: break-word;
-  word-break: break-word;
 
   @include link.link("link-");
   @include link.link-elements-styling("link-");
