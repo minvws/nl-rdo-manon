@@ -152,6 +152,14 @@ our `main.scss` file. So, add the following import to your `main.scss` file:
 @use "@minvws/manon/header-navigation";
 ```
 
+Our `main.scss` file should now look like this:
+
+```scss
+@use "@minvws/manon/application-base";
+@use "@minvws/manon-themes/basic-bold";
+@use "@minvws/manon/header-navigation";
+```
+
 Second we're going to add the following HTML to our `index.html` file to create a
 header with navigation links:
 
@@ -188,6 +196,7 @@ Now, our `index.html` file should look like this:
         </ul>
       </nav>
     </header>
+    <h1>Hello, Manon!</h1>
   </body>
 </html>
 ```
@@ -209,9 +218,20 @@ Add the following imports to your `main.scss` file:
 @use "@minvws/manon/section";
 ```
 
+Now, our `main.scss` file should look like this:
+
+```scss
+@use "@minvws/manon/application-base";
+@use "@minvws/manon-themes/basic-bold";
+@use "@minvws/manon/header-navigation";
+@use "@minvws/manon/layout-set";
+@use "@minvws/manon/main";
+@use "@minvws/manon/section";
+```
+
 Next, we will update our `index.html` file to include the main content area.
 Add the following HTML to your `index.html` file, just after the header
-section:
+section, replacing the existing `<h1>` tag:
 
 ```html
 <main>
@@ -282,6 +302,18 @@ will allow us to create a footer section with navigation links.
 Add the following import to your `main.scss` file:
 
 ```scss
+@use "@minvws/manon/footer";
+```
+
+Now, our `main.scss` file should look like this:
+
+```scss
+@use "@minvws/manon/application-base";
+@use "@minvws/manon-themes/basic-bold";
+@use "@minvws/manon/header-navigation";
+@use "@minvws/manon/layout-set";
+@use "@minvws/manon/main";
+@use "@minvws/manon/section";
 @use "@minvws/manon/footer";
 ```
 
