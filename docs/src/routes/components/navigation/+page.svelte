@@ -62,7 +62,7 @@
           <li>
             De standaard ingestelde waarden binnen Manon maken gebruik van de <a
               href="body-text-set">Body text set</a
-            >. Om gebruik te maken van deze set. Laad de set eenmalig in voordat overige componenten
+            >. Om gebruik te maken van deze set, laad de set eenmalig in voordat overige componenten
             er gebruik van maken. Zie onderstaand voorbeeld voor meer informatie.
           </li>
         </ul>
