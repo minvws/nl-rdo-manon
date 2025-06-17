@@ -73,23 +73,6 @@
 
         <h3>Visueel voorbeeld:</h3>
 
-        <h4>Navigatie-component met links</h4>
-        <div class="resize">
-          <iframe src="{base}/examples/navigation-with-links" title="Voorbeeld" height="240px"></iframe>
-        </div>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<nav>
-    <a href="#">Voorbeeld-link 1</a>
-    <a href="#">Voorbeeld-link 2</a>
-    <a href="#">Voorbeeld-link 3</a>
-</nav>
-`}
-        />
-
         <h4>Navigatie-component met een lijst met links</h4>
         <div class="resize">
           <iframe src="{base}/examples/navigation-with-list-of-links" title="Voorbeeld" height="240px"></iframe>
