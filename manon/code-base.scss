@@ -10,10 +10,13 @@ $breakpoint: 24rem !default;
   color: var(--code-base-text-color, inherit);
   width: 100%;
   word-break: var(--code-base-word-break, inherit);
-  padding: var(--code-base-padding, inherit);
+  overflow-wrap: var(--code-base-overflow-wrap, inherit);
+  padding: var(--code-base-padding, 0);
+  box-sizing: border-box;
 
   @media (width >= $breakpoint) {
-    word-break: var(--code-base-breakpoint-word-break, break-word);
+    word-break: var(--code-base-breakpoint-word-break, normal);
+    overflow-wrap: var(--code-base-breakpoint-overflow-wrap, anywhere);
   }
 }
 

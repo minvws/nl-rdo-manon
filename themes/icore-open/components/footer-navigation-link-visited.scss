@@ -3,5 +3,5 @@
 @use "../color-scheme";
 
 :root {
-  --footer-navigation-link-visited-text-color: #{color-scheme.$oc-grape-8};
+  --footer-navigation-link-visited-text-color: var(--link-visited-text-color);
 }

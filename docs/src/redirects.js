@@ -1,8 +1,10 @@
 /**
- * Record mapping old URLs to new URLs. The root +layout.js uses this to
+ * Record mapping old URLs to new URLs. The root +layout.ts uses this to
  * generate redirect pages for the old URLs during a build. The keys (old URLs)
  * are added to the kit.prerender.entries array in svelte.config.js to ensure
  * they are included in the build.
+ *
+ * NB: this needs to be a .js file because it's imported from svelte.config.js.
  *
  * @type {Record<string, string>}
  */
@@ -24,8 +26,6 @@ export const redirects = {
   "/documentation/components/form-input-textarea.html": "/components/form-input-textarea",
   "/documentation/components/form-notification.html": "/components/form-notification",
   "/documentation/components/form-select.html": "/components/form-select",
-  "/documentation/components/header-example-language-select-list.html":
-    "/components/header-navigation/example-language-select-list",
   "/documentation/components/icons.html": "/components/icons",
   "/documentation/components/image-cover.html": "/components/image-cover",
   "/documentation/components/message-counter.html": "/components/message-counter",
@@ -38,4 +38,16 @@ export const redirects = {
   "/documentation/components/table-sortable.html": "/components/table-sortable",
   "/documentation/components/tabs.html": "/components/tabs",
   "/documentation/components/tiles.html": "/components/tiles",
+  "/components/header-navigation/example": "/components/header-navigation#example-navigation",
+  "/components/header-navigation/example-content-wrapper":
+    "/components/header-navigation#example-with-content-wrapper",
+  "/components/header-navigation/example-search":
+    "/components/header-navigation#example-with-search",
+  "/components/header-navigation/example-logo": "/components/header-navigation#example-with-logo",
+  "/components/header-navigation/example-multiple-menus":
+    "/components/header-navigation#example-with-multiple-menus",
+  "/components/header-navigation/example-form-button":
+    "/components/header-navigation#example-with-form-button",
+  "/components/header-navigation/example-logo-above":
+    "/components/header-navigation#example-with-logo-above",
 };

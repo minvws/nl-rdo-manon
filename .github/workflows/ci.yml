@@ -2,40 +2,73 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, "release/**"]
   pull_request:
+    branches: [main, "release/**"]
 
 jobs:
-  lint:
-    runs-on: ubuntu-latest
+  audit:
+    name: Audit dependencies
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup
-      - name: Lint SCSS
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Audit dependencies
+        uses: ./.github/actions/setup
+        with:
+          audit-level: moderate
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Lint
         run: pnpm run lint
 
   check-formatting:
-    runs-on: ubuntu-latest
+    name: Check formatting
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
       - name: Check formatting
         run: pnpm run format:check
 
   check-docs:
-    runs-on: ubuntu-latest
+    name: Check docs
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup
-      - name: Check formatting
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Run svelte-check
         run: pnpm run --dir docs check
 
   build-docs:
-    runs-on: ubuntu-latest
+    name: Build docs
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup
-      - name: Build Docs
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Build
         run: pnpm run build
 
   sonarcloud:

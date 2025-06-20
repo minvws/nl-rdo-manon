@@ -4,7 +4,13 @@
 
 :root {
   --footer-navigation-link-focus-text-color: #{color-scheme.$oc-blue-8};
-  --footer-navigation-link-focus-text-decoration: #{color-scheme.$oc-blue-8};
+  --footer-navigation-link-focus-text-decoration: underline;
   --footer-navigation-link-focus-outline: 1px solid #{color-scheme.$oc-blue-8};
   --footer-navigation-link-focus-outline-offset: 0.25rem;
+
+  /* Visited */
+  --footer-navigation-link-visited-focus-text-color: #{color-scheme.$oc-grape-9};
+  --footer-navigation-link-visited-focus-text-decoration: var(
+    --footer-navigation-link-focus-text-decoration
+  );
 }

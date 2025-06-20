@@ -2,19 +2,21 @@
 /*-------------------------- mixins/layout.scss -----------------------*/
 /*---------------------------------------------------------------------*/
 @mixin layout($prefix) {
-  display: flex;
-  flex-direction: var(--#{$prefix}-flex-direction);
-  justify-content: var(--#{$prefix}-justify-content);
-  align-items: var(--#{$prefix}-align-items);
-  gap: var(--#{$prefix}-gap);
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding-top: var(--#{$prefix}-padding-top);
-  padding-right: var(--#{$prefix}-padding-right);
-  padding-bottom: var(--#{$prefix}-padding-bottom);
-  padding-left: var(--#{$prefix}-padding-left);
-  max-width: var(--#{$prefix}-max-width);
+  & {
+    display: flex;
+    flex-direction: var(--#{$prefix}-flex-direction);
+    justify-content: var(--#{$prefix}-justify-content);
+    align-items: var(--#{$prefix}-align-items);
+    gap: var(--#{$prefix}-gap);
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: var(--#{$prefix}-padding-top);
+    padding-right: var(--#{$prefix}-padding-right);
+    padding-bottom: var(--#{$prefix}-padding-bottom);
+    padding-left: var(--#{$prefix}-padding-left);
+    max-width: var(--#{$prefix}-max-width);
+  }
 }
 
 @mixin layout-variables($prefix) {

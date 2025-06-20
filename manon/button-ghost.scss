@@ -2,6 +2,8 @@
 /*--------------------- button-ghost.scss -----------------------*/
 /*---------------------------------------------------------------*/
 @use "button-ghost-variables";
+@use "mixins/button";
+@use "mixins/outline";
 
 button,
 a.button,
@@ -9,83 +11,23 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   &.ghost {
-    outline-style: var(--button-ghost-outline-style);
-    outline-color: var(--button-ghost-outline-color);
-    outline-width: var(--button-ghost-outline-width);
-    outline-offset: var(--button-ghost-outline-offset);
-    background-color: var(--button-ghost-background-color);
-    border-width: var(--button-ghost-border-width);
-    border-style: var(--button-ghost-border-style);
-    border-color: var(--button-ghost-border-color);
-    color: var(--button-ghost-text-color);
-    -webkit-appearance: none; /* Reset ios button styling */
-    border-radius: var(--button-ghost-border-radius);
-    -webkit-border-radius: var(
-      --button-ghost-border-radius
-    ); /* Reset ios button styling */
-
-    &:visited {
-      color: var(--button-ghost-text-color);
-    }
-
-    &:hover,
-    &.hover {
-      outline-style: var(--button-ghost-hover-outline-style);
-      outline-color: var(--button-ghost-hover-outline-color);
-      outline-width: var(--button-ghost-hover-outline-width);
-      outline-offset: var(--button-ghost-hover-outline-offset);
-      background-color: var(--button-ghost-hover-background-color);
-      color: var(--button-ghost-hover-text-color);
-      border-style: var(--button-ghost-hover-border-style);
-      border-color: var(
-        --button-ghost-hover-border-color,
-        var(--application-base-accent-color-accent)
-      );
-      border-width: var(--button-ghost-hover-border-width);
-    }
-
-    &:active,
-    &.active {
-      outline-style: var(--button-ghost-active-outline-style);
-      outline-color: var(--button-ghost-active-outline-color);
-      outline-width: var(--button-ghost-active-outline-width);
-      outline-offset: var(--button-ghost-active-outline-offset);
-      background-color: var(--button-ghost-active-background-color);
-      color: var(--button-ghost-active-text-color);
-      border-style: var(--button-ghost-active-border-style);
-      border-color: var(
-        --button-ghost-active-border-color,
-        var(--application-base-accent-color-accent)
-      );
-      border-width: var(--button-ghost-active-border-width);
-    }
+    @include button.button("button-ghost-");
 
     &:focus,
     &.focus {
-      outline-style: var(--button-ghost-focus-outline-style);
-      outline-color: var(--button-ghost-focus-outline-color);
-      outline-width: var(--button-ghost-focus-outline-width);
-      outline-offset: var(--button-ghost-focus-outline-offset);
-      border-style: var(--button-ghost-focus-border-style);
-      border-color: var(
-        --button-ghost-focus-border-color,
-        var(--application-base-accent-color-accent)
-      );
-      border-width: var(--button-ghost-focus-border-width);
-      background-color: var(
-        --button-ghost-focus-background-color,
-        var(--application-base-accent-color-accent)
-      );
-      color: var(
-        --button-ghost-focus-text-color,
-        var(--application-text-color-accent)
-      );
-    }
+      @include outline.outline("button-ghost-focus-");
 
-    > img {
-      max-width: var(
-        --button-base-image-max-width
-      ); /* Limiting the use of images within buttons for readability. */
+      &:visited,
+      &.visited {
+        @include outline.outline("button-ghost-focus-");
+      }
     }
+  }
+}
+
+a.button,
+a:visited.button {
+  &.ghost {
+    @include button.link-button("link-button-ghost-");
   }
 }

@@ -6,7 +6,9 @@
 .logo,
 a.logo,
 a:visited.logo,
-a:hover.logo {
+a:hover.logo,
+a:active.logo,
+a:focus.logo {
   display: var(--logo-display);
   flex-direction: var(--logo-flex-direction);
   justify-content: var(--logo-justify-content);

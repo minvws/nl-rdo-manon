@@ -1,17 +1,16 @@
 /*---------------------------------------------------------------*/
 /*------------------- button-icon-variables.scss ----------------*/
 /*---------------------------------------------------------------*/
-:root {
-  /* Button */
-  --button-icon-min-width: 2.75rem;
-  --button-icon-width: auto;
-  --button-icon-min-height: var(--button-base-min-height);
-  --button-icon-height: var(--button-base-height);
+@use "mixins/button";
+@use "mixins/outline";
 
-  /* Icon */
-  --button-icon-font-family: var(--icon-font-family);
-  --button-icon-font-size: var(--icon-font-size);
-  --button-icon-padding-left: var(--icon-padding-left);
-  --button-icon-padding-right: var(--icon-padding-right);
-  --button-icon-text-color: var(--icon-text-color);
+:root {
+  @include button.button-variables("button-icon-", "button-base-");
+  @include outline.outline-variables(
+    "button-icon-focus-",
+    "button-base-focus-"
+  );
+  @include button.link-button-styling-variables("button-icon-", "button-base-");
+  --button-icon-font-size: 0;
+  --button-icon-gap: 0;
 }

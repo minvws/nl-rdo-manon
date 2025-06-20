@@ -4,4 +4,5 @@
 
 :root {
   --link-hover-text-color: #{color-scheme.$oc-blue-9};
+  --link-hover-icon-text-color: var(--link-hover-text-color);
 }

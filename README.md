@@ -52,7 +52,9 @@ During the vaccination campaign a lot of applications were launched and managed 
 
 The biggest difference between Manon Rijk (the version which uses the Rijksoverheid branding) and Manon Open, this version which is for general use, is that the open version is adjustable. As well as the added possibility to only select and use the parts that are needed within your project.
 
-
 ## License
 
-This repository follows the [REUSE Specfication v3.0](https://reuse.software/spec/). Please see [.reuse/dep5](./.reuse/dep5) and the individual `*.license` files for copyright and license information.
+This repository follows the
+[REUSE Specfication v3.2](https://reuse.software/spec/). Please see
+[REUSE.toml](./REUSE.toml), [LICENSES/](./LICENSES/) and the individual
+`*.license` files for copyright and license information.

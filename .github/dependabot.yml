@@ -14,3 +14,19 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      build:
+        patterns:
+          - mdsvex
+          - sass
+          - "svelte"
+          - "svelte-*"
+          - "@sveltejs/*"
+          - typescript
+          - vite
+      lint:
+        patterns:
+          - "prettier"
+          - "prettier-*"
+          - "stylelint"
+          - "stylelint-*"

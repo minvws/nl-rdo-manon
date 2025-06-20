@@ -1,4 +1,4 @@
-<script context="module">
+<script module lang="ts">
   import hljs from "highlight.js/lib/core";
   import xml from "highlight.js/lib/languages/xml";
   import css from "highlight.js/lib/languages/css";
@@ -11,28 +11,17 @@
   hljs.registerLanguage("plaintext", plaintext);
 </script>
 
-<script>
+<script lang="ts">
   import "highlight.js/styles/github.css";
 
-  /** @param {string} markup */
-  const trim = (markup) => markup.replace(/^(\s*\n)+/, "").replace(/\n\s*$/, "");
+  interface Props {
+    language?: "html" | "css" | "scss" | "plaintext";
+    code?: string;
+  }
 
-  /** @type {'html' | 'css' | 'scss' | 'plaintext'} */
-  export let language = "plaintext";
-  export let code = "";
-  $: trimmed = trim(code);
-  $: highlighted = hljs.highlight(trimmed, { language }).value;
+  let { language = "plaintext", code = "" }: Props = $props();
+  let trimmed = $derived(code.replace(/^(\s*\n)+/, "").replace(/\n\s*$/, ""));
+  let highlighted = $derived(hljs.highlight(trimmed, { language }).value);
 </script>
 
-{@html `<!--
-${trimmed}
--->`}
 <pre><code>{@html highlighted}</code></pre>
-
-<style>
-  code {
-    padding: 1rem;
-    overflow-x: auto;
-    background-color: #ffffff;
-  }
-</style>

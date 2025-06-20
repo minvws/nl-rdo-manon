@@ -6,6 +6,7 @@
 .outline-dotted {
   outline: var(--focus-outline);
   outline-offset: var(--focus-outline-offset);
+  outline-color: var(--focus-outline-color);
   z-index: var(--focus-z-index);
   position: relative;
 

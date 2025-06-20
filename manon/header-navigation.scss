@@ -72,5 +72,9 @@ body > header,
         }
       }
     }
+
+    input {
+      align-self: var(--header-navigation-input-algin-self);
+    }
   }
 }
