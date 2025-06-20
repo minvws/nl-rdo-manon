@@ -77,7 +77,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-    - name: 'Run SonarQube cloud scanner'
-      uses: minvws/nl-irealisatie-generic-pipelines/.github/actions/sonarcloud@main
-      with:
-        sonar-token: ${{ secrets.SONAR_TOKEN }}
+
+      - name: 'Run SonarQube cloud scanner'
+        uses: minvws/nl-irealisatie-generic-pipelines/.github/actions/sonarcloud@main
+        with:
+          sonar-token: ${{ secrets.SONAR_TOKEN }}
