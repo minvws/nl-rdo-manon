@@ -23,7 +23,7 @@ Componenten zijn instelbaar door middel van variabelen en de kleine geselecteerd
 
 Tijdens de vaccinatiecampagne werden er in korte tijd veel websites gelanceerd en in beheer genomen. Met strikte huisstijlvoorschriften vanuit de rijksoverheid, de wens om toegankelijke websites te leveren en gezien de dynamiek van de pandemie voldeden de bestaande oplossingen niet. Daarom is door het Ministerie van VWS in korte tijd een framework gebouwd om het bouwen en beheren van een rijkshuisstijl conforme website te vereenvoudigen. Dit pakket is aangepast om het voor een breder publiek bruikbaar te maken.
 
-Het verschil tussen de Manon Rijk met de rijkshuisstijl en Manon Open voor algemeen gebruik is dat het pakket variable en instelbaar is gemaakt. Waar de eerste versie van Manon een pakket was dat also geheel werd geimplementeerd is Manon Open geschreven zodat je zelf kan uitkiezen welke componenten en welke stukken CSS je wilt toevoegen. Hierdoor hoef je weinig overrides te done en krijg je een zo klein mogelijk CSS-bestand.
+Het verschil tussen de Manon Rijk met de rijkshuisstijl en Manon Open voor algemeen gebruik is dat het pakket variabel en instelbaar is gemaakt. Waar de eerste versie van Manon een pakket was dat als geheel werd geimplementeerd is Manon Open geschreven zodat je zelf kan uitkiezen welke componenten en welke stukken CSS je wilt toevoegen. Hierdoor hoef je weinig overrides te done en krijg je een zo klein mogelijk CSS-bestand.
 
 ## Documentatie
 
