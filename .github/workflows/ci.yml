@@ -70,3 +70,15 @@ jobs:
 
       - name: Build
         run: pnpm run build
+
+  sonarcloud:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 'Run SonarQube cloud scanner'
+        uses: minvws/nl-irealisatie-generic-pipelines/.github/actions/sonarcloud@main
+        with:
+          sonar-token: ${{ secrets.SONAR_TOKEN }}
