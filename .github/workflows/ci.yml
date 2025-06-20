@@ -44,15 +44,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: 'Run SonarCloud scanner'
-        if: ${{contains(github.ref, '/pull/')}}
-        uses: SonarSource/sonarcloud-github-action@v2.2.0
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      - name: 'Run SonarCloud scanner'
-        if: ${{!contains(github.ref, '/pull/')}}
-        uses: SonarSource/sonarcloud-github-action@v2.2.0
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        with:
-          args: -Dsonar.branch.name=${{ github.ref_name }}
+    - name: 'Run SonarQube cloud scanner'
+      uses: minvws/nl-irealisatie-generic-pipelines/.github/actions/sonarcloud@main
+      with:
+        sonar-token: ${{ secrets.SONAR_TOKEN }}
