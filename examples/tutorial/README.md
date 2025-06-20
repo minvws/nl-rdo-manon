@@ -149,15 +149,45 @@ First, we need to import the header navigation component
 our `main.scss` file. So, add the following import to your `main.scss` file:
 
 ```scss
+// Header navigation
 @use "@minvws/manon/header-navigation";
+@use "@minvws/manon/header-navigation-content-wrapper";
+@use "@minvws/manon/header-navigation-link";
+@use "@minvws/manon/header-navigation-link-visited";
+@use "@minvws/manon/header-navigation-link-hover";
+@use "@minvws/manon/header-navigation-link-active";
+@use "@minvws/manon/header-navigation-link-focus";
+@use "@minvws/manon/header-navigation-collapsible";
+@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button";
+@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button-states";
+
+// Accessibility
+@use "@minvws/manon/skip-to-content";
 ```
 
 Our `main.scss` file should now look like this:
 
 ```scss
+// Import the Manon framework and its components
 @use "@minvws/manon/application-base";
-@use "@minvws/manon-themes/icore-open";
+
+// Header navigation
 @use "@minvws/manon/header-navigation";
+@use "@minvws/manon/header-navigation-content-wrapper";
+@use "@minvws/manon/header-navigation-link";
+@use "@minvws/manon/header-navigation-link-visited";
+@use "@minvws/manon/header-navigation-link-hover";
+@use "@minvws/manon/header-navigation-link-active";
+@use "@minvws/manon/header-navigation-link-focus";
+@use "@minvws/manon/header-navigation-collapsible";
+@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button";
+@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button-states";
+
+// Accessibility
+@use "@minvws/manon/skip-to-content";
+
+// Theme that we're going to use for our page
+@use "@minvws/manon-themes/icore-open";
 ```
 
 Second we're going to add the following HTML to our `index.html` file to create a
@@ -165,12 +195,23 @@ header with navigation links:
 
 ```html
 <header>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+  <a href="#main-content" class="button focus-only skip-to-content"
+    >Skip to content</a
+  >
+  <nav
+    data-open-label="Menu"
+    data-close-label="Sluit menu"
+    data-media="(min-width: 30rem)"
+    aria-label="Hoofdnavigatie"
+    class="collapsible"
+  >
+    <div class="collapsing-element">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 </header>
 ```
@@ -188,12 +229,23 @@ Now, our `index.html` file should look like this:
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+      <a href="#main-content" class="button focus-only skip-to-content"
+        >Skip to content</a
+      >
+      <nav
+        data-open-label="Menu"
+        data-close-label="Sluit menu"
+        data-media="(min-width: 30rem)"
+        aria-label="Hoofdnavigatie"
+        class="collapsible"
+      >
+        <div class="collapsing-element">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <h1>Hello, Manon!</h1>
@@ -213,6 +265,7 @@ our page.
 Add the following imports to your `main.scss` file:
 
 ```scss
+//Layout
 @use "@minvws/manon/layout-set";
 @use "@minvws/manon/main";
 @use "@minvws/manon/section";
@@ -221,12 +274,23 @@ Add the following imports to your `main.scss` file:
 Now, our `main.scss` file should look like this:
 
 ```scss
+// Import the Manon framework and its components
 @use "@minvws/manon/application-base";
-@use "@minvws/manon-themes/icore-open";
-@use "@minvws/manon/header-navigation";
+
+// Header navigation
+// ...
+
+// Accessibility
+// ...
+@use "@minvws/manon/skip-to-content";
+
+// Layout
 @use "@minvws/manon/layout-set";
 @use "@minvws/manon/main";
 @use "@minvws/manon/section";
+
+// Theme that we're going to use for our page
+@use "@minvws/manon-themes/icore-open";
 ```
 
 Next, we will update our `index.html` file to include the main content area.
@@ -308,13 +372,23 @@ Add the following import to your `main.scss` file:
 Now, our `main.scss` file should look like this:
 
 ```scss
+// Import the Manon framework and its components
 @use "@minvws/manon/application-base";
-@use "@minvws/manon-themes/icore-open";
-@use "@minvws/manon/header-navigation";
+
+// Header navigation
+// ...
+
+// Accessibility
+@use "@minvws/manon/skip-to-content";
+
+// Layout
 @use "@minvws/manon/layout-set";
 @use "@minvws/manon/main";
 @use "@minvws/manon/section";
 @use "@minvws/manon/footer";
+
+// Theme that we're going to use for our page
+@use "@minvws/manon-themes/icore-open";
 ```
 
 Next, we will update our `index.html` file to include the footer section. Add
