@@ -143,9 +143,9 @@ We'll start with the header, main content, and footer sections.
 
 ### Header
 
-First, we need to import the header navigation component
-([docs](https://minvws.github.io/nl-rdo-manon/components/header-navigation)) in
-our `main.scss` file. So, add the following import to your `main.scss` file:
+First, we need to import the [header navigation
+component](https://minvws.github.io/nl-rdo-manon/components/header-navigation)
+in our `main.scss` file. So, add the following import to your `main.scss` file:
 
 ```scss
 // Header navigation
