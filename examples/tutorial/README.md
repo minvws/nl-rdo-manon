@@ -255,11 +255,11 @@ Now, our `index.html` file should look like this:
 ### Main
 
 For the main content, we will need to import the
-`layout-set`([docs](https://minvws.github.io/nl-rdo-manon/components/section#layout-set)),
-`main`, and `section`
-([docs](https://minvws.github.io/nl-rdo-manon/components/section)) components
-into our `main.scss` file. This will allow us to create a structured layout for
-our page.
+[`main`](https://minvws.github.io/nl-rdo-manon/components/main),
+[`section`](https://minvws.github.io/nl-rdo-manon/components/section) and
+[layout-set](https://minvws.github.io/nl-rdo-manon/components/layout-set),
+components into our `main.scss` file. This will allow us to create a structured
+layout for our page.
 
 Add the following imports to your `main.scss` file:
 
