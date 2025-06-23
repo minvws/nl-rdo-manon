@@ -121,7 +121,7 @@ adding more components to these files as we expand our page.
 
 Whenever you want to use additional components, you can import them in this
 `main.scss` file. See the available components that you can use in the
-[Manon documentation](https://manon.minvws.nl/).
+[Manon documentation](https://minvws.github.io/nl-rdo-manon/).
 
 Now, we can build our styles by running the following command:
 
