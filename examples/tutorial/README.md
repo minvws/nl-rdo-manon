@@ -358,9 +358,10 @@ paragraph. You can add more content to the section as needed.
 
 ### Footer
 
-To add a [footer](https://minvws.github.io/nl-rdo-manon/components/footer) to
-our page, we will import the footer component into our `main.scss` file. This
-will allow us to create a footer section with navigation links.
+To add a footer to our page, we will import the [footer
+component](https://minvws.github.io/nl-rdo-manon/components/footer) into our
+`main.scss` file. This will allow us to create a footer section with navigation
+links.
 
 Add the following import to your `main.scss` file:
 
