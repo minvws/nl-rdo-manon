@@ -13,8 +13,7 @@ We’ll cover the following topics:
 We will do this by incrementally updating our project, following the likely steps
 you would take when building a web page with Manon.
 
-You can explore the final project and its source code
-[here](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial).
+You can [explore the final project and its source code on GitHub](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial).
 
 ## Installation
 
