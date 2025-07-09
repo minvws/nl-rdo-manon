@@ -1,0 +1,34 @@
+@use "../mixin/apply-from-theme";
+@use "../mixin/notification";
+@use "../variables" as theme;
+
+p.error,
+span.error,
+section.error,
+div.error {
+  @include notification.notification;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      background-color: theme.$notification-error-background-color,
+      color: theme.$notification-error-text-color,
+      border-width: theme.$notification-error-border-width,
+      border-style: theme.$notification-error-border-style,
+      border-color: theme.$notification-error-border-color,
+    )
+  );
+
+  &::before {
+    @include apply-from-theme.apply-from-theme(
+      (
+        font-family: theme.$notification-error-icon-font-family,
+        font-size: theme.$notification-error-icon-font-size,
+        padding-right: theme.$notification-error-icon-padding-right,
+        padding-left: theme.$notification-error-icon-padding-left,
+        color: theme.$notification-error-icon-text-color,
+        margin-right: theme.$notification-error-icon-margin-right,
+        content: theme.$notification-error-icon,
+      )
+    );
+  }
+}

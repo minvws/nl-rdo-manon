@@ -1,0 +1,34 @@
+@use "../mixin/apply-from-theme";
+@use "../mixin/notification";
+@use "../variables" as theme;
+
+p.confirmation,
+span.confirmation,
+section.confirmation,
+div.confirmation {
+  @include notification.notification;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      background-color: theme.$notification-confirmation-background-color,
+      color: theme.$notification-confirmation-text-color,
+      border-width: theme.$notification-confirmation-border-width,
+      border-style: theme.$notification-confirmation-border-style,
+      border-color: theme.$notification-confirmation-border-color,
+    )
+  );
+
+  &::before {
+    @include apply-from-theme.apply-from-theme(
+      (
+        font-family: theme.$notification-confirmation-icon-font-family,
+        font-size: theme.$notification-confirmation-icon-font-size,
+        padding-right: theme.$notification-confirmation-icon-padding-right,
+        padding-left: theme.$notification-confirmation-icon-padding-left,
+        color: theme.$notification-confirmation-icon-text-color,
+        margin-right: theme.$notification-confirmation-icon-margin-right,
+        content: theme.$notification-confirmation-icon,
+      )
+    );
+  }
+}

@@ -1,0 +1,165 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+%accordion {
+  display: flex;
+  flex-direction: column;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      gap: theme.$accordion-gap,
+    )
+  );
+}
+
+%accordion-button {
+  width: 100%;
+  text-decoration: none;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      display: theme.$accordion-button-display,
+      padding: theme.$accordion-button-padding,
+      font-size: theme.$accordion-font-size,
+      justify-content: theme.$accordion-button-justify-content,
+      line-height: theme.$accordion-button-line-height,
+      color: theme.$accordion-button-text-color,
+      background-color: theme.$accordion-button-background-color,
+    )
+  );
+}
+
+%accordion-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      gap: theme.$accordion-content-gap,
+      padding: theme.$accordion-content-padding,
+      font-size: theme.$accordion-content-font-size,
+      font-weight: theme.$accordion-content-font-weight,
+      line-height: theme.$accordion-content-line-height,
+      border-width: theme.$accordion-content-border-width,
+      border-style: theme.$accordion-content-border-style,
+      border-color: theme.$accordion-content-border-color,
+      background-color: theme.$accordion-content-background-color,
+      color: theme.$accordion-content-text-color,
+    )
+  );
+
+  > *:first-child {
+    margin-top: 0;
+  }
+}
+
+ul.accordion {
+  padding-left: 0;
+  width: 100%;
+
+  @extend %accordion;
+
+  > li {
+    list-style: none;
+    width: 100%;
+    max-width: 100%;
+
+    > button {
+      @extend %accordion-button;
+    }
+
+    > div {
+      @extend %accordion-content;
+    }
+  }
+}
+
+section.accordion {
+  > div {
+    gap: 0;
+  }
+}
+
+.accordion {
+  @extend %accordion;
+
+  /* Accordion item */
+  > div {
+    width: 100%;
+
+    > button {
+      @extend %accordion-button;
+    }
+
+    > div {
+      @extend %accordion-content;
+    }
+  }
+}
+
+/* The expanded state */
+
+/* Collapsed state (only when JavaScript is loaded) */
+.js-accordion-loaded {
+  /* The collapsed state */
+  .accordion {
+    button[aria-expanded="false"] {
+      /* Open icon */
+      &::before {
+        @include apply-from-theme.apply-from-theme(
+          (
+            content: theme.$accordion-button-icon-before-open-content,
+            font-family: theme.$accordion-button-icon-font-family,
+            font-size: theme.$accordion-button-icon-before-font-size,
+          )
+        );
+      }
+
+      &::after {
+        margin-left: auto;
+        @include apply-from-theme.apply-from-theme(
+          (
+            content: theme.$accordion-button-icon-after-open-content,
+            font-family: theme.$accordion-button-icon-font-family,
+            font-size: theme.$accordion-button-icon-after-font-size,
+          )
+        );
+      }
+
+      & + div {
+        display: none;
+      }
+    }
+
+    /* The expanded state */
+    button[aria-expanded="true"] {
+      /* Close icon */
+      &::before {
+        @include apply-from-theme.apply-from-theme(
+          (
+            content: theme.$accordion-button-icon-before-close-content,
+            font-family: theme.$accordion-button-icon-font-family,
+            font-size: theme.$accordion-button-icon-before-font-size,
+            font-weight: theme.$accordion-button-icon-before-font-weight,
+            white-space: theme.$accordion-button-icon-before-white-space,
+          )
+        );
+      }
+
+      &::after {
+        @include apply-from-theme.apply-from-theme(
+          (
+            content: theme.$accordion-button-icon-after-close-content,
+            font-family: theme.$accordion-button-icon-font-family,
+            font-size: theme.$accordion-button-icon-after-font-size,
+            font-weight: theme.$accordion-button-icon-after-font-weight,
+            white-space: theme.$accordion-button-icon-after-white-space,
+            margin-left: theme.$accordion-button-icon-after-margin-left,
+          )
+        );
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+main article div {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      flex-direction: theme.$article-content-wrapper-flex-direction,
+      gap: theme.$article-content-wrapper-gap,
+      justify-content: theme.$article-content-wrapper-justify-content,
+      align-items: theme.$article-content-wrapper-align-items,
+    )
+  );
+}
+
+main > article > div,
+main.sidemenu > div > article > div {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      padding-top: theme.$article-content-wrapper-padding-top,
+      padding-right: theme.$article-content-wrapper-padding-right,
+      padding-bottom: theme.$article-content-wrapper-padding-bottom,
+      padding-left: theme.$article-content-wrapper-padding-left,
+      max-width: theme.$article-content-wrapper-max-width,
+    )
+  );
+}

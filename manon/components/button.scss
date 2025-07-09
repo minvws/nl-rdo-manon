@@ -1,0 +1,42 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+button,
+a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      // Font
+      font-size: theme.$button-font-size,
+      font-weight: theme.$button-font-weight,
+      font-family: theme.$button-font-family,
+
+      // Color
+      background-color: theme.$button-background-color,
+      color: theme.$button-text-color,
+      border-width: theme.$button-border-width,
+      border-color: theme.$button-border-color,
+      border-radius: theme.$button-border-radius,
+
+      // Padding
+      padding-top: theme.$button-padding-top,
+      padding-right: theme.$button-padding-right,
+      padding-bottom: theme.$button-padding-bottom,
+      padding-left: theme.$button-padding-left
+    )
+  );
+
+  &:hover {
+    @include apply-from-theme.apply-from-theme(
+      (
+        background-color: theme.$button-primary-hover-background-color,
+        color: theme.$button-primary-hover-text-color,
+        border-color: theme.$button-primary-hover-border-color,
+      )
+    );
+  }
+}

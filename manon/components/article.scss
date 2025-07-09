@@ -1,0 +1,23 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+main article {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      flex-direction: theme.$article-flex-direction,
+      justify-content: theme.$article-justify-content,
+      align-items: theme.$article-align-items,
+      gap: theme.$article-gap,
+      padding-top: theme.$article-padding-top,
+      padding-right: theme.$article-padding-right,
+      padding-bottom: theme.$article-padding-bottom,
+      padding-left: theme.$article-padding-left,
+      max-width: theme.$article-max-width,
+    )
+  );
+}

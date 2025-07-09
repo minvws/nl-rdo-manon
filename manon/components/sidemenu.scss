@@ -1,0 +1,191 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+$sidemenu-breakpoint: 55rem !default;
+
+body.sidemenu,
+main.sidemenu {
+  /* Places sidemenu next to the main content of the page */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      padding-top: theme.$sidemenu-main-padding-top,
+      padding-bottom: theme.$sidemenu-main-padding-bottom,
+      gap: theme.$sidemenu-main-gap,
+    )
+  );
+
+  @media (width >= $sidemenu-breakpoint) {
+    flex-wrap: nowrap;
+  }
+
+  /* main content of the page */
+  > div,
+  > article,
+  > section {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    @media (width >= $sidemenu-breakpoint) {
+      @include apply-from-theme.apply-from-theme(
+        (
+          max-width: theme.$sidemenu-max-width,
+        )
+      );
+    }
+  }
+
+  > nav {
+    display: none;
+
+    @media (width >= $sidemenu-breakpoint) {
+      /* nav */
+      margin: 0;
+      display: block;
+      box-sizing: border-box;
+      position: relative;
+
+      @include apply-from-theme.apply-from-theme(
+        (
+          width: theme.$sidemenu-nav-width,
+          padding-top: theme.$sidemenu-nav-padding-top,
+          padding-right: theme.$sidemenu-nav-padding-right,
+          padding-bottom: theme.$sidemenu-nav-padding-bottom,
+          padding-left: theme.$sidemenu-nav-padding-left,
+          background-color: theme.$sidemenu-nav-background-color,
+          border-width: theme.$sidemenu-nav-border-width,
+          border-style: theme.$sidemenu-nav-border-style,
+          border-color: theme.$sidemenu-nav-border-color,
+          background-image: theme.$sidemenu-nav-background-image,
+          background-repeat: theme.$sidemenu-nav-background-repeat,
+          background-size: theme.$sidemenu-nav-background-size,
+          background-position: theme.$sidemenu-nav-background-position,
+        )
+      );
+
+      /* List */
+      > ul {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        overflow: auto;
+        /* Solves a bug in older safari versions where position sticky blocks overflow auto */
+        display: block;
+
+        @include apply-from-theme.apply-from-theme(
+          (
+            padding: theme.$sidemenu-ul-padding,
+            max-height: theme.$sidemenu-main-max-height,
+          )
+        );
+      }
+
+      button + ul {
+        /* Compensating for the reserved space for the icon.
+		Position sticky still reserves the space within the flow. */
+        margin-top: 0;
+      }
+
+      > ul li,
+      button + ul li {
+        @include apply-from-theme.apply-from-theme(
+          (
+            background-color: theme.$sidemenu-list-item-background-color,
+            border-color: theme.$sidemenu-list-item-border-color,
+            border-style: theme.$sidemenu-list-item-border-style,
+            border-width: theme.$sidemenu-list-item-border-width,
+            padding: theme.$sidemenu-list-item-padding,
+            line-height: theme.$sidemenu-list-item-line-height,
+            font-size: theme.$sidemenu-list-item-font-size,
+            font-weight: theme.$sidemenu-list-item-font-weight,
+            color: theme.$sidemenu-list-item-text-color,
+            list-style: theme.$sidemenu-list-item-list-style,
+          )
+        );
+      }
+
+      /* Button */
+      .sidemenu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: -webkit-sticky;
+        position: sticky;
+        gap: 0;
+        z-index: 2;
+
+        /* Needed to keep the button to stick to the top */
+        top: theme.$sidemenu-toggle-button-margin-top;
+
+        @include apply-from-theme.apply-from-theme(
+          (
+            margin-left: theme.$sidemenu-toggle-button-margin-left,
+            min-width: theme.$sidemenu-toggle-button-min-width,
+            min-height: theme.$sidemenu-toggle-button-min-height,
+            font-size: theme.$sidemenu-toggle-button-font-size,
+          )
+        );
+
+        &::before {
+          //   @include icon.icon;
+
+          & {
+            @include apply-from-theme.apply-from-theme(
+              (
+                content: theme.$sidemenu-expanded-button-icon,
+                font-family: theme.$sidemenu-button-icon-font-family,
+                font-size: theme.$sidemenu-button-icon-font-size,
+
+                /* Styling options for text input instead of icons */
+                font-weight: theme.$sidemenu-button-icon-font-weight,
+                white-space: theme.$sidemenu-button-icon-white-space,
+              )
+            );
+          }
+        }
+
+        &[aria-expanded="false"] {
+          &::before {
+            @include apply-from-theme.apply-from-theme(
+              (
+                content: theme.$sidemenu-collapsed-button-icon,
+              )
+            );
+          }
+        }
+      }
+    }
+  }
+
+  &.sidemenu-closed {
+    @media (width >= $sidemenu-breakpoint) {
+      > nav {
+        border: 0;
+        width: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        > ul {
+          display: none;
+        }
+
+        .sidemenu-toggle {
+          margin-left: 0;
+        }
+      }
+
+      > div {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+/* Use to set the width of the page content. */
+.page-content {
+  width: 100%;
+}

@@ -1,0 +1,54 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+.logo,
+a.logo,
+a:visited.logo,
+a:hover.logo,
+a:active.logo,
+a:focus.logo {
+  @include apply-from-theme.apply-from-theme(
+    (
+      display: theme.$logo-display,
+      flex-direction: theme.$logo-flex-direction,
+      justify-content: theme.$logo-justify-content,
+      align-items: theme.$logo-align-items,
+      white-space: theme.$logo-white-space,
+      gap: theme.$logo-gap,
+
+      width: theme.$logo-width,
+      height: theme.$logo-height,
+
+      margin: theme.$logo-margin,
+
+      font-size: theme.$logo-font-size,
+      font-weight: theme.$logo-font-weight,
+      color: theme.$logo-text-color,
+
+      background-color: theme.$logo-background-color,
+      border-radius: theme.$logo-border-radius,
+    )
+  );
+
+  img {
+    box-sizing: border-box;
+
+    @include apply-from-theme.apply-from-theme(
+      (
+        height: theme.$logo-img-height,
+        min-height: theme.$logo-img-height,
+        max-height: theme.$logo-img-height,
+
+        width: theme.$logo-img-width,
+        min-width: theme.$logo-img-width,
+        max-width: theme.$logo-img-width,
+
+        padding: theme.$logo-img-padding,
+        border-radius: theme.$logo-img-border-radius,
+        object-position: theme.$logo-img-object-position,
+        object-fit: theme.$logo-img-object-fit,
+        background-color: theme.$logo-img-background-color,
+      )
+    );
+  }
+}

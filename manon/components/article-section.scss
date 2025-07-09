@@ -1,0 +1,25 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+article {
+  > section,
+  > div > section {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @include apply-from-theme.apply-from-theme(
+      (
+        flex-direction: theme.$article-section-flex-direction,
+        gap: theme.$article-section-gap,
+        align-items: theme.$article-section-align-items,
+        padding-top: theme.$article-section-padding-top,
+        padding-right: theme.$article-section-padding-right,
+        padding-bottom: theme.$article-section-padding-bottom,
+        padding-left: theme.$article-section-padding-left,
+        max-width: theme.$article-section-max-width,
+      )
+    );
+  }
+}

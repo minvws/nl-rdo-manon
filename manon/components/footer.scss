@@ -1,0 +1,64 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+body > footer,
+.page-footer,
+%footer-style {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      flex-direction: theme.$footer-flex-direction,
+      gap: theme.$footer-gap,
+      justify-content: theme.$footer-justify-content,
+      align-items: theme.$footer-align-items,
+      flex-wrap: theme.$footer-flex-wrap,
+      min-height: theme.$footer-min-height,
+      background-color: theme.$footer-background-color,
+      color: theme.$footer-text-color,
+      text-align: theme.$footer-text-align,
+      padding-top: theme.$footer-padding-top,
+      padding-right: theme.$footer-padding-right,
+      padding-bottom: theme.$footer-padding-bottom,
+      padding-left: theme.$footer-padding-left,
+      max-width: theme.$footer-max-width,
+    )
+  );
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  li {
+    color: inherit;
+    text-align: inherit;
+  }
+
+  nav {
+    ul,
+    ol {
+      background-color: transparent;
+
+      li {
+        list-style: theme.$footer-list-style;
+
+        &::before {
+          /* Preventing default nav before to show up */
+          display: none;
+        }
+      }
+    }
+  }
+}

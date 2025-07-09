@@ -1,0 +1,10 @@
+@use "../../core/typography/font-size/body-text" as body-text;
+
+@use "body";
+@use "de-emphasized";
+@use "emphasized";
+@use "heading";
+@use "max-line-length";
+
+$text-body-font-size: body-text.$body-text-m;
+$text-body-font-weight: regular;

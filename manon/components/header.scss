@@ -1,0 +1,46 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+body > header,
+.page-header {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      flex-direction: theme.$header-flex-direction,
+      justify-content: theme.$header-justify-content,
+      align-items: theme.$header-align-items,
+      padding-top: theme.$header-padding-top,
+      padding-right: theme.$header-padding-right,
+      padding-bottom: theme.$header-padding-bottom,
+      padding-left: theme.$header-padding-left,
+      max-width: theme.$header-max-width,
+      background-color: theme.$header-background-color,
+      min-height: theme.$header-min-height,
+      border-width: theme.$header-border-width,
+      border-style: theme.$header-border-style,
+      border-color: theme.$header-border-color,
+    )
+  );
+
+  > section,
+  > div {
+    &.content-wrapper {
+      display: flex;
+
+      @include apply-from-theme.apply-from-theme(
+        (
+          flex-direction: theme.$header-content-wrapper-flex-direction,
+          justify-content: theme.$header-content-wrapper-justify-content,
+          align-items: theme.$header-content-wrapper-align-items,
+          width: theme.$header-content-wrapper-width,
+          margin-top: theme.$header-content-wrapper-margin-top,
+          gap: theme.$header-content-wrapper-gap,
+        )
+      );
+    }
+  }
+}

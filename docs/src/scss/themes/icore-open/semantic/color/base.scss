@@ -1,0 +1,5 @@
+@use "../../core/color-scheme/" as color-scheme;
+
+$base-background-color: #{color-scheme.$oc-gray-1};
+$base-darker: #{color-scheme.$oc-gray-2};
+$base-offset: #{color-scheme.$oc-gray-0};

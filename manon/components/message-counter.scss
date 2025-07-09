@@ -1,0 +1,27 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+.message-counter {
+  display: inline-flex;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  box-sizing: initial;
+  margin: 0;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      min-width: theme.$message-counter-base-min-width,
+      height: theme.$message-counter-base-height,
+      padding: theme.$message-counter-base-padding,
+      background-color: theme.$message-counter-base-background-color,
+      color: theme.$message-counter-base-text-color,
+      font-size: theme.$message-counter-font-size,
+      border-width: theme.$message-counter-base-border-with,
+      border-style: theme.$message-counter-base-border-style,
+      border-color: theme.$message-counter-base-border-color,
+      border-radius: theme.$message-counter-base-border-radius,
+    )
+  );
+}
