@@ -1,6 +1,0 @@
-/* Manon components and theme styling */
-@forward "../../../manon/variables";
-
-/* Button */
-@use "../../../manon/components/button";
-@use "./button" as button-theme-styling;

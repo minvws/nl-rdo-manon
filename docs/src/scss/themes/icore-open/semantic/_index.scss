@@ -1,12 +1,11 @@
 @use "../core/color-scheme/" as color-scheme;
 @use "./color/" as semantic-color;
 @use "./text/" as semantic-text;
-@use "../fonts/" as font;
 
 // font
 $font-size: 1rem;
 $font-size: 1rem;
-$font-family: "IBM Plex Sans";
+$font-family: "IBM Plex Sans", sans-serif;
 $font-family-secondary: serif;
 
 // @use "base";
