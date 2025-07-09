@@ -1,0 +1,25 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+section {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      background-color: theme.$section-background-color,
+      flex-direction: theme.$section-flex-direction,
+      justify-content: theme.$section-justify-content,
+      align-items: theme.$section-align-items,
+      gap: theme.$section-gap,
+      padding-top: theme.$section-padding-top,
+      padding-right: theme.$section-padding-right,
+      padding-bottom: theme.$section-padding-bottom,
+      padding-left: theme.$section-padding-left,
+      max-width: theme.$section-max-width,
+      border-radius: theme.$section-border-radius,
+    )
+  );
+}

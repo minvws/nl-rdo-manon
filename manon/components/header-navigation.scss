@@ -1,0 +1,98 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+body > header,
+.page-header,
+%header-navigation-style {
+  width: 100%;
+  box-sizing: border-box;
+
+  /* Grouped content */
+  div {
+    display: flex;
+    flex-direction: row;
+
+    button {
+      align-self: center;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+
+    @include apply-from-theme.apply-from-theme(
+      (
+        gap: theme.$header-navigation-gap,
+        justify-content: theme.$header-navigation-justify-content,
+        align-items: theme.$header-navigation-align-items,
+        width: theme.$header-navigation-width,
+        margin: theme.$header-navigation-margin,
+        background-color: theme.$header-navigation-background-color,
+        padding-top: theme.$header-navigation-padding-top,
+        padding-right: theme.$header-navigation-padding-right,
+        padding-bottom: theme.$header-navigation-padding-bottom,
+        padding-left: theme.$header-navigation-padding-left,
+        max-width: theme.$header-navigation-max-width,
+        border-width: theme.$header-navigation-border-width,
+        border-style: theme.$header-navigation-border-style,
+        border-color: theme.$header-navigation-border-color,
+        border-radius: theme.$header-navigation-border-radius,
+        min-height: theme.$header-navigation-min-height,
+        position: theme.$header-navigation-position,
+        white-space: theme.$header-navigation-white-space,
+      )
+    );
+
+    ul,
+    ol {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+
+      @include apply-from-theme.apply-from-theme(
+        (
+          gap: theme.$header-navigation-list-gap,
+          justify-content: theme.$header-navigation-list-justify-content,
+          align-items: theme.$header-navigation-list-align-items,
+          color: theme.$header-navigation-list-text-color,
+          font-weight: theme.$header-navigation-list-font-weight,
+          width: theme.$header-navigation-list-width,
+        )
+      );
+
+      li {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        box-sizing: border-box;
+
+        @include apply-from-theme.apply-from-theme(
+          (
+            justify-content: theme.$header-navigation-list-item-justify-content,
+            align-items: theme.$header-navigation-list-item-align-items,
+            color: theme.$header-navigation-list-item-text-color,
+            background-color:
+              theme.$header-navigation-list-item-background-color,
+          )
+        );
+
+        &::before {
+          display: none;
+          /* Preventing default nav before to show up */
+        }
+      }
+    }
+
+    input {
+      @include apply-from-theme.apply-from-theme(
+        (
+          align-self: theme.$header-navigation-input-algin-self,
+        )
+      );
+    }
+  }
+}

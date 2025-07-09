@@ -1,0 +1,5 @@
+@use "../../core/color-scheme/" as color-scheme;
+
+$color-text-default: #{color-scheme.$oc-gray-9};
+$color-text-subtle: #{color-scheme.$oc-gray-7};
+$color-text-intense: #{color-scheme.$oc-gray-2};

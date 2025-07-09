@@ -1,0 +1,206 @@
+$white: #ffffff;
+$grey-50: #f3f3f3; /* Grijs 1 */
+$grey-100: #e6e6e6; /* Grijs 2 */
+$grey-200: #cccccc; /* Grijs 3 */
+$grey-300: #b4b4b4; /* Grijs 4 */
+$grey-400: #999999; /* Grijs 5 */
+$grey-500: #808080;
+$grey-600: #696969; /* Grijs 6 */
+$grey-700: #535353; /* Grijs 7 */
+$grey-800: #3d3d3d;
+$grey-900: #292929;
+$black: #000000;
+$logo-blue-100: #dce3ea; /* Logoblauw 15% */
+$logo-blue-200: #b8c6d5; /* Logoblauw 30% */
+$logo-blue-300: #95a9c0; /* Logoblauw 45% */
+$logo-blue-400: #839bb6;
+$logo-blue-500: #738eab; /* Logoblauw 60% */
+$logo-blue-600: #4f7196; /* Logoblauw 75% */
+$logo-blue-700: #305885;
+$logo-blue-800: #154273; /* Logoblauw 100% */
+$logo-blue-900: #002c5c;
+$purple-100: #e3dce7; /* Paars 15% */
+$purple-200: #d5cbdc;
+$purple-300: #c6b8ce; /* Paars 30% */
+$purple-400: #a995b7; /* Paars 45% */
+$purple-500: #8d729f; /* Paars 60% */
+$purple-600: #714f87; /* Paars 75% */
+$purple-700: #5e3c76;
+$purple-800: #502d69;
+$purple-900: #42145f; /* Paars 100% */
+$violet-100: #f2d9e7; /* Violet 15% */
+$violet-200: #e5b2cf; /* Violet 30% */
+$violet-300: #d88cb7; /* Violet 45% */
+$violet-400: #cb66a0; /* Violet 60% */
+$violet-500: #be4088; /* Violet 75% */
+$violet-600: #b32a77;
+$violet-700: #a90061; /* Violet 100% */
+$violet-800: #94004c;
+$violet-900: #7d0037;
+$ruby-red-100: #f7d9e7; /* Robijnrood 15% */
+$ruby-red-200: #efb2ce; /* Robijnrood 30% */
+$ruby-red-300: #e78cb6; /* Robijnrood 45% */
+$ruby-red-400: #df669d; /* Robijnrood 60% */
+$ruby-red-500: #d74085; /* Robijnrood 75% */
+$ruby-red-600: #ca005d; /* Robijnrood 100% */
+$ruby-red-700: #b30044;
+$ruby-red-800: #9a002d;
+$ruby-red-900: #830019;
+$pink-50: #fdeff8; /* Roze 15% */
+$pink-100: #fbdef0; /* Roze 30% */
+$pink-150: #f8cee8; /* Roze 45% */
+$pink-200: #f6bde1; /* Roze 60% */
+$pink-250: #f4add9; /* Roze 75% */
+$pink-300: #f092cd; /* Roze 100% */
+$pink-400: #e072b8;
+$pink-500: #c855a1;
+$pink-600: #b13688;
+$pink-700: #961770;
+$pink-800: #83005d;
+$pink-900: #74004d;
+$red-100: #f9dfdd; /* Rood 15% */
+$red-200: #f2bfbb; /* Rood 30% */
+$red-300: #ec9f99; /* Rood 45% */
+$red-350: #e67f78; /* Rood 60% */
+$red-400: #df6056; /* Rood 75% */
+$red-500: #d52b1e; /* Rood 100% */
+$red-600: #c30000;
+$red-700: #b20000;
+$red-800: #a00000;
+$red-900: #920000;
+$orange-100: #fbead9; /* Oranje 15% */
+$orange-150: #f6d4b2; /* Oranje 30% */
+$orange-200: #f1be8c; /* Oranje 45% */
+$orange-250: #eda966; /* Oranje 60% */
+$orange-300: #e89440; /* Oranje 75% */
+$orange-400: #e17000; /* Oranje 100% */
+$orange-500: #d25b00;
+$orange-600: #bd4000;
+$orange-700: #a52700;
+$orange-800: #910000;
+$orange-900: #7d0000;
+$dark-yellow-50: #fef4db; /* Donkergeel 15% */
+$dark-yellow-75: #fee9b7; /* Donkergeel 30% */
+$dark-yellow-100: #fdde94; /* Donkergeel 45% */
+$dark-yellow-150: #fdd370; /* Donkergeel 60% */
+$dark-yellow-200: #fdc84d; /* Donkergeel 75% */
+$dark-yellow-250: #ffb612; /* Donkergeel 100% */
+$dark-yellow-300: #f7a500;
+$dark-yellow-400: #de8500;
+$dark-yellow-500: #c66900;
+$dark-yellow-600: #ac5000;
+$dark-yellow-700: #923600;
+$dark-yellow-800: #7b1e00;
+$dark-yellow-900: #680100;
+$yellow-25: #fefbdd; /* Geel 15% */
+$yellow-50: #fdf6bb; /* Geel 30% */
+$yellow-75: #fcf199; /* Geel 45% */
+$yellow-100: #fbed78; /* Geel 60% */
+$yellow-125: #fae856; /* Geel 75% */
+$yellow-150: #f9e11e; /* Geel 100% */
+$yellow-200: #eed300;
+$yellow-300: #d2b500;
+$yellow-400: #b99b00;
+$yellow-500: #a18100;
+$yellow-600: #896900;
+$yellow-700: #725100;
+$yellow-800: #5e3c00;
+$yellow-900: #4d2b00;
+$dark-brown-100: #e8e0df; /* Donkerbruin 15% */
+$dark-brown-200: #e0d2cf;
+$dark-brown-250: #d1c1bd; /* Donkerbruin 30% */
+$dark-brown-300: #baa39d; /* Donkerbruin 45% */
+$dark-brown-400: #af938b;
+$dark-brown-450: #a3847d; /* Donkerbruin 60% */
+$dark-brown-500: #99776f;
+$dark-brown-600: #8d665d; /* Donkerbruin 75% */
+$dark-brown-700: #75483d;
+$dark-brown-800: #673327; /* Donkerbruin 100% */
+$dark-brown-900: #542115;
+$brown-100: #efeada; /* Bruin 15% */
+$brown-150: #dfd4b5; /* Bruin 30% */
+$brown-200: #cfbf90; /* Bruin 45% */
+$brown-300: #bfa96c; /* Bruin 60% */
+$brown-400: #af9447; /* Bruin 75% */
+$brown-500: #9e7d2b;
+$brown-550: #94710a; /* Bruin 100% */
+$brown-600: #8a6500;
+$brown-700: #744d00;
+$brown-800: #603a00;
+$brown-900: #4f2900;
+$dark-green-100: #dee6e1; /* Donkergroen 15% */
+$dark-green-200: #bdcdc2; /* Donkergroen 30% */
+$dark-green-300: #9db4a4; /* Donkergroen 45% */
+$dark-green-400: #7d9b87; /* Donkergroen 60% */
+$dark-green-500: #5d8269; /* Donkergroen 75% */
+$dark-green-600: #436f4f;
+$dark-green-700: #275937; /* Donkergroen 100% */
+$dark-green-800: #0a4723;
+$dark-green-900: #003810;
+$green-100: #e1edda; /* Groen 15% */
+$green-200: #c3dbb5; /* Groen 30% */
+$green-250: #a5c991; /* Groen 45% */
+$green-300: #88b76d; /* Groen 60% */
+$green-400: #6aa549; /* Groen 75% */
+$green-500: #539738;
+$green-600: #39870c; /* Groen 100% */
+$green-650: #237600;
+$green-700: #026900;
+$green-800: #005500;
+$green-900: #004400;
+$moss-green-100: #ebebd9; /* Mosgroen 15% */
+$moss-green-200: #d6d7b2; /* Mosgroen 30% */
+$moss-green-250: #c1c38c; /* Mosgroen 45% */
+$moss-green-300: #adaf66; /* Mosgroen 60% */
+$moss-green-400: #999c40; /* Mosgroen 75% */
+$moss-green-500: #858a25;
+$moss-green-550: #777b00; /* Mosgroen 100% */
+$moss-green-600: #6e7200;
+$moss-green-700: #585b00;
+$moss-green-800: #464700;
+$moss-green-900: #363700;
+$mint-green-50: #eaf8f4; /* Mintgroen 15% */
+$mint-green-100: #d5f1e9; /* Mintgroen 30% */
+$mint-green-125: #c1ebde; /* Mintgroen 45% */
+$mint-green-150: #ace4d3; /* Mintgroen 60% */
+$mint-green-200: #98ddc8; /* Mintgroen 75% */
+$mint-green-300: #76d2b6; /* Mintgroen 100% */
+$mint-green-400: #56b499;
+$mint-green-500: #32977c;
+$mint-green-600: #007f65;
+$mint-green-700: #00674e;
+$mint-green-800: #00543c;
+$mint-green-900: #00432c;
+$dark-blue-100: #d9e8f0; /* Donkerblauw 15% */
+$dark-blue-200: #b2d1e1; /* Donkerblauw 30% */
+$dark-blue-300: #8cbbd2; /* Donkerblauw 45% */
+$dark-blue-400: #66a4c3; /* Donkerblauw 60% */
+$dark-blue-500: #408eb4; /* Donkerblauw 75% */
+$dark-blue-600: #01689b; /* Donkerblauw 100% */
+$dark-blue-700: #005487;
+$dark-blue-800: #003f71;
+$dark-blue-900: #002b5c;
+$sky-blue-100: #d9ebf7; /* Hemelblauw 15% */
+$sky-blue-200: #b2d7ee; /* Hemelblauw 30% */
+$sky-blue-300: #8cc3e6; /* Hemelblauw 45% */
+$sky-blue-350: #66afdd; /* Hemelblauw 60% */
+$sky-blue-400: #409cd5; /* Hemelblauw 75% */
+$sky-blue-500: #2c89d0;
+$sky-blue-550: #007bc7; /* Hemelblauw 100% */
+$sky-blue-600: #0070bb;
+$sky-blue-700: #005ca5;
+$sky-blue-800: #00438b;
+$sky-blue-900: #003179;
+$light-blue-50: #eef7fc; /* Lichtblauw 15% */
+$light-blue-100: #ddeff8; /* Lichtblauw 30% */
+$light-blue-125: #cce7f4; /* Lichtblauw 45% */
+$light-blue-150: #bcdff0; /* Lichtblauw 60% */
+$light-blue-200: #abd7ed; /* Lichtblauw 75% */
+$light-blue-250: #8fcae7; /* Lichtblauw 100% */
+$light-blue-300: #7fbcda;
+$light-blue-400: #66a5c3;
+$light-blue-500: #4e8ca9;
+$light-blue-600: #357490;
+$light-blue-700: #185d79;
+$light-blue-800: #004964;
+$light-blue-900: #003953;

@@ -1,0 +1,26 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+.breadcrumb-bar {
+  > div,
+  > div div {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @include apply-from-theme.apply-from-theme(
+      (
+        flex-direction: theme.$breadcrumb-bar-content-wrapper-flex-direction,
+        justify-content: theme.$breadcrumb-bar-content-wrapper-justify-content,
+        align-items: theme.$breadcrumb-bar-content-wrapper-align-items,
+        gap: theme.$breadcrumb-bar-content-wrapper-gap,
+        padding-top: theme.$breadcrumb-bar-content-wrapper-padding-top,
+        padding-right: theme.$breadcrumb-bar-content-wrapper-padding-right,
+        padding-bottom: theme.$breadcrumb-bar-content-wrapper-padding-bottom,
+        padding-left: theme.$breadcrumb-bar-content-wrapper-padding-left,
+        max-width: theme.$breadcrumb-bar-content-wrapper-max-width,
+      )
+    );
+  }
+}

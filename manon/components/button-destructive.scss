@@ -1,0 +1,29 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+button,
+a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  &.destructive {
+    @include apply-from-theme.apply-from-theme(
+      (
+        background-color: theme.$button-destructive-background-color,
+        color: theme.$button-destructive-text-color,
+        border-color: theme.$button-destructive-border-color,
+      )
+    );
+
+    &:hover {
+      @include apply-from-theme.apply-from-theme(
+        (
+          background-color:
+            theme.$button-destructive-primary-hover-background-color,
+          color: theme.$button-destructive-primary-hover-text-color,
+          border-color: theme.$button-destructive-primary-hover-border-color,
+        )
+      );
+    }
+  }
+}

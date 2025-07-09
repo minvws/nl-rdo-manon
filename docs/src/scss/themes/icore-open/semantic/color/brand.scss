@@ -1,0 +1,11 @@
+@use "../../core/color-scheme/" as color-scheme;
+
+/* Primary */
+$color-brand-primary-default: #{color-scheme.$oc-blue-8};
+$color-brand-primary-muted: #{color-scheme.$oc-blue-3};
+$color-brand-primary-subtle: #{color-scheme.$oc-blue-0};
+
+/* Secundary */
+$color-brand-secundary-default: #{color-scheme.$oc-gray-9};
+$color-brand-secundary-muted: #{color-scheme.$oc-gray-7};
+$color-brand-secundary-subtle: #{color-scheme.$oc-gray-2};

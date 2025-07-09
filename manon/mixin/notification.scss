@@ -1,0 +1,56 @@
+@use "icon";
+@use "apply-from-theme";
+@use "../variables" as theme;
+
+@mixin notification {
+  max-width: 100%;
+  width: 100%;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      background-color: theme.$notification-background-color,
+      color: theme.$notification-text-color,
+    )
+  );
+
+  span:first-of-type {
+    @include apply-from-theme.apply-from-theme(
+      (
+        font-weight: theme.$notification-span-font-weight,
+      )
+    );
+  }
+}
+
+.notification {
+  @include notification;
+}
+
+/* Icon */
+p,
+span,
+section,
+div {
+  &.error,
+  &.warning,
+  &.explanation,
+  &.confirmation,
+  &.system {
+    &::before {
+      @include icon.icon;
+
+      & {
+        @include apply-from-theme.apply-from-theme(
+          (
+            font-family: theme.$notification-icon-font-family,
+            font-size: theme.$notification-icon-font-size,
+            padding-right: theme.$notification-icon-padding-right,
+            padding-left: theme.$notification-icon-padding-left,
+            color: theme.$notification-icon-text-color,
+            margin-right: theme.$notification-icon-margin-right,
+          )
+        );
+      }
+    }
+  }
+}

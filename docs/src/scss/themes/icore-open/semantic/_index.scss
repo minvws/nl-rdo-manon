@@ -1,0 +1,67 @@
+@use "../core/color-scheme/" as color-scheme;
+@use "./color/" as semantic-color;
+@use "./text/" as semantic-text;
+@use "../fonts/" as font;
+
+// font
+$font-size: 1rem;
+$font-size: 1rem;
+$font-family: "IBM Plex Sans";
+$font-family-secondary: serif;
+
+// @use "base";
+$base-background-color: #{color-scheme.$oc-gray-1};
+$base-darker: #{color-scheme.$oc-gray-2};
+$base-offset: #{color-scheme.$oc-gray-0};
+
+// @use "border";
+$color-border-default: #{color-scheme.$oc-gray-4};
+$color-border-subtle: #{color-scheme.$oc-gray-2};
+$color-border-intense: #{color-scheme.$oc-gray-6};
+
+// @use "brand";
+/* Primary */
+$color-brand-primary-default: #{color-scheme.$oc-blue-8};
+$color-brand-primary-muted: #{color-scheme.$oc-blue-3};
+$color-brand-primary-subtle: #{color-scheme.$oc-blue-0};
+
+/* Secundary */
+$color-brand-secundary-default: #{color-scheme.$oc-gray-9};
+$color-brand-secundary-muted: #{color-scheme.$oc-gray-7};
+$color-brand-secundary-subtle: #{color-scheme.$oc-gray-2};
+
+// @use "destructive";
+$color-destructive-default: #{color-scheme.$oc-red-8};
+$color-destructive-subtle: #{color-scheme.$oc-red-2};
+$color-destructive-intense: #{color-scheme.$oc-red-9};
+
+// @use "notification";
+/* Explanation */
+$color-notification-explanation-default: #{color-scheme.$oc-blue-0};
+$color-notification-explanation-subtle: #{color-scheme.$oc-blue-0};
+$color-notification-explanation-intense: #{color-scheme.$oc-blue-7};
+
+/* Confirmation */
+$color-notification-confirmation-default: #{color-scheme.$oc-green-0};
+$color-notification-confirmation-subtle: #{color-scheme.$oc-green-0};
+$color-notification-confirmation-intense: #{color-scheme.$oc-green-7};
+
+/* Warning */
+$color-notification-warning-default: #{color-scheme.$oc-yellow-0};
+$color-notification-warning-subtle: #{color-scheme.$oc-yellow-1};
+$color-notification-warning-intense: #{color-scheme.$oc-yellow-5};
+
+/* Error */
+$color-notification-error-default: #{color-scheme.$oc-red-0};
+$color-notification-error-subtle: #{color-scheme.$oc-red-1};
+$color-notification-error-intense: #{color-scheme.$oc-red-7};
+
+/* System */
+$color-notification-system-default: #{color-scheme.$oc-gray-0};
+$color-notification-system-subtle: #{color-scheme.$oc-gray-2};
+$color-notification-system-intense: #{color-scheme.$oc-gray-9};
+
+// @use "text";
+$color-text-default: #{color-scheme.$oc-gray-9};
+$color-text-subtle: #{color-scheme.$oc-gray-7};
+$color-text-intense: #{color-scheme.$oc-gray-2};

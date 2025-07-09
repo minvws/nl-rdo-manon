@@ -1,0 +1,79 @@
+// icore open theme styling
+
+/* Core variables */
+/* These are core sets like color schemes, fonts
+and spacing sets */
+@use "core/border-radii" as border-radii;
+@use "core/color-scheme/" as color-scheme;
+@use "core/shadow" as shadow;
+@use "core/spacing" as spacing;
+@use "core/typography/font-size/body-text" as body-text;
+@use "core/typography/font-size/heading" as heading;
+@use "core/typography/font-style" as font-style;
+@use "core/typography/font-weight" as font-weight;
+@use "core/typography/letter-spacing" as letter-spacing;
+@use "core/typography/line-height" as line-height;
+@use "core/typography/paragraph-spacing" as paragraph-spacing;
+
+/* Semantic variables */
+/* These are variables that have a semantic value. Like branding color */
+@use "semantic" as semantic;
+
+/* Component variables */
+@use "@minvws/manon/variables" with (
+  // base
+  $base-background-color: #{semantic.$base-background-color},
+
+  // button
+  $button-text-color: #{color-scheme.$white},
+  $button-background-color: #{semantic.$color-brand-primary},
+  $button-border-width: 0,
+  $button-border-color: #{semantic.$color-brand-primary},
+  $button-padding-top: #{spacing.$spacing-075},
+  $button-padding-right: #{spacing.$spacing-100},
+  $button-padding-bottom: #{spacing.$spacing-075},
+  $button-padding-left: #{spacing.$spacing-100},
+
+  // button hover
+  $button-primary-hover-background-color: #{color-scheme.$dark-blue-800},
+  $button-primary-hover-text-color: #{color-scheme.$white},
+  $button-primary-hover-border-color: #{color-scheme.$dark-blue-800},
+
+  // button destructive
+  $button-destructive-background-color: #{semantic.$color-destructive-default},
+  $button-destructive-text-color: #{color-scheme.$white},
+  $button-destructive-border-color: #{semantic.$color-destructive-default},
+
+  // button destructive hover
+  $button-destructive-primary-hover-background-color: #{semantic.$color-destructive-intense},
+  $button-destructive-primary-hover-text-color: #{color-scheme.$white},
+  $button-destructive-primary-hover-border-color: #{semantic.$color-destructive-intense},
+
+  // footer
+  $footer-background-color: #{semantic.$color-brand-primary},
+  $footer-text-color: #{color-scheme.$white},
+  $footer-padding-top: #{spacing.$spacing-400},
+  $footer-padding-right: #{spacing.$spacing-400},
+  $footer-padding-bottom: #{spacing.$spacing-400},
+  $footer-padding-left: #{spacing.$spacing-400},
+  $footer-list-style: none,
+  $footer-gap: #{spacing.$spacing-100},
+  $footer-flex-wrap: wrap,
+  $footer-justify-content: space-between,
+
+  // list
+  $list-padding: 0,
+
+  // section
+  $section-padding-top: #{spacing.$spacing-100},
+  $section-padding-right: #{spacing.$spacing-100},
+  $section-padding-bottom: #{spacing.$spacing-100},
+  $section-padding-left: #{spacing.$spacing-100},
+  $section-max-width: 90rem,
+  $section-gap: #{spacing.$spacing-300},
+  $section-flex-direction: column,
+
+  // helpers
+  $horizontal-gap: #{spacing.$spacing-100},
+  $vertical-gap: #{spacing.$spacing-100}
+);

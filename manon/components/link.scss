@@ -1,0 +1,22 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+a {
+  @include apply-from-theme.apply-from-theme(
+    (
+      color: theme.$link-text-color,
+    )
+  );
+
+  &:hover {
+    color: theme.$link-hover-text-color;
+  }
+
+  &:visited {
+    color: theme.$link-visited-text-color;
+
+    &:hover {
+      color: theme.$link-visited-hover-text-color;
+    }
+  }
+}

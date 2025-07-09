@@ -1,0 +1,143 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+.page-header .breadcrumb-bar,
+.breadcrumb-bar {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      flex-direction: theme.$breadcrumb-bar-flex-direction,
+      justify-content: theme.$breadcrumb-bar-justify-content,
+      align-items: theme.$breadcrumb-bar-align-items,
+      gap: theme.$breadcrumb-bar-gap,
+      min-height: theme.$breadcrumb-bar-min-height,
+      padding-top: theme.$breadcrumb-bar-padding-top,
+      padding-right: theme.$breadcrumb-bar-padding-right,
+      padding-bottom: theme.$breadcrumb-bar-padding-bottom,
+      padding-left: theme.$breadcrumb-bar-padding-left,
+      max-width: theme.$breadcrumb-bar-max-width,
+      background-color: theme.$breadcrumb-bar-background-color,
+      color: theme.$breadcrumb-bar-text-color,
+      border-width: theme.$breadcrumb-bar-border-width,
+      border-style: theme.$breadcrumb-bar-border-style,
+      border-color: theme.$breadcrumb-bar-border-color,
+      border-radius: theme.$breadcrumb-bar-border-radius,
+    )
+  );
+
+  ul,
+  ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: inherit;
+    background-color: transparent;
+
+    @include apply-from-theme.apply-from-theme(
+      (
+        flex-direction: theme.$breadcrumb-bar-flex-direction,
+        justify-content: theme.$breadcrumb-bar-justify-content,
+        align-items: theme.$breadcrumb-bar-align-items,
+        gap: theme.$breadcrumb-bar-gap,
+        min-height: theme.$breadcrumb-bar-min-height,
+        padding-top: theme.$breadcrumb-bar-padding-top,
+        padding-right: theme.$breadcrumb-bar-padding-right,
+        padding-bottom: theme.$breadcrumb-bar-padding-bottom,
+        padding-left: theme.$breadcrumb-bar-padding-left,
+        max-width: theme.$breadcrumb-bar-max-width,
+        background-color: theme.$breadcrumb-bar-background-color,
+        color: theme.$breadcrumb-bar-text-color,
+        border-width: theme.$breadcrumb-bar-border-width,
+        border-style: theme.$breadcrumb-bar-border-style,
+        border-color: theme.$breadcrumb-bar-border-color,
+        border-radius: theme.$breadcrumb-bar-border-radius,
+      )
+    );
+
+    li {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      list-style: none;
+
+      @include apply-from-theme.apply-from-theme(
+        (
+          gap: theme.$breadcrumb-bar-list-item-gap,
+        )
+      );
+
+      &::before {
+        display: none;
+        /* Preventing default nav before to show up */
+      }
+
+      &::after {
+        & {
+          @include apply-from-theme.apply-from-theme(
+            (
+              margin-left: theme.$breadcrumb-bar-icon-margin-left,
+              margin-right: theme.$breadcrumb-bar-icon-margin-right,
+            )
+          );
+        }
+      }
+
+      &:hover {
+        @include apply-from-theme.apply-from-theme(
+          (
+            color: theme.$breadcrumb-bar-hover-text-color,
+          )
+        );
+
+        &::after {
+          @include apply-from-theme.apply-from-theme(
+            (
+              color: theme.$breadcrumb-bar-text-color,
+            )
+          );
+        }
+      }
+
+      &:last-child {
+        @include apply-from-theme.apply-from-theme(
+          (
+            font-weight: theme.$breadcrumb-bar-list-item-last-child-font-weight,
+          )
+        );
+
+        &::after {
+          content: none;
+        }
+      }
+
+      a {
+        /* Break words that won't fit the available space */
+        overflow-wrap: anywhere;
+
+        @include apply-from-theme.apply-from-theme(
+          (
+            white-space: theme.$breadcrumb-bar-link-white-space,
+            padding-right: theme.$breadcrumb-bar-link-padding-right,
+            padding-left: theme.$breadcrumb-bar-link-padding-left,
+          )
+        );
+
+        &:hover {
+          border: 0;
+
+          @include apply-from-theme.apply-from-theme(
+            (
+              text-decoration: theme.$breadcrumb-bar-link-hover-text-decoration,
+            )
+          );
+        }
+      }
+    }
+  }
+}

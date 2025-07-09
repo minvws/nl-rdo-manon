@@ -1,0 +1,26 @@
+@use "../../core/color-scheme/" as color-scheme;
+
+/* Explanation */
+$color-notification-explanation-default: #{color-scheme.$light-blue-100};
+$color-notification-explanation-subtle: #{color-scheme.$light-blue-100};
+$color-notification-explanation-intense: #{color-scheme.$light-blue-200};
+
+/* Confirmation */
+$color-notification-confirmation-default: #{color-scheme.$green-100};
+$color-notification-confirmation-subtle: #{color-scheme.$green-200};
+$color-notification-confirmation-intense: #{color-scheme.$green-500};
+
+/* Warning */
+$color-notification-warning-default: #{color-scheme.$dark-yellow-50};
+$color-notification-warning-subtle: #{color-scheme.$dark-yellow-100};
+$color-notification-warning-intense: #{color-scheme.$dark-yellow-200};
+
+/* Error */
+$color-notification-error-default: #{color-scheme.$red-100};
+$color-notification-error-subtle: #{color-scheme.$red-200};
+$color-notification-error-intense: #{color-scheme.$red-500};
+
+/* System */
+$color-notification-system-default: #{color-scheme.$grey-50};
+$color-notification-system-subtle: #{color-scheme.$grey-100};
+$color-notification-system-intense: #{color-scheme.$grey-300};

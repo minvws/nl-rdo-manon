@@ -1,11 +1,50 @@
 /* Main project styles */
-@use "manon-components"; /* Manon components */
-@use "docs"; /* Docs overrides which aren't theme related */
-@use "docs-icons";
+// @use "manon-components"; /* Manon components */
+// @use "docs"; /* Docs overrides which aren't theme related */
+// @use "docs-icons";
 
 /* Styling for visual examples out of their usual html-structure */
-@use "documentation-example-footer";
-@use "documentation-example-main";
+// @use "documentation-example-footer";
+// @use "documentation-example-main";
 
 /* Theme */
-@use "@minvws/manon-themes/icore-open";
+// @use "@minvws/manon-themes/icore-open";
+
+// Themes
+// @use "themes/rijkshuisstijl-2008";
+@use "themes/icore-open";
+// @use "themes/kat";
+
+// Manon components
+@use "@minvws/manon/components/accordion";
+// @use "@minvws/manon/components/article-content-wrapper";
+@use "@minvws/manon/components/article-section-divider-line";
+@use "@minvws/manon/components/article-section";
+@use "@minvws/manon/components/article";
+@use "@minvws/manon/components/background-color-offset";
+@use "@minvws/manon/components/base";
+@use "@minvws/manon/components/breadcrumb-bar-content-block";
+@use "@minvws/manon/components/breadcrumb-bar-content-wrapper";
+@use "@minvws/manon/components/breadcrumb-bar";
+@use "@minvws/manon/components/button-destructive";
+@use "@minvws/manon/components/button";
+@use "@minvws/manon/components/footer";
+@use "@minvws/manon/components/header";
+@use "@minvws/manon/components/header-navigation";
+@use "@minvws/manon/components/heading";
+@use "@minvws/manon/components/horizontal";
+@use "@minvws/manon/components/max-line-length";
+@use "@minvws/manon/components/message-counter";
+@use "@minvws/manon/components/notification-error";
+@use "@minvws/manon/components/notification-explanation";
+@use "@minvws/manon/components/notification-confirmation";
+@use "@minvws/manon/components/notification-warning";
+@use "@minvws/manon/components/notification-system";
+@use "@minvws/manon/components/link";
+@use "@minvws/manon/components/list";
+@use "@minvws/manon/components/logo";
+@use "@minvws/manon/components/main";
+@use "@minvws/manon/components/section";
+@use "@minvws/manon/components/sidemenu";
+@use "@minvws/manon/components/skip-to-content";
+@use "@minvws/manon/components/vertical";

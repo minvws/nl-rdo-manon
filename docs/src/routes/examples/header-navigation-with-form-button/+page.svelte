@@ -3,7 +3,7 @@
 </script>
 
 <header>
-  <div>
+  <div class="content-wrapper">
     <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
     <nav

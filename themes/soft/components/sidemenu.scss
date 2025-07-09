@@ -1,9 +1,0 @@
-/* Side menu */
-
-@use "sass:map";
-@use "icon";
-
-:root {
-  --sidemenu-collapsed-button-icon: #{map.get(icon.$glyphs, descending)};
-  --sidemenu-expanded-button-icon: #{map.get(icon.$glyphs, ascending)};
-}
