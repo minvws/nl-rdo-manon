@@ -6,11 +6,11 @@ title: Getting Started with Manon
 
 ## Prerequisites
 
-Make sure that your project is setup to use Sass and that you have a Sass
+Make sure that your project is set up to use Sass and that you have a Sass
 compiler installed. If your build system does not support Sass, you can 
 install [the Sass command line tool](https://sass-lang.com/documentation/cli/dart-sass/).
 
-```console
+```bash
 npm install sass
 ```
 
@@ -19,7 +19,7 @@ npm install sass
 We need to install the Manon package and the themes package to use the
 components and styles.
 
-```console
+```bash
 npm install @minvws/manon
 npm install @minvws/manon-themes
 ```
@@ -42,13 +42,13 @@ choice.
 ## Usage
 
 You're now ready to use the components in your HTML. Follow the instructions
-in the [Component library](https://minvws.github.io/nl-rdo-manon/components),
+in the [Component library](https://minvws.github.io/nl-rdo-manon/components)
 on how to use the components in your HTML. Each component has its own
 page with examples and code snippets.
 
 You can also follow the [tutorial](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial)
 to learn how to use the components in a more structured way.
 
-Additionally we've provided [some example
+Additionally, we've provided [some example
 implementations](https://github.com/minvws/nl-rdo-manon/tree/main/examples/) in
-a few different framework.
+a few different frameworks.
