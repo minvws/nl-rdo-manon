@@ -1,21 +1,10 @@
-/*---------------------------------------------------------------*/
-/*--------------------- button-container.scss -------------------*/
-/*---------------------------------------------------------------*/
-@use "button-container-variables";
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
 
 $breakpoint: 24rem !default;
 
 .button-container {
   display: flex;
-  flex-direction: var(--button-container-flex-direction);
-  align-items: var(--button-container-align-items);
-  flex-wrap: var(--button-container-flex-wrap);
-  gap: var(--button-container-gap);
-
-  padding-top: var(--button-container-padding-top);
-  padding-right: var(--button-container-padding-right);
-  padding-bottom: var(--button-container-padding-bottom);
-  padding-left: var(--button-container-padding-left);
   margin: 0;
 
   button,
@@ -38,4 +27,17 @@ $breakpoint: 24rem !default;
       flex-grow: 0;
     }
   }
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      flex-direction: theme.$button-container-flex-direction,
+      align-items: theme.$button-container-align-items,
+      flex-wrap: theme.$button-container-flex-wrap,
+      gap: theme.$button-container-gap,
+      padding-top: theme.$button-container-padding-top,
+      padding-right: theme.$button-container-padding-right,
+      padding-bottom: theme.$button-container-padding-bottom,
+      padding-left: theme.$button-container-padding-left,
+    )
+  );
 }
