@@ -10,7 +10,7 @@ Make sure that your project is set up to use Sass and that you have a Sass
 compiler installed. If your build system does not support Sass, you can 
 install [the Sass command line tool](https://sass-lang.com/documentation/cli/dart-sass/).
 
-```bash
+```
 npm install sass
 ```
 
@@ -19,7 +19,7 @@ npm install sass
 We need to install the Manon package and the themes package to use the
 components and styles.
 
-```bash
+```
 npm install @minvws/manon
 npm install @minvws/manon-themes
 ```
