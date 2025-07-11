@@ -1,0 +1,22 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+*:disabled,
+*.disabled {
+  @include apply-from-theme.apply-from-theme(
+    (
+      cursor: theme.$disabled-cursor,
+      opacity: theme.$disabled-opacity,
+    )
+  );
+
+  & + label,
+  & + label::before {
+    @include apply-from-theme.apply-from-theme(
+      (
+        cursor: theme.$disabled-cursor,
+        opacity: theme.$disabled-opacity,
+      )
+    );
+  }
+}
