@@ -1,38 +1,38 @@
-/*---------------------------------------------------------------*/
-/*------------------------ checkbox.scss ------------------------*/
-/*---------------------------------------------------------------*/
-@use "checkbox-variables";
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
 
 .checkbox {
   padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  
   @include apply-from-theme.apply-from-theme(
     (
       gap: theme.$checkbox-gap,
       align-items: theme.$checkbox-align-items,
-    ));
+    )
+  );
 
   input[type="checkbox"] {
     padding: 0;
     cursor: pointer;
-    
+
     @include apply-from-theme.apply-from-theme(
-    (
-      width: theme.$checkbox-width,
-      min-width: theme.$checkbox-width,
-      height: theme.$checkbox-height,
-      min-height: theme.$checkbox-height,
-      accent-color: theme.$checkbox-accent-color,
-    ));
+      (
+        width: theme.$checkbox-width,
+        min-width: theme.$checkbox-width,
+        height: theme.$checkbox-height,
+        min-height: theme.$checkbox-height,
+        accent-color: theme.$checkbox-accent-color,
+      )
+    );
 
     & + label {
       @include apply-from-theme.apply-from-theme(
         (
-      width: theme.$checkbox-label-width,
-    ));
+          width: theme.$checkbox-label-width,
+        )
+      );
       cursor: pointer;
     }
 
@@ -48,11 +48,13 @@
   &.required {
     flex-direction: column;
     align-items: flex-start;
-    
+
     @include apply-from-theme.apply-from-theme(
-      gap: theme.$checkbox-required-gap,
-      justify-content: theme.$radio-align-items,
-    ));
+      (
+        gap: theme.$checkbox-required-gap,
+        justify-content: theme.$radio-align-items,
+      )
+    );
 
     > div {
       padding: 0;
@@ -60,8 +62,10 @@
       flex-direction: row;
 
       @include apply-from-theme.apply-from-theme(
-        gap: theme.$checkbox-gap,
-      ));
+        (
+          gap: theme.$checkbox-gap,
+        )
+      );
     }
   }
 
@@ -70,7 +74,9 @@
     margin-bottom: 0;
 
     @include apply-from-theme.apply-from-theme(
-      margin-left: calc(theme.$checkbox-width + theme.$checkbox-gap),
-    ));
+      (
+        margin-left: calc(theme.$checkbox-width + theme.$checkbox-gap),
+      )
+    );
   }
 }
