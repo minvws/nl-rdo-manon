@@ -1,3 +1,6 @@
+@use "@minvws/manon-themes/icore-open";
+// @use "@minvws/manon-themes/kat";
+
 @use "@minvws/manon/components/accordion";
 @use "@minvws/manon/components/article-section-divider-line";
 @use "@minvws/manon/components/article-section";
@@ -29,5 +32,3 @@
 @use "@minvws/manon/components/sidemenu";
 @use "@minvws/manon/components/skip-to-content";
 @use "@minvws/manon/components/vertical";
-
-@use "@minvws/manon-themes/icore-open";

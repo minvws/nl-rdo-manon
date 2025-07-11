@@ -1,0 +1,5 @@
+@use "../../core/color-scheme/" as color-scheme;
+
+$color-destructive-default: #{color-scheme.$oc-red-8};
+$color-destructive-subtle: #{color-scheme.$oc-red-9};
+$color-destructive-intense: #{color-scheme.$oc-red-2};
