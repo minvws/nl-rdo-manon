@@ -9,21 +9,13 @@ div.code-block {
   width: 100%;
   box-sizing: border-box;
   margin: 0;
+
   @include apply-from-theme.apply-from-theme(
     (
       max-width: theme.$code-block-max-width,
-      padding: (
-        theme.$code-block-padding,
-        1rem,
-      ),
-      background-color: (
-        theme.$code-block-background-color,
-        #f0f0f0,
-      ),
-      color: (
-        theme.$code-block-text-color,
-        #000,
-      ),
+      padding: theme.$code-block-padding,
+      background-color: theme.$code-block-background-color,
+      color: theme.$code-block-text-color,
       border-width: theme.$code-block-border-width,
       border-style: theme.$code-block-border-style,
       border-color: theme.$code-block-border-color,
