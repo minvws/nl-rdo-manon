@@ -1,22 +1,7 @@
-/* Main project styles */
-// @use "manon-components"; /* Manon components */
-// @use "docs"; /* Docs overrides which aren't theme related */
-// @use "docs-icons";
+@use "@minvws/manon-themes/icore-open";
+// @use "@minvws/manon-themes/kat";
 
-/* Styling for visual examples out of their usual html-structure */
-// @use "documentation-example-footer";
-// @use "documentation-example-main";
-
-/* Theme */
-// @use "@minvws/manon-themes/icore-open";
-
-// Themes
-@use "themes/icore-open";
-// @use "themes/kat";
-
-// Manon components
 @use "@minvws/manon/components/accordion";
-// @use "@minvws/manon/components/article-content-wrapper";
 @use "@minvws/manon/components/article-section-divider-line";
 @use "@minvws/manon/components/article-section";
 @use "@minvws/manon/components/article";
