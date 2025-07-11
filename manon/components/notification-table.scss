@@ -1,5 +1,5 @@
-@use "../mixin/apply-from-theme";
-@use "../mixin/notification";
+@use "../mixins/apply-from-theme";
+@use "../mixins/notification";
 @use "../variables" as theme;
 
 table {
