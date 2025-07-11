@@ -73,10 +73,17 @@
     padding-bottom: 0;
     margin-bottom: 0;
 
-    @include apply-from-theme.apply-from-theme(
-      (
-        margin-left: calc(theme.$checkbox-width + theme.$checkbox-gap),
-      )
-    );
+    $styles: ();
+
+    /* We can not calculate with null values */
+    @if theme.$checkbox-width != null and theme.$checkbox-gap != null {
+      $styles: map-merge(
+        $styles,
+        (
+          margin-left: calc(theme.$checkbox-width + theme.$checkbox-gap),
+        )
+      );
+    }
+    @include apply-from-theme.apply-from-theme($styles);
   }
 }
