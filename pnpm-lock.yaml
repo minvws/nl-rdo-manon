@@ -18,7 +18,7 @@ importers:
         version: link:../manon
       '@minvws/manon-themes':
         specifier: workspace:*
-        version: link:../themes
+        version: link:../manon-themes
       highlight.js:
         specifier: ^11.11.1
         version: 11.11.1
@@ -67,7 +67,7 @@ importers:
         version: link:../../manon
       '@minvws/manon-themes':
         specifier: workspace:*
-        version: link:../../themes
+        version: link:../../manon-themes
     devDependencies:
       sass:
         specifier: ^1.89.2
@@ -80,7 +80,7 @@ importers:
         version: link:../../manon
       '@minvws/manon-themes':
         specifier: workspace:*
-        version: link:../../themes
+        version: link:../../manon-themes
     devDependencies:
       sass:
         specifier: ^1.89.2
@@ -101,7 +101,7 @@ importers:
         specifier: ^15.0.1
         version: 15.0.1(postcss@8.5.4)(stylelint@16.20.0(typescript@5.8.3))
 
-  themes:
+  manon-themes:
     dependencies:
       '@minvws/manon':
         specifier: workspace:*
