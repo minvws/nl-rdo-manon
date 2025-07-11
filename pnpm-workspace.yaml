@@ -1,6 +1,6 @@
 packages:
   - docs
   - manon
-  - manon-themes
+  - themes
   - examples/*
   - icore_open_docs
