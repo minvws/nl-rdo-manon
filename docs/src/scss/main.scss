@@ -1,22 +1,7 @@
-/* Main project styles */
-// @use "manon-components"; /* Manon components */
-// @use "docs"; /* Docs overrides which aren't theme related */
-// @use "docs-icons";
+@use "@minvws/manon-themes/icore-open";
+// @use "@minvws/manon-themes/kat";
 
-/* Styling for visual examples out of their usual html-structure */
-// @use "documentation-example-footer";
-// @use "documentation-example-main";
-
-/* Theme */
-// @use "@minvws/manon-themes/icore-open";
-
-// Themes
-@use "themes/icore-open";
-// @use "themes/kat";
-
-// Manon components
 @use "@minvws/manon/components/accordion";
-// @use "@minvws/manon/components/article-content-wrapper";
 @use "@minvws/manon/components/article-section-divider-line";
 @use "@minvws/manon/components/article-section";
 @use "@minvws/manon/components/article";
@@ -25,13 +10,17 @@
 @use "@minvws/manon/components/breadcrumb-bar-content-block";
 @use "@minvws/manon/components/breadcrumb-bar-content-wrapper";
 @use "@minvws/manon/components/breadcrumb-bar";
+@use "@minvws/manon/components/button-container";
 @use "@minvws/manon/components/button-destructive";
+@use "@minvws/manon/components/button-to-top";
 @use "@minvws/manon/components/button";
+@use "@minvws/manon/components/card";
 @use "@minvws/manon/components/checkbox";
 @use "@minvws/manon/components/footer";
 @use "@minvws/manon/components/header";
 @use "@minvws/manon/components/header-navigation";
 @use "@minvws/manon/components/heading";
+@use "@minvws/manon/components/hero";
 @use "@minvws/manon/components/horizontal";
 @use "@minvws/manon/components/max-line-length";
 @use "@minvws/manon/components/message-counter";
