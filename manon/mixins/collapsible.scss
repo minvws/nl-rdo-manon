@@ -10,14 +10,8 @@
 
     @include apply-from-theme.apply-from-theme(
       (
-        width: (
-          theme.$collapsible-width,
-          100%,
-        ),
-        max-width: (
-          theme.$collapsible-max-width,
-          100%,
-        ),
+        width: theme.$collapsible-width,
+        max-width: theme.$collapsible-max-width,
       )
     );
 
