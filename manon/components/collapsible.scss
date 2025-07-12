@@ -1,7 +1,7 @@
-@use "../mixin/apply-from-theme";
+@use "../mixins/apply-from-theme";
 @use "../variables" as theme;
 @use "../mixins/collapsible";
-@use "../mixin/icon";
+@use "../mixins/icon";
 
 .collapsible {
   @include collapsible.collapsible;
