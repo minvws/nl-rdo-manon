@@ -1,0 +1,20 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+table {
+  .critical,
+  .high,
+  .medium,
+  .low,
+  .informational {
+    display: inline-block;
+
+    @include apply-from-theme.apply-from-theme(
+      (
+        padding: theme.$critical-informational-labels-padding,
+        min-width: theme.$critical-informational-labels-min-width,
+        text-align: theme.$critical-informational-labels-text-align,
+      )
+    );
+  }
+}
