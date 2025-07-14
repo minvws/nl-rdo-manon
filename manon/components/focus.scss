@@ -1,0 +1,26 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+*:focus,
+*.focus,
+.outline-dotted {
+  position: relative;
+  @include apply-from-theme.apply-from-theme(
+    (
+      outline: theme.$focus-outline,
+      outline-offset: theme.$focus-outline-offset,
+      outline-color: theme.$focus-outline-color,
+      z-index: theme.$focus-z-index,
+    )
+  );
+
+  + label::before {
+    position: relative;
+    @include apply-from-theme.apply-from-theme(
+      (
+        outline: theme.$focus-outline,
+        z-index: theme.$focus-z-index,
+      )
+    );
+  }
+}
