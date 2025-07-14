@@ -1,15 +1,19 @@
-/*---------------------------------------------------------------*/
-/*----------------------- collapsible.scss ----------------------*/
-/*---------------------------------------------------------------*/
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
 
 @mixin collapsible {
   &.collapsed {
     padding: 0;
     gap: 0;
-    width: var(--collapsible-width, 100%);
-    max-width: var(--collapsible-max-width, 100%);
     margin: 0;
     position: relative;
+
+    @include apply-from-theme.apply-from-theme(
+      (
+        width: theme.$collapsible-width,
+        max-width: theme.$collapsible-max-width,
+      )
+    );
 
     button.collapsible-toggle {
       display: flex;
