@@ -2,28 +2,22 @@
 @use "../variables" as theme;
 @use "../functions/not-null";
 
+$checkbox-input-width: 0;
+$breakpoint-1: 24rem !default;
+
 $styles: ();
-@if not-null.not-null(
-  theme.$checkbox-width,
-  theme.$checkbox-gap,
-  theme.$label-column,
-  theme.$input-column
-)
-{
+@if not-null.not-null(theme.$checkbox-input-width, theme.$checkbox-gap) {
   $styles: map-merge(
     $styles,
     (
       $checkbox-input-width: calc(
-          #{theme.$checkbox-width} + theme.$checkbox-gap
+          #{theme.$checkbox-width} + #{theme.$checkbox-gap}
         ),
-      $label-column: theme.$label-column,
-      $input-column: theme.$input-column,
     )
   );
 }
-@include apply-from-theme.apply-from-theme($styles);
 
-$breakpoint-1: 24rem !default;
+@include apply-from-theme.apply-from-theme($styles);
 
 form {
   input[type="checkbox"] {
@@ -81,17 +75,8 @@ form {
       + p.confirmation,
       + p.explanation,
       + p.primary {
-        $styles: ();
-        @if theme.$checkbox-input-width != null {
-          $styles: map-merge(
-            $styles,
-            (
-              margin-left: theme.$checkbox-input-width,
-              max-width: calc(100% - #{theme.$checkbox-input-width}),
-            )
-          );
-        }
-        @include apply-from-theme.apply-from-theme($styles);
+        margin-left: $checkbox-input-width;
+        max-width: calc(100% - #{$checkbox-input-width});
       }
     }
   }
@@ -105,20 +90,15 @@ form {
         + p.explanation,
         + p.primary {
           $styles: ();
-          @if not-null.not-null(
-            theme.$checkbox-input-width,
-            theme.$label-column,
-            theme.$input-column
-          )
-          {
+          @if not-null.not-null(theme.$label-column, theme.$input-column) {
             $styles: map-merge(
               $styles,
               (
                 max-width: calc(
-                    #{theme.$input-column} - #{theme.$checkbox-input-width}
+                    #{theme.$input-column} - #{$checkbox-input-width}
                   ),
                 margin-left: calc(
-                    #{theme.$label-column} + #{theme.$checkbox-input-width}
+                    #{theme.$label-column} + #{$checkbox-input-width}
                   ),
               )
             );
