@@ -1,0 +1,13 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+.emphasized {
+  @include apply-from-theme.apply-from-theme(
+    (
+      font-size: theme.$emphasized-font-size,
+      font-weight: theme.$emphasized-font-weight,
+      line-height: theme.$emphasized-line-height,
+      color: theme.$emphasized-text-color,
+    )
+  );
+}
