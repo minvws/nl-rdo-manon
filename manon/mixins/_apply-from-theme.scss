@@ -6,7 +6,7 @@
 /// @param {Map} $map - A SASS map of CSS properties and values.
 @mixin apply-from-theme($map) {
   @each $prop, $value in $map {
-    @if $value != null {
+    @if $value {
       #{$prop}: $value;
     }
   }
