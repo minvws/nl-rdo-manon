@@ -1,5 +1,6 @@
-@use "../mixin/apply-from-theme";
+@use "../mixins/apply-from-theme";
 @use "../variables" as theme;
+@use "../functions/not-null";
 
 .checkbox {
   padding: 0;
@@ -76,7 +77,7 @@
     $styles: ();
 
     /* We can not calculate with null values */
-    @if theme.$checkbox-width != null and theme.$checkbox-gap != null {
+    @if not-null.not-null(theme.$checkbox-width, theme.$checkbox-gap) {
       $styles: map-merge(
         $styles,
         (
