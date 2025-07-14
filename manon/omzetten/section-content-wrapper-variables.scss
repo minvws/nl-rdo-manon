@@ -1,8 +1,0 @@
-/*------------------------------------------------------------------------*/
-/*----------------- section-content-wrapper-variables.scss ---------------*/
-/*------------------------------------------------------------------------*/
-@use "mixins/content-wrapper";
-
-:root {
-  @include content-wrapper.content-wrapper-variables("section");
-}
