@@ -9,6 +9,7 @@ form {
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
+
   @include apply-from-theme.apply-from-theme(
     (
       align-items: theme.$form-base-align-items,
@@ -45,7 +46,11 @@ form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: theme.$form-group-gap;
+    @include apply-from-theme.apply-from-theme(
+      (
+        gap: theme.$form-group-gap,
+      )
+    );
   }
 
   input,
