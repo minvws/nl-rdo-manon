@@ -1,0 +1,18 @@
+/// Checks if all given arguments are not null.
+///
+/// @param {...*} $args - Any number of values to check.
+/// @return {bool} Returns `true` if **all** values are not null; otherwise `false`.
+///
+/// @example scss
+///   @not-null($a, $b) {
+///     margin-left: calc($a + $b);
+///   }
+@function not-null($args...) {
+  @each $arg in $args {
+    @if not $arg {
+      @return false;
+    }
+  }
+
+  @return true;
+}
