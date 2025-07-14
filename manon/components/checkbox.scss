@@ -1,0 +1,89 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+@use "../functions/not-null";
+
+.checkbox {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  @include apply-from-theme.apply-from-theme(
+    (
+      gap: theme.$checkbox-gap,
+      align-items: theme.$checkbox-align-items,
+    )
+  );
+
+  input[type="checkbox"] {
+    padding: 0;
+    cursor: pointer;
+
+    @include apply-from-theme.apply-from-theme(
+      (
+        width: theme.$checkbox-width,
+        min-width: theme.$checkbox-width,
+        height: theme.$checkbox-height,
+        min-height: theme.$checkbox-height,
+        accent-color: theme.$checkbox-accent-color,
+      )
+    );
+
+    & + label {
+      @include apply-from-theme.apply-from-theme(
+        (
+          width: theme.$checkbox-label-width,
+        )
+      );
+      cursor: pointer;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+
+      & + label {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &.required {
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include apply-from-theme.apply-from-theme(
+      (
+        gap: theme.$checkbox-required-gap,
+        justify-content: theme.$radio-align-items,
+      )
+    );
+
+    > div {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+
+      @include apply-from-theme.apply-from-theme(
+        (
+          gap: theme.$checkbox-gap,
+        )
+      );
+    }
+  }
+
+  + .nota-bene {
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    $styles: ();
+
+    @if not-null.not-null(theme.$checkbox-width, theme.$checkbox-gap) {
+      $styles: map-merge(
+        $styles,
+        (
+          margin-left: calc(theme.$checkbox-width + theme.$checkbox-gap),
+        )
+      );
+    }
+    @include apply-from-theme.apply-from-theme($styles);
+  }
+}
