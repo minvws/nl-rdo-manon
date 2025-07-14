@@ -9,7 +9,7 @@
 ///   }
 @function not-null($args...) {
   @each $arg in $args {
-    @if $arg !=null {
+    @if $arg != null {
       @return false;
     }
   }
