@@ -64,10 +64,7 @@ body > footer,
 
         &:nth-child(odd) {
           $styles: ();
-          @if not-null.not-null(
-            theme.$footer-two-thirds-one-third-breakpoint-gap
-          )
-          {
+          @if theme.$footer-two-thirds-one-third-breakpoint-gap != null {
             $styles: map-merge(
               $styles,
               (
