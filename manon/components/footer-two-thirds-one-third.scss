@@ -1,0 +1,76 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+$breakpoint: 42rem !default;
+
+body > footer,
+.page-footer,
+%footer-two-thirds-one-third-style {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  @include apply-from-theme.apply-from-theme(
+    (
+      flex-direction: theme.$footer-two-thirds-one-third-flex-direction,
+      gap: theme.$footer-two-thirds-one-third-gap,
+      justify-content: theme.$footer-two-thirds-one-third-justify-content,
+      align-items: theme.$footer-two-thirds-one-third-align-items,
+      flex-wrap: theme.$footer-two-thirds-one-third-flex-wrap,
+      min-height: theme.$footer-two-thirds-one-third-min-height,
+      background-color: theme.$footer-two-thirds-one-third-background-color,
+      color: theme.$footer-two-thirds-one-third-text-color,
+      padding-top: theme.$footer-two-thirds-one-third-padding-top,
+      padding-right: theme.$footer-two-thirds-one-third-padding-right,
+      padding-bottom: theme.$footer-two-thirds-one-third-padding-bottom,
+      padding-left: theme.$footer-two-thirds-one-third-padding-left,
+      max-width: theme.$footer-two-thirds-one-third-max-width,
+    )
+  );
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    @include apply-from-theme.apply-from-theme(
+      (
+        gap: theme.$footer-two-thirds-one-third-gap,
+      )
+    );
+
+    > * {
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    > section,
+    > article,
+    > div {
+      padding: 0;
+    }
+
+    @media (width >= $breakpoint) {
+      @include apply-from-theme.apply-from-theme(
+        (
+          gap: theme.$footer-two-thirds-one-third-breakpoint-gap,
+        )
+      );
+
+      > * {
+        width: 33.33%;
+
+        &:nth-child(odd) {
+          @include apply-from-theme.apply-from-theme(
+            (
+              width: calc(
+                  66.66% - theme.$footer-two-thirds-one-third-breakpoint-gap
+                ),
+            )
+          );
+        }
+      }
+    }
+  }
+}
