@@ -1,0 +1,98 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+.filter {
+  @include apply-from-theme.apply-from-theme(
+    (
+      padding: theme.$filter-padding,
+      gap: theme.$filter-gap,
+      width: theme.$filter-width,
+    )
+  );
+
+  > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+    @include apply-from-theme.apply-from-theme(
+      (
+        border-width: theme.$filter-intro-border-width,
+        border-style: theme.$filter-intro-border-style,
+        border-color: theme.$filter-intro-border-color,
+        font-size: theme.$filter-intro-font-size,
+        font-weight: theme.$filter-intro-font-weight,
+        color: theme.$filter-intro-text-color,
+      )
+    );
+
+    p {
+      font-size: inherit;
+      color: inherit;
+
+      > span {
+        @include apply-from-theme.apply-from-theme(
+          (
+            font-size: theme.$filter-intro-span-font-size,
+            color: theme.$filter-intro-span-text-color,
+          )
+        );
+      }
+    }
+
+    button {
+      display: none;
+      min-width: 0;
+      @include apply-from-theme.apply-from-theme(
+        (
+          background-color: theme.$filter-button-background-color,
+          color: theme.$filter-button-text-color,
+          border-width: theme.$filter-button-border-width,
+          border-style: theme.$filter-button-border-style,
+          border-color: theme.$filter-button-border-color,
+          padding: theme.$filter-button-padding,
+          min-height: theme.$filter-button-min-height,
+          margin-left: theme.$filter-button-margin-left,
+          font-size: theme.$filter-button-font-size,
+        )
+      );
+
+      &::after {
+        @include apply-from-theme.apply-from-theme(
+          (
+            font-family: theme.$filter-button-icon-font-family,
+            line-height: theme.$filter-button-icon-line-height,
+            font-size: theme.$filter-button-icon-font-size,
+            font-weight: theme.$filter-button-icon-font-weight,
+          )
+        );
+      }
+
+      &[aria-expanded="true"] {
+        &::after {
+          @include apply-from-theme.apply-from-theme(
+            (
+              content: theme.$filter-button-icon-before-close-content,
+            )
+          );
+        }
+      }
+
+      &[aria-expanded="false"] {
+        &::after {
+          @include apply-from-theme.apply-from-theme(
+            (
+              content: theme.$filter-button-icon-before-open-content,
+            )
+          );
+        }
+      }
+    }
+  }
+}
+
+.js-filters-loaded .filter > div > button {
+  display: inline-flex;
+}
