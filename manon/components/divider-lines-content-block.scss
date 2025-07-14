@@ -1,0 +1,35 @@
+@use "../mixin/apply-from-theme";
+@use "../variables" as theme;
+
+%divider-line {
+  @include apply-from-theme.apply-from-theme(
+    (
+      border-width: themes.$divider-lines-content-block-border-width,
+      border-style: themes.$divider-lines-content-block-border-style,
+      border-color: themes.$divider-lines-content-block-border-color,
+    )
+  );
+
+  &:first-of-type {
+    @include apply-from-theme.apply-from-theme(
+      (
+        border-width:
+          themes.$divider-lines-content-block-first-of-type-border-width,
+        border-style:
+          themes.$divider-lines-content-block-first-of-type-border-style,
+        border-color:
+          themes.$divider-lines-content-block-first-of-type-border-color,
+      )
+    );
+  }
+}
+
+main {
+  > article,
+  > section,
+  > div {
+    > div {
+      @extend %divider-line;
+    }
+  }
+}
