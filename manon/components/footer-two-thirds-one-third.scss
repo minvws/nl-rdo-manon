@@ -1,5 +1,6 @@
 @use "../mixins/apply-from-theme";
 @use "../variables" as theme;
+@use "../functions/not-null";
 
 $breakpoint: 42rem !default;
 
@@ -63,7 +64,10 @@ body > footer,
 
         &:nth-child(odd) {
           $styles: ();
-          @if not-null(theme.$footer-two-thirds-one-third-breakpoint-gap) {
+          @if not-null.not-null(
+            theme.$footer-two-thirds-one-third-breakpoint-gap
+          )
+          {
             $styles: map-merge(
               $styles,
               (
