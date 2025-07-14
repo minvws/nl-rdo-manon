@@ -76,7 +76,6 @@
 
     $styles: ();
 
-    /* We can not calculate with null values */
     @if not-null.not-null(theme.$checkbox-width, theme.$checkbox-gap) {
       $styles: map-merge(
         $styles,
