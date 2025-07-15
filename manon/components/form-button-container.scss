@@ -14,21 +14,16 @@ $breakpoint: 24rem !default;
     )
   );
 
-  $styles: ();
-  @if theme.$button-container-gap != null {
-    $styles: map-merge(
-      $styles,
+  @if theme.$button-container-gap {
+    @include apply-from-theme.apply-from-theme(
       (
         /* Countering margin bottom that will be set by buttons on the last line */
-        margin-right: calc((theme.$button-container-gap) * -1) /
-          2,
-        margin-bottom: calc(theme.$button-container-gap) * -1,
-        margin-left: calc((theme.$button-container-gap) * -1) / 2
+        margin-right: theme.$button-container-gap * -1 / 2,
+        margin-bottom: theme.$button-container-gap * -1,
+        margin-left: theme.$button-container-gap * -1 / 2
       )
     );
   }
-  @include apply-from-theme.apply-from-theme($styles);
-
   button,
   a.button,
   input[type="button"],
@@ -41,18 +36,15 @@ $breakpoint: 24rem !default;
       )
     );
 
-    $styles: ();
-    @if theme.$button-container-gap != null {
-      $styles: map-merge(
-        $styles,
+    @if theme.$button-container-gap {
+      @include apply-from-theme.apply-from-theme(
         (
-          margin-right: calc(theme.$button-container-gap) / 2,
-          margin-left: calc(theme.$button-container-gap) / 2,
+          margin-right: theme.$button-container-gap / 2,
+          margin-left: theme.$button-container-gap / 2,
           margin-bottom: theme.$button-container-gap,
         )
       );
     }
-    @include apply-from-theme.apply-from-theme($styles);
 
     @media (width >= $breakpoint) {
       @include apply-from-theme.apply-from-theme(
@@ -93,17 +85,14 @@ form {
         @extend %fieldset-button-container-styling;
 
         @media (width >= $breakpoint) {
-          $styles: ();
           @if not-null.not-null(theme.$label-colum, theme.$button-container-gap)
           {
-            $styles: map-merge(
-              $styles,
+            @include apply-from-theme.apply-from-theme(
               (
-                margin-left: calc(theme.$label-column) -
-                  (
-                    theme.$button-container-gap,
-                  ) /
-                  2,
+                margin-left: (
+                  theme.$label-column - theme.$button-container-gap,
+                ) /
+                2,
               )
             );
           }
