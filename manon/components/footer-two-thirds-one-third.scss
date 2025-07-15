@@ -1,6 +1,5 @@
 @use "../mixins/apply-from-theme";
 @use "../variables" as theme;
-@use "../functions/not-null";
 
 $breakpoint: 42rem !default;
 
@@ -63,10 +62,8 @@ body > footer,
         width: 33.33%;
 
         &:nth-child(odd) {
-          $styles: ();
-          @if theme.$footer-two-thirds-one-third-breakpoint-gap != null {
-            $styles: map-merge(
-              $styles,
+          @if theme.$footer-two-thirds-one-third-breakpoint-gap {
+            @include apply-from-theme.apply-from-theme(
               (
                 width: calc(
                     66.66% - theme.$footer-two-thirds-one-third-breakpoint-gap
@@ -74,7 +71,6 @@ body > footer,
               )
             );
           }
-          @include apply-from-theme.apply-from-theme($styles);
         }
       }
     }
