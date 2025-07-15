@@ -6,7 +6,7 @@ $checkbox-input-width: 0;
 $breakpoint-1: 24rem !default;
 
 $styles: ();
-@if not-null.not-null(theme.$checkbox-input-width, theme.$checkbox-gap) {
+@if not-null.not-null(theme.$checkbox-width, theme.$checkbox-gap) {
   $styles: map-merge(
     $styles,
     (
