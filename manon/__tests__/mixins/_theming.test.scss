@@ -1,0 +1,82 @@
+@use "true" as *;
+@use "../../mixins/theming" as theming;
+
+@include describe("apply-from-theme") {
+  @include it("applies a single property from a map") {
+    @include assert {
+      @include output {
+        .test {
+          @include theming.apply-from-theme(
+            (
+              color: red,
+            )
+          );
+        }
+      }
+      @include expect {
+        .test {
+          color: red;
+        }
+      }
+    }
+  }
+
+  @include it("applies multiple properties from a map") {
+    @include assert {
+      @include output {
+        .test {
+          @include theming.apply-from-theme(
+            (
+              color: blue,
+              background-color: white,
+              font-size: 16px,
+            )
+          );
+        }
+      }
+      @include expect {
+        .test {
+          color: blue;
+          background-color: white;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @include it("ignores null values in the map") {
+    @include assert {
+      @include output {
+        .test {
+          @include theming.apply-from-theme(
+            (
+              color: green,
+              background-color: null,
+              font-weight: bold,
+            )
+          );
+        }
+      }
+      @include expect {
+        .test {
+          color: green;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  @include it("handles an empty map") {
+    @include assert {
+      @include output {
+        .test {
+          @include theming.apply-from-theme(());
+        }
+      }
+      @include expect {
+        .test {
+        }
+      }
+    }
+  }
+}
