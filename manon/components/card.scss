@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 $breakpoint-1: 24rem !default;
@@ -50,7 +50,7 @@ span {
     }
 
     @media (width >= $breakpoint-2) {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           gap: theme.$card-breakpoint-2-gap,
           padding-top: theme.$card-breakpoint-2-padding-top,

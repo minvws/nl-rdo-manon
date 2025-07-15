@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 body {
@@ -25,7 +25,7 @@ body {
     position: relative;
   }
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       background-color: theme.$base-background-color,
       color: theme.$base-text-color,

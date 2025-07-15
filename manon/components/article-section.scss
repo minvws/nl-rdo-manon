@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 article {
@@ -9,7 +9,7 @@ article {
     margin: 0 auto;
     box-sizing: border-box;
 
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         flex-direction: theme.$article-section-flex-direction,
         gap: theme.$article-section-gap,

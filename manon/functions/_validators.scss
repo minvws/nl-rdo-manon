@@ -7,7 +7,7 @@
 ///   @not-null($a, $b) {
 ///     margin-left: calc($a + $b);
 ///   }
-@function not-null($args...) {
+@function args-not-null($args...) {
   @each $arg in $args {
     @if not $arg {
       @return false;

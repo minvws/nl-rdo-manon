@@ -1,6 +1,6 @@
 @use "../mixins/apply-from-theme";
 @use "../variables" as theme;
-@use "../functions/not-null";
+@use "../functions/validators";
 
 .checkbox {
   padding: 0;
@@ -29,11 +29,11 @@
     );
 
     & + label {
-      @include apply-from-theme.apply-from-theme(
-        (
-          width: theme.$checkbox-label-width,
-        )
-      );
+      @include theming.apply-from-theme(
+      (
+        width: theme.$checkbox-label-width,
+      )
+    );
       cursor: pointer;
     }
 

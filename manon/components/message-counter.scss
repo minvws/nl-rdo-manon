@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 .message-counter {
@@ -10,7 +10,7 @@
   box-sizing: initial;
   margin: 0;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       min-width: theme.$message-counter-base-min-width,
       height: theme.$message-counter-base-height,

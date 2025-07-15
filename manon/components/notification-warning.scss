@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../mixins/notification";
 @use "../variables" as theme;
 
@@ -19,7 +19,7 @@ div.warning {
   );
 
   &::before {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         font-family: theme.$notification-warning-icon-font-family,
         font-size: theme.$notification-warning-icon-font-size,

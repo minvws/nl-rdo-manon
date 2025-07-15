@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 .logo,
@@ -33,7 +33,7 @@ a:focus.logo {
   img {
     box-sizing: border-box;
 
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         height: theme.$logo-img-height,
         min-height: theme.$logo-img-height,

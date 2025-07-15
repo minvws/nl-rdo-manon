@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme" as *;
+@use "../mixins/theming" as *;
 @use "../mixins/notification";
 @use "../variables" as theme;
 
@@ -65,7 +65,7 @@ table {
     }
 
     &.system:nth-child(even):not(.odd) {
-      @include apply-from-theme((background-color: theme.$notification-table-system-background-color,
+      @include theming((background-color: theme.$notification-table-system-background-color,
           filter: brightness(90%),
         ));
     }

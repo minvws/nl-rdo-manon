@@ -1,12 +1,12 @@
 @use "icon";
-@use "apply-from-theme";
+@use "theming";
 @use "../variables" as theme;
 
 @mixin notification {
   max-width: 100%;
   width: 100%;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       background-color: theme.$notification-background-color,
       color: theme.$notification-text-color,
@@ -14,7 +14,7 @@
   );
 
   span:first-of-type {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         font-weight: theme.$notification-span-font-weight,
       )
@@ -40,7 +40,7 @@ div {
       @include icon.icon;
 
       & {
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             font-family: theme.$notification-icon-font-family,
             font-size: theme.$notification-icon-font-size,
