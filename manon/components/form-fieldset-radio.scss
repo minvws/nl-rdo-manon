@@ -36,7 +36,7 @@ form {
           @if theme.$form-fieldset-radio-input-width {
             @include apply-from-theme.apply-from-theme(
               (
-                width: calc(100% - theme.$form-fieldset-radio-input-width),
+                width: calc(100% - #{theme.$form-fieldset-radio-input-width}),
               )
             );
           }
