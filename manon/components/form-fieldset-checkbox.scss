@@ -1,0 +1,77 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+form {
+  fieldset {
+    .checkbox {
+      padding: 0;
+      display: initial;
+      margin: theme.$form-fieldset-checkbox-margin;
+
+      input[type="checkbox"] {
+        padding: 0;
+        cursor: pointer;
+        margin-right: 0;
+
+        @include apply-from-theme.apply-from-theme(
+          (
+            width: theme.$form-fieldset-checkbox-width,
+            min-width: theme.$form-fieldset-checkbox-width,
+            height: theme.$form-fieldset-checkbox-height,
+            accent-color: theme.$form-fieldset-checkbox-accent-color,
+            margin-top: theme.$form-fieldset-checkbox-input-margin-top,
+          )
+        );
+
+        & + label {
+          cursor: pointer;
+          padding-left: 0.5rem;
+          margin: 0;
+
+          @if theme.$form-fieldset-checkbox-width {
+            @include apply-from-theme.apply-from-theme(
+              (
+                width: calc(100% - #{theme.$form-fieldset-checkbox-width}),
+              )
+            );
+          }
+        }
+
+        &:disabled {
+          cursor: not-allowed;
+
+          & + label {
+            cursor: not-allowed;
+          }
+        }
+      }
+
+      &.required {
+        flex-direction: column;
+
+        span {
+          @include apply-from-theme.apply-from-theme(
+            (
+              margin-bottom: theme.$form-base-required-gap,
+            )
+          );
+        }
+
+        > div {
+          padding: 0;
+          display: initial;
+        }
+      }
+
+      fieldset {
+        .checkbox {
+          @include apply-from-theme.apply-from-theme(
+            (
+              margin: theme.$form-fieldset-checkbox-margin,
+            )
+          );
+        }
+      }
+    }
+  }
+}
