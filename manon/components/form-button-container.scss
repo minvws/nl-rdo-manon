@@ -89,10 +89,9 @@ form {
           {
             @include apply-from-theme.apply-from-theme(
               (
-                margin-left: (
-                  theme.$label-column - theme.$button-container-gap,
-                ) /
-                2,
+                margin-left: calc(
+                    #{theme.$label-column} - #{theme.$button-container-gap} / 2
+                  ),
               )
             );
           }
