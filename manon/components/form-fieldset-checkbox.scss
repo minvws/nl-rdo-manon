@@ -6,7 +6,12 @@ form {
     .checkbox {
       padding: 0;
       display: initial;
-      margin: theme.$form-fieldset-checkbox-margin;
+
+      @include apply-from-theme.apply-from-theme(
+        (
+          margin: theme.$form-fieldset-checkbox-margin,
+        )
+      );
 
       input[type="checkbox"] {
         padding: 0;
