@@ -89,7 +89,6 @@ form {
               )
             );
           }
-          @include apply-from-theme.apply-from-theme($styles);
         }
       }
     }
