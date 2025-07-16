@@ -29,6 +29,14 @@
 @use "@minvws/manon/components/focus";
 @use "@minvws/manon/components/footer";
 @use "@minvws/manon/components/footer-two-thirds-one-third";
+@use "@minvws/manon/components/form-base";
+@use "@minvws/manon/components/form-button";
+@use "@minvws/manon/components/form-button-container";
+@use "@minvws/manon/components/form-button-grouped-horizontal";
+@use "@minvws/manon/components/form-fieldset-checkbox";
+@use "@minvws/manon/components/form-fieldset";
+@use "@minvws/manon/components/form-fieldset-radio";
+@use "@minvws/manon/components/form-fieldset-visually-hidden-horizontal-view";
 @use "@minvws/manon/components/form-grouped-choice-list";
 @use "@minvws/manon/components/header";
 @use "@minvws/manon/components/header-navigation";
