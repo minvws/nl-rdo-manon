@@ -1,0 +1,105 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+@use "../functions/not-null";
+
+$breakpoint-1: 24rem !default;
+$checkbox-input-width: null !default;
+
+@if not-null.not-null(theme.$checkbox-width, theme.$checkbox-gap) {
+  $checkbox-input-width: theme.$checkbox-width + theme.$checkbox-gap;
+}
+
+form {
+  input[type="checkbox"] {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    @include apply-from-theme.apply-from-theme(
+      (
+        vertical-align: theme.$form-checkbox-vertical-align,
+        cursor: theme.$form-checkbox-cursor,
+        width: theme.$form-checkbox-width,
+        min-width: theme.$form-checkbox-width,
+        height: theme.$form-checkbox-height,
+        accent-color: theme.$form-radio-background-color,
+      )
+    );
+
+    & + label {
+      width: auto;
+      cursor: pointer;
+      margin-top: 0;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  .checkbox {
+    > div {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+
+      @include apply-from-theme.apply-from-theme(
+        (
+          gap: theme.$checkbox-gap,
+          align-items: theme.$checkbox-align-items,
+        )
+      );
+    }
+
+    p.error,
+    p.warning,
+    p.confirmation,
+    p.explanation,
+    p.primary {
+      margin: 0;
+    }
+
+    @media (width >= $breakpoint-1) {
+      + p.error,
+      + p.warning,
+      + p.confirmation,
+      + p.explanation,
+      + p.primary {
+        @if $checkbox-input-width {
+          margin-left: $checkbox-input-width;
+          max-width: calc(100% - #{$checkbox-input-width});
+        }
+      }
+    }
+  }
+
+  @media (width >= $breakpoint-1) {
+    .option-group {
+      .checkbox {
+        + p.error,
+        + p.warning,
+        + p.confirmation,
+        + p.explanation,
+        + p.primary {
+          @if not-null.not-null(
+            theme.$label-column,
+            theme.$input-column,
+            $checkbox-input-width
+          )
+          {
+            @include apply-from-theme.apply-from-theme(
+              (
+                max-width: calc(
+                    #{theme.$input-column} - #{$checkbox-input-width}
+                  ),
+                margin-left: calc(
+                    #{theme.$label-column} + #{$checkbox-input-width}
+                  ),
+              )
+            );
+          }
+        }
+      }
+    }
+  }
+}
