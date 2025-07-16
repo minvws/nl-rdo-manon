@@ -1,0 +1,117 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+form.help {
+  position: relative;
+  @include apply-from-theme.apply-from-theme(
+    (
+      padding-right: theme.$form-help-padding-right
+    )
+  );
+
+  div {
+    position: relative;
+    padding: 0;
+  }
+
+  > div,
+  > fieldset {
+    position: relative;
+
+    .help-button {
+      display: flex;
+      position: absolute;
+      gap: 0;
+      margin: 0;
+      min-width: 0;
+      min-height: 0;
+      font-size: 0;
+      box-sizing: border-box;
+
+      @include apply-from-theme.apply-from-theme(
+        (
+          top: theme.$form-help-button-top,
+          right: theme.$form-help-button-right,
+          padding-top: theme.$form-help-button-padding-top,
+          padding-right: theme.$form-help-button-padding-right,
+          padding-bottom: theme.$form-help-button-padding-bottom,
+          padding-left: theme.$form-help-button-padding-left,
+          border-width: theme.$form-help-button-border-width,
+          border-style: theme.$form-help-button-border-style,
+          border-color: theme.$form-help-button-border-color,
+          border-radius: theme.$form-help-button-border-radius,
+          width: theme.$form-help-button-width,
+          height: theme.$form-help-button-height,
+          background-color: theme.$form-help-button-background-color,
+          color: theme.$form-help-button-text-color,
+        )
+      );
+
+      &:hover {
+        @include apply-from-theme.apply-from-theme(
+          (
+            background-color: theme.$form-help-button-hover-background-color,
+            color: theme.$form-help-button-hover-text-color,
+          )
+        );
+      }
+
+      &::before {
+        vertical-align: middle;
+        @include apply-from-theme.apply-from-theme(
+          (
+            content: theme.$form-help-button-icon,
+            font-family: theme.$form-help-button-icon-font-family,
+            line-height: theme.$form-help-button-icon-line-height,
+            font-size: theme.$form-help-button-icon-font-size,
+            font-weight: theme.$form-help-button-icon-font-weight,
+          )
+        );
+      }
+
+      &[aria-expanded="true"] {
+        &::before {
+          @include apply-from-theme.apply-from-theme(
+            (
+              content: theme.$form-help-button-icon-expanded,
+            )
+          );
+        }
+      }
+
+      + .explanation {
+        margin-bottom: 0;
+        @include apply-from-theme.apply-from-theme(
+          (
+            margin-top: theme.$form-help-button-explanation-gap,
+          )
+        );
+      }
+    }
+
+    p.explanation.collapsed,
+    div.explanation.collapsed {
+      display: none;
+    }
+  }
+
+  fieldset {
+    max-width: 100%;
+    min-width: 0;
+    gap: 0;
+
+    .help-button {
+      margin: 0;
+      display: block;
+
+      + .explanation {
+        margin-top: 0;
+      }
+
+      &::before {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+}
