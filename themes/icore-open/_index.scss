@@ -92,6 +92,9 @@ and spacing sets */
   $link-visited-text-color: #{color-scheme.$oc-violet-8},
   $link-visited-hover-text-color: #{color-scheme.$oc-violet-9},
 
+  // main
+  $main-gap: #{spacing.$spacing-225},
+
   // footer
   $footer-align-items: center,
   $footer-justify-content: center,
