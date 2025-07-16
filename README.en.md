@@ -2,34 +2,34 @@
 
 > [!NOTE] For Dutch, see [Dutch](README.md).
 
-## About Manon
+## 🙋 About Manon
 
 Manon is a design framework based on the following principles:
 
-### "Classless" when possible.
+### ✨ "Classless" when possible.
 
 Manon prioritizes styling based on HTML structure, leading to clean and
 maintainable code. This allows for efficient visual adjustments with minimal
 HTML changes, for example, by loading a different CSS component for the same
 HTML structure.
 
-### As small as possible
+### 📦 As small as possible
 
 Use only what you need. Manon consists of individual components that can be
 imported separately, so you don't have to use the entire set.
 
-### Adjustable
+### 🛠️ Adjustable
 
 Components are adjustable via variables. The modular design prevents unnecessary
 CSS overrides. Consult the documentation or variable files for an overview of
 the adjustable variables per component.
 
-## Documentation
+## 📚 Documentation
 
 The documentation is available at https://minvws.github.io/nl-rdo-manon. It is
 generated from the [docs](./docs) directory on this repo.
 
-## Getting Started
+## 🚀 Getting Started
 
 To use Manon in your project:
 
@@ -74,7 +74,7 @@ Additionally, we've provided
 [some example implementations](https://github.com/minvws/nl-rdo-manon/tree/main/examples/)
 in a few different frameworks.
 
-## Origin
+## 🌱 Origin
 
 Manon emerged from the need for a flexible design framework during the
 vaccination campaign, where many websites had to be launched quickly under
@@ -89,7 +89,7 @@ version of Manon was implemented as a whole, Manon Open allows you to choose
 which components and CSS parts you want to add. This results in fewer overrides
 and a smaller CSS file.
 
-## License
+## 📄 License
 
 This repository follows the
 [REUSE Specification v3.2](https://reuse.software/spec/). Please see
