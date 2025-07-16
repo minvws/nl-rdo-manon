@@ -16,7 +16,7 @@ form.horizontal-view {
 
         @include apply-from-theme.apply-from-theme(
           (
-            max-width: theme.$label-column,
+            max-width: theme.$form-grouped-choice-list-label-column,
           )
         );
       }

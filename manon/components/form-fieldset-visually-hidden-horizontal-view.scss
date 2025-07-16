@@ -13,7 +13,7 @@ form.horizontal-view {
 
       @include apply-from-theme.apply-from-theme(
         (
-          width: theme.$label-column,
+          width: theme.$form-fieldset-label-column,
           padding-right: theme.$form-horizontal-view-gap,
           margin-top: theme.$form-horizontal-view-fieldset-label-margin-top,
         )

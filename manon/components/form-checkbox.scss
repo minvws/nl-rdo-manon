@@ -82,18 +82,20 @@ form {
         + p.explanation,
         + p.primary {
           @if not-null.not-null(
-            theme.$label-column,
-            theme.$input-column,
+            theme.$form-checkbox-label-column,
+            theme.$form-checkbox-input-column,
             $checkbox-input-width
           )
           {
             @include apply-from-theme.apply-from-theme(
               (
                 max-width: calc(
-                    #{theme.$input-column} - #{$checkbox-input-width}
+                    #{theme.$form-checkbox-input-column} -
+                      #{$checkbox-input-width}
                   ),
                 margin-left: calc(
-                    #{theme.$label-column} + #{$checkbox-input-width}
+                    #{theme.$form-checkbox-label-column} +
+                      #{$checkbox-input-width}
                   ),
               )
             );
