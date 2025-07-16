@@ -1,0 +1,25 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+$breakpoint: 24rem !default;
+
+form.horizontal-view {
+  .grouped-choice-list {
+    legend {
+      font-weight: normal;
+      width: auto;
+      margin: 0;
+
+      @media (width >= $breakpoint) {
+        position: absolute;
+        padding: 0;
+
+        @include apply-from-theme.apply-from-theme(
+          (
+            max-width: theme.$label-column,
+          )
+        );
+      }
+    }
+  }
+}
