@@ -90,7 +90,7 @@
           <nav aria-labelledby="form-layouts-title" id="form-layouts">
             <h3 id="form-layouts-title">Weergaven</h3>
             <ul>
-              <li><a href="{base}/components/form-base">Basisweergave</a></li>
+              <li><a href="{base}/components/form">Basisweergave</a></li>
               <li>
                 <a href="{base}/components/form-accent-color">Accentkleur op formulierelementen</a>
               </li>

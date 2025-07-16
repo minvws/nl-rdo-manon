@@ -12,22 +12,22 @@ form {
 
   @include apply-from-theme.apply-from-theme(
     (
-      align-items: theme.$form-base-align-items,
-      justify-content: theme.$form-base-justify-content,
-      padding-top: theme.$form-base-padding-top,
-      padding-right: theme.$form-base-padding-right,
-      padding-bottom: theme.$form-base-padding-bottom,
-      padding-left: theme.$form-base-padding-left,
-      background-color: theme.$form-base-background-color,
-      color: theme.$form-base-text-color,
-      font-size: theme.$form-base-font-size,
-      line-height: theme.$form-base-line-height,
-      font-weight: theme.$form-base-font-weight,
-      gap: theme.$form-base-gap,
-      border-width: theme.$form-base-border-width,
-      border-style: theme.$form-base-border-style,
-      border-color: theme.$form-base-border-color,
-      max-width: theme.$form-base-max-width,
+      align-items: theme.$form-align-items,
+      justify-content: theme.$form-justify-content,
+      padding-top: theme.$form-padding-top,
+      padding-right: theme.$form-padding-right,
+      padding-bottom: theme.$form-padding-bottom,
+      padding-left: theme.$form-padding-left,
+      background-color: theme.$form-background-color,
+      color: theme.$form-text-color,
+      font-size: theme.$form-font-size,
+      line-height: theme.$form-line-height,
+      font-weight: theme.$form-font-weight,
+      gap: theme.$form-gap,
+      border-width: theme.$form-border-width,
+      border-style: theme.$form-border-style,
+      border-color: theme.$form-border-color,
+      max-width: theme.$form-max-width,
     )
   );
 
@@ -57,7 +57,7 @@ form {
   textarea {
     @include apply-from-theme.apply-from-theme(
       (
-        color: theme.$form-base-input-text-color,
+        color: theme.$form-input-text-color,
       )
     );
   }

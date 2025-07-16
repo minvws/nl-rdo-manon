@@ -114,7 +114,7 @@
         <Code
           language="css"
           code={`
-@use "@minvws/manon/form-base";
+@use "@minvws/manon/form";
 `}
         />
       </section>
@@ -151,13 +151,13 @@
 
         <p>Bijbehorende elementen:</p>
         <ul>
-          <li><a href="{base}/components/form-base">form-base</a></li>
+          <li><a href="{base}/components/form">form</a></li>
         </ul>
       </section>
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="{base}/components/form-base-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/form-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

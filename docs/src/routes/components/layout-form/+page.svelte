@@ -28,7 +28,7 @@
         <p>Weergave opties voor pagina's met als formulieren als hoofdfunctie.</p>
         <p>
           Het is ook mogelijk om de weergave van alle formulieren aan te passen. Gebruik daarvoor: <a
-            href="{base}/components/form-base">Basis formulieren</a
+            href="{base}/components/form">Basis formulieren</a
           >.
         </p>
 

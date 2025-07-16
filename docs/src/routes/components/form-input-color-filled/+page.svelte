@@ -92,7 +92,7 @@
         <Code
           language="css"
           code={`
-@use "@minvws/manon/form-base";
+@use "@minvws/manon/form";
 @use "@minvws/manon/form-input-color";
 @use "@minvws/manon/form-input-color-filled";
 `}
@@ -105,7 +105,7 @@
 
         <p>Bijbehorende elementen:</p>
         <ul>
-          <li><a href="{base}/components/form-base">form-base</a></li>
+          <li><a href="{base}/components/form">form</a></li>
           <li><a href="{base}/components/form-input">form-input</a></li>
         </ul>
       </section>

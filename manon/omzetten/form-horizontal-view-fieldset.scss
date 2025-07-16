@@ -28,7 +28,7 @@ form.horizontal-view {
       /* resetting gap as it can not be used within fieldsets */
       gap: 0;
       /* Adds margin instead of gap */
-      margin-bottom: var(--form-base-gap);
+      margin-bottom: var(--form-gap);
 
       @media (width >= $breakpoint) {
         > * {
@@ -54,7 +54,7 @@ form.horizontal-view {
 
     .required {
       .nota-bene {
-        margin-bottom: var(--form-base-required-gap);
+        margin-bottom: var(--form-required-gap);
         float: left;
       }
     }
