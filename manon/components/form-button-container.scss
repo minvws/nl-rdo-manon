@@ -1,0 +1,110 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+@use "../functions/not-null";
+
+$breakpoint: 24rem !default;
+
+%fieldset-button-container-styling {
+  /* Removing gap as it is not supported within fieldsets */
+  gap: 0;
+  width: auto;
+  @include apply-from-theme.apply-from-theme(
+    (
+      float: theme.$form-button-container-fieldset-float,
+    )
+  );
+
+  @if theme.$button-container-gap {
+    @include apply-from-theme.apply-from-theme(
+      (
+        /* Countering margin bottom that will be set by buttons on the last line */
+        margin-right: theme.$button-container-gap * -1 / 2,
+        margin-bottom: theme.$button-container-gap * -1,
+        margin-left: theme.$button-container-gap * -1 / 2
+      )
+    );
+  }
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    float: left;
+    @include apply-from-theme.apply-from-theme(
+      (
+        width: theme.$button-container-button-width,
+      )
+    );
+
+    @if theme.$button-container-gap {
+      @include apply-from-theme.apply-from-theme(
+        (
+          margin-right: theme.$button-container-gap / 2,
+          margin-left: theme.$button-container-gap / 2,
+          margin-bottom: theme.$button-container-gap,
+        )
+      );
+    }
+
+    @media (width >= $breakpoint) {
+      @include apply-from-theme.apply-from-theme(
+        (
+          width: theme.$button-container-button-after-breakpoint-width,
+        )
+      );
+    }
+  }
+}
+
+form {
+  .button-container {
+    width: auto;
+
+    @include apply-from-theme.apply-from-theme(
+      (
+        align-self: theme.$form-button-container-align-self,
+      )
+    );
+  }
+
+  fieldset {
+    .button-container {
+      @extend %fieldset-button-container-styling;
+    }
+
+    > div {
+      &.button-container {
+        @extend %fieldset-button-container-styling;
+      }
+    }
+  }
+
+  &.horizontal-view {
+    fieldset {
+      .button-container {
+        @extend %fieldset-button-container-styling;
+
+        @media (width >= $breakpoint) {
+          @if not-null.not-null(theme.$label-colum, theme.$button-container-gap)
+          {
+            @include apply-from-theme.apply-from-theme(
+              (
+                margin-left: calc(
+                    (#{theme.$label-column} - #{theme.$button-container-gap}) / 2
+                  ),
+              )
+            );
+          }
+        }
+      }
+
+      > div.button-container {
+        @include apply-from-theme.apply-from-theme(
+          (
+            gap: theme.$button-container-gap,
+          )
+        );
+      }
+    }
+  }
+}
