@@ -49,6 +49,11 @@ and spacing sets */
   $button-destructive-primary-hover-text-color: #{color-scheme.$oc-white},
   $button-destructive-primary-hover-border-color: #{semantic.$color-destructive-intense},
 
+  // code block
+  $code-block-padding: #{spacing.$spacing-200},
+  $code-block-background-color: #{color-scheme.$oc-gray-1},
+  $code-block-border-radius: #{border-radii.$border-radius-s},
+
   // Form
   $form-align-items: flex-start,
   $form-text-color: #{color-scheme.$oc-blue-8},
