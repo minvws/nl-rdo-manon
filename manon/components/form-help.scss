@@ -5,8 +5,8 @@ form.help {
   position: relative;
   @include apply-from-theme.apply-from-theme(
     (
-      padding-right: theme.$form-help-padding-right,
-      theme.$form-base-padding-right,
+      padding-right: theme.$form-help-padding-right
+        theme.$form-base-padding-right,
     )
   );
 
