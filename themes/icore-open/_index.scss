@@ -51,27 +51,31 @@ and spacing sets */
 
   // Form
   $form-align-items: flex-start,
-  $form-text-color: #{color-scheme.$oc-blue-8},
+  $form-text-color: #{semantic.$color-text-default},
   $form-gap: #{spacing.$spacing-200},
   $form-group-gap: #{spacing.$spacing-100},
   $form-max-width: 40rem,
-
-  // Header
-  $header-background-color: #{color-scheme.$oc-gray-9},
-  /* content wrapper */ $header-content-wrapper-flex-direction: row,
-  $header-content-wrapper-width: 100%,
-  $header-content-wrapper-gap: 1rem,
 
   // form input
   $form-input-padding-top: #{spacing.$spacing-075},
   $form-input-padding-right: #{spacing.$spacing-100},
   $form-input-padding-bottom: #{spacing.$spacing-075},
   $form-input-padding-left: #{spacing.$spacing-100},
-  $form-input-text-color: #{semantic.$color-text-default},
   $form-input-border-width: 1px,
   $form-input-border-style: solid,
-  $form-input-border-color: #{color-scheme.$oc-gray-1},
+  $form-input-border-color: #{color-scheme.$oc-gray-4},
   $form-input-border-radius: #{border-radii.$border-radius-m},
+
+  // form label
+  $form-label-font-weight: bold,
+
+  // header
+  $header-background-color: #{color-scheme.$oc-gray-9},
+
+  // content wrapper
+  $header-content-wrapper-flex-direction: row,
+  $header-content-wrapper-width: 100%,
+  $header-content-wrapper-gap: 1rem,
 
   // helpers
   $horizontal-gap: #{spacing.$spacing-100},
