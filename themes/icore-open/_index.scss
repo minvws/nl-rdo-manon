@@ -55,6 +55,16 @@ and spacing sets */
   $header-content-wrapper-width: 100%,
   $header-content-wrapper-gap: 1rem,
 
+  // form input
+  $form-input-padding-top: #{spacing.$spacing-075},
+  $form-input-padding-right: #{spacing.$spacing-100},
+  $form-input-padding-bottom: #{spacing.$spacing-075},
+  $form-input-padding-left: #{spacing.$spacing-100},
+  $form-input-text-color: #{semantic.$color-text-default},
+  $form-input-border-width: 1px,
+  $form-input-border-color: #{color-scheme.$oc-gray-1},
+  $form-input-border-radius: #{border-radii.$border-radius-m},
+
   // helpers
   $horizontal-gap: #{spacing.$spacing-100},
   $vertical-gap: #{spacing.$spacing-100},
