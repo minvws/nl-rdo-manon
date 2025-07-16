@@ -53,19 +53,6 @@ form {
     );
   }
 
-  input,
-  textarea {
-    @include apply-from-theme.apply-from-theme(
-      (
-        color: theme.$form-input-text-color,
-      )
-    );
-  }
-
-  input {
-    min-height: 0;
-  }
-
   .centered {
     display: table-cell;
     width: auto;

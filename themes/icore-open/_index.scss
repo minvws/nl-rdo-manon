@@ -69,6 +69,7 @@ and spacing sets */
   $form-input-padding-left: #{spacing.$spacing-100},
   $form-input-text-color: #{semantic.$color-text-default},
   $form-input-border-width: 1px,
+  $form-input-border-style: solid,
   $form-input-border-color: #{color-scheme.$oc-gray-1},
   $form-input-border-radius: #{border-radii.$border-radius-m},
 
