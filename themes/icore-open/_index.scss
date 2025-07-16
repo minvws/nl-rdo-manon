@@ -69,7 +69,9 @@ and spacing sets */
 
   // header
   $header-background-color: #{color-scheme.$oc-gray-9},
-  /* content wrapper */ $header-content-wrapper-flex-direction: row,
+
+  // header content wrapper
+  $header-content-wrapper-flex-direction: row,
   $header-content-wrapper-width: 100%,
   $header-content-wrapper-gap: 1rem,
 
