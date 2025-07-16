@@ -2,10 +2,12 @@
 @use "../variables" as theme;
 @use "../functions/not-null";
 
-$checkbox-width: theme.$checkbox-width or 0px;
-$checkbox-gap: theme.$checkbox-gap or 0px;
-$checkbox-input-width: $checkbox-width + $checkbox-gap;
 $breakpoint-1: 24rem !default;
+$checkbox-input-width: null !default;
+
+@if not-null.not-null(theme.$checkbox-width, theme.$checkbox-gap) {
+  $checkbox-input-width: theme.$checkbox-width + theme.$checkbox-gap;
+}
 
 form {
   input[type="checkbox"] {
@@ -63,8 +65,10 @@ form {
       + p.confirmation,
       + p.explanation,
       + p.primary {
-        margin-left: $checkbox-input-width;
-        max-width: calc(100% - #{$checkbox-input-width});
+        @if $checkbox-input-width {
+          margin-left: $checkbox-input-width;
+          max-width: calc(100% - #{$checkbox-input-width});
+        }
       }
     }
   }
@@ -77,7 +81,12 @@ form {
         + p.confirmation,
         + p.explanation,
         + p.primary {
-          @if not-null.not-null(theme.$label-column, theme.$input-column) {
+          @if not-null.not-null(
+            theme.$label-column,
+            theme.$input-column,
+            $checkbox-input-width
+          )
+          {
             @include apply-from-theme.apply-from-theme(
               (
                 max-width: calc(
