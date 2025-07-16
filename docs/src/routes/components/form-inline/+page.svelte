@@ -77,7 +77,7 @@
         <Code
           language="css"
           code={`
-@use "@minvws/manon/form-base";
+@use "@minvws/manon/form";
 @use "@minvws/manon/form-inline";
 `}
         />
@@ -91,7 +91,7 @@
 
         <p>Bijbehorende elementen:</p>
         <ul>
-          <li><a href="{base}/components/form-base">form-base</a></li>
+          <li><a href="{base}/components/form">form</a></li>
         </ul>
       </section>
 

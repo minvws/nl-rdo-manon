@@ -57,7 +57,7 @@ form {
         span {
           @include apply-from-theme.apply-from-theme(
             (
-              margin-bottom: theme.$form-base-required-gap,
+              margin-bottom: theme.$form-required-gap,
             )
           );
         }

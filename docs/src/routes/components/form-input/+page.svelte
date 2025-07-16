@@ -162,7 +162,7 @@
         <Code
           language="css"
           code={`
-@use "@minvws/manon/form-base";
+@use "@minvws/manon/form";
 @use "@minvws/manon/form-input";
 `}
         />

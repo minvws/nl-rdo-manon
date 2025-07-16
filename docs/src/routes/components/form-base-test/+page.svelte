@@ -376,7 +376,7 @@
             <input id="form-link" name="form-link" type="text" />
           </div>
 
-          <a href="form-base-test">Lorem ipsum dolor set</a>
+          <a href="form-test">Lorem ipsum dolor set</a>
 
           <button type="submit">Verzend</button>
         </form>
@@ -421,7 +421,7 @@
             </div>
           </div>
 
-          <a href="form-base-test">Lorem ipsum dolor set</a>
+          <a href="form-test">Lorem ipsum dolor set</a>
 
           <button type="submit">Verzend</button>
         </form>
@@ -447,7 +447,7 @@
     </div>
   </div>
 
-  <a href="form-base-test">Lorem ipsum dolor set</a>
+  <a href="form-test">Lorem ipsum dolor set</a>
 
   <button type="submit">Verzend</button>
 </form>
@@ -474,7 +474,7 @@
           </div>
 
           <div>
-            <a href="form-base-test">Lorem ipsum dolor set</a>
+            <a href="form-test">Lorem ipsum dolor set</a>
           </div>
 
           <button type="submit">Verzend</button>
@@ -502,7 +502,7 @@
   </div>
 
   <div>
-    <a href="form-base-test">Lorem ipsum dolor set</a>
+    <a href="form-test">Lorem ipsum dolor set</a>
   </div>
 
   <button type="submit">Verzend</button>
@@ -530,7 +530,7 @@
               />
             </div>
 
-            <a href="form-base-test">Lorem ipsum dolor set</a>
+            <a href="form-test">Lorem ipsum dolor set</a>
           </fieldset>
           <button type="submit">Verzend</button>
         </form>
@@ -557,7 +557,7 @@
       />
     </div>
 
-    <a href="form-base-test">Lorem ipsum dolor set</a>
+    <a href="form-test">Lorem ipsum dolor set</a>
   </fieldset>
   <button type="submit">Verzend</button>
 </form>
@@ -587,7 +587,7 @@
               </div>
             </div>
 
-            <a href="form-base-test">Lorem ipsum dolor set</a>
+            <a href="form-test">Lorem ipsum dolor set</a>
           </fieldset>
           <button type="submit">Verzend</button>
         </form>
@@ -617,7 +617,7 @@
       </div>
     </div>
 
-    <a href="form-base-test">Lorem ipsum dolor set</a>
+    <a href="form-test">Lorem ipsum dolor set</a>
   </fieldset>
   <button type="submit">Verzend</button>
 </form>
@@ -647,7 +647,7 @@
             </div>
 
             <div>
-              <a href="form-base-test">Lorem ipsum dolor set</a>
+              <a href="form-test">Lorem ipsum dolor set</a>
             </div>
           </fieldset>
           <button type="submit">Verzend</button>
@@ -678,7 +678,7 @@
     </div>
 
     <div>
-      <a href="form-base-test">Lorem ipsum dolor set</a>
+      <a href="form-test">Lorem ipsum dolor set</a>
     </div>
   </fieldset>
   <button type="submit">Verzend</button>
@@ -1282,7 +1282,7 @@
               <option value="Dinosaurus">Dinosaurus</option>
             </optgroup>
           </select>
-          <a href="form-base-test">Link within form test</a>
+          <a href="form-test">Link within form test</a>
 
           <div class="button-container">
             <button>Button 1</button>
@@ -1676,7 +1676,7 @@
                 aria-invalid="true"
               />
               <p class="error" id="voorbeeld-text-input-error-with-link-message">
-                <span>Foutmelding:</span> Lorem ipsum <a href="form-base-test">dolor sit amet</a>
+                <span>Foutmelding:</span> Lorem ipsum <a href="form-test">dolor sit amet</a>
               </p>
             </div>
           </div>
@@ -1906,12 +1906,12 @@
             <label for="input_with_link_1">Input with link</label>
             <div>
               <input id="input_with_link_1" name="input with link" />
-              <a href="form-base-test">Link within form test</a>
+              <a href="form-test">Link within form test</a>
             </div>
           </div>
 
           <button>Test button</button>
-          <a href="form-base-test">Link within form test</a>
+          <a href="form-test">Link within form test</a>
 
           <div class="button-container">
             <button>Button 1</button>
@@ -2326,7 +2326,7 @@
           </fieldset>
 
           <button>Test button</button>
-          <a href="form-base-test">Link within form test</a>
+          <a href="form-test">Link within form test</a>
 
           <div class="button-container">
             <button>Button 1</button>
@@ -3000,12 +3000,12 @@
               <label for="input_with_link_2">Input with link</label>
               <div>
                 <input id="input_with_link_2" name="input with link" />
-                <a href="form-base-test">Link within form test</a>
+                <a href="form-test">Link within form test</a>
               </div>
             </div>
 
             <button>Test button</button><br />
-            <a href="form-base-test">Link within form test</a>
+            <a href="form-test">Link within form test</a>
           </fieldset>
 
           <div class="button-container">
