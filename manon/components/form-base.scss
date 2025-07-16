@@ -1,0 +1,90 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+main section form,
+main article form,
+main div form,
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+
+  @include apply-from-theme.apply-from-theme(
+    (
+      align-items: theme.$form-base-align-items,
+      justify-content: theme.$form-base-justify-content,
+      padding-top: theme.$form-base-padding-top,
+      padding-right: theme.$form-base-padding-right,
+      padding-bottom: theme.$form-base-padding-bottom,
+      padding-left: theme.$form-base-padding-left,
+      background-color: theme.$form-base-background-color,
+      color: theme.$form-base-text-color,
+      font-size: theme.$form-base-font-size,
+      line-height: theme.$form-base-line-height,
+      font-weight: theme.$form-base-font-weight,
+      gap: theme.$form-base-gap,
+      border-width: theme.$form-base-border-width,
+      border-style: theme.$form-base-border-style,
+      border-color: theme.$form-base-border-color,
+      max-width: theme.$form-base-max-width,
+    )
+  );
+
+  div,
+  fieldset {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+
+    &.horizontal-view {
+      flex-wrap: nowrap;
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include apply-from-theme.apply-from-theme(
+      (
+        gap: theme.$form-group-gap,
+      )
+    );
+  }
+
+  input,
+  textarea {
+    @include apply-from-theme.apply-from-theme(
+      (
+        color: theme.$form-base-input-text-color,
+      )
+    );
+  }
+
+  input {
+    min-height: 0;
+  }
+
+  .centered {
+    display: table-cell;
+    width: auto;
+    text-align: center;
+  }
+}
+
+/* Resetting inherited layout padding */
+main {
+  section,
+  section div,
+  article,
+  article div,
+  div,
+  div div {
+    form {
+      div {
+        padding: 0;
+      }
+    }
+  }
+}
