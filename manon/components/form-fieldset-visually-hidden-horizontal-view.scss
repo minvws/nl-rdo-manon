@@ -1,0 +1,35 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+$breakpoint-1: 24rem !default;
+
+form.horizontal-view {
+  > fieldset > fieldset {
+    legend {
+      font-weight: inherit;
+      margin: 0;
+      box-sizing: border-box;
+      float: left;
+
+      @include apply-from-theme.apply-from-theme(
+        (
+          width: theme.$label-column,
+          padding-right: theme.$form-horizontal-view-gap,
+          margin-top: theme.$form-horizontal-view-fieldset-label-margin-top,
+        )
+      );
+    }
+
+    > * {
+      @media (width >= $breakpoint-1) {
+        float: right;
+
+        @include apply-from-theme.apply-from-theme(
+          (
+            width: theme.$input-column,
+          )
+        );
+      }
+    }
+  }
+}

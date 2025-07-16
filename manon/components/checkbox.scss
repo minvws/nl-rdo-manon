@@ -74,16 +74,12 @@
     padding-bottom: 0;
     margin-bottom: 0;
 
-    $styles: ();
-
     @if not-null.not-null(theme.$checkbox-width, theme.$checkbox-gap) {
-      $styles: map-merge(
-        $styles,
+      @include apply-from-theme.apply-from-theme(
         (
           margin-left: calc(theme.$checkbox-width + theme.$checkbox-gap),
         )
       );
     }
-    @include apply-from-theme.apply-from-theme($styles);
   }
 }
