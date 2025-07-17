@@ -1,0 +1,184 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+.breadcrumb-bar,
+body > header nav.breadcrumb-bar {
+  ul,
+  ol {
+    li {
+      a,
+      a[aria-current="page"] {
+        &:visited,
+        &.visited {
+          @include apply-from-theme.apply-from-theme(
+            (
+              font-size: theme.$breadcrumb-bar-link-visited-font-size,
+              font-weight: theme.$breadcrumb-bar-link-visited-font-weight,
+              line-height: theme.$breadcrumb-bar-link-visited-line-height,
+              background-color: theme.$breadcrumb-bar-link-visited-background-color,
+              text-color: theme.$breadcrumb-bar-link-visited-text-color,
+              text-decoration: theme.$breadcrumb-bar-link-visited-text-decoration,
+              border-width: theme.$breadcrumb-bar-link-visited-border-width,
+              border-style: theme.$breadcrumb-bar-link-visited-border-style,
+              border-color: theme.$breadcrumb-bar-link-visited-border-color,
+              border-radius: theme.$breadcrumb-bar-link-visited-border-radius,
+            )
+          );
+          &::before,
+          .icon::before {
+            @include apply-from-theme.apply-from-theme(
+              (
+                font-size: theme.$breadcrumb-bar-link-visited-icon-font-size,
+                font-weight: theme.$breadcrumb-bar-link-visited-icon-font-weight,
+                line-height: theme.$breadcrumb-bar-link-visited-icon-line-height,
+                background-color: theme.$breadcrumb-bar-link-visited-icon-background-color,
+                text-color: theme.$breadcrumb-bar-link-visited-icon-text-color,
+                text-decoration: theme.$breadcrumb-bar-link-visited-icon-text-decoration,
+                border-width: theme.$breadcrumb-bar-link-visited-icon-border-width,
+                border-style: theme.$breadcrumb-bar-link-visited-icon-border-style,
+                border-color: theme.$breadcrumb-bar-link-visited-icon-border-color,
+                border-radius: theme.$breadcrumb-bar-link-visited-icon-border-radius,
+              )
+            );
+          }
+        }
+        &:hover,
+        &.hover {
+          @include apply-from-theme.apply-from-theme(
+            (
+              font-size: theme.$breadcrumb-bar-link-hover-font-size,
+              font-weight: theme.$breadcrumb-bar-link-hover-font-weight,
+              line-height: theme.$breadcrumb-bar-link-hover-line-height,
+              background-color: theme.$breadcrumb-bar-link-hover-background-color,
+              text-color: theme.$breadcrumb-bar-link-hover-text-color,
+              text-decoration: theme.$breadcrumb-bar-link-hover-text-decoration,
+              border-width: theme.$breadcrumb-bar-link-hover-border-width,
+              border-style: theme.$breadcrumb-bar-link-hover-border-style,
+              border-color: theme.$breadcrumb-bar-link-hover-border-color,
+              border-radius: theme.$breadcrumb-bar-link-hover-border-radius,
+            )
+          );
+          &::before,
+          .icon::before {
+            @include apply-from-theme.apply-from-theme(
+              (
+                font-size: theme.$breadcrumb-bar-link-hover-icon-font-size,
+                font-weight: theme.$breadcrumb-bar-link-hover-icon-font-weight,
+                line-height: theme.$breadcrumb-bar-link-hover-icon-line-height,
+                background-color: theme.$breadcrumb-bar-link-hover-icon-background-color,
+                text-color: theme.$breadcrumb-bar-link-hover-icon-text-color,
+                text-decoration: theme.$breadcrumb-bar-link-hover-icon-text-decoration,
+                border-width: theme.$breadcrumb-bar-link-hover-icon-border-width,
+                border-style: theme.$breadcrumb-bar-link-hover-icon-border-style,
+                border-color: theme.$breadcrumb-bar-link-hover-icon-border-color,
+                border-radius: theme.$breadcrumb-bar-link-hover-icon-border-radius,
+              )
+            );
+          }
+        }
+        &:active,
+        &.active {
+          @include apply-from-theme.apply-from-theme(
+            (
+              font-size: theme.$breadcrumb-bar-link-active-font-size,
+              font-weight: theme.$breadcrumb-bar-link-active-font-weight,
+              line-height: theme.$breadcrumb-bar-link-active-line-height,
+              background-color: theme.$breadcrumb-bar-link-active-background-color,
+              text-color: theme.$breadcrumb-bar-link-active-text-color,
+              text-decoration: theme.$breadcrumb-bar-link-active-text-decoration,
+              border-width: theme.$breadcrumb-bar-link-active-border-width,
+              border-style: theme.$breadcrumb-bar-link-active-border-style,
+              border-color: theme.$breadcrumb-bar-link-active-border-color,
+              border-radius: theme.$breadcrumb-bar-link-active-border-radius,
+            )
+          );
+          &::before,
+          .icon::before {
+            @include apply-from-theme.apply-from-theme(
+              (
+                font-size: theme.$breadcrumb-bar-link-active-icon-font-size,
+                font-weight: theme.$breadcrumb-bar-link-active-icon-font-weight,
+                line-height: theme.$breadcrumb-bar-link-active-icon-line-height,
+                background-color: theme.$breadcrumb-bar-link-active-icon-background-color,
+                text-color: theme.$breadcrumb-bar-link-active-icon-text-color,
+                text-decoration: theme.$breadcrumb-bar-link-active-icon-text-decoration,
+                border-width: theme.$breadcrumb-bar-link-active-icon-border-width,
+                border-style: theme.$breadcrumb-bar-link-active-icon-border-style,
+                border-color: theme.$breadcrumb-bar-link-active-icon-border-color,
+                border-radius: theme.$breadcrumb-bar-link-active-icon-border-radius,
+              )
+            );
+          }
+        }
+        &:focus,
+        &.focus {
+          @include apply-from-theme.apply-from-theme(
+            (
+              font-size: theme.$breadcrumb-bar-link-focus-font-size,
+              font-weight: theme.$breadcrumb-bar-link-focus-font-weight,
+              line-height: theme.$breadcrumb-bar-link-focus-line-height,
+              background-color: theme.$breadcrumb-bar-link-focus-background-color,
+              text-color: theme.$breadcrumb-bar-link-focus-text-color,
+              text-decoration: theme.$breadcrumb-bar-link-focus-text-decoration,
+              border-width: theme.$breadcrumb-bar-link-focus-border-width,
+              border-style: theme.$breadcrumb-bar-link-focus-border-style,
+              border-color: theme.$breadcrumb-bar-link-focus-border-color,
+              border-radius: theme.$breadcrumb-bar-link-focus-border-radius,
+            )
+          );
+          &::before,
+          .icon::before {
+            @include apply-from-theme.apply-from-theme(
+              (
+                font-size: theme.$breadcrumb-bar-link-focus-icon-font-size,
+                font-weight: theme.$breadcrumb-bar-link-focus-icon-font-weight,
+                line-height: theme.$breadcrumb-bar-link-focus-icon-line-height,
+                background-color: theme.$breadcrumb-bar-link-focus-icon-background-color,
+                text-color: theme.$breadcrumb-bar-link-focus-icon-text-color,
+                text-decoration: theme.$breadcrumb-bar-link-focus-icon-text-decoration,
+                border-width: theme.$breadcrumb-bar-link-focus-icon-border-width,
+                border-style: theme.$breadcrumb-bar-link-focus-icon-border-style,
+                border-color: theme.$breadcrumb-bar-link-focus-icon-border-color,
+                border-radius: theme.$breadcrumb-bar-link-focus-icon-border-radius,
+              )
+            );
+          }
+        }
+      }
+
+      &[aria-current="page"] {
+        @include apply-from-theme.apply-from-theme(
+          (
+            font-size: theme.$breadcrumb-bar-link-active-font-size,
+            font-weight: theme.$breadcrumb-bar-link-active-font-weight,
+            line-height: theme.$breadcrumb-bar-link-active-line-height,
+            background-color: theme.$breadcrumb-bar-link-active-background-color,
+            text-color: theme.$breadcrumb-bar-link-active-text-color,
+            text-decoration: theme.$breadcrumb-bar-link-active-text-decoration,
+            border-width: theme.$breadcrumb-bar-link-active-border-width,
+            border-style: theme.$breadcrumb-bar-link-active-border-style,
+            border-color: theme.$breadcrumb-bar-link-active-border-color,
+            border-radius: theme.$breadcrumb-bar-link-active-border-radius,
+          )
+        );
+        &::before,
+        .icon::before {
+          @include apply-from-theme.apply-from-theme(
+            (
+              font-size: theme.$breadcrumb-bar-link-active-icon-font-size,
+              font-weight: theme.$breadcrumb-bar-link-active-icon-font-weight,
+              line-height: theme.$breadcrumb-bar-link-active-icon-line-height,
+              background-color: theme.$breadcrumb-bar-link-active-icon-background-color,
+              text-color: theme.$breadcrumb-bar-link-active-icon-text-color,
+              text-decoration: theme.$breadcrumb-bar-link-active-icon-text-decoration,
+              border-width: theme.$breadcrumb-bar-link-active-icon-border-width,
+              border-style: theme.$breadcrumb-bar-link-active-icon-border-style,
+              border-color: theme.$breadcrumb-bar-link-active-icon-border-color,
+              border-radius: theme.$breadcrumb-bar-link-active-icon-border-radius,
+            )
+          );
+        }
+      }
+    }
+  }
+}

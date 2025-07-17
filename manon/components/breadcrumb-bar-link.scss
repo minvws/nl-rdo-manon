@@ -1,0 +1,49 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+@use "../mixins/icon";
+
+.breadcrumb-bar,
+body > header nav.breadcrumb-bar {
+  ul,
+  ol {
+    li {
+      a {
+        @include apply-from-theme.apply-from-theme(
+          (
+            font-size: theme.$breadcrumb-bar-link-font-size,
+            font-weight: theme.$breadcrumb-bar-link-font-weight,
+            line-height: theme.$breadcrumb-bar-link-line-height,
+            background-color: theme.$breadcrumb-bar-link-background-color,
+            text-color: theme.$breadcrumb-bar-link-text-color,
+            text-decoration: theme.$breadcrumb-bar-link-text-decoration,
+            border-width: theme.$breadcrumb-bar-link-border-width,
+            border-style: theme.$breadcrumb-bar-link-border-style,
+            border-color: theme.$breadcrumb-bar-link-border-color,
+            border-radius: theme.$breadcrumb-bar-link-border-radius,
+          )
+        );
+
+        &::before {
+          @include icon.icon-format("breadcrumb-bar-link-");
+          @include icon.icon-content("breadcrumb-bar-link-");
+        }
+
+        &.icon,
+        .icon {
+          &::before {
+            @include icon.icon-format("breadcrumb-bar-link-");
+          }
+        }
+
+        > span.icon:last-of-type:not(:only-of-type) {
+            @include apply-from-theme.apply-from-theme(
+            (
+                padding-right: theme.$breadcrumb-bar-link-icon-last-padding-right,
+                padding-left: theme.$breadcrumb-bar-link-icon-last-padding-left,
+            )
+            );
+        }
+      }
+    }
+  }
+}
