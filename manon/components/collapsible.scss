@@ -14,7 +14,7 @@
     height: auto;
     box-sizing: border-box;
 
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         flex-direction: theme.$collapsing-element-flex-direction,
         justify-content: theme.$collapsing-element-justify-content,
@@ -52,7 +52,7 @@
       margin: 0;
       padding: 0;
 
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           gap: theme.$collapsing-element-list-gap,
           background-color: theme.$collapsing-element-list-background-color,
@@ -65,7 +65,7 @@
         max-width: 100%;
         padding: 0;
 
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             align-items: theme.$collapsing-element-list-item-align-items,
             background-color:
@@ -84,7 +84,7 @@
         }
 
         &:last-child {
-          @include apply-from-theme.apply-from-theme(
+          @include theming.apply-from-theme(
             (
               border-width:
                 theme.$collapsing-element-list-item-last-item-border-width,
@@ -93,7 +93,7 @@
         }
 
         &:first-child {
-          @include apply-from-theme.apply-from-theme(
+          @include theming.apply-from-theme(
             (
               border-width:
                 theme.$collapsing-element-list-item-first-item-border-width,
@@ -111,7 +111,7 @@
           white-space: nowrap;
           box-sizing: border-box;
 
-          @include apply-from-theme.apply-from-theme(
+          @include theming.apply-from-theme(
             (
               justify-content:
                 theme.$collapsing-element-list-item-link-justify-content,
@@ -135,7 +135,7 @@
             @include icon.icon;
 
             & {
-              @include apply-from-theme.apply-from-theme(
+              @include theming.apply-from-theme(
                 (
                   content: theme.$collapsing-element-list-icon,
                   font-family: theme.$collapsing-element-list-icon-font-family,
@@ -150,7 +150,7 @@
 
           &[aria-selected="true"],
           &[aria-current="page"] {
-            @include apply-from-theme.apply-from-theme(
+            @include theming.apply-from-theme(
               (
                 background-color:
                   theme.$collapsing-element-list-link-selected-background-color,
@@ -165,7 +165,7 @@
               @include icon.icon;
 
               & {
-                @include apply-from-theme.apply-from-theme(
+                @include theming.apply-from-theme(
                   (
                     content: theme.$collapsing-element-list-selected-icon,
                     font-family:
@@ -186,7 +186,7 @@
             &:hover {
               border: 0;
 
-              @include apply-from-theme.apply-from-theme(
+              @include theming.apply-from-theme(
                 (
                   border-top:
                     theme.$collapsing-element-list-link-selected-hover-background-color,
@@ -199,7 +199,7 @@
         }
 
         &:hover {
-          @include apply-from-theme.apply-from-theme(
+          @include theming.apply-from-theme(
             (
               background-color:
                 theme.$collapsing-element-list-item-link-hover-background-color,
@@ -208,7 +208,7 @@
           );
 
           a {
-            @include apply-from-theme.apply-from-theme(
+            @include theming.apply-from-theme(
               (
                 background-color:
                   theme.$collapsing-element-list-item-link-hover-background-color,
@@ -219,7 +219,7 @@
             );
 
             &:visited {
-              @include apply-from-theme.apply-from-theme(
+              @include theming.apply-from-theme(
                 (
                   background-color:
                     theme.$collapsing-element-list-item-link-hover-background-color,

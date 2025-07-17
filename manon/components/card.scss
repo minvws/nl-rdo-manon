@@ -15,7 +15,7 @@ span {
     display: flex;
     margin: 0 auto;
     box-sizing: border-box;
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         gap: theme.$card-gap,
         padding-top: theme.$card-padding-top,
@@ -36,7 +36,7 @@ span {
     );
 
     @media (width >= $breakpoint-1) {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           gap: theme.$card-breakpoint-1-gap,
           padding-top: theme.$card-breakpoint-1-padding-top,

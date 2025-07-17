@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 $breakpoint: 24rem !default;
@@ -10,7 +10,7 @@ form {
   input[type="submit"],
   input[type="reset"] {
     box-sizing: border-box;
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         align-self: theme.$form-button-align-self,
         width: theme.$form-button-width,
@@ -33,7 +33,7 @@ form {
     );
 
     @media (width >= $breakpoint) {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           width: theme.$form-button-after-breakpoint-width,
           min-width: theme.$form-button-min-width,

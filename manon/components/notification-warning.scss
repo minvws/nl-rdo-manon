@@ -8,7 +8,7 @@ section.warning,
 div.warning {
   @include notification.notification;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       background-color: theme.$notification-warning-background-color,
       color: theme.$notification-warning-text-color,

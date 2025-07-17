@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 /* Fieldset styling is a bit different compared to the default form styling.
@@ -22,7 +22,7 @@ main div form,
 form {
   > fieldset {
     legend {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           font-weight: theme.$form-fieldset-legend-font-weight,
           margin-bottom: theme.$form-fieldset-legend-margin-bottom,
@@ -45,7 +45,7 @@ form {
       }
 
       label {
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             margin-bottom: theme.$form-fieldset-label-margin-bottom,
           )
@@ -70,7 +70,7 @@ form {
     /* Fieldsets within fieldsets ignore the "*" all selector */
     > *,
     > fieldset {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           margin-bottom: theme.$form-fieldset-fields-margin-top,
         )

@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -15,7 +15,7 @@ form {
     margin-left: 0;
     margin-right: 0;
 
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         vertical-align: theme.$form-checkbox-vertical-align,
         cursor: theme.$form-checkbox-cursor,
@@ -43,7 +43,7 @@ form {
       display: flex;
       flex-direction: row;
 
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           gap: theme.$checkbox-gap,
           align-items: theme.$checkbox-align-items,
@@ -87,7 +87,7 @@ form {
             $checkbox-input-width
           )
           {
-            @include apply-from-theme.apply-from-theme(
+            @include theming.apply-from-theme(
               (
                 max-width: calc(
                     #{theme.$form-checkbox-input-column} -

@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 $breakpoint: 50rem !default;
@@ -10,7 +10,7 @@ $breakpoint: 50rem !default;
   align-items: flex-start;
   flex-wrap: wrap;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       justify-content: theme.$vertical-justify-content,
       gap: theme.$vertical-gap,

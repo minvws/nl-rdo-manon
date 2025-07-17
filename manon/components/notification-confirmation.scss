@@ -8,7 +8,7 @@ section.confirmation,
 div.confirmation {
   @include notification.notification;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       background-color: theme.$notification-confirmation-background-color,
       color: theme.$notification-confirmation-text-color,
