@@ -2,11 +2,6 @@
 @use "../variables" as theme;
 
 .breadcrumb-bar {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0;
-
   @include apply-from-theme.apply-from-theme(
     (
       background-color: theme.$breadcrumb-bar-background-color,

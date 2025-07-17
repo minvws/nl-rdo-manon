@@ -49,6 +49,19 @@ and spacing sets */
   $button-destructive-primary-hover-text-color: #{color-scheme.$oc-white},
   $button-destructive-primary-hover-border-color: #{semantic.$color-destructive-intense},
 
+  // breadcrumb bar
+  $breadcrumb-bar-padding-top: #{spacing.$spacing-075},
+  $breadcrumb-bar-padding-right: #{spacing.$spacing-100},
+  $breadcrumb-bar-padding-bottom: #{spacing.$spacing-075},
+  $breadcrumb-bar-padding-left: #{spacing.$spacing-100},
+  $breadcrumb-bar-text-color: #{semantic.$color-text-default},
+  $breadcrumb-bar-gap: #{spacing.$spacing-100},
+  $breadcrumb-bar-list-item-last-child-font-weight: bold,
+  $breadcrumb-bar-list-item-gap: #{spacing.$spacing-100},
+
+  // breadcrumb bar link
+  $breadcrumb-bar-link-text-decoration: none,
+
   // code block
   $code-block-padding: #{spacing.$spacing-200},
   $code-block-background-color: #{color-scheme.$oc-gray-1},
