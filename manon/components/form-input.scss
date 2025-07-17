@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 input {
@@ -6,7 +6,7 @@ input {
   box-sizing: border-box;
   min-height: 0;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       padding-top: theme.$form-input-padding-top,
       padding-right: theme.$form-input-padding-right,

@@ -8,7 +8,7 @@ section.explanation,
 div.explanation {
   @include notification.notification;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       background-color: theme.$notification-explanation-background-color,
       color: theme.$notification-explanation-text-color,
