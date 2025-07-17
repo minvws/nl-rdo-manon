@@ -1,7 +1,153 @@
-@use "../mixins/hero";
+@use "../mixins/theming";
+@use "../variables" as theme;
 
 .hero {
   .content-container {
-    @include hero.hero-content-container;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+
+    @include theming.apply-from-theme(
+      (
+        flex-direction: theme.$hero-content-container-flex-direction,
+        justify-content: theme.$hero-content-container-justify-content,
+        align-items: theme.$hero-content-container-align-items,
+        padding-top: theme.$hero-content-container-padding-top,
+        padding-right: theme.$hero-content-container-padding-right,
+        padding-bottom: theme.$hero-content-container-padding-bottom,
+        padding-left: theme.$hero-content-container-padding-left,
+        color: theme.$hero-content-container-text-color,
+      )
+    );
+
+    .tile {
+      display: flex;
+      @include theming.apply-from-theme(
+        (
+          flex-direction: theme.$hero-tile-flex-direction,
+          gap: theme.$hero-tile-gap,
+          border-width: theme.$hero-tile-border-width,
+          border-style: theme.$hero-tile-border-style,
+          border-color: theme.$hero-tile-border-color,
+          border-radius: theme.$hero-tile-border-radius,
+          background-color: theme.$hero-tile-background-color,
+          color: theme.$hero-tile-text-color,
+          padding-top: theme.$hero-tile-padding-top,
+          padding-right: theme.$hero-tile-padding-right,
+          padding-bottom: theme.$hero-tile-padding-bottom,
+          padding-left: theme.$hero-tile-padding-left,
+        )
+      );
+
+      > * {
+        box-sizing: border-box;
+        width: 100%;
+      }
+
+      h1 {
+        @include theming.apply-from-theme(
+          (
+            font-size: theme.$tile-title-font-size-text,
+            color: theme.$tile-title-text-color,
+          )
+        );
+      }
+
+      h2 {
+        @include theming.apply-from-theme(
+          (
+            font-size: theme.$tile-subtitle-font-size-text,
+            color: theme.$tile-subtitle-text-color,
+          )
+        );
+      }
+
+      ul,
+      ol {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        box-sizing: border-box;
+        padding-left: 2rem;
+        @include theming.apply-from-theme(
+          (
+            gap: theme.$hero-tile-list-gap,
+            padding: theme.$hero-tile-list-padding,
+            background-color: theme.$hero-tile-list-background-color,
+            line-height: theme.$hero-tile-list-line-height,
+            font-size: theme.$hero-tile-list-font-size,
+            font-weight: theme.$hero-tile-list-font-weight,
+            color: theme.$hero-tile-list-text-color,
+          )
+        );
+
+        li {
+          box-sizing: border-box;
+          @include theming.apply-from-theme(
+            (
+              background-color: theme.$hero-tile-list-item-background-color,
+              border-width: theme.$hero-tile-list-item-border-width,
+              border-style: theme.$hero-tile-list-item-border-style,
+              border-color: theme.$hero-tile-list-item-border-color,
+              padding: theme.$hero-tile-list-item-padding,
+              line-height: theme.$hero-tile-list-item-line-height,
+              font-size: theme.$hero-tile-list-item-font-size,
+              font-weight: theme.$hero-tile-list-item-font-weight,
+              color: theme.$hero-tile-list-item-text-color,
+            )
+          );
+
+          a {
+            line-height: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+          }
+        }
+      }
+    }
+
+    ul,
+    ol {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      box-sizing: border-box;
+      @include theming.apply-from-theme(
+        (
+          gap: theme.$hero-list-gap,
+          padding: theme.$hero-list-padding,
+          background-color: theme.$hero-list-background-color,
+          line-height: theme.$hero-list-line-height,
+          font-size: theme.$hero-list-font-size,
+          font-weight: theme.$hero-list-font-weight,
+          color: theme.$hero-list-text-color,
+        )
+      );
+
+      li {
+        box-sizing: border-box;
+        @include theming.apply-from-theme(
+          (
+            background-color: theme.$hero-list-item-background-color,
+            border-width: theme.$hero-list-item-border-width,
+            border-style: theme.$hero-list-item-border-style,
+            border-color: theme.$hero-list-item-border-color,
+            padding: theme.$hero-list-item-padding,
+            line-height: theme.$hero-list-item-line-height,
+            font-size: theme.$hero-list-item-font-size,
+            font-weight: theme.$hero-list-item-font-weight,
+            color: theme.$hero-list-item-text-color,
+          )
+        );
+
+        a {
+          line-height: inherit;
+          font-size: inherit;
+          font-weight: inherit;
+        }
+      }
+    }
   }
 }
