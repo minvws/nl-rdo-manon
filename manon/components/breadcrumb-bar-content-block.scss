@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 .breadcrumb-bar {
@@ -62,12 +62,12 @@
         );
 
         &::after {
-          @include apply-from-theme.apply-from-theme(
-            (
-              content: theme.$breadcrumb-bar-content-block-icon,
-              font-family: theme.$breadcrumb-bar-icon-font-family,
-              margin-left: theme.$breadcrumb-bar-content-block-icon-margin-left,
-              margin-right:
+          @include theming.apply-from-theme(
+          (
+            content: theme.$breadcrumb-bar-content-block-icon,
+            font-family: theme.$breadcrumb-bar-icon-font-family,
+            margin-left: theme.$breadcrumb-bar-content-block-icon-margin-left,
+            margin-right:
                 theme.$breadcrumb-bar-content-block-icon-margin-right,
             )
           );
@@ -114,7 +114,7 @@
           );
 
           &:hover {
-            @include apply-from-theme.apply-from-theme(
+            @include theming.apply-from-theme(
               (
                 text-decoration:
                   theme.$breadcrumb-bar-content-block-link-hover-text-decoration,

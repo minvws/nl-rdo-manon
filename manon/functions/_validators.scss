@@ -4,10 +4,13 @@
 /// @return {bool} Returns `true` if **all** values are not null; otherwise `false`.
 ///
 /// @example scss
-///   @not-null($a, $b) {
-///     margin-left: calc($a + $b);
+///   @if args-not-null($value1, $value2) {
+///     // Do something if both $value1 and $value2 are not null
+///     .my-class {
+///       padding: 10px;
+///     }
 ///   }
-@function not-null($args...) {
+@function args-not-null($args...) {
   @each $arg in $args {
     @if not $arg {
       @return false;

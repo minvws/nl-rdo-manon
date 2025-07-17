@@ -52,7 +52,7 @@ body > footer,
     }
 
     @media (width >= $breakpoint) {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           gap: theme.$footer-two-thirds-one-third-breakpoint-gap,
         )

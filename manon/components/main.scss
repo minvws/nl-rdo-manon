@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 main {
@@ -7,7 +7,7 @@ main {
   margin: 0 auto;
   box-sizing: border-box;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       background-color: theme.$main-background-color,
       flex-direction: theme.$main-flex-direction,
