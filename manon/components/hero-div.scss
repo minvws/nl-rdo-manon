@@ -1,0 +1,7 @@
+@use "../mixins/hero";
+
+.hero {
+  > div {
+    @include hero.hero-content-container;
+  }
+}
