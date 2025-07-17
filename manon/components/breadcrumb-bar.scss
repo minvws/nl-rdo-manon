@@ -8,6 +8,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   flex-wrap: wrap;
+  flex-direction: column;
 
   @include apply-from-theme.apply-from-theme(
     (
@@ -119,12 +120,14 @@
       a {
         /* Break words that won't fit the available space */
         overflow-wrap: anywhere;
+        color: inherit;
 
         @include apply-from-theme.apply-from-theme(
           (
             white-space: theme.$breadcrumb-bar-link-white-space,
             padding-right: theme.$breadcrumb-bar-link-padding-right,
             padding-left: theme.$breadcrumb-bar-link-padding-left,
+            text-decoration: theme.$breadcrumb-bar-link-text-decoration,
           )
         );
 
