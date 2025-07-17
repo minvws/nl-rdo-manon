@@ -1,0 +1,20 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+button,
+a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  &.round {
+    @include apply-from-theme.apply-from-theme(
+      (
+        margin: theme.$button-round-margin,
+        min-width: theme.$button-round-min-width,
+        border-radius: theme.$button-round-border-radius,
+        width: theme.$button-round-width,
+        height: theme.$button-round-height,
+      )
+    );
+  }
+}

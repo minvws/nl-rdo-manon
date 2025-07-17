@@ -1,0 +1,74 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+@use "../mixins/icon";
+
+button,
+a.button {
+  &.icon {
+    gap: 0;
+    min-width: 0;
+
+    @include apply-from-theme.apply-from-theme(
+      (
+        justify-content: theme.$button-icon-justify-content,
+        gap: theme.$button-icon-gap,
+        background-color: theme.$button-icon-background-color,
+        color: theme.$button-icon-text-color,
+        font-family: theme.$button-icon-font-family,
+        font-size: theme.$button-icon-font-size,
+        font-weight: theme.$button-icon-font-weight,
+        line-height: theme.$button-icon-line-height,
+        text-decoration: theme.$button-icon-text-decoration,
+        text-align: theme.$button-icon-text-align,
+        padding-top: theme.$button-icon-padding-top,
+        padding-right: theme.$button-icon-padding-right,
+        padding-bottom: theme.$button-icon-padding-bottom,
+        padding-left: theme.$button-icon-padding-left,
+        min-width: theme.$button-icon-min-width,
+        height: theme.$button-icon-height,
+        min-height: theme.$button-icon-min-height,
+        border-width: theme.$button-icon-border-width,
+        border-style: theme.$button-icon-border-style,
+        border-color: theme.$button-icon-border-color,
+        border-radius: theme.$button-icon-border-radius,
+        -webkit-appearance: theme.$button-icon-webkit-appearance,
+      )
+    );
+  }
+
+  .icon {
+    &::before {
+        @include icon.icon;
+        @include apply-from-theme.apply-from-theme(
+        (
+            font-family: theme.$button-icon-icon-font-family,
+            font-size: theme.$button-icon-icon-font-size,
+            line-height: theme.$button-icon-icon-line-height,
+            text-decoration: theme.$button-icon-icon-text-decoration,
+            padding-right: theme.$button-icon-icon-padding-right,
+            padding-left: theme.$button-icon-icon-padding-left,
+            background-color: theme.$button-icon-icon-background-color,
+            color: theme.$button-icon-icon-text-color,
+            content: theme.$button-icon-icon,
+        )
+        );
+    }
+  }
+}
+
+a.button {
+  &.icon {
+    &:visited,
+    &.visited {
+        @include apply-from-theme.apply-from-theme(
+        (
+            outline: theme.$button-icon-focus-outline,
+            outline-offset: theme.$button-icon-focus-outline-offset,
+            outline-color: theme.$button-icon-focus-outline-color,
+            z-index: theme.$button-icon-focus-z-index,
+            box-shadow: theme.$button-icon-focus-box-shadow,
+        )
+        );
+    }
+  }
+}
