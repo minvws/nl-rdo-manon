@@ -1,6 +1,6 @@
 @use "../mixins/apply-from-theme";
 @use "../variables" as theme;
-@use "../functions/not-null";
+@use "../functions/validators";
 
 $breakpoint: 24rem !default;
 
@@ -85,7 +85,7 @@ form {
         @extend %fieldset-button-container-styling;
 
         @media (width >= $breakpoint) {
-          @if not-null.not-null(
+          @if validators.args-not-null(
             theme.$form-button-container-label-colum,
             theme.$button-container-gap
           )

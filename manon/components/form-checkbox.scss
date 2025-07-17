@@ -1,11 +1,11 @@
 @use "../mixins/apply-from-theme";
 @use "../variables" as theme;
-@use "../functions/not-null";
+@use "../functions/validators";
 
 $breakpoint-1: 24rem !default;
 $checkbox-input-width: null !default;
 
-@if not-null.not-null(theme.$checkbox-width, theme.$checkbox-gap) {
+@if validators.args-not-null(theme.$checkbox-width, theme.$checkbox-gap) {
   $checkbox-input-width: theme.$checkbox-width + theme.$checkbox-gap;
 }
 
@@ -81,7 +81,7 @@ form {
         + p.confirmation,
         + p.explanation,
         + p.primary {
-          @if not-null.not-null(
+          @if validators.args-not-null(
             theme.$form-checkbox-label-column,
             theme.$form-checkbox-input-column,
             $checkbox-input-width
