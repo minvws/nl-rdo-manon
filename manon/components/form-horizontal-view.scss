@@ -1,0 +1,277 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+@use "../functions/not-null";
+
+$breakpoint: 24rem !default;
+
+form.horizontal-view {
+  flex-direction: column;
+  @include apply-from-theme.apply-from-theme(
+    (
+      gap: theme.$form-horizontal-view-gap,
+    )
+  );
+  flex-wrap: wrap;
+
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    margin-left: 0;
+  }
+
+  > div,
+  > section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include apply-from-theme.apply-from-theme(
+      (
+        justify-content: theme.$form-horizontal-view-justify-content,
+        gap: theme.$form-horizontal-view-group-gap
+          theme.$form-horizontal-view-group-vertical-gap,
+      )
+    );
+    flex-wrap: wrap;
+    margin: 0;
+
+    &.checkbox {
+      margin: 0;
+      @include apply-from-theme.apply-from-theme(
+        (
+          gap: theme.$checkbox-gap,
+        )
+      );
+      flex-wrap: nowrap;
+
+      @media (width >= $breakpoint) {
+        @include apply-from-theme.apply-from-theme(
+          (
+            max-width: theme.$input-column,
+            margin-left: theme.$label-column,
+          )
+        );
+      }
+
+      %horizontal-view-checkbox,
+      input[type="checkbox"] {
+        /* Align checkbox with input fields */
+        margin-left: 0;
+        flex-grow: 0;
+        margin-right: 0;
+
+        & + label {
+          $styles: ();
+          @if not-null.not-null(theme.$checkbox-width) {
+            $styles: map-merge(
+              $styles,
+              (
+                max-width: calc(100% - theme.$checkbox-width),
+              )
+            );
+          }
+          @include apply-from-theme.apply-from-theme($styles);
+        }
+      }
+
+      > div {
+        @extend %horizontal-view-checkbox;
+
+        input[type="checkbox"] {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &.radio {
+      @include apply-from-theme.apply-from-theme(
+        (
+          gap: theme.$form-radio-margin-right,
+        )
+      );
+      flex-wrap: nowrap;
+
+      %horizontal-view-radio,
+      input[type="radio"] {
+        flex-grow: 0;
+        margin-right: 0;
+
+        & + label {
+          $styles: ();
+          @if not-null.not-null(theme.$radio-input-width) {
+            $styles: map-merge(
+              $styles,
+              (
+                max-width: calc(100% - theme.$radio-input-width),
+              )
+            );
+          }
+          @include apply-from-theme.apply-from-theme($styles);
+        }
+
+        @media (width >= $breakpoint) {
+          /* Align radio with input fields */
+          @include apply-from-theme.apply-from-theme(
+            (
+              margin-left: theme.$label-column,
+            )
+          );
+        }
+      }
+
+      > div {
+        @extend %horizontal-view-radio;
+
+        input[type="radio"] {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &.checkbox,
+    &.radio {
+      justify-content: flex-start;
+
+      > .nota-bene {
+        @include apply-from-theme.apply-from-theme(
+          (
+            margin-left: theme.$label-column,
+          )
+        );
+      }
+    }
+
+    /* Notifications */
+    &.error,
+    &.warning,
+    &.explanation,
+    &.confirmation,
+    &.system {
+      @include apply-from-theme.apply-from-theme(
+        (
+          flex-direction: theme.$form-horizontal-view-notification-block-element-flex-direction,
+          justify-content: theme.$form-horizontal-view-notification-block-element-justify-content,
+          align-items: theme.$form-horizontal-view-notification-block-element-align-items,
+          gap: theme.$form-horizontal-view-notification-block-element-gap,
+        )
+      );
+      margin: 0;
+
+      > * {
+        max-width: 100%;
+      }
+    }
+
+    input[type="color"] {
+      @include apply-from-theme.apply-from-theme(
+        (
+          max-width: theme.$form-input-color-max-width,
+        )
+      );
+    }
+
+    > * {
+      flex-grow: 1;
+      box-sizing: border-box;
+    }
+
+    > button,
+    > a.button,
+    > input[type="button"],
+    > input[type="submit"],
+    > input[type="reset"] {
+      flex-grow: 0;
+    }
+
+    @media (width >= $breakpoint) {
+      flex-wrap: nowrap;
+
+      > * {
+        @include apply-from-theme.apply-from-theme(
+          (
+            max-width: theme.$input-column,
+          )
+        );
+      }
+
+      label {
+        width: 100%;
+        @include apply-from-theme.apply-from-theme(
+          (
+            max-width: theme.$form-horizontal-view-label-max-width,
+          )
+        );
+      }
+    }
+  }
+
+  .option-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (width >= $breakpoint) {
+      > * {
+        @include apply-from-theme.apply-from-theme(
+          (
+            margin-left: theme.$label-column,
+          )
+        );
+      }
+    }
+  }
+
+  @media (width >= $breakpoint) {
+    %align-to-input {
+      width: auto;
+      max-width: 100%;
+      @include apply-from-theme.apply-from-theme(
+        (
+          margin-left: theme.$label-column,
+        )
+      );
+      flex-grow: 0;
+    }
+
+    > button,
+    > a.button,
+    > input[type="button"],
+    > input[type="submit"],
+    > input[type="reset"],
+    > a {
+      @extend %align-to-input;
+    }
+
+    > div {
+      > button,
+      > a.button,
+      > input[type="button"],
+      > input[type="submit"],
+      > input[type="reset"],
+      > a {
+        @extend %align-to-input;
+      }
+    }
+
+    > div.horizontal-view,
+    > div.button-container {
+      @include apply-from-theme.apply-from-theme(
+        (
+          max-width: theme.$input-column,
+          margin-left: theme.$label-column,
+        )
+      );
+      flex-wrap: wrap;
+
+      button,
+      a.button,
+      input[type="button"],
+      input[type="submit"],
+      input[type="reset"] {
+        max-width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+}

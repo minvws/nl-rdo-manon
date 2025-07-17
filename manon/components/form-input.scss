@@ -4,8 +4,6 @@
 input {
   width: 100%;
   box-sizing: border-box;
-  min-height: 0;
-
   @include apply-from-theme.apply-from-theme(
     (
       padding-top: theme.$form-input-padding-top,

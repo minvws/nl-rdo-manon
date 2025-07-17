@@ -1,0 +1,10 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+form fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+}

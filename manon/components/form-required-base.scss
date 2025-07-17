@@ -1,0 +1,34 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+form {
+  display: flex;
+  flex-direction: column;
+  @include apply-from-theme.apply-from-theme(
+    (
+      align-items: theme.$form-required-base-align-items,
+      justify-content: theme.$form-required-base-justify-content,
+      padding-top: theme.$form-required-base-padding-top,
+      padding-right: theme.$form-required-base-padding-right,
+      padding-bottom: theme.$form-required-base-padding-bottom,
+      padding-left: theme.$form-required-base-padding-left,
+      background-color: theme.$form-required-base-background-color,
+      color: theme.$form-required-base-text-color,
+      font-size: theme.$form-required-base-font-size,
+      line-height: theme.$form-required-base-line-height,
+      font-weight: theme.$form-required-base-font-weight,
+      gap: theme.$form-required-base-gap,
+      border-width: theme.$form-required-base-border-width,
+      border-style: theme.$form-required-base-border-style,
+      border-color: theme.$form-required-base-border-color,
+    )
+  );
+  width: 100%;
+  box-sizing: border-box;
+
+  div,
+  fieldset {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

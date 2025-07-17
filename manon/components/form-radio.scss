@@ -1,0 +1,99 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+@use "../functions/not-null";
+
+form {
+  $breakpoint-1: 24rem !default;
+  $radio-input-width-calc: null;
+
+  @if not-null.not-null(theme.$radio-input-width, theme.$radio-gap) {
+    $radio-input-width-calc: theme.$radio-input-width + theme.$radio-gap;
+  }
+
+  input[type="radio"] {
+    padding: 0;
+    @include apply-from-theme.apply-from-theme(
+      (
+        vertical-align: theme.$form-radio-vertical-align,
+        cursor: theme.$form-radio-cursor,
+        width: theme.$form-radio-width,
+        min-width: theme.$form-radio-width,
+        height: theme.$form-radio-height,
+        align-self: theme.$form-radio-align-self,
+        accent-color: theme.$form-radio-background-color,
+      )
+    );
+    margin-left: 0;
+    margin-right: 0;
+
+    & + label {
+      width: auto;
+      cursor: pointer;
+      margin-top: 0;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  .radio {
+    > div {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      @include apply-from-theme.apply-from-theme(
+        (
+          gap: theme.$radio-gap,
+          align-items: theme.$radio-align-items,
+        )
+      );
+    }
+
+    p.error,
+    p.warning,
+    p.confirmation,
+    p.explanation,
+    p.primary {
+      margin: 0;
+    }
+
+    @media (width >= $breakpoint-1) {
+      + p.error,
+      + p.warning,
+      + p.confirmation,
+      + p.explanation,
+      + p.primary {
+        @if not-null.not-null($radio-input-width-calc) {
+          @include apply-from-theme.apply-from-theme(
+            (
+              max-width: calc(100% - #{$radio-input-width-calc}),
+              margin-left: $radio-input-width-calc,
+            )
+          );
+        }
+      }
+    }
+  }
+
+  .option-group {
+    .radio {
+      + p.error,
+      + p.warning,
+      + p.confirmation,
+      + p.explanation,
+      + p.primary {
+        @if not-null.not-null(theme.$input-column, $radio-input-width-calc) {
+          @include apply-from-theme.apply-from-theme(
+            (
+              max-width: calc(theme.$input-column - #{$radio-input-width-calc}),
+              margin-left: calc(
+                  theme.$label-column + #{$radio-input-width-calc}
+                ),
+            )
+          );
+        }
+      }
+    }
+  }
+}

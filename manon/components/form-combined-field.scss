@@ -1,0 +1,11 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+.combined-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  flex-wrap: nowrap;
+}
