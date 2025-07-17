@@ -1,6 +1,7 @@
 $header-flex-direction: null !default;
 $header-justify-content: null !default;
 $header-align-items: null !default;
+$header-gap: null !default;
 $header-padding-top: null !default;
 $header-padding-right: null !default;
 $header-padding-bottom: null !default;
@@ -11,8 +12,6 @@ $header-min-height: null !default;
 $header-border-width: null !default;
 $header-border-style: null !default;
 $header-border-color: null !default;
-
-/* content wrapper */
 $header-content-wrapper-flex-direction: null !default;
 $header-content-wrapper-justify-content: null !default;
 $header-content-wrapper-align-items: null !default;

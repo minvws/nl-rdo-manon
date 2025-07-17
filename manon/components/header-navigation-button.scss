@@ -1,0 +1,54 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../mixins/icon";
+@use "../mixins/icon-only";
+@use "../mixins/button";
+@use "../mixins/outline";
+
+body > header,
+.page-header,
+%header-navigation-style {
+  nav {
+    button,
+    a.button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      & {
+        @include button.button("header-navigation-button-");
+      }
+
+      /* Icon */
+      &::before {
+        @include icon.icon-format("header-navigation-button-icon");
+        @include icon.icon-content("header-navigation-button-icon");
+      }
+
+      /* Icon only */
+      &.icon-only {
+        @include icon-only.icon-only("header-navigation-button-icon-only-");
+      }
+
+      &.icon,
+      .icon {
+        &::before {
+          @include icon.icon-format("header-navigation-button-icon");
+        }
+      }
+
+      &:focus,
+      &.focus {
+        @include outline.outline("header-navigation-button-focus-");
+
+        &:visited,
+        &.visited {
+          @include outline.outline("header-navigation-button-focus-");
+        }
+      }
+    }
+
+    a.button {
+      @include button.link-button("header-navigation-link-button-");
+    }
+  }
+}

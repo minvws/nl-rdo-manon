@@ -1,0 +1,45 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+body > header,
+.page-header,
+%header-style {
+  a {
+    &:hover,
+    &.hover
+
+    /* Testing purposes */ {
+      @include theming.apply-from-theme(
+        (
+          font-size: theme.$header-link-hover-font-size,
+          font-weight: theme.$header-link-hover-font-weight,
+          line-height: theme.$header-link-hover-line-height,
+          background-color: theme.$header-link-hover-background-color,
+          text-color: theme.$header-link-hover-text-color,
+          text-decoration: theme.$header-link-hover-text-decoration,
+          border-width: theme.$header-link-hover-border-width,
+          border-style: theme.$header-link-hover-border-style,
+          border-color: theme.$header-link-hover-border-color,
+          border-radius: theme.$header-link-hover-border-radius,
+        )
+      );
+      &::before,
+      .icon::before {
+        @include theming.apply-from-theme(
+          (
+            font-size: theme.$header-link-hover-icon-font-size,
+            font-weight: theme.$header-link-hover-icon-font-weight,
+            line-height: theme.$header-link-hover-icon-line-height,
+            background-color: theme.$header-link-hover-icon-background-color,
+            text-color: theme.$header-link-hover-icon-text-color,
+            text-decoration: theme.$header-link-hover-icon-text-decoration,
+            border-width: theme.$header-link-hover-icon-border-width,
+            border-style: theme.$header-link-hover-icon-border-style,
+            border-color: theme.$header-link-hover-icon-border-color,
+            border-radius: theme.$header-link-hover-icon-border-radius,
+          )
+        );
+      }
+    }
+  }
+}

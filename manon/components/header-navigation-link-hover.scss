@@ -1,0 +1,28 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../mixins/link";
+
+%header-navigation-link-hover-styling {
+  a {
+    &:hover,
+    /* Testing purposes */
+    &.hover {
+      @include link.link-and-icon-styling("header-navigation-link-hover-");
+    }
+  }
+}
+
+body > header,
+.page-header,
+%header-navigation-style {
+  nav {
+    @extend %header-navigation-link-hover-styling;
+
+    ul,
+    ol {
+      li {
+        @extend %header-navigation-link-hover-styling;
+      }
+    }
+  }
+}

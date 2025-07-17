@@ -1,0 +1,29 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../mixins/link";
+
+body > header,
+.page-header,
+%header-navigation-style {
+  nav {
+    a {
+      @include link.link("header-navigation-link-");
+
+      & {
+        height: 100%;
+        display: inline-flex;
+        @include theming.apply-from-theme(
+          (
+            align-items: theme.$header-navigation-link-align-items,
+            justify-content: theme.$header-navigation-link-justify-content,
+            padding-top: theme.$header-navigation-link-padding-top,
+            padding-right: theme.$header-navigation-link-padding-right,
+            padding-bottom: theme.$header-navigation-link-padding-bottom,
+            padding-left: theme.$header-navigation-link-padding-left,
+            min-height: theme.$header-navigation-link-min-height,
+          )
+        );
+      }
+    }
+  }
+}

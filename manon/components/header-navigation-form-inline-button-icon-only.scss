@@ -1,0 +1,44 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../mixins/icon";
+
+body > header,
+.page-header {
+  nav {
+    form.inline {
+      button,
+      a.button,
+      input[type="button"],
+      input[type="submit"],
+      input[type="reset"] {
+        &.icon-only {
+          font-size: 0;
+          gap: 0;
+          @include theming.apply-from-theme(
+            (
+              min-width: theme.$button-icon-only-min-width,
+              width: theme.$button-icon-only-width,
+              min-height: theme.$button-icon-only-min-height,
+              height: theme.$button-icon-only-height,
+            )
+          );
+          background-color: transparent;
+          border: 0;
+
+          &::before {
+            @include icon.icon;
+            @include theming.apply-from-theme(
+              (
+                font-family: theme.$button-icon-only-font-family,
+                font-size: theme.$button-icon-only-font-size,
+                padding-right: theme.$button-icon-only-padding-right,
+                padding-left: theme.$button-icon-only-padding-left,
+                color: theme.$button-icon-only-text-color,
+              )
+            );
+          }
+        }
+      }
+    }
+  }
+}

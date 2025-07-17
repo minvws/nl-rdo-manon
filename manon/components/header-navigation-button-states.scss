@@ -1,0 +1,83 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../mixins/icon";
+@use "../mixins/outline";
+
+$header-navigation-button-states: "active", "focus", "hover";
+
+body > header,
+.page-header,
+%header-navigation-style {
+  nav {
+    a.button {
+      &:visited,
+        /* Testing purposes */
+      &.visited {
+        @include theming.apply-from-theme(
+          (
+            font-size: theme.$header-navigation-button-font-size,
+            font-weight: theme.$header-navigation-button-font-weight,
+            line-height: theme.$header-navigation-button-line-height,
+            background-color: theme.$header-navigation-button-background-color,
+            text-color: theme.$header-navigation-button-text-color,
+            text-decoration: theme.$header-navigation-button-text-decoration,
+            border-width: theme.$header-navigation-button-border-width,
+            border-style: theme.$header-navigation-button-border-style,
+            border-color: theme.$header-navigation-button-border-color,
+            border-radius: theme.$header-navigation-button-border-radius,
+          )
+        );
+      }
+
+      &:focus,
+      &.focus {
+        @include outline.outline("header-navigation-button-focus-");
+
+        &:visited,
+        &.visited {
+          @include outline.outline("header-navigation-button-focus-");
+        }
+      }
+    }
+
+    button,
+    a.button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      @each $state in $header-navigation-button-states {
+        &:#{$state},
+        /* Testing purposes */
+        &.#{$state} {
+          @include theming.apply-from-theme(
+            (
+              font-size: theme.$header-navigation-button-#{$state}-font-size,
+              font-weight: theme.$header-navigation-button-#{$state}-font-weight,
+              line-height: theme.$header-navigation-button-#{$state}-line-height,
+              background-color: theme.$header-navigation-button-#{$state}-background-color,
+              text-color: theme.$header-navigation-button-#{$state}-text-color,
+              text-decoration: theme.$header-navigation-button-#{$state}-text-decoration,
+              border-width: theme.$header-navigation-button-#{$state}-border-width,
+              border-style: theme.$header-navigation-button-#{$state}-border-style,
+              border-color: theme.$header-navigation-button-#{$state}-border-color,
+              border-radius: theme.$header-navigation-button-#{$state}-border-radius,
+            )
+          );
+        }
+
+        /* Icon */
+        &.icon {
+          @include icon.icon-format("header-navigation-button-" + $state + "-");
+          @include icon.icon-content(
+            "header-navigation-button-" + $state + "-"
+          );
+        }
+      }
+
+      &:focus,
+      &.focus {
+        @include outline.outline("header-navigation-button-focus-");
+      }
+    }
+  }
+}

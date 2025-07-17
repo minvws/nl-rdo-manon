@@ -1,0 +1,52 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+body > header,
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @include theming.apply-from-theme(
+    (
+      min-height: theme.$header-base-min-height,
+      padding: theme.$header-base-padding,
+      background-color: theme.$header-base-background-color,
+      color: theme.$header-base-text-color,
+    )
+  );
+  box-sizing: border-box;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    @include theming.apply-from-theme(
+      (
+        flex-grow: theme.$header-base-content-block-flex-grow,
+        align-items: theme.$header-base-content-block-align-items,
+        justify-content: theme.$header-base-content-block-justify-content,
+        padding: theme.$header-base-content-block-padding,
+        padding-top: theme.$header-base-content-block-padding-top,
+        padding-bottom: theme.$header-base-content-block-padding-bottom,
+      )
+    );
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    @include theming.apply-from-theme(
+      (
+        font-size: theme.$header-base-title-font-size,
+        color: theme.$header-base-title-text-color,
+        font-weight: theme.$header-base-title-font-weight,
+      )
+    );
+
+    > a {
+      font-size: inherit;
+      color: inherit;
+      font-weight: inherit;
+    }
+  }
+}

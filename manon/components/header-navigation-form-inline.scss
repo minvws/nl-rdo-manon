@@ -1,0 +1,20 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+body > header,
+.page-header {
+  nav {
+    form.inline {
+      padding: 0;
+      background-color: transparent;
+      @include theming.apply-from-theme(
+        (
+          gap: theme.$header-navigation-form-inline-gap,
+          color: theme.$header-navigation-form-inline-text-color,
+          flex-direction: theme.$header-navigation-form-inline-flex-direction,
+          width: theme.$header-navigation-form-inline-width,
+        )
+      );
+    }
+  }
+}

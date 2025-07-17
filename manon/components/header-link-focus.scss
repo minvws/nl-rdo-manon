@@ -1,0 +1,44 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+body > header,
+.page-header,
+%header-style {
+  a {
+    &:focus,
+    /* Testing purposes */
+    &.focus {
+      @include theming.apply-from-theme(
+        (
+          font-size: theme.$header-link-focus-font-size,
+          font-weight: theme.$header-link-focus-font-weight,
+          line-height: theme.$header-link-focus-line-height,
+          background-color: theme.$header-link-focus-background-color,
+          text-color: theme.$header-link-focus-text-color,
+          text-decoration: theme.$header-link-focus-text-decoration,
+          border-width: theme.$header-link-focus-border-width,
+          border-style: theme.$header-link-focus-border-style,
+          border-color: theme.$header-link-focus-border-color,
+          border-radius: theme.$header-link-focus-border-radius,
+        )
+      );
+      &::before,
+      .icon::before {
+        @include theming.apply-from-theme(
+          (
+            font-size: theme.$header-link-focus-icon-font-size,
+            font-weight: theme.$header-link-focus-icon-font-weight,
+            line-height: theme.$header-link-focus-icon-line-height,
+            background-color: theme.$header-link-focus-icon-background-color,
+            text-color: theme.$header-link-focus-icon-text-color,
+            text-decoration: theme.$header-link-focus-icon-text-decoration,
+            border-width: theme.$header-link-focus-icon-border-width,
+            border-style: theme.$header-link-focus-icon-border-style,
+            border-color: theme.$header-link-focus-icon-border-color,
+            border-radius: theme.$header-link-focus-icon-border-radius,
+          )
+        );
+      }
+    }
+  }
+}

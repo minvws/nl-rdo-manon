@@ -1,0 +1,45 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../mixins/icon";
+
+body > header,
+.page-header,
+%header-style {
+  a {
+    @include theming.apply-from-theme(
+      (
+        font-size: theme.$header-link-font-size,
+        font-weight: theme.$header-link-font-weight,
+        line-height: theme.$header-link-line-height,
+        background-color: theme.$header-link-background-color,
+        text-color: theme.$header-link-text-color,
+        text-decoration: theme.$header-link-text-decoration,
+        border-width: theme.$header-link-border-width,
+        border-style: theme.$header-link-border-style,
+        border-color: theme.$header-link-border-color,
+        border-radius: theme.$header-link-border-radius,
+      )
+    );
+
+    &::before {
+      @include icon.icon-format("header-link-");
+      @include icon.icon-content("header-link-");
+    }
+
+    &.icon,
+    .icon {
+      &::before {
+        @include icon.icon-format("header-link-");
+      }
+    }
+
+    > span.icon:last-of-type:not(:only-of-type) {
+      @include theming.apply-from-theme(
+        (
+          padding-right: theme.$header-link-icon-last-padding-right,
+          padding-left: theme.$header-link-icon-last-padding-left,
+        )
+      );
+    }
+  }
+}

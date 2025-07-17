@@ -20,11 +20,9 @@ body > header,
   nav {
     display: flex;
     flex-direction: row;
-    box-sizing: border-box;
-
     @include theming.apply-from-theme(
       (
-        flex-direction: theme.$header-navigation-flex-direction,
+        gap: theme.$header-navigation-gap,
         justify-content: theme.$header-navigation-justify-content,
         align-items: theme.$header-navigation-align-items,
         width: theme.$header-navigation-width,
@@ -44,6 +42,7 @@ body > header,
         white-space: theme.$header-navigation-white-space,
       )
     );
+    box-sizing: border-box;
 
     ul,
     ol {
@@ -52,8 +51,7 @@ body > header,
       flex-wrap: wrap;
       padding: 0;
       margin: 0;
-
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           gap: theme.$header-navigation-list-gap,
           justify-content: theme.$header-navigation-list-justify-content,
@@ -66,19 +64,17 @@ body > header,
 
       li {
         display: flex;
-        list-style: none;
-        padding: 0;
-        box-sizing: border-box;
-
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             justify-content: theme.$header-navigation-list-item-justify-content,
             align-items: theme.$header-navigation-list-item-align-items,
             color: theme.$header-navigation-list-item-text-color,
-            background-color:
-              theme.$header-navigation-list-item-background-color,
+            background-color: theme.$header-navigation-list-item-background-color,
           )
         );
+        list-style: none;
+        padding: 0;
+        box-sizing: border-box;
 
         &::before {
           display: none;
@@ -88,7 +84,7 @@ body > header,
     }
 
     input {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           align-self: theme.$header-navigation-input-algin-self,
         )
