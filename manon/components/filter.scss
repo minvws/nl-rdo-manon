@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 .filter {
@@ -45,19 +45,19 @@
     button {
       display: none;
       min-width: 0;
-      @include apply-from-theme.apply-from-theme(
-        (
-          background-color: theme.$filter-button-background-color,
-          color: theme.$filter-button-text-color,
-          border-width: theme.$filter-button-border-width,
-          border-style: theme.$filter-button-border-style,
-          border-color: theme.$filter-button-border-color,
-          padding: theme.$filter-button-padding,
-          min-height: theme.$filter-button-min-height,
-          margin-left: theme.$filter-button-margin-left,
-          font-size: theme.$filter-button-font-size,
-        )
-      );
+      @include theming.apply-from-theme(
+      (
+        background-color: theme.$filter-button-background-color,
+        color: theme.$filter-button-text-color,
+        border-width: theme.$filter-button-border-width,
+        border-style: theme.$filter-button-border-style,
+        border-color: theme.$filter-button-border-color,
+        padding: theme.$filter-button-padding,
+        min-height: theme.$filter-button-min-height,
+        margin-left: theme.$filter-button-margin-left,
+        font-size: theme.$filter-button-font-size,
+      )
+    );
 
       &::after {
         @include apply-from-theme.apply-from-theme(

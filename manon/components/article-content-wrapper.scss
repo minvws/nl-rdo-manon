@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 main article div {
@@ -22,7 +22,7 @@ main.sidemenu > div > article > div {
   margin: 0 auto;
   box-sizing: border-box;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       padding-top: theme.$article-content-wrapper-padding-top,
       padding-right: theme.$article-content-wrapper-padding-right,

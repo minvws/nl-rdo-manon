@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 pre,
@@ -25,7 +25,7 @@ div.code-block {
 
   > code {
     white-space: unset;
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         background-color: theme.$code-block-code-background-color,
         padding: theme.$code-block-code-padding,

@@ -1,8 +1,8 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 .de-emphasized {
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       font-size: theme.$de-emphasized-font-size,
       font-weight: theme.$de-emphasized-font-weight,

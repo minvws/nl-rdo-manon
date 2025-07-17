@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 %divider-line {
@@ -11,7 +11,7 @@
   );
 
   &:first-of-type {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         border-width:
           theme.$divider-lines-content-block-first-of-type-border-width,

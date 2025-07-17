@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 %accordion {
@@ -149,7 +149,7 @@ section.accordion {
       }
 
       &::after {
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             content: theme.$accordion-button-icon-after-close-content,
             font-family: theme.$accordion-button-icon-font-family,
