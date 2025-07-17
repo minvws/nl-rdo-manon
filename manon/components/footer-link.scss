@@ -1,0 +1,45 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+@use "../mixins/icon";
+
+body > footer,
+.page-footer,
+%footer-style {
+  a {
+    @include apply-from-theme.apply-from-theme(
+      (
+        font-size: theme.$footer-link-font-size,
+        font-weight: theme.$footer-link-font-weight,
+        line-height: theme.$footer-link-line-height,
+        background-color: theme.$footer-link-background-color,
+        text-color: theme.$footer-link-text-color,
+        text-decoration: theme.$footer-link-text-decoration,
+        border-width: theme.$footer-link-border-width,
+        border-style: theme.$footer-link-border-style,
+        border-color: theme.$footer-link-border-color,
+        border-radius: theme.$footer-link-border-radius,
+      )
+    );
+
+    &::before {
+      @include icon.icon-format("footer-link-");
+      @include icon.icon-content("footer-link-");
+    }
+
+    &.icon,
+    .icon {
+      &::before {
+        @include icon.icon-format("footer-link-");
+      }
+    }
+
+    > span.icon:last-of-type:not(:only-of-type) {
+      @include apply-from-theme.apply-from-theme(
+        (
+          padding-right: theme.$footer-link-icon-last-padding-right,
+          padding-left: theme.$footer-link-icon-last-padding-left,
+        )
+      );
+    }
+  }
+}
