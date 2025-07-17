@@ -6,7 +6,7 @@ main article div {
   margin: 0;
   padding: 0;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       flex-direction: theme.$article-content-wrapper-flex-direction,
       gap: theme.$article-content-wrapper-gap,

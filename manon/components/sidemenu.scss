@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 $sidemenu-breakpoint: 55rem !default;
@@ -10,7 +10,7 @@ main.sidemenu {
   flex-direction: row;
   flex-wrap: wrap;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       padding-top: theme.$sidemenu-main-padding-top,
       padding-bottom: theme.$sidemenu-main-padding-bottom,
@@ -31,7 +31,7 @@ main.sidemenu {
     box-sizing: border-box;
 
     @media (width >= $sidemenu-breakpoint) {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           max-width: theme.$sidemenu-max-width,
         )
@@ -49,7 +49,7 @@ main.sidemenu {
       box-sizing: border-box;
       position: relative;
 
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           width: theme.$sidemenu-nav-width,
           padding-top: theme.$sidemenu-nav-padding-top,
@@ -76,7 +76,7 @@ main.sidemenu {
         /* Solves a bug in older safari versions where position sticky blocks overflow auto */
         display: block;
 
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             padding: theme.$sidemenu-ul-padding,
             max-height: theme.$sidemenu-main-max-height,
@@ -92,7 +92,7 @@ main.sidemenu {
 
       > ul li,
       button + ul li {
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             background-color: theme.$sidemenu-list-item-background-color,
             border-color: theme.$sidemenu-list-item-border-color,
@@ -121,7 +121,7 @@ main.sidemenu {
         /* Needed to keep the button to stick to the top */
         top: theme.$sidemenu-toggle-button-margin-top;
 
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             margin-left: theme.$sidemenu-toggle-button-margin-left,
             min-width: theme.$sidemenu-toggle-button-min-width,
@@ -134,7 +134,7 @@ main.sidemenu {
           //   @include icon.icon;
 
           & {
-            @include apply-from-theme.apply-from-theme(
+            @include theming.apply-from-theme(
               (
                 content: theme.$sidemenu-expanded-button-icon,
                 font-family: theme.$sidemenu-button-icon-font-family,
@@ -150,7 +150,7 @@ main.sidemenu {
 
         &[aria-expanded="false"] {
           &::before {
-            @include apply-from-theme.apply-from-theme(
+            @include theming.apply-from-theme(
               (
                 content: theme.$sidemenu-collapsed-button-icon,
               )

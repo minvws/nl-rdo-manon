@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       gap: theme.$checkbox-gap,
       align-items: theme.$checkbox-align-items,
@@ -18,7 +18,7 @@
     padding: 0;
     cursor: pointer;
 
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         width: theme.$checkbox-width,
         min-width: theme.$checkbox-width,
@@ -50,7 +50,7 @@
     flex-direction: column;
     align-items: flex-start;
 
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         gap: theme.$checkbox-required-gap,
         justify-content: theme.$radio-align-items,
@@ -62,7 +62,7 @@
       display: flex;
       flex-direction: row;
 
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           gap: theme.$checkbox-gap,
         )
@@ -75,7 +75,7 @@
     margin-bottom: 0;
 
     @if not-null.not-null(theme.$checkbox-width, theme.$checkbox-gap) {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           margin-left: calc(theme.$checkbox-width + theme.$checkbox-gap),
         )

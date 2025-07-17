@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 main section form,
@@ -10,7 +10,7 @@ form {
   width: 100%;
   box-sizing: border-box;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       align-items: theme.$form-align-items,
       justify-content: theme.$form-justify-content,
@@ -46,7 +46,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         gap: theme.$form-group-gap,
       )

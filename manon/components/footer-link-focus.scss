@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 body > footer,
@@ -9,7 +9,7 @@ body > footer,
     &.focus
 
     /* Testing purposes */ {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           font-size: theme.$footer-link-focus-font-size,
           font-weight: theme.$footer-link-focus-font-weight,
@@ -25,7 +25,7 @@ body > footer,
       );
       &::before,
       .icon::before {
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             font-size: theme.$footer-link-focus-icon-font-size,
             font-weight: theme.$footer-link-focus-icon-font-weight,

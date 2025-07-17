@@ -3,7 +3,7 @@
 
 *:disabled,
 *.disabled {
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       cursor: theme.$disabled-cursor,
       opacity: theme.$disabled-opacity,

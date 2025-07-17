@@ -2,7 +2,7 @@
 @use "../variables" as theme;
 
 .breadcrumb-bar {
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       background-color: theme.$breadcrumb-bar-background-color,
       color: theme.$breadcrumb-bar-text-color,
@@ -16,7 +16,7 @@
     box-sizing: border-box;
     align-self: center;
 
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         padding-top: theme.$breadcrumb-bar-content-block-padding-top,
         padding-right: theme.$breadcrumb-bar-content-block-padding-right,
@@ -34,7 +34,7 @@
       flex-wrap: wrap;
       color: inherit;
 
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           justify-content: theme.$breadcrumb-bar-content-block-justify-content,
           align-items: theme.$breadcrumb-bar-content-block-list-vertical-align,
@@ -50,7 +50,7 @@
         align-items: center;
         list-style: none;
 
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             gap: theme.$breadcrumb-bar-content-block-list-item-gap,
           )
@@ -69,14 +69,14 @@
         }
 
         &:hover {
-          @include apply-from-theme.apply-from-theme(
+          @include theming.apply-from-theme(
             (
               color: theme.$breadcrumb-bar-content-block-hover-text-color,
             )
           );
 
           &::after {
-            @include apply-from-theme.apply-from-theme(
+            @include theming.apply-from-theme(
               (
                 color: theme.$breadcrumb-bar-content-block-text-color,
               )
@@ -85,7 +85,7 @@
         }
 
         &:last-child {
-          @include apply-from-theme.apply-from-theme(
+          @include theming.apply-from-theme(
             (
               font-weight:
                 theme.$breadcrumb-bar-content-block-list-item-last-child-font-weight,
@@ -101,7 +101,7 @@
           /* Break words that won't fit the available space */
           overflow-wrap: anywhere;
 
-          @include apply-from-theme.apply-from-theme(
+          @include theming.apply-from-theme(
             (
               text-decoration:
                 theme.$breadcrumb-bar-content-block-link-text-decoration,

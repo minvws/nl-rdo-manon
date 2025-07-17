@@ -2,7 +2,7 @@
 @use "../variables" as theme;
 
 %divider-line {
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       border-width: theme.$divider-lines-content-block-border-width,
       border-style: theme.$divider-lines-content-block-border-style,

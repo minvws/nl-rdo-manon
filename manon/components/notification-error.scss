@@ -8,7 +8,7 @@ section.error,
 div.error {
   @include notification.notification;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       background-color: theme.$notification-error-background-color,
       color: theme.$notification-error-text-color,

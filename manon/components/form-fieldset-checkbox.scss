@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 form {
@@ -7,7 +7,7 @@ form {
       padding: 0;
       display: initial;
 
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           margin: theme.$form-fieldset-checkbox-margin,
         )
@@ -18,7 +18,7 @@ form {
         cursor: pointer;
         margin-right: 0;
 
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             width: theme.$form-fieldset-checkbox-width,
             min-width: theme.$form-fieldset-checkbox-width,
@@ -34,7 +34,7 @@ form {
           margin: 0;
 
           @if theme.$form-fieldset-checkbox-width {
-            @include apply-from-theme.apply-from-theme(
+            @include theming.apply-from-theme(
               (
                 width: calc(100% - #{theme.$form-fieldset-checkbox-width}),
               )
@@ -55,7 +55,7 @@ form {
         flex-direction: column;
 
         span {
-          @include apply-from-theme.apply-from-theme(
+          @include theming.apply-from-theme(
             (
               margin-bottom: theme.$form-required-gap,
             )
@@ -70,7 +70,7 @@ form {
 
       fieldset {
         .checkbox {
-          @include apply-from-theme.apply-from-theme(
+          @include theming.apply-from-theme(
             (
               margin: theme.$form-fieldset-checkbox-margin,
             )
