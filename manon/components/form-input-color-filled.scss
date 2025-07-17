@@ -1,0 +1,18 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+form {
+  input[type="color"] {
+    padding: 0;
+    -webkit-appearance: none;
+    border: none;
+
+    &::-webkit-color-swatch-wrapper {
+      padding: 0;
+    }
+
+    &::-webkit-color-swatch {
+      border: none;
+    }
+  }
+}

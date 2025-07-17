@@ -1,0 +1,186 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+@use "../functions/not-null";
+
+$breakpoint: 24rem;
+
+/* Fieldset styling is a bit different compared to the default form styling.
+This is because of a couple of styling restrictions and issues concerning fieldsets and it's children.
+- Fieldsets can't use flexbox
+- When elements within the fieldset use flexbox, unwanted white-space appears at the bottom of the fieldset.
+The amount of whitespace depends on the length of the fieldset before flex positioning took place. And will not be removed after.
+
+The usage of fieldsets is recommended because it is the semantically correct element to use for form grouping.
+As well as it improves the experience for users who are using a screenreader to navigate the form.
+
+To prevent these issues to cause unexpected behaviour the fieldset and it's children within this set do no use flexbox for their positioning.
+But the alternative styling as you can see below.
+
+For more information on the bug see: https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers
+and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
+
+form.horizontal-view {
+  > fieldset {
+    > div {
+      display: block;
+      /* resetting gap as it can not be used within fieldsets */
+      gap: 0;
+      /* Adds margin instead of gap */
+      @include apply-from-theme.apply-from-theme(
+        (
+          margin-bottom: theme.$form-gap,
+        )
+      );
+
+      @media (width >= $breakpoint) {
+        > * {
+          @include apply-from-theme.apply-from-theme(
+            (
+              width: theme.$input-column,
+            )
+          );
+          /* resetting gap as it can not be used within fieldsets */
+          gap: 0;
+          /* float objects to move inputs into place even when there is no label */
+          float: right;
+        }
+
+        > div {
+          margin-bottom: 0;
+        }
+
+        label {
+          float: left;
+          @include apply-from-theme.apply-from-theme(
+            (
+              width: theme.$label-column,
+              padding-right: theme.$form-horizontal-view-gap,
+              margin-top: theme.$form-horizontal-view-fieldset-label-margin-top,
+            )
+          );
+        }
+      }
+    }
+
+    .required {
+      .nota-bene {
+        @include apply-from-theme.apply-from-theme(
+          (
+            margin-bottom: theme.$form-required-gap,
+          )
+        );
+        float: left;
+      }
+    }
+
+    input[type="color"] {
+      float: left;
+    }
+
+    > .checkbox,
+    > .radio {
+      margin-left: 0;
+      width: 100%;
+      float: right;
+
+      @media (width >= $breakpoint) {
+        @include apply-from-theme.apply-from-theme(
+          (
+            width: theme.$input-column,
+          )
+        );
+      }
+
+      .horizontal-view {
+        display: block;
+        gap: 0;
+      }
+
+      input,
+      label {
+        float: none;
+        margin: 0;
+      }
+
+      input {
+        @include apply-from-theme.apply-from-theme(
+          (
+            width: theme.$form-checkbox-width,
+            margin-right: theme.$form-checkbox-margin-right,
+          )
+        );
+        float: left;
+      }
+
+      label {
+        margin-top: 0;
+        display: block;
+        float: left;
+      }
+
+      /* Help button */
+      > button {
+        top: 0;
+      }
+
+      /* Help text */
+      > p,
+      > div {
+        width: 100%;
+      }
+    }
+
+    .checkbox input[type="checkbox"] + label {
+      $styles: ();
+      @if not-null.not-null(theme.$form-fieldset-checkbox-width) {
+        $styles: map-merge(
+          $styles,
+          (
+            max-width: calc(100% - theme.$form-fieldset-checkbox-width),
+          )
+        );
+      }
+      @include apply-from-theme.apply-from-theme($styles);
+    }
+
+    .radio input[type="radio"] + label {
+      $styles: ();
+      @if not-null.not-null(theme.$radio-input-width) {
+        $styles: map-merge(
+          $styles,
+          (
+            max-width: calc(100% - theme.$radio-input-width),
+          )
+        );
+      }
+      @include apply-from-theme.apply-from-theme($styles);
+    }
+
+    @media (width >= $breakpoint) {
+      > button,
+      > a.button,
+      > input[type="button"],
+      > input[type="submit"],
+      > input[type="reset"],
+      > a {
+        @include apply-from-theme.apply-from-theme(
+          (
+            margin-left: theme.$label-column,
+          )
+        );
+      }
+
+      & + button,
+      & + a.button,
+      & + input[type="button"],
+      & + input[type="submit"],
+      & + input[type="reset"] {
+        @include apply-from-theme.apply-from-theme(
+          (
+            margin-left: theme.$label-column,
+          )
+        );
+      }
+    }
+  }
+}

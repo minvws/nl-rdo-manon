@@ -1,0 +1,11 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+input:focus {
+  @include apply-from-theme.apply-from-theme(
+    (
+      outline-offset: theme.$form-input-focus-outline-offset,
+      outline: theme.$form-input-focus-outline,
+    )
+  );
+}

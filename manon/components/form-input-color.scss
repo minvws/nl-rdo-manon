@@ -1,0 +1,23 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+/* color input */
+form {
+  input[type="color"] {
+    flex-direction: column;
+    align-items: stretch;
+    cursor: pointer;
+    @include apply-from-theme.apply-from-theme(
+      (
+        width: theme.$form-input-color-width,
+        min-height: theme.$form-input-color-min-height,
+        min-width: theme.$form-input-color-min-width,
+        max-height: theme.$form-input-color-max-height,
+        max-width: theme.$form-input-color-max-width,
+        padding: theme.$form-input-color-padding,
+      )
+    );
+    box-sizing: border-box;
+    align-self: flex-start;
+  }
+}

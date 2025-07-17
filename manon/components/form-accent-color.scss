@@ -1,0 +1,15 @@
+@use "../mixins/apply-from-theme";
+@use "../variables" as theme;
+
+form {
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="range"],
+  progress {
+    @include apply-from-theme.apply-from-theme(
+      (
+        accent-color: theme.$form-accent-color-color,
+      )
+    );
+  }
+}
