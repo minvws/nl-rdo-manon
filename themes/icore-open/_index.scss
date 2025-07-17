@@ -34,7 +34,7 @@ and spacing sets */
   $button-padding-bottom: #{spacing.$spacing-075},
   $button-padding-left: #{spacing.$spacing-100},
 
-  //button hover
+  // button hover
   $button-primary-hover-background-color: #{color-scheme.$oc-blue-6},
   $button-primary-hover-text-color: #{color-scheme.$oc-white},
   $button-primary-hover-border-color: #{color-scheme.$oc-blue-6},
@@ -54,7 +54,7 @@ and spacing sets */
   $code-block-background-color: #{color-scheme.$oc-gray-1},
   $code-block-border-radius: #{border-radii.$border-radius-s},
 
-  // Form
+  // form
   $form-align-items: flex-start,
   $form-text-color: #{semantic.$color-text-default},
   $form-gap: #{spacing.$spacing-200},
@@ -74,24 +74,6 @@ and spacing sets */
   // form label
   $form-label-font-weight: bold,
 
-  // header
-  $header-background-color: #{color-scheme.$oc-gray-9},
-
-  // content wrapper
-  $header-content-wrapper-flex-direction: row,
-  $header-content-wrapper-width: 100%,
-  $header-content-wrapper-gap: 1rem,
-
-  // helpers
-  $horizontal-gap: #{spacing.$spacing-100},
-  $vertical-gap: #{spacing.$spacing-100},
-
-  // link
-  $link-text-color: #{color-scheme.$oc-blue-8},
-  $link-hover-text-color: #{color-scheme.$oc-blue-9},
-  $link-visited-text-color: #{color-scheme.$oc-violet-8},
-  $link-visited-hover-text-color: #{color-scheme.$oc-violet-9},
-
   // footer
   $footer-align-items: center,
   $footer-justify-content: center,
@@ -103,6 +85,27 @@ and spacing sets */
   $footer-padding-bottom: #{spacing.$spacing-300},
   $footer-padding-left: #{spacing.$spacing-200},
   $footer-list-style: none,
+
+  // header
+  $header-background-color: #{color-scheme.$oc-gray-9},
+
+  // header content wrapper
+  $header-content-wrapper-flex-direction: row,
+  $header-content-wrapper-width: 100%,
+  $header-content-wrapper-gap: 1rem,
+
+  // heading
+  $h1-font-family: #{semantic.$font-family},
+
+  // helpers
+  $horizontal-gap: #{spacing.$spacing-100},
+  $vertical-gap: #{spacing.$spacing-100},
+
+  // link
+  $link-text-color: #{color-scheme.$oc-blue-8},
+  $link-hover-text-color: #{color-scheme.$oc-blue-9},
+  $link-visited-text-color: #{color-scheme.$oc-violet-8},
+  $link-visited-hover-text-color: #{color-scheme.$oc-violet-9},
 
   // main
   $main-padding-top: #{spacing.$spacing-400},
@@ -119,8 +122,5 @@ and spacing sets */
   $section-max-width: 50rem,
   $section-gap: #{spacing.$spacing-300},
   $section-flex-direction: column,
-  $section-border-radius: #{border-radii.$border-radius-m},
-
-  // heading
-  $h1-font-family: #{semantic.$font-family}
+  $section-border-radius: #{border-radii.$border-radius-m}
 );
