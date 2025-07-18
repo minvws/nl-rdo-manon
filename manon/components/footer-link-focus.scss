@@ -1,0 +1,45 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+body > footer,
+.page-footer,
+%footer-style {
+  a {
+    &:focus,
+    &.focus
+
+    /* Testing purposes */ {
+      @include theming.apply-from-theme(
+        (
+          font-size: theme.$footer-link-focus-font-size,
+          font-weight: theme.$footer-link-focus-font-weight,
+          line-height: theme.$footer-link-focus-line-height,
+          background-color: theme.$footer-link-focus-background-color,
+          color: theme.$footer-link-focus-text-color,
+          text-decoration: theme.$footer-link-focus-text-decoration,
+          border-width: theme.$footer-link-focus-border-width,
+          border-style: theme.$footer-link-focus-border-style,
+          border-color: theme.$footer-link-focus-border-color,
+          border-radius: theme.$footer-link-focus-border-radius,
+        )
+      );
+      &::before,
+      .icon::before {
+        @include theming.apply-from-theme(
+          (
+            font-size: theme.$footer-link-focus-icon-font-size,
+            font-weight: theme.$footer-link-focus-icon-font-weight,
+            line-height: theme.$footer-link-focus-icon-line-height,
+            background-color: theme.$footer-link-focus-icon-background-color,
+            color: theme.$footer-link-focus-icon-text-color,
+            text-decoration: theme.$footer-link-focus-icon-text-decoration,
+            border-width: theme.$footer-link-focus-icon-border-width,
+            border-style: theme.$footer-link-focus-icon-border-style,
+            border-color: theme.$footer-link-focus-icon-border-color,
+            border-radius: theme.$footer-link-focus-icon-border-radius,
+          )
+        );
+      }
+    }
+  }
+}

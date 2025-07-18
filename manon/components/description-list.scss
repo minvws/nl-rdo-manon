@@ -1,11 +1,11 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 $breakpoint: 24rem !default;
 
 %dl-styling {
   margin: 0;
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       width: theme.$description-list-width,
       max-width: theme.$description-list-max-width,
@@ -16,7 +16,7 @@ $breakpoint: 24rem !default;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         flex-direction: theme.$description-list-item-flex-direction,
         gap: theme.$description-list-item-gap,
@@ -28,7 +28,7 @@ $breakpoint: 24rem !default;
     );
 
     &:nth-child(odd) {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           background-color: theme.$description-list-item-odd-background-color,
         )
@@ -41,7 +41,7 @@ $breakpoint: 24rem !default;
     overflow-wrap: anywhere;
     box-sizing: border-box;
     margin: 0;
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         white-space: theme.$description-list-item-white-space,
       )
@@ -49,7 +49,7 @@ $breakpoint: 24rem !default;
   }
 
   dt {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         font-weight: theme.$description-list-item-title-font-weight,
         background-color: theme.$description-list-item-title-background-color,
@@ -61,7 +61,7 @@ $breakpoint: 24rem !default;
   }
 
   dd {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         background-color: theme.$description-list-item-data-background-color,
         color: theme.$description-list-item-data-text-color,
@@ -74,7 +74,7 @@ $breakpoint: 24rem !default;
 
   @media (width >= $breakpoint) {
     div {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           flex-direction:
             theme.$description-list-item-flex-direction-after-breakpoint,

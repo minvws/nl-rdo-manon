@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 body > header,
@@ -22,9 +22,9 @@ body > header,
     flex-direction: row;
     box-sizing: border-box;
 
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
-        gap: theme.$header-navigation-gap,
+        flex-direction: theme.$header-navigation-flex-direction,
         justify-content: theme.$header-navigation-justify-content,
         align-items: theme.$header-navigation-align-items,
         width: theme.$header-navigation-width,
@@ -53,7 +53,7 @@ body > header,
       padding: 0;
       margin: 0;
 
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           gap: theme.$header-navigation-list-gap,
           justify-content: theme.$header-navigation-list-justify-content,
@@ -70,7 +70,7 @@ body > header,
         padding: 0;
         box-sizing: border-box;
 
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             justify-content: theme.$header-navigation-list-item-justify-content,
             align-items: theme.$header-navigation-list-item-align-items,
@@ -88,7 +88,7 @@ body > header,
     }
 
     input {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           align-self: theme.$header-navigation-input-algin-self,
         )

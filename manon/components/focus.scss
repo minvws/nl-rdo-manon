@@ -1,11 +1,11 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 *:focus,
 *.focus,
 .outline-dotted {
   position: relative;
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       outline: theme.$focus-outline,
       outline-offset: theme.$focus-outline-offset,
@@ -16,7 +16,7 @@
 
   + label::before {
     position: relative;
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         outline: theme.$focus-outline,
         z-index: theme.$focus-z-index,

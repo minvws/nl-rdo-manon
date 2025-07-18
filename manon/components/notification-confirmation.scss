@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../mixins/notification";
 @use "../variables" as theme;
 
@@ -8,7 +8,7 @@ section.confirmation,
 div.confirmation {
   @include notification.notification;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       background-color: theme.$notification-confirmation-background-color,
       color: theme.$notification-confirmation-text-color,
@@ -19,7 +19,7 @@ div.confirmation {
   );
 
   &::before {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         font-family: theme.$notification-confirmation-icon-font-family,
         font-size: theme.$notification-confirmation-icon-font-size,

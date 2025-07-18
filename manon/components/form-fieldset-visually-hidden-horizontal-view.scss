@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 $breakpoint-1: 24rem !default;
@@ -11,7 +11,7 @@ form.horizontal-view {
       box-sizing: border-box;
       float: left;
 
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           width: theme.$form-fieldset-label-column,
           padding-right: theme.$form-horizontal-view-gap,
@@ -24,7 +24,7 @@ form.horizontal-view {
       @media (width >= $breakpoint-1) {
         float: right;
 
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             width: theme.$input-column,
           )

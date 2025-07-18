@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 .page-header .breadcrumb-bar,
@@ -8,8 +8,9 @@
   margin: 0 auto;
   box-sizing: border-box;
   flex-wrap: wrap;
+  flex-direction: column;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       flex-direction: theme.$breadcrumb-bar-flex-direction,
       justify-content: theme.$breadcrumb-bar-justify-content,
@@ -38,7 +39,7 @@
     color: inherit;
     background-color: transparent;
 
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         flex-direction: theme.$breadcrumb-bar-flex-direction,
         justify-content: theme.$breadcrumb-bar-justify-content,
@@ -66,7 +67,7 @@
       align-items: center;
       list-style: none;
 
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           gap: theme.$breadcrumb-bar-list-item-gap,
         )
@@ -79,7 +80,7 @@
 
       &::after {
         & {
-          @include apply-from-theme.apply-from-theme(
+          @include theming.apply-from-theme(
             (
               margin-left: theme.$breadcrumb-bar-icon-margin-left,
               margin-right: theme.$breadcrumb-bar-icon-margin-right,
@@ -89,14 +90,14 @@
       }
 
       &:hover {
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             color: theme.$breadcrumb-bar-hover-text-color,
           )
         );
 
         &::after {
-          @include apply-from-theme.apply-from-theme(
+          @include theming.apply-from-theme(
             (
               color: theme.$breadcrumb-bar-text-color,
             )
@@ -105,7 +106,7 @@
       }
 
       &:last-child {
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             font-weight: theme.$breadcrumb-bar-list-item-last-child-font-weight,
           )
@@ -119,19 +120,21 @@
       a {
         /* Break words that won't fit the available space */
         overflow-wrap: anywhere;
+        color: inherit;
 
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             white-space: theme.$breadcrumb-bar-link-white-space,
             padding-right: theme.$breadcrumb-bar-link-padding-right,
             padding-left: theme.$breadcrumb-bar-link-padding-left,
+            text-decoration: theme.$breadcrumb-bar-link-text-decoration,
           )
         );
 
         &:hover {
           border: 0;
 
-          @include apply-from-theme.apply-from-theme(
+          @include theming.apply-from-theme(
             (
               text-decoration: theme.$breadcrumb-bar-link-hover-text-decoration,
             )
