@@ -109,7 +109,12 @@ input[type="reset"] {
   }
 
   > * {
-    pointer-events: theme.$button-base-child-pointer-events;
+    pointer-events: none;
+  }
+
+  @media (width >= 24rem) {
+    min-width: theme.$button-base-breakpoint-min-width;
+    display: flex;
   }
 }
 
@@ -127,15 +132,4 @@ a:visited.button {
       color: theme.$link-button-base-text-color,
     )
   );
-}
-
-@media (width >= theme.$button-base-breakpoint) {
-  button,
-  a.button,
-  input[type="button"],
-  input[type="submit"],
-  input[type="reset"] {
-    min-width: theme.$button-base-breakpoint-min-width;
-    display: theme.$button-base-breakpoint-display;
-  }
 }

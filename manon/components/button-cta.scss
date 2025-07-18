@@ -11,6 +11,8 @@ input[type="reset"] {
     @include theming.apply-from-theme(
       (
         justify-content: theme.$button-cta-justify-content,
+        align-items: center,
+        align-self: flex-start,
         gap: theme.$button-cta-gap,
         background-color: theme.$button-cta-background-color,
         color: theme.$button-cta-text-color,
@@ -24,6 +26,9 @@ input[type="reset"] {
         padding-right: theme.$button-cta-padding-right,
         padding-bottom: theme.$button-cta-padding-bottom,
         padding-left: theme.$button-cta-padding-left,
+        margin: theme.$button-cta-margin,
+        box-sizing: theme.$button-cta-box-sizing,
+        width: theme.$button-cta-width,
         min-width: theme.$button-cta-min-width,
         height: theme.$button-cta-height,
         min-height: theme.$button-cta-min-height,
@@ -33,13 +38,12 @@ input[type="reset"] {
         border-radius: theme.$button-cta-border-radius,
         webkit-border-radius: theme.$button-cta-webkit-border-radius,
         webkit-appearance: theme.$button-cta-webkit-appearance,
+        cursor: theme.$button-cta-cursor,
+        overflow-wrap: theme.$button-cta-overflow-wrap,
+        image-max-width: theme.$button-cta-image-max-width,
+        child-pointer-events: theme.$button-cta-child-pointer-events,
       )
     );
-    margin: 0;
-    box-sizing: border-box;
-    width: auto;
-    cursor: pointer;
-    overflow-wrap: break-word;
 
     &:hover,
     &.hover {

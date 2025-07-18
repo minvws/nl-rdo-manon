@@ -106,6 +106,19 @@ input[type="reset"] {
         );
       }
     }
+
+    > img {
+      max-width: theme.$button-ghost-image-max-width;
+    }
+
+    > * {
+      pointer-events: none;
+    }
+
+    @media (width >= theme.$button-ghost-breakpoint) {
+      min-width: theme.$button-ghost-breakpoint-min-width;
+      display: theme.$button-ghost-breakpoint-display;
+    }
   }
 }
 
@@ -124,18 +137,5 @@ a:visited.button {
         color: theme.$link-button-ghost-text-color,
       )
     );
-  }
-}
-
-@media (width >= theme.$button-ghost-breakpoint) {
-  button,
-  a.button,
-  input[type="button"],
-  input[type="submit"],
-  input[type="reset"] {
-    &.ghost {
-      min-width: theme.$button-ghost-breakpoint-min-width;
-      display: theme.$button-ghost-breakpoint-display;
-    }
   }
 }
