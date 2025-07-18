@@ -45,11 +45,6 @@ input[type="reset"] {
         child-pointer-events: theme.$button-icon-child-pointer-events,
       )
     );
-
-    @media (width >= theme.$button-icon-breakpoint) {
-      min-width: theme.$button-icon-breakpoint-min-width;
-      display: theme.$button-icon-breakpoint-display;
-    }
   }
 
   .icon {
@@ -91,6 +86,19 @@ a.button {
           border-radius: theme.$button-icon-outline-border-radius,
         )
       );
+    }
+  }
+}
+
+@media (width >= theme.$button-icon-breakpoint) {
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    &.icon {
+      min-width: theme.$button-icon-breakpoint-min-width;
+      display: theme.$button-icon-breakpoint-display;
     }
   }
 }

@@ -26,9 +26,6 @@ input[type="reset"] {
         padding-right: theme.$button-cta-padding-right,
         padding-bottom: theme.$button-cta-padding-bottom,
         padding-left: theme.$button-cta-padding-left,
-        margin: theme.$button-cta-margin,
-        box-sizing: theme.$button-cta-box-sizing,
-        width: theme.$button-cta-width,
         min-width: theme.$button-cta-min-width,
         height: theme.$button-cta-height,
         min-height: theme.$button-cta-min-height,
@@ -44,6 +41,9 @@ input[type="reset"] {
         child-pointer-events: theme.$button-cta-child-pointer-events,
       )
     );
+    margin: 0;
+    box-sizing: border-box;
+    width: auto;
 
     &:hover,
     &.hover {
