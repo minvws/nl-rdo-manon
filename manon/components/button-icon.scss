@@ -1,0 +1,95 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+button,
+a.button {
+  &.icon {
+    @include theming.apply-from-theme(
+      (
+        gap: theme.$button-icon-gap,
+        min-width: theme.$button-icon-min-width,
+        justify-content: theme.$button-icon-justify-content,
+        background-color: theme.$button-icon-background-color,
+        color: theme.$button-icon-text-color,
+        font-family: theme.$button-icon-font-family,
+        font-size: theme.$button-icon-font-size,
+        font-weight: theme.$button-icon-font-weight,
+        line-height: theme.$button-icon-line-height,
+        text-decoration: theme.$button-icon-text-decoration,
+        text-align: theme.$button-icon-text-align,
+        padding-top: theme.$button-icon-padding-top,
+        padding-right: theme.$button-icon-padding-right,
+        padding-bottom: theme.$button-icon-padding-bottom,
+        padding-left: theme.$button-icon-padding-left,
+        height: theme.$button-icon-height,
+        min-height: theme.$button-icon-min-height,
+        width: theme.$button-icon-width,
+        border-width: theme.$button-icon-border-width,
+        border-style: theme.$button-icon-border-style,
+        border-color: theme.$button-icon-border-color,
+        border-radius: theme.$button-icon-border-radius,
+        webkit-appearance: theme.$button-icon-webkit-appearance,
+        image-max-width: theme.$button-icon-image-max-width,
+        hover-background-color: theme.$button-icon-hover-background-color,
+        hover-text-color: theme.$button-icon-hover-text-color,
+        hover-border-color: theme.$button-icon-hover-border-color,
+        hover-border-width: theme.$button-icon-hover-border-width,
+        hover-border-style: theme.$button-icon-hover-border-style,
+        hover-border-radius: theme.$button-icon-hover-border-radius,
+        active-background-color: theme.$button-icon-active-background-color,
+        active-text-color: theme.$button-icon-active-text-color,
+        active-border-style: theme.$button-icon-active-border-style,
+        active-border-color: theme.$button-icon-active-border-color,
+        active-border-width: theme.$button-icon-active-border-width,
+        active-border-radius: theme.$button-icon-active-border-radius,
+        focus-border-width: theme.$button-icon-focus-border-width,
+        focus-border-style: theme.$button-icon-focus-border-style,
+        focus-border-color: theme.$button-icon-focus-border-color,
+        focus-border-radius: theme.$button-icon-focus-border-radius,
+        focus-background-color: theme.$button-icon-focus-background-color,
+        focus-text-color: theme.$button-icon-focus-text-color,
+        outline: theme.$button-icon-outline,
+        outline-offset: theme.$button-icon-outline-offset,
+        outline-color: theme.$button-icon-outline-color,
+        z-index: theme.$button-icon-z-index,
+        box-shadow: theme.$button-icon-box-shadow,
+        outline-border-radius: theme.$button-icon-outline-border-radius,
+      )
+    );
+  }
+
+  .icon {
+    &::before {
+      @include theming.apply-from-theme(
+        (
+          font-size: theme.$button-icon-icon-font-size,
+          font-weight: theme.$button-icon-icon-font-weight,
+          line-height: theme.$button-icon-icon-line-height,
+          text-decoration: theme.$button-icon-icon-text-decoration,
+          padding-right: theme.$button-icon-icon-padding-right,
+          padding-left: theme.$button-icon-icon-padding-left,
+          background-color: theme.$button-icon-icon-background-color,
+          color: theme.$button-icon-icon-text-color,
+        )
+      );
+    }
+  }
+}
+
+a.button {
+  &.icon {
+    &:visited,
+    &.visited {
+      @include theming.apply-from-theme(
+        (
+          outline: theme.$button-icon-outline,
+          outline-offset: theme.$button-icon-outline-offset,
+          outline-color: theme.$button-icon-outline-color,
+          z-index: theme.$button-icon-z-index,
+          box-shadow: theme.$button-icon-box-shadow,
+          border-radius: theme.$button-icon-outline-border-radius,
+        )
+      );
+    }
+  }
+}
