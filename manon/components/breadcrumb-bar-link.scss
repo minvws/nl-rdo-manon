@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../mixins/icon";
 
@@ -8,7 +8,7 @@ body > header nav.breadcrumb-bar {
   ol {
     li {
       a {
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             font-size: theme.$breadcrumb-bar-link-font-size,
             font-weight: theme.$breadcrumb-bar-link-font-weight,
@@ -36,12 +36,12 @@ body > header nav.breadcrumb-bar {
         }
 
         > span.icon:last-of-type:not(:only-of-type) {
-            @include apply-from-theme.apply-from-theme(
+          @include theming.apply-from-theme(
             (
-                padding-right: theme.$breadcrumb-bar-link-icon-last-padding-right,
-                padding-left: theme.$breadcrumb-bar-link-icon-last-padding-left,
+              padding-right: theme.$breadcrumb-bar-link-icon-last-padding-right,
+              padding-left: theme.$breadcrumb-bar-link-icon-last-padding-left,
             )
-            );
+          );
         }
       }
     }
