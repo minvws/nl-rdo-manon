@@ -1,14 +1,18 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
+@use "../functions/validators";
 
 button,
 a.button {
   &.icon {
+    gap: 0;
+    min-width: 0;
+
     @include theming.apply-from-theme(
       (
-        gap: theme.$button-icon-gap,
-        min-width: theme.$button-icon-min-width,
         justify-content: theme.$button-icon-justify-content,
+        align-items: center,
+        align-self: flex-start,
         background-color: theme.$button-icon-background-color,
         color: theme.$button-icon-text-color,
         font-family: theme.$button-icon-font-family,
@@ -21,39 +25,21 @@ a.button {
         padding-right: theme.$button-icon-padding-right,
         padding-bottom: theme.$button-icon-padding-bottom,
         padding-left: theme.$button-icon-padding-left,
+        margin: theme.$button-icon-margin,
+        box-sizing: theme.$button-icon-box-sizing,
+        width: theme.$button-icon-width,
         height: theme.$button-icon-height,
         min-height: theme.$button-icon-min-height,
-        width: theme.$button-icon-width,
         border-width: theme.$button-icon-border-width,
         border-style: theme.$button-icon-border-style,
         border-color: theme.$button-icon-border-color,
         border-radius: theme.$button-icon-border-radius,
+        webkit-border-radius: theme.$button-icon-webkit-border-radius,
         webkit-appearance: theme.$button-icon-webkit-appearance,
+        cursor: theme.$button-icon-cursor,
+        overflow-wrap: theme.$button-icon-overflow-wrap,
         image-max-width: theme.$button-icon-image-max-width,
-        hover-background-color: theme.$button-icon-hover-background-color,
-        hover-text-color: theme.$button-icon-hover-text-color,
-        hover-border-color: theme.$button-icon-hover-border-color,
-        hover-border-width: theme.$button-icon-hover-border-width,
-        hover-border-style: theme.$button-icon-hover-border-style,
-        hover-border-radius: theme.$button-icon-hover-border-radius,
-        active-background-color: theme.$button-icon-active-background-color,
-        active-text-color: theme.$button-icon-active-text-color,
-        active-border-style: theme.$button-icon-active-border-style,
-        active-border-color: theme.$button-icon-active-border-color,
-        active-border-width: theme.$button-icon-active-border-width,
-        active-border-radius: theme.$button-icon-active-border-radius,
-        focus-border-width: theme.$button-icon-focus-border-width,
-        focus-border-style: theme.$button-icon-focus-border-style,
-        focus-border-color: theme.$button-icon-focus-border-color,
-        focus-border-radius: theme.$button-icon-focus-border-radius,
-        focus-background-color: theme.$button-icon-focus-background-color,
-        focus-text-color: theme.$button-icon-focus-text-color,
-        outline: theme.$button-icon-outline,
-        outline-offset: theme.$button-icon-outline-offset,
-        outline-color: theme.$button-icon-outline-color,
-        z-index: theme.$button-icon-z-index,
-        box-shadow: theme.$button-icon-box-shadow,
-        outline-border-radius: theme.$button-icon-outline-border-radius,
+        child-pointer-events: theme.$button-icon-child-pointer-events,
       )
     );
   }
@@ -76,6 +62,13 @@ a.button {
   }
 }
 
+a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  display: flex;
+}
+
 a.button {
   &.icon {
     &:visited,
@@ -90,6 +83,19 @@ a.button {
           border-radius: theme.$button-icon-outline-border-radius,
         )
       );
+    }
+  }
+}
+
+@media (width >= theme.$button-icon-breakpoint) {
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    &.icon {
+      min-width: theme.$button-icon-breakpoint-min-width;
+      display: theme.$button-icon-breakpoint-display;
     }
   }
 }

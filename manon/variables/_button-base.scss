@@ -1,5 +1,7 @@
 // Base
 $button-base-justify-content: null !default;
+$button-base-align-items: null !default;
+$button-base-align-self: null !default;
 $button-base-gap: null !default;
 $button-base-background-color: null !default;
 $button-base-text-color: null !default;
@@ -13,16 +15,25 @@ $button-base-padding-top: null !default;
 $button-base-padding-right: null !default;
 $button-base-padding-bottom: null !default;
 $button-base-padding-left: null !default;
-$button-base-height: null !default;
-$button-base-min-height: null !default;
+$button-base-margin: null !default;
+$button-base-box-sizing: null !default;
 $button-base-width: null !default;
 $button-base-min-width: null !default;
+$button-base-height: null !default;
+$button-base-min-height: null !default;
 $button-base-border-width: null !default;
 $button-base-border-style: null !default;
 $button-base-border-color: null !default;
 $button-base-border-radius: null !default;
+$button-base-webkit-border-radius: null !default;
 $button-base-webkit-appearance: null !default;
+$button-base-cursor: null !default;
+$button-base-overflow-wrap: null !default;
 $button-base-image-max-width: null !default;
+$button-base-child-pointer-events: null !default;
+$button-base-breakpoint: null !default;
+$button-base-breakpoint-min-width: null !default;
+$button-base-breakpoint-display: null !default;
 
 // Hover
 $button-base-hover-background-color: null !default;
@@ -41,9 +52,9 @@ $button-base-active-border-width: null !default;
 $button-base-active-border-radius: null !default;
 
 // Focus
-$button-base-focus-border-width: null !default;
 $button-base-focus-border-style: null !default;
 $button-base-focus-border-color: null !default;
+$button-base-focus-border-width: null !default;
 $button-base-focus-border-radius: null !default;
 $button-base-focus-background-color: null !default;
 $button-base-focus-text-color: null !default;

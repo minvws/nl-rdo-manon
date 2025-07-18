@@ -1,3 +1,4 @@
+// Base
 $button-cta-justify-content: null !default;
 $button-cta-gap: null !default;
 $button-cta-background-color: null !default;
@@ -19,29 +20,42 @@ $button-cta-border-width: null !default;
 $button-cta-border-style: null !default;
 $button-cta-border-color: null !default;
 $button-cta-border-radius: null !default;
+$button-cta-webkit-border-radius: null !default;
 $button-cta-webkit-appearance: null !default;
 $button-cta-image-max-width: null !default;
+$button-cta-breakpoint-min-width: null !default;
+
+// Hover
 $button-cta-hover-background-color: null !default;
 $button-cta-hover-text-color: null !default;
 $button-cta-hover-border-color: null !default;
 $button-cta-hover-border-width: null !default;
 $button-cta-hover-border-style: null !default;
 $button-cta-hover-border-radius: null !default;
+
+// Active
 $button-cta-active-background-color: null !default;
 $button-cta-active-text-color: null !default;
 $button-cta-active-border-style: null !default;
 $button-cta-active-border-color: null !default;
 $button-cta-active-border-width: null !default;
 $button-cta-active-border-radius: null !default;
+
+// Focus
 $button-cta-focus-border-style: null !default;
 $button-cta-focus-border-color: null !default;
 $button-cta-focus-border-width: null !default;
 $button-cta-focus-border-radius: null !default;
 $button-cta-focus-background-color: null !default;
 $button-cta-focus-text-color: null !default;
-$button-cta-focus-outline: null !default;
-$button-cta-focus-outline-offset: null !default;
-$button-cta-focus-outline-color: null !default;
-$button-cta-focus-z-index: null !default;
-$button-cta-focus-box-shadow: null !default;
+
+// Link
 $link-button-cta-text-color: null !default;
+
+// Outline
+$button-cta-outline: null !default;
+$button-cta-outline-offset: null !default;
+$button-cta-outline-color: null !default;
+$button-cta-z-index: null !default;
+$button-cta-box-shadow: null !default;
+$button-cta-outline-border-radius: null !default;

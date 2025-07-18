@@ -1,5 +1,6 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
+@use "../functions/validators";
 
 button,
 a.button,
@@ -9,6 +10,8 @@ input[type="reset"] {
   @include theming.apply-from-theme(
     (
       justify-content: theme.$button-base-justify-content,
+      align-items: center,
+      align-self: flex-start,
       gap: theme.$button-base-gap,
       background-color: theme.$button-base-background-color,
       color: theme.$button-base-text-color,
@@ -22,22 +25,20 @@ input[type="reset"] {
       padding-right: theme.$button-base-padding-right,
       padding-bottom: theme.$button-base-padding-bottom,
       padding-left: theme.$button-base-padding-left,
-      height: theme.$button-base-height,
-      min-height: theme.$button-base-min-height,
+      margin: theme.$button-base-margin,
+      box-sizing: theme.$button-base-box-sizing,
       width: theme.$button-base-width,
       min-width: theme.$button-base-min-width,
+      height: theme.$button-base-height,
+      min-height: theme.$button-base-min-height,
       border-width: theme.$button-base-border-width,
       border-style: theme.$button-base-border-style,
       border-color: theme.$button-base-border-color,
       border-radius: theme.$button-base-border-radius,
+      webkit-border-radius: theme.$button-base-webkit-border-radius,
       webkit-appearance: theme.$button-base-webkit-appearance,
-      image-max-width: theme.$button-base-image-max-width,
-      outline: theme.$button-base-outline,
-      outline-offset: theme.$button-base-outline-offset,
-      outline-color: theme.$button-base-outline-color,
-      z-index: theme.$button-base-z-index,
-      box-shadow: theme.$button-base-box-shadow,
-      border-radius: theme.$button-base-outline-border-radius,
+      cursor: theme.$button-base-cursor,
+      overflow-wrap: theme.$button-base-overflow-wrap,
     )
   );
 
@@ -79,9 +80,44 @@ input[type="reset"] {
         border-radius: theme.$button-base-focus-border-radius,
         background-color: theme.$button-base-focus-background-color,
         color: theme.$button-base-focus-text-color,
+        outline: theme.$button-base-outline,
+        outline-offset: theme.$button-base-outline-offset,
+        outline-color: theme.$button-base-outline-color,
+        z-index: theme.$button-base-z-index,
+        box-shadow: theme.$button-base-box-shadow,
+        border-radius: theme.$button-base-outline-border-radius,
       )
     );
+
+    &:visited,
+    &.visited {
+      @include theming.apply-from-theme(
+        (
+          outline: theme.$button-base-outline,
+          outline-offset: theme.$button-base-outline-offset,
+          outline-color: theme.$button-base-outline-color,
+          z-index: theme.$button-base-z-index,
+          box-shadow: theme.$button-base-box-shadow,
+          border-radius: theme.$button-base-outline-border-radius,
+        )
+      );
+    }
   }
+
+  > img {
+    max-width: theme.$button-base-image-max-width;
+  }
+
+  > * {
+    pointer-events: theme.$button-base-child-pointer-events;
+  }
+}
+
+a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  display: flex;
 }
 
 a.button,
@@ -93,9 +129,13 @@ a:visited.button {
   );
 }
 
-a.button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
-  display: flex;
+@media (width >= theme.$button-base-breakpoint) {
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    min-width: theme.$button-base-breakpoint-min-width;
+    display: theme.$button-base-breakpoint-display;
+  }
 }

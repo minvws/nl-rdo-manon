@@ -1,13 +1,9 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 .dropdown {
-    @include apply-from-theme.apply-from-theme(
-    (
-        width: theme.$dropdown-width,
-        margin: theme.$dropdown-margin,
-        padding: theme.$dropdown-padding,
-        gap: theme.$dropdown-gap,
-    )
-    );
+  width: auto;
+  margin: 0;
+  padding: 0;
+  gap: 0;
 }

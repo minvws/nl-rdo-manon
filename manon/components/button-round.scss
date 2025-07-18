@@ -7,14 +7,10 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   &.round {
-    @include theming.apply-from-theme(
-      (
-        margin: theme.$button-round-margin,
-        min-width: theme.$button-round-min-width,
-        border-radius: theme.$button-round-border-radius,
-        width: theme.$button-round-width,
-        height: theme.$button-round-height,
-      )
-    );
+    margin: auto 0;
+    min-width: initial;
+    border-radius: 50%;
+    width: 2.75rem;
+    height: 2.75rem;
   }
 }

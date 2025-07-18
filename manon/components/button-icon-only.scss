@@ -1,5 +1,6 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
+@use "../functions/validators";
 
 button,
 a.button {
@@ -9,15 +10,32 @@ a.button {
         background-color: theme.$button-icon-only-background-color,
         color: theme.$button-icon-only-text-color,
         border-width: theme.$button-icon-only-border-width,
-        font-size: theme.$button-icon-only-font-size,
         min-width: theme.$button-icon-only-min-width,
         gap: theme.$button-icon-only-gap,
         padding-right: theme.$button-icon-only-padding-right,
         padding-left: theme.$button-icon-only-padding-left,
-        icon-font-size: theme.$button-icon-only-icon-font-size,
-        hover-background-color: theme.$button-icon-only-hover-background-color,
-        hover-border-width: theme.$button-icon-only-hover-border-width,
       )
     );
+    font-size: 0;
+
+    /* Icon */
+    &::before {
+      @include theming.apply-from-theme(
+        (
+          font-size: theme.$button-icon-only-icon-font-size,
+        )
+      );
+    }
+
+    /* Hover */
+    &:hover {
+      @include theming.apply-from-theme(
+        (
+          background-color: theme.$button-icon-only-hover-background-color,
+          border-width: theme.$button-icon-only-hover-border-width,
+        )
+      );
+      font-size: 0;
+    }
   }
 }

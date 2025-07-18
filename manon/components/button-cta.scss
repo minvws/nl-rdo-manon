@@ -1,5 +1,6 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
+@use "../functions/validators";
 
 button,
 a.button,
@@ -7,7 +8,7 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   &.cta {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         justify-content: theme.$button-cta-justify-content,
         gap: theme.$button-cta-gap,
@@ -30,21 +31,19 @@ input[type="reset"] {
         border-style: theme.$button-cta-border-style,
         border-color: theme.$button-cta-border-color,
         border-radius: theme.$button-cta-border-radius,
-        -webkit-appearance: theme.$button-cta-webkit-appearance,
+        webkit-border-radius: theme.$button-cta-webkit-border-radius,
+        webkit-appearance: theme.$button-cta-webkit-appearance,
       )
     );
-
-    > img {
-      @include apply-from-theme.apply-from-theme(
-        (
-          max-width: theme.$button-cta-image-max-width,
-        )
-      );
-    }
+    margin: 0;
+    box-sizing: border-box;
+    width: auto;
+    cursor: pointer;
+    overflow-wrap: break-word;
 
     &:hover,
     &.hover {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           background-color: theme.$button-cta-hover-background-color,
           color: theme.$button-cta-hover-text-color,
@@ -58,7 +57,7 @@ input[type="reset"] {
 
     &:active,
     &.active {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           background-color: theme.$button-cta-active-background-color,
           color: theme.$button-cta-active-text-color,
@@ -72,7 +71,7 @@ input[type="reset"] {
 
     &:focus,
     &.focus {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           border-style: theme.$button-cta-focus-border-style,
           border-color: theme.$button-cta-focus-border-color,
@@ -80,51 +79,59 @@ input[type="reset"] {
           border-radius: theme.$button-cta-focus-border-radius,
           background-color: theme.$button-cta-focus-background-color,
           color: theme.$button-cta-focus-text-color,
-          outline: theme.$button-cta-focus-outline,
-          outline-offset: theme.$button-cta-focus-outline-offset,
-          outline-color: theme.$button-cta-focus-outline-color,
-          z-index: theme.$button-cta-focus-z-index,
-          box-shadow: theme.$button-cta-focus-box-shadow,
+          outline: theme.$button-cta-outline,
+          outline-offset: theme.$button-cta-outline-offset,
+          outline-color: theme.$button-cta-outline-color,
+          z-index: theme.$button-cta-z-index,
+          box-shadow: theme.$button-cta-box-shadow,
+          border-radius: theme.$button-cta-outline-border-radius,
         )
       );
 
       &:visited,
       &.visited {
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
-            outline: theme.$button-cta-focus-outline,
-            outline-offset: theme.$button-cta-focus-outline-offset,
-            outline-color: theme.$button-cta-focus-outline-color,
-            z-index: theme.$button-cta-focus-z-index,
-            box-shadow: theme.$button-cta-focus-box-shadow,
+            outline: theme.$button-cta-outline,
+            outline-offset: theme.$button-cta-outline-offset,
+            outline-color: theme.$button-cta-outline-color,
+            z-index: theme.$button-cta-z-index,
+            box-shadow: theme.$button-cta-box-shadow,
+            border-radius: theme.$button-cta-outline-border-radius,
           )
         );
       }
+    }
+
+    > img {
+      max-width: theme.$button-cta-image-max-width;
+    }
+
+    > * {
+      pointer-events: none;
+    }
+
+    @media (width >= 24rem) {
+      min-width: theme.$button-cta-breakpoint-min-width;
+      display: flex;
     }
   }
 }
 
 a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  display: flex;
+}
+
+a.button,
 a:visited.button {
   &.cta {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         color: theme.$link-button-cta-text-color,
       )
     );
-    &::before {
-      @include apply-from-theme.apply-from-theme(
-        (
-          color: theme.$link-button-cta-text-color,
-        )
-      );
-    }
-    span.icon::before {
-      @include apply-from-theme.apply-from-theme(
-        (
-          color: theme.$link-button-cta-text-color,
-        )
-      );
-    }
   }
 }
