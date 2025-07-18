@@ -1,0 +1,30 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+nav {
+  a {
+    &:visited,
+    &.visited /* Testing purposes */ {
+      @include theming.apply-from-theme(
+        (
+          font-size: theme.$navigation-link-visited-font-size,
+          font-weight: theme.$navigation-link-visited-font-weight,
+          line-height: theme.$navigation-link-visited-line-height,
+          background-color: theme.$navigation-link-visited-background-color,
+          color: theme.$navigation-link-visited-text-color,
+          text-decoration: theme.$navigation-link-visited-text-decoration,
+          border-width: theme.$navigation-link-visited-border-width,
+          border-style: theme.$navigation-link-visited-border-style,
+          border-color: theme.$navigation-link-visited-border-color,
+          border-radius: theme.$navigation-link-visited-border-radius,
+          outline: theme.$navigation-link-visited-outline,
+          outline-offset: theme.$navigation-link-visited-outline-offset,
+          outline-color: theme.$navigation-link-visited-outline-color,
+          z-index: theme.$navigation-link-visited-z-index,
+          box-shadow: theme.$navigation-link-visited-box-shadow,
+          border-radius: theme.$navigation-link-visited-outline-border-radius,
+        )
+      );
+    }
+  }
+}
