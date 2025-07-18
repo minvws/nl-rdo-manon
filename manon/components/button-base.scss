@@ -1,4 +1,4 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 button,
@@ -6,7 +6,7 @@ a.button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       justify-content: theme.$button-base-justify-content,
       gap: theme.$button-base-gap,
@@ -22,28 +22,28 @@ input[type="reset"] {
       padding-right: theme.$button-base-padding-right,
       padding-bottom: theme.$button-base-padding-bottom,
       padding-left: theme.$button-base-padding-left,
-      min-width: theme.$button-base-min-width,
       height: theme.$button-base-height,
       min-height: theme.$button-base-min-height,
+      width: theme.$button-base-width,
+      min-width: theme.$button-base-min-width,
       border-width: theme.$button-base-border-width,
       border-style: theme.$button-base-border-style,
       border-color: theme.$button-base-border-color,
       border-radius: theme.$button-base-border-radius,
-      -webkit-appearance: theme.$button-base-webkit-appearance,
+      webkit-appearance: theme.$button-base-webkit-appearance,
+      image-max-width: theme.$button-base-image-max-width,
+      outline: theme.$button-base-outline,
+      outline-offset: theme.$button-base-outline-offset,
+      outline-color: theme.$button-base-outline-color,
+      z-index: theme.$button-base-z-index,
+      box-shadow: theme.$button-base-box-shadow,
+      border-radius: theme.$button-base-outline-border-radius,
     )
   );
 
-  > img {
-    @include apply-from-theme.apply-from-theme(
-      (
-        max-width: theme.$button-base-image-max-width,
-      )
-    );
-  }
-
   &:hover,
   &.hover {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         background-color: theme.$button-base-hover-background-color,
         color: theme.$button-base-hover-text-color,
@@ -57,7 +57,7 @@ input[type="reset"] {
 
   &:active,
   &.active {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         background-color: theme.$button-base-active-background-color,
         color: theme.$button-base-active-text-color,
@@ -71,7 +71,7 @@ input[type="reset"] {
 
   &:focus,
   &.focus {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         border-style: theme.$button-base-focus-border-style,
         border-color: theme.$button-base-focus-border-color,
@@ -79,50 +79,18 @@ input[type="reset"] {
         border-radius: theme.$button-base-focus-border-radius,
         background-color: theme.$button-base-focus-background-color,
         color: theme.$button-base-focus-text-color,
-        outline: theme.$button-base-focus-outline,
-        outline-offset: theme.$button-base-focus-outline-offset,
-        outline-color: theme.$button-base-focus-outline-color,
-        z-index: theme.$button-base-focus-z-index,
-        box-shadow: theme.$button-base-focus-box-shadow,
       )
     );
-
-    &:visited,
-    &.visited {
-        @include apply-from-theme.apply-from-theme(
-        (
-            outline: theme.$button-base-focus-outline,
-            outline-offset: theme.$button-base-focus-outline-offset,
-            outline-color: theme.$button-base-focus-outline-color,
-            z-index: theme.$button-base-focus-z-index,
-            box-shadow: theme.$button-base-focus-box-shadow,
-        )
-        );
-    }
   }
 }
 
 a.button,
 a:visited.button {
-    @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
-        color: theme.$link-button-base-text-color,
+      color: theme.$link-button-base-text-color,
     )
-    );
-    &::before {
-        @include apply-from-theme.apply-from-theme(
-        (
-            color: theme.$link-button-base-text-color,
-        )
-        );
-    }
-    span.icon::before {
-        @include apply-from-theme.apply-from-theme(
-        (
-            color: theme.$link-button-base-text-color,
-        )
-        );
-    }
+  );
 }
 
 a.button,

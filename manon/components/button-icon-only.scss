@@ -1,10 +1,10 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 button,
 a.button {
   &.icon-only {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         background-color: theme.$button-icon-only-background-color,
         color: theme.$button-icon-only-text-color,
@@ -14,25 +14,10 @@ a.button {
         gap: theme.$button-icon-only-gap,
         padding-right: theme.$button-icon-only-padding-right,
         padding-left: theme.$button-icon-only-padding-left,
+        icon-font-size: theme.$button-icon-only-icon-font-size,
+        hover-background-color: theme.$button-icon-only-hover-background-color,
+        hover-border-width: theme.$button-icon-only-hover-border-width,
       )
     );
-
-    &::before {
-      @include apply-from-theme.apply-from-theme(
-        (
-          font-size: theme.$button-icon-only-icon-font-size,
-        )
-      );
-    }
-
-    &:hover {
-      @include apply-from-theme.apply-from-theme(
-        (
-          background-color: theme.$button-icon-only-hover-background-color,
-          border-width: theme.$button-icon-only-hover-border-width,
-          font-size: theme.$button-icon-only-font-size,
-        )
-      );
-    }
   }
 }
