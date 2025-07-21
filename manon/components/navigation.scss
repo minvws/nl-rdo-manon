@@ -1,0 +1,67 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+nav {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include theming.apply-from-theme(
+      (
+        font-family: theme.$navigation-title-font-family,
+        font-size: theme.$navigation-title-font-size,
+        font-weight: theme.$navigation-title-font-weight,
+        line-height: theme.$navigation-title-line-height,
+        color: theme.$navigation-title-text-color,
+      )
+    );
+  }
+
+  ul {
+    @include theming.apply-from-theme(
+      (
+        margin: theme.$navigation-list-margin,
+        padding: theme.$navigation-list-padding,
+        gap: theme.$navigation-list-gap,
+        line-height: theme.$navigation-list-line-height,
+        font-size: theme.$navigation-list-font-size,
+        font-weight: theme.$navigation-list-font-weight,
+        color: theme.$navigation-list-text-color,
+        background-color: theme.$navigation-list-background-color,
+      )
+    );
+
+    li {
+      @include theming.apply-from-theme(
+        (
+          padding: theme.$navigation-list-item-padding,
+          background-color: theme.$navigation-list-item-background-color,
+          color: theme.$navigation-list-item-text-color,
+          border-width: theme.$navigation-list-item-border-width,
+          border-style: theme.$navigation-list-item-border-style,
+          border-color: theme.$navigation-list-item-border-color,
+          list-style: theme.$navigation-list-item-list-style,
+        )
+      );
+
+      &::before {
+        @include theming.apply-from-theme(
+          (
+            content: theme.$navigation-list-item-icon-content,
+            font-family: theme.$navigation-list-item-icon-font-family,
+            line-height: theme.$navigation-list-item-icon-line-height,
+            font-size: theme.$navigation-list-item-icon-font-size,
+            padding-top: theme.$navigation-list-item-icon-padding-top,
+            padding-right: theme.$navigation-list-item-icon-padding-right,
+            padding-bottom: theme.$navigation-list-item-icon-padding-bottom,
+            padding-left: theme.$navigation-list-item-icon-padding-left,
+            display: theme.$navigation-list-item-icon-display,
+          )
+        );
+        vertical-align: middle;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+.breadcrumb-bar,
+body > header nav.breadcrumb-bar {
+  ul,
+  ol {
+    li {
+      a {
+        @include theming.apply-from-theme(
+          (
+            font-size: theme.$breadcrumb-bar-link-font-size,
+            font-weight: theme.$breadcrumb-bar-link-font-weight,
+            line-height: theme.$breadcrumb-bar-link-line-height,
+            background-color: theme.$breadcrumb-bar-link-background-color,
+            color: theme.$breadcrumb-bar-link-text-color,
+            text-decoration: theme.$breadcrumb-bar-link-text-decoration,
+            border-width: theme.$breadcrumb-bar-link-border-width,
+            border-style: theme.$breadcrumb-bar-link-border-style,
+            border-color: theme.$breadcrumb-bar-link-border-color,
+            border-radius: theme.$breadcrumb-bar-link-border-radius,
+          )
+        );
+
+        &::before {
+          position: static;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0;
+          font-style: normal;
+
+          @include theming.apply-from-theme(
+            (
+              font-family: theme.$breadcrumb-bar-link-icon-font-family,
+              font-size: theme.$breadcrumb-bar-link-icon-font-size,
+              line-height: theme.$breadcrumb-bar-link-icon-line-height,
+              text-decoration: theme.$breadcrumb-bar-link-icon-text-decoration,
+              padding-right: theme.$breadcrumb-bar-link-icon-padding-right,
+              padding-left: theme.$breadcrumb-bar-link-icon-padding-left,
+              background-color: theme.$breadcrumb-bar-link-icon-background-color,
+              color: theme.$breadcrumb-bar-link-icon-text-color,
+              content: theme.$breadcrumb-bar-link-icon-content,
+            )
+          );
+        }
+
+        &.icon,
+        .icon {
+          &::before {
+            position: static;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0;
+            font-style: normal;
+
+            @include theming.apply-from-theme(
+              (
+                font-family: theme.$breadcrumb-bar-link-icon-font-family,
+                font-size: theme.$breadcrumb-bar-link-icon-font-size,
+                line-height: theme.$breadcrumb-bar-link-icon-line-height,
+                text-decoration: theme.$breadcrumb-bar-link-icon-text-decoration,
+                padding-right: theme.$breadcrumb-bar-link-icon-padding-right,
+                padding-left: theme.$breadcrumb-bar-link-icon-padding-left,
+                background-color: theme.$breadcrumb-bar-link-icon-background-color,
+                color: theme.$breadcrumb-bar-link-icon-text-color,
+              )
+            );
+          }
+        }
+
+        > span.icon:last-of-type:not(:only-of-type) {
+          @include theming.apply-from-theme(
+            (
+              padding-right: theme.$breadcrumb-bar-link-icon-last-padding-right,
+              padding-left: theme.$breadcrumb-bar-link-icon-last-padding-left,
+            )
+          );
+        }
+      }
+    }
+  }
+}
