@@ -1,10 +1,10 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 a.button.to-top,
 button.to-top,
 .to-top {
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       position: theme.$button-to-top-position,
       bottom: theme.$button-to-top-bottom,
@@ -26,7 +26,7 @@ button.to-top,
   );
 
   &:hover {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         background-color: theme.$button-to-top-hover-background-color,
         color: theme.$button-to-top-hover-text-color,
@@ -37,7 +37,7 @@ button.to-top,
   &:hover,
   &:focus,
   &:active {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         border-radius: theme.$button-to-top-border-radius,
         border-color: theme.$button-to-top-border-color,
@@ -49,7 +49,7 @@ button.to-top,
   .icon {
     &::before {
       padding: 0;
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           color: theme.$button-to-top-icon-color,
         )
@@ -64,10 +64,10 @@ button.to-top,
   &.icon:visited,
   &.icon:visited:hover {
     &::before {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           color: (
-            theme.$button-to-top-icon-color-hover,
+            theme.$button-to-top-icon-color,
             theme.$button-to-top-icon-color,
           ),
         )

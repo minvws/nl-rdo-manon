@@ -28,6 +28,11 @@
 @forward "filter";
 @forward "focus";
 @forward "footer";
+@forward "footer-link-active";
+@forward "footer-link-focus";
+@forward "footer-link-hover";
+@forward "footer-link-visited";
+@forward "footer-link";
 @forward "footer-two-thirds-one-third";
 @forward "form";
 @forward "form-button";
@@ -44,7 +49,8 @@
 @forward "form-label";
 @forward "header";
 @forward "header-navigation";
-@forward "heading";
+@forward "headings";
+@forward "headings-base-set";
 @forward "hero";
 @forward "horizontal";
 @forward "link";

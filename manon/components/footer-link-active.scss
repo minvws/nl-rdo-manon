@@ -1,0 +1,44 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+body > footer,
+.page-footer,
+%footer-style {
+  a {
+    &:active,
+    /* Testing purposes */
+    &.active {
+      @include theming.apply-from-theme(
+        (
+          font-size: theme.$footer-link-active-font-size,
+          font-weight: theme.$footer-link-active-font-weight,
+          line-height: theme.$footer-link-active-line-height,
+          background-color: theme.$footer-link-active-background-color,
+          text-color: theme.$footer-link-active-text-color,
+          text-decoration: theme.$footer-link-active-text-decoration,
+          border-width: theme.$footer-link-active-border-width,
+          border-style: theme.$footer-link-active-border-style,
+          border-color: theme.$footer-link-active-border-color,
+          border-radius: theme.$footer-link-active-border-radius,
+        )
+      );
+      &::before,
+      .icon::before {
+        @include theming.apply-from-theme(
+          (
+            font-size: theme.$footer-link-active-icon-font-size,
+            font-weight: theme.$footer-link-active-icon-font-weight,
+            line-height: theme.$footer-link-active-icon-line-height,
+            background-color: theme.$footer-link-active-icon-background-color,
+            text-color: theme.$footer-link-active-icon-text-color,
+            text-decoration: theme.$footer-link-active-icon-text-decoration,
+            border-width: theme.$footer-link-active-icon-border-width,
+            border-style: theme.$footer-link-active-icon-border-style,
+            border-color: theme.$footer-link-active-icon-border-color,
+            border-radius: theme.$footer-link-active-icon-border-radius,
+          )
+        );
+      }
+    }
+  }
+}
