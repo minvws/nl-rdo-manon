@@ -69,7 +69,8 @@ body > header,
             justify-content: theme.$header-navigation-list-item-justify-content,
             align-items: theme.$header-navigation-list-item-align-items,
             color: theme.$header-navigation-list-item-text-color,
-            background-color: theme.$header-navigation-list-item-background-color,
+            background-color:
+              theme.$header-navigation-list-item-background-color,
           )
         );
         list-style: none;
@@ -86,9 +87,10 @@ body > header,
     input {
       @include theming.apply-from-theme(
         (
-          align-self: theme.$header-navigation-input-algin-self,
+          align-self: theme.$header-navigation-input-align-self,
         )
       );
     }
   }
 }
+
