@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       max-width: theme.$max-line-length-max-width,
       hyphens: theme.$max-line-length-hyphens,

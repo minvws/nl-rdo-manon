@@ -8,7 +8,7 @@ section.system,
 div.system {
   @include notification.notification;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       background-color: theme.$notification-system-background-color,
       color: theme.$notification-system-text-color,

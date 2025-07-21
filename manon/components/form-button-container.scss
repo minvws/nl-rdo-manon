@@ -1,6 +1,6 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
-@use "../functions/not-null";
+@use "../functions/validators";
 
 $breakpoint: 24rem !default;
 
@@ -8,14 +8,14 @@ $breakpoint: 24rem !default;
   /* Removing gap as it is not supported within fieldsets */
   gap: 0;
   width: auto;
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       float: theme.$form-button-container-fieldset-float,
     )
   );
 
   @if theme.$button-container-gap {
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         /* Countering margin bottom that will be set by buttons on the last line */
         margin-right: theme.$button-container-gap * -1 / 2,
@@ -30,14 +30,14 @@ $breakpoint: 24rem !default;
   input[type="submit"],
   input[type="reset"] {
     float: left;
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         width: theme.$button-container-button-width,
       )
     );
 
     @if theme.$button-container-gap {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           margin-right: theme.$button-container-gap / 2,
           margin-left: theme.$button-container-gap / 2,
@@ -47,7 +47,7 @@ $breakpoint: 24rem !default;
     }
 
     @media (width >= $breakpoint) {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           width: theme.$button-container-button-after-breakpoint-width,
         )
@@ -60,7 +60,7 @@ form {
   .button-container {
     width: auto;
 
-    @include apply-from-theme.apply-from-theme(
+    @include theming.apply-from-theme(
       (
         align-self: theme.$form-button-container-align-self,
       )
@@ -85,12 +85,12 @@ form {
         @extend %fieldset-button-container-styling;
 
         @media (width >= $breakpoint) {
-          @if not-null.not-null(
+          @if validators.args-not-null(
             theme.$form-button-container-label-colum,
             theme.$button-container-gap
           )
           {
-            @include apply-from-theme.apply-from-theme(
+            @include theming.apply-from-theme(
               (
                 margin-left: calc(
                     (
@@ -106,7 +106,7 @@ form {
       }
 
       > div.button-container {
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             gap: theme.$button-container-gap,
           )

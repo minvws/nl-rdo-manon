@@ -10,7 +10,7 @@ div.code-block {
   box-sizing: border-box;
   margin: 0;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       max-width: theme.$code-block-max-width,
       padding: theme.$code-block-padding,

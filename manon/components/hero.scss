@@ -4,6 +4,9 @@
 .hero {
   display: flex;
   width: 100%;
+  position: relative;
+  padding: 0;
+  
   @include theming.apply-from-theme(
     (
       min-height: theme.$hero-min-height,
@@ -12,16 +15,9 @@
       background-color: theme.$hero-background-color,
     )
   );
-  position: relative;
-  padding: 0;
 
   img {
     object-fit: cover;
-    @include theming.apply-from-theme(
-      (
-        object-position: theme.$hero-image-object-position,
-      )
-    );
     width: 100%;
     max-width: 100%;
     padding: 0;
@@ -29,6 +25,19 @@
     position: absolute;
     top: 0;
     z-index: 0;
+    
+    @include theming.apply-from-theme(
+      (
+        object-position: theme.$hero-image-object-position,
+      )
+    );
+
+
+    @include theming.apply-from-theme(
+      (
+        object-position: theme.$hero-image-object-position,
+      )
+    );
   }
 
   h1,

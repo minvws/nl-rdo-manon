@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       gap: theme.$accordion-gap,
     )
@@ -16,7 +16,7 @@
   width: 100%;
   text-decoration: none;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       display: theme.$accordion-button-display,
       padding: theme.$accordion-button-padding,
@@ -35,7 +35,7 @@
   width: 100%;
   box-sizing: border-box;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       gap: theme.$accordion-content-gap,
       padding: theme.$accordion-content-padding,
@@ -108,7 +108,7 @@ section.accordion {
     button[aria-expanded="false"] {
       /* Open icon */
       &::before {
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             content: theme.$accordion-button-icon-before-open-content,
             font-family: theme.$accordion-button-icon-font-family,
@@ -119,7 +119,7 @@ section.accordion {
 
       &::after {
         margin-left: auto;
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             content: theme.$accordion-button-icon-after-open-content,
             font-family: theme.$accordion-button-icon-font-family,
@@ -137,7 +137,7 @@ section.accordion {
     button[aria-expanded="true"] {
       /* Close icon */
       &::before {
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             content: theme.$accordion-button-icon-before-close-content,
             font-family: theme.$accordion-button-icon-font-family,

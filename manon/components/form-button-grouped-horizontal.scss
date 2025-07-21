@@ -1,10 +1,10 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 form {
   .horizontal-view {
     button:first-child {
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           margin-left:
             theme.$form-button-grouped-horizontal-first-child-margin-left,

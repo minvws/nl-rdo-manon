@@ -8,7 +8,7 @@ body > header,
   margin: 0 auto;
   box-sizing: border-box;
 
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       flex-direction: theme.$header-flex-direction,
       justify-content: theme.$header-justify-content,

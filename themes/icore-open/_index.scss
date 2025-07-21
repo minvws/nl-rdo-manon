@@ -33,8 +33,9 @@ and spacing sets */
   $button-padding-right: #{spacing.$spacing-100},
   $button-padding-bottom: #{spacing.$spacing-075},
   $button-padding-left: #{spacing.$spacing-100},
+  $button-background-color: #{semantic.$color-brand-primary-default},
 
-  //button hover
+  // button hover
   $button-primary-hover-background-color: #{color-scheme.$oc-blue-6},
   $button-primary-hover-text-color: #{color-scheme.$oc-white},
   $button-primary-hover-border-color: #{color-scheme.$oc-blue-6},
@@ -49,12 +50,25 @@ and spacing sets */
   $button-destructive-primary-hover-text-color: #{color-scheme.$oc-white},
   $button-destructive-primary-hover-border-color: #{semantic.$color-destructive-intense},
 
+  // breadcrumb bar
+  $breadcrumb-bar-padding-top: #{spacing.$spacing-075},
+  $breadcrumb-bar-padding-right: #{spacing.$spacing-100},
+  $breadcrumb-bar-padding-bottom: #{spacing.$spacing-075},
+  $breadcrumb-bar-padding-left: #{spacing.$spacing-100},
+  $breadcrumb-bar-text-color: #{semantic.$color-text-default},
+  $breadcrumb-bar-gap: #{spacing.$spacing-100},
+  $breadcrumb-bar-list-item-last-child-font-weight: bold,
+  $breadcrumb-bar-list-item-gap: #{spacing.$spacing-100},
+
+  // breadcrumb bar link
+  $breadcrumb-bar-link-text-decoration: none,
+
   // code block
   $code-block-padding: #{spacing.$spacing-200},
   $code-block-background-color: #{color-scheme.$oc-gray-1},
   $code-block-border-radius: #{border-radii.$border-radius-s},
 
-  // Form
+  // form
   $form-align-items: flex-start,
   $form-text-color: #{semantic.$color-text-default},
   $form-gap: #{spacing.$spacing-200},
@@ -74,13 +88,28 @@ and spacing sets */
   // form label
   $form-label-font-weight: bold,
 
+  // footer
+  $footer-align-items: center,
+  $footer-justify-content: center,
+  $footer-gap: #{spacing.$spacing-100},
+  $footer-flex-direction: column,
+  $footer-text-align: center,
+  $footer-padding-top: #{spacing.$spacing-200},
+  $footer-padding-right: #{spacing.$spacing-200},
+  $footer-padding-bottom: #{spacing.$spacing-300},
+  $footer-padding-left: #{spacing.$spacing-200},
+  $footer-list-style: none,
+
   // header
   $header-background-color: #{color-scheme.$oc-gray-9},
 
-  // content wrapper
+  // header content wrapper
   $header-content-wrapper-flex-direction: row,
   $header-content-wrapper-width: 100%,
   $header-content-wrapper-gap: 1rem,
+
+  // heading
+  $h1-font-family: #{semantic.$font-family},
 
   // helpers
   $horizontal-gap: #{spacing.$spacing-100},
@@ -109,6 +138,7 @@ and spacing sets */
   $main-padding-right: 5%,
   $main-padding-bottom: #{spacing.$spacing-400},
   $main-padding-left: 5%,
+  $main-gap: #{spacing.$spacing-225},
 
   // section
   $section-background-color: #{color-scheme.$oc-white},
@@ -119,8 +149,5 @@ and spacing sets */
   $section-max-width: 50rem,
   $section-gap: #{spacing.$spacing-300},
   $section-flex-direction: column,
-  $section-border-radius: #{border-radii.$border-radius-m},
-
-  // heading
-  $h1-font-family: #{semantic.$font-family}
+  $section-border-radius: #{border-radii.$border-radius-m}
 );

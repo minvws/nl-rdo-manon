@@ -8,6 +8,8 @@
 @forward "breadcrumb-bar";
 @forward "breadcrumb-bar-content-block";
 @forward "breadcrumb-bar-content-wrapper";
+@forward "breadcrumb-bar-link-states";
+@forward "breadcrumb-bar-link";
 @forward "button";
 @forward "button-container";
 @forward "button-destructive";
@@ -26,6 +28,11 @@
 @forward "filter";
 @forward "focus";
 @forward "footer";
+@forward "footer-link-active";
+@forward "footer-link-focus";
+@forward "footer-link-hover";
+@forward "footer-link-visited";
+@forward "footer-link";
 @forward "footer-two-thirds-one-third";
 @forward "form";
 @forward "form-button";
@@ -42,7 +49,8 @@
 @forward "form-label";
 @forward "header";
 @forward "header-navigation";
-@forward "heading";
+@forward "headings";
+@forward "headings-base-set";
 @forward "hero";
 @forward "hero-content-container";
 @forward "hero-div";

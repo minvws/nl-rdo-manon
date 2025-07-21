@@ -1,9 +1,9 @@
-@use "../mixins/apply-from-theme";
+@use "../mixins/theming";
 @use "../variables" as theme;
 
 form.help {
   position: relative;
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       padding-right: theme.$form-help-padding-right
     )
@@ -28,7 +28,7 @@ form.help {
       font-size: 0;
       box-sizing: border-box;
 
-      @include apply-from-theme.apply-from-theme(
+      @include theming.apply-from-theme(
         (
           top: theme.$form-help-button-top,
           right: theme.$form-help-button-right,
@@ -48,7 +48,7 @@ form.help {
       );
 
       &:hover {
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             background-color: theme.$form-help-button-hover-background-color,
             color: theme.$form-help-button-hover-text-color,
@@ -58,7 +58,7 @@ form.help {
 
       &::before {
         vertical-align: middle;
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             content: theme.$form-help-button-icon,
             font-family: theme.$form-help-button-icon-font-family,
@@ -71,7 +71,7 @@ form.help {
 
       &[aria-expanded="true"] {
         &::before {
-          @include apply-from-theme.apply-from-theme(
+          @include theming.apply-from-theme(
             (
               content: theme.$form-help-button-icon-expanded,
             )
@@ -81,7 +81,7 @@ form.help {
 
       + .explanation {
         margin-bottom: 0;
-        @include apply-from-theme.apply-from-theme(
+        @include theming.apply-from-theme(
           (
             margin-top: theme.$form-help-button-explanation-gap,
           )

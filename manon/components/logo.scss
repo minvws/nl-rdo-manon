@@ -7,7 +7,7 @@ a:visited.logo,
 a:hover.logo,
 a:active.logo,
 a:focus.logo {
-  @include apply-from-theme.apply-from-theme(
+  @include theming.apply-from-theme(
     (
       display: theme.$logo-display,
       flex-direction: theme.$logo-flex-direction,
