@@ -1,6 +1,6 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
-@use "../mixins/icon";
+@use "../functions/validators";
 
 .breadcrumb-bar,
 body > header nav.breadcrumb-bar {
@@ -24,14 +24,52 @@ body > header nav.breadcrumb-bar {
         );
 
         &::before {
-          @include icon.icon-format("breadcrumb-bar-link-");
-          @include icon.icon-content("breadcrumb-bar-link-");
+          position: static;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0;
+          font-style: normal;
+
+          @include theming.apply-from-theme(
+            (
+              font-family: theme.$breadcrumb-bar-link-icon-font-family,
+              font-size: theme.$breadcrumb-bar-link-icon-font-size,
+              line-height: theme.$breadcrumb-bar-link-icon-line-height,
+              text-decoration: theme.$breadcrumb-bar-link-icon-text-decoration,
+              padding-right: theme.$breadcrumb-bar-link-icon-padding-right,
+              padding-left: theme.$breadcrumb-bar-link-icon-padding-left,
+              background-color: theme.$breadcrumb-bar-link-icon-background-color,
+              color: theme.$breadcrumb-bar-link-icon-text-color,
+              content: theme.$breadcrumb-bar-link-icon-content,
+            )
+          );
         }
 
         &.icon,
         .icon {
           &::before {
-            @include icon.icon-format("breadcrumb-bar-link-");
+            position: static;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0;
+            font-style: normal;
+
+            @include theming.apply-from-theme(
+              (
+                font-family: theme.$breadcrumb-bar-link-icon-font-family,
+                font-size: theme.$breadcrumb-bar-link-icon-font-size,
+                line-height: theme.$breadcrumb-bar-link-icon-line-height,
+                text-decoration: theme.$breadcrumb-bar-link-icon-text-decoration,
+                padding-right: theme.$breadcrumb-bar-link-icon-padding-right,
+                padding-left: theme.$breadcrumb-bar-link-icon-padding-left,
+                background-color: theme.$breadcrumb-bar-link-icon-background-color,
+                color: theme.$breadcrumb-bar-link-icon-text-color,
+              )
+            );
           }
         }
 
