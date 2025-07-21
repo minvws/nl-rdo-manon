@@ -121,18 +121,6 @@ and spacing sets */
   $link-visited-text-color: #{color-scheme.$oc-violet-8},
   $link-visited-hover-text-color: #{color-scheme.$oc-violet-9},
 
-  // footer
-  $footer-align-items: center,
-  $footer-justify-content: center,
-  $footer-gap: #{spacing.$spacing-100},
-  $footer-flex-direction: column,
-  $footer-text-align: center,
-  $footer-padding-top: #{spacing.$spacing-200},
-  $footer-padding-right: #{spacing.$spacing-200},
-  $footer-padding-bottom: #{spacing.$spacing-300},
-  $footer-padding-left: #{spacing.$spacing-200},
-  $footer-list-style: none,
-
   // main
   $main-padding-top: #{spacing.$spacing-400},
   $main-padding-right: 5%,
