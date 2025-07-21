@@ -2,6 +2,11 @@
 @use "../variables" as theme;
 
 .breadcrumb-bar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+
   @include theming.apply-from-theme(
     (
       background-color: theme.$breadcrumb-bar-background-color,
@@ -58,11 +63,11 @@
 
         &::after {
           @include theming.apply-from-theme(
-          (
-            content: theme.$breadcrumb-bar-content-block-icon,
-            font-family: theme.$breadcrumb-bar-icon-font-family,
-            margin-left: theme.$breadcrumb-bar-content-block-icon-margin-left,
-            margin-right:
+            (
+              content: theme.$breadcrumb-bar-content-block-icon,
+              font-family: theme.$breadcrumb-bar-icon-font-family,
+              margin-left: theme.$breadcrumb-bar-content-block-icon-margin-left,
+              margin-right:
                 theme.$breadcrumb-bar-content-block-icon-margin-right,
             )
           );
