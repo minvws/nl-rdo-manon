@@ -14,6 +14,26 @@ $breadcrumb-bar-border-style: null !default;
 $breadcrumb-bar-border-color: null !default;
 $breadcrumb-bar-border-radius: null !default;
 $breadcrumb-bar-background-color: null !default;
+$breadcrumb-bar-font-size: null !default;
+$breadcrumb-bar-font-weight: null !default;
+
+// Content block
+$breadcrumb-bar-content-block-padding-top: null !default;
+$breadcrumb-bar-content-block-padding-right: null !default;
+$breadcrumb-bar-content-block-padding-bottom: null !default;
+$breadcrumb-bar-content-block-padding-left: null !default;
+$breadcrumb-bar-content-block-gap: null !default;
+$breadcrumb-bar-content-block-max-width: null !default;
+
+// Link
+$breadcrumb-bar-link-white-space: null !default;
+$breadcrumb-bar-link-padding-right: null !default;
+$breadcrumb-bar-link-padding-left: null !default;
+$breadcrumb-bar-link-text-decoration: null !default;
+
+// Hover
+$breadcrumb-bar-hover-text-color: null !default;
+$breadcrumb-bar-link-hover-text-decoration: null !default;
 
 // List
 $breadcrumb-bar-list-item-gap: null !default;
@@ -23,5 +43,17 @@ $breadcrumb-bar-list-item-last-child-font-weight: null !default;
 $breadcrumb-bar-icon-margin-left: null !default;
 $breadcrumb-bar-icon-margin-right: null !default;
 
-// Hover
-$breadcrumb-bar-hover-text-color: null !default;
+$breadcrumb-bar-icon-font-family: null !default;
+$breadcrumb-bar-icon-font-size: null !default;
+$breadcrumb-bar-icon-font-weight: null !default;
+$breadcrumb-bar-icon-line-height: null !default;
+$breadcrumb-bar-icon-text-decoration: null !default;
+$breadcrumb-bar-icon-padding-right: null !default;
+$breadcrumb-bar-icon-padding-left: null !default;
+$breadcrumb-bar-icon-background-color: null !default;
+$breadcrumb-bar-icon-text-color: null !default;
+$breadcrumb-bar-icon-content: null !default;
+
+// Last Icon
+$breadcrumb-bar-icon-last-padding-right: null !default;
+$breadcrumb-bar-icon-last-padding-left: null !default;
