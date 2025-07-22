@@ -12,12 +12,6 @@ describe('Sass Tests', () => {
 
   sassTestFiles.forEach((file) => {
     const filePath = path.resolve(__dirname, file);
-    sassTrue.runSass({ describe, it }, filePath, {
-      sass: sass,
-      includePaths: [
-        path.resolve(__dirname, 'node_modules'),
-        path.resolve(__dirname, '../'),
-      ],
-    });
+    sassTrue.runSass({ describe, it }, filePath, { sass });
   });
 });
