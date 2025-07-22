@@ -12,14 +12,18 @@
     "format:check": "prettier --check .",
     "lint:css": "stylelint \"**/*.scss\"",
     "lint:css:fix": "npm run lint:css -- --fix",
-    "npm-version": "npm version"
+    "npm-version": "npm version",
+    "test": "vitest run"
   },
   "peerDepencency": {
     "sass": ">=1.77.6"
   },
   "devDependencies": {
+    "vitest": "^2.0.4",
     "prettier": "^3.5.3",
-    "stylelint": "^16.20.0",
+    "sass": "^1.89.2",
+    "sass-true": "^9.0.0",
+    "stylelint": "^16.21.1",
     "stylelint-config-standard-scss": "^15.0.1"
   },
   "repository": {
