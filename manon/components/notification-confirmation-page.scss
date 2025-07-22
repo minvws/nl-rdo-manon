@@ -1,0 +1,57 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+%notifictions-confirmation-page-styling {
+  max-width: 100%;
+  width: 100%;
+
+  @include theming.apply-from-theme(
+    (
+      background-color: theme.$notification-confirmation-page-background-color,
+      color: theme.$notification-confirmation-page-text-color,
+    )
+  );
+
+  span:first-of-type {
+    @include theming.apply-from-theme(
+      (
+        font-weight: theme.$notification-confirmation-page-span-font-weight,
+      )
+    );
+  }
+
+  p,
+  span,
+  section,
+  div {
+    &.confirmation {
+      &::before {
+        @include theming.apply-from-theme(
+          (
+            font-family: theme.$notification-confirmation-page-icon-font-family,
+            font-size: theme.$notification-confirmation-page-icon-font-size,
+            padding-right: theme.$notification-confirmation-page-icon-padding-right,
+            padding-left: theme.$notification-confirmation-page-icon-padding-left,
+            color: theme.$notification-confirmation-page-icon-text-color,
+            margin-right: theme.$notification-confirmation-page-icon-margin-right,
+          )
+        );
+      }
+    }
+  }
+}
+
+main {
+  &.confirmation {
+    @extend %notifictions-confirmation-page-styling;
+  }
+
+  > section,
+  > article,
+  > div {
+    &.confirmation {
+      @extend %notifictions-confirmation-page-styling;
+    }
+  }
+}
