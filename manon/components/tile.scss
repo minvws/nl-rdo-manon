@@ -91,8 +91,13 @@ ul.tiles {
     );
 
     > a {
-      color: var(--text-dark);
       text-decoration: none;
+
+      @include theming.apply-from-theme(
+        (
+          color: theme.$tile-link-text-color,
+        )
+      );
     }
   }
 }
