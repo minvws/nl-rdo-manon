@@ -1,0 +1,77 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+/* Image container */
+%image-square-container {
+  width: 100%;
+  padding: 0; /* Resetting padding */
+  padding-bottom: 100%;
+  position: relative;
+}
+
+%image-square {
+  position: absolute;
+  object-fit: cover;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+
+  @include theming.apply-from-theme(
+    (
+      object-position: theme.$image-square-object-position,
+      border-radius: theme.$image-square-border-radius,
+    )
+  );
+}
+
+.image-square {
+  margin: 0;
+
+  @include theming.apply-from-theme(
+    (
+      max-width: theme.$image-square-max-width,
+    )
+  );
+
+  > div {
+    @extend %image-square-container;
+
+    img {
+      @extend %image-square;
+    }
+  }
+}
+
+/* Div with square images inside */
+.images-square {
+  > div {
+    @extend %image-square-container;
+
+    img {
+      @extend %image-square;
+    }
+  }
+}
+
+/* List with square images */
+ul.images-square {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    > div {
+      @extend %image-square-container;
+
+      img {
+        @extend %image-square;
+      }
+    }
+  }
+}

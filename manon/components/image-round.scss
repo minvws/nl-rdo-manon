@@ -1,0 +1,77 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+/* Image container */
+%image-round-container {
+  width: 100%;
+  padding: 0; /* Resetting padding */
+  padding-bottom: 100%;
+  position: relative;
+}
+
+%image-round {
+  position: absolute;
+  object-fit: cover;
+  padding: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+
+  @include theming.apply-from-theme(
+    (
+      object-position: theme.$image-round-object-position,
+    )
+  );
+}
+
+.image-round {
+  margin: 0;
+
+  @include theming.apply-from-theme(
+    (
+      max-width: theme.$image-round-max-width,
+    )
+  );
+
+  > div {
+    @extend %image-round-container;
+
+    img {
+      @extend %image-round;
+    }
+  }
+}
+
+/* Div with round images inside */
+.images-round {
+  > div {
+    @extend %image-round-container;
+
+    img {
+      @extend %image-round;
+    }
+  }
+}
+
+/* List with round images */
+ul.images-round {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    > div {
+      @extend %image-round-container;
+
+      img {
+        @extend %image-round;
+      }
+    }
+  }
+}
