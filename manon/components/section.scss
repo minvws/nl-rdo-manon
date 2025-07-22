@@ -1,7 +1,8 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
+@use "../functions/validators";
 
-section {
+main section {
   display: flex;
   width: 100%;
   margin: 0 auto;
@@ -9,7 +10,6 @@ section {
 
   @include theming.apply-from-theme(
     (
-      background-color: theme.$section-background-color,
       flex-direction: theme.$section-flex-direction,
       justify-content: theme.$section-justify-content,
       align-items: theme.$section-align-items,
@@ -19,7 +19,6 @@ section {
       padding-bottom: theme.$section-padding-bottom,
       padding-left: theme.$section-padding-left,
       max-width: theme.$section-max-width,
-      border-radius: theme.$section-border-radius,
     )
   );
 }
