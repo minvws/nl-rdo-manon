@@ -33,6 +33,7 @@ and spacing sets */
   $button-padding-right: #{spacing.$spacing-100},
   $button-padding-bottom: #{spacing.$spacing-075},
   $button-padding-left: #{spacing.$spacing-100},
+  $button-background-color: #{semantic.$color-brand-primary-default},
 
   // button hover
   $button-primary-hover-background-color: #{color-scheme.$oc-blue-6},
@@ -125,6 +126,7 @@ and spacing sets */
   $main-padding-right: 5%,
   $main-padding-bottom: #{spacing.$spacing-400},
   $main-padding-left: 5%,
+  $main-gap: #{spacing.$spacing-225},
 
   // Navigation
   $navigation-list-gap: #{spacing.$spacing-050},
