@@ -142,5 +142,22 @@ and spacing sets */
   $section-max-width: 50rem,
   $section-gap: #{spacing.$spacing-300},
   $section-flex-direction: column,
-  $section-border-radius: #{border-radii.$border-radius-m}
+  $section-border-radius: #{border-radii.$border-radius-m},
+
+  // tile
+  $tile-background-color: #{color-scheme.$oc-white},
+  $tile-padding-top: #{spacing.$spacing-100},
+  $tile-padding-right: #{spacing.$spacing-100},
+  $tile-padding-bottom: #{spacing.$spacing-100},
+  $tile-padding-left: #{spacing.$spacing-100},
+  $tile-border-width: 1px,
+  $tile-border-style: solid,
+  $tile-border-color: #{color-scheme.$oc-gray-3},
+  $tile-border-radius: #{border-radii.$border-radius-m},
+
+  // tile groups
+  $tile-groups-gap: #{spacing.$spacing-100},
+
+  // tile image
+  $tile-image-cover-margin-bottom: #{spacing.$spacing-100}
 );
