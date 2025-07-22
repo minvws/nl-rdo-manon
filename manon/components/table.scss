@@ -1,0 +1,185 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: auto;
+  margin: 0;
+
+  @include theming.apply-from-theme(
+    (
+      font-size: theme.$table-font-size,
+      line-height: theme.$table-line-height,
+      font-weight: theme.$table-font-weight,
+      color: theme.$table-text-color,
+      background-color: theme.$table-background-color,
+      border-width: theme.$table-border-width,
+      border-style: theme.$table-border-style,
+      border-color: theme.$table-border-color,
+      text-align: theme.$table-text-align,
+    )
+  );
+
+  thead {
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$table-head-background-color,
+        color: theme.$table-head-text-color,
+        border-width: theme.$table-head-border-width,
+        border-style: theme.$table-head-border-style,
+        border-color: theme.$table-head-border-color,
+      )
+    );
+
+    th {
+      @include theming.apply-from-theme(
+        (
+          padding: theme.$table-head-cell-padding,
+          border-width: theme.$table-head-cell-border-width,
+          border-style: theme.$table-head-cell-border-style,
+          border-color: theme.$table-head-cell-border-color,
+          font-weight: theme.$table-head-cell-font-weight,
+          font-size: theme.$table-head-cell-font-size,
+          text-align: theme.$table-head-text-align,
+        )
+      );
+    }
+
+    a,
+    a:visited,
+    a:hover {
+      color: inherit;
+
+      &::before {
+        color: inherit;
+      }
+    }
+  }
+
+  tbody {
+    th {
+      @include theming.apply-from-theme(
+        (
+          padding: theme.$table-body-head-cell-padding,
+          border-width: theme.$table-body-head-cell-border-width,
+          border-style: theme.$table-body-head-cell-border-style,
+          border-color: theme.$table-body-head-cell-border-color,
+          background-color: theme.$table-body-head-cell-background-color,
+          color: theme.$table-body-head-cell-text-color,
+          font-weight: theme.$table-body-head-cell-font-weight,
+          font-size: theme.$table-body-head-cell-font-size,
+        )
+      );
+    }
+  }
+
+  td {
+    @include theming.apply-from-theme(
+      (
+        padding: theme.$table-cell-padding,
+        gap: theme.$table-cell-gap,
+        background-color: theme.$table-cell-background-color,
+        color: theme.$table-cell-text-color,
+        border-width: theme.$table-cell-border-width,
+        border-style: theme.$table-cell-border-style,
+        border-color: theme.$table-cell-border-color,
+      )
+    );
+  }
+
+  tr {
+    /* Zebra striping with opacity to keep background color. e.g for warnings or errors */
+    &:nth-child(even):not(.odd),
+    &:nth-child(odd).even {
+      @include theming.apply-from-theme(
+        (
+          background-color: theme.$table-row-background-color-striping,
+        )
+      );
+    }
+
+    &:first-of-type td {
+      @include theming.apply-from-theme(
+        (
+          border-width: theme.$table-first-row-cell-border-width,
+          border-style: theme.$table-first-row-cell-border-style,
+          border-color: theme.$table-first-row-cell-border-color,
+        )
+      );
+    }
+
+    &:last-of-type td {
+      @include theming.apply-from-theme(
+        (
+          border-width: theme.$table-last-row-cell-border-width,
+          border-style: theme.$table-last-row-cell-border-style,
+          border-color: theme.$table-last-row-cell-border-color,
+        )
+      );
+    }
+  }
+
+  tfoot {
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$table-foot-background-color,
+        color: theme.$table-foot-text-color,
+        font-size: theme.$table-foot-font-size,
+        font-weight: theme.$table-foot-font-weight,
+        padding: theme.$table-foot-padding,
+        border-width: theme.$table-foot-border-width,
+        border-style: theme.$table-foot-border-style,
+        border-color: theme.$table-foot-border-color,
+      )
+    );
+
+    th {
+      @include theming.apply-from-theme(
+        (
+          background-color: theme.$table-foot-header-background-color,
+          color: theme.$table-foot-header-text-color,
+          border-width: theme.$table-foot-header-border-width,
+          border-style: theme.$table-foot-header-border-style,
+          border-color: theme.$table-foot-header-border-color,
+          padding: theme.$table-foot-header-padding,
+          font-weight: theme.$table-foot-header-font-weight,
+          font-size: theme.$table-foot-header-font-size,
+        )
+      );
+    }
+
+    td {
+      @include theming.apply-from-theme(
+        (
+          background-color: theme.$table-foot-cell-background-color,
+          color: theme.$table-foot-cell-text-color,
+          border-width: theme.$table-foot-cell-border-width,
+          border-style: theme.$table-foot-cell-border-style,
+          border-color: theme.$table-foot-cell-border-color,
+          padding: theme.$table-foot-cell-padding,
+          font-weight: theme.$table-foot-cell-font-weight,
+          font-size: theme.$table-foot-cell-font-size,
+        )
+      );
+    }
+  }
+}
+
+/* Resetting inherited layout padding */
+main {
+  section,
+  section div,
+  article,
+  article div,
+  div,
+  div div {
+    table {
+      div {
+        gap: theme.$table-gap;
+        padding: 0;
+      }
+    }
+  }
+}
