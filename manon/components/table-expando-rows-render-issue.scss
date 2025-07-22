@@ -1,0 +1,70 @@
+/* This bit of css solves a render issue that appears when a dl containing a
+dd is used within a expando row. 
+
+Issue:  
+When the width of the dd has been set as a 
+percentage, the rest of the table (th and td) will change their width when the 
+expando row is opened. 
+
+Cause/findings:
+There are a couple of issues found concerning this bug:
+- A table set to 100% width is rendered as 100% - 1px width
+  - Removing borders and adding box-sizing: border-sizing; or changing the table-layout 
+    do not seem to make a difference.
+- An element within the table set to 100% width is also rendered as 100% - 1px width
+- When using a calc(100% - 1px) the computed value is correct, however the
+width of the th and td still change. 
+- When setting a px or rem value the th's and td's keep their original width
+
+Using fixed values isn't ideal percentages would be less prone to issues when the width
+of parent elements are altered. Suggestions on how this bug can be solved instead of patched
+are welcome.
+*/
+
+@use "../functions/validators";
+
+table,
+table.condensed,
+table.sticky {
+  tr.expando-row td dl > div > dd {
+    @if validators.args-not-null(82rem, 35rem) {
+      max-width: calc(82rem - 35rem);
+    }
+  }
+}
+
+article {
+  table,
+  table.condensed,
+  table.sticky {
+    tr.expando-row td dl > div > dd {
+      @if validators.args-not-null(50rem, 20rem) {
+        max-width: calc(50rem - 20rem);
+      }
+    }
+  }
+}
+
+.auth {
+  table,
+  table.condensed,
+  table.sticky {
+    tr.expando-row td dl > div > dd {
+      @if validators.args-not-null(42rem, 5rem) {
+        max-width: calc(42rem - 5rem);
+      }
+    }
+  }
+}
+
+.form-view {
+  table,
+  table.condensed,
+  table.sticky {
+    tr.expando-row td dl > div > dd {
+      @if validators.args-not-null(55rem, 10rem) {
+        max-width: calc(55rem - 10rem);
+      }
+    }
+  }
+}

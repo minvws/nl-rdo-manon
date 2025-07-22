@@ -1,0 +1,89 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+%action-button {
+  /* Resetting button styling */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-height: unset;
+
+  @include theming.apply-from-theme(
+    (
+      background: theme.$table-action-buttons-button-background-color,
+      color: theme.$table-action-buttons-button-text-color,
+      justify-content: theme.$table-action-buttons-button-justify-content,
+    )
+  );
+
+  &::before {
+    @include theming.apply-from-theme(
+      (
+        color: theme.$table-action-buttons-button-text-color,
+        font-size: theme.$table-action-buttons-button-font-size,
+      )
+    );
+  }
+
+  &:hover {
+    border: 0;
+
+    @include theming.apply-from-theme(
+      (
+        background: theme.$table-action-buttons-button-hover-background-color,
+      )
+    );
+
+    &::before {
+      @include theming.apply-from-theme(
+        (
+          color: theme.$table-action-buttons-button-hover-text-color,
+        )
+      );
+    }
+  }
+}
+
+/* Style a specific button within a table */
+table {
+  /* Resetting form styling */
+  form {
+    padding: 0;
+    background-color: transparent;
+
+    @include theming.apply-from-theme(
+      (
+        width: theme.$table-action-buttons-width,
+        display: theme.$table-action-buttons-form-display,
+        flex-direction: theme.$table-action-buttons-flex-direction,
+        justify-content: theme.$table-action-buttons-justify-content,
+      )
+    );
+
+    button {
+      margin: 0;
+    }
+  }
+
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    &.action-button {
+      @extend %action-button;
+    }
+  }
+
+  /* Style all buttons within a parent */
+  &.action-buttons {
+    button,
+    a.button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      @extend %action-button;
+    }
+  }
+}

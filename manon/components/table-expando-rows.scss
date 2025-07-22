@@ -1,0 +1,57 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+$breakpoint: 24rem !default;
+
+table {
+  button.expando-button {
+    display: none;
+  }
+
+  tr.expando-row {
+    display: table-layout;
+
+    td {
+      position: relative;
+
+      @include theming.apply-from-theme(
+        (
+          background-color: theme.$expando-rows-table-cell-background-color,
+          padding: theme.$expando-rows-table-cell-padding,
+        )
+      );
+
+      @media (width >= $breakpoint) {
+        padding: theme.$expando-rows-table-cell-after-breakpoint-padding;
+      }
+    }
+  }
+}
+
+.js-expando-rows-loaded {
+  table {
+    button.expando-button {
+      display: inline-flex;
+    }
+  }
+}
+
+.expanded-row {
+  @include theming.apply-from-theme(
+    (
+      background-color: theme.$expando-rows-row-background-color,
+      font-weight: theme.$expando-rows-row-font-weight,
+    )
+  );
+
+  /* Zebra striping with opacity to keep background color. e.g for warnings or errors */
+  &:nth-child(even):not(.odd),
+  &:nth-child(odd).even {
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$expando-rows-row-striping-background-color,
+      )
+    );
+  }
+}

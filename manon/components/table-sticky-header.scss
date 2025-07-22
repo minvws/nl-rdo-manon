@@ -1,0 +1,24 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+.sticky-header {
+  position: relative;
+
+  @include theming.apply-from-theme(
+    (
+      max-height: theme.$table-sticky-header-max-height,
+    )
+  );
+
+  th {
+    position: sticky;
+    top: -1px;
+
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$table-sticky-header-background-color,
+      )
+    );
+  }
+}

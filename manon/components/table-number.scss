@@ -1,0 +1,16 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+.number {
+  @include theming.apply-from-theme(
+    (
+      text-align: theme.$table-number-text-align,
+      font-variant-numeric: theme.$table-number-font-family,
+    )
+  );
+}
+
+td.number input {
+  text-align: inherit;
+}
