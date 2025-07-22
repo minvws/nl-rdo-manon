@@ -73,7 +73,7 @@
         <h3>Horizontaal uitgelijnd</h3>
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
-          <div class="horizontal-view">
+          <div class="horizontal">
             <label for="range-example-2">Range</label>
             <input type="range" id="range-example-2" name="range-example-2" min="0" max="100" />
           </div>
@@ -84,7 +84,7 @@
           language="html"
           code={`
 <form action="" method="post">
-  <div class="horizontal-view">
+  <div class="horizontal">
     <label for="range-example-2">Range</label>
     <input type="range" id="range-example-2" name="range-example-2" min="0" max="100">
   </div>

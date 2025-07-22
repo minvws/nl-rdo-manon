@@ -126,6 +126,12 @@ and spacing sets */
   $main-padding-bottom: #{spacing.$spacing-400},
   $main-padding-left: 5%,
 
+  // Navigation
+  $navigation-list-gap: #{spacing.$spacing-050},
+  $navigation-list-item-list-style: none,
+  $navigation-link-text-decoration: none,
+  $navigation-text-color: red,
+
   // section
   $section-background-color: #{color-scheme.$oc-white},
   $section-padding-top: #{spacing.$spacing-100},

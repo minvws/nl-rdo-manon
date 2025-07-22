@@ -60,7 +60,7 @@
         />
 
         <h3>Visuele weergave binnen formulier:</h3>
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <fieldset>
             <legend>Persoonsgegevens</legend>
 
@@ -106,7 +106,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <fieldset>
     <legend>Persoonsgegevens</legend>
 

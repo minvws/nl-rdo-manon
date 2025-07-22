@@ -1,8 +1,8 @@
 /*---------------------------------------------------------------*/
-/*-------------- form-horizontal-view-fieldset.scss -------------*/
+/*-------------- form-horizontal-fieldset.scss -------------*/
 /*---------------------------------------------------------------*/
-@use "form-horizontal-view-variables";
-@use "form-horizontal-view-fieldset-variables";
+@use "form-horizontal-variables";
+@use "form-horizontal-fieldset-variables";
 
 $breakpoint: 24rem;
 
@@ -21,7 +21,7 @@ But the alternative styling as you can see below.
 For more information on the bug see: https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers
 and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 
-form.horizontal-view {
+form.horizontal {
   > fieldset {
     > div {
       display: block;
@@ -46,8 +46,8 @@ form.horizontal-view {
         label {
           float: left;
           width: var(--label-column);
-          padding-right: var(--form-horizontal-view-gap);
-          margin-top: var(--form-horizontal-view-fieldset-label-margin-top);
+          padding-right: var(--form-horizontal-gap);
+          margin-top: var(--form-horizontal-fieldset-label-margin-top);
         }
       }
     }
@@ -73,7 +73,7 @@ form.horizontal-view {
         width: var(--input-column);
       }
 
-      .horizontal-view {
+      .horizontal {
         display: block;
         gap: 0;
       }

@@ -1,0 +1,82 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+%navigation-link {
+  a {
+    color: inherit;
+
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$navigation-link-background-color,
+        text-decoration: theme.$navigation-link-text-decoration,
+        border-width: theme.$navigation-link-border-width,
+        border-style: theme.$navigation-link-border-style,
+        border-color: theme.$navigation-link-border-color,
+        border-radius: theme.$navigation-link-border-radius,
+
+        // Outline
+        outline: theme.$navigation-link-outline,
+        outline-offset: theme.$navigation-link-outline-offset,
+        outline-color: theme.$navigation-link-outline-color,
+        z-index: theme.$navigation-link-z-index,
+        box-shadow: theme.$navigation-link-box-shadow,
+      )
+    );
+  }
+}
+
+nav {
+  @include theming.apply-from-theme(
+    (
+      font-family: theme.$navigation-font-family,
+      font-size: theme.$navigation-font-size,
+      font-weight: theme.$navigation-font-weight,
+      line-height: theme.$navigation-line-height,
+      color: theme.$navigation-text-color,
+    )
+  );
+
+  @extend %navigation-link;
+
+  ul {
+    @include theming.apply-from-theme(
+      (
+        margin: theme.$navigation-list-margin,
+        padding: theme.$navigation-list-padding,
+        gap: theme.$navigation-list-gap,
+        background-color: theme.$navigation-list-background-color,
+      )
+    );
+
+    li {
+      @include theming.apply-from-theme(
+        (
+          padding: theme.$navigation-list-item-padding,
+          background-color: theme.$navigation-list-item-background-color,
+          border-width: theme.$navigation-list-item-border-width,
+          border-style: theme.$navigation-list-item-border-style,
+          border-color: theme.$navigation-list-item-border-color,
+          list-style: theme.$navigation-list-item-list-style,
+        )
+      );
+
+      &::before {
+        vertical-align: middle;
+
+        @include theming.apply-from-theme(
+          (
+            content: theme.$navigation-list-item-icon-content,
+            font-family: theme.$navigation-list-item-icon-font-family,
+            line-height: theme.$navigation-list-item-icon-line-height,
+            font-size: theme.$navigation-list-item-icon-font-size,
+            padding-top: theme.$navigation-list-item-icon-padding-top,
+            padding-right: theme.$navigation-list-item-icon-padding-right,
+            padding-bottom: theme.$navigation-list-item-icon-padding-bottom,
+            padding-left: theme.$navigation-list-item-icon-padding-left,
+            display: theme.$navigation-list-item-icon-display,
+          )
+        );
+      }
+    }
+  }
+}

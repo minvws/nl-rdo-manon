@@ -101,8 +101,7 @@
                 <a href="{base}/components/form-columns">Weergave in kolommen</a>
               </li>
               <li>
-                <a href="{base}/components/form-horizontal-view">Horizontaal uitgelijnd formulier</a
-                >
+                <a href="{base}/components/form-horizontal">Horizontaal uitgelijnd formulier</a>
               </li>
               <li><a href="{base}/components/form-inline">"inline"-formulier</a></li>
             </ul>

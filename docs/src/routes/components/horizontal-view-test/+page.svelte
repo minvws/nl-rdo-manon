@@ -23,7 +23,7 @@
         <h3>Horizontaal uitgelijnd</h3>
         <h4>Visueel voorbeeld:</h4>
 
-        <div class="horizontal-view">
+        <div class="horizontal">
           <button class="ghost">Terug</button>
           <button>Verder</button>
         </div>
@@ -32,7 +32,7 @@
         <Code
           language="html"
           code={`
-<div class="horizontal-view">
+<div class="horizontal">
   <button class="ghost">Terug</button>
   <button>Verder</button>
 </div>
@@ -43,7 +43,7 @@
         <Code
           language="html"
           code={`
-<div class="horizontal-view">
+<div class="horizontal">
   <!-- horizontaal uit te lijnen content -->
 </div>
 `}
@@ -52,7 +52,7 @@
         <h3>Object met horizontaal uitgelijnde elementen</h3>
         <h4>Visueel voorbeeld:</h4>
 
-        <div class="horizontal-view-group" id="horizontal-view-group">
+        <div class="horizontal-group" id="horizontal-group">
           <div>
             <button class="ghost">Terug</button>
             <button>Verder</button>
@@ -68,7 +68,7 @@
         <Code
           language="html"
           code={`
-<div class="horizontal-view-group">
+<div class="horizontal-group">
   <div>
     <button class="ghost">Terug</button>
     <button>Verder</button>
@@ -86,7 +86,7 @@
         <Code
           language="html"
           code={`
-<div class="horizontal-view-group" id="horizontal-view-group">
+<div class="horizontal-group" id="horizontal-group">
   <div>
       <!-- horizontaal uit te lijnen content -->
   </div>
@@ -101,7 +101,7 @@
         <h3>Horizontaal uitgelijnd formulier</h3>
         <h4>Visueel voorbeeld:</h4>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="form-example-horizontal">Voorbeeld text input</label>
             <input id="form-example-horizontal" name="form-example-horizontal" type="text" />
@@ -117,7 +117,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="form-example-horizontal">Voorbeeld text input</label>
     <input id="form-example-horizontal" name="form-example-horizontal"type="text">
@@ -134,7 +134,7 @@
         <h3>Horizontaal uitgelijnd formulier <code>fieldset</code></h3>
         <h4>Visueel voorbeeld:</h4>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <fieldset>
             <legend>Lorem ipsum</legend>
             <div>
@@ -161,7 +161,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <fieldset>
     <legend>Lorem ipsum</legend>
     <div>
