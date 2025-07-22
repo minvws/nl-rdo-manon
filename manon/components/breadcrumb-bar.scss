@@ -4,11 +4,12 @@
 .page-header .breadcrumb-bar,
 .breadcrumb-bar {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  flex-wrap: wrap;
-  flex-direction: column;
+  padding: 0;
 
   @include theming.apply-from-theme(
     (
@@ -28,8 +29,30 @@
       border-style: theme.$breadcrumb-bar-border-style,
       border-color: theme.$breadcrumb-bar-border-color,
       border-radius: theme.$breadcrumb-bar-border-radius,
+      font-size: theme.$breadcrumb-bar-font-size,
+      font-weight: theme.$breadcrumb-bar-font-weight,
     )
   );
+
+  // content block
+  > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    align-self: center;
+
+    @include theming.apply-from-theme(
+      (
+        padding-top: theme.$breadcrumb-bar-content-block-padding-top,
+        padding-right: theme.$breadcrumb-bar-content-block-padding-right,
+        padding-bottom: theme.$breadcrumb-bar-content-block-padding-bottom,
+        padding-left: theme.$breadcrumb-bar-content-block-padding-left,
+        gap: theme.$breadcrumb-bar-content-block-gap,
+        max-width: theme.$breadcrumb-bar-content-block-max-width,
+      )
+    );
+  }
 
   ul,
   ol {
@@ -121,6 +144,8 @@
         /* Break words that won't fit the available space */
         overflow-wrap: anywhere;
         color: inherit;
+        font-size: inherit;
+        font-weight: inherit;
 
         @include theming.apply-from-theme(
           (
@@ -140,6 +165,66 @@
             )
           );
         }
+      }
+
+      //Icon
+      &::before {
+        position: static;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        font-style: normal;
+
+        @include theming.apply-from-theme(
+          (
+            font-family: theme.$breadcrumb-bar-icon-font-family,
+            font-size: theme.$breadcrumb-bar-icon-font-size,
+            line-height: theme.$breadcrumb-bar-icon-line-height,
+            text-decoration: theme.$breadcrumb-bar-icon-text-decoration,
+            padding-right: theme.$breadcrumb-bar-icon-padding-right,
+            padding-left: theme.$breadcrumb-bar-icon-padding-left,
+            background-color: theme.$breadcrumb-bar-icon-background-color,
+            color: theme.$breadcrumb-bar-icon-text-color,
+            content: theme.$breadcrumb-bar-icon-content,
+          )
+        );
+      }
+
+      &.icon,
+      .icon {
+        &::before {
+          position: static;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0;
+          font-style: normal;
+
+          @include theming.apply-from-theme(
+            (
+              font-family: theme.$breadcrumb-bar-icon-font-family,
+              font-size: theme.$breadcrumb-bar-icon-font-size,
+              line-height: theme.$breadcrumb-bar-icon-line-height,
+              text-decoration: theme.$breadcrumb-bar-icon-text-decoration,
+              padding-right: theme.$breadcrumb-bar-icon-padding-right,
+              padding-left: theme.$breadcrumb-bar-icon-padding-left,
+              background-color: theme.$breadcrumb-bar-icon-background-color,
+              color: theme.$breadcrumb-bar-icon-text-color,
+            )
+          );
+        }
+      }
+
+      > span.icon:last-of-type:not(:only-of-type) {
+        @include theming.apply-from-theme(
+          (
+            padding-right: theme.$breadcrumb-bar-icon-last-padding-right,
+            padding-left: theme.$breadcrumb-bar-icon-last-padding-left,
+          )
+        );
       }
     }
   }
