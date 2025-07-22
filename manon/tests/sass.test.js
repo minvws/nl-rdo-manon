@@ -1,17 +1,11 @@
-import { describe, it } from 'vitest';
-import sass from 'sass';
-import path from 'path';
-import sassTrue from 'sass-true';
+import { glob } from "node:fs/promises";
+import { resolve } from "node:path";
+import { describe, it } from "vitest";
+import sassTrue from "sass-true";
+import sass from "sass";
 
-describe('Sass Tests', () => {
-  const sassTestFiles = [
-    'functions/_validators.test.scss',
-    'mixins/_theming.test.scss',
-    // Add other Sass test files here as you create them
-  ];
+const testFilesPattern = resolve(import.meta.dirname, "../**/*.test.scss");
 
-  sassTestFiles.forEach((file) => {
-    const filePath = path.resolve(__dirname, file);
-    sassTrue.runSass({ describe, it }, filePath, { sass });
-  });
-});
+for await (const filePath of glob(testFilesPattern)) {
+  sassTrue.runSass({ describe, it }, filePath, { sass });
+}
