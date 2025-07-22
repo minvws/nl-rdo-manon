@@ -1,3 +1,4 @@
+// Base
 $header-navigation-gap: null !default;
 $header-navigation-justify-content: null !default;
 $header-navigation-align-items: null !default;
@@ -16,9 +17,8 @@ $header-navigation-border-radius: null !default;
 $header-navigation-min-height: null !default;
 $header-navigation-position: null !default;
 $header-navigation-white-space: null !default;
-$header-navigation-flex-direction: null !default;
 
-// list
+// List
 $header-navigation-list-gap: null !default;
 $header-navigation-list-justify-content: null !default;
 $header-navigation-list-align-items: null !default;
@@ -26,11 +26,14 @@ $header-navigation-list-text-color: null !default;
 $header-navigation-list-font-weight: null !default;
 $header-navigation-list-width: null !default;
 
-// List item
+// List Item
 $header-navigation-list-item-justify-content: null !default;
 $header-navigation-list-item-align-items: null !default;
 $header-navigation-list-item-text-color: null !default;
 $header-navigation-list-item-background-color: null !default;
+$header-navigation-list-item-border-width: null !default;
+$header-navigation-list-item-border-style: null !default;
+$header-navigation-list-item-border-color: null !default;
 
 // Input
 $header-navigation-input-algin-self: null !default;
