@@ -6,7 +6,7 @@
   width: 100%;
   position: relative;
   padding: 0;
-  
+
   @include theming.apply-from-theme(
     (
       min-height: theme.$hero-min-height,
@@ -25,14 +25,12 @@
     position: absolute;
     top: 0;
     z-index: 0;
-    
+
     @include theming.apply-from-theme(
       (
         object-position: theme.$hero-image-object-position,
       )
     );
-
-
     @include theming.apply-from-theme(
       (
         object-position: theme.$hero-image-object-position,
