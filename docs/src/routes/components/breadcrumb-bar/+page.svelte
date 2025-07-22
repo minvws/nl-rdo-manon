@@ -48,11 +48,27 @@
 
         <h3>Paragraaf</h3>
         <h4>Visueel voorbeeld:</h4>
+
+        <div class="resize">
+          <iframe src="{base}/examples/breadcrumb-bar" title="Voorbeeld"></iframe>
+        </div>
+
+        <h2>HTML-voorbeeld:</h2>
+        <Code
+          language="html"
+          code={`
+<nav class="breadcrumb-bar">
+    <div>
         <ul>
-          <li>
-            <a href="breadcrumb-bar-example">Voorbeeldpagina met kruimelpadnavigatie.</a>
-          </li>
+            <li><a href="{base}/components">Componenten</a></li>
+            <li>
+                <a href="{base}/components/breadcrumb-bar" aria-current="page">Kruimelpad - breadcrumb-bar</a>
+            </li>
         </ul>
+    </div>
+</nav>
+`}
+        />
       </section>
 
       <section id="requirements">
@@ -71,73 +87,6 @@
           language="css"
           code={`
 @use "@minvws/manon/breadcrumb-bar";
-`}
-        />
-      </section>
-
-      <section id="variables">
-        <h2>Instelbare variabelen</h2>
-        <p>
-          <strong>Let op:</strong> De uitlijning van horizontaal uitgelijnde tags werken alleen in
-          combinatie met de class <code>horizontal-view</code>.
-        </p>
-
-        <h3>CSS</h3>
-        <p>
-          Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw
-          project. Kies en gebruik de benodigde variabelen.
-        </p>
-        <Code
-          language="css"
-          code={`
-:root {
-    --breadcrumb-bar-flex-direction: ;
-    --breadcrumb-bar-justify-content: ;
-    --breadcrumb-bar-align-items: ;
-    --breadcrumb-bar-gap: ;
-    --breadcrumb-bar-padding-top: ;
-    --breadcrumb-bar-padding-right: ;
-    --breadcrumb-bar-padding-bottom: ;
-    --breadcrumb-bar-padding-left: ;
-    --breadcrumb-bar-max-width: ;
-    --breadcrumb-bar-background-color: ;
-    --breadcrumb-bar-text-color: ;
-    --breadcrumb-bar-border-width: ;
-    --breadcrumb-bar-border-style: ;
-    --breadcrumb-bar-border-color: ;
-    --breadcrumb-bar-border-radius: ;
-    --breadcrumb-bar-min-height: ;
-
-    /* Hover */
-    --breadcrumb-bar-hover-text-color: ;
-
-    /* List */
-    --breadcrumb-bar-list-padding: ;
-    --breadcrumb-bar-list-gap: ;
-    --breadcrumb-bar-list-vertical-align: ;
-
-    /* List item */
-    --breadcrumb-bar-list-item-gap: ;
-
-    /* Icon */
-    --breadcrumb-bar-icon: ;
-    --breadcrumb-bar-icon-font-family: ;
-    --breadcrumb-bar-icon-font-size: ;
-    --breadcrumb-bar-icon-padding-right: ;
-    --breadcrumb-bar-icon-padding-left: ;
-    --breadcrumb-bar-icon-margin-left: ;
-    --breadcrumb-bar-icon-margin-right: ;
-
-    /* Last item / current page */
-    --breadcrumb-bar-list-item-last-child-font-weight: ;
-
-    /* Link */
-    --breadcrumb-bar-link-text-decoration: ;
-    --breadcrumb-bar-link-white-space: ;
-
-    /* Link hover */
-    --breadcrumb-bar-link-hover-text-decoration: ;
-}
 `}
         />
       </section>

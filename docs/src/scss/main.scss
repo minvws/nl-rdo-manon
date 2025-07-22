@@ -8,8 +8,6 @@
 @use "@minvws/manon/components/background-color-offset";
 @use "@minvws/manon/components/base";
 @use "@minvws/manon/components/breadcrumb-bar";
-@use "@minvws/manon/components/breadcrumb-bar-content-block";
-@use "@minvws/manon/components/breadcrumb-bar-content-wrapper";
 @use "@minvws/manon/components/button";
 @use "@minvws/manon/components/button-container";
 @use "@minvws/manon/components/button-destructive";
@@ -62,3 +60,6 @@
 @use "@minvws/manon/components/sidemenu";
 @use "@minvws/manon/components/skip-to-content";
 @use "@minvws/manon/components/vertical";
+
+// Docs specific styling
+@use "iframe";

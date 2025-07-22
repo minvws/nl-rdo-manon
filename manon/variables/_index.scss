@@ -6,10 +6,6 @@
 @forward "background-color-offset";
 @forward "base";
 @forward "breadcrumb-bar";
-@forward "breadcrumb-bar-content-block";
-@forward "breadcrumb-bar-content-wrapper";
-@forward "breadcrumb-bar-link-states";
-@forward "breadcrumb-bar-link";
 @forward "button";
 @forward "button-container";
 @forward "button-destructive";
@@ -66,6 +62,7 @@
 @forward "notification-explanation";
 @forward "notification-system";
 @forward "notification-warning";
+@forward "radio";
 @forward "section";
 @forward "sidemenu";
 @forward "skip-to-content";
@@ -73,3 +70,6 @@
 @forward "tile-image-cover";
 @forward "tile";
 @forward "vertical";
+@forward "image-cover";
+@forward "image-round";
+@forward "image-square";
