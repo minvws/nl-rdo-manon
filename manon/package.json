@@ -5,7 +5,9 @@
   "files": [
     "**/*.scss",
     "**/*.js",
-    "**/*.license"
+    "**/*.license",
+    "LICENSES",
+    "REUSE.toml"
   ],
   "scripts": {
     "format": "prettier --write .",
