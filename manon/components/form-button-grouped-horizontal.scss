@@ -2,7 +2,7 @@
 @use "../variables" as theme;
 
 form {
-  .horizontal-view {
+  .horizontal {
     button:first-child {
       @include theming.apply-from-theme(
         (

@@ -27,7 +27,7 @@
             <p><span>5.254</span> nieuwsberichten</p>
             <button data-show-filters-label="Toon filters">Verberg filters</button>
           </div>
-          <form aria-label="Filters" action="" method="post" class="horizontal-view help">
+          <form aria-label="Filters" action="" method="post" class="horizontal help">
             <fieldset>
               <legend>Filter op datum</legend>
               <div>
@@ -109,7 +109,7 @@
     <p><span>5.254</span> nieuwsberichten</p>
     <button data-show-filters-label="Toon filters">Verberg filters</button>
   </div>
-  <form aria-label="Filters" action="" method="post" class="horizontal-view help">
+  <form aria-label="Filters" action="" method="post" class="horizontal help">
     <fieldset>
       <legend>Filter op datum</legend>
       <div>

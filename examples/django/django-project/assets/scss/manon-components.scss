@@ -44,7 +44,7 @@
 @use "@minvws/manon/max-line-length";
 
 /* Helpers */
-@use "@minvws/manon/horizontal-view";
+@use "@minvws/manon/horizontal";
 @use "@minvws/manon/horizontal-scroll";
 @use "@minvws/manon/horizontal-center";
 @use "@minvws/manon/centered-view";
@@ -205,7 +205,7 @@
 @use "@minvws/manon/form-select";
 @use "@minvws/manon/form-radio";
 @use "@minvws/manon/form-accent-color";
-@use "@minvws/manon/form-horizontal-view";
+@use "@minvws/manon/form-horizontal";
 @use "@minvws/manon/form-button";
 @use "@minvws/manon/form-button-container";
 @use "@minvws/manon/form-button-grouped-horizontal";
@@ -217,8 +217,8 @@
 /* Fieldset */
 @use "@minvws/manon/form-fieldset";
 @use "@minvws/manon/form-fieldset-visually-hidden";
-@use "@minvws/manon/form-horizontal-view-fieldset";
-@use "@minvws/manon/form-fieldset-visually-hidden-horizontal-view";
+@use "@minvws/manon/form-horizontal-fieldset";
+@use "@minvws/manon/form-fieldset-visually-hidden-horizontal";
 @use "@minvws/manon/form-fieldset-checkbox";
 @use "@minvws/manon/form-fieldset-radio";
 

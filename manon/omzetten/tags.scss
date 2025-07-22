@@ -31,7 +31,7 @@ ul.tags {
   }
 }
 
-.tags.horizontal-view {
+.tags.horizontal {
   flex-direction: var(--tags-flex-direction, inherit);
   align-items: var(--tags-align-items);
   justify-content: var(--tags-justify-content);

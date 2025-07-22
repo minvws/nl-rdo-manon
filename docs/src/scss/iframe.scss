@@ -1,8 +1,13 @@
 .resize {
     display: flex;
-    
-    iframe {
-        flex-grow: 1;
-        border: 0;
-    }
+    align-items: stretch;
+    width: 100%;
+    margin: 0;
+    resize: both;
+    overflow: hidden;
+
+  iframe {
+    flex-grow: 1;
+    border: 0;
+  }
 }

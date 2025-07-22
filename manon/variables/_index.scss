@@ -38,7 +38,7 @@
 @forward "form-fieldset";
 @forward "form-fieldset-checkbox";
 @forward "form-fieldset-radio";
-@forward "form-fieldset-visually-hidden-horizontal-view";
+@forward "form-fieldset-visually-hidden-horizontal";
 @forward "form-grouped-choice-list";
 @forward "form-help";
 @forward "form-input";
@@ -56,6 +56,7 @@
 @forward "main";
 @forward "max-line-length";
 @forward "message-counter";
+@forward "navigation";
 @forward "notification";
 @forward "notification-confirmation";
 @forward "notification-error";
@@ -66,7 +67,11 @@
 @forward "radio";
 @forward "section";
 @forward "sidemenu";
+@forward "tabs";
 @forward "skip-to-content";
+@forward "tile-groups";
+@forward "tile-image-cover";
+@forward "tile";
 @forward "vertical";
 @forward "image-cover";
 @forward "image-round";

@@ -129,7 +129,7 @@
     <nav aria-labelledby="helper-classes-heading">
       <ul>
         <li>
-          <a href="{base}/components/horizontal-view">Horizontaal uitgelijnd</a>
+          <a href="{base}/components/horizontal">Horizontaal uitgelijnd</a>
         </li>
         <li>
           <a href="{base}/components/layout-centered">Gecentreerd</a>

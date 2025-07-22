@@ -48,7 +48,7 @@
       <section id="examples">
         <h2>Voorbeelden</h2>
         <h3>Visueel voorbeeld</h3>
-        <ul class="tags horizontal-view">
+        <ul class="tags horizontal">
           <li class="tags-color-1">Label</li>
           <li class="tags-color-2">Label</li>
           <li class="tags-color-3">Label</li>
@@ -61,7 +61,7 @@
         <Code
           language="html"
           code={`
-<ul class="tags horizontal-view">
+<ul class="tags horizontal">
   <li class="tags-color-1">Label</p></li>
   <li class="tags-color-2">Label</p></li>
   <li class="tags-color-3">Label</p></li>
@@ -78,7 +78,7 @@
           is er geen omlijning zichtbaar, maar deze wordt wel toegevoegd in de achtergrondkleur van de
           tag.
         </p>
-        <ul class="tags horizontal-view">
+        <ul class="tags horizontal">
           <li class="tags-color-1 plain">Label</li>
           <li class="tags-color-1 solid">Label</li>
           <li class="tags-color-1 dashed">Label</li>
@@ -109,7 +109,7 @@
         <Code
           language="html"
           code={`
-<ul class="tags horizontal-view">
+<ul class="tags horizontal">
   <li class="tags-color-1 plain">Label</p></li>
   <li class="tags-color-1 solid">Label</p></li>
   <li class="tags-color-1 dashed">Label</p></li>

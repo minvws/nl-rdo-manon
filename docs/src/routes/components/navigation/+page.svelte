@@ -38,9 +38,7 @@
             Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
             optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.
           </li>
-          <li>
-            Vul de variabelen met de gewenste stijlkeuzes.
-          </li>
+          <li>Vul de variabelen met de gewenste stijlkeuzes.</li>
           <li>
             Voeg de benodigde HTML toe. Voor meer informatie zie: <a href="#examples">Voorbeelden</a
             >.
@@ -75,7 +73,11 @@
 
         <h4>Navigatie-component met een lijst met links</h4>
         <div class="resize">
-          <iframe src="{base}/examples/navigation-with-list-of-links" title="Voorbeeld" height="240px"></iframe>
+          <iframe
+            src="{base}/examples/navigation-with-list-of-links"
+            title="Voorbeeld"
+            height="240px"
+          ></iframe>
         </div>
 
         <h4>HTML-voorbeeld:</h4>
@@ -94,7 +96,8 @@
 
         <h4>Navigatie-component met een horizontaal uitgelijnde lijst met links</h4>
         <div class="resize">
-          <iframe src="{base}/examples/navigation-with-horizontal-view" title="Voorbeeld" height="240px"></iframe>
+          <iframe src="{base}/examples/navigation-with-horizontal" title="Voorbeeld" height="240px"
+          ></iframe>
         </div>
 
         <h4>HTML-voorbeeld:</h4>
@@ -102,7 +105,7 @@
           language="html"
           code={`
 <nav>
-    <ul class="horizontal-view">
+    <ul class="horizontal">
         <li><a href="#">Voorbeeld-link 1/a></li>
         <li><a href="#">Voorbeeld-link 2</a></li>
         <li><a href="#">Voorbeeld-link 3</a></li>
@@ -111,7 +114,6 @@
 `}
         />
       </section>
-
     </div>
   </article>
 </main>

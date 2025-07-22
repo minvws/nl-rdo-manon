@@ -35,7 +35,7 @@
 @use "@minvws/manon/components/form-fieldset-checkbox";
 @use "@minvws/manon/components/form-fieldset";
 @use "@minvws/manon/components/form-fieldset-radio";
-@use "@minvws/manon/components/form-fieldset-visually-hidden-horizontal-view";
+@use "@minvws/manon/components/form-fieldset-visually-hidden-horizontal";
 @use "@minvws/manon/components/form-grouped-choice-list";
 @use "@minvws/manon/components/form-help";
 @use "@minvws/manon/components/form-input";
@@ -48,6 +48,7 @@
 @use "@minvws/manon/components/link";
 @use "@minvws/manon/components/list";
 @use "@minvws/manon/components/logo";
+@use "@minvws/manon/components/navigation";
 @use "@minvws/manon/components/main";
 @use "@minvws/manon/components/max-line-length";
 @use "@minvws/manon/components/message-counter";
@@ -59,6 +60,9 @@
 @use "@minvws/manon/components/pagination";
 @use "@minvws/manon/components/section";
 @use "@minvws/manon/components/sidemenu";
+@use "@minvws/manon/components/tile";
+@use "@minvws/manon/components/tile-groups";
+@use "@minvws/manon/components/tile-image-cover";
 @use "@minvws/manon/components/skip-to-content";
 @use "@minvws/manon/components/vertical";
 

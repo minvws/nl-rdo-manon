@@ -3,7 +3,7 @@
 
 $breakpoint-1: 24rem !default;
 
-form.horizontal-view {
+form.horizontal {
   > fieldset > fieldset {
     legend {
       font-weight: inherit;
@@ -14,8 +14,8 @@ form.horizontal-view {
       @include theming.apply-from-theme(
         (
           width: theme.$form-fieldset-label-column,
-          padding-right: theme.$form-horizontal-view-gap,
-          margin-top: theme.$form-horizontal-view-fieldset-label-margin-top,
+          padding-right: theme.$form-horizontal-gap,
+          margin-top: theme.$form-horizontal-fieldset-label-margin-top,
         )
       );
     }
