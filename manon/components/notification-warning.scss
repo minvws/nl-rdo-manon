@@ -12,8 +12,6 @@ div.warning {
     (
       background-color: theme.$notification-warning-background-color,
       color: theme.$notification-warning-text-color,
-      border-width: theme.$notification-warning-border-width,
-      border-style: theme.$notification-warning-border-style,
       border-color: theme.$notification-warning-border-color,
     )
   );
