@@ -63,8 +63,6 @@ ul.images-square {
 
   li {
     list-style: none;
-    padding: 0;
-    margin: 0;
 
     > div {
       @extend %image-square-container;
