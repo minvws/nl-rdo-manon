@@ -63,7 +63,7 @@
         <h3>Bereik gegroepeerd binnen <code>div</code> horizontaal uitgelijnd</h3>
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
-          <div class="horizontal-view">
+          <div class="horizontal">
             <label for="range-example-div-horizontal">Range</label>
             <input
               type="range"
@@ -80,7 +80,7 @@
           language="html"
           code={`
 <form action="" method="post">
-  <div class="horizontal-view">
+  <div class="horizontal">
     <label for="range-example-div-horizontal">Range</label>
     <input type="range" id="range-example-div-horizontal" name="range-example-div-horizontal" min="0" max="100">
   </div>
@@ -119,7 +119,7 @@
         <h3>Bereik gegroepeerd binnen <code>section</code> horizontaal uitgelijnd</h3>
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
-          <section class="horizontal-view">
+          <section class="horizontal">
             <label for="range-example-section-horizontal">Range</label>
             <input
               type="range"
@@ -136,7 +136,7 @@
           language="html"
           code={`
 <form action="" method="post">
-  <section class="horizontal-view">
+  <section class="horizontal">
     <label for="range-example-section-horizontal">Range</label>
     <input type="range" id="range-example-section-horizontal" name="range-example-section-horizontal" min="0" max="100">
   </section>
@@ -177,7 +177,7 @@
         <h3>Bereik gegroepeerd binnen <code>fieldset</code> horizontaal uitgelijnd</h3>
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
-          <fieldset class="horizontal-view">
+          <fieldset class="horizontal">
             <legend>bereik-invoerveld binnen een fieldset voorbeeld</legend>
             <label for="range-example-fieldset-horizontal">Range</label>
             <input
@@ -195,7 +195,7 @@
           language="html"
           code={`
 <form action="" method="post">
-  <fieldset class="horizontal-view">
+  <fieldset class="horizontal">
     <legend>bereik-invoerveld binnen een fieldset voorbeeld</legend>
     <label for="range-example-fieldset-horizontal">Range</label>
     <input type="range" id="range-example-fieldset-horizontal" name="range-example-fieldset-horizontal" min="0" max="100">

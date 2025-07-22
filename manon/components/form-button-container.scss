@@ -79,7 +79,7 @@ form {
     }
   }
 
-  &.horizontal-view {
+  &.horizontal {
     fieldset {
       .button-container {
         @extend %fieldset-button-container-styling;
