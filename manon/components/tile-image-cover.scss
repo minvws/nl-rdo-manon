@@ -10,13 +10,46 @@
     (
       object-position: theme.$tile-image-cover-object-position,
       max-height: theme.$tile-image-cover-max-height,
-      width: calc(100% + theme.$tile-padding-right + theme.$tile-padding-left),
-      margin-top: calc(-1 * theme.$tile-image-cover-margin-top),
-      margin-right: calc(-1 * theme.$tile-image-cover-margin-right),
-      margin-left: calc(-1 * theme.$tile-image-cover-margin-left),
-      border-radius: theme.$tile-border-radius,
+      border-radius: theme.$tile-border-radius theme.$tile-border-radius 0 0,
+      margin-bottom: theme.$tile-image-cover-margin-bottom,
     )
   );
+
+  @if validators.args-not-null(
+    theme.$tile-padding-right,
+    theme.$tile-padding-left
+  )
+  {
+    @include theming.apply-from-theme(
+      (
+        width: calc(100% + theme.$tile-padding-right + theme.$tile-padding-left),
+      )
+    );
+  }
+
+  @if theme.$tile-padding-top {
+    @include theming.apply-from-theme(
+      (
+        margin-top: calc(-1 * theme.$tile-padding-top),
+      )
+    );
+  }
+
+  @if theme.$tile-padding-right {
+    @include theming.apply-from-theme(
+      (
+        margin-right: calc(-1 * theme.$tile-padding-right),
+      )
+    );
+  }
+
+  @if theme.$tile-padding-left {
+    @include theming.apply-from-theme(
+      (
+        margin-left: calc(-1 * theme.$tile-padding-left),
+      )
+    );
+  }
 }
 
 .tile.image-cover {
