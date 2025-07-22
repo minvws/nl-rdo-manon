@@ -4,6 +4,7 @@ $pagination-link-active-text-color: null !default;
 $pagination-link-active-border-width: null !default;
 $pagination-link-active-border-style: null !default;
 $pagination-link-active-border-color: null !default;
+$pagination-link-active-font-weight: null !default;
 
 // Link
 $pagination-link-background-color: null !default;
@@ -54,6 +55,12 @@ $pagination-next-icon-margin-right: null !default;
 
 // List
 $pagination-list-gap: null !default;
+$pagination-border-top-width: null !default;
+$pagination-border-right-width: null !default;
+$pagination-border-bottom-width: null !default;
+$pagination-border-left-width: null !default;
+$pagination-border-style: null !default;
+$pagination-border-color: null !default;
 
 // Item
 $pagination-item-height: null !default;

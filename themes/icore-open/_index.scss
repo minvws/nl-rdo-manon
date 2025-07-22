@@ -128,6 +128,32 @@ and spacing sets */
   $main-padding-left: 5%,
   $main-gap: #{spacing.$spacing-225},
 
+  // pagination
+  $pagination-list-gap: #{spacing.$spacing-025},
+
+  // pagination item
+  $pagination-item-width: 2.5rem,
+  $pagination-item-height: 2.5rem,
+
+  // pagination link
+  $pagination-link-background-color: #{color-scheme.$oc-white},
+  $pagination-link-border-radius: #{border-radii.$border-radius-s},
+  $pagination-link-text-decoration: none,
+  $pagination-link-border-color: #{color-scheme.$oc-white},
+  $pagination-link-border-width: 1px,
+  $pagination-link-border-style: solid,
+
+  // pagination link hover
+  $pagination-link-hover-background-color: #{semantic.$color-brand-primary-subtle},
+  $pagination-link-hover-border-color: #{semantic.$color-brand-primary-subtle},
+
+  // pagination link active
+  $pagination-link-active-border-width: 1px,
+  $pagination-link-active-border-style: solid,
+  $pagination-link-active-border-color: #{semantic.$color-brand-primary-default},
+  $pagination-link-active-text-color: #{semantic.$color-brand-primary-default},
+  $pagination-link-active-font-weight: bold,
+
   // section
   $section-background-color: #{color-scheme.$oc-white},
   $section-padding-top: #{spacing.$spacing-100},
