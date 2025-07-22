@@ -16,10 +16,10 @@ But the alternative styling as you can see below.
 For more information on the bug see: https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers
 and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 
+form,
 main section form,
 main article form,
-main div form,
-form {
+main div form {
   > fieldset {
     legend {
       @include theming.apply-from-theme(
@@ -28,6 +28,21 @@ form {
           margin-bottom: theme.$form-fieldset-legend-margin-bottom,
         )
       );
+    }
+
+    /* stylelint-disable no-descending-specificity */
+    /* Fieldsets within fieldsets ignore the "*" all selector */
+    > *,
+    > fieldset {
+      @include theming.apply-from-theme(
+        (
+          margin-bottom: theme.$form-fieldset-fields-margin-top,
+        )
+      );
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     div {
@@ -66,20 +81,7 @@ form {
         }
       }
     }
-
-    /* Fieldsets within fieldsets ignore the "*" all selector */
-    > *,
-    > fieldset {
-      @include theming.apply-from-theme(
-        (
-          margin-bottom: theme.$form-fieldset-fields-margin-top,
-        )
-      );
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
+    /* stylelint-enable no-descending-specificity */
 
     .nota-bene {
       padding-bottom: 0;

@@ -4,17 +4,18 @@
 $breakpoint-1: 24rem !default;
 $breakpoint-2: 42rem !default;
 
-main > section > div,
-main.sidemenu div > section > div,
 section,
 article,
 div,
 p,
-span {
+span,
+main > section > div,
+main.sidemenu div > section > div {
   &.card {
     display: flex;
     margin: 0 auto;
     box-sizing: border-box;
+
     @include theming.apply-from-theme(
       (
         gap: theme.$card-gap,

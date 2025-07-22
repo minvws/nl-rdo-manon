@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+
   @include theming.apply-from-theme(
     (
       gap: theme.$checkbox-gap,

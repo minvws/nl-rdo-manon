@@ -76,12 +76,6 @@ ul.accordion {
   }
 }
 
-section.accordion {
-  > div {
-    gap: 0;
-  }
-}
-
 .accordion {
   @extend %accordion;
 
@@ -96,6 +90,12 @@ section.accordion {
     > div {
       @extend %accordion-content;
     }
+  }
+}
+
+section.accordion {
+  > div {
+    gap: 0;
   }
 }
 
@@ -119,6 +119,7 @@ section.accordion {
 
       &::after {
         margin-left: auto;
+
         @include theming.apply-from-theme(
           (
             content: theme.$accordion-button-icon-after-open-content,

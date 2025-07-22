@@ -1,8 +1,8 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
 
-.page-header .breadcrumb-bar,
-.breadcrumb-bar {
+.breadcrumb-bar,
+.page-header .breadcrumb-bar {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -54,6 +54,7 @@
     );
   }
 
+  /* stylelint-disable no-descending-specificity */
   ul,
   ol {
     display: flex;
@@ -112,6 +113,18 @@
         }
       }
 
+      &:last-child {
+        @include theming.apply-from-theme(
+          (
+            font-weight: theme.$breadcrumb-bar-list-item-last-child-font-weight,
+          )
+        );
+
+        &::after {
+          content: none;
+        }
+      }
+
       &:hover {
         @include theming.apply-from-theme(
           (
@@ -125,18 +138,6 @@
               color: theme.$breadcrumb-bar-text-color,
             )
           );
-        }
-      }
-
-      &:last-child {
-        @include theming.apply-from-theme(
-          (
-            font-weight: theme.$breadcrumb-bar-list-item-last-child-font-weight,
-          )
-        );
-
-        &::after {
-          content: none;
         }
       }
 
@@ -167,7 +168,7 @@
         }
       }
 
-      //Icon
+      // Icon
       &::before {
         position: static;
         display: inline-flex;
@@ -228,4 +229,5 @@
       }
     }
   }
+  /* stylelint-enable no-descending-specificity */
 }
