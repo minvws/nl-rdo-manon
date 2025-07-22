@@ -3,7 +3,6 @@
   "rules": {
     "alpha-value-notation": null,
     "color-hex-length": null,
-    "comment-empty-line-before": null,
     "comment-whitespace-inside": null,
     "custom-property-empty-line-before": null,
     "declaration-block-no-redundant-longhand-properties": null,
@@ -21,7 +20,6 @@
         "severity": "warning"
       }
     ],
-    "no-duplicate-selectors": null,
     "number-max-precision": 5,
     "property-no-vendor-prefix": null,
     "scss/operator-no-newline-after": null,

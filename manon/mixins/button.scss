@@ -1,6 +1,3 @@
-/*---------------------------------------------------------------------*/
-/*---------------------------- button.scss ----------------------------*/
-/*---------------------------------------------------------------------*/
 @use "icon";
 
 $states: ("hover", "active", "focus");
@@ -100,8 +97,8 @@ $states: ("hover", "active", "focus");
     pointer-events: none;
   }
 
-  /* Buttons can not be flex containers as it gives issues with line breaks */
-  /* It does work on wider screens. So using flex box where possible. */
+  /* Buttons can not be flex containers as it gives issues with line breaks
+  It does work on wider screens. So using flex box where possible. */
   $breakpoint: 24rem !default;
 
   @media (width >= $breakpoint) {

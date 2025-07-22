@@ -31,7 +31,8 @@ main div form {
     }
 
     /* stylelint-disable no-descending-specificity */
-    /* Fieldsets within fieldsets ignore the "*" all selector */
+
+    /*Fieldsets within fieldsets ignore the "*" all selector */
     > *,
     > fieldset {
       @include theming.apply-from-theme(
@@ -47,6 +48,7 @@ main div form {
 
     div {
       display: block;
+
       /* used to re-renders the div so long labels won't run out of the div */
       float: left;
       width: 100%;
@@ -81,6 +83,7 @@ main div form {
         }
       }
     }
+
     /* stylelint-enable no-descending-specificity */
 
     .nota-bene {

@@ -97,20 +97,13 @@
         )
       );
 
-      &::before {
-        display: none;
-        /* Preventing default nav before to show up */
-      }
-
       &::after {
-        & {
-          @include theming.apply-from-theme(
-            (
-              margin-left: theme.$breadcrumb-bar-icon-margin-left,
-              margin-right: theme.$breadcrumb-bar-icon-margin-right,
-            )
-          );
-        }
+        @include theming.apply-from-theme(
+          (
+            margin-left: theme.$breadcrumb-bar-icon-margin-left,
+            margin-right: theme.$breadcrumb-bar-icon-margin-right,
+          )
+        );
       }
 
       &:last-child {
