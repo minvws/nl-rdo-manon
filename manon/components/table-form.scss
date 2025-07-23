@@ -1,16 +1,10 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
-@use "../functions/validators";
 
 table {
   form {
     background-color: transparent;
     padding: 0;
-
-    @include theming.apply-from-theme(
-      (
-        justify-content: theme.$table-form-justify-content,
-      )
-    );
+    justify-content: flex-start;
   }
 }

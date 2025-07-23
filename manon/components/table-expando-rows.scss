@@ -1,6 +1,5 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
-@use "../functions/validators";
 
 $breakpoint: 24rem !default;
 
