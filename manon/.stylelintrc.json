@@ -1,29 +1,20 @@
 {
   "extends": "stylelint-config-standard-scss",
   "rules": {
-    "alpha-value-notation": null,
     "color-hex-length": null,
     "comment-whitespace-inside": null,
     "custom-property-empty-line-before": null,
-    "declaration-block-no-redundant-longhand-properties": null,
     "declaration-empty-line-before": null,
-    "length-zero-no-unit": [
-      true,
-      {
-        "ignore": ["custom-properties"],
-        "ignoreFunctions": ["polygon"]
-      }
-    ],
+    "scss/operator-no-newline-after": null,
+    "value-no-vendor-prefix": null,
+    "property-no-vendor-prefix": null,
+    "number-max-precision": 5,
+    "declaration-block-no-redundant-longhand-properties": null,
     "no-descending-specificity": [
       true,
       {
         "severity": "warning"
       }
-    ],
-    "number-max-precision": 5,
-    "property-no-vendor-prefix": null,
-    "scss/operator-no-newline-after": null,
-    "value-keyword-case": null,
-    "value-no-vendor-prefix": null
+    ]
   }
 }
