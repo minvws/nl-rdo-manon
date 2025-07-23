@@ -1,9 +1,0 @@
-/* Footer navigation Link */
-
-@use "../color-scheme";
-
-:root {
-  --footer-navigation-link-text-color: var(--link-text-color);
-  --footer-navigation-link-font-weight: var(--link-font-weight);
-  --footer-navigation-link-text-decoration: var(--link-text-decoration);
-}
