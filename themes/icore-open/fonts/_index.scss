@@ -4,7 +4,7 @@
   font-family: "IBM Plex Sans";
   font-weight: normal;
   font-style: normal;
-  font-display: var(--text-body-font-display, swap);
+  font-display: #{config.$font-display};
   src: url("#{config.$font-path}/IBMPlexSans/IBMPlexSans-Regular.ttf");
 }
 
@@ -12,7 +12,7 @@
   font-family: "IBM Plex Sans";
   font-weight: normal;
   font-style: italic;
-  font-display: var(--text-body-font-display, swap);
+  font-display: #{config.$font-display};
   src: url("#{config.$font-path}/IBMPlexSans/IBMPlexSans-Italic.ttf");
 }
 
@@ -20,7 +20,7 @@
   font-family: "IBM Plex Sans";
   font-weight: 600;
   font-style: normal;
-  font-display: var(--text-body-font-display, swap);
+  font-display: #{config.$font-display};
   src: url("#{config.$font-path}/IBMPlexSans/IBMPlexSans-SemiBold.ttf");
 }
 
@@ -28,7 +28,7 @@
   font-family: "IBM Plex Sans";
   font-weight: 600;
   font-style: italic;
-  font-display: var(--text-body-font-display, swap);
+  font-display: #{config.$font-display};
   src: url("#{config.$font-path}/IBMPlexSans/IBMPlexSans-SemiBoldItalic.ttf");
 }
 
@@ -36,7 +36,7 @@
   font-family: "IBM Plex Sans";
   font-weight: bold;
   font-style: normal;
-  font-display: var(--text-body-font-display, swap);
+  font-display: #{config.$font-display};
   src: url("#{config.$font-path}/IBMPlexSans/IBMPlexSans-Bold.ttf");
 }
 
@@ -44,7 +44,7 @@
   font-family: "IBM Plex Sans";
   font-weight: bold;
   font-style: italic;
-  font-display: var(--text-body-font-display, swap);
+  font-display: #{config.$font-display};
   src: url("#{config.$font-path}/IBMPlexSans/IBMPlexSans-BoldItalic.ttf");
 }
 
@@ -52,7 +52,7 @@
   font-family: "tabler-icons";
   font-weight: normal;
   font-style: normal;
-  font-display: var(--text-icon-font-display, block);
+  font-display: block;
   src:
     url("#{config.$font-path}/tabler-icons/tabler-icons.woff2?v3.4.0")
       format("woff2"),
