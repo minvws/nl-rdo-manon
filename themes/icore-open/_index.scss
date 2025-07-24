@@ -27,6 +27,9 @@ and spacing sets */
 @use "@minvws/manon/variables" with (
   //base
   $base-background-color: #{semantic.$base-background-color},
+  $base-font-family: "IBM Plex Sans",
+  $base-font-size: 1rem,
+  $base-font-weight: 300,
 
   // button
   $button-text-color: #{color-scheme.$oc-white},

@@ -92,68 +92,6 @@
 `}
         />
       </section>
-
-      <section id="variables">
-        <h2>Instelbare variabelen</h2>
-        <div class="horizontal-scroll">
-          <table class="nowrap">
-            <caption>Beschikbare instelbare variabelen:</caption>
-            <thead>
-              <tr>
-                <th scope="col">Variabele</th>
-                <th scope="col">CSS-attribuut</th>
-                <th scope="col">Manon ingestelde waarde</th>
-                <th scope="col">Breekpunt</th>
-                <th scope="col">Class</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>--form-fieldset-fields-margin-top</td>
-                <td><a href="{base}/documentation/variables#margin-top">margin-top</a></td>
-                <td>var(--application-base-gap, 1rem)</td>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-
-              <tr>
-                <td>--form-fieldset-legend-font-weight</td>
-                <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
-                <td>var(--headings-font-weight, bold)</td>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-
-              <tr>
-                <td>--form-fieldset-legend-margin-bottom</td>
-                <td><a href="{base}/documentation/variables#margin-bottom">margin-bottom</a></td>
-                <td>var(--application-base-gap, 1rem)</td>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3>CSS</h3>
-        <p>
-          Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw
-          project. Kies en gebruik de benodigde variabelen.
-        </p>
-        <Code
-          language="css"
-          code={`
-:root {
-  /* Fields within the fieldset */
-  --form-fieldset-fields-margin-top: ;
-
-  /* Legend */
-  --form-fieldset-legend-font-weight: ;
-  --form-fieldset-legend-margin-bottom: ;
-}
-`}
-        />
-      </section>
     </div>
   </article>
 </main>

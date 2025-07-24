@@ -25,7 +25,7 @@
         <h2>Variabele gebruiken binnen een andere variabele</h2>
         <p>
           De knoppen binnen het "button-base"-bestand maken bijvoorbeeld gebruik van de accentkleur
-          als deze binnen het "application-base"-bestand gedefinieerd staat.
+          als deze binnen het "base"-bestand gedefinieerd staat.
         </p>
         <p>
           Het onderstaande voorbeeld geeft weer hoe een variabele als waarde van een andere
@@ -36,7 +36,7 @@
           language="css"
           code={`
 :root {
-  --button-base-background-color: var(--application-base-accent-color);
+  $button-background-color: var($base-background-color);
 }
 `}
         />
@@ -54,7 +54,7 @@
           language="css"
           code={`
 :root {
-  --button-base-background-color: var(--application-base-accent-color, #000);
+  $button-background-color: var($base-background-color, #000);
 }
 `}
         />
@@ -64,7 +64,7 @@
           language="css"
           code={`
 :root {
-  --button-base-background-color: var(--application-base-accent-color, black);
+  $button-background-color: var($base-background-color, black);
 }
 `}
         />
@@ -74,7 +74,7 @@
           language="css"
           code={`
 :root {
-  --button-base-background-color: var(--application-base-accent-color, var(--application-base-color));
+  $button-background-color: var($base-background-color, var($base-color));
 }
 `}
         />

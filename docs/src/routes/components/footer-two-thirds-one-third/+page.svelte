@@ -163,7 +163,7 @@
                   ><a href="{base}/documentation/variables#background-color">background-color</a
                   ></td
                 >
-                <td>var(--application-base-tint-1-background-color)</td>
+                <td>var($base-tint-1-background-color)</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -171,7 +171,7 @@
               <tr>
                 <td>--footer-two-thirds-one-third-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
-                <td>var(--application-base-tint-1-text-color)</td>
+                <td>var($base-tint-1-text-color)</td>
                 <td>-</td>
                 <td>-</td>
               </tr>

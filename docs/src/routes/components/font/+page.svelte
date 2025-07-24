@@ -143,7 +143,7 @@
         <Code
           language="css"
           code={`
---application-base-font-family: "Naam van het font";
+$base-font-family: "Naam van het font";
 `}
         />
         <h4>HTML-Voorbeeld:</h4>
@@ -227,12 +227,12 @@
         <h4>CSS-voorbeeld:</h4>
         <h5>Lettertype doorvoeren op applicatieniveau.</h5>
         <p>
-          Voor meer informatie zie: <a href="application-base">Stijlkeuzes op applicatie-niveau</a>.
+          Voor meer informatie zie: <a href="base">Stijlkeuzes op applicatie-niveau</a>.
         </p>
         <Code
           language="css"
           code={`
-@use "@minvws/manon/application-base";
+@use "@minvws/manon/base";
 `}
         />
 
