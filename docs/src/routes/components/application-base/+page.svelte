@@ -75,7 +75,7 @@
           language="css"
           code={`
 :root {
---button-base-background-color: var(--base-accent-color);
+$button-background-color: var(--base-accent-color);
 }
 `}
         />

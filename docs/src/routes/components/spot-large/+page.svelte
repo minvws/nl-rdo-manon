@@ -111,7 +111,7 @@
           language="css"
           code={`
 :root {
-  --button-base-background-color: var(--branding-color-accent-background-color);
+  $button-background-color: var(--branding-color-accent-background-color);
 }
 `}
         />

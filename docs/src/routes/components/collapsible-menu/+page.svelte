@@ -361,7 +361,7 @@
               <tr>
                 <td>--navigation-collapsible-menu-button-min-height</td>
                 <td><a href="{base}/documentation/variables#min-height">min-height</a></td>
-                <td>var(--button-base-min-height)</td>
+                <td>var($button-min-height)</td>
                 <td>-</td>
               </tr>
 
