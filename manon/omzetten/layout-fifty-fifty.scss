@@ -7,9 +7,9 @@ $breakpoint: 42rem !default;
 
 section,
 article,
-header nav,
 footer,
-div {
+div,
+header nav {
   &.fifty-fifty {
     display: flex;
     flex-wrap: wrap;

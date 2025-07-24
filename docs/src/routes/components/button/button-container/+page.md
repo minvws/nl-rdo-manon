@@ -51,7 +51,7 @@ Zie voor meer informatie over importeren en instellen van componenten: [Componen
 
 <h2 id="variables">Instelbare variabelen</h2>
 
-**Let op:** De uitlijning van horizontaal uitgelijnde tags werken alleen in combinatie met de class `horizontal-view`.
+**Let op:** De uitlijning van horizontaal uitgelijnde tags werken alleen in combinatie met de class `horizontal`.
 
 | Variabele                          | CSS-attribuut                                             | Manon ingestelde waarde            | Breekpunt | Class            |
 | ---------------------------------- | --------------------------------------------------------- | ---------------------------------- | --------- | ---------------- |

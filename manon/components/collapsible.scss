@@ -79,8 +79,8 @@
         );
 
         &::before {
-          display: none;
           /* Preventing default nav before to show up */
+          display: none;
         }
 
         &:last-child {
@@ -133,19 +133,16 @@
 
           &::before {
             @include icon.icon;
-
-            & {
-              @include theming.apply-from-theme(
-                (
-                  content: theme.$collapsing-element-list-icon,
-                  font-family: theme.$collapsing-element-list-icon-font-family,
-                  margin-left: theme.$collapsing-element-list-icon-margin-left,
-                  font-size: theme.$collapsing-element-list-icon-font-size,
-                  color: theme.$collapsing-element-list-icon-text-color,
-                  margin-right: theme.$collapsing-element-list-icon-margin-right,
-                )
-              );
-            }
+            @include theming.apply-from-theme(
+              (
+                content: theme.$collapsing-element-list-icon,
+                font-family: theme.$collapsing-element-list-icon-font-family,
+                margin-left: theme.$collapsing-element-list-icon-margin-left,
+                font-size: theme.$collapsing-element-list-icon-font-size,
+                color: theme.$collapsing-element-list-icon-text-color,
+                margin-right: theme.$collapsing-element-list-icon-margin-right,
+              )
+            );
           }
 
           &[aria-selected="true"],
@@ -163,24 +160,20 @@
 
             &::before {
               @include icon.icon;
-
-              & {
-                @include theming.apply-from-theme(
-                  (
-                    content: theme.$collapsing-element-list-selected-icon,
-                    font-family:
-                      theme.$collapsing-element-list-selected-icon-font-family,
-                    margin-left:
-                      theme.$collapsing-element-list-selected-icon-margin-left,
-                    font-size:
-                      theme.$collapsing-element-list-selected-icon-font-size,
-                    color:
-                      theme.$collapsing-element-list-selected-icon-text-color,
-                    margin-right:
-                      theme.$collapsing-element-list-selected-icon-margin-right,
-                  )
-                );
-              }
+              @include theming.apply-from-theme(
+                (
+                  content: theme.$collapsing-element-list-selected-icon,
+                  font-family:
+                    theme.$collapsing-element-list-selected-icon-font-family,
+                  margin-left:
+                    theme.$collapsing-element-list-selected-icon-margin-left,
+                  font-size:
+                    theme.$collapsing-element-list-selected-icon-font-size,
+                  color: theme.$collapsing-element-list-selected-icon-text-color,
+                  margin-right:
+                    theme.$collapsing-element-list-selected-icon-margin-right,
+                )
+              );
             }
 
             &:hover {

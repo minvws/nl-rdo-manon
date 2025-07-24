@@ -3,6 +3,7 @@
 
 .nota-bene {
   margin: 0;
+
   @include theming.apply-from-theme(
     (
       line-height: theme.$nota-bene-line-height,

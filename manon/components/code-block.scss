@@ -25,6 +25,7 @@ div.code-block {
 
   > code {
     white-space: unset;
+
     @include theming.apply-from-theme(
       (
         background-color: theme.$code-block-code-background-color,

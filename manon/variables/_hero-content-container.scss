@@ -1,3 +1,4 @@
+// hero
 $hero-content-container-flex-direction: null !default;
 $hero-content-container-justify-content: null !default;
 $hero-content-container-align-items: null !default;
@@ -7,6 +8,13 @@ $hero-content-container-padding-bottom: null !default;
 $hero-content-container-padding-left: null !default;
 $hero-content-container-text-color: null !default;
 
+// title
+$tile-title-font-size-text: null !default;
+$tile-title-text-color: inherit !default;
+$tile-subtitle-font-size-text: null !default;
+$tile-subtitle-text-color: inherit !default;
+
+// tile
 $hero-tile-flex-direction: column !default;
 $hero-tile-gap: null !default;
 $hero-tile-border-width: null !default;
@@ -20,11 +28,7 @@ $hero-tile-padding-right: null !default;
 $hero-tile-padding-bottom: null !default;
 $hero-tile-padding-left: null !default;
 
-$tile-title-font-size-text: null !default;
-$tile-title-text-color: inherit !default;
-$tile-subtitle-font-size-text: null !default;
-$tile-subtitle-text-color: inherit !default;
-
+// tile list
 $hero-tile-list-gap: null !default;
 $hero-tile-list-padding: null !default;
 $hero-tile-list-background-color: null !default;
@@ -42,6 +46,7 @@ $hero-tile-list-item-font-size: null !default;
 $hero-tile-list-item-font-weight: null !default;
 $hero-tile-list-item-text-color: null !default;
 
+// list
 $hero-list-gap: null !default;
 $hero-list-padding: null !default;
 $hero-list-background-color: null !default;

@@ -46,7 +46,7 @@
             Indien het formulier horizontaal uitgelijnd is: groeppeer de
             <code>&lt;input&gt;</code> en de <code>&lt;span&gt;</code> samen in een
             <code>&lt;div&gt;</code>. Voor meer informatie zie
-            <a href="{base}/components/form-horizontal-view">Horizontaal uitgelijnd formulier</a>.
+            <a href="{base}/components/form-horizontal">Horizontaal uitgelijnd formulier</a>.
           </li>
         </ol>
       </section>

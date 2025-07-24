@@ -87,7 +87,7 @@
         <h3>Selectielijst gegroepeerd binnen <code>div</code> horizontaal uitgelijnd</h3>
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
-          <div class="horizontal-view">
+          <div class="horizontal">
             <label for="select-div-horizontal">Selectielijst</label>
             <select id="select-div-horizontal" name="select-div-horizontal">
               <option value="1">Optie 1</option>
@@ -104,7 +104,7 @@
           language="html"
           code={`
 <form action="" method="post">
-  <div class="horizontal-view">
+  <div class="horizontal">
     <label for="select-div-horizontal">Selectielijst</label>
     <select id="select-div-horizontal" name="select-div-horizontal">
       <option value="1">Optie 1</option>
@@ -155,7 +155,7 @@
         <h3>Selectielijst gegroepeerd binnen <code>section</code> horizontaal uitgelijnd</h3>
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
-          <section class="horizontal-view">
+          <section class="horizontal">
             <label for="select-section-horizontal">Selectielijst</label>
             <select id="select-section-horizontal" name="select-section-horizontal">
               <option value="1">Optie 1</option>
@@ -172,7 +172,7 @@
           language="html"
           code={`
 <form action="" method="post">
-  <section class="horizontal-view">
+  <section class="horizontal">
     <label for="select-section-horizontal">Selectielijst</label>
     <select id="select-section-horizontal" name="select-section-horizontal">
       <option value="1">Optie 1</option>
@@ -227,7 +227,7 @@
         <form action="" method="post">
           <fieldset>
             <legend>Selectielijst binnen een fieldset voorbeeld</legend>
-            <div class="horizontal-view">
+            <div class="horizontal">
               <label for="select-fieldset-horizontal">Selectielijst</label>
               <select id="select-fieldset-horizontal" name="select-fieldset-horizontal">
                 <option value="1">Optie 1</option>
@@ -247,7 +247,7 @@
 <form action="" method="post">
   <fieldset>
     <legend>Selectielijst binnen een fieldset voorbeeld</legend>
-    <div class="horizontal-view">
+    <div class="horizontal">
       <label for="select-fieldset-horizontal">Selectielijst</label>
       <select id="select-fieldset-horizontal" name="select-fieldset-horizontal">
         <option value="1">Optie 1</option>

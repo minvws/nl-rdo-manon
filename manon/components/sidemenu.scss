@@ -73,6 +73,7 @@ main.sidemenu {
         position: sticky;
         top: 0;
         overflow: auto;
+
         /* Solves a bug in older safari versions where position sticky blocks overflow auto */
         display: block;
 
@@ -133,19 +134,17 @@ main.sidemenu {
         &::before {
           //   @include icon.icon;
 
-          & {
-            @include theming.apply-from-theme(
-              (
-                content: theme.$sidemenu-expanded-button-icon,
-                font-family: theme.$sidemenu-button-icon-font-family,
-                font-size: theme.$sidemenu-button-icon-font-size,
+          @include theming.apply-from-theme(
+            (
+              content: theme.$sidemenu-expanded-button-icon,
+              font-family: theme.$sidemenu-button-icon-font-family,
+              font-size: theme.$sidemenu-button-icon-font-size,
 
-                /* Styling options for text input instead of icons */
-                font-weight: theme.$sidemenu-button-icon-font-weight,
-                white-space: theme.$sidemenu-button-icon-white-space,
-              )
-            );
-          }
+              /* Styling options for text input instead of icons */
+              font-weight: theme.$sidemenu-button-icon-font-weight,
+              white-space: theme.$sidemenu-button-icon-white-space,
+            )
+          );
         }
 
         &[aria-expanded="false"] {

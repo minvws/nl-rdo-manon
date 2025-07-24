@@ -1,23 +1,41 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
 
-nav {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+%navigation-link {
+  a {
+    color: inherit;
+
     @include theming.apply-from-theme(
       (
-        font-family: theme.$navigation-title-font-family,
-        font-size: theme.$navigation-title-font-size,
-        font-weight: theme.$navigation-title-font-weight,
-        line-height: theme.$navigation-title-line-height,
-        color: theme.$navigation-title-text-color,
+        background-color: theme.$navigation-link-background-color,
+        text-decoration: theme.$navigation-link-text-decoration,
+        border-width: theme.$navigation-link-border-width,
+        border-style: theme.$navigation-link-border-style,
+        border-color: theme.$navigation-link-border-color,
+        border-radius: theme.$navigation-link-border-radius,
+
+        // Outline
+        outline: theme.$navigation-link-outline,
+        outline-offset: theme.$navigation-link-outline-offset,
+        outline-color: theme.$navigation-link-outline-color,
+        z-index: theme.$navigation-link-z-index,
+        box-shadow: theme.$navigation-link-box-shadow,
       )
     );
   }
+}
+
+nav {
+  @include theming.apply-from-theme(
+    (
+      font-family: theme.$navigation-font-family,
+      font-size: theme.$navigation-font-size,
+      font-weight: theme.$navigation-font-weight,
+      line-height: theme.$navigation-line-height,
+      color: theme.$navigation-text-color,
+    )
+  );
+  @extend %navigation-link;
 
   ul {
     @include theming.apply-from-theme(
@@ -25,10 +43,6 @@ nav {
         margin: theme.$navigation-list-margin,
         padding: theme.$navigation-list-padding,
         gap: theme.$navigation-list-gap,
-        line-height: theme.$navigation-list-line-height,
-        font-size: theme.$navigation-list-font-size,
-        font-weight: theme.$navigation-list-font-weight,
-        color: theme.$navigation-list-text-color,
         background-color: theme.$navigation-list-background-color,
       )
     );
@@ -38,7 +52,6 @@ nav {
         (
           padding: theme.$navigation-list-item-padding,
           background-color: theme.$navigation-list-item-background-color,
-          color: theme.$navigation-list-item-text-color,
           border-width: theme.$navigation-list-item-border-width,
           border-style: theme.$navigation-list-item-border-style,
           border-color: theme.$navigation-list-item-border-color,
@@ -47,6 +60,8 @@ nav {
       );
 
       &::before {
+        vertical-align: middle;
+
         @include theming.apply-from-theme(
           (
             content: theme.$navigation-list-item-icon-content,
@@ -60,7 +75,6 @@ nav {
             display: theme.$navigation-list-item-icon-display,
           )
         );
-        vertical-align: middle;
       }
     }
   }

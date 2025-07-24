@@ -18,17 +18,19 @@ nav.tabs {
         align-items: center;
         color: inherit;
         height: 100%;
+        box-sizing: border-box;
+
         @include theming.apply-from-theme(
           (
             padding: theme.$navigation-tabs-list-item-padding,
           )
         );
-        box-sizing: border-box;
 
         &:hover {
           @include theming.apply-from-theme(
             (
-              background-color: theme.$navigation-tabs-list-item-hover-background-color,
+              background-color:
+                theme.$navigation-tabs-list-item-hover-background-color,
               color: theme.$navigation-tabs-list-item-hover-text-color,
               text-decoration: theme.$navigation-tabs-link-text-decoration,
             )

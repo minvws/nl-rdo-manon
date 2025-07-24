@@ -34,7 +34,7 @@
             <a href="#requirements">Bijbehorende bestanden</a>.
           </li>
           <li>
-            Voeg de class <code>horizontal-view</code> toe op het horizontaal uit te lijnen element.
+            Voeg de class <code>horizontal</code> toe op het horizontaal uit te lijnen element.
           </li>
         </ol>
 
@@ -42,9 +42,9 @@
         <ol>
           <li>
             Voor het horizontaal uitlijnen van meerdere objecten binnen een element voeg de class <code
-              >horizontal-view-group</code
+              >horizontal-group</code
             >. Voor meer informatie zie:
-            <a href="#horizontal-view-group">Object met horizontaal uitgelijnde componenten</a>
+            <a href="#horizontal-group">Object met horizontaal uitgelijnde componenten</a>
           </li>
         </ol>
       </section>
@@ -55,7 +55,7 @@
         <h3>Horizontaal uitgelijnd</h3>
         <h4>Visueel voorbeeld:</h4>
 
-        <div class="horizontal-view">
+        <div class="horizontal">
           <button class="ghost">Terug</button>
           <button>Verder</button>
         </div>
@@ -64,7 +64,7 @@
         <Code
           language="html"
           code={`
-<div class="horizontal-view">
+<div class="horizontal">
   <button class="ghost">Terug</button>
   <button>Verder</button>
 </div>
@@ -75,7 +75,7 @@
         <Code
           language="html"
           code={`
-<div class="horizontal-view">
+<div class="horizontal">
   <!-- horizontaal uit te lijnen content -->
 </div>
 `}
@@ -84,7 +84,7 @@
         <h3>Object met horizontaal uitgelijnde elementen</h3>
         <h4>Visueel voorbeeld:</h4>
 
-        <div class="horizontal-view-group" id="horizontal-view-group">
+        <div class="horizontal-group" id="horizontal-group">
           <div>
             <button class="ghost">Terug</button>
             <button>Verder</button>
@@ -100,7 +100,7 @@
         <Code
           language="html"
           code={`
-<div class="horizontal-view-group">
+<div class="horizontal-group">
   <div>
     <button class="ghost">Terug</button>
     <button>Verder</button>
@@ -118,7 +118,7 @@
         <Code
           language="html"
           code={`
-<div class="horizontal-view-group">
+<div class="horizontal-group">
   <div>
       <!-- horizontaal uit te lijnen content -->
   </div>
@@ -145,7 +145,7 @@
         <Code
           language="css"
           code={`
-@use "@minvws/manon/horizontal-view";
+@use "@minvws/manon/horizontal";
 `}
         />
       </section>
@@ -162,7 +162,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="{base}/components/horizontal-view-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/horizontal-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

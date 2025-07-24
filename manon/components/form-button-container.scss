@@ -8,6 +8,7 @@ $breakpoint: 24rem !default;
   /* Removing gap as it is not supported within fieldsets */
   gap: 0;
   width: auto;
+
   @include theming.apply-from-theme(
     (
       float: theme.$form-button-container-fieldset-float,
@@ -24,12 +25,14 @@ $breakpoint: 24rem !default;
       )
     );
   }
+
   button,
   a.button,
   input[type="button"],
   input[type="submit"],
   input[type="reset"] {
     float: left;
+
     @include theming.apply-from-theme(
       (
         width: theme.$button-container-button-width,
@@ -79,7 +82,7 @@ form {
     }
   }
 
-  &.horizontal-view {
+  &.horizontal {
     fieldset {
       .button-container {
         @extend %fieldset-button-container-styling;

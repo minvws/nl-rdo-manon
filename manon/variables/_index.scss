@@ -6,10 +6,6 @@
 @forward "background-color-offset";
 @forward "base";
 @forward "breadcrumb-bar";
-@forward "breadcrumb-bar-content-block";
-@forward "breadcrumb-bar-content-wrapper";
-@forward "breadcrumb-bar-link-states";
-@forward "breadcrumb-bar-link";
 @forward "button";
 @forward "button-container";
 @forward "button-destructive";
@@ -42,7 +38,7 @@
 @forward "form-fieldset";
 @forward "form-fieldset-checkbox";
 @forward "form-fieldset-radio";
-@forward "form-fieldset-visually-hidden-horizontal-view";
+@forward "form-fieldset-visually-hidden-horizontal";
 @forward "form-grouped-choice-list";
 @forward "form-help";
 @forward "form-input";
@@ -59,6 +55,7 @@
 @forward "main";
 @forward "max-line-length";
 @forward "message-counter";
+@forward "navigation";
 @forward "notification";
 @forward "notification-confirmation";
 @forward "notification-error";
@@ -68,6 +65,7 @@
 @forward "radio";
 @forward "section";
 @forward "sidemenu";
+@forward "tabs";
 @forward "skip-to-content";
 @forward "table";
 @forward "table-action-buttons";
@@ -81,4 +79,10 @@
 @forward "table-summary";
 @forward "tabs";
 @forward "vertical";
-
+@forward "tile-groups";
+@forward "tile-image-cover";
+@forward "tile";
+@forward "vertical";
+@forward "image-cover";
+@forward "image-round";
+@forward "image-square";

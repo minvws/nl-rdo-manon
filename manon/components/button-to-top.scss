@@ -1,9 +1,9 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
 
-a.button.to-top,
+.to-top,
 button.to-top,
-.to-top {
+a.button.to-top {
   @include theming.apply-from-theme(
     (
       position: theme.$button-to-top-position,
@@ -25,6 +25,19 @@ button.to-top,
     )
   );
 
+  .icon,
+  &.icon {
+    &::before {
+      padding: 0;
+
+      @include theming.apply-from-theme(
+        (
+          color: theme.$button-to-top-icon-color,
+        )
+      );
+    }
+  }
+
   &:hover {
     @include theming.apply-from-theme(
       (
@@ -43,18 +56,6 @@ button.to-top,
         border-color: theme.$button-to-top-border-color,
       )
     );
-  }
-
-  &.icon,
-  .icon {
-    &::before {
-      padding: 0;
-      @include theming.apply-from-theme(
-        (
-          color: theme.$button-to-top-icon-color,
-        )
-      );
-    }
   }
 
   &:hover .icon,
