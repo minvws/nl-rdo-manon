@@ -33,18 +33,6 @@
 <button>Lorem ipsum</button>
 `}
         />
-
-        <h3><code>button</code> disabled</h3>
-        <h4>Visueel voorbeeld:</h4>
-        <button disabled>Lorem ipsum</button>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<button disabled>Lorem ipsum</button>
-`}
-        />
         <h4>States</h4>
         <ul>
           <li><button class="focus">Focus</button></li>

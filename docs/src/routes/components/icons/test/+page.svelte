@@ -98,11 +98,6 @@
           >Aan- of uitschakelen</button
         >
 
-        <h4>Visueel voorbeeld <code>button</code> met <code>span</code></h4>
-        <button disabled>
-          <span class="icon icon-on-off" aria-hidden="true"></span>Aan- of uitschakelen
-        </button>
-
         <h4>States</h4>
         <ul>
           <li>
@@ -128,10 +123,6 @@
         <h3><code>button</code> met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
         <button>Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></button>
-
-        <h3><code>button</code> met een afbeelding: disabled</h3>
-        <h4>Visueel voorbeeld:</h4>
-        <button disabled>Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></button>
 
         <h4>States</h4>
         <ul>

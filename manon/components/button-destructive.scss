@@ -18,10 +18,9 @@ input[type="reset"] {
     &:hover {
       @include theming.apply-from-theme(
         (
-          background-color:
-            theme.$button-destructive-primary-hover-background-color,
-          color: theme.$button-destructive-primary-hover-text-color,
-          border-color: theme.$button-destructive-primary-hover-border-color,
+          background-color: theme.$button-destructive-hover-background-color,
+          color: theme.$button-destructive-hover-text-color,
+          border-color: theme.$button-destructive-hover-border-color,
         )
       );
     }
