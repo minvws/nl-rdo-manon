@@ -37,8 +37,6 @@ input[type="reset"] {
         webkit-appearance: theme.$button-ghost-webkit-appearance,
         cursor: theme.$button-ghost-cursor,
         overflow-wrap: theme.$button-ghost-overflow-wrap,
-        image-max-width: theme.$button-ghost-image-max-width,
-        child-pointer-events: theme.$button-ghost-child-pointer-events,
       )
     );
     margin: 0;
