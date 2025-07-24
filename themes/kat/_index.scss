@@ -36,9 +36,9 @@ and spacing sets */
   $button-border-radius: #{border-radii.$border-radius-l},
 
   // button hover
-  $button-primary-hover-background-color: #{color-scheme.$yellow-300},
-  $button-primary-hover-text-color: #{color-scheme.$grey-900},
-  $button-primary-hover-border-color: #{color-scheme.$yellow-300},
+  $button-hover-background-color: #{color-scheme.$yellow-300},
+  $button-hover-text-color: #{color-scheme.$grey-900},
+  $button-hover-border-color: #{color-scheme.$yellow-300},
 
   // button destructive
   $button-destructive-background-color: #{semantic.$color-destructive-default},
@@ -46,9 +46,9 @@ and spacing sets */
   $button-destructive-border-color: #{semantic.$color-destructive-default},
 
   // button destructive hover
-  $button-destructive-primary-hover-background-color: #{color-scheme.$red-600},
-  $button-destructive-primary-hover-text-color: #{color-scheme.$white},
-  $button-destructive-primary-hover-border-color: #{color-scheme.$red-600},
+  $button-destructive-hover-background-color: #{color-scheme.$red-600},
+  $button-destructive-hover-text-color: #{color-scheme.$white},
+  $button-destructive-hover-border-color: #{color-scheme.$red-600},
 
   // footer
   $footer-background-color: #{color-scheme.$white},

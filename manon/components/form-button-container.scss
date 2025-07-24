@@ -15,13 +15,26 @@ $breakpoint: 24rem !default;
     )
   );
 
-  @if theme.$button-container-gap {
+  @if validators.args-not-null(theme.$button-container-gap) {
     @include theming.apply-from-theme(
       (
-        /* Countering margin bottom that will be set by buttons on the last line */
-        margin-right: theme.$button-container-gap * -1 / 2,
-        margin-bottom: theme.$button-container-gap * -1,
-        margin-left: theme.$button-container-gap * -1 / 2
+        margin-right: calc(theme.$button-container-gap * -1 / 2),
+      )
+    );
+  }
+
+  @if validators.args-not-null(theme.$button-container-gap) {
+    @include theming.apply-from-theme(
+      (
+        margin-bottom: calc(theme.$button-container-gap * -1 / 2),
+      )
+    );
+  }
+
+  @if validators.args-not-null(theme.$button-container-gap) {
+    @include theming.apply-from-theme(
+      (
+        margin-left: calc(theme.$button-container-gap * -1 / 2),
       )
     );
   }
@@ -39,12 +52,26 @@ $breakpoint: 24rem !default;
       )
     );
 
-    @if theme.$button-container-gap {
+    @if validators.args-not-null(theme.$button-container-gap) {
       @include theming.apply-from-theme(
         (
-          margin-right: theme.$button-container-gap / 2,
-          margin-left: theme.$button-container-gap / 2,
-          margin-bottom: theme.$button-container-gap,
+          margin-right: calc(theme.$button-container-gap * -1 / 2),
+        )
+      );
+    }
+
+    @if validators.args-not-null(theme.$button-container-gap) {
+      @include theming.apply-from-theme(
+        (
+          margin-bottom: calc(theme.$button-container-gap * -1 / 2),
+        )
+      );
+    }
+
+    @if validators.args-not-null(theme.$button-container-gap) {
+      @include theming.apply-from-theme(
+        (
+          margin-left: calc(theme.$button-container-gap * -1 / 2),
         )
       );
     }

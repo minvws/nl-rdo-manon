@@ -40,9 +40,9 @@ and spacing sets */
   $button-background-color: #{semantic.$color-brand-primary-default},
 
   // button hover
-  $button-primary-hover-background-color: #{color-scheme.$oc-blue-6},
-  $button-primary-hover-text-color: #{color-scheme.$oc-white},
-  $button-primary-hover-border-color: #{color-scheme.$oc-blue-6},
+  $button-hover-background-color: #{color-scheme.$oc-blue-6},
+  $button-hover-text-color: #{color-scheme.$oc-white},
+  $button-hover-border-color: #{color-scheme.$oc-blue-6},
 
   // button destructive
   $button-destructive-background-color: #{semantic.$color-destructive-default},
@@ -50,11 +50,12 @@ and spacing sets */
   $button-destructive-border-color: #{semantic.$color-destructive-default},
 
   // button destructive hover
-  $button-destructive-primary-hover-background-color:
-    #{semantic.$color-destructive-intense},
-  $button-destructive-primary-hover-text-color: #{color-scheme.$oc-white},
-  $button-destructive-primary-hover-border-color:
-    #{semantic.$color-destructive-intense},
+  $button-destructive-hover-background-color: #{semantic.$color-destructive-intense},
+  $button-destructive-hover-text-color: #{color-scheme.$oc-white},
+  $button-destructive-hover-border-color: #{semantic.$color-destructive-intense},
+
+  // button container
+  $button-container-gap: 1rem,
 
   // breadcrumb bar
   $breadcrumb-bar-padding-top: #{spacing.$spacing-075},
@@ -175,6 +176,8 @@ and spacing sets */
   $section-gap: #{spacing.$spacing-300},
   $section-flex-direction: column,
   $section-border-radius: #{border-radii.$border-radius-m},
+  $section-justify-content: flex-start,
+  $section-align-items: flex-start,
 
   // table
   $table-gap: #{spacing.$spacing-050},
