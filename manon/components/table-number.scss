@@ -2,9 +2,10 @@
 @use "../variables" as theme;
 
 .number {
+  $table-number-text-align: right !default;
+
   @include theming.apply-from-theme(
     (
-      text-align: theme.$table-number-text-align,
       font-variant-numeric: theme.$table-number-font-family,
     )
   );

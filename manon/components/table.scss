@@ -22,25 +22,17 @@ table {
   );
 
   thead {
-    @include theming.apply-from-theme(
-      (
-        background-color: theme.$table-head-background-color,
-        color: theme.$table-head-text-color,
-        border-width: theme.$table-head-border-width,
-        border-style: theme.$table-head-border-style,
-        border-color: theme.$table-head-border-color,
-      )
-    );
-
     th {
       @include theming.apply-from-theme(
         (
-          padding: theme.$table-head-cell-padding,
-          border-width: theme.$table-head-cell-border-width,
-          border-style: theme.$table-head-cell-border-style,
-          border-color: theme.$table-head-cell-border-color,
-          font-weight: theme.$table-head-cell-font-weight,
-          font-size: theme.$table-head-cell-font-size,
+          background-color: theme.$table-head-background-color,
+          color: theme.$table-head-text-color,
+          border-width: theme.$table-head-border-width,
+          border-style: theme.$table-head-border-style,
+          border-color: theme.$table-head-border-color,
+          padding: theme.$table-head-padding,
+          font-weight: theme.$table-head-font-weight,
+          font-size: theme.$table-head-font-size,
           text-align: theme.$table-head-text-align,
         )
       );
