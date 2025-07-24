@@ -1,0 +1,40 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+%table-checkbox {
+  input[type="checkbox"] {
+    padding: 0;
+
+    @include theming.apply-from-theme(
+      (
+        margin: theme.$table-checkbox-margin-right,
+        cursor: theme.$table-checkbox-cursor,
+        width: theme.$table-checkbox-width,
+        height: theme.$table-checkbox-height,
+      )
+    );
+
+    & + label {
+      width: auto;
+      cursor: pointer;
+      margin-top: 0;
+    }
+  }
+
+  th,
+  td {
+    input[type="checkbox"]:only-child {
+      margin: 0 auto;
+    }
+  }
+}
+
+table {
+  /* Table within form */
+  @extend %table-checkbox;
+
+  /* Form within table */
+  form {
+    @extend %table-checkbox;
+  }
+}
