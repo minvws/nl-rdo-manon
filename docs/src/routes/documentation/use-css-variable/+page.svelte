@@ -36,7 +36,7 @@
           language="css"
           code={`
 :root {
-  $button-background-color: var($base-accent-color);
+  $button-background-color: var($base-background-color);
 }
 `}
         />
@@ -54,7 +54,7 @@
           language="css"
           code={`
 :root {
-  $button-background-color: var($base-accent-color, #000);
+  $button-background-color: var($base-background-color, #000);
 }
 `}
         />
@@ -64,7 +64,7 @@
           language="css"
           code={`
 :root {
-  $button-background-color: var($base-accent-color, black);
+  $button-background-color: var($base-background-color, black);
 }
 `}
         />
@@ -74,7 +74,7 @@
           language="css"
           code={`
 :root {
-  $button-background-color: var($base-accent-color, var($base-color));
+  $button-background-color: var($base-background-color, var($base-color));
 }
 `}
         />

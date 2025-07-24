@@ -76,10 +76,7 @@ $states: ("hover", "active", "focus");
       border-color: var(--#{$prefix}focus-border-color);
       border-width: var(--#{$prefix}focus-border-width);
       border-radius: var(--#{$prefix}focus-border-radius);
-      background-color: var(
-        --#{$prefix}focus-background-color,
-        var($base-accent-color-accent)
-      );
+      background-color: var(--#{$prefix}focus-background-color);
       color: var(
         --#{$prefix}focus-text-color,
         var(--application-text-color-accent)
