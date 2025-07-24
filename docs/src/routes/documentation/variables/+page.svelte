@@ -21,11 +21,11 @@
       <dl>
         <div>
           <dt>Voorbeeld CSS-variabele</dt>
-          <dd><code>--application-base-accent-color: hotpink;</code></dd>
+          <dd><code>--base-accent-color: hotpink;</code></dd>
         </div>
         <div>
           <dt>Voorbeeld sass-variabele</dt>
-          <dd><code>$application-base-breakpoint-1: 24rem;</code></dd>
+          <dd><code>$base-breakpoint-1: 24rem;</code></dd>
         </div>
       </dl>
 

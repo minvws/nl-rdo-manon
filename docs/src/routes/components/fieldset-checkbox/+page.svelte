@@ -353,7 +353,7 @@
               <tr>
                 <td>--fieldset-checkbox-required-margin-bottom</td>
                 <td><a href="{base}/documentation/variables#margin-bottom">margin-bottom</a></td>
-                <td>var(--application-base-gap-small)</td>
+                <td>var(--base-gap-small)</td>
                 <td>-</td>
               </tr>
             </tbody>

@@ -111,7 +111,7 @@
               <tr>
                 <td>--p-line-height</td>
                 <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
-                <td>var(--application-base-line-height)</td>
+                <td>var(--base-line-height)</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -119,7 +119,7 @@
               <tr>
                 <td>--p-font-size</td>
                 <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
-                <td>var(--application-base-font-size)</td>
+                <td>var(--base-font-size)</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -127,7 +127,7 @@
               <tr>
                 <td>--p-font-weight</td>
                 <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
-                <td>var(--application-base-font-weight)</td>
+                <td>var(--base-font-weight)</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -135,7 +135,7 @@
               <tr>
                 <td>--p-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
-                <td>var(--application-base-text-color)</td>
+                <td>var(--base-text-color)</td>
                 <td>-</td>
                 <td>-</td>
               </tr>

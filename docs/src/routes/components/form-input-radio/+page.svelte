@@ -223,7 +223,7 @@
               <tr>
                 <td>--radio-required-gap</td>
                 <td><a href="{base}/documentation/variables#gap">gap</a></td>
-                <td>var(--application-base-gap-small)</td>
+                <td>var(--base-gap-small)</td>
                 <td>-</td>
               </tr>
             </tbody>

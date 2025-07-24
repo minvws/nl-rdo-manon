@@ -248,7 +248,7 @@
               <tr>
                 <td>--tag-font-size</td>
                 <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
-                <td>var(--application-base-font-size)</td>
+                <td>var(--base-font-size)</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -264,7 +264,7 @@
               <tr>
                 <td>--tag-line-height</td>
                 <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
-                <td>var(--application-base-line-height)</td>
+                <td>var(--base-line-height)</td>
                 <td>-</td>
                 <td>-</td>
               </tr>

@@ -111,7 +111,7 @@
               <tr>
                 <td>--form-fieldset-fields-margin-top</td>
                 <td><a href="{base}/documentation/variables#margin-top">margin-top</a></td>
-                <td>var(--application-base-gap, 1rem)</td>
+                <td>var(--base-gap, 1rem)</td>
                 <td>-</td>
                 <td>-</td>
               </tr>
@@ -127,7 +127,7 @@
               <tr>
                 <td>--form-fieldset-legend-margin-bottom</td>
                 <td><a href="{base}/documentation/variables#margin-bottom">margin-bottom</a></td>
-                <td>var(--application-base-gap, 1rem)</td>
+                <td>var(--base-gap, 1rem)</td>
                 <td>-</td>
                 <td>-</td>
               </tr>

@@ -66,7 +66,7 @@
         <h3>Variabele gebruiken binnen een andere variabele</h3>
         <p>
           De knoppen binnen het "button-base"-bestand maken gebruik van de accentkleur als deze
-          binnen het "application-base"-bestand gedefinieerd staat. Voor meer informatie zie <a
+          binnen het "base"-bestand gedefinieerd staat. Voor meer informatie zie <a
             href="{base}/documentation/use-css-variable">CSS-variabelen gebruiken</a
           >
         </p>
@@ -75,7 +75,7 @@
           language="css"
           code={`
 :root {
---button-base-background-color: var(--application-base-accent-color);
+--button-base-background-color: var(--base-accent-color);
 }
 `}
         />
@@ -110,7 +110,7 @@
 @use "@minvws/manon/body-text-set";
 
 /* De-emphasized */
-@use "@minvws/manon/application-base";
+@use "@minvws/manon/base";
 `}
         />
       </section>
@@ -132,8 +132,8 @@
             </thead>
             <tbody>
               <tr>
-                <th rowspan="2" scope="rowgroup">application-base</th>
-                <td>--application-base-background-color</td>
+                <th rowspan="2" scope="rowgroup">base</th>
+                <td>--base-background-color</td>
                 <td
                   ><a href="{base}/documentation/variables#background-color">background-color</a
                   ></td
@@ -144,7 +144,7 @@
               </tr>
 
               <tr>
-                <td>--application-base-text-color</td>
+                <td>--base-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>var(--text-set-text-color)</td>
@@ -152,8 +152,8 @@
               </tr>
 
               <tr>
-                <th rowspan="2" scope="rowgroup">application-base-tint-1</th>
-                <td>--application-base-tint-1-background-color</td>
+                <th rowspan="2" scope="rowgroup">base-tint-1</th>
+                <td>--base-tint-1-background-color</td>
                 <td
                   ><a href="{base}/documentation/variables#background-color">background-color</a
                   ></td
@@ -164,7 +164,7 @@
               </tr>
 
               <tr>
-                <td>--application-base-tint-1-text-color</td>
+                <td>--base-tint-1-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
@@ -172,8 +172,8 @@
               </tr>
 
               <tr>
-                <th rowspan="10" scope="rowgroup">application-base-accent-color</th>
-                <td>--application-base-accent-color</td>
+                <th rowspan="10" scope="rowgroup">base-accent-color</th>
+                <td>--base-accent-color</td>
                 <td>kleurcode</td>
                 <td>-</td>
                 <td>#931171</td>
@@ -181,7 +181,7 @@
               </tr>
 
               <tr>
-                <td>--application-base-accent-color-text-color</td>
+                <td>--base-accent-color-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#fff</td>
@@ -189,7 +189,7 @@
               </tr>
 
               <tr>
-                <td>--application-base-accent-color-hover</td>
+                <td>--base-accent-color-hover</td>
                 <td>kleurcode</td>
                 <td>-</td>
                 <td>hotpink</td>
@@ -197,7 +197,7 @@
               </tr>
 
               <tr>
-                <td>--application-base-accent-color-hover-text-color</td>
+                <td>--base-accent-color-hover-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
@@ -205,7 +205,7 @@
               </tr>
 
               <tr>
-                <td>--application-base-accent-color-active</td>
+                <td>--base-accent-color-active</td>
                 <td>kleurcode</td>
                 <td>-</td>
                 <td>hotpink</td>
@@ -213,7 +213,7 @@
               </tr>
 
               <tr>
-                <td>--application-base-accent-color-active-text-color</td>
+                <td>--base-accent-color-active-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
@@ -221,7 +221,7 @@
               </tr>
 
               <tr>
-                <td>--application-base-accent-color-focus</td>
+                <td>--base-accent-color-focus</td>
                 <td>kleurcode</td>
                 <td>-</td>
                 <td>hotpink</td>
@@ -229,7 +229,7 @@
               </tr>
 
               <tr>
-                <td>--application-base-accent-color-focus-text-color</td>
+                <td>--base-accent-color-focus-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
@@ -237,7 +237,7 @@
               </tr>
 
               <tr>
-                <td>--application-base-accent-color-selected</td>
+                <td>--base-accent-color-selected</td>
                 <td>kleurcode</td>
                 <td>-</td>
                 <td>hotpink</td>
@@ -245,7 +245,7 @@
               </tr>
 
               <tr>
-                <td>--application-base-accent-color-selected-text-color</td>
+                <td>--base-accent-color-selected-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
@@ -270,8 +270,8 @@
               </tr>
 
               <tr>
-                <th>application-base-font-family</th>
-                <td>--application-base-font-family</td>
+                <th>base-font-family</th>
+                <td>--base-font-family</td>
                 <td><a href="{base}/documentation/variables#font-family">font-family</a></td>
                 <td>-</td>
                 <td>var(--text-set-font-family)</td>
@@ -279,8 +279,8 @@
               </tr>
 
               <tr>
-                <th>application-base-font-size</th>
-                <td>--application-base-font-size</td>
+                <th>base-font-size</th>
+                <td>--base-font-size</td>
                 <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>-</td>
                 <td>var(--text-set-font-size)</td>
@@ -288,8 +288,8 @@
               </tr>
 
               <tr>
-                <th>application-base-line-height</th>
-                <td>--application-base-line-height</td>
+                <th>base-line-height</th>
+                <td>--base-line-height</td>
                 <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>-</td>
                 <td>var(--text-set-line-height)</td>
@@ -297,8 +297,8 @@
               </tr>
 
               <tr>
-                <th>application-base-font-weight</th>
-                <td>--application-base-font-weight</td>
+                <th>base-font-weight</th>
+                <td>--base-font-weight</td>
                 <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>-</td>
                 <td>var(--text-set-font-weight)</td>
@@ -306,8 +306,8 @@
               </tr>
 
               <tr>
-                <th>application-base-text-align</th>
-                <td>--application-base-text-align</td>
+                <th>base-text-align</th>
+                <td>--base-text-align</td>
                 <td><a href="{base}/documentation/variables#text-align">text-align</a></td>
                 <td>-</td>
                 <td>var(--text-set-text-align)</td>
@@ -315,8 +315,8 @@
               </tr>
 
               <tr>
-                <th>application-base-padding</th>
-                <td>--application-base-padding</td>
+                <th>base-padding</th>
+                <td>--base-padding</td>
                 <td><a href="{base}/documentation/variables#padding">padding</a></td>
                 <td>-</td>
                 <td>1.5rem</td>
@@ -324,8 +324,8 @@
               </tr>
 
               <tr>
-                <th>application-base-border-radius</th>
-                <td>--application-base-border-radius</td>
+                <th>base-border-radius</th>
+                <td>--base-border-radius</td>
                 <td><a href="{base}/documentation/variables#border-radius">border-radius</a></td>
                 <td>-</td>
                 <td>0</td>
@@ -345,41 +345,41 @@
           code={`
 :root {
 /* Application background color */
---application-base-background-color: ;
---application-base-text-color: ;
+--base-background-color: ;
+--base-text-color: ;
 
---application-base-tint-1-background-color: ;
---application-base-tint-1-text-color: ;
+--base-tint-1-background-color: ;
+--base-tint-1-text-color: ;
 
---application-base-font-family: ;
---application-base-font-size: ;
---application-base-font-weight: ;
---application-base-line-height: ;
---application-base-text-align: ;
+--base-font-family: ;
+--base-font-size: ;
+--base-font-weight: ;
+--base-line-height: ;
+--base-text-align: ;
 
---application-base-padding: ;
---application-base-border-radius: ;
---application-base-gap: ;
+--base-padding: ;
+--base-border-radius: ;
+--base-gap: ;
 
 /* Accent color */
---application-base-accent-color: ;
---application-base-accent-color-text-color: ;
+--base-accent-color: ;
+--base-accent-color-text-color: ;
 
 /* Accent color hover */
---application-base-accent-color-hover: ;
---application-base-accent-color-hover-text-color: ;
+--base-accent-color-hover: ;
+--base-accent-color-hover-text-color: ;
 
 /* Accent color active */
---application-base-accent-color-active: ;
---application-base-accent-color-active-text-color: ;
+--base-accent-color-active: ;
+--base-accent-color-active-text-color: ;
 
 /* Accent color focus */
---application-base-accent-color-focus: ;
---application-base-accent-color-focus-text-color: ;
+--base-accent-color-focus: ;
+--base-accent-color-focus-text-color: ;
 
 /* Accent color selected */
---application-base-accent-color-selected: ;
---application-base-accent-color-selected-text-color: ;
+--base-accent-color-selected: ;
+--base-accent-color-selected-text-color: ;
 
 /* Call to action color */
 --cta-background-color: ;

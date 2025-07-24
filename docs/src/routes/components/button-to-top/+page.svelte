@@ -125,14 +125,14 @@
                   ><a href="{base}/documentation/variables#background-color">background-color</a
                   ></td
                 >
-                <td>var(--application-base-accent-color)</td>
+                <td>var(--base-accent-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-text-color</td>
                 <td><a href="{base}/documentation/variables#color">color</a></td>
-                <td>var(--application-base-accent-color-text-color)</td>
+                <td>var(--base-accent-color-text-color)</td>
                 <td>-</td>
               </tr>
 
@@ -226,14 +226,14 @@
                   ><a href="{base}/documentation/variables#background-color">background-color</a
                   ></td
                 >
-                <td>var(--application-base-accent-color-hover)</td>
+                <td>var(--base-accent-color-hover)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--button-to-top-hover-text-color</td>
                 <td><a href="{base}/documentation/variables#color">text-color</a></td>
-                <td>var(--application-base-accent-color-hover-text-color)</td>
+                <td>var(--base-accent-color-hover-text-color)</td>
                 <td>-</td>
               </tr>
 
