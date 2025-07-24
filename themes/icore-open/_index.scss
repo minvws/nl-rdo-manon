@@ -144,6 +144,24 @@ and spacing sets */
   $section-flex-direction: column,
   $section-border-radius: #{border-radii.$border-radius-m},
 
+  // table
+  $table-gap: #{spacing.$spacing-050},
+  $table-head-background-color: #{color-scheme.$oc-gray-1},
+  $table-head-cell-border-width: 1px,
+  $table-head-cell-border-style: solid,
+  $table-head-cell-border-color: #{color-scheme.$oc-gray-1},
+  $table-head-cell-padding: #{spacing.$spacing-075} #{spacing.$spacing-100},
+  $table-head-text-align: left,
+  $table-cell-padding: #{spacing.$spacing-075} #{spacing.$spacing-100},
+  $table-cell-gap: #{spacing.$spacing-025},
+  $table-row-border-width: 1px 0,
+  $table-row-border-style: solid,
+  $table-row-border-color: #{color-scheme.$oc-gray-1},
+
+  // table caption
+  $table-caption-text-align: left,
+  $table-caption-padding: #{spacing.$spacing-100} 0,
+
   // tile
   $tile-background-color: #{color-scheme.$oc-white},
   $tile-padding-top: #{spacing.$spacing-100},

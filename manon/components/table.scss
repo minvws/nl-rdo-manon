@@ -89,6 +89,15 @@ table {
   }
 
   tr {
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$table-row-background-color,
+        border-width: theme.$table-row-border-width,
+        border-style: theme.$table-row-border-style,
+        border-color: theme.$table-row-border-color,
+      )
+    );
+
     /* Zebra striping with opacity to keep background color. e.g for warnings or errors */
     &:nth-child(even):not(.odd),
     &:nth-child(odd).even {

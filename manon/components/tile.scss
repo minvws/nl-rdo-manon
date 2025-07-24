@@ -21,8 +21,6 @@
       border-radius: theme.$tile-border-radius,
       box-shadow: theme.$tile-box-shadow,
       cursor: theme.$tile-cursor,
-      image-max-width: theme.$tile-image-max-width,
-      child-pointer-events: theme.$tile-child-pointer-events,
     )
   );
 }
@@ -56,8 +54,6 @@
         border-radius: theme.$tile-border-radius,
         box-shadow: theme.$tile-box-shadow,
         cursor: theme.$tile-cursor,
-        image-max-width: theme.$tile-image-max-width,
-        child-pointer-events: theme.$tile-child-pointer-events,
       )
     );
   }
@@ -85,8 +81,6 @@ ul.tiles {
         border-radius: theme.$tile-border-radius,
         box-shadow: theme.$tile-box-shadow,
         cursor: theme.$tile-cursor,
-        image-max-width: theme.$tile-image-max-width,
-        child-pointer-events: theme.$tile-child-pointer-events,
       )
     );
 
