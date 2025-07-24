@@ -35,7 +35,6 @@ nav {
       color: theme.$navigation-text-color,
     )
   );
-
   @extend %navigation-link;
 
   ul {
@@ -80,4 +79,3 @@ nav {
     }
   }
 }
-

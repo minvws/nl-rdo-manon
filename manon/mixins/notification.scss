@@ -38,19 +38,16 @@ div {
   &.system {
     &::before {
       @include icon.icon;
-
-      & {
-        @include theming.apply-from-theme(
-          (
-            font-family: theme.$notification-icon-font-family,
-            font-size: theme.$notification-icon-font-size,
-            padding-right: theme.$notification-icon-padding-right,
-            padding-left: theme.$notification-icon-padding-left,
-            color: theme.$notification-icon-text-color,
-            margin-right: theme.$notification-icon-margin-right,
-          )
-        );
-      }
+      @include theming.apply-from-theme(
+        (
+          font-family: theme.$notification-icon-font-family,
+          font-size: theme.$notification-icon-font-size,
+          padding-right: theme.$notification-icon-padding-right,
+          padding-left: theme.$notification-icon-padding-left,
+          color: theme.$notification-icon-text-color,
+          margin-right: theme.$notification-icon-margin-right,
+        )
+      );
     }
   }
 }

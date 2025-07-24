@@ -22,8 +22,53 @@
       )
     );
 
+    ul,
+    ol {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      box-sizing: border-box;
+
+      @include theming.apply-from-theme(
+        (
+          gap: theme.$hero-list-gap,
+          padding: theme.$hero-list-padding,
+          background-color: theme.$hero-list-background-color,
+          line-height: theme.$hero-list-line-height,
+          font-size: theme.$hero-list-font-size,
+          font-weight: theme.$hero-list-font-weight,
+          color: theme.$hero-list-text-color,
+        )
+      );
+
+      li {
+        box-sizing: border-box;
+
+        @include theming.apply-from-theme(
+          (
+            background-color: theme.$hero-list-item-background-color,
+            border-width: theme.$hero-list-item-border-width,
+            border-style: theme.$hero-list-item-border-style,
+            border-color: theme.$hero-list-item-border-color,
+            padding: theme.$hero-list-item-padding,
+            line-height: theme.$hero-list-item-line-height,
+            font-size: theme.$hero-list-item-font-size,
+            font-weight: theme.$hero-list-item-font-weight,
+            color: theme.$hero-list-item-text-color,
+          )
+        );
+
+        a {
+          line-height: inherit;
+          font-size: inherit;
+          font-weight: inherit;
+        }
+      }
+    }
+
     .tile {
       display: flex;
+
       @include theming.apply-from-theme(
         (
           flex-direction: theme.$hero-tile-flex-direction,
@@ -71,6 +116,7 @@
         margin: 0;
         box-sizing: border-box;
         padding-left: 2rem;
+
         @include theming.apply-from-theme(
           (
             gap: theme.$hero-tile-list-gap,
@@ -85,6 +131,7 @@
 
         li {
           box-sizing: border-box;
+
           @include theming.apply-from-theme(
             (
               background-color: theme.$hero-tile-list-item-background-color,
@@ -104,48 +151,6 @@
             font-size: inherit;
             font-weight: inherit;
           }
-        }
-      }
-    }
-
-    ul,
-    ol {
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-      box-sizing: border-box;
-      @include theming.apply-from-theme(
-        (
-          gap: theme.$hero-list-gap,
-          padding: theme.$hero-list-padding,
-          background-color: theme.$hero-list-background-color,
-          line-height: theme.$hero-list-line-height,
-          font-size: theme.$hero-list-font-size,
-          font-weight: theme.$hero-list-font-weight,
-          color: theme.$hero-list-text-color,
-        )
-      );
-
-      li {
-        box-sizing: border-box;
-        @include theming.apply-from-theme(
-          (
-            background-color: theme.$hero-list-item-background-color,
-            border-width: theme.$hero-list-item-border-width,
-            border-style: theme.$hero-list-item-border-style,
-            border-color: theme.$hero-list-item-border-color,
-            padding: theme.$hero-list-item-padding,
-            line-height: theme.$hero-list-item-line-height,
-            font-size: theme.$hero-list-item-font-size,
-            font-weight: theme.$hero-list-item-font-weight,
-            color: theme.$hero-list-item-text-color,
-          )
-        );
-
-        a {
-          line-height: inherit;
-          font-size: inherit;
-          font-weight: inherit;
         }
       }
     }

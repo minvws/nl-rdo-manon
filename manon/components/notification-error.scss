@@ -7,7 +7,6 @@ span.error,
 section.error,
 div.error {
   @include notification.notification;
-
   @include theming.apply-from-theme(
     (
       background-color: theme.$notification-error-background-color,

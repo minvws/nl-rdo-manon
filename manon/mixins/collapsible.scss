@@ -2,6 +2,11 @@
 @use "../variables" as theme;
 
 @mixin collapsible {
+  /* Above breakpoint */
+  button.collapsible-toggle {
+    display: none;
+  }
+
   &.collapsed {
     padding: 0;
     gap: 0;
@@ -29,10 +34,5 @@
         }
       }
     }
-  }
-
-  /* Above breakpoint */
-  button.collapsible-toggle {
-    display: none;
   }
 }
