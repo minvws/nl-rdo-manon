@@ -187,7 +187,7 @@
               <tr>
                 <td>--language-selector-list-font-weight</td>
                 <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
-                <td>var(--base-font-weight)</td>
+                <td>var($base-font-weight)</td>
                 <td>-</td>
               </tr>
 
@@ -239,14 +239,14 @@
                   ><a href="{base}/documentation/variables#background-color">background-color</a
                   ></td
                 >
-                <td>var(--base-background-color)</td>
+                <td>var($base-background-color)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--language-selector-list-item-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
-                <td>var(--base-text-color)</td>
+                <td>var($base-text-color)</td>
                 <td>-</td>
               </tr>
 

@@ -143,7 +143,7 @@
         <Code
           language="css"
           code={`
---base-font-family: "Naam van het font";
+$base-font-family: "Naam van het font";
 `}
         />
         <h4>HTML-Voorbeeld:</h4>

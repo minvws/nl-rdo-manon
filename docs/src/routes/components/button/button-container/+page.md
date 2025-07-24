@@ -58,7 +58,7 @@ Zie voor meer informatie over importeren en instellen van componenten: [Componen
 | \--button-container-flex-direction | [flex-direction](/documentation/variables#flex-direction) | row                                | \-        | button-container |
 | \--button-container-align-items    | [align-items](/documentation/variables#align-items)       | center                             | \-        |
 | \--button-container-flex-wrap      | [flex-wrap](/documentation/variables#flex-wrap)           | wrap                               | \-        |
-| \--button-container-gap            | [gap](/documentation/variables#gap)                       | var(--base-gap-medium) | \-        |
+| \--button-container-gap            | [gap](/documentation/variables#gap)                       | var($base-gap-medium) | \-        |
 | \--button-container-padding-top    | [padding-top](/documentation/variables#padding-top)       | 0                                  | \-        |
 | \--button-container-padding-right  | [padding-right](/documentation/variables#padding-right)   | 0                                  | \-        |
 | \--button-container-padding-bottom | [padding-bottom](/documentation/variables#padding-bottom) | 0                                  | \-        |

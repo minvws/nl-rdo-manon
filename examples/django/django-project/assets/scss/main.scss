@@ -5,7 +5,7 @@
 :root {
   --logo-width: auto;
   --logo-height: auto;
-  --logo-font-size: var(--base-font-size);
+  --logo-font-size: var($base-font-size);
   --logo-white-space: nowrap;
   --logo-font-weight: bold;
   --logo-align-items: center;

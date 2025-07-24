@@ -75,7 +75,7 @@
           language="css"
           code={`
 :root {
-$button-background-color: var(--base-accent-color);
+$button-background-color: var($base-accent-color);
 }
 `}
         />
@@ -133,7 +133,7 @@ $button-background-color: var(--base-accent-color);
             <tbody>
               <tr>
                 <th rowspan="2" scope="rowgroup">base</th>
-                <td>--base-background-color</td>
+                <td>$base-background-color</td>
                 <td
                   ><a href="{base}/documentation/variables#background-color">background-color</a
                   ></td
@@ -144,7 +144,7 @@ $button-background-color: var(--base-accent-color);
               </tr>
 
               <tr>
-                <td>--base-text-color</td>
+                <td>$base-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>var(--text-set-text-color)</td>
@@ -153,7 +153,7 @@ $button-background-color: var(--base-accent-color);
 
               <tr>
                 <th rowspan="2" scope="rowgroup">base-tint-1</th>
-                <td>--base-tint-1-background-color</td>
+                <td>$base-tint-1-background-color</td>
                 <td
                   ><a href="{base}/documentation/variables#background-color">background-color</a
                   ></td
@@ -164,7 +164,7 @@ $button-background-color: var(--base-accent-color);
               </tr>
 
               <tr>
-                <td>--base-tint-1-text-color</td>
+                <td>$base-tint-1-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
@@ -173,7 +173,7 @@ $button-background-color: var(--base-accent-color);
 
               <tr>
                 <th rowspan="10" scope="rowgroup">base-accent-color</th>
-                <td>--base-accent-color</td>
+                <td>$base-accent-color</td>
                 <td>kleurcode</td>
                 <td>-</td>
                 <td>#931171</td>
@@ -181,7 +181,7 @@ $button-background-color: var(--base-accent-color);
               </tr>
 
               <tr>
-                <td>--base-accent-color-text-color</td>
+                <td>$base-accent-color-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#fff</td>
@@ -189,7 +189,7 @@ $button-background-color: var(--base-accent-color);
               </tr>
 
               <tr>
-                <td>--base-accent-color-hover</td>
+                <td>$base-accent-color-hover</td>
                 <td>kleurcode</td>
                 <td>-</td>
                 <td>hotpink</td>
@@ -197,7 +197,7 @@ $button-background-color: var(--base-accent-color);
               </tr>
 
               <tr>
-                <td>--base-accent-color-hover-text-color</td>
+                <td>$base-accent-color-hover-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
@@ -205,7 +205,7 @@ $button-background-color: var(--base-accent-color);
               </tr>
 
               <tr>
-                <td>--base-accent-color-active</td>
+                <td>$base-accent-color-active</td>
                 <td>kleurcode</td>
                 <td>-</td>
                 <td>hotpink</td>
@@ -213,7 +213,7 @@ $button-background-color: var(--base-accent-color);
               </tr>
 
               <tr>
-                <td>--base-accent-color-active-text-color</td>
+                <td>$base-accent-color-active-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
@@ -221,7 +221,7 @@ $button-background-color: var(--base-accent-color);
               </tr>
 
               <tr>
-                <td>--base-accent-color-focus</td>
+                <td>$base-accent-color-focus</td>
                 <td>kleurcode</td>
                 <td>-</td>
                 <td>hotpink</td>
@@ -229,7 +229,7 @@ $button-background-color: var(--base-accent-color);
               </tr>
 
               <tr>
-                <td>--base-accent-color-focus-text-color</td>
+                <td>$base-accent-color-focus-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
@@ -237,7 +237,7 @@ $button-background-color: var(--base-accent-color);
               </tr>
 
               <tr>
-                <td>--base-accent-color-selected</td>
+                <td>$base-accent-color-selected</td>
                 <td>kleurcode</td>
                 <td>-</td>
                 <td>hotpink</td>
@@ -245,7 +245,7 @@ $button-background-color: var(--base-accent-color);
               </tr>
 
               <tr>
-                <td>--base-accent-color-selected-text-color</td>
+                <td>$base-accent-color-selected-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">color</a></td>
                 <td>-</td>
                 <td>#000</td>
@@ -271,7 +271,7 @@ $button-background-color: var(--base-accent-color);
 
               <tr>
                 <th>base-font-family</th>
-                <td>--base-font-family</td>
+                <td>$base-font-family</td>
                 <td><a href="{base}/documentation/variables#font-family">font-family</a></td>
                 <td>-</td>
                 <td>var(--text-set-font-family)</td>
@@ -280,7 +280,7 @@ $button-background-color: var(--base-accent-color);
 
               <tr>
                 <th>base-font-size</th>
-                <td>--base-font-size</td>
+                <td>$base-font-size</td>
                 <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
                 <td>-</td>
                 <td>var(--text-set-font-size)</td>
@@ -289,7 +289,7 @@ $button-background-color: var(--base-accent-color);
 
               <tr>
                 <th>base-line-height</th>
-                <td>--base-line-height</td>
+                <td>$base-line-height</td>
                 <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
                 <td>-</td>
                 <td>var(--text-set-line-height)</td>
@@ -298,7 +298,7 @@ $button-background-color: var(--base-accent-color);
 
               <tr>
                 <th>base-font-weight</th>
-                <td>--base-font-weight</td>
+                <td>$base-font-weight</td>
                 <td><a href="{base}/documentation/variables#font-weight">font-weight</a></td>
                 <td>-</td>
                 <td>var(--text-set-font-weight)</td>
@@ -307,7 +307,7 @@ $button-background-color: var(--base-accent-color);
 
               <tr>
                 <th>base-text-align</th>
-                <td>--base-text-align</td>
+                <td>$base-text-align</td>
                 <td><a href="{base}/documentation/variables#text-align">text-align</a></td>
                 <td>-</td>
                 <td>var(--text-set-text-align)</td>
@@ -316,7 +316,7 @@ $button-background-color: var(--base-accent-color);
 
               <tr>
                 <th>base-padding</th>
-                <td>--base-padding</td>
+                <td>$base-padding</td>
                 <td><a href="{base}/documentation/variables#padding">padding</a></td>
                 <td>-</td>
                 <td>1.5rem</td>
@@ -325,7 +325,7 @@ $button-background-color: var(--base-accent-color);
 
               <tr>
                 <th>base-border-radius</th>
-                <td>--base-border-radius</td>
+                <td>$base-border-radius</td>
                 <td><a href="{base}/documentation/variables#border-radius">border-radius</a></td>
                 <td>-</td>
                 <td>0</td>
@@ -345,41 +345,41 @@ $button-background-color: var(--base-accent-color);
           code={`
 :root {
 /* Application background color */
---base-background-color: ;
---base-text-color: ;
+$base-background-color: ;
+$base-text-color: ;
 
---base-tint-1-background-color: ;
---base-tint-1-text-color: ;
+$base-tint-1-background-color: ;
+$base-tint-1-text-color: ;
 
---base-font-family: ;
---base-font-size: ;
---base-font-weight: ;
---base-line-height: ;
---base-text-align: ;
+$base-font-family: ;
+$base-font-size: ;
+$base-font-weight: ;
+$base-line-height: ;
+$base-text-align: ;
 
---base-padding: ;
---base-border-radius: ;
---base-gap: ;
+$base-padding: ;
+$base-border-radius: ;
+$base-gap: ;
 
 /* Accent color */
---base-accent-color: ;
---base-accent-color-text-color: ;
+$base-accent-color: ;
+$base-accent-color-text-color: ;
 
 /* Accent color hover */
---base-accent-color-hover: ;
---base-accent-color-hover-text-color: ;
+$base-accent-color-hover: ;
+$base-accent-color-hover-text-color: ;
 
 /* Accent color active */
---base-accent-color-active: ;
---base-accent-color-active-text-color: ;
+$base-accent-color-active: ;
+$base-accent-color-active-text-color: ;
 
 /* Accent color focus */
---base-accent-color-focus: ;
---base-accent-color-focus-text-color: ;
+$base-accent-color-focus: ;
+$base-accent-color-focus-text-color: ;
 
 /* Accent color selected */
---base-accent-color-selected: ;
---base-accent-color-selected-text-color: ;
+$base-accent-color-selected: ;
+$base-accent-color-selected-text-color: ;
 
 /* Call to action color */
 --cta-background-color: ;

@@ -224,14 +224,14 @@
                   ><a href="{base}/documentation/variables#background-color">background-color</a
                   ></td
                 >
-                <td>var(--base-accent-color-tint-2)</td>
+                <td>var($base-accent-color-tint-2)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--navigation-collapsible-menu-list-collapsed-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
-                <td>var(--base-accent-color-tint-2-text-color)</td>
+                <td>var($base-accent-color-tint-2-text-color)</td>
                 <td>-</td>
               </tr>
 
@@ -262,14 +262,14 @@
                   ><a href="{base}/documentation/variables#background-color">background-color</a
                   ></td
                 >
-                <td>var(--base-background-color, transparent)</td>
+                <td>var($base-background-color, transparent)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--navigation-collapsible-menu-list-item-collapsed-text-color</td>
                 <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
-                <td>var(--base-text-color, transparent)</td>
+                <td>var($base-text-color, transparent)</td>
                 <td>-</td>
               </tr>
 
@@ -333,7 +333,7 @@
                   ><a href="{base}/documentation/variables#background-color">background-color</a
                   ></td
                 >
-                <td>var(--base-background-color)</td>
+                <td>var($base-background-color)</td>
                 <td>-</td>
               </tr>
 
@@ -375,14 +375,14 @@
               <tr>
                 <td>--navigation-collapsible-menu-icon-font-size</td>
                 <td><a href="{base}/documentation/variables#font-size">font-size</a></td>
-                <td>var(--base-font-size)</td>
+                <td>var($base-font-size)</td>
                 <td>-</td>
               </tr>
 
               <tr>
                 <td>--navigation-collapsible-menu-icon-color</td>
                 <td><a href="{base}/documentation/variables#color">color</a></td>
-                <td>var(--base-text-color)</td>
+                <td>var($base-text-color)</td>
                 <td>-</td>
               </tr>
 

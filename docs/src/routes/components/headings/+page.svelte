@@ -223,7 +223,7 @@
                   <th rowspan="6" scope="rowgroup">headings</th>
                   <td>--headings-font-family</td>
                   <td><a href="{base}/documentation/variables#font-family">font-family</a></td>
-                  <td>var(--base-font-family)</td>
+                  <td>var($base-font-family)</td>
                   <td>-</td>
                   <td>-</td>
                 </tr>
@@ -247,7 +247,7 @@
                 <tr>
                   <td>--headings-line-height</td>
                   <td><a href="{base}/documentation/variables#line-height">line-height</a></td>
-                  <td>var(--base-line-height)</td>
+                  <td>var($base-line-height)</td>
                   <td>-</td>
                   <td>-</td>
                 </tr>
@@ -255,7 +255,7 @@
                 <tr>
                   <td>--headings-text-color</td>
                   <td><a href="{base}/documentation/variables#text-color">text-color</a></td>
-                  <td>var(--base-text-color)</td>
+                  <td>var($base-text-color)</td>
                   <td>-</td>
                   <td>-</td>
                 </tr>
