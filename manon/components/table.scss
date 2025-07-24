@@ -177,8 +177,13 @@ main {
   div div {
     table {
       div {
-        gap: theme.$table-gap;
         padding: 0;
+
+        @include theming.apply-from-theme(
+          (
+            gap: theme.$table-gap,
+          )
+        );
       }
     }
   }
