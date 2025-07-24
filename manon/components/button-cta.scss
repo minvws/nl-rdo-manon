@@ -37,6 +37,7 @@ input[type="reset"] {
         webkit-appearance: theme.$button-cta-webkit-appearance,
         cursor: theme.$button-cta-cursor,
         overflow-wrap: theme.$button-cta-overflow-wrap,
+        max-width: theme.$button-cta-image-max-width,
       )
     );
     margin: 0;
@@ -136,4 +137,11 @@ a:visited.button {
       )
     );
   }
+<<<<<<< Updated upstream
 }
+||||||| Stash base
+}
+=======
+}
+
+>>>>>>> Stashed changes
