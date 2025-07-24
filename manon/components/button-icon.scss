@@ -41,8 +41,6 @@ input[type="reset"] {
         webkit-appearance: theme.$button-icon-webkit-appearance,
         cursor: theme.$button-icon-cursor,
         overflow-wrap: theme.$button-icon-overflow-wrap,
-        image-max-width: theme.$button-icon-image-max-width,
-        child-pointer-events: theme.$button-icon-child-pointer-events,
       )
     );
   }
