@@ -1,6 +1,6 @@
 // Notification colors
 
-@forward "@minvws/manon/colors/open-color";
+@use "open-color" as color-scheme;
 
 /* Explanation */
 $color-notification-explanation-default: #{color-scheme.$oc-blue-0};
