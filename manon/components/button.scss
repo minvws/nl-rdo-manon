@@ -7,6 +7,7 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   cursor: pointer;
+  width: auto;
 
   @include theming.apply-from-theme(
     (
@@ -39,4 +40,16 @@ input[type="reset"] {
       )
     );
   }
+}
+
+a.button {
+  text-decoration: none;
+}
+
+a:visited.button {
+  @include theming.apply-from-theme(
+    (
+      color: theme.$button-text-color,
+    )
+  );
 }

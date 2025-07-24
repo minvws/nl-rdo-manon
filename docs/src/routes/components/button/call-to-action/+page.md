@@ -22,18 +22,6 @@ nav:
 <button class="cta">Lorem ipsum</button>
 ```
 
-### `<button disabled>`
-
-#### Visuele weergave
-
-<button class="cta" disabled>Lorem ipsum</button>
-
-#### HTML-voorbeeld
-
-```html
-<button class="cta" disabled>Lorem ipsum</button>
-```
-
 ### `<input type="button">`
 
 #### Visuele weergave

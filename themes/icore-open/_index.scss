@@ -50,6 +50,9 @@ and spacing sets */
   $button-destructive-primary-hover-text-color: #{color-scheme.$oc-white},
   $button-destructive-primary-hover-border-color: #{semantic.$color-destructive-intense},
 
+  // button container
+  $button-container-gap: 1rem,
+
   // breadcrumb bar
   $breadcrumb-bar-padding-top: #{spacing.$spacing-075},
   $breadcrumb-bar-padding-right: #{spacing.$spacing-100},
@@ -143,6 +146,8 @@ and spacing sets */
   $section-gap: #{spacing.$spacing-300},
   $section-flex-direction: column,
   $section-border-radius: #{border-radii.$border-radius-m},
+  $section-justify-content: flex-start,
+  $section-align-items: flex-start,
 
   // tile
   $tile-background-color: #{color-scheme.$oc-white},
