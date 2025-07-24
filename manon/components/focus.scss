@@ -5,6 +5,7 @@
 *.focus,
 .outline-dotted {
   position: relative;
+
   @include theming.apply-from-theme(
     (
       outline: theme.$focus-outline,
@@ -16,6 +17,7 @@
 
   + label::before {
     position: relative;
+
     @include theming.apply-from-theme(
       (
         outline: theme.$focus-outline,

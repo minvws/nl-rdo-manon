@@ -5,6 +5,7 @@ $breakpoint: 50rem !default;
 
 .vertical {
   display: flex;
+  
   /* Preventing specificity issues */
   flex-direction: column !important;
   align-items: flex-start;

@@ -10,6 +10,7 @@ body > footer,
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+
   @include theming.apply-from-theme(
     (
       flex-direction: theme.$footer-two-thirds-one-third-flex-direction,
@@ -33,6 +34,7 @@ body > footer,
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
+
     @include theming.apply-from-theme(
       (
         gap: theme.$footer-two-thirds-one-third-gap,

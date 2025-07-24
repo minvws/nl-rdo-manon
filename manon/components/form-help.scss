@@ -3,9 +3,10 @@
 
 form.help {
   position: relative;
+
   @include theming.apply-from-theme(
     (
-      padding-right: theme.$form-help-padding-right
+      padding-right: theme.$form-help-padding-right,
     )
   );
 
@@ -58,6 +59,7 @@ form.help {
 
       &::before {
         vertical-align: middle;
+
         @include theming.apply-from-theme(
           (
             content: theme.$form-help-button-icon,
@@ -81,6 +83,7 @@ form.help {
 
       + .explanation {
         margin-bottom: 0;
+
         @include theming.apply-from-theme(
           (
             margin-top: theme.$form-help-button-explanation-gap,
