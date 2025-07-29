@@ -1,0 +1,44 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+:root {
+  /* Link */
+  @include theming.apply-from-theme(
+    (
+      font-size: theme.$footer-navigation-link-font-size,
+      font-weight: theme.$footer-navigation-link-font-weight,
+      line-height: theme.$footer-navigation-link-line-height,
+      background-color: theme.$footer-navigation-link-background-color,
+      color: theme.$footer-navigation-link-text-color,
+      text-decoration: theme.$footer-navigation-link-text-decoration,
+      border-width: theme.$footer-navigation-link-border-width,
+      border-style: theme.$footer-navigation-link-border-style,
+      border-color: theme.$footer-navigation-link-border-color,
+      border-radius: theme.$footer-navigation-link-border-radius,
+    )
+  );
+
+  /* Icon */
+  @include theming.apply-from-theme(
+    (
+      icon-font-family: theme.$footer-navigation-link-icon-font-family,
+      icon-font-size: theme.$footer-navigation-link-icon-font-size,
+      icon-padding-right: theme.$footer-navigation-link-icon-padding-right,
+      icon-padding-left: theme.$footer-navigation-link-icon-padding-left,
+      icon-text-decoration: theme.$footer-navigation-link-icon-text-decoration,
+      icon-background-color: theme.$footer-navigation-link-icon-background-color,
+      icon-text-color: theme.$footer-navigation-link-icon-text-color,
+    )
+  );
+
+  /* Icon at the end */
+  @include theming.apply-from-theme(
+    (
+      icon-last-padding-right:
+        theme.$footer-navigation-link-icon-last-padding-right,
+      icon-last-padding-left:
+        theme.$footer-navigation-link-icon-last-padding-left,
+    )
+  );
+}
+

@@ -20,7 +20,7 @@
 @forward "description-list";
 @forward "disabled";
 @forward "divider-lines-content-block";
-@forward "divider-striping-top";
+@forward "divider-striping-content-block";
 @forward "emphasized";
 @forward "filter";
 @forward "focus";
@@ -30,6 +30,12 @@
 @forward "footer-link-hover";
 @forward "footer-link-visited";
 @forward "footer-link";
+@forward "footer-navigation-link";
+@forward "footer-navigation-link-active";
+@forward "footer-navigation-link-focus";
+@forward "footer-navigation-link-hover";
+@forward "footer-navigation-link-variables";
+@forward "footer-navigation-link-visited";
 @forward "footer-two-thirds-one-third";
 @forward "form";
 @forward "form-button";

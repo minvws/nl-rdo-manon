@@ -1,0 +1,57 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+body > footer,
+.page-footer,
+%footer-style {
+  nav {
+    a {
+      &:hover,
+      &.hover /* Testing purposes */ {
+        @include theming.apply-from-theme(
+          (
+            font-size: theme.$footer-navigation-link-hover-font-size,
+            font-weight: theme.$footer-navigation-link-hover-font-weight,
+            line-height: theme.$footer-navigation-link-hover-line-height,
+            background-color:
+              theme.$footer-navigation-link-hover-background-color,
+            color: theme.$footer-navigation-link-hover-text-color,
+            text-decoration: theme.$footer-navigation-link-hover-text-decoration,
+            border-width: theme.$footer-navigation-link-hover-border-width,
+            border-style: theme.$footer-navigation-link-hover-border-style,
+            border-color: theme.$footer-navigation-link-hover-border-color,
+            border-radius: theme.$footer-navigation-link-hover-border-radius,
+          )
+        );
+
+        &::before {
+          position: static;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0;
+          font-style: normal;
+
+          @include theming.apply-from-theme(
+            (
+              font-family: theme.$footer-navigation-link-hover-icon-font-family,
+              font-size: theme.$footer-navigation-link-hover-icon-font-size,
+              line-height: theme.$footer-navigation-link-hover-icon-line-height,
+              text-decoration:
+                theme.$footer-navigation-link-hover-icon-text-decoration,
+              padding-right:
+                theme.$footer-navigation-link-hover-icon-padding-right,
+              padding-left:
+                theme.$footer-navigation-link-hover-icon-padding-left,
+              background-color:
+                theme.$footer-navigation-link-hover-icon-background-color,
+              color: theme.$footer-navigation-link-hover-icon-text-color,
+            )
+          );
+        }
+      }
+    }
+  }
+}
+
