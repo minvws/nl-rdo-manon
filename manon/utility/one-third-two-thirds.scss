@@ -1,12 +1,15 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
 $breakpoint: 42rem !default;
 
 .one-third-two-thirds {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: var(--layout-one-third-two-thirds-gap);
   width: 100%;
   box-sizing: border-box;
+  gap: theme.$layout-gap;
 
   > * {
     max-width: 100%;
@@ -21,13 +24,13 @@ $breakpoint: 42rem !default;
   }
 
   @media (width >= $breakpoint) {
-    gap: var(--layout-one-third-two-thirds-breakpoint-gap);
+    gap: theme.$layout-gap;
 
     > * {
-      width: 66.66%;
+      width: calc(66.66% - (theme.$layout-gap / 2));
 
       &:nth-child(odd) {
-        width: calc(33.33% - var(--layout-one-third-two-thirds-breakpoint-gap));
+        width: calc(33.33% - (theme.$layout-gap / 2));
       }
     }
   }

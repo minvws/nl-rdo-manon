@@ -55,7 +55,6 @@
           <li><a href="{base}/components/section"><code>section</code></a></li>
           <li><a href="{base}/components/article"><code>article</code></a></li>
           <li><a href="{base}/components/div"><code>div</code></a></li>
-          <li><a href="{base}/components/footer"><code>footer</code></a></li>
           <li><a href="{base}/components/layout-authentication">Authentication</a></li>
           <li><a href="{base}/components/layout-form">layout-form</a></li>
         </ul>
@@ -74,8 +73,11 @@
 
           <ul>
             <li><a href="{base}/components/button">Knoppen - <code>button</code></a></li>
+            <li><a href="{base}/components/footer"><code>footer</code></a></li>
             <li><a href="{base}/components/forms">Formulieren - <code>form</code></a></li>
+            <li><a href="{base}/components/header-navigation">Header</a></li>
             <li><a href="{base}/components/link">Link <code>a</code></a></li>
+            <li><a href="{base}/components/navigation">Navigatie - <code>nav</code></a></li>
             <li><a href="{base}/components/table">Tabellen - <code>table</code></a></li>
             <li>
               Afbeeldingen - <code>img</code>
@@ -91,11 +93,9 @@
         <nav aria-labelledby="other-components-heading" id="other-components">
           <h3 id="other-components-heading">Overige componenten</h3>
           <ul>
-            <li><a href="{base}/components/header-navigation">Header</a></li>
             <li><a href="{base}/components/icons">Iconen</a></li>
             <li><a href="{base}/components/tag">Tag</a></li>
             <li><a href="{base}/components/skip-to-content">Ga direct naar inhoud-knop</a></li>
-            <li><a href="{base}/components/navigation">Navigatie - <code>nav</code></a></li>
           </ul>
         </nav>
 
@@ -109,42 +109,6 @@
         </nav>
       </div>
     </div>
-  </section>
-
-  <section id="utility" class="visually-grouped">
-    <h2 id="utility-classes-heading">Utility classes</h2>
-    <nav aria-labelledby="utility-classes-heading">
-      <ul>
-        <li>
-          <a href="{base}/components/horizontal">Horizontaal uitgelijnd</a>
-        </li>
-        <li>
-          <a href="{base}/components/layout-centered">Gecentreerd</a>
-        </li>
-        <li>
-          <a href="{base}/components/horizontal-center">Horizontaal gecentreerd</a>
-        </li>
-        <li>
-          <a href="{base}/components/focus-only">Alleen zichtbaar "on focus"</a>
-        </li>
-        <li>
-          <a href="{base}/components/horizontal-scroll">Horizontale scroll</a>
-        </li>
-        <li>
-          <a href="{base}/components/nowrap">nowrap</a>
-        </li>
-        <li>
-          <a href="{base}/components/hidden">Verbergen - <dfn>hidden</dfn></a>
-        </li>
-        <li><a href="{base}/components/layout-one-third-two-thirds">Eenderde tweederde</a></li>
-        <li><a href="{base}/components/layout-two-thirds-one-third">Tweederde eenderde</a></li>
-        <li><a href="{base}/components/layout-fifty-fifty">50/50</a></li>
-        <li><a href="{base}/components/layout-centered">Gecentreerd</a></li>
-        <li><a href="{base}/components/layout-column-2">Twee kolommen</a></li>
-        <li><a href="{base}/components/layout-column-3">Drie kolommen</a></li>
-        <li><a href="{base}/components/layout-column-4">Vier kolommen</a></li>
-      </ul>
-    </nav>
   </section>
 
   <section id="other" class="visually-grouped">

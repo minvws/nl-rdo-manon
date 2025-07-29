@@ -1,10 +1,13 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
 $columns-breakpoint-1: 42rem !default;
 $columns-breakpoint-2: 60rem !default;
 
 .column-3 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--layout-column-3-gap);
+  gap: theme.$layout-gap;
   width: 100%;
   box-sizing: border-box;
 

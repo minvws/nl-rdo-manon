@@ -1,3 +1,6 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
 $breakpoint: 42rem !default;
 
 section,
@@ -9,7 +12,7 @@ header nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: var(--layout-fifty-fifty-gap);
+    gap: theme.$layout-gap;
     width: 100%;
     box-sizing: border-box;
 
@@ -19,11 +22,11 @@ header nav {
     }
 
     @media (width >= $breakpoint) {
-      gap: var(--layout-fifty-fifty-breakpoint-gap);
+      gap: theme.$layout-gap;
 
       > * {
         flex-grow: 1;
-        max-width: calc(50% - (var(--layout-fifty-fifty-gap) / 2));
+        max-width: calc(50% - (theme.$layout-gap / 2));
       }
     }
   }

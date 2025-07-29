@@ -2,9 +2,10 @@
 @use "../variables" as theme;
 
 .background-color-offset {
+  background-color: theme.$background-color-offset-background-color;
+  
   @include theming.apply-from-theme(
     (
-      background-color: theme.$background-color-offset-background-color,
       color: theme.$background-color-offset-text-color,
     )
   );

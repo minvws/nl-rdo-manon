@@ -121,9 +121,11 @@ and spacing sets */
   // heading
   $h1-font-family: #{semantic.$font-family},
 
-  // helpers
+  // utility
   $horizontal-gap: #{spacing.$spacing-100},
-  $vertical-gap: #{spacing.$spacing-100},
+
+  // layout
+  $layout-gap: 2.5rem,
 
   // link
   $link-text-color: #{color-scheme.$oc-blue-8},
@@ -166,17 +168,17 @@ and spacing sets */
 
   // Navigation
   $navigation-list-gap: #{spacing.$spacing-050},
-  $navigation-list-item-list-style: none,
   $navigation-link-text-decoration: none,
+  $navigation-list-padding: 1rem,
 
   // section
   $section-background-color: #{color-scheme.$oc-white},
-  $section-padding-top: #{spacing.$spacing-100},
-  $section-padding-right: #{spacing.$spacing-100},
-  $section-padding-bottom: #{spacing.$spacing-100},
-  $section-padding-left: #{spacing.$spacing-100},
+  $section-padding-top: #{spacing.$spacing-200},
+  $section-padding-right: #{spacing.$spacing-200},
+  $section-padding-bottom: #{spacing.$spacing-300},
+  $section-padding-left: #{spacing.$spacing-200},
   $section-max-width: 50rem,
-  $section-gap: #{spacing.$spacing-300},
+  $section-gap: #{spacing.$spacing-400},
   $section-flex-direction: column,
   $section-border-radius: #{border-radii.$border-radius-m},
   $section-justify-content: flex-start,
