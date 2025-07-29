@@ -49,28 +49,15 @@
     <h2>Layout</h2>
     <div class="column-2">
       <nav aria-labelledby="layout-base">
-        <h3 id="layout-base">Basis-elementen</h3>
+        <h3 id="layout-base">Layout opties</h3>
         <ul>
           <li><a href="{base}/components/main"><code>main</code></a></li>
-          <li><a href="{base}/components/section">Sectie - <code>section</code></a></li>
-          <li><a href="{base}/components/article">Artikel - <code>article</code></a></li>
+          <li><a href="{base}/components/section"><code>section</code></a></li>
+          <li><a href="{base}/components/article"><code>article</code></a></li>
           <li><a href="{base}/components/div"><code>div</code></a></li>
           <li><a href="{base}/components/footer"><code>footer</code></a></li>
-        </ul>
-      </nav>
-
-      <nav aria-labelledby="layout-exceptions">
-        <h3 id="layout-exceptions">Uitzonderingsweergaven</h3>
-        <ul>
           <li><a href="{base}/components/layout-authentication">Authentication</a></li>
-          <li><a href="{base}/components/layout-one-third-two-thirds">Eenderde tweederde</a></li>
-          <li><a href="{base}/components/layout-two-thirds-one-third">Tweederde eenderde</a></li>
-          <li><a href="{base}/components/layout-fifty-fifty">50/50</a></li>
-          <li><a href="{base}/components/layout-centered">Gecentreerd</a></li>
           <li><a href="{base}/components/layout-form">layout-form</a></li>
-          <li><a href="{base}/components/layout-column-2">Twee kolommen</a></li>
-          <li><a href="{base}/components/layout-column-3">Drie kolommen</a></li>
-          <li><a href="{base}/components/layout-column-4">Vier kolommen</a></li>
         </ul>
       </nav>
     </div>
@@ -124,9 +111,9 @@
     </div>
   </section>
 
-  <section id="helpers" class="visually-grouped">
-    <h2 id="helper-classes-heading">Helper-classes</h2>
-    <nav aria-labelledby="helper-classes-heading">
+  <section id="utility" class="visually-grouped">
+    <h2 id="utility-classes-heading">Utility classes</h2>
+    <nav aria-labelledby="utility-classes-heading">
       <ul>
         <li>
           <a href="{base}/components/horizontal">Horizontaal uitgelijnd</a>
@@ -149,6 +136,13 @@
         <li>
           <a href="{base}/components/hidden">Verbergen - <dfn>hidden</dfn></a>
         </li>
+        <li><a href="{base}/components/layout-one-third-two-thirds">Eenderde tweederde</a></li>
+        <li><a href="{base}/components/layout-two-thirds-one-third">Tweederde eenderde</a></li>
+        <li><a href="{base}/components/layout-fifty-fifty">50/50</a></li>
+        <li><a href="{base}/components/layout-centered">Gecentreerd</a></li>
+        <li><a href="{base}/components/layout-column-2">Twee kolommen</a></li>
+        <li><a href="{base}/components/layout-column-3">Drie kolommen</a></li>
+        <li><a href="{base}/components/layout-column-4">Vier kolommen</a></li>
       </ul>
     </nav>
   </section>

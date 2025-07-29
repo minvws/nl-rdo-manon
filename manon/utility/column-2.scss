@@ -1,0 +1,20 @@
+$columns-breakpoint-1: 42rem !default;
+
+.column-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--layout-column-2-gap);
+  width: 100%;
+  box-sizing: border-box;
+
+  > * {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (width >= $columns-breakpoint-1) {
+  .column-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
