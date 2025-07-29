@@ -1,0 +1,14 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+form {
+  select {
+    @include theming.apply-from-theme(
+      (
+        width: theme.$form-select-width,
+        font-family: theme.$application-base-font-family,
+        font-size: theme.$application-base-font-size,
+      )
+    );
+  }
+}

@@ -1,0 +1,107 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+form {
+  $breakpoint-1: 24rem !default;
+
+  input[type="radio"] {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    @include theming.apply-from-theme(
+      (
+        vertical-align: theme.$form-radio-vertical-align,
+        cursor: theme.$form-radio-cursor,
+        width: theme.$form-radio-width,
+        min-width: theme.$form-radio-width,
+        height: theme.$form-radio-height,
+        align-self: theme.$form-radio-align-self,
+        accent-color: theme.$form-radio-background-color,
+      )
+    );
+
+    & + label {
+      width: auto;
+      cursor: pointer;
+      margin-top: 0;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  .radio {
+    > div {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+
+      @include theming.apply-from-theme(
+        (
+          gap: theme.$radio-gap,
+          align-items: theme.$radio-align-items,
+        )
+      );
+    }
+
+    p.error,
+    p.warning,
+    p.confirmation,
+    p.explanation,
+    p.primary {
+      margin: 0;
+    }
+
+    @media (width >= $breakpoint-1) {
+      + p.error,
+      + p.warning,
+      + p.confirmation,
+      + p.explanation,
+      + p.primary {
+        @if validators.args-not-null(theme.$radio-input-width, theme.$radio-gap)
+        {
+          max-width: calc(100% - (theme.$radio-input-width + theme.$radio-gap));
+        }
+
+        @if validators.args-not-null(theme.$radio-input-width, theme.$radio-gap)
+        {
+          margin-left: calc(theme.$radio-input-width + theme.$radio-gap);
+        }
+      }
+    }
+  }
+
+  .option-group {
+    .radio {
+      + p.error,
+      + p.warning,
+      + p.confirmation,
+      + p.explanation,
+      + p.primary {
+        @if validators.args-not-null(
+          theme.$input-column,
+          theme.$radio-input-width
+        )
+        {
+          max-width: calc(
+            theme.$input-column - (theme.$radio-input-width + theme.$radio-gap)
+          );
+        }
+
+        @if validators.args-not-null(
+          theme.$label-column,
+          theme.$radio-input-width,
+          theme.$radio-gap
+        )
+        {
+          margin-left: calc(
+            theme.$label-column + theme.$radio-input-width + theme.$radio-gap
+          );
+        }
+      }
+    }
+  }
+}
