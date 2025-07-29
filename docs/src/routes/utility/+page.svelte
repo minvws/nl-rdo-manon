@@ -18,7 +18,7 @@
     </div>
   </section>
 
-  <section id="utility" class="visually-grouped column-4">
+  <section id="utility" class="visually-grouped column-3">
     <nav aria-labelledby="utility-classes-heading">
       <h2>Zichtbaarheid</h2>
       <ul>
