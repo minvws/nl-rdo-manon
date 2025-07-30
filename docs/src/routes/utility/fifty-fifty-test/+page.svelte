@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Layout fifty-fifty testpagina</h1>
@@ -159,7 +159,7 @@
         </p>
         <h4>Visueel voorbeeld:</h4>
         <div class="fifty-fifty">
-          <article class="visually-grouped">
+          <article>
             <h2>Lorem ipsum dolor set</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
@@ -168,7 +168,7 @@
             </p>
           </article>
 
-          <article class="visually-grouped">
+          <article>
             <h2>Lorem ipsum dolor set</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
@@ -183,12 +183,12 @@
           language="html"
           code={`
 <div class="fifty-fifty">
-  <article class="visually-grouped">
+  <article>
     <h2>Lorem ipsum dolor set</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.</p>
   </article>
 
-  <article class="visually-grouped">
+  <article>
     <h2>Lorem ipsum dolor set</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.</p>
   </article>
@@ -290,7 +290,7 @@
         </p>
         <h4>Visueel voorbeeld:</h4>
         <section class="fifty-fifty">
-          <article class="visually-grouped">
+          <article>
             <h2>Lorem ipsum dolor set</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
@@ -299,7 +299,7 @@
             </p>
           </article>
 
-          <article class="visually-grouped">
+          <article>
             <h2>Lorem ipsum dolor set</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
@@ -314,12 +314,12 @@
           language="html"
           code={`
 <section class="fifty-fifty">
-  <article class="visually-grouped">
+  <article>
     <h2>Lorem ipsum dolor set</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.</p>
   </article>
 
-  <article class="visually-grouped">
+  <article>
     <h2>Lorem ipsum dolor set</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.</p>
   </article>
@@ -421,7 +421,7 @@
         </p>
         <h4>Visueel voorbeeld:</h4>
         <article class="fifty-fifty">
-          <article class="visually-grouped">
+          <article>
             <h2>Lorem ipsum dolor set</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
@@ -430,7 +430,7 @@
             </p>
           </article>
 
-          <article class="visually-grouped">
+          <article>
             <h2>Lorem ipsum dolor set</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
@@ -445,12 +445,12 @@
           language="html"
           code={`
 <article class="fifty-fifty">
-  <article class="visually-grouped">
+  <article>
     <h2>Lorem ipsum dolor set</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.</p>
   </article>
 
-  <article class="visually-grouped">
+  <article>
     <h2>Lorem ipsum dolor set</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.</p>
   </article>

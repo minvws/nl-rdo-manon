@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
 
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>In- en uitklapbaar zijmenu binnen de pagina</h1>
@@ -104,7 +104,10 @@
         <h3 id="sidemenu-collapsible">Inklapbaar zijmenu</h3>
         <h4>Visueel voorbeeld</h4>
         <div class="resize">
-          <iframe src="{base}/examples/sidemenu-in-page-collapsible" title="Voorbeeld" height="320px"
+          <iframe
+            src="{base}/examples/sidemenu-in-page-collapsible"
+            title="Voorbeeld"
+            height="320px"
           ></iframe>
         </div>
 

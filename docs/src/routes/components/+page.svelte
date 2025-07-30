@@ -18,7 +18,7 @@
     </div>
   </section>
 
-  <section id="base-styling" class="visually-grouped">
+  <section id="base-styling">
     <h2>Basisopmaak</h2>
     <div class="column-2">
       <nav aria-labelledby="layout-text-heading">
@@ -45,7 +45,7 @@
     </div>
   </section>
 
-  <section id="layout" class="visually-grouped">
+  <section id="layout">
     <h2>Layout</h2>
     <div class="column-2">
       <nav aria-labelledby="layout-base">
@@ -62,7 +62,7 @@
     </div>
   </section>
 
-  <section id="components" class="visually-grouped">
+  <section id="components">
     <h2>Componenten</h2>
 
     <div class="column-2">
@@ -111,7 +111,7 @@
     </div>
   </section>
 
-  <section id="other" class="visually-grouped">
+  <section id="other">
     <h2 id="other-heading">Overig</h2>
     <p class="warning">
       Let op: de documentatie over deze componenten is waarschijnlijk onvolledig of incorrect.

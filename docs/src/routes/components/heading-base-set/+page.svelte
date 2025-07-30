@@ -20,13 +20,13 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Titel basisset</h1>
         <p>Basisset voor het stylen van titels.</p>
 
-        <div class="visually-grouped">
+        <div>
           <h2>Benodigde stappen:</h2>
           <ol>
             <li>
@@ -56,7 +56,7 @@
         </div>
       </section>
 
-      <section id="examples" class="visually-grouped">
+      <section id="examples">
         <h2>Voorbeelden</h2>
 
         <h3>Beschikbare opties</h3>
@@ -150,7 +150,7 @@
         />
       </section>
 
-      <section id="requirements" class="visually-grouped">
+      <section id="requirements">
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
