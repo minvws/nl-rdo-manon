@@ -1,0 +1,55 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+$header-navigation-button-states: "active", "focus", "hover";
+
+@mixin button-states($prefix) {
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    @each $state in $header-navigation-button-states {
+      &:#{$state},
+      /* Testing purposes */
+      &.#{$state} {
+        @include theming.apply-from-theme(
+          (
+            font-size: theme.$#{$prefix}font-size,
+            font-weight: theme.$#{$prefix}font-weight,
+            line-height: theme.$#{$prefix}line-height,
+            background-color: theme.$#{$prefix}background-color,
+            color: theme.$#{$prefix}text-color,
+            text-decoration: theme.$#{$prefix}text-decoration,
+            border-width: theme.$#{$prefix}border-width,
+            border-style: theme.$#{$prefix}border-style,
+            border-color: theme.$#{$prefix}border-color,
+            border-radius: theme.$#{$prefix}border-radius,
+          )
+        );
+      }
+    }
+  }
+}
+
+body > header,
+.page-header,
+%header-navigation-style {
+  nav.collapsible.collapsed {
+    .collapsing-element {
+      @include button-states(
+        "header-navigation-collapsible-collapsing-element-button-"
+      );
+
+      ul,
+      ol {
+        li {
+          @include button-states(
+            "header-navigation-collapsible-collapsing-element-list-item-button-"
+          );
+        }
+      }
+    }
+  }
+}

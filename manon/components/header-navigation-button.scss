@@ -1,0 +1,158 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+body > header,
+.page-header,
+%header-navigation-style {
+  nav {
+    button,
+    a.button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      @include theming.apply-from-theme(
+        (
+          justify-content: theme.$header-navigation-button-justify-content,
+          align-items: center,
+          align-self: flex-start,
+          gap: theme.$header-navigation-button-gap,
+          background-color: theme.$header-navigation-button-background-color,
+          color: theme.$header-navigation-button-text-color,
+          font-family: theme.$header-navigation-button-font-family,
+          font-size: theme.$header-navigation-button-font-size,
+          font-weight: theme.$header-navigation-button-font-weight,
+          line-height: theme.$header-navigation-button-line-height,
+          text-decoration: theme.$header-navigation-button-text-decoration,
+          text-align: theme.$header-navigation-button-text-align,
+          padding-top: theme.$header-navigation-button-padding-top,
+          padding-right: theme.$header-navigation-button-padding-right,
+          padding-bottom: theme.$header-navigation-button-padding-bottom,
+          padding-left: theme.$header-navigation-button-padding-left,
+          margin: theme.$header-navigation-button-margin,
+          box-sizing: theme.$header-navigation-button-box-sizing,
+          width: theme.$header-navigation-button-width,
+          min-width: theme.$header-navigation-button-min-width,
+          height: theme.$header-navigation-button-height,
+          min-height: theme.$header-navigation-button-min-height,
+          border-width: theme.$header-navigation-button-border-width,
+          border-style: theme.$header-navigation-button-border-style,
+          border-color: theme.$header-navigation-button-border-color,
+          border-radius: theme.$header-navigation-button-border-radius,
+          webkit-border-radius: theme.$header-navigation-button-webkit-border-radius,
+          webkit-appearance: theme.$header-navigation-button-webkit-appearance,
+          cursor: theme.$header-navigation-button-cursor,
+          overflow-wrap: theme.$header-navigation-button-overflow-wrap,
+          image-max-width: theme.$header-navigation-button-image-max-width,
+          child-pointer-events: theme.$header-navigation-button-child-pointer-events,
+        )
+      );
+
+      /* Icon */
+      &::before {
+        position: static;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        font-style: normal;
+
+        @include theming.apply-from-theme(
+          (
+            font-family: theme.$header-navigation-button-icon-font-family,
+            font-size: theme.$header-navigation-button-icon-font-size,
+            line-height: theme.$header-navigation-button-icon-line-height,
+            text-decoration: theme.$header-navigation-button-icon-text-decoration,
+            padding-right: theme.$header-navigation-button-icon-padding-right,
+            padding-left: theme.$header-navigation-button-icon-padding-left,
+            background-color: theme.$header-navigation-button-icon-background-color,
+            color: theme.$header-navigation-button-icon-text-color,
+            content: theme.$header-navigation-button-icon-content,
+          )
+        );
+      }
+
+      /* Icon only */
+      &.icon-only {
+        @include theming.apply-from-theme(
+          (
+            background-color: theme.$header-navigation-button-icon-only-background-color,
+            color: theme.$header-navigation-button-icon-only-text-color,
+            border-width: theme.$header-navigation-button-icon-only-border-width,
+            font-size: theme.$header-navigation-button-icon-only-font-size,
+            min-width: theme.$header-navigation-button-icon-only-min-width,
+            gap: theme.$header-navigation-button-icon-only-gap,
+            padding-right: theme.$header-navigation-button-icon-only-padding-right,
+            padding-left: theme.$header-navigation-button-icon-only-padding-left,
+            icon-font-size: theme.$header-navigation-button-icon-only-icon-font-size,
+            hover-background-color: theme.$header-navigation-button-icon-only-hover-background-color,
+            hover-border-width: theme.$header-navigation-button-icon-only-hover-border-width,
+          )
+        );
+      }
+
+      &.icon,
+      .icon {
+        &::before {
+          position: static;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0;
+          font-style: normal;
+
+          @include theming.apply-from-theme(
+            (
+              font-family: theme.$header-navigation-button-icon-font-family,
+              font-size: theme.$header-navigation-button-icon-font-size,
+              line-height: theme.$header-navigation-button-icon-line-height,
+              text-decoration: theme.$header-navigation-button-icon-text-decoration,
+              padding-right: theme.$header-navigation-button-icon-padding-right,
+              padding-left: theme.$header-navigation-button-icon-padding-left,
+              background-color: theme.$header-navigation-button-icon-background-color,
+              color: theme.$header-navigation-button-icon-text-color,
+            )
+          );
+        }
+      }
+
+      &:focus,
+      &.focus {
+        @include theming.apply-from-theme(
+          (
+            outline: theme.$header-navigation-button-focus-outline,
+            outline-offset: theme.$header-navigation-button-focus-outline-offset,
+            outline-color: theme.$header-navigation-button-focus-outline-color,
+            z-index: theme.$header-navigation-button-focus-z-index,
+            box-shadow: theme.$header-navigation-button-focus-box-shadow,
+            border-radius: theme.$header-navigation-button-focus-outline-border-radius,
+          )
+        );
+
+        &:visited,
+        &.visited {
+          @include theming.apply-from-theme(
+            (
+              outline: theme.$header-navigation-button-focus-outline,
+              outline-offset: theme.$header-navigation-button-focus-outline-offset,
+              outline-color: theme.$header-navigation-button-focus-outline-color,
+              z-index: theme.$header-navigation-button-focus-z-index,
+              box-shadow: theme.$header-navigation-button-focus-box-shadow,
+              border-radius: theme.$header-navigation-button-focus-outline-border-radius,
+            )
+          );
+        }
+      }
+    }
+
+    a.button {
+      @include theming.apply-from-theme(
+        (
+          color: theme.$header-navigation-link-button-text-color,
+        )
+      );
+    }
+  }
+}
