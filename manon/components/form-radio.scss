@@ -82,12 +82,13 @@ form {
       + p.explanation,
       + p.primary {
         @if validators.args-not-null(
-          theme.$input-column,
+          theme.$form-input-column,
           theme.$radio-input-width
         )
         {
           max-width: calc(
-            theme.$input-column - (theme.$radio-input-width + theme.$radio-gap)
+            theme.$form-input-column -
+              (theme.$radio-input-width + theme.$radio-gap)
           );
         }
 

@@ -58,7 +58,7 @@ form.horizontal {
       @media (width >= $breakpoint) {
         @include theming.apply-from-theme(
           (
-            max-width: theme.$input-column,
+            max-width: theme.$form-input-column,
             margin-left: theme.$label-column,
           )
         );
@@ -191,7 +191,7 @@ form.horizontal {
       > * {
         @include theming.apply-from-theme(
           (
-            max-width: theme.$input-column,
+            max-width: theme.$form-input-column,
           )
         );
       }
@@ -261,7 +261,7 @@ form.horizontal {
     > div.button-container {
       @include theming.apply-from-theme(
         (
-          max-width: theme.$input-column,
+          max-width: theme.$form-input-column,
           margin-left: theme.$label-column,
         )
       );
