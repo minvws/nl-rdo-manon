@@ -149,51 +149,6 @@
         />
       </section>
 
-      <section id="variables">
-        <h2>Instelbare variabelen</h2>
-        <p>
-          <strong>Let op:</strong> De uitlijning van horizontaal uitgelijnde tags werken alleen in
-          combinatie met de class <code>horizontal</code>.
-        </p>
-        <div class="horizontal-scroll">
-          <table class="nowrap">
-            <caption>Beschikbare instelbare variabelen:</caption>
-            <thead>
-              <tr>
-                <th scope="col">Variabele</th>
-                <th scope="col">CSS-attribuut</th>
-                <th scope="col">Manon ingestelde waarde</th>
-                <th scope="col">Breekpunt</th>
-                <th scope="col">Class</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>--layout-two-thirds-one-third-gap</td>
-                <td><a href="{base}/documentation/variables#gap">gap</a></td>
-                <td>var(--content-gap)</td>
-                <td>42rem</td>
-                <td>two-thirds-one-third</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3>CSS</h3>
-        <p>
-          Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw
-          project. Kies en gebruik de benodigde variabelen.
-        </p>
-        <Code
-          language="css"
-          code={`
-:root {
-  --layout-two-thirds-one-third-gap
-}
-`}
-        />
-      </section>
-
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
         <a href="{base}/components/layout-two-thirds-one-third-test">Test- en voorbeelden-pagina</a>

@@ -7,8 +7,8 @@
 @forward "base";
 @forward "breadcrumb-bar";
 @forward "button";
-@forward "button-cta";
 @forward "button-container";
+@forward "button-cta";
 @forward "button-destructive";
 @forward "button-to-top";
 @forward "card";
@@ -25,11 +25,11 @@
 @forward "filter";
 @forward "focus";
 @forward "footer";
+@forward "footer-link";
 @forward "footer-link-active";
 @forward "footer-link-focus";
 @forward "footer-link-hover";
 @forward "footer-link-visited";
-@forward "footer-link";
 @forward "footer-navigation-link";
 @forward "footer-navigation-link-active";
 @forward "footer-navigation-link-focus";
@@ -55,6 +55,9 @@
 @forward "headings-base-set";
 @forward "hero";
 @forward "horizontal";
+@forward "image-cover";
+@forward "image-round";
+@forward "image-square";
 @forward "link";
 @forward "list";
 @forward "logo";
@@ -72,7 +75,6 @@
 @forward "radio";
 @forward "section";
 @forward "sidemenu";
-@forward "tabs";
 @forward "skip-to-content";
 @forward "table";
 @forward "table-action-buttons";
@@ -84,11 +86,9 @@
 @forward "table-sticky-header";
 @forward "table-summary";
 @forward "tabs";
-@forward "vertical";
+@forward "tabs";
+@forward "tile";
 @forward "tile-groups";
 @forward "tile-image-cover";
-@forward "tile";
 @forward "vertical";
-@forward "image-cover";
-@forward "image-round";
-@forward "image-square";
+@forward "vertical";
