@@ -1,0 +1,29 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+$breakpoint: 50rem !default;
+
+%horizontal,
+.horizontal {
+  display: flex;
+  /* Preventing specificity issues */
+  flex-direction: row !important;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include theming.apply-from-theme(
+    (
+      justify-content: theme.$horizontal-justify-content,
+      gap: theme.$horizontal-gap,
+    )
+  );
+
+  @media (width >= $breakpoint) {
+    flex-wrap: nowrap;
+  }
+}
+
+.horizontal-group > div {
+  @extend %horizontal;
+}
