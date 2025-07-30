@@ -35,6 +35,7 @@ $glyphs: (
 
 :root {
   --icon-font-family: "tabler-icons";
+  --icon-mask-chevron-right: url("../icons/chevron-right.svg");
 }
 
 @include icon.define-icons($glyphs);

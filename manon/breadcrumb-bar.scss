@@ -54,8 +54,14 @@
       }
 
       &::after {
-        @include icon.icon-format("breadcrumb-bar-");
-        @include icon.icon-content("breadcrumb-bar-");
+        padding-right: var(--breadcrumb-bar-icon-padding-right);
+        padding-left: var(--breadcrumb-bar-icon-padding-left);
+        background-color: var(--breadcrumb-bar-icon-text-color, currentColor);
+        width: var(--breadcrumb-bar-icon-width, auto);
+        height: var(--breadcrumb-bar-icon-height, auto);
+        mask-image: var(--breadcrumb-bar-icon-mask);
+        mask-size: contain;
+        content: "";
 
         & {
           margin-left: var(--breadcrumb-bar-icon-margin-left);
