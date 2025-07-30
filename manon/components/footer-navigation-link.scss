@@ -1,0 +1,88 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+body > footer,
+.page-footer,
+%footer-style {
+  nav {
+    a {
+      @include theming.apply-from-theme(
+        (
+          font-size: theme.$footer-navigation-link-font-size,
+          font-weight: theme.$footer-navigation-link-font-weight,
+          line-height: theme.$footer-navigation-link-line-height,
+          background-color: theme.$footer-navigation-link-background-color,
+          color: theme.$footer-navigation-link-text-color,
+          text-decoration: theme.$footer-navigation-link-text-decoration,
+          border-width: theme.$footer-navigation-link-border-width,
+          border-style: theme.$footer-navigation-link-border-style,
+          border-color: theme.$footer-navigation-link-border-color,
+          border-radius: theme.$footer-navigation-link-border-radius,
+        )
+      );
+
+      &::before {
+        position: static;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        font-style: normal;
+
+        @include theming.apply-from-theme(
+          (
+            font-family: theme.$footer-navigation-link-icon-font-family,
+            font-size: theme.$footer-navigation-link-icon-font-size,
+            line-height: theme.$footer-navigation-link-icon-line-height,
+            text-decoration: theme.$footer-navigation-link-icon-text-decoration,
+            padding-right: theme.$footer-navigation-link-icon-padding-right,
+            padding-left: theme.$footer-navigation-link-icon-padding-left,
+            background-color:
+              theme.$footer-navigation-link-icon-background-color,
+            color: theme.$footer-navigation-link-icon-text-color,
+            content: theme.$footer-navigation-link-icon-content,
+          )
+        );
+      }
+
+      &.icon,
+      .icon {
+        &::before {
+          position: static;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0;
+          font-style: normal;
+
+          @include theming.apply-from-theme(
+            (
+              font-family: theme.$footer-navigation-link-icon-font-family,
+              font-size: theme.$footer-navigation-link-icon-font-size,
+              line-height: theme.$footer-navigation-link-icon-line-height,
+              text-decoration:
+                theme.$footer-navigation-link-icon-text-decoration,
+              padding-right: theme.$footer-navigation-link-icon-padding-right,
+              padding-left: theme.$footer-navigation-link-icon-padding-left,
+              background-color:
+                theme.$footer-navigation-link-icon-background-color,
+              color: theme.$footer-navigation-link-icon-text-color,
+            )
+          );
+        }
+      }
+
+      > span.icon:last-of-type:not(:only-of-type) {
+        @include theming.apply-from-theme(
+          (
+            padding-right: theme.$footer-navigation-link-icon-last-padding-right,
+            padding-left: theme.$footer-navigation-link-icon-last-padding-left,
+          )
+        );
+      }
+    }
+  }
+}
+
