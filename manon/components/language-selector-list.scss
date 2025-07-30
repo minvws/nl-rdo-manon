@@ -1,6 +1,5 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
-@use "../functions/validators";
 
 body > header nav .language-selector,
 .page-header nav .language-selector,
