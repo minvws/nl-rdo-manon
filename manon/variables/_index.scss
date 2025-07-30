@@ -7,7 +7,6 @@
 @forward "base";
 @forward "breadcrumb-bar";
 @forward "button";
-@forward "button-container";
 @forward "button-cta";
 @forward "button-destructive";
 @forward "button-to-top";
@@ -46,6 +45,12 @@
 @forward "form-label";
 @forward "header";
 @forward "header-navigation";
+@forward "header-navigation-button-states";
+@forward "header-navigation-button";
+@forward "header-navigation-collapsible-collapsing-element-button-states";
+@forward "header-navigation-collapsible-collapsing-element-button";
+@forward "header-navigation-collapsible";
+@forward "header-navigation-content-wrapper";
 @forward "headings";
 @forward "headings-base-set";
 @forward "hero";
@@ -85,3 +90,4 @@
 @forward "tile";
 @forward "tile-groups";
 @forward "tile-image-cover";
+
