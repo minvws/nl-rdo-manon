@@ -1,0 +1,46 @@
+/*---------------------------------------------------------------*/
+/*  header-navigation-collapsible-collapsing-element-button.scss */
+/*---------------------------------------------------------------*/
+@use "header-navigation-collapsible-collapsing-element-button-variables";
+@use "mixins/collapsible";
+@use "mixins/link";
+@use "mixins/icon";
+
+@mixin button($prefix) {
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    @include link.styling("#{$prefix}");
+
+    & {
+      width: var(--#{$prefix}width);
+      text-align: var(--#{$prefix}text-align);
+      padding-top: var(--#{$prefix}padding-top);
+      padding-right: var(--#{$prefix}padding-right);
+      padding-bottom: var(--#{$prefix}padding-bottom);
+      padding-left: var(--#{$prefix}padding-left);
+    }
+  }
+}
+
+body > header,
+.page-header {
+  nav.collapsible.collapsed {
+    .collapsing-element {
+      @include button(
+        "header-navigation-collapsible-collapsing-element-button-"
+      );
+
+      ul,
+      ol {
+        li {
+          @include button(
+            "header-navigation-collapsible-collapsing-element-list-item-button-"
+          );
+        }
+      }
+    }
+  }
+}

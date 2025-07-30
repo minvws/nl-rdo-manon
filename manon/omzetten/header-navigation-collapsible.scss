@@ -1,0 +1,236 @@
+/*---------------------------------------------------------------*/
+/*-------------- header-navigation-collapsible.scss -------------*/
+/*---------------------------------------------------------------*/
+@use "header-navigation-collapsible-variables";
+@use "mixins/collapsible";
+@use "mixins/link";
+@use "mixins/icon";
+
+body > header nav.collapsible {
+  @include collapsible.collapsible;
+
+  &.collapsed {
+    /* Menu below breakpoint */
+    button.collapsible-toggle {
+      order: 1;
+      margin-left: auto;
+      border: 0;
+      background-color: var(
+        --header-navigation-collapsible-button-background-color
+      );
+      font-size: var(--header-navigation-collapsible-button-font-size);
+      height: var(--header-navigation-collapsible-button-height);
+      min-height: var(--header-navigation-collapsible-button-min-height);
+      min-width: var(--header-navigation-collapsible-button-min-width);
+      width: var(--header-navigation-collapsible-button-width);
+      gap: 0;
+
+      &::before {
+        content: var(--header-navigation-collapsible-icon);
+        font-size: var(--header-navigation-collapsible-icon-font-size);
+        line-height: initial;
+        color: var(--header-navigation-collapsible-icon-color);
+        background-color: transparent;
+      }
+
+      &[aria-expanded="true"]::before {
+        content: var(--header-navigation-collapsible-icon-collapsed);
+        font-size: var(
+          --header-navigation-collapsible-icon-collapsed-font-size
+        );
+        color: var(--header-navigation-collapsible-icon-color);
+      }
+
+      &[aria-expanded="true"] {
+        /* Element that will be collapsed */
+        + .collapsing-element {
+          flex-direction: var(--header-navigation-collapsible-flex-direction);
+          justify-content: var(--header-navigation-collapsible-justify-content);
+          gap: var(--header-navigation-collapsible-gap);
+
+          max-height: initial;
+          height: auto;
+          max-width: var(--header-navigation-collapsible-max-width);
+          width: var(--header-navigation-collapsible-width);
+          z-index: var(--header-navigation-collapsible-z-index);
+
+          box-sizing: border-box;
+          padding-top: var(--header-navigation-collapsible-padding-top);
+          padding-right: var(--header-navigation-collapsible-padding-right);
+          padding-bottom: var(--header-navigation-collapsible-padding-bottom);
+          padding-left: var(--header-navigation-collapsible-padding-left);
+
+          border-width: var(--header-navigation-collapsible-border-width);
+          border-style: var(--header-navigation-collapsible-border-style);
+          border-color: var(--header-navigation-collapsible-border-color);
+
+          background-color: var(
+            --header-navigation-collapsible-background-color
+          );
+          color: var(--header-navigation-collapsible-text-color);
+
+          -webkit-box-shadow: var(--header-navigation-collapsible-box-shadow);
+          box-shadow: var(--header-navigation-collapsible-box-shadow);
+
+          position: absolute;
+          top: var(--header-navigation-collapsible-top);
+          left: var(--header-navigation-collapsible-left);
+          right: var(--header-navigation-collapsible-right);
+
+          ul,
+          ol {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            gap: var(--header-navigation-collapsible-list-gap);
+            background-color: var(
+              --header-navigation-collapsible-list-background-color
+            );
+
+            li {
+              display: flex;
+              align-items: var(
+                --header-navigation-collapsible-list-item-align-items
+              );
+
+              width: 100%;
+
+              background-color: var(
+                --header-navigation-collapsible-list-item-background-color
+              );
+              color: var(--header-navigation-collapsible-list-item-text-color);
+
+              border-width: var(
+                --header-navigation-collapsible-list-item-border-width
+              );
+              border-style: var(
+                --header-navigation-collapsible-list-item-border-style
+              );
+              border-color: var(
+                --header-navigation-collapsible-list-item-border-color
+              );
+
+              padding-top: var(
+                --header-navigation-collapsible-list-item-padding-top
+              );
+              padding-right: var(
+                --header-navigation-collapsible-list-item-padding-right
+              );
+              padding-bottom: var(
+                --header-navigation-collapsible-list-item-padding-bottom
+              );
+              padding-left: var(
+                --header-navigation-collapsible-list-item-padding-left
+              );
+
+              &::before {
+                display: none;
+                /* Preventing default nav before to show up */
+              }
+
+              &:last-child {
+                border-width: var(
+                  --header-navigation-collapsible-list-item-last-item-border-width
+                );
+              }
+
+              &:first-child {
+                border-width: var(
+                  --header-navigation-collapsible-list-item-first-item-border-width
+                );
+              }
+
+              a {
+                width: 100%;
+                max-width: 100%;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: var(
+                  --header-navigation-collapsible-list-item-link-text-decoration
+                );
+                justify-content: var(
+                  --header-navigation-collapsible-list-item-link-justify-content
+                );
+                border: 0;
+                background-color: var(
+                  --header-navigation-collapsible-list-item-link-background-color
+                );
+                color: var(
+                  --header-navigation-collapsible-list-item-link-text-color
+                );
+                white-space: nowrap;
+
+                padding-top: var(
+                  --header-navigation-collapsible-list-item-link-padding-top
+                );
+                padding-right: var(
+                  --header-navigation-collapsible-list-item-link-padding-right
+                );
+                padding-bottom: var(
+                  --header-navigation-collapsible-list-item-link-padding-bottom
+                );
+                padding-left: var(
+                  --header-navigation-collapsible-list-item-link-padding-left
+                );
+
+                &[aria-current] {
+                  @include link.link-and-icon-styling(
+                    "header-navigation-collapsible-list-item-link-selected-"
+                  );
+                }
+              }
+
+              &:hover {
+                background-color: var(
+                  --header-navigation-collapsible-list-item-link-hover-background-color
+                );
+                color: var(
+                  --header-navigation-collapsible-list-item-hover-text-color
+                );
+                text-decoration: var(
+                  --header-navigation-collapsible-list-item-hover-text-decoration
+                );
+
+                a {
+                  background-color: var(
+                    --header-navigation-collapsible-list-item-link-hover-background-color
+                  );
+                  color: var(
+                    --header-navigation-collapsible-list-item-link-hover-text-color
+                  );
+
+                  &:visited {
+                    background-color: var(
+                      --header-navigation-collapsible-list-item-link-hover-background-color
+                    );
+                  }
+                }
+              }
+
+              &[aria-current] {
+                @include link.link-and-icon-styling(
+                  "header-navigation-collapsible-list-item-link-selected-"
+                );
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* collapsible menu button.
+  /* This button is only visisble when javascript is loaded. */
+  /* Do not add the button to the html manually, JS will do this. */
+  /* When JS isn't available the menu will be opened by default for accessibility. */
+  button.collapsible-toggle {
+    /* JS menu collapsed behaviour */
+    &[aria-expanded="false"] {
+      & ~ * {
+        display: flex;
+      }
+    }
+  }
+}
