@@ -1,0 +1,15 @@
+.visually-hidden {
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+
+  // Overwriting any specifics that might have been set.
+  // !important is used here to solve any specificity issues
+  min-width: 0 !important;
+  min-height: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+  position: absolute !important;
+}
