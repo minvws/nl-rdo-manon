@@ -17,7 +17,7 @@
       <li><a href="#introduction">Introductie</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Kleurensets</h1>

@@ -22,7 +22,7 @@
       <li><a href="#issues">Bekende problemen</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Weergave in kolommen</h1>
@@ -97,7 +97,7 @@
         <Code
           language="css"
           code={`
-@use "@minvws/manon/form-base";
+@use "@minvws/manon/form";
 `}
         />
       </section>
@@ -108,7 +108,7 @@
 
         <p>Bijbehorende elementen:</p>
         <ul>
-          <li><a href="{base}/components/form-base">form-base</a></li>
+          <li><a href="{base}/components/form">form</a></li>
           <li>
             Gewenste layout, bijvoorbeeld:
             <ul>

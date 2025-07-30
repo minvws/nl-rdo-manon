@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Wachtwoord testpagina</h1>

@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Basisformulier testpagina</h1>
@@ -376,7 +376,7 @@
             <input id="form-link" name="form-link" type="text" />
           </div>
 
-          <a href="form-base-test">Lorem ipsum dolor set</a>
+          <a href="form-test">Lorem ipsum dolor set</a>
 
           <button type="submit">Verzend</button>
         </form>
@@ -404,7 +404,7 @@
 
         <h3>Link direct binnen horizontaal uitgelijnd formulier</h3>
         <h4>Visueel voorbeeld:</h4>
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="form-example-base-horizontal">Voorbeeld text input</label>
 
@@ -421,7 +421,7 @@
             </div>
           </div>
 
-          <a href="form-base-test">Lorem ipsum dolor set</a>
+          <a href="form-test">Lorem ipsum dolor set</a>
 
           <button type="submit">Verzend</button>
         </form>
@@ -430,7 +430,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="form-example-base-horizontal">Voorbeeld text input</label>
 
@@ -447,7 +447,7 @@
     </div>
   </div>
 
-  <a href="form-base-test">Lorem ipsum dolor set</a>
+  <a href="form-test">Lorem ipsum dolor set</a>
 
   <button type="submit">Verzend</button>
 </form>
@@ -456,7 +456,7 @@
 
         <h3>Link direct binnen groep in horizontaal uitgelijnd formulier</h3>
         <h4>Visueel voorbeeld:</h4>
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="form-link-example">Voorbeeld text input</label>
 
@@ -474,7 +474,7 @@
           </div>
 
           <div>
-            <a href="form-base-test">Lorem ipsum dolor set</a>
+            <a href="form-test">Lorem ipsum dolor set</a>
           </div>
 
           <button type="submit">Verzend</button>
@@ -484,7 +484,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="form-link-example">Voorbeeld text input</label>
 
@@ -502,7 +502,7 @@
   </div>
 
   <div>
-    <a href="form-base-test">Lorem ipsum dolor set</a>
+    <a href="form-test">Lorem ipsum dolor set</a>
   </div>
 
   <button type="submit">Verzend</button>
@@ -530,7 +530,7 @@
               />
             </div>
 
-            <a href="form-base-test">Lorem ipsum dolor set</a>
+            <a href="form-test">Lorem ipsum dolor set</a>
           </fieldset>
           <button type="submit">Verzend</button>
         </form>
@@ -557,7 +557,7 @@
       />
     </div>
 
-    <a href="form-base-test">Lorem ipsum dolor set</a>
+    <a href="form-test">Lorem ipsum dolor set</a>
   </fieldset>
   <button type="submit">Verzend</button>
 </form>
@@ -566,7 +566,7 @@
 
         <h3>Link direct binnen fieldset binnen horizontaal uitgelijnd formulier</h3>
         <h4>Visueel voorbeeld:</h4>
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <fieldset>
             <legend>Lorem ipsum</legend>
 
@@ -587,7 +587,7 @@
               </div>
             </div>
 
-            <a href="form-base-test">Lorem ipsum dolor set</a>
+            <a href="form-test">Lorem ipsum dolor set</a>
           </fieldset>
           <button type="submit">Verzend</button>
         </form>
@@ -596,7 +596,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <fieldset>
     <legend>Lorem ipsum</legend>
 
@@ -617,7 +617,7 @@
       </div>
     </div>
 
-    <a href="form-base-test">Lorem ipsum dolor set</a>
+    <a href="form-test">Lorem ipsum dolor set</a>
   </fieldset>
   <button type="submit">Verzend</button>
 </form>
@@ -626,7 +626,7 @@
 
         <h3>Link binnen groep binnen fieldset binnen horizontaal uitgelijnd formulier</h3>
         <h4>Visueel voorbeeld:</h4>
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <fieldset>
             <legend>Lorem ipsum</legend>
 
@@ -647,7 +647,7 @@
             </div>
 
             <div>
-              <a href="form-base-test">Lorem ipsum dolor set</a>
+              <a href="form-test">Lorem ipsum dolor set</a>
             </div>
           </fieldset>
           <button type="submit">Verzend</button>
@@ -657,7 +657,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <fieldset>
     <legend>Lorem ipsum</legend>
 
@@ -678,7 +678,7 @@
     </div>
 
     <div>
-      <a href="form-base-test">Lorem ipsum dolor set</a>
+      <a href="form-test">Lorem ipsum dolor set</a>
     </div>
   </fieldset>
   <button type="submit">Verzend</button>
@@ -791,7 +791,7 @@
           <span class="nota-bene" id="field-with-action-button-1-explanation"
             >Dit veld is verplicht. Voorbeeld van een instructietekst
           </span>
-          <div class="horizontal-view">
+          <div class="horizontal">
             <input
               id="field-with-action-button-1"
               name="field-with-action-button-1"
@@ -1282,7 +1282,7 @@
               <option value="Dinosaurus">Dinosaurus</option>
             </optgroup>
           </select>
-          <a href="form-base-test">Link within form test</a>
+          <a href="form-test">Link within form test</a>
 
           <div class="button-container">
             <button>Button 1</button>
@@ -1301,7 +1301,7 @@
         </form>
 
         <h2 id="form-with-columns">Formulier met kolommen</h2>
-        <form method="post" class="horizontal-view">
+        <form method="post" class="horizontal">
           <p class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span> Lorem ipsum dolor sit amet
           </p>
@@ -1424,7 +1424,7 @@
             <label for="inputveld-knop">Voorbeeld inputveld met knop</label>
             <div>
               <span class="nota-bene" id="inputveld-knop-explanation">Dit veld is verplicht</span>
-              <div class="horizontal-view">
+              <div class="horizontal">
                 <input
                   id="inputveld-knop"
                   name="inputveld-knop"
@@ -1676,7 +1676,7 @@
                 aria-invalid="true"
               />
               <p class="error" id="voorbeeld-text-input-error-with-link-message">
-                <span>Foutmelding:</span> Lorem ipsum <a href="form-base-test">dolor sit amet</a>
+                <span>Foutmelding:</span> Lorem ipsum <a href="form-test">dolor sit amet</a>
               </p>
             </div>
           </div>
@@ -1906,12 +1906,12 @@
             <label for="input_with_link_1">Input with link</label>
             <div>
               <input id="input_with_link_1" name="input with link" />
-              <a href="form-base-test">Link within form test</a>
+              <a href="form-test">Link within form test</a>
             </div>
           </div>
 
           <button>Test button</button>
-          <a href="form-base-test">Link within form test</a>
+          <a href="form-test">Link within form test</a>
 
           <div class="button-container">
             <button>Button 1</button>
@@ -2034,7 +2034,7 @@
             <legend>Voorbeeld invoerveld met knop</legend>
             <label for="voorbeeld-input-knop-3">Voorbeeld input met knop</label>
             <span class="nota-bene">Dit veld is verplicht</span>
-            <div class="horizontal-view">
+            <div class="horizontal">
               <div>
                 <span class="nota-bene" id="voorbeeld-input-knop-3-explanation"
                   >Voorbeeld van een instructietekst
@@ -2326,7 +2326,7 @@
           </fieldset>
 
           <button>Test button</button>
-          <a href="form-base-test">Link within form test</a>
+          <a href="form-test">Link within form test</a>
 
           <div class="button-container">
             <button>Button 1</button>
@@ -2345,7 +2345,7 @@
         </form>
 
         <h2 id="form-with-fieldset-columns">Fieldset weergave in kolommen</h2>
-        <form method="post" class="horizontal-view">
+        <form method="post" class="horizontal">
           <p class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span> Lorem ipsum dolor sit amet
           </p>
@@ -2513,7 +2513,7 @@
             <legend>Voorbeeld invoerveld met knop</legend>
             <div>
               <label for="voorbeeld-input-knop-1">Voorbeeld input met knop</label>
-              <div class="horizontal-view">
+              <div class="horizontal">
                 <div>
                   <span class="nota-bene" id="voorbeeld-input-knop-1-explanation"
                     >Voorbeeld van een instructietekst
@@ -3000,12 +3000,12 @@
               <label for="input_with_link_2">Input with link</label>
               <div>
                 <input id="input_with_link_2" name="input with link" />
-                <a href="form-base-test">Link within form test</a>
+                <a href="form-test">Link within form test</a>
               </div>
             </div>
 
             <button>Test button</button><br />
-            <a href="form-base-test">Link within form test</a>
+            <a href="form-test">Link within form test</a>
           </fieldset>
 
           <div class="button-container">
@@ -3139,7 +3139,7 @@
         </form>
 
         <h2 id="grouped-options-2">Gegroepeerde radioknoppen en selectievakken</h2>
-        <form method="post" class="horizontal-view">
+        <form method="post" class="horizontal">
           <fieldset class="grouped-choice-list">
             <legend>Multiple choice radioknoppen en selectievakken test kolommen</legend>
 
@@ -3664,7 +3664,7 @@
         </form>
 
         <h2 id="form-help-columns">Formulier met ingeklapte hulpteksten in kolommen</h2>
-        <form method="post" class="help horizontal-view">
+        <form method="post" class="help horizontal">
           <p class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span> Lorem ipsum dolor sit amet
           </p>
@@ -4078,7 +4078,7 @@
               <td>Lorem</td>
               <td>Ipsum</td>
               <td>
-                <div class="horizontal-view">
+                <div class="horizontal">
                   <form>
                     <button type="submit" class="icon-only icon-cat" value="Lorem">Home</button>
                   </form>

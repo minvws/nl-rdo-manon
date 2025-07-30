@@ -24,7 +24,7 @@
     </ul>
   </SideMenu>
 
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Inklapbaar component</h1>

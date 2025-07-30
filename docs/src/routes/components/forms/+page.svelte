@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Formulieren</h1>
@@ -90,7 +90,7 @@
           <nav aria-labelledby="form-layouts-title" id="form-layouts">
             <h3 id="form-layouts-title">Weergaven</h3>
             <ul>
-              <li><a href="{base}/components/form-base">Basisweergave</a></li>
+              <li><a href="{base}/components/form">Basisweergave</a></li>
               <li>
                 <a href="{base}/components/form-accent-color">Accentkleur op formulierelementen</a>
               </li>
@@ -101,8 +101,7 @@
                 <a href="{base}/components/form-columns">Weergave in kolommen</a>
               </li>
               <li>
-                <a href="{base}/components/form-horizontal-view">Horizontaal uitgelijnd formulier</a
-                >
+                <a href="{base}/components/form-horizontal">Horizontaal uitgelijnd formulier</a>
               </li>
               <li><a href="{base}/components/form-inline">"inline"-formulier</a></li>
             </ul>

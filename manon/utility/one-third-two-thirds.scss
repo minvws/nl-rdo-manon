@@ -1,0 +1,36 @@
+@use "../variables" as theme;
+
+$breakpoint: 42rem !default;
+
+.one-third-two-thirds {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  gap: theme.$layout-gap;
+
+  > * {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  > section,
+  > article,
+  > div {
+    padding: 0;
+  }
+
+  @media (width >= $breakpoint) {
+    gap: theme.$layout-gap;
+
+    > * {
+      width: calc(66.66% - (theme.$layout-gap / 2));
+
+      &:nth-child(odd) {
+        width: calc(33.33% - (theme.$layout-gap / 2));
+      }
+    }
+  }
+}

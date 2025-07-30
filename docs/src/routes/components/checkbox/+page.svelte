@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Selectievak - <code>checkbox</code></h1>
@@ -337,7 +337,7 @@
               <tr>
                 <td>--checkbox-required-gap</td>
                 <td><a href="{base}/documentation/variables#gap">gap</a></td>
-                <td>var(--application-base-gap-small)</td>
+                <td>var($base-gap-small)</td>
                 <td>-</td>
               </tr>
             </tbody>

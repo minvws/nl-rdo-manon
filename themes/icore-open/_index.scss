@@ -1,1 +1,221 @@
-@forward "theme";
+/* Theme configuration */
+@forward "config";
+
+/* Fonts (@font-faces) */
+@use "fonts";
+
+/* Core variables */
+/* These are core sets like color schemes, fonts
+and spacing sets */
+@use "core/border-radii" as border-radii;
+@use "core/color-scheme/" as color-scheme;
+@use "core/shadow" as shadow;
+@use "core/spacing" as spacing;
+@use "core/typography/font-size/body-text" as body-text;
+@use "core/typography/font-size/heading" as heading;
+@use "core/typography/font-style" as font-style;
+@use "core/typography/font-weight" as font-weight;
+@use "core/typography/letter-spacing" as letter-spacing;
+@use "core/typography/line-height" as line-height;
+@use "core/typography/paragraph-spacing" as paragraph-spacing;
+
+/* Semantic variables */
+/* These are variables that have a semantic value. Like branding color */
+@use "semantic" as semantic;
+
+/* Component variables */
+@use "@minvws/manon/variables" with (
+  //base
+  $base-background-color: #{semantic.$base-background-color},
+  $base-font-family: "IBM Plex Sans",
+  $base-font-size: 1rem,
+  $base-font-weight: 300,
+
+  // button
+  $button-text-color: #{color-scheme.$oc-white},
+  $button-border-width: 0,
+  $button-border-color: #{semantic.$color-brand-primary-default},
+  $button-border-radius: #{border-radii.$border-radius-s},
+  $button-padding-top: #{spacing.$spacing-075},
+  $button-padding-right: #{spacing.$spacing-100},
+  $button-padding-bottom: #{spacing.$spacing-075},
+  $button-padding-left: #{spacing.$spacing-100},
+  $button-background-color: #{semantic.$color-brand-primary-default},
+
+  // button hover
+  $button-hover-background-color: #{color-scheme.$oc-blue-6},
+  $button-hover-text-color: #{color-scheme.$oc-white},
+  $button-hover-border-color: #{color-scheme.$oc-blue-6},
+
+  // button destructive
+  $button-destructive-background-color: #{semantic.$color-destructive-default},
+  $button-destructive-text-color: #{color-scheme.$oc-white},
+  $button-destructive-border-color: #{semantic.$color-destructive-default},
+
+  // button destructive hover
+  $button-destructive-hover-background-color: #{semantic.$color-destructive-intense},
+  $button-destructive-hover-text-color: #{color-scheme.$oc-white},
+  $button-destructive-hover-border-color: #{semantic.$color-destructive-intense},
+
+  // button container
+  $button-container-gap: 1rem,
+
+  // breadcrumb bar
+  $breadcrumb-bar-padding-top: #{spacing.$spacing-075},
+  $breadcrumb-bar-padding-right: #{spacing.$spacing-100},
+  $breadcrumb-bar-padding-bottom: #{spacing.$spacing-075},
+  $breadcrumb-bar-padding-left: #{spacing.$spacing-100},
+  $breadcrumb-bar-text-color: #{semantic.$color-text-default},
+  $breadcrumb-bar-gap: #{spacing.$spacing-100},
+  $breadcrumb-bar-list-item-last-child-font-weight: bold,
+  $breadcrumb-bar-list-item-gap: #{spacing.$spacing-100},
+
+  // breadcrumb bar link
+  $breadcrumb-bar-link-text-decoration: none,
+
+  // code block
+  $code-block-padding: #{spacing.$spacing-200},
+  $code-block-background-color: #{color-scheme.$oc-gray-1},
+  $code-block-border-radius: #{border-radii.$border-radius-s},
+
+  // form
+  $form-align-items: flex-start,
+  $form-text-color: #{semantic.$color-text-default},
+  $form-gap: #{spacing.$spacing-200},
+  $form-group-gap: #{spacing.$spacing-100},
+  $form-max-width: 40rem,
+
+  // form input
+  $form-input-padding-top: #{spacing.$spacing-075},
+  $form-input-padding-right: #{spacing.$spacing-100},
+  $form-input-padding-bottom: #{spacing.$spacing-075},
+  $form-input-padding-left: #{spacing.$spacing-100},
+  $form-input-border-width: 1px,
+  $form-input-border-style: solid,
+  $form-input-border-color: #{color-scheme.$oc-gray-4},
+  $form-input-border-radius: #{border-radii.$border-radius-m},
+
+  // form label
+  $form-label-font-weight: bold,
+
+  // footer
+  $footer-align-items: center,
+  $footer-justify-content: center,
+  $footer-gap: #{spacing.$spacing-100},
+  $footer-flex-direction: column,
+  $footer-text-align: center,
+  $footer-padding-top: #{spacing.$spacing-200},
+  $footer-padding-right: #{spacing.$spacing-200},
+  $footer-padding-bottom: #{spacing.$spacing-300},
+  $footer-padding-left: #{spacing.$spacing-200},
+  $footer-list-style: none,
+
+  // header
+  $header-background-color: #{color-scheme.$oc-gray-9},
+
+  // header content wrapper
+  $header-content-wrapper-flex-direction: row,
+  $header-content-wrapper-width: 100%,
+  $header-content-wrapper-gap: 1rem,
+
+  // heading
+  $h1-font-family: #{semantic.$font-family},
+
+  // utility
+  $horizontal-gap: #{spacing.$spacing-100},
+
+  // layout
+  $layout-gap: 2.5rem,
+
+  // link
+  $link-text-color: #{color-scheme.$oc-blue-8},
+  $link-hover-text-color: #{color-scheme.$oc-blue-9},
+  $link-visited-text-color: #{color-scheme.$oc-violet-8},
+  $link-visited-hover-text-color: #{color-scheme.$oc-violet-9},
+
+  // main
+  $main-padding-top: #{spacing.$spacing-400},
+  $main-padding-right: 5%,
+  $main-padding-bottom: #{spacing.$spacing-400},
+  $main-padding-left: 5%,
+  $main-gap: #{spacing.$spacing-225},
+
+  // pagination
+  $pagination-list-gap: #{spacing.$spacing-025},
+
+  // pagination item
+  $pagination-item-width: 2.5rem,
+  $pagination-item-height: 2.5rem,
+
+  // pagination link
+  $pagination-link-background-color: #{color-scheme.$oc-white},
+  $pagination-link-border-radius: #{border-radii.$border-radius-s},
+  $pagination-link-text-decoration: none,
+  $pagination-link-border-color: #{color-scheme.$oc-white},
+  $pagination-link-border-width: 1px,
+  $pagination-link-border-style: solid,
+
+  // pagination link hover
+  $pagination-link-hover-background-color: #{semantic.$color-brand-primary-subtle},
+  $pagination-link-hover-border-color: #{semantic.$color-brand-primary-subtle},
+
+  // pagination link active
+  $pagination-link-active-border-width: 1px,
+  $pagination-link-active-border-style: solid,
+  $pagination-link-active-border-color: #{semantic.$color-brand-primary-default},
+  $pagination-link-active-text-color: #{semantic.$color-brand-primary-default},
+  $pagination-link-active-font-weight: bold,
+
+  // Navigation
+  $navigation-list-gap: #{spacing.$spacing-050},
+  $navigation-link-text-decoration: none,
+  $navigation-list-padding: 1rem,
+
+  // section
+  $section-background-color: #{color-scheme.$oc-white},
+  $section-padding-top: #{spacing.$spacing-200},
+  $section-padding-right: #{spacing.$spacing-200},
+  $section-padding-bottom: #{spacing.$spacing-300},
+  $section-padding-left: #{spacing.$spacing-200},
+  $section-max-width: 50rem,
+  $section-gap: #{spacing.$spacing-400},
+  $section-flex-direction: column,
+  $section-border-radius: #{border-radii.$border-radius-m},
+  $section-justify-content: flex-start,
+  $section-align-items: flex-start,
+
+  // table
+  $table-gap: #{spacing.$spacing-050},
+  $table-head-background-color: #{color-scheme.$oc-gray-1},
+  $table-head-border-width: 1px,
+  $table-head-border-style: solid,
+  $table-head-border-color: #{color-scheme.$oc-gray-1},
+  $table-head-padding: #{spacing.$spacing-075} #{spacing.$spacing-100},
+  $table-head-text-align: left,
+  $table-cell-padding: #{spacing.$spacing-075} #{spacing.$spacing-100},
+  $table-cell-gap: #{spacing.$spacing-025},
+  $table-row-border-width: 1px 0,
+  $table-row-border-style: solid,
+  $table-row-border-color: #{color-scheme.$oc-gray-1},
+
+  // table caption
+  $table-caption-text-align: left,
+  $table-caption-padding: #{spacing.$spacing-100} 0,
+
+  // tile
+  $tile-background-color: #{color-scheme.$oc-white},
+  $tile-padding-top: #{spacing.$spacing-100},
+  $tile-padding-right: #{spacing.$spacing-100},
+  $tile-padding-bottom: #{spacing.$spacing-100},
+  $tile-padding-left: #{spacing.$spacing-100},
+  $tile-border-width: 1px,
+  $tile-border-style: solid,
+  $tile-border-color: #{color-scheme.$oc-gray-3},
+  $tile-border-radius: #{border-radii.$border-radius-m},
+
+  // tile groups
+  $tile-groups-gap: #{spacing.$spacing-100},
+
+  // tile image
+  $tile-image-cover-margin-bottom: #{spacing.$spacing-100}
+);

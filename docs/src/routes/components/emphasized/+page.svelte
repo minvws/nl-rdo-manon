@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Benadrukte weergave</h1>
@@ -100,7 +100,7 @@
         <h2>Instelbare variabelen</h2>
         <p>
           <strong>Let op:</strong> De uitlijning van horizontaal uitgelijnde tags werken alleen in
-          combinatie met de class <code>horizontal-view</code>.
+          combinatie met de class <code>horizontal</code>.
         </p>
         <div class="horizontal-scroll">
           <table class="nowrap">

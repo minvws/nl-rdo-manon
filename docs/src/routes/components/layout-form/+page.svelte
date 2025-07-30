@@ -21,14 +21,14 @@
     </ul>
   </SideMenu>
 
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Layout form</h1>
         <p>Weergave opties voor pagina's met als formulieren als hoofdfunctie.</p>
         <p>
           Het is ook mogelijk om de weergave van alle formulieren aan te passen. Gebruik daarvoor: <a
-            href="{base}/components/form-base">Basis formulieren</a
+            href="{base}/components/form">Basis formulieren</a
           >.
         </p>
 
@@ -148,7 +148,7 @@
         <h2>Instelbare variabelen</h2>
         <p>
           <strong>Let op:</strong> De uitlijning van horizontaal uitgelijnde tags werken alleen in
-          combinatie met de class <code>horizontal-view</code>.
+          combinatie met de class <code>horizontal</code>.
         </p>
         <div class="horizontal-scroll">
           <table class="nowrap">

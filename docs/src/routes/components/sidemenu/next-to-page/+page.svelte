@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
 
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Zijmenu naast de pagina</h1>
@@ -94,7 +94,7 @@
       </div>
     </header>
     <main>
-      <article class="visually-grouped">
+      <article>
         <div><section>Main</section></div>
       </article>
     </main>

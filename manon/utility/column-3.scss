@@ -1,0 +1,29 @@
+@use "../variables" as theme;
+
+$columns-breakpoint-1: 42rem !default;
+$columns-breakpoint-2: 60rem !default;
+
+.column-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: theme.$layout-gap;
+  width: 100%;
+  box-sizing: border-box;
+
+  > * {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (width >= $columns-breakpoint-1) {
+  .column-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width >= $columns-breakpoint-2) {
+  .column-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

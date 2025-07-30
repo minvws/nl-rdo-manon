@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
 
-  <article id="button-base" class="visually-grouped">
+  <article id="button-base">
     <div>
       <section id="introduction">
         <h1>Icoonknoppen zonder achtergrond</h1>
@@ -34,7 +34,9 @@
             van een icoonknop zonder achtergrond.
           </li>
           <li>
-            Voeg een icoon toe aan de knop. Zie voor meer informatie: <a href="{base}/components/button/icon">Icoonknop</a>.
+            Voeg een icoon toe aan de knop. Zie voor meer informatie: <a
+              href="{base}/components/button/icon">Icoonknop</a
+            >.
           </li>
         </ol>
 

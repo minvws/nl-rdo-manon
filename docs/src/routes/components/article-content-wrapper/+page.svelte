@@ -22,7 +22,7 @@
     </ul>
   </SideMenu>
 
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Article content wrapper</h1>
@@ -62,7 +62,7 @@
         <Code
           language="html"
           code={`
-<article class="visually-grouped">
+<article>
   <div> <!-- Content wrapper -->
     <!-- Content -->
   <div>
