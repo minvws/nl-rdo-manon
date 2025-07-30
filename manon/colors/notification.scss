@@ -1,0 +1,28 @@
+// Notification colors
+
+@use "open-color" as color-scheme;
+
+/* Explanation */
+$color-notification-explanation-default: #{color-scheme.$oc-blue-0};
+$color-notification-explanation-subtle: #{color-scheme.$oc-blue-0};
+$color-notification-explanation-intense: #{color-scheme.$oc-blue-7};
+
+/* Confirmation */
+$color-notification-confirmation-default: #{color-scheme.$oc-green-0};
+$color-notification-confirmation-subtle: #{color-scheme.$oc-green-0};
+$color-notification-confirmation-intense: #{color-scheme.$oc-green-7};
+
+/* Warning */
+$color-notification-warning-default: #{color-scheme.$oc-yellow-0};
+$color-notification-warning-subtle: #{color-scheme.$oc-yellow-1};
+$color-notification-warning-intense: #{color-scheme.$oc-yellow-5};
+
+/* Error */
+$color-notification-error-default: #{color-scheme.$oc-red-0};
+$color-notification-error-subtle: #{color-scheme.$oc-red-1};
+$color-notification-error-intense: #{color-scheme.$oc-red-7};
+
+/* System */
+$color-notification-system-default: #{color-scheme.$oc-gray-0};
+$color-notification-system-subtle: #{color-scheme.$oc-gray-2};
+$color-notification-system-intense: #{color-scheme.$oc-gray-9};

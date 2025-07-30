@@ -1,5 +1,5 @@
 <script module>
-  export const breadcrumb = "Links";
+  export const breadcrumb = "Link";
 </script>
 
 <script lang="ts">
@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-  <title>Links</title>
+  <title>Link</title>
 </svelte:head>
 
 <main class="sidemenu" id="main-content" tabindex="-1">
@@ -18,12 +18,13 @@
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
+      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
-        <h1>Links</h1>
+        <h1>Link</h1>
 
         <h2>Benodigde stappen:</h2>
         <ol>
@@ -126,7 +127,7 @@
         <Code
           language="css"
           code={`
-@use "@minvws/manon/links";
+@use "@minvws/manon/link";
 `}
         />
       </section>
@@ -158,7 +159,7 @@
                 >
                 <td>transparent</td>
                 <td>-</td>
-                <th rowspan="4" scope="rowgroup">links</th>
+                <th rowspan="4" scope="rowgroup">link</th>
               </tr>
 
               <tr>
@@ -257,6 +258,11 @@
 }
 `}
         />
+      </section>
+
+      <section id="related">
+        <h2>Gerelateerde pagina's</h2>
+        <a href="{base}/components/link/test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

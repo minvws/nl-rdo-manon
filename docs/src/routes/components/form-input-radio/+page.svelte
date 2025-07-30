@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Radio-selecteerknop - <code>radio-button</code></h1>
@@ -154,106 +154,6 @@
           code={`
 @use "@minvws/manon/radio";
 @use "@minvws/manon/form-radio";
-`}
-        />
-      </section>
-
-      <section id="variables">
-        <h2>Instelbare variabelen</h2>
-        <p>
-          <strong>Let op:</strong> De uitlijning van horizontaal uitgelijnde tags werken alleen in
-          combinatie met de class <code>horizontal</code>.
-        </p>
-        <div class="horizontal-scroll">
-          <table class="nowrap">
-            <caption>Beschikbare instelbare variabelen:</caption>
-            <thead>
-              <tr>
-                <th scope="col">Variabele</th>
-                <th scope="col">CSS-attribuut</th>
-                <th scope="col">Manon ingestelde waarde</th>
-                <th scope="col">Breekpunt</th>
-                <th scope="col">Class</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>--radio-gap</td>
-                <td><a href="{base}/documentation/variables#gap">gap</a></td>
-                <td>0.75rem</td>
-                <td>-</td>
-                <th rowspan="7" scope="rowgroup">radio-button</th>
-              </tr>
-
-              <tr>
-                <td>--radio-align-items</td>
-                <td><a href="{base}/documentation/variables#align-items">align-items</a></td>
-                <td>center</td>
-                <td>-</td>
-              </tr>
-
-              <tr>
-                <td>--radio-width</td>
-                <td><a href="{base}/documentation/variables#width">width</a></td>
-                <td>1.25rem</td>
-                <td>-</td>
-              </tr>
-
-              <tr>
-                <td>--radio-height</td>
-                <td><a href="{base}/documentation/variables#height">height</a></td>
-                <td>1.25rem</td>
-                <td>-</td>
-              </tr>
-
-              <tr>
-                <td>--radio-accent-color</td>
-                <td><a href="{base}/documentation/variables#accent-color">accent-color</a></td>
-                <td>var(--branding-color-1, initial)</td>
-                <td>-</td>
-              </tr>
-
-              <tr>
-                <td>--radio-label-width</td>
-                <td><a href="{base}/documentation/variables#width">width</a></td>
-                <td>auto</td>
-                <td>-</td>
-              </tr>
-
-              <tr>
-                <td>--radio-required-gap</td>
-                <td><a href="{base}/documentation/variables#gap">gap</a></td>
-                <td>var(--application-base-gap-small)</td>
-                <td>-</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3>CSS</h3>
-        <p>
-          Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw
-          project. Kies en gebruik de benodigde variabelen.
-        </p>
-        <Code
-          language="css"
-          code={`
-:root {
-  /* Radio button */
-  --radio-gap: ;
-  --radio-align-items: ;
-
-  /* Circle */
-  --radio-width: ;
-  --radio-height: ;
-  --radio-accent-color: ;
-
-  /* Label */
-  --radio-label-width: ;
-
-  /* Required */
-  --radio-required-gap: ;
-}
 `}
         />
       </section>

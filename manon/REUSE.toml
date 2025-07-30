@@ -1,0 +1,6 @@
+version = 1
+
+[[annotations]]
+path = "**"
+SPDX-FileCopyrightText = "iRealisatie - Ministerie van Volksgezondheid, Welzijn en Sport"
+SPDX-License-Identifier = "EUPL-1.2"
