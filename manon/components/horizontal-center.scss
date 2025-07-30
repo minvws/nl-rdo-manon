@@ -8,7 +8,7 @@
 
   @include theming.apply-from-theme(
     (
-      max-width: theme.$horizontal-center-max-width !important,
+      max-width: theme.$horizontal-center-max-width,
     )
   );
 }
