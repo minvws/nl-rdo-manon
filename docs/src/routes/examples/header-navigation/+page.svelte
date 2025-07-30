@@ -1,5 +1,8 @@
 <script>
   import { page } from "$app/state";
+  import { onMount } from "svelte";
+  import { initCollapsible } from "$lib/manon";
+  onMount(initCollapsible);
 </script>
 
 <header>

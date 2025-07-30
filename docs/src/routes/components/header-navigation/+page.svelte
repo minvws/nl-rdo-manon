@@ -357,6 +357,18 @@
           language="css"
           code={`
 @use "@minvws/manon/header-navigation";
+@use "@minvws/manon/header-navigation-content-wrapper";
+@use "@minvws/manon/header-navigation-link";
+@use "@minvws/manon/header-navigation-link-visited";
+@use "@minvws/manon/header-navigation-link-hover";
+@use "@minvws/manon/header-navigation-link-active";
+@use "@minvws/manon/header-navigation-link-focus";
+@use "@minvws/manon/header-navigation-collapsible";
+@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button";
+@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button-states";
+
+// Accessibility
+@use "@minvws/manon/skip-to-content";
 `}
         />
       </section>
