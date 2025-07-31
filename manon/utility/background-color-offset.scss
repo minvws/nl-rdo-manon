@@ -3,7 +3,7 @@
 
 .background-color-offset {
   background-color: theme.$background-color-offset-background-color;
-  
+
   @include theming.apply-from-theme(
     (
       color: theme.$background-color-offset-text-color,

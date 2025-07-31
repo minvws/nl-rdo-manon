@@ -21,7 +21,7 @@
     "sass": ">=1.77.6"
   },
   "devDependencies": {
-    "vitest": "^2.0.4",
+    "vitest": "^3.2.4",
     "prettier": "^3.6.2",
     "sass": "^1.89.2",
     "sass-true": "^9.0.0",
