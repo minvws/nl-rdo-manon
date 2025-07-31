@@ -4,9 +4,9 @@
 img {
   @include theming.apply-from-theme(
     (
-      max-width: theme.$img-base-max-width,
-      object-position: theme.$img-base-object-position,
-      object-fit: theme.$img-base-object-fit,
+      max-width: theme.$img-max-width,
+      object-position: theme.$img-object-position,
+      object-fit: theme.$img-object-fit,
     )
   );
 }
