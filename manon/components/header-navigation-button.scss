@@ -1,6 +1,5 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
-@use "../functions/validators";
 
 body > header,
 .page-header,
@@ -39,12 +38,14 @@ body > header,
           border-style: theme.$header-navigation-button-border-style,
           border-color: theme.$header-navigation-button-border-color,
           border-radius: theme.$header-navigation-button-border-radius,
-          webkit-border-radius: theme.$header-navigation-button-webkit-border-radius,
+          webkit-border-radius:
+            theme.$header-navigation-button-webkit-border-radius,
           webkit-appearance: theme.$header-navigation-button-webkit-appearance,
           cursor: theme.$header-navigation-button-cursor,
           overflow-wrap: theme.$header-navigation-button-overflow-wrap,
           image-max-width: theme.$header-navigation-button-image-max-width,
-          child-pointer-events: theme.$header-navigation-button-child-pointer-events,
+          child-pointer-events:
+            theme.$header-navigation-button-child-pointer-events,
         )
       );
 
@@ -63,10 +64,12 @@ body > header,
             font-family: theme.$header-navigation-button-icon-font-family,
             font-size: theme.$header-navigation-button-icon-font-size,
             line-height: theme.$header-navigation-button-icon-line-height,
-            text-decoration: theme.$header-navigation-button-icon-text-decoration,
+            text-decoration:
+              theme.$header-navigation-button-icon-text-decoration,
             padding-right: theme.$header-navigation-button-icon-padding-right,
             padding-left: theme.$header-navigation-button-icon-padding-left,
-            background-color: theme.$header-navigation-button-icon-background-color,
+            background-color:
+              theme.$header-navigation-button-icon-background-color,
             color: theme.$header-navigation-button-icon-text-color,
             content: theme.$header-navigation-button-icon-content,
           )
@@ -77,17 +80,22 @@ body > header,
       &.icon-only {
         @include theming.apply-from-theme(
           (
-            background-color: theme.$header-navigation-button-icon-only-background-color,
+            background-color:
+              theme.$header-navigation-button-icon-only-background-color,
             color: theme.$header-navigation-button-icon-only-text-color,
             border-width: theme.$header-navigation-button-icon-only-border-width,
             font-size: theme.$header-navigation-button-icon-only-font-size,
             min-width: theme.$header-navigation-button-icon-only-min-width,
             gap: theme.$header-navigation-button-icon-only-gap,
-            padding-right: theme.$header-navigation-button-icon-only-padding-right,
+            padding-right:
+              theme.$header-navigation-button-icon-only-padding-right,
             padding-left: theme.$header-navigation-button-icon-only-padding-left,
-            icon-font-size: theme.$header-navigation-button-icon-only-icon-font-size,
-            hover-background-color: theme.$header-navigation-button-icon-only-hover-background-color,
-            hover-border-width: theme.$header-navigation-button-icon-only-hover-border-width,
+            icon-font-size:
+              theme.$header-navigation-button-icon-only-icon-font-size,
+            hover-background-color:
+              theme.$header-navigation-button-icon-only-hover-background-color,
+            hover-border-width:
+              theme.$header-navigation-button-icon-only-hover-border-width,
           )
         );
       }
@@ -108,10 +116,12 @@ body > header,
               font-family: theme.$header-navigation-button-icon-font-family,
               font-size: theme.$header-navigation-button-icon-font-size,
               line-height: theme.$header-navigation-button-icon-line-height,
-              text-decoration: theme.$header-navigation-button-icon-text-decoration,
+              text-decoration:
+                theme.$header-navigation-button-icon-text-decoration,
               padding-right: theme.$header-navigation-button-icon-padding-right,
               padding-left: theme.$header-navigation-button-icon-padding-left,
-              background-color: theme.$header-navigation-button-icon-background-color,
+              background-color:
+                theme.$header-navigation-button-icon-background-color,
               color: theme.$header-navigation-button-icon-text-color,
             )
           );
@@ -127,7 +137,8 @@ body > header,
             outline-color: theme.$header-navigation-button-focus-outline-color,
             z-index: theme.$header-navigation-button-focus-z-index,
             box-shadow: theme.$header-navigation-button-focus-box-shadow,
-            border-radius: theme.$header-navigation-button-focus-outline-border-radius,
+            border-radius:
+              theme.$header-navigation-button-focus-outline-border-radius,
           )
         );
 
@@ -136,11 +147,13 @@ body > header,
           @include theming.apply-from-theme(
             (
               outline: theme.$header-navigation-button-focus-outline,
-              outline-offset: theme.$header-navigation-button-focus-outline-offset,
+              outline-offset:
+                theme.$header-navigation-button-focus-outline-offset,
               outline-color: theme.$header-navigation-button-focus-outline-color,
               z-index: theme.$header-navigation-button-focus-z-index,
               box-shadow: theme.$header-navigation-button-focus-box-shadow,
-              border-radius: theme.$header-navigation-button-focus-outline-border-radius,
+              border-radius:
+                theme.$header-navigation-button-focus-outline-border-radius,
             )
           );
         }
