@@ -1,0 +1,15 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+.label {
+  display: inline-block;
+  text-align: center;
+
+  @include theming.apply-from-theme(
+    (
+      padding: theme.$label-base-padding,
+      min-width: theme.$label-base-min-width,
+      font-size: theme.$label-base-font-size,
+    )
+  );
+}
