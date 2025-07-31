@@ -7,9 +7,9 @@
 
   @include theming.apply-from-theme(
     (
-      padding: theme.$label-base-padding,
-      min-width: theme.$label-base-min-width,
-      font-size: theme.$label-base-font-size,
+      padding: theme.$label-padding,
+      min-width: theme.$label-min-width,
+      font-size: theme.$label-font-size,
     )
   );
 }
