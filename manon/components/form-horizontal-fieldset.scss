@@ -1,8 +1,6 @@
-/*---------------------------------------------------------------*/
-/*-------------- form-horizontal-fieldset.scss -------------*/
-/*---------------------------------------------------------------*/
-@use "form-horizontal-variables";
-@use "form-horizontal-fieldset-variables";
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
 
 $breakpoint: 24rem;
 
@@ -25,18 +23,30 @@ form.horizontal {
   > fieldset {
     > div {
       display: block;
+
       /* resetting gap as it can not be used within fieldsets */
       gap: 0;
+
       /* Adds margin instead of gap */
-      margin-bottom: var(--form-gap);
+      @include theming.apply-from-theme(
+        (
+          margin-bottom: theme.$form-horizontal-view-fieldset-margin-bottom,
+        )
+      );
 
       @media (width >= $breakpoint) {
         > * {
-          width: var(--input-column);
           /* resetting gap as it can not be used within fieldsets */
           gap: 0;
+
           /* float objects to move inputs into place even when there is no label */
           float: right;
+
+          @include theming.apply-from-theme(
+            (
+              width: theme.$form-horizontal-view-fieldset-input-column,
+            )
+          );
         }
 
         > div {
@@ -45,17 +55,29 @@ form.horizontal {
 
         label {
           float: left;
-          width: var(--label-column);
-          padding-right: var(--form-horizontal-gap);
-          margin-top: var(--form-horizontal-fieldset-label-margin-top);
+
+          @include theming.apply-from-theme(
+            (
+              width: theme.$form-horizontal-view-fieldset-label-column,
+              padding-right:
+                theme.$form-horizontal-view-fieldset-form-horizontal-gap,
+              margin-top: theme.$form-horizontal-view-fieldset-label-margin-top,
+            )
+          );
         }
       }
     }
 
     .required {
       .nota-bene {
-        margin-bottom: var(--form-required-gap);
         float: left;
+
+        @include theming.apply-from-theme(
+          (
+            margin-bottom:
+              theme.$form-horizontal-view-fieldset-form-required-gap,
+          )
+        );
       }
     }
 
@@ -70,7 +92,11 @@ form.horizontal {
       float: right;
 
       @media (width >= $breakpoint) {
-        width: var(--input-column);
+        @include theming.apply-from-theme(
+          (
+            width: theme.$form-horizontal-view-fieldset-input-column,
+          )
+        );
       }
 
       .horizontal {
@@ -85,9 +111,15 @@ form.horizontal {
       }
 
       input {
-        width: var(--form-checkbox-width);
-        margin-right: var(--form-checkbox-margin-right);
         float: left;
+
+        @include theming.apply-from-theme(
+          (
+            width: theme.$form-horizontal-view-fieldset-form-checkbox-width,
+            margin-right:
+              theme.$form-horizontal-view-fieldset-form-checkbox-margin-right,
+          )
+        );
       }
 
       label {
@@ -109,11 +141,19 @@ form.horizontal {
     }
 
     .checkbox input[type="checkbox"] + label {
-      max-width: calc(100% - var(--form-fieldset-checkbox-width));
+      @if theme.$form-horizontal-view-fieldset-form-checkbox-width {
+        max-width: calc(
+          100% - theme.$form-horizontal-view-fieldset-form-checkbox-width
+        );
+      }
     }
 
     .radio input[type="radio"] + label {
-      max-width: calc(100% - var(--radio-input-width));
+      @if theme.$form-horizontal-view-fieldset-radio-input-width {
+        max-width: calc(
+          100% - theme.$form-horizontal-view-fieldset-radio-input-width
+        );
+      }
     }
 
     @media (width >= $breakpoint) {
@@ -123,7 +163,11 @@ form.horizontal {
       > input[type="submit"],
       > input[type="reset"],
       > a {
-        margin-left: var(--label-column);
+        @include theming.apply-from-theme(
+          (
+            margin-left: theme.$form-horizontal-view-fieldset-label-column,
+          )
+        );
       }
 
       & + button,
@@ -131,7 +175,11 @@ form.horizontal {
       & + input[type="button"],
       & + input[type="submit"],
       & + input[type="reset"] {
-        margin-left: var(--label-column);
+        @include theming.apply-from-theme(
+          (
+            margin-left: theme.$form-horizontal-view-fieldset-label-column,
+          )
+        );
       }
     }
   }

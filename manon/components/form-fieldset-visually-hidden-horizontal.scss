@@ -26,7 +26,7 @@ form.horizontal {
 
         @include theming.apply-from-theme(
           (
-            width: theme.$input-column,
+            width: theme.$form-input-column,
           )
         );
       }
