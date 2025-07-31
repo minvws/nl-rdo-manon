@@ -5,14 +5,19 @@
 $breakpoint: 24rem !default;
 
 form.horizontal {
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: column !important;
+  align-items: flex-start;
 
-  @include theming.apply-from-theme(
-    (
-      gap: theme.$form-horizontal-gap,
-    )
-  );
+  > div {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include theming.apply-from-theme(
+      (
+        gap: theme.$form-horizontal-gap,
+      )
+    );
+  }
 
   button,
   a.button,
@@ -90,12 +95,6 @@ form.horizontal {
     &.radio {
       flex-wrap: nowrap;
 
-      @include theming.apply-from-theme(
-        (
-          gap: theme.$form-radio-margin-right,
-        )
-      );
-
       %horizontal-radio,
       input[type="radio"] {
         flex-grow: 0;
@@ -162,14 +161,6 @@ form.horizontal {
       > * {
         max-width: 100%;
       }
-    }
-
-    input[type="color"] {
-      @include theming.apply-from-theme(
-        (
-          max-width: theme.$form-input-color-max-width,
-        )
-      );
     }
 
     > * {

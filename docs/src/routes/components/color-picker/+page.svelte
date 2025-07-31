@@ -51,7 +51,6 @@
       <form action="" method="post">
         <label for="color-input-1">Selecteer de gewenste kleur</label>
         <input id="color-input-1" name="color-input-1" type="color" value="#ffffff" />
-
         <button type="submit">Verzend</button>
       </form>
 
@@ -61,9 +60,8 @@
         language="html"
         code={`
 <form action="" method="post">
-<label for="color-input-1">Selecteer de gewenste kleur</label>
-<input id="color-input-1" name="color-input-1" type="color" value="#ffffff">
-
+  <label for="color-input-1">Selecteer de gewenste kleur</label>
+  <input id="color-input-1" name="color-input-1" type="color" value="#ffffff">
 <button type="submit">Verzend</button>
 </form>
 `}

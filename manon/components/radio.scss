@@ -5,7 +5,7 @@
 form {
   $breakpoint-1: 24rem !default;
 
-  .radio {
+  div.radio {
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -44,14 +44,12 @@ form {
       + p.confirmation,
       + p.explanation,
       + p.primary {
-        @if validators.args-not-null(theme.$radio-input-width, theme.$radio-gap)
-        {
-          max-width: calc(100% - (theme.$radio-input-width + theme.$radio-gap));
+        @if validators.args-not-null(theme.$radio-width, theme.$radio-gap) {
+          max-width: calc(100% - (theme.$radio-width + theme.$radio-gap));
         }
 
-        @if validators.args-not-null(theme.$radio-input-width, theme.$radio-gap)
-        {
-          margin-left: calc(theme.$radio-input-width + theme.$radio-gap);
+        @if validators.args-not-null(theme.$radio-width, theme.$radio-gap) {
+          margin-left: calc(theme.$radio-width + theme.$radio-gap);
         }
       }
     }
@@ -64,26 +62,13 @@ form {
 
       @include theming.apply-from-theme(
         (
-          width: theme.$radio-input-width,
-          min-width: theme.$radio-input-width,
-          height: theme.$radio-input-height,
-          accent-color: theme.$radio-input-accent-color,
-        )
-      );
-
-      @include theming.apply-from-theme(
-        (
+          height: theme.$radio-height,
+          accent-color: theme.$radio-accent-color,
           vertical-align: theme.$radio-vertical-align,
           cursor: theme.$radio-cursor,
           width: theme.$radio-width,
           min-width: theme.$radio-width,
-          height: theme.$radio-height,
           align-self: theme.$radio-align-self,
-          accent-color: theme.$radio-background-color,
-          width: theme.$radio-input-width,
-          min-width: theme.$radio-input-width,
-          height: theme.$radio-input-height,
-          accent-color: theme.$radio-input-accent-color,
         )
       );
 
@@ -145,25 +130,22 @@ form {
       + p.primary {
         @if validators.args-not-null(
           theme.$form-input-column,
-          theme.$radio-input-width
+          theme.$radio-width
         )
         {
           max-width: calc(
-            theme.$form-input-column -
-              (theme.$radio-input-width + theme.$radio-gap)
+            theme.$form-input-column - (theme.$radio-width + theme.$radio-gap)
           );
         }
 
         @if validators.args-not-null(
           theme.$form-label-column,
-          theme.$radio-input-width,
+          theme.$radio-width,
           theme.$radio-gap
         )
         {
           margin-left: calc(
-            theme.$form-label-column +
-              theme.$radio-input-width +
-              theme.$radio-gap
+            theme.$form-label-column + theme.$radio-width + theme.$radio-gap
           );
         }
       }

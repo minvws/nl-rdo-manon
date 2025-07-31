@@ -42,15 +42,15 @@
 @forward "form-fieldset-radio";
 @forward "form-fieldset-visually-hidden-horizontal";
 @forward "form-fieldset";
+@forward "form-required";
 @forward "form-grouped-choice-list";
 @forward "form-help";
-@forward "form-horizontal-view-fieldset";
-@forward "form-horizontal-view";
+@forward "form-horizontal-fieldset";
+@forward "form-horizontal";
 @forward "form-inline";
 @forward "form-input-focus";
 @forward "form-input";
 @forward "form-label";
-@forward "form-required-base";
 @forward "form-select";
 @forward "form-textarea";
 @forward "form";
@@ -71,6 +71,7 @@
 @forward "max-line-length";
 @forward "message-counter";
 @forward "navigation";
+@forward "nota-bene";
 @forward "notification";
 @forward "notification-confirmation";
 @forward "notification-error";

@@ -144,7 +144,6 @@
         language="css"
         code={`
 @use "@minvws/manon/radio";
-@use "@minvws/manon/form-radio";
 `}
       />
     </section>

@@ -51,8 +51,10 @@
       <h2>Basis</h2>
       <h4>Visueel voorbeeld:</h4>
       <form action="" method="post">
-        <label for="example-input-base">Voorbeeld invoerveld</label>
-        <input id="example-input-base" name="example-input-base" type="text" />
+        <div>
+          <label for="example-input-base">Voorbeeld invoerveld</label>
+          <input id="example-input-base" name="example-input-base" type="text" />
+        </div>
         <button type="submit">Verzend</button>
       </form>
 
@@ -61,12 +63,10 @@
         language="html"
         code={`
 <form action="" method="post">
-  <label for="example-input-base">Voorbeeld invoerveld</label>
-  <input
-    id="example-input-base"
-    name="example-input-base"
-    type="text"
-  />
+  <div>
+    <label for="example-input-base">Voorbeeld invoerveld</label>
+    <input id="example-input-base" name="example-input-base" type="text" />
+  </div>
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -91,9 +91,11 @@
       </ul>
       <h4>Visueel voorbeeld:</h4>
       <form action="" method="post">
-        <label for="example-input-required">Gebruikersnaam</label>
-        <span class="nota-bene">Dit veld is verplicht</span>
-        <input id="example-input-required" name="example-input-required" type="text" required />
+        <div>
+          <label for="example-input-required">Gebruikersnaam</label>
+          <span class="nota-bene">Dit veld is verplicht</span>
+          <input id="example-input-required" name="example-input-required" type="text" required />
+        </div>
         <button type="submit">Verzend</button>
       </form>
 
@@ -102,14 +104,11 @@
         language="html"
         code={`
 <form action="" method="post">
-  <label for="example-input-required">Gebruikersnaam</label>
-  <span class="nota-bene">Dit veld is verplicht</span>
-  <input
-    id="example-input-required"
-    name="example-input-required"
-    type="text"
-    required
-  />
+  <div>
+    <label for="example-input-required">Gebruikersnaam</label>
+    <span class="nota-bene">Dit veld is verplicht</span>
+    <input id="example-input-required" name="example-input-required" type="text" required />
+  </div>
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -123,10 +122,13 @@
           <code>disabled</code> attribuut.
         </li>
       </ul>
+
       <h4>Visueel voorbeeld:</h4>
       <form action="" method="post">
-        <label for="example-input-disabled">Gebruikersnaam</label>
-        <input id="example-input-disabled" name="example-input-disabled" type="text" disabled />
+        <div>
+          <label for="example-input-disabled">Gebruikersnaam</label>
+          <input id="example-input-disabled" name="example-input-disabled" type="text" disabled />
+        </div>
         <button type="submit">Verzend</button>
       </form>
 
@@ -135,13 +137,10 @@
         language="html"
         code={`
 <form action="" method="post">
-  <label for="example-input-disabled">Gebruikersnaam</label>
-  <input
-    id="example-input-disabled"
-    name="example-input-disabled"
-    type="text"
-    disabled
-  />
+  <div>
+    <label for="example-input-disabled">Gebruikersnaam</label>
+    <input id="example-input-disabled" name="example-input-disabled" type="text" disabled />
+  </div>
   <button type="submit">Verzend</button>
 </form>
 `}

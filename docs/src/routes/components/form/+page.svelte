@@ -1,5 +1,5 @@
 <script module>
-  export const breadcrumb = "Weergave in kolommen";
+  export const breadcrumb = "Basisformulier";
 </script>
 
 <script lang="ts">
@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-  <title>Weergave in kolommen</title>
+  <title>Basisformulier</title>
 </svelte:head>
 
 <main class="sidemenu" id="main-content" tabindex="-1">
@@ -19,12 +19,11 @@
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
       <li><a href="#related">Gerelateerde pagina's</a></li>
-      <li><a href="#issues">Bekende problemen</a></li>
     </ul>
   </SideMenu>
   <article>
     <section id="introduction">
-      <h1>Weergave in kolommen</h1>
+      <h1>Basisformulier</h1>
 
       <h2>Benodigde stappen:</h2>
       <ol>
@@ -34,30 +33,44 @@
           <a href="#requirements">Bijbehorende bestanden</a>.
         </li>
         <li>
-          Groepeer de gewenste velden en geef de gewenste hoeveelheid kolommen op. Bijvoorbeeld: <code
-            >class="column-2</code
-          >.
+          Voeg de gewenste velden toe. Zie onderstaand voorbeeld voor meer informatie. Alle binnen
+          html beschikbare formulierelementen kunnen gebruikt worden. Voor een overzicht van
+          beschikbare voorbeelden binnen Manon zie
+          <a href="forms#form-types">formulierelementen</a>.
         </li>
+        <li>
+          Groepeer de formulierelementen voor toegankelijkheid en gebruikersgemak. Zie
+          <a href="{base}/components/form-fieldset">Invoervelden groeperen</a> voor meer informatie.
+        </li>
+        <li>
+          Voeg indien nodig of ten behoeve van gebruikersgemak meldingen, toelichtingen en
+          instructies toe aan het formulier.
+        </li>
+        <li>Voeg waar nodig validatie toe.</li>
       </ol>
     </section>
 
     <section id="examples">
       <h2>Voorbeelden</h2>
+      <p>Het basisvoorbeeld met een invoerveld en een verzendknop.</p>
 
       <h3>Basis</h3>
       <h4>Visueel voorbeeld:</h4>
-
       <form action="" method="post">
-        <div class="column-2">
-          <div>
-            <label for="voorbeeld-1-date-1-start">van</label>
-            <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" />
-          </div>
-          <div>
-            <label for="voorbeeld-1-date-1-end">tot</label>
-            <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" />
-          </div>
+        <label for="form-example-base">Voorbeeld text input</label>
+
+        <div>
+          <span class="nota-bene" id="form-example-base-explanation"
+            >Voorbeeld van een instructietekst
+          </span>
+          <input
+            id="form-example-base"
+            name="form-example-base"
+            type="text"
+            aria-describedby="form-example-base-explanation"
+          />
         </div>
+
         <button type="submit">Verzend</button>
       </form>
 
@@ -66,16 +79,20 @@
         language="html"
         code={`
 <form action="" method="post">
-  <div class="column-2">
-    <div>
-      <label for="voorbeeld-1-date-1-start">van</label>
-      <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" />
-    </div>
-    <div>
-      <label for="voorbeeld-1-date-1-end">tot</label>
-      <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" />
-    </div>
+  <label for="form-example-base">Voorbeeld text input</label>
+
+  <div>
+    <span class="nota-bene" id="form-example-base-explanation"
+      >Voorbeeld van een instructietekst
+    </span>
+    <input
+      id="form-example-base"
+      name="form-example-base"
+      type="text"
+      aria-describedby="form-example-base-explanation"
+    />
   </div>
+
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -101,18 +118,7 @@
 
     <section id="related">
       <h2>Gerelateerde pagina's</h2>
-      <a href="{base}/components/form-columns-test">Test- en voorbeelden-pagina</a>
-    </section>
-
-    <section id="issues">
-      <h2>Bekende problemen</h2>
-
-      <ul>
-        <li>
-          <code>fieldset</code> met een <code>column-*</code>-class met daarbinnen een
-          <code>&lt;input type="date"&gt;</code> kunnen buiten de breedte van het formulier lopen.
-        </li>
-      </ul>
+      <a href="{base}/components/form-test">Test- en voorbeelden-pagina</a>
     </section>
   </article>
 </main>

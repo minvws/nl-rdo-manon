@@ -50,14 +50,16 @@
       <h3>Basis</h3>
       <h4>Visueel voorbeeld:</h4>
       <form action="" method="post">
-        <label for="file-example">Upload bestand</label>
-        <input
-          type="file"
-          id="file-example"
-          name="file-example"
-          accept=".doc, .docx, .pdf"
-          multiple
-        />
+        <div>
+          <label for="file-example">Upload bestand</label>
+          <input
+            type="file"
+            id="file-example"
+            name="file-example"
+            accept=".doc, .docx, .pdf"
+            multiple
+          />
+        </div>
       </form>
 
       <h3>HTML-voorbeeld:</h3>
@@ -65,8 +67,10 @@
         language="html"
         code={`
 <form action="" method="post">
-<label for="file-example">Upload bestand</label>
-<input type="file" id="file-example" name="file-example" accept=".doc, .docx, .pdf" multiple>
+  <div>
+    <label for="file-example">Upload bestand</label>
+    <input type="file" id="file-example" name="file-example" accept=".doc, .docx, .pdf" multiple>
+  </div>
 </form>
 `}
       />

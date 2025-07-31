@@ -6,6 +6,24 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 0;
+  gap: theme.$form-combined-field-gap;
   flex-wrap: nowrap;
+
+  input {
+    @include theming.apply-from-theme(
+      (
+        border-radius: theme.$form-combined-field-input-border-radius,
+      )
+    );
+  }
+
+  button {
+    @include theming.apply-from-theme(
+      (
+        border-radius: theme.$form-combined-field-button-border-radius,
+        border-width: theme.$form-input-border-width,
+        border-color: theme.$form-button-background-color,
+      )
+    );
+  }
 }

@@ -42,8 +42,10 @@
       <h3>Visueel voorbeeld:</h3>
       <h4>direct</h4>
       <form action="" method="post">
-        <label for="voorbeeld-date-1">Datum</label>
-        <input id="voorbeeld-date-1" name="voorbeeld-date-1" type="date" />
+        <div>
+          <label for="voorbeeld-date-1">Datum</label>
+          <input id="voorbeeld-date-1" name="voorbeeld-date-1" type="date" />
+        </div>
         <button type="submit">Verzend</button>
       </form>
 
@@ -53,8 +55,10 @@
         language="html"
         code={`
 <form action="" method="post">
-  <label for="voorbeeld-date-1">Datum</label>
-  <input id="voorbeeld-date-1" name="voorbeeld-date-1" type="date">
+  <div>
+    <label for="voorbeeld-date-1">Datum</label>
+    <input id="voorbeeld-date-1" name="voorbeeld-date-1" type="date">
+  </div>
   <button type="submit">Verzend</button>
 </form>
 `}
