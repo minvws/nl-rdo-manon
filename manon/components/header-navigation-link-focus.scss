@@ -1,0 +1,139 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+%header-navigation-link-focus-styling {
+  @include theming.apply-from-theme(
+    (
+      font-size: theme.$header-navigation-link-focus-font-size,
+      font-weight: theme.$header-navigation-link-focus-font-weight,
+      line-height: theme.$header-navigation-link-focus-line-height,
+      background-color: theme.$header-navigation-link-focus-background-color,
+      color: theme.$header-navigation-link-focus-text-color,
+      text-decoration: theme.$header-navigation-link-focus-text-decoration,
+      border-width: theme.$header-navigation-link-focus-border-width,
+      border-style: theme.$header-navigation-link-focus-border-style,
+      border-color: theme.$header-navigation-link-focus-border-color,
+      border-radius: theme.$header-navigation-link-focus-border-radius,
+    )
+  );
+
+  &::before {
+    position: static;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    font-style: normal;
+
+    @include theming.apply-from-theme(
+      (
+        font-family: theme.$header-navigation-link-focus-icon-font-family,
+        font-size: theme.$header-navigation-link-focus-icon-font-size,
+        line-height: theme.$header-navigation-link-focus-icon-line-height,
+        text-decoration: theme.$header-navigation-link-focus-icon-text-decoration,
+        padding-right: theme.$header-navigation-link-focus-icon-padding-right,
+        padding-left: theme.$header-navigation-link-focus-icon-padding-left,
+        background-color: theme.$header-navigation-link-focus-icon-background-color,
+        color: theme.$header-navigation-link-focus-icon-text-color,
+      )
+    );
+  }
+}
+
+%header-navigation-current-link-focus-styling {
+  @include theming.apply-from-theme(
+    (
+      font-size: theme.$header-navigation-current-link-focus-font-size,
+      font-weight: theme.$header-navigation-current-link-focus-font-weight,
+      line-height: theme.$header-navigation-current-link-focus-line-height,
+      background-color: theme.$header-navigation-current-link-focus-background-color,
+      color: theme.$header-navigation-current-link-focus-text-color,
+      text-decoration: theme.$header-navigation-current-link-focus-text-decoration,
+      border-width: theme.$header-navigation-current-link-focus-border-width,
+      border-style: theme.$header-navigation-current-link-focus-border-style,
+      border-color: theme.$header-navigation-current-link-focus-border-color,
+      border-radius: theme.$header-navigation-current-link-focus-border-radius,
+    )
+  );
+
+  &::before {
+    position: static;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    font-style: normal;
+
+    @include theming.apply-from-theme(
+      (
+        font-family: theme.$header-navigation-link-focus-icon-font-family,
+        font-size: theme.$header-navigation-link-focus-icon-font-size,
+        line-height: theme.$header-navigation-link-focus-icon-line-height,
+        text-decoration: theme.$header-navigation-link-focus-icon-text-decoration,
+        padding-right: theme.$header-navigation-link-focus-icon-padding-right,
+        padding-left: theme.$header-navigation-link-focus-icon-padding-left,
+        background-color: theme.$header-navigation-link-focus-icon-background-color,
+        color: theme.$header-navigation-link-focus-icon-text-color,
+      )
+    );
+  }
+}
+
+%header-navigation-link-focus-outline {
+  @include theming.apply-from-theme(
+    (
+      outline: theme.$header-navigation-link-focus-outline,
+      outline-offset: theme.$header-navigation-link-focus-outline-offset,
+      outline-color: theme.$header-navigation-link-focus-outline-color,
+      z-index: theme.$header-navigation-link-focus-z-index,
+      box-shadow: theme.$header-navigation-link-focus-box-shadow,
+      border-radius: theme.$header-navigation-link-focus-outline-border-radius,
+    )
+  );
+}
+
+body > header,
+.page-header,
+%header-navigation-style {
+  nav {
+    a:focus,
+    a.focus {
+      @extend %header-navigation-link-focus-styling;
+      @extend %header-navigation-link-focus-outline;
+    }
+
+    a[aria-current="page"],
+    a[aria-current="page"]:visited {
+      &:focus {
+        @extend %header-navigation-current-link-focus-styling;
+        @extend %header-navigation-link-focus-outline;
+      }
+    }
+
+    ul,
+    ol {
+      li {
+        a:focus,
+        a.focus {
+          @extend %header-navigation-link-focus-styling;
+          @extend %header-navigation-link-focus-outline;
+        }
+
+        &[aria-current="page"] {
+          > a,
+          > a:visited {
+            @extend %header-navigation-current-link-focus-styling;
+
+            &:focus {
+              @extend %header-navigation-current-link-focus-styling;
+              @extend %header-navigation-link-focus-outline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
