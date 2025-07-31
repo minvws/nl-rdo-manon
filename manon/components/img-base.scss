@@ -1,0 +1,13 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+img {
+  @include theming.apply-from-theme(
+    (
+      max-width: theme.$img-base-max-width,
+      object-position: theme.$img-base-object-position,
+      object-fit: theme.$img-base-object-fit,
+    )
+  );
+}
