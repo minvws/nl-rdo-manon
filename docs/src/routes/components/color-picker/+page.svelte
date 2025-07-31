@@ -1,5 +1,5 @@
 <script module>
-  export const breadcrumb = "Datum";
+  export const breadcrumb = "Kleurselector";
 </script>
 
 <script lang="ts">
@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-  <title>Datum</title>
+  <title>Kleurselector</title>
 </svelte:head>
 
 <main class="sidemenu" id="main-content" tabindex="-1">
@@ -23,7 +23,7 @@
   </SideMenu>
   <article>
     <section id="introduction">
-      <h1>Datum</h1>
+      <h1>Kleurselector</h1>
 
       <h2>Benodigde stappen:</h2>
       <ol>
@@ -32,18 +32,26 @@
           optionele bestanden zie:
           <a href="#requirements">Bijbehorende bestanden</a>.
         </li>
-        <li>Voeg <code>&lt;type="date"&gt;</code> toe aan het invoerveld.</li>
+        <li>voeg <code>type="color"</code> toe aan het invoerveld.</li>
+        <li>
+          Voeg basiskleurwaarde met een hexidecimalekleurcode aan binnen:
+          <code>value</code>. Voorbeeld: <code>value="#ffffff"</code>. De ingevoerde kleur is de
+          kleur waarin het selectievak getoont wordt binnen het formulier voordat de gebruiker een
+          andere keuze maakt.
+        </li>
       </ol>
     </section>
 
     <section id="examples">
       <h2>Voorbeelden</h2>
 
-      <h3>Visueel voorbeeld:</h3>
-      <h4>direct</h4>
+      <h3>Kleurselector</h3>
+      <h4>Visueel voorbeeld:</h4>
+
       <form action="" method="post">
-        <label for="voorbeeld-date-1">Datum</label>
-        <input id="voorbeeld-date-1" name="voorbeeld-date-1" type="date" />
+        <label for="color-input-1">Selecteer de gewenste kleur</label>
+        <input id="color-input-1" name="color-input-1" type="color" value="#ffffff" />
+
         <button type="submit">Verzend</button>
       </form>
 
@@ -53,8 +61,38 @@
         language="html"
         code={`
 <form action="" method="post">
-  <label for="voorbeeld-date-1">Datum</label>
-  <input id="voorbeeld-date-1" name="voorbeeld-date-1" type="date">
+<label for="color-input-1">Selecteer de gewenste kleur</label>
+<input id="color-input-1" name="color-input-1" type="color" value="#ffffff">
+
+<button type="submit">Verzend</button>
+</form>
+`}
+      />
+
+      <h3>Zonder zichtbaar invoerveld</h3>
+      <h4>Visueel voorbeeld:</h4>
+      <form action="" method="post">
+        <label for="color-input-1">Selecteer de gewenste kleur</label>
+        <input
+          id="color-input-1"
+          name="color-input-1"
+          type="color"
+          value="#b3c3ff"
+          class="filled"
+        />
+
+        <button type="submit">Verzend</button>
+      </form>
+
+      <h3>HTML-voorbeeld:</h3>
+      <h4><code>section</code></h4>
+      <Code
+        language="html"
+        code={`
+<form action="" method="post">
+  <label for="color-input-1">Selecteer de gewenste kleur</label>
+  <input id="color-input-1" name="color-input-1" type="color" value="#b3c3ff" class="filled">
+
   <button type="submit">Verzend</button>
 </form>
 `}
@@ -72,15 +110,14 @@
       <Code
         language="css"
         code={`
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-input";
+@use "@minvws/manon/color-picker";
 `}
       />
     </section>
 
     <section id="related">
       <h2>Gerelateerde pagina's</h2>
-      <a href="{base}/components/form-input-date-test">Test- en voorbeelden-pagina</a>
+      <a href="{base}/components/color-picker-test">Test- en voorbeelden-pagina</a>
     </section>
   </article>
 </main>

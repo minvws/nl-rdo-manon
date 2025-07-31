@@ -59,7 +59,7 @@ form.horizontal {
         @include theming.apply-from-theme(
           (
             max-width: theme.$form-input-column,
-            margin-left: theme.$label-column,
+            margin-left: theme.$form-label-column,
           )
         );
       }
@@ -111,7 +111,7 @@ form.horizontal {
           /* Align radio with input fields */
           @include theming.apply-from-theme(
             (
-              margin-left: theme.$label-column,
+              margin-left: theme.$form-label-column,
             )
           );
         }
@@ -133,7 +133,7 @@ form.horizontal {
       > .nota-bene {
         @include theming.apply-from-theme(
           (
-            margin-left: theme.$label-column,
+            margin-left: theme.$form-label-column,
           )
         );
       }
@@ -217,7 +217,7 @@ form.horizontal {
       > * {
         @include theming.apply-from-theme(
           (
-            margin-left: theme.$label-column,
+            margin-left: theme.$form-label-column,
           )
         );
       }
@@ -232,7 +232,7 @@ form.horizontal {
 
       @include theming.apply-from-theme(
         (
-          margin-left: theme.$label-column,
+          margin-left: theme.$form-label-column,
         )
       );
     }
@@ -262,7 +262,7 @@ form.horizontal {
       @include theming.apply-from-theme(
         (
           max-width: theme.$form-input-column,
-          margin-left: theme.$label-column,
+          margin-left: theme.$form-label-column,
         )
       );
       flex-wrap: wrap;

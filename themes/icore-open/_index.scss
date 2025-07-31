@@ -25,6 +25,9 @@ and spacing sets */
 
 /* Component variables */
 @use "@minvws/manon/variables" with (
+  // article
+  $article-gap: #{spacing.$spacing-250},
+
   //base
   $base-background-color: #{semantic.$base-background-color},
   $base-font-family: "IBM Plex Sans",
@@ -77,6 +80,9 @@ and spacing sets */
   $code-block-padding: #{spacing.$spacing-200},
   $code-block-background-color: #{color-scheme.$oc-gray-1},
   $code-block-border-radius: #{border-radii.$border-radius-s},
+
+  // color picker
+  $color-picker-border-radius: #{border-radii.$border-radius-s},
 
   // form
   $form-align-items: flex-start,
@@ -177,8 +183,8 @@ and spacing sets */
   $section-padding-right: #{spacing.$spacing-200},
   $section-padding-bottom: #{spacing.$spacing-300},
   $section-padding-left: #{spacing.$spacing-200},
-  $section-max-width: 50rem,
-  $section-gap: #{spacing.$spacing-400},
+  $section-max-width: 60rem,
+  $section-gap: #{spacing.$spacing-150},
   $section-flex-direction: column,
   $section-border-radius: #{border-radii.$border-radius-m},
   $section-justify-content: flex-start,
