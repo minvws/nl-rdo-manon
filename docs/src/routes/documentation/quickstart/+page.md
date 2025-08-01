@@ -1,54 +1,58 @@
 ---
-title: Getting Started with Manon
+title: Aan de slag met Manon
 ---
 
-# Quickstart
+# Snelstart
 
-## Prerequisites
+## Vereisten
 
-Make sure that your project is set up to use Sass and that you have a Sass
-compiler installed. If your build system does not support Sass, you can 
-install [the Sass command line tool](https://sass-lang.com/documentation/cli/dart-sass/).
+Zorg ervoor dat je project is ingesteld om Sass te gebruiken en dat je een
+Sass-compiler hebt geïnstalleerd. Als je build-systeem Sass niet ondersteunt,
+kun je
+[de Sass command-line-tool](https://sass-lang.com/documentation/cli/dart-sass/)
+installeren.
 
-```
+```plaintext
 npm install sass
 ```
 
-## Install with npm
+## Installeren met npm
 
-We need to install the Manon package and the themes package to use the
-components and styles.
+We moeten het Manon en het Manon Themes installeren om de componenten en stijlen
+te gebruiken.
 
-```
+```plaintext
 npm install @minvws/manon
 npm install @minvws/manon-themes
 ```
 
-## Import
+## Importeren
 
-In your Sass file, you can import the Manon framework and a theme of your
-choice.
+In je Sass-bestand kun je het Manon-framework en een thema naar keuze
+importeren.
 
 ```scss
-// Import the Manon framework and its components
+// Importeer het Manon-framework en de bijbehorende componenten
 @use "@minvws/manon/application-base";
 
-// You can also import specific components as needed here:
+// Je kunt hier ook specifieke componenten importeren indien nodig::
 
-// Import the iCore Open theme 
+// Importeer het iCore Open-thema
 @use "@minvws/manon-themes/icore-open";
 ```
 
-## Usage
+## Gebruik
 
-You're now ready to use the components in your HTML. Follow the instructions
-in the [Component library](https://minvws.github.io/nl-rdo-manon/components)
-on how to use the components in your HTML. Each component has its own
-page with examples and code snippets.
+Je bent nu klaar om de componenten in je HTML te gebruiken. Volg de instructies
+in de [Componentenbibliotheek](https://minvws.github.io/nl-rdo-manon/components)
+over hoe je de componenten in je HTML kunt gebruiken. Elke component heeft zijn
+eigen pagina met voorbeelden en codefragmenten.
 
-You can also follow the [tutorial](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial)
-to learn how to use the components in a more structured way.
+Je kunt ook de
+[tutorial](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial)
+volgen om te leren hoe je de componenten op een meer gestructureerde manier kunt
+gebruiken.
 
-Additionally, we've provided [some example
-implementations](https://github.com/minvws/nl-rdo-manon/tree/main/examples/) in
-a few different frameworks.
+Daarnaast hebben we
+[enkele voorbeeldimplementaties](https://github.com/minvws/nl-rdo-manon/tree/main/examples/)
+geleverd in verschillende frameworks.
