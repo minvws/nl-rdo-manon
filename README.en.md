@@ -1,6 +1,8 @@
 # Manon
 
-> [!NOTE] For Dutch, see [Dutch](README.md).
+> [!NOTE]
+>
+> For Dutch, see [Dutch](README.md).
 
 ## 🙋 About Manon
 
@@ -56,6 +58,7 @@ To use Manon in your project:
     @use "@minvws/manon/application-base";
 
     // You can also import specific components as needed here:
+    // @use "@minvws/manon/p"
 
     // Import the iCore Open theme
     @use "@minvws/manon-themes/icore-open";
