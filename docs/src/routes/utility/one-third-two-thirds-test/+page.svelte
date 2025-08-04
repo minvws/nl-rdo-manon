@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Layout eenderde tweederde testpagina</h1>
@@ -266,7 +266,7 @@
         <p>Gegroepeerde content binnen een <code>div</code> met <code>article</code>'s.</p>
         <h4>Visueel voorbeeld:</h4>
         <div class="one-third-two-thirds">
-          <article class="visually-grouped">
+          <article>
             <h2>Lorem ipsum dolor set</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
@@ -275,7 +275,7 @@
             </p>
           </article>
 
-          <article class="visually-grouped">
+          <article>
             <h2>Lorem ipsum dolor set</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
@@ -389,7 +389,7 @@
         <p>Elementen uitlijnen binnen een <code>section</code> met <code>article</code>'s.</p>
         <h4>Visueel voorbeeld:</h4>
         <section class="one-third-two-thirds">
-          <article class="visually-grouped">
+          <article>
             <h2>Lorem ipsum dolor set</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
@@ -398,7 +398,7 @@
             </p>
           </article>
 
-          <article class="visually-grouped">
+          <article>
             <h2>Lorem ipsum dolor set</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
@@ -413,12 +413,12 @@
           language="html"
           code={`
 <section class="one-third-two-thirds">
-  <article class="visually-grouped">
+  <article>
     <h2>Lorem ipsum dolor set</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.</p>
   </article>
 
-  <article class="visually-grouped">
+  <article>
     <h2>Lorem ipsum dolor set</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.</p>
   </article>
@@ -512,7 +512,7 @@
         <p>Elementen uitlijnen binnen een <code>article</code> met <code>article</code>'s.</p>
         <h4>Visueel voorbeeld:</h4>
         <article class="one-third-two-thirds">
-          <article class="visually-grouped">
+          <article>
             <h2>Lorem ipsum dolor set</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
@@ -521,7 +521,7 @@
             </p>
           </article>
 
-          <article class="visually-grouped">
+          <article>
             <h2>Lorem ipsum dolor set</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
@@ -536,12 +536,12 @@
           language="html"
           code={`
 <article class="one-third-two-thirds">
-  <article class="visually-grouped">
+  <article>
     <h2>Lorem ipsum dolor set</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.</p>
   </article>
 
-  <article class="visually-grouped">
+  <article>
     <h2>Lorem ipsum dolor set</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.</p>
   </article>

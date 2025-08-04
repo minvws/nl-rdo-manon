@@ -21,13 +21,13 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Titels</h1>
         <p>Gebruik titels om structuur binnen de pagina aan te geven.</p>
 
-        <div class="visually-grouped">
+        <div>
           <h2 class="heading-normal">Aandachtspunten:</h2>
           <ul>
             <li>Gebruik altijd een <code>h1</code> per pagina.*</li>
@@ -59,7 +59,7 @@
         </div>
       </section>
 
-      <section id="examples" class="visually-grouped">
+      <section id="examples">
         <h2>Voorbeelden:</h2>
         <h3>Visueel voorbeeld:</h3>
 

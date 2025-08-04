@@ -22,7 +22,7 @@
     </ul>
   </SideMenu>
 
-  <article id="button-ghost" class="visually-grouped">
+  <article id="button-ghost">
     <div>
       <section id="introduction">
         <h1>Ghost button</h1>

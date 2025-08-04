@@ -89,7 +89,7 @@ a.button {
   }
 }
 
-@media (width >= theme.$button-icon-breakpoint) {
+@media (width >= #{theme.$button-icon-breakpoint}) {
   button,
   a.button,
   input[type="button"],
