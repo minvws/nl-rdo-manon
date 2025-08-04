@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
 
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Zijmenu binnen de pagina</h1>
@@ -95,7 +95,7 @@
       <li><a href="/">Voorbeeld link 4</a></li>
     </ul>
   </nav>
-  <article class="visually-grouped">
+  <article>
     <div>
       <h1>Lorem ipsum</h1>
       <p>Dolor set amet conseqtetur adepicing elit</p>

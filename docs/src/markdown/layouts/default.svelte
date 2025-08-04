@@ -1,6 +1,7 @@
 <script module lang="ts">
   export { default as Code } from "$lib/Code.svelte";
   export { default as a } from "../components/A.svelte";
+  export { default as iframe } from "../components/Iframe.svelte";
 </script>
 
 <script lang="ts">
@@ -35,7 +36,7 @@
   {#if parsedNav}
     <SideMenu>{@render navlist(parsedNav)}</SideMenu>
   {/if}
-  <section class="visually-grouped">
+  <section>
     {@render children?.()}
   </section>
 </main>
