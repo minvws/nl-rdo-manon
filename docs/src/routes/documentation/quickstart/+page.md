@@ -18,8 +18,8 @@ npm install sass
 
 ## Installeren met npm
 
-We moeten het Manon en het Manon Themes installeren om de componenten en stijlen
-te gebruiken.
+We moeten Manon en Manon Themes installeren om de componenten en stijlen te
+gebruiken.
 
 ```plaintext
 npm install @minvws/manon
