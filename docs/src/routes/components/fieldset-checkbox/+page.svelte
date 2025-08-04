@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Selectievak - <code>checkbox</code></h1>
@@ -295,94 +295,6 @@
           code={`
 @use "@minvws/manon/checkbox";
 @use "@minvws/manon/form-fieldset-checkbox";
-`}
-        />
-      </section>
-
-      <section id="variables">
-        <h2>Instelbare variabelen</h2>
-        <div class="horizontal-scroll">
-          <table class="nowrap">
-            <caption>Beschikbare instelbare variabelen:</caption>
-            <thead>
-              <tr>
-                <th scope="col">Variabele</th>
-                <th scope="col">CSS-attribuut</th>
-                <th scope="col">Manon ingestelde waarde</th>
-                <th scope="col">Breekpunt</th>
-                <th scope="col">Class</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>--fieldset-checkbox-input-margin-top</td>
-                <td><a href="{base}/documentation/variables#margin-top">margin-top</a></td>
-                <td>0.25rem</td>
-                <td>-</td>
-                <th rowspan="7" scope="rowgroup">checkbox</th>
-              </tr>
-
-              <tr>
-                <td>--fieldset-checkbox-width</td>
-                <td><a href="{base}/documentation/variables#width">width</a></td>
-                <td>1.25rem</td>
-                <td>-</td>
-              </tr>
-
-              <tr>
-                <td>--fieldset-checkbox-height</td>
-                <td><a href="{base}/documentation/variables#height">height</a></td>
-                <td>1.25rem</td>
-                <td>-</td>
-              </tr>
-
-              <tr>
-                <td>--fieldset-checkbox-accent-color</td>
-                <td><a href="{base}/documentation/variables#accent-color">accent-color</a></td>
-                <td>var(--branding-color-1, initial)</td>
-                <td>-</td>
-              </tr>
-
-              <tr>
-                <td>--fieldset-checkbox-label-width</td>
-                <td><a href="{base}/documentation/variables#width">width</a></td>
-                <td>auto</td>
-                <td>-</td>
-              </tr>
-
-              <tr>
-                <td>--fieldset-checkbox-required-margin-bottom</td>
-                <td><a href="{base}/documentation/variables#margin-bottom">margin-bottom</a></td>
-                <td>var(--application-base-gap-small)</td>
-                <td>-</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3>CSS</h3>
-        <p>
-          Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van jouw
-          project. Kies en gebruik de benodigde variabelen.
-        </p>
-        <Code
-          language="css"
-          code={`
-:root {
-    /* Checkbox */
-    --fieldset-checkbox-input-margin-top: ;
-
-    /* Box */
-    --fieldset-checkbox-width: ;
-    --fieldset-checkbox-height: ;
-    --fieldset-checkbox-accent-color: ;
-
-    /* Label */
-    --fieldset-checkbox-label-width: ;
-
-    /* Required */
-    --fieldset-checkbox-required-margin-bottom: ;
-}
 `}
         />
       </section>

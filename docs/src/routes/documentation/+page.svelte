@@ -22,7 +22,7 @@
     </div>
   </section>
 
-  <section class="visually-grouped">
+  <section>
     <div>
       <h2>Snel aan de slag</h2>
       <p>
@@ -66,7 +66,7 @@
             code={`
 @use "@minvws/manon/body-text-set";
 @use "@minvws/manon/headings-base-set";
-@use "@minvws/manon/application-base";
+@use "@minvws/manon/base";
 @use "@minvws/manon/p";
 // et cetera...
 
@@ -97,7 +97,7 @@
     </div>
   </section>
 
-  <section class="visually-grouped">
+  <section>
     <div>
       <h2 id="instructions-heading">Meer instructies</h2>
       <nav aria-labelledby="instructions-heading">
@@ -114,7 +114,7 @@
     </div>
   </section>
 
-  <section class="visually-grouped">
+  <section>
     <div>
       <h2>Manon installeren voor development</h2>
       <p>

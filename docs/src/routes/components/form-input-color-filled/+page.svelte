@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <p class="warning" role="group" aria-label="waarschuwing">
         <span>Waarschuwing:</span> Dit element maakt gebruik van experimentele CSS componenten:
