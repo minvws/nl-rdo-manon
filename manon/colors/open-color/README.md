@@ -11,7 +11,7 @@ Open color is an [open-source](https://en.wikipedia.org/wiki/Open-source_softwar
 
 **Note**
 
-* The colors are subject to change in the future. Thus, using an Open color as a main identity color is not recommended.
+- The colors are subject to change in the future. Thus, using an Open color as a main identity color is not recommended.
 
 ## Available Colors
 
@@ -22,7 +22,9 @@ Open color is an [open-source](https://en.wikipedia.org/wiki/Open-source_softwar
 ```
 $ npm install open-color
 ```
+
 or
+
 ```
 $ bower install open-color
 ```
@@ -42,7 +44,7 @@ $oc-(color)-(number)
 ### Less
 
 ```less
-@oc-(color)-(number)
+@oc- (color)-(number);
 ```
 
 ### Stylus
@@ -50,6 +52,7 @@ $oc-(color)-(number)
 ```styl
 oc-(color)-(number)
 ```
+
 ### CSS
 
 ```css
@@ -58,7 +61,7 @@ oc-(color)-(number)
 
 ---
 
-- `oc`:  Abbreviation for Open color
+- `oc`: Abbreviation for Open color
 - `(color)`: Color name such as gray, red, lime, etc.
 - `(number)`: 0 to 9. Brightness spectrum.
 
@@ -103,13 +106,12 @@ module.exports = {
   },
   plugins: [],
 };
-
 ```
 
 **Example for Less**
 
 ```less
-@import 'path/open-color';
+@import "path/open-color";
 
 .body {
   background-color: @oc-gray-0;
@@ -148,7 +150,7 @@ a
 **Example for CSS**
 
 ```css
-@import 'path/open-color.css';
+@import "path/open-color.css";
 
 .body {
   background-color: var(--oc-gray-0);

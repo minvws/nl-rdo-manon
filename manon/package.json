@@ -5,7 +5,9 @@
   "files": [
     "**/*.scss",
     "**/*.js",
-    "**/*.license"
+    "**/*.license",
+    "LICENSES",
+    "REUSE.toml"
   ],
   "scripts": {
     "format": "prettier --write .",
@@ -19,11 +21,11 @@
     "sass": ">=1.77.6"
   },
   "devDependencies": {
-    "vitest": "^2.0.4",
-    "prettier": "^3.5.3",
+    "vitest": "^3.2.4",
+    "prettier": "^3.6.2",
     "sass": "^1.89.2",
     "sass-true": "^9.0.0",
-    "stylelint": "^16.21.1",
+    "stylelint": "^16.22.0",
     "stylelint-config-standard-scss": "^15.0.1"
   },
   "repository": {
