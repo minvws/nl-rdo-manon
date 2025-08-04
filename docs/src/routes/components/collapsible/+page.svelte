@@ -70,7 +70,6 @@
           data-open-label="Dropdown menu"
           data-close-label="Sluit dropdown menu"
           data-media="(min-width: 100%)"
-          aria-label="Acties"
           class="collapsible"
         >
           <div class="collapsing-element">
@@ -90,7 +89,6 @@
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  aria-label="Acties"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -139,7 +137,6 @@
           data-open-label="Dropdown menu"
           data-close-label="Sluit dropdown menu"
           data-media="(min-width: 100%)"
-          aria-label="Acties"
           class="collapsible"
         >
           <div class="collapsing-element">
@@ -161,7 +158,6 @@
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  aria-label="Acties"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -182,7 +178,6 @@
           data-open-label="Dropdown menu"
           data-close-label="Sluit dropdown menu"
           data-media="(min-width: 100%)"
-          aria-label="Acties"
           class="collapsible"
         >
           <div class="collapsing-element">
@@ -204,7 +199,6 @@
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  aria-label="Acties"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -228,7 +222,6 @@
           data-close-label="Sluit dropdown menu"
           data-media="(min-width: 100%)"
           data-button-classes="ghost"
-          aria-label="Acties"
           class="collapsible"
         >
           <div class="collapsing-element">
@@ -249,7 +242,6 @@
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
   data-button-classes="ghost"
-  aria-label="Acties"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -271,7 +263,6 @@
           data-close-label="Sluit dropdown menu"
           data-media="(min-width: 100%)"
           data-button-classes="icon icon-cat"
-          aria-label="Acties"
           class="collapsible"
         >
           <div class="collapsing-element">
@@ -292,7 +283,6 @@
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
   data-button-classes="icon icon-cat"
-  aria-label="Acties"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -312,7 +302,6 @@
           data-open-label="Dropdown menu"
           data-close-label="Sluit dropdown menu"
           data-media="(min-width: 100%)"
-          aria-label="Acties"
           class="collapsible"
         >
           <div class="collapsing-element">
@@ -338,7 +327,6 @@
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  aria-label="Acties"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -365,7 +353,6 @@
           data-open-label="Dropdown menu"
           data-close-label="Sluit dropdown menu"
           data-media="(min-width: 100%)"
-          aria-label="Acties"
           class="collapsible"
         >
           <div class="collapsing-element">
@@ -401,7 +388,6 @@
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  aria-label="Acties"
   class="collapsible">
 
   <div class="collapsing-element">
