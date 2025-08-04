@@ -1,6 +1,9 @@
-$form-help-padding-right: null !default;
-$form-help-button-top: null !default;
-$form-help-button-right: null !default;
+// Help container
+$form-help-container-padding: 0 2.5rem 0 0 !default;
+
+// Help button
+$form-help-button-top: 0 !default;
+$form-help-button-right: 0 !default;
 $form-help-button-padding-top: null !default;
 $form-help-button-padding-right: null !default;
 $form-help-button-padding-bottom: null !default;
@@ -13,12 +16,18 @@ $form-help-button-width: null !default;
 $form-help-button-height: null !default;
 $form-help-button-background-color: null !default;
 $form-help-button-text-color: null !default;
+
+// hover
 $form-help-button-hover-background-color: null !default;
 $form-help-button-hover-text-color: null !default;
+
+// Help button icon
 $form-help-button-icon: null !default;
 $form-help-button-icon-font-family: null !default;
 $form-help-button-icon-line-height: null !default;
 $form-help-button-icon-font-size: null !default;
 $form-help-button-icon-font-weight: null !default;
 $form-help-button-icon-expanded: null !default;
+
+// Explanation
 $form-help-button-explanation-gap: null !default;

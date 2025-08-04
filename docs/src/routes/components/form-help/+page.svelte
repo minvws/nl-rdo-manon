@@ -83,7 +83,7 @@
           <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
             >Help op simpel formulierveld</label
           >
-          <div>
+          <div class="help-container">
             <input
               id="voorbeeld-text-input-met-hulptekst-simpel-1"
               name="voorbeeld-text-input"
@@ -113,7 +113,7 @@
     <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
       >Help op simpel formulierveld</label
     >
-    <div>
+    <div class="help-container">
       <input
         id="voorbeeld-text-input-met-hulptekst-simpel-1"
         name="voorbeeld-text-input"
@@ -165,7 +165,7 @@
           >
           <div>
             <span class="nota-bene">Dit veld is verplicht</span>
-            <div>
+            <div class="help-container">
               <input
                 id="example-input-help-required"
                 name="voorbeeld-text-input"
@@ -198,7 +198,7 @@
     >
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
-      <div>
+      <div class="help-container">
         <input
           id="example-input-help-required"
           name="voorbeeld-text-input"
