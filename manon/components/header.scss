@@ -76,14 +76,15 @@ body > header,
       )
     );
 
-    &:visited,
-    &:visited:hover,
-    &:hover {
+    &:visited {
       color: inherit;
     }
 
     &[aria-current="page"],
-    &:hover {
+    &[aria-current="page"]:hover,
+    &:hover,
+    &:visited:hover,
+    &[aria-current="page"]:visited:hover {
       @include theming.apply-from-theme(
         (
           color: theme.$header-link-current-text-color,

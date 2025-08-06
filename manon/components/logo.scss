@@ -8,6 +8,8 @@ a:hover.logo,
 a:active.logo,
 a:focus.logo {
   align-self: theme.$logo-align-self;
+  background-color: theme.$logo-background-color;
+  border: 0;
 
   @include theming.apply-from-theme(
     (
@@ -27,7 +29,6 @@ a:focus.logo {
       font-weight: theme.$logo-font-weight,
       color: theme.$logo-text-color,
 
-      background-color: theme.$logo-background-color,
       border-radius: theme.$logo-border-radius,
       padding: theme.$logo-padding,
     )
