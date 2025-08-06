@@ -63,6 +63,7 @@
 @forward "image-square";
 @forward "language-selector-list";
 @forward "label";
+@forward "layout-header";
 @forward "layout-footer-content-block";
 @forward "layout-form";
 @forward "img";
@@ -70,11 +71,14 @@
 @forward "layout";
 @forward "layout-authentication";
 @forward "list";
+@forward "login-meta";
 @forward "logo";
 @forward "main";
+@forward "main-content-wrapper";
 @forward "max-line-length";
 @forward "message-counter";
 @forward "navigation";
+@forward "navigation-content-wrapper";
 @forward "notification";
 @forward "notification-confirmation";
 @forward "notification-error";
@@ -95,9 +99,12 @@
 @forward "table-condensed";
 @forward "table-expando-rows";
 @forward "table-number";
+@forward "table-rowspan";
 @forward "table-sticky-header";
 @forward "table-summary";
 @forward "tabs";
+@forward "tag";
+@forward "tags";
 @forward "tile";
 @forward "tile-groups";
 @forward "tile-image-cover";
