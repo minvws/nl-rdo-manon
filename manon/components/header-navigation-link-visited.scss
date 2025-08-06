@@ -1,0 +1,94 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+body > header,
+.page-header,
+%header-navigation-style {
+  nav {
+    a {
+      &:visited,
+      /* Testing purposes */
+      &.visited {
+        @include theming.apply-from-theme(
+          (
+            font-size: theme.$header-navigation-link-visited-font-size,
+            font-weight: theme.$header-navigation-link-visited-font-weight,
+            line-height: theme.$header-navigation-link-visited-line-height,
+            background-color: theme.$header-navigation-link-visited-background-color,
+            color: theme.$header-navigation-link-visited-text-color,
+            text-decoration: theme.$header-navigation-link-visited-text-decoration,
+            border-width: theme.$header-navigation-link-visited-border-width,
+            border-style: theme.$header-navigation-link-visited-border-style,
+            border-color: theme.$header-navigation-link-visited-border-color,
+            border-radius: theme.$header-navigation-link-visited-border-radius,
+          )
+        );
+
+        &::before {
+          position: static;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0;
+          font-style: normal;
+
+          @include theming.apply-from-theme(
+            (
+              font-family: theme.$header-navigation-link-visited-icon-font-family,
+              font-size: theme.$header-navigation-link-visited-icon-font-size,
+              line-height: theme.$header-navigation-link-visited-icon-line-height,
+              text-decoration: theme.$header-navigation-link-visited-icon-text-decoration,
+              padding-right: theme.$header-navigation-link-visited-icon-padding-right,
+              padding-left: theme.$header-navigation-link-visited-icon-padding-left,
+              background-color: theme.$header-navigation-link-visited-icon-background-color,
+              color: theme.$header-navigation-link-visited-icon-text-color,
+            )
+          );
+        }
+
+        &:hover,
+        &.hover {
+          @include theming.apply-from-theme(
+            (
+              font-size: theme.$header-navigation-link-visited-hover-font-size,
+              font-weight: theme.$header-navigation-link-visited-hover-font-weight,
+              line-height: theme.$header-navigation-link-visited-hover-line-height,
+              background-color: theme.$header-navigation-link-visited-hover-background-color,
+              color: theme.$header-navigation-link-visited-hover-text-color,
+              text-decoration: theme.$header-navigation-link-visited-hover-text-decoration,
+              border-width: theme.$header-navigation-link-visited-hover-border-width,
+              border-style: theme.$header-navigation-link-visited-hover-border-style,
+              border-color: theme.$header-navigation-link-visited-hover-border-color,
+              border-radius: theme.$header-navigation-link-visited-hover-border-radius,
+            )
+          );
+
+          &::before {
+            position: static;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0;
+            font-style: normal;
+
+            @include theming.apply-from-theme(
+              (
+                font-family: theme.$header-navigation-link-visited-hover-icon-font-family,
+                font-size: theme.$header-navigation-link-visited-hover-icon-font-size,
+                line-height: theme.$header-navigation-link-visited-hover-icon-line-height,
+                text-decoration: theme.$header-navigation-link-visited-hover-icon-text-decoration,
+                padding-right: theme.$header-navigation-link-visited-hover-icon-padding-right,
+                padding-left: theme.$header-navigation-link-visited-hover-icon-padding-left,
+                background-color: theme.$header-navigation-link-visited-hover-icon-background-color,
+                color: theme.$header-navigation-link-visited-hover-icon-text-color,
+              )
+            );
+          }
+        }
+      }
+    }
+  }
+}
