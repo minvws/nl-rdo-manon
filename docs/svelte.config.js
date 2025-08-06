@@ -4,6 +4,7 @@ import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 import { importAssets } from "svelte-preprocess-import-assets";
 import { mdsvex } from "mdsvex";
 import { redirects } from "./src/redirects.js";
+import { remarkIframe } from "./src/markdown/remark/iframe.js";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -26,6 +27,7 @@ const config = {
     vitePreprocess(),
     mdsvex({
       extensions: [".md"],
+      remarkPlugins: [remarkIframe],
       layout: {
         _: fileURLToPath(import.meta.resolve("./src/markdown/layouts/default.svelte")),
       },

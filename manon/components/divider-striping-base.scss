@@ -1,0 +1,13 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+%divider-striping-base {
+  @include theming.apply-from-theme(
+    (
+      border-width: theme.$divider-striping-base-border-width,
+      border-style: theme.$divider-striping-base-border-style,
+      border-color: theme.$divider-striping-base-border-color,
+      background-color: theme.$divider-striping-base-background-color,
+    )
+  );
+}
