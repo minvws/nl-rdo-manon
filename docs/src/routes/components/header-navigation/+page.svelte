@@ -25,7 +25,6 @@
           <li><a href="#example-with-logo">Navigatie en logo</a></li>
           <li><a href="#example-with-multiple-menus">Navigatie met meerdere menu's</a></li>
           <li><a href="#example-with-form-button">Navigatie met formulier-knop</a></li>
-          <li><a href="#example-with-logo-above">Navigatie met logo bovenaan</a></li>
         </ul>
       </li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
@@ -291,49 +290,6 @@
         </div>
       </nav>
   </div>
-</header>
-`}
-      />
-
-      <h3 id="example-with-logo-above">Navigatie met logo bovenaan</h3>
-      <h4>Visueel voorbeeld</h4>
-      <div class="resize">
-        <iframe
-          src="{base}/examples/header-navigation-with-logo-above"
-          title="Voorbeeld"
-          height="320px"
-        ></iframe>
-      </div>
-      <h4>HTML-voorbeeld</h4>
-      <Code
-        language="html"
-        code={`
-<header>
-  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
-
-  <a href="/" class="logo">
-    <img src="/img/logo.svg" alt="Placeholder logo">Manon
-  </a>
-
-  <nav
-    data-open-label="Menu"
-    data-close-label="Sluit menu"
-    data-media="(min-width: 30rem)"
-    aria-label="Hoofdnavigatie"
-    class="collapsible"
-  >
-    <div class="collapsing-element">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/components">Componenten</a></li>
-        <li><a href="/documentation">Documentatie</a></li>
-      </ul>
-
-      <ul>
-        <li><a href="/logout">Logout</a></li>
-      </ul>
-    </div>
-  </nav>
 </header>
 `}
       />
