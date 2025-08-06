@@ -25,7 +25,11 @@ and spacing sets */
 
 /* Component variables */
 @use "@minvws/manon/variables" with (
-  //base
+  // accordion
+  $accordion-content-padding: 2rem 1rem,
+  $accordion-icon-margin-left: auto,
+
+  // base
   $base-background-color: #{semantic.$base-background-color},
   $base-font-family: "IBM Plex Sans",
   $base-font-size: 1rem,
