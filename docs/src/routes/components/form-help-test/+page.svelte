@@ -24,7 +24,7 @@
         <h4>Visueel voorbeeld</h4>
         <form action="" method="post" class="help">
           <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Lorem ipsum</label>
-          <div>
+          <div class="help-container">
             <input
               id="voorbeeld-text-input-met-hulptekst-simpel-1"
               name="voorbeeld-text-input"
@@ -50,7 +50,7 @@
           code={`
 <form action="" method="post" class="help">
   <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Lorem ipsum</label>
-  <div>
+  <div class="help-container">
     <input
       id="voorbeeld-text-input-met-hulptekst-simpel-1"
       name="voorbeeld-text-input"
@@ -78,7 +78,7 @@
           <label for="example-input-help-required">Lorem ipsum</label>
           <div>
             <span class="nota-bene">Dit veld is verplicht</span>
-            <div>
+            <div class="help-container">
               <input
                 id="example-input-help-required"
                 name="voorbeeld-text-input"
@@ -106,7 +106,7 @@
           code={`
 <form action="" method="post" class="help">
   <label for="example-input-help-required">Lorem ipsum</label>
-  <div>
+  <div class="help-container">
     <span class="nota-bene">Dit veld is verplicht</span>
     <div>
       <input
@@ -139,7 +139,7 @@
             <label for="example-input-help-required-horizontal">Voorbeeld invoerveld</label>
             <div>
               <span class="nota-bene">Dit veld is verplicht</span>
-              <div>
+              <div class="help-container">
                 <input
                   id="example-input-help-required-horizontal"
                   name="voorbeeld-text-input"
@@ -171,7 +171,7 @@
     <label for="example-input-help-required-horizontal">Voorbeeld invoerveld</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
-      <div>
+      <div class="help-container">
         <input
           id="example-input-help-required-horizontal"
           name="voorbeeld-text-input"
@@ -205,7 +205,7 @@
             <label for="example-input-help-required-fieldset">Voorbeeld invoerveld</label>
             <div>
               <span class="nota-bene">Dit veld is verplicht</span>
-              <div>
+              <div class="help-container">
                 <input
                   id="example-input-help-required-fieldset"
                   name="voorbeeld-text-input"
@@ -238,7 +238,7 @@
     <label for="example-input-help-required-fieldset">Voorbeeld invoerveld</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
-      <div>
+      <div class="help-container">
         <input
           id="example-input-help-required-fieldset"
           name="voorbeeld-text-input"
@@ -275,7 +275,7 @@
               >
               <div>
                 <span class="nota-bene">Dit veld is verplicht</span>
-                <div>
+                <div class="help-container">
                   <input
                     id="example-input-help-required-fieldset-horizontal"
                     name="voorbeeld-text-input"
@@ -313,7 +313,7 @@
       >
       <div>
         <span class="nota-bene">Dit veld is verplicht</span>
-        <div>
+        <div class="help-container">
           <input
             id="example-input-help-required-fieldset-horizontal"
             name="voorbeeld-text-input"
@@ -353,7 +353,7 @@
             >
             <div>
               <span class="nota-bene">Dit veld is verplicht</span>
-              <div>
+              <div class="help-container">
                 <input
                   id="example-input-help-horizontal"
                   name="voorbeeld-text-input"
@@ -377,7 +377,7 @@
             <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
               >Help op simpel formulierveld</label
             >
-            <div>
+            <div class="help-container">
               <input
                 id="example-input-help-horizontal-required"
                 name="voorbeeld-text-input"
@@ -415,7 +415,7 @@
     >
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
-      <div>
+      <div class="help-container">
         <input
           id="example-input-help-horizontal"
           name="voorbeeld-text-input"
@@ -439,7 +439,7 @@
     <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
       >Help op simpel formulierveld</label
     >
-    <div>
+    <div class="help-container">
       <input
         id="example-input-help-horizontal-required"
         name="voorbeeld-text-input"
@@ -479,7 +479,7 @@
               >
               <div>
                 <span class="nota-bene">Dit veld is verplicht</span>
-                <div>
+                <div class="help-container">
                   <input
                     id="example-input-help-required-basic"
                     name="voorbeeld-text-input"
@@ -503,7 +503,7 @@
               <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
                 >Help op simpel formulierveld</label
               >
-              <div>
+              <div class="help-container">
                 <input
                   id="example-input-help-required-2"
                   name="voorbeeld-text-input"
@@ -522,7 +522,7 @@
               </div>
             </div>
 
-            <div class="checkbox">
+            <div class="checkbox help-container">
               <input
                 type="checkbox"
                 id="checkbox-example-with-help-within-fieldset"
@@ -541,7 +541,7 @@
               </p>
             </div>
 
-            <div class="radio">
+            <div class="radio help-container">
               <input type="radio" id="radio-example-base" name="standaard-radio" />
               <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
               <p
@@ -588,7 +588,7 @@
             <fieldset>
               <legend>Examples</legend>
 
-              <div class="radio">
+              <div class="radio help-container">
                 <input type="radio" id="radio-example-list-2-1" name="standaard-radio" />
                 <label for="radio-example-list-2-1">Lorem ipsum dolor sit amet</label>
 
@@ -602,7 +602,7 @@
                 </p>
               </div>
 
-              <div class="radio">
+              <div class="radio help-container">
                 <input type="radio" id="radio-example-list-2-2" name="standaard-radio" />
                 <label for="radio-example-list-2-2">Lorem ipsum dolor sit amet</label>
 
@@ -616,7 +616,7 @@
                 </p>
               </div>
 
-              <div class="radio">
+              <div class="radio help-container">
                 <input type="radio" id="radio-example-list-2-3" name="standaard-radio" />
                 <label for="radio-example-list-2-3">Lorem ipsum dolor sit amet</label>
                 <p
@@ -629,7 +629,7 @@
                 </p>
               </div>
 
-              <div class="radio">
+              <div class="radio help-container">
                 <input type="radio" id="radio-example-list-2-4" name="standaard-radio" />
                 <label for="radio-example-list-2-4">Lorem ipsum dolor sit amet</label>
                 <p

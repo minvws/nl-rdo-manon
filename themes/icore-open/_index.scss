@@ -25,6 +25,9 @@ and spacing sets */
 
 /* Component variables */
 @use "@minvws/manon/variables" with (
+  // article
+  $article-gap: #{spacing.$spacing-250},
+
   //base
   $base-background-color: #{semantic.$base-background-color},
   $base-font-family: "IBM Plex Sans",
@@ -78,12 +81,17 @@ and spacing sets */
   $code-block-background-color: #{color-scheme.$oc-gray-1},
   $code-block-border-radius: #{border-radii.$border-radius-s},
 
+  // color picker
+  $color-picker-border-radius: #{border-radii.$border-radius-s},
+
   // form
   $form-align-items: flex-start,
   $form-text-color: #{semantic.$color-text-default},
   $form-gap: #{spacing.$spacing-200},
-  $form-group-gap: #{spacing.$spacing-100},
   $form-max-width: 40rem,
+
+  // form group
+  $form-group-gap: #{spacing.$spacing-050},
 
   // form input
   $form-input-padding-top: #{spacing.$spacing-075},
@@ -94,6 +102,12 @@ and spacing sets */
   $form-input-border-style: solid,
   $form-input-border-color: #{color-scheme.$oc-gray-4},
   $form-input-border-radius: #{border-radii.$border-radius-m},
+
+  // combined field
+  $form-combined-field-input-border-radius: #{border-radii.$border-radius-m} 0 0
+    #{border-radii.$border-radius-m},
+  $form-combined-field-button-border-radius: 0 #{border-radii.$border-radius-m} #{border-radii.$border-radius-m}
+    0,
 
   // form label
   $form-label-font-weight: bold,
@@ -109,6 +123,21 @@ and spacing sets */
   $footer-padding-bottom: #{spacing.$spacing-300},
   $footer-padding-left: #{spacing.$spacing-200},
   $footer-list-style: none,
+
+  // Form help
+  $form-help-button-padding-top: 0,
+  $form-help-button-padding-right: 0,
+  $form-help-button-padding-bottom: 0,
+  $form-help-button-padding-left: 0,
+  $form-help-button-border-width: 2px,
+  $form-help-button-border-style: solid,
+  $form-help-button-border-color: #{semantic.$color-brand-primary-default},
+  $form-help-button-border-radius: 50%,
+  $form-help-button-width: 1.25rem,
+  $form-help-button-height: 1.25rem,
+  $form-help-button-background-color: #{color-scheme.$oc-white},
+  $form-help-button-text-color: #{semantic.$color-brand-primary-default},
+  $form-help-button-top: #{spacing.$spacing-050},
 
   // header
   $header-background-color: #{color-scheme.$oc-gray-9},
@@ -139,6 +168,10 @@ and spacing sets */
   $main-padding-bottom: #{spacing.$spacing-400},
   $main-padding-left: 5%,
   $main-gap: #{spacing.$spacing-225},
+
+  // nota bene
+  $nota-bene-font-size: 0.75rem,
+  $nota-bene-text-color: #{color-scheme.$oc-gray-7},
 
   // pagination
   $pagination-list-gap: #{spacing.$spacing-025},
@@ -177,8 +210,8 @@ and spacing sets */
   $section-padding-right: #{spacing.$spacing-200},
   $section-padding-bottom: #{spacing.$spacing-300},
   $section-padding-left: #{spacing.$spacing-200},
-  $section-max-width: 50rem,
-  $section-gap: #{spacing.$spacing-400},
+  $section-max-width: 60rem,
+  $section-gap: #{spacing.$spacing-150},
   $section-flex-direction: column,
   $section-border-radius: #{border-radii.$border-radius-m},
   $section-justify-content: flex-start,

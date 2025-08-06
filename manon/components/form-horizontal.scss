@@ -1,14 +1,23 @@
-/*---------------------------------------------------------------*/
-/*----------------- form-horizontal.scss -------------------*/
-/*---------------------------------------------------------------*/
-@use "form-horizontal-variables";
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
 
 $breakpoint: 24rem !default;
 
 form.horizontal {
-  flex-direction: column;
-  gap: var(--form-horizontal-gap);
-  flex-wrap: wrap;
+  flex-direction: column !important;
+  align-items: flex-start;
+
+  > div {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include theming.apply-from-theme(
+      (
+        gap: theme.$form-horizontal-gap,
+      )
+    );
+  }
 
   button,
   a.button,
@@ -23,20 +32,41 @@ form.horizontal {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: var(--form-horizontal-justify-content);
     flex-wrap: wrap;
-    gap: var(--form-horizontal-group-gap)
-      var(--form-horizontal-group-vertical-gap);
     margin: 0;
+
+    @include theming.apply-from-theme(
+      (
+        justify-content: theme.$form-horizontal-justify-content,
+      )
+    );
+
+    @if validators.args-not-null(
+      theme.$form-horizontal-group-gap,
+      theme.$form-horizontal-group-vertical-gap
+    )
+    {
+      gap: theme.$form-horizontal-group-gap
+        theme.$form-horizontal-group-vertical-gap;
+    }
 
     &.checkbox {
       margin: 0;
-      gap: var(--checkbox-gap);
       flex-wrap: nowrap;
 
+      @include theming.apply-from-theme(
+        (
+          gap: theme.$checkbox-gap,
+        )
+      );
+
       @media (width >= $breakpoint) {
-        max-width: var(--input-column);
-        margin-left: var(--label-column);
+        @include theming.apply-from-theme(
+          (
+            max-width: theme.$form-input-column,
+            margin-left: theme.$form-label-column,
+          )
+        );
       }
 
       %horizontal-checkbox,
@@ -47,7 +77,9 @@ form.horizontal {
         margin-right: 0;
 
         & + label {
-          max-width: calc(100% - var(--checkbox-width));
+          @if theme.$checkbox-width {
+            max-width: calc(100% - theme.$checkbox-width);
+          }
         }
       }
 
@@ -61,7 +93,6 @@ form.horizontal {
     }
 
     &.radio {
-      gap: var(--form-radio-margin-right);
       flex-wrap: nowrap;
 
       %horizontal-radio,
@@ -70,12 +101,18 @@ form.horizontal {
         margin-right: 0;
 
         & + label {
-          max-width: calc(100% - var(--radio-input-width));
+          @if theme.$radio-input-width {
+            max-width: calc(100% - theme.$radio-input-width);
+          }
         }
 
         @media (width >= $breakpoint) {
           /* Align radio with input fields */
-          margin-left: var(--label-column);
+          @include theming.apply-from-theme(
+            (
+              margin-left: theme.$form-label-column,
+            )
+          );
         }
       }
 
@@ -93,7 +130,11 @@ form.horizontal {
       justify-content: flex-start;
 
       > .nota-bene {
-        margin-left: var(--label-column);
+        @include theming.apply-from-theme(
+          (
+            margin-left: theme.$form-label-column,
+          )
+        );
       }
     }
 
@@ -103,25 +144,23 @@ form.horizontal {
     &.explanation,
     &.confirmation,
     &.system {
-      flex-direction: var(
-        --form-horizontal-notification-block-element-flex-direction
-      );
-      justify-content: var(
-        --form-horizontal-notification-block-element-justify-content
-      );
-      align-items: var(
-        --form-horizontal-notification-block-element-align-items
-      );
-      gap: var(--form-horizontal-notification-block-element-gap);
       margin: 0;
+
+      @include theming.apply-from-theme(
+        (
+          flex-direction:
+            theme.$form-horizontal-notification-block-element-flex-direction,
+          justify-content:
+            theme.$form-horizontal-notification-block-element-justify-content,
+          align-items:
+            theme.$form-horizontal-notification-block-element-align-items,
+          gap: theme.$form-horizontal-notification-block-element-gap,
+        )
+      );
 
       > * {
         max-width: 100%;
       }
-    }
-
-    input[type="color"] {
-      max-width: var(--form-input-color-max-width);
     }
 
     > * {
@@ -141,12 +180,21 @@ form.horizontal {
       flex-wrap: nowrap;
 
       > * {
-        max-width: var(--input-column);
+        @include theming.apply-from-theme(
+          (
+            max-width: theme.$form-input-column,
+          )
+        );
       }
 
       label {
         width: 100%;
-        max-width: var(--form-horizontal-label-max-width);
+
+        @include theming.apply-from-theme(
+          (
+            max-width: theme.$form-horizontal-label-max-width,
+          )
+        );
       }
     }
   }
@@ -158,7 +206,11 @@ form.horizontal {
 
     @media (width >= $breakpoint) {
       > * {
-        margin-left: var(--label-column);
+        @include theming.apply-from-theme(
+          (
+            margin-left: theme.$form-label-column,
+          )
+        );
       }
     }
   }
@@ -167,8 +219,13 @@ form.horizontal {
     %align-to-input {
       width: auto;
       max-width: 100%;
-      margin-left: var(--label-column);
       flex-grow: 0;
+
+      @include theming.apply-from-theme(
+        (
+          margin-left: theme.$form-label-column,
+        )
+      );
     }
 
     > button,
@@ -193,8 +250,12 @@ form.horizontal {
 
     > div.horizontal,
     > div.button-container {
-      max-width: var(--input-column);
-      margin-left: var(--label-column);
+      @include theming.apply-from-theme(
+        (
+          max-width: theme.$form-input-column,
+          margin-left: theme.$form-label-column,
+        )
+      );
       flex-wrap: wrap;
 
       button,

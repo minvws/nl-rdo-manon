@@ -85,6 +85,9 @@
                 <li><a href="{base}/components/logo">Logo</a></li>
               </ul>
             </li>
+            <li>
+              <a href="{base}/components/color-picker">Kleurselector</a>
+            </li>
           </ul>
         </nav>
       </div>
