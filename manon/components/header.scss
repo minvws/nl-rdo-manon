@@ -81,6 +81,19 @@ body > header,
     &:hover {
       color: inherit;
     }
+
+    &[aria-current="page"],
+    &:hover {
+      @include theming.apply-from-theme(
+        (
+          color: theme.$header-link-current-text-color,
+          background-color: theme.$header-link-current-background-color,
+          border-width: theme.$header-link-current-border-width,
+          border-style: theme.$header-link-current-border-style,
+          border-color: theme.$header-link-current-border-color,
+        )
+      );
+    }
   }
 
   ul,
@@ -125,20 +138,6 @@ body > header,
       &::before {
         /* Preventing default nav before to show up */
         display: none;
-      }
-
-      &:has(a[aria-current="page"]),
-      &:has(a:hover),
-      &:hover {
-        @include theming.apply-from-theme(
-          (
-            color: theme.$header-list-item-current-text-color,
-            background-color: theme.$header-list-item-current-background-color,
-            border-width: theme.$header-list-item-current-border-width,
-            border-style: theme.$header-list-item-current-border-style,
-            border-color: theme.$header-list-item-current-border-color,
-          )
-        );
       }
     }
   }

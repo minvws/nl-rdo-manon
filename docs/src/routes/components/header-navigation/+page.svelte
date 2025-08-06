@@ -144,18 +144,23 @@
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/components">Componenten</a></li>
-        <li><a href="/documentation">Documentatie</a></li>
+        <li><a href={page.url.pathname}>Voorbeeld-link 1</a></li>
+        <li><a href={page.url.pathname}>Voorbeeld-link 2</a></li>
+        <li><a href={page.url.pathname}>Voorbeeld-link 3</a></li>
       </ul>
 
       <div>
-        <form class="inline">
-          <input type="text" placeholder="Zoeken" />
-          <button type="submit">
-            <span class="icon icon-search" aria-hidden="true"></span>
-            <span class="visually-hidden">Zoeken</span>
-          </button>
+        <form action="" method="post">
+          <div>
+            <label for="voorbeeld-1-date-1-start">Ipsum</label>
+            <div class="combined-field">
+              <input type="text" placeholder="Zoeken" />
+              <button type="submit">
+                <span class="icon icon-search" aria-hidden="true"></span>
+                <span class="visually-hidden">Zoeken</span>
+              </button>
+            </div>
+          </div>
         </form>
       </div>
     </div>
@@ -349,16 +354,8 @@
       <Code
         language="css"
         code={`
-@use "@minvws/manon/header-navigation";
-@use "@minvws/manon/header-navigation-content-wrapper";
-@use "@minvws/manon/header-navigation-link";
-@use "@minvws/manon/header-navigation-link-visited";
-@use "@minvws/manon/header-navigation-link-hover";
-@use "@minvws/manon/header-navigation-link-active";
-@use "@minvws/manon/header-navigation-link-focus";
-@use "@minvws/manon/header-navigation-collapsible";
-@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button";
-@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button-states";
+@use "@minvws/manon/header";
+@use "@minvws/manon/collapsible";
 
 // Accessibility
 @use "@minvws/manon/skip-to-content";
