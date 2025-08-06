@@ -3,6 +3,7 @@
 </script>
 
 <script lang="ts">
+  import { base } from "$app/paths";
   import Code from "$lib/Code.svelte";
   import SideMenu from "$lib/SideMenu.svelte";
 </script>
@@ -175,7 +176,7 @@
             <input id="input-example-grouped" name="input-example-grouped" type="text" />
           </div>
           <div class="button-container">
-            <a class="button ghost" href="form-horizontal-test">Annuleren</a>
+            <a class="button ghost" href="{base}/components/form-horizontal-test">Annuleren</a>
             <button>Verzend</button>
           </div>
         </form>
