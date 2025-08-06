@@ -112,9 +112,9 @@
           <li>
             Gewenste layout, bijvoorbeeld:
             <ul>
-              <li><a href="{base}/components/layout-column-2">layout-column-2</a></li>
-              <li><a href="{base}/components/layout-column-3">layout-column-3</a></li>
-              <li><a href="{base}/components/layout-column-4">layout-column-4</a></li>
+              <li><a href="{base}/utility/column-2">layout-column-2</a></li>
+              <li><a href="{base}/utility/column-3">layout-column-3</a></li>
+              <li><a href="{base}/utility/column-4">layout-column-4</a></li>
             </ul>
             Voor alle beschikbare opties zie
             <a href="{base}/components#layout">Layout</a>.
