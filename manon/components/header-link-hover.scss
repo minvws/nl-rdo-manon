@@ -1,0 +1,50 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+body > header,
+.page-header,
+%header-style {
+  a {
+    &:hover,
+    &.hover /* Testing purposes */ {
+      @include theming.apply-from-theme(
+        (
+          font-size: theme.$header-link-hover-font-size,
+          font-weight: theme.$header-link-hover-font-weight,
+          line-height: theme.$header-link-hover-line-height,
+          background-color: theme.$header-link-hover-background-color,
+          color: theme.$header-link-hover-text-color,
+          text-decoration: theme.$header-link-hover-text-decoration,
+          border-width: theme.$header-link-hover-border-width,
+          border-style: theme.$header-link-hover-border-style,
+          border-color: theme.$header-link-hover-border-color,
+          border-radius: theme.$header-link-hover-border-radius,
+        )
+      );
+
+      &::before {
+        position: static;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        font-style: normal;
+
+        @include theming.apply-from-theme(
+          (
+            font-family: theme.$header-link-hover-icon-font-family,
+            font-size: theme.$header-link-hover-icon-font-size,
+            line-height: theme.$header-link-hover-icon-line-height,
+            text-decoration: theme.$header-link-hover-icon-text-decoration,
+            padding-right: theme.$header-link-hover-icon-padding-right,
+            padding-left: theme.$header-link-hover-icon-padding-left,
+            background-color: theme.$header-link-hover-icon-background-color,
+            color: theme.$header-link-hover-icon-text-color,
+          )
+        );
+      }
+    }
+  }
+}
