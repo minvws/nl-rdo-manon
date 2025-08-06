@@ -176,7 +176,7 @@
             <input id="input-example-grouped" name="input-example-grouped" type="text" />
           </div>
           <div class="button-container">
-            <a class="button ghost" href="{base}/components/form-horizontal-test">Annuleren</a>
+            <a class="button ghost" href="{base}/components/form-horizontal-view-test">Annuleren</a>
             <button>Verzend</button>
           </div>
         </form>
