@@ -1,0 +1,83 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+body > header,
+.page-header,
+%header-style {
+  a {
+    @include theming.apply-from-theme(
+      (
+        font-size: theme.$header-link-font-size,
+        font-weight: theme.$header-link-font-weight,
+        line-height: theme.$header-link-line-height,
+        background-color: theme.$header-link-background-color,
+        color: theme.$header-link-text-color,
+        text-decoration: theme.$header-link-text-decoration,
+        border-width: theme.$header-link-border-width,
+        border-style: theme.$header-link-border-style,
+        border-color: theme.$header-link-border-color,
+        border-radius: theme.$header-link-border-radius,
+      )
+    );
+
+    &::before {
+      position: static;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+      font-style: normal;
+
+      @include theming.apply-from-theme(
+        (
+          font-family: theme.$header-link-icon-font-family,
+          font-size: theme.$header-link-icon-font-size,
+          line-height: theme.$header-link-icon-line-height,
+          text-decoration: theme.$header-link-icon-text-decoration,
+          padding-right: theme.$header-link-icon-padding-right,
+          padding-left: theme.$header-link-icon-padding-left,
+          background-color: theme.$header-link-icon-background-color,
+          color: theme.$header-link-icon-text-color,
+          content: theme.$header-link-icon-content,
+        )
+      );
+    }
+
+    &.icon,
+    .icon {
+      &::before {
+        position: static;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        font-style: normal;
+
+        @include theming.apply-from-theme(
+          (
+            font-family: theme.$header-link-icon-font-family,
+            font-size: theme.$header-link-icon-font-size,
+            line-height: theme.$header-link-icon-line-height,
+            text-decoration: theme.$header-link-icon-text-decoration,
+            padding-right: theme.$header-link-icon-padding-right,
+            padding-left: theme.$header-link-icon-padding-left,
+            background-color: theme.$header-link-icon-background-color,
+            color: theme.$header-link-icon-text-color,
+          )
+        );
+      }
+    }
+
+    > span.icon:last-of-type:not(:only-of-type) {
+      @include theming.apply-from-theme(
+        (
+          padding-right: theme.$header-link-icon-last-padding-right,
+          padding-left: theme.$header-link-icon-last-padding-left,
+        )
+      );
+    }
+  }
+}
