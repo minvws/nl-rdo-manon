@@ -12,7 +12,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Icoon-set toevoegen</h1>
@@ -60,7 +60,7 @@
   font-family: "naam-van-het-icon-font";
   font-weight: normal;
   font-style: normal;
-  font-display: var(--text-icon-font-display, block);
+  font-display: block;
   src: url("./pad/naar/fontnaam.woff2") format("woff2"),
     url("./pad/naar/fontnaam.woff") format("woff");
 }`}
@@ -140,7 +140,7 @@ $glyphs: (
   font-family: "naam-van-het-icon-font";
   font-weight: normal;
   font-style: normal;
-  font-display: var(--text-icon-font-display, block);
+  font-display: block;
   src: url("#{variables.$font-path}/fontnaam.woff2") format("woff2"),
     url("#{variables.$font-path}/fontnaam.woff") format("woff");
 }`}

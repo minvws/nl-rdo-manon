@@ -7,35 +7,128 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   cursor: pointer;
+  overflow-wrap: break-word;
+  width: auto;
+  align-items: center;
+  align-self: flex-start;
+  margin: 0;
+  box-sizing: border-box;
 
   @include theming.apply-from-theme(
     (
-      // Font
-      font-size: theme.$button-font-size,
-      font-weight: theme.$button-font-weight,
-      font-family: theme.$button-font-family,
-
-      // Color
+      justify-content: theme.$button-justify-content,
+      gap: theme.$button-gap,
       background-color: theme.$button-background-color,
       color: theme.$button-text-color,
-      border-width: theme.$button-border-width,
-      border-color: theme.$button-border-color,
-      border-radius: theme.$button-border-radius,
-
-      // Padding
+      font-family: theme.$button-font-family,
+      font-size: theme.$button-font-size,
+      font-weight: theme.$button-font-weight,
+      line-height: theme.$button-line-height,
+      text-decoration: theme.$button-text-decoration,
+      text-align: theme.$button-text-align,
       padding-top: theme.$button-padding-top,
       padding-right: theme.$button-padding-right,
       padding-bottom: theme.$button-padding-bottom,
-      padding-left: theme.$button-padding-left
+      padding-left: theme.$button-padding-left,
+      min-width: theme.$button-min-width,
+      height: theme.$button-height,
+      min-height: theme.$button-min-height,
+      border-width: theme.$button-border-width,
+      border-style: theme.$button-border-style,
+      border-color: theme.$button-border-color,
+      border-radius: theme.$button-border-radius,
+      webkit-border-radius: theme.$button-border-radius,
+      webkit-appearance: theme.$button-appearance,
     )
   );
 
-  &:hover {
+  &:hover,
+  &.hover {
     @include theming.apply-from-theme(
       (
-        background-color: theme.$button-primary-hover-background-color,
-        color: theme.$button-primary-hover-text-color,
-        border-color: theme.$button-primary-hover-border-color,
+        background-color: theme.$button-hover-background-color,
+        color: theme.$button-hover-text-color,
+        border-color: theme.$button-hover-border-color,
+        border-width: theme.$button-hover-border-width,
+        border-style: theme.$button-hover-border-style,
+        border-radius: theme.$button-hover-border-radius,
+      )
+    );
+  }
+
+  &:active,
+  &.active {
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$button-active-background-color,
+        color: theme.$button-active-text-color,
+        border-style: theme.$button-active-border-style,
+        border-color: theme.$button-active-border-color,
+        border-width: theme.$button-active-border-width,
+        border-radius: theme.$button-active-border-radius,
+      )
+    );
+  }
+
+  &:focus,
+  &.focus {
+    @include theming.apply-from-theme(
+      (
+        border-style: theme.$button-focus-border-style,
+        border-color: theme.$button-focus-border-color,
+        border-width: theme.$button-focus-border-width,
+        border-radius: theme.$button-focus-border-radius,
+        background-color: theme.$button-focus-background-color,
+        color: theme.$button-focus-text-color,
+        outline: theme.$button-outline,
+        outline-offset: theme.$button-outline-offset,
+        outline-color: theme.$button-outline-color,
+        z-index: theme.$button-z-index,
+        box-shadow: theme.$button-box-shadow,
+      )
+    );
+  }
+
+  > img {
+    max-width: theme.$button-image-max-width;
+  }
+
+  > * {
+    pointer-events: none;
+  }
+
+  @media (width >= 24rem) {
+    display: flex;
+  }
+}
+
+a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  display: flex;
+}
+
+a.button {
+  text-decoration: none;
+
+  @include theming.apply-from-theme(
+    (
+      color: theme.$button-text-color,
+    )
+  );
+
+  &:visited,
+  &.visited {
+    @include theming.apply-from-theme(
+      (
+        outline: theme.$button-outline,
+        outline-offset: theme.$button-outline-offset,
+        outline-color: theme.$button-outline-color,
+        z-index: theme.$button-z-index,
+        box-shadow: theme.$button-box-shadow,
+        border-radius: theme.$button-outline-border-radius,
+        color: theme.$button-text-color,
       )
     );
   }

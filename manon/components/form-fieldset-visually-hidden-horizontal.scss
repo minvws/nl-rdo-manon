@@ -1,0 +1,35 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+$breakpoint-1: 24rem !default;
+
+form.horizontal {
+  > fieldset > fieldset {
+    legend {
+      font-weight: inherit;
+      margin: 0;
+      box-sizing: border-box;
+      float: left;
+
+      @include theming.apply-from-theme(
+        (
+          width: theme.$form-fieldset-label-column,
+          padding-right: theme.$form-horizontal-gap,
+          margin-top: theme.$form-horizontal-fieldset-label-margin-top,
+        )
+      );
+    }
+
+    > * {
+      @media (width >= $breakpoint-1) {
+        float: right;
+
+        @include theming.apply-from-theme(
+          (
+            width: theme.$input-column,
+          )
+        );
+      }
+    }
+  }
+}

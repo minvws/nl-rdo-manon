@@ -1,0 +1,35 @@
+:root {
+  --critical-informational-critical: #42145f; /* Purple */
+  --critical-informational-high: #d6293e; /* Red */
+  --critical-informational-medium: #c36100; /* Orange */
+  --critical-informational-low: #00519c; /* Blue */
+  --critical-informational-informational: #13853e; /* Green */
+}
+
+.critical,
+.high,
+.medium,
+.low,
+.informational {
+  color: #fff;
+}
+
+.critical {
+  background-color: var(--critical-informational-critical);
+}
+
+.high {
+  background-color: var(--critical-informational-high);
+}
+
+.medium {
+  background-color: var(--critical-informational-medium);
+}
+
+.low {
+  background-color: var(--critical-informational-low);
+}
+
+.informational {
+  background-color: var(--critical-informational-informational);
+}

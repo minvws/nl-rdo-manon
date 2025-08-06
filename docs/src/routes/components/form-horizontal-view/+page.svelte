@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Horizontaal uitgelijnd</h1>
@@ -54,7 +54,7 @@
         <h3>Basis</h3>
         <h4>Voorbeeld</h4>
         <p>Visueel voorbeeld:</p>
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="form-example-1">Voorbeeld text input</label>
             <input id="form-example-1" name="form-example-1" type="text" />
@@ -66,7 +66,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
 <div>
 <label for="form-example-1">Voorbeeld text input</label>
 <input id="form-example-1" name="form-example-1" type="text">
@@ -86,18 +86,18 @@
           <li>
             Fieldsets kunnen geen gebruik maken van flex-box. Hierdoor hebben fieldset andere
             styling nodig dan de overige elementen. <strong
-              >Voeg het .scss bestand: <code>form-horizontal-view-fieldset.scss</code> toe</strong
+              >Voeg het .scss bestand: <code>form-horizontal-fieldset.scss</code> toe</strong
             > aan het project om gebruik te maken van fieldsets en een horizontaal weergegeven formulier.
           </li>
 
           <li>
-            Voeg optioneel het bestand:<code>form-horizontal-view-fieldset-variables.scss</code> toe
-            om de uitlijning van de labels ten opzichte van de velden aan te passen.
+            Voeg optioneel het bestand:<code>form-horizontal-fieldset-variables.scss</code> toe om de
+            uitlijning van de labels ten opzichte van de velden aan te passen.
           </li>
         </ul>
         <h3>Visueel voorbeeld:</h3>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <fieldset>
             <legend>Fieldset test</legend>
             <div>
@@ -112,7 +112,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
 <fieldset>
 <legend>Fieldset test</legend>
 <div>
@@ -141,10 +141,10 @@
           language="css"
           code={`
 @use "@minvws/manon/form";
-@use "@minvws/manon/form-horizontal-view";
+@use "@minvws/manon/form-horizontal";
 
 /* Optional */
-@use "@minvws/manon/form-horizontal-view-fieldset";
+@use "@minvws/manon/form-horizontal-fieldset";
       `}
         />
 
@@ -152,7 +152,7 @@
         <Code
           language="css"
           code={`
-@use "@minvws/manon/form-horizontal-view-fieldset";
+@use "@minvws/manon/form-horizontal-fieldset";
       `}
         />
       </section>
@@ -186,7 +186,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="{base}/components/form-horizontal-view-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/form-horizontal-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

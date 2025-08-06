@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Hulpteksten testpagina</h1>
@@ -134,7 +134,7 @@
 
         <h3>Verplicht invoerveld horizontaal uitgelijnd</h3>
         <h4>Visueel voorbeeld</h4>
-        <form action="" method="post" class="horizontal-view help">
+        <form action="" method="post" class="horizontal help">
           <div>
             <label for="example-input-help-required-horizontal">Voorbeeld invoerveld</label>
             <div>
@@ -166,7 +166,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view help">
+<form action="" method="post" class="horizontal help">
   <div>
     <label for="example-input-help-required-horizontal">Voorbeeld invoerveld</label>
     <div>
@@ -265,7 +265,7 @@
 
         <h3>Verplicht invoerveld binnen fieldset binnen een horizontaal uitgelijnd formulier</h3>
         <h4>Visueel voorbeeld</h4>
-        <form action="" method="post" class=" horizontal-view help">
+        <form action="" method="post" class=" horizontal help">
           <fieldset>
             <legend>Help op simpel formulierveld</legend>
 
@@ -303,7 +303,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class=" horizontal-view help">
+<form action="" method="post" class=" horizontal help">
   <fieldset>
     <legend>Help op simpel formulierveld</legend>
 
@@ -341,7 +341,7 @@
 
         <h3>Horizontaal uitgelijnd formulier met helptekst</h3>
         <h4>Visueel voorbeeld</h4>
-        <form action="" method="post" class="horizontal-view help">
+        <form action="" method="post" class="horizontal help">
           <div>
             <label for="form-example-base">Voorbeeld text input</label>
             <input id="form-example-base" name="form-example-base" type="text" />
@@ -403,7 +403,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view help">
+<form action="" method="post" class="horizontal help">
   <div>
     <label for="form-example-base">Voorbeeld text input</label>
     <input id="form-example-base" name="form-example-base" type="text" />

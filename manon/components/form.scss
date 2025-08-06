@@ -1,10 +1,10 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
 
+form,
 main section form,
 main article form,
-main div form,
-form {
+main div form {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -31,26 +31,28 @@ form {
     )
   );
 
+  /* stylelint-disable no-descending-specificity */
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include theming.apply-from-theme(
+      (
+        gap: theme.$form-group-gap,
+      )
+    );
+  }
+
   div,
   fieldset {
     width: 100%;
     box-sizing: border-box;
     padding: 0;
 
-    &.horizontal-view {
+    &.horizontal {
       flex-wrap: nowrap;
     }
-  }
-
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    @include theming.apply-from-theme(
-      (
-        gap: theme.$form-group-gap,
-      )
-    );
   }
 
   .centered {
@@ -62,12 +64,12 @@ form {
 
 /* Resetting inherited layout padding */
 main {
+  div,
+  div div,
   section,
   section div,
   article,
-  article div,
-  div,
-  div div {
+  article div {
     form {
       div {
         padding: 0;
@@ -75,3 +77,4 @@ main {
     }
   }
 }
+/* stylelint-enable no-descending-specificity */

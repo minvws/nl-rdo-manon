@@ -1,4 +1,8 @@
-// icore open theme styling
+/* Theme configuration */
+@forward "config";
+
+/* Fonts (@font-faces) */
+@use "fonts";
 
 /* Core variables */
 /* These are core sets like color schemes, fonts
@@ -23,6 +27,9 @@ and spacing sets */
 @use "@minvws/manon/variables" with (
   //base
   $base-background-color: #{semantic.$base-background-color},
+  $base-font-family: "IBM Plex Sans",
+  $base-font-size: 1rem,
+  $base-font-weight: 300,
 
   // button
   $button-text-color: #{color-scheme.$oc-white},
@@ -33,11 +40,12 @@ and spacing sets */
   $button-padding-right: #{spacing.$spacing-100},
   $button-padding-bottom: #{spacing.$spacing-075},
   $button-padding-left: #{spacing.$spacing-100},
+  $button-background-color: #{semantic.$color-brand-primary-default},
 
   // button hover
-  $button-primary-hover-background-color: #{color-scheme.$oc-blue-6},
-  $button-primary-hover-text-color: #{color-scheme.$oc-white},
-  $button-primary-hover-border-color: #{color-scheme.$oc-blue-6},
+  $button-hover-background-color: #{color-scheme.$oc-blue-6},
+  $button-hover-text-color: #{color-scheme.$oc-white},
+  $button-hover-border-color: #{color-scheme.$oc-blue-6},
 
   // button destructive
   $button-destructive-background-color: #{semantic.$color-destructive-default},
@@ -45,9 +53,12 @@ and spacing sets */
   $button-destructive-border-color: #{semantic.$color-destructive-default},
 
   // button destructive hover
-  $button-destructive-primary-hover-background-color: #{semantic.$color-destructive-intense},
-  $button-destructive-primary-hover-text-color: #{color-scheme.$oc-white},
-  $button-destructive-primary-hover-border-color: #{semantic.$color-destructive-intense},
+  $button-destructive-hover-background-color: #{semantic.$color-destructive-intense},
+  $button-destructive-hover-text-color: #{color-scheme.$oc-white},
+  $button-destructive-hover-border-color: #{semantic.$color-destructive-intense},
+
+  // button container
+  $button-container-gap: 1rem,
 
   // breadcrumb bar
   $breadcrumb-bar-padding-top: #{spacing.$spacing-075},
@@ -110,9 +121,11 @@ and spacing sets */
   // heading
   $h1-font-family: #{semantic.$font-family},
 
-  // helpers
+  // utility
   $horizontal-gap: #{spacing.$spacing-100},
-  $vertical-gap: #{spacing.$spacing-100},
+
+  // layout
+  $layout-gap: 2.5rem,
 
   // link
   $link-text-color: #{color-scheme.$oc-blue-8},
@@ -125,15 +138,84 @@ and spacing sets */
   $main-padding-right: 5%,
   $main-padding-bottom: #{spacing.$spacing-400},
   $main-padding-left: 5%,
+  $main-gap: #{spacing.$spacing-225},
+
+  // pagination
+  $pagination-list-gap: #{spacing.$spacing-025},
+
+  // pagination item
+  $pagination-item-width: 2.5rem,
+  $pagination-item-height: 2.5rem,
+
+  // pagination link
+  $pagination-link-background-color: #{color-scheme.$oc-white},
+  $pagination-link-border-radius: #{border-radii.$border-radius-s},
+  $pagination-link-text-decoration: none,
+  $pagination-link-border-color: #{color-scheme.$oc-white},
+  $pagination-link-border-width: 1px,
+  $pagination-link-border-style: solid,
+
+  // pagination link hover
+  $pagination-link-hover-background-color: #{semantic.$color-brand-primary-subtle},
+  $pagination-link-hover-border-color: #{semantic.$color-brand-primary-subtle},
+
+  // pagination link active
+  $pagination-link-active-border-width: 1px,
+  $pagination-link-active-border-style: solid,
+  $pagination-link-active-border-color: #{semantic.$color-brand-primary-default},
+  $pagination-link-active-text-color: #{semantic.$color-brand-primary-default},
+  $pagination-link-active-font-weight: bold,
+
+  // Navigation
+  $navigation-list-gap: #{spacing.$spacing-050},
+  $navigation-link-text-decoration: none,
+  $navigation-list-padding: 1rem,
 
   // section
   $section-background-color: #{color-scheme.$oc-white},
-  $section-padding-top: #{spacing.$spacing-100},
-  $section-padding-right: #{spacing.$spacing-100},
-  $section-padding-bottom: #{spacing.$spacing-100},
-  $section-padding-left: #{spacing.$spacing-100},
+  $section-padding-top: #{spacing.$spacing-200},
+  $section-padding-right: #{spacing.$spacing-200},
+  $section-padding-bottom: #{spacing.$spacing-300},
+  $section-padding-left: #{spacing.$spacing-200},
   $section-max-width: 50rem,
-  $section-gap: #{spacing.$spacing-300},
+  $section-gap: #{spacing.$spacing-400},
   $section-flex-direction: column,
-  $section-border-radius: #{border-radii.$border-radius-m}
+  $section-border-radius: #{border-radii.$border-radius-m},
+  $section-justify-content: flex-start,
+  $section-align-items: flex-start,
+
+  // table
+  $table-gap: #{spacing.$spacing-050},
+  $table-head-background-color: #{color-scheme.$oc-gray-1},
+  $table-head-border-width: 1px,
+  $table-head-border-style: solid,
+  $table-head-border-color: #{color-scheme.$oc-gray-1},
+  $table-head-padding: #{spacing.$spacing-075} #{spacing.$spacing-100},
+  $table-head-text-align: left,
+  $table-cell-padding: #{spacing.$spacing-075} #{spacing.$spacing-100},
+  $table-cell-gap: #{spacing.$spacing-025},
+  $table-row-border-width: 1px 0,
+  $table-row-border-style: solid,
+  $table-row-border-color: #{color-scheme.$oc-gray-1},
+
+  // table caption
+  $table-caption-text-align: left,
+  $table-caption-padding: #{spacing.$spacing-100} 0,
+
+  // tile
+  $tile-background-color: #{color-scheme.$oc-white},
+  $tile-padding-top: #{spacing.$spacing-100},
+  $tile-padding-right: #{spacing.$spacing-100},
+  $tile-padding-bottom: #{spacing.$spacing-100},
+  $tile-padding-left: #{spacing.$spacing-100},
+  $tile-border-width: 1px,
+  $tile-border-style: solid,
+  $tile-border-color: #{color-scheme.$oc-gray-3},
+  $tile-border-radius: #{border-radii.$border-radius-m},
+
+  // tile groups
+  $tile-groups-gap: #{spacing.$spacing-100},
+
+  // tile image
+  $tile-image-cover-margin-bottom: #{spacing.$spacing-100}
 );

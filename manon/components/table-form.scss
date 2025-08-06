@@ -1,0 +1,10 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+table {
+  form {
+    background-color: transparent;
+    padding: 0;
+    justify-content: flex-start;
+  }
+}

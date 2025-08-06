@@ -36,7 +36,7 @@
       </li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h2>Blok-element testpagina</h2>
@@ -644,7 +644,7 @@
         <h4>Toelichting:</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -669,7 +669,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div class="explanation" role="group" aria-label="toelichting">
     <span>Toelichting:</span>
     <p>
@@ -698,7 +698,7 @@
         <h4>Toelichting:</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <fieldset>
             <legend>Test voor bloknotificatie</legend>
 
@@ -720,7 +720,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <fieldset>
     <legend>Test voor bloknotificatie</legend>
 
@@ -746,7 +746,7 @@
         <h4>Toelichting:</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view help">
+        <form action="" method="post" class="horizontal help">
           <div class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -788,7 +788,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view help">
+<form action="" method="post" class="horizontal help">
   <div class="explanation" role="group" aria-label="toelichting">
     <span>Toelichting:</span>
     <p>

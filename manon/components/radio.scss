@@ -1,0 +1,75 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+form {
+  .radio {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+
+    @include theming.apply-from-theme(
+      (
+        gap: theme.$radio-gap,
+        align-items: theme.$radio-align-items,
+      )
+    );
+
+    input[type="radio"] {
+      padding: 0;
+      cursor: pointer;
+
+      @include theming.apply-from-theme(
+        (
+          width: theme.$radio-input-width,
+          min-width: theme.$radio-input-width,
+          height: theme.$radio-input-height,
+          accent-color: theme.$radio-input-accent-color,
+        )
+      );
+
+      & + label {
+        @include theming.apply-from-theme(
+          (
+            width: theme.$radio-label-width,
+          )
+        );
+
+        cursor: pointer;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+
+        & + label {
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    &.required {
+      flex-direction: column;
+      align-items: flex-start;
+
+      @include theming.apply-from-theme(
+        (
+          gap: theme.$radio-required-gap,
+          justify-content: theme.$radio-align-items,
+        )
+      );
+
+      > div {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+
+        @include theming.apply-from-theme(
+          (
+            gap: theme.$radio-gap,
+            align-items: theme.$radio-align-items,
+          )
+        );
+      }
+    }
+  }
+}

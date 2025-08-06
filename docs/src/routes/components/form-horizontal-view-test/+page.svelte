@@ -89,7 +89,7 @@
       <li><a href="#button-container">Gegroepeerde buttons</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Horizontaal uitgelijnde testpagina</h1>
@@ -106,7 +106,7 @@
         <h4 id="input-basic-view">Basisweergave:</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="input-example">Voorbeeld text input</label>
             <input id="input-example" name="input-example" type="text" />
@@ -118,7 +118,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="input-example">Voorbeeld text input</label>
     <input
@@ -135,7 +135,7 @@
         <h4 id="input-required">Verplicht:</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div class="required">
             <label for="input-example-required">Ipsum</label>
             <div>
@@ -154,7 +154,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div class="required">
     <label for="input-example-required">Ipsum</label>
     <div>
@@ -169,13 +169,13 @@
         <h4 id="grouped-buttons">Gegroepeerde knoppen:</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="input-example-grouped">Voorbeeld text input</label>
             <input id="input-example-grouped" name="input-example-grouped" type="text" />
           </div>
           <div class="button-container">
-            <a class="button ghost" href="form-horizontal-view-test">Annuleren</a>
+            <a class="button ghost" href="form-horizontal-test">Annuleren</a>
             <button>Verzend</button>
           </div>
         </form>
@@ -184,7 +184,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="input-example-grouped">Voorbeeld text input</label>
     <input
@@ -206,7 +206,7 @@
         <h4 id="date-base">Basisweergave:</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="date-example">Datum</label>
             <input id="date-example" name="datumveld voorbeeld" type="date" />
@@ -217,7 +217,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="date-example">Datum</label>
     <input id="date-example" name="datumveld voorbeeld" type="date">
@@ -229,7 +229,7 @@
         <h4 id="date-required">Verplicht</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div class="required">
             <label for="date-example-required">Datum</label>
             <div>
@@ -248,7 +248,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div class="required">
     <label for="date-example-required">Datum</label>
     <div>
@@ -264,7 +264,7 @@
         <h4 id="email-base">Basisweergave:</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="email-example">Email</label>
             <input id="email-example" name="voorbeeld email-veld" type="email" />
@@ -275,7 +275,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="email-example">Email</label>
     <input id="email-example" name="voorbeeld email-veld" type="email">
@@ -287,7 +287,7 @@
         <h4 id="email-required">Verplicht</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div class="required">
             <label for="email-example-required">Email</label>
 
@@ -307,7 +307,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div class="required">
     <label for="email-example-required">Email</label>
 
@@ -326,7 +326,7 @@
         <h4 id="password-base">Basisweergave</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="password-example">Wachtwoord</label>
             <div>
@@ -353,7 +353,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="password-example">Wachtwoord</label>
     <div>
@@ -380,7 +380,7 @@
 
         <h4 id="password-required">Verplicht</h4>
         <h5>Visueel voorbeeld:</h5>
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div class="required">
             <label for="password-example-required">Wachtwoord</label>
             <div>
@@ -406,7 +406,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div class="required">
     <label for="password-example-required">Wachtwoord</label>
     <div>
@@ -430,7 +430,7 @@
         <h4 id="textarea-base">Basisweergave</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="textarea-example">Bericht</label>
 
@@ -451,7 +451,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="textarea-example">Bericht</label>
 
@@ -473,7 +473,7 @@
         <h4 id="textarea-required">Verplicht</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div class="required">
             <label for="voorbeeld-tekstveld-required">Bericht</label>
             <div>
@@ -493,7 +493,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div class="required">
     <label for="voorbeeld-tekstveld-required">Bericht</label>
     <div>
@@ -516,7 +516,7 @@
         <h4 id="select-base">Basisweergave</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="select-example">Selectielijst</label>
             <select id="select-example" name="voorbeeld selectielijst">
@@ -531,7 +531,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="select-example">Selectielijst</label>
     <select id="select-example" name="voorbeeld selectielijst">
@@ -547,7 +547,7 @@
         <h4 id="select-required">Verplicht</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="select-example-required">Selectielijst</label>
 
@@ -566,7 +566,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="select-example-required">Selectielijst</label>
 
@@ -587,7 +587,7 @@
         <h4 id="checkbox-base">Basisweergave</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div class="checkbox">
             <input type="checkbox" id="checkbox-example" name="checkbox" />
             <label for="checkbox-example">Selectievak</label>
@@ -598,7 +598,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div class="checkbox">
     <input type="checkbox" id="checkbox-example" name="checkbox">
     <label for="checkbox-example">Selectievak</label>
@@ -610,7 +610,7 @@
         <h4 id="checkbox-required">Verplicht</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div class="option-group required">
             <span class="nota-bene">Dit veld is verplicht</span>
 
@@ -630,7 +630,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div class="option-group required">
     <span class="nota-bene">Dit veld is verplicht</span>
 
@@ -646,7 +646,7 @@
         <h4 id="checkbox-disabled">Uitgeschakeld</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div class="checkbox">
             <input type="checkbox" id="checkbox-example-disabled" name="voorwaarden" disabled />
             <label for="checkbox-example-disabled">Uitgeschakeld selectievak</label>
@@ -657,7 +657,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div class="checkbox">
     <input type="checkbox" id="checkbox-example-disabled" name="voorwaarden" disabled>
     <label for="checkbox-example-disabled">Uitgeschakeld selectievak</label>
@@ -670,7 +670,7 @@
         <h4 id="radio-base">Basisweergave</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div class="radio">
             <input type="radio" id="radio-example" name="voorbeeld radio-knop" value="value" />
             <label for="radio-example">Radio-button</label>
@@ -681,7 +681,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div class="radio">
     <input
       type="radio"
@@ -697,7 +697,7 @@
         <h4 id="radio-required">Verplicht</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div class="option-group required">
             <span class="nota-bene">Dit veld is verplicht</span>
 
@@ -712,7 +712,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div class="option-group required">
     <span class="nota-bene">Dit veld is verplicht</span>
 
@@ -729,7 +729,7 @@
         <h4 id="radio-disabled">Uitgeschakeld</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div class="radio">
             <input type="radio" id="radio-example-disabled" name="radio uitgeschakeld" disabled />
             <label for="radio-example-disabled">Uitgeschakelde radio-button</label>
@@ -740,7 +740,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div class="radio">
     <input type="radio" id="radio-example-disabled" name="radio uitgeschakeld" disabled>
     <label for="radio-example-disabled">Uitgeschakelde radio-button</label>
@@ -753,7 +753,7 @@
         <h4 id="range-base">Basisweergave</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="range-example">Range</label>
             <input type="range" id="range-example" name="Voorbeeld bereik" min="0" max="100" />
@@ -764,7 +764,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="range-example">Range</label>
     <input type="range" id="range-example" name="Voorbeeld bereik" min="0" max="100">
@@ -776,7 +776,7 @@
         <h4 id="range-required">Verplicht</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="range-example-required">Range</label>
 
@@ -797,7 +797,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="range-example-required">Range</label>
 
@@ -814,7 +814,7 @@
         <h4 id="color-picker-base">Basisweergave</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="color-picker-example">Selecteer de gewenste kleur</label>
             <input
@@ -830,7 +830,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="color-picker-example">Selecteer de gewenste kleur</label>
     <input id="color-picker-example" name="voorbeeld kleurselector" type="color" value="#ffffff">
@@ -843,7 +843,7 @@
         <h4 id="button-container-base">Basisweergave</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="grouped-buttons-example">Voorbeeld text input</label>
             <input id="grouped-buttons-example" name="grouped-buttons-example" type="text" />
@@ -858,7 +858,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="grouped-buttons-example">Voorbeeld text input</label>
     <input
@@ -878,7 +878,7 @@
         <h4 id="color-picker-required">Verplicht</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="color-picker-example-required">Selecteer de gewenste kleur</label>
 
@@ -898,7 +898,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="color-picker-example-required">Selecteer de gewenste kleur</label>
 
@@ -913,7 +913,7 @@
 
         <h2 id="fieldset"><code>fieldset</code></h2>
         <h3>Visueel voorbeeld:</h3>
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span>
             <p>Dit is een voorbeeld van een notificatie direct binnen het formulier.</p>
@@ -1096,7 +1096,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div class="explanation" role="group" aria-label="toelichting">
     <span>Toelichting:</span>
     <p>Dit is een voorbeeld van een notificatie direct binnen het formulier.</p>
@@ -1281,7 +1281,7 @@
         <h4 id="button-container-fieldset-base">Basisweergave</h4>
         <h5>Visueel voorbeeld:</h5>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <fieldset>
             <legend>Lorem ipsum</legend>
             <div>
@@ -1304,7 +1304,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="grouped-buttons-within-fieldset">Voorbeeld text input</label>
     <input

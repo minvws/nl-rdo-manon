@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Accentkleur op formulierelementen testpagina</h1>
@@ -67,7 +67,7 @@
         <h4>Voortgangsbalk</h4>
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
-          <div class="horizontal-view">
+          <div class="horizontal">
             <label
               for="progress-example"
               role="progressbar"
@@ -83,7 +83,7 @@
           language="html"
           code={`
 <form action="" method="post">
-  <div class="horizontal-view">
+  <div class="horizontal">
     <label for="progress-example" role="progressbar" aria-busy="true" aria-labelledby="progess-example">Progress:</label>
     <progress id="progress-example" value="42" max="100">42%</progress>
   </div>
@@ -94,7 +94,7 @@
         <h4>Bereik - <code>range</code></h4>
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
-          <div class="horizontal-view">
+          <div class="horizontal">
             <label for="range-example">Range</label>
             <input type="range" id="range-example" name="range-example" min="0" max="100" />
           </div>
@@ -105,7 +105,7 @@
           language="html"
           code={`
 <form action="" method="post">
-  <div class="horizontal-view">
+  <div class="horizontal">
     <label for="range-example">Range</label>
     <input type="range" id="range-example" name="range-example" min="0" max="100">
   </div>

@@ -1,0 +1,14 @@
+.centered {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  > div,
+  > section,
+  > article {
+    width: auto;
+  }
+}

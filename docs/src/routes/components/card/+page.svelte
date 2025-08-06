@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Kaart</h1>
@@ -106,7 +106,7 @@
         <h2>Instelbare variabelen</h2>
         <p>
           <strong>Let op:</strong> De uitlijning van horizontaal uitgelijnde tags werken alleen in
-          combinatie met de class <code>horizontal-view</code>.
+          combinatie met de class <code>horizontal</code>.
         </p>
         <div class="horizontal-scroll">
           <table class="nowrap">
@@ -124,7 +124,7 @@
               <tr>
                 <td>--card-gap</td>
                 <td><a href="{base}/documentation/variables#gap">gap</a></td>
-                <td>var(--application-base-gap-medium)</td>
+                <td>var($base-gap-medium)</td>
                 <th rowspan="13" scope="rowgroup">-</th>
                 <th rowspan="25" scope="rowgroup">card</th>
               </tr>
@@ -156,19 +156,19 @@
               <tr>
                 <td>--card-background-color</td>
                 <td><code>--card-background-color</code></td>
-                <td>var(--application-base-background-color)</td>
+                <td>var($base-background-color)</td>
               </tr>
 
               <tr>
                 <td>--card-text-color</td>
                 <td><code>--card-text-color</code></td>
-                <td>var(--application-base-text-color)</td>
+                <td>var($base-text-color)</td>
               </tr>
 
               <tr>
                 <td>--card-border-radius</td>
                 <td><a href="{base}/documentation/variables#border-radius">border-radius</a></td>
-                <td>var(--application-base-border-radius)</td>
+                <td>var($base-border-radius)</td>
               </tr>
 
               <tr>

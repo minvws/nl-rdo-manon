@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Tags</h1>
@@ -40,7 +40,7 @@
                 Voeg de benodigde class toe op de gewenste elementen. Voor meer informatie over het
                 implementeren zie de <a href="#examples">voorbeelden</a>.
               </li>
-              <li>Voor horizontale weergave voeg de class <code>horizontal-view</code> toe.</li>
+              <li>Voor horizontale weergave voeg de class <code>horizontal</code> toe.</li>
               <li>
                 Vul de gewenste variabelen in om de uitlijning van horizontaal uitgelijnde tags in
                 te stellen. Voor meer informatie zien: <a href="#variables">variabelen</a>
@@ -55,7 +55,7 @@
 
         <h3>Tags binnen een lijst</h3>
         <h4>Visueel voorbeeld:</h4>
-        <ul class="tags horizontal-view">
+        <ul class="tags horizontal">
           <li class="tags-color-1-light">Lorem ipsum</li>
           <li class="tags-color-2-light">Lorem ipsum</li>
           <li class="tags-color-3-light">Lorem ipsum</li>
@@ -65,7 +65,7 @@
         <Code
           language="html"
           code={`
-<ul class="tags horizontal-view">
+<ul class="tags horizontal">
   <li class="tags-color-1-light">Lorem ipsum</li>
   <li class="tags-color-2-light">Lorem ipsum</li>
   <li class="tags-color-3-light">Lorem ipsum</li>
@@ -75,7 +75,7 @@
 
         <h3>Tags binnen een <code>div</code></h3>
         <h4>Visueel voorbeeld:</h4>
-        <div class="tags horizontal-view">
+        <div class="tags horizontal">
           <p class="tags-color-1-light">Lorem ipsum</p>
           <p class="tags-color-2-light">Lorem ipsum</p>
           <p class="tags-color-3-light">Lorem ipsum</p>
@@ -85,7 +85,7 @@
         <Code
           language="html"
           code={`
-<div class="tags horizontal-view">
+<div class="tags horizontal">
   <p class="tags-color-1-light">Lorem ipsum</p>
   <p class="tags-color-2-light">Lorem ipsum</p>
   <p class="tags-color-3-light">Lorem ipsum</p>
@@ -95,7 +95,7 @@
 
         <h3>Tags binnen een <code>section</code></h3>
         <h4>Visueel voorbeeld:</h4>
-        <section class="tags horizontal-view">
+        <section class="tags horizontal">
           <p class="tags-color-1-light">Lorem ipsum</p>
           <p class="tags-color-2-light">Lorem ipsum</p>
           <p class="tags-color-3-light">Lorem ipsum</p>
@@ -105,7 +105,7 @@
         <Code
           language="html"
           code={`
-<section class="tags horizontal-view">
+<section class="tags horizontal">
   <p class="tags-color-1-light">Lorem ipsum</p>
   <p class="tags-color-2-light">Lorem ipsum</p>
   <p class="tags-color-3-light">Lorem ipsum</p>
@@ -251,7 +251,7 @@
         <h2>Instelbare variabelen</h2>
         <p>
           <strong>Let op:</strong> De uitlijning van horizontaal uitgelijnde tags werken alleen in
-          combinatie met de class <code>horizontal-view</code>.
+          combinatie met de class <code>horizontal</code>.
         </p>
         <div class="horizontal-scroll">
           <table class="nowrap">

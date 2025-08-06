@@ -5,6 +5,7 @@ $breakpoint: 24rem !default;
 
 %dl-styling {
   margin: 0;
+
   @include theming.apply-from-theme(
     (
       width: theme.$description-list-width,
@@ -16,6 +17,7 @@ $breakpoint: 24rem !default;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
     @include theming.apply-from-theme(
       (
         flex-direction: theme.$description-list-item-flex-direction,
@@ -41,6 +43,7 @@ $breakpoint: 24rem !default;
     overflow-wrap: anywhere;
     box-sizing: border-box;
     margin: 0;
+
     @include theming.apply-from-theme(
       (
         white-space: theme.$description-list-item-white-space,

@@ -1,0 +1,7 @@
+.bg-color-offset {
+  background-color: var(--bg-color-offset-color);
+
+  form {
+    background-color: var(--bg-color-offset-child-bg);
+  }
+}

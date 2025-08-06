@@ -21,7 +21,7 @@
       <li><a href="#variables">Beschikbare variabelen</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <p class="warning">
         Let op: Deze tabelstructuur kan als complex ervaren worden door gebruikers. Zeker in

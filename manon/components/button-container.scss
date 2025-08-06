@@ -16,18 +16,6 @@ $breakpoint: 24rem !default;
     max-width: 100%;
   }
 
-  @media (width >= $breakpoint) {
-    button,
-    a.button,
-    input[type="button"],
-    input[type="submit"],
-    input[type="reset"] {
-      width: auto;
-      max-width: 100%;
-      flex-grow: 0;
-    }
-  }
-
   @include theming.apply-from-theme(
     (
       flex-direction: theme.$button-container-flex-direction,
@@ -40,4 +28,16 @@ $breakpoint: 24rem !default;
       padding-left: theme.$button-container-padding-left,
     )
   );
+
+  @media (width >= $breakpoint) {
+    button,
+    a.button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      width: auto;
+      max-width: 100%;
+      flex-grow: 0;
+    }
+  }
 }

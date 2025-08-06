@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Basisformulier testpagina</h1>
@@ -404,7 +404,7 @@
 
         <h3>Link direct binnen horizontaal uitgelijnd formulier</h3>
         <h4>Visueel voorbeeld:</h4>
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="form-example-base-horizontal">Voorbeeld text input</label>
 
@@ -430,7 +430,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="form-example-base-horizontal">Voorbeeld text input</label>
 
@@ -456,7 +456,7 @@
 
         <h3>Link direct binnen groep in horizontaal uitgelijnd formulier</h3>
         <h4>Visueel voorbeeld:</h4>
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="form-link-example">Voorbeeld text input</label>
 
@@ -484,7 +484,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="form-link-example">Voorbeeld text input</label>
 
@@ -566,7 +566,7 @@
 
         <h3>Link direct binnen fieldset binnen horizontaal uitgelijnd formulier</h3>
         <h4>Visueel voorbeeld:</h4>
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <fieldset>
             <legend>Lorem ipsum</legend>
 
@@ -596,7 +596,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <fieldset>
     <legend>Lorem ipsum</legend>
 
@@ -626,7 +626,7 @@
 
         <h3>Link binnen groep binnen fieldset binnen horizontaal uitgelijnd formulier</h3>
         <h4>Visueel voorbeeld:</h4>
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <fieldset>
             <legend>Lorem ipsum</legend>
 
@@ -657,7 +657,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <fieldset>
     <legend>Lorem ipsum</legend>
 
@@ -791,7 +791,7 @@
           <span class="nota-bene" id="field-with-action-button-1-explanation"
             >Dit veld is verplicht. Voorbeeld van een instructietekst
           </span>
-          <div class="horizontal-view">
+          <div class="horizontal">
             <input
               id="field-with-action-button-1"
               name="field-with-action-button-1"
@@ -1301,7 +1301,7 @@
         </form>
 
         <h2 id="form-with-columns">Formulier met kolommen</h2>
-        <form method="post" class="horizontal-view">
+        <form method="post" class="horizontal">
           <p class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span> Lorem ipsum dolor sit amet
           </p>
@@ -1424,7 +1424,7 @@
             <label for="inputveld-knop">Voorbeeld inputveld met knop</label>
             <div>
               <span class="nota-bene" id="inputveld-knop-explanation">Dit veld is verplicht</span>
-              <div class="horizontal-view">
+              <div class="horizontal">
                 <input
                   id="inputveld-knop"
                   name="inputveld-knop"
@@ -2034,7 +2034,7 @@
             <legend>Voorbeeld invoerveld met knop</legend>
             <label for="voorbeeld-input-knop-3">Voorbeeld input met knop</label>
             <span class="nota-bene">Dit veld is verplicht</span>
-            <div class="horizontal-view">
+            <div class="horizontal">
               <div>
                 <span class="nota-bene" id="voorbeeld-input-knop-3-explanation"
                   >Voorbeeld van een instructietekst
@@ -2345,7 +2345,7 @@
         </form>
 
         <h2 id="form-with-fieldset-columns">Fieldset weergave in kolommen</h2>
-        <form method="post" class="horizontal-view">
+        <form method="post" class="horizontal">
           <p class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span> Lorem ipsum dolor sit amet
           </p>
@@ -2513,7 +2513,7 @@
             <legend>Voorbeeld invoerveld met knop</legend>
             <div>
               <label for="voorbeeld-input-knop-1">Voorbeeld input met knop</label>
-              <div class="horizontal-view">
+              <div class="horizontal">
                 <div>
                   <span class="nota-bene" id="voorbeeld-input-knop-1-explanation"
                     >Voorbeeld van een instructietekst
@@ -3139,7 +3139,7 @@
         </form>
 
         <h2 id="grouped-options-2">Gegroepeerde radioknoppen en selectievakken</h2>
-        <form method="post" class="horizontal-view">
+        <form method="post" class="horizontal">
           <fieldset class="grouped-choice-list">
             <legend>Multiple choice radioknoppen en selectievakken test kolommen</legend>
 
@@ -3664,7 +3664,7 @@
         </form>
 
         <h2 id="form-help-columns">Formulier met ingeklapte hulpteksten in kolommen</h2>
-        <form method="post" class="help horizontal-view">
+        <form method="post" class="help horizontal">
           <p class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span> Lorem ipsum dolor sit amet
           </p>
@@ -4078,7 +4078,7 @@
               <td>Lorem</td>
               <td>Ipsum</td>
               <td>
-                <div class="horizontal-view">
+                <div class="horizontal">
                   <form>
                     <button type="submit" class="icon-only icon-cat" value="Lorem">Home</button>
                   </form>

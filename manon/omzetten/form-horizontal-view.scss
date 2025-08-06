@@ -1,13 +1,13 @@
 /*---------------------------------------------------------------*/
-/*----------------- form-horizontal-view.scss -------------------*/
+/*----------------- form-horizontal.scss -------------------*/
 /*---------------------------------------------------------------*/
-@use "form-horizontal-view-variables";
+@use "form-horizontal-variables";
 
 $breakpoint: 24rem !default;
 
-form.horizontal-view {
+form.horizontal {
   flex-direction: column;
-  gap: var(--form-horizontal-view-gap);
+  gap: var(--form-horizontal-gap);
   flex-wrap: wrap;
 
   button,
@@ -23,10 +23,10 @@ form.horizontal-view {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: var(--form-horizontal-view-justify-content);
+    justify-content: var(--form-horizontal-justify-content);
     flex-wrap: wrap;
-    gap: var(--form-horizontal-view-group-gap)
-      var(--form-horizontal-view-group-vertical-gap);
+    gap: var(--form-horizontal-group-gap)
+      var(--form-horizontal-group-vertical-gap);
     margin: 0;
 
     &.checkbox {
@@ -39,7 +39,7 @@ form.horizontal-view {
         margin-left: var(--label-column);
       }
 
-      %horizontal-view-checkbox,
+      %horizontal-checkbox,
       input[type="checkbox"] {
         /* Align checkbox with input fields */
         margin-left: 0;
@@ -52,7 +52,7 @@ form.horizontal-view {
       }
 
       > div {
-        @extend %horizontal-view-checkbox;
+        @extend %horizontal-checkbox;
 
         input[type="checkbox"] {
           margin-left: 0;
@@ -64,7 +64,7 @@ form.horizontal-view {
       gap: var(--form-radio-margin-right);
       flex-wrap: nowrap;
 
-      %horizontal-view-radio,
+      %horizontal-radio,
       input[type="radio"] {
         flex-grow: 0;
         margin-right: 0;
@@ -80,7 +80,7 @@ form.horizontal-view {
       }
 
       > div {
-        @extend %horizontal-view-radio;
+        @extend %horizontal-radio;
 
         input[type="radio"] {
           margin-left: 0;
@@ -104,15 +104,15 @@ form.horizontal-view {
     &.confirmation,
     &.system {
       flex-direction: var(
-        --form-horizontal-view-notification-block-element-flex-direction
+        --form-horizontal-notification-block-element-flex-direction
       );
       justify-content: var(
-        --form-horizontal-view-notification-block-element-justify-content
+        --form-horizontal-notification-block-element-justify-content
       );
       align-items: var(
-        --form-horizontal-view-notification-block-element-align-items
+        --form-horizontal-notification-block-element-align-items
       );
-      gap: var(--form-horizontal-view-notification-block-element-gap);
+      gap: var(--form-horizontal-notification-block-element-gap);
       margin: 0;
 
       > * {
@@ -146,7 +146,7 @@ form.horizontal-view {
 
       label {
         width: 100%;
-        max-width: var(--form-horizontal-view-label-max-width);
+        max-width: var(--form-horizontal-label-max-width);
       }
     }
   }
@@ -191,7 +191,7 @@ form.horizontal-view {
       }
     }
 
-    > div.horizontal-view,
+    > div.horizontal,
     > div.button-container {
       max-width: var(--input-column);
       margin-left: var(--label-column);

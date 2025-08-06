@@ -9,10 +9,10 @@
 
   @include theming.apply-from-theme(
     (
-      background-color: theme.$hero-background-color,
       min-height: theme.$hero-min-height,
       height: theme.$hero-height,
       max-height: theme.$hero-max-height,
+      background-color: theme.$hero-background-color,
     )
   );
 
@@ -25,6 +25,12 @@
     position: absolute;
     top: 0;
     z-index: 0;
+
+    @include theming.apply-from-theme(
+      (
+        object-position: theme.$hero-image-object-position,
+      )
+    );
     @include theming.apply-from-theme(
       (
         object-position: theme.$hero-image-object-position,

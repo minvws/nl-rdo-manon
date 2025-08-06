@@ -8,40 +8,70 @@ $breakpoint: 24rem !default;
   /* Removing gap as it is not supported within fieldsets */
   gap: 0;
   width: auto;
+
   @include theming.apply-from-theme(
     (
       float: theme.$form-button-container-fieldset-float,
     )
   );
 
-  @if theme.$button-container-gap {
+  @if validators.args-not-null(theme.$button-container-gap) {
     @include theming.apply-from-theme(
       (
-        /* Countering margin bottom that will be set by buttons on the last line */
-        margin-right: theme.$button-container-gap * -1 / 2,
-        margin-bottom: theme.$button-container-gap * -1,
-        margin-left: theme.$button-container-gap * -1 / 2
+        margin-right: calc(theme.$button-container-gap * -1 / 2),
       )
     );
   }
+
+  @if validators.args-not-null(theme.$button-container-gap) {
+    @include theming.apply-from-theme(
+      (
+        margin-bottom: calc(theme.$button-container-gap * -1 / 2),
+      )
+    );
+  }
+
+  @if validators.args-not-null(theme.$button-container-gap) {
+    @include theming.apply-from-theme(
+      (
+        margin-left: calc(theme.$button-container-gap * -1 / 2),
+      )
+    );
+  }
+
   button,
   a.button,
   input[type="button"],
   input[type="submit"],
   input[type="reset"] {
     float: left;
+
     @include theming.apply-from-theme(
       (
         width: theme.$button-container-button-width,
       )
     );
 
-    @if theme.$button-container-gap {
+    @if validators.args-not-null(theme.$button-container-gap) {
       @include theming.apply-from-theme(
         (
-          margin-right: theme.$button-container-gap / 2,
-          margin-left: theme.$button-container-gap / 2,
-          margin-bottom: theme.$button-container-gap,
+          margin-right: calc(theme.$button-container-gap * -1 / 2),
+        )
+      );
+    }
+
+    @if validators.args-not-null(theme.$button-container-gap) {
+      @include theming.apply-from-theme(
+        (
+          margin-bottom: calc(theme.$button-container-gap * -1 / 2),
+        )
+      );
+    }
+
+    @if validators.args-not-null(theme.$button-container-gap) {
+      @include theming.apply-from-theme(
+        (
+          margin-left: calc(theme.$button-container-gap * -1 / 2),
         )
       );
     }
@@ -79,7 +109,7 @@ form {
     }
   }
 
-  &.horizontal-view {
+  &.horizontal {
     fieldset {
       .button-container {
         @extend %fieldset-button-container-styling;

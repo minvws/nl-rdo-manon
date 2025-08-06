@@ -23,6 +23,7 @@ body > footer,
           border-radius: theme.$footer-link-focus-border-radius,
         )
       );
+
       &::before,
       .icon::before {
         @include theming.apply-from-theme(

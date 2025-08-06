@@ -10,6 +10,7 @@ form {
   input[type="submit"],
   input[type="reset"] {
     box-sizing: border-box;
+
     @include theming.apply-from-theme(
       (
         align-self: theme.$form-button-align-self,
