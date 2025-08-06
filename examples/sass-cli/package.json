@@ -11,6 +11,6 @@
     "@minvws/manon-themes": "workspace:*"
   },
   "devDependencies": {
-    "sass": "^1.89.2"
+    "sass": "^1.90.0"
   }
 }
