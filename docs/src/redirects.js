@@ -26,7 +26,6 @@ export const redirects = {
   "/documentation/components/form-input-textarea.html": "/components/form-input-textarea",
   "/documentation/components/form-notification.html": "/components/form-notification",
   "/documentation/components/form-select.html": "/components/form-select",
-  "/documentation/components/icons.html": "/components/icons",
   "/documentation/components/image-cover.html": "/components/image-cover",
   "/documentation/components/message-counter.html": "/components/message-counter",
   "/documentation/components/nota-bene.html": "/components/nota-bene",

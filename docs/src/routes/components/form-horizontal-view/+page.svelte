@@ -186,7 +186,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="{base}/components/form-horizontal-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/form-horizontal-view-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>
