@@ -14,6 +14,7 @@
 @use "@minvws/manon/components/button-to-top";
 @use "@minvws/manon/components/card";
 @use "@minvws/manon/components/checkbox";
+@use "@minvws/manon/components/color-picker";
 @use "@minvws/manon/components/code-block";
 @use "@minvws/manon/components/collapsible";
 @use "@minvws/manon/components/critical-informational-labels";
@@ -33,12 +34,17 @@
 @use "@minvws/manon/components/form-checkbox";
 @use "@minvws/manon/components/form-fieldset-checkbox";
 @use "@minvws/manon/components/form-fieldset";
+@use "@minvws/manon/components/form-horizontal-fieldset";
 @use "@minvws/manon/components/form-fieldset-radio";
 @use "@minvws/manon/components/form-fieldset-visually-hidden-horizontal";
 @use "@minvws/manon/components/form-grouped-choice-list";
 @use "@minvws/manon/components/form-help";
+@use "@minvws/manon/components/form-horizontal";
 @use "@minvws/manon/components/form-input";
+@use "@minvws/manon/components/form-inline";
 @use "@minvws/manon/components/form-label";
+@use "@minvws/manon/components/form-required";
+@use "@minvws/manon/components/form-combined-field";
 @use "@minvws/manon/components/header";
 @use "@minvws/manon/components/header-navigation";
 @use "@minvws/manon/components/heading";
@@ -53,6 +59,7 @@
 @use "@minvws/manon/components/login-meta";
 @use "@minvws/manon/components/logo";
 @use "@minvws/manon/components/navigation";
+@use "@minvws/manon/components/nota-bene";
 @use "@minvws/manon/components/navigation-content-wrapper";
 @use "@minvws/manon/components/main";
 @use "@minvws/manon/components/main-content-wrapper";
@@ -82,6 +89,7 @@
 @use "@minvws/manon/components/tile-groups";
 @use "@minvws/manon/components/tile-image-cover";
 @use "@minvws/manon/components/skip-to-content";
+@use "@minvws/manon/components/radio";
 
 // Utility classes
 @use "@minvws/manon/utility/centered";

@@ -32,23 +32,31 @@ main div form {
   );
 
   /* stylelint-disable no-descending-specificity */
-  div {
+  div,
+  div.form-group {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 
     @include theming.apply-from-theme(
       (
         gap: theme.$form-group-gap,
+        flex-direction: theme.$form-group-flex-direction,
+        align-items: theme.$form-group-align-items,
+        justify-content: theme.$form-group-justify-content,
       )
     );
+
+    label {
+      @include theming.apply-from-theme(
+        (
+          order: theme.$form-group-label-order,
+        )
+      );
+    }
   }
 
   div,
   fieldset {
-    width: 100%;
     box-sizing: border-box;
-    padding: 0;
 
     &.horizontal {
       flex-wrap: nowrap;
