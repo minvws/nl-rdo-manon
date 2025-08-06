@@ -78,6 +78,9 @@ and spacing sets */
   $code-block-background-color: #{color-scheme.$oc-gray-1},
   $code-block-border-radius: #{border-radii.$border-radius-s},
 
+  // collapsing element
+  $collapsing-element-justify-content: space-between,
+
   // form
   $form-align-items: flex-start,
   $form-text-color: #{semantic.$color-text-default},
@@ -112,11 +115,38 @@ and spacing sets */
 
   // header
   $header-background-color: #{color-scheme.$oc-gray-9},
+  $header-justify-content: stretch,
+  $header-font-weight: bold,
+  $header-min-height: 4.5rem,
+  $header-color: #{color-scheme.$oc-white},
+  $header-padding-right: #{spacing.$spacing-300},
+  $header-padding-left: #{spacing.$spacing-300},
+
+  // header nav
+  $header-navigation-width: 100%,
+  $header-navigation-gap: #{spacing.$spacing-200},
+  $header-navigation-justify-content: space-between,
+
+  // header list
+  $header-list-gap: 0,
+  $header-list-align-items: stretch,
+  $header-list-height: 100%,
+
+  // header list item
+  $header-list-item-align-items: center,
+
+  // header list item link
+  $header-link-align-items: center,
+  $header-link-padding: #{spacing.$spacing-025} #{spacing.$spacing-050},
+  $header-link-min-height: 100%,
+
+  // header current page
+  $header-list-item-current-background-color: #{color-scheme.$oc-white},
+  $header-list-item-current-text-color: #{color-scheme.$oc-gray-9},
 
   // header content wrapper
   $header-content-wrapper-flex-direction: row,
   $header-content-wrapper-width: 100%,
-  $header-content-wrapper-gap: 1rem,
 
   // heading
   $h1-font-family: #{semantic.$font-family},
@@ -132,6 +162,12 @@ and spacing sets */
   $link-hover-text-color: #{color-scheme.$oc-blue-9},
   $link-visited-text-color: #{color-scheme.$oc-violet-8},
   $link-visited-hover-text-color: #{color-scheme.$oc-violet-9},
+
+  // logo
+  $logo-font-size: 0,
+  $logo-padding: 0,
+  $logo-img-height: 2rem,
+  $logo-img-width: 2rem,
 
   // main
   $main-padding-top: #{spacing.$spacing-400},

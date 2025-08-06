@@ -32,39 +32,37 @@
     </ul>
   </SideMenu>
   <article>
-    <div>
-      <section id="introduction">
-        <h1>Header</h1>
-        <p>
-          De header-navigation wordt vaak gebruikt als extra navigatiepunt en om aan te geven aan de
-          gebruiker dat het einde van de pagina bereikt is.
-        </p>
+    <section id="introduction">
+      <h1>Header</h1>
+      <p>
+        De header-navigation wordt vaak gebruikt als extra navigatiepunt en om aan te geven aan de
+        gebruiker dat het einde van de pagina bereikt is.
+      </p>
 
-        <h2>Benodigde stappen</h2>
-        <ol>
-          <li>
-            Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
-            optionele bestanden zie:
-            <a href="#requirements">Bijbehorende bestanden</a>.
-          </li>
-          <li>
-            Voeg de benodigde HTML toe. Voor meer informatie zie: <a href="#examples">voorbeelden</a
-            >.
-          </li>
-        </ol>
-      </section>
+      <h2>Benodigde stappen</h2>
+      <ol>
+        <li>
+          Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
+          optionele bestanden zie:
+          <a href="#requirements">Bijbehorende bestanden</a>.
+        </li>
+        <li>
+          Voeg de benodigde HTML toe. Voor meer informatie zie: <a href="#examples">voorbeelden</a>.
+        </li>
+      </ol>
+    </section>
 
-      <section id="examples">
-        <h2>Voorbeelden</h2>
-        <h3 id="example-only-navigation">Alleen navigatie</h3>
-        <h4>Visueel voorbeeld</h4>
-        <div class="resize">
-          <iframe src="{base}/examples/header-navigation" title="Voorbeeld" height="240px"></iframe>
-        </div>
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
+    <section id="examples">
+      <h2>Voorbeelden</h2>
+      <h3 id="example-only-navigation">Alleen navigatie</h3>
+      <h4>Visueel voorbeeld</h4>
+      <div class="resize">
+        <iframe src="{base}/examples/header-navigation" title="Voorbeeld" height="240px"></iframe>
+      </div>
+      <h4>HTML-voorbeeld</h4>
+      <Code
+        language="html"
+        code={`
 <header>
   <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
@@ -85,21 +83,21 @@
   </nav>
 </header>
 `}
-        />
+      />
 
-        <h3 id="example-with-content-wrapper">Navigatie met content wrapper</h3>
-        <h4>Visueel voorbeeld</h4>
-        <div class="resize">
-          <iframe
-            src="{base}/examples/header-navigation-with-content-wrapper"
-            title="Voorbeeld"
-            height="240px"
-          ></iframe>
-        </div>
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
+      <h3 id="example-with-content-wrapper">Navigatie met content wrapper</h3>
+      <h4>Visueel voorbeeld</h4>
+      <div class="resize">
+        <iframe
+          src="{base}/examples/header-navigation-with-content-wrapper"
+          title="Voorbeeld"
+          height="240px"
+        ></iframe>
+      </div>
+      <h4>HTML-voorbeeld</h4>
+      <Code
+        language="html"
+        code={`
 <header>
   <div class="content-wrapper">
     <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
@@ -122,21 +120,18 @@
   </div>
 </header>
 `}
-        />
+      />
 
-        <h3 id="example-with-search">Navigatie met zoekveld</h3>
-        <h4>Visueel voorbeeld</h4>
-        <div class="resize">
-          <iframe
-            src="{base}/examples/header-navigation-with-search"
-            title="Voorbeeld"
-            height="240px"
-          ></iframe>
-        </div>
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
+      <h3 id="example-with-search">Navigatie met zoekveld</h3>
+      <h4>Visueel voorbeeld</h4>
+      <div class="resize">
+        <iframe src="{base}/examples/header-navigation-with-search" title="Voorbeeld" height="240px"
+        ></iframe>
+      </div>
+      <h4>HTML-voorbeeld</h4>
+      <Code
+        language="html"
+        code={`
 <header>
   <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
@@ -167,18 +162,18 @@
   </nav>
 </header>
 `}
-        />
+      />
 
-        <h3 id="example-with-logo">Navigatie en logo</h3>
-        <h4>Visueel voorbeeld</h4>
-        <div class="resize">
-          <iframe src="{base}/examples/header-navigation-with-logo" title="Voorbeeld" height="240px"
-          ></iframe>
-        </div>
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
+      <h3 id="example-with-logo">Navigatie en logo</h3>
+      <h4>Visueel voorbeeld</h4>
+      <div class="resize">
+        <iframe src="{base}/examples/header-navigation-with-logo" title="Voorbeeld" height="240px"
+        ></iframe>
+      </div>
+      <h4>HTML-voorbeeld</h4>
+      <Code
+        language="html"
+        code={`
 <header>
   <div class="content-wrapper">
     <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
@@ -205,21 +200,21 @@
   </div>
 </header>
 `}
-        />
+      />
 
-        <h3 id="example-with-multiple-menus">Navigatie met meerdere menu's</h3>
-        <h4>Visueel voorbeeld</h4>
-        <div class="resize">
-          <iframe
-            src="{base}/examples/header-navigation-with-multiple-menus"
-            title="Voorbeeld"
-            height="240px"
-          ></iframe>
-        </div>
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
+      <h3 id="example-with-multiple-menus">Navigatie met meerdere menu's</h3>
+      <h4>Visueel voorbeeld</h4>
+      <div class="resize">
+        <iframe
+          src="{base}/examples/header-navigation-with-multiple-menus"
+          title="Voorbeeld"
+          height="240px"
+        ></iframe>
+      </div>
+      <h4>HTML-voorbeeld</h4>
+      <Code
+        language="html"
+        code={`
 <header>
   <div class="content-wrapper">
       <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
@@ -246,21 +241,21 @@
   </div>
 </header>
 `}
-        />
+      />
 
-        <h3 id="example-with-form-button">Navigatie met formulier-knop</h3>
-        <h4>Visueel voorbeeld</h4>
-        <div class="resize">
-          <iframe
-            src="{base}/examples/header-navigation-with-form-button"
-            title="Voorbeeld"
-            height="240px"
-          ></iframe>
-        </div>
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
+      <h3 id="example-with-form-button">Navigatie met formulier-knop</h3>
+      <h4>Visueel voorbeeld</h4>
+      <div class="resize">
+        <iframe
+          src="{base}/examples/header-navigation-with-form-button"
+          title="Voorbeeld"
+          height="240px"
+        ></iframe>
+      </div>
+      <h4>HTML-voorbeeld</h4>
+      <Code
+        language="html"
+        code={`
 <header>
   <div class="content-wrapper">
       <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
@@ -293,21 +288,21 @@
   </div>
 </header>
 `}
-        />
+      />
 
-        <h3 id="example-with-logo-above">Navigatie met logo bovenaan</h3>
-        <h4>Visueel voorbeeld</h4>
-        <div class="resize">
-          <iframe
-            src="{base}/examples/header-navigation-with-logo-above"
-            title="Voorbeeld"
-            height="320px"
-          ></iframe>
-        </div>
-        <h4>HTML-voorbeeld</h4>
-        <Code
-          language="html"
-          code={`
+      <h3 id="example-with-logo-above">Navigatie met logo bovenaan</h3>
+      <h4>Visueel voorbeeld</h4>
+      <div class="resize">
+        <iframe
+          src="{base}/examples/header-navigation-with-logo-above"
+          title="Voorbeeld"
+          height="320px"
+        ></iframe>
+      </div>
+      <h4>HTML-voorbeeld</h4>
+      <Code
+        language="html"
+        code={`
 <header>
   <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
@@ -336,26 +331,24 @@
   </nav>
 </header>
 `}
-        />
-      </section>
+      />
+    </section>
 
-      <section id="requirements">
-        <h2>Bijbehorende bestanden</h2>
-        <p>
-          Voeg de (s)css-bestanden toe aan het project of importeer de bestanden. Hiervoor kunnen de
-          bestanden gebruikt worden uit beschikbare Manon-thema's. Of uit zelf gemaakte thema's.
-        </p>
-        <p>
-          Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling"
-            >Componenten gebruiken en styling toevoegen</a
-          >
-        </p>
-        <h3>Importeer component via npm</h3>
-        <h4>CSS-voorbeeld</h4>
-        <Code
-          language="css"
-          code={`
+    <section id="requirements">
+      <h2>Bijbehorende bestanden</h2>
+      <p>
+        Voeg de (s)css-bestanden toe aan het project of importeer de bestanden. Hiervoor kunnen de
+        bestanden gebruikt worden uit beschikbare Manon-thema's. Of uit zelf gemaakte thema's.
+      </p>
+      <p>
+        Voor meer informatie over importeren en instellen van componenten. Zie:
+        <a href="{base}/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
+      </p>
+      <h3>Importeer component via npm</h3>
+      <h4>CSS-voorbeeld</h4>
+      <Code
+        language="css"
+        code={`
 @use "@minvws/manon/header-navigation";
 @use "@minvws/manon/header-navigation-content-wrapper";
 @use "@minvws/manon/header-navigation-link";
@@ -370,8 +363,7 @@
 // Accessibility
 @use "@minvws/manon/skip-to-content";
 `}
-        />
-      </section>
-    </div>
+      />
+    </section>
   </article>
 </main>

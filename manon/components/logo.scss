@@ -7,6 +7,8 @@ a:visited.logo,
 a:hover.logo,
 a:active.logo,
 a:focus.logo {
+  align-self: theme.$logo-align-self;
+
   @include theming.apply-from-theme(
     (
       display: theme.$logo-display,
@@ -27,23 +29,22 @@ a:focus.logo {
 
       background-color: theme.$logo-background-color,
       border-radius: theme.$logo-border-radius,
+      padding: theme.$logo-padding,
     )
   );
 
   img {
     box-sizing: border-box;
+    height: theme.$logo-img-height;
+    min-height: theme.$logo-img-height;
+    max-height: theme.$logo-img-height;
+
+    width: theme.$logo-img-width;
+    min-width: theme.$logo-img-width;
+    max-width: theme.$logo-img-width;
 
     @include theming.apply-from-theme(
       (
-        height: theme.$logo-img-height,
-        min-height: theme.$logo-img-height,
-        max-height: theme.$logo-img-height,
-
-        width: theme.$logo-img-width,
-        min-width: theme.$logo-img-width,
-        max-width: theme.$logo-img-width,
-
-        padding: theme.$logo-img-padding,
         border-radius: theme.$logo-img-border-radius,
         object-position: theme.$logo-img-object-position,
         object-fit: theme.$logo-img-object-fit,

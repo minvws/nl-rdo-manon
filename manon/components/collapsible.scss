@@ -7,6 +7,14 @@
   @include collapsible.collapsible;
 }
 
+.collapsing-element {
+  @include theming.apply-from-theme(
+    (
+      justify-content: theme.$collapsing-element-justify-content,
+    )
+  );
+}
+
 .collapsible.collapsed {
   .collapsing-element {
     position: absolute;
