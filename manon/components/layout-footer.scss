@@ -28,6 +28,7 @@ body > footer,
     flex-direction: column;
     width: 100%;
     box-sizing: border-box;
+
     @include theming.apply-from-theme(
       (
         gap: theme.$layout-footer-content-block-gap,
@@ -40,6 +41,7 @@ body > footer,
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
+
       @include theming.apply-from-theme(
         (
           gap: theme.$layout-footer-within-content-block-gap,

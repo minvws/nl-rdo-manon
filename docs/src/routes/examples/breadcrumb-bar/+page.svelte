@@ -7,7 +7,7 @@
     <ul>
       <li><a href={page.url.pathname}>Componenten</a></li>
       <li>
-        <a href="#" aria-current="page">Kruimelpad - breadcrumb-bar</a>
+        <span aria-current="page">Kruimelpad - breadcrumb-bar</span>
       </li>
     </ul>
   </div>

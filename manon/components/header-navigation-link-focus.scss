@@ -32,10 +32,12 @@
         font-family: theme.$header-navigation-link-focus-icon-font-family,
         font-size: theme.$header-navigation-link-focus-icon-font-size,
         line-height: theme.$header-navigation-link-focus-icon-line-height,
-        text-decoration: theme.$header-navigation-link-focus-icon-text-decoration,
+        text-decoration:
+          theme.$header-navigation-link-focus-icon-text-decoration,
         padding-right: theme.$header-navigation-link-focus-icon-padding-right,
         padding-left: theme.$header-navigation-link-focus-icon-padding-left,
-        background-color: theme.$header-navigation-link-focus-icon-background-color,
+        background-color:
+          theme.$header-navigation-link-focus-icon-background-color,
         color: theme.$header-navigation-link-focus-icon-text-color,
       )
     );
@@ -48,9 +50,11 @@
       font-size: theme.$header-navigation-current-link-focus-font-size,
       font-weight: theme.$header-navigation-current-link-focus-font-weight,
       line-height: theme.$header-navigation-current-link-focus-line-height,
-      background-color: theme.$header-navigation-current-link-focus-background-color,
+      background-color:
+        theme.$header-navigation-current-link-focus-background-color,
       color: theme.$header-navigation-current-link-focus-text-color,
-      text-decoration: theme.$header-navigation-current-link-focus-text-decoration,
+      text-decoration:
+        theme.$header-navigation-current-link-focus-text-decoration,
       border-width: theme.$header-navigation-current-link-focus-border-width,
       border-style: theme.$header-navigation-current-link-focus-border-style,
       border-color: theme.$header-navigation-current-link-focus-border-color,
@@ -72,10 +76,12 @@
         font-family: theme.$header-navigation-link-focus-icon-font-family,
         font-size: theme.$header-navigation-link-focus-icon-font-size,
         line-height: theme.$header-navigation-link-focus-icon-line-height,
-        text-decoration: theme.$header-navigation-link-focus-icon-text-decoration,
+        text-decoration:
+          theme.$header-navigation-link-focus-icon-text-decoration,
         padding-right: theme.$header-navigation-link-focus-icon-padding-right,
         padding-left: theme.$header-navigation-link-focus-icon-padding-left,
-        background-color: theme.$header-navigation-link-focus-icon-background-color,
+        background-color:
+          theme.$header-navigation-link-focus-icon-background-color,
         color: theme.$header-navigation-link-focus-icon-text-color,
       )
     );

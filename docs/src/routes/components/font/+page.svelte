@@ -226,9 +226,6 @@ $base-font-family: "Naam van het font";
         <h3>Importeer component via npm</h3>
         <h4>CSS-voorbeeld:</h4>
         <h5>Lettertype doorvoeren op applicatieniveau.</h5>
-        <p>
-          Voor meer informatie zie: <a href="base">Stijlkeuzes op applicatie-niveau</a>.
-        </p>
         <Code
           language="css"
           code={`
