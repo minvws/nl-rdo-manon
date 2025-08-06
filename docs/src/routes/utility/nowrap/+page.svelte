@@ -49,7 +49,7 @@
           <code>table</code>
           of de omliggende <code>div</code> zullen alle onderliggende tekst-elementen niet afbreken.
           Verschillende voorbeelden en opties zijn beschikbaar op de
-          <a href="{base}/components/nowrap-test">Test- en voorbeelden-pagina</a>.
+          <a href="{base}/utility/nowrap-test">Test- en voorbeelden-pagina</a>.
         </p>
       </section>
 
@@ -59,7 +59,7 @@
         <p class="explanation">
           <span>Toelichting:</span> In dit voorbeeld wordt er ook gebruik gemaakt van de
           <dfn>helper-class</dfn>
-          <a href="{base}/components/horizontal-scroll">horizontal-scroll</a>
+          <a href="{base}/utility/horizontal-scroll">horizontal-scroll</a>
           om te voorkomen dat het voorbeeld-element de layout van de pagina breekt. Zonder deze toevoeging
           zou de tekst het scherm uitlopen. De class <code>horizontal-scroll</code> voegt op de maximale
           beschikbare breedte de scrollbalk toe.
