@@ -1,0 +1,44 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+.avatar {
+  width: theme.$avatar-width;
+  height: theme.$avatar-height;
+  max-width: theme.$avatar-width;
+  max-height: theme.$avatar-height;
+  min-height: unset;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include theming.apply-from-theme(
+    (
+      font-weight: theme.$avatar-font-weight,
+      border-radius: theme.$avatar-border-radius,
+      background-color: theme.$avatar-background-color,
+      color: theme.$avatar-text-color,
+    )
+  );
+
+  &:hover {
+    color: inherit;
+
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$avatar-hover-background-color,
+        color: theme.$avatar-hover-text-color,
+      )
+    );
+  }
+
+  &:focus-visible {
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$avatar-focus-background-color,
+        outline: theme.$avatar-focus-outline,
+        outline-offset: theme.$avatar-focus-outline-offset,
+      )
+    );
+  }
+}

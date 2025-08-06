@@ -28,6 +28,19 @@ and spacing sets */
   // article
   $article-gap: #{spacing.$spacing-250},
 
+  // avatar
+  $avatar-font-weight: bold,
+  $avatar-border-radius: 50%,
+  $avatar-background-color: #{semantic.$color-brand-primary-default},
+
+  // Hover
+  $avatar-hover-background-color: #{color-scheme.$oc-blue-7},
+
+  // Focus
+  $avatar-focus-background-color: #{color-scheme.$oc-blue-7},
+  $avatar-focus-outline: 2px solid #{color-scheme.$oc-white},
+  $avatar-focus-outline-offset: -2px,
+
   //base
   $base-background-color: #{semantic.$base-background-color},
   $base-font-family: "IBM Plex Sans",

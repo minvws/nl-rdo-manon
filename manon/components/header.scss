@@ -178,4 +178,8 @@ body > header,
       );
     }
   }
+
+  .actions {
+    gap: theme.$header-actions-gap;
+  }
 }
