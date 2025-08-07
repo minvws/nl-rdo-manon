@@ -48,7 +48,8 @@ nav:
 
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
-Zie voor meer informatie over het importeren en instellen van componenten: [Componenten gebruiken en styling toevoegen](/documentation/import-styling).
+Zie voor meer informatie over het importeren en instellen van componenten:
+[Componenten gebruiken en styling toevoegen](/documentation/import-styling).
 
 ### Importeer component via npm
 

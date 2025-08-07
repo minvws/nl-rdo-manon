@@ -9,4 +9,6 @@ breadcrumb: Installatie
 
 ## Installatie stappen
 
+## Fonts
+
 ## Javascript

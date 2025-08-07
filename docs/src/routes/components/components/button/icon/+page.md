@@ -12,23 +12,33 @@ nav:
 
 ## Benodigde stappen
 
-1. Kies het juiste element voor de knop. Zie eventueel [HTML-element kiezen](/components/button#button-html).
+1. Kies het juiste element voor de knop. Zie eventueel
+   [HTML-element kiezen](/components/button#button-html).
 2. Kies het soort icoon om toe te voegen. Zie [Iconen](/components/icons).
    - Zie bij het gebruik van een icoon-lettertype de "met `span`" voorbeelden.
    - Zie bij het gebruik van een SVG-icoon de "met `svg`" voorbeelden.
 3. Kies de juiste aanpak voor het toevoegen van een icoon aan de knop.
    - Krijgt de knop zowel tekst als een icoon? Zie dan [Met tekst](#with-text).
    - Krijgt de knop alleen een icoon? Zie dan [Zonder tekst](#without-text).
-   - Is een subtielere weergave nodig met alléén een icoon zonder het visuele uiterlijk van een knop? Zie dan [Icoonknoppen zonder achtergrond](/components/button-icon-only).
+   - Is een subtielere weergave nodig met alléén een icoon zonder het visuele
+     uiterlijk van een knop? Zie dan
+     [Icoonknoppen zonder achtergrond](/components/button-icon-only).
 
 <h2 id="with-text">Met tekst</h2>
 
 ### Aandachtspunten
 
-- Is het icoon **decoratief**? Verberg het dan voor toegankelijkheids-hulpmiddelen door `aria-hidden="true"` aan het icoon toe te voegen.
-  - Een icoon is decoratief wanneer het dezelfde informatie overbrengt als de tekst van de knop. Bijvoorbeeld: een "Help"-knop met een vraagteken-icoon.
-- Is het icoon **informatief**? Geef het dan in plaats van `aria-hidden="true"` een `aria-label` dat dezelfde informatie overbrengt als wat het icoon visueel communiceert.
-  - Een icoon is informatief wanneer het visueel extra informatie overbrengt, die niet ook al door de knoptekst overgebracht wordt. Bijvoorbeeld: een knop met de tekst "Verplaats" en een pijl-icoon dat een richting aangeeft.
+- Is het icoon **decoratief**? Verberg het dan voor
+  toegankelijkheids-hulpmiddelen door `aria-hidden="true"` aan het icoon toe te
+  voegen.
+  - Een icoon is decoratief wanneer het dezelfde informatie overbrengt als de
+    tekst van de knop. Bijvoorbeeld: een "Help"-knop met een vraagteken-icoon.
+- Is het icoon **informatief**? Geef het dan in plaats van `aria-hidden="true"`
+  een `aria-label` dat dezelfde informatie overbrengt als wat het icoon visueel
+  communiceert.
+  - Een icoon is informatief wanneer het visueel extra informatie overbrengt,
+    die niet ook al door de knoptekst overgebracht wordt. Bijvoorbeeld: een knop
+    met de tekst "Verplaats" en een pijl-icoon dat een richting aangeeft.
 
 De onderstaande voorbeelden gaan ervan uit dat het icoon **decoratief** is.
 
@@ -168,7 +178,12 @@ De onderstaande voorbeelden gaan ervan uit dat het icoon **decoratief** is.
 
 ### Aandachtspunten
 
-Een icoon op een knop zonder tekst is per definitie **informatief**. Zorg er daarom altijd voor dat de knop een toegankelijk naam heeft. Dit kan bijvoorbeeld middels een `aria-label` op het icoon of middels visueel verborgen tekst naast het icoon. Visueel verborgen tekst heeft de voorkeur, omdat die ook als visuele fallback kan dienen voor het icoon wanneer CSS en afbeeldingen niet geladen konden worden.
+Een icoon op een knop zonder tekst is per definitie **informatief**. Zorg er
+daarom altijd voor dat de knop een toegankelijk naam heeft. Dit kan bijvoorbeeld
+middels een `aria-label` op het icoon of middels visueel verborgen tekst naast
+het icoon. Visueel verborgen tekst heeft de voorkeur, omdat die ook als visuele
+fallback kan dienen voor het icoon wanneer CSS en afbeeldingen niet geladen
+konden worden.
 
 ### `button` met `span`
 
@@ -309,16 +324,22 @@ Een icoon op een knop zonder tekst is per definitie **informatief**. Zorg er daa
   <span>Waarschuwing:</span> Het gebruik van pseudo-content direct op de button wordt uitgefaseerd omdat het niet de voorkeur heeft omwille van toegankelijkheid.
 </p>
 
-Gebruik bij voorkeur één van de andere opties. Geef anders de knop een <code>aria-label</code> met dezelfde inhoud als de reguliere knop-tekst om te voorkomen dat toegankelijkheids-hulpmiddelen het pseudo-content-icoon als tekst proberen aan te bieden aan de gebruiker.
+Gebruik bij voorkeur één van de andere opties. Geef anders de knop een
+<code>aria-label</code> met dezelfde inhoud als de reguliere knop-tekst om te
+voorkomen dat toegankelijkheids-hulpmiddelen het pseudo-content-icoon als tekst
+proberen aan te bieden aan de gebruiker.
 
 #### Visueel voorbeeld
 
-<button class="icon icon-on-off" aria-label="Aan- of uitschakelen">Aan- of uitschakelen</button>
+<button class="icon icon-on-off" aria-label="Aan- of uitschakelen">Aan- of
+uitschakelen</button>
 
 #### HTML-voorbeeld
 
 ```html
-<button class="icon icon-on-off" aria-label="Aan- of uitschakelen">Aan- of uitschakelen</button>
+<button class="icon icon-on-off" aria-label="Aan- of uitschakelen">
+  Aan- of uitschakelen
+</button>
 ```
 
 ### Link-knop met pseudo-content-icoon
@@ -327,7 +348,10 @@ Gebruik bij voorkeur één van de andere opties. Geef anders de knop een <code>a
   <span>Waarschuwing:</span> Het gebruik van pseudo-content direct op de link-knop wordt uitgefaseerd omdat het niet de voorkeur heeft omwille van toegankelijkheid.
 </p>
 
-Gebruik bij voorkeur één van de andere opties. Geef anders de link een <code>aria-label</code> met dezelfde inhoud als de reguliere knop-tekst om te voorkomen dat toegankelijkheids-hulpmiddelen het pseudo-content-icoon als tekst proberen aan te bieden aan de gebruiker.
+Gebruik bij voorkeur één van de andere opties. Geef anders de link een
+<code>aria-label</code> met dezelfde inhoud als de reguliere knop-tekst om te
+voorkomen dat toegankelijkheids-hulpmiddelen het pseudo-content-icoon als tekst
+proberen aan te bieden aan de gebruiker.
 
 #### Visueel voorbeeld
 
@@ -345,7 +369,8 @@ Gebruik bij voorkeur één van de andere opties. Geef anders de link een <code>a
 
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
-Zie voor meer informatie over importeren en instellen van componenten: [Componenten gebruiken en styling toevoegen](/documentation/import-styling).
+Zie voor meer informatie over importeren en instellen van componenten:
+[Componenten gebruiken en styling toevoegen](/documentation/import-styling).
 
 ### Importeer component via npm
 

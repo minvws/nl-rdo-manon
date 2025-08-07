@@ -76,12 +76,12 @@
           <li><a href="{base}/components/components/collapsible">Collapsible</a></li>
           <li><a href="{base}/components/components/collapsible-menu">Collapsible menu</a></li>
           <li><a href="{base}/components/components/description-list">Description list</a></li>
-          <li><a href="{base}/components/components/forms">Forms</a></li>
+          <li><a href="{base}/components/components/filter">Filter</a></li>
         </ul>
       </nav>
       <nav>
         <ul>
-          <li><a href="{base}/components/components/filter">Filter</a></li>
+          <li><a href="{base}/components/components/forms">Forms</a></li>
           <li><a href="{base}/components/components/header-navigation">Header navigation</a></li>
           <li><a href="{base}/components/components/icons">Icons</a></li>
           <li><a href="{base}/components/components/image">Image</a></li>
