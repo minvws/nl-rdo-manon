@@ -1,6 +1,10 @@
 @use "../core/color-scheme/" as color-scheme;
 
+// font
 $font-size: 1rem;
+$font-size: 1rem;
+$font-family: "Open Sans", sans-serif;
+$font-family-secondary: serif;
 
 // base
 $base-background-color: #{color-scheme.$white};

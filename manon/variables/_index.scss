@@ -3,6 +3,7 @@
 @forward "article-content-wrapper";
 @forward "article-section";
 @forward "article-section-divider-line";
+@forward "avatar";
 @forward "background-color-offset";
 @forward "base";
 @forward "breadcrumb-bar";
@@ -62,17 +63,6 @@
 @forward "form-textarea";
 @forward "form";
 @forward "header";
-@forward "header-link-active";
-@forward "header-link-focus";
-@forward "header-link-hover";
-@forward "header-link-visited";
-@forward "header-link";
-@forward "header-navigation";
-@forward "header-navigation-link-active";
-@forward "header-navigation-link-focus";
-@forward "header-navigation-link-hover";
-@forward "header-navigation-link-visited";
-@forward "header-navigation-link";
 @forward "headings";
 @forward "headings-base-set";
 @forward "hero";
@@ -85,7 +75,6 @@
 @forward "language-selector-list";
 @forward "layout-authentication";
 @forward "layout-footer";
-@forward "layout-header";
 @forward "layout-footer-content-block";
 @forward "layout-form";
 @forward "img";
