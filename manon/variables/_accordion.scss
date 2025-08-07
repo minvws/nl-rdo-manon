@@ -21,27 +21,5 @@ $accordion-content-border-color: null !default;
 $accordion-content-background-color: null !default;
 $accordion-content-text-color: null !default;
 
-// Before (button icon)
-$accordion-button-icon-before-open-content: null !default;
-$accordion-button-icon-font-family: null !default;
-$accordion-button-icon-before-font-size: null !default;
-
-// After (button icon)
-$accordion-button-icon-after-open-content: null !default;
-$accordion-button-icon-font-family: null !default;
-$accordion-button-icon-after-font-size: null !default;
-
-// Expanded state (Aria expanded) before
-$accordion-button-icon-before-close-content: null !default;
-$accordion-button-icon-font-family: null !default;
-$accordion-button-icon-before-font-size: null !default;
-$accordion-button-icon-before-font-weight: null !default;
-$accordion-button-icon-before-white-space: null !default;
-
-// Expanded state (Aria expanded) after
-$accordion-button-icon-after-close-content: null !default;
-$accordion-button-icon-font-family: null !default;
-$accordion-button-icon-after-font-size: null !default;
-$accordion-button-icon-after-font-weight: null !default;
-$accordion-button-icon-after-white-space: null !default;
-$accordion-button-icon-after-margin-left: null !default;
+// Icon
+$accordion-icon-margin-left: null !default;

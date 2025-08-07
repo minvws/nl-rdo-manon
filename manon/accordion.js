@@ -56,6 +56,7 @@ function initAccordion(accordion) {
       if (!(target instanceof HTMLElement)) {
         return;
       }
+
       var expanded = target.getAttribute("aria-expanded") === "true";
       target.setAttribute("aria-expanded", expanded ? "false" : "true");
     });

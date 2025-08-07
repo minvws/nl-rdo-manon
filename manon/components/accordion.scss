@@ -27,6 +27,13 @@
       background-color: theme.$accordion-button-background-color,
     )
   );
+
+  span {
+    &.icon-expanded,
+    &.icon-collapsed {
+      display: none;
+    }
+  }
 }
 
 %accordion-content {
@@ -105,28 +112,25 @@ section.accordion {
 .js-accordion-loaded {
   /* The collapsed state */
   .accordion {
-    button[aria-expanded="false"] {
-      /* Open icon */
-      &::before {
+    span {
+      &.icon-expanded,
+      &.icon-collapsed {
         @include theming.apply-from-theme(
           (
-            content: theme.$accordion-button-icon-before-open-content,
-            font-family: theme.$accordion-button-icon-font-family,
-            font-size: theme.$accordion-button-icon-before-font-size,
+            margin-left: theme.$accordion-icon-margin-left,
           )
         );
       }
+    }
 
-      &::after {
-        margin-left: auto;
+    button[aria-expanded="false"] {
+      /* Open icon */
+      span.icon-expanded {
+        display: inline-block;
+      }
 
-        @include theming.apply-from-theme(
-          (
-            content: theme.$accordion-button-icon-after-open-content,
-            font-family: theme.$accordion-button-icon-font-family,
-            font-size: theme.$accordion-button-icon-after-font-size,
-          )
-        );
+      span.icon-collapsed {
+        display: none;
       }
 
       & + div {
@@ -137,29 +141,12 @@ section.accordion {
     /* The expanded state */
     button[aria-expanded="true"] {
       /* Close icon */
-      &::before {
-        @include theming.apply-from-theme(
-          (
-            content: theme.$accordion-button-icon-before-close-content,
-            font-family: theme.$accordion-button-icon-font-family,
-            font-size: theme.$accordion-button-icon-before-font-size,
-            font-weight: theme.$accordion-button-icon-before-font-weight,
-            white-space: theme.$accordion-button-icon-before-white-space,
-          )
-        );
+      span.icon-expanded {
+        display: none;
       }
 
-      &::after {
-        @include theming.apply-from-theme(
-          (
-            content: theme.$accordion-button-icon-after-close-content,
-            font-family: theme.$accordion-button-icon-font-family,
-            font-size: theme.$accordion-button-icon-after-font-size,
-            font-weight: theme.$accordion-button-icon-after-font-weight,
-            white-space: theme.$accordion-button-icon-after-white-space,
-            margin-left: theme.$accordion-button-icon-after-margin-left,
-          )
-        );
+      span.icon-collapsed {
+        display: inline-block;
       }
     }
   }

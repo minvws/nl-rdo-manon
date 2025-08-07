@@ -25,6 +25,10 @@ and spacing sets */
 
 /* Component variables */
 @use "@minvws/manon/variables" with (
+  // accordion
+  $accordion-content-padding: 2rem 1rem,
+  $accordion-icon-margin-left: auto,
+
   // article
   $article-gap: #{spacing.$spacing-250},
 
@@ -41,7 +45,7 @@ and spacing sets */
   $avatar-focus-outline: 2px solid #{color-scheme.$oc-white},
   $avatar-focus-outline-offset: -2px,
 
-  //base
+  // base
   $base-background-color: #{semantic.$base-background-color},
   $base-font-family: "IBM Plex Sans",
   $base-font-size: 1rem,
