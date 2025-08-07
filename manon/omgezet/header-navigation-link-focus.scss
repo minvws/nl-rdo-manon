@@ -1,0 +1,63 @@
+/*---------------------------------------------------------------*/
+
+/*---------------- header-navigation-link-focus.scss ------------*/
+
+/*---------------------------------------------------------------*/
+@use "header-navigation-link-focus-variables";
+@use "mixins/link";
+@use "mixins/outline";
+
+%header-navigation-link-focus-styling {
+  @include link.link-and-icon-styling("header-navigation-link-focus-");
+}
+
+%header-navigation-current-link-focus-styling {
+  @include link.link("header-navigation-current-link-focus-");
+}
+
+%header-navigation-link-focus-outline {
+  @include outline.outline("header-navigation-link-focus-");
+}
+
+body > header,
+.page-header,
+%header-navigation-style {
+  nav {
+    a:focus,
+    a.focus {
+      @extend %header-navigation-link-focus-styling;
+      @extend %header-navigation-link-focus-outline;
+    }
+
+    a[aria-current="page"],
+    a[aria-current="page"]:visited {
+      &:focus {
+        @extend %header-navigation-current-link-focus-styling;
+        @extend %header-navigation-link-focus-outline;
+      }
+    }
+
+    ul,
+    ol {
+      li {
+        a:focus,
+        a.focus {
+          @extend %header-navigation-link-focus-styling;
+          @extend %header-navigation-link-focus-outline;
+        }
+
+        &[aria-current="page"] {
+          > a,
+          > a:visited {
+            @extend %header-navigation-current-link-focus-styling;
+
+            &:focus {
+              @extend %header-navigation-current-link-focus-styling;
+              @extend %header-navigation-link-focus-outline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

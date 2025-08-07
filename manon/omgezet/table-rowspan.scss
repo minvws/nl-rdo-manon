@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------*/
+
+/*---------------------- table-caption.scss ---------------------*/
+
+/*---------------------------------------------------------------*/
+@use "table-caption-variables";
+
+table {
+  caption {
+    background-color: var(--table-base-caption-background-color);
+    color: var(--table-base-caption-text-color);
+    font-size: var(--table-base-caption-font-size);
+    text-align: var(--table-base-caption-text-align);
+    line-height: var(--table-base-caption-line-height);
+    padding: var(--table-base-caption-padding);
+  }
+}

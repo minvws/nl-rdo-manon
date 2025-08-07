@@ -1,0 +1,25 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+form {
+  textarea {
+    box-sizing: border-box;
+
+    @include theming.apply-from-theme(
+      (
+        width: theme.$form-textarea-width,
+        resize: theme.$form-textarea-resize,
+        padding: theme.$form-textarea-padding,
+        font-size: theme.$form-textarea-font-size,
+        font-family: theme.$form-textarea-font-family,
+        color: theme.$form-textarea-text-color,
+        background-color: theme.$form-textarea-background-color,
+        min-height: theme.$form-textarea-min-height,
+        border-radius: theme.$form-textarea-border-radius,
+        border-width: theme.$form-textarea-border-width,
+        border-style: theme.$form-textarea-border-style,
+        border-color: theme.$form-textarea-border-color,
+      )
+    );
+  }
+}

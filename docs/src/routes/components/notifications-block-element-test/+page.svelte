@@ -36,7 +36,7 @@
       </li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h2>Blok-element testpagina</h2>

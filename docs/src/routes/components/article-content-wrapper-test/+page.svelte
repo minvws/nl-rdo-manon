@@ -12,7 +12,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article class="visually-grouped">
+  <article>
     <div>
       <h1>Article content wrapper</h1>
       <p>Componenten gegroepeerd in <code>article</code>'s.</p>
@@ -22,7 +22,7 @@
         language="html"
         code={`
 <main>
-  <article class="visually-grouped"> <!-- This can be full width -->
+  <article> <!-- This can be full width -->
     <div> <!-- While the content width can be limited -->
       <!-- content -->
     </div>

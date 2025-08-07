@@ -1,0 +1,56 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+%notifictions-system-page-styling {
+  max-width: 100%;
+  width: 100%;
+
+  @include theming.apply-from-theme(
+    (
+      background-color: theme.$notification-system-page-background-color,
+      color: theme.$notification-system-page-text-color,
+    )
+  );
+
+  span:first-of-type {
+    @include theming.apply-from-theme(
+      (
+        font-weight: theme.$notification-system-page-span-font-weight,
+      )
+    );
+  }
+
+  p,
+  span,
+  section,
+  div {
+    &.system {
+      &::before {
+        @include theming.apply-from-theme(
+          (
+            font-family: theme.$notification-system-page-icon-font-family,
+            font-size: theme.$notification-system-page-icon-font-size,
+            padding-right: theme.$notification-system-page-icon-padding-right,
+            padding-left: theme.$notification-system-page-icon-padding-left,
+            color: theme.$notification-system-page-icon-text-color,
+            margin-right: theme.$notification-system-page-icon-margin-right,
+          )
+        );
+      }
+    }
+  }
+}
+
+main {
+  &.system {
+    @extend %notifictions-system-page-styling;
+  }
+
+  > section,
+  > article,
+  > div {
+    &.system {
+      @extend %notifictions-system-page-styling;
+    }
+  }
+}

@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Kruimelpad - breadcrumb-bar</h1>
@@ -32,12 +32,8 @@
             optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.
           </li>
           <li>
-            Vul de variabelen met de gewenste stijlkeuzes. Voor meer informatie zie het overzicht
-            met <a href="#variables">instelbare variabelen</a>.
-          </li>
-          <li>
             Voeg de bijbehorende HTML toe. Voor meer informatie zie: <a
-              href="breadcrumb-bar-example">Voorbeelden</a
+              href="#examples">Voorbeelden</a
             >.
           </li>
         </ol>

@@ -1,0 +1,40 @@
+/*---------------------------------------------------------------*/
+
+/*--------------------------- tag.scss --------------------------*/
+
+/*---------------------------------------------------------------*/
+@use "tag-variables";
+
+%tag,
+.tag {
+  font-size: var(--tag-font-size);
+  font-weight: var(--tag-font-weight);
+  line-height: var(--tag-line-height);
+  padding: var(--tag-padding);
+  border-radius: var(--tag-border-radius);
+  border-width: var(--tag-border-width);
+
+  &.plain,
+  &.solid,
+  &.dashed,
+  &.dotted {
+    border-width: var(--tag-border-width);
+  }
+
+  &.plain {
+    border-style: solid;
+    border-color: transparent;
+  }
+
+  &.solid {
+    border-style: solid;
+  }
+
+  &.dashed {
+    border-style: dashed;
+  }
+
+  &.dotted {
+    border-style: dotted;
+  }
+}

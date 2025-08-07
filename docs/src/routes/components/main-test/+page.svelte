@@ -18,7 +18,7 @@
       <li><a href="#tests">Tests</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Main testpagina</h1>
@@ -78,7 +78,7 @@
           language="html"
           code={`
 <main>
-  <article class="visually-grouped">
+  <article>
     <!-- content -->
   </article>
 </main>

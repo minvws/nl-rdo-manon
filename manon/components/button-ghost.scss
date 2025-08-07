@@ -114,7 +114,7 @@ input[type="reset"] {
       pointer-events: none;
     }
 
-    @media (width >= theme.$button-ghost-breakpoint) {
+    @media (width >= #{theme.$button-ghost-breakpoint}) {
       min-width: theme.$button-ghost-breakpoint-min-width;
       display: theme.$button-ghost-breakpoint-display;
     }

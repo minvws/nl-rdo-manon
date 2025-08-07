@@ -11,13 +11,13 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Tabel</h1>
       </section>
 
-      <section id="available-types" class="visually-grouped">
+      <section id="available-types">
         <h2>Beschikbare weergaven</h2>
         <div class="column-2">
           <nav aria-labelledby="types-heading">
@@ -80,7 +80,7 @@
             <h3 id="helper-classes-heading">Helper-classes</h3>
             <ul>
               <li>
-                <a href="{base}/components/nowrap">nowrap</a>
+                <a href="{base}/utility/nowrap">nowrap</a>
               </li>
             </ul>
           </nav>

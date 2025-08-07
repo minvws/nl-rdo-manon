@@ -1,0 +1,122 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+%header-navigation-link-active-styling {
+  @include theming.apply-from-theme(
+    (
+      font-size: theme.$header-navigation-link-active-font-size,
+      font-weight: theme.$header-navigation-link-active-font-weight,
+      line-height: theme.$header-navigation-link-active-line-height,
+      background-color: theme.$header-navigation-link-active-background-color,
+      color: theme.$header-navigation-link-active-text-color,
+      text-decoration: theme.$header-navigation-link-active-text-decoration,
+      border-width: theme.$header-navigation-link-active-border-width,
+      border-style: theme.$header-navigation-link-active-border-style,
+      border-color: theme.$header-navigation-link-active-border-color,
+      border-radius: theme.$header-navigation-link-active-border-radius,
+    )
+  );
+
+  &::before {
+    position: static;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    font-style: normal;
+
+    @include theming.apply-from-theme(
+      (
+        font-family: theme.$header-navigation-link-active-icon-font-family,
+        font-size: theme.$header-navigation-link-active-icon-font-size,
+        line-height: theme.$header-navigation-link-active-icon-line-height,
+        text-decoration:
+          theme.$header-navigation-link-active-icon-text-decoration,
+        padding-right: theme.$header-navigation-link-active-icon-padding-right,
+        padding-left: theme.$header-navigation-link-active-icon-padding-left,
+        background-color:
+          theme.$header-navigation-link-active-icon-background-color,
+        color: theme.$header-navigation-link-active-icon-text-color,
+      )
+    );
+  }
+}
+
+%header-navigation-current-link-active-styling {
+  @include theming.apply-from-theme(
+    (
+      font-size: theme.$header-navigation-current-link-active-font-size,
+      font-weight: theme.$header-navigation-current-link-active-font-weight,
+      line-height: theme.$header-navigation-current-link-active-line-height,
+      background-color:
+        theme.$header-navigation-current-link-active-background-color,
+      color: theme.$header-navigation-current-link-active-text-color,
+      text-decoration:
+        theme.$header-navigation-current-link-active-text-decoration,
+      border-width: theme.$header-navigation-current-link-active-border-width,
+      border-style: theme.$header-navigation-current-link-active-border-style,
+      border-color: theme.$header-navigation-current-link-active-border-color,
+      border-radius: theme.$header-navigation-current-link-active-border-radius,
+    )
+  );
+
+  &::before {
+    position: static;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    font-style: normal;
+
+    @include theming.apply-from-theme(
+      (
+        font-family: theme.$header-navigation-link-active-icon-font-family,
+        font-size: theme.$header-navigation-link-active-icon-font-size,
+        line-height: theme.$header-navigation-link-active-icon-line-height,
+        text-decoration:
+          theme.$header-navigation-link-active-icon-text-decoration,
+        padding-right: theme.$header-navigation-link-active-icon-padding-right,
+        padding-left: theme.$header-navigation-link-active-icon-padding-left,
+        background-color:
+          theme.$header-navigation-link-active-icon-background-color,
+        color: theme.$header-navigation-link-active-icon-text-color,
+      )
+    );
+  }
+}
+
+body > header,
+.page-header,
+%header-navigation-style {
+  nav {
+    a:active,
+    a.active {
+      @extend %header-navigation-link-active-styling;
+    }
+
+    a[aria-current="page"],
+    a[aria-current="page"]:visited {
+      @extend %header-navigation-current-link-active-styling;
+    }
+
+    ul,
+    ol {
+      li {
+        a:active,
+        a.active {
+          @extend %header-navigation-link-active-styling;
+        }
+
+        &[aria-current="page"] {
+          > a,
+          > a:visited {
+            @extend %header-navigation-current-link-active-styling;
+          }
+        }
+      }
+    }
+  }
+}

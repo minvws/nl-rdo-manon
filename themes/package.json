@@ -11,7 +11,9 @@
     "**/*.ttf",
     "**/*.woff",
     "**/*.woff2",
-    "**/*.license"
+    "**/*.license",
+    "LICENSES",
+    "REUSE.toml"
   ],
   "scripts": {
     "npm-version": "npm version"

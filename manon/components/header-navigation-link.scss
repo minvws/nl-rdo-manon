@@ -1,0 +1,98 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+body > header,
+.page-header,
+%header-navigation-style {
+  nav {
+    a {
+      height: 100%;
+      display: inline-flex;
+
+      @include theming.apply-from-theme(
+        (
+          font-size: theme.$header-navigation-link-font-size,
+          font-weight: theme.$header-navigation-link-font-weight,
+          line-height: theme.$header-navigation-link-line-height,
+          background-color: theme.$header-navigation-link-background-color,
+          color: theme.$header-navigation-link-text-color,
+          text-decoration: theme.$header-navigation-link-text-decoration,
+          border-width: theme.$header-navigation-link-border-width,
+          border-style: theme.$header-navigation-link-border-style,
+          border-color: theme.$header-navigation-link-border-color,
+          border-radius: theme.$header-navigation-link-border-radius,
+          align-items: theme.$header-navigation-link-align-items,
+          justify-content: theme.$header-navigation-link-justify-content,
+          padding-top: theme.$header-navigation-link-padding-top,
+          padding-right: theme.$header-navigation-link-padding-right,
+          padding-bottom: theme.$header-navigation-link-padding-bottom,
+          padding-left: theme.$header-navigation-link-padding-left,
+          min-height: theme.$header-navigation-link-min-height,
+        )
+      );
+
+      &::before {
+        position: static;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        font-style: normal;
+
+        @include theming.apply-from-theme(
+          (
+            font-family: theme.$header-navigation-link-icon-font-family,
+            font-size: theme.$header-navigation-link-icon-font-size,
+            line-height: theme.$header-navigation-link-icon-line-height,
+            text-decoration: theme.$header-navigation-link-icon-text-decoration,
+            padding-right: theme.$header-navigation-link-icon-padding-right,
+            padding-left: theme.$header-navigation-link-icon-padding-left,
+            background-color:
+              theme.$header-navigation-link-icon-background-color,
+            color: theme.$header-navigation-link-icon-text-color,
+            content: theme.$header-navigation-link-icon-content,
+          )
+        );
+      }
+
+      &.icon,
+      .icon {
+        &::before {
+          position: static;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0;
+          font-style: normal;
+
+          @include theming.apply-from-theme(
+            (
+              font-family: theme.$header-navigation-link-icon-font-family,
+              font-size: theme.$header-navigation-link-icon-font-size,
+              line-height: theme.$header-navigation-link-icon-line-height,
+              text-decoration:
+                theme.$header-navigation-link-icon-text-decoration,
+              padding-right: theme.$header-navigation-link-icon-padding-right,
+              padding-left: theme.$header-navigation-link-icon-padding-left,
+              background-color:
+                theme.$header-navigation-link-icon-background-color,
+              color: theme.$header-navigation-link-icon-text-color,
+            )
+          );
+        }
+      }
+
+      > span.icon:last-of-type:not(:only-of-type) {
+        @include theming.apply-from-theme(
+          (
+            padding-right: theme.$header-navigation-link-icon-last-padding-right,
+            padding-left: theme.$header-navigation-link-icon-last-padding-left,
+          )
+        );
+      }
+    }
+  }
+}

@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Inklapbaar menu</h1>
@@ -100,6 +100,14 @@
 `}
         />
       </section>
+
+      <section id="variables">
+        <h2>Instelbare variabelen</h2>
+        <p class="system-notification" role="group" aria-label="systeembericht">
+          Dit component heeft momenteel geen instelbare variabelen
+        </p>
+      </section>
+
     </div>
   </article>
 </main>
