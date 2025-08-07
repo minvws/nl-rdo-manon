@@ -32,12 +32,8 @@
             optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.
           </li>
           <li>
-            Vul de variabelen met de gewenste stijlkeuzes. Voor meer informatie zie het overzicht
-            met <a href="#variables">instelbare variabelen</a>.
-          </li>
-          <li>
             Voeg de bijbehorende HTML toe. Voor meer informatie zie: <a
-              href="breadcrumb-bar-example">Voorbeelden</a
+              href="#examples">Voorbeelden</a
             >.
           </li>
         </ol>

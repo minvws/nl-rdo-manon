@@ -1,0 +1,30 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+$breakpoint-1: 24rem !default;
+$breakpoint-2: 42rem !default;
+
+section,
+article,
+header nav,
+footer,
+div,
+form {
+  &.layout-authentication {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    @include theming.apply-from-theme(
+      (
+        max-width: theme.$layout-authentication-max-width,
+        background-color: theme.$layout-authentication-background-color,
+        color: theme.$layout-authentication-text-color,
+        padding-top: theme.$layout-authentication-padding-top,
+        padding-right: theme.$layout-authentication-padding-right,
+        padding-bottom: theme.$layout-authentication-padding-bottom,
+        padding-left: theme.$layout-authentication-padding-left,
+      )
+    );
+  }
+}

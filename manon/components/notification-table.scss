@@ -1,13 +1,13 @@
-@use "../mixins/theming" as *;
-@use "../mixins/notification";
+@use "../mixins/theming";
 @use "../variables" as theme;
+@use "../functions/validators";
 
 table {
   td,
   th,
   tr {
     &.error {
-      @include apply-from-theme(
+      @include theming.apply-from-theme(
         (
           background-color: theme.$notification-table-error-background-color,
           color: theme.$notification-table-error-text-color,
@@ -16,7 +16,7 @@ table {
     }
 
     &.warning {
-      @include apply-from-theme(
+      @include theming.apply-from-theme(
         (
           background-color: theme.$notification-table-warning-background-color,
           color: theme.$notification-table-warning-text-color,
@@ -25,7 +25,7 @@ table {
     }
 
     &.confirmation {
-      @include apply-from-theme(
+      @include theming.apply-from-theme(
         (
           background-color:
             theme.$notification-table-confirmation-background-color,
@@ -35,7 +35,7 @@ table {
     }
 
     &.explanation {
-      @include apply-from-theme(
+      @include theming.apply-from-theme(
         (
           background-color:
             theme.$notification-table-explanation-background-color,
@@ -45,7 +45,7 @@ table {
     }
 
     &.system {
-      @include apply-from-theme(
+      @include theming.apply-from-theme(
         (
           background-color: theme.$notification-table-system-background-color,
           color: theme.$notification-table-system-text-color,
@@ -56,51 +56,15 @@ table {
 
   // Darken even rows for zebra effect
   tr {
-    &.error:nth-child(even):not(.odd) {
-      @include apply-from-theme(
-        (
-          background-color: theme.$notification-table-error-background-color,
-          filter: brightness(90%),
-        )
-      );
-    }
-
-    &.warning:nth-child(even):not(.odd) {
-      @include apply-from-theme(
-        (
-          background-color: theme.$notification-table-warning-background-color,
-          filter: brightness(90%),
-        )
-      );
-    }
-
-    &.confirmation:nth-child(even):not(.odd) {
-      @include apply-from-theme(
+    &:nth-child(even):not(.odd),
+    &:nth-child(odd).even {
+      @include theming.apply-from-theme(
         (
           background-color:
-            theme.$notification-table-confirmation-background-color,
-          filter: brightness(90%),
+            theme.$notification-table-row-background-color-striping,
         )
       );
     }
-
-    &.explanation:nth-child(even):not(.odd) {
-      @include apply-from-theme(
-        (
-          background-color:
-            theme.$notification-table-explanation-background-color,
-          filter: brightness(90%),
-        )
-      );
-    }
-
-    &.system:nth-child(even):not(.odd) {
-      @include theming(
-        (
-          background-color: theme.$notification-table-system-background-color,
-          filter: brightness(90%),
-        )
-      );
-    }
+    filter: brightness(90%);
   }
 }

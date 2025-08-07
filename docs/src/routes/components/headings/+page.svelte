@@ -44,7 +44,7 @@
               stijling gebruikt kan de stijl gezet worden door middel van een voorgedefineerde set.
               Binnen deze set worden de beschikbare "heading-styles" vastgelegd. Denk bijvoorbeeld
               aan een "heading-large" of een "heading-small". Voor meer informatie hierover zie: <a
-                href="heading-base-set">Titel basisset</a
+                href="{base}/utility/heading-base-set">Titel basisset</a
               >.
             </li>
           </ul>
@@ -124,7 +124,7 @@
 
         <p>Beschikbare styling sets voor headings zijn:</p>
         <ul>
-          <li><a href="heading-base-set">Heading-basisset</a></li>
+          <li><a href="{base}/utility/heading-base-set">Heading-basisset</a></li>
         </ul>
 
         <h4>CSS-voorbeeld instellen:</h4>
@@ -135,7 +135,7 @@
 
         <p>
           Voor meer informatie en alle beschikbare variabelen binnen deze set zie: <a
-            href="heading-base-set">Heading-basisset</a
+            href="{base}/utility/heading-base-set">Heading-basisset</a
           >.
         </p>
         <Code

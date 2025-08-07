@@ -1,0 +1,19 @@
+input,
+select,
+textarea,
+input[type="checkbox"]:not(:checked),
+input[type="radio"]:not(:checked) {
+  &.error,
+  &.warning,
+  &.confirmation,
+  &.explanation,
+  &.primary {
+    border-width: 1px;
+    border-style: solid;
+    background-color: #fff;
+  }
+
+  &.primary {
+    @extend %primary-inverse;
+  }
+}

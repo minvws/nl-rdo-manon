@@ -81,7 +81,8 @@ body > header nav .language-selector,
 
       @include theming.apply-from-theme(
         (
-          background-color: theme.$language-selector-list-button-background-color,
+          background-color:
+            theme.$language-selector-list-button-background-color,
           color: theme.$language-selector-list-button-text-color,
           font-size: theme.$language-selector-list-button-font-size,
           font-weight: theme.$language-selector-list-button-font-weight,
@@ -179,7 +180,8 @@ body > header nav .language-selector,
       &:hover {
         @include theming.apply-from-theme(
           (
-            background-color: theme.$language-selector-list-item-hover-background-color,
+            background-color:
+              theme.$language-selector-list-item-hover-background-color,
             color: theme.$language-selector-list-item-hover-text-color,
             font-size: theme.$language-selector-list-item-hover-font-size,
             font-weight: theme.$language-selector-list-item-hover-font-weight,
@@ -203,9 +205,12 @@ body > header nav .language-selector,
         @include theming.apply-from-theme(
           (
             padding: theme.$language-selector-list-item-link-padding,
-            border-top-width: theme.$language-selector-list-item-link-border-width,
-            border-top-style: theme.$language-selector-list-item-link-border-style,
-            border-top-color: theme.$language-selector-list-item-link-border-color,
+            border-top-width:
+              theme.$language-selector-list-item-link-border-width,
+            border-top-style:
+              theme.$language-selector-list-item-link-border-style,
+            border-top-color:
+              theme.$language-selector-list-item-link-border-color,
             line-height: theme.$language-selector-list-item-link-line-height,
             white-space: theme.$language-selector-list-item-link-white-space,
             min-height: theme.$language-selector-list-item-link-min-height,
@@ -216,7 +221,8 @@ body > header nav .language-selector,
         &:hover {
           @include theming.apply-from-theme(
             (
-              background-color: theme.$language-selector-list-item-hover-background-color,
+              background-color:
+                theme.$language-selector-list-item-hover-background-color,
               color: theme.$language-selector-list-item-hover-text-color,
               font-size: theme.$language-selector-list-item-hover-font-size,
               font-weight: theme.$language-selector-list-item-hover-font-weight,
@@ -249,7 +255,8 @@ body > header nav .language-selector,
 
         @include theming.apply-from-theme(
           (
-            background-color: theme.$language-selector-list-item-active-background-color,
+            background-color:
+              theme.$language-selector-list-item-active-background-color,
             color: theme.$language-selector-list-item-active-text-color,
             font-size: theme.$language-selector-list-item-active-font-size,
             font-weight: theme.$language-selector-list-item-active-font-weight,

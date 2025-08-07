@@ -11,6 +11,7 @@ body > header,
   @include theming.apply-from-theme(
     (
       flex-direction: theme.$header-flex-direction,
+      gap: theme.$header-gap,
       justify-content: theme.$header-justify-content,
       align-items: theme.$header-align-items,
       padding-top: theme.$header-padding-top,
@@ -23,17 +24,27 @@ body > header,
       border-width: theme.$header-border-width,
       border-style: theme.$header-border-style,
       border-color: theme.$header-border-color,
+      color: theme.$header-color,
+      font-size: theme.$header-font-size,
+      font-weight: theme.$header-font-weight,
+      line-height: theme.$header-line-height,
     )
   );
 
+  // content wrapper
   > section,
   > div {
     &.content-wrapper {
       display: flex;
+      box-sizing: border-box;
+      flex-direction: theme.$header-content-wrapper-flex-direction;
+
+      button {
+        align-self: center;
+      }
 
       @include theming.apply-from-theme(
         (
-          flex-direction: theme.$header-content-wrapper-flex-direction,
           justify-content: theme.$header-content-wrapper-justify-content,
           align-items: theme.$header-content-wrapper-align-items,
           width: theme.$header-content-wrapper-width,
@@ -42,5 +53,134 @@ body > header,
         )
       );
     }
+  }
+
+  a {
+    color: inherit;
+
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$header-link-background-color,
+        color: theme.$header-link-text-color,
+        text-decoration: theme.$header-link-text-decoration,
+        border-width: theme.$header-link-border-width,
+        border-style: theme.$header-link-border-style,
+        border-color: theme.$header-link-border-color,
+        border-radius: theme.$header-link-border-radius,
+        padding: theme.$header-link-padding,
+        font-weight: theme.$header-link-font-weight,
+        min-height: theme.$header-link-min-height,
+        display: theme.$header-link-display,
+        justify-content: theme.$header-link-justify-content,
+        align-items: theme.$header-link-align-items,
+      )
+    );
+
+    &:visited {
+      color: inherit;
+    }
+
+    &[aria-current="page"],
+    &[aria-current="page"]:hover,
+    &:hover,
+    &:visited:hover,
+    &[aria-current="page"]:visited:hover {
+      @include theming.apply-from-theme(
+        (
+          color: theme.$header-link-current-text-color,
+          background-color: theme.$header-link-current-background-color,
+          border-width: theme.$header-link-current-border-width,
+          border-style: theme.$header-link-current-border-style,
+          border-color: theme.$header-link-current-border-color,
+        )
+      );
+    }
+  }
+
+  ul,
+  ol {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+
+    @include theming.apply-from-theme(
+      (
+        gap: theme.$header-list-gap,
+        justify-content: theme.$header-list-justify-content,
+        align-items: theme.$header-list-align-items,
+        color: theme.$header-list-text-color,
+        font-weight: theme.$header-list-font-weight,
+        width: theme.$header-list-width,
+        height: theme.$header-list-height,
+      )
+    );
+
+    li {
+      list-style: none;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      cursor: pointer;
+
+      @include theming.apply-from-theme(
+        (
+          justify-content: theme.$header-list-item-justify-content,
+          align-items: theme.$header-list-item-align-items,
+          color: theme.$header-list-item-text-color,
+          background-color: theme.$header-list-item-background-color,
+          border-width: theme.$header-list-item-border-width,
+          border-style: theme.$header-list-item-border-style,
+          border-color: theme.$header-list-item-border-color,
+        )
+      );
+
+      &::before {
+        /* Preventing default nav before to show up */
+        display: none;
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 0;
+
+    @include theming.apply-from-theme(
+      (
+        gap: theme.$header-navigation-gap,
+        justify-content: theme.$header-navigation-justify-content,
+        align-items: theme.$header-navigation-align-items,
+        width: theme.$header-navigation-width,
+        background-color: theme.$header-navigation-background-color,
+        padding-top: theme.$header-navigation-padding-top,
+        padding-right: theme.$header-navigation-padding-right,
+        padding-bottom: theme.$header-navigation-padding-bottom,
+        padding-left: theme.$header-navigation-padding-left,
+        max-width: theme.$header-navigation-max-width,
+        border-width: theme.$header-navigation-border-width,
+        border-style: theme.$header-navigation-border-style,
+        border-color: theme.$header-navigation-border-color,
+        border-radius: theme.$header-navigation-border-radius,
+        min-height: theme.$header-navigation-min-height,
+        position: theme.$header-navigation-position,
+        white-space: theme.$header-navigation-white-space,
+      )
+    );
+
+    input {
+      @include theming.apply-from-theme(
+        (
+          align-self: theme.$header-navigation-input-algin-self,
+        )
+      );
+    }
+  }
+
+  .actions {
+    gap: theme.$header-actions-gap;
   }
 }

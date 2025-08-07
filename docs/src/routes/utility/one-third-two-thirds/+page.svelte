@@ -196,7 +196,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="{base}/components/layout-one-third-two-thirds-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/utility/one-third-two-thirds-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

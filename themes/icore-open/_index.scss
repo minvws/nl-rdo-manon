@@ -29,6 +29,22 @@ and spacing sets */
   $accordion-content-padding: 2rem 1rem,
   $accordion-icon-margin-left: auto,
 
+  // article
+  $article-gap: #{spacing.$spacing-250},
+
+  // avatar
+  $avatar-font-weight: bold,
+  $avatar-border-radius: 50%,
+  $avatar-background-color: #{semantic.$color-brand-primary-default},
+
+  // Hover
+  $avatar-hover-background-color: #{color-scheme.$oc-blue-7},
+
+  // Focus
+  $avatar-focus-background-color: #{color-scheme.$oc-blue-7},
+  $avatar-focus-outline: 2px solid #{color-scheme.$oc-white},
+  $avatar-focus-outline-offset: -2px,
+
   // base
   $base-background-color: #{semantic.$base-background-color},
   $base-font-family: "IBM Plex Sans",
@@ -82,12 +98,21 @@ and spacing sets */
   $code-block-background-color: #{color-scheme.$oc-gray-1},
   $code-block-border-radius: #{border-radii.$border-radius-s},
 
+  // collapsing element
+  $collapsing-element-justify-content: space-between,
+  $collapsing-element-align-items: center,
+
+  // color picker
+  $color-picker-border-radius: #{border-radii.$border-radius-s},
+
   // form
   $form-align-items: flex-start,
   $form-text-color: #{semantic.$color-text-default},
   $form-gap: #{spacing.$spacing-200},
-  $form-group-gap: #{spacing.$spacing-100},
   $form-max-width: 40rem,
+
+  // form group
+  $form-group-gap: #{spacing.$spacing-050},
 
   // form input
   $form-input-padding-top: #{spacing.$spacing-075},
@@ -99,13 +124,19 @@ and spacing sets */
   $form-input-border-color: #{color-scheme.$oc-gray-4},
   $form-input-border-radius: #{border-radii.$border-radius-m},
 
+  // combined field
+  $form-combined-field-input-border-radius: #{border-radii.$border-radius-m} 0 0
+    #{border-radii.$border-radius-m},
+  $form-combined-field-button-border-radius: 0 #{border-radii.$border-radius-m} #{border-radii.$border-radius-m}
+    0,
+
   // form label
   $form-label-font-weight: bold,
 
   // footer
   $footer-align-items: center,
   $footer-justify-content: center,
-  $footer-gap: #{spacing.$spacing-100},
+  $footer-gap: #{spacing.$spacing-200},
   $footer-flex-direction: column,
   $footer-text-align: center,
   $footer-padding-top: #{spacing.$spacing-200},
@@ -113,14 +144,59 @@ and spacing sets */
   $footer-padding-bottom: #{spacing.$spacing-300},
   $footer-padding-left: #{spacing.$spacing-200},
   $footer-list-style: none,
+  $footer-list-flex-direction: row,
+  $footer-list-justify-content: center,
+  $footer-list-gap: #{spacing.$spacing-100},
+
+  // Form help
+  $form-help-button-padding-top: 0,
+  $form-help-button-padding-right: 0,
+  $form-help-button-padding-bottom: 0,
+  $form-help-button-padding-left: 0,
+  $form-help-button-border-width: 2px,
+  $form-help-button-border-style: solid,
+  $form-help-button-border-color: #{semantic.$color-brand-primary-default},
+  $form-help-button-border-radius: 50%,
+  $form-help-button-width: 1.25rem,
+  $form-help-button-height: 1.25rem,
+  $form-help-button-background-color: #{color-scheme.$oc-white},
+  $form-help-button-text-color: #{semantic.$color-brand-primary-default},
+  $form-help-button-top: #{spacing.$spacing-050},
 
   // header
   $header-background-color: #{color-scheme.$oc-gray-9},
+  $header-justify-content: stretch,
+  $header-font-weight: bold,
+  $header-min-height: 4.5rem,
+  $header-color: #{color-scheme.$oc-white},
+  $header-padding-right: #{spacing.$spacing-300},
+  $header-padding-left: #{spacing.$spacing-300},
+
+  // header nav
+  $header-navigation-width: 100%,
+  $header-navigation-gap: #{spacing.$spacing-200},
+  $header-navigation-justify-content: space-between,
+
+  // header list
+  $header-list-gap: 0,
+  $header-list-align-items: stretch,
+  $header-list-height: 100%,
+
+  // header list item
+  $header-list-item-align-items: center,
+
+  // header list item link
+  $header-link-align-items: center,
+  $header-link-padding: #{spacing.$spacing-025} #{spacing.$spacing-050},
+  $header-link-min-height: 100%,
+
+  // header current page
+  $header-link-current-background-color: #{color-scheme.$oc-white},
+  $header-link-current-text-color: #{color-scheme.$oc-gray-9},
 
   // header content wrapper
   $header-content-wrapper-flex-direction: row,
   $header-content-wrapper-width: 100%,
-  $header-content-wrapper-gap: 1rem,
 
   // heading
   $h1-font-family: #{semantic.$font-family},
@@ -137,12 +213,22 @@ and spacing sets */
   $link-visited-text-color: #{color-scheme.$oc-violet-8},
   $link-visited-hover-text-color: #{color-scheme.$oc-violet-9},
 
+  // logo
+  $logo-font-size: 0,
+  $logo-padding: 0,
+  $logo-img-height: 2rem,
+  $logo-img-width: 2rem,
+
   // main
   $main-padding-top: #{spacing.$spacing-400},
   $main-padding-right: 5%,
   $main-padding-bottom: #{spacing.$spacing-400},
   $main-padding-left: 5%,
   $main-gap: #{spacing.$spacing-225},
+
+  // nota bene
+  $nota-bene-font-size: 0.75rem,
+  $nota-bene-text-color: #{color-scheme.$oc-gray-7},
 
   // pagination
   $pagination-list-gap: #{spacing.$spacing-025},
@@ -175,14 +261,62 @@ and spacing sets */
   $navigation-link-text-decoration: none,
   $navigation-list-padding: 1rem,
 
+  // notification
+  $notification-padding-top: #{spacing.$spacing-100},
+  $notification-padding-right: #{spacing.$spacing-100},
+  $notification-padding-bottom: #{spacing.$spacing-100},
+  $notification-padding-left: #{spacing.$spacing-100},
+  $notification-border-style: solid,
+  $notification-border-width: 1px,
+  $notification-gap: #{spacing.$spacing-100},
+  $notification-border-radius: #{border-radii.$border-radius-m},
+
+  // notification type
+  $notification-span-font-weight: bold,
+
+  // notification error
+  $notification-error-background-color: #{color-scheme.$color-notification-error-subtle},
+  $notification-error-text-color: #{semantic.$color-text-default},
+  $notification-error-border-color: #{color-scheme.$color-notification-error-intense},
+  $notification-table-error-background-color: #{color-scheme.$color-notification-error-subtle},
+  $notification-table-error-text-color: #{semantic.$color-text-default},
+
+  // notification warning
+  $notification-warning-background-color: #{color-scheme.$color-notification-warning-subtle},
+  $notification-warning-text-color: #{semantic.$color-text-default},
+  $notification-warning-border-color: #{color-scheme.$color-notification-warning-intense},
+  $notification-table-warning-background-color: #{color-scheme.$color-notification-warning-subtle},
+  $notification-table-warning-text-color: #{semantic.$color-text-default},
+
+  // notification explanation
+  $notification-explanation-background-color: #{color-scheme.$color-notification-explanation-subtle},
+  $notification-explanation-text-color: #{semantic.$color-text-default},
+  $notification-explanation-border-color: #{color-scheme.$color-notification-explanation-intense},
+  $notification-table-explanation-background-color: #{color-scheme.$color-notification-explanation-subtle},
+  $notification-table-explanation-text-color: #{semantic.$color-text-default},
+
+  // notification confirmation
+  $notification-confirmation-background-color: #{color-scheme.$color-notification-confirmation-subtle},
+  $notification-confirmation-text-color: #{semantic.$color-text-default},
+  $notification-confirmation-border-color: #{color-scheme.$color-notification-confirmation-intense},
+  $notification-table-confirmation-background-color: #{color-scheme.$color-notification-confirmation-subtle},
+  $notification-table-confirmation-text-color: #{semantic.$color-text-default},
+
+  // notification system
+  $notification-system-background-color: #{color-scheme.$color-notification-system-subtle},
+  $notification-system-text-color: #{semantic.$color-text-default},
+  $notification-system-border-color: #{color-scheme.$color-notification-system-intense},
+  $notification-table-system-background-color: #{color-scheme.$color-notification-system-subtle},
+  $notification-table-system-text-color: #{semantic.$color-text-default},
+
   // section
   $section-background-color: #{color-scheme.$oc-white},
   $section-padding-top: #{spacing.$spacing-200},
   $section-padding-right: #{spacing.$spacing-200},
   $section-padding-bottom: #{spacing.$spacing-300},
   $section-padding-left: #{spacing.$spacing-200},
-  $section-max-width: 50rem,
-  $section-gap: #{spacing.$spacing-400},
+  $section-max-width: 60rem,
+  $section-gap: #{spacing.$spacing-150},
   $section-flex-direction: column,
   $section-border-radius: #{border-radii.$border-radius-m},
   $section-justify-content: flex-start,

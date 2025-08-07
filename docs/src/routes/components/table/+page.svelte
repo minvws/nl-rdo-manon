@@ -80,7 +80,7 @@
             <h3 id="helper-classes-heading">Helper-classes</h3>
             <ul>
               <li>
-                <a href="{base}/components/nowrap">nowrap</a>
+                <a href="{base}/utility/nowrap">nowrap</a>
               </li>
             </ul>
           </nav>

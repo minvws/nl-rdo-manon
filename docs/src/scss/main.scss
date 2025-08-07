@@ -5,6 +5,7 @@
 @use "@minvws/manon/components/article";
 @use "@minvws/manon/components/article-section";
 @use "@minvws/manon/components/article-section-divider-line";
+@use "@minvws/manon/components/avatar";
 @use "@minvws/manon/components/base";
 @use "@minvws/manon/components/breadcrumb-bar";
 @use "@minvws/manon/components/button";
@@ -14,6 +15,7 @@
 @use "@minvws/manon/components/button-to-top";
 @use "@minvws/manon/components/card";
 @use "@minvws/manon/components/checkbox";
+@use "@minvws/manon/components/color-picker";
 @use "@minvws/manon/components/code-block";
 @use "@minvws/manon/components/collapsible";
 @use "@minvws/manon/components/critical-informational-labels";
@@ -33,21 +35,33 @@
 @use "@minvws/manon/components/form-checkbox";
 @use "@minvws/manon/components/form-fieldset-checkbox";
 @use "@minvws/manon/components/form-fieldset";
+@use "@minvws/manon/components/form-horizontal-fieldset";
 @use "@minvws/manon/components/form-fieldset-radio";
 @use "@minvws/manon/components/form-fieldset-visually-hidden-horizontal";
 @use "@minvws/manon/components/form-grouped-choice-list";
 @use "@minvws/manon/components/form-help";
+@use "@minvws/manon/components/form-horizontal";
 @use "@minvws/manon/components/form-input";
+@use "@minvws/manon/components/form-inline";
 @use "@minvws/manon/components/form-label";
+@use "@minvws/manon/components/form-required";
+@use "@minvws/manon/components/form-combined-field";
 @use "@minvws/manon/components/header";
-@use "@minvws/manon/components/header-navigation";
 @use "@minvws/manon/components/heading";
 @use "@minvws/manon/components/hero";
+@use "@minvws/manon/components/layout-authentication";
+@use "@minvws/manon/components/layout-footer-content-block";
+@use "@minvws/manon/components/layout-footer";
+@use "@minvws/manon/components/layout-form";
 @use "@minvws/manon/components/link";
 @use "@minvws/manon/components/list";
+@use "@minvws/manon/components/login-meta";
 @use "@minvws/manon/components/logo";
 @use "@minvws/manon/components/navigation";
+@use "@minvws/manon/components/nota-bene";
+@use "@minvws/manon/components/navigation-content-wrapper";
 @use "@minvws/manon/components/main";
+@use "@minvws/manon/components/main-content-wrapper";
 @use "@minvws/manon/components/max-line-length";
 @use "@minvws/manon/components/message-counter";
 @use "@minvws/manon/components/notification-confirmation";
@@ -55,6 +69,7 @@
 @use "@minvws/manon/components/notification-explanation";
 @use "@minvws/manon/components/notification-system";
 @use "@minvws/manon/components/notification-warning";
+@use "@minvws/manon/components/notification-table";
 @use "@minvws/manon/components/pagination";
 @use "@minvws/manon/components/section";
 @use "@minvws/manon/components/sidemenu";
@@ -65,12 +80,16 @@
 @use "@minvws/manon/components/table-condensed";
 @use "@minvws/manon/components/table-expando-rows";
 @use "@minvws/manon/components/table-number";
+@use "@minvws/manon/components/table-rowspan";
 @use "@minvws/manon/components/table-sticky-header";
 @use "@minvws/manon/components/table-summary";
+@use "@minvws/manon/components/tag";
+@use "@minvws/manon/components/tags";
 @use "@minvws/manon/components/tile";
 @use "@minvws/manon/components/tile-groups";
 @use "@minvws/manon/components/tile-image-cover";
 @use "@minvws/manon/components/skip-to-content";
+@use "@minvws/manon/components/radio";
 
 // Utility classes
 @use "@minvws/manon/utility/centered";
