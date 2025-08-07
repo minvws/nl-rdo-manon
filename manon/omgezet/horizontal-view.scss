@@ -1,5 +1,7 @@
 /*---------------------------------------------------------------*/
+
 /*-------------------- horizontal.scss ---------------------*/
+
 /*---------------------------------------------------------------*/
 @use "horizontal-variables";
 
@@ -8,6 +10,7 @@ $breakpoint: 50rem !default;
 %horizontal,
 .horizontal {
   display: flex;
+
   /* Preventing specificity issues */
   flex-direction: row !important;
   align-items: center;

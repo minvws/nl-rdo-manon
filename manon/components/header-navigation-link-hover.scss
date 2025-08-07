@@ -35,10 +35,13 @@
             font-family: theme.$header-navigation-link-hover-icon-font-family,
             font-size: theme.$header-navigation-link-hover-icon-font-size,
             line-height: theme.$header-navigation-link-hover-icon-line-height,
-            text-decoration: theme.$header-navigation-link-hover-icon-text-decoration,
-            padding-right: theme.$header-navigation-link-hover-icon-padding-right,
+            text-decoration:
+              theme.$header-navigation-link-hover-icon-text-decoration,
+            padding-right:
+              theme.$header-navigation-link-hover-icon-padding-right,
             padding-left: theme.$header-navigation-link-hover-icon-padding-left,
-            background-color: theme.$header-navigation-link-hover-icon-background-color,
+            background-color:
+              theme.$header-navigation-link-hover-icon-background-color,
             color: theme.$header-navigation-link-hover-icon-text-color,
           )
         );

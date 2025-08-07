@@ -49,7 +49,8 @@ body > header,
             text-decoration: theme.$header-navigation-link-icon-text-decoration,
             padding-right: theme.$header-navigation-link-icon-padding-right,
             padding-left: theme.$header-navigation-link-icon-padding-left,
-            background-color: theme.$header-navigation-link-icon-background-color,
+            background-color:
+              theme.$header-navigation-link-icon-background-color,
             color: theme.$header-navigation-link-icon-text-color,
             content: theme.$header-navigation-link-icon-content,
           )
@@ -72,10 +73,12 @@ body > header,
               font-family: theme.$header-navigation-link-icon-font-family,
               font-size: theme.$header-navigation-link-icon-font-size,
               line-height: theme.$header-navigation-link-icon-line-height,
-              text-decoration: theme.$header-navigation-link-icon-text-decoration,
+              text-decoration:
+                theme.$header-navigation-link-icon-text-decoration,
               padding-right: theme.$header-navigation-link-icon-padding-right,
               padding-left: theme.$header-navigation-link-icon-padding-left,
-              background-color: theme.$header-navigation-link-icon-background-color,
+              background-color:
+                theme.$header-navigation-link-icon-background-color,
               color: theme.$header-navigation-link-icon-text-color,
             )
           );

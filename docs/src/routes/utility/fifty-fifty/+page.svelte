@@ -192,7 +192,7 @@
           <p>
             Om stijlkeuzes door te voeren op alle titels gebruik de onderstaande variabelen. Hierbij
             kan ook verwezen worden naar stijlkeuzes in heading-sets als deze toegevoegd zijn aan
-            het project. Voor een voorbeeld zie: <a href="heading-base-set">heading-base-set</a>.
+            het project. Voor een voorbeeld zie: <a href="{base}/utility/heading-base-set">heading-base-set</a>.
           </p>
           <Code
             language="css"
@@ -207,7 +207,7 @@
 
         <section id="related">
           <h2>Gerelateerde pagina's</h2>
-          <a href="{base}/components/layout-fifty-fifty-test">Test- en voorbeelden-pagina</a>
+          <a href="{base}/utility/fifty-fifty-test">Test- en voorbeelden-pagina</a>
         </section>
       </section>
     </div>

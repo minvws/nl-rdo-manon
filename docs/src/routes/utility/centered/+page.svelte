@@ -81,7 +81,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="{base}/components/layout-centered-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/utility/centered-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>
