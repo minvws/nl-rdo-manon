@@ -21,7 +21,7 @@
       <li><a href="#variables">Instelbare variabelen</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Maximale regellengte</h1>

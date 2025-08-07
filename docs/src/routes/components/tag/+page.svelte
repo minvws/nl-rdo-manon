@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Tag</h1>
@@ -218,16 +218,6 @@
 @use "@minvws/manon/tag";
 `}
         />
-
-        <h3>Kleurensets</h3>
-        <p>
-          De bruikbare kleuren voor de tags worden toegevoegd via kleurensets. Beschikbare sets
-          zijn:
-        </p>
-        <ul>
-          <li><a href="tags-6">Tags kleurenset zes kleuren</a></li>
-          <li><a href="tags-6-3">Tags kleurenset zes kleuren & drie tinten</a></li>
-        </ul>
       </section>
     </div>
   </article>

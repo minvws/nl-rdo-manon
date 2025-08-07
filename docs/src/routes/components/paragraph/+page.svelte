@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Paragraaf</h1>
@@ -90,6 +90,13 @@
 @use "@minvws/manon/p";
 `}
         />
+      </section>
+
+      <section id="variables">
+        <h2>Instelbare variabelen</h2>
+        <p class="system-notification" role="group" aria-label="systeembericht">
+          Dit component heeft momenteel geen instelbare variabelen
+        </p>
       </section>
 
       <section id="related">

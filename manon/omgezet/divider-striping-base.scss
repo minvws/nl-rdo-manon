@@ -1,0 +1,12 @@
+/*----------------------------------------------------------------------------------*/
+
+/*--------------------- components/divider-striping-base.scss ----------------------*/
+
+/*----------------------------------------------------------------------------------*/
+@use "divider-striping-base-variables";
+%divider-striping-base {
+  border-width: var(--divider-striping-base-border-width);
+  border-style: var(--divider-striping-base-border-style);
+  border-color: var(--divider-striping-base-border-color);
+  background-color: var(--divider-striping-base-background-color);
+}

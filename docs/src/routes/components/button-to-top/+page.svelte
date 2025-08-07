@@ -20,7 +20,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Terug naar hoofdmenu knop</h1>
@@ -30,10 +30,6 @@
           <li>
             Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
             optionele bestanden zie: <a href="#requirements">Bijbehorende bestanden</a>.
-          </li>
-          <li>
-            Vul de variabelen met de gewenste stijlkeuzes. Voor meer informatie zie het overzicht
-            met <a href="#variables">instelbare variabelen</a>.
           </li>
           <li>Voeg de knop aan het einde van de <code>&lt;main&gt;</code> toe.</li>
           <li>

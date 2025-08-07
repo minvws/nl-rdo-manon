@@ -1,0 +1,20 @@
+/*---------------------------------------------------------------*/
+
+/*-------------------- header-link-hover.scss -------------------*/
+
+/*---------------------------------------------------------------*/
+@use "header-link-hover-variables";
+@use "mixins/link";
+
+body > header,
+.page-header,
+%header-style {
+  a {
+    &:hover,
+    &.hover
+
+    /* Testing purposes */ {
+      @include link.link-and-icon-styling("header-link-hover-");
+    }
+  }
+}

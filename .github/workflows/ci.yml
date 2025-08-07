@@ -4,7 +4,6 @@ on:
   push:
     branches: [main, "release/**"]
   pull_request:
-    branches: [main, "release/**"]
 
 jobs:
   audit:
@@ -69,6 +68,10 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Build
+        env:
+          # Not strictly necessary here, but good to check for BASE_PATH-related
+          # build issues early, since we need BASE_PATH for github pages.
+          BASE_PATH: "/${{ github.event.repository.name }}"
         run: pnpm run build
 
   sonarcloud:

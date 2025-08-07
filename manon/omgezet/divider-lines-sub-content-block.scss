@@ -1,0 +1,38 @@
+/*----------------------------------------------------------------------------------*/
+
+/*---------- components/divider-lines-sub-content-block.scss ---------------------*/
+
+/*----------------------------------------------------------------------------------*/
+@use "divider-lines-sub-content-block-variables";
+
+main {
+  > article,
+  > section,
+  > div {
+    > div {
+      > article,
+      > section,
+      > div {
+        border-width: var(--divider-lines-subcontentblocks-border-width);
+        border-style: var(--divider-lines-subcontentblocks-border-style);
+        border-color: var(--divider-lines-subcontentblocks-border-color);
+        padding-top: var(--divider-lines-subcontentblocks-padding-top);
+
+        &:first-of-type {
+          border-width: var(
+            --divider-lines-subcontentblocks-first-of-type-border-width
+          );
+          border-style: var(
+            --divider-lines-subcontentblocks-first-of-type-border-style
+          );
+          border-color: var(
+            --divider-lines-subcontentblocks-first-of-type-border-color
+          );
+          padding-top: var(
+            --divider-lines-subcontentblocks-first-of-type-padding-top
+          );
+        }
+      }
+    }
+  }
+}

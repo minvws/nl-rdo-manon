@@ -1,5 +1,6 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
+@use "../functions/validators";
 
 body > header,
 .page-header,
@@ -21,14 +22,14 @@ body > header,
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
+    margin: 0;
 
     @include theming.apply-from-theme(
       (
-        flex-direction: theme.$header-navigation-flex-direction,
+        gap: theme.$header-navigation-gap,
         justify-content: theme.$header-navigation-justify-content,
         align-items: theme.$header-navigation-align-items,
         width: theme.$header-navigation-width,
-        margin: theme.$header-navigation-margin,
         background-color: theme.$header-navigation-background-color,
         padding-top: theme.$header-navigation-padding-top,
         padding-right: theme.$header-navigation-padding-right,
@@ -49,9 +50,9 @@ body > header,
     ol {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
       padding: 0;
       margin: 0;
+      flex-wrap: wrap;
 
       @include theming.apply-from-theme(
         (
@@ -65,10 +66,10 @@ body > header,
       );
 
       li {
-        display: flex;
         list-style: none;
         padding: 0;
         box-sizing: border-box;
+        display: flex;
 
         @include theming.apply-from-theme(
           (
@@ -77,6 +78,9 @@ body > header,
             color: theme.$header-navigation-list-item-text-color,
             background-color:
               theme.$header-navigation-list-item-background-color,
+            border-width: theme.$header-navigation-list-item-border-width,
+            border-style: theme.$header-navigation-list-item-border-style,
+            border-color: theme.$header-navigation-list-item-border-color,
           )
         );
 
