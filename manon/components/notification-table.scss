@@ -27,7 +27,8 @@ table {
     &.confirmation {
       @include theming.apply-from-theme(
         (
-          background-color: theme.$notification-table-confirmation-background-color,
+          background-color:
+            theme.$notification-table-confirmation-background-color,
           color: theme.$notification-table-confirmation-text-color,
         )
       );
@@ -36,7 +37,8 @@ table {
     &.explanation {
       @include theming.apply-from-theme(
         (
-          background-color: theme.$notification-table-explanation-background-color,
+          background-color:
+            theme.$notification-table-explanation-background-color,
           color: theme.$notification-table-explanation-text-color,
         )
       );
@@ -58,7 +60,8 @@ table {
     &:nth-child(odd).even {
       @include theming.apply-from-theme(
         (
-          background-color: theme.$notification-table-row-background-color-striping,
+          background-color:
+            theme.$notification-table-row-background-color-striping,
         )
       );
     }

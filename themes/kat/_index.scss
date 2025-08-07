@@ -23,6 +23,16 @@ and spacing sets */
 @use "@minvws/manon/variables" with (
   // base
   $base-background-color: #{semantic.$base-background-color},
+  $base-font-size: 1rem,
+  $base-font-weight: 300,
+
+  // avatar
+  $avatar-font-weight: bold,
+  $avatar-border-radius: 50%,
+  $avatar-background-color: #{semantic.$color-brand-primary},
+
+  // Hover
+  $avatar-hover-background-color: #{semantic.$color-brand-primary-muted},
 
   // button
   $button-text-color: #{semantic.$color-text-default},
@@ -50,6 +60,11 @@ and spacing sets */
   $button-destructive-hover-text-color: #{color-scheme.$white},
   $button-destructive-hover-border-color: #{color-scheme.$red-600},
 
+  // code block
+  $code-block-padding: #{spacing.$spacing-200},
+  $code-block-background-color: #{semantic.$color-brand-secundary-subtle},
+  $code-block-border-radius: #{border-radii.$border-radius-s},
+
   // footer
   $footer-background-color: #{color-scheme.$white},
   $footer-text-color: #{semantic.$color-text-default},
@@ -61,6 +76,60 @@ and spacing sets */
   $footer-gap: #{spacing.$spacing-100},
   $footer-flex-wrap: wrap,
   $footer-justify-content: space-between,
+
+  // form
+  $form-align-items: flex-start,
+  $form-text-color: #{semantic.$color-text-default},
+  $form-gap: #{spacing.$spacing-200},
+  $form-max-width: 40rem,
+
+  // form group
+  $form-group-gap: #{spacing.$spacing-050},
+
+  // form input
+  $form-input-padding-top: #{spacing.$spacing-025},
+  $form-input-padding-right: #{spacing.$spacing-075},
+  $form-input-padding-bottom: #{spacing.$spacing-025},
+  $form-input-padding-left: #{spacing.$spacing-075},
+  $form-input-border-width: 1px,
+  $form-input-border-style: solid,
+  $form-input-border-color: #{color-scheme.$grey-500},
+  $form-input-border-radius: #{border-radii.$border-radius-s},
+  $form-input-min-height: 3rem,
+
+  // header
+  $header-background-color: #{color-scheme.$white},
+  $header-font-weight: bold,
+  $header-min-height: 3.5rem,
+  $header-color: #{semantic.$color-text-default},
+  $header-padding-right: #{spacing.$spacing-300},
+  $header-padding-left: #{spacing.$spacing-300},
+
+  // header nav
+  $header-navigation-width: 100%,
+  $header-navigation-gap: #{spacing.$spacing-200},
+  $header-navigation-justify-content: space-between,
+
+  // header list item
+  $header-list-item-align-items: center,
+
+  // header list item link
+  $header-link-align-items: center,
+  $header-link-padding: #{spacing.$spacing-100},
+  $header-link-text-decoration: none,
+  $header-link-border-width: 0 0 4px 0,
+  $header-link-border-style: solid,
+  $header-link-border-color: transparent,
+
+  // header current page
+  $header-link-current-text-color: #{semantic.$color-brand-secundary},
+  $header-link-current-border-width: 0 0 4px 0,
+  $header-link-current-border-style: solid,
+  $header-link-current-border-color: #{semantic.$color-brand-secundary},
+
+  // header content wrapper
+  $header-content-wrapper-flex-direction: row,
+  $header-content-wrapper-width: 100%,
 
   // list
   $list-padding: 0,
@@ -75,6 +144,5 @@ and spacing sets */
   $section-flex-direction: column,
 
   // helpers
-  $horizontal-gap: #{spacing.$spacing-100},
-  $vertical-gap: #{spacing.$spacing-100}
+  $horizontal-gap: #{spacing.$spacing-100}
 );
