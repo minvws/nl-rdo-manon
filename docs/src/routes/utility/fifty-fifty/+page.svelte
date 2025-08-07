@@ -192,7 +192,7 @@
           <p>
             Om stijlkeuzes door te voeren op alle titels gebruik de onderstaande variabelen. Hierbij
             kan ook verwezen worden naar stijlkeuzes in heading-sets als deze toegevoegd zijn aan
-            het project. Voor een voorbeeld zie: <a href="heading-base-set">heading-base-set</a>.
+            het project. Voor een voorbeeld zie: <a href="{base}/utility/heading-base-set">heading-base-set</a>.
           </p>
           <Code
             language="css"

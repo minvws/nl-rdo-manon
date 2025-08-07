@@ -51,7 +51,7 @@
 
         <p>Beschikbare styling sets voor layout zijn:</p>
         <ul>
-          <li><a href="layout-set">Layout-basisset</a></li>
+          <li><a href="{base}/utility/layout-set">Layout-basisset</a></li>
         </ul>
       </section>
 
