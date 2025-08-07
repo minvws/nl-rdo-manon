@@ -92,6 +92,13 @@
         />
       </section>
 
+      <section id="variables">
+        <h2>Instelbare variabelen</h2>
+        <p class="system-notification" role="group" aria-label="systeembericht">
+          Dit component heeft momenteel geen instelbare variabelen
+        </p>
+      </section>
+
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
         <a href="{base}/components/paragraph-test">Test- en voorbeelden-pagina</a>

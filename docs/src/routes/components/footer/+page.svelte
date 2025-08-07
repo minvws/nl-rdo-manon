@@ -104,7 +104,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="{base}/components/footer-two-thirds-one-third">Footer tweederde eenderde</a>
+        <a href="{base}/utility/two-thirds-one-third">Footer tweederde eenderde</a>
       </section>
     </div>
   </article>

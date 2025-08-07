@@ -99,10 +99,30 @@
       />
     </section>
 
-    <section id="related">
-      <h2>Gerelateerde pagina's</h2>
-      <a href="{base}/components/form-columns-test">Test- en voorbeelden-pagina</a>
-    </section>
+      <section id="variables">
+        <h2>Instelbare variabelen</h2>
+        <p>Dit element heeft zelf geen instelbare variabelen.</p>
+
+        <p>Bijbehorende elementen:</p>
+        <ul>
+          <li><a href="{base}/components/form">form</a></li>
+          <li>
+            Gewenste layout, bijvoorbeeld:
+            <ul>
+              <li><a href="{base}/utility/column-2">layout-column-2</a></li>
+              <li><a href="{base}/utility/column-3">layout-column-3</a></li>
+              <li><a href="{base}/utility/column-4">layout-column-4</a></li>
+            </ul>
+            Voor alle beschikbare opties zie
+            <a href="{base}/components#layout">Layout</a>.
+          </li>
+        </ul>
+      </section>
+
+      <section id="related">
+        <h2>Gerelateerde pagina's</h2>
+        <a href="{base}/components/form-columns-test">Test- en voorbeelden-pagina</a>
+      </section>
 
     <section id="issues">
       <h2>Bekende problemen</h2>

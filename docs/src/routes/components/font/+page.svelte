@@ -226,9 +226,6 @@ $base-font-family: "Naam van het font";
         <h3>Importeer component via npm</h3>
         <h4>CSS-voorbeeld:</h4>
         <h5>Lettertype doorvoeren op applicatieniveau.</h5>
-        <p>
-          Voor meer informatie zie: <a href="base">Stijlkeuzes op applicatie-niveau</a>.
-        </p>
         <Code
           language="css"
           code={`
@@ -239,7 +236,7 @@ $base-font-family: "Naam van het font";
         <h5>Lettertype doorvoeren op titels.</h5>
         <p>
           Voor meer informatie zie: <a href="headings">Titels</a> en
-          <a href="heading-base-set">Titel basisset</a>.
+          <a href="{base}/utility/heading-base-set">Titel basisset</a>.
         </p>
         <Code
           language="css"
@@ -261,7 +258,7 @@ $base-font-family: "Naam van het font";
         <p>Beschikbare styling sets voor headings zijn:</p>
 
         <ul>
-          <li><a href="heading-base-set">Titel basisset</a></li>
+          <li><a href="{base}/utility/heading-base-set">Titel basisset</a></li>
         </ul>
       </section>
     </div>
