@@ -101,7 +101,7 @@ and spacing sets */
   // footer
   $footer-align-items: center,
   $footer-justify-content: center,
-  $footer-gap: #{spacing.$spacing-100},
+  $footer-gap: #{spacing.$spacing-200},
   $footer-flex-direction: column,
   $footer-text-align: center,
   $footer-padding-top: #{spacing.$spacing-200},
@@ -109,6 +109,9 @@ and spacing sets */
   $footer-padding-bottom: #{spacing.$spacing-300},
   $footer-padding-left: #{spacing.$spacing-200},
   $footer-list-style: none,
+  $footer-list-flex-direction: row,
+  $footer-list-justify-content: center,
+  $footer-list-gap: #{spacing.$spacing-100},
 
   // header
   $header-background-color: #{color-scheme.$oc-gray-9},
