@@ -5,11 +5,24 @@
 @mixin notification {
   max-width: 100%;
   width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   @include theming.apply-from-theme(
     (
       background-color: theme.$notification-background-color,
       color: theme.$notification-text-color,
+      padding-top: theme.$notification-padding-top,
+      padding-right: theme.$notification-padding-right,
+      padding-bottom: theme.$notification-padding-bottom,
+      padding-left: theme.$notification-padding-left,
+      border-width: theme.$notification-border-width,
+      border-style: theme.$notification-border-style,
+      gap: theme.$notification-gap,
+      border-radius: theme.$notification-border-radius,
     )
   );
 

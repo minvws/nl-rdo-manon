@@ -204,6 +204,54 @@ and spacing sets */
   $navigation-link-text-decoration: none,
   $navigation-list-padding: 1rem,
 
+  // notification
+  $notification-padding-top: #{spacing.$spacing-100},
+  $notification-padding-right: #{spacing.$spacing-100},
+  $notification-padding-bottom: #{spacing.$spacing-100},
+  $notification-padding-left: #{spacing.$spacing-100},
+  $notification-border-style: solid,
+  $notification-border-width: 1px,
+  $notification-gap: #{spacing.$spacing-100},
+  $notification-border-radius: #{border-radii.$border-radius-m},
+
+  // notification type
+  $notification-span-font-weight: bold,
+
+  // notification error
+  $notification-error-background-color: #{color-scheme.$color-notification-error-subtle},
+  $notification-error-text-color: #{semantic.$color-text-default},
+  $notification-error-border-color: #{color-scheme.$color-notification-error-intense},
+  $notification-table-error-background-color: #{color-scheme.$color-notification-error-subtle},
+  $notification-table-error-text-color: #{semantic.$color-text-default},
+
+  // notification warning
+  $notification-warning-background-color: #{color-scheme.$color-notification-warning-subtle},
+  $notification-warning-text-color: #{semantic.$color-text-default},
+  $notification-warning-border-color: #{color-scheme.$color-notification-warning-intense},
+  $notification-table-warning-background-color: #{color-scheme.$color-notification-warning-subtle},
+  $notification-table-warning-text-color: #{semantic.$color-text-default},
+
+  // notification explanation
+  $notification-explanation-background-color: #{color-scheme.$color-notification-explanation-subtle},
+  $notification-explanation-text-color: #{semantic.$color-text-default},
+  $notification-explanation-border-color: #{color-scheme.$color-notification-explanation-intense},
+  $notification-table-explanation-background-color: #{color-scheme.$color-notification-explanation-subtle},
+  $notification-table-explanation-text-color: #{semantic.$color-text-default},
+
+  // notification confirmation
+  $notification-confirmation-background-color: #{color-scheme.$color-notification-confirmation-subtle},
+  $notification-confirmation-text-color: #{semantic.$color-text-default},
+  $notification-confirmation-border-color: #{color-scheme.$color-notification-confirmation-intense},
+  $notification-table-confirmation-background-color: #{color-scheme.$color-notification-confirmation-subtle},
+  $notification-table-confirmation-text-color: #{semantic.$color-text-default},
+
+  // notification system
+  $notification-system-background-color: #{color-scheme.$color-notification-system-subtle},
+  $notification-system-text-color: #{semantic.$color-text-default},
+  $notification-system-border-color: #{color-scheme.$color-notification-system-intense},
+  $notification-table-system-background-color: #{color-scheme.$color-notification-system-subtle},
+  $notification-table-system-text-color: #{semantic.$color-text-default},
+
   // section
   $section-background-color: #{color-scheme.$oc-white},
   $section-padding-top: #{spacing.$spacing-200},
