@@ -12,7 +12,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article id="button-base" class="visually-grouped">
+  <article id="button-base">
     <div>
       <section id="introduction">
         <h1>Knoppen testpagina</h1>
@@ -31,18 +31,6 @@
           language="html"
           code={`
 <button>Lorem ipsum</button>
-`}
-        />
-
-        <h3><code>button</code> disabled</h3>
-        <h4>Visueel voorbeeld:</h4>
-        <button disabled>Lorem ipsum</button>
-
-        <h4>HTML-voorbeeld:</h4>
-        <Code
-          language="html"
-          code={`
-<button disabled>Lorem ipsum</button>
 `}
         />
         <h4>States</h4>

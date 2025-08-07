@@ -1,0 +1,54 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+.hero {
+  display: flex;
+  width: 100%;
+  position: relative;
+  padding: 0;
+
+  @include theming.apply-from-theme(
+    (
+      min-height: theme.$hero-min-height,
+      height: theme.$hero-height,
+      max-height: theme.$hero-max-height,
+      background-color: theme.$hero-background-color,
+    )
+  );
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+
+    @include theming.apply-from-theme(
+      (
+        object-position: theme.$hero-image-object-position,
+      )
+    );
+    @include theming.apply-from-theme(
+      (
+        object-position: theme.$hero-image-object-position,
+      )
+    );
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include theming.apply-from-theme(
+      (
+        font-size: theme.$hero-title-font-size,
+        color: theme.$hero-title-text-color,
+      )
+    );
+  }
+}

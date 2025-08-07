@@ -26,7 +26,7 @@
       <li><a href={page.url.pathname}>Voorbeeld-link 4</a></li>
     </ul>
   </nav>
-  <article class="visually-grouped">
+  <article>
     <div>
       <h1>Lorem ipsum</h1>
       <p>Dolor sit amet conseqtetur adepicing elit</p>

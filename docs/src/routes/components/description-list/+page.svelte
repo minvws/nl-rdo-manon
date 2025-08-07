@@ -12,7 +12,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article class="visually-grouped">
+  <article>
     <div>
       <h1>Description list</h1>
 
@@ -60,7 +60,7 @@
         />
 
         <h3>Visuele weergave binnen formulier:</h3>
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <fieldset>
             <legend>Persoonsgegevens</legend>
 
@@ -106,7 +106,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <fieldset>
     <legend>Persoonsgegevens</legend>
 

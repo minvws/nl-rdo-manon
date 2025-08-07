@@ -63,7 +63,7 @@
       <li><a href="#requirements">Benodigdheden</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Bevestiging</h1>

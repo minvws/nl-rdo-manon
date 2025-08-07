@@ -35,18 +35,6 @@ nav:
 <a href="#" class="button">Lorem ipsum</a>
 ```
 
-### `button` uitgeschakeld
-
-#### Visuele weergave:
-
-<button disabled>Lorem ipsum</button>
-
-#### HTML-voorbeeld:
-
-```html
-<button disabled>Lorem ipsum</button>
-```
-
 ### `input type="button"`
 
 #### Visuele weergave:
@@ -57,18 +45,6 @@ nav:
 
 ```html
 <input type="button" value="Lorem ipsum">
-```
-
-### `input type="button"` uitgeschakeld
-
-#### Visuele weergave:
-
-<input type="button" value="Lorem ipsum" disabled />
-
-#### HTML-voorbeeld:
-
-```html
-<input type="button" value="Lorem ipsum" disabled>
 ```
 
 <h2 id="requirements">Bijbehorende bestanden</h2>

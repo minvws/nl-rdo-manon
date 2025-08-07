@@ -11,7 +11,7 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Invoerveld verplicht testpagina</h1>
@@ -53,7 +53,7 @@
           <button type="submit">Verzend</button>
         </form>
 
-        <form action="" method="post" class="horizontal-view">
+        <form action="" method="post" class="horizontal">
           <div>
             <label for="voorbeeld-input-required-3">Ipsum</label>
             <div>
@@ -73,7 +73,7 @@
         <Code
           language="html"
           code={`
-<form action="" method="post" class="horizontal-view">
+<form action="" method="post" class="horizontal">
   <div>
     <label for="voorbeeld-input-required-3">Ipsum</label>
     <div>

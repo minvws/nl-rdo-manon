@@ -21,7 +21,7 @@
       <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Nota bene</h1>
@@ -119,7 +119,7 @@
 
         <p>Bijbehorende elementen:</p>
         <ul>
-          <li><a href="{base}/components/form-base">form-base</a></li>
+          <li><a href="{base}/components/form">form</a></li>
         </ul>
       </section>
 

@@ -22,7 +22,7 @@
     </ul>
   </SideMenu>
 
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Artikel - <code>article</code></h1>
@@ -51,7 +51,7 @@
 
         <p>Beschikbare styling sets voor layout zijn:</p>
         <ul>
-          <li><a href="layout-set">Layout-basisset</a></li>
+          <li><a href="{base}/utility/layout-set">Layout-basisset</a></li>
         </ul>
       </section>
 
@@ -62,7 +62,7 @@
         <Code
           language="html"
           code={`
-<article class="visually-grouped">
+<article>
   <!-- Content -->
 </article>
 `}

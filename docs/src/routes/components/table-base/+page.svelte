@@ -27,13 +27,13 @@
       <li><a href="#requirements">Benodigde bestanden</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Tabel</h1>
       </section>
 
-      <section id="examples" class="visually-grouped">
+      <section id="examples">
         <h2>Aandachtspunten</h2>
         <p>
           Om tabellen correct weer te geven op smallere schermresoluties, denk hierbij aan mobiele

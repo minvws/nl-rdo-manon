@@ -14,20 +14,6 @@
   <section>
     <div>
       <h1>Variabelen</h1>
-      <p>
-        Manon maakt gebruik van CSS-variabelen voor het instellen van stijlkeuzes en Sass variabelen
-        voor het instellen van breekpunten.
-      </p>
-      <dl>
-        <div>
-          <dt>Voorbeeld CSS-variabele</dt>
-          <dd><code>--application-base-accent-color: hotpink;</code></dd>
-        </div>
-        <div>
-          <dt>Voorbeeld sass-variabele</dt>
-          <dd><code>$application-base-breakpoint-1: 24rem;</code></dd>
-        </div>
-      </dl>
 
       <h2>Opbouw variabelennamen</h2>
       <p>Variabelennamen zijn opgebouwd uit de onderstaande onderdelen</p>

@@ -22,7 +22,7 @@
     </ul>
   </SideMenu>
 
-  <article id="button-base" class="visually-grouped">
+  <article id="button-base">
     <div>
       <section id="introduction">
         <h1>Destructieve knop</h1>

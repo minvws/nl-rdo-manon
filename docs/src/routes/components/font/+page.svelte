@@ -21,7 +21,7 @@
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
-  <article class="visually-grouped">
+  <article>
     <div>
       <section id="introduction">
         <h1>Font</h1>
@@ -143,7 +143,7 @@
         <Code
           language="css"
           code={`
---application-base-font-family: "Naam van het font";
+$base-font-family: "Naam van het font";
 `}
         />
         <h4>HTML-Voorbeeld:</h4>
@@ -226,20 +226,17 @@
         <h3>Importeer component via npm</h3>
         <h4>CSS-voorbeeld:</h4>
         <h5>Lettertype doorvoeren op applicatieniveau.</h5>
-        <p>
-          Voor meer informatie zie: <a href="application-base">Stijlkeuzes op applicatie-niveau</a>.
-        </p>
         <Code
           language="css"
           code={`
-@use "@minvws/manon/application-base";
+@use "@minvws/manon/base";
 `}
         />
 
         <h5>Lettertype doorvoeren op titels.</h5>
         <p>
           Voor meer informatie zie: <a href="headings">Titels</a> en
-          <a href="heading-base-set">Titel basisset</a>.
+          <a href="{base}/utility/heading-base-set">Titel basisset</a>.
         </p>
         <Code
           language="css"
@@ -261,7 +258,7 @@
         <p>Beschikbare styling sets voor headings zijn:</p>
 
         <ul>
-          <li><a href="heading-base-set">Titel basisset</a></li>
+          <li><a href="{base}/utility/heading-base-set">Titel basisset</a></li>
         </ul>
       </section>
     </div>
