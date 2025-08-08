@@ -1,10 +1,9 @@
 <script module>
-  export const breadcrumb = "Componenten";
+  export const breadcrumb = "Components";
 </script>
 
 <script lang="ts">
   import { base } from "$app/paths";
-  import NavLink from "$lib/NavLink.svelte";
 </script>
 
 <svelte:head>
@@ -15,48 +14,50 @@
   <section id="introduction">
     <div>
       <h1>Componenten</h1>
-    </div>
-  </section>
-
-  <section id="base-styling">
-    <h2>Basisopmaak</h2>
-    <div class="column-2">
-      <nav aria-labelledby="layout-text-heading">
-        <h3 id="layout-text-heading">Tekst</h3>
-        <ul>
-          <li>
-            <strong>Titels</strong>
-            <ul>
-              <li><a href="{base}/components/headings">Titels</a></li>
-              <li><a href="{base}/utility/heading-base-set">Titel basisset</a></li>
-            </ul>
-          </li>
-          <li>
-            <strong>Tekstweergaven</strong>
-            <ul>
-              <li><a href="{base}/components/paragraph">Paragraaf</a></li>
-              <li><a href="{base}/components/emphasized">Benadrukte weergave</a></li>
-              <li><a href="{base}/components/de-emphasized">Subtielere weergave</a></li>
-              <li><a href="{base}/components/nota-bene">Nota bene</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+      <p>
+        Componenten zijn herbruikbare bouwstenen die gebruikt worden om de gebruikersinterface van
+        een webapplicatie te bouwen. Ze zijn ontworpen om consistentie en herbruikbaarheid te
+        bevorderen, en kunnen eenvoudig worden aangepast aan specifieke behoeften.
+      </p>
     </div>
   </section>
 
   <section id="layout">
     <h2>Layout</h2>
     <div class="column-2">
-      <nav aria-labelledby="layout-base">
-        <h3 id="layout-base">Layout opties</h3>
+      <nav aria-labelledby="page-layout-heading">
+        <h3 id="page-layout-heading">Page layout</h3>
         <ul>
-          <li><a href="{base}/components/main"><code>main</code></a></li>
-          <li><a href="{base}/components/section"><code>section</code></a></li>
-          <li><a href="{base}/components/article"><code>article</code></a></li>
-          <li><a href="{base}/components/div"><code>div</code></a></li>
-          <li><a href="{base}/components/layout-authentication">Authentication</a></li>
-          <li><a href="{base}/components/layout-form">layout-form</a></li>
+          <li><a href="{base}/components/layout/main">Main</a></li>
+          <li><a href="{base}/components/layout/section">Section</a></li>
+          <li><a href="{base}/components/layout/article">Article</a></li>
+          <li>
+            <a href="{base}/components/layout/article-content-wrapper">Article content wrapper</a>
+          </li>
+          <li><a href="{base}/components/layout/div">Div</a></li>
+          <li><a href="{base}/components/layout/div-content-wrapper">Div content wrapper</a></li>
+          <li><a href="{base}/components/layout/footer">Footer</a></li>
+          <li>
+            <a href="{base}/components/layout/layout-authentication">Layout authentication</a>
+          </li>
+          <li><a href="{base}/components/layout/layout-form">Layout form</a></li>
+          <li><a href="{base}/components/layout/layout-set">Layout set</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="typography-heading">
+        <h3 id="typography-heading">Typography</h3>
+        <ul>
+          <li><a href="{base}/components/layout/typography/body-text-set">Body text set</a></li>
+          <li><a href="{base}/components/layout/typography/de-emphasized">De-emphasized</a></li>
+          <li><a href="{base}/components/layout/typography/emphasized">Emphasized</a></li>
+          <li><a href="{base}/components/layout/typography/font">Font</a></li>
+          <li>
+            <a href="{base}/components/layout/typography/heading-base-set">Heading base set</a>
+          </li>
+          <li><a href="{base}/components/layout/typography/headings">Headings</a></li>
+          <li><a href="{base}/components/layout/typography/max-line-length">Max line length</a></li>
+          <li><a href="{base}/components/layout/typography/paragraph">Paragraph</a></li>
+          <li><a href="{base}/components/layout/typography/nota-bene">Nota bene</a></li>
         </ul>
       </nav>
     </div>
@@ -64,130 +65,46 @@
 
   <section id="components">
     <h2>Componenten</h2>
-
-    <div class="column-2">
-      <div>
-        <nav aria-labelledby="base-heading">
-          <h3 id="base-heading">Basis-componenten</h3>
-          <p>Componenten die direct aan html-elementen gerelateerd zijn.</p>
-
-          <ul>
-            <li><a href="{base}/components/button">Knoppen - <code>button</code></a></li>
-            <li><a href="{base}/components/footer"><code>footer</code></a></li>
-            <li><a href="{base}/components/forms">Formulieren - <code>form</code></a></li>
-            <li><a href="{base}/components/header-navigation">Header</a></li>
-            <li><a href="{base}/components/link">Link <code>a</code></a></li>
-            <li><a href="{base}/components/navigation">Navigatie - <code>nav</code></a></li>
-            <li><a href="{base}/components/table">Tabellen - <code>table</code></a></li>
-            <li>
-              Afbeeldingen - <code>img</code>
-              <ul>
-                <li><a href="{base}/components/logo">Logo</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="{base}/components/color-picker">Kleurselector</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div>
-        <nav aria-labelledby="other-components-heading" id="other-components">
-          <h3 id="other-components-heading">Overige componenten</h3>
-          <ul>
-            <li><a href="{base}/components/icons">Iconen</a></li>
-            <li><a href="{base}/components/tag">Tag</a></li>
-            <li><a href="{base}/components/skip-to-content">Ga direct naar inhoud-knop</a></li>
-          </ul>
-        </nav>
-
-        <nav aria-labelledby="notifications-heading">
-          <h4 id="notifications-heading">Notificaties</h4>
-          <ul>
-            <li>
-              <a href="{base}/components/notifications">Notificaties</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <div class="column-3">
+      <nav>
+        <ul>
+          <li><a href="{base}/components/components/accordion">Accordion</a></li>
+          <li><a href="{base}/components/components/breadcrumb">Breadcrumb</a></li>
+          <li><a href="{base}/components/components/button">Button</a></li>
+          <li><a href="{base}/components/components/card">Card</a></li>
+          <li><a href="{base}/components/components/code">Code & Code block</a></li>
+          <li><a href="{base}/components/components/collapsible">Collapsible</a></li>
+          <li><a href="{base}/components/components/collapsible-menu">Collapsible menu</a></li>
+          <li><a href="{base}/components/components/description-list">Description list</a></li>
+          <li><a href="{base}/components/components/filter">Filter</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li><a href="{base}/components/components/forms">Forms</a></li>
+          <li><a href="{base}/components/components/header-navigation">Header navigation</a></li>
+          <li><a href="{base}/components/components/icons">Icons</a></li>
+          <li><a href="{base}/components/components/image">Image</a></li>
+          <li><a href="{base}/components/components/hero">Hero</a></li>
+          <li><a href="{base}/components/components/language-selector">Language selector</a></li>
+          <li><a href="{base}/components/components/link">Link</a></li>
+          <li><a href="{base}/components/components/login-meta">Login Meta</a></li>
+          <li><a href="{base}/components/components/navigation">Navigation</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li><a href="{base}/components/components/notifications">Notifications</a></li>
+          <li><a href="{base}/components/components/pagination">Pagination</a></li>
+          <li><a href="{base}/components/components/sidemenu">Sidemenu</a></li>
+          <li><a href="{base}/components/components/skip-to-content">Skip to content</a></li>
+          <li><a href="{base}/components/components/table">Table</a></li>
+          <li><a href="{base}/components/components/tabs">Tabs</a></li>
+          <li><a href="{base}/components/components/tag">Tag</a></li>
+          <li><a href="{base}/components/components/tags">Tags</a></li>
+          <li><a href="{base}/components/components/tile">Tile</a></li>
+        </ul>
+      </nav>
     </div>
-  </section>
-
-  <section id="other">
-    <h2 id="other-heading">Overig</h2>
-    <p class="warning">
-      Let op: de documentatie over deze componenten is waarschijnlijk onvolledig of incorrect.
-    </p>
-    <p>
-      Dit zijn componenten die geïmplementeerd zijn in Manon, maar overbodig geworden of juist nog
-      niet (volledig) ondersteund worden door het <i>iCore Open</i>-thema.
-    </p>
-    <nav aria-labelledby="other-heading">
-      <ul>
-        <li>
-          <strong>Tekst</strong>
-          <ul>
-            <li><a href="{base}/components/font">Lettertype toevoegen</a></li>
-            <li><a href="{base}/components/body-text-set">Body text set</a></li>
-          </ul>
-        </li>
-        <li>
-          <strong>Kleuren</strong>
-          <ul><li><a href="{base}/components/branding-colors">Kleurensets</a></li></ul>
-        </li>
-        <li>
-          <strong>Toegankelijkheid</strong>
-          <ul>
-            <li>
-              <a href="{base}/components/max-line-length">Maximale regellengte</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>Basis-componenten</strong>
-          <ul>
-            <li>
-              <a href="{base}/components/description-list">Description list - <code>dl</code></a>
-            </li>
-            <li>
-              Afbeeldingen - <code>img</code>
-              <ul>
-                <li><a href="{base}/components/image-cover">Cover-afbeelding</a></li>
-                <li><a href="{base}/components/image-icon">Icoon-afbeelding</a></li>
-                <li><a href="{base}/components/image-round">Ronde afbeelding</a></li>
-                <li><a href="{base}/components/image-square">Vierkante afbeelding</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <strong>Overige componenten</strong>
-          <ul>
-            <li><a href="{base}/components/accordion">Accordeon</a></li>
-            <li><a href="{base}/components/filter">Filter</a></li>
-            <li><a href="{base}/components/login-meta">Ingelogd als</a></li>
-            <li><a href="{base}/components/collapsible">Inklapbaar component</a></li>
-            <li><a href="{base}/components/card">Kaart</a></li>
-            <li><a href="{base}/components/breadcrumb-bar">Kruimelpad - breadcrumb-bar</a></li>
-            <li><a href="{base}/components/pagination">Paginering</a></li>
-            <li><a href="{base}/components/language-selector">Taalselectie</a></li>
-            <li><a href="{base}/components/tabs">Tabbladen</a></li>
-            <li><a href="{base}/components/tiles">Tegelweergave</a></li>
-            <li><a href="{base}/components/sidemenu">Zijmenu</a></li>
-          </ul>
-        </li>
-
-        <li>
-          <strong>Notificaties</strong>
-          <ul>
-            <li>
-              <a href="{base}/components/message-counter">Notificatie-teller</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
   </section>
 </main>

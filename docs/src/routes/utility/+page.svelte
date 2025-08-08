@@ -15,6 +15,11 @@
   <section id="introduction">
     <div>
       <h1>Utility classes</h1>
+      <p>
+        Utility classes zijn kleine, herbruikbare CSS-klassen die specifieke stijlen toepassen op
+        elementen. Ze zijn ontworpen om snel en eenvoudig toe te passen, waardoor je meer controle
+        hebt over de opmaak van je HTML.
+      </p>
     </div>
   </section>
 

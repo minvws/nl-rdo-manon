@@ -3,10 +3,12 @@
   import xml from "highlight.js/lib/languages/xml";
   import css from "highlight.js/lib/languages/css";
   import scss from "highlight.js/lib/languages/scss";
+  import javascript from "highlight.js/lib/languages/javascript";
   import plaintext from "highlight.js/lib/languages/plaintext";
   hljs.registerLanguage("html", xml);
   hljs.registerLanguage("css", css);
   hljs.registerLanguage("scss", scss);
+  hljs.registerLanguage("javascript", javascript);
   // @ts-ignore: the "plaintext" language is has no `contains`, presumably intentionally
   hljs.registerLanguage("plaintext", plaintext);
 </script>
@@ -15,7 +17,7 @@
   import "highlight.js/styles/github.css";
 
   interface Props {
-    language?: "html" | "css" | "scss" | "plaintext";
+    language?: "html" | "css" | "scss" | "javascript" | "plaintext";
     code?: string;
   }
 
