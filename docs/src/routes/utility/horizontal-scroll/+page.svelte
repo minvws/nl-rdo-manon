@@ -349,7 +349,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="{base}/components/horizontal-scroll-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/utility/horizontal-scroll-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

@@ -1,24 +1,23 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
+@use "../functions/validators";
 
 form.help {
   position: relative;
 
-  @include theming.apply-from-theme(
-    (
-      padding-right: theme.$form-help-padding-right,
-    )
-  );
+  > div {
+    width: 100%;
+  }
 
-  div {
+  .help-container {
+    width: 100%;
     position: relative;
     padding: 0;
+    padding: theme.$form-help-container-padding;
   }
 
   > div,
   > fieldset {
-    position: relative;
-
     .help-button {
       display: flex;
       position: absolute;
@@ -28,10 +27,10 @@ form.help {
       min-height: 0;
       font-size: 0;
       box-sizing: border-box;
+      top: theme.$form-help-button-top;
 
       @include theming.apply-from-theme(
         (
-          top: theme.$form-help-button-top,
           right: theme.$form-help-button-right,
           padding-top: theme.$form-help-button-padding-top,
           padding-right: theme.$form-help-button-padding-right,
@@ -95,6 +94,24 @@ form.help {
     p.explanation.collapsed,
     div.explanation.collapsed {
       display: none;
+    }
+
+    * {
+      &:has(.help-button) {
+        @if validators.args-not-null(
+          theme.$form-help-button-height,
+          theme.$form-help-button-top
+        )
+        {
+          @include theming.apply-from-theme(
+            (
+              min-height: calc(
+                  theme.$form-help-button-height + theme.$form-help-button-top
+                ),
+            )
+          );
+        }
+      }
     }
   }
 

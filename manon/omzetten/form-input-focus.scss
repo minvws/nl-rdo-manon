@@ -1,9 +1,0 @@
-/*---------------------------------------------------------------*/
-/*------------------- form-input-focus.scss ---------------------*/
-/*---------------------------------------------------------------*/
-@use "form-input-focus-variables";
-
-input:focus {
-  outline-offset: var(--form-input-focus-outline-offset);
-  outline: var(--form-input-focus-outline);
-}

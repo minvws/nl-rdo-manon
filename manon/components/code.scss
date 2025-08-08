@@ -30,7 +30,6 @@ $breakpoint: 24rem !default;
 /* Code */
 code {
   @extend %code;
-
   @include theming.apply-from-theme(
     (
       font-size: theme.$code-font-size,

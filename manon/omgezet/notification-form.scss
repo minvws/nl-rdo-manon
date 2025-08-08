@@ -1,0 +1,113 @@
+/*---------------------------------------------------------------*/
+
+/*------------------- notification-form.scss --------------------*/
+
+/*---------------------------------------------------------------*/
+@use "notification-form-variables";
+
+form {
+  div.notification,
+  div.error,
+  div.warning,
+  div.confirmation,
+  div.explanation,
+  div.system {
+    gap: var(--notification-form-block-gap);
+    padding-top: var(--notification-form-block-padding-top);
+    padding-right: var(--notification-form-block-padding-right);
+    padding-bottom: var(--notification-form-block-padding-bottom);
+    padding-left: var(--notification-form-block-padding-left);
+
+    > span:first-of-type {
+      font-weight: var(--notification-form-span-font-weight);
+    }
+
+    &::before {
+      content: var(--notification-form-block-icon-before-content);
+    }
+
+    &::after {
+      content: var(--notification-form-block-icon-after-content);
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  > div {
+    p,
+    span {
+      /* Message types that come after fields */
+      &.error {
+        margin-top: var(--notification-form-fields-gap);
+      }
+
+      /* Message types that come before fields */
+      &.warning,
+      &.confirmation,
+      &.system,
+      &.explanation {
+        margin-bottom: var(--notification-form-fields-gap);
+      }
+
+      &::before {
+        font-family: var(--notification-form-fields-icon-font-family);
+        font-size: var(--notification-form-fields-icon-font-size);
+        padding-right: var(--notification-form-fields-icon-padding-right);
+        padding-left: var(--notification-form-fields-icon-padding-left);
+        color: var(--notification-form-fields-icon-text-color);
+        margin-right: var(--notification-form-fields-icon-margin-right);
+      }
+
+      &.error::before {
+        content: var(--notification-form-fields-error-icon);
+      }
+
+      &.warning::before {
+        content: var(--notification-form-fields-warning-icon);
+      }
+
+      &.explanation::before {
+        content: var(--notification-form-fields-explanation-icon);
+      }
+
+      &.confirmation::before {
+        content: var(--notification-form-fields-confirmation-icon);
+      }
+    }
+  }
+
+  textarea,
+  select,
+  input {
+    &.error,
+    &.explanation,
+    &.warning,
+    &.confirmation,
+    &.system {
+      border-width: var(--notification-form-fields-border-width);
+      border-style: var(--notification-form-fields-border-style);
+    }
+
+    &.error {
+      border-color: var(--notification-form-fields-error-border-color);
+    }
+
+    &.explanation {
+      border-color: var(--notification-form-fields-explanation-border-color);
+    }
+
+    &.warning {
+      border-color: var(--notification-form-fields-warning-border-color);
+    }
+
+    &.confirmation {
+      border-color: var(--notification-form-fields-confirmation-border-color);
+    }
+
+    &.system {
+      border-color: var(--notification-form-fields-system-border-color);
+    }
+  }
+}

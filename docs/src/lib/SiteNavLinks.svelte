@@ -6,7 +6,7 @@
   let props: HTMLAttributes<HTMLElement> = $props();
 </script>
 
-<ul {...props} class="horizontal">
+<ul {...props}>
   <li><NavLink href="{base}/">Home</NavLink></li>
   <li><NavLink href="{base}/getting-started">Aan de slag</NavLink></li>
   <li><NavLink href="{base}/components">Componenten</NavLink></li>

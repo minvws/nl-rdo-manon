@@ -46,7 +46,6 @@
           data-open-label="Dropdown menu"
           data-close-label="Sluit dropdown menu"
           data-media="(min-width: 100%)"
-          aria-label="Acties"
           class="collapsible dropdown"
         >
           <div class="collapsing-element">
@@ -66,7 +65,6 @@
 data-open-label="Dropdown menu"
 data-close-label="Sluit dropdown menu"
 data-media="(min-width: 100%)"
-aria-label="Acties"
 class="collapsible">
 
 <div class="collapsing-element">
@@ -88,7 +86,6 @@ class="collapsible">
             data-open-label="O"
             data-close-label="X"
             data-media="(min-width: 100%)"
-            aria-label="Acties"
             class="collapsible dropdown"
           >
             <div class="collapsing-element">
@@ -104,7 +101,6 @@ class="collapsible">
             data-open-label="Dropdown menu"
             data-close-label="Sluit dropdown menu"
             data-media="(min-width: 100%)"
-            aria-label="Acties"
             class="collapsible dropdown"
           >
             <div class="collapsing-element">
@@ -125,7 +121,6 @@ class="collapsible">
 data-open-label="Dropdown menu"
 data-close-label="Sluit dropdown menu"
 data-media="(min-width: 100%)"
-aria-label="Acties"
 class="collapsible">
 
 <div class="collapsing-element">
