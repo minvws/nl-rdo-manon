@@ -69,20 +69,20 @@ onderstaande tabel staan enkele veelvoorkomende voorbeelden.
   </table>
 </div>
 
-<h2 id="button-types">Soorten knoppen</h2>
+  <h2 id="button-types">Knop types</h2>
 
-### Ondersteund door het _iCore Open_ thema:
+  - [Primary](/components/button/button-base)
+  - [Secondary](/components/button-secondary)
+  - [Destructief](/components/button-destructive)
+  - [Ghost](/components/button-ghost)
+  - [Icoonknoppen](/components/button/icon)
+  - [Icoonknoppen zonder achtergrond](/components/button-icon-only)
+  - [Call to action button](/components/button/call-to-action)
+  - [Dropdown button](/components/button-dropdown)
+  - [Terug naar hoofdmenu](/components/button-to-top)
 
-- [Basisweergave](/components/button/button-base)
-- [Knoppen groeperen](/components/button/button-container)
-- [Call to action button](/components/button/call-to-action)
-- [Icoonknoppen](/components/button/icon)
-- [Icoonknoppen zonder achtergrond](/components/button-icon-only)
 
-### Overige soorten knoppen:
+  <h2 id="button-layout">Layout</h2>
 
-- [Dropdown button](/components/button-dropdown)
-- [Ghost button](/components/button-ghost)
-- [Secondary button](/components/button-secondary)
-- [Destructieve knop](/components/button-destructive)
-- [Terug naar hoofdmenu](/components/button-to-top)
+  - [Knoppen groeperen](/components/button/button-container)
+

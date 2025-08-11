@@ -1,0 +1,138 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+button,
+a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  &.secondary {
+    @include theming.apply-from-theme(
+      (
+        justify-content: theme.$button-secondary-justify-content,
+        align-items: center,
+        align-self: flex-start,
+        gap: theme.$button-secondary-gap,
+        background-color: theme.$button-secondary-background-color,
+        color: theme.$button-secondary-text-color,
+        font-family: theme.$button-secondary-font-family,
+        font-size: theme.$button-secondary-font-size,
+        font-weight: theme.$button-secondary-font-weight,
+        line-height: theme.$button-secondary-line-height,
+        text-decoration: theme.$button-secondary-text-decoration,
+        text-align: theme.$button-secondary-text-align,
+        padding-top: theme.$button-secondary-padding-top,
+        padding-right: theme.$button-secondary-padding-right,
+        padding-bottom: theme.$button-secondary-padding-bottom,
+        padding-left: theme.$button-secondary-padding-left,
+        min-width: theme.$button-secondary-min-width,
+        height: theme.$button-secondary-height,
+        min-height: theme.$button-secondary-min-height,
+        border-width: theme.$button-secondary-border-width,
+        border-style: theme.$button-secondary-border-style,
+        border-color: theme.$button-secondary-border-color,
+        border-radius: theme.$button-secondary-border-radius,
+        webkit-border-radius: theme.$button-secondary-webkit-border-radius,
+        webkit-appearance: theme.$button-secondary-webkit-appearance,
+        cursor: theme.$button-secondary-cursor,
+        overflow-wrap: theme.$button-secondary-overflow-wrap,
+        max-width: theme.$button-secondary-image-max-width,
+      )
+    );
+    margin: 0;
+    box-sizing: border-box;
+    width: auto;
+
+    &:hover,
+    &.hover {
+      @include theming.apply-from-theme(
+        (
+          background-color: theme.$button-secondary-hover-background-color,
+          color: theme.$button-secondary-hover-text-color,
+          border-color: theme.$button-secondary-hover-border-color,
+          border-width: theme.$button-secondary-hover-border-width,
+          border-style: theme.$button-secondary-hover-border-style,
+          border-radius: theme.$button-secondary-hover-border-radius,
+        )
+      );
+    }
+
+    &:active,
+    &.active {
+      @include theming.apply-from-theme(
+        (
+          background-color: theme.$button-secondary-active-background-color,
+          color: theme.$button-secondary-active-text-color,
+          border-style: theme.$button-secondary-active-border-style,
+          border-color: theme.$button-secondary-active-border-color,
+          border-width: theme.$button-secondary-active-border-width,
+          border-radius: theme.$button-secondary-active-border-radius,
+        )
+      );
+    }
+
+    &:focus,
+    &.focus {
+      @include theming.apply-from-theme(
+        (
+          border-style: theme.$button-secondary-focus-border-style,
+          border-color: theme.$button-secondary-focus-border-color,
+          border-width: theme.$button-secondary-focus-border-width,
+          border-radius: theme.$button-secondary-focus-border-radius,
+          background-color: theme.$button-secondary-focus-background-color,
+          color: theme.$button-secondary-focus-text-color,
+          outline: theme.$button-secondary-outline,
+          outline-offset: theme.$button-secondary-outline-offset,
+          outline-color: theme.$button-secondary-outline-color,
+          z-index: theme.$button-secondary-z-index,
+          box-shadow: theme.$button-secondary-box-shadow,
+        )
+      );
+
+      &:visited,
+      &.visited {
+        @include theming.apply-from-theme(
+          (
+            outline: theme.$button-secondary-outline,
+            outline-offset: theme.$button-secondary-outline-offset,
+            outline-color: theme.$button-secondary-outline-color,
+            z-index: theme.$button-secondary-z-index,
+            box-shadow: theme.$button-secondary-box-shadow,
+          )
+        );
+      }
+    }
+
+    > img {
+      max-width: theme.$button-secondary-image-max-width;
+    }
+
+    > * {
+      pointer-events: none;
+    }
+
+    @media (width >= #{theme.$button-secondary-breakpoint}) {
+      min-width: theme.$button-secondary-breakpoint-min-width;
+      display: theme.$button-secondary-breakpoint-display;
+    }
+  }
+}
+
+a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  display: flex;
+}
+
+a.button,
+a:visited.button {
+  &.secondary {
+    @include theming.apply-from-theme(
+      (
+        color: theme.$link-button-secondary-text-color,
+      )
+    );
+  }
+}
