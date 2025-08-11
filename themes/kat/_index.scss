@@ -60,6 +60,15 @@ and spacing sets */
   $button-destructive-hover-text-color: #{color-scheme.$white},
   $button-destructive-hover-border-color: #{color-scheme.$red-600},
 
+  // breadcrumb bar
+  $breadcrumb-bar-padding-top: #{spacing.$spacing-050},
+  $breadcrumb-bar-padding-right: #{spacing.$spacing-100},
+  $breadcrumb-bar-padding-bottom: #{spacing.$spacing-050},
+  $breadcrumb-bar-padding-left: #{spacing.$spacing-100},
+  $breadcrumb-bar-background-color: #{semantic.$color-brand-secundary-subtle},
+  $breadcrumb-bar-link-text-decoration: none,
+  $breadcrumb-bar-gap: #{spacing.$spacing-050},
+
   // code block
   $code-block-padding: #{spacing.$spacing-200},
   $code-block-background-color: #{semantic.$color-brand-secundary-subtle},
