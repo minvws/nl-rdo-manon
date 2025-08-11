@@ -19,3 +19,14 @@
 
   @return true;
 }
+
+// Check to see if any of the arguments used is filled
+@function any-args-not-null($args...) {
+  @each $arg in $args {
+    @if $arg != null {
+      @return true;
+    }
+  }
+
+  @return false;
+}
