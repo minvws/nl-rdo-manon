@@ -29,7 +29,7 @@ JavaScript initialiseren:
 
 <h2 id="examples">Voorbeelden</h2>
 
-### Context: `ul`
+### Voorbeeld: `ul`
 
 <ul class="accordion">
   <li>
@@ -117,7 +117,7 @@ JavaScript initialiseren:
 </ul>
 ```
 
-### Context: `div`
+### Voorbeeld: `div`
 
 <div class="accordion">
   <div>
@@ -205,7 +205,7 @@ JavaScript initialiseren:
 </div>
 ```
 
-### Context: `section`
+### Voorbeeld: `section`
 
 <section class="accordion">
   <div>

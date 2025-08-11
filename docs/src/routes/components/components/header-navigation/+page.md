@@ -1,43 +1,45 @@
 ---
-title: Header
-breadcrumb: Header
+title: Header Navigation
+breadcrumb: Header Navigation
 nav:
   - Introductie: "#introduction"
+  - Quick Start: "#quick-start"
   - Voorbeelden: "#examples"
-    - Alleen navigatie: "#example-only-navigation"
-    - Navigatie met content wrapper: "#example-with-content-wrapper"
-    - Navigatie met zoekveld: "#example-with-search"
-    - Navigatie en logo: "#example-with-logo"
-    - Navigatie met meerdere menu's: "#example-with-multiple-menus"
-    - Navigatie met formulier-knop: "#example-with-form-button"
-    - Navigatie met logo bovenaan: "#example-with-logo-above"
-  - Bijbehorende bestanden: "#requirements"
 ---
 
-<h1 id="introduction">Header</h1>
+<h1 id="introduction">Header Navigation</h1>
 
-De header-navigation wordt vaak gebruikt als extra navigatiepunt en om aan te
-geven aan de gebruiker dat het einde van de pagina bereikt is.
+De header-navigation component biedt een flexibele en toegankelijke
+navigatiebalk voor websites. Het ondersteunt verschillende configuraties, zoals
+een logo, zoekveld, en meerdere menu's. Deze component is ontworpen om te
+voldoen aan de toegankelijkheidsrichtlijnen en biedt een responsieve ervaring.
 
-## Benodigde stappen
+<h2 id="quick-start">Quick Start</h2>
 
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie:
-    [Bijbehorende bestanden](#requirements).
-2.  Voeg de benodigde HTML toe. Voor meer informatie zie:
-    [voorbeelden](#examples).
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/header-navigation";
+@use "@minvws/manon/header-navigation-content-wrapper";
+@use "@minvws/manon/header-navigation-link";
+@use "@minvws/manon/header-navigation-link-visited";
+@use "@minvws/manon/header-navigation-link-hover";
+@use "@minvws/manon/header-navigation-link-active";
+@use "@minvws/manon/header-navigation-collapsible";
+@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button";
+@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button-states";
+
+// Accessibility
+@use "@minvws/manon/skip-to-content";
+```
 
 <h2 id="examples">Voorbeelden</h2>
 
-<h3 id="example-only-navigation">Alleen navigatie</h3>
-
-<h4>Visueel voorbeeld</h4>
+### Voorbeeld: Alleen navigatie
 
 <div class="resize">
   <iframe src="/examples/header-navigation" title="Voorbeeld" height="240px"></iframe>
 </div>
-
-<h4>HTML-voorbeeld</h4>
 
 ```html
 <header>
@@ -63,9 +65,7 @@ geven aan de gebruiker dat het einde van de pagina bereikt is.
 </header>
 ```
 
-<h3 id="example-with-content-wrapper">Navigatie met content wrapper</h3>
-
-<h4>Visueel voorbeeld</h4>
+### Voorbeeld: Navigatie met content wrapper
 
 <div class="resize">
   <iframe
@@ -74,8 +74,6 @@ geven aan de gebruiker dat het einde van de pagina bereikt is.
     height="240px"
   ></iframe>
 </div>
-
-<h4>HTML-voorbeeld</h4>
 
 ```html
 <header>
@@ -103,9 +101,7 @@ geven aan de gebruiker dat het einde van de pagina bereikt is.
 </header>
 ```
 
-<h3 id="example-with-search">Navigatie met zoekveld</h3>
-
-<h4>Visueel voorbeeld</h4>
+### Voorbeeld: Navigatie met zoekveld
 
 <div class="resize">
   <iframe
@@ -114,8 +110,6 @@ geven aan de gebruiker dat het einde van de pagina bereikt is.
     height="240px"
   ></iframe>
 </div>
-
-<h4>HTML-voorbeeld</h4>
 
 ```html
 <header>
@@ -151,16 +145,12 @@ geven aan de gebruiker dat het einde van de pagina bereikt is.
 </header>
 ```
 
-<h3 id="example-with-logo">Navigatie en logo</h3>
-
-<h4>Visueel voorbeeld</h4>
+### Voorbeeld: Navigatie en logo
 
 <div class="resize">
   <iframe src="/examples/header-navigation-with-logo" title="Voorbeeld" height="240px"
   ></iframe>
 </div>
-
-<h4>HTML-voorbeeld</h4>
 
 ```html
 <header>
@@ -192,9 +182,7 @@ geven aan de gebruiker dat het einde van de pagina bereikt is.
 </header>
 ```
 
-<h3 id="example-with-multiple-menus">Navigatie met meerdere menu's</h3>
-
-<h4>Visueel voorbeeld</h4>
+### Voorbeeld: Navigatie met meerdere menu's
 
 <div class="resize">
   <iframe
@@ -203,8 +191,6 @@ geven aan de gebruiker dat het einde van de pagina bereikt is.
     height="240px"
   ></iframe>
 </div>
-
-<h4>HTML-voorbeeld</h4>
 
 ```html
 <header>
@@ -236,9 +222,7 @@ geven aan de gebruiker dat het einde van de pagina bereikt is.
 </header>
 ```
 
-<h3 id="example-with-form-button">Navigatie met formulier-knop</h3>
-
-<h4>Visueel voorbeeld</h4>
+### Voorbeeld: Navigatie met formulier-knop
 
 <div class="resize">
   <iframe
@@ -247,8 +231,6 @@ geven aan de gebruiker dat het einde van de pagina bereikt is.
     height="240px"
   ></iframe>
 </div>
-
-<h4>HTML-voorbeeld</h4>
 
 ```html
 <header>
@@ -292,9 +274,7 @@ geven aan de gebruiker dat het einde van de pagina bereikt is.
 </header>
 ```
 
-<h3 id="example-with-logo-above">Navigatie met logo bovenaan</h3>
-
-<h4>Visueel voorbeeld</h4>
+### Voorbeeld: Navigatie met logo bovenaan
 
 <div class="resize">
   <iframe
@@ -303,8 +283,6 @@ geven aan de gebruiker dat het einde van de pagina bereikt is.
     height="320px"
   ></iframe>
 </div>
-
-<h4>HTML-voorbeeld</h4>
 
 ```html
 <header>
@@ -336,34 +314,4 @@ geven aan de gebruiker dat het einde van de pagina bereikt is.
     </div>
   </nav>
 </header>
-```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-<p>
-  Voeg de (s)css-bestanden toe aan het project of importeer de bestanden. Hiervoor kunnen de
-  bestanden gebruikt worden uit beschikbare Manon-thema's. Of uit zelf gemaakte thema's.
-</p>
-<p>
-  Voor meer informatie over importeren en instellen van componenten. Zie:
-  <a href="/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
-</p>
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/header-navigation";
-@use "@minvws/manon/header-navigation-content-wrapper";
-@use "@minvws/manon/header-navigation-link";
-@use "@minvws/manon/header-navigation-link-visited";
-@use "@minvws/manon/header-navigation-link-hover";
-@use "@minvws/manon/header-navigation-link-active";
-@use "@minvws/manon/header-navigation-collapsible";
-@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button";
-@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button-states";
-
-// Accessibility
-@use "@minvws/manon/skip-to-content";
 ```
