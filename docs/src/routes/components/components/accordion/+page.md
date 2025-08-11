@@ -5,7 +5,6 @@ nav:
   - Introductie: "#introduction"
   - Quick Start: "#quick-start"
   - Voorbeelden: "#examples"
-  - Benodigde stappen: "#requirements"
 ---
 
 <h1 id="introduction">Accordeon</h1>
@@ -26,6 +25,38 @@ JavaScript initialiseren:
 ```javascript
 
 ```
+
+<h2 id="requirements">Benodigde stappen</h2>
+
+1.  Plaats een korte zichtbare tekst binnen een `button`. Bijvoorbeeld een
+    omschrijvende titel of een vraag. Deze tekst is zichtbaar als de accordeon
+    gesloten is. Zorg ervoor dat de gebruiker op basis van deze tekst kan
+    bepalen of de onderliggende informatie waardevol is.
+2.  Geef de `button` een unieke `id` en verwijs vanaf de `div` via een
+    `aria-labelledby` naar de`id` van de `button` ten behoeve van
+    toegankelijkheid.
+3.  Groepeer de verborgen content binnen een `div`.
+
+<div class="explanation" role="group" aria-label="Toelichting">
+  <span>Aandachtspunten</span>
+  <ul>
+    <li>
+      Standaard is het eerste onderdeel opengeklapt. Dit kan aangepast worden
+      middels het `aria-expanded`-attribuut van de `button`.
+    </li>
+    <li>
+      Voeg `aria-expanded="false"` toe aan de `button` van het eerste onderdeel
+      om te voorkomen dat het standaard opengeklapt is.
+    </li>
+    <li>
+      Voeg `aria-expanded="true"` toe aan de `button` van een ander onderdeel
+      om te zorgen dat dat onderdeel standaard opengeklapt is. Let op: dit
+      zorgt ervoor dat het eerste onderdeel niet meer standaard opengeklapt is.
+      Om te zorgen dat het eerste onderdeel óók standaard opengeklapt is, kan
+      je ook daar `aria-expanded="true"` toevoegen.
+    </li>
+</ul>
+</div>
 
 <h2 id="examples">Voorbeelden</h2>
 
@@ -292,35 +323,3 @@ JavaScript initialiseren:
   </div>
 </section>
 ```
-
-<h2 id="requirements">Benodigde stappen</h2>
-
-1.  Plaats een korte zichtbare tekst binnen een `button`. Bijvoorbeeld een
-    omschrijvende titel of een vraag. Deze tekst is zichtbaar als de accordeon
-    gesloten is. Zorg ervoor dat de gebruiker op basis van deze tekst kan
-    bepalen of de onderliggende informatie waardevol is.
-2.  Geef de `button` een unieke `id` en verwijs vanaf de `div` via een
-    `aria-labelledby` naar de`id` van de `button` ten behoeve van
-    toegankelijkheid.
-3.  Groepeer de verborgen content binnen een `div`.
-
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Aandachtspunten</span>
-  <ul>
-    <li>
-      Standaard is het eerste onderdeel opengeklapt. Dit kan aangepast worden
-      middels het `aria-expanded`-attribuut van de `button`.
-    </li>
-    <li>
-      Voeg `aria-expanded="false"` toe aan de `button` van het eerste onderdeel
-      om te voorkomen dat het standaard opengeklapt is.
-    </li>
-    <li>
-      Voeg `aria-expanded="true"` toe aan de `button` van een ander onderdeel
-      om te zorgen dat dat onderdeel standaard opengeklapt is. Let op: dit
-      zorgt ervoor dat het eerste onderdeel niet meer standaard opengeklapt is.
-      Om te zorgen dat het eerste onderdeel óók standaard opengeklapt is, kan
-      je ook daar `aria-expanded="true"` toevoegen.
-    </li>
-</ul>
-</div>
