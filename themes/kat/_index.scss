@@ -22,101 +22,101 @@ and spacing sets */
 /* Component variables */
 @use "@minvws/manon/variables" with (
   // base
-  $base-background-color: #{semantic.$base-background-color},
+  $base-background-color: semantic.$base-background-color,
   $base-font-size: 1rem,
   $base-font-weight: 300,
 
   // avatar
   $avatar-font-weight: bold,
   $avatar-border-radius: 50%,
-  $avatar-background-color: #{semantic.$color-brand-primary},
+  $avatar-background-color: semantic.$color-brand-primary,
 
   // Hover
-  $avatar-hover-background-color: #{semantic.$color-brand-primary-muted},
+  $avatar-hover-background-color: semantic.$color-brand-primary-muted,
 
   // button
-  $button-text-color: #{semantic.$color-text-default},
-  $button-background-color: #{semantic.$color-brand-primary},
+  $button-text-color: semantic.$color-text-default,
+  $button-background-color: semantic.$color-brand-primary,
   $button-border-width: 0,
-  $button-border-color: #{semantic.$color-brand-primary},
-  $button-padding-top: #{spacing.$spacing-075},
-  $button-padding-right: #{spacing.$spacing-100},
-  $button-padding-bottom: #{spacing.$spacing-075},
-  $button-padding-left: #{spacing.$spacing-100},
-  $button-border-radius: #{border-radii.$border-radius-l},
+  $button-border-color: semantic.$color-brand-primary,
+  $button-padding-top: spacing.$spacing-075,
+  $button-padding-right: spacing.$spacing-100,
+  $button-padding-bottom: spacing.$spacing-075,
+  $button-padding-left: spacing.$spacing-100,
+  $button-border-radius: border-radii.$border-radius-l,
 
   // button hover
-  $button-hover-background-color: #{color-scheme.$yellow-300},
-  $button-hover-text-color: #{color-scheme.$grey-900},
-  $button-hover-border-color: #{color-scheme.$yellow-300},
+  $button-hover-background-color: color-scheme.$yellow-300,
+  $button-hover-text-color: color-scheme.$grey-900,
+  $button-hover-border-color: color-scheme.$yellow-300,
 
   // button destructive
-  $button-destructive-background-color: #{semantic.$color-destructive-default},
-  $button-destructive-text-color: #{color-scheme.$white},
-  $button-destructive-border-color: #{semantic.$color-destructive-default},
+  $button-destructive-background-color: semantic.$color-destructive-default,
+  $button-destructive-text-color: color-scheme.$white,
+  $button-destructive-border-color: semantic.$color-destructive-default,
 
   // button destructive hover
-  $button-destructive-hover-background-color: #{color-scheme.$red-600},
-  $button-destructive-hover-text-color: #{color-scheme.$white},
-  $button-destructive-hover-border-color: #{color-scheme.$red-600},
+  $button-destructive-hover-background-color: color-scheme.$red-600,
+  $button-destructive-hover-text-color: color-scheme.$white,
+  $button-destructive-hover-border-color: color-scheme.$red-600,
 
   // breadcrumb bar
-  $breadcrumb-bar-padding-top: #{spacing.$spacing-050},
-  $breadcrumb-bar-padding-right: #{spacing.$spacing-100},
-  $breadcrumb-bar-padding-bottom: #{spacing.$spacing-050},
-  $breadcrumb-bar-padding-left: #{spacing.$spacing-100},
-  $breadcrumb-bar-background-color: #{semantic.$color-brand-secundary-subtle},
+  $breadcrumb-bar-padding-top: spacing.$spacing-050,
+  $breadcrumb-bar-padding-right: spacing.$spacing-100,
+  $breadcrumb-bar-padding-bottom: spacing.$spacing-050,
+  $breadcrumb-bar-padding-left: spacing.$spacing-100,
+  $breadcrumb-bar-background-color: semantic.$color-brand-secundary-subtle,
   $breadcrumb-bar-link-text-decoration: none,
-  $breadcrumb-bar-gap: #{spacing.$spacing-050},
+  $breadcrumb-bar-gap: spacing.$spacing-050,
 
   // code block
-  $code-block-padding: #{spacing.$spacing-200},
-  $code-block-background-color: #{semantic.$color-brand-secundary-subtle},
-  $code-block-border-radius: #{border-radii.$border-radius-s},
+  $code-block-padding: spacing.$spacing-200,
+  $code-block-background-color: semantic.$color-brand-secundary-subtle,
+  $code-block-border-radius: border-radii.$border-radius-s,
 
   // footer
-  $footer-background-color: #{color-scheme.$white},
-  $footer-text-color: #{semantic.$color-text-default},
-  $footer-padding-top: #{spacing.$spacing-200},
-  $footer-padding-right: #{spacing.$spacing-300},
-  $footer-padding-bottom: #{spacing.$spacing-200},
-  $footer-padding-left: #{spacing.$spacing-300},
+  $footer-background-color: color-scheme.$white,
+  $footer-text-color: semantic.$color-text-default,
+  $footer-padding-top: spacing.$spacing-200,
+  $footer-padding-right: spacing.$spacing-300,
+  $footer-padding-bottom: spacing.$spacing-200,
+  $footer-padding-left: spacing.$spacing-300,
   $footer-list-style: none,
-  $footer-gap: #{spacing.$spacing-100},
+  $footer-gap: spacing.$spacing-100,
   $footer-flex-wrap: wrap,
   $footer-justify-content: space-between,
 
   // form
   $form-align-items: flex-start,
-  $form-text-color: #{semantic.$color-text-default},
-  $form-gap: #{spacing.$spacing-200},
+  $form-text-color: semantic.$color-text-default,
+  $form-gap: spacing.$spacing-200,
   $form-max-width: 40rem,
 
   // form group
-  $form-group-gap: #{spacing.$spacing-050},
+  $form-group-gap: spacing.$spacing-050,
 
   // form input
-  $form-input-padding-top: #{spacing.$spacing-025},
-  $form-input-padding-right: #{spacing.$spacing-075},
-  $form-input-padding-bottom: #{spacing.$spacing-025},
-  $form-input-padding-left: #{spacing.$spacing-075},
+  $form-input-padding-top: spacing.$spacing-025,
+  $form-input-padding-right: spacing.$spacing-075,
+  $form-input-padding-bottom: spacing.$spacing-025,
+  $form-input-padding-left: spacing.$spacing-075,
   $form-input-border-width: 1px,
   $form-input-border-style: solid,
-  $form-input-border-color: #{color-scheme.$grey-500},
-  $form-input-border-radius: #{border-radii.$border-radius-s},
+  $form-input-border-color: color-scheme.$grey-500,
+  $form-input-border-radius: border-radii.$border-radius-s,
   $form-input-min-height: 3rem,
 
   // header
-  $header-background-color: #{color-scheme.$white},
+  $header-background-color: color-scheme.$white,
   $header-font-weight: bold,
   $header-min-height: 3.5rem,
-  $header-color: #{semantic.$color-text-default},
-  $header-padding-right: #{spacing.$spacing-300},
-  $header-padding-left: #{spacing.$spacing-300},
+  $header-color: semantic.$color-text-default,
+  $header-padding-right: spacing.$spacing-300,
+  $header-padding-left: spacing.$spacing-300,
 
   // header nav
   $header-navigation-width: 100%,
-  $header-navigation-gap: #{spacing.$spacing-200},
+  $header-navigation-gap: spacing.$spacing-200,
   $header-navigation-justify-content: space-between,
 
   // header list item
@@ -124,17 +124,17 @@ and spacing sets */
 
   // header list item link
   $header-link-align-items: center,
-  $header-link-padding: #{spacing.$spacing-100},
+  $header-link-padding: spacing.$spacing-100,
   $header-link-text-decoration: none,
   $header-link-border-width: 0 0 4px 0,
   $header-link-border-style: solid,
   $header-link-border-color: transparent,
 
   // header current page
-  $header-link-current-text-color: #{semantic.$color-brand-secundary},
+  $header-link-current-text-color: semantic.$color-brand-secundary,
   $header-link-current-border-width: 0 0 4px 0,
   $header-link-current-border-style: solid,
-  $header-link-current-border-color: #{semantic.$color-brand-secundary},
+  $header-link-current-border-color: semantic.$color-brand-secundary,
 
   // header content wrapper
   $header-content-wrapper-flex-direction: row,
@@ -144,14 +144,14 @@ and spacing sets */
   $list-padding: 0,
 
   // section
-  $section-padding-top: #{spacing.$spacing-100},
-  $section-padding-right: #{spacing.$spacing-100},
-  $section-padding-bottom: #{spacing.$spacing-100},
-  $section-padding-left: #{spacing.$spacing-100},
+  $section-padding-top: spacing.$spacing-100,
+  $section-padding-right: spacing.$spacing-100,
+  $section-padding-bottom: spacing.$spacing-100,
+  $section-padding-left: spacing.$spacing-100,
   $section-max-width: 90rem,
-  $section-gap: #{spacing.$spacing-300},
+  $section-gap: spacing.$spacing-300,
   $section-flex-direction: column,
 
   // helpers
-  $horizontal-gap: #{spacing.$spacing-100}
+  $horizontal-gap: spacing.$spacing-100
 );
