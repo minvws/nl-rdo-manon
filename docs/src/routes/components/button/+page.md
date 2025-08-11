@@ -34,10 +34,10 @@ onderstaande tabel staan enkele veelvoorkomende voorbeelden.
     <caption> Overzicht van type buttons met situatieschetsen </caption>
     <thead>
       <tr>
-        <td>Situatie</td>
-        <td>&lt;button&gt;</td>
-        <td>&lt;input&gt;</td>
-        <td>&lt;a&gt;</td>
+        <th>Situatie</th>
+        <th>&lt;button&gt;</th>
+        <th>&lt;input&gt;</th>
+        <th>&lt;a&gt;</th>
       </tr>
     </thead>
     <tbody>

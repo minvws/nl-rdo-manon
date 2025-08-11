@@ -38,6 +38,7 @@ and spacing sets */
   $base-background-color: semantic.$base-background-color,
   $base-font-size: 1rem,
   $base-font-weight: 300,
+  $base-font-family: semantic.$font-family,
 
   // button
   $button-text-color: semantic.$color-text-default,
@@ -93,7 +94,18 @@ and spacing sets */
   $expando-rows-border-style: solid,
   $expando-rows-border-color: color-scheme.$violet-200,
 
-  // fornm combined field
+  // emphasized
+  $emphasized-font-size: body-text.$body-text-l,
+  $emphasized-font-weight: font-weight.$font-weight-medium,
+  $emphasized-line-height: line-height.$line-height-l,
+
+  // de-emphasized
+  $de-emphasized-font-size: body-text.$body-text-s,
+  $de-emphasized-font-weight: font-weight.$font-weight-regular,
+  $de-emphasized-line-height: line-height.$line-height-s,
+  $de-emphasized-text-color: color-scheme.$grey-700,
+
+  // form combined field
   $form-combined-field-input-border-radius: #{border-radii.$border-radius-m} 0 0
     #{border-radii.$border-radius-m},
   $form-combined-field-button-border-radius: 0 #{border-radii.$border-radius-m} #{border-radii.$border-radius-m}
@@ -142,6 +154,18 @@ and spacing sets */
   $form-input-border-radius: border-radii.$border-radius-s,
   $form-input-min-height: 3rem,
 
+  // headings
+  $h1-font-family: semantic.$font-family-secondary,
+  $h1-font-size: heading.$heading-xxl,
+  $h2-font-family: semantic.$font-family-secondary,
+  $h2-font-size: heading.$heading-xl,
+  $h3-font-family: semantic.$font-family-secondary,
+  $h3-font-size: heading.$heading-l,
+  $h4-font-family: semantic.$font-family-secondary,
+  $h4-font-size: heading.$heading-m,
+  $h5-font-size: heading.$heading-s,
+  $h6-font-size: heading.$heading-xs,
+
   // header
   $header-background-color: color-scheme.$white,
   $header-font-weight: bold,
@@ -165,6 +189,7 @@ and spacing sets */
   $header-link-border-width: 0 0 4px 0,
   $header-link-border-style: solid,
   $header-link-border-color: transparent,
+  $header-link-min-height: 100%,
 
   // header current page
   $header-link-current-text-color: semantic.$color-brand-secondary,
@@ -298,6 +323,8 @@ and spacing sets */
 
   // table caption
   $table-caption-text-align: left,
+  $table-caption-text-color: color-scheme.$grey-700,
+  $table-caption-font-size: body-text.$body-text-s,
 
   // helpers
   $horizontal-gap: spacing.$spacing-100
