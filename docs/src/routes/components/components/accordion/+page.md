@@ -6,7 +6,6 @@ nav:
   - Quick Start: "#quick-start"
   - Voorbeelden: "#examples"
   - Benodigde stappen: "#requirements"
-  - Aandachtspunten: "#important"
 ---
 
 <h1 id="introduction">Accordeon</h1>
@@ -16,13 +15,13 @@ openklappen om meer informatie te tonen.
 
 <h2 id="quick-start">Quick Start</h2>
 
-### SCSS importeren:
+SCSS importeren:
 
 ```scss
 @use "@minvws/manon/accordion";
 ```
 
-### JavaScript initialiseren:
+JavaScript initialiseren:
 
 ```javascript
 
@@ -296,28 +295,32 @@ openklappen om meer informatie te tonen.
 
 <h2 id="requirements">Benodigde stappen</h2>
 
-1.  Voeg de benodigde bestanden toe aan het project.
-    - Voor een overzicht van de benodigde en optionele bestanden zie:
-      [Bijbehorende bestanden](#requirements).
-    - Voeg het bijbehorende Javascript-bestand toe aan het project. Voor meer
-      informatie zie: [JavaScript toevoegen](/documentation/add-js).
-2.  Plaats een korte zichtbare tekst binnen een `button`. Bijvoorbeeld een
+1.  Plaats een korte zichtbare tekst binnen een `button`. Bijvoorbeeld een
     omschrijvende titel of een vraag. Deze tekst is zichtbaar als de accordeon
     gesloten is. Zorg ervoor dat de gebruiker op basis van deze tekst kan
     bepalen of de onderliggende informatie waardevol is.
-3.  Geef de `button` een unieke `id` en verwijs vanaf de `div` via een
+2.  Geef de `button` een unieke `id` en verwijs vanaf de `div` via een
     `aria-labelledby` naar de`id` van de `button` ten behoeve van
     toegankelijkheid.
-4.  Groepeer de verborgen content binnen een `div`.
+3.  Groepeer de verborgen content binnen een `div`.
 
-<h2 id="important">Aandachtspunten</h2>
-
-- Standaard is het eerste onderdeel opengeklapt. Dit kan aangepast worden
-  middels het `aria-expanded`-attribuut van de `button`.
-  - Voeg `aria-expanded="false"` toe aan de `button` van het eerste onderdeel om
-    te voorkomen dat het standaard opengeklapt is.
-  - Voeg `aria-expanded="true"` toe aan de `button` van een ander onderdeel om
-    te zorgen dat dat onderdeel standaard opengeklapt is. Let op: dit zorgt
-    ervoor dat het eerste onderdeel niet meer standaard opengeklapt is. Om te
-    zorgen dat het eerste onderdeel óók standaard opengeklapt is, kan je ook
-    daar `aria-expanded="true"` toevoegen.
+<div class="explanation" role="group" aria-label="Toelichting">
+  <span>Aandachtspunten</span>
+  <ul>
+    <li>
+      Standaard is het eerste onderdeel opengeklapt. Dit kan aangepast worden
+      middels het `aria-expanded`-attribuut van de `button`.
+    </li>
+    <li>
+      Voeg `aria-expanded="false"` toe aan de `button` van het eerste onderdeel
+      om te voorkomen dat het standaard opengeklapt is.
+    </li>
+    <li>
+      Voeg `aria-expanded="true"` toe aan de `button` van een ander onderdeel
+      om te zorgen dat dat onderdeel standaard opengeklapt is. Let op: dit
+      zorgt ervoor dat het eerste onderdeel niet meer standaard opengeklapt is.
+      Om te zorgen dat het eerste onderdeel óók standaard opengeklapt is, kan
+      je ook daar `aria-expanded="true"` toevoegen.
+    </li>
+</ul>
+</div>
