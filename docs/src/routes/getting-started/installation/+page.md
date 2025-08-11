@@ -70,7 +70,7 @@ Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
    framework nodig hebt.
 
    ```scss
-   // Example of importing a single component
+   // Voorbeeld: Importeer de button component
    @use "@minvws/manon/components/button";
    ```
 
@@ -79,13 +79,14 @@ Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
    elk component vind je een voorbeeld van hoe je deze kunt importeren en
    gebruiken.
 
-   Importeer de componenten vòòr het importeren van de thema's, zodat je de
-   componenten kunt gebruiken met de juiste styling. Bijvoorbeeld:
+   Importeer de componenten ná het importeren van het thema, zodat je de
+   componenten kunt gebruiken met de juiste styling. De import volgorde is
+   bijvoorbeeld dan als volgt:
 
    ```scss
    @use "@minvws/manon/application-base";
-   @use "@minvws/manon/components/button";
    @use "@minvws/manon-themes/icore-open";
+   @use "@minvws/manon/components/button";
    ```
 
 ## Fonts

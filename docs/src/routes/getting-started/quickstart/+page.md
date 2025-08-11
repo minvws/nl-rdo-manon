@@ -33,13 +33,14 @@ In je hoofd Sass-bestand kun je het Manon-framework en een thema naar keuze
 importeren.
 
 ```scss
-// Importeer het Manon-framework en de bijbehorende componenten
+// 1. Importeer het Manon-framework en de bijbehorende componenten
 @use "@minvws/manon/application-base";
 
-// Je kunt hier ook specifieke componenten importeren indien nodig::
-
-// Importeer het iCore Open-thema
+// 2. Import een thema naar keuze. Hier gebruiken we het iCore Open thema als voorbeeld.
 @use "@minvws/manon-themes/icore-open";
+
+// 3. Je kunt hier ook specifieke componenten importeren indien nodig:
+@use "@minvws/manon/components/button";
 ```
 
 ## Gebruik
