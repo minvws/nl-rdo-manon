@@ -134,6 +134,9 @@ and spacing sets */
   // list
   $list-padding: 0,
 
+  // Nav
+  $navigation-link-text-decoration: none,
+
   // section
   $section-padding-top: #{spacing.$spacing-100},
   $section-padding-right: #{spacing.$spacing-100},
@@ -142,6 +145,17 @@ and spacing sets */
   $section-max-width: 90rem,
   $section-gap: #{spacing.$spacing-300},
   $section-flex-direction: column,
+
+  // sidemenu
+  $sidemenu-main-gap: #{spacing.$spacing-400},
+  $sidemenu-nav-width: 20rem,
+  $sidemenu-nav-padding-top: #{spacing.$spacing-100},
+  $sidemenu-nav-padding-right: #{spacing.$spacing-200},
+  $sidemenu-nav-padding-bottom: #{spacing.$spacing-100},
+  $sidemenu-nav-padding-left: #{spacing.$spacing-200},
+  $sidemenu-nav-border-width: 0 1px 0 0,
+  $sidemenu-nav-border-style: solid,
+  $sidemenu-nav-border-color: #{color-scheme.$grey-200},
 
   // helpers
   $horizontal-gap: #{spacing.$spacing-100}
