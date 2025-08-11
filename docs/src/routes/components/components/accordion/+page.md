@@ -3,7 +3,7 @@ title: Accordeon
 breadcrumb: Accordeon
 nav:
   - Introductie: "#introduction"
-  - Quick Start: "#quick-start"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
 ---
 
@@ -12,7 +12,7 @@ nav:
 Een accordeon biedt een verticale keuzelijst die je per onderdeel kunt
 openklappen om meer informatie te tonen.
 
-<h2 id="quick-start">Quick Start</h2>
+<h2 id="quick-start">Snelstart</h2>
 
 SCSS importeren:
 
@@ -26,7 +26,7 @@ JavaScript initialiseren:
 
 ```
 
-<h2 id="requirements">Benodigde stappen</h2>
+### Benodigde stappen
 
 1.  Plaats een korte zichtbare tekst binnen een `button`. Bijvoorbeeld een
     omschrijvende titel of een vraag. Deze tekst is zichtbaar als de accordeon

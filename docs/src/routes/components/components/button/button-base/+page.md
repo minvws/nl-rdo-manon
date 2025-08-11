@@ -2,61 +2,43 @@
 title: Knoppen (basisweergave)
 breadcrumb: Basisweergave
 nav:
+  - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
-# Knoppen (basisweergave)
+<h1 id="introduction">Knoppen (basisweergave)</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/button";
+```
 
 <h2 id="examples">Voorbeelden</h2>
 
-### `button`
-
-#### Visuele weergave:
+### Voorbeeld: `button`
 
 <button>Lorem ipsum</button>
-
-#### HTML-voorbeeld:
 
 ```html
 <button>Lorem ipsum</button>
 ```
 
-### Link als button: `a`
-
-#### Visuele weergave:
+### Voorbeeld: Link als button: `a`
 
 <a href="button-base" class="button">Lorem ipsum</a>
-
-#### HTML-voorbeeld:
 
 ```html
 <a href="#" class="button">Lorem ipsum</a>
 ```
 
-### `input type="button"`
-
-#### Visuele weergave:
+### Voorbeeld: `input type="button"`
 
 <input type="button" value="Lorem ipsum" />
 
-#### HTML-voorbeeld:
-
 ```html
-<input type="button" value="Lorem ipsum">
+<input type="button" value="Lorem ipsum" />
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Zie voor meer informatie over importeren en instellen van componenten [Componenten gebruiken en styling toevoegen](/documentation/import-styling).
-
-### Import via npm-package
-
-```scss
-@use "@minvws/manon/button-base";
-```
-
-<h2 id="related">Gerelateerde pagina's</h2>
-
-- [Test- en voorbeelden-pagina](/components/button-test)

@@ -1,64 +1,42 @@
 ---
 title: Call to action button
 nav:
+  - Introductie: "#introduction"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
-# Call to action button
+<h1 id="introduction">Call to action button</h1>
 
-<h2 id="examples">Voorbeelden</h2>
+<h2 id="quickstart">Snelstart</h2>
 
-### `<button>`
-
-#### Visuele weergave
-
-<button class="cta">Lorem ipsum</button>
-
-#### HTML-voorbeeld
-
-```html
-<button class="cta">Lorem ipsum</button>
-```
-
-### `<input type="button">`
-
-#### Visuele weergave
-
-<input type="button" value="Lorem ipsum" class="cta" />
-
-#### HTML-voorbeeld
-
-```html
-<input type="button" value="Lorem ipsum" class="cta" />
-```
-
-### `<input type="button" disabled>`
-
-#### Visuele weergave
-
-<input type="button" value="Lorem ipsum" class="cta" disabled />
-
-#### HTML-voorbeeld
-
-```html
-<input type="button" value="Lorem ipsum" class="cta" disabled />
-```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Zie voor meer informatie over het importeren en instellen van componenten:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling).
-
-### Importeer component via npm
-
-#### SCSS-voorbeeld
+SCSS importeren:
 
 ```scss
 @use "@minvws/manon/button-cta";
 ```
 
-<h2 id="related">Gerelateerde pagina's</h2>
+<h2 id="examples">Voorbeelden</h2>
 
-[Test- en voorbeelden-pagina](/components/button-call-to-action-test)
+### Voorbeeld: `<button>`
+
+<button class="cta">Lorem ipsum</button>
+
+```html
+<button class="cta">Lorem ipsum</button>
+```
+
+### Voorbeeld: `<input type="button">`
+
+<input type="button" value="Lorem ipsum" class="cta" />
+
+```html
+<input type="button" value="Lorem ipsum" class="cta" />
+```
+
+### Voorbeeld: `<input type="button" disabled>`
+
+<input type="button" value="Lorem ipsum" class="cta" disabled />
+
+```html
+<input type="button" value="Lorem ipsum" class="cta" disabled />
+```
