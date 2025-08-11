@@ -1,4 +1,8 @@
-// icore open theme styling
+/* Theme configuration */
+@forward "config";
+
+/* Fonts (@font-faces) */
+@use "fonts";
 
 /* Core variables */
 /* These are core sets like color schemes, fonts
