@@ -83,5 +83,6 @@ onderstaande tabel staan enkele veelvoorkomende voorbeelden.
 
 - [Dropdown button](/components/button-dropdown)
 - [Ghost button](/components/button-ghost)
+- [Secondary button](/components/button-secondary)
 - [Destructieve knop](/components/button-destructive)
 - [Terug naar hoofdmenu](/components/button-to-top)

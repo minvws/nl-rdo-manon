@@ -44,6 +44,8 @@ and spacing sets */
   $button-padding-bottom: #{spacing.$spacing-075},
   $button-padding-left: #{spacing.$spacing-100},
   $button-border-radius: #{border-radii.$border-radius-l},
+  $button-font-weight: #{font-weight.$font-weight-bold},
+  $button-font-size: #{body-text.$body-text-m},
 
   // button hover
   $button-hover-background-color: #{color-scheme.$yellow-300},
@@ -59,6 +61,13 @@ and spacing sets */
   $button-destructive-hover-background-color: #{color-scheme.$red-600},
   $button-destructive-hover-text-color: #{color-scheme.$white},
   $button-destructive-hover-border-color: #{color-scheme.$red-600},
+
+  // button secondary
+  $button-secondary-background-color: #{color-scheme.$white},
+  $button-secondary-border-width: 1px,
+  $button-secondary-border-style: solid,
+  $button-secondary-border-color: #{color-scheme.$grey-200},
+  $button-secondary-text-color: #{color-scheme.$blue-600},
 
   // breadcrumb bar
   $breadcrumb-bar-padding-top: #{spacing.$spacing-050},
@@ -85,6 +94,15 @@ and spacing sets */
   $footer-gap: #{spacing.$spacing-100},
   $footer-flex-wrap: wrap,
   $footer-justify-content: space-between,
+  $footer-border-width: 1px 0 0 0,
+  $footer-border-style: solid,
+  $footer-border-color: #{color-scheme.$grey-200},
+
+  // footer nav
+  $footer-navigation-gap: #{spacing.$spacing-200},
+  $footer-navigation-justify-content: space-between,
+  $footer-navigation-align-items: center,
+  $footer-navigation-flex-wrap: wrap,
 
   // form
   $form-align-items: flex-start,
@@ -143,6 +161,12 @@ and spacing sets */
   // list
   $list-padding: 0,
 
+  // main
+  $main-padding-top: #{spacing.$spacing-800},
+  $main-padding-right: #{spacing.$spacing-400},
+  $main-padding-bottom: #{spacing.$spacing-800},
+  $main-padding-left: #{spacing.$spacing-400},
+
   // Nav
   $navigation-link-text-decoration: none,
 
@@ -155,12 +179,17 @@ and spacing sets */
   $section-gap: #{spacing.$spacing-300},
   $section-flex-direction: column,
 
-  // sidemenu
-  $sidemenu-main-gap: #{spacing.$spacing-400},
+  // sidemenu page
+  $sidemenu-page-padding-top: #{spacing.$spacing-400},
+  $sidemenu-page-padding-right: #{spacing.$spacing-400},
+  $sidemenu-page-padding-bottom: #{spacing.$spacing-400},
+  $sidemenu-page-padding-left: #{spacing.$spacing-400},
+
+  // sidemenu nav
   $sidemenu-nav-width: 20rem,
-  $sidemenu-nav-padding-top: #{spacing.$spacing-100},
+  $sidemenu-nav-padding-top: #{spacing.$spacing-400},
   $sidemenu-nav-padding-right: #{spacing.$spacing-200},
-  $sidemenu-nav-padding-bottom: #{spacing.$spacing-100},
+  $sidemenu-nav-padding-bottom: #{spacing.$spacing-400},
   $sidemenu-nav-padding-left: #{spacing.$spacing-200},
   $sidemenu-nav-border-width: 0 1px 0 0,
   $sidemenu-nav-border-style: solid,

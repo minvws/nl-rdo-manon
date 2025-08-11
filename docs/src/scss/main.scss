@@ -1,5 +1,5 @@
-@use "@minvws/manon-themes/icore-open";
-// @use "@minvws/manon-themes/kat";
+// @use "@minvws/manon-themes/icore-open";
+@use "@minvws/manon-themes/kat";
 
 @use "@minvws/manon/components/accordion";
 @use "@minvws/manon/components/article";
@@ -9,6 +9,7 @@
 @use "@minvws/manon/components/base";
 @use "@minvws/manon/components/breadcrumb-bar";
 @use "@minvws/manon/components/button";
+@use "@minvws/manon/components/button-secondary";
 @use "@minvws/manon/components/button-cta";
 @use "@minvws/manon/components/button-container";
 @use "@minvws/manon/components/button-destructive";
