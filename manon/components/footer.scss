@@ -1,5 +1,6 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
+@use "../functions/validators";
 
 body > footer,
 .page-footer,
@@ -104,6 +105,31 @@ body > footer,
   }
 
   nav {
+    @if validators.any-args-not-null(
+      theme.$footer-navigation-flex-direction,
+      theme.$footer-navigation-gap,
+      theme.$footer-navigation-justify-content,
+      theme.$footer-navigation-align-items,
+      theme.$footer-navigation-flex-wrap
+    )
+    {
+      display: flex;
+    }
+
+    @include theming.apply-from-theme(
+      (
+        flex-direction: theme.$footer-navigation-flex-direction,
+        gap: theme.$footer-navigation-gap,
+        justify-content: theme.$footer-navigation-justify-content,
+        align-items: theme.$footer-navigation-align-items,
+        flex-wrap: theme.$footer-navigation-flex-wrap,
+        padding-top: theme.$footer-navigation-padding-top,
+        padding-right: theme.$footer-navigation-padding-right,
+        padding-bottom: theme.$footer-navigation-padding-bottom,
+        padding-left: theme.$footer-navigation-padding-left,
+      )
+    );
+
     ul,
     ol {
       background-color: transparent;

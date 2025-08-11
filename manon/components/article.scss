@@ -1,11 +1,21 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
+@use "../functions/validators";
 
 main article {
-  display: flex;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+
+  @if validators.any-args-not-null(
+    theme.$article-flex-direction,
+    theme.$article-gap,
+    theme.$article-justify-content,
+    theme.$article-align-items
+  )
+  {
+    display: flex;
+  }
 
   @include theming.apply-from-theme(
     (
