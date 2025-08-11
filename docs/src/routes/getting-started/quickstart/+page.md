@@ -29,7 +29,7 @@ npm install @minvws/manon-themes
 
 ## Importeren
 
-In je Sass-bestand kun je het Manon-framework en een thema naar keuze
+In je hoofd Sass-bestand kun je het Manon-framework en een thema naar keuze
 importeren.
 
 ```scss

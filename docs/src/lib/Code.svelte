@@ -4,11 +4,13 @@
   import css from "highlight.js/lib/languages/css";
   import scss from "highlight.js/lib/languages/scss";
   import javascript from "highlight.js/lib/languages/javascript";
+  import bash from "highlight.js/lib/languages/bash";
   import plaintext from "highlight.js/lib/languages/plaintext";
   hljs.registerLanguage("html", xml);
   hljs.registerLanguage("css", css);
   hljs.registerLanguage("scss", scss);
   hljs.registerLanguage("javascript", javascript);
+  hljs.registerLanguage("bash", bash);
   // @ts-ignore: the "plaintext" language is has no `contains`, presumably intentionally
   hljs.registerLanguage("plaintext", plaintext);
 </script>
