@@ -14,6 +14,7 @@
   --notification-border-width: 1px;
   --notification-border-style: solid;
   --notification-border-color: var(--base-border-color);
+  --notification-max-width: 100%;
 
   /* Link */
   --notification-link-text-color: var(--link-text-color);
@@ -30,4 +31,7 @@
   --notification-icon-padding-right: 0;
   --notification-icon-padding-left: 0;
   --notification-icon-margin-right: 0.5rem;
+
+  // Form
+  --form-notification-max-width: 100%;
 }
