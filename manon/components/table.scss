@@ -6,6 +6,7 @@ table {
   border-collapse: collapse;
   overflow: auto;
   margin: 0;
+  text-align: theme.$table-text-align;
 
   @include theming.apply-from-theme(
     (
@@ -17,7 +18,6 @@ table {
       border-width: theme.$table-border-width,
       border-style: theme.$table-border-style,
       border-color: theme.$table-border-color,
-      text-align: theme.$table-text-align,
     )
   );
 

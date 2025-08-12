@@ -6,6 +6,7 @@ main article {
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+  min-width: 0;
 
   @include theming.apply-from-theme(
     (

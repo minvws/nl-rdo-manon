@@ -18,10 +18,12 @@
   }
 
   button {
+    min-height: 100%;
+
     @include theming.apply-from-theme(
       (
         border-radius: theme.$form-combined-field-button-border-radius,
-        border-width: theme.$form-input-border-width,
+        border-width: theme.$form-combined-field-input-border-width,
         border-color: theme.$form-button-background-color,
       )
     );

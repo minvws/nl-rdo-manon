@@ -57,6 +57,7 @@ body > header,
 
   a {
     color: inherit;
+    box-sizing: border-box;
 
     @include theming.apply-from-theme(
       (

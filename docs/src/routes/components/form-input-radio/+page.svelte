@@ -91,33 +91,6 @@
 </form>
 `}
       />
-
-      <h3>Uitgeschakeld</h3>
-      <h4>Visueel voorbeeld:</h4>
-      <form action="" method="post">
-        <div class="radio">
-          <input
-            type="radio"
-            id="radio-button-example-disabled"
-            name="disabled-radio-button"
-            disabled
-          />
-          <label for="radio-button-example-disabled">Lorem ipsum dolor sit amet</label>
-        </div>
-      </form>
-
-      <h4>HTML-voorbeeld:</h4>
-      <Code
-        language="html"
-        code={`
-<form action="" method="post">
-  <div class="radio">
-    <input type="radio" id="radio-button-example-disabled" name="disabled-radio-button" disabled>
-    <label for="radio-button-example-disabled">Lorem ipsum dolor sit amet</label>
-  </div>
-</form>
-`}
-      />
     </section>
 
     <section id="requirements">
