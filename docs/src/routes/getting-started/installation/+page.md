@@ -36,7 +36,7 @@ Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
    [de Sass command-line-tool](https://sass-lang.com/documentation/cli/dart-sass/)
    installeren.
 
-   ```bash
+   ```console
    npm install sass
    ```
 
@@ -48,7 +48,7 @@ Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
    Via npm kun je de volgende commando's gebruiken om Manon en het thema te
    installeren:
 
-   ```bash
+   ```console
    npm install @minvws/manon @minvws/manon-themes
    ```
 
