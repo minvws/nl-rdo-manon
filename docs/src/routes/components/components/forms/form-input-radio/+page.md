@@ -3,26 +3,24 @@ title: Radio-selecteerknop - radio
 breadcrumb: Radio-selecteerknop - radio
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Radio-selecteerknop - `radio-button`</h1>
 
-## Benodigde stappen:
+<h2 id="quick-start">Snelstart</h2>
 
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie:
-    [Bijbehorende bestanden](#requirements).
-2.  Voeg de bijbehorende HTML toe. Voor meer informatie zie
-    [Voorbeelden](#examples).
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/radio";
+@use "@minvws/manon/form-radio";
+```
 
 <h2 id="examples">Voorbeelden</h2>
 
-### Basis
-
-#### Visueel voorbeeld:
+### Voorbeeld: Basis
 
 <form action="" method="post">
   <div class="radio">
@@ -30,8 +28,6 @@ nav:
     <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
   </div>
 </form>
-
-#### HTML-voorbeeld:
 
 ```html
 <form action="" method="post">
@@ -42,9 +38,7 @@ nav:
 </form>
 ```
 
-### Verplicht
-
-#### Visueel voorbeeld:
+### Voorbeeld: Verplicht
 
 <form action="" method="post">
   <div class="required">
@@ -60,8 +54,6 @@ nav:
     </div>
   </div>
 </form>
-
-#### HTML-voorbeeld:
 
 ```html
 <form action="" method="post">
@@ -82,9 +74,7 @@ nav:
 </form>
 ```
 
-### Uitgeschakeld
-
-#### Visueel voorbeeld:
+### Voorbeeld: Uitgeschakeld
 
 <form action="" method="post">
   <div class="radio">
@@ -97,8 +87,6 @@ nav:
     <label for="radio-button-example-disabled">Lorem ipsum dolor sit amet</label>
   </div>
 </form>
-
-#### HTML-voorbeeld:
 
 ```html
 <form action="" method="post">
@@ -115,28 +103,3 @@ nav:
   </div>
 </form>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Aandachtspunten:
-
-- De standaard ingestelde waarden binnen Manon maken gebruik van de
-  [Body text set](/components/layout/typography/body-text-set). Om gebruik te
-  maken van deze set. Laad de set eenmalig in voordat overige componenten er
-  gebruik van maken. Zie onderstaand voorbeeld voor meer informatie.
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/radio";
-@use "@minvws/manon/form-radio";
-```
-
-<h2 id="related">Gerelateerde pagina's</h2>
-
-<a href="/components/form-input-radio-test">Test- en voorbeelden-pagina</a>

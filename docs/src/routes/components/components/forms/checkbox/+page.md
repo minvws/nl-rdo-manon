@@ -3,26 +3,24 @@ title: Selectievak - checkbox
 breadcrumb: Selectievak - checkbox
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Selectievak - `checkbox`</h1>
 
-## Benodigde stappen:
+<h2 id="quick-start">Snelstart</h2>
 
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie:
-    [Bijbehorende bestanden](#requirements).
-2.  Voeg de benodigde HTML toe. Voor meer informatie zie:
-    [Voorbeelden](#examples).
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/checkbox";
+@use "@minvws/manon/form-checkbox";
+```
 
 <h2 id="examples">Voorbeelden</h2>
 
-### Visueel voorbeeld:
-
-#### Basis
+### Voorbeeld: Basis
 
 <form action="" method="post">
   <div class="checkbox">
@@ -30,8 +28,6 @@ nav:
     <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
   </div>
 </form>
-
-### HTML-voorbeeld:
 
 ```html
 <form action="" method="post">
@@ -46,7 +42,7 @@ nav:
 </form>
 ```
 
-#### Verplicht
+### Voorbeeld: Verplicht
 
 <form action="" method="post">
   <div class="required">
@@ -57,8 +53,6 @@ nav:
     </div>
   </div>
 </form>
-
-### HTML-voorbeeld:
 
 ```html
 <form action="" method="post">
@@ -77,7 +71,7 @@ nav:
 </form>
 ```
 
-#### Uitgeschakeld
+### Voorbeeld: Uitgeschakeld
 
 <form action="" method="post">
   <div class="checkbox">
@@ -90,8 +84,6 @@ nav:
     <label for="checkbox-example-disabled">Lorem ipsum dolor sit amet</label>
   </div>
 </form>
-
-### HTML-voorbeeld:
 
 ```html
 <form action="" method="post">
@@ -107,7 +99,7 @@ nav:
 </form>
 ```
 
-#### Lijst
+### Voorbeeld: Lijst
 
 <form action="" method="post">
   <fieldset>
@@ -134,8 +126,6 @@ nav:
 
   </fieldset>
 </form>
-
-### HTML-voorbeeld:
 
 ```html
 <form action="" method="post">
@@ -227,8 +217,6 @@ nav:
   </fieldset>
 </form>
 
-### HTML-voorbeeld:
-
 ```html
 <form action="" method="post">
   <fieldset>
@@ -282,114 +270,3 @@ nav:
   </fieldset>
 </form>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/checkbox";
-@use "@minvws/manon/form-checkbox";
-```
-
-<h2 id="variables">Instelbare variabelen</h2>
-
-<div class="horizontal-scroll">
-  <table class="nowrap">
-    <caption>Beschikbare instelbare variabelen:</caption>
-    <thead>
-      <tr>
-        <th scope="col">Variabele</th>
-        <th scope="col">CSS-attribuut</th>
-        <th scope="col">Manon ingestelde waarde</th>
-        <th scope="col">Breekpunt</th>
-        <th scope="col">Class</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>--checkbox-gap</td>
-        <td><a href="/documentation/variables#gap">gap</a></td>
-        <td>0.75rem</td>
-        <td>-</td>
-        <th rowspan="7" scope="rowgroup">checkbox</th>
-      </tr>
-
-      <tr>
-        <td>--checkbox-align-items</td>
-        <td><a href="/documentation/variables#align-items">align-items</a></td>
-        <td>flex-start</td>
-        <td>-</td>
-      </tr>
-
-      <tr>
-        <td>--checkbox-width</td>
-        <td><a href="/documentation/variables#width">width</a></td>
-        <td>1.25rem</td>
-        <td>-</td>
-      </tr>
-
-      <tr>
-        <td>--checkbox-height</td>
-        <td><a href="/documentation/variables#height">height</a></td>
-        <td>1.25rem</td>
-        <td>-</td>
-      </tr>
-
-      <tr>
-        <td>--checkbox-accent-color</td>
-        <td><a href="/documentation/variables#accent-color">accent-color</a></td>
-        <td>var(--branding-color-1, initial)</td>
-        <td>-</td>
-      </tr>
-
-      <tr>
-        <td>--checkbox-label-width</td>
-        <td><a href="/documentation/variables#width">width</a></td>
-        <td>auto</td>
-        <td>-</td>
-      </tr>
-
-      <tr>
-        <td>--checkbox-required-gap</td>
-        <td><a href="/documentation/variables#gap">gap</a></td>
-        <td>var($base-gap-small)</td>
-        <td>-</td>
-      </tr>
-    </tbody>
-
-  </table>
-</div>
-
-### CSS
-
-Overzicht van de beschikbare variabelen om te kunnen gebruiken binnen de CSS van
-jouw project. Kies en gebruik de benodigde variabelen.
-
-```css
-:root {
-  /* Checkbox */
-  --checkbox-gap: ;
-  --checkbox-align-items: ;
-
-  /* Box */
-  --checkbox-width: ;
-  --checkbox-height: ;
-  --checkbox-accent-color: ;
-
-  /* Label */
-  --checkbox-label-width: ;
-
-  /* Required */
-  --checkbox-required-gap: ;
-}
-```
-
-<h2 id="related">Gerelateerde pagina's</h2>
-
-<a href="/components/checkbox-test">Test- en voorbeelden-pagina</a>
