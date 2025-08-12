@@ -19,7 +19,7 @@
   import "highlight.js/styles/github.css";
 
   interface Props {
-    language?: "html" | "css" | "scss" | "javascript" | "plaintext";
+    language?: "html" | "css" | "scss" | "javascript" | "bash" | "plaintext";
     code?: string;
   }
 
