@@ -23,7 +23,7 @@ SCSS importeren:
 JavaScript initialiseren:
 
 ```javascript
-
+import "@minvws/manon/accordion.js";
 ```
 
 ### Benodigde stappen

@@ -3,7 +3,7 @@ title: Header Navigation
 breadcrumb: Header Navigation
 nav:
   - Introductie: "#introduction"
-  - Quick Start: "#quick-start"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
 ---
 
@@ -14,7 +14,7 @@ navigatiebalk voor websites. Het ondersteunt verschillende configuraties, zoals
 een logo, zoekveld, en meerdere menu's. Deze component is ontworpen om te
 voldoen aan de toegankelijkheidsrichtlijnen en biedt een responsieve ervaring.
 
-<h2 id="quick-start">Quick Start</h2>
+<h2 id="quick-start">Snelstart</h2>
 
 SCSS importeren:
 
