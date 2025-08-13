@@ -250,8 +250,3 @@ kunnen ingezet worden om deze vragen sneller te beantwoorden.
   </form>
 </section>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)

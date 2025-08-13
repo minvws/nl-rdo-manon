@@ -5,21 +5,22 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Inklapbaar menu</h1>
-
-<h2 id="quickstart">Snelstart</h2>
-
-```scss
-@use "@minvws/manon/collapsible-menu";
-```
 
 <p class="warning">
   <strong>Let op:</strong> Deze documentatie is momenteel onvolledig. De details voor het JavaScript-bestand
   missen.
 </p>
+
+<h2 id="quickstart">Snelstart</h2>
+
+SCSS importeren
+
+```scss
+@use "@minvws/manon/collapsible-menu";
+```
 
 ## Benodigde stappen:
 
@@ -54,15 +55,3 @@ Zie hoofdmenu op deze pagina
   </nav>
 </header>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Aandachtspunten:
-
-- De standaard ingestelde waarden binnen Manon maken gebruik van de
-  [Body text set](/components/layout/typography/body-text-set). Om gebruik te
-  maken van deze set. Laad de set eenmalig in voordat overige componenten er
-  gebruik van maken. Zie onderstaand voorbeeld voor meer informatie.

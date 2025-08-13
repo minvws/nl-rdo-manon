@@ -5,7 +5,6 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Description list</h1>
@@ -18,7 +17,7 @@ nav:
 
 <h2 id="examples">Voorbeeld</h2>
 
-### Visuele weergave:
+### Voorbeeld: Basis
 
 <dl>
   <div>
@@ -36,8 +35,6 @@ nav:
     <dd>03-05-2021</dd>
   </div>
 </dl>
-
-### HTML-voorbeeld:
 
 ```html
 <dl>
@@ -58,7 +55,7 @@ nav:
 </dl>
 ```
 
-### Visuele weergave binnen formulier:
+### Voorbeeld: Binnen een formulier
 
 <form action="" method="post" class="horizontal">
   <fieldset>
@@ -102,8 +99,6 @@ nav:
   </fieldset>
   <button>Lorem ipsum</button>
 </form>
-
-### HTML-voorbeeld:
 
 ```html
 <form action="" method="post" class="horizontal">
@@ -150,8 +145,3 @@ nav:
   <button>Lorem ipsum</button>
 </form>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)

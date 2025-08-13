@@ -11,27 +11,17 @@ nav:
 
 <h1 id="introduction">Taalselectie</h1>
 
+Een taalselectie element biedt een verticale keuzelijst die openklapt.
+
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
 @use "@minvws/manon/language-selector";
 ```
 
-Een taalselectie element biedt een verticale keuzelijst die openklapt.
-
-## Benodigde stappen:
-
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie:
-    [Bijbehorende bestanden](#requirements).
-2.  Voeg de benodigde HTML toe. Voor meer informatie zie:
-    [Voorbeelden](#examples).
-
 <h2 id="examples">Voorbeelden:</h2>
 
-### Paragraaf
-
-#### Visueel voorbeeld:
+### Voorbeeld: Basis
 
 <div class="language-selector">
   <p id="language-selector-description">Kies een taal:</p>
@@ -66,8 +56,6 @@ Een taalselectie element biedt een verticale keuzelijst die openklapt.
     </ul>
   </div>
 </div>
-
-#### HTML-voorbeeld:
 
 ```html
 <div class="language-selector">
