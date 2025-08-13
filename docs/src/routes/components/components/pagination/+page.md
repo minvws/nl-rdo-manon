@@ -5,8 +5,6 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Paginering</h1>
@@ -17,21 +15,9 @@ nav:
 @use "@minvws/manon/pagination";
 ```
 
-## Benodigde stappen:
+<h2 id="examples">Voorbeelden</h2>
 
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie:
-    [Bijbehorende bestanden](#requirements).
-2.  Vul de variabelen met de gewenste stijlkeuzes. Voor meer informatie zie het
-    overzicht met [instelbare variabelen](#variables).
-3.  Voeg de class `pagination` toe aan de gewenste elementen. Voor meer
-    informatie zie: [Voorbeelden](#examples).
-
-<h2 id="examples">Voorbeelden:</h2>
-
-<h3 id="pagination-class">Paginering</h3>
-
-Visueel voorbeeld:
+### Voorbeeld: Paginering
 
 <nav class="pagination" aria-label="Paginering" id="pagination-nav">
   <ul>
@@ -45,8 +31,6 @@ Visueel voorbeeld:
   </ul>
 </nav>
 
-HTML-voorbeeld:
-
 ```html
 <nav class="pagination" aria-label="Paginering">
   <ul>
@@ -59,7 +43,7 @@ HTML-voorbeeld:
 </nav>
 ```
 
-#### Met class `pagination` en "vorige" en "volgende links.
+### Voorbeeld: Met class `pagination` en "vorige" en "volgende links.
 
 <nav class="pagination" aria-label="Paginering" id="pagination-next-prev">
   <a
@@ -81,8 +65,6 @@ HTML-voorbeeld:
     class="adjacent next">Volgende</a>
 </nav>
 
-HTML-voorbeeld:
-
 ```html
 <nav class="pagination" aria-label="Paginering">
   <a href="#" aria-label="Ga naar de vorige pagina" class="adjacent previous"
@@ -100,8 +82,3 @@ HTML-voorbeeld:
   >
 </nav>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)

@@ -92,23 +92,3 @@ Een taalselectie element biedt een verticale keuzelijst die openklapt.
   </div>
 </div>
 ```
-
-#### Structuurvoorbeeld:
-
-```html
-<header>
-  <nav aria-label="Hoofdnavigatie">
-    <!-- Navigatie items -->
-    <!-- Taalselectie -->
-  </nav>
-</header>
-```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-<h2 id="related">Gerelateerde pagina's</h2>
-
-<a href="/components/language-selector-test">Test- en voorbeelden-pagina</a>
