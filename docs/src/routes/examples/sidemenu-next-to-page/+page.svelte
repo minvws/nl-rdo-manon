@@ -26,7 +26,7 @@
     </div>
   </header>
   <main>
-    <article class="visually-grouped">
+    <article>
       <div><section>Main</section></div>
     </article>
   </main>

@@ -1,0 +1,78 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+.to-top,
+button.to-top,
+a.button.to-top {
+  @include theming.apply-from-theme(
+    (
+      position: theme.$button-to-top-position,
+      bottom: theme.$button-to-top-bottom,
+      right: theme.$button-to-top-right,
+      left: theme.$button-to-top-left,
+      font-size: theme.$button-to-top-font-size,
+      width: theme.$button-to-top-width,
+      height: theme.$button-to-top-height,
+      min-width: theme.$button-to-top-min-width,
+      min-height: theme.$button-to-top-min-height,
+      border-radius: theme.$button-to-top-border-radius,
+      border-width: theme.$button-to-top-border-width,
+      border-style: theme.$button-to-top-border-style,
+      border-color: theme.$button-to-top-border-color,
+      background-color: theme.$button-to-top-background-color,
+      color: theme.$button-to-top-text-color,
+      gap: theme.$button-to-top-gap,
+    )
+  );
+
+  .icon,
+  &.icon {
+    &::before {
+      padding: 0;
+
+      @include theming.apply-from-theme(
+        (
+          color: theme.$button-to-top-icon-color,
+        )
+      );
+    }
+  }
+
+  &:hover {
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$button-to-top-hover-background-color,
+        color: theme.$button-to-top-hover-text-color,
+      )
+    );
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include theming.apply-from-theme(
+      (
+        border-radius: theme.$button-to-top-border-radius,
+        border-color: theme.$button-to-top-border-color,
+      )
+    );
+  }
+
+  &:hover .icon,
+  &:visited .icon,
+  &:visited:hover .icon,
+  &.icon:hover,
+  &.icon:visited,
+  &.icon:visited:hover {
+    &::before {
+      @include theming.apply-from-theme(
+        (
+          color: (
+            theme.$button-to-top-icon-color,
+            theme.$button-to-top-icon-color,
+          ),
+        )
+      );
+    }
+  }
+}

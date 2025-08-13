@@ -1,0 +1,16 @@
+/*---------------------------------------------------------------*/
+
+/*-------------------- notification-system.scss -----------------*/
+
+/*---------------------------------------------------------------*/
+@use "notification";
+@use "notification-system-message-variables";
+@use "mixins/notification-type";
+
+p.system,
+span.system,
+section.system,
+div.system {
+  @include notification.notification;
+  @include notification-type.notification-type("system");
+}

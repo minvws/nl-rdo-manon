@@ -1,0 +1,297 @@
+---
+title: Tabel basisweergave
+breadcrumb: Tabel basisweergave
+nav:
+  - Introductie: "#introduction"
+  - Voorbeelden: "#examples"
+    - Basis: "#example-base"
+    - Tabel met footer: "#example-footer"
+    - Tabel met rij-headers: "#example-row-headers"
+  - Benodigde bestanden: "#requirements"
+---
+
+<h1 id="introduction">Tabel</h1>
+
+<h2 id="examples">Aandachtspunten</h2>
+
+<p>
+  Om tabellen correct weer te geven op smallere schermresoluties, denk hierbij aan mobiele
+  apparaten, dient er een `div` om de `table` te staan met
+  de class
+  `horizontal-scroll`.
+</p>
+
+<h2 id="examples">Voorbeelden</h2>
+
+<h3 id="example-base">Basis</h3>
+
+<h4>Visueel voorbeeld</h4>
+
+<div class="horizontal-scroll">
+  <table>
+    <caption>Basisvoorbeeld tabel:</caption>
+    <thead>
+      <tr>
+        <th scope="col">Kolom 1</th>
+        <th scope="col">Kolom 2</th>
+        <th scope="col">Kolom 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+#### HTML-voorbeeld:
+
+```html
+<div class="horizontal-scroll">
+  <table>
+    <caption>
+      Basisvoorbeeld tabel:
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Kolom 1</th>
+        <th scope="col">Kolom 2</th>
+        <th scope="col">Kolom 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+<h3 id="example-footer">Tabel met footer</h3>
+
+<p>
+  Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden om een
+  titel toe te voegen met daarin de omschrijving van de tabel. Voeg direct binnen de
+  `table` een `caption` toe om de titel toe te voegen.
+</p>
+
+#### Visueel voorbeeld:
+
+<div class="horizontal-scroll">
+  <table>
+    <caption>Tabelvoorbeeld met footer:</caption>
+    <thead>
+      <tr>
+        <th scope="col">Kolom 1</th>
+        <th scope="col">Kolom 2</th>
+        <th scope="col">Kolom 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="col">Table footer heading 1</th>
+        <th scope="col">Table footer heading 2</th>
+        <th scope="col">Table footer heading 3</th>
+      </tr>
+      <tr>
+        <td>Table footer 1</td>
+        <td>Table footer 2</td>
+        <td>Table footer 3</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+#### HTML-voorbeeld:
+
+```html
+<div class="horizontal-scroll">
+  <table>
+    <caption>
+      Tabelvoorbeeld met footer:
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Kolom 1</th>
+        <th scope="col">Kolom 2</th>
+        <th scope="col">Kolom 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Table footer heading 1</th>
+        <th>Table footer heading 2</th>
+        <th>Table footer heading 3</th>
+      </tr>
+      <tr>
+        <td>Table footer 1</td>
+        <td>Table footer 2</td>
+        <td>Table footer 3</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+```
+
+<h3 id="example-row-headers">Tabel met rij-headers</h3>
+
+#### Visueel voorbeeld
+
+<div class="horizontal-scroll">
+  <table>
+    <caption>Basisvoorbeeld tabel met rij-headers:</caption>
+    <thead>
+      <tr>
+        <th scope="col">Kolom 1</th>
+        <th scope="col">Kolom 2</th>
+        <th scope="col">Kolom 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Rij 1</th>
+        <td>Lorem ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <th scope="row">Rij 2</th>
+        <td>Lorem ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <th scope="row">Rij 3</th>
+        <td>Lorem ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <th scope="row">Rij 4</th>
+        <td>Lorem ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+#### HTML-voorbeeld:
+
+```html
+<div class="horizontal-scroll">
+  <table>
+    <caption>
+      Basisvoorbeeld tabel:
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Kolom 1</th>
+        <th scope="col">Kolom 2</th>
+        <th scope="col">Kolom 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td>Ipsum</td>
+        <td>Dolor sit amet</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+<h2 id="requirements">Bijbehorende bestanden</h2>
+
+Voor meer informatie over importeren en instellen van componenten. Zie:
+[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+
+### Importeer component via npm
+
+#### CSS-voorbeeld:
+
+```css
+@use "@minvws/manon/table";
+```

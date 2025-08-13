@@ -23,12 +23,15 @@
       </ul>
 
       <div>
-        <form class="inline">
-          <input type="text" placeholder="Zoeken" />
-          <button type="submit">
-            <span class="icon icon-search" aria-hidden="true"></span>
-            <span class="visually-hidden">Zoeken</span>
-          </button>
+        <form action="" method="post" class="inline">
+          <div>
+            <div class="combined-field">
+              <input type="text" placeholder="Zoeken" />
+              <button type="submit">
+                <span class="icon icon-search" aria-hidden="true">Zoek</span>
+              </button>
+            </div>
+          </div>
         </form>
       </div>
     </div>
