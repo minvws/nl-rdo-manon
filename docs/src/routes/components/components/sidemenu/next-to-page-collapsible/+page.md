@@ -3,11 +3,18 @@ title: In- en uitklapbaar zijmenu naast de pagina
 breadcrumb: In- en uitklapbaar zijmenu naast de pagina
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">In- en uitklapbaar zijmenu naast de pagina</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/sidemenu";
+```
 
 Voor het plaatsen van een zijmenu naast de pagina.
 
@@ -145,11 +152,3 @@ Het menu is standaard ingeklapt en kan door de gebruiker uitgeklapt worden.
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/sidemenu";
-```

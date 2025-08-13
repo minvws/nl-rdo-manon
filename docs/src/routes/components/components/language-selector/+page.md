@@ -3,12 +3,19 @@ title: Taalselectie
 breadcrumb: Taalselectie
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
   - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Taalselectie</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/language-selector";
+```
 
 Een taalselectie element biedt een verticale keuzelijst die openklapt.
 
@@ -113,14 +120,6 @@ Een taalselectie element biedt een verticale keuzelijst die openklapt.
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/language-selector";
-```
 
 <h2 id="related">Gerelateerde pagina's</h2>
 

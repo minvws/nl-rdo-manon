@@ -3,11 +3,18 @@ title: Ga direct naar inhoud-knop
 breadcrumb: Ga direct naar inhoud-knop
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Bijbehorende bestanden: "#requirements"
   - Voorbeelden: "#examples"
 ---
 
 <h1 id="introduction">"Ga direct naar inhoud"-knop</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/skip-to-content";
+```
 
 <p>
   Voeg gebruiksvriendelijkheid toe voor gebruikers die gebruik maken van hulptechnologiën of
@@ -17,12 +24,6 @@ nav:
 </p>
 
 ## Benodigde stappen
-
-### Importeer component via npm
-
-```scss
-@use "@minvws/manon/skip-to-content";
-```
 
 <ul>
   <li>Voeg de knop als eerste element binnen de header toe.</li>

@@ -3,12 +3,19 @@ title: Maximale regellengte
 breadcrumb: Maximale regellengte
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
   - Instelbare variabelen: "#variables"
 ---
 
 <h1 id="introduction">Maximale regellengte</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/max-line-length";
+```
 
 Een maximale regellengte voor leesbaarheid. Dit wordt vaak aangeraden voor
 gebruiksvriendelijkheid en toegankelijkheid.
@@ -40,11 +47,3 @@ elementen: `p` `a` `span` `li`
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/max-line-length";
-```

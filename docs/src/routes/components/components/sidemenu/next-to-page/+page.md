@@ -3,11 +3,18 @@ title: Zijmenu naast de pagina
 breadcrumb: Zijmenu naast de pagina
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Zijmenu naast de pagina</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/sidemenu";
+```
 
 Voor het plaatsen van een zijmenu naast de pagina.
 
@@ -90,11 +97,3 @@ Zie het zijmenu van deze pagina.
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```scss
-@use "@minvws/manon/sidemenu";
-```

@@ -3,11 +3,18 @@ title: Fieldset
 breadcrumb: Fieldset
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Fieldset - `fieldset`</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/fieldset";
+```
 
 ## Benodigde stappen:
 
@@ -49,11 +56,3 @@ nav:
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/fieldset";
-```

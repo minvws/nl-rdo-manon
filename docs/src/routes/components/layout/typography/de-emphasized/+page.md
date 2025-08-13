@@ -3,12 +3,20 @@ title: Subtielere weergave
 breadcrumb: Subtielere weergave
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
   - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Subtielere weergave</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/body-text-set";
+@use "@minvws/manon/de-emphasized";
+```
 
 ## Benodigde stappen:
 
@@ -47,15 +55,3 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
   [Body text set](/components/layout/typography/body-text-set). Om gebruik te
   maken van deze set. Laad de set eenmalig in voordat overige componenten er
   gebruik van maken. Zie onderstaand voorbeeld voor meer informatie.
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-/* Body text set */
-@use "@minvws/manon/body-text-set";
-
-/* De-emphasized */
-@use "@minvws/manon/de-emphasized";
-```

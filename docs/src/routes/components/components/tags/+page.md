@@ -3,11 +3,19 @@ title: Tags
 breadcrumb: Tags
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Tags</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/tag";
+@use "@minvws/manon/tags";
+```
 
 De mogelijkheid om onderliggende elementen visueel als tags weer te geven.
 
@@ -195,16 +203,7 @@ enkel element zie: [tags](/components/components/tag).
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
 
-### Importeer component via npm
-
 **Let op:** Tags maakt gebruik van de volgende componenten die ingeladen dienen
 te zijn voor het tags-component.
 
 - [tag](/components/components/tag)
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/tag";
-@use "@minvws/manon/tags";
-```

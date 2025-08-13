@@ -3,12 +3,19 @@ title: Tegelweergave
 breadcrumb: Tegelweergave
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
   - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Tegelweergave</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/tile";
+```
 
 Tegelweergave kan gebruikt worden om content visueel te groeperen om gebruikers
 te laten zien welke content bij elkaar hoort. Veel gebruikte toepassingen voor
@@ -156,13 +163,6 @@ Beschikbare voorbeelden:
     Voor meer informatie over importeren en instellen van componenten. Zie:
     <a href="/documentation/import-styling">Componenten gebruiken en styling toevoegen</a>
   </p>
-
-  <h3>Importeer component via npm</h3>
-  <h4>CSS-voorbeeld:</h4>
-
-```css
-@use "@minvws/manon/tile";
-```
 
 </section>
 

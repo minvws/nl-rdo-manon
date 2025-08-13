@@ -3,12 +3,23 @@ title: Titel
 breadcrumb: Titel
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
   - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Titels</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+/* Headings set */
+@use "@minvws/manon/headings-base-set";
+
+/* Headings */
+@use "@minvws/manon/headings";
+```
 
 Gebruik titels om structuur binnen de pagina aan te geven.
 
@@ -73,12 +84,12 @@ In dit voorbeeld wordt de eerder ingestelde "--headings-font-family" waarde
 doorgevoerd binnen de beschikbare heading-types.
 
 ```css
---h1-font-family: var(--headings-font-family);
---h2-font-family: var(--headings-font-family);
---h3-font-family: var(--headings-font-family);
---h4-font-family: var(--headings-font-family);
---h5-font-family: var(--headings-font-family);
---h6-font-family: var(--headings-font-family);
+--h1-font-family: var(--heading-xxl-font-size);
+--h2-font-family: var(--heading-xl-font-size);
+--h3-font-family: var(--heading-large-font-size);
+--h4-font-family: var(--heading-normal-font-size);
+--h5-font-family: var(--heading-small-font-size);
+--h6-font-family: var(--heading-xs-font-size);
 ```
 
 ### Gebruik maken van een heading-set
@@ -126,18 +137,6 @@ binnen de beschikbare heading-types.
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling).
-
-### Importeer component via npm
-
-#### SCSS-voorbeeld:
-
-```scss
-/* Headings set */
-@use "@minvws/manon/headings-base-set";
-
-/* Headings */
-@use "@minvws/manon/headings";
-```
 
 <h2 id="related">Gerelateerde pagina's</h2>
 

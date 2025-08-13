@@ -3,6 +3,7 @@ title: Titel basisset
 breadcrumb: Titel basisset
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
     - Beschikbare opties: "#examples"
     - HTML-element stijling ingesteld via CSS voorbeeld: "#examples"
@@ -12,6 +13,12 @@ nav:
 ---
 
 <h1 id="introduction">Titel basisset</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/heading-base-set";
+```
 
 Basisset voor het stylen van titels.
 
@@ -119,11 +126,3 @@ Basisset voor het stylen van titels.
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/heading-base-set";
-```

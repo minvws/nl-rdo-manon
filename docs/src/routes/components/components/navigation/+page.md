@@ -3,19 +3,20 @@ title: Navigatie
 breadcrumb: Navigatie
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Navigatie</h1>
 
-## Benodigde stappen
+<h2 id="quickstart">Snelstart</h2>
 
-### Importeer component via npm
-
-```css
+```scss
 @use "@minvws/manon/navigation";
 ```
+
+## Benodigde stappen
 
 1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
     benodigde en optionele bestanden zie:

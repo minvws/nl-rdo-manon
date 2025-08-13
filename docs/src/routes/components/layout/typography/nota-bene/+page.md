@@ -3,12 +3,20 @@ title: Nota bene
 breadcrumb: Nota bene
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
   - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Nota bene</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/text/nota-bene";
+@use "@minvws/manon/text/nota-bene-variables";
+```
 
 ## Benodigde stappen:
 
@@ -59,11 +67,3 @@ nav:
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Benodigd
-
-- `text/nota-bene.scss`
-
-### Optioneel
-
-- `text/nota-bene-variables.scss`

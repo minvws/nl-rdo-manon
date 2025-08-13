@@ -3,11 +3,18 @@ title: Layout set
 breadcrumb: Layout set
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Layout set</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/layout-set";
+```
 
 Basisset voor het vastleggen van layout-keuzes vanuit een centraal punt.
 
@@ -37,11 +44,3 @@ Voor meer informatie hierover zie [CSS-variabelen gebruiken](/documentation/use-
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
 Voor meer informatie over importeren en instellen van componenten. Zie: [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/layout-set";
-```

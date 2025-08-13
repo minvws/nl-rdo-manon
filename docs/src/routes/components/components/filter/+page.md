@@ -3,12 +3,19 @@ title: Filter
 breadcrumb: Filter
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
   - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Filter</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/filter";
+```
 
 Bij het tonen van grote of complexe datasets kan gebruik gemaakt worden van
 filters. Filters geven de gebruiker de mogelijkheid om enkel relevante data te
@@ -248,11 +255,3 @@ kunnen ingezet worden om deze vragen sneller te beantwoorden.
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/filter";
-```

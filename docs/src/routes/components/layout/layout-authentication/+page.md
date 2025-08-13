@@ -3,6 +3,7 @@ title: Layout authentication
 breadcrumb: Layout authentication
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
   - Instelbare variabelen: "#variables"
@@ -10,6 +11,13 @@ nav:
 ---
 
 <h1 id="introduction">Layout authenticatie</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/layout-base";
+@use "@minvws/manon/layout-authentication";
+```
 
 Weergave voor authenticatie-elementen. Login formulieren hebben vaak belang bij
 een smallere weergave dan overige formulieren.
@@ -74,12 +82,3 @@ een smallere weergave dan overige formulieren.
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/layout-base";
-@use "@minvws/manon/layout-authentication";
-```

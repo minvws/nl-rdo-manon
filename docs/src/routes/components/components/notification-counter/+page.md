@@ -3,12 +3,19 @@ title: Notificatie-teller
 breadcrumb: Notificatie-teller
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
   - Instelbare variabelen: "#variables"
 ---
 
 <h1 id="introduction">Notificatie-teller</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/message-counter-base";
+```
 
 De notificatie-teller is bedoeld om de gebruiker te attenderen en te informeren
 over nieuwe berichten of notificaties.
@@ -67,11 +74,3 @@ over nieuwe berichten of notificaties.
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/message-counter-base";
-```

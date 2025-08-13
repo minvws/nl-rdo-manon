@@ -3,11 +3,18 @@ title: Fieldset Radio-selecteerknop - radio
 breadcrumb: Fieldset Radio-selecteerknop - radio
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Radio-selecteerknop - `radio`</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/form-fieldset-radio";
+```
 
 ## Benodigde stappen:
 
@@ -265,11 +272,3 @@ nav:
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/form-fieldset-radio";
-```

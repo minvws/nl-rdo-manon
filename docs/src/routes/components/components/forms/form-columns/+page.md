@@ -3,6 +3,7 @@ title: Weergave in kolommen
 breadcrumb: Weergave in kolommen
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
   - Gerelateerde pagina's: "#related"
@@ -10,6 +11,12 @@ nav:
 ---
 
 <h1 id="introduction">Weergave in kolommen</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/form";
+```
 
 ## Benodigde stappen:
 
@@ -63,14 +70,6 @@ Het basisvoorbeeld met een invoerveld en een verzendknop.
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/form";
-```
 
 <h2 id="issues">Bekende problemen</h2>
 

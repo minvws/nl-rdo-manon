@@ -3,6 +3,7 @@ title: Uitklapbare tabelrij
 breadcrumb: Uitklapbare tabelrij
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Benodigdheden: "#requirements"
   - Beschikbare variabelen: "#variables"
@@ -14,6 +15,13 @@ nav:
   helpt om complexe data te begrijpen.
 </p>
 <h1 id="introduction">Uitklapbare tabel</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/table";
+@use "@minvws/manon/table-expando-rows";
+```
 
 Voor het tonen van complexe tabellen met bijbehorende details kan gekozen worden
 voor een tabel met uitklapbare tabelrijen.
@@ -212,15 +220,6 @@ voor een tabel met uitklapbare tabelrijen.
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/table";
-@use "@minvws/manon/table-expando-rows";
-```
 
 <h2 id="variables">Instelbare variabelen</h2>
 

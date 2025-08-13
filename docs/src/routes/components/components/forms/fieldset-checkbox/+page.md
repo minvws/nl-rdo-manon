@@ -3,12 +3,20 @@ title: Fieldset Selectievak - checkbox
 breadcrumb: Fieldset Selectievak - checkbox
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
   - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Selectievak - `checkbox`</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/checkbox";
+@use "@minvws/manon/form-fieldset-checkbox";
+```
 
 ## Benodigde stappen:
 
@@ -310,15 +318,6 @@ nav:
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/checkbox";
-@use "@minvws/manon/form-fieldset-checkbox";
-```
 
 <h2 id="related">Gerelateerde pagina's</h2>
 

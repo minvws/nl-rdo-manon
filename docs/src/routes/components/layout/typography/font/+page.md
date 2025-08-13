@@ -3,12 +3,23 @@ title: Titel
 breadcrumb: Titel
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
   - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Titels</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+/* Headings set */
+@use "@minvws/manon/headings-base-set";
+
+/* Headings */
+@use "@minvws/manon/headings";
+```
 
 Gebruik titels om structuur binnen de pagina aan te geven.
 
@@ -140,18 +151,6 @@ Gebruik titels om structuur binnen de pagina aan te geven.
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### SCSS-voorbeeld:
-
-```scss
-/* Headings set */
-@use "@minvws/manon/headings-base-set";
-
-/* Headings */
-@use "@minvws/manon/headings";
-```
 
 <h2 id="related">Gerelateerde pagina's</h2>
 

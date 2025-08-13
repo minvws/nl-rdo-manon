@@ -3,11 +3,18 @@ title: Tag
 breadcrumb: Tag
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Tag</h1>
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/tag";
+```
 
 Visuele labels om bijvoorbeeld groeperingen aan te brengen binnen content en
 data-sets.
@@ -176,14 +183,6 @@ data-sets.
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/tag";
-```
 
 ### Kleurensets
 

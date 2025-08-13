@@ -13,7 +13,7 @@ nav:
 
 SCSS importeren:
 
-```css
+```scss
 @use "@minvws/manon/form";
 @use "@minvws/manon/form-input";
 ```
