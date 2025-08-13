@@ -5,50 +5,40 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Hulpteksten</h1>
 
+Voor het geven van extra toelichting op een invoerveld.
+
 <h2 id="quickstart">Snelstart</h2>
+
+SCSS importeren:
 
 ```scss
 @use "@minvws/manon/form-help";
 ```
 
-Voor het geven van extra toelichting op een invoerveld.
+JavaScript importeren:
 
-## Benodigde stappen
+```javascript
+import "@minvws/manon/form-help.js";
+```
 
-1.  Voeg de benodigde bestanden toe aan het project.
-    - Voor een overzicht van de benodigde en optionele bestanden zie:
-      [Bijbehorende bestanden](#requirements).
-    - Voeg het bijbehorende Javascript-bestand toe aan het project. Voor meer
-      informatie zie: [JavaScript toevoegen](/documentation/add-js).
-2.  Voeg de referentie naar het JavaScript bestand toe aan de `head` van de
-    pagina. Voorbeeld:
-    `script defer src="./pad/naar/form-help.min.js"></script>`.
-3.  Voeg de class `help` toe aan het formulier.
-4.  Groepeer het invoerveld met de bijbehorende hulptekst in een `div`.
-5.  Voeg de hulptekst toe **onder** het invoerveld.
+### Benodigde stappen
 
-## Aandachtspunten
-
-- Voeg de hulptekst toe **onder** het invoerveld. Hierdoor verspringt het
-  formulier en de locatie waar de gebruiker interactie mee heeft zo min
-  mogelijk. Hulpteksten die boven het invoerveld staan worden niet ingeklapt.
-- De knop wordt automatisch toegevoegd. Deze hoeft dus niet handmatig in de html
-  opgenomen te worden.
-- Zonder JavaScript wordt de knop niet toegevoegd en wordt hulptekst getoont
-  zonder deze in te klappen. Dit zorgt ervoor dat de hulpteksten ook beschikbaar
-  zijn voor gebruikers zonder JavaScript.
+1. Voeg de hulptekst toe **onder** het invoerveld. Hierdoor verspringt het
+   formulier en de locatie waar de gebruiker interactie mee heeft zo min
+   mogelijk. Hulpteksten die boven het invoerveld staan worden niet ingeklapt.
+2. De knop wordt automatisch toegevoegd. Deze hoeft dus niet handmatig in de
+   html opgenomen te worden.
+3. Zonder JavaScript wordt de knop niet toegevoegd en wordt hulptekst getoont
+   zonder deze in te klappen. Dit zorgt ervoor dat de hulpteksten ook
+   beschikbaar zijn voor gebruikers zonder JavaScript.
 
 <h2 id="examples">Voorbeelden</h2>
 
-### Basis
-
-#### Visueel voorbeeld
+### Voorbeeld: Basis
 
 <form action="" method="post" class="help">
   <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
@@ -74,8 +64,6 @@ Voor het geven van extra toelichting op een invoerveld.
 <button type="submit">Verzend</button>
 
 </form>
-
-#### HTML-Voorbeeld
 
 ```html
 <form action="" method="post" class="help">
@@ -103,29 +91,7 @@ Voor het geven van extra toelichting op een invoerveld.
 </form>
 ```
 
-### Verplicht invoerveld
-
-<ol>
-  <li>
-    Geef op de `input` aan dat het invoerveld verplicht is met het
-    `required` attribuut.
-  </li>
-  <li>
-    Voeg een span toe boven het invoerveld. Het is belangrijk om het bericht boven het
-    invoerveld te plaatsen zodat de volgorde ook klopt voor gebruikers die gebruik maken van
-    hulpmiddelen zoals een screenreader.
-  </li>
-  <li>
-    Groeppeer de `input` en de `span` samen in een
-    `div` binnen horizontaal uitgelijnde formulieren.
-  </li>
-  <li>
-    Groepeer het invoerveld en de bijbehorende helptekst binnen een
-    `div` voor de correcte uitlijning van de helptekstenknop.
-  </li>
-</ol>
-
-#### Visueel voorbeeld
+### Voorbeeld: Verplicht invoerveld
 
 <form action="" method="post" class="help">
   <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
@@ -183,8 +149,3 @@ Voor het geven van extra toelichting op een invoerveld.
   <button type="submit">Verzend</button>
 </form>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)

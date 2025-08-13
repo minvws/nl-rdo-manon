@@ -5,9 +5,6 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
-  - Bekende problemen: "#issues"
 ---
 
 <h1 id="introduction">Weergave in kolommen</h1>
@@ -18,21 +15,15 @@ nav:
 @use "@minvws/manon/form";
 ```
 
-## Benodigde stappen:
-
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie:
-    [Bijbehorende bestanden](#requirements).
-2.  Groepeer de gewenste velden en geef de gewenste hoeveelheid kolommen op.
-    Bijvoorbeeld: `class="column-2`.
+<p class="warning">
+  <span>Waarschuwing:</span>
+    <code>fieldset</code>met een <code>column-*</code>class met daarbinnen een
+    <code>&lt;input type="date"&gt;</code> kunnen buiten de breedte van het formulier lopen.
+</p>
 
 <h2 id="examples">Voorbeelden</h2>
 
-Het basisvoorbeeld met een invoerveld en een verzendknop.
-
-### Basis
-
-#### Visueel voorbeeld:
+### Voorbeeld: Basis
 
 <form action="" method="post">
   <div class="column-2">
@@ -47,8 +38,6 @@ Het basisvoorbeeld met een invoerveld en een verzendknop.
   </div>
   <button type="submit">Verzend</button>
 </form>
-
-#### HTML-voorbeeld:
 
 ```html
 <form action="" method="post">
@@ -65,17 +54,3 @@ Het basisvoorbeeld met een invoerveld en een verzendknop.
   <button type="submit">Verzend</button>
 </form>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-<h2 id="issues">Bekende problemen</h2>
-
-<ul>
-  <li>
-    `fieldset` met een `column-*`-class met daarbinnen een
-    `<input type="date">` kunnen buiten de breedte van het formulier lopen.
-  </li>
-</ul>

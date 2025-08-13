@@ -11,6 +11,56 @@ gebruikers.
 <section id="available-types">
   <h2>Beschikbare weergaven</h2>
   <div class="column-3">
+
+    <nav aria-labelledby="form-layouts-title" id="form-layouts">
+      <h3 id="form-layouts-title">Weergaven</h3>
+      <ul>
+        <li><a href="/components/components/forms/form-layout-base">Basisweergave</a></li>
+        <li>
+          <a href="/components/components/forms/form-layout-accent-color"
+            >Accentkleur op formulierelementen</a
+          >
+        </li>
+        <li>
+          <a href="/components/components/forms/form-layout-combined-fields"
+            >Gecombineerde formuliervelden</a
+          >
+        </li>
+        <li>
+          <a href="/components/components/forms/form-layout-columns">Weergave in kolommen</a>
+        </li>
+        <li>
+          <a href="/components/components/forms/form-layout-horizontal"
+            >Horizontaal uitgelijnd formulier</a
+          >
+        </li>
+        <li><a href="/components/components/forms/form-layout-inline">"inline"-formulier</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-labelledby="form-fieldset-components-title" id="form-fieldset-components">
+      <h3 id="form-fieldset-components-title">Fieldset</h3>
+
+      <ul>
+        <li><a href="/components/components/forms/form-fieldset">Fieldset</a></li>
+        <li>
+          <a href="/components/components/forms/form-fieldset-invisible"
+            >Onzichtbare fieldset</a
+          >
+        </li>
+        <li>
+          <a href="/components/components/forms/form-fieldset-radio"
+            >Fieldset radio-selecteerknop - `radio`</a
+          >
+        </li>
+        <li>
+          <a href="/components/components/forms/form-fieldset-checkbox"
+            >Fieldset selectievak - `checkbox`</a
+          >
+        </li>
+      </ul>
+    </nav>
+
     <nav aria-labelledby="form-types-title" id="form-types">
       <h3 id="form-types-title">Formulierelementen</h3>
       <ul>
@@ -56,7 +106,7 @@ gebruikers.
           <a href="/components/components/forms/form-input-password">Wachtwoord</a>
         </li>
         <li>
-          <a href="/components/components/forms/checkbox"
+          <a href="/components/components/forms/form-checkbox"
             >Selectievak - `checkbox`</a
           >
         </li>
@@ -70,55 +120,6 @@ gebruikers.
             >Selectielijst - `select`</a
           >
         </li>
-      </ul>
-    </nav>
-
-    <nav aria-labelledby="form-fieldset-components-title" id="form-fieldset-components">
-      <h3 id="form-fieldset-components-title">Fieldset</h3>
-
-      <ul>
-        <li><a href="/components/components/forms/form-fieldset">Fieldset</a></li>
-        <li>
-          <a href="/components/components/forms/form-fieldset-invisible"
-            >Onzichtbare fieldset</a
-          >
-        </li>
-        <li>
-          <a href="/components/components/forms/fieldset-radio"
-            >Fieldset radio-selecteerknop - `radio`</a
-          >
-        </li>
-        <li>
-          <a href="/components/components/forms/fieldset-checkbox"
-            >Fieldset selectievak - `checkbox`</a
-          >
-        </li>
-      </ul>
-    </nav>
-
-    <nav aria-labelledby="form-layouts-title" id="form-layouts">
-      <h3 id="form-layouts-title">Weergaven</h3>
-      <ul>
-        <li><a href="/components/components/forms/form-base">Basisweergave</a></li>
-        <li>
-          <a href="/components/components/form-accent-color"
-            >Accentkleur op formulierelementen</a
-          >
-        </li>
-        <li>
-          <a href="/components/components/forms/form-combined-fields"
-            >Gecombineerde formuliervelden</a
-          >
-        </li>
-        <li>
-          <a href="/components/components/forms/form-columns">Weergave in kolommen</a>
-        </li>
-        <li>
-          <a href="/components/components/forms/form-horizontal"
-            >Horizontaal uitgelijnd formulier</a
-          >
-        </li>
-        <li><a href="/components/components/forms/form-inline">"inline"-formulier</a></li>
       </ul>
     </nav>
 

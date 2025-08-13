@@ -5,8 +5,6 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Verplichte velden</h1>
@@ -20,23 +18,9 @@ nav:
 
 ## Benodigde stappen:
 
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie:
-    [Bijbehorende bestanden](#requirements).
-2.  Geef op de `input` aan dat het invoerveld verplicht is met het `required`
-    attribuut.
-3.  Voeg een `span` toe boven het inputveld. Het is belangrijk om het bericht
-    boven het invoerveld te plaatsen zodat de volgorde ook klopt voor gebruikers
-    die gebruik maken van hulpmiddelen zoals een screenreader.
-4.  Indien het formulier horizontaal uitgelijnd is: groeppeer de `input` en de
-    `span` samen in een `div`. Voor meer informatie zie
-    [Horizontaal uitgelijnd formulier](/components/form-horizontal).
-
 <h2 id="examples">Voorbeelden</h2>
 
-### Invoerveld verplicht
-
-#### Visueel voorbeeld:
+### Voorbeeld: Invoerveld verplicht
 
 <form action="" method="post">
   <div>
@@ -53,8 +37,6 @@ nav:
   </div>
   <button type="submit">Verzend</button>
 </form>
-
-#### HTML-voorbeeld:
 
 ```html
 <form action="" method="post">
@@ -74,7 +56,9 @@ nav:
 </form>
 ```
 
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+<p class="explanation">
+  <span>Aandachtspunten:</span>
+  Voeg een `span` toe boven het inputveld. Het is belangrijk om het bericht
+  boven het invoerveld te plaatsen zodat de volgorde ook klopt voor gebruikers
+  die gebruik maken van hulpmiddelen zoals een screenreader.
+</p>

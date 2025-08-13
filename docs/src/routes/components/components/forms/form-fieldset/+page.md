@@ -5,7 +5,6 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Fieldset - `fieldset`</h1>
@@ -16,19 +15,9 @@ nav:
 @use "@minvws/manon/fieldset";
 ```
 
-## Benodigde stappen:
-
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie:
-    [Bijbehorende bestanden](#requirements).
-2.  Voeg de benodigde HTML toe. Voor meer informatie zie:
-    [Voorbeelden](#examples).
-
 <h2 id="examples">Voorbeelden</h2>
 
-### Visueel voorbeeld:
-
-#### Basis
+#### Voorbeeld: Basis
 
 <form action="" method="post">
   <fieldset>
@@ -38,8 +27,6 @@ nav:
   </fieldset>
   <button type="submit">Verzend</button>
 </form>
-
-### HTML-voorbeeld:
 
 ```html
 <form action="" method="post">
@@ -51,8 +38,3 @@ nav:
   <button type="submit">Verzend</button>
 </form>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)

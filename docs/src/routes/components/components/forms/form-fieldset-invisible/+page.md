@@ -5,15 +5,15 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
 ---
 
-<p class="warning" role="group" aria-label="waarschuwing">
-  <span>Waarschuwing:</span> Visueel onzichtbare fieldset. Waarbij de fieldset toegevoegd is aan de HTML ten behoeve
-  van toegankelijkheid maar niet zichtbaar is.
-</p>
-
 <h1 id="introduction">Onzichtbare fieldset</h1>
+
+Dit is een visueel onzichtbare fieldset. Het is een HTML-element dat wordt
+gebruikt om gerelateerde formulierelementen te groeperen, maar het is niet
+zichtbaar voor de gebruiker. Dit kan nuttig zijn voor toegankelijkheid, omdat
+het screenreaders helpt om de structuur van het formulier te begrijpen zonder
+visuele afleiding.
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -22,17 +22,9 @@ nav:
 @use "@minvws/manon/form-fieldset";
 ```
 
-## Benodigde stappen:
-
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie:
-    [Bijbehorende bestanden](#requirements).
-
 <h2 id="examples">Voorbeelden</h2>
 
-### Visueel voorbeeld:
-
-#### Basis
+### Voorbeeld: Basis
 
 <form action="" method="post">
   <fieldset>
@@ -44,8 +36,6 @@ nav:
   </fieldset>
   <button type="submit">Verzend</button>
 </form>
-
-### HTML-voorbeeld:
 
 ```html
 <form action="" method="post">
@@ -59,31 +49,3 @@ nav:
   <button type="submit">Verzend</button>
 </form>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-<h2 id="variables">Instelbare variabelen</h2>
-
-<ul>
-  <li><a href="/documentation/variables#width">width</a></li>
-  <li><a href="/documentation/variables#resize">resize</a></li>
-  <li><a href="/documentation/variables#min-height">min-height</a></li>
-  <li><a href="/documentation/variables#padding">padding</a></li>
-  <li><a href="/documentation/variables#font-size">font-size</a></li>
-  <li><a href="/documentation/variables#font-family">font-family</a></li>
-  <li><a href="/documentation/variables#text-color">text-color</a></li>
-  <li>
-    <a href="/documentation/variables#background-color">background-color</a>
-  </li>
-  <li><a href="/documentation/variables#border-width">border-width</a></li>
-  <li><a href="/documentation/variables#border-style">border-style</a></li>
-  <li><a href="/documentation/variables#border-color">border-color</a></li>
-</ul>
-
-<p>Bijbehorende elementen:</p>
-<ul>
-  <li><a href="/components/form">form</a></li>
-</ul>
