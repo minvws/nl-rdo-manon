@@ -5,24 +5,13 @@ breadcrumb: Notificaties
 
 <h1 id="introduction">Notificaties</h1>
 
-Waarschuwingen, extra informatie en foutmeldingen.
+Notificaties zijn korte berichten die gebruikers informeren over belangrijke
+gebeurtenissen of acties binnen een applicatie. Ze kunnen worden gebruikt om
+feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.
 
-<p>Aandachtspunten:</p>
-<ul>
-  <li>
-    Het is verstandig om verschillende notificatie-types visueel onderscheidend weer te
-    geven zodat ze in een oogopslag herkenbaar zijn.
-  </li>
-  <li>
-    Voeg de volledige code toe die in de voorbeelden staat om alle gebruikers een goede
-    gebruikerservaring the bieden. Denk hierbij aan gebruikers die kleurenblind zijn of
-    gebruikers die gebruik maken van hulptechnologieën.
-  </li>
-  <li>
-    Notificaties kunnen verborgen worden door de class
-    <code>hidden</code> toe te voegen aan de notification.
-  </li>
-</ul>
+<p class="explanation">
+  <span>Tip:</span> Notificaties kunnen verborgen worden door de class <code>hidden</code> toe te voegen aan de notification.
+</p>
 
 <section id="available-types">
   <h2>Beschikbare weergaven</h2>
@@ -50,9 +39,6 @@ Waarschuwingen, extra informatie en foutmeldingen.
             >Toelichting</a
           >
         </li>
-      </ul>
-      <h4>Andere notificatie-types (niet ondersteund door iCore Open)</h4>
-      <ul>
         <li>
           <a href="/components/components/notifications/notification-system-message"
             >Systeemberichten</a
@@ -79,9 +65,6 @@ Waarschuwingen, extra informatie en foutmeldingen.
             >Pagina-notificatie</a
           >
         </li>
-      </ul>
-      <h4>Andere weergaven (niet ondersteund door iCore Open)</h4>
-      <ul>
         <li>
           <a href="/components/components/notifications/notifications-table">Tabel</a>
         </li>

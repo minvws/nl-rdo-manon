@@ -23,7 +23,7 @@ Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
 
 - Een werkende Node.js omgeving, versie 20 of hoger.
 - Een package manager zoals npm.
-- Een build-system dat sass kan ondersteunen of een sass compiler, zoals
+- Een build-system dat Sass kan ondersteunen. Of een sass compiler, zoals
   `dart-sass`, om de Sass-bestanden te compileren naar CSS.
 
 ## Installatie stappen
@@ -57,11 +57,11 @@ Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
    In je hoofd sass bestand, importeer het Manon framework en het gekozen thema.
 
    ```scss
-   // 1. Importeer het Manon-framework en de bijbehorende componenten
-   @use "@minvws/manon/application-base";
-
-   // 2. Import a theme
+   // 1. Importeer een thema
    @use "@minvws/manon-themes/icore-open";
+
+   // 2. Importeer het Manon-framework en de bijbehorende componenten
+   @use "@minvws/manon/application-base";
    ```
 
 4. **Importeer componenten**
@@ -84,10 +84,47 @@ Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
    bijvoorbeeld dan als volgt:
 
    ```scss
-   @use "@minvws/manon/application-base";
    @use "@minvws/manon-themes/icore-open";
+   @use "@minvws/manon/application-base";
    @use "@minvws/manon/components/button";
    ```
+
+## Javascript
+
+Manon bevat verschillende interactieve componenten die JavaScript vereisen om
+correct te functioneren. Deze componenten zijn ontworpen om eenvoudig te
+integreren in je project.
+
+### Automatische initialisatie
+
+Veel componenten, zoals accordeons en collapsible, worden automatisch
+geïnitialiseerd. Je hoeft alleen het bijbehorende JavaScript-bestand in je
+project op te nemen. De scripts vinden de componenten in je HTML en maken ze
+interactief.
+
+Bijvoorbeeld, om de accordion component te gebruiken, neem je het bestand
+`accordion.js` op, en het script zal automatisch elk `.accordion` element
+initialiseren. Er is dan geen extra JavaScript-code nodig om het component
+werkend te krijgen.
+
+### Manon gebruiken met een bundler
+
+Als je een JavaScript-bundler zoals Vite, Webpack of Rollup gebruikt, kun je de
+Manon-componenten rechtstreeks importeren in de JavaScript-bestanden van je
+project.
+
+#### Componenten importeren
+
+Om een component te gebruiken, importeer je het bijbehorende JavaScript-bestand.
+Bijvoorbeeld, om de **accordion**- en **collapsible**-componenten te gebruiken,
+voeg je het volgende toe aan je hoofd JavaScript-bestand, door gebruik te maken
+van de standaard ES Module import syntax:
+
+```javascript
+// Importeer de Manon-componenten die je nodig hebt
+import "@minvws/manon/accordion.js";
+import "@minvws/manon/collapsible.js";
+```
 
 ## Fonts
 
@@ -125,35 +162,4 @@ van het thema:
     $base-font-family: "Your Custom Font",
     sans-serif
   );
-```
-
-## Javascript
-
-### Automische initialisatie
-
-Veel componenten, zoals accordeons en collapsible, worden automatisch
-geïnitialiseerd. Je hoeft alleen het bijbehorende JavaScript-bestand in je
-project op te nemen. De scripts vinden de componenten in je HTML en maken ze
-interactief.
-
-Bijvoorbeeld, om de accordion component te gebruiken, neem je het bestand
-`accordion.js` op, en het script zal automatisch elk `.accordion` element
-initialiseren.
-
-### Manon gebruiken met een bundler
-
-Als je een JavaScript-bundler zoals Vite, Webpack of Rollup gebruikt, kun je de
-Manon-componenten rechtstreeks importeren in de JavaScript-bestanden van je
-project.
-
-#### Componenten importeren
-
-Om een component te gebruiken, importeer je het bijbehorende JavaScript-bestand.
-Bijvoorbeeld, om de **accordion**- en **collapsible**-componenten te gebruiken,
-voeg je het volgende toe aan je hoofd JavaScript-bestand:
-
-```javascript
-// Importeer de Manon-componenten die je nodig hebt
-import "@minvws/manon/accordion.js";
-import "@minvws/manon/collapsible.js";
 ```
