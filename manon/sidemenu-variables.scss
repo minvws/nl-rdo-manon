@@ -6,6 +6,10 @@
   --sidemenu-main-padding-top: 0;
   --sidemenu-main-padding-bottom: 0;
 
+  // Main content within the page
+  --sidemenu-main-content-block-padding-top: 0;
+  --sidemenu-main-content-block-padding-bottom: 0;
+
   /* Please note that gap and width need to use
   the same type of unit to work. e.g px, rem, em
   As they are used to calculate the page content width. */
