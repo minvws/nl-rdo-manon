@@ -31,6 +31,8 @@ main.sidemenu {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    padding-top: var(--sidemenu-main-content-block-padding-top);
+    padding-bottom: var(--sidemenu-main-content-block-padding-bottom);
 
     @media (width >= $sidemenu-breakpoint) {
       max-width: calc(100% - $page-content-width);
