@@ -3,18 +3,11 @@ title: Zijmenu binnen de pagina
 breadcrumb: Zijmenu binnen de pagina
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Zijmenu binnen de pagina</h1>
-
-<h2 id="quickstart">Snelstart</h2>
-
-```scss
-@use "@minvws/manon/sidemenu";
-```
 
 Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het
 navigeren voor de gebruiker toegankelijk en overzichtelijk te houden.
@@ -115,3 +108,11 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
 [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+
+### Importeer component via npm
+
+#### CSS-voorbeeld:
+
+```scss
+@use "@minvws/manon/sidemenu";
+```
