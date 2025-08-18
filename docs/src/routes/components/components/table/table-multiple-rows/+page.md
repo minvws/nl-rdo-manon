@@ -19,18 +19,14 @@ SCSS importeren:
 @use "@minvws/manon/table";
 ```
 
-## Benodigde stappen:
+## Benodigde stappen
 
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie: [Benodigdheden](#requirements). Voor
-    meer informatie over importeren en instellen van componenten. Zie:
-    [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-2.  Om een datacel over meerdere rijen te plaatsen gebruik een
+1.  Om een datacel over meerdere rijen te plaatsen gebruik een
     `rowspan="[number]"`. Voorbeeld: `rowspan="2"` op de `td`.
 
 <h2 id="examples">Voorbeelden</h2>
 
-### Visueel voorbeeld:
+### Voorbeeld: Data over meerdere rijen
 
 <div class="horizontal-scroll">
   <table>
@@ -59,8 +55,6 @@ SCSS importeren:
     </tbody>
   </table>
 </div>
-
-### HTML-voorbeeld:
 
 ```html
 <div class="horizontal-scroll">

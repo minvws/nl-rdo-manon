@@ -19,17 +19,6 @@ SCSS importeren:
 
 Set voor het instellen van de stijlkeuzes voor de hoofdtekst.
 
-## Benodigde stappen:
-
-1.  Voeg de benodigde bestanden toe aan het project.
-    - Voor een overzicht van de benodigde en optionele bestanden zie:
-      [Bijbehorende bestanden](#requirements).
-    - Vul de variabelen met de gewenste weergaven. Voor meer informatie zie het
-      overzicht met [instelbare variabelen](#variables).
-    - Pas de stijlkeuzes toe waar nodig. De stijlkeuzes kunnen door middel van
-      variabelen binnen de CSS toegepast worden. Voor meer informatie hierover
-      zie [CSS-variabelen gebruiken](/documentation/use-css-variable).
-
 <h2 id="examples">Voorbeelden</h2>
 
 ### Paragraaf

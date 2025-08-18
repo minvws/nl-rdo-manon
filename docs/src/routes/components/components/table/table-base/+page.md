@@ -17,20 +17,16 @@ SCSS importeren:
 @use "@minvws/manon/table";
 ```
 
-<h2 id="examples">Aandachtspunten</h2>
-
-<p>
-  Om tabellen correct weer te geven op smallere schermresoluties, denk hierbij aan mobiele
-  apparaten, dient er een `div` om de `table` te staan met
-  de class
-  `horizontal-scroll`.
+<p class="explanation">
+  <span>Aandachtspunten:</span>
+  Om tabellen correct weer te geven op smallere schermresoluties, denk hierbij
+    aan mobiele apparaten, dient er een `div` om de `table` te staan met de
+    class `horizontal-scroll`.
 </p>
 
 <h2 id="examples">Voorbeelden</h2>
 
-<h3 id="example-base">Basis</h3>
-
-<h4>Visueel voorbeeld</h4>
+### Voorbeeld: Basis
 
 <div class="horizontal-scroll">
   <table>
@@ -66,8 +62,6 @@ SCSS importeren:
     </tbody>
   </table>
 </div>
-
-#### HTML-voorbeeld:
 
 ```html
 <div class="horizontal-scroll">
@@ -108,15 +102,7 @@ SCSS importeren:
 </div>
 ```
 
-<h3 id="example-footer">Tabel met footer</h3>
-
-<p>
-  Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden om een
-  titel toe te voegen met daarin de omschrijving van de tabel. Voeg direct binnen de
-  `table` een `caption` toe om de titel toe te voegen.
-</p>
-
-#### Visueel voorbeeld:
+### Voorbeeld: Tabel met footer
 
 <div class="horizontal-scroll">
   <table>
@@ -159,8 +145,6 @@ SCSS importeren:
     </tfoot>
   </table>
 </div>
-
-#### HTML-voorbeeld:
 
 ```html
 <div class="horizontal-scroll">
@@ -208,9 +192,13 @@ SCSS importeren:
 </div>
 ```
 
-<h3 id="example-row-headers">Tabel met rij-headers</h3>
+<p class="explanation">
+  Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden om een
+  titel toe te voegen met daarin de omschrijving van de tabel. Voeg direct binnen de
+  `table` een `caption` toe om de titel toe te voegen.
+</p>
 
-#### Visueel voorbeeld
+### Voorbeeld: Tabel met rij-headers
 
 <div class="horizontal-scroll">
   <table>
@@ -246,8 +234,6 @@ SCSS importeren:
     </tbody>
   </table>
 </div>
-
-#### HTML-voorbeeld:
 
 ```html
 <div class="horizontal-scroll">

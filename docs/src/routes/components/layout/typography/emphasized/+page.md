@@ -18,13 +18,6 @@ SCSS importeren:
 @use "@minvws/manon/emphasized";
 ```
 
-## Benodigde stappen:
-
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie:
-    [Bijbehorende bestanden](#requirements).
-2.  Vul de variabelen met de gewenste stijlkeuzes. Voor meer informatie zie het
-    overzicht met [instelbare variabelen](#variables).
 3.  Voeg de class `emphasized` toe aan de gewenste elementen. Voor meer
     informatie zie: [Voorbeelden](#examples).
 

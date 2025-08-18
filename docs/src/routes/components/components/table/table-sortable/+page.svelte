@@ -56,8 +56,8 @@
   <SideMenu>
     <ul>
       <li><a href="#introduction">Introductie</a></li>
+      <li><a href="#quick-start">Snelstart</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
-      <li><a href="#requirements">Benodigdheden</a></li>
     </ul>
   </SideMenu>
   <article>
@@ -69,7 +69,164 @@
           sorteren.
         </p>
 
-        <h2>Benodigde stappen:</h2>
+        <h2 id="quick-start">Snelstart:</h2>
+        <p>SCSS importeren:</p>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/table";
+@use "@minvws/manon/table-checkbox";
+@use "@minvws/manon/table/table-base";
+@use "@minvws/manon/table/table-base-variables";
+@use "@minvws/manon/button/button-base";
+@use "@minvws/manon/button/button-base-variables";
+@use "@minvws/manon/icon/icon-base";
+@use "@minvws/manon/icon/icon-base-variables";
+`}
+        />
+
+        <p>JavaScript importeren:</p>
+        <Code
+          language="javascript"
+          code={`
+TODO
+`}
+        />
+      </section>
+
+      <section id="examples">
+        <h2>Voorbeelden</h2>
+        <div class="horizontal-scroll">
+          <table id="sortable-table-example">
+            <caption>
+              Tabelvoorbeeld met sorteerbare data
+              <span class="visually-hidden">, kolomkoppen met knoppen zijn sorteerbaar</span>
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col" aria-sort={sortColumn === "firstname" ? sortDirection : undefined}>
+                  <button class="sort" onclick={() => toggleSort("firstname")}>
+                    Voornaam
+                    <span
+                      aria-hidden="true"
+                      class="icon"
+                      class:icon-sortable={sortColumn !== "firstname"}
+                      class:icon-ascending={sortColumn === "firstname" &&
+                        sortDirection === "ascending"}
+                      class:icon-descending={sortColumn === "firstname" &&
+                        sortDirection === "descending"}
+                    ></span>
+                  </button>
+                </th>
+                <th
+                  scope="col"
+                  abbr="Achternaam"
+                  aria-sort={sortColumn === "lastname" ? sortDirection : undefined}
+                >
+                  <button class="sort" onclick={() => toggleSort("lastname")}>
+                    Achternaam (met tussenvoegsel)
+                    <span
+                      aria-hidden="true"
+                      class="icon"
+                      class:icon-sortable={sortColumn !== "lastname"}
+                      class:icon-ascending={sortColumn === "lastname" &&
+                        sortDirection === "ascending"}
+                      class:icon-descending={sortColumn === "lastname" &&
+                        sortDirection === "descending"}
+                    ></span>
+                  </button>
+                </th>
+                <th
+                  scope="col"
+                  class="number"
+                  aria-sort={sortColumn === "age" ? sortDirection : undefined}
+                >
+                  <button class="sort" onclick={() => toggleSort("age")}>
+                    Leeftijd
+                    <span
+                      aria-hidden="true"
+                      class="icon"
+                      class:icon-sortable={sortColumn !== "age"}
+                      class:icon-ascending={sortColumn === "age" && sortDirection === "ascending"}
+                      class:icon-descending={sortColumn === "age" && sortDirection === "descending"}
+                    ></span>
+                  </button>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {#each sortedDemoTableRows as row}
+                <tr>
+                  <td>{row.firstname}</td>
+                  <td>{row.lastname}</td>
+                  <td class="number">{row.age}</td>
+                </tr>
+              {/each}
+            </tbody>
+          </table>
+        </div>
+
+        <Code
+          language="html"
+          code={`
+<div class="horizontal-scroll">
+  <table>
+    <caption>
+      Tabelvoorbeeld met sorteerbare data
+      <span class="visually-hidden">, kolomkoppen met knoppen zijn sorteerbaar</span>
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">
+          <button>
+            Voornaam
+            <span class="icon icon-sortable" aria-hidden="true"></span>
+          </button>
+        </th>
+        <th scope="col" abbr="Achternaam">
+          <button>
+            Achternaam (met tussenvoegsel)
+            <span class="icon icon-sortable" aria-hidden="true"></span>
+          </button>
+        </th>
+        <th scope="col">
+          <button>
+            Leeftijd
+            <span class="icon icon-sortable" aria-hidden="true"></span>
+          </button>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Janine</td>
+        <td>Hinde</td>
+        <td class="number">16</td>
+      </tr>
+      <tr>
+        <td>Henk</td>
+        <td>de Vries</td>
+        <td class="number">8</td>
+      </tr>
+      <tr>
+        <td>Maria</td>
+        <td>Lin</td>
+        <td class="number">32</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td class="number">64</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+        `}
+        />
+
+        <h3>Benodigde stappen:</h3>
         <ol>
           <li>
             Voeg een <code>&lt;button></code> toe binnen de <code>&lt;th></code> van elke
@@ -157,168 +314,6 @@
             </ul>
           </li>
         </ol>
-
-        <h2>Aandachtspunten</h2>
-        <ul>
-          <li>
-            <strong
-              >Het is voor dit component nodig om het dynamische gedrag zelf via JavaScript te
-              implementeren.</strong
-            >
-          </li>
-          <li>De exacte implementatie in JavaScript is afhankelijk van de context.</li>
-          <li>
-            De manier waarop de data gesorteerd moet worden, kan afhankelijk zijn van het soort data
-            (bijvoorbeeld tekstueel of numeriek). Dit kan per kolom verschillen.
-          </li>
-        </ul>
-      </section>
-
-      <section id="examples">
-        <h2>Voorbeelden</h2>
-        <h3>Visueel voorbeeld:</h3>
-        <div class="horizontal-scroll">
-          <table id="sortable-table-example">
-            <caption>
-              Tabelvoorbeeld met sorteerbare data
-              <span class="visually-hidden">, kolomkoppen met knoppen zijn sorteerbaar</span>
-            </caption>
-            <thead>
-              <tr>
-                <th scope="col" aria-sort={sortColumn === "firstname" ? sortDirection : undefined}>
-                  <button class="sort" onclick={() => toggleSort("firstname")}>
-                    Voornaam
-                    <span
-                      aria-hidden="true"
-                      class="icon"
-                      class:icon-sortable={sortColumn !== "firstname"}
-                      class:icon-ascending={sortColumn === "firstname" &&
-                        sortDirection === "ascending"}
-                      class:icon-descending={sortColumn === "firstname" &&
-                        sortDirection === "descending"}
-                    ></span>
-                  </button>
-                </th>
-                <th
-                  scope="col"
-                  abbr="Achternaam"
-                  aria-sort={sortColumn === "lastname" ? sortDirection : undefined}
-                >
-                  <button class="sort" onclick={() => toggleSort("lastname")}>
-                    Achternaam (met tussenvoegsel)
-                    <span
-                      aria-hidden="true"
-                      class="icon"
-                      class:icon-sortable={sortColumn !== "lastname"}
-                      class:icon-ascending={sortColumn === "lastname" &&
-                        sortDirection === "ascending"}
-                      class:icon-descending={sortColumn === "lastname" &&
-                        sortDirection === "descending"}
-                    ></span>
-                  </button>
-                </th>
-                <th
-                  scope="col"
-                  class="number"
-                  aria-sort={sortColumn === "age" ? sortDirection : undefined}
-                >
-                  <button class="sort" onclick={() => toggleSort("age")}>
-                    Leeftijd
-                    <span
-                      aria-hidden="true"
-                      class="icon"
-                      class:icon-sortable={sortColumn !== "age"}
-                      class:icon-ascending={sortColumn === "age" && sortDirection === "ascending"}
-                      class:icon-descending={sortColumn === "age" && sortDirection === "descending"}
-                    ></span>
-                  </button>
-                </th>
-              </tr>
-            </thead>
-
-            <tbody>
-              {#each sortedDemoTableRows as row}
-                <tr>
-                  <td>{row.firstname}</td>
-                  <td>{row.lastname}</td>
-                  <td class="number">{row.age}</td>
-                </tr>
-              {/each}
-            </tbody>
-          </table>
-        </div>
-
-        <h3>HTML-voorbeeld:</h3>
-        <Code
-          language="html"
-          code={`
-<div class="horizontal-scroll">
-  <table>
-    <caption>
-      Tabelvoorbeeld met sorteerbare data
-      <span class="visually-hidden">, kolomkoppen met knoppen zijn sorteerbaar</span>
-    </caption>
-    <thead>
-      <tr>
-        <th scope="col">
-          <button>
-            Voornaam
-            <span class="icon icon-sortable" aria-hidden="true"></span>
-          </button>
-        </th>
-        <th scope="col" abbr="Achternaam">
-          <button>
-            Achternaam (met tussenvoegsel)
-            <span class="icon icon-sortable" aria-hidden="true"></span>
-          </button>
-        </th>
-        <th scope="col">
-          <button>
-            Leeftijd
-            <span class="icon icon-sortable" aria-hidden="true"></span>
-          </button>
-        </th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>Janine</td>
-        <td>Hinde</td>
-        <td class="number">16</td>
-      </tr>
-      <tr>
-        <td>Henk</td>
-        <td>de Vries</td>
-        <td class="number">8</td>
-      </tr>
-      <tr>
-        <td>Maria</td>
-        <td>Lin</td>
-        <td class="number">32</td>
-      </tr>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td class="number">64</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-        `}
-        />
-      </section>
-
-      <section id="requirements">
-        <h2>Benodigdheden</h2>
-        <ul>
-          <li><code>table/table-base.scss</code></li>
-          <li><code>table/table-base-variables.scss</code></li>
-          <li><code>button/button-base.scss</code></li>
-          <li><code>button/button-base-variables.scss</code></li>
-          <li><code>icon/icon-base.scss</code></li>
-          <li><code>icon/icon-base-variables.scss</code></li>
-        </ul>
       </section>
     </div>
   </article>

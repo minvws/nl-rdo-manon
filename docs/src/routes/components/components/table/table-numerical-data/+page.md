@@ -20,27 +20,13 @@ SCSS importeren:
 @use "@minvws/manon/table";
 ```
 
-## Benodigde stappen:
+### Benodigde stappen
 
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie: [Benodigdheden](#requirements). Voor
-    meer informatie over importeren en instellen van componenten. Zie:
-    [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-2.  Om gebruik te maken van de weergave voor numerieke data, voeg de class
+1.  Om gebruik te maken van de weergave voor numerieke data, voeg de class
     `number` toe aan de cellen die numerieke data bevatten en de bijbehorende
     titelblokken
 
-## Aandachtspunten
-
-- Getallen worden vaak rechts uitgelijnd voor leesbaarheid.
-- Voor consistentie wordt de titel van kolommen met numerieke data vaak op
-  dezelfde manier uitgelijnd.
-- Getallen worden <dfn>mono-spaced</dfn> weergegeven, wat inhoud dat ieder getal
-  dezelfde breedte heeft waardoor getallen onderling goed te vergelijken zijn.
-
 <h2 id="examples">Voorbeelden</h2>
-
-### Visueel voorbeeld:
 
 <div class="horizontal-scroll">
   <table>
@@ -97,3 +83,18 @@ SCSS importeren:
   </table>
 </div>
 ```
+
+<div class="explanation" role="group" aria-label="Toelichting">
+  <span>Aandachtspunten</span>
+  <ul>
+    <li>
+      Getallen worden vaak rechts uitgelijnd voor leesbaarheid.
+    </li>
+    <li>
+      Voor consistentie wordt de titel van kolommen met numerieke data vaak op dezelfde manier uitgelijnd.
+    </li>
+    <li>
+      Getallen worden <dfn>mono-spaced</dfn> weergegeven, wat inhoud dat ieder getal dezelfde breedte heeft waardoor getallen onderling goed te vergelijken zijn.
+    </li>
+  </ul>
+</div>

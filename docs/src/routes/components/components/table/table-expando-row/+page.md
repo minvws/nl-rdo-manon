@@ -5,16 +5,12 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Benodigdheden: "#requirements"
-  - Beschikbare variabelen: "#variables"
 ---
 
-<p class="warning">
-  Let op: Deze tabelstructuur kan als complex ervaren worden door gebruikers. Zeker in
-  combinatie met hulptechnologieën. Maak enkel gebruik van deze opzet als het de gebruiker
-  helpt om complexe data te begrijpen.
-</p>
 <h1 id="introduction">Uitklapbare tabel</h1>
+
+Voor het tonen van complexe tabellen met bijbehorende details kan gekozen worden
+voor een tabel met uitklapbare tabelrijen.
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -23,10 +19,13 @@ nav:
 @use "@minvws/manon/table-expando-rows";
 ```
 
-Voor het tonen van complexe tabellen met bijbehorende details kan gekozen worden
-voor een tabel met uitklapbare tabelrijen.
+<p class="warning">
+  Let op: Deze tabelstructuur kan als complex ervaren worden door gebruikers. Zeker in
+  combinatie met hulptechnologieën. Maak enkel gebruik van deze opzet als het de gebruiker
+  helpt om complexe data te begrijpen.
+</p>
 
-## Benodigde stappen:
+### Benodigde stappen
 
 1.  Voeg een extra `tr` direct onder de bijbehorende zichtbare rij toe om een
     uitklapbare rij toe te voegen.
@@ -63,18 +62,20 @@ voor een tabel met uitklapbare tabelrijen.
       informatie over het toevoegen van iconensets, zie [Iconen](/icons). Voor
       een implementatievoorbeeld zie het [html-voorbeeld](#examples).
 
-## Aandachtspunten
-
-- **Let op: Deze tabelstructuur kan als complex ervaren worden door gebruikers.
-  Zeker in combinatie met hulptechnologieën. Maak enkel gebruik van deze opzet
-  als het de gebruiker helpt om complexe data te begrijpen.**
-- Wanneer JavaScript niet beschikbaar is, worden alle uitklapbare tabelrijen
-  uitgeklapt getoond en worden de expando-`button`s verborgen zodat alle data
-  ook beschikbaar is voor gebruikers zonder JavaScript.
-- Om een tabelrij standaard uitgeklapt te maken, voeg je `aria-expanded="true"`
-  toe aan de `button`. Verander hierbij ook de button-tekst naar bijvoorbeeld
-  "Sluit details", en vervang de `data-close-label` door een `data-open-label`
-  met bijbehorende tekst zoals bijvoorbeeld "Open details.
+<div class="explanation" role="group" aria-label="Toelichting">
+  <span>Aandachtspunten</span>
+  <ul>
+    <li>
+      Let op: Deze tabelstructuur kan als complex ervaren worden door gebruikers. Zeker in combinatie met hulptechnologieën. Maak enkel gebruik van deze opzet als het de gebruiker helpt om complexe data te begrijpen.**
+    </li>
+    <li>
+      Wanneer JavaScript niet beschikbaar is, worden alle uitklapbare tabelrijen uitgeklapt getoond en worden de expando-`button`s verborgen zodat alle data ook beschikbaar is voor gebruikers zonder JavaScript.
+    </li>
+    <li>
+      Om een tabelrij standaard uitgeklapt te maken, voeg je `aria-expanded="true"` toe aan de `button`. Verander hierbij ook de button-tekst naar bijvoorbeeld "Sluit details", en vervang de `data-close-label` door een `data-open-label` met bijbehorende tekst zoals bijvoorbeeld "Open details.
+    </li>
+  </ul>
+</div>
 
 <h2 id="examples">Voorbeelden</h2>
 
@@ -145,8 +146,6 @@ voor een tabel met uitklapbare tabelrijen.
   </table>
 </div>
 
-### HTML-voorbeeld:
-
 ```html
 <div class="horizontal-scroll">
   <table>
@@ -215,78 +214,3 @@ voor een tabel met uitklapbare tabelrijen.
   </table>
 </div>
 ```
-
-<h2 id="requirements">Benodigdheden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-<h2 id="variables">Instelbare variabelen</h2>
-
-<div class="horizontal-scroll nowrap">
-  <table>
-    <caption>Overzicht beschikbare variabelen:</caption>
-    <thead>
-      <tr>
-        <th scope="col">Naam</th>
-        <th scope="col">CSS-attribuut</th>
-        <th scope="col">Standaard waarde</th>
-        <th scope="col">Scope</th>
-        <th scope="col">Type</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>--expando-rows-table-cell-background-color</td>
-        <td><a href="/documentation/variables#background-color">background-color</a></td>
-        <td>#e5e5e5</td>
-        <td>Openklapbare cel - td</td>
-        <td>CSS</td>
-      </tr>
-      <tr>
-        <td>--expando-rows-table-cell-padding</td>
-        <td><a href="/documentation/variables#padding">padding</a></td>
-        <td>2rem 1rem</td>
-        <td>Openklapbare cel - td</td>
-        <td>CSS</td>
-      </tr>
-      <tr>
-        <td>--expando-rows-table-cell-after-breakpoint-padding</td>
-        <td><a href="/documentation/variables#padding">padding</a></td>
-        <td>2rem 3rem</td>
-        <td>Openklapbare cel - td</td>
-        <td>CSS</td>
-      </tr>
-
-      <tr>
-        <td>$breakpoint</td>
-        <td><a href="/documentation/variables#breakpoints">Breekpunt</a></td>
-        <td>24rem !default</td>
-        <td>Subtitel binnen de openklapbare cel - h2</td>
-        <td>SASS</td>
-      </tr>
-      <tr>
-        <td>--expando-rows-row-background-color</td>
-        <td><a href="/documentation/variables#background-color">background-color</a></td>
-        <td>transparent</td>
-        <td>De openklapbare rij</td>
-        <td>CSS</td>
-      </tr>
-      <tr>
-        <td>--expando-rows-row-striping-background-color</td>
-        <td><a href="/documentation/variables#background-color">background-color</a></td>
-        <td>var(--table-row-background-color-striping, initial)</td>
-        <td>De openklapbare rij</td>
-        <td>CSS</td>
-      </tr>
-      <tr>
-        <td>--expando-rows-row-font-weight</td>
-        <td><a href="/documentation/variables#font-weight">font-weight</a></td>
-        <td>bold</td>
-        <td>De openklapbare rij</td>
-        <td>CSS</td>
-      </tr>
-    </tbody>
-
-  </table>
-</div>

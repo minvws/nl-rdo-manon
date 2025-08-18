@@ -34,7 +34,17 @@
         <h1 id="introduction">Tabelrij met checkbox</h1>
         <p>Voor het selecteren van rijen van een tabel.</p>
 
-        <h2 <h2>Benodigde stappen:</h2>
+        <h2 id="quick-start">Snelstart:</h2>
+        <p>SCSS importeren:</p>
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/table";
+@use "@minvws/manon/table-checkbox;
+`}
+        />
+
+        <h3>Benodigde stappen:</h3>
         <ol>
           <li>
             Voeg de <code>checkbox</code> toe aan de benodigde cellen. Voor het voorbeeld zie:
@@ -68,38 +78,6 @@
             >.
           </li>
         </ol>
-
-        <h2>Aandachtspunten</h2>
-        <ul>
-          <li>
-            Zorg ervoor dat het duidelijk is wat er gebeurt als een checkbox geselecteerd wordt.
-          </li>
-          <li>
-            Het is mogelijk een <code>checkbox</code> toe te voegen binnen de <code>{`<th>`}</code>
-            waarmee alle checkboxes tegelijkertijd kunnen worden aan- of uit-geschakelt.
-            <ul>
-              <li>
-                Om verwarring te voorkomen, kan deze checkbox beter <strong>geen</strong> toegankelijk
-                label krijgen, omdat deze anders door de meeste screenreaders voor elke rij voorgelezen
-                zou worden.
-              </li>
-              <li>
-                In plaats daarvan is het belangrijk om in de <code>{`<caption>`}</code> de functie
-                van de checkbox in de header toe te lichten. Maak deze toelichting bij voorkeur zo
-                kort en duidelijk mogelijk. Bijvoorbeeld: "selectievak in kolom 1 rij 1 selecteert
-                alle rijen". Plaats de toelichting eventueel in een
-                <code>{`<span class="visually-hidden">`}</code> als het wenselijk is om deze visueel
-                te verbergen.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong
-              >Het is voor dit component nodig om het dynamische gedrag zelf via JavaScript te
-              implementeren.</strong
-            > De exacte implementatie in JavaScript is afhankelijk van de context.
-          </li>
-        </ul>
       </section>
 
       <section id="examples">
@@ -192,6 +170,41 @@
 
 `}
         />
+
+        <div class="explanation" role="group" aria-label="Toelichting">
+          <span>Aandachtspunten</span>
+          <ul>
+            <li>
+              Zorg ervoor dat het duidelijk is wat er gebeurt als een checkbox geselecteerd wordt.
+            </li>
+            <li>
+              Het is mogelijk een <code>checkbox</code> toe te voegen binnen de
+              <code>{`<th>`}</code>
+              waarmee alle checkboxes tegelijkertijd kunnen worden aan- of uit-geschakelt.
+              <ul>
+                <li>
+                  Om verwarring te voorkomen, kan deze checkbox beter <strong>geen</strong> toegankelijk
+                  label krijgen, omdat deze anders door de meeste screenreaders voor elke rij voorgelezen
+                  zou worden.
+                </li>
+                <li>
+                  In plaats daarvan is het belangrijk om in de <code>{`<caption>`}</code> de functie
+                  van de checkbox in de header toe te lichten. Maak deze toelichting bij voorkeur zo
+                  kort en duidelijk mogelijk. Bijvoorbeeld: "selectievak in kolom 1 rij 1 selecteert
+                  alle rijen". Plaats de toelichting eventueel in een
+                  <code>{`<span class="visually-hidden">`}</code> als het wenselijk is om deze visueel
+                  te verbergen.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong
+                >Het is voor dit component nodig om het dynamische gedrag zelf via JavaScript te
+                implementeren.</strong
+              > De exacte implementatie in JavaScript is afhankelijk van de context.
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   </article>

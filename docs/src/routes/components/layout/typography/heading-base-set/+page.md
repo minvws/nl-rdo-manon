@@ -22,17 +22,6 @@ nav:
 
 Basisset voor het stylen van titels.
 
-## Benodigde stappen:
-
-1.  Voeg de benodigde bestanden toe aan het project.
-    -   Voor een overzicht van de benodigde en optionele bestanden zie: [Bijbehorende bestanden](#requirements).
-    -   Vul de variabelen met de gewenste weergaven. Voor meer informatie zie het overzicht met [instelbare variabelen](#variables).
-    -   Pas de titelweergaven toe waar nodig. De titelweergaven kunnen op twee manieren
-        toegepast worden. Door middel van variabelen binnen de CSS of door middel van
-        classes binnen de HTML. Maak gebruik van de CSS-variabelen waar mogelijk en voeg
-        alleen de classes toe in de HTML voor uitzonderingen om de code aanpasbaar en
-        overzichtelijk te houden. Voor meer informatie hierover zie [CSS-variabelen gebruiken](/documentation/use-css-variable).
-
 <h2 id="examples">Voorbeelden</h2>
 
 ### Beschikbare opties
