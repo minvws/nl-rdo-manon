@@ -3,14 +3,21 @@ title: Tabeldata over meerdere rijen
 breadcrumb: Tabeldata over meerdere rijen
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
-  - Benodigdheden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Tabeldata over meerdere rijen</h1>
 
 Data weergeven over meer dan een rij kan gebruikt worden binnen tabellen.
+
+<h2 id="quick-start">Snelstart</h2>
+
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/table";
+```
 
 ## Benodigde stappen:
 
@@ -86,20 +93,3 @@ Data weergeven over meer dan een rij kan gebruikt worden binnen tabellen.
   </table>
 </div>
 ```
-
-<h2 id="requirements">Benodigdheden</h2>
-
-<ul>
-  <li>`table/table-base.scss`</li>
-  <li>`table/table-base-variables.scss`</li>
-</ul>
-
-<h2 id="variables">Instelbare variabelen</h2>
-
-<p class="system-notification" role="group" aria-label="systeembericht">
-  Dit component heeft momenteel geen instelbare variabelen
-</p>
-
-<h2 id="related">Gerelateerde pagina's</h2>
-
-<a href="/components/table-multiple-rows-test">Test- en voorbeelden-pagina</a>

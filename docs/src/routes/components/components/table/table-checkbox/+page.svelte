@@ -25,17 +25,16 @@
     <ul>
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
-      <li><a href="#requirements">Benodigdheden</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
+      <li><a href="#quick-start">Snelstart</a></li>
     </ul>
   </SideMenu>
   <article>
     <div>
-      <section id="introduction">
-        <h1>Tabelrij met checkbox</h1>
+      <section>
+        <h1 id="introduction">Tabelrij met checkbox</h1>
         <p>Voor het selecteren van rijen van een tabel.</p>
 
-        <h2>Benodigde stappen:</h2>
+        <h2 <h2>Benodigde stappen:</h2>
         <ol>
           <li>
             Voeg de <code>checkbox</code> toe aan de benodigde cellen. Voor het voorbeeld zie:
@@ -105,7 +104,6 @@
 
       <section id="examples">
         <h2>Voorbeelden</h2>
-        <h3>Visueel voorbeeld:</h3>
         <div class="horizontal-scroll">
           <form>
             <table>
@@ -147,7 +145,6 @@
           </form>
         </div>
 
-        <h3>HTML-voorbeeld:</h3>
         <Code
           language="html"
           code={`
@@ -195,31 +192,6 @@
 
 `}
         />
-      </section>
-
-      <section id="requirements">
-        <h2>Bijbehorende bestanden</h2>
-        <p>
-          Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling"
-            >Componenten gebruiken en styling toevoegen</a
-          >
-        </p>
-
-        <h3>Importeer component via npm</h3>
-        <h4>CSS-voorbeeld:</h4>
-        <Code
-          language="css"
-          code={`
-@use "@minvws/manon/table";
-@use "@minvws/manon/form-checkbox";
-`}
-        />
-      </section>
-
-      <section id="related">
-        <h2>Gerelateerde pagina's</h2>
-        <a href="table-checkbox-test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

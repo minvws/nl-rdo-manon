@@ -12,6 +12,8 @@ nav:
 
 <h2 id="quickstart">Snelstart</h2>
 
+SCSS importeren:
+
 ```scss
 @use "@minvws/manon/layout-form";
 ```
@@ -86,15 +88,3 @@ daarvoor: [Basis formulieren](/components/form).
   <!-- Content -->
 </form>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Aandachtspunten:
-
-- De standaard ingestelde waarden binnen Manon maken gebruik van de
-  [Body text set](/components/layout/typography/body-text-set). Om gebruik te
-  maken van deze set. Laad de set eenmalig in voordat overige componenten er
-  gebruik van maken. Zie onderstaand voorbeeld voor meer informatie.

@@ -5,13 +5,13 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction"><code>div</code></h1>
 
 <h2 id="quickstart">Snelstart</h2>
+
+SCSS importeren:
 
 ```scss
 @use "@minvws/manon/div";
@@ -47,8 +47,3 @@ Beschikbare styling sets voor layout zijn:
   <!-- Content -->
 </div>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)

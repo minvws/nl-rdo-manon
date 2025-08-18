@@ -3,14 +3,19 @@ title: Tabel basisweergave
 breadcrumb: Tabel basisweergave
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
-    - Basis: "#example-base"
-    - Tabel met footer: "#example-footer"
-    - Tabel met rij-headers: "#example-row-headers"
-  - Benodigde bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Tabel</h1>
+
+<h2 id="quick-start">Snelstart</h2>
+
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/table";
+```
 
 <h2 id="examples">Aandachtspunten</h2>
 
@@ -281,17 +286,4 @@ nav:
     </tbody>
   </table>
 </div>
-```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/table";
 ```

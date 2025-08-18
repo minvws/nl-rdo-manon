@@ -3,15 +3,23 @@ title: "sticky header"
 breadcrumb: "sticky header"
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
-  - Benodigdheden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">"sticky header"</h1>
 
 Voor lange tabellen kan het gewenst zijn om de tabel-header in het zicht te
 houden zodat de gebruiker de titels kan zien.
+
+<h2 id="quick-start">Snelstart</h2>
+
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/table";
+@use "@minvws/manon/sticky-header";
+```
 
 ## Benodigde stappen:
 
@@ -166,21 +174,3 @@ houden zodat de gebruiker de titels kan zien.
   </table>
 </div>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/table";
-@use "@minvws/manon/sticky-header";
-```
-
-<h2 id="related">Gerelateerde pagina's</h2>
-
-<a href="/components/table-sticky-header-test">Test- en voorbeelden-pagina</a>

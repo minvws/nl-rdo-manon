@@ -5,12 +5,13 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Body text set</h1>
 
 <h2 id="quickstart">Snelstart</h2>
+
+SCSS importeren:
 
 ```scss
 @use "@minvws/manon/body-text-set";
@@ -93,8 +94,3 @@ Set voor het instellen van de stijlkeuzes voor de hoofdtekst.
   nostra, per inceptos himenaeos.
 </p>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)

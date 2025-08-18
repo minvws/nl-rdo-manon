@@ -3,15 +3,23 @@ title: Meldingen op tabel-elementen
 breadcrumb: Meldingen op tabel-elementen
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
-  - Benodigdheden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Meldingen op tabel-elementen</h1>
 
 Tabelelementen kunnen een meldig weergeven. Denk hierbij aan een foutmelding of
 een toelichting.
+
+<h2 id="quick-start">Snelstart</h2>
+
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/table";
+@use "@minvws/manon/notification";
+```
 
 ## Benodigde stappen:
 

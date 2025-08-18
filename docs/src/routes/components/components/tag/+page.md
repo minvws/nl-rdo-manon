@@ -5,12 +5,13 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Tag</h1>
 
 <h2 id="quickstart">Snelstart</h2>
+
+SCSS importeren:
 
 ```scss
 @use "@minvws/manon/tag";
@@ -178,19 +179,3 @@ data-sets.
 ```html
 <p class="tag tags-color-1 dashed">Lorem ipsum</p>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Kleurensets
-
-<p>
-  De bruikbare kleuren voor de tags worden toegevoegd via kleurensets. Beschikbare sets
-  zijn:
-</p>
-<ul>
-  <li><a href="tags-6">Tags kleurenset zes kleuren</a></li>
-  <li><a href="tags-6-3">Tags kleurenset zes kleuren & drie tinten</a></li>
-</ul>

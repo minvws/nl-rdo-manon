@@ -3,14 +3,21 @@ title: Tabeldata over meerdere kolommen
 breadcrumb: Tabeldata over meerdere kolommen
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
-  - Benodigdheden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Tabeldata over meerdere kolommen</h1>
 
 Data weergeven over meer dan een rij kan gebruikt worden binnen tabellen.
+
+<h2 id="quick-start">Snelstart</h2>
+
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/table";
+```
 
 ## Benodigde stappen:
 
@@ -74,27 +81,3 @@ Data weergeven over meer dan een rij kan gebruikt worden binnen tabellen.
   </table>
 </div>
 ```
-
-<h2 id="requirements">Benodigdheden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/table";
-```
-
-<h2 id="variables">Instelbare variabelen</h2>
-
-<p class="system-notification" role="group" aria-label="systeembericht">
-  Dit component heeft momenteel geen instelbare variabelen
-</p>
-
-<h2 id="related">Gerelateerde pagina's</h2>
-
-<a href="/components/table-multiple-columns-test">Test- en
-voorbeelden-pagina</a>

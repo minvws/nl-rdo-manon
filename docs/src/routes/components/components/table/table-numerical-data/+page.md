@@ -3,15 +3,22 @@ title: Tabel met numerieke data
 breadcrumb: Tabel met numerieke data
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
-  - Benodigdheden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Tabel met numerieke data</h1>
 
 Getallen worden visueel onderscheidend weergegeven van overige celdata om de
 gebruiksvriendelijkheid te vergroten.
+
+<h2 id="quick-start">Snelstart</h2>
+
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/table";
+```
 
 ## Benodigde stappen:
 
@@ -90,16 +97,3 @@ gebruiksvriendelijkheid te vergroten.
   </table>
 </div>
 ```
-
-<h2 id="requirements">Benodigdheden</h2>
-
-<ul>
-  <li>`table/table-base.scss`</li>
-  <li>`table/table-base-variables.scss`</li>
-  <li>`form/form-checkbox.scss`</li>
-  <li>`form/form-checkbox-variables.scss`</li>
-</ul>
-
-<h2 id="related">Gerelateerde pagina's</h2>
-
-<a href="/components/table-numerical-data-test">Test- en voorbeelden-pagina</a>

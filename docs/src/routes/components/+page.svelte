@@ -30,6 +30,9 @@
         <ul>
           <li><a href="{base}/components/layout/main">Main</a></li>
           <li><a href="{base}/components/layout/section">Section</a></li>
+          <li>
+            <a href="{base}/components/layout/section-content-wrapper">Section content wrapper</a>
+          </li>
           <li><a href="{base}/components/layout/article">Article</a></li>
           <li>
             <a href="{base}/components/layout/article-content-wrapper">Article content wrapper</a>

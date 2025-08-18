@@ -5,13 +5,13 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Subtielere weergave</h1>
 
 <h2 id="quickstart">Snelstart</h2>
+
+SCSS importeren:
 
 ```scss
 @use "@minvws/manon/body-text-set";
