@@ -32,7 +32,7 @@
           <div>
             <input
               id="password"
-              name="achtwoord"
+              name="password"
               placeholder="wachtwoord"
               type="text"
               aria-describedby="password-message"
