@@ -34,7 +34,7 @@
               id="password"
               name="password"
               placeholder="Wachtwoord"
-              type="text"
+              type="password"
               aria-describedby="password-message"
             />
             <p
