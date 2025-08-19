@@ -33,7 +33,7 @@
             <input
               id="password"
               name="password"
-              placeholder="wachtwoord"
+              placeholder="Wachtwoord"
               type="text"
               aria-describedby="password-message"
             />
