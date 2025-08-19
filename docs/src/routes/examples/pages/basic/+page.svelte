@@ -16,7 +16,7 @@
     </div>
   </nav>
 </header>
-<main>
+<main id="main-content">
   <section>
     <div></div>
   </section>
