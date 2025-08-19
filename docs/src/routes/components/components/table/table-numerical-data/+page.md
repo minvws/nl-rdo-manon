@@ -60,8 +60,6 @@ SCSS importeren:
   </table>
 </div>
 
-### HTML-voorbeeld:
-
 ```html
 <div class="horizontal-scroll">
   <table>

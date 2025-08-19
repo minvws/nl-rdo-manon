@@ -5,14 +5,11 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-    - Beschikbare opties: "#examples"
-    - HTML-element stijling ingesteld via CSS voorbeeld: "#examples"
-    - Variabele gebruiken binnen een andere variabele: "#examples"
-    - Class gebruiken binnen de HTML: "#examples"
-  - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Titel basisset</h1>
+
+Basisset voor het stylen van titels.
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -20,22 +17,9 @@ nav:
 @use "@minvws/manon/heading-base-set";
 ```
 
-Basisset voor het stylen van titels.
-
 <h2 id="examples">Voorbeelden</h2>
 
-### Beschikbare opties
-
-- heading-xxl
-- heading-xl
-- heading-large
-- heading-normal
-- heading-small
-- heading-xs
-
-### HTML-element stijling ingesteld via CSS voorbeeld
-
-#### Visueel voorbeeld:
+### Voorbeeld: HTML-element stijling ingesteld via CSS voorbeeld
 
 <div class="visual-example">
   <h1>h1 met weergave heading XXL</h1>
@@ -46,8 +30,6 @@ Basisset voor het stylen van titels.
   <h6>h6 met weergave heading XS</h6>
 </div>
 
-#### HTML-voorbeeld:
-
 ```html
 <h1>h1 met weergave heading XXL</h1>
 <h2>h2 met weergave heading XL</h2>
@@ -57,39 +39,26 @@ Basisset voor het stylen van titels.
 <h6>h6 met weergave heading XS</h6>
 ```
 
-### Variabele gebruiken binnen een andere variabele
+### Voorbeeld: Class gebruiken binnen de HTML
 
-<p>
-  In dit voorbeeld is de styling ingesteld door een van de variabelen uit deze set in te
-  laden binnen de variabele om de h1 te stylen.
-</p>
+Dit voorbeeld maakt gebruik van de classes uit deze set direct op de
+HTML-elementen. Dit is een geschikte manier voor uitzonderingen.
 
-#### CSS-voorbeeld:
+Beschikbare opties:
 
-```css
-:root {
-  --headings-h1-font-size: var(--heading-xxl-font-size);
-}
-```
+- heading-xxl
+- heading-xl
+- heading-large
+- heading-normal
+- heading-small
+- heading-xs
 
-<p>
-  Voor meer informatie hierover zie [CSS-variabelen gebruiken](/documentation/use-css-variable).
-</p>
-
-### Class gebruiken binnen de HTML
-
-<p>
-  Dit voorbeeld maakt gebruik van de classes uit deze set direct op de HTML-elementen. Dit
-  is een geschikte manier voor uitzonderingen.
-</p>
 <p class="warning">
   <span>Waarschuwing:</span> Waar mogelijk is het altijd aan te raden zo min mogelijk classes
   te gebruiken maar om gebruik te maken van het overerven van CSS. Maar omdat een uitzondering
   soms nodig is, is het mogelijk om de titelweergaven ook direct in de html te kunnen definiëren
   door middel van een classes.
 </p>
-
-#### Visueel voorbeeld:
 
 <div class="visual-example">
   <h3 class="heading-xxl">Heading XXL</h3>
@@ -100,8 +69,6 @@ Basisset voor het stylen van titels.
   <h3 class="heading-xs">Heading XS</h3>
 </div>
 
-#### HTML-voorbeeld:
-
 ```html
 <h3 class="heading-xxl">Heading XXL</h3>
 <h3 class="heading-xl">Heading XL</h3>
@@ -110,8 +77,3 @@ Basisset voor het stylen van titels.
 <h3 class="heading-small">Heading Small</h3>
 <h3 class="heading-xs">Heading XS</h3>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)

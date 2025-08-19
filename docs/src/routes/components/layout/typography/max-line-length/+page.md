@@ -23,16 +23,15 @@ maximale regellengte van 80 karakters. Dit vertaalt zich tot ongeveer 40rem.
 @use "@minvws/manon/max-line-length";
 ```
 
-<h2 id="examples">Voorbeelden:</h2>
-
-### Visueel voorbeeld:
+<h2 id="examples">Voorbeelden</h2>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis odio
 lorem, sit amet elementum lectus interdum id. Cras in lectus id diam dignissim
 dignissim vel eu turpis. Sed diam ante.
 
-### HTML-voorbeeld:
-
-Er is geen aangepaste HTML nodig om gebruik te maken van dit component zodra de
-styling is toegevoegd aan het project. De styling heeft invloed op de volgende
-elementen: `p` `a` `span` `li`
+<p class="explanation">
+  <span>Aandachtspunten:</span>
+  Er is geen aangepaste HTML nodig om gebruik te maken van dit component zodra de
+  styling is toegevoegd aan het project. De styling heeft invloed op de volgende
+  elementen: <code>p</code>, <code>a</code>, <code>span</code>, <code>li</code>.
+</p>

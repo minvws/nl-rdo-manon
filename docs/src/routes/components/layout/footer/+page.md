@@ -9,6 +9,9 @@ nav:
 
 <h1 id="introduction">Footer</h1>
 
+De footer wordt vaak gebruikt als extra navigatiepunt en om aan te geven aan de
+gebruiker dat het einde van de pagina bereikt is.
+
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
@@ -17,20 +20,7 @@ SCSS importeren:
 @use "@minvws/manon/footer";
 ```
 
-De footer wordt vaak gebruikt als extra navigatiepunt en om aan te geven aan de
-gebruiker dat het einde van de pagina bereikt is.
-
-## Benodigde stappen:
-
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie:
-    [Bijbehorende bestanden](#requirements). Voor meer informatie over
-    importeren en instellen van componenten. Zie:
-    [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
 <h1 id="examples">Voorbeelden:</h1>
-
-<h2>Visueel voorbeeld:</h2>
 
 <footer>
   <nav aria-labelledby="footer-nav-1-heading">
@@ -42,8 +32,6 @@ gebruiker dat het einde van de pagina bereikt is.
     </ul>
   </nav>
 </footer>
-
-<h2>HTML-voorbeeld:</h2>
 
 ```html
 <p>

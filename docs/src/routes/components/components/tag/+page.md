@@ -9,6 +9,9 @@ nav:
 
 <h1 id="introduction">Tag</h1>
 
+Visuele labels om bijvoorbeeld groeperingen aan te brengen binnen content en
+data-sets.
+
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
@@ -17,57 +20,32 @@ SCSS importeren:
 @use "@minvws/manon/tag";
 ```
 
-Visuele labels om bijvoorbeeld groeperingen aan te brengen binnen content en
-data-sets.
-
-## Benodigde stappen:
-
-1.  Voeg de benodigde bestanden toe aan het project.
-    - Voor een overzicht van de benodigde en optionele bestanden zie:
-      [Bijbehorende bestanden](#requirements).
-    - Voeg de benodigde class toe op de gewenste elementen. Voor meer informatie
-      over het implementeren zie de [voorbeelden](#examples).
-
 <h2 id="examples">Voorbeelden</h2>
 
-### `p` als tag
-
-#### Visueel voorbeeld:
+### Voorbeeld: `p` als tag
 
 <p class="tag tags-color-1">Lorem ipsum</p>
-
-#### HTML-Voorbeeld:
 
 ```html
 <p class="tag tags-color-1">Lorem ipsum</p>
 ```
 
-### `span` als tag
-
-#### Visueel voorbeeld:
+### Voorbeeld: `span` als tag
 
 <span class="tag tags-color-1">Lorem ipsum</span>
-
-#### HTML-Voorbeeld:
 
 ```html
 <span class="tag tags-color-1">Lorem ipsum</span>
 ```
 
-### `li` als tag
+### Voorbeeld: `li` als tag
 
-<p>
-  Lijst-element visueel weergegeven als tag. Voor het direct aanspreken van alle
-  lijstelementen zie: [tags](/tags).
-</p>
-
-#### Visueel voorbeeld:
+Lijst-element visueel weergegeven als tag. Voor het direct aanspreken van alle
+lijstelementen zie: [tags](/tags).
 
 <ul>
   <li class="tag tags-color-1">Lorem ipsum</li>
 </ul>
-
-#### HTML-Voorbeeld:
 
 ```html
 <ul>
@@ -75,14 +53,10 @@ data-sets.
 </ul>
 ```
 
-### Tags binnen een tabel
+### Voorbeeld: Tags binnen een tabel
 
-<p>
-  Tabel-elementen visueel weergegeven als tag. Voor het direct aanspreken van alle
-  tabelelementen zie: [tags](/tags).
-</p>
-
-#### Visueel voorbeeld:
+Tabel-elementen visueel weergegeven als tag. Voor het direct aanspreken van alle
+tabelelementen zie: [tags](/tags).
 
 <div class="horizontal-scroll">
   <table>
@@ -103,8 +77,6 @@ data-sets.
     </tbody>
   </table>
 </div>
-
-#### HTML-Voorbeeld:
 
 ```html
 <div class="horizontal-scroll">
@@ -130,51 +102,33 @@ data-sets.
 </div>
 ```
 
-### Tag styles
+### Voorbeeld: Tag styles
 
-<p>Gebruik van verschillende `border-styles`.</p>
+Gebruik van verschillende `border-styles`.
 
-<p>
-  Om de hoogte van alle tags gelijk te houden wordt de class `plain` toegevoegd. Visueel
-  is er geen omlijning zichtbaar, maar deze wordt wel toegevoegd in de achtergrondkleur van de
-  tag.
-</p>
-
-#### Visueel voorbeeld:
+Om de hoogte van alle tags gelijk te houden wordt de class `plain` toegevoegd.
+Visueel is er geen omlijning zichtbaar, maar deze wordt wel toegevoegd in de
+achtergrondkleur van de tag.
 
 <p class="tag tags-color-1 plain">Lorem ipsum</p>
-
-#### HTML-Voorbeeld:
 
 ```html
 <p class="tag tags-color-1 plain">Lorem ipsum</p>
 ```
 
-#### Visueel voorbeeld:
-
 <p class="tag tags-color-1 solid">Lorem ipsum</p>
-
-#### HTML-Voorbeeld:
 
 ```html
 <p class="tag tags-color-1 solid">Lorem ipsum</p>
 ```
 
-#### Visueel voorbeeld:
-
 <p class="tag tags-color-1 dotted">Lorem ipsum</p>
-
-#### HTML-Voorbeeld:
 
 ```html
 <p class="tag tags-color-1 dotted">Lorem ipsum</p>
 ```
-
-#### Visueel voorbeeld:
 
 <p class="tag tags-color-1 dashed">Lorem ipsum</p>
-
-#### HTML-Voorbeeld:
 
 ```html
 <p class="tag tags-color-1 dashed">Lorem ipsum</p>

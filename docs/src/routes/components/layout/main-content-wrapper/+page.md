@@ -1,18 +1,18 @@
 ---
-title: Artikel
-breadcrumb: Artikel
+title: Main content wrapper
+breadcrumb: Main content wrapper
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Artikel - <code>article</code></h1>
+<h1 id="introduction">Main content wrapper</h1>
 
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/article";
+@use "@minvws/manon/main-content-wrapper";
 ```
 
 ### Benodigde stappen
@@ -26,7 +26,10 @@ nav:
 <h2 id="examples">Voorbeelden</h2>
 
 ```html
-<article>
-  <!-- Content -->
-</article>
+<main>
+  <div>
+    <!-- this div is the content wrapper -->
+    <!-- Content -->
+  </div>
+</main>
 ```

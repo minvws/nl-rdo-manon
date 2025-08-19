@@ -20,8 +20,8 @@ SCSS importeren:
 <p class="explanation">
   <span>Aandachtspunten:</span>
   Om tabellen correct weer te geven op smallere schermresoluties, denk hierbij
-    aan mobiele apparaten, dient er een `div` om de `table` te staan met de
-    class `horizontal-scroll`.
+  aan mobiele apparaten, dient er een `div` om de `table` te staan met de
+  class `horizontal-scroll`.
 </p>
 
 <h2 id="examples">Voorbeelden</h2>

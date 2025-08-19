@@ -9,6 +9,8 @@ nav:
 
 <h1 id="introduction">Body text set</h1>
 
+Set voor het instellen van de stijlkeuzes voor de hoofdtekst.
+
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
@@ -17,21 +19,15 @@ SCSS importeren:
 @use "@minvws/manon/body-text-set";
 ```
 
-Set voor het instellen van de stijlkeuzes voor de hoofdtekst.
-
 <h2 id="examples">Voorbeelden</h2>
 
-### Paragraaf
-
-#### Visuele weergave
+### Voorbeeld: Paragraaf
 
 <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit euismod
   consectetur. Praesent est diam, ultricies ut lacus nec, molestie commodo arcu. Class
   aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 </p>
-
-#### HTML-voorbeeld
 
 ```html
 <p>
@@ -42,17 +38,13 @@ Set voor het instellen van de stijlkeuzes voor de hoofdtekst.
 </p>
 ```
 
-### Paragraaf benadrukte weergave
-
-#### Visuele weergave
+### Voorbeeld: Paragraaf benadrukte weergave
 
 <p class="emphasized">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit euismod
   consectetur. Praesent est diam, ultricies ut lacus nec, molestie commodo arcu. Class
   aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 </p>
-
-#### HTML-voorbeeld
 
 ```html
 <p class="emphasized">
@@ -63,17 +55,13 @@ Set voor het instellen van de stijlkeuzes voor de hoofdtekst.
 </p>
 ```
 
-### Paragraaf subtielere weergave
-
-#### Visuele weergave
+### Voorbeeld: Paragraaf subtielere weergave
 
 <p class="de-emphasized">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit euismod
   consectetur. Praesent est diam, ultricies ut lacus nec, molestie commodo arcu. Class
   aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 </p>
-
-#### HTML-voorbeeld
 
 ```html
 <p class="de-emphasized">

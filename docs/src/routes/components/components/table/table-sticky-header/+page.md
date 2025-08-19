@@ -21,7 +21,7 @@ SCSS importeren:
 @use "@minvws/manon/sticky-header";
 ```
 
-## Benodigde stappen:
+### Benodigde stappen
 
 1.  Voeg de class `sticky-header` toe aan een `div` om de `table` heen. Deze is
     `div` is nodig om de `table` scrollbaar te maken.
@@ -29,20 +29,7 @@ SCSS importeren:
     Mocht er een andere maximale hoogte gewenst zijn zodat de tabel bijvooreeld
     minder hoog blijft kan deze via het variabelenbestand overschreven worden.
 
-## Aandachtspunten
-
-- Voeg een van de melding-classes toe aan een volledige tabelrij `tr` of aan een
-  losse cel `th` / `td`. Beschikbare classes zijn:
-  - `error`
-  - `warning`
-  - `confirmation`
-  - `explanation`
-  - `primary` Zie[Notifications](/components/notifications) voor meer
-    informatie.
-
 <h2 id="examples">Voorbeelden</h2>
-
-### Visueel voorbeeld:
 
 <div class="horizontal-scroll sticky-header">
   <table>
@@ -148,8 +135,6 @@ SCSS importeren:
     </tbody>
   </table>
 </div>
-
-### HTML-voorbeeld:
 
 ```html
 <div class="horizontal-scroll sticky-header">
