@@ -25,7 +25,7 @@
           <legend>Login-gegevens:</legend>
           <label for="username">Gebruikersnaam</label>
           <div>
-            <input id="username" name="username" placeholder="Gebruikersnaam" type="text" />
+            <input id="username" name="username" placeholder="Gebruikersnaam" />
           </div>
 
           <label for="password">Wachtwoord</label>
