@@ -29,8 +29,9 @@
       <nav aria-labelledby="example-pages-title" id="example-pages">
         <h3 id="example-pages-title">Voorbeeldpagina's</h3>
         <ul>
+          <li><a href="{base}/examples/pages/basic">Basic</a></li>
+          <li><a href="{base}/examples/pages/landing/">Landing Page</a></li>
           <li><a href="{base}/examples/pages/login">Login</a></li>
-          <li><a href="{base}/examples/pages/landing-page/">Landing Page</a></li>
         </ul>
       </nav>
     </div>
