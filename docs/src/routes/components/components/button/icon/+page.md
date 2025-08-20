@@ -19,7 +19,7 @@ SCSS importeren:
 @use "@minvws/manon/button-icon";
 ```
 
-## Benodigde stappen
+### Benodigde stappen
 
 1. Kies het juiste element voor de knop. Zie eventueel
    [HTML-element kiezen](/components/components/button#button-situations).

@@ -2,6 +2,7 @@
 title: Call to action button
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
