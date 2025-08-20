@@ -8,29 +8,43 @@ breadcrumb: Snelstart
 ## Vereisten
 
 Zorg ervoor dat je project is ingesteld om Sass te gebruiken en dat je een
-Sass-compiler hebt geïnstalleerd. Als je build-systeem Sass niet ondersteunt,
-kun je
-[de Sass command-line-tool](https://sass-lang.com/documentation/cli/dart-sass/)
-installeren.
+Sass-compiler hebt geïnstalleerd. Build-systemen zoals Webpack, Parcel of Vite
+ondersteunen meestal Sass out-of-the-box. Als je een van deze build-systemen
+gebruikt, hoef je mogelijk alleen de juiste loader of plugin te installeren.
 
-```plaintext
+Als je build-systeem Sass niet ondersteunt, kun je
+[de Sass command-line-tool](https://sass-lang.com/documentation/cli/dart-sass/)
+installeren:
+
+```console
 npm install sass
 ```
 
+Als je de Sass command-line interface gebruikt om je bestanden te compileren,
+kan je het `load-path` definiëren om de Manon-pakketten te vinden. Dit kan
+gedaan worden met de `--load-path` optie:
+`sass --load-path node_modules/@minvws/manon` Dan kan je de componenten en
+thema's importeren zoals hieronder beschreven.
+
 ## Installeren met npm
 
-We moeten Manon en Manon Themes installeren om de componenten en stijlen te
-gebruiken.
+We moeten het Manon framework en Manon Themes installeren om de componenten en
+stijlen te gebruiken. Dit kan gedaan worden met npm:
 
-```plaintext
-npm install @minvws/manon
-npm install @minvws/manon-themes
+```console
+npm install @minvws/manon @minvws/manon-themes
 ```
 
 ## Importeren
 
-In je hoofd Sass-bestand kun je het Manon-framework en een thema naar keuze
-importeren.
+Wanneer de packages zijn geïnstalleerd, kun je beginnen met het importeren van
+de componenten en stijlen in je Sass-bestanden. Het Manon-framework biedt een
+basisset van componenten en stijlen die je kunt gebruiken, en de thema's bieden
+vooraf gedefinieerde stijlen die je kunt toepassen op de componenten. Je staat
+vrij om de componenten te importeren die je nodig hebt.
+
+Voorbeeld van een SCSS-bestand (bijv. `main.scss`) dat de basiscomponenten en
+een thema importeert:
 
 ```scss
 // 1. Importeer het Manon-framework en de bijbehorende componenten
@@ -47,8 +61,8 @@ importeren.
 
 Je bent nu klaar om de componenten in je HTML te gebruiken. Volg de instructies
 in de [Componentenbibliotheek](https://minvws.github.io/nl-rdo-manon/components)
-over hoe je de componenten in je HTML kunt gebruiken. Elke component heeft zijn
-eigen pagina met voorbeelden en codefragmenten.
+over hoe je de componenten importeert en hoe je deze in je HTML kunt gebruiken.
+Elk component heeft zijn eigen pagina met voorbeelden en codefragmenten.
 
 Je kunt ook de
 [tutorial](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial)
