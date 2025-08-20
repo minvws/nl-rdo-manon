@@ -55,7 +55,7 @@
 </main>
 <footer>
   <nav>
-    <h1>Manon Examples</h1>
+    <h2>Manon Examples</h2>
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
