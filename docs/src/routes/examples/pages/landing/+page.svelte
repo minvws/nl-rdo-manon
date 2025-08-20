@@ -1,5 +1,5 @@
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content">Skip to content</a>
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
   <nav
     data-open-label="Menu"
     data-close-label="Sluit menu"
