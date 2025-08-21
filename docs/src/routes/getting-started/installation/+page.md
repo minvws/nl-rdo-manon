@@ -8,10 +8,8 @@ breadcrumb: Installatie
 Deze documentatie beschrijft instructies voor het installeren en gebruiken van
 het Manon design framework in je project.
 
-Je kunt ook de
-[tutorial](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial)
-volgen om te leren hoe je de componenten op een meer gestructureerde manier kunt
-gebruiken.
+Je kunt ook de [tutorial](/getting-started/tutorial) volgen om te leren hoe je
+de componenten op een meer gestructureerde manier kunt gebruiken.
 
 Daarnaast hebben we
 [enkele voorbeeldimplementaties](https://github.com/minvws/nl-rdo-manon/tree/main/examples/)
@@ -64,13 +62,10 @@ Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
 
 3. **Importeer in je SCSS**
 
-   In je hoofd sass bestand, importeer het Manon framework en het gekozen thema.
+   In je hoofd sass bestand, je gekozen thema:
 
    ```scss
-   // 1. Importeer het Manon-framework en de bijbehorende componenten
-   @use "@minvws/manon/application-base";
-
-   // 2. Import een thema naar keuze. Hier gebruiken we het iCore Open thema als voorbeeld.
+   // Importeer een thema naar keuze. Hier gebruiken we het iCore Open thema als voorbeeld.
    @use "@minvws/manon-themes/icore-open";
    ```
 
@@ -95,7 +90,6 @@ Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
 
    ```scss
    @use "@minvws/manon-themes/icore-open";
-   @use "@minvws/manon/application-base";
    @use "@minvws/manon/components/button";
    ```
 
