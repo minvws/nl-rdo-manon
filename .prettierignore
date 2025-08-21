@@ -1,4 +1,5 @@
 node_modules/
 .svelte-kit/
 .github/
+examples/
 pnpm-lock.yaml
