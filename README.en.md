@@ -28,7 +28,7 @@ the adjustable variables per component.
 
 ## 📚 Documentation
 
-The documentation is available at https://minvws.github.io/nl-rdo-manon. It is
+The documentation is available at <https://minvws.github.io/nl-rdo-manon>. It is
 generated from the [docs](./docs) directory on this repo.
 
 ## 🚀 Getting Started
@@ -70,8 +70,8 @@ to use the components in your HTML. Each component has its own page with
 examples and code snippets.
 
 You can also follow the
-[tutorial](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial)
-to learn how to use the components in a more structured way.
+[tutorial](https://minvws.github.io/nl-rdo-manon/getting-started/tutorial) to
+learn how to use the components in a more structured way.
 
 Additionally, we've provided
 [some example implementations](https://github.com/minvws/nl-rdo-manon/tree/main/examples/)

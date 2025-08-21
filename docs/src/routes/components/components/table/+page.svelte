@@ -43,14 +43,11 @@
               </li>
               <li><a href="table/table-checkbox">Checkboxes</a></li>
               <li>
-                <a href="table/able-numerical-data">Numerieke data</a>
+                <a href="table/table-numerical-data">Numerieke data</a>
               </li>
               <li>
                 <a href="table/table-caption">Tabel bijschrift <code>caption</code></a>
               </li>
-            </ul>
-            <h4>Andere elementen (niet ondersteund door iCore Open)</h4>
-            <ul>
               <li><a href="table/table-notifications">Meldingen</a></li>
             </ul>
           </nav>
@@ -64,9 +61,6 @@
               <li>
                 <a href="table/table-multiple-columns">Tabeldata over meerdere kolommen</a>
               </li>
-            </ul>
-            <h4>Andere opmaak-opties (niet ondersteund door iCore Open)</h4>
-            <ul>
               <li><a href="table/table-scope">Tabelrichting</a></li>
               <li>
                 <a href="table/table-condensed">Gecomprimeerde weergave</a>
@@ -78,7 +72,7 @@
             <h3 id="helper-classes-heading">Helper-classes</h3>
             <ul>
               <li>
-                <a href="{base}/nowrap">nowrap</a>
+                <a href="{base}/utility/nowrap">nowrap</a>
               </li>
             </ul>
           </nav>
