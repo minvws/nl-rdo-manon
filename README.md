@@ -91,8 +91,7 @@ Om Manon in je project te gebruiken:
 2.  Installeer Manon en Manon Themes via npm:
 
     ```bash
-    npm install @minvws/manon
-    npm install @minvws/manon-themes
+    npm install @minvws/manon @minvws/manon-themes
     ```
 
 3.  Importeer in je project het Manon framework met een thema naar keuze.
@@ -111,7 +110,7 @@ over hoe je de componenten in je HTML kunt gebruiken. Elke component heeft zijn
 eigen pagina met voorbeelden en codefragmenten.
 
 Je kunt ook de
-[tutorial](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial)
+[tutorial](https://minvws.github.io/nl-rdo-manon/getting-started/tutorial)
 volgen om te leren hoe je de componenten op een meer gestructureerde manier kunt
 gebruiken.
 

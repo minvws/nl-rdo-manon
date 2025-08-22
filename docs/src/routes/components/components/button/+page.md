@@ -76,16 +76,11 @@ nav:
 
 <h2 id="button-types">Soorten knoppen</h2>
 
-### Ondersteund door het _iCore Open_ thema:
-
 - [Basisweergave](/components/components/button/button-base)
 - [Knoppen groeperen](/components/components/button/button-container)
 - [Call to action button](/components/components/button/call-to-action)
 - [Icoonknoppen](/components/components/button/icon)
 - [Icoonknoppen zonder achtergrond](/components/components/button/button-icon-only)
-
-### Overige soorten knoppen:
-
 - [Dropdown button](/components/components/button/button-dropdown)
 - [Ghost button](/components/components/button/button-ghost)
 - [Destructieve knop](/components/components/button/button-destructive)
