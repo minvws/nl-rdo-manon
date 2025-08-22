@@ -5,43 +5,13 @@
 </p>
 
 <p align="center">
-  <a
-    aria-label="github release"
-    href="https://github.com/minvws/nl-rdo-manon/releases/latest"
-  >
-    <img
-      alt="github release"
-      src="https://img.shields.io/github/v/release/minvws/nl-rdo-manon?style=for-the-badge&color=fa32c8&logo=github"
-    />
-  </a>
-  <a
-    aria-label="npm package"
-    href="https://www.npmjs.com/package/@minvws/manon"
-  >
-    <img
-      alt="npm package"
-      src="https://img.shields.io/npm/v/@minvws/manon?style=for-the-badge&color=fa32c8&logo=npm"
-    />
-  </a>
-  <a
-    aria-label="build status"
-    href="https://github.com/minvws/nl-rdo-manon/actions/workflows/ci.yml?query=branch%3Amain"
-  >
-    <img
-      alt="build status"
-      src="https://img.shields.io/github/actions/workflow/status/minvws/nl-rdo-manon/ci.yml?branch=main&style=for-the-badge&logo=github"
-    />
-  </a>
-  <a
-    aria-label="part of icore"
-    href="https://github.com/minvws/rdo-icore-coordination/"
-  >
-    <img
-      alt="part of icore"
-      src="https://img.shields.io/badge/Part_of-iCore-ed7b3e?style=for-the-badge"
-    />
-  </a>
+  <a aria-label="github release" href="https://github.com/minvws/nl-rdo-manon/releases/latest"><img alt="github release" src="https://img.shields.io/github/v/release/minvws/nl-rdo-manon?style=for-the-badge&color=fa32c8&logo=github"></a>
+  <a aria-label="npm package" href="https://www.npmjs.com/package/@minvws/manon" ><img alt="npm package" src="https://img.shields.io/npm/v/@minvws/manon?style=for-the-badge&color=fa32c8&logo=npm"></a>
+  <a aria-label="build status" href="https://github.com/minvws/nl-rdo-manon/actions/workflows/ci.yml?query=branch%3Amain" ><img alt="build status" src="https://img.shields.io/github/actions/workflow/status/minvws/nl-rdo-manon/ci.yml?branch=main&style=for-the-badge&logo=github"></a>
+  <a aria-label="part of icore" href="https://github.com/minvws/rdo-icore-coordination/" ><img alt="part of icore" src="https://img.shields.io/badge/Part_of-iCore-ed7b3e?style=for-the-badge"></a>
 </p>
+
+---
 
 ## 📚 Documentation
 
