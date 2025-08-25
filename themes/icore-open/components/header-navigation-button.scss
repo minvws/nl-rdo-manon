@@ -54,6 +54,7 @@
   --header-navigation-button-focus-border-radius: 0.25rem;
   --header-navigation-button-focus-outline: 0;
   --header-navigation-button-focus-outline-offset: 0;
-  --header-navigation-button-focus-box-shadow: 0 0 0 2px #{color-scheme.$oc-blue-6};
+  --header-navigation-button-focus-box-shadow: 0 0 0 2px
+    #{color-scheme.$oc-blue-6};
   --header-navigation-button-focus-z-index: 2;
 }
