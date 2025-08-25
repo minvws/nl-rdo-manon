@@ -29,8 +29,8 @@ jobs:
       - name: Get latest tag
         id: get_latest_tag
         run: |
-          # Get all tags, sort them semantically, and pick the last one (latest)
-          LATEST_TAG=$(git tag --sort=-v:refname | head -n 1)
+          # Get all tags, sort them semantically, and pick the highest stable version
+          LATEST_TAG=$(git tag --sort=-v:refname | grep -v - | head -n 1)
           echo "LATEST_TAG=$LATEST_TAG" >> $GITHUB_ENV
 
       - name: Checkout latest tag
