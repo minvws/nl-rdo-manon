@@ -67,9 +67,7 @@ nav:
 
 ```html
 <nav class="pagination" aria-label="Paginering">
-  <a href="#" aria-label="Ga naar de vorige pagina" class="adjacent previous"
-    >Vorige</a
-  >
+  <a href="#" aria-label="Ga naar de vorige pagina" class="adjacent previous">Vorige</a>
   <ul>
     <li><a href="#" aria-label="Ga naar pagina 1">1</a></li>
     <li><a href="#" aria-label="Ga naar pagina 2" aria-current="true">2</a></li>
@@ -77,8 +75,6 @@ nav:
     <li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
     <li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
   </ul>
-  <a href="#" aria-label="Ga naar de volgende pagina" class="adjacent next"
-    >Volgende</a
-  >
+  <a href="#" aria-label="Ga naar de volgende pagina" class="adjacent next">Volgende</a>
 </nav>
 ```

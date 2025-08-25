@@ -25,13 +25,13 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <nav class="pagination" aria-label="Paginering">
-<ul>
-    <li><a href="#" aria-label="Ga naar pagina 1"aria-current="true">1</a></li>
+  <ul>
+    <li><a href="#" aria-label="Ga naar pagina 1" aria-current="true">1</a></li>
     <li><a href="#" aria-label="Ga naar pagina 2">2</a></li>
     <li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
     <li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
     <li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
-</ul>
+  </ul>
 </nav>
 ```
 
@@ -57,15 +57,15 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <nav class="pagination" aria-label="Paginering">
-<a href="#" aria-label="Ga naar de vorige pagina" class="adjacent previous">Vorige</a>
-<ul>
+  <a href="#" aria-label="Ga naar de vorige pagina" class="adjacent previous">Vorige</a>
+  <ul>
     <li><a href="#" aria-label="Ga naar pagina 1">1</a></li>
     <li><a href="#" aria-label="Ga naar pagina 2" aria-current="true">2</a></li>
     <li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
     <li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
     <li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
-</ul>
-<a href="#" aria-label="Ga naar de volgende pagina" class="adjacent next">Volgende</a>
+  </ul>
+  <a href="#" aria-label="Ga naar de volgende pagina" class="adjacent next">Volgende</a>
 </nav>
 ```
 
@@ -97,15 +97,15 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <nav class="pagination" aria-label="Paginering">
-<span aria-label="Ga naar de vorige pagina" class="disabled">Vorige</span>
-<ul>
+  <span aria-label="Ga naar de vorige pagina" class="disabled">Vorige</span>
+  <ul>
     <li><a href="#" aria-label="Ga naar pagina 1" aria-current="true">1</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 2" >2</a></li>
+    <li><a href="#" aria-label="Ga naar pagina 2">2</a></li>
     <li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
     <li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
     <li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
-</ul>
-<a href="#" aria-label="Ga naar de volgende pagina">Volgende</a>
+  </ul>
+  <a href="#" aria-label="Ga naar de volgende pagina">Volgende</a>
 </nav>
 ```
 
@@ -125,13 +125,13 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <div class="pagination">
-<ul>
+  <ul>
     <li><a href="#" aria-label="Ga naar pagina 1" aria-current="true">1</a></li>
     <li><a href="#" aria-label="Ga naar pagina 2">2</a></li>
     <li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
     <li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
     <li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
-</ul>
+  </ul>
 </div>
 ```
 
@@ -154,11 +154,11 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <ul class="pagination">
-<li><a href="#" aria-label="Ga naar pagina 1" aria-current="true">1</a></li>
-<li><a href="#" aria-label="Ga naar pagina 2">2</a></li>
-<li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
-<li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
-<li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
+  <li><a href="#" aria-label="Ga naar pagina 1" aria-current="true">1</a></li>
+  <li><a href="#" aria-label="Ga naar pagina 2">2</a></li>
+  <li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
+  <li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
+  <li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
 </ul>
 ```
 
@@ -181,11 +181,11 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <ul class="pagination">
-<li aria-label="Huidige pagina, pagina 1" aria-current="true">1</li>
-<li><a href="#" aria-label="Ga naar pagina 2">2</a></li>
-<li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
-<li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
-<li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
+  <li aria-label="Huidige pagina, pagina 1" aria-current="true">1</li>
+  <li><a href="#" aria-label="Ga naar pagina 2">2</a></li>
+  <li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
+  <li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
+  <li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
 </ul>
 ```
 
@@ -208,10 +208,10 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <ul class="pagination">
-<li><span aria-label="Huidige pagina, pagina 1" aria-current="true">1</span></li>
-<li><a href="#" aria-label="Ga naar pagina 2">2</a></li>
-<li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
-<li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
-<li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
+  <li><span aria-label="Huidige pagina, pagina 1" aria-current="true">1</span></li>
+  <li><a href="#" aria-label="Ga naar pagina 2">2</a></li>
+  <li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
+  <li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
+  <li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
 </ul>
 ```

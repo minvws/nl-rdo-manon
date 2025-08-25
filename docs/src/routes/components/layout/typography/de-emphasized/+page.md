@@ -28,7 +28,5 @@ SCSS importeren:
 <p class="de-emphasized">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
 ```html
-<p class="de-emphasized">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-</p>
+<p class="de-emphasized">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 ```

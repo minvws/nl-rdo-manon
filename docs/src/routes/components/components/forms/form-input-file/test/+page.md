@@ -29,7 +29,13 @@ Overzicht van het element in mogelijke structuren om te testen.
 ```html
 <form action="" method="post">
   <label for="file-example-base">Upload bestand</label>
-  <input type="file" id="file-example-base" name="file-example-base" accept=".doc, .docx, .pdf" multiple>
+  <input
+    type="file"
+    id="file-example-base"
+    name="file-example-base"
+    accept=".doc, .docx, .pdf"
+    multiple
+  />
 </form>
 ```
 
@@ -56,7 +62,13 @@ Overzicht van het element in mogelijke structuren om te testen.
 <form action="" method="post">
   <div>
     <label for="file-example-div">Upload bestand</label>
-    <input type="file" id="file-example-div" name="file-example-div" accept=".doc, .docx, .pdf" multiple>
+    <input
+      type="file"
+      id="file-example-div"
+      name="file-example-div"
+      accept=".doc, .docx, .pdf"
+      multiple
+    />
   </div>
 </form>
 ```
@@ -84,7 +96,13 @@ Overzicht van het element in mogelijke structuren om te testen.
 <form action="" method="post">
   <section>
     <label for="file-example-section">Upload bestand</label>
-    <input type="file" id="file-example-section" name="file-example-section" accept=".doc, .docx, .pdf" multiple>
+    <input
+      type="file"
+      id="file-example-section"
+      name="file-example-section"
+      accept=".doc, .docx, .pdf"
+      multiple
+    />
   </section>
 </form>
 ```

@@ -56,9 +56,8 @@ Voeg `class="tile"` toe voor de tegelweergave op een enkel element.
 <div class="tile" role="group">
   <h1>Lorem ipsum dolor set</h1>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non
-    justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui
-    sapien.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
+    convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
   </p>
 </div>
 ```
@@ -102,27 +101,24 @@ Bijvoorbeeld: `<div class="tiles">`
   <div role="group">
     <h1>Lorem ipsum</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non
-      justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui
-      sapien.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
+      convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
     </p>
   </div>
 
   <div role="group">
     <h1>Lorem ipsum</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non
-      justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui
-      sapien.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
+      convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
     </p>
   </div>
 
   <div role="group">
     <h1>Lorem ipsum</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non
-      justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui
-      sapien.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
+      convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
     </p>
   </div>
 </div>
@@ -146,9 +142,8 @@ Voeg de class `image-cover` toe voor de correcte weergave.
   <img src="$img/strand.jpg" alt="Foto van een strand" />
   <h1>Lorem ipsum</h1>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non
-    justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui
-    sapien.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
+    convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
   </p>
 </div>
 ```

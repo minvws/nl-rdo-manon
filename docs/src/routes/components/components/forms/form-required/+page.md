@@ -44,12 +44,7 @@ SCSS importeren:
     <label for="voorbeeld-input-required">Ipsum</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
-      <input
-        id="voorbeeld-input-required"
-        name="voorbeeld-input-required"
-        type="text"
-        required
-      />
+      <input id="voorbeeld-input-required" name="voorbeeld-input-required" type="text" required />
     </div>
   </div>
   <button type="submit">Verzend</button>

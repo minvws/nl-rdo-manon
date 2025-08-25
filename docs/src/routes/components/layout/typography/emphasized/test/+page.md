@@ -35,6 +35,12 @@ Overzicht van het element in mogelijke structuren om te testen.
 #### HTML-voorbeeld:
 
 ```html
-<p class="emphasized">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque lectus, pharetra at tincidunt a, ornare vitae nibh. Vivamus ultricies sagittis blandit.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque lectus, pharetra at tincidunt a, ornare vitae nibh. Vivamus ultricies sagittis blandit.</p>
+<p class="emphasized">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque lectus, pharetra at tincidunt
+  a, ornare vitae nibh. Vivamus ultricies sagittis blandit.
+</p>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque lectus, pharetra at tincidunt
+  a, ornare vitae nibh. Vivamus ultricies sagittis blandit.
+</p>
 ```

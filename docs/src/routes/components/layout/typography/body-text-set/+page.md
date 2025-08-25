@@ -31,10 +31,9 @@ SCSS importeren:
 
 ```html
 <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit
-  euismod consectetur. Praesent est diam, ultricies ut lacus nec, molestie
-  commodo arcu. Class aptent taciti sociosqu ad litora torquent per conubia
-  nostra, per inceptos himenaeos.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit euismod consectetur.
+  Praesent est diam, ultricies ut lacus nec, molestie commodo arcu. Class aptent taciti sociosqu ad
+  litora torquent per conubia nostra, per inceptos himenaeos.
 </p>
 ```
 
@@ -48,10 +47,9 @@ SCSS importeren:
 
 ```html
 <p class="emphasized">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit
-  euismod consectetur. Praesent est diam, ultricies ut lacus nec, molestie
-  commodo arcu. Class aptent taciti sociosqu ad litora torquent per conubia
-  nostra, per inceptos himenaeos.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit euismod consectetur.
+  Praesent est diam, ultricies ut lacus nec, molestie commodo arcu. Class aptent taciti sociosqu ad
+  litora torquent per conubia nostra, per inceptos himenaeos.
 </p>
 ```
 
@@ -65,9 +63,8 @@ SCSS importeren:
 
 ```html
 <p class="de-emphasized">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit
-  euismod consectetur. Praesent est diam, ultricies ut lacus nec, molestie
-  commodo arcu. Class aptent taciti sociosqu ad litora torquent per conubia
-  nostra, per inceptos himenaeos.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit euismod consectetur.
+  Praesent est diam, ultricies ut lacus nec, molestie commodo arcu. Class aptent taciti sociosqu ad
+  litora torquent per conubia nostra, per inceptos himenaeos.
 </p>
 ```

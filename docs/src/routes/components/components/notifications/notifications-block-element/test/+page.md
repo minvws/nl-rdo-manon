@@ -58,12 +58,21 @@ Overzicht van het element in mogelijke structuren om te testen.
 <section class="notification" role="group" aria-label="notificatie">
   <span>Notificatie:</span>
   <h1>Lorem ipsum dolor set</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+  </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+    <li>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+    </li>
   </ul>
   <button type="button">Lorem</button>
 </section>
@@ -103,12 +112,21 @@ Overzicht van het element in mogelijke structuren om te testen.
 <section class="error" role="group" aria-label="foutmelding">
   <span>Foutmelding:</span>
   <h1>Lorem ipsum dolor set</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+  </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+    <li>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+    </li>
   </ul>
   <button type="button">Lorem</button>
 </section>
@@ -148,12 +166,21 @@ Overzicht van het element in mogelijke structuren om te testen.
 <section class="warning" role="group" aria-label="waarchuwing">
   <span>Waarchuwing:</span>
   <h1>Lorem ipsum dolor set</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+  </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+    <li>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+    </li>
   </ul>
   <button type="button">Lorem</button>
 </section>
@@ -193,12 +220,21 @@ Overzicht van het element in mogelijke structuren om te testen.
 <section class="confirmation" role="group" aria-label="bevestiging">
   <span>Bevestiging:</span>
   <h1>Lorem ipsum dolor set</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+  </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+    <li>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+    </li>
   </ul>
   <button type="button">Lorem</button>
 </section>
@@ -238,12 +274,21 @@ Overzicht van het element in mogelijke structuren om te testen.
 <section class="explanation" role="group" aria-label="toelichting">
   <span>Toelichting:</span>
   <h1>Lorem ipsum dolor set</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+  </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+    <li>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+    </li>
   </ul>
   <button type="button">Lorem</button>
 </section>
@@ -283,12 +328,21 @@ Overzicht van het element in mogelijke structuren om te testen.
 <section class="system" role="group" aria-label="systeembericht">
   <span>Systeembericht:</span>
   <h1>Lorem ipsum dolor set</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+  </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+    <li>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+    </li>
   </ul>
   <button type="button">Lorem</button>
 </section>
@@ -330,12 +384,21 @@ Overzicht van het element in mogelijke structuren om te testen.
 <div class="notification" role="group" aria-label="notificatie">
   <span>Notificatie:</span>
   <h1>Lorem ipsum dolor set</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+  </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+    <li>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+    </li>
   </ul>
   <button type="button">Lorem</button>
 </div>
@@ -375,12 +438,21 @@ Overzicht van het element in mogelijke structuren om te testen.
 <div class="error" role="group" aria-label="foutmelding">
   <span>Foutmelding:</span>
   <h1>Lorem ipsum dolor set</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+  </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+    <li>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+    </li>
   </ul>
   <button type="button">Lorem</button>
 </div>
@@ -420,12 +492,21 @@ Overzicht van het element in mogelijke structuren om te testen.
 <div class="warning" role="group" aria-label="waarchuwing">
   <span>Waarchuwing:</span>
   <h1>Lorem ipsum dolor set</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+  </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+    <li>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+    </li>
   </ul>
   <button type="button">Lorem</button>
 </div>
@@ -465,12 +546,21 @@ Overzicht van het element in mogelijke structuren om te testen.
 <div class="confirmation" role="group" aria-label="bevestiging">
   <span>Bevestiging:</span>
   <h1>Lorem ipsum dolor set</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+  </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+    <li>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+    </li>
   </ul>
   <button type="button">Lorem</button>
 </div>
@@ -510,12 +600,21 @@ Overzicht van het element in mogelijke structuren om te testen.
 <div class="explanation" role="group" aria-label="toelichting">
   <span>Toelichting:</span>
   <h1>Lorem ipsum dolor set</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+  </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+    <li>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+    </li>
   </ul>
   <button type="button">Lorem</button>
 </div>
@@ -555,12 +654,21 @@ Overzicht van het element in mogelijke structuren om te testen.
 <div class="system" role="group" aria-label="systeembericht">
   <span>Systeembericht:</span>
   <h1>Lorem ipsum dolor set</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+  </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.</li>
+    <li>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit. <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+    </li>
   </ul>
   <button type="button">Lorem</button>
 </div>
@@ -586,10 +694,11 @@ Overzicht van het element in mogelijke structuren om te testen.
     </ul>
   </div>
 
-  <label for="form-example-1">Voorbeeld text input</label>
-  <input id="form-example-1" name="form-example-1" type="text" />
+<label for="form-example-1">Voorbeeld text input</label>
+<input id="form-example-1" name="form-example-1" type="text" />
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 ##### HTML-voorbeeld:
@@ -598,21 +707,19 @@ Overzicht van het element in mogelijke structuren om te testen.
 <form action="" method="post">
   <div class="explanation" role="group" aria-label="toelichting">
     <span>Toelichting:</span>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <ul>
       <li>Lorem ipsum</li>
       <li>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
-        consequat facilisis ac eu velit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+        facilisis ac eu velit.
         <a href="">Lorem ipsum</a> consectetur adipiscing elit.
       </li>
     </ul>
   </div>
 
   <label for="form-example-1">Voorbeeld text input</label>
-  <input id="form-example-1" name="form-example-1" type="text">
+  <input id="form-example-1" name="form-example-1" type="text" />
 
   <button type="submit">Verzend</button>
 </form>
@@ -651,14 +758,12 @@ Overzicht van het element in mogelijke structuren om te testen.
 <form action="" method="post" class="horizontal">
   <div class="explanation" role="group" aria-label="toelichting">
     <span>Toelichting:</span>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <ul>
       <li>Lorem ipsum</li>
       <li>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
-        consequat facilisis ac eu velit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+        facilisis ac eu velit.
         <a href="">Lorem ipsum</a> consectetur adipiscing elit.
       </li>
     </ul>
@@ -666,7 +771,7 @@ Overzicht van het element in mogelijke structuren om te testen.
 
   <div>
     <label for="form-example-2">Voorbeeld text input</label>
-    <input id="form-example-2" name="form-example-2" type="text">
+    <input id="form-example-2" name="form-example-2" type="text" />
   </div>
   <button type="submit">Verzend</button>
 </form>
@@ -691,9 +796,11 @@ Overzicht van het element in mogelijke structuren om te testen.
       <label for="form-example-base">Voorbeeld text input</label>
       <input id="form-example-base" name="form-example-base" type="text" />
     </div>
+
   </fieldset>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 ##### HTML-voorbeeld:
@@ -705,14 +812,12 @@ Overzicht van het element in mogelijke structuren om te testen.
 
     <div class="explanation" role="group" aria-label="toelichting">
       <span>Toelichting:</span>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 
     <div>
       <label for="form-example-base">Voorbeeld text input</label>
-      <input id="form-example-base" name="form-example-base" type="text">
+      <input id="form-example-base" name="form-example-base" type="text" />
     </div>
   </fieldset>
 
@@ -761,7 +866,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     </div>
   </div>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 ##### HTML-voorbeeld:
@@ -770,14 +876,12 @@ Overzicht van het element in mogelijke structuren om te testen.
 <form action="" method="post" class="horizontal help">
   <div class="explanation" role="group" aria-label="toelichting">
     <span>Toelichting:</span>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <ul>
       <li>Lorem ipsum</li>
       <li>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
-        consequat facilisis ac eu velit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+        facilisis ac eu velit.
         <a href="">Lorem ipsum</a> consectetur adipiscing elit.
       </li>
     </ul>

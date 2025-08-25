@@ -33,8 +33,7 @@ SCSS importeren:
 
 ```html
 <p class="emphasized">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque lectus,
-  pharetra at tincidunt a, ornare vitae nibh. Vivamus ultricies sagittis
-  blandit.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque lectus, pharetra at tincidunt
+  a, ornare vitae nibh. Vivamus ultricies sagittis blandit.
 </p>
 ```

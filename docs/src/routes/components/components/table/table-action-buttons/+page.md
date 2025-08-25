@@ -118,30 +118,22 @@ SCSS importeren:
         <td>Jane doe</td>
         <td>
           <form>
-            <button type="submit" class="icon icon-user action-button">
-              Bekijk profiel
-            </button>
+            <button type="submit" class="icon icon-user action-button">Bekijk profiel</button>
           </form>
         </td>
         <td>
           <form>
-            <button type="submit" class="icon icon-check action-button">
-              Goedkeuren
-            </button>
+            <button type="submit" class="icon icon-check action-button">Goedkeuren</button>
           </form>
         </td>
         <td>
           <form>
-            <button type="submit" class="icon icon-close action-button">
-              Deactiveer
-            </button>
+            <button type="submit" class="icon icon-close action-button">Deactiveer</button>
           </form>
         </td>
         <td>
           <form>
-            <button type="submit" class="icon icon-trash action-button">
-              Verwijder
-            </button>
+            <button type="submit" class="icon icon-trash action-button">Verwijder</button>
           </form>
         </td>
       </tr>
