@@ -3,9 +3,8 @@ title: Meldingen op tabel-elementen
 breadcrumb: Meldingen op tabel-elementen
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
-  - Benodigdheden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Meldingen op tabel-elementen</h1>
@@ -13,25 +12,31 @@ nav:
 Tabelelementen kunnen een meldig weergeven. Denk hierbij aan een foutmelding of
 een toelichting.
 
-## Benodigde stappen:
+<h2 id="quick-start">Snelstart</h2>
 
-1.  Voeg de `checkbox` toe aan de benodigde cellen. Voor het voorbeeld zie:
-    [Voorbeelden](#examples)
+SCSS importeren:
 
-## Aandachtspunten
+```scss
+@use "@minvws/manon/table";
+@use "@minvws/manon/notification";
+```
 
-- Voeg een van de melding-classes toe aan een volledige tabelrij `tr` of aan een
-  losse cel `th` / `td`. Beschikbare classes zijn:
-  - `error`
-  - `warning`
-  - `confirmation`
-  - `explanation`
-  - `primary` Zie [Notifications](/components/notifications) voor meer
-    informatie.
+### Benodigde stappen
+
+1. Voeg de `checkbox` toe aan de benodigde cellen. Voor het voorbeeld zie:
+   [Voorbeelden](#examples)
+2. Voeg een van de melding-classes toe aan een volledige tabelrij `tr` of aan
+   een losse cel `th` / `td`. Beschikbare classes zijn:
+   - `error`
+   - `warning`
+   - `confirmation`
+   - `explanation`
+   - `primary` Zie [Notifications](/components/notifications) voor meer
+     informatie.
 
 <h2 id="examples">Voorbeelden</h2>
 
-### Visueel voorbeeld:
+### Voorbeeld: Meldingen op tabel-elementen
 
 <div class="horizontal-scroll">
   <table>
@@ -72,8 +77,6 @@ een toelichting.
     </tbody>
   </table>
 </div>
-
-#### HTML-voorbeeld:
 
 ```html
 <div class="horizontal-scroll">
@@ -118,22 +121,3 @@ een toelichting.
   </table>
 </div>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/table";
-@use "@minvws/manon/notification";
-```
-
-<p>
-  Bijbehorende melding-type-bestanden. Voor meer informatie en beschikbare types zie:
-  [Notificaties](/components/notifications)
-</p>

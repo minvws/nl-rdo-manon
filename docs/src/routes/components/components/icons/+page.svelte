@@ -50,7 +50,6 @@
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#available-icons">Beschikbare iconen</a></li>
       <li><a href="#add-other-icons">Andere iconen toevoegen</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
   <article>
@@ -384,10 +383,6 @@
             > voor instructies.
           </li>
         </ul>
-      </section>
-      <section id="related">
-        <h2>Gerelateerde pagina's</h2>
-        <a href="{base}/components/icons/test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

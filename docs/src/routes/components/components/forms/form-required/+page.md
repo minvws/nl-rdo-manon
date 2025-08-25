@@ -11,12 +11,12 @@ nav:
 
 <h2 id="quickstart">Snelstart</h2>
 
+SCSS importeren:
+
 ```scss
 @use "@minvws/manon/form";
 @use "@minvws/manon/form-nota-bene";
 ```
-
-## Benodigde stappen:
 
 <h2 id="examples">Voorbeelden</h2>
 
