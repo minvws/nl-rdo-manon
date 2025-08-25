@@ -41,7 +41,7 @@
         />
         <p>JavaScript importeren:</p>
         <Code
-          language="js"
+          language="javascript"
           code={`
 import "@minvws/manon/collapsible";
 `}
