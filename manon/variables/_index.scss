@@ -114,3 +114,9 @@
 @forward "tile";
 @forward "tile-groups";
 @forward "tile-image-cover";
+
+$theme-name: null !default;
+
+@if not $theme-name {
+  @warn "No theme detected. The theme must be imported before any Manon modules.";
+}

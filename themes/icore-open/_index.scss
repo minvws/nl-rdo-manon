@@ -25,6 +25,8 @@ and spacing sets */
 
 /* Component variables */
 @use "@minvws/manon/variables" with (
+  $theme-name: "icore-open",
+
   // article
   $article-gap: spacing.$spacing-250,
 
