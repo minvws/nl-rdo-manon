@@ -23,7 +23,7 @@ SCSS importeren:
 JavaScript importeren:
 
 ```javascript
-import "@minvws/manon/sidemenu.js";
+import "@minvws/manon/js/sidemenu.js";
 ```
 
 <p class="warning">

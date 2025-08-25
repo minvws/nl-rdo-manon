@@ -126,8 +126,8 @@ van de standaard ES Module import syntax:
 
 ```javascript
 // Importeer de Manon-componenten die je nodig hebt
-import "@minvws/manon/accordion.js";
-import "@minvws/manon/collapsible.js";
+import "@minvws/manon/js/accordion.js";
+import "@minvws/manon/js/collapsible.js";
 ```
 
 ## Fonts

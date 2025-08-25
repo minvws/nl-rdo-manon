@@ -22,7 +22,7 @@ SCSS importeren:
 JavaScript importeren:
 
 ```javascript
-import "@minvws/manon/form-help.js";
+import "@minvws/manon/js/form-help.js";
 ```
 
 ### Benodigde stappen

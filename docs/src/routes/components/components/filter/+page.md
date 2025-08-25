@@ -24,7 +24,7 @@ SCSS importeren:
 JavaScript importeren:
 
 ```javascript
-import "@minvws/manon/filters.js";
+import "@minvws/manon/js/filters.js";
 ```
 
 ### Benodigde stappen
