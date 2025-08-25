@@ -21,6 +21,8 @@ and spacing sets */
 
 /* Component variables */
 @use "@minvws/manon/variables" with (
+  $theme-name: "kat",
+
   // base
   $base-background-color: semantic.$base-background-color,
   $base-font-size: 1rem,
