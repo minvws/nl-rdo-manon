@@ -17,7 +17,7 @@ export const redirects = {
   "/documentation/components/description-list.html": "/components/description-list",
   "/documentation/components/fieldset-radio.html": "/components/fieldset-radio",
   "/documentation/components/filter.html": "/components/filter",
-  "/documentation/components/focus-only.html": "/utility/focus-only",
+  "/documentation/components/focus-only.html": "/components/focus-only",
   "/documentation/components/footer.html": "/components/footer",
   "/documentation/components/form-help.html": "/components/form-help",
   "/documentation/components/form-input-email.html": "/components/form-input-email",
