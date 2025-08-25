@@ -4,6 +4,12 @@
 @use "icon";
 
 :root {
-  --accordion-button-icon-after-open-content: #{map.get(icon.$glyphs, descending)};
-  --accordion-button-icon-after-close-content: #{map.get(icon.$glyphs, ascending)};
+  --accordion-button-icon-after-open-content: #{map.get(
+      icon.$glyphs,
+      descending
+    )};
+  --accordion-button-icon-after-close-content: #{map.get(
+      icon.$glyphs,
+      ascending
+    )};
 }

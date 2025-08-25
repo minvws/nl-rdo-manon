@@ -56,7 +56,7 @@ nav:
 #### HTML-voorbeeld:
 
 ```html
-<input type="button" value="Lorem ipsum">
+<input type="button" value="Lorem ipsum" />
 ```
 
 ### `input type="button"` uitgeschakeld
@@ -68,7 +68,7 @@ nav:
 #### HTML-voorbeeld:
 
 ```html
-<input type="button" value="Lorem ipsum" disabled>
+<input type="button" value="Lorem ipsum" disabled />
 ```
 
 <h2 id="requirements">Bijbehorende bestanden</h2>
