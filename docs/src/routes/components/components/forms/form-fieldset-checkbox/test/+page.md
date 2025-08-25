@@ -25,13 +25,13 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <form action="" method="post">
-    <fieldset>
-        <legend>Examples</legend>
-        <div class="checkbox">
-          <input type="checkbox" id="checkbox-example-1" name="standaard-checkbox">
-          <label for="checkbox-example-1">Lorem ipsum dolor sit amet</label>
-        </div>
-    </fieldset>
+  <fieldset>
+    <legend>Examples</legend>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox-example-1" name="standaard-checkbox" />
+      <label for="checkbox-example-1">Lorem ipsum dolor sit amet</label>
+    </div>
+  </fieldset>
 </form>
 ```
 
@@ -59,16 +59,16 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <form action="" method="post">
-    <fieldset>
-        <legend>Examples</legend>
-        <div class="required">
-            <span class="nota-bene">Dit veld is verplicht</span>
-            <div class="checkbox">
-              <input type="checkbox" id="checkbox-example-required-1" name="voorwaarden" required>
-              <label for="checkbox-example-required-1">verplicht selectievak</label>
-            </div>
-        </div>
-    </fieldset>
+  <fieldset>
+    <legend>Examples</legend>
+    <div class="required">
+      <span class="nota-bene">Dit veld is verplicht</span>
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox-example-required-1" name="voorwaarden" required />
+        <label for="checkbox-example-required-1">verplicht selectievak</label>
+      </div>
+    </div>
+  </fieldset>
 </form>
 ```
 
@@ -93,13 +93,13 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <form action="" method="post">
-    <fieldset>
-        <legend>Examples</legend>
-        <div class="checkbox">
-            <input type="checkbox" id="checkbox-example-disabled" name="disabled-checkbox" disabled>
-            <label for="checkbox-example-disabled">Lorem ipsum dolor sit amet</label>
-        </div>
-    </fieldset>
+  <fieldset>
+    <legend>Examples</legend>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox-example-disabled" name="disabled-checkbox" disabled />
+      <label for="checkbox-example-disabled">Lorem ipsum dolor sit amet</label>
+    </div>
+  </fieldset>
 </form>
 ```
 
@@ -127,6 +127,7 @@ Overzicht van het element in mogelijke structuren om te testen.
       <input type="checkbox" id="checkbox-example-list-4" name="standaard-checkbox" />
       <label for="checkbox-example-list-4">Lorem ipsum dolor sit amet</label>
     </div>
+
   </fieldset>
 </form>
 
@@ -134,28 +135,28 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <form action="" method="post">
-    <fieldset>
-        <legend>Examples</legend>
-        <div class="checkbox">
-            <input type="checkbox" id="checkbox-example-list-1" name="standaard-checkbox">
-            <label for="checkbox-example-list-1">Lorem ipsum dolor sit amet</label>
-        </div>
+  <fieldset>
+    <legend>Examples</legend>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox-example-list-1" name="standaard-checkbox" />
+      <label for="checkbox-example-list-1">Lorem ipsum dolor sit amet</label>
+    </div>
 
-        <div class="checkbox">
-            <input type="checkbox" id="checkbox-example-list-2" name="standaard-checkbox">
-            <label for="checkbox-example-list-2">Lorem ipsum dolor sit amet</label>
-        </div>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox-example-list-2" name="standaard-checkbox" />
+      <label for="checkbox-example-list-2">Lorem ipsum dolor sit amet</label>
+    </div>
 
-        <div class="checkbox">
-            <input type="checkbox" id="checkbox-example-list-3" name="standaard-checkbox">
-            <label for="checkbox-example-list-3">Lorem ipsum dolor sit amet</label>
-        </div>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox-example-list-3" name="standaard-checkbox" />
+      <label for="checkbox-example-list-3">Lorem ipsum dolor sit amet</label>
+    </div>
 
-        <div class="checkbox">
-            <input type="checkbox" id="checkbox-example-list-4" name="standaard-checkbox">
-            <label for="checkbox-example-list-4">Lorem ipsum dolor sit amet</label>
-        </div>
-    </fieldset>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox-example-list-4" name="standaard-checkbox" />
+      <label for="checkbox-example-list-4">Lorem ipsum dolor sit amet</label>
+    </div>
+  </fieldset>
 </form>
 ```
 
@@ -202,6 +203,7 @@ Overzicht van het element in mogelijke structuren om te testen.
         <label for="checkbox-example-list-label-4">Lorem ipsum dolor sit amet</label>
       </div>
     </fieldset>
+
   </fieldset>
 </form>
 
@@ -209,31 +211,31 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <form action="" method="post">
+  <fieldset>
+    <legend>Examples</legend>
     <fieldset>
-        <legend>Examples</legend>
-        <fieldset>
-            <legend>List label</legend>
-            <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-label-1" name="standaard-checkbox">
-                <label for="checkbox-example-list-label-1">Lorem ipsum dolor sit amet</label>
-            </div>
+      <legend>List label</legend>
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox-example-list-label-1" name="standaard-checkbox" />
+        <label for="checkbox-example-list-label-1">Lorem ipsum dolor sit amet</label>
+      </div>
 
-            <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-label-2" name="standaard-checkbox">
-                <label for="checkbox-example-list-label-2">Lorem ipsum dolor sit amet</label>
-            </div>
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox-example-list-label-2" name="standaard-checkbox" />
+        <label for="checkbox-example-list-label-2">Lorem ipsum dolor sit amet</label>
+      </div>
 
-            <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-label-3" name="standaard-checkbox">
-                <label for="checkbox-example-list-label-3">Lorem ipsum dolor sit amet</label>
-            </div>
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox-example-list-label-3" name="standaard-checkbox" />
+        <label for="checkbox-example-list-label-3">Lorem ipsum dolor sit amet</label>
+      </div>
 
-            <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-list-label-4" name="standaard-checkbox">
-                <label for="checkbox-example-list-label-4">Lorem ipsum dolor sit amet</label>
-            </div>
-        </fieldset>
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox-example-list-label-4" name="standaard-checkbox" />
+        <label for="checkbox-example-list-label-4">Lorem ipsum dolor sit amet</label>
+      </div>
     </fieldset>
+  </fieldset>
 </form>
 ```
 
@@ -256,12 +258,12 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <form action="" method="post">
-    <div>
-        <div class="checkbox">
-            <input type="checkbox" id="checkbox-example-2" name="standaard-checkbox">
-            <label for="checkbox-example-2">Lorem ipsum dolor sit amet</label>
-        </div>
-        <span class="nota-bene">Lorem ipsum dolor sit amet.</span>
+  <div>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox-example-2" name="standaard-checkbox" />
+      <label for="checkbox-example-2">Lorem ipsum dolor sit amet</label>
     </div>
+    <span class="nota-bene">Lorem ipsum dolor sit amet.</span>
+  </div>
 </form>
 ```

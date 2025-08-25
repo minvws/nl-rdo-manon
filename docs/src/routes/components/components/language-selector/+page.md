@@ -68,9 +68,7 @@ Een taalselectie element biedt een verticale keuzelijst die openklapt.
     <button aria-haspopup="listbox" aria-current="true">Papiamentu</button>
     <ul role="listbox">
       <li role="option" aria-selected="false">
-        <a hreflang="nl" href="#" data-value="Nederlands" lang="nl"
-          >Nederlands</a
-        >
+        <a hreflang="nl" href="#" data-value="Nederlands" lang="nl">Nederlands</a>
       </li>
       <li role="option" aria-selected="false">
         <a hreflang="en" href="#" data-value="English" lang="en">English</a>
@@ -79,14 +77,10 @@ Een taalselectie element biedt een verticale keuzelijst die openklapt.
         <a hreflang="fy" href="#" data-value="Frysk" lang="fy">Frysk</a>
       </li>
       <li role="option" aria-selected="true" aria-current="true">
-        <a hreflang="pap-CW" href="#" data-value="Papiamentu" lang="pap-CW"
-          >Papiamentu</a
-        >
+        <a hreflang="pap-CW" href="#" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
       </li>
       <li role="option" aria-selected="false">
-        <a hreflang="pap-AW" href="#" data-value="Papiamento" lang="pap-AW"
-          >Papiamento</a
-        >
+        <a hreflang="pap-AW" href="#" data-value="Papiamento" lang="pap-AW">Papiamento</a>
       </li>
     </ul>
   </div>

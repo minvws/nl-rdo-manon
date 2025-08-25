@@ -59,9 +59,7 @@ import "@minvws/manon/js/filters.js";
 <section class="filter">
   <div>
     <p><span>5.254</span> nieuwsberichten</p>
-    <button aria-expanded="false" data-hide-filters-label="Verberg filters">
-      Toon filters
-    </button>
+    <button aria-expanded="false" data-hide-filters-label="Verberg filters">Toon filters</button>
   </div>
   <form aria-label="Filters" action="" method="post">
     <fieldset>
@@ -168,22 +166,15 @@ import "@minvws/manon/js/filters.js";
       <div>
         <label for="keyword">Trefwoord</label>
         <div>
-          <span class="nota-bene" id="keyword-explanation"
-            >Bijvoorbeeld: fiets</span
-          >
-          <input
-            id="keyword"
-            name="keyword"
-            type="text"
-            aria-describedby="keyword-explanation"
-          />
+          <span class="nota-bene" id="keyword-explanation">Bijvoorbeeld: fiets</span>
+          <input id="keyword" name="keyword" type="text" aria-describedby="keyword-explanation" />
           <p
             class="explanation"
             data-open-label="Toelichting bij het veld: Trefwoord"
             data-close-label="Sluit toelichting bij het veld: Trefwoord"
           >
-            <span>toelichting:</span> Vul hier een trefwoord in waarop u wilt
-            filteren. Dit kan een los woord zijn of een combinatie van woorden.
+            <span>toelichting:</span> Vul hier een trefwoord in waarop u wilt filteren. Dit kan een
+            los woord zijn of een combinatie van woorden.
           </p>
         </div>
       </div>
@@ -193,22 +184,12 @@ import "@minvws/manon/js/filters.js";
         <div class="column-2">
           <div>
             <label for="date-range-start">van</label>
-            <input
-              id="date-range-start"
-              name="date-range-start"
-              value="DD-MM-JJJJ"
-              type="date"
-            />
+            <input id="date-range-start" name="date-range-start" value="DD-MM-JJJJ" type="date" />
           </div>
 
           <div>
             <label for="date-range-end">tot</label>
-            <input
-              id="date-range-end"
-              name="date-range-end"
-              value="DD-MM-JJJJ"
-              type="date"
-            />
+            <input id="date-range-end" name="date-range-end" value="DD-MM-JJJJ" type="date" />
           </div>
         </div>
         <p
@@ -216,8 +197,7 @@ import "@minvws/manon/js/filters.js";
           data-open-label="Toelichting bij het veld: Periode"
           data-close-label="Sluit toelichting bij het veld: Periode"
         >
-          <span>toelichting:</span> Vul hier een start- en/of einddatum als
-          volgt in: DD-MM-JJJJ.
+          <span>toelichting:</span> Vul hier een start- en/of einddatum als volgt in: DD-MM-JJJJ.
         </p>
       </fieldset>
 

@@ -32,7 +32,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     </p>
   </div>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 #### HTML-Voorbeeld
@@ -88,7 +89,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     </div>
   </div>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 #### HTML-voorbeeld
@@ -150,7 +152,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     </div>
   </div>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 #### HTML-voorbeeld
@@ -214,9 +217,11 @@ Overzicht van het element in mogelijke structuren om te testen.
         </p>
       </div>
     </div>
+
   </fieldset>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 #### HTML-voorbeeld
@@ -286,9 +291,11 @@ Overzicht van het element in mogelijke structuren om te testen.
         </div>
       </div>
     </div>
+
   </fieldset>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 #### HTML-voorbeeld
@@ -299,9 +306,7 @@ Overzicht van het element in mogelijke structuren om te testen.
     <legend>Help op simpel formulierveld</legend>
 
     <div>
-      <label for="example-input-help-required-fieldset-horizontal"
-        >Voorbeeld invoerveld</label
-      >
+      <label for="example-input-help-required-fieldset-horizontal">Voorbeeld invoerveld</label>
       <div>
         <span class="nota-bene">Dit veld is verplicht</span>
         <div>
@@ -388,7 +393,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     </div>
   </div>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 #### HTML-voorbeeld
@@ -401,9 +407,7 @@ Overzicht van het element in mogelijke structuren om te testen.
   </div>
 
   <div>
-    <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
-      >Help op simpel formulierveld</label
-    >
+    <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Help op simpel formulierveld</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
       <div>
@@ -427,9 +431,7 @@ Overzicht van het element in mogelijke structuren om te testen.
   </div>
 
   <div>
-    <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
-      >Help op simpel formulierveld</label
-    >
+    <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Help op simpel formulierveld</label>
     <div>
       <input
         id="example-input-help-horizontal-required"
@@ -634,6 +636,7 @@ Overzicht van het element in mogelijke structuren om te testen.
         </p>
       </div>
     </fieldset>
+
   </fieldset>
   <button type="submit">Verzend</button>
 </form>

@@ -39,7 +39,9 @@ Overzicht van het element in mogelijke structuren om te testen.
 ```html
 <div class="horizontal-scroll">
   <table>
-    <caption>Tabelvoorbeeld met data over meerdere kolommen:</caption>
+    <caption>
+      Tabelvoorbeeld met data over meerdere kolommen:
+    </caption>
     <thead>
       <tr>
         <th scope="col">Lorem ipsum</th>

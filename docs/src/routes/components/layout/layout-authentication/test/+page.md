@@ -36,11 +36,11 @@ Overzicht van het element in mogelijke structuren om te testen.
   <form>
     <div>
       <label for="example-1-name-1">User name</label>
-      <input type="text" id="example-1-name-1">
+      <input type="text" id="example-1-name-1" />
     </div>
     <div>
       <label for="example-1-password-1">Password</label>
-      <input type="password" id="example-1-password-1">
+      <input type="password" id="example-1-password-1" />
     </div>
     <button type="submit">Lorem ipsum</button>
   </form>
@@ -74,11 +74,11 @@ Overzicht van het element in mogelijke structuren om te testen.
   <form>
     <div>
       <label for="example-2-name-1">User name</label>
-      <input type="text" id="example-2-name-1">
+      <input type="text" id="example-2-name-1" />
     </div>
     <div>
       <label for="example-2-password-1">Password</label>
-      <input type="password" id="example-2-password-1">
+      <input type="password" id="example-2-password-1" />
     </div>
     <button type="submit">Lorem ipsum</button>
   </form>
@@ -112,11 +112,11 @@ Overzicht van het element in mogelijke structuren om te testen.
   <form>
     <div>
       <label for="example-3-name-1">User name</label>
-      <input type="text" id="example-3-name-1">
+      <input type="text" id="example-3-name-1" />
     </div>
     <div>
       <label for="example-3-password-1">Password</label>
-      <input type="password" id="example-3-password-1">
+      <input type="password" id="example-3-password-1" />
     </div>
     <button type="submit">Lorem ipsum</button>
   </form>
@@ -147,11 +147,11 @@ Overzicht van het element in mogelijke structuren om te testen.
 <form class="layout-authentication">
   <div>
     <label for="example-4-name-1">User name</label>
-    <input type="text" id="example-4-name-1">
+    <input type="text" id="example-4-name-1" />
   </div>
   <div>
     <label for="example-4-password-1">Password</label>
-    <input type="password" id="example-4-password-1">
+    <input type="password" id="example-4-password-1" />
   </div>
   <button type="submit">Lorem ipsum</button>
 </form>

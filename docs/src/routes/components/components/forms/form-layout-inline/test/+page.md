@@ -60,7 +60,7 @@ Overzicht van het element in mogelijke structuren om te testen.
 <div class="button-container">
   <button type="submit">Haal gegevens op</button>
   <form action="" method="post" class="inline">
-      <button type="submit">Haal gegevens op</button>
+    <button type="submit">Haal gegevens op</button>
   </form>
 </div>
 ```

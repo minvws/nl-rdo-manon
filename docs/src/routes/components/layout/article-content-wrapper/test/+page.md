@@ -11,8 +11,10 @@ Componenten gegroepeerd in `article`'s.
 
 ```html
 <main>
-  <article> <!-- This can be full width -->
-    <div> <!-- While the content width can be limited -->
+  <article>
+    <!-- This can be full width -->
+    <div>
+      <!-- While the content width can be limited -->
       <!-- content -->
     </div>
   </article>

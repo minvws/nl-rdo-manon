@@ -49,18 +49,18 @@ SCSS importeren:
   <div>
     <h2>Lorem ipsum dolor set</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue
-      ac enim luctus, vitae iaculis magna vestibulum. Aenean est mauris,
-      condimentum et molestie sed, tempus in massa.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus,
+      vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in
+      massa.
     </p>
   </div>
 
   <div>
     <h2>Lorem ipsum dolor set</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue
-      ac enim luctus, vitae iaculis magna vestibulum. Aenean est mauris,
-      condimentum et molestie sed, tempus in massa.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus,
+      vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in
+      massa.
     </p>
   </div>
 </div>

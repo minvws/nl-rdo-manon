@@ -46,7 +46,9 @@ Overzicht van het element in mogelijke structuren om te testen.
 ```html
 <div class="horizontal-scroll">
   <table class="condensed">
-    <caption>Simple table example:</caption>
+    <caption>
+      Simple table example:
+    </caption>
     <thead>
       <tr>
         <th scope="col">Table header heading 1</th>
