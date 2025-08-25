@@ -1,31 +1,30 @@
 :root {
-
   /* Color sets */
   /* Spot large */
   /* Main colors */
 
-    /* Gold */
-    --branding-color-1: #E1C282;
+  /* Gold */
+  --branding-color-1: #e1c282;
 
-    /* Pink */
-    --branding-color-2: #F7D0D3;
+  /* Pink */
+  --branding-color-2: #f7d0d3;
 
   /* Accent colors */
 
-    /* Dark navy */
-    --branding-color-accent-1: #111416;
+  /* Dark navy */
+  --branding-color-accent-1: #111416;
 
-    /* Soft blue */
-    --branding-color-accent-2: #5B76A9;
+  /* Soft blue */
+  --branding-color-accent-2: #5b76a9;
 
-    /* Soft green */
-    --branding-color-accent-3: #6FB07D;
+  /* Soft green */
+  --branding-color-accent-3: #6fb07d;
 
-    /* Soft red */
-    --branding-color-accent-4: #B95D5D;
+  /* Soft red */
+  --branding-color-accent-4: #b95d5d;
 
-    /* Soft gold */
-    --branding-color-accent-5: #FFF4DD;
+  /* Soft gold */
+  --branding-color-accent-5: #fff4dd;
 
   /* Branding color combinations. 
   e.g if a branding color is used as a background-color. What should the text
@@ -37,9 +36,13 @@
 
   --branding-color-1-link-text-color: var(--branding-color-1-text-color);
   --branding-color-1-link-active-text-color: var(--branding-color-1-text-color);
-  --branding-color-1-link-visited-text-color: var(--branding-color-1-text-color);
+  --branding-color-1-link-visited-text-color: var(
+    --branding-color-1-text-color
+  );
   --branding-color-1-link-hover-text-color: var(--branding-color-1-text-color);
-  --branding-color-1-link-visited-hover-text-color: var(--branding-color-1-text-color);
+  --branding-color-1-link-visited-hover-text-color: var(
+    --branding-color-1-text-color
+  );
 
   /* Branding color 2 */
   --branding-color-2-background-color: var(--branding-color-2);
@@ -47,57 +50,111 @@
 
   --branding-color-2-link-text-color: var(--branding-color-2-text-color);
   --branding-color-2-link-active-text-color: var(--branding-color-2-text-color);
-  --branding-color-2-link-visited-text-color: var(--branding-color-2-text-color);
+  --branding-color-2-link-visited-text-color: var(
+    --branding-color-2-text-color
+  );
   --branding-color-2-link-hover-text-color: var(--branding-color-2-text-color);
-  --branding-color-2-link-visited-hover-text-color: var(--branding-color-2-text-color);
+  --branding-color-2-link-visited-hover-text-color: var(
+    --branding-color-2-text-color
+  );
 
   /* Accent color 1 */
   --branding-color-accent-1-background-color: var(--branding-color-accent-1);
   --branding-color-accent-1-text-color: white;
 
-  --branding-color-accent-1-link-text-color: var(--branding-color-accent-1-text-color);
-  --branding-color-accent-1-link-active-text-color: var(--branding-color-accent-1-text-color);
-  --branding-color-accent-1-link-visited-text-color: var(--branding-color-accent-1-text-color);
-  --branding-color-accent-1-link-hover-text-color: var(--branding-color-accent-1-text-color);
-  --branding-color-accent-1-link-visited-hover-text-color: var(--branding-color-accent-1-text-color);
+  --branding-color-accent-1-link-text-color: var(
+    --branding-color-accent-1-text-color
+  );
+  --branding-color-accent-1-link-active-text-color: var(
+    --branding-color-accent-1-text-color
+  );
+  --branding-color-accent-1-link-visited-text-color: var(
+    --branding-color-accent-1-text-color
+  );
+  --branding-color-accent-1-link-hover-text-color: var(
+    --branding-color-accent-1-text-color
+  );
+  --branding-color-accent-1-link-visited-hover-text-color: var(
+    --branding-color-accent-1-text-color
+  );
 
   /* Accent color 2 */
   --branding-color-accent-2-background-color: var(--branding-color-accent-2);
   --branding-color-accent-2-text-color: white;
 
-  --branding-color-accent-2-link-text-color: var(--branding-color-accent-2-text-color);
-  --branding-color-accent-2-link-active-text-color: var(--branding-color-accent-2-text-color);
-  --branding-color-accent-2-link-visited-text-color: var(--branding-color-accent-2-text-color);
-  --branding-color-accent-2-link-hover-text-color: var(--branding-color-accent-2-text-color);
-  --branding-color-accent-2-link-visited-hover-text-color: var(--branding-color-accent-2-text-color);
+  --branding-color-accent-2-link-text-color: var(
+    --branding-color-accent-2-text-color
+  );
+  --branding-color-accent-2-link-active-text-color: var(
+    --branding-color-accent-2-text-color
+  );
+  --branding-color-accent-2-link-visited-text-color: var(
+    --branding-color-accent-2-text-color
+  );
+  --branding-color-accent-2-link-hover-text-color: var(
+    --branding-color-accent-2-text-color
+  );
+  --branding-color-accent-2-link-visited-hover-text-color: var(
+    --branding-color-accent-2-text-color
+  );
 
   /* Accent color 3 */
   --branding-color-accent-3-background-color: var(--branding-color-accent-3);
   --branding-color-accent-3-text-color: black;
 
-  --branding-color-accent-3-link-text-color: var(--branding-color-accent-3-text-color);
-  --branding-color-accent-3-link-active-text-color: var(--branding-color-accent-3-text-color);
-  --branding-color-accent-3-link-visited-text-color: var(--branding-color-accent-3-text-color);
-  --branding-color-accent-3-link-hover-text-color: var(--branding-color-accent-3-text-color);
-  --branding-color-accent-3-link-visited-hover-text-color: var(--branding-color-accent-3-text-color);
+  --branding-color-accent-3-link-text-color: var(
+    --branding-color-accent-3-text-color
+  );
+  --branding-color-accent-3-link-active-text-color: var(
+    --branding-color-accent-3-text-color
+  );
+  --branding-color-accent-3-link-visited-text-color: var(
+    --branding-color-accent-3-text-color
+  );
+  --branding-color-accent-3-link-hover-text-color: var(
+    --branding-color-accent-3-text-color
+  );
+  --branding-color-accent-3-link-visited-hover-text-color: var(
+    --branding-color-accent-3-text-color
+  );
 
   /* Accent color 4 */
   --branding-color-accent-4-background-color: var(--branding-color-accent-4);
   --branding-color-accent-4-text-color: black;
 
-  --branding-color-accent-4-link-text-color: var(--branding-color-accent-4-text-color);
-  --branding-color-accent-4-link-active-text-color: var(--branding-color-accent-4-text-color);
-  --branding-color-accent-4-link-visited-text-color: var(--branding-color-accent-4-text-color);
-  --branding-color-accent-4-link-hover-text-color: var(--branding-color-accent-4-text-color);
-  --branding-color-accent-4-link-visited-hover-text-color: var(--branding-color-accent-4-text-color);
+  --branding-color-accent-4-link-text-color: var(
+    --branding-color-accent-4-text-color
+  );
+  --branding-color-accent-4-link-active-text-color: var(
+    --branding-color-accent-4-text-color
+  );
+  --branding-color-accent-4-link-visited-text-color: var(
+    --branding-color-accent-4-text-color
+  );
+  --branding-color-accent-4-link-hover-text-color: var(
+    --branding-color-accent-4-text-color
+  );
+  --branding-color-accent-4-link-visited-hover-text-color: var(
+    --branding-color-accent-4-text-color
+  );
 
   /* Accent color 5 */
   --branding-color-accent-5-background-color: var(--branding-color-accent-5);
   --branding-color-accent-5-text-color: black;
 
-  --branding-color-accent-5-link-text-color: var(--branding-color-accent-5-text-color);
-  --branding-color-accent-5-link-active-text-color: var(--branding-color-accent-5-text-color);
-  --branding-color-accent-5-link-visited-text-color: var(--branding-color-accent-5-text-color);
-  --branding-color-accent-5-link-hover-text-color: var(--branding-color-accent-5-text-color);
-  --branding-color-accent-5-link-visited-hover-text-color: var(--branding-color-accent-5-text-color);
+  --branding-color-accent-5-link-text-color: var(
+    --branding-color-accent-5-text-color
+  );
+  --branding-color-accent-5-link-active-text-color: var(
+    --branding-color-accent-5-text-color
+  );
+  --branding-color-accent-5-link-visited-text-color: var(
+    --branding-color-accent-5-text-color
+  );
+  --branding-color-accent-5-link-hover-text-color: var(
+    --branding-color-accent-5-text-color
+  );
+  --branding-color-accent-5-link-visited-hover-text-color: var(
+    --branding-color-accent-5-text-color
+  );
 }

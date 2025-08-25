@@ -25,9 +25,12 @@
       <section id="introduction">
         <h1>"Ga direct naar inhoud"-knop</h1>
 
-        <p>Voeg gebruiksvriendelijkheid toe voor gebruikers die gebruik maken van hulptechnologiën of enkel met
-          toetsenbord navigeren. Deze knop geeft gebruikers de mogelijkheid om direct naar de inhoud van de pagina te springen. Hiermee
-          wordt voorkomen dat de gebruiker langs onnodig veel elementen moet navigeren.</p>
+        <p>
+          Voeg gebruiksvriendelijkheid toe voor gebruikers die gebruik maken van hulptechnologiën of
+          enkel met toetsenbord navigeren. Deze knop geeft gebruikers de mogelijkheid om direct naar
+          de inhoud van de pagina te springen. Hiermee wordt voorkomen dat de gebruiker langs
+          onnodig veel elementen moet navigeren.
+        </p>
 
         <h2>Benodigde stappen</h2>
 
@@ -41,15 +44,24 @@
 
         <ul>
           <li>Voeg de knop als eerste element binnen de header toe.</li>
-          <li>Verwijs met een <code>&lt;a></code> naar het blok waar de content begint. Dit zal meestal de
-            <code>&lt;main></code> zijn.</li>
-          <li><strong>Let op: de knop is alleen zichtbaar wanneer deze focus krijgt. Gebruik <code>tab</code> om de
-              knop te zien.</strong></li>
-          <li>Voeg <code>tabindex="-1"</code> toe aan de main. De <code>main</code> is een element dat standaard geen
-            focus kan accepteren aangezien het geen control of interactieve content is. Het toevoegen van de tabindex
-            stelt het in staat om toch focus te accepteren.</li>
+          <li>
+            Verwijs met een <code>&lt;a></code> naar het blok waar de content begint. Dit zal
+            meestal de
+            <code>&lt;main></code> zijn.
+          </li>
+          <li>
+            <strong
+              >Let op: de knop is alleen zichtbaar wanneer deze focus krijgt. Gebruik <code
+                >tab</code
+              > om de knop te zien.</strong
+            >
+          </li>
+          <li>
+            Voeg <code>tabindex="-1"</code> toe aan de main. De <code>main</code> is een element dat
+            standaard geen focus kan accepteren aangezien het geen control of interactieve content is.
+            Het toevoegen van de tabindex stelt het in staat om toch focus te accepteren.
+          </li>
         </ul>
-
       </section>
 
       <section id="requirements">
@@ -67,11 +79,14 @@
 
         <h4>Visueel voorbeeld</h4>
         <div class="explanation" role="group" aria-label="Toelichting">
-            <span>Toelichting:</span>
-            <p>De <strong>"Ga direct naar inhoud"-knop</strong> is standaard verborgen voor visuele gebruikers,
-            maar wordt zichtbaar wanneer deze focus krijgt via toetsenbordnavigatie.
-            Dit zorgt ervoor dat de knop niet de visuele opmaak verstoort, maar wel beschikbaar blijft voor gebruikers die er baat bij hebben.
-            Gebruik de <strong>Tab-toets</strong> om de knop te activeren en zichtbaar te maken in het onderstaande voorbeeld.</p>
+          <span>Toelichting:</span>
+          <p>
+            De <strong>"Ga direct naar inhoud"-knop</strong> is standaard verborgen voor visuele
+            gebruikers, maar wordt zichtbaar wanneer deze focus krijgt via toetsenbordnavigatie. Dit
+            zorgt ervoor dat de knop niet de visuele opmaak verstoort, maar wel beschikbaar blijft
+            voor gebruikers die er baat bij hebben. Gebruik de <strong>Tab-toets</strong> om de knop
+            te activeren en zichtbaar te maken in het onderstaande voorbeeld.
+          </p>
         </div>
         <div class="resize">
           <iframe src="{base}/examples/skip-to-content" title="Voorbeeld" height="240px"></iframe>
@@ -108,7 +123,6 @@
               </pre>
         </div>
       </section>
-
     </div>
   </article>
 </main>

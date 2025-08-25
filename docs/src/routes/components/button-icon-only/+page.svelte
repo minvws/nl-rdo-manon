@@ -34,7 +34,9 @@
             van een icoonknop zonder achtergrond.
           </li>
           <li>
-            Voeg een icoon toe aan de knop. Zie voor meer informatie: <a href="{base}/components/button/icon">Icoonknop</a>.
+            Voeg een icoon toe aan de knop. Zie voor meer informatie: <a
+              href="{base}/components/button/icon">Icoonknop</a
+            >.
           </li>
         </ol>
 
