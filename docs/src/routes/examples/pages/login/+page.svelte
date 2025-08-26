@@ -1,11 +1,3 @@
-<script lang="ts">
-  import { base } from "$app/paths";
-  import { Header, Footer } from "$lib/pages";
-  const BaseUrl = `${base}/examples/pages/basic`;
-</script>
-
-<Header url={BaseUrl} />
-
 <main>
   <section class="auth">
     <div>
@@ -43,5 +35,3 @@
     </div>
   </section>
 </main>
-
-<Footer url={BaseUrl} />
