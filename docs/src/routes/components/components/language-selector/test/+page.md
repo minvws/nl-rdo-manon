@@ -64,26 +64,28 @@ Overzicht van het element in mogelijke structuren om te testen.
 <div class="language-selector">
   <p>Kies een taal:</p>
   <p class="visually-hidden" id="language-selector-description">Select your language</p>
-  <div class="language-selector-options" aria-describedby="language-selector-description" aria-expanded="false">
-    <button aria-haspopup="listbox" aria-current="true">
-      Papiamentu
-    </button>
+  <div
+    class="language-selector-options"
+    aria-describedby="language-selector-description"
+    aria-expanded="false"
+  >
+    <button aria-haspopup="listbox" aria-current="true">Papiamentu</button>
     <ul role="listbox">
-        <li role="option" aria-selected="false">
-          <a hreflang="nl" href="#" data-value="Nederlands" lang="nl">Nederlands</a>
-        </li>
-        <li role="option" aria-selected="false">
-          <a hreflang="en" href="#" data-value="English" lang="en">English</a>
-        </li>
-        <li role="option" aria-selected="false">
-          <a hreflang="fy" href="#" data-value="Frysk" lang="fy">Frysk</a>
-        </li>
-        <li role="option" aria-selected="true" aria-current="true">
-          <a hreflang="pap-CW" href="#" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
-        </li>
-        <li role="option" aria-selected="false">
-          <a hreflang="pap-AW" href="#" data-value="Papiamento" lang="pap-AW">Papiamento</a>
-        </li>
+      <li role="option" aria-selected="false">
+        <a hreflang="nl" href="#" data-value="Nederlands" lang="nl">Nederlands</a>
+      </li>
+      <li role="option" aria-selected="false">
+        <a hreflang="en" href="#" data-value="English" lang="en">English</a>
+      </li>
+      <li role="option" aria-selected="false">
+        <a hreflang="fy" href="#" data-value="Frysk" lang="fy">Frysk</a>
+      </li>
+      <li role="option" aria-selected="true" aria-current="true">
+        <a hreflang="pap-CW" href="#" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
+      </li>
+      <li role="option" aria-selected="false">
+        <a hreflang="pap-AW" href="#" data-value="Papiamento" lang="pap-AW">Papiamento</a>
+      </li>
     </ul>
   </div>
 </div>

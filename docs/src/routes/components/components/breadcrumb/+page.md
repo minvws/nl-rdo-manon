@@ -31,9 +31,7 @@ SCSS importeren:
     <ul>
       <li><a href="/components">Componenten</a></li>
       <li>
-        <a href="/components/breadcrumb-bar" aria-current="page"
-          >Kruimelpad - breadcrumb-bar</a
-        >
+        <a href="/components/breadcrumb-bar" aria-current="page">Kruimelpad - breadcrumb-bar</a>
       </li>
     </ul>
   </div>

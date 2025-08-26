@@ -21,7 +21,7 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <div class="login-meta">
-<p>Ingelogd als: <a href="">Jane Doe</a></p>
+  <p>Ingelogd als: <a href="">Jane Doe</a></p>
 </div>
 ```
 
@@ -37,7 +37,7 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <section class="login-meta">
-<p>Ingelogd als: <a href="">Jane Doe</a></p>
+  <p>Ingelogd als: <a href="">Jane Doe</a></p>
 </section>
 ```
 

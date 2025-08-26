@@ -23,9 +23,9 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <form action="" method="post">
-<label for="voorbeeld-date-base">Datum</label>
-<input id="voorbeeld-date-base" name="voorbeeld-date-base" type="date">
-<button type="submit">Verzend</button>
+  <label for="voorbeeld-date-base">Datum</label>
+  <input id="voorbeeld-date-base" name="voorbeeld-date-base" type="date" />
+  <button type="submit">Verzend</button>
 </form>
 ```
 
@@ -45,11 +45,11 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <form action="" method="post">
-<div>
-<label for="voorbeeld-date-div">Datum</label>
-<input id="voorbeeld-date-div" name="voorbeeld-date-div" type="date">
-</div>
-<button type="submit">Verzend</button>
+  <div>
+    <label for="voorbeeld-date-div">Datum</label>
+    <input id="voorbeeld-date-div" name="voorbeeld-date-div" type="date" />
+  </div>
+  <button type="submit">Verzend</button>
 </form>
 ```
 
@@ -69,11 +69,11 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <form action="" method="post">
-<section>
-<label for="voorbeeld-date-section">Datum</label>
-<input id="voorbeeld-date-section" name="voorbeeld-date-section" type="date">
-</section>
-<button type="submit">Verzend</button>
+  <section>
+    <label for="voorbeeld-date-section">Datum</label>
+    <input id="voorbeeld-date-section" name="voorbeeld-date-section" type="date" />
+  </section>
+  <button type="submit">Verzend</button>
 </form>
 ```
 
@@ -94,11 +94,11 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <form action="" method="post">
-<fieldset>
-<legend>Datumveld voorbeeld</legend>
-<label for="voorbeeld-date-fieldset">Datum</label>
-<input id="voorbeeld-date-fieldset" name="voorbeeld-date-fieldset" type="date">
-</fieldset>
-<button type="submit">Verzend</button>
+  <fieldset>
+    <legend>Datumveld voorbeeld</legend>
+    <label for="voorbeeld-date-fieldset">Datum</label>
+    <input id="voorbeeld-date-fieldset" name="voorbeeld-date-fieldset" type="date" />
+  </fieldset>
+  <button type="submit">Verzend</button>
 </form>
 ```

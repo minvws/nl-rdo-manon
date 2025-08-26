@@ -121,7 +121,9 @@ Overzicht van het element in mogelijke structuren om te testen.
 ```html
 <div class="horizontal-scroll sticky-header">
   <table>
-    <caption>Tabelvoorbeeld met een sticky header.</caption>
+    <caption>
+      Tabelvoorbeeld met een sticky header.
+    </caption>
     <thead>
       <tr>
         <th scope="col">Table header heading 1</th>

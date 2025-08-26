@@ -24,12 +24,12 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <div class="tabs">
-    <ul>
-        <li><a href="#" aria-current="page">Optie 1</a></li>
-        <li><a href="#">Optie 2</a></li>
-        <li><a href="#">Optie 3</a></li>
-        <li><a href="#">Optie 4</a></li>
-    </ul>
+  <ul>
+    <li><a href="#" aria-current="page">Optie 1</a></li>
+    <li><a href="#">Optie 2</a></li>
+    <li><a href="#">Optie 3</a></li>
+    <li><a href="#">Optie 4</a></li>
+  </ul>
 </div>
 ```
 
@@ -48,12 +48,12 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <div class="tabs">
-    <ul>
-        <li><span aria-current="page">Optie 1</span></li>
-        <li><a href="#">Optie 2</a></li>
-        <li><a href="#">Optie 3</a></li>
-        <li><a href="#">Optie 4</a></li>
-    </ul>
+  <ul>
+    <li><span aria-current="page">Optie 1</span></li>
+    <li><a href="#">Optie 2</a></li>
+    <li><a href="#">Optie 3</a></li>
+    <li><a href="#">Optie 4</a></li>
+  </ul>
 </div>
 ```
 
@@ -72,12 +72,12 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <div class="tabs">
-    <ul>
-        <li aria-current="page"><a href="#">Optie 1</a></li>
-        <li><a href="#">Optie 2</a></li>
-        <li><a href="#">Optie 3</a></li>
-        <li><a href="#">Optie 4</a></li>
-    </ul>
+  <ul>
+    <li aria-current="page"><a href="#">Optie 1</a></li>
+    <li><a href="#">Optie 2</a></li>
+    <li><a href="#">Optie 3</a></li>
+    <li><a href="#">Optie 4</a></li>
+  </ul>
 </div>
 ```
 
@@ -96,12 +96,12 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <section class="tabs">
-    <ul>
-        <li><a href="#" aria-current="page">Optie 1</a></li>
-        <li><a href="#">Optie 2</a></li>
-        <li><a href="#">Optie 3</a></li>
-        <li><a href="#">Optie 4</a></li>
-    </ul>
+  <ul>
+    <li><a href="#" aria-current="page">Optie 1</a></li>
+    <li><a href="#">Optie 2</a></li>
+    <li><a href="#">Optie 3</a></li>
+    <li><a href="#">Optie 4</a></li>
+  </ul>
 </section>
 ```
 
@@ -118,9 +118,9 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 ```html
 <ul class="tabs">
-    <li><a href="#" aria-current="page">Optie 1</a></li>
-    <li><a href="#">Optie 2</a></li>
-    <li><a href="#">Optie 3</a></li>
-    <li><a href="#">Optie 4</a></li>
+  <li><a href="#" aria-current="page">Optie 1</a></li>
+  <li><a href="#">Optie 2</a></li>
+  <li><a href="#">Optie 3</a></li>
+  <li><a href="#">Optie 4</a></li>
 </ul>
 ```

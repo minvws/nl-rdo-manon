@@ -11,8 +11,10 @@ Componenten gegroepeerd in `section`'s binnen de `main`.
 
 ```html
 <main>
-  <section> <!-- This can be full width -->
-    <div> <!-- While the content width can be limited -->
+  <section>
+    <!-- This can be full width -->
+    <div>
+      <!-- While the content width can be limited -->
       <!-- content -->
     </div>
   </section>

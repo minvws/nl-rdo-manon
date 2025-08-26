@@ -17,9 +17,7 @@ Groepeer bij elkaar horende elementen visueel in een kaart.
 @use "@minvws/manon/card";
 ```
 
-<h2 id="examples">Voorbeelden:</h2>
-
-### Voorbeeld: Basis
+<h2 id="examples">Voorbeelden</h2>
 
 <div class="card" role="group" aria-label="Voorbeeldkaart">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

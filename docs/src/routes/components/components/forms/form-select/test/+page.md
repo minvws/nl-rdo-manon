@@ -21,7 +21,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     <option value="3">Optie 3</option>
   </select>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 ### HTML-voorbeeld:
@@ -53,7 +54,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     </select>
   </div>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 ### HTML-voorbeeld:
@@ -87,7 +89,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     </select>
   </div>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 ### HTML-voorbeeld:
@@ -121,7 +124,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     </select>
   </section>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 ### HTML-voorbeeld:
@@ -155,7 +159,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     </select>
   </section>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 ### HTML-voorbeeld:
@@ -164,7 +169,13 @@ Overzicht van het element in mogelijke structuren om te testen.
 <form action="" method="post">
   <section class="horizontal">
     <label for="select-section-horizontal">Selectielijst</label>
-    <input type="range" id="range-example-section-horizontal" name="range-example-section-horizontal" min="0" max="100">
+    <input
+      type="range"
+      id="range-example-section-horizontal"
+      name="range-example-section-horizontal"
+      min="0"
+      max="100"
+    />
   </section>
 
   <button type="submit">Verzend</button>
@@ -186,7 +197,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     </select>
   </fieldset>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 ### HTML-voorbeeld:
@@ -224,7 +236,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     </div>
   </fieldset>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 ### HTML-voorbeeld:
@@ -240,7 +253,7 @@ Overzicht van het element in mogelijke structuren om te testen.
         <option value="2">Optie 2</option>
         <option value="3">Optie 3</option>
       </select>
-      </div>
+    </div>
   </fieldset>
 
   <button type="submit">Verzend</button>
@@ -261,7 +274,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     <option value="3">Optie 3</option>
   </select>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 #### HTML-voorbeeld:
@@ -293,7 +307,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     <option value="3">Optie 3</option>
   </select>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 #### HTML-voorbeeld:
@@ -323,7 +338,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     <option value="Voorgeselecteerd" selected>Voorgeselecteerd</option>
   </select>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 #### HTML-voorbeeld:
@@ -359,9 +375,11 @@ Overzicht van het element in mogelijke structuren om te testen.
       <option value="Eiffeltoren">Eiffeltoren</option>
       <option value="Dinosaurus">Dinosaurus</option>
     </optgroup>
+
   </select>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 #### HTML-voorbeeld:
