@@ -26,11 +26,17 @@ jobs:
         with:
           fetch-depth: 0 # Fetch all history for tags
 
-      - name: Get latest tag
-        id: get_latest_tag
+      - name: Ensure this is the latest tag
         run: |
           # Get all tags, sort them semantically, and pick the highest stable version
           LATEST_TAG=$(git tag --sort=-v:refname | grep -v - | head -n 1)
+          TRIGGER_TAG=$(git tag --points-at ${{ github.event.workflow_run.head_sha }} | head -n 1)
+
+          if [ "$TRIGGER_TAG" != "$LATEST_TAG" ]; then
+            echo "The triggered tag ($TRIGGER_TAG) is not the latest tag ($LATEST_TAG). Exiting."
+            exit 0
+          fi
+
           echo "LATEST_TAG=$LATEST_TAG" >> $GITHUB_ENV
 
       - name: Checkout latest tag
