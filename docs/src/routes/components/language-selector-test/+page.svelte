@@ -25,12 +25,15 @@
         <div class="language-selector">
           <p>Kies een taal:</p>
           <p class="visually-hidden" id="language-selector-description">Select your language</p>
-          <div
-            class="language-selector-options"
-            aria-describedby="language-selector-description"
-            aria-expanded="false"
-          >
-            <button aria-haspopup="listbox" aria-current="true"> Papiamentu </button>
+          <div class="language-selector-options">
+            <button
+              aria-haspopup="listbox"
+              aria-current="true"
+              aria-describedby="language-selector-description"
+              aria-expanded="false"
+            >
+              Papiamentu
+            </button>
             <ul role="listbox">
               <li role="option" aria-selected="false">
                 <a hreflang="nl" href="language-selector-test" data-value="Nederlands" lang="nl"
@@ -74,8 +77,8 @@
 <div class="language-selector">
   <p>Kies een taal:</p>
   <p class="visually-hidden" id="language-selector-description">Select your language</p>
-  <div class="language-selector-options" aria-describedby="language-selector-description" aria-expanded="false">
-    <button aria-haspopup="listbox" aria-current="true">
+  <div class="language-selector-options">
+    <button aria-haspopup="listbox" aria-current="true" aria-describedby="language-selector-description" aria-expanded="false">
       Papiamentu
     </button>
     <ul role="listbox">
