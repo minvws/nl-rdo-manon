@@ -1,13 +1,22 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
+@use "../functions/validators";
 
 article {
   > section,
   > div > section {
-    display: flex;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
+
+    @if validators.any-args-not-null(
+      theme.$article-section-flex-direction,
+      theme.$article-section-gap,
+      theme.$article-section-align-items
+    )
+    {
+      display: flex;
+    }
 
     @include theming.apply-from-theme(
       (

@@ -87,6 +87,7 @@ and spacing sets */
   $footer-gap: spacing.$spacing-100,
   $footer-flex-wrap: wrap,
   $footer-justify-content: space-between,
+  $footer-navigation-flex-direction: row,
 
   // form
   $form-align-items: flex-start,
@@ -144,6 +145,13 @@ and spacing sets */
 
   // list
   $list-padding: 0,
+
+  // main
+  $main-padding-top: #{spacing.$spacing-400},
+  $main-padding-right: #{spacing.$spacing-800},
+  $main-padding-bottom: #{spacing.$spacing-400},
+  $main-padding-left: #{spacing.$spacing-800},
+  $main-gap: #{spacing.$spacing-250},
 
   // section
   $section-padding-top: spacing.$spacing-100,
