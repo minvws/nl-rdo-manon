@@ -82,6 +82,6 @@ jobs:
           fetch-depth: 0
 
       - name: 'Run SonarQube cloud scanner'
-        uses: minvws/nl-irealisatie-generic-pipelines/.github/actions/sonarcloud@main
+        uses: minvws/action-sonarqube@v1
         with:
           sonar-token: ${{ secrets.SONAR_TOKEN }}
