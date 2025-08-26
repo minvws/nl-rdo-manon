@@ -6,4 +6,7 @@
 .background-color-offset {
   background-color: var(--background-color-offset-background-color);
   color: var(--background-color-offset-text-color);
+  padding-top: var(--background-color-offset-padding-top);
+  padding-bottom: var(--background-color-offset-padding-bottom);
+  margin: var(--background-color-offset-margin);
 }
