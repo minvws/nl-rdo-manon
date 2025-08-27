@@ -42,7 +42,7 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
       consequat facilisis ac eu velit.
-      <span role="button">Lorem ipsum</span> consectetur adipiscing elit.
+      <a href="notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
@@ -66,7 +66,7 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
       facilisis ac eu velit.
-      <span role="button">Lorem ipsum</span> consectetur adipiscing elit.
+      <a href="">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
@@ -94,7 +94,7 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a
       nisi consequat facilisis ac eu velit.
-      <span role="button">Lorem ipsum</span> consectetur adipiscing elit.
+      <a href="">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
@@ -118,7 +118,7 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
       facilisis ac eu velit.
-      <span role="button">Lorem ipsum</span> consectetur adipiscing elit.
+      <a href="">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>

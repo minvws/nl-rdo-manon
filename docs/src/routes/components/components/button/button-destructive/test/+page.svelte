@@ -50,38 +50,38 @@
 
         <h3>Link als knop</h3>
         <h4>Visueel voorbeeld:</h4>
-        <span class="button destructive"
-          >Lorem ipsum</span
+        <a href="{base}/components/button-destructive-test" class="button destructive"
+          >Lorem ipsum</a
         >
 
         <h4>States</h4>
         <ul>
           <li>
-            <span class="button destructive focus"
-              >Focus</span
+            <a href="{base}/components/button-destructive-test" class="button destructive focus"
+              >Focus</a
             >
           </li>
           <li>
-            <span class="button destructive active"
-              >Active</span
+            <a href="{base}/components/button-destructive-test" class="button destructive active"
+              >Active</a
             >
           </li>
           <li>
-            <span class="button destructive visited"
-              >Visited</span
+            <a href="{base}/components/button-destructive-test" class="button destructive visited"
+              >Visited</a
             >
           </li>
           <li>
-            <span class="button destructive hover"
-              >Hover</span
+            <a href="{base}/components/button-destructive-test" class="button destructive hover"
+              >Hover</a
             >
           </li>
         </ul>
 
         <h3>Link als knop: met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
-        <span class="button destructive"
-          >Lorem ipsum <img src="$img/cat-white.svg" alt="Kat" /></span
+        <a href="{base}/components/button-destructive-test" class="button destructive"
+          >Lorem ipsum <img src="$img/cat-white.svg" alt="Kat" /></a
         >
 
         <h3><code>input type="button"</code></h3>
