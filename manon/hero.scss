@@ -12,6 +12,7 @@
   position: relative;
   padding: 0;
   background-color: var(--hero-background-color);
+  margin-top: var(--hero-margin-top);
 
   img {
     object-fit: cover;

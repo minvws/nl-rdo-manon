@@ -7,7 +7,7 @@
 @mixin notification {
   background-color: var(--notification-background-color);
   color: var(--notification-text-color);
-  max-width: 100%;
+  max-width: var(--notification-max-width);
   width: 100%;
 
   a {
@@ -33,6 +33,10 @@
 
 .notification {
   @include notification;
+}
+
+form .notification {
+  max-width: var(--form-notification-max-width);
 }
 
 /* Icon */

@@ -2,8 +2,7 @@ name: Deploy docs
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
+    tags: ["v*"]
 
 permissions:
   contents: read
@@ -20,7 +19,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -28,16 +27,21 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
+      - name: Get version from tag
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
       - name: Build
         working-directory: docs
         env:
-          BASE_PATH: "/${{ github.event.repository.name }}"
+          BASE_PATH: "/${{ github.event.repository.name }}/${{ steps.get_version.outputs.VERSION }}"
         run: pnpm run build
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/build/
+          target_path: ${{ steps.get_version.outputs.VERSION }}
 
   deploy:
     name: Deploy

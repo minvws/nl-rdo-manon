@@ -104,7 +104,10 @@
         <h3 id="sidemenu-collapsible">Inklapbaar zijmenu</h3>
         <h4>Visueel voorbeeld</h4>
         <div class="resize">
-          <iframe src="{base}/examples/sidemenu-in-page-collapsible" title="Voorbeeld" height="320px"
+          <iframe
+            src="{base}/examples/sidemenu-in-page-collapsible"
+            title="Voorbeeld"
+            height="320px"
           ></iframe>
         </div>
 
