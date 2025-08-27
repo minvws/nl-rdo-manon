@@ -187,7 +187,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling"
+          <a href="{base}/getting-started/installation">
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>

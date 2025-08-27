@@ -23,7 +23,7 @@ Componenten gegroepeerd in `article`'s.
 
 <h2>Gebruikte componenten</h2>
 
-Voor meer informatie over importeren en instellen van componenten. Zie: [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+Voor meer informatie over importeren en instellen van componenten. Zie: [Componenten gebruiken en styling toevoegen](/getting-started/installation)
 
 ### Importeer component via npm
 

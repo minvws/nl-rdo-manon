@@ -96,4 +96,4 @@ Zie het zijmenu van deze pagina.
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+[Componenten gebruiken en styling toevoegen](/getting-started/installation)

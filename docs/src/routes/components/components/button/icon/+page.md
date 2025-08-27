@@ -32,7 +32,7 @@ SCSS importeren:
    - Krijgt de knop alleen een icoon? Zie dan [Zonder tekst](#without-text).
    - Is een subtielere weergave nodig met alléén een icoon zonder het visuele
      uiterlijk van een knop? Zie dan
-     [Icoonknoppen zonder achtergrond](/components/button-icon-only).
+     [Icoonknoppen zonder achtergrond](/components/components/button/button-icon-only).
 
 <div class="explanation" role="group" aria-label="Toelichting">
   <span>Aandachtspunten</span>

@@ -96,7 +96,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling"
+          <a href="{base}/getting-started/installation">
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>
@@ -117,32 +117,32 @@
             Knop, hover, active, focus.
             <ul>
               <li>
-                <a href="{base}/documentation/variables#background-color">background-color</a>
+                <a href="{base}/getting-started/installation#background-color">background-color</a>
               </li>
-              <li><a href="{base}/documentation/variables#text-color">text-color</a></li>
+              <li><a href="{base}/getting-started/installation#text-color">text-color</a></li>
               <li>
-                <a href="{base}/documentation/variables#border-width">border-width</a>
-              </li>
-              <li>
-                <a href="{base}/documentation/variables#border-style">border-style</a>
+                <a href="{base}/getting-started/installation#border-width">border-width</a>
               </li>
               <li>
-                <a href="{base}/documentation/variables#border-color">border-color</a>
+                <a href="{base}/getting-started/installation#border-style">border-style</a>
               </li>
               <li>
-                <a href="{base}/documentation/variables#border-radius">border-radius</a>
+                <a href="{base}/getting-started/installation#border-color">border-color</a>
               </li>
               <li>
-                <a href="{base}/documentation/variables#outline-style">outline-style</a>
+                <a href="{base}/getting-started/installation#border-radius">border-radius</a>
               </li>
               <li>
-                <a href="{base}/documentation/variables#outline-color">outline-color</a>
+                <a href="{base}/getting-started/installation#outline-style">outline-style</a>
               </li>
               <li>
-                <a href="{base}/documentation/variables#outline-width">outline-width</a>
+                <a href="{base}/getting-started/installation#outline-color">outline-color</a>
               </li>
               <li>
-                <a href="{base}/documentation/variables#outline-offset">outline-offset</a>
+                <a href="{base}/getting-started/installation#outline-width">outline-width</a>
+              </li>
+              <li>
+                <a href="{base}/getting-started/installation#outline-offset">outline-offset</a>
               </li>
             </ul>
           </li>
@@ -151,7 +151,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="{base}/components/button-ghost-test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/components/button/button-ghost/test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

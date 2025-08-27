@@ -68,7 +68,7 @@
 
         <h3>Link als knop</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/button-call-to-action-test" class="button cta">Lorem ipsum</a>
+        <a href="{base}/components/components/button/call-to-action/test" class="button cta">Lorem ipsum</a>
 
         <h4>HTML-voorbeeld:</h4>
         <Code
@@ -81,25 +81,25 @@
         <h4>States</h4>
         <ul>
           <li>
-            <a href="{base}/components/button-call-to-action-test" class="button cta focus">Focus</a
+            <a href="{base}/components/components/button/call-to-action/test" class="button cta focus">Focus</a
             >
           </li>
           <li>
-            <a href="{base}/components/button-call-to-action-test" class="button cta active"
+            <a href="{base}/components/components/button/call-to-action/test" class="button cta active"
               >Active</a
             >
           </li>
           <li>
-            <a href="{base}/components/button-call-to-action-test" class="button cta visited"
+            <a href="{base}/components/components/button/call-to-action/test" class="button cta visited"
               >Visited</a
             >
           </li>
           <li>
-            <a href="{base}/components/button-call-to-action-test" class="button cta hover">Hover</a
+            <a href="{base}/components/components/button/call-to-action/test" class="button cta hover">Hover</a
             >
           </li>
           <li>
-            <a href="{base}/components/button-call-to-action-test" class="button cta selected"
+            <a href="{base}/components/components/button/call-to-action/test" class="button cta selected"
               >Selected</a
             >
           </li>
@@ -107,7 +107,7 @@
 
         <h3>Link als knop: met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/button-call-to-action-test" class="button cta"
+        <a href="{base}/components/components/button/call-to-action/test" class="button cta"
           >Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></a
         >
 

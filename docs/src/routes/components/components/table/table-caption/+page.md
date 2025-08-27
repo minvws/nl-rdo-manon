@@ -34,7 +34,7 @@ SCSS importeren:
 1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
     benodigde en optionele bestanden zie: [Benodigdheden](#requirements). Voor
     meer informatie over importeren en instellen van componenten. Zie:
-    [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+    [Componenten gebruiken en styling toevoegen](/getting-started/installation)
 2.  Voeg de `caption` direct direct binnen de `table` toe.
 3.  Vul de `caption` met een korte maar duidelijke omschrijving van de inhoud
     van de tabel.

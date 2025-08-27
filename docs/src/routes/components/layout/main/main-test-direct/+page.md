@@ -18,7 +18,7 @@ Componenten direct binnen de `main` geplaatst.
 
 <h2>Gebruikte bestanden</h2>
 
-Voor meer informatie over importeren en instellen van componenten. Zie: [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+Voor meer informatie over importeren en instellen van componenten. Zie: [Componenten gebruiken en styling toevoegen](/getting-started/installation)
 
 ### Importeer component via npm
 

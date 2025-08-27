@@ -67,8 +67,8 @@
 
         <h3>Link als knop</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/button-ghost-test" class="button ghost">Lorem ipsum</a>
-
+        <a href="{base}/components/components/button/button-ghost/test" class="button ghost">Lorem ipsum</a
+        >
         <h4>HTML-voorbeeld:</h4>
         <Code
           language="html"
@@ -80,22 +80,30 @@
         <h4>States</h4>
         <ul>
           <li>
-            <a href="{base}/components/button-ghost-test" class="button ghost focus">Focus</a>
+            <a href="{base}/components/components/button/button-ghost/test" class="button ghost focus"
+              >Focus</a
+            >
           </li>
           <li>
-            <a href="{base}/components/button-ghost-test" class="button ghost active">Active</a>
+            <a href="{base}/components/components/button/button-ghost/test" class="button ghost active"
+              >Active</a
+            >
           </li>
           <li>
-            <a href="{base}/components/button-ghost-test" class="button ghost visited">Visited</a>
+            <a href="{base}/components/components/button/button-ghost/test" class="button ghost visited"
+              >Visited</a
+            >
           </li>
           <li>
-            <a href="{base}/components/button-ghost-test" class="button ghost hover">Hover</a>
+            <a href="{base}/components/components/button/button-ghost/test" class="button ghost hover"
+              >Hover</a
+            >
           </li>
         </ul>
 
         <h3>Link als knop: met een afbeelding</h3>
         <h4>Visueel voorbeeld:</h4>
-        <a href="{base}/components/button-ghost-test" class="button ghost"
+        <a href="{base}/components/components/button/button-ghost/test" class="button ghost"
           >Lorem ipsum <img src="$img/cat.svg" alt="Kat" /></a
         >
 

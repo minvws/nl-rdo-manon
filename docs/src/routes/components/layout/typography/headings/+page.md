@@ -36,7 +36,7 @@ Gebruik titels om structuur binnen de pagina aan te geven.
     <li>
       Als niet ieder gelijkwaardig titel-element, bijvoorbeeld een h1, dezelfde visuele stijling gebruikt kan de stijl gezet worden door middel van een voorgedefineerde set. Binnen deze set worden de beschikbare "heading-styles" vastgelegd. Denk bijvoorbeeld aan een "heading-large" of een "heading-small". Voor meer informatie hierover zie: [Titel basisset](heading-base-set).
     </li>
-  <ul>
+  </ul>
 </div>
 
 <p class="warning">

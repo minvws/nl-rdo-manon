@@ -70,26 +70,26 @@ nav:
 
 <ul>
   <li>
-    <a href="/documentation/variables#flex-direction">flex-direction</a>
+    <a href="/getting-started/installation#flex-direction">flex-direction</a>
   </li>
-  <li><a href="/documentation/variables#gap">gap</a></li>
-  <li><a href="/documentation/variables#border-width">border-width</a></li>
-  <li><a href="/documentation/variables#border-style">border-style</a></li>
-  <li><a href="/documentation/variables#border-color">border-color</a></li>
-  <li><a href="/documentation/variables#padding-top">padding-top</a></li>
+  <li><a href="/getting-started/installation#gap">gap</a></li>
+  <li><a href="/getting-started/installation#border-width">border-width</a></li>
+  <li><a href="/getting-started/installation#border-style">border-style</a></li>
+  <li><a href="/getting-started/installation#border-color">border-color</a></li>
+  <li><a href="/getting-started/installation#padding-top">padding-top</a></li>
   <li>
-    <a href="/documentation/variables#padding-right">padding-right</a>
+    <a href="/getting-started/installation#padding-right">padding-right</a>
   </li>
   <li>
-    <a href="/documentation/variables#padding-bottom">padding-bottom</a>
+    <a href="/getting-started/installation#padding-bottom">padding-bottom</a>
   </li>
-  <li><a href="/documentation/variables#padding-left">padding-left</a></li>
+  <li><a href="/getting-started/installation#padding-left">padding-left</a></li>
 </ul>
 
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+[Componenten gebruiken en styling toevoegen](/getting-started/import-styling)
 
 <h2 id="related">Gerelateerde pagina's</h2>
 

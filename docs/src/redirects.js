@@ -9,6 +9,7 @@
  * @type {Record<string, string>}
  */
 export const redirects = {
+  "/documentation": "/components",
   "/documentation/components.html": "/components",
   "/documentation/components/accordion.html": "/components/accordion",
   "/documentation/components/body-text-set.html": "/components/body-text-set",

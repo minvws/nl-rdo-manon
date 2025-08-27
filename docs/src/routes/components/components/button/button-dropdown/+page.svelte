@@ -50,9 +50,9 @@
         >
           <div class="collapsing-element">
             <ul>
-              <li><a href="collapsible">Item 1</a></li>
-              <li><a href="collapsible">Huidige selectie</a></li>
-              <li><a href="collapsible">a</a></li>
+              <li><a href="{base}/components/components/collapsible">Item 1</a></li>
+              <li><a href="{base}/components/components/collapsible">Huidige selectie</a></li>
+              <li><a href="{base}/components/components/collapsible">a</a></li>
             </ul>
           </div>
         </div>
@@ -90,9 +90,9 @@ class="collapsible">
           >
             <div class="collapsing-element">
               <ul>
-                <li><a href="collapsible">Item 1</a></li>
-                <li><a href="collapsible">Huidige selectie</a></li>
-                <li><a href="collapsible">Item 3 long name test lorem ipsum dolor sit amet</a></li>
+                <li><a href="{base}/components/components/collapsible">Item 1</a></li>
+                <li><a href="{base}/components/components/collapsible">Huidige selectie</a></li>
+                <li><a href="{base}/components/components/collapsible">Item 3 long name test lorem ipsum dolor sit amet</a></li>
               </ul>
             </div>
           </div>
@@ -105,9 +105,9 @@ class="collapsible">
           >
             <div class="collapsing-element">
               <ul>
-                <li><a href="collapsible">Item 1</a></li>
-                <li><a href="collapsible">Huidige selectie</a></li>
-                <li><a href="collapsible">Item 3 long name test lorem ipsum dolor sit amet</a></li>
+                <li><a href="{base}/components/components/collapsible">Item 1</a></li>
+                <li><a href="{base}/components/components/collapsible">Huidige selectie</a></li>
+                <li><a href="{base}/components/components/collapsible">Item 3 long name test lorem ipsum dolor sit amet</a></li>
               </ul>
             </div>
           </div>
@@ -139,8 +139,8 @@ class="collapsible">
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling"
-            >Componenten gebruiken en styling toevoegen</a
+          <a href="{base}/getting-started/installation">
+            Componenten gebruiken en styling toevoegen</a
           >
         </p>
 

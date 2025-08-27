@@ -31,7 +31,7 @@ Voor het voorbeeld zie bovenaan deze pagina.
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+[Componenten gebruiken en styling toevoegen](/getting-started/installation)
 
 ### Importeer component via npm
 
@@ -60,7 +60,7 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
     <tbody>
       <tr>
         <td>--notification-warning-page-background-color</td>
-        <td><a href="/documentation/variables#background-color">background-color</a></td>
+        <td><a href="/getting-started/installation#background-color">background-color</a></td>
         <td>var(--warning-background-color)</td>
         <td>-</td>
         <th rowspan="24" scope="rowgroup">warning</th>
@@ -68,161 +68,161 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
 
       <tr>
         <td>--notification-warning-page-text-color</td>
-        <td><a href="/documentation/variables#text-color">color</a></td>
+        <td><a href="/getting-started/installation#text-color">color</a></td>
         <td>var(--warning-text-color)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-border-width</td>
-        <td><a href="/documentation/variables#border-width">border-width</a></td>
+        <td><a href="/getting-started/installation#border-width">border-width</a></td>
         <td>var(--notification-border-width)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-border-style</td>
-        <td><a href="/documentation/variables#border-style">border-style</a></td>
+        <td><a href="/getting-started/installation#border-style">border-style</a></td>
         <td>var(--notification-border-style)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-border-color</td>
-        <td><a href="/documentation/variables#border-color">border-color</a></td>
+        <td><a href="/getting-started/installation#border-color">border-color</a></td>
         <td>var(--warning-border-color)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-padding-top</td>
-        <td><a href="/documentation/variables#padding-top">padding-top</a></td>
+        <td><a href="/getting-started/installation#padding-top">padding-top</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-padding-right</td>
-        <td><a href="/documentation/variables#padding-right">padding-right</a></td>
+        <td><a href="/getting-started/installation#padding-right">padding-right</a></td>
         <td>var(--page-whitespace-right)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td> --notification-warning-page-padding-bottom</td>
-        <td><a href="/documentation/variables#padding-bottom">padding-bottom</a></td>
+        <td><a href="/getting-started/installation#padding-bottom">padding-bottom</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-padding-left</td>
-        <td><a href="/documentation/variables#padding-left">padding-left</a></td>
+        <td><a href="/getting-started/installation#padding-left">padding-left</a></td>
         <td>var(--page-whitespace-left)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-gap</td>
-        <td><a href="/documentation/variables#gap">gap</a></td>
+        <td><a href="/getting-started/installation#gap">gap</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-span-font-weight</td>
-        <td><a href="/documentation/variables#font-weight">span-font-weight</a></td>
+        <td><a href="/getting-started/installation#font-weight">span-font-weight</a></td>
         <td>var(--notification-span-font-weight)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-pagecontent-wrapper-padding-top</td>
-        <td><a href="/documentation/variables#padding-top">padding-top</a></td>
+        <td><a href="/getting-started/installation#padding-top">padding-top</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-pagecontent-wrapper-padding-right</td>
-        <td><a href="/documentation/variables#padding-right">padding-right</a></td>
+        <td><a href="/getting-started/installation#padding-right">padding-right</a></td>
         <td>var(--content-padding-right)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td> --notification-warning-pagecontent-wrapper-padding-bottom</td>
-        <td><a href="/documentation/variables#padding-bottom">padding-bottom</a></td>
+        <td><a href="/getting-started/installation#padding-bottom">padding-bottom</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-pagecontent-wrapper-padding-left</td>
-        <td><a href="/documentation/variables#padding-left">padding-left</a></td>
+        <td><a href="/getting-started/installation#padding-left">padding-left</a></td>
         <td>var(--content-padding-left)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-pagecontent-wrapper-gap</td>
-        <td><a href="/documentation/variables#gap">gap</a></td>
+        <td><a href="/getting-started/installation#gap">gap</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-pagecontent-wrapper-span-font-weight</td>
-        <td><a href="/documentation/variables#font-weight">font-weight</a></td>
+        <td><a href="/getting-started/installation#font-weight">font-weight</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-icon-font-family</td>
-        <td><a href="/documentation/variables#font-family">font-family</a></td>
+        <td><a href="/getting-started/installation#font-family">font-family</a></td>
         <td>var(--notification-icon-font-family)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-icon-font-size</td>
-        <td><a href="/documentation/variables#font-size">font-size</a></td>
+        <td><a href="/getting-started/installation#font-size">font-size</a></td>
         <td>var(--notification-icon-font-size)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-icon-text-color</td>
-        <td><a href="/documentation/variables#text-color">color</a></td>
+        <td><a href="/getting-started/installation#text-color">color</a></td>
         <td>var(--notification-icon-text-color)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-icon-padding-right</td>
-        <td><a href="/documentation/variables#padding-right">padding-right</a></td>
+        <td><a href="/getting-started/installation#padding-right">padding-right</a></td>
         <td>var(--notification-icon-padding-right)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-icon-padding-left</td>
-        <td><a href="/documentation/variables#padding-left">padding-left</a></td>
+        <td><a href="/getting-started/installation#padding-left">padding-left</a></td>
         <td>var(--notification-icon-padding-left)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-icon-margin-right</td>
-        <td><a href="/documentation/variables#margin-right">margin-right</a></td>
+        <td><a href="/getting-started/installation#margin-right">margin-right</a></td>
         <td>var(--notification-icon-margin-right)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-warning-page-icon</td>
-        <td><a href="/documentation/variables#content">content</a></td>
+        <td><a href="/getting-started/installation#content">content</a></td>
         <td>var(--notification-icon)</td>
         <td>-</td>
       </tr>
