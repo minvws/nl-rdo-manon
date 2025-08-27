@@ -34,4 +34,3 @@ The standard theme for iCore Open applications.
 ```scss
 @use "@minvws/manon-themes/icore-open";
 ```
-
