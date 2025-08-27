@@ -7,7 +7,8 @@
     "**/*.js",
     "**/*.license",
     "LICENSES",
-    "REUSE.toml"
+    "REUSE.toml",
+    "README.md"
   ],
   "scripts": {
     "format": "prettier --write .",
