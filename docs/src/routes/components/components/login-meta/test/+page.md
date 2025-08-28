@@ -14,7 +14,7 @@ Overzicht van het element in mogelijke structuren om te testen.
 #### Visueel voorbeeld:
 
 <div class="login-meta">
-  <p>Ingelogd als: <a href="login-meta-test">Jane Doe</a></p>
+  <p>Ingelogd als: <a href="/">Jane Doe</a></p>
 </div>
 
 #### HTML-voorbeeld:
@@ -30,7 +30,7 @@ Overzicht van het element in mogelijke structuren om te testen.
 #### Visueel voorbeeld:
 
 <section class="login-meta">
-  <p>Ingelogd als: <a href="login-meta-test">Jane Doe</a></p>
+  <p>Ingelogd als: <a href="/">Jane Doe</a></p>
 </section>
 
 #### HTML-voorbeeld:
@@ -45,7 +45,7 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 #### Visueel voorbeeld:
 
-<span class="login-meta">Ingelogd als: <a href="login-meta-test">Jane Doe</a></span>
+<span class="login-meta">Ingelogd als: <a href="/">Jane Doe</a></span>
 
 #### HTML-voorbeeld:
 
@@ -57,7 +57,7 @@ Overzicht van het element in mogelijke structuren om te testen.
 
 #### Visueel voorbeeld:
 
-<p class="login-meta">Ingelogd als: <a href="login-meta-test">Jane Doe</a></p>
+<p class="login-meta">Ingelogd als: <a href="/">Jane Doe</a></p>
 
 #### HTML-voorbeeld:
 

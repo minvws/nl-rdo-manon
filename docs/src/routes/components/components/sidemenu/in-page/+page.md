@@ -16,7 +16,7 @@ In dit voorbeeld staat het zijmenu binnen de pagina bij de content. Gebruik deze
 weergave alleen als de inhoud van het zijmenu specifiek over de content gaat.
 Bijvoorbeeld een inhoudsopgave. Hoort het zijmenu niet bij de inhoud van de
 pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
-[Zijmenu naast de pagina](/components/sidemenu/next-to-page).
+[Zijmenu naast de pagina](/components/components/sidemenu/next-to-page).
 
 ## Benodigde stappen
 
@@ -71,14 +71,17 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
       <h1>Lorem ipsum</h1>
       <p>Dolor set amet conseqtetur adepicing elit</p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus ac turpis convallis
-        vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-        himenaeos. Maecenas ut fringilla tortor. Nulla ultrices enim sit amet tellus venenatis,
-        lacinia dapibus risus auctor.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus
+        ac turpis convallis vestibulum. Class aptent taciti sociosqu ad litora
+        torquent per conubia nostra, per inceptos himenaeos. Maecenas ut
+        fringilla tortor. Nulla ultrices enim sit amet tellus venenatis, lacinia
+        dapibus risus auctor.
       </p>
       <ul>
         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Vivamus accumsan dui sed diam placerat, quis ultrices enim viverra.</li>
+        <li>
+          Vivamus accumsan dui sed diam placerat, quis ultrices enim viverra.
+        </li>
         <li>Aenean posuere enim a hendrerit viverra.</li>
         <li>Phasellus eu justo ac orci tempus bibendum eu in est.</li>
       </ul>

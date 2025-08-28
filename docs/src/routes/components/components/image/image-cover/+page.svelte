@@ -72,7 +72,7 @@
         <h3>Op een tegel</h3>
         <p>
           Dit voorbeeld maakt gebruik van
-          <a href="{base}/components/tiles#single-tile">Tegelweergave</a>.
+          <a href="{base}/components/components/tile#single-tile">Tegelweergave</a>.
         </p>
         <div role="group" class="tile image-cover">
           <img src="$img/strand.jpg" alt="Foto van een strand" />
@@ -98,7 +98,7 @@
         <h3>Op een groep met tegels</h3>
         <p>
           Dit voorbeeld maakt gebruik van
-          <a href="{base}/components/tiles">Tegelweergave</a>.
+          <a href="{base}/components/components/tile">Tegelweergave</a>.
         </p>
         <div class="tiles image-covers column-3">
           <div role="group">

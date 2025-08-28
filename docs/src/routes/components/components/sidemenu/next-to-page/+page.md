@@ -23,7 +23,7 @@ pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 
 Gaat de inhoud van het zijmenu over de inhoud van de content. En hoort het bij
 de content. Gebruik dan:
-[Zijmenu binnen de pagina](/components/sidemenu/in-page)
+[Zijmenu binnen de pagina](/components/components/sidemenu/in-page)
 
 ## Benodigde stappen
 

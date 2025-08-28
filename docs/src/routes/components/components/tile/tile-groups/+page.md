@@ -23,7 +23,7 @@ nav:
   <li>
     Voeg `class="tile"` toe voor de Gegroepeerde content binnen tegels op een
     enkel element. Voor meer informatie zie:
-    [tegelweergave](/components/tiles)
+    [tegelweergave](/components/components/tile)
   </li>
   <li>
     Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
@@ -56,8 +56,9 @@ nav:
 <div class="tile" role="group">
   <h1>Lorem ipsum dolor set</h1>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
-    convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non
+    justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui
+    sapien.
   </p>
   <div>
     <button>Lorem</button>

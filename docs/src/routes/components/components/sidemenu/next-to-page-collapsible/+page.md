@@ -23,7 +23,7 @@ pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 
 Gaat de inhoud van het zijmenu over de inhoud van de content. En hoort het bij
 de content. Gebruik dan:
-[Zijmenu binnen de pagina](/components/sidemenu/in-page).
+[Zijmenu binnen de pagina](/components/components/sidemenu/in-page).
 
 ## Aandachtspunten
 
@@ -39,7 +39,7 @@ de content. Gebruik dan:
 4.  Voeg de referentie naar het Javascript bestand, `sidemenu.js`, toe aan de
     HTML-pagina's die gebruik dienen te maken van het inklapbare zijmenu. Voor
     meer informatie zie:
-    [JavaScript referentie toevoegen](/documentation/add-js).
+    [JavaScript referentie toevoegen](/getting-started/installation).
 5.  Om het menu standaard gesloten te tonen tot de gebruiker het menu opent.
     Voeg de class `sidemenu-closed` toe aan de `body`.
 

@@ -69,7 +69,7 @@
         <form action="" method="post">
           <p class="explanation" role="group" aria-label="Toelichting">
             <span>Toelichting:</span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula.
+            test dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula.
           </p>
 
           <label for="form-example-base-notification">Voorbeeld text input</label>
@@ -95,7 +95,7 @@
 <form action="" method="post">
   <p class="explanation" role="group" aria-label="Toelichting">
     <span>Toelichting:</span>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula.
+    test dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula.
   </p>
 
   <label for="form-example-base-notification">Voorbeeld text input</label>
@@ -123,8 +123,8 @@
           <div class="explanation" role="group" aria-label="Toelichting">
             <span>Toelichting:</span>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula,
-              et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+              test dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula, et
+              accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
             </p>
           </div>
 
@@ -152,7 +152,7 @@
   <div class="explanation" role="group" aria-label="Toelichting">
     <span>Toelichting:</span>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula,
+      test dolor sit amet, consectetur adipiscing elit. Ut maximus volutpat ligula,
       et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
     </p>
   </div>
@@ -186,12 +186,12 @@
             <input
               id="input-error"
               class="error"
-              value="Lorem ipsum"
+              value="test"
               aria-describedby="input-error-message input-error-explanation"
               aria-invalid="true"
             />
             <p class="error" id="input-error-message">
-              <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+              <span>Foutmelding:</span> test dolor sit amet
             </p>
           </div>
           <button type="submit">Verzend</button>
@@ -210,12 +210,12 @@
     <input
       id="input-error"
       class="error"
-      value="Lorem ipsum"
+      value="test"
       aria-describedby="input-error-message input-error-explanation"
       aria-invalid="true"
     />
     <p class="error" id="input-error-message">
-      <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+      <span>Foutmelding:</span> test dolor sit amet
     </p>
   </div>
   <button type="submit">Verzend</button>
@@ -228,12 +228,12 @@
           <label for="input-explanation">Input</label>
           <div>
             <p class="explanation" id="input-explanation-message">
-              <span>Toelichting:</span> Lorem ipsum dolor sit amet
+              <span>Toelichting:</span> test dolor sit amet
             </p>
             <input
               id="input-explanation"
               class="explanation"
-              value="Lorem ipsum"
+              value="test"
               aria-describedby="input-explanation-message"
               aria-invalid="true"
             />
@@ -249,9 +249,9 @@
   <label for="input-explanation">Input</label>
   <div>
     <p class="explanation" id="input-explanation-message">
-      <span>Toelichting:</span> Lorem ipsum dolor sit amet
+      <span>Toelichting:</span> test dolor sit amet
     </p>
-    <input id="input-explanation" class="explanation" value="Lorem ipsum" aria-describedby="input-explanation-message" aria-invalid="true">
+    <input id="input-explanation" class="explanation" value="test" aria-describedby="input-explanation-message" aria-invalid="true">
   </div>
   <button type="submit">Verzend</button>
 </form>
@@ -263,12 +263,12 @@
           <label for="input-warning">Input</label>
           <div>
             <p class="warning" id="input-warning-message">
-              <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+              <span>Waarschuwing:</span> test dolor sit amet
             </p>
             <input
               id="input-warning"
               class="warning"
-              value="Lorem ipsum"
+              value="test"
               aria-describedby="input-warning-message"
               aria-invalid="true"
             />
@@ -284,9 +284,9 @@
   <label for="input-warning">Input</label>
   <div>
     <p class="warning" id="input-warning-message">
-      <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+      <span>Waarschuwing:</span> test dolor sit amet
     </p>
-    <input id="input-warning" class="warning" value="Lorem ipsum" aria-describedby="input-warning-message" aria-invalid="true">
+    <input id="input-warning" class="warning" value="test" aria-describedby="input-warning-message" aria-invalid="true">
   </div>
   <button type="submit">Verzend</button>
 </form>
@@ -298,12 +298,12 @@
           <label for="input-confirmation">Input</label>
           <div>
             <p class="confirmation" id="input-confirmation-message">
-              <span>Bevestiging:</span> Lorem ipsum dolor sit amet
+              <span>Bevestiging:</span> test dolor sit amet
             </p>
             <input
               id="input-confirmation"
               class="confirmation"
-              value="Lorem ipsum"
+              value="test"
               aria-describedby="input-confirmation-message"
               aria-invalid="true"
             />
@@ -319,9 +319,9 @@
   <label for="input-confirmation">Input</label>
   <div>
     <p class="confirmation" id="input-confirmation-message">
-        <span>Bevestiging:</span> Lorem ipsum dolor sit amet
+        <span>Bevestiging:</span> test dolor sit amet
     </p>
-      <input id="input-confirmation" class="confirmation" value="Lorem ipsum" aria-describedby="input-confirmation-message" aria-invalid="true">
+      <input id="input-confirmation" class="confirmation" value="test" aria-describedby="input-confirmation-message" aria-invalid="true">
   </div>
   <button type="submit">Verzend</button>
 </form>
@@ -333,12 +333,12 @@
           <label for="input-system">Input</label>
           <div>
             <p class="system" id="input-system-message">
-              <span>Systeembericht:</span> Lorem ipsum dolor sit amet
+              <span>Systeembericht:</span> test dolor sit amet
             </p>
             <input
               id="input-system"
               class="system"
-              value="Lorem ipsum"
+              value="test"
               aria-describedby="input-system-message"
               aria-invalid="true"
             />
@@ -354,9 +354,9 @@
   <label for="input-system">Input</label>
   <div>
     <p class="system" id="input-system-message">
-        <span>Systeembericht:</span> Lorem ipsum dolor sit amet
+        <span>Systeembericht:</span> test dolor sit amet
     </p>
-    <input id="input-system" class="system" value="Lorem ipsum" aria-describedby="input-system-message" aria-invalid="true">
+    <input id="input-system" class="system" value="test" aria-describedby="input-system-message" aria-invalid="true">
   </div>
   <button type="submit">Verzend</button>
 </form>
@@ -376,7 +376,7 @@
             <input id="form-link" name="form-link" type="text" />
           </div>
 
-          <a href="form-test">Lorem ipsum dolor set</a>
+          <a href="test">test dolor set</a>
 
           <button type="submit">Verzend</button>
         </form>
@@ -395,7 +395,7 @@
     <input id="form-link" name="form-link" type="text" />
   </div>
 
-  <a href="#">Lorem ipsum dolor set</a>
+  <a href="#">test dolor set</a>
 
   <button type="submit">Verzend</button>
 </form>
@@ -421,7 +421,7 @@
             </div>
           </div>
 
-          <a href="form-test">Lorem ipsum dolor set</a>
+          <a href="test">test dolor set</a>
 
           <button type="submit">Verzend</button>
         </form>
@@ -447,7 +447,7 @@
     </div>
   </div>
 
-  <a href="form-test">Lorem ipsum dolor set</a>
+  <a href="test">test dolor set</a>
 
   <button type="submit">Verzend</button>
 </form>
@@ -474,7 +474,7 @@
           </div>
 
           <div>
-            <a href="form-test">Lorem ipsum dolor set</a>
+            <a href="test">test dolor set</a>
           </div>
 
           <button type="submit">Verzend</button>
@@ -502,7 +502,7 @@
   </div>
 
   <div>
-    <a href="form-test">Lorem ipsum dolor set</a>
+    <a href="test">test dolor set</a>
   </div>
 
   <button type="submit">Verzend</button>
@@ -514,7 +514,7 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post">
           <fieldset>
-            <legend>Lorem ipsum</legend>
+            <legend>test</legend>
 
             <label for="form-fieldset-link">Voorbeeld text input</label>
 
@@ -530,7 +530,7 @@
               />
             </div>
 
-            <a href="form-test">Lorem ipsum dolor set</a>
+            <a href="test">test dolor set</a>
           </fieldset>
           <button type="submit">Verzend</button>
         </form>
@@ -541,7 +541,7 @@
           code={`
 <form action="" method="post">
   <fieldset>
-    <legend>Lorem ipsum</legend>
+    <legend>test</legend>
 
     <label for="form-fieldset-link">Voorbeeld text input</label>
 
@@ -557,7 +557,7 @@
       />
     </div>
 
-    <a href="form-test">Lorem ipsum dolor set</a>
+    <a href="test">test dolor set</a>
   </fieldset>
   <button type="submit">Verzend</button>
 </form>
@@ -568,7 +568,7 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post" class="horizontal">
           <fieldset>
-            <legend>Lorem ipsum</legend>
+            <legend>test</legend>
 
             <div>
               <label for="form-horizontal-fieldset-link">Voorbeeld text input</label>
@@ -587,7 +587,7 @@
               </div>
             </div>
 
-            <a href="form-test">Lorem ipsum dolor set</a>
+            <a href="test">test dolor set</a>
           </fieldset>
           <button type="submit">Verzend</button>
         </form>
@@ -598,7 +598,7 @@
           code={`
 <form action="" method="post" class="horizontal">
   <fieldset>
-    <legend>Lorem ipsum</legend>
+    <legend>test</legend>
 
     <div>
       <label for="form-horizontal-fieldset-link">Voorbeeld text input</label>
@@ -617,7 +617,7 @@
       </div>
     </div>
 
-    <a href="form-test">Lorem ipsum dolor set</a>
+    <a href="test">test dolor set</a>
   </fieldset>
   <button type="submit">Verzend</button>
 </form>
@@ -628,7 +628,7 @@
         <h4>Visueel voorbeeld:</h4>
         <form action="" method="post" class="horizontal">
           <fieldset>
-            <legend>Lorem ipsum</legend>
+            <legend>test</legend>
 
             <div>
               <label for="form-fieldset-link-grouped-horizontal">Voorbeeld text input</label>
@@ -647,7 +647,7 @@
             </div>
 
             <div>
-              <a href="form-test">Lorem ipsum dolor set</a>
+              <a href="test">test dolor set</a>
             </div>
           </fieldset>
           <button type="submit">Verzend</button>
@@ -659,7 +659,7 @@
           code={`
 <form action="" method="post" class="horizontal">
   <fieldset>
-    <legend>Lorem ipsum</legend>
+    <legend>test</legend>
 
     <div>
       <label for="form-fieldset-link-grouped-horizontal">Voorbeeld text input</label>
@@ -678,7 +678,7 @@
     </div>
 
     <div>
-      <a href="form-test">Lorem ipsum dolor set</a>
+      <a href="test">test dolor set</a>
     </div>
   </fieldset>
   <button type="submit">Verzend</button>
@@ -692,38 +692,38 @@
         <form method="post">
           <p class="explanation" role="group" aria-label="bevestiging">
             <span>Toelichting:</span>
-            Lorem ipsum dolor sit amet
+            test dolor sit amet
           </p>
           <p class="warning" role="group" aria-label="waarschuwing">
-            <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+            <span>Waarschuwing:</span> test dolor sit amet
           </p>
           <p class="error" role="group" aria-label="foutmelding">
-            <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+            <span>Foutmelding:</span> test dolor sit amet
           </p>
           <p class="confirmation" role="group" aria-label="bevestiging">
             <span>Bevestiging:</span>
-            Lorem ipsum dolor sit amet
+            test dolor sit amet
           </p>
 
           <div class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
           </div>
 
           <div class="warning" role="group" aria-label="waarschuwing">
             <span>Waarschuwing:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
           </div>
 
           <div class="error" role="group" aria-label="foutmelding">
             <span>Foutmelding:</span>
-            <h3>Lorem ipsum dolor sit amet</h3>
+            <h3>test dolor sit amet</h3>
             <p>Consectetur adepicing elit.</p>
           </div>
 
           <div class="confirmation" role="group" aria-label="bevestiging">
             <span>Bevestiging:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
             <ul>
               <li>Loren ipsum dolor sit amet</li>
               <li>Loren ipsum dolor sit amet</li>
@@ -803,13 +803,13 @@
 
           <div class="checkbox">
             <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" />
-            <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
+            <label for="checkbox-example-base">test dolor sit amet</label>
           </div>
 
           <div class="checkbox">
             <input type="checkbox" id="checkbox-example-base-long" name="standaard-checkbox" />
             <label for="checkbox-example-base-long"
-              >Checkbox label test met een lange naam. Lorem ipsum dolor sit amet</label
+              >Checkbox label test met een lange naam. test dolor sit amet</label
             >
           </div>
 
@@ -820,7 +820,7 @@
               name="checked-checkbox"
               checked
             />
-            <label for="checkbox-example-checked-base">Lorem ipsum dolor sit amet</label>
+            <label for="checkbox-example-checked-base">test dolor sit amet</label>
           </div>
 
           <div class="required">
@@ -838,7 +838,7 @@
               name="disabled-checkbox"
               disabled
             />
-            <label for="checkbox-example-disabled">Lorem ipsum dolor sit amet</label>
+            <label for="checkbox-example-disabled">test dolor sit amet</label>
           </div>
 
           <div>
@@ -851,10 +851,10 @@
                 class="error"
                 aria-describedby="checkbox-example-error-1-message"
               />
-              <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
+              <label for="checkbox-example-base">test dolor sit amet</label>
             </div>
             <p class="error" id="checkbox-example-error-1-message">
-              <span>Foutmelding</span> Lorem ipsum
+              <span>Foutmelding</span> test
             </p>
           </div>
 
@@ -872,7 +872,7 @@
               >
             </div>
             <p class="error" id="checkbox-example-required-with-error-message">
-              <span>Foutmelding</span> Lorem ipsum
+              <span>Foutmelding</span> test
             </p>
           </div>
 
@@ -880,22 +880,22 @@
             <legend>Examples</legend>
             <div class="checkbox">
               <input type="checkbox" id="checkbox-example-list-1" name="standaard-checkbox" />
-              <label for="checkbox-example-list-1">Lorem ipsum dolor sit amet</label>
+              <label for="checkbox-example-list-1">test dolor sit amet</label>
             </div>
 
             <div class="checkbox">
               <input type="checkbox" id="checkbox-example-list-2" name="standaard-checkbox" />
-              <label for="checkbox-example-list-2">Lorem ipsum dolor sit amet</label>
+              <label for="checkbox-example-list-2">test dolor sit amet</label>
             </div>
 
             <div class="checkbox">
               <input type="checkbox" id="checkbox-example-list-3" name="standaard-checkbox" />
-              <label for="checkbox-example-list-3">Lorem ipsum dolor sit amet</label>
+              <label for="checkbox-example-list-3">test dolor sit amet</label>
             </div>
 
             <div class="checkbox">
               <input type="checkbox" id="checkbox-example-list-4" name="standaard-checkbox" />
-              <label for="checkbox-example-list-4">Lorem ipsum dolor sit amet</label>
+              <label for="checkbox-example-list-4">test dolor sit amet</label>
             </div>
           </fieldset>
 
@@ -906,7 +906,7 @@
               name="standaard-radiobutton"
               value="value"
             />
-            <label for="radio-example-default-1">Lorem ipsum dolor sit amet</label>
+            <label for="radio-example-default-1">test dolor sit amet</label>
           </div>
 
           <div class="radio">
@@ -917,7 +917,7 @@
               value="value"
               checked
             />
-            <label for="radio-example-checked-1">Lorem ipsum dolor sit amet</label>
+            <label for="radio-example-checked-1">test dolor sit amet</label>
           </div>
 
           <div>
@@ -929,10 +929,10 @@
                 value="value"
                 checked
               />
-              <label for="radio-example-checked-1-notification">Lorem ipsum dolor sit amet</label>
+              <label for="radio-example-checked-1-notification">test dolor sit amet</label>
             </div>
             <p class="error" id="radio-example-checked-1-notification-message">
-              <span>Foutmelding</span> Lorem ipsum
+              <span>Foutmelding</span> test
             </p>
           </div>
 
@@ -956,7 +956,7 @@
           </div>
 
           <fieldset>
-            <legend>Lorem ipsum</legend>
+            <legend>test</legend>
             <div class="radio">
               <input type="radio" id="radio-list-item-1" name="radio-option" value="value 1" />
               <label for="radio-list-item-1">Optie 1</label>
@@ -980,7 +980,7 @@
                 value="value long name"
               />
               <label for="radio-list-long-name-1"
-                >Radio label test met een lange naam. Lorem ipsum dolor sit amet</label
+                >Radio label test met een lange naam. test dolor sit amet</label
               >
             </div>
 
@@ -998,7 +998,7 @@
                 <label for="radio-list-long-name-2">Radio label met error</label>
               </div>
               <p class="error" id="radio-list-long-name-2-message">
-                <span>Foutmelding:</span> Lorem ipsum
+                <span>Foutmelding:</span> test
               </p>
             </div>
           </fieldset>
@@ -1022,14 +1022,14 @@
               aria-invalid="true"
             />
             <p class="error" id="voorbeeld-text-input-error-1-message">
-              <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+              <span>Foutmelding:</span> test dolor sit amet
             </p>
           </div>
 
           <label for="voorbeeld-text-input-explanation-1">Voorbeeld invoerveld toelichting</label>
           <div>
             <p class="explanation" id="voorbeeld-text-input-explanation-1-message">
-              <span>Toelichting:</span> Lorem ipsum dolor sit amet
+              <span>Toelichting:</span> test dolor sit amet
             </p>
             <div>
               <span class="nota-bene" id="voorbeeld-text-input-explanation-1-explanation"
@@ -1049,7 +1049,7 @@
           <label for="voorbeeld-text-input-warning-1">Voorbeeld invoerveld waarschuwing</label>
           <div>
             <p class="warning" id="voorbeeld-text-input-warning-1-message">
-              <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+              <span>Waarschuwing:</span> test dolor sit amet
             </p>
             <div>
               <span class="nota-bene" id="voorbeeld-text-input-warning-1-explanation"
@@ -1079,14 +1079,14 @@
               aria-invalid="true"
             ></textarea>
             <p class="error" id="voorbeeld-tekstveld-error-message">
-              <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+              <span>Foutmelding:</span> test dolor sit amet
             </p>
           </div>
 
           <label for="voorbeeld-tekstveld-explanation">Voorbeeld tekstveld toelichting</label>
           <div>
             <p class="explanation" id="voorbeeld-tekstveld-explanation-message">
-              <span>Toelichting:</span> Lorem ipsum dolor sit amet
+              <span>Toelichting:</span> test dolor sit amet
             </p>
             <div>
               <span class="nota-bene" id="voorbeeld-tekstveld-explanation-explanation"
@@ -1106,7 +1106,7 @@
           <label for="voorbeeld-tekstveld-warning">Voorbeeld tekstveld waarschuwing</label>
           <div>
             <p class="warning" id="voorbeeld-tekstveld-warning-message">
-              <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+              <span>Waarschuwing:</span> test dolor sit amet
             </p>
 
             <div>
@@ -1156,7 +1156,7 @@
           <label for="select-error">Selectielijst met foutmelding</label>
           <div>
             <p class="error" id="select-error-message">
-              <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+              <span>Foutmelding:</span> test dolor sit amet
             </p>
             <select
               id="select-error"
@@ -1174,7 +1174,7 @@
           <label for="select-explanation">Selectielijst met toelichting</label>
           <div>
             <p class="explanation" id="select-explanation-message">
-              <span>Toelichting:</span> Lorem ipsum dolor sit amet
+              <span>Toelichting:</span> test dolor sit amet
             </p>
             <select
               id="select-explanation"
@@ -1191,7 +1191,7 @@
           <label for="select-warning">Selectielijst met waarschuwing</label>
           <div>
             <p class="warning" id="select-warning-message">
-              <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+              <span>Waarschuwing:</span> test dolor sit amet
             </p>
             <select
               id="select-warning"
@@ -1282,7 +1282,7 @@
               <option value="Dinosaurus">Dinosaurus</option>
             </optgroup>
           </select>
-          <a href="form-test">Link within form test</a>
+          <a href="test">Link within form test</a>
 
           <div class="button-container">
             <button>Button 1</button>
@@ -1303,36 +1303,36 @@
         <h2 id="form-with-columns">Formulier met kolommen</h2>
         <form method="post" class="horizontal">
           <p class="explanation" role="group" aria-label="toelichting">
-            <span>Toelichting:</span> Lorem ipsum dolor sit amet
+            <span>Toelichting:</span> test dolor sit amet
           </p>
           <p class="warning" role="group" aria-label="waarschuwing">
-            <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+            <span>Waarschuwing:</span> test dolor sit amet
           </p>
           <p class="error" role="group" aria-label="foutmelding">
-            <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+            <span>Foutmelding:</span> test dolor sit amet
           </p>
           <p class="confirmation" role="group" aria-label="bevestiging">
-            <span>Bevestiging:</span> Lorem ipsum dolor sit amet
+            <span>Bevestiging:</span> test dolor sit amet
           </p>
           <div class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
           </div>
 
           <div class="warning" role="group" aria-label="waarschuwing">
             <span>Waarschuwing:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
           </div>
 
           <div class="error" role="group" aria-label="foutmelding">
             <span>Foutmelding:</span>
-            <h3>Lorem ipsum dolor sit amet</h3>
+            <h3>test dolor sit amet</h3>
             <p>Consectetur adepicing elit.</p>
           </div>
 
           <div class="confirmation" role="group" aria-label="bevestiging">
             <span>Bevestiging:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
             <ul>
               <li>Loren ipsum dolor sit amet</li>
               <li>Loren ipsum dolor sit amet</li>
@@ -1438,13 +1438,13 @@
 
           <div class="checkbox">
             <input type="checkbox" id="checkbox-example-default-2" name="standaard-checkbox" />
-            <label for="checkbox-example-default-2">Lorem ipsum dolor sit amet</label>
+            <label for="checkbox-example-default-2">test dolor sit amet</label>
           </div>
 
           <div class="checkbox">
             <input type="checkbox" id="checkbox-example-default-long-3" name="standaard-checkbox" />
             <label for="checkbox-example-default-long-3"
-              >Checkbox label test met een lange naam. Lorem ipsum dolor sit amet</label
+              >Checkbox label test met een lange naam. test dolor sit amet</label
             >
           </div>
 
@@ -1455,7 +1455,7 @@
               name="checked-checkbox"
               checked
             />
-            <label for="checkbox-example-checked-2">Lorem ipsum dolor sit amet</label>
+            <label for="checkbox-example-checked-2">test dolor sit amet</label>
           </div>
 
           <div class="option-group required">
@@ -1478,7 +1478,7 @@
           </div>
 
           <fieldset class="grouped-choice-list">
-            <legend>Lorem ipsum</legend>
+            <legend>test</legend>
 
             <div class="checkbox">
               <input type="checkbox" id="checkbox-list-item-4" name="option-1" />
@@ -1502,7 +1502,7 @@
                 name="standaard-checkbox"
               />
               <label for="checkbox-example-default-long-4"
-                >Checkbox label test met een lange naam. Lorem ipsum dolor sit amet</label
+                >Checkbox label test met een lange naam. test dolor sit amet</label
               >
             </div>
           </fieldset>
@@ -1531,7 +1531,7 @@
                 name="standaard-checkbox"
               />
               <label for="checkbox-example-default-long-5"
-                >Checkbox label test met een lange naam. Lorem ipsum dolor sit amet</label
+                >Checkbox label test met een lange naam. test dolor sit amet</label
               >
             </div>
           </fieldset>
@@ -1544,7 +1544,7 @@
               value="value"
               checked
             />
-            <label for="radio-example-default-2">Lorem ipsum dolor sit amet</label>
+            <label for="radio-example-default-2">test dolor sit amet</label>
           </div>
 
           <div class="option-group required">
@@ -1597,7 +1597,7 @@
                 value="value 3"
               />
               <label for="radio-2-list-long-name-1"
-                >Radio label test met een lange naam. Lorem ipsum dolor sit amet</label
+                >Radio label test met een lange naam. test dolor sit amet</label
               >
             </div>
           </fieldset>
@@ -1676,7 +1676,7 @@
                 aria-invalid="true"
               />
               <p class="error" id="voorbeeld-text-input-error-with-link-message">
-                <span>Foutmelding:</span> Lorem ipsum <a href="form-test">dolor sit amet</a>
+                <span>Foutmelding:</span> test <a href="test">dolor sit amet</a>
               </p>
             </div>
           </div>
@@ -1685,7 +1685,7 @@
             <label for="voorbeeld-text-input-warning-2">Voorbeeld invoerveld waarschuwing</label>
             <div>
               <p class="warning" id="voorbeeld-text-input-warning-2-message">
-                <span>Waarschuwing:</span> Lorem ipsum
+                <span>Waarschuwing:</span> test
               </p>
               <div>
                 <span class="nota-bene" id="voorbeeld-text-input-warning-2-explanation"
@@ -1706,7 +1706,7 @@
             <label for="voorbeeld-text-input-explanation-2">Voorbeeld invoerveld toelichting</label>
             <div>
               <p class="explanation" id="voorbeeld-text-input-explanation-2-message">
-                <span>Toelichting:</span> Lorem ipsum
+                <span>Toelichting:</span> test
               </p>
 
               <div>
@@ -1734,10 +1734,10 @@
                 aria-invalid="true"
                 aria-describedby="checkbox-example-default-3-message"
               />
-              <label for="checkbox-example-default-3">Lorem ipsum dolor sit amet</label>
+              <label for="checkbox-example-default-3">test dolor sit amet</label>
             </div>
             <p class="error" id="checkbox-example-default-3-message">
-              <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+              <span>Foutmelding:</span> test dolor sit amet
             </p>
           </div>
 
@@ -1755,7 +1755,7 @@
               <label for="checkbox-example-required-3">verplicht selectievak</label>
             </div>
             <p class="error" id="checkbox-example-required-3-message">
-              <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+              <span>Foutmelding:</span> test dolor sit amet
             </p>
           </div>
 
@@ -1772,7 +1772,7 @@
                 aria-describedby="voorbeeld-text-input-4-message voorbeeld-text-input-4-explanation"
               />
               <p class="explanation" id="voorbeeld-text-input-4-message">
-                <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+                <span>Toelichting:</span> test dolor sit amet.
               </p>
             </div>
           </div>
@@ -1906,12 +1906,12 @@
             <label for="input_with_link_1">Input with link</label>
             <div>
               <input id="input_with_link_1" name="input with link" />
-              <a href="form-test">Link within form test</a>
+              <a href="test">Link within form test</a>
             </div>
           </div>
 
           <button>Test button</button>
-          <a href="form-test">Link within form test</a>
+          <a href="test">Link within form test</a>
 
           <div class="button-container">
             <button>Button 1</button>
@@ -1932,37 +1932,37 @@
         <h2 id="form-with-fieldset">Fieldset</h2>
         <form method="post">
           <p class="explanation" role="group" aria-label="toelichting">
-            <span>Toelichting:</span> Lorem ipsum dolor sit amet
+            <span>Toelichting:</span> test dolor sit amet
           </p>
           <p class="warning" role="group" aria-label="waarschuwing">
-            <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+            <span>Waarschuwing:</span> test dolor sit amet
           </p>
           <p class="error" role="group" aria-label="foutmelding">
-            <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+            <span>Foutmelding:</span> test dolor sit amet
           </p>
           <p class="confirmation" role="group" aria-label="bevestiging">
-            <span>Bevestiging:</span> Lorem ipsum dolor sit amet
+            <span>Bevestiging:</span> test dolor sit amet
           </p>
 
           <div class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
           </div>
 
           <div class="warning" role="group" aria-label="waarschuwing">
             <span>Waarschuwing:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
           </div>
 
           <div class="error" role="group" aria-label="foutmelding">
             <span>Foutmelding:</span>
-            <h3>Lorem ipsum dolor sit amet</h3>
+            <h3>test dolor sit amet</h3>
             <p>Consectetur adepicing elit.</p>
           </div>
 
           <div class="confirmation" role="group" aria-label="bevestiging">
             <span>Bevestiging:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
             <ul>
               <li>Loren ipsum dolor sit amet</li>
               <li>Loren ipsum dolor sit amet</li>
@@ -2064,7 +2064,7 @@
                 name="standaard-checkbox"
               />
               <label for="checkbox-example-default-long-6"
-                >Checkbox label test met een lange naam. Lorem ipsum dolor sit amet</label
+                >Checkbox label test met een lange naam. test dolor sit amet</label
               >
             </div>
 
@@ -2127,7 +2127,7 @@
                     name="standaard-checkbox"
                   />
                   <label for="checkbox-example-default-long-7"
-                    >Checkbox label test met een lange naam. Lorem ipsum dolor sit amet</label
+                    >Checkbox label test met een lange naam. test dolor sit amet</label
                   >
                 </div>
               </div>
@@ -2143,7 +2143,7 @@
                 name="standaard-radiobutton"
                 value="value"
               />
-              <label for="radio-example-default-3">Lorem ipsum dolor sit amet</label>
+              <label for="radio-example-default-3">test dolor sit amet</label>
             </div>
 
             <div class="radio">
@@ -2154,7 +2154,7 @@
                 value="value"
                 checked
               />
-              <label for="radio-example-checked-2">Lorem ipsum dolor sit amet</label>
+              <label for="radio-example-checked-2">test dolor sit amet</label>
             </div>
 
             <div class="radio required">
@@ -2176,7 +2176,7 @@
 
             <fieldset>
               <legend>Radio selectielijst</legend>
-              <label for="radio-list-item-4">Lorem ipsum</label>
+              <label for="radio-list-item-4">test</label>
               <div class="radio">
                 <input type="radio" id="radio-list-item-4" name="radio-option" value="value 1" />
                 <label for="radio-list-item-4">Optie 1</label>
@@ -2200,7 +2200,7 @@
                   value="value long name"
                 />
                 <label for="radio-list-long-name-3"
-                  >Radio label test met een lange naam. Lorem ipsum dolor sit amet</label
+                  >Radio label test met een lange naam. test dolor sit amet</label
                 >
               </div>
             </fieldset>
@@ -2231,14 +2231,14 @@
                 aria-invalid="true"
               />
               <p class="error" id="voorbeeld-text-input-error-4-message">
-                <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+                <span>Foutmelding:</span> test dolor sit amet
               </p>
             </div>
 
             <label for="voorbeeld-text-input-explanation-4">Voorbeeld invoerveld toelichting</label>
             <div>
               <p class="explanation" id="voorbeeld-text-input-explanation-4-message">
-                <span>Toelichting:</span> Lorem ipsum dolor sit amet
+                <span>Toelichting:</span> test dolor sit amet
               </p>
 
               <div>
@@ -2258,7 +2258,7 @@
             <label for="voorbeeld-text-input-warning-5">Voorbeeld invoerveld waarschuwing</label>
             <div>
               <p class="warning" id="voorbeeld-text-input-warning-5-message">
-                <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+                <span>Waarschuwing:</span> test dolor sit amet
               </p>
 
               <div>
@@ -2326,7 +2326,7 @@
           </fieldset>
 
           <button>Test button</button>
-          <a href="form-test">Link within form test</a>
+          <a href="test">Link within form test</a>
 
           <div class="button-container">
             <button>Button 1</button>
@@ -2347,37 +2347,37 @@
         <h2 id="form-with-fieldset-columns">Fieldset weergave in kolommen</h2>
         <form method="post" class="horizontal">
           <p class="explanation" role="group" aria-label="toelichting">
-            <span>Toelichting:</span> Lorem ipsum dolor sit amet
+            <span>Toelichting:</span> test dolor sit amet
           </p>
           <p class="warning" role="group" aria-label="waarschuwing">
-            <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+            <span>Waarschuwing:</span> test dolor sit amet
           </p>
           <p class="error" role="group" aria-label="foutmelding">
-            <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+            <span>Foutmelding:</span> test dolor sit amet
           </p>
           <p class="confirmation" role="group" aria-label="bevestiging">
-            <span>Bevestiging:</span> Lorem ipsum dolor sit amet
+            <span>Bevestiging:</span> test dolor sit amet
           </p>
 
           <div class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
           </div>
 
           <div class="warning" role="group" aria-label="waarschuwing">
             <span>Waarschuwing:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
           </div>
 
           <div class="error" role="group" aria-label="foutmelding">
             <span>Foutmelding:</span>
-            <h3>Lorem ipsum dolor sit amet</h3>
+            <h3>test dolor sit amet</h3>
             <p>Consectetur adepicing elit.</p>
           </div>
 
           <div class="confirmation" role="group" aria-label="bevestiging">
             <span>Bevestiging:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
             <ul>
               <li>Loren ipsum dolor sit amet</li>
               <li>Loren ipsum dolor sit amet</li>
@@ -2534,7 +2534,7 @@
             <legend>Checkboxes</legend>
             <div class="checkbox">
               <input type="checkbox" id="checkbox-example-default-5" name="standaard-checkbox" />
-              <label for="checkbox-example-default-5">Lorem ipsum dolor sit amet</label>
+              <label for="checkbox-example-default-5">test dolor sit amet</label>
             </div>
 
             <div class="checkbox">
@@ -2544,7 +2544,7 @@
                 name="standaard-checkbox"
               />
               <label for="checkbox-example-default-long-8"
-                >Checkbox label test met een lange naam. Lorem ipsum dolor sit amet</label
+                >Checkbox label test met een lange naam. test dolor sit amet</label
               >
             </div>
 
@@ -2555,7 +2555,7 @@
                 name="checked-checkbox"
                 checked
               />
-              <label for="checkbox-example-checked-4">Lorem ipsum dolor sit amet</label>
+              <label for="checkbox-example-checked-4">test dolor sit amet</label>
             </div>
 
             <div class="option-group required">
@@ -2606,7 +2606,7 @@
                   name="standaard-checkbox"
                 />
                 <label for="checkbox-example-default-long-9"
-                  >Checkbox label test met een lange naam. Lorem ipsum dolor sit amet</label
+                  >Checkbox label test met een lange naam. test dolor sit amet</label
                 >
               </div>
             </fieldset>
@@ -2624,7 +2624,7 @@
                   value="value"
                   checked
                 />
-                <label for="radio-example-default-4">Lorem ipsum dolor sit amet</label>
+                <label for="radio-example-default-4">test dolor sit amet</label>
               </div>
 
               <div class="required">
@@ -2691,7 +2691,7 @@
                   value="value 3"
                 />
                 <label for="radio-2-list-long-name-2"
-                  >Radio label test met een lange naam. Lorem ipsum dolor sit amet</label
+                  >Radio label test met een lange naam. test dolor sit amet</label
                 >
               </div>
             </fieldset>
@@ -2782,7 +2782,7 @@
                   aria-describedby="voorbeeld-text-input-error-6-message voorbeeld-text-input-error-6-explanation"
                 />
                 <p class="error" id="voorbeeld-text-input-error-6-message">
-                  <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+                  <span>Foutmelding:</span> test dolor sit amet
                 </p>
               </div>
             </div>
@@ -2791,7 +2791,7 @@
               <label for="voorbeeld-text-input-warning-7">Voorbeeld invoerveld waarschuwing</label>
               <div>
                 <p class="warning" id="voorbeeld-text-input-warning-7-message">
-                  <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+                  <span>Waarschuwing:</span> test dolor sit amet
                 </p>
 
                 <div>
@@ -2815,7 +2815,7 @@
               >
               <div>
                 <p class="explanation" id="voorbeeld-text-input-explanation-6-message">
-                  <span>Toelichting:</span> Lorem ipsum dolor sit amet
+                  <span>Toelichting:</span> test dolor sit amet
                 </p>
 
                 <div>
@@ -2841,9 +2841,9 @@
                 aria-describedby="checkbox-example-default-6-message"
                 aria-invalid="true"
               />
-              <label for="checkbox-example-default-6">Lorem ipsum dolor sit amet</label>
+              <label for="checkbox-example-default-6">test dolor sit amet</label>
               <p class="error" id="checkbox-example-default-6-message">
-                <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+                <span>Foutmelding:</span> test dolor sit amet
               </p>
             </div>
 
@@ -2861,7 +2861,7 @@
                 <label for="checkbox-example-required-6">verplicht selectievak</label>
               </div>
               <p class="error" id="checkbox-example-required-6-message">
-                <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+                <span>Foutmelding:</span> test dolor sit amet
               </p>
             </div>
           </fieldset>
@@ -3000,12 +3000,12 @@
               <label for="input_with_link_2">Input with link</label>
               <div>
                 <input id="input_with_link_2" name="input with link" />
-                <a href="form-test">Link within form test</a>
+                <a href="test">Link within form test</a>
               </div>
             </div>
 
             <button>Test button</button><br />
-            <a href="form-test">Link within form test</a>
+            <a href="test">Link within form test</a>
           </fieldset>
 
           <div class="button-container">
@@ -3048,7 +3048,7 @@
           </fieldset>
 
           <fieldset>
-            <legend>Lorem ipsum</legend>
+            <legend>test</legend>
             <div class="radio">
               <input
                 type="radio"
@@ -3083,7 +3083,7 @@
           <fieldset>
             <legend>Nested example</legend>
             <fieldset>
-              <legend>Lorem ipsum</legend>
+              <legend>test</legend>
 
               <div>
                 <div class="checkbox">
@@ -3104,7 +3104,7 @@
             </fieldset>
 
             <fieldset>
-              <legend>Lorem ipsum</legend>
+              <legend>test</legend>
               <div class="radio">
                 <input
                   type="radio"
@@ -3221,7 +3221,7 @@
           <fieldset>
             <legend>Nested example</legend>
             <fieldset>
-              <legend>Lorem ipsum</legend>
+              <legend>test</legend>
 
               <div>
                 <div class="checkbox">
@@ -3263,7 +3263,7 @@
             </fieldset>
 
             <fieldset>
-              <legend>Lorem ipsum</legend>
+              <legend>test</legend>
               <div>
                 <div class="radio">
                   <input
@@ -3333,37 +3333,37 @@
         <h2 id="collapsed-help">Formulier met ingeklapte hulpteksten</h2>
         <form method="post" class="help">
           <p class="explanation" role="group" aria-label="toelichting">
-            <span>Toelichting:</span> Lorem ipsum dolor sit amet
+            <span>Toelichting:</span> test dolor sit amet
           </p>
           <p class="warning" role="group" aria-label="waarschuwing">
-            <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+            <span>Waarschuwing:</span> test dolor sit amet
           </p>
           <p class="error" role="group" aria-label="foutmelding">
-            <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+            <span>Foutmelding:</span> test dolor sit amet
           </p>
           <p class="confirmation" role="group" aria-label="bevestiging">
-            <span>Bevestiging:</span> Lorem ipsum dolor sit amet
+            <span>Bevestiging:</span> test dolor sit amet
           </p>
 
           <div class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
           </div>
 
           <div class="warning" role="group" aria-label="waarschuwing">
             <span>Waarschuwing:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
           </div>
 
           <div class="error" role="group" aria-label="foutmelding">
             <span>Foutmelding:</span>
-            <h3>Lorem ipsum dolor sit amet</h3>
+            <h3>test dolor sit amet</h3>
             <p>Consectetur adepicing elit.</p>
           </div>
 
           <div class="confirmation" role="group" aria-label="bevestiging">
             <span>Bevestiging:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
             <ul>
               <li>Loren ipsum dolor sit amet</li>
               <li>Loren ipsum dolor sit amet</li>
@@ -3404,7 +3404,7 @@
               name="standaard-checkbox"
             />
             <label for="help-simpel-checkbox-example-default-1"
-              >Checkbox label test met een lange naam. Lorem ipsum dolor sit amet.</label
+              >Checkbox label test met een lange naam. test dolor sit amet.</label
             >
           </div>
 
@@ -3425,7 +3425,7 @@
               aria-invalid="true"
             />
             <p class="error" id="help-simpel-voorbeeld-text-input-error-2-message">
-              <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+              <span>Foutmelding:</span> test dolor sit amet
             </p>
           </div>
 
@@ -3434,7 +3434,7 @@
           >
           <div>
             <p class="explanation" id="help-simpel-voorbeeld-text-input-explanation-1-message">
-              <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+              <span>Toelichting:</span> test dolor sit amet.
             </p>
 
             <div>
@@ -3458,7 +3458,7 @@
           >
           <div>
             <p class="warning" id="help-simpel-voorbeeld-text-input-warning-1-message">
-              <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+              <span>Waarschuwing:</span> test dolor sit amet
             </p>
 
             <div>
@@ -3480,7 +3480,7 @@
           >
           <div>
             <p class="explanation" id="help-simpel-voorbeeld-tekstveld-2-message">
-              <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+              <span>Toelichting:</span> test dolor sit amet.
             </p>
 
             <div>
@@ -3517,7 +3517,7 @@
               data-open-label="Toelichting bij het veld: Voorbeeld text input"
               data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
             >
-              Lorem ipsum dolor sit amet.
+              test dolor sit amet.
             </p>
           </div>
 
@@ -3535,14 +3535,14 @@
               aria-describedby="help-simpel-voorbeeld-tekstveld-3-message help-simpel-voorbeeld-tekstveld-3-explanation"
             ></textarea>
             <p class="explanation" id="help-simpel-voorbeeld-tekstveld-3-message">
-              <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+              <span>Toelichting:</span> test dolor sit amet.
             </p>
           </div>
 
           <label for="select-with-explanation-3">Voorbeeld select met reguliere toelichting</label>
           <div>
             <p class="explanation" id="select-with-explanation-3-message">
-              <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+              <span>Toelichting:</span> test dolor sit amet.
             </p>
             <select
               id="select-with-explanation-3"
@@ -3569,14 +3569,14 @@
               <option value="3">Optie 3</option>
             </select>
             <p class="explanation" id="select-with-collapsed-explanation-1-message">
-              <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+              <span>Toelichting:</span> test dolor sit amet.
             </p>
           </div>
 
           <fieldset class="grouped-choice-list">
             <legend>Radio-selectielijst met reguliere toelichting</legend>
             <p class="explanation" id="help-radio-list-item-1-message">
-              <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+              <span>Toelichting:</span> test dolor sit amet.
             </p>
             <div>
               <div class="radio">
@@ -3627,7 +3627,7 @@
               </div>
             </div>
             <p class="explanation" id="help-collapsed-radio-list-item-1-message">
-              <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+              <span>Toelichting:</span> test dolor sit amet.
             </p>
           </fieldset>
 
@@ -3642,7 +3642,7 @@
                   value="value 1"
                 />
                 <label for="help-individual-radio-list-item-2">Optie 1</label>
-                <p class="explanation">Lorem ipsum dolor sit amet.</p>
+                <p class="explanation">test dolor sit amet.</p>
               </div>
               <div class="radio">
                 <input
@@ -3654,7 +3654,7 @@
                 />
                 <label for="help-individual-radio-list-item-3">Optie 2</label>
                 <p class="explanation" id="help-individual-radio-list-item-3-message">
-                  <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+                  <span>Toelichting:</span> test dolor sit amet.
                 </p>
               </div>
             </div>
@@ -3666,37 +3666,37 @@
         <h2 id="form-help-columns">Formulier met ingeklapte hulpteksten in kolommen</h2>
         <form method="post" class="help horizontal">
           <p class="explanation" role="group" aria-label="toelichting">
-            <span>Toelichting:</span> Lorem ipsum dolor sit amet
+            <span>Toelichting:</span> test dolor sit amet
           </p>
           <p class="warning" role="group" aria-label="waarschuwing">
-            <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+            <span>Waarschuwing:</span> test dolor sit amet
           </p>
           <p class="error" role="group" aria-label="foutmelding">
-            <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+            <span>Foutmelding:</span> test dolor sit amet
           </p>
           <p class="confirmation" role="group" aria-label="bevestiging">
-            <span>Bevestiging:</span> Lorem ipsum dolor sit amet
+            <span>Bevestiging:</span> test dolor sit amet
           </p>
 
           <div class="explanation" role="group" aria-label="toelichting">
             <span>Toelichting:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
           </div>
 
           <div class="warning" role="group" aria-label="waarschuwing">
             <span>Waarschuwing:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
           </div>
 
           <div class="error" role="group" aria-label="foutmelding">
             <span>Foutmelding:</span>
-            <h3>Lorem ipsum dolor sit amet</h3>
+            <h3>test dolor sit amet</h3>
             <p>Consectetur adepicing elit.</p>
           </div>
 
           <div class="confirmation" role="group" aria-label="bevestiging">
             <span>Bevestiging:</span>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>test dolor sit amet</p>
             <ul>
               <li>Loren ipsum dolor sit amet</li>
               <li>Loren ipsum dolor sit amet</li>
@@ -3740,7 +3740,7 @@
               name="standaard-checkbox"
             />
             <label for="help-simpel-checkbox-example-default-2"
-              >Checkbox label test met een lange naam. Lorem ipsum dolor sit amet.</label
+              >Checkbox label test met een lange naam. test dolor sit amet.</label
             >
           </div>
 
@@ -3761,7 +3761,7 @@
                 aria-invalid="true"
               />
               <p class="error" id="help-simpel-voorbeeld-text-input-error-1-message">
-                <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+                <span>Foutmelding:</span> test dolor sit amet
               </p>
             </div>
           </div>
@@ -3772,7 +3772,7 @@
             >
             <div>
               <p class="explanation" id="help-simpel-voorbeeld-text-input-explanation-2-message">
-                <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+                <span>Toelichting:</span> test dolor sit amet.
               </p>
 
               <div>
@@ -3798,7 +3798,7 @@
             >
             <div>
               <p class="warning" id="help-simpel-voorbeeld-text-input-warning-2-message">
-                <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+                <span>Waarschuwing:</span> test dolor sit amet
               </p>
 
               <div>
@@ -3822,7 +3822,7 @@
             >
             <div>
               <p class="explanation" id="help-simpel-voorbeeld-tekstveld-5-message">
-                <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+                <span>Toelichting:</span> test dolor sit amet.
               </p>
               <div>
                 <span class="nota-bene" id="help-simpel-voorbeeld-tekstveld-5-explanation"
@@ -3862,7 +3862,7 @@
                 data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
                 id="help-simpel-voorbeeld-text-input-collapsed-explanation-2-message"
               >
-                <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+                <span>Toelichting:</span> test dolor sit amet.
               </p>
             </div>
           </div>
@@ -3883,7 +3883,7 @@
               ></textarea>
 
               <p class="explanation" id="help-simpel-voorbeeld-tekstveld-6-message">
-                <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+                <span>Toelichting:</span> test dolor sit amet.
               </p>
             </div>
           </div>
@@ -3894,7 +3894,7 @@
             >
             <div>
               <p class="explanation" id="select-with-explanation-1-message">
-                <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+                <span>Toelichting:</span> test dolor sit amet.
               </p>
               <select
                 id="select-with-explanation-1"
@@ -3923,7 +3923,7 @@
                 <option value="3">Optie 3</option>
               </select>
               <p class="explanation" id="select-with-collapsed-explanation-3-message">
-                <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+                <span>Toelichting:</span> test dolor sit amet.
               </p>
             </div>
           </div>
@@ -3932,7 +3932,7 @@
             <legend>Radio-selectielijst met reguliere toelichting</legend>
             <div>
               <p class="explanation" id="help-horizontal-radio-list-item-1-message">
-                <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+                <span>Toelichting:</span> test dolor sit amet.
               </p>
               <div class="radio">
                 <input
@@ -3982,7 +3982,7 @@
               </div>
               <div class="explanation" id="help-collapsed-horizontal-radio-list-item-1-message">
                 <span>Toelichting:</span>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>test dolor sit amet.</p>
               </div>
             </div>
           </fieldset>
@@ -4000,7 +4000,7 @@
                 />
                 <label for="help-individual-horizontal-radio-list-item-1">Optie 1</label>
                 <p class="explanation" id="help-individual-horizontal-radio-list-item-1-message">
-                  <span>Toelichting:</span> Lorem ipsum dolor sit amet.
+                  <span>Toelichting:</span> test dolor sit amet.
                 </p>
               </div>
               <div class="radio">
@@ -4014,7 +4014,7 @@
                 <label for="help-individual-horizontal-radio-list-item-2">Optie 2</label>
                 <p class="explanation" id="help-individual-horizontal-radio-list-item-2-message">
                   <span>Toelichting:</span>
-                  Lorem ipsum dolor sit amet.
+                  test dolor sit amet.
                 </p>
               </div>
             </div>

@@ -26,8 +26,8 @@
       <section id="introduction">
         <h1>Icoon-afbeelding</h1>
         <p>
-          Het <a href="{base}/components/icons">Icoon-component</a> kan gebruikt wordt met unicode-codes
-          om een van de iconen uit de standaard icoon-set te gebruiken.
+          Het <a href="{base}/components/components/icons">Icoon-component</a> kan gebruikt wordt met
+          unicode-codes om een van de iconen uit de standaard icoon-set te gebruiken.
         </p>
 
         <p>
@@ -79,7 +79,7 @@
 
       <section id="related">
         <h2>Gerelateerde pagina's</h2>
-        <a href="{base}/components/icons/test">Test- en voorbeelden-pagina</a>
+        <a href="{base}/components/components/icons/test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>
