@@ -14,3 +14,7 @@ a {
   @include link.link-elements-styling("link-");
   @include outline.outline("link-");
 }
+
+* a {
+  font-size: inherit;
+}
