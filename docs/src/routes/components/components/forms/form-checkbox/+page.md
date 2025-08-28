@@ -6,9 +6,7 @@ nav:
   - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Selectievak - `checkbox`</h1>
-
+<p class="introduction">Selectievak - Checkbox</p>
 <h2 id="quick-start">Snelstart</h2>
 
 SCSS importeren:

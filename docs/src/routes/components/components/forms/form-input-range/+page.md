@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Bereik - `range`</h1>
+<p class="introduction">Bereik component</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

@@ -8,8 +8,7 @@ nav:
   - Bijbehorende bestanden: "#requirements"
   - Gerelateerde pagina's: "#related"
 ---
-
-<h1 id="introduction">Gegroepeerde content binnen tegels</h1>
+<p class="introduction">Voor het gegroepeerd weergeven van content binnen tegels</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

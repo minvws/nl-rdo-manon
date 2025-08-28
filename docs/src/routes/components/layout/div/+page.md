@@ -6,9 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction"><code>div</code></h1>
-
+<p class="introduction">Voor het weergeven van content binnen een div direct binnen de main</p>
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:

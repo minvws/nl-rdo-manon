@@ -6,8 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Main</h1>
+<p class="introduction">Voor het weergeven van de main op de pagina</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

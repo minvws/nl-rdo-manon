@@ -53,9 +53,9 @@
     </ul>
   </SideMenu>
   <article>
-    <div>
+    <h1>Iconen</h1>
+    <div class="content-wrapper">
       <section id="introduction">
-        <h1>Iconen</h1>
         <p>
           Voor het toevoegen van iconen binnen de website kan gebruik gemaakt worden van een
           icoon-lettertype via de classes <code>icon</code> en

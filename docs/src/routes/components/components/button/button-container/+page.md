@@ -4,9 +4,7 @@ nav:
   - Introductie: "#introduction"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Knoppen groeperen</h1>
-
+<p id="introduction">Knoppen groeperen</p>
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:

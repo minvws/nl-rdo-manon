@@ -6,9 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Datum</h1>
-
+<p class="introduction">Datumveld</p>
 <h2 id="quickstart">Snelstart</h2>
 
 ```css

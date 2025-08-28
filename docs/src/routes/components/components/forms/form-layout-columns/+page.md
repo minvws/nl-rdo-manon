@@ -6,8 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Weergave in kolommen</h1>
+<p class="introduction">Voor het weergeven van de inhoud van het formulier in kolommen.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

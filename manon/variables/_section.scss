@@ -1,5 +1,5 @@
 $section-background-color: null !default;
-$section-flex-direction: null !default;
+$section-flex-direction: column !default;
 $section-justify-content: null !default;
 $section-align-items: null !default;
 $section-gap: null !default;
@@ -9,3 +9,16 @@ $section-padding-bottom: null !default;
 $section-padding-left: null !default;
 $section-max-width: null !default;
 $section-border-radius: null !default;
+
+// content wrapper
+$section-content-wrapper-background-color: null !default;
+$section-content-wrapper-flex-direction: column !default;
+$section-content-wrapper-justify-content: null !default;
+$section-content-wrapper-align-items: null !default;
+$section-content-wrapper-gap: null !default;
+$section-content-wrapper-padding-top: null !default;
+$section-content-wrapper-padding-right: null !default;
+$section-content-wrapper-padding-bottom: null !default;
+$section-content-wrapper-padding-left: null !default;
+$section-content-wrapper-max-width: null !default;
+$section-content-wrapper-border-radius: null !default;

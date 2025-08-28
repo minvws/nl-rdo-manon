@@ -6,9 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Basisformulier</h1>
-
+<p class="introduction">Opzet voor een basis formulier.</p>
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss

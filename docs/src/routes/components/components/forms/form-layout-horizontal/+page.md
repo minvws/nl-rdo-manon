@@ -6,8 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Horizontaal uitgelijnd</h1>
+<p class="introduction">Voor het horizontaal uitlijnen van de invoervelden en labels binnen het formulier.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

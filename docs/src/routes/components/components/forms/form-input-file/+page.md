@@ -6,8 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Bestand</h1>
+<p class="introduction">File upload, invoerveld voor het uploaden van bestanden.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

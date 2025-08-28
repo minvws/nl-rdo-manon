@@ -21,10 +21,10 @@
     </ul>
   </SideMenu>
   <article>
-    <div>
-      <section id="introduction">
-        <h1>Terug naar hoofdmenu knop</h1>
+    <h1>Terug naar hoofdmenu knop</h1>
 
+    <div class="content-wrapper">
+      <section id="introduction">
         <h2>Benodigde stappen:</h2>
         <ol>
           <li>

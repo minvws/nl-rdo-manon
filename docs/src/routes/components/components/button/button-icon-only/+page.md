@@ -7,10 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Icoonknoppen zonder achtergrond</h1>
-
-Icoonknoppen zonder achtergrond geven geen tekst weer. Voeg wel altijd de
-knoptekst toe voor gebruikers die gebruik maken van hulptechnologiën.
+<p id="introduction">Icoonknoppen zonder achtergrond geven geen tekst weer. Voeg wel altijd de
+knoptekst toe voor gebruikers die gebruik maken van hulptechnologiën.</p>
 
 <h2 id="quick-start">Snelstart</h2>
 

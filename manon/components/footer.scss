@@ -4,9 +4,21 @@
 body > footer,
 .page-footer,
 %footer-style {
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
+  @if (
+    theme.$footer-flex-direction or
+      theme.$footer-gap or
+      theme.$footer-justify-content or
+      theme.$footer-align-items or
+      theme.$footer-flex-wrap
+  ) {
+    display: flex;
+    width: 100%;
+  }
+
+  @if (theme.$footer-max-width) {
+    margin: 0 auto;
+  }
+
   box-sizing: border-box;
 
   @include theming.apply-from-theme(
@@ -104,6 +116,27 @@ body > footer,
   }
 
   nav {
+    @if (
+      theme.$footer-nav-gap or
+        theme.$footer-nav-justify-content or
+        theme.$footer-nav-align-items or
+        theme.$footer-nav-flex-wrap
+    ) {
+      display: flex;
+      width: 100%;
+    }
+
+    flex-direction: theme.$footer-nav-flex-direction;
+
+    @include theming.apply-from-theme(
+      (
+        gap: theme.$footer-nav-gap,
+        justify-content: theme.$footer-nav-justify-content,
+        align-items: theme.$footer-nav-align-items,
+        flex-wrap: theme.$footer-nav-flex-wrap,
+      )
+    );
+
     ul,
     ol {
       background-color: transparent;

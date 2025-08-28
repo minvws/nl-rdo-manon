@@ -7,19 +7,16 @@ nav:
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
 ---
-
-<h1 id="introduction">In- en uitklapbaar zijmenu binnen de pagina</h1>
+<p class="introduction">Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het
+navigeren voor de gebruiker toegankelijk en overzichtelijk te houden. In dit
+voorbeeld staat het zijmenu binnen de pagina bij de content. Dus tussen de
+header en footer.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
 @use "@minvws/manon/sidemenu";
 ```
-
-Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het
-navigeren voor de gebruiker toegankelijk en overzichtelijk te houden. In dit
-voorbeeld staat het zijmenu binnen de pagina bij de content. Dus tussen de
-header en footer.
 
 ## Aandachtspunten
 

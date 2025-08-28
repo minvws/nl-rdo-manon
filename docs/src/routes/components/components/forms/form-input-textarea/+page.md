@@ -6,8 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Tekstveld - `textarea`</h1>
+<p class="introduction">Tekstveld</p>
 
 <h2 id="quickstart">Snelstart</h2>
 SCSS importeren:

@@ -6,8 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Fieldset - `fieldset`</h1>
+<p class="introduction">Fieldset</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

@@ -6,8 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Verplichte velden</h1>
+<p class="introduction">Voor het weergeven van verplichte velden.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

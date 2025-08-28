@@ -1,15 +1,27 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
 
-main article {
+article {
   display: flex;
   width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
+  flex-direction: theme.$article-flex-direction;
+
+  @if (theme.$article-max-width) {
+    margin: 0 auto;
+  }
+
+  @if (
+    theme.$article-padding-top or
+      theme.$article-padding-right or
+      theme.$article-padding-bottom or
+      theme.$article-padding-left
+  ) {
+    box-sizing: border-box;
+  }
 
   @include theming.apply-from-theme(
     (
-      flex-direction: theme.$article-flex-direction,
+      background-color: theme.$article-background-color,
       justify-content: theme.$article-justify-content,
       align-items: theme.$article-align-items,
       gap: theme.$article-gap,
@@ -18,6 +30,48 @@ main article {
       padding-bottom: theme.$article-padding-bottom,
       padding-left: theme.$article-padding-left,
       max-width: theme.$article-max-width,
+      border-radius: theme.$article-border-radius,
     )
   );
+
+  .content-wrapper {
+    flex-direction: theme.$article-content-wrapper-flex-direction;
+
+    @if (
+      theme.$article-content-wrapper-gap or
+        theme.$article-content-wrapper-align-items or
+        theme.$article-content-wrapper-justify-content
+    ) {
+      display: flex;
+      width: 100%;
+    }
+
+    @if (theme.$article-content-wrapper-max-width) {
+      margin: 0 auto;
+    }
+
+    @if (
+      theme.$article-content-wrapper-padding-top or
+        theme.$article-content-wrapper-padding-right or
+        theme.$article-content-wrapper-padding-bottom or
+        theme.$article-content-wrapper-padding-left
+    ) {
+      box-sizing: border-box;
+    }
+
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$article-content-wrapper-background-color,
+        justify-content: theme.$article-content-wrapper-justify-content,
+        align-items: theme.$article-content-wrapper-align-items,
+        gap: theme.$article-content-wrapper-gap,
+        padding-top: theme.$article-content-wrapper-padding-top,
+        padding-right: theme.$article-content-wrapper-padding-right,
+        padding-bottom: theme.$article-content-wrapper-padding-bottom,
+        padding-left: theme.$article-content-wrapper-padding-left,
+        max-width: theme.$article-content-wrapper-max-width,
+        border-radius: theme.$article-content-wrapper-border-radius,
+      )
+    );
+  }
 }

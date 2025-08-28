@@ -8,8 +8,7 @@ nav:
   - Bijbehorende bestanden: "#requirements"
   - Gerelateerde pagina's: "#related"
 ---
-
-<h1 id="introduction">Nota bene</h1>
+<p class="introduction">Voor het weergeven van de nota bene</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

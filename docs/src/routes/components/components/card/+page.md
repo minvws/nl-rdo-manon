@@ -7,9 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Kaart</h1>
-
-Groepeer bij elkaar horende elementen visueel in een kaart.
+<p class="introduction">Groepeer bij elkaar horende elementen visueel in een kaart.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

@@ -7,10 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Tabel met actieknoppen</h1>
-
-Herhalende content zoals actieknoppen kunnen visueel als iconen weergegeven
-worden.
+<p class="introduction">Herhalende content zoals actieknoppen kunnen visueel als iconen weergegeven
+worden.</p>
 
 <h2 id="quick-start">Snelstart</h2>
 

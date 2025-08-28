@@ -1,9 +1,7 @@
 ---
-title: Aan de slag met Manon
+title: Snelstart
 breadcrumb: Snelstart
 ---
-
-# Snelstart
 
 Deze documentatie biedt een snelle startgids voor het gebruik van het Manon
 framework en de bijbehorende thema's in je project.

@@ -7,12 +7,10 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Header Navigation</h1>
-
-De header-navigation component biedt een flexibele en toegankelijke
+<p class="introduction">De header-navigation component biedt een flexibele en toegankelijke
 navigatiebalk voor websites. Het ondersteunt verschillende configuraties, zoals
 een logo, zoekveld, en meerdere menu's. Deze component is ontworpen om te
-voldoen aan de toegankelijkheidsrichtlijnen en biedt een responsieve ervaring.
+voldoen aan de toegankelijkheidsrichtlijnen en biedt een responsieve ervaring.</p>
 
 <h2 id="quick-start">Snelstart</h2>
 
