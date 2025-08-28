@@ -35,43 +35,4 @@
       </nav>
     </div>
   </section>
-
-  <section id="available-examples">
-    <h2>Beschikbare voorbeelden</h2>
-    <div class="column-3">
-      <nav aria-labelledby="example-types-title" id="example-types">
-        <h3 id="example-types-title">Voorbeeldtypen</h3>
-        <ul>
-          <li><a href="{base}/examples/breadcrumb-bar">Breadcrumb Bar</a></li>
-          <li><a href="{base}/examples/footer-link-unvisited">Footer Link Unvisited</a></li>
-          <li><a href="{base}/examples/footer-link-visited">Footer Link Visited</a></li>
-          <li>
-            <a href="{base}/examples/footer-navigation-link-unvisited"
-              >Footer Navigation Link Unvisited</a
-            >
-          </li>
-          <li>
-            <a href="{base}/examples/footer-navigation-link-visited"
-              >Footer Navigation Link Visited</a
-            >
-          </li>
-          <li>
-            <a href="{base}/examples/header-navigation-link-unvisited"
-              >Header Navigation Link Unvisited</a
-            >
-          </li>
-          <li>
-            <a href="{base}/examples/header-navigation-link-visited"
-              >Header Navigation Link Visited</a
-            >
-          </li>
-          <li>
-            <a href="{base}/examples/header-navigation-with-content-wrapper"
-              >Header Navigation with Content Wrapper</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
 </main>

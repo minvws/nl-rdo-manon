@@ -17,6 +17,7 @@ const config = {
     alias: {
       $scss: "src/scss",
       $img: "src/img",
+      $examples: "src/routes/examples",
     },
     paths: {
       base: process.argv.includes("dev") ? "" : process.env.BASE_PATH || "",
