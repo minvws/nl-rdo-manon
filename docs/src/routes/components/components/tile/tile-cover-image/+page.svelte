@@ -30,14 +30,14 @@
           <li>
             Voeg <code>class="tile"</code> toe voor de Tegelweergave met cover-afbeelding op een
             enkel element. Voor meer informatie zie:
-            <a href="{base}/components/components/tiles">tegelweergave</a>
+            <a href="{base}/components/components/tile">tegelweergave</a>
           </li>
           <li>
             Voeg de class <code>image-cover</code> toe voor de correcte weergave. Voor meer
             informatie zie: <a href="#tile-image-cover">tegel met cover-afbeelding</a> of
             <a href="#tiles-image-cover">groep met tegels met cover-afbeelding</a>. Voor meer
             informatie over cover-afbeelding zie
-            <a href="{base}/components/components/image-cover">cover-afbeelding</a>
+            <a href="{base}/components/components/image/image-cover">cover-afbeelding</a>
           </li>
         </ul>
       </section>

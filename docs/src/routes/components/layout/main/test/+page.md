@@ -69,10 +69,11 @@ Voor visueel voorbeeld zie: [Div](/components/layout/main/main-test-div)
 
 ### Content in een content-wrapper binnen `main`
 
-De content wrapper zorgt ervoor dat de achtergrond door kan lopen terwijl de content een
-maximale breedte heeft.
+De content wrapper zorgt ervoor dat de achtergrond door kan lopen terwijl de
+content een maximale breedte heeft.
 
-Voor visueel voorbeeld zie: [Content wrapper div](/components/layout/main/main-test-content-wrapper-div)
+<!-- @TODO -->
+<!-- Voor visueel voorbeeld zie: [Content wrapper div](/components/layout/main/main-test-content-wrapper-div) -->
 
 #### HTML-voorbeeld:
 
