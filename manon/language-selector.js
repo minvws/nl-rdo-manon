@@ -27,11 +27,11 @@ function onClick(e) {
 
 function onKeyPress(e) {
   var languageSelectorElement = e.target.closest(".language-selector-options");
-  var expanded =
-    languageSelectorElement.getAttribute("aria-expanded") === "true";
-  var listLength = languageSelectorElement.getElementsByTagName("li").length;
   var selectorButton =
     languageSelectorElement.getElementsByTagName("button")[0];
+  var expanded =
+    languageSelectorElement.selectorButton("aria-expanded") === "true";
+  var listLength = languageSelectorElement.getElementsByTagName("li").length;
   var firstOption = languageSelectorElement.querySelector("li:first-of-type a");
   var lastOption = languageSelectorElement.querySelector("li:last-of-type a");
 
@@ -39,32 +39,26 @@ function onKeyPress(e) {
   if (selectorButton === document.activeElement) {
     switch (e.code) {
       case "Enter":
-        languageSelectorElement.setAttribute(
-          "aria-expanded",
-          expanded ? "false" : "true"
-        );
-        e.preventDefault();
-        break;
       case "Space":
-        languageSelectorElement.setAttribute(
+        selectorButton.setAttribute(
           "aria-expanded",
           expanded ? "false" : "true"
         );
         e.preventDefault();
         break;
       case "Escape":
-        languageSelectorElement.setAttribute("aria-expanded", "false");
+        selectorButton.setAttribute("aria-expanded", "false");
         break;
       case "ArrowUp":
-        languageSelectorElement.setAttribute("aria-expanded", "true");
-        languageSelectorElement
+        selectorButton.setAttribute("aria-expanded", "true");
+        selectorButton
           .getElementsByTagName("li")
-          [listLength - 1].getElementsByTagName("a")[0]
+        [listLength - 1].getElementsByTagName("a")[0]
           .focus();
         e.preventDefault();
         break;
       case "ArrowDown":
-        languageSelectorElement.setAttribute("aria-expanded", "true");
+        selectorButton.setAttribute("aria-expanded", "true");
         firstOption.focus();
         e.preventDefault();
         break;
@@ -81,7 +75,7 @@ function onKeyPress(e) {
         // Give focus to the selector button.
         selectorButton.focus();
         // Close the drop down.
-        languageSelectorElement.setAttribute("aria-expanded", "false");
+        selectorButton.setAttribute("aria-expanded", "false");
         break;
       // If the UP key is pressed.
       case "ArrowUp":
