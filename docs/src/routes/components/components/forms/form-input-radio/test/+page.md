@@ -25,7 +25,7 @@ Overzicht van het element in mogelijke structuren om te testen.
 ```html
 <form action="" method="post">
   <div class="radio">
-    <input type="radio" id="radio-example-base" name="standaard-radio">
+    <input type="radio" id="radio-example-base" name="standaard-radio" />
     <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
   </div>
 </form>
@@ -50,7 +50,7 @@ Overzicht van het element in mogelijke structuren om te testen.
 <form action="" method="post">
   <section>
     <div class="radio">
-      <input type="radio" id="radio-example-section" name="standaard-radio">
+      <input type="radio" id="radio-example-section" name="standaard-radio" />
       <label for="radio-example-section">Lorem ipsum dolor sit amet</label>
     </div>
   </section>
@@ -78,7 +78,7 @@ Overzicht van het element in mogelijke structuren om te testen.
   <fieldset>
     <legend>Radioselecteerknop binnen een fieldset voorbeeld</legend>
     <div class="radio">
-      <input type="radio" id="radio-example-fieldset" name="standaard-radio">
+      <input type="radio" id="radio-example-fieldset" name="standaard-radio" />
       <label for="radio-example-fieldset">Lorem ipsum dolor sit amet</label>
     </div>
   </fieldset>

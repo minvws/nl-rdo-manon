@@ -3,10 +3,8 @@ title: Tabel met actieknoppen
 breadcrumb: Tabel met actieknoppen
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
-  - Benodigdheden: "#requirements"
-  - Variabelen: "#variables"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Tabel met actieknoppen</h1>
@@ -14,7 +12,16 @@ nav:
 Herhalende content zoals actieknoppen kunnen visueel als iconen weergegeven
 worden.
 
-## Benodigde stappen:
+<h2 id="quick-start">Snelstart</h2>
+
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/table";
+@use "@minvws/manon/table-action-buttons";
+```
+
+### Benodigde stappen
 
 1.  Om gebruik te maken van de visuele actieknop weergave, voeg de class
     `action-button` toe aan de button.
@@ -22,21 +29,30 @@ worden.
     er ook gebruik gemaakt worden van de class `action-buttons` direct op de
     `table`.
 
-## Aandachtspunten
-
-- Omdat niet alle gebruikers weten wat een icoon betekent is het verstandig om
-  een omschrijvende tekst in de header te plaatsen.
-- Voor toegankelijkheid is het belangrijk om de tekst ook toe te voegen aan de
-  knop ook al wordt deze visueel niet getoont. Screenreaders maken hier
-  bijvoorbeeld gebruik van.
-- Voor tabellen met lange lijsten kan het de gebruiker helpen om gebruik te
-  maken van de tabel met sticky header zodat de toelichting van de iconen altijd
-  in beeld blijft. Voor meer informatie zie:
-  [tabel met sticky header](/components/table-sticky-header).
+<div class="explanation" role="group" aria-label="Toelichting">
+  <span>Aandachtspunten</span>
+  <ul>
+    <li>
+      Omdat niet alle gebruikers weten wat een icoon betekent is het verstandig om
+      een omschrijvende tekst in de header te plaatsen.
+    </li>
+    <li>
+      Voor toegankelijkheid is het belangrijk om de tekst ook toe te voegen aan de
+      knop ook al wordt deze visueel niet getoont. Screenreaders maken hier
+      bijvoorbeeld gebruik van.
+    </li>
+    <li>
+      Voor tabellen met lange lijsten kan het de gebruiker helpen om gebruik te
+      maken van de tabel met sticky header zodat de toelichting van de iconen altijd
+      in beeld blijft. Voor meer informatie zie:
+      [tabel met sticky header](/components/table-sticky-header).
+    </li>
+  </ul>
+</div>
 
 <h2 id="examples">Voorbeelden</h2>
 
-### Visueel voorbeeld:
+### Voorbeeld: `class` op indivuele knoppen
 
 <div class="horizontal-scroll">
   <table>
@@ -82,10 +98,6 @@ worden.
   </table>
 </div>
 
-### HTML-voorbeeld:
-
-#### `class` op indivuele knoppen
-
 ```html
 <div class="horizontal-scroll">
   <table>
@@ -106,30 +118,22 @@ worden.
         <td>Jane doe</td>
         <td>
           <form>
-            <button type="submit" class="icon icon-user action-button">
-              Bekijk profiel
-            </button>
+            <button type="submit" class="icon icon-user action-button">Bekijk profiel</button>
           </form>
         </td>
         <td>
           <form>
-            <button type="submit" class="icon icon-check action-button">
-              Goedkeuren
-            </button>
+            <button type="submit" class="icon icon-check action-button">Goedkeuren</button>
           </form>
         </td>
         <td>
           <form>
-            <button type="submit" class="icon icon-close action-button">
-              Deactiveer
-            </button>
+            <button type="submit" class="icon icon-close action-button">Deactiveer</button>
           </form>
         </td>
         <td>
           <form>
-            <button type="submit" class="icon icon-trash action-button">
-              Verwijder
-            </button>
+            <button type="submit" class="icon icon-trash action-button">Verwijder</button>
           </form>
         </td>
       </tr>
@@ -138,7 +142,7 @@ worden.
 </div>
 ```
 
-#### `class` op `table`
+### Voorbeeld: `class` op `table`
 
 ```html
 <div class="horizontal-scroll">
@@ -183,47 +187,3 @@ worden.
   </table>
 </div>
 ```
-
-<h2 id="requirements">Benodigdheden</h2>
-
-<ul>
-  <li>`table/table-base.scss`</li>
-  <li>`table/table-base-variables.scss`</li>
-  <li>`button/button-base.scss`</li>
-  <li>`button/button-base-variables.scss`</li>
-  <li>`icon/icon-base.scss`</li>
-  <li>`icon/icon-base-variables.scss`</li>
-  <li>`table/table-action-buttons.scss`</li>
-  <li>`table/table-action-buttons-variables.scss`</li>
-</ul>
-
-<h2 id="variables">Instelbare variabelen</h2>
-
-<ul>
-  <li>
-    Actieknop icoon
-    <ul>
-      <li>
-        <a href="/documentation/variables#background-color">background-color</a>
-      </li>
-      <li><a href="/documentation/variables#text-color">text-color</a></li>
-      <li><a href="/documentation/variables#font-size">font-size</a></li>
-      <li>
-        <a href="/documentation/variables#justify-content">justify-content</a>
-      </li>
-    </ul>
-  </li>
-  <li>
-    Actieknop icoon hover
-    <ul>
-      <li>
-        <a href="/documentation/variables#background-color">background-color</a>
-      </li>
-      <li><a href="/documentation/variables#text-color">text-color</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="related">Gerelateerde pagina's</h2>
-
-<a href="/components/table-action-buttons-test">Test- en voorbeelden-pagina</a>

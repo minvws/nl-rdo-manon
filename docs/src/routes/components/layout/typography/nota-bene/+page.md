@@ -18,24 +18,19 @@ nav:
 @use "@minvws/manon/text/nota-bene-variables";
 ```
 
-## Benodigde stappen:
+### Benodigde stappen
 
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie:
-    [Bijbehorende bestanden](#requirements).
-2.  Geef op de `<input>` aan dat het invoerveld verplicht is met het `required`
+1.  Geef op de `<input>` aan dat het invoerveld verplicht is met het `required`
     attribuut.
-3.  Voeg een `<span>` toe boven het inputveld. Het is belangrijk om het bericht
+2.  Voeg een `<span>` toe boven het inputveld. Het is belangrijk om het bericht
     boven het invoerveld te plaatsen zodat de volgorde ook klopt voor gebruikers
     die gebruik maken van hulpmiddelen zoals een screenreader.
-4.  Groeppeer de `<input>` en de `<span>` samen in een `<div>` voor de correcte
+3.  Groeppeer de `<input>` en de `<span>` samen in een `<div>` voor de correcte
     weergave.
 
 <h2 id="examples">Voorbeelden</h2>
 
 ### Nota bene
-
-#### Visueel voorbeeld:
 
 <form action="" method="post">
   <div>
@@ -47,8 +42,6 @@ nav:
   </div>
   <button type="submit">Verzend</button>
 </form>
-
-#### HTML-voorbeeld:
 
 ```html
 <form action="" method="post">
@@ -62,8 +55,3 @@ nav:
   <button type="submit">Verzend</button>
 </form>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)

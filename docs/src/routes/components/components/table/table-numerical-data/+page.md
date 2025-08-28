@@ -3,9 +3,8 @@ title: Tabel met numerieke data
 breadcrumb: Tabel met numerieke data
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
-  - Benodigdheden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <h1 id="introduction">Tabel met numerieke data</h1>
@@ -13,27 +12,21 @@ nav:
 Getallen worden visueel onderscheidend weergegeven van overige celdata om de
 gebruiksvriendelijkheid te vergroten.
 
-## Benodigde stappen:
+<h2 id="quick-start">Snelstart</h2>
 
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie: [Benodigdheden](#requirements). Voor
-    meer informatie over importeren en instellen van componenten. Zie:
-    [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-2.  Om gebruik te maken van de weergave voor numerieke data, voeg de class
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/table";
+```
+
+### Benodigde stappen
+
+1.  Om gebruik te maken van de weergave voor numerieke data, voeg de class
     `number` toe aan de cellen die numerieke data bevatten en de bijbehorende
     titelblokken
 
-## Aandachtspunten
-
-- Getallen worden vaak rechts uitgelijnd voor leesbaarheid.
-- Voor consistentie wordt de titel van kolommen met numerieke data vaak op
-  dezelfde manier uitgelijnd.
-- Getallen worden <dfn>mono-spaced</dfn> weergegeven, wat inhoud dat ieder getal
-  dezelfde breedte heeft waardoor getallen onderling goed te vergelijken zijn.
-
 <h2 id="examples">Voorbeelden</h2>
-
-### Visueel voorbeeld:
 
 <div class="horizontal-scroll">
   <table>
@@ -67,8 +60,6 @@ gebruiksvriendelijkheid te vergroten.
   </table>
 </div>
 
-### HTML-voorbeeld:
-
 ```html
 <div class="horizontal-scroll">
   <table>
@@ -91,15 +82,17 @@ gebruiksvriendelijkheid te vergroten.
 </div>
 ```
 
-<h2 id="requirements">Benodigdheden</h2>
-
-<ul>
-  <li>`table/table-base.scss`</li>
-  <li>`table/table-base-variables.scss`</li>
-  <li>`form/form-checkbox.scss`</li>
-  <li>`form/form-checkbox-variables.scss`</li>
-</ul>
-
-<h2 id="related">Gerelateerde pagina's</h2>
-
-<a href="/components/table-numerical-data-test">Test- en voorbeelden-pagina</a>
+<div class="explanation" role="group" aria-label="Toelichting">
+  <span>Aandachtspunten</span>
+  <ul>
+    <li>
+      Getallen worden vaak rechts uitgelijnd voor leesbaarheid.
+    </li>
+    <li>
+      Voor consistentie wordt de titel van kolommen met numerieke data vaak op dezelfde manier uitgelijnd.
+    </li>
+    <li>
+      Getallen worden <dfn>mono-spaced</dfn> weergegeven, wat inhoud dat ieder getal dezelfde breedte heeft waardoor getallen onderling goed te vergelijken zijn.
+    </li>
+  </ul>
+</div>

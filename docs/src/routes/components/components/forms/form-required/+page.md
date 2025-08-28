@@ -11,12 +11,12 @@ nav:
 
 <h2 id="quickstart">Snelstart</h2>
 
+SCSS importeren:
+
 ```scss
 @use "@minvws/manon/form";
 @use "@minvws/manon/form-nota-bene";
 ```
-
-## Benodigde stappen:
 
 <h2 id="examples">Voorbeelden</h2>
 
@@ -44,12 +44,7 @@ nav:
     <label for="voorbeeld-input-required">Ipsum</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
-      <input
-        id="voorbeeld-input-required"
-        name="voorbeeld-input-required"
-        type="text"
-        required
-      />
+      <input id="voorbeeld-input-required" name="voorbeeld-input-required" type="text" required />
     </div>
   </div>
   <button type="submit">Verzend</button>

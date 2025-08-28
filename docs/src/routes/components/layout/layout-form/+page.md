@@ -5,35 +5,26 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
 ---
 
 <h1 id="introduction">Layout form</h1>
 
+Weergave opties voor pagina's met als formulieren als hoofdfunctie.
+
+Het is ook mogelijk om de weergave van alle formulieren aan te passen. Gebruik
+daarvoor: [Basis formulieren](/components/components/form).
+
 <h2 id="quickstart">Snelstart</h2>
+
+SCSS importeren:
 
 ```scss
 @use "@minvws/manon/layout-form";
 ```
 
-Weergave opties voor pagina's met als formulieren als hoofdfunctie.
-
-Het is ook mogelijk om de weergave van alle formulieren aan te passen. Gebruik
-daarvoor: [Basis formulieren](/components/form).
-
-## Benodigde stappen:
-
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie:
-    [Bijbehorende bestanden](#requirements).
-2.  Vul de variabelen met de gewenste stijlkeuzes. Voor meer informatie zie het
-    overzicht met [instelbare variabelen](#variables).
-3.  Voeg de class `de-emphasized` toe aan de gewenste elementen. Voor meer
-    informatie zie: [Voorbeelden](#examples).
-
 <h2 id="examples">Voorbeelden:</h2>
 
-### Div
+### Voorbeeld: `div`
 
 <div class="layout-form">
   <form class="background-color-offset">
@@ -49,17 +40,7 @@ daarvoor: [Basis formulieren](/components/form).
   </form>
 </div>
 
-### HTML-voorbeeld:
-
-#### `div`:
-
-```html
-<div class="layout-form">
-  <!-- Content -->
-</div>
-```
-
-#### `section`:
+### Voorbeeld: `section`
 
 ```html
 <section class="layout-form">
@@ -69,7 +50,7 @@ daarvoor: [Basis formulieren](/components/form).
 </section>
 ```
 
-#### `article`:
+### Voorbeeld: `article`
 
 ```html
 <article class="layout-form">
@@ -79,22 +60,10 @@ daarvoor: [Basis formulieren](/components/form).
 </article>
 ```
 
-#### `form`:
+### Voorbeeld: `form`
 
 ```html
 <form class="layout-form">
   <!-- Content -->
 </form>
 ```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
-
-### Aandachtspunten:
-
-- De standaard ingestelde waarden binnen Manon maken gebruik van de
-  [Body text set](/components/layout/typography/body-text-set). Om gebruik te
-  maken van deze set. Laad de set eenmalig in voordat overige componenten er
-  gebruik van maken. Zie onderstaand voorbeeld voor meer informatie.

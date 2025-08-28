@@ -62,7 +62,9 @@ Overzicht van het element in mogelijke structuren om te testen.
 ```html
 <div class="horizontal-scroll">
   <table>
-    <caption>Tabelvoorbeeld met actieknoppen:</caption>
+    <caption>
+      Tabelvoorbeeld met actieknoppen:
+    </caption>
     <thead>
       <tr>
         <th scope="col">Gebruikersnaam</th>
@@ -74,27 +76,27 @@ Overzicht van het element in mogelijke structuren om te testen.
     </thead>
     <tbody>
       <tr>
-          <td>Jane doe</td>
-          <td>
-              <form>
-                  <button type="submit" class="icon icon-cat action-button">Bekijk profiel</button>
-              </form>
-          </td>
-          <td>
-              <form>
-                  <button type="submit" class="icon icon-cat action-button">Wijzig wachtwoord</button>
-              </form>
-          </td>
-          <td>
-              <form>
-                  <button type="submit" class="icon icon-cat action-button">Deactiveer</button>
-              </form>
-          </td>
-          <td>
-              <form>
-                  <button type="submit" class="icon icon-cat action-button">Verwijder</button>
-              </form>
-          </td>
+        <td>Jane doe</td>
+        <td>
+          <form>
+            <button type="submit" class="icon icon-cat action-button">Bekijk profiel</button>
+          </form>
+        </td>
+        <td>
+          <form>
+            <button type="submit" class="icon icon-cat action-button">Wijzig wachtwoord</button>
+          </form>
+        </td>
+        <td>
+          <form>
+            <button type="submit" class="icon icon-cat action-button">Deactiveer</button>
+          </form>
+        </td>
+        <td>
+          <form>
+            <button type="submit" class="icon icon-cat action-button">Verwijder</button>
+          </form>
+        </td>
       </tr>
     </tbody>
   </table>
@@ -150,7 +152,9 @@ Overzicht van het element in mogelijke structuren om te testen.
 ```html
 <div class="horizontal-scroll">
   <table class="action-buttons">
-    <caption>Tabelvoorbeeld met actieknoppen:</caption>
+    <caption>
+      Tabelvoorbeeld met actieknoppen:
+    </caption>
     <thead>
       <tr>
         <th scope="col">Gebruikersnaam</th>
@@ -162,27 +166,27 @@ Overzicht van het element in mogelijke structuren om te testen.
     </thead>
     <tbody>
       <tr>
-          <td>Jane doe</td>
-          <td>
-              <form>
-                  <button type="submit" class="icon icon-cat">Bekijk profiel</button>
-              </form>
-          </td>
-          <td>
-              <form>
-                  <button type="submit" class="icon icon-cat">Wijzig wachtwoord</button>
-              </form>
-          </td>
-          <td>
-              <form>
-                  <button type="submit" class="icon icon-cat">Deactiveer</button>
-              </form>
-          </td>
-          <td>
-              <form>
-                  <button type="submit" class="icon icon-cat">Verwijder</button>
-              </form>
-          </td>
+        <td>Jane doe</td>
+        <td>
+          <form>
+            <button type="submit" class="icon icon-cat">Bekijk profiel</button>
+          </form>
+        </td>
+        <td>
+          <form>
+            <button type="submit" class="icon icon-cat">Wijzig wachtwoord</button>
+          </form>
+        </td>
+        <td>
+          <form>
+            <button type="submit" class="icon icon-cat">Deactiveer</button>
+          </form>
+        </td>
+        <td>
+          <form>
+            <button type="submit" class="icon icon-cat">Verwijder</button>
+          </form>
+        </td>
       </tr>
     </tbody>
   </table>

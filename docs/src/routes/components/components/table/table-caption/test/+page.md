@@ -32,7 +32,9 @@ Overzicht van het element in mogelijke structuren om te testen.
 ```html
 <div class="horizontal-scroll">
   <table>
-    <caption>Basisvoorbeeld tabel:</caption>
+    <caption>
+      Basisvoorbeeld tabel:
+    </caption>
     <thead>
       <tr>
         <th scope="col">Table header heading 1</th>

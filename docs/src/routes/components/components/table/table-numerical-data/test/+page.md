@@ -48,16 +48,18 @@ Overzicht van het element in mogelijke structuren om te testen.
 ```html
 <div class="horizontal-scroll">
   <table>
-    <caption>Tabelvoorbeeld met selectievak:</caption>
+    <caption>
+      Tabelvoorbeeld met selectievak:
+    </caption>
     <thead>
       <tr>
-        <th scope="col"><input type="checkbox"></th>
+        <th scope="col"><input type="checkbox" /></th>
         <th scope="col">Table header heading</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><input type="checkbox"></td>
+        <td><input type="checkbox" /></td>
         <td>Ipsum</td>
       </tr>
     </tbody>

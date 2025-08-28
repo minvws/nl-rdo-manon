@@ -20,7 +20,9 @@ Overzicht van het element in mogelijke structuren om te testen.
 #### HTML-voorbeeld:
 
 ```html
-<p class="notification" role="group" aria-label="notificatie"><span>Notificatie:</span> Lorem <a href="">ipsum</a> dolor sit.</p>
+<p class="notification" role="group" aria-label="notificatie">
+  <span>Notificatie:</span> Lorem <a href="">ipsum</a> dolor sit.
+</p>
 ```
 
 ### Foutmelding
@@ -34,7 +36,9 @@ Overzicht van het element in mogelijke structuren om te testen.
 #### HTML-voorbeeld:
 
 ```html
-<p class="error" role="group" aria-label="foutmelding"><span>Foutmelding:</span> Lorem <a href="">ipsum</a> dolor sit.</p>
+<p class="error" role="group" aria-label="foutmelding">
+  <span>Foutmelding:</span> Lorem <a href="">ipsum</a> dolor sit.
+</p>
 ```
 
 ### Waarschuwing
@@ -48,7 +52,9 @@ Overzicht van het element in mogelijke structuren om te testen.
 #### HTML-voorbeeld:
 
 ```html
-<p class="warning" role="group" aria-label="waarschuwing"><span>Waarschuwing:</span> Lorem <a href="">ipsum</a> dolor sit.</p>
+<p class="warning" role="group" aria-label="waarschuwing">
+  <span>Waarschuwing:</span> Lorem <a href="">ipsum</a> dolor sit.
+</p>
 ```
 
 ### Toelichting
@@ -62,7 +68,9 @@ Overzicht van het element in mogelijke structuren om te testen.
 #### HTML-voorbeeld:
 
 ```html
-<p class="explanation" role="group" aria-label="toelichting"><span>Toelichting:</span> Lorem <a href="">ipsum</a> dolor sit.</p>
+<p class="explanation" role="group" aria-label="toelichting">
+  <span>Toelichting:</span> Lorem <a href="">ipsum</a> dolor sit.
+</p>
 ```
 
 ### Bevestiging
@@ -76,7 +84,9 @@ Overzicht van het element in mogelijke structuren om te testen.
 #### HTML-voorbeeld:
 
 ```html
-<p class="confirmation" role="group" aria-label="bevestiging"><span>Bevestiging:</span> Lorem <a href="">ipsum</a> dolor sit.</p>
+<p class="confirmation" role="group" aria-label="bevestiging">
+  <span>Bevestiging:</span> Lorem <a href="">ipsum</a> dolor sit.
+</p>
 ```
 
 ### Systeembericht
@@ -90,5 +100,7 @@ Overzicht van het element in mogelijke structuren om te testen.
 #### HTML-voorbeeld:
 
 ```html
-<p class="system" role="group" aria-label="systeembericht"><span>Systeembericht:</span> Lorem <a href="">ipsum</a> dolor sit.</p>
+<p class="system" role="group" aria-label="systeembericht">
+  <span>Systeembericht:</span> Lorem <a href="">ipsum</a> dolor sit.
+</p>
 ```

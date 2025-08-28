@@ -120,9 +120,6 @@ page, and the theme we want to apply. Throughout the tutorial, we'll be adding
 more components to these files as we expand our page.
 
 ```scss
-// Import the Manon framework and its components
-@use "@minvws/manon/application-base";
-
 // Theme that we're going to use for our page
 @use "@minvws/manon-themes/icore-open";
 ```
@@ -176,8 +173,8 @@ in our `main.scss` file. So, add the following import to your `main.scss` file:
 Our `main.scss` file should now look like this:
 
 ```scss
-// Import the Manon framework and its components
-@use "@minvws/manon/application-base";
+// Theme that we're going to use for our page
+@use "@minvws/manon-themes/icore-open";
 
 // Header navigation
 @use "@minvws/manon/header-navigation";
@@ -193,9 +190,6 @@ Our `main.scss` file should now look like this:
 
 // Accessibility
 @use "@minvws/manon/skip-to-content";
-
-// Theme that we're going to use for our page
-@use "@minvws/manon-themes/icore-open";
 ```
 
 Second we're going to add the following HTML to our `index.html` file to create
@@ -203,9 +197,7 @@ a header with navigation links:
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content"
-    >Skip to content</a
-  >
+  <a href="#main-content" class="button focus-only skip-to-content">Skip to content</a>
   <nav
     data-open-label="Menu"
     data-close-label="Sluit menu"
@@ -237,9 +229,7 @@ Now, our `index.html` file should look like this:
   </head>
   <body>
     <header>
-      <a href="#main-content" class="button focus-only skip-to-content"
-        >Skip to content</a
-      >
+      <a href="#main-content" class="button focus-only skip-to-content">Skip to content</a>
       <nav
         data-open-label="Menu"
         data-close-label="Sluit menu"
@@ -282,8 +272,8 @@ Add the following imports to your `main.scss` file:
 Now, our `main.scss` file should look like this:
 
 ```scss
-// Import the Manon framework and its components
-@use "@minvws/manon/application-base";
+// Theme that we're going to use for our page
+@use "@minvws/manon-themes/icore-open";
 
 // Header navigation
 // ...
@@ -296,9 +286,6 @@ Now, our `main.scss` file should look like this:
 @use "@minvws/manon/layout-set";
 @use "@minvws/manon/main";
 @use "@minvws/manon/section";
-
-// Theme that we're going to use for our page
-@use "@minvws/manon-themes/icore-open";
 ```
 
 Next, we will update our `index.html` file to include the main content area. Add
@@ -311,8 +298,8 @@ replacing the existing `<h1>` tag:
     <h1>Hello, Manon!</h1>
     <h2>Welcome to the Manon Tutorial</h2>
     <p>
-      Welcome to the Manon tutorial. In this tutorial, we will learn how to use
-      Manon to create a basic web page.
+      Welcome to the Manon tutorial. In this tutorial, we will learn how to use Manon to create a
+      basic web page.
     </p>
     <p>We’ll cover the following topics:</p>
     <ol>
@@ -345,8 +332,8 @@ Now, our `index.html` file should look like this:
         <h1>Hello, Manon!</h1>
         <h2>Welcome to the Manon Tutorial</h2>
         <p>
-          Welcome to the Manon tutorial. In this tutorial, we will learn how to
-          use Manon to create a basic web page.
+          Welcome to the Manon tutorial. In this tutorial, we will learn how to use Manon to create
+          a basic web page.
         </p>
         <p>We’ll cover the following topics:</p>
         <ol>
@@ -381,8 +368,8 @@ Add the following import to your `main.scss` file:
 Now, our `main.scss` file should look like this:
 
 ```scss
-// Import the Manon framework and its components
-@use "@minvws/manon/application-base";
+// Theme that we're going to use for our page
+@use "@minvws/manon-themes/icore-open";
 
 // Header navigation
 // ...
@@ -395,9 +382,6 @@ Now, our `main.scss` file should look like this:
 @use "@minvws/manon/main";
 @use "@minvws/manon/section";
 @use "@minvws/manon/footer";
-
-// Theme that we're going to use for our page
-@use "@minvws/manon-themes/icore-open";
 ```
 
 Next, we will update our `index.html` file to include the footer section. Add
@@ -454,5 +438,5 @@ Now, our `index.html` file should look like this:
 Now that we have our basic layout with a header, main content area, and footer,
 we can start adding more components to our page. We can use the Manon framework
 to add various components such as buttons, forms, and more. See the
-[Manon documentation - Components](https://minvws.github.io/nl-rdo-manon/components)
-for a list of available components and how to use them.
+[Manon documentation - Components](/components) for a list of available
+components and how to use them.

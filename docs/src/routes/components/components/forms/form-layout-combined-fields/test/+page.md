@@ -31,7 +31,7 @@ Overzicht van het element in mogelijke structuren om te testen.
   <div>
     <label for="voorbeeld-input-button">Ipsum</label>
     <div class="combined-field">
-      <input id="voorbeeld-input-button" name="voorbeeld-input-button" type="text">
+      <input id="voorbeeld-input-button" name="voorbeeld-input-button" type="text" />
       <button class="icon icon-cat">Cat</button>
     </div>
   </div>
@@ -63,7 +63,8 @@ Overzicht van het element in mogelijke structuren om te testen.
     </div>
   </div>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
+
 </form>
 
 #### HTML-voorbeeld:
@@ -73,11 +74,11 @@ Overzicht van het element in mogelijke structuren om te testen.
   <div class="combined-field">
     <div>
       <label for="voorbeeld-combined-inputs-1">Ipsum</label>
-      <input id="voorbeeld-combined-inputs-1" name="voorbeeld-combined-inputs-1" type="text">
+      <input id="voorbeeld-combined-inputs-1" name="voorbeeld-combined-inputs-1" type="text" />
     </div>
     <div>
       <label for="voorbeeld-combined-inputs-2">Ipsum</label>
-      <input id="voorbeeld-combined-inputs-2" name="voorbeeld-combined-inputs-2" type="text">
+      <input id="voorbeeld-combined-inputs-2" name="voorbeeld-combined-inputs-2" type="text" />
     </div>
   </div>
 

@@ -25,8 +25,7 @@ Overzicht van het element in mogelijke structuren om te testen.
 ```html
 <form action="" method="post">
   <label for="voorbeeld-tekstveld-base">Bericht</label>
-  <textarea id="voorbeeld-tekstveld-base" name="voorbeeld-tekstveld-base" rows="5"
-  ></textarea>
+  <textarea id="voorbeeld-tekstveld-base" name="voorbeeld-tekstveld-base" rows="5"></textarea>
   <button type="submit">Verzend</button>
 </form>
 ```
@@ -50,8 +49,7 @@ Overzicht van het element in mogelijke structuren om te testen.
 <form action="" method="post">
   <div>
     <label for="voorbeeld-tekstveld-div">Bericht</label>
-    <textarea id="voorbeeld-tekstveld-div" name="voorbeeld-tekstveld-div" rows="5"
-    ></textarea>
+    <textarea id="voorbeeld-tekstveld-div" name="voorbeeld-tekstveld-div" rows="5"></textarea>
   </div>
   <button type="submit">Verzend</button>
 </form>

@@ -29,7 +29,7 @@ voor een overzicht van de instelbare variabelen per component.
 
 ## 📚 Documentatie
 
-De documentatie is te vinden op https://minvws.github.io/nl-rdo-manon. Deze
+De documentatie is te vinden op <https://minvws.github.io/nl-rdo-manon>. Deze
 wordt gegenereerd op basis van de [docs](./docs) directory binnen deze repo.
 
 ## 🚀 Aan de slag
@@ -49,21 +49,17 @@ Om Manon in je project te gebruiken:
 2.  Installeer Manon en Manon Themes via npm:
 
     ```bash
-    npm install @minvws/manon
-    npm install @minvws/manon-themes
+    npm install @minvws/manon @minvws/manon-themes
     ```
 
 3.  Importeer in je project het Manon framework en een thema naar keuze.
 
     ```scss
-    // Importeer het Manon framework en zijn componenten
-    @use "@minvws/manon/application-base";
+    // Importeer het iCore Open thema
+    @use "@minvws/manon-themes/icore-open";
 
     // Je kunt hier ook specifieke componenten importeren indien nodig:
     // @use "@minvws/manon/p"
-
-    // Importeer het iCore Open thema
-    @use "@minvws/manon-themes/icore-open";
     ```
 
 Je bent nu klaar om de componenten in je HTML te gebruiken. Volg de instructies
@@ -72,7 +68,7 @@ over hoe je de componenten in je HTML kunt gebruiken. Elke component heeft zijn
 eigen pagina met voorbeelden en codefragmenten.
 
 Je kunt ook de
-[tutorial](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial)
+[tutorial](https://minvws.github.io/nl-rdo-manon/getting-started/tutorial)
 volgen om te leren hoe je de componenten op een meer gestructureerde manier kunt
 gebruiken.
 

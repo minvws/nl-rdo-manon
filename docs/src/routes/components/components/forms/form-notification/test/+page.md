@@ -40,9 +40,15 @@ Het basisvoorbeeld met een invoerveld en een verzendknop.
 <form action="" method="post">
   <label for="input-error">Input</label>
   <div>
-    <input id="input-error" class="error" value="Lorem ipsum" aria-describedby="input-error-message" aria-invalid="true">
+    <input
+      id="input-error"
+      class="error"
+      value="Lorem ipsum"
+      aria-describedby="input-error-message"
+      aria-invalid="true"
+    />
     <p class="error" id="input-error-message">
-        <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+      <span>Foutmelding:</span> Lorem ipsum dolor sit amet
     </p>
   </div>
   <button type="submit">Verzend</button>
@@ -77,7 +83,13 @@ Het basisvoorbeeld met een invoerveld en een verzendknop.
     <p class="explanation" id="input-explanation-message">
       <span>Toelichting:</span> Lorem ipsum dolor sit amet
     </p>
-    <input id="input-explanation" class="explanation" value="Lorem ipsum" aria-describedby="input-explanation-message" aria-invalid="true">
+    <input
+      id="input-explanation"
+      class="explanation"
+      value="Lorem ipsum"
+      aria-describedby="input-explanation-message"
+      aria-invalid="true"
+    />
   </div>
   <button type="submit">Verzend</button>
 </form>
@@ -111,7 +123,13 @@ Het basisvoorbeeld met een invoerveld en een verzendknop.
     <p class="warning" id="input-warning-message">
       <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
     </p>
-    <input id="input-warning" class="warning" value="Lorem ipsum" aria-describedby="input-warning-message" aria-invalid="true">
+    <input
+      id="input-warning"
+      class="warning"
+      value="Lorem ipsum"
+      aria-describedby="input-warning-message"
+      aria-invalid="true"
+    />
   </div>
   <button type="submit">Verzend</button>
 </form>
@@ -143,9 +161,15 @@ Het basisvoorbeeld met een invoerveld en een verzendknop.
   <label for="input-confirmation">Input</label>
   <div>
     <p class="confirmation" id="input-confirmation-message">
-        <span>Bevestiging:</span> Lorem ipsum dolor sit amet
+      <span>Bevestiging:</span> Lorem ipsum dolor sit amet
     </p>
-      <input id="input-confirmation" class="confirmation" value="Lorem ipsum" aria-describedby="input-confirmation-message" aria-invalid="true">
+    <input
+      id="input-confirmation"
+      class="confirmation"
+      value="Lorem ipsum"
+      aria-describedby="input-confirmation-message"
+      aria-invalid="true"
+    />
   </div>
   <button type="submit">Verzend</button>
 </form>
@@ -177,9 +201,15 @@ Het basisvoorbeeld met een invoerveld en een verzendknop.
   <label for="input-system">Input</label>
   <div>
     <p class="system" id="input-system-message">
-        <span>Systeembericht:</span> Lorem ipsum dolor sit amet
+      <span>Systeembericht:</span> Lorem ipsum dolor sit amet
     </p>
-    <input id="input-system" class="system" value="Lorem ipsum" aria-describedby="input-system-message" aria-invalid="true">
+    <input
+      id="input-system"
+      class="system"
+      value="Lorem ipsum"
+      aria-describedby="input-system-message"
+      aria-invalid="true"
+    />
   </div>
   <button type="submit">Verzend</button>
 </form>
@@ -210,14 +240,19 @@ Het basisvoorbeeld met een invoerveld en een verzendknop.
 
 ```html
 <form action="" method="post">
-    <label for="input-link-error">Input</label>
-    <div>
-        <input id="input-link-error" class="error" value="Lorem ipsum"
-            aria-describedby="input-link-error-message" aria-invalid="true">
-        <p class="error" id="input-link-error-message">
-            <span>Foutmelding:</span> Lorem <a href="ipsum dolor">ipsum dolor</a> set amet
-        </p>
-    </div>
-    <button type="submit">Verzend</button>
+  <label for="input-link-error">Input</label>
+  <div>
+    <input
+      id="input-link-error"
+      class="error"
+      value="Lorem ipsum"
+      aria-describedby="input-link-error-message"
+      aria-invalid="true"
+    />
+    <p class="error" id="input-link-error-message">
+      <span>Foutmelding:</span> Lorem <a href="ipsum dolor">ipsum dolor</a> set amet
+    </p>
+  </div>
+  <button type="submit">Verzend</button>
 </form>
 ```

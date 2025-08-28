@@ -22,7 +22,7 @@ SCSS importeren:
 JavaScript importeren:
 
 ```javascript
-import "@minvws/manon/form-help.js";
+import "@minvws/manon/js/form-help.js";
 ```
 
 ### Benodigde stappen
@@ -67,9 +67,7 @@ import "@minvws/manon/form-help.js";
 
 ```html
 <form action="" method="post" class="help">
-  <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
-    >Help op simpel formulierveld</label
-  >
+  <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Help op simpel formulierveld</label>
   <div>
     <input
       id="voorbeeld-text-input-met-hulptekst-simpel-1"

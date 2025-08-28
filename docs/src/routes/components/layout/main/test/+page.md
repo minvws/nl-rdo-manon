@@ -78,8 +78,10 @@ Voor visueel voorbeeld zie: [Content wrapper div](/components/layout/main/main-t
 
 ```html
 <main>
-  <div> <!-- This can be full width div, section or article -->
-    <div> <!-- While the content width can be limited -->
+  <div>
+    <!-- This can be full width div, section or article -->
+    <div>
+      <!-- While the content width can be limited -->
       <!-- content -->
     </div>
   </div>
