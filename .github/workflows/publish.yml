@@ -24,6 +24,9 @@ jobs:
           echo "RELEASE_VERSION=${RELEASE_VERSION}" >> $GITHUB_ENV
           echo "NPM_TAG=${NPM_TAG:-latest}" >> $GITHUB_ENV
 
+      - name: Copy README to manon package
+        run: cp README.md manon/
+
       - name: Publish
         # pnpm checks whether you are on the main branch when running publish,
         # but github will checkout the tag, so we need to disable the check
@@ -51,6 +54,9 @@ jobs:
           NPM_TAG=$(echo ${RELEASE_VERSION} | grep -oP '^v\d+\.\d+\.\d+-?\K(\w+)?')
           echo "RELEASE_VERSION=${RELEASE_VERSION}" >> $GITHUB_ENV
           echo "NPM_TAG=${NPM_TAG:-latest}" >> $GITHUB_ENV
+
+      - name: Copy README to manon package
+        run: cp README.md manon/
 
       - name: Publish
         # pnpm checks whether you are on the main branch when running publish,
