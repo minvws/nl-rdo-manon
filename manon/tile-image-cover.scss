@@ -20,6 +20,16 @@
 }
 
 .tile.image-cover {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    order: -1;
+    @extend %tile-image-cover;
+  }
+}
+
+.tile.image-cover {
   img {
     @extend %tile-image-cover;
   }
