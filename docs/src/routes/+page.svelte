@@ -15,9 +15,9 @@
 <DefaultHeader />
 
 <main id="main-content" tabindex="-1">
-  <section id="introduction">
-    <div>
-      <h1>Welkom bij Manon</h1>
+  <section id="introduction" class="hero">
+    <div class="content-wrapper">
+      <h1 class="heading-xxl">Welkom bij Manon</h1>
       <p>
         Manon is een variabel en instelbaar front-end framework. Het is Open Source en ontwikkeld
         door het Ministerie van Volksgezondheid, Welzijn en Sport.
@@ -26,33 +26,37 @@
   </section>
 
   <section>
-    <div>
-      <h2>Wat is Manon</h2>
-      <p>
-        Manon biedt een bibliotheek met componenten. Deze componenten bevatten voorbeeld-HTML en
-        worden geleverd met hun eigen CSS en JavaScript. Bekijk alle componenten in <a
-          href="{base}/components">de componentenbibliotheek</a
-        >. Installeer Manon voor je eigen project met behulp van
-        <a href="{base}/documentation">deze instructies.</a>
-      </p>
+    <h2>Over Manon</h2>
+    <div class="content-wrapper">
+      <div>
+        <h3>Wat is Manon</h3>
+        <p>
+          Manon biedt een bibliotheek met componenten. Deze componenten bevatten voorbeeld-HTML en
+          worden geleverd met hun eigen CSS en JavaScript. Bekijk alle componenten in <a
+            href="{base}/components">de componentenbibliotheek</a
+          >. Installeer Manon voor je eigen project met behulp van
+          <a href="{base}/documentation">deze instructies.</a>
+        </p>
+      </div>
+
+      <div>
+        <h3>Gedachte achter Manon</h3>
+        <p>
+          Een belangrijk uitgangspunt bij het bouwen van een website is de scheiding tussen content,
+          markup, beeld, CSS en eventueel JavaScript. Hoe strikter deze gescheiden zijn, hoe
+          eenvoudiger het is om een toegankelijke en goed te beheren website te bouwen. Het is niet
+          eenvoudig om een goed framework te vinden waarin dit consequent wordt toegepast. Hiervoor
+          is 'Manon' geschreven, dat een strikte scheiding hanteert tussen de content, markup en
+          styles.
+        </p>
+      </div>
     </div>
   </section>
 
   <section>
-    <div>
-      <h2>Gedachte achter Manon</h2>
-      <p>
-        Een belangrijk uitgangspunt bij het bouwen van een website is de scheiding tussen content,
-        markup, beeld, CSS en eventueel JavaScript. Hoe strikter deze gescheiden zijn, hoe
-        eenvoudiger het is om een toegankelijke en goed te beheren website te bouwen. Het is niet
-        eenvoudig om een goed framework te vinden waarin dit consequent wordt toegepast. Hiervoor is
-        'Manon' geschreven, dat een strikte scheiding hanteert tussen de content, markup en styles.
-      </p>
-    </div>
-  </section>
+    <h2>Manon gebruiken</h2>
 
-  <section>
-    <div>
+    <div class="content-wrapper">
       <h2>Manon gebruiken</h2>
       <div class="column-3">
         <div>

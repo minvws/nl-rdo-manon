@@ -1,3 +1,4 @@
+$article-background-color: null !default;
 $article-flex-direction: column !default;
 $article-justify-content: null !default;
 $article-align-items: null !default;
@@ -7,3 +8,17 @@ $article-padding-right: null !default;
 $article-padding-bottom: null !default;
 $article-padding-left: null !default;
 $article-max-width: null !default;
+$article-border-radius: null !default;
+
+// content wrapper
+$article-content-wrapper-background-color: null !default;
+$article-content-wrapper-flex-direction: column !default;
+$article-content-wrapper-justify-content: null !default;
+$article-content-wrapper-align-items: null !default;
+$article-content-wrapper-gap: null !default;
+$article-content-wrapper-padding-top: null !default;
+$article-content-wrapper-padding-right: null !default;
+$article-content-wrapper-padding-bottom: null !default;
+$article-content-wrapper-padding-left: null !default;
+$article-content-wrapper-max-width: null !default;
+$article-content-wrapper-border-radius: null !default;

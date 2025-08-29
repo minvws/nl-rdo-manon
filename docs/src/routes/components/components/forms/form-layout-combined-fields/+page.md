@@ -7,10 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Gecombineerde velden</h1>
-
-Gecombineerde velden zijn invoervelden die samen met een knop of icoon worden
-weergegeven.
+<p class="introduction">Gecombineerde velden zijn invoervelden die samen met een knop of icoon worden
+weergegeven.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

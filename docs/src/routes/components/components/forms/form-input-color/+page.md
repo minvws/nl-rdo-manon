@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Kleurselector</h1>
+<p class="introduction">Kleurselector</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
