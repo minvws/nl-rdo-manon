@@ -15,14 +15,6 @@
 <DefaultHeader />
 
 <main id="main-content" tabindex="-1">
-  <section class="warning">
-    <div>
-      <p>
-        <span>Let op:</span> Aan deze handleiding wordt nog gewerkt.
-      </p>
-    </div>
-  </section>
-
   <section id="introduction">
     <div>
       <h1>Welkom bij Manon</h1>

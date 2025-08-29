@@ -7,7 +7,8 @@
     "**/*.js",
     "**/*.license",
     "LICENSES",
-    "REUSE.toml"
+    "REUSE.toml",
+    "README.md"
   ],
   "scripts": {
     "format": "prettier --write .",
@@ -25,7 +26,7 @@
     "prettier": "^3.6.2",
     "sass": "^1.89.2",
     "sass-true": "^9.0.0",
-    "stylelint": "^16.22.0",
+    "stylelint": "^16.23.1",
     "stylelint-config-standard-scss": "^15.0.1"
   },
   "repository": {
