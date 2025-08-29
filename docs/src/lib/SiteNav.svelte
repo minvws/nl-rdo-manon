@@ -14,7 +14,7 @@
   class="collapsible"
 >
   <a href="{base}/components/components/logo" class="logo">
-    <img src="../img/cat-white.svg" alt="Placeholder logo" />Manon
+    <img src="../img/logo.svg" alt="Placeholder logo" />Manon
   </a>
   <div class="collapsing-element">
     <SiteNavLinks />

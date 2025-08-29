@@ -37,6 +37,9 @@ body > footer,
       padding-bottom: theme.$footer-padding-bottom,
       padding-left: theme.$footer-padding-left,
       max-width: theme.$footer-max-width,
+      border-width: theme.$footer-border-width,
+      border-style: theme.$footer-border-style,
+      border-color: theme.$footer-border-color,
     )
   );
 
