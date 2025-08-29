@@ -108,8 +108,8 @@ and spacing sets */
   // form combined field
   $form-combined-field-input-border-radius: #{border-radii.$border-radius-m} 0 0
     #{border-radii.$border-radius-m},
-  $form-combined-field-button-border-radius: 0 #{border-radii.$border-radius-m} #{border-radii.$border-radius-m}
-    0,
+  $form-combined-field-button-border-radius: 0 #{border-radii.$border-radius-m}
+    #{border-radii.$border-radius-m} 0,
 
   // footer
   $footer-background-color: color-scheme.$white,
