@@ -29,12 +29,6 @@
   }
 }
 
-.tile.image-cover {
-  img {
-    @extend %tile-image-cover;
-  }
-}
-
 .tiles.images-cover {
   > div,
   li {
