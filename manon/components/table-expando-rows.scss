@@ -25,6 +25,14 @@ table {
         padding: theme.$expando-rows-table-cell-after-breakpoint-padding;
       }
     }
+
+    @include theming.apply-from-theme(
+      (
+        border-width: theme.$expando-rows-border-width,
+        border-style: theme.$expando-rows-border-style,
+        border-color: theme.$expando-rows-border-color,
+      )
+    );
   }
 }
 

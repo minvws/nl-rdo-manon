@@ -25,6 +25,9 @@ body > footer,
       padding-bottom: theme.$footer-padding-bottom,
       padding-left: theme.$footer-padding-left,
       max-width: theme.$footer-max-width,
+      border-width: theme.$footer-border-width,
+      border-style: theme.$footer-border-style,
+      border-color: theme.$footer-border-color,
     )
   );
 
@@ -104,6 +107,18 @@ body > footer,
   }
 
   nav {
+    display: flex;
+
+    @include theming.apply-from-theme(
+      (
+        flex-direction: theme.$footer-navigation-flex-direction,
+        gap: theme.$footer-navigation-gap,
+        justify-content: theme.$footer-navigation-justify-content,
+        align-items: theme.$footer-navigation-align-items,
+        flex-wrap: theme.$footer-navigation-flex-wrap,
+      )
+    );
+
     ul,
     ol {
       background-color: transparent;

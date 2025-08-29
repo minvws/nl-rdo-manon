@@ -14,6 +14,9 @@ $footer-padding-bottom: null !default;
 $footer-padding-left: null !default;
 $footer-max-width: null !default;
 $footer-list-style: null !default;
+$footer-border-width: null !default;
+$footer-border-style: null !default;
+$footer-border-color: null !default;
 
 // link
 $footer-link-font-size: null !default;
@@ -39,3 +42,10 @@ $footer-list-item-align-items: null !default;
 $footer-list-item-text-color: null !default;
 $footer-list-item-background-color: null !default;
 $footer-list-flex-direction: null !default;
+
+// Nav
+$footer-navigation-flex-direction: null !default;
+$footer-navigation-gap: null !default;
+$footer-navigation-justify-content: null !default;
+$footer-navigation-align-items: null !default;
+$footer-navigation-flex-wrap: null !default;
