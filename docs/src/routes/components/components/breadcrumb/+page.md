@@ -25,15 +25,4 @@ SCSS importeren:
   <iframe src="/examples/breadcrumb-bar" title="Voorbeeld"></iframe>
 </div>
 
-```html
-<nav class="breadcrumb-bar">
-  <div>
-    <ul>
-      <li><a href="/components">Componenten</a></li>
-      <li>
-        <a href="/components/breadcrumb-bar" aria-current="page">Kruimelpad - breadcrumb-bar</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-```
+<Components.Code language="html" path="breadcrumb-bar/+page.svelte" />

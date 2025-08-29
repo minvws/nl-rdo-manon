@@ -1,3 +1,17 @@
+<!--
+  Code.svelte
+
+  A component to display syntax-highlighted code.
+
+  Props:
+    - language: "html" | "css" | "scss" | "javascript" | "shell" | "plaintext"
+        The language for syntax highlighting. Default is "plaintext".
+    - code: string
+        Static code content to display. Used if `path` is not provided.
+    - path: string
+        Relative path to an HTML example file (e.g., "accordion/ul.html").
+        If provided, the file is loaded asynchronously and overrides `code`.
+-->
 <script module lang="ts">
   import hljs from "highlight.js/lib/core";
   import xml from "highlight.js/lib/languages/xml";
@@ -16,16 +30,34 @@
 </script>
 
 <script lang="ts">
+  import { onMount } from "svelte";
   import "highlight.js/styles/github.css";
 
-  interface Props {
-    language?: "html" | "css" | "scss" | "javascript" | "shell" | "plaintext";
-    code?: string;
-  }
+  export let language: "html" | "css" | "scss" | "javascript" | "shell" | "plaintext" = "plaintext";
+  export let code: string = "";
+  export let path: string = "";
 
-  let { language = "plaintext", code = "" }: Props = $props();
-  let trimmed = $derived(code.replace(/^(\s*\n)+/, "").replace(/\n\s*$/, ""));
-  let highlighted = $derived(hljs.highlight(trimmed, { language }).value);
+  let htmlCode: string = code;
+
+  const modules = import.meta.glob("/src/routes/examples/**/*.{html,svelte}", { as: "raw" });
+
+  onMount(async () => {
+    if (path && modules[`/src/routes/examples/${path}`]) {
+      let content = await modules[`/src/routes/examples/${path}`]();
+
+      // Strip script blocks for Svelte pages
+      htmlCode = content.replace(/<script[\s\S]*?<\/script>/g, "").trim();
+    }
+  });
+
+  function highlight(code: string) {
+    const trimmed = code.replace(/^(\s*\n)+/, "").replace(/\n\s*$/, "");
+    try {
+      return hljs.highlight(trimmed, { language }).value;
+    } catch {
+      return trimmed; // fallback: plain text if language not registered
+    }
+  }
 </script>
 
-<pre><code>{@html highlighted}</code></pre>
+<pre><code>{@html highlight(htmlCode)}</code></pre>
