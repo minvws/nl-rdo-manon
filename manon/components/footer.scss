@@ -15,7 +15,7 @@ body > footer,
     width: 100%;
   }
 
-  @if (theme.$footer-max-width) {
+  @if theme.$footer-max-width {
     margin: 0 auto;
   }
 

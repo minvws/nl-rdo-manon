@@ -7,6 +7,7 @@ nav:
   - Voorbeelden: "#examples"
   - Bijbehorende bestanden: "#requirements"
 ---
+
 <p class="introduction">Voor het plaatsen van een zijmenu naast de pagina.</p>
 
 Gebruik deze weergave als de inhoud van het zijmenu niet over de content van de
@@ -21,8 +22,6 @@ de content. Gebruik dan:
 ```scss
 @use "@minvws/manon/sidemenu";
 ```
-
-
 
 ## Aandachtspunten
 

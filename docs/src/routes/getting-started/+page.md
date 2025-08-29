@@ -3,9 +3,9 @@ title: Aan de slag
 breadcrumb: Aan de slag
 ---
 
-  Deze pagina biedt een overzicht van de belangrijkste stappen om te beginnen met
-  het gebruik van Manon. Het is bedoeld voor ontwikkelaars die Manon willen
-  integreren in hun projecten.
+Deze pagina biedt een overzicht van de belangrijkste stappen om te beginnen met
+het gebruik van Manon. Het is bedoeld voor ontwikkelaars die Manon willen
+integreren in hun projecten.
 
   <section id="quickstart">
     <h2>Snelle start</h2>

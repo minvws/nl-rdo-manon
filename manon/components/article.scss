@@ -6,7 +6,7 @@ article {
   width: 100%;
   flex-direction: theme.$article-flex-direction;
 
-  @if (theme.$article-max-width) {
+  @if theme.$article-max-width {
     margin: 0 auto;
   }
 
@@ -46,7 +46,7 @@ article {
       width: 100%;
     }
 
-    @if (theme.$article-content-wrapper-max-width) {
+    @if theme.$article-content-wrapper-max-width {
       margin: 0 auto;
     }
 

@@ -6,6 +6,7 @@ nav:
   - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
 ---
+
 <p class="introduction">Voor het weergeven van notificatie op paragrafen</p>
 
 <h2 id="quick-start">Snelstart</h2>

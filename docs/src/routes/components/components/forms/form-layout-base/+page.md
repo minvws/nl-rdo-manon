@@ -6,6 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
+
 <p class="introduction">Opzet voor een basis formulier.</p>
 <h2 id="quickstart">Snelstart</h2>
 

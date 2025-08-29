@@ -6,7 +6,7 @@ section {
   width: 100%;
   flex-direction: theme.$section-flex-direction;
 
-  @if (theme.$section-max-width) {
+  @if theme.$section-max-width {
     margin: 0 auto;
   }
 
@@ -39,14 +39,14 @@ section {
 
     @if (
       theme.$section-content-wrapper-gap or
-        $section-content-wrapper-align-items or
-        $section-content-wrapper-justify-content
+        theme.$section-content-wrapper-align-items or
+        theme.$section-content-wrapper-justify-content
     ) {
       display: flex;
       width: 100%;
     }
 
-    @if (theme.$section-content-wrapper-max-width) {
+    @if theme.$section-content-wrapper-max-width {
       margin: 0 auto;
     }
 

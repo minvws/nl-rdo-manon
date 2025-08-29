@@ -6,6 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
+
 <p class="introduction">Voor het weergeven van content binnen een div direct binnen de main</p>
 <h2 id="quickstart">Snelstart</h2>
 

@@ -10,7 +10,7 @@
     display: flex;
   }
 
-  @if (theme.$hero-background-image) {
+  @if theme.$hero-background-image {
     position: relative;
   }
 

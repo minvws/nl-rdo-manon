@@ -6,6 +6,7 @@ nav:
   - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
 ---
+
 <p class="introduction">
 Voor lange tabellen kan het gewenst zijn om de tabel-header in het zicht te
 houden zodat de gebruiker de titels kan zien.</p>

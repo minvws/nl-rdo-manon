@@ -6,6 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
+
 <p class="introduction">Voor een subtielere weergave van bepaalde teksten.
 kan de class `de-emphasized` worden gebruikt. Deze class zorgt voor een subtielere weergaven van de tekst, 
 waardoor deze minder opvalt binnen de context van de pagina.</p>

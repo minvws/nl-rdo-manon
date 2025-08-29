@@ -6,6 +6,7 @@ nav:
   - Type buttons met situatieschetsen: "#button-situations"
   - Soorten knoppen: "#button-types"
 ---
+
 <p id="introduction">Knoppen</p>
 <h2 id="quickstart">Snelstart</h2>
 

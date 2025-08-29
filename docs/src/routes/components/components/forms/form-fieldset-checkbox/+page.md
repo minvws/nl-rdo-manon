@@ -6,6 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
+
 <p class="introduction">Fieldset Selectievak - checkbox</p>
 <h2 id="quickstart">Snelstart</h2>
 
