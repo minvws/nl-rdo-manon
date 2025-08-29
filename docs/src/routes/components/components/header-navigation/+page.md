@@ -158,7 +158,7 @@ SCSS importeren:
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-      <a href="/" class="logo"> <img src="/img/logo-white.svg" alt="Placeholder logo" />Manon </a>
+      <a href="/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
 
       <div class="collapsing-element">
         <ul>
