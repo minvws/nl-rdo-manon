@@ -36,7 +36,10 @@
   {#if parsedNav}
     <SideMenu>{@render navlist(parsedNav)}</SideMenu>
   {/if}
-  <section class="visually-grouped">
-    {@render children?.()}
+  <section>
+    <h1>{title}</h1>
+    <div class="content-wrapper">
+      {@render children?.()}
+    </div>
   </section>
 </main>

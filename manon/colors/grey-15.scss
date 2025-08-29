@@ -1,0 +1,18 @@
+:root {
+  /* #fff to #000 in 15 steps */
+  --grey-1: #f9f9f9;
+  --grey-2: #dbdbdb;
+  --grey-3: #cacaca;
+  --grey-4: #b9b9b9;
+  --grey-5: #a8a8a8;
+  --grey-6: #979797;
+  --grey-7: #878787;
+  --grey-8: #777777;
+  --grey-9: #676767; /* White text on this grey has enough contast to be compliant with wcag AA contrast requirements */
+  --grey-10: #585858; /* White text on this grey has enough contast to be compliant with wcag AAA contrast requirements */
+  --grey-11: #4a4a4a;
+  --grey-12: #3b3b3b;
+  --grey-13: #2e2e2e;
+  --grey-14: #212121;
+  --grey-15: #141414;
+}

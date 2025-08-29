@@ -1,0 +1,157 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+body > footer,
+.page-footer,
+%footer-style {
+  @if (
+    theme.$footer-flex-direction or
+      theme.$footer-gap or
+      theme.$footer-justify-content or
+      theme.$footer-align-items or
+      theme.$footer-flex-wrap
+  ) {
+    display: flex;
+    width: 100%;
+  }
+
+  @if theme.$footer-max-width {
+    margin: 0 auto;
+  }
+
+  box-sizing: border-box;
+
+  @include theming.apply-from-theme(
+    (
+      flex-direction: theme.$footer-flex-direction,
+      gap: theme.$footer-gap,
+      justify-content: theme.$footer-justify-content,
+      align-items: theme.$footer-align-items,
+      flex-wrap: theme.$footer-flex-wrap,
+      min-height: theme.$footer-min-height,
+      background-color: theme.$footer-background-color,
+      color: theme.$footer-text-color,
+      text-align: theme.$footer-text-align,
+      padding-top: theme.$footer-padding-top,
+      padding-right: theme.$footer-padding-right,
+      padding-bottom: theme.$footer-padding-bottom,
+      padding-left: theme.$footer-padding-left,
+      max-width: theme.$footer-max-width,
+      border-width: theme.$footer-border-width,
+      border-style: theme.$footer-border-style,
+      border-color: theme.$footer-border-color,
+    )
+  );
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    @include theming.apply-from-theme(
+      (
+        font-size: theme.$footer-link-font-size,
+        font-weight: theme.$footer-link-font-weight,
+        line-height: theme.$footer-link-line-height,
+        background-color: theme.$footer-link-background-color,
+        color: theme.$footer-link-text-color,
+        text-decoration: theme.$footer-link-text-decoration,
+        border-width: theme.$footer-link-border-width,
+        border-style: theme.$footer-link-border-style,
+        border-color: theme.$footer-link-border-color,
+        border-radius: theme.$footer-link-border-radius,
+      )
+    );
+  }
+
+  ul,
+  ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
+    @include theming.apply-from-theme(
+      (
+        gap: theme.$footer-list-gap,
+        justify-content: theme.$footer-list-justify-content,
+        align-items: theme.$footer-list-align-items,
+        color: theme.$footer-list-text-color,
+        font-weight: theme.$footer-list-font-weight,
+        width: theme.$footer-list-width,
+        flex-direction: theme.$footer-list-flex-direction,
+      )
+    );
+
+    li {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      box-sizing: border-box;
+
+      @include theming.apply-from-theme(
+        (
+          justify-content: theme.$footer-list-item-justify-content,
+          align-items: theme.$footer-list-item-align-items,
+          color: theme.$footer-list-item-text-color,
+          background-color: theme.$footer-list-item-background-color,
+        )
+      );
+
+      &::before {
+        /* Preventing default nav before to show up */
+        display: none;
+      }
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  li {
+    color: inherit;
+    text-align: inherit;
+  }
+
+  nav {
+    @if (
+      theme.$footer-nav-gap or
+        theme.$footer-nav-justify-content or
+        theme.$footer-nav-align-items or
+        theme.$footer-nav-flex-wrap
+    ) {
+      display: flex;
+      width: 100%;
+    }
+
+    flex-direction: theme.$footer-nav-flex-direction;
+
+    @include theming.apply-from-theme(
+      (
+        gap: theme.$footer-nav-gap,
+        justify-content: theme.$footer-nav-justify-content,
+        align-items: theme.$footer-nav-align-items,
+        flex-wrap: theme.$footer-nav-flex-wrap,
+      )
+    );
+
+    ul,
+    ol {
+      background-color: transparent;
+
+      li {
+        list-style: theme.$footer-list-style;
+
+        &::before {
+          /* Preventing default nav before to show up */
+          display: none;
+        }
+      }
+    }
+  }
+}

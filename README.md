@@ -1,14 +1,31 @@
-# Manon
+<h1 align="center">Manon</h1>
 
-> [!NOTE]
->
+<p align="center">
+  Een flexibel en toegankelijk design framework voor semantische HTML.
+</p>
+
+<p align="center">
+  <a href="https://github.com/minvws/nl-rdo-manon/releases/latest"><img alt="github release" src="https://img.shields.io/github/v/release/minvws/nl-rdo-manon?style=for-the-badge&color=fa32c8&logo=github"></a>
+  <a href="https://www.npmjs.com/package/@minvws/manon" ><img alt="npm package" src="https://img.shields.io/npm/v/@minvws/manon?style=for-the-badge&color=fa32c8&logo=npm"></a>
+  <a href="https://github.com/minvws/nl-rdo-manon/actions/workflows/ci.yml?query=branch%3Amain" ><img alt="build status" src="https://img.shields.io/github/actions/workflow/status/minvws/nl-rdo-manon/ci.yml?branch=main&style=for-the-badge&logo=github"></a>
+  <a href="https://github.com/minvws/rdo-icore-coordination/" ><img alt="part of icore" src="https://img.shields.io/badge/Part_of-iCore-ed7b3e?style=for-the-badge"></a>
+</p>
+
+---
+
+## 📚 Documentatie
+
+De volledige documentatie is te vinden op
+<https://minvws.github.io/nl-rdo-manon>. Deze wordt gegenereerd op basis van de
+[docs](./docs) directory binnen deze repo.
+
 > For English, see [English](README.en.md).
 
-## 🙋 Over Manon
+## 🙋 Wat is Manon?
 
 Manon is een design framework dat de volgende principes hanteert:
 
-### ✨ "Classless" waar mogelijk.
+### ✨ "Classless" waar mogelijk
 
 Manon geeft de voorkeur aan styling op basis van de HTML-structuur, wat zorgt
 voor overzichtelijke en goed onderhoudbare code. Dit maakt efficiënte visuele
@@ -27,11 +44,6 @@ Componenten zijn instelbaar via variabelen. De modulaire opzet voorkomt onnodige
 overschrijvingen van CSS. Raadpleeg de documentatie of de variabelen-bestanden
 voor een overzicht van de instelbare variabelen per component.
 
-## 📚 Documentatie
-
-De documentatie is te vinden op https://minvws.github.io/nl-rdo-manon. Deze
-wordt gegenereerd op basis van de [docs](./docs) directory binnen deze repo.
-
 ## 🚀 Aan de slag
 
 Om Manon in je project te gebruiken:
@@ -49,21 +61,17 @@ Om Manon in je project te gebruiken:
 2.  Installeer Manon en Manon Themes via npm:
 
     ```bash
-    npm install @minvws/manon
-    npm install @minvws/manon-themes
+    npm install @minvws/manon @minvws/manon-themes
     ```
 
-3.  Importeer in je project het Manon framework en een thema naar keuze.
+3.  Importeer in je project het Manon framework met een thema naar keuze.
 
     ```scss
-    // Importeer het Manon framework en zijn componenten
-    @use "@minvws/manon/application-base";
+    // Importeer het iCore Open thema
+    @use "@minvws/manon-themes/icore-open";
 
     // Je kunt hier ook specifieke componenten importeren indien nodig:
     // @use "@minvws/manon/p"
-
-    // Importeer het iCore Open thema
-    @use "@minvws/manon-themes/icore-open";
     ```
 
 Je bent nu klaar om de componenten in je HTML te gebruiken. Volg de instructies
@@ -72,7 +80,7 @@ over hoe je de componenten in je HTML kunt gebruiken. Elke component heeft zijn
 eigen pagina met voorbeelden en codefragmenten.
 
 Je kunt ook de
-[tutorial](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial)
+[tutorial](https://minvws.github.io/nl-rdo-manon/getting-started/tutorial)
 volgen om te leren hoe je de componenten op een meer gestructureerde manier kunt
 gebruiken.
 

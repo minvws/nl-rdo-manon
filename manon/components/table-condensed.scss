@@ -1,0 +1,65 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+table {
+  &.condensed {
+    @include theming.apply-from-theme(
+      (
+        font-size: theme.$table-condensed-font-size,
+        line-height: theme.$table-condensed-line-height,
+      )
+    );
+
+    thead {
+      th {
+        @include theming.apply-from-theme(
+          (
+            padding: theme.$table-condensed-head-cell-padding,
+            font-weight: theme.$table-condensed-head-cell-font-weight,
+            font-size: theme.$table-condensed-head-cell-font-size,
+          )
+        );
+      }
+    }
+
+    td {
+      @include theming.apply-from-theme(
+        (
+          padding: theme.$table-condensed-cell-padding,
+          font-weight: theme.$table-condensed-cell-head-cell-font-weight,
+          font-size: theme.$table-condensed-cell-head-cell-font-size,
+        )
+      );
+    }
+
+    tfoot {
+      @include theming.apply-from-theme(
+        (
+          padding: theme.$table-condensed-foot-padding,
+          font-size: theme.$table-condensed-foot-font-size,
+          font-weight: theme.$table-condensed-foot-font-weight,
+        )
+      );
+
+      th {
+        @include theming.apply-from-theme(
+          (
+            padding: theme.$table-condensed-foot-header-padding,
+            font-size: theme.$table-condensed-foot-header-font-size,
+            font-weight: theme.$table-condensed-foot-header-font-weight,
+          )
+        );
+      }
+
+      td {
+        @include theming.apply-from-theme(
+          (
+            padding: theme.$table-condensed-foot-cell-padding,
+            font-size: theme.$table-condensed-foot-cell-font-size,
+            font-weight: theme.$table-condensed-foot-cell-font-weight,
+          )
+        );
+      }
+    }
+  }
+}
