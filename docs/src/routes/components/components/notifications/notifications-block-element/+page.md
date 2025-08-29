@@ -7,9 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Blok-element</h1>
-
-Voor het weergeven van grotere notificaties.
+<p class="introduction">Voor het weergeven van grotere notificaties.</p>
 
 <h2 id="quick-start">Snelstart</h2>
 

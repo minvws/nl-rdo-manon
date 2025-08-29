@@ -7,10 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Waarschuwing</h1>
-
-Gebruik om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het
-incorrect invoeren van data of een systeemfout.
+<p class="introduction">Gebruik om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het
+incorrect invoeren van data of een systeemfout.</p>
 
 <h2 id="quick-start">Snelstart</h2>
 

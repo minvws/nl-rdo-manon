@@ -7,10 +7,8 @@ nav:
   - Bijbehorende bestanden: "#requirements"
 ---
 
-<h1 id="introduction">Zijmenu binnen de pagina</h1>
-
-Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het
-navigeren voor de gebruiker toegankelijk en overzichtelijk te houden.
+<p class="introduction">Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het
+navigeren voor de gebruiker toegankelijk en overzichtelijk te houden.</p>
 
 In dit voorbeeld staat het zijmenu binnen de pagina bij de content. Gebruik deze
 weergave alleen als de inhoud van het zijmenu specifiek over de content gaat.

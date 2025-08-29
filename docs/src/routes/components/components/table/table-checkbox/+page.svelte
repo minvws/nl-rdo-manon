@@ -29,9 +29,9 @@
     </ul>
   </SideMenu>
   <article>
-    <div>
+    <h1 id="introduction">Tabelrij met checkbox</h1>
+    <div class="content-wrapper">
       <section>
-        <h1 id="introduction">Tabelrij met checkbox</h1>
         <p>Voor het selecteren van rijen van een tabel.</p>
 
         <h2 id="quick-start">Snelstart:</h2>

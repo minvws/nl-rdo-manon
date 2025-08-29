@@ -12,9 +12,10 @@
 
 <main class="sidemenu" id="main-content" tabindex="-1">
   <article>
-    <div>
+    <h1>Tabel</h1>
+    <div class="content-wrapper">
       <section id="introduction">
-        <h1>Tabel</h1>
+        <p>Tabel</p>
       </section>
 
       <section id="available-types">

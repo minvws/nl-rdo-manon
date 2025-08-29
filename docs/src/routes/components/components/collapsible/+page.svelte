@@ -25,10 +25,9 @@
   </SideMenu>
 
   <article>
-    <div>
-      <section id="introduction">
-        <h1>Inklapbaar component</h1>
-      </section>
+    <h1>Inklapbaar component</h1>
+    <div class="content-wrapper">
+      <section id="introduction">Inklapbaar component.</section>
 
       <section id="quick-start">
         <h2>Snelstart</h2>

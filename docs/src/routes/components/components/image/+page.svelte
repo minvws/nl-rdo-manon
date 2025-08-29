@@ -12,9 +12,9 @@
 
 <main class="sidemenu" id="main-content" tabindex="-1">
   <article>
-    <div>
+    <h1>Image</h1>
+    <div class="content-wrapper">
       <section id="introduction">
-        <h1>Image</h1>
         <p>
           De <code>image</code> component wordt gebruikt om afbeeldingen weer te geven. Het is een eenvoudige
           manier om afbeeldingen toe te voegen aan je webpagina's.

@@ -1,9 +1,7 @@
 ---
-title: Manon Tutorial
+title: Tutorial
 breadcrumb: Tutorial
 ---
-
-# Tutorial
 
 ## Introduction
 

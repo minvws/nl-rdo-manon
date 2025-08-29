@@ -22,9 +22,10 @@
   </SideMenu>
 
   <article>
-    <div>
+    <h1>Logo</h1>
+    <div class="content-wrapper">
       <section id="introduction">
-        <h1>Logo</h1>
+        <p>Logo component</p>
       </section>
 
       <section id="examples">

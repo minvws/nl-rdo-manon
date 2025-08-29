@@ -9,6 +9,7 @@ main.sidemenu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 0;
 
   @include theming.apply-from-theme(
     (
@@ -33,7 +34,11 @@ main.sidemenu {
     @media (width >= $sidemenu-breakpoint) {
       @include theming.apply-from-theme(
         (
-          max-width: theme.$sidemenu-max-width,
+          max-width: theme.$sidemenu-page-max-width,
+          padding-top: theme.$sidemenu-page-padding-top,
+          padding-right: theme.$sidemenu-page-padding-right,
+          padding-bottom: theme.$sidemenu-page-padding-bottom,
+          padding-left: theme.$sidemenu-page-padding-left,
         )
       );
     }

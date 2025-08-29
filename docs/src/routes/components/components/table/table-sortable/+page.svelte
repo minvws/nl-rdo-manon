@@ -61,9 +61,9 @@
     </ul>
   </SideMenu>
   <article>
-    <div>
+    <h1>Sorteerbare tabel</h1>
+    <div class="content-wrapper">
       <section id="introduction">
-        <h1>Sorteerbare tabel</h1>
         <p>
           Om inzicht te krijgen in de data kan het behulpzaam zijn om de gebruiker de data te laten
           sorteren.

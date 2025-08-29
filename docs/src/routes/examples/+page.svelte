@@ -11,13 +11,16 @@
 </svelte:head>
 
 <main id="main-content" tabindex="-1">
-  <section id="introduction">
+  <section>
     <h1>Voorbeelden</h1>
-    <p>
-      Deze pagina bevat voorbeelden van verschillende componenten en elementen die beschikbaar zijn
-      in de documentatie.
-    </p>
-  </section>
+
+    <div class="content-wrapper">
+      <section id="introduction">
+        <p>
+          Deze pagina bevat voorbeelden van verschillende componenten en elementen die beschikbaar zijn
+          in de documentatie.
+        </p>
+      </section>
 
   <section id="example-pages">
     <h2>Voorbeeldpagina's</h2>

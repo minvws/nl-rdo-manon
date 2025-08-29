@@ -13,9 +13,9 @@
 
 <main id="main-content" tabindex="-1">
   <article>
-    <div>
+    <h1>Icoon-set toevoegen</h1>
+    <div class="content-wrapper">
       <section id="introduction">
-        <h1>Icoon-set toevoegen</h1>
         <p>Er zijn twee situaties waarin het nodig kan zijn om een icoon-set toe te voegen:</p>
         <ul>
           <li>

@@ -3,11 +3,9 @@ title: Notificaties
 breadcrumb: Notificaties
 ---
 
-<h1 id="introduction">Notificaties</h1>
-
-Notificaties zijn korte berichten die gebruikers informeren over belangrijke
+<p class="introduction">Notificaties zijn korte berichten die gebruikers informeren over belangrijke
 gebeurtenissen of acties binnen een applicatie. Ze kunnen worden gebruikt om
-feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.
+feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.</p>
 
 <p class="explanation">
   <span>Tip:</span> Notificaties kunnen verborgen worden door de class <code>hidden</code> toe te voegen aan de notification.

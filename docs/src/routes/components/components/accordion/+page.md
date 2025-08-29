@@ -7,10 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Accordeon</h1>
-
-Een accordeon biedt een verticale keuzelijst die je per onderdeel kunt
-openklappen om meer informatie te tonen.
+<p id="introduction">Een accordeon biedt een verticale keuzelijst die je per onderdeel kunt
+openklappen om meer informatie te tonen.</p>
 
 <h2 id="quick-start">Snelstart</h2>
 

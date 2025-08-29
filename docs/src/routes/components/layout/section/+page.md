@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Sectie <code>section</code></h1>
+<p class="introduction">Voor het weergeven van content binnen een section</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

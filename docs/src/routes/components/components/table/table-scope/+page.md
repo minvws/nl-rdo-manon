@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Tabel</h1>
+<p class="introduction">Voor het weergeven van de tabelrichting</p>
 
 <h2 id="quick-start">Snelstart</h2>
 

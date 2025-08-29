@@ -17,7 +17,7 @@
       class="collapsible"
     >
       <a href={page.url.pathname} class="logo">
-        <img src="$img/logo-white.svg" alt="Placeholder logo" />Manon
+        <img src="$img/logo.svg" alt="Placeholder logo" />Manon
       </a>
 
       <div class="collapsing-element">

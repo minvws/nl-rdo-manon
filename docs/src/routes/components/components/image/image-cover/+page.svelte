@@ -22,9 +22,9 @@
     </ul>
   </SideMenu>
   <article>
-    <div>
+    <h1>Cover-afbeelding</h1>
+    <div class="content-wrapper">
       <section id="introduction">
-        <h1>Cover-afbeelding</h1>
         <p>
           Afbeelding die de volledige breedte en hoogte van het uitgekozen object vult met de
           gekozen afbeelding.

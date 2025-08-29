@@ -22,10 +22,9 @@
     </ul>
   </SideMenu>
   <article>
-    <div>
+    <h1>Vierkante afbeelding</h1>
+    <div class="content-wrapper">
       <section id="introduction">
-        <h1>Vierkante afbeelding</h1>
-
         <h2>Benodigde stappen</h2>
         <ol>
           <li>

@@ -7,8 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Accentkleur op formulierelementen</h1>
-
+<p class="introduction">Voor het toeveogen van een accentknop op formulierelementen zoals checkboxes, radio buttons, ranges etc.</p>
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss

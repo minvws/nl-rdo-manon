@@ -7,10 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Tag</h1>
-
-Visuele labels om bijvoorbeeld groeperingen aan te brengen binnen content en
-data-sets.
+<p class="introduction">Visuele labels om bijvoorbeeld groeperingen aan te brengen binnen content en
+data-sets.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

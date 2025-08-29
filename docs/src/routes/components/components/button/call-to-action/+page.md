@@ -6,7 +6,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Call to action button</h1>
+<p id="introduction">Call to action button</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

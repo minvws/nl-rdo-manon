@@ -8,7 +8,7 @@ form {
   progress {
     @include theming.apply-from-theme(
       (
-        accent-color: theme.$form-accent-color-color,
+        accent-color: theme.$form-accent-color,
       )
     );
   }

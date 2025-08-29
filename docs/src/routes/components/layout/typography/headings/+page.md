@@ -7,9 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Titels</h1>
-
-Gebruik titels om structuur binnen de pagina aan te geven.
+<p class="introduction">Gebruik titels om structuur binnen de pagina aan te geven.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

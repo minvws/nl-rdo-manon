@@ -9,9 +9,7 @@ nav:
   - Gerelateerde pagina's: "#related"
 ---
 
-<h1 id="introduction">Taalselectie</h1>
-
-Een taalselectie element biedt een verticale keuzelijst die openklapt.
+<p class="introduction">Een taalselectie element biedt een verticale keuzelijst die openklapt.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

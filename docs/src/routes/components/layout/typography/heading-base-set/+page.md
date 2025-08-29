@@ -7,9 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Titel basisset</h1>
-
-Basisset voor het stylen van titels.
+<p class="introduction">Basisset voor het stylen van titels.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
