@@ -37,7 +37,7 @@ header en footer.</p>
 4.  Voeg de referentie naar het Javascript bestand, `sidemenu.js`, toe aan de
     HTML-pagina's die gebruik dienen te maken van het inklapbare zijmenu. Voor
     meer informatie zie:
-    [JavaScript referentie toevoegen](/documentation/add-js).
+    [JavaScript referentie toevoegen](/getting-started/installation).
 
 ### Sluit- en open-knop als icoonknop instellen zonder tekst.
 
@@ -125,4 +125,4 @@ Het menu is standaard ingeklapt en kan door de gebruiker uitgeklapt worden.
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+[Componenten gebruiken en styling toevoegen](/getting-started/installation)

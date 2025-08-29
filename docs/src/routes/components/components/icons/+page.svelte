@@ -376,10 +376,14 @@
           van het thema:
         </p>
         <ul>
-          <li>Gebruik een losse <a href="{base}/components/image-icon">icoon-afbeelding</a>.</li>
+          <li>
+            Gebruik een losse <a href="{base}/components/components/image/image-icon"
+              >icoon-afbeelding</a
+            >.
+          </li>
           <li>
             Voeg een applicatie-specifieke icoon-set toe. Zie <a
-              href="{base}/components/icons/add-set">icoon-set toevoegen</a
+              href="{base}/components/components/icons/add-set">icoon-set toevoegen</a
             > voor instructies.
           </li>
         </ul>

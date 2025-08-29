@@ -33,7 +33,7 @@
         <h3>Visuele voorbeeld:</h3>
 
         <a
-          href="{base}/components/logo"
+          href="{base}/components/components/logo"
           class="logo"
           aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam"
         >
@@ -45,7 +45,7 @@
         <Code
           language="html"
           code={`
-<a href="{base}/components/logo" class="logo" aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam">
+<a href="{base}/components/components/logo" class="logo" aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam">
   <img src="/logo.svg" alt="Logo bedrijfs- of product-naam" />
   Bedrijfs- of product-naam
 </a>
@@ -57,7 +57,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling"
+          <a href="{base}/getting-started/installation"
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>

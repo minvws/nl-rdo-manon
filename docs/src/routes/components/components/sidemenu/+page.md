@@ -40,7 +40,7 @@ In dit voorbeeld staat het zijmenu binnen de pagina bij de content. Gebruik deze
 weergave alleen als de inhoud van het zijmenu specifiek over de content gaat.
 Bijvoorbeeld een inhoudsopgave. Hoort het zijmenu niet bij de inhoud van de
 pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
-[Zijmenu naast de pagina](/components/sidemenu/next-to-page).
+[Zijmenu naast de pagina](/components/components/sidemenu/next-to-page).
 
 <div class="resize">
   <iframe src="/examples/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>

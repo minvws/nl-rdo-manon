@@ -15,7 +15,7 @@ pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 
 Gaat de inhoud van het zijmenu over de inhoud van de content. En hoort het bij
 de content. Gebruik dan:
-[Zijmenu binnen de pagina](/components/sidemenu/in-page)
+[Zijmenu binnen de pagina](/components/components/sidemenu/in-page)
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -94,4 +94,4 @@ Zie het zijmenu van deze pagina.
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+[Componenten gebruiken en styling toevoegen](/getting-started/installation)

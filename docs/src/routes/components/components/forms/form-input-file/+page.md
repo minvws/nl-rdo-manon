@@ -18,7 +18,7 @@ nav:
 <p class="explanation">
   <strong>Tip:</strong> Om bereik-invoervelden een eigen gekozen kleur mee te geven kan
   gebruik gemaakt worden van
-  <a href="/components/form-accent-color">accentkleur op formulierelementen</a>.
+  <a href="/components/components/forms/form-layout-accent-color">accentkleur op formulierelementen</a>.
 </p>
 
 <h2 id="examples">Voorbeelden</h2>

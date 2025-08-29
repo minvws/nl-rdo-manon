@@ -10,7 +10,7 @@ nav:
 <p class="introduction">Weergave opties voor pagina's met als formulieren als hoofdfunctie.</p>
 
 Het is ook mogelijk om de weergave van alle formulieren aan te passen. Gebruik
-daarvoor: [Basis formulieren](/components/components/form).
+daarvoor: [Basis formulieren](/components/components/forms).
 
 <h2 id="quickstart">Snelstart</h2>
 

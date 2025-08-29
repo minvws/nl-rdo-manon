@@ -12,9 +12,17 @@ voor een tabel met uitklapbare tabelrijen.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
+SCSS importeren:
+
 ```scss
 @use "@minvws/manon/table";
 @use "@minvws/manon/table-expando-rows";
+```
+
+JavaScript importeren:
+
+```javascript
+import "@minvws/manon/js/expando-rows.js";
 ```
 
 <p class="warning">
@@ -49,10 +57,7 @@ voor een tabel met uitklapbare tabelrijen.</p>
       voor het dichtklappen van de rij. Bijvoorbeeld: "Sluit details".
     - **HTML-voorbeeld:**
       `  <button class="expando-button" data-close-label="Sluit details"   data-icon-open-class="icon icon-descending" data-icon-close-class="icon   icon-ascending" type="button"> Open details </button>`
-7.  Plaats `script defer src="pad/naar/expando-rows.min.js"></script>` in de
-    `head` van het document. Voor meer informatie zie:
-    [JavaScript toevoegen](/documentation/add-js)
-8.  Open/sluit-icoon toevoegen:
+7.  Open/sluit-icoon toevoegen:
     - Voeg de gewenste icoon-classes toe via het HTML-attribuut
       `data-icon-open-class=""` voor het open-icoon en
       `data-icon-close-class=""` voor het sluit-icoon. Vul tussen de "" de

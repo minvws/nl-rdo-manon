@@ -14,7 +14,7 @@ In dit voorbeeld staat het zijmenu binnen de pagina bij de content. Gebruik deze
 weergave alleen als de inhoud van het zijmenu specifiek over de content gaat.
 Bijvoorbeeld een inhoudsopgave. Hoort het zijmenu niet bij de inhoud van de
 pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
-[Zijmenu naast de pagina](/components/sidemenu/next-to-page).
+[Zijmenu naast de pagina](/components/components/sidemenu/next-to-page).
 
 ## Benodigde stappen
 
@@ -102,7 +102,7 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+[Componenten gebruiken en styling toevoegen](/getting-started/installation)
 
 ### Importeer component via npm
 

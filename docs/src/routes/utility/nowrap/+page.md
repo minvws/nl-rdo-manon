@@ -27,7 +27,7 @@ SCSS importeren:
   <code>table</code>
   of de omliggende <code>div</code> zullen alle onderliggende tekst-elementen niet afbreken.
   Verschillende voorbeelden en opties zijn beschikbaar op de
-  <a href="/utility/nowrap-test">Test- en voorbeelden-pagina</a>.
+  <a href="/utility/nowrap/test">Test- en voorbeelden-pagina</a>.
 </p>
 
 <h2 id="examples">Voorbeelden</h2>
