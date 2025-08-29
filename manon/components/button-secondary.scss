@@ -8,6 +8,10 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   &.secondary {
+    margin: 0;
+    box-sizing: border-box;
+    width: auto;
+
     @include theming.apply-from-theme(
       (
         justify-content: theme.$button-secondary-justify-content,
@@ -40,9 +44,6 @@ input[type="reset"] {
         max-width: theme.$button-secondary-image-max-width,
       )
     );
-    margin: 0;
-    box-sizing: border-box;
-    width: auto;
 
     &:hover,
     &.hover {
