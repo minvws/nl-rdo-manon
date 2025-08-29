@@ -11,6 +11,7 @@ p {
       font-size: theme.$p-font-size,
       font-weight: theme.$p-font-weight,
       background-color: theme.$p-background-color,
+      max-width: theme.$p-max-width,
     )
   );
 }

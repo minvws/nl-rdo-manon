@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Kruimelpad - breadcrumb-bar</h1>
+<p id="introduction">Breadcrumb navigatie</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

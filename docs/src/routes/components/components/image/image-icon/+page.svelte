@@ -22,9 +22,9 @@
     </ul>
   </SideMenu>
   <article>
-    <div>
+    <h1>Icoon-afbeelding</h1>
+    <div class="content-wrapper">
       <section id="introduction">
-        <h1>Icoon-afbeelding</h1>
         <p>
           Het <a href="{base}/components/components/icons">Icoon-component</a> kan gebruikt wordt met
           unicode-codes om een van de iconen uit de standaard icoon-set te gebruiken.

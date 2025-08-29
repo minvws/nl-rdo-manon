@@ -22,16 +22,16 @@
   </SideMenu>
   <section>
     <h1 id="introduction">Wachtwoord</h1>
-
-    <h2 id="quickstart">Snelstart</h2>
-    <p>SCSS importeren:</p>
-    <Code
-      language="scss"
-      code={`
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-input";
-`}
-    />
+    <div class="content-wrapper">
+      <h2 id="quickstart">Snelstart</h2>
+      <p>SCSS importeren:</p>
+      <Code
+        language="scss"
+        code={`
+  @use "@minvws/manon/form";
+  @use "@minvws/manon/form-input";
+  `}
+      />
 
     <div class="explanation" role="group" aria-label="Toelichting">
       <span>Aandachtspunten</span>
@@ -52,47 +52,48 @@
       </ul>
     </div>
 
-    <h2 id="examples">Voorbeelden</h2>
+      <h2 id="examples">Voorbeelden</h2>
 
-    <form action="" method="post">
-      <div>
-        <label for="input-password-1">Wachtwoord</label>
-        <p class="explanation" id="input-password-1-message">
-          <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter,
-          1 kleine letter en 1 cijfer.
-        </p>
-        <input
-          id="input-password-1"
-          name="input-password-1"
-          pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
-          type="password"
-          aria-describedby="input-password-1-message"
-        />
-      </div>
-      <button type="submit">Verzend</button>
-    </form>
+      <form action="" method="post">
+        <div>
+          <label for="input-password-1">Wachtwoord</label>
+          <p class="explanation" id="input-password-1-message">
+            <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter,
+            1 kleine letter en 1 cijfer.
+          </p>
+          <input
+            id="input-password-1"
+            name="input-password-1"
+            pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
+            type="password"
+            aria-describedby="input-password-1-message"
+          />
+        </div>
+        <button type="submit">Verzend</button>
+      </form>
 
-    <Code
-      language="html"
-      code={`
-<form action="" method="post">
-  <div>
-    <label for="input-password-1">Wachtwoord</label>
-    <p class="explanation" id="input-password-1-message">
-      <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter,
-      1 kleine letter en 1 cijfer.
-    </p>
-    <input
-      id="input-password-1"
-      name="input-password-1"
-      pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
-      type="password"
-      aria-describedby="input-password-1-message"
-    />
-  </div>
-  <button type="submit">Verzend</button>
-</form>
-`}
-    />
+      <Code
+        language="html"
+        code={`
+  <form action="" method="post">
+    <div>
+      <label for="input-password-1">Wachtwoord</label>
+      <p class="explanation" id="input-password-1-message">
+        <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter,
+        1 kleine letter en 1 cijfer.
+      </p>
+      <input
+        id="input-password-1"
+        name="input-password-1"
+        pattern={"^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$"}
+        type="password"
+        aria-describedby="input-password-1-message"
+      />
+    </div>
+    <button type="submit">Verzend</button>
+  </form>
+  `}
+      />
+    </div>
   </section>
 </main>

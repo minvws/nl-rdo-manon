@@ -21,10 +21,9 @@
     </ul>
   </SideMenu>
   <article>
-    <div>
+    <h1>Tegelweergave met cover-afbeelding</h1>
+    <div class="content-wrapper">
       <section id="introduction">
-        <h1>Tegelweergave met cover-afbeelding</h1>
-
         <p>Aandachtspunten:</p>
         <ul>
           <li>

@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Email</h1>
+<p class="introduction">Email-invoerveld</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

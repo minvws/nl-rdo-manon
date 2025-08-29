@@ -7,7 +7,7 @@ nav:
   - Gerelateerde pagina's: "#related"
 ---
 
-# Code & Code block
+<p class="introduction"> Code & Code block</p>
 
 <p class="warning">
   <span>Let op:</span>

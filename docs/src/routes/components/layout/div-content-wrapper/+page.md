@@ -7,8 +7,6 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Div content wrapper</h1>
-
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:

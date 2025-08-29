@@ -4,13 +4,24 @@
 section {
   display: flex;
   width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
+  flex-direction: theme.$section-flex-direction;
+
+  @if theme.$section-max-width {
+    margin: 0 auto;
+  }
+
+  @if (
+    theme.$section-padding-top or
+      theme.$section-padding-right or
+      theme.$section-padding-bottom or
+      theme.$section-padding-left
+  ) {
+    box-sizing: border-box;
+  }
 
   @include theming.apply-from-theme(
     (
       background-color: theme.$section-background-color,
-      flex-direction: theme.$section-flex-direction,
       justify-content: theme.$section-justify-content,
       align-items: theme.$section-align-items,
       gap: theme.$section-gap,
@@ -22,4 +33,45 @@ section {
       border-radius: theme.$section-border-radius,
     )
   );
+
+  .content-wrapper {
+    flex-direction: theme.$section-content-wrapper-flex-direction;
+
+    @if (
+      theme.$section-content-wrapper-gap or
+        theme.$section-content-wrapper-align-items or
+        theme.$section-content-wrapper-justify-content
+    ) {
+      display: flex;
+      width: 100%;
+    }
+
+    @if theme.$section-content-wrapper-max-width {
+      margin: 0 auto;
+    }
+
+    @if (
+      theme.$section-content-wrapper-padding-top or
+        theme.$section-content-wrapper-padding-right or
+        theme.$section-content-wrapper-padding-bottom or
+        theme.$section-content-wrapper-padding-left
+    ) {
+      box-sizing: border-box;
+    }
+
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$section-content-wrapper-background-color,
+        justify-content: theme.$section-content-wrapper-justify-content,
+        align-items: theme.$section-content-wrapper-align-items,
+        gap: theme.$section-content-wrapper-gap,
+        padding-top: theme.$section-content-wrapper-padding-top,
+        padding-right: theme.$section-content-wrapper-padding-right,
+        padding-bottom: theme.$section-content-wrapper-padding-bottom,
+        padding-left: theme.$section-content-wrapper-padding-left,
+        max-width: theme.$section-content-wrapper-max-width,
+        border-radius: theme.$section-content-wrapper-border-radius,
+      )
+    );
+  }
 }

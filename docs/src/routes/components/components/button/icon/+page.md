@@ -6,7 +6,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Icoonknoppen</h1>
+<p id="introduction">Icoonknoppen</p>
 
 <h2 id="quick-start">Snelstart</h2>
 
