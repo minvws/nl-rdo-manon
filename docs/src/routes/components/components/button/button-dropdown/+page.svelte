@@ -92,7 +92,11 @@ class="collapsible">
               <ul>
                 <li><a href="{base}/components/components/collapsible">Item 1</a></li>
                 <li><a href="{base}/components/components/collapsible">Huidige selectie</a></li>
-                <li><a href="{base}/components/components/collapsible">Item 3 long name test lorem ipsum dolor sit amet</a></li>
+                <li>
+                  <a href="{base}/components/components/collapsible"
+                    >Item 3 long name test lorem ipsum dolor sit amet</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -107,7 +111,11 @@ class="collapsible">
               <ul>
                 <li><a href="{base}/components/components/collapsible">Item 1</a></li>
                 <li><a href="{base}/components/components/collapsible">Huidige selectie</a></li>
-                <li><a href="{base}/components/components/collapsible">Item 3 long name test lorem ipsum dolor sit amet</a></li>
+                <li>
+                  <a href="{base}/components/components/collapsible"
+                    >Item 3 long name test lorem ipsum dolor sit amet</a
+                  >
+                </li>
               </ul>
             </div>
           </div>

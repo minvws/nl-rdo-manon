@@ -33,24 +33,25 @@
   `}
       />
 
-    <div class="explanation" role="group" aria-label="Toelichting">
-      <span>Aandachtspunten</span>
-      <ul>
-        <li>
-          Vertel de gebruiker welke eisen er gesteld zijn. Dit kan met een notificatie of met een
-          openklapbare hulptekst. Voor meer informatie zie:
-          <a href="{base}/components/components/notifications/notification-explanation#explanation-paragraph"
-            >toelichting - paragraaf</a
-          >
-          en <a href="{base}/components/components/forms/form-help">hulpteksten</a>.
-        </li>
-        <li>
-          Om berichten visueel te koppelen aan een inputveld kunnen de
-          <code>&lt;input&gt;</code> en het bericht gegroepeerd worden binnen een
-          <code>&lt;div&gt;</code>.
-        </li>
-      </ul>
-    </div>
+      <div class="explanation" role="group" aria-label="Toelichting">
+        <span>Aandachtspunten</span>
+        <ul>
+          <li>
+            Vertel de gebruiker welke eisen er gesteld zijn. Dit kan met een notificatie of met een
+            openklapbare hulptekst. Voor meer informatie zie:
+            <a
+              href="{base}/components/components/notifications/notification-explanation#explanation-paragraph"
+              >toelichting - paragraaf</a
+            >
+            en <a href="{base}/components/components/forms/form-help">hulpteksten</a>.
+          </li>
+          <li>
+            Om berichten visueel te koppelen aan een inputveld kunnen de
+            <code>&lt;input&gt;</code> en het bericht gegroepeerd worden binnen een
+            <code>&lt;div&gt;</code>.
+          </li>
+        </ul>
+      </div>
 
       <h2 id="examples">Voorbeelden</h2>
 
