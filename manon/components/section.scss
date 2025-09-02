@@ -19,13 +19,12 @@ section {
     box-sizing: border-box;
   }
 
-  @if validators.any-args-not-null(
-    theme.$section-flex-direction,
-    theme.$section-gap,
-    theme.$section-justify-content,
-    theme.$section-align-items
-  )
-  {
+  @if (
+    theme.$section-flex-direction or
+      theme.$section-gap or
+      theme.$section-justify-content or
+      theme.$section-align-items
+  ) {
     display: flex;
   }
 
