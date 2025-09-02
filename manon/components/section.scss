@@ -2,7 +2,6 @@
 @use "../variables" as theme;
 
 section {
-  display: flex;
   width: 100%;
   flex-direction: theme.$section-flex-direction;
 
@@ -17,6 +16,15 @@ section {
       theme.$section-padding-left
   ) {
     box-sizing: border-box;
+  }
+
+  @if (
+    theme.$section-flex-direction or
+      theme.$section-gap or
+      theme.$section-justify-content or
+      theme.$section-align-items
+  ) {
+    display: flex;
   }
 
   @include theming.apply-from-theme(

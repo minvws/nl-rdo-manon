@@ -161,7 +161,7 @@ and spacing sets */
   $footer-list-flex-direction: row,
   $footer-list-justify-content: center,
   $footer-list-gap: spacing.$spacing-100,
-  $footer-nav-gap: spacing.$spacing-100,
+  $footer-navigation-gap: spacing.$spacing-100,
 
   // Form help
   $form-help-button-padding-top: 0,
@@ -263,32 +263,6 @@ and spacing sets */
   $nota-bene-font-size: 0.75rem,
   $nota-bene-text-color: color-scheme.$oc-gray-7,
 
-  // pagination
-  $pagination-list-gap: spacing.$spacing-025,
-
-  // pagination item
-  $pagination-item-width: 2.5rem,
-  $pagination-item-height: 2.5rem,
-
-  // pagination link
-  $pagination-link-background-color: color-scheme.$oc-white,
-  $pagination-link-border-radius: border-radii.$border-radius-s,
-  $pagination-link-text-decoration: none,
-  $pagination-link-border-color: color-scheme.$oc-white,
-  $pagination-link-border-width: 1px,
-  $pagination-link-border-style: solid,
-
-  // pagination link hover
-  $pagination-link-hover-background-color: semantic.$color-brand-primary-subtle,
-  $pagination-link-hover-border-color: semantic.$color-brand-primary-subtle,
-
-  // pagination link active
-  $pagination-link-active-border-width: 1px,
-  $pagination-link-active-border-style: solid,
-  $pagination-link-active-border-color: semantic.$color-brand-primary-default,
-  $pagination-link-active-text-color: semantic.$color-brand-primary-default,
-  $pagination-link-active-font-weight: bold,
-
   // Navigation
   $navigation-list-gap: spacing.$spacing-050,
   $navigation-link-text-decoration: none,
@@ -359,6 +333,38 @@ and spacing sets */
 
   // p {
   $p-max-width: 42rem,
+
+  // pagination
+  $pagination-list-gap: spacing.$spacing-025,
+
+  // pagination item
+  $pagination-item-width: 2.5rem,
+  $pagination-item-height: 2.5rem,
+
+  // pagination link
+  $pagination-link-background-color: color-scheme.$oc-white,
+  $pagination-link-border-radius: border-radii.$border-radius-s,
+  $pagination-link-text-decoration: none,
+  $pagination-link-border-color: color-scheme.$oc-white,
+  $pagination-link-border-width: 1px,
+  $pagination-link-border-style: solid,
+
+  // pagination link hover
+  $pagination-link-hover-background-color: semantic.$color-brand-primary-subtle,
+  $pagination-link-hover-border-color: semantic.$color-brand-primary-subtle,
+
+  // pagination link active
+  $pagination-link-active-border-width: 1px,
+  $pagination-link-active-border-style: solid,
+  $pagination-link-active-border-color: semantic.$color-brand-primary-default,
+  $pagination-link-active-text-color: semantic.$color-brand-primary-default,
+  $pagination-link-active-font-weight: bold,
+
+  // Sidemenu
+  $sidemenu-nav-padding-top: spacing.$spacing-100,
+  $sidemenu-nav-padding-right: spacing.$spacing-200,
+  $sidemenu-nav-padding-bottom: spacing.$spacing-100,
+  $sidemenu-nav-padding-left: spacing.$spacing-200,
 
   // section
   $section-gap: spacing.$spacing-150,

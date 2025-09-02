@@ -19,11 +19,15 @@ $footer-border-style: null !default;
 $footer-border-color: null !default;
 
 // nav
-$footer-nav-flex-direction: column !default;
-$footer-nav-gap: null !default;
-$footer-nav-justify-content: null !default;
-$footer-nav-align-items: null !default;
-$footer-nav-flex-wrap: null !default;
+$footer-navigation-flex-direction: column !default;
+$footer-navigation-gap: null !default;
+$footer-navigation-justify-content: null !default;
+$footer-navigation-align-items: null !default;
+$footer-navigation-flex-wrap: null !default;
+$footer-navigation-padding-top: null !default;
+$footer-navigation-padding-right: null !default;
+$footer-navigation-padding-bottom: null !default;
+$footer-navigation-padding-left: null !default;
 
 // link
 $footer-link-font-size: null !default;
@@ -49,10 +53,3 @@ $footer-list-item-align-items: null !default;
 $footer-list-item-text-color: null !default;
 $footer-list-item-background-color: null !default;
 $footer-list-flex-direction: null !default;
-
-// Nav
-$footer-navigation-flex-direction: null !default;
-$footer-navigation-gap: null !default;
-$footer-navigation-justify-content: null !default;
-$footer-navigation-align-items: null !default;
-$footer-navigation-flex-wrap: null !default;
