@@ -8,15 +8,7 @@ nav:
   - Bijbehorende bestanden: "#requirements"
 ---
 
-<h1 id="introduction">Zijmenu naast de pagina</h1>
-
-<h2 id="quickstart">Snelstart</h2>
-
-```scss
-@use "@minvws/manon/sidemenu";
-```
-
-Voor het plaatsen van een zijmenu naast de pagina.
+<p class="introduction">Voor het plaatsen van een zijmenu naast de pagina.</p>
 
 Gebruik deze weergave als de inhoud van het zijmenu niet over de content van de
 pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
@@ -24,6 +16,12 @@ pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 Gaat de inhoud van het zijmenu over de inhoud van de content. En hoort het bij
 de content. Gebruik dan:
 [Zijmenu binnen de pagina](/components/sidemenu/in-page)
+
+<h2 id="quickstart">Snelstart</h2>
+
+```scss
+@use "@minvws/manon/sidemenu";
+```
 
 ## Benodigde stappen
 

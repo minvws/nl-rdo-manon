@@ -2,19 +2,67 @@
 @use "../variables" as theme;
 
 .hero {
-  display: flex;
-  width: 100%;
   position: relative;
-  padding: 0;
+
+  @if (
+    theme.$hero-justify-content or
+      theme.$hero-align-items or
+      theme.$hero-flex-direction
+  ) {
+    display: flex;
+  }
+
+  @if theme.$hero-background-image {
+    position: relative;
+  }
 
   @include theming.apply-from-theme(
     (
       min-height: theme.$hero-min-height,
       height: theme.$hero-height,
       max-height: theme.$hero-max-height,
+      width: theme.$hero-width,
+      max-width: theme.$hero-max-width,
       background-color: theme.$hero-background-color,
+      margin: theme.$hero-margin,
+      border-radius: theme.$hero-border-radius,
+      padding: theme.$hero-padding,
+      justify-content: theme.$hero-justify-content,
+      align-items: theme.$hero-align-items,
+      flex-direction: theme.$hero-flex-direction,
+      background-image: theme.$hero-background-image,
+      background-repeat: theme.$hero-background-repeat,
+      color: theme.$hero-text-color,
+      font-size: theme.$hero-font-size,
     )
   );
+
+  .content-wrapper {
+    z-index: 1;
+
+    @if (
+      theme.$hero-content-wrapper-justify-content or
+        theme.$hero-content-wrapper-align-items or
+        theme.$hero-content-wrapper-flex-direction or
+        theme.$hero-content-wrapper-gap
+    ) {
+      display: flex;
+    }
+
+    @include theming.apply-from-theme(
+      (
+        padding: theme.$hero-content-wrapper-padding,
+        max-width: theme.$hero-content-wrapper-max-width,
+        text-align: theme.$hero-content-wrapper-text-align,
+        margin: theme.$hero-content-wrapper-margin,
+        justify-content: theme.$hero-content-wrapper-justify-content,
+        align-items: theme.$hero-content-wrapper-align-items,
+        flex-direction: theme.$hero-content-wrapper-flex-direction,
+        background-color: theme.$hero-content-wrapper-background-color,
+        gap: theme.$hero-content-wrapper-gap,
+      )
+    );
+  }
 
   img {
     object-fit: cover;

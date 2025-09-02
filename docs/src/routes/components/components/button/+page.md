@@ -7,8 +7,7 @@ nav:
   - Soorten knoppen: "#button-types"
 ---
 
-<h1 id="introduction">Knoppen</h1>
-
+<p id="introduction">Knoppen</p>
 <h2 id="quickstart">Snelstart</h2>
 
 1. Bepaal welk HTML-element geschikt is. Knoppen kunnen op verschillende
@@ -77,6 +76,7 @@ nav:
 <h2 id="button-types">Soorten knoppen</h2>
 
 - [Basisweergave](/components/components/button/button-base)
+- [Secundaire knoppen](/components/components/button/button-secondary)
 - [Knoppen groeperen](/components/components/button/button-container)
 - [Call to action button](/components/components/button/call-to-action)
 - [Icoonknoppen](/components/components/button/icon)

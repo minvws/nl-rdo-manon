@@ -4,9 +4,21 @@
 body > footer,
 .page-footer,
 %footer-style {
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
+  @if (
+    theme.$footer-flex-direction or
+      theme.$footer-gap or
+      theme.$footer-justify-content or
+      theme.$footer-align-items or
+      theme.$footer-flex-wrap
+  ) {
+    display: flex;
+    width: 100%;
+  }
+
+  @if theme.$footer-max-width {
+    margin: 0 auto;
+  }
+
   box-sizing: border-box;
 
   @include theming.apply-from-theme(
@@ -25,6 +37,9 @@ body > footer,
       padding-bottom: theme.$footer-padding-bottom,
       padding-left: theme.$footer-padding-left,
       max-width: theme.$footer-max-width,
+      border-width: theme.$footer-border-width,
+      border-style: theme.$footer-border-style,
+      border-color: theme.$footer-border-color,
     )
   );
 
@@ -104,6 +119,32 @@ body > footer,
   }
 
   nav {
+    @if (
+      theme.$footer-navigation-gap or
+        theme.$footer-navigation-justify-content or
+        theme.$footer-navigation-align-items or
+        theme.$footer-navigation-flex-wrap
+    ) {
+      display: flex;
+      width: 100%;
+    }
+
+    flex-direction: theme.$footer-navigation-flex-direction;
+
+    @include theming.apply-from-theme(
+      (
+        gap: theme.$footer-navigation-gap,
+        flex-direction: theme.$footer-navigation-flex-direction,
+        justify-content: theme.$footer-navigation-justify-content,
+        align-items: theme.$footer-navigation-align-items,
+        flex-wrap: theme.$footer-navigation-flex-wrap,
+        padding-top: theme.$footer-navigation-padding-top,
+        padding-right: theme.$footer-navigation-padding-right,
+        padding-bottom: theme.$footer-navigation-padding-bottom,
+        padding-left: theme.$footer-navigation-padding-left,
+      )
+    );
+
     ul,
     ol {
       background-color: transparent;

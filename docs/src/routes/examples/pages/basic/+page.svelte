@@ -23,8 +23,21 @@
 </header>
 
 <main id="main-content">
+
   <section>
-    <div></div>
+    <h1>Paginatitel</h1>
+
+    <div class="content-wrapper">
+      <p>Dit is een voorbeeld van een content-blok.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Onderwerp</h2>
+
+    <div class="content-wrapper">
+      <p>Dit is een voorbeeld van nog een content-blok.</p>
+    </div>
   </section>
 </main>
 

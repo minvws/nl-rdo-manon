@@ -3,8 +3,6 @@ title: Installatie
 breadcrumb: Installatie
 ---
 
-# Installatie
-
 Deze documentatie beschrijft instructies voor het installeren en gebruiken van
 het Manon design framework in je project.
 

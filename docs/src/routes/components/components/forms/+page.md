@@ -3,10 +3,8 @@ title: Formulieren
 breadcrumb: Formulieren
 ---
 
-<h1 id="introduction">Formulieren</h1>
-
-Formulieren worden gebruikt om informatie op te vragen en te ontvangen van
-gebruikers.
+<p class="introduction">Formulieren worden gebruikt om informatie op te vragen en te ontvangen van
+gebruikers.</p>
 
 <section id="available-types">
   <h2>Beschikbare weergaven</h2>

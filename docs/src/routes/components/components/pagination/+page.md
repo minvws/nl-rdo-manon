@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Paginering</h1>
+<p class="introduction">Paginering</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Notificatie binnen formulier</h1>
+<p class="introduction">Het weergeven van notificaties binnen het formulier</p>
 
 <h2 id="quick-start">Snelstart</h2>
 

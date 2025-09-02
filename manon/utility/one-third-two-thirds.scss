@@ -16,6 +16,10 @@ $breakpoint: 42rem !default;
     box-sizing: border-box;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   > section,
   > article,
   > div {

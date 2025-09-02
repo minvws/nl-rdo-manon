@@ -7,8 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Knoppen (basisweergave)</h1>
-
+<p id="introduction">Knoppen basisweergave</p>
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
@@ -29,7 +28,7 @@ SCSS importeren:
 
 ### Voorbeeld: Link als button: `a`
 
-<a href="button-base" class="button">Lorem ipsum</a>
+<a href="button" class="button">Lorem ipsum</a>
 
 ```html
 <a href="#" class="button">Lorem ipsum</a>

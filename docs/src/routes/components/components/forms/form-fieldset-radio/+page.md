@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Radio-selecteerknop - `radio`</h1>
+<p class="introduction">Fieldset Radio-selecteerknop - radio</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

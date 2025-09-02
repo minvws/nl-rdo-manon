@@ -28,7 +28,22 @@ and spacing sets */
   $theme-name: "icore-open",
 
   // article
-  $article-gap: spacing.$spacing-250,
+  $article-gap: spacing.$spacing-150,
+  $article-flex-direction: column,
+  $article-justify-content: flex-start,
+  $article-align-items: flex-start,
+  $article-max-width: 60rem,
+
+  // article content wrapper
+  $article-content-wrapper-background-color: color-scheme.$oc-white,
+  $article-content-wrapper-padding-top: spacing.$spacing-200,
+  $article-content-wrapper-padding-right: spacing.$spacing-200,
+  $article-content-wrapper-padding-bottom: spacing.$spacing-300,
+  $article-content-wrapper-padding-left: spacing.$spacing-200,
+  $article-content-wrapper-max-width: 60rem,
+  $article-content-wrapper-gap: spacing.$spacing-250,
+  $article-content-wrapper-flex-direction: column,
+  $article-content-wrapper-border-radius: border-radii.$border-radius-m,
 
   // avatar
   $avatar-font-weight: bold,
@@ -104,6 +119,14 @@ and spacing sets */
   // color picker
   $color-picker-border-radius: border-radii.$border-radius-s,
 
+  // de-emphasized
+  $de-emphasized-font-size: body-text.$body-text-s,
+  $de-emphasized-text-color: color-scheme.$oc-gray-7,
+
+  // emphasized
+  $emphasized-font-size: body-text.$body-text-l,
+  $emphasized-font-weight: font-weight.$font-weight-medium,
+
   // form
   $form-align-items: flex-start,
   $form-text-color: semantic.$color-text-default,
@@ -135,7 +158,7 @@ and spacing sets */
   // footer
   $footer-align-items: center,
   $footer-justify-content: center,
-  $footer-gap: spacing.$spacing-200,
+  $footer-gap: spacing.$spacing-100,
   $footer-flex-direction: column,
   $footer-text-align: center,
   $footer-padding-top: spacing.$spacing-200,
@@ -146,6 +169,7 @@ and spacing sets */
   $footer-list-flex-direction: row,
   $footer-list-justify-content: center,
   $footer-list-gap: spacing.$spacing-100,
+  $footer-navigation-gap: spacing.$spacing-100,
 
   // Form help
   $form-help-button-padding-top: 0,
@@ -200,6 +224,25 @@ and spacing sets */
   // heading
   $h1-font-family: semantic.$font-family,
 
+  // hero
+  $hero-height: 25rem,
+  $hero-max-width: calc(100% + 8rem),
+  $hero-width: calc(100% + 8rem),
+  $hero-margin: -4rem 0 0 -4rem,
+  $hero-border-radius: 0,
+  $hero-font-size: body-text.$body-text-l,
+  $hero-background-color: color-scheme.$oc-blue-6,
+  $hero-justify-content: center,
+  $hero-flex-direction: column,
+  $hero-title-font-size: heading.$heading-xxl,
+  $hero-text-color: color-scheme.$oc-white,
+  $hero-content-wrapper-padding: 0,
+  $hero-content-wrapper-max-width: 40rem,
+  $hero-content-wrapper-text-align: center,
+  $hero-content-wrapper-margin: 0 auto,
+  $hero-content-wrapper-background-color: transparent,
+  $hero-content-wrapper-gap: spacing.$spacing-100,
+
   // utility
   $horizontal-gap: spacing.$spacing-100,
 
@@ -220,40 +263,14 @@ and spacing sets */
 
   // main
   $main-padding-top: spacing.$spacing-400,
-  $main-padding-right: 5%,
+  $main-padding-right: 4rem,
   $main-padding-bottom: spacing.$spacing-400,
-  $main-padding-left: 5%,
-  $main-gap: spacing.$spacing-225,
+  $main-padding-left: 4rem,
+  $main-gap: spacing.$spacing-400,
 
   // nota bene
   $nota-bene-font-size: 0.75rem,
   $nota-bene-text-color: color-scheme.$oc-gray-7,
-
-  // pagination
-  $pagination-list-gap: spacing.$spacing-025,
-
-  // pagination item
-  $pagination-item-width: 2.5rem,
-  $pagination-item-height: 2.5rem,
-
-  // pagination link
-  $pagination-link-background-color: color-scheme.$oc-white,
-  $pagination-link-border-radius: border-radii.$border-radius-s,
-  $pagination-link-text-decoration: none,
-  $pagination-link-border-color: color-scheme.$oc-white,
-  $pagination-link-border-width: 1px,
-  $pagination-link-border-style: solid,
-
-  // pagination link hover
-  $pagination-link-hover-background-color: semantic.$color-brand-primary-subtle,
-  $pagination-link-hover-border-color: semantic.$color-brand-primary-subtle,
-
-  // pagination link active
-  $pagination-link-active-border-width: 1px,
-  $pagination-link-active-border-style: solid,
-  $pagination-link-active-border-color: semantic.$color-brand-primary-default,
-  $pagination-link-active-text-color: semantic.$color-brand-primary-default,
-  $pagination-link-active-font-weight: bold,
 
   // Navigation
   $navigation-list-gap: spacing.$spacing-050,
@@ -323,18 +340,58 @@ and spacing sets */
     color-scheme.$color-notification-system-subtle,
   $notification-table-system-text-color: semantic.$color-text-default,
 
+  // p {
+  $p-max-width: 42rem,
+
+  // pagination
+  $pagination-list-gap: spacing.$spacing-025,
+
+  // pagination item
+  $pagination-item-width: 2.5rem,
+  $pagination-item-height: 2.5rem,
+
+  // pagination link
+  $pagination-link-background-color: color-scheme.$oc-white,
+  $pagination-link-border-radius: border-radii.$border-radius-s,
+  $pagination-link-text-decoration: none,
+  $pagination-link-border-color: color-scheme.$oc-white,
+  $pagination-link-border-width: 1px,
+  $pagination-link-border-style: solid,
+
+  // pagination link hover
+  $pagination-link-hover-background-color: semantic.$color-brand-primary-subtle,
+  $pagination-link-hover-border-color: semantic.$color-brand-primary-subtle,
+
+  // pagination link active
+  $pagination-link-active-border-width: 1px,
+  $pagination-link-active-border-style: solid,
+  $pagination-link-active-border-color: semantic.$color-brand-primary-default,
+  $pagination-link-active-text-color: semantic.$color-brand-primary-default,
+  $pagination-link-active-font-weight: bold,
+
+  // Sidemenu
+  $sidemenu-nav-padding-top: spacing.$spacing-100,
+  $sidemenu-nav-padding-right: spacing.$spacing-200,
+  $sidemenu-nav-padding-bottom: spacing.$spacing-100,
+  $sidemenu-nav-padding-left: spacing.$spacing-200,
+
   // section
-  $section-background-color: color-scheme.$oc-white,
-  $section-padding-top: spacing.$spacing-200,
-  $section-padding-right: spacing.$spacing-200,
-  $section-padding-bottom: spacing.$spacing-300,
-  $section-padding-left: spacing.$spacing-200,
-  $section-max-width: 60rem,
   $section-gap: spacing.$spacing-150,
   $section-flex-direction: column,
-  $section-border-radius: border-radii.$border-radius-m,
   $section-justify-content: flex-start,
   $section-align-items: flex-start,
+  $section-max-width: 60rem,
+
+  // section content wrapper
+  $section-content-wrapper-background-color: color-scheme.$oc-white,
+  $section-content-wrapper-padding-top: spacing.$spacing-200,
+  $section-content-wrapper-padding-right: spacing.$spacing-200,
+  $section-content-wrapper-padding-bottom: spacing.$spacing-300,
+  $section-content-wrapper-padding-left: spacing.$spacing-200,
+  $section-content-wrapper-max-width: 60rem,
+  $section-content-wrapper-gap: spacing.$spacing-250,
+  $section-content-wrapper-flex-direction: column,
+  $section-content-wrapper-border-radius: border-radii.$border-radius-m,
 
   // table
   $table-gap: spacing.$spacing-050,

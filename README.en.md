@@ -1,10 +1,26 @@
-# Manon
+<h1 align="center">Manon</h1>
 
-> [!NOTE]
->
+<p align="center">
+    A flexible and accessible design framework for semantic HTML.
+</p>
+
+<p align="center">
+  <a href="https://github.com/minvws/nl-rdo-manon/releases/latest"><img alt="github release" src="https://img.shields.io/github/v/release/minvws/nl-rdo-manon?style=for-the-badge&color=fa32c8&logo=github"></a>
+  <a href="https://www.npmjs.com/package/@minvws/manon" ><img alt="npm package" src="https://img.shields.io/npm/v/@minvws/manon?style=for-the-badge&color=fa32c8&logo=npm"></a>
+  <a href="https://github.com/minvws/nl-rdo-manon/actions/workflows/ci.yml?query=branch%3Amain" ><img alt="build status" src="https://img.shields.io/github/actions/workflow/status/minvws/nl-rdo-manon/ci.yml?branch=main&style=for-the-badge&logo=github"></a>
+  <a href="https://github.com/minvws/rdo-icore-coordination/" ><img alt="part of icore" src="https://img.shields.io/badge/Part_of-iCore-ed7b3e?style=for-the-badge"></a>
+</p>
+
+---
+
+## 📚 Documentation
+
+The documentation is available at https://minvws.github.io/nl-rdo-manon. It is
+generated from the [docs](./docs) directory on this repo.
+
 > For Dutch, see [Dutch](README.md).
 
-## 🙋 About Manon
+## 🙋 What is Manon?
 
 Manon is a design framework based on the following principles:
 
@@ -26,11 +42,6 @@ Components are adjustable via variables. The modular design prevents unnecessary
 CSS overrides. Consult the documentation or variable files for an overview of
 the adjustable variables per component.
 
-## 📚 Documentation
-
-The documentation is available at <https://minvws.github.io/nl-rdo-manon>. It is
-generated from the [docs](./docs) directory on this repo.
-
 ## 🚀 Getting Started
 
 To use Manon in your project:
@@ -51,17 +62,14 @@ To use Manon in your project:
     npm install @minvws/manon-themes
     ```
 
-3.  In your project import the Manon framework, and a theme of your choice.
+3.  In your project import the Manon framework, with a theme of your choice.
 
     ```scss
-    // Import the Manon framework and its components
-    @use "@minvws/manon/application-base";
+    // Import the iCore Open theme
+    @use "@minvws/manon-themes/icore-open";
 
     // You can also import specific components as needed here:
     // @use "@minvws/manon/p"
-
-    // Import the iCore Open theme
-    @use "@minvws/manon-themes/icore-open";
     ```
 
 You're now ready to use the components in your HTML. Follow the instructions in

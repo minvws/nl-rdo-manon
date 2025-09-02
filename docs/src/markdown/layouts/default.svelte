@@ -37,6 +37,9 @@
     <SideMenu>{@render navlist(parsedNav)}</SideMenu>
   {/if}
   <section>
-    {@render children?.()}
+    <h1>{title}</h1>
+    <div class="content-wrapper">
+      {@render children?.()}
+    </div>
   </section>
 </main>
