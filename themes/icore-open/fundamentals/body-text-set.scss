@@ -4,7 +4,7 @@
 
 :root {
   /* Available variables to use within all text types */
-  --text-set-font-family: "Open Sans", sans-serif;
+  --text-set-font-family: "IBM Plex Sans", sans-serif;
   --text-set-font-size: 1rem;
   --text-set-font-weight: normal;
   --text-set-strong-font-weight: 600;
@@ -13,7 +13,7 @@
   --text-set-text-align: left;
 
   /* Body text small */
-  --body-text-small-font-size: 0.875rem;
+  --body-text-small-font-size: 0.75rem;
   --body-text-small-font-weight: var(--text-set-font-weight);
   --body-text-small-line-height: var(--text-set-line-height);
   --body-text-small-color: #{color-scheme.$oc-gray-7};
@@ -33,7 +33,7 @@
   --body-text-medium-strong-font-weight: var(--text-set-strong-font-weight);
 
   /* Body text large */
-  --body-text-large-font-size: 1.5rem;
+  --body-text-large-font-size: 1.25rem;
   --body-text-large-font-weight: var(--text-set-font-weight);
   --body-text-large-line-height: var(--text-set-line-height);
   --body-text-large-color: var(--text-set-text-color);
@@ -41,4 +41,14 @@
 
   /* Strong */
   --body-text-large-strong-font-weight: var(--text-set-strong-font-weight);
+
+  /* Body text extralarge */
+  --body-text-extralarge-font-size: 1.5rem;
+  --body-text-extralarge-font-weight: var(--text-set-font-weight);
+  --body-text-extralarge-line-height: var(--text-set-line-height);
+  --body-text-extralarge-color: var(--text-set-text-color);
+  --body-text-extralarge-text-align: var(--text-set-text-align);
+
+  /* Strong */
+  --body-text-extralarge-strong-font-weight: var(--text-set-strong-font-weight);
 }
