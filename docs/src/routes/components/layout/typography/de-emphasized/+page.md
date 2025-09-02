@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Subtielere weergave</h1>
+<p class="introduction">Voor een subtielere weergave van bepaalde teksten.
+kan de class `de-emphasized` worden gebruikt. Deze class zorgt voor een subtielere weergaven van de tekst, 
+waardoor deze minder opvalt binnen de context van de pagina.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -28,7 +30,5 @@ SCSS importeren:
 <p class="de-emphasized">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
 ```html
-<p class="de-emphasized">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-</p>
+<p class="de-emphasized">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 ```

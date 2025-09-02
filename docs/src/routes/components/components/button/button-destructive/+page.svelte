@@ -23,11 +23,11 @@
   </SideMenu>
 
   <article id="button-base">
-    <div>
-      <section id="introduction">
-        <h1>Destructieve knop</h1>
-        <p>Opvallende weergave voor knoppen die een destructieve actie initiëren.</p>
+    <h1>Destructieve knop</h1>
 
+    <div class="content-wrapper">
+      <section id="introduction">
+        <p>Opvallende weergave voor knoppen die een destructieve actie initiëren.</p>
         <ol>
           <li>
             Voeg de class <code>destructive</code> toe om gebruik te maken van de visuele weergave van

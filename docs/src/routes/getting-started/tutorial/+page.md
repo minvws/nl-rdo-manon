@@ -1,9 +1,7 @@
 ---
-title: Manon Tutorial
+title: Tutorial
 breadcrumb: Tutorial
 ---
-
-# Tutorial
 
 ## Introduction
 
@@ -197,9 +195,7 @@ a header with navigation links:
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content"
-    >Skip to content</a
-  >
+  <a href="#main-content" class="button focus-only skip-to-content">Skip to content</a>
   <nav
     data-open-label="Menu"
     data-close-label="Sluit menu"
@@ -231,9 +227,7 @@ Now, our `index.html` file should look like this:
   </head>
   <body>
     <header>
-      <a href="#main-content" class="button focus-only skip-to-content"
-        >Skip to content</a
-      >
+      <a href="#main-content" class="button focus-only skip-to-content">Skip to content</a>
       <nav
         data-open-label="Menu"
         data-close-label="Sluit menu"
@@ -302,8 +296,8 @@ replacing the existing `<h1>` tag:
     <h1>Hello, Manon!</h1>
     <h2>Welcome to the Manon Tutorial</h2>
     <p>
-      Welcome to the Manon tutorial. In this tutorial, we will learn how to use
-      Manon to create a basic web page.
+      Welcome to the Manon tutorial. In this tutorial, we will learn how to use Manon to create a
+      basic web page.
     </p>
     <p>We’ll cover the following topics:</p>
     <ol>
@@ -336,8 +330,8 @@ Now, our `index.html` file should look like this:
         <h1>Hello, Manon!</h1>
         <h2>Welcome to the Manon Tutorial</h2>
         <p>
-          Welcome to the Manon tutorial. In this tutorial, we will learn how to
-          use Manon to create a basic web page.
+          Welcome to the Manon tutorial. In this tutorial, we will learn how to use Manon to create
+          a basic web page.
         </p>
         <p>We’ll cover the following topics:</p>
         <ol>

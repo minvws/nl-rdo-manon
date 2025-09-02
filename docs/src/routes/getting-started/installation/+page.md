@@ -3,8 +3,6 @@ title: Installatie
 breadcrumb: Installatie
 ---
 
-# Installatie
-
 Deze documentatie beschrijft instructies voor het installeren en gebruiken van
 het Manon design framework in je project.
 
@@ -162,8 +160,5 @@ Om variabelen te overschrijven, gebruik je een `with`-blok bij het importeren
 van het thema:
 
 ```scss
-@use "@minvws/manon-themes/icore-open" with (
-    $base-font-family: "Your Custom Font",
-    sans-serif
-  );
+@use "@minvws/manon-themes/icore-open" with ($base-font-family: "Your Custom Font", sans-serif);
 ```

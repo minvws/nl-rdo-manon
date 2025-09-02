@@ -9,7 +9,7 @@ nav:
   - Gerelateerde pagina's: "#related"
 ---
 
-<h1 id="introduction">Gegroepeerde content binnen tegels</h1>
+<p class="introduction">Voor het gegroepeerd weergeven van content binnen tegels</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -55,7 +55,10 @@ nav:
 ```html
 <div class="tile" role="group">
   <h1>Lorem ipsum dolor set</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
+    convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+  </p>
   <div>
     <button>Lorem</button>
     <button>Ipsum</button>

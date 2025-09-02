@@ -7,9 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Invoerveld</h1>
-
-Invoervelden worden gebruikt voor het vragen van korte informatie.
+<p class="introduction">Invoervelden worden gebruikt voor het vragen van korte informatie.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -51,12 +49,7 @@ SCSS importeren:
 <form action="" method="post">
   <label for="example-input-required">Gebruikersnaam</label>
   <span class="nota-bene">Dit veld is verplicht</span>
-  <input
-    id="example-input-required"
-    name="example-input-required"
-    type="text"
-    required
-  />
+  <input id="example-input-required" name="example-input-required" type="text" required />
   <button type="submit">Verzend</button>
 </form>
 ```
@@ -90,12 +83,7 @@ SCSS importeren:
 ```html
 <form action="" method="post">
   <label for="example-input-disabled">Gebruikersnaam</label>
-  <input
-    id="example-input-disabled"
-    name="example-input-disabled"
-    type="text"
-    disabled
-  />
+  <input id="example-input-disabled" name="example-input-disabled" type="text" disabled />
   <button type="submit">Verzend</button>
 </form>
 ```

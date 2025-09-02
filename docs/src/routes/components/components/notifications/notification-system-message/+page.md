@@ -6,10 +6,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Systeembericht</h1>
-
-Gebruik om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het
-incorrect invoeren van data of een systeemfout.
+<p class="introduction">Gebruik om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het
+incorrect invoeren van data of een systeemfout.</p>
 
 <h2 id="quick-start">Snelstart</h2>
 
@@ -53,21 +51,19 @@ SCSS importeren:
   <span>Systeembericht:</span>
   <h1>Lorem ipsum dolor set</h1>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a
-    nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a
-    porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices.
-    Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat
-    scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut
-    maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a
-    augue sit amet condimentum.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
   </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a
-      nisi consequat facilisis ac eu velit.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit.
       <a href="">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
@@ -114,9 +110,7 @@ SCSS importeren:
       value="Lorem ipsum"
       aria-describedby="input-system-message"
     />
-    <p class="system" id="input-system-message">
-      <span>system:</span> Lorem ipsum dolor sit amet
-    </p>
+    <p class="system" id="input-system-message"><span>system:</span> Lorem ipsum dolor sit amet</p>
   </div>
 </form>
 ```
@@ -195,9 +189,7 @@ SCSS importeren:
       <option value="2">Optie 2</option>
       <option value="3">Optie 3</option>
     </select>
-    <p class="system" id="select-system-message">
-      <span>system:</span> Lorem ipsum dolor sit amet
-    </p>
+    <p class="system" id="select-system-message"><span>system:</span> Lorem ipsum dolor sit amet</p>
   </div>
 </form>
 ```
@@ -263,12 +255,7 @@ SCSS importeren:
 ```html
 <form action="" method="post">
   <div aria-describedby="checkbox-system-message">
-    <input
-      type="checkbox"
-      id="checkbox-system"
-      name="standaard-checkbox"
-      class="system"
-    />
+    <input type="checkbox" id="checkbox-system" name="standaard-checkbox" class="system" />
     <label for="checkbox-system">Lorem ipsum dolor sit amet</label>
     <p class="system" id="checkbox-system-message">
       <span>system:</span> Lorem ipsum dolor sit amet

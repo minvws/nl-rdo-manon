@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Radio-selecteerknop - `radio`</h1>
+<p class="introduction">Fieldset Radio-selecteerknop - radio</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -63,15 +63,8 @@ nav:
     <div class="required">
       <span class="nota-bene">Dit veld is verplicht</span>
       <div class="radio">
-        <input
-          type="radio"
-          id="radio-example-required-1"
-          name="voorwaarden"
-          required
-        />
-        <label for="radio-example-required-1"
-          >verplicht Radio-selecteerknop</label
-        >
+        <input type="radio" id="radio-example-required-1" name="voorwaarden" required />
+        <label for="radio-example-required-1">verplicht Radio-selecteerknop</label>
       </div>
     </div>
   </fieldset>
@@ -95,12 +88,7 @@ nav:
   <fieldset>
     <legend>Examples</legend>
     <div class="radio">
-      <input
-        type="radio"
-        id="radio-example-disabled"
-        name="disabled-radio"
-        disabled
-      />
+      <input type="radio" id="radio-example-disabled" name="disabled-radio" disabled />
       <label for="radio-example-disabled">Lorem ipsum dolor sit amet</label>
     </div>
   </fieldset>
@@ -200,47 +188,23 @@ nav:
     <fieldset>
       <legend>List label</legend>
       <div class="radio">
-        <input
-          type="radio"
-          id="radio-example-list-label-1"
-          name="standaard-radio"
-        />
-        <label for="radio-example-list-label-1"
-          >Lorem ipsum dolor sit amet</label
-        >
+        <input type="radio" id="radio-example-list-label-1" name="standaard-radio" />
+        <label for="radio-example-list-label-1">Lorem ipsum dolor sit amet</label>
       </div>
 
       <div class="radio">
-        <input
-          type="radio"
-          id="radio-example-list-label-2"
-          name="standaard-radio"
-        />
-        <label for="radio-example-list-label-2"
-          >Lorem ipsum dolor sit amet</label
-        >
+        <input type="radio" id="radio-example-list-label-2" name="standaard-radio" />
+        <label for="radio-example-list-label-2">Lorem ipsum dolor sit amet</label>
       </div>
 
       <div class="radio">
-        <input
-          type="radio"
-          id="radio-example-list-label-3"
-          name="standaard-radio"
-        />
-        <label for="radio-example-list-label-3"
-          >Lorem ipsum dolor sit amet</label
-        >
+        <input type="radio" id="radio-example-list-label-3" name="standaard-radio" />
+        <label for="radio-example-list-label-3">Lorem ipsum dolor sit amet</label>
       </div>
 
       <div class="radio">
-        <input
-          type="radio"
-          id="radio-example-list-label-4"
-          name="standaard-radio"
-        />
-        <label for="radio-example-list-label-4"
-          >Lorem ipsum dolor sit amet</label
-        >
+        <input type="radio" id="radio-example-list-label-4" name="standaard-radio" />
+        <label for="radio-example-list-label-4">Lorem ipsum dolor sit amet</label>
       </div>
     </fieldset>
   </fieldset>

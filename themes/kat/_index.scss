@@ -1,4 +1,8 @@
-// icore open theme styling
+/* Theme configuration */
+@forward "config";
+
+/* Fonts (@font-faces) */
+@use "fonts";
 
 /* Core variables */
 /* These are core sets like color schemes, fonts
@@ -21,18 +25,20 @@ and spacing sets */
 
 /* Component variables */
 @use "@minvws/manon/variables" with (
-  // base
-  $base-background-color: semantic.$base-background-color,
-  $base-font-size: 1rem,
-  $base-font-weight: 300,
+  // article
+  $article-gap: spacing.$spacing-200,
 
   // avatar
   $avatar-font-weight: bold,
   $avatar-border-radius: 50%,
   $avatar-background-color: semantic.$color-brand-primary,
-
-  // Hover
   $avatar-hover-background-color: semantic.$color-brand-primary-muted,
+
+  // base
+  $base-background-color: semantic.$base-background-color,
+  $base-font-size: 1rem,
+  $base-font-weight: 300,
+  $base-font-family: semantic.$font-family,
 
   // button
   $button-text-color: semantic.$color-text-default,
@@ -44,6 +50,8 @@ and spacing sets */
   $button-padding-bottom: spacing.$spacing-075,
   $button-padding-left: spacing.$spacing-100,
   $button-border-radius: border-radii.$border-radius-l,
+  $button-font-weight: font-weight.$font-weight-bold,
+  $button-font-size: body-text.$body-text-m,
 
   // button hover
   $button-hover-background-color: color-scheme.$yellow-300,
@@ -60,19 +68,48 @@ and spacing sets */
   $button-destructive-hover-text-color: color-scheme.$white,
   $button-destructive-hover-border-color: color-scheme.$red-600,
 
+  // button secondary
+  $button-secondary-background-color: color-scheme.$white,
+  $button-secondary-border-width: 1px,
+  $button-secondary-border-style: solid,
+  $button-secondary-border-color: color-scheme.$grey-200,
+  $button-secondary-text-color: color-scheme.$blue-600,
+
   // breadcrumb bar
   $breadcrumb-bar-padding-top: spacing.$spacing-050,
   $breadcrumb-bar-padding-right: spacing.$spacing-100,
   $breadcrumb-bar-padding-bottom: spacing.$spacing-050,
   $breadcrumb-bar-padding-left: spacing.$spacing-100,
-  $breadcrumb-bar-background-color: semantic.$color-brand-secundary-subtle,
+  $breadcrumb-bar-background-color: semantic.$color-brand-secondary-subtle,
   $breadcrumb-bar-link-text-decoration: none,
   $breadcrumb-bar-gap: spacing.$spacing-050,
 
   // code block
   $code-block-padding: spacing.$spacing-200,
-  $code-block-background-color: semantic.$color-brand-secundary-subtle,
+  $code-block-background-color: semantic.$color-brand-secondary-subtle,
   $code-block-border-radius: border-radii.$border-radius-s,
+
+  // expando rows
+  $expando-rows-border-width: 0 0 2px 0,
+  $expando-rows-border-style: solid,
+  $expando-rows-border-color: color-scheme.$violet-200,
+
+  // emphasized
+  $emphasized-font-size: body-text.$body-text-l,
+  $emphasized-font-weight: font-weight.$font-weight-medium,
+  $emphasized-line-height: line-height.$line-height-l,
+
+  // de-emphasized
+  $de-emphasized-font-size: body-text.$body-text-s,
+  $de-emphasized-font-weight: font-weight.$font-weight-regular,
+  $de-emphasized-line-height: line-height.$line-height-s,
+  $de-emphasized-text-color: color-scheme.$grey-700,
+
+  // form combined field
+  $form-combined-field-input-border-radius: #{border-radii.$border-radius-m} 0 0
+    #{border-radii.$border-radius-m},
+  $form-combined-field-button-border-radius: 0 #{border-radii.$border-radius-m}
+    #{border-radii.$border-radius-m} 0,
 
   // footer
   $footer-background-color: color-scheme.$white,
@@ -86,12 +123,23 @@ and spacing sets */
   $footer-flex-wrap: wrap,
   $footer-justify-content: space-between,
   $footer-navigation-flex-direction: row,
+  $footer-border-width: 1px 0 0 0,
+  $footer-border-style: solid,
+  $footer-border-color: color-scheme.$grey-200,
+  $footer-min-height: 5.5rem,
+
+  // footer nav
+  $footer-navigation-gap: spacing.$spacing-200,
+  $footer-navigation-justify-content: space-between,
+  $footer-navigation-align-items: center,
+  $footer-navigation-flex-wrap: wrap,
 
   // form
   $form-align-items: flex-start,
   $form-text-color: semantic.$color-text-default,
   $form-gap: spacing.$spacing-200,
   $form-max-width: 40rem,
+  $form-accent-color: semantic.$color-brand-primary,
 
   // form group
   $form-group-gap: spacing.$spacing-050,
@@ -106,6 +154,18 @@ and spacing sets */
   $form-input-border-color: color-scheme.$grey-500,
   $form-input-border-radius: border-radii.$border-radius-s,
   $form-input-min-height: 3rem,
+
+  // headings
+  $h1-font-family: semantic.$font-family-secondary,
+  $h1-font-size: heading.$heading-xxl,
+  $h2-font-family: semantic.$font-family-secondary,
+  $h2-font-size: heading.$heading-xl,
+  $h3-font-family: semantic.$font-family-secondary,
+  $h3-font-size: heading.$heading-l,
+  $h4-font-family: semantic.$font-family-secondary,
+  $h4-font-size: heading.$heading-m,
+  $h5-font-size: heading.$heading-s,
+  $h6-font-size: heading.$heading-xs,
 
   // header
   $header-background-color: color-scheme.$white,
@@ -130,19 +190,84 @@ and spacing sets */
   $header-link-border-width: 0 0 4px 0,
   $header-link-border-style: solid,
   $header-link-border-color: transparent,
+  $header-link-min-height: 100%,
 
   // header current page
-  $header-link-current-text-color: semantic.$color-brand-secundary,
+  $header-link-current-text-color: semantic.$color-brand-secondary,
   $header-link-current-border-width: 0 0 4px 0,
   $header-link-current-border-style: solid,
-  $header-link-current-border-color: semantic.$color-brand-secundary,
+  $header-link-current-border-color: semantic.$color-brand-secondary,
 
   // header content wrapper
   $header-content-wrapper-flex-direction: row,
   $header-content-wrapper-width: 100%,
 
+  // link
+  $link-text-color: color-scheme.$blue-600,
+
   // list
-  $list-padding: 0,
+  $list-gap: spacing.$spacing-050,
+  $list-item-padding: spacing.$spacing-025,
+
+  // link hover
+  $link-hover-text-color: color-scheme.$blue-800,
+
+  // link visited
+  $link-visited-text-color: color-scheme.$violet-600,
+  $link-visited-hover-text-color: color-scheme.$violet-800,
+
+  // nav
+  $navigation-link-text-decoration: none,
+
+  // notification
+  $notification-padding-top: spacing.$spacing-100,
+  $notification-padding-right: spacing.$spacing-100,
+  $notification-padding-bottom: spacing.$spacing-100,
+  $notification-padding-left: spacing.$spacing-100,
+  $notification-border-style: solid,
+  $notification-border-width: 1px,
+  $notification-gap: spacing.$spacing-100,
+  $notification-border-radius: border-radii.$border-radius-m,
+
+  // notification block element
+  $notification-block-element-padding-top: spacing.$spacing-100,
+  $notification-block-element-padding-right: spacing.$spacing-100,
+  $notification-block-element-padding-bottom: spacing.$spacing-100,
+  $notification-block-element-padding-left: spacing.$spacing-100,
+  $notification-block-element-gap: spacing.$spacing-050,
+
+  // notification type
+  $notification-span-font-weight: bold,
+
+  // notification error
+  $notification-error-background-color:
+    semantic.$color-notification-error-subtle,
+  $notification-error-text-color: semantic.$color-text-default,
+  $notification-error-border-color: color-scheme.$black-05,
+
+  // notification warning
+  $notification-warning-background-color:
+    semantic.$color-notification-warning-subtle,
+  $notification-warning-text-color: semantic.$color-text-default,
+  $notification-warning-border-color: color-scheme.$black-05,
+
+  // notification explanation
+  $notification-explanation-background-color:
+    semantic.$color-notification-explanation-subtle,
+  $notification-explanation-text-color: semantic.$color-text-default,
+  $notification-explanation-border-color: color-scheme.$black-05,
+
+  // notification confirmation
+  $notification-confirmation-background-color:
+    semantic.$color-notification-confirmation-subtle,
+  $notification-confirmation-text-color: semantic.$color-text-default,
+  $notification-confirmation-border-color: color-scheme.$black-05,
+
+  // notification system
+  $notification-system-background-color:
+    semantic.$color-notification-system-subtle,
+  $notification-system-text-color: semantic.$color-text-default,
+  $notification-system-border-color: color-scheme.$black-05,
 
   // main
   $main-padding-top: #{spacing.$spacing-400},
@@ -157,8 +282,50 @@ and spacing sets */
   $section-padding-bottom: spacing.$spacing-100,
   $section-padding-left: spacing.$spacing-100,
   $section-max-width: 90rem,
-  $section-gap: spacing.$spacing-300,
+  $section-gap: spacing.$spacing-200,
   $section-flex-direction: column,
+
+  // sidemenu page
+  $sidemenu-page-padding-top: spacing.$spacing-400,
+  $sidemenu-page-padding-right: spacing.$spacing-400,
+  $sidemenu-page-padding-bottom: spacing.$spacing-400,
+  $sidemenu-page-padding-left: spacing.$spacing-400,
+
+  // sidemenu nav
+  $sidemenu-nav-width: 20rem,
+  $sidemenu-nav-padding-top: spacing.$spacing-400,
+  $sidemenu-nav-padding-right: spacing.$spacing-200,
+  $sidemenu-nav-padding-bottom: spacing.$spacing-400,
+  $sidemenu-nav-padding-left: spacing.$spacing-200,
+  $sidemenu-nav-border-width: 0 1px 0 0,
+  $sidemenu-nav-border-style: solid,
+  $sidemenu-nav-border-color: color-scheme.$grey-200,
+
+  // table
+  $table-head-border-width: 0 0 2px 0,
+  $table-head-border-style: solid,
+  $table-head-border-color: semantic.$color-brand-secondary,
+  $table-head-text-align: left,
+
+  // table head
+  $table-head-padding: spacing.$spacing-075 spacing.$spacing-075
+    spacing.$spacing-075 0,
+
+  // table cell
+  $table-cell-border-width: 0 0 1px 0,
+  $table-cell-border-style: solid,
+  $table-cell-border-color: color-scheme.$grey-150,
+  $table-cell-padding: spacing.$spacing-075 spacing.$spacing-075
+    spacing.$spacing-075 0,
+
+  // table foot
+  $table-foot-header-padding: spacing.$spacing-075 spacing.$spacing-075
+    spacing.$spacing-075 0,
+
+  // table caption
+  $table-caption-text-align: left,
+  $table-caption-text-color: color-scheme.$grey-700,
+  $table-caption-font-size: body-text.$body-text-s,
 
   // helpers
   $horizontal-gap: spacing.$spacing-100

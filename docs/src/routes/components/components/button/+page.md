@@ -7,8 +7,7 @@ nav:
   - Soorten knoppen: "#button-types"
 ---
 
-<h1 id="introduction">Knoppen</h1>
-
+<p id="introduction">Knoppen</p>
 <h2 id="quickstart">Snelstart</h2>
 
 1. Bepaal welk HTML-element geschikt is. Knoppen kunnen op verschillende

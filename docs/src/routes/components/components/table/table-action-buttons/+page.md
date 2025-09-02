@@ -7,10 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Tabel met actieknoppen</h1>
-
-Herhalende content zoals actieknoppen kunnen visueel als iconen weergegeven
-worden.
+<p class="introduction">Herhalende content zoals actieknoppen kunnen visueel als iconen weergegeven
+worden.</p>
 
 <h2 id="quick-start">Snelstart</h2>
 
@@ -118,30 +116,22 @@ SCSS importeren:
         <td>Jane doe</td>
         <td>
           <form>
-            <button type="submit" class="icon icon-user action-button">
-              Bekijk profiel
-            </button>
+            <button type="submit" class="icon icon-user action-button">Bekijk profiel</button>
           </form>
         </td>
         <td>
           <form>
-            <button type="submit" class="icon icon-check action-button">
-              Goedkeuren
-            </button>
+            <button type="submit" class="icon icon-check action-button">Goedkeuren</button>
           </form>
         </td>
         <td>
           <form>
-            <button type="submit" class="icon icon-close action-button">
-              Deactiveer
-            </button>
+            <button type="submit" class="icon icon-close action-button">Deactiveer</button>
           </form>
         </td>
         <td>
           <form>
-            <button type="submit" class="icon icon-trash action-button">
-              Verwijder
-            </button>
+            <button type="submit" class="icon icon-trash action-button">Verwijder</button>
           </form>
         </td>
       </tr>

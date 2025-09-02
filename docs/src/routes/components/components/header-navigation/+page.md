@@ -7,12 +7,10 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Header Navigation</h1>
-
-De header-navigation component biedt een flexibele en toegankelijke
+<p class="introduction">De header-navigation component biedt een flexibele en toegankelijke
 navigatiebalk voor websites. Het ondersteunt verschillende configuraties, zoals
 een logo, zoekveld, en meerdere menu's. Deze component is ontworpen om te
-voldoen aan de toegankelijkheidsrichtlijnen en biedt een responsieve ervaring.
+voldoen aan de toegankelijkheidsrichtlijnen en biedt een responsieve ervaring.</p>
 
 <h2 id="quick-start">Snelstart</h2>
 
@@ -43,9 +41,7 @@ SCSS importeren:
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content"
-    >Ga direct naar inhoud</a
-  >
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
   <nav
     data-open-label="Menu"
@@ -78,9 +74,7 @@ SCSS importeren:
 ```html
 <header>
   <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content"
-      >Ga direct naar inhoud</a
-    >
+    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
     <nav
       data-open-label="Menu"
@@ -113,9 +107,7 @@ SCSS importeren:
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content"
-    >Ga direct naar inhoud</a
-  >
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
   <nav
     data-open-label="Menu"
@@ -155,9 +147,7 @@ SCSS importeren:
 ```html
 <header>
   <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content"
-      >Ga direct naar inhoud</a
-    >
+    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
     <nav
       data-open-label="Menu"
@@ -166,9 +156,7 @@ SCSS importeren:
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-      <a href="/" class="logo">
-        <img src="/img/logo-white.svg" alt="Placeholder logo" />Manon
-      </a>
+      <a href="/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
 
       <div class="collapsing-element">
         <ul>
@@ -195,9 +183,7 @@ SCSS importeren:
 ```html
 <header>
   <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content"
-      >Ga direct naar inhoud</a
-    >
+    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
     <nav
       data-open-label="Menu"
@@ -235,9 +221,7 @@ SCSS importeren:
 ```html
 <header>
   <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content"
-      >Ga direct naar inhoud</a
-    >
+    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
     <nav
       data-open-label="Menu"
@@ -255,11 +239,7 @@ SCSS importeren:
 
         <ul class="actions">
           <li>
-            <a
-              href="/examples/header-navigation-with-form-button"
-              class="avatar"
-              >A</a
-            >
+            <a href="/examples/header-navigation-with-form-button" class="avatar">A</a>
           </li>
           <li>
             <form action="/logout" method="POST" class="inline">
@@ -286,13 +266,9 @@ SCSS importeren:
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content"
-    >Ga direct naar inhoud</a
-  >
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-  <a href="/" class="logo">
-    <img src="/img/logo.svg" alt="Placeholder logo" />Manon
-  </a>
+  <a href="/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
 
   <nav
     data-open-label="Menu"

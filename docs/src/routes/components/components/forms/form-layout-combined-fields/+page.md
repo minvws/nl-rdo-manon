@@ -7,10 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Gecombineerde velden</h1>
-
-Gecombineerde velden zijn invoervelden die samen met een knop of icoon worden
-weergegeven.
+<p class="introduction">Gecombineerde velden zijn invoervelden die samen met een knop of icoon worden
+weergegeven.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -39,11 +37,7 @@ weergegeven.
   <div>
     <label for="voorbeeld-1-date-1-start">Ipsum</label>
     <div class="combined-field">
-      <input
-        id="voorbeeld-1-date-1-start"
-        name="voorbeeld-1-date-1-start"
-        type="text"
-      />
+      <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" type="text" />
       <button class="icon icon-cat">Cat</button>
     </div>
   </div>

@@ -7,12 +7,10 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">"Ga direct naar inhoud"-knop</h1>
-
-Voeg gebruiksvriendelijkheid toe voor gebruikers die gebruik maken van
+<p class="introduction">Voeg gebruiksvriendelijkheid toe voor gebruikers die gebruik maken van
 hulptechnologiën of enkel met toetsenbord navigeren. Deze knop geeft gebruikers
 de mogelijkheid om direct naar de inhoud van de pagina te springen. Hiermee
-wordt voorkomen dat de gebruiker langs onnodig veel elementen moet navigeren.
+wordt voorkomen dat de gebruiker langs onnodig veel elementen moet navigeren.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -42,9 +40,7 @@ SCSS importeren:
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content"
-    >Ga direct naar inhoud</a
-  >
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
   <nav aria-label="Navigatie voorbeeld header">
     <div>

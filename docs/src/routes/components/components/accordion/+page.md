@@ -7,10 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Accordeon</h1>
-
-Een accordeon biedt een verticale keuzelijst die je per onderdeel kunt
-openklappen om meer informatie te tonen.
+<p id="introduction">Een accordeon biedt een verticale keuzelijst die je per onderdeel kunt
+openklappen om meer informatie te tonen.</p>
 
 <h2 id="quick-start">Snelstart</h2>
 
@@ -110,13 +108,12 @@ import "@minvws/manon/js/accordion.js";
     <div aria-labelledby="example-1-accordion-item-1">
       <h1>Titel van de content binnen het accordeon-element</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc
-        nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend
-        nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor
-        at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper
-        sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero
-        gravida, fringilla odio venenatis, condimentum lorem.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu
+        semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed
+        justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus
+        sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget
+        lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis,
+        condimentum lorem.
       </p>
       <ul>
         <li>Lorem ipsum</li>
@@ -130,13 +127,12 @@ import "@minvws/manon/js/accordion.js";
     <div aria-labelledby="example-1-accordion-item-2">
       <h1>Titel van de content binnen het accordeon-element</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc
-        nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend
-        nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor
-        at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper
-        sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero
-        gravida, fringilla odio venenatis, condimentum lorem.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu
+        semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed
+        justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus
+        sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget
+        lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis,
+        condimentum lorem.
       </p>
       <ul>
         <li>Lorem ipsum</li>
@@ -198,13 +194,12 @@ import "@minvws/manon/js/accordion.js";
     <div aria-labelledby="example-2-accordion-item-1">
       <h1>Titel van de content binnen het accordeon-element</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc
-        nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend
-        nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor
-        at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper
-        sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero
-        gravida, fringilla odio venenatis, condimentum lorem.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu
+        semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed
+        justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus
+        sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget
+        lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis,
+        condimentum lorem.
       </p>
       <ul>
         <li>Lorem ipsum</li>
@@ -218,13 +213,12 @@ import "@minvws/manon/js/accordion.js";
     <div aria-labelledby="example-2-accordion-item-2">
       <h1>Titel van de content binnen het accordeon-element</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc
-        nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend
-        nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor
-        at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper
-        sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero
-        gravida, fringilla odio venenatis, condimentum lorem.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu
+        semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed
+        justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus
+        sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget
+        lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis,
+        condimentum lorem.
       </p>
       <ul>
         <li>Lorem ipsum</li>
@@ -286,13 +280,12 @@ import "@minvws/manon/js/accordion.js";
     <div aria-labelledby="example-3-accordion-item-1">
       <h1>Titel van de content binnen het accordeon-element</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc
-        nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend
-        nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor
-        at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper
-        sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero
-        gravida, fringilla odio venenatis, condimentum lorem.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu
+        semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed
+        justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus
+        sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget
+        lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis,
+        condimentum lorem.
       </p>
       <ul>
         <li>Lorem ipsum</li>
@@ -306,13 +299,12 @@ import "@minvws/manon/js/accordion.js";
     <div aria-labelledby="example-3-accordion-item-2">
       <h1>Titel van de content binnen het accordeon-element</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        suscipit egestas leo, eu semper erat congue at. Nulla pellentesque nunc
-        nisl, at elementum ex aliquam ac. Fusce sed justo ullamcorper, eleifend
-        nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus sem, tempor
-        at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper
-        sapien eget lobortis. Phasellus ut sodales sem. Aenean quis libero
-        gravida, fringilla odio venenatis, condimentum lorem.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu
+        semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed
+        justo ullamcorper, eleifend nibh a, fringilla lorem. Aliquam erat volutpat. Aenean risus
+        sem, tempor at rhoncus in, suscipit hendrerit arcu. Suspendisse ultricies semper sapien eget
+        lobortis. Phasellus ut sodales sem. Aenean quis libero gravida, fringilla odio venenatis,
+        condimentum lorem.
       </p>
       <ul>
         <li>Lorem ipsum</li>

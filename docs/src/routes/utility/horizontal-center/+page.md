@@ -32,8 +32,8 @@ SCSS importeren:
   <!-- horizontaal uit te lijnen content -->
   <h1>Lorem ipsum</h1>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper
-    odio at mauris luctus, vel pharetra arcu egestas.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris luctus,
+    vel pharetra arcu egestas.
   </p>
 </div>
 ```

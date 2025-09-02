@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Bestand</h1>
+<p class="introduction">File upload, invoerveld voor het uploaden van bestanden.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -39,12 +39,6 @@ nav:
 ```html
 <form action="" method="post">
   <label for="file-example">Upload bestand</label>
-  <input
-    type="file"
-    id="file-example"
-    name="file-example"
-    accept=".doc, .docx, .pdf"
-    multiple
-  />
+  <input type="file" id="file-example" name="file-example" accept=".doc, .docx, .pdf" multiple />
 </form>
 ```

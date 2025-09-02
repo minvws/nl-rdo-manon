@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Ingelogd als</h1>
+<p class="introduction">Voor het weergeven van login meta data</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
