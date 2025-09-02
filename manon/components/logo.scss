@@ -49,6 +49,7 @@ a:focus.logo {
         border-radius: theme.$logo-img-border-radius,
         object-position: theme.$logo-img-object-position,
         object-fit: theme.$logo-img-object-fit,
+        padding: theme.$logo-img-padding,
         background-color: theme.$logo-img-background-color,
       )
     );
