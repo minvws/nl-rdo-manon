@@ -8,6 +8,7 @@ nav:
 ---
 
 <p id="introduction">Knoppen basisweergave</p>
+
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:

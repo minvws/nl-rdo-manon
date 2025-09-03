@@ -6,6 +6,7 @@ nav:
 ---
 
 <p id="introduction">Knoppen groeperen</p>
+
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
