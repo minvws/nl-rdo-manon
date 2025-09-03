@@ -1,6 +1,7 @@
 <script lang="ts">
   import { base } from "$app/paths";
   const baseUrl = `${base}/examples/pages/basic`;
+  import BreadcrumbNav from "$lib/BreadcrumbNav.svelte";
 </script>
 
 <header>
@@ -14,7 +15,7 @@
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href={baseUrl}>Home</a></li>
+        <li><a href={baseUrl} aria-current="page">Home</a></li>
         <li><a href={baseUrl}>About</a></li>
         <li><a href={baseUrl}>Contact</a></li>
       </ul>
@@ -25,6 +26,7 @@
 <main id="main-content" tabindex="-1">
 
   <section>
+    <BreadcrumbNav />
     <h1>Paginatitel</h1>
 
     <div class="content-wrapper">

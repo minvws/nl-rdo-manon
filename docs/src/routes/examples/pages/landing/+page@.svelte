@@ -14,7 +14,7 @@
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href={baseUrl}>Home</a></li>
+        <li><a href={baseUrl} aria-current="page">Home</a></li>
         <li><a href={baseUrl}>About</a></li>
         <li><a href={baseUrl}>Contact</a></li>
       </ul>
@@ -70,7 +70,7 @@
           </div>
 
         </div> <!-- Column 3-->
-        <a href="/">Meer projecten</a>
+        <a href="{baseUrl}">Meer projecten</a>
       </div> <!-- Content wrapper -->
   </section>
 </main>
