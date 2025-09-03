@@ -22,7 +22,7 @@
   </nav>
 </header>
 
-<main>
+<main id="main-content" tabindex="-1">
   <section class="auth">
     <h1>Inloggen</h1>
     <div class="content-wrapper">
