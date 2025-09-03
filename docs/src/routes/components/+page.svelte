@@ -68,6 +68,7 @@
                 <a href="{base}/components/layout/typography/max-line-length">Max line length</a>
               </li>
               <li><a href="{base}/components/layout/typography/paragraph">Paragraph</a></li>
+              <li><a href="{base}/components/layout/typography/page-title">Page-title</a></li>
               <li><a href="{base}/components/layout/typography/nota-bene">Nota bene</a></li>
             </ul>
           </nav>
