@@ -28,7 +28,7 @@ SCSS importeren:
 
 ### Voorbeeld: Link als button: `a`
 
-<a href="button" class="button">Lorem ipsum</a>
+<a href="/components/components/button" class="button">Lorem ipsum</a>
 
 ```html
 <a href="#" class="button">Lorem ipsum</a>

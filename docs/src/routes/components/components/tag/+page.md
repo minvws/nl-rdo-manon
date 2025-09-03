@@ -54,7 +54,7 @@ lijstelementen zie: [tags](/components/components/tags).
 ### Voorbeeld: Tags binnen een tabel
 
 Tabel-elementen visueel weergegeven als tag. Voor het direct aanspreken van alle
-tabelelementen zie: [tags](/tags).
+tabelelementen zie: [tags](/components/components/tags).
 
 <div class="horizontal-scroll">
   <table>
