@@ -13,54 +13,84 @@ Tabbladen worden gebruikt om verschillende inhoudssecties op één pagina overzi
 
 <h2 id="quickstart">Snelstart</h2>
 
+SCSS importeren:
+
 ```scss
 @use "@minvws/manon/tabs";
 ```
 
+JavaScript importeren (optioneel, zie het voorbeeld [Interactief component](#interactive)):
+
+```javascript
+@use "@minvws/manon/js/tabs.js";
+```
+
 <h2 id="examples">Voorbeelden</h2>
 
-### Voorbeeld: Tabbladen
+<h3 id="static-navigation">Statische navigatie</h3>
 
-Voeg de class `tabs` toe aan de gewenste elementen.
+Voeg de class `tabs` toe aan het gewenste element.
 
-<div class="tabs" id="tabs">
+<div class="tabs">
   <ul>
-    <li><span aria-current="page">Optie 1</span></li>
-    <li><a href="tabs">Optie 2</a></li>
-    <li><a href="tabs">Optie 3</a></li>
-    <li><a href="tabs">Optie 4</a></li>
+    <li><a href="tabs" aria-current="page">Optie 1</a></li>
+    <li><a href="https://example.com">Optie 2</a></li>
+    <li><a href="https://example.com">Optie 3</a></li>
+    <li><a href="https://example.com">Optie 4</a></li>
   </ul>
 </div>
 
 ```html
 <div class="tabs">
   <ul>
-    <li><span aria-current="page">Optie 1</span></li>
-    <li><a href="#0">Optie 2</a></li>
-    <li><a href="#0">Optie 3</a></li>
-    <li><a href="#0">Optie 4</a></li>
+    <li><a href="tabs" aria-current="page">Optie 1</a></li>
+    <li><a href="https://example.com">Optie 2</a></li>
+    <li><a href="https://example.com">Optie 3</a></li>
+    <li><a href="https://example.com">Optie 4</a></li>
   </ul>
 </div>
 ```
 
-### Voorbeeld: `aria-current` op `li`
+<h3 id="interactive-component">Interactief component</h3>
 
-<div class="tabs" id="li">
+<manon-tabs>
   <ul>
-    <li aria-current="page"><span>Optie 1</span></li>
-    <li><a href="#li">Optie 2</a></li>
-    <li><a href="#li">Optie 3</a></li>
-    <li><a href="#li">Optie 4</a></li>
+    <li><a href="#tabpanel-a">Tab A</a></li>
+    <li><a href="#tabpanel-b">Tab B</a></li>
+    <li><a href="#tabpanel-c">Tab C</a></li>
   </ul>
-</div>
+
+  <div id="tabpanel-a">
+    Inhoud van Tab-paneel A.
+  </div>
+
+  <div id="tabpanel-b">
+    Inhoud van Tab-paneel B.
+  </div>
+
+  <div id="tabpanel-c">
+    Inhoud van Tab-paneel C.
+  </div>
+</manon-tabs>
 
 ```html
-<div class="tabs">
+<manon-tabs>
   <ul>
-    <li aria-current="page"><span>Optie 1</span></li>
-    <li><a href="#0">Optie 2</a></li>
-    <li><a href="#0">Optie 3</a></li>
-    <li><a href="#0">Optie 4</a></li>
+    <li><a href="#tabpanel-a">Tab A</a></li>
+    <li><a href="#tabpanel-b">Tab B</a></li>
+    <li><a href="#tabpanel-c">Tab C</a></li>
   </ul>
-</div>
+
+  <div id="tabpanel-a">
+    Inhoud van Tab-paneel A.
+  </div>
+
+  <div id="tabpanel-b">
+    Inhoud van Tab-paneel B.
+  </div>
+
+  <div id="tabpanel-c">
+    Inhoud van Tab-paneel C.
+  </div>
+</manon-tabs>
 ```

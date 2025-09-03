@@ -437,6 +437,18 @@ and spacing sets */
   $section-content-wrapper-flex-direction: column,
   $section-content-wrapper-border-radius: border-radii.$border-radius-m,
 
+  // tabs
+  $tabs-gap: spacing.$spacing-100,
+  $tabs-item-border-style: solid,
+  $tabs-item-border-width: 0,
+  $tabs-item-padding: spacing.$spacing-050 0,
+  $tabs-item-text-color: semantic.$color-brand-primary-default,
+  $tabs-item-text-decoration: none,
+  $tabs-item-current-border-color: semantic.$color-brand-primary-default,
+  $tabs-item-current-border-width: 0 0 2px 0,
+  $tabs-item-current-font-weight: bold,
+  $tabs-item-hover-text-color: color-scheme.$oc-blue-9,
+
   // table
   $table-gap: spacing.$spacing-050,
   $table-head-background-color: color-scheme.$oc-gray-1,
