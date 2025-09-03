@@ -1,6 +1,6 @@
 <script lang="ts">
   import { base } from "$app/paths";
-  const BaseUrl = `${base}/examples/pages/login`;
+  const baseUrl = `${base}/examples/pages/login`;
 </script>
 
 <header>
@@ -14,9 +14,9 @@
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href={BaseUrl}>Home</a></li>
-        <li><a href={BaseUrl}>About</a></li>
-        <li><a href={BaseUrl}>Contact</a></li>
+        <li><a href={baseUrl}>Home</a></li>
+        <li><a href={baseUrl}>About</a></li>
+        <li><a href={baseUrl}>Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -60,9 +60,9 @@
 <footer>
   <nav>
     <ul>
-      <li><a href={BaseUrl}>Home</a></li>
-      <li><a href={BaseUrl}>About</a></li>
-      <li><a href={BaseUrl}>Contact</a></li>
+      <li><a href={baseUrl}>Home</a></li>
+      <li><a href={baseUrl}>About</a></li>
+      <li><a href={baseUrl}>Contact</a></li>
     </ul>
   </nav>
 </footer>
