@@ -22,7 +22,7 @@
   </nav>
 </header>
 
-<main id="main-content">
+<main id="main-content" tabindex="-1">
 
   <section>
     <h1>Paginatitel</h1>
