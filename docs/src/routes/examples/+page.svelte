@@ -24,10 +24,11 @@
       <div class="column-2">
         <nav aria-labelledby="example-pages-title" id="example-pages">
           <h3 id="example-pages-title">Voorbeeldpagina's</h3>
+          <p class="de-emphasized" aria-hidden="true">Voorbeelden openen een nieuw venster.</p>
           <ul>
-            <li><a href="{base}/examples/pages/basic">Basic</a></li>
-            <li><a href="{base}/examples/pages/landing/">Landing Page</a></li>
-            <li><a href="{base}/examples/pages/login">Login</a></li>
+            <li><a href="{base}/examples/pages/basic" target=”_blank”>Basic <span class="visually-hidden">Opent in een nieuw venster</span></a></li>
+            <li><a href="{base}/examples/pages/landing/" target=”_blank”>Landing Page <span class="visually-hidden">Opent in een nieuw venster</span></a></li>
+            <li><a href="{base}/examples/pages/login" target=”_blank”>Login <span class="visually-hidden">Opent in een nieuw venster</span></a></li>
           </ul>
         </nav>
       </div>
