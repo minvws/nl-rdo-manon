@@ -19,6 +19,15 @@ article {
     box-sizing: border-box;
   }
 
+  @if (
+    theme.$article-flex-direction or
+      theme.$article-gap or
+      theme.$article-justify-content or
+      theme.$article-align-items
+  ) {
+    display: flex;
+  }
+
   @include theming.apply-from-theme(
     (
       background-color: theme.$article-background-color,

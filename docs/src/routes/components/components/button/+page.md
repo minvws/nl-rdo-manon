@@ -76,6 +76,7 @@ nav:
 <h2 id="button-types">Soorten knoppen</h2>
 
 - [Basisweergave](/components/components/button/button-base)
+- [Secundaire knoppen](/components/components/button/button-secondary)
 - [Knoppen groeperen](/components/components/button/button-container)
 - [Call to action button](/components/components/button/call-to-action)
 - [Icoonknoppen](/components/components/button/icon)

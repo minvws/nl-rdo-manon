@@ -120,23 +120,28 @@ body > footer,
 
   nav {
     @if (
-      theme.$footer-nav-gap or
-        theme.$footer-nav-justify-content or
-        theme.$footer-nav-align-items or
-        theme.$footer-nav-flex-wrap
+      theme.$footer-navigation-gap or
+        theme.$footer-navigation-justify-content or
+        theme.$footer-navigation-align-items or
+        theme.$footer-navigation-flex-wrap
     ) {
       display: flex;
       width: 100%;
     }
 
-    flex-direction: theme.$footer-nav-flex-direction;
+    flex-direction: theme.$footer-navigation-flex-direction;
 
     @include theming.apply-from-theme(
       (
-        gap: theme.$footer-nav-gap,
-        justify-content: theme.$footer-nav-justify-content,
-        align-items: theme.$footer-nav-align-items,
-        flex-wrap: theme.$footer-nav-flex-wrap,
+        gap: theme.$footer-navigation-gap,
+        flex-direction: theme.$footer-navigation-flex-direction,
+        justify-content: theme.$footer-navigation-justify-content,
+        align-items: theme.$footer-navigation-align-items,
+        flex-wrap: theme.$footer-navigation-flex-wrap,
+        padding-top: theme.$footer-navigation-padding-top,
+        padding-right: theme.$footer-navigation-padding-right,
+        padding-bottom: theme.$footer-navigation-padding-bottom,
+        padding-left: theme.$footer-navigation-padding-left,
       )
     );
 
