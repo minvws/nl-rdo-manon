@@ -22,7 +22,7 @@
     </ul>
   </SideMenu>
   <article>
-    <h1>Ronde afbeelding</h1>
+    <h1 class="page-title">Ronde afbeelding</h1>
     <div class="content-wrapper">
       <section id="introduction">
         <h2>Benodigde stappen</h2>

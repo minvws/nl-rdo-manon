@@ -12,7 +12,7 @@
 
 <main id="main-content" tabindex="-1">
   <section id="introduction">
-    <h1>Componenten</h1>
+    <h1 class="page-title">Componenten</h1>
     <div class="content-wrapper">
       <p>
         Componenten zijn herbruikbare bouwstenen die gebruikt worden om de gebruikersinterface van

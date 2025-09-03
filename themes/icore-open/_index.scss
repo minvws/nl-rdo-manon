@@ -369,6 +369,11 @@ and spacing sets */
   $pagination-link-active-text-color: semantic.$color-brand-primary-default,
   $pagination-link-active-font-weight: bold,
 
+  // page title
+  $page-title-max-width: 60rem,
+  $page-title-width: 100%,
+  $page-title-margin: 0 auto,
+
   // Sidemenu
   $sidemenu-nav-padding-top: spacing.$spacing-100,
   $sidemenu-nav-padding-right: spacing.$spacing-200,

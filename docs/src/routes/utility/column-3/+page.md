@@ -7,8 +7,6 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Layout drie kolommen</h1>
-
 Verdeling in drie gelijke kolommen vanaf de ingestelde breekpunten.
 
 <h2 id="quick-start">Snelstart</h2>

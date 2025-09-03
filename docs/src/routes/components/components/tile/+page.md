@@ -44,7 +44,7 @@ zijn of visueel meer aandacht mag krijgen om de gebruiker te attenderen.
 Voeg `class="tile"` toe voor de tegelweergave op een enkel element.
 
 <div class="tile" role="group">
-  <h1>Lorem ipsum dolor set</h1>
+  <h2>Lorem ipsum dolor set</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
     amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -53,7 +53,7 @@ Voeg `class="tile"` toe voor de tegelweergave op een enkel element.
 
 ```html
 <div class="tile" role="group">
-  <h1>Lorem ipsum dolor set</h1>
+  <h2>Lorem ipsum dolor set</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
     convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -71,7 +71,7 @@ Bijvoorbeeld: `<div class="tiles">`
 
 <div class="tiles column-3">
   <div role="group">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
       amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -79,7 +79,7 @@ Bijvoorbeeld: `<div class="tiles">`
   </div>
 
   <div role="group">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
       amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -87,7 +87,7 @@ Bijvoorbeeld: `<div class="tiles">`
   </div>
 
   <div role="group">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
       amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -98,7 +98,7 @@ Bijvoorbeeld: `<div class="tiles">`
 ```html
 <div class="tiles column-3">
   <div role="group">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
       convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -106,7 +106,7 @@ Bijvoorbeeld: `<div class="tiles">`
   </div>
 
   <div role="group">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
       convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -114,7 +114,7 @@ Bijvoorbeeld: `<div class="tiles">`
   </div>
 
   <div role="group">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
       convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -129,7 +129,7 @@ Voeg de class `image-cover` toe voor de correcte weergave.
 
 <div role="group" class="tile image-cover">
   <img src="$img/strand.jpg" alt="Foto van een strand" />
-  <h1>Lorem ipsum</h1>
+  <h2>Lorem ipsum</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
     amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -139,7 +139,7 @@ Voeg de class `image-cover` toe voor de correcte weergave.
 ```html
 <div role="group" class="tile image-cover">
   <img src="$img/strand.jpg" alt="Foto van een strand" />
-  <h1>Lorem ipsum</h1>
+  <h2>Lorem ipsum</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
     convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.

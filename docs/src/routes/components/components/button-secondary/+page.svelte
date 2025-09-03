@@ -25,7 +25,7 @@
   <article id="button-secondary">
     <div>
       <section id="introduction">
-        <h1>Secondary button</h1>
+        <h1 class="page-title">Secondary button</h1>
         <p>Subtiele knopweergave.</p>
 
         <ol>

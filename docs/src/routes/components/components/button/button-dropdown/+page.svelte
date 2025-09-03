@@ -27,7 +27,7 @@
   <article id="button-base">
     <div>
       <section id="introduction">
-        <h1>Dropdown button</h1>
+        <h1 class="page-title">Dropdown button</h1>
         <p>Knop met openklapbaar menu.</p>
 
         <ol>
