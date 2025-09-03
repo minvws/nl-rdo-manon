@@ -258,7 +258,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="/examples/header-navigation-with-logo-above"
+    src="/examples/header-navigation-with-logo"
     title="Voorbeeld"
     height="320px"
   ></iframe>
