@@ -7,9 +7,7 @@
 @mixin apply-from-theme($map) {
   @each $prop, $value in $map {
     @if $value {
-      & {
-        #{$prop}: $value;
-      }
+      #{$prop}: $value;
     }
   }
 }

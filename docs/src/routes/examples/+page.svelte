@@ -14,69 +14,24 @@
   <section>
     <h1>Voorbeelden</h1>
 
+  <section id="example-pages">
+    <h2>Voorbeeldpagina's</h2>
     <div class="content-wrapper">
-      <section id="introduction">
-        <p>
-          Deze pagina bevat voorbeelden van verschillende componenten en elementen die beschikbaar zijn
-          in de documentatie.
-        </p>
-      </section>
-
-      <section id="example-pages">
-        <h2>Voorbeeldpagina's</h2>
-        <p>
-          De volgende pagina's bevatten voorbeelden van complete pagina's die gebruik maken van de
-          componenten en elementen uit de documentatie.
-        </p>
-        <div class="column-2">
-          <nav aria-labelledby="example-pages-title" id="example-pages">
-            <h3 id="example-pages-title">Voorbeeldpagina's</h3>
-            <ul>
-              <li><a href="{base}/examples/pages/login">Login</a></li>
-              <li><a href="{base}/examples/pages/landing-page/">Landing Page</a></li>
-            </ul>
-          </nav>
-        </div>
-      </section>
-
-      <section id="available-examples">
-        <h2>Beschikbare voorbeelden</h2>
-        <div class="column-3">
-          <nav aria-labelledby="example-types-title" id="example-types">
-            <h3 id="example-types-title">Voorbeeldtypen</h3>
-            <ul>
-              <li><a href="{base}/examples/breadcrumb-bar">Breadcrumb Bar</a></li>
-              <li><a href="{base}/examples/footer-link-unvisited">Footer Link Unvisited</a></li>
-              <li><a href="{base}/examples/footer-link-visited">Footer Link Visited</a></li>
-              <li>
-                <a href="{base}/examples/footer-navigation-link-unvisited"
-                  >Footer Navigation Link Unvisited</a
-                >
-              </li>
-              <li>
-                <a href="{base}/examples/footer-navigation-link-visited"
-                  >Footer Navigation Link Visited</a
-                >
-              </li>
-              <li>
-                <a href="{base}/examples/header-navigation-link-unvisited"
-                  >Header Navigation Link Unvisited</a
-                >
-              </li>
-              <li>
-                <a href="{base}/examples/header-navigation-link-visited"
-                  >Header Navigation Link Visited</a
-                >
-              </li>
-              <li>
-                <a href="{base}/examples/header-navigation-with-content-wrapper"
-                  >Header Navigation with Content Wrapper</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </section>
+      <p>
+        De volgende pagina's bevatten voorbeelden van complete pagina's die gebruik maken van de
+        componenten en elementen uit de documentatie.
+      </p>
+      <div class="column-2">
+        <nav aria-labelledby="example-pages-title" id="example-pages">
+          <h3 id="example-pages-title">Voorbeeldpagina's</h3>
+          <p class="de-emphasized" aria-hidden="true">Voorbeelden openen een nieuw venster.</p>
+          <ul>
+            <li><a href="{base}/examples/pages/basic" target=”_blank”>Basic <span class="visually-hidden">Opent in een nieuw venster</span></a></li>
+            <li><a href="{base}/examples/pages/landing/" target=”_blank”>Landing Page <span class="visually-hidden">Opent in een nieuw venster</span></a></li>
+            <li><a href="{base}/examples/pages/login" target=”_blank”>Login <span class="visually-hidden">Opent in een nieuw venster</span></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </section>
 </main>

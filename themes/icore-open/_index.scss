@@ -41,7 +41,7 @@ and spacing sets */
   $article-content-wrapper-padding-bottom: spacing.$spacing-300,
   $article-content-wrapper-padding-left: spacing.$spacing-200,
   $article-content-wrapper-max-width: 60rem,
-  $article-content-wrapper-gap: spacing.$spacing-300,
+  $article-content-wrapper-gap: spacing.$spacing-250,
   $article-content-wrapper-flex-direction: column,
   $article-content-wrapper-border-radius: border-radii.$border-radius-m,
 
@@ -118,6 +118,14 @@ and spacing sets */
 
   // color picker
   $color-picker-border-radius: border-radii.$border-radius-s,
+
+  // de-emphasized
+  $de-emphasized-font-size: body-text.$body-text-s,
+  $de-emphasized-text-color: color-scheme.$oc-gray-7,
+
+  // emphasized
+  $emphasized-font-size: body-text.$body-text-l,
+  $emphasized-font-weight: font-weight.$font-weight-medium,
 
   // form
   $form-align-items: flex-start,
@@ -233,6 +241,7 @@ and spacing sets */
   $hero-content-wrapper-text-align: center,
   $hero-content-wrapper-margin: 0 auto,
   $hero-content-wrapper-background-color: transparent,
+  $hero-content-wrapper-gap: spacing.$spacing-100,
 
   // utility
   $horizontal-gap: spacing.$spacing-100,
@@ -380,7 +389,7 @@ and spacing sets */
   $section-content-wrapper-padding-bottom: spacing.$spacing-300,
   $section-content-wrapper-padding-left: spacing.$spacing-200,
   $section-content-wrapper-max-width: 60rem,
-  $section-content-wrapper-gap: spacing.$spacing-300,
+  $section-content-wrapper-gap: spacing.$spacing-250,
   $section-content-wrapper-flex-direction: column,
   $section-content-wrapper-border-radius: border-radii.$border-radius-m,
 

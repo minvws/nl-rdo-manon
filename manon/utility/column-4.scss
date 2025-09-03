@@ -15,6 +15,10 @@ $columns-breakpoint-3: 70rem !default;
     width: 100%;
     box-sizing: border-box;
   }
+
+  img {
+    max-width: 100%;
+  }
 }
 
 @media (width >= $columns-breakpoint-1) {

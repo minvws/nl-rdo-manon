@@ -20,6 +20,10 @@ header nav {
       box-sizing: border-box;
     }
 
+    img {
+      max-width: 100%;
+    }
+
     @media (width >= $breakpoint) {
       gap: theme.$layout-gap;
 
