@@ -13,6 +13,7 @@
 <main id="main-content" tabindex="-1">
   <section>
     <h1>Voorbeelden</h1>
+  </section>
 
   <section id="example-pages">
     <h2>Voorbeeldpagina's</h2>
