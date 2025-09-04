@@ -10,7 +10,7 @@ nav:
 <p id="introduction">Icoonknoppen zonder achtergrond geven geen tekst weer. Voeg wel altijd de
 knoptekst toe voor gebruikers die gebruik maken van hulptechnologiën.</p>
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
@@ -29,7 +29,9 @@ SCSS importeren:
 </button>
 
 ```html
-<button class="icon-only"><span class="icon icon-search" aria-hidden="true"></span>Zoeken</button>
+<button class="icon-only">
+  <span class="icon icon-search" aria-hidden="true"></span>Zoeken
+</button>
 ```
 
 ### Voorbeeld: `button` met `svg`
