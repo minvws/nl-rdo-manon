@@ -1,10 +1,6 @@
 ---
 title: Code & Code block
 breadcrumb: Code & Code block
-nav:
-  - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <p class="introduction"> Code & Code block</p>

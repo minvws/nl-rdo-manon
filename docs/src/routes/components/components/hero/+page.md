@@ -1,10 +1,6 @@
 ---
 title: Hero
 breadcrumb: Hero
-nav:
-  - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <p class="warning">
