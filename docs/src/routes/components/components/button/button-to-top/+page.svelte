@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
   <article>
-    <h1>Terug naar hoofdmenu knop</h1>
+    <h1 class="page-title">Terug naar hoofdmenu knop</h1>
 
     <div class="content-wrapper">
       <section id="introduction">

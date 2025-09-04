@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
   <section>
-    <h1 id="introduction">Wachtwoord</h1>
+    <h1 id="introduction" class="page-title">Wachtwoord</h1>
     <div class="content-wrapper">
       <h2 id="quickstart">Snelstart</h2>
       <p>SCSS importeren:</p>

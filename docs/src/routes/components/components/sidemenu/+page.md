@@ -81,7 +81,7 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
   </nav>
   <article>
     <div>
-      <h1>Lorem ipsum</h1>
+      <h2>Lorem ipsum</h2>
       <p>Dolor set amet conseqtetur adepicing elit</p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus ac turpis convallis

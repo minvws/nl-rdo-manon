@@ -10,7 +10,7 @@ breadcrumb: Main testpagina
 ```html
 <main>
   <div>
-    <h1>Main testpagina</h1>
+    <h1 class="page-title">Main testpagina</h1>
     <p>Deze voorbeeldpagina maakt gebruik van de volgende html-structuur</p>
   </div>
 </main>

@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
   <article>
-    <h1>Tegelweergave met cover-afbeelding</h1>
+    <h1 class="page-title">Tegelweergave met cover-afbeelding</h1>
     <div class="content-wrapper">
       <section id="introduction">
         <p>Aandachtspunten:</p>
@@ -52,7 +52,7 @@
         <h4>Visueel voorbeeld:</h4>
         <div role="group" class="tile image-cover">
           <img src="$img/strand.jpg" alt="Foto van een strand" />
-          <h1>Lorem ipsum</h1>
+          <h2>Lorem ipsum</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
             amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -65,7 +65,7 @@
           code={`
 <div role="group" class="tile image-cover">
   <img src="/img/strand.jpg" alt="Foto van een strand">
-  <h1>Lorem ipsum</h1>
+  <h2>Lorem ipsum</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
 </div>
 `}
@@ -83,7 +83,7 @@
         <div class="tiles images-cover column-4">
           <div role="group">
             <img src="$img/strand.jpg" alt="Foto van een strand" />
-            <h1>Lorem ipsum</h1>
+            <h2>Lorem ipsum</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
               amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -92,7 +92,7 @@
 
           <div role="group">
             <img src="$img/strand.jpg" alt="Foto van een strand" />
-            <h1>Lorem ipsum</h1>
+            <h2>Lorem ipsum</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
               amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -101,7 +101,7 @@
 
           <div role="group">
             <img src="$img/strand.jpg" alt="Foto van een strand" />
-            <h1>Lorem ipsum</h1>
+            <h2>Lorem ipsum</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
               amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -110,7 +110,7 @@
 
           <div role="group">
             <img src="$img/strand.jpg" alt="Foto van een strand" />
-            <h1>Lorem ipsum</h1>
+            <h2>Lorem ipsum</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
               amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -125,25 +125,25 @@
 <div class="tiles images-cover column-4">
   <div role="group">
     <img src="/img/strand.jpg" alt="Foto van een strand">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
   </div>
 
   <div role="group">
     <img src="/img/strand.jpg" alt="Foto van een strand">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
   </div>
 
   <div role="group">
     <img src="/img/strand.jpg" alt="Foto van een strand">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
   </div>
 
   <div role="group">
     <img src="/img/strand.jpg" alt="Foto van een strand">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
   </div>
 </div>

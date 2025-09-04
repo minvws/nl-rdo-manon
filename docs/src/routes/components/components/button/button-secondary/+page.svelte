@@ -23,7 +23,7 @@
   </SideMenu>
 
   <article id="button-secondary">
-    <h1>Secondary button</h1>
+    <h1 class="page-title">Secondary button</h1>
 
     <div class="content-wrapper">
       <section id="introduction">

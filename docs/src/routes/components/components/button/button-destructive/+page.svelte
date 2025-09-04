@@ -22,8 +22,8 @@
     </ul>
   </SideMenu>
 
-  <article id="button-base">
-    <h1>Destructieve knop</h1>
+  <article id="button-destructive">
+    <h1 class="page-title">Destructieve knop</h1>
 
     <div class="content-wrapper">
       <section id="introduction">
@@ -64,7 +64,7 @@
         />
       </section>
 
-      <section id="button-base-input">
+      <section id="button-destructive-input">
         <h2><code>input type="button"</code></h2>
         <h3>Visuele weergave:</h3>
 

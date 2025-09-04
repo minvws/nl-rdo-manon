@@ -7,8 +7,6 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Layout fifty-fifty</h1>
-
 Verdeling 50% - 50% vanaf het ingestelde breekpunt.
 
 <h2 id="quick-start">Snelstart</h2>

@@ -7,8 +7,6 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Horizontaal uitgelijnd</h1>
-
 Het horizontaal uitlijnen van elementen binnen een container. Dit kan handig
 zijn voor het uitlijnen van knoppen, formulieren of andere elementen die naast
 elkaar moeten staan.

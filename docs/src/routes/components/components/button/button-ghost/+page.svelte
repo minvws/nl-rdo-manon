@@ -25,7 +25,7 @@
   <article id="button-ghost">
     <div>
       <section id="introduction">
-        <h1>Ghost button</h1>
+        <h1 class="page-title">Ghost button</h1>
         <p>Subtiele knopweergave.</p>
 
         <ol>

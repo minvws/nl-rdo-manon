@@ -12,7 +12,7 @@
 
 <main class="sidemenu" id="main-content" tabindex="-1">
   <article>
-    <h1>Tabel</h1>
+    <h1 class="page-title">Tabel</h1>
     <div class="content-wrapper">
       <section id="introduction">
         <p>Tabel</p>
