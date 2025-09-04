@@ -40,10 +40,10 @@ In dit voorbeeld staat het zijmenu binnen de pagina bij de content. Gebruik deze
 weergave alleen als de inhoud van het zijmenu specifiek over de content gaat.
 Bijvoorbeeld een inhoudsopgave. Hoort het zijmenu niet bij de inhoud van de
 pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
-[Zijmenu naast de pagina](/components/components/sidemenu/next-to-page).
+[Zijmenu naast de pagina]({base}/components/components/sidemenu/next-to-page).
 
 <div class="resize">
-  <iframe src="/examples/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
+  <iframe src="{base}/examples/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
 </div>
 
 ```html
@@ -123,7 +123,7 @@ header en footer.
 
 <div class="resize">
   <iframe
-    src="/examples/sidemenu-in-page-collapsible"
+    src="{base}/examples/sidemenu-in-page-collapsible"
     title="Voorbeeld"
     height="320px"
   ></iframe>
@@ -168,7 +168,7 @@ Gebruik deze weergave als de inhoud van het zijmenu niet over de content van de
 pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 
 <div class="resize">
-  <iframe src="/examples/sidemenu-next-to-page" title="Voorbeeld" height="320px"
+  <iframe src="{base}/examples/sidemenu-next-to-page" title="Voorbeeld" height="320px"
   ></iframe>
 </div>
 
@@ -232,7 +232,7 @@ breed is. Zoals bijvoorbeeld hoofdnavigatie.
 
 <div class="resize">
   <iframe
-    src="/examples/sidemenu-next-to-page-collapsible"
+    src="{base}/examples/sidemenu-next-to-page-collapsible"
     title="Voorbeeld"
     height="320px"
   ></iframe>

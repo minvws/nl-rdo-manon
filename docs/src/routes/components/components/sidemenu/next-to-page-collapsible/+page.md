@@ -15,7 +15,7 @@ pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 
 Gaat de inhoud van het zijmenu over de inhoud van de content. En hoort het bij
 de content. Gebruik dan:
-[Zijmenu binnen de pagina](/components/components/sidemenu/in-page).
+[Zijmenu binnen de pagina]({base}/components/components/sidemenu/in-page).
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -68,7 +68,7 @@ class `sidemenu-closed` toe aan de `body`.
 
 <div class="resize">
   <iframe
-    src="/examples/sidemenu-next-to-page-collapsible"
+    src="{base}/examples/sidemenu-next-to-page-collapsible"
     title="Voorbeeld"
     height="320px"
   ></iframe>
@@ -112,7 +112,7 @@ Het menu is standaard ingeklapt en kan door de gebruiker uitgeklapt worden.
 
 <div class="resize">
   <iframe
-    src="/examples/sidemenu-next-to-page-expandable"
+    src="{base}/examples/sidemenu-next-to-page-expandable"
     title="Voorbeeld"
     height="320px"
   ></iframe>

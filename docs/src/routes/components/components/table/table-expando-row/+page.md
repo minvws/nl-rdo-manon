@@ -62,7 +62,7 @@ import "@minvws/manon/js/expando-rows.js";
       `data-icon-open-class=""` voor het open-icoon en
       `data-icon-close-class=""` voor het sluit-icoon. Vul tussen de "" de
       icoon-classes in van de door jouw gebruikte iconenset. Voor meer
-      informatie over het toevoegen van iconensets, zie [Iconen](/components/components/icons). Voor
+      informatie over het toevoegen van iconensets, zie [Iconen]({base}/components/components/icons). Voor
       een implementatievoorbeeld zie het [html-voorbeeld](#examples).
 
 <div class="explanation" role="group" aria-label="Toelichting">

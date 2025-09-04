@@ -40,7 +40,7 @@
             Vertel de gebruiker welke eisen er gesteld zijn. Dit kan met een notificatie of met een
             openklapbare hulptekst. Voor meer informatie zie:
             <a
-              href="{base}/components/components/notifications/notification-explanation#explanation-paragraph"
+              href="{base}/components/components/notifications/notification-explanation"
               >toelichting - paragraaf</a
             >
             en <a href="{base}/components/components/forms/form-help">hulpteksten</a>.

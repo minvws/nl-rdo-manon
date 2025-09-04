@@ -22,7 +22,7 @@ SCSS importeren:
   leggen en in verschillende componenten te gebruiken. Denk bijvoorbeeld aan het
   vastleggen van de afstand tussen de blokken binnen de `main`, een `article` en
   een `section`. Voor meer informatie zie:
-  [Layout-basisset](/components/layout/layout-set)
+  [Layout-basisset]({base}/components/layout/layout-set)
 
 <h2 id="examples">Voorbeelden</h2>
 

@@ -23,7 +23,7 @@ nav:
   <li>
     Voeg `class="tile"` toe voor de Gegroepeerde content binnen tegels op een
     enkel element. Voor meer informatie zie:
-    [tegelweergave](/components/components/tile)
+    [tegelweergave]({base}/components/components/tile)
   </li>
   <li>
     Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en

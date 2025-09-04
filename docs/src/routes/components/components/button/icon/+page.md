@@ -22,9 +22,9 @@ SCSS importeren:
 ### Benodigde stappen
 
 1. Kies het juiste element voor de knop. Zie eventueel
-   [HTML-element kiezen](/components/components/button#button-situations).
+   [HTML-element kiezen]({base}/components/components/button#button-situations).
 2. Kies het soort icoon om toe te voegen. Zie
-   [Iconen](/components/components/icons).
+   [Iconen]({base}/components/components/icons).
    - Zie bij het gebruik van een icoon-lettertype de "met `span`" voorbeelden.
    - Zie bij het gebruik van een SVG-icoon de "met `svg`" voorbeelden.
 3. Kies de juiste aanpak voor het toevoegen van een icoon aan de knop.
@@ -32,7 +32,7 @@ SCSS importeren:
    - Krijgt de knop alleen een icoon? Zie dan voorbeelden "zonder tekst".
    - Is een subtielere weergave nodig met alléén een icoon zonder het visuele
      uiterlijk van een knop? Zie dan
-     [Icoonknoppen zonder achtergrond](/components/components/button/button-icon-only).
+     [Icoonknoppen zonder achtergrond]({base}/components/components/button/button-icon-only).
 
 <div class="explanation" role="group" aria-label="Toelichting">
   <span>Aandachtspunten</span>

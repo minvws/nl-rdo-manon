@@ -75,13 +75,13 @@ nav:
 
 <h2 id="button-types">Soorten knoppen</h2>
 
-- [Basisweergave](/components/components/button/button-base)
-- [Secundaire knoppen](/components/components/button/button-secondary)
-- [Knoppen groeperen](/components/components/button/button-container)
-- [Call to action button](/components/components/button/call-to-action)
-- [Icoonknoppen](/components/components/button/icon)
-- [Icoonknoppen zonder achtergrond](/components/components/button/button-icon-only)
-- [Dropdown button](/components/components/button/button-dropdown)
-- [Ghost button](/components/components/button/button-ghost)
-- [Destructieve knop](/components/components/button/button-destructive)
-- [Terug naar hoofdmenu](/components/components/button/button-to-top)
+- [Basisweergave]({base}/components/components/button/button-base)
+- [Secundaire knoppen]({base}/components/components/button/button-secondary)
+- [Knoppen groeperen]({base}/components/components/button/button-container)
+- [Call to action button]({base}/components/components/button/call-to-action)
+- [Icoonknoppen]({base}/components/components/button/icon)
+- [Icoonknoppen zonder achtergrond]({base}/components/components/button/button-icon-only)
+- [Dropdown button]({base}/components/components/button/button-dropdown)
+- [Ghost button]({base}/components/components/button/button-ghost)
+- [Destructieve knop]({base}/components/components/button/button-destructive)
+- [Terug naar hoofdmenu]({base}/components/components/button/button-to-top)

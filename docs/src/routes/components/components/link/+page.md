@@ -21,7 +21,7 @@ SCSS importeren:
   <span>Aandachtspunten</span>
   <p>
       De standaard ingestelde waarden binnen Manon maken gebruik van de <a
-      href="/components/layout/typography/body-text-set">Body text set</a>. Om gebruik te maken van deze set.
+      href="{base}/components/layout/typography/body-text-set">Body text set</a>. Om gebruik te maken van deze set.
     Laad de set eenmalig in voordat overige componenten er gebruik van
       maken.
   </p>

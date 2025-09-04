@@ -110,12 +110,12 @@ SCSS importeren:
 
 ### Voorbeeld: Link als `button` met `img`
 
-<!-- <a href="/components/button/icon" class="button icon-only"> -->
+<!-- <a href="{base}/components/button/icon" class="button icon-only"> -->
 <!--   Lorem ipsum <img src="" alt="Kat" /> -->
 <!-- </a> -->
 
 ```html
-<a href="/components/button/icon" class="button icon-only">
+<a href="{base}/components/button/icon" class="button icon-only">
   Lorem ipsum <img src="path/to/img.svg" alt="Kat" />
 </a>
 ```

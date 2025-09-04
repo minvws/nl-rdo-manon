@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p ic="introduction">Voor het geven van extra toelichting op een invoerveld.</p>
+<p id="introduction">Voor het geven van extra toelichting op een invoerveld.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
