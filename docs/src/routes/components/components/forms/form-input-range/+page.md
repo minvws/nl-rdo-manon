@@ -38,13 +38,7 @@ SCSS importeren:
 <form action="" method="post">
   <div>
     <label for="range-example-1">Range</label>
-    <input
-      type="range"
-      id="range-example-1"
-      name="range-example-1"
-      min="0"
-      max="100"
-    />
+    <input type="range" id="range-example-1" name="range-example-1" min="0" max="100" />
   </div>
 </form>
 ```
@@ -62,13 +56,7 @@ SCSS importeren:
 <form action="" method="post">
   <div class="horizontal">
     <label for="range-example-2">Range</label>
-    <input
-      type="range"
-      id="range-example-2"
-      name="range-example-2"
-      min="0"
-      max="100"
-    />
+    <input type="range" id="range-example-2" name="range-example-2" min="0" max="100" />
   </div>
 </form>
 ```

@@ -7,6 +7,9 @@ declare global {
     // interface PageData {}
     // interface Platform {}
   }
+
+  // Add base to globalThis for markdown files
+  var base: string;
 }
 
 export {};

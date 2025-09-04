@@ -39,12 +39,6 @@ nav:
 ```html
 <form action="" method="post">
   <label for="file-example">Upload bestand</label>
-  <input
-    type="file"
-    id="file-example"
-    name="file-example"
-    accept=".doc, .docx, .pdf"
-    multiple
-  />
+  <input type="file" id="file-example" name="file-example" accept=".doc, .docx, .pdf" multiple />
 </form>
 ```

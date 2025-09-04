@@ -37,11 +37,7 @@ weergegeven.</p>
   <div>
     <label for="voorbeeld-1-date-1-start">Ipsum</label>
     <div class="combined-field">
-      <input
-        id="voorbeeld-1-date-1-start"
-        name="voorbeeld-1-date-1-start"
-        type="text"
-      />
+      <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" type="text" />
       <button class="icon icon-cat">Cat</button>
     </div>
   </div>

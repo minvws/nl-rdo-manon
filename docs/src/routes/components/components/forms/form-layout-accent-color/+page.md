@@ -36,12 +36,7 @@ nav:
 ```html
 <form action="" method="post">
   <div>
-    <input
-      type="checkbox"
-      id="checkbox-example-base"
-      name="standaard-checkbox"
-      checked
-    />
+    <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" checked />
     <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
   </div>
 </form>
@@ -59,12 +54,7 @@ nav:
 ```html
 <form action="" method="post">
   <div>
-    <input
-      type="radio"
-      id="radio-example-base"
-      name="standaard-radio"
-      checked
-    />
+    <input type="radio" id="radio-example-base" name="standaard-radio" checked />
     <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
   </div>
 </form>
@@ -112,13 +102,7 @@ nav:
 <form action="" method="post">
   <div class="horizontal">
     <label for="range-example">Range</label>
-    <input
-      type="range"
-      id="range-example"
-      name="range-example"
-      min="0"
-      max="100"
-    />
+    <input type="range" id="range-example" name="range-example" min="0" max="100" />
   </div>
 </form>
 ```

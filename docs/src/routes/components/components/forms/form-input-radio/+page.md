@@ -60,15 +60,8 @@ SCSS importeren:
   <div class="required">
     <span class="nota-bene">Dit veld is verplicht</span>
     <div class="required">
-      <input
-        type="radio"
-        id="radio-button-example-required-1"
-        name="voorwaarden"
-        required
-      />
-      <label for="radio-button-example-required-1"
-        >verplicht Radio-selecteerknop</label
-      >
+      <input type="radio" id="radio-button-example-required-1" name="voorwaarden" required />
+      <label for="radio-button-example-required-1">verplicht Radio-selecteerknop</label>
     </div>
   </div>
 </form>
@@ -91,15 +84,8 @@ SCSS importeren:
 ```html
 <form action="" method="post">
   <div class="radio">
-    <input
-      type="radio"
-      id="radio-button-example-disabled"
-      name="disabled-radio-button"
-      disabled
-    />
-    <label for="radio-button-example-disabled"
-      >Lorem ipsum dolor sit amet</label
-    >
+    <input type="radio" id="radio-button-example-disabled" name="disabled-radio-button" disabled />
+    <label for="radio-button-example-disabled">Lorem ipsum dolor sit amet</label>
   </div>
 </form>
 ```
