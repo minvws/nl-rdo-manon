@@ -7,9 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Weergave opties voor pagina's met als formulieren als hoofdfunctie.</p>
+<h1 id="introduction">Introductie</h1>
 
-Het is ook mogelijk om de weergave van alle formulieren aan te passen. Gebruik
+Weergave opties voor pagina's met als formulieren als hoofdfunctie. Het is ook mogelijk om de weergave van alle formulieren aan te passen. Gebruik
 daarvoor: [Basis formulieren](/components/components/form).
 
 <h2 id="quickstart">Snelstart</h2>
