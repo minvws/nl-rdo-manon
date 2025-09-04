@@ -45,8 +45,9 @@
   </section>
 
     <section>
-      <h2>Onze projecten</h2>
       <div class="content-wrapper">
+        <h2>Onze projecten</h2>
+
         <div class="column-3">
           <div>
             <img src="$img/strand.jpg" alt="Foto van een strand" />

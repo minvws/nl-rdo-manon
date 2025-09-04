@@ -7,8 +7,6 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">nowrap</h1>
-
 Zorgt ervoor dat woorden en teksten niet afgebroken worden maar op dezelfde
 regel blijven doorlopen.
 

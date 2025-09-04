@@ -13,7 +13,7 @@
 
 <main id="main-content" tabindex="-1">
   <section>
-    <h1>Utility classes</h1>
+    <h1 class="page-title">Utility classes</h1>
     <div class="content-wrapper">
       <section id="introduction">
         <p>

@@ -22,7 +22,7 @@
     </ul>
   </SideMenu>
   <article>
-    <h1>Icoon-afbeelding</h1>
+    <h1 class="page-title">Icoon-afbeelding</h1>
     <div class="content-wrapper">
       <section id="introduction">
         <p>

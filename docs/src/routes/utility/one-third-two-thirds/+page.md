@@ -7,8 +7,6 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Layout eenderde tweederde</h1>
-
 Verdeling 33.33% - 66.66% vanaf het ingestelde breekpunt.
 
 <h2 id="quick-start">Snelstart</h2>

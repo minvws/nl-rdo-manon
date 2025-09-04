@@ -53,7 +53,7 @@
     </ul>
   </SideMenu>
   <article>
-    <h1>Iconen</h1>
+    <h1 class="page-title">Iconen</h1>
     <div class="content-wrapper">
       <section id="introduction">
         <p>

@@ -117,7 +117,7 @@ import "@minvws/manon/js/expando-rows.js";
       <tr class="expando-row">
         <td colspan="5">
           <span class="sr-only">Lorem ipsum dolor set</span>
-          <h1>Lorem ipsum details</h1>
+          <h2>Lorem ipsum details</h2>
           <p>De extra content.</p>
         </td>
       </tr>
@@ -141,7 +141,7 @@ import "@minvws/manon/js/expando-rows.js";
       <tr class="expando-row">
         <td colspan="5">
           <span class="sr-only">Lorem ipsum dolor set</span>
-          <h1>Lorem ipsum details</h1>
+          <h2>Lorem ipsum details</h2>
           <p>De extra content.</p>
         </td>
       </tr>
@@ -185,7 +185,7 @@ import "@minvws/manon/js/expando-rows.js";
       <tr class="expando-row">
         <td colspan="5">
           <span class="sr-only">Lorem ipsum dolor set</span>
-          <h1>Lorem ipsum details</h1>
+          <h2>Lorem ipsum details</h2>
           <p>De extra content.</p>
         </td>
       </tr>
@@ -209,7 +209,7 @@ import "@minvws/manon/js/expando-rows.js";
       <tr class="expando-row">
         <td colspan="5">
           <span class="sr-only">Lorem ipsum dolor set</span>
-          <h1>Lorem ipsum details</h1>
+          <h2>Lorem ipsum details</h2>
           <p>De extra content.</p>
         </td>
       </tr>

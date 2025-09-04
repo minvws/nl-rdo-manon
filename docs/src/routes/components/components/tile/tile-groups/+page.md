@@ -39,7 +39,7 @@ nav:
 #### Visueel voorbeeld:
 
 <div class="tile" role="group">
-  <h1>Lorem ipsum dolor set</h1>
+  <h2>Lorem ipsum dolor set</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
     amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -54,7 +54,7 @@ nav:
 
 ```html
 <div class="tile" role="group">
-  <h1>Lorem ipsum dolor set</h1>
+  <h2>Lorem ipsum dolor set</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
     convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.

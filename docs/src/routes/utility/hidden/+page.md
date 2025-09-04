@@ -7,8 +7,6 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Verbergen - <dfn>hidden</dfn></h1>
-
 Object verbergen. Door middel van een <code>display:none</code> wordt het object
 verborgen.
 

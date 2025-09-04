@@ -1,5 +1,5 @@
 <script module>
-  export const breadcrumb = "Logo";
+  export const breadcrumb = "Secondary button";
 </script>
 
 <script lang="ts">
@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-  <title>Logo</title>
+  <title>Secondary button</title>
 </svelte:head>
 
 <main class="sidemenu" id="main-content" tabindex="-1">
@@ -18,37 +18,50 @@
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
+      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
 
-  <article>
-    <h1 class="page-title">Logo</h1>
-    <div class="content-wrapper">
+  <article id="button-secondary">
+    <div>
       <section id="introduction">
-        <p>Logo component</p>
+        <h1 class="page-title">Secondary button</h1>
+        <p>Subtiele knopweergave.</p>
+
+        <ol>
+          <li>
+            Voeg de class <code>secondary</code> toe om gebruik te maken van de visuele weergave van
+            een "Secondary button".
+          </li>
+        </ol>
       </section>
 
       <section id="examples">
-        <h2>Voorbeelden</h2>
-        <h3>Visuele voorbeeld:</h3>
+        <h2><code>button</code></h2>
+        <h3>Visuele weergave:</h3>
 
-        <a
-          href="{base}/components/components/logo"
-          class="logo"
-          aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam"
-        >
-          <img src="$img/logo.svg" alt="Logo bedrijfs- of product-naam" />
-          Bedrijfs- of product-naam
-        </a>
+        <button class="secondary">Lorem ipsum</button>
 
         <h3>HTML-voorbeeld:</h3>
         <Code
           language="html"
           code={`
-<a href="{base}/components/components/logo" class="logo" aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam">
-  <img src="/logo.svg" alt="Logo bedrijfs- of product-naam" />
-  Bedrijfs- of product-naam
-</a>
+<button class="secondary">Lorem ipsum</button>
+`}
+        />
+      </section>
+
+      <section id="button-secondary-input">
+        <h2><code>input type="button"</code></h2>
+        <h3>Visuele weergave:</h3>
+
+        <input type="button" value="Lorem ipsum" class="secondary" />
+
+        <h3>HTML-voorbeeld:</h3>
+        <Code
+          language="html"
+          code={`
+<input type="button" value="Lorem ipsum" class="secondary">
 `}
         />
       </section>
@@ -57,7 +70,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/getting-started/installation"
+          <a href="{base}/documentation/import-styling"
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>
@@ -67,7 +80,7 @@
         <Code
           language="css"
           code={`
-@use "@minvws/manon/logo";
+      @use "@minvws/manon/button-secondary";
       `}
         />
       </section>

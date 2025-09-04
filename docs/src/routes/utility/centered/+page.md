@@ -7,8 +7,6 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Layout gecentreerd</h1>
-
 Centreerd de inhoud van het element op zowel de horizontale als de verticale as.
 
 <h2 id="quick-start">Snelstart</h2>
@@ -23,13 +21,13 @@ SCSS importeren:
 <h2 id="examples">Voorbeelden</h2>
 
 <div class="centered">
-  <h1>Lorem ipsum</h1>
+  <h2>Lorem ipsum</h2>
   <p>Dolor sit amet.</p>
 </div>
 
 ```html
 <div class="centered">
-  <h1>Lorem ipsum</h1>
+  <h2>Lorem ipsum</h2>
   <p>Dolor sit amet.</p>
 </div>
 ```
