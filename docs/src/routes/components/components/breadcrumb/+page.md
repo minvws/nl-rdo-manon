@@ -29,9 +29,9 @@ SCSS importeren:
 <nav class="breadcrumb-bar">
   <div>
     <ul>
-      <li><a href="/components">Componenten</a></li>
+      <li><a href="{base}/components">Componenten</a></li>
       <li>
-        <a href="/components/breadcrumb-bar" aria-current="page">Kruimelpad - breadcrumb-bar</a>
+        <a href="{base}/components/breadcrumb-bar" aria-current="page">Kruimelpad - breadcrumb-bar</a>
       </li>
     </ul>
   </div>

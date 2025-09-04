@@ -123,7 +123,7 @@ SCSS importeren:
 
 ### Voorbeeld: Link-knop met `span`
 
-<a href="./" class="button">
+<a href="{base}/" class="button">
   <span class="icon icon-user" aria-hidden="true"></span>
   Inloggen
 </a>
@@ -137,7 +137,7 @@ SCSS importeren:
 
 ### Voorbeeld: Link-knop met `svg`
 
-<a href="./" class="button">
+<a href="{base}/" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -158,7 +158,7 @@ SCSS importeren:
 </a>
 
 ```html
-<a href="./" class="button">
+<a href="{base}/" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -240,13 +240,13 @@ SCSS importeren:
 
 ### Voorbeeld: Link-knop met `span` zonder tekst
 
-<a href="./" class="button">
+<a href="{base}/" class="button">
   <span class="icon icon-user" aria-hidden="true"></span>
   <span class="visually-hidden">Inloggen</span>
 </a>
 
 ```html
-<a href="./" class="button">
+<a href="{base}/" class="button">
   <span class="icon icon-user" aria-hidden="true"></span>
   <span class="visually-hidden">Inloggen</span>
 </a>
@@ -254,7 +254,7 @@ SCSS importeren:
 
 ### Link-knop met `svg` zonder tekst
 
-<a href="./" class="button">
+<a href="{base}/" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -275,7 +275,7 @@ SCSS importeren:
 </a>
 
 ```html
-<a href="./" class="button">
+<a href="{base}/" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
