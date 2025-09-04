@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Weergave voor authenticatie-elementen. Login formulieren hebben vaak belang bij
+<p id="introduction">Weergave voor authenticatie-elementen. Login formulieren hebben vaak belang bij
 een smallere weergave dan overige formulieren.</p>
 
 <h2 id="quickstart">Snelstart</h2>

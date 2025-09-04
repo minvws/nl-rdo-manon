@@ -3,7 +3,7 @@ title: Notificaties
 breadcrumb: Notificaties
 ---
 
-<p class="introduction">Notificaties zijn korte berichten die gebruikers informeren over belangrijke
+<p id="introduction">Notificaties zijn korte berichten die gebruikers informeren over belangrijke
 gebeurtenissen of acties binnen een applicatie. Ze kunnen worden gebruikt om
 feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.</p>
 

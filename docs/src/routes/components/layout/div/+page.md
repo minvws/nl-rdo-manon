@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Voor het weergeven van content binnen een div direct binnen de main</p>
+<p id="introduction">Voor het weergeven van content binnen een div direct binnen de main</p>
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:

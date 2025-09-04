@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Set voor het instellen van de stijlkeuzes voor de hoofdtekst.</p>
+<p id="introduction">Set voor het instellen van de stijlkeuzes voor de hoofdtekst.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

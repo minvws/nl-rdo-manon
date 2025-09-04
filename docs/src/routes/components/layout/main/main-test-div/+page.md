@@ -3,7 +3,7 @@ title: Main testpagina
 breadcrumb: Main testpagina
 ---
 
-<p class="introduction">Componenten gegroepeerd in `div`'s binnen de `main`.</p>
+<p id="introduction">Componenten gegroepeerd in `div`'s binnen de `main`.</p>
 
 <h2>HTML-voorbeeld:</h2>
 

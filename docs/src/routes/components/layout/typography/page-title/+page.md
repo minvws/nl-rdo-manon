@@ -7,7 +7,7 @@ nav:
   - Gerelateerde pagina's: "#related"
 ---
 
-<p class="introduction">Dit component kan gebruikt worden om styling te koppelen aan de titel van de pagina.</p>
+<p id="introduction">Dit component kan gebruikt worden om styling te koppelen aan de titel van de pagina.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

@@ -9,7 +9,7 @@ nav:
   - Gerelateerde pagina's: "#related"
 ---
 
-<p class="introduction">Voor het gegroepeerd weergeven van content binnen tegels</p>
+<p id="introduction">Voor het gegroepeerd weergeven van content binnen tegels</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

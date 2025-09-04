@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Tegelweergave kan gebruikt worden om content visueel te groeperen om gebruikers
+<p id="introduction">Tegelweergave kan gebruikt worden om content visueel te groeperen om gebruikers
 te laten zien welke content bij elkaar hoort. Veel gebruikte toepassingen voor
 tegelweergave zijn bijvoorbeeld nieuwsberichten.</p>
 

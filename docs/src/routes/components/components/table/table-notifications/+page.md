@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Tabelelementen kunnen een meldig weergeven. Denk hierbij aan een foutmelding of
+<p id="introduction">Tabelelementen kunnen een meldig weergeven. Denk hierbij aan een foutmelding of
 een toelichting.</p>
 
 <h2 id="quick-start">Snelstart</h2>

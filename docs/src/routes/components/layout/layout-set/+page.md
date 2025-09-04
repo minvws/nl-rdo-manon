@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Basisset voor het vastleggen van layout-keuzes vanuit een centraal punt.</p>
+<p id="introduction">Basisset voor het vastleggen van layout-keuzes vanuit een centraal punt.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

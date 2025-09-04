@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Voor het geven van extra toelichting op een invoerveld.</p>
+<p ic="introduction">Voor het geven van extra toelichting op een invoerveld.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -65,7 +65,9 @@ import "@minvws/manon/js/form-help.js";
 
 ```html
 <form action="" method="post" class="help">
-  <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Help op simpel formulierveld</label>
+  <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+    >Help op simpel formulierveld</label
+  >
   <div>
     <input
       id="voorbeeld-text-input-met-hulptekst-simpel-1"

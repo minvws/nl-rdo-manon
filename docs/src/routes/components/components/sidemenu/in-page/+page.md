@@ -7,7 +7,7 @@ nav:
   - Bijbehorende bestanden: "#requirements"
 ---
 
-<p class="introduction">Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het
+<p id="introduction">Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het
 navigeren voor de gebruiker toegankelijk en overzichtelijk te houden.</p>
 
 In dit voorbeeld staat het zijmenu binnen de pagina bij de content. Gebruik deze

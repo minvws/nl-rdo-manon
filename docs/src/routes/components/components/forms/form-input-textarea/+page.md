@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Tekstveld</p>
+<p id="introduction">Tekstveld</p>
 
 <h2 id="quickstart">Snelstart</h2>
 SCSS importeren:

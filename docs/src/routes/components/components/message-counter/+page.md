@@ -9,7 +9,7 @@ nav:
   - Instelbare variabelen: "#variables"
 ---
 
-<p class="introduction">De notificatie-teller is bedoeld om de gebruiker te attenderen en te informeren
+<p id="introduction">De notificatie-teller is bedoeld om de gebruiker te attenderen en te informeren
 over nieuwe berichten of notificaties.</p>
 
 <h2 id="quickstart">Snelstart</h2>

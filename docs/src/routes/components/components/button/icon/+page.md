@@ -28,8 +28,8 @@ SCSS importeren:
    - Zie bij het gebruik van een icoon-lettertype de "met `span`" voorbeelden.
    - Zie bij het gebruik van een SVG-icoon de "met `svg`" voorbeelden.
 3. Kies de juiste aanpak voor het toevoegen van een icoon aan de knop.
-   - Krijgt de knop zowel tekst als een icoon? Zie dan [Met tekst](#with-text).
-   - Krijgt de knop alleen een icoon? Zie dan [Zonder tekst](#without-text).
+   - Krijgt de knop zowel tekst als een icoon? Zie dan voorbeelden "met tekst".
+   - Krijgt de knop alleen een icoon? Zie dan voorbeelden "zonder tekst".
    - Is een subtielere weergave nodig met alléén een icoon zonder het visuele
      uiterlijk van een knop? Zie dan
      [Icoonknoppen zonder achtergrond](/components/components/button/button-icon-only).

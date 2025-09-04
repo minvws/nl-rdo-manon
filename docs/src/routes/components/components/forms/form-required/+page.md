@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Voor het weergeven van verplichte velden.</p>
+<p id="introduction">Voor het weergeven van verplichte velden.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -44,7 +44,12 @@ SCSS importeren:
     <label for="voorbeeld-input-required">Ipsum</label>
     <div>
       <span class="nota-bene">Dit veld is verplicht</span>
-      <input id="voorbeeld-input-required" name="voorbeeld-input-required" type="text" required />
+      <input
+        id="voorbeeld-input-required"
+        name="voorbeeld-input-required"
+        type="text"
+        required
+      />
     </div>
   </div>
   <button type="submit">Verzend</button>

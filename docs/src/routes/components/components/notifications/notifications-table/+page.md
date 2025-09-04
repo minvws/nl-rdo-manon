@@ -7,7 +7,7 @@ nav:
   - Bijbehorende bestanden: "#requirements"
 ---
 
-<p class="introduction">Voor het weergeven van notificaties binnen tabellen</p>
+<p id="introduction">Voor het weergeven van notificaties binnen tabellen</p>
 
 <h2 id="quick-start">Snelstart</h2>
 

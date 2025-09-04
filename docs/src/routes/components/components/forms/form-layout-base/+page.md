@@ -7,7 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Opzet voor een basis formulier.</p>
+<p id="introduction">Opzet voor een basis formulier.</p>
+
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss

@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Navigatie</p>
+<p id="introduction">Navigatie</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

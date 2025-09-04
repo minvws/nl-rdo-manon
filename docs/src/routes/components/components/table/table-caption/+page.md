@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden
+<p id="introduction">Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden
 om een titel toe te voegen met daarin de omschrijving van de tabel. Voeg direct
 binnen de `table` een `caption` toe om de titel toe te voegen.</p>
 

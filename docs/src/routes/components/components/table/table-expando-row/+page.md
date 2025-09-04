@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Voor het tonen van complexe tabellen met bijbehorende details kan gekozen worden
+<p id="introduction">Voor het tonen van complexe tabellen met bijbehorende details kan gekozen worden
 voor een tabel met uitklapbare tabelrijen.</p>
 
 <h2 id="quickstart">Snelstart</h2>
