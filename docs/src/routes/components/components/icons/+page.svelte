@@ -99,11 +99,11 @@
 
         <h3>Icoon binnen link<code>a</code></h3>
         <h4>Visueel voorbeeld</h4>
-        <a href="/"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>
+        <a href="{base}/"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>
         <h4>HTML-voorbeeld</h4>
         <Code
           language="html"
-          code={`<a href="/"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>`}
+          code={`<a href="{base}/"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>`}
         />
 
         <h3><code>button</code></h3>
