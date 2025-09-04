@@ -22,7 +22,7 @@
   </SideMenu>
 
   <article>
-    <h1>Logo</h1>
+    <h1 class="page-title">Logo</h1>
     <div class="content-wrapper">
       <section id="introduction">
         <p>Logo component</p>

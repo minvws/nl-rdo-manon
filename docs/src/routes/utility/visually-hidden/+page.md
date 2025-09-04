@@ -7,8 +7,6 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Visueel verbergen - <dfn>visually hidden</dfn></h1>
-
 Verbergt objecten alleen visueel. Voor screenreaders blijven de objecten
 zichtbaar.
 

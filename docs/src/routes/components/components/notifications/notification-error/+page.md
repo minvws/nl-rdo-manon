@@ -25,7 +25,7 @@ SCSS importeren:
 
 <div class="error" role="group" aria-label="foutmelding">
   <span>Foutmelding:</span>
-  <h1>Lorem ipsum dolor set</h1>
+  <h2>Lorem ipsum dolor set</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
     facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
@@ -50,7 +50,7 @@ SCSS importeren:
 ```html
 <div class="error" role="group" aria-label="foutmelding">
   <span>Foutmelding:</span>
-  <h1>Lorem ipsum dolor set</h1>
+  <h2>Lorem ipsum dolor set</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
     facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus

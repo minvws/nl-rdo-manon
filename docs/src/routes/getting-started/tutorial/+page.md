@@ -107,7 +107,7 @@ root of your project directory. This will be the main HTML file for our page.
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1>Hello, Manon!</h1>
+    <h1 class="page-title">Hello, Manon!</h1>
   </body>
 </html>
 ```
@@ -244,7 +244,7 @@ Now, our `index.html` file should look like this:
         </div>
       </nav>
     </header>
-    <h1>Hello, Manon!</h1>
+    <h1 class="page-title">Hello, Manon!</h1>
   </body>
 </html>
 ```
@@ -293,7 +293,7 @@ replacing the existing `<h1>` tag:
 ```html
 <main>
   <section>
-    <h1>Hello, Manon!</h1>
+    <h1 class="page-title">Hello, Manon!</h1>
     <h2>Welcome to the Manon Tutorial</h2>
     <p>
       Welcome to the Manon tutorial. In this tutorial, we will learn how to use Manon to create a
@@ -327,7 +327,7 @@ Now, our `index.html` file should look like this:
     </header>
     <main>
       <section>
-        <h1>Hello, Manon!</h1>
+        <h1 class="page-title">Hello, Manon!</h1>
         <h2>Welcome to the Manon Tutorial</h2>
         <p>
           Welcome to the Manon tutorial. In this tutorial, we will learn how to use Manon to create

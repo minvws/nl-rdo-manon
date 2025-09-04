@@ -61,7 +61,7 @@
     </ul>
   </SideMenu>
   <article>
-    <h1>Sorteerbare tabel</h1>
+    <h1 class="page-title">Sorteerbare tabel</h1>
     <div class="content-wrapper">
       <section id="introduction">
         <p>
