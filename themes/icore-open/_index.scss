@@ -119,9 +119,22 @@ and spacing sets */
   // color picker
   $color-picker-border-radius: border-radii.$border-radius-s,
 
+  // columns
+  $columns-gap: 2.5rem,
+
   // de-emphasized
   $de-emphasized-font-size: body-text.$body-text-s,
   $de-emphasized-text-color: color-scheme.$oc-gray-7,
+
+  // description list
+  $description-list-width: 100%,
+  $description-list-border-width: 0 0 1px 0,
+  $description-list-border-style: solid,
+  $description-list-border-color: color-scheme.$oc-gray-2,
+  $description-list-item-title-width: 15rem,
+  $description-list-item-title-text-color: color-scheme.$oc-gray-7,
+  $description-list-item-title-padding: 0.5rem 0,
+  $description-list-item-data-padding: 0.5rem 0,
 
   // emphasized
   $emphasized-font-size: body-text.$body-text-l,

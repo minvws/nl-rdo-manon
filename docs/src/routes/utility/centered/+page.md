@@ -1,6 +1,6 @@
 ---
-title: Layout gecentreerd
-breadcrumb: "Layout gecentreerd"
+title: centered
+breadcrumb: "centered"
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
@@ -14,7 +14,7 @@ Centreerd de inhoud van het element op zowel de horizontale als de verticale as.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/layout-base";
+@use "@minvws/manon/layout";
 @use "@minvws/manon/layout-centered";
 ```
 
@@ -32,9 +32,9 @@ SCSS importeren:
 </div>
 ```
 
-<p class="explanation">
-  <span>Toelichting:</span> de inhoud van het blok wordt
-  gecenteerd. Als de inhoud 100% breed is kan het lijken alsof deze helper niet
+<p class="warning">
+  <span>Waarschuwing:</span> de inhoud van het blok wordt
+  gecenteerd. Als de inhoud de volle breedte inneemt kan het lijken alsof het centreren niet
   werkt. Pas in dat geval de breedte van de onderliggende elementen aan of kies
-  een andere geschikte layout. Tekst binnen de elementen wordt niet gecentreerd.
+  een andere geschikte layout. Tekst genest binnen de elementen wordt niet gecentreerd.
 </p>
