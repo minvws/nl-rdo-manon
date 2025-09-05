@@ -72,7 +72,15 @@ jobs:
           # Not strictly necessary here, but good to check for BASE_PATH-related
           # build issues early, since we need BASE_PATH for github pages.
           BASE_PATH: "/${{ github.event.repository.name }}"
-        run: pnpm run build
+        run: |
+          echo "Starting build process..."
+          pnpm run build 2>&1 | tee build.log
+          echo "Build completed. Checking for warnings/errors in build.log:"
+          if grep -i "Missing ID error\|Prerender HTTP error" build.log; then
+            echo "Found prerender issues in build log"
+          else
+            echo "No prerender issues found in build log"
+          fi
 
   sonarcloud:
     runs-on: ubuntu-latest
