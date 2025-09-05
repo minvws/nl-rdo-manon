@@ -52,21 +52,19 @@ SCSS importeren:
   <span>Toelichting:</span>
   <h2>Lorem ipsum dolor set</h2>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a
-    nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a
-    porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices.
-    Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat
-    scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut
-    maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a
-    augue sit amet condimentum.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
   </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a
-      nisi consequat facilisis ac eu velit.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit.
       <a href="">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>

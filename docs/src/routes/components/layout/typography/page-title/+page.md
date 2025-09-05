@@ -26,7 +26,5 @@ Voeg de class `page-title` toe aan de <code>h1</code>.
 <h1 class="page-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
 
 ```html
-<h1 class="page-title">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-</h1>
+<h1 class="page-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
 ```
