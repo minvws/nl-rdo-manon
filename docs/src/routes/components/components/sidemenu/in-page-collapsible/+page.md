@@ -5,7 +5,6 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
 ---
 
 <p id="introduction">Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het
@@ -32,14 +31,13 @@ header en footer.</p>
 1.  Voeg de class `sidemenu` toe aan de `main`.
 2.  Voeg direct binnen de `main` een `nav` toe met de gewenste inhoud.
 3.  Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-    is. Bijvoorbeeld: `div`, `article` of `section`. Voor meer informatie zie:
-    [Voorbeeld sidemenu structuur](#sidemenu-structure).
+    is. Bijvoorbeeld: `div`, `article` of `section`.
 4.  Voeg de referentie naar het Javascript bestand, `sidemenu.js`, toe aan de
     HTML-pagina's die gebruik dienen te maken van het inklapbare zijmenu. Voor
     meer informatie zie:
     [JavaScript referentie toevoegen](/getting-started/installation).
 
-### Sluit- en open-knop als icoonknop instellen zonder tekst.
+### Sluit- en open-knop als icoonknop instellen zonder tekst
 
 Voeg altijd de knoptekst in de taal van het document toe voor screenreader
 gebruikers.
@@ -56,8 +54,7 @@ gebruikers.
 ### Pagina laden met een gesloten zijmenu
 
 Om het menu standaard gesloten te tonen tot de gebruiker het menu opent. Voeg de
-class `sidemenu-closed` toe aan de `body`. Voor meer informatie zie:
-[Uitklapbaar zijmenu](#sidemenu-expandable).
+class `sidemenu-closed` toe aan de `body`.
 
 <h2 id="examples">Voorbeelden</h2>
 

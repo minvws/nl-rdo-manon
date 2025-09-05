@@ -3,7 +3,7 @@ title: Tabel bijschrift caption
 breadcrumb: Tabel bijschrift caption
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -18,7 +18,7 @@ screenreaders om de content voor te lezen, bijvoorbeeld bij blindheid, slecht-
 of bijziendheid, kunnen de tabelomschrijving gebruiken om te bepalen of ze de
 inhoud van de tabel volledig willen horen of overslaan.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
@@ -29,12 +29,8 @@ SCSS importeren:
 
 ### Benodigde stappen
 
-1.  Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de
-    benodigde en optionele bestanden zie: [Benodigdheden](#requirements). Voor
-    meer informatie over importeren en instellen van componenten. Zie:
-    [Componenten gebruiken en styling toevoegen](/getting-started/installation)
-2.  Voeg de `caption` direct direct binnen de `table` toe.
-3.  Vul de `caption` met een korte maar duidelijke omschrijving van de inhoud
+1.  Voeg de `caption` direct direct binnen de `table` toe.
+2.  Vul de `caption` met een korte maar duidelijke omschrijving van de inhoud
     van de tabel.
 
 <h2 id="examples">Voorbeelden</h2>

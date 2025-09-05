@@ -5,8 +5,6 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <p id="introduction">Voor het gegroepeerd weergeven van content binnen tegels</p>
@@ -36,8 +34,6 @@ nav:
 
 ### Enkel element `div`
 
-#### Visueel voorbeeld:
-
 <div class="tile" role="group">
   <h2>Lorem ipsum dolor set</h2>
   <p>
@@ -50,14 +46,13 @@ nav:
   </div>
 </div>
 
-#### HTML-voorbeeld:
-
 ```html
 <div class="tile" role="group">
   <h2>Lorem ipsum dolor set</h2>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
-    convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non
+    justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui
+    sapien.
   </p>
   <div>
     <button>Lorem</button>

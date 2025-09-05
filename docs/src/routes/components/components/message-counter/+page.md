@@ -5,8 +5,6 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Instelbare variabelen: "#variables"
 ---
 
 <p id="introduction">De notificatie-teller is bedoeld om de gebruiker te attenderen en te informeren

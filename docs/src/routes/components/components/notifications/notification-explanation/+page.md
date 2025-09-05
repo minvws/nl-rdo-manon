@@ -3,13 +3,14 @@ title: Toelichting
 breadcrumb: Toelichting
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
 <p id="introduction">Gebruik om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het
 incorrect invoeren van data of een systeemfout.</p>
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
@@ -17,6 +18,8 @@ SCSS importeren:
 @use "@minvws/manon/notification";
 @use "@minvws/manon/notification-explanation";
 ```
+
+<h2 id="examples">Voorbeelden</h2>
 
 ### Voorbeeld: `div`
 
@@ -49,19 +52,21 @@ SCSS importeren:
   <span>Toelichting:</span>
   <h2>Lorem ipsum dolor set</h2>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
-    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
-    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
-    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a
+    nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a
+    porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices.
+    Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat
+    scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut
+    maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a
+    augue sit amet condimentum.
   </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-      facilisis ac eu velit.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a
+      nisi consequat facilisis ac eu velit.
       <a href="">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>

@@ -84,14 +84,17 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
       <h2>Lorem ipsum</h2>
       <p>Dolor set amet conseqtetur adepicing elit</p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus ac turpis convallis
-        vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-        himenaeos. Maecenas ut fringilla tortor. Nulla ultrices enim sit amet tellus venenatis,
-        lacinia dapibus risus auctor.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus
+        ac turpis convallis vestibulum. Class aptent taciti sociosqu ad litora
+        torquent per conubia nostra, per inceptos himenaeos. Maecenas ut
+        fringilla tortor. Nulla ultrices enim sit amet tellus venenatis, lacinia
+        dapibus risus auctor.
       </p>
       <ul>
         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Vivamus accumsan dui sed diam placerat, quis ultrices enim viverra.</li>
+        <li>
+          Vivamus accumsan dui sed diam placerat, quis ultrices enim viverra.
+        </li>
         <li>Aenean posuere enim a hendrerit viverra.</li>
         <li>Phasellus eu justo ac orci tempus bibendum eu in est.</li>
       </ul>
@@ -105,8 +108,7 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
 1.  Voeg de class `sidemenu` toe aan de `main`.
 2.  Voeg direct binnen de `main` een `nav` toe met de gewenste inhoud.
 3.  Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-    is. Bijvoorbeeld: `div`, `article` of `section`. Voor meer informatie zie:
-    [Voorbeeld sidemenu structuur](#sidemenu-structure).
+    is. Bijvoorbeeld: `div`, `article` of `section`.
 
 <p class="explanation">
   <span>Aandachtspunten:</span>
@@ -150,8 +152,7 @@ header en footer.
 1.  Voeg de class `sidemenu` toe aan de `main`.
 2.  Voeg direct binnen de `main` een `nav` toe met de gewenste inhoud.
 3.  Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-    is. Bijvoorbeeld: `div`, `article` of `section`. Voor meer informatie zie:
-    [Voorbeeld sidemenu structuur](#sidemenu-structure).
+    is. Bijvoorbeeld: `div`, `article` of `section`.
 
 <p class="warning">
   <span>Let op:</span> Het menu is standaard ingeklapt en kan door de gebruiker uitgeklapt worden. Voeg de class `sidemenu-closed` toe aan de body.
@@ -215,8 +216,7 @@ pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 1.  Voeg de class `sidemenu` toe aan de `body`.
 2.  Voeg direct binnen de `body` een `nav` toe met de gewenste inhoud.
 3.  Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-    is. Bijvoorbeeld: `div`. Voor meer informatie zie:
-    [Voorbeeld sidemenu structuur](#sidemenu-structure).
+    is. Bijvoorbeeld: `div`.
 
 <p class="explanation">
   <span>Aandachtspunten:</span>
@@ -269,8 +269,7 @@ breed is. Zoals bijvoorbeeld hoofdnavigatie.
 1.  Voeg de class `sidemenu` toe aan de `main`.
 2.  Voeg direct binnen de `main` een `nav` toe met de gewenste inhoud.
 3.  Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-    is. Bijvoorbeeld: `div`, `article` of `section`. Voor meer informatie zie:
-    [Voorbeeld sidemenu structuur](#sidemenu-structure).
+    is. Bijvoorbeeld: `div`, `article` of `section`.
 
 <p class="warning">
   <span>Let op:</span> Het menu is standaard ingeklapt en kan door de gebruiker

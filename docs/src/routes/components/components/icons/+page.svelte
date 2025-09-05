@@ -205,7 +205,7 @@
         <h3><code>svg</code> binnen een link</h3>
         <h4>Visueel voorbeeld</h4>
 
-        <a href="{base}/icons">
+        <a href="{base}/components/components/icons">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -229,7 +229,7 @@
         <Code
           language="html"
           code={`
-<a href="{base}/icons">
+<a href="{base}/components/components/icons">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"

@@ -2,9 +2,9 @@
 title: Pagina-titel
 breadcrumb: Pagina-titel
 nav:
+  - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
 <p id="introduction">Dit component kan gebruikt worden om styling te koppelen aan de titel van de pagina.</p>
@@ -26,5 +26,7 @@ Voeg de class `page-title` toe aan de <code>h1</code>.
 <h1 class="page-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
 
 ```html
-<h1 class="page-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+<h1 class="page-title">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</h1>
 ```
