@@ -31,7 +31,7 @@ Voor het voorbeeld zie bovenaan deze pagina.
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/getting-started/installation)
+[Componenten gebruiken en styling toevoegen]({base}/getting-started/installation)
 
 ### Importeer component via npm
 
@@ -60,7 +60,7 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
     <tbody>
       <tr>
         <td>--notification-explanation-page-background-color</td>
-        <td><a href="/getting-started/installation#background-color">background-color</a></td>
+        <td><a href="{base}/getting-started/installation#background-color">background-color</a></td>
         <td>var(--explanation-background-color)</td>
         <td>-</td>
         <th rowspan="24" scope="rowgroup">explanation</th>
@@ -68,161 +68,161 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
 
       <tr>
         <td>--notification-explanation-page-text-color</td>
-        <td><a href="/getting-started/installation#text-color">color</a></td>
+        <td><a href="{base}/getting-started/installation#text-color">color</a></td>
         <td>var(--explanation-text-color)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-border-width</td>
-        <td><a href="/getting-started/installation#border-width">border-width</a></td>
+        <td><a href="{base}/getting-started/installation#border-width">border-width</a></td>
         <td>var(--notification-border-width)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-border-style</td>
-        <td><a href="/getting-started/installation#border-style">border-style</a></td>
+        <td><a href="{base}/getting-started/installation#border-style">border-style</a></td>
         <td>var(--notification-border-style)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-border-color</td>
-        <td><a href="/getting-started/installation#border-color">border-color</a></td>
+        <td><a href="{base}/getting-started/installation#border-color">border-color</a></td>
         <td>var(--explanation-border-color)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-padding-top</td>
-        <td><a href="/getting-started/installation#padding-top">padding-top</a></td>
+        <td><a href="{base}/getting-started/installation#padding-top">padding-top</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-padding-right</td>
-        <td><a href="/getting-started/installation#padding-right">padding-right</a></td>
+        <td><a href="{base}/getting-started/installation#padding-right">padding-right</a></td>
         <td>var(--page-whitespace-right)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td> --notification-explanation-page-padding-bottom</td>
-        <td><a href="/getting-started/installation#padding-bottom">padding-bottom</a></td>
+        <td><a href="{base}/getting-started/installation#padding-bottom">padding-bottom</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-padding-left</td>
-        <td><a href="/getting-started/installation#padding-left">padding-left</a></td>
+        <td><a href="{base}/getting-started/installation#padding-left">padding-left</a></td>
         <td>var(--page-whitespace-left)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-gap</td>
-        <td><a href="/getting-started/installation#gap">gap</a></td>
+        <td><a href="{base}/getting-started/installation#gap">gap</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-span-font-weight</td>
-        <td><a href="/getting-started/installation#font-weight">span-font-weight</a></td>
+        <td><a href="{base}/getting-started/installation#font-weight">span-font-weight</a></td>
         <td>var(--notification-span-font-weight)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-pagecontent-wrapper-padding-top</td>
-        <td><a href="/getting-started/installation#padding-top">padding-top</a></td>
+        <td><a href="{base}/getting-started/installation#padding-top">padding-top</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-pagecontent-wrapper-padding-right</td>
-        <td><a href="/getting-started/installation#padding-right">padding-right</a></td>
+        <td><a href="{base}/getting-started/installation#padding-right">padding-right</a></td>
         <td>var(--content-padding-right)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td> --notification-explanation-pagecontent-wrapper-padding-bottom</td>
-        <td><a href="/getting-started/installation#padding-bottom">padding-bottom</a></td>
+        <td><a href="{base}/getting-started/installation#padding-bottom">padding-bottom</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-pagecontent-wrapper-padding-left</td>
-        <td><a href="/getting-started/installation#padding-left">padding-left</a></td>
+        <td><a href="{base}/getting-started/installation#padding-left">padding-left</a></td>
         <td>var(--content-padding-left)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-pagecontent-wrapper-gap</td>
-        <td><a href="/getting-started/installation#gap">gap</a></td>
+        <td><a href="{base}/getting-started/installation#gap">gap</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-pagecontent-wrapper-span-font-weight</td>
-        <td><a href="/getting-started/installation#font-weight">font-weight</a></td>
+        <td><a href="{base}/getting-started/installation#font-weight">font-weight</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-icon-font-family</td>
-        <td><a href="/getting-started/installation#font-family">font-family</a></td>
+        <td><a href="{base}/getting-started/installation#font-family">font-family</a></td>
         <td>var(--notification-icon-font-family)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-icon-font-size</td>
-        <td><a href="/getting-started/installation#font-size">font-size</a></td>
+        <td><a href="{base}/getting-started/installation#font-size">font-size</a></td>
         <td>var(--notification-icon-font-size)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-icon-text-color</td>
-        <td><a href="/getting-started/installation#text-color">color</a></td>
+        <td><a href="{base}/getting-started/installation#text-color">color</a></td>
         <td>var(--notification-icon-text-color)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-icon-padding-right</td>
-        <td><a href="/getting-started/installation#padding-right">padding-right</a></td>
+        <td><a href="{base}/getting-started/installation#padding-right">padding-right</a></td>
         <td>var(--notification-icon-padding-right)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-icon-padding-left</td>
-        <td><a href="/getting-started/installation#padding-left">padding-left</a></td>
+        <td><a href="{base}/getting-started/installation#padding-left">padding-left</a></td>
         <td>var(--notification-icon-padding-left)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-icon-margin-right</td>
-        <td><a href="/getting-started/installation#margin-right">margin-right</a></td>
+        <td><a href="{base}/getting-started/installation#margin-right">margin-right</a></td>
         <td>var(--notification-icon-margin-right)</td>
         <td>-</td>
       </tr>
 
       <tr>
         <td>--notification-explanation-page-icon</td>
-        <td><a href="/getting-started/installation#content">content</a></td>
+        <td><a href="{base}/getting-started/installation#content">content</a></td>
         <td>var(--notification-icon)</td>
         <td>-</td>
       </tr>
