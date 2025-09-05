@@ -9,7 +9,7 @@ nav:
 
 Het verdelen van de content over kolommen.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
