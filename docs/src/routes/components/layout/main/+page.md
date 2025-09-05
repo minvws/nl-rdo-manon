@@ -7,6 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
+<h1 id="introduction">Introductie</h1>
+
 <p id="introduction">Voor het weergeven van de main op de pagina</p>
 
 <h2 id="quickstart">Snelstart</h2>
@@ -17,7 +19,7 @@ SCSS importeren:
 @use "@minvws/manon/main";
 ```
 
-### Benodigde stappen
+<h3>Benodigde stappen</h3>
 
 - Voeg styling toe aan het `main` HTML-element. Bijvoorbeeld de spacing tussen de content.
 - De content wrapper kan gebruikt worden om de content binnen de `main` te stylen. bijvoorbeeld om een maximale breedte of spacing mee te geven.
