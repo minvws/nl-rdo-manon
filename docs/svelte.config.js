@@ -15,9 +15,9 @@ const config = {
       entries: ["*", ...Object.keys(redirects)],
       handleHttpError: ({ path, referrer, message }) => {
         // Log the error for debugging
-        console.warn(`Prerender HTTP error: ${message}`);
-        console.warn(`Path: ${path}`);
-        console.warn(`Referrer: ${referrer}`);
+        console.error(`Prerender HTTP error: ${message}`);
+        console.error(`Path: ${path}`);
+        console.error(`Referrer: ${referrer}`);
 
         // Skip base path errors during prerendering
         if (message.includes("404") || message.includes("does not begin with `base`")) {
@@ -27,10 +27,11 @@ const config = {
       },
       handleMissingId: ({ path, id, referrers, message }) => {
         // Log the missing ID error for debugging
-        console.warn(`Missing ID error: ${message}`);
-        console.warn(`Path: ${path}`);
-        console.warn(`Missing ID: ${id}`);
-        console.warn(`Referrers: ${referrers.join(", ")}`);
+        console.error(`Missing ID error: ${message}`);
+        console.error(`Path: ${path}`);
+        console.error(`Missing ID: ${id}`);
+        console.error(`Referrers: ${referrers.join(", ")}`);
+        console.error('');
       },
     },
     alias: {
