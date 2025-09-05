@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het
+<p id="introduction">Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het
 navigeren voor de gebruiker toegankelijk en overzichtelijk te houden.</p>
 
 <h2 id="quickstart">Snelstart</h2>
@@ -40,10 +40,10 @@ In dit voorbeeld staat het zijmenu binnen de pagina bij de content. Gebruik deze
 weergave alleen als de inhoud van het zijmenu specifiek over de content gaat.
 Bijvoorbeeld een inhoudsopgave. Hoort het zijmenu niet bij de inhoud van de
 pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
-[Zijmenu naast de pagina](/components/sidemenu/next-to-page).
+[Zijmenu naast de pagina]({base}/components/components/sidemenu/next-to-page).
 
 <div class="resize">
-  <iframe src="/examples/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
+  <iframe src="{base}/examples/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
 </div>
 
 ```html
@@ -64,7 +64,7 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
     <nav>
       <div class="collapsing-element">
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="{base}/">Home</a></li>
         </ul>
       </div>
     </nav>
@@ -73,15 +73,15 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
 <main class="sidemenu">
   <nav aria-label="Zijbalknavigatie">
     <ul>
-      <li><a href="/">Voorbeeld link 1</a></li>
-      <li><a href="/">Voorbeeld link 2</a></li>
-      <li><a href="/">Voorbeeld link 3</a></li>
-      <li><a href="/">Voorbeeld link 4</a></li>
+      <li><a href="{base}/">Voorbeeld link 1</a></li>
+      <li><a href="{base}/">Voorbeeld link 2</a></li>
+      <li><a href="{base}/">Voorbeeld link 3</a></li>
+      <li><a href="{base}/">Voorbeeld link 4</a></li>
     </ul>
   </nav>
   <article>
     <div>
-      <h1>Lorem ipsum</h1>
+      <h2>Lorem ipsum</h2>
       <p>Dolor set amet conseqtetur adepicing elit</p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus ac turpis convallis
@@ -105,8 +105,7 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
 1.  Voeg de class `sidemenu` toe aan de `main`.
 2.  Voeg direct binnen de `main` een `nav` toe met de gewenste inhoud.
 3.  Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-    is. Bijvoorbeeld: `div`, `article` of `section`. Voor meer informatie zie:
-    [Voorbeeld sidemenu structuur](#sidemenu-structure).
+    is. Bijvoorbeeld: `div`, `article` of `section`.
 
 <p class="explanation">
   <span>Aandachtspunten:</span>
@@ -123,7 +122,7 @@ header en footer.
 
 <div class="resize">
   <iframe
-    src="/examples/sidemenu-in-page-collapsible"
+    src="{base}/examples/sidemenu-in-page-collapsible"
     title="Voorbeeld"
     height="320px"
   ></iframe>
@@ -150,8 +149,7 @@ header en footer.
 1.  Voeg de class `sidemenu` toe aan de `main`.
 2.  Voeg direct binnen de `main` een `nav` toe met de gewenste inhoud.
 3.  Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-    is. Bijvoorbeeld: `div`, `article` of `section`. Voor meer informatie zie:
-    [Voorbeeld sidemenu structuur](#sidemenu-structure).
+    is. Bijvoorbeeld: `div`, `article` of `section`.
 
 <p class="warning">
   <span>Let op:</span> Het menu is standaard ingeklapt en kan door de gebruiker uitgeklapt worden. Voeg de class `sidemenu-closed` toe aan de body.
@@ -168,7 +166,7 @@ Gebruik deze weergave als de inhoud van het zijmenu niet over de content van de
 pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 
 <div class="resize">
-  <iframe src="/examples/sidemenu-next-to-page" title="Voorbeeld" height="320px"
+  <iframe src="{base}/examples/sidemenu-next-to-page" title="Voorbeeld" height="320px"
   ></iframe>
 </div>
 
@@ -176,10 +174,10 @@ pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 <body class="sidemenu">
   <nav>
     <ul>
-      <li><a href="/">Voorbeeld link 1</a></li>
-      <li><a href="/">Voorbeeld link 2</a></li>
-      <li><a href="/">Voorbeeld link 3</a></li>
-      <li><a href="/">Voorbeeld link 4</a></li>
+      <li><a href="{base}/">Voorbeeld link 1</a></li>
+      <li><a href="{base}/">Voorbeeld link 2</a></li>
+      <li><a href="{base}/">Voorbeeld link 3</a></li>
+      <li><a href="{base}/">Voorbeeld link 4</a></li>
     </ul>
   </nav>
   <div class="page-content">
@@ -215,8 +213,7 @@ pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 1.  Voeg de class `sidemenu` toe aan de `body`.
 2.  Voeg direct binnen de `body` een `nav` toe met de gewenste inhoud.
 3.  Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-    is. Bijvoorbeeld: `div`. Voor meer informatie zie:
-    [Voorbeeld sidemenu structuur](#sidemenu-structure).
+    is. Bijvoorbeeld: `div`.
 
 <p class="explanation">
   <span>Aandachtspunten:</span>
@@ -232,7 +229,7 @@ breed is. Zoals bijvoorbeeld hoofdnavigatie.
 
 <div class="resize">
   <iframe
-    src="/examples/sidemenu-next-to-page-collapsible"
+    src="{base}/examples/sidemenu-next-to-page-collapsible"
     title="Voorbeeld"
     height="320px"
   ></iframe>
@@ -269,8 +266,7 @@ breed is. Zoals bijvoorbeeld hoofdnavigatie.
 1.  Voeg de class `sidemenu` toe aan de `main`.
 2.  Voeg direct binnen de `main` een `nav` toe met de gewenste inhoud.
 3.  Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-    is. Bijvoorbeeld: `div`, `article` of `section`. Voor meer informatie zie:
-    [Voorbeeld sidemenu structuur](#sidemenu-structure).
+    is. Bijvoorbeeld: `div`, `article` of `section`.
 
 <p class="warning">
   <span>Let op:</span> Het menu is standaard ingeklapt en kan door de gebruiker

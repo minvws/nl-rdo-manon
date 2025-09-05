@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Visuele labels om bijvoorbeeld groeperingen aan te brengen binnen content en
+<p id="introduction">Visuele labels om bijvoorbeeld groeperingen aan te brengen binnen content en
 data-sets.</p>
 
 <h2 id="quickstart">Snelstart</h2>
@@ -39,7 +39,7 @@ SCSS importeren:
 ### Voorbeeld: `li` als tag
 
 Lijst-element visueel weergegeven als tag. Voor het direct aanspreken van alle
-lijstelementen zie: [tags](/tags).
+lijstelementen zie: [tags]({base}/components/components/tags).
 
 <ul>
   <li class="tag tags-color-1">Lorem ipsum</li>
@@ -54,7 +54,7 @@ lijstelementen zie: [tags](/tags).
 ### Voorbeeld: Tags binnen een tabel
 
 Tabel-elementen visueel weergegeven als tag. Voor het direct aanspreken van alle
-tabelelementen zie: [tags](/tags).
+tabelelementen zie: [tags]({base}/components/components/tags).
 
 <div class="horizontal-scroll">
   <table>

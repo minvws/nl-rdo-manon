@@ -6,6 +6,7 @@
 
 <script lang="ts">
   import type { Snippet } from "svelte";
+  import { base } from "$app/paths";
   import { parseNav, type MarkdownNav, type ParsedNav } from "$lib/markdown-nav";
   import SideMenu from "$lib/SideMenu.svelte";
 
@@ -17,6 +18,9 @@
 
   let { title, nav, children }: Props = $props();
   let parsedNav = $derived(parseNav(nav));
+
+  // Make base available to all markdown content
+  globalThis.base = base;
 </script>
 
 <svelte:head>
@@ -36,10 +40,10 @@
   {#if parsedNav}
     <SideMenu>{@render navlist(parsedNav)}</SideMenu>
   {/if}
-  <section>
-    <h1>{title}</h1>
+  <article>
+    <h1 class="page-title">{title}</h1>
     <div class="content-wrapper">
       {@render children?.()}
     </div>
-  </section>
+  </article>
 </main>

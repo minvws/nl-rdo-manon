@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Een maximale regellengte voor leesbaarheid. Dit wordt vaak aangeraden voor
+<p id="introduction">Een maximale regellengte voor leesbaarheid. Dit wordt vaak aangeraden voor
 gebruiksvriendelijkheid en toegankelijkheid.
 [w3.org](https://www.w3.org/TR/WCAG21/#visual-presentation) adviseert een
 maximale regellengte van 80 karakters. Dit vertaalt zich tot ongeveer 40rem.</p>

@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Geschikt voor het tonen van korte overzichten en samenvattingen bij complexe
+<p id="introduction">Geschikt voor het tonen van korte overzichten en samenvattingen bij complexe
 tabellen en documenten.</p>
 
 <h2 id="quick-start">Snelstart</h2>

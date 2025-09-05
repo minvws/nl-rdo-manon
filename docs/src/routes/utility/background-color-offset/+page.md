@@ -1,13 +1,11 @@
 ---
-title: Background color offset
-breadcrumb: Background color offset
+title: background-color-offset
+breadcrumb: background-color-offset
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Background color offset</h1>
 
 <p class="warning">
   <span>Let op:</span>

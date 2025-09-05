@@ -7,7 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Datumveld</p>
+<p id="introduction">Datumveld</p>
+
 <h2 id="quickstart">Snelstart</h2>
 
 ```css

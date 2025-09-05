@@ -18,16 +18,15 @@
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
   <article>
-    <h1>Icoon-afbeelding</h1>
+    <h1 class="page-title">Icoon-afbeelding</h1>
     <div class="content-wrapper">
       <section id="introduction">
         <p>
-          Het <a href="{base}/components/icons">Icoon-component</a> kan gebruikt wordt met unicode-codes
-          om een van de iconen uit de standaard icoon-set te gebruiken.
+          Het <a href="{base}/components/components/icons">Icoon-component</a> kan gebruikt wordt met
+          unicode-codes om een van de iconen uit de standaard icoon-set te gebruiken.
         </p>
 
         <p>
@@ -62,7 +61,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling"
+          <a href="{base}/getting-started/installation">
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>
@@ -75,11 +74,6 @@
 @use "@minvws/manon/icon";
       `}
         />
-      </section>
-
-      <section id="related">
-        <h2>Gerelateerde pagina's</h2>
-        <a href="{base}/components/icons/test">Test- en voorbeelden-pagina</a>
       </section>
     </div>
   </article>

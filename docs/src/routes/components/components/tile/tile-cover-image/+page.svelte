@@ -21,7 +21,7 @@
     </ul>
   </SideMenu>
   <article>
-    <h1>Tegelweergave met cover-afbeelding</h1>
+    <h1 class="page-title">Tegelweergave met cover-afbeelding</h1>
     <div class="content-wrapper">
       <section id="introduction">
         <p>Aandachtspunten:</p>
@@ -29,14 +29,14 @@
           <li>
             Voeg <code>class="tile"</code> toe voor de Tegelweergave met cover-afbeelding op een
             enkel element. Voor meer informatie zie:
-            <a href="{base}/components/tiles">tegelweergave</a>
+            <a href="{base}/components/components/tile">tegelweergave</a>
           </li>
           <li>
             Voeg de class <code>image-cover</code> toe voor de correcte weergave. Voor meer
             informatie zie: <a href="#tile-image-cover">tegel met cover-afbeelding</a> of
             <a href="#tiles-image-cover">groep met tegels met cover-afbeelding</a>. Voor meer
             informatie over cover-afbeelding zie
-            <a href="{base}/components/image-cover">cover-afbeelding</a>
+            <a href="{base}/components/components/image/image-cover">cover-afbeelding</a>
           </li>
         </ul>
       </section>
@@ -52,7 +52,7 @@
         <h4>Visueel voorbeeld:</h4>
         <div role="group" class="tile image-cover">
           <img src="$img/strand.jpg" alt="Foto van een strand" />
-          <h1>Lorem ipsum</h1>
+          <h2>Lorem ipsum</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
             amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -65,7 +65,7 @@
           code={`
 <div role="group" class="tile image-cover">
   <img src="/img/strand.jpg" alt="Foto van een strand">
-  <h1>Lorem ipsum</h1>
+  <h2>Lorem ipsum</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
 </div>
 `}
@@ -83,7 +83,7 @@
         <div class="tiles images-cover column-4">
           <div role="group">
             <img src="$img/strand.jpg" alt="Foto van een strand" />
-            <h1>Lorem ipsum</h1>
+            <h2>Lorem ipsum</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
               amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -92,7 +92,7 @@
 
           <div role="group">
             <img src="$img/strand.jpg" alt="Foto van een strand" />
-            <h1>Lorem ipsum</h1>
+            <h2>Lorem ipsum</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
               amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -101,7 +101,7 @@
 
           <div role="group">
             <img src="$img/strand.jpg" alt="Foto van een strand" />
-            <h1>Lorem ipsum</h1>
+            <h2>Lorem ipsum</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
               amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -110,7 +110,7 @@
 
           <div role="group">
             <img src="$img/strand.jpg" alt="Foto van een strand" />
-            <h1>Lorem ipsum</h1>
+            <h2>Lorem ipsum</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
               amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -125,25 +125,25 @@
 <div class="tiles images-cover column-4">
   <div role="group">
     <img src="/img/strand.jpg" alt="Foto van een strand">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
   </div>
 
   <div role="group">
     <img src="/img/strand.jpg" alt="Foto van een strand">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
   </div>
 
   <div role="group">
     <img src="/img/strand.jpg" alt="Foto van een strand">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
   </div>
 
   <div role="group">
     <img src="/img/strand.jpg" alt="Foto van een strand">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
   </div>
 </div>
@@ -155,7 +155,7 @@
         <h2>Instelbare variabelen</h2>
         <ul>
           <li>
-            <a href="{base}/documentation/variables#object-position">object-position</a>
+            <a href="{base}/getting-started/installation#object-position">object-position</a>
           </li>
         </ul>
       </section>
@@ -164,7 +164,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling"
+          <a href="{base}/getting-started/installation">
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>

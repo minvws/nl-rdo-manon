@@ -6,7 +6,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Gebruik om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het
+<p id="introduction">Gebruik om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het
 incorrect invoeren van data of een systeemfout.</p>
 
 <h2 id="quick-start">Snelstart</h2>
@@ -24,7 +24,7 @@ SCSS importeren:
 
 <div class="system" role="group" aria-label="Systeembericht">
   <span>Systeembericht:</span>
-  <h1>Lorem ipsum dolor set</h1>
+  <h2>Lorem ipsum dolor set</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
     facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
@@ -49,7 +49,7 @@ SCSS importeren:
 ```html
 <div class="system" role="group" aria-label="Systeembericht">
   <span>Systeembericht:</span>
-  <h1>Lorem ipsum dolor set</h1>
+  <h2>Lorem ipsum dolor set</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
     facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus

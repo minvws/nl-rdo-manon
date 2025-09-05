@@ -7,9 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h2 id="intrduction">Introductie</h2>
-
-Het `<article>` element bevat zelfstandige inhoud die op zichzelf gelezen of gedeeld kan worden, zoals een blogpost, nieuwsbericht of forumreactie.
+<p id="introduction">Voor het weergeven van content binnen een article</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -19,12 +17,15 @@ Het `<article>` element bevat zelfstandige inhoud die op zichzelf gelezen of ged
 
 ### Benodigde stappen
 
-Maak gebruik van een layout set om stijlkeuzes voor de layout centraal vast te leggen en in verschillende componenten te gebruiken. Denk bijvoorbeeld aan het vastleggen van de afstand tussen de blokken binnen de `main`, een `article` en een `section`. Voor meer informatie zie: [Layout-basisset](/components/layout/layout-set)
+- Voeg styling toe aan `article`. Dit kan gebruikt worden voor het stylen van secties.
+- De content wrapper kan gebruikt worden om de content binnen de `article` te stylen. bijvoorbeeld om een maximale breedte of spacing mee te geven.
 
 <h2 id="examples">Voorbeelden</h2>
 
 ```html
 <article>
-  <!-- Content -->
+  <div class="content-wrapper">
+    <!-- Content -->
+  </div>
 </article>
 ```

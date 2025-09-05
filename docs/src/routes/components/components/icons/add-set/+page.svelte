@@ -13,7 +13,7 @@
 
 <main id="main-content" tabindex="-1">
   <article>
-    <h1>Icoon-set toevoegen</h1>
+    <h1 class="page-title">Icoon-set toevoegen</h1>
     <div class="content-wrapper">
       <section id="introduction">
         <p>Er zijn twee situaties waarin het nodig kan zijn om een icoon-set toe te voegen:</p>
@@ -21,7 +21,7 @@
           <li>
             <p>
               Je werkt aan een applicatie, die iconen nodig heeft die niet beschikbaar zijn in de <a
-                href="{base}/components/icons#default-iconset">standaard icoon-sets</a
+                href="{base}/components/components/icons#default-iconset">standaard icoon-sets</a
               >
               van het thema. Volg dan deze instructies:
               <a href="#application-icon-set">Een applicatie-specifieke icoon-set toevoegen</a>
@@ -120,7 +120,7 @@ $glyphs: (
               Maak een icoon-lettertype met behulp van software of online tools om lettertypes en
               svg fonts mee te maken. Maak notitie van de UTF-8 codes van de verschillende iconen.
               Zorg er bij voorkeur voor dat het icoon-lettertype alle iconen uit <a
-                href="{base}/components/icons#default-iconset">de standaard-sets</a
+                href="{base}/components/components/icons#default-iconset">de standaard-sets</a
               > bevat.
             </p>
           </li>

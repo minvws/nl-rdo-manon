@@ -3,14 +3,14 @@ title: Main testpagina
 breadcrumb: Main testpagina
 ---
 
-<p class="introduction">Componenten gegroepeerd in `div`'s binnen de `main`.</p>
+<p id="introduction">Componenten gegroepeerd in `div`'s binnen de `main`.</p>
 
 <h2>HTML-voorbeeld:</h2>
 
 ```html
 <main>
   <div>
-    <h1>Main testpagina</h1>
+    <h1 class="page-title">Main testpagina</h1>
     <p>Deze voorbeeldpagina maakt gebruik van de volgende html-structuur</p>
   </div>
 </main>
@@ -18,7 +18,7 @@ breadcrumb: Main testpagina
 
 <h2>Gebruikte bestanden</h2>
 
-Voor meer informatie over importeren en instellen van componenten. Zie: [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+Voor meer informatie over importeren en instellen van componenten. Zie: [Componenten gebruiken en styling toevoegen]({base}/getting-started/installation)
 
 ### Importeer component via npm
 

@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Getallen worden visueel onderscheidend weergegeven van overige celdata om de
+<p id="introduction">Getallen worden visueel onderscheidend weergegeven van overige celdata om de
 gebruiksvriendelijkheid te vergroten.</p>
 
 <h2 id="quick-start">Snelstart</h2>

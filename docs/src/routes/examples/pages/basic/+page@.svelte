@@ -23,20 +23,13 @@
 </header>
 
 <main id="main-content" tabindex="-1">
-
   <section>
     <h1>Paginatitel</h1>
-
     <div class="content-wrapper">
-      <p>Dit is een voorbeeld van een content-blok.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Onderwerp</h2>
-
-    <div class="content-wrapper">
-      <p>Dit is een voorbeeld van nog een content-blok.</p>
+      <div>
+        <h2>Onderwerp</h2>
+        <p>Dit is een voorbeeld van nog een content-blok.</p>
+      </div>
     </div>
   </section>
 </main>

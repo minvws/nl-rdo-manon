@@ -12,7 +12,7 @@
 
 <main id="main-content" tabindex="-1">
   <section id="introduction">
-    <h1>Componenten</h1>
+    <h1 class="page-title">Componenten</h1>
     <div class="content-wrapper">
       <p>
         Componenten zijn herbruikbare bouwstenen die gebruikt worden om de gebruikersinterface van
@@ -27,47 +27,22 @@
             <h3 id="page-layout-heading">Page layout</h3>
             <ul>
               <li><a href="{base}/components/layout/main">Main</a></li>
-              <li>
-                <a href="{base}/components/layout/main-content-wrapper">Main content wrapper</a>
-              </li>
               <li><a href="{base}/components/layout/section">Section</a></li>
-              <li>
-                <a href="{base}/components/layout/section-content-wrapper"
-                  >Section content wrapper</a
-                >
-              </li>
               <li><a href="{base}/components/layout/article">Article</a></li>
-              <li>
-                <a href="{base}/components/layout/article-content-wrapper"
-                  >Article content wrapper</a
-                >
-              </li>
-              <li><a href="{base}/components/layout/div">Div</a></li>
-              <li>
-                <a href="{base}/components/layout/div-content-wrapper">Div content wrapper</a>
-              </li>
               <li><a href="{base}/components/layout/footer">Footer</a></li>
-              <li>
-                <a href="{base}/components/layout/layout-authentication">Layout authentication</a>
-              </li>
-              <li><a href="{base}/components/layout/layout-form">Layout form</a></li>
-              <li><a href="{base}/components/layout/layout-set">Layout set</a></li>
             </ul>
           </nav>
           <nav aria-labelledby="typography-heading">
             <h3 id="typography-heading">Typography</h3>
             <ul>
-              <li><a href="{base}/components/layout/typography/body-text-set">Body text set</a></li>
               <li><a href="{base}/components/layout/typography/de-emphasized">De-emphasized</a></li>
               <li><a href="{base}/components/layout/typography/emphasized">Emphasized</a></li>
-              <li>
-                <a href="{base}/components/layout/typography/heading-base-set">Heading base set</a>
-              </li>
               <li><a href="{base}/components/layout/typography/headings">Headings</a></li>
               <li>
                 <a href="{base}/components/layout/typography/max-line-length">Max line length</a>
               </li>
               <li><a href="{base}/components/layout/typography/paragraph">Paragraph</a></li>
+              <li><a href="{base}/components/layout/typography/page-title">Page-title</a></li>
               <li><a href="{base}/components/layout/typography/nota-bene">Nota bene</a></li>
             </ul>
           </nav>

@@ -3,7 +3,7 @@
 
 $breakpoint: 24rem !default;
 
-%dl-styling {
+dl {
   margin: 0;
 
   @include theming.apply-from-theme(
@@ -59,6 +59,7 @@ $breakpoint: 24rem !default;
         color: theme.$description-list-item-title-text-color,
         padding: theme.$description-list-item-title-padding,
         width: theme.$description-list-item-title-width,
+        max-width: theme.$description-list-tite-max-width,
       )
     );
   }
@@ -85,20 +86,4 @@ $breakpoint: 24rem !default;
       );
     }
   }
-}
-
-main div,
-main section,
-main section > div,
-main article,
-main article > div {
-  form fieldset dl,
-  form dl,
-  dl {
-    @extend %dl-styling;
-  }
-}
-
-dl {
-  @extend %dl-styling;
 }

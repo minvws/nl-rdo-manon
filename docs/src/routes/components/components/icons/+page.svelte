@@ -53,7 +53,7 @@
     </ul>
   </SideMenu>
   <article>
-    <h1>Iconen</h1>
+    <h1 class="page-title">Iconen</h1>
     <div class="content-wrapper">
       <section id="introduction">
         <p>
@@ -99,11 +99,11 @@
 
         <h3>Icoon binnen link<code>a</code></h3>
         <h4>Visueel voorbeeld</h4>
-        <a href="./icons"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>
+        <a href="{base}/"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>
         <h4>HTML-voorbeeld</h4>
         <Code
           language="html"
-          code={`<a href="./icons"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>`}
+          code={`<a href="{base}/"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>`}
         />
 
         <h3><code>button</code></h3>
@@ -205,7 +205,7 @@
         <h3><code>svg</code> binnen een link</h3>
         <h4>Visueel voorbeeld</h4>
 
-        <a href="./icons">
+        <a href="{base}/components/components/icons">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -229,7 +229,7 @@
         <Code
           language="html"
           code={`
-<a href="./icons">
+<a href="{base}/components/components/icons">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -376,10 +376,14 @@
           van het thema:
         </p>
         <ul>
-          <li>Gebruik een losse <a href="{base}/components/image-icon">icoon-afbeelding</a>.</li>
+          <li>
+            Gebruik een losse <a href="{base}/components/components/image/image-icon"
+              >icoon-afbeelding</a
+            >.
+          </li>
           <li>
             Voeg een applicatie-specifieke icoon-set toe. Zie <a
-              href="{base}/components/icons/add-set">icoon-set toevoegen</a
+              href="{base}/components/components/icons/add-set">icoon-set toevoegen</a
             > voor instructies.
           </li>
         </ul>
