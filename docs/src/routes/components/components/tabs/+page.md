@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Voor het weergeven van tabbladen</p>
+<h2 id="introduction">Introductie</h2>
+
+Tabbladen worden gebruikt om verschillende inhoudssecties op één pagina overzichtelijk te organiseren, waarbij de gebruiker tussen de tabs kan wisselen zonder van pagina te hoeven gaan.
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -16,8 +18,6 @@ nav:
 ```
 
 <h2 id="examples">Voorbeelden</h2>
-
-<h3 id="tabs-class">Tabbladen</h3>
 
 ### Voorbeeld: Tabbladen
 

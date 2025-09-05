@@ -7,10 +7,12 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Voeg gebruiksvriendelijkheid toe voor gebruikers die gebruik maken van
+<h2 id="introduction">Introductie</h2>
+
+Voeg gebruiksvriendelijkheid toe voor gebruikers die gebruik maken van
 hulptechnologiën of enkel met toetsenbord navigeren. Deze knop geeft gebruikers
 de mogelijkheid om direct naar de inhoud van de pagina te springen. Hiermee
-wordt voorkomen dat de gebruiker langs onnodig veel elementen moet navigeren.</p>
+wordt voorkomen dat de gebruiker langs onnodig veel elementen moet navigeren.
 
 <h2 id="quickstart">Snelstart</h2>
 

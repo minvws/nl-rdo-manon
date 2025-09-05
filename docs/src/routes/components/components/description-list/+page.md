@@ -7,7 +7,10 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Description list</p>
+
+<h2 id="introduction">Introductie</h2>
+
+Een description list is een HTML-lijst waarin je termen en hun beschrijvingen overzichtelijk koppelt. Het wordt vaak gebruikt om definities, eigenschappen of kenmerken van iets weer te geven.
 
 <h2 id="quickstart">Snelstart</h2>
 

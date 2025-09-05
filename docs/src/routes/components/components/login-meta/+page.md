@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Voor het weergeven van login meta data</p>
+<h2 id="introduction">Introductie</h2>
+
+"Ingelogd als:" is een label dat toont welke gebruiker momenteel is ingelogd, zodat login-informatie en relevante metadata duidelijk zichtbaar zijn.
 
 <h2 id="quickstart">Snelstart</h2>
 

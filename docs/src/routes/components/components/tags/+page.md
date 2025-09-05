@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">De mogelijkheid om onderliggende elementen visueel als tags weer te geven.</p>
+<h2 id="introduction">Introductie</h2>
+
+De mogelijkheid om onderliggende elementen visueel als tags weer te geven.
 
 <h2 id="quickstart">Snelstart</h2>
 

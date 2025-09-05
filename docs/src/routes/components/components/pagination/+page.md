@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Paginering</p>
+<h2 id="introduction">Introductie</h2>
+
+Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in meerdere pagina’s, zodat gebruikers stapsgewijs door de informatie kunnen bladeren.
 
 <h2 id="quickstart">Snelstart</h2>
 

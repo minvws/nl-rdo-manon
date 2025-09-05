@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Een taalselectie element biedt een verticale keuzelijst die openklapt.</p>
+<h2 id="introduction">Introductie</h2>
+
+Een taalselectie is een dropdown-menu waarmee gebruikers uit een verticale lijst van talen kunnen kiezen door het menu uit te klappen.
 
 <h2 id="quickstart">Snelstart</h2>
 

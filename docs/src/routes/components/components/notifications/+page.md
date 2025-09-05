@@ -1,18 +1,23 @@
 ---
 title: Notificaties
 breadcrumb: Notificaties
+nav:
+  - Introductie: "#introduction"
+  - Beschikbare weergaven: "#beschikbare-weergaven"
 ---
 
-<p id="introduction">Notificaties zijn korte berichten die gebruikers informeren over belangrijke
+<h2 id="introduction">Introductie</h2>
+
+Notificaties zijn korte berichten die gebruikers informeren over belangrijke
 gebeurtenissen of acties binnen een applicatie. Ze kunnen worden gebruikt om
-feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.</p>
+feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.
 
 <p class="explanation">
-  <span>Tip:</span> Notificaties kunnen verborgen worden door de class <code>hidden</code> toe te voegen aan de notification.
+  <span>Tip:</span> Notificaties kunnen verborgen worden door de class hidden toe te voegen aan de notification.
 </p>
 
 <section id="available-types">
-  <h2>Beschikbare weergaven</h2>
+  <h2 id="beschikbare-weergaven">Beschikbare weergaven</h2>
   <div class="column-2">
     <nav id="notification-types">
       <h3>Notificatie-types</h3>
