@@ -7,9 +7,11 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Voor meer nadruk op bepaalde tekst, zoals een citaat of belangrijke informatie,
+<h2 id="introduction">Introductie</h2>
+
+Voor meer nadruk op bepaalde tekst, zoals een citaat of belangrijke informatie,
 kan de class `emphasized` worden gebruikt. Deze class zorgt voor een visuele
-nadruk op de tekst, waardoor deze opvalt binnen de context van de pagina.</p>
+nadruk op de tekst, waardoor deze opvalt binnen de context van de pagina.
 
 <h2 id="quickstart">Snelstart</h2>
 
