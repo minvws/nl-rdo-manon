@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="intrduction">Introductie</h1>
+<h2 id="intrduction">Introductie</h2>
 
 Het `<article>` element bevat een zelfstandig stuk inhoud, terwijl de `<div>` fungeert als wrapper om de inhoud netjes te groeperen
 

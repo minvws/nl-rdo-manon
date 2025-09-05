@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Introductie</h1>
+<h2 id="introduction">Introductie</h2>
 
 Basisset voor het vastleggen van layout-keuzes vanuit een centraal punt.
 

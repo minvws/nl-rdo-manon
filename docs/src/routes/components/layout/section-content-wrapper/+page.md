@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="intrduction">Introductie</h1>
+<h2 id="intrduction">Introductie</h2>
 
 Het sectie element bevat een apart onderdeel van de pagina, terwijl de `<div>` hier dient als wrapper om de inhoud overzichtelijk te groeperen.
 

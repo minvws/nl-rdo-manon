@@ -8,7 +8,7 @@ nav:
 ---
 <h1 id="introduction">Introductie</h1>
 
-  Het `main` element bevat de hoofdinhoud van de pagina en helpt zoekmachines en schermlezers begrijpen wat het belangrijkste deel is.
+Het `main` element bevat de hoofdinhoud van de pagina en helpt zoekmachines en schermlezers begrijpen wat het belangrijkste deel is.
 
 <h2 id="quickstart">Snelstart</h2>
 

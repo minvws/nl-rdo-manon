@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Introductie</h1>
+<h2 id="introduction">Introductie</h2>
 
 Voor het weergeven van content binnen een div direct binnen de main
 

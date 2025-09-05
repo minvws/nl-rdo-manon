@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Introductie</h1>
+<h2 id="introduction">Introductie</h2>
 
 Weergave voor authenticatie-elementen. Login formulieren hebben vaak belang bij
 een smallere weergave dan overige formulieren.

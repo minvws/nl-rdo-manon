@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Introductie</h1>
+<h2 id="introduction">Introductie</h2>
 
 Deze geneste `<div>` elementen dienen als containers om de inhoud overzichtelijk te groeperen
 

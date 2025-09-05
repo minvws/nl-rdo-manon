@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="intrduction">Introductie</h1>
+<h2 id="intrduction">Introductie</h2>
 
 Het `<article>` element bevat zelfstandige inhoud die op zichzelf gelezen of gedeeld kan worden, zoals een blogpost, nieuwsbericht of forumreactie.
 

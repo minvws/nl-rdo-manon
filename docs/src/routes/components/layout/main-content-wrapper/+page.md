@@ -7,8 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Introductie</h1>
-  De main content wrapper is een container die de belangrijkste inhoud van de pagina bij elkaar houdt en zorgt voor een duidelijke en overzichtelijke indeling.
+<h2 id="introduction">Introductie</h2>
+
+De main content wrapper is een container die de belangrijkste inhoud van de pagina bij elkaar houdt en zorgt voor een duidelijke en overzichtelijke indeling.
 
 <h2 id="quickstart">Snelstart</h2>
 

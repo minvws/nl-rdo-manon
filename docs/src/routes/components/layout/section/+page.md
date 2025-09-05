@@ -6,7 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-<h1 id="introduction">Introductie</h1>
+<h2 id="introduction">Introductie</h2>
 
 Het section element groepeert inhoud die thematisch bij elkaar hoort en maakt de pagina overzichtelijker.
 
