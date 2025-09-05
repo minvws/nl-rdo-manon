@@ -3,7 +3,7 @@
 
 $breakpoint: 50rem !default;
 
-.horizontal {
+%horizontal {
   display: flex;
 
   /* Preventing specificity issues */
@@ -21,4 +21,12 @@ $breakpoint: 50rem !default;
   @media (width >= $breakpoint) {
     flex-wrap: nowrap;
   }
+}
+
+.horizontal {
+  @extend %horizontal;
+}
+
+.horizontal-group > div {
+  @extend %horizontal;
 }

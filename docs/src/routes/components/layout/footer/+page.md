@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">De footer wordt vaak gebruikt als extra navigatiepunt en om aan te geven aan de
+<p id="introduction">De footer wordt vaak gebruikt als extra navigatiepunt en om aan te geven aan de
 gebruiker dat het einde van de pagina bereikt is.</p>
 
 <h2 id="quickstart">Snelstart</h2>
@@ -18,11 +18,11 @@ SCSS importeren:
 @use "@minvws/manon/footer";
 ```
 
-<h1 id="examples">Voorbeelden:</h1>
+<h1 id="examples" class="page-title">Voorbeelden:</h1>
 
 <footer>
   <nav aria-labelledby="footer-nav-1-heading">
-    <h1 id="footer-nav-1-heading">Lorem ipsum</h1>
+    <h2 id="footer-nav-1-heading">Lorem ipsum</h2>
     <ul>
       <li><a href="footer">Dolor</a></li>
       <li><a href="footer">Sit</a></li>

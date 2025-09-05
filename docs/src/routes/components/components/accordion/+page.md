@@ -64,7 +64,7 @@ import "@minvws/manon/js/accordion.js";
   <li>
     <button id="example-1-accordion-item-1">Voorbeeld-onderwerp 1</button>
     <div aria-labelledby="example-1-accordion-item-1">
-      <h1>Titel van de content binnen het accordeon-element</h1>
+      <h2>Titel van de content binnen het accordeon-element</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
         leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam
@@ -83,7 +83,7 @@ import "@minvws/manon/js/accordion.js";
   <li>
     <button id="example-1-accordion-item-2">Voorbeeld-onderwerp 2</button>
     <div aria-labelledby="example-1-accordion-item-2">
-      <h1>Titel van de content binnen het accordeon-element</h1>
+      <h2>Titel van de content binnen het accordeon-element</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
         leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam
@@ -106,7 +106,7 @@ import "@minvws/manon/js/accordion.js";
   <li>
     <button id="example-1-accordion-item-1">Voorbeeld-onderwerp 1</button>
     <div aria-labelledby="example-1-accordion-item-1">
-      <h1>Titel van de content binnen het accordeon-element</h1>
+      <h2>Titel van de content binnen het accordeon-element</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu
         semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed
@@ -125,7 +125,7 @@ import "@minvws/manon/js/accordion.js";
   <li>
     <button id="example-1-accordion-item-2">Voorbeeld-onderwerp 2</button>
     <div aria-labelledby="example-1-accordion-item-2">
-      <h1>Titel van de content binnen het accordeon-element</h1>
+      <h2>Titel van de content binnen het accordeon-element</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu
         semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed
@@ -150,7 +150,7 @@ import "@minvws/manon/js/accordion.js";
   <div>
     <button id="example-2-accordion-item-1">Voorbeeld-onderwerp 1</button>
     <div aria-labelledby="example-2-accordion-item-1">
-      <h1>Titel van de content binnen het accordeon-element</h1>
+      <h2>Titel van de content binnen het accordeon-element</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
         leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam
@@ -169,7 +169,7 @@ import "@minvws/manon/js/accordion.js";
   <div>
     <button id="example-2-accordion-item-2">Voorbeeld-onderwerp 2</button>
     <div aria-labelledby="example-2-accordion-item-2">
-      <h1>Titel van de content binnen het accordeon-element</h1>
+      <h2>Titel van de content binnen het accordeon-element</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
         leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam
@@ -192,7 +192,7 @@ import "@minvws/manon/js/accordion.js";
   <div>
     <button id="example-2-accordion-item-1">Voorbeeld-onderwerp 1</button>
     <div aria-labelledby="example-2-accordion-item-1">
-      <h1>Titel van de content binnen het accordeon-element</h1>
+      <h2>Titel van de content binnen het accordeon-element</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu
         semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed
@@ -211,7 +211,7 @@ import "@minvws/manon/js/accordion.js";
   <div>
     <button id="example-2-accordion-item-2">Voorbeeld-onderwerp 2</button>
     <div aria-labelledby="example-2-accordion-item-2">
-      <h1>Titel van de content binnen het accordeon-element</h1>
+      <h2>Titel van de content binnen het accordeon-element</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu
         semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed
@@ -236,7 +236,7 @@ import "@minvws/manon/js/accordion.js";
   <div>
     <button id="example-3-accordion-item-1">Voorbeeld-onderwerp 1</button>
     <div aria-labelledby="example-3-accordion-item-1">
-      <h1>Titel van de content binnen het accordeon-element</h1>
+      <h2>Titel van de content binnen het accordeon-element</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
         leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam
@@ -255,7 +255,7 @@ import "@minvws/manon/js/accordion.js";
   <div>
     <button id="example-3-accordion-item-2">Voorbeeld-onderwerp 2</button>
     <div aria-labelledby="example-3-accordion-item-2">
-      <h1>Titel van de content binnen het accordeon-element</h1>
+      <h2>Titel van de content binnen het accordeon-element</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas
         leo, eu semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam
@@ -278,7 +278,7 @@ import "@minvws/manon/js/accordion.js";
   <div>
     <button id="example-3-accordion-item-1">Voorbeeld-onderwerp 1</button>
     <div aria-labelledby="example-3-accordion-item-1">
-      <h1>Titel van de content binnen het accordeon-element</h1>
+      <h2>Titel van de content binnen het accordeon-element</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu
         semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed
@@ -297,7 +297,7 @@ import "@minvws/manon/js/accordion.js";
   <div>
     <button id="example-3-accordion-item-2">Voorbeeld-onderwerp 2</button>
     <div aria-labelledby="example-3-accordion-item-2">
-      <h1>Titel van de content binnen het accordeon-element</h1>
+      <h2>Titel van de content binnen het accordeon-element</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit egestas leo, eu
         semper erat congue at. Nulla pellentesque nunc nisl, at elementum ex aliquam ac. Fusce sed

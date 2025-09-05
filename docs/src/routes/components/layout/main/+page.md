@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Voor het weergeven van de main op de pagina</p>
+<p id="introduction">Voor het weergeven van de main op de pagina</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -19,16 +19,15 @@ SCSS importeren:
 
 ### Benodigde stappen
 
-- Maak gebruik van en layout set om stijlkeuzes voor de layout centraal vast te
-  leggen en in verschillende componenten te gebruiken. Denk bijvoorbeeld aan het
-  vastleggen van de afstand tussen de blokken binnen de `main`, een `article` en
-  een `section`. Voor meer informatie zie:
-  [Gebruik maken van een layout-set](#layout-set).
+- Voeg styling toe aan het `main` HTML-element. Bijvoorbeeld de spacing tussen de content.
+- De content wrapper kan gebruikt worden om de content binnen de `main` te stylen. bijvoorbeeld om een maximale breedte of spacing mee te geven.
 
 <h2 id="examples">Voorbeelden</h2>
 
 ```html
 <main>
-  <!-- Content -->
+  <div class="content-wrapper">
+    <!-- Content -->
+  </div>
 </main>
 ```

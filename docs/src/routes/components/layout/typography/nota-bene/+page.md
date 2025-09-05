@@ -5,11 +5,9 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
-<p class="introduction">Voor het weergeven van de nota bene</p>
+<p id="introduction">Voor het weergeven van de nota bene</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

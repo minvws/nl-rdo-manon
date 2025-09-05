@@ -10,7 +10,7 @@ integreren in hun projecten.
   <section id="quickstart">
     <h2>Snelle start</h2>
     <p>
-      Bekijk de <a href="/getting-started/quickstart">snelle start</a> voor een overzicht van de
+      Bekijk de <a href="{base}/getting-started/quickstart">snelle start</a> voor een overzicht van de
       belangrijkste stappen om Manon te integreren in je project. Deze gids biedt een beknopte handleiding
       om snel aan de slag te gaan met de basisfunctionaliteiten
     </p>
@@ -20,7 +20,7 @@ integreren in hun projecten.
     <h2>Tutorial</h2>
     <p>
       Voor een stapsgewijze handleiding over het gebruik van Manon, bekijk de
-      <a href="/getting-started/tutorial">tutorial</a>. Deze tutorial behandelt de
+      <a href="{base}/getting-started/tutorial">tutorial</a>. Deze tutorial behandelt de
       basisprincipes en biedt voorbeelden van hoe je Manon kunt integreren in je project.
     </p>
   </section>
@@ -30,6 +30,6 @@ integreren in hun projecten.
     <p>
       Om Manon te gebruiken, moet je de benodigde bestanden toevoegen aan je project. Dit omvat
       zowel CSS- als JavaScript-bestanden. Voor een gedetailleerde uitleg over de installatie,
-      bekijk de <a href="/getting-started/installation">installatiehandleiding</a>.
+      bekijk de <a href="{base}/getting-started/installation">installatiehandleiding</a>.
     </p>
   </section>

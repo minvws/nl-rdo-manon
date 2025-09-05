@@ -1,13 +1,11 @@
 ---
-title: Horizontale scroll
-breadcrumb: Horizontale scroll
+title: horizontal-scroll
+breadcrumb: horizontal-scroll
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Horizontale scroll</h1>
 
 Voor componenten die breder zijn dan het scherm maar wel horizontaal weergegeven
 dienen te worden.

@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Voor het weergeven van grotere notificaties.</p>
+<p id="introduction">Voor het weergeven van grotere notificaties.</p>
 
 <h2 id="quick-start">Snelstart</h2>
 
@@ -24,7 +24,7 @@ SCSS importeren:
 
 <div class="error" role="group" aria-label="foutmelding">
   <span>Foutmelding:</span>
-  <h1>Lorem ipsum dolor set</h1>
+  <h2>Lorem ipsum dolor set</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
     facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
@@ -40,7 +40,7 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
       consequat facilisis ac eu velit.
-      <a href="notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
+      <a href="{base}/">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
@@ -49,7 +49,7 @@ SCSS importeren:
 ```html
 <div class="error" role="group" aria-label="foutmelding">
   <span>Foutmelding:</span>
-  <h1>Lorem ipsum dolor set</h1>
+  <h2>Lorem ipsum dolor set</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
     facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
@@ -64,7 +64,7 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
       facilisis ac eu velit.
-      <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+      <a href="{base}/">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
@@ -75,7 +75,7 @@ SCSS importeren:
 
 <section class="error" role="group" aria-label="foutmelding">
   <span>Foutmelding:</span>
-  <h1>Lorem ipsum dolor set</h1>
+  <h2>Lorem ipsum dolor set</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a
     nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a
@@ -92,7 +92,7 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a
       nisi consequat facilisis ac eu velit.
-      <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+      <a href="{base}/">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
@@ -101,7 +101,7 @@ SCSS importeren:
 ```html
 <section class="error" role="group" aria-label="foutmelding">
   <span>Foutmelding:</span>
-  <h1>Lorem ipsum dolor set</h1>
+  <h2>Lorem ipsum dolor set</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
     facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
@@ -116,7 +116,7 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
       facilisis ac eu velit.
-      <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+      <a href="{base}/">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>

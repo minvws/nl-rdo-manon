@@ -10,7 +10,7 @@ nav:
 <p id="introduction">Icoonknoppen zonder achtergrond geven geen tekst weer. Voeg wel altijd de
 knoptekst toe voor gebruikers die gebruik maken van hulptechnologiën.</p>
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
@@ -108,12 +108,12 @@ SCSS importeren:
 
 ### Voorbeeld: Link als `button` met `img`
 
-<!-- <a href="/components/button/icon" class="button icon-only"> -->
+<!-- <a href="{base}/components/button/icon" class="button icon-only"> -->
 <!--   Lorem ipsum <img src="" alt="Kat" /> -->
 <!-- </a> -->
 
 ```html
-<a href="/components/button/icon" class="button icon-only">
+<a href="{base}/components/button/icon" class="button icon-only">
   Lorem ipsum <img src="path/to/img.svg" alt="Kat" />
 </a>
 ```

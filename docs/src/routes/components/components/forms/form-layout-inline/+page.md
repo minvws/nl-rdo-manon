@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">In sommige gevallen is er om technische redenen een formulier nodig rondom een
+<p id="introduction">In sommige gevallen is er om technische redenen een formulier nodig rondom een
 knop maar is het niet nodig om deze visueel binnen een formulier te plaatsen.
 Voor die situaties is dit voorbeeld geschikt.</p>
 

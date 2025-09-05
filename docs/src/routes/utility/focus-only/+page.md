@@ -1,13 +1,11 @@
 ---
-title: Focus only
-breadcrumb: Focus only
+title: focus only
+breadcrumb: focus only
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Focus only</h1>
 
 <h2 id="quick-start">Snelstart</h2>
 

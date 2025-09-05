@@ -18,11 +18,10 @@
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>
-      <li><a href="#related">Gerelateerde pagina's</a></li>
     </ul>
   </SideMenu>
   <article>
-    <h1>Cover-afbeelding</h1>
+    <h1 class="page-title">Cover-afbeelding</h1>
     <div class="content-wrapper">
       <section id="introduction">
         <p>
@@ -72,11 +71,11 @@
         <h3>Op een tegel</h3>
         <p>
           Dit voorbeeld maakt gebruik van
-          <a href="{base}/components/tiles#single-tile">Tegelweergave</a>.
+          <a href="{base}/components/components/tile">Tegelweergave</a>.
         </p>
         <div role="group" class="tile image-cover">
           <img src="$img/strand.jpg" alt="Foto van een strand" />
-          <h1>Lorem ipsum</h1>
+          <h2>Lorem ipsum</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
             amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -89,7 +88,7 @@
           code={`
 <div role="group" class="tile image-cover">
   <img src="/img/strand.jpg" alt="Foto van een strand">
-  <h1>Lorem ipsum</h1>
+  <h2>Lorem ipsum</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
 </div>
 `}
@@ -98,12 +97,12 @@
         <h3>Op een groep met tegels</h3>
         <p>
           Dit voorbeeld maakt gebruik van
-          <a href="{base}/components/tiles">Tegelweergave</a>.
+          <a href="{base}/components/components/tile">Tegelweergave</a>.
         </p>
         <div class="tiles image-covers column-3">
           <div role="group">
             <img src="$img/strand.jpg" alt="Foto van een strand" />
-            <h1>Lorem ipsum</h1>
+            <h2>Lorem ipsum</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
               amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -112,7 +111,7 @@
 
           <div role="group">
             <img src="$img/strand.jpg" alt="Foto van een strand" />
-            <h1>Lorem ipsum</h1>
+            <h2>Lorem ipsum</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
               amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -121,7 +120,7 @@
 
           <div role="group">
             <img src="$img/strand.jpg" alt="Foto van een strand" />
-            <h1>Lorem ipsum</h1>
+            <h2>Lorem ipsum</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
               amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -136,19 +135,19 @@
 <div class="tiles image-covers column-3">
   <div role="group">
     <img src="/img/strand.jpg" alt="Foto van een strand">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
   </div>
 
   <div role="group">
     <img src="/img/strand.jpg" alt="Foto van een strand">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
   </div>
 
   <div role="group">
     <img src="/img/strand.jpg" alt="Foto van een strand">
-    <h1>Lorem ipsum</h1>
+    <h2>Lorem ipsum</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
   </div>
 </div>
@@ -160,7 +159,7 @@
         <h2>Bijbehorende bestanden</h2>
         <p>
           Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/documentation/import-styling"
+          <a href="{base}/getting-started/installation">
             >Componenten gebruiken en styling toevoegen</a
           >
         </p>

@@ -51,10 +51,8 @@
 @use "@minvws/manon/components/header";
 @use "@minvws/manon/components/heading";
 @use "@minvws/manon/components/hero";
-@use "@minvws/manon/components/layout-authentication";
 @use "@minvws/manon/components/layout-footer-content-block";
 @use "@minvws/manon/components/layout-footer";
-@use "@minvws/manon/components/layout-form";
 @use "@minvws/manon/components/link";
 @use "@minvws/manon/components/list";
 @use "@minvws/manon/components/login-meta";
@@ -63,7 +61,6 @@
 @use "@minvws/manon/components/nota-bene";
 @use "@minvws/manon/components/navigation-content-wrapper";
 @use "@minvws/manon/components/main";
-@use "@minvws/manon/components/main-content-wrapper";
 @use "@minvws/manon/components/max-line-length";
 @use "@minvws/manon/components/message-counter";
 @use "@minvws/manon/components/notification-confirmation";
@@ -75,6 +72,7 @@
 @use "@minvws/manon/components/notification-block-element";
 @use "@minvws/manon/components/p";
 @use "@minvws/manon/components/pagination";
+@use "@minvws/manon/components/page-title";
 @use "@minvws/manon/components/section";
 @use "@minvws/manon/components/sidemenu";
 @use "@minvws/manon/components/table";
@@ -96,11 +94,10 @@
 @use "@minvws/manon/components/radio";
 
 // Utility classes
+
 @use "@minvws/manon/utility/centered";
-@use "@minvws/manon/utility/column-2";
-@use "@minvws/manon/utility/column-3";
-@use "@minvws/manon/utility/column-4";
-@use "@minvws/manon/utility/fifty-fifty";
+@use "@minvws/manon/utility/columns";
+@use "@minvws/manon/utility/container";
 @use "@minvws/manon/utility/focus-only";
 @use "@minvws/manon/utility/visually-hidden";
 @use "@minvws/manon/utility/horizontal";

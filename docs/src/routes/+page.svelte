@@ -17,7 +17,7 @@
 <main id="main-content" tabindex="-1">
   <section id="introduction" class="hero">
     <div class="content-wrapper">
-      <h1 class="heading-xxl">Welkom bij Manon</h1>
+      <h1 class="heading-xxl page-title">Welkom bij Manon</h1>
       <p>
         Manon is een variabel en instelbaar front-end framework. Het is Open Source en ontwikkeld
         door het Ministerie van Volksgezondheid, Welzijn en Sport.
@@ -35,7 +35,7 @@
           worden geleverd met hun eigen CSS en JavaScript. Bekijk alle componenten in <a
             href="{base}/components">de componentenbibliotheek</a
           >. Installeer Manon voor je eigen project met behulp van
-          <a href="{base}/documentation">deze instructies.</a>
+          <a href="{base}/getting-started">deze instructies.</a>
         </p>
       </div>
 

@@ -1,13 +1,11 @@
 ---
-title: Horizontaal uitgelijnd
-breadcrumb: Horizontaal uitgelijnd
+title: horizontal
+breadcrumb: horizontal
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
-
-<h1 id="introduction">Horizontaal uitgelijnd</h1>
 
 Het horizontaal uitlijnen van elementen binnen een container. Dit kan handig
 zijn voor het uitlijnen van knoppen, formulieren of andere elementen die naast
@@ -71,4 +69,4 @@ Voeg de class `horizontal` toe op het horizontaal uit te lijnen element.
 ```
 
 Voor het horizontaal uitlijnen van meerdere objecten binnen een element voeg de
-class `horizontal-group`.
+class `horizontal-group` toe.

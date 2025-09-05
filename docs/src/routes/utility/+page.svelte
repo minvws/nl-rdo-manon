@@ -13,7 +13,7 @@
 
 <main id="main-content" tabindex="-1">
   <section>
-    <h1>Utility classes</h1>
+    <h1 class="page-title">Utility classes</h1>
     <div class="content-wrapper">
       <section id="introduction">
         <p>
@@ -42,12 +42,10 @@
         <nav>
           <h2>Layout</h2>
           <ul>
-            <li><a href="{base}/utility/one-third-two-thirds">Eenderde tweederde</a></li>
-            <li><a href="{base}/utility/two-thirds-one-third">Tweederde eenderde</a></li>
-            <li><a href="{base}/utility/fifty-fifty">50/50</a></li>
-            <li><a href="{base}/utility/column-2">Twee kolommen</a></li>
-            <li><a href="{base}/utility/column-3">Drie kolommen</a></li>
-            <li><a href="{base}/utility/column-4">Vier kolommen</a></li>
+            <li><a href="{base}/utility/one-third-two-thirds">one-third-two-thirds</a></li>
+            <li><a href="{base}/utility/two-thirds-one-third">two-thirds-one-third</a></li>
+            <li><a href="{base}/utility/columns">columns</a></li>
+            <li><a href="{base}/utility/container">container</a></li>
           </ul>
         </nav>
 
@@ -55,10 +53,10 @@
           <h2>Uitlijning</h2>
           <ul>
             <li>
-              <a href="{base}/utility/horizontal">Horizontaal</a>
+              <a href="{base}/utility/horizontal">horizontal</a>
             </li>
             <li>
-              <a href="{base}/utility/centered">Gecentreerd</a>
+              <a href="{base}/utility/centered">centered</a>
             </li>
           </ul>
         </nav>
@@ -70,7 +68,7 @@
               <a href="{base}/utility/nowrap">nowrap</a>
             </li>
             <li>
-              <a href="{base}/utility/horizontal-scroll">Horizontale scroll</a>
+              <a href="{base}/utility/horizontal-scroll">horizontal-scroll</a>
             </li>
           </ul>
         </nav>

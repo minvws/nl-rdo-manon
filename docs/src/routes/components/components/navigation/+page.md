@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Navigatie</p>
+<p id="introduction">Navigatie</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -23,7 +23,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="/examples/navigation-with-list-of-links"
+    src="{base}/examples/navigation-with-list-of-links"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -42,7 +42,7 @@ SCSS importeren:
 ### Voorbeeld: Navigatie-component met een horizontaal uitgelijnde lijst met links
 
 <div class="resize">
-  <iframe src="/examples/navigation-with-horizontal" title="Voorbeeld" height="240px"
+  <iframe src="{base}/examples/navigation-with-horizontal" title="Voorbeeld" height="240px"
   ></iframe>
 </div>
 
