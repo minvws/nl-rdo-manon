@@ -54,9 +54,8 @@ Beschikbare classes:
 <div class="container-s">
   <h2>Container Small (container-s)</h2>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
-    luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie
-    sed, tempus in massa.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae
+    iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.
   </p>
 </div>
 ```
@@ -74,9 +73,8 @@ Beschikbare classes:
 <div class="container-m">
   <h2>Container Medium (container-m)</h2>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
-    luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie
-    sed, tempus in massa.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae
+    iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.
   </p>
 </div>
 ```
@@ -94,9 +92,8 @@ Beschikbare classes:
 <div class="container-l">
   <h2>Container Large (container-l)</h2>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
-    luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie
-    sed, tempus in massa.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim luctus, vitae
+    iaculis magna vestibulum. Aenean est mauris, condimentum et molestie sed, tempus in massa.
   </p>
 </div>
 ```
@@ -116,7 +113,7 @@ Beschikbare classes:
   </div>
 </section>
 
-<section >
+<section>
   <div class="content-wrapper container-l">
     <!-- Content -->
   </div>

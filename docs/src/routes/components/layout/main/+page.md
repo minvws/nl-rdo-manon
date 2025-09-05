@@ -19,7 +19,7 @@ SCSS importeren:
 
 ### Benodigde stappen
 
-- Voeg styling toe aan het `main` HTML-element. Bijvoorbeeld de spacing tussen de content. 
+- Voeg styling toe aan het `main` HTML-element. Bijvoorbeeld de spacing tussen de content.
 - De content wrapper kan gebruikt worden om de content binnen de `main` te stylen. bijvoorbeeld om een maximale breedte of spacing mee te geven.
 
 <h2 id="examples">Voorbeelden</h2>
@@ -27,7 +27,7 @@ SCSS importeren:
 ```html
 <main>
   <div class="content-wrapper">
-      <!-- Content -->
-   </div>
+    <!-- Content -->
+  </div>
 </main>
 ```
