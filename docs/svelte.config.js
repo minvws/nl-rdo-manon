@@ -20,7 +20,7 @@ const config = {
         console.warn(`Referrer: ${referrer}`);
 
         // Skip base path errors during prerendering
-        if (message.includes('404') || message.includes('does not begin with `base`')) {
+        if (message.includes("404") || message.includes("does not begin with `base`")) {
           return;
         }
         throw new Error(message);
@@ -30,7 +30,7 @@ const config = {
         console.warn(`Missing ID error: ${message}`);
         console.warn(`Path: ${path}`);
         console.warn(`Missing ID: ${id}`);
-        console.warn(`Referrers: ${referrers.join(', ')}`);
+        console.warn(`Referrers: ${referrers.join(", ")}`);
       },
     },
     alias: {
