@@ -1,10 +1,6 @@
 ---
 title: Pagina-notificatie
 breadcrumb: Pagina-notificatie
-nav:
-  - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
-  - Voorbeelden: "#examples"
 ---
 
 <p class="warning">

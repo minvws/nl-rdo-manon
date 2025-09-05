@@ -7,14 +7,22 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Voor het tonen van complexe tabellen met bijbehorende details kan gekozen worden
+<p id="introduction">Voor het tonen van complexe tabellen met bijbehorende details kan gekozen worden
 voor een tabel met uitklapbare tabelrijen.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
+SCSS importeren:
+
 ```scss
 @use "@minvws/manon/table";
 @use "@minvws/manon/table-expando-rows";
+```
+
+JavaScript importeren:
+
+```javascript
+import "@minvws/manon/js/expando-rows.js";
 ```
 
 <p class="warning">
@@ -49,15 +57,12 @@ voor een tabel met uitklapbare tabelrijen.</p>
       voor het dichtklappen van de rij. Bijvoorbeeld: "Sluit details".
     - **HTML-voorbeeld:**
       `  <button class="expando-button" data-close-label="Sluit details"   data-icon-open-class="icon icon-descending" data-icon-close-class="icon   icon-ascending" type="button"> Open details </button>`
-7.  Plaats `script defer src="pad/naar/expando-rows.min.js"></script>` in de
-    `head` van het document. Voor meer informatie zie:
-    [JavaScript toevoegen](/documentation/add-js)
-8.  Open/sluit-icoon toevoegen:
+7.  Open/sluit-icoon toevoegen:
     - Voeg de gewenste icoon-classes toe via het HTML-attribuut
       `data-icon-open-class=""` voor het open-icoon en
       `data-icon-close-class=""` voor het sluit-icoon. Vul tussen de "" de
       icoon-classes in van de door jouw gebruikte iconenset. Voor meer
-      informatie over het toevoegen van iconensets, zie [Iconen](/icons). Voor
+      informatie over het toevoegen van iconensets, zie [Iconen]({base}/components/components/icons). Voor
       een implementatievoorbeeld zie het [html-voorbeeld](#examples).
 
 <div class="explanation" role="group" aria-label="Toelichting">

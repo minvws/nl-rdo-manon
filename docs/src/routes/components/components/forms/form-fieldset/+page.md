@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Fieldset</p>
+<p id="introduction">Fieldset</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

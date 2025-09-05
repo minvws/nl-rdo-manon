@@ -13,7 +13,7 @@
 <main id="main-content" tabindex="-1">
   <article id="example-pages">
     <h1 class="page-title">Voorbeelden</h1>
-    
+
     <div class="content-wrapper">
       <div>
         <p>
@@ -21,7 +21,7 @@
           componenten en elementen uit de documentatie.
         </p>
       </div>
-      
+
       <div class="column-2">
         <nav aria-labelledby="example-pages-title" id="example-pages">
           <h2 id="example-pages-title">Voorbeeldpagina's</h2>

@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Voeg gebruiksvriendelijkheid toe voor gebruikers die gebruik maken van
+<p id="introduction">Voeg gebruiksvriendelijkheid toe voor gebruikers die gebruik maken van
 hulptechnologiën of enkel met toetsenbord navigeren. Deze knop geeft gebruikers
 de mogelijkheid om direct naar de inhoud van de pagina te springen. Hiermee
 wordt voorkomen dat de gebruiker langs onnodig veel elementen moet navigeren.</p>
@@ -35,7 +35,7 @@ SCSS importeren:
 <h2 id="examples">Voorbeelden</h2>
 
 <div class="resize">
-  <iframe src="/examples/skip-to-content" title="Voorbeeld" height="240px"></iframe>
+  <iframe src="{base}/examples/skip-to-content" title="Voorbeeld" height="240px"></iframe>
 </div>
 
 ```html

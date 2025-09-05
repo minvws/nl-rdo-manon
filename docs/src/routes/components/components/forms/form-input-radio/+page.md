@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Radio selecteerknop voor het selecteren van een optie binnen een set</p>
+<p id="introduction">Radio selecteerknop voor het selecteren van een optie binnen een set</p>
 
 <h2 id="quick-start">Snelstart</h2>
 

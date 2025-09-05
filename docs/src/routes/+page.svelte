@@ -35,7 +35,7 @@
           worden geleverd met hun eigen CSS en JavaScript. Bekijk alle componenten in <a
             href="{base}/components">de componentenbibliotheek</a
           >. Installeer Manon voor je eigen project met behulp van
-          <a href="{base}/documentation">deze instructies.</a>
+          <a href="{base}/getting-started">deze instructies.</a>
         </p>
       </div>
 

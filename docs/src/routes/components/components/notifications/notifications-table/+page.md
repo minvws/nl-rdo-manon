@@ -3,13 +3,13 @@ title: Notificatie binnen tabellen
 breadcrumb: Notificatie binnen tabellen
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
 ---
 
-<p class="introduction">Voor het weergeven van notificaties binnen tabellen</p>
+<p id="introduction">Voor het weergeven van notificaties binnen tabellen</p>
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

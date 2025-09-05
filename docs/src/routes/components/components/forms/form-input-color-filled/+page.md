@@ -16,7 +16,7 @@ nav:
   kun je er voor kiezen dit component te gebruiken.
 </p>
 
-<p class="introduction">Kleurselector volledig gevuld</p>
+<p id="introduction">Kleurselector volledig gevuld</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
