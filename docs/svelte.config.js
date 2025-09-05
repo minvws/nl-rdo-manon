@@ -31,7 +31,7 @@ const config = {
         console.error(`Path: ${path}`);
         console.error(`Missing ID: ${id}`);
         console.error(`Referrers: ${referrers.join(", ")}`);
-        console.error('');
+        console.error("");
       },
     },
     alias: {
