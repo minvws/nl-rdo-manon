@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Dit is een visueel onzichtbare fieldset. Het is een HTML-element dat wordt
+<p id="introduction">Dit is een visueel onzichtbare fieldset. Het is een HTML-element dat wordt
 gebruikt om gerelateerde formulierelementen te groeperen, maar het is niet
 zichtbaar voor de gebruiker. Dit kan nuttig zijn voor toegankelijkheid, omdat
 het screenreaders helpt om de structuur van het formulier te begrijpen zonder

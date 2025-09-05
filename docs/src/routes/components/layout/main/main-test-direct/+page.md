@@ -3,7 +3,7 @@ title: Main testpagina
 breadcrumb: Main testpagina
 ---
 
-<p class="introduction">Componenten direct binnen de `main` geplaatst.</p>
+<p id="introduction">Componenten direct binnen de `main` geplaatst.</p>
 
 <h2>HTML-voorbeeld:</h2>
 
@@ -16,7 +16,7 @@ breadcrumb: Main testpagina
 
 <h2>Gebruikte bestanden</h2>
 
-Voor meer informatie over importeren en instellen van componenten. Zie: [Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+Voor meer informatie over importeren en instellen van componenten. Zie: [Componenten gebruiken en styling toevoegen]({base}/getting-started/installation)
 
 ### Importeer component via npm
 

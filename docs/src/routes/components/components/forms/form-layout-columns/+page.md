@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Voor het weergeven van de inhoud van het formulier in kolommen.</p>
+<p id="introduction">Voor het weergeven van de inhoud van het formulier in kolommen.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

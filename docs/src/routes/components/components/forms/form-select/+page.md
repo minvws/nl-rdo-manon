@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Selectielijst om gebruikers een lijst aan opties te tonen.</p>
+<p id="introduction">Selectielijst om gebruikers een lijst aan opties te tonen.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

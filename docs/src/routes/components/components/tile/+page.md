@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Tegelweergave kan gebruikt worden om content visueel te groeperen om gebruikers
+<p id="introduction">Tegelweergave kan gebruikt worden om content visueel te groeperen om gebruikers
 te laten zien welke content bij elkaar hoort. Veel gebruikte toepassingen voor
 tegelweergave zijn bijvoorbeeld nieuwsberichten.</p>
 
@@ -18,23 +18,6 @@ tegelweergave zijn bijvoorbeeld nieuwsberichten.</p>
 ```
 
 <h2 id="examples">Voorbeelden:</h2>
-
-Beschikbare voorbeelden:
-
-<nav aria-label="Document-navigatie">
-  <ul>
-    <li>
-      <a href="#single-tile">Tegelweergave op enkel element</a>
-    </li>
-    <li><a href="#tiles">Groep met tegels</a></li>
-    <li>
-      <a href="tile/tile-cover-image">Tegel met cover-afbeelding</a>
-    </li>
-    <li>
-      <a href="tile/tile-groups">Gegroepeerde content binnen tegels</a>
-    </li>
-  </ul>
-</nav>
 
 ### Voorbeeld: Tegelweergave op enkel element
 

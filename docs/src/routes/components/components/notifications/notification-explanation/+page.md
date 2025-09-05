@@ -3,13 +3,14 @@ title: Toelichting
 breadcrumb: Toelichting
 nav:
   - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Gebruik om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het
+<p id="introduction">Gebruik om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het
 incorrect invoeren van data of een systeemfout.</p>
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
@@ -17,6 +18,8 @@ SCSS importeren:
 @use "@minvws/manon/notification";
 @use "@minvws/manon/notification-explanation";
 ```
+
+<h2 id="examples">Voorbeelden</h2>
 
 ### Voorbeeld: `div`
 

@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Tekstveld</p>
+<p id="introduction">Tekstveld</p>
 
 <h2 id="quickstart">Snelstart</h2>
 SCSS importeren:
@@ -61,7 +61,7 @@ SCSS importeren:
     <li>
       Zorg er voor gebruiksvriendelijkheid voor dat het tekstveld een
       duidelijke vraag en/of duidelijk doel heeft. Voeg een omschrijvend <code>label</code>
-      toe en stel een vraag of geef duidelijke richtlijnen mee door middel van een <a href="/components/layout/typography/nota-bene">nota-bene</a>.
+      toe en stel een vraag of geef duidelijke richtlijnen mee door middel van een <a href="{base}/components/layout/typography/nota-bene">nota-bene</a>.
     </li>
     <li>
     <code>rows="number"</code> geeft de initiële hoogte van het tekstveld aan in de

@@ -5,11 +5,9 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
-<p class="introduction">Een taalselectie element biedt een verticale keuzelijst die openklapt.</p>
+<p id="introduction">Een taalselectie element biedt een verticale keuzelijst die openklapt.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 

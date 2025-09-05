@@ -23,7 +23,7 @@
 </header>
 
 <main id="main-content" tabindex="-1">
-  <section class="auth">
+  <section class="container-s">
     <h1>Inloggen</h1>
     <div class="content-wrapper">
       <form class="help">
@@ -47,8 +47,8 @@
             data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
             id="password-message"
           >
-            <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1
-            hoofdletter, 1 kleineletter en 1 cijfer.
+            <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter,
+            1 kleineletter en 1 cijfer.
           </p>
         </div>
         <button type="submit">Inloggen</button>

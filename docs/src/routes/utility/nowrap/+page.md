@@ -24,8 +24,6 @@ SCSS importeren:
   element. Door de class op een hoger gelegen element te plaatsen, bijvoorbeeld de
   <code>table</code>
   of de omliggende <code>div</code> zullen alle onderliggende tekst-elementen niet afbreken.
-  Verschillende voorbeelden en opties zijn beschikbaar op de
-  <a href="/utility/nowrap-test">Test- en voorbeelden-pagina</a>.
 </p>
 
 <h2 id="examples">Voorbeelden</h2>
@@ -51,7 +49,7 @@ SCSS importeren:
 <p class="explanation">
   <span>Toelichting:</span> In dit voorbeeld wordt er ook gebruik gemaakt van de
   <dfn>helper-class</dfn>
-  <a href="/utility/horizontal-scroll">horizontal-scroll</a>
+  <a href="{base}/utility/horizontal-scroll">horizontal-scroll</a>
   om te voorkomen dat het voorbeeld-element de layout van de pagina breekt. Zonder deze toevoeging
   zou de tekst het scherm uitlopen. De class <code>horizontal-scroll</code> voegt op de maximale
   beschikbare breedte de scrollbalk toe.

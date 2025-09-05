@@ -1,6 +1,6 @@
 ---
-title: Visueel verbergen
-breadcrumb: Visueel verbergen
+title: visually-hidden
+breadcrumb: visually-hidden
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"

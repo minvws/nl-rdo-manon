@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Voor het weergeven van grotere notificaties.</p>
+<p id="introduction">Voor het weergeven van grotere notificaties.</p>
 
 <h2 id="quick-start">Snelstart</h2>
 
@@ -40,7 +40,7 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
       consequat facilisis ac eu velit.
-      <a href="notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
+      <a href="{base}/">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
@@ -64,7 +64,7 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
       facilisis ac eu velit.
-      <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+      <a href="{base}/">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
@@ -92,7 +92,7 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a
       nisi consequat facilisis ac eu velit.
-      <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+      <a href="{base}/">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
@@ -116,7 +116,7 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
       facilisis ac eu velit.
-      <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+      <a href="{base}/">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>

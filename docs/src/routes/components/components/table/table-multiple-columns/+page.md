@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Data weergeven over meer dan een rij kan gebruikt worden binnen tabellen.</p>
+<p id="introduction">Data weergeven over meer dan een rij kan gebruikt worden binnen tabellen.</p>
 
 <h2 id="quick-start">Snelstart</h2>
 

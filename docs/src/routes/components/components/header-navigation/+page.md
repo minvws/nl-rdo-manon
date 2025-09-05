@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">De header-navigation component biedt een flexibele en toegankelijke
+<p id="introduction">De header-navigation component biedt een flexibele en toegankelijke
 navigatiebalk voor websites. Het ondersteunt verschillende configuraties, zoals
 een logo, zoekveld, en meerdere menu's. Deze component is ontworpen om te
 voldoen aan de toegankelijkheidsrichtlijnen en biedt een responsieve ervaring.</p>
@@ -36,7 +36,7 @@ SCSS importeren:
 ### Voorbeeld: Alleen navigatie
 
 <div class="resize">
-  <iframe src="/examples/header-navigation" title="Voorbeeld" height="240px"></iframe>
+  <iframe src="{base}/examples/header-navigation" title="Voorbeeld" height="240px"></iframe>
 </div>
 
 ```html
@@ -52,9 +52,9 @@ SCSS importeren:
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/components">Componenten</a></li>
-        <li><a href="/documentation">Documentatie</a></li>
+        <li><a href="{base}/">Home</a></li>
+        <li><a href="{base}/components">Componenten</a></li>
+        <li><a href="{base}/documentation">Documentatie</a></li>
       </ul>
     </div>
   </nav>
@@ -65,7 +65,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="/examples/header-navigation-with-content-wrapper"
+    src="{base}/examples/header-navigation-with-content-wrapper"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -85,9 +85,9 @@ SCSS importeren:
     >
       <div class="collapsing-element">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/components">Componenten</a></li>
-          <li><a href="/documentation">Documentatie</a></li>
+          <li><a href="{base}/">Home</a></li>
+          <li><a href="{base}/components">Componenten</a></li>
+          <li><a href="{base}/documentation">Documentatie</a></li>
         </ul>
       </div>
     </nav>
@@ -99,7 +99,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="/examples/header-navigation-with-search"
+    src="{base}/examples/header-navigation-with-search"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -118,9 +118,9 @@ SCSS importeren:
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/components">Componenten</a></li>
-        <li><a href="/documentation">Documentatie</a></li>
+        <li><a href="{base}/">Home</a></li>
+        <li><a href="{base}/components">Componenten</a></li>
+        <li><a href="{base}/documentation">Documentatie</a></li>
       </ul>
 
       <div>
@@ -140,7 +140,7 @@ SCSS importeren:
 ### Voorbeeld: Navigatie en logo
 
 <div class="resize">
-  <iframe src="/examples/header-navigation-with-logo" title="Voorbeeld" height="240px"
+  <iframe src="{base}/examples/header-navigation-with-logo" title="Voorbeeld" height="240px"
   ></iframe>
 </div>
 
@@ -156,13 +156,13 @@ SCSS importeren:
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-      <a href="/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
+      <a href="{base}/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
 
       <div class="collapsing-element">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/components">Componenten</a></li>
-          <li><a href="/documentation">Documentatie</a></li>
+          <li><a href="{base}/">Home</a></li>
+          <li><a href="{base}/components">Componenten</a></li>
+          <li><a href="{base}/documentation">Documentatie</a></li>
         </ul>
       </div>
     </nav>
@@ -174,7 +174,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="/examples/header-navigation-with-multiple-menus"
+    src="{base}/examples/header-navigation-with-multiple-menus"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -194,13 +194,13 @@ SCSS importeren:
     >
       <div class="collapsing-element">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/components">Componenten</a></li>
-          <li><a href="/documentation">Documentatie</a></li>
+          <li><a href="{base}/">Home</a></li>
+          <li><a href="{base}/components">Componenten</a></li>
+          <li><a href="{base}/documentation">Documentatie</a></li>
         </ul>
 
         <ul>
-          <li><a href="/logout">Logout</a></li>
+          <li><a href="{base}/logout">Logout</a></li>
         </ul>
       </div>
     </nav>
@@ -212,7 +212,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="/examples/header-navigation-with-form-button"
+    src="{base}/examples/header-navigation-with-form-button"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -232,17 +232,17 @@ SCSS importeren:
     >
       <div class="collapsing-element">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/components">Componenten</a></li>
-          <li><a href="/documentation">Documentatie</a></li>
+          <li><a href="{base}/">Home</a></li>
+          <li><a href="{base}/components">Componenten</a></li>
+          <li><a href="{base}/documentation">Documentatie</a></li>
         </ul>
 
         <ul class="actions">
           <li>
-            <a href="/examples/header-navigation-with-form-button" class="avatar">A</a>
+            <a href="{base}/examples/header-navigation-with-form-button" class="avatar">A</a>
           </li>
           <li>
-            <form action="/logout" method="POST" class="inline">
+            <form action="{base}/logout" method="POST" class="inline">
               <input type="hidden" name="_token" value="" />
               <button type="submit">Logout</button>
             </form>
@@ -258,7 +258,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="/examples/header-navigation-with-logo-above"
+    src="{base}/examples/header-navigation-with-logo"
     title="Voorbeeld"
     height="320px"
   ></iframe>
@@ -268,7 +268,7 @@ SCSS importeren:
 <header>
   <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-  <a href="/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
+  <a href="{base}/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
 
   <nav
     data-open-label="Menu"
@@ -279,13 +279,13 @@ SCSS importeren:
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/components">Componenten</a></li>
-        <li><a href="/documentation">Documentatie</a></li>
+        <li><a href="{base}/">Home</a></li>
+        <li><a href="{base}/components">Componenten</a></li>
+        <li><a href="{base}/documentation">Documentatie</a></li>
       </ul>
 
       <ul>
-        <li><a href="/logout">Logout</a></li>
+        <li><a href="{base}/logout">Logout</a></li>
       </ul>
     </div>
   </nav>
