@@ -1,6 +1,6 @@
 ---
-title: Horizontale scroll
-breadcrumb: Horizontale scroll
+title: horizontal-scroll
+breadcrumb: horizontal-scroll
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
