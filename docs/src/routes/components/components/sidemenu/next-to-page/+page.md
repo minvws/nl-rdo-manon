@@ -55,10 +55,10 @@ Zie het zijmenu van deze pagina.
 <body class="sidemenu">
   <nav>
     <ul>
-      <li><a href="/">Voorbeeld link 1</a></li>
-      <li><a href="/">Voorbeeld link 2</a></li>
-      <li><a href="/">Voorbeeld link 3</a></li>
-      <li><a href="/">Voorbeeld link 4</a></li>
+      <li><a href="{base}/">Voorbeeld link 1</a></li>
+      <li><a href="{base}/">Voorbeeld link 2</a></li>
+      <li><a href="{base}/">Voorbeeld link 3</a></li>
+      <li><a href="{base}/">Voorbeeld link 4</a></li>
     </ul>
   </nav>
   <div class="page-content">

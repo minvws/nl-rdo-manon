@@ -52,9 +52,9 @@ SCSS importeren:
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/components">Componenten</a></li>
-        <li><a href="/documentation">Documentatie</a></li>
+        <li><a href="{base}/">Home</a></li>
+        <li><a href="{base}/components">Componenten</a></li>
+        <li><a href="{base}/documentation">Documentatie</a></li>
       </ul>
     </div>
   </nav>
@@ -85,9 +85,9 @@ SCSS importeren:
     >
       <div class="collapsing-element">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/components">Componenten</a></li>
-          <li><a href="/documentation">Documentatie</a></li>
+          <li><a href="{base}/">Home</a></li>
+          <li><a href="{base}/components">Componenten</a></li>
+          <li><a href="{base}/documentation">Documentatie</a></li>
         </ul>
       </div>
     </nav>
@@ -118,9 +118,9 @@ SCSS importeren:
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/components">Componenten</a></li>
-        <li><a href="/documentation">Documentatie</a></li>
+        <li><a href="{base}/">Home</a></li>
+        <li><a href="{base}/components">Componenten</a></li>
+        <li><a href="{base}/documentation">Documentatie</a></li>
       </ul>
 
       <div>
@@ -156,13 +156,13 @@ SCSS importeren:
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-      <a href="/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
+      <a href="{base}/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
 
       <div class="collapsing-element">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/components">Componenten</a></li>
-          <li><a href="/documentation">Documentatie</a></li>
+          <li><a href="{base}/">Home</a></li>
+          <li><a href="{base}/components">Componenten</a></li>
+          <li><a href="{base}/documentation">Documentatie</a></li>
         </ul>
       </div>
     </nav>
@@ -194,13 +194,13 @@ SCSS importeren:
     >
       <div class="collapsing-element">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/components">Componenten</a></li>
-          <li><a href="/documentation">Documentatie</a></li>
+          <li><a href="{base}/">Home</a></li>
+          <li><a href="{base}/components">Componenten</a></li>
+          <li><a href="{base}/documentation">Documentatie</a></li>
         </ul>
 
         <ul>
-          <li><a href="/logout">Logout</a></li>
+          <li><a href="{base}/logout">Logout</a></li>
         </ul>
       </div>
     </nav>
@@ -232,9 +232,9 @@ SCSS importeren:
     >
       <div class="collapsing-element">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/components">Componenten</a></li>
-          <li><a href="/documentation">Documentatie</a></li>
+          <li><a href="{base}/">Home</a></li>
+          <li><a href="{base}/components">Componenten</a></li>
+          <li><a href="{base}/documentation">Documentatie</a></li>
         </ul>
 
         <ul class="actions">
@@ -242,7 +242,7 @@ SCSS importeren:
             <a href="{base}/examples/header-navigation-with-form-button" class="avatar">A</a>
           </li>
           <li>
-            <form action="/logout" method="POST" class="inline">
+            <form action="{base}/logout" method="POST" class="inline">
               <input type="hidden" name="_token" value="" />
               <button type="submit">Logout</button>
             </form>
@@ -268,7 +268,7 @@ SCSS importeren:
 <header>
   <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-  <a href="/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
+  <a href="{base}/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
 
   <nav
     data-open-label="Menu"
@@ -279,13 +279,13 @@ SCSS importeren:
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/components">Componenten</a></li>
-        <li><a href="/documentation">Documentatie</a></li>
+        <li><a href="{base}/">Home</a></li>
+        <li><a href="{base}/components">Componenten</a></li>
+        <li><a href="{base}/documentation">Documentatie</a></li>
       </ul>
 
       <ul>
-        <li><a href="/logout">Logout</a></li>
+        <li><a href="{base}/logout">Logout</a></li>
       </ul>
     </div>
   </nav>

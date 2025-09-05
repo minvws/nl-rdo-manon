@@ -47,7 +47,7 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
     <nav>
       <div class="collapsing-element">
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="{base}/">Home</a></li>
         </ul>
       </div>
     </nav>
@@ -56,10 +56,10 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
 <main class="sidemenu">
   <nav aria-label="Zijbalknavigatie">
     <ul>
-      <li><a href="/">Voorbeeld link 1</a></li>
-      <li><a href="/">Voorbeeld link 2</a></li>
-      <li><a href="/">Voorbeeld link 3</a></li>
-      <li><a href="/">Voorbeeld link 4</a></li>
+      <li><a href="{base}/">Voorbeeld link 1</a></li>
+      <li><a href="{base}/">Voorbeeld link 2</a></li>
+      <li><a href="{base}/">Voorbeeld link 3</a></li>
+      <li><a href="{base}/">Voorbeeld link 4</a></li>
     </ul>
   </nav>
   <article>
