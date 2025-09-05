@@ -30,8 +30,10 @@ const config = {
         console.error(`Missing ID error: ${message}`);
         console.error(`Path: ${path}`);
         console.error(`Missing ID: ${id}`);
-        console.error(`Referrers: ${referrers.join(", ")}`);
+        console.error(`Referrers: ${referrers?.length ? referrers.join(", ") : "(none)"}`);
         console.error("");
+
+        throw new Error(message);
       },
     },
     alias: {
