@@ -116,7 +116,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 </div>
 ```
 
-## Met formulier
+### Voorbeeld: Met formulier
 
 ### Visuele weergave:
 
