@@ -116,9 +116,8 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 </div>
 ```
 
-## Met formulier
+### Voorbeeld: Met formulier
 
-### Visuele weergave:
 
 <div
   data-open-label="Dropdown menu"
@@ -137,7 +136,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   </div>
 </div>
 
-### HTML-voorbeeld:
 
 ```html
 <div
@@ -158,9 +156,8 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 </div>
 ```
 
-## Inklapbare ghost button
+### Voorbeeld: Inklapbare ghost button
 
-### Visuele weergave:
 
 <div
   data-open-label="Dropdown menu"
@@ -178,7 +175,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   </div>
 </div>
 
-### HTML-voorbeeld:
 
 ```html
 <div
@@ -198,9 +194,8 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 </div>
 ```
 
-## Inklapbare icoonknop
+### Voorbeeld: Inklapbare icoonknop
 
-### Visuele weergave:
 
 <div
   data-open-label="Dropdown menu"
@@ -218,7 +213,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   </div>
 </div>
 
-### HTML-voorbeeld:
 
 ```html
 <div
@@ -238,9 +232,8 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 </div>
 ```
 
-## Inklapbaar component met meerdere menu's
+### Voorbeeld: Inklapbaar component met meerdere menu's
 
-### Visuele weergave:
 
 <div
   data-open-label="Dropdown menu"
@@ -263,7 +256,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   </div>
 </div>
 
-### HTML-voorbeeld:
 
 ```html
 <div
@@ -288,9 +280,8 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 </div>
 ```
 
-## Inklapbare taalselectie
+### Voorbeeld: Inklapbare taalselectie
 
-### Visuele weergave:
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
@@ -318,7 +309,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   </div>
 </div>
 
-### HTML-voorbeeld:
 
 ```html
 <div
