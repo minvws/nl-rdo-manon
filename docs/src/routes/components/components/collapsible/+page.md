@@ -118,7 +118,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 
 ### Voorbeeld: Met formulier
 
-### Visuele weergave:
 
 <div
   data-open-label="Dropdown menu"
