@@ -194,7 +194,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 </div>
 ```
 
-## Inklapbare icoonknop
+### Voorbeeld: Inklapbare icoonknop
 
 
 <div
