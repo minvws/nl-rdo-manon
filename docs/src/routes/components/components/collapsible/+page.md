@@ -159,7 +159,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 
 ### Voorbeeld: Inklapbare ghost button
 
-### Visuele weergave:
 
 <div
   data-open-label="Dropdown menu"
