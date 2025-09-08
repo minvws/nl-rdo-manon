@@ -10,7 +10,7 @@ nav:
 <h2 id="introduction">Introductie</h2>
 
 Een accordeon biedt een verticale keuzelijst die je per onderdeel kunt
-openklappen om meer informatie te tonen.s
+openklappen om meer informatie te tonen.
 
 <h2 id="quickstart">Snelstart</h2>
 
