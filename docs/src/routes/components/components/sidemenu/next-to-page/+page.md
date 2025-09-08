@@ -45,7 +45,7 @@ de content. Gebruik dan:
 Zie het zijmenu van deze pagina.
 
 <div class="resize">
-  <iframe src="{base}/examples/sidemenu-next-to-page" title="Voorbeeld" height="320px"
+  <iframe src="{base}/snippets/sidemenu-next-to-page" title="Voorbeeld" height="320px"
   ></iframe>
 </div>
 

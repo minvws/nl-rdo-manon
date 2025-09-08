@@ -1,16 +1,16 @@
 ---
-title: Pagina-notificatie systeembericht voorbeeld
-breadcrumb: Pagina-notificatie systeembericht voorbeeld
+title: Pagina-notificatie toelichting voorbeeld
+breadcrumb: Pagina-notificatie toelichting voorbeeld
 ---
 
-<section class="system" role="group" aria-label="systeembericht">
+<section class="explanation" role="group" aria-label="toelichting">
   <div>
-    <span>Systeembericht:</span>
+    <span>Toelichting:</span>
     <p>Lorem ipsum dolor sit amet.</p>
   </div>
 </section>
 
-<h1 id="introduction">Pagina-notificatie systeembericht voorbeeld</h1>
+<h1 id="introduction">Pagina-notificatie toelichting voorbeeld</h1>
 
 Voor het weergeven van notificaties op paginaniveau.
 
@@ -25,7 +25,9 @@ Voor het voorbeeld zie bovenaan deze pagina.
 #### `section`
 
 ```html
-<p class="system" role="group" aria-label="systeembericht"><span>Systeembericht:</span> Lorem ipsum dolor sit.</p>
+<p class="explanation" role="group" aria-label="toelichting">
+  <span>Toelichting:</span> Lorem ipsum dolor sit.
+</p>
 ```
 
 <h2 id="requirements">Bijbehorende bestanden</h2>
@@ -39,8 +41,8 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
 
 ```css
 @use "@minvws/manon/notification";
-@use "@minvws/manon/notification-system-message";
-@use "@minvws/manon/notification-system-page";
+@use "@minvws/manon/notification-explanation-message";
+@use "@minvws/manon/notification-explanation-page";
 ```
 
 <h2 id="variables">Instelbare variabelen</h2>
@@ -59,174 +61,175 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
     </thead>
     <tbody>
       <tr>
-        <td>--notification-system-page-background-color</td>
+        <td>--notification-explanation-page-background-color</td>
         <td><a href="{base}/getting-started/installation#background-color">background-color</a></td>
-        <td>var(--system-background-color)</td>
+        <td>var(--explanation-background-color)</td>
         <td>-</td>
-        <th rowspan="24" scope="rowgroup">system</th>
+        <th rowspan="24" scope="rowgroup">explanation</th>
       </tr>
 
       <tr>
-        <td>--notification-system-page-text-color</td>
+        <td>--notification-explanation-page-text-color</td>
         <td><a href="{base}/getting-started/installation#text-color">color</a></td>
-        <td>var(--system-text-color)</td>
+        <td>var(--explanation-text-color)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-border-width</td>
+        <td>--notification-explanation-page-border-width</td>
         <td><a href="{base}/getting-started/installation#border-width">border-width</a></td>
         <td>var(--notification-border-width)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-border-style</td>
+        <td>--notification-explanation-page-border-style</td>
         <td><a href="{base}/getting-started/installation#border-style">border-style</a></td>
         <td>var(--notification-border-style)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-border-color</td>
+        <td>--notification-explanation-page-border-color</td>
         <td><a href="{base}/getting-started/installation#border-color">border-color</a></td>
-        <td>var(--system-border-color)</td>
+        <td>var(--explanation-border-color)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-padding-top</td>
+        <td>--notification-explanation-page-padding-top</td>
         <td><a href="{base}/getting-started/installation#padding-top">padding-top</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-padding-right</td>
+        <td>--notification-explanation-page-padding-right</td>
         <td><a href="{base}/getting-started/installation#padding-right">padding-right</a></td>
         <td>var(--page-whitespace-right)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td> --notification-system-page-padding-bottom</td>
+        <td> --notification-explanation-page-padding-bottom</td>
         <td><a href="{base}/getting-started/installation#padding-bottom">padding-bottom</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-padding-left</td>
+        <td>--notification-explanation-page-padding-left</td>
         <td><a href="{base}/getting-started/installation#padding-left">padding-left</a></td>
         <td>var(--page-whitespace-left)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-gap</td>
+        <td>--notification-explanation-page-gap</td>
         <td><a href="{base}/getting-started/installation#gap">gap</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-span-font-weight</td>
+        <td>--notification-explanation-page-span-font-weight</td>
         <td><a href="{base}/getting-started/installation#font-weight">span-font-weight</a></td>
         <td>var(--notification-span-font-weight)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-pagecontent-wrapper-padding-top</td>
+        <td>--notification-explanation-pagecontent-wrapper-padding-top</td>
         <td><a href="{base}/getting-started/installation#padding-top">padding-top</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-pagecontent-wrapper-padding-right</td>
+        <td>--notification-explanation-pagecontent-wrapper-padding-right</td>
         <td><a href="{base}/getting-started/installation#padding-right">padding-right</a></td>
         <td>var(--content-padding-right)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td> --notification-system-pagecontent-wrapper-padding-bottom</td>
+        <td> --notification-explanation-pagecontent-wrapper-padding-bottom</td>
         <td><a href="{base}/getting-started/installation#padding-bottom">padding-bottom</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-pagecontent-wrapper-padding-left</td>
+        <td>--notification-explanation-pagecontent-wrapper-padding-left</td>
         <td><a href="{base}/getting-started/installation#padding-left">padding-left</a></td>
         <td>var(--content-padding-left)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-pagecontent-wrapper-gap</td>
+        <td>--notification-explanation-pagecontent-wrapper-gap</td>
         <td><a href="{base}/getting-started/installation#gap">gap</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-pagecontent-wrapper-span-font-weight</td>
+        <td>--notification-explanation-pagecontent-wrapper-span-font-weight</td>
         <td><a href="{base}/getting-started/installation#font-weight">font-weight</a></td>
         <td>0.5rem</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-icon-font-family</td>
+        <td>--notification-explanation-page-icon-font-family</td>
         <td><a href="{base}/getting-started/installation#font-family">font-family</a></td>
         <td>var(--notification-icon-font-family)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-icon-font-size</td>
+        <td>--notification-explanation-page-icon-font-size</td>
         <td><a href="{base}/getting-started/installation#font-size">font-size</a></td>
         <td>var(--notification-icon-font-size)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-icon-text-color</td>
+        <td>--notification-explanation-page-icon-text-color</td>
         <td><a href="{base}/getting-started/installation#text-color">color</a></td>
         <td>var(--notification-icon-text-color)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-icon-padding-right</td>
+        <td>--notification-explanation-page-icon-padding-right</td>
         <td><a href="{base}/getting-started/installation#padding-right">padding-right</a></td>
         <td>var(--notification-icon-padding-right)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-icon-padding-left</td>
+        <td>--notification-explanation-page-icon-padding-left</td>
         <td><a href="{base}/getting-started/installation#padding-left">padding-left</a></td>
         <td>var(--notification-icon-padding-left)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-icon-margin-right</td>
+        <td>--notification-explanation-page-icon-margin-right</td>
         <td><a href="{base}/getting-started/installation#margin-right">margin-right</a></td>
         <td>var(--notification-icon-margin-right)</td>
         <td>-</td>
       </tr>
 
       <tr>
-        <td>--notification-system-page-icon</td>
+        <td>--notification-explanation-page-icon</td>
         <td><a href="{base}/getting-started/installation#content">content</a></td>
         <td>var(--notification-icon)</td>
         <td>-</td>
       </tr>
     </tbody>
+
   </table>
 </div>
 
@@ -237,38 +240,37 @@ project. Kies en gebruik de benodigde variabelen.
 
 ```css
 :root {
-    --notification-system-page-background-color: ;
-    --notification-system-page-text-color: ;
-    --notification-system-page-border-width: ;
-    --notification-system-page-border-style: ;
-    --notification-system-page-border-color: ;
-    --notification-system-page-padding-top: ;
-    --notification-system-page-padding-right: ;
-    --notification-system-page-padding-bottom: ;
-    --notification-system-page-padding-left: ;
-    --notification-system-page-gap: ;
+  --notification-explanation-page-background-color: ;
+  --notification-explanation-page-text-color: ;
+  --notification-explanation-page-border-width: ;
+  --notification-explanation-page-border-style: ;
+  --notification-explanation-page-border-color: ;
+  --notification-explanation-page-padding-top: ;
+  --notification-explanation-page-padding-right: ;
+  --notification-explanation-page-padding-bottom: ;
+  --notification-explanation-page-padding-left: ;
+  --notification-explanation-page-gap: ;
 
-    /* First span */
-    --notification-system-page-span-font-weight: ;
+  /* First span */
+  --notification-explanation-page-span-font-weight: ;
 
+  /* Content wrapper */
+  --notification-explanation-page-content-wrapper-padding-top: ;
+  --notification-explanation-page-content-wrapper-padding-right: ;
+  --notification-explanation-page-content-wrapper-padding-bottom: ;
+  --notification-explanation-page-content-wrapper-padding-left: ;
+  --notification-explanation-page-content-wrapper-gap: ;
 
-    /* Content wrapper */
-    --notification-system-page-content-wrapper-padding-top: ;
-    --notification-system-page-content-wrapper-padding-right: ;
-    --notification-system-page-content-wrapper-padding-bottom: ;
-    --notification-system-page-content-wrapper-padding-left: ;
-    --notification-system-page-content-wrapper-gap: ;
+  /* First span */
+  --notification-explanation-page-content-wrapper-span-font-weight: ;
 
-    /* First span */
-    --notification-system-page-content-wrapper-span-font-weight: ;
-
-    /* Icon */
-    --notification-system-page-icon-font-family: ;
-    --notification-system-page-icon-font-size: ;
-    --notification-system-page-icon-text-color: ;
-    --notification-system-page-icon-padding-right: ;
-    --notification-system-page-icon-padding-left: ;
-    --notification-system-page-icon-margin-right: ;
-    --notification-system-page-icon: ;
+  /* Icon */
+  --notification-explanation-page-icon-font-family: ;
+  --notification-explanation-page-icon-font-size: ;
+  --notification-explanation-page-icon-text-color: ;
+  --notification-explanation-page-icon-padding-right: ;
+  --notification-explanation-page-icon-padding-left: ;
+  --notification-explanation-page-icon-margin-right: ;
+  --notification-explanation-page-icon: ;
 }
 ```

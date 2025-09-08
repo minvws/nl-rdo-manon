@@ -43,7 +43,7 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
 [Zijmenu naast de pagina]({base}/components/components/sidemenu/next-to-page).
 
 <div class="resize">
-  <iframe src="{base}/examples/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
+  <iframe src="{base}/snippets/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
 </div>
 
 ```html
@@ -122,7 +122,7 @@ header en footer.
 
 <div class="resize">
   <iframe
-    src="{base}/examples/sidemenu-in-page-collapsible"
+    src="{base}/snippets/sidemenu-in-page-collapsible"
     title="Voorbeeld"
     height="320px"
   ></iframe>
@@ -166,7 +166,7 @@ Gebruik deze weergave als de inhoud van het zijmenu niet over de content van de
 pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 
 <div class="resize">
-  <iframe src="{base}/examples/sidemenu-next-to-page" title="Voorbeeld" height="320px"
+  <iframe src="{base}/snippets/sidemenu-next-to-page" title="Voorbeeld" height="320px"
   ></iframe>
 </div>
 
@@ -229,7 +229,7 @@ breed is. Zoals bijvoorbeeld hoofdnavigatie.
 
 <div class="resize">
   <iframe
-    src="{base}/examples/sidemenu-next-to-page-collapsible"
+    src="{base}/snippets/sidemenu-next-to-page-collapsible"
     title="Voorbeeld"
     height="320px"
   ></iframe>

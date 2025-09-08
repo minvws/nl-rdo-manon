@@ -36,7 +36,7 @@ SCSS importeren:
 ### Voorbeeld: Alleen navigatie
 
 <div class="resize">
-  <iframe src="{base}/examples/header-navigation" title="Voorbeeld" height="240px"></iframe>
+  <iframe src="{base}/snippets/header-navigation" title="Voorbeeld" height="240px"></iframe>
 </div>
 
 ```html
@@ -65,7 +65,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/examples/header-navigation-with-content-wrapper"
+    src="{base}/snippets/header-navigation-with-content-wrapper"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -99,7 +99,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/examples/header-navigation-with-search"
+    src="{base}/snippets/header-navigation-with-search"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -140,7 +140,7 @@ SCSS importeren:
 ### Voorbeeld: Navigatie en logo
 
 <div class="resize">
-  <iframe src="{base}/examples/header-navigation-with-logo" title="Voorbeeld" height="240px"
+  <iframe src="{base}/snippets/header-navigation-with-logo" title="Voorbeeld" height="240px"
   ></iframe>
 </div>
 
@@ -174,7 +174,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/examples/header-navigation-with-multiple-menus"
+    src="{base}/snippets/header-navigation-with-multiple-menus"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -212,7 +212,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/examples/header-navigation-with-form-button"
+    src="{base}/snippets/header-navigation-with-form-button"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -239,7 +239,7 @@ SCSS importeren:
 
         <ul class="actions">
           <li>
-            <a href="{base}/examples/header-navigation-with-form-button" class="avatar">A</a>
+            <a href="{base}/snippets/header-navigation-with-form-button" class="avatar">A</a>
           </li>
           <li>
             <form action="{base}/logout" method="POST" class="inline">
@@ -258,7 +258,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/examples/header-navigation-with-logo"
+    src="{base}/snippets/header-navigation-with-logo"
     title="Voorbeeld"
     height="320px"
   ></iframe>

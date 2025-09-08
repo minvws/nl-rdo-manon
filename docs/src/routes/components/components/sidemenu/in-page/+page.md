@@ -36,7 +36,7 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
 #### Visueel voorbeeld
 
 <div class="resize">
-  <iframe src="{base}/examples/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
+  <iframe src="{base}/snippets/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
 </div>
 
 #### HTML-voorbeeld
