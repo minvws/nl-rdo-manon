@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">File upload, invoerveld voor het uploaden van bestanden.</p>
+<p id="introduction">File upload, invoerveld voor het uploaden van bestanden.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -18,7 +18,7 @@ nav:
 <p class="explanation">
   <strong>Tip:</strong> Om bereik-invoervelden een eigen gekozen kleur mee te geven kan
   gebruik gemaakt worden van
-  <a href="/components/form-accent-color">accentkleur op formulierelementen</a>.
+  <a href="{base}/components/components/forms/form-layout-accent-color">accentkleur op formulierelementen</a>.
 </p>
 
 <h2 id="examples">Voorbeelden</h2>

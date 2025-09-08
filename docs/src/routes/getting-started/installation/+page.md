@@ -6,7 +6,7 @@ breadcrumb: Installatie
 Deze documentatie beschrijft instructies voor het installeren en gebruiken van
 het Manon design framework in je project.
 
-Je kunt ook de [tutorial](/getting-started/tutorial) volgen om te leren hoe je
+Je kunt ook de [tutorial]({base}/getting-started/tutorial) volgen om te leren hoe je
 de componenten op een meer gestructureerde manier kunt gebruiken.
 
 Daarnaast hebben we

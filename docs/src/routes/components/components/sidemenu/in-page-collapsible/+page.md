@@ -5,10 +5,9 @@ nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
 ---
 
-<p class="introduction">Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het
+<p id="introduction">Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het
 navigeren voor de gebruiker toegankelijk en overzichtelijk te houden. In dit
 voorbeeld staat het zijmenu binnen de pagina bij de content. Dus tussen de
 header en footer.</p>
@@ -32,14 +31,13 @@ header en footer.</p>
 1.  Voeg de class `sidemenu` toe aan de `main`.
 2.  Voeg direct binnen de `main` een `nav` toe met de gewenste inhoud.
 3.  Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-    is. Bijvoorbeeld: `div`, `article` of `section`. Voor meer informatie zie:
-    [Voorbeeld sidemenu structuur](#sidemenu-structure).
+    is. Bijvoorbeeld: `div`, `article` of `section`.
 4.  Voeg de referentie naar het Javascript bestand, `sidemenu.js`, toe aan de
     HTML-pagina's die gebruik dienen te maken van het inklapbare zijmenu. Voor
     meer informatie zie:
-    [JavaScript referentie toevoegen](/documentation/add-js).
+    [JavaScript referentie toevoegen]({base}/getting-started/installation).
 
-### Sluit- en open-knop als icoonknop instellen zonder tekst.
+### Sluit- en open-knop als icoonknop instellen zonder tekst
 
 Voeg altijd de knoptekst in de taal van het document toe voor screenreader
 gebruikers.
@@ -56,8 +54,7 @@ gebruikers.
 ### Pagina laden met een gesloten zijmenu
 
 Om het menu standaard gesloten te tonen tot de gebruiker het menu opent. Voeg de
-class `sidemenu-closed` toe aan de `body`. Voor meer informatie zie:
-[Uitklapbaar zijmenu](#sidemenu-expandable).
+class `sidemenu-closed` toe aan de `body`.
 
 <h2 id="examples">Voorbeelden</h2>
 
@@ -67,7 +64,7 @@ class `sidemenu-closed` toe aan de `body`. Voor meer informatie zie:
 
 <div class="resize">
   <iframe
-    src="/examples/sidemenu-in-page-collapsible"
+    src="{base}/examples/sidemenu-in-page-collapsible"
     title="Voorbeeld"
     height="320px"
   ></iframe>
@@ -100,7 +97,7 @@ Het menu is standaard ingeklapt en kan door de gebruiker uitgeklapt worden.
 #### Visueel voorbeeld
 
 <div class="resize">
-  <iframe src="/examples/sidemenu-in-page-expandable" title="Voorbeeld" height="320px"
+  <iframe src="{base}/examples/sidemenu-in-page-expandable" title="Voorbeeld" height="320px"
   ></iframe>
 </div>
 
@@ -125,4 +122,4 @@ Het menu is standaard ingeklapt en kan door de gebruiker uitgeklapt worden.
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/documentation/import-styling)
+[Componenten gebruiken en styling toevoegen]({base}/getting-started/installation)

@@ -3,7 +3,7 @@ title: Notificaties
 breadcrumb: Notificaties
 ---
 
-<p class="introduction">Notificaties zijn korte berichten die gebruikers informeren over belangrijke
+<p id="introduction">Notificaties zijn korte berichten die gebruikers informeren over belangrijke
 gebeurtenissen of acties binnen een applicatie. Ze kunnen worden gebruikt om
 feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.</p>
 
@@ -18,27 +18,27 @@ feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.</p>
       <h3>Notificatie-types</h3>
       <ul>
         <li>
-          <a href="/components/components/notifications/notification-error"
+          <a href="{base}/components/components/notifications/notification-error"
             >Foutmelding</a
           >
         </li>
         <li>
-          <a href="/components/components/notifications/notification-warning"
+          <a href="{base}/components/components/notifications/notification-warning"
             >Waarschuwing</a
           >
         </li>
         <li>
-          <a href="/components/components/notifications/notification-confirmation"
+          <a href="{base}/components/components/notifications/notification-confirmation"
             >Bevestiging</a
           >
         </li>
         <li>
-          <a href="/components/components/notifications/notification-explanation"
+          <a href="{base}/components/components/notifications/notification-explanation"
             >Toelichting</a
           >
         </li>
         <li>
-          <a href="/components/components/notifications/notification-system-message"
+          <a href="{base}/components/components/notifications/notification-system-message"
             >Systeemberichten</a
           >
         </li>
@@ -49,22 +49,22 @@ feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.</p>
       <h3>Weergaven</h3>
       <ul>
         <li>
-          <a href="/components/components/notifications/notifications-block-element"
+          <a href="{base}/components/components/notifications/notifications-block-element"
             >Blokelement</a
           >
         </li>
         <li>
-          <a href="/components/components/notifications/notifications-paragraph"
+          <a href="{base}/components/components/notifications/notifications-paragraph"
             >Paragraaf</a
           >
         </li>
         <li>
-          <a href="/components/components/notifications/notifications-page"
+          <a href="{base}/components/components/notifications/notifications-page"
             >Pagina-notificatie</a
           >
         </li>
         <li>
-          <a href="/components/components/notifications/notifications-table">Tabel</a>
+          <a href="{base}/components/components/notifications/notifications-table">Tabel</a>
         </li>
       </ul>
     </nav>

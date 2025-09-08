@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Tabelelementen kunnen een meldig weergeven. Denk hierbij aan een foutmelding of
+<p id="introduction">Tabelelementen kunnen een meldig weergeven. Denk hierbij aan een foutmelding of
 een toelichting.</p>
 
 <h2 id="quick-start">Snelstart</h2>
@@ -29,8 +29,8 @@ SCSS importeren:
    - `warning`
    - `confirmation`
    - `explanation`
-   - `primary` Zie [Notifications](/components/notifications) voor meer
-     informatie.
+   - `primary` Zie [Notifications]({base}/components/components/notifications) voor
+     meer informatie.
 
 <h2 id="examples">Voorbeelden</h2>
 

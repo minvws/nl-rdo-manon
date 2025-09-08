@@ -244,7 +244,7 @@ TODO
           </li>
           <li>
             Voeg binnen de knop van elke sorteerbare kolom een icoon toe. Voor meer informatie zie:
-            <a href="{base}/components/icons">Iconen</a>.
+            <a href="{base}/components/components/icons">Iconen</a>.
             <ul>
               <li>
                 Voeg <code>aria-hidden="true"</code> aan de <code>&lt;span></code> van het icoon, om

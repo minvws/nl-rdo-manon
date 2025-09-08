@@ -1,6 +1,6 @@
 ---
-title: Verbergen
-breadcrumb: Verbergen
+title: hidden
+breadcrumb: hidden
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"

@@ -1,6 +1,6 @@
 ---
-title: Horizontaal uitgelijnd
-breadcrumb: Horizontaal uitgelijnd
+title: horizontal
+breadcrumb: horizontal
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
@@ -69,4 +69,4 @@ Voeg de class `horizontal` toe op het horizontaal uit te lijnen element.
 ```
 
 Voor het horizontaal uitlijnen van meerdere objecten binnen een element voeg de
-class `horizontal-group`.
+class `horizontal-group` toe.

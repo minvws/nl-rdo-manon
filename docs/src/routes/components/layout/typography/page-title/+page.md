@@ -2,12 +2,14 @@
 title: Pagina-titel
 breadcrumb: Pagina-titel
 nav:
+  - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
-  - Bijbehorende bestanden: "#requirements"
-  - Gerelateerde pagina's: "#related"
 ---
 
-<p class="introduction">Dit component kan gebruikt worden om styling te koppelen aan de titel van de pagina.</p>
+<h2 id="introduction">Introductie</h2>
+
+Dit component kan gebruikt worden om styling te koppelen aan de titel van de pagina. Voeg de class `page-title` toe aan de `<h1>`.
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -17,7 +19,7 @@ SCSS importeren:
 @use "@minvws/manon/page-title";
 ```
 
-Voeg de class `page-title` toe aan de <code>h1</code>.
+
 
 <h2 id="examples">Voorbeelden</h2>
 
@@ -28,4 +30,3 @@ Voeg de class `page-title` toe aan de <code>h1</code>.
 ```html
 <h1 class="page-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
 ```
-

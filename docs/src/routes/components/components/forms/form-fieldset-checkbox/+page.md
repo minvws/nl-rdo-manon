@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">Fieldset Selectievak - checkbox</p>
+<p id="introduction">Fieldset Selectievak - checkbox</p>
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss

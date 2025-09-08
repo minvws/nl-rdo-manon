@@ -7,7 +7,7 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p class="introduction">De mogelijkheid om onderliggende elementen visueel als tags weer te geven.</p>
+<p id="introduction">De mogelijkheid om onderliggende elementen visueel als tags weer te geven.</p>
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -69,7 +69,7 @@ nav:
 ### Voorbeeld: Tags op tabel
 
 Tabel-elementen visueel weergegeven als tag. Voor het direct aanspreken van een
-enkel element zie: [tags](/components/components/tag).
+enkel element zie: [tags]({base}/components/components/tag).
 
 <div class="horizontal-scroll">
   <table class="tags">
@@ -118,7 +118,7 @@ enkel element zie: [tags](/components/components/tag).
 ### Tags binnen een tabel
 
 Tabel-elementen visueel weergegeven als tag. Voor het direct aanspreken van een
-enkel element zie: [tags](/components/components/tag).
+enkel element zie: [tags]({base}/components/components/tag).
 
 <div class="horizontal-scroll">
   <table>
