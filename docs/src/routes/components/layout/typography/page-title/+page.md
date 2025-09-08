@@ -19,8 +19,6 @@ SCSS importeren:
 @use "@minvws/manon/page-title";
 ```
 
-
-
 <h2 id="examples">Voorbeelden</h2>
 
 ### Voorbeeld: h1

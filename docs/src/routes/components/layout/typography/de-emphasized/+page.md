@@ -22,7 +22,6 @@ SCSS importeren:
 
 <h2 id="examples">Voorbeelden</h2>
 
-
 ### Voorbeeld: Paragraaf
 
 <p class="de-emphasized">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
