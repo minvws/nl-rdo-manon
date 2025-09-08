@@ -3,44 +3,46 @@ title: Tutorial
 breadcrumb: Tutorial
 ---
 
-## Introduction
+## Introductie
 
-In this tutorial, we’ll use the Manon framework to build a basic web page. We’ll
-cover the following topics:
+In deze tutorial gebruiken we het Manon-framework om een basiswebpagina te
+bouwen. We behandelen de volgende onderwerpen:
 
-- Setting up a Manon project
-- Creating a basic page
-- Creating a layout with header, main content, and footer
-- Adding components to the page
+- Een Manon-project opzetten
+- Een basispagina maken
+- Een layout maken met `header`, `main` en `footer`
+- Componenten aan de pagina toevoegen
 
-We will do this by incrementally updating our project, following the likely
-steps you would take when building a web page with Manon.
+We doen dit door ons project stapsgewijs bij te werken, volgens de stappen die
+je waarschijnlijk zou nemen bij het bouwen van een webpagina met Manon.
 
-You can
-[explore the final project and its source code on GitHub](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial).
+Je kunt
+[het eindproject en de broncode op GitHub bekijken](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial).
 
-## Installation
+## Installatie
 
-For this tutorial, we will be using `npm` to manage our dependencies. So, make
-sure you have `npm` installed on your system. When you have this installed,
-we're ready to start building our Manon project.
+Voor deze tutorial gebruiken we `npm` om onze dependencies te beheren. Zorg er
+dus voor dat `npm` op je systeem is geïnstalleerd. Zodra dit is geïnstalleerd,
+kunnen we beginnen met het bouwen van ons Manon-project.
 
-First, we need to create a new project directory and initialize it with npm.
+Eerst moeten we een nieuwe projectmap aanmaken en initialiseren met npm.
 
 ```plaintext
-# Create a new directory for the project
+# Maak een nieuwe map voor het project
 mkdir manon-tutorial
 cd manon-tutorial
 
-# Initialize the project with npm
+# Initialiseer het project met npm
 npm init -y
 ```
 
-The `npm init -y` command will create a `package.json` file with default values.
-This file will be used to manage our project dependencies and scripts.
+Het commando `npm init -y` maakt een `package.json`-bestand aan met
+standaardwaarden. Dit bestand wordt gebruikt om onze dependencies en scripts te
+beheren.
 
-Let's update our `package.json` to include the necessary dependencies. For now
-we'll just replace the contents of the `package.json` file with the following:
+Laten we ons `package.json` bijwerken om de benodigde afhankelijkheden op te
+nemen. Voor nu vervangen we gewoon de inhoud van het `package.json`-bestand door
+het volgende:
 
 ```plaintext
 {
@@ -48,8 +50,8 @@ we'll just replace the contents of the `package.json` file with the following:
     "build": "sass --load-path=node_modules main.scss css/main.css"
   },
   "dependencies": {
-    "@minvws/manon": "^17.0.0-rc.1",
-    "@minvws/manon-themes": "^17.0.0-rc.1"
+    "@minvws/manon": "^18.0.0",
+    "@minvws/manon-themes": "^18.0.0"
   },
   "devDependencies": {
     "sass": "^1.89.0"
@@ -57,45 +59,45 @@ we'll just replace the contents of the `package.json` file with the following:
 }
 ```
 
-Let's break down what we've defined here:
+Laten we uitleggen wat we hier hebben gedefinieerd:
 
-- `@minvws/manon`: This is the core Manon framework that provides the basic
-  styles and components.
+- `@minvws/manon`: Dit is het framework van Manon dat de basisstijlen en
+  componenten levert.
 
-- `@minvws/manon-themes`: This package contains the themes for Manon, allowing
-  us to apply different styles to our components easily. We've provided a basic
-  theme called `icore-open` that we will use in our project.
+- `@minvws/manon-themes`: Dit pakket bevat de thema's voor Manon, waardoor we
+  eenvoudig verschillende stijlen op onze componenten kunnen toepassen. We
+  hebben een basisthema genaamd `icore-open` dat we in ons project gaan
+  gebruiken.
 
-- `sass`: This will install the `sass` command line utility, which we will use
-  to compile our sass files into CSS. This will be used to compile our
-  `main.scss` file into a `css/main.css` file. And this will be called by the
-  `build` script.
+- `sass`: Dit installeert de `sass`-commandline-tool, die we gebruiken om onze
+  sass-bestanden te compileren naar CSS. Hiermee wordt ons `main.scss`-bestand
+  omgezet in een `css/main.css`-bestand. Dit wordt aangeroepen door het
+  build-script.
 
-- `scripts.build`: This script calls the `sass` command line utility to compile
-  our `main.scss` file into a `css/main.css` file, which we will use in our
-  HTML.
+- `scripts.build`: Dit script roept de `sass`-commandline-tool aan om ons
+  `main.scss`-bestand te compileren naar css/main.css, dat we in onze HTML
+  gebruiken.
 
-Now, we can install the dependencies we defined by running:
+Nu kunnen we de dependencies installeren door het volgende commando uit te
+voeren:
 
-```plaintext
+```console
 npm install
 ```
 
-This command will read the `package.json` file and install the necessary
-dependencies into a `node_modules` directory in our project. It will also create
-a `package-lock.json` file that locks the versions of the installed
-dependencies, ensuring that the same versions are used when the project is
-installed in the future.
+Dit commando leest het `package.json`-bestand en installeert de benodigde
+dependencies in een `node_modules`-directory in ons project. Het maakt ook een
+`package-lock.json`-bestand aan dat de versies van de geïnstalleerde
+dependencies vastzet, zodat dezelfde versies in de toekomst worden gebruikt.
 
-The installation of the dependencies will be complete once the `npm install`
-command is finished. Once the installation is complete, we can start building
-our project.
+De installatie van de dependencies is voltooid zodra het commando `npm install`
+klaar is. Daarna kunnen we beginnen met het bouwen van ons project.
 
-## Create a basic page
+## Een basispagina maken
 
-In this section, we will create a basic page just to get started with, and make
-sure everything is set up correctly. First create a `index.html` file in the
-root of your project directory. This will be the main HTML file for our page.
+In deze sectie maken we een basispagina om te beginnen en ervoor te zorgen dat
+alles correct is ingesteld. Maak eerst een `index.html`-bestand in de root van
+je projectdirectory. Dit wordt het hoofd-HTML-bestand voor onze pagina.
 
 ```html
 <!doctype html>
@@ -107,95 +109,70 @@ root of your project directory. This will be the main HTML file for our page.
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1 class="page-title">Hello, Manon!</h1>
+    <h1 class="page-title">Hallo, Manon!</h1>
   </body>
 </html>
 ```
 
-Second, create a `main.scss` file in the root of your project directory. In this
-file we're going to add the individual components that we're going to use in our
-page, and the theme we want to apply. Throughout the tutorial, we'll be adding
-more components to these files as we expand our page.
+Maak vervolgens een `main.scss`-bestand in de root van je projectdirectory. In
+dit bestand voegen we de afzonderlijke componenten toe die we op onze pagina
+gaan gebruiken, evenals het thema dat we willen toepassen. Gedurende de tutorial
+voegen we meer componenten toe aan deze bestanden naarmate we onze pagina
+uitbreiden.
 
 ```scss
-// Theme that we're going to use for our page
+// main.scss
+
+// Thema dat we gaan gebruiken voor onze pagina
 @use "@minvws/manon-themes/icore-open";
 ```
 
-Whenever you want to use additional components, you can import them in this
-`main.scss` file. See the available components that you can use in the
-[Manon documentation](https://minvws.github.io/nl-rdo-manon/).
+Wanneer je extra componenten wilt gebruiken, kun je ze importeren in dit
+`main.scss`-bestand. Zie de beschikbare componenten in de
+[Manon documentatie](/components).
 
-Now, we can build our styles by running the following command:
+Nu kunnen we onze stijlen bouwen door het volgende commando uit te voeren:
 
-```plaintext
+```console
 npm run build
 ```
 
-This command will execute the `build` script defined in our `package.json`,
-which will compile our `main.scss` file into a `css/main.css` file. This CSS
-file will be linked in our `index.html` file, allowing us to apply the styles to
-our page.
+Dit commando voert het build-script uit dat is gedefinieerd in ons
+`package.json` en compileert ons `main.scss`-bestand naar `css/main.css`. Dit
+CSS-bestand wordt gekoppeld in ons `index.html`-bestand, zodat de stijlen op
+onze pagina worden toegepast.
 
-Open the `index.html` file in your browser to see the result. You should see a
-header with the text "Hello, Manon!" styled with the Manon framework.
+Open het `index.html`-bestand in je browser om het resultaat te zien. Je zou een
+koptekst moeten zien met de tekst "Hallo, Manon!" gestyled met het
+Manon-framework.
 
 ## Layout
 
-We're going to create a basic layout for our page using the Manon framework.
-We'll start with the header, main content, and footer sections.
+We gaan een basislayout maken voor onze pagina met het Manon-framework. We
+beginnen met de header, hoofdinhoud en footer-secties.
 
 ### Header
 
-First, we need to import the
-[header navigation component](https://minvws.github.io/nl-rdo-manon/components/header-navigation)
-in our `main.scss` file. So, add the following import to your `main.scss` file:
+Eerst moeten we de
+[header navigation component](/components/components/header-navigation)
+importeren in ons `main.scss`-bestand:
 
 ```scss
-// Header navigation
-@use "@minvws/manon/header-navigation";
-@use "@minvws/manon/header-navigation-content-wrapper";
-@use "@minvws/manon/header-navigation-link";
-@use "@minvws/manon/header-navigation-link-visited";
-@use "@minvws/manon/header-navigation-link-hover";
-@use "@minvws/manon/header-navigation-link-active";
-@use "@minvws/manon/header-navigation-link-focus";
-@use "@minvws/manon/header-navigation-collapsible";
-@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button";
-@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button-states";
+// main.scss
 
-// Accessibility
-@use "@minvws/manon/skip-to-content";
-```
-
-Our `main.scss` file should now look like this:
-
-```scss
-// Theme that we're going to use for our page
+// Thema dat we gaan gebruiken voor onze pagina
 @use "@minvws/manon-themes/icore-open";
 
-// Header navigation
-@use "@minvws/manon/header-navigation";
-@use "@minvws/manon/header-navigation-content-wrapper";
-@use "@minvws/manon/header-navigation-link";
-@use "@minvws/manon/header-navigation-link-visited";
-@use "@minvws/manon/header-navigation-link-hover";
-@use "@minvws/manon/header-navigation-link-active";
-@use "@minvws/manon/header-navigation-link-focus";
-@use "@minvws/manon/header-navigation-collapsible";
-@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button";
-@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button-states";
-
-// Accessibility
-@use "@minvws/manon/skip-to-content";
+// Importeer de header navigation component
+@use "@minvws/manon/components/header";
 ```
 
-Second we're going to add the following HTML to our `index.html` file to create
-a header with navigation links:
+Vervolgens voegen we de volgende HTML toe aan ons `index.html`-bestand om een
+header met navigatielinks te maken:
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content">Skip to content</a>
+  <a href="#main-content" class="button focus-only skip-to-content">Sla inhoud over</a>
   <nav
     data-open-label="Menu"
     data-close-label="Sluit menu"
@@ -206,7 +183,7 @@ a header with navigation links:
     <div class="collapsing-element">
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#">Over</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
@@ -214,11 +191,11 @@ a header with navigation links:
 </header>
 ```
 
-Now, our `index.html` file should look like this:
+Nu zou ons index.html-bestand er als volgt uit moeten zien:
 
 ```html
 <!doctype html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -227,7 +204,7 @@ Now, our `index.html` file should look like this:
   </head>
   <body>
     <header>
-      <a href="#main-content" class="button focus-only skip-to-content">Skip to content</a>
+      <a href="#main-content" class="button focus-only skip-to-content">Sla inhoud over</a>
       <nav
         data-open-label="Menu"
         data-close-label="Sluit menu"
@@ -238,153 +215,96 @@ Now, our `index.html` file should look like this:
         <div class="collapsing-element">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Over</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <h1 class="page-title">Hello, Manon!</h1>
+    <h1 class="page-title">Hallo, Manon!</h1>
   </body>
 </html>
 ```
 
 ### Main
 
-For the main content, we will need to import the
-[`main`](https://minvws.github.io/nl-rdo-manon/components/main),
-[`section`](https://minvws.github.io/nl-rdo-manon/components/section) and
-[layout-set](https://minvws.github.io/nl-rdo-manon/components/layout-set),
-components into our `main.scss` file. This will allow us to create a structured
-layout for our page.
+Voor de hoofdinhoud moeten we de [`main` component](/components/layout/main), en
+het [`section` component](/components/layout/section) importeren in ons
+`main.scss`-bestand. Hiermee kunnen we een gestructureerde layout voor onze
+pagina maken.
 
-Add the following imports to your `main.scss` file:
+Voeg de volgende imports toe aan je `main.scss`:
 
 ```scss
-//Layout
-@use "@minvws/manon/layout-set";
 @use "@minvws/manon/main";
 @use "@minvws/manon/section";
 ```
 
-Now, our `main.scss` file should look like this:
+Ons `main.scss`-bestand zou er nu als volgt uit moeten zien:
 
 ```scss
+// main.scss
+
 // Theme that we're going to use for our page
 @use "@minvws/manon-themes/icore-open";
 
-// Header navigation
-// ...
-
-// Accessibility
-// ...
-@use "@minvws/manon/skip-to-content";
-
 // Layout
-@use "@minvws/manon/layout-set";
 @use "@minvws/manon/main";
 @use "@minvws/manon/section";
 ```
 
-Next, we will update our `index.html` file to include the main content area. Add
-the following HTML to your `index.html` file, just after the header section,
-replacing the existing `<h1>` tag:
+Vervolgens updaten we ons `index.html`-bestand om het hoofdinhoudgebied op te
+nemen. Voeg de volgende HTML toe, direct na de headersectie, ter vervanging van
+de bestaande `<h1>`-tag:
 
 ```html
 <main>
   <section>
-    <h1 class="page-title">Hello, Manon!</h1>
-    <h2>Welcome to the Manon Tutorial</h2>
+    <h1 class="page-title">Hallo, Manon!</h1>
+    <h2>Welkom bij de Manon Tutorial</h2>
     <p>
-      Welcome to the Manon tutorial. In this tutorial, we will learn how to use Manon to create a
-      basic web page.
+      Welkom bij de Manon-tutorial. In deze tutorial leren we hoe we Manon kunnen gebruiken om een
+      basiswebpagina te maken.
     </p>
-    <p>We’ll cover the following topics:</p>
+    <p>We behandelen de volgende onderwerpen:</p>
     <ol>
-      <li>Setting up a Manon project</li>
-      <li>Creating a basic page</li>
-      <li>Creating a layout with header, main content, and footer</li>
-      <li>Adding components to the page</li>
+      <li>Het opzetten van een Manon-project</li>
+      <li>Het maken van een basispagina</li>
+      <li>Het creëren van een layout met header, hoofdinhoud en footer</li>
+      <li>Het toevoegen van componenten aan de pagina</li>
     </ol>
   </section>
 </main>
 ```
 
-Now, our `index.html` file should look like this:
-
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manon Tutorial</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <header>
-      <!-- .... -->
-    </header>
-    <main>
-      <section>
-        <h1 class="page-title">Hello, Manon!</h1>
-        <h2>Welcome to the Manon Tutorial</h2>
-        <p>
-          Welcome to the Manon tutorial. In this tutorial, we will learn how to use Manon to create
-          a basic web page.
-        </p>
-        <p>We’ll cover the following topics:</p>
-        <ol>
-          <li>Setting up a Manon project</li>
-          <li>Creating a basic page</li>
-          <li>Creating a layout with header, main content, and footer</li>
-          <li>Adding components to the page</li>
-        </ol>
-      </section>
-    </main>
-  </body>
-</html>
-```
-
-Now, we have a basic layout with a header and main content area. The main
-content area should contain a section that includes a heading and paragraph. You
-can add more content to the section as needed.
-
 ### Footer
 
-To add a footer to our page, we will import the
-[footer component](https://minvws.github.io/nl-rdo-manon/components/footer) into
-our `main.scss` file. This will allow us to create a footer section with
-navigation links.
+Om een footer toe te voegen aan onze pagina importeren we de
+[`footer` component](/components/components/footer) in ons `main.scss`-bestand.
+Hiermee kunnen we een `footer`-sectie aan onze pagina toevoegen.
 
-Add the following import to your `main.scss` file:
+Voeg de volgende import toe aan je `main.scss`:
 
 ```scss
 @use "@minvws/manon/footer";
 ```
 
-Now, our `main.scss` file should look like this:
+Ons `main.scss`-bestand zou er nu als volgt uit moeten zien:
 
 ```scss
+// main.scss
+
 // Theme that we're going to use for our page
 @use "@minvws/manon-themes/icore-open";
 
-// Header navigation
-// ...
-
-// Accessibility
-@use "@minvws/manon/skip-to-content";
-
 // Layout
-@use "@minvws/manon/layout-set";
 @use "@minvws/manon/main";
 @use "@minvws/manon/section";
 @use "@minvws/manon/footer";
 ```
 
-Next, we will update our `index.html` file to include the footer section. Add
-the following HTML to your `index.html` file, just before the closing `</body>`
-tag:
+Vervolgens updaten we ons `index.html`-bestand om de footer-sectie op te nemen.
+Voeg de volgende HTML toe, net voor de sluitende `</body>`-tag:
 
 ```html
 <footer>
@@ -392,49 +312,18 @@ tag:
     <h1>Manon Tutorial</h1>
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
+      <li><a href="#">Over</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
 </footer>
 ```
 
-Now, our `index.html` file should look like this:
+## Alles samenvoegen
 
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manon Tutorial</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <header>
-      <!-- .... -->
-    </header>
-    <main>
-      <!-- .... -->
-    </main>
-    <footer>
-      <nav>
-        <h1>Manon Tutorial</h1>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
-</html>
-```
-
-## Putting it all together
-
-Now that we have our basic layout with a header, main content area, and footer,
-we can start adding more components to our page. We can use the Manon framework
-to add various components such as buttons, forms, and more. See the
-[Manon documentation - Components](/components) for a list of available
-components and how to use them.
+Nu we onze basislayout hebben met `header`, `main` en `footer`, kunnen we
+beginnen met het toevoegen van meer componenten aan onze pagina. We kunnen het
+Manon-framework gebruiken om verschillende componenten zoals knoppen,
+formulieren en meer toe te voegen. Zie de
+[Manon-documentatie - Componenten](/components) voor een lijst van beschikbare
+componenten en hoe je ze kunt gebruiken.
