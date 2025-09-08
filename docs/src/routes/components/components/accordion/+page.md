@@ -3,14 +3,16 @@ title: Accordeon
 breadcrumb: Accordeon
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Een accordeon biedt een verticale keuzelijst die je per onderdeel kunt
-openklappen om meer informatie te tonen.</p>
+<h2 id="introduction">Introductie</h2>
 
-<h2 id="quick-start">Snelstart</h2>
+Een accordeon biedt een verticale keuzelijst die je per onderdeel kunt
+openklappen om meer informatie te tonen.
+
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

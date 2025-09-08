@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Breadcrumb navigatie</p>
+<h2 id="introduction">Introductie</h2>
+
+Breadcrumb-navigatie is een hulpmiddel op websites dat laat zien waar je je bevindt binnen de structuur van de site. Het geeft een klikbaar pad terug naar eerdere pagina’s, zodat je makkelijk kunt navigeren.
 
 <h2 id="quickstart">Snelstart</h2>
 

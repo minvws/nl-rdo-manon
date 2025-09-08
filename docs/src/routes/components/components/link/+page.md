@@ -3,13 +3,15 @@ title: Link
 breadcrumb: Link
 nav:
   - Introductie: "#introduction"
-  - Quick Start: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Links</p>
+<h2 id="introduction">Introductie</h2>
 
-<h2 id="quick-start">Quick Start</h2>
+Links zijn klikbare elementen op een website die de gebruiker naar een andere pagina, sectie of externe website brengen. Ze maken navigatie en toegang tot informatie eenvoudig.
+
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

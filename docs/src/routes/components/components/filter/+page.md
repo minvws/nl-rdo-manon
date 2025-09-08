@@ -7,9 +7,11 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Bij het tonen van grote of complexe datasets kan gebruik gemaakt worden van
+<h2 id="introduction">Introductie</h2>
+
+Bij het tonen van grote of complexe datasets kan gebruik gemaakt worden van
 filters. Filters geven de gebruiker de mogelijkheid om enkel relevante data te
-zien.</p>
+zien.
 
 <h2 id="quickstart">Snelstart</h2>
 

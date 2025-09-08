@@ -7,7 +7,10 @@ nav:
   - Soorten knoppen: "#button-types"
 ---
 
-<p id="introduction">Knoppen</p>
+<h2 id="introduction">Introductie</h2>
+
+Knoppen op een website zijn interactieve elementen waarmee gebruikers een actie kunnen uitvoeren, zoals het verzenden van een formulier, het starten van een download of het navigeren naar een andere pagina. Ze maken de bediening van een site duidelijk en gebruiksvriendelijk.
+
 <h2 id="quickstart">Snelstart</h2>
 
 1. Bepaal welk HTML-element geschikt is. Knoppen kunnen op verschillende

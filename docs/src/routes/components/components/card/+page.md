@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Groepeer bij elkaar horende elementen visueel in een kaart.</p>
+<h2 id="introduction">Introductie</h2>
+
+Een kaart groepeert gerelateerde informatie in één duidelijk visueel blok, zodat de inhoud overzichtelijk en herkenbaar is.
 
 <h2 id="quickstart">Snelstart</h2>
 
