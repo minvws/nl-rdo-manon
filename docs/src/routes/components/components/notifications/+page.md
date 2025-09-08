@@ -3,7 +3,7 @@ title: Notificaties
 breadcrumb: Notificaties
 nav:
   - Introductie: "#introduction"
-  - Beschikbare weergaven: "#beschikbare-weergaven"
+  - Beschikbare weergaven: "#available-types"
 ---
 
 <h2 id="introduction">Introductie</h2>
@@ -17,7 +17,7 @@ feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.
 </p>
 
 <section id="available-types">
-  <h2 id="beschikbare-weergaven">Beschikbare weergaven</h2>
+  <h2>Beschikbare weergaven</h2>
   <div class="column-2">
     <nav id="notification-types">
       <h3>Notificatie-types</h3>

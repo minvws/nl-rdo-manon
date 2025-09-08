@@ -3,7 +3,7 @@ title: Image
 breadcrumb: Image
 nav:
   - Introductie: "#introduction"
-  - Beschikbare weergaven: "#beschikbare-weergaven"
+  - Beschikbare weergaven: "#available-types"
 ---
 
 <h2 id="introduction">Introductie</h2>
@@ -11,7 +11,7 @@ nav:
 De `image` component wordt gebruikt om afbeeldingen weer te geven. Het is een eenvoudige manier om afbeeldingen toe te voegen aan je webpagina's.
 
 
-<h2 id="beschikbare-weergaven">Beschikbare weergaven</h2>
+<h2 id="available-types">Beschikbare weergaven</h2>
 
 ### Afbeeldingstypen
 

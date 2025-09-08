@@ -3,7 +3,7 @@ title: Tabel
 breadcrumb: Tabel
 nav:
   - Introductie: "#introduction"
-  - Beschikbare weergaven: "#beschikbare-weergaven"
+  - Beschikbare weergaven: "#available-types"
 
 ---
 
@@ -11,7 +11,7 @@ nav:
 
 Een tabel is een gestructureerd overzicht van gegevens, weergegeven in rijen en kolommen, zodat informatie makkelijk te lezen, vergelijken en analyseren is.
 
-<h2 id="beschikbare-weergaven">Beschikbare weergaven</h2>
+<h2 id="available-types">Beschikbare weergaven</h2>
 
 ### Types
 - <a href="table/table-base">Basisweergave</a>
