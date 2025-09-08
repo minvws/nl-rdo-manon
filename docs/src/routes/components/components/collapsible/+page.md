@@ -232,7 +232,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 </div>
 ```
 
-## Inklapbaar component met meerdere menu's
+### Voorbeeld: Inklapbaar component met meerdere menu's
 
 
 <div
