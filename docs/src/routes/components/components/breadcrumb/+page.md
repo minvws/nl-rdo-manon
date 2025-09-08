@@ -22,7 +22,7 @@ SCSS importeren:
 ### Voorbeeld: Basis
 
 <div class="resize">
-  <iframe src="{base}/examples/breadcrumb-bar" title="Voorbeeld"></iframe>
+  <iframe src="{base}/snippets/breadcrumb-bar" title="Voorbeeld"></iframe>
 </div>
 
 ```html

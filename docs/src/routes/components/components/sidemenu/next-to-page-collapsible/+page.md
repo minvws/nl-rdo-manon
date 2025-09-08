@@ -68,7 +68,7 @@ class `sidemenu-closed` toe aan de `body`.
 
 <div class="resize">
   <iframe
-    src="{base}/examples/sidemenu-next-to-page-collapsible"
+    src="{base}/snippets/sidemenu-next-to-page-collapsible"
     title="Voorbeeld"
     height="320px"
   ></iframe>
@@ -112,7 +112,7 @@ Het menu is standaard ingeklapt en kan door de gebruiker uitgeklapt worden.
 
 <div class="resize">
   <iframe
-    src="{base}/examples/sidemenu-next-to-page-expandable"
+    src="{base}/snippets/sidemenu-next-to-page-expandable"
     title="Voorbeeld"
     height="320px"
   ></iframe>

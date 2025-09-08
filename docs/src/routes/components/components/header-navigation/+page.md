@@ -36,12 +36,14 @@ SCSS importeren:
 ### Voorbeeld: Alleen navigatie
 
 <div class="resize">
-  <iframe src="{base}/examples/header-navigation" title="Voorbeeld" height="240px"></iframe>
+  <iframe src="{base}/snippets/header-navigation" title="Voorbeeld" height="240px"></iframe>
 </div>
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+  <a href="#main-content" class="button focus-only skip-to-content"
+    >Ga direct naar inhoud</a
+  >
 
   <nav
     data-open-label="Menu"
@@ -65,7 +67,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/examples/header-navigation-with-content-wrapper"
+    src="{base}/snippets/header-navigation-with-content-wrapper"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -74,7 +76,9 @@ SCSS importeren:
 ```html
 <header>
   <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+    <a href="#main-content" class="button focus-only skip-to-content"
+      >Ga direct naar inhoud</a
+    >
 
     <nav
       data-open-label="Menu"
@@ -99,7 +103,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/examples/header-navigation-with-search"
+    src="{base}/snippets/header-navigation-with-search"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -107,7 +111,9 @@ SCSS importeren:
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+  <a href="#main-content" class="button focus-only skip-to-content"
+    >Ga direct naar inhoud</a
+  >
 
   <nav
     data-open-label="Menu"
@@ -140,14 +146,16 @@ SCSS importeren:
 ### Voorbeeld: Navigatie en logo
 
 <div class="resize">
-  <iframe src="{base}/examples/header-navigation-with-logo" title="Voorbeeld" height="240px"
+  <iframe src="{base}/snippets/header-navigation-with-logo" title="Voorbeeld" height="240px"
   ></iframe>
 </div>
 
 ```html
 <header>
   <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+    <a href="#main-content" class="button focus-only skip-to-content"
+      >Ga direct naar inhoud</a
+    >
 
     <nav
       data-open-label="Menu"
@@ -156,7 +164,9 @@ SCSS importeren:
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-      <a href="{base}/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
+      <a href="{base}/" class="logo">
+        <img src="/img/logo.svg" alt="Placeholder logo" />Manon
+      </a>
 
       <div class="collapsing-element">
         <ul>
@@ -174,7 +184,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/examples/header-navigation-with-multiple-menus"
+    src="{base}/snippets/header-navigation-with-multiple-menus"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -183,7 +193,9 @@ SCSS importeren:
 ```html
 <header>
   <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+    <a href="#main-content" class="button focus-only skip-to-content"
+      >Ga direct naar inhoud</a
+    >
 
     <nav
       data-open-label="Menu"
@@ -212,7 +224,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/examples/header-navigation-with-form-button"
+    src="{base}/snippets/header-navigation-with-form-button"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -221,7 +233,9 @@ SCSS importeren:
 ```html
 <header>
   <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+    <a href="#main-content" class="button focus-only skip-to-content"
+      >Ga direct naar inhoud</a
+    >
 
     <nav
       data-open-label="Menu"
@@ -239,7 +253,11 @@ SCSS importeren:
 
         <ul class="actions">
           <li>
-            <a href="{base}/examples/header-navigation-with-form-button" class="avatar">A</a>
+            <a
+              href="{base}/snippets/header-navigation-with-form-button"
+              class="avatar"
+              >A</a
+            >
           </li>
           <li>
             <form action="{base}/logout" method="POST" class="inline">
@@ -258,7 +276,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/examples/header-navigation-with-logo"
+    src="{base}/snippets/header-navigation-with-logo"
     title="Voorbeeld"
     height="320px"
   ></iframe>
@@ -266,9 +284,13 @@ SCSS importeren:
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+  <a href="#main-content" class="button focus-only skip-to-content"
+    >Ga direct naar inhoud</a
+  >
 
-  <a href="{base}/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
+  <a href="{base}/" class="logo">
+    <img src="/img/logo.svg" alt="Placeholder logo" />Manon
+  </a>
 
   <nav
     data-open-label="Menu"

@@ -36,7 +36,7 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
 #### Visueel voorbeeld
 
 <div class="resize">
-  <iframe src="{base}/examples/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
+  <iframe src="{base}/snippets/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
 </div>
 
 #### HTML-voorbeeld
@@ -67,14 +67,17 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
       <h2>Lorem ipsum</h2>
       <p>Dolor set amet conseqtetur adepicing elit</p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus ac turpis convallis
-        vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-        himenaeos. Maecenas ut fringilla tortor. Nulla ultrices enim sit amet tellus venenatis,
-        lacinia dapibus risus auctor.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus
+        ac turpis convallis vestibulum. Class aptent taciti sociosqu ad litora
+        torquent per conubia nostra, per inceptos himenaeos. Maecenas ut
+        fringilla tortor. Nulla ultrices enim sit amet tellus venenatis, lacinia
+        dapibus risus auctor.
       </p>
       <ul>
         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Vivamus accumsan dui sed diam placerat, quis ultrices enim viverra.</li>
+        <li>
+          Vivamus accumsan dui sed diam placerat, quis ultrices enim viverra.
+        </li>
         <li>Aenean posuere enim a hendrerit viverra.</li>
         <li>Phasellus eu justo ac orci tempus bibendum eu in est.</li>
       </ul>

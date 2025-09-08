@@ -35,12 +35,14 @@ SCSS importeren:
 <h2 id="examples">Voorbeelden</h2>
 
 <div class="resize">
-  <iframe src="{base}/examples/skip-to-content" title="Voorbeeld" height="240px"></iframe>
+  <iframe src="{base}/snippets/skip-to-content" title="Voorbeeld" height="240px"></iframe>
 </div>
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+  <a href="#main-content" class="button focus-only skip-to-content"
+    >Ga direct naar inhoud</a
+  >
 
   <nav aria-label="Navigatie voorbeeld header">
     <div>

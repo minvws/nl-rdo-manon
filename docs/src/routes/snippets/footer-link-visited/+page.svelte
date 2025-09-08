@@ -5,7 +5,7 @@
 
 <footer>
   <p>
-    Beoek <a href={current.href} class="visited">Link</a>,
+    Bezoek <a href={current.href} class="visited">Link</a>,
     <a href={current.href} class="visited focus">Focus</a>,
     <a href={current.href} class="visited hover">Hover</a>,
     <a href={current.href} class="visited active">Active</a>,
