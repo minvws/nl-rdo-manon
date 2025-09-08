@@ -198,7 +198,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 
 ## Inklapbare icoonknop
 
-### Visuele weergave:
 
 <div
   data-open-label="Dropdown menu"
