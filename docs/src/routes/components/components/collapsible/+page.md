@@ -158,7 +158,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 </div>
 ```
 
-## Inklapbare ghost button
+### Voorbeeld: Inklapbare ghost button
 
 ### Visuele weergave:
 
