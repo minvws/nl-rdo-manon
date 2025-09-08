@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Voor het toeveogen van een accentknop op formulierelementen zoals checkboxes, radio buttons, ranges etc.
+Voor het toevoegen van een accentknop op formulier-elementen zoals checkboxes, radio buttons, ranges etc.
 
 <h2 id="quickstart">Snelstart</h2>
 
