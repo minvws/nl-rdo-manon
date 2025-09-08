@@ -21,7 +21,6 @@ SCSS importeren:
 
 <h2 id="examples">Voorbeelden</h2>
 
-### Visuele voorbeeld:
 
 <a href="/" class="logo" aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam">
   <img src="../../../../img/logo-dark.svg" alt="Logo bedrijfs- of product-naam" />
