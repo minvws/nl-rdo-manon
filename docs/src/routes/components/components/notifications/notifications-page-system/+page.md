@@ -25,7 +25,9 @@ Voor het voorbeeld zie bovenaan deze pagina.
 #### `section`
 
 ```html
-<p class="system" role="group" aria-label="systeembericht"><span>Systeembericht:</span> Lorem ipsum dolor sit.</p>
+<p class="system" role="group" aria-label="systeembericht">
+  <span>Systeembericht:</span> Lorem ipsum dolor sit.
+</p>
 ```
 
 <h2 id="requirements">Bijbehorende bestanden</h2>
@@ -227,6 +229,7 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
         <td>-</td>
       </tr>
     </tbody>
+
   </table>
 </div>
 
@@ -237,38 +240,37 @@ project. Kies en gebruik de benodigde variabelen.
 
 ```css
 :root {
-    --notification-system-page-background-color: ;
-    --notification-system-page-text-color: ;
-    --notification-system-page-border-width: ;
-    --notification-system-page-border-style: ;
-    --notification-system-page-border-color: ;
-    --notification-system-page-padding-top: ;
-    --notification-system-page-padding-right: ;
-    --notification-system-page-padding-bottom: ;
-    --notification-system-page-padding-left: ;
-    --notification-system-page-gap: ;
+  --notification-system-page-background-color: ;
+  --notification-system-page-text-color: ;
+  --notification-system-page-border-width: ;
+  --notification-system-page-border-style: ;
+  --notification-system-page-border-color: ;
+  --notification-system-page-padding-top: ;
+  --notification-system-page-padding-right: ;
+  --notification-system-page-padding-bottom: ;
+  --notification-system-page-padding-left: ;
+  --notification-system-page-gap: ;
 
-    /* First span */
-    --notification-system-page-span-font-weight: ;
+  /* First span */
+  --notification-system-page-span-font-weight: ;
 
+  /* Content wrapper */
+  --notification-system-page-content-wrapper-padding-top: ;
+  --notification-system-page-content-wrapper-padding-right: ;
+  --notification-system-page-content-wrapper-padding-bottom: ;
+  --notification-system-page-content-wrapper-padding-left: ;
+  --notification-system-page-content-wrapper-gap: ;
 
-    /* Content wrapper */
-    --notification-system-page-content-wrapper-padding-top: ;
-    --notification-system-page-content-wrapper-padding-right: ;
-    --notification-system-page-content-wrapper-padding-bottom: ;
-    --notification-system-page-content-wrapper-padding-left: ;
-    --notification-system-page-content-wrapper-gap: ;
+  /* First span */
+  --notification-system-page-content-wrapper-span-font-weight: ;
 
-    /* First span */
-    --notification-system-page-content-wrapper-span-font-weight: ;
-
-    /* Icon */
-    --notification-system-page-icon-font-family: ;
-    --notification-system-page-icon-font-size: ;
-    --notification-system-page-icon-text-color: ;
-    --notification-system-page-icon-padding-right: ;
-    --notification-system-page-icon-padding-left: ;
-    --notification-system-page-icon-margin-right: ;
-    --notification-system-page-icon: ;
+  /* Icon */
+  --notification-system-page-icon-font-family: ;
+  --notification-system-page-icon-font-size: ;
+  --notification-system-page-icon-text-color: ;
+  --notification-system-page-icon-padding-right: ;
+  --notification-system-page-icon-padding-left: ;
+  --notification-system-page-icon-margin-right: ;
+  --notification-system-page-icon: ;
 }
 ```

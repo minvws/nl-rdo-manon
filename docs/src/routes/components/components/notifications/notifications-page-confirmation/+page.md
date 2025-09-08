@@ -25,7 +25,9 @@ Voor het voorbeeld zie bovenaan deze pagina.
 #### `section`
 
 ```html
-<p class="confirmation" role="group" aria-label="bevestiging"><span>Bevestiging:</span> Lorem ipsum dolor sit.</p>
+<p class="confirmation" role="group" aria-label="bevestiging">
+  <span>Bevestiging:</span> Lorem ipsum dolor sit.
+</p>
 ```
 
 <h2 id="requirements">Bijbehorende bestanden</h2>
@@ -226,6 +228,7 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
         <td>-</td>
       </tr>
     </tbody>
+
   </table>
 </div>
 
@@ -236,38 +239,37 @@ project. Kies en gebruik de benodigde variabelen.
 
 ```css
 :root {
-    --notification-confirmation-page-background-color: ;
-    --notification-confirmation-page-text-color: ;
-    --notification-confirmation-page-border-width: ;
-    --notification-confirmation-page-border-style: ;
-    --notification-confirmation-page-border-color: ;
-    --notification-confirmation-page-padding-top: ;
-    --notification-confirmation-page-padding-right: ;
-    --notification-confirmation-page-padding-bottom: ;
-    --notification-confirmation-page-padding-left: ;
-    --notification-confirmation-page-gap: ;
+  --notification-confirmation-page-background-color: ;
+  --notification-confirmation-page-text-color: ;
+  --notification-confirmation-page-border-width: ;
+  --notification-confirmation-page-border-style: ;
+  --notification-confirmation-page-border-color: ;
+  --notification-confirmation-page-padding-top: ;
+  --notification-confirmation-page-padding-right: ;
+  --notification-confirmation-page-padding-bottom: ;
+  --notification-confirmation-page-padding-left: ;
+  --notification-confirmation-page-gap: ;
 
-    /* First span */
-    --notification-confirmation-page-span-font-weight: ;
+  /* First span */
+  --notification-confirmation-page-span-font-weight: ;
 
+  /* Content wrapper */
+  --notification-confirmation-page-content-wrapper-padding-top: ;
+  --notification-confirmation-page-content-wrapper-padding-right: ;
+  --notification-confirmation-page-content-wrapper-padding-bottom: ;
+  --notification-confirmation-page-content-wrapper-padding-left: ;
+  --notification-confirmation-page-content-wrapper-gap: ;
 
-    /* Content wrapper */
-    --notification-confirmation-page-content-wrapper-padding-top: ;
-    --notification-confirmation-page-content-wrapper-padding-right: ;
-    --notification-confirmation-page-content-wrapper-padding-bottom: ;
-    --notification-confirmation-page-content-wrapper-padding-left: ;
-    --notification-confirmation-page-content-wrapper-gap: ;
+  /* First span */
+  --notification-confirmation-page-content-wrapper-span-font-weight: ;
 
-    /* First span */
-    --notification-confirmation-page-content-wrapper-span-font-weight: ;
-
-    /* Icon */
-    --notification-confirmation-page-icon-font-family: ;
-    --notification-confirmation-page-icon-font-size: ;
-    --notification-confirmation-page-icon-text-color: ;
-    --notification-confirmation-page-icon-padding-right: ;
-    --notification-confirmation-page-icon-padding-left: ;
-    --notification-confirmation-page-icon-margin-right: ;
-    --notification-confirmation-page-icon: ;
+  /* Icon */
+  --notification-confirmation-page-icon-font-family: ;
+  --notification-confirmation-page-icon-font-size: ;
+  --notification-confirmation-page-icon-text-color: ;
+  --notification-confirmation-page-icon-padding-right: ;
+  --notification-confirmation-page-icon-padding-left: ;
+  --notification-confirmation-page-icon-margin-right: ;
+  --notification-confirmation-page-icon: ;
 }
 ```

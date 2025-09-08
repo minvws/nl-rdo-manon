@@ -25,7 +25,9 @@ Voor het voorbeeld zie bovenaan deze pagina.
 #### `section`
 
 ```html
-<p class="error" role="group" aria-label="foutmelding"><span>Foutmelding:</span> Lorem ipsum dolor sit.</p>
+<p class="error" role="group" aria-label="foutmelding">
+  <span>Foutmelding:</span> Lorem ipsum dolor sit.
+</p>
 ```
 
 <h2 id="requirements">Bijbehorende bestanden</h2>

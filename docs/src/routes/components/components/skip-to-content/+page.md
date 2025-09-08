@@ -40,9 +40,7 @@ SCSS importeren:
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content"
-    >Ga direct naar inhoud</a
-  >
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
   <nav aria-label="Navigatie voorbeeld header">
     <div>

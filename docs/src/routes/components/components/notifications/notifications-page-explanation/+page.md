@@ -25,7 +25,9 @@ Voor het voorbeeld zie bovenaan deze pagina.
 #### `section`
 
 ```html
-<p class="explanation" role="group" aria-label="toelichting"><span>Toelichting:</span> Lorem ipsum dolor sit.</p>
+<p class="explanation" role="group" aria-label="toelichting">
+  <span>Toelichting:</span> Lorem ipsum dolor sit.
+</p>
 ```
 
 <h2 id="requirements">Bijbehorende bestanden</h2>
@@ -227,6 +229,7 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
         <td>-</td>
       </tr>
     </tbody>
+
   </table>
 </div>
 
@@ -237,38 +240,37 @@ project. Kies en gebruik de benodigde variabelen.
 
 ```css
 :root {
-    --notification-explanation-page-background-color: ;
-    --notification-explanation-page-text-color: ;
-    --notification-explanation-page-border-width: ;
-    --notification-explanation-page-border-style: ;
-    --notification-explanation-page-border-color: ;
-    --notification-explanation-page-padding-top: ;
-    --notification-explanation-page-padding-right: ;
-    --notification-explanation-page-padding-bottom: ;
-    --notification-explanation-page-padding-left: ;
-    --notification-explanation-page-gap: ;
+  --notification-explanation-page-background-color: ;
+  --notification-explanation-page-text-color: ;
+  --notification-explanation-page-border-width: ;
+  --notification-explanation-page-border-style: ;
+  --notification-explanation-page-border-color: ;
+  --notification-explanation-page-padding-top: ;
+  --notification-explanation-page-padding-right: ;
+  --notification-explanation-page-padding-bottom: ;
+  --notification-explanation-page-padding-left: ;
+  --notification-explanation-page-gap: ;
 
-    /* First span */
-    --notification-explanation-page-span-font-weight: ;
+  /* First span */
+  --notification-explanation-page-span-font-weight: ;
 
+  /* Content wrapper */
+  --notification-explanation-page-content-wrapper-padding-top: ;
+  --notification-explanation-page-content-wrapper-padding-right: ;
+  --notification-explanation-page-content-wrapper-padding-bottom: ;
+  --notification-explanation-page-content-wrapper-padding-left: ;
+  --notification-explanation-page-content-wrapper-gap: ;
 
-    /* Content wrapper */
-    --notification-explanation-page-content-wrapper-padding-top: ;
-    --notification-explanation-page-content-wrapper-padding-right: ;
-    --notification-explanation-page-content-wrapper-padding-bottom: ;
-    --notification-explanation-page-content-wrapper-padding-left: ;
-    --notification-explanation-page-content-wrapper-gap: ;
+  /* First span */
+  --notification-explanation-page-content-wrapper-span-font-weight: ;
 
-    /* First span */
-    --notification-explanation-page-content-wrapper-span-font-weight: ;
-
-    /* Icon */
-    --notification-explanation-page-icon-font-family: ;
-    --notification-explanation-page-icon-font-size: ;
-    --notification-explanation-page-icon-text-color: ;
-    --notification-explanation-page-icon-padding-right: ;
-    --notification-explanation-page-icon-padding-left: ;
-    --notification-explanation-page-icon-margin-right: ;
-    --notification-explanation-page-icon: ;
+  /* Icon */
+  --notification-explanation-page-icon-font-family: ;
+  --notification-explanation-page-icon-font-size: ;
+  --notification-explanation-page-icon-text-color: ;
+  --notification-explanation-page-icon-padding-right: ;
+  --notification-explanation-page-icon-padding-left: ;
+  --notification-explanation-page-icon-margin-right: ;
+  --notification-explanation-page-icon: ;
 }
 ```
