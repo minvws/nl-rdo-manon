@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Het weergeven van notificaties binnen het formulier</p>
+<h2 id="introduction">Introductie</h2>
+
+Notificaties binnen een formulier geven gebruikers directe feedback over hun acties, zoals succesmeldingen, waarschuwingen of foutmeldingen. Dit helpt om de interactie duidelijker te maken en fouten tijdens het invullen te voorkomen.
 
 <h2 id="quick-start">Snelstart</h2>
 

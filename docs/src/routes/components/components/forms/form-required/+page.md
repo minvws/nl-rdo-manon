@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Voor het weergeven van verplichte velden.</p>
+<h2 id="introduction">Introductie</h2>
+
+Verplichte velden worden in een formulier duidelijk gemarkeerd zodat de gebruiker weet welke informatie minimaal ingevuld moet worden. Dit helpt om onvolledige inzendingen te voorkomen en zorgt voor een betere gegevenskwaliteit.
 
 <h2 id="quickstart">Snelstart</h2>
 

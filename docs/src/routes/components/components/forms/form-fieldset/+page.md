@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Fieldset</p>
+<h2 id="introduction">Introductie</h2>
+
+Een fieldset gebruik je in HTML om gerelateerde velden in een formulier te groeperen. Vaak wordt dit gecombineerd met een legend (titel).
 
 <h2 id="quickstart">Snelstart</h2>
 

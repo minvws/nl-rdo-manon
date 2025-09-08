@@ -7,7 +7,10 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Selectievak - Checkbox</p>
+<h2 id="introduction">Introductie</h2>
+
+Een selectievak (checkbox) laat de gebruiker één of meerdere opties uit een set kiezen. Dit is handig wanneer meerdere antwoorden tegelijk mogelijk zijn, zoals het aangeven van voorkeuren of het accepteren van voorwaarden.
+
 <h2 id="quick-start">Snelstart</h2>
 
 SCSS importeren:

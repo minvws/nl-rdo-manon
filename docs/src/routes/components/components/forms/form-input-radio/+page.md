@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Radio selecteerknop voor het selecteren van een optie binnen een set</p>
+<h2 id="introduction">Introductie</h2>
+
+Een radio selecteerknop laat de gebruiker één optie kiezen uit een set van vooraf gedefinieerde keuzes. Omdat alle knoppen dezelfde name hebben, kan er steeds maar één optie tegelijk geselecteerd worden, wat duidelijkheid en consistente invoer garandeert.
 
 <h2 id="quick-start">Snelstart</h2>
 

@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Tekstveld</p>
+<h2 id="introduction">Introductie</h2>
+
+Een tekstveld wordt gebruikt om langere teksten of opmerkingen van de gebruiker te verzamelen, zoals beschrijvingen, feedback of berichten. Het biedt voldoende ruimte voor uitgebreide invoer en maakt het invullen van langere teksten overzichtelijk.
 
 <h2 id="quickstart">Snelstart</h2>
 SCSS importeren:

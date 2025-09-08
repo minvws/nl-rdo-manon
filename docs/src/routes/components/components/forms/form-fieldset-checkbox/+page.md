@@ -7,7 +7,10 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Fieldset Selectievak - checkbox</p>
+<h2 id="introduction">Introductie</h2>
+
+Een fieldset met selectievakken maakt het mogelijk om meerdere opties tegelijk te selecteren. Dit is handig wanneer de gebruiker meerdere antwoorden of voorkeuren kan aangeven binnen één groep gerelateerde keuzes.
+
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
