@@ -280,7 +280,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 </div>
 ```
 
-## Inklapbare taalselectie
+### Voorbeeld: Inklapbare taalselectie
 
 ### Visuele weergave:
 <div
