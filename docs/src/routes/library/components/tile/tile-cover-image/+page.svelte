@@ -151,15 +151,6 @@
         />
       </section>
 
-      <section id="variables">
-        <h2>Instelbare variabelen</h2>
-        <ul>
-          <li>
-            <a href="{base}/getting-started/installation#object-position">object-position</a>
-          </li>
-        </ul>
-      </section>
-
       <section id="requirements">
         <h2>Bijbehorende bestanden</h2>
         <p>

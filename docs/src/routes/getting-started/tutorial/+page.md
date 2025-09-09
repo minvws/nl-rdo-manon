@@ -129,7 +129,7 @@ uitbreiden.
 
 Wanneer je extra componenten wilt gebruiken, kun je ze importeren in dit
 `main.scss`-bestand. Zie de beschikbare componenten in de
-[Manon documentatie](/components).
+[Manon documentatie](/library).
 
 Nu kunnen we onze stijlen bouwen door het volgende commando uit te voeren:
 
@@ -280,7 +280,7 @@ de bestaande `<h1>`-tag:
 ### Footer
 
 Om een footer toe te voegen aan onze pagina importeren we de
-[`footer` component](/library/components/footer) in ons `main.scss`-bestand.
+[`footer` component]({base}/library/layout/footer) in ons `main.scss`-bestand.
 Hiermee kunnen we een `footer`-sectie aan onze pagina toevoegen.
 
 Voeg de volgende import toe aan je `main.scss`:
@@ -325,5 +325,5 @@ Nu we onze basislayout hebben met `header`, `main` en `footer`, kunnen we
 beginnen met het toevoegen van meer componenten aan onze pagina. We kunnen het
 Manon-framework gebruiken om verschillende componenten zoals knoppen,
 formulieren en meer toe te voegen. Zie de
-[Manon-documentatie - Componenten](/components) voor een lijst van beschikbare
+[Manon-documentatie - Componenten]({base}/library) voor een lijst van beschikbare
 componenten en hoe je ze kunt gebruiken.
