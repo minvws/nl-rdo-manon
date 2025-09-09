@@ -29,6 +29,7 @@
       border-width: theme.$accordion-button-border-width,
       border-style: theme.$accordion-button-border-style,
       border-color: theme.$accordion-button-border-color,
+      border-radius: theme.$accordion-button-border-radius,
     )
   );
 }
@@ -51,6 +52,7 @@
       border-color: theme.$accordion-content-border-color,
       background-color: theme.$accordion-content-background-color,
       color: theme.$accordion-content-text-color,
+      border-radius: theme.$accordion-content-border-radius,
     )
   );
 
