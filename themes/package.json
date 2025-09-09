@@ -17,7 +17,8 @@
     "README.md"
   ],
   "scripts": {
-    "npm-version": "npm version"
+    "npm-version": "npm version",
+    "prepare-icons": "manon prepare-icons ./icore-open/icons/tabler"
   },
   "peerDependencies": {
     "@minvws/manon": "workspace:*"
