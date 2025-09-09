@@ -18,7 +18,7 @@
     "npm-version": "npm version",
     "test": "vitest run"
   },
-  "peerDepencency": {
+  "peerDependencies": {
     "sass": ">=1.77.6"
   },
   "devDependencies": {
