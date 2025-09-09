@@ -7,7 +7,6 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-
 <h2 id="introduction">Introductie</h2>
 
 Navigatie verwijst naar de onderdelen van een website of app waarmee gebruikers zich door de inhoud kunnen bewegen, zoals menu’s, knoppen en links. Het zorgt voor een overzichtelijke en efficiënte gebruikerservaring.

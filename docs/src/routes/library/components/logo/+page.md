@@ -21,16 +21,18 @@ SCSS importeren:
 
 <h2 id="examples">Voorbeelden</h2>
 
-
 <a href="/" class="logo" aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam">
   <img src="../../../../img/logo-dark.svg" alt="Logo bedrijfs- of product-naam" />
   Bedrijfs- of product-naam
 </a>
 
 ```html
-<a href="/" class="logo" aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam">
+<a
+  href="/"
+  class="logo"
+  aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam"
+>
   <img src="logo.svg" alt="Logo bedrijfs- of product-naam" />
   Bedrijfs- of product-naam
 </a>
-
 ```

@@ -25,8 +25,8 @@
     <div class="content-wrapper">
       <section id="introduction">
         <p>
-          Het <a href="{base}/library/components/icons">Icoon-component</a> kan gebruikt wordt met
-          unicode-codes om een van de iconen uit de standaard icoon-set te gebruiken.
+          Het <a href="{base}/library/components/icons">Icoon-component</a> kan gebruikt wordt met unicode-codes
+          om een van de iconen uit de standaard icoon-set te gebruiken.
         </p>
 
         <p>

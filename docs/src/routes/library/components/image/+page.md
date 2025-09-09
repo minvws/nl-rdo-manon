@@ -10,7 +10,6 @@ nav:
 
 De `image` component wordt gebruikt om afbeeldingen weer te geven. Het is een eenvoudige manier om afbeeldingen toe te voegen aan je webpagina's.
 
-
 <h2 id="available-types">Beschikbare weergaven</h2>
 
 ### Afbeeldingstypen

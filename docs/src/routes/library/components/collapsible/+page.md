@@ -7,11 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-
 <h2 id="introduction">Introductie</h2>
 
 Een inklapbaar component is een element op een website dat extra informatie verbergt en pas toont wanneer de gebruiker erop klikt of tapt. Zo blijft de pagina overzichtelijk en kan de gebruiker zelf bepalen wat hij wil uitklappen.
-
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -54,20 +52,19 @@ Als er geen `data-open-label en/of data-close-label` wordt/worden gedefinieerd, 
   </div>
 </div>
 
-
 ```html
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  class="collapsible">
-
+  class="collapsible"
+>
   <div class="collapsing-element">
-      <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
-      </ul>
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Huidige selectie</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
   </div>
 </div>
 ```
@@ -104,20 +101,19 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  class="collapsible">
-
+  class="collapsible"
+>
   <div class="collapsing-element">
-      <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
-      </ul>
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Huidige selectie</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
   </div>
 </div>
 ```
 
 ### Voorbeeld: Met formulier
-
 
 <div
   data-open-label="Dropdown menu"
@@ -136,20 +132,19 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   </div>
 </div>
 
-
 ```html
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  class="collapsible">
-
+  class="collapsible"
+>
   <div class="collapsing-element">
     <form>
       <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Huidige selectie</a></li>
+        <li><a href="#">Item 3</a></li>
       </ul>
     </form>
   </div>
@@ -158,7 +153,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 
 ### Voorbeeld: Inklapbare ghost button
 
-
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
@@ -175,28 +169,26 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   </div>
 </div>
 
-
 ```html
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
   data-button-classes="ghost"
-  class="collapsible">
-
+  class="collapsible"
+>
   <div class="collapsing-element">
-      <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
-      </ul>
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Huidige selectie</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
   </div>
 </div>
 ```
 
 ### Voorbeeld: Inklapbare icoonknop
 
-
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
@@ -212,7 +204,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
       </ul>
   </div>
 </div>
-
 
 ```html
 <div
@@ -220,20 +211,19 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
   data-button-classes="icon icon-cat"
-  class="collapsible">
-
+  class="collapsible"
+>
   <div class="collapsing-element">
-      <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
-      </ul>
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Huidige selectie</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
   </div>
 </div>
 ```
 
 ### Voorbeeld: Inklapbaar component met meerdere menu's
-
 
 <div
   data-open-label="Dropdown menu"
@@ -253,17 +243,17 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
       <li><a href="#">Sub menu Item 2</a></li>
       <li><a href="#">Sub menu Item 3</a></li>
     </ul>
+
   </div>
 </div>
-
 
 ```html
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  class="collapsible">
-
+  class="collapsible"
+>
   <div class="collapsing-element">
     <ul>
       <li><a href="#">Item 1</a></li>
@@ -309,32 +299,31 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   </div>
 </div>
 
-
 ```html
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  class="collapsible">
-
+  class="collapsible"
+>
   <div class="collapsing-element">
-      <ul role="listbox">
-        <li role="option" aria-selected="false">
-          <a hreflang="nl" href="collapsible" data-value="Nederlands" lang="nl">Nederlands</a>
-        </li>
-        <li role="option" aria-selected="false">
-          <a hreflang="en" href="collapsible" data-value="English" lang="en">English</a>
-        </li>
-        <li role="option" aria-selected="false">
-          <a hreflang="fy" href="collapsible" data-value="Frysk" lang="fy">Frysk</a>
-        </li>
-        <li role="option" aria-selected="true" aria-current="true">
-          <a hreflang="pap-CW" href="collapsible" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
-        </li>
-        <li role="option" aria-selected="false">
-          <a hreflang="pap-AW" href="collapsible" data-value="Papiamento" lang="pap-AW">Papiamento</a>
-        </li>
-      </ul>
+    <ul role="listbox">
+      <li role="option" aria-selected="false">
+        <a hreflang="nl" href="collapsible" data-value="Nederlands" lang="nl">Nederlands</a>
+      </li>
+      <li role="option" aria-selected="false">
+        <a hreflang="en" href="collapsible" data-value="English" lang="en">English</a>
+      </li>
+      <li role="option" aria-selected="false">
+        <a hreflang="fy" href="collapsible" data-value="Frysk" lang="fy">Frysk</a>
+      </li>
+      <li role="option" aria-selected="true" aria-current="true">
+        <a hreflang="pap-CW" href="collapsible" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
+      </li>
+      <li role="option" aria-selected="false">
+        <a hreflang="pap-AW" href="collapsible" data-value="Papiamento" lang="pap-AW">Papiamento</a>
+      </li>
+    </ul>
   </div>
 </div>
 ```

@@ -29,9 +29,7 @@ SCSS importeren:
 </button>
 
 ```html
-<button class="icon-only">
-  <span class="icon icon-search" aria-hidden="true"></span>Zoeken
-</button>
+<button class="icon-only"><span class="icon icon-search" aria-hidden="true"></span>Zoeken</button>
 ```
 
 ### Voorbeeld: `button` met `svg`
