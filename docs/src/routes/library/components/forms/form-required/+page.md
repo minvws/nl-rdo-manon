@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Voor het weergeven van verplichte velden.</p>
+<h2 id="introduction">Introductie</h2>
+
+Voor het weergeven van verplichte velden.
 
 <h2 id="quickstart">Snelstart</h2>
 

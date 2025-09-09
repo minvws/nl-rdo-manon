@@ -3,9 +3,11 @@ title: hidden
 breadcrumb: hidden
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quickstart"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
 ---
+
+<h2 id="introduction">Introductie</h2>
 
 Object verbergen. Door middel van een <code>display:none</code> wordt het object
 verborgen.

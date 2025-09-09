@@ -6,8 +6,10 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het
-navigeren voor de gebruiker toegankelijk en overzichtelijk te houden.</p>
+<h2 id="introduction">Introductie</h2>
+
+Bij lange documenten of pagina's kan een zijmenu gebruikt worden om het
+navigeren voor de gebruiker toegankelijk en overzichtelijk te houden.
 
 In dit voorbeeld staat het zijmenu binnen de pagina bij de content. Gebruik deze
 weergave alleen als de inhoud van het zijmenu specifiek over de content gaat.

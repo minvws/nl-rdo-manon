@@ -3,9 +3,11 @@ title: background-color-offset
 breadcrumb: background-color-offset
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quickstart"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
 ---
+
+<h2 id="introduction">Introductie</h2>
 
 <p class="warning">
   <span>Let op:</span>

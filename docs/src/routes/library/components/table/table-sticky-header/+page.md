@@ -7,9 +7,10 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">
+<h2 id="introduction">Introductie</h2>
+
 Voor lange tabellen kan het gewenst zijn om de tabel-header in het zicht te
-houden zodat de gebruiker de titels kan zien.</p>
+houden zodat de gebruiker de titels kan zien.
 
 <h2 id="quick-start">Snelstart</h2>
 

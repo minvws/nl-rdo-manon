@@ -3,9 +3,11 @@ title: horizontal
 breadcrumb: horizontal
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quickstart"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
 ---
+
+<h2 id="introduction">Introductie</h2>
 
 Het horizontaal uitlijnen van elementen binnen een container. Dit kan handig
 zijn voor het uitlijnen van knoppen, formulieren of andere elementen die naast

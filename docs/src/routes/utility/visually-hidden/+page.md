@@ -3,9 +3,11 @@ title: visually-hidden
 breadcrumb: visually-hidden
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quickstart"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
 ---
+
+<h2 id="introduction">Introductie</h2>
 
 Verbergt objecten alleen visueel. Voor screenreaders blijven de objecten
 zichtbaar.

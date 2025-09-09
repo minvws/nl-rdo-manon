@@ -3,9 +3,13 @@ title: Horizontaal gecentreerd
 breadcrumb: Horizontaal gecentreerd
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quickstart"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
 ---
+
+<h2 id="introduction">Introductie</h2>
+
+Horizontaal gecentreerd
 
 <h2 id="quick-start">Snelstart</h2>
 

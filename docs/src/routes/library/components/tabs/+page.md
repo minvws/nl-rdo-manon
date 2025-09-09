@@ -36,9 +36,9 @@ Voeg de class `tabs` toe aan de gewenste elementen.
 <div class="tabs">
   <ul>
     <li><span aria-current="page">Optie 1</span></li>
-    <li><a href="#">Optie 2</a></li>
-    <li><a href="#">Optie 3</a></li>
-    <li><a href="#">Optie 4</a></li>
+    <li><a href="#0">Optie 2</a></li>
+    <li><a href="#0">Optie 3</a></li>
+    <li><a href="#0">Optie 4</a></li>
   </ul>
 </div>
 ```
@@ -58,9 +58,9 @@ Voeg de class `tabs` toe aan de gewenste elementen.
 <div class="tabs">
   <ul>
     <li aria-current="page"><span>Optie 1</span></li>
-    <li><a href="#">Optie 2</a></li>
-    <li><a href="#">Optie 3</a></li>
-    <li><a href="#">Optie 4</a></li>
+    <li><a href="#0">Optie 2</a></li>
+    <li><a href="#0">Optie 3</a></li>
+    <li><a href="#0">Optie 4</a></li>
   </ul>
 </div>
 ```

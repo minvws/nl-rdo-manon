@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Knop met openklapbaar menu.</p>
+<h2 id="introduction">Introductie</h2>
+
+Knop met openklapbaar menu.
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -87,9 +89,9 @@ import "@minvws/manon/js/collapsible.js";
 >
   <div class="collapsing-element">
     <ul>
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Huidige selectie</a></li>
-      <li><a href="#">Item 3</a></li>
+      <li><a href="#0">Item 1</a></li>
+      <li><a href="#0">Huidige selectie</a></li>
+      <li><a href="#0">Item 3</a></li>
     </ul>
   </div>
 </div>

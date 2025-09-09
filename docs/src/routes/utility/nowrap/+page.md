@@ -3,9 +3,11 @@ title: nowrap
 breadcrumb: nowrap
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quickstart"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
 ---
+
+<h2 id="introduction">Introductie</h2>
 
 Zorgt ervoor dat woorden en teksten niet afgebroken worden maar op dezelfde
 regel blijven doorlopen.

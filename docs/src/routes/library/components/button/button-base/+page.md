@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Knoppen basisweergave</p>
+<h2 id="introduction">Introductie</h2>
+
+Knoppen basisweergave
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -32,7 +34,7 @@ SCSS importeren:
 <a href="{base}/library/components/button" class="button">Lorem ipsum</a>
 
 ```html
-<a href="#" class="button">Lorem ipsum</a>
+<a href="#0" class="button">Lorem ipsum</a>
 ```
 
 ### Voorbeeld: `input type="button"`

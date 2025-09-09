@@ -3,9 +3,11 @@ title: horizontal-scroll
 breadcrumb: horizontal-scroll
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quickstart"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
 ---
+
+<h2 id="introduction">Introductie</h2>
 
 Voor componenten die breder zijn dan het scherm maar wel horizontaal weergegeven
 dienen te worden.

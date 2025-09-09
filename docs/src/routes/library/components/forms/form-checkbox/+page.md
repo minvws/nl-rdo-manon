@@ -7,7 +7,10 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Selectievak - Checkbox</p>
+<h2 id="introduction">Introductie</h2>
+
+Selectievak - Checkbox
+
 <h2 id="quick-start">Snelstart</h2>
 
 SCSS importeren:

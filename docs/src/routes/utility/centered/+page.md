@@ -3,9 +3,11 @@ title: centered
 breadcrumb: "centered"
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quickstart"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
 ---
+
+<h2 id="introduction">Introductie</h2>
 
 Centreerd de inhoud van het element op zowel de horizontale als de verticale as.
 

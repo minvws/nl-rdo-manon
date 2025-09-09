@@ -3,9 +3,11 @@ title: one-third-two-thirds
 breadcrumb: one-third-two-thirds
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quickstart"
+  - Snelstart: "#quick-start"
   - Voorbeelden: "#examples"
 ---
+
+<h2 id="introduction">Introductie</h2>
 
 Verdeling 33.33% - 66.66% vanaf het ingestelde breekpunt.
 
