@@ -130,6 +130,10 @@ and spacing sets */
   $breadcrumb-bar-gap: spacing.$spacing-100,
   $breadcrumb-bar-list-item-last-child-font-weight: bold,
   $breadcrumb-bar-list-item-gap: spacing.$spacing-100,
+  $breadcrumb-bar-icon-color: semantic.$color-text-default,
+  $breadcrumb-bar-icon-mask: icons.$chevron-right,
+  $breadcrumb-bar-icon-width: 1.5rem,
+  $breadcrumb-bar-icon-height: 1.5rem,
 
   // breadcrumb bar link
   $breadcrumb-bar-link-text-decoration: none,
