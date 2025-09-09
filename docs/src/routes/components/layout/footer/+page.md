@@ -7,8 +7,12 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">De footer wordt vaak gebruikt als extra navigatiepunt en om aan te geven aan de
-gebruiker dat het einde van de pagina bereikt is.</p>
+<h2 id="introduction">Introduction</h2>
+
+De footer wordt vaak gebruikt als extra navigatiepunt en om aan te geven aan de gebruiker dat het einde van de pagina bereikt is.
+
+De footer wordt vaak gebruikt als extra navigatiepunt en om aan te geven aan de
+gebruiker dat het einde van de pagina bereikt is.
 
 <h2 id="quickstart">Snelstart</h2>
 

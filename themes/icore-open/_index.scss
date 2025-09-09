@@ -170,6 +170,13 @@ and spacing sets */
   $form-combined-field-button-border-radius: 0 border-radii.$border-radius-m
     border-radii.$border-radius-m 0,
 
+  // focus
+  $focus-outline: 2px solid,
+  $focus-outline-offset: spacing.$spacing-025,
+  $focus-outline-color: color-scheme.$oc-blue-5,
+  $focus-z-index: 1,
+  $focus-border-radius: border-radii.$border-radius-s,
+
   // form label
   $form-label-font-weight: bold,
 
