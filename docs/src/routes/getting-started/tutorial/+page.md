@@ -154,7 +154,7 @@ beginnen met de header, hoofdinhoud en footer-secties.
 ### Header
 
 Eerst moeten we de
-[header navigation component](/components/components/header-navigation)
+[header navigation component](/library/components/header-navigation)
 importeren in ons `main.scss`-bestand:
 
 ```scss
@@ -228,8 +228,8 @@ Nu zou ons index.html-bestand er als volgt uit moeten zien:
 
 ### Main
 
-Voor de hoofdinhoud moeten we de [`main` component](/components/layout/main), en
-het [`section` component](/components/layout/section) importeren in ons
+Voor de hoofdinhoud moeten we de [`main` component](/library/layout/main), en
+het [`section` component](/library/layout/section) importeren in ons
 `main.scss`-bestand. Hiermee kunnen we een gestructureerde layout voor onze
 pagina maken.
 
@@ -280,7 +280,7 @@ de bestaande `<h1>`-tag:
 ### Footer
 
 Om een footer toe te voegen aan onze pagina importeren we de
-[`footer` component](/components/components/footer) in ons `main.scss`-bestand.
+[`footer` component](/library/components/footer) in ons `main.scss`-bestand.
 Hiermee kunnen we een `footer`-sectie aan onze pagina toevoegen.
 
 Voeg de volgende import toe aan je `main.scss`:
