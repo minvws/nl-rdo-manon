@@ -30,16 +30,19 @@ $footer-navigation-padding-bottom: null !default;
 $footer-navigation-padding-left: null !default;
 
 // link
-$footer-link-font-size: null !default;
-$footer-link-font-weight: null !default;
-$footer-link-line-height: null !default;
-$footer-link-background-color: null !default;
 $footer-link-text-color: null !default;
-$footer-link-text-decoration: null !default;
-$footer-link-border-width: null !default;
-$footer-link-border-style: null !default;
-$footer-link-border-color: null !default;
-$footer-link-border-radius: null !default;
+$footer-link-hover-text-color: null !default;
+$footer-link-visited-text-color: null !default;
+$footer-link-visited-hover-text-color: null !default;
+$footer-link-text-decoration: none !default;
+
+// Current page
+$footer-link-current-text-color: null !default;
+$footer-link-current-background-color: null !default;
+$footer-link-current-text-decoration: null !default;
+$footer-link-current-border-width: null !default;
+$footer-link-current-border-style: null !default;
+$footer-link-current-border-color: null !default;
 
 // List
 $footer-list-gap: null !default;
