@@ -9,7 +9,9 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Breadcrumb-navigatie is een hulpmiddel op websites dat laat zien waar je je bevindt binnen de structuur van de site. Het geeft een klikbaar pad terug naar eerdere pagina’s, zodat je makkelijk kunt navigeren.
+Breadcrumb-navigatie is een hulpmiddel op websites dat laat zien waar je je
+bevindt binnen de structuur van de site. Het geeft een klikbaar pad terug naar
+eerdere pagina’s, zodat je makkelijk kunt navigeren.
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -31,9 +33,9 @@ SCSS importeren:
 <nav class="breadcrumb-bar">
   <div>
     <ul>
-      <li><a href="{base}/components">Componenten</a></li>
+      <li><a href="{base}/library/components">Componenten</a></li>
       <li>
-        <a href="{base}/components/breadcrumb-bar" aria-current="page"
+        <a href="{base}/library/components/breadcrumb-bar" aria-current="page"
           >Kruimelpad - breadcrumb-bar</a
         >
       </li>

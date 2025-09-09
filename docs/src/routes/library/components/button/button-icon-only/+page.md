@@ -29,7 +29,9 @@ SCSS importeren:
 </button>
 
 ```html
-<button class="icon-only"><span class="icon icon-search" aria-hidden="true"></span>Zoeken</button>
+<button class="icon-only">
+  <span class="icon icon-search" aria-hidden="true"></span>Zoeken
+</button>
 ```
 
 ### Voorbeeld: `button` met `svg`
@@ -101,19 +103,19 @@ SCSS importeren:
 <!-- </button> -->
 
 ```html
-<button href="{base}/components/button/icon" class="icon-only">
+<button href="{base}/library/components/button/icon" class="icon-only">
   Lorem ipsum <img src="path/to/img.svg" alt="Kat" />
 </button>
 ```
 
 ### Voorbeeld: Link als `button` met `img`
 
-<!-- <a href="{base}/components/button/icon" class="button icon-only"> -->
+<!-- <a href="{base}/library/components/button/icon" class="button icon-only"> -->
 <!--   Lorem ipsum <img src="" alt="Kat" /> -->
 <!-- </a> -->
 
 ```html
-<a href="{base}/components/button/icon" class="button icon-only">
+<a href="{base}/library/components/button/icon" class="button icon-only">
   Lorem ipsum <img src="path/to/img.svg" alt="Kat" />
 </a>
 ```
