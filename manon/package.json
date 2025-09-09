@@ -1,6 +1,7 @@
 {
   "name": "@minvws/manon",
   "version": "0.0.0",
+  "type": "module",
   "license": "EUPL-1.2",
   "files": [
     "**/*.scss",
@@ -10,6 +11,9 @@
     "REUSE.toml",
     "README.md"
   ],
+  "bin": {
+    "manon": "bin/cli.js"
+  },
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -18,16 +22,19 @@
     "npm-version": "npm version",
     "test": "vitest run"
   },
+  "dependencies": {
+    "commander": "^14.0.0"
+  },
   "peerDependencies": {
     "sass": ">=1.77.6"
   },
   "devDependencies": {
-    "vitest": "^3.2.4",
     "prettier": "^3.6.2",
     "sass": "^1.89.2",
     "sass-true": "^9.0.0",
     "stylelint": "^16.23.1",
-    "stylelint-config-standard-scss": "^15.0.1"
+    "stylelint-config-standard-scss": "^15.0.1",
+    "vitest": "^3.2.4"
   },
   "repository": {
     "type": "git",
