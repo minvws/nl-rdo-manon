@@ -33,7 +33,7 @@
         <p>
           Manon biedt een bibliotheek met componenten. Deze componenten bevatten voorbeeld-HTML en
           worden geleverd met hun eigen CSS en JavaScript. Bekijk alle componenten in <a
-            href="{base}/components">de componentenbibliotheek</a
+            href="{base}/library">de componentenbibliotheek</a
           >. Installeer Manon voor je eigen project met behulp van
           <a href="{base}/getting-started">deze instructies.</a>
         </p>
@@ -83,7 +83,7 @@
           </p>
 
           <p>
-            In de <a href="{base}/components">componentenbibliotheek</a> vind je het volledige overzicht
+            In de <a href="{base}/library">componentenbibliotheek</a> vind je het volledige overzicht
             met beschikbare componenten.
           </p>
         </div>
