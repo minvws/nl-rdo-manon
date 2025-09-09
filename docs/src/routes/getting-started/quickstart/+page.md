@@ -61,10 +61,10 @@ een thema importeert:
 ## Gebruik
 
 Je bent nu klaar om de componenten in je HTML te gebruiken. Volg de instructies
-in de [Componentenbibliotheek](/components) over hoe je de componenten
-importeert en hoe je deze in je HTML kunt gebruiken. Elk component heeft zijn
-eigen pagina met voorbeelden en codefragmenten.
+in de [Componentenbibliotheek](/library) over hoe je de componenten importeert
+en hoe je deze in je HTML kunt gebruiken. Elk component heeft zijn eigen pagina
+met voorbeelden en codefragmenten.
 
 Wil je weten hoe je een volledige HTML pagina opbouwt? Dan kan je ook de
-[tutorial]({base}/getting-started/tutorial) volgen om te leren hoe je de componenten
-op een meer gestructureerde manier kunt gebruiken.
+[tutorial]({base}/getting-started/tutorial) volgen om te leren hoe je de
+componenten op een meer gestructureerde manier kunt gebruiken.
