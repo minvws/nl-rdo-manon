@@ -1,3 +1,13 @@
+<p align="center">
+  <a href="https://minvws.github.io/nl-rdo-manon" target="_blank">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/minvws/nl-rdo-manon/main/docs/src/img/logo.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/minvws/nl-rdo-manon/main/docs/src/img/logo-dark.svg" />
+      <img alt="Manon logo" src="https://raw.githubusercontent.com/minvws/nl-rdo-manon/main/docs/src/img/logo-dark.svg" width="200" />
+    </picture>
+  </a>
+</p>
+
 <h1 align="center">Manon</h1>
 
 <p align="center">
