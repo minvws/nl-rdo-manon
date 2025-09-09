@@ -50,7 +50,7 @@
       </section>
 
       <section id="components">
-        <h2>Bibliotheek</h2>
+        <h2>Componenten</h2>
         <div class="column-3">
           <nav>
             <ul>
