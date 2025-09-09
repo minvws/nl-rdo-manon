@@ -26,7 +26,6 @@ const config = {
         throw new Error(message);
       },
       handleMissingId: ({ path, id, referrers, message }) => {
-
         // Ignore placeholder IDs used in documentation examples
         const placeholderIds = ["0", "placeholder", "example"];
         if (placeholderIds.includes(id)) {
