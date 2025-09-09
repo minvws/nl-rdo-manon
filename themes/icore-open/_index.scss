@@ -304,6 +304,37 @@ and spacing sets */
   // utility
   $horizontal-gap: spacing.$spacing-100,
 
+  // icon
+  $icon-height: 1.5rem,
+  $icon-width: 1.5rem,
+  $icon-mask-ascending: icons.$ascending,
+  $icon-mask-check: icons.$check,
+  $icon-mask-chevron-down: icons.$chevron-down,
+  $icon-mask-chevron-left: icons.$chevron-left,
+  $icon-mask-chevron-light-down: icons.$chevron-light-down,
+  $icon-mask-chevron-light-left: icons.$chevron-light-left,
+  $icon-mask-chevron-light-right: icons.$chevron-light-right,
+  $icon-mask-chevron-light-up: icons.$chevron-light-up,
+  $icon-mask-chevron-right: icons.$chevron-right,
+  $icon-mask-chevron-up: icons.$chevron-up,
+  $icon-mask-close: icons.$close,
+  $icon-mask-descending: icons.$descending,
+  $icon-mask-download: icons.$download,
+  $icon-mask-hamburger: icons.$hamburger,
+  $icon-mask-heart: icons.$heart,
+  $icon-mask-home: icons.$home,
+  $icon-mask-lock-closed: icons.$lock-closed,
+  $icon-mask-on-off: icons.$on-off,
+  $icon-mask-outgoing: icons.$outgoing,
+  $icon-mask-questionmark: icons.$questionmark,
+  $icon-mask-reset: icons.$reset,
+  $icon-mask-search: icons.$search,
+  $icon-mask-smartphone: icons.$smartphone,
+  $icon-mask-sort: icons.$sort,
+  $icon-mask-to-top: icons.$to-top,
+  $icon-mask-trash: icons.$trash,
+  $icon-mask-user: icons.$user,
+
   // layout
   $layout-gap: 2.5rem,
 
