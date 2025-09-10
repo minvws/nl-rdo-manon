@@ -81,7 +81,7 @@
           <h3 class="heading-large">Gebruik alleen wat je nodig hebt</h3>
           <p>
             Benut enkel de CSS die nodig is binnen jouw project. Dit kan een enkel component zijn of
-            een hele set. In de <a href="{base}/components">componentenbibliotheek</a> vind je het volledige
+            een hele set. In de <a href="{base}/library">componentenbibliotheek</a> vind je het volledige
             overzicht.
           </p>
         </div>
