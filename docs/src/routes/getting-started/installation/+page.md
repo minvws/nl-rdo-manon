@@ -34,24 +34,18 @@ Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
 
    Als je build-systeem Sass niet ondersteunt, kun je
    [de Sass command-line-tool](https://sass-lang.com/documentation/cli/dart-sass/)
-   installeren:
-
-   ```console
-   npm install sass
-   ```
-
-   Als je de Sass command-line interface gebruikt om je bestanden te compileren,
-   kan je het `load-path` definiëren om de Manon-pakketten te vinden. Dit kan
-   gedaan worden met de `--load-path` optie:
+   installeren. Wanneer je de Sass command-line interface gebruikt om je
+   bestanden te compileren, kan je het `load-path` definiëren om de
+   Manon-pakketten te vinden. Dit kan gedaan worden met de `--load-path` optie:
    `sass --load-path node_modules/@minvws/manon` Dan kan je de componenten en
    thema's importeren zoals hieronder beschreven.
 
 2. **Installeer Manon en een thema**
 
-   Installeer het Manon framework en een thema pakket. In dit voorbeeld
-   gebruiken we het `icore-open` thema.
+   We moeten het _Manon Framework_ en _Manon Themes_ installeren om de
+   componenten en stijlen te gebruiken.
 
-   Via npm kun je de volgende commando's gebruiken om Manon en het thema te
+   Via `npm` kun je het volgende commando gebruiken om Manon en het thema te
    installeren:
 
    ```console
@@ -60,7 +54,9 @@ Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
 
 3. **Importeer in je SCSS**
 
-   In je hoofd sass bestand, je gekozen thema:
+   In je hoofd SCSS-bestand (bijv. `main.scss`), importeer je eerst een thema.
+   Daarna kun je de benodigde componenten importeren. In dit voorbeeld gebruiken
+   we het `icore-open` thema.
 
    ```scss
    // Importeer een thema naar keuze. Hier gebruiken we het iCore Open thema als voorbeeld.
