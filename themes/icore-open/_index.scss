@@ -27,6 +27,27 @@ and spacing sets */
 @use "@minvws/manon/variables" with (
   $theme-name: "icore-open",
 
+  // accordion
+  $accordion-gap: spacing.$spacing-100,
+  $accordion-button-padding: spacing.$spacing-075 spacing.$spacing-100,
+  $accordion-button-text-color: semantic.$color-text-default,
+  $accordion-button-background-color: color-scheme.$oc-gray-1,
+  $accordion-button-border-width: 1px,
+  $accordion-button-border-style: solid,
+  $accordion-button-border-color: color-scheme.$oc-gray-2,
+  $accordion-button-font-weight: bold,
+  $accordion-button-font-size: body-text.$body-text-m,
+  $accordion-content-border-width: 0 1px,
+  $accordion-content-border-style: solid,
+  $accordion-content-border-color: color-scheme.$oc-gray-2,
+  $accordion-content-padding: spacing.$spacing-100,
+  $accordion-content-gap: spacing.$spacing-050,
+  $accordion-content-font-size: body-text.$body-text-s,
+  $accordion-button-border-radius: border-radii.$border-radius-s
+    border-radii.$border-radius-s 0 0,
+  $accordion-content-border-radius: 0 0 border-radii.$border-radius-s
+    border-radii.$border-radius-s,
+
   // article
   $article-gap: spacing.$spacing-150,
   $article-flex-direction: column,
