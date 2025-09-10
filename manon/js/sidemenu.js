@@ -1,7 +1,6 @@
 // @ts-check
 
 import {
-  closest,
   ensureElementHasId,
   onDomReady,
   prependNode,
@@ -30,7 +29,7 @@ export function initSidemenus() {
  * @param {HTMLElement} sidemenu
  */
 function addToggleButton(sidemenu) {
-  var main = closest(sidemenu, ".sidemenu");
+  var main = sidemenu.closest(".sidemenu");
   var ul = sidemenu.querySelector("ul");
 
   if (!main || !ul) {

@@ -62,28 +62,3 @@ export function onDomUpdate(handler, root) {
     return observer.disconnect.bind(observer);
   }
 }
-
-/**
- * Ponyfill for Element.prototype.closest.
- * @param {Element} element
- * @param {DOMString} selectors
- * @return {Element | null}
- */
-export function closest(element, selectors) {
-  if (Element.prototype.closest) {
-    return element.closest(selectors);
-  }
-  var matches =
-    Element.prototype.matches ||
-    Element.prototype.msMatchesSelector ||
-    Element.prototype.webkitMatchesSelector;
-
-  do {
-    if (matches.call(element, selectors)) {
-      return element;
-    }
-    element = element.parentElement || element.parentNode;
-  } while (element !== null && element.nodeType === 1);
-
-  return null;
-}

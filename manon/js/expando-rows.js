@@ -1,11 +1,6 @@
 // @ts-check
 
-import {
-  closest,
-  ensureElementHasId,
-  onDomReady,
-  onDomUpdate,
-} from "./utils.js";
+import { ensureElementHasId, onDomReady, onDomUpdate } from "./utils.js";
 
 var managedTables = new WeakMap();
 
@@ -80,7 +75,7 @@ function initExpandoButton(button) {
   var iconOpenClasses = button.dataset.iconOpenClass?.split(/\s+/) || [];
   var iconCloseClasses = button.dataset.iconCloseClass?.split(/\s+/) || [];
 
-  var buttonRow = closest(button, "tr");
+  var buttonRow = button.closest("tr");
   var row = buttonRow.nextElementSibling;
 
   if (
