@@ -5,6 +5,7 @@ import { importAssets } from "svelte-preprocess-import-assets";
 import { mdsvex } from "mdsvex";
 import { redirects } from "./src/redirects.js";
 import { remarkIframe } from "./src/markdown/remark/iframe.js";
+import { remarkLinks } from "./src/markdown/remark/links.js";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -13,18 +14,6 @@ const config = {
     adapter: adapter(),
     prerender: {
       entries: ["*", ...Object.keys(redirects)],
-      handleHttpError: ({ path, referrer, message }) => {
-        // Log the error for debugging
-        console.error(`Prerender HTTP error: ${message}`);
-        console.error(`Path: ${path}`);
-        console.error(`Referrer: ${referrer}`);
-
-        // Skip base path errors during prerendering
-        if (message.includes("404") && message.includes("does not begin with `base`")) {
-          return;
-        }
-        throw new Error(message);
-      },
       handleMissingId: ({ path, id, referrers, message }) => {
         // Ignore placeholder IDs used in documentation examples
         const placeholderIds = ["0", "placeholder", "example"];
@@ -55,7 +44,7 @@ const config = {
     vitePreprocess(),
     mdsvex({
       extensions: [".md"],
-      remarkPlugins: [remarkIframe],
+      remarkPlugins: [remarkIframe, remarkLinks],
       layout: {
         _: fileURLToPath(import.meta.resolve("./src/markdown/layouts/default.svelte")),
       },
