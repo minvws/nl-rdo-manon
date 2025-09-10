@@ -23,7 +23,7 @@ SCSS importeren:
 <h2 id="examples" class="page-title">Voorbeelden:</h2>
 
 <div class="resize">
-  <iframe src="/examples/footer" title="Voorbeeld"></iframe>
+  <iframe src="{base}/examples/footer" title="Voorbeeld"></iframe>
 </div>
 
 ```html
