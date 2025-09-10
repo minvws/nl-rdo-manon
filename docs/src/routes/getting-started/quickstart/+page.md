@@ -4,12 +4,9 @@ breadcrumb: Snelstart
 ---
 
 Deze documentatie biedt een snelle startgids voor het gebruik van het Manon
-framework en de bijbehorende thema's in je project.
-
-Je kunt ook de [tutorial]({base}/getting-started/tutorial) volgen om te leren hoe je
-de componenten op een meer gestructureerde manier kunt gebruiken.
-
-Daarnaast hebben we
+framework en de bijbehorende thema's in je project. Je kunt ook de
+[tutorial](/getting-started/tutorial) volgen om te leren hoe je de componenten
+op een meer gestructureerde manier kunt gebruiken. Daarnaast hebben we
 [enkele voorbeeldimplementaties](https://github.com/minvws/nl-rdo-manon/tree/main/examples/)
 geleverd in verschillende frameworks.
 
@@ -22,22 +19,16 @@ gebruikt, hoef je mogelijk alleen de juiste loader of plugin te installeren.
 
 Als je build-systeem Sass niet ondersteunt, kun je
 [de Sass command-line-tool](https://sass-lang.com/documentation/cli/dart-sass/)
-installeren:
-
-```console
-npm install sass
-```
-
-Als je de Sass command-line interface gebruikt om je bestanden te compileren,
-kan je het `load-path` definiëren om de Manon-pakketten te vinden. Dit kan
-gedaan worden met de `--load-path` optie:
+installeren. Wanneer je de Sass command-line interface gebruikt om je bestanden
+te compileren, kan je het `load-path` definiëren om de Manon-pakketten te
+vinden. Dit kan gedaan worden met de `--load-path` optie:
 `sass --load-path node_modules/@minvws/manon` Dan kan je de componenten en
 thema's importeren zoals hieronder beschreven.
 
 ## Installeren met npm
 
-We moeten het Manon framework en Manon Themes installeren om de componenten en
-stijlen te gebruiken. Dit kan gedaan worden met npm:
+We moeten het _Manon Framework_ en _Manon Themes_ installeren om de componenten
+en stijlen te gebruiken. Dit kan gedaan worden met npm:
 
 ```console
 npm install @minvws/manon @minvws/manon-themes
@@ -50,6 +41,11 @@ de componenten en stijlen in je Sass-bestanden. Het Manon-framework biedt een
 basisset van componenten en stijlen die je kunt gebruiken, en de thema's bieden
 vooraf gedefinieerde stijlen die je kunt toepassen op de componenten. Je staat
 vrij om de componenten te importeren die je nodig hebt.
+
+Allereerst importeren we een thema. We raden aan om altijd een thema te
+importeren, omdat dit de basisstijlen en variabelen bevat die nodig zijn voor de
+componenten om correct te functioneren. Daarna kunnen we de benodigde
+componenten importeren.
 
 Voorbeeld van een SCSS-bestand (bijv. `main.scss`) dat de basiscomponenten en
 een thema importeert:
@@ -65,10 +61,10 @@ een thema importeert:
 ## Gebruik
 
 Je bent nu klaar om de componenten in je HTML te gebruiken. Volg de instructies
-in de [Componentenbibliotheek](/components) over hoe je de componenten
-importeert en hoe je deze in je HTML kunt gebruiken. Elk component heeft zijn
-eigen pagina met voorbeelden en codefragmenten.
+in de [Componentenbibliotheek](/library) over hoe je de componenten importeert
+en hoe je deze in je HTML kunt gebruiken. Elk component heeft zijn eigen pagina
+met voorbeelden en codefragmenten.
 
 Wil je weten hoe je een volledige HTML pagina opbouwt? Dan kan je ook de
-[tutorial]({base}/getting-started/tutorial) volgen om te leren hoe je de componenten
-op een meer gestructureerde manier kunt gebruiken.
+[tutorial]({base}/getting-started/tutorial) volgen om te leren hoe je de
+componenten op een meer gestructureerde manier kunt gebruiken.

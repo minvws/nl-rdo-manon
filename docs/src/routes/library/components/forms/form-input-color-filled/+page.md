@@ -1,0 +1,65 @@
+---
+title: Kleurselector volledig gevuld
+breadcrumb: Kleurselector volledig gevuld
+nav:
+  - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
+  - Voorbeelden: "#examples"
+---
+
+<h2 id="introduction">Introductie</h2>
+
+<p class="warning" role="group" aria-label="waarschuwing">
+  <span>Waarschuwing:</span> Dit element maakt gebruik van experimentele CSS componenten:
+  <code>::-webkit-color-swatch-wrapper</code> en <code>::-webkit-color-swatch</code>.
+  Aangeraden wordt om dit component in deze vorm daarom niet in productie te gebruiken
+  aangezien het kan zijn dat het component er anders uit ziet in verschillende browsers of dat
+  de styling bij toekomstige updates kapot gaat. Als dit geen probleem is binnen jouw project
+  kun je er voor kiezen dit component te gebruiken.
+</p>
+
+Kleurselector volledig gevuld
+
+<h2 id="quickstart">Snelstart</h2>
+
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/form";
+@use "@minvws/manon/form-input-color";
+@use "@minvws/manon/form-input-color-filled";
+```
+
+<h2 id="examples">Voorbeelden</h2>
+
+<form action="" method="post">
+  <label for="color-input-1">Selecteer de gewenste kleur</label>
+  <input id="color-input-1" name="color-input-1" type="color" value="#ffffff" />
+
+<button type="submit">Verzend</button>
+
+</form>
+
+```html
+<form action="" method="post">
+  <label for="color-input-1">Selecteer de gewenste kleur</label>
+  <input id="color-input-1" name="color-input-1" type="color" value="#ffffff" />
+
+  <button type="submit">Verzend</button>
+</form>
+```
+
+<div class="explanation" role="group" aria-label="Toelichting">
+  <span>Aandachtspunten</span>
+  <ul>
+    <li>
+      Voeg `type="color"` toe aan het invoerveld.
+    </li>
+    <li>
+      Voeg basiskleurwaarde met een hexidecimalekleurcode aan binnen: `value`.
+      Voorbeeld: `value="#ffffff"`. De ingevoerde kleur is de kleur waarin het
+      selectievak getoont wordt binnen het formulier voordat de gebruiker een
+      andere keuze maakt.
+    </li>
+  </ul>
+</div>
