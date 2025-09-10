@@ -31,20 +31,11 @@ export function ensureElementHasId(element) {
 export function onMediaQueryMatch(media, handler) {
   var mql = window.matchMedia(media);
 
-  if (mql.addEventListener) {
-    mql.addEventListener("change", handler);
-  } else {
-    mql.addListener(handler);
-  }
-
+  mql.addEventListener("change", handler);
   handler(mql);
 
   return function remove() {
-    if (mql.addEventListener) {
-      mql.removeEventListener("change", handler);
-    } else {
-      mql.removeListener(handler);
-    }
+    mql.removeEventListener("change", handler);
   };
 }
 
