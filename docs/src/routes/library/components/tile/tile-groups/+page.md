@@ -23,7 +23,7 @@ Voor het gegroepeerd weergeven van content binnen tegels
   <li>
     Voeg `class="tile"` toe voor de Gegroepeerde content binnen tegels op een
     enkel element. Voor meer informatie zie:
-    [tegelweergave]({base}/library/components/tile)
+    [tegelweergave](/library/components/tile)
   </li>
   <li>
     Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en

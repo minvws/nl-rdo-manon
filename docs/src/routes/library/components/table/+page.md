@@ -37,4 +37,4 @@ Een tabel is een gestructureerd overzicht van gegevens, weergegeven in rijen en 
 
 ### Helper-classes
 
-- <a href="{base}/utility/nowrap">nowrap</a>
+- <a href="/utility/nowrap">nowrap</a>
