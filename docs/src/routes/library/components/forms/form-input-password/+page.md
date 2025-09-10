@@ -39,7 +39,6 @@ SCSS importeren:
     </ul>
 </div>
 
-
 <h2 id="examples">Voorbeelden</h2>
 
 <form action="" method="post">
