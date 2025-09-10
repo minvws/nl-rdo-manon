@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">File upload, invoerveld voor het uploaden van bestanden.</p>
+<h2 id="introduction">Introductie</h2>
+
+File upload, invoerveld voor het uploaden van bestanden.
 
 <h2 id="quickstart">Snelstart</h2>
 

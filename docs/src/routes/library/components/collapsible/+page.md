@@ -45,9 +45,9 @@ Als er geen `data-open-label en/of data-close-label` wordt/worden gedefinieerd, 
 
   <div class="collapsing-element">
       <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
+          <li><a href="#0">Item 1</a></li>
+          <li><a href="#0">Huidige selectie</a></li>
+          <li><a href="#0">Item 3</a></li>
       </ul>
   </div>
 </div>
@@ -61,9 +61,9 @@ Als er geen `data-open-label en/of data-close-label` wordt/worden gedefinieerd, 
 >
   <div class="collapsing-element">
     <ul>
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Huidige selectie</a></li>
-      <li><a href="#">Item 3</a></li>
+      <li><a href="#0">Item 1</a></li>
+      <li><a href="#0">Huidige selectie</a></li>
+      <li><a href="#0">Item 3</a></li>
     </ul>
   </div>
 </div>
@@ -87,9 +87,9 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 
   <div class="collapsing-element">
       <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
+          <li><a href="#0">Item 1</a></li>
+          <li><a href="#0">Huidige selectie</a></li>
+          <li><a href="#0">Item 3</a></li>
       </ul>
   </div>
 </div>
@@ -105,9 +105,9 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 >
   <div class="collapsing-element">
     <ul>
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Huidige selectie</a></li>
-      <li><a href="#">Item 3</a></li>
+      <li><a href="#0">Item 1</a></li>
+      <li><a href="#0">Huidige selectie</a></li>
+      <li><a href="#0">Item 3</a></li>
     </ul>
   </div>
 </div>
@@ -124,9 +124,9 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   <div class="collapsing-element">
     <form>
       <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
+          <li><a href="#0">Item 1</a></li>
+          <li><a href="#0">Huidige selectie</a></li>
+          <li><a href="#0">Item 3</a></li>
       </ul>
     </form>
   </div>
@@ -142,9 +142,9 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   <div class="collapsing-element">
     <form>
       <ul>
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Huidige selectie</a></li>
-        <li><a href="#">Item 3</a></li>
+        <li><a href="#0">Item 1</a></li>
+        <li><a href="#0">Huidige selectie</a></li>
+        <li><a href="#0">Item 3</a></li>
       </ul>
     </form>
   </div>
@@ -162,9 +162,9 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 
   <div class="collapsing-element">
       <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
+          <li><a href="#0">Item 1</a></li>
+          <li><a href="#0">Huidige selectie</a></li>
+          <li><a href="#0">Item 3</a></li>
       </ul>
   </div>
 </div>
@@ -179,9 +179,9 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 >
   <div class="collapsing-element">
     <ul>
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Huidige selectie</a></li>
-      <li><a href="#">Item 3</a></li>
+      <li><a href="#0">Item 1</a></li>
+      <li><a href="#0">Huidige selectie</a></li>
+      <li><a href="#0">Item 3</a></li>
     </ul>
   </div>
 </div>
@@ -198,9 +198,9 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 
   <div class="collapsing-element">
       <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
+          <li><a href="#0">Item 1</a></li>
+          <li><a href="#0">Huidige selectie</a></li>
+          <li><a href="#0">Item 3</a></li>
       </ul>
   </div>
 </div>
@@ -215,9 +215,9 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 >
   <div class="collapsing-element">
     <ul>
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Huidige selectie</a></li>
-      <li><a href="#">Item 3</a></li>
+      <li><a href="#0">Item 1</a></li>
+      <li><a href="#0">Huidige selectie</a></li>
+      <li><a href="#0">Item 3</a></li>
     </ul>
   </div>
 </div>
@@ -233,15 +233,15 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 
   <div class="collapsing-element">
     <ul>
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Huidige selectie</a></li>
-      <li><a href="#">Item 3</a></li>
+      <li><a href="#0">Item 1</a></li>
+      <li><a href="#0">Huidige selectie</a></li>
+      <li><a href="#0">Item 3</a></li>
     </ul>
 
     <ul>
-      <li><a href="#">Sub menu Item 1</a></li>
-      <li><a href="#">Sub menu Item 2</a></li>
-      <li><a href="#">Sub menu Item 3</a></li>
+      <li><a href="#0">Sub menu Item 1</a></li>
+      <li><a href="#0">Sub menu Item 2</a></li>
+      <li><a href="#0">Sub menu Item 3</a></li>
     </ul>
 
   </div>
@@ -256,15 +256,15 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 >
   <div class="collapsing-element">
     <ul>
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Huidige selectie</a></li>
-      <li><a href="#">Item 3</a></li>
+      <li><a href="#0">Item 1</a></li>
+      <li><a href="#0">Huidige selectie</a></li>
+      <li><a href="#0">Item 3</a></li>
     </ul>
 
     <ul>
-      <li><a href="#">Sub menu Item 1</a></li>
-      <li><a href="#">Sub menu Item 2</a></li>
-      <li><a href="#">Sub menu Item 3</a></li>
+      <li><a href="#0">Sub menu Item 1</a></li>
+      <li><a href="#0">Sub menu Item 2</a></li>
+      <li><a href="#0">Sub menu Item 3</a></li>
     </ul>
   </div>
 </div>

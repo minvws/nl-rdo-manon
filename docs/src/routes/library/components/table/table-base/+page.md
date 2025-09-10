@@ -3,13 +3,15 @@ title: Tabel basisweergave
 breadcrumb: Tabel basisweergave
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Voor het weergeven van tabellen</p>
+<h2 id="introduction">Introductie</h2>
 
-<h2 id="quick-start">Snelstart</h2>
+Voor het weergeven van tabellen
+
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

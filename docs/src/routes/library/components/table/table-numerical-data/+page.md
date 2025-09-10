@@ -3,14 +3,16 @@ title: Tabel met numerieke data
 breadcrumb: Tabel met numerieke data
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Getallen worden visueel onderscheidend weergegeven van overige celdata om de
-gebruiksvriendelijkheid te vergroten.</p>
+<h2 id="introduction">Introductie</h2>
 
-<h2 id="quick-start">Snelstart</h2>
+Getallen worden visueel onderscheidend weergegeven van overige celdata om de
+gebruiksvriendelijkheid te vergroten.
+
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

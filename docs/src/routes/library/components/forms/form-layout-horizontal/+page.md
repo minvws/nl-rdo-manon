@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Voor het horizontaal uitlijnen van de invoervelden en labels binnen het formulier.</p>
+<h2 id="introduction">Introductie</h2>
+
+Voor het horizontaal uitlijnen van de invoervelden en labels binnen het formulier.
 
 <h2 id="quickstart">Snelstart</h2>
 

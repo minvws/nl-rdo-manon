@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Ghost button</p>
+<h2 id="introduction">Introductie</h2>
+
+Ghost button
 
 Subtiele knopweergave zonder achtergrondkleur.
 

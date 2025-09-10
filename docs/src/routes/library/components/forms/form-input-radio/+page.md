@@ -3,13 +3,15 @@ title: Radio-selecteerknop - radio
 breadcrumb: Radio-selecteerknop - radio
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Radio selecteerknop voor het selecteren van een optie binnen een set</p>
+<h2 id="introduction">Introductie</h2>
 
-<h2 id="quick-start">Snelstart</h2>
+Radio selecteerknop voor het selecteren van een optie binnen een set
+
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

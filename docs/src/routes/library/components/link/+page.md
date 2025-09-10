@@ -19,16 +19,6 @@ SCSS importeren:
 @use "@minvws/manon/link";
 ```
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Aandachtspunten</span>
-  <p>
-      De standaard ingestelde waarden binnen Manon maken gebruik van de <a
-      href="{base}/library/layout/typography/body-text-set">Body text set</a>. Om gebruik te maken van deze set.
-    Laad de set eenmalig in voordat overige componenten er gebruik van
-      maken.
-  </p>
-</div>
-
 <h2 id="examples">Voorbeelden</h2>
 
 ### Voorbeeld: Basis link

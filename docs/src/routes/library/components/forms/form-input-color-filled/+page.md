@@ -7,6 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
+<h2 id="introduction">Introductie</h2>
+
 <p class="warning" role="group" aria-label="waarschuwing">
   <span>Waarschuwing:</span> Dit element maakt gebruik van experimentele CSS componenten:
   <code>::-webkit-color-swatch-wrapper</code> en <code>::-webkit-color-swatch</code>.
@@ -16,7 +18,7 @@ nav:
   kun je er voor kiezen dit component te gebruiken.
 </p>
 
-<p id="introduction">Kleurselector volledig gevuld</p>
+Kleurselector volledig gevuld
 
 <h2 id="quickstart">Snelstart</h2>
 

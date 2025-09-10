@@ -3,13 +3,15 @@ title: Tabeldata over meerdere rijen
 breadcrumb: Tabeldata over meerdere rijen
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Data weergeven over meer dan een rij kan gebruikt worden binnen tabellen.</p>
+<h2 id="introduction">Introductie</h2>
 
-<h2 id="quick-start">Snelstart</h2>
+Data weergeven over meer dan een rij kan gebruikt worden binnen tabellen.
+
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

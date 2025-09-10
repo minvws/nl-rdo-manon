@@ -129,7 +129,7 @@ uitbreiden.
 
 Wanneer je extra componenten wilt gebruiken, kun je ze importeren in dit
 `main.scss`-bestand. Zie de beschikbare componenten in de
-[Manon documentatie](/components).
+[Manon documentatie](/library).
 
 Nu kunnen we onze stijlen bouwen door het volgende commando uit te voeren:
 
@@ -182,9 +182,9 @@ header met navigatielinks te maken:
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Over</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#0">Home</a></li>
+        <li><a href="#0">Over</a></li>
+        <li><a href="#0">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -214,9 +214,9 @@ Nu zou ons index.html-bestand er als volgt uit moeten zien:
       >
         <div class="collapsing-element">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Over</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#0">Home</a></li>
+            <li><a href="#0">Over</a></li>
+            <li><a href="#0">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -280,7 +280,7 @@ de bestaande `<h1>`-tag:
 ### Footer
 
 Om een footer toe te voegen aan onze pagina importeren we de
-[`footer` component](/library/components/footer) in ons `main.scss`-bestand.
+[`footer` component]({base}/library/layout/footer) in ons `main.scss`-bestand.
 Hiermee kunnen we een `footer`-sectie aan onze pagina toevoegen.
 
 Voeg de volgende import toe aan je `main.scss`:
@@ -311,9 +311,9 @@ Voeg de volgende HTML toe, net voor de sluitende `</body>`-tag:
   <nav>
     <h1>Manon Tutorial</h1>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Over</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#0">Home</a></li>
+      <li><a href="#0">Over</a></li>
+      <li><a href="#0">Contact</a></li>
     </ul>
   </nav>
 </footer>
@@ -325,5 +325,5 @@ Nu we onze basislayout hebben met `header`, `main` en `footer`, kunnen we
 beginnen met het toevoegen van meer componenten aan onze pagina. We kunnen het
 Manon-framework gebruiken om verschillende componenten zoals knoppen,
 formulieren en meer toe te voegen. Zie de
-[Manon-documentatie - Componenten](/components) voor een lijst van beschikbare
+[Manon-documentatie - Componenten]({base}/library) voor een lijst van beschikbare
 componenten en hoe je ze kunt gebruiken.
