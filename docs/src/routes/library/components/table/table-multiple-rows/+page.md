@@ -6,6 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
+
 <h2 id="introduction">Introductie</h2>
 
 Data weergeven over meer dan een rij kan gebruikt worden binnen tabellen.

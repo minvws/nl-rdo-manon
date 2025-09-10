@@ -23,8 +23,7 @@ SCSS importeren:
 JavaScript importeren:
 
 ```javascript
-TODO
-
+TODO;
 ```
 
 <h3>Benodigde stappen:</h3>
@@ -112,9 +111,7 @@ TODO
     <table>
       <caption>
         Tabelvoorbeeld met selectievak:
-        <span class="visually-hidden">
-          Selectievak in kolom 1 rij 1 selecteert alle rijen.
-        </span>
+        <span class="visually-hidden"> Selectievak in kolom 1 rij 1 selecteert alle rijen. </span>
       </caption>
       <thead>
         <tr>

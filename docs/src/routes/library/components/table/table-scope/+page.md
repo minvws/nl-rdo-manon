@@ -11,7 +11,6 @@ nav:
 
 Voor het weergeven van de tabelrichting kun je de leesrichting instellen.
 
-
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:

@@ -29,7 +29,7 @@ SCSS importeren:
 JavaScript importeren:
 
 ```javascript
-TODO
+TODO;
 ```
 
 <h2 id="examples">Voorbeelden</h2>
