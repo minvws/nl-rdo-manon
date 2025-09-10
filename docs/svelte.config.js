@@ -20,12 +20,18 @@ const config = {
         console.error(`Referrer: ${referrer}`);
 
         // Skip base path errors during prerendering
-        if (message.includes("404") || message.includes("does not begin with `base`")) {
+        if (message.includes("404") && message.includes("does not begin with `base`")) {
           return;
         }
         throw new Error(message);
       },
       handleMissingId: ({ path, id, referrers, message }) => {
+        // Ignore placeholder IDs used in documentation examples
+        const placeholderIds = ["0", "placeholder", "example"];
+        if (placeholderIds.includes(id)) {
+          return;
+        }
+
         // Log the missing ID error for debugging
         console.error(`Missing ID error: ${message}`);
         console.error(`Path: ${path}`);

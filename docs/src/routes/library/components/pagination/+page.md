@@ -36,11 +36,11 @@ Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in mee
 ```html
 <nav class="pagination" aria-label="Paginering">
   <ul>
-    <li><a href="#" aria-label="Ga naar pagina 1" aria-current="true">1</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 2">2</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
+    <li><a href="#0" aria-label="Ga naar pagina 1" aria-current="true">1</a></li>
+    <li><a href="#0" aria-label="Ga naar pagina 2">2</a></li>
+    <li><a href="#0" aria-label="Ga naar pagina 3">3</a></li>
+    <li><a href="#0" aria-label="Ga naar pagina 4">4</a></li>
+    <li><a href="#0" aria-label="Ga naar pagina 5">5</a></li>
   </ul>
 </nav>
 ```
@@ -69,14 +69,14 @@ Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in mee
 
 ```html
 <nav class="pagination" aria-label="Paginering">
-  <a href="#" aria-label="Ga naar de vorige pagina" class="adjacent previous">Vorige</a>
+  <a href="#0" aria-label="Ga naar de vorige pagina" class="adjacent previous">Vorige</a>
   <ul>
-    <li><a href="#" aria-label="Ga naar pagina 1">1</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 2" aria-current="true">2</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
+    <li><a href="#0" aria-label="Ga naar pagina 1">1</a></li>
+    <li><a href="#0" aria-label="Ga naar pagina 2" aria-current="true">2</a></li>
+    <li><a href="#0" aria-label="Ga naar pagina 3">3</a></li>
+    <li><a href="#0" aria-label="Ga naar pagina 4">4</a></li>
+    <li><a href="#0" aria-label="Ga naar pagina 5">5</a></li>
   </ul>
-  <a href="#" aria-label="Ga naar de volgende pagina" class="adjacent next">Volgende</a>
+  <a href="#0" aria-label="Ga naar de volgende pagina" class="adjacent next">Volgende</a>
 </nav>
 ```

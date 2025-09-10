@@ -3,14 +3,14 @@ title: Foutmelding
 breadcrumb: Foutmelding
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
 <p id="introduction">Gebruik om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het
 incorrect invoeren van data of een systeemfout.</p>
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

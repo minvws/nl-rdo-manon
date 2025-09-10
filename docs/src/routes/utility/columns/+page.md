@@ -7,6 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
+<h2 id="introduction">Introductie</h2>
+
 Het verdelen van de content over kolommen.
 
 <h2 id="quickstart">Snelstart</h2>

@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Invoervelden worden gebruikt voor het vragen van korte informatie.</p>
+<h2 id="introduction">Introductie</h2>
+
+Invoervelden worden gebruikt voor het vragen van korte informatie.
 
 <h2 id="quickstart">Snelstart</h2>
 

@@ -7,9 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">
-  Opvallende weergave voor knoppen die een destructieve actie initiëren.
-</p>
+<h2 id="introduction">Introductie</h2>
+
+Opvallende weergave voor knoppen die een destructieve actie initiëren.
 
 <h2 id="quickstart">Snelstart</h2>
 

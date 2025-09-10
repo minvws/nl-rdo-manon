@@ -3,7 +3,7 @@ title: Header Navigation
 breadcrumb: Header Navigation
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -14,7 +14,7 @@ navigatiebalk voor websites. Het ondersteunt verschillende configuraties, zoals
 een logo, zoekveld, en meerdere menu's. Deze component is ontworpen om te
 voldoen aan de toegankelijkheidsrichtlijnen en biedt een responsieve ervaring.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
@@ -55,7 +55,7 @@ SCSS importeren:
     <div class="collapsing-element">
       <ul>
         <li><a href="{base}/">Home</a></li>
-        <li><a href="{base}/components">Componenten</a></li>
+        <li><a href="{base}/library">Componenten</a></li>
         <li><a href="{base}/documentation">Documentatie</a></li>
       </ul>
     </div>
@@ -88,7 +88,7 @@ SCSS importeren:
       <div class="collapsing-element">
         <ul>
           <li><a href="{base}/">Home</a></li>
-          <li><a href="{base}/components">Componenten</a></li>
+          <li><a href="{base}/library">Componenten</a></li>
           <li><a href="{base}/documentation">Documentatie</a></li>
         </ul>
       </div>
@@ -121,7 +121,7 @@ SCSS importeren:
     <div class="collapsing-element">
       <ul>
         <li><a href="{base}/">Home</a></li>
-        <li><a href="{base}/components">Componenten</a></li>
+        <li><a href="{base}/library">Componenten</a></li>
         <li><a href="{base}/documentation">Documentatie</a></li>
       </ul>
 
@@ -163,7 +163,7 @@ SCSS importeren:
       <div class="collapsing-element">
         <ul>
           <li><a href="{base}/">Home</a></li>
-          <li><a href="{base}/components">Componenten</a></li>
+          <li><a href="{base}/library">Componenten</a></li>
           <li><a href="{base}/documentation">Documentatie</a></li>
         </ul>
       </div>
@@ -197,7 +197,7 @@ SCSS importeren:
       <div class="collapsing-element">
         <ul>
           <li><a href="{base}/">Home</a></li>
-          <li><a href="{base}/components">Componenten</a></li>
+          <li><a href="{base}/library">Componenten</a></li>
           <li><a href="{base}/documentation">Documentatie</a></li>
         </ul>
 
@@ -235,7 +235,7 @@ SCSS importeren:
       <div class="collapsing-element">
         <ul>
           <li><a href="{base}/">Home</a></li>
-          <li><a href="{base}/components">Componenten</a></li>
+          <li><a href="{base}/library">Componenten</a></li>
           <li><a href="{base}/documentation">Documentatie</a></li>
         </ul>
 
@@ -282,7 +282,7 @@ SCSS importeren:
     <div class="collapsing-element">
       <ul>
         <li><a href="{base}/">Home</a></li>
-        <li><a href="{base}/components">Componenten</a></li>
+        <li><a href="{base}/library">Componenten</a></li>
         <li><a href="{base}/documentation">Documentatie</a></li>
       </ul>
 
