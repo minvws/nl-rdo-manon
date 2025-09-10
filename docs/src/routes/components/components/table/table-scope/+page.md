@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Voor het weergeven van de tabelrichting</p>
+<h2 id="introduction">Introductie</h2>
+
+Voor het weergeven van de tabelrichting kun je de leesrichting instellen.
 
 <h2 id="quick-start">Snelstart</h2>
 
@@ -27,8 +29,7 @@ afhankelijk van de richting.
   Het is hierbij belangrijk om rekening te houden met gebruikers die gebruik maken van
   hulptechnologieën zoals screenreaders. Om ook voor hen inzichtelijk te houden bij welke
   data de titel hoort is het van belang dit aan te geven. Dit kan gedaan worden door aan
-  de <code>&lt;th&gt;</code> de tag <code>scope="col"</code> bij kolommen of
-  <code>scope="row"</code> bij rijen toe te voegen.
+  de th scope="col" bij kolommen of scope="row" bij rijen toe te voegen.
 </p>
 
 <h2 id="examples">Voorbeelden</h2>

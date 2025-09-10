@@ -7,10 +7,12 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
+<h2 id="introduction">Introductie</h2>
+
 Zorgt ervoor dat woorden en teksten niet afgebroken worden maar op dezelfde
 regel blijven doorlopen.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
@@ -19,11 +21,9 @@ SCSS importeren:
 ```
 
 <p class="explanation">
-  <span>Toelichting:</span> Door de class op een specifieker element te plaatsen,
-  bijvoorbeeld een <code>td</code> zal het effect beperkt blijven tot het specifieke
-  element. Door de class op een hoger gelegen element te plaatsen, bijvoorbeeld de
-  <code>table</code>
-  of de omliggende <code>div</code> zullen alle onderliggende tekst-elementen niet afbreken.
+  <span>Toelichting:</span> 
+  Door de class op een specifieker element te plaatsen, bijvoorbeeld een td zal het effect beperkt blijven tot het specifieke element. Door de class op een hoger gelegen element te plaatsen, bijvoorbeeld de
+  table of de omliggende div zullen alle onderliggende tekst-elementen niet afbreken.
 </p>
 
 <h2 id="examples">Voorbeelden</h2>
@@ -47,11 +47,8 @@ SCSS importeren:
 ```
 
 <p class="explanation">
-  <span>Toelichting:</span> In dit voorbeeld wordt er ook gebruik gemaakt van de
-  <dfn>helper-class</dfn>
-  <a href="{base}/utility/horizontal-scroll">horizontal-scroll</a>
-  om te voorkomen dat het voorbeeld-element de layout van de pagina breekt. Zonder deze toevoeging
-  zou de tekst het scherm uitlopen. De class <code>horizontal-scroll</code> voegt op de maximale
+  <span>Toelichting:</span> 
+  In dit voorbeeld wordt er ook gebruik gemaakt van de helper-class horizontal-scroll om te voorkomen dat het voorbeeld-element de layout van de pagina breekt. Zonder deze toevoeging zou de tekst het scherm uitlopen. De class horizontal-scroll voegt op de maximale
   beschikbare breedte de scrollbalk toe.
 </p>
 

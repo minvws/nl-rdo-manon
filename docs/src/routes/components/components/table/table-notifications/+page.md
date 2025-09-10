@@ -3,14 +3,16 @@ title: Meldingen op tabel-elementen
 breadcrumb: Meldingen op tabel-elementen
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Tabelelementen kunnen een meldig weergeven. Denk hierbij aan een foutmelding of
-een toelichting.</p>
+<h2 id="introduction">Introductie</h2>
 
-<h2 id="quick-start">Snelstart</h2>
+Tabelelementen kunnen een meldig weergeven. Denk hierbij aan een foutmelding of
+een toelichting.
+
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

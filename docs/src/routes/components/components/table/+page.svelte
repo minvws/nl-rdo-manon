@@ -15,7 +15,10 @@
     <h1 class="page-title">Tabel</h1>
     <div class="content-wrapper">
       <section id="introduction">
-        <p>Tabel</p>
+        <p>
+          In HTML gebruik je een tabelstructuur om gegevens in rijen en kolommen overzichtelijk weer
+          te geven, waarbij speciale elementen de koppen en de inhoud van de tabel definiëren.
+        </p>
       </section>
 
       <section id="available-types">
