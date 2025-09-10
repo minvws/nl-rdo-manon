@@ -89,10 +89,9 @@
         <div>
           <h3 class="heading-large">Handige helpers</h3>
           <p>
-            Voor bekende uitzonderingen bevat Manon <a href="{base}/utility-classes"
-              >"utility-classes"</a
-            >. Deze classes kunnen gebruikt worden om een visuele uitzondering snel en efficient toe
-            te passen binnen het project waar nodig.
+            Voor bekende uitzonderingen bevat Manon <a href="{base}/utility">"utility-classes"</a>.
+            Deze classes kunnen gebruikt worden om een visuele uitzondering snel en efficient toe te
+            passen binnen het project waar nodig.
           </p>
         </div>
 
