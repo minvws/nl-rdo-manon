@@ -1,3 +1,13 @@
+<p align="center">
+  <a href="https://minvws.github.io/nl-rdo-manon" target="_blank">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/minvws/nl-rdo-manon/main/docs/src/img/logo.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/minvws/nl-rdo-manon/main/docs/src/img/logo-dark.svg" />
+      <img alt="Manon logo" src="https://raw.githubusercontent.com/minvws/nl-rdo-manon/main/docs/src/img/logo-dark.svg" width="200" />
+    </picture>
+  </a>
+</p>
+
 <h1 align="center">Manon</h1>
 
 <p align="center">
@@ -28,19 +38,23 @@ Manon is a design framework based on the following principles:
 
 Manon prioritizes styling based on HTML structure, leading to clean and
 maintainable code. This allows for efficient visual adjustments with minimal
-HTML changes, for example, by loading a different CSS component for the same
-HTML structure.
+HTML changes.
+
+### 🫶 Accessibility
+
+Manon strives to improve the accessibility of web applications by providing
+accessible components that comply with the WCAG guidelines.
 
 ### 📦 As small as possible
 
 Use only what you need. Manon consists of individual components that can be
 imported separately, so you don't have to use the entire set.
 
-### 🛠️ Adjustable
+### 🎨 Themes
 
-Components are adjustable via variables. The modular design prevents unnecessary
-CSS overrides. Consult the documentation or variable files for an overview of
-the adjustable variables per component.
+In addition to offering a number of themes, Manon also allows you to create your
+own. Each theme can override the components’ variables to achieve the desired
+style.
 
 ## 🚀 Getting Started
 
@@ -50,10 +64,6 @@ To use Manon in your project:
     compiler installed. If your build system does not support Sass, you can
     install
     [the Sass command line tool](https://sass-lang.com/documentation/cli/dart-sass/).
-
-    ```bash
-    npm install sass
-    ```
 
 2.  Install Manon and Manon Themes via npm:
 
@@ -93,12 +103,6 @@ strict branding and accessibility requirements from the Dutch government. The
 Ministry of VWS developed this framework to simplify the building and management
 of government-style compliant websites. This version has been adapted for
 broader use.
-
-The main difference between Manon Rijk (with government branding) and Manon Open
-(general use) is that Manon Open is variable and adjustable. While the first
-version of Manon was implemented as a whole, Manon Open allows you to choose
-which components and CSS parts you want to add. This results in fewer overrides
-and a smaller CSS file.
 
 ## 📄 License
 
