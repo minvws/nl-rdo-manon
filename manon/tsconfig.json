@@ -1,7 +1,14 @@
 {
-  "include": ["*.js", "**/*.js"],
   "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "moduleResolution": "bundler",
     "noEmit": true,
-    "allowJs": true
-  }
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true
+  },
+  "include": ["./*.js", "./bin/", "./js/"],
+  "exclude": ["../node_modules/**"]
 }
