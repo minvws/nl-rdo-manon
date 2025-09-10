@@ -47,12 +47,15 @@
         <h4>Visueel voorbeeld:</h4>
         <div class="language-selector">
           <p id="language-selector-description">Kies een taal:</p>
-          <div
-            class="language-selector-options"
-            aria-describedby="language-selector-description"
-            aria-expanded="false"
-          >
-            <button aria-haspopup="listbox" aria-current="true"> Papiamentu </button>
+          <div class="language-selector-options">
+            <button
+              aria-describedby="language-selector-description"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-current="true"
+            >
+              Papiamentu
+            </button>
             <ul role="listbox">
               <li role="option" aria-selected="false">
                 <a hreflang="nl" href="language-selector" data-value="Nederlands" lang="nl"
@@ -85,8 +88,8 @@
           code={`
 <div class="language-selector">
   <p id="language-selector-description">Kies een taal:</p>
-  <div class="language-selector-options" aria-describedby="language-selector-description" aria-expanded="false">
-    <button aria-haspopup="listbox" aria-current="true">
+  <div class="language-selector-options">
+    <button aria-haspopup="listbox" aria-current="true" aria-describedby="language-selector-description" aria-expanded="false">
       Papiamentu
     </button>
     <ul role="listbox">
