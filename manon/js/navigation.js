@@ -25,7 +25,7 @@ export function initNaviation() {
  * @param {boolean} isCondensed
  */
 function makeResponsive(nav, isCondensed) {
-  var menu = nav.querySelector(".collapsible");
+  const menu = nav.querySelector(".collapsible");
   if (!(menu instanceof HTMLElement)) {
     return;
   }
@@ -37,7 +37,7 @@ function makeResponsive(nav, isCondensed) {
     nav.dataset.closeLabel || "Sluit menu"
   );
 
-  menu.parentNode.insertBefore(button.element, menu);
+  menu.parentNode?.insertBefore(button.element, menu);
 
   if (!isCondensed) {
     onMediaQueryMatch(
@@ -74,6 +74,9 @@ function createMenuButton(ul, openLabel, closeLabel) {
   button.appendChild(label);
   button.setAttribute("aria-labelledby", label.id);
 
+  /**
+   * @param {boolean} expanded
+   */
   function setExpanded(expanded) {
     if (expanded !== (button.getAttribute("aria-expanded") === "true")) {
       button.setAttribute("aria-expanded", String(expanded));

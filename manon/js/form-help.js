@@ -92,8 +92,8 @@ function collapseExplanation(explanation) {
 
   // Insert the button after the .explanation
   if (explanation.nextSibling) {
-    explanation.parentNode.insertBefore(button, explanation);
+    explanation.parentNode?.insertBefore(button, explanation);
   } else {
-    explanation.parentNode.append(button);
+    explanation.parentNode?.append(button);
   }
 }

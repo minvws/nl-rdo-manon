@@ -53,7 +53,7 @@ export function prependNode(parent, child) {
  * Set up a MutationObserver. Returns a disconnect function.
  * @param {() => void} handler
  * @param {HTMLElement | undefined} [root]
- * @return {undefined|() => void}
+ * @return {undefined|(() => void)}
  */
 export function onDomUpdate(handler, root) {
   if ("MutationObserver" in window) {
