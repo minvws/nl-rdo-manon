@@ -3,7 +3,7 @@ title: Tabel basisweergave
 breadcrumb: Tabel basisweergave
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -11,7 +11,7 @@ nav:
 
 Voor het weergeven van tabellen
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

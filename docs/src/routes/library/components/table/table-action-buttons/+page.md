@@ -3,7 +3,7 @@ title: Tabel met actieknoppen
 breadcrumb: Tabel met actieknoppen
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -12,7 +12,7 @@ nav:
 Herhalende content zoals actieknoppen kunnen visueel als iconen weergegeven
 worden.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

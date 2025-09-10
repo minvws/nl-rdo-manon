@@ -3,7 +3,7 @@ title: horizontal-scroll
 breadcrumb: horizontal-scroll
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -12,7 +12,7 @@ nav:
 Voor componenten die breder zijn dan het scherm maar wel horizontaal weergegeven
 dienen te worden.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

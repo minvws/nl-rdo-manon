@@ -3,7 +3,7 @@ title: background-color-offset
 breadcrumb: background-color-offset
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -14,7 +14,7 @@ nav:
   Deze pagina is nog niet af. De inhoud is nog niet compleet en de voorbeelden zijn nog niet toegevoegd.
 </p>
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

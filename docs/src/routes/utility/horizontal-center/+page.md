@@ -3,7 +3,7 @@ title: Horizontaal gecentreerd
 breadcrumb: Horizontaal gecentreerd
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -11,7 +11,7 @@ nav:
 
 Horizontaal gecentreerd
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

@@ -3,7 +3,7 @@ title: Samenvattingstabel
 breadcrumb: Samenvattingstabel
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -12,7 +12,7 @@ nav:
 Geschikt voor het tonen van korte overzichten en samenvattingen bij complexe
 tabellen en documenten.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

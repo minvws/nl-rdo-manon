@@ -3,7 +3,7 @@ title: centered
 breadcrumb: "centered"
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -11,7 +11,7 @@ nav:
 
 Centreerd de inhoud van het element op zowel de horizontale als de verticale as.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

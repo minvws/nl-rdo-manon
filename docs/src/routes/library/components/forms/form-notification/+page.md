@@ -3,7 +3,7 @@ title: Notificatie binnen formulier
 breadcrumb: Notificatie binnen formulier
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -11,7 +11,7 @@ nav:
 
 Het weergeven van notificaties binnen het formulier
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

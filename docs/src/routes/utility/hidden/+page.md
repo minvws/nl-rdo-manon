@@ -3,7 +3,7 @@ title: hidden
 breadcrumb: hidden
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -17,7 +17,7 @@ verborgen.
   <code>"display: none"</code> over voor hun gebruikers.
 </p>
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

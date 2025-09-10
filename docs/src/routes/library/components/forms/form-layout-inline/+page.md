@@ -3,7 +3,7 @@ title: "inline"-formulier
 breadcrumb: "inline"-formulier
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -13,7 +13,7 @@ In sommige gevallen is er om technische redenen een formulier nodig rondom een
 knop maar is het niet nodig om deze visueel binnen een formulier te plaatsen.
 Voor die situaties is dit voorbeeld geschikt.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

@@ -3,7 +3,7 @@ title: visually-hidden
 breadcrumb: visually-hidden
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -12,7 +12,7 @@ nav:
 Verbergt objecten alleen visueel. Voor screenreaders blijven de objecten
 zichtbaar.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

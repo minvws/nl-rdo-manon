@@ -3,7 +3,7 @@ title: one-third-two-thirds
 breadcrumb: one-third-two-thirds
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -11,7 +11,7 @@ nav:
 
 Verdeling 33.33% - 66.66% vanaf het ingestelde breekpunt.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

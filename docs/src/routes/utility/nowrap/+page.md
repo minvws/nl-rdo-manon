@@ -3,7 +3,7 @@ title: nowrap
 breadcrumb: nowrap
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -12,7 +12,7 @@ nav:
 Zorgt ervoor dat woorden en teksten niet afgebroken worden maar op dezelfde
 regel blijven doorlopen.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

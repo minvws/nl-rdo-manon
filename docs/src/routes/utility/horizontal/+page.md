@@ -3,7 +3,7 @@ title: horizontal
 breadcrumb: horizontal
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
@@ -13,7 +13,7 @@ Het horizontaal uitlijnen van elementen binnen een container. Dit kan handig
 zijn voor het uitlijnen van knoppen, formulieren of andere elementen die naast
 elkaar moeten staan.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
