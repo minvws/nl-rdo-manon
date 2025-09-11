@@ -20,27 +20,21 @@ SCSS importeren:
 @use "@minvws/manon/footer";
 ```
 
-<h1 id="examples" class="page-title">Voorbeelden:</h1>
+<h2 id="examples" class="page-title">Voorbeelden:</h2>
 
+<div class="resize">
+  <iframe src="{base}/examples/footer" title="Voorbeeld"></iframe>
+</div>
+
+```html
 <footer>
   <nav aria-labelledby="footer-nav-1-heading">
-    <h2 id="footer-nav-1-heading">Lorem ipsum</h2>
+    <h3 id="footer-nav-1-heading">Lorem ipsum</h3>
     <ul>
-      <li><a href="footer">Dolor</a></li>
+      <li><a href="footer" aria-current="page">Dolor</a></li>
       <li><a href="footer">Sit</a></li>
       <li><a href="footer">Amet</a></li>
     </ul>
   </nav>
 </footer>
-
-```html
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec libero dictum, ultrices orci
-  vel, varius ipsum. Aliquam in lorem lectus. Vestibulum ante ipsum primis in faucibus orci luctus
-  et ultrices posuere cubilia curae; Praesent id accumsan quam. Cras erat diam, vestibulum vel
-  congue id, vehicula in purus. Quisque sodales neque augue, at pulvinar ligula sodales vestibulum.
-  Nam id tristique nibh, eget porta mauris. Curabitur vitae pulvinar quam. Mauris id risus vel diam
-  venenatis pulvinar. Maecenas ultricies id velit sed rhoncus. Aliquam erat volutpat. Phasellus et
-  posuere purus. Morbi a viverra risus.
-</p>
 ```
