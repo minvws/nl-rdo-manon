@@ -21,15 +21,15 @@ SCSS importeren:
 
 <h2 id="examples">Voorbeelden:</h2>
 
-### Voorbeeld: Navigatie-component met een lijst met links
+### Voorbeeld: nav ul
 
-<div class="resize">
-  <iframe
-    src="{base}/snippets/navigation-with-list-of-links"
-    title="Voorbeeld"
-    height="240px"
-  ></iframe>
-</div>
+<nav>
+  <ul>
+    <li><a href="#0">Voorbeeld-link 1</a></li>
+    <li><a href="#0">Voorbeeld-link 2</a></li>
+    <li><a href="#0">Voorbeeld-link 3</a></li>
+  </ul>
+</nav>
 
 ```html
 <nav>
@@ -41,17 +41,20 @@ SCSS importeren:
 </nav>
 ```
 
-### Voorbeeld: Navigatie-component met een horizontaal uitgelijnde lijst met links
+### Voorbeeld: nav ul horizontaal uitgelijnd
 
-<div class="resize">
-  <iframe src="{base}/snippets/navigation-with-horizontal" title="Voorbeeld" height="240px"
-  ></iframe>
-</div>
+<nav>
+    <ul class="horizontal">
+        <li><a href="#0">Voorbeeld-link 1</li>
+        <li><a href="#0">Voorbeeld-link 2</a></li>
+        <li><a href="#0">Voorbeeld-link 3</a></li>
+    </ul>
+</nav>
 
 ```html
 <nav>
     <ul class="horizontal">
-        <li><a href="#0">Voorbeeld-link 1/a></li>
+        <li><a href="#0">Voorbeeld-link 1</li>
         <li><a href="#0">Voorbeeld-link 2</a></li>
         <li><a href="#0">Voorbeeld-link 3</a></li>
     </ul>
