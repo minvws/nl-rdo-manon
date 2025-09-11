@@ -59,16 +59,23 @@ class ManonTabs extends HTMLElement {
 
   /**
    * Handles clicks on the tablist. Normalizes the target to the nearest
-   * <a> element and activates its associated tabpanel.
+   * element with the "tab" role and activates its associated tabpanel.
    *
    * @param {Event} event
    */
   handleClick(event) {
     if (!(event instanceof PointerEvent)) return;
-    if (!(event.target instanceof HTMLElement)) return;
-    if (!this.tabs.includes(event.target)) return;
+
+    let tab = event.target;
+    if (!(tab instanceof HTMLElement)) return;
+    if (tab.role !== "tab") {
+      tab = tab.closest('[role="tab"');
+      if (!(tab instanceof HTMLElement)) return;
+    }
+
+    if (!this.tabs.includes(tab)) return;
     event.preventDefault();
-    this.setActiveTab(event.target);
+    this.setActiveTab(tab);
   }
 
   /**

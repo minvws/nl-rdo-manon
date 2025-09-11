@@ -147,6 +147,28 @@ test("handles mouse navigation", async () => {
   expect(tabC).toHaveAttribute("aria-selected", "true");
 });
 
+test("handles mouse with inner element", async () => {
+  const { container, user } = render(`
+    <manon-tabs>
+      <ul>
+        <li><a href="#panel-a">Tab A</a></li>
+        <li><a href="#panel-b"><span data-testid="target">Tab B</span></a></li>
+        <li><a href="#panel-c">Tab C</a></li>
+      </ul>
+      <div id="panel-a">Panel A content.</div>
+      <div id="panel-b">Panel B content.</div>
+      <div id="panel-c">Panel C content.</div>
+    </manon-tabs>`);
+
+  const target = getByTestId(container, "target");
+  const tabB = getByRole(container, "tab", { name: "Tab B" });
+
+  await user.click(target);
+
+  expect(tabB).toHaveFocus();
+  expect(tabB).toHaveAttribute("aria-selected", "true");
+});
+
 test("handles keyboard navigation (arrow keys)", async () => {
   const { container, user } = render(`
     <manon-tabs>
