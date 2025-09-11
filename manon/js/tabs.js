@@ -72,6 +72,10 @@ class ManonTabs extends HTMLElement {
   }
 
   /**
+   * Handles keyboard navigation inside the tablist.
+   * Supports ArrowLeft, ArrowRight, Home, and End keys to move
+   * focus between tabs and update selection accordingly.
+   *
    * @param {Event} event
    */
   handleKeydown(event) {
