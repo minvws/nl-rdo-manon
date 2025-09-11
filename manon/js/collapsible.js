@@ -9,13 +9,11 @@ onDomReady(initCollapsible);
  * make a newly added collapsible components.
  */
 export function initCollapsible() {
-  var collapsible = document.querySelectorAll(".collapsible");
-  for (var i = 0; i < collapsible.length; i++) {
-    var collapsibleElement = collapsible[i];
-
+  var collapsibleElements = document.querySelectorAll(".collapsible");
+  for (const collapsibleElement of collapsibleElements) {
     if (
-      !(collapsible[i] instanceof HTMLElement) ||
-      collapsible[i].querySelector(".collapsible-toggle")
+      !(collapsibleElement instanceof HTMLElement) ||
+      collapsibleElement.querySelector(".collapsible-toggle")
     ) {
       continue;
     }
@@ -94,6 +92,9 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   button.appendChild(label);
   button.setAttribute("aria-labelledby", label.id);
 
+  /**
+   * @param {boolean} expanded
+   */
   function setExpanded(expanded) {
     if (expanded !== (button.getAttribute("aria-expanded") === "true")) {
       button.setAttribute("aria-expanded", String(expanded));
@@ -109,7 +110,7 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   });
 
   // Insert button as element directly before the "collapsingElement"
-  collapsingElement.parentNode.insertBefore(button, collapsingElement);
+  collapsingElement.parentNode?.insertBefore(button, collapsingElement);
 
   return {
     setExpanded: setExpanded,
