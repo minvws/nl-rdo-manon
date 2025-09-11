@@ -2,7 +2,7 @@ import { expect, test } from "vitest";
 import { getByRole, getByTestId, getByText } from "@testing-library/dom";
 import { render } from "../vitest.setup.js";
 
-import "./tabs.js";
+import "../js/tabs.js";
 
 // This component should follow the WAI ARIA APG's "Tabs Pattern".
 // See: https://www.w3.org/WAI/ARIA/apg/patterns/tabs/
