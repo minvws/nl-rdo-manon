@@ -37,20 +37,24 @@ class ManonTabs extends HTMLElement {
    * @param {HTMLAnchorElement} tab
    */
   #initTab(tab) {
+    ensureElementHasId(tab);
+
     const target = new URL(tab.href).hash;
     const tabpanel = target && this.querySelector(target);
     if (!(tabpanel instanceof HTMLElement)) return;
-    this.tabs.push(tab);
-    this.tabpanels.set(tab, tabpanel);
-    ensureElementHasId(tab);
+
     tab.tabIndex = -1;
     tab.setAttribute("role", "tab");
     tab.setAttribute("aria-selected", "false");
     tab.setAttribute("aria-controls", tabpanel.id);
+
     tabpanel.tabIndex = 0;
     tabpanel.setAttribute("role", "tabpanel");
     tabpanel.setAttribute("aria-labelledby", tab.id);
     tabpanel.setAttribute("hidden", "");
+
+    this.tabs.push(tab);
+    this.tabpanels.set(tab, tabpanel);
   }
 
   /**
