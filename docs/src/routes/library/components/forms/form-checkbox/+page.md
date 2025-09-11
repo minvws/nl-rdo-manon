@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Selectievak - Checkbox
+Een selectievak (checkbox) laat de gebruiker één of meerdere opties uit een set kiezen. Dit is handig wanneer meerdere antwoorden tegelijk mogelijk zijn, zoals het aangeven van voorkeuren of het accepteren van voorwaarden.
 
 <h2 id="quickstart">Snelstart</h2>
 

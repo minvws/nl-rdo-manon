@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Bereik component
+Een bereikcomponent maakt het mogelijk om met een schuifbalk een waarde binnen een vooraf ingesteld minimum en maximum te selecteren. Dit is vooral handig bij numerieke keuzes, zoals het instellen van een hoeveelheid of een niveau.
 
 <h2 id="quickstart">Snelstart</h2>
 

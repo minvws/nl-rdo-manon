@@ -9,7 +9,9 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Voor het weergeven van verplichte velden.
+Verplichte velden worden in een formulier duidelijk gemarkeerd zodat de gebruiker weet welke informatie minimaal ingevuld moet worden. Dit helpt om onvolledige inzendingen te voorkomen en zorgt voor een betere gegevenskwaliteit.
+
+Als de meeste velden binnen het formulier verplicht zijn, kan de uitzondering “dit veld is niet verplicht” als toevoeging krijgen. Door de uitzondering te markeren in plaats van alle verplichte velden wordt onnodige herhaling voorkomen.
 
 <h2 id="quickstart">Snelstart</h2>
 

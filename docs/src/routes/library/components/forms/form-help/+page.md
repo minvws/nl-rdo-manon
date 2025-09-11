@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Voor het geven van extra toelichting op een invoerveld.
+Hulptesksten (extra toelichting) bij een invoerveld geeft de gebruiker duidelijke aanwijzingen en vermindert fouten, maar te veel uitleg kan juist verwarrend werken.
 
 <h2 id="quickstart">Snelstart</h2>
 

@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-File upload, invoerveld voor het uploaden van bestanden.
+Een invoerveld voor bestandsupload stelt de gebruiker in staat om documenten, afbeeldingen of andere bestanden direct via het formulier te verzenden. Dit is handig voor situaties waarin aanvullende informatie of bewijsstukken nodig zijn.
 
 <h2 id="quickstart">Snelstart</h2>
 
