@@ -58,6 +58,9 @@ class ManonTabs extends HTMLElement {
   }
 
   /**
+   * Handles clicks on the tablist. Normalizes the target to the nearest
+   * <a> element and activates its associated tabpanel.
+   *
    * @param {Event} event
    */
   handleClick(event) {
