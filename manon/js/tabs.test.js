@@ -262,7 +262,7 @@ test("handles keyboard navigation (home / end)", async () => {
 });
 
 test("correctly manages tab order", async () => {
-    const { container, user } = render(`
+  const { container, user } = render(`
     <manon-tabs>
       <ul>
         <li><a href="#panel-a">Tab A</a></li>
@@ -287,6 +287,6 @@ test("correctly manages tab order", async () => {
   await user.tab();
   expect(panelB).toHaveFocus();
 
-  await user.tab({shift:true});
+  await user.tab({ shift: true });
   expect(tabB).toHaveFocus();
 });

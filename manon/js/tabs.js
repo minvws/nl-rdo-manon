@@ -1,7 +1,6 @@
 import { ensureElementHasId } from "./utils.js";
 
 class ManonTabs extends HTMLElement {
-  
   constructor() {
     super();
 
