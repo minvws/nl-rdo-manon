@@ -3,10 +3,12 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 :root {
   /* Active */
   @include link.styling-variables("navigation-link-active-", "link-active-");
+  @include outline.outline-variables("navigation-link-active-", "link-active-");
 
   /* Icon */
   @include link.icon-styling-variables(

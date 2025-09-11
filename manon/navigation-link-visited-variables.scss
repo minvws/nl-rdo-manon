@@ -3,10 +3,15 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 :root {
   /* Link visited */
   @include link.styling-variables("navigation-link-visited-", "link-visited-");
+  @include outline.outline-variables(
+    "navigation-link-visited-",
+    "link-visited-"
+  );
 
   /* Icon */
   @include link.icon-styling-variables(
