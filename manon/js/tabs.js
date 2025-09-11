@@ -5,15 +5,17 @@ class ManonTabs extends HTMLElement {
   constructor() {
     super();
 
-    // Find tablist
-    this.tablist = this.querySelector(":scope > ul");
-    if (!this.tablist) return;
-
     /** @type {Array<HTMLElement>} */
     this.tabs = [];
 
     /** @type {Map<HTMLElement, HTMLElement>} */
     this.tabpanels = new Map();
+  }
+
+  connectedCallback() {
+    // Find tablist
+    this.tablist = this.querySelector(":scope > ul");
+    if (!this.tablist) return;
 
     // Find and prepare tabs
     for (const tab of Array.from(this.tablist.querySelectorAll("a"))) {
