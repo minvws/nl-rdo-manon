@@ -51,6 +51,16 @@ const config = {
       relative: true,
     },
   },
+  onwarn: (warning, handler) => {
+    // Ignore empty fragment URLs
+    if (
+      warning.code === "a11y_invalid_attribute" &&
+      warning.message.includes("'#' is not a valid href attribute")
+    ) {
+      return;
+    }
+    handler(warning);
+  },
   preprocess: [
     vitePreprocess(),
     mdsvex({
