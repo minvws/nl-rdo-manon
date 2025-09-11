@@ -9,6 +9,8 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
+Een radio selecteerknop laat de gebruiker één optie kiezen uit een set van vooraf gedefinieerde keuzes. Omdat alle knoppen dezelfde name hebben, kan er steeds maar één optie tegelijk geselecteerd worden, wat duidelijkheid en consistente invoer garandeert.
+
 Radio selecteerknop voor het selecteren van een optie binnen een set
 
 <h2 id="quickstart">Snelstart</h2>

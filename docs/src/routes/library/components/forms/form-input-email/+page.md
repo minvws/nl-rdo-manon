@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Email-invoerveld
+Een e-mailinvoerveld stelt de gebruiker in staat om een geldig e-mailadres in te voeren. Het helpt bij het valideren van het formaat en zorgt ervoor dat contactinformatie correct en bruikbaar is voor communicatie.
 
 <h2 id="quickstart">Snelstart</h2>
 

@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Fieldset
+Met een fieldset kun je in HTML velden groeperen die bij elkaar horen. Daar hoort meestal een legend (titel) bij, die belangrijk is voor de toegankelijkheid.
 
 <h2 id="quickstart">Snelstart</h2>
 

@@ -1,6 +1,6 @@
 ---
-title: "inline"-formulier
-breadcrumb: "inline"-formulier
+title: "inline-formulier"
+breadcrumb: "inline-formulier"
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"

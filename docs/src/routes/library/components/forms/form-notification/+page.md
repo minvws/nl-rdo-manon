@@ -9,6 +9,8 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
+Notificaties binnen een formulier geven gebruikers directe feedback over hun acties, zoals succesmeldingen, waarschuwingen of foutmeldingen. Dit helpt om de interactie duidelijker te maken en fouten tijdens het invullen te voorkomen.
+
 Het weergeven van notificaties binnen het formulier
 
 <h2 id="quickstart">Snelstart</h2>
