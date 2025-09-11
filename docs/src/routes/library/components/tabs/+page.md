@@ -22,7 +22,7 @@ SCSS importeren:
 JavaScript importeren:
 
 ```javascript
-@use "@minvws/manon/js/tabs.js";
+import "@minvws/manon/js/tabs.js";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
