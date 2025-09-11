@@ -17,6 +17,8 @@
     "format:check": "prettier --check .",
     "lint:css": "stylelint \"**/*.scss\"",
     "lint:css:fix": "npm run lint:css -- --fix",
+    "check": "tsc",
+    "check:watch": "tsc --watch",
     "npm-version": "npm version",
     "test": "vitest run"
   },

@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Datumveld
+Een datumveld stelt de gebruiker in staat om eenvoudig een datum te selecteren via een kalenderinterface of direct in te voeren. Dit maakt het invullen sneller, nauwkeuriger en minder foutgevoelig dan handmatige tekstinvoer.
 
 <h2 id="quickstart">Snelstart</h2>
 

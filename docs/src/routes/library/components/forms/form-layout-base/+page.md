@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Opzet voor een basis formulier.
+Dit basisformulier biedt een eenvoudige structuur voor het vastleggen van de belangrijkste gegevens en kan naar wens worden uitgebreid.
 
 <h2 id="quickstart">Snelstart</h2>
 

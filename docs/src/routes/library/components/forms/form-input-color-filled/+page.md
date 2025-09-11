@@ -11,14 +11,16 @@ nav:
 
 <p class="warning" role="group" aria-label="waarschuwing">
   <span>Waarschuwing:</span> Dit element maakt gebruik van experimentele CSS componenten:
-  <code>::-webkit-color-swatch-wrapper</code> en <code>::-webkit-color-swatch</code>.
+  ::-webkit-color-swatch-wrapper en ::-webkit-color-swatch.
   Aangeraden wordt om dit component in deze vorm daarom niet in productie te gebruiken
   aangezien het kan zijn dat het component er anders uit ziet in verschillende browsers of dat
   de styling bij toekomstige updates kapot gaat. Als dit geen probleem is binnen jouw project
   kun je er voor kiezen dit component te gebruiken.
 </p>
 
-Kleurselector volledig gevuld
+<h2 id="introduction">Introductie</h2>
+
+Een volledig gevulde kleurselector toont het volledige spectrum van beschikbare kleuren in één veld, waardoor de gebruiker snel en intuïtief een specifieke kleur kan kiezen. Dit maakt het selecteren van kleuren visueel duidelijker en gebruiksvriendelijker.
 
 <h2 id="quickstart">Snelstart</h2>
 
