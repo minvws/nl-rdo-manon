@@ -31,6 +31,9 @@ class ManonTabs extends HTMLElement {
   }
 
   /**
+   * Initializes a single <a> element as a tab and its corresponding
+   * target element as a tabpanel.
+   *
    * @param {HTMLAnchorElement} tab
    */
   #initTab(tab) {
