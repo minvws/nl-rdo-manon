@@ -111,6 +111,9 @@ class ManonTabs extends HTMLElement {
   }
 
   /**
+   * Marks the given tab as active and shows its tabpanel.
+   * Hides all other tabpanels and updates ARIA attributes accordingly.
+   *
    * @param {Element} activeTab - Which tab to activate.
    * @param {Boolean} [setFocus] - Whether to move focus. Default true.
    */
