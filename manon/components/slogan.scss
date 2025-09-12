@@ -1,7 +1,7 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
 
-.slogan {
+%slogan-styling {
   @include theming.apply-from-theme(
     (
       color: theme.$slogan-text-color,
@@ -10,14 +10,27 @@
       font-family: theme.$slogan-font-family,
     )
   );
+}
+
+%slogan-link-styling {
+  color: inherit;
+  text-decoration: theme.$slogan-text-decoration;
+
+  &:visited,
+  &:visited:hover {
+    color: inherit;
+  }
+}
+
+.slogan {
+  @extend %slogan-styling;
 
   a {
-    color: inherit;
-    text-decoration: theme.$slogan-text-decoration;
-
-    &:visited,
-    &:visited:hover {
-      color: inherit;
-    }
+    @extend %slogan-link-styling;
   }
+}
+
+a.slogan {
+  @extend %slogan-styling;
+  @extend %slogan-link-styling;
 }

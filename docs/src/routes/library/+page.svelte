@@ -21,31 +21,36 @@
       </p>
 
       <section id="layout">
-        <h2>Layout</h2>
         <div class="column-2">
-          <nav aria-labelledby="page-layout-heading">
-            <h3 id="page-layout-heading">Page layout</h3>
-            <ul>
-              <li><a href="{base}/library/layout/main">Main</a></li>
-              <li><a href="{base}/library/layout/section">Section</a></li>
-              <li><a href="{base}/library/layout/article">Article</a></li>
-              <li><a href="{base}/library/layout/footer">Footer</a></li>
-            </ul>
-          </nav>
-          <nav aria-labelledby="typography-heading">
-            <h3 id="typography-heading">Typography</h3>
-            <ul>
-              <li><a href="{base}/library/layout/typography/de-emphasized">De-emphasized</a></li>
-              <li><a href="{base}/library/layout/typography/emphasized">Emphasized</a></li>
-              <li><a href="{base}/library/layout/typography/headings">Headings</a></li>
-              <li>
-                <a href="{base}/library/layout/typography/max-line-length">Max line length</a>
-              </li>
-              <li><a href="{base}/library/layout/typography/paragraph">Paragraph</a></li>
-              <li><a href="{base}/library/layout/typography/page-title">Page-title</a></li>
-              <li><a href="{base}/library/layout/typography/nota-bene">Nota bene</a></li>
-            </ul>
-          </nav>
+          <div>
+            <nav aria-labelledby="page-layout-heading">
+              <h2 id="page-layout-heading">Page layout</h2>
+              <ul>
+                <li><a href="{base}/library/layout/main">Main</a></li>
+                <li><a href="{base}/library/layout/section">Section</a></li>
+                <li><a href="{base}/library/layout/article">Article</a></li>
+                <li><a href="{base}/library/layout/footer">Footer</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div>
+            <nav aria-labelledby="typography-heading">
+              <h2 id="typography-heading">Typography</h2>
+              <ul>
+                <li><a href="{base}/library/typography/de-emphasized">De-emphasized</a></li>
+                <li><a href="{base}/library/typography/emphasized">Emphasized</a></li>
+                <li><a href="{base}/library/typography/headings">Headings</a></li>
+                <li>
+                  <a href="{base}/library/typography/max-line-length">Max line length</a>
+                </li>
+                <li><a href="{base}/library/typography/paragraph">Paragraph</a></li>
+                <li><a href="{base}/library/typography/page-title">Page-title</a></li>
+                <li><a href="{base}/library/typography/nota-bene">Nota bene</a></li>
+                <li><a href="{base}/library/typography/slogan">Slogan</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </section>
 
