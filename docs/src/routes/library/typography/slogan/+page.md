@@ -22,6 +22,7 @@ SCSS importeren:
 <h2 id="examples">Voorbeelden</h2>
 
 ### Voorbeeld: link
+
 <a href="#" class="slogan">Lorem ipsum dolor set amet</a>
 
 ```html
@@ -29,6 +30,7 @@ SCSS importeren:
 ```
 
 ### Voorbeeld: span
+
 <span class="slogan">Lorem ipsum dolor set amet</span>
 
 ```html
