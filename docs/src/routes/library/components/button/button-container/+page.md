@@ -7,7 +7,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Knoppen groeperen
+Geeft de mogelijkheid om gegroepeerde knoppen te stylen. Bijvoorbeeld door ze horizontaal uit te lijnen.
 
 <h2 id="quickstart">Snelstart</h2>
 
