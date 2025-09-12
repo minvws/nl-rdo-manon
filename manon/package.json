@@ -4,7 +4,9 @@
   "license": "EUPL-1.2",
   "files": [
     "**/*.scss",
+    "!**/*.test.scss",
     "**/*.js",
+    "!**/*.{config,setup,test}.js",
     "**/*.license",
     "LICENSES",
     "REUSE.toml",
@@ -24,12 +26,17 @@
     "sass": ">=1.77.6"
   },
   "devDependencies": {
-    "vitest": "^3.2.4",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^24.3.1",
+    "jsdom": "^26.1.0",
     "prettier": "^3.6.2",
     "sass": "^1.89.2",
     "sass-true": "^9.0.0",
     "stylelint": "^16.24.0",
-    "stylelint-config-standard-scss": "^15.0.1"
+    "stylelint-config-standard-scss": "^15.0.1",
+    "vitest": "^3.2.4"
   },
   "repository": {
     "type": "git",
