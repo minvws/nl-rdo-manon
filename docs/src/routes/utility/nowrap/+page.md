@@ -20,14 +20,6 @@ SCSS importeren:
 @use "@minvws/manon/nowrap";
 ```
 
-<p class="explanation">
-  <span>Toelichting:</span> Door de class op een specifieker element te plaatsen,
-  bijvoorbeeld een <code>td</code> zal het effect beperkt blijven tot het specifieke
-  element. Door de class op een hoger gelegen element te plaatsen, bijvoorbeeld de
-  <code>table</code>
-  of de omliggende <code>div</code> zullen alle onderliggende tekst-elementen niet afbreken.
-</p>
-
 <h2 id="examples">Voorbeelden</h2>
 
 ### Voorbeeld: Basis
@@ -49,12 +41,8 @@ SCSS importeren:
 ```
 
 <p class="explanation">
-  <span>Toelichting:</span> In dit voorbeeld wordt er ook gebruik gemaakt van de
-  <dfn>helper-class</dfn>
-  <a href="{base}/utility/horizontal-scroll">horizontal-scroll</a>
-  om te voorkomen dat het voorbeeld-element de layout van de pagina breekt. Zonder deze toevoeging
-  zou de tekst het scherm uitlopen. De class <code>horizontal-scroll</code> voegt op de maximale
-  beschikbare breedte de scrollbalk toe.
+  <span>Toelichting:</span> Om te voorkomen dat het voorbeeld de layout van de pagina breekt wordt er  
+  gebruik gemaakt van <a href="{base}/utility/horizontal-scroll">horizontal-scroll</a>
 </p>
 
 ### Voorbeeld: Tabel met nowrap
@@ -138,3 +126,11 @@ SCSS importeren:
   </table>
 </div>
 ```
+
+<p class="explanation">
+  <span>Toelichting:</span> Door de class op een specifieker element te plaatsen,
+  bijvoorbeeld een <code>td</code> zal het effect beperkt blijven tot het specifieke
+  element. Door de class op een hoger gelegen element te plaatsen, bijvoorbeeld de
+  <code>table</code>
+  of de omliggende <code>div</code> zullen alle onderliggende tekst-elementen zich aan de nowrap houden.
+</p>
