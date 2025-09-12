@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Secondary button
+Subtielere weergave om knoppen die ondergeschikt zijn aan standaard knoppen visueel weer te geven.
 
 <h2 id="quickstart">Snelstart</h2>
 
