@@ -17,15 +17,6 @@ SCSS importeren:
 @use "@minvws/manon/button-container";
 ```
 
-<div class="warning" role="group" aria-label="Waarschuwing">
-  <span>Let op:</span>
-  <p>
-    De volgorde waarin de componenten geïmporteerd worden is belangrijk. Dit
-    component moet <strong>na</strong> de overige
-    <code>button-</code>componenten geïmporteerd worden.
-  </p>
-</div>
-
 <h2 id="examples">Voorbeelden</h2>
 
 <div class="button-container">
