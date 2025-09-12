@@ -55,6 +55,7 @@
           <nav>
             <ul>
               <li><a href="{base}/library/components/accordion">Accordion</a></li>
+              <li><a href="{base}/library/components/avatar">Avatar</a></li>
               <li><a href="{base}/library/components/breadcrumb">Breadcrumb</a></li>
               <li><a href="{base}/library/components/button">Button</a></li>
               <li><a href="{base}/library/components/card">Card</a></li>
