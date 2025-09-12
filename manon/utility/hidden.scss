@@ -1,0 +1,4 @@
+*[hidden],
+.hidden {
+  display: none !important; /* !important added to solve/prevent any specificity issues. */
+}

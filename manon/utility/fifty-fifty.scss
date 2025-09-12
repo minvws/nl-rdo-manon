@@ -1,0 +1,36 @@
+@use "../variables" as theme;
+
+$breakpoint: 42rem !default;
+
+section,
+article,
+footer,
+div,
+header nav {
+  &.fifty-fifty {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: theme.$layout-gap;
+    width: 100%;
+    box-sizing: border-box;
+
+    > * {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @media (width >= $breakpoint) {
+      gap: theme.$layout-gap;
+
+      > * {
+        flex-grow: 1;
+        max-width: calc(50% - (theme.$layout-gap / 2));
+      }
+    }
+  }
+}

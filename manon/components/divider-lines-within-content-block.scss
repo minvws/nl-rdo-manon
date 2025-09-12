@@ -1,0 +1,37 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+%divider-line-contentblock {
+  @include theming.apply-from-theme(
+    (
+      border-width: theme.$divider-lines-within-content-block-border-width,
+      border-style: theme.$divider-lines-within-content-block-border-style,
+      border-color: theme.$divider-lines-within-content-block-border-color,
+    )
+  );
+
+  &:first-of-type {
+    @include theming.apply-from-theme(
+      (
+        border-width:
+          theme.$divider-lines-within-content-block-first-of-type-border-width,
+        border-style:
+          theme.$divider-lines-within-content-block-first-of-type-border-style,
+        border-color:
+          theme.$divider-lines-within-content-block-first-of-type-border-color,
+      )
+    );
+  }
+}
+
+main {
+  > article,
+  > section,
+  > div {
+    > article,
+    > section,
+    > div {
+      @extend %divider-line-contentblock;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+a {
+  @include theming.apply-from-theme(
+    (
+      color: theme.$link-text-color,
+    )
+  );
+
+  &:hover {
+    @include theming.apply-from-theme(
+      (
+        color: theme.$link-hover-text-color,
+      )
+    );
+  }
+
+  &:visited {
+    @include theming.apply-from-theme(
+      (
+        color: theme.$link-visited-text-color,
+      )
+    );
+
+    &:hover {
+      @include theming.apply-from-theme(
+        (
+          color: theme.$link-visited-hover-text-color,
+        )
+      );
+    }
+  }
+}
