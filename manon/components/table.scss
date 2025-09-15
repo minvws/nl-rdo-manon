@@ -166,25 +166,3 @@ table {
     }
   }
 }
-
-/* Resetting inherited layout padding */
-main {
-  section,
-  section div,
-  article,
-  article div,
-  div,
-  div div {
-    table {
-      div {
-        padding: 0;
-
-        @include theming.apply-from-theme(
-          (
-            gap: theme.$table-gap,
-          )
-        );
-      }
-    }
-  }
-}
