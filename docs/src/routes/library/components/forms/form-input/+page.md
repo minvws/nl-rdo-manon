@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Invoervelden worden gebruikt voor het vragen van korte informatie.
+Invoervelden worden gebruikt om korte stukjes informatie van de gebruiker te vragen, zoals naam, adres of telefoonnummer.
 
 <h2 id="quickstart">Snelstart</h2>
 

@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Kleurselector
+Een kleurselector stelt de gebruiker in staat om een kleur te kiezen uit een visuele interface, zoals een kleurveld of kleurkiezer. Dit is handig bij toepassingen waar specifieke kleuren belangrijk zijn, bijvoorbeeld bij ontwerp- of personalisatie-instellingen.
 
 <h2 id="quickstart">Snelstart</h2>
 

@@ -31,20 +31,11 @@ export function ensureElementHasId(element) {
 export function onMediaQueryMatch(media, handler) {
   var mql = window.matchMedia(media);
 
-  if (mql.addEventListener) {
-    mql.addEventListener("change", handler);
-  } else {
-    mql.addListener(handler);
-  }
-
+  mql.addEventListener("change", handler);
   handler(mql);
 
   return function remove() {
-    if (mql.addEventListener) {
-      mql.removeEventListener("change", handler);
-    } else {
-      mql.removeListener(handler);
-    }
+    mql.removeEventListener("change", handler);
   };
 }
 
@@ -62,7 +53,7 @@ export function prependNode(parent, child) {
  * Set up a MutationObserver. Returns a disconnect function.
  * @param {() => void} handler
  * @param {HTMLElement | undefined} [root]
- * @return {undefined|() => void}
+ * @return {undefined|(() => void)}
  */
 export function onDomUpdate(handler, root) {
   if ("MutationObserver" in window) {
@@ -70,29 +61,4 @@ export function onDomUpdate(handler, root) {
     observer.observe(root || document, { childList: true, subtree: true });
     return observer.disconnect.bind(observer);
   }
-}
-
-/**
- * Ponyfill for Element.prototype.closest.
- * @param {Element} element
- * @param {DOMString} selectors
- * @return {Element | null}
- */
-export function closest(element, selectors) {
-  if (Element.prototype.closest) {
-    return element.closest(selectors);
-  }
-  var matches =
-    Element.prototype.matches ||
-    Element.prototype.msMatchesSelector ||
-    Element.prototype.webkitMatchesSelector;
-
-  do {
-    if (matches.call(element, selectors)) {
-      return element;
-    }
-    element = element.parentElement || element.parentNode;
-  } while (element !== null && element.nodeType === 1);
-
-  return null;
 }

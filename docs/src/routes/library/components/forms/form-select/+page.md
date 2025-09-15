@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Selectielijst om gebruikers een lijst aan opties te tonen.
+Een selectielijst toont gebruikers een overzicht van beschikbare opties waaruit ze één (of meerdere) keuze(s) kunnen maken. Dit is handig om invoer te standaardiseren en fouten te verminderen bij het selecteren van vooraf gedefinieerde waarden.
 
 <h2 id="quickstart">Snelstart</h2>
 

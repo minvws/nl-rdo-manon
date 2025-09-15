@@ -325,6 +325,20 @@ and spacing sets */
   $sidemenu-nav-border-style: solid,
   $sidemenu-nav-border-color: color-scheme.$grey-200,
 
+  // tabs
+  $tabs-gap: spacing.$spacing-100,
+  $tabs-item-border-color: color-scheme.$grey-200,
+  $tabs-item-border-style: solid,
+  $tabs-item-border-width: 0 0 1px 0,
+  $tabs-item-padding: spacing.$spacing-050 0,
+  $tabs-item-text-color: color-scheme.$grey-600,
+  $tabs-item-text-decoration: none,
+  $tabs-item-current-border-color: color-scheme.$violet-500,
+  $tabs-item-current-border-width: 0 0 2px 0,
+  $tabs-item-current-font-weight: bold,
+  $tabs-item-current-text-color: semantic.$color-text-default,
+  $tabs-item-hover-text-color: semantic.$color-text-default,
+
   // table
   $table-head-border-width: 0 0 2px 0,
   $table-head-border-style: solid,

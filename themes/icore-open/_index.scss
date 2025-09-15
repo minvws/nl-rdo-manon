@@ -70,6 +70,9 @@ and spacing sets */
   $avatar-font-weight: bold,
   $avatar-border-radius: 50%,
   $avatar-background-color: semantic.$color-brand-primary-default,
+  $avatar-text-color: color-scheme.$oc-white,
+  $avatar-text-font-size: body-text.$body-text-s,
+  $avatar-hover-text-color: color-scheme.$oc-white,
 
   // Hover
   $avatar-hover-background-color: color-scheme.$oc-blue-7,
@@ -191,6 +194,13 @@ and spacing sets */
   $form-combined-field-button-border-radius: 0 border-radii.$border-radius-m
     border-radii.$border-radius-m 0,
 
+  // focus
+  $focus-outline: 2px solid,
+  $focus-outline-offset: spacing.$spacing-025,
+  $focus-outline-color: color-scheme.$oc-blue-5,
+  $focus-z-index: 1,
+  $focus-border-radius: border-radii.$border-radius-s,
+
   // form label
   $form-label-font-weight: bold,
 
@@ -209,6 +219,8 @@ and spacing sets */
   $footer-list-justify-content: center,
   $footer-list-gap: spacing.$spacing-100,
   $footer-navigation-gap: spacing.$spacing-100,
+  $footer-link-text-color: color-scheme.$oc-blue-8,
+  $footer-link-current-text-decoration: underline,
 
   // Form help
   $form-help-button-padding-top: 0,
@@ -413,11 +425,16 @@ and spacing sets */
   $page-title-width: 100%,
   $page-title-margin: 0 auto,
 
-  // Sidemenu
+  // sidemenu
   $sidemenu-nav-padding-top: spacing.$spacing-100,
   $sidemenu-nav-padding-right: spacing.$spacing-200,
   $sidemenu-nav-padding-bottom: spacing.$spacing-100,
   $sidemenu-nav-padding-left: spacing.$spacing-200,
+
+  // slogan
+  $slogan-text-color: semantic.$color-text-default,
+  $slogan-font-size: body-text.$body-text-l,
+  $slogan-font-weight: font-weight.$font-weight-bold,
 
   // section
   $section-gap: spacing.$spacing-150,
@@ -436,6 +453,18 @@ and spacing sets */
   $section-content-wrapper-gap: spacing.$spacing-250,
   $section-content-wrapper-flex-direction: column,
   $section-content-wrapper-border-radius: border-radii.$border-radius-m,
+
+  // tabs
+  $tabs-gap: spacing.$spacing-100,
+  $tabs-item-border-style: solid,
+  $tabs-item-border-width: 0,
+  $tabs-item-padding: spacing.$spacing-050 0,
+  $tabs-item-text-color: semantic.$color-brand-primary-default,
+  $tabs-item-text-decoration: none,
+  $tabs-item-current-border-color: semantic.$color-brand-primary-default,
+  $tabs-item-current-border-width: 0 0 2px 0,
+  $tabs-item-current-font-weight: bold,
+  $tabs-item-hover-text-color: color-scheme.$oc-blue-9,
 
   // table
   $table-gap: spacing.$spacing-050,

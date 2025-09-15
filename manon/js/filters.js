@@ -31,11 +31,11 @@ export function initFilterToggles() {
  * @param {HTMLElement} filterToggle
  */
 function initFilterToggle(filterToggle) {
-  var filter = filterToggle.parentNode.parentNode;
+  const filter = filterToggle.parentNode?.parentNode;
   if (!(filter instanceof HTMLElement)) {
     return;
   }
-  var form = filter.querySelector("form");
+  const form = filter.querySelector("form");
   if (!(form instanceof HTMLElement)) {
     console.error(
       "Could not find <form> corresponding to filter toggle:",
@@ -43,8 +43,11 @@ function initFilterToggle(filterToggle) {
     );
     return;
   }
-  var expanded = filterToggle.getAttribute("aria-expanded") !== "false";
-  var hideLabel, showLabel;
+  const expanded = filterToggle.getAttribute("aria-expanded") !== "false";
+  /** @type {string} */
+  let hideLabel;
+  /** @type {string} */
+  let showLabel;
   if (expanded) {
     hideLabel = filterToggle.innerText;
     showLabel = filterToggle.dataset.showFiltersLabel || "Toon filters";

@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Fieldset Selectievak - checkbox
+Een fieldset met selectievakken maakt het mogelijk om meerdere opties tegelijk te selecteren. Dit is handig wanneer de gebruiker meerdere antwoorden of voorkeuren kan aangeven binnen één groep gerelateerde keuzes.
 
 <h2 id="quickstart">Snelstart</h2>
 

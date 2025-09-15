@@ -16,5 +16,13 @@
         "severity": "warning"
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.test.scss"],
+      "rules": {
+        "block-no-empty": null
+      }
+    }
+  ]
 }
