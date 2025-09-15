@@ -63,7 +63,7 @@ SCSS importeren:
     <li>
       Zorg er voor gebruiksvriendelijkheid voor dat het tekstveld een
       duidelijke vraag en/of duidelijk doel heeft. Voeg een omschrijvend <code>label</code>
-      toe en stel een vraag of geef duidelijke richtlijnen mee door middel van een <a href="{base}/library/layout/typography/nota-bene">nota-bene</a>.
+      toe en stel een vraag of geef duidelijke richtlijnen mee door middel van een <a href="{base}/library/typography/nota-bene">nota-bene</a>.
     </li>
     <li>
     <code>rows="number"</code> geeft de initiële hoogte van het tekstveld aan in de

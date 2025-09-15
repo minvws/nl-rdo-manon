@@ -13,54 +13,80 @@ Tabbladen worden gebruikt om verschillende inhoudssecties op één pagina overzi
 
 <h2 id="quickstart">Snelstart</h2>
 
+SCSS importeren:
+
 ```scss
 @use "@minvws/manon/tabs";
 ```
 
-<h2 id="examples">Voorbeelden</h2>
+JavaScript importeren:
 
-### Voorbeeld: Tabbladen
-
-Voeg de class `tabs` toe aan de gewenste elementen.
-
-<div class="tabs" id="tabs">
-  <ul>
-    <li><span aria-current="page">Optie 1</span></li>
-    <li><a href="tabs">Optie 2</a></li>
-    <li><a href="tabs">Optie 3</a></li>
-    <li><a href="tabs">Optie 4</a></li>
-  </ul>
-</div>
-
-```html
-<div class="tabs">
-  <ul>
-    <li><span aria-current="page">Optie 1</span></li>
-    <li><a href="#0">Optie 2</a></li>
-    <li><a href="#0">Optie 3</a></li>
-    <li><a href="#0">Optie 4</a></li>
-  </ul>
-</div>
+```javascript
+import "@minvws/manon/js/tabs.js";
 ```
 
-### Voorbeeld: `aria-current` op `li`
+<h2 id="examples">Voorbeelden</h2>
 
-<div class="tabs" id="li">
+<h3 id="interactive-component">Interactief component</h3>
+
+Plaats de `<manon-tabs>` tags rondom een lijst met links en de bijbehorende inhoud. Gebruik `#fragment`-URLs om naar de inhoud te verwijzen, en geef de inhoud de corresponderende `id`'s.
+
+<manon-tabs>
   <ul>
-    <li aria-current="page"><span>Optie 1</span></li>
-    <li><a href="#li">Optie 2</a></li>
-    <li><a href="#li">Optie 3</a></li>
-    <li><a href="#li">Optie 4</a></li>
+    <li><a href="#tabpanel-a">Tab A</a></li>
+    <li><a href="#tabpanel-b">Tab B</a></li>
+    <li><a href="#tabpanel-c">Tab C</a></li>
+  </ul>
+
+  <div id="tabpanel-a">
+    Inhoud van Tab-paneel A.
+  </div>
+
+  <div id="tabpanel-b">
+    Inhoud van Tab-paneel B.
+  </div>
+
+  <div id="tabpanel-c">
+    Inhoud van Tab-paneel C.
+  </div>
+</manon-tabs>
+
+```html
+<manon-tabs>
+  <ul>
+    <li><a href="#tabpanel-a">Tab A</a></li>
+    <li><a href="#tabpanel-b">Tab B</a></li>
+    <li><a href="#tabpanel-c">Tab C</a></li>
+  </ul>
+
+  <div id="tabpanel-a">Inhoud van Tab-paneel A.</div>
+
+  <div id="tabpanel-b">Inhoud van Tab-paneel B.</div>
+
+  <div id="tabpanel-c">Inhoud van Tab-paneel C.</div>
+</manon-tabs>
+```
+
+<h3 id="static-navigation">Statische navigatie</h3>
+
+Voor deze aanpak hoeft de JavaScript-module niet geladen te worden. Voeg de class `tabs` toe aan een `<ul>`, of een element met een `<ul>` erin. Gebruik `aria-current="page"` op de link naar de huidige pagina.
+
+<div class="tabs">
+  <ul>
+    <li><a href="tabs" aria-current="page">Optie 1</a></li>
+    <li><a href="#">Optie 2</a></li>
+    <li><a href="#">Optie 3</a></li>
+    <li><a href="#">Optie 4</a></li>
   </ul>
 </div>
 
 ```html
 <div class="tabs">
   <ul>
-    <li aria-current="page"><span>Optie 1</span></li>
-    <li><a href="#0">Optie 2</a></li>
-    <li><a href="#0">Optie 3</a></li>
-    <li><a href="#0">Optie 4</a></li>
+    <li><a href="tabs" aria-current="page">Optie 1</a></li>
+    <li><a href="#">Optie 2</a></li>
+    <li><a href="#">Optie 3</a></li>
+    <li><a href="#">Optie 4</a></li>
   </ul>
 </div>
 ```

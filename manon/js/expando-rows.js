@@ -1,11 +1,6 @@
 // @ts-check
 
-import {
-  closest,
-  ensureElementHasId,
-  onDomReady,
-  onDomUpdate,
-} from "./utils.js";
+import { ensureElementHasId, onDomReady, onDomUpdate } from "./utils.js";
 
 var managedTables = new WeakMap();
 
@@ -77,11 +72,12 @@ function initExpandoButtons(table) {
  * @param {HTMLElement} button
  */
 function initExpandoButton(button) {
-  var iconOpenClasses = button.dataset.iconOpenClass?.split(/\s+/) || [];
-  var iconCloseClasses = button.dataset.iconCloseClass?.split(/\s+/) || [];
+  const iconOpenClasses = button.dataset.iconOpenClass?.split(/\s+/) || [];
+  const iconCloseClasses = button.dataset.iconCloseClass?.split(/\s+/) || [];
 
-  var buttonRow = closest(button, "tr");
-  var row = buttonRow.nextElementSibling;
+  const buttonRow = button.closest("tr");
+  const row = buttonRow?.nextElementSibling;
+  const expanded = button.getAttribute("aria-expanded") === "true";
 
   if (
     !(row instanceof HTMLElement) ||
@@ -100,8 +96,12 @@ function initExpandoButton(button) {
     );
     return;
   }
-  var expanded = button.getAttribute("aria-expanded") === "true";
-  var closeLabel, openLabel;
+
+  /** @type {string} */
+  let closeLabel;
+  /** @type {string} */
+  let openLabel;
+
   if (expanded) {
     closeLabel = button.innerText.trim();
     openLabel = (button.dataset.openLabel || "Open details").trim();
@@ -122,7 +122,7 @@ function initExpandoButton(button) {
   );
 
   button.addEventListener("click", function () {
-    var expand = button.getAttribute("aria-expanded") === "false";
+    const expand = button.getAttribute("aria-expanded") === "false";
 
     if (expand) {
       button.innerText = closeLabel;
@@ -130,7 +130,7 @@ function initExpandoButton(button) {
       button.setAttribute("aria-expanded", "true");
       button.classList.remove.apply(button.classList, iconOpenClasses);
       button.classList.add.apply(button.classList, iconCloseClasses);
-      button.parentElement.parentElement.classList.add("expanded-row");
+      button.parentElement?.parentElement?.classList.add("expanded-row");
       row.removeAttribute("hidden");
     } else {
       button.innerText = openLabel;
@@ -138,7 +138,7 @@ function initExpandoButton(button) {
       button.setAttribute("aria-expanded", "false");
       button.classList.remove.apply(button.classList, iconCloseClasses);
       button.classList.add.apply(button.classList, iconOpenClasses);
-      button.parentElement.parentElement.classList.remove("expanded-row");
+      button.parentElement?.parentElement?.classList.remove("expanded-row");
       row.setAttribute("hidden", "");
     }
   });
@@ -149,17 +149,16 @@ function initExpandoButton(button) {
  * @param {HTMLElement} table
  */
 function updateZebra(table) {
-  var rows = table
-    .querySelector("tbody")
-    .querySelectorAll("tr:not(.expando-row)");
-  for (var i = 0; i < rows.length; i++) {
-    var row = rows[i];
-    if (i % 2) {
-      row.classList.add("even");
-      row.classList.remove("odd");
-    } else {
-      row.classList.add("odd");
-      row.classList.remove("even");
-    }
-  }
+  table
+    ?.querySelector("tbody")
+    ?.querySelectorAll("tr:not(.expando-row)")
+    ?.forEach((row, i) => {
+      if (i % 2) {
+        row.classList.add("even");
+        row.classList.remove("odd");
+      } else {
+        row.classList.add("odd");
+        row.classList.remove("even");
+      }
+    });
 }

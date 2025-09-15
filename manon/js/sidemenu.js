@@ -1,11 +1,6 @@
 // @ts-check
 
-import {
-  closest,
-  ensureElementHasId,
-  onDomReady,
-  prependNode,
-} from "./utils.js";
+import { ensureElementHasId, onDomReady, prependNode } from "./utils.js";
 
 onDomReady(initSidemenus);
 
@@ -30,29 +25,30 @@ export function initSidemenus() {
  * @param {HTMLElement} sidemenu
  */
 function addToggleButton(sidemenu) {
-  var main = closest(sidemenu, ".sidemenu");
-  var ul = sidemenu.querySelector("ul");
-
-  if (!main || !ul) {
-    return;
-  }
+  const main = sidemenu.closest(".sidemenu");
+  if (!(main instanceof HTMLElement)) return;
+  const ul = sidemenu.querySelector("ul");
+  if (!(ul instanceof HTMLElement)) return;
 
   ensureElementHasId(ul);
 
-  var openLabel = sidemenu.dataset.openLabel || "Zijbalknavigatie";
-  var closeLabel = sidemenu.dataset.closeLabel || "Sluit zijbalknavigatie";
-  var toggleButtonType = sidemenu.dataset.toggleButtonType || "ghost";
+  const openLabel = sidemenu.dataset.openLabel || "Zijbalknavigatie";
+  const closeLabel = sidemenu.dataset.closeLabel || "Sluit zijbalknavigatie";
+  const toggleButtonType = sidemenu.dataset.toggleButtonType || "ghost";
 
-  var button = document.createElement("button");
+  const button = document.createElement("button");
   button.type = "button";
   button.classList.add(toggleButtonType, "sidemenu-toggle");
   button.setAttribute("aria-controls", ul.id);
 
-  function isClosed() {
+  const isClosed = () => {
     return main.classList.contains("sidemenu-closed");
-  }
+  };
 
-  function setClosed(closed) {
+  /**
+   * @param {boolean} closed
+   */
+  const setClosed = (closed) => {
     button.innerText = closed ? closeLabel : openLabel;
     button.setAttribute("aria-expanded", String(!closed));
     if (closed) {
@@ -60,7 +56,7 @@ function addToggleButton(sidemenu) {
     } else {
       main.classList.remove("sidemenu-closed");
     }
-  }
+  };
 
   setClosed(isClosed());
 
