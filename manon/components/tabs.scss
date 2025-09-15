@@ -5,6 +5,7 @@
 %tabs-link-styling {
   white-space: nowrap;
   display: inline-block;
+  box-sizing: border-box;
 
   @include theming.apply-from-theme(
     (
@@ -35,27 +36,29 @@
   }
 }
 
-%tabs-active-item-styling {
+%tabs-current-item-styling {
+  cursor: pointer;
+
   @include theming.apply-from-theme(
     (
-      border-width: theme.$tabs-item-active-border-width,
-      border-style: theme.$tabs-item-active-border-style,
-      border-color: theme.$tabs-item-active-border-color,
-      color: theme.$tabs-item-active-text-color,
-      background-color: theme.$tabs-item-active-background-color,
-      font-weight: theme.$tabs-item-active-font-weight,
+      border-width: theme.$tabs-item-current-border-width,
+      border-style: theme.$tabs-item-current-border-style,
+      border-color: theme.$tabs-item-current-border-color,
+      color: theme.$tabs-item-current-text-color,
+      background-color: theme.$tabs-item-current-background-color,
+      font-weight: theme.$tabs-item-current-font-weight,
     )
   );
 
   &:hover {
     @include theming.apply-from-theme(
       (
-        border-width: theme.$tabs-item-active-hover-border-width,
-        border-style: theme.$tabs-item-active-hover-border-style,
-        border-color: theme.$tabs-item-active-hover-border-color,
-        color: theme.$tabs-item-active-hover-text-color,
-        background-color: theme.$tabs-item-active-hover-background-color,
-        font-weight: theme.$tabs-item-active-hover-font-weight,
+        border-width: theme.$tabs-item-current-hover-border-width,
+        border-style: theme.$tabs-item-current-hover-border-style,
+        border-color: theme.$tabs-item-current-hover-border-color,
+        color: theme.$tabs-item-current-hover-text-color,
+        background-color: theme.$tabs-item-current-hover-background-color,
+        font-weight: theme.$tabs-item-current-hover-font-weight,
       )
     );
   }
@@ -101,25 +104,16 @@
       margin-bottom: calc(theme.$tabs-border-bottom-width * -1);
     }
 
-    > a,
-    span {
+    > * {
       @extend %tabs-link-styling;
-
-      &[aria-current] {
-        @extend %tabs-active-item-styling;
-      }
     }
 
-    /* aria-current on li */
-    &[aria-current="page"] {
-      > a,
-      > span {
-        @extend %tabs-active-item-styling;
-      }
+    a[aria-current="page"] {
+      @extend %tabs-current-item-styling;
     }
 
-    span {
-      cursor: default;
+    &[aria-current="true"] > * {
+      @extend %tabs-current-item-styling;
     }
   }
 }
@@ -128,10 +122,21 @@ ul.tabs {
   @extend %tabs-list-styling;
 }
 
-.tabs {
+.tabs,
+manon-tabs {
   @extend %tabs-parent-styling;
 
-  ul {
+  > ul {
     @extend %tabs-list-styling;
+  }
+
+  [aria-selected="true"] {
+    @extend %tabs-current-item-styling;
+  }
+}
+
+manon-tabs {
+  [role="tabpanel"][hidden] {
+    display: none;
   }
 }

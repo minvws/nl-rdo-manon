@@ -8,6 +8,12 @@ $accordion-button-justify-content: null !default;
 $accordion-button-line-height: null !default;
 $accordion-button-text-color: null !default;
 $accordion-button-background-color: null !default;
+$accordion-button-border-width: null !default;
+$accordion-button-border-style: null !default;
+$accordion-button-border-color: null !default;
+$accordion-button-font-size: null !default;
+$accordion-button-font-weight: null !default;
+$accordion-button-border-radius: null !default;
 
 // Content
 $accordion-content-gap: null !default;
@@ -20,6 +26,8 @@ $accordion-content-border-style: null !default;
 $accordion-content-border-color: null !default;
 $accordion-content-background-color: null !default;
 $accordion-content-text-color: null !default;
+$accordion-content-font-weight: null !default;
+$accordion-content-border-radius: null !default;
 
 // Before (button icon)
 $accordion-button-icon-before-open-content: null !default;

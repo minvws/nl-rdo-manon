@@ -42,7 +42,7 @@
   const modules = import.meta.glob("/src/routes/examples/**/*.{html,svelte}", { as: "raw" });
 
   onMount(async () => {
-    if (path && modules[`/src/routes/examples/${path}`]) {
+    if (path && modules[`/src/routes/snippets/${path}`]) {
       let content = await modules[`/src/routes/examples/${path}`]();
 
       // Strip script blocks for Svelte pages

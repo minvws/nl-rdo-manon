@@ -20,11 +20,16 @@
     (
       display: theme.$accordion-button-display,
       padding: theme.$accordion-button-padding,
-      font-size: theme.$accordion-font-size,
+      font-size: theme.$accordion-button-font-size,
+      font-weight: theme.$accordion-button-font-weight,
       justify-content: theme.$accordion-button-justify-content,
       line-height: theme.$accordion-button-line-height,
       color: theme.$accordion-button-text-color,
       background-color: theme.$accordion-button-background-color,
+      border-width: theme.$accordion-button-border-width,
+      border-style: theme.$accordion-button-border-style,
+      border-color: theme.$accordion-button-border-color,
+      border-radius: theme.$accordion-button-border-radius,
     )
   );
 }
@@ -47,6 +52,7 @@
       border-color: theme.$accordion-content-border-color,
       background-color: theme.$accordion-content-background-color,
       color: theme.$accordion-content-text-color,
+      border-radius: theme.$accordion-content-border-radius,
     )
   );
 

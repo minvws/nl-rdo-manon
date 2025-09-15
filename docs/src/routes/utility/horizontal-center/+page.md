@@ -7,9 +7,11 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Horizontaal gecentreerd</h1>
+<h2 id="introduction">Introductie</h2>
 
-<h2 id="quick-start">Snelstart</h2>
+Horizontaal gecentreerd
+
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
@@ -20,7 +22,7 @@ SCSS importeren:
 <h2 id="examples">Voorbeelden</h2>
 
 <div class="horizontal-center">
-  <h1>Lorem ipsum</h1>
+  <h2>Lorem ipsum</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris
     luctus, vel pharetra arcu egestas.
@@ -30,7 +32,7 @@ SCSS importeren:
 ```html
 <div class="horizontal-center">
   <!-- horizontaal uit te lijnen content -->
-  <h1>Lorem ipsum</h1>
+  <h2>Lorem ipsum</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper odio at mauris luctus,
     vel pharetra arcu egestas.

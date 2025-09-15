@@ -2,6 +2,8 @@
 @use "../variables" as theme;
 
 .hero {
+  position: relative;
+
   @if (
     theme.$hero-justify-content or
       theme.$hero-align-items or
@@ -36,10 +38,13 @@
   );
 
   .content-wrapper {
+    z-index: 1;
+
     @if (
       theme.$hero-content-wrapper-justify-content or
         theme.$hero-content-wrapper-align-items or
-        theme.$hero-content-wrapper-flex-direction
+        theme.$hero-content-wrapper-flex-direction or
+        theme.$hero-content-wrapper-gap
     ) {
       display: flex;
     }
@@ -54,6 +59,7 @@
         align-items: theme.$hero-content-wrapper-align-items,
         flex-direction: theme.$hero-content-wrapper-flex-direction,
         background-color: theme.$hero-content-wrapper-background-color,
+        gap: theme.$hero-content-wrapper-gap,
       )
     );
   }

@@ -9,14 +9,26 @@ a {
   );
 
   &:hover {
-    color: theme.$link-hover-text-color;
+    @include theming.apply-from-theme(
+      (
+        color: theme.$link-hover-text-color,
+      )
+    );
   }
 
   &:visited {
-    color: theme.$link-visited-text-color;
+    @include theming.apply-from-theme(
+      (
+        color: theme.$link-visited-text-color,
+      )
+    );
 
     &:hover {
-      color: theme.$link-visited-hover-text-color;
+      @include theming.apply-from-theme(
+        (
+          color: theme.$link-visited-hover-text-color,
+        )
+      );
     }
   }
 }

@@ -27,6 +27,27 @@ and spacing sets */
 @use "@minvws/manon/variables" with (
   $theme-name: "icore-open",
 
+  // accordion
+  $accordion-gap: spacing.$spacing-100,
+  $accordion-button-padding: spacing.$spacing-075 spacing.$spacing-100,
+  $accordion-button-text-color: semantic.$color-text-default,
+  $accordion-button-background-color: color-scheme.$oc-gray-1,
+  $accordion-button-border-width: 1px,
+  $accordion-button-border-style: solid,
+  $accordion-button-border-color: color-scheme.$oc-gray-2,
+  $accordion-button-font-weight: bold,
+  $accordion-button-font-size: body-text.$body-text-m,
+  $accordion-content-border-width: 0 1px,
+  $accordion-content-border-style: solid,
+  $accordion-content-border-color: color-scheme.$oc-gray-2,
+  $accordion-content-padding: spacing.$spacing-100,
+  $accordion-content-gap: spacing.$spacing-050,
+  $accordion-content-font-size: body-text.$body-text-s,
+  $accordion-button-border-radius: border-radii.$border-radius-s
+    border-radii.$border-radius-s 0 0,
+  $accordion-content-border-radius: 0 0 border-radii.$border-radius-s
+    border-radii.$border-radius-s,
+
   // article
   $article-gap: spacing.$spacing-150,
   $article-flex-direction: column,
@@ -41,7 +62,7 @@ and spacing sets */
   $article-content-wrapper-padding-bottom: spacing.$spacing-300,
   $article-content-wrapper-padding-left: spacing.$spacing-200,
   $article-content-wrapper-max-width: 60rem,
-  $article-content-wrapper-gap: spacing.$spacing-300,
+  $article-content-wrapper-gap: spacing.$spacing-250,
   $article-content-wrapper-flex-direction: column,
   $article-content-wrapper-border-radius: border-radii.$border-radius-m,
 
@@ -49,6 +70,9 @@ and spacing sets */
   $avatar-font-weight: bold,
   $avatar-border-radius: 50%,
   $avatar-background-color: semantic.$color-brand-primary-default,
+  $avatar-text-color: color-scheme.$oc-white,
+  $avatar-text-font-size: body-text.$body-text-s,
+  $avatar-hover-text-color: color-scheme.$oc-white,
 
   // Hover
   $avatar-hover-background-color: color-scheme.$oc-blue-7,
@@ -119,6 +143,32 @@ and spacing sets */
   // color picker
   $color-picker-border-radius: border-radii.$border-radius-s,
 
+  // columns
+  $columns-gap: 2.5rem,
+
+  // container
+  $container-s-max-width: 40rem,
+  $container-m-max-width: 50rem,
+  $container-l-max-width: 80rem,
+
+  // de-emphasized
+  $de-emphasized-font-size: body-text.$body-text-s,
+  $de-emphasized-text-color: color-scheme.$oc-gray-7,
+
+  // description list
+  $description-list-width: 100%,
+  $description-list-border-width: 0 0 1px 0,
+  $description-list-border-style: solid,
+  $description-list-border-color: color-scheme.$oc-gray-2,
+  $description-list-item-title-width: 15rem,
+  $description-list-item-title-text-color: color-scheme.$oc-gray-7,
+  $description-list-item-title-padding: 0.5rem 0,
+  $description-list-item-data-padding: 0.5rem 0,
+
+  // emphasized
+  $emphasized-font-size: body-text.$body-text-l,
+  $emphasized-font-weight: font-weight.$font-weight-medium,
+
   // form
   $form-align-items: flex-start,
   $form-text-color: semantic.$color-text-default,
@@ -144,6 +194,13 @@ and spacing sets */
   $form-combined-field-button-border-radius: 0 border-radii.$border-radius-m
     border-radii.$border-radius-m 0,
 
+  // focus
+  $focus-outline: 2px solid,
+  $focus-outline-offset: spacing.$spacing-025,
+  $focus-outline-color: color-scheme.$oc-blue-5,
+  $focus-z-index: 1,
+  $focus-border-radius: border-radii.$border-radius-s,
+
   // form label
   $form-label-font-weight: bold,
 
@@ -161,7 +218,9 @@ and spacing sets */
   $footer-list-flex-direction: row,
   $footer-list-justify-content: center,
   $footer-list-gap: spacing.$spacing-100,
-  $footer-nav-gap: spacing.$spacing-100,
+  $footer-navigation-gap: spacing.$spacing-100,
+  $footer-link-text-color: color-scheme.$oc-blue-8,
+  $footer-link-current-text-decoration: underline,
 
   // Form help
   $form-help-button-padding-top: 0,
@@ -233,6 +292,7 @@ and spacing sets */
   $hero-content-wrapper-text-align: center,
   $hero-content-wrapper-margin: 0 auto,
   $hero-content-wrapper-background-color: transparent,
+  $hero-content-wrapper-gap: spacing.$spacing-100,
 
   // utility
   $horizontal-gap: spacing.$spacing-100,
@@ -262,32 +322,6 @@ and spacing sets */
   // nota bene
   $nota-bene-font-size: 0.75rem,
   $nota-bene-text-color: color-scheme.$oc-gray-7,
-
-  // pagination
-  $pagination-list-gap: spacing.$spacing-025,
-
-  // pagination item
-  $pagination-item-width: 2.5rem,
-  $pagination-item-height: 2.5rem,
-
-  // pagination link
-  $pagination-link-background-color: color-scheme.$oc-white,
-  $pagination-link-border-radius: border-radii.$border-radius-s,
-  $pagination-link-text-decoration: none,
-  $pagination-link-border-color: color-scheme.$oc-white,
-  $pagination-link-border-width: 1px,
-  $pagination-link-border-style: solid,
-
-  // pagination link hover
-  $pagination-link-hover-background-color: semantic.$color-brand-primary-subtle,
-  $pagination-link-hover-border-color: semantic.$color-brand-primary-subtle,
-
-  // pagination link active
-  $pagination-link-active-border-width: 1px,
-  $pagination-link-active-border-style: solid,
-  $pagination-link-active-border-color: semantic.$color-brand-primary-default,
-  $pagination-link-active-text-color: semantic.$color-brand-primary-default,
-  $pagination-link-active-font-weight: bold,
 
   // Navigation
   $navigation-list-gap: spacing.$spacing-050,
@@ -360,6 +394,48 @@ and spacing sets */
   // p {
   $p-max-width: 42rem,
 
+  // pagination
+  $pagination-list-gap: spacing.$spacing-025,
+
+  // pagination item
+  $pagination-item-width: 2.5rem,
+  $pagination-item-height: 2.5rem,
+
+  // pagination link
+  $pagination-link-background-color: color-scheme.$oc-white,
+  $pagination-link-border-radius: border-radii.$border-radius-s,
+  $pagination-link-text-decoration: none,
+  $pagination-link-border-color: color-scheme.$oc-white,
+  $pagination-link-border-width: 1px,
+  $pagination-link-border-style: solid,
+
+  // pagination link hover
+  $pagination-link-hover-background-color: semantic.$color-brand-primary-subtle,
+  $pagination-link-hover-border-color: semantic.$color-brand-primary-subtle,
+
+  // pagination link active
+  $pagination-link-active-border-width: 1px,
+  $pagination-link-active-border-style: solid,
+  $pagination-link-active-border-color: semantic.$color-brand-primary-default,
+  $pagination-link-active-text-color: semantic.$color-brand-primary-default,
+  $pagination-link-active-font-weight: bold,
+
+  // page title
+  $page-title-max-width: 60rem,
+  $page-title-width: 100%,
+  $page-title-margin: 0 auto,
+
+  // sidemenu
+  $sidemenu-nav-padding-top: spacing.$spacing-100,
+  $sidemenu-nav-padding-right: spacing.$spacing-200,
+  $sidemenu-nav-padding-bottom: spacing.$spacing-100,
+  $sidemenu-nav-padding-left: spacing.$spacing-200,
+
+  // slogan
+  $slogan-text-color: semantic.$color-text-default,
+  $slogan-font-size: body-text.$body-text-l,
+  $slogan-font-weight: font-weight.$font-weight-bold,
+
   // section
   $section-gap: spacing.$spacing-150,
   $section-flex-direction: column,
@@ -374,9 +450,21 @@ and spacing sets */
   $section-content-wrapper-padding-bottom: spacing.$spacing-300,
   $section-content-wrapper-padding-left: spacing.$spacing-200,
   $section-content-wrapper-max-width: 60rem,
-  $section-content-wrapper-gap: spacing.$spacing-300,
+  $section-content-wrapper-gap: spacing.$spacing-250,
   $section-content-wrapper-flex-direction: column,
   $section-content-wrapper-border-radius: border-radii.$border-radius-m,
+
+  // tabs
+  $tabs-gap: spacing.$spacing-100,
+  $tabs-item-border-style: solid,
+  $tabs-item-border-width: 0,
+  $tabs-item-padding: spacing.$spacing-050 0,
+  $tabs-item-text-color: semantic.$color-brand-primary-default,
+  $tabs-item-text-decoration: none,
+  $tabs-item-current-border-color: semantic.$color-brand-primary-default,
+  $tabs-item-current-border-width: 0 0 2px 0,
+  $tabs-item-current-font-weight: bold,
+  $tabs-item-hover-text-color: color-scheme.$oc-blue-9,
 
   // table
   $table-gap: spacing.$spacing-050,

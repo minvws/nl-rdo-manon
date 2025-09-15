@@ -1,22 +1,22 @@
 ---
-title: Layout eenderde tweederde
-breadcrumb: Layout eenderde tweederde
+title: one-third-two-thirds
+breadcrumb: one-third-two-thirds
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Layout eenderde tweederde</h1>
+<h2 id="introduction">Introductie</h2>
 
 Verdeling 33.33% - 66.66% vanaf het ingestelde breekpunt.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/layout-set";
+@use "@minvws/manon/layout";
 @use "@minvws/manon/one-third-two-thirds";
 ```
 

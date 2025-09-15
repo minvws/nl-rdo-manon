@@ -16,7 +16,7 @@
   export let path: string;
   let htmlContent: string = "";
 
-  const modules = import.meta.glob("/src/routes/examples/**/*.html", { as: "raw" });
+  const modules = import.meta.glob("/src/routes/snippets/**/*.html", { as: "raw" });
 
   onMount(() => {
     const key = `/src/routes/examples/${path}`;

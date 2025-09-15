@@ -1,13 +1,13 @@
 ---
-title: Verbergen
-breadcrumb: Verbergen
+title: hidden
+breadcrumb: hidden
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Verbergen - <dfn>hidden</dfn></h1>
+<h2 id="introduction">Introductie</h2>
 
 Object verbergen. Door middel van een <code>display:none</code> wordt het object
 verborgen.
@@ -17,7 +17,7 @@ verborgen.
   <code>"display: none"</code> over voor hun gebruikers.
 </p>
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

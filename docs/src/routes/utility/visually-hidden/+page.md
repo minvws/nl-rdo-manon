@@ -1,18 +1,18 @@
 ---
-title: Visueel verbergen
-breadcrumb: Visueel verbergen
+title: visually-hidden
+breadcrumb: visually-hidden
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Visueel verbergen - <dfn>visually hidden</dfn></h1>
+<h2 id="introduction">Introductie</h2>
 
 Verbergt objecten alleen visueel. Voor screenreaders blijven de objecten
 zichtbaar.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

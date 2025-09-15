@@ -77,7 +77,8 @@ body > header,
       )
     );
 
-    &:visited {
+    &:visited,
+    &:visited:hover {
       color: inherit;
     }
 

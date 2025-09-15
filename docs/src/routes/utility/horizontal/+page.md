@@ -1,19 +1,19 @@
 ---
-title: Horizontaal uitgelijnd
-breadcrumb: Horizontaal uitgelijnd
+title: horizontal
+breadcrumb: horizontal
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Horizontaal uitgelijnd</h1>
+<h2 id="introduction">Introductie</h2>
 
 Het horizontaal uitlijnen van elementen binnen een container. Dit kan handig
 zijn voor het uitlijnen van knoppen, formulieren of andere elementen die naast
 elkaar moeten staan.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
@@ -71,4 +71,4 @@ Voeg de class `horizontal` toe op het horizontaal uit te lijnen element.
 ```
 
 Voor het horizontaal uitlijnen van meerdere objecten binnen een element voeg de
-class `horizontal-group`.
+class `horizontal-group` toe.

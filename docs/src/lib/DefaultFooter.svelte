@@ -1,10 +1,11 @@
 <script lang="ts">
+  import { base } from "$app/paths";
   import SiteNavLinks from "$lib/SiteNavLinks.svelte";
 </script>
 
 <footer>
+  <span class="slogan">Manon</span>
   <nav aria-labelledby="footer-heading">
-    <h1 id="footer-heading">Over deze site</h1>
     <SiteNavLinks />
   </nav>
 </footer>

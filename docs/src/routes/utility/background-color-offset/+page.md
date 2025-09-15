@@ -1,20 +1,20 @@
 ---
-title: Background color offset
-breadcrumb: Background color offset
+title: background-color-offset
+breadcrumb: background-color-offset
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<h1 id="introduction">Background color offset</h1>
+<h2 id="introduction">Introductie</h2>
 
 <p class="warning">
   <span>Let op:</span>
   Deze pagina is nog niet af. De inhoud is nog niet compleet en de voorbeelden zijn nog niet toegevoegd.
 </p>
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
