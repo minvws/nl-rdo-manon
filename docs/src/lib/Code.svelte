@@ -39,11 +39,11 @@
 
   let htmlCode: string = code;
 
-  const modules = import.meta.glob("/src/routes/examples/**/*.{html,svelte}", { as: "raw" });
+  const modules = import.meta.glob("/src/routes/snippets/**/*.{html,svelte}", { as: "raw" });
 
   onMount(async () => {
     if (path && modules[`/src/routes/snippets/${path}`]) {
-      let content = await modules[`/src/routes/examples/${path}`]();
+      let content = await modules[`/src/routes/snippets/${path}`]();
 
       // Strip script blocks for Svelte pages
       htmlCode = content.replace(/<script[\s\S]*?<\/script>/g, "").trim();

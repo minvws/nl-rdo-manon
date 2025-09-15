@@ -19,7 +19,7 @@
   const modules = import.meta.glob("/src/routes/snippets/**/*.html", { as: "raw" });
 
   onMount(() => {
-    const key = `/src/routes/examples/${path}`;
+    const key = `/src/routes/snippets/${path}`;
     if (modules[key]) {
       modules[key]().then((mod) => (htmlContent = mod));
     } else {
