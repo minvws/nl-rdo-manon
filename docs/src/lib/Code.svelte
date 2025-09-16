@@ -30,7 +30,6 @@
 </script>
 
 <script lang="ts">
-  import { onMount } from "svelte";
   import "highlight.js/styles/github.css";
 
   let {

@@ -12,8 +12,6 @@
     <RawHTML path="accordion/ul.html" />
 -->
 <script lang="ts">
-  import { onMount } from "svelte";
-
   let { path = "" }: { path?: string } = $props();
 
   let htmlContent: string = $state("<p>Loading...</p>");
