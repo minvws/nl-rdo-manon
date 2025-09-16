@@ -9,21 +9,15 @@ div {
     margin: 0 auto;
   }
 
-  @if (
-    theme.$div-padding-top or
-      theme.$div-padding-right or
-      theme.$div-padding-bottom or
-      theme.$div-padding-left
-  ) {
+  @if theme.$div-padding-top or
+    theme.$div-padding-right or
+    theme.$div-padding-bottom or
+    theme.$div-padding-left
+  {
     box-sizing: border-box;
   }
 
-  @if (
-    theme.$div-flex-direction or
-      theme.$div-gap or
-      theme.$div-justify-content or
-      theme.$div-align-items
-  ) {
+  @if theme.$div-gap or theme.$div-justify-content or theme.$div-align-items {
     display: flex;
   }
 
@@ -45,11 +39,10 @@ div {
   .content-wrapper {
     flex-direction: theme.$div-content-wrapper-flex-direction;
 
-    @if (
-      theme.$div-content-wrapper-gap or
-        theme.$div-content-wrapper-align-items or
-        theme.$div-content-wrapper-justify-content
-    ) {
+    @if theme.$div-content-wrapper-gap or
+      theme.$div-content-wrapper-align-items or
+      theme.$div-content-wrapper-justify-content
+    {
       display: flex;
       width: 100%;
     }
@@ -58,12 +51,11 @@ div {
       margin: 0 auto;
     }
 
-    @if (
-      theme.$div-content-wrapper-padding-top or
-        theme.$div-content-wrapper-padding-right or
-        theme.$div-content-wrapper-padding-bottom or
-        theme.$div-content-wrapper-padding-left
-    ) {
+    @if theme.$div-content-wrapper-padding-top or
+      theme.$div-content-wrapper-padding-right or
+      theme.$div-content-wrapper-padding-bottom or
+      theme.$div-content-wrapper-padding-left
+    {
       box-sizing: border-box;
     }
 
