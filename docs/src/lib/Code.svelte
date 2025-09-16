@@ -50,12 +50,14 @@
     import: "default",
   });
 
-  onMount(async () => {
+  $effect(async () => {
     if (path && modules[`/src/routes/snippets/${path}`]) {
-      let content = await modules[`/src/routes/snippets/${path}`]();
+      const content: string = await modules[`/src/routes/snippets/${path}`]();
 
       // Strip script blocks for Svelte pages
       htmlCode = content.replace(/^<script[\s\S]*?<\/script>\s*/i, "").trim();
+    } else {
+      htmlCode = code;
     }
   });
 

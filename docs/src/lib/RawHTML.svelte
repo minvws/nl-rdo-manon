@@ -23,10 +23,11 @@
     import: "default",
   });
 
-  onMount(() => {
+  $effect(async () => {
     const key = `/src/routes/snippets/${path}`;
     if (modules[key]) {
-      modules[key]().then((mod) => (htmlContent = mod));
+      const content: string = await modules[key]();
+      htmlContent = content;
     } else {
       htmlContent = `<p style="color: red;">Error: No file found for "${path}"</p>`;
     }
