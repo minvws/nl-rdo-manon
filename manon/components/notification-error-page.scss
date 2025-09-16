@@ -1,0 +1,56 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+%notifictions-error-page-styling {
+  max-width: 100%;
+  width: 100%;
+
+  @include theming.apply-from-theme(
+    (
+      background-color: theme.$notification-error-page-background-color,
+      color: theme.$notification-error-page-text-color,
+    )
+  );
+
+  span:first-of-type {
+    @include theming.apply-from-theme(
+      (
+        font-weight: theme.$notification-error-page-span-font-weight,
+      )
+    );
+  }
+
+  p,
+  span,
+  section,
+  div {
+    &.error {
+      &::before {
+        @include theming.apply-from-theme(
+          (
+            font-family: theme.$notification-error-page-icon-font-family,
+            font-size: theme.$notification-error-page-icon-font-size,
+            padding-right: theme.$notification-error-page-icon-padding-right,
+            padding-left: theme.$notification-error-page-icon-padding-left,
+            color: theme.$notification-error-page-icon-text-color,
+            margin-right: theme.$notification-error-page-icon-margin-right,
+          )
+        );
+      }
+    }
+  }
+}
+
+main {
+  &.error {
+    @extend %notifictions-error-page-styling;
+  }
+
+  > section,
+  > article,
+  > div {
+    &.error {
+      @extend %notifictions-error-page-styling;
+    }
+  }
+}

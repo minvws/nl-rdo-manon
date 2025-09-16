@@ -1,0 +1,15 @@
+*.focus-only,
+*.button.focus-only {
+  transform: scale(1, 1);
+  font-size: inherit;
+  padding: inherit;
+
+  &:not(:focus) {
+    transform: scale(1, 0);
+    font-size: 0;
+    padding: 0;
+    min-height: 0;
+    min-width: 0;
+    border: 0;
+  }
+}

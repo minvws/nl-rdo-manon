@@ -1,0 +1,13 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+main > article > div > section {
+  @include theming.apply-from-theme(
+    (
+      border-width: theme.$article-section-divider-line-border-width,
+      border-style: theme.$article-section-divider-line-border-style,
+      border-color: theme.$article-section-divider-line-border-color,
+      padding: theme.$article-section-divider-line-padding,
+    )
+  );
+}
