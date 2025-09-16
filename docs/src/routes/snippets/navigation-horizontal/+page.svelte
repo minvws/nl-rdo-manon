@@ -4,8 +4,8 @@
 
 <nav>
   <ul class="horizontal">
-    <li><a href="#0">Voorbeeld-link 1</a></li>
-    <li><a href="#0">Voorbeeld-link 2</a></li>
-    <li><a href="#0">Voorbeeld-link 3</a></li>
+    <li><a href="#">Voorbeeld-link 1</a></li>
+    <li><a href="#">Voorbeeld-link 2</a></li>
+    <li><a href="#">Voorbeeld-link 3</a></li>
   </ul>
 </nav>
