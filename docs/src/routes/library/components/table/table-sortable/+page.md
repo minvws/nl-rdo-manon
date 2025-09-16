@@ -26,12 +26,6 @@ SCSS importeren:
 @use "@minvws/manon/icon/icon-base-variables";
 ```
 
-JavaScript importeren:
-
-```javascript
-TODO;
-```
-
 <h2 id="examples">Voorbeelden</h2>
 
 <div class="horizontal-scroll">
