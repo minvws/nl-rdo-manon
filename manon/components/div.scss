@@ -3,7 +3,6 @@
 
 div {
   width: 100%;
-  flex-direction: theme.$div-flex-direction;
 
   @if theme.$div-max-width {
     margin: 0 auto;
@@ -18,13 +17,9 @@ div {
     box-sizing: border-box;
   }
 
-  @if (
-    theme.$div-flex-direction or
-      theme.$div-gap or
-      theme.$div-justify-content or
-      theme.$div-align-items
-  ) {
+  @if (theme.$div-gap or theme.$div-justify-content or theme.$div-align-items) {
     display: flex;
+    flex-direction: theme.$div-flex-direction;
   }
 
   @include theming.apply-from-theme(
