@@ -54,7 +54,6 @@
     );
   }
 
-  /* stylelint-disable no-descending-specificity */
   ul,
   ol {
     display: flex;
@@ -222,5 +221,4 @@
       }
     }
   }
-  /* stylelint-enable no-descending-specificity */
 }

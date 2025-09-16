@@ -31,7 +31,6 @@ main div form {
     )
   );
 
-  /* stylelint-disable no-descending-specificity */
   div,
   div.form-group {
     display: flex;
@@ -85,4 +84,3 @@ main {
     }
   }
 }
-/* stylelint-enable no-descending-specificity */
