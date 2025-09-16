@@ -155,6 +155,9 @@ and spacing sets */
   $de-emphasized-font-size: body-text.$body-text-s,
   $de-emphasized-text-color: color-scheme.$oc-gray-7,
 
+  // div
+  $div-gap: spacing.$spacing-050,
+
   // description list
   $description-list-width: 100%,
   $description-list-border-width: 0 0 1px 0,
@@ -293,6 +296,14 @@ and spacing sets */
   $hero-content-wrapper-margin: 0 auto,
   $hero-content-wrapper-background-color: transparent,
   $hero-content-wrapper-gap: spacing.$spacing-100,
+
+  // Heading base set
+  $heading-xs-font-size: 1rem,
+  $heading-small-font-size: 1.25rem,
+  $heading-normal-font-size: 1.5rem,
+  $heading-large-font-size: 2rem,
+  $heading-xl-font-size: 2.5rem,
+  $heading-xxl-font-size: 3rem,
 
   // utility
   $horizontal-gap: spacing.$spacing-100,

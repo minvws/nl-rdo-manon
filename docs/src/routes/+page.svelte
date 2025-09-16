@@ -31,30 +31,45 @@
         <h2>🙋 Wat is Manon</h2>
         <p>Manon is een design framework dat de volgende principes hanteert:</p>
 
-        <h3>✨ "Classless" waar mogelijk</h3>
-        <p>
-          Manon geeft de voorkeur aan styling op basis van de HTML-structuur, wat zorgt voor
-          overzichtelijke en goed onderhoudbare code. Dit maakt efficiënte visuele aanpassingen
-          mogelijk met minimale HTML-wijzigingen.
-        </p>
+        <div class="column-4">
+          <div>
+            <h3>✨ Classless *</h3>
 
-        <h3>🫶 Toegankelijkheid</h3>
-        <p>
-          Manon streeft ernaar om de toegankelijkheid van webapplicaties te verbeteren door het
-          bieden van toegankelijke componenten die voldoen aan de WCAG-richtlijnen.
-        </p>
+            <p>Manon geeft de voorkeur aan styling op basis van de HTML-structuur.</p>
 
-        <h3>📦 Zo klein mogelijk</h3>
-        <p>
-          Gebruik alleen wat je nodig hebt. Manon bestaat uit losse componenten die afzonderlijk
-          geïmporteerd kunnen worden, zodat je niet de hele set hoeft te gebruiken.
-        </p>
+            <p>
+              Omdat dit zorgt voor overzichtelijke en goed onderhoudbare code. Dit maakt efficiënte
+              visuele aanpassingen mogelijk met minimale HTML-wijzigingen.
+            </p>
 
-        <h3>🎨 Thema's</h3>
-        <p>
-          Naast dat Manon een aantal thema's aanbiedt, kun je ook je eigen thema samenstellen. Elk
-          thema kan de variabelen van de componenten overschrijven om de gewenste stijl te bereiken.
-        </p>
+            <p class="nota-bene">*Classless waar mogelijk en wenselijk</p>
+          </div>
+
+          <div>
+            <h3>🫶 Toegankelijkheid</h3>
+            <p>
+              Manon streeft ernaar om de toegankelijkheid van webapplicaties te verbeteren door het
+              bieden van toegankelijke componenten die voldoen aan de WCAG-richtlijnen.
+            </p>
+          </div>
+
+          <div>
+            <h3>📦 Zo klein mogelijk</h3>
+            <p>
+              Gebruik alleen wat je nodig hebt. Manon bestaat uit losse componenten die afzonderlijk
+              geïmporteerd kunnen worden, zodat je niet de hele set hoeft te gebruiken.
+            </p>
+          </div>
+
+          <div>
+            <h3>🎨 Thema's</h3>
+            <p>
+              Naast dat Manon een aantal thema's aanbiedt, kun je ook je eigen thema samenstellen.
+              Elk thema kan de variabelen van de componenten overschrijven om de gewenste stijl te
+              bereiken.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -68,7 +83,7 @@
       </p>
       <div class="column-4">
         <div>
-          <h3 class="heading-large">Aan de slag</h3>
+          <h3>Aan de slag</h3>
           <p>
             Volg de <a href="{base}/getting-started">stappen in de installatie handleiding</a> om
             Manon te installeren in jouw project. Ook vind je daar een
@@ -78,7 +93,7 @@
         </div>
 
         <div>
-          <h3 class="heading-large">Gebruik alleen wat je nodig hebt</h3>
+          <h3>Gebruik alleen wat je nodig hebt</h3>
           <p>
             Benut enkel de CSS die nodig is binnen jouw project. Dit kan een enkel component zijn of
             een hele set. In de <a href="{base}/library">componentenbibliotheek</a> vind je het volledige
@@ -87,7 +102,7 @@
         </div>
 
         <div>
-          <h3 class="heading-large">Handige helpers</h3>
+          <h3>Handige helpers</h3>
           <p>
             Voor bekende uitzonderingen bevat Manon <a href="{base}/utility">"utility-classes"</a>.
             Deze classes kunnen gebruikt worden om een visuele uitzondering snel en efficient toe te
@@ -96,7 +111,7 @@
         </div>
 
         <div>
-          <h3 class="heading-large">Voorbeelden</h3>
+          <h3>Voorbeelden</h3>
           <p>
             Bekijk <a href="{base}/examples">de voorbeeldpagina's</a> om te zien hoe je Manon kunt toepassen
             in een volledige pagina.
