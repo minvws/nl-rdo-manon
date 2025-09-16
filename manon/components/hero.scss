@@ -4,11 +4,10 @@
 .hero {
   position: relative;
 
-  @if (
-    theme.$hero-justify-content or
-      theme.$hero-align-items or
-      theme.$hero-flex-direction
-  ) {
+  @if theme.$hero-justify-content or
+    theme.$hero-align-items or
+    theme.$hero-flex-direction
+  {
     display: flex;
   }
 
@@ -40,12 +39,11 @@
   .content-wrapper {
     z-index: 1;
 
-    @if (
-      theme.$hero-content-wrapper-justify-content or
-        theme.$hero-content-wrapper-align-items or
-        theme.$hero-content-wrapper-flex-direction or
-        theme.$hero-content-wrapper-gap
-    ) {
+    @if theme.$hero-content-wrapper-justify-content or
+      theme.$hero-content-wrapper-align-items or
+      theme.$hero-content-wrapper-flex-direction or
+      theme.$hero-content-wrapper-gap
+    {
       display: flex;
     }
 
