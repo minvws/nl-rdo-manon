@@ -13,10 +13,15 @@
 -->
 <script lang="ts">
   import { onMount } from "svelte";
-  export let path: string;
-  let htmlContent: string = "";
 
-  const modules = import.meta.glob("/src/routes/snippets/**/*.html", { as: "raw" });
+  let { path = "" }: { path?: string } = $props();
+
+  let htmlContent: string = $state("<p>Loading...</p>");
+
+  const modules = import.meta.glob("/src/routes/snippets/**/*.{html,svelte}", {
+    query: "?raw",
+    import: "default",
+  });
 
   onMount(() => {
     const key = `/src/routes/snippets/${path}`;

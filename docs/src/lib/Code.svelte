@@ -33,20 +33,29 @@
   import { onMount } from "svelte";
   import "highlight.js/styles/github.css";
 
-  export let language: "html" | "css" | "scss" | "javascript" | "shell" | "plaintext" = "plaintext";
-  export let code: string = "";
-  export let path: string = "";
+  let {
+    language = "plaintext",
+    code = "",
+    path = "",
+  }: {
+    language?: "html" | "css" | "scss" | "javascript" | "shell" | "plaintext";
+    code?: string;
+    path?: string;
+  } = $props();
 
-  let htmlCode: string = code;
+  let htmlCode: string = $state(code);
 
-  const modules = import.meta.glob("/src/routes/snippets/**/*.{html,svelte}", { as: "raw" });
+  const modules = import.meta.glob("/src/routes/snippets/**/*.{html,svelte}", {
+    query: "?raw",
+    import: "default",
+  });
 
   onMount(async () => {
     if (path && modules[`/src/routes/snippets/${path}`]) {
       let content = await modules[`/src/routes/snippets/${path}`]();
 
       // Strip script blocks for Svelte pages
-      htmlCode = content.replace(/<script[\s\S]*?<\/script>/g, "").trim();
+      htmlCode = content.replace(/^<script[\s\S]*?<\/script>\s*/i, "").trim();
     }
   });
 
