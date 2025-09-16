@@ -30,8 +30,6 @@ main div form {
       );
     }
 
-    /* stylelint-disable no-descending-specificity */
-
     /*Fieldsets within fieldsets ignore the "*" all selector */
     > *,
     > fieldset {
@@ -84,8 +82,6 @@ main div form {
         }
       }
     }
-
-    /* stylelint-enable no-descending-specificity */
 
     .nota-bene {
       padding-bottom: 0;

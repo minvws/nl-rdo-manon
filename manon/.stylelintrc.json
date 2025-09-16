@@ -10,12 +10,7 @@
     "property-no-vendor-prefix": null,
     "number-max-precision": 5,
     "declaration-block-no-redundant-longhand-properties": null,
-    "no-descending-specificity": [
-      true,
-      {
-        "severity": "warning"
-      }
-    ]
+    "no-descending-specificity": null
   },
   "overrides": [
     {

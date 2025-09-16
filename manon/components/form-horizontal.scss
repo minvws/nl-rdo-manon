@@ -50,6 +50,11 @@ form.horizontal {
         theme.$form-horizontal-group-vertical-gap;
     }
 
+    > * {
+      flex-grow: 1;
+      box-sizing: border-box;
+    }
+
     &.checkbox {
       margin: 0;
       flex-wrap: nowrap;
@@ -161,11 +166,6 @@ form.horizontal {
       > * {
         max-width: 100%;
       }
-    }
-
-    > * {
-      flex-grow: 1;
-      box-sizing: border-box;
     }
 
     > button,
