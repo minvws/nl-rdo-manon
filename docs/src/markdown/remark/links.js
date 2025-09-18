@@ -4,13 +4,13 @@ const linkTagPattern = /<\s*?a\s+([^>]*?)>/g;
 const hrefPattern = /href=["']([^"']*?)["']/;
 
 /**
- * Remark plugin to rewrite <a> to <Components.a> (for mdsvex).
+ * Remark the plugin to rewrite <a> to <Components.a> (for mdsvex).
  */
 export function remarkLinks() {
   return function (ast) {
     visit(ast, "html", (node) => {
       node.value = node.value.replaceAll(linkTagPattern, (match, attributes) => {
-        // Only replace it if it has an href attribute
+        // Only replace, if href attribute exists
         if (hrefPattern.test(attributes)) {
           return match.replace("<a", "<Components.a");
         }
