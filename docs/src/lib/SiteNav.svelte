@@ -13,7 +13,7 @@
   aria-label="Hoofdnavigatie"
   class="collapsible"
 >
-  <a href="{base}/library/components/logo" class="logo">
+  <a href="{base}/" class="logo">
     <img src="../img/logo.svg" alt="Placeholder logo" />Manon
   </a>
   <div class="collapsing-element">

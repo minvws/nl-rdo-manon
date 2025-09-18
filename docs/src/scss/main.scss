@@ -23,6 +23,7 @@
 @use "@minvws/manon/components/de-emphasized";
 @use "@minvws/manon/components/description-list";
 @use "@minvws/manon/components/disabled";
+@use "@minvws/manon/components/div";
 @use "@minvws/manon/components/divider-lines-content-block";
 @use "@minvws/manon/components/divider-striping-top";
 @use "@minvws/manon/components/emphasized";
@@ -50,6 +51,7 @@
 @use "@minvws/manon/components/form-combined-field";
 @use "@minvws/manon/components/header";
 @use "@minvws/manon/components/heading";
+@use "@minvws/manon/components/heading-base-set";
 @use "@minvws/manon/components/hero";
 @use "@minvws/manon/components/layout-footer-content-block";
 @use "@minvws/manon/components/layout-footer";
@@ -67,8 +69,9 @@
 @use "@minvws/manon/components/notification-error";
 @use "@minvws/manon/components/notification-explanation";
 @use "@minvws/manon/components/notification-system";
-@use "@minvws/manon/components/notification-warning";
 @use "@minvws/manon/components/notification-table";
+@use "@minvws/manon/components/notification-warning";
+@use "@minvws/manon/components/notification-paragraph";
 @use "@minvws/manon/components/notification-block-element";
 @use "@minvws/manon/components/p";
 @use "@minvws/manon/components/pagination";
@@ -76,6 +79,7 @@
 @use "@minvws/manon/components/section";
 @use "@minvws/manon/components/sidemenu";
 @use "@minvws/manon/components/slogan";
+@use "@minvws/manon/components/tabs";
 @use "@minvws/manon/components/table";
 @use "@minvws/manon/components/table-action-buttons";
 @use "@minvws/manon/components/table-caption";

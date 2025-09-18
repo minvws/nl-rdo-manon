@@ -85,6 +85,5 @@ Knoppen op een website zijn interactieve elementen waarmee gebruikers een actie 
 - [Icoonknoppen](/library/components/button/icon)
 - [Icoonknoppen zonder achtergrond](/library/components/button/button-icon-only)
 - [Dropdown button](/library/components/button/button-dropdown)
-- [Ghost button](/library/components/button/button-ghost)
 - [Destructieve knop](/library/components/button/button-destructive)
 - [Terug naar hoofdmenu](/library/components/button/button-to-top)

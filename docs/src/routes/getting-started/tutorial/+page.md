@@ -182,9 +182,9 @@ header met navigatielinks te maken:
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="#0">Home</a></li>
-        <li><a href="#0">Over</a></li>
-        <li><a href="#0">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Over</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -214,9 +214,9 @@ Nu zou ons index.html-bestand er als volgt uit moeten zien:
       >
         <div class="collapsing-element">
           <ul>
-            <li><a href="#0">Home</a></li>
-            <li><a href="#0">Over</a></li>
-            <li><a href="#0">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Over</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -311,9 +311,9 @@ Voeg de volgende HTML toe, net voor de sluitende `</body>`-tag:
   <nav>
     <h1>Manon Tutorial</h1>
     <ul>
-      <li><a href="#0">Home</a></li>
-      <li><a href="#0">Over</a></li>
-      <li><a href="#0">Contact</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Over</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
   </nav>
 </footer>

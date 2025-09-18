@@ -34,7 +34,7 @@ SCSS importeren:
 <a href="/library/components/button" class="button">Lorem ipsum</a>
 
 ```html
-<a href="#0" class="button">Lorem ipsum</a>
+<a href="#" class="button">Lorem ipsum</a>
 ```
 
 ### Voorbeeld: `input type="button"`

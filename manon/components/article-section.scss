@@ -8,11 +8,10 @@ article {
     margin: 0 auto;
     box-sizing: border-box;
 
-    @if (
-      theme.$article-section-flex-direction or
-        theme.$article-section-gap or
-        theme.$article-section-align-items
-    ) {
+    @if theme.$article-section-flex-direction or
+      theme.$article-section-gap or
+      theme.$article-section-align-items
+    {
       display: flex;
     }
 

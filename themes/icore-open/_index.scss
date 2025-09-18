@@ -70,6 +70,9 @@ and spacing sets */
   $avatar-font-weight: bold,
   $avatar-border-radius: 50%,
   $avatar-background-color: semantic.$color-brand-primary-default,
+  $avatar-text-color: color-scheme.$oc-white,
+  $avatar-text-font-size: body-text.$body-text-s,
+  $avatar-hover-text-color: color-scheme.$oc-white,
 
   // Hover
   $avatar-hover-background-color: color-scheme.$oc-blue-7,
@@ -151,6 +154,9 @@ and spacing sets */
   // de-emphasized
   $de-emphasized-font-size: body-text.$body-text-s,
   $de-emphasized-text-color: color-scheme.$oc-gray-7,
+
+  // div
+  $div-gap: spacing.$spacing-050,
 
   // description list
   $description-list-width: 100%,
@@ -291,6 +297,14 @@ and spacing sets */
   $hero-content-wrapper-background-color: transparent,
   $hero-content-wrapper-gap: spacing.$spacing-100,
 
+  // Heading base set
+  $heading-xs-font-size: 1rem,
+  $heading-small-font-size: 1.25rem,
+  $heading-normal-font-size: 1.5rem,
+  $heading-large-font-size: 2rem,
+  $heading-xl-font-size: 2.5rem,
+  $heading-xxl-font-size: 3rem,
+
   // utility
   $horizontal-gap: spacing.$spacing-100,
 
@@ -324,6 +338,7 @@ and spacing sets */
   $navigation-list-gap: spacing.$spacing-050,
   $navigation-link-text-decoration: none,
   $navigation-list-padding: 1rem,
+  $navigation-list-item-list-style: none,
 
   // notification
   $notification-padding-top: spacing.$spacing-100,
@@ -450,6 +465,18 @@ and spacing sets */
   $section-content-wrapper-gap: spacing.$spacing-250,
   $section-content-wrapper-flex-direction: column,
   $section-content-wrapper-border-radius: border-radii.$border-radius-m,
+
+  // tabs
+  $tabs-gap: spacing.$spacing-100,
+  $tabs-item-border-style: solid,
+  $tabs-item-border-width: 0,
+  $tabs-item-padding: spacing.$spacing-050 0,
+  $tabs-item-text-color: semantic.$color-brand-primary-default,
+  $tabs-item-text-decoration: none,
+  $tabs-item-current-border-color: semantic.$color-brand-primary-default,
+  $tabs-item-current-border-width: 0 0 2px 0,
+  $tabs-item-current-font-weight: bold,
+  $tabs-item-hover-text-color: color-scheme.$oc-blue-9,
 
   // table
   $table-gap: spacing.$spacing-050,

@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Voor leesbaarheid en toegankelijkheid wordt aangeraden om de maximale regellengte te beperken tot 80 karakters. Voor meer informatie zie: [maximale regellengte](/library/layout/typography/max-line-length) en <a href="https://www.w3.org/TR/WCAG21/#visual-presentation" rel="external" >w3.org - Success Criterion 1.4.8 Visual Presentation</a>.
+Voor leesbaarheid en toegankelijkheid wordt aangeraden om de maximale regellengte te beperken tot 80 karakters. Voor meer informatie zie: [maximale regellengte](/library/typography/max-line-length) en <a href="https://www.w3.org/TR/WCAG21/#visual-presentation" rel="external" >w3.org - Success Criterion 1.4.8 Visual Presentation</a>.
 
 <h2 id="quickstart">Snelstart</h2>
 

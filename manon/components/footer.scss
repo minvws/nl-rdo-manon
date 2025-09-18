@@ -4,13 +4,12 @@
 body > footer,
 .page-footer,
 %footer-style {
-  @if (
-    theme.$footer-flex-direction or
-      theme.$footer-gap or
-      theme.$footer-justify-content or
-      theme.$footer-align-items or
-      theme.$footer-flex-wrap
-  ) {
+  @if theme.$footer-flex-direction or
+    theme.$footer-gap or
+    theme.$footer-justify-content or
+    theme.$footer-align-items or
+    theme.$footer-flex-wrap
+  {
     display: flex;
     width: 100%;
   }
@@ -151,12 +150,11 @@ body > footer,
   }
 
   nav {
-    @if (
-      theme.$footer-navigation-gap or
-        theme.$footer-navigation-justify-content or
-        theme.$footer-navigation-align-items or
-        theme.$footer-navigation-flex-wrap
-    ) {
+    @if theme.$footer-navigation-gap or
+      theme.$footer-navigation-justify-content or
+      theme.$footer-navigation-align-items or
+      theme.$footer-navigation-flex-wrap
+    {
       display: flex;
       width: 100%;
     }

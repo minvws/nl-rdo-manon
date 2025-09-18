@@ -31,6 +31,19 @@ jobs:
       - name: Lint
         run: pnpm run lint
 
+  check-types:
+    name: Check types
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Check types
+        run: pnpm run --dir manon check
+
   check-formatting:
     name: Check formatting
     runs-on: ubuntu-24.04

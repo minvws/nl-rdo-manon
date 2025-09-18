@@ -10,21 +10,19 @@ article {
     margin: 0 auto;
   }
 
-  @if (
-    theme.$article-padding-top or
-      theme.$article-padding-right or
-      theme.$article-padding-bottom or
-      theme.$article-padding-left
-  ) {
+  @if theme.$article-padding-top or
+    theme.$article-padding-right or
+    theme.$article-padding-bottom or
+    theme.$article-padding-left
+  {
     box-sizing: border-box;
   }
 
-  @if (
-    theme.$article-flex-direction or
-      theme.$article-gap or
-      theme.$article-justify-content or
-      theme.$article-align-items
-  ) {
+  @if theme.$article-flex-direction or
+    theme.$article-gap or
+    theme.$article-justify-content or
+    theme.$article-align-items
+  {
     display: flex;
   }
 
@@ -46,11 +44,10 @@ article {
   .content-wrapper {
     flex-direction: theme.$article-content-wrapper-flex-direction;
 
-    @if (
-      theme.$article-content-wrapper-gap or
-        theme.$article-content-wrapper-align-items or
-        theme.$article-content-wrapper-justify-content
-    ) {
+    @if theme.$article-content-wrapper-gap or
+      theme.$article-content-wrapper-align-items or
+      theme.$article-content-wrapper-justify-content
+    {
       display: flex;
       width: 100%;
     }
@@ -59,12 +56,11 @@ article {
       margin: 0 auto;
     }
 
-    @if (
-      theme.$article-content-wrapper-padding-top or
-        theme.$article-content-wrapper-padding-right or
-        theme.$article-content-wrapper-padding-bottom or
-        theme.$article-content-wrapper-padding-left
-    ) {
+    @if theme.$article-content-wrapper-padding-top or
+      theme.$article-content-wrapper-padding-right or
+      theme.$article-content-wrapper-padding-bottom or
+      theme.$article-content-wrapper-padding-left
+    {
       box-sizing: border-box;
     }
 

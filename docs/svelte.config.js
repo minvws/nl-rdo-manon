@@ -15,12 +15,6 @@ const config = {
     prerender: {
       entries: ["*", ...Object.keys(redirects)],
       handleMissingId: ({ path, id, referrers, message }) => {
-        // Ignore placeholder IDs used in documentation examples
-        const placeholderIds = ["0", "placeholder", "example"];
-        if (placeholderIds.includes(id)) {
-          return;
-        }
-
         // Log the missing ID error for debugging
         console.error(`Missing ID error: ${message}`);
         console.error(`Path: ${path}`);
@@ -39,6 +33,16 @@ const config = {
       base: process.argv.includes("dev") ? "" : process.env.BASE_PATH || "",
       relative: true,
     },
+  },
+  onwarn: (warning, handler) => {
+    // Ignore empty fragment URLs
+    if (
+      warning.code === "a11y_invalid_attribute" &&
+      warning.message.includes("'#' is not a valid href attribute")
+    ) {
+      return;
+    }
+    handler(warning);
   },
   preprocess: [
     vitePreprocess(),
