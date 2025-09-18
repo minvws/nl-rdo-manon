@@ -1,4 +1,4 @@
-# Manon Django Example Implementation
+# Manon implementation example: Django
 
 ## Introduction
 
