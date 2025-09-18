@@ -62,18 +62,18 @@ import "@minvws/manon/js/accordion.js";
 
 ### Voorbeeld: `ul`
 
-<Components.RawHTML path="accordion/ul.html" />
+<Components.Snippet path="accordion/ul.html" as="raw"/>
 
-<Components.Code language="html" path="accordion/ul.html" />
+<Components.Snippet path="accordion/ul.html" as="code" language="html" />
 
 ### Voorbeeld: `div`
 
-<Components.RawHTML path="accordion/div.html" />
+<Components.Snippet path="accordion/div.html" as="raw"/>
 
-<Components.Code language="html" path="accordion/div.html" />
+<Components.Snippet path="accordion/div.html" as="code" language="html" />
 
 ### Voorbeeld: `section`
 
-<Components.RawHTML path="accordion/section.html" />
+<Components.Snippet path="accordion/section.html" as="raw"/>
 
-<Components.Code language="html" path="accordion/section.html" />
+<Components.Snippet path="accordion/section.html" as="code" language="html" />
