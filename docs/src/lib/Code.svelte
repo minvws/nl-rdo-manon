@@ -50,8 +50,9 @@
   });
 
   $effect(async () => {
-    if (path && modules[`/src/routes/snippets/${path}`]) {
-      const content: string = await modules[`/src/routes/snippets/${path}`]();
+    const key = `/src/routes/snippets/${path}`;
+    if (path && modules[key]) {
+      const content: string = await modules[key]();
 
       // Strip script blocks for Svelte pages
       htmlCode = content.replace(/^<script[\s\S]*?<\/script>\s*/i, "").trim();

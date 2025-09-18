@@ -2,7 +2,7 @@
   RawHTML.svelte
 
   A component that dynamically loads and renders a raw HTML file from the
-  `/src/routes/examples/` directory. The file path is specified via the
+  `/src/routes/snippets/` directory. The file path is specified via the
   `path` prop.
 
   Props:
