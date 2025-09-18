@@ -3,8 +3,8 @@
     "build": "sass --load-path=node_modules main.scss css/main.css"
   },
   "dependencies": {
-    "@minvws/manon": "workspace:*",
-    "@minvws/manon-themes": "workspace:*"
+    "@minvws/manon": "18.0.0",
+    "@minvws/manon-themes": "18.0.0"
   },
   "devDependencies": {
     "sass": "^1.92.1"
