@@ -1,6 +1,7 @@
 {
   "name": "@minvws/manon",
   "version": "0.0.0",
+  "type": "module",
   "license": "EUPL-1.2",
   "files": [
     "**/*.scss",
@@ -12,6 +13,9 @@
     "REUSE.toml",
     "README.md"
   ],
+  "bin": {
+    "manon": "bin/manon.js"
+  },
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -21,6 +25,9 @@
     "check:watch": "tsc --watch",
     "npm-version": "npm version",
     "test": "vitest run"
+  },
+  "dependencies": {
+    "commander": "^14.0.0"
   },
   "peerDependencies": {
     "sass": ">=1.77.6"
