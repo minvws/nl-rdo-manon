@@ -74,13 +74,16 @@ and spacing sets */
   $avatar-text-font-size: body-text.$body-text-s,
   $avatar-hover-text-color: color-scheme.$oc-white,
 
-  // Hover
+  // hover
   $avatar-hover-background-color: color-scheme.$oc-blue-7,
 
-  // Focus
+  // focus
   $avatar-focus-background-color: color-scheme.$oc-blue-7,
   $avatar-focus-outline: 2px solid color-scheme.$oc-white,
   $avatar-focus-outline-offset: -2px,
+
+  // background-color offset
+  $background-color-offset-background-color: semantic.$base-background-color,
 
   //base
   $base-background-color: semantic.$base-background-color,
@@ -98,11 +101,12 @@ and spacing sets */
   $button-padding-bottom: spacing.$spacing-075,
   $button-padding-left: spacing.$spacing-100,
   $button-background-color: semantic.$color-brand-primary-default,
+  $button-font-weight: 400,
 
   // button hover
-  $button-hover-background-color: color-scheme.$oc-blue-6,
+  $button-hover-background-color: color-scheme.$oc-blue-7,
   $button-hover-text-color: color-scheme.$oc-white,
-  $button-hover-border-color: color-scheme.$oc-blue-6,
+  $button-hover-border-color: color-scheme.$oc-blue-7,
 
   // button destructive
   $button-destructive-background-color: semantic.$color-destructive-default,
@@ -245,7 +249,7 @@ and spacing sets */
   $header-justify-content: stretch,
   $header-font-weight: bold,
   $header-min-height: 4.5rem,
-  $header-color: color-scheme.$oc-white,
+  $header-text-color: color-scheme.$oc-white,
   $header-padding-right: spacing.$spacing-300,
   $header-padding-left: spacing.$spacing-300,
 
@@ -296,6 +300,8 @@ and spacing sets */
   $hero-content-wrapper-margin: 0 auto,
   $hero-content-wrapper-background-color: transparent,
   $hero-content-wrapper-gap: spacing.$spacing-100,
+  $hero-content-wrapper-justify-content: center,
+  $hero-content-wrapper-align-items: center,
 
   // Heading base set
   $heading-xs-font-size: 1rem,

@@ -67,6 +67,7 @@
 @forward "image-cover";
 @forward "image-round";
 @forward "image-square";
+@forward "image-background";
 @forward "label";
 @forward "language-selector-list";
 @forward "layout-footer";
@@ -117,6 +118,7 @@
 @forward "tile";
 @forward "tile-groups";
 @forward "tile-image-cover";
+@forward "overlay";
 
 $theme-name: null !default;
 

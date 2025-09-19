@@ -24,10 +24,11 @@ body > header,
       border-width: theme.$header-border-width,
       border-style: theme.$header-border-style,
       border-color: theme.$header-border-color,
-      color: theme.$header-color,
+      color: theme.$header-text-color,
       font-size: theme.$header-font-size,
       font-weight: theme.$header-font-weight,
       line-height: theme.$header-line-height,
+      position: theme.$header-position,
     )
   );
 
