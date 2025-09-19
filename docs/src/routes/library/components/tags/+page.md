@@ -71,7 +71,7 @@ De mogelijkheid om onderliggende elementen visueel als tags weer te geven.
 ### Voorbeeld: Tags op tabel
 
 Tabel-elementen visueel weergegeven als tag. Voor het direct aanspreken van een
-enkel element zie: [tags]({base}/library/components/tag).
+enkel element zie: [tags](/library/components/tag).
 
 <div class="horizontal-scroll">
   <table class="tags">
@@ -120,7 +120,7 @@ enkel element zie: [tags]({base}/library/components/tag).
 ### Tags binnen een tabel
 
 Tabel-elementen visueel weergegeven als tag. Voor het direct aanspreken van een
-enkel element zie: [tags]({base}/library/components/tag).
+enkel element zie: [tags](/library/components/tag).
 
 <div class="horizontal-scroll">
   <table>

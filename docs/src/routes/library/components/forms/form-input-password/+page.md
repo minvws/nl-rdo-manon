@@ -26,10 +26,10 @@ SCSS importeren:
         <li>
         Vertel de gebruiker welke eisen er gesteld zijn. Dit kan met een notificatie of met een
         openklapbare hulptekst. Voor meer informatie zie:
-        <a href="{base}/library/components/notifications/notification-explanation"
+        <a href="/library/components/notifications/notification-explanation"
             >toelichting - paragraaf</a
         >
-        en <a href="{base}/library/components/forms/form-help">hulpteksten</a>.
+        en <a href="/library/components/forms/form-help">hulpteksten</a>.
         </li>
         <li>
         Om berichten visueel te koppelen aan een inputveld kunnen de

@@ -22,7 +22,7 @@ SCSS importeren:
 <p class="explanation">
   <strong>Tip:</strong> Om bereik-invoervelden een eigen gekozen kleur mee te geven kan
   gebruik gemaakt worden van
-  <a href="{base}/library/components/forms/form-layout-accent-color">accentkleur op formulierelementen</a>.
+  <a href="/library/components/forms/form-layout-accent-color">accentkleur op formulierelementen</a>.
 </p>
 
 <h2 id="examples">Voorbeelden</h2>

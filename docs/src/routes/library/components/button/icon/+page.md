@@ -22,9 +22,9 @@ SCSS importeren:
 ### Benodigde stappen
 
 1. Kies het juiste element voor de knop. Zie eventueel
-   [HTML-element kiezen]({base}/library/components/button#button-situations).
+   [HTML-element kiezen](/library/components/button#button-situations).
 2. Kies het soort icoon om toe te voegen. Zie
-   [Iconen]({base}/library/components/icons).
+   [Iconen](/library/components/icons).
    - Zie bij het gebruik van een icoon-lettertype de "met `span`" voorbeelden.
    - Zie bij het gebruik van een SVG-icoon de "met `svg`" voorbeelden.
 3. Kies de juiste aanpak voor het toevoegen van een icoon aan de knop.
@@ -32,7 +32,7 @@ SCSS importeren:
    - Krijgt de knop alleen een icoon? Zie dan voorbeelden "zonder tekst".
    - Is een subtielere weergave nodig met alléén een icoon zonder het visuele
      uiterlijk van een knop? Zie dan
-     [Icoonknoppen zonder achtergrond]({base}/library/components/button/button-icon-only).
+     [Icoonknoppen zonder achtergrond](/library/components/button/button-icon-only).
 
 <div class="explanation" role="group" aria-label="Toelichting">
   <span>Aandachtspunten</span>
@@ -123,7 +123,7 @@ SCSS importeren:
 
 ### Voorbeeld: Link-knop met `span`
 
-<a href="{base}/" class="button">
+<a href="/" class="button">
   <span class="icon icon-user" aria-hidden="true"></span>
   Inloggen
 </a>
@@ -137,7 +137,7 @@ SCSS importeren:
 
 ### Voorbeeld: Link-knop met `svg`
 
-<a href="{base}/" class="button">
+<a href="/" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -158,7 +158,7 @@ SCSS importeren:
 </a>
 
 ```html
-<a href="{base}/" class="button">
+<a href="/" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -240,13 +240,13 @@ SCSS importeren:
 
 ### Voorbeeld: Link-knop met `span` zonder tekst
 
-<a href="{base}/" class="button">
+<a href="/" class="button">
   <span class="icon icon-user" aria-hidden="true"></span>
   <span class="visually-hidden">Inloggen</span>
 </a>
 
 ```html
-<a href="{base}/" class="button">
+<a href="/" class="button">
   <span class="icon icon-user" aria-hidden="true"></span>
   <span class="visually-hidden">Inloggen</span>
 </a>
@@ -254,7 +254,7 @@ SCSS importeren:
 
 ### Link-knop met `svg` zonder tekst
 
-<a href="{base}/" class="button">
+<a href="/" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -275,7 +275,7 @@ SCSS importeren:
 </a>
 
 ```html
-<a href="{base}/" class="button">
+<a href="/" class="button">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"

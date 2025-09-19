@@ -17,7 +17,7 @@ pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 
 Gaat de inhoud van het zijmenu over de inhoud van de content. En hoort het bij
 de content. Gebruik dan:
-[Zijmenu binnen de pagina]({base}/library/components/sidemenu/in-page)
+[Zijmenu binnen de pagina](/library/components/sidemenu/in-page)
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -47,7 +47,7 @@ de content. Gebruik dan:
 Zie het zijmenu van deze pagina.
 
 <div class="resize">
-  <iframe src="{base}/snippets/sidemenu-next-to-page" title="Voorbeeld" height="320px"
+  <iframe src="/snippets/sidemenu-next-to-page" title="Voorbeeld" height="320px"
   ></iframe>
 </div>
 
@@ -57,10 +57,10 @@ Zie het zijmenu van deze pagina.
 <body class="sidemenu">
   <nav>
     <ul>
-      <li><a href="{base}/">Voorbeeld link 1</a></li>
-      <li><a href="{base}/">Voorbeeld link 2</a></li>
-      <li><a href="{base}/">Voorbeeld link 3</a></li>
-      <li><a href="{base}/">Voorbeeld link 4</a></li>
+      <li><a href="/">Voorbeeld link 1</a></li>
+      <li><a href="/">Voorbeeld link 2</a></li>
+      <li><a href="/">Voorbeeld link 3</a></li>
+      <li><a href="/">Voorbeeld link 4</a></li>
     </ul>
   </nav>
   <div class="page-content">
@@ -96,4 +96,4 @@ Zie het zijmenu van deze pagina.
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen]({base}/getting-started/installation)
+[Componenten gebruiken en styling toevoegen](/getting-started/installation)
