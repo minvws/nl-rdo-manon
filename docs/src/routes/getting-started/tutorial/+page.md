@@ -54,7 +54,7 @@ het volgende:
     "@minvws/manon-themes": "^18.0.0"
   },
   "devDependencies": {
-    "sass": "^1.89.0"
+    "sass": "^1.92.1"
   }
 }
 ```
@@ -154,8 +154,8 @@ beginnen met de header, hoofdinhoud en footer-secties.
 ### Header
 
 Eerst moeten we de
-[header navigation component](/library/components/header-navigation)
-importeren in ons `main.scss`-bestand:
+[header navigation component](/library/components/header-navigation) importeren
+in ons `main.scss`-bestand:
 
 ```scss
 // main.scss
@@ -165,6 +165,7 @@ importeren in ons `main.scss`-bestand:
 
 // Importeer de header navigation component
 @use "@minvws/manon/components/header";
+@use "@minvws/manon/components/skip-to-content";
 ```
 
 Vervolgens voegen we de volgende HTML toe aan ons `index.html`-bestand om een
@@ -236,8 +237,8 @@ pagina maken.
 Voeg de volgende imports toe aan je `main.scss`:
 
 ```scss
-@use "@minvws/manon/main";
-@use "@minvws/manon/section";
+@use "@minvws/manon/components/main";
+@use "@minvws/manon/components/section";
 ```
 
 Ons `main.scss`-bestand zou er nu als volgt uit moeten zien:
@@ -248,9 +249,13 @@ Ons `main.scss`-bestand zou er nu als volgt uit moeten zien:
 // Theme that we're going to use for our page
 @use "@minvws/manon-themes/icore-open";
 
+// Importeer de header navigation component
+@use "@minvws/manon/components/header";
+@use "@minvws/manon/components/skip-to-content";
+
 // Layout
-@use "@minvws/manon/main";
-@use "@minvws/manon/section";
+@use "@minvws/manon/components/main";
+@use "@minvws/manon/components/section";
 ```
 
 Vervolgens updaten we ons `index.html`-bestand om het hoofdinhoudgebied op te
@@ -286,7 +291,7 @@ Hiermee kunnen we een `footer`-sectie aan onze pagina toevoegen.
 Voeg de volgende import toe aan je `main.scss`:
 
 ```scss
-@use "@minvws/manon/footer";
+@use "@minvws/manon/components/footer";
 ```
 
 Ons `main.scss`-bestand zou er nu als volgt uit moeten zien:
@@ -294,13 +299,17 @@ Ons `main.scss`-bestand zou er nu als volgt uit moeten zien:
 ```scss
 // main.scss
 
-// Theme that we're going to use for our page
+// Thema dat we gaan gebruiken voor onze pagina
 @use "@minvws/manon-themes/icore-open";
 
+// Importeer de header navigation component
+@use "@minvws/manon/components/header";
+@use "@minvws/manon/components/skip-to-content";
+
 // Layout
-@use "@minvws/manon/main";
-@use "@minvws/manon/section";
-@use "@minvws/manon/footer";
+@use "@minvws/manon/components/main";
+@use "@minvws/manon/components/section";
+@use "@minvws/manon/components/footer";
 ```
 
 Vervolgens updaten we ons `index.html`-bestand om de footer-sectie op te nemen.
@@ -325,5 +334,5 @@ Nu we onze basislayout hebben met `header`, `main` en `footer`, kunnen we
 beginnen met het toevoegen van meer componenten aan onze pagina. We kunnen het
 Manon-framework gebruiken om verschillende componenten zoals knoppen,
 formulieren en meer toe te voegen. Zie de
-[Manon-documentatie - Componenten]({base}/library) voor een lijst van beschikbare
-componenten en hoe je ze kunt gebruiken.
+[Manon-documentatie - Componenten]({base}/library) voor een lijst van
+beschikbare componenten en hoe je ze kunt gebruiken.
