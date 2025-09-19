@@ -25,7 +25,7 @@
     <ul>
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
-      <li><a href="#quick-start">Snelstart</a></li>
+      <li><a href="#quickstart">Snelstart</a></li>
     </ul>
   </SideMenu>
   <article>
@@ -34,7 +34,7 @@
       <section>
         <p>Voor het selecteren van rijen van een tabel.</p>
 
-        <h2 id="quick-start">Snelstart:</h2>
+        <h2 id="quickstart">Snelstart:</h2>
         <p>SCSS importeren:</p>
         <Code
           language="css"

@@ -7,9 +7,11 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden
+<h2 id="introduction">Introductie</h2>
+
+Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden
 om een titel toe te voegen met daarin de omschrijving van de tabel. Voeg direct
-binnen de `table` een `caption` toe om de titel toe te voegen.</p>
+binnen de `table` een `caption` toe om de titel toe te voegen.
 
 Het toevoegen van een `caption` vergroot de gebruiksvriendelijkheid van de site.
 Gebruik maken van een `caption` helpt gebruikers om snel te kunnen bepalen of de

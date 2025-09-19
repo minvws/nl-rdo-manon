@@ -20,7 +20,7 @@ const config = {
         console.error(`Referrer: ${referrer}`);
 
         // Skip base path errors during prerendering
-        if (message.includes("404") || message.includes("does not begin with `base`")) {
+        if (message.includes("404") && message.includes("does not begin with `base`")) {
           return;
         }
         throw new Error(message);
@@ -44,6 +44,16 @@ const config = {
       base: process.argv.includes("dev") ? "" : process.env.BASE_PATH || "",
       relative: true,
     },
+  },
+  onwarn: (warning, handler) => {
+    // Ignore empty fragment URLs
+    if (
+      warning.code === "a11y_invalid_attribute" &&
+      warning.message.includes("'#' is not a valid href attribute")
+    ) {
+      return;
+    }
+    handler(warning);
   },
   preprocess: [
     vitePreprocess(),

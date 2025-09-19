@@ -3,13 +3,13 @@ title: Notifactie op een paragraaf
 breadcrumb: Notifactie op een paragraaf
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
 <p id="introduction">Voor het weergeven van notificatie op paragrafen</p>
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

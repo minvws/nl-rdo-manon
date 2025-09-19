@@ -7,6 +7,8 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
+<h2 id="introduction">Introductie</h2>
+
 Gebruik deze classes voor smallere of bredere weergave van content-blokken dan de standaard ingestelde maximale breedte.
 Bijvoorbeeld voor blokken met alleen een formulier of blokken in de authenticatie-flow zoals een login-scherm.
 

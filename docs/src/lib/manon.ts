@@ -5,6 +5,7 @@ export async function initManon() {
     import("@minvws/manon/js/filters.js"),
     import("@minvws/manon/js/form-help.js"),
     import("@minvws/manon/js/language-selector.js"),
+    import("@minvws/manon/js/tabs.js"),
   ]);
 }
 

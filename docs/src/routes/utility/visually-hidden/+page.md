@@ -7,10 +7,12 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
+<h2 id="introduction">Introductie</h2>
+
 Verbergt objecten alleen visueel. Voor screenreaders blijven de objecten
 zichtbaar.
 
-<h2 id="quick-start">Snelstart</h2>
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

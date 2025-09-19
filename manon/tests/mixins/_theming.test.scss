@@ -77,12 +77,10 @@
         }
       }
 
-      /* stylelint-disable block-no-empty */
       @include expect {
         .test {
         }
       }
-      /* stylelint-enable block-no-empty */
     }
   }
 }

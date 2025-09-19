@@ -5,7 +5,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Knoppen groeperen</p>
+<h2 id="introduction">Introductie</h2>
+
+Knoppen groeperen
 
 <h2 id="quickstart">Snelstart</h2>
 

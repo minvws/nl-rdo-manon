@@ -9,7 +9,7 @@ nav:
 
 <h1 id="introduction">Introductie</h1>
 
-<p id="introduction">Voor het weergeven van de main op de pagina</p>
+Voor het weergeven van de main op de pagina
 
 <h2 id="quickstart">Snelstart</h2>
 

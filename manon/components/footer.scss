@@ -45,22 +45,54 @@ body > footer,
 
   a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: theme.$footer-link-text-decoration;
 
     @include theming.apply-from-theme(
       (
-        font-size: theme.$footer-link-font-size,
-        font-weight: theme.$footer-link-font-weight,
-        line-height: theme.$footer-link-line-height,
-        background-color: theme.$footer-link-background-color,
         color: theme.$footer-link-text-color,
-        text-decoration: theme.$footer-link-text-decoration,
-        border-width: theme.$footer-link-border-width,
-        border-style: theme.$footer-link-border-style,
-        border-color: theme.$footer-link-border-color,
-        border-radius: theme.$footer-link-border-radius,
       )
     );
+
+    &:hover {
+      @include theming.apply-from-theme(
+        (
+          color: theme.$footer-link-hover-text-color,
+        )
+      );
+    }
+
+    &:visited {
+      @include theming.apply-from-theme(
+        (
+          color: theme.$footer-link-visited-text-color,
+        )
+      );
+
+      &:hover {
+        @include theming.apply-from-theme(
+          (
+            color: theme.$footer-link-visited-hover-text-color,
+          )
+        );
+      }
+    }
+
+    &[aria-current="page"],
+    &[aria-current="page"]:hover,
+    &:hover,
+    &:visited:hover,
+    &[aria-current="page"]:visited:hover {
+      @include theming.apply-from-theme(
+        (
+          color: theme.$footer-link-current-text-color,
+          background-color: theme.$footer-link-current-background-color,
+          text-decoration: theme.$footer-link-current-text-decoration,
+          border-width: theme.$footer-link-current-border-width,
+          border-style: theme.$footer-link-current-border-style,
+          border-color: theme.$footer-link-current-border-color,
+        )
+      );
+    }
   }
 
   ul,

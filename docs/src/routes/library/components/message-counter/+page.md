@@ -7,8 +7,10 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">De notificatie-teller is bedoeld om de gebruiker te attenderen en te informeren
-over nieuwe berichten of notificaties.</p>
+<h2 id="introduction">Introductie</h2>
+
+De notificatie-teller is bedoeld om de gebruiker te attenderen en te informeren
+over nieuwe berichten of notificaties.
 
 <h2 id="quickstart">Snelstart</h2>
 

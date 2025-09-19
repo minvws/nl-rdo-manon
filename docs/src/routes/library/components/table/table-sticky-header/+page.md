@@ -3,15 +3,16 @@ title: "sticky header"
 breadcrumb: "sticky header"
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">
-Voor lange tabellen kan het gewenst zijn om de tabel-header in het zicht te
-houden zodat de gebruiker de titels kan zien.</p>
+<h2 id="introduction">Introductie</h2>
 
-<h2 id="quick-start">Snelstart</h2>
+Voor lange tabellen kan het gewenst zijn om de tabel-header in het zicht te
+houden zodat de gebruiker de titels kan zien.
+
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

@@ -13,3 +13,7 @@
   <li><NavLink href="{base}/utility">Utility Classes</NavLink></li>
   <li><NavLink href="{base}/examples">Voorbeelden</NavLink></li>
 </ul>
+
+<ul>
+  <li><a href="https://github.com/minvws/nl-rdo-manon/" target="_blank">GitHub ↗</a></li>
+</ul>

@@ -3,13 +3,15 @@ title: Tabelrichting
 breadcrumb: Tabelrichting
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quick-start"
+  - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Voor het weergeven van de tabelrichting</p>
+<h2 id="introduction">Introductie</h2>
 
-<h2 id="quick-start">Snelstart</h2>
+Voor het weergeven van de tabelrichting
+
+<h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 

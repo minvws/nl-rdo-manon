@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Fieldset Radio-selecteerknop - radio</p>
+<h2 id="introduction">Introductie</h2>
+
+Een fieldset met radio-selectieknoppen groepeert meerdere keuzemogelijkheden die onderling exclusief zijn. De gebruiker kan hierdoor slechts één optie tegelijk selecteren, wat handig is bij vragen met vaste antwoordcategorieën.
 
 <h2 id="quickstart">Snelstart</h2>
 

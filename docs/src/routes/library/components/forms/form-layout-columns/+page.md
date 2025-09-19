@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Voor het weergeven van de inhoud van het formulier in kolommen.</p>
+<h2 id="introduction">Introductie</h2>
+
+Voor het weergeven van de inhoud van het formulier in kolommen.
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -17,8 +19,8 @@ nav:
 
 <p class="warning">
   <span>Waarschuwing:</span>
-    <code>fieldset</code>met een <code>column-*</code>class met daarbinnen een
-    <code>&lt;input type="date"&gt;</code> kunnen buiten de breedte van het formulier lopen.
+    fieldset met een column-* class met daarbinnen een
+    input type="date" kunnen buiten de breedte van het formulier lopen.
 </p>
 
 <h2 id="examples">Voorbeelden</h2>

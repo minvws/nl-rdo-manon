@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Voor het geven van extra toelichting op een invoerveld.</p>
+<h2 id="introduction">Introductie</h2>
+
+Hulptesksten (extra toelichting) bij een invoerveld geeft de gebruiker duidelijke aanwijzingen en vermindert fouten, maar te veel uitleg kan juist verwarrend werken.
 
 <h2 id="quickstart">Snelstart</h2>
 

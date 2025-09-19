@@ -4,6 +4,7 @@
 </script>
 
 <footer>
+  <span class="slogan">Manon</span>
   <nav aria-labelledby="footer-heading">
     <SiteNavLinks />
   </nav>

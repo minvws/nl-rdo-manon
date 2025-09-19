@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Knop met openklapbaar menu.</p>
+<h2 id="introduction">Introductie</h2>
+
+Knop met openklapbaar menu.
 
 <h2 id="quickstart">Snelstart</h2>
 

@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Bereik component</p>
+<h2 id="introduction">Introductie</h2>
+
+Een bereikcomponent maakt het mogelijk om met een schuifbalk een waarde binnen een vooraf ingesteld minimum en maximum te selecteren. Dit is vooral handig bij numerieke keuzes, zoals het instellen van een hoeveelheid of een niveau.
 
 <h2 id="quickstart">Snelstart</h2>
 

@@ -7,9 +7,11 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Voor het tonen van grote datasets kan het voor de gebruiksvriendelijkheid fijner
+<h2 id="introduction">Introductie</h2>
+
+Voor het tonen van grote datasets kan het voor de gebruiksvriendelijkheid fijner
 zijn om de data gecomprimeerd weer te geven zodat het makkelijker is voor de
-gebruiker om overzicht te houden.</p>
+gebruiker om overzicht te houden.
 
 <h2 id="quickstart">Snelstart</h2>
 

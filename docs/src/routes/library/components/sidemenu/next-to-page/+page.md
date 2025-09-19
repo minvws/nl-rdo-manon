@@ -8,7 +8,9 @@ nav:
   - Bijbehorende bestanden: "#requirements"
 ---
 
-<p id="introduction">Voor het plaatsen van een zijmenu naast de pagina.</p>
+<h2 id="introduction">Introductie</h2>
+
+Voor het plaatsen van een zijmenu naast de pagina.
 
 Gebruik deze weergave als de inhoud van het zijmenu niet over de content van de
 pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
