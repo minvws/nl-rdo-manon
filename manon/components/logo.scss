@@ -11,6 +11,14 @@ a:focus.logo {
   background-color: theme.$logo-background-color;
   border: 0;
 
+  @if theme.$logo-align-self or
+    theme.$logo-align-items or
+    theme.$logo-justify-content or
+    theme.$logo-gap
+  {
+    display: flex;
+  }
+
   @include theming.apply-from-theme(
     (
       display: theme.$logo-display,
