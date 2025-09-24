@@ -2,8 +2,10 @@ import { globSync } from "glob";
 import path from "path";
 import fs from "fs";
 import * as sass from "sass";
+import { fileURLToPath } from 'url';
 
 const themesFolder = path.resolve("../themes");
+const manonFolder = path.resolve("../manon");
 const themeFiles = globSync("./*/_index.scss", { cwd: themesFolder });
 const outFolder = path.resolve("./dist");
 const tempOutFolder = path.resolve("./.manon");
@@ -33,7 +35,7 @@ for (const file of themeFiles) {
   console.log(`\n🎨 Building theme: ${theme}`);
 
   // Create temporary SCSS file that imports the theme with custom settings
-  const tempScss = `@use "${theme}" with (
+  const tempScss = `@use "../${theme}" with (
     $font-path: "/fonts"
   );`;
 
@@ -46,11 +48,62 @@ for (const file of themeFiles) {
     const result = sass.compile(tempFile, {
       style: "compressed",
       loadPaths: [
+        // Current working directory (where temp files are)
+        tempOutFolder,
         themesFolder,
-        path.resolve("../manon/scss"),
+        manonFolder,
+        path.resolve(manonFolder, "variables"),
+        path.resolve(manonFolder, "colors"),
         path.resolve("../node_modules"),
       ],
+      // Custom importer to handle @minvws/manon imports
+      importers: [{
+        canonicalize(url) {
+          if (url.startsWith('@minvws/manon/')) {
+            const relativePath = url.replace('@minvws/manon/', '');
+            const resolvedPath = path.resolve("../manon", relativePath);
+            return new URL(`file://${resolvedPath}`);
+          }
+          return null;
+        },
+
+        load(canonicalUrl) {
+          const filePath = fileURLToPath(canonicalUrl);
+
+          // Try with _index.scss first
+          let fullPath = path.join(filePath, '_index.scss');
+          if (fs.existsSync(fullPath)) {
+            return {
+              contents: fs.readFileSync(fullPath, 'utf8'),
+              syntax: 'scss'
+            };
+          }
+
+          // Try with .scss extension
+          fullPath = `${filePath}.scss`;
+          if (fs.existsSync(fullPath)) {
+            return {
+              contents: fs.readFileSync(fullPath, 'utf8'),
+              syntax: 'scss'
+            };
+          }
+
+          // Try with underscore prefix and .scss extension
+          const dir = path.dirname(filePath);
+          const name = path.basename(filePath);
+          fullPath = path.join(dir, `_${name}.scss`);
+          if (fs.existsSync(fullPath)) {
+            return {
+              contents: fs.readFileSync(fullPath, 'utf8'),
+              syntax: 'scss'
+            };
+          }
+
+          return null;
+        }
+      }]
     });
+
     fs.writeFileSync(
       path.join(themeOutFolder, `manon.${theme}.css`),
       result.css
