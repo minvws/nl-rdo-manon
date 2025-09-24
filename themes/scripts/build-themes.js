@@ -1,8 +1,8 @@
 import { globSync } from "glob";
-import path from "path";
-import fs from "fs";
+import path from "node:path";
+import fs from "node:fs";
 import * as sass from "sass";
-import { fileURLToPath } from "url";
+import { fileURLToPath } from "node:url";
 
 const themesFolder = path.resolve("../themes");
 const manonFolder = path.resolve("../manon");
