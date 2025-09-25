@@ -9,7 +9,8 @@ main.sidemenu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0;
+  padding: theme.$main-padding-top theme.$main-padding-right
+    theme.$main-padding-bottom theme.$main-padding-left;
 
   @include theming.apply-from-theme(
     (

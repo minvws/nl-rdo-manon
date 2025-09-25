@@ -120,9 +120,9 @@ and spacing sets */
 
   // breadcrumb bar
   $breadcrumb-bar-padding-top: spacing.$spacing-075,
-  $breadcrumb-bar-padding-right: spacing.$spacing-100,
+  $breadcrumb-bar-padding-right: spacing.$spacing-300,
   $breadcrumb-bar-padding-bottom: spacing.$spacing-075,
-  $breadcrumb-bar-padding-left: spacing.$spacing-100,
+  $breadcrumb-bar-padding-left: spacing.$spacing-300,
   $breadcrumb-bar-text-color: semantic.$color-text-default,
   $breadcrumb-bar-gap: spacing.$spacing-100,
   $breadcrumb-bar-list-item-last-child-font-weight: bold,
@@ -246,8 +246,8 @@ and spacing sets */
   $header-font-weight: bold,
   $header-min-height: 4.5rem,
   $header-color: color-scheme.$oc-white,
-  $header-padding-right: spacing.$spacing-300,
-  $header-padding-left: spacing.$spacing-300,
+  $header-padding-right: spacing.$spacing-400,
+  $header-padding-left: spacing.$spacing-400,
 
   // header nav
   $header-navigation-width: 100%,

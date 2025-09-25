@@ -9,7 +9,8 @@
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0;
+  padding: theme.$breadcrumb-bar-padding-top theme.$breadcrumb-bar-padding-right
+    theme.$breadcrumb-bar-padding-bottom theme.$breadcrumb-bar-padding-left;
 
   @include theming.apply-from-theme(
     (
