@@ -3,6 +3,8 @@
 
 %tag,
 .tag {
+  max-width: max-content;
+
   @include theming.apply-from-theme(
     (
       font-size: theme.$tag-font-size,

@@ -1,10 +1,160 @@
-$tags-flex-direction: null !default;
-$tags-align-items: null !default;
-$tags-justify-content: null !default;
-$tags-flex-wrap: null !default;
-$tags-gap: null !default;
-$tags-padding-top: null !default;
-$tags-padding-right: null !default;
-$tags-padding-bottom: null !default;
-$tags-padding-left: null !default;
-$tags-list-style: null !default;
+$tags-flex-direction: row !default;
+$tags-align-items: center !default;
+$tags-justify-content: left !default;
+$tags-flex-wrap: wrap !default;
+$tags-gap: 0.5rem !default;
+$tags-padding-top: 0.25rem !default;
+$tags-padding-right: 0.5rem !default;
+$tags-padding-bottom: 0.25rem !default;
+$tags-padding-left: 0.5rem !default;
+$tags-list-style: none !default;
+
+/* Blue */
+$tags-soft-blue-light-background-color: #eef8fe;
+$tags-soft-blue-light-text-color: #006fb3;
+$tags-soft-blue-light-border-color: #006fb3;
+$tags-soft-blue-medium-background-color: #abdbf8;
+$tags-soft-blue-medium-text-color: #005c94;
+$tags-soft-blue-medium-border-color: #005c94;
+$tags-soft-blue-dark-background-color: #40adef;
+$tags-soft-blue-dark-text-color: #003e64;
+$tags-soft-blue-dark-border-color: #003e64;
+
+/* Green */
+$tags-soft-green-light-background-color: #ebfaef;
+$tags-soft-green-light-text-color: #157b31;
+$tags-soft-green-light-border-color: #157b31;
+$tags-soft-green-medium-background-color: #94e6ab;
+$tags-soft-green-medium-text-color: #116629;
+$tags-soft-green-medium-border-color: #1b9d3f;
+$tags-soft-green-dark-background-color: #20bd4c;
+$tags-soft-green-dark-text-color: #134421;
+$tags-soft-green-dark-border-color: #116629;
+
+/* Yellow */
+$tags-soft-yellow-light-background-color: #fff7cf;
+$tags-soft-yellow-light-text-color: #7d6900;
+$tags-soft-yellow-light-border-color: #7d6900;
+$tags-soft-yellow-medium-background-color: #fecf48;
+$tags-soft-yellow-medium-text-color: #685700;
+$tags-soft-yellow-medium-border-color: #a08700;
+$tags-soft-yellow-dark-background-color: #ddb900;
+$tags-soft-yellow-dark-text-color: #584a00;
+$tags-soft-yellow-dark-border-color: #685700;
+
+/* Orange */
+$tags-soft-orange-light-background-color: #fff5ed;
+$tags-soft-orange-light-text-color: #a75312;
+$tags-soft-orange-light-border-color: #a75312;
+$tags-soft-orange-medium-background-color: #ffcaa1;
+$tags-soft-orange-medium-text-color: #8b450f;
+$tags-soft-orange-medium-border-color: #d66a17;
+$tags-soft-orange-dark-background-color: #ffa865;
+$tags-soft-orange-dark-text-color: #5e2f0a;
+$tags-soft-orange-dark-border-color: #a75312;
+
+/* Red */
+$tags-soft-red-light-background-color: #fff4f3;
+$tags-soft-red-light-text-color: #c3372c;
+$tags-soft-red-light-border-color: #ffa49d;
+$tags-soft-red-medium-background-color: #ffc7c3;
+$tags-soft-red-medium-text-color: #a22e25;
+$tags-soft-red-medium-border-color: #f84638;
+$tags-soft-red-dark-background-color: #ff7d73;
+$tags-soft-red-dark-text-color: #6e1f19;
+$tags-soft-red-dark-border-color: #a22e25;
+
+/* Violet */
+$tags-soft-violet-light-background-color: #f7f6fc;
+$tags-soft-violet-light-text-color: #6e5fae;
+$tags-soft-violet-light-border-color: #bfb6e6;
+$tags-soft-violet-medium-background-color: #d6d1ef;
+$tags-soft-violet-medium-text-color: #5b4f90;
+$tags-soft-violet-medium-border-color: #8c7cd2;
+$tags-soft-violet-dark-background-color: #a89cdd;
+$tags-soft-violet-dark-text-color: #3d3560;
+$tags-soft-violet-dark-border-color: #5b4f90;
+
+/* Color 1 */
+$tags-color-1-background-color: $tags-soft-blue-light-background-color;
+$tags-color-1-text-color: $tags-soft-blue-light-text-color;
+$tags-color-1-border-color: $tags-soft-blue-light-border-color;
+$tags-color-1-light-background-color: $tags-soft-blue-light-background-color;
+$tags-color-1-light-text-color: $tags-soft-blue-light-text-color;
+$tags-color-1-light-border-color: $tags-soft-blue-light-border-color;
+$tags-color-1-medium-background-color: $tags-soft-blue-medium-background-color;
+$tags-color-1-medium-text-color: $tags-soft-blue-medium-text-color;
+$tags-color-1-medium-border-color: $tags-soft-blue-medium-border-color;
+$tags-color-1-dark-background-color: $tags-soft-blue-dark-background-color;
+$tags-color-1-dark-text-color: $tags-soft-blue-dark-text-color;
+$tags-color-1-dark-border-color: $tags-soft-blue-dark-border-color;
+
+/* Color 2 */
+$tags-color-2-background-color: $tags-soft-green-light-background-color;
+$tags-color-2-text-color: $tags-soft-green-light-text-color;
+$tags-color-2-border-color: $tags-soft-green-light-border-color;
+$tags-color-2-light-background-color: $tags-soft-green-light-background-color;
+$tags-color-2-light-text-color: $tags-soft-green-light-text-color;
+$tags-color-2-light-border-color: $tags-soft-green-light-border-color;
+$tags-color-2-medium-background-color: $tags-soft-green-medium-background-color;
+$tags-color-2-medium-text-color: $tags-soft-green-medium-text-color;
+$tags-color-2-medium-border-color: $tags-soft-green-medium-border-color;
+$tags-color-2-dark-background-color: $tags-soft-green-dark-background-color;
+$tags-color-2-dark-text-color: $tags-soft-green-dark-text-color;
+$tags-color-2-dark-border-color: $tags-soft-green-dark-border-color;
+
+/* Color 3 */
+$tags-color-3-background-color: $tags-soft-yellow-light-background-color;
+$tags-color-3-text-color: $tags-soft-yellow-light-text-color;
+$tags-color-3-border-color: $tags-soft-yellow-light-border-color;
+$tags-color-3-light-background-color: $tags-soft-yellow-light-background-color;
+$tags-color-3-light-text-color: $tags-soft-yellow-light-text-color;
+$tags-color-3-light-border-color: $tags-soft-yellow-light-border-color;
+$tags-color-3-medium-background-color: $tags-soft-yellow-medium-background-color;
+$tags-color-3-medium-text-color: $tags-soft-yellow-medium-text-color;
+$tags-color-3-medium-border-color: $tags-soft-yellow-medium-border-color;
+$tags-color-3-dark-background-color: $tags-soft-yellow-dark-background-color;
+$tags-color-3-dark-text-color: $tags-soft-yellow-dark-text-color;
+$tags-color-3-dark-border-color: $tags-soft-yellow-dark-border-color;
+
+/* Color 4 */
+$tags-color-4-background-color: $tags-soft-orange-light-background-color;
+$tags-color-4-text-color: $tags-soft-orange-light-text-color;
+$tags-color-4-border-color: $tags-soft-orange-light-border-color;
+$tags-color-4-light-background-color: $tags-soft-orange-light-background-color;
+$tags-color-4-light-text-color: $tags-soft-orange-light-text-color;
+$tags-color-4-light-border-color: $tags-soft-orange-light-border-color;
+$tags-color-4-medium-background-color: $tags-soft-orange-medium-background-color;
+$tags-color-4-medium-text-color: $tags-soft-orange-medium-text-color;
+$tags-color-4-medium-border-color: $tags-soft-orange-medium-border-color;
+$tags-color-4-dark-background-color: $tags-soft-orange-dark-background-color;
+$tags-color-4-dark-text-color: $tags-soft-orange-dark-text-color;
+$tags-color-4-dark-border-color: $tags-soft-orange-dark-border-color;
+
+/* Color 5 */
+$tags-color-5-background-color: $tags-soft-red-light-background-color;
+$tags-color-5-text-color: $tags-soft-red-light-text-color;
+$tags-color-5-border-color: $tags-soft-red-light-border-color;
+$tags-color-5-light-background-color: $tags-soft-red-light-background-color;
+$tags-color-5-light-text-color: $tags-soft-red-light-text-color;
+$tags-color-5-light-border-color: $tags-soft-red-light-border-color;
+$tags-color-5-medium-background-color: $tags-soft-red-medium-background-color;
+$tags-color-5-medium-text-color: $tags-soft-red-medium-text-color;
+$tags-color-5-medium-border-color: $tags-soft-red-medium-border-color;
+$tags-color-5-dark-background-color: $tags-soft-red-dark-background-color;
+$tags-color-5-dark-text-color: $tags-soft-red-dark-text-color;
+$tags-color-5-dark-border-color: $tags-soft-red-dark-border-color;
+
+/* Color 6 */
+$tags-color-6-background-color: $tags-soft-violet-light-background-color;
+$tags-color-6-text-color: $tags-soft-violet-light-text-color;
+$tags-color-6-border-color: $tags-soft-violet-light-border-color;
+$tags-color-6-light-background-color: $tags-soft-violet-light-background-color;
+$tags-color-6-light-text-color: $tags-soft-violet-light-text-color;
+$tags-color-6-light-border-color: $tags-soft-violet-light-border-color;
+$tags-color-6-medium-background-color: $tags-soft-violet-medium-background-color;
+$tags-color-6-medium-text-color: $tags-soft-violet-medium-text-color;
+$tags-color-6-medium-border-color: $tags-soft-violet-medium-border-color;
+$tags-color-6-dark-background-color: $tags-soft-violet-dark-background-color;
+$tags-color-6-dark-text-color: $tags-soft-violet-dark-text-color;
+$tags-color-6-dark-border-color: $tags-soft-violet-dark-border-color;
