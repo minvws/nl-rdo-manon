@@ -5,6 +5,7 @@ article {
   display: flex;
   width: 100%;
   flex-direction: theme.$article-flex-direction;
+  min-width: 0;
 
   @if theme.$article-max-width {
     margin: 0 auto;
