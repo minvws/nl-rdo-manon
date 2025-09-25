@@ -3,3 +3,5 @@ node_modules/
 .github/
 examples/
 pnpm-lock.yaml
+docs/build/
+.venv/

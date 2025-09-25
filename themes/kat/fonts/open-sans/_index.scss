@@ -1,0 +1,33 @@
+@use "../../config";
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("#{config.$font-path}/open-sans/OpenSans-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: italic;
+  src: url("#{config.$font-path}/open-sans/OpenSans-Italic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: normal;
+  src: url("#{config.$font-path}/open-sans/OpenSans-Bold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: italic;
+  src: url("#{config.$font-path}/open-sans/OpenSans-BoldItalic.ttf")
+    format("truetype");
+}

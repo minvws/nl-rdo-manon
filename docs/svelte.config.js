@@ -13,6 +13,28 @@ const config = {
     adapter: adapter(),
     prerender: {
       entries: ["*", ...Object.keys(redirects)],
+      handleHttpError: ({ path, referrer, message }) => {
+        // Log the error for debugging
+        console.error(`Prerender HTTP error: ${message}`);
+        console.error(`Path: ${path}`);
+        console.error(`Referrer: ${referrer}`);
+
+        // Skip base path errors during prerendering
+        if (message.includes("404") && message.includes("does not begin with `base`")) {
+          return;
+        }
+        throw new Error(message);
+      },
+      handleMissingId: ({ path, id, referrers, message }) => {
+        // Log the missing ID error for debugging
+        console.error(`Missing ID error: ${message}`);
+        console.error(`Path: ${path}`);
+        console.error(`Missing ID: ${id}`);
+        console.error(`Referrers: ${referrers?.length ? referrers.join(", ") : "(none)"}`);
+        console.error("");
+
+        throw new Error(message);
+      },
     },
     alias: {
       $scss: "src/scss",
@@ -22,6 +44,16 @@ const config = {
       base: process.argv.includes("dev") ? "" : process.env.BASE_PATH || "",
       relative: true,
     },
+  },
+  onwarn: (warning, handler) => {
+    // Ignore empty fragment URLs
+    if (
+      warning.code === "a11y_invalid_attribute" &&
+      warning.message.includes("'#' is not a valid href attribute")
+    ) {
+      return;
+    }
+    handler(warning);
   },
   preprocess: [
     vitePreprocess(),

@@ -1,0 +1,50 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "tag";
+
+.tags {
+  /* render each div directly within a tags group as a tag */
+  > p,
+  > span {
+    @extend %tag;
+  }
+}
+
+table.tags,
+table .tags {
+  td {
+    p,
+    span {
+      @extend %tag;
+    }
+  }
+}
+
+ul.tags {
+  padding: 0;
+
+  > li {
+    @extend %tag;
+    @include theming.apply-from-theme(
+      (
+        list-style: theme.$tags-list-style,
+      )
+    );
+  }
+}
+
+.tags.horizontal {
+  @include theming.apply-from-theme(
+    (
+      flex-direction: theme.$tags-flex-direction,
+      align-items: theme.$tags-align-items,
+      justify-content: theme.$tags-justify-content,
+      flex-wrap: theme.$tags-flex-wrap,
+      gap: theme.$tags-gap,
+      padding-top: theme.$tags-padding-top,
+      padding-right: theme.$tags-padding-right,
+      padding-bottom: theme.$tags-padding-bottom,
+      padding-left: theme.$tags-padding-left,
+    )
+  );
+}

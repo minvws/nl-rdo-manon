@@ -1,0 +1,40 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  /* Set to always fill the page and the footer
+  will never be in the middle of the screen  		*/
+
+  min-height: 100vh;
+
+  /* Fallback set to a white because some browsers 
+  (e.g: firefox on linux) do not use white as a 
+  default color but this is often expected.		  */
+
+  /* When the page doesn't have enough content to 
+  fill the screen height this will place the 
+  footer at the bottom of the screen 				    */
+
+  > main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  @include theming.apply-from-theme(
+    (
+      background-color: theme.$base-background-color,
+      color: theme.$base-text-color,
+      font-family: theme.$base-font-family,
+      font-size: theme.$base-font-size,
+      line-height: theme.$base-line-height,
+      font-weight: theme.$base-font-weight,
+      text-align: theme.$base-text-align,
+    )
+  );
+}
