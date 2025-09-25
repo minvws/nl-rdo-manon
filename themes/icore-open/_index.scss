@@ -8,7 +8,7 @@
 /* These are core sets like color schemes, fonts
 and spacing sets */
 @use "core/border-radii" as border-radii;
-@use "core/color-scheme/" as color-scheme;
+@use "core/color-scheme" as color-scheme;
 @use "core/shadow" as shadow;
 @use "core/spacing" as spacing;
 @use "core/typography/font-size/body-text" as body-text;
