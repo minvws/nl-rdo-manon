@@ -39,6 +39,7 @@ input[type="reset"] {
       border-radius: theme.$button-border-radius,
       webkit-border-radius: theme.$button-border-radius,
       webkit-appearance: theme.$button-appearance,
+      margin: theme.$button-margin,
     )
   );
 

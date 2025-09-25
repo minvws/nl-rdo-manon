@@ -1,0 +1,13 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+.introduction {
+  @include theming.apply-from-theme(
+    (
+      font-size: theme.$introduction-font-size,
+      font-weight: theme.$introduction-font-weight,
+      line-height: theme.$introduction-line-height,
+      color: theme.$introduction-text-color,
+    )
+  );
+}

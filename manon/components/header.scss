@@ -117,6 +117,7 @@ body > header,
         font-weight: theme.$header-list-font-weight,
         width: theme.$header-list-width,
         height: theme.$header-list-height,
+        min-height: theme.$header-list-min-height,
       )
     );
 

@@ -42,6 +42,7 @@
 @use "@minvws/manon/components/form-fieldset-radio";
 @use "@minvws/manon/components/form-fieldset-visually-hidden-horizontal";
 @use "@minvws/manon/components/form-grouped-choice-list";
+@use "@minvws/manon/components/form-textarea";
 @use "@minvws/manon/components/form-help";
 @use "@minvws/manon/components/form-horizontal";
 @use "@minvws/manon/components/form-input";
@@ -61,6 +62,8 @@
 @use "@minvws/manon/components/layout-footer";
 @use "@minvws/manon/components/link";
 @use "@minvws/manon/components/list";
+@use "@minvws/manon/components/img";
+@use "@minvws/manon/components/introduction";
 @use "@minvws/manon/components/login-meta";
 @use "@minvws/manon/components/logo";
 @use "@minvws/manon/components/navigation";

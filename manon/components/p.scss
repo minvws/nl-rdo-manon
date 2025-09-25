@@ -12,6 +12,7 @@ p {
       font-weight: theme.$p-font-weight,
       background-color: theme.$p-background-color,
       max-width: theme.$p-max-width,
+      margin: theme.$p-margin,
     )
   );
 }
