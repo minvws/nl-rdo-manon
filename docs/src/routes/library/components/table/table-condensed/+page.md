@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Voor het tonen van grote datasets kan het voor de gebruiksvriendelijkheid fijner
+Voor het tonen van grote datasits kan het voor de gebruiksvriendelijkheid fijner
 zijn om de data gecomprimeerd weer te geven zodat het makkelijker is voor de
 gebruiker om overzicht te houden.
 
@@ -28,7 +28,7 @@ SCSS importeren:
 
 <p class="explanation">
   <span>Aandachtspunten:</span>
-  Voor het tonen van grote datasets kan het voor de gebruiksvriendelijkheid
+  Voor het tonen van grote datasits kan het voor de gebruiksvriendelijkheid
   fijner zijn om de data gecomprimeerd weer te geven zodat het makkelijker is
   voor de gebruiker om overzicht te houden.
 </p>
@@ -49,17 +49,17 @@ SCSS importeren:
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
     </tbody>
   </table>
@@ -82,12 +82,12 @@ SCSS importeren:
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>

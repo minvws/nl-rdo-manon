@@ -64,22 +64,22 @@ SCSS importeren:
           incididunt ut labore et dolore magna aliqua.</td
         >
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
     </tbody>
   </table>
@@ -105,22 +105,22 @@ SCSS importeren:
           ut labore et dolore magna aliqua.
         </td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
     </tbody>
   </table>

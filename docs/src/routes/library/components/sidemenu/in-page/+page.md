@@ -67,7 +67,7 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
   <article>
     <div>
       <h2>Lorem ipsum</h2>
-      <p>Dolor set amet conseqtetur adepicing elit</p>
+      <p>Dolor sit amet conseqtetur adepicing elit</p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus ac turpis convallis
         vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
