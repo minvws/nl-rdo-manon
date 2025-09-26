@@ -32,7 +32,7 @@ SCSS importeren:
     <thead>
       <tr>
         <th scope="col">Lorem ipsum</th>
-        <th scope="col">Dolor set</th>
+        <th scope="col">Dolor sit</th>
         <th scope="col">Total</th>
       </tr>
     </thead>
@@ -58,7 +58,7 @@ SCSS importeren:
     <thead>
       <tr>
         <th scope="col">Lorem ipsum</th>
-        <th scope="col">Dolor set</th>
+        <th scope="col">Dolor sit</th>
         <th scope="col">Total</th>
       </tr>
     </thead>

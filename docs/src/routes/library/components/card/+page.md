@@ -23,7 +23,7 @@ Een kaart groepeert gerelateerde informatie in één duidelijk visueel blok, zod
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   <ul>
     <li>Lorem ipsum</li>
-    <li>Dolor set</li>
+    <li>Dolor sit</li>
   </ul>
   <button>Lorem ipsum</button>
 </div>
@@ -33,7 +33,7 @@ Een kaart groepeert gerelateerde informatie in één duidelijk visueel blok, zod
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   <ul>
     <li>Lorem ipsum</li>
-    <li>Dolor set</li>
+    <li>Dolor sit</li>
   </ul>
   <button>Lorem ipsum</button>
 </div>

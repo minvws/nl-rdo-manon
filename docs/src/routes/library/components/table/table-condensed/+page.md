@@ -49,17 +49,17 @@ SCSS importeren:
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
     </tbody>
   </table>
@@ -82,12 +82,12 @@ SCSS importeren:
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>

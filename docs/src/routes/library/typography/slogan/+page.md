@@ -23,16 +23,16 @@ SCSS importeren:
 
 ### Voorbeeld: link
 
-<a href="#" class="slogan">Lorem ipsum dolor set amet</a>
+<a href="#" class="slogan">Lorem ipsum dolor sit amet</a>
 
 ```html
-<a href="#" class="slogan">Lorem ipsum dolor set amet</a>
+<a href="#" class="slogan">Lorem ipsum dolor sit amet</a>
 ```
 
 ### Voorbeeld: span
 
-<span class="slogan">Lorem ipsum dolor set amet</span>
+<span class="slogan">Lorem ipsum dolor sit amet</span>
 
 ```html
-<span class="slogan">Lorem ipsum dolor set amet</span>
+<span class="slogan">Lorem ipsum dolor sit amet</span>
 ```
