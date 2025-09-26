@@ -10,9 +10,10 @@ input[type="reset"] {
   overflow-wrap: break-word;
   width: auto;
   align-items: center;
-  align-self: flex-start;
   margin: 0;
   box-sizing: border-box;
+  font-weight: theme.$button-font-weight;
+  font-size: inherit;
 
   @include theming.apply-from-theme(
     (
@@ -22,7 +23,6 @@ input[type="reset"] {
       color: theme.$button-text-color,
       font-family: theme.$button-font-family,
       font-size: theme.$button-font-size,
-      font-weight: theme.$button-font-weight,
       line-height: theme.$button-line-height,
       text-decoration: theme.$button-text-decoration,
       text-align: theme.$button-text-align,
@@ -39,6 +39,7 @@ input[type="reset"] {
       border-radius: theme.$button-border-radius,
       webkit-border-radius: theme.$button-border-radius,
       webkit-appearance: theme.$button-appearance,
+      margin: theme.$button-margin,
     )
   );
 
@@ -106,7 +107,8 @@ a.button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  display: flex;
+  display: inline-flex;
+  cursor: pointer;
 }
 
 a.button {

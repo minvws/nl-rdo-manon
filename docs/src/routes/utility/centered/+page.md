@@ -16,8 +16,7 @@ Centreerd de inhoud van het element op zowel de horizontale als de verticale as.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/layout";
-@use "@minvws/manon/layout-centered";
+@use "@minvws/manon/utility/centered";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

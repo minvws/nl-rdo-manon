@@ -15,6 +15,15 @@ $accordion-button-font-size: null !default;
 $accordion-button-font-weight: null !default;
 $accordion-button-border-radius: null !default;
 
+// First button
+$accordion-button-first-border-width: null !default;
+
+// Hover
+$accordion-button-hover-text-color: null !default;
+$accordion-button-hover-background-color: null !default;
+$accordion-button-hover-border-width: null !default;
+$accordion-button-hover-border-color: null !default;
+
 // Content
 $accordion-content-gap: null !default;
 $accordion-content-padding: null !default;
@@ -38,6 +47,12 @@ $accordion-button-icon-before-font-size: null !default;
 $accordion-button-icon-after-open-content: null !default;
 $accordion-button-icon-font-family: null !default;
 $accordion-button-icon-after-font-size: null !default;
+
+// Expanded
+$accordion-button-expanded-text-color: null !default;
+$accordion-button-expanded-background-color: null !default;
+$accordion-button-expanded-border-width: null !default;
+$accordion-button-expanded-border-color: null !default;
 
 // Expanded state (Aria expanded) before
 $accordion-button-icon-before-close-content: null !default;

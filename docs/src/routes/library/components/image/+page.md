@@ -16,6 +16,7 @@ De `image` component wordt gebruikt om afbeeldingen weer te geven. Het is een ee
 
 <ul>
     <li><a href="{base}/library/components/image/image-cover">Cover</a></li>
+    <li><a href="{base}/library/components/image/image-background">Background</a></li>
     <li><a href="{base}/library/components/image/image-icon">Icoon</a></li>
     <li><a href="{base}/library/components/image/image-round">Rond</a></li>
     <li><a href="{base}/library/components/image/image-square">Vierkant</a></li>

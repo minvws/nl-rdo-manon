@@ -44,6 +44,14 @@ main.sidemenu {
     }
   }
 
+  a {
+    @include theming.apply-from-theme(
+      (
+        text-decoration: theme.$sidemenu-text-decoration,
+      )
+    );
+  }
+
   > nav {
     display: none;
 

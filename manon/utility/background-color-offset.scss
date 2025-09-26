@@ -10,3 +10,13 @@
     )
   );
 }
+
+.background-color-offset-1 {
+  background-color: theme.$background-color-offset-1-background-color;
+
+  @include theming.apply-from-theme(
+    (
+      color: theme.$background-color-offset-1-text-color,
+    )
+  );
+}

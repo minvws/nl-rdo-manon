@@ -42,6 +42,44 @@ body > footer,
     )
   );
 
+  .content-wrapper {
+    flex-direction: theme.$footer-content-wrapper-flex-direction;
+    align-items: theme.$footer-content-wrapper-align-items;
+
+    @if theme.$footer-content-wrapper-gap or
+      theme.$footer-content-wrapper-justify-content
+    {
+      display: flex;
+      width: 100%;
+    }
+
+    @if theme.$footer-content-wrapper-max-width {
+      margin: 0 auto;
+    }
+
+    @if theme.$footer-content-wrapper-padding-top or
+      theme.$footer-content-wrapper-padding-right or
+      theme.$footer-content-wrapper-padding-bottom or
+      theme.$footer-content-wrapper-padding-left
+    {
+      box-sizing: border-box;
+    }
+
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$footer-content-wrapper-background-color,
+        justify-content: theme.$footer-content-wrapper-justify-content,
+        gap: theme.$footer-content-wrapper-gap,
+        padding-top: theme.$footer-content-wrapper-padding-top,
+        padding-right: theme.$footer-content-wrapper-padding-right,
+        padding-bottom: theme.$footer-content-wrapper-padding-bottom,
+        padding-left: theme.$footer-content-wrapper-padding-left,
+        max-width: theme.$footer-content-wrapper-max-width,
+        border-radius: theme.$footer-content-wrapper-border-radius,
+      )
+    );
+  }
+
   a {
     color: inherit;
     text-decoration: theme.$footer-link-text-decoration;
@@ -99,7 +137,6 @@ body > footer,
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0;
     margin: 0;
 
     @include theming.apply-from-theme(
@@ -111,13 +148,13 @@ body > footer,
         font-weight: theme.$footer-list-font-weight,
         width: theme.$footer-list-width,
         flex-direction: theme.$footer-list-flex-direction,
+        padding: theme.$footer-list-padding,
       )
     );
 
     li {
       display: flex;
       list-style: none;
-      padding: 0;
       box-sizing: border-box;
 
       @include theming.apply-from-theme(

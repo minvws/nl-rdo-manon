@@ -5,6 +5,7 @@ article {
   display: flex;
   width: 100%;
   flex-direction: theme.$article-flex-direction;
+  align-items: theme.$article-align-items;
 
   @if theme.$article-max-width {
     margin: 0 auto;
@@ -20,8 +21,7 @@ article {
 
   @if theme.$article-flex-direction or
     theme.$article-gap or
-    theme.$article-justify-content or
-    theme.$article-align-items
+    theme.$article-justify-content
   {
     display: flex;
   }
@@ -30,7 +30,6 @@ article {
     (
       background-color: theme.$article-background-color,
       justify-content: theme.$article-justify-content,
-      align-items: theme.$article-align-items,
       gap: theme.$article-gap,
       padding-top: theme.$article-padding-top,
       padding-right: theme.$article-padding-right,
@@ -43,9 +42,9 @@ article {
 
   .content-wrapper {
     flex-direction: theme.$article-content-wrapper-flex-direction;
+    align-items: theme.$article-content-wrapper-align-items;
 
     @if theme.$article-content-wrapper-gap or
-      theme.$article-content-wrapper-align-items or
       theme.$article-content-wrapper-justify-content
     {
       display: flex;
@@ -68,7 +67,6 @@ article {
       (
         background-color: theme.$article-content-wrapper-background-color,
         justify-content: theme.$article-content-wrapper-justify-content,
-        align-items: theme.$article-content-wrapper-align-items,
         gap: theme.$article-content-wrapper-gap,
         padding-top: theme.$article-content-wrapper-padding-top,
         padding-right: theme.$article-content-wrapper-padding-right,
