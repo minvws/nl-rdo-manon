@@ -47,17 +47,3 @@
   font-display: #{config.$font-display};
   src: url("#{config.$font-path}/IBMPlexSans/IBMPlexSans-BoldItalic.ttf");
 }
-
-@font-face {
-  font-family: "tabler-icons";
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-  src:
-    url("#{config.$font-path}/tabler-icons/tabler-icons.woff2?v3.4.0")
-      format("woff2"),
-    url("#{config.$font-path}/tabler-icons/tabler-icons.woff?v3.4.0")
-      format("woff"),
-    url("#{config.$font-path}/tabler-icons/tabler-icons.ttf?v3.4.0")
-      format("truetype");
-}
