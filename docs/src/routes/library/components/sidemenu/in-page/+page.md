@@ -38,7 +38,7 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
 #### Visueel voorbeeld
 
 <div class="resize">
-  <iframe src="{base}/snippets/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
+  <iframe src="/snippets/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
 </div>
 
 #### HTML-voorbeeld
@@ -49,7 +49,7 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
     <nav>
       <div class="collapsing-element">
         <ul>
-          <li><a href="{base}/">Home</a></li>
+          <li><a href="/">Home</a></li>
         </ul>
       </div>
     </nav>
@@ -58,10 +58,10 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
 <main class="sidemenu">
   <nav aria-label="Zijbalknavigatie">
     <ul>
-      <li><a href="{base}/">Voorbeeld link 1</a></li>
-      <li><a href="{base}/">Voorbeeld link 2</a></li>
-      <li><a href="{base}/">Voorbeeld link 3</a></li>
-      <li><a href="{base}/">Voorbeeld link 4</a></li>
+      <li><a href="/">Voorbeeld link 1</a></li>
+      <li><a href="/">Voorbeeld link 2</a></li>
+      <li><a href="/">Voorbeeld link 3</a></li>
+      <li><a href="/">Voorbeeld link 4</a></li>
     </ul>
   </nav>
   <article>
@@ -102,7 +102,7 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen]({base}/getting-started/installation)
+[Componenten gebruiken en styling toevoegen](/getting-started/installation)
 
 ### Importeer component via npm
 

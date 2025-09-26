@@ -40,7 +40,7 @@ SCSS importeren:
 ### Voorbeeld: `li` als tag
 
 Lijst-element visueel weergegeven als tag. Voor het direct aanspreken van alle
-lijstelementen zie: [tags]({base}/library/components/tags).
+lijstelementen zie: [tags](/library/components/tags).
 
 <ul>
   <li class="tag tags-color-1">Lorem ipsum</li>
@@ -55,7 +55,7 @@ lijstelementen zie: [tags]({base}/library/components/tags).
 ### Voorbeeld: Tags binnen een tabel
 
 Tabel-elementen visueel weergegeven als tag. Voor het direct aanspreken van alle
-tabelelementen zie: [tags]({base}/library/components/tags).
+tabelelementen zie: [tags](/library/components/tags).
 
 <div class="horizontal-scroll">
   <table>

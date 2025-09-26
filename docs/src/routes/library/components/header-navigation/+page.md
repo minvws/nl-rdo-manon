@@ -38,7 +38,7 @@ SCSS importeren:
 ### Voorbeeld: Alleen navigatie
 
 <div class="resize">
-  <iframe src="{base}/snippets/header-navigation" title="Voorbeeld" height="240px"></iframe>
+  <iframe src="/snippets/header-navigation" title="Voorbeeld" height="240px"></iframe>
 </div>
 
 ```html
@@ -54,9 +54,9 @@ SCSS importeren:
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="{base}/">Home</a></li>
-        <li><a href="{base}/library">Componenten</a></li>
-        <li><a href="{base}/documentation">Documentatie</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/library">Componenten</a></li>
+        <li><a href="/documentation">Documentatie</a></li>
       </ul>
     </div>
   </nav>
@@ -67,7 +67,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/snippets/header-navigation-with-content-wrapper"
+    src="/snippets/header-navigation-with-content-wrapper"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -87,9 +87,9 @@ SCSS importeren:
     >
       <div class="collapsing-element">
         <ul>
-          <li><a href="{base}/">Home</a></li>
-          <li><a href="{base}/library">Componenten</a></li>
-          <li><a href="{base}/documentation">Documentatie</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/library">Componenten</a></li>
+          <li><a href="/documentation">Documentatie</a></li>
         </ul>
       </div>
     </nav>
@@ -101,7 +101,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/snippets/header-navigation-with-search"
+    src="/snippets/header-navigation-with-search"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -120,9 +120,9 @@ SCSS importeren:
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="{base}/">Home</a></li>
-        <li><a href="{base}/library">Componenten</a></li>
-        <li><a href="{base}/documentation">Documentatie</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/library">Componenten</a></li>
+        <li><a href="/documentation">Documentatie</a></li>
       </ul>
 
       <div>
@@ -142,7 +142,7 @@ SCSS importeren:
 ### Voorbeeld: Navigatie en logo
 
 <div class="resize">
-  <iframe src="{base}/snippets/header-navigation-with-logo" title="Voorbeeld" height="240px"
+  <iframe src="/snippets/header-navigation-with-logo" title="Voorbeeld" height="240px"
   ></iframe>
 </div>
 
@@ -158,13 +158,13 @@ SCSS importeren:
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-      <a href="{base}/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
+      <a href="/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
 
       <div class="collapsing-element">
         <ul>
-          <li><a href="{base}/">Home</a></li>
-          <li><a href="{base}/library">Componenten</a></li>
-          <li><a href="{base}/documentation">Documentatie</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/library">Componenten</a></li>
+          <li><a href="/documentation">Documentatie</a></li>
         </ul>
       </div>
     </nav>
@@ -176,7 +176,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/snippets/header-navigation-with-multiple-menus"
+    src="/snippets/header-navigation-with-multiple-menus"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -196,13 +196,13 @@ SCSS importeren:
     >
       <div class="collapsing-element">
         <ul>
-          <li><a href="{base}/">Home</a></li>
-          <li><a href="{base}/library">Componenten</a></li>
-          <li><a href="{base}/documentation">Documentatie</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/library">Componenten</a></li>
+          <li><a href="/documentation">Documentatie</a></li>
         </ul>
 
         <ul>
-          <li><a href="{base}/logout">Logout</a></li>
+          <li><a href="/logout">Logout</a></li>
         </ul>
       </div>
     </nav>
@@ -214,7 +214,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/snippets/header-navigation-with-form-button"
+    src="/snippets/header-navigation-with-form-button"
     title="Voorbeeld"
     height="240px"
   ></iframe>
@@ -234,17 +234,17 @@ SCSS importeren:
     >
       <div class="collapsing-element">
         <ul>
-          <li><a href="{base}/">Home</a></li>
-          <li><a href="{base}/library">Componenten</a></li>
-          <li><a href="{base}/documentation">Documentatie</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/library">Componenten</a></li>
+          <li><a href="/documentation">Documentatie</a></li>
         </ul>
 
         <ul class="actions">
           <li>
-            <a href="{base}/snippets/header-navigation-with-form-button" class="avatar">A</a>
+            <a href="/snippets/header-navigation-with-form-button" class="avatar">A</a>
           </li>
           <li>
-            <form action="{base}/logout" method="POST" class="inline">
+            <form action="/logout" method="POST" class="inline">
               <input type="hidden" name="_token" value="" />
               <button type="submit">Logout</button>
             </form>
@@ -260,7 +260,7 @@ SCSS importeren:
 
 <div class="resize">
   <iframe
-    src="{base}/snippets/header-navigation-with-logo"
+    src="/snippets/header-navigation-with-logo"
     title="Voorbeeld"
     height="320px"
   ></iframe>
@@ -270,7 +270,7 @@ SCSS importeren:
 <header>
   <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-  <a href="{base}/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
+  <a href="/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
 
   <nav
     data-open-label="Menu"
@@ -281,13 +281,13 @@ SCSS importeren:
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="{base}/">Home</a></li>
-        <li><a href="{base}/library">Componenten</a></li>
-        <li><a href="{base}/documentation">Documentatie</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/library">Componenten</a></li>
+        <li><a href="/documentation">Documentatie</a></li>
       </ul>
 
       <ul>
-        <li><a href="{base}/logout">Logout</a></li>
+        <li><a href="/logout">Logout</a></li>
       </ul>
     </div>
   </nav>

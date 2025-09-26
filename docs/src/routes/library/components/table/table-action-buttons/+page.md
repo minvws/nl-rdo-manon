@@ -45,7 +45,7 @@ SCSS importeren:
       Voor tabellen met lange lijsten kan het de gebruiker helpen om gebruik te
       maken van de tabel met sticky header zodat de toelichting van de iconen altijd
       in beeld blijft. Voor meer informatie zie:
-      [tabel met sticky header]({base}/components/table-sticky-header).
+      [tabel met sticky header](/components/table-sticky-header).
     </li>
   </ul>
 </div>

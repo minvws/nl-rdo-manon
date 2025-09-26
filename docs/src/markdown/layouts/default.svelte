@@ -6,7 +6,6 @@
 
 <script lang="ts">
   import type { Snippet } from "svelte";
-  import { base } from "$app/paths";
   import { parseNav, type MarkdownNav, type ParsedNav } from "$lib/markdown-nav";
   import SideMenu from "$lib/SideMenu.svelte";
 
@@ -18,9 +17,6 @@
 
   let { title, nav, children }: Props = $props();
   let parsedNav = $derived(parseNav(nav));
-
-  // Make base available to all markdown content
-  globalThis.base = base;
 </script>
 
 <svelte:head>

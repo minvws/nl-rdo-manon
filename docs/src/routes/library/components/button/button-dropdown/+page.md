@@ -37,9 +37,9 @@ import "@minvws/manon/js/collapsible.js";
 >
   <div class="collapsing-element">
     <ul>
-      <li><a href="{base}/library/components/collapsible">Item 1</a></li>
-      <li><a href="{base}/library/components/collapsible">Huidige selectie</a></li>
-      <li><a href="{base}/library/components/collapsible">a</a></li>
+      <li><a href="/library/components/collapsible">Item 1</a></li>
+      <li><a href="/library/components/collapsible">Huidige selectie</a></li>
+      <li><a href="/library/components/collapsible">a</a></li>
     </ul>
   </div>
 </div>
@@ -53,11 +53,11 @@ import "@minvws/manon/js/collapsible.js";
 >
   <div class="collapsing-element">
     <ul>
-      <li><a href="{base}/library/components/collapsible">Item 1</a></li>
+      <li><a href="/library/components/collapsible">Item 1</a></li>
       <li>
-        <a href="{base}/library/components/collapsible">Huidige selectie</a>
+        <a href="/library/components/collapsible">Huidige selectie</a>
       </li>
-      <li><a href="{base}/library/components/collapsible">a</a></li>
+      <li><a href="/library/components/collapsible">a</a></li>
     </ul>
   </div>
 </div>
@@ -73,9 +73,9 @@ import "@minvws/manon/js/collapsible.js";
 
   <div class="collapsing-element">
       <ul>
-          <li><a href="{base}/library/components/collapsible">Item 1</a></li>
-          <li><a href="{base}/library/components/collapsible">Huidige selectie</a></li>
-          <li><a href="{base}/library/components/collapsible">Item 3</a></li>
+          <li><a href="/library/components/collapsible">Item 1</a></li>
+          <li><a href="/library/components/collapsible">Huidige selectie</a></li>
+          <li><a href="/library/components/collapsible">Item 3</a></li>
       </ul>
   </div>
 </div>

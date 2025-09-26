@@ -26,16 +26,16 @@ SCSS importeren:
 ### Voorbeeld: Basis
 
 <div class="resize">
-  <iframe src="{base}/snippets/breadcrumb-bar" title="Voorbeeld"></iframe>
+  <iframe src="/snippets/breadcrumb-bar" title="Voorbeeld"></iframe>
 </div>
 
 ```html
 <nav class="breadcrumb-bar">
   <div>
     <ul>
-      <li><a href="{base}/library/components">Componenten</a></li>
+      <li><a href="/library/components">Componenten</a></li>
       <li>
-        <a href="{base}/library/components/breadcrumb-bar" aria-current="page"
+        <a href="/library/components/breadcrumb-bar" aria-current="page"
           >Kruimelpad - breadcrumb-bar</a
         >
       </li>

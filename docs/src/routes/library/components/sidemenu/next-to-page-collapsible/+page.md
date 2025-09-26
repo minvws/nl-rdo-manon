@@ -15,7 +15,7 @@ pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 
 Gaat de inhoud van het zijmenu over de inhoud van de content. En hoort het bij
 de content. Gebruik dan:
-[Zijmenu binnen de pagina]({base}/library/components/sidemenu/in-page).
+[Zijmenu binnen de pagina](/library/components/sidemenu/in-page).
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -37,7 +37,7 @@ de content. Gebruik dan:
 4.  Voeg de referentie naar het Javascript bestand, `sidemenu.js`, toe aan de
     HTML-pagina's die gebruik dienen te maken van het inklapbare zijmenu. Voor
     meer informatie zie:
-    [JavaScript referentie toevoegen]({base}/getting-started/installation).
+    [JavaScript referentie toevoegen](/getting-started/installation).
 5.  Om het menu standaard gesloten te tonen tot de gebruiker het menu opent.
     Voeg de class `sidemenu-closed` toe aan de `body`.
 
@@ -68,7 +68,7 @@ class `sidemenu-closed` toe aan de `body`.
 
 <div class="resize">
   <iframe
-    src="{base}/snippets/sidemenu-next-to-page-collapsible"
+    src="/snippets/sidemenu-next-to-page-collapsible"
     title="Voorbeeld"
     height="320px"
   ></iframe>
@@ -112,7 +112,7 @@ Het menu is standaard ingeklapt en kan door de gebruiker uitgeklapt worden.
 
 <div class="resize">
   <iframe
-    src="{base}/snippets/sidemenu-next-to-page-expandable"
+    src="/snippets/sidemenu-next-to-page-expandable"
     title="Voorbeeld"
     height="320px"
   ></iframe>
@@ -149,4 +149,4 @@ Het menu is standaard ingeklapt en kan door de gebruiker uitgeklapt worden.
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen]({base}/getting-started/installation)
+[Componenten gebruiken en styling toevoegen](/getting-started/installation)
