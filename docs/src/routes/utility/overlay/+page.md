@@ -25,14 +25,14 @@ SCSS importeren:
 
 <section id="introduction">
   <div class="content-wrapper">
-    <h1 class="page-title heading-xxl">Lorem ipsum dolor sit</h1>
-    <h2>Consectetur adepicing elit</h2>
+    <h1 class="page-title heading-l">Lorem ipsum dolor sit</h1>
+    <p>Consectetur adepicing elit</p>
     <button>Aan de slag</button>
-  </div>
-  <div class="overlay horizontal-scroll">
+    <span class="overlay"></span>
     <img src="$img/strand.jpg" alt="Foto van een strand" class="image-background">
   </div>
 </section>
+
 
 ```html
 <div class="overlay">

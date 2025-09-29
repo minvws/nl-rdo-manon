@@ -526,6 +526,7 @@ and spacing sets */
   $tile-border-style: solid,
   $tile-border-color: color-scheme.$oc-gray-3,
   $tile-border-radius: border-radii.$border-radius-m,
+  $tile-text-color: semantic.$color-text-default,
 
   // tile groups
   $tile-groups-gap: spacing.$spacing-100,
