@@ -42,10 +42,10 @@ In dit voorbeeld staat het zijmenu binnen de pagina bij de content. Gebruik deze
 weergave alleen als de inhoud van het zijmenu specifiek over de content gaat.
 Bijvoorbeeld een inhoudsopgave. Hoort het zijmenu niet bij de inhoud van de
 pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
-[Zijmenu naast de pagina]({base}/library/components/sidemenu/next-to-page).
+[Zijmenu naast de pagina](/library/components/sidemenu/next-to-page).
 
 <div class="resize">
-  <iframe src="{base}/snippets/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
+  <iframe src="/snippets/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
 </div>
 
 ```html
@@ -66,7 +66,7 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
     <nav>
       <div class="collapsing-element">
         <ul>
-          <li><a href="{base}/">Home</a></li>
+          <li><a href="/">Home</a></li>
         </ul>
       </div>
     </nav>
@@ -75,16 +75,16 @@ pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
 <main class="sidemenu">
   <nav aria-label="Zijbalknavigatie">
     <ul>
-      <li><a href="{base}/">Voorbeeld link 1</a></li>
-      <li><a href="{base}/">Voorbeeld link 2</a></li>
-      <li><a href="{base}/">Voorbeeld link 3</a></li>
-      <li><a href="{base}/">Voorbeeld link 4</a></li>
+      <li><a href="/">Voorbeeld link 1</a></li>
+      <li><a href="/">Voorbeeld link 2</a></li>
+      <li><a href="/">Voorbeeld link 3</a></li>
+      <li><a href="/">Voorbeeld link 4</a></li>
     </ul>
   </nav>
   <article>
     <div>
       <h2>Lorem ipsum</h2>
-      <p>Dolor set amet conseqtetur adepicing elit</p>
+      <p>Dolor sit amet conseqtetur adepicing elit</p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus ac turpis convallis
         vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
@@ -124,7 +124,7 @@ header en footer.
 
 <div class="resize">
   <iframe
-    src="{base}/snippets/sidemenu-in-page-collapsible"
+    src="/snippets/sidemenu-in-page-collapsible"
     title="Voorbeeld"
     height="320px"
   ></iframe>
@@ -168,7 +168,7 @@ Gebruik deze weergave als de inhoud van het zijmenu niet over de content van de
 pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 
 <div class="resize">
-  <iframe src="{base}/snippets/sidemenu-next-to-page" title="Voorbeeld" height="320px"
+  <iframe src="/snippets/sidemenu-next-to-page" title="Voorbeeld" height="320px"
   ></iframe>
 </div>
 
@@ -176,10 +176,10 @@ pagina gaat maar website breed is. Zoals bijvoorbeeld hoofdnavigatie.
 <body class="sidemenu">
   <nav>
     <ul>
-      <li><a href="{base}/">Voorbeeld link 1</a></li>
-      <li><a href="{base}/">Voorbeeld link 2</a></li>
-      <li><a href="{base}/">Voorbeeld link 3</a></li>
-      <li><a href="{base}/">Voorbeeld link 4</a></li>
+      <li><a href="/">Voorbeeld link 1</a></li>
+      <li><a href="/">Voorbeeld link 2</a></li>
+      <li><a href="/">Voorbeeld link 3</a></li>
+      <li><a href="/">Voorbeeld link 4</a></li>
     </ul>
   </nav>
   <div class="page-content">
@@ -231,7 +231,7 @@ breed is. Zoals bijvoorbeeld hoofdnavigatie.
 
 <div class="resize">
   <iframe
-    src="{base}/snippets/sidemenu-next-to-page-collapsible"
+    src="/snippets/sidemenu-next-to-page-collapsible"
     title="Voorbeeld"
     height="320px"
   ></iframe>

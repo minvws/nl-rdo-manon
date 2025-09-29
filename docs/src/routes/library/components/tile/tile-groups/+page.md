@@ -23,7 +23,7 @@ Voor het gegroepeerd weergeven van content binnen tegels
   <li>
     Voeg `class="tile"` toe voor de Gegroepeerde content binnen tegels op een
     enkel element. Voor meer informatie zie:
-    [tegelweergave]({base}/library/components/tile)
+    [tegelweergave](/library/components/tile)
   </li>
   <li>
     Voeg de benodigde bestanden toe aan het project. Voor een overzicht van de benodigde en
@@ -37,7 +37,7 @@ Voor het gegroepeerd weergeven van content binnen tegels
 ### Enkel element `div`
 
 <div class="tile" role="group">
-  <h2>Lorem ipsum dolor set</h2>
+  <h2>Lorem ipsum dolor sit</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
     amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -50,7 +50,7 @@ Voor het gegroepeerd weergeven van content binnen tegels
 
 ```html
 <div class="tile" role="group">
-  <h2>Lorem ipsum dolor set</h2>
+  <h2>Lorem ipsum dolor sit</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
     convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
