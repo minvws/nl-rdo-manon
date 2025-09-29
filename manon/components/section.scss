@@ -4,6 +4,7 @@
 section {
   width: 100%;
   flex-direction: theme.$section-flex-direction;
+  min-width: 0;
 
   @if theme.$section-max-width {
     margin: 0 auto;
