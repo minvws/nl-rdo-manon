@@ -25,7 +25,7 @@ SCSS importeren:
 
 <section id="introduction">
   <div class="content-wrapper">
-    <h1 class="page-title heading-xxl">Lorem ipsum dolor set</h1>
+    <h1 class="page-title heading-xxl">Lorem ipsum dolor sit</h1>
     <h2>Consectetur adepicing elit</h2>
     <button>Aan de slag</button>
   </div>
