@@ -18,6 +18,7 @@ table {
       border-width: theme.$table-border-width,
       border-style: theme.$table-border-style,
       border-color: theme.$table-border-color,
+      margin: theme.$table-margin,
     )
   );
 

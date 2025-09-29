@@ -1,0 +1,32 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+.overlay {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: theme.$overlay-background-color;
+    top: 0;
+    left: 0;
+    opacity: theme.$overlay-opacity;
+    z-index: -1;
+  }
+
+  // Placing any background images within the same parent behind the overlay
+  ~ .image-background {
+    z-index: -2;
+  }
+}
+
+*:has(> .overlay) {
+  position: relative;
+  z-index: 0;
+
+  @include theming.apply-from-theme(
+    (
+      color: theme.$overlay-text-color,
+    )
+  );
+}

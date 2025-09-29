@@ -1,7 +1,7 @@
 // tile
 $tile-flex-direction: null !default;
 $tile-justify-content: null !default;
-$tile-align-items: null !default;
+$tile-align-items: flex-start !default;
 $tile-gap: null !default;
 $tile-background-color: null !default;
 $tile-text-color: null !default;
@@ -19,7 +19,7 @@ $tile-image-max-width: null !default;
 $tile-child-pointer-events: null !default;
 
 // tiles
-$tiles-align-items: null !default;
+$tiles-align-items: flex-start !default;
 
 // link
 $tile-link-text-color: null !default;

@@ -32,6 +32,17 @@
       border-radius: theme.$accordion-button-border-radius,
     )
   );
+
+  &:hover {
+    @include theming.apply-from-theme(
+      (
+        color: theme.$accordion-button-hover-text-color,
+        background-color: theme.$accordion-button-hover-background-color,
+        border-width: theme.$accordion-button-hover-border-width,
+        border-color: theme.$accordion-button-hover-border-color,
+      )
+    );
+  }
 }
 
 %accordion-content {
@@ -62,7 +73,7 @@
 }
 
 ul.accordion {
-  padding-left: 0;
+  padding: 0;
   width: 100%;
 
   @extend %accordion;
@@ -71,6 +82,7 @@ ul.accordion {
     list-style: none;
     width: 100%;
     max-width: 100%;
+    padding: 0;
 
     > button {
       @extend %accordion-button;
@@ -84,6 +96,20 @@ ul.accordion {
 
 .accordion {
   @extend %accordion;
+
+  div,
+  section,
+  li {
+    &:first-child {
+      button {
+        @include theming.apply-from-theme(
+          (
+            border-width: theme.$accordion-button-first-border-width,
+          )
+        );
+      }
+    }
+  }
 
   /* Accordion item */
   > div {
@@ -142,6 +168,15 @@ section.accordion {
 
     /* The expanded state */
     button[aria-expanded="true"] {
+      @include theming.apply-from-theme(
+        (
+          color: theme.$accordion-button-expanded-text-color,
+          background-color: theme.$accordion-button-expanded-background-color,
+          border-width: theme.$accordion-button-expanded-border-width,
+          border-color: theme.$accordion-button-expanded-border-color,
+        )
+      );
+
       /* Close icon */
       &::before {
         @include theming.apply-from-theme(

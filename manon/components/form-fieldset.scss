@@ -21,22 +21,37 @@ main section form,
 main article form,
 main div form {
   > fieldset {
+    padding: theme.$form-fieldset-padding;
+
+    @include theming.apply-from-theme(
+      (
+        border-width: theme.$form-fieldset-border-width,
+        border-style: theme.$form-fieldset-border-style,
+        border-color: theme.$form-fieldset-border-color,
+      )
+    );
+
     legend {
       @include theming.apply-from-theme(
         (
           font-weight: theme.$form-fieldset-legend-font-weight,
-          margin-bottom: theme.$form-fieldset-legend-margin-bottom,
+          margin: theme.$form-fieldset-legend-margin,
         )
       );
+    }
+
+    input {
+      margin: theme.$form-fieldset-input-margin;
     }
 
     /*Fieldsets within fieldsets ignore the "*" all selector */
     > *,
     > fieldset {
+      display: inline-block;
+
       @include theming.apply-from-theme(
         (
-          margin-bottom: theme.$form-fieldset-fields-margin-top,
-          padding: theme.$form-fieldset-padding,
+          margin: theme.$form-fieldset-fields-margin,
         )
       );
 
@@ -63,9 +78,13 @@ main div form {
       label {
         @include theming.apply-from-theme(
           (
-            margin-bottom: theme.$form-fieldset-label-margin-bottom,
+            margin: theme.$form-fieldset-label-margin,
           )
         );
+      }
+
+      input {
+        margin: theme.$form-fieldset-input-margin;
       }
     }
 
