@@ -2,9 +2,9 @@
 @use "../variables" as theme;
 
 article {
-  display: flex;
   width: 100%;
   flex-direction: theme.$article-flex-direction;
+  min-width: 0;
   align-items: theme.$article-align-items;
 
   @if theme.$article-max-width {
