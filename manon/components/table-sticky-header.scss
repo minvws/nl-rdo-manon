@@ -3,12 +3,12 @@
 
 .sticky-header {
   position: relative;
+  max-height: theme.$table-sticky-header-max-height;
 
-  @include theming.apply-from-theme(
-    (
-      max-height: theme.$table-sticky-header-max-height,
-    )
-  );
+  thead {
+    position: relative;
+    z-index: 1;
+  }
 
   th {
     position: sticky;

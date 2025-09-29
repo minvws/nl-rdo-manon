@@ -35,7 +35,7 @@ header en footer.</p>
 4.  Voeg de referentie naar het Javascript bestand, `sidemenu.js`, toe aan de
     HTML-pagina's die gebruik dienen te maken van het inklapbare zijmenu. Voor
     meer informatie zie:
-    [JavaScript referentie toevoegen]({base}/getting-started/installation).
+    [JavaScript referentie toevoegen](/getting-started/installation).
 
 ### Sluit- en open-knop als icoonknop instellen zonder tekst
 
@@ -64,7 +64,7 @@ class `sidemenu-closed` toe aan de `body`.
 
 <div class="resize">
   <iframe
-    src="{base}/snippets/sidemenu-in-page-collapsible"
+    src="/snippets/sidemenu-in-page-collapsible"
     title="Voorbeeld"
     height="320px"
   ></iframe>
@@ -97,7 +97,7 @@ Het menu is standaard ingeklapt en kan door de gebruiker uitgeklapt worden.
 #### Visueel voorbeeld
 
 <div class="resize">
-  <iframe src="{base}/snippets/sidemenu-in-page-expandable" title="Voorbeeld" height="320px"
+  <iframe src="/snippets/sidemenu-in-page-expandable" title="Voorbeeld" height="320px"
   ></iframe>
 </div>
 
@@ -122,4 +122,4 @@ Het menu is standaard ingeklapt en kan door de gebruiker uitgeklapt worden.
 <h2 id="requirements">Bijbehorende bestanden</h2>
 
 Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen]({base}/getting-started/installation)
+[Componenten gebruiken en styling toevoegen](/getting-started/installation)

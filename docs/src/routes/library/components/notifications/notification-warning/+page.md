@@ -25,7 +25,7 @@ SCSS importeren:
 
 <div class="warning" role="group" aria-label="waarschuwing">
   <span>Waarschuwing:</span>
-  <h2>Lorem ipsum dolor set</h2>
+  <h2>Lorem ipsum dolor sit</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
     facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
@@ -50,7 +50,7 @@ SCSS importeren:
 ```html
 <div class="warning" role="group" aria-label="waarschuwing">
   <span>Waarschuwing:</span>
-  <h2>Lorem ipsum dolor set</h2>
+  <h2>Lorem ipsum dolor sit</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
     facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus

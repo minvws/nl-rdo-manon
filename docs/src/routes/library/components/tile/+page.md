@@ -29,7 +29,7 @@ zijn of visueel meer aandacht mag krijgen om de gebruiker te attenderen.
 Voeg `class="tile"` toe voor de tegelweergave op een enkel element.
 
 <div class="tile" role="group">
-  <h2>Lorem ipsum dolor set</h2>
+  <h2>Lorem ipsum dolor sit</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
     amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -38,7 +38,7 @@ Voeg `class="tile"` toe voor de tegelweergave op een enkel element.
 
 ```html
 <div class="tile" role="group">
-  <h2>Lorem ipsum dolor set</h2>
+  <h2>Lorem ipsum dolor sit</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
     convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
