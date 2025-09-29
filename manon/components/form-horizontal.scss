@@ -47,7 +47,6 @@ form.horizontal {
           justify-content: theme.$form-horizontal-group-justify-content,
         )
       );
-
       @include theming.apply-from-theme(
         (
           justify-content: theme.$form-horizontal-justify-content,

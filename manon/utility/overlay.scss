@@ -2,7 +2,7 @@
 @use "../variables" as theme;
 
 .overlay {
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     width: 100%;
