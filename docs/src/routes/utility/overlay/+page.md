@@ -33,7 +33,6 @@ SCSS importeren:
   </div>
 </section>
 
-
 ```html
 <div class="overlay">
   <img src="$img/strand.jpg" alt="Foto van een strand" class="image-background" />
