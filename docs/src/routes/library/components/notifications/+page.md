@@ -23,27 +23,27 @@ feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.
       <h3>Notificatie-types</h3>
       <ul>
         <li>
-          <a href="{base}/library/components/notifications/notification-error"
+          <a href="/library/components/notifications/notification-error"
             >Foutmelding</a
           >
         </li>
         <li>
-          <a href="{base}/library/components/notifications/notification-warning"
+          <a href="/library/components/notifications/notification-warning"
             >Waarschuwing</a
           >
         </li>
         <li>
-          <a href="{base}/library/components/notifications/notification-confirmation"
+          <a href="/library/components/notifications/notification-confirmation"
             >Bevestiging</a
           >
         </li>
         <li>
-          <a href="{base}/library/components/notifications/notification-explanation"
+          <a href="/library/components/notifications/notification-explanation"
             >Toelichting</a
           >
         </li>
         <li>
-          <a href="{base}/library/components/notifications/notification-system-message"
+          <a href="/library/components/notifications/notification-system-message"
             >Systeemberichten</a
           >
         </li>
@@ -54,22 +54,22 @@ feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.
       <h3>Weergaven</h3>
       <ul>
         <li>
-          <a href="{base}/library/components/notifications/notifications-block-element"
+          <a href="/library/components/notifications/notifications-block-element"
             >Blokelement</a
           >
         </li>
         <li>
-          <a href="{base}/library/components/notifications/notifications-paragraph"
+          <a href="/library/components/notifications/notifications-paragraph"
             >Paragraaf</a
           >
         </li>
         <li>
-          <a href="{base}/library/components/notifications/notifications-page"
+          <a href="/library/components/notifications/notifications-page"
             >Pagina-notificatie</a
           >
         </li>
         <li>
-          <a href="{base}/library/components/notifications/notifications-table">Tabel</a>
+          <a href="/library/components/notifications/notifications-table">Tabel</a>
         </li>
       </ul>
     </nav>

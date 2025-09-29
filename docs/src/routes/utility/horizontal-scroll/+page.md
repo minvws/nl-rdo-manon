@@ -48,38 +48,38 @@ laten scrollen als de content niet meer binnen de breedte van het scherm past.
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
     </tbody>
   </table>
@@ -106,38 +106,38 @@ laten scrollen als de content niet meer binnen de breedte van het scherm past.
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
     </tbody>
   </table>
@@ -169,38 +169,38 @@ laten scrollen als de content niet meer binnen de breedte van het scherm past.
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
     </tbody>
   </table>
@@ -227,38 +227,38 @@ laten scrollen als de content niet meer binnen de breedte van het scherm past.
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
+        <td>Dolor sit</td>
       </tr>
     </tbody>
   </table>

@@ -120,6 +120,23 @@
       </div>
     </div>
   </section>
+
+  <section>
+    <div class="content-wrapper">
+      <div>
+        <h2>📚 Versies</h2>
+        <p>
+          De huidige versie van Manon is versie <code>v18.0.0</code>. Eerdere versies van de
+          documentatie zijn nog beschikbaar:
+        </p>
+        <ul>
+          <li>
+            <a href="https://minvws.github.io/nl-rdo-manon/v17.0.0" target="_blank">v17.0.0</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </main>
 
 <DefaultFooter />
