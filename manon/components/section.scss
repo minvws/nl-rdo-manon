@@ -4,26 +4,25 @@
 section {
   width: 100%;
   flex-direction: theme.$section-flex-direction;
+  min-width: 0;
+  align-items: theme.$section-align-items;
 
   @if theme.$section-max-width {
     margin: 0 auto;
   }
 
-  @if (
-    theme.$section-padding-top or
-      theme.$section-padding-right or
-      theme.$section-padding-bottom or
-      theme.$section-padding-left
-  ) {
+  @if theme.$section-padding-top or
+    theme.$section-padding-right or
+    theme.$section-padding-bottom or
+    theme.$section-padding-left
+  {
     box-sizing: border-box;
   }
 
-  @if (
-    theme.$section-flex-direction or
-      theme.$section-gap or
-      theme.$section-justify-content or
-      theme.$section-align-items
-  ) {
+  @if theme.$section-flex-direction or
+    theme.$section-gap or
+    theme.$section-justify-content
+  {
     display: flex;
   }
 
@@ -31,7 +30,6 @@ section {
     (
       background-color: theme.$section-background-color,
       justify-content: theme.$section-justify-content,
-      align-items: theme.$section-align-items,
       gap: theme.$section-gap,
       padding-top: theme.$section-padding-top,
       padding-right: theme.$section-padding-right,
@@ -43,13 +41,12 @@ section {
   );
 
   .content-wrapper {
+    align-items: theme.$section-content-wrapper-align-items;
     flex-direction: theme.$section-content-wrapper-flex-direction;
 
-    @if (
-      theme.$section-content-wrapper-gap or
-        theme.$section-content-wrapper-align-items or
-        theme.$section-content-wrapper-justify-content
-    ) {
+    @if theme.$section-content-wrapper-gap or
+      theme.$section-content-wrapper-justify-content
+    {
       display: flex;
       width: 100%;
     }
@@ -58,12 +55,11 @@ section {
       margin: 0 auto;
     }
 
-    @if (
-      theme.$section-content-wrapper-padding-top or
-        theme.$section-content-wrapper-padding-right or
-        theme.$section-content-wrapper-padding-bottom or
-        theme.$section-content-wrapper-padding-left
-    ) {
+    @if theme.$section-content-wrapper-padding-top or
+      theme.$section-content-wrapper-padding-right or
+      theme.$section-content-wrapper-padding-bottom or
+      theme.$section-content-wrapper-padding-left
+    {
       box-sizing: border-box;
     }
 
@@ -71,7 +67,6 @@ section {
       (
         background-color: theme.$section-content-wrapper-background-color,
         justify-content: theme.$section-content-wrapper-justify-content,
-        align-items: theme.$section-content-wrapper-align-items,
         gap: theme.$section-content-wrapper-gap,
         padding-top: theme.$section-content-wrapper-padding-top,
         padding-right: theme.$section-content-wrapper-padding-right,

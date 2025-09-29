@@ -18,6 +18,7 @@ table {
       border-width: theme.$table-border-width,
       border-style: theme.$table-border-style,
       border-color: theme.$table-border-color,
+      margin: theme.$table-margin,
     )
   );
 
@@ -163,28 +164,6 @@ table {
           font-size: theme.$table-foot-cell-font-size,
         )
       );
-    }
-  }
-}
-
-/* Resetting inherited layout padding */
-main {
-  section,
-  section div,
-  article,
-  article div,
-  div,
-  div div {
-    table {
-      div {
-        padding: 0;
-
-        @include theming.apply-from-theme(
-          (
-            gap: theme.$table-gap,
-          )
-        );
-      }
     }
   }
 }

@@ -26,7 +26,7 @@ SCSS importeren:
 
 <div class="two-thirds-one-third">
   <div>
-    <h2>Lorem ipsum dolor set</h2>
+    <h2>Lorem ipsum dolor sit</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
       luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie
@@ -35,7 +35,7 @@ SCSS importeren:
   </div>
 
   <div>
-    <h2>Lorem ipsum dolor set</h2>
+    <h2>Lorem ipsum dolor sit</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
       luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie

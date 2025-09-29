@@ -2,29 +2,27 @@
 @use "../variables" as theme;
 
 article {
-  display: flex;
   width: 100%;
   flex-direction: theme.$article-flex-direction;
+  min-width: 0;
+  align-items: theme.$article-align-items;
 
   @if theme.$article-max-width {
     margin: 0 auto;
   }
 
-  @if (
-    theme.$article-padding-top or
-      theme.$article-padding-right or
-      theme.$article-padding-bottom or
-      theme.$article-padding-left
-  ) {
+  @if theme.$article-padding-top or
+    theme.$article-padding-right or
+    theme.$article-padding-bottom or
+    theme.$article-padding-left
+  {
     box-sizing: border-box;
   }
 
-  @if (
-    theme.$article-flex-direction or
-      theme.$article-gap or
-      theme.$article-justify-content or
-      theme.$article-align-items
-  ) {
+  @if theme.$article-flex-direction or
+    theme.$article-gap or
+    theme.$article-justify-content
+  {
     display: flex;
   }
 
@@ -32,7 +30,6 @@ article {
     (
       background-color: theme.$article-background-color,
       justify-content: theme.$article-justify-content,
-      align-items: theme.$article-align-items,
       gap: theme.$article-gap,
       padding-top: theme.$article-padding-top,
       padding-right: theme.$article-padding-right,
@@ -45,12 +42,11 @@ article {
 
   .content-wrapper {
     flex-direction: theme.$article-content-wrapper-flex-direction;
+    align-items: theme.$article-content-wrapper-align-items;
 
-    @if (
-      theme.$article-content-wrapper-gap or
-        theme.$article-content-wrapper-align-items or
-        theme.$article-content-wrapper-justify-content
-    ) {
+    @if theme.$article-content-wrapper-gap or
+      theme.$article-content-wrapper-justify-content
+    {
       display: flex;
       width: 100%;
     }
@@ -59,12 +55,11 @@ article {
       margin: 0 auto;
     }
 
-    @if (
-      theme.$article-content-wrapper-padding-top or
-        theme.$article-content-wrapper-padding-right or
-        theme.$article-content-wrapper-padding-bottom or
-        theme.$article-content-wrapper-padding-left
-    ) {
+    @if theme.$article-content-wrapper-padding-top or
+      theme.$article-content-wrapper-padding-right or
+      theme.$article-content-wrapper-padding-bottom or
+      theme.$article-content-wrapper-padding-left
+    {
       box-sizing: border-box;
     }
 
@@ -72,7 +67,6 @@ article {
       (
         background-color: theme.$article-content-wrapper-background-color,
         justify-content: theme.$article-content-wrapper-justify-content,
-        align-items: theme.$article-content-wrapper-align-items,
         gap: theme.$article-content-wrapper-gap,
         padding-top: theme.$article-content-wrapper-padding-top,
         padding-right: theme.$article-content-wrapper-padding-right,

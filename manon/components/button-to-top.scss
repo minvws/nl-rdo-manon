@@ -22,6 +22,8 @@ a.button.to-top {
       background-color: theme.$button-to-top-background-color,
       color: theme.$button-to-top-text-color,
       gap: theme.$button-to-top-gap,
+      justify-content: theme.$button-to-top-justify-content,
+      align-items: theme.$button-to-top-align-items,
     )
   );
 

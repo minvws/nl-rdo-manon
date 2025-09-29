@@ -5,7 +5,6 @@
 .page-header .breadcrumb-bar {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -34,27 +33,26 @@
     )
   );
 
-  // content block
-  > div {
+  // content wrapper
+  > div.content-wrapper {
     display: flex;
     flex-direction: row;
     width: 100%;
     box-sizing: border-box;
-    align-self: center;
+    height: theme.$breadcrumb-bar-content-wrapper-height;
 
     @include theming.apply-from-theme(
       (
-        padding-top: theme.$breadcrumb-bar-content-block-padding-top,
-        padding-right: theme.$breadcrumb-bar-content-block-padding-right,
-        padding-bottom: theme.$breadcrumb-bar-content-block-padding-bottom,
-        padding-left: theme.$breadcrumb-bar-content-block-padding-left,
-        gap: theme.$breadcrumb-bar-content-block-gap,
-        max-width: theme.$breadcrumb-bar-content-block-max-width,
+        padding-top: theme.$breadcrumb-bar-content-wrapper-padding-top,
+        padding-right: theme.$breadcrumb-bar-content-wrapper-padding-right,
+        padding-bottom: theme.$breadcrumb-bar-content-wrapper-padding-bottom,
+        padding-left: theme.$breadcrumb-bar-content-wrapper-padding-left,
+        gap: theme.$breadcrumb-bar-content-wrapper-gap,
+        max-width: theme.$breadcrumb-bar-content-wrapper-max-width,
       )
     );
   }
 
-  /* stylelint-disable no-descending-specificity */
   ul,
   ol {
     display: flex;
@@ -183,5 +181,4 @@
       }
     }
   }
-  /* stylelint-enable no-descending-specificity */
 }

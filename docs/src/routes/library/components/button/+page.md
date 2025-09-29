@@ -78,12 +78,12 @@ Knoppen op een website zijn interactieve elementen waarmee gebruikers een actie 
 
 <h2 id="button-types">Soorten knoppen</h2>
 
-- [Basisweergave]({base}/library/components/button/button-base)
-- [Secundaire knoppen]({base}/library/components/button/button-secondary)
-- [Knoppen groeperen]({base}/library/components/button/button-container)
-- [Call to action button]({base}/library/components/button/call-to-action)
-- [Icoonknoppen]({base}/library/components/button/icon)
-- [Icoonknoppen zonder achtergrond]({base}/library/components/button/button-icon-only)
-- [Dropdown button]({base}/library/components/button/button-dropdown)
-- [Destructieve knop]({base}/library/components/button/button-destructive)
-- [Terug naar hoofdmenu]({base}/library/components/button/button-to-top)
+- [Basisweergave](/library/components/button/button-base)
+- [Secundaire knoppen](/library/components/button/button-secondary)
+- [Knoppen groeperen](/library/components/button/button-container)
+- [Call to action button](/library/components/button/call-to-action)
+- [Icoonknoppen](/library/components/button/icon)
+- [Icoonknoppen zonder achtergrond](/library/components/button/button-icon-only)
+- [Dropdown button](/library/components/button/button-dropdown)
+- [Destructieve knop](/library/components/button/button-destructive)
+- [Terug naar hoofdmenu](/library/components/button/button-to-top)

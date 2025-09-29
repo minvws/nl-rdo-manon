@@ -17,13 +17,14 @@ $breadcrumb-bar-background-color: null !default;
 $breadcrumb-bar-font-size: null !default;
 $breadcrumb-bar-font-weight: null !default;
 
-// Content block
-$breadcrumb-bar-content-block-padding-top: null !default;
-$breadcrumb-bar-content-block-padding-right: null !default;
-$breadcrumb-bar-content-block-padding-bottom: null !default;
-$breadcrumb-bar-content-block-padding-left: null !default;
-$breadcrumb-bar-content-block-gap: null !default;
-$breadcrumb-bar-content-block-max-width: null !default;
+// Content wrapper
+$breadcrumb-bar-content-wrapper-padding-top: null !default;
+$breadcrumb-bar-content-wrapper-padding-right: null !default;
+$breadcrumb-bar-content-wrapper-padding-bottom: null !default;
+$breadcrumb-bar-content-wrapper-padding-left: null !default;
+$breadcrumb-bar-content-wrapper-gap: null !default;
+$breadcrumb-bar-content-wrapper-max-width: null !default;
+$breadcrumb-bar-content-wrapper-height: 100% !default;
 
 // Link
 $breadcrumb-bar-link-white-space: null !default;

@@ -79,6 +79,9 @@
             <li>
               <a href="{base}/utility/background-color-offset">background-color-offset</a>
             </li>
+            <li>
+              <a href="{base}/utility/overlay">overlay</a>
+            </li>
           </ul>
         </nav>
       </section>

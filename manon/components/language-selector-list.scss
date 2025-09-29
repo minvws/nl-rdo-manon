@@ -1,9 +1,9 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
 
+.language-selector,
 body > header nav .language-selector,
-.page-header nav .language-selector,
-.language-selector {
+.page-header nav .language-selector {
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -33,23 +33,133 @@ body > header nav .language-selector,
     );
   }
 
-  /* Expand option list */
-  div[aria-expanded="true"] {
-    ul,
-    ul li {
-      display: block;
-    }
+  ul {
+    position: static;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    box-sizing: border-box;
 
-    ul {
-      position: absolute;
+    @include theming.apply-from-theme(
+      (
+        border-width: theme.$language-selector-list-border-width,
+        border-style: theme.$language-selector-list-border-style,
+        border-color: theme.$language-selector-list-border-color,
+        border-radius: theme.$language-selector-list-border-radius,
+        background-color: theme.$language-selector-list-background-color,
+        margin-top: theme.$language-selector-list-margin-top,
+        box-shadow: theme.$language-selector-list-box-shadow,
+        right: theme.$language-selector-list-right,
+        left: theme.$language-selector-list-left,
+        min-width: theme.$language-selector-list-min-width,
+      )
+    );
 
-      li {
-        /* Selected language */
-        &[aria-current="true"] {
-          a {
-            cursor: default;
-          }
+    li {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      order: 1;
+      margin: 0;
+      line-height: 0;
+
+      @include theming.apply-from-theme(
+        (
+          background-color: theme.$language-selector-list-item-background-color,
+          color: theme.$language-selector-list-item-text-color,
+          font-size: theme.$language-selector-list-font-size,
+        )
+      );
+
+      a {
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: none;
+        margin-left: 0;
+        font-size: inherit;
+        color: inherit;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        @include theming.apply-from-theme(
+          (
+            padding: theme.$language-selector-list-item-link-padding,
+            border-top-width:
+              theme.$language-selector-list-item-link-border-width,
+            border-top-style:
+              theme.$language-selector-list-item-link-border-style,
+            border-top-color:
+              theme.$language-selector-list-item-link-border-color,
+            line-height: theme.$language-selector-list-item-link-line-height,
+            white-space: theme.$language-selector-list-item-link-white-space,
+            min-height: theme.$language-selector-list-item-link-min-height,
+            height: theme.$language-selector-list-item-link-height,
+          )
+        );
+
+        &:hover {
+          @include theming.apply-from-theme(
+            (
+              background-color:
+                theme.$language-selector-list-item-hover-background-color,
+              color: theme.$language-selector-list-item-hover-text-color,
+              font-size: theme.$language-selector-list-item-hover-font-size,
+              font-weight: theme.$language-selector-list-item-hover-font-weight,
+            )
+          );
         }
+
+        > button {
+          background-color: transparent;
+          border: 0;
+          margin: 0;
+          padding: 0;
+          text-align: left;
+          align-items: center;
+          justify-content: flex-start;
+
+          @include theming.apply-from-theme(
+            (
+              font-weight: theme.$language-selector-list-button-font-weight,
+            )
+          );
+        }
+      }
+
+      &:first-child a {
+        border-top-width: 0;
+      }
+
+      &:hover {
+        @include theming.apply-from-theme(
+          (
+            background-color:
+              theme.$language-selector-list-item-hover-background-color,
+            color: theme.$language-selector-list-item-hover-text-color,
+            font-size: theme.$language-selector-list-item-hover-font-size,
+            font-weight: theme.$language-selector-list-item-hover-font-weight,
+          )
+        );
+      }
+
+      /* Selected language */
+      &[aria-current="true"] {
+        order: 0;
+        cursor: pointer;
+        font-family: inherit;
+
+        @include theming.apply-from-theme(
+          (
+            background-color:
+              theme.$language-selector-list-item-active-background-color,
+            color: theme.$language-selector-list-item-active-text-color,
+            font-size: theme.$language-selector-list-item-active-font-size,
+            font-weight: theme.$language-selector-list-item-active-font-weight,
+          )
+        );
       }
     }
   }
@@ -59,6 +169,25 @@ body > header nav .language-selector,
     ul,
     ul li {
       display: none;
+    }
+  }
+
+  /* Expand option list */
+  div[aria-expanded="true"] {
+    ul {
+      display: block;
+      position: absolute;
+
+      li {
+        display: block;
+
+        /* Selected language */
+        &[aria-current="true"] {
+          a {
+            cursor: default;
+          }
+        }
+      }
     }
   }
 
@@ -129,137 +258,6 @@ body > header nav .language-selector,
         @include theming.apply-from-theme(
           (
             content: theme.$language-selector-list-open-button-icon,
-          )
-        );
-      }
-    }
-  }
-
-  ul {
-    position: static;
-    padding: 0;
-    margin: 0;
-    width: auto;
-    box-sizing: border-box;
-
-    @include theming.apply-from-theme(
-      (
-        border-width: theme.$language-selector-list-border-width,
-        border-style: theme.$language-selector-list-border-style,
-        border-color: theme.$language-selector-list-border-color,
-        border-radius: theme.$language-selector-list-border-radius,
-        background-color: theme.$language-selector-list-background-color,
-        margin-top: theme.$language-selector-list-margin-top,
-        box-shadow: theme.$language-selector-list-box-shadow,
-        right: theme.$language-selector-list-right,
-        left: theme.$language-selector-list-left,
-        min-width: theme.$language-selector-list-min-width,
-      )
-    );
-
-    li {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      order: 1;
-      margin: 0;
-      line-height: 0;
-
-      @include theming.apply-from-theme(
-        (
-          background-color: theme.$language-selector-list-item-background-color,
-          color: theme.$language-selector-list-item-text-color,
-          font-size: theme.$language-selector-list-font-size,
-        )
-      );
-
-      &:first-child a {
-        border-top-width: 0;
-      }
-
-      &:hover {
-        @include theming.apply-from-theme(
-          (
-            background-color:
-              theme.$language-selector-list-item-hover-background-color,
-            color: theme.$language-selector-list-item-hover-text-color,
-            font-size: theme.$language-selector-list-item-hover-font-size,
-            font-weight: theme.$language-selector-list-item-hover-font-weight,
-          )
-        );
-      }
-
-      a {
-        display: flex;
-        justify-content: flex-start;
-        text-decoration: none;
-        margin-left: 0;
-        font-size: inherit;
-        color: inherit;
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-        text-overflow: ellipsis;
-        overflow: hidden;
-
-        @include theming.apply-from-theme(
-          (
-            padding: theme.$language-selector-list-item-link-padding,
-            border-top-width:
-              theme.$language-selector-list-item-link-border-width,
-            border-top-style:
-              theme.$language-selector-list-item-link-border-style,
-            border-top-color:
-              theme.$language-selector-list-item-link-border-color,
-            line-height: theme.$language-selector-list-item-link-line-height,
-            white-space: theme.$language-selector-list-item-link-white-space,
-            min-height: theme.$language-selector-list-item-link-min-height,
-            height: theme.$language-selector-list-item-link-height,
-          )
-        );
-
-        &:hover {
-          @include theming.apply-from-theme(
-            (
-              background-color:
-                theme.$language-selector-list-item-hover-background-color,
-              color: theme.$language-selector-list-item-hover-text-color,
-              font-size: theme.$language-selector-list-item-hover-font-size,
-              font-weight: theme.$language-selector-list-item-hover-font-weight,
-            )
-          );
-        }
-
-        > button {
-          background-color: transparent;
-          border: 0;
-          margin: 0;
-          padding: 0;
-          text-align: left;
-          align-items: center;
-          justify-content: flex-start;
-
-          @include theming.apply-from-theme(
-            (
-              font-weight: theme.$language-selector-list-button-font-weight,
-            )
-          );
-        }
-      }
-
-      /* Selected language */
-      &[aria-current="true"] {
-        order: 0;
-        cursor: pointer;
-        font-family: inherit;
-
-        @include theming.apply-from-theme(
-          (
-            background-color:
-              theme.$language-selector-list-item-active-background-color,
-            color: theme.$language-selector-list-item-active-text-color,
-            font-size: theme.$language-selector-list-item-active-font-size,
-            font-weight: theme.$language-selector-list-item-active-font-weight,
           )
         );
       }

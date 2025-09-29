@@ -42,7 +42,7 @@ SCSS importeren:
 
 <p class="explanation">
   <span>Toelichting:</span> Om te voorkomen dat het voorbeeld de layout van de pagina breekt wordt er  
-  gebruik gemaakt van <a href="{base}/utility/horizontal-scroll">horizontal-scroll</a>
+  gebruik gemaakt van <a href="/utility/horizontal-scroll">horizontal-scroll</a>
 </p>
 
 ### Voorbeeld: Tabel met nowrap
@@ -64,22 +64,22 @@ SCSS importeren:
           incididunt ut labore et dolore magna aliqua.</td
         >
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
     </tbody>
   </table>
@@ -105,22 +105,22 @@ SCSS importeren:
           ut labore et dolore magna aliqua.
         </td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
       <tr>
         <td>Lorem</td>
         <td>Ipsum</td>
-        <td>Dolor set</td>
+        <td>Dolor sit</td>
       </tr>
     </tbody>
   </table>
