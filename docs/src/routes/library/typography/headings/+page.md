@@ -41,11 +41,12 @@ Gebruik titels om structuur binnen de pagina aan te geven.
 <h6>Dit is een h6</h6>
 ```
 
-Kies altijd het juiste titel-element uit `h1` > `h6` op basis van de structuur in de HTML. De visuele weergaven van de headers kan waar nodig aangepast worden met een heading-class. 
+Kies altijd het juiste titel-element uit `h1` > `h6` op basis van de structuur in de HTML. De visuele weergaven van de headers kan waar nodig aangepast worden met een heading-class.
 
 Voeg heading-base-set toe aan je applicatie om gebruik te maken van deze uitzonderingen.
 
-Beschikbare opties: 
+Beschikbare opties:
+
 - heading-xxl
 - heading-xl
 - heading-large
