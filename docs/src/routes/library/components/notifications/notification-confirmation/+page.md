@@ -6,6 +6,7 @@ nav:
   - Snelstart: "#quickstart"
   - Voorbeelden: "#examples"
 ---
+
 <h2 id="introduction">Introductie</h2>
 
 Gebruik om de gebruiker te attenderen op een fout. Bijvoorbeeld bij het
