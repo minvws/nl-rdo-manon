@@ -42,7 +42,7 @@ SCSS importeren:
 
 <p class="explanation">
   <span>Toelichting:</span> Om te voorkomen dat het voorbeeld de layout van de pagina breekt wordt er  
-  gebruik gemaakt van <a href="{base}/utility/horizontal-scroll">horizontal-scroll</a>
+  gebruik gemaakt van <a href="/utility/horizontal-scroll">horizontal-scroll</a>
 </p>
 
 ### Voorbeeld: Tabel met nowrap
