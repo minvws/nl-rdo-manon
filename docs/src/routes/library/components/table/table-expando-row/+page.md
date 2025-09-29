@@ -64,7 +64,7 @@ import "@minvws/manon/js/expando-rows.js";
       `data-icon-open-class=""` voor het open-icoon en
       `data-icon-close-class=""` voor het sluit-icoon. Vul tussen de "" de
       icoon-classes in van de door jouw gebruikte iconenset. Voor meer
-      informatie over het toevoegen van iconensets, zie [Iconen]({base}/library/components/icons). Voor
+      informatie over het toevoegen van iconensets, zie [Iconen](/library/components/icons). Voor
       een implementatievoorbeeld zie het [html-voorbeeld](#examples).
 
 <div class="explanation" role="group" aria-label="Toelichting">
@@ -101,7 +101,7 @@ import "@minvws/manon/js/expando-rows.js";
     <tbody>
       <tr>
         <td><span class="critical">Critical</span></td>
-        <td>Lorem ipsum dolor set</td>
+        <td>Lorem ipsum dolor sit</td>
         <td class="number">4</td>
         <td>New</td>
         <td>
@@ -118,14 +118,14 @@ import "@minvws/manon/js/expando-rows.js";
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-          <span class="sr-only">Lorem ipsum dolor set</span>
+          <span class="sr-only">Lorem ipsum dolor sit</span>
           <h2>Lorem ipsum details</h2>
           <p>De extra content.</p>
         </td>
       </tr>
       <tr>
         <td><span class="high">High</span></td>
-        <td>Lorem ipsum dolor set</td>
+        <td>Lorem ipsum dolor sit</td>
         <td class="number">12</td>
         <td>New</td>
         <td>
@@ -142,7 +142,7 @@ import "@minvws/manon/js/expando-rows.js";
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-          <span class="sr-only">Lorem ipsum dolor set</span>
+          <span class="sr-only">Lorem ipsum dolor sit</span>
           <h2>Lorem ipsum details</h2>
           <p>De extra content.</p>
         </td>
@@ -169,7 +169,7 @@ import "@minvws/manon/js/expando-rows.js";
     <tbody>
       <tr>
         <td><span class="critical">Critical</span></td>
-        <td>Lorem ipsum dolor set</td>
+        <td>Lorem ipsum dolor sit</td>
         <td class="number">4</td>
         <td>New</td>
         <td>
@@ -186,14 +186,14 @@ import "@minvws/manon/js/expando-rows.js";
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-          <span class="sr-only">Lorem ipsum dolor set</span>
+          <span class="sr-only">Lorem ipsum dolor sit</span>
           <h2>Lorem ipsum details</h2>
           <p>De extra content.</p>
         </td>
       </tr>
       <tr>
         <td><span class="high">High</span></td>
-        <td>Lorem ipsum dolor set</td>
+        <td>Lorem ipsum dolor sit</td>
         <td class="number">12</td>
         <td>New</td>
         <td>
@@ -210,7 +210,7 @@ import "@minvws/manon/js/expando-rows.js";
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-          <span class="sr-only">Lorem ipsum dolor set</span>
+          <span class="sr-only">Lorem ipsum dolor sit</span>
           <h2>Lorem ipsum details</h2>
           <p>De extra content.</p>
         </td>

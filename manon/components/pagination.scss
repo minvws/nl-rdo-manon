@@ -182,11 +182,11 @@ nav.pagination,
 .pagination {
   display: flex;
   width: 100%;
+  align-items: theme.$pagination-align-items;
 
   @include theming.apply-from-theme(
     (
       justify-content: theme.$pagination-justify-content,
-      align-items: theme.$pagination-align-items,
       border-width: theme.$pagination-border-width,
       border-style: theme.$pagination-border-style,
       border-color: theme.$pagination-border-color,
