@@ -23,7 +23,6 @@ SCSS importeren:
 
 ### Voorbeeld: div
 
-
 <section id="introduction">
   <div class="content-wrapper">
     <h1 class="page-title heading-xxl">Lorem ipsum dolor set</h1>
@@ -37,6 +36,6 @@ SCSS importeren:
 
 ```html
 <div class="overlay">
-  <img src="$img/strand.jpg" alt="Foto van een strand" class="image-background">
+  <img src="$img/strand.jpg" alt="Foto van een strand" class="image-background" />
 </div>
 ```

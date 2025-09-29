@@ -31,6 +31,6 @@ SCSS importeren:
 ```html
 <div class="image-background">
   <h2>Lorem ipsum</h2>
-  <img src="$img/strand.jpg" alt="Foto van een strand" class="image-background">
+  <img src="$img/strand.jpg" alt="Foto van een strand" class="image-background" />
 </div>
 ```
