@@ -1,7 +1,8 @@
 $form-inline-gap: null !default;
 $form-inline-text-color: null !default;
 $form-inline-flex-direction: null !default;
-$form-inline-width: null !default;
+$form-inline-width: auto !default;
+$form-inline-max-width: unset !default;
 
 // Button
 $form-inline-button-align-self: null !default;

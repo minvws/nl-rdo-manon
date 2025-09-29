@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Voor het weergeven van tabellen
+Een basisweergave van een tabel in HTML bestaat uit een `<table>` met rijen `<tr>`, kopcellen `<th>` en gewone cellen `<td>` om gegevens overzichtelijk in kolommen en rijen te tonen.
 
 <h2 id="quickstart">Snelstart</h2>
 
