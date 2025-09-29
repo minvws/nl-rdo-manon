@@ -34,7 +34,7 @@ for (const file of themeFiles) {
 
   // Create temporary SCSS file that imports the theme with custom settings
   const tempScss = `@use "${theme}" with (
-    $font-path: "/fonts"
+    $font-path: "./fonts"
   );`;
 
   // Write to a temporary file
