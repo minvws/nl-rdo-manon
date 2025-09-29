@@ -3,7 +3,7 @@
 
 %navigation-link {
   a {
-    color: inherit;
+    color: theme.$navigation-link-text-color;
 
     @include theming.apply-from-theme(
       (
@@ -22,6 +22,18 @@
         box-shadow: theme.$navigation-link-box-shadow,
       )
     );
+
+    &:hover {
+      color: theme.$navigation-link-hover-text-color;
+    }
+
+    &:visited {
+      color: theme.$navigation-link-visited-text-color;
+
+      &:hover {
+        color: theme.$navigation-link-visited-hover-text-color;
+      }
+    }
   }
 }
 

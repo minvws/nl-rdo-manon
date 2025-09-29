@@ -3,11 +3,13 @@
 @use "../functions/validators";
 
 .tile {
+  box-sizing: border-box;
+  align-items: theme.$tile-align-items;
+
   @include theming.apply-from-theme(
     (
       flex-direction: theme.$tile-flex-direction,
       justify-content: theme.$tile-justify-content,
-      align-items: theme.$tile-align-items,
       gap: theme.$tile-gap,
       background-color: theme.$tile-background-color,
       color: theme.$tile-text-color,
@@ -36,11 +38,13 @@
   > div,
   > nav,
   > section {
+    box-sizing: border-box;
+    align-items: theme.$tile-align-items;
+
     @include theming.apply-from-theme(
       (
         flex-direction: theme.$tile-flex-direction,
         justify-content: theme.$tile-justify-content,
-        align-items: theme.$tile-align-items,
         gap: theme.$tile-gap,
         background-color: theme.$tile-background-color,
         color: theme.$tile-text-color,

@@ -1,26 +1,11 @@
-// Import the Manon framework and its components
-@use "@minvws/manon/application-base";
-
-// Header navigation
-@use "@minvws/manon/header-navigation";
-@use "@minvws/manon/header-navigation-content-wrapper";
-@use "@minvws/manon/header-navigation-link";
-@use "@minvws/manon/header-navigation-link-visited";
-@use "@minvws/manon/header-navigation-link-hover";
-@use "@minvws/manon/header-navigation-link-active";
-@use "@minvws/manon/header-navigation-link-focus";
-@use "@minvws/manon/header-navigation-collapsible";
-@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button";
-@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button-states";
-
-// Accessibility
-@use "@minvws/manon/skip-to-content";
-
-//Layout
-@use "@minvws/manon/layout-set";
-@use "@minvws/manon/main";
-@use "@minvws/manon/section";
-@use "@minvws/manon/footer";
-
-// Theme that we're going to use for our page
+// Thema dat we gaan gebruiken voor onze pagina
 @use "@minvws/manon-themes/icore-open";
+
+// Importeer de header navigation component
+@use "@minvws/manon/components/header";
+@use "@minvws/manon/components/skip-to-content";
+
+// Layout
+@use "@minvws/manon/components/main";
+@use "@minvws/manon/components/section";
+@use "@minvws/manon/components/footer";

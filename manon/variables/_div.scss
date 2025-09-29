@@ -1,5 +1,5 @@
-// Base
-$div-flex-direction: null !default;
+$div-background-color: null !default;
+$div-flex-direction: inherit !default;
 $div-justify-content: null !default;
 $div-align-items: null !default;
 $div-gap: null !default;
@@ -8,3 +8,17 @@ $div-padding-right: null !default;
 $div-padding-bottom: null !default;
 $div-padding-left: null !default;
 $div-max-width: null !default;
+$div-border-radius: null !default;
+
+// content wrapper
+$div-content-wrapper-background-color: null !default;
+$div-content-wrapper-flex-direction: column !default;
+$div-content-wrapper-justify-content: flex-start !default;
+$div-content-wrapper-align-items: null !default;
+$div-content-wrapper-gap: null !default;
+$div-content-wrapper-padding-top: null !default;
+$div-content-wrapper-padding-right: null !default;
+$div-content-wrapper-padding-bottom: null !default;
+$div-content-wrapper-padding-left: null !default;
+$div-content-wrapper-max-width: null !default;
+$div-content-wrapper-border-radius: null !default;

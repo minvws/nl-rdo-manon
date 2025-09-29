@@ -5,6 +5,7 @@
 %tile-image-cover {
   object-fit: cover;
   max-width: unset;
+  width: 100%;
 
   @include theming.apply-from-theme(
     (

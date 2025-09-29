@@ -46,6 +46,7 @@ table {
       border-width: theme.$table-border-width,
       border-style: theme.$table-border-style,
       border-color: theme.$table-border-color,
+      margin: theme.$table-margin,
     )
   );
 
@@ -199,27 +200,5 @@ table {
   /* Form within table */
   form {
     @extend %table-checkbox;
-  }
-}
-
-/* Resetting inherited layout padding */
-main {
-  section,
-  section div,
-  article,
-  article div,
-  div,
-  div div {
-    table {
-      div {
-        padding: 0;
-
-        @include theming.apply-from-theme(
-          (
-            gap: theme.$table-gap,
-          )
-        );
-      }
-    }
   }
 }

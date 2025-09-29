@@ -1,7 +1,7 @@
 $section-background-color: null !default;
 $section-flex-direction: column !default;
 $section-justify-content: null !default;
-$section-align-items: null !default;
+$section-align-items: flex-start !default;
 $section-gap: null !default;
 $section-padding-top: null !default;
 $section-padding-right: null !default;
@@ -14,7 +14,7 @@ $section-border-radius: null !default;
 $section-content-wrapper-background-color: null !default;
 $section-content-wrapper-flex-direction: column !default;
 $section-content-wrapper-justify-content: null !default;
-$section-content-wrapper-align-items: null !default;
+$section-content-wrapper-align-items: flex-start !default;
 $section-content-wrapper-gap: null !default;
 $section-content-wrapper-padding-top: null !default;
 $section-content-wrapper-padding-right: null !default;
