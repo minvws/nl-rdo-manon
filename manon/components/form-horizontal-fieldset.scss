@@ -21,6 +21,8 @@ and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
 
 form.horizontal {
   > fieldset {
+    width: 100%;
+
     > div {
       display: block;
 
@@ -41,12 +43,7 @@ form.horizontal {
 
           /* float objects to move inputs into place even when there is no label */
           float: right;
-
-          @include theming.apply-from-theme(
-            (
-              width: theme.$form-horizontal-view-fieldset-input-column,
-            )
-          );
+          width: theme.$form-horizontal-view-fieldset-input-column;
         }
 
         > div {
@@ -55,13 +52,13 @@ form.horizontal {
 
         label {
           float: left;
+          width: theme.$form-horizontal-view-fieldset-label-column;
+          margin-top: theme.$form-horizontal-view-fieldset-label-margin-top;
 
           @include theming.apply-from-theme(
             (
-              width: theme.$form-horizontal-view-fieldset-label-column,
               padding-right:
                 theme.$form-horizontal-view-fieldset-form-horizontal-gap,
-              margin-top: theme.$form-horizontal-view-fieldset-label-margin-top,
             )
           );
         }
@@ -92,11 +89,7 @@ form.horizontal {
       float: right;
 
       @media (width >= $breakpoint) {
-        @include theming.apply-from-theme(
-          (
-            width: theme.$form-horizontal-view-fieldset-input-column,
-          )
-        );
+        width: theme.$form-horizontal-view-fieldset-input-column;
       }
 
       .horizontal {
