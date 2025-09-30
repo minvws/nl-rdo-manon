@@ -33,16 +33,13 @@
 
         <div class="column-4">
           <div>
-            <h3>✨ Classless *</h3>
-
-            <p>Manon geeft de voorkeur aan styling op basis van de HTML-structuur.</p>
+            <h3>✨ Classless</h3>
 
             <p>
-              Omdat dit zorgt voor overzichtelijke en goed onderhoudbare code. Dit maakt efficiënte
-              visuele aanpassingen mogelijk met minimale HTML-wijzigingen.
+              Manon geeft de voorkeur aan styling op basis van de HTML-structuur. Omdat dit zorgt
+              voor overzichtelijke en goed onderhoudbare code. Dit maakt efficiënte visuele
+              aanpassingen mogelijk met minimale HTML-wijzigingen.
             </p>
-
-            <p class="nota-bene">*Classless waar mogelijk en wenselijk</p>
           </div>
 
           <div>
@@ -76,22 +73,12 @@
 
   <section>
     <div class="content-wrapper">
-      <h2>🚀 Manon gebruiken</h2>
+      <h2>👷 Manon gebruiken</h2>
       <p>
         In deze documentatie vind je alle informatie die je nodig hebt om Manon te gebruiken in jouw
         project. Hieronder een kort overzicht van de belangrijkste onderdelen.
       </p>
-      <div class="column-4">
-        <div>
-          <h3>Aan de slag</h3>
-          <p>
-            Volg de <a href="{base}/getting-started">stappen in de installatie handleiding</a> om
-            Manon te installeren in jouw project. Ook vind je daar een
-            <a href="{base}/getting-started/tutorial">korte tutorial</a> die je op weg helpt met het
-            gebruik van Manon.
-          </p>
-        </div>
-
+      <div class="column-3">
         <div>
           <h3>Gebruik alleen wat je nodig hebt</h3>
           <p>
@@ -115,6 +102,50 @@
           <p>
             Bekijk <a href="{base}/examples">de voorbeeldpagina's</a> om te zien hoe je Manon kunt toepassen
             in een volledige pagina.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="content-wrapper">
+      <h2>🚀 Aan de slag</h2>
+      <p>
+        In deze documentatie vind je alle informatie die je nodig hebt om Manon te gebruiken in jouw
+        project. Hieronder een kort overzicht van de belangrijkste onderdelen.
+      </p>
+      <div class="column-3">
+        <div>
+          <h3>Snelstart</h3>
+          <p>
+            Bekijk de <a href="{base}/getting-started/quickstart">snelle start</a> voor een overzicht
+            van de belangrijkste stappen om Manon te integreren in je project.
+          </p>
+
+          <p>
+            Deze gids biedt een beknopte handleiding om snel aan de slag te gaan met de
+            basisfunctionaliteiten van Manon.
+          </p>
+        </div>
+
+        <div>
+          <h3>Tutorial</h3>
+          <p>
+            Voor een stapsgewijze handleiding over het gebruik van Manon, bekijk de
+            <a href="{base}/getting-started/tutorial">tutorial</a>. Deze tutorial behandelt de
+            basisprincipes en biedt voorbeelden van hoe je Manon kunt integreren in je project.
+          </p>
+        </div>
+
+        <div>
+          <h3>Installatie</h3>
+          <p>
+            Bekijk de <a href="{base}/getting-started/installation">installatiehandleiding</a>
+            voor een gedetailleerde uitleg over de installatie, configuratie en integratie van Manon
+            in je project. Deze gids behandelt alle benodigde stappen om Manon correct te installeren
+            en te configureren. Dit omvat eveneens informatie over het integreren van eventuele JavaScript-bestanden
+            die nodig zijn voor bepaalde functionaliteiten.
           </p>
         </div>
       </div>
