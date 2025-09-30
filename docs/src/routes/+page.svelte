@@ -119,8 +119,8 @@
         <div>
           <h3>Snelstart</h3>
           <p>
-            Bekijk de <a href="{base}/getting-started/quickstart">snelle start</a> voor een overzicht van de
-            belangrijkste stappen om Manon te integreren in je project.
+            Bekijk de <a href="{base}/getting-started/quickstart">snelle start</a> voor een overzicht
+            van de belangrijkste stappen om Manon te integreren in je project.
           </p>
 
           <p>
