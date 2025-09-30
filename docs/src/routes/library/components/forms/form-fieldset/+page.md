@@ -42,6 +42,7 @@ Met een fieldset kun je in HTML velden groeperen die bij elkaar horen. Daar hoor
 ```
 
 Horizontaal uitgelijnd
+
 <form action="" method="post" class="horizontal">
   <fieldset>
     <legend>Titel</legend>
