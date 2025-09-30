@@ -169,10 +169,9 @@ Ons SCSS-bestand zou er nu zo uit moeten zien:
 @use "@minvws/manon/components/base";
 ```
 
-
 ### Header
 
-Importeer het 
+Importeer het
 [header navigation component](/library/components/header-navigation) in ons `main.scss`-bestand:
 
 ```scss
@@ -180,6 +179,7 @@ Importeer het
 ```
 
 Ons SCSS-bestand zou er nu zo uit moeten zien:
+
 ```scss
 // main.scss
 
@@ -260,6 +260,7 @@ Binnen onze voorbeeld-header maken we gebruik van een aantal componenten. Laten 
 ```
 
 Ons SCSS-bestand zou er nu zo uit moeten zien:
+
 ```scss
 // main.scss
 
