@@ -123,7 +123,7 @@ uitbreiden.
 ```scss
 // main.scss
 
-// Thema dat we gaan gebruiken voor onze pagina
+// Theme
 @use "@minvws/manon-themes/icore-open";
 ```
 
@@ -151,21 +151,44 @@ Manon-framework.
 We gaan een basislayout maken voor onze pagina met het Manon-framework. We
 beginnen met de header, hoofdinhoud en footer-secties.
 
-### Header
+Allereerst laden we de basis-settings van het thema in.
 
-Eerst moeten we de
-[header navigation component](/library/components/header-navigation) importeren
-in ons `main.scss`-bestand:
+```scss
+@use "@minvws/manon/components/base";
+```
+
+Ons SCSS-bestand zou er nu zo uit moeten zien:
 
 ```scss
 // main.scss
 
-// Thema dat we gaan gebruiken voor onze pagina
+// Theme
 @use "@minvws/manon-themes/icore-open";
 
-// Importeer de header navigation component
+// Components
+@use "@minvws/manon/components/base";
+```
+
+
+### Header
+
+Importeer het 
+[header navigation component](/library/components/header-navigation) in ons `main.scss`-bestand:
+
+```scss
 @use "@minvws/manon/components/header";
-@use "@minvws/manon/components/skip-to-content";
+```
+
+Ons SCSS-bestand zou er nu zo uit moeten zien:
+```scss
+// main.scss
+
+// Theme
+@use "@minvws/manon-themes/icore-open";
+
+// Components
+@use "@minvws/manon/components/base";
+@use "@minvws/manon/components/header";
 ```
 
 Vervolgens voegen we de volgende HTML toe aan ons `index.html`-bestand om een
@@ -227,6 +250,31 @@ Nu zou ons index.html-bestand er als volgt uit moeten zien:
 </html>
 ```
 
+Binnen onze voorbeeld-header maken we gebruik van een aantal componenten. Laten we deze in een keer toevoegen.
+
+```scss
+@use "@minvws/manon/components/link";
+@use "@minvws/manon/components/list";
+@use "@minvws/manon/components/navigation";
+@use "@minvws/manon/components/skip-to-content";
+```
+
+Ons SCSS-bestand zou er nu zo uit moeten zien:
+```scss
+// main.scss
+
+// Theme
+@use "@minvws/manon-themes/icore-open";
+
+// Components
+@use "@minvws/manon/components/base";
+@use "@minvws/manon/components/header";
+@use "@minvws/manon/components/link";
+@use "@minvws/manon/components/list";
+@use "@minvws/manon/components/navigation";
+@use "@minvws/manon/components/skip-to-content";
+```
+
 ### Main
 
 Voor de hoofdinhoud moeten we de [`main` component](/library/layout/main), en
@@ -246,16 +294,18 @@ Ons `main.scss`-bestand zou er nu als volgt uit moeten zien:
 ```scss
 // main.scss
 
-// Theme that we're going to use for our page
+// Theme
 @use "@minvws/manon-themes/icore-open";
 
-// Importeer de header navigation component
+// Components
+@use "@minvws/manon/components/base";
 @use "@minvws/manon/components/header";
-@use "@minvws/manon/components/skip-to-content";
-
-// Layout
+@use "@minvws/manon/components/link";
+@use "@minvws/manon/components/list";
 @use "@minvws/manon/components/main";
+@use "@minvws/manon/components/navigation";
 @use "@minvws/manon/components/section";
+@use "@minvws/manon/components/skip-to-content";
 ```
 
 Vervolgens updaten we ons `index.html`-bestand om het hoofdinhoudgebied op te
@@ -299,17 +349,19 @@ Ons `main.scss`-bestand zou er nu als volgt uit moeten zien:
 ```scss
 // main.scss
 
-// Thema dat we gaan gebruiken voor onze pagina
+// Theme
 @use "@minvws/manon-themes/icore-open";
 
-// Importeer de header navigation component
-@use "@minvws/manon/components/header";
-@use "@minvws/manon/components/skip-to-content";
-
-// Layout
-@use "@minvws/manon/components/main";
-@use "@minvws/manon/components/section";
+// Components
+@use "@minvws/manon/components/base";
 @use "@minvws/manon/components/footer";
+@use "@minvws/manon/components/header";
+@use "@minvws/manon/components/link";
+@use "@minvws/manon/components/list";
+@use "@minvws/manon/components/main";
+@use "@minvws/manon/components/navigation";
+@use "@minvws/manon/components/section";
+@use "@minvws/manon/components/skip-to-content";
 ```
 
 Vervolgens updaten we ons `index.html`-bestand om de footer-sectie op te nemen.
