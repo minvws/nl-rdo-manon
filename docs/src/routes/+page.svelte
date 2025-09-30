@@ -119,7 +119,7 @@
         <div>
           <h3>Snelstart</h3>
           <p>
-            Bekijk de <a href="/getting-started/quickstart">snelle start</a> voor een overzicht van de
+            Bekijk de <a href="{base}/getting-started/quickstart">snelle start</a> voor een overzicht van de
             belangrijkste stappen om Manon te integreren in je project.
           </p>
 
@@ -133,7 +133,7 @@
           <h3>Tutorial</h3>
           <p>
             Voor een stapsgewijze handleiding over het gebruik van Manon, bekijk de
-            <a href="/getting-started/tutorial">tutorial</a>. Deze tutorial behandelt de
+            <a href="{base}/getting-started/tutorial">tutorial</a>. Deze tutorial behandelt de
             basisprincipes en biedt voorbeelden van hoe je Manon kunt integreren in je project.
           </p>
         </div>
@@ -141,7 +141,7 @@
         <div>
           <h3>Installatie</h3>
           <p>
-            Bekijk de <a href="/getting-started/installation">installatiehandleiding</a>
+            Bekijk de <a href="{base}/getting-started/installation">installatiehandleiding</a>
             voor een gedetailleerde uitleg over de installatie, configuratie en integratie van Manon
             in je project. Deze gids behandelt alle benodigde stappen om Manon correct te installeren
             en te configureren. Dit omvat eveneens informatie over het integreren van eventuele JavaScript-bestanden
