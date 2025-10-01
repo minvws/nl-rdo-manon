@@ -23,7 +23,6 @@ Knoppen op een website zijn interactieve elementen waarmee gebruikers een actie 
 - [Destructieve knop](/library/components/button/button-destructive)
 - [Terug naar hoofdmenu](/library/components/button/button-to-top)
 
-
 ## Aandachtspunten
 
 Het uitschakelen van een knop “disable” wordt afgeraden vanuit zowel toegankelijkeid als gebruikerservaring. Het is beter om de knop functioneel te laten. Dan kan de gebruiker de knop gebruiken om erachter te komen wat er fout gaat.
