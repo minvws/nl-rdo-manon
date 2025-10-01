@@ -40,3 +40,29 @@ Met een fieldset kun je in HTML velden groeperen die bij elkaar horen. Daar hoor
   <button type="submit">Verzend</button>
 </form>
 ```
+
+Horizontaal uitgelijnd
+
+<form action="" method="post" class="horizontal">
+  <fieldset>
+    <legend>Titel</legend>
+    <div>
+      <label for="example-input-base">Voorbeeld invoerveld</label>
+      <input id="example-input-base" name="example-input-base" type="text" />
+    </div>
+  </fieldset>
+  <button type="submit">Verzend</button>
+</form>
+
+```html
+<form action="" method="post" class="horizontal">
+  <fieldset>
+    <legend>Titel</legend>
+    <div>
+      <label for="example-input-base">Voorbeeld invoerveld</label>
+      <input id="example-input-base" name="example-input-base" type="text" />
+    </div>
+  </fieldset>
+  <button type="submit">Verzend</button>
+</form>
+```

@@ -16,8 +16,7 @@ form {
       input[type="radio"] {
         padding: 0;
         cursor: pointer;
-        margin-left: 0;
-        margin-right: 0;
+        margin: 0;
 
         @include theming.apply-from-theme(
           (

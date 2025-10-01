@@ -187,6 +187,9 @@ and spacing sets */
   $form-max-width: 40rem,
   $form-table-width: 100%,
 
+  // form fieldset
+  $form-fieldset-border-width: 0,
+
   // form group
   $form-group-gap: spacing.$spacing-050,
 
@@ -204,6 +207,10 @@ and spacing sets */
   $form-textarea-width: 100%,
   $form-textarea-font-size: inherit,
   $form-textarea-padding: 1rem,
+
+  // form horizontal
+  $form-horizontal-button-margin: 0 0 0 calc(33.33% + 0.5rem),
+  $form-horizontal-label-max-width: 33.33%,
 
   // combined field
   $form-combined-field-input-border-radius: border-radii.$border-radius-m 0 0
