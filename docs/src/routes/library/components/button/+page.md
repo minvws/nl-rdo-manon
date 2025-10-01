@@ -2,7 +2,6 @@
 title: Knoppen
 nav:
   - Introductie: "#introduction"
-  - Snelstart: "#quickstart"
   - Type buttons met situatieschetsen: "#button-situations"
   - Soorten knoppen: "#button-types"
 ---
