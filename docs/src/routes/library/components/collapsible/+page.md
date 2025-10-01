@@ -123,11 +123,12 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 
   <div class="collapsing-element">
     <form>
-      <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
-      </ul>
+      <fieldset>
+        <legend>Titel</legend>
+        <label for="example-input-base">Voorbeeld invoerveld</label>
+        <input id="example-input-base" name="example-input-base" type="text" />
+      </fieldset>
+      <button type="submit">Verzend</button>
     </form>
   </div>
 </div>
@@ -137,15 +138,16 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  class="collapsible"
->
+  class="collapsible">
+
   <div class="collapsing-element">
     <form>
-      <ul>
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Huidige selectie</a></li>
-        <li><a href="#">Item 3</a></li>
-      </ul>
+      <fieldset>
+        <legend>Titel</legend>
+        <label for="example-input-base">Voorbeeld invoerveld</label>
+        <input id="example-input-base" name="example-input-base" type="text" />
+      </fieldset>
+      <button type="submit">Verzend</button>
     </form>
   </div>
 </div>
