@@ -137,6 +137,21 @@ and spacing sets */
   $button-destructive-hover-text-color: color-scheme.$oc-white,
   $button-destructive-hover-border-color: semantic.$color-destructive-intense,
 
+  // button to top
+  $button-to-top-background-color: semantic.$color-brand-primary-default,
+  $button-to-top-width: 2.5rem,
+  $button-to-top-height: 2.5rem,
+  $button-to-top-font-size: 0,
+  $button-to-top-border-radius: border-radii.$border-radius-round,
+  $button-to-top-align-items: center,
+  $button-to-top-justify-content: center,
+
+  // button to top icon
+  $button-to-top-icon-mask: icons.$to-top,
+  $button-to-top-icon-color: color-scheme.$oc-white,
+  $button-to-top-icon-width: 1.5rem,
+  $button-to-top-icon-height: 1.5rem,
+
   // button container
   $button-container-gap: 1rem,
 
