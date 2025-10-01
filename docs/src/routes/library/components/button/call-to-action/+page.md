@@ -35,11 +35,3 @@ SCSS importeren:
 ```html
 <input type="button" value="Lorem ipsum" class="cta" />
 ```
-
-### Voorbeeld: `<input type="button" disabled>`
-
-<input type="button" value="Lorem ipsum" class="cta" disabled />
-
-```html
-<input type="button" value="Lorem ipsum" class="cta" disabled />
-```
