@@ -51,6 +51,17 @@ and spacing sets */
   $accordion-content-border-radius: 0 0 border-radii.$border-radius-s
     border-radii.$border-radius-s,
 
+  // accordion icon open
+  $accordion-button-icon-after-color: semantic.$color-text-default,
+  $accordion-button-icon-after-mask: icons.$chevron-down,
+  $accordion-button-icon-after-width: 1.5rem,
+  $accordion-button-icon-after-height: 1.5rem,
+
+  // accordion icon closed
+  $accordion-button-icon-after-closed-color: semantic.$color-text-default,
+  $accordion-button-icon-after-closed-mask: icons.$chevron-up,
+  $accordion-button-icon-after-closed-width: 1.5rem,
+  $accordion-button-icon-after-closed-height: 1.5rem,
   // article
   $article-gap: spacing.$spacing-150,
   $article-flex-direction: column,
