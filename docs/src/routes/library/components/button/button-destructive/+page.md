@@ -29,26 +29,10 @@ SCSS importeren:
 <button class="destructive">Lorem ipsum</button>
 ```
 
-### Voorbeeld: `button` uitgeschakeld
-
-<button class="destructive" disabled>Lorem ipsum</button>
-
-```html
-<button class="destructive" disabled>Lorem ipsum</button>
-```
-
 ### Voorbeeld: `input type="button"`
 
 <input type="button" value="Lorem ipsum" class="destructive" />
 
 ```html
 <input type="button" value="Lorem ipsum" class="destructive" />
-```
-
-### Voorbeeld: `input type="button"` uitgeschakeld
-
-<input type="button" value="Lorem ipsum" class="destructive" disabled />
-
-```html
-<input type="button" value="Lorem ipsum" class="destructive" disabled />
 ```
