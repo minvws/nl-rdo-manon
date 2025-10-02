@@ -18,6 +18,19 @@ $footer-border-width: null !default;
 $footer-border-style: null !default;
 $footer-border-color: null !default;
 
+// content wrapper
+$footer-content-wrapper-background-color: null !default;
+$footer-content-wrapper-flex-direction: column !default;
+$footer-content-wrapper-justify-content: null !default;
+$footer-content-wrapper-align-items: flex-start !default;
+$footer-content-wrapper-gap: null !default;
+$footer-content-wrapper-padding-top: null !default;
+$footer-content-wrapper-padding-right: null !default;
+$footer-content-wrapper-padding-bottom: null !default;
+$footer-content-wrapper-padding-left: null !default;
+$footer-content-wrapper-max-width: null !default;
+$footer-content-wrapper-border-radius: null !default;
+
 // nav
 $footer-navigation-flex-direction: column !default;
 $footer-navigation-gap: null !default;

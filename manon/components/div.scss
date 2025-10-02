@@ -2,7 +2,6 @@
 @use "../variables" as theme;
 
 div {
-  width: 100%;
   flex-direction: theme.$div-flex-direction;
 
   @if theme.$div-max-width {

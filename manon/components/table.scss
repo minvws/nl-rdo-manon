@@ -1,6 +1,34 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
 
+%table-checkbox {
+  input[type="checkbox"] {
+    padding: theme.$table-padding-checkbox;
+
+    @include theming.apply-from-theme(
+      (
+        margin: theme.$table-checkbox-margin-right,
+        cursor: theme.$table-checkbox-cursor,
+        width: theme.$table-checkbox-width,
+        height: theme.$table-checkbox-height,
+      )
+    );
+
+    & + label {
+      width: auto;
+      cursor: pointer;
+      margin-top: 0;
+    }
+  }
+
+  th,
+  td {
+    input[type="checkbox"]:only-child {
+      margin: 0 auto;
+    }
+  }
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -18,6 +46,7 @@ table {
       border-width: theme.$table-border-width,
       border-style: theme.$table-border-style,
       border-color: theme.$table-border-color,
+      margin: theme.$table-margin,
     )
   );
 
@@ -164,5 +193,12 @@ table {
         )
       );
     }
+  }
+
+  @extend %table-checkbox;
+
+  /* Form within table */
+  form {
+    @extend %table-checkbox;
   }
 }

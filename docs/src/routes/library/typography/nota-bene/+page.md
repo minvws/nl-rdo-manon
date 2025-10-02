@@ -15,7 +15,6 @@ nav:
 
 ```scss
 @use "@minvws/manon/text/nota-bene";
-@use "@minvws/manon/text/nota-bene-variables";
 ```
 
 ### Benodigde stappen

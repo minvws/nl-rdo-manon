@@ -1,7 +1,7 @@
 $article-background-color: null !default;
 $article-flex-direction: column !default;
 $article-justify-content: null !default;
-$article-align-items: null !default;
+$article-align-items: flex-start !default;
 $article-gap: null !default;
 $article-padding-top: null !default;
 $article-padding-right: null !default;
@@ -14,7 +14,7 @@ $article-border-radius: null !default;
 $article-content-wrapper-background-color: null !default;
 $article-content-wrapper-flex-direction: column !default;
 $article-content-wrapper-justify-content: null !default;
-$article-content-wrapper-align-items: null !default;
+$article-content-wrapper-align-items: flex-start !default;
 $article-content-wrapper-gap: null !default;
 $article-content-wrapper-padding-top: null !default;
 $article-content-wrapper-padding-right: null !default;

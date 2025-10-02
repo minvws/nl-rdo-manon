@@ -7,7 +7,9 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<p id="introduction">Voor het weergeven van notificaties binnen tabellen</p>
+<h2 id="introduction">Introductie</h2>
+
+Voor het weergeven van notificaties binnen tabellen.
 
 <h2 id="quickstart">Snelstart</h2>
 

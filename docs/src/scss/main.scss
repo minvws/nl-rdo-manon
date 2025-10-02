@@ -42,6 +42,7 @@
 @use "@minvws/manon/components/form-fieldset-radio";
 @use "@minvws/manon/components/form-fieldset-visually-hidden-horizontal";
 @use "@minvws/manon/components/form-grouped-choice-list";
+@use "@minvws/manon/components/form-textarea";
 @use "@minvws/manon/components/form-help";
 @use "@minvws/manon/components/form-horizontal";
 @use "@minvws/manon/components/form-input";
@@ -53,10 +54,16 @@
 @use "@minvws/manon/components/heading";
 @use "@minvws/manon/components/heading-base-set";
 @use "@minvws/manon/components/hero";
+@use "@minvws/manon/components/image-square";
+@use "@minvws/manon/components/image-round";
+@use "@minvws/manon/components/image-cover";
+@use "@minvws/manon/components/image-background";
 @use "@minvws/manon/components/layout-footer-content-block";
 @use "@minvws/manon/components/layout-footer";
 @use "@minvws/manon/components/link";
 @use "@minvws/manon/components/list";
+@use "@minvws/manon/components/img";
+@use "@minvws/manon/components/introduction";
 @use "@minvws/manon/components/login-meta";
 @use "@minvws/manon/components/logo";
 @use "@minvws/manon/components/navigation";
@@ -83,7 +90,6 @@
 @use "@minvws/manon/components/table";
 @use "@minvws/manon/components/table-action-buttons";
 @use "@minvws/manon/components/table-caption";
-@use "@minvws/manon/components/table-checkbox";
 @use "@minvws/manon/components/table-condensed";
 @use "@minvws/manon/components/table-expando-rows";
 @use "@minvws/manon/components/table-number";
@@ -92,6 +98,7 @@
 @use "@minvws/manon/components/table-summary";
 @use "@minvws/manon/components/tag";
 @use "@minvws/manon/components/tags";
+@use "@minvws/manon/colors/tags-colors";
 @use "@minvws/manon/components/tile";
 @use "@minvws/manon/components/tile-groups";
 @use "@minvws/manon/components/tile-image-cover";
@@ -110,6 +117,7 @@
 @use "@minvws/manon/utility/hidden";
 @use "@minvws/manon/utility/nowrap";
 @use "@minvws/manon/utility/one-third-two-thirds";
+@use "@minvws/manon/utility/overlay";
 @use "@minvws/manon/utility/two-thirds-one-third";
 @use "@minvws/manon/utility/background-color-offset";
 

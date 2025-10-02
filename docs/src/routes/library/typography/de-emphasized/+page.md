@@ -16,7 +16,6 @@ Voor een subtielere weergave van bepaalde teksten kan de class `de-emphasized` w
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/body-text-set";
 @use "@minvws/manon/de-emphasized";
 ```
 
