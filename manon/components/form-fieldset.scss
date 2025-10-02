@@ -52,6 +52,9 @@ main div form {
       @include theming.apply-from-theme(
         (
           margin: theme.$form-fieldset-fields-margin,
+          border-width: theme.$form-fieldset-border-width,
+          border-style: theme.$form-fieldset-border-style,
+          border-color: theme.$form-fieldset-border-color,
         )
       );
 
