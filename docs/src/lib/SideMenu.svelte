@@ -8,8 +8,8 @@
 </script>
 
 <nav
-  data-open-label="Zijbalknavigatie"
-  data-close-label="Sluit zijbalknavigatie"
+  data-open-label="Sluiten"
+  data-close-label="Navigatie"
   aria-label="Document-navigatie"
   {...props}
 >

@@ -26,7 +26,7 @@ SCSS importeren:
 ### Voorbeeld: `div`
 
 <div class="error" role="group" aria-label="foutmelding">
-  <span>Foutmelding:</span>
+  <span><span class="icon icon-on-off" aria-hidden="true"></span>Foutmelding:</span>
   <h2>Lorem ipsum dolor sit</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat

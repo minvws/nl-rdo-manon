@@ -1,5 +1,5 @@
 <script module>
-  export const breadcrumb = "Library";
+  export const breadcrumb = "Bibliotheek";
 </script>
 
 <script lang="ts">

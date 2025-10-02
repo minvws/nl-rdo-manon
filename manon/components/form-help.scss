@@ -28,20 +28,16 @@ form.help {
       font-size: 0;
       box-sizing: border-box;
       top: theme.$form-help-button-top;
+      width: auto;
 
       @include theming.apply-from-theme(
         (
           right: theme.$form-help-button-right,
-          padding-top: theme.$form-help-button-padding-top,
-          padding-right: theme.$form-help-button-padding-right,
-          padding-bottom: theme.$form-help-button-padding-bottom,
-          padding-left: theme.$form-help-button-padding-left,
+          padding: theme.$form-help-button-padding,
           border-width: theme.$form-help-button-border-width,
           border-style: theme.$form-help-button-border-style,
           border-color: theme.$form-help-button-border-color,
           border-radius: theme.$form-help-button-border-radius,
-          width: theme.$form-help-button-width,
-          height: theme.$form-help-button-height,
           background-color: theme.$form-help-button-background-color,
           color: theme.$form-help-button-text-color,
         )
@@ -56,27 +52,45 @@ form.help {
         );
       }
 
-      &::before {
-        vertical-align: middle;
+      // Icon
+      @if theme.$form-help-icon-mask {
+        &::before {
+          mask-size: contain;
+          content: "";
 
-        @include theming.apply-from-theme(
-          (
-            content: theme.$form-help-button-icon,
-            font-family: theme.$form-help-button-icon-font-family,
-            line-height: theme.$form-help-button-icon-line-height,
-            font-size: theme.$form-help-button-icon-font-size,
-            font-weight: theme.$form-help-button-icon-font-weight,
-          )
-        );
+          @include theming.apply-from-theme(
+            (
+              margin-right: theme.$form-help-icon-margin-right,
+              margin-left: theme.$form-help-icon-margin-left,
+              padding: theme.$form-help-icon-padding,
+              background-color: theme.$form-help-icon-color,
+              mask-image: theme.$form-help-icon-mask,
+              width: theme.$form-help-icon-width,
+              height: theme.$form-help-icon-height,
+            )
+          );
+        }
       }
 
       &[aria-expanded="true"] {
-        &::before {
-          @include theming.apply-from-theme(
-            (
-              content: theme.$form-help-button-icon-expanded,
-            )
-          );
+        // Icon
+        @if theme.$form-help-expanded-icon-mask {
+          &::before {
+            mask-size: contain;
+            content: "";
+
+            @include theming.apply-from-theme(
+              (
+                margin-right: theme.$form-help-expanded-icon-margin-right,
+                margin-left: theme.$form-help-expanded-icon-margin-left,
+                padding: theme.$form-help-expanded-icon-padding,
+                background-color: theme.$form-help-expanded-icon-color,
+                mask-image: theme.$form-help-expanded-icon-mask,
+                width: theme.$form-help-expanded-icon-width,
+                height: theme.$form-help-expanded-icon-height,
+              )
+            );
+          }
         }
       }
 
@@ -98,15 +112,17 @@ form.help {
 
     * {
       &:has(.help-button) {
+        position: relative;
+
         @if validators.args-not-null(
-          theme.$form-help-button-height,
+          theme.$form-help-icon-height,
           theme.$form-help-button-top
         )
         {
           @include theming.apply-from-theme(
             (
               min-height: calc(
-                  theme.$form-help-button-height + theme.$form-help-button-top
+                  theme.$form-help-icon-height + theme.$form-help-button-top
                 ),
             )
           );
@@ -121,16 +137,20 @@ form.help {
     gap: 0;
 
     .help-button {
-      margin: 0;
-      display: block;
+      display: inline-block;
+
+      @include theming.apply-from-theme(
+        (
+          margin: theme.$form-help-button-margin,
+        )
+      );
 
       + .explanation {
         margin-top: 0;
       }
 
       &::before {
-        margin: 0;
-        width: 100%;
+        display: inline-block;
       }
     }
   }
