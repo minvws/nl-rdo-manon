@@ -527,6 +527,22 @@ and spacing sets */
   $sidemenu-nav-padding-bottom: spacing.$spacing-100,
   $sidemenu-nav-padding-left: spacing.$spacing-200,
 
+  // sidemenu button
+  $sidemenu-button-background-color: color-scheme.$oc-white,
+  $sidemenu-button-padding: spacing.$spacing-050,
+  $sidemenu-button-color: semantic.$color-brand-primary-default,
+  $sidemenu-button-font-size: 0,
+
+  // sidemenu expanded
+  $sidemenu-expanded-icon-mask: icons.$close,
+  $sidemenu-expanded-icon-color: semantic.$color-brand-primary-default,
+  $sidemenu-expanded-icon-width: 1.5rem,
+  $sidemenu-expanded-icon-height: 1.5rem,
+
+  // sidemenu collapsed
+  $sidemenu-collapsed-button-margin-left: 2rem,
+  $sidemenu-collapsed-icon-mask: icons.$hamburger,
+
   // slogan
   $slogan-text-color: semantic.$color-text-default,
   $slogan-font-size: body-text.$body-text-l,

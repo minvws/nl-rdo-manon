@@ -44,15 +44,43 @@ $sidemenu-list-item-font-weight: null !default;
 $sidemenu-list-item-text-color: null !default;
 $sidemenu-list-item-list-style: null !default;
 
-// Toggle button
-$sidemenu-toggle-button-margin-left: null !default;
-$sidemenu-toggle-button-min-width: null !default;
-$sidemenu-toggle-button-min-height: null !default;
-$sidemenu-toggle-button-font-size: null !default;
-$sidemenu-toggle-button-margin-top: null !default;
-$sidemenu-expanded-button-icon: null !default;
-$sidemenu-button-icon-font-family: null !default;
-$sidemenu-button-icon-font-size: null !default;
-$sidemenu-button-icon-font-weight: null !default;
-$sidemenu-button-icon-white-space: null !default;
-$sidemenu-collapsed-button-icon: null !default;
+// Button
+$sidemenu-button-margin-left: null !default;
+$sidemenu-button-margin-top: null !default;
+$sidemenu-button-min-width: null !default;
+$sidemenu-button-min-height: null !default;
+$sidemenu-button-font-size: null !default;
+$sidemenu-button-background-color: null !default;
+$sidemenu-button-padding: null !default;
+$sidemenu-button-color: null !default;
+$sidemenu-button-gap: null !default;
+
+$sidemenu-collapsed-button-margin-left: null !default;
+$sidemenu-collapsed-button-margin-top: null !default;
+$sidemenu-collapsed-button-min-width: null !default;
+$sidemenu-collapsed-button-min-height: null !default;
+$sidemenu-collapsed-button-font-size: null !default;
+$sidemenu-collapsed-button-background-color: null !default;
+$sidemenu-collapsed-button-padding: null !default;
+$sidemenu-collapsed-button-color: null !default;
+$sidemenu-collapsed-button-gap: null !default;
+
+// Sidemenu expanded icon
+$sidemenu-expanded-icon-margin-left: null !default;
+$sidemenu-expanded-icon-margin-right: null !default;
+$sidemenu-expanded-icon-padding-right: null !default;
+$sidemenu-expanded-icon-padding-left: null !default;
+$sidemenu-expanded-icon-color: null !default;
+$sidemenu-expanded-icon-mask: null !default;
+$sidemenu-expanded-icon-width: null !default;
+$sidemenu-expanded-icon-height: null !default;
+
+// Sidemenu collapsed con
+$sidemenu-collapsed-icon-margin-left: null !default;
+$sidemenu-collapsed-icon-margin-right: null !default;
+$sidemenu-collapsed-icon-padding-right: null !default;
+$sidemenu-collapsed-icon-padding-left: null !default;
+$sidemenu-collapsed-icon-color: null !default;
+$sidemenu-collapsed-icon-mask: null !default;
+$sidemenu-collapsed-icon-width: null !default;
+$sidemenu-collapsed-icon-height: null !default;
