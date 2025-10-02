@@ -1,15 +1,18 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
 
-.logo,
-a.logo,
-a:visited.logo,
-a:hover.logo,
-a:active.logo,
-a:focus.logo {
+%logo-styling {
   align-self: theme.$logo-align-self;
   background-color: theme.$logo-background-color;
   border: 0;
+
+  @if theme.$logo-align-self or
+    theme.$logo-align-items or
+    theme.$logo-justify-content or
+    theme.$logo-gap
+  {
+    display: flex;
+  }
 
   @include theming.apply-from-theme(
     (
@@ -27,7 +30,9 @@ a:focus.logo {
 
       font-size: theme.$logo-font-size,
       font-weight: theme.$logo-font-weight,
+      font-family: theme.$logo-font-family,
       color: theme.$logo-text-color,
+      text-decoration: theme.$logo-text-decoration,
 
       border-radius: theme.$logo-border-radius,
       padding: theme.$logo-padding,
@@ -43,6 +48,7 @@ a:focus.logo {
     width: theme.$logo-img-width;
     min-width: theme.$logo-img-width;
     max-width: theme.$logo-img-width;
+    margin: theme.$logo-img-margin;
 
     @include theming.apply-from-theme(
       (
@@ -53,5 +59,25 @@ a:focus.logo {
         background-color: theme.$logo-img-background-color,
       )
     );
+  }
+}
+
+.logo,
+a.logo,
+a:visited.logo,
+a:hover.logo,
+a:active.logo,
+a:focus.logo {
+  @extend %logo-styling;
+}
+
+body > header {
+  .logo,
+  a.logo,
+  a:visited.logo,
+  a:hover.logo,
+  a:active.logo,
+  a:focus.logo {
+    @extend %logo-styling;
   }
 }

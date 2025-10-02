@@ -112,6 +112,7 @@ and spacing sets */
     #{border-radii.$border-radius-m},
   $form-combined-field-button-border-radius: 0 #{border-radii.$border-radius-m}
     #{border-radii.$border-radius-m} 0,
+  $form-combined-field-button-min-height: 3rem,
 
   // footer
   $footer-background-color: color-scheme.$white,
@@ -173,7 +174,7 @@ and spacing sets */
   $header-background-color: color-scheme.$white,
   $header-font-weight: bold,
   $header-min-height: 3.5rem,
-  $header-color: semantic.$color-text-default,
+  $header-text-color: semantic.$color-text-default,
   $header-padding-right: spacing.$spacing-300,
   $header-padding-left: spacing.$spacing-300,
 

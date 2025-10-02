@@ -42,11 +42,6 @@ gebruikers.</p>
       <ul>
         <li><a href="/library/components/forms/form-fieldset">Fieldset</a></li>
         <li>
-          <a href="/library/components/forms/form-fieldset-invisible"
-            >Onzichtbare fieldset</a
-          >
-        </li>
-        <li>
           <a href="/library/components/forms/form-fieldset-radio"
             >Fieldset radio-selecteerknop - `radio`</a
           >

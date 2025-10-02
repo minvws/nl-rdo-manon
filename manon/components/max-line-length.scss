@@ -13,9 +13,10 @@ h3,
 h4,
 h5,
 h6 {
+  max-width: theme.$max-line-length-max-width;
+
   @include theming.apply-from-theme(
     (
-      max-width: theme.$max-line-length-max-width,
       hyphens: theme.$max-line-length-hyphens,
       word-break: theme.$max-line-length-word-break,
     )
