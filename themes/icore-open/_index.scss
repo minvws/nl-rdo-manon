@@ -286,6 +286,16 @@ and spacing sets */
   $form-help-button-text-color: semantic.$color-brand-primary-default,
   $form-help-button-top: spacing.$spacing-050,
 
+  // filter
+  $filter-icon-color: semantic.$color-brand-primary-default,
+  $filter-icon-mask: icons.$chevron-down,
+  $filter-icon-width: 1.5rem,
+  $filter-icon-height: 1.5rem,
+  $filter-button-font-size: 0,
+  $filter-close-icon-mask: icons.$chevron-up,
+  $filter-button-background-color: transparent,
+  $filter-button-padding: 0,
+
   // header
   $header-background-color: color-scheme.$oc-gray-9,
   $header-justify-content: stretch,
