@@ -1,0 +1,33 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+$breakpoint: 24rem !default;
+
+p,
+a,
+span,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  max-width: theme.$max-line-length-max-width;
+
+  @include theming.apply-from-theme(
+    (
+      hyphens: theme.$max-line-length-hyphens,
+      word-break: theme.$max-line-length-word-break,
+    )
+  );
+
+  @media (width >= $breakpoint) {
+    @include theming.apply-from-theme(
+      (
+        hyphens: theme.$max-line-length-breakpoint-hyphens,
+        word-break: theme.$max-line-length-breakpoint-word-break,
+      )
+    );
+  }
+}

@@ -1,0 +1,45 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+$breakpoint: 24rem !default;
+
+form {
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    box-sizing: border-box;
+
+    @include theming.apply-from-theme(
+      (
+        align-self: theme.$form-button-align-self,
+        width: theme.$form-button-width,
+        min-width: theme.$form-button-min-width,
+        min-height: theme.$form-button-min-height,
+        padding-top: theme.$form-button-padding-top,
+        padding-right: theme.$form-button-padding-right,
+        padding-bottom: theme.$form-button-padding-bottom,
+        padding-left: theme.$form-button-padding-left,
+        margin: theme.$form-button-margin,
+        background-color: theme.$form-button-background-color,
+        color: theme.$form-button-color,
+        font-size: theme.$form-button-font-size,
+        line-height: theme.$form-button-line-height,
+        font-weight: theme.$form-button-font-weight,
+        border-width: theme.$form-button-border-width,
+        border-style: theme.$form-button-border-style,
+        border-color: theme.$form-button-border-color,
+      )
+    );
+
+    @media (width >= $breakpoint) {
+      @include theming.apply-from-theme(
+        (
+          width: theme.$form-button-after-breakpoint-width,
+          min-width: theme.$form-button-min-width,
+        )
+      );
+    }
+  }
+}

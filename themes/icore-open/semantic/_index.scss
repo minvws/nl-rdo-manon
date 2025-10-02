@@ -1,0 +1,38 @@
+@use "../core/color-scheme/" as color-scheme;
+
+// font
+$font-size: 1rem;
+$font-size: 1rem;
+$font-family: "IBM Plex Sans", sans-serif;
+$font-family-secondary: serif;
+
+// @use "base";
+$base-background-color: #{color-scheme.$oc-gray-1};
+$base-darker: #{color-scheme.$oc-gray-2};
+$base-offset: #{color-scheme.$oc-gray-0};
+
+// @use "border";
+$color-border-default: #{color-scheme.$oc-gray-4};
+$color-border-subtle: #{color-scheme.$oc-gray-2};
+$color-border-intense: #{color-scheme.$oc-gray-6};
+
+// @use "brand";
+/* Primary */
+$color-brand-primary-default: #{color-scheme.$oc-blue-8};
+$color-brand-primary-muted: #{color-scheme.$oc-blue-3};
+$color-brand-primary-subtle: #{color-scheme.$oc-blue-0};
+
+/* Secundary */
+$color-brand-secondary-default: #{color-scheme.$oc-gray-9};
+$color-brand-secondary-muted: #{color-scheme.$oc-gray-7};
+$color-brand-secondary-subtle: #{color-scheme.$oc-gray-2};
+
+// @use "destructive";
+$color-destructive-default: #{color-scheme.$oc-red-8};
+$color-destructive-subtle: #{color-scheme.$oc-red-2};
+$color-destructive-intense: #{color-scheme.$oc-red-9};
+
+// @use "text";
+$color-text-default: #{color-scheme.$oc-gray-9};
+$color-text-subtle: #{color-scheme.$oc-gray-7};
+$color-text-intense: #{color-scheme.$oc-gray-2};

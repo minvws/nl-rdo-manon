@@ -1,0 +1,12 @@
+@use "../../config";
+
+@font-face {
+  font-family: kat-icons;
+  font-weight: normal;
+  font-style: normal;
+  src: url("#{config.$font-path}/kat-icons/kat-icons.eot");
+  src:
+    url("#{config.$font-path}/kat-icons/kat-icons.woff") format("woff"),
+    url("#{config.$font-path}/kat-icons/kat-icons.ttf") format("truetype"),
+    url("#{config.$font-path}/kat-icons/kat-icons.svg") format("svg");
+}

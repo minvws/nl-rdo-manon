@@ -1,0 +1,23 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+.sticky-header {
+  position: relative;
+  max-height: theme.$table-sticky-header-max-height;
+
+  thead {
+    position: relative;
+    z-index: 1;
+  }
+
+  th {
+    position: sticky;
+    top: -1px;
+
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$table-sticky-header-background-color,
+      )
+    );
+  }
+}

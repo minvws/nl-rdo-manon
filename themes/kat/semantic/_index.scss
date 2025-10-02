@@ -1,0 +1,67 @@
+@use "../core/color-scheme/" as color-scheme;
+
+// font
+$font-size: 1rem;
+$font-size: 1rem;
+$font-family: "Open Sans", sans-serif;
+$font-family-secondary: "Fredoka", sans-serif;
+
+// base
+$base-background-color: #{color-scheme.$white};
+$base-darker: #{color-scheme.$grey-100};
+$base-offset: #{color-scheme.$grey-50};
+
+// border
+$color-border-default: #{color-scheme.$grey-200};
+$color-border-subtle: #{color-scheme.$grey-100};
+$color-border-intense: #{color-scheme.$grey-300};
+
+// primary
+$color-brand-primary: #{color-scheme.$yellow-200};
+$color-brand-primary-muted: #{color-scheme.$yellow-300};
+$color-brand-primary-subtle: #{color-scheme.$yellow-50};
+
+// primary
+$color-brand-primary: #{color-scheme.$yellow-200};
+$color-brand-primary-muted: #{color-scheme.$yellow-300};
+$color-brand-primary-subtle: #{color-scheme.$yellow-50};
+
+// secondary
+$color-brand-secondary: #{color-scheme.$violet-500};
+$color-brand-secondary-muted: #{color-scheme.$violet-400};
+$color-brand-secondary-subtle: #{color-scheme.$violet-100};
+
+// destructive
+$color-destructive-default: #{color-scheme.$red-600};
+$color-destructive-subtle: #{color-scheme.$red-200};
+$color-destructive-intense: #{color-scheme.$red-800};
+
+// explanation
+$color-notification-explanation-default: #{color-scheme.$blue-100};
+$color-notification-explanation-subtle: #{color-scheme.$blue-100};
+$color-notification-explanation-intense: #{color-scheme.$blue-200};
+
+// confirmation
+$color-notification-confirmation-default: #{color-scheme.$green-100};
+$color-notification-confirmation-subtle: #{color-scheme.$green-50};
+$color-notification-confirmation-intense: #{color-scheme.$green-500};
+
+// warning
+$color-notification-warning-default: #{color-scheme.$ochre-50};
+$color-notification-warning-subtle: #{color-scheme.$ochre-50};
+$color-notification-warning-intense: #{color-scheme.$ochre-200};
+
+// error
+$color-notification-error-default: #{color-scheme.$red-100};
+$color-notification-error-subtle: #{color-scheme.$red-100};
+$color-notification-error-intense: #{color-scheme.$red-500};
+
+// system
+$color-notification-system-default: #{color-scheme.$grey-50};
+$color-notification-system-subtle: #{color-scheme.$grey-100};
+$color-notification-system-intense: #{color-scheme.$grey-300};
+
+// text
+$color-text-default: #{color-scheme.$black};
+$color-text-subtle: #{color-scheme.$grey-800};
+$color-text-intense: #{color-scheme.$black};

@@ -1,0 +1,15 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+form {
+  .horizontal {
+    button:first-child {
+      @include theming.apply-from-theme(
+        (
+          margin-left:
+            theme.$form-button-grouped-horizontal-first-child-margin-left,
+        )
+      );
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+p {
+  margin: 0;
+  color: inherit;
+
+  @include theming.apply-from-theme(
+    (
+      line-height: theme.$p-line-height,
+      font-size: theme.$p-font-size,
+      font-weight: theme.$p-font-weight,
+      background-color: theme.$p-background-color,
+      max-width: theme.$p-max-width,
+      margin: theme.$p-margin,
+    )
+  );
+}

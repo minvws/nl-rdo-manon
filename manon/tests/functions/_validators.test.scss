@@ -1,0 +1,24 @@
+@use "true";
+@use "../../functions/validators";
+
+@include true.describe("args-not-null function") {
+  @include true.it("should return true when all arguments are not null") {
+    @include true.assert-true(validators.args-not-null(1, "hello", true));
+  }
+
+  @include true.it("should return false when one argument is null") {
+    @include true.assert-false(validators.args-not-null(1, null, true));
+  }
+
+  @include true.it("should return false when multiple arguments are null") {
+    @include true.assert-false(validators.args-not-null(null, "hello", null));
+  }
+
+  @include true.it("should return true when no arguments are provided") {
+    @include true.assert-true(validators.args-not-null());
+  }
+
+  @include true.it("should return true when argument is an empty string") {
+    @include true.assert-true(validators.args-not-null(""));
+  }
+}

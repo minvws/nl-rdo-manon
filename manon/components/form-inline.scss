@@ -1,0 +1,58 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+$breakpoint: 24rem !default;
+
+form.inline {
+  padding: 0;
+  background-color: transparent;
+  max-width: theme.$form-inline-max-width;
+  width: theme.$form-inline-width;
+
+  @include theming.apply-from-theme(
+    (
+      gap: theme.$form-inline-gap,
+      color: theme.$form-inline-text-color,
+      flex-direction: theme.$form-inline-flex-direction,
+    )
+  );
+
+  button,
+  a.button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    box-sizing: border-box;
+
+    @include theming.apply-from-theme(
+      (
+        align-self: theme.$form-inline-button-align-self,
+        width: theme.$form-inline-button-width,
+        min-width: theme.$form-inline-button-min-width,
+        min-height: theme.$form-inline-button-min-height,
+        padding-top: theme.$form-inline-button-padding-top,
+        padding-right: theme.$form-inline-button-padding-right,
+        padding-bottom: theme.$form-inline-button-padding-bottom,
+        padding-left: theme.$form-inline-button-padding-left,
+        margin: theme.$form-inline-button-margin,
+        background-color: theme.$form-inline-button-background-color,
+        color: theme.$form-inline-button-color,
+        font-size: theme.$form-inline-button-font-size,
+        line-height: theme.$form-inline-button-line-height,
+        font-weight: theme.$form-inline-button-font-weight,
+        border-width: theme.$form-inline-button-border-width,
+        border-style: theme.$form-inline-button-border-style,
+        border-color: theme.$form-inline-button-border-color,
+      )
+    );
+
+    @media (width >= $breakpoint) {
+      @include theming.apply-from-theme(
+        (
+          width: theme.$form-inline-button-after-breakpoint-width,
+          min-width: theme.$form-inline-button-min-width,
+        )
+      );
+    }
+  }
+}
