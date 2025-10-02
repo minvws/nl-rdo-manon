@@ -6,6 +6,11 @@
   background-color: theme.$icon-color;
   height: theme.$icon-height;
   width: theme.$icon-width;
+  display: inline-block;
+}
+
+svg.icon {
+  background-color: transparent;
 }
 
 .icon-ascending {
