@@ -91,7 +91,6 @@
 @use "@minvws/manon/components/table";
 @use "@minvws/manon/components/table-action-buttons";
 @use "@minvws/manon/components/table-caption";
-@use "@minvws/manon/components/table-checkbox";
 @use "@minvws/manon/components/table-condensed";
 @use "@minvws/manon/components/table-expando-rows";
 @use "@minvws/manon/components/table-number";
@@ -100,6 +99,7 @@
 @use "@minvws/manon/components/table-summary";
 @use "@minvws/manon/components/tag";
 @use "@minvws/manon/components/tags";
+@use "@minvws/manon/colors/tags-colors";
 @use "@minvws/manon/components/tile";
 @use "@minvws/manon/components/tile-groups";
 @use "@minvws/manon/components/tile-image-cover";

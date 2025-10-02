@@ -6,13 +6,14 @@ $breakpoint: 24rem !default;
 form.inline {
   padding: 0;
   background-color: transparent;
+  max-width: theme.$form-inline-max-width;
+  width: theme.$form-inline-width;
 
   @include theming.apply-from-theme(
     (
       gap: theme.$form-inline-gap,
       color: theme.$form-inline-text-color,
       flex-direction: theme.$form-inline-flex-direction,
-      width: theme.$form-inline-width,
     )
   );
 
