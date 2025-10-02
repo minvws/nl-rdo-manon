@@ -99,16 +99,6 @@
           );
         }
       }
-
-      // &[aria-expanded="false"] {
-      //   &::after {
-      //     @include theming.apply-from-theme(
-      //       (
-      //         content: theme.$filter-button-icon-before-open-content,
-      //       )
-      //     );
-      //   }
-      // }
     }
   }
 }

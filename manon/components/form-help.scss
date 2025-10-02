@@ -56,27 +56,45 @@ form.help {
         );
       }
 
-      &::before {
-        vertical-align: middle;
+      // Icon
+      @if theme.$form-help-icon-mask {
+        &::before {
+          mask-size: contain;
+          content: "";
 
-        @include theming.apply-from-theme(
-          (
-            content: theme.$form-help-button-icon,
-            font-family: theme.$form-help-button-icon-font-family,
-            line-height: theme.$form-help-button-icon-line-height,
-            font-size: theme.$form-help-button-icon-font-size,
-            font-weight: theme.$form-help-button-icon-font-weight,
-          )
-        );
+          @include theming.apply-from-theme(
+            (
+              margin-right: theme.$form-help-icon-margin-right,
+              margin-left: theme.$form-help-icon-margin-left,
+              padding: theme.$form-help-icon-padding,
+              background-color: theme.$form-help-icon-color,
+              mask-image: theme.$form-help-icon-mask,
+              width: theme.$form-help-icon-width,
+              height: theme.$form-help-icon-height,
+            )
+          );
+        }
       }
 
       &[aria-expanded="true"] {
-        &::before {
-          @include theming.apply-from-theme(
-            (
-              content: theme.$form-help-button-icon-expanded,
-            )
-          );
+        // Icon
+        @if theme.$form-help-expanded-icon-mask {
+          &::before {
+            mask-size: contain;
+            content: "";
+
+            @include theming.apply-from-theme(
+              (
+                margin-right: theme.$form-help-expanded-icon-margin-right,
+                margin-left: theme.$form-help-expanded-icon-margin-left,
+                padding: theme.$form-help-expanded-icon-padding,
+                background-color: theme.$form-help-expanded-icon-color,
+                mask-image: theme.$form-help-expanded-icon-mask,
+                width: theme.$form-help-expanded-icon-width,
+                height: theme.$form-help-expanded-icon-height,
+              )
+            );
+          }
         }
       }
 
@@ -126,11 +144,6 @@ form.help {
 
       + .explanation {
         margin-top: 0;
-      }
-
-      &::before {
-        margin: 0;
-        width: 100%;
       }
     }
   }
