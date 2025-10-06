@@ -138,8 +138,8 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  class="collapsible">
-
+  class="collapsible"
+>
   <div class="collapsing-element">
     <form>
       <fieldset>
