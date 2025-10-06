@@ -50,6 +50,10 @@ nav {
   @extend %navigation-link;
 
   ul {
+    @if theme.$navigation-list-gap {
+      display: flex;
+    }
+
     @include theming.apply-from-theme(
       (
         margin: theme.$navigation-list-margin,
@@ -60,6 +64,9 @@ nav {
     );
 
     li {
+      display: flex;
+      align-items: center;
+
       @include theming.apply-from-theme(
         (
           padding: theme.$navigation-list-item-padding,
@@ -71,22 +78,25 @@ nav {
         )
       );
 
-      &::before {
-        vertical-align: middle;
+      // Icon
+      @if theme.$navigation-list-item-icon-mask {
+        &::before {
+          mask-size: contain;
+          content: "";
+          display: inline-block;
 
-        @include theming.apply-from-theme(
-          (
-            content: theme.$navigation-list-item-icon-content,
-            font-family: theme.$navigation-list-item-icon-font-family,
-            line-height: theme.$navigation-list-item-icon-line-height,
-            font-size: theme.$navigation-list-item-icon-font-size,
-            padding-top: theme.$navigation-list-item-icon-padding-top,
-            padding-right: theme.$navigation-list-item-icon-padding-right,
-            padding-bottom: theme.$navigation-list-item-icon-padding-bottom,
-            padding-left: theme.$navigation-list-item-icon-padding-left,
-            display: theme.$navigation-list-item-icon-display,
-          )
-        );
+          @include theming.apply-from-theme(
+            (
+              margin-right: theme.$navigation-list-item-icon-margin-right,
+              margin-left: theme.$navigation-list-item-icon-margin-left,
+              padding: theme.$navigation-list-item-icon-padding,
+              background-color: theme.$navigation-list-item-icon-color,
+              mask-image: theme.$navigation-list-item-icon-mask,
+              width: theme.$navigation-list-item-icon-width,
+              height: theme.$navigation-list-item-icon-height,
+            )
+          );
+        }
       }
     }
   }

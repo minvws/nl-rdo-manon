@@ -12,7 +12,7 @@ Knoppen op een website zijn interactieve elementen waarmee gebruikers een actie 
 
 <h2 id="button-types">Soorten knoppen</h2>
 
-- [Basisweergave](/library/components/button/button-base)
+- [Basisweergave](/library/components/button/button)
 - [Secundaire knoppen](/library/components/button/button-secondary)
 - [Knoppen groeperen](/library/components/button/button-container)
 - [Call to action button](/library/components/button/call-to-action)
