@@ -19,6 +19,8 @@
   ],
   "scripts": {
     "npm-version": "npm version",
+    "prepare-icons": "npm run prepare-icons:icore-open",
+    "prepare-icons:icore-open": "node ./scripts/prepare-icons.js ./icore-open/icons/tabler",
     "build:themes": "node ./scripts/build-themes.js"
   },
   "peerDependencies": {

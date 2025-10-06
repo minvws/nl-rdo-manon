@@ -29,11 +29,11 @@ SCSS importeren:
 
 <h2 id="examples">Voorbeelden</h2>
 
-<a href="#main-content" class="button to-top icon icon-ascending" title="Terug naar het hoofdmenu">Terug
+<a href="#main-content" class="button to-top" title="Terug naar het hoofdmenu">Terug
 naar het hoofdmenu</a>
 
 ```html
-<a href="#main-content" class="button to-top icon icon-ascending" title="Terug naar het hoofdmenu"
+<a href="#main-content" class="button to-top" title="Terug naar het hoofdmenu"
   >Terug naar het hoofdmenu</a
 >
 ```
@@ -41,7 +41,7 @@ naar het hoofdmenu</a>
 ```html
 <main id="main-content">
   <!-- content within the main component -->
-  <a href="#main-content" class="button to-top icon icon-ascending" title="Terug naar het hoofdmenu"
+  <a href="#main-content" class="button to-top" title="Terug naar het hoofdmenu"
     >Terug naar het hoofdmenu</a
   >
 </main>

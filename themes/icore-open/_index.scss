@@ -4,6 +4,9 @@
 /* Fonts (@font-faces) */
 @use "fonts";
 
+/* Icon mask data URIs */
+@use "icons";
+
 /* Core variables */
 /* These are core sets like color schemes, fonts
 and spacing sets */
@@ -48,6 +51,17 @@ and spacing sets */
   $accordion-content-border-radius: 0 0 border-radii.$border-radius-s
     border-radii.$border-radius-s,
 
+  // accordion icon open
+  $accordion-button-icon-after-color: semantic.$color-text-default,
+  $accordion-button-icon-after-mask: icons.$chevron-down,
+  $accordion-button-icon-after-width: 1.5rem,
+  $accordion-button-icon-after-height: 1.5rem,
+
+  // accordion icon closed
+  $accordion-button-icon-after-closed-color: semantic.$color-text-default,
+  $accordion-button-icon-after-closed-mask: icons.$chevron-up,
+  $accordion-button-icon-after-closed-width: 1.5rem,
+  $accordion-button-icon-after-closed-height: 1.5rem,
   // article
   $article-gap: spacing.$spacing-150,
   $article-flex-direction: column,
@@ -106,11 +120,19 @@ and spacing sets */
   $button-padding-left: spacing.$spacing-100,
   $button-background-color: semantic.$color-brand-primary-default,
   $button-font-weight: 400,
+  $button-gap: spacing.$spacing-050,
 
   // button hover
   $button-hover-background-color: color-scheme.$oc-blue-7,
   $button-hover-text-color: color-scheme.$oc-white,
   $button-hover-border-color: color-scheme.$oc-blue-7,
+
+  // button secondary
+  $button-secondary-background-color: color-scheme.$oc-white,
+  $button-secondary-text-color: semantic.$color-brand-primary-default,
+  $button-secondary-border-width: 1px,
+  $button-secondary-border-style: solid,
+  $button-secondary-border-color: color-scheme.$oc-gray-4,
 
   // button destructive
   $button-destructive-background-color: semantic.$color-destructive-default,
@@ -123,6 +145,20 @@ and spacing sets */
   $button-destructive-hover-text-color: color-scheme.$oc-white,
   $button-destructive-hover-border-color: semantic.$color-destructive-intense,
 
+  // button to top
+  $button-to-top-background-color: semantic.$color-brand-primary-default,
+  $button-to-top-width: 2.5rem,
+  $button-to-top-height: 2.5rem,
+  $button-to-top-font-size: 0,
+  $button-to-top-border-radius: border-radii.$border-radius-round,
+  $button-to-top-align-items: center,
+  $button-to-top-justify-content: center,
+
+  // button to top icon
+  $button-to-top-icon-mask: icons.$to-top,
+  $button-to-top-icon-color: color-scheme.$oc-white,
+  $button-to-top-icon-width: 1.5rem,
+  $button-to-top-icon-height: 1.5rem,
   // button cta
   $button-cta-background-color: color-scheme.$oc-blue-9,
   $button-cta-hover-background-color: color-scheme.$oc-blue-8,
@@ -136,9 +172,13 @@ and spacing sets */
   $breadcrumb-bar-padding-bottom: spacing.$spacing-075,
   $breadcrumb-bar-padding-left: spacing.$spacing-100,
   $breadcrumb-bar-text-color: semantic.$color-text-default,
-  $breadcrumb-bar-gap: spacing.$spacing-100,
+  $breadcrumb-bar-gap: spacing.$spacing-050,
   $breadcrumb-bar-list-item-last-child-font-weight: bold,
-  $breadcrumb-bar-list-item-gap: spacing.$spacing-100,
+  $breadcrumb-bar-list-item-gap: spacing.$spacing-050,
+  $breadcrumb-bar-icon-color: semantic.$color-text-default,
+  $breadcrumb-bar-icon-mask: icons.$chevron-right,
+  $breadcrumb-bar-icon-width: 1.5rem,
+  $breadcrumb-bar-icon-height: 1.5rem,
 
   // breadcrumb bar link
   $breadcrumb-bar-link-text-decoration: none,
@@ -263,19 +303,29 @@ and spacing sets */
   $footer-link-current-text-decoration: underline,
 
   // Form help
-  $form-help-button-padding-top: 0,
-  $form-help-button-padding-right: 0,
-  $form-help-button-padding-bottom: 0,
-  $form-help-button-padding-left: 0,
-  $form-help-button-border-width: 2px,
-  $form-help-button-border-style: solid,
-  $form-help-button-border-color: semantic.$color-brand-primary-default,
-  $form-help-button-border-radius: 50%,
-  $form-help-button-width: 1.25rem,
-  $form-help-button-height: 1.25rem,
-  $form-help-button-background-color: color-scheme.$oc-white,
+  $form-help-button-padding: spacing.$spacing-025,
   $form-help-button-text-color: semantic.$color-brand-primary-default,
   $form-help-button-top: spacing.$spacing-050,
+  $form-help-icon-mask: icons.$questionmark,
+  $form-help-button-border-width: 1px,
+  $form-help-button-border-style: solid,
+  $form-help-button-border-color: color-scheme.$oc-gray-4,
+  $form-help-button-border-radius: 50%,
+  $form-help-icon-width: 1rem,
+  $form-help-icon-height: 1rem,
+  $form-help-icon-color: semantic.$color-brand-primary-default,
+  $form-help-button-background-color: transparent,
+  $form-help-button-margin: 1rem -2.5rem 0 0,
+
+  // filter
+  $filter-icon-color: semantic.$color-brand-primary-default,
+  $filter-icon-mask: icons.$chevron-down,
+  $filter-icon-width: 1.5rem,
+  $filter-icon-height: 1.5rem,
+  $filter-button-font-size: 0,
+  $filter-close-icon-mask: icons.$chevron-up,
+  $filter-button-background-color: transparent,
+  $filter-button-padding: 0,
 
   // header
   $header-background-color: color-scheme.$oc-gray-9,
@@ -351,6 +401,37 @@ and spacing sets */
 
   // utility
   $horizontal-gap: spacing.$spacing-100,
+
+  // icon
+  $icon-height: 1.5rem,
+  $icon-width: 1.5rem,
+  $icon-mask-ascending: icons.$ascending,
+  $icon-mask-check: icons.$check,
+  $icon-mask-chevron-down: icons.$chevron-down,
+  $icon-mask-chevron-left: icons.$chevron-left,
+  $icon-mask-chevron-light-down: icons.$chevron-light-down,
+  $icon-mask-chevron-light-left: icons.$chevron-light-left,
+  $icon-mask-chevron-light-right: icons.$chevron-light-right,
+  $icon-mask-chevron-light-up: icons.$chevron-light-up,
+  $icon-mask-chevron-right: icons.$chevron-right,
+  $icon-mask-chevron-up: icons.$chevron-up,
+  $icon-mask-close: icons.$close,
+  $icon-mask-descending: icons.$descending,
+  $icon-mask-download: icons.$download,
+  $icon-mask-hamburger: icons.$hamburger,
+  $icon-mask-heart: icons.$heart,
+  $icon-mask-home: icons.$home,
+  $icon-mask-lock-closed: icons.$lock-closed,
+  $icon-mask-on-off: icons.$on-off,
+  $icon-mask-outgoing: icons.$outgoing,
+  $icon-mask-questionmark: icons.$questionmark,
+  $icon-mask-reset: icons.$reset,
+  $icon-mask-search: icons.$search,
+  $icon-mask-smartphone: icons.$smartphone,
+  $icon-mask-sort: icons.$sort,
+  $icon-mask-to-top: icons.$to-top,
+  $icon-mask-trash: icons.$trash,
+  $icon-mask-user: icons.$user,
 
   // layout
   $layout-gap: 2.5rem,
@@ -486,6 +567,26 @@ and spacing sets */
   $sidemenu-nav-padding-right: spacing.$spacing-200,
   $sidemenu-nav-padding-bottom: spacing.$spacing-100,
   $sidemenu-nav-padding-left: spacing.$spacing-200,
+
+  // sidemenu button
+  $sidemenu-button-background-color: color-scheme.$oc-white,
+  $sidemenu-button-padding: spacing.$spacing-050,
+  $sidemenu-button-color: semantic.$color-brand-primary-default,
+  $sidemenu-button-font-size: 0,
+
+  // sidemenu expanded
+  $sidemenu-expanded-icon-mask: icons.$close,
+  $sidemenu-expanded-icon-color: semantic.$color-brand-primary-default,
+  $sidemenu-expanded-icon-width: 1.5rem,
+  $sidemenu-expanded-icon-height: 1.5rem,
+
+  // sidemenu collapsed
+  $sidemenu-collapsed-button-margin-left: 2rem,
+  $sidemenu-collapsed-icon-mask: icons.$hamburger,
+
+  // sidemenu list
+  $sidemenu-ul-padding: spacing.$spacing-100 0,
+  $sidemenu-list-item-padding: spacing.$spacing-025 0,
 
   // slogan
   $slogan-text-color: semantic.$color-text-default,

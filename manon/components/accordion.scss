@@ -137,28 +137,49 @@ section.accordion {
 .js-accordion-loaded {
   /* The collapsed state */
   .accordion {
+    width: 100%;
+
     button[aria-expanded="false"] {
       /* Open icon */
-      &::before {
-        @include theming.apply-from-theme(
-          (
-            content: theme.$accordion-button-icon-before-open-content,
-            font-family: theme.$accordion-button-icon-font-family,
-            font-size: theme.$accordion-button-icon-before-font-size,
-          )
-        );
+      @if theme.$accordion-button-icon-before-mask {
+        &::before {
+          mask-size: contain;
+          content: "";
+
+          @include theming.apply-from-theme(
+            (
+              margin-right: theme.$accordion-button-icon-before-margin-right,
+              margin-left: theme.$accordion-button-icon-before-margin-left,
+              padding-right: theme.$accordion-button-icon-before-padding-right,
+              padding-left: theme.$accordion-button-icon-before-padding-left,
+              background-color: theme.$accordion-button-icon-before-color,
+              mask-image: theme.$accordion-button-icon-before-mask,
+              width: theme.$accordion-button-icon-before-width,
+              height: theme.$accordion-button-icon-before-height,
+            )
+          );
+        }
       }
 
-      &::after {
-        margin-left: auto;
+      @if theme.$accordion-button-icon-after-mask {
+        &::after {
+          mask-size: contain;
+          content: "";
+          margin-left: auto;
 
-        @include theming.apply-from-theme(
-          (
-            content: theme.$accordion-button-icon-after-open-content,
-            font-family: theme.$accordion-button-icon-font-family,
-            font-size: theme.$accordion-button-icon-after-font-size,
-          )
-        );
+          @include theming.apply-from-theme(
+            (
+              margin-right: theme.$accordion-button-icon-after-margin-right,
+              margin-left: theme.$accordion-button-icon-after-margin-left,
+              padding-right: theme.$accordion-button-icon-after-padding-right,
+              padding-left: theme.$accordion-button-icon-after-padding-left,
+              background-color: theme.$accordion-button-icon-after-color,
+              mask-image: theme.$accordion-button-icon-after-mask,
+              width: theme.$accordion-button-icon-after-width,
+              height: theme.$accordion-button-icon-after-height,
+            )
+          );
+        }
       }
 
       & + div {
@@ -177,30 +198,53 @@ section.accordion {
         )
       );
 
-      /* Close icon */
-      &::before {
-        @include theming.apply-from-theme(
-          (
-            content: theme.$accordion-button-icon-before-close-content,
-            font-family: theme.$accordion-button-icon-font-family,
-            font-size: theme.$accordion-button-icon-before-font-size,
-            font-weight: theme.$accordion-button-icon-before-font-weight,
-            white-space: theme.$accordion-button-icon-before-white-space,
-          )
-        );
+      // /* Close icon */
+      @if theme.$accordion-button-icon-before-closed-mask {
+        &::before {
+          mask-size: contain;
+          content: "";
+
+          @include theming.apply-from-theme(
+            (
+              margin-right:
+                theme.$accordion-button-icon-before-closed-margin-right,
+              margin-left:
+                theme.$accordion-button-icon-before-closed-margin-left,
+              padding-right:
+                theme.$accordion-button-icon-before-closed-padding-right,
+              padding-left:
+                theme.$accordion-button-icon-before-closed-padding-left,
+              background-color: theme.$accordion-button-icon-before-closed-color,
+              mask-image: theme.$accordion-button-icon-before-closed-mask,
+              width: theme.$accordion-button-icon-before-closed-width,
+              height: theme.$accordion-button-icon-before-closed-height,
+            )
+          );
+        }
       }
 
-      &::after {
-        @include theming.apply-from-theme(
-          (
-            content: theme.$accordion-button-icon-after-close-content,
-            font-family: theme.$accordion-button-icon-font-family,
-            font-size: theme.$accordion-button-icon-after-font-size,
-            font-weight: theme.$accordion-button-icon-after-font-weight,
-            white-space: theme.$accordion-button-icon-after-white-space,
-            margin-left: theme.$accordion-button-icon-after-margin-left,
-          )
-        );
+      @if theme.$accordion-button-icon-after-closed-mask {
+        &::after {
+          mask-size: contain;
+          content: "";
+          margin-left: auto;
+
+          @include theming.apply-from-theme(
+            (
+              margin-right:
+                theme.$accordion-button-icon-after-closed-margin-right,
+              margin-left: theme.$accordion-button-icon-after-closed-margin-left,
+              padding-right:
+                theme.$accordion-button-icon-after-closed-padding-right,
+              padding-left:
+                theme.$accordion-button-icon-after-closed-padding-left,
+              background-color: theme.$accordion-button-icon-after-closed-color,
+              mask-image: theme.$accordion-button-icon-after-closed-mask,
+              width: theme.$accordion-button-icon-after-closed-width,
+              height: theme.$accordion-button-icon-after-closed-height,
+            )
+          );
+        }
       }
     }
   }

@@ -95,27 +95,3 @@ SCSS importeren:
     </li>
   </ul>
 </div>
-
-### Voorbeeld: `button` met `img`
-
-<!-- <button class="icon-only"> -->
-<!--   Lorem ipsum <img src="/img/cat.svg" alt="Kat" /> -->
-<!-- </button> -->
-
-```html
-<button href="/library/components/button/icon" class="icon-only">
-  Lorem ipsum <img src="path/to/img.svg" alt="Kat" />
-</button>
-```
-
-### Voorbeeld: Link als `button` met `img`
-
-<!-- <a href="/library/components/button/icon" class="button icon-only"> -->
-<!--   Lorem ipsum <img src="" alt="Kat" /> -->
-<!-- </a> -->
-
-```html
-<a href="/library/components/button/icon" class="button icon-only">
-  Lorem ipsum <img src="path/to/img.svg" alt="Kat" />
-</a>
-```

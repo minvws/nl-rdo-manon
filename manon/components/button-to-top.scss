@@ -4,6 +4,9 @@
 .to-top,
 button.to-top,
 a.button.to-top {
+  padding: 0;
+  gap: 0;
+
   @include theming.apply-from-theme(
     (
       position: theme.$button-to-top-position,
@@ -27,14 +30,21 @@ a.button.to-top {
     )
   );
 
-  .icon,
-  &.icon {
-    &::before {
-      padding: 0;
+  @if theme.$button-to-top-icon-mask {
+    &::after {
+      mask-size: contain;
+      content: "";
 
       @include theming.apply-from-theme(
         (
-          color: theme.$button-to-top-icon-color,
+          margin-right: theme.$button-to-top-icon-margin-right,
+          margin-left: theme.$button-to-top-icon-margin-left,
+          padding-right: theme.$button-to-top-icon-padding-right,
+          padding-left: theme.$button-to-top-icon-padding-left,
+          background-color: theme.$button-to-top-icon-color,
+          mask-image: theme.$button-to-top-icon-mask,
+          width: theme.$button-to-top-icon-width,
+          height: theme.$button-to-top-icon-height,
         )
       );
     }
@@ -58,23 +68,5 @@ a.button.to-top {
         border-color: theme.$button-to-top-border-color,
       )
     );
-  }
-
-  &:hover .icon,
-  &:visited .icon,
-  &:visited:hover .icon,
-  &.icon:hover,
-  &.icon:visited,
-  &.icon:visited:hover {
-    &::before {
-      @include theming.apply-from-theme(
-        (
-          color: (
-            theme.$button-to-top-icon-color,
-            theme.$button-to-top-icon-color,
-          ),
-        )
-      );
-    }
   }
 }
