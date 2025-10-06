@@ -49,6 +49,7 @@ for (const themeDir of themeDirs) {
         themesFolder,
         path.resolve("../manon/scss"),
         path.resolve("../node_modules"),
+        path.resolve("./node_modules"),
       ],
     });
     fs.writeFileSync(
