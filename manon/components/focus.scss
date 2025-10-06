@@ -2,8 +2,7 @@
 @use "../variables" as theme;
 
 *:focus,
-*.focus,
-.outline-dotted {
+*.focus {
   position: relative;
 
   @include theming.apply-from-theme(
