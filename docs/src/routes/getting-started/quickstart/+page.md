@@ -10,12 +10,22 @@ op een meer gestructureerde manier kunt gebruiken. Daarnaast hebben we
 [enkele voorbeeldimplementaties](https://github.com/minvws/nl-rdo-manon/tree/main/examples/)
 geleverd in verschillende frameworks.
 
+## Installeren met npm
+
+Om het Manon Framework en de thema's te gebruiken, moet we ze eerst installeren.
+Dit kan gedaan worden met npm:
+
+```console
+npm install @minvws/manon @minvws/manon-themes
+```
+
 ## Vereisten
 
-Zorg ervoor dat je project is ingesteld om Sass te gebruiken en dat je een
-Sass-compiler hebt geïnstalleerd. Build-systemen zoals Webpack, Parcel of Vite
-ondersteunen meestal Sass out-of-the-box. Als je een van deze build-systemen
-gebruikt, hoef je mogelijk alleen de juiste loader of plugin te installeren.
+Zorg er daarnaast voor dat je project is ingesteld om Sass te gebruiken en dat
+je een Sass-compiler hebt geïnstalleerd. Build-systemen zoals Webpack, Parcel of
+Vite ondersteunen meestal Sass out-of-the-box. Als je een van deze
+build-systemen gebruikt, hoef je mogelijk alleen de juiste loader of plugin te
+installeren.
 
 Als je build-systeem Sass niet ondersteunt, kun je
 [de Sass command-line-tool](https://sass-lang.com/documentation/cli/dart-sass/)
@@ -24,15 +34,6 @@ te compileren, kan je het `load-path` definiëren om de Manon-pakketten te
 vinden. Dit kan gedaan worden met de `--load-path` optie:
 `sass --load-path node_modules/@minvws/manon` Dan kan je de componenten en
 thema's importeren zoals hieronder beschreven.
-
-## Installeren met npm
-
-We moeten het _Manon Framework_ en _Manon Themes_ installeren om de componenten
-en stijlen te gebruiken. Dit kan gedaan worden met npm:
-
-```console
-npm install @minvws/manon @minvws/manon-themes
-```
 
 ## Importeren
 
@@ -66,5 +67,5 @@ en hoe je deze in je HTML kunt gebruiken. Elk component heeft zijn eigen pagina
 met voorbeelden en codefragmenten.
 
 Wil je weten hoe je een volledige HTML pagina opbouwt? Dan kan je ook de
-[tutorial](/getting-started/tutorial) volgen om te leren hoe je de
-componenten op een meer gestructureerde manier kunt gebruiken.
+[tutorial](/getting-started/tutorial) volgen om te leren hoe je de componenten
+op een meer gestructureerde manier kunt gebruiken.

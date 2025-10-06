@@ -4,7 +4,7 @@ import fs from "fs";
 import * as sass from "sass";
 
 const themesFolder = path.resolve("../themes");
-const themeFiles = globSync("./*/_index.scss", { cwd: themesFolder });
+const themeDirs = globSync("./*/_index.scss", { cwd: themesFolder });
 const outFolder = path.resolve("./dist");
 const tempOutFolder = path.resolve("./.manon");
 
@@ -15,15 +15,15 @@ const tempOutFolder = path.resolve("./.manon");
   }
 });
 
-if (themeFiles.length === 0) {
+if (themeDirs.length === 0) {
   console.log("No themes found in the themes folder!");
 } else {
-  console.log(`🔎 Found ${themeFiles.length} theme(s):`);
-  themeFiles.forEach((f) => console.log(`   - ${path.dirname(f)}`));
+  console.log(`🔎 Found ${themeDirs.length} theme(s):`);
+  themeDirs.forEach((f) => console.log(`   - ${path.dirname(f)}`));
 }
 
-for (const file of themeFiles) {
-  const theme = path.basename(path.dirname(file));
+for (const themeDir of themeDirs) {
+  const theme = path.basename(path.dirname(themeDir));
   const themeOutFolder = path.join(outFolder, theme);
 
   if (!fs.existsSync(themeOutFolder)) {
@@ -68,31 +68,9 @@ for (const file of themeFiles) {
   const fontsDestFolder = path.join(themeOutFolder, "fonts");
 
   if (fs.existsSync(fontsSrcFolder)) {
-    if (!fs.existsSync(fontsDestFolder)) {
-      fs.mkdirSync(fontsDestFolder, { recursive: true });
-    }
-
-    // Get all subfolders in the fonts source folder
-    const fontSubfolders = fs
-      .readdirSync(fontsSrcFolder, { withFileTypes: true })
-      .filter((dirent) => dirent.isDirectory())
-      .map((dirent) => dirent.name);
-
-    // Copy each subfolder and its contents
-    for (const subfolder of fontSubfolders) {
-      const srcSubfolder = path.join(fontsSrcFolder, subfolder);
-      const destSubfolder = path.join(fontsDestFolder, subfolder);
-      if (!fs.existsSync(destSubfolder)) {
-        fs.mkdirSync(destSubfolder, { recursive: true });
-      }
-      const fontFiles = fs.readdirSync(srcSubfolder);
-      for (const fontFile of fontFiles) {
-        fs.copyFileSync(
-          path.join(srcSubfolder, fontFile),
-          path.join(destSubfolder, fontFile)
-        );
-        console.log(`   Copied font: ${path.join(subfolder, fontFile)}`);
-      }
-    }
+    fs.cpSync(fontsSrcFolder, fontsDestFolder, { recursive: true });
+    console.log("   Copied fonts");
+  } else {
+    console.log("   No fonts folder found - skipping.");
   }
 }
