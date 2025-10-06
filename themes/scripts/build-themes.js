@@ -47,8 +47,6 @@ for (const themeDir of themeDirs) {
       style: "compressed",
       loadPaths: [
         themesFolder,
-        path.resolve("../manon/scss"),
-        path.resolve("../node_modules"),
         path.resolve("./node_modules"),
       ],
     });
