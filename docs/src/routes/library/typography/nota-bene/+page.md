@@ -29,7 +29,15 @@ nav:
 
 <h2 id="examples">Voorbeelden</h2>
 
-### Nota bene
+### Losstaande span
+
+<span class="nota-bene">Lorem ipsum dolor sit</span>
+
+```html
+<span class="nota-bene">Lorem ipsum dolor sit</span>
+```
+
+### Bij een invoerveld
 
 <form action="" method="post">
   <div>
