@@ -1,6 +1,6 @@
 ---
-title: Subtielere weergave
-breadcrumb: Subtielere weergave
+title: De-emphasized
+breadcrumb: De-emphasized
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
@@ -16,7 +16,6 @@ Voor een subtielere weergave van bepaalde teksten kan de class `de-emphasized` w
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/body-text-set";
 @use "@minvws/manon/de-emphasized";
 ```
 

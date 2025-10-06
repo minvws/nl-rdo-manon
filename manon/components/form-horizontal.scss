@@ -8,9 +8,15 @@ form.horizontal {
   flex-direction: column !important;
   align-items: flex-start;
 
+  label {
+    width: 100%;
+    max-width: theme.$form-horizontal-label-max-width;
+  }
+
   > div {
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: theme.$form-horizontal-group;
 
     @include theming.apply-from-theme(
       (
@@ -26,7 +32,7 @@ form.horizontal {
   input[type="reset"] {
     @include theming.apply-from-theme(
       (
-        margin-left: theme.$form-label-column,
+        margin: theme.$form-horizontal-button-margin,
       )
     );
   }
@@ -37,7 +43,7 @@ form.horizontal {
       display: flex;
       flex-direction: row;
       align-items: center;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       margin: 0;
 
       @include theming.apply-from-theme(
@@ -236,7 +242,7 @@ form.horizontal {
 
         @include theming.apply-from-theme(
           (
-            margin-left: theme.$form-label-column,
+            margin: theme.$form-horizontal-button-margin,
           )
         );
       }
@@ -266,7 +272,7 @@ form.horizontal {
         @include theming.apply-from-theme(
           (
             max-width: theme.$form-input-column,
-            margin-left: theme.$form-label-column,
+            margin: theme.$form-horizontal-button-margin,
           )
         );
         flex-wrap: wrap;
@@ -277,7 +283,7 @@ form.horizontal {
         input[type="submit"],
         input[type="reset"] {
           max-width: 100%;
-          margin-left: 0;
+          margin: theme.$form-horizontal-button-margin;
         }
       }
     }

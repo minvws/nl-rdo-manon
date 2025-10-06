@@ -38,33 +38,48 @@ $accordion-content-text-color: null !default;
 $accordion-content-font-weight: null !default;
 $accordion-content-border-radius: null !default;
 
-// Before (button icon)
-$accordion-button-icon-before-open-content: null !default;
-$accordion-button-icon-font-family: null !default;
-$accordion-button-icon-before-font-size: null !default;
+// Before icon (open)
+$accordion-button-icon-before-margin-left: null !default;
+$accordion-button-icon-before-margin-right: null !default;
+$accordion-button-icon-before-padding-right: null !default;
+$accordion-button-icon-before-padding-left: null !default;
+$accordion-button-icon-before-color: null !default;
+$accordion-button-icon-before-mask: null !default;
+$accordion-button-icon-before-width: null !default;
+$accordion-button-icon-before-height: null !default;
 
-// After (button icon)
-$accordion-button-icon-after-open-content: null !default;
-$accordion-button-icon-font-family: null !default;
-$accordion-button-icon-after-font-size: null !default;
+// Before icon (closed)
+$accordion-button-icon-before-closed-margin-left: null !default;
+$accordion-button-icon-before-closed-margin-right: null !default;
+$accordion-button-icon-before-closed-padding-right: null !default;
+$accordion-button-icon-before-closed-padding-left: null !default;
+$accordion-button-icon-before-closed-color: null !default;
+$accordion-button-icon-before-closed-mask: null !default;
+$accordion-button-icon-before-closed-width: null !default;
+$accordion-button-icon-before-closed-height: null !default;
+
+// After icon (open)
+$accordion-button-icon-after-margin-left: null !default;
+$accordion-button-icon-after-margin-right: null !default;
+$accordion-button-icon-after-padding-right: null !default;
+$accordion-button-icon-after-padding-left: null !default;
+$accordion-button-icon-after-color: null !default;
+$accordion-button-icon-after-mask: null !default;
+$accordion-button-icon-after-width: null !default;
+$accordion-button-icon-after-height: null !default;
+
+// After icon (closed)
+$accordion-button-icon-after-closed-margin-left: null !default;
+$accordion-button-icon-after-closed-margin-right: null !default;
+$accordion-button-icon-after-closed-padding-right: null !default;
+$accordion-button-icon-after-closed-padding-left: null !default;
+$accordion-button-icon-after-closed-color: null !default;
+$accordion-button-icon-after-closed-mask: null !default;
+$accordion-button-icon-after-closed-width: null !default;
+$accordion-button-icon-after-closed-height: null !default;
 
 // Expanded
 $accordion-button-expanded-text-color: null !default;
 $accordion-button-expanded-background-color: null !default;
 $accordion-button-expanded-border-width: null !default;
 $accordion-button-expanded-border-color: null !default;
-
-// Expanded state (Aria expanded) before
-$accordion-button-icon-before-close-content: null !default;
-$accordion-button-icon-font-family: null !default;
-$accordion-button-icon-before-font-size: null !default;
-$accordion-button-icon-before-font-weight: null !default;
-$accordion-button-icon-before-white-space: null !default;
-
-// Expanded state (Aria expanded) after
-$accordion-button-icon-after-close-content: null !default;
-$accordion-button-icon-font-family: null !default;
-$accordion-button-icon-after-font-size: null !default;
-$accordion-button-icon-after-font-weight: null !default;
-$accordion-button-icon-after-white-space: null !default;
-$accordion-button-icon-after-margin-left: null !default;

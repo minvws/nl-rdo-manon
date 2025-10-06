@@ -1,6 +1,6 @@
 ---
-title: Benadrukte weergave
-breadcrumb: Benadrukte weergave
+title: Emphasized
+breadcrumb: Emphasized
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
@@ -18,7 +18,6 @@ nadruk op de tekst, waardoor deze opvalt binnen de context van de pagina.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/body-text-set";
 @use "@minvws/manon/emphasized";
 ```
 

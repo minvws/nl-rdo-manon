@@ -3,8 +3,14 @@
 @use "../functions/validators";
 
 button,
-a.button {
+a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
   &.icon-only {
+    font-size: 0;
+    gap: 0;
+
     @include theming.apply-from-theme(
       (
         background-color: theme.$button-icon-only-background-color,
@@ -16,7 +22,6 @@ a.button {
         padding-left: theme.$button-icon-only-padding-left,
       )
     );
-    font-size: 0;
 
     /* Icon */
     &::before {

@@ -7,7 +7,9 @@
 
 <main id="main-content" tabindex="-1">
   <section class="hero">
-    <img src="$img/strand.jpg" alt="Foto van een strand" />
+    <div class="image-background">
+      <img src="$img/strand.jpg" alt="Foto van een strand" />
+    </div>
     <div class="content-wrapper">
         <h1>Welkom op het homepage-voorbeeld</h1>
         <p>Een voorbeeld van een landingspagina.</p>

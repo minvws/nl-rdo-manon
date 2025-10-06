@@ -160,63 +160,24 @@
       }
 
       // Icon
-      &::before {
-        position: static;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 0;
-        font-style: normal;
-
-        @include theming.apply-from-theme(
-          (
-            font-family: theme.$breadcrumb-bar-icon-font-family,
-            font-size: theme.$breadcrumb-bar-icon-font-size,
-            line-height: theme.$breadcrumb-bar-icon-line-height,
-            text-decoration: theme.$breadcrumb-bar-icon-text-decoration,
-            padding-right: theme.$breadcrumb-bar-icon-padding-right,
-            padding-left: theme.$breadcrumb-bar-icon-padding-left,
-            background-color: theme.$breadcrumb-bar-icon-background-color,
-            color: theme.$breadcrumb-bar-icon-text-color,
-            content: theme.$breadcrumb-bar-icon-content,
-          )
-        );
-      }
-
-      &.icon,
-      .icon {
-        &::before {
-          position: static;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          padding: 0;
-          font-style: normal;
+      @if theme.$breadcrumb-bar-icon-mask {
+        &::after {
+          mask-size: contain;
+          content: "";
 
           @include theming.apply-from-theme(
             (
-              font-family: theme.$breadcrumb-bar-icon-font-family,
-              font-size: theme.$breadcrumb-bar-icon-font-size,
-              line-height: theme.$breadcrumb-bar-icon-line-height,
-              text-decoration: theme.$breadcrumb-bar-icon-text-decoration,
+              margin-right: theme.$breadcrumb-bar-icon-margin-right,
+              margin-left: theme.$breadcrumb-bar-icon-margin-left,
               padding-right: theme.$breadcrumb-bar-icon-padding-right,
               padding-left: theme.$breadcrumb-bar-icon-padding-left,
-              background-color: theme.$breadcrumb-bar-icon-background-color,
-              color: theme.$breadcrumb-bar-icon-text-color,
+              background-color: theme.$breadcrumb-bar-icon-color,
+              mask-image: theme.$breadcrumb-bar-icon-mask,
+              width: theme.$breadcrumb-bar-icon-width,
+              height: theme.$breadcrumb-bar-icon-height,
             )
           );
         }
-      }
-
-      > span.icon:last-of-type:not(:only-of-type) {
-        @include theming.apply-from-theme(
-          (
-            padding-right: theme.$breadcrumb-bar-icon-last-padding-right,
-            padding-left: theme.$breadcrumb-bar-icon-last-padding-left,
-          )
-        );
       }
     }
   }

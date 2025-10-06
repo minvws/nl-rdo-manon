@@ -1,6 +1,7 @@
 {
   "name": "@minvws/manon-themes",
   "version": "0.0.0",
+  "type": "module",
   "license": "EUPL-1.2",
   "files": [
     "**/*.scss",
@@ -17,10 +18,17 @@
     "README.md"
   ],
   "scripts": {
-    "npm-version": "npm version"
+    "npm-version": "npm version",
+    "prepare-icons": "npm run prepare-icons:icore-open",
+    "prepare-icons:icore-open": "node ./scripts/prepare-icons.js ./icore-open/icons/tabler",
+    "build:themes": "node ./scripts/build-themes.js"
   },
   "peerDependencies": {
     "@minvws/manon": "workspace:*"
+  },
+  "devDependencies": {
+    "glob": "^11.0.3",
+    "sass": "^1.89.2"
   },
   "repository": {
     "type": "git",

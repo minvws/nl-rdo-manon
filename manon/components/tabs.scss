@@ -133,6 +133,11 @@ manon-tabs {
   [aria-selected="true"] {
     @extend %tabs-current-item-styling;
   }
+
+  *:focus,
+  *.focus {
+    outline-offset: theme.$tabs-outline-offset;
+  }
 }
 
 manon-tabs {

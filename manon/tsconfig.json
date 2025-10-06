@@ -9,6 +9,5 @@
     "checkJs": true,
     "strict": true
   },
-  "include": ["./*.js", "./bin/", "./js/", "./vitest.setup.ts"],
-  "exclude": ["../node_modules/**"]
+  "include": ["./*.js", "./bin/", "./js/", "./vitest.setup.ts"]
 }

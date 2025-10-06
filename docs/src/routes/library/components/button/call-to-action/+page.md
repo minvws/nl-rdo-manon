@@ -8,7 +8,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Call to action button
+Knoppen die oproepen tot actie kunnen in een alternatieve kleur getoond kunnen worden. De afwijkende kleur zorgt ervoor dat de knop meer opvalt en daardoor meer aandacht van gebruikers krijgt.
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -34,12 +34,4 @@ SCSS importeren:
 
 ```html
 <input type="button" value="Lorem ipsum" class="cta" />
-```
-
-### Voorbeeld: `<input type="button" disabled>`
-
-<input type="button" value="Lorem ipsum" class="cta" disabled />
-
-```html
-<input type="button" value="Lorem ipsum" class="cta" disabled />
 ```
