@@ -159,6 +159,9 @@ and spacing sets */
   $button-to-top-icon-color: color-scheme.$oc-white,
   $button-to-top-icon-width: 1.5rem,
   $button-to-top-icon-height: 1.5rem,
+  // button cta
+  $button-cta-background-color: color-scheme.$oc-blue-9,
+  $button-cta-hover-background-color: color-scheme.$oc-blue-8,
 
   // button container
   $button-container-gap: 1rem,
@@ -179,6 +182,18 @@ and spacing sets */
 
   // breadcrumb bar link
   $breadcrumb-bar-link-text-decoration: none,
+
+  // card
+  $card-background-color: color-scheme.$oc-white,
+  $card-border-width: 1px,
+  $card-border-style: solid,
+  $card-border-color: color-scheme.$oc-gray-1,
+  $card-padding-top: spacing.$spacing-125,
+  $card-padding-right: spacing.$spacing-100,
+  $card-padding-bottom: spacing.$spacing-125,
+  $card-padding-left: spacing.$spacing-100,
+  $card-border-radius: border-radii.$border-radius-s,
+  $card-gap: spacing.$spacing-100,
 
   // code block
   $code-block-padding: spacing.$spacing-200,
@@ -607,6 +622,8 @@ and spacing sets */
   $tabs-item-current-border-width: 0 0 2px 0,
   $tabs-item-current-font-weight: bold,
   $tabs-item-hover-text-color: color-scheme.$oc-blue-9,
+  // set to focus border-width
+  $tabs-outline-offset: -2px,
 
   // table
   $table-gap: spacing.$spacing-050,

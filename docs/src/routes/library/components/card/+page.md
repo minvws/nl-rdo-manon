@@ -38,3 +38,39 @@ Een kaart groepeert gerelateerde informatie in één duidelijk visueel blok, zod
   <button>Lorem ipsum</button>
 </div>
 ```
+
+<div class="column-3">
+  <div class="card" role="group" aria-label="Voorbeeldkaart">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="#">Lees meer</a>
+  </div>
+
+  <div class="card" role="group" aria-label="Voorbeeldkaart">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="#">Lees meer</a>
+  </div>
+
+  <div class="card" role="group" aria-label="Voorbeeldkaart">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="#">Lees meer</a>
+  </div>
+</div>
+
+```html
+<div class="column-3">
+  <div class="card" role="group" aria-label="Voorbeeldkaart">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="#">Lees meer</a>
+  </div>
+
+  <div class="card" role="group" aria-label="Voorbeeldkaart">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="#">Lees meer</a>
+  </div>
+
+  <div class="card" role="group" aria-label="Voorbeeldkaart">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a href="#">Lees meer</a>
+  </div>
+</div>
+```

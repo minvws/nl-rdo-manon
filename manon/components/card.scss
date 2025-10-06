@@ -13,8 +13,8 @@ main > section > div,
 main.sidemenu div > section > div {
   &.card {
     display: flex;
-    margin: 0 auto;
     box-sizing: border-box;
+    align-items: theme.$card-align-items;
 
     @include theming.apply-from-theme(
       (
@@ -33,6 +33,7 @@ main.sidemenu div > section > div {
         border-width: theme.$card-border-width,
         border-style: theme.$card-border-style,
         border-color: theme.$card-border-color,
+        justify-content: theme.$card-justify-content,
       )
     );
 
