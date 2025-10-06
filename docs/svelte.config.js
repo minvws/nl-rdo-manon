@@ -53,7 +53,7 @@ const config = {
         _: fileURLToPath(import.meta.resolve("./src/markdown/layouts/default.svelte")),
       },
       highlight: {
-        highlighter: (code, lang) => `<Components.Code code={\`${code}\`} language="${lang}" />`,
+        highlighter: (code, lang) => `<Components.Snippet code={\`${code}\`} language="${lang}" />`,
       },
     }),
     importAssets(),
