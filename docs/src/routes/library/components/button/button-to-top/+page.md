@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Terug naar hoofdmenu knop
+Bied een soepele gebruikerservaring aan door bij lange pagina's en documenten gebruik te maken van de "Terug naar hoofdmenu"-knop.
 
 <h2 id="quickstart">Snelstart</h2>
 

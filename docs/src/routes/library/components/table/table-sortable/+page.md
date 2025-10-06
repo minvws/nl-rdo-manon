@@ -18,12 +18,8 @@ SCSS importeren:
 ```scss
 @use "@minvws/manon/table";
 @use "@minvws/manon/table-checkbox";
-@use "@minvws/manon/table/table-base";
-@use "@minvws/manon/table/table-base-variables";
-@use "@minvws/manon/button/button-base";
-@use "@minvws/manon/button/button-base-variables";
+@use "@minvws/manon/button/button";
 @use "@minvws/manon/icon/icon-base";
-@use "@minvws/manon/icon/icon-base-variables";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
