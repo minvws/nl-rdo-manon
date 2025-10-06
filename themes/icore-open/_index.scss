@@ -1,1 +1,663 @@
-@forward "theme";
+/* Theme configuration */
+@forward "config";
+
+/* Fonts (@font-faces) */
+@use "fonts";
+
+/* Icon mask data URIs */
+@use "icons";
+
+/* Core variables */
+/* These are core sets like color schemes, fonts
+and spacing sets */
+@use "core/border-radii" as border-radii;
+@use "core/color-scheme" as color-scheme;
+@use "core/shadow" as shadow;
+@use "core/spacing" as spacing;
+@use "core/typography/font-size/body-text" as body-text;
+@use "core/typography/font-size/heading" as heading;
+@use "core/typography/font-style" as font-style;
+@use "core/typography/font-weight" as font-weight;
+@use "core/typography/letter-spacing" as letter-spacing;
+@use "core/typography/line-height" as line-height;
+@use "core/typography/paragraph-spacing" as paragraph-spacing;
+
+/* Semantic variables */
+/* These are variables that have a semantic value. Like branding color */
+@use "semantic" as semantic;
+
+/* Component variables */
+@use "@minvws/manon/variables" with (
+  $theme-name: "icore-open",
+
+  // accordion
+  $accordion-gap: spacing.$spacing-100,
+  $accordion-button-padding: spacing.$spacing-075 spacing.$spacing-100,
+  $accordion-button-text-color: semantic.$color-text-default,
+  $accordion-button-background-color: color-scheme.$oc-gray-1,
+  $accordion-button-border-width: 1px,
+  $accordion-button-border-style: solid,
+  $accordion-button-border-color: color-scheme.$oc-gray-2,
+  $accordion-button-font-weight: bold,
+  $accordion-button-font-size: body-text.$body-text-m,
+  $accordion-content-border-width: 0 1px,
+  $accordion-content-border-style: solid,
+  $accordion-content-border-color: color-scheme.$oc-gray-2,
+  $accordion-content-padding: spacing.$spacing-100,
+  $accordion-content-gap: spacing.$spacing-050,
+  $accordion-content-font-size: body-text.$body-text-s,
+  $accordion-button-border-radius: border-radii.$border-radius-s
+    border-radii.$border-radius-s 0 0,
+  $accordion-content-border-radius: 0 0 border-radii.$border-radius-s
+    border-radii.$border-radius-s,
+
+  // accordion icon open
+  $accordion-button-icon-after-color: semantic.$color-text-default,
+  $accordion-button-icon-after-mask: icons.$chevron-down,
+  $accordion-button-icon-after-width: 1.5rem,
+  $accordion-button-icon-after-height: 1.5rem,
+
+  // accordion icon closed
+  $accordion-button-icon-after-closed-color: semantic.$color-text-default,
+  $accordion-button-icon-after-closed-mask: icons.$chevron-up,
+  $accordion-button-icon-after-closed-width: 1.5rem,
+  $accordion-button-icon-after-closed-height: 1.5rem,
+  // article
+  $article-gap: spacing.$spacing-150,
+  $article-flex-direction: column,
+  $article-justify-content: flex-start,
+  $article-align-items: flex-start,
+  $article-max-width: 60rem,
+
+  // article content wrapper
+  $article-content-wrapper-background-color: color-scheme.$oc-white,
+  $article-content-wrapper-padding-top: spacing.$spacing-200,
+  $article-content-wrapper-padding-right: spacing.$spacing-200,
+  $article-content-wrapper-padding-bottom: spacing.$spacing-300,
+  $article-content-wrapper-padding-left: spacing.$spacing-200,
+  $article-content-wrapper-max-width: 60rem,
+  $article-content-wrapper-gap: spacing.$spacing-250,
+  $article-content-wrapper-flex-direction: column,
+  $article-content-wrapper-border-radius: border-radii.$border-radius-m,
+
+  // avatar
+  $avatar-font-weight: bold,
+  $avatar-border-radius: 50%,
+  $avatar-background-color: semantic.$color-brand-primary-default,
+  $avatar-text-color: color-scheme.$oc-white,
+  $avatar-text-font-size: body-text.$body-text-s,
+  $avatar-hover-text-color: color-scheme.$oc-white,
+
+  // hover
+  $avatar-hover-background-color: color-scheme.$oc-blue-7,
+
+  // focus
+  $avatar-focus-background-color: color-scheme.$oc-blue-7,
+  $avatar-focus-outline: 2px solid color-scheme.$oc-white,
+  $avatar-focus-outline-offset: -2px,
+
+  // background-color offset
+  $background-color-offset-background-color: semantic.$base-background-color,
+
+  //base
+  $base-background-color: semantic.$base-background-color,
+  $base-font-family: (
+    "IBM Plex Sans",
+    "Helvetica",
+    sans-serif,
+  ),
+  $base-font-size: 1rem,
+  $base-font-weight: 300,
+
+  // button
+  $button-text-color: color-scheme.$oc-white,
+  $button-border-width: 0,
+  $button-border-color: semantic.$color-brand-primary-default,
+  $button-border-radius: border-radii.$border-radius-s,
+  $button-padding-top: spacing.$spacing-075,
+  $button-padding-right: spacing.$spacing-100,
+  $button-padding-bottom: spacing.$spacing-075,
+  $button-padding-left: spacing.$spacing-100,
+  $button-background-color: semantic.$color-brand-primary-default,
+  $button-font-weight: 400,
+  $button-gap: spacing.$spacing-050,
+
+  // button hover
+  $button-hover-background-color: color-scheme.$oc-blue-7,
+  $button-hover-text-color: color-scheme.$oc-white,
+  $button-hover-border-color: color-scheme.$oc-blue-7,
+
+  // button secondary
+  $button-secondary-background-color: color-scheme.$oc-white,
+  $button-secondary-text-color: semantic.$color-brand-primary-default,
+  $button-secondary-border-width: 1px,
+  $button-secondary-border-style: solid,
+  $button-secondary-border-color: color-scheme.$oc-gray-4,
+
+  // button destructive
+  $button-destructive-background-color: semantic.$color-destructive-default,
+  $button-destructive-text-color: color-scheme.$oc-white,
+  $button-destructive-border-color: semantic.$color-destructive-default,
+
+  // button destructive hover
+  $button-destructive-hover-background-color:
+    semantic.$color-destructive-intense,
+  $button-destructive-hover-text-color: color-scheme.$oc-white,
+  $button-destructive-hover-border-color: semantic.$color-destructive-intense,
+
+  // button to top
+  $button-to-top-background-color: semantic.$color-brand-primary-default,
+  $button-to-top-width: 2.5rem,
+  $button-to-top-height: 2.5rem,
+  $button-to-top-font-size: 0,
+  $button-to-top-border-radius: border-radii.$border-radius-round,
+  $button-to-top-align-items: center,
+  $button-to-top-justify-content: center,
+
+  // button to top icon
+  $button-to-top-icon-mask: icons.$to-top,
+  $button-to-top-icon-color: color-scheme.$oc-white,
+  $button-to-top-icon-width: 1.5rem,
+  $button-to-top-icon-height: 1.5rem,
+  // button cta
+  $button-cta-background-color: color-scheme.$oc-blue-9,
+  $button-cta-hover-background-color: color-scheme.$oc-blue-8,
+
+  // button container
+  $button-container-gap: 1rem,
+
+  // breadcrumb bar
+  $breadcrumb-bar-padding-top: spacing.$spacing-075,
+  $breadcrumb-bar-padding-right: spacing.$spacing-100,
+  $breadcrumb-bar-padding-bottom: spacing.$spacing-075,
+  $breadcrumb-bar-padding-left: spacing.$spacing-100,
+  $breadcrumb-bar-text-color: semantic.$color-text-default,
+  $breadcrumb-bar-gap: spacing.$spacing-050,
+  $breadcrumb-bar-list-item-last-child-font-weight: bold,
+  $breadcrumb-bar-list-item-gap: spacing.$spacing-050,
+  $breadcrumb-bar-icon-color: semantic.$color-text-default,
+  $breadcrumb-bar-icon-mask: icons.$chevron-right,
+  $breadcrumb-bar-icon-width: 1.5rem,
+  $breadcrumb-bar-icon-height: 1.5rem,
+
+  // breadcrumb bar link
+  $breadcrumb-bar-link-text-decoration: none,
+
+  // card
+  $card-background-color: color-scheme.$oc-white,
+  $card-border-width: 1px,
+  $card-border-style: solid,
+  $card-border-color: color-scheme.$oc-gray-1,
+  $card-padding-top: spacing.$spacing-125,
+  $card-padding-right: spacing.$spacing-100,
+  $card-padding-bottom: spacing.$spacing-125,
+  $card-padding-left: spacing.$spacing-100,
+  $card-border-radius: border-radii.$border-radius-s,
+  $card-gap: spacing.$spacing-100,
+
+  // code block
+  $code-block-padding: spacing.$spacing-200,
+  $code-block-background-color: color-scheme.$oc-gray-1,
+  $code-block-border-radius: border-radii.$border-radius-s,
+
+  // collapsing element
+  $collapsing-element-justify-content: space-between,
+  $collapsing-element-align-items: center,
+
+  // color picker
+  $color-picker-border-radius: border-radii.$border-radius-s,
+
+  // columns
+  $columns-gap: 2.5rem,
+
+  // container
+  $container-s-max-width: 40rem,
+  $container-m-max-width: 50rem,
+  $container-l-max-width: 80rem,
+
+  // de-emphasized
+  $de-emphasized-font-size: body-text.$body-text-s,
+  $de-emphasized-text-color: color-scheme.$oc-gray-7,
+
+  // div
+  $div-gap: spacing.$spacing-050,
+
+  // description list
+  $description-list-width: 100%,
+  $description-list-border-width: 0 0 1px 0,
+  $description-list-border-style: solid,
+  $description-list-border-color: color-scheme.$oc-gray-2,
+  $description-list-item-title-width: 15rem,
+  $description-list-item-title-text-color: color-scheme.$oc-gray-7,
+  $description-list-item-title-padding: 0.5rem 0,
+  $description-list-item-data-padding: 0.5rem 0,
+
+  // emphasized
+  $emphasized-font-size: body-text.$body-text-l,
+  $emphasized-font-weight: font-weight.$font-weight-medium,
+
+  // form
+  $form-align-items: flex-start,
+  $form-text-color: semantic.$color-text-default,
+  $form-gap: spacing.$spacing-200,
+  $form-max-width: 40rem,
+  $form-table-width: 100%,
+
+  // form fieldset
+  $form-fieldset-border-width: 0,
+
+  // form group
+  $form-group-gap: spacing.$spacing-050,
+
+  // form input
+  $form-input-padding-top: spacing.$spacing-075,
+  $form-input-padding-right: spacing.$spacing-100,
+  $form-input-padding-bottom: spacing.$spacing-075,
+  $form-input-padding-left: spacing.$spacing-100,
+  $form-input-border-width: 1px,
+  $form-input-border-style: solid,
+  $form-input-border-color: color-scheme.$oc-gray-4,
+  $form-input-border-radius: border-radii.$border-radius-m,
+
+  // form textarea
+  $form-textarea-width: 100%,
+  $form-textarea-font-size: inherit,
+  $form-textarea-padding: 1rem,
+
+  // form horizontal
+  $form-horizontal-button-margin: 0 0 0 calc(33.33% + 0.5rem),
+  $form-horizontal-label-max-width: 33.33%,
+
+  // combined field
+  $form-combined-field-input-border-radius: border-radii.$border-radius-m 0 0
+    border-radii.$border-radius-m,
+  $form-combined-field-button-border-radius: 0 border-radii.$border-radius-m
+    border-radii.$border-radius-m 0,
+
+  // focus
+  $focus-outline: 2px solid,
+  $focus-outline-offset: spacing.$spacing-025,
+  $focus-outline-color: color-scheme.$oc-blue-5,
+  $focus-z-index: 1,
+  $focus-border-radius: border-radii.$border-radius-s,
+
+  // form label
+  $form-label-font-weight: bold,
+
+  // footer
+  $footer-align-items: center,
+  $footer-justify-content: center,
+  $footer-gap: spacing.$spacing-100,
+  $footer-flex-direction: column,
+  $footer-text-align: center,
+  $footer-padding-top: spacing.$spacing-200,
+  $footer-padding-right: spacing.$spacing-200,
+  $footer-padding-bottom: spacing.$spacing-300,
+  $footer-padding-left: spacing.$spacing-200,
+  $footer-list-style: none,
+  $footer-list-flex-direction: row,
+  $footer-list-justify-content: center,
+  $footer-list-gap: spacing.$spacing-100,
+  $footer-navigation-gap: spacing.$spacing-100,
+  $footer-link-text-color: color-scheme.$oc-blue-8,
+  $footer-link-current-text-decoration: underline,
+
+  // Form help
+  $form-help-button-padding: spacing.$spacing-025,
+  $form-help-button-text-color: semantic.$color-brand-primary-default,
+  $form-help-button-top: spacing.$spacing-050,
+  $form-help-icon-mask: icons.$questionmark,
+  $form-help-button-border-width: 1px,
+  $form-help-button-border-style: solid,
+  $form-help-button-border-color: color-scheme.$oc-gray-4,
+  $form-help-button-border-radius: 50%,
+  $form-help-icon-width: 1rem,
+  $form-help-icon-height: 1rem,
+  $form-help-icon-color: semantic.$color-brand-primary-default,
+  $form-help-button-background-color: transparent,
+  $form-help-button-margin: 1rem -2.5rem 0 0,
+
+  // filter
+  $filter-icon-color: semantic.$color-brand-primary-default,
+  $filter-icon-mask: icons.$chevron-down,
+  $filter-icon-width: 1.5rem,
+  $filter-icon-height: 1.5rem,
+  $filter-button-font-size: 0,
+  $filter-close-icon-mask: icons.$chevron-up,
+  $filter-button-background-color: transparent,
+  $filter-button-padding: 0,
+
+  // header
+  $header-background-color: color-scheme.$oc-gray-9,
+  $header-justify-content: stretch,
+  $header-font-weight: bold,
+  $header-min-height: 4.5rem,
+  $header-text-color: color-scheme.$oc-white,
+  $header-padding-right: spacing.$spacing-300,
+  $header-padding-left: spacing.$spacing-300,
+  $header-align-items: stretch,
+
+  // header content wrapper
+  $header-content-wrapper-align-items: stretch,
+
+  // header nav
+  $header-navigation-width: 100%,
+  $header-navigation-gap: spacing.$spacing-200,
+  $header-navigation-justify-content: space-between,
+  $header-navigation-align-items: stretch,
+
+  // header list
+  $header-list-gap: 0,
+  $header-list-align-items: stretch,
+  $header-list-height: 100%,
+
+  // header list item
+  $header-list-item-align-items: center,
+
+  // header list item link
+  $header-link-align-items: center,
+  $header-link-padding: spacing.$spacing-025 spacing.$spacing-050,
+  $header-link-min-height: 100%,
+
+  // header current page
+  $header-link-current-background-color: color-scheme.$oc-white,
+  $header-link-current-text-color: color-scheme.$oc-gray-9,
+
+  // header content wrapper
+  $header-content-wrapper-flex-direction: row,
+  $header-content-wrapper-width: 100%,
+
+  // heading
+  $h1-font-family: semantic.$font-family,
+
+  // hero
+  $hero-height: 25rem,
+  $hero-max-width: calc(100% + 8rem),
+  $hero-width: calc(100% + 8rem),
+  $hero-margin: -4rem 0 0 -4rem,
+  $hero-border-radius: 0,
+  $hero-font-size: body-text.$body-text-l,
+  $hero-background-color: color-scheme.$oc-blue-6,
+  $hero-justify-content: center,
+  $hero-flex-direction: column,
+  $hero-title-font-size: heading.$heading-xxl,
+  $hero-text-color: color-scheme.$oc-white,
+  $hero-content-wrapper-padding: 0,
+  $hero-content-wrapper-max-width: 40rem,
+  $hero-content-wrapper-text-align: center,
+  $hero-content-wrapper-margin: 0 auto,
+  $hero-content-wrapper-background-color: transparent,
+  $hero-content-wrapper-gap: spacing.$spacing-100,
+  $hero-content-wrapper-justify-content: center,
+  $hero-content-wrapper-align-items: center,
+
+  // Heading base set
+  $heading-xs-font-size: 1rem,
+  $heading-small-font-size: 1.25rem,
+  $heading-normal-font-size: 1.5rem,
+  $heading-large-font-size: 2rem,
+  $heading-xl-font-size: 2.5rem,
+  $heading-xxl-font-size: 3rem,
+
+  // utility
+  $horizontal-gap: spacing.$spacing-100,
+
+  // icon
+  $icon-height: 1.5rem,
+  $icon-width: 1.5rem,
+  $icon-mask-ascending: icons.$ascending,
+  $icon-mask-check: icons.$check,
+  $icon-mask-chevron-down: icons.$chevron-down,
+  $icon-mask-chevron-left: icons.$chevron-left,
+  $icon-mask-chevron-light-down: icons.$chevron-light-down,
+  $icon-mask-chevron-light-left: icons.$chevron-light-left,
+  $icon-mask-chevron-light-right: icons.$chevron-light-right,
+  $icon-mask-chevron-light-up: icons.$chevron-light-up,
+  $icon-mask-chevron-right: icons.$chevron-right,
+  $icon-mask-chevron-up: icons.$chevron-up,
+  $icon-mask-close: icons.$close,
+  $icon-mask-descending: icons.$descending,
+  $icon-mask-download: icons.$download,
+  $icon-mask-hamburger: icons.$hamburger,
+  $icon-mask-heart: icons.$heart,
+  $icon-mask-home: icons.$home,
+  $icon-mask-lock-closed: icons.$lock-closed,
+  $icon-mask-on-off: icons.$on-off,
+  $icon-mask-outgoing: icons.$outgoing,
+  $icon-mask-questionmark: icons.$questionmark,
+  $icon-mask-reset: icons.$reset,
+  $icon-mask-search: icons.$search,
+  $icon-mask-smartphone: icons.$smartphone,
+  $icon-mask-sort: icons.$sort,
+  $icon-mask-to-top: icons.$to-top,
+  $icon-mask-trash: icons.$trash,
+  $icon-mask-user: icons.$user,
+
+  // layout
+  $layout-gap: 2.5rem,
+
+  // link
+  $link-text-color: color-scheme.$oc-blue-8,
+  $link-hover-text-color: color-scheme.$oc-blue-9,
+  $link-visited-text-color: color-scheme.$oc-violet-8,
+  $link-visited-hover-text-color: color-scheme.$oc-violet-9,
+
+  // logo
+  $logo-font-size: 0,
+  $logo-padding: 0,
+  $logo-img-height: 2rem,
+  $logo-img-width: 2rem,
+
+  // main
+  $main-padding-top: spacing.$spacing-400,
+  $main-padding-right: 4rem,
+  $main-padding-bottom: spacing.$spacing-400,
+  $main-padding-left: 4rem,
+  $main-gap: spacing.$spacing-400,
+
+  // nota bene
+  $nota-bene-font-size: 0.75rem,
+  $nota-bene-text-color: color-scheme.$oc-gray-7,
+
+  // Navigation
+  $navigation-list-gap: spacing.$spacing-050,
+  $navigation-link-text-decoration: none,
+  $navigation-list-padding: 1rem,
+  $navigation-list-item-list-style: none,
+
+  // notification
+  $notification-padding-top: spacing.$spacing-100,
+  $notification-padding-right: spacing.$spacing-100,
+  $notification-padding-bottom: spacing.$spacing-100,
+  $notification-padding-left: spacing.$spacing-100,
+  $notification-border-style: solid,
+  $notification-border-width: 1px,
+  $notification-gap: spacing.$spacing-100,
+  $notification-border-radius: border-radii.$border-radius-m,
+
+  // notification type
+  $notification-span-font-weight: bold,
+
+  // notification error
+  $notification-error-background-color:
+    color-scheme.$color-notification-error-subtle,
+  $notification-error-text-color: semantic.$color-text-default,
+  $notification-error-border-color:
+    color-scheme.$color-notification-error-intense,
+  $notification-table-error-background-color:
+    color-scheme.$color-notification-error-subtle,
+  $notification-table-error-text-color: semantic.$color-text-default,
+
+  // notification warning
+  $notification-warning-background-color:
+    color-scheme.$color-notification-warning-subtle,
+  $notification-warning-text-color: semantic.$color-text-default,
+  $notification-warning-border-color:
+    color-scheme.$color-notification-warning-intense,
+  $notification-table-warning-background-color:
+    color-scheme.$color-notification-warning-subtle,
+  $notification-table-warning-text-color: semantic.$color-text-default,
+
+  // notification explanation
+  $notification-explanation-background-color:
+    color-scheme.$color-notification-explanation-subtle,
+  $notification-explanation-text-color: semantic.$color-text-default,
+  $notification-explanation-border-color:
+    color-scheme.$color-notification-explanation-intense,
+  $notification-table-explanation-background-color:
+    color-scheme.$color-notification-explanation-subtle,
+  $notification-table-explanation-text-color: semantic.$color-text-default,
+
+  // notification confirmation
+  $notification-confirmation-background-color:
+    color-scheme.$color-notification-confirmation-subtle,
+  $notification-confirmation-text-color: semantic.$color-text-default,
+  $notification-confirmation-border-color:
+    color-scheme.$color-notification-confirmation-intense,
+  $notification-table-confirmation-background-color:
+    color-scheme.$color-notification-confirmation-subtle,
+  $notification-table-confirmation-text-color: semantic.$color-text-default,
+
+  // notification system
+  $notification-system-background-color:
+    color-scheme.$color-notification-system-subtle,
+  $notification-system-text-color: semantic.$color-text-default,
+  $notification-system-border-color:
+    color-scheme.$color-notification-system-intense,
+  $notification-table-system-background-color:
+    color-scheme.$color-notification-system-subtle,
+  $notification-table-system-text-color: semantic.$color-text-default,
+
+  // p {
+  $p-max-width: 42rem,
+
+  // pagination
+  $pagination-list-gap: spacing.$spacing-025,
+
+  // pagination item
+  $pagination-item-width: 2.5rem,
+  $pagination-item-height: 2.5rem,
+
+  // pagination link
+  $pagination-link-background-color: color-scheme.$oc-white,
+  $pagination-link-border-radius: border-radii.$border-radius-s,
+  $pagination-link-text-decoration: none,
+  $pagination-link-border-color: color-scheme.$oc-white,
+  $pagination-link-border-width: 1px,
+  $pagination-link-border-style: solid,
+
+  // pagination link hover
+  $pagination-link-hover-background-color: semantic.$color-brand-primary-subtle,
+  $pagination-link-hover-border-color: semantic.$color-brand-primary-subtle,
+
+  // pagination link active
+  $pagination-link-active-border-width: 1px,
+  $pagination-link-active-border-style: solid,
+  $pagination-link-active-border-color: semantic.$color-brand-primary-default,
+  $pagination-link-active-text-color: semantic.$color-brand-primary-default,
+  $pagination-link-active-font-weight: bold,
+
+  // page title
+  $page-title-max-width: 60rem,
+  $page-title-width: 100%,
+  $page-title-margin: 0 auto,
+
+  // sidemenu
+  $sidemenu-nav-padding-top: spacing.$spacing-100,
+  $sidemenu-nav-padding-right: spacing.$spacing-200,
+  $sidemenu-nav-padding-bottom: spacing.$spacing-100,
+  $sidemenu-nav-padding-left: spacing.$spacing-200,
+
+  // sidemenu button
+  $sidemenu-button-background-color: color-scheme.$oc-white,
+  $sidemenu-button-padding: spacing.$spacing-050,
+  $sidemenu-button-color: semantic.$color-brand-primary-default,
+  $sidemenu-button-font-size: 0,
+
+  // sidemenu expanded
+  $sidemenu-expanded-icon-mask: icons.$close,
+  $sidemenu-expanded-icon-color: semantic.$color-brand-primary-default,
+  $sidemenu-expanded-icon-width: 1.5rem,
+  $sidemenu-expanded-icon-height: 1.5rem,
+
+  // sidemenu collapsed
+  $sidemenu-collapsed-button-margin-left: 2rem,
+  $sidemenu-collapsed-icon-mask: icons.$hamburger,
+
+  // sidemenu list
+  $sidemenu-ul-padding: spacing.$spacing-100 0,
+  $sidemenu-list-item-padding: spacing.$spacing-025 0,
+
+  // slogan
+  $slogan-text-color: semantic.$color-text-default,
+  $slogan-font-size: body-text.$body-text-l,
+  $slogan-font-weight: font-weight.$font-weight-bold,
+
+  // section
+  $section-gap: spacing.$spacing-150,
+  $section-flex-direction: column,
+  $section-justify-content: flex-start,
+  $section-align-items: flex-start,
+  $section-max-width: 60rem,
+
+  // section content wrapper
+  $section-content-wrapper-background-color: color-scheme.$oc-white,
+  $section-content-wrapper-padding-top: spacing.$spacing-200,
+  $section-content-wrapper-padding-right: spacing.$spacing-200,
+  $section-content-wrapper-padding-bottom: spacing.$spacing-300,
+  $section-content-wrapper-padding-left: spacing.$spacing-200,
+  $section-content-wrapper-max-width: 60rem,
+  $section-content-wrapper-gap: spacing.$spacing-250,
+  $section-content-wrapper-flex-direction: column,
+  $section-content-wrapper-border-radius: border-radii.$border-radius-m,
+
+  // tabs
+  $tabs-gap: spacing.$spacing-100,
+  $tabs-item-border-style: solid,
+  $tabs-item-border-width: 0,
+  $tabs-item-padding: spacing.$spacing-050 0,
+  $tabs-item-text-color: semantic.$color-brand-primary-default,
+  $tabs-item-text-decoration: none,
+  $tabs-item-current-border-color: semantic.$color-brand-primary-default,
+  $tabs-item-current-border-width: 0 0 2px 0,
+  $tabs-item-current-font-weight: bold,
+  $tabs-item-hover-text-color: color-scheme.$oc-blue-9,
+  // set to focus border-width
+  $tabs-outline-offset: -2px,
+
+  // table
+  $table-gap: spacing.$spacing-050,
+  $table-head-background-color: color-scheme.$oc-gray-1,
+  $table-head-border-width: 1px,
+  $table-head-border-style: solid,
+  $table-head-border-color: color-scheme.$oc-gray-1,
+  $table-head-padding: spacing.$spacing-075 spacing.$spacing-100,
+  $table-head-text-align: left,
+  $table-cell-padding: spacing.$spacing-075 spacing.$spacing-100,
+  $table-cell-gap: spacing.$spacing-025,
+  $table-row-border-width: 1px 0,
+  $table-row-border-style: solid,
+  $table-row-border-color: color-scheme.$oc-gray-1,
+
+  // table caption
+  $table-caption-text-align: left,
+  $table-caption-padding: spacing.$spacing-100 0,
+
+  // tile
+  $tile-background-color: color-scheme.$oc-white,
+  $tile-padding-top: spacing.$spacing-100,
+  $tile-padding-right: spacing.$spacing-100,
+  $tile-padding-bottom: spacing.$spacing-100,
+  $tile-padding-left: spacing.$spacing-100,
+  $tile-border-width: 1px,
+  $tile-border-style: solid,
+  $tile-border-color: color-scheme.$oc-gray-3,
+  $tile-border-radius: border-radii.$border-radius-m,
+  $tile-text-color: semantic.$color-text-default,
+
+  // tile groups
+  $tile-groups-gap: spacing.$spacing-100,
+
+  // tile image
+  $tile-image-cover-margin-bottom: spacing.$spacing-100
+);

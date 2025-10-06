@@ -1,0 +1,112 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+/* Fieldset styling is a bit different compared to the default form styling.
+This is because of a couple of styling restrictions and issues concerning fieldsets and it's children.
+- Fieldsets can't use flexbox 
+- When elements within the fieldset use flexbox, unwanted white-space appears at the bottom of the fieldset.
+The amount of whitespace depends on the length of the fieldset before flex positioning took place. And will not be removed after. 
+
+The usage of fieldsets is recommended because it is the semantically correct element to use for form grouping.
+As well as it improves the experience for users who are using a screenreader to navigate the form. 
+
+To prevent these issues to cause unexpected behaviour the fieldset and it's children within this set do no use flexbox for their positioning.
+But the alternative styling as you can see below.
+
+For more information on the bug see: https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers
+and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
+
+form,
+main section form,
+main article form,
+main div form {
+  > fieldset {
+    padding: theme.$form-fieldset-padding;
+
+    @include theming.apply-from-theme(
+      (
+        border-width: theme.$form-fieldset-border-width,
+        border-style: theme.$form-fieldset-border-style,
+        border-color: theme.$form-fieldset-border-color,
+      )
+    );
+
+    legend {
+      @include theming.apply-from-theme(
+        (
+          font-weight: theme.$form-fieldset-legend-font-weight,
+          margin: theme.$form-fieldset-legend-margin,
+        )
+      );
+    }
+
+    input {
+      margin: theme.$form-fieldset-input-margin;
+    }
+
+    /*Fieldsets within fieldsets ignore the "*" all selector */
+    > *,
+    > fieldset {
+      display: inline-block;
+
+      @include theming.apply-from-theme(
+        (
+          margin: theme.$form-fieldset-fields-margin,
+          border-width: theme.$form-fieldset-border-width,
+          border-style: theme.$form-fieldset-border-style,
+          border-color: theme.$form-fieldset-border-color,
+        )
+      );
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    div {
+      display: block;
+
+      /* used to re-renders the div so long labels won't run out of the div */
+      float: left;
+      width: 100%;
+
+      > * {
+        float: left;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      label {
+        @include theming.apply-from-theme(
+          (
+            margin: theme.$form-fieldset-label-margin,
+          )
+        );
+      }
+
+      input {
+        margin: theme.$form-fieldset-input-margin;
+      }
+    }
+
+    /* Notifications */
+    > div {
+      &.error,
+      &.warning,
+      &.explanation,
+      &.confirmation,
+      &.system {
+        > * {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .nota-bene {
+      padding-bottom: 0;
+    }
+  }
+}

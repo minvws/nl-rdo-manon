@@ -1,0 +1,157 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+form.help {
+  position: relative;
+
+  > div {
+    width: 100%;
+  }
+
+  .help-container {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    padding: theme.$form-help-container-padding;
+  }
+
+  > div,
+  > fieldset {
+    .help-button {
+      display: flex;
+      position: absolute;
+      gap: 0;
+      margin: 0;
+      min-width: 0;
+      min-height: 0;
+      font-size: 0;
+      box-sizing: border-box;
+      top: theme.$form-help-button-top;
+      width: auto;
+
+      @include theming.apply-from-theme(
+        (
+          right: theme.$form-help-button-right,
+          padding: theme.$form-help-button-padding,
+          border-width: theme.$form-help-button-border-width,
+          border-style: theme.$form-help-button-border-style,
+          border-color: theme.$form-help-button-border-color,
+          border-radius: theme.$form-help-button-border-radius,
+          background-color: theme.$form-help-button-background-color,
+          color: theme.$form-help-button-text-color,
+        )
+      );
+
+      &:hover {
+        @include theming.apply-from-theme(
+          (
+            background-color: theme.$form-help-button-hover-background-color,
+            color: theme.$form-help-button-hover-text-color,
+          )
+        );
+      }
+
+      // Icon
+      @if theme.$form-help-icon-mask {
+        &::before {
+          mask-size: contain;
+          content: "";
+
+          @include theming.apply-from-theme(
+            (
+              margin-right: theme.$form-help-icon-margin-right,
+              margin-left: theme.$form-help-icon-margin-left,
+              padding: theme.$form-help-icon-padding,
+              background-color: theme.$form-help-icon-color,
+              mask-image: theme.$form-help-icon-mask,
+              width: theme.$form-help-icon-width,
+              height: theme.$form-help-icon-height,
+            )
+          );
+        }
+      }
+
+      &[aria-expanded="true"] {
+        // Icon
+        @if theme.$form-help-expanded-icon-mask {
+          &::before {
+            mask-size: contain;
+            content: "";
+
+            @include theming.apply-from-theme(
+              (
+                margin-right: theme.$form-help-expanded-icon-margin-right,
+                margin-left: theme.$form-help-expanded-icon-margin-left,
+                padding: theme.$form-help-expanded-icon-padding,
+                background-color: theme.$form-help-expanded-icon-color,
+                mask-image: theme.$form-help-expanded-icon-mask,
+                width: theme.$form-help-expanded-icon-width,
+                height: theme.$form-help-expanded-icon-height,
+              )
+            );
+          }
+        }
+      }
+
+      + .explanation {
+        margin-bottom: 0;
+
+        @include theming.apply-from-theme(
+          (
+            margin-top: theme.$form-help-button-explanation-gap,
+          )
+        );
+      }
+    }
+
+    p.explanation.collapsed,
+    div.explanation.collapsed {
+      display: none;
+    }
+
+    * {
+      &:has(.help-button) {
+        position: relative;
+
+        @if validators.args-not-null(
+          theme.$form-help-icon-height,
+          theme.$form-help-button-top
+        )
+        {
+          @include theming.apply-from-theme(
+            (
+              min-height: calc(
+                  theme.$form-help-icon-height + theme.$form-help-button-top
+                ),
+            )
+          );
+        }
+      }
+    }
+  }
+
+  fieldset {
+    max-width: 100%;
+    min-width: 0;
+    gap: 0;
+
+    .help-button {
+      display: inline-block;
+
+      @include theming.apply-from-theme(
+        (
+          margin: theme.$form-help-button-margin,
+        )
+      );
+
+      + .explanation {
+        margin-top: 0;
+      }
+
+      &::before {
+        display: inline-block;
+      }
+    }
+  }
+}

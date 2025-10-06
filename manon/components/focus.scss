@@ -1,0 +1,28 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+*:focus,
+*.focus {
+  position: relative;
+
+  @include theming.apply-from-theme(
+    (
+      outline: theme.$focus-outline,
+      outline-offset: theme.$focus-outline-offset,
+      outline-color: theme.$focus-outline-color,
+      z-index: theme.$focus-z-index,
+      border-radius: theme.$focus-border-radius,
+    )
+  );
+
+  + label::before {
+    position: relative;
+
+    @include theming.apply-from-theme(
+      (
+        outline: theme.$focus-outline,
+        z-index: theme.$focus-z-index,
+      )
+    );
+  }
+}

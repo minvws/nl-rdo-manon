@@ -1,0 +1,31 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+.block-notification {
+  .error,
+  .warning,
+  .confirmation,
+  .explanation,
+  .system {
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+
+    @include theming.apply-from-theme(
+      (
+        flex-direction: theme.$notification-block-element-flex-direction,
+        justify-content: theme.$notification-block-element-justify-content,
+        align-items: theme.$notification-block-element-align-items,
+        gap: theme.$notification-block-element-gap,
+        padding-top: theme.$notification-block-element-padding-top,
+        padding-right: theme.$notification-block-element-padding-right,
+        padding-bottom: theme.$notification-block-element-padding-bottom,
+        padding-left: theme.$notification-block-element-padding-left,
+        max-width: theme.$notification-block-element-max-width,
+        position: theme.$notification-block-element-position,
+        color: theme.$notification-block-element-text-color,
+      )
+    );
+  }
+}

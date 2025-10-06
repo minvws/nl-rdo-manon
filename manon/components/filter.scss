@@ -1,0 +1,108 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+.filter {
+  @include theming.apply-from-theme(
+    (
+      padding: theme.$filter-padding,
+      gap: theme.$filter-gap,
+      width: theme.$filter-width,
+    )
+  );
+
+  > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+
+    @include theming.apply-from-theme(
+      (
+        border-width: theme.$filter-intro-border-width,
+        border-style: theme.$filter-intro-border-style,
+        border-color: theme.$filter-intro-border-color,
+        font-size: theme.$filter-intro-font-size,
+        font-weight: theme.$filter-intro-font-weight,
+        color: theme.$filter-intro-text-color,
+      )
+    );
+
+    p {
+      font-size: inherit;
+      color: inherit;
+
+      > span {
+        @include theming.apply-from-theme(
+          (
+            font-size: theme.$filter-intro-span-font-size,
+            color: theme.$filter-intro-span-text-color,
+          )
+        );
+      }
+    }
+
+    button {
+      display: none;
+      min-width: 0;
+
+      @include theming.apply-from-theme(
+        (
+          background-color: theme.$filter-button-background-color,
+          color: theme.$filter-button-text-color,
+          border-width: theme.$filter-button-border-width,
+          border-style: theme.$filter-button-border-style,
+          border-color: theme.$filter-button-border-color,
+          padding: theme.$filter-button-padding,
+          min-height: theme.$filter-button-min-height,
+          margin-left: theme.$filter-button-margin-left,
+          font-size: theme.$filter-button-font-size,
+        )
+      );
+
+      // Icon
+      @if theme.$filter-icon-mask {
+        &::after {
+          mask-size: contain;
+          content: "";
+
+          @include theming.apply-from-theme(
+            (
+              margin-right: theme.$filter-icon-margin-right,
+              margin-left: theme.$filter-icon-margin-left,
+              padding: theme.$filter-icon-padding,
+              background-color: theme.$filter-icon-color,
+              mask-image: theme.$filter-icon-mask,
+              width: theme.$filter-icon-width,
+              height: theme.$filter-icon-height,
+            )
+          );
+        }
+      }
+
+      &[aria-expanded="true"] {
+        &::after {
+          mask-size: contain;
+          content: "";
+
+          @include theming.apply-from-theme(
+            (
+              margin-right: theme.$filter-close-icon-margin-right,
+              margin-left: theme.$filter-close-icon-margin-left,
+              padding: theme.$filter-close-icon-padding,
+              background-color: theme.$filter-close-icon-color,
+              mask-image: theme.$filter-close-icon-mask,
+              width: theme.$filter-close-icon-width,
+              height: theme.$filter-close-icon-height,
+            )
+          );
+        }
+      }
+    }
+  }
+}
+
+.js-filters-loaded .filter > div > button {
+  display: inline-flex;
+}

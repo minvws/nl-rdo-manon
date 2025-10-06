@@ -1,0 +1,37 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+%slogan-styling {
+  @include theming.apply-from-theme(
+    (
+      color: theme.$slogan-text-color,
+      font-size: theme.$slogan-font-size,
+      font-weight: theme.$slogan-font-weight,
+      font-family: theme.$slogan-font-family,
+      font-style: theme.$slogan-font-style,
+    )
+  );
+}
+
+%slogan-link-styling {
+  color: inherit;
+  text-decoration: theme.$slogan-text-decoration;
+
+  &:visited,
+  &:visited:hover {
+    color: inherit;
+  }
+}
+
+.slogan {
+  @extend %slogan-styling;
+
+  a {
+    @extend %slogan-link-styling;
+  }
+}
+
+a.slogan {
+  @extend %slogan-styling;
+  @extend %slogan-link-styling;
+}

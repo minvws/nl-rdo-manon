@@ -1,0 +1,25 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+$breakpoint: 24rem !default;
+
+form.horizontal {
+  .grouped-choice-list {
+    legend {
+      font-weight: normal;
+      width: auto;
+      margin: 0;
+
+      @media (width >= $breakpoint) {
+        position: absolute;
+        padding: 0;
+
+        @include theming.apply-from-theme(
+          (
+            max-width: theme.$form-grouped-choice-list-label-column,
+          )
+        );
+      }
+    }
+  }
+}

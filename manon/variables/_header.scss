@@ -1,0 +1,96 @@
+// Header
+$header-flex-direction: null !default;
+$header-gap: null !default;
+$header-justify-content: null !default;
+$header-align-items: null !default;
+$header-padding-top: null !default;
+$header-padding-right: null !default;
+$header-padding-bottom: null !default;
+$header-padding-left: null !default;
+$header-max-width: null !default;
+$header-background-color: null !default;
+$header-min-height: null !default;
+$header-border-width: null !default;
+$header-border-style: null !default;
+$header-border-color: null !default;
+$header-text-color: null !default;
+$header-font-size: null !default;
+$header-font-weight: null !default;
+$header-line-height: null !default;
+$header-position: null !default;
+
+/* content wrapper */
+$header-content-wrapper-flex-direction: row !default;
+$header-content-wrapper-justify-content: null !default;
+$header-content-wrapper-align-items: null !default;
+$header-content-wrapper-width: null !default;
+$header-content-wrapper-margin-top: null !default;
+$header-content-wrapper-gap: null !default;
+
+// Header link
+$header-link-background-color: null !default;
+$header-link-text-color: null !default;
+$header-link-text-decoration: null !default;
+$header-link-font-size: null !default;
+$header-link-border-width: null !default;
+$header-link-border-style: null !default;
+$header-link-border-color: null !default;
+$header-link-border-radius: null !default;
+$header-link-padding: null !default;
+$header-link-font-weight: null !default;
+$header-link-min-height: null !default;
+$header-link-display: flex !default;
+$header-link-justify-content: null !default;
+$header-link-align-items: null !default;
+
+// Current page
+$header-link-current-text-color: null !default;
+$header-link-current-background-color: null !default;
+$header-link-current-border-width: null !default;
+$header-link-current-border-style: null !default;
+$header-link-current-border-color: null !default;
+
+// Nav
+$header-navigation-gap: null !default;
+$header-navigation-justify-content: null !default;
+$header-navigation-align-items: null !default;
+$header-navigation-width: null !default;
+$header-navigation-margin: null !default;
+$header-navigation-background-color: null !default;
+$header-navigation-padding-top: null !default;
+$header-navigation-padding-right: null !default;
+$header-navigation-padding-bottom: null !default;
+$header-navigation-padding-left: null !default;
+$header-navigation-max-width: null !default;
+$header-navigation-border-width: null !default;
+$header-navigation-border-style: null !default;
+$header-navigation-border-color: null !default;
+$header-navigation-border-radius: null !default;
+$header-navigation-min-height: null !default;
+$header-navigation-position: null !default;
+$header-navigation-white-space: null !default;
+
+// List
+$header-list-gap: null !default;
+$header-list-justify-content: null !default;
+$header-list-align-items: null !default;
+$header-list-text-color: null !default;
+$header-list-font-weight: null !default;
+$header-list-width: null !default;
+$header-list-height: null !default;
+$header-list-min-height: null !default;
+
+// List Item
+$header-list-item-justify-content: null !default;
+$header-list-item-align-items: null !default;
+$header-list-item-text-color: null !default;
+$header-list-item-background-color: null !default;
+$header-list-item-border-width: null !default;
+$header-list-item-border-style: null !default;
+$header-list-item-border-color: null !default;
+
+// Input
+$header-navigation-input-algin-self: null !default;
+
+// Actions
+$header-actions-gap: 1rem !default;

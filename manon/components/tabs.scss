@@ -1,0 +1,147 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+%tabs-link-styling {
+  white-space: nowrap;
+  display: inline-block;
+  box-sizing: border-box;
+
+  @include theming.apply-from-theme(
+    (
+      border-width: theme.$tabs-item-border-width,
+      border-style: theme.$tabs-item-border-style,
+      border-color: theme.$tabs-item-border-color,
+      border-radius: theme.$tabs-item-border-radius,
+      color: theme.$tabs-item-text-color,
+      line-height: theme.$tabs-item-line-height,
+      padding: theme.$tabs-item-padding,
+      background-color: theme.$tabs-item-background-color,
+      text-decoration: theme.$tabs-item-text-decoration,
+      font-weight: theme.$tabs-item-font-weight,
+    )
+  );
+
+  &:hover {
+    @include theming.apply-from-theme(
+      (
+        border-width: theme.$tabs-item-hover-border-width,
+        border-style: theme.$tabs-item-hover-border-style,
+        border-color: theme.$tabs-item-hover-border-color,
+        color: theme.$tabs-item-hover-text-color,
+        font-weight: theme.$tabs-item-hover-font-weight,
+        background-color: theme.$tabs-item-hover-background-color,
+      )
+    );
+  }
+}
+
+%tabs-current-item-styling {
+  cursor: pointer;
+
+  @include theming.apply-from-theme(
+    (
+      border-width: theme.$tabs-item-current-border-width,
+      border-style: theme.$tabs-item-current-border-style,
+      border-color: theme.$tabs-item-current-border-color,
+      color: theme.$tabs-item-current-text-color,
+      background-color: theme.$tabs-item-current-background-color,
+      font-weight: theme.$tabs-item-current-font-weight,
+    )
+  );
+
+  &:hover {
+    @include theming.apply-from-theme(
+      (
+        border-width: theme.$tabs-item-current-hover-border-width,
+        border-style: theme.$tabs-item-current-hover-border-style,
+        border-color: theme.$tabs-item-current-hover-border-color,
+        color: theme.$tabs-item-current-hover-text-color,
+        background-color: theme.$tabs-item-current-hover-background-color,
+        font-weight: theme.$tabs-item-current-hover-font-weight,
+      )
+    );
+  }
+}
+
+%tabs-parent-styling {
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+
+  @include theming.apply-from-theme(
+    (
+      background-color: theme.$tabs-background-color,
+    )
+  );
+}
+
+%tabs-list-styling {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 0;
+  width: 100%;
+
+  @include theming.apply-from-theme(
+    (
+      border-top-width: theme.$tabs-border-top-width,
+      border-right-width: theme.$tabs-border-right-width,
+      border-bottom-width: theme.$tabs-border-bottom-width,
+      border-left-width: theme.$tabs-border-left-width,
+      border-style: theme.$tabs-border-style,
+      border-color: theme.$tabs-border-color,
+      gap: theme.$tabs-gap,
+    )
+  );
+
+  li {
+    list-style: none;
+    padding: 0;
+
+    @if validators.args-not-null(theme.$tabs-border-bottom-width) {
+      margin-bottom: calc(theme.$tabs-border-bottom-width * -1);
+    }
+
+    > * {
+      @extend %tabs-link-styling;
+    }
+
+    a[aria-current="page"] {
+      @extend %tabs-current-item-styling;
+    }
+
+    &[aria-current="true"] > * {
+      @extend %tabs-current-item-styling;
+    }
+  }
+}
+
+ul.tabs {
+  @extend %tabs-list-styling;
+}
+
+.tabs,
+manon-tabs {
+  @extend %tabs-parent-styling;
+
+  > ul {
+    @extend %tabs-list-styling;
+  }
+
+  [aria-selected="true"] {
+    @extend %tabs-current-item-styling;
+  }
+
+  *:focus,
+  *.focus {
+    outline-offset: theme.$tabs-outline-offset;
+  }
+}
+
+manon-tabs {
+  [role="tabpanel"][hidden] {
+    display: none;
+  }
+}

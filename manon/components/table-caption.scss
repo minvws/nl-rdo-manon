@@ -1,0 +1,18 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+table {
+  caption {
+    text-align: theme.$table-caption-text-align;
+
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$table-caption-background-color,
+        color: theme.$table-caption-text-color,
+        font-size: theme.$table-caption-font-size,
+        line-height: theme.$table-caption-line-height,
+        padding: theme.$table-caption-padding,
+      )
+    );
+  }
+}

@@ -1,8 +1,0 @@
-/* Header navigation actions */
-
-@use "../color-scheme";
-
-body > header nav .actions {
-  display: flex;
-  gap: var(--spacing-100);
-}

@@ -1,10 +1,13 @@
 {
   "name": "@minvws/manon",
   "version": "0.0.0",
+  "type": "module",
   "license": "EUPL-1.2",
   "files": [
     "**/*.scss",
+    "!**/*.test.scss",
     "**/*.js",
+    "!**/*.{config,setup,test}.js",
     "**/*.license",
     "LICENSES",
     "REUSE.toml",
@@ -15,15 +18,26 @@
     "format:check": "prettier --check .",
     "lint:css": "stylelint \"**/*.scss\"",
     "lint:css:fix": "npm run lint:css -- --fix",
-    "npm-version": "npm version"
+    "check": "tsc",
+    "check:watch": "tsc --watch",
+    "npm-version": "npm version",
+    "test": "vitest run"
   },
-  "peerDepencency": {
+  "peerDependencies": {
     "sass": ">=1.77.6"
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^24.3.1",
+    "jsdom": "^26.1.0",
     "prettier": "^3.6.2",
+    "sass": "^1.89.2",
+    "sass-true": "^9.0.0",
     "stylelint": "^16.24.0",
-    "stylelint-config-standard-scss": "^15.0.1"
+    "stylelint-config-standard-scss": "^15.0.1",
+    "vitest": "^3.2.4"
   },
   "repository": {
     "type": "git",

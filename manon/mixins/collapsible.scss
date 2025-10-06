@@ -1,15 +1,24 @@
-/*---------------------------------------------------------------*/
-/*----------------------- collapsible.scss ----------------------*/
-/*---------------------------------------------------------------*/
+@use "theming";
+@use "../variables" as theme;
 
 @mixin collapsible {
+  /* Above breakpoint */
+  button.collapsible-toggle {
+    display: none;
+  }
+
   &.collapsed {
     padding: 0;
     gap: 0;
-    width: var(--collapsible-width, 100%);
-    max-width: var(--collapsible-max-width, 100%);
     margin: 0;
     position: relative;
+
+    @include theming.apply-from-theme(
+      (
+        width: theme.$collapsible-width,
+        max-width: theme.$collapsible-max-width,
+      )
+    );
 
     button.collapsible-toggle {
       display: flex;
@@ -25,10 +34,5 @@
         }
       }
     }
-  }
-
-  /* Above breakpoint */
-  button.collapsible-toggle {
-    display: none;
   }
 }

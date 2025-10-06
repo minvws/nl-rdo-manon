@@ -1,0 +1,103 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+%navigation-link {
+  a {
+    color: theme.$navigation-link-text-color;
+
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$navigation-link-background-color,
+        text-decoration: theme.$navigation-link-text-decoration,
+        border-width: theme.$navigation-link-border-width,
+        border-style: theme.$navigation-link-border-style,
+        border-color: theme.$navigation-link-border-color,
+        border-radius: theme.$navigation-link-border-radius,
+
+        // Outline
+        outline: theme.$navigation-link-outline,
+        outline-offset: theme.$navigation-link-outline-offset,
+        outline-color: theme.$navigation-link-outline-color,
+        z-index: theme.$navigation-link-z-index,
+        box-shadow: theme.$navigation-link-box-shadow,
+      )
+    );
+
+    &:hover {
+      color: theme.$navigation-link-hover-text-color;
+    }
+
+    &:visited {
+      color: theme.$navigation-link-visited-text-color;
+
+      &:hover {
+        color: theme.$navigation-link-visited-hover-text-color;
+      }
+    }
+  }
+}
+
+nav {
+  @include theming.apply-from-theme(
+    (
+      font-family: theme.$navigation-font-family,
+      font-size: theme.$navigation-font-size,
+      font-weight: theme.$navigation-font-weight,
+      line-height: theme.$navigation-line-height,
+      color: theme.$navigation-text-color,
+    )
+  );
+  @extend %navigation-link;
+
+  ul {
+    @if theme.$navigation-list-gap {
+      display: flex;
+    }
+
+    @include theming.apply-from-theme(
+      (
+        margin: theme.$navigation-list-margin,
+        padding: theme.$navigation-list-padding,
+        gap: theme.$navigation-list-gap,
+        background-color: theme.$navigation-list-background-color,
+      )
+    );
+
+    li {
+      display: flex;
+      align-items: center;
+
+      @include theming.apply-from-theme(
+        (
+          padding: theme.$navigation-list-item-padding,
+          background-color: theme.$navigation-list-item-background-color,
+          border-width: theme.$navigation-list-item-border-width,
+          border-style: theme.$navigation-list-item-border-style,
+          border-color: theme.$navigation-list-item-border-color,
+          list-style: theme.$navigation-list-item-list-style,
+        )
+      );
+
+      // Icon
+      @if theme.$navigation-list-item-icon-mask {
+        &::before {
+          mask-size: contain;
+          content: "";
+          display: inline-block;
+
+          @include theming.apply-from-theme(
+            (
+              margin-right: theme.$navigation-list-item-icon-margin-right,
+              margin-left: theme.$navigation-list-item-icon-margin-left,
+              padding: theme.$navigation-list-item-icon-padding,
+              background-color: theme.$navigation-list-item-icon-color,
+              mask-image: theme.$navigation-list-item-icon-mask,
+              width: theme.$navigation-list-item-icon-width,
+              height: theme.$navigation-list-item-icon-height,
+            )
+          );
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+.tile {
+  box-sizing: border-box;
+  align-items: theme.$tile-align-items;
+
+  @include theming.apply-from-theme(
+    (
+      flex-direction: theme.$tile-flex-direction,
+      justify-content: theme.$tile-justify-content,
+      gap: theme.$tile-gap,
+      background-color: theme.$tile-background-color,
+      color: theme.$tile-text-color,
+      padding-top: theme.$tile-padding-top,
+      padding-right: theme.$tile-padding-right,
+      padding-bottom: theme.$tile-padding-bottom,
+      padding-left: theme.$tile-padding-left,
+      border-width: theme.$tile-border-width,
+      border-style: theme.$tile-border-style,
+      border-color: theme.$tile-border-color,
+      border-radius: theme.$tile-border-radius,
+      box-shadow: theme.$tile-box-shadow,
+      cursor: theme.$tile-cursor,
+    )
+  );
+}
+
+.tiles {
+  @include theming.apply-from-theme(
+    (
+      align-items: theme.$tiles-align-items,
+    )
+  );
+
+  /* render each div, nav or section directly within a tiles group as a tile */
+  > div,
+  > nav,
+  > section {
+    box-sizing: border-box;
+    align-items: theme.$tile-align-items;
+
+    @include theming.apply-from-theme(
+      (
+        flex-direction: theme.$tile-flex-direction,
+        justify-content: theme.$tile-justify-content,
+        gap: theme.$tile-gap,
+        background-color: theme.$tile-background-color,
+        color: theme.$tile-text-color,
+        padding-top: theme.$tile-padding-top,
+        padding-right: theme.$tile-padding-right,
+        padding-bottom: theme.$tile-padding-bottom,
+        padding-left: theme.$tile-padding-left,
+        border-width: theme.$tile-border-width,
+        border-style: theme.$tile-border-style,
+        border-color: theme.$tile-border-color,
+        border-radius: theme.$tile-border-radius,
+        box-shadow: theme.$tile-box-shadow,
+        cursor: theme.$tile-cursor,
+      )
+    );
+  }
+}
+
+ul.tiles {
+  padding-left: 0;
+
+  > li {
+    @include theming.apply-from-theme(
+      (
+        flex-direction: theme.$tile-flex-direction,
+        justify-content: theme.$tile-justify-content,
+        align-items: theme.$tile-align-items,
+        gap: theme.$tile-gap,
+        background-color: theme.$tile-background-color,
+        color: theme.$tile-text-color,
+        padding-top: theme.$tile-padding-top,
+        padding-right: theme.$tile-padding-right,
+        padding-bottom: theme.$tile-padding-bottom,
+        padding-left: theme.$tile-padding-left,
+        border-width: theme.$tile-border-width,
+        border-style: theme.$tile-border-style,
+        border-color: theme.$tile-border-color,
+        border-radius: theme.$tile-border-radius,
+        box-shadow: theme.$tile-box-shadow,
+        cursor: theme.$tile-cursor,
+      )
+    );
+
+    > a {
+      text-decoration: none;
+
+      @include theming.apply-from-theme(
+        (
+          color: theme.$tile-link-text-color,
+        )
+      );
+    }
+  }
+}

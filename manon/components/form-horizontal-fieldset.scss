@@ -1,0 +1,179 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+$breakpoint: 24rem;
+
+/* Fieldset styling is a bit different compared to the default form styling.
+This is because of a couple of styling restrictions and issues concerning fieldsets and it's children.
+- Fieldsets can't use flexbox
+- When elements within the fieldset use flexbox, unwanted white-space appears at the bottom of the fieldset.
+The amount of whitespace depends on the length of the fieldset before flex positioning took place. And will not be removed after.
+
+The usage of fieldsets is recommended because it is the semantically correct element to use for form grouping.
+As well as it improves the experience for users who are using a screenreader to navigate the form.
+
+To prevent these issues to cause unexpected behaviour the fieldset and it's children within this set do no use flexbox for their positioning.
+But the alternative styling as you can see below.
+
+For more information on the bug see: https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers
+and: https://bugs.chromium.org/p/chromium/issues/detail?id=262679 */
+
+form.horizontal {
+  > fieldset {
+    width: 100%;
+
+    > div {
+      display: block;
+
+      /* resetting gap as it can not be used within fieldsets */
+      gap: 0;
+
+      /* Adds margin instead of gap */
+      @include theming.apply-from-theme(
+        (
+          margin-bottom: theme.$form-horizontal-view-fieldset-margin-bottom,
+        )
+      );
+
+      @media (width >= $breakpoint) {
+        > * {
+          /* resetting gap as it can not be used within fieldsets */
+          gap: 0;
+
+          /* float objects to move inputs into place even when there is no label */
+          float: right;
+          width: theme.$form-horizontal-view-fieldset-input-column;
+        }
+
+        > div {
+          margin-bottom: 0;
+        }
+
+        label {
+          float: left;
+          width: theme.$form-horizontal-view-fieldset-label-column;
+          margin-top: theme.$form-horizontal-view-fieldset-label-margin-top;
+
+          @include theming.apply-from-theme(
+            (
+              padding-right:
+                theme.$form-horizontal-view-fieldset-form-horizontal-gap,
+            )
+          );
+        }
+      }
+    }
+
+    .required {
+      .nota-bene {
+        float: left;
+
+        @include theming.apply-from-theme(
+          (
+            margin-bottom:
+              theme.$form-horizontal-view-fieldset-form-required-gap,
+          )
+        );
+      }
+    }
+
+    input[type="color"] {
+      float: left;
+    }
+
+    > .checkbox,
+    > .radio {
+      margin-left: 0;
+      width: 100%;
+      float: right;
+
+      @media (width >= $breakpoint) {
+        width: theme.$form-horizontal-view-fieldset-input-column;
+      }
+
+      .horizontal {
+        display: block;
+        gap: 0;
+      }
+
+      input,
+      label {
+        float: none;
+        margin: 0;
+      }
+
+      input {
+        float: left;
+
+        @include theming.apply-from-theme(
+          (
+            width: theme.$form-horizontal-view-fieldset-form-checkbox-width,
+            margin-right:
+              theme.$form-horizontal-view-fieldset-form-checkbox-margin-right,
+          )
+        );
+      }
+
+      label {
+        margin-top: 0;
+        display: block;
+        float: left;
+      }
+
+      /* Help button */
+      > button {
+        top: 0;
+      }
+
+      /* Help text */
+      > p,
+      > div {
+        width: 100%;
+      }
+    }
+
+    .checkbox input[type="checkbox"] + label {
+      @if theme.$form-horizontal-view-fieldset-form-checkbox-width {
+        max-width: calc(
+          100% - theme.$form-horizontal-view-fieldset-form-checkbox-width
+        );
+      }
+    }
+
+    .radio input[type="radio"] + label {
+      @if theme.$form-horizontal-view-fieldset-radio-input-width {
+        max-width: calc(
+          100% - theme.$form-horizontal-view-fieldset-radio-input-width
+        );
+      }
+    }
+
+    @media (width >= $breakpoint) {
+      > button,
+      > a.button,
+      > input[type="button"],
+      > input[type="submit"],
+      > input[type="reset"],
+      > a {
+        @include theming.apply-from-theme(
+          (
+            margin-left: theme.$form-horizontal-view-fieldset-label-column,
+          )
+        );
+      }
+
+      & + button,
+      & + a.button,
+      & + input[type="button"],
+      & + input[type="submit"],
+      & + input[type="reset"] {
+        @include theming.apply-from-theme(
+          (
+            margin-left: theme.$form-horizontal-view-fieldset-label-column,
+          )
+        );
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+
+article {
+  > section,
+  > div > section {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @if theme.$article-section-flex-direction or
+      theme.$article-section-gap or
+      theme.$article-section-align-items
+    {
+      display: flex;
+    }
+
+    @include theming.apply-from-theme(
+      (
+        flex-direction: theme.$article-section-flex-direction,
+        gap: theme.$article-section-gap,
+        align-items: theme.$article-section-align-items,
+        padding-top: theme.$article-section-padding-top,
+        padding-right: theme.$article-section-padding-right,
+        padding-bottom: theme.$article-section-padding-bottom,
+        padding-left: theme.$article-section-padding-left,
+        max-width: theme.$article-section-max-width,
+      )
+    );
+  }
+}

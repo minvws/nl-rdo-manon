@@ -1,0 +1,70 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+table {
+  td,
+  th,
+  tr {
+    &.error {
+      @include theming.apply-from-theme(
+        (
+          background-color: theme.$notification-table-error-background-color,
+          color: theme.$notification-table-error-text-color,
+        )
+      );
+    }
+
+    &.warning {
+      @include theming.apply-from-theme(
+        (
+          background-color: theme.$notification-table-warning-background-color,
+          color: theme.$notification-table-warning-text-color,
+        )
+      );
+    }
+
+    &.confirmation {
+      @include theming.apply-from-theme(
+        (
+          background-color:
+            theme.$notification-table-confirmation-background-color,
+          color: theme.$notification-table-confirmation-text-color,
+        )
+      );
+    }
+
+    &.explanation {
+      @include theming.apply-from-theme(
+        (
+          background-color:
+            theme.$notification-table-explanation-background-color,
+          color: theme.$notification-table-explanation-text-color,
+        )
+      );
+    }
+
+    &.system {
+      @include theming.apply-from-theme(
+        (
+          background-color: theme.$notification-table-system-background-color,
+          color: theme.$notification-table-system-text-color,
+        )
+      );
+    }
+  }
+
+  // Darken even rows for zebra effect
+  tr {
+    &:nth-child(even):not(.odd),
+    &:nth-child(odd).even {
+      @include theming.apply-from-theme(
+        (
+          background-color:
+            theme.$notification-table-row-background-color-striping,
+        )
+      );
+    }
+    filter: brightness(90%);
+  }
+}
