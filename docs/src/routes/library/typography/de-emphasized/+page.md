@@ -1,6 +1,6 @@
 ---
-title: Subtielere weergave
-breadcrumb: Subtielere weergave
+title: De-emphasized
+breadcrumb: De-emphasized
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"

@@ -521,6 +521,8 @@ and spacing sets */
   $tabs-item-current-border-width: 0 0 2px 0,
   $tabs-item-current-font-weight: bold,
   $tabs-item-hover-text-color: color-scheme.$oc-blue-9,
+  // set to focus border-width
+  $tabs-outline-offset: -2px,
 
   // table
   $table-gap: spacing.$spacing-050,

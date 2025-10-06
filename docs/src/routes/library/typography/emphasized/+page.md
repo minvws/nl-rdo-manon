@@ -1,6 +1,6 @@
 ---
-title: Benadrukte weergave
-breadcrumb: Benadrukte weergave
+title: Emphasized
+breadcrumb: Emphasized
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
