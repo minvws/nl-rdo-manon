@@ -35,7 +35,8 @@
     border-color: var(--pagination-link-hover-border-color);
   }
 
-  &[aria-current] {
+  &[aria-current="page"],
+  &[aria-current="true"] {
     @extend %pagination-active-item-styling;
   }
 
