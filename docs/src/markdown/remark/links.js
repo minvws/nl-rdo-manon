@@ -1,7 +1,7 @@
 import { visit } from "unist-util-visit";
 
-const linkTagPattern = /<\s*?a\s+([^>]*?)>/g;
-const hrefPattern = /href=["']([^"']*?)["']/;
+const linkTagPattern = /<\s*a\s+([^>]*)>/g;
+const hrefPattern = /href=["']([^"']+)["']/;
 
 /**
  * Remark the plugin to rewrite <a> to <Components.a> (for mdsvex).
@@ -18,7 +18,7 @@ export function remarkLinks() {
       });
 
       // Also replace closing tags
-      node.value = node.value.replaceAll(/<\/\s*?a\s*?>/g, "</Components.a>");
+      node.value = node.value.replaceAll(/<\/\s*a\s*>/g, "</Components.a>");
     });
   };
 }
