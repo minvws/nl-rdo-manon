@@ -45,10 +45,7 @@ for (const themeDir of themeDirs) {
   try {
     const result = sass.compile(tempFile, {
       style: "compressed",
-      loadPaths: [
-        themesFolder,
-        path.resolve("./node_modules"),
-      ],
+      loadPaths: [themesFolder, path.resolve("./node_modules")],
     });
     fs.writeFileSync(
       path.join(themeOutFolder, `manon.${theme}.css`),
