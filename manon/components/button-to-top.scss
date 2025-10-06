@@ -5,6 +5,7 @@
 button.to-top,
 a.button.to-top {
   padding: 0;
+  gap: 0;
 
   @include theming.apply-from-theme(
     (

@@ -50,6 +50,10 @@ nav {
   @extend %navigation-link;
 
   ul {
+    @if theme.$navigation-list-gap {
+      display: flex;
+    }
+
     @include theming.apply-from-theme(
       (
         margin: theme.$navigation-list-margin,
@@ -75,7 +79,7 @@ nav {
       );
 
       // Icon
-      @if theme.$breadcrumb-bar-icon-mask {
+      @if theme.$navigation-list-item-icon-mask {
         &::before {
           mask-size: contain;
           content: "";

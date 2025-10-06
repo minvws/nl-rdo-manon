@@ -120,11 +120,19 @@ and spacing sets */
   $button-padding-left: spacing.$spacing-100,
   $button-background-color: semantic.$color-brand-primary-default,
   $button-font-weight: 400,
+  $button-gap: spacing.$spacing-050,
 
   // button hover
   $button-hover-background-color: color-scheme.$oc-blue-7,
   $button-hover-text-color: color-scheme.$oc-white,
   $button-hover-border-color: color-scheme.$oc-blue-7,
+
+  // button secondary
+  $button-secondary-background-color: color-scheme.$oc-white,
+  $button-secondary-text-color: semantic.$color-brand-primary-default,
+  $button-secondary-border-width: 1px,
+  $button-secondary-border-style: solid,
+  $button-secondary-border-color: color-scheme.$oc-gray-4,
 
   // button destructive
   $button-destructive-background-color: semantic.$color-destructive-default,
@@ -161,9 +169,9 @@ and spacing sets */
   $breadcrumb-bar-padding-bottom: spacing.$spacing-075,
   $breadcrumb-bar-padding-left: spacing.$spacing-100,
   $breadcrumb-bar-text-color: semantic.$color-text-default,
-  $breadcrumb-bar-gap: spacing.$spacing-100,
+  $breadcrumb-bar-gap: spacing.$spacing-050,
   $breadcrumb-bar-list-item-last-child-font-weight: bold,
-  $breadcrumb-bar-list-item-gap: spacing.$spacing-100,
+  $breadcrumb-bar-list-item-gap: spacing.$spacing-050,
   $breadcrumb-bar-icon-color: semantic.$color-text-default,
   $breadcrumb-bar-icon-mask: icons.$chevron-right,
   $breadcrumb-bar-icon-width: 1.5rem,
@@ -560,6 +568,10 @@ and spacing sets */
   // sidemenu collapsed
   $sidemenu-collapsed-button-margin-left: 2rem,
   $sidemenu-collapsed-icon-mask: icons.$hamburger,
+
+  // sidemenu list
+  $sidemenu-ul-padding: spacing.$spacing-100 0,
+  $sidemenu-list-item-padding: spacing.$spacing-025 0,
 
   // slogan
   $slogan-text-color: semantic.$color-text-default,
