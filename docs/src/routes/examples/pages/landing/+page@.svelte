@@ -3,7 +3,18 @@
   const baseUrl = `${base}/examples/pages/landing`;
 </script>
 
-
+<header>
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+  <nav>
+    <div>
+      <ul>
+        <li><a href={baseUrl} aria-current="page">Home</a></li>
+        <li><a href={baseUrl}>About</a></li>
+        <li><a href={baseUrl}>Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
 <main id="main-content" tabindex="-1">
   <section class="hero">
