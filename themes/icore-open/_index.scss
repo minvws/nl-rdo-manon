@@ -557,6 +557,21 @@ and spacing sets */
   $pagination-link-active-text-color: semantic.$color-brand-primary-default,
   $pagination-link-active-font-weight: bold,
 
+  // Pagination adjecent
+  $pagination-adjacent-font-size: 0,
+
+  // Pagination previous icon
+  $pagination-previous-icon-color: semantic.$color-brand-primary-default,
+  $pagination-previous-icon-mask: icons.$chevron-left,
+  $pagination-previous-icon-width: 1.5rem,
+  $pagination-previous-icon-height: 1.5rem,
+
+  // Pagination next icon
+  $pagination-next-icon-color: semantic.$color-brand-primary-default,
+  $pagination-next-icon-mask: icons.$chevron-right,
+  $pagination-next-icon-width: 1.5rem,
+  $pagination-next-icon-height: 1.5rem,
+
   // page title
   $page-title-max-width: 60rem,
   $page-title-width: 100%,
