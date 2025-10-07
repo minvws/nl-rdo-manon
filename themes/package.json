@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "glob": "^11.0.3",
-    "sass": "^1.89.2"
+    "sass": "^1.93.2"
   },
   "repository": {
     "type": "git",
