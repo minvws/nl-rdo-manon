@@ -37,7 +37,7 @@ for (const themeDir of themeDirs) {
     $font-path: "./fonts"
   );
 
-  @use "./scripts/components";
+  @use "./scripts/theme-variants/base";
 `;
 
   // Write to a temporary file
