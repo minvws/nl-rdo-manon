@@ -24,7 +24,7 @@ Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in mee
 <nav class="pagination" aria-label="Paginering" id="pagination-nav">
   <ul>
     <li>
-      <a href="#pagination-nav" aria-label="Ga naar pagina 1" aria-current="true">1</a>
+      <a href="#pagination-nav" aria-label="Ga naar pagina 1" aria-current="page">1</a>
     </li>
     <li><a href="#pagination-nav" aria-label="Ga naar pagina 2">2</a></li>
     <li><a href="#pagination-nav" aria-label="Ga naar pagina 3">3</a></li>
@@ -36,7 +36,7 @@ Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in mee
 ```html
 <nav class="pagination" aria-label="Paginering">
   <ul>
-    <li><a href="#" aria-label="Ga naar pagina 1" aria-current="true">1</a></li>
+    <li><a href="#" aria-label="Ga naar pagina 1" aria-current="page">1</a></li>
     <li><a href="#" aria-label="Ga naar pagina 2">2</a></li>
     <li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
     <li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
@@ -55,7 +55,7 @@ Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in mee
   <ul>
     <li><a href="#pagination-next-prev" aria-label="Ga naar pagina 1">1</a></li>
     <li>
-      <a href="#pagination-next-prev" aria-label="Ga naar pagina 2" aria-current="true">2</a>
+      <a href="#pagination-next-prev" aria-label="Ga naar pagina 2" aria-current="page">2</a>
     </li>
     <li><a href="#pagination-next-prev" aria-label="Ga naar pagina 3">3</a></li>
     <li><a href="#pagination-next-prev" aria-label="Ga naar pagina 4">4</a></li>
@@ -72,7 +72,7 @@ Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in mee
   <a href="#" aria-label="Ga naar de vorige pagina" class="adjacent previous">Vorige</a>
   <ul>
     <li><a href="#" aria-label="Ga naar pagina 1">1</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 2" aria-current="true">2</a></li>
+    <li><a href="#" aria-label="Ga naar pagina 2" aria-current="page">2</a></li>
     <li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
     <li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
     <li><a href="#" aria-label="Ga naar pagina 5">5</a></li>

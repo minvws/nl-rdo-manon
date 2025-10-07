@@ -48,7 +48,8 @@
     );
   }
 
-  &[aria-current] {
+  &[aria-current="page"],
+  &[aria-current="true"] {
     @extend %pagination-active-item-styling;
   }
 
