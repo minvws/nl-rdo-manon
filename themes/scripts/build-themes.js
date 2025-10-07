@@ -35,16 +35,18 @@ for (const themeDir of themeDirs) {
   // Create temporary SCSS file that imports the theme with custom settings
   const tempScss = `@use "${theme}" with (
     $font-path: "./fonts"
-  );`;
+  );
+
+  @use "./scripts/components";
+`;
 
   // Write to a temporary file
   const tempFile = path.join(tempOutFolder, `_temp_${theme}.scss`);
   fs.writeFileSync(tempFile, tempScss);
 
-  // Compile
   try {
+    // Compile the SCSS to CSS
     const result = sass.compile(tempFile, {
-      style: "compressed",
       loadPaths: [themesFolder, path.resolve("./node_modules")],
     });
     fs.writeFileSync(
@@ -52,6 +54,17 @@ for (const themeDir of themeDirs) {
       result.css
     );
     console.log(`   Compiled CSS: manon.${theme}.css`);
+
+    // And create a minified version
+    const minifiedResult = sass.compile(tempFile, {
+      loadPaths: [themesFolder, path.resolve("./node_modules")],
+      style: "compressed",
+    });
+    fs.writeFileSync(
+      path.join(themeOutFolder, `manon.${theme}.min.css`),
+      minifiedResult.css
+    );
+    console.log(`   Compiled Minified CSS: manon.${theme}.min.css`);
   } catch (error) {
     console.error(`   Error compiling theme ${theme}:`, error);
     continue;
