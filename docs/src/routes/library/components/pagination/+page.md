@@ -80,3 +80,7 @@ Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in mee
   <a href="#" aria-label="Ga naar de volgende pagina" class="adjacent next">Volgende</a>
 </nav>
 ```
+
+### Aandachtspunten
+
+Dit component gaat er vanuit dat de paginering gebruikt wordt om naar andere pagina's te navigeren. Daarom worden links ondersteund. Omdat de huidige pagina niet klikbaar hoeft te zijn worden ook spans ondersteund. Knoppen worden niet ondersteund omdat deze bedoeld zijn voor acties en niet voor navigatie tussen pagina's. Gebruik omwille van toegankelijkheid links in plaats van knoppen.

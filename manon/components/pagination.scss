@@ -95,6 +95,7 @@
 
     @if theme.$pagination-previous-icon-mask {
       display: inline-flex;
+
       &::before {
         mask-size: contain;
         content: "";
@@ -123,6 +124,7 @@
 
     @if theme.$pagination-next-icon-mask {
       display: inline-flex;
+
       &::before {
         mask-size: contain;
         content: "";
