@@ -1,6 +1,6 @@
 import { visit } from "unist-util-visit";
 
-const linkTagPattern = /<\s*a\s+([^>]*)>/g;
+const linkTagPattern = /<\s*a\b([^>]*)>/g;
 const hrefPattern = /href=["']([^"']+)["']/;
 
 /**
