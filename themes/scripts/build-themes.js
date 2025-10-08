@@ -120,11 +120,11 @@ for (const themeDir of themeDirs) {
 
 // Copy the ./dist/icore-lite files and rename them to dist/manon.css and dist/manon.min.css
 fs.copyFileSync(
-  path.resolve("./dist/icore-lite/manon.icore-lite.css"),
+  path.resolve("./dist/icore-open/manon.icore-open.css"),
   path.join(outFolder, "manon.css")
 );
 
 fs.copyFileSync(
-  path.resolve("./dist/icore-lite/manon.icore-lite.min.css"),
+  path.resolve("./dist/icore-open/manon.icore-open.min.css"),
   path.join(outFolder, "manon.min.css")
 );

@@ -3,7 +3,9 @@
 // font
 $font-size: 1rem;
 $font-size: 1rem;
-$font-family: "IBM Plex Sans", sans-serif;
+$font-family:
+  "IBM Plex Sans", system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+  Helvetica, Arial, "Helvetica Neue", sans-serif;
 $font-family-secondary: serif;
 
 // @use "base";
