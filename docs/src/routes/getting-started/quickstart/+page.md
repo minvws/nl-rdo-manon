@@ -13,11 +13,11 @@ geleverd in verschillende frameworks.
 ## Handmatige installatie
 
 [Download Manon](https://github.com/minvws/nl-rdo-manon/archive/refs/heads/main.zip)
-en link het `manon-themes/dist/icore-lite/manon.icore-lite.min.css` in de
-`<head>` van je HTML-bestand:
+en link het `manon-themes/dist/manon.min.css` in de `<head>` van je
+HTML-bestand:
 
 ```html
-<link rel="stylesheet" href="path/to/manon.icore-lite.min.css" />
+<link rel="stylesheet" href="path/to/manon.min.css" />
 ```
 
 ## Installatie via CDN
@@ -29,7 +29,7 @@ volgende regel toe aan de `<head>` van je HTML-bestand:
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@minvws/manon-themes/icore-lite/manon.icore-lite.min.css"
+  href="https://cdn.jsdelivr.net/npm/@minvws/manon-themes/manon.min.css"
 />
 ```
 
@@ -42,7 +42,7 @@ npm install @minvws/manon-themes
 Je kunt dan een thema van Manon importeren in je Sass-bestand:
 
 ```scss
-@use "@minvws/manon-themes/icore-lite";
+@use "@minvws/manon-themes/dist/manon";
 ```
 
 Lees meer informatie over de
