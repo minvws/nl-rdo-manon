@@ -26,10 +26,15 @@
     )
   );
 
-  span:first-of-type {
+  .notification-type {
+    align-items: center;
+    display: inline-flex;
+
     @include theming.apply-from-theme(
       (
-        font-weight: theme.$notification-span-font-weight,
+        font-weight: theme.$notification-type-font-weight,
+        order: theme.$notification-type-order,
+        gap: theme.$notification-type-gap,
       )
     );
   }
@@ -50,7 +55,6 @@ div {
   &.confirmation,
   &.system {
     &::before {
-      @include icon.icon;
       @include theming.apply-from-theme(
         (
           font-family: theme.$notification-icon-font-family,

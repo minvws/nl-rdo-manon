@@ -21,13 +21,14 @@ SCSS importeren:
 @use "@minvws/manon/notification-explanation";
 ```
 
-<h2 id="examples">Voorbeelden</h2>
-
 ### Voorbeeld: `div`
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Toelichting:</span>
+<div class="explanation">
   <h2>Lorem ipsum dolor sit</h2>
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Toelichting:
+  </span>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
     facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
@@ -43,31 +44,35 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
       consequat facilisis ac eu velit.
-      <a href="notification-explanation">Lorem ipsum</a> consectetur adipiscing elit.
+      <a href="notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
 </div>
 
 ```html
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Toelichting:</span>
+<div class="explanation">
   <h2>Lorem ipsum dolor sit</h2>
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Toelichting:
+  </span>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
-    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
-    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
-    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
+    Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam
+    efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac
+    bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget.
+    Mauris euismod a augue sit amet condimentum.
   </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-      facilisis ac eu velit.
-      <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+      consequat facilisis ac eu velit.
+      <a href="notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
@@ -76,48 +81,22 @@ SCSS importeren:
 
 ### Voorbeeld: `p`
 
-<p class="explanation" role="group" aria-label="Toelichting">
-  <span>Toelichting:</span> Lorem ipsum dolor sit.
+<p class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Toelichting:
+  </span>
+  Lorem ipsum dolor sit.
 </p>
 
 ```html
-<p class="explanation" role="group" aria-label="Toelichting">
-  <span>Toelichting:</span> Lorem ipsum dolor sit amet
+<p class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Toelichting:
+  </span>
+  Lorem ipsum dolor sit.
 </p>
-```
-
-### Voorbeeld: `input`
-
-<form action="" method="post">
-  <label for="input-explanation">Input</label>
-  <div>
-    <input
-      id="input-explanation"
-      class="explanation"
-      value="Lorem ipsum"
-      aria-describedby="input-explanation-message"
-    />
-    <p class="explanation" id="input-explanation-message">
-      <span>toelichting:</span> Lorem ipsum dolor sit amet
-    </p>
-  </div>
-</form>
-
-```html
-<form action="" method="post">
-  <label for="input-explanation">Input</label>
-  <div>
-    <input
-      id="input-explanation"
-      class="explanation"
-      value="Lorem ipsum"
-      aria-describedby="input-explanation-message"
-    />
-    <p class="explanation" id="input-explanation-message">
-      <span>toelichting:</span> Lorem ipsum dolor sit amet
-    </p>
-  </div>
-</form>
 ```
 
 ### Voorbeeld: `textarea`
@@ -129,14 +108,18 @@ SCSS importeren:
       id="voorbeeld-tekstveld-explanation"
       name="voorbeeld-tekstveld-explanation"
       class="explanation"
-      aria-describedby="voorbeeld-tekstveld-explanation-message"
-    ></textarea>
+      aria-describedby="voorbeeld-tekstveld-explanation-message">
+    </textarea>
     <p class="explanation" id="voorbeeld-tekstveld-explanation-message">
-      <span>toelichting:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-informative" aria-hidden="true"></span>
+        Toelichting:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 
-<button type="submit">Verzend</button>
+  <button type="submit">Verzend</button>
 
 </form>
 
@@ -148,14 +131,19 @@ SCSS importeren:
       id="voorbeeld-tekstveld-explanation"
       name="voorbeeld-tekstveld-explanation"
       class="explanation"
-      aria-describedby="voorbeeld-tekstveld-explanation-message"
-    ></textarea>
+      aria-describedby="voorbeeld-tekstveld-explanation-message">
+    </textarea>
     <p class="explanation" id="voorbeeld-tekstveld-explanation-message">
-      <span>toelichting:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-informative" aria-hidden="true"></span>
+        Toelichting:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 
   <button type="submit">Verzend</button>
+
 </form>
 ```
 
@@ -175,7 +163,11 @@ SCSS importeren:
       <option value="3">Optie 3</option>
     </select>
     <p class="explanation" id="select-explanation-message">
-      <span>toelichting:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-informative" aria-hidden="true"></span>
+        Toelichting:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
@@ -195,7 +187,11 @@ SCSS importeren:
       <option value="3">Optie 3</option>
     </select>
     <p class="explanation" id="select-explanation-message">
-      <span>toelichting:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-informative" aria-hidden="true"></span>
+        Toelichting:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
@@ -213,7 +209,11 @@ SCSS importeren:
       aria-describedby="datalist-explanation-message"
     />
     <p class="explanation" id="datalist-explanation-message">
-      <span>toelichting:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-informative" aria-hidden="true"></span>
+        Toelichting:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 
@@ -235,7 +235,11 @@ SCSS importeren:
       aria-describedby="datalist-explanation-message"
     />
     <p class="explanation" id="datalist-explanation-message">
-      <span>toelichting:</span> Lorem ipsum dolor sit amet
+     <span class="notification-type">
+        <span class="icon icon-informative" aria-hidden="true"></span>
+        Toelichting:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 
@@ -251,15 +255,16 @@ SCSS importeren:
 
 <form action="" method="post">
   <div aria-describedby="checkbox-explanation-message">
-    <input
-      type="checkbox"
-      id="checkbox-explanation"
-      name="standaard-checkbox"
-      class="explanation"
-    />
-    <label for="checkbox-explanation">Lorem ipsum dolor sit amet</label>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" />
+      <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
+    </div>
     <p class="explanation" id="checkbox-explanation-message">
-      <span>toelichting:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-informative" aria-hidden="true"></span>
+        Toelichting:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
@@ -267,15 +272,16 @@ SCSS importeren:
 ```html
 <form action="" method="post">
   <div aria-describedby="checkbox-explanation-message">
-    <input
-      type="checkbox"
-      id="checkbox-explanation"
-      name="standaard-checkbox"
-      class="explanation"
-    />
-    <label for="checkbox-explanation">Lorem ipsum dolor sit amet</label>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" />
+      <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
+    </div>
     <p class="explanation" id="checkbox-explanation-message">
-      <span>toelichting:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-informative" aria-hidden="true"></span>
+        Toelichting:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
@@ -285,16 +291,15 @@ SCSS importeren:
 
 <form action="" method="post">
   <div>
-    <input
-      type="radio"
-      id="radio-example-explanation"
-      name="standaard-radiobutton"
-      value="value"
-      class="explanation"
-    />
-    <label for="radio-example-explanation">Lorem ipsum dolor sit amet</label>
+    <div class="radio">
+      <input type="radio" id="radio-example-base" name="standaard-radio" />
+      <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
+    </div>
     <p class="explanation" id="radio-example-explanation-message">
-      <span>toelichting:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-informative" aria-hidden="true"></span>
+        Toelichting:
+      </span> Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
@@ -302,16 +307,16 @@ SCSS importeren:
 ```html
 <form action="" method="post">
   <div>
-    <input
-      type="radio"
-      id="radio-example-explanation"
-      name="standaard-radiobutton"
-      value="value"
-      class="explanation"
-    />
-    <label for="radio-example-explanation">Lorem ipsum dolor sit amet</label>
+    <div class="radio">
+      <input type="radio" id="radio-example-base" name="standaard-radio" />
+      <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
+    </div>
     <p class="explanation" id="radio-example-explanation-message">
-      <span>toelichting:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-informative" aria-hidden="true"></span>
+        Toelichting:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>

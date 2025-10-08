@@ -65,6 +65,14 @@ svg.icon {
   mask-image: theme.$icon-mask-download;
 }
 
+.icon-error {
+  mask-image: theme.$icon-mask-error;
+}
+
+.icon-filter {
+  mask-image: theme.$icon-mask-filter;
+}
+
 .icon-hamburger {
   mask-image: theme.$icon-mask-hamburger;
 }
@@ -75,6 +83,10 @@ svg.icon {
 
 .icon-home {
   mask-image: theme.$icon-mask-home;
+}
+
+.icon-informative {
+  mask-image: theme.$icon-mask-informative;
 }
 
 .icon-lock-closed {
@@ -107,6 +119,7 @@ svg.icon {
 
 .icon-sort {
   mask-image: theme.$icon-mask-sort;
+  mask-image: theme.$icon-mask-sort;
 }
 
 .icon-to-top {
@@ -119,4 +132,8 @@ svg.icon {
 
 .icon-user {
   mask-image: theme.$icon-mask-user;
+}
+
+.icon-warning {
+  mask-image: theme.$icon-mask-warning;
 }

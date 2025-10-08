@@ -58,6 +58,7 @@
           min-height: theme.$filter-button-min-height,
           margin-left: theme.$filter-button-margin-left,
           font-size: theme.$filter-button-font-size,
+          gap: theme.$filter-button-gap,
         )
       );
 

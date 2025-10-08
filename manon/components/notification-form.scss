@@ -18,7 +18,7 @@ form {
       )
     );
 
-    > span:first-of-type {
+    > .notification-type {
       @include theming.apply-from-theme(
         (
           font-weight: theme.$notification-form-span-font-weight,

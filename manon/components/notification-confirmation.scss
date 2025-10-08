@@ -24,9 +24,21 @@ div.confirmation {
         font-size: theme.$notification-confirmation-icon-font-size,
         padding-right: theme.$notification-confirmation-icon-padding-right,
         padding-left: theme.$notification-confirmation-icon-padding-left,
-        color: theme.$notification-confirmation-icon-text-color,
+        color: theme.$notification-confirmation-icon-color,
+        background-color: theme.$notification-confirmation-icon-color,
         margin-right: theme.$notification-confirmation-icon-margin-right,
         content: theme.$notification-confirmation-icon,
+      )
+    );
+  }
+
+  .icon {
+    color: inherit;
+
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$notification-confirmation-icon-color,
+        color: theme.$notification-confirmation-icon-color,
       )
     );
   }

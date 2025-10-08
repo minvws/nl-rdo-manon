@@ -25,9 +25,12 @@ SCSS importeren:
 
 ### Voorbeeld: `div`
 
-<div class="system" role="group" aria-label="Systeembericht">
-  <span>Systeembericht:</span>
+<div class="system">
   <h2>Lorem ipsum dolor sit</h2>
+  <span class="notification-type">
+    <span class="icon icon-warning" aria-hidden="true"></span>
+    Systeembericht:
+  </span>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
     facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
@@ -43,31 +46,35 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
       consequat facilisis ac eu velit.
-      <a href="notification-system-message">Lorem ipsum</a> consectetur adipiscing elit.
+      <a href="notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
 </div>
 
 ```html
-<div class="system" role="group" aria-label="Systeembericht">
-  <span>Systeembericht:</span>
+<div class="system">
   <h2>Lorem ipsum dolor sit</h2>
+  <span class="notification-type">
+    <span class="icon icon-warning" aria-hidden="true"></span>
+    Systeembericht:
+  </span>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
-    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
-    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
-    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
+    Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam
+    efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac
+    bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget.
+    Mauris euismod a augue sit amet condimentum.
   </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-      facilisis ac eu velit.
-      <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+      consequat facilisis ac eu velit.
+      <a href="notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
@@ -76,46 +83,22 @@ SCSS importeren:
 
 ### Voorbeeld: `p`
 
-<p class="system" role="group" aria-label="Systeembericht">
-  <span>Systeembericht:</span> Lorem ipsum dolor sit.
+<p class="system">
+  <span class="notification-type">
+    <span class="icon icon-warning" aria-hidden="true"></span>
+    Systeembericht:
+  </span>
+  Lorem ipsum dolor sit.
 </p>
 
 ```html
-<p class="system" role="group" aria-label="Systeembericht">
-  <span>Systeembericht:</span> Lorem ipsum dolor sit amet
+<p class="system">
+  <span class="notification-type">
+    <span class="icon icon-warning" aria-hidden="true"></span>
+    Systeembericht:
+  </span>
+  Lorem ipsum dolor sit.
 </p>
-```
-
-### Voorbeeld: `input`
-
-<form action="" method="post">
-  <label for="input-system">Input</label>
-  <div>
-    <input
-      id="input-system"
-      class="system"
-      value="Lorem ipsum"
-      aria-describedby="input-system-message"
-    />
-    <p class="system" id="input-system-message">
-      <span>systeembericht:</span> Lorem ipsum dolor sit amet
-    </p>
-  </div>
-</form>
-
-```html
-<form action="" method="post">
-  <label for="input-system">Input</label>
-  <div>
-    <input
-      id="input-system"
-      class="system"
-      value="Lorem ipsum"
-      aria-describedby="input-system-message"
-    />
-    <p class="system" id="input-system-message"><span>system:</span> Lorem ipsum dolor sit amet</p>
-  </div>
-</form>
 ```
 
 ### Voorbeeld: `textarea`
@@ -127,14 +110,18 @@ SCSS importeren:
       id="voorbeeld-tekstveld-system"
       name="voorbeeld-tekstveld-system"
       class="system"
-      aria-describedby="voorbeeld-tekstveld-system-message"
-    ></textarea>
+      aria-describedby="voorbeeld-tekstveld-system-message">
+    </textarea>
     <p class="system" id="voorbeeld-tekstveld-system-message">
-      <span>systeembericht:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-warning" aria-hidden="true"></span>
+        Systeembericht:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 
-<button type="submit">Verzend</button>
+  <button type="submit">Verzend</button>
 
 </form>
 
@@ -146,14 +133,19 @@ SCSS importeren:
       id="voorbeeld-tekstveld-system"
       name="voorbeeld-tekstveld-system"
       class="system"
-      aria-describedby="voorbeeld-tekstveld-system-message"
-    ></textarea>
+      aria-describedby="voorbeeld-tekstveld-system-message">
+    </textarea>
     <p class="system" id="voorbeeld-tekstveld-system-message">
-      <span>systeembericht:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-warning" aria-hidden="true"></span>
+        Systeembericht:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 
   <button type="submit">Verzend</button>
+
 </form>
 ```
 
@@ -173,7 +165,11 @@ SCSS importeren:
       <option value="3">Optie 3</option>
     </select>
     <p class="system" id="select-system-message">
-      <span>systeembericht:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-warning" aria-hidden="true"></span>
+        Systeembericht:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
@@ -192,7 +188,13 @@ SCSS importeren:
       <option value="2">Optie 2</option>
       <option value="3">Optie 3</option>
     </select>
-    <p class="system" id="select-system-message"><span>system:</span> Lorem ipsum dolor sit amet</p>
+    <p class="system" id="select-system-message">
+      <span class="notification-type">
+        <span class="icon icon-warning" aria-hidden="true"></span>
+        Systeembericht:
+      </span>
+      Lorem ipsum dolor sit amet
+    </p>
   </div>
 </form>
 ```
@@ -209,7 +211,11 @@ SCSS importeren:
       aria-describedby="datalist-system-message"
     />
     <p class="system" id="datalist-system-message">
-      <span>systeembericht:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-warning" aria-hidden="true"></span>
+        Systeembericht:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 
@@ -231,7 +237,11 @@ SCSS importeren:
       aria-describedby="datalist-system-message"
     />
     <p class="system" id="datalist-system-message">
-      <span>systeembericht:</span> Lorem ipsum dolor sit amet
+     <span class="notification-type">
+        <span class="icon icon-warning" aria-hidden="true"></span>
+        Systeembericht:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 
@@ -247,10 +257,16 @@ SCSS importeren:
 
 <form action="" method="post">
   <div aria-describedby="checkbox-system-message">
-    <input type="checkbox" id="checkbox-system" name="standaard-checkbox" class="system" />
-    <label for="checkbox-system">Lorem ipsum dolor sit amet</label>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" />
+      <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
+    </div>
     <p class="system" id="checkbox-system-message">
-      <span>systeembericht:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-warning" aria-hidden="true"></span>
+        Systeembericht:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
@@ -258,10 +274,16 @@ SCSS importeren:
 ```html
 <form action="" method="post">
   <div aria-describedby="checkbox-system-message">
-    <input type="checkbox" id="checkbox-system" name="standaard-checkbox" class="system" />
-    <label for="checkbox-system">Lorem ipsum dolor sit amet</label>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" />
+      <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
+    </div>
     <p class="system" id="checkbox-system-message">
-      <span>system:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-warning" aria-hidden="true"></span>
+        Systeembericht:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
@@ -271,16 +293,15 @@ SCSS importeren:
 
 <form action="" method="post">
   <div>
-    <input
-      type="radio"
-      id="radio-example-system"
-      name="standaard-radiobutton"
-      value="value"
-      class="system"
-    />
-    <label for="radio-example-system">Lorem ipsum dolor sit amet</label>
+    <div class="radio">
+      <input type="radio" id="radio-example-base" name="standaard-radio" />
+      <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
+    </div>
     <p class="system" id="radio-example-system-message">
-      <span>systeembericht:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-warning" aria-hidden="true"></span>
+        Systeembericht:
+      </span> Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
@@ -288,16 +309,16 @@ SCSS importeren:
 ```html
 <form action="" method="post">
   <div>
-    <input
-      type="radio"
-      id="radio-example-system"
-      name="standaard-radiobutton"
-      value="value"
-      class="system"
-    />
-    <label for="radio-example-system">Lorem ipsum dolor sit amet</label>
+    <div class="radio">
+      <input type="radio" id="radio-example-base" name="standaard-radio" />
+      <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
+    </div>
     <p class="system" id="radio-example-system-message">
-      <span>system:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-warning" aria-hidden="true"></span>
+        Systeembericht:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
