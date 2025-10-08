@@ -13,7 +13,11 @@ gebeurtenissen of acties binnen een applicatie. Ze kunnen worden gebruikt om
 feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.
 
 <p class="explanation">
-  <span>Tip:</span> Notificaties kunnen verborgen worden door de class hidden toe te voegen aan de notification.
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Tip:
+  </span>
+  Notificaties kunnen verborgen worden door de class hidden toe te voegen aan de notification.
 </p>
 
 <section id="available-types">

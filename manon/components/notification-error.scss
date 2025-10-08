@@ -30,4 +30,15 @@ div.error {
       )
     );
   }
+
+  .icon {
+    color: inherit;
+
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$notification-error-icon-color,
+        color: theme.$notification-error-icon-color,
+      )
+    );
+  }
 }

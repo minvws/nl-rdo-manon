@@ -28,4 +28,15 @@ div.warning {
       )
     );
   }
+
+  .icon {
+    color: inherit;
+
+    @include theming.apply-from-theme(
+      (
+        background-color: theme.$notification-warning-icon-color,
+        color: theme.$notification-warning-icon-color,
+      )
+    );
+  }
 }
