@@ -48,20 +48,13 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   button.setAttribute("aria-controls", collapsingElement.id);
   button.setAttribute("aria-expanded", "false");
   button.setAttribute("aria-haspopup", "menu");
+  button.setAttribute("aria-label", openLabel);
 
   // Visible button text
   const visibleLabel = document.createElement("span");
   visibleLabel.className = "button-text";
   visibleLabel.innerText = openLabel;
   button.appendChild(visibleLabel);
-
-  // Hidden label for screen readers
-  const hiddenLabel = document.createElement("span");
-  hiddenLabel.className = "visually-hidden";
-  hiddenLabel.innerText = openLabel;
-  ensureElementHasId(hiddenLabel);
-  button.appendChild(hiddenLabel);
-  button.setAttribute("aria-labelledby", hiddenLabel.id);
 
   // Create span for icons to add to button
   if (iconClasses.includes("icon")) { 
@@ -82,7 +75,7 @@ function createMenuButton(collapsibleElement, collapsingElement) {
 
     button.setAttribute("aria-expanded", String(newExpanded));
     visibleLabel.innerText = newExpanded ? closeLabel : openLabel;
-    hiddenLabel.innerText = newExpanded ? closeLabel : openLabel;
+    button.setAttribute("aria-label", newExpanded ? closeLabel : openLabel);
 
     collapsibleElement.classList.toggle("collapsed", !newExpanded);
   }
