@@ -36,13 +36,16 @@ volgende regel toe aan de `<head>` van je HTML-bestand:
 ## Installatie via npm
 
 ```console
-npm install @minvws/manon-themes
+npm install @minvws/manon @minvws/manon-themes
 ```
 
 Je kunt dan een thema van Manon importeren in je Sass-bestand:
 
 ```scss
-@use "@minvws/manon-themes/dist/manon";
+@use "@minvws/manon-themes/icore-open";
+
+// Je kunt hier ook specifieke componenten importeren indien nodig:
+// @use "@minvws/manon/p"
 ```
 
 Lees meer informatie over de
