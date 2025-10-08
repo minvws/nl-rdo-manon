@@ -78,8 +78,6 @@ Deze teksten gelden enkel als visuele weergave op de knop, voor screen-readers g
 Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal het component terugvallen op respectievelijk "Menu" en "Sluit menu".
 
 <div
-  data-button-open-label="Gedefinieerde open menu text"
-  data-button-close-label="Gedefinieerde sluit menu text"
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
@@ -96,11 +94,8 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 
 ```html
 <div
-  data-button-open-label="Gedefinieerde open menu text"
-  data-button-close-label="Gedefinieerde sluit menu text"
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
   class="collapsible"
 >
   <div class="collapsing-element">
@@ -118,7 +113,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -137,7 +131,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
   class="collapsible"
 >
   <div class="collapsing-element">
@@ -158,7 +151,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
   data-button-classes="ghost"
   class="collapsible">
 
@@ -175,7 +167,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
   data-button-classes="ghost"
   class="collapsible"
 >
@@ -194,8 +185,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
-  data-button-classes="icon icon-cat"
+  data-icon-classes="icon icon-chevron-down"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -211,8 +201,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
-  data-button-classes="icon icon-cat"
+  data-icon-classes="icon icon-chevron-down"
   class="collapsible"
 >
   <div class="collapsing-element">
@@ -230,7 +219,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -253,7 +241,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
   class="collapsible"
 >
   <div class="collapsing-element">
@@ -277,7 +264,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -305,7 +291,6 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
   class="collapsible"
 >
   <div class="collapsing-element">
