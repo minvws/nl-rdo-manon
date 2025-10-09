@@ -1,3 +1,25 @@
+/**
+ * This script builds the themes for the Manon design system.
+ *
+ * It performs the following steps:
+ * 1. Finds all themes by looking for `_index.scss` files in the subdirectories
+ *    of the `themes` folder.
+ * 2. For each theme, it checks for variants (e.g., different use of components)
+ *    in a `variants` subfolder. A variant is defined by the presence of a
+ *    `<variant-name>.scss` file. When `default.scss` is found, it is treated
+ *    as the default variant and does not get a special suffix in the output
+ *    filename.
+ * 3. If no variants are found, it creates a default version of the theme.
+ * 4. It compiles each theme's SCSS into both regular and minified CSS using
+ *    the `sass` library.
+ * 5. It copies any font files associated with a theme to the `dist` folder.
+ * 6. The final CSS and font files are placed in a `dist` folder, organized by
+ *    theme.
+ * 7. As a final step, it copies the `icore-open` theme's CSS files to the root
+ *    of the `dist` folder as `manon.css` and `manon.min.css`, making it the
+ *    default theme.
+ */
+
 import { globSync } from "glob";
 import path from "path";
 import fs from "fs";
@@ -118,7 +140,8 @@ for (const themeDir of themeDirs) {
   fs.rmSync(path.join(tempOutFolder, `_temp_${theme}.scss`));
 }
 
-// Copy the ./dist/icore-lite files and rename them to dist/manon.css and dist/manon.min.css
+// Copy the ./dist/icore-open/ files and rename them to dist/manon.css and
+// dist/manon.min.css
 fs.copyFileSync(
   path.resolve("./dist/icore-open/manon.icore-open.css"),
   path.join(outFolder, "manon.css")
