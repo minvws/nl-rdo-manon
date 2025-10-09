@@ -4,6 +4,7 @@
   "type": "module",
   "license": "EUPL-1.2",
   "files": [
+    "**/*.css",
     "**/*.scss",
     "**/*.ico",
     "**/*.png",

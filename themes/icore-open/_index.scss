@@ -101,11 +101,7 @@ and spacing sets */
 
   //base
   $base-background-color: semantic.$base-background-color,
-  $base-font-family: (
-    "IBM Plex Sans",
-    "Helvetica",
-    sans-serif,
-  ),
+  $base-font-family: semantic.$font-family,
   $base-font-size: 1rem,
   $base-font-weight: 300,
 

@@ -61,29 +61,53 @@ gewenste stijl te bereiken.
 
 ## 🚀 Aan de slag
 
-Om Manon in je project te gebruiken:
+### Handmatige installatie
 
-1.  Zorg ervoor dat je project is ingesteld om Sass te gebruiken en dat je een
-    Sass-compiler hebt geïnstalleerd. Als je build-systeem geen Sass
-    ondersteunt, kun je
-    [de Sass command-line tool](https://sass-lang.com/documentation/cli/dart-sass/)
-    installeren.
+[Download Manon](https://github.com/minvws/nl-rdo-manon/archive/refs/heads/main.zip)
+en link het `manon-themes/dist/manon.min.css` in de `<head>` van je
+HTML-bestand:
 
-2.  Installeer Manon en Manon Themes via npm:
+```html
+<link rel="stylesheet" href="path/to/manon.min.css" />
+```
 
-    ```bash
-    npm install @minvws/manon @minvws/manon-themes
-    ```
+### Installatie via CDN
 
-3.  Importeer in je project het Manon framework met een thema naar keuze.
+Je kunt ook een thema van Manon gebruiken via
+[jsDelivr CDN](https://cdn.jsdelivr.net/npm/@minvws/manon-themes/). Voeg de
+volgende regel toe aan de `<head>` van je HTML-bestand:
 
-    ```scss
-    // Importeer het iCore Open thema
-    @use "@minvws/manon-themes/icore-open";
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@minvws/manon-themes/dist/manon.min.css"
+/>
+```
 
-    // Je kunt hier ook specifieke componenten importeren indien nodig:
-    // @use "@minvws/manon/p"
-    ```
+### Installatie via npm
+
+```console
+npm install @minvws/manon @minvws/manon-themes
+```
+
+Je kunt dan een thema van Manon importeren in je Sass-bestand:
+
+```scss
+@use "@minvws/manon-themes/icore-open";
+```
+
+Je hebt dan de mogelijkheid om specifieke componenten te importeren indien je
+niet de volledige set nodig hebt:
+
+```scss
+@use "@minvws/manon/components/hero";
+```
+
+Lees meer informatie in de
+[installatie documentatie](https://minvws.github.io/nl-rdo-manon/getting-started/installation)
+over het gebruik van Manon met Sass in je project voor meer maatwerkopties.
+
+### Klaar om te gebruiken
 
 Je bent nu klaar om de componenten in je HTML te gebruiken. Volg de instructies
 in de [Componentenbibliotheek](https://minvws.github.io/nl-rdo-manon/components)
