@@ -16,10 +16,10 @@ integreren in hun projecten.
   </p>
 </section>
 
-<section id="customization">
+<section id="installation">
   <h2>Maakwerkopties</h2>
   <p>
-    Bekijk de <a href="/getting-started/customization">maatwerkopties</a>
+    Bekijk de <a href="/getting-started/installation">installatiegids</a>
     voor een gedetailleerde uitleg over de installatie, configuratie en
     integratie van Manon in je project. Deze gids behandelt alle benodigde
     stappen om Manon correct te installeren en te configureren. Dit omvat

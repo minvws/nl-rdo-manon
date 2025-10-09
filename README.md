@@ -94,13 +94,18 @@ Je kunt dan een thema van Manon importeren in je Sass-bestand:
 
 ```scss
 @use "@minvws/manon-themes/icore-open";
-
-// Je kunt hier ook specifieke componenten importeren indien nodig:
-// @use "@minvws/manon/p"
 ```
 
-Lees meer informatie over de
-[maatwerkopties met Sass](https://minvws.github.io/nl-rdo-manon/getting-started/customization).
+Je hebt dan de mogelijkheid om specifieke componenten te importeren indien je
+niet de volledige set nodig hebt:
+
+```scss
+@use "@minvws/manon/p";
+```
+
+Lees meer informatie in de
+[installatie documentatie](https://minvws.github.io/nl-rdo-manon/getting-started/installation)
+over het gebruik van Manon met Sass in je project voor meer maatwerkopties.
 
 ### Klaar om te gebruiken
 
