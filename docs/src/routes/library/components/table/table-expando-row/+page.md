@@ -58,7 +58,7 @@ import "@minvws/manon/js/expando-rows.js";
       `button` daarnaast een `data-close-label=""` met de bijbehorende tekst
       voor het dichtklappen van de rij. Bijvoorbeeld: "Sluit details".
     - **HTML-voorbeeld:**
-      `  <button class="expando-button" data-close-label="Sluit details"   data-icon-open-class="icon icon-descending" data-icon-close-class="icon   icon-ascending" type="button"> Open details </button>`
+      `  <button class="expando-button" data-close-label="Sluit details"   data-icon-open-class="icon icon-chevron-down" data-icon-close-class="icon   icon-chevron-up" type="button"> Open details </button>`
 7.  Open/sluit-icoon toevoegen:
     - Voeg de gewenste icoon-classes toe via het HTML-attribuut
       `data-icon-open-class=""` voor het open-icoon en
@@ -108,8 +108,8 @@ import "@minvws/manon/js/expando-rows.js";
           <button
             class="expando-button"
             data-close-label="Sluit details"
-            data-icon-open-class="icon icon-descending"
-            data-icon-close-class="icon icon-ascending"
+            data-icon-open-class="icon icon-chevron-down"
+            data-icon-close-class="icon icon-chevron-up"
             type="button"
           >
             Open details
@@ -132,8 +132,8 @@ import "@minvws/manon/js/expando-rows.js";
           <button
             class="expando-button"
             data-close-label="Sluit details"
-            data-icon-open-class="icon icon-descending"
-            data-icon-close-class="icon icon-ascending"
+            data-icon-open-class="icon icon-chevron-down"
+            data-icon-close-class="icon icon-chevron-up"
             type="button"
           >
             Open details
@@ -176,8 +176,8 @@ import "@minvws/manon/js/expando-rows.js";
           <button
             class="expando-button"
             data-close-label="Sluit details"
-            data-icon-open-class="icon icon-descending"
-            data-icon-close-class="icon icon-ascending"
+            data-icon-open-class="icon icon-chevron-down"
+            data-icon-close-class="icon icon-chevron-up"
             type="button"
           >
             Open details
@@ -200,8 +200,8 @@ import "@minvws/manon/js/expando-rows.js";
           <button
             class="expando-button"
             data-close-label="Sluit details"
-            data-icon-open-class="icon icon-descending"
-            data-icon-close-class="icon icon-ascending"
+            data-icon-open-class="icon icon-chevron-down"
+            data-icon-close-class="icon icon-chevron-up"
             type="button"
           >
             Open details
