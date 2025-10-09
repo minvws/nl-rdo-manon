@@ -27,7 +27,10 @@ Je kunt ook een thema van Manon gebruiken via
 volgende regel toe aan de `<head>` van je HTML-bestand:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@minvws/manon-themes/manon.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@minvws/manon-themes/manon.min.css"
+/>
 ```
 
 ## Installatie via npm
@@ -46,7 +49,7 @@ Je hebt dan de mogelijkheid om specifieke componenten te importeren indien je
 niet de volledige set nodig hebt:
 
 ```scss
-@use "@minvws/manon/p";
+@use "@minvws/manon/components/hero";
 ```
 
 Lees meer informatie in de

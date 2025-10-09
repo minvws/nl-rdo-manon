@@ -96,7 +96,7 @@ You also have the option to import specific components if you don’t need the
 full set:
 
 ```scss
-@use "@minvws/manon/p";
+@use "@minvws/manon/components/hero";
 ```
 
 Read more in the

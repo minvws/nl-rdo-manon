@@ -100,7 +100,7 @@ Je hebt dan de mogelijkheid om specifieke componenten te importeren indien je
 niet de volledige set nodig hebt:
 
 ```scss
-@use "@minvws/manon/p";
+@use "@minvws/manon/components/hero";
 ```
 
 Lees meer informatie in de
