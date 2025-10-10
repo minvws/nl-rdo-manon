@@ -2,41 +2,25 @@
 @use "../variables" as theme;
 @use "../functions/validators";
 
-.checkbox {
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
-  @include theming.apply-from-theme(
-    (
-      gap: theme.$checkbox-gap,
-      align-items: theme.$checkbox-align-items,
-    )
-  );
-
+@mixin checkbox-input {
   input[type="checkbox"] {
     padding: 0;
+    margin: 0;
     cursor: pointer;
-
-    @include theming.apply-from-theme(
-      (
-        width: theme.$checkbox-width,
-        min-width: theme.$checkbox-width,
-        height: theme.$checkbox-height,
-        min-height: theme.$checkbox-height,
-        accent-color: theme.$checkbox-accent-color,
-      )
-    );
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    width: theme.$checkbox-width;
+    height: theme.$checkbox-height;
+    accent-color: theme.$checkbox-accent-color;
 
     & + label {
-      @include theming.apply-from-theme(
-        (
-          width: theme.$checkbox-label-width,
-        )
-      );
-
+      font-weight: normal;
       cursor: pointer;
+      width: theme.$checkbox-label-width;
+
+      &:focus {
+        outline: 2px solid #339af0;
+      }
     }
 
     &:disabled {
@@ -47,41 +31,36 @@
       }
     }
   }
+}
+@mixin checkbox {
+  .checkbox {
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: theme.$checkbox-gap;
+    align-items: theme.$checkbox-align-items;
 
-  &.required {
-    flex-direction: column;
-    align-items: flex-start;
+    @include checkbox-input;
 
-    @include theming.apply-from-theme(
-      (
-        gap: theme.$checkbox-required-gap,
-        justify-content: theme.$radio-align-items,
-      )
-    );
+    &.required {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: theme.$checkbox-required-gap;
+      justify-content: theme.$radio-align-items;
 
-    > div {
-      padding: 0;
-      display: flex;
-      flex-direction: row;
-
-      @include theming.apply-from-theme(
-        (
-          gap: theme.$checkbox-gap,
-        )
-      );
+      > div {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        gap: theme.$checkbox-gap;
+      }
     }
-  }
 
-  + .nota-bene {
-    padding-bottom: 0;
-    margin-bottom: 0;
-
-    @if validators.args-not-null(theme.$checkbox-width, theme.$checkbox-gap) {
-      @include theming.apply-from-theme(
-        (
-          margin-left: calc(theme.$checkbox-width + theme.$checkbox-gap),
-        )
-      );
+    + .nota-bene {
+      padding: 0;
+      margin: 0;
     }
   }
 }

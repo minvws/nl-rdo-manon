@@ -1,6 +1,7 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
+@use "checkbox" as cb;
 
 $breakpoint-1: 24rem !default;
 $checkbox-input-width: null !default;
@@ -10,68 +11,7 @@ $checkbox-input-width: null !default;
 }
 
 form {
-  input[type="checkbox"] {
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
-
-    @include theming.apply-from-theme(
-      (
-        vertical-align: theme.$form-checkbox-vertical-align,
-        cursor: theme.$form-checkbox-cursor,
-        width: theme.$form-checkbox-width,
-        min-width: theme.$form-checkbox-width,
-        height: theme.$form-checkbox-height,
-        accent-color: theme.$form-checkbox-background-color,
-      )
-    );
-
-    & + label {
-      width: auto;
-      cursor: pointer;
-      margin-top: 0;
-    }
-
-    &:disabled {
-      cursor: not-allowed;
-    }
-  }
-
-  .checkbox {
-    > div {
-      padding: 0;
-      display: flex;
-      flex-direction: row;
-
-      @include theming.apply-from-theme(
-        (
-          gap: theme.$checkbox-gap,
-          align-items: theme.$checkbox-align-items,
-        )
-      );
-    }
-
-    p.error,
-    p.warning,
-    p.confirmation,
-    p.explanation,
-    p.primary {
-      margin: 0;
-    }
-
-    @media (width >= $breakpoint-1) {
-      + p.error,
-      + p.warning,
-      + p.confirmation,
-      + p.explanation,
-      + p.primary {
-        @if $checkbox-input-width {
-          margin-left: $checkbox-input-width;
-          max-width: calc(100% - #{$checkbox-input-width});
-        }
-      }
-    }
-  }
+  @include cb.checkbox;
 
   @media (width >= $breakpoint-1) {
     .option-group {
