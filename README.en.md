@@ -58,29 +58,52 @@ style.
 
 ## 🚀 Getting Started
 
-To use Manon in your project:
+### Manual installation
 
-1.  Make sure your project is set up to use Sass, and that you have a Sass
-    compiler installed. If your build system does not support Sass, you can
-    install
-    [the Sass command line tool](https://sass-lang.com/documentation/cli/dart-sass/).
+[Download Manon](https://github.com/minvws/nl-rdo-manon/archive/refs/heads/main.zip)
+and link `manon-themes/dist/manon.min.css` in the `<head>` of your HTML file:
 
-2.  Install Manon and Manon Themes via npm:
+```html
+<link rel="stylesheet" href="path/to/manon.min.css" />
+```
 
-    ```bash
-    npm install @minvws/manon
-    npm install @minvws/manon-themes
-    ```
+### Installation via CDN
 
-3.  In your project import the Manon framework, with a theme of your choice.
+You can also use a Manon theme via the
+[jsDelivr CDN](https://cdn.jsdelivr.net/npm/@minvws/manon-themes/). Add the
+following line to the `<head>` of your HTML file:
 
-    ```scss
-    // Import the iCore Open theme
-    @use "@minvws/manon-themes/icore-open";
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@minvws/manon-themes/dist/manon.min.css"
+/>
+```
 
-    // You can also import specific components as needed here:
-    // @use "@minvws/manon/p"
-    ```
+### Installation via npm
+
+```console
+npm install @minvws/manon @minvws/manon-themes
+```
+
+You can then import a Manon theme in your Sass file:
+
+```scss
+@use "@minvws/manon-themes/icore-open";
+```
+
+You also have the option to import specific components if you don’t need the
+full set:
+
+```scss
+@use "@minvws/manon/components/hero";
+```
+
+Read more in the
+[installation documentation](https://minvws.github.io/nl-rdo-manon/getting-started/customization)
+about using Manon with Sass in your project for more customization options.
+
+### Ready to use
 
 You're now ready to use the components in your HTML. Follow the instructions in
 the [Component library](https://minvws.github.io/nl-rdo-manon/components) on how
