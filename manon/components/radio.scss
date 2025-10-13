@@ -103,9 +103,7 @@ $breakpoint-1: 24rem !default;
 }
 
 form {
-  div {
-    @include radio;
-  }
+  @include radio;
 
   .option-group {
     .radio {
