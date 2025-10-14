@@ -19,8 +19,8 @@
     border-radius: theme.$form-combined-field-button-border-radius;
     border-width: theme.$form-combined-field-input-border-width;
     border-color: theme.$form-button-background-color;
-    padding: 0;
-    min-width: 48px;
+    padding: 0 1rem 0 1rem;
+    min-width: fit-content;
     justify-content: center;
 
     span.icon {
