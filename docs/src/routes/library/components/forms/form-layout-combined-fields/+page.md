@@ -28,7 +28,7 @@ weergegeven.
     <label for="voorbeeld-1-date-1-start">Ipsum</label>
     <div class="combined-field">
       <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" type="text" />
-      <button><span class="icon icon-search"></span>Search</button>
+      <button><span class="icon icon-search"></span></button>
     </div>
   </div>
   <button type="submit">Verzend</button>
@@ -40,7 +40,7 @@ weergegeven.
     <label for="voorbeeld-1-date-1-start">Ipsum</label>
     <div class="combined-field">
       <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" type="text" />
-      <button><span class="icon icon-search"></span>Search</button>
+      <button><span class="icon icon-search"></span></button>
     </div>
   </div>
   <button type="submit">Verzend</button>
