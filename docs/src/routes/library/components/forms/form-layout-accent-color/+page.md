@@ -18,7 +18,11 @@ Voor het toevoegen van een accentknop op formulier-elementen zoals checkboxes, r
 ```
 
 <p class="warning" role="group" aria-label="waarschuwing">
-  <span>Waarschuwing:</span> Dit element maakt gebruik van een nieuw CSS component. Moderne
+  <span class="notification-type">
+    <span class="icon icon-warning" aria-hidden="true"></span>
+    Waarschuwing
+  </span>
+  Dit element maakt gebruik van een nieuw CSS component. Moderne
   browsers geven aan dit element te ondersteunen. Het kan zijn dat de weergave in oude
   browsers anders zal zijn. Voor meer informatie zie:
   <a href="https://caniuse.com/?search=accent-color" rel="external">caniuse.com</a>.
@@ -29,16 +33,16 @@ Voor het toevoegen van een accentknop op formulier-elementen zoals checkboxes, r
 ### Voorbeeld: Selectievak - `checkbox`
 
 <form action="" method="post">
-  <div>
-    <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" checked />
+  <div class="checkbox">
+    <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" />
     <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
   </div>
 </form>
 
 ```html
 <form action="" method="post">
-  <div>
-    <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" checked />
+  <div class="checkbox">
+    <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" />
     <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
   </div>
 </form>
@@ -47,7 +51,7 @@ Voor het toevoegen van een accentknop op formulier-elementen zoals checkboxes, r
 ### Voorbeeld: Radioselectieknop - `radio`
 
 <form action="" method="post">
-  <div>
+  <div class="radio">
     <input type="radio" id="radio-example-base" name="standaard-radio" checked />
     <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
   </div>
@@ -55,7 +59,7 @@ Voor het toevoegen van een accentknop op formulier-elementen zoals checkboxes, r
 
 ```html
 <form action="" method="post">
-  <div>
+  <div class="radio">
     <input type="radio" id="radio-example-base" name="standaard-radio" checked />
     <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
   </div>

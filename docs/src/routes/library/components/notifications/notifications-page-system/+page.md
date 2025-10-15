@@ -3,9 +3,12 @@ title: Pagina-notificatie systeembericht voorbeeld
 breadcrumb: Pagina-notificatie systeembericht voorbeeld
 ---
 
-<section class="system" role="group" aria-label="systeembericht">
+<section class="system">
   <div>
-    <span>Systeembericht:</span>
+    <span class="notification-type">
+      <span class="icon icon-warning" aria-hidden="true"></span>
+      Systeembericht
+    </span>
     <p>Lorem ipsum dolor sit amet.</p>
   </div>
 </section>
@@ -25,8 +28,12 @@ Voor het voorbeeld zie bovenaan deze pagina.
 #### `section`
 
 ```html
-<p class="system" role="group" aria-label="systeembericht">
-  <span>Systeembericht:</span> Lorem ipsum dolor sit.
+<p class="system">
+  <span class="notification-type">
+    <span class="icon icon-warning" aria-hidden="true"></span>
+    Systeembericht
+  </span>
+  Lorem ipsum dolor sit.
 </p>
 ```
 

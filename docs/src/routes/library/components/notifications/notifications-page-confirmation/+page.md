@@ -3,9 +3,12 @@ title: Pagina-notificatie bevestiging voorbeeld
 breadcrumb: Pagina-notificatie bevestiging voorbeeld
 ---
 
-<section class="confirmation" role="group" aria-label="bevestiging">
+<section class="confirmation">
   <div>
-    <span>Bevestiging:</span>
+    <span class="notification-type">
+      <span class="icon icon-check" aria-hidden="true"></span>
+      Bevestiging
+    </span>
     <p>Lorem ipsum dolor sit amet.</p>
   </div>
 </section>
@@ -25,8 +28,13 @@ Voor het voorbeeld zie bovenaan deze pagina.
 #### `section`
 
 ```html
-<p class="confirmation" role="group" aria-label="bevestiging">
-  <span>Bevestiging:</span> Lorem ipsum dolor sit.
+<p class="confirmation">
+  <span class="notification-type">
+    <span class="icon icon-check" aria-hidden="true"></span>
+    Bevestiging
+  </span>
+  
+  Lorem ipsum dolor sit.
 </p>
 ```
 

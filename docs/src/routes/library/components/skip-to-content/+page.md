@@ -64,8 +64,11 @@ Voeg aan het naar toe te springen element de corresponderende `id` toe.
 </main>
 ```
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Toelichting:</span>
+<div class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Toelichting
+  </span>
   <p>
     De <strong>"Ga direct naar inhoud"-knop</strong> is standaard verborgen
     voor visuele gebruikers, maar wordt zichtbaar wanneer deze focus krijgt
