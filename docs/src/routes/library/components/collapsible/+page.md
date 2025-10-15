@@ -46,11 +46,11 @@ import "@minvws/manon/collapsible";
 ```html
 <div class="collapsible">
   <div class="collapsing-element">
-      <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
-      </ul>
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Huidige selectie</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
   </div>
 </div>
 ```
@@ -71,19 +71,21 @@ data-close-label="Sluit gedefinieerde menu label">
 </div>
 
 ```html
-<div class="collapsible" 
-data-open-label="Gedefinieerde menu label" 
-data-close-label="Sluit gedefinieerde menu label">
-
+<div
+  class="collapsible"
+  data-open-label="Gedefinieerde menu label"
+  data-close-label="Sluit gedefinieerde menu label"
+>
   <div class="collapsing-element">
-      <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
-      </ul>
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Huidige selectie</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
   </div>
 </div>
 ```
+
 ### Voorbeeld: Inklapbare icoonknop
 
 <div
@@ -140,14 +142,14 @@ data-close-label="Sluit gedefinieerde menu label">
   data-open-label="Profiel"
   data-close-label="Sluit profiel"
   data-icon-classes="icon icon-user left"
-  class="collapsible">
-
+  class="collapsible"
+>
   <div class="collapsing-element">
-      <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
-      </ul>
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Huidige selectie</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
   </div>
 </div>
 ```
@@ -241,11 +243,7 @@ data-close-label="Sluit gedefinieerde menu label">
 </div>
 
 ```html
-<div
-  data-open-label="Dropdown menu"
-  data-close-label="Sluit dropdown menu"
-  class="collapsible"
->
+<div data-open-label="Dropdown menu" data-close-label="Sluit dropdown menu" class="collapsible">
   <div class="collapsing-element">
     <form>
       <fieldset>
@@ -258,8 +256,6 @@ data-close-label="Sluit gedefinieerde menu label">
   </div>
 </div>
 ```
-
-
 
 ### Voorbeeld: Inklapbaar component met meerdere menu's
 
@@ -285,11 +281,7 @@ data-close-label="Sluit gedefinieerde menu label">
 </div>
 
 ```html
-<div
-  data-open-label="Dropdown menu"
-  data-close-label="Sluit dropdown menu"
-  class="collapsible"
->
+<div data-open-label="Dropdown menu" data-close-label="Sluit dropdown menu" class="collapsible">
   <div class="collapsing-element">
     <ul>
       <li><a href="#">Item 1</a></li>
@@ -335,11 +327,7 @@ data-close-label="Sluit gedefinieerde menu label">
 </div>
 
 ```html
-<div
-  data-open-label="Dropdown menu"
-  data-close-label="Sluit dropdown menu"
-  class="collapsible"
->
+<div data-open-label="Dropdown menu" data-close-label="Sluit dropdown menu" class="collapsible">
   <div class="collapsing-element">
     <ul role="listbox">
       <li role="option" aria-selected="false">
