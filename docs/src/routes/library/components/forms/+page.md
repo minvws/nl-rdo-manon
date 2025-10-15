@@ -77,7 +77,7 @@ gebruikers.</p>
             <li>
               <a href="/library/components/forms/form-input-color">Kleurselector</a>
             </li>
-           
+
         <li>
           <a href="/library/components/forms/form-notification">Notificatie</a>
         </li>
