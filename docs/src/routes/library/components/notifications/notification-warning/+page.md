@@ -61,19 +61,18 @@ SCSS importeren:
   </span>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
-    Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam
-    efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac
-    bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget.
-    Mauris euismod a augue sit amet condimentum.
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
+    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
+    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
+    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
   </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
-      consequat facilisis ac eu velit.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+      facilisis ac eu velit.
       <a href="notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
@@ -121,7 +120,7 @@ SCSS importeren:
     </p>
   </div>
 
-  <button type="submit">Verzend</button>
+<button type="submit">Verzend</button>
 
 </form>
 
@@ -133,7 +132,8 @@ SCSS importeren:
       id="voorbeeld-tekstveld-warning"
       name="voorbeeld-tekstveld-warning"
       class="warning"
-      aria-describedby="voorbeeld-tekstveld-warning-message">
+      aria-describedby="voorbeeld-tekstveld-warning-message"
+    >
     </textarea>
     <p class="warning" id="voorbeeld-tekstveld-warning-message">
       <span class="notification-type">
@@ -145,7 +145,6 @@ SCSS importeren:
   </div>
 
   <button type="submit">Verzend</button>
-
 </form>
 ```
 
@@ -237,7 +236,7 @@ SCSS importeren:
       aria-describedby="datalist-warning-message"
     />
     <p class="warning" id="datalist-warning-message">
-     <span class="notification-type">
+      <span class="notification-type">
         <span class="icon icon-warning" aria-hidden="true"></span>
         Waarschuwing:
       </span>

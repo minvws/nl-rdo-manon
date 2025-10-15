@@ -99,7 +99,9 @@ SCSS importeren:
 ```html
 <div class="horizontal-scroll">
   <table>
-    <caption>Voorbeeldtabel met medische middelen: </caption>
+    <caption>
+      Voorbeeldtabel met medische middelen:
+    </caption>
     <thead>
       <tr>
         <th scope="col">Middel</th>
@@ -109,7 +111,7 @@ SCSS importeren:
     <tbody>
       <tr>
         <td>Alcohol wipes</td>
-        <td class="warning"> 
+        <td class="warning">
           <div>
             <span class="notification-type">
               <span class="icon icon-warning" aria-hidden="true"></span>
@@ -120,7 +122,7 @@ SCSS importeren:
         </td>
       </tr>
       <tr>
-        <td >Steriele gaasjes</td>
+        <td>Steriele gaasjes</td>
         <td class="error">
           <div>
             <span class="notification-type">
@@ -155,7 +157,7 @@ SCSS importeren:
           </div>
         </td>
       </tr>
-       <tr>
+      <tr>
         <td>Wegwerphandschoenen</td>
         <td class="system">
           <div>
