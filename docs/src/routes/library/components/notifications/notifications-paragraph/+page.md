@@ -22,12 +22,20 @@ SCSS importeren:
 
 <h2 id="examples">Voorbeelden</h2>
 
-<p class="error" role="group" aria-label="foutmelding">
-  <span>Foutmelding:</span> Lorem <a href="notifications-paragraph">ipsum</a> dolor sit.
+<p class="error">
+  <span class="notification-type">
+    <span class="icon icon-error" aria-hidden="true"></span>
+    Foutmelding:
+  </span>
+  Lorem ipsum dolor sit.
 </p>
 
 ```html
-<p class="error" role="group" aria-label="foutmelding">
-  <span>Foutmelding:</span> Lorem ipsum dolor sit.
+<p class="error">
+  <span class="notification-type">
+    <span class="icon icon-error" aria-hidden="true"></span>
+    Foutmelding:
+  </span>
+  Lorem ipsum dolor sit.
 </p>
 ```

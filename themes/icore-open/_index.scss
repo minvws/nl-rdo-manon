@@ -480,11 +480,13 @@ and spacing sets */
   $notification-gap: spacing.$spacing-100,
   $notification-border-radius: border-radii.$border-radius-m,
   $notification-paragraph-gap: spacing.$spacing-050,
+  $notification-table-gap: spacing.$spacing-025,
 
   // notification type
   $notification-type-font-weight: bold,
   $notification-type-order: -1,
   $notification-type-gap: spacing.$spacing-025,
+  $notification-type-table-font-size: 0,
 
   // notification error
   $notification-error-background-color:
@@ -492,9 +494,6 @@ and spacing sets */
   $notification-error-text-color: semantic.$color-text-default,
   $notification-error-border-color:
     color-scheme.$color-notification-error-intense,
-  $notification-table-error-background-color:
-    color-scheme.$color-notification-error-subtle,
-  $notification-table-error-text-color: semantic.$color-text-default,
   $notification-error-icon-color: color-scheme.$color-notification-error-intense,
 
   // notification warning
@@ -503,9 +502,6 @@ and spacing sets */
   $notification-warning-text-color: semantic.$color-text-default,
   $notification-warning-border-color:
     color-scheme.$color-notification-warning-intense,
-  $notification-table-warning-background-color:
-    color-scheme.$color-notification-warning-subtle,
-  $notification-table-warning-text-color: semantic.$color-text-default,
   $notification-warning-icon-color:
     color-scheme.$color-notification-warning-intense,
 
@@ -515,9 +511,6 @@ and spacing sets */
   $notification-explanation-text-color: semantic.$color-text-default,
   $notification-explanation-border-color:
     color-scheme.$color-notification-explanation-intense,
-  $notification-table-explanation-background-color:
-    color-scheme.$color-notification-explanation-subtle,
-  $notification-table-explanation-text-color: semantic.$color-text-default,
   $notification-explanation-icon-color:
     color-scheme.$color-notification-explanation-intense,
 
@@ -527,9 +520,6 @@ and spacing sets */
   $notification-confirmation-text-color: semantic.$color-text-default,
   $notification-confirmation-border-color:
     color-scheme.$color-notification-confirmation-intense,
-  $notification-table-confirmation-background-color:
-    color-scheme.$color-notification-confirmation-subtle,
-  $notification-table-confirmation-text-color: semantic.$color-text-default,
   $notification-confirmation-icon-color:
     color-scheme.$color-notification-confirmation-intense,
 
@@ -539,9 +529,6 @@ and spacing sets */
   $notification-system-text-color: semantic.$color-text-default,
   $notification-system-border-color:
     color-scheme.$color-notification-system-intense,
-  $notification-table-system-background-color:
-    color-scheme.$color-notification-system-subtle,
-  $notification-table-system-text-color: semantic.$color-text-default,
   $notification-system-icon-color:
     color-scheme.$color-notification-system-intense,
 

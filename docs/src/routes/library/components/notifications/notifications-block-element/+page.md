@@ -24,9 +24,12 @@ SCSS importeren:
 
 ### Voorbeeld: `div`
 
-<div class="error" role="group" aria-label="foutmelding">
-  <span>Foutmelding:</span>
+<div class="error">
   <h2>Lorem ipsum dolor sit</h2>
+  <span class="notification-type">
+    <span class="icon icon-error" aria-hidden="true"></span>
+    Foutmelding:
+  </span>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
     facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
@@ -42,31 +45,35 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
       consequat facilisis ac eu velit.
-      <a href="/">Lorem ipsum</a> consectetur adipiscing elit.
+      <a href="notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
 </div>
 
 ```html
-<div class="error" role="group" aria-label="foutmelding">
-  <span>Foutmelding:</span>
+<div class="error">
   <h2>Lorem ipsum dolor sit</h2>
+  <span class="notification-type">
+    <span class="icon icon-error" aria-hidden="true"></span>
+    Foutmelding:
+  </span>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
-    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
-    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
-    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
+    Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam
+    efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac
+    bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget.
+    Mauris euismod a augue sit amet condimentum.
   </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-      facilisis ac eu velit.
-      <a href="/">Lorem ipsum</a> consectetur adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+      consequat facilisis ac eu velit.
+      <a href="notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
@@ -75,50 +82,56 @@ SCSS importeren:
 
 ### Voorbeeld: `section`
 
-<section class="error" role="group" aria-label="foutmelding">
-  <span>Foutmelding:</span>
+<section class="error">
   <h2>Lorem ipsum dolor sit</h2>
+  <span class="notification-type">
+    <span class="icon icon-error" aria-hidden="true"></span>
+    Foutmelding:
+  </span>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a
-    nisi consequat facilisis ac eu velit. Donec luctus metus a lacus dictum, a
-    porta ligula pellentesque. Phasellus ultricies purus id viverra ultrices.
-    Proin sagittis rhoncus tempor. Nam efficitur elit commodo elit feugiat
-    scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut
-    maximus volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a
-    augue sit amet condimentum.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
+    Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam
+    efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac
+    bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget.
+    Mauris euismod a augue sit amet condimentum.
   </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a
-      nisi consequat facilisis ac eu velit.
-      <a href="/">Lorem ipsum</a> consectetur adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+      consequat facilisis ac eu velit.
+      <a href="notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
 </section>
 
 ```html
-<section class="error" role="group" aria-label="foutmelding">
-  <span>Foutmelding:</span>
+<section class="error">
   <h2>Lorem ipsum dolor sit</h2>
+  <span class="notification-type">
+    <span class="icon icon-error" aria-hidden="true"></span>
+    Foutmelding:
+  </span>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
-    ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam efficitur elit commodo
-    elit feugiat scelerisque. Nullam consectetur felis mi, ac bibendum urna convallis a. Ut maximus
-    volutpat ligula, et accumsan ipsum varius eget. Mauris euismod a augue sit amet condimentum.
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
+    Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam
+    efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac
+    bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget.
+    Mauris euismod a augue sit amet condimentum.
   </p>
   <ul>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
     <li>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-      facilisis ac eu velit.
-      <a href="/">Lorem ipsum</a> consectetur adipiscing elit.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+      consequat facilisis ac eu velit.
+      <a href="notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
