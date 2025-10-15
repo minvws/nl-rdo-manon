@@ -2,6 +2,7 @@
   export { default as Code } from "$lib/Code.svelte";
   export { default as a } from "../components/A.svelte";
   export { default as iframe } from "../components/Iframe.svelte";
+  export { default as Snippet } from "$lib/Snippet.svelte";
 </script>
 
 <script lang="ts">
