@@ -26,7 +26,7 @@ SCSS importeren:
 Javascript importeren:
 
 ```javascript
-import "@minvws/manon/collapsible";
+import "@minvws/manon/js/collapsible.js";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
