@@ -47,7 +47,7 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
 
 #### CSS-voorbeeld:
 
-```css
-@use "@minvws/manon/notification";
-@use "@minvws/manon/notification-confirmation-page";
+```scss
+@use "@minvws/manon/colors/notification";
+@use "@minvws/manon/components/notification-confirmation-page";
 ```

@@ -19,17 +19,17 @@ SCSS importeren:
 
 ```scss
 /* Notification base component */
-@use "@minvws/manon/notification";
+@use "@minvws/manon/colors/notification";
 
 /* Notification types, import what is needed */
-@use "@minvws/manon/notification-block-element";
-@use "@minvws/manon/notification-paragraph";
-@use "@minvws/manon/notification-table";
-@use "@minvws/manon/notification-error";
-@use "@minvws/manon/notification-warning";
-@use "@minvws/manon/notification-explanation";
-@use "@minvws/manon/notification-confirmation";
-@use "@minvws/manon/notification-system-message";
+@use "@minvws/manon/components/notification-block-element";
+@use "@minvws/manon/components/notification-paragraph";
+@use "@minvws/manon/components/notification-table";
+@use "@minvws/manon/components/notification-error";
+@use "@minvws/manon/components/notification-warning";
+@use "@minvws/manon/components/notification-explanation";
+@use "@minvws/manon/components/notification-confirmation";
+@use "@minvws/manon/components/notification-system-message";
 ```
 
 <div class="explanation">
