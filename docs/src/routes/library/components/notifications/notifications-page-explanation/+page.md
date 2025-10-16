@@ -30,10 +30,10 @@ Voor het voorbeeld zie bovenaan deze pagina.
 ```html
 <p class="explanation">
   <span class="notification-type">
-      <span class="icon icon-informative" aria-hidden="true"></span>
-      Aandachtspunten
-    </span>
-    Lorem ipsum dolor sit.
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+  Lorem ipsum dolor sit.
 </p>
 ```
 

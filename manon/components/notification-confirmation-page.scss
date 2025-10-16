@@ -8,7 +8,7 @@
   @include theming.apply-from-theme(
     (
       background-color: theme.$notification-confirmation-page-background-color,
-      color: theme.$notification-confirmation-page-color,
+      color: theme.$notification-confirmation-page-text-color,
     )
   );
 

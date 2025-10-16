@@ -198,7 +198,7 @@ SCSS importeren:
 <form action="" method="post">
   <label for="input-warning">Input</label>
   <div>
-     <p class="warning" id="input-warning-message">
+    <p class="warning" id="input-warning-message">
       <span class="notification-type">
         <span class="icon icon-warning" aria-hidden="true"></span>
         Waarschuwing
@@ -244,7 +244,7 @@ SCSS importeren:
 <form action="" method="post">
   <label for="input-confirmation">Input</label>
   <div>
-     <p class="confirmation" id="input-confirmation-message">
+    <p class="confirmation" id="input-confirmation-message">
       <span class="notification-type">
         <span class="icon icon-check" aria-hidden="true"></span>
         Bevestiging
@@ -293,7 +293,7 @@ SCSS importeren:
     <p class="system" id="input-system-message">
       <span class="notification-type">
         <span class="icon icon-warning" aria-hidden="true"></span>
-          Systeembericht
+        Systeembericht
       </span>
       Lorem ipsum dolor sit amet
     </p>

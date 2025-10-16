@@ -12,13 +12,7 @@ Notificaties zijn korte berichten die gebruikers informeren over belangrijke
 gebeurtenissen of acties binnen een applicatie. Ze kunnen worden gebruikt om
 feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.
 
-<p class="explanation">
-  <span class="notification-type">
-    <span class="icon icon-informative" aria-hidden="true"></span>
-    Tip:
-  </span>
-  Notificaties kunnen verborgen worden door de class hidden toe te voegen aan de notification.
-</p>
+Notificaties kunnen verborgen worden door de class hidden toe te voegen aan de notification.
 
 <section id="available-types">
   <h2>Beschikbare weergaven</h2>
@@ -80,3 +74,7 @@ feedback te geven, waarschuwingen te tonen of bevestigingen te vragen.
 
   </div>
 </section>
+
+## Toegankelijkheid
+
+Voeg aria-live="polite" toe aan notificaties die dynamisch toegevoegd worden aan pagina's. Om screenreader gebruikers te attenderen dat er een notificatie is toegevoegd.

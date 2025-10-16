@@ -183,11 +183,12 @@ veelvoorkomende voorbeelden.</p>
 ## Aandachtspunten
 
 ### Knoppen uitschakelen
-Het uitschakelen van een knop “disable” wordt afgeraden vanuit zowel toegankelijkeid als gebruikerservaring. 
+
+Het uitschakelen van een knop “disable” wordt afgeraden vanuit zowel toegankelijkeid als gebruikerservaring.
 Het is beter om de knop functioneel te laten. Dan kan de gebruiker de knop gebruiken om erachter te komen wat er fout gaat.
 
 ### Span of Div
-Hoewel bijvoorbeeld een span en een div visueel vormgegeven kunnen worden als een knop, en met behulp van bijvoorbeeld 
+
+Hoewel bijvoorbeeld een span en een div visueel vormgegeven kunnen worden als een knop, en met behulp van bijvoorbeeld
 Javascript zich ook kunnen gedragen als een knop. Is het semantisch incorrect om deze html-elementen hiervoor te gebruiken.
 Gebruik in plaats hiervan een: button, a of input.
-

@@ -33,7 +33,7 @@ Voor het voorbeeld zie bovenaan deze pagina.
     <span class="icon icon-check" aria-hidden="true"></span>
     Bevestiging
   </span>
-  
+
   Lorem ipsum dolor sit.
 </p>
 ```
