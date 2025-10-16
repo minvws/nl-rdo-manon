@@ -29,7 +29,7 @@ Voor het toevoegen van een accentknop op formulier-elementen zoals checkboxes, r
 ### Voorbeeld: Selectievak - `checkbox`
 
 <form action="" method="post">
-  <div>
+  <div class="checkbox">
     <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" checked />
     <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
   </div>
@@ -47,7 +47,7 @@ Voor het toevoegen van een accentknop op formulier-elementen zoals checkboxes, r
 ### Voorbeeld: Radioselectieknop - `radio`
 
 <form action="" method="post">
-  <div>
+  <div class="radio">
     <input type="radio" id="radio-example-base" name="standaard-radio" checked />
     <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
   </div>
