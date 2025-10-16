@@ -75,4 +75,3 @@ Voeg aan het naar toe te springen element de corresponderende `id` toe.
   <!-- page content -->
 </main>
 ```
-
