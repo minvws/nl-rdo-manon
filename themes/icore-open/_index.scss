@@ -101,11 +101,7 @@ and spacing sets */
 
   //base
   $base-background-color: semantic.$base-background-color,
-  $base-font-family: (
-    "IBM Plex Sans",
-    "Helvetica",
-    sans-serif,
-  ),
+  $base-font-family: semantic.$font-family,
   $base-font-size: 1rem,
   $base-font-weight: 300,
 
@@ -276,7 +272,8 @@ and spacing sets */
 
   // focus
   $focus-outline: 2px solid,
-  $focus-outline-offset: spacing.$spacing-025,
+  // Set to negative value to prevent from being cut off
+  $focus-outline-offset: -2px,
   $focus-outline-color: color-scheme.$oc-blue-5,
   $focus-z-index: 1,
   $focus-border-radius: border-radii.$border-radius-s,
@@ -467,7 +464,7 @@ and spacing sets */
   // Navigation
   $navigation-list-gap: spacing.$spacing-050,
   $navigation-link-text-decoration: none,
-  $navigation-list-padding: 1rem,
+  $navigation-list-padding: 0,
   $navigation-list-item-list-style: none,
 
   // notification
@@ -561,6 +558,21 @@ and spacing sets */
   $pagination-link-active-text-color: semantic.$color-brand-primary-default,
   $pagination-link-active-font-weight: bold,
 
+  // Pagination adjecent
+  $pagination-adjacent-font-size: 0,
+
+  // Pagination previous icon
+  $pagination-previous-icon-color: semantic.$color-brand-primary-default,
+  $pagination-previous-icon-mask: icons.$chevron-left,
+  $pagination-previous-icon-width: 1.5rem,
+  $pagination-previous-icon-height: 1.5rem,
+
+  // Pagination next icon
+  $pagination-next-icon-color: semantic.$color-brand-primary-default,
+  $pagination-next-icon-mask: icons.$chevron-right,
+  $pagination-next-icon-width: 1.5rem,
+  $pagination-next-icon-height: 1.5rem,
+
   // page title
   $page-title-max-width: 60rem,
   $page-title-width: 100%,
@@ -626,6 +638,7 @@ and spacing sets */
   $tabs-item-current-border-width: 0 0 2px 0,
   $tabs-item-current-font-weight: bold,
   $tabs-item-hover-text-color: color-scheme.$oc-blue-9,
+
   // set to focus border-width
   $tabs-outline-offset: -2px,
 

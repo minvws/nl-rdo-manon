@@ -10,54 +10,48 @@ op een meer gestructureerde manier kunt gebruiken. Daarnaast hebben we
 [enkele voorbeeldimplementaties](https://github.com/minvws/nl-rdo-manon/tree/main/examples/)
 geleverd in verschillende frameworks.
 
-## Installeren met npm
+## Handmatige installatie
 
-Om het Manon Framework en de thema's te gebruiken, moet we ze eerst installeren.
-Dit kan gedaan worden met npm:
+[Download Manon](https://github.com/minvws/nl-rdo-manon/archive/refs/heads/main.zip)
+en link het `manon-themes/dist/manon.min.css` in de `<head>` van je
+HTML-bestand:
+
+```html
+<link rel="stylesheet" href="path/to/manon.min.css" />
+```
+
+## Installatie via CDN
+
+Je kunt ook een thema van Manon gebruiken via
+[jsDelivr CDN](https://cdn.jsdelivr.net/npm/@minvws/manon-themes/). Voeg de
+volgende regel toe aan de `<head>` van je HTML-bestand:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@minvws/manon-themes/manon.min.css" />
+```
+
+## Installatie via npm
 
 ```console
 npm install @minvws/manon @minvws/manon-themes
 ```
 
-## Vereisten
-
-Zorg er daarnaast voor dat je project is ingesteld om Sass te gebruiken en dat
-je een Sass-compiler hebt geïnstalleerd. Build-systemen zoals Webpack, Parcel of
-Vite ondersteunen meestal Sass out-of-the-box. Als je een van deze
-build-systemen gebruikt, hoef je mogelijk alleen de juiste loader of plugin te
-installeren.
-
-Als je build-systeem Sass niet ondersteunt, kun je
-[de Sass command-line-tool](https://sass-lang.com/documentation/cli/dart-sass/)
-installeren. Wanneer je de Sass command-line interface gebruikt om je bestanden
-te compileren, kan je het `load-path` definiëren om de Manon-pakketten te
-vinden. Dit kan gedaan worden met de `--load-path` optie:
-`sass --load-path node_modules/@minvws/manon` Dan kan je de componenten en
-thema's importeren zoals hieronder beschreven.
-
-## Importeren
-
-Wanneer de packages zijn geïnstalleerd, kun je beginnen met het importeren van
-de componenten en stijlen in je Sass-bestanden. Het Manon-framework biedt een
-basisset van componenten en stijlen die je kunt gebruiken, en de thema's bieden
-vooraf gedefinieerde stijlen die je kunt toepassen op de componenten. Je staat
-vrij om de componenten te importeren die je nodig hebt.
-
-Allereerst importeren we een thema. We raden aan om altijd een thema te
-importeren, omdat dit de basisstijlen en variabelen bevat die nodig zijn voor de
-componenten om correct te functioneren. Daarna kunnen we de benodigde
-componenten importeren.
-
-Voorbeeld van een SCSS-bestand (bijv. `main.scss`) dat de basiscomponenten en
-een thema importeert:
+Je kunt dan een thema van Manon importeren in je Sass-bestand:
 
 ```scss
-// 1. Import een thema naar keuze. Hier gebruiken we het iCore Open thema als voorbeeld.
 @use "@minvws/manon-themes/icore-open";
-
-// 2. Je kunt hier ook specifieke componenten importeren indien nodig:
-@use "@minvws/manon/components/button";
 ```
+
+Je hebt dan de mogelijkheid om specifieke componenten te importeren indien je
+niet de volledige set nodig hebt:
+
+```scss
+@use "@minvws/manon/components/hero";
+```
+
+Lees meer informatie in de
+[installatie documentatie](https://minvws.github.io/nl-rdo-manon/getting-started/installation)
+over het gebruik van Manon met Sass in je project voor meer maatwerkopties.
 
 ## Gebruik
 

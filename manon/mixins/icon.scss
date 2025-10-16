@@ -2,13 +2,11 @@
 @use "../variables" as theme;
 
 @mixin icon {
-  & {
-    position: static;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0;
-    font-style: normal;
-  }
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  font-style: normal;
 }

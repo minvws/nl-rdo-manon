@@ -34,7 +34,7 @@ Voor het toevoegen van een accentknop op formulier-elementen zoals checkboxes, r
 
 <form action="" method="post">
   <div class="checkbox">
-    <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" />
+    <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" checked />
     <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
   </div>
 </form>
