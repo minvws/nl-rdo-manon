@@ -16,28 +16,28 @@
   <SideMenu>
     <ul>
       <li><a href="#introduction">Introductie</a></li>
+      <li><a href="#quickstart">Snelstart</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
-      <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
   <article>
     <h1 class="page-title">Ronde afbeelding</h1>
     <div class="content-wrapper">
       <section id="introduction">
-        <h2>Benodigde stappen</h2>
-        <ol>
-          <li>
-            Voeg de class <code>image-round</code> toe aan het omliggende element waar de
-            <code>img</code> zich in bevindt of direct op het <code>img</code>-element.
-          </li>
-          <li>
-            Voeg de container voor de afbeelding toe. Voorbeeld:
-            <code>&lt;div class="image-container"&gt;</code>. Het toevoegen van de class-naam is in
-            dit geval optioneel en toegevoegd voor leesbaarheid van de html. Een omliggende
-            <code>div</code> is ook voldoende. De container is nodig om de afbeelding variabel naar ratio
-            te kunnen schalen.
-          </li>
-        </ol>
+        <h2 id="introduction">Introductie</h2>
+        <p>
+          De afbeelding vult tot de maximale beschikbare breedte en schaalt de hoogte in dezelfde
+          ratio. Dit betekent dat de afbeelding altijd rond blijft.
+        </p>
+
+        <h2 id="quickstart">Snelstart</h2>
+
+        <Code
+          language="scss"
+          code={`
+@use "@minvws/manon/components/image-round";
+          `}
+        />
       </section>
 
       <section id="examples">
@@ -48,9 +48,11 @@
           De afbeelding vult tot de maximale beschikbare breedte en schaalt de hoogte in dezelfde
           ratio. Dit betekent dat de afbeelding altijd rond blijft.
         </p>
-        <div class="image-round">
-          <div class="image-container">
-            <img src="$img/strand.jpg" alt="Foto van een strand" />
+        <div class="column-4">
+          <div class="image-round">
+            <div class="image-container">
+              <img src="$img/strand.jpg" alt="Foto van een strand" />
+            </div>
           </div>
         </div>
 
@@ -58,9 +60,11 @@
         <Code
           language="html"
           code={`
-<div class="image-round">
-  <div class="image-container">
-    <img src="/img/strand.jpg" alt="Foto van een strand">
+<div class="column-4">
+  <div class="image-round">
+    <div class="image-container">
+      <img src="$img/strand.jpg" alt="Foto van een strand" />
+    </div>
   </div>
 </div>
 `}
@@ -177,24 +181,6 @@
     </div>
   </li>
 </ul>
-`}
-        />
-      </section>
-
-      <section id="requirements">
-        <h2>Bijbehorende bestanden</h2>
-        <p>
-          Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/getting-started/installation"
-            >Componenten gebruiken en styling toevoegen</a
-          >
-        </p>
-        <h3>Importeer component via npm</h3>
-        <h4>CSS-voorbeeld:</h4>
-        <Code
-          language="css"
-          code={`
-@use "@minvws/manon/image-round";
 `}
         />
       </section>
