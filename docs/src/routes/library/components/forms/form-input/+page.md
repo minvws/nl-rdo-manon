@@ -56,22 +56,23 @@ SCSS importeren:
 </form>
 ```
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Aandachtspunten</span>
-  <ul>
-    <li>
-      Geef op de `input` aan dat het invoerveld verplicht is met het
-      `required` attribuut.
-    </li>
-    <li>
-      Voeg een span toe boven het invoerveld. Het is belangrijk om het bericht boven het
-      invoerveld te plaatsen zodat de volgorde ook klopt voor gebruikers die gebruik maken van
-      hulpmiddelen zoals een screenreader.
-    </li>
-    <li>
-      Groeppeer de `input` en de `span` samen in een `div` binnen horizontaal uitgelijnde formulieren.
-    </li>
-  </ul>
+<div class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+  <p>
+    Geef op de `input` aan dat het invoerveld verplicht is met het
+    `required` attribuut.
+  </p>
+  <p>
+    Voeg een span toe boven het invoerveld. Het is belangrijk om het bericht boven het
+    invoerveld te plaatsen zodat de volgorde ook klopt voor gebruikers die gebruik maken van
+    hulpmiddelen zoals een screenreader.
+  </p>
+  <p>
+    Groeppeer de `input` en de `span` samen in een `div` binnen horizontaal uitgelijnde formulieren.
+  </p>
 </div>
 
 ## Voorbeeld: Invoerveld uitgeschakeld
@@ -90,12 +91,11 @@ SCSS importeren:
 </form>
 ```
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Aandachtspunten</span>
-  <ul>
-    <li>
-      Geef op de `input` aan dat het invoerveld uitgeschakeld is met het
-      `disabled` attribuut.
-    </li>
-  </ul>
-</div>
+<p class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+  Geef op de `input` aan dat het invoerveld uitgeschakeld is met het
+  `disabled` attribuut.
+</p>

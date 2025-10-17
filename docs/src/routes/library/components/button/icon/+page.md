@@ -34,31 +34,35 @@ SCSS importeren:
      uiterlijk van een knop? Zie dan
      [Icoonknoppen zonder achtergrond](/library/components/button/button-icon-only).
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Aandachtspunten</span>
-  <ul>
-    <li>
-      Is het icoon <strong>decoratief</strong>? Verberg het dan voor
-      toegankelijkheids-hulpmiddelen door <code>aria-hidden="true"</code> aan
-      het icoon toe te voegen. Een icoon is decoratief wanneer het dezelfde
-      informatie overbrengt als de tekst van de knop. Bijvoorbeeld: een
-      "Help"-knop met een vraagteken-icoon.
-    </li>
-  </ul>
-  <ul>
-    <li>
-      Is het icoon <strong>informatief</strong>? Geef het dan in plaats van
-      <code>aria-hidden="true"</code> een <code>aria-label</code> dat dezelfde
-      informatie overbrengt als wat het icoon visueel communiceert. Een icoon
-      is informatief wanneer het visueel extra informatie overbrengt, die niet
-      ook al door de knoptekst overgebracht wordt. Bijvoorbeeld: een knop met
-      de tekst "Verplaats" en een pijl-icoon dat een richting aangeeft.
-    </li>
-  </ul>
+<div class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+  <p>
+    Is het icoon <strong>decoratief</strong>? Verberg het dan voor
+    toegankelijkheids-hulpmiddelen door <code>aria-hidden="true"</code> aan
+    het icoon toe te voegen. Een icoon is decoratief wanneer het dezelfde
+    informatie overbrengt als de tekst van de knop. Bijvoorbeeld: een
+    "Help"-knop met een vraagteken-icoon.
+  </p>
+
+  <p>
+    Is het icoon <strong>informatief</strong>? Geef het dan in plaats van
+    <code>aria-hidden="true"</code> een <code>aria-label</code> dat dezelfde
+    informatie overbrengt als wat het icoon visueel communiceert. Een icoon
+    is informatief wanneer het visueel extra informatie overbrengt, die niet
+    ook al door de knoptekst overgebracht wordt. Bijvoorbeeld: een knop met
+    de tekst "Verplaats" en een pijl-icoon dat een richting aangeeft.
+  </p>
 </div>
 
 <p class="warning">
-  <span>Let op</span> Een icoon op een knop zonder tekst is per definitie informatief. Zorg er daarom altijd voor dat de knop een toegankelijk naam heeft. Dit kan bijvoorbeeld middels een `aria-label` op het icoon of middels visueel verborgen tekst naast het icoon. Visueel verborgen tekst heeft de voorkeur, omdat die ook als visuele fallback kan dienen voor het icoon wanneer CSS en afbeeldingen niet geladen konden worden.
+  <span class="notification-type">
+    <span class="icon icon-warning" aria-hidden="true"></span>
+    Let op
+  </span>
+  Een icoon op een knop zonder tekst is per definitie informatief. Zorg er daarom altijd voor dat de knop een toegankelijk naam heeft. Dit kan bijvoorbeeld middels een `aria-label` op het icoon of middels visueel verborgen tekst naast het icoon. Visueel verborgen tekst heeft de voorkeur, omdat die ook als visuele fallback kan dienen voor het icoon wanneer CSS en afbeeldingen niet geladen konden worden.
 </p>
 
 <h2 id="examples">Voorbeelden</h2>

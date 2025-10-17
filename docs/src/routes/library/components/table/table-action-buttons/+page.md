@@ -29,25 +29,26 @@ SCSS importeren:
     er ook gebruik gemaakt worden van de class `action-buttons` direct op de
     `table`.
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Aandachtspunten</span>
-  <ul>
-    <li>
+<div class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+    <p>
       Omdat niet alle gebruikers weten wat een icoon betekent is het verstandig om
       een omschrijvende tekst in de header te plaatsen.
-    </li>
-    <li>
+    </p>
+    <p>
       Voor toegankelijkheid is het belangrijk om de tekst ook toe te voegen aan de
       knop ook al wordt deze visueel niet getoont. Screenreaders maken hier
       bijvoorbeeld gebruik van.
-    </li>
-    <li>
+    </p>
+    <p>
       Voor tabellen met lange lijsten kan het de gebruiker helpen om gebruik te
       maken van de tabel met sticky header zodat de toelichting van de iconen altijd
       in beeld blijft. Voor meer informatie zie:
       [tabel met sticky header](/components/table-sticky-header).
-    </li>
-  </ul>
+    </p>
 </div>
 
 <h2 id="examples">Voorbeelden</h2>

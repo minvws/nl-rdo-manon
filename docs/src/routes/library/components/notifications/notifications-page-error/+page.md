@@ -3,9 +3,12 @@ title: Pagina-notificatie foutmelding voorbeeld
 breadcrumb: Pagina-notificatie foutmelding voorbeeld
 ---
 
-<section class="error" role="group" aria-label="foutmelding">
+<section class="error">
   <div>
-    <span>Foutmelding:</span>
+    <span class="notification-type">
+      <span class="icon icon-error" aria-hidden="true"></span>
+      Foutmelding
+    </span>
     <p>Lorem ipsum dolor sit amet.</p>
   </div>
 </section>
@@ -25,8 +28,12 @@ Voor het voorbeeld zie bovenaan deze pagina.
 #### `section`
 
 ```html
-<p class="error" role="group" aria-label="foutmelding">
-  <span>Foutmelding:</span> Lorem ipsum dolor sit.
+<p class="error">
+  <span class="notification-type">
+    <span class="icon icon-error" aria-hidden="true"></span>
+    Foutmelding
+  </span>
+  Lorem ipsum dolor sit.
 </p>
 ```
 
@@ -39,8 +46,8 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
 
 #### CSS-voorbeeld:
 
-```css
-@use "@minvws/manon/notification";
-@use "@minvws/manon/notification-error-message";
-@use "@minvws/manon/notification-error-page";
+```scss
+@use "@minvws/manon/colors/notification";
+@use "@minvws/manon/components/notification-error";
+@use "@minvws/manon/components/notification-error-page";
 ```

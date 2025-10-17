@@ -6,13 +6,39 @@ table {
   td,
   th,
   tr {
+    align-items: center;
+
+    &.error,
+    &.warning,
+    &.explanation,
+    &.confirmation,
+    &.system {
+      & > div {
+        gap: theme.$notification-table-gap;
+        align-items: theme.$notification-table-align-items;
+      }
+
+      .notification-type {
+        font-size: theme.$notification-type-table-font-size;
+      }
+    }
+
     &.error {
       @include theming.apply-from-theme(
         (
           background-color: theme.$notification-table-error-background-color,
           color: theme.$notification-table-error-text-color,
+          box-shadow: theme.$notification-table-error-box-shadow,
         )
       );
+
+      .icon {
+        @include theming.apply-from-theme(
+          (
+            background-color: theme.$notification-error-icon-color,
+          )
+        );
+      }
     }
 
     &.warning {
@@ -20,8 +46,17 @@ table {
         (
           background-color: theme.$notification-table-warning-background-color,
           color: theme.$notification-table-warning-text-color,
+          box-shadow: theme.$notification-table-warning-box-shadow,
         )
       );
+
+      .icon {
+        @include theming.apply-from-theme(
+          (
+            background-color: theme.$notification-warning-icon-color,
+          )
+        );
+      }
     }
 
     &.confirmation {
@@ -30,8 +65,17 @@ table {
           background-color:
             theme.$notification-table-confirmation-background-color,
           color: theme.$notification-table-confirmation-text-color,
+          box-shadow: theme.$notification-table-confirmation-box-shadow,
         )
       );
+
+      .icon {
+        @include theming.apply-from-theme(
+          (
+            background-color: theme.$notification-confirmation-icon-color,
+          )
+        );
+      }
     }
 
     &.explanation {
@@ -40,8 +84,17 @@ table {
           background-color:
             theme.$notification-table-explanation-background-color,
           color: theme.$notification-table-explanation-text-color,
+          box-shadow: theme.$notification-table-explanation-box-shadow,
         )
       );
+
+      .icon {
+        @include theming.apply-from-theme(
+          (
+            background-color: theme.$notification-explanation-icon-color,
+          )
+        );
+      }
     }
 
     &.system {
@@ -49,8 +102,17 @@ table {
         (
           background-color: theme.$notification-table-system-background-color,
           color: theme.$notification-table-system-text-color,
+          box-shadow: theme.$notification-table-system-box-shadow,
         )
       );
+
+      .icon {
+        @include theming.apply-from-theme(
+          (
+            background-color: theme.$notification-system-icon-color,
+          )
+        );
+      }
     }
   }
 

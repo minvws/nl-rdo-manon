@@ -82,17 +82,14 @@ SCSS importeren:
 </div>
 ```
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Aandachtspunten</span>
-  <ul>
-    <li>
-      Getallen worden vaak rechts uitgelijnd voor leesbaarheid.
-    </li>
-    <li>
-      Voor consistentie wordt de titel van kolommen met numerieke data vaak op dezelfde manier uitgelijnd.
-    </li>
-    <li>
-      Getallen worden <dfn>mono-spaced</dfn> weergegeven, wat inhoud dat ieder getal dezelfde breedte heeft waardoor getallen onderling goed te vergelijken zijn.
-    </li>
-  </ul>
+<div class="explanation">
+ <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+  <p>Getallen worden vaak rechts uitgelijnd voor leesbaarheid.</p>
+  <p>Voor consistentie wordt de titel van kolommen met numerieke data vaak op dezelfde manier uitgelijnd.</p>
+  <p>
+    Getallen worden <dfn>mono-spaced</dfn> weergegeven, wat inhoud dat ieder getal dezelfde breedte heeft waardoor getallen onderling goed te vergelijken zijn.
+  </p>
 </div>

@@ -15,7 +15,7 @@ div.system {
     )
   );
 
-  span:first-of-type {
+  .notification-type {
     @include theming.apply-from-theme(
       (
         font-weight: theme.$notification-system-message-span-font-weight,

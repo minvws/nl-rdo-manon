@@ -3,9 +3,12 @@ title: Pagina-notificatie toelichting voorbeeld
 breadcrumb: Pagina-notificatie toelichting voorbeeld
 ---
 
-<section class="explanation" role="group" aria-label="toelichting">
+<section class="explanation">
   <div>
-    <span>Toelichting:</span>
+    <span class="notification-type">
+      <span class="icon icon-informative" aria-hidden="true"></span>
+      Aandachtspunten
+    </span>
     <p>Lorem ipsum dolor sit amet.</p>
   </div>
 </section>
@@ -25,8 +28,12 @@ Voor het voorbeeld zie bovenaan deze pagina.
 #### `section`
 
 ```html
-<p class="explanation" role="group" aria-label="toelichting">
-  <span>Toelichting:</span> Lorem ipsum dolor sit.
+<p class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+  Lorem ipsum dolor sit.
 </p>
 ```
 
@@ -39,8 +46,8 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
 
 #### CSS-voorbeeld:
 
-```css
-@use "@minvws/manon/notification";
-@use "@minvws/manon/notification-explanation-message";
-@use "@minvws/manon/notification-explanation-page";
+```scss
+@use "@minvws/manon/colors/notification";
+@use "@minvws/manon/components/notification-explanation";
+@use "@minvws/manon/components/notification-explanation-page";
 ```

@@ -1,22 +1,31 @@
+$notification-type-table-font-size: null !default;
+$notification-table-gap: null !default;
+$notification-table-align-items: null !default;
+
 // error
 $notification-table-error-background-color: null !default;
 $notification-table-error-text-color: null !default;
+$notification-table-error-box-shadow: null !default;
 
 // warning
 $notification-table-warning-background-color: null !default;
 $notification-table-warning-text-color: null !default;
+$notification-table-warning-box-shadow: null !default;
 
 // confirmation
 $notification-table-confirmation-background-color: null !default;
 $notification-table-confirmation-text-color: null !default;
+$notification-table-confirmation-box-shadow: null !default;
 
 // explanation
 $notification-table-explanation-background-color: null !default;
 $notification-table-explanation-text-color: null !default;
+$notification-table-explanation-box-shadow: null !default;
 
 // system
 $notification-table-system-background-color: null !default;
 $notification-table-system-text-color: null !default;
+$notification-table-system-box-shadow: null !default;
 
 // striping
 $notification-table-row-background-color-striping: null !default;
