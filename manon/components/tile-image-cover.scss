@@ -39,6 +39,7 @@
 .tile.image-cover {
   img {
     height: unset;
+
     @extend %tile-image-cover;
   }
 }
@@ -48,6 +49,7 @@
   li {
     img {
       height: unset;
+
       @extend %tile-image-cover;
     }
   }
