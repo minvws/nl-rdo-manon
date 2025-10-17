@@ -269,6 +269,9 @@ and spacing sets */
     border-radii.$border-radius-m,
   $form-combined-field-button-border-radius: 0 border-radii.$border-radius-m
     border-radii.$border-radius-m 0,
+  $form-combined-field-button-padding: 0 1rem,
+  $form-combined-field-button-min-width: fit-content,
+  $form-combined-field-button-justify-content: center,
 
   // focus
   $focus-outline: 2px solid,
@@ -280,9 +283,6 @@ and spacing sets */
 
   // form label
   $form-label-font-weight: bold,
-
-  // combined field
-  $form-combined-field-padding: 0 1rem,
 
   // footer
   $footer-align-items: center,
