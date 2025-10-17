@@ -1,25 +1,9 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
+@use "checkbox" as cb;
 
 %table-checkbox {
-  input[type="checkbox"] {
-    padding: theme.$table-padding-checkbox;
-
-    @include theming.apply-from-theme(
-      (
-        margin: theme.$table-checkbox-margin-right,
-        cursor: theme.$table-checkbox-cursor,
-        width: theme.$table-checkbox-width,
-        height: theme.$table-checkbox-height,
-      )
-    );
-
-    & + label {
-      width: auto;
-      cursor: pointer;
-      margin-top: 0;
-    }
-  }
+  @include cb.checkbox-input;
 
   th,
   td {
