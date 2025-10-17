@@ -1,6 +1,6 @@
 @use "../variables" as theme;
 
-@mixin icon-base {
+.icon {
   mask-size: contain;
   mask-repeat: no-repeat;
   content: "";
@@ -8,10 +8,6 @@
   height: theme.$icon-height;
   width: theme.$icon-width;
   display: inline-block;
-}
-
-.icon {
-  @include icon-base;
 }
 
 svg.icon {
