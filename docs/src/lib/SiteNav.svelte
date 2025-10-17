@@ -6,17 +6,19 @@
   onMount(initCollapsible);
 </script>
 
-<nav
-  data-open-label="Menu"
-  data-close-label="Sluit menu"
-  data-media="(min-width: 30rem)"
-  aria-label="Hoofdnavigatie"
-  class="collapsible"
->
+<nav>
   <a href="{base}/" class="logo">
     <img src="../img/logo.svg" alt="Placeholder logo" />Manon
   </a>
-  <div class="collapsing-element">
-    <SiteNavLinks />
+  <div
+    data-open-label="Menu"
+    data-close-label="Sluit menu"
+    data-media="(min-width: 30rem)"
+    aria-label="Hoofdnavigatie"
+    class="collapsible right"
+  >
+    <div class="collapsing-element">
+      <SiteNavLinks />
+    </div>
   </div>
 </nav>
