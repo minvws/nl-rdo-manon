@@ -7,12 +7,10 @@ a.button.skip-to-content {
 	from the flow. */
   display: block;
   min-height: 0;
-  font-size: 0;
   padding: 0;
   border: 0;
   max-width: 100%;
-  font-size: theme.$skip-to-content-font-size;
-  text-align: theme.$skip-to-content-text-align;
+  font-size: 0;
 
   &:focus {
     position: static;
@@ -29,6 +27,8 @@ a.button.skip-to-content {
     color: theme.$skip-to-content-text-color;
     align-self: theme.$skip-to-content-align-self;
     order: theme.$skip-to-content-order;
+    font-size: theme.$skip-to-content-font-size;
+    text-align: theme.$skip-to-content-text-align;
   }
 
   &:hover {
