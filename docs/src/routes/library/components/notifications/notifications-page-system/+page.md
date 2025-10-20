@@ -39,8 +39,8 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
 
 #### CSS-voorbeeld:
 
-```css
-@use "@minvws/manon/notification";
-@use "@minvws/manon/notification-system-message";
-@use "@minvws/manon/notification-system-page";
+```scss
+@use "@minvws/manon/components/notification";
+@use "@minvws/manon/components/notification-system-message";
+@use "@minvws/manon/components/notification-system-page";
 ```

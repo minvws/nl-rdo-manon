@@ -14,8 +14,8 @@ Voor het gegroepeerd weergeven van content binnen tegels
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/tile";
-@use "@minvws/manon/tile-groups";
+@use "@minvws/manon/components/tile";
+@use "@minvws/manon/components/tile-groups";
 ```
 
 <p>Aandachtspunten:</p>

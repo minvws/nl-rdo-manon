@@ -18,8 +18,8 @@ gebruiker om overzicht te houden.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
-@use "@minvws/manon/table-condensed";
+@use "@minvws/manon/components/table";
+@use "@minvws/manon/components/table-condensed";
 ```
 
 ### Benodigde stappen

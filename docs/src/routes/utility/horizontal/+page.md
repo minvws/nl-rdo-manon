@@ -18,7 +18,7 @@ elkaar moeten staan.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/horizontal";
+@use "@minvws/manon/components/horizontal";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

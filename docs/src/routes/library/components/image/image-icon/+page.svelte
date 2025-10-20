@@ -71,7 +71,7 @@
         <Code
           language="css"
           code={`
-@use "@minvws/manon/icon";
+@use "@minvws/manon/components/icon";
       `}
         />
       </section>

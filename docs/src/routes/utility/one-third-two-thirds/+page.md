@@ -16,8 +16,8 @@ Verdeling 33.33% - 66.66% vanaf het ingestelde breekpunt.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/layout";
-@use "@minvws/manon/one-third-two-thirds";
+@use "@minvws/manon/components/layout";
+@use "@minvws/manon/components/one-third-two-thirds";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

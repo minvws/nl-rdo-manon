@@ -16,8 +16,8 @@ Een e-mailinvoerveld stelt de gebruiker in staat om een geldig e-mailadres in te
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-input";
+@use "@minvws/manon/components/form";
+@use "@minvws/manon/components/form-input";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

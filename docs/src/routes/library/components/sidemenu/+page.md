@@ -17,7 +17,7 @@ navigeren voor de gebruiker toegankelijk en overzichtelijk te houden.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/sidemenu";
+@use "@minvws/manon/components/sidemenu";
 ```
 
 JavaScript importeren:

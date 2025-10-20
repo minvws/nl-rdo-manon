@@ -109,5 +109,5 @@ Voor meer informatie over importeren en instellen van componenten. Zie:
 #### CSS-voorbeeld:
 
 ```scss
-@use "@minvws/manon/sidemenu";
+@use "@minvws/manon/components/sidemenu";
 ```

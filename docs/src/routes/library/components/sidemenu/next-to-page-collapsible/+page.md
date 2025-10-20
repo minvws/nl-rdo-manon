@@ -20,7 +20,7 @@ de content. Gebruik dan:
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/sidemenu";
+@use "@minvws/manon/components/sidemenu";
 ```
 
 ## Aandachtspunten

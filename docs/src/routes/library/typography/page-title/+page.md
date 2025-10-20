@@ -16,7 +16,7 @@ Dit component kan gebruikt worden om styling te koppelen aan de titel van de pag
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/page-title";
+@use "@minvws/manon/components/page-title";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

@@ -17,8 +17,8 @@ voor een tabel met uitklapbare tabelrijen.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
-@use "@minvws/manon/table-expando-rows";
+@use "@minvws/manon/components/table";
+@use "@minvws/manon/components/table-expando-rows";
 ```
 
 JavaScript importeren:

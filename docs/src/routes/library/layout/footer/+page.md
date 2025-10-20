@@ -17,7 +17,7 @@ gebruiker dat het einde van de pagina bereikt is.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/footer";
+@use "@minvws/manon/components/footer";
 ```
 
 <h2 id="examples" class="page-title">Voorbeelden:</h2>

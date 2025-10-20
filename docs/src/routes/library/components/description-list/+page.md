@@ -14,7 +14,7 @@ Een description list is een HTML-lijst waarin je termen en hun beschrijvingen ov
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/description-list";
+@use "@minvws/manon/components/description-list";
 ```
 
 <h2 id="examples">Voorbeeld</h2>

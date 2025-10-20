@@ -194,7 +194,7 @@
         <Code
           language="css"
           code={`
-@use "@minvws/manon/image-square";
+@use "@minvws/manon/components/image-square";
 `}
         />
       </section>

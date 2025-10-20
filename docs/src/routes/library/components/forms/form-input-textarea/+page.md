@@ -15,8 +15,8 @@ Een tekstveld wordt gebruikt om langere teksten of opmerkingen van de gebruiker 
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-textarea";
+@use "@minvws/manon/components/form";
+@use "@minvws/manon/components/form-textarea";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

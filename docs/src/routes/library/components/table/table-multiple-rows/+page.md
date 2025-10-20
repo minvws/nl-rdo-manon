@@ -16,7 +16,7 @@ Data weergeven over meer dan een rij kan gebruikt worden binnen tabellen.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
+@use "@minvws/manon/components/table";
 ```
 
 ## Benodigde stappen

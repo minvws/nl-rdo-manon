@@ -18,8 +18,8 @@ Radio selecteerknop voor het selecteren van een optie binnen een set
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/radio";
-@use "@minvws/manon/form-radio";
+@use "@minvws/manon/components/radio";
+@use "@minvws/manon/components/form-radio";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

@@ -16,7 +16,7 @@ Navigatie verwijst naar de onderdelen van een website of app waarmee gebruikers 
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/navigation";
+@use "@minvws/manon/components/navigation";
 ```
 
 <h2 id="examples">Voorbeelden:</h2>
