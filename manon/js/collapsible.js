@@ -29,6 +29,14 @@ export function initCollapsible() {
 }
 
 /**
+* Creates and returns a toggle button for a collapsible component.
+* This function builds the button element, sets its ARIA attributes, reads
+* data-* attributes from the parent for configuration (e.g., labels, icons),
+* and attaches the click event listener for toggling.
+*
+* @param {HTMLElement} collapsibleElement The root `.collapsible` element, used to read `data-*` attributes.
+* @param {HTMLElement} collapsingElement The element that will be shown/hidden, used for the `aria-controls` attribute.
+* @returns {HTMLButtonElement} The created button element with all event listeners attached.
  * @param {HTMLElement} collapsibleElement
  * @param {HTMLElement} collapsingElement
  * @return {HTMLElement}
