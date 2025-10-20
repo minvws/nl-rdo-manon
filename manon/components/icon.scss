@@ -9,8 +9,11 @@
   display: inline-block;
 }
 
-svg.icon {
-  background-color: transparent;
+svg, 
+img {
+  &.icon {
+    background-color: transparent;
+  }
 }
 
 .icon-ascending {
