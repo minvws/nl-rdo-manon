@@ -34,11 +34,11 @@ export function initCollapsible() {
  * @return {HTMLElement}
  */
 function createMenuButton(collapsibleElement, collapsingElement) {
-  var openLabel = collapsibleElement.dataset.openLabel || "Dropdown menu";
-  var closeLabel =
+  const openLabel = collapsibleElement.dataset.openLabel || "Dropdown menu";
+  const closeLabel =
     collapsibleElement.dataset.closeLabel || "Sluit dropdown menu";
-  var buttonClasses = collapsibleElement.dataset.buttonClasses || "";
-  var iconClasses = collapsibleElement.dataset.iconClasses || "";
+  const buttonClasses = collapsibleElement.dataset.buttonClasses || "";
+  const iconClasses = collapsibleElement.dataset.iconClasses || "";
 
   // Create button
   const button = document.createElement("button");
