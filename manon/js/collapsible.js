@@ -57,7 +57,7 @@ function createMenuButton(collapsibleElement, collapsingElement) {
 
   // Create span for icons to add to button
   if (iconClasses.includes("icon")) {
-    var iconSpan = document.createElement("span");
+    const iconSpan = document.createElement("span");
     iconSpan.setAttribute("aria-hidden", "true");
     iconSpan.className = iconClasses;
 
