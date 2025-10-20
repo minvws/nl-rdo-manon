@@ -4,6 +4,14 @@ import { ensureElementHasId, onDomReady } from "./utils.js";
 
 onDomReady(initCollapsible);
 
+/**
+ * Finds and initializes all collapsible components on the page.
+ *
+ * This function scans the DOM for elements with the `.collapsible` class and
+ * makes them interactive by creating and injecting a toggle button.
+ * It is safe to call this function multiple times, as it will not
+ * re-initialize a component that already has a toggle button.
+ */
 export function initCollapsible() {
   document.querySelectorAll(".collapsible").forEach((collapsibleElement) => {
     if (!(collapsibleElement instanceof HTMLElement)) return;
