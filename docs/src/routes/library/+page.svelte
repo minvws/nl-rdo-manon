@@ -76,7 +76,7 @@
             <ul>
               <li><a href="{base}/library/components/forms">Forms</a></li>
               <li>
-                <a href="{base}/library/components/header-navigation">Header navigation</a>
+                <a href="{base}/library/components/header">Header</a>
               </li>
               <li><a href="{base}/library/components/icons">Icons</a></li>
               <li><a href="{base}/library/components/image">Image</a></li>
