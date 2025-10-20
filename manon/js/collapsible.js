@@ -22,7 +22,7 @@ export function initCollapsible() {
     // Create the collapsible button or skip if button already exists
     if (collapsibleElement.querySelector(".collapsible-toggle")) return;
 
-    var toggleButton = createMenuButton(collapsibleElement, collapsingElement);
+    const toggleButton = createMenuButton(collapsibleElement, collapsingElement);
 
     collapsingElement.parentNode?.insertBefore(toggleButton, collapsingElement);
   });
