@@ -168,7 +168,7 @@
         <Code
           language="css"
           code={`
-@use "@minvws/manon/image-cover";
+@use "@minvws/manon/components/image-cover";
 `}
         />
       </section>

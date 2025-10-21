@@ -17,10 +17,10 @@ dienen te worden.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/horizontal-scroll";
+@use "@minvws/manon/components/horizontal-scroll";
 
 // Optioneel: voor het voorkomen van tekstomloop
-@use "@minvws/manon/nowrap";
+@use "@minvws/manon/components/nowrap";
 ```
 
 Voeg de class `horizontal-scroll` toe om het element over de horizontale as te

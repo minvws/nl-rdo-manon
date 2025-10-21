@@ -19,18 +19,18 @@ voldoen aan de toegankelijkheidsrichtlijnen en biedt een responsieve ervaring.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/header-navigation";
-@use "@minvws/manon/header-navigation-content-wrapper";
-@use "@minvws/manon/header-navigation-link";
-@use "@minvws/manon/header-navigation-link-visited";
-@use "@minvws/manon/header-navigation-link-hover";
-@use "@minvws/manon/header-navigation-link-active";
-@use "@minvws/manon/header-navigation-collapsible";
-@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button";
-@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button-states";
+@use "@minvws/manon/components/header-navigation";
+@use "@minvws/manon/components/header-navigation-content-wrapper";
+@use "@minvws/manon/components/header-navigation-link";
+@use "@minvws/manon/components/header-navigation-link-visited";
+@use "@minvws/manon/components/header-navigation-link-hover";
+@use "@minvws/manon/components/header-navigation-link-active";
+@use "@minvws/manon/components/header-navigation-collapsible";
+@use "@minvws/manon/components/header-navigation-collapsible-collapsing-element-button";
+@use "@minvws/manon/components/header-navigation-collapsible-collapsing-element-button-states";
 
 // Accessibility
-@use "@minvws/manon/skip-to-content";
+@use "@minvws/manon/components/skip-to-content";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

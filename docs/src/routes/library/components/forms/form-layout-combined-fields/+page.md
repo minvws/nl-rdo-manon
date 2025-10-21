@@ -15,7 +15,8 @@ weergegeven.
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/form-combined-field";
+@use "@minvws/manon/components/form";
+@use "@minvws/manon/components/form-combined-field";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

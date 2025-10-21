@@ -17,7 +17,7 @@ openklappen om meer informatie te tonen.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/accordion";
+@use "@minvws/manon/components/accordion";
 ```
 
 JavaScript initialiseren:

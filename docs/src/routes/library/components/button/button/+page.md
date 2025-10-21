@@ -16,7 +16,7 @@ Knoppen basisweergave
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/button";
+@use "@minvws/manon/components/button";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

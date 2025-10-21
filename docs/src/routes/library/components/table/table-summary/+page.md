@@ -17,7 +17,7 @@ tabellen en documenten.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
+@use "@minvws/manon/components/table";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

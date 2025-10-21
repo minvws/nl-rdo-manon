@@ -194,7 +194,7 @@
         <Code
           language="css"
           code={`
-@use "@minvws/manon/image-round";
+@use "@minvws/manon/components/image-round";
 `}
         />
       </section>

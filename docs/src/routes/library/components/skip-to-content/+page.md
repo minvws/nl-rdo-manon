@@ -19,7 +19,7 @@ wordt voorkomen dat de gebruiker langs onnodig veel elementen moet navigeren.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/skip-to-content";
+@use "@minvws/manon/components/skip-to-content";
 ```
 
 ### Benodigde stappen

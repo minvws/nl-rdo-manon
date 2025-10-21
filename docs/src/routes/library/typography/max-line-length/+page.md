@@ -15,7 +15,7 @@ gebruiksvriendelijkheid en toegankelijkheid. [w3.org](https://www.w3.org/TR/WCAG
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/max-line-length";
+@use "@minvws/manon/components/max-line-length";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

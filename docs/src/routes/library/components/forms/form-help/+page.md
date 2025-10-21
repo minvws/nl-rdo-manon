@@ -16,7 +16,7 @@ Hulptesksten (extra toelichting) bij een invoerveld geeft de gebruiker duidelijk
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/form-help";
+@use "@minvws/manon/components/form-help";
 ```
 
 JavaScript importeren:

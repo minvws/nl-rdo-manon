@@ -16,7 +16,7 @@ Bied een soepele gebruikerservaring aan door bij lange pagina's en documenten ge
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/button-to-top";
+@use "@minvws/manon/components/button-to-top";
 ```
 
 ### Benodigde stappen

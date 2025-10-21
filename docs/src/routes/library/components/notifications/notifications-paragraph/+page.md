@@ -16,8 +16,8 @@ Voor het weergeven van notificatie op paragrafen.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/notification";
-@use "@minvws/manon/notification-paragraph";
+@use "@minvws/manon/components/notification";
+@use "@minvws/manon/components/notification-paragraph";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
