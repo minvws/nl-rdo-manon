@@ -46,6 +46,7 @@ SCSS importeren:
 - <a href="link" class="active hover">Details<span class="icon icon-chevron-right" aria-hidden="true"></span></a>
 
 ### Voorbeeld: Link met focus
+
 - <a href="link" class="focus">Inloggen</a>
 - <a href="link" class="focus"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>
 - <a href="link" class="focus">Details<span class="icon icon-chevron-right" aria-hidden="true"></span></a>
@@ -57,6 +58,7 @@ SCSS importeren:
 - <a href="link" class="focus hover">Details<span class="icon icon-chevron-right" aria-hidden="true"></span></a>
 
 ### Voorbeeld: Bezochte link
+
 - <a href="link" class="visited">Inloggen</a>
 - <a href="link" class="visited"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>
 - <a href="link" class="visited">Details<span class="icon icon-chevron-right" aria-hidden="true"></span></a>
