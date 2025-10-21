@@ -1,14 +1,29 @@
-$checkbox-gap: null !default;
-$checkbox-align-items: center !default;
-$checkbox-width: 24px !default;
-$checkbox-height: 24px !default;
-$checkbox-padding: null !default;
-$checkbox-margin: null !default;
-$checkbox-accent-color: #1971c2 !default;
+// checkbox input field
+$checkbox-input-width: 24px !default;
+$checkbox-input-height: 24px !default;
+$checkbox-input-padding: null !default;
+$checkbox-input-margin: null !default;
+$checkbox-input-border: null !default;
+$checkbox-input-border-radius: null !default;
+$checkbox-input-accent-color: null !default;
+
+// checkbox label
 $checkbox-label-width: null !default;
 $checkbox-label-font-weight: null !default;
-$checkbox-required-gap: null !default;
-$checkbox-input-width: null !default;
-$checkbox-border: null !default;
-$checkbox-border-radius: null !default;
 $checkbox-label-focus-outline: null !default;
+
+// checkbox container
+$checkbox-padding: null !default;
+$checkbox-margin: null !default;
+$checkbox-gap: null !default;
+
+// checkbox + required
+$checkbox-required-div-padding: null !default;
+$checkbox-required-gap: null !default;
+
+// checkbox + required + div
+$checkbox-div-gap: null !default;
+
+// checkbox + nota bene
+$checkbox-nota-bene-padding: null !default;
+$checkbox-nota-ben-margin: null !default;

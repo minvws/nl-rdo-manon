@@ -274,13 +274,23 @@ and spacing sets */
   $form-combined-field-button-border-radius: 0 border-radii.$border-radius-m
     border-radii.$border-radius-m 0,
 
-  // checkbox
-  $checkbox-padding: 0,
-  $checkbox-margin: 0,
-  $checkbox-border: 1px solid #ced4da,
-  $checkbox-border-radius: 3px,
+  // checkbox input field
+  $checkbox-input-width: 1.5rem,
+  $checkbox-input-height: 1.5rem,
+  $checkbox-input-padding: 0,
+  $checkbox-input-margin: 0,
+  $checkbox-input-border: 1px solid #ced4da,
+  $checkbox-input-border-radius: 3px,
+  $checkbox-input-accent-color: #1971c2,
+
+  // checkbox input label
   $checkbox-label-font-weight: normal,
   $checkbox-label-focus-outline: 2px solid #339af0,
+
+  // checkbox container (input + label)
+  $checkbox-padding: 0,
+  $checkbox-margin: 0 0 0.5rem,
+  $checkbox-gap: 0.5rem,
 
   // focus
   $focus-outline: 2px solid,

@@ -6,8 +6,8 @@
 $breakpoint-1: 24rem !default;
 $checkbox-input-width: null !default;
 
-@if validators.args-not-null(theme.$checkbox-width, theme.$checkbox-gap) {
-  $checkbox-input-width: theme.$checkbox-width + theme.$checkbox-gap;
+@if validators.args-not-null(theme.$checkbox-input-width, theme.$checkbox-gap) {
+  $checkbox-input-width: theme.$checkbox-input-width + theme.$checkbox-gap;
 }
 
 form {

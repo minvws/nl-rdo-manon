@@ -100,8 +100,8 @@ form.horizontal {
           margin-right: 0;
 
           & + label {
-            @if theme.$checkbox-width {
-              max-width: calc(100% - theme.$checkbox-width);
+            @if theme.$checkbox-input-width {
+              max-width: calc(100% - theme.$checkbox-input-width);
             }
           }
         }
