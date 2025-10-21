@@ -18,8 +18,8 @@ Voor die situaties is dit voorbeeld geschikt.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-inline";
+@use "@minvws/manon/components/form";
+@use "@minvws/manon/components/form-inline";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

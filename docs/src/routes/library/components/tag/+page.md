@@ -16,7 +16,7 @@ Visuele labels om bijvoorbeeld groeperingen aan te brengen binnen content en dat
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/tag";
+@use "@minvws/manon/components/tag";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

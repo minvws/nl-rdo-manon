@@ -14,7 +14,7 @@ Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in mee
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/pagination";
+@use "@minvws/manon/components/pagination";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

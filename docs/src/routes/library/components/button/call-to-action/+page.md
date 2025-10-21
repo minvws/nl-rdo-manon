@@ -15,7 +15,7 @@ Knoppen die oproepen tot actie kunnen in een alternatieve kleur getoond kunnen w
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/button-cta";
+@use "@minvws/manon/components/button-cta";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

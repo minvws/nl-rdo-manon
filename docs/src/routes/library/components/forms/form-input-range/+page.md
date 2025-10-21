@@ -16,7 +16,7 @@ Een bereikcomponent maakt het mogelijk om met een schuifbalk een waarde binnen e
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/form";
+@use "@minvws/manon/components/form";
 ```
 
 <p class="explanation">

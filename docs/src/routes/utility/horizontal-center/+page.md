@@ -16,7 +16,7 @@ Horizontaal gecentreerd
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/horizontal-center";
+@use "@minvws/manon/components/horizontal-center";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

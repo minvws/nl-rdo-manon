@@ -16,7 +16,7 @@ Voor het weergeven van de tabelrichting kun je de leesrichting instellen.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
+@use "@minvws/manon/components/table";
 ```
 
 ### Benodigde stappen

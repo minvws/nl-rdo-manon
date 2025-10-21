@@ -2,6 +2,7 @@
 
 .icon {
   mask-size: contain;
+  mask-repeat: no-repeat;
   content: "";
   background-color: theme.$icon-color;
   height: theme.$icon-height;
@@ -9,8 +10,11 @@
   display: inline-block;
 }
 
-svg.icon {
-  background-color: transparent;
+svg,
+img {
+  &.icon {
+    background-color: transparent;
+  }
 }
 
 .icon-ascending {
