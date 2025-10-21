@@ -6,9 +6,12 @@ breadcrumb: Pagina-notificatie waarschuwing voorbeeld
   - Voorbeelden: "#examples"
 ---
 
-<section class="warning" role="group" aria-label="waarschuwing">
+<section class="warning">
   <div>
-    <span>Waarschuwing:</span>
+    <span class="notification-type">
+      <span class="icon icon-warning" aria-hidden="true"></span>
+      Waarschuwing
+    </span>
     <p>Lorem ipsum dolor sit amet.</p>
   </div>
 </section>
@@ -37,7 +40,11 @@ Voor het voorbeeld zie bovenaan deze pagina.
 #### `section`
 
 ```html
-<p class="warning" role="group" aria-label="waarschuwing">
-  <span>Waarschuwing:</span> Lorem ipsum dolor sit.
+<p class="warning">
+  <span class="notification-type">
+    <span class="icon icon-warning" aria-hidden="true"></span>
+    Waarschuwing
+  </span>
+  Lorem ipsum dolor sit.
 </p>
 ```

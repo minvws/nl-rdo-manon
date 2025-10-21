@@ -20,23 +20,24 @@ SCSS importeren:
 @use "@minvws/manon/components/form-input";
 ```
 
-<div class="explanation" role="group" aria-label="Toelichting">
-    <span>Aandachtspunten</span>
-    <ul>
-        <li>
-        Vertel de gebruiker welke eisen er gesteld zijn. Dit kan met een notificatie of met een
-        openklapbare hulptekst. Voor meer informatie zie:
-        <a href="/library/components/notifications/notification-explanation"
-            >toelichting - paragraaf</a
-        >
-        en <a href="/library/components/forms/form-help">hulpteksten</a>.
-        </li>
-        <li>
-        Om berichten visueel te koppelen aan een inputveld kunnen de
-        <code>&lt;input&gt;</code> en het bericht gegroepeerd worden binnen een
-        <code>&lt;div&gt;</code>.
-        </li>
-    </ul>
+<div class="explanation">
+    <span class="notification-type">
+        <span class="icon icon-informative" aria-hidden="true"></span>
+        Aandachtspunten
+    </span>
+        <p>
+            Vertel de gebruiker welke eisen er gesteld zijn. Dit kan met een notificatie of met een
+            openklapbare hulptekst. Voor meer informatie zie:
+            <a href="/library/components/notifications/notification-explanation"
+                >toelichting - paragraaf</a
+            >
+            en <a href="/library/components/forms/form-help">hulpteksten</a>.
+        </p>
+        <p>
+            Om berichten visueel te koppelen aan een inputveld kunnen de
+            <code>&lt;input&gt;</code> en het bericht gegroepeerd worden binnen een
+            <code>&lt;div&gt;</code>.
+        </p>
 </div>
 
 <h2 id="examples">Voorbeelden</h2>
@@ -45,8 +46,12 @@ SCSS importeren:
     <div>
         <label for="input-password-1">Wachtwoord</label>
         <p class="explanation" id="input-password-1-message">
-        <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter,
-        1 kleine letter en 1 cijfer.
+            <span class="notification-type">
+                <span class="icon icon-informative" aria-hidden="true"></span>
+                Aandachtspunten
+            </span>
+            Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter,
+            1 kleine letter en 1 cijfer.
         </p>
         <input
         id="input-password-1"
@@ -64,8 +69,12 @@ SCSS importeren:
     <div>
         <label for="input-password-1">Wachtwoord</label>
         <p class="explanation" id="input-password-1-message">
-        <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter,
-        1 kleine letter en 1 cijfer.
+            <span class="notification-type">
+                <span class="icon icon-informative" aria-hidden="true"></span>
+                Aandachtspunten
+            </span>
+            Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter,
+            1 kleine letter en 1 cijfer.
         </p>
         <input
         id="input-password-1"

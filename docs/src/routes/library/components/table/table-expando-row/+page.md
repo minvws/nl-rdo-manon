@@ -28,7 +28,11 @@ import "@minvws/manon/js/expando-rows.js";
 ```
 
 <p class="warning">
-  Let op: Deze tabelstructuur kan als complex ervaren worden door gebruikers. Zeker in
+   <span class="notification-type">
+    <span class="icon icon-warning" aria-hidden="true"></span>
+    Let op
+  </span>
+  Deze tabelstructuur kan als complex ervaren worden door gebruikers. Zeker in
   combinatie met hulptechnologieën. Maak enkel gebruik van deze opzet als het de gebruiker
   helpt om complexe data te begrijpen.
 </p>
@@ -67,19 +71,20 @@ import "@minvws/manon/js/expando-rows.js";
       informatie over het toevoegen van iconensets, zie [Iconen](/library/components/icons). Voor
       een implementatievoorbeeld zie het [html-voorbeeld](#examples).
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Aandachtspunten</span>
-  <ul>
-    <li>
+<div class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+    <p>
       Let op: Deze tabelstructuur kan als complex ervaren worden door gebruikers. Zeker in combinatie met hulptechnologieën. Maak enkel gebruik van deze opzet als het de gebruiker helpt om complexe data te begrijpen.**
-    </li>
-    <li>
+    </p>
+    <p>
       Wanneer JavaScript niet beschikbaar is, worden alle uitklapbare tabelrijen uitgeklapt getoond en worden de expando-`button`s verborgen zodat alle data ook beschikbaar is voor gebruikers zonder JavaScript.
-    </li>
-    <li>
+    </p>
+    <p>
       Om een tabelrij standaard uitgeklapt te maken, voeg je `aria-expanded="true"` toe aan de `button`. Verander hierbij ook de button-tekst naar bijvoorbeeld "Sluit details", en vervang de `data-close-label` door een `data-open-label` met bijbehorende tekst zoals bijvoorbeeld "Open details.
-    </li>
-  </ul>
+    </p>
 </div>
 
 <h2 id="examples">Voorbeelden</h2>

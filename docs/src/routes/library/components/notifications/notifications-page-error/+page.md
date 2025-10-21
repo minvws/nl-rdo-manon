@@ -7,9 +7,12 @@ nav:
   - Voorbeelden: "#examples"
 ---
 
-<section class="error" role="group" aria-label="foutmelding">
+<section class="error">
   <div>
-    <span>Foutmelding:</span>
+    <span class="notification-type">
+      <span class="icon icon-error" aria-hidden="true"></span>
+      Foutmelding
+    </span>
     <p>Lorem ipsum dolor sit amet.</p>
   </div>
 </section>
@@ -38,7 +41,11 @@ Voor het voorbeeld zie bovenaan deze pagina.
 #### `section`
 
 ```html
-<p class="error" role="group" aria-label="foutmelding">
-  <span>Foutmelding:</span> Lorem ipsum dolor sit.
+<p class="error">
+  <span class="notification-type">
+    <span class="icon icon-error" aria-hidden="true"></span>
+    Foutmelding
+  </span>
+  Lorem ipsum dolor sit.
 </p>
 ```

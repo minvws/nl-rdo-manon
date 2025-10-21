@@ -20,8 +20,12 @@ SCSS importeren:
 @use "@minvws/manon/components/form-select";
 ```
 
-<p class="warning" role="group" aria-label="waarschuwing">
-  <span>Waarschuwing:</span> Het `select`-element wordt binnen browsers en
+<p class="warning">
+  <span class="notification-type">
+    <span class="icon icon-warning" aria-hidden="true"></span>
+    Waarschuwing
+  </span>
+  Het `select`-element wordt binnen browsers en
   bestuurssystemen verschillend weergegeven. Hierdoor kan aangepaste styling onverwachte
   resultaten opleveren. Test daarom altijd grondig of gebruik de standaard weergave zonder
   visuele aanpassingen.
@@ -118,8 +122,12 @@ SCSS importeren:
 </form>
 ```
 
-<p class="explanation" role="group" aria-label="toelichting">
-  <span>Aandachtspunten</span> Het `select`-element wordt binnen browsers en
+<p class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+  Het `select`-element wordt binnen browsers en
   Als een selectielijst een verplicht invoerveld is, voeg dan altijd als eerste
   optie een lege optie toe: <code><option value="">--Please choose an option--</option></code>
 </p>

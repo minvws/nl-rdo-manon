@@ -18,9 +18,6 @@ Het weergeven van notificaties binnen het formulier
 SCSS importeren:
 
 ```scss
-/* Notification base component */
-@use "@minvws/manon/components/notification";
-
 /* Notification types, import what is needed */
 @use "@minvws/manon/components/notification-block-element";
 @use "@minvws/manon/components/notification-paragraph";
@@ -32,23 +29,24 @@ SCSS importeren:
 @use "@minvws/manon/components/notification-system-message";
 ```
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Aandachtspunten</span>
-  <ul>
-    <li>
+<div class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+    <p>
       Vertel de gebruiker altijd wat de vervolgstappen zijn die zij kunnen
       nemen om het probleem op te lossen of om zelf verder te kunnen.
-    </li>
-    <li>
+    </p>
+    <p>
       Voeg de class toe met het type melding op het invoerveld om gebruik te
       maken van visuele feedback direct op het invoerveld. Voorbeeld:
       `class="error"`.
-    </li>
-    <li>
+    </p>
+    <p>
       Voeg voor screenreader gebruikers `aria-invalid="true"` toe aan
       invoervelden met een error. In de HTML-voorbeelden is dit meegenomen.
-    </li>
-  </ul>
+    </p>
 </div>
 
 <h2 id="examples">Voorbeelden</h2>
@@ -66,7 +64,11 @@ SCSS importeren:
       aria-invalid="true"
     />
     <p class="error" id="input-error-message">
-      <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-error" aria-hidden="true"></span>
+        Foutmelding:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
   <button type="submit">Verzend</button>
@@ -84,7 +86,11 @@ SCSS importeren:
       aria-invalid="true"
     />
     <p class="error" id="input-error-message">
-      <span>Foutmelding:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-error" aria-hidden="true"></span>
+        Foutmelding:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
   <button type="submit">Verzend</button>
@@ -92,7 +98,11 @@ SCSS importeren:
 ```
 
 <p class="warning">
-  <span>Let op:</span> Plaats foutmeldingen altijd onder het invoerveld. Dit zorgt ervoor dat de
+  <span class="notification-type">
+    <span class="icon icon-warning" aria-hidden="true"></span>
+    Waarschuwing
+  </span>
+  Plaats foutmeldingen altijd onder het invoerveld. Dit zorgt ervoor dat de
   gebruiker eerst te zien krijgt wat de context van de foutmelding is wat het
   begrijpen van de foutmelding toegankelijker maakt.
 </p>
@@ -103,7 +113,11 @@ SCSS importeren:
   <label for="input-explanation">Input</label>
   <div>
     <p class="explanation" id="input-explanation-message">
-      <span>Toelichting:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-informative" aria-hidden="true"></span>
+        Toelichting
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
     <input
       id="input-explanation"
@@ -121,7 +135,11 @@ SCSS importeren:
   <label for="input-explanation">Input</label>
   <div>
     <p class="explanation" id="input-explanation-message">
-      <span>Toelichting:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-informative" aria-hidden="true"></span>
+        Toelichting
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
     <input
       id="input-explanation"
@@ -136,7 +154,10 @@ SCSS importeren:
 ```
 
 <div class="warning">
-  <span>Let op</span>
+  <span class="notification-type">
+    <span class="icon icon-warning" aria-hidden="true"></span>
+    Let op
+  </span>
   <p>Plaats toelichting met betrekking tot het invullen van
   velden boven het invoerveld, zodat de gebruiker eerst de toelichtig leest en
   daarna het bijbehorende invoerveld tegenkomt.</p>
@@ -153,7 +174,11 @@ SCSS importeren:
   <label for="input-warning">Input</label>
   <div>
     <p class="warning" id="input-warning-message">
-      <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-warning" aria-hidden="true"></span>
+        Waarschuwing
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
     <input
       id="input-warning"
@@ -171,7 +196,11 @@ SCSS importeren:
   <label for="input-warning">Input</label>
   <div>
     <p class="warning" id="input-warning-message">
-      <span>Waarschuwing:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-warning" aria-hidden="true"></span>
+        Waarschuwing
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
     <input
       id="input-warning"
@@ -191,7 +220,11 @@ SCSS importeren:
   <label for="input-confirmation">Input</label>
   <div>
     <p class="confirmation" id="input-confirmation-message">
-      <span>Bevestiging:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-check" aria-hidden="true"></span>
+        Bevestiging
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
     <input
       id="input-confirmation"
@@ -209,7 +242,11 @@ SCSS importeren:
   <label for="input-confirmation">Input</label>
   <div>
     <p class="confirmation" id="input-confirmation-message">
-      <span>Bevestiging:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-check" aria-hidden="true"></span>
+        Bevestiging
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
     <input
       id="input-confirmation"
@@ -229,7 +266,11 @@ SCSS importeren:
   <label for="input-system">Input</label>
   <div>
     <p class="system" id="input-system-message">
-      <span>Systeembericht:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-warning" aria-hidden="true"></span>
+          Systeembericht
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
     <input
       id="input-system"
@@ -247,7 +288,11 @@ SCSS importeren:
   <label for="input-system">Input</label>
   <div>
     <p class="system" id="input-system-message">
-      <span>Systeembericht:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-warning" aria-hidden="true"></span>
+        Systeembericht
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
     <input
       id="input-system"

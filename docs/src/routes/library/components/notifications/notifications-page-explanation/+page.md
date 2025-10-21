@@ -6,9 +6,12 @@ breadcrumb: Pagina-notificatie toelichting voorbeeld
   - Voorbeelden: "#examples"
 ---
 
-<section class="explanation" role="group" aria-label="toelichting">
+<section class="explanation">
   <div>
-    <span>Toelichting:</span>
+    <span class="notification-type">
+      <span class="icon icon-informative" aria-hidden="true"></span>
+      Aandachtspunten
+    </span>
     <p>Lorem ipsum dolor sit amet.</p>
   </div>
 </section>
@@ -37,7 +40,11 @@ Voor het voorbeeld zie bovenaan deze pagina.
 #### `section`
 
 ```html
-<p class="explanation" role="group" aria-label="toelichting">
-  <span>Toelichting:</span> Lorem ipsum dolor sit.
+<p class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+  Lorem ipsum dolor sit.
 </p>
 ```

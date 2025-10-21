@@ -7,6 +7,7 @@
   background-color: theme.$icon-color;
   height: theme.$icon-height;
   width: theme.$icon-width;
+  min-width: theme.$icon-width;
   display: inline-block;
 }
 
@@ -69,6 +70,14 @@ img {
   mask-image: theme.$icon-mask-download;
 }
 
+.icon-error {
+  mask-image: theme.$icon-mask-error;
+}
+
+.icon-filter {
+  mask-image: theme.$icon-mask-filter;
+}
+
 .icon-hamburger {
   mask-image: theme.$icon-mask-hamburger;
 }
@@ -79,6 +88,10 @@ img {
 
 .icon-home {
   mask-image: theme.$icon-mask-home;
+}
+
+.icon-informative {
+  mask-image: theme.$icon-mask-informative;
 }
 
 .icon-lock-closed {
@@ -123,4 +136,8 @@ img {
 
 .icon-user {
   mask-image: theme.$icon-mask-user;
+}
+
+.icon-warning {
+  mask-image: theme.$icon-mask-warning;
 }
