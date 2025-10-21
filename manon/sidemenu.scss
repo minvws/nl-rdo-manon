@@ -31,6 +31,8 @@ main.sidemenu {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    padding-top: var(--sidemenu-main-content-block-padding-top);
+    padding-bottom: var(--sidemenu-main-content-block-padding-bottom);
 
     @media (width >= $sidemenu-breakpoint) {
       max-width: calc(100% - $page-content-width);
@@ -85,14 +87,11 @@ main.sidemenu {
         border-style: var(--sidemenu-list-item-border-style);
         border-width: var(--sidemenu-list-item-border-width);
         padding: var(--sidemenu-list-item-padding);
+        line-height: var(--sidemenu-list-item-line-height);
+        font-size: var(--sidemenu-list-item-font-size);
+        font-weight: var(--sidemenu-list-item-font-weight);
+        color: var(--sidemenu-list-item-text-color);
         list-style: var(--sidemenu-list-item-list-style);
-
-        a {
-          line-height: var(--sidemenu-list-item-line-height);
-          font-size: var(--sidemenu-list-item-font-size);
-          font-weight: var(--sidemenu-list-item-font-weight);
-          color: var(--sidemenu-list-item-text-color);
-        }
       }
 
       /* Button */
@@ -116,13 +115,16 @@ main.sidemenu {
 
         &::before {
           @include icon.icon;
-          content: var(--sidemenu-expanded-button-icon);
-          font-family: var(--sidemenu-button-icon-font-family);
-          font-size: var(--sidemenu-button-icon-font-size);
 
-          /* Styling options for text input instead of icons */
-          font-weight: var(--sidemenu-button-icon-font-weight);
-          white-space: var(--sidemenu-button-icon-white-space);
+          & {
+            content: var(--sidemenu-expanded-button-icon);
+            font-family: var(--sidemenu-button-icon-font-family);
+            font-size: var(--sidemenu-button-icon-font-size);
+
+            /* Styling options for text input instead of icons */
+            font-weight: var(--sidemenu-button-icon-font-weight);
+            white-space: var(--sidemenu-button-icon-white-space);
+          }
         }
 
         &[aria-expanded="false"] {

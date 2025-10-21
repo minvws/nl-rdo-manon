@@ -1,0 +1,87 @@
+name: CI
+
+on:
+  push:
+    branches: [main, "release/**"]
+  pull_request:
+
+jobs:
+  audit:
+    name: Audit dependencies
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Audit dependencies
+        uses: ./.github/actions/setup
+        with:
+          audit-level: moderate
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Lint
+        run: pnpm run lint
+
+  check-formatting:
+    name: Check formatting
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Check formatting
+        run: pnpm run format:check
+
+  check-docs:
+    name: Check docs
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Run svelte-check
+        run: pnpm run --dir docs check
+
+  build-docs:
+    name: Build docs
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Build
+        env:
+          # Not strictly necessary here, but good to check for BASE_PATH-related
+          # build issues early, since we need BASE_PATH for github pages.
+          BASE_PATH: "/${{ github.event.repository.name }}"
+        run: pnpm run build
+
+  sonarcloud:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: 'Run SonarQube cloud scanner'
+        uses: minvws/action-sonarqube@v1
+        with:
+          sonar-token: ${{ secrets.SONAR_TOKEN }}

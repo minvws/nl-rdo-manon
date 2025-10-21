@@ -1,72 +1,103 @@
 # Manon
-De documentatie is te vinden op https://minvws.github.io/nl-rdo-manon. Deze wordt gegenereerd op basis van de docs directory binnen deze repo.
 
-Er wordt momenteel nog hard gewerkt aan Manon en de documentatie. Het kan daarom zijn dat sommige onderdelen nog niet volledig getest zijn of nog missen. Kom je een probleem tegen dat nog niet gedocumenteerd staat binnen de issues op de manon repository meld ze vooral. Dan maakt ze inzichtelijk en oplosbaar.
+> [!NOTE]
+>
+> For English, see [English](README.en.md).
 
-## Wat
-Manon is een design framework dat gebruik maakt van de volgende principes:
+## 🙋 Over Manon
 
-### "Classless" waar mogelijk. 
-Als er gestyled kan worden op basis van de HTML-structuur heeft dit de voorkeur. Gescheiden code-lagen voor zover dit mogelijk is. Dit zorgt voor overzichtelijke goed onderhoudbare code waarbij de visuele weergave efficient aangepast kan worden met zo min mogelijk aanpassingen binnen de HTML. Bijvoorbeeld door een ander CSS-component in te laden voor dezelfde HTML-structuur.
+Manon is een design framework dat de volgende principes hanteert:
 
-### Zo klein mogelijk
-Gebruik enkel wat je nodig hebt. Losse componenten die gebruikt kunnen worden binnen projecten zonder de hele set te hoeven importeren.
+### ✨ "Classless" waar mogelijk.
 
-### Instelbaar
-Componenten zijn instelbaar door middel van variabelen en de kleine geselecteerde toegepaste set voorkomt onnodige overschrijvingen van CSS. Zie de documentatie of de variabelen-bestanden voor het overzicht van de instelbare variabelen per component.
+Manon geeft de voorkeur aan styling op basis van de HTML-structuur, wat zorgt
+voor overzichtelijke en goed onderhoudbare code. Dit maakt efficiënte visuele
+aanpassingen mogelijk met minimale HTML-wijzigingen, bijvoorbeeld door een ander
+CSS-component in te laden voor dezelfde HTML-structuur.
 
-## Oorsprong
-Tijdens de vaccinatiecampagne werden er in korte tijd veel websites gelanceerd en in beheer genomen. Met strikte huisstijlvoorschriften vanuit de rijksoverheid, de wens om toegankelijke websites te leveren en gezien de dynamiek van de pandemie voldeden de bestaande oplossingen niet. Daarom is door het Ministerie van VWS in korte tijd een framework gebouwd om het bouwen en beheren van een rijkshuisstijl conforme website te vereenvoudigen. Dit pakket is aangepast om het voor een breder publiek bruikbaar te maken. 
+### 📦 Zo klein mogelijk
 
-Het verschil tussen de Manon Rijk met de rijkshuisstijl en Manon Open voor algemeen gebruik is dat het pakket variabel en instelbaar is gemaakt. Waar de eerste versie van Manon een pakket was dat als geheel werd geimplementeerd is Manon Open geschreven zodat je zelf kan uitkiezen welke componenten en welke stukken CSS je wilt toevoegen. Hierdoor hoef je weinig overrides te doen en krijg je een zo klein mogelijk CSS-bestand.
+Gebruik alleen wat je nodig hebt. Manon bestaat uit losse componenten die
+afzonderlijk geïmporteerd kunnen worden, zodat je niet de hele set hoeft te
+gebruiken.
 
-## Licentie
-Zie [LICENSES.md](./LICENSES.md).
+### 🛠️ Instelbaar
 
-Alle lettertypes binnen Manon vallen onder en behouden hun eigen licentie. Voor meer informatie zie bijvoorbeeld: Neuton & Open Sans.
+Componenten zijn instelbaar via variabelen. De modulaire opzet voorkomt onnodige
+overschrijvingen van CSS. Raadpleeg de documentatie of de variabelen-bestanden
+voor een overzicht van de instelbare variabelen per component.
 
-Voor meer informatie bekijk de bijbehorende mappen voor extra of specifiekere licenties (indien beschikbaar) of bezoek: 
+## 📚 Documentatie
 
-### Neuton
-https://fonts.google.com/specimen/Neuton/about
+De documentatie is te vinden op https://minvws.github.io/nl-rdo-manon. Deze
+wordt gegenereerd op basis van de [docs](./docs) directory binnen deze repo.
 
-### Open Sans
-https://fonts.google.com/specimen/Open+Sans/about
+## 🚀 Aan de slag
 
+Om Manon in je project te gebruiken:
 
-# English
+1.  Zorg ervoor dat je project is ingesteld om Sass te gebruiken en dat je een
+    Sass-compiler hebt geïnstalleerd. Als je build-systeem geen Sass
+    ondersteunt, kun je
+    [de Sass command-line tool](https://sass-lang.com/documentation/cli/dart-sass/)
+    installeren.
 
-# Manon
-The documentation can be found on https://minvws.github.io/nl-rdo-manon, it is generated using the docs directory on this repo. Manon and the documentation are currently being developed. This means that it's possible that parts haven't been fully tested or added yet. It also means that as it is in development things may change. If you run into any issues that haven't been documented within the repository feel free to add them. This will make them visual and solvable. We highly appreciate the feedback and insight.
+    ```bash
+    npm install sass
+    ```
 
-## What
-Manon is a design framework that is based on the following principles:
+2.  Installeer Manon en Manon Themes via npm:
 
-### "Classless" when possible.
-Manon uses the power of css when possible. This means adding little to no classes within the HTML is preferred. That way the code layers stay as separate as possible which leads to code that is easy to read and maintain. Making it possible to change the visual look of the application without little to no changes within the HTML structure.
+    ```bash
+    npm install @minvws/manon
+    npm install @minvws/manon-themes
+    ```
 
-### As small as possible
-Only use what you need. Separate components that can be used within a project without the need to add the whole set of options.
+3.  Importeer in je project het Manon framework en een thema naar keuze.
 
-### Adjustable
-Components are adjustable through variables. The small "only what I needed set" makes sure you don't need unnecessary overrides within your CSS. For more information on the available variables and how to use them see the documentation.
+    ```scss
+    // Importeer het Manon framework en zijn componenten
+    @use "@minvws/manon/application-base";
 
-## Origin
-During the vaccination campaign a lot of applications were launched and managed within a short time frame. With the strict branding requirements of the Rijksoverheid, the wish to produce accessible websites and due to the dynamic of the pandemic, the current solutions didn't meet the requirements. So within a short time frame the Ministry of Welfare, Healthcare and Sports produced a framework to do just that to simplify and optimize the production of their needed applications and sites. This framework has now been expanded and adjusted to be of use to a broader audience.
+    // Je kunt hier ook specifieke componenten importeren indien nodig:
+    // @use "@minvws/manon/p"
 
-The biggest difference between Manon Rijk (the version which uses the Rijksoverheid branding) and Manon Open, this version which is for general use, is that the open version is adjustable. As well as the added possibility to only select and use the parts that are needed within your project.
+    // Importeer het iCore Open thema
+    @use "@minvws/manon-themes/icore-open";
+    ```
 
+Je bent nu klaar om de componenten in je HTML te gebruiken. Volg de instructies
+in de [Componentenbibliotheek](https://minvws.github.io/nl-rdo-manon/components)
+over hoe je de componenten in je HTML kunt gebruiken. Elke component heeft zijn
+eigen pagina met voorbeelden en codefragmenten.
 
-## License
-Zie [LICENSES.md](./LICENSES.md).
+Je kunt ook de
+[tutorial](https://github.com/minvws/nl-rdo-manon/tree/main/examples/tutorial)
+volgen om te leren hoe je de componenten op een meer gestructureerde manier kunt
+gebruiken.
 
-All fonts used within Manon remain under their own license. For example: Neuton & Open Sans.
+Daarnaast hebben we
+[enkele voorbeeldimplementaties](https://github.com/minvws/nl-rdo-manon/tree/main/examples/)
+geleverd in verschillende frameworks.
 
-For more information check their respective folders for extra/ more specific licenses (if available) or visit:
+## 🌱 Oorsprong
 
-### Neuton
-https://fonts.google.com/specimen/Neuton/about
+Manon is ontstaan uit de behoefte aan een flexibel design framework voor de
+vaccinatiecampagne, waarbij snel veel websites moesten worden gelanceerd onder
+strikte huisstijl- en toegankelijkheidsvoorschriften van de rijksoverheid. Het
+Ministerie van VWS heeft dit framework ontwikkeld om het bouwen en beheren van
+rijkshuisstijl conforme websites te vereenvoudigen. Deze versie is aangepast
+voor breder gebruik.
 
-### Open Sans
-https://fonts.google.com/specimen/Open+Sans/about
+Het verschil tussen Manon Rijk (met rijkshuisstijl) en Manon Open (algemeen
+gebruik) is dat Manon Open variabel en instelbaar is. Waar de eerste versie van
+Manon als geheel werd geïmplementeerd, stelt Manon Open je in staat om zelf te
+kiezen welke componenten en CSS-delen je wilt toevoegen. Dit resulteert in
+minder overrides en een kleiner CSS-bestand.
 
+## 📄 Licentie
+
+Deze repository volgt de
+[REUSE Specification v3.2](https://reuse.software/spec/). Zie
+[REUSE.toml](./REUSE.toml), [LICENSES/](./LICENSES/) en de individuele
+`*.license`-bestanden voor copyright- en licentie-informatie.

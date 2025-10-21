@@ -1,5 +1,7 @@
 packages:
-- docs
-- manon
-- themes
-- examples/*
+  - "docs"
+  - "manon"
+  - "themes"
+  - "examples/*"
+  - "!examples/tutorial"
+  - "icore_open_docs"

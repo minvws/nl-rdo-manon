@@ -1,11 +1,22 @@
 {
   "private": true,
-  "license": "EUPL-1.2",
-  "packageManager": "pnpm@8.12.0",
-	"engines": {
-		"pnpm": "^8.0.0"
-	},
+  "packageManager": "pnpm@10.4.1",
+  "engines": {
+    "pnpm": ">=10"
+  },
   "scripts": {
-    "dev": "pnpm run --dir docs dev"
+    "dev": "pnpm run --dir docs dev",
+    "build": "pnpm run --dir docs build",
+    "lint": "pnpm run --dir manon lint:css",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "pnpm": {
+    "overrides": {
+      "cookie@<0.7.0": ">=0.7.0"
+    }
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
   }
 }

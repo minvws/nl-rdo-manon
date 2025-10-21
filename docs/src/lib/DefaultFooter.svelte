@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import SiteNavLinks from "$lib/SiteNavLinks.svelte";
 </script>
 

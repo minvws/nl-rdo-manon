@@ -1,0 +1,68 @@
+name: Publish package
+
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  publish-npm:
+    name: Publish to npm
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup
+        uses: ./.github/actions/setup
+        with:
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Get semver from tag
+        run: |
+          RELEASE_VERSION=${GITHUB_REF#refs/*/}
+          NPM_TAG=$(echo ${RELEASE_VERSION} | grep -oP '^v\d+\.\d+\.\d+-?\K(\w+)?')
+          echo "RELEASE_VERSION=${RELEASE_VERSION}" >> $GITHUB_ENV
+          echo "NPM_TAG=${NPM_TAG:-latest}" >> $GITHUB_ENV
+
+      - name: Copy README to manon package
+        run: cp README.md manon/
+
+      - name: Publish
+        # pnpm checks whether you are on the main branch when running publish,
+        # but github will checkout the tag, so we need to disable the check
+        run: |
+          pnpm --recursive npm-version --no-git-tag-version ${{ env.RELEASE_VERSION }}
+          pnpm --recursive publish --no-git-checks --access public --tag ${{ env.NPM_TAG }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  publish-github:
+    name: Publish to GitHub
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup
+        uses: ./.github/actions/setup
+        with:
+          registry-url: "https://npm.pkg.github.com"
+
+      - name: Get semver from tag
+        run: |
+          RELEASE_VERSION=${GITHUB_REF#refs/*/}
+          NPM_TAG=$(echo ${RELEASE_VERSION} | grep -oP '^v\d+\.\d+\.\d+-?\K(\w+)?')
+          echo "RELEASE_VERSION=${RELEASE_VERSION}" >> $GITHUB_ENV
+          echo "NPM_TAG=${NPM_TAG:-latest}" >> $GITHUB_ENV
+
+      - name: Copy README to manon package
+        run: cp README.md manon/
+
+      - name: Publish
+        # pnpm checks whether you are on the main branch when running publish,
+        # but github will checkout the tag, so we need to disable the check
+        run: |
+          pnpm --recursive npm-version --no-git-tag-version ${{ env.RELEASE_VERSION }}
+          pnpm --recursive publish --no-git-checks --access public --tag ${{ env.NPM_TAG }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -3,9 +3,8 @@
 /* Variables */
 @forward "variables";
 
-/* Fonts & icons */
+/* Fonts */
 @use "fonts";
-@use "icons";
 
 /* Top level styling */
 @use "application-base";
@@ -16,9 +15,13 @@
 @use "fundamentals/headings-base-set";
 
 /* Components */
-@use "components/icon";
+@use "components/accordion";
 @use "components/breadcrumb-bar";
+@use "components/button-ghost";
+@use "components/filter";
+@use "components/icon";
+@use "components/sidemenu";
 @use "components/tile";
 @use "components/header-navigation";
 @use "components/logo";
-@use "components/background-color-offset";
+@use "components/notification";

@@ -1,0 +1,60 @@
+/* Header navigation button */
+@use "../color-scheme";
+
+:root {
+  --header-navigation-button-font-weight: bold;
+  --header-navigation-button-background-color: transparent;
+  --header-navigation-button-text-color: #{color-scheme.$oc-white};
+  --header-navigation-button-border-width: 0;
+  --header-navigation-button-hover-border-radius: 0;
+  --header-navigation-button-min-width: 1.75rem;
+  --header-navigation-button-height: 100%;
+
+  /* Hover */
+  --header-navigation-button-hover-background-color: #{color-scheme.$oc-gray-7};
+  --header-navigation-button-hover-text-color: var(
+    --header-navigation-button-text-color
+  );
+  --header-navigation-button-hover-font-weight: var(
+    --header-navigation-button-font-weight
+  );
+
+  /* Icon only */
+  --header-navigation-button-icon-only-font-size: 0;
+  --header-navigation-button-hover-icon-font-size: var(
+    --header-navigation-button-icon-only-icon-font-size
+  );
+
+  /* Icon only hover */
+  --header-navigation-button-icon-only-hover-font-size: 0;
+
+  /* Active */
+  --header-navigation-button-active-background-color: var(
+    --header-navigation-button-hover-background-color
+  );
+  --header-navigation-button-active-text-color: var(
+    --header-navigation-button-text-color
+  );
+  --header-navigation-button-active-border-width: 0;
+  --header-navigation-button-active-font-weight: var(
+    --header-navigation-button-hover-font-weight
+  );
+
+  /* Focus */
+  --header-navigation-button-focus-background-color: var(
+    --header-navigation-button-hover-background-color
+  );
+  --header-navigation-button-focus-text-color: var(
+    --header-navigation-button-text-color
+  );
+  --header-navigation-button-focus-border-width: 0;
+  --header-navigation-button-focus-font-weight: var(
+    --header-navigation-button-hover-font-weight
+  );
+  --header-navigation-button-focus-border-radius: 0.25rem;
+  --header-navigation-button-focus-outline: 0;
+  --header-navigation-button-focus-outline-offset: 0;
+  --header-navigation-button-focus-box-shadow: 0 0 0 2px
+    #{color-scheme.$oc-blue-6};
+  --header-navigation-button-focus-z-index: 2;
+}

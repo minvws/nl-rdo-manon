@@ -2,18 +2,22 @@
 /*----------------- components/code-base-variables.scss ----------------*/
 /*----------------------------------------------------------------------*/
 :root {
-  --code-base-base-background-color: var(
+  --code-base-background-color: var(
     --application-base-tint-1-background-color,
     var(--application-base-background-color)
   );
-  --code-base-base-text-color: var(
+
+  --code-base-text-color: var(
     --application-base-tint-1-text-color,
     var(--application-base-text-color)
   );
   --code-base-font-size: inherit;
   /* --code-base-width: ; */
   /* --code-base-word-break: ; */
+  /* --code-base-overflow-wrap: ; */
+  /* --code-base-padding*/
 
   /* After breakpoint */
   /* --code-base-breakpoint-word-break: ; */
+  /* --code-base-breakpoint-overflow-wrap: ; */
 }

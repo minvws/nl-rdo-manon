@@ -7,6 +7,9 @@
 %pagination-active-item-styling {
   background-color: var(--pagination-link-active-background-color);
   color: var(--pagination-link-active-text-color);
+  border-width: var(--pagination-link-active-border-width);
+  border-style: var(--pagination-link-active-border-style);
+  border-color: var(--pagination-link-active-border-color);
 }
 
 %pagination-link-styling {
@@ -32,7 +35,8 @@
     border-color: var(--pagination-link-hover-border-color);
   }
 
-  &[aria-current] {
+  &[aria-current="page"],
+  &[aria-current="true"] {
     @extend %pagination-active-item-styling;
   }
 
@@ -67,8 +71,10 @@
       @include icon.icon-format("pagination-previous-");
       @include icon.icon-content("pagination-previous-");
 
-      margin-left: var(--pagination-previous-icon-margin-left);
-      margin-right: var(--pagination-previous-icon-margin-right);
+      & {
+        margin-left: var(--pagination-previous-icon-margin-left);
+        margin-right: var(--pagination-previous-icon-margin-right);
+      }
     }
   }
 
@@ -79,8 +85,10 @@
       @include icon.icon-format("pagination-next-");
       @include icon.icon-content("pagination-next-");
 
-      margin-left: var(--pagination-next-icon-margin-left);
-      margin-right: var(--pagination-next-icon-margin-right);
+      & {
+        margin-left: var(--pagination-next-icon-margin-left);
+        margin-right: var(--pagination-next-icon-margin-right);
+      }
     }
   }
 }

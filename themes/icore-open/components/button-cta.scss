@@ -1,0 +1,10 @@
+/* Button cta */
+
+@use "../color-scheme";
+
+:root {
+  --button-cta-text-color: #{color-scheme.$oc-white};
+  --button-cta-hover-text-color: #{color-scheme.$oc-white};
+  --button-cta-background-color: #{color-scheme.$oc-blue-8};
+  --button-cta-hover-background-color: #{color-scheme.$oc-blue-9};
+}

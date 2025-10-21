@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Django Manon Example Project{% endblock title %}
+
+{% block main %}
+<main>
+  <section id="introduction" class="branding-color-accent-5">
+    <div>
+      <h1>Polls example app</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </section>
+  <section>
+    <div>
+      <h1>Poll: {{ question.question_text }}</h1>
+
+      <div class="horizontal-scroll">
+        <table>
+          <caption>Results</caption>
+          <thead>
+            <tr>
+              <th scope="col">Choice</th>
+              <th scope="col">Votes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for choice in question.choice_set.all %}
+            <tr>
+              <td>{{ choice.choice_text }}</td>
+              <td>{{ choice.votes }} vote{{ choice.votes|pluralize }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+      </div>
+
+      <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+    </div>
+  </section>
+</main>
+{% endblock main %}

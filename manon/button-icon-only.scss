@@ -3,29 +3,13 @@
 /*---------------------------------------------------------------*/
 @use "button-icon-only-variables";
 @use "mixins/icon";
+@use "mixins/button";
+@use "mixins/outline";
+@use "mixins/icon-only";
 
 button,
-a.button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
+a.button {
   &.icon-only {
-    font-size: 0;
-    gap: 0;
-    min-width: var(--button-icon-only-min-width);
-    width: var(--button-icon-only-width);
-    min-height: var(--button-icon-only-min-height);
-    height: var(--button-icon-only-height);
-    background-color: transparent;
-    border: 0;
-
-    &::before {
-      @include icon.icon;
-      font-family: var(--button-icon-only-font-family);
-      font-size: var(--button-icon-only-font-size);
-      padding-right: var(--button-icon-only-padding-right);
-      padding-left: var(--button-icon-only-padding-left);
-      color: var(--button-icon-only-text-color);
-    }
+    @include icon-only.icon-only("button-icon-only-");
   }
 }

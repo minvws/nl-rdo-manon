@@ -7,6 +7,7 @@
     --header-justify-content,
     flex-start
   );
+  --header-content-wrapper-flex-wrap: wrap;
   --header-content-wrapper-align-items: var(--header-align-items, center);
   --header-content-wrapper-gap: var(--header-gap, 2rem);
   --header-content-wrapper-padding-top: var(--header-padding-top, 0);

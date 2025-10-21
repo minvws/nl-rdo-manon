@@ -1,0 +1,10 @@
+/* Link Focus */
+
+@use "../color-scheme";
+
+:root {
+  --link-focus-text-color: #{color-scheme.$oc-blue-8};
+  --link-focus-text-decoration: #{color-scheme.$oc-blue-8};
+  --link-focus-outline: 1px solid var(--link-focus-text-color);
+  --link-focus-outline-offset: 0.25rem;
+}

@@ -3,9 +3,9 @@
 /*---------------------------------------------------------------*/
 @use "button-to-top-variables";
 
-.to-top,
 a.button.to-top,
-button.to-top {
+button.to-top,
+.to-top {
   position: var(--button-to-top-position);
   bottom: var(--button-to-top-bottom);
   right: var(--button-to-top-right);
@@ -21,14 +21,39 @@ button.to-top {
   border-color: var(--button-to-top-border-color);
   background-color: var(--button-to-top-background-color);
   color: var(--button-to-top-text-color);
+  gap: var(--button-to-top-gap, 0);
 
   &:hover {
     background-color: var(--button-to-top-hover-background-color);
     color: var(--button-to-top-hover-text-color);
-    border-color: var(--button-to-top-hover-border-color);
   }
 
-  &::before {
-    color: var(--button-to-top-icon-color);
+  &:hover,
+  &:focus,
+  &:active {
+    border-radius: var(--button-to-top-border-radius);
+    border-color: var(--button-to-top-border-color);
+  }
+
+  &.icon,
+  .icon {
+    &::before {
+      color: var(--button-to-top-icon-color);
+      padding: 0;
+    }
+  }
+
+  &:hover .icon,
+  &:visited .icon,
+  &:visited:hover .icon,
+  &.icon:hover,
+  &.icon:visited,
+  &.icon:visited:hover {
+    &::before {
+      color: var(
+        --button-to-top-icon-color-hover,
+        var(--button-to-top-icon-color)
+      );
+    }
   }
 }

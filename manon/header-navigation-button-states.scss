@@ -3,6 +3,9 @@
 /*---------------------------------------------------------------*/
 @use "header-navigation-button-states-variables";
 @use "mixins/link";
+@use "mixins/icon";
+@use "button-icon";
+@use "mixins/outline";
 
 $header-navigation-button-states: "active", "focus", "hover";
 
@@ -15,6 +18,16 @@ body > header,
         /* Testing purposes */
       &.visited {
         @include link.link-and-icon-styling("header-navigation-button-");
+      }
+
+      &:focus,
+      &.focus {
+        @include outline.outline("header-navigation-button-focus-");
+
+        &:visited,
+        &.visited {
+          @include outline.outline("header-navigation-button-focus-");
+        }
       }
     }
 
@@ -31,6 +44,19 @@ body > header,
             "header-navigation-button-" + $state + "-"
           );
         }
+
+        /* Icon */
+        &.icon {
+          @include icon.icon-format("header-navigation-button-" + $state + "-");
+          @include icon.icon-content(
+            "header-navigation-button-" + $state + "-"
+          );
+        }
+      }
+
+      &:focus,
+      &.focus {
+        @include outline.outline("header-navigation-button-focus-");
       }
     }
   }

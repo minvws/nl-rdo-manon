@@ -1,0 +1,15 @@
+/* Form input */
+
+@use "../color-scheme";
+
+:root {
+  --form-base-text-color: #{color-scheme.$oc-gray-9};
+  --form-base-font-size: 1rem;
+  --form-base-font-weight: bold;
+  --form-base-gap: var(--spacing-100);
+  --form-base-background-color: #{color-scheme.$oc-white};
+  --form-base-padding-top: 0;
+  --form-base-padding-right: 0;
+  --form-base-padding-bottom: 0;
+  --form-base-padding-left: 0;
+}

@@ -1,0 +1,31 @@
+name: Setup
+description: "Setup Node.js and pnpm and install dependencies"
+
+inputs:
+  registry-url:
+    description: "Registry URL to setup up for auth. Passed on to actions/setup-node."
+    default: ""
+  audit-level:
+    description: "npm audit-level <info|low|moderate|high|critical|none>"
+    default: "high"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        cache: pnpm
+        node-version-file: ".nvmrc"
+        registry-url: ${{ inputs.registry-url }}
+
+    - name: Audit dependencies
+      shell: bash
+      run: pnpm audit --audit-level=${{ inputs.audit-level }}
+
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install --ignore-scripts

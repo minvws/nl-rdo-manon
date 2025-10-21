@@ -10,6 +10,9 @@
   @include link.styling-variables("link-visited-", "link-");
   @include outline.outline-variables("link-visited-", "link-");
 
+  /* Visited hover */
+  @include link.styling-variables("link-visited-hover-", "link-visited-");
+
   /* Icon */
   @include link.icon-styling-variables(
     "link-visited-icon-",

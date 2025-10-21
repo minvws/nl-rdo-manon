@@ -1,6 +1,8 @@
 /*---------------------------------------------------------------*/
 /*----------- components/button-base-variables.scss -------------*/
 /*---------------------------------------------------------------*/
+@use "mixins/outline";
+
 :root {
   /* Button */
   --button-base-flex: inline-flex;
@@ -39,16 +41,16 @@
     --application-base-accent-color-hover-text-color,
     var(--application-base-accent-color-text-color)
   );
-  --button-base-hover-border-color: var(--button-base-hover-background-color);
+  --button-base-hover-border-color: var(--button-base-border-color);
+  --button-base-hover-border-width: var(--button-base-border-width);
+  --button-base-hover-border-style: var(--button-base-border-style);
+  --button-base-hover-border-radius: var(--button-base-border-radius);
 
   /* Active */
-  /* --button-base-active-outline-style: ; */
-  /* --button-base-active-outline-color: ; */
-  /* --button-base-active-outline-width: ; */
-  /* --button-base-active-outline-offset: ; */
-  --button-base-active-border-style: var(--button-base-border-style);
-  /* --button-base-active-border-color: ; */
   --button-base-active-border-width: var(--button-base-border-width);
+  --button-base-active-border-style: var(--button-base-border-style);
+  --button-base-active-border-color: var(--application-base-accent-color);
+  --button-base-active-border-radius: var(--button-base-border-radius);
   --button-base-active-background-color: var(
     --application-base-accent-color-active,
     var(--application-base-accent-color)
@@ -59,12 +61,11 @@
   );
 
   /* Focus */
-  /* --button-base-focus-outline-style: ; */
-  /* --button-base-focus-outline-color: ; */
-  /* --button-base-focus-outline-width: ; */
-  /* --button-base-focus-outline-offset: ; */
+  --button-base-focus-outline: 1px dashed black;
+  --button-base-focus-outline-offset: 0.25rem;
+  --button-base-focus-z-index: 2;
   --button-base-focus-border-style: var(--button-base-border-style);
-  /* --button-base-focus-border-color: ; */
+  --button-base-focus-border-color: var(--application-base-accent-color);
   --button-base-focus-border-width: var(--button-base-border-width);
   --button-base-focus-background-color: var(
     --application-base-accent-color-focus,
@@ -74,24 +75,11 @@
     --application-base-accent-color-focus-text-color,
     var(--application-base-accent-color-text-color)
   );
-
-  /* Selected */
-  /* --button-base-selected-outline-style: ; */
-  /* --button-base-selected-outline-color: ; */
-  /* --button-base-selected-outline-width: ; */
-  /* --button-base-selected-outline-offset: ; */
-  --button-base-selected-border-style: var(--button-base-border-style);
-  /* --button-base-selected-border-color: ; */
-  --button-base-selected-border-width: var(--button-base-border-width);
-  --button-base-selected-background-color: var(
-    --application-base-accent-color-selected,
-    var(--application-base-accent-color)
-  );
-  --button-base-selected-text-color: var(
-    --application-base-accent-color-selected-text-color,
-    var(--application-base-accent-color-text-color)
-  );
+  --button-base-focus-border-radius: var(--button-base-border-radius);
 
   /* Image */
   --button-base-image-max-width: 1.5rem;
+
+  /* Visited link */
+  --link-button-base-text-color: var(--button-base-text-color);
 }

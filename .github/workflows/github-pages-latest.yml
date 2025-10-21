@@ -1,0 +1,68 @@
+name: Deploy Latest Docs
+
+# Run this workflow when the "Deploy docs" workflow completes
+on:
+  workflow_run:
+    workflows: ["Deploy docs"]
+    types:
+      - completed
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  actions: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy-latest:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0 # Fetch all history for tags
+
+      - name: Ensure this is the latest tag
+        run: |
+          # Get all tags, sort them semantically, and pick the highest stable version
+          LATEST_TAG=$(git tag --sort=-v:refname | grep -v - | head -n 1)
+          TRIGGER_TAG=$(git tag --points-at ${{ github.event.workflow_run.head_sha }} | head -n 1)
+
+          if [ "$TRIGGER_TAG" != "$LATEST_TAG" ]; then
+            echo "The triggered tag ($TRIGGER_TAG) is not the latest tag ($LATEST_TAG). Exiting."
+            gh run cancel ${{ github.run_id }}
+            gh run watch ${{ github.run_id }}
+          fi
+
+          echo "LATEST_TAG=$LATEST_TAG" >> $GITHUB_ENV
+
+      - name: Checkout latest tag
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ env.LATEST_TAG }}
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Build
+        working-directory: docs
+        env:
+          BASE_PATH: "/${{ github.event.repository.name }}"
+        run: pnpm run build
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs/build/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

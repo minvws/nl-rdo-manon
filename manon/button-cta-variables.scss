@@ -1,52 +1,14 @@
 /*---------------------------------------------------------------*/
 /*----------- components/button-cta-variables.scss --------------*/
 /*---------------------------------------------------------------*/
+@use "mixins/button";
+@use "mixins/outline";
+
 :root {
-  /* Button */
-  --button-cta-background-color: green;
-  --button-cta-text-color: #fff;
-  --button-cta-border-width: 2px;
-  --button-cta-border-style: solid;
-  --button-cta-border-color: var(--button-cta-background-color);
-  --button-cta-border-radius: var(--button-base-border-radius, 0);
-  --button-cta-outline-style: initial;
-  --button-cta-outline-width: initial;
-  --button-cta-outline-color: initial;
-  --button-cta-outline-offset: initial;
-
-  /* Hover */
-  --button-cta-hover-background-color: darkgreen;
-  --button-cta-hover-text-color: white;
-  --button-cta-hover-border-width: var(--button-cta-border-width);
-  --button-cta-hover-border-style: var(--button-cta-border-style);
-  --button-cta-hover-border-color: var(--button-cta-hover-background-color);
-  --button-cta-hover-border-radius: var(--button-cta-border-radius);
-  --button-cta-hover-outline-style: initial;
-  --button-cta-hover-outline-color: initial;
-  --button-cta-hover-outline-width: initial;
-  --button-cta-hover-outline-offset: initial;
-
-  /* Active */
-  --button-cta-active-background-color: var(
-    --button-cta-hover-background-color
+  @include button.button-variables("button-cta-", "button-base-");
+  @include outline.outline-variables("button-cta-focus-", "button-base-focus-");
+  @include button.link-button-styling-variables(
+    "link-button-cta-",
+    "button-base-"
   );
-  --button-cta-active-text-color: var(--button-cta-hover-text-color);
-  --button-cta-active-border-width: var(--button-cta-border-width);
-  --button-cta-active-border-style: var(--button-cta-border-style);
-  --button-cta-active-border-color: var(--button-cta-hover-border-color);
-  --button-cta-active-outline-style: initial;
-  --button-cta-active-outline-color: initial;
-  --button-cta-active-outline-width: initial;
-  --button-cta-active-outline-offset: initial;
-
-  /* Focus */
-  --button-cta-focus-background-color: var(--button-cta-hover-background-color);
-  --button-cta-focus-text-color: var(--button-cta-hover-text-color);
-  --button-cta-focus-border-width: var(--button-cta-border-width);
-  --button-cta-focus-border-style: var(--button-cta-border-style);
-  --button-cta-focus-border-color: var(--button-cta-hover-border-color);
-  --button-cta-focus-outline-style: initial;
-  --button-cta-focus-outline-color: initial;
-  --button-cta-focus-outline-width: initial;
-  --button-cta-focus-outline-offset: initial;
 }

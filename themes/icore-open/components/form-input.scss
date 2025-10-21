@@ -1,0 +1,10 @@
+/* Form input */
+
+@use "../color-scheme";
+
+:root {
+  --form-input-border-radius: var(--border-radius-s);
+  --form-input-border-width: 1px;
+  --form-input-border-style: solid;
+  --form-input-border-color: #{color-scheme.$oc-gray-6};
+}

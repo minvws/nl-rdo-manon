@@ -3,16 +3,14 @@
 /* Variables */
 @forward "variables";
 
-/* Fonts & icons */
+/* Fonts */
 @use "fonts";
-@use "icons";
 
 /* Styling on the highest level */
 @use "application-base";
 
 /* Fundamentals */
 @use "fundamentals/spot-large"; /* color set */
-@use "fundamentals/colors";
 @use "fundamentals/body-text-set";
 @use "fundamentals/headings-base-set";
 @use "fundamentals/spacing";
@@ -23,19 +21,23 @@
 @use "layout/section";
 
 /* Components */
+@use "components/accordion";
 @use "components/breadcrumb-bar";
-
+@use "components/button-base";
+@use "components/button-cta";
+@use "components/button-ghost";
+@use "components/filter";
+@use "components/footer-navigation-link";
+@use "components/footer";
+@use "components/form-input";
 @use "components/icon";
+@use "components/icon-only";
 @use "components/logo";
 @use "components/pagination";
 @use "components/sidemenu";
-@use "components/tile";
-@use "components/button-base";
-@use "components/button-cta";
-@use "components/form-input";
-@use "components/footer";
-@use "components/footer-navigation-link";
 @use "components/skip-to-content";
+@use "components/tile";
+@use "components/notification";
 
 /* Header */
 @use "components/header";

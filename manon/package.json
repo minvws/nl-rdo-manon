@@ -1,11 +1,14 @@
 {
   "name": "@minvws/manon",
+  "version": "0.0.0",
   "license": "EUPL-1.2",
   "files": [
-    "*.scss",
     "**/*.scss",
-    "*.js",
-    "**/*.js"
+    "**/*.js",
+    "**/*.license",
+    "LICENSES",
+    "REUSE.toml",
+    "README.md"
   ],
   "scripts": {
     "format": "prettier --write .",
@@ -15,12 +18,12 @@
     "npm-version": "npm version"
   },
   "peerDepencency": {
-    "sass": ">=1.23"
+    "sass": ">=1.77.6"
   },
   "devDependencies": {
-    "prettier": "^3.0.3",
-    "stylelint": "^15.11.0",
-    "stylelint-config-standard-scss": "^11.0.0"
+    "prettier": "^3.6.2",
+    "stylelint": "^16.24.0",
+    "stylelint-config-standard-scss": "^15.0.1"
   },
   "repository": {
     "type": "git",

@@ -1,21 +1,26 @@
 {
   "name": "@minvws/manon-themes",
+  "version": "0.0.0",
   "license": "EUPL-1.2",
   "files": [
     "**/*.scss",
     "**/*.ico",
     "**/*.png",
     "**/*.svg",
+    "**/*.eot",
     "**/*.ttf",
     "**/*.woff",
-    "**/*.woff2"
+    "**/*.woff2",
+    "**/*.license",
+    "LICENSES",
+    "REUSE.toml",
+    "README.md"
   ],
   "scripts": {
     "npm-version": "npm version"
   },
-  "peerDepencency": {
-    "@minvws/manon": "workspace:*",
-    "sass": ">=1.23"
+  "peerDependencies": {
+    "@minvws/manon": "workspace:*"
   },
   "repository": {
     "type": "git",

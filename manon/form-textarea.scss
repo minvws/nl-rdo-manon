@@ -14,6 +14,7 @@ form {
     color: var(--form-textarea-text-color, inherit);
     background-color: var(--form-textarea-background-color);
     min-height: var(--form-textarea-min-height);
+    border-radius: var(--form-textarea-border-radius);
     border-width: var(--form-textarea-border-width);
     border-style: var(--form-textarea-border-style);
     border-color: var(--form-textarea-border-color);
