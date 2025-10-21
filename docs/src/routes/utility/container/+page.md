@@ -17,7 +17,7 @@ Bijvoorbeeld voor blokken met alleen een formulier of blokken in de authenticati
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/container";
+@use "@minvws/manon/components/container";
 ```
 
 Beschikbare classes:

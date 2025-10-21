@@ -18,7 +18,7 @@ nadruk op de tekst, waardoor deze opvalt binnen de context van de pagina.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/emphasized";
+@use "@minvws/manon/components/emphasized";
 ```
 
 <h2 id="examples">Voorbeelden:</h2>

@@ -25,8 +25,8 @@ inhoud van de tabel volledig willen horen of overslaan.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
-@use "@minvws/manon/table-caption";
+@use "@minvws/manon/components/table";
+@use "@minvws/manon/components/table-caption";
 ```
 
 ### Benodigde stappen

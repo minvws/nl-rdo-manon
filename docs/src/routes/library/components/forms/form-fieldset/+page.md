@@ -14,7 +14,7 @@ Met een fieldset kun je in HTML velden groeperen die bij elkaar horen. Daar hoor
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/fieldset";
+@use "@minvws/manon/components/fieldset";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

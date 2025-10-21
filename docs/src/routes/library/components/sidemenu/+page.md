@@ -17,7 +17,7 @@ navigeren voor de gebruiker toegankelijk en overzichtelijk te houden.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/sidemenu";
+@use "@minvws/manon/components/sidemenu";
 ```
 
 JavaScript importeren:
@@ -41,8 +41,7 @@ navigeren voor de gebruiker toegankelijk en overzichtelijk te houden.
 In dit voorbeeld staat het zijmenu binnen de pagina bij de content. Gebruik deze
 weergave alleen als de inhoud van het zijmenu specifiek over de content gaat.
 Bijvoorbeeld een inhoudsopgave. Hoort het zijmenu niet bij de inhoud van de
-pagina. Plaats het zijmenu dan naast de pagina. Voor meer informatie zie
-[Zijmenu naast de pagina](/library/components/sidemenu/next-to-page).
+pagina. Plaats het zijmenu dan naast de pagina.
 
 <div class="resize">
   <iframe src="/snippets/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>

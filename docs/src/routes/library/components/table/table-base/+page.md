@@ -16,7 +16,7 @@ Een basisweergave van een tabel in HTML bestaat uit een `<table>` met rijen `<tr
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
+@use "@minvws/manon/components/table";
 ```
 
 <p class="explanation">

@@ -17,8 +17,8 @@ incorrect invoeren van data of een systeemfout.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/notification";
-@use "@minvws/manon/notification-confirmation";
+@use "@minvws/manon/components/notification";
+@use "@minvws/manon/components/notification-confirmation";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

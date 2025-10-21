@@ -15,10 +15,10 @@ Gebruik titels om structuur binnen de pagina aan te geven.
 
 ```scss
 /* Headings set */
-@use "@minvws/manon/headings-base-set";
+@use "@minvws/manon/components/headings-base-set";
 
 /* Headings */
-@use "@minvws/manon/headings";
+@use "@minvws/manon/components/headings";
 ```
 
 <h2 id="examples">Voorbeelden:</h2>
@@ -54,7 +54,7 @@ Beschikbare opties:
 - heading-xs
 
 ```scss
-@use "@minvws/manon/headings-base-set";
+@use "@minvws/manon/components/headings-base-set";
 ```
 
 <div class="visual-example">

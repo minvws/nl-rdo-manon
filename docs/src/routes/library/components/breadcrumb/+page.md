@@ -20,7 +20,7 @@ Breadcrumb-navigatie wordt meestal direct onder de navigatie en boven de pagina-
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/breadcrumb-bar";
+@use "@minvws/manon/components/breadcrumb-bar";
 ```
 
 <h2 id="examples">Voorbeelden:</h2>

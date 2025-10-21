@@ -13,9 +13,9 @@ Een datumveld stelt de gebruiker in staat om eenvoudig een datum te selecteren v
 
 <h2 id="quickstart">Snelstart</h2>
 
-```css
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-input";
+```scss
+@use "@minvws/manon/components/form";
+@use "@minvws/manon/components/form-input";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

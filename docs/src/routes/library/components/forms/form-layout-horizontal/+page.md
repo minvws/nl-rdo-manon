@@ -14,11 +14,11 @@ Voor het horizontaal uitlijnen van de invoervelden en labels binnen het formulie
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-horizontal";
+@use "@minvws/manon/components/form";
+@use "@minvws/manon/components/form-horizontal";
 
 /* Optional */
-@use "@minvws/manon/form-horizontal-fieldset";
+@use "@minvws/manon/components/form-horizontal-fieldset";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

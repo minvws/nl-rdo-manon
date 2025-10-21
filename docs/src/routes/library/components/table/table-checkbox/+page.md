@@ -16,7 +16,7 @@ Voor het selecteren van rijen van een tabel.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
+@use "@minvws/manon/components/table";
 ```
 
 <section id="examples">
