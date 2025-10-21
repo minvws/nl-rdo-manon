@@ -1,6 +1,9 @@
 ---
 title: Pagina-notificatie waarschuwing voorbeeld
 breadcrumb: Pagina-notificatie waarschuwing voorbeeld
+  - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
+  - Voorbeelden: "#examples"
 ---
 
 <section class="warning" role="group" aria-label="waarschuwing">
@@ -10,9 +13,19 @@ breadcrumb: Pagina-notificatie waarschuwing voorbeeld
   </div>
 </section>
 
-<h1 id="introduction">Pagina-notificatie waarschuwing voorbeeld</h1>
+<h2 id="introduction">Pagina-notificatie waarschuwing voorbeeld</h2>
 
 Voor het weergeven van notificaties op paginaniveau.
+
+<h2 id="quickstart">Snelstart</h2>
+
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/components/notification";
+@use "@minvws/manon/components/notification-warning-message";
+@use "@minvws/manon/components/notification-warning-page";
+```
 
 <h2 id="examples">Voorbeelden</h2>
 
@@ -28,19 +41,4 @@ Voor het voorbeeld zie bovenaan deze pagina.
 <p class="warning" role="group" aria-label="waarschuwing">
   <span>Waarschuwing:</span> Lorem ipsum dolor sit.
 </p>
-```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/getting-started/installation)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/notification";
-@use "@minvws/manon/notification-warning-message";
-@use "@minvws/manon/notification-warning-page";
 ```
