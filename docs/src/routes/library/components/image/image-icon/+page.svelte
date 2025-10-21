@@ -36,7 +36,7 @@
           dat geval is het ook mogelijk om een normale afbeelding als icoon te gebruiken.
         </p>
 
-        <h2 class="quickstart">Snelstart</h2>
+        <h2 id="quickstart">Snelstart</h2>
 
         <Code
           language="css"
