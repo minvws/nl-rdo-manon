@@ -1,7 +1,7 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
-@use "checkbox" as cb;
+@use "../mixins/form_fields" as forms;
 
 $breakpoint-1: 24rem !default;
 $checkbox-input-width: null !default;
@@ -11,7 +11,15 @@ $checkbox-input-width: null !default;
 }
 
 form {
-  @include cb.checkbox;
+  @include forms.checkbox;
+
+  p.error,
+  p.warning,
+  p.confirmation,
+  p.explanation,
+  p.primary {
+    margin: 0;
+  }
 
   @media (width >= $breakpoint-1) {
     .option-group {

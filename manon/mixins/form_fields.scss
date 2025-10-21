@@ -1,0 +1,67 @@
+@use "../mixins/theming";
+@use "../variables" as theme;
+@use "../functions/validators";
+
+@mixin checkbox-input {
+  input[type="checkbox"] {
+    cursor: pointer;
+    width: theme.$checkbox-input-width;
+    height: theme.$checkbox-input-height;
+    padding: theme.$checkbox-input-padding;
+    margin: theme.$checkbox-input-margin;
+    border: theme.$checkbox-input-border;
+    border-radius: theme.$checkbox-input-border-radius;
+    accent-color: theme.$checkbox-input-accent-color;
+
+    & + label {
+      cursor: pointer;
+      width: theme.$checkbox-label-width;
+      font-weight: theme.$checkbox-label-font-weight;
+
+      &:focus {
+        outline: theme.$checkbox-label-focus-outline;
+      }
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+
+      & + label {
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+@mixin checkbox {
+  .checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: theme.$checkbox-padding;
+    margin: theme.$checkbox-margin;
+    gap: theme.$checkbox-gap;
+
+    @include checkbox-input;
+
+    &.required {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: theme.$checkbox-required-gap;
+
+      > div {
+        display: flex;
+        flex-direction: row;
+        padding: theme.$checkbox-required-div-padding;
+        gap: theme.$checkbox-div-gap;
+      }
+    }
+
+    + .nota-bene {
+      padding: theme.$checkbox-nota-bene-padding;
+      margin: theme.$checkbox-nota-ben-margin;
+    }
+  }
+}

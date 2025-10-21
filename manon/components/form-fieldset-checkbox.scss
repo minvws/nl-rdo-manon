@@ -1,8 +1,8 @@
 @use "../variables" as theme;
-@use "checkbox" as cb;
+@use "../mixins/form_fields" as forms;
 
 form {
   fieldset {
-    @include cb.checkbox;
+    @include forms.checkbox;
   }
 }
