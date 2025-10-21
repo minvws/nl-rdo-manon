@@ -146,6 +146,15 @@
         </div>
 
         <h4 id="sidemenu-structure">HTML-voorbeeld structuur</h4>
+        <p>
+          De layout kan op twee manieren ingesteld worden. Met of zonder het toevoegen van een
+          class. Het toevoegen van de class geeft meer vrijheid qua structuur omdat de styling door
+          middel van de class op de juiste plek terecht komt. Als de structuur van de pagina exact
+          overeenkomt met de onderstaande voorbeelden is het niet nodig de class toe te voegen. Als
+          de structuur overeenkomt kan de styling op basis van de HTML-structuur toegepast worden.
+        </p>
+        <h5>Voorbeeld styling op basis van HTML-structuur</h5>
+        <h6><code>div</code></h6>
         <Code
           language="html"
           code={`
@@ -165,6 +174,117 @@
 </main>
 `}
         />
+
+        <h6><code>article</code></h6>
+        <Code
+          language="html"
+          code={`
+<main class="sidemenu sidemenu-closed">
+
+  <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Zijbalknavigatie">
+    <!-- Zijmenu content -->
+  </nav>
+
+  <article>
+      <!-- Overige pagina content. -->
+  </article>
+
+</main>
+`}
+        />
+
+        <h6><code>section</code></h6>
+        <Code
+          language="html"
+          code={`
+<main class="sidemenu sidemenu-closed">
+
+  <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Zijbalknavigatie">
+      <!-- Zijmenu content -->
+  </nav>
+
+  <section>
+      <!-- Overige pagina content. -->
+  </section>
+
+</main>
+`}
+        />
+        <p>Om gebruik te maken van deze structuur importeer de volgende bestanden via NPM.</p>
+        <Code
+          language="scss"
+          code={`
+@use "@minvws/manon/sidemenu";
+@use "@minvws/manon/sidemenu-page-content";
+`}
+        />
+
+        <h5>Voorbeeld gebruik van class</h5>
+        <p>
+          Voeg de class <code>page-content</code> toe aan het element die de paginacontent bevat.
+        </p>
+
+        <h6><code>div</code></h6>
+        <Code
+          language="html"
+          code={`
+<main class="sidemenu sidemenu-closed">
+
+  <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Zijbalknavigatie">
+      <!-- Zijmenu content -->
+  </nav>
+
+  <div class="page-content">
+      <!-- Overige pagina content. -->
+  </div>
+
+</main>
+`}
+        />
+
+        <h6><code>article</code></h6>
+        <Code
+          language="html"
+          code={`
+<main class="sidemenu sidemenu-closed">
+
+  <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Zijbalknavigatie">
+      <!-- Zijmenu content -->
+  </nav>
+
+  <article class="page-content">
+      <!-- Overige pagina content. -->
+  </article>
+
+</main>
+`}
+        />
+
+        <h6><code>section</code></h6>
+        <Code
+          language="html"
+          code={`
+<main class="sidemenu sidemenu-closed">
+
+  <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie" aria-label="Zijbalknavigatie">
+      <!-- Zijmenu content -->
+  </nav>
+
+  <section class="page-content">
+      <!-- Overige pagina content. -->
+  </section>
+
+</main>
+`}
+        />
+
+        <p>Om gebruik te maken van deze structuur importeer het volgende bestand via NPM.</p>
+        <Code
+          language="scss"
+          code={`
+@use "@minvws/manon/sidemenu";
+`}
+        />
       </section>
 
       <section id="requirements">
@@ -180,10 +300,19 @@
 
         <h4>CSS-voorbeeld</h4>
         <Code
-          language="css"
+          language="scss"
           code={`
 @use "@minvws/manon/sidemenu";
 `}
+        />
+
+        <p>
+          Optionele bestanden: Zie <a href="#sidemenu-structure">structuurvoorbeelden</a> voor meer informatie.
+        </p>
+        <Code
+          language="scss"
+          code={`
+@use "@minvws/manon/sidemenu-page-content";`}
         />
       </section>
     </div>
