@@ -306,7 +306,9 @@
 `}
         />
 
-        <p>Optionele bestanden: Zie <a href="#sidemenu-structure">structuurvoorbeelden</a> voor meer informatie.</p>
+        <p>
+          Optionele bestanden: Zie <a href="#sidemenu-structure">structuurvoorbeelden</a> voor meer informatie.
+        </p>
         <Code
           language="scss"
           code={`
