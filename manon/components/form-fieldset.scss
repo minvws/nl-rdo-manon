@@ -36,6 +36,7 @@ main div form {
     }
 
     /*Fieldsets within fieldsets ignore the "*" all selector */
+    > *,
     > fieldset {
       display: inline-block;
       margin: theme.$form-fieldset-fields-margin;
