@@ -17,7 +17,7 @@ navigatiebalk voor websites.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/header";
+@use "@minvws/manon/components/header";
 ```
 
 In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor meer informatie hierover zie <a href="skip-to-content">Skip to content</a>
