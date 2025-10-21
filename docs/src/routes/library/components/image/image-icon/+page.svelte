@@ -16,8 +16,8 @@
   <SideMenu>
     <ul>
       <li><a href="#introduction">Introductie</a></li>
+      <li><a href="#quickstart">Snelstart</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
-      <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
   <article>
@@ -36,10 +36,14 @@
           dat geval is het ook mogelijk om een normale afbeelding als icoon te gebruiken.
         </p>
 
-        <p>
-          Voeg hiervoor de class <code>icon</code> toe aan het <code>{`<img>`}</code> element om gebruik
-          te maken van de visuele weergave van een icoon.
-        </p>
+        <h2 id="quickstart">Snelstart</h2>
+
+        <Code
+          language="css"
+          code={`
+@use "@minvws/manon/icon";
+      `}
+        />
       </section>
 
       <section id="examples">
@@ -54,25 +58,6 @@
           code={`
 <img src="cat.svg" class="icon" alt="Kat" />
 `}
-        />
-      </section>
-
-      <section id="requirements">
-        <h2>Bijbehorende bestanden</h2>
-        <p>
-          Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/getting-started/installation">
-            >Componenten gebruiken en styling toevoegen</a
-          >
-        </p>
-
-        <h3>Importeer component via npm</h3>
-        <h4>CSS-voorbeeld:</h4>
-        <Code
-          language="css"
-          code={`
-@use "@minvws/manon/components/icon";
-      `}
         />
       </section>
     </div>
