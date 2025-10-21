@@ -14,7 +14,7 @@ Een taalselectie is een dropdown-menu waarmee gebruikers uit een verticale lijst
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/language-selector";
+@use "@minvws/manon/components/language-selector";
 ```
 
 <h2 id="examples">Voorbeelden:</h2>

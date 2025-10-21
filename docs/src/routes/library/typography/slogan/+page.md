@@ -16,7 +16,7 @@ Visuele weergave van de slogan-tekst.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/slogan";
+@use "@minvws/manon/components/slogan";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

@@ -384,11 +384,6 @@
               >icoon-afbeelding</a
             >.
           </li>
-          <li>
-            Voeg een applicatie-specifieke icoon-set toe. Zie <a
-              href="{base}/library/components/icons/add-set">icoon-set toevoegen</a
-            > voor instructies.
-          </li>
         </ul>
       </section>
     </div>

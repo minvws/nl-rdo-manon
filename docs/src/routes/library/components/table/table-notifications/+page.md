@@ -18,7 +18,7 @@ SCSS importeren:
 
 ```scss
 @use "@minvws/manon/components/table";
-@use "@minvws/manon/colors/notification";
+@use "@minvws/manon/components/notification";
 ```
 
 ### Benodigde stappen

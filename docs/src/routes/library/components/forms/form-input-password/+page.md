@@ -16,8 +16,8 @@ Een wachtwoordinvoerveld stelt de gebruiker in staat een geheim wachtwoord in te
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-input";
+@use "@minvws/manon/components/form";
+@use "@minvws/manon/components/form-input";
 ```
 
 <div class="explanation">

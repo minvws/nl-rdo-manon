@@ -16,7 +16,6 @@ Voor het weergeven van grotere notificaties.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/colors/notification";
 @use "@minvws/manon/components/notification-block-element";
 ```
 

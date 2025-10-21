@@ -16,7 +16,7 @@ Voor het weergeven van de main op de pagina
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/main";
+@use "@minvws/manon/components/main";
 ```
 
 <h3>Benodigde stappen</h3>

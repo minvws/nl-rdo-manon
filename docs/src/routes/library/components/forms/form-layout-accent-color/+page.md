@@ -14,7 +14,7 @@ Voor het toevoegen van een accentknop op formulier-elementen zoals checkboxes, r
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/form-accent-color";
+@use "@minvws/manon/components/form-accent-color";
 ```
 
 <p class="warning" role="group" aria-label="waarschuwing">

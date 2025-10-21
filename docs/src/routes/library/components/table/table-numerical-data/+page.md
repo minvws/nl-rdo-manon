@@ -17,7 +17,7 @@ gebruiksvriendelijkheid te vergroten.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
+@use "@minvws/manon/components/table";
 ```
 
 ### Benodigde stappen

@@ -18,9 +18,6 @@ Het weergeven van notificaties binnen het formulier
 SCSS importeren:
 
 ```scss
-/* Notification base component */
-@use "@minvws/manon/colors/notification";
-
 /* Notification types, import what is needed */
 @use "@minvws/manon/components/notification-block-element";
 @use "@minvws/manon/components/notification-paragraph";

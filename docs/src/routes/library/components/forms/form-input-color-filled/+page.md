@@ -31,9 +31,9 @@ Een volledig gevulde kleurselector toont het volledige spectrum van beschikbare 
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-input-color";
-@use "@minvws/manon/form-input-color-filled";
+@use "@minvws/manon/components/form";
+@use "@minvws/manon/components/form-input-color";
+@use "@minvws/manon/components/form-input-color-filled";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

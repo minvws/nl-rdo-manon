@@ -172,7 +172,7 @@ Ons SCSS-bestand zou er nu zo uit moeten zien:
 ### Header
 
 Importeer het
-[header navigation component](/library/components/header-navigation) in ons `main.scss`-bestand:
+[header component](/library/components/header) in ons `main.scss`-bestand:
 
 ```scss
 @use "@minvws/manon/components/header";

@@ -14,7 +14,7 @@ Een kaart groepeert gerelateerde informatie in één duidelijk visueel blok, zod
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/card";
+@use "@minvws/manon/components/card";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

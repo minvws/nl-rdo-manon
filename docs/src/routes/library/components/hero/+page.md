@@ -9,27 +9,30 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-<p class="warning">
-  <span>Let op:</span>
-  Deze pagina is nog niet af. De inhoud is nog niet compleet en de voorbeelden zijn nog niet toegevoegd.
-</p>
-
-<h2 id="introduction">Introductie</h2>
+Een hero-sectie kan gebruikt worden als visuele introducti of eye cather op een pagina.
 
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
 ```scss
-
+@use "@minvws/manon/components/hero";
 ```
 
 <h2 id="examples">Voorbeelden:</h2>
 
-### Voorbeeld:
-
-### Visuele voorbeeld:
+<div class="resize">
+  <iframe src="/snippets/hero" title="Voorbeeld" height="240px"></iframe>
+</div>
 
 ```html
-
+<section class="hero">
+  <div class="image-background">
+    <img src="$img/strand.jpg" alt="Foto van een strand" />
+  </div>
+  <div class="content-wrapper">
+    <h1>Welkom op het homepage-voorbeeld</h1>
+    <p>Een voorbeeld van een landingspagina.</p>
+  </div>
+</section>
 ```

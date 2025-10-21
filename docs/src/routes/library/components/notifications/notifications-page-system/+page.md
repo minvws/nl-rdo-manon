@@ -1,6 +1,9 @@
 ---
 title: Pagina-notificatie systeembericht voorbeeld
 breadcrumb: Pagina-notificatie systeembericht voorbeeld
+  - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
+  - Voorbeelden: "#examples"
 ---
 
 <section class="system">
@@ -13,9 +16,18 @@ breadcrumb: Pagina-notificatie systeembericht voorbeeld
   </div>
 </section>
 
-<h1 id="introduction">Pagina-notificatie systeembericht voorbeeld</h1>
+<h2 id="introduction">Pagina-notificatie systeembericht voorbeeld</h2>
 
 Voor het weergeven van notificaties op paginaniveau.
+
+<h2 id="quickstart">Snelstart</h2>
+
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/components/notification-system-message";
+@use "@minvws/manon/components/notification-system-page";
+```
 
 <h2 id="examples">Voorbeelden</h2>
 
@@ -35,19 +47,4 @@ Voor het voorbeeld zie bovenaan deze pagina.
   </span>
   Lorem ipsum dolor sit.
 </p>
-```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/getting-started/installation)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```scss
-@use "@minvws/manon/colors/notification";
-@use "@minvws/manon/components/notification-system-message";
-@use "@minvws/manon/components/notification-system-page";
 ```

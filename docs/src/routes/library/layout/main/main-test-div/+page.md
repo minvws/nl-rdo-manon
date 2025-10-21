@@ -24,8 +24,8 @@ Voor meer informatie over importeren en instellen van componenten. Zie: [Compone
 
 #### CSS-voorbeeld:
 
-```css
-@use "@minvws/manon/main";
+```scss
+@use "@minvws/manon/components/main";
 ```
 
 <h3>Ingestelde waarden</h3>

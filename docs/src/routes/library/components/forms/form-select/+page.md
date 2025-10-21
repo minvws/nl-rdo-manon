@@ -16,8 +16,8 @@ Een selectielijst toont gebruikers een overzicht van beschikbare opties waaruit 
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-select";
+@use "@minvws/manon/components/form";
+@use "@minvws/manon/components/form-select";
 ```
 
 <p class="warning">

@@ -16,7 +16,6 @@ Voor het weergeven van notificaties binnen tabellen.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/colors/notification";
 @use "@minvws/manon/components/notification-table";
 ```
 

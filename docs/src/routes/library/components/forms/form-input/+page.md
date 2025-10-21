@@ -15,9 +15,9 @@ Invoervelden worden gebruikt om korte stukjes informatie van de gebruiker te vra
 
 SCSS importeren:
 
-```css
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-input";
+```scss
+@use "@minvws/manon/components/form";
+@use "@minvws/manon/components/form-input";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

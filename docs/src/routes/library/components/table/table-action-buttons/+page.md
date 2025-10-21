@@ -17,8 +17,8 @@ worden.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
-@use "@minvws/manon/table-action-buttons";
+@use "@minvws/manon/components/table";
+@use "@minvws/manon/components/table-action-buttons";
 ```
 
 ### Benodigde stappen

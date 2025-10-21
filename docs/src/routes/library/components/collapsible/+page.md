@@ -16,13 +16,13 @@ Een inklapbaar component is een element op een website dat extra informatie verb
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/collapsible";
+@use "@minvws/manon/components/collapsible";
 ```
 
 Javascript importeren:
 
 ```javascript
-import "@minvws/manon/collapsible";
+import "@minvws/manon/js/collapsible";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

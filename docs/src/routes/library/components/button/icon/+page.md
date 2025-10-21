@@ -13,10 +13,10 @@ nav:
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/button";
-@use "@minvws/manon/icon";
-@use "@minvws/manon/visually-hidden";
-@use "@minvws/manon/button-icon";
+@use "@minvws/manon/components/button";
+@use "@minvws/manon/components/icon";
+@use "@minvws/manon/components/visually-hidden";
+@use "@minvws/manon/components/button-icon";
 ```
 
 ### Benodigde stappen

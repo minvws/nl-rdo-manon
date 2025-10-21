@@ -235,7 +235,7 @@ and spacing sets */
   // form
   $form-align-items: flex-start,
   $form-text-color: semantic.$color-text-default,
-  $form-gap: spacing.$spacing-200,
+  $form-gap: spacing.$spacing-100,
   $form-max-width: 40rem,
   $form-table-width: 100%,
 
@@ -269,6 +269,9 @@ and spacing sets */
     border-radii.$border-radius-m,
   $form-combined-field-button-border-radius: 0 border-radii.$border-radius-m
     border-radii.$border-radius-m 0,
+  $form-combined-field-button-padding: 0 1rem,
+  $form-combined-field-button-min-width: fit-content,
+  $form-combined-field-button-justify-content: center,
 
   // focus
   $focus-outline: 2px solid,
@@ -452,9 +455,9 @@ and spacing sets */
 
   // main
   $main-padding-top: spacing.$spacing-400,
-  $main-padding-right: 4rem,
+  $main-padding-right: spacing.$spacing-400,
   $main-padding-bottom: spacing.$spacing-400,
-  $main-padding-left: 4rem,
+  $main-padding-left: spacing.$spacing-400,
   $main-gap: spacing.$spacing-400,
 
   // nota bene
@@ -584,6 +587,10 @@ and spacing sets */
   $sidemenu-nav-padding-bottom: spacing.$spacing-100,
   $sidemenu-nav-padding-left: spacing.$spacing-200,
 
+  // sidemenu main content
+  $sidemenu-page-padding-right: spacing.$spacing-200,
+  $sidemenu-page-padding-left: spacing.$spacing-200,
+
   // sidemenu button
   $sidemenu-button-background-color: color-scheme.$oc-white,
   $sidemenu-button-padding: spacing.$spacing-050,
@@ -603,6 +610,12 @@ and spacing sets */
   // sidemenu list
   $sidemenu-ul-padding: spacing.$spacing-100 0,
   $sidemenu-list-item-padding: spacing.$spacing-025 0,
+
+  // skip to content
+  $skip-to-content-padding: spacing.$spacing-050,
+  $skip-to-content-margin: 0 spacing.$spacing-100 0 0,
+  $skip-to-content-align-self: center,
+  $skip-to-content-order: 1,
 
   // slogan
   $slogan-text-color: semantic.$color-text-default,
