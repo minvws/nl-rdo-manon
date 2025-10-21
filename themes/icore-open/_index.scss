@@ -274,6 +274,14 @@ and spacing sets */
   $form-combined-field-button-border-radius: 0 border-radii.$border-radius-m
     border-radii.$border-radius-m 0,
 
+  // checkbox
+  $checkbox-padding: 0,
+  $checkbox-margin: 0,
+  $checkbox-border: 1px solid #ced4da,
+  $checkbox-border-radius: 3px,
+  $checkbox-label-font-weight: normal,
+  $checkbox-label-focus-outline: 2px solid #339af0,
+
   // focus
   $focus-outline: 2px solid,
   // Set to negative value to prevent from being cut off

@@ -4,22 +4,24 @@
 
 @mixin checkbox-input {
   input[type="checkbox"] {
-    padding: 0;
-    margin: 0;
     cursor: pointer;
-    border: 1px solid #ced4da;
-    border-radius: 3px;
     width: theme.$checkbox-width;
     height: theme.$checkbox-height;
+    padding: theme.$checkbox-padding;
+    margin: theme.$checkbox-margin;
+
+    border: theme.$checkbox-border;
+    border-radius: theme.$checkbox-border-radius;
+
     accent-color: theme.$checkbox-accent-color;
 
     & + label {
-      font-weight: normal;
+      font-weight: theme.$checkbox-label-font-weight;
       cursor: pointer;
       width: theme.$checkbox-label-width;
 
       &:focus {
-        outline: 2px solid #339af0;
+        outline: theme.$checkbox-label-focus-outline;
       }
     }
 
