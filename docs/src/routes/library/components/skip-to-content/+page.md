@@ -14,6 +14,18 @@ hulptechnologiën of enkel met toetsenbord navigeren. Deze knop geeft gebruikers
 de mogelijkheid om direct naar de inhoud van de pagina te springen. Hiermee
 wordt voorkomen dat de gebruiker langs onnodig veel elementen moet navigeren.
 
+<div class="explanation" role="group" aria-label="Toelichting">
+  <span>Toelichting:</span>
+  <p>
+    De <strong>"Ga direct naar inhoud"-knop</strong> is standaard verborgen
+    voor visuele gebruikers, maar wordt zichtbaar wanneer deze focus krijgt
+    via toetsenbordnavigatie. Dit zorgt ervoor dat de knop niet de visuele
+    opmaak verstoort, maar wel beschikbaar blijft voor gebruikers die er
+    baat bij hebben. Gebruik de <strong>Tab-toets</strong> om de knop te
+    activeren en zichtbaar te maken in het onderstaande voorbeeld.
+  </p>
+</div>
+
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
@@ -63,15 +75,3 @@ Voeg aan het naar toe te springen element de corresponderende `id` toe.
   <!-- page content -->
 </main>
 ```
-
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Toelichting:</span>
-  <p>
-    De <strong>"Ga direct naar inhoud"-knop</strong> is standaard verborgen
-    voor visuele gebruikers, maar wordt zichtbaar wanneer deze focus krijgt
-    via toetsenbordnavigatie. Dit zorgt ervoor dat de knop niet de visuele
-    opmaak verstoort, maar wel beschikbaar blijft voor gebruikers die er
-    baat bij hebben. Gebruik de <strong>Tab-toets</strong> om de knop te
-    activeren en zichtbaar te maken in het onderstaande voorbeeld.
-  </p>
-</div>
