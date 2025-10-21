@@ -22,22 +22,13 @@ main article form,
 main div form {
   > fieldset {
     padding: theme.$form-fieldset-padding;
-
-    @include theming.apply-from-theme(
-      (
-        border-width: theme.$form-fieldset-border-width,
-        border-style: theme.$form-fieldset-border-style,
-        border-color: theme.$form-fieldset-border-color,
-      )
-    );
+    border-width: theme.$form-fieldset-border-width;
+    border-style: theme.$form-fieldset-border-style;
+    border-color: theme.$form-fieldset-border-color;
 
     legend {
-      @include theming.apply-from-theme(
-        (
-          font-weight: theme.$form-fieldset-legend-font-weight,
-          margin: theme.$form-fieldset-legend-margin,
-        )
-      );
+      font-weight: theme.$form-fieldset-legend-font-weight;
+      margin: theme.$form-fieldset-legend-margin;
     }
 
     input {
@@ -45,18 +36,12 @@ main div form {
     }
 
     /*Fieldsets within fieldsets ignore the "*" all selector */
-    > *,
     > fieldset {
       display: inline-block;
-
-      @include theming.apply-from-theme(
-        (
-          margin: theme.$form-fieldset-fields-margin,
-          border-width: theme.$form-fieldset-border-width,
-          border-style: theme.$form-fieldset-border-style,
-          border-color: theme.$form-fieldset-border-color,
-        )
-      );
+      margin: theme.$form-fieldset-fields-margin;
+      border-width: theme.$form-fieldset-border-width;
+      border-style: theme.$form-fieldset-border-style;
+      border-color: theme.$form-fieldset-border-color;
 
       &:last-child {
         margin-bottom: 0;
@@ -79,11 +64,7 @@ main div form {
       }
 
       label {
-        @include theming.apply-from-theme(
-          (
-            margin: theme.$form-fieldset-label-margin,
-          )
-        );
+        margin: theme.$form-fieldset-label-margin;
       }
 
       input {
