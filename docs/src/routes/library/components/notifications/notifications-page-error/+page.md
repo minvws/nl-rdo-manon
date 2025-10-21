@@ -18,7 +18,6 @@ nav:
 
 Voor het weergeven van notificaties op paginaniveau.
 
-
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
@@ -28,7 +27,6 @@ SCSS importeren:
 @use "@minvws/manon/components/notification-error-message";
 @use "@minvws/manon/components/notification-error-page";
 ```
-
 
 <h2 id="examples">Voorbeelden</h2>
 
