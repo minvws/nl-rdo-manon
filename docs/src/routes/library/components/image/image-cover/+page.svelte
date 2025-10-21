@@ -16,14 +16,15 @@
   <SideMenu>
     <ul>
       <li><a href="#introduction">Introductie</a></li>
+      <li><a href="#quickstart">Snelstart</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
-      <li><a href="#requirements">Bijbehorende bestanden</a></li>
     </ul>
   </SideMenu>
   <article>
     <h1 class="page-title">Cover-afbeelding</h1>
     <div class="content-wrapper">
-      <section id="introduction">
+      <section>
+        <h2 id="introduction">Introductie</h2>
         <p>
           Afbeelding die de volledige breedte en hoogte van het uitgekozen object vult met de
           gekozen afbeelding.
@@ -33,6 +34,15 @@
           Voeg de class <code>image-cover</code> toe aan het omliggende element waar de
           <code>img</code> zich in bevind of direct op het <code>img</code>-element.
         </p>
+
+        <h2 id="quickstart">Snelstart</h2>
+
+        <Code
+          language="scss"
+          code={`
+@use "@minvws/manon/components/image-cover";
+          `}
+        />
       </section>
 
       <section id="examples">
@@ -151,24 +161,6 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.</p>
   </div>
 </div>
-`}
-        />
-      </section>
-
-      <section id="requirements">
-        <h2>Bijbehorende bestanden</h2>
-        <p>
-          Voor meer informatie over importeren en instellen van componenten. Zie:
-          <a href="{base}/getting-started/installation">
-            >Componenten gebruiken en styling toevoegen</a
-          >
-        </p>
-        <h3>Importeer component via npm</h3>
-        <h4>CSS-voorbeeld:</h4>
-        <Code
-          language="css"
-          code={`
-@use "@minvws/manon/components/image-cover";
 `}
         />
       </section>
