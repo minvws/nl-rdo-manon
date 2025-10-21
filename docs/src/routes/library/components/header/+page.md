@@ -23,7 +23,7 @@ SCSS importeren:
 In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor meer informatie hierover zie <a href="skip-to-content">Skip to content</a>
 
 ```scss
-@use "@minvws/manon/skip-to-content";
+@use "@minvws/manon/components/skip-to-content";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
