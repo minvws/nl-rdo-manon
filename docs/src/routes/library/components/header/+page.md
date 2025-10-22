@@ -1,6 +1,6 @@
 ---
-title: Header Navigation
-breadcrumb: Header Navigation
+title: Header
+breadcrumb: Header
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
@@ -9,28 +9,21 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-De header-navigation component biedt een flexibele en toegankelijke
-navigatiebalk voor websites. Het ondersteunt verschillende configuraties, zoals
-een logo, zoekveld, en meerdere menu's. Deze component is ontworpen om te
-voldoen aan de toegankelijkheidsrichtlijnen en biedt een responsieve ervaring.
+De header component biedt een flexibele en toegankelijke responsieve
+navigatiebalk voor websites.
 
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/header-navigation";
-@use "@minvws/manon/header-navigation-content-wrapper";
-@use "@minvws/manon/header-navigation-link";
-@use "@minvws/manon/header-navigation-link-visited";
-@use "@minvws/manon/header-navigation-link-hover";
-@use "@minvws/manon/header-navigation-link-active";
-@use "@minvws/manon/header-navigation-collapsible";
-@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button";
-@use "@minvws/manon/header-navigation-collapsible-collapsing-element-button-states";
+@use "@minvws/manon/components/header";
+```
 
-// Accessibility
-@use "@minvws/manon/skip-to-content";
+In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor meer informatie hierover zie <a href="skip-to-content">Skip to content</a>
+
+```scss
+@use "@minvws/manon/components/skip-to-content";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

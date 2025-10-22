@@ -14,7 +14,7 @@ nav:
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/text/nota-bene";
+@use "@minvws/manon/components/nota-bene";
 ```
 
 ### Benodigde stappen

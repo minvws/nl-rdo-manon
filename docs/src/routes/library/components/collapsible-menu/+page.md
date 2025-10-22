@@ -16,13 +16,13 @@ Een inklapbaar menu is een navigatie-element dat standaard verborgen of ingeklap
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/collapsible-menu";
+@use "@minvws/manon/components/collapsible-menu";
 ```
 
 JavaScript importeren:
 
 ```javascript
-import "@minvws/manon/collapsible-menu";
+import "@minvws/manon/js/collapsible-menu";
 ```
 
 ### Benodigde stappen

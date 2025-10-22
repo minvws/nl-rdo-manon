@@ -13,8 +13,8 @@ Een invoerveld voor bestandsupload stelt de gebruiker in staat om documenten, af
 
 <h2 id="quickstart">Snelstart</h2>
 
-```css
-@use "@minvws/manon/form";
+```scss
+@use "@minvws/manon/components/form";
 ```
 
 <p class="explanation">

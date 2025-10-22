@@ -16,7 +16,7 @@ tegelweergave zijn bijvoorbeeld nieuwsberichten.
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/tile";
+@use "@minvws/manon/components/tile";
 ```
 
 <h2 id="examples">Voorbeelden:</h2>

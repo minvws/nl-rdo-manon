@@ -15,8 +15,8 @@ Een tekstveld wordt gebruikt om langere teksten of opmerkingen van de gebruiker 
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-textarea";
+@use "@minvws/manon/components/form";
+@use "@minvws/manon/components/form-textarea";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
@@ -57,18 +57,19 @@ SCSS importeren:
 </form>
 ```
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Aandachtspunten</span>
-  <ul>
-    <li>
+<div class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+    <p>
       Zorg er voor gebruiksvriendelijkheid voor dat het tekstveld een
       duidelijke vraag en/of duidelijk doel heeft. Voeg een omschrijvend <code>label</code>
       toe en stel een vraag of geef duidelijke richtlijnen mee door middel van een <a href="/library/typography/nota-bene">nota-bene</a>.
-    </li>
-    <li>
+    </p>
+    <p>
     <code>rows="number"</code> geeft de initiële hoogte van het tekstveld aan in de
     hoeveelheid regels. Als er een langer bericht verwacht of aangemoedigd wordt
     is het voor de gebruiker fijn om een hoger initieel tekstveld te hebben.
-    </li>
-  </ul>
+    </p>
 </div>

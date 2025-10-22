@@ -17,7 +17,7 @@ gebruiksvriendelijkheid te vergroten.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
+@use "@minvws/manon/components/table";
 ```
 
 ### Benodigde stappen
@@ -40,15 +40,15 @@ SCSS importeren:
     <tbody>
       <tr>
         <td>Lorem</td>
-        <td>52,12</td>
+        <td class="number">52,12</td>
       </tr>
       <tr>
         <td>Lorem</td>
-        <td>110,00</td>
+        <td class="number">110,00</td>
       </tr>
       <tr>
         <td>Lorem</td>
-        <td>2,00</td>
+        <td class="number">2,00</td>
       </tr>
     </tbody>
     <tfoot>
@@ -64,35 +64,46 @@ SCSS importeren:
 <div class="horizontal-scroll">
   <table>
     <caption>
-      Tabelvoorbeeld met selectievak:
+      Tabelvoorbeeld met numerieke data:
     </caption>
     <thead>
       <tr>
-        <th scope="col"><input type="checkbox" /></th>
         <th scope="col">Table header heading</th>
+        <th scope="col" class="number">Value</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><input type="checkbox" /></td>
-        <td>Ipsum</td>
+        <td>Lorem</td>
+        <td class="number">52,12</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td class="number">110,00</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td class="number">2,00</td>
       </tr>
     </tbody>
+    <tfoot>
+      <tr>
+        <td>Totaal</td>
+        <td class="number">164,12</td>
+      </tr>
+    </tfoot>
   </table>
 </div>
 ```
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Aandachtspunten</span>
-  <ul>
-    <li>
-      Getallen worden vaak rechts uitgelijnd voor leesbaarheid.
-    </li>
-    <li>
-      Voor consistentie wordt de titel van kolommen met numerieke data vaak op dezelfde manier uitgelijnd.
-    </li>
-    <li>
-      Getallen worden <dfn>mono-spaced</dfn> weergegeven, wat inhoud dat ieder getal dezelfde breedte heeft waardoor getallen onderling goed te vergelijken zijn.
-    </li>
-  </ul>
+<div class="explanation">
+ <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+  <p>Getallen worden vaak rechts uitgelijnd voor leesbaarheid.</p>
+  <p>Voor consistentie wordt de titel van kolommen met numerieke data vaak op dezelfde manier uitgelijnd.</p>
+  <p>
+    Getallen worden <dfn>mono-spaced</dfn> weergegeven, wat inhoud dat ieder getal dezelfde breedte heeft waardoor getallen onderling goed te vergelijken zijn.
+  </p>
 </div>

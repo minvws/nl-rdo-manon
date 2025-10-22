@@ -108,10 +108,13 @@
 
         <h3><code>button</code></h3>
         <h4>Visueel voorbeeld pseudo-element op button</h4>
-        <p class="warning" role="group" aria-label="waarschuwing">
-          <span>Waarschuwing:</span> Het voorbeeld met een pseudo-element direct op button wordt uitgefaseerd
-          omdat het niet de voorkeur heeft omwille van toegankelijkheid. Gebruik in plaats hiervan een
-          van de overige voorbeelden.
+        <p class="warning">
+          <span class="notification-type">
+            <span class="icon icon-warning" aria-hidden="true"></span>
+            Waarschuwing
+          </span>
+          Het voorbeeld met een pseudo-element direct op button wordt uitgefaseerd omdat het niet de
+          voorkeur heeft omwille van toegankelijkheid. Gebruik in plaats hiervan een van de overige voorbeelden.
         </p>
         <button class="icon icon-on-off" aria-label="Aan- of uitschakelen"
           >Aan- of uitschakelen</button
@@ -380,11 +383,6 @@
             Gebruik een losse <a href="{base}/library/components/image/image-icon"
               >icoon-afbeelding</a
             >.
-          </li>
-          <li>
-            Voeg een applicatie-specifieke icoon-set toe. Zie <a
-              href="{base}/library/components/icons/add-set">icoon-set toevoegen</a
-            > voor instructies.
           </li>
         </ul>
       </section>

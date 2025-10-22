@@ -16,7 +16,7 @@ Een logo-component is een herbruikbaar element op een website of app dat het mer
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/logo";
+@use "@minvws/manon/components/logo";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

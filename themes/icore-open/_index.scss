@@ -269,6 +269,9 @@ and spacing sets */
     border-radii.$border-radius-m,
   $form-combined-field-button-border-radius: 0 border-radii.$border-radius-m
     border-radii.$border-radius-m 0,
+  $form-combined-field-button-padding: 0 1rem,
+  $form-combined-field-button-min-width: fit-content,
+  $form-combined-field-button-justify-content: center,
 
   // focus
   $focus-outline: 2px solid,
@@ -316,13 +319,14 @@ and spacing sets */
 
   // filter
   $filter-icon-color: semantic.$color-brand-primary-default,
-  $filter-icon-mask: icons.$chevron-down,
-  $filter-icon-width: 1.5rem,
-  $filter-icon-height: 1.5rem,
+  $filter-icon-mask: icons.$filter,
+  $filter-icon-width: 1rem,
+  $filter-icon-height: 1rem,
   $filter-button-font-size: 0,
-  $filter-close-icon-mask: icons.$chevron-up,
+  $filter-close-icon-mask: icons.$close,
   $filter-button-background-color: transparent,
   $filter-button-padding: 0,
+  $filter-button-gap: 0,
 
   // header
   $header-background-color: color-scheme.$oc-gray-9,
@@ -415,9 +419,12 @@ and spacing sets */
   $icon-mask-close: icons.$close,
   $icon-mask-descending: icons.$descending,
   $icon-mask-download: icons.$download,
+  $icon-mask-error: icons.$error,
+  $icon-mask-filter: icons.$filter,
   $icon-mask-hamburger: icons.$hamburger,
   $icon-mask-heart: icons.$heart,
   $icon-mask-home: icons.$home,
+  $icon-mask-informative: icons.$informative,
   $icon-mask-lock-closed: icons.$lock-closed,
   $icon-mask-on-off: icons.$on-off,
   $icon-mask-outgoing: icons.$outgoing,
@@ -429,6 +436,7 @@ and spacing sets */
   $icon-mask-to-top: icons.$to-top,
   $icon-mask-trash: icons.$trash,
   $icon-mask-user: icons.$user,
+  $icon-mask-warning: icons.$warning,
 
   // layout
   $layout-gap: 2.5rem,
@@ -452,9 +460,9 @@ and spacing sets */
 
   // main
   $main-padding-top: spacing.$spacing-400,
-  $main-padding-right: 4rem,
+  $main-padding-right: spacing.$spacing-400,
   $main-padding-bottom: spacing.$spacing-400,
-  $main-padding-left: 4rem,
+  $main-padding-left: spacing.$spacing-400,
   $main-gap: spacing.$spacing-400,
 
   // nota bene
@@ -476,9 +484,14 @@ and spacing sets */
   $notification-border-width: 1px,
   $notification-gap: spacing.$spacing-100,
   $notification-border-radius: border-radii.$border-radius-m,
+  $notification-paragraph-gap: spacing.$spacing-050,
+  $notification-table-gap: spacing.$spacing-025,
 
   // notification type
-  $notification-span-font-weight: bold,
+  $notification-type-font-weight: bold,
+  $notification-type-order: -1,
+  $notification-type-gap: spacing.$spacing-025,
+  $notification-type-table-font-size: 0,
 
   // notification error
   $notification-error-background-color:
@@ -486,9 +499,7 @@ and spacing sets */
   $notification-error-text-color: semantic.$color-text-default,
   $notification-error-border-color:
     color-scheme.$color-notification-error-intense,
-  $notification-table-error-background-color:
-    color-scheme.$color-notification-error-subtle,
-  $notification-table-error-text-color: semantic.$color-text-default,
+  $notification-error-icon-color: color-scheme.$color-notification-error-intense,
 
   // notification warning
   $notification-warning-background-color:
@@ -496,9 +507,8 @@ and spacing sets */
   $notification-warning-text-color: semantic.$color-text-default,
   $notification-warning-border-color:
     color-scheme.$color-notification-warning-intense,
-  $notification-table-warning-background-color:
-    color-scheme.$color-notification-warning-subtle,
-  $notification-table-warning-text-color: semantic.$color-text-default,
+  $notification-warning-icon-color:
+    color-scheme.$color-notification-warning-intense,
 
   // notification explanation
   $notification-explanation-background-color:
@@ -506,9 +516,8 @@ and spacing sets */
   $notification-explanation-text-color: semantic.$color-text-default,
   $notification-explanation-border-color:
     color-scheme.$color-notification-explanation-intense,
-  $notification-table-explanation-background-color:
-    color-scheme.$color-notification-explanation-subtle,
-  $notification-table-explanation-text-color: semantic.$color-text-default,
+  $notification-explanation-icon-color:
+    color-scheme.$color-notification-explanation-intense,
 
   // notification confirmation
   $notification-confirmation-background-color:
@@ -516,9 +525,8 @@ and spacing sets */
   $notification-confirmation-text-color: semantic.$color-text-default,
   $notification-confirmation-border-color:
     color-scheme.$color-notification-confirmation-intense,
-  $notification-table-confirmation-background-color:
-    color-scheme.$color-notification-confirmation-subtle,
-  $notification-table-confirmation-text-color: semantic.$color-text-default,
+  $notification-confirmation-icon-color:
+    color-scheme.$color-notification-confirmation-intense,
 
   // notification system
   $notification-system-background-color:
@@ -526,9 +534,8 @@ and spacing sets */
   $notification-system-text-color: semantic.$color-text-default,
   $notification-system-border-color:
     color-scheme.$color-notification-system-intense,
-  $notification-table-system-background-color:
-    color-scheme.$color-notification-system-subtle,
-  $notification-table-system-text-color: semantic.$color-text-default,
+  $notification-system-icon-color:
+    color-scheme.$color-notification-system-intense,
 
   // p {
   $p-max-width: 42rem,
@@ -585,6 +592,10 @@ and spacing sets */
   $sidemenu-nav-padding-bottom: spacing.$spacing-100,
   $sidemenu-nav-padding-left: spacing.$spacing-200,
 
+  // sidemenu main content
+  $sidemenu-page-padding-right: spacing.$spacing-200,
+  $sidemenu-page-padding-left: spacing.$spacing-200,
+
   // sidemenu button
   $sidemenu-button-background-color: color-scheme.$oc-white,
   $sidemenu-button-padding: spacing.$spacing-050,
@@ -604,6 +615,12 @@ and spacing sets */
   // sidemenu list
   $sidemenu-ul-padding: spacing.$spacing-100 0,
   $sidemenu-list-item-padding: spacing.$spacing-025 0,
+
+  // skip to content
+  $skip-to-content-padding: spacing.$spacing-050,
+  $skip-to-content-margin: 0 spacing.$spacing-100 0 0,
+  $skip-to-content-align-self: center,
+  $skip-to-content-order: 1,
 
   // slogan
   $slogan-text-color: semantic.$color-text-default,

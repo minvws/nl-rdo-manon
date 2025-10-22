@@ -16,7 +16,7 @@ Links zijn klikbare elementen op een website die de gebruiker naar een andere pa
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/link";
+@use "@minvws/manon/components/link";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
