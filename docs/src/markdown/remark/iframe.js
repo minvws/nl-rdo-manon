@@ -4,7 +4,7 @@
 
 import { visit } from "unist-util-visit";
 
-const iframeTagPattern = /<\s*?iframe[\s\S]*?>|<\/\s*?iframe\s*?>/g;
+const iframeTagPattern = /<iframe[\s\S]*?>|<\/iframe>/g;
 
 /**
  * Remark plugin to rewrite <iframe> to <Component.iframe> (for mdsvex).

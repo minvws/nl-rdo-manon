@@ -31,6 +31,7 @@ $pagination-adjacent-border-color: null !default;
 $pagination-adjacent-border-radius: null !default;
 $pagination-adjacent-padding: null !default;
 $pagination-adjacent-white-space: null !default;
+$pagination-adjacent-font-size: null !default;
 
 // Adjacent Hover
 $pagination-adjacent-hover-background-color: null !default;
@@ -45,6 +46,11 @@ $pagination-adjacent-previous-padding: null !default;
 // Previous Icon
 $pagination-previous-icon-margin-left: null !default;
 $pagination-previous-icon-margin-right: null !default;
+$pagination-previous-icon-padding: null !default;
+$pagination-previous-icon-color: null !default;
+$pagination-previous-icon-mask: null !default;
+$pagination-previous-icon-width: null !default;
+$pagination-previous-icon-height: null !default;
 
 // Adjacent Next
 $pagination-adjacent-next-padding: null !default;
@@ -52,6 +58,11 @@ $pagination-adjacent-next-padding: null !default;
 // Next Icon
 $pagination-next-icon-margin-left: null !default;
 $pagination-next-icon-margin-right: null !default;
+$pagination-next-icon-padding: null !default;
+$pagination-next-icon-color: null !default;
+$pagination-next-icon-mask: null !default;
+$pagination-next-icon-width: null !default;
+$pagination-next-icon-height: null !default;
 
 // List
 $pagination-list-gap: null !default;
@@ -61,6 +72,8 @@ $pagination-border-bottom-width: null !default;
 $pagination-border-left-width: null !default;
 $pagination-border-style: null !default;
 $pagination-border-color: null !default;
+$pagination-overflow-x: auto !default;
+$pagination-justify-content: center !default;
 
 // Item
 $pagination-item-height: null !default;

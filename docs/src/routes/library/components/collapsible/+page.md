@@ -20,7 +20,7 @@ Deze teksten worden zowel visueel op de knop, als voor screen-readers gebruikt.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/collapsible";
+@use "@minvws/manon/components/collapsible";
 ```
 
 Javascript importeren:

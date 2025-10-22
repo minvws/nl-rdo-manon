@@ -22,7 +22,7 @@ verborgen.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/hidden";
+@use "@minvws/manon/components/hidden";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

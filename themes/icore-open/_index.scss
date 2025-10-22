@@ -101,11 +101,7 @@ and spacing sets */
 
   //base
   $base-background-color: semantic.$base-background-color,
-  $base-font-family: (
-    "IBM Plex Sans",
-    "Helvetica",
-    sans-serif,
-  ),
+  $base-font-family: semantic.$font-family,
   $base-font-size: 1rem,
   $base-font-weight: 300,
 
@@ -239,7 +235,7 @@ and spacing sets */
   // form
   $form-align-items: flex-start,
   $form-text-color: semantic.$color-text-default,
-  $form-gap: spacing.$spacing-200,
+  $form-gap: spacing.$spacing-100,
   $form-max-width: 40rem,
   $form-table-width: 100%,
 
@@ -273,10 +269,14 @@ and spacing sets */
     border-radii.$border-radius-m,
   $form-combined-field-button-border-radius: 0 border-radii.$border-radius-m
     border-radii.$border-radius-m 0,
+  $form-combined-field-button-padding: 0 1rem,
+  $form-combined-field-button-min-width: fit-content,
+  $form-combined-field-button-justify-content: center,
 
   // focus
   $focus-outline: 2px solid,
-  $focus-outline-offset: spacing.$spacing-025,
+  // Set to negative value to prevent from being cut off
+  $focus-outline-offset: -2px,
   $focus-outline-color: color-scheme.$oc-blue-5,
   $focus-z-index: 1,
   $focus-border-radius: border-radii.$border-radius-s,
@@ -317,15 +317,23 @@ and spacing sets */
   $form-help-button-background-color: transparent,
   $form-help-button-margin: 1rem -2.5rem 0 0,
 
+  // checkbox
+  $checkbox-width: 1.5rem,
+  $checkbox-height: 1.5rem,
+  $checkbox-label-font-weight: normal,
+  $checkbox-label-focus-outline: 2px solid color-scheme.$oc-blue-8,
+  $form-fieldset-checkbox-margin: 0 0 0.5rem,
+
   // filter
   $filter-icon-color: semantic.$color-brand-primary-default,
-  $filter-icon-mask: icons.$chevron-down,
-  $filter-icon-width: 1.5rem,
-  $filter-icon-height: 1.5rem,
+  $filter-icon-mask: icons.$filter,
+  $filter-icon-width: 1rem,
+  $filter-icon-height: 1rem,
   $filter-button-font-size: 0,
-  $filter-close-icon-mask: icons.$chevron-up,
+  $filter-close-icon-mask: icons.$close,
   $filter-button-background-color: transparent,
   $filter-button-padding: 0,
+  $filter-button-gap: 0,
 
   // header
   $header-background-color: color-scheme.$oc-gray-9,
@@ -418,9 +426,12 @@ and spacing sets */
   $icon-mask-close: icons.$close,
   $icon-mask-descending: icons.$descending,
   $icon-mask-download: icons.$download,
+  $icon-mask-error: icons.$error,
+  $icon-mask-filter: icons.$filter,
   $icon-mask-hamburger: icons.$hamburger,
   $icon-mask-heart: icons.$heart,
   $icon-mask-home: icons.$home,
+  $icon-mask-informative: icons.$informative,
   $icon-mask-lock-closed: icons.$lock-closed,
   $icon-mask-on-off: icons.$on-off,
   $icon-mask-outgoing: icons.$outgoing,
@@ -432,6 +443,7 @@ and spacing sets */
   $icon-mask-to-top: icons.$to-top,
   $icon-mask-trash: icons.$trash,
   $icon-mask-user: icons.$user,
+  $icon-mask-warning: icons.$warning,
 
   // layout
   $layout-gap: 2.5rem,
@@ -450,9 +462,9 @@ and spacing sets */
 
   // main
   $main-padding-top: spacing.$spacing-400,
-  $main-padding-right: 4rem,
+  $main-padding-right: spacing.$spacing-400,
   $main-padding-bottom: spacing.$spacing-400,
-  $main-padding-left: 4rem,
+  $main-padding-left: spacing.$spacing-400,
   $main-gap: spacing.$spacing-400,
 
   // nota bene
@@ -462,7 +474,7 @@ and spacing sets */
   // Navigation
   $navigation-list-gap: spacing.$spacing-050,
   $navigation-link-text-decoration: none,
-  $navigation-list-padding: 1rem,
+  $navigation-list-padding: 0,
   $navigation-list-item-list-style: none,
 
   // notification
@@ -474,9 +486,14 @@ and spacing sets */
   $notification-border-width: 1px,
   $notification-gap: spacing.$spacing-100,
   $notification-border-radius: border-radii.$border-radius-m,
+  $notification-paragraph-gap: spacing.$spacing-050,
+  $notification-table-gap: spacing.$spacing-025,
 
   // notification type
-  $notification-span-font-weight: bold,
+  $notification-type-font-weight: bold,
+  $notification-type-order: -1,
+  $notification-type-gap: spacing.$spacing-025,
+  $notification-type-table-font-size: 0,
 
   // notification error
   $notification-error-background-color:
@@ -484,9 +501,7 @@ and spacing sets */
   $notification-error-text-color: semantic.$color-text-default,
   $notification-error-border-color:
     color-scheme.$color-notification-error-intense,
-  $notification-table-error-background-color:
-    color-scheme.$color-notification-error-subtle,
-  $notification-table-error-text-color: semantic.$color-text-default,
+  $notification-error-icon-color: color-scheme.$color-notification-error-intense,
 
   // notification warning
   $notification-warning-background-color:
@@ -494,9 +509,8 @@ and spacing sets */
   $notification-warning-text-color: semantic.$color-text-default,
   $notification-warning-border-color:
     color-scheme.$color-notification-warning-intense,
-  $notification-table-warning-background-color:
-    color-scheme.$color-notification-warning-subtle,
-  $notification-table-warning-text-color: semantic.$color-text-default,
+  $notification-warning-icon-color:
+    color-scheme.$color-notification-warning-intense,
 
   // notification explanation
   $notification-explanation-background-color:
@@ -504,9 +518,8 @@ and spacing sets */
   $notification-explanation-text-color: semantic.$color-text-default,
   $notification-explanation-border-color:
     color-scheme.$color-notification-explanation-intense,
-  $notification-table-explanation-background-color:
-    color-scheme.$color-notification-explanation-subtle,
-  $notification-table-explanation-text-color: semantic.$color-text-default,
+  $notification-explanation-icon-color:
+    color-scheme.$color-notification-explanation-intense,
 
   // notification confirmation
   $notification-confirmation-background-color:
@@ -514,9 +527,8 @@ and spacing sets */
   $notification-confirmation-text-color: semantic.$color-text-default,
   $notification-confirmation-border-color:
     color-scheme.$color-notification-confirmation-intense,
-  $notification-table-confirmation-background-color:
-    color-scheme.$color-notification-confirmation-subtle,
-  $notification-table-confirmation-text-color: semantic.$color-text-default,
+  $notification-confirmation-icon-color:
+    color-scheme.$color-notification-confirmation-intense,
 
   // notification system
   $notification-system-background-color:
@@ -524,9 +536,8 @@ and spacing sets */
   $notification-system-text-color: semantic.$color-text-default,
   $notification-system-border-color:
     color-scheme.$color-notification-system-intense,
-  $notification-table-system-background-color:
-    color-scheme.$color-notification-system-subtle,
-  $notification-table-system-text-color: semantic.$color-text-default,
+  $notification-system-icon-color:
+    color-scheme.$color-notification-system-intense,
 
   // p {
   $p-max-width: 42rem,
@@ -557,6 +568,21 @@ and spacing sets */
   $pagination-link-active-text-color: semantic.$color-brand-primary-default,
   $pagination-link-active-font-weight: bold,
 
+  // Pagination adjecent
+  $pagination-adjacent-font-size: 0,
+
+  // Pagination previous icon
+  $pagination-previous-icon-color: semantic.$color-brand-primary-default,
+  $pagination-previous-icon-mask: icons.$chevron-left,
+  $pagination-previous-icon-width: 1.5rem,
+  $pagination-previous-icon-height: 1.5rem,
+
+  // Pagination next icon
+  $pagination-next-icon-color: semantic.$color-brand-primary-default,
+  $pagination-next-icon-mask: icons.$chevron-right,
+  $pagination-next-icon-width: 1.5rem,
+  $pagination-next-icon-height: 1.5rem,
+
   // page title
   $page-title-max-width: 60rem,
   $page-title-width: 100%,
@@ -567,6 +593,10 @@ and spacing sets */
   $sidemenu-nav-padding-right: spacing.$spacing-200,
   $sidemenu-nav-padding-bottom: spacing.$spacing-100,
   $sidemenu-nav-padding-left: spacing.$spacing-200,
+
+  // sidemenu main content
+  $sidemenu-page-padding-right: spacing.$spacing-200,
+  $sidemenu-page-padding-left: spacing.$spacing-200,
 
   // sidemenu button
   $sidemenu-button-background-color: color-scheme.$oc-white,
@@ -587,6 +617,12 @@ and spacing sets */
   // sidemenu list
   $sidemenu-ul-padding: spacing.$spacing-100 0,
   $sidemenu-list-item-padding: spacing.$spacing-025 0,
+
+  // skip to content
+  $skip-to-content-padding: spacing.$spacing-050,
+  $skip-to-content-margin: 0 spacing.$spacing-100 0 0,
+  $skip-to-content-align-self: center,
+  $skip-to-content-order: 1,
 
   // slogan
   $slogan-text-color: semantic.$color-text-default,
@@ -622,6 +658,7 @@ and spacing sets */
   $tabs-item-current-border-width: 0 0 2px 0,
   $tabs-item-current-font-weight: bold,
   $tabs-item-hover-text-color: color-scheme.$oc-blue-9,
+
   // set to focus border-width
   $tabs-outline-offset: -2px,
 
@@ -642,6 +679,14 @@ and spacing sets */
   // table caption
   $table-caption-text-align: left,
   $table-caption-padding: spacing.$spacing-100 0,
+
+  // table condenced
+  $table-condensed-head-cell-padding: spacing.$spacing-025 spacing.$spacing-100,
+  $table-condensed-cell-padding: spacing.$spacing-025 spacing.$spacing-100,
+  $table-condensed-font-size: body-text.$body-text-s,
+
+  // table rowspan
+  $table-rowspan-border: 1px solid color-scheme.$oc-gray-1,
 
   // tile
   $tile-background-color: color-scheme.$oc-white,

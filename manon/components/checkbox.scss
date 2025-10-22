@@ -32,11 +32,16 @@
     & + label {
       @include theming.apply-from-theme(
         (
+          font-weight: theme.$checkbox-label-font-weight,
           width: theme.$checkbox-label-width,
         )
       );
 
       cursor: pointer;
+
+      &:focus {
+        outline: theme.$checkbox-label-focus-outline;
+      }
     }
 
     &:disabled {

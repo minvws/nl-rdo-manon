@@ -10,7 +10,9 @@ $notification-gap: null !default;
 $notification-border-radius: null !default;
 
 // notification type (span first of type)
-$notification-span-font-weight: null !default;
+$notification-type-font-weight: null !default;
+$notification-type-order: null !default;
+$notification-type-gap: null !default;
 
 // icon
 $notification-icon-font-family: null !default;

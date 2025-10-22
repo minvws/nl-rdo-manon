@@ -14,8 +14,8 @@ De mogelijkheid om onderliggende elementen visueel als tags weer te geven.
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/tag";
-@use "@minvws/manon/tags";
+@use "@minvws/manon/components/tag";
+@use "@minvws/manon/components/tags";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

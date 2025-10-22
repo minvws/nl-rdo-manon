@@ -22,6 +22,7 @@
   width: 100%;
   height: 100%;
   white-space: nowrap;
+  box-sizing: border-box;
 
   @include theming.apply-from-theme(
     (
@@ -47,7 +48,8 @@
     );
   }
 
-  &[aria-current] {
+  &[aria-current="page"],
+  &[aria-current="true"] {
     @extend %pagination-active-item-styling;
   }
 
@@ -68,6 +70,7 @@
       border-radius: theme.$pagination-adjacent-border-radius,
       padding: theme.$pagination-adjacent-padding,
       white-space: theme.$pagination-adjacent-white-space,
+      font-size: theme.$pagination-adjacent-font-size,
     )
   );
 
@@ -90,13 +93,25 @@
       )
     );
 
-    &::before {
-      @include theming.apply-from-theme(
-        (
-          margin-left: theme.$pagination-previous-icon-margin-left,
-          margin-right: theme.$pagination-previous-icon-margin-right,
-        )
-      );
+    @if theme.$pagination-previous-icon-mask {
+      display: inline-flex;
+
+      &::before {
+        mask-size: contain;
+        content: "";
+
+        @include theming.apply-from-theme(
+          (
+            margin-right: theme.$pagination-previous-icon-margin-right,
+            margin-left: theme.$pagination-previous-icon-margin-left,
+            padding: theme.$pagination-previous-icon-padding,
+            background-color: theme.$pagination-previous-icon-color,
+            mask-image: theme.$pagination-previous-icon-mask,
+            width: theme.$pagination-previous-icon-width,
+            height: theme.$pagination-previous-icon-height,
+          )
+        );
+      }
     }
   }
 
@@ -107,13 +122,25 @@
       )
     );
 
-    &::after {
-      @include theming.apply-from-theme(
-        (
-          margin-left: theme.$pagination-next-icon-margin-left,
-          margin-right: theme.$pagination-next-icon-margin-right,
-        )
-      );
+    @if theme.$pagination-next-icon-mask {
+      display: inline-flex;
+
+      &::before {
+        mask-size: contain;
+        content: "";
+
+        @include theming.apply-from-theme(
+          (
+            margin-right: theme.$pagination-next-icon-margin-right,
+            margin-left: theme.$pagination-next-icon-margin-left,
+            padding: theme.$pagination-next-icon-padding,
+            background-color: theme.$pagination-next-icon-color,
+            mask-image: theme.$pagination-next-icon-mask,
+            width: theme.$pagination-next-icon-width,
+            height: theme.$pagination-next-icon-height,
+          )
+        );
+      }
     }
   }
 }
@@ -123,6 +150,8 @@
   flex-direction: row;
   padding: 0;
   width: 100%;
+  overflow-x: theme.$pagination-overflow-x;
+  justify-content: theme.$pagination-justify-content;
 
   @include theming.apply-from-theme(
     (

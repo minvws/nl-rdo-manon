@@ -2,58 +2,11 @@
 @use "../variables" as theme;
 
 @mixin icon {
-  & {
-    position: static;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0;
-    font-style: normal;
-  }
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  font-style: normal;
 }
-
-// @mixin icon-format($prefix) {
-//   @include icon;
-
-//   & {
-//     @include apply-from-theme.apply-from-theme(
-//       (
-//         font-family: theme.$#{$prefix}icon-font-family,
-//         font-size: theme.$#{$prefix}icon-font-size,
-//         line-height: theme.$#{$prefix}icon-line-height,
-//         text-decoration: theme.$#{$prefix}icon-text-decoration,
-//         padding-right: theme.$#{$prefix}icon-padding-right,
-//         padding-left: theme.$#{$prefix}icon-padding-left,
-//         background-color: theme.$#{$prefix}icon-background-color,
-//         color: theme.$#{$prefix}icon-text-color,
-//       )
-//     );
-//   }
-// }
-
-// @mixin icon-content($prefix) {
-//   & {
-//     @include apply-from-theme.apply-from-theme(
-//       (
-//         content: theme.$#{$prefix}icon,
-//       )
-//     );
-//   }
-// }
-
-// @mixin define-icons($glyphs, $position: "before", $font-family: null) {
-//   /* Specified for link as buttons to allow a.button icons to be overwritten by using the variable. */
-//   a.button .icon,
-//   .icon,
-//   .icon-only {
-//     @each $name, $glyph in $glyphs {
-//       &.icon--#{$name}::-#{$position} {
-//         @if $font-family {
-//           font-family: $font-family;
-//         }
-//         content: $glyph;
-//       }
-//     }
-//   }
-// }

@@ -74,9 +74,8 @@ Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
    ```
 
    Importeer de componenten die je nodig hebt in je project. Voor een lijst van
-   beschikbare componenten, zie de [componenten documentatie](/library). Bij
-   elk component vind je een voorbeeld van hoe je deze kunt importeren en
-   gebruiken.
+   beschikbare componenten, zie de [componenten documentatie](/library). Bij elk
+   component vind je een voorbeeld van hoe je deze kunt importeren en gebruiken.
 
    Importeer de componenten ná het importeren van het thema, zodat je de
    componenten kunt gebruiken met de juiste styling. De import volgorde is

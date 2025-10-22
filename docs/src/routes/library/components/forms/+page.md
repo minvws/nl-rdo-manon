@@ -74,9 +74,6 @@ gebruikers.</p>
             >Invoerveld - `input`</a
           >
         </li>
-        <li>
-          Kleurselector
-          <ul>
             <li>
               <a href="/library/components/forms/form-input-color">Kleurselector</a>
             </li>
@@ -85,8 +82,6 @@ gebruikers.</p>
                 >Kleurselector volledig gevuld</a
               >
             </li>
-          </ul>
-        </li>
         <li>
           <a href="/library/components/forms/form-notification">Notificatie</a>
         </li>

@@ -1,7 +1,7 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
 
-*:focus,
+*:focus-visible,
 *.focus {
   position: relative;
 

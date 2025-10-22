@@ -16,8 +16,8 @@ Een selectievak (checkbox) laat de gebruiker één of meerdere opties uit een se
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/checkbox";
-@use "@minvws/manon/form-checkbox";
+@use "@minvws/manon/components/checkbox";
+@use "@minvws/manon/components/form-checkbox";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

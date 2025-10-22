@@ -25,14 +25,19 @@
       border-radius: theme.$notification-border-radius,
     )
   );
+}
 
-  span:first-of-type {
-    @include theming.apply-from-theme(
-      (
-        font-weight: theme.$notification-span-font-weight,
-      )
-    );
-  }
+.notification-type {
+  align-items: center;
+  display: inline-flex;
+
+  @include theming.apply-from-theme(
+    (
+      font-weight: theme.$notification-type-font-weight,
+      order: theme.$notification-type-order,
+      gap: theme.$notification-type-gap,
+    )
+  );
 }
 
 .notification {
@@ -50,7 +55,6 @@ div {
   &.confirmation,
   &.system {
     &::before {
-      @include icon.icon;
       @include theming.apply-from-theme(
         (
           font-family: theme.$notification-icon-font-family,

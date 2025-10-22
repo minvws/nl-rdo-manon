@@ -16,7 +16,7 @@ Voor het weergeven van content binnen een section
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/section";
+@use "@minvws/manon/components/section";
 ```
 
 ### Benodigde stappen

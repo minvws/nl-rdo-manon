@@ -9,8 +9,12 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-<p class="warning" role="group" aria-label="waarschuwing">
-  <span>Waarschuwing:</span> Dit element maakt gebruik van experimentele CSS componenten:
+<p class="warning">
+  <span class="notification-type">
+    <span class="icon icon-warning" aria-hidden="true"></span>
+    Waarschuwing
+  </span>
+  Dit element maakt gebruik van experimentele CSS componenten:
   ::-webkit-color-swatch-wrapper en ::-webkit-color-swatch.
   Aangeraden wordt om dit component in deze vorm daarom niet in productie te gebruiken
   aangezien het kan zijn dat het component er anders uit ziet in verschillende browsers of dat
@@ -27,9 +31,9 @@ Een volledig gevulde kleurselector toont het volledige spectrum van beschikbare 
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-input-color";
-@use "@minvws/manon/form-input-color-filled";
+@use "@minvws/manon/components/form";
+@use "@minvws/manon/components/form-input-color";
+@use "@minvws/manon/components/form-input-color-filled";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
@@ -51,17 +55,16 @@ SCSS importeren:
 </form>
 ```
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Aandachtspunten</span>
-  <ul>
-    <li>
-      Voeg `type="color"` toe aan het invoerveld.
-    </li>
-    <li>
+<div class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+    <p>Voeg `type="color"` toe aan het invoerveld.</p>
+    <p>
       Voeg basiskleurwaarde met een hexidecimalekleurcode aan binnen: `value`.
       Voorbeeld: `value="#ffffff"`. De ingevoerde kleur is de kleur waarin het
       selectievak getoont wordt binnen het formulier voordat de gebruiker een
       andere keuze maakt.
-    </li>
-  </ul>
+    </p>
 </div>
