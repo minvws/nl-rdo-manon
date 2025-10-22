@@ -17,7 +17,6 @@ SCSS importeren:
 
 ```scss
 @use "@minvws/manon/components/table";
-@use "@minvws/manon/components/table-checkbox";
 @use "@minvws/manon/components/button";
 @use "@minvws/manon/components/icon";
 ```
