@@ -688,6 +688,10 @@ and spacing sets */
   // table rowspan
   $table-rowspan-border: 1px solid color-scheme.$oc-gray-1,
 
+  // Table sortable
+  $sortable-button-icon-width: 0.8rem,
+  $sortable-button-icon-height: 0.8rem,
+
   // tile
   $tile-background-color: color-scheme.$oc-white,
   $tile-padding-top: spacing.$spacing-100,
