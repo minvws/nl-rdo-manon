@@ -264,7 +264,7 @@ and spacing sets */
   $radio-width: 1.5rem,
   $radio-height: 1.5rem,
   $radio-label-font-weight: normal,
-  $radio-label-focus-outline: 2px solid #339af0,
+  $radio-label-focus-outline: 2px solid color-scheme.$oc-blue-8,
   $form-fieldset-radio-margin: 0 0 0.5rem,
 
   // form horizontal
