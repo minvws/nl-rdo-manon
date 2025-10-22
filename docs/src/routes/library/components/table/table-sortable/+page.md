@@ -33,21 +33,21 @@ SCSS importeren:
     <thead>
       <tr>
         <th scope="col">
-          <button>
+          <button class="sortable">
             Voornaam
-            <span class="icon icon-sortable" aria-hidden="true"></span>
+            <span class="icon icon-sort" aria-hidden="true"></span>
           </button>
         </th>
         <th scope="col" abbr="Achternaam">
-          <button>
+          <button class="sortable">
             Achternaam (met tussenvoegsel)
-            <span class="icon icon-sortable" aria-hidden="true"></span>
+            <span class="icon icon-sort" aria-hidden="true"></span>
           </button>
         </th>
         <th scope="col">
-          <button>
+          <button class="sortable">
             Leeftijd
-            <span class="icon icon-sortable" aria-hidden="true"></span>
+            <span class="icon icon-sort" aria-hidden="true"></span>
           </button>
         </th>
       </tr>
