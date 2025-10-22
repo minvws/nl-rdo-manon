@@ -688,6 +688,9 @@ and spacing sets */
   // table rowspan
   $table-rowspan-border: 1px solid color-scheme.$oc-gray-1,
 
+  // table summary
+  $table-summary-max-width: 30rem,
+
   // Table sortable
   $sortable-button-icon-width: 0.8rem,
   $sortable-button-icon-height: 0.8rem,
