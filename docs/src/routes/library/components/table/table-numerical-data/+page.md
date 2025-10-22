@@ -63,7 +63,9 @@ SCSS importeren:
 ```html
 <div class="horizontal-scroll">
   <table>
-    <caption> Tabelvoorbeeld met numerieke data: </caption>
+    <caption>
+      Tabelvoorbeeld met numerieke data:
+    </caption>
     <thead>
       <tr>
         <th scope="col">Table header heading</th>
