@@ -4,7 +4,7 @@
 form {
   fieldset {
     .checkbox {
-      padding: 0;
+      padding: theme.$checkbox-padding;
       display: initial;
 
       @include theming.apply-from-theme(
