@@ -1,5 +1,4 @@
 @use "../variables" as theme;
-@use "icon";
 
 .collapsible {
   position: relative;
@@ -32,10 +31,6 @@
       & + .collapsing-element {
         display: none;
       }
-    }
-
-    span.icon {
-      @include icon.icon-base;
     }
   }
 

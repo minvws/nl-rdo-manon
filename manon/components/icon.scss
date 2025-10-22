@@ -1,6 +1,6 @@
 @use "../variables" as theme;
 
-@mixin icon-base {
+.icon {
   mask-size: contain;
   mask-repeat: no-repeat;
   content: "";
