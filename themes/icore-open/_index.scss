@@ -672,7 +672,12 @@ and spacing sets */
   // table caption
   $table-caption-text-align: left,
   $table-caption-padding: spacing.$spacing-100 0,
-
+  
+  // table condenced
+  $table-condensed-head-cell-padding: spacing.$spacing-025 spacing.$spacing-100,
+  $table-condensed-cell-padding: spacing.$spacing-025 spacing.$spacing-100,
+  $table-condensed-font-size: body-text.$body-text-s,
+  
   // table rowspan
   $table-rowspan-border: 1px solid color-scheme.$oc-gray-1,
 
