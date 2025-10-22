@@ -678,6 +678,9 @@ and spacing sets */
   $table-condensed-cell-padding: spacing.$spacing-025 spacing.$spacing-100,
   $table-condensed-font-size: body-text.$body-text-s,
 
+  // table rowspan
+  $table-rowspan-border: 1px solid color-scheme.$oc-gray-1,
+
   // tile
   $tile-background-color: color-scheme.$oc-white,
   $tile-padding-top: spacing.$spacing-100,

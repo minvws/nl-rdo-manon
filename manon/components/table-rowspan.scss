@@ -2,16 +2,11 @@
 @use "../variables" as theme;
 
 table {
-  caption {
-    @include theming.apply-from-theme(
-      (
-        background-color: theme.$table-base-caption-background-color,
-        color: theme.$table-base-caption-text-color,
-        font-size: theme.$table-base-caption-font-size,
-        text-align: theme.$table-base-caption-text-align,
-        line-height: theme.$table-base-caption-line-height,
-        padding: theme.$table-base-caption-padding,
-      )
-    );
+  td[rowspan] {
+    background-color: theme.$table-rowspan-caption-background-color;
+    color: theme.$table-rowspan-caption-text-color;
+    font-size: theme.$table-rowspan-caption-font-size;
+    padding: theme.$table-rowspan-caption-padding;
+    border: theme.$table-rowspan-border;
   }
 }
