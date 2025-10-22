@@ -3,10 +3,12 @@
 /*---------------------------------------------------------------*/
 
 @use "mixins/link";
+@use "mixins/outline";
 
 :root {
   /* Link */
   @include link.styling-variables("navigation-link-", "link-");
+  @include outline.outline-variables("navigation-link-", "link-");
 
   /* Icon */
   --navigation-link-icon-font-family: var(--link-icon-font-family);

@@ -13,7 +13,8 @@
     "**/*.woff2",
     "**/*.license",
     "LICENSES",
-    "REUSE.toml"
+    "REUSE.toml",
+    "README.md"
   ],
   "scripts": {
     "npm-version": "npm version"
