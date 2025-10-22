@@ -10,7 +10,7 @@
 
   @include theming.apply-from-theme(
     (
-      background: theme.$table-action-buttons-button-background-color,
+      background-color: theme.$table-action-buttons-button-background-color,
       color: theme.$table-action-buttons-button-text-color,
       justify-content: theme.$table-action-buttons-button-justify-content,
     )
@@ -30,7 +30,8 @@
 
     @include theming.apply-from-theme(
       (
-        background: theme.$table-action-buttons-button-hover-background-color,
+        background-color:
+          theme.$table-action-buttons-button-hover-background-color,
       )
     );
 
