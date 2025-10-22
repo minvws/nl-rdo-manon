@@ -14,7 +14,7 @@
 
 <main class="sidemenu" id="main-content" tabindex="-1">
   <SideMenu>
-    <ul>
+    <ul class="sticky-container">
       <li><a href="#introduction">Introductie</a></li>
       <li><a href="#examples">Voorbeelden</a></li>
       <li><a href="#requirements">Bijbehorende bestanden</a></li>

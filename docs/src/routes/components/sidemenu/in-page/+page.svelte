@@ -14,11 +14,13 @@
 
 <main class="sidemenu" id="main-content" tabindex="-1">
   <SideMenu>
-    <ul>
-      <li><a href="#introduction">Introductie</a></li>
-      <li><a href="#examples">Voorbeelden</a></li>
-      <li><a href="#requirements">Bijbehorende bestanden</a></li>
-    </ul>
+    <div class="sticky-container">
+      <ul>
+        <li><a href="#introduction">Introductie</a></li>
+        <li><a href="#examples">Voorbeelden</a></li>
+        <li><a href="#requirements">Bijbehorende bestanden</a></li>
+      </ul>
+    </div>
   </SideMenu>
 
   <article class="visually-grouped">
@@ -78,9 +80,11 @@
 <header class="page-header">
   <div>
     <nav>
-      <div class="collapsing-element">
+      <div class="collapsing-element sticky-container">
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="#introduction">Introductie</a></li>
+          <li><a href="#examples">Voorbeelden</a></li>
+          <li><a href="#requirements">Bijbehorende bestanden</a></li>
         </ul>
       </div>
     </nav>

@@ -14,11 +14,13 @@
 
 <main class="sidemenu" id="main-content" tabindex="-1">
   <SideMenu>
-    <ul>
-      <li><a href="#introduction">Introductie</a></li>
-      <li><a href="#examples">Voorbeelden</a></li>
-      <li><a href="#requirements">Bijbehorende bestanden</a></li>
-    </ul>
+    <div class="sticky-container">
+      <ul>
+        <li><a href="#introduction">Introductie</a></li>
+        <li><a href="#examples">Voorbeelden</a></li>
+        <li><a href="#requirements">Bijbehorende bestanden</a></li>
+      </ul>
+    </div>
   </SideMenu>
 
   <article class="visually-grouped">
@@ -74,12 +76,13 @@
           code={`
 <body class="sidemenu">
   <nav>
-    <ul>
-      <li><a href="/">Voorbeeld link 1</a></li>
-      <li><a href="/">Voorbeeld link 2</a></li>
-      <li><a href="/">Voorbeeld link 3</a></li>
-      <li><a href="/">Voorbeeld link 4</a></li>
-    </ul>
+    <div class="sticky-container">
+      <ul>
+        <li><a href="#introduction">Introductie</a></li>
+        <li><a href="#examples">Voorbeelden</a></li>
+        <li><a href="#requirements">Bijbehorende bestanden</a></li>
+      </ul>
+    </div>
   </nav>
   <div class="page-content">
     <header class="page-header">

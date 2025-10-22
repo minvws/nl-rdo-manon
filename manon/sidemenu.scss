@@ -62,16 +62,18 @@ main.sidemenu {
       background-size: var(--sidemenu-nav-background-size);
       background-position: var(--sidemenu-nav-background-position);
 
-      /* List */
-      > ul {
+      .sticky-container {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
-        padding: var(--sidemenu-ul-padding);
         max-height: var(--sidemenu-main-max-height);
         overflow: auto;
         /* Solves a bug in older safari versions where position sticky blocks overflow auto */
         display: block;
+      }
+
+      > ul {
+        padding: var(--sidemenu-ul-padding);
       }
 
       button + ul {
