@@ -38,6 +38,10 @@
       );
 
       cursor: pointer;
+
+      &:focus {
+        outline: theme.$checkbox-label-focus-outline;
+      }
     }
 
     &:disabled {
