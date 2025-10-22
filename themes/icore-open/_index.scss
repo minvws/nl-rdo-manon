@@ -325,6 +325,13 @@ and spacing sets */
   $form-help-button-background-color: transparent,
   $form-help-button-margin: 1rem -2.5rem 0 0,
 
+  // checkbox
+  $checkbox-width: 1.5rem,
+  $checkbox-height: 1.5rem,
+  $checkbox-label-font-weight: normal,
+  $checkbox-label-focus-outline: 2px solid color-scheme.$oc-blue-8,
+  $form-fieldset-checkbox-margin: 0 0 0.5rem,
+
   // filter
   $filter-icon-color: semantic.$color-brand-primary-default,
   $filter-icon-mask: icons.$filter,
@@ -688,6 +695,10 @@ and spacing sets */
 
   // table rowspan
   $table-rowspan-border: 1px solid color-scheme.$oc-gray-1,
+
+  // Table sortable
+  $sortable-button-icon-width: 0.8rem,
+  $sortable-button-icon-height: 0.8rem,
 
   // tile
   $tile-background-color: color-scheme.$oc-white,
