@@ -673,6 +673,9 @@ and spacing sets */
   $table-caption-text-align: left,
   $table-caption-padding: spacing.$spacing-100 0,
 
+  // table rowspan
+  $table-rowspan-border: 1px solid color-scheme.$oc-gray-1,
+
   // tile
   $tile-background-color: color-scheme.$oc-white,
   $tile-padding-top: spacing.$spacing-100,
