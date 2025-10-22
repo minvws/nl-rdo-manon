@@ -1,7 +1,7 @@
 @use "../mixins/theming";
 @use "../variables" as theme;
 
-$sidemenu-breakpoint: 55rem !default;
+$sidemenu-breakpoint: 24rem !default;
 
 body.sidemenu,
 main.sidemenu {
@@ -87,7 +87,7 @@ main.sidemenu {
       );
 
       /* List */
-      > ul {
+      .sticky-container {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
