@@ -40,15 +40,15 @@ SCSS importeren:
     <tbody>
       <tr>
         <td>Lorem</td>
-        <td>52,12</td>
+        <td class="number">52,12</td>
       </tr>
       <tr>
         <td>Lorem</td>
-        <td>110,00</td>
+        <td class="number">110,00</td>
       </tr>
       <tr>
         <td>Lorem</td>
-        <td>2,00</td>
+        <td class="number">2,00</td>
       </tr>
     </tbody>
     <tfoot>
@@ -63,21 +63,33 @@ SCSS importeren:
 ```html
 <div class="horizontal-scroll">
   <table>
-    <caption>
-      Tabelvoorbeeld met selectievak:
-    </caption>
+    <caption> Tabelvoorbeeld met numerieke data: </caption>
     <thead>
       <tr>
-        <th scope="col"><input type="checkbox" /></th>
         <th scope="col">Table header heading</th>
+        <th scope="col" class="number">Value</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><input type="checkbox" /></td>
-        <td>Ipsum</td>
+        <td>Lorem</td>
+        <td class="number">52,12</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td class="number">110,00</td>
+      </tr>
+      <tr>
+        <td>Lorem</td>
+        <td class="number">2,00</td>
       </tr>
     </tbody>
+    <tfoot>
+      <tr>
+        <td>Totaal</td>
+        <td class="number">164,12</td>
+      </tr>
+    </tfoot>
   </table>
 </div>
 ```
