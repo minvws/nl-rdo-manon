@@ -681,6 +681,9 @@ and spacing sets */
   // table rowspan
   $table-rowspan-border: 1px solid color-scheme.$oc-gray-1,
 
+  // table summary
+  $table-summary-max-width: 30rem,
+
   // tile
   $tile-background-color: color-scheme.$oc-white,
   $tile-padding-top: spacing.$spacing-100,
