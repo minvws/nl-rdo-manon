@@ -462,6 +462,11 @@ and spacing sets */
   $link-hover-text-color: color-scheme.$oc-blue-9,
   $link-visited-text-color: color-scheme.$oc-violet-8,
   $link-visited-hover-text-color: color-scheme.$oc-violet-9,
+  $link-icon-width: 1rem,
+  $link-icon-height: 1rem,
+
+  // list
+  $list-item-padding: 0.25rem 0,
 
   // logo
   $logo-font-size: 0,
