@@ -30,7 +30,7 @@ export function initCollapsible() {
     // Create the collapsible button or skip if button already exists
     if (collapsibleElement.querySelector(".collapsible-toggle")) return;
 
-    const toggleButton = createMenuButton(collapsibleElement, collapsingElement);
+    const toggleButton = createCollapsibleToggleButton(collapsibleElement, collapsingElement);
 
     collapsingElement.parentNode?.insertBefore(toggleButton, collapsingElement);
   });
@@ -45,11 +45,8 @@ export function initCollapsible() {
 * @param {HTMLElement} collapsibleElement The root `.collapsible` element, used to read `data-*` attributes.
 * @param {HTMLElement} collapsingElement The element that will be shown/hidden, used for the `aria-controls` attribute.
 * @returns {HTMLButtonElement} The created button element with all event listeners attached.
- * @param {HTMLElement} collapsibleElement
- * @param {HTMLElement} collapsingElement
- * @return {HTMLElement}
  */
-function createMenuButton(collapsibleElement, collapsingElement) {
+function createCollapsibleToggleButton(collapsibleElement, collapsingElement) {
   const openLabel = collapsibleElement.dataset.openLabel || "Dropdown menu";
   const closeLabel =
     collapsibleElement.dataset.closeLabel || "Sluit dropdown menu";
@@ -59,17 +56,14 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   // Create button
   const button = document.createElement("button");
   button.type = "button";
+  button.innerText = openLabel;
   button.className = `collapsible-toggle ${buttonClasses}`;
+  
   button.setAttribute("aria-controls", collapsingElement.id);
   button.setAttribute("aria-expanded", "false");
   button.setAttribute("aria-haspopup", "menu");
   button.setAttribute("aria-label", openLabel);
-
-  // Visible button text
-  const visibleLabel = document.createElement("span");
-  visibleLabel.className = "button-text";
-  visibleLabel.innerText = openLabel;
-  button.appendChild(visibleLabel);
+  
 
   // Create span for icons to add to button
   if (iconClasses.includes("icon")) {
@@ -89,7 +83,6 @@ function createMenuButton(collapsibleElement, collapsingElement) {
     const newExpanded = !isExpanded;
 
     button.setAttribute("aria-expanded", String(newExpanded));
-    visibleLabel.innerText = newExpanded ? closeLabel : openLabel;
     button.setAttribute("aria-label", newExpanded ? closeLabel : openLabel);
 
     collapsibleElement.classList.toggle("collapsed", !newExpanded);
