@@ -5,10 +5,7 @@ a {
   display: theme.$link-display;
   align-items: theme.$link-align-items;
   color: theme.$link-text-color;
-
-  // Overriding default text decoration to add consistent underline on icons
-  text-decoration: unset;
-  border-bottom: theme.$link-text-decoration;
+  text-decoration: theme.$link-text-decoration;
 
   // Icon
   span.icon {
