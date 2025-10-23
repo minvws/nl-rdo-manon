@@ -87,7 +87,7 @@ main div form {
     }
 
     .nota-bene {
-      padding-bottom: 0;
+      padding-bottom: theme.$form-fieldset-nota-bene-padding-bottom;
     }
   }
 }
