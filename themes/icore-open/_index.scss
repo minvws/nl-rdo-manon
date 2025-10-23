@@ -260,6 +260,14 @@ and spacing sets */
   $form-textarea-font-size: inherit,
   $form-textarea-padding: 1rem,
 
+  //radio
+  $radio-width: 1rem,
+  $radio-height: 1rem,
+  $radio-accent-color: color-scheme.$oc-blue-8,
+  $radio-label-font-weight: normal,
+  $radio-label-focus-outline: 2px solid color-scheme.$oc-blue-8,
+  $form-fieldset-radio-margin: 0 0 0.5rem,
+
   // form horizontal
   $form-horizontal-button-margin: 0 0 0 calc(33.33% + 0.5rem),
   $form-horizontal-label-max-width: 33.33%,
@@ -272,6 +280,9 @@ and spacing sets */
   $form-combined-field-button-padding: 0 1rem,
   $form-combined-field-button-min-width: fit-content,
   $form-combined-field-button-justify-content: center,
+
+  //Nota bene
+  $form-fieldset-nota-bene-padding-bottom: 0.5rem,
 
   // focus
   $focus-outline: 2px solid,
@@ -318,8 +329,9 @@ and spacing sets */
   $form-help-button-margin: 1rem -2.5rem 0 0,
 
   // checkbox
-  $checkbox-width: 1.5rem,
-  $checkbox-height: 1.5rem,
+  $checkbox-width: 1.25rem,
+  $checkbox-height: 1.25rem,
+  $checkbox-accent-color: color-scheme.$oc-blue-8,
   $checkbox-label-font-weight: normal,
   $checkbox-label-focus-outline: 2px solid color-scheme.$oc-blue-8,
   $form-fieldset-checkbox-margin: 0 0 0.5rem,
@@ -453,6 +465,11 @@ and spacing sets */
   $link-hover-text-color: color-scheme.$oc-blue-9,
   $link-visited-text-color: color-scheme.$oc-violet-8,
   $link-visited-hover-text-color: color-scheme.$oc-violet-9,
+  $link-icon-width: 1rem,
+  $link-icon-height: 1rem,
+
+  // list
+  $list-item-padding: 0.25rem 0,
 
   // logo
   $logo-font-size: 0,
@@ -687,6 +704,13 @@ and spacing sets */
 
   // table rowspan
   $table-rowspan-border: 1px solid color-scheme.$oc-gray-1,
+
+  // table summary
+  $table-summary-max-width: 30rem,
+
+  // Table sortable
+  $sortable-button-icon-width: 0.8rem,
+  $sortable-button-icon-height: 0.8rem,
 
   // tile
   $tile-background-color: color-scheme.$oc-white,

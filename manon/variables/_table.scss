@@ -9,7 +9,7 @@ $table-border-style: null !default;
 $table-border-color: null !default;
 $table-text-align: left !default;
 $table-gap: null !default;
-$table-margin: null !default;
+$table-margin: 0 !default;
 
 // Table Head
 $table-head-background-color: null !default;
@@ -89,3 +89,22 @@ $table-padding-checkbox: 0 !default;
 
 // Form table
 $form-table-width: null !default;
+
+// Sortable button
+// Resetting button styling
+$table-sortable-button-background-color: transparent !default;
+$table-sortable-button-padding: unset !default;
+$table-sortable-button-min-width: unset !default;
+$table-sortable-button-height: unset !default;
+$table-sortable-button-min-height: unset !default;
+$table-sortable-button-border: unset !default;
+$table-sortable-button-border-radius: unset !default;
+$table-sortable-button-margin: unset !default;
+$table-sortable-button-text-color: inherit !default;
+
+// Sortable button icon
+$sortable-button-icon-margin: null !default;
+$sortable-button-icon-padding: null !default;
+$sortable-button-icon-color: null !default;
+$sortable-button-icon-width: null !default;
+$sortable-button-icon-height: null !default;

@@ -78,11 +78,16 @@ form {
 
         @include theming.apply-from-theme(
           (
+            font-weight: theme.$radio-label-font-weight,
             width: theme.$radio-label-width,
           )
         );
 
         cursor: pointer;
+
+        &:focus {
+          outline: theme.$radio-label-focus-outline;
+        }
       }
 
       &:disabled {

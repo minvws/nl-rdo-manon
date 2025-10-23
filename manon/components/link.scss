@@ -2,33 +2,32 @@
 @use "../variables" as theme;
 
 a {
-  @include theming.apply-from-theme(
-    (
-      color: theme.$link-text-color,
-    )
-  );
+  display: theme.$link-display;
+  align-items: theme.$link-align-items;
+  color: theme.$link-text-color;
+
+  // Overriding default text decoration to add consistent underline on icons
+  text-decoration: unset;
+  border-bottom: theme.$link-text-decoration;
+
+  // Icon
+  span.icon {
+    width: theme.$link-icon-width;
+    height: theme.$link-icon-height;
+    margin: theme.$link-icon-margin;
+    padding: theme.$link-icon-padding;
+    color: theme.$link-icon-color;
+  }
 
   &:hover {
-    @include theming.apply-from-theme(
-      (
-        color: theme.$link-hover-text-color,
-      )
-    );
+    color: theme.$link-hover-text-color;
   }
 
   &:visited {
-    @include theming.apply-from-theme(
-      (
-        color: theme.$link-visited-text-color,
-      )
-    );
+    color: theme.$link-visited-text-color;
 
     &:hover {
-      @include theming.apply-from-theme(
-        (
-          color: theme.$link-visited-hover-text-color,
-        )
-      );
+      color: theme.$link-visited-hover-text-color;
     }
   }
 }
