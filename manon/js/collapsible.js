@@ -1,6 +1,6 @@
 // @ts-check
 
-import { ensureElementHasId, onDomReady } from "./utils.js";
+import { ensureElementHasId, onMediaQueryMatch, onDomReady } from "./utils.js";
 
 onDomReady(initCollapsible);
 
@@ -52,6 +52,7 @@ function createCollapsibleToggleButton(collapsibleElement, collapsingElement) {
     collapsibleElement.dataset.closeLabel || "Sluit dropdown menu";
   const buttonClasses = collapsibleElement.dataset.buttonClasses || "";
   const iconClasses = collapsibleElement.dataset.iconClasses || "";
+  const iconPosition = collapsibleElement.dataset.iconPosition || "right"
 
   // Create button
   const button = document.createElement("button");
@@ -63,7 +64,6 @@ function createCollapsibleToggleButton(collapsibleElement, collapsingElement) {
   button.setAttribute("aria-expanded", "false");
   button.setAttribute("aria-haspopup", "menu");
   button.setAttribute("aria-label", openLabel);
-  
 
   // Create span for icons to add to button
   if (iconClasses.includes("icon")) {
@@ -71,7 +71,7 @@ function createCollapsibleToggleButton(collapsibleElement, collapsingElement) {
     iconSpan.setAttribute("aria-hidden", "true");
     iconSpan.className = iconClasses;
 
-    if (iconClasses.includes("left")) {
+    if (iconPosition.includes("left")) {
       button.prepend(iconSpan);
     } else {
       button.append(iconSpan);

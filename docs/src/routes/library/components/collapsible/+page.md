@@ -125,7 +125,8 @@ data-close-label="Sluit gedefinieerde menu label">
 <div
   data-open-label="Profiel"
   data-close-label="Sluit profiel"
-  data-icon-classes="icon icon-user left"
+  data-icon-classes="icon icon-user"
+  data-icon-position="left"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -141,7 +142,8 @@ data-close-label="Sluit gedefinieerde menu label">
 <div
   data-open-label="Profiel"
   data-close-label="Sluit profiel"
-  data-icon-classes="icon icon-user left"
+  data-icon-classes="icon icon-user"
+  data-icon-position="left"
   class="collapsible"
 >
   <div class="collapsing-element">
