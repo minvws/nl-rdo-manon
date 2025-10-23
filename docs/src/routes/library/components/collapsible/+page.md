@@ -210,7 +210,7 @@ data-close-label="Sluit gedefinieerde menu label">
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-button-classes="ghost"
+  data-button-classes="secondary"
   class="collapsible"
 >
   <div class="collapsing-element">
