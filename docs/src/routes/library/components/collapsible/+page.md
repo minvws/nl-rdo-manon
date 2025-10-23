@@ -26,7 +26,7 @@ SCSS importeren:
 Javascript importeren:
 
 ```javascript
-import "@minvws/manon/js/collapsible.js";
+import "@minvws/manon/js/collapsible";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
@@ -73,8 +73,8 @@ data-close-label="Sluit gedefinieerde menu label">
 ```html
 <div
   class="collapsible"
-  data-open-label="Gedefinieerde menu label"
-  data-close-label="Sluit gedefinieerde menu label"
+  data-open-label="Toon acties"
+  data-close-label="Verberg acties"
 >
   <div class="collapsing-element">
     <ul>
@@ -212,7 +212,7 @@ data-close-label="Sluit gedefinieerde menu label">
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-button-classes="ghost"
+  data-button-classes="secondary"
   class="collapsible"
 >
   <div class="collapsing-element">
