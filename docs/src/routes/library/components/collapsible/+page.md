@@ -73,7 +73,7 @@ data-close-label="Sluit gedefinieerde menu label">
 ```html
 <div
   class="collapsible"
-  data-open-label="Gedefinieerde menu label"
+  data-open-label="Toon acties"
   data-close-label="Sluit gedefinieerde menu label"
 >
   <div class="collapsing-element">
