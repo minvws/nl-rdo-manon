@@ -54,13 +54,6 @@ form.horizontal {
           float: left;
           width: theme.$form-horizontal-view-fieldset-label-column;
           margin-top: theme.$form-horizontal-view-fieldset-label-margin-top;
-
-          @include theming.apply-from-theme(
-            (
-              padding-right:
-                theme.$form-horizontal-view-fieldset-form-horizontal-gap,
-            )
-          );
         }
       }
     }
@@ -155,12 +148,10 @@ form.horizontal {
       > input[type="button"],
       > input[type="submit"],
       > input[type="reset"],
-      > a {
-        @include theming.apply-from-theme(
-          (
-            margin-left: theme.$form-horizontal-view-fieldset-label-column,
-          )
-        );
+      > a,
+      > fieldset {
+        padding: 0;
+        margin-left: theme.$form-horizontal-view-fieldset-label-column;
       }
 
       & + button,
