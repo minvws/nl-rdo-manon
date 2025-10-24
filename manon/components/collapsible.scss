@@ -8,6 +8,158 @@
   width: theme.$collapsible-width;
   max-width: theme.$collapsible-max-width;
 
+  &:not(.collapsed) {
+    button.collapsible-toggle {
+      display: none;
+    }
+  }
+
+  &.collapsed {
+    [aria-expanded="false"] {
+      & + .collapsing-element {
+        display: none;
+      }
+    }
+    .collapsing-element {
+      position: absolute;
+      max-height: initial;
+      height: auto;
+      box-sizing: border-box;
+      min-width: 250px;
+      width: theme.$collapsing-element-width;
+      max-width: theme.$collapsing-element-max-width;
+
+      z-index: theme.$collapsing-element-z-index;
+      top: calc(#{theme.$collapsing-element-top} + 1rem);
+      left: theme.$collapsing-element-left;
+      right: theme.$collapsing-element-right;
+
+      flex-direction: theme.$collapsing-element-flex-direction;
+      justify-content: theme.$collapsing-element-justify-content;
+      align-items: theme.$collapsing-element-align-items;
+      gap: theme.$collapsing-element-gap;
+
+      padding-top: theme.$collapsing-element-padding-top;
+      padding-right: theme.$collapsing-element-padding-right;
+      padding-bottom: theme.$collapsing-element-padding-bottom;
+      padding-left: theme.$collapsing-element-padding-left;
+
+      border-width: theme.$collapsing-element-border-width;
+      border-style: theme.$collapsing-element-border-style;
+      border-color: theme.$collapsing-element-border-color;
+
+      background-color: theme.$collapsing-element-background-color;
+      color: theme.$collapsing-element-text-color;
+
+      -webkit-box-shadow: theme.$collapsing-element-box-shadow;
+      box-shadow: theme.$collapsing-element-box-shadow;
+
+      form {
+        padding: 1rem;
+        background-color: transparent;
+
+        div {
+          width: 100%;
+        }
+      }
+
+      ul,
+      ol {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        gap: theme.$collapsing-element-list-gap;
+        background-color: theme.$collapsing-element-list-background-color;
+
+        li {
+          display: flex;
+          width: 100%;
+          max-width: 100%;
+          padding: 0;
+          overflow: auto;
+
+          align-items: theme.$collapsing-element-list-item-align-items;
+          background-color: theme.$collapsing-element-list-item-background-color;
+          color: theme.$collapsing-element-list-item-text-color;
+          border-width: theme.$collapsing-element-list-item-border-width;
+          border-style: theme.$collapsing-element-list-item-border-style;
+          border-color: theme.$collapsing-element-list-item-border-color;
+
+          &::before {
+            /* Preventing default nav before to show up */
+            display: none;
+            content: theme.$collapsing-element-list-icon;
+            font-family: theme.$collapsing-element-list-icon-font-family;
+            margin-left: theme.$collapsing-element-list-icon-margin-left;
+            font-size: theme.$collapsing-element-list-icon-font-size;
+            color: theme.$collapsing-element-list-icon-text-color;
+            margin-right: theme.$collapsing-element-list-icon-margin-right;
+          }
+
+          a {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 100%;
+            background-color: transparent;
+            border: 0;
+            white-space: nowrap;
+            box-sizing: border-box;
+            font-weight: normal;
+
+            justify-content: theme.$collapsing-element-list-item-link-justify-content;
+            min-height: theme.$collapsing-element-list-item-min-height;
+            padding-top: theme.$collapsing-element-list-item-link-padding-top;
+            padding-right: theme.$collapsing-element-list-item-link-padding-right;
+            padding-bottom: theme.$collapsing-element-list-item-link-padding-bottom;
+            padding-left: theme.$collapsing-element-list-item-link-padding-left;
+            color: theme.$collapsing-element-list-item-link-text-color;
+            text-decoration: theme.$collapsing-element-list-item-link-text-decoration;
+
+            &:hover {
+              border: 0;
+              background-color: theme.$collapsing-element-list-item-link-hover-background-color;
+              text-decoration: theme.$collapsing-element-list-link-hover-text-decoration;
+            }
+
+            &:focus {
+              outline-offset: 0;
+              border-radius: 0;
+              outline-color: #339af0;
+            }
+
+            &:active {
+              font-weight: bold;
+            }
+
+            &:visited {
+              background-color: theme.$collapsing-element-list-item-link-hover-background-color;
+            }
+
+            &[aria-selected="true"],
+            &[aria-current="page"] {
+              background-color: theme.$collapsing-element-list-link-selected-background-color;
+              font-weight: theme.$collapsing-element-list-link-selected-font-weight;
+              text-decoration: theme.$collapsing-element-list-link-selected-text-decoration;
+            }
+
+            &::before {
+              content: theme.$collapsing-element-list-selected-icon;
+              font-family: theme.$collapsing-element-list-selected-icon-font-family;
+              margin-left: theme.$collapsing-element-list-selected-icon-margin-left;
+              font-size: theme.$collapsing-element-list-selected-icon-font-size;
+              color: theme.$collapsing-element-list-selected-icon-text-color;
+              margin-right: theme.$collapsing-element-list-selected-icon-margin-right;
+            }
+          }
+        }
+      }
+    }
+  }
+
   button.collapsible-toggle {
     display: flex;
     max-height: 100%;
@@ -26,156 +178,11 @@
     &:focus {
       outline: none;
     }
-
-    &[aria-expanded="false"] {
-      & + .collapsing-element {
-        display: none;
-      }
-    }
   }
 
   &.right {
     .collapsing-element {
       left: auto;
-    }
-  }
-
-  .collapsing-element {
-    position: absolute;
-    max-height: initial;
-    height: auto;
-    box-sizing: border-box;
-    min-width: 250px;
-    width: theme.$collapsing-element-width;
-    max-width: theme.$collapsing-element-max-width;
-
-    z-index: theme.$collapsing-element-z-index;
-    top: calc(#{theme.$collapsing-element-top} + 1rem);
-    left: theme.$collapsing-element-left;
-    right: theme.$collapsing-element-right;
-
-    flex-direction: theme.$collapsing-element-flex-direction;
-    justify-content: theme.$collapsing-element-justify-content;
-    align-items: theme.$collapsing-element-align-items;
-    gap: theme.$collapsing-element-gap;
-
-    padding-top: theme.$collapsing-element-padding-top;
-    padding-right: theme.$collapsing-element-padding-right;
-    padding-bottom: theme.$collapsing-element-padding-bottom;
-    padding-left: theme.$collapsing-element-padding-left;
-
-    border-width: theme.$collapsing-element-border-width;
-    border-style: theme.$collapsing-element-border-style;
-    border-color: theme.$collapsing-element-border-color;
-
-    background-color: theme.$collapsing-element-background-color;
-    color: theme.$collapsing-element-text-color;
-
-    -webkit-box-shadow: theme.$collapsing-element-box-shadow;
-    box-shadow: theme.$collapsing-element-box-shadow;
-
-    form {
-      padding: 1rem;
-      background-color: transparent;
-
-      div {
-        width: 100%;
-      }
-    }
-
-    ul,
-    ol {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-
-      gap: theme.$collapsing-element-list-gap;
-      background-color: theme.$collapsing-element-list-background-color;
-
-      li {
-        display: flex;
-        width: 100%;
-        max-width: 100%;
-        padding: 0;
-        overflow: auto;
-
-        align-items: theme.$collapsing-element-list-item-align-items;
-        background-color: theme.$collapsing-element-list-item-background-color;
-        color: theme.$collapsing-element-list-item-text-color;
-        border-width: theme.$collapsing-element-list-item-border-width;
-        border-style: theme.$collapsing-element-list-item-border-style;
-        border-color: theme.$collapsing-element-list-item-border-color;
-
-        &::before {
-          /* Preventing default nav before to show up */
-          display: none;
-          content: theme.$collapsing-element-list-icon;
-          font-family: theme.$collapsing-element-list-icon-font-family;
-          margin-left: theme.$collapsing-element-list-icon-margin-left;
-          font-size: theme.$collapsing-element-list-icon-font-size;
-          color: theme.$collapsing-element-list-icon-text-color;
-          margin-right: theme.$collapsing-element-list-icon-margin-right;
-        }
-
-        a {
-          display: flex;
-          align-items: center;
-          width: 100%;
-          max-width: 100%;
-          background-color: transparent;
-          border: 0;
-          white-space: nowrap;
-          box-sizing: border-box;
-          font-weight: normal;
-
-          justify-content: theme.$collapsing-element-list-item-link-justify-content;
-          min-height: theme.$collapsing-element-list-item-min-height;
-          padding-top: theme.$collapsing-element-list-item-link-padding-top;
-          padding-right: theme.$collapsing-element-list-item-link-padding-right;
-          padding-bottom: theme.$collapsing-element-list-item-link-padding-bottom;
-          padding-left: theme.$collapsing-element-list-item-link-padding-left;
-          color: theme.$collapsing-element-list-item-link-text-color;
-          text-decoration: theme.$collapsing-element-list-item-link-text-decoration;
-
-          &:hover {
-            border: 0;
-            background-color: theme.$collapsing-element-list-item-link-hover-background-color;
-            text-decoration: theme.$collapsing-element-list-link-hover-text-decoration;
-          }
-
-          &:focus {
-            outline-offset: 0;
-            border-radius: 0;
-            outline-color: #339af0;
-          }
-
-          &:active {
-            font-weight: bold;
-          }
-
-          &:visited {
-            background-color: theme.$collapsing-element-list-item-link-hover-background-color;
-          }
-
-          &[aria-selected="true"],
-          &[aria-current="page"] {
-            background-color: theme.$collapsing-element-list-link-selected-background-color;
-            font-weight: theme.$collapsing-element-list-link-selected-font-weight;
-            text-decoration: theme.$collapsing-element-list-link-selected-text-decoration;
-          }
-
-          &::before {
-            content: theme.$collapsing-element-list-selected-icon;
-            font-family: theme.$collapsing-element-list-selected-icon-font-family;
-            margin-left: theme.$collapsing-element-list-selected-icon-margin-left;
-            font-size: theme.$collapsing-element-list-selected-icon-font-size;
-            color: theme.$collapsing-element-list-selected-icon-text-color;
-            margin-right: theme.$collapsing-element-list-selected-icon-margin-right;
-          }
-        }
-      }
     }
   }
 }

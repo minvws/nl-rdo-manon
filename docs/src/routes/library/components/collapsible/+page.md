@@ -33,7 +33,7 @@ import "@minvws/manon/js/collapsible";
 
 ### Voorbeeld: Collapsible zonder gedefinieerde `button` labels
 
-<div class="collapsible">
+<div class="collapsible" data-media="(min-width: 100%)">
   <div class="collapsing-element">
       <ul>
           <li><a href="#">Item 1</a></li>
@@ -44,7 +44,7 @@ import "@minvws/manon/js/collapsible";
 </div>
 
 ```html
-<div class="collapsible">
+<div class="collapsible" data-media="(min-width: 100%)">
   <div class="collapsing-element">
     <ul>
       <li><a href="#">Item 1</a></li>
@@ -58,8 +58,10 @@ import "@minvws/manon/js/collapsible";
 ### Voorbeeld: Collapsible met gedefinieerde `button` labels
 
 <div class="collapsible" 
-data-open-label="Gedefinieerde menu label" 
-data-close-label="Sluit gedefinieerde menu label">
+  data-open-label="Toon acties"
+  data-close-label="Verberg acties"
+  data-media="(min-width: 100%)"
+>
 
   <div class="collapsing-element">
       <ul>
@@ -75,6 +77,7 @@ data-close-label="Sluit gedefinieerde menu label">
   class="collapsible"
   data-open-label="Toon acties"
   data-close-label="Verberg acties"
+  data-media="(min-width: 100%)"
 >
   <div class="collapsing-element">
     <ul>
@@ -92,6 +95,7 @@ data-close-label="Sluit gedefinieerde menu label">
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-icon-classes="icon icon-chevron-down"
+  data-media="(min-width: 100%)"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -108,6 +112,7 @@ data-close-label="Sluit gedefinieerde menu label">
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-icon-classes="icon icon-chevron-down"
+  data-media="(min-width: 100%)"
   class="collapsible"
 >
   <div class="collapsing-element">
@@ -127,6 +132,7 @@ data-close-label="Sluit gedefinieerde menu label">
   data-close-label="Sluit profiel"
   data-icon-classes="icon icon-user"
   data-icon-position="left"
+  data-media="(min-width: 100%)"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -144,6 +150,7 @@ data-close-label="Sluit gedefinieerde menu label">
   data-close-label="Sluit profiel"
   data-icon-classes="icon icon-user"
   data-icon-position="left"
+  data-media="(min-width: 100%)"
   class="collapsible"
 >
   <div class="collapsing-element">
@@ -162,6 +169,7 @@ data-close-label="Sluit gedefinieerde menu label">
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-button-classes="ghost"
+  data-media="(min-width: 100%)"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -178,6 +186,7 @@ data-close-label="Sluit gedefinieerde menu label">
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-button-classes="ghost"
+  data-media="(min-width: 100%)"
   class="collapsible"
 >
   <div class="collapsing-element">
@@ -197,6 +206,7 @@ data-close-label="Sluit gedefinieerde menu label">
   data-close-label="Sluit dropdown menu"
   data-icon-classes="icon icon-chevron-down"
   data-button-classes="ghost"
+  data-media="(min-width: 100%)"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -213,6 +223,7 @@ data-close-label="Sluit gedefinieerde menu label">
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-button-classes="secondary"
+  data-media="(min-width: 100%)"
   class="collapsible"
 >
   <div class="collapsing-element">
@@ -230,6 +241,7 @@ data-close-label="Sluit gedefinieerde menu label">
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
+  data-media="(min-width: 100%)"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -264,6 +276,7 @@ data-close-label="Sluit gedefinieerde menu label">
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
+  data-media="(min-width: 100%)"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -283,7 +296,7 @@ data-close-label="Sluit gedefinieerde menu label">
 </div>
 
 ```html
-<div data-open-label="Dropdown menu" data-close-label="Sluit dropdown menu" class="collapsible">
+<div data-open-label="Dropdown menu" data-close-label="Sluit dropdown menu" class="collapsible" data-media="(min-width: 100%)">
   <div class="collapsing-element">
     <ul>
       <li><a href="#">Item 1</a></li>
@@ -305,6 +318,7 @@ data-close-label="Sluit gedefinieerde menu label">
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
+  data-media="(min-width: 100%)"
   class="collapsible">
 
   <div class="collapsing-element">
