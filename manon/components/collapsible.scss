@@ -169,10 +169,10 @@
     border-color: theme.$collapsible-toggle-border-color;
     border-radius: theme.$collapsible-toggle-border-radius;
 
-    &.ghost {
-      background-color: theme.$collapsible-toggle-ghost-background-color;
-      border-color: theme.$collapsible-toggle-ghost-border-color;
-      color: theme.$collapsible-toggle-ghost-text-color;
+    &.secondary {
+      background-color: theme.$collapsible-toggle-secondary-background-color;
+      border-color: theme.$collapsible-toggle-secondary-border-color;
+      color: theme.$collapsible-toggle-secondary-text-color;
     }
 
     &:focus {

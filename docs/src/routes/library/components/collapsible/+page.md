@@ -163,12 +163,12 @@ import "@minvws/manon/js/collapsible";
 </div>
 ```
 
-### Voorbeeld: Inklapbare ghost button
+### Voorbeeld: Inklapbare secondary button
 
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-button-classes="ghost"
+  data-button-classes="secondary"
   data-media="(min-width: 100%)"
   class="collapsible">
 
@@ -185,7 +185,7 @@ import "@minvws/manon/js/collapsible";
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-button-classes="ghost"
+  data-button-classes="secondary"
   data-media="(min-width: 100%)"
   class="collapsible"
 >
@@ -199,13 +199,13 @@ import "@minvws/manon/js/collapsible";
 </div>
 ```
 
-### Voorbeeld: Inklapbare ghost button met icoonknop
+### Voorbeeld: Inklapbare secondary button met icoonknop
 
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-icon-classes="icon icon-chevron-down"
-  data-button-classes="ghost"
+  data-button-classes="secondary"
   data-media="(min-width: 100%)"
   class="collapsible">
 
