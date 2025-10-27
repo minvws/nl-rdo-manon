@@ -13,7 +13,7 @@
   <div
     data-open-label="Menu"
     data-close-label="Sluit menu"
-    data-media="(min-width: 755px)"
+    data-media="(min-width: 770px)"
     aria-label="Hoofdnavigatie"
     class="collapsible right"
   >
