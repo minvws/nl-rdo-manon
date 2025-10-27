@@ -233,6 +233,7 @@ and spacing sets */
   $emphasized-font-weight: font-weight.$font-weight-medium,
 
   // form
+  $form-background-color: #f1f3f5,
   $form-align-items: flex-start,
   $form-text-color: semantic.$color-text-default,
   $form-gap: spacing.$spacing-100,

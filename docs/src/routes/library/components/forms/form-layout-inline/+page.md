@@ -28,12 +28,34 @@ Het basisvoorbeeld met een invoerveld en een verzendknop.
 
 ### Voorbeeld: Basis
 
-<form action="" method="post" class="inline">
-  <button type="submit">Haal gegevens op</button>
+<form>
+  <fieldset>
+    <legend>Titel</legend>
+    <label for="example-input-base">Voorbeeld invoerveld</label>
+    <input id="example-input-base" name="example-input-base" type="text" />
+  </fieldset>
+  <button type="submit">Verzend</button>
 </form>
 
 ```html
-<form action="" method="post" class="inline">
-  <button type="submit">Haal gegevens op</button>
+<form>
+  <fieldset>
+    <legend>Titel</legend>
+    <label for="example-input-base">Voorbeeld invoerveld</label>
+    <input id="example-input-base" name="example-input-base" type="text" />
+  </fieldset>
+  <button type="submit">Verzend</button>
+</form>
+```
+
+### Voorbeeld: inline formulier
+
+<form class="inline">
+  <button type="submit">Verzend</button>
+</form>
+
+```html
+<form class="inline">
+  <button type="submit">Verzend</button>
 </form>
 ```
