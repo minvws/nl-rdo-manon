@@ -24,29 +24,7 @@ SCSS importeren:
 
 <h2 id="examples">Voorbeelden</h2>
 
-Het basisvoorbeeld met een invoerveld en een verzendknop.
-
-### Voorbeeld: Basis
-
-<form>
-  <fieldset>
-    <legend>Titel</legend>
-    <label for="example-input-base">Voorbeeld invoerveld</label>
-    <input id="example-input-base" name="example-input-base" type="text" />
-  </fieldset>
-  <button type="submit">Verzend</button>
-</form>
-
-```html
-<form>
-  <fieldset>
-    <legend>Titel</legend>
-    <label for="example-input-base">Voorbeeld invoerveld</label>
-    <input id="example-input-base" name="example-input-base" type="text" />
-  </fieldset>
-  <button type="submit">Verzend</button>
-</form>
-```
+Het toevoegen van de `inline` class zorgt ervoor dat de standaard opmaak van het formulier wordt genegeerd, waardoor de knop eruitziet alsof deze niet door een formulier wordt omgeven.
 
 ### Voorbeeld: inline formulier
 
