@@ -22,6 +22,7 @@ main article form,
 main div form {
   > fieldset {
     padding: theme.$form-fieldset-padding;
+    margin: theme.$form-fieldset-margin;
     border-width: theme.$form-fieldset-border-width;
     border-style: theme.$form-fieldset-border-style;
     border-color: theme.$form-fieldset-border-color;
@@ -29,6 +30,7 @@ main div form {
     legend {
       font-weight: theme.$form-fieldset-legend-font-weight;
       margin: theme.$form-fieldset-legend-margin;
+      padding: theme.$form-fieldset-legend-padding;
     }
 
     input {
@@ -38,6 +40,7 @@ main div form {
     /*Fieldsets within fieldsets ignore the "*" all selector */
     > fieldset {
       display: inline-block;
+      padding: theme.$form-fieldset-fields-padding;
       margin: theme.$form-fieldset-fields-margin;
       border-width: theme.$form-fieldset-border-width;
       border-style: theme.$form-fieldset-border-style;
