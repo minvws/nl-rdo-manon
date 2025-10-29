@@ -30,21 +30,24 @@ export function initCollapsible() {
     // Create the collapsible button or skip if button already exists
     if (collapsibleElement.querySelector(".collapsible-toggle")) return;
 
-    const toggleButton = createCollapsibleButton(collapsibleElement, collapsingElement);
+    const toggleButton = createCollapsibleButton(
+      collapsibleElement,
+      collapsingElement
+    );
 
     collapsingElement.parentNode?.insertBefore(toggleButton, collapsingElement);
   });
 }
 
 /**
-* Creates and returns a toggle button for a collapsible component.
-* This function builds the button element, sets its ARIA attributes, reads
-* data-* attributes from the parent for configuration (e.g., labels, icons),
-* and attaches the click event listener for toggling.
-*
-* @param {HTMLElement} collapsibleElement The root `.collapsible` element, used to read `data-*` attributes.
-* @param {HTMLElement} collapsingElement The element that will be shown/hidden, used for the `aria-controls` attribute.
-* @returns {HTMLButtonElement} The created button element with all event listeners attached.
+ * Creates and returns a toggle button for a collapsible component.
+ * This function builds the button element, sets its ARIA attributes, reads
+ * data-* attributes from the parent for configuration (e.g., labels, icons),
+ * and attaches the click event listener for toggling.
+ *
+ * @param {HTMLElement} collapsibleElement The root `.collapsible` element, used to read `data-*` attributes.
+ * @param {HTMLElement} collapsingElement The element that will be shown/hidden, used for the `aria-controls` attribute.
+ * @returns {HTMLButtonElement} The created button element with all event listeners attached.
  */
 function createCollapsibleButton(collapsibleElement, collapsingElement) {
   const openLabel = collapsibleElement.dataset.openLabel || "Dropdown menu";
@@ -52,12 +55,12 @@ function createCollapsibleButton(collapsibleElement, collapsingElement) {
     collapsibleElement.dataset.closeLabel || "Sluit dropdown menu";
   const buttonClasses = collapsibleElement.dataset.buttonClasses || "";
   const iconClasses = collapsibleElement.dataset.iconClasses || "";
-  const iconPosition = collapsibleElement.dataset.iconPosition || "right"
+  const iconPosition = collapsibleElement.dataset.iconPosition || "right";
   const mediaQuery = collapsibleElement.dataset.media || "(min-width: 42rem)";
 
   // Create button
   const button = document.createElement("button");
-  
+
   // Set button attributes
   button.type = "button";
   button.innerText = openLabel;
@@ -72,13 +75,15 @@ function createCollapsibleButton(collapsibleElement, collapsingElement) {
     const iconSpan = document.createElement("span");
     iconSpan.setAttribute("aria-hidden", "true");
     iconSpan.className = iconClasses;
-    iconPosition.includes("left") ? button.prepend(iconSpan) : button.append(iconSpan);
+    iconPosition.includes("left")
+      ? button.prepend(iconSpan)
+      : button.append(iconSpan);
   }
 
   /**
    * Set the expanded/collapsed state of the button and its collapsible element
    * @param {boolean} expanded - true to expand, false to collapse
-  */
+   */
   const setExpanded = (expanded) => {
     button.setAttribute("aria-expanded", String(expanded));
     button.setAttribute("aria-label", expanded ? closeLabel : openLabel);
@@ -94,20 +99,19 @@ function createCollapsibleButton(collapsibleElement, collapsingElement) {
   if (!collapsibleElement.classList.contains("condensed")) {
     const mql = window.matchMedia(mediaQuery);
 
-  /**
-   * Handles media query changes for the collapsible
-   * @param {MediaQueryList | MediaQueryListEvent} mq
-   */
+    /**
+     * Handles media query changes for the collapsible
+     * @param {MediaQueryList | MediaQueryListEvent} mq
+     */
     const handleMediaChange = (mq) => {
       setExpanded(false); // collapse on media change
       collapsibleElement.classList.toggle("collapsed", !mq.matches);
     };
-    
-    handleMediaChange(mql); 
+
+    handleMediaChange(mql);
 
     mql.addEventListener("change", handleMediaChange);
   }
 
   return button;
-
 }

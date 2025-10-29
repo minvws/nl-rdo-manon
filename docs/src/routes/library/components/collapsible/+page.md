@@ -296,7 +296,12 @@ import "@minvws/manon/js/collapsible";
 </div>
 
 ```html
-<div data-open-label="Dropdown menu" data-close-label="Sluit dropdown menu" class="collapsible" data-media="(min-width: 100%)">
+<div
+  data-open-label="Dropdown menu"
+  data-close-label="Sluit dropdown menu"
+  class="collapsible"
+  data-media="(min-width: 100%)"
+>
   <div class="collapsing-element">
     <ul>
       <li><a href="#">Item 1</a></li>
