@@ -30,7 +30,6 @@ form.horizontal {
     &.form-group {
       display: flex;
       flex-direction: row;
-      align-items: center;
       flex-wrap: nowrap;
       margin: 0;
       width: theme.$form-horizontal-group;
