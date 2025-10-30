@@ -5,7 +5,6 @@ ul,
 ol {
   display: flex;
   flex-direction: column;
-  margin: 0;
   box-sizing: border-box;
   gap: theme.$list-gap;
   padding: theme.$list-padding;
