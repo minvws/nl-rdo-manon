@@ -5,51 +5,40 @@ ul,
 ol {
   display: flex;
   flex-direction: column;
-  margin: 0;
   box-sizing: border-box;
-
-  @include theming.apply-from-theme(
-    (
-      gap: theme.$list-gap,
-      padding: theme.$list-padding,
-      background-color: theme.$list-background-color,
-      line-height: theme.$list-line-height,
-      font-size: theme.$list-font-size,
-      font-weight: theme.$list-font-weight,
-      color: theme.$list-text-color,
-      margin: theme.$list-margin,
-    )
-  );
+  gap: theme.$list-gap;
+  padding: theme.$list-padding;
+  background-color: theme.$list-background-color;
+  line-height: theme.$list-line-height;
+  font-size: theme.$list-font-size;
+  font-weight: theme.$list-font-weight;
+  color: theme.$list-text-color;
+  margin: theme.$list-margin;
 
   li {
     box-sizing: border-box;
-
-    @include theming.apply-from-theme(
-      (
-        background-color: theme.$list-item-background-color,
-        border-width: theme.$list-item-border-width,
-        border-style: theme.$list-item-border-style,
-        border-color: theme.$list-item-border-color,
-        padding: theme.$list-item-padding,
-        line-height: theme.$list-item-line-height,
-        font-size: theme.$list-item-font-size,
-        font-weight: theme.$list-item-font-weight,
-        color: theme.$list-item-text-color,
-      )
-    );
+    background-color: theme.$list-item-background-color;
+    border-width: theme.$list-item-border-width;
+    border-style: theme.$list-item-border-style;
+    border-color: theme.$list-item-border-color;
+    padding: theme.$list-item-padding;
+    line-height: theme.$list-item-line-height;
+    font-size: theme.$list-item-font-size;
+    font-weight: theme.$list-item-font-weight;
+    color: theme.$list-item-text-color;
+    list-style: theme.$list-item-list-style;
   }
 }
 
 /*
  * Nested Lists, eg. ol in ul
  */
-ul {
-  > li {
-    @include theming.apply-from-theme(
-      (
-        list-style: theme.$list-item-list-style,
-      )
-    );
+li:has(ul) {
+  flex-wrap: wrap;
+
+  > ul {
+    flex-basis: 100%;
+    margin: theme.$nested-list-margin;
   }
 }
 

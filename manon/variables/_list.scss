@@ -1,4 +1,4 @@
-/* List */
+// List
 $list-gap: null !default;
 $list-padding: null !default;
 $list-background-color: null !default;
@@ -8,7 +8,7 @@ $list-font-weight: null !default;
 $list-text-color: null !default;
 $list-margin: null !default;
 
-/* List item */
+// List item
 $list-item-background-color: null !default;
 $list-item-border-width: null !default;
 $list-item-border-style: null !default;
@@ -19,3 +19,6 @@ $list-item-font-size: null !default;
 $list-item-font-weight: null !default;
 $list-item-list-style: null !default;
 $list-item-text-color: null !default;
+
+// Nested list
+$nested-list-margin: 0.75rem !default;
