@@ -33,6 +33,10 @@
         border-color: theme.$collapsible-toggle-secondary-border-color;
         color: theme.$collapsible-toggle-secondary-text-color;
       }
+      .icon {
+        height: 100%;
+        width: auto;
+      }
 
       + .collapsing-element {
         display: flex;

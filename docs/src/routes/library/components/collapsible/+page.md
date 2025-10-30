@@ -151,7 +151,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 </div>
 ```
 
-### Voorbeeld: Inklapbare ghost button
+### Voorbeeld: Inklapbare secondary button
 
 <div
   data-open-label="Dropdown menu"

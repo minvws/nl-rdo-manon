@@ -70,17 +70,28 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   var buttonCloseLabel = collapsibleElement.dataset.buttonCloseLabel;
   var openLabel = collapsibleElement.dataset.openLabel || "Menu";
   var closeLabel = collapsibleElement.dataset.closeLabel || "Sluit menu";
-  var buttonClasses = collapsibleElement.dataset.buttonClasses || "";
+  var buttonDataClasses = collapsibleElement.dataset.buttonClasses || "";
+
+  // button classes includes icon classes, seperate class list for icon span.
+  const iconClasses = buttonDataClasses
+    .split(/\s+/)
+    .filter(c => c === "icon" || c.startsWith("icon-"))
+    .join(" ");
+
+  const buttonClasses = buttonDataClasses
+    .split(/\s+/)
+    .filter(c => c !== "icon" && !c.startsWith("icon-"))
+    .join(" ");
+
+   // icon span using icon classes
+  var iconSpan = document.createElement("span");
+  iconSpan.className = iconClasses;
 
   // Create button HTML element with classes and content
   var button = document.createElement("button");
   button.type = "button";
-  button.className = "collapsible-toggle";
+  button.className = "collapsible-toggle " + buttonClasses;
   button.innerText = buttonOpenLabel || openLabel;
-
-  // icon span using button classes
-  var iconSpan = document.createElement("span");
-  iconSpan.className = buttonClasses;
 
   // Configure button aria attributes
   button.setAttribute("aria-controls", collapsingElement.id);
@@ -94,6 +105,7 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   ensureElementHasId(label);
 
   button.appendChild(label);
+
   button.appendChild(iconSpan);
   button.setAttribute("aria-labelledby", label.id);
 
