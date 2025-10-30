@@ -23,6 +23,16 @@
     button.collapsible-toggle {
       display: flex;
       max-height: 100%;
+      border-width: theme.$collapsible-toggle-border-width;
+      border-style: theme.$collapsible-toggle-border-style;
+      border-color: theme.$collapsible-toggle-border-color;
+      border-radius: theme.$collapsible-toggle-border-radius;
+
+      &.secondary {
+        background-color: theme.$collapsible-toggle-secondary-background-color;
+        border-color: theme.$collapsible-toggle-secondary-border-color;
+        color: theme.$collapsible-toggle-secondary-text-color;
+      }
 
       + .collapsing-element {
         display: flex;

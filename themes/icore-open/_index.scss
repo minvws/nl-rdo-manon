@@ -198,7 +198,58 @@ and spacing sets */
 
   // collapsing element
   $collapsing-element-justify-content: space-between,
-  $collapsing-element-align-items: center,
+  $collapsing-element-align-items: flex-start,
+  $collapsing-element-flex-direction: column,
+  $collapsing-element-gap: 0,
+  $collapsing-element-width: auto,
+  $collapsing-element-max-width: 250px,
+  $collapsing-element-z-index: 20,
+  $collapsing-element-padding-top: 0,
+  $collapsing-element-padding-right: 0,
+  $collapsing-element-padding-bottom: 0,
+  $collapsing-element-padding-left: 0,
+  $collapsing-element-border-width: 0,
+  $collapsing-element-border-style: solid,
+  $collapsing-element-border-color: transparent,
+  $collapsing-element-background-color: #fff,
+  $collapsing-element-text-color: #000,
+  $collapsing-element-box-shadow: 0px 4px 20px 0px rgb(0 0 0 / 10%),
+  $collapsing-element-top: 100%,
+  $collapsing-element-left: 0,
+  $collapsing-element-right: 0,
+
+  $collapsible-toggle-border-width: 1px,
+  $collapsible-toggle-border-style: solid,
+  $collapsible-toggle-border-color: #1971c2,
+  $collapsible-toggle-border-radius: 0.25rem,
+
+  $collapsible-toggle-secondary-text-color: #1971c2,
+  $collapsible-toggle-secondary-border-color: #ced4da,
+  $collapsible-toggle-secondary-background-color: #fff,
+
+  $collapsing-element-list-gap: 0,
+
+  $collapsing-element-list-item-align-items: flex-start,
+  $collapsing-element-list-item-background-color: transparent,
+  $collapsing-element-list-item-text-color: #000,
+  $collapsing-element-list-item-border-width: 0 0 1px 0,
+  $collapsing-element-list-item-border-style: solid,
+  $collapsing-element-list-item-border-color: #dbdbdb,
+
+  $collapsing-element-list-item-min-height: 3rem,
+
+  $collapsing-element-list-item-link-padding-top: 0,
+  $collapsing-element-list-item-link-padding-right: 1rem,
+  $collapsing-element-list-item-link-padding-bottom: 0,
+  $collapsing-element-list-item-link-padding-left: 1rem,
+  $collapsing-element-list-item-link-text-color: #000,
+  $collapsing-element-list-item-link-text-decoration: none,
+
+  $collapsing-element-list-item-link-hover-background-color: #e7f5ff,
+
+  $collapsing-element-list-icon-font-size: 1rem,
+
+  $collapsing-element-list-link-selected-font-weight: bold,
 
   // color picker
   $color-picker-border-radius: border-radii.$border-radius-s,

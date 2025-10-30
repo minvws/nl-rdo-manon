@@ -75,8 +75,12 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   // Create button HTML element with classes and content
   var button = document.createElement("button");
   button.type = "button";
-  button.className = "collapsible-toggle " + buttonClasses;
+  button.className = "collapsible-toggle";
   button.innerText = buttonOpenLabel || openLabel;
+
+  // icon span using button classes
+  var iconSpan = document.createElement("span");
+  iconSpan.className = buttonClasses;
 
   // Configure button aria attributes
   button.setAttribute("aria-controls", collapsingElement.id);
@@ -90,6 +94,7 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   ensureElementHasId(label);
 
   button.appendChild(label);
+  button.appendChild(iconSpan);
   button.setAttribute("aria-labelledby", label.id);
 
   /**
@@ -102,6 +107,7 @@ function createMenuButton(collapsibleElement, collapsingElement) {
         ? buttonCloseLabel || closeLabel
         : buttonOpenLabel || openLabel;
       label.innerText = expanded ? closeLabel : openLabel;
+      button.appendChild(iconSpan);
     }
   }
 
