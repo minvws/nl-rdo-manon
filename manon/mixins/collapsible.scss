@@ -33,7 +33,8 @@
         border-color: theme.$collapsible-toggle-secondary-border-color;
         color: theme.$collapsible-toggle-secondary-text-color;
       }
-      /* The icon’s height matches the button text height, 
+
+      /* Let the icon’s height matches the button text height, 
       and its width adjusts automatically to maintain the correct aspect ratio. 
       */
       .icon {

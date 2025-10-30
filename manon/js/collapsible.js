@@ -75,15 +75,15 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   // button classes includes icon classes, seperate class list for icon span.
   const iconClasses = buttonDataClasses
     .split(/\s+/)
-    .filter(c => c === "icon" || c.startsWith("icon-"))
+    .filter((c) => c === "icon" || c.startsWith("icon-"))
     .join(" ");
 
   const buttonClasses = buttonDataClasses
     .split(/\s+/)
-    .filter(c => c !== "icon" && !c.startsWith("icon-"))
+    .filter((c) => c !== "icon" && !c.startsWith("icon-"))
     .join(" ");
 
-   // icon span using icon classes
+  // icon span using icon classes
   var iconSpan = document.createElement("span");
   iconSpan.className = iconClasses;
 
