@@ -9,7 +9,8 @@
     "build": "pnpm run --dir docs build",
     "lint": "pnpm run --dir manon lint:css",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "test": "vitest run --coverage"
   },
   "pnpm": {
     "overrides": {
@@ -17,7 +18,11 @@
     }
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@vitest/coverage-v8": "4.0.5",
     "prettier": "^3.6.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.5"
   }
 }
