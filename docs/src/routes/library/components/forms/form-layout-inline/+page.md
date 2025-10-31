@@ -24,16 +24,16 @@ SCSS importeren:
 
 <h2 id="examples">Voorbeelden</h2>
 
-Het basisvoorbeeld met een invoerveld en een verzendknop.
+Het toevoegen van de `inline` class zorgt ervoor dat de standaard opmaak van het formulier wordt genegeerd, waardoor de knop eruitziet alsof deze niet door een formulier wordt omgeven.
 
-### Voorbeeld: Basis
+### Voorbeeld: inline formulier
 
-<form action="" method="post" class="inline">
-  <button type="submit">Haal gegevens op</button>
+<form class="inline">
+  <button type="submit">Verzend</button>
 </form>
 
 ```html
-<form action="" method="post" class="inline">
-  <button type="submit">Haal gegevens op</button>
+<form class="inline">
+  <button type="submit">Verzend</button>
 </form>
 ```
