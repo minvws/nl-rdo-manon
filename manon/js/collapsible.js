@@ -70,7 +70,22 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   var buttonCloseLabel = collapsibleElement.dataset.buttonCloseLabel;
   var openLabel = collapsibleElement.dataset.openLabel || "Menu";
   var closeLabel = collapsibleElement.dataset.closeLabel || "Sluit menu";
-  var buttonClasses = collapsibleElement.dataset.buttonClasses || "";
+  var buttonDataClasses = collapsibleElement.dataset.buttonClasses || "";
+
+  // button classes includes icon classes, seperate class list for icon span.
+  const iconClasses = buttonDataClasses
+    .split(/\s+/)
+    .filter((c) => c === "icon" || c.startsWith("icon-"))
+    .join(" ");
+
+  const buttonClasses = buttonDataClasses
+    .split(/\s+/)
+    .filter((c) => c !== "icon" && !c.startsWith("icon-"))
+    .join(" ");
+
+  // icon span using icon classes
+  var iconSpan = document.createElement("span");
+  iconSpan.className = iconClasses;
 
   // Create button HTML element with classes and content
   var button = document.createElement("button");
@@ -90,6 +105,8 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   ensureElementHasId(label);
 
   button.appendChild(label);
+
+  button.appendChild(iconSpan);
   button.setAttribute("aria-labelledby", label.id);
 
   /**
@@ -102,6 +119,7 @@ function createMenuButton(collapsibleElement, collapsingElement) {
         ? buttonCloseLabel || closeLabel
         : buttonOpenLabel || openLabel;
       label.innerText = expanded ? closeLabel : openLabel;
+      button.appendChild(iconSpan);
     }
   }
 
