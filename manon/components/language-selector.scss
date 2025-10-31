@@ -39,21 +39,16 @@ body > header nav .language-selector,
     margin: 0;
     width: auto;
     box-sizing: border-box;
-
-    @include theming.apply-from-theme(
-      (
-        border-width: theme.$language-selector-list-border-width,
-        border-style: theme.$language-selector-list-border-style,
-        border-color: theme.$language-selector-list-border-color,
-        border-radius: theme.$language-selector-list-border-radius,
-        background-color: theme.$language-selector-list-background-color,
-        margin-top: theme.$language-selector-list-margin-top,
-        box-shadow: theme.$language-selector-list-box-shadow,
-        right: theme.$language-selector-list-right,
-        left: theme.$language-selector-list-left,
-        min-width: theme.$language-selector-list-min-width,
-      )
-    );
+    border-width: theme.$language-selector-list-border-width;
+    border-style: theme.$language-selector-list-border-style;
+    border-color: theme.$language-selector-list-border-color;
+    border-radius: theme.$language-selector-list-border-radius;
+    background-color: theme.$language-selector-list-background-color;
+    margin-top: theme.$language-selector-list-margin-top;
+    box-shadow: theme.$language-selector-list-box-shadow;
+    right: theme.$language-selector-list-right;
+    left: theme.$language-selector-list-left;
+    min-width: theme.$language-selector-list-min-width;
 
     li {
       list-style: none;
@@ -61,7 +56,10 @@ body > header nav .language-selector,
       display: flex;
       order: 1;
       margin: 0;
-      line-height: 0;
+      min-height: theme.$language-selector-list-item-min-height;
+      border-width: theme.$language-selector-list-item-border-width;
+      border-style: theme.$language-selector-list-item-border-style;
+      border-color: theme.$language-selector-list-item-border-color;
 
       @include theming.apply-from-theme(
         (
