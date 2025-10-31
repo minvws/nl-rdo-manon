@@ -37,7 +37,7 @@ body > header nav .language-selector,
     position: static;
     padding: 0;
     margin: 0;
-    width: auto;
+    width: 100%;
     box-sizing: border-box;
     border-width: theme.$language-selector-list-border-width;
     border-style: theme.$language-selector-list-border-style;
@@ -49,11 +49,13 @@ body > header nav .language-selector,
     right: theme.$language-selector-list-right;
     left: theme.$language-selector-list-left;
     min-width: theme.$language-selector-list-min-width;
+    max-width: theme.$language-selector-list-max-width;
 
     li {
       list-style: none;
       padding: 0;
       display: flex;
+      overflow: auto;
       order: 1;
       margin: 0;
       min-height: theme.$language-selector-list-item-min-height;
