@@ -29,7 +29,7 @@ zijn of visueel meer aandacht mag krijgen om de gebruiker te attenderen.
 Voeg `class="tile"` toe voor de tegelweergave op een enkel element.
 
 <div class="tile" role="group">
-  <h2>Lorem ipsum dolor sit</h2>
+  <h2 class="heading-small">Lorem ipsum dolor sit</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
     amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -38,7 +38,7 @@ Voeg `class="tile"` toe voor de tegelweergave op een enkel element.
 
 ```html
 <div class="tile" role="group">
-  <h2>Lorem ipsum dolor sit</h2>
+  <h2 class="heading-small">Lorem ipsum dolor sit</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
     convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -56,7 +56,7 @@ Bijvoorbeeld: `<div class="tiles">`
 
 <div class="tiles column-3">
   <div role="group">
-    <h2>Lorem ipsum</h2>
+    <h2 class="heading-small">Lorem ipsum</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
       amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -64,7 +64,7 @@ Bijvoorbeeld: `<div class="tiles">`
   </div>
 
   <div role="group">
-    <h2>Lorem ipsum</h2>
+    <h2 class="heading-small">Lorem ipsum</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
       amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -72,7 +72,7 @@ Bijvoorbeeld: `<div class="tiles">`
   </div>
 
   <div role="group">
-    <h2>Lorem ipsum</h2>
+    <h2 class="heading-small">Lorem ipsum</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
       amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -83,7 +83,7 @@ Bijvoorbeeld: `<div class="tiles">`
 ```html
 <div class="tiles column-3">
   <div role="group">
-    <h2>Lorem ipsum</h2>
+    <h2 class="heading-small">Lorem ipsum</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
       convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -91,7 +91,7 @@ Bijvoorbeeld: `<div class="tiles">`
   </div>
 
   <div role="group">
-    <h2>Lorem ipsum</h2>
+    <h2 class="heading-small">Lorem ipsum</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
       convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -99,7 +99,7 @@ Bijvoorbeeld: `<div class="tiles">`
   </div>
 
   <div role="group">
-    <h2>Lorem ipsum</h2>
+    <h2 class="heading-small">Lorem ipsum</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
       convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -114,7 +114,7 @@ Voeg de class `image-cover` toe voor de correcte weergave.
 
 <div role="group" class="tile image-cover">
   <img src="$img/strand.jpg" alt="Foto van een strand" />
-  <h2>Lorem ipsum</h2>
+  <h2 class="heading-small">Lorem ipsum</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
     amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -124,10 +124,116 @@ Voeg de class `image-cover` toe voor de correcte weergave.
 ```html
 <div role="group" class="tile image-cover">
   <img src="$img/strand.jpg" alt="Foto van een strand" />
-  <h2>Lorem ipsum</h2>
+  <h2 class="heading-small">Lorem ipsum</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
     convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
   </p>
 </div>
 ```
+
+### Voorbeeld: Tegel met extra groepering
+
+<manon-tabs>
+  <ul>
+    <li><a href="#tile-group">Tile-group</a></li>
+    <li><a href="#button-container">Button-container</a></li>
+    <li><a href="#horizontal">Horizontal</a></li>
+  </ul>
+
+  <div id="tile-group">
+  <div class="column-3">
+    <div class="tile" role="group">
+      <h2 class="heading-small">Lorem ipsum dolor sit</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
+        amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+      </p>
+      <div class="tile-group">
+        <button>Sla op</button>
+        <a href="#">Zie meer</a>
+      </div>
+    </div>
+  </div>
+    <p>HTML-Voorbeeld:</p>
+    <pre>
+      <code>
+&lt;div class="tile" role="group">
+  &lt;h2 class="heading-small">Lorem ipsum dolor sit&lt;/h2>
+  &lt;p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
+    amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+  &lt;/p>
+  &lt;div class="tile-group">
+    &lt;button>Sla op&lt;/button>
+    &lt;a href="#">Zie meer&lt;/a>
+  &lt;/div>
+&lt;/div>
+      </code>
+    </pre>
+  </div>
+
+  <div id="button-container">
+  <div class="column-3">
+    <div class="tile" role="group">
+      <h2 class="heading-small">Lorem ipsum dolor sit</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
+        amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+      </p>
+      <div class="button-container">
+        <button>Optie A</button>
+        <button class="secondary">Optie B</button>
+      </div>
+    </div>
+  </div>
+    <p>HTML-Voorbeeld:</p>
+    <pre>
+      <code>
+&lt;div class="tile" role="group">
+  &lt;h2 class="heading-small">Lorem ipsum dolor sit&lt;/h2>
+  &lt;p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
+    amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+  &lt;/p>
+  &lt;div class="button-container">
+    &lt;button>Optie A&lt;/button>
+    &lt;button class="secondary">Optie B&lt;/button>
+  &lt;/div>
+&lt;/div>
+      </code>
+    </pre>
+  </div>
+
+  <div id="horizontal">
+    <div class="column-3">
+      <div class="tile" role="group">
+        <h2 class="heading-small">Lorem ipsum dolor sit</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
+          amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+        </p>
+        <div class="horizontal">
+          <button>Sla op</button>
+          <a href="#">Zie meer</a>
+        </div>
+      </div>
+    </div>
+    <p>HTML-Voorbeeld:</p>
+    <pre>
+      <code>
+&lt;div class="tile" role="group">
+  &lt;h2 class="heading-small">Lorem ipsum dolor sit&lt;/h2>
+  &lt;p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
+    amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
+  &lt;/p>
+  &lt;div class="horizontal">
+    &lt;button>Sla op&lt;/button>
+    &lt;a href="#">Zie meer&lt;/a>
+  &lt;/div>
+&lt;/div>
+      </code>
+    </pre>
+  </div>
+</manon-tabs>

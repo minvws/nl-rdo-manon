@@ -1,5 +1,5 @@
 // tile
-$tile-flex-direction: null !default;
+$tile-flex-direction: column !default;
 $tile-justify-content: null !default;
 $tile-align-items: flex-start !default;
 $tile-gap: null !default;
@@ -23,3 +23,14 @@ $tiles-align-items: flex-start !default;
 
 // link
 $tile-link-text-color: null !default;
+
+// tile group
+$tile-group-flex-direction: row !default;
+$tile-group-gap: null !default;
+$tile-group-margin: null !default;
+$tile-group-padding: null !default;
+$tile-group-border-width: null !default;
+$tile-group-border-style: null !default;
+$tile-group-border-color: null !default;
+$tile-group-align-items: null !default;
+$tile-group-justify-content: null !default;
