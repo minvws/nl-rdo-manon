@@ -13,18 +13,6 @@ form.horizontal {
     max-width: theme.$form-horizontal-label-max-width;
   }
 
-  > div {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: theme.$form-horizontal-group;
-
-    @include theming.apply-from-theme(
-      (
-        gap: theme.$form-horizontal-gap,
-      )
-    );
-  }
-
   button,
   a.button,
   input[type="button"],
@@ -42,31 +30,12 @@ form.horizontal {
     &.form-group {
       display: flex;
       flex-direction: row;
-      align-items: center;
       flex-wrap: nowrap;
       margin: 0;
-
-      @include theming.apply-from-theme(
-        (
-          gap: theme.$form-horizontal-group-gap,
-          align-items: theme.$form-horizontal-group-align-items,
-          justify-content: theme.$form-horizontal-group-justify-content,
-        )
-      );
-      @include theming.apply-from-theme(
-        (
-          justify-content: theme.$form-horizontal-justify-content,
-        )
-      );
-
-      @if validators.args-not-null(
-        theme.$form-horizontal-group-gap,
-        theme.$form-horizontal-group-vertical-gap
-      )
-      {
-        gap: theme.$form-horizontal-group-gap
-          theme.$form-horizontal-group-vertical-gap;
-      }
+      width: theme.$form-horizontal-group;
+      gap: theme.$form-horizontal-group-gap;
+      align-items: theme.$form-horizontal-group-align-items;
+      justify-content: theme.$form-horizontal-group-justify-content;
 
       > * {
         flex-grow: 1;
@@ -76,20 +45,11 @@ form.horizontal {
       &.checkbox {
         margin: 0;
         flex-wrap: nowrap;
-
-        @include theming.apply-from-theme(
-          (
-            gap: theme.$checkbox-gap,
-          )
-        );
+        gap: theme.$checkbox-gap;
 
         @media (width >= $breakpoint) {
-          @include theming.apply-from-theme(
-            (
-              max-width: theme.$form-input-column,
-              margin-left: theme.$form-label-column,
-            )
-          );
+          max-width: theme.$form-input-column;
+          margin-left: theme.$form-label-column;
         }
 
         %horizontal-checkbox,
@@ -131,11 +91,7 @@ form.horizontal {
 
           @media (width >= $breakpoint) {
             /* Align radio with input fields */
-            @include theming.apply-from-theme(
-              (
-                margin-left: theme.$form-label-column,
-              )
-            );
+            margin-left: theme.$form-label-column;
           }
         }
 
@@ -153,11 +109,7 @@ form.horizontal {
         justify-content: flex-start;
 
         > .nota-bene {
-          @include theming.apply-from-theme(
-            (
-              margin-left: theme.$form-label-column,
-            )
-          );
+          margin-left: theme.$form-label-column;
         }
       }
 
@@ -168,18 +120,10 @@ form.horizontal {
       &.confirmation,
       &.system {
         margin: 0;
-
-        @include theming.apply-from-theme(
-          (
-            flex-direction:
-              theme.$form-horizontal-notification-block-element-flex-direction,
-            justify-content:
-              theme.$form-horizontal-notification-block-element-justify-content,
-            align-items:
-              theme.$form-horizontal-notification-block-element-align-items,
-            gap: theme.$form-horizontal-notification-block-element-gap,
-          )
-        );
+        flex-direction: theme.$form-horizontal-notification-block-element-flex-direction;
+        justify-content: theme.$form-horizontal-notification-block-element-justify-content;
+        align-items: theme.$form-horizontal-notification-block-element-align-items;
+        gap: theme.$form-horizontal-notification-block-element-gap;
 
         > * {
           max-width: 100%;
@@ -198,22 +142,12 @@ form.horizontal {
         flex-wrap: nowrap;
 
         > * {
-          @include theming.apply-from-theme(
-            (
-              max-width: theme.$form-input-column,
-            )
-          );
+          max-width: theme.$form-input-column;
         }
 
         label {
           width: 100%;
           max-width: theme.$form-horizontal-label-max-width;
-
-          @include theming.apply-from-theme(
-            (
-              max-width: theme.$form-horizontal-label-max-width,
-            )
-          );
         }
       }
     }
@@ -225,11 +159,7 @@ form.horizontal {
 
       @media (width >= $breakpoint) {
         > * {
-          @include theming.apply-from-theme(
-            (
-              margin-left: theme.$form-label-column,
-            )
-          );
+          margin-left: theme.$form-label-column;
         }
       }
     }
@@ -239,12 +169,7 @@ form.horizontal {
         width: auto;
         max-width: 100%;
         flex-grow: 0;
-
-        @include theming.apply-from-theme(
-          (
-            margin: theme.$form-horizontal-button-margin,
-          )
-        );
+        margin: theme.$form-horizontal-button-margin;
       }
 
       > button,
@@ -269,12 +194,8 @@ form.horizontal {
 
       > div.horizontal,
       > div.button-container {
-        @include theming.apply-from-theme(
-          (
-            max-width: theme.$form-input-column,
-            margin: theme.$form-horizontal-button-margin,
-          )
-        );
+        max-width: theme.$form-input-column;
+        margin: theme.$form-horizontal-button-margin;
         flex-wrap: wrap;
 
         button,
