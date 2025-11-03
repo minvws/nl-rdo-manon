@@ -230,7 +230,7 @@ and spacing sets */
   $collapsing-element-list-item-min-height: 3rem,
 
   $collapsing-element-list-item-link-padding-top: 0,
-  $collapsing-element-list-item-link-padding-right: 1rem,
+  $collapsing-element-list-item-link-padding-right: spacing.$spacing-100,
   $collapsing-element-list-item-link-padding-bottom: 0,
   $collapsing-element-list-item-link-padding-left: 1rem,
   $collapsing-element-list-item-link-text-color: semantic.$color-text-default,
