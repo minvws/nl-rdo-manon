@@ -27,29 +27,31 @@
     <h1>Inloggen</h1>
     <div class="content-wrapper">
       <form class="help">
-        <div>
+        <div class="help-container">
           <label for="username">Gebruikersnaam</label>
           <input id="username" name="username" placeholder="Gebruikersnaam" />
         </div>
 
         <div>
           <label for="password">Wachtwoord</label>
-          <input
-            id="password"
-            name="password"
-            placeholder="Wachtwoord"
-            type="password"
-            aria-describedby="password-message"
-          />
-          <p
-            class="explanation"
-            data-open-label="Toelichting bij het veld: Voorbeeld text input"
-            data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-            id="password-message"
-          >
-            <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter,
-            1 kleineletter en 1 cijfer.
-          </p>
+          <div class="help-container">
+            <input
+              id="password"
+              name="password"
+              placeholder="Wachtwoord"
+              type="password"
+              aria-describedby="password-message"
+            />
+            <p
+              class="explanation"
+              data-open-label="Toelichting bij het veld: Voorbeeld text input"
+              data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+              id="password-message"
+            >
+              <span>Toelichting:</span> Wachtwoord moet minimaal 8 tekens bevatten waarvan minimaal 1 hoofdletter,
+              1 kleineletter en 1 cijfer.
+            </p>
+          </div>
         </div>
         <button type="submit">Inloggen</button>
       </form>

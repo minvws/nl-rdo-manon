@@ -8,6 +8,11 @@ form.help {
   > div {
     width: 100%;
     position: relative;
+    padding: theme.$form-help-container-padding;
+
+    &:has(.help-container) {
+      padding: 0;
+    }
   }
 
   .help-container {
