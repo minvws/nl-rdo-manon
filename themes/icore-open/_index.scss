@@ -123,6 +123,9 @@ and spacing sets */
   $button-hover-text-color: color-scheme.$oc-white,
   $button-hover-border-color: color-scheme.$oc-blue-7,
 
+  // button container
+  $button-container-flex-direction: row,
+
   // button secondary
   $button-secondary-background-color: color-scheme.$oc-white,
   $button-secondary-text-color: semantic.$color-brand-primary-default,
@@ -686,6 +689,9 @@ and spacing sets */
   $tabs-item-current-font-weight: bold,
   $tabs-item-hover-text-color: color-scheme.$oc-blue-9,
 
+  // tab panel
+  $tab-panel-gap: spacing.$spacing-100,
+
   // set to focus border-width
   $tabs-outline-offset: -2px,
 
@@ -734,8 +740,15 @@ and spacing sets */
   $tile-border-radius: border-radii.$border-radius-m,
   $tile-text-color: semantic.$color-text-default,
 
-  // tile groups
+  // tile groups (group of tiles)
   $tile-groups-gap: spacing.$spacing-100,
+
+  // tile group (grouping within a tile)
+  $tile-group-margin: spacing.$spacing-050 0 0 0,
+  $tile-group-border-width: 1px 0 0 0,
+  $tile-group-border-style: solid,
+  $tile-group-border-color: color-scheme.$oc-gray-2,
+  $tile-group-padding: spacing.$spacing-100 0 0 0,
 
   // tile image
   $tile-image-cover-margin-bottom: spacing.$spacing-100
