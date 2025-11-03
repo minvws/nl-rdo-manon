@@ -3,10 +3,12 @@
 
 form {
   select {
-    @include theming.apply-from-theme(
-      (
-        width: theme.$form-select-width,
-      )
-    );
+    width: theme.$form-select-width;
+    min-width: theme.$form-select-min-width;
+    min-height: theme.$form-select-min-height;
+    border: theme.$form-select-border;
+    border-radius: theme.$form-select-border-radius;
+    color: theme.$form-select-color;
+    padding: theme.$form-select-padding;
   }
 }
