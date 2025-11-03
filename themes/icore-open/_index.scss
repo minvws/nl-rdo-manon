@@ -222,7 +222,7 @@ and spacing sets */
 
   $collapsing-element-list-item-align-items: flex-start,
   $collapsing-element-list-item-background-color: transparent,
-  $collapsing-element-list-item-text-color: #000,
+  $collapsing-element-list-item-text-color: semantic.$color-text-default,
   $collapsing-element-list-item-border-width: 0 0 1px 0,
   $collapsing-element-list-item-border-style: solid,
   $collapsing-element-list-item-border-color: #dbdbdb,
