@@ -225,7 +225,7 @@ and spacing sets */
   $collapsing-element-list-item-text-color: semantic.$color-text-default,
   $collapsing-element-list-item-border-width: 0 0 1px 0,
   $collapsing-element-list-item-border-style: solid,
-  $collapsing-element-list-item-border-color: #dbdbdb,
+  $collapsing-element-list-item-border-color: color-scheme.$oc-gray-1,
 
   $collapsing-element-list-item-min-height: 3rem,
 
