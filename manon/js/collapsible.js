@@ -83,15 +83,13 @@ function createMenuButton(collapsibleElement, collapsingElement) {
     .filter((c) => c !== "icon" && !c.startsWith("icon-"))
     .join(" ");
 
-  // icon span using icon classes
-  var iconSpan = document.createElement("span");
-  iconSpan.className = iconClasses;
-
   // Create button HTML element with classes and content
   var button = document.createElement("button");
   button.type = "button";
   button.className = "collapsible-toggle " + buttonClasses;
-  button.innerText = buttonOpenLabel || openLabel;
+
+  var buttonTextNode = document.createTextNode(buttonOpenLabel || openLabel);
+  button.appendChild(buttonTextNode);
 
   // Configure button aria attributes
   button.setAttribute("aria-controls", collapsingElement.id);
@@ -103,11 +101,16 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   label.innerText = openLabel;
   label.className = "visually-hidden";
   ensureElementHasId(label);
-
   button.appendChild(label);
-
-  button.appendChild(iconSpan);
   button.setAttribute("aria-labelledby", label.id);
+
+  // Add <span> for icon when set
+  if (iconClasses) {
+    var iconSpan = document.createElement("span");
+    iconSpan.className = iconClasses;
+    iconSpan.setAttribute("aria-hidden", "true");
+    button.appendChild(iconSpan);
+  }
 
   /**
    * @param {boolean} expanded
@@ -115,11 +118,10 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   function setExpanded(expanded) {
     if (expanded !== (button.getAttribute("aria-expanded") === "true")) {
       button.setAttribute("aria-expanded", String(expanded));
-      button.innerText = expanded
+      buttonTextNode.nodeValue = expanded
         ? buttonCloseLabel || closeLabel
         : buttonOpenLabel || openLabel;
       label.innerText = expanded ? closeLabel : openLabel;
-      button.appendChild(iconSpan);
     }
   }
 
