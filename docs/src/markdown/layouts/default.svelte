@@ -5,8 +5,9 @@
 </script>
 
 <script lang="ts">
-  import type { Snippet } from "svelte";
+  import { onMount, type Snippet } from "svelte";
   import { parseNav, type MarkdownNav, type ParsedNav } from "$lib/markdown-nav";
+  import { initCollapsible } from "$lib/manon";
   import SideMenu from "$lib/SideMenu.svelte";
 
   interface Props {
@@ -17,6 +18,7 @@
 
   let { title, nav, children }: Props = $props();
   let parsedNav = $derived(parseNav(nav));
+  onMount(initCollapsible);
 </script>
 
 <svelte:head>

@@ -11,6 +11,10 @@ nav:
 
 Een inklapbaar component is een element op een website dat extra informatie verbergt en pas toont wanneer de gebruiker erop klikt of tapt. Zo blijft de pagina overzichtelijk en kan de gebruiker zelf bepalen wat hij wil uitklappen.
 
+In het attribuut `data-open-label` kan tekst worden geplaatst om de gebruiker te informeren over het element wat gaat openklappen. Voor `data-close-label` geldt hetzelfde, maar dan voor het sluiten van het element.Als er geen `data-open-label en/of data-close-label` wordt/worden gedefinieerd, dan zal het component terugvallen op respectievelijk "Menu" en "Sluit menu".
+
+Deze teksten worden zowel visueel op de knop, als voor screen-readers gebruikt.
+
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
@@ -29,17 +33,68 @@ import "@minvws/manon/js/collapsible";
 
 ### Voorbeeld: Collapsible zonder gedefinieerde `button` labels
 
-In het attribuut `data-open-label` kan tekst worden geplaatst om de gebruiker te informeren over het element wat gaat openklappen. Voor `data-close-label` geldt hetzelfde, maar dan voor het sluiten van het element.
+<div class="collapsible" data-media="(min-width: 100%)">
+  <div class="collapsing-element">
+      <ul>
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Huidige selectie</a></li>
+          <li><a href="#">Item 3</a></li>
+      </ul>
+  </div>
+</div>
 
-Deze teksten worden zowel visueel op de knop, als voor screen-readers gebruikt.
+```html
+<div class="collapsible" data-media="(min-width: 100%)">
+  <div class="collapsing-element">
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Huidige selectie</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
+  </div>
+</div>
+```
 
-Als er verschillende teksten nodig zijn voor screenreadable-gebruikers en overige gebruikers kan er een extra knoptekst worden toegevoegd. Voor screenreader gebruikers worden in dat geval beide teksten opgelezen. Eerst de tekst zoals deze in `data-open-label/data-close-label` staat. En daaropvolgend de inhoud van `data-button-open-label/data-button-close-label`. Overige gebruikers zien alleen de inhoud van `data-button-open-label/data-button-close-label` als inhoud van de knop.
+### Voorbeeld: Collapsible met gedefinieerde `button` labels
 
-Als er geen `data-open-label en/of data-close-label` wordt/worden gedefinieerd, dan zal het component terugvallen op respectievelijk "Menu" en "Sluit menu".
+<div class="collapsible" 
+  data-open-label="Toon acties"
+  data-close-label="Verberg acties"
+  data-media="(min-width: 100%)"
+>
+
+  <div class="collapsing-element">
+      <ul>
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Huidige selectie</a></li>
+          <li><a href="#">Item 3</a></li>
+      </ul>
+  </div>
+</div>
+
+```html
+<div
+  class="collapsible"
+  data-open-label="Toon acties"
+  data-close-label="Verberg acties"
+  data-media="(min-width: 100%)"
+>
+  <div class="collapsing-element">
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Huidige selectie</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
+  </div>
+</div>
+```
+
+### Voorbeeld: Inklapbare icoonknop
 
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
+  data-icon-classes="icon icon-chevron-down"
   data-media="(min-width: 100%)"
   class="collapsible">
 
@@ -56,6 +111,7 @@ Als er geen `data-open-label en/of data-close-label` wordt/worden gedefinieerd, 
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
+  data-icon-classes="icon icon-chevron-down"
   data-media="(min-width: 100%)"
   class="collapsible"
 >
@@ -69,19 +125,13 @@ Als er geen `data-open-label en/of data-close-label` wordt/worden gedefinieerd, 
 </div>
 ```
 
-### Voorbeeld: Collapsible met gedefinieerde `button` labels
-
-In het attribuut `data-button-open-label` kan tekst worden geplaatst die visueel op de knop wordt getoond, om de gebruiker te informeren over het element wat gaat openklappen. Voor `data-button-close-label` geldt hetzelfde, maar dan voor het sluiten van het element.
-
-Deze teksten gelden enkel als visuele weergave op de knop, voor screen-readers gebruikt het component de attributen `data-open-label` en `data-close-label` zijn gedefinieerd. In dat geval worden beide teksten opgelezen. Eerst de tekst zoals deze in `data-open-label/data-close-label` staat. En daaropvolgend de inhoud van `data-button-open-label/data-button-close-label`. Overige gebruikers zien alleen de inhoud van `data-button-open-label/data-button-close-label` als inhoud van de knop.
-
-Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal het component terugvallen op respectievelijk "Menu" en "Sluit menu".
+### Voorbeeld: Inklapbare icoonknop, links uitgelijnd
 
 <div
-  data-button-open-label="Gedefinieerde open menu text"
-  data-button-close-label="Gedefinieerde sluit menu text"
-  data-open-label="Dropdown menu"
-  data-close-label="Sluit dropdown menu"
+  data-open-label="Profiel"
+  data-close-label="Sluit profiel"
+  data-icon-classes="icon icon-user"
+  data-icon-position="left"
   data-media="(min-width: 100%)"
   class="collapsible">
 
@@ -96,10 +146,83 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 
 ```html
 <div
-  data-button-open-label="Gedefinieerde open menu text"
-  data-button-close-label="Gedefinieerde sluit menu text"
+  data-open-label="Profiel"
+  data-close-label="Sluit profiel"
+  data-icon-classes="icon icon-user"
+  data-icon-position="left"
+  data-media="(min-width: 100%)"
+  class="collapsible"
+>
+  <div class="collapsing-element">
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Huidige selectie</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
+  </div>
+</div>
+```
+
+### Voorbeeld: Inklapbare secondary button
+
+<div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
+  data-button-classes="secondary"
+  data-media="(min-width: 100%)"
+  class="collapsible">
+
+  <div class="collapsing-element">
+      <ul>
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Huidige selectie</a></li>
+          <li><a href="#">Item 3</a></li>
+      </ul>
+  </div>
+</div>
+
+```html
+<div
+  data-open-label="Dropdown menu"
+  data-close-label="Sluit dropdown menu"
+  data-button-classes="secondary"
+  data-media="(min-width: 100%)"
+  class="collapsible"
+>
+  <div class="collapsing-element">
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Huidige selectie</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
+  </div>
+</div>
+```
+
+### Voorbeeld: Inklapbare secondary button met icoonknop
+
+<div
+  data-open-label="Dropdown menu"
+  data-close-label="Sluit dropdown menu"
+  data-icon-classes="icon icon-chevron-down"
+  data-button-classes="secondary"
+  data-media="(min-width: 100%)"
+  class="collapsible">
+
+  <div class="collapsing-element">
+      <ul>
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Huidige selectie</a></li>
+          <li><a href="#">Item 3</a></li>
+      </ul>
+  </div>
+</div>
+
+```html
+<div
+  data-open-label="Dropdown menu"
+  data-close-label="Sluit dropdown menu"
+  data-button-classes="secondary"
   data-media="(min-width: 100%)"
   class="collapsible"
 >
@@ -123,102 +246,27 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 
   <div class="collapsing-element">
     <form>
-      <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
-      </ul>
+      <fieldset>
+        <legend>Titel</legend>
+        <label for="example-input-base">Voorbeeld invoerveld</label>
+        <input id="example-input-base" name="example-input-base" type="text" />
+      </fieldset>
+      <button type="submit">Verzend</button>
     </form>
   </div>
 </div>
 
 ```html
-<div
-  data-open-label="Dropdown menu"
-  data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
-  class="collapsible"
->
+<div data-open-label="Dropdown menu" data-close-label="Sluit dropdown menu" class="collapsible">
   <div class="collapsing-element">
     <form>
-      <ul>
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Huidige selectie</a></li>
-        <li><a href="#">Item 3</a></li>
-      </ul>
+      <fieldset>
+        <legend>Titel</legend>
+        <label for="example-input-base">Voorbeeld invoerveld</label>
+        <input id="example-input-base" name="example-input-base" type="text" />
+      </fieldset>
+      <button type="submit">Verzend</button>
     </form>
-  </div>
-</div>
-```
-
-### Voorbeeld: Inklapbare ghost button
-
-<div
-  data-open-label="Dropdown menu"
-  data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
-  data-button-classes="ghost"
-  class="collapsible">
-
-  <div class="collapsing-element">
-      <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
-      </ul>
-  </div>
-</div>
-
-```html
-<div
-  data-open-label="Dropdown menu"
-  data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
-  data-button-classes="ghost"
-  class="collapsible"
->
-  <div class="collapsing-element">
-    <ul>
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Huidige selectie</a></li>
-      <li><a href="#">Item 3</a></li>
-    </ul>
-  </div>
-</div>
-```
-
-### Voorbeeld: Inklapbare icoonknop
-
-<div
-  data-open-label="Dropdown menu"
-  data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
-  data-button-classes="icon icon-cat"
-  class="collapsible">
-
-  <div class="collapsing-element">
-      <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Huidige selectie</a></li>
-          <li><a href="#">Item 3</a></li>
-      </ul>
-  </div>
-</div>
-
-```html
-<div
-  data-open-label="Dropdown menu"
-  data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
-  data-button-classes="icon icon-cat"
-  class="collapsible"
->
-  <div class="collapsing-element">
-    <ul>
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Huidige selectie</a></li>
-      <li><a href="#">Item 3</a></li>
-    </ul>
   </div>
 </div>
 ```
@@ -251,8 +299,8 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
   class="collapsible"
+  data-media="(min-width: 100%)"
 >
   <div class="collapsing-element">
     <ul>
@@ -300,12 +348,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 </div>
 
 ```html
-<div
-  data-open-label="Dropdown menu"
-  data-close-label="Sluit dropdown menu"
-  data-media="(min-width: 100%)"
-  class="collapsible"
->
+<div data-open-label="Dropdown menu" data-close-label="Sluit dropdown menu" class="collapsible">
   <div class="collapsing-element">
     <ul role="listbox">
       <li role="option" aria-selected="false">

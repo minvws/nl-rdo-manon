@@ -1,6 +1,22 @@
 $collapsible-width: null !default;
 $collapsible-max-width: null !default;
 
+// Toggle (opens and closes collapsing-element)
+$collapsible-toggle-text-color: null !default;
+$collapsible-toggle-border-width: null !default;
+$collapsible-toggle-border-style: null !default;
+$collapsible-toggle-border-color: null !default;
+$collapsible-toggle-border-radius: null !default;
+$collapsible-toggle-background-color: null !default;
+
+// Toggle Secondary button
+$collapsible-toggle-secondary-text-color: null !default;
+$collapsible-toggle-secondary-border-width: null !default;
+$collapsible-toggle-secondary-border-style: null !default;
+$collapsible-toggle-secondary-border-color: null !default;
+$collapsible-toggle-secondary-border-radius: null !default;
+$collapsible-toggle-secondary-background-color: null !default;
+
 // Collapsing element
 $collapsing-element-flex-direction: null !default;
 $collapsing-element-justify-content: null !default;
@@ -18,7 +34,6 @@ $collapsing-element-border-style: null !default;
 $collapsing-element-border-color: null !default;
 $collapsing-element-background-color: null !default;
 $collapsing-element-text-color: null !default;
-$collapsing-element-box-shadow: null !default;
 $collapsing-element-box-shadow: null !default;
 $collapsing-element-top: null !default;
 $collapsing-element-left: null !default;
@@ -48,9 +63,15 @@ $collapsing-element-list-item-link-padding-left: null !default;
 $collapsing-element-list-item-link-text-color: null !default;
 $collapsing-element-list-item-link-text-decoration: null !default;
 
+// Collapsing element link hover
+$collapsing-element-list-item-hover-text-color: null !default;
+$collapsing-element-list-item-link-hover-text-color: null !default;
+$collapsing-element-list-link-hover-text-decoration: null !default;
+$collapsing-element-list-item-link-hover-background-color: null !default;
+
 // Collapsing element icon
 $collapsing-element-list-icon: null !default;
-$collapsing-element-list-icon-font-family: null !default;
+$collapsing-element-list-icon-font-family: "manon-docs-icons" !default;
 $collapsing-element-list-icon-margin-left: null !default;
 $collapsing-element-list-icon-font-size: null !default;
 $collapsing-element-list-icon-text-color: null !default;
@@ -68,9 +89,3 @@ $collapsing-element-list-selected-icon-text-color: null !default;
 $collapsing-element-list-selected-icon-margin-right: null !default;
 $collapsing-element-list-link-selected-hover-background-color: null !default;
 $collapsing-element-list-link-selected-hover-text-decoration: null !default;
-
-// Collapsing element link hover
-$collapsing-element-list-item-hover-text-color: null !default;
-$collapsing-element-list-item-link-hover-text-color: null !default;
-$collapsing-element-list-link-hover-text-decoration: null !default;
-$collapsing-element-list-item-link-hover-background-color: null !default;

@@ -1,118 +1,117 @@
 // @ts-check
 
-import { ensureElementHasId, onMediaQueryMatch, onDomReady } from "./utils.js";
+import { ensureElementHasId, onDomReady } from "./utils.js";
 
 onDomReady(initCollapsible);
 
 /**
- * Add responsive behaviour to collapsible components. Safe to call again to
- * make a newly added collapsible components.
+ * Finds and initializes all collapsible components on the page.
+ *
+ * This function scans the DOM for elements with the `.collapsible` class and
+ * makes them interactive by creating and injecting a toggle button.
+ * It is safe to call this function multiple times, as it will not
+ * re-initialize a component that already has a toggle button.
  */
 export function initCollapsible() {
-  var collapsibleElements = document.querySelectorAll(".collapsible");
-  for (const collapsibleElement of collapsibleElements) {
-    if (
-      !(collapsibleElement instanceof HTMLElement) ||
-      collapsibleElement.querySelector(".collapsible-toggle")
-    ) {
-      continue;
+  document.querySelectorAll(".collapsible").forEach((collapsibleElement) => {
+    if (!(collapsibleElement instanceof HTMLElement)) return;
+
+    const collapsingElement = collapsibleElement.querySelector(
+      ".collapsing-element"
+    );
+
+    if (!(collapsingElement instanceof HTMLElement)) {
+      console.error("Missing collapsing element for: ", collapsibleElement);
+      return;
     }
 
-    var isCondensed = collapsibleElement.className.indexOf("condensed") !== -1;
-    makeResponsive(collapsibleElement, isCondensed);
-  }
-}
+    ensureElementHasId(collapsingElement);
 
-/** @deprecated */
-export { initCollapsible as initNavigation };
+    // Create the collapsible button or skip if button already exists
+    if (collapsibleElement.querySelector(".collapsible-toggle")) return;
 
-/**
- * @param {HTMLElement} collapsibleElement
- * @param {boolean} isCondensed
- */
-function makeResponsive(collapsibleElement, isCondensed) {
-  var collapsingElement = collapsibleElement.querySelector(
-    ".collapsing-element"
-  );
-
-  if (!(collapsingElement instanceof HTMLElement)) {
-    console.error("Missing collapsing element for: ", collapsibleElement);
-    return;
-  }
-
-  ensureElementHasId(collapsingElement);
-
-  var button = createMenuButton(collapsibleElement, collapsingElement);
-
-  if (!isCondensed) {
-    onMediaQueryMatch(
-      collapsibleElement.dataset.media || "(min-width: 42rem)",
-      function (event) {
-        button.setExpanded(false);
-        if (event.matches) {
-          collapsibleElement.classList.remove("collapsed");
-        } else {
-          collapsibleElement.classList.add("collapsed");
-        }
-      }
+    const toggleButton = createCollapsibleButton(
+      collapsibleElement,
+      collapsingElement
     );
-  }
+
+    collapsingElement.parentNode?.insertBefore(toggleButton, collapsingElement);
+  });
 }
 
 /**
- * @param {HTMLElement} collapsibleElement
- * @param {HTMLElement} collapsingElement
- * @return {{ setExpanded: (expanded: boolean) => void }}
+ * Creates and returns a toggle button for a collapsible component.
+ * This function builds the button element, sets its ARIA attributes, reads
+ * data-* attributes from the parent for configuration (e.g., labels, icons),
+ * and attaches the click event listener for toggling.
+ *
+ * @param {HTMLElement} collapsibleElement The root `.collapsible` element, used to read `data-*` attributes.
+ * @param {HTMLElement} collapsingElement The element that will be shown/hidden, used for the `aria-controls` attribute.
+ * @returns {HTMLButtonElement} The created button element with all event listeners attached.
  */
-function createMenuButton(collapsibleElement, collapsingElement) {
-  // Init button variables
-  var buttonOpenLabel = collapsibleElement.dataset.buttonOpenLabel;
-  var buttonCloseLabel = collapsibleElement.dataset.buttonCloseLabel;
-  var openLabel = collapsibleElement.dataset.openLabel || "Menu";
-  var closeLabel = collapsibleElement.dataset.closeLabel || "Sluit menu";
-  var buttonClasses = collapsibleElement.dataset.buttonClasses || "";
+function createCollapsibleButton(collapsibleElement, collapsingElement) {
+  const openLabel = collapsibleElement.dataset.openLabel || "Dropdown menu";
+  const closeLabel =
+    collapsibleElement.dataset.closeLabel || "Sluit dropdown menu";
+  const buttonClasses = collapsibleElement.dataset.buttonClasses || "";
+  const iconClasses = collapsibleElement.dataset.iconClasses || "";
+  const iconPosition = collapsibleElement.dataset.iconPosition || "right";
+  const mediaQuery = collapsibleElement.dataset.media || "(min-width: 42rem)";
 
-  // Create button HTML element with classes and content
-  var button = document.createElement("button");
+  // Create button
+  const button = document.createElement("button");
+
+  // Set button attributes
   button.type = "button";
-  button.className = "collapsible-toggle " + buttonClasses;
-  button.innerText = buttonOpenLabel || openLabel;
-
-  // Configure button aria attributes
+  button.innerText = openLabel;
+  button.className = `collapsible-toggle ${buttonClasses}`;
   button.setAttribute("aria-controls", collapsingElement.id);
   button.setAttribute("aria-expanded", "false");
   button.setAttribute("aria-haspopup", "menu");
+  button.setAttribute("aria-label", openLabel);
 
-  // Add <span> for screen readers (thus .visually-hidden)
-  var label = document.createElement("span");
-  label.innerText = openLabel;
-  label.className = "visually-hidden";
-  ensureElementHasId(label);
-
-  button.appendChild(label);
-  button.setAttribute("aria-labelledby", label.id);
-
-  /**
-   * @param {boolean} expanded
-   */
-  function setExpanded(expanded) {
-    if (expanded !== (button.getAttribute("aria-expanded") === "true")) {
-      button.setAttribute("aria-expanded", String(expanded));
-      button.innerText = expanded
-        ? buttonCloseLabel || closeLabel
-        : buttonOpenLabel || openLabel;
-      label.innerText = expanded ? closeLabel : openLabel;
-    }
+  // Add icon left or right of button text if icon is set.
+  if (iconClasses.includes("icon")) {
+    const iconSpan = document.createElement("span");
+    iconSpan.setAttribute("aria-hidden", "true");
+    iconSpan.className = iconClasses;
+    iconPosition.includes("left")
+      ? button.prepend(iconSpan)
+      : button.append(iconSpan);
   }
 
-  button.addEventListener("click", function () {
-    setExpanded(button.getAttribute("aria-expanded") === "false");
+  /**
+   * Set the expanded/collapsed state of the button and its collapsible element
+   * @param {boolean} expanded - true to expand, false to collapse
+   */
+  const setExpanded = (expanded) => {
+    button.setAttribute("aria-expanded", String(expanded));
+    button.setAttribute("aria-label", expanded ? closeLabel : openLabel);
+  };
+
+  // Attach click toggle
+  button.addEventListener("click", () => {
+    const isExpanded = button.getAttribute("aria-expanded") === "true";
+    setExpanded(!isExpanded);
   });
 
-  // Insert button as element directly before the "collapsingElement"
-  collapsingElement.parentNode?.insertBefore(button, collapsingElement);
+  // Attach responsive behavior
+  if (!collapsibleElement.classList.contains("condensed")) {
+    const mql = window.matchMedia(mediaQuery);
 
-  return {
-    setExpanded: setExpanded,
-  };
+    /**
+     * Handles media query changes for the collapsible
+     * @param {MediaQueryList | MediaQueryListEvent} mq
+     */
+    const handleMediaChange = (mq) => {
+      setExpanded(false); // collapse on media change
+      collapsibleElement.classList.toggle("collapsed", !mq.matches);
+    };
+
+    handleMediaChange(mql);
+
+    mql.addEventListener("change", handleMediaChange);
+  }
+
+  return button;
 }
