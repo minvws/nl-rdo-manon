@@ -24,6 +24,14 @@
       display: flex;
       max-height: 100%;
 
+      /* Let the icon’s height matches the button text height, 
+      and its width adjusts automatically to maintain the correct aspect ratio. 
+      */
+      .icon {
+        height: 100%;
+        width: auto;
+      }
+
       + .collapsing-element {
         display: flex;
       }
