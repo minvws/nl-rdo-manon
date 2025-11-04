@@ -45,7 +45,6 @@ form {
 
     input[type="radio"] {
       padding: 0;
-      cursor: pointer;
       margin-left: 0;
       margin-right: 0;
       height: theme.$radio-height;
@@ -57,7 +56,6 @@ form {
       align-self: theme.$radio-align-self;
 
       & + label {
-        width: auto;
         margin-top: 0;
         font-weight: theme.$radio-label-font-weight;
         width: theme.$radio-label-width;

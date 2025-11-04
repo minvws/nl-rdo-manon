@@ -27,8 +27,6 @@ input[type="reset"] {
     border-style: theme.$button-cta-border-style;
     border-color: theme.$button-cta-border-color;
     border-radius: theme.$button-cta-border-radius;
-    webkit-border-radius: theme.$button-cta-border-radius;
-    webkit-appearance: theme.$button-cta-appearance;
 
     &:hover,
     &.hover {

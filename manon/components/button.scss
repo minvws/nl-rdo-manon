@@ -9,10 +9,8 @@ input[type="reset"] {
   overflow-wrap: break-word;
   width: auto;
   align-items: center;
-  margin: 0;
   box-sizing: border-box;
   font-weight: theme.$button-font-weight;
-  font-size: inherit;
   justify-content: theme.$button-justify-content;
   gap: theme.$button-gap;
   background-color: theme.$button-background-color;
@@ -33,8 +31,6 @@ input[type="reset"] {
   border-style: theme.$button-border-style;
   border-color: theme.$button-border-color;
   border-radius: theme.$button-border-radius;
-  webkit-border-radius: theme.$button-border-radius;
-  webkit-appearance: theme.$button-appearance;
   margin: theme.$button-margin;
 
   &:hover,

@@ -70,7 +70,6 @@ body > footer,
   }
 
   a {
-    color: inherit;
     text-decoration: theme.$footer-link-text-decoration;
     color: theme.$footer-link-text-color;
 
@@ -103,7 +102,6 @@ body > footer,
   ul,
   ol {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
     gap: theme.$footer-list-gap;
@@ -154,7 +152,6 @@ body > footer,
       width: 100%;
     }
 
-    flex-direction: theme.$footer-navigation-flex-direction;
     gap: theme.$footer-navigation-gap;
     flex-direction: theme.$footer-navigation-flex-direction;
     justify-content: theme.$footer-navigation-justify-content;

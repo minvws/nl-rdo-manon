@@ -86,9 +86,11 @@
         flex-direction: column;
         margin: 0;
         box-sizing: border-box;
-        padding-left: 2rem;
         gap: theme.$hero-tile-list-gap;
-        padding: theme.$hero-tile-list-padding;
+        padding-top: theme.$hero-tile-list-padding-top;
+        padding-right: theme.$hero-tile-list-padding-right;
+        padding-bottom: theme.$hero-tile-list-padding-bottom;
+        padding-left: theme.$hero-tile-list-padding-left;
         background-color: theme.$hero-tile-list-background-color;
         line-height: theme.$hero-tile-list-line-height;
         font-size: theme.$hero-tile-list-font-size;

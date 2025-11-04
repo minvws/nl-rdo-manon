@@ -8,7 +8,6 @@ input[type="submit"],
 input[type="reset"] {
   &.icon-only {
     font-size: 0;
-    gap: 0;
     background-color: theme.$button-icon-only-background-color;
     color: theme.$button-icon-only-text-color;
     border-width: theme.$button-icon-only-border-width;

@@ -1,7 +1,6 @@
 @use "../variables" as theme;
 
 p {
-  margin: 0;
   color: inherit;
   line-height: theme.$p-line-height;
   font-size: theme.$p-font-size;
