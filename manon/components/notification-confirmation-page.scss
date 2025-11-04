@@ -1,23 +1,13 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 %notifictions-confirmation-page-styling {
   max-width: 100%;
   width: 100%;
-
-  @include theming.apply-from-theme(
-    (
-      background-color: theme.$notification-confirmation-page-background-color,
-      color: theme.$notification-confirmation-page-text-color,
-    )
-  );
+  background-color: theme.$notification-confirmation-page-background-color;
+  color: theme.$notification-confirmation-page-text-color;
 
   .notification-type {
-    @include theming.apply-from-theme(
-      (
-        font-weight: theme.$notification-confirmation-page-span-font-weight,
-      )
-    );
+    font-weight: theme.$notification-confirmation-page-span-font-weight;
   }
 
   p,
@@ -26,31 +16,19 @@
   div {
     &.confirmation {
       &::before {
-        @include theming.apply-from-theme(
-          (
-            font-family: theme.$notification-confirmation-page-icon-font-family,
-            font-size: theme.$notification-confirmation-page-icon-font-size,
-            padding-right:
-              theme.$notification-confirmation-page-icon-padding-right,
-            padding-left:
-              theme.$notification-confirmation-page-icon-padding-left,
-            color: theme.$notification-confirmation-page-icon-color,
-            background-color: theme.$notification-confirmation-page-icon-color,
-            margin-right:
-              theme.$notification-confirmation-page-icon-margin-right,
-          )
-        );
+        font-family: theme.$notification-confirmation-page-icon-font-family;
+        font-size: theme.$notification-confirmation-page-icon-font-size;
+        padding-right: theme.$notification-confirmation-page-icon-padding-right;
+        padding-left: theme.$notification-confirmation-page-icon-padding-left;
+        color: theme.$notification-confirmation-page-icon-color;
+        background-color: theme.$notification-confirmation-page-icon-color;
+        margin-right: theme.$notification-confirmation-page-icon-margin-right;
       }
 
       .icon {
         color: inherit;
-
-        @include theming.apply-from-theme(
-          (
-            background-color: theme.$notification-confirmation-icon-color,
-            color: theme.$notification-confirmation-icon-color,
-          )
-        );
+        background-color: theme.$notification-confirmation-icon-color;
+        color: theme.$notification-confirmation-icon-color;
       }
     }
   }

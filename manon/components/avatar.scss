@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 .avatar {
@@ -12,35 +11,21 @@
   align-items: center;
   justify-content: center;
   text-decoration: theme.$avatar-text-text-decoration;
-
-  @include theming.apply-from-theme(
-    (
-      font-weight: theme.$avatar-font-weight,
-      border-radius: theme.$avatar-border-radius,
-      background-color: theme.$avatar-background-color,
-      color: theme.$avatar-text-color,
-      font-size: theme.$avatar-text-font-size,
-    )
-  );
+  font-weight: theme.$avatar-font-weight;
+  border-radius: theme.$avatar-border-radius;
+  background-color: theme.$avatar-background-color;
+  color: theme.$avatar-text-color;
+  font-size: theme.$avatar-text-font-size;
 
   &:hover {
     color: inherit;
-
-    @include theming.apply-from-theme(
-      (
-        background-color: theme.$avatar-hover-background-color,
-        color: theme.$avatar-hover-text-color,
-      )
-    );
+    background-color: theme.$avatar-hover-background-color;
+    color: theme.$avatar-hover-text-color;
   }
 
   &:focus-visible {
-    @include theming.apply-from-theme(
-      (
-        background-color: theme.$avatar-focus-background-color,
-        outline: theme.$avatar-focus-outline,
-        outline-offset: theme.$avatar-focus-outline-offset,
-      )
-    );
+    background-color: theme.$avatar-focus-background-color;
+    outline: theme.$avatar-focus-outline;
+    outline-offset: theme.$avatar-focus-outline-offset;
   }
 }

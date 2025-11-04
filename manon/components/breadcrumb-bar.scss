@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 .breadcrumb-bar,
@@ -9,29 +8,24 @@
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0;
-
-  @include theming.apply-from-theme(
-    (
-      flex-direction: theme.$breadcrumb-bar-flex-direction,
-      justify-content: theme.$breadcrumb-bar-justify-content,
-      align-items: theme.$breadcrumb-bar-align-items,
-      gap: theme.$breadcrumb-bar-gap,
-      min-height: theme.$breadcrumb-bar-min-height,
-      padding-top: theme.$breadcrumb-bar-padding-top,
-      padding-right: theme.$breadcrumb-bar-padding-right,
-      padding-bottom: theme.$breadcrumb-bar-padding-bottom,
-      padding-left: theme.$breadcrumb-bar-padding-left,
-      max-width: theme.$breadcrumb-bar-max-width,
-      background-color: theme.$breadcrumb-bar-background-color,
-      color: theme.$breadcrumb-bar-text-color,
-      border-width: theme.$breadcrumb-bar-border-width,
-      border-style: theme.$breadcrumb-bar-border-style,
-      border-color: theme.$breadcrumb-bar-border-color,
-      border-radius: theme.$breadcrumb-bar-border-radius,
-      font-size: theme.$breadcrumb-bar-font-size,
-      font-weight: theme.$breadcrumb-bar-font-weight,
-    )
-  );
+  flex-direction: theme.$breadcrumb-bar-flex-direction;
+  justify-content: theme.$breadcrumb-bar-justify-content;
+  align-items: theme.$breadcrumb-bar-align-items;
+  gap: theme.$breadcrumb-bar-gap;
+  min-height: theme.$breadcrumb-bar-min-height;
+  padding-top: theme.$breadcrumb-bar-padding-top;
+  padding-right: theme.$breadcrumb-bar-padding-right;
+  padding-bottom: theme.$breadcrumb-bar-padding-bottom;
+  padding-left: theme.$breadcrumb-bar-padding-left;
+  max-width: theme.$breadcrumb-bar-max-width;
+  background-color: theme.$breadcrumb-bar-background-color;
+  color: theme.$breadcrumb-bar-text-color;
+  border-width: theme.$breadcrumb-bar-border-width;
+  border-style: theme.$breadcrumb-bar-border-style;
+  border-color: theme.$breadcrumb-bar-border-color;
+  border-radius: theme.$breadcrumb-bar-border-radius;
+  font-size: theme.$breadcrumb-bar-font-size;
+  font-weight: theme.$breadcrumb-bar-font-weight;
 
   // content wrapper
   > div.content-wrapper {
@@ -40,17 +34,12 @@
     width: 100%;
     box-sizing: border-box;
     height: theme.$breadcrumb-bar-content-wrapper-height;
-
-    @include theming.apply-from-theme(
-      (
-        padding-top: theme.$breadcrumb-bar-content-wrapper-padding-top,
-        padding-right: theme.$breadcrumb-bar-content-wrapper-padding-right,
-        padding-bottom: theme.$breadcrumb-bar-content-wrapper-padding-bottom,
-        padding-left: theme.$breadcrumb-bar-content-wrapper-padding-left,
-        gap: theme.$breadcrumb-bar-content-wrapper-gap,
-        max-width: theme.$breadcrumb-bar-content-wrapper-max-width,
-      )
-    );
+    padding-top: theme.$breadcrumb-bar-content-wrapper-padding-top;
+    padding-right: theme.$breadcrumb-bar-content-wrapper-padding-right;
+    padding-bottom: theme.$breadcrumb-bar-content-wrapper-padding-bottom;
+    padding-left: theme.$breadcrumb-bar-content-wrapper-padding-left;
+    gap: theme.$breadcrumb-bar-content-wrapper-gap;
+    max-width: theme.$breadcrumb-bar-content-wrapper-max-width;
   }
 
   ul,
@@ -60,27 +49,22 @@
     flex-wrap: wrap;
     color: inherit;
     background-color: transparent;
-
-    @include theming.apply-from-theme(
-      (
-        flex-direction: theme.$breadcrumb-bar-flex-direction,
-        justify-content: theme.$breadcrumb-bar-justify-content,
-        align-items: theme.$breadcrumb-bar-align-items,
-        gap: theme.$breadcrumb-bar-gap,
-        min-height: theme.$breadcrumb-bar-min-height,
-        padding-top: theme.$breadcrumb-bar-padding-top,
-        padding-right: theme.$breadcrumb-bar-padding-right,
-        padding-bottom: theme.$breadcrumb-bar-padding-bottom,
-        padding-left: theme.$breadcrumb-bar-padding-left,
-        max-width: theme.$breadcrumb-bar-max-width,
-        background-color: theme.$breadcrumb-bar-background-color,
-        color: theme.$breadcrumb-bar-text-color,
-        border-width: theme.$breadcrumb-bar-border-width,
-        border-style: theme.$breadcrumb-bar-border-style,
-        border-color: theme.$breadcrumb-bar-border-color,
-        border-radius: theme.$breadcrumb-bar-border-radius,
-      )
-    );
+    flex-direction: theme.$breadcrumb-bar-flex-direction;
+    justify-content: theme.$breadcrumb-bar-justify-content;
+    align-items: theme.$breadcrumb-bar-align-items;
+    gap: theme.$breadcrumb-bar-gap;
+    min-height: theme.$breadcrumb-bar-min-height;
+    padding-top: theme.$breadcrumb-bar-padding-top;
+    padding-right: theme.$breadcrumb-bar-padding-right;
+    padding-bottom: theme.$breadcrumb-bar-padding-bottom;
+    padding-left: theme.$breadcrumb-bar-padding-left;
+    max-width: theme.$breadcrumb-bar-max-width;
+    background-color: theme.$breadcrumb-bar-background-color;
+    color: theme.$breadcrumb-bar-text-color;
+    border-width: theme.$breadcrumb-bar-border-width;
+    border-style: theme.$breadcrumb-bar-border-style;
+    border-color: theme.$breadcrumb-bar-border-color;
+    border-radius: theme.$breadcrumb-bar-border-radius;
 
     li {
       display: flex;
@@ -88,28 +72,15 @@
       flex-wrap: nowrap;
       align-items: center;
       list-style: none;
-
-      @include theming.apply-from-theme(
-        (
-          gap: theme.$breadcrumb-bar-list-item-gap,
-        )
-      );
+      gap: theme.$breadcrumb-bar-list-item-gap;
 
       &::after {
-        @include theming.apply-from-theme(
-          (
-            margin-left: theme.$breadcrumb-bar-icon-margin-left,
-            margin-right: theme.$breadcrumb-bar-icon-margin-right,
-          )
-        );
+        margin-left: theme.$breadcrumb-bar-icon-margin-left;
+        margin-right: theme.$breadcrumb-bar-icon-margin-right;
       }
 
       &:last-child {
-        @include theming.apply-from-theme(
-          (
-            font-weight: theme.$breadcrumb-bar-list-item-last-child-font-weight,
-          )
-        );
+        font-weight: theme.$breadcrumb-bar-list-item-last-child-font-weight;
 
         &::after {
           content: none;
@@ -117,18 +88,10 @@
       }
 
       &:hover {
-        @include theming.apply-from-theme(
-          (
-            color: theme.$breadcrumb-bar-hover-text-color,
-          )
-        );
+        color: theme.$breadcrumb-bar-hover-text-color;
 
         &::after {
-          @include theming.apply-from-theme(
-            (
-              color: theme.$breadcrumb-bar-text-color,
-            )
-          );
+          color: theme.$breadcrumb-bar-text-color;
         }
       }
 
@@ -138,24 +101,14 @@
         color: inherit;
         font-size: inherit;
         font-weight: inherit;
-
-        @include theming.apply-from-theme(
-          (
-            white-space: theme.$breadcrumb-bar-link-white-space,
-            padding-right: theme.$breadcrumb-bar-link-padding-right,
-            padding-left: theme.$breadcrumb-bar-link-padding-left,
-            text-decoration: theme.$breadcrumb-bar-link-text-decoration,
-          )
-        );
+        white-space: theme.$breadcrumb-bar-link-white-space;
+        padding-right: theme.$breadcrumb-bar-link-padding-right;
+        padding-left: theme.$breadcrumb-bar-link-padding-left;
+        text-decoration: theme.$breadcrumb-bar-link-text-decoration;
 
         &:hover {
           border: 0;
-
-          @include theming.apply-from-theme(
-            (
-              text-decoration: theme.$breadcrumb-bar-link-hover-text-decoration,
-            )
-          );
+          text-decoration: theme.$breadcrumb-bar-link-hover-text-decoration;
         }
       }
 
@@ -164,19 +117,14 @@
         &::after {
           mask-size: contain;
           content: "";
-
-          @include theming.apply-from-theme(
-            (
-              margin-right: theme.$breadcrumb-bar-icon-margin-right,
-              margin-left: theme.$breadcrumb-bar-icon-margin-left,
-              padding-right: theme.$breadcrumb-bar-icon-padding-right,
-              padding-left: theme.$breadcrumb-bar-icon-padding-left,
-              background-color: theme.$breadcrumb-bar-icon-color,
-              mask-image: theme.$breadcrumb-bar-icon-mask,
-              width: theme.$breadcrumb-bar-icon-width,
-              height: theme.$breadcrumb-bar-icon-height,
-            )
-          );
+          margin-right: theme.$breadcrumb-bar-icon-margin-right;
+          margin-left: theme.$breadcrumb-bar-icon-margin-left;
+          padding-right: theme.$breadcrumb-bar-icon-padding-right;
+          padding-left: theme.$breadcrumb-bar-icon-padding-left;
+          background-color: theme.$breadcrumb-bar-icon-color;
+          mask-image: theme.$breadcrumb-bar-icon-mask;
+          width: theme.$breadcrumb-bar-icon-width;
+          height: theme.$breadcrumb-bar-icon-height;
         }
       }
     }

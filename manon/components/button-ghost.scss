@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -8,101 +7,81 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   &.ghost {
-    @include theming.apply-from-theme(
-      (
-        justify-content: theme.$button-ghost-justify-content,
-        align-items: center,
-        align-self: flex-start,
-        gap: theme.$button-ghost-gap,
-        background-color: theme.$button-ghost-background-color,
-        color: theme.$button-ghost-text-color,
-        font-family: theme.$button-ghost-font-family,
-        font-size: theme.$button-ghost-font-size,
-        font-weight: theme.$button-ghost-font-weight,
-        line-height: theme.$button-ghost-line-height,
-        text-decoration: theme.$button-ghost-text-decoration,
-        text-align: theme.$button-ghost-text-align,
-        padding-top: theme.$button-ghost-padding-top,
-        padding-right: theme.$button-ghost-padding-right,
-        padding-bottom: theme.$button-ghost-padding-bottom,
-        padding-left: theme.$button-ghost-padding-left,
-        min-width: theme.$button-ghost-min-width,
-        height: theme.$button-ghost-height,
-        min-height: theme.$button-ghost-min-height,
-        border-width: theme.$button-ghost-border-width,
-        border-style: theme.$button-ghost-border-style,
-        border-color: theme.$button-ghost-border-color,
-        border-radius: theme.$button-ghost-border-radius,
-        webkit-border-radius: theme.$button-ghost-webkit-border-radius,
-        webkit-appearance: theme.$button-ghost-webkit-appearance,
-        cursor: theme.$button-ghost-cursor,
-        overflow-wrap: theme.$button-ghost-overflow-wrap,
-        max-width: theme.$button-ghost-image-max-width,
-      )
-    );
+    justify-content: theme.$button-ghost-justify-content;
+    align-items: center;
+    align-self: flex-start;
+    gap: theme.$button-ghost-gap;
+    background-color: theme.$button-ghost-background-color;
+    color: theme.$button-ghost-text-color;
+    font-family: theme.$button-ghost-font-family;
+    font-size: theme.$button-ghost-font-size;
+    font-weight: theme.$button-ghost-font-weight;
+    line-height: theme.$button-ghost-line-height;
+    text-decoration: theme.$button-ghost-text-decoration;
+    text-align: theme.$button-ghost-text-align;
+    padding-top: theme.$button-ghost-padding-top;
+    padding-right: theme.$button-ghost-padding-right;
+    padding-bottom: theme.$button-ghost-padding-bottom;
+    padding-left: theme.$button-ghost-padding-left;
+    min-width: theme.$button-ghost-min-width;
+    height: theme.$button-ghost-height;
+    min-height: theme.$button-ghost-min-height;
+    border-width: theme.$button-ghost-border-width;
+    border-style: theme.$button-ghost-border-style;
+    border-color: theme.$button-ghost-border-color;
+    border-radius: theme.$button-ghost-border-radius;
+    webkit-border-radius: theme.$button-ghost-webkit-border-radius;
+    webkit-appearance: theme.$button-ghost-webkit-appearance;
+    cursor: theme.$button-ghost-cursor;
+    overflow-wrap: theme.$button-ghost-overflow-wrap;
+    max-width: theme.$button-ghost-image-max-width;
     margin: 0;
     box-sizing: border-box;
     width: auto;
 
     &:hover,
     &.hover {
-      @include theming.apply-from-theme(
-        (
-          background-color: theme.$button-ghost-hover-background-color,
-          color: theme.$button-ghost-hover-text-color,
-          border-color: theme.$button-ghost-hover-border-color,
-          border-width: theme.$button-ghost-hover-border-width,
-          border-style: theme.$button-ghost-hover-border-style,
-          border-radius: theme.$button-ghost-hover-border-radius,
-        )
-      );
+      background-color: theme.$button-ghost-hover-background-color;
+      color: theme.$button-ghost-hover-text-color;
+      border-color: theme.$button-ghost-hover-border-color;
+      border-width: theme.$button-ghost-hover-border-width;
+      border-style: theme.$button-ghost-hover-border-style;
+      border-radius: theme.$button-ghost-hover-border-radius;
     }
 
     &:active,
     &.active {
-      @include theming.apply-from-theme(
-        (
-          background-color: theme.$button-ghost-active-background-color,
-          color: theme.$button-ghost-active-text-color,
-          border-style: theme.$button-ghost-active-border-style,
-          border-color: theme.$button-ghost-active-border-color,
-          border-width: theme.$button-ghost-active-border-width,
-          border-radius: theme.$button-ghost-active-border-radius,
-        )
-      );
+      background-color: theme.$button-ghost-active-background-color;
+      color: theme.$button-ghost-active-text-color;
+      border-style: theme.$button-ghost-active-border-style;
+      border-color: theme.$button-ghost-active-border-color;
+      border-width: theme.$button-ghost-active-border-width;
+      border-radius: theme.$button-ghost-active-border-radius;
     }
 
     &:focus,
     &.focus {
-      @include theming.apply-from-theme(
-        (
-          border-style: theme.$button-ghost-focus-border-style,
-          border-color: theme.$button-ghost-focus-border-color,
-          border-width: theme.$button-ghost-focus-border-width,
-          border-radius: theme.$button-ghost-focus-border-radius,
-          background-color: theme.$button-ghost-focus-background-color,
-          color: theme.$button-ghost-focus-text-color,
-          outline: theme.$button-ghost-outline,
-          outline-offset: theme.$button-ghost-outline-offset,
-          outline-color: theme.$button-ghost-outline-color,
-          z-index: theme.$button-ghost-z-index,
-          box-shadow: theme.$button-ghost-box-shadow,
-          border-radius: theme.$button-ghost-outline-border-radius,
-        )
-      );
+      border-style: theme.$button-ghost-focus-border-style;
+      border-color: theme.$button-ghost-focus-border-color;
+      border-width: theme.$button-ghost-focus-border-width;
+      border-radius: theme.$button-ghost-focus-border-radius;
+      background-color: theme.$button-ghost-focus-background-color;
+      color: theme.$button-ghost-focus-text-color;
+      outline: theme.$button-ghost-outline;
+      outline-offset: theme.$button-ghost-outline-offset;
+      outline-color: theme.$button-ghost-outline-color;
+      z-index: theme.$button-ghost-z-index;
+      box-shadow: theme.$button-ghost-box-shadow;
+      border-radius: theme.$button-ghost-outline-border-radius;
 
       &:visited,
       &.visited {
-        @include theming.apply-from-theme(
-          (
-            outline: theme.$button-ghost-outline,
-            outline-offset: theme.$button-ghost-outline-offset,
-            outline-color: theme.$button-ghost-outline-color,
-            z-index: theme.$button-ghost-z-index,
-            box-shadow: theme.$button-ghost-box-shadow,
-            border-radius: theme.$button-ghost-outline-border-radius,
-          )
-        );
+        outline: theme.$button-ghost-outline;
+        outline-offset: theme.$button-ghost-outline-offset;
+        outline-color: theme.$button-ghost-outline-color;
+        z-index: theme.$button-ghost-z-index;
+        box-shadow: theme.$button-ghost-box-shadow;
+        border-radius: theme.$button-ghost-outline-border-radius;
       }
     }
 
@@ -131,10 +110,6 @@ input[type="reset"] {
 a.button,
 a:visited.button {
   &.ghost {
-    @include theming.apply-from-theme(
-      (
-        color: theme.$link-button-ghost-text-color,
-      )
-    );
+    color: theme.$link-button-ghost-text-color;
   }
 }

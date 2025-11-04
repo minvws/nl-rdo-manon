@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 $sidemenu-breakpoint: 24rem !default;
@@ -10,14 +9,9 @@ main.sidemenu {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
-
-  @include theming.apply-from-theme(
-    (
-      padding-top: theme.$sidemenu-main-padding-top,
-      padding-bottom: theme.$sidemenu-main-padding-bottom,
-      gap: theme.$sidemenu-main-gap,
-    )
-  );
+  padding-top: theme.$sidemenu-main-padding-top;
+  padding-bottom: theme.$sidemenu-main-padding-bottom;
+  gap: theme.$sidemenu-main-gap;
 
   @media (width >= $sidemenu-breakpoint) {
     flex-wrap: nowrap;
@@ -32,28 +26,33 @@ main.sidemenu {
     box-sizing: border-box;
 
     @media (width >= $sidemenu-breakpoint) {
-      @include theming.apply-from-theme(
-        (
-          max-width: theme.$sidemenu-page-max-width,
-          padding-top: theme.$sidemenu-page-padding-top,
-          padding-right: theme.$sidemenu-page-padding-right,
-          padding-bottom: theme.$sidemenu-page-padding-bottom,
-          padding-left: theme.$sidemenu-page-padding-left,
-        )
-      );
+      max-width: theme.$sidemenu-page-max-width;
+      padding-top: theme.$sidemenu-page-padding-top;
+      padding-right: theme.$sidemenu-page-padding-right;
+      padding-bottom: theme.$sidemenu-page-padding-bottom;
+      padding-left: theme.$sidemenu-page-padding-left;
     }
   }
 
   a {
-    @include theming.apply-from-theme(
-      (
-        text-decoration: theme.$sidemenu-text-decoration,
-      )
-    );
+    text-decoration: theme.$sidemenu-text-decoration;
   }
 
   > nav {
     display: none;
+    width: theme.$sidemenu-nav-width;
+    padding-top: theme.$sidemenu-nav-padding-top;
+    padding-right: theme.$sidemenu-nav-padding-right;
+    padding-bottom: theme.$sidemenu-nav-padding-bottom;
+    padding-left: theme.$sidemenu-nav-padding-left;
+    background-color: theme.$sidemenu-nav-background-color;
+    border-width: theme.$sidemenu-nav-border-width;
+    border-style: theme.$sidemenu-nav-border-style;
+    border-color: theme.$sidemenu-nav-border-color;
+    background-image: theme.$sidemenu-nav-background-image;
+    background-repeat: theme.$sidemenu-nav-background-repeat;
+    background-size: theme.$sidemenu-nav-background-size;
+    background-position: theme.$sidemenu-nav-background-position;
 
     @media (width >= $sidemenu-breakpoint) {
       /* nav */
@@ -68,24 +67,6 @@ main.sidemenu {
         align-items: flex-start;
       }
 
-      @include theming.apply-from-theme(
-        (
-          width: theme.$sidemenu-nav-width,
-          padding-top: theme.$sidemenu-nav-padding-top,
-          padding-right: theme.$sidemenu-nav-padding-right,
-          padding-bottom: theme.$sidemenu-nav-padding-bottom,
-          padding-left: theme.$sidemenu-nav-padding-left,
-          background-color: theme.$sidemenu-nav-background-color,
-          border-width: theme.$sidemenu-nav-border-width,
-          border-style: theme.$sidemenu-nav-border-style,
-          border-color: theme.$sidemenu-nav-border-color,
-          background-image: theme.$sidemenu-nav-background-image,
-          background-repeat: theme.$sidemenu-nav-background-repeat,
-          background-size: theme.$sidemenu-nav-background-size,
-          background-position: theme.$sidemenu-nav-background-position,
-        )
-      );
-
       /* List */
       .sticky-container {
         position: -webkit-sticky;
@@ -93,15 +74,10 @@ main.sidemenu {
         top: 0;
         overflow: auto;
         padding: theme.$sidemenu-ul-padding;
+        max-height: theme.$sidemenu-main-max-height;
 
         /* Solves a bug in older safari versions where position sticky blocks overflow auto */
         display: block;
-
-        @include theming.apply-from-theme(
-          (
-            max-height: theme.$sidemenu-main-max-height,
-          )
-        );
       }
 
       button + ul {
@@ -112,20 +88,16 @@ main.sidemenu {
 
       > ul li,
       button + ul li {
-        @include theming.apply-from-theme(
-          (
-            background-color: theme.$sidemenu-list-item-background-color,
-            border-color: theme.$sidemenu-list-item-border-color,
-            border-style: theme.$sidemenu-list-item-border-style,
-            border-width: theme.$sidemenu-list-item-border-width,
-            padding: theme.$sidemenu-list-item-padding,
-            line-height: theme.$sidemenu-list-item-line-height,
-            font-size: theme.$sidemenu-list-item-font-size,
-            font-weight: theme.$sidemenu-list-item-font-weight,
-            color: theme.$sidemenu-list-item-text-color,
-            list-style: theme.$sidemenu-list-item-list-style,
-          )
-        );
+        background-color: theme.$sidemenu-list-item-background-color;
+        border-color: theme.$sidemenu-list-item-border-color;
+        border-style: theme.$sidemenu-list-item-border-style;
+        border-width: theme.$sidemenu-list-item-border-width;
+        padding: theme.$sidemenu-list-item-padding;
+        line-height: theme.$sidemenu-list-item-line-height;
+        font-size: theme.$sidemenu-list-item-font-size;
+        font-weight: theme.$sidemenu-list-item-font-weight;
+        color: theme.$sidemenu-list-item-text-color;
+        list-style: theme.$sidemenu-list-item-list-style;
       }
 
       /* Button */
@@ -140,72 +112,52 @@ main.sidemenu {
 
         /* Needed to keep the button to stick to the top */
         top: theme.$sidemenu-button-margin-top;
-
-        @include theming.apply-from-theme(
-          (
-            margin-left: theme.$sidemenu-button-margin-left,
-            min-width: theme.$sidemenu-button-min-width,
-            min-height: theme.$sidemenu-button-min-height,
-            font-size: theme.$sidemenu-button-font-size,
-            background-color: theme.$sidemenu-button-background-color,
-            padding: theme.$sidemenu-button-padding,
-            color: theme.$sidemenu-button-color,
-            gap: theme.$sidemenu-button-gap,
-          )
-        );
+        margin-left: theme.$sidemenu-button-margin-left;
+        min-width: theme.$sidemenu-button-min-width;
+        min-height: theme.$sidemenu-button-min-height;
+        font-size: theme.$sidemenu-button-font-size;
+        background-color: theme.$sidemenu-button-background-color;
+        padding: theme.$sidemenu-button-padding;
+        color: theme.$sidemenu-button-color;
+        gap: theme.$sidemenu-button-gap;
 
         @if theme.$sidemenu-expanded-icon-mask {
           &::before {
             mask-size: contain;
             content: "";
-
-            @include theming.apply-from-theme(
-              (
-                margin-right: theme.$sidemenu-expanded-icon-margin-right,
-                margin-left: theme.$sidemenu-expanded-icon-margin-left,
-                padding-right: theme.$sidemenu-expanded-icon-padding-right,
-                padding-left: theme.$sidemenu-expanded-icon-padding-left,
-                background-color: theme.$sidemenu-expanded-icon-color,
-                mask-image: theme.$sidemenu-expanded-icon-mask,
-                width: theme.$sidemenu-expanded-icon-width,
-                height: theme.$sidemenu-expanded-icon-height,
-              )
-            );
+            margin-right: theme.$sidemenu-expanded-icon-margin-right;
+            margin-left: theme.$sidemenu-expanded-icon-margin-left;
+            padding-right: theme.$sidemenu-expanded-icon-padding-right;
+            padding-left: theme.$sidemenu-expanded-icon-padding-left;
+            background-color: theme.$sidemenu-expanded-icon-color;
+            mask-image: theme.$sidemenu-expanded-icon-mask;
+            width: theme.$sidemenu-expanded-icon-width;
+            height: theme.$sidemenu-expanded-icon-height;
           }
         }
 
         &[aria-expanded="false"] {
-          @include theming.apply-from-theme(
-            (
-              margin-left: theme.$sidemenu-collapsed-button-margin-left,
-              min-width: theme.$sidemenu-collapsed-button-min-width,
-              min-height: theme.$sidemenu-collapsed-button-min-height,
-              font-size: theme.$sidemenu-collapsed-button-font-size,
-              background-color:
-                theme.$sidemenu-collapsed-button-background-color,
-              padding: theme.$sidemenu-collapsed-button-padding,
-              color: theme.$sidemenu-collapsed-button-color,
-              gap: theme.$sidemenu-collapsed-button-gap,
-            )
-          );
+          margin-left: theme.$sidemenu-collapsed-button-margin-left;
+          min-width: theme.$sidemenu-collapsed-button-min-width;
+          min-height: theme.$sidemenu-collapsed-button-min-height;
+          font-size: theme.$sidemenu-collapsed-button-font-size;
+          background-color: theme.$sidemenu-collapsed-button-background-color;
+          padding: theme.$sidemenu-collapsed-button-padding;
+          color: theme.$sidemenu-collapsed-button-color;
+          gap: theme.$sidemenu-collapsed-button-gap;
 
           @if theme.$sidemenu-collapsed-icon-mask {
             &::before {
               mask-size: contain;
               content: "";
-
-              @include theming.apply-from-theme(
-                (
-                  margin-right: theme.$sidemenu-collapsed-icon-margin-right,
-                  margin-left: theme.$sidemenu-collapsed-icon-margin-left,
-                  padding-right: theme.$sidemenu-collapsed-icon-padding-right,
-                  padding-left: theme.$sidemenu-collapsed-icon-padding-left,
-                  background-color: theme.$sidemenu-collapsed-icon-color,
-                  mask-image: theme.$sidemenu-collapsed-icon-mask,
-                  width: theme.$sidemenu-collapsed-icon-width,
-                  height: theme.$sidemenu-collapsed-icon-height,
-                )
-              );
+              margin-right: theme.$sidemenu-collapsed-icon-margin-right;
+              margin-left: theme.$sidemenu-collapsed-icon-margin-left;
+              padding-right: theme.$sidemenu-collapsed-icon-padding-right;
+              padding-left: theme.$sidemenu-collapsed-icon-padding-left;
+              background-color: theme.$sidemenu-collapsed-icon-color;
+              mask-image: theme.$sidemenu-collapsed-icon-mask;
+              width: theme.$sidemenu-collapsed-icon-width;
+              height: theme.$sidemenu-collapsed-icon-height;
             }
           }
         }

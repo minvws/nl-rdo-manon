@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -7,35 +6,21 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-
-  @include theming.apply-from-theme(
-    (
-      gap: theme.$checkbox-gap,
-      align-items: theme.$checkbox-align-items,
-    )
-  );
+  gap: theme.$checkbox-gap;
+  align-items: theme.$checkbox-align-items;
 
   input[type="checkbox"] {
     padding: 0;
     cursor: pointer;
-
-    @include theming.apply-from-theme(
-      (
-        width: theme.$checkbox-width,
-        min-width: theme.$checkbox-width,
-        height: theme.$checkbox-height,
-        min-height: theme.$checkbox-height,
-        accent-color: theme.$checkbox-accent-color,
-      )
-    );
+    width: theme.$checkbox-width;
+    min-width: theme.$checkbox-width;
+    height: theme.$checkbox-height;
+    min-height: theme.$checkbox-height;
+    accent-color: theme.$checkbox-accent-color;
 
     & + label {
-      @include theming.apply-from-theme(
-        (
-          font-weight: theme.$checkbox-label-font-weight,
-          width: theme.$checkbox-label-width,
-        )
-      );
+      font-weight: theme.$checkbox-label-font-weight;
+      width: theme.$checkbox-label-width;
 
       cursor: pointer;
 
@@ -56,24 +41,14 @@
   &.required {
     flex-direction: column;
     align-items: flex-start;
-
-    @include theming.apply-from-theme(
-      (
-        gap: theme.$checkbox-required-gap,
-        justify-content: theme.$radio-align-items,
-      )
-    );
+    gap: theme.$checkbox-required-gap;
+    justify-content: theme.$radio-align-items;
 
     > div {
       padding: 0;
       display: flex;
       flex-direction: row;
-
-      @include theming.apply-from-theme(
-        (
-          gap: theme.$checkbox-gap,
-        )
-      );
+      gap: theme.$checkbox-gap;
     }
   }
 
@@ -82,11 +57,7 @@
     margin-bottom: 0;
 
     @if validators.args-not-null(theme.$checkbox-width, theme.$checkbox-gap) {
-      @include theming.apply-from-theme(
-        (
-          margin-left: calc(theme.$checkbox-width + theme.$checkbox-gap),
-        )
-      );
+      margin-left: calc(theme.$checkbox-width + theme.$checkbox-gap);
     }
   }
 }

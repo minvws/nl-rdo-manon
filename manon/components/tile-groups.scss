@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -7,20 +6,15 @@
   > div,
   > section {
     display: flex;
-
-    @include theming.apply-from-theme(
-      (
-        flex-direction: theme.$tile-groups-flex-direction,
-        gap: theme.$tile-groups-gap,
-        border-width: theme.$tile-groups-border-width,
-        border-style: theme.$tile-groups-border-style,
-        border-color: theme.$tile-groups-border-color,
-        padding-top: theme.$tile-groups-padding-top,
-        padding-right: theme.$tile-groups-padding-right,
-        padding-bottom: theme.$tile-groups-padding-bottom,
-        padding-left: theme.$tile-groups-padding-left,
-      )
-    );
+    flex-direction: theme.$tile-groups-flex-direction;
+    gap: theme.$tile-groups-gap;
+    border-width: theme.$tile-groups-border-width;
+    border-style: theme.$tile-groups-border-style;
+    border-color: theme.$tile-groups-border-color;
+    padding-top: theme.$tile-groups-padding-top;
+    padding-right: theme.$tile-groups-padding-right;
+    padding-bottom: theme.$tile-groups-padding-bottom;
+    padding-left: theme.$tile-groups-padding-left;
   }
 }
 
