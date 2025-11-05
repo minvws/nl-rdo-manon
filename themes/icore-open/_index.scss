@@ -794,5 +794,8 @@ and spacing sets */
   $tile-group-padding: spacing.$spacing-100 0 0 0,
 
   // tile image
-  $tile-image-cover-margin-bottom: spacing.$spacing-100
+  $tile-image-cover-margin-bottom: spacing.$spacing-100,
+
+  // Login meta
+  $login-meta-gap: spacing.$spacing-050
 );
