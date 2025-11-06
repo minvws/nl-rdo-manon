@@ -227,8 +227,8 @@ import "@minvws/manon/js/expando-rows.js";
         <td colspan="5">
           <h2>Extra informatie</h2>
           <p>
-            Hier vindt u aanvullende informatie die betrekking heeft op deze rij.
-            U kunt hier context, toelichtingen of andere relevante details opnemen.
+            Hier vindt u aanvullende informatie die betrekking heeft op deze rij. U kunt hier
+            context, toelichtingen of andere relevante details opnemen.
           </p>
         </td>
       </tr>
@@ -253,8 +253,8 @@ import "@minvws/manon/js/expando-rows.js";
         <td colspan="5">
           <h2>Extra informatie</h2>
           <p>
-            Hier vindt u aanvullende informatie die betrekking heeft op deze rij.
-            U kunt hier context, toelichtingen of andere relevante details opnemen.
+            Hier vindt u aanvullende informatie die betrekking heeft op deze rij. U kunt hier
+            context, toelichtingen of andere relevante details opnemen.
           </p>
         </td>
       </tr>
