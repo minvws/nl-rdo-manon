@@ -752,6 +752,9 @@ and spacing sets */
   $table-row-border-style: solid,
   $table-row-border-color: color-scheme.$oc-gray-1,
 
+  // Table body
+  $table-body-head-cell-padding: spacing.$spacing-075 spacing.$spacing-100,
+
   // table caption
   $table-caption-text-align: left,
   $table-caption-padding: spacing.$spacing-100 0,
@@ -770,6 +773,9 @@ and spacing sets */
   // table sortable
   $sortable-button-icon-width: 0.8rem,
   $sortable-button-icon-height: 0.8rem,
+
+  //table footer
+  $table-foot-header-padding: spacing.$spacing-075 spacing.$spacing-100,
 
   // table expando rows
   $expando-rows-table-cell-padding: 0,
