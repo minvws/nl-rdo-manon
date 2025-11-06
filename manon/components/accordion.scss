@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 %accordion {
@@ -155,14 +154,10 @@ section.accordion {
 
     /* The expanded state */
     button[aria-expanded="true"] {
-      @include theming.apply-from-theme(
-        (
-          color: theme.$accordion-button-expanded-text-color,
-          background-color: theme.$accordion-button-expanded-background-color,
-          border-width: theme.$accordion-button-expanded-border-width,
-          border-color: theme.$accordion-button-expanded-border-color,
-        )
-      );
+      color: theme.$accordion-button-expanded-text-color;
+      background-color: theme.$accordion-button-expanded-background-color;
+      border-width: theme.$accordion-button-expanded-border-width;
+      border-color: theme.$accordion-button-expanded-border-color;
 
       // /* Close icon */
       @if theme.$accordion-button-icon-before-closed-mask {

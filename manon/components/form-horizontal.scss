@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -18,11 +17,7 @@ form.horizontal {
   input[type="button"],
   input[type="submit"],
   input[type="reset"] {
-    @include theming.apply-from-theme(
-      (
-        margin: theme.$form-horizontal-button-margin,
-      )
-    );
+    margin: theme.$form-horizontal-button-margin;
   }
 
   > div,

@@ -1,18 +1,13 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
 %pagination-active-item-styling {
-  @include theming.apply-from-theme(
-    (
-      background-color: theme.$pagination-link-active-background-color,
-      color: theme.$pagination-link-active-text-color,
-      border-width: theme.$pagination-link-active-border-width,
-      border-style: theme.$pagination-link-active-border-style,
-      border-color: theme.$pagination-link-active-border-color,
-      font-weight: theme.$pagination-link-active-font-weight,
-    )
-  );
+  background-color: theme.$pagination-link-active-background-color;
+  color: theme.$pagination-link-active-text-color;
+  border-width: theme.$pagination-link-active-border-width;
+  border-style: theme.$pagination-link-active-border-style;
+  border-color: theme.$pagination-link-active-border-color;
+  font-weight: theme.$pagination-link-active-font-weight;
 }
 
 %pagination-link-styling {
@@ -23,29 +18,20 @@
   height: 100%;
   white-space: nowrap;
   box-sizing: border-box;
-
-  @include theming.apply-from-theme(
-    (
-      background-color: theme.$pagination-link-background-color,
-      color: theme.$pagination-link-text-color,
-      border-width: theme.$pagination-link-border-width,
-      border-style: theme.$pagination-link-border-style,
-      border-color: theme.$pagination-link-border-color,
-      border-radius: theme.$pagination-link-border-radius,
-      text-decoration: theme.$pagination-link-text-decoration,
-    )
-  );
+  background-color: theme.$pagination-link-background-color;
+  color: theme.$pagination-link-text-color;
+  border-width: theme.$pagination-link-border-width;
+  border-style: theme.$pagination-link-border-style;
+  border-color: theme.$pagination-link-border-color;
+  border-radius: theme.$pagination-link-border-radius;
+  text-decoration: theme.$pagination-link-text-decoration;
 
   &:hover {
-    @include theming.apply-from-theme(
-      (
-        background-color: theme.$pagination-link-hover-background-color,
-        color: theme.$pagination-link-hover-text-color,
-        border-width: theme.$pagination-link-hover-border-width,
-        border-style: theme.$pagination-link-hover-border-style,
-        border-color: theme.$pagination-link-hover-border-color,
-      )
-    );
+    background-color: theme.$pagination-link-hover-background-color;
+    color: theme.$pagination-link-hover-text-color;
+    border-width: theme.$pagination-link-hover-border-width;
+    border-style: theme.$pagination-link-hover-border-style;
+    border-color: theme.$pagination-link-hover-border-color;
   }
 
   &[aria-current="page"],
@@ -60,38 +46,26 @@
 
 /* Previous and next links */
 %pagination-adjacent-styling {
-  @include theming.apply-from-theme(
-    (
-      background-color: theme.$pagination-adjacent-background-color,
-      color: theme.$pagination-adjacent-text-color,
-      border-width: theme.$pagination-adjacent-border-width,
-      border-style: theme.$pagination-adjacent-border-style,
-      border-color: theme.$pagination-adjacent-border-color,
-      border-radius: theme.$pagination-adjacent-border-radius,
-      padding: theme.$pagination-adjacent-padding,
-      white-space: theme.$pagination-adjacent-white-space,
-      font-size: theme.$pagination-adjacent-font-size,
-    )
-  );
+  background-color: theme.$pagination-adjacent-background-color;
+  color: theme.$pagination-adjacent-text-color;
+  border-width: theme.$pagination-adjacent-border-width;
+  border-style: theme.$pagination-adjacent-border-style;
+  border-color: theme.$pagination-adjacent-border-color;
+  border-radius: theme.$pagination-adjacent-border-radius;
+  padding: theme.$pagination-adjacent-padding;
+  white-space: theme.$pagination-adjacent-white-space;
+  font-size: theme.$pagination-adjacent-font-size;
 
   &:hover {
-    @include theming.apply-from-theme(
-      (
-        background-color: theme.$pagination-adjacent-hover-background-color,
-        color: theme.$pagination-adjacent-hover-text-color,
-        border-width: theme.$pagination-adjacent-hover-border-width,
-        border-style: theme.$pagination-adjacent-hover-border-style,
-        border-color: theme.$pagination-adjacent-hover-border-color,
-      )
-    );
+    background-color: theme.$pagination-adjacent-hover-background-color;
+    color: theme.$pagination-adjacent-hover-text-color;
+    border-width: theme.$pagination-adjacent-hover-border-width;
+    border-style: theme.$pagination-adjacent-hover-border-style;
+    border-color: theme.$pagination-adjacent-hover-border-color;
   }
 
   &.previous {
-    @include theming.apply-from-theme(
-      (
-        padding: theme.$pagination-adjacent-previous-padding,
-      )
-    );
+    padding: theme.$pagination-adjacent-previous-padding;
 
     @if theme.$pagination-previous-icon-mask {
       display: inline-flex;
@@ -99,28 +73,19 @@
       &::before {
         mask-size: contain;
         content: "";
-
-        @include theming.apply-from-theme(
-          (
-            margin-right: theme.$pagination-previous-icon-margin-right,
-            margin-left: theme.$pagination-previous-icon-margin-left,
-            padding: theme.$pagination-previous-icon-padding,
-            background-color: theme.$pagination-previous-icon-color,
-            mask-image: theme.$pagination-previous-icon-mask,
-            width: theme.$pagination-previous-icon-width,
-            height: theme.$pagination-previous-icon-height,
-          )
-        );
+        margin-right: theme.$pagination-previous-icon-margin-right;
+        margin-left: theme.$pagination-previous-icon-margin-left;
+        padding: theme.$pagination-previous-icon-padding;
+        background-color: theme.$pagination-previous-icon-color;
+        mask-image: theme.$pagination-previous-icon-mask;
+        width: theme.$pagination-previous-icon-width;
+        height: theme.$pagination-previous-icon-height;
       }
     }
   }
 
   &.next {
-    @include theming.apply-from-theme(
-      (
-        padding: theme.$pagination-adjacent-next-padding,
-      )
-    );
+    padding: theme.$pagination-adjacent-next-padding;
 
     @if theme.$pagination-next-icon-mask {
       display: inline-flex;
@@ -128,18 +93,13 @@
       &::before {
         mask-size: contain;
         content: "";
-
-        @include theming.apply-from-theme(
-          (
-            margin-right: theme.$pagination-next-icon-margin-right,
-            margin-left: theme.$pagination-next-icon-margin-left,
-            padding: theme.$pagination-next-icon-padding,
-            background-color: theme.$pagination-next-icon-color,
-            mask-image: theme.$pagination-next-icon-mask,
-            width: theme.$pagination-next-icon-width,
-            height: theme.$pagination-next-icon-height,
-          )
-        );
+        margin-right: theme.$pagination-next-icon-margin-right;
+        margin-left: theme.$pagination-next-icon-margin-left;
+        padding: theme.$pagination-next-icon-padding;
+        background-color: theme.$pagination-next-icon-color;
+        mask-image: theme.$pagination-next-icon-mask;
+        width: theme.$pagination-next-icon-width;
+        height: theme.$pagination-next-icon-height;
       }
     }
   }
@@ -152,18 +112,13 @@
   width: 100%;
   overflow-x: theme.$pagination-overflow-x;
   justify-content: theme.$pagination-justify-content;
-
-  @include theming.apply-from-theme(
-    (
-      gap: theme.$pagination-list-gap,
-      border-top-width: theme.$pagination-border-top-width,
-      border-right-width: theme.$pagination-border-right-width,
-      border-bottom-width: theme.$pagination-border-bottom-width,
-      border-left-width: theme.$pagination-border-left-width,
-      border-style: theme.$pagination-border-style,
-      border-color: theme.$pagination-border-color,
-    )
-  );
+  gap: theme.$pagination-list-gap;
+  border-top-width: theme.$pagination-border-top-width;
+  border-right-width: theme.$pagination-border-right-width;
+  border-bottom-width: theme.$pagination-border-bottom-width;
+  border-left-width: theme.$pagination-border-left-width;
+  border-style: theme.$pagination-border-style;
+  border-color: theme.$pagination-border-color;
 
   li {
     padding: 0;
@@ -173,13 +128,8 @@
     justify-content: center;
     margin: 0;
     box-sizing: border-box;
-
-    @include theming.apply-from-theme(
-      (
-        height: theme.$pagination-item-height,
-        min-width: theme.$pagination-item-width,
-      )
-    );
+    height: theme.$pagination-item-height;
+    min-width: theme.$pagination-item-width;
 
     &::before {
       content: none;
@@ -212,17 +162,12 @@ nav.pagination,
   display: flex;
   width: 100%;
   align-items: theme.$pagination-align-items;
-
-  @include theming.apply-from-theme(
-    (
-      justify-content: theme.$pagination-justify-content,
-      border-width: theme.$pagination-border-width,
-      border-style: theme.$pagination-border-style,
-      border-color: theme.$pagination-border-color,
-      padding-top: theme.$pagination-padding-top,
-      gap: theme.$pagination-gap,
-    )
-  );
+  justify-content: theme.$pagination-justify-content;
+  border-width: theme.$pagination-border-width;
+  border-style: theme.$pagination-border-style;
+  border-color: theme.$pagination-border-color;
+  padding-top: theme.$pagination-padding-top;
+  gap: theme.$pagination-gap;
 
   ul {
     @extend %pagination-list-styling;

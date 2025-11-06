@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -30,11 +29,7 @@ form.horizontal {
       gap: 0;
 
       /* Adds margin instead of gap */
-      @include theming.apply-from-theme(
-        (
-          margin-bottom: theme.$form-horizontal-view-fieldset-margin-bottom,
-        )
-      );
+      margin-bottom: theme.$form-horizontal-view-fieldset-margin-bottom;
 
       @media (width >= $breakpoint) {
         > * {
@@ -61,13 +56,7 @@ form.horizontal {
     .required {
       .nota-bene {
         float: left;
-
-        @include theming.apply-from-theme(
-          (
-            margin-bottom:
-              theme.$form-horizontal-view-fieldset-form-required-gap,
-          )
-        );
+        margin-bottom: theme.$form-horizontal-view-fieldset-form-required-gap;
       }
     }
 
@@ -98,14 +87,8 @@ form.horizontal {
 
       input {
         float: left;
-
-        @include theming.apply-from-theme(
-          (
-            width: theme.$form-horizontal-view-fieldset-form-checkbox-width,
-            margin-right:
-              theme.$form-horizontal-view-fieldset-form-checkbox-margin-right,
-          )
-        );
+        width: theme.$form-horizontal-view-fieldset-form-checkbox-width;
+        margin-right: theme.$form-horizontal-view-fieldset-form-checkbox-margin-right;
       }
 
       label {
@@ -159,11 +142,7 @@ form.horizontal {
       & + input[type="button"],
       & + input[type="submit"],
       & + input[type="reset"] {
-        @include theming.apply-from-theme(
-          (
-            margin-left: theme.$form-horizontal-view-fieldset-label-column,
-          )
-        );
+        margin-left: theme.$form-horizontal-view-fieldset-label-column;
       }
     }
   }

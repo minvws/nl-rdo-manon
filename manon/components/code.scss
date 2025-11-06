@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 $breakpoint: 24rem !default;
@@ -6,39 +5,27 @@ $breakpoint: 24rem !default;
 %code {
   width: 100%;
   box-sizing: border-box;
-
-  @include theming.apply-from-theme(
-    (
-      background-color: theme.$code-background-color,
-      color: theme.$code-text-color,
-      word-break: theme.$code-word-break,
-      overflow-wrap: theme.$code-overflow-wrap,
-      padding: theme.$code-padding,
-      border-width: theme.$code-border-width,
-      border-style: theme.$code-border-style,
-      border-color: theme.$code-border-color,
-      border-radius: theme.$code-border-radius,
-    )
-  );
+  background-color: theme.$code-background-color;
+  color: theme.$code-text-color;
+  word-break: theme.$code-word-break;
+  overflow-wrap: theme.$code-overflow-wrap;
+  padding: theme.$code-padding;
+  border-width: theme.$code-border-width;
+  border-style: theme.$code-border-style;
+  border-color: theme.$code-border-color;
+  border-radius: theme.$code-border-radius;
 
   @media (width >= $breakpoint) {
-    @include theming.apply-from-theme(
-      (
-        word-break: theme.$code-breakpoint-word-break,
-        overflow-wrap: theme.$code-breakpoint-overflow-wrap,
-      )
-    );
+    word-break: theme.$code-breakpoint-word-break;
+    overflow-wrap: theme.$code-breakpoint-overflow-wrap;
   }
 }
 
 /* Code */
 code {
   @extend %code;
-  @include theming.apply-from-theme(
-    (
-      font-size: theme.$code-font-size,
-    )
-  );
+
+  font-size: theme.$code-font-size;
 }
 
 /* Code within text elements */

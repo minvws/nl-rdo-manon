@@ -770,12 +770,18 @@ and spacing sets */
   // table summary
   $table-summary-max-width: 30rem,
 
-  // Table sortable
+  // table sortable
   $sortable-button-icon-width: 0.8rem,
   $sortable-button-icon-height: 0.8rem,
 
-  //Table footer
+  //table footer
   $table-foot-header-padding: spacing.$spacing-075 spacing.$spacing-100,
+
+  // table expando rows
+  $expando-rows-table-cell-padding: 0,
+  $expando-rows-content-gap: spacing.$spacing-150,
+  $expando-rows-row-background-color: color-scheme.$oc-blue-0,
+  $expando-rows-content-padding: spacing.$spacing-050,
 
   // tile
   $tile-background-color: color-scheme.$oc-white,

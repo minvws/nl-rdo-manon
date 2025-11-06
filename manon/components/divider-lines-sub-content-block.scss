@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 main {
@@ -9,28 +8,16 @@ main {
       > article,
       > section,
       > div {
-        @include theming.apply-from-theme(
-          (
-            border-width: theme.$divider-lines-subcontentblocks-border-width,
-            border-style: theme.$divider-lines-subcontentblocks-border-style,
-            border-color: theme.$divider-lines-subcontentblocks-border-color,
-            padding-top: theme.$divider-lines-subcontentblocks-padding-top,
-          )
-        );
+        border-width: theme.$divider-lines-subcontentblocks-border-width;
+        border-style: theme.$divider-lines-subcontentblocks-border-style;
+        border-color: theme.$divider-lines-subcontentblocks-border-color;
+        padding-top: theme.$divider-lines-subcontentblocks-padding-top;
 
         &:first-of-type {
-          @include theming.apply-from-theme(
-            (
-              border-width:
-                theme.$divider-lines-subcontentblocks-first-of-type-border-width,
-              border-style:
-                theme.$divider-lines-subcontentblocks-first-of-type-border-style,
-              border-color:
-                theme.$divider-lines-subcontentblocks-first-of-type-border-color,
-              padding-top:
-                theme.$divider-lines-subcontentblocks-first-of-type-padding-top,
-            )
-          );
+          border-width: theme.$divider-lines-subcontentblocks-first-of-type-border-width;
+          border-style: theme.$divider-lines-subcontentblocks-first-of-type-border-style;
+          border-color: theme.$divider-lines-subcontentblocks-first-of-type-border-color;
+          padding-top: theme.$divider-lines-subcontentblocks-first-of-type-padding-top;
         }
       }
     }

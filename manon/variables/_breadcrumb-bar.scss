@@ -1,4 +1,4 @@
-$breadcrumb-bar-flex-direction: null !default;
+$breadcrumb-bar-flex-direction: row !default;
 $breadcrumb-bar-justify-content: null !default;
 $breadcrumb-bar-align-items: null !default;
 $breadcrumb-bar-gap: null !default;
@@ -8,12 +8,12 @@ $breadcrumb-bar-padding-right: null !default;
 $breadcrumb-bar-padding-bottom: null !default;
 $breadcrumb-bar-padding-left: null !default;
 $breadcrumb-bar-max-width: null !default;
-$breadcrumb-bar-text-color: null !default;
+$breadcrumb-bar-text-color: inherit !default;
 $breadcrumb-bar-border-width: null !default;
 $breadcrumb-bar-border-style: null !default;
 $breadcrumb-bar-border-color: null !default;
 $breadcrumb-bar-border-radius: null !default;
-$breadcrumb-bar-background-color: null !default;
+$breadcrumb-bar-background-color: transparent !default;
 $breadcrumb-bar-font-size: null !default;
 $breadcrumb-bar-font-weight: null !default;
 
