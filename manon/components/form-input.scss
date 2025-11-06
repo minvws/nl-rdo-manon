@@ -1,28 +1,21 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 input {
   width: 100%;
   box-sizing: border-box;
-  min-height: 0;
-
-  @include theming.apply-from-theme(
-    (
-      padding-top: theme.$form-input-padding-top,
-      padding-right: theme.$form-input-padding-right,
-      padding-bottom: theme.$form-input-padding-bottom,
-      padding-left: theme.$form-input-padding-left,
-      background-color: theme.$form-input-background-color,
-      color: theme.$form-input-text-color,
-      font-family: theme.$form-input-font-family,
-      font-size: theme.$form-input-font-size,
-      line-height: theme.$form-input-line-height,
-      font-weight: theme.$form-input-font-weight,
-      min-height: theme.$form-input-min-height,
-      border-width: theme.$form-input-border-width,
-      border-style: theme.$form-input-border-style,
-      border-color: theme.$form-input-border-color,
-      border-radius: theme.$form-input-border-radius,
-    )
-  );
+  padding-top: theme.$form-input-padding-top;
+  padding-right: theme.$form-input-padding-right;
+  padding-bottom: theme.$form-input-padding-bottom;
+  padding-left: theme.$form-input-padding-left;
+  background-color: theme.$form-input-background-color;
+  color: theme.$form-input-text-color;
+  font-family: theme.$form-input-font-family;
+  font-size: theme.$form-input-font-size;
+  line-height: theme.$form-input-line-height;
+  font-weight: theme.$form-input-font-weight;
+  min-height: theme.$form-input-min-height;
+  border-width: theme.$form-input-border-width;
+  border-style: theme.$form-input-border-style;
+  border-color: theme.$form-input-border-color;
+  border-radius: theme.$form-input-border-radius;
 }

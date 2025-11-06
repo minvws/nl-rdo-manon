@@ -1,8 +1,23 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 .hero {
   position: relative;
+  min-height: theme.$hero-min-height;
+  height: theme.$hero-height;
+  max-height: theme.$hero-max-height;
+  width: theme.$hero-width;
+  max-width: theme.$hero-max-width;
+  background-color: theme.$hero-background-color;
+  margin: theme.$hero-margin;
+  border-radius: theme.$hero-border-radius;
+  padding: theme.$hero-padding;
+  justify-content: theme.$hero-justify-content;
+  align-items: theme.$hero-align-items;
+  flex-direction: theme.$hero-flex-direction;
+  background-image: theme.$hero-background-image;
+  background-repeat: theme.$hero-background-repeat;
+  color: theme.$hero-text-color;
+  font-size: theme.$hero-font-size;
 
   @if theme.$hero-justify-content or
     theme.$hero-align-items or
@@ -15,29 +30,17 @@
     position: relative;
   }
 
-  @include theming.apply-from-theme(
-    (
-      min-height: theme.$hero-min-height,
-      height: theme.$hero-height,
-      max-height: theme.$hero-max-height,
-      width: theme.$hero-width,
-      max-width: theme.$hero-max-width,
-      background-color: theme.$hero-background-color,
-      margin: theme.$hero-margin,
-      border-radius: theme.$hero-border-radius,
-      padding: theme.$hero-padding,
-      justify-content: theme.$hero-justify-content,
-      align-items: theme.$hero-align-items,
-      flex-direction: theme.$hero-flex-direction,
-      background-image: theme.$hero-background-image,
-      background-repeat: theme.$hero-background-repeat,
-      color: theme.$hero-text-color,
-      font-size: theme.$hero-font-size,
-    )
-  );
-
   .content-wrapper {
     z-index: 1;
+    padding: theme.$hero-content-wrapper-padding;
+    max-width: theme.$hero-content-wrapper-max-width;
+    text-align: theme.$hero-content-wrapper-text-align;
+    margin: theme.$hero-content-wrapper-margin;
+    justify-content: theme.$hero-content-wrapper-justify-content;
+    align-items: theme.$hero-content-wrapper-align-items;
+    flex-direction: theme.$hero-content-wrapper-flex-direction;
+    background-color: theme.$hero-content-wrapper-background-color;
+    gap: theme.$hero-content-wrapper-gap;
 
     @if theme.$hero-content-wrapper-justify-content or
       theme.$hero-content-wrapper-align-items or
@@ -46,20 +49,6 @@
     {
       display: flex;
     }
-
-    @include theming.apply-from-theme(
-      (
-        padding: theme.$hero-content-wrapper-padding,
-        max-width: theme.$hero-content-wrapper-max-width,
-        text-align: theme.$hero-content-wrapper-text-align,
-        margin: theme.$hero-content-wrapper-margin,
-        justify-content: theme.$hero-content-wrapper-justify-content,
-        align-items: theme.$hero-content-wrapper-align-items,
-        flex-direction: theme.$hero-content-wrapper-flex-direction,
-        background-color: theme.$hero-content-wrapper-background-color,
-        gap: theme.$hero-content-wrapper-gap,
-      )
-    );
   }
 
   .cover {
@@ -71,12 +60,7 @@
     position: absolute;
     top: 0;
     z-index: -1;
-
-    @include theming.apply-from-theme(
-      (
-        object-position: theme.$hero-image-object-position,
-      )
-    );
+    object-position: theme.$hero-image-object-position;
   }
 
   h1,
@@ -85,11 +69,7 @@
   h4,
   h5,
   h6 {
-    @include theming.apply-from-theme(
-      (
-        font-size: theme.$hero-title-font-size,
-        color: theme.$hero-title-text-color,
-      )
-    );
+    font-size: theme.$hero-title-font-size;
+    color: theme.$hero-title-text-color;
   }
 }

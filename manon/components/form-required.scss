@@ -1,18 +1,13 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 form {
   .required {
-    @include theming.apply-from-theme(
-      (
-        align-items: theme.$form-required-align-items,
-        justify-content: theme.$form-required-justify-content,
-        padding-top: theme.$form-required-padding-top,
-        padding-right: theme.$form-required-padding-right,
-        padding-bottom: theme.$form-required-padding-bottom,
-        padding-left: theme.$form-required-padding-left,
-        gap: theme.$form-required-gap,
-      )
-    );
+    align-items: theme.$form-required-align-items;
+    justify-content: theme.$form-required-justify-content;
+    padding-top: theme.$form-required-padding-top;
+    padding-right: theme.$form-required-padding-right;
+    padding-bottom: theme.$form-required-padding-bottom;
+    padding-left: theme.$form-required-padding-left;
+    gap: theme.$form-required-gap;
   }
 }

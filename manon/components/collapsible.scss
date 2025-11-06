@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../mixins/collapsible";
 
@@ -7,12 +6,8 @@
 }
 
 .collapsing-element {
-  @include theming.apply-from-theme(
-    (
-      justify-content: theme.$collapsing-element-justify-content,
-      align-items: theme.$collapsing-element-align-items,
-    )
-  );
+  justify-content: theme.$collapsing-element-justify-content;
+  align-items: theme.$collapsing-element-align-items;
 }
 
 .collapsible.collapsed {
@@ -21,31 +16,26 @@
     max-height: initial;
     height: auto;
     box-sizing: border-box;
-
-    @include theming.apply-from-theme(
-      (
-        flex-direction: theme.$collapsing-element-flex-direction,
-        justify-content: theme.$collapsing-element-justify-content,
-        gap: theme.$collapsing-element-gap,
-        width: theme.$collapsing-element-width,
-        max-width: theme.$collapsing-element-max-width,
-        z-index: theme.$collapsing-element-z-index,
-        padding-top: theme.$collapsing-element-padding-top,
-        padding-right: theme.$collapsing-element-padding-right,
-        padding-bottom: theme.$collapsing-element-padding-bottom,
-        padding-left: theme.$collapsing-element-padding-left,
-        border-width: theme.$collapsing-element-border-width,
-        border-style: theme.$collapsing-element-border-style,
-        border-color: theme.$collapsing-element-border-color,
-        background-color: theme.$collapsing-element-background-color,
-        color: theme.$collapsing-element-text-color,
-        -webkit-box-shadow: theme.$collapsing-element-box-shadow,
-        box-shadow: theme.$collapsing-element-box-shadow,
-        top: theme.$collapsing-element-top,
-        left: theme.$collapsing-element-left,
-        right: theme.$collapsing-element-right,
-      )
-    );
+    flex-direction: theme.$collapsing-element-flex-direction;
+    justify-content: theme.$collapsing-element-justify-content;
+    gap: theme.$collapsing-element-gap;
+    width: theme.$collapsing-element-width;
+    max-width: theme.$collapsing-element-max-width;
+    z-index: theme.$collapsing-element-z-index;
+    padding-top: theme.$collapsing-element-padding-top;
+    padding-right: theme.$collapsing-element-padding-right;
+    padding-bottom: theme.$collapsing-element-padding-bottom;
+    padding-left: theme.$collapsing-element-padding-left;
+    border-width: theme.$collapsing-element-border-width;
+    border-style: theme.$collapsing-element-border-style;
+    border-color: theme.$collapsing-element-border-color;
+    background-color: theme.$collapsing-element-background-color;
+    color: theme.$collapsing-element-text-color;
+    -webkit-box-shadow: theme.$collapsing-element-box-shadow;
+    box-shadow: theme.$collapsing-element-box-shadow;
+    top: theme.$collapsing-element-top;
+    left: theme.$collapsing-element-left;
+    right: theme.$collapsing-element-right;
 
     form {
       padding: 0;
@@ -59,32 +49,20 @@
       width: 100%;
       margin: 0;
       padding: 0;
-
-      @include theming.apply-from-theme(
-        (
-          gap: theme.$collapsing-element-list-gap,
-          background-color: theme.$collapsing-element-list-background-color,
-        )
-      );
+      gap: theme.$collapsing-element-list-gap;
+      background-color: theme.$collapsing-element-list-background-color;
 
       li {
         display: flex;
         width: 100%;
         max-width: 100%;
         padding: 0;
-
-        @include theming.apply-from-theme(
-          (
-            align-items: theme.$collapsing-element-list-item-align-items,
-            background-color:
-              theme.$collapsing-element-list-item-background-color,
-            color: theme.$collapsing-element-list-item-text-color,
-
-            border-width: theme.$collapsing-element-list-item-border-width,
-            border-style: theme.$collapsing-element-list-item-border-style,
-            border-color: theme.$collapsing-element-list-item-border-color,
-          )
-        );
+        align-items: theme.$collapsing-element-list-item-align-items;
+        background-color: theme.$collapsing-element-list-item-background-color;
+        color: theme.$collapsing-element-list-item-text-color;
+        border-width: theme.$collapsing-element-list-item-border-width;
+        border-style: theme.$collapsing-element-list-item-border-style;
+        border-color: theme.$collapsing-element-list-item-border-color;
 
         &::before {
           /* Preventing default nav before to show up */
@@ -92,21 +70,11 @@
         }
 
         &:last-child {
-          @include theming.apply-from-theme(
-            (
-              border-width:
-                theme.$collapsing-element-list-item-last-item-border-width,
-            )
-          );
+          border-width: theme.$collapsing-element-list-item-last-item-border-width;
         }
 
         &:first-child {
-          @include theming.apply-from-theme(
-            (
-              border-width:
-                theme.$collapsing-element-list-item-first-item-border-width,
-            )
-          );
+          border-width: theme.$collapsing-element-list-item-first-item-border-width;
         }
 
         a {
@@ -118,124 +86,66 @@
           border: 0;
           white-space: nowrap;
           box-sizing: border-box;
-
-          @include theming.apply-from-theme(
-            (
-              justify-content:
-                theme.$collapsing-element-list-item-link-justify-content,
-              min-height: theme.$collapsing-element-list-item-min-height,
-
-              padding-top: theme.$collapsing-element-list-item-link-padding-top,
-              padding-right:
-                theme.$collapsing-element-list-item-link-padding-right,
-              padding-bottom:
-                theme.$collapsing-element-list-item-link-padding-bottom,
-              padding-left:
-                theme.$collapsing-element-list-item-link-padding-left,
-
-              color: theme.$collapsing-element-list-item-link-text-color,
-              text-decoration:
-                theme.$collapsing-element-list-item-link-text-decoration,
-            )
-          );
+          justify-content: theme.$collapsing-element-list-item-link-justify-content;
+          min-height: theme.$collapsing-element-list-item-min-height;
+          padding-top: theme.$collapsing-element-list-item-link-padding-top;
+          padding-right: theme.$collapsing-element-list-item-link-padding-right;
+          padding-bottom: theme.$collapsing-element-list-item-link-padding-bottom;
+          padding-left: theme.$collapsing-element-list-item-link-padding-left;
+          color: theme.$collapsing-element-list-item-link-text-color;
+          text-decoration: theme.$collapsing-element-list-item-link-text-decoration;
 
           &::before {
-            @include theming.apply-from-theme(
-              (
-                content: theme.$collapsing-element-list-icon,
-                font-family: theme.$collapsing-element-list-icon-font-family,
-                margin-left: theme.$collapsing-element-list-icon-margin-left,
-                font-size: theme.$collapsing-element-list-icon-font-size,
-                color: theme.$collapsing-element-list-icon-text-color,
-                margin-right: theme.$collapsing-element-list-icon-margin-right,
-              )
-            );
+            content: theme.$collapsing-element-list-icon;
+            font-family: theme.$collapsing-element-list-icon-font-family;
+            margin-left: theme.$collapsing-element-list-icon-margin-left;
+            font-size: theme.$collapsing-element-list-icon-font-size;
+            color: theme.$collapsing-element-list-icon-text-color;
+            margin-right: theme.$collapsing-element-list-icon-margin-right;
           }
 
           &[aria-selected="true"],
           &[aria-current="page"] {
-            @include theming.apply-from-theme(
-              (
-                background-color:
-                  theme.$collapsing-element-list-link-selected-background-color,
-                font-weight:
-                  theme.$collapsing-element-list-link-selected-font-weight,
-                text-decoration:
-                  theme.$collapsing-element-list-link-selected-text-decoration,
-              )
-            );
+            background-color: theme.$collapsing-element-list-link-selected-background-color;
+            font-weight: theme.$collapsing-element-list-link-selected-font-weight;
+            text-decoration: theme.$collapsing-element-list-link-selected-text-decoration;
 
             &::before {
-              @include theming.apply-from-theme(
-                (
-                  content: theme.$collapsing-element-list-selected-icon,
-                  font-family:
-                    theme.$collapsing-element-list-selected-icon-font-family,
-                  margin-left:
-                    theme.$collapsing-element-list-selected-icon-margin-left,
-                  font-size:
-                    theme.$collapsing-element-list-selected-icon-font-size,
-                  color: theme.$collapsing-element-list-selected-icon-text-color,
-                  margin-right:
-                    theme.$collapsing-element-list-selected-icon-margin-right,
-                )
-              );
+              content: theme.$collapsing-element-list-selected-icon;
+              font-family: theme.$collapsing-element-list-selected-icon-font-family;
+              margin-left: theme.$collapsing-element-list-selected-icon-margin-left;
+              font-size: theme.$collapsing-element-list-selected-icon-font-size;
+              color: theme.$collapsing-element-list-selected-icon-text-color;
+              margin-right: theme.$collapsing-element-list-selected-icon-margin-right;
             }
 
             &:hover {
               border: 0;
 
-              @include theming.apply-from-theme(
-                (
-                  border-top:
-                    theme.$collapsing-element-list-link-selected-hover-background-color,
-                  text-decoration:
-                    theme.$collapsing-element-list-link-selected-hover-text-decoration,
-                )
-              );
+              border-top: theme.$collapsing-element-list-link-selected-hover-background-color;
+              text-decoration: theme.$collapsing-element-list-link-selected-hover-text-decoration;
             }
           }
         }
 
         &:hover {
-          @include theming.apply-from-theme(
-            (
-              background-color:
-                theme.$collapsing-element-list-item-link-hover-background-color,
-              color: theme.$collapsing-element-list-item-hover-text-color,
-            )
-          );
+          background-color: theme.$collapsing-element-list-item-link-hover-background-color;
+          color: theme.$collapsing-element-list-item-hover-text-color;
 
           a {
-            @include theming.apply-from-theme(
-              (
-                background-color:
-                  theme.$collapsing-element-list-item-link-hover-background-color,
-                color: theme.$collapsing-element-list-item-link-hover-text-color,
-                text-decoration:
-                  theme.$collapsing-element-list-link-hover-text-decoration,
-              )
-            );
+            background-color: theme.$collapsing-element-list-item-link-hover-background-color;
+            color: theme.$collapsing-element-list-item-link-hover-text-color;
+            text-decoration: theme.$collapsing-element-list-link-hover-text-decoration;
 
             &:visited {
-              @include theming.apply-from-theme(
-                (
-                  background-color:
-                    theme.$collapsing-element-list-item-link-hover-background-color,
-                )
-              );
+              background-color: theme.$collapsing-element-list-item-link-hover-background-color;
             }
           }
         }
 
         &[aria-current] {
-          @include theming.apply-from-theme(
-            (
-              background-color:
-                theme.$collapsing-element-list-item-link-hover-background-color,
-              color: theme.$collapsing-element-list-item-link-hover-text-color,
-            )
-          );
+          background-color: theme.$collapsing-element-list-item-link-hover-background-color;
+          color: theme.$collapsing-element-list-item-link-hover-text-color;
         }
       }
     }

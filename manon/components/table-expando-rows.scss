@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 $breakpoint: 24rem !default;
@@ -10,29 +9,19 @@ table {
 
   tr.expando-row {
     display: table-layout;
+    border-width: theme.$expando-rows-border-width;
+    border-style: theme.$expando-rows-border-style;
+    border-color: theme.$expando-rows-border-color;
 
     td {
       position: relative;
-
-      @include theming.apply-from-theme(
-        (
-          background-color: theme.$expando-rows-table-cell-background-color,
-          padding: theme.$expando-rows-table-cell-padding,
-        )
-      );
+      background-color: theme.$expando-rows-table-cell-background-color;
+      padding: theme.$expando-rows-table-cell-padding;
 
       @media (width >= $breakpoint) {
         padding: theme.$expando-rows-table-cell-after-breakpoint-padding;
       }
     }
-
-    @include theming.apply-from-theme(
-      (
-        border-width: theme.$expando-rows-border-width,
-        border-style: theme.$expando-rows-border-style,
-        border-color: theme.$expando-rows-border-color,
-      )
-    );
   }
 }
 
@@ -45,20 +34,12 @@ table {
 }
 
 .expanded-row {
-  @include theming.apply-from-theme(
-    (
-      background-color: theme.$expando-rows-row-background-color,
-      font-weight: theme.$expando-rows-row-font-weight,
-    )
-  );
+  background-color: theme.$expando-rows-row-background-color;
+  font-weight: theme.$expando-rows-row-font-weight;
 
   /* Zebra striping with opacity to keep background color. e.g for warnings or errors */
   &:nth-child(even):not(.odd),
   &:nth-child(odd).even {
-    @include theming.apply-from-theme(
-      (
-        background-color: theme.$expando-rows-row-striping-background-color,
-      )
-    );
+    background-color: theme.$expando-rows-row-striping-background-color;
   }
 }
