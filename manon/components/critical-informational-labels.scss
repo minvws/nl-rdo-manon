@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 table {
@@ -8,13 +7,8 @@ table {
   .low,
   .informational {
     display: inline-block;
-
-    @include theming.apply-from-theme(
-      (
-        padding: theme.$critical-informational-labels-padding,
-        min-width: theme.$critical-informational-labels-min-width,
-        text-align: theme.$critical-informational-labels-text-align,
-      )
-    );
+    padding: theme.$critical-informational-labels-padding;
+    min-width: theme.$critical-informational-labels-min-width;
+    text-align: theme.$critical-informational-labels-text-align;
   }
 }

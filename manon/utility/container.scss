@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 .container-s,
@@ -10,37 +9,25 @@
 }
 
 .container-s {
-  @include theming.apply-from-theme(
-    (
-      max-width: theme.$container-s-max-width,
-      padding-top: theme.$container-s-padding-top,
-      padding-right: theme.$container-s-padding-right,
-      padding-bottom: theme.$container-s-padding-bottom,
-      padding-left: theme.$container-s-padding-left,
-    )
-  );
+  max-width: theme.$container-s-max-width;
+  padding-top: theme.$container-s-padding-top;
+  padding-right: theme.$container-s-padding-right;
+  padding-bottom: theme.$container-s-padding-bottom;
+  padding-left: theme.$container-s-padding-left;
 }
 
 .container-m {
-  @include theming.apply-from-theme(
-    (
-      max-width: theme.$container-m-max-width,
-      padding-top: theme.$container-m-padding-top,
-      padding-right: theme.$container-m-padding-right,
-      padding-bottom: theme.$container-m-padding-bottom,
-      padding-left: theme.$container-m-padding-left,
-    )
-  );
+  max-width: theme.$container-m-max-width;
+  padding-top: theme.$container-m-padding-top;
+  padding-right: theme.$container-m-padding-right;
+  padding-bottom: theme.$container-m-padding-bottom;
+  padding-left: theme.$container-m-padding-left;
 }
 
 .container-l {
-  @include theming.apply-from-theme(
-    (
-      max-width: theme.$container-l-max-width,
-      padding-top: theme.$container-l-padding-top,
-      padding-right: theme.$container-l-padding-right,
-      padding-bottom: theme.$container-l-padding-bottom,
-      padding-left: theme.$container-l-padding-left,
-    )
-  );
+  max-width: theme.$container-l-max-width;
+  padding-top: theme.$container-l-padding-top;
+  padding-right: theme.$container-l-padding-right;
+  padding-bottom: theme.$container-l-padding-bottom;
+  padding-left: theme.$container-l-padding-left;
 }

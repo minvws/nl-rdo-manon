@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../mixins/notification";
 @use "../variables" as theme;
 
@@ -7,36 +6,23 @@ span.warning,
 section.warning,
 div.warning {
   @include notification.notification;
-  @include theming.apply-from-theme(
-    (
-      background-color: theme.$notification-warning-background-color,
-      color: theme.$notification-warning-text-color,
-      border-color: theme.$notification-warning-border-color,
-    )
-  );
+
+  background-color: theme.$notification-warning-background-color;
+  color: theme.$notification-warning-text-color;
+  border-color: theme.$notification-warning-border-color;
 
   &::before {
-    @include theming.apply-from-theme(
-      (
-        font-family: theme.$notification-warning-icon-font-family,
-        font-size: theme.$notification-warning-icon-font-size,
-        padding-right: theme.$notification-warning-icon-padding-right,
-        padding-left: theme.$notification-warning-icon-padding-left,
-        color: theme.$notification-warning-icon-text-color,
-        margin-right: theme.$notification-warning-icon-margin-right,
-        content: theme.$notification-warning-icon,
-      )
-    );
+    font-family: theme.$notification-warning-icon-font-family;
+    font-size: theme.$notification-warning-icon-font-size;
+    padding-right: theme.$notification-warning-icon-padding-right;
+    padding-left: theme.$notification-warning-icon-padding-left;
+    color: theme.$notification-warning-icon-text-color;
+    margin-right: theme.$notification-warning-icon-margin-right;
+    content: theme.$notification-warning-icon;
   }
 
   .icon {
-    color: inherit;
-
-    @include theming.apply-from-theme(
-      (
-        background-color: theme.$notification-warning-icon-color,
-        color: theme.$notification-warning-icon-color,
-      )
-    );
+    background-color: theme.$notification-warning-icon-color;
+    color: theme.$notification-warning-icon-color;
   }
 }

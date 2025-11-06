@@ -1,16 +1,10 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 body > footer,
 .page-footer {
   display: flex;
   flex-direction: column;
-
-  @include theming.apply-from-theme(
-    (
-      min-height: theme.$layout-footer-content-block-min-height,
-    )
-  );
+  min-height: theme.$layout-footer-content-block-min-height;
 
   > section,
   > article,
@@ -20,16 +14,11 @@ body > footer,
     width: 100%;
     box-sizing: border-box;
     align-self: center;
-
-    @include theming.apply-from-theme(
-      (
-        gap: theme.$layout-footer-content-block-gap,
-        padding-top: theme.$layout-footer-content-block-padding-top,
-        padding-right: theme.$layout-footer-content-block-padding-right,
-        padding-bottom: theme.$layout-footer-content-block-padding-bottom,
-        padding-left: theme.$layout-footer-content-block-padding-left,
-        max-width: theme.$layout-footer-content-block-max-width,
-      )
-    );
+    gap: theme.$layout-footer-content-block-gap;
+    padding-top: theme.$layout-footer-content-block-padding-top;
+    padding-right: theme.$layout-footer-content-block-padding-right;
+    padding-bottom: theme.$layout-footer-content-block-padding-bottom;
+    padding-left: theme.$layout-footer-content-block-padding-left;
+    max-width: theme.$layout-footer-content-block-max-width;
   }
 }

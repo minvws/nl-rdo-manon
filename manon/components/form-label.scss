@@ -1,13 +1,8 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 form label {
-  @include theming.apply-from-theme(
-    (
-      font-family: theme.$form-label-font-family,
-      font-size: theme.$form-label-font-size,
-      font-weight: theme.$form-label-font-weight,
-      color: theme.$form-label-text-color,
-    )
-  );
+  font-family: theme.$form-label-font-family;
+  font-size: theme.$form-label-font-size;
+  font-weight: theme.$form-label-font-weight;
+  color: theme.$form-label-text-color;
 }
