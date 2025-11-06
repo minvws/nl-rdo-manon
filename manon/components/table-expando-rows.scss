@@ -12,6 +12,7 @@ table {
     border-width: theme.$expando-rows-border-width;
     border-style: theme.$expando-rows-border-style;
     border-color: theme.$expando-rows-border-color;
+    filter: unset;
 
     td {
       position: relative;
@@ -21,6 +22,14 @@ table {
       @media (width >= $breakpoint) {
         padding: theme.$expando-rows-table-cell-after-breakpoint-padding;
       }
+    }
+
+    .expando-row-content {
+      display: flex;
+      flex-direction: column;
+      gap: theme.$expando-rows-content-gap;
+      background-color: theme.$expando-rows-content-background-color;
+      padding: theme.$expando-rows-content-padding;
     }
   }
 }
@@ -36,8 +45,8 @@ table {
 .expanded-row {
   background-color: theme.$expando-rows-row-background-color;
   font-weight: theme.$expando-rows-row-font-weight;
+  filter: unset;
 
-  /* Zebra striping with opacity to keep background color. e.g for warnings or errors */
   &:nth-child(even):not(.odd),
   &:nth-child(odd).even {
     background-color: theme.$expando-rows-row-striping-background-color;
