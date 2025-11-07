@@ -392,6 +392,16 @@ and spacing sets */
   $checkbox-label-focus-outline: 2px solid color-scheme.$oc-blue-8,
   $form-fieldset-checkbox-margin: 0 0 0.5rem,
 
+  // form select field
+  $form-select-font-size: body-text.$body-text-m,
+  $form-select-color: color-scheme.$oc-gray-9,
+  $form-select-min-width: 15rem,
+  $form-select-max-width: 100%,
+  $form-select-min-height: spacing.$spacing-300,
+  $form-select-border: 1px solid color-scheme.$oc-gray-4,
+  $form-select-border-radius: spacing.$spacing-050,
+  $form-select-padding: spacing.$spacing-075 spacing.$spacing-100,
+
   // filter
   $filter-icon-color: semantic.$color-brand-primary-default,
   $filter-icon-mask: icons.$filter,

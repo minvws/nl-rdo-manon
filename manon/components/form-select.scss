@@ -2,6 +2,14 @@
 
 form {
   select {
+    font-size: theme.$form-select-font-size;
+    color: theme.$form-select-color;
     width: theme.$form-select-width;
+    min-width: theme.$form-select-min-width;
+    max-width: theme.$form-select-max-width;
+    min-height: theme.$form-select-min-height;
+    border: theme.$form-select-border;
+    border-radius: theme.$form-select-border-radius;
+    padding: theme.$form-select-padding;
   }
 }
