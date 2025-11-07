@@ -17,6 +17,10 @@
 *:has(> .image-background) {
   position: relative;
   z-index: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: theme.$image-background-elements-padding;
 }
 
 .image-background {
