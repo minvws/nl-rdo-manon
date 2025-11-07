@@ -745,7 +745,7 @@ and spacing sets */
   $language-selector-list-max-width: 250px,
   $language-selector-list-item-border-width: 0 0 1px 0,
   $language-selector-list-item-border-style: solid,
-  $language-selector-list-item-border-color: #dbdbdb,
+  $language-selector-list-item-border-color: color-scheme.$oc-gray-3,
   $language-selector-list-item-hover-text-color: #000,
   $language-selector-list-item-hover-background-color: #e7f5ff,
   $language-selector-list-item-link-padding: 0 1rem,
