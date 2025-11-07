@@ -392,6 +392,16 @@ and spacing sets */
   $checkbox-label-focus-outline: 2px solid color-scheme.$oc-blue-8,
   $form-fieldset-checkbox-margin: 0 0 0.5rem,
 
+  // form select field
+  $form-select-font-size: body-text.$body-text-m,
+  $form-select-color: color-scheme.$oc-gray-9,
+  $form-select-min-width: 15rem,
+  $form-select-max-width: 100%,
+  $form-select-min-height: spacing.$spacing-300,
+  $form-select-border: 1px solid color-scheme.$oc-gray-4,
+  $form-select-border-radius: spacing.$spacing-050,
+  $form-select-padding: spacing.$spacing-075 spacing.$spacing-100,
+
   // filter
   $filter-icon-color: semantic.$color-brand-primary-default,
   $filter-icon-mask: icons.$filter,
@@ -752,6 +762,9 @@ and spacing sets */
   $table-row-border-style: solid,
   $table-row-border-color: color-scheme.$oc-gray-1,
 
+  // Table body
+  $table-body-head-cell-padding: spacing.$spacing-075 spacing.$spacing-100,
+
   // table caption
   $table-caption-text-align: left,
   $table-caption-padding: spacing.$spacing-100 0,
@@ -767,9 +780,18 @@ and spacing sets */
   // table summary
   $table-summary-max-width: 30rem,
 
-  // Table sortable
+  // table sortable
   $sortable-button-icon-width: 0.8rem,
   $sortable-button-icon-height: 0.8rem,
+
+  //table footer
+  $table-foot-header-padding: spacing.$spacing-075 spacing.$spacing-100,
+
+  // table expando rows
+  $expando-rows-table-cell-padding: 0,
+  $expando-rows-content-gap: spacing.$spacing-150,
+  $expando-rows-row-background-color: color-scheme.$oc-blue-0,
+  $expando-rows-content-padding: spacing.$spacing-050,
 
   // tile
   $tile-background-color: color-scheme.$oc-white,
@@ -797,5 +819,22 @@ and spacing sets */
   $tile-image-cover-margin-bottom: spacing.$spacing-100,
 
   // Login meta
-  $login-meta-gap: spacing.$spacing-050
+  $login-meta-gap: spacing.$spacing-050,
+
+  // Language Selector
+  $language-selector-list-background-color: color-scheme.$oc-white,
+  $language-selector-list-box-shadow: 0px 4px 20px 0px rgb(0 0 0 / 10%),
+  $language-selector-list-max-width: 250px,
+  $language-selector-list-item-border-width: 0 0 1px 0,
+  $language-selector-list-item-border-style: solid,
+  $language-selector-list-item-border-color: color-scheme.$oc-gray-3,
+  $language-selector-list-item-hover-text-color: semantic.$color-text-default,
+  $language-selector-list-item-hover-background-color: color-scheme.$oc-blue-0,
+  $language-selector-list-item-link-padding: 0 1rem,
+  $language-selector-list-item-link-min-height: 3rem,
+  $language-selector-list-item-active-font-weight: bold,
+
+  // image background
+  $image-background-object-position: center,
+  $image-background-elements-padding: spacing.$spacing-150
 );

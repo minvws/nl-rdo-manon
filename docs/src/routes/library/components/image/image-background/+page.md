@@ -23,13 +23,13 @@ SCSS importeren:
 
 ### Voorbeeld: div
 
-<div >
+<div>
   <h2>Lorem ipsum</h2>
   <img src="$img/strand.jpg" alt="Foto van een strand" class="image-background">
 </div>
 
 ```html
-<div class="image-background">
+<div>
   <h2>Lorem ipsum</h2>
   <img src="$img/strand.jpg" alt="Foto van een strand" class="image-background" />
 </div>

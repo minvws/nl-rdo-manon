@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -9,25 +8,15 @@ form {
     padding: 0;
     display: flex;
     flex-direction: row;
-
-    @include theming.apply-from-theme(
-      (
-        gap: theme.$radio-gap,
-        align-items: theme.$radio-align-items,
-      )
-    );
+    gap: theme.$radio-gap;
+    align-items: theme.$radio-align-items;
 
     > div {
       padding: 0;
       display: flex;
       flex-direction: row;
-
-      @include theming.apply-from-theme(
-        (
-          gap: theme.$radio-gap,
-          align-items: theme.$radio-align-items,
-        )
-      );
+      gap: theme.$radio-gap;
+      align-items: theme.$radio-align-items;
     }
 
     p.error,
@@ -56,32 +45,20 @@ form {
 
     input[type="radio"] {
       padding: 0;
-      cursor: pointer;
       margin-left: 0;
       margin-right: 0;
-
-      @include theming.apply-from-theme(
-        (
-          height: theme.$radio-height,
-          accent-color: theme.$radio-accent-color,
-          vertical-align: theme.$radio-vertical-align,
-          cursor: theme.$radio-cursor,
-          width: theme.$radio-width,
-          min-width: theme.$radio-width,
-          align-self: theme.$radio-align-self,
-        )
-      );
+      height: theme.$radio-height;
+      accent-color: theme.$radio-accent-color;
+      vertical-align: theme.$radio-vertical-align;
+      cursor: theme.$radio-cursor;
+      width: theme.$radio-width;
+      min-width: theme.$radio-width;
+      align-self: theme.$radio-align-self;
 
       & + label {
-        width: auto;
         margin-top: 0;
-
-        @include theming.apply-from-theme(
-          (
-            font-weight: theme.$radio-label-font-weight,
-            width: theme.$radio-label-width,
-          )
-        );
+        font-weight: theme.$radio-label-font-weight;
+        width: theme.$radio-label-width;
 
         cursor: pointer;
 
@@ -102,25 +79,15 @@ form {
     &.required {
       flex-direction: column;
       align-items: flex-start;
-
-      @include theming.apply-from-theme(
-        (
-          gap: theme.$radio-required-gap,
-          justify-content: theme.$radio-align-items,
-        )
-      );
+      gap: theme.$radio-required-gap;
+      justify-content: theme.$radio-align-items;
 
       > div {
         padding: 0;
         display: flex;
         flex-direction: row;
-
-        @include theming.apply-from-theme(
-          (
-            gap: theme.$radio-gap,
-            align-items: theme.$radio-align-items,
-          )
-        );
+        gap: theme.$radio-gap;
+        align-items: theme.$radio-align-items;
       }
     }
   }

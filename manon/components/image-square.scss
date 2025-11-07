@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -17,23 +16,13 @@
   width: 100%;
   height: 100%;
   max-width: 100%;
-
-  @include theming.apply-from-theme(
-    (
-      object-position: theme.$image-square-object-position,
-      border-radius: theme.$image-square-border-radius,
-    )
-  );
+  object-position: theme.$image-square-object-position;
+  border-radius: theme.$image-square-border-radius;
 }
 
 .image-square {
   margin: 0;
-
-  @include theming.apply-from-theme(
-    (
-      max-width: theme.$image-square-max-width,
-    )
-  );
+  max-width: theme.$image-square-max-width;
 
   > div {
     @extend %image-square-container;

@@ -17,6 +17,12 @@ Een taalselectie is een dropdown-menu waarmee gebruikers uit een verticale lijst
 @use "@minvws/manon/components/language-selector";
 ```
 
+Javascript importeren:
+
+```javascript
+import "@minvws/manon/js/language-selector";
+```
+
 <h2 id="examples">Voorbeelden:</h2>
 
 ### Voorbeeld: Basis

@@ -1,10 +1,5 @@
 .horizontal-center {
   /* Preventing specificity issues */
   margin: 0 auto;
-
-  @include theming.apply-from-theme(
-    (
-      max-width: theme.$horizontal-centered-max-width,
-    )
-  );
+  max-width: theme.$horizontal-centered-max-width;
 }
