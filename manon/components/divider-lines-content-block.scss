@@ -1,26 +1,14 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 %divider-line {
-  @include theming.apply-from-theme(
-    (
-      border-width: theme.$divider-lines-content-block-border-width,
-      border-style: theme.$divider-lines-content-block-border-style,
-      border-color: theme.$divider-lines-content-block-border-color,
-    )
-  );
+  border-width: theme.$divider-lines-content-block-border-width;
+  border-style: theme.$divider-lines-content-block-border-style;
+  border-color: theme.$divider-lines-content-block-border-color;
 
   &:first-of-type {
-    @include theming.apply-from-theme(
-      (
-        border-width:
-          theme.$divider-lines-content-block-first-of-type-border-width,
-        border-style:
-          theme.$divider-lines-content-block-first-of-type-border-style,
-        border-color:
-          theme.$divider-lines-content-block-first-of-type-border-color,
-      )
-    );
+    border-width: theme.$divider-lines-content-block-first-of-type-border-width;
+    border-style: theme.$divider-lines-content-block-first-of-type-border-style;
+    border-color: theme.$divider-lines-content-block-first-of-type-border-color;
   }
 }
 

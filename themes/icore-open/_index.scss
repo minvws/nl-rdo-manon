@@ -123,6 +123,9 @@ and spacing sets */
   $button-hover-text-color: color-scheme.$oc-white,
   $button-hover-border-color: color-scheme.$oc-blue-7,
 
+  // button container
+  $button-container-flex-direction: row,
+
   // button secondary
   $button-secondary-background-color: color-scheme.$oc-white,
   $button-secondary-text-color: semantic.$color-brand-primary-default,
@@ -155,6 +158,7 @@ and spacing sets */
   $button-to-top-icon-color: color-scheme.$oc-white,
   $button-to-top-icon-width: 1.5rem,
   $button-to-top-icon-height: 1.5rem,
+
   // button cta
   $button-cta-background-color: color-scheme.$oc-blue-9,
   $button-cta-hover-background-color: color-scheme.$oc-blue-8,
@@ -198,7 +202,50 @@ and spacing sets */
 
   // collapsing element
   $collapsing-element-justify-content: space-between,
-  $collapsing-element-align-items: center,
+  $collapsing-element-align-items: flex-start,
+  $collapsing-element-flex-direction: column,
+  $collapsing-element-gap: 0,
+  $collapsing-element-width: auto,
+  $collapsing-element-max-width: 250px,
+  $collapsing-element-z-index: 20,
+  $collapsing-element-padding-top: 0,
+  $collapsing-element-padding-right: 0,
+  $collapsing-element-padding-bottom: 0,
+  $collapsing-element-padding-left: 0,
+  $collapsing-element-border-width: 0,
+  $collapsing-element-border-style: solid,
+  $collapsing-element-border-color: transparent,
+  $collapsing-element-background-color: #fff,
+  $collapsing-element-text-color: semantic.$color-text-default,
+  $collapsing-element-box-shadow: 0px 4px 20px 0px rgb(0 0 0 / 10%),
+  $collapsing-element-top: 100%,
+  $collapsing-element-left: 0,
+  $collapsing-element-right: 0,
+
+  $collapsing-element-list-gap: 0,
+
+  $collapsing-element-list-item-align-items: flex-start,
+  $collapsing-element-list-item-background-color: transparent,
+  $collapsing-element-list-item-text-color: semantic.$color-text-default,
+  $collapsing-element-list-item-border-width: 0 0 1px 0,
+  $collapsing-element-list-item-border-style: solid,
+  $collapsing-element-list-item-border-color: color-scheme.$oc-gray-1,
+
+  $collapsing-element-list-item-min-height: 3rem,
+
+  $collapsing-element-list-item-link-padding-top: 0,
+  $collapsing-element-list-item-link-padding-right: spacing.$spacing-100,
+  $collapsing-element-list-item-link-padding-bottom: 0,
+  $collapsing-element-list-item-link-padding-left: spacing.$spacing-100,
+  $collapsing-element-list-item-link-text-color: semantic.$color-text-default,
+  $collapsing-element-list-item-link-text-decoration: none,
+
+  $collapsing-element-list-item-link-hover-background-color:
+    color-scheme.$oc-blue-0,
+
+  $collapsing-element-list-icon-font-size: spacing.$spacing-100,
+
+  $collapsing-element-list-link-selected-font-weight: bold,
 
   // color picker
   $color-picker-border-radius: border-radii.$border-radius-s,
@@ -695,6 +742,9 @@ and spacing sets */
   $tabs-item-current-font-weight: bold,
   $tabs-item-hover-text-color: color-scheme.$oc-blue-9,
 
+  // tab panel
+  $tab-panel-gap: spacing.$spacing-100,
+
   // set to focus border-width
   $tabs-outline-offset: -2px,
 
@@ -712,6 +762,9 @@ and spacing sets */
   $table-row-border-style: solid,
   $table-row-border-color: color-scheme.$oc-gray-1,
 
+  // Table body
+  $table-body-head-cell-padding: spacing.$spacing-075 spacing.$spacing-100,
+
   // table caption
   $table-caption-text-align: left,
   $table-caption-padding: spacing.$spacing-100 0,
@@ -727,9 +780,18 @@ and spacing sets */
   // table summary
   $table-summary-max-width: 30rem,
 
-  // Table sortable
+  // table sortable
   $sortable-button-icon-width: 0.8rem,
   $sortable-button-icon-height: 0.8rem,
+
+  //table footer
+  $table-foot-header-padding: spacing.$spacing-075 spacing.$spacing-100,
+
+  // table expando rows
+  $expando-rows-table-cell-padding: 0,
+  $expando-rows-content-gap: spacing.$spacing-150,
+  $expando-rows-row-background-color: color-scheme.$oc-blue-0,
+  $expando-rows-content-padding: spacing.$spacing-050,
 
   // tile
   $tile-background-color: color-scheme.$oc-white,
@@ -743,9 +805,20 @@ and spacing sets */
   $tile-border-radius: border-radii.$border-radius-m,
   $tile-text-color: semantic.$color-text-default,
 
-  // tile groups
+  // tile groups (group of tiles)
   $tile-groups-gap: spacing.$spacing-100,
 
+  // tile group (grouping within a tile)
+  $tile-group-margin: spacing.$spacing-050 0 0 0,
+  $tile-group-border-width: 1px 0 0 0,
+  $tile-group-border-style: solid,
+  $tile-group-border-color: color-scheme.$oc-gray-2,
+  $tile-group-padding: spacing.$spacing-100 0 0 0,
+
   // tile image
-  $tile-image-cover-margin-bottom: spacing.$spacing-100
+  $tile-image-cover-margin-bottom: spacing.$spacing-100,
+
+  // image background
+  $image-background-object-position: center,
+  $image-background-elements-padding: spacing.$spacing-150
 );

@@ -1,15 +1,10 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 main {
   > *:nth-child(even) {
-    @include theming.apply-from-theme(
-      (
-        border-width: theme.$divider-striping-top-border-width,
-        border-style: theme.$divider-striping-top-border-style,
-        border-color: theme.$divider-striping-top-border-color,
-        background-color: theme.$divider-striping-top-background-color,
-      )
-    );
+    border-width: theme.$divider-striping-top-border-width;
+    border-style: theme.$divider-striping-top-border-style;
+    border-color: theme.$divider-striping-top-border-color;
+    background-color: theme.$divider-striping-top-background-color;
   }
 }

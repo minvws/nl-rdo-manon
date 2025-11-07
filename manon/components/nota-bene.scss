@@ -1,16 +1,10 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 .nota-bene {
   margin: 0;
-
-  @include theming.apply-from-theme(
-    (
-      line-height: theme.$nota-bene-line-height,
-      font-size: theme.$nota-bene-font-size,
-      font-weight: theme.$nota-bene-font-weight,
-      color: theme.$nota-bene-text-color,
-      background-color: theme.$nota-bene-background-color,
-    )
-  );
+  line-height: theme.$nota-bene-line-height;
+  font-size: theme.$nota-bene-font-size;
+  font-weight: theme.$nota-bene-font-weight;
+  color: theme.$nota-bene-text-color;
+  background-color: theme.$nota-bene-background-color;
 }
