@@ -26,7 +26,7 @@ body > header nav .language-selector,
     position: static;
     padding: 0;
     margin: 0;
-    width: auto;
+    width: 100%;
     box-sizing: border-box;
     border-width: theme.$language-selector-list-border-width;
     border-style: theme.$language-selector-list-border-style;
@@ -38,6 +38,7 @@ body > header nav .language-selector,
     right: theme.$language-selector-list-right;
     left: theme.$language-selector-list-left;
     min-width: theme.$language-selector-list-min-width;
+    max-width: theme.$language-selector-list-max-width;
 
     li {
       list-style: none;
@@ -45,9 +46,13 @@ body > header nav .language-selector,
       display: flex;
       order: 1;
       margin: 0;
-      line-height: 0;
+      min-height: theme.$language-selector-list-item-min-height;
+      border-width: theme.$language-selector-list-item-border-width;
+      border-style: theme.$language-selector-list-item-border-style;
+      border-color: theme.$language-selector-list-item-border-color;
       background-color: theme.$language-selector-list-item-background-color;
       color: theme.$language-selector-list-item-text-color;
+      line-height: 0;
       font-size: theme.$language-selector-list-font-size;
 
       a {
