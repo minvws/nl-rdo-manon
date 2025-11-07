@@ -24,7 +24,7 @@ SCSS importeren:
 
 <h2 id="examples">Voorbeelden</h2>
 
-Het toevoegen van de `inline` class zorgt ervoor dat de standaard opmaak van het formulier wordt genegeerd, waardoor de knop eruitziet alsof deze niet door een formulier wordt omgeven.
+Het toevoegen van de `inline` class zorgt ervoor dat de standaard opmaak van het formulier kan worden overschreven. Zo kan een formulier gemaakt worden waarbij alleen de inhoud zichtbaar is en bijvoorbeeld padding en achtergrondkleur uitgezet zijn.
 
 ### Voorbeeld: inline formulier
 
