@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 /* color input */
@@ -17,12 +16,7 @@ form {
       padding: 0;
       -webkit-appearance: none;
       border: none;
-
-      @include theming.apply-from-theme(
-        (
-          border-radius: theme.$color-picker-border-radius,
-        )
-      );
+      border-radius: theme.$color-picker-border-radius;
 
       &::-webkit-color-swatch-wrapper {
         padding: 0;

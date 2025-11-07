@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 .language-selector,
@@ -13,24 +12,14 @@ body > header nav .language-selector,
   width: auto;
   position: relative;
   margin: unset;
-
-  @include theming.apply-from-theme(
-    (
-      font-size: theme.$language-selector-list-label-font-size,
-      gap: theme.$language-selector-list-label-gap,
-      color: theme.$language-selector-list-label-text-color,
-      max-width: theme.$language-selector-list-label-max-width,
-    )
-  );
+  font-size: theme.$language-selector-list-label-font-size;
+  gap: theme.$language-selector-list-label-gap;
+  color: theme.$language-selector-list-label-text-color;
+  max-width: theme.$language-selector-list-label-max-width;
 
   > p {
     white-space: nowrap;
-
-    @include theming.apply-from-theme(
-      (
-        font-size: theme.$language-selector-list-label-font-size,
-      )
-    );
+    font-size: theme.$language-selector-list-label-font-size;
   }
 
   ul {
@@ -61,14 +50,10 @@ body > header nav .language-selector,
       border-width: theme.$language-selector-list-item-border-width;
       border-style: theme.$language-selector-list-item-border-style;
       border-color: theme.$language-selector-list-item-border-color;
-
-      @include theming.apply-from-theme(
-        (
-          background-color: theme.$language-selector-list-item-background-color,
-          color: theme.$language-selector-list-item-text-color,
-          font-size: theme.$language-selector-list-font-size,
-        )
-      );
+      background-color: theme.$language-selector-list-item-background-color;
+      color: theme.$language-selector-list-item-text-color;
+      line-height: 0;
+      font-size: theme.$language-selector-list-font-size;
 
       a {
         display: flex;
@@ -82,33 +67,20 @@ body > header nav .language-selector,
         box-sizing: border-box;
         text-overflow: ellipsis;
         overflow: hidden;
-
-        @include theming.apply-from-theme(
-          (
-            padding: theme.$language-selector-list-item-link-padding,
-            border-top-width:
-              theme.$language-selector-list-item-link-border-width,
-            border-top-style:
-              theme.$language-selector-list-item-link-border-style,
-            border-top-color:
-              theme.$language-selector-list-item-link-border-color,
-            line-height: theme.$language-selector-list-item-link-line-height,
-            white-space: theme.$language-selector-list-item-link-white-space,
-            min-height: theme.$language-selector-list-item-link-min-height,
-            height: theme.$language-selector-list-item-link-height,
-          )
-        );
+        padding: theme.$language-selector-list-item-link-padding;
+        border-top-width: theme.$language-selector-list-item-link-border-width;
+        border-top-style: theme.$language-selector-list-item-link-border-style;
+        border-top-color: theme.$language-selector-list-item-link-border-color;
+        line-height: theme.$language-selector-list-item-link-line-height;
+        white-space: theme.$language-selector-list-item-link-white-space;
+        min-height: theme.$language-selector-list-item-link-min-height;
+        height: theme.$language-selector-list-item-link-height;
 
         &:hover {
-          @include theming.apply-from-theme(
-            (
-              background-color:
-                theme.$language-selector-list-item-hover-background-color,
-              color: theme.$language-selector-list-item-hover-text-color,
-              font-size: theme.$language-selector-list-item-hover-font-size,
-              font-weight: theme.$language-selector-list-item-hover-font-weight,
-            )
-          );
+          background-color: theme.$language-selector-list-item-hover-background-color;
+          color: theme.$language-selector-list-item-hover-text-color;
+          font-size: theme.$language-selector-list-item-hover-font-size;
+          font-weight: theme.$language-selector-list-item-hover-font-weight;
         }
 
         > button {
@@ -119,12 +91,7 @@ body > header nav .language-selector,
           text-align: left;
           align-items: center;
           justify-content: flex-start;
-
-          @include theming.apply-from-theme(
-            (
-              font-weight: theme.$language-selector-list-button-font-weight,
-            )
-          );
+          font-weight: theme.$language-selector-list-button-font-weight;
         }
       }
 
@@ -133,15 +100,10 @@ body > header nav .language-selector,
       }
 
       &:hover {
-        @include theming.apply-from-theme(
-          (
-            background-color:
-              theme.$language-selector-list-item-hover-background-color,
-            color: theme.$language-selector-list-item-hover-text-color,
-            font-size: theme.$language-selector-list-item-hover-font-size,
-            font-weight: theme.$language-selector-list-item-hover-font-weight,
-          )
-        );
+        background-color: theme.$language-selector-list-item-hover-background-color;
+        color: theme.$language-selector-list-item-hover-text-color;
+        font-size: theme.$language-selector-list-item-hover-font-size;
+        font-weight: theme.$language-selector-list-item-hover-font-weight;
       }
 
       /* Selected language */
@@ -149,16 +111,10 @@ body > header nav .language-selector,
         order: 0;
         cursor: pointer;
         font-family: inherit;
-
-        @include theming.apply-from-theme(
-          (
-            background-color:
-              theme.$language-selector-list-item-active-background-color,
-            color: theme.$language-selector-list-item-active-text-color,
-            font-size: theme.$language-selector-list-item-active-font-size,
-            font-weight: theme.$language-selector-list-item-active-font-weight,
-          )
-        );
+        background-color: theme.$language-selector-list-item-active-background-color;
+        color: theme.$language-selector-list-item-active-text-color;
+        font-size: theme.$language-selector-list-item-active-font-size;
+        font-weight: theme.$language-selector-list-item-active-font-weight;
       }
     }
   }
@@ -206,59 +162,41 @@ body > header nav .language-selector,
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
-
-      @include theming.apply-from-theme(
-        (
-          background-color:
-            theme.$language-selector-list-button-background-color,
-          color: theme.$language-selector-list-button-text-color,
-          font-size: theme.$language-selector-list-button-font-size,
-          font-weight: theme.$language-selector-list-button-font-weight,
-          line-height: theme.$language-selector-list-button-line-height,
-          padding-top: theme.$language-selector-list-button-padding-top,
-          padding-right: theme.$language-selector-list-button-padding-right,
-          padding-bottom: theme.$language-selector-list-button-padding-bottom,
-          padding-left: theme.$language-selector-list-button-padding-left,
-          border-width: theme.$language-selector-list-button-border-width,
-          border-style: theme.$language-selector-list-button-border-style,
-          border-color: theme.$language-selector-list-button-border-color,
-          min-height: theme.$language-selector-list-button-min-height,
-          width: theme.$language-selector-list-button-width,
-          min-width: theme.$language-selector-list-button-min-width,
-          max-width: theme.$language-selector-list-button-max-width,
-        )
-      );
+      background-color: theme.$language-selector-list-button-background-color;
+      color: theme.$language-selector-list-button-text-color;
+      font-size: theme.$language-selector-list-button-font-size;
+      font-weight: theme.$language-selector-list-button-font-weight;
+      line-height: theme.$language-selector-list-button-line-height;
+      padding-top: theme.$language-selector-list-button-padding-top;
+      padding-right: theme.$language-selector-list-button-padding-right;
+      padding-bottom: theme.$language-selector-list-button-padding-bottom;
+      padding-left: theme.$language-selector-list-button-padding-left;
+      border-width: theme.$language-selector-list-button-border-width;
+      border-style: theme.$language-selector-list-button-border-style;
+      border-color: theme.$language-selector-list-button-border-color;
+      min-height: theme.$language-selector-list-button-min-height;
+      width: theme.$language-selector-list-button-width;
+      min-width: theme.$language-selector-list-button-min-width;
+      max-width: theme.$language-selector-list-button-max-width;
 
       &::after {
-        @include theming.apply-from-theme(
-          (
-            content: theme.$language-selector-list-button-icon,
-            font-family: theme.$language-selector-list-button-icon-font-family,
-            margin-left: theme.$language-selector-list-button-icon-margin-left,
-            font-size: theme.$language-selector-list-button-icon-font-size,
-            color: theme.$language-selector-list-button-icon-text-color,
-          )
-        );
+        content: theme.$language-selector-list-button-icon;
+        font-family: theme.$language-selector-list-button-icon-font-family;
+        margin-left: theme.$language-selector-list-button-icon-margin-left;
+        font-size: theme.$language-selector-list-button-icon-font-size;
+        color: theme.$language-selector-list-button-icon-text-color;
       }
     }
 
     &[aria-expanded="true"] > button {
       &::after {
-        @include theming.apply-from-theme(
-          (
-            content: theme.$language-selector-list-closed-button-icon,
-          )
-        );
+        content: theme.$language-selector-list-closed-button-icon;
       }
     }
 
     &[aria-expanded="false"] > button {
       &::after {
-        @include theming.apply-from-theme(
-          (
-            content: theme.$language-selector-list-open-button-icon,
-          )
-        );
+        content: theme.$language-selector-list-open-button-icon;
       }
     }
   }

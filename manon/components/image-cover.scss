@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -8,13 +7,8 @@
   max-width: 100%;
   padding: 0; /* Resetting padding */
   height: 100%;
-
-  @include theming.apply-from-theme(
-    (
-      object-position: theme.$image-cover-object-position,
-      max-height: theme.$image-cover-max-height,
-    )
-  );
+  object-position: theme.$image-cover-object-position;
+  max-height: theme.$image-cover-max-height;
 }
 
 .image-cover {

@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 .login-meta {
@@ -8,18 +7,13 @@
   flex-grow: 1;
   margin: 0;
   box-sizing: border-box;
-
-  @include theming.apply-from-theme(
-    (
-      flex-direction: theme.$login-meta-flex-direction,
-      justify-content: theme.$login-meta-justify-content,
-      padding-top: theme.$login-meta-padding-top,
-      padding-right: theme.$login-meta-padding-right,
-      padding-bottom: theme.$login-meta-padding-bottom,
-      padding-left: theme.$login-meta-padding-left,
-      gap: theme.$login-meta-gap,
-      background-color: theme.$login-meta-background-color,
-      color: theme.$login-meta-text-color,
-    )
-  );
+  flex-direction: theme.$login-meta-flex-direction;
+  justify-content: theme.$login-meta-justify-content;
+  padding-top: theme.$login-meta-padding-top;
+  padding-right: theme.$login-meta-padding-right;
+  padding-bottom: theme.$login-meta-padding-bottom;
+  padding-left: theme.$login-meta-padding-left;
+  gap: theme.$login-meta-gap;
+  background-color: theme.$login-meta-background-color;
+  color: theme.$login-meta-text-color;
 }

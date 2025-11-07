@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 p,
@@ -14,24 +13,15 @@ span {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-
-    @include theming.apply-from-theme(
-      (
-        width: theme.$notification-paragraph-width,
-        padding-top: theme.$notification-paragraph-padding-top,
-        padding-right: theme.$notification-paragraph-padding-right,
-        padding-bottom: theme.$notification-paragraph-padding-bottom,
-        padding-left: theme.$notification-paragraph-padding-left,
-        gap: theme.$notification-paragraph-gap,
-      )
-    );
+    width: theme.$notification-paragraph-width;
+    padding-top: theme.$notification-paragraph-padding-top;
+    padding-right: theme.$notification-paragraph-padding-right;
+    padding-bottom: theme.$notification-paragraph-padding-bottom;
+    padding-left: theme.$notification-paragraph-padding-left;
+    gap: theme.$notification-paragraph-gap;
 
     > .notification-type {
-      @include theming.apply-from-theme(
-        (
-          font-weight: theme.$notification-paragraph-span-font-weight,
-        )
-      );
+      font-weight: theme.$notification-paragraph-span-font-weight;
     }
   }
 }

@@ -1,10 +1,25 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 %logo-styling {
   align-self: theme.$logo-align-self;
   background-color: theme.$logo-background-color;
   border: 0;
+  display: theme.$logo-display;
+  flex-direction: theme.$logo-flex-direction;
+  justify-content: theme.$logo-justify-content;
+  align-items: theme.$logo-align-items;
+  white-space: theme.$logo-white-space;
+  gap: theme.$logo-gap;
+  width: theme.$logo-width;
+  height: theme.$logo-height;
+  margin: theme.$logo-margin;
+  font-size: theme.$logo-font-size;
+  font-weight: theme.$logo-font-weight;
+  font-family: theme.$logo-font-family;
+  color: theme.$logo-text-color;
+  text-decoration: theme.$logo-text-decoration;
+  border-radius: theme.$logo-border-radius;
+  padding: theme.$logo-padding;
 
   @if theme.$logo-align-self or
     theme.$logo-align-items or
@@ -14,51 +29,20 @@
     display: flex;
   }
 
-  @include theming.apply-from-theme(
-    (
-      display: theme.$logo-display,
-      flex-direction: theme.$logo-flex-direction,
-      justify-content: theme.$logo-justify-content,
-      align-items: theme.$logo-align-items,
-      white-space: theme.$logo-white-space,
-      gap: theme.$logo-gap,
-
-      width: theme.$logo-width,
-      height: theme.$logo-height,
-
-      margin: theme.$logo-margin,
-
-      font-size: theme.$logo-font-size,
-      font-weight: theme.$logo-font-weight,
-      font-family: theme.$logo-font-family,
-      color: theme.$logo-text-color,
-      text-decoration: theme.$logo-text-decoration,
-
-      border-radius: theme.$logo-border-radius,
-      padding: theme.$logo-padding,
-    )
-  );
-
   img {
     box-sizing: border-box;
     height: theme.$logo-img-height;
     min-height: theme.$logo-img-height;
     max-height: theme.$logo-img-height;
-
     width: theme.$logo-img-width;
     min-width: theme.$logo-img-width;
     max-width: theme.$logo-img-width;
     margin: theme.$logo-img-margin;
-
-    @include theming.apply-from-theme(
-      (
-        border-radius: theme.$logo-img-border-radius,
-        object-position: theme.$logo-img-object-position,
-        object-fit: theme.$logo-img-object-fit,
-        padding: theme.$logo-img-padding,
-        background-color: theme.$logo-img-background-color,
-      )
-    );
+    border-radius: theme.$logo-img-border-radius;
+    object-position: theme.$logo-img-object-position;
+    object-fit: theme.$logo-img-object-fit;
+    padding: theme.$logo-img-padding;
+    background-color: theme.$logo-img-background-color;
   }
 }
 
