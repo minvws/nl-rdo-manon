@@ -346,7 +346,7 @@ and spacing sets */
   $form-fieldset-checkbox-margin: 0 0 0.5rem,
 
   // form select field
-  $form-select-font-size: 1rem,
+  $form-select-font-size: body-text.$body-text-m,
   $form-select-color: color-scheme.$oc-gray-9,
   $form-select-min-width: 15rem,
   $form-select-max-width: 100%,
