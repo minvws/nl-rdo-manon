@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 h1,
@@ -12,84 +11,60 @@ h6 {
 
 h1,
 h1 > a {
-  @include theming.apply-from-theme(
-    (
-      font-family: theme.$h1-font-family,
-      font-size: theme.$h1-font-size,
-      color: theme.$h1-text-color,
-      font-weight: theme.$h1-font-weight,
-      line-height: theme.$h1-line-height,
-      margin: theme.$h1-margin,
-    )
-  );
+  font-family: theme.$h1-font-family;
+  font-size: theme.$h1-font-size;
+  color: theme.$h1-text-color;
+  font-weight: theme.$h1-font-weight;
+  line-height: theme.$h1-line-height;
+  margin: theme.$h1-margin;
 }
 
 h2,
 h2 > a {
-  @include theming.apply-from-theme(
-    (
-      font-family: theme.$h2-font-family,
-      font-size: theme.$h2-font-size,
-      color: theme.$h2-text-color,
-      font-weight: theme.$h2-font-weight,
-      line-height: theme.$h2-line-height,
-      margin: theme.$h2-margin,
-    )
-  );
+  font-family: theme.$h2-font-family;
+  font-size: theme.$h2-font-size;
+  color: theme.$h2-text-color;
+  font-weight: theme.$h2-font-weight;
+  line-height: theme.$h2-line-height;
+  margin: theme.$h2-margin;
 }
 
 h3,
 h3 > a {
-  @include theming.apply-from-theme(
-    (
-      font-family: theme.$h3-font-family,
-      font-size: theme.$h3-font-size,
-      color: theme.$h3-text-color,
-      font-weight: theme.$h3-font-weight,
-      line-height: theme.$h3-line-height,
-      margin: theme.$h3-margin,
-    )
-  );
+  font-family: theme.$h3-font-family;
+  font-size: theme.$h3-font-size;
+  color: theme.$h3-text-color;
+  font-weight: theme.$h3-font-weight;
+  line-height: theme.$h3-line-height;
+  margin: theme.$h3-margin;
 }
 
 h4,
 h4 > a {
-  @include theming.apply-from-theme(
-    (
-      font-family: theme.$h4-font-family,
-      font-size: theme.$h4-font-size,
-      color: theme.$h4-text-color,
-      font-weight: theme.$h4-font-weight,
-      line-height: theme.$h4-line-height,
-      margin: theme.$h4-margin,
-    )
-  );
+  font-family: theme.$h4-font-family;
+  font-size: theme.$h4-font-size;
+  color: theme.$h4-text-color;
+  font-weight: theme.$h4-font-weight;
+  line-height: theme.$h4-line-height;
+  margin: theme.$h4-margin;
 }
 
 h5,
 h5 > a {
-  @include theming.apply-from-theme(
-    (
-      font-family: theme.$h5-font-family,
-      font-size: theme.$h5-font-size,
-      color: theme.$h5-text-color,
-      font-weight: theme.$h5-font-weight,
-      line-height: theme.$h5-line-height,
-      margin: theme.$h5-margin,
-    )
-  );
+  font-family: theme.$h5-font-family;
+  font-size: theme.$h5-font-size;
+  color: theme.$h5-text-color;
+  font-weight: theme.$h5-font-weight;
+  line-height: theme.$h5-line-height;
+  margin: theme.$h5-margin;
 }
 
 h6,
 h6 > a {
-  @include theming.apply-from-theme(
-    (
-      font-family: theme.$h6-font-family,
-      font-size: theme.$h6-font-size,
-      color: theme.$h6-text-color,
-      font-weight: theme.$h6-font-weight,
-      line-height: theme.$h6-line-height,
-      margin: theme.$h6-margin,
-    )
-  );
+  font-family: theme.$h6-font-family;
+  font-size: theme.$h6-font-size;
+  color: theme.$h6-text-color;
+  font-weight: theme.$h6-font-weight;
+  line-height: theme.$h6-line-height;
+  margin: theme.$h6-margin;
 }

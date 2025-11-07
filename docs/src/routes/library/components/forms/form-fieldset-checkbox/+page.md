@@ -14,8 +14,8 @@ Een fieldset met selectievakken maakt het mogelijk om meerdere opties tegelijk t
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/checkbox";
-@use "@minvws/manon/form-fieldset-checkbox";
+@use "@minvws/manon/components/checkbox";
+@use "@minvws/manon/components/form-fieldset-checkbox";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

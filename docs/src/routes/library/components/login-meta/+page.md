@@ -14,7 +14,7 @@ nav:
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/login-meta";
+@use "@minvws/manon/components/login-meta";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

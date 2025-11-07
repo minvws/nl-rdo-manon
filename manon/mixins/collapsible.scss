@@ -1,4 +1,3 @@
-@use "theming";
 @use "../variables" as theme;
 
 @mixin collapsible {
@@ -12,17 +11,20 @@
     gap: 0;
     margin: 0;
     position: relative;
-
-    @include theming.apply-from-theme(
-      (
-        width: theme.$collapsible-width,
-        max-width: theme.$collapsible-max-width,
-      )
-    );
+    width: theme.$collapsible-width;
+    max-width: theme.$collapsible-max-width;
 
     button.collapsible-toggle {
       display: flex;
       max-height: 100%;
+
+      /* Let the icon’s height matches the button text height, 
+      and its width adjusts automatically to maintain the correct aspect ratio. 
+      */
+      .icon {
+        height: 100%;
+        width: auto;
+      }
 
       + .collapsing-element {
         display: flex;

@@ -70,13 +70,26 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   var buttonCloseLabel = collapsibleElement.dataset.buttonCloseLabel;
   var openLabel = collapsibleElement.dataset.openLabel || "Menu";
   var closeLabel = collapsibleElement.dataset.closeLabel || "Sluit menu";
-  var buttonClasses = collapsibleElement.dataset.buttonClasses || "";
+  var buttonDataClasses = collapsibleElement.dataset.buttonClasses || "";
+
+  // button classes includes icon classes, seperate class list for icon span.
+  const iconClasses = buttonDataClasses
+    .split(/\s+/)
+    .filter((c) => c === "icon" || c.startsWith("icon-"))
+    .join(" ");
+
+  const buttonClasses = buttonDataClasses
+    .split(/\s+/)
+    .filter((c) => c !== "icon" && !c.startsWith("icon-"))
+    .join(" ");
 
   // Create button HTML element with classes and content
   var button = document.createElement("button");
   button.type = "button";
   button.className = "collapsible-toggle " + buttonClasses;
-  button.innerText = buttonOpenLabel || openLabel;
+
+  var buttonTextNode = document.createTextNode(buttonOpenLabel || openLabel);
+  button.appendChild(buttonTextNode);
 
   // Configure button aria attributes
   button.setAttribute("aria-controls", collapsingElement.id);
@@ -88,9 +101,16 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   label.innerText = openLabel;
   label.className = "visually-hidden";
   ensureElementHasId(label);
-
   button.appendChild(label);
   button.setAttribute("aria-labelledby", label.id);
+
+  // Add <span> for icon when set
+  if (iconClasses) {
+    var iconSpan = document.createElement("span");
+    iconSpan.className = iconClasses;
+    iconSpan.setAttribute("aria-hidden", "true");
+    button.appendChild(iconSpan);
+  }
 
   /**
    * @param {boolean} expanded
@@ -98,7 +118,7 @@ function createMenuButton(collapsibleElement, collapsingElement) {
   function setExpanded(expanded) {
     if (expanded !== (button.getAttribute("aria-expanded") === "true")) {
       button.setAttribute("aria-expanded", String(expanded));
-      button.innerText = expanded
+      buttonTextNode.nodeValue = expanded
         ? buttonCloseLabel || closeLabel
         : buttonOpenLabel || openLabel;
       label.innerText = expanded ? closeLabel : openLabel;

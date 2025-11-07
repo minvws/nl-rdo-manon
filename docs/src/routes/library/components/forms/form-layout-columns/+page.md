@@ -14,7 +14,7 @@ Voor het weergeven van de inhoud van het formulier in kolommen.
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/form";
+@use "@minvws/manon/components/form";
 ```
 
 <p class="warning">

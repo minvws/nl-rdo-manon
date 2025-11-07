@@ -17,9 +17,9 @@ knoptekst toe voor gebruikers die gebruik maken van hulptechnologiën.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/button";
-@use "@minvws/manon/icon";
-@use "@minvws/manon/button-icon-only";
+@use "@minvws/manon/components/button";
+@use "@minvws/manon/components/icon";
+@use "@minvws/manon/components/button-icon-only";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

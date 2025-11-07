@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 p.system,
@@ -7,32 +6,19 @@ section.system,
 div.system {
   max-width: 100%;
   width: 100%;
+  background-color: theme.$notification-system-message-background-color;
+  color: theme.$notification-system-message-text-color;
 
-  @include theming.apply-from-theme(
-    (
-      background-color: theme.$notification-system-message-background-color,
-      color: theme.$notification-system-message-text-color,
-    )
-  );
-
-  span:first-of-type {
-    @include theming.apply-from-theme(
-      (
-        font-weight: theme.$notification-system-message-span-font-weight,
-      )
-    );
+  .notification-type {
+    font-weight: theme.$notification-system-message-span-font-weight;
   }
 
   &::before {
-    @include theming.apply-from-theme(
-      (
-        font-family: theme.$notification-system-message-icon-font-family,
-        font-size: theme.$notification-system-message-icon-font-size,
-        padding-right: theme.$notification-system-message-icon-padding-right,
-        padding-left: theme.$notification-system-message-icon-padding-left,
-        color: theme.$notification-system-message-icon-text-color,
-        margin-right: theme.$notification-system-message-icon-margin-right,
-      )
-    );
+    font-family: theme.$notification-system-message-icon-font-family;
+    font-size: theme.$notification-system-message-icon-font-size;
+    padding-right: theme.$notification-system-message-icon-padding-right;
+    padding-left: theme.$notification-system-message-icon-padding-left;
+    color: theme.$notification-system-message-icon-text-color;
+    margin-right: theme.$notification-system-message-icon-margin-right;
   }
 }

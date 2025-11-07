@@ -16,7 +16,7 @@ Opvallende weergave voor knoppen die een destructieve actie initiëren.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/button-destructive";
+@use "@minvws/manon/components/button-destructive";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

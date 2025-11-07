@@ -1,86 +1,61 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 %heading-xxl,
 .heading-xxl {
-  @include theming.apply-from-theme(
-    (
-      font-family: theme.$heading-xxl-font-family,
-      font-size: theme.$heading-xxl-font-size,
-      font-weight: theme.$heading-xxl-font-weight,
-      line-height: theme.$heading-xxl-line-height,
-      color: theme.$heading-xxl-text-color,
-      margin: theme.$heading-xxl-margin,
-    )
-  );
+  font-family: theme.$heading-xxl-font-family;
+  font-size: theme.$heading-xxl-font-size;
+  font-weight: theme.$heading-xxl-font-weight;
+  line-height: theme.$heading-xxl-line-height;
+  color: theme.$heading-xxl-text-color;
+  margin: theme.$heading-xxl-margin;
 }
 
 %heading-xl,
 .heading-xl {
-  @include theming.apply-from-theme(
-    (
-      font-family: theme.$heading-xl-font-family,
-      font-size: theme.$heading-xl-font-size,
-      font-weight: theme.$heading-xl-font-weight,
-      line-height: theme.$heading-xl-line-height,
-      color: theme.$heading-xl-text-color,
-      margin: theme.$heading-xl-margin,
-    )
-  );
+  font-family: theme.$heading-xl-font-family;
+  font-size: theme.$heading-xl-font-size;
+  font-weight: theme.$heading-xl-font-weight;
+  line-height: theme.$heading-xl-line-height;
+  color: theme.$heading-xl-text-color;
+  margin: theme.$heading-xl-margin;
 }
 
 %heading-large,
 .heading-large {
-  @include theming.apply-from-theme(
-    (
-      font-family: theme.$heading-large-font-family,
-      font-size: theme.$heading-large-font-size,
-      font-weight: theme.$heading-large-font-weight,
-      line-height: theme.$heading-large-line-height,
-      color: theme.$heading-large-text-color,
-      margin: theme.$heading-large-margin,
-    )
-  );
+  font-family: theme.$heading-large-font-family;
+  font-size: theme.$heading-large-font-size;
+  font-weight: theme.$heading-large-font-weight;
+  line-height: theme.$heading-large-line-height;
+  color: theme.$heading-large-text-color;
+  margin: theme.$heading-large-margin;
 }
 
 %heading-normal,
 .heading-normal {
-  @include theming.apply-from-theme(
-    (
-      font-family: theme.$heading-normal-font-family,
-      font-size: theme.$heading-normal-font-size,
-      font-weight: theme.$heading-normal-font-weight,
-      line-height: theme.$heading-normal-line-height,
-      color: theme.$heading-normal-text-color,
-      margin: theme.$heading-normal-margin,
-    )
-  );
+  font-family: theme.$heading-normal-font-family;
+  font-size: theme.$heading-normal-font-size;
+  font-weight: theme.$heading-normal-font-weight;
+  line-height: theme.$heading-normal-line-height;
+  color: theme.$heading-normal-text-color;
+  margin: theme.$heading-normal-margin;
 }
 
 %heading-small,
 .heading-small {
-  @include theming.apply-from-theme(
-    (
-      font-family: theme.$heading-small-font-family,
-      font-size: theme.$heading-small-font-size,
-      font-weight: theme.$heading-small-font-weight,
-      line-height: theme.$heading-small-line-height,
-      color: theme.$heading-small-text-color,
-      margin: theme.$heading-small-margin,
-    )
-  );
+  font-family: theme.$heading-small-font-family;
+  font-size: theme.$heading-small-font-size;
+  font-weight: theme.$heading-small-font-weight;
+  line-height: theme.$heading-small-line-height;
+  color: theme.$heading-small-text-color;
+  margin: theme.$heading-small-margin;
 }
 
 %heading-xs,
 .heading-xs {
-  @include theming.apply-from-theme(
-    (
-      font-family: theme.$heading-xs-font-family,
-      font-size: theme.$heading-xs-font-size,
-      font-weight: theme.$heading-xs-font-weight,
-      line-height: theme.$heading-xs-line-height,
-      color: theme.$heading-xs-text-color,
-      margin: theme.$heading-xs-margin,
-    )
-  );
+  font-family: theme.$heading-xs-font-family;
+  font-size: theme.$heading-xs-font-size;
+  font-weight: theme.$heading-xs-font-weight;
+  line-height: theme.$heading-xs-line-height;
+  color: theme.$heading-xs-text-color;
+  margin: theme.$heading-xs-margin;
 }

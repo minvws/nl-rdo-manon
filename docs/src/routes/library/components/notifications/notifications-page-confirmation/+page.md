@@ -1,18 +1,33 @@
 ---
 title: Pagina-notificatie bevestiging voorbeeld
 breadcrumb: Pagina-notificatie bevestiging voorbeeld
+nav:
+  - Introductie: "#introduction"
+  - Snelstart: "#quickstart"
+  - Voorbeelden: "#examples"
 ---
 
-<section class="confirmation" role="group" aria-label="bevestiging">
+<section class="confirmation">
   <div>
-    <span>Bevestiging:</span>
+    <span class="notification-type">
+      <span class="icon icon-check" aria-hidden="true"></span>
+      Bevestiging
+    </span>
     <p>Lorem ipsum dolor sit amet.</p>
   </div>
 </section>
 
-<h1 id="introduction">Pagina-notificatie bevestiging voorbeeld</h1>
+<h2 id="introduction">Pagina-notificatie bevestiging voorbeeld</h2>
 
 Voor het weergeven van notificaties op paginaniveau.
+
+<h2 id="quickstart">Snelstart</h2>
+
+SCSS importeren:
+
+```scss
+@use "@minvws/manon/components/notification-confirmation-page";
+```
 
 <h2 id="examples">Voorbeelden</h2>
 
@@ -25,21 +40,12 @@ Voor het voorbeeld zie bovenaan deze pagina.
 #### `section`
 
 ```html
-<p class="confirmation" role="group" aria-label="bevestiging">
-  <span>Bevestiging:</span> Lorem ipsum dolor sit.
+<p class="confirmation">
+  <span class="notification-type">
+    <span class="icon icon-check" aria-hidden="true"></span>
+    Bevestiging
+  </span>
+
+  Lorem ipsum dolor sit.
 </p>
-```
-
-<h2 id="requirements">Bijbehorende bestanden</h2>
-
-Voor meer informatie over importeren en instellen van componenten. Zie:
-[Componenten gebruiken en styling toevoegen](/getting-started/installation)
-
-### Importeer component via npm
-
-#### CSS-voorbeeld:
-
-```css
-@use "@minvws/manon/notification";
-@use "@minvws/manon/notification-confirmation-page";
 ```

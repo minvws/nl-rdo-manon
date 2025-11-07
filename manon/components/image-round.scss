@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -18,22 +17,12 @@
   width: 100%;
   height: 100%;
   max-width: 100%;
-
-  @include theming.apply-from-theme(
-    (
-      object-position: theme.$image-round-object-position,
-    )
-  );
+  object-position: theme.$image-round-object-position;
 }
 
 .image-round {
   margin: 0;
-
-  @include theming.apply-from-theme(
-    (
-      max-width: theme.$image-round-max-width,
-    )
-  );
+  max-width: theme.$image-round-max-width;
 
   > div {
     @extend %image-round-container;

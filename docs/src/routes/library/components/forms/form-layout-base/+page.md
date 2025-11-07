@@ -14,7 +14,7 @@ Dit basisformulier biedt een eenvoudige structuur voor het vastleggen van de bel
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/form";
+@use "@minvws/manon/components/form";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

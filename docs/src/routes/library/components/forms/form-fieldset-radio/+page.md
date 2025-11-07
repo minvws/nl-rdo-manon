@@ -14,7 +14,7 @@ Een fieldset met radio-selectieknoppen groepeert meerdere keuzemogelijkheden die
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/form-fieldset-radio";
+@use "@minvws/manon/components/form-fieldset-radio";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

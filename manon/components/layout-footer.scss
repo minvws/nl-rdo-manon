@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 body > footer,
@@ -8,18 +7,12 @@ body > footer,
   width: 100%;
   align-self: center;
   box-sizing: border-box;
-
-  @include theming.apply-from-theme(
-    (
-      gap: theme.$layout-footer-gap,
-      padding-top: theme.$layout-footer-padding-top,
-      padding-right: theme.$layout-footer-padding-right,
-      padding-bottom: theme.$layout-footer-padding-bottom,
-      padding-left: theme.$layout-footer-padding-left,
-      max-width: theme.$layout-footer-max-width,
-      min-height: theme.$footer-min-height,
-    )
-  );
+  gap: theme.$layout-footer-gap;
+  padding-top: theme.$layout-footer-padding-top;
+  padding-right: theme.$layout-footer-padding-right;
+  padding-bottom: theme.$layout-footer-padding-bottom;
+  padding-left: theme.$layout-footer-padding-left;
+  max-width: theme.$layout-footer-max-width;
 
   > div,
   > article,
@@ -28,12 +21,7 @@ body > footer,
     flex-direction: column;
     width: 100%;
     box-sizing: border-box;
-
-    @include theming.apply-from-theme(
-      (
-        gap: theme.$layout-footer-content-block-gap,
-      )
-    );
+    gap: theme.$layout-footer-content-block-gap;
 
     div,
     article,
@@ -41,12 +29,7 @@ body > footer,
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
-
-      @include theming.apply-from-theme(
-        (
-          gap: theme.$layout-footer-within-content-block-gap,
-        )
-      );
+      gap: theme.$layout-footer-within-content-block-gap;
     }
   }
 }

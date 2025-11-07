@@ -1,28 +1,19 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 main {
   > article,
   > section,
   > div {
-    @include theming.apply-from-theme(
-      (
-        border-width: theme.$divider-lines-main-border-width,
-        border-style: theme.$divider-lines-main-border-style,
-        border-color: theme.$divider-lines-main-border-color,
-        padding-top: theme.$divider-lines-main-padding-top,
-      )
-    );
+    border-width: theme.$divider-lines-main-border-width;
+    border-style: theme.$divider-lines-main-border-style;
+    border-color: theme.$divider-lines-main-border-color;
+    padding-top: theme.$divider-lines-main-padding-top;
 
     &:first-of-type {
-      @include theming.apply-from-theme(
-        (
-          border-width: theme.$divider-lines-main-first-of-type-border-width,
-          border-style: theme.$divider-lines-main-first-of-type-border-style,
-          border-color: theme.$divider-lines-main-first-of-type-border-color,
-          padding-top: theme.$divider-lines-main-first-of-type-padding-top,
-        )
-      );
+      border-width: theme.$divider-lines-main-first-of-type-border-width;
+      border-style: theme.$divider-lines-main-first-of-type-border-style;
+      border-color: theme.$divider-lines-main-first-of-type-border-color;
+      padding-top: theme.$divider-lines-main-first-of-type-padding-top;
     }
   }
 }

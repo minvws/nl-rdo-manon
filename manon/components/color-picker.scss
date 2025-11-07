@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 /* color input */
@@ -13,18 +12,17 @@ input[type="color"] {
   height: theme.$color-picker-height;
   padding: theme.$color-picker-padding;
 
-  &.filled {
-    padding: 0;
-    -webkit-appearance: none;
-    border: none;
-    border-radius: theme.$color-picker-border-radius;
+  -webkit-appearance: theme.$color-picker-appearance;
+  appearance: theme.$color-picker-appearance;
+  border: theme.$color-picker-border;
+  border-radius: theme.$color-picker-border-radius;
 
-    &::-webkit-color-swatch-wrapper {
-      padding: 0;
-    }
+  &::-webkit-color-swatch-wrapper {
+    padding: theme.$color-picker-color-swatch-wrapper-padding;
+  }
 
-    &::-webkit-color-swatch {
-      border: none;
-    }
+  &::-webkit-color-swatch {
+    border: theme.$color-picker-color-swatch-border;
+    border-radius: theme.$color-picker-color-swatch-border-radius;
   }
 }

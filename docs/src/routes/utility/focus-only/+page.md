@@ -16,7 +16,7 @@ Focus only
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/focus-only";
+@use "@minvws/manon/components/focus-only";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

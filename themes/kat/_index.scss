@@ -91,6 +91,12 @@ and spacing sets */
   $code-block-background-color: semantic.$color-brand-secondary-subtle,
   $code-block-border-radius: border-radii.$border-radius-s,
 
+  // columns
+  $columns-gap: spacing.$spacing-250,
+
+  // collapsing element
+  $collapsing-element-justify-content: space-between,
+
   // expando rows
   $expando-rows-border-width: 0 0 2px 0,
   $expando-rows-border-style: solid,
@@ -177,6 +183,9 @@ and spacing sets */
   $header-text-color: semantic.$color-text-default,
   $header-padding-right: spacing.$spacing-300,
   $header-padding-left: spacing.$spacing-300,
+  $header-border-width: 0 0 1px 0,
+  $header-border-style: solid,
+  $header-border-color: color-scheme.$violet-200,
 
   // header nav
   $header-navigation-width: 100%,
@@ -222,11 +231,15 @@ and spacing sets */
   $hero-content-wrapper-text-align: center,
   $hero-content-wrapper-margin: 0 auto,
   $hero-content-wrapper-background-color: transparent,
+  $hero-content-wrapper-gap: spacing.$spacing-250,
+  $hero-content-wrapper-justify-content: center,
+  $hero-content-wrapper-align-items: center,
 
   // link
   $link-text-color: color-scheme.$blue-600,
 
   // list
+  $list-padding: 0 0 0 spacing.$spacing-050,
   $list-gap: spacing.$spacing-050,
   $list-item-padding: spacing.$spacing-025,
 
@@ -264,7 +277,7 @@ and spacing sets */
   $notification-block-element-gap: spacing.$spacing-050,
 
   // notification type
-  $notification-span-font-weight: bold,
+  $notification-type-font-weight: bold,
 
   // notification error
   $notification-error-background-color:
@@ -305,12 +318,22 @@ and spacing sets */
 
   // section
   $section-padding-top: spacing.$spacing-100,
-  $section-padding-right: spacing.$spacing-100,
+  $section-padding-right: 0,
   $section-padding-bottom: spacing.$spacing-100,
-  $section-padding-left: spacing.$spacing-100,
+  $section-padding-left: 0,
   $section-max-width: 90rem,
-  $section-gap: spacing.$spacing-200,
+  $section-gap: spacing.$spacing-250,
   $section-flex-direction: column,
+
+  // section content wrapper
+  $section-content-wrapper-background-color: color-scheme.$white,
+  $section-content-wrapper-padding-top: spacing.$spacing-200,
+  $section-content-wrapper-padding-right: 0,
+  $section-content-wrapper-padding-bottom: spacing.$spacing-300,
+  $section-content-wrapper-padding-left: 0,
+  $section-content-wrapper-gap: spacing.$spacing-250,
+  $section-content-wrapper-flex-direction: column,
+  $section-content-wrapper-border-radius: border-radii.$border-radius-m,
 
   // sidemenu page
   $sidemenu-page-padding-top: spacing.$spacing-400,

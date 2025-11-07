@@ -18,7 +18,7 @@ zien.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/filter";
+@use "@minvws/manon/components/filter";
 ```
 
 JavaScript importeren:

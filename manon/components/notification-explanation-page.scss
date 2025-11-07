@@ -1,23 +1,13 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 %notifictions-explanation-page-styling {
   max-width: 100%;
   width: 100%;
+  background-color: theme.$notification-explanation-page-background-color;
+  color: theme.$notification-explanation-page-text-color;
 
-  @include theming.apply-from-theme(
-    (
-      background-color: theme.$notification-explanation-page-background-color,
-      color: theme.$notification-explanation-page-text-color,
-    )
-  );
-
-  span:first-of-type {
-    @include theming.apply-from-theme(
-      (
-        font-weight: theme.$notification-explanation-page-span-font-weight,
-      )
-    );
+  .notification-type {
+    font-weight: theme.$notification-explanation-page-span-font-weight;
   }
 
   p,
@@ -26,17 +16,12 @@
   div {
     &.explanation {
       &::before {
-        @include theming.apply-from-theme(
-          (
-            font-family: theme.$notification-explanation-page-icon-font-family,
-            font-size: theme.$notification-explanation-page-icon-font-size,
-            padding-right:
-              theme.$notification-explanation-page-icon-padding-right,
-            padding-left: theme.$notification-explanation-page-icon-padding-left,
-            color: theme.$notification-explanation-page-icon-text-color,
-            margin-right: theme.$notification-explanation-page-icon-margin-right,
-          )
-        );
+        font-family: theme.$notification-explanation-page-icon-font-family;
+        font-size: theme.$notification-explanation-page-icon-font-size;
+        padding-right: theme.$notification-explanation-page-icon-padding-right;
+        padding-left: theme.$notification-explanation-page-icon-padding-left;
+        color: theme.$notification-explanation-page-icon-text-color;
+        margin-right: theme.$notification-explanation-page-icon-margin-right;
       }
     }
   }

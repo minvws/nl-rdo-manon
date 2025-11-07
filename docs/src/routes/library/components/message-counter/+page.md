@@ -15,7 +15,7 @@ over nieuwe berichten of notificaties.
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/message-counter-base";
+@use "@minvws/manon/components/message-counter-base";
 ```
 
 ### Benodigde stappen

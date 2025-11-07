@@ -16,13 +16,13 @@ Een inklapbaar component is een element op een website dat extra informatie verb
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/collapsible";
+@use "@minvws/manon/components/collapsible";
 ```
 
 Javascript importeren:
 
 ```javascript
-import "@minvws/manon/collapsible";
+import "@minvws/manon/js/collapsible";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
@@ -151,13 +151,13 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 </div>
 ```
 
-### Voorbeeld: Inklapbare ghost button
+### Voorbeeld: Inklapbare secondary button
 
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  data-button-classes="ghost"
+  data-button-classes="secondary"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -174,7 +174,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  data-button-classes="ghost"
+  data-button-classes="secondary"
   class="collapsible"
 >
   <div class="collapsing-element">
@@ -193,7 +193,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  data-button-classes="icon icon-cat"
+  data-button-classes="icon icon-chevron-down"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -210,7 +210,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  data-button-classes="icon icon-cat"
+  data-button-classes="icon icon-chevron-down"
   class="collapsible"
 >
   <div class="collapsing-element">

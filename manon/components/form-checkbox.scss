@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -14,17 +13,12 @@ form {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
-
-    @include theming.apply-from-theme(
-      (
-        vertical-align: theme.$form-checkbox-vertical-align,
-        cursor: theme.$form-checkbox-cursor,
-        width: theme.$form-checkbox-width,
-        min-width: theme.$form-checkbox-width,
-        height: theme.$form-checkbox-height,
-        accent-color: theme.$form-checkbox-background-color,
-      )
-    );
+    vertical-align: theme.$form-checkbox-vertical-align;
+    cursor: theme.$form-checkbox-cursor;
+    width: theme.$form-checkbox-width;
+    min-width: theme.$form-checkbox-width;
+    height: theme.$form-checkbox-height;
+    accent-color: theme.$form-checkbox-background-color;
 
     & + label {
       width: auto;
@@ -42,13 +36,8 @@ form {
       padding: 0;
       display: flex;
       flex-direction: row;
-
-      @include theming.apply-from-theme(
-        (
-          gap: theme.$checkbox-gap,
-          align-items: theme.$checkbox-align-items,
-        )
-      );
+      gap: theme.$checkbox-gap;
+      align-items: theme.$checkbox-align-items;
     }
 
     p.error,
@@ -87,17 +76,11 @@ form {
             $checkbox-input-width
           )
           {
-            @include theming.apply-from-theme(
-              (
-                max-width: calc(
-                    #{theme.$form-checkbox-input-column} -
-                      #{$checkbox-input-width}
-                  ),
-                margin-left: calc(
-                    #{theme.$form-checkbox-label-column} +
-                      #{$checkbox-input-width}
-                  ),
-              )
+            max-width: calc(
+              #{theme.$form-checkbox-input-column} - #{$checkbox-input-width}
+            );
+            margin-left: calc(
+              #{theme.$form-checkbox-label-column} + #{$checkbox-input-width}
             );
           }
         }

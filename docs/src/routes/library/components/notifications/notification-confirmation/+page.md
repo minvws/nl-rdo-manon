@@ -17,17 +17,19 @@ incorrect invoeren van data of een systeemfout.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/notification";
-@use "@minvws/manon/notification-confirmation";
+@use "@minvws/manon/components/notification-confirmation";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
 
 ### Voorbeeld: `div`
 
-<div class="confirmation" role="group" aria-label="bevestiging">
-  <span>Bevestiging:</span>
+<div class="confirmation">
   <h2>Lorem ipsum dolor sit</h2>
+  <span class="notification-type">
+    <span class="icon icon-check" aria-hidden="true"></span>
+    Bevestiging:
+  </span>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
     facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
@@ -43,16 +45,19 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
       consequat facilisis ac eu velit.
-      <a href="notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
+      <a href="/library/components/notifications/notifications-block-element">Lorem ipsum</a> consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
 </div>
 
 ```html
-<div class="confirmation" role="group" aria-label="Bevestiging">
-  <span>Bevestiging:</span>
+<div class="confirmation">
   <h2>Lorem ipsum dolor sit</h2>
+  <span class="notification-type">
+    <span class="icon icon-check" aria-hidden="true"></span>
+    Bevestiging:
+  </span>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
     facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque. Phasellus
@@ -67,7 +72,8 @@ SCSS importeren:
     <li>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
       facilisis ac eu velit.
-      <a href="">Lorem ipsum</a> consectetur adipiscing elit.
+      <a href="/library/components/notifications/notifications-block-element">Lorem ipsum</a>
+      consectetur adipiscing elit.
     </li>
   </ul>
   <button type="button">Lorem</button>
@@ -76,13 +82,21 @@ SCSS importeren:
 
 ### Voorbeeld: `p`
 
-<p class="confirmation" role="group" aria-label="bevestiging">
-  <span>Bevestiging:</span> Lorem ipsum dolor sit.
+<p class="confirmation">
+  <span class="notification-type">
+    <span class="icon icon-check" aria-hidden="true"></span>
+    Bevestiging:
+  </span>
+  Lorem ipsum dolor sit.
 </p>
 
 ```html
-<p class="confirmation" role="group" aria-label="Bevestiging">
-  <span>Bevestiging:</span> Lorem ipsum dolor sit amet
+<p class="confirmation">
+  <span class="notification-type">
+    <span class="icon icon-check" aria-hidden="true"></span>
+    Bevestiging:
+  </span>
+  Lorem ipsum dolor sit.
 </p>
 ```
 
@@ -95,10 +109,14 @@ SCSS importeren:
       id="voorbeeld-tekstveld-confirmation"
       name="voorbeeld-tekstveld-confirmation"
       class="confirmation"
-      aria-describedby="voorbeeld-tekstveld-confirmation-message"
-    ></textarea>
+      aria-describedby="voorbeeld-tekstveld-confirmation-message">
+    </textarea>
     <p class="confirmation" id="voorbeeld-tekstveld-confirmation-message">
-      <span>bevestiging:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-check" aria-hidden="true"></span>
+        Bevestiging:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 
@@ -115,9 +133,14 @@ SCSS importeren:
       name="voorbeeld-tekstveld-confirmation"
       class="confirmation"
       aria-describedby="voorbeeld-tekstveld-confirmation-message"
-    ></textarea>
+    >
+    </textarea>
     <p class="confirmation" id="voorbeeld-tekstveld-confirmation-message">
-      <span>bevestiging:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-check" aria-hidden="true"></span>
+        Bevestiging:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 
@@ -141,7 +164,11 @@ SCSS importeren:
       <option value="3">Optie 3</option>
     </select>
     <p class="confirmation" id="select-confirmation-message">
-      <span>bevestiging:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-check" aria-hidden="true"></span>
+        Bevestiging:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
@@ -161,7 +188,11 @@ SCSS importeren:
       <option value="3">Optie 3</option>
     </select>
     <p class="confirmation" id="select-confirmation-message">
-      <span>waarschuwing:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-check" aria-hidden="true"></span>
+        Bevestiging:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
@@ -179,7 +210,11 @@ SCSS importeren:
       aria-describedby="datalist-confirmation-message"
     />
     <p class="confirmation" id="datalist-confirmation-message">
-      <span>bevestiging:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-check" aria-hidden="true"></span>
+        Bevestiging:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 
@@ -201,7 +236,11 @@ SCSS importeren:
       aria-describedby="datalist-confirmation-message"
     />
     <p class="confirmation" id="datalist-confirmation-message">
-      <span>bevestiging:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-check" aria-hidden="true"></span>
+        Bevestiging:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 
@@ -217,15 +256,16 @@ SCSS importeren:
 
 <form action="" method="post">
   <div aria-describedby="checkbox-confirmation-message">
-    <input
-      type="checkbox"
-      id="checkbox-confirmation"
-      name="standaard-checkbox"
-      class="confirmation"
-    />
-    <label for="checkbox-confirmation">Lorem ipsum dolor sit amet</label>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" />
+      <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
+    </div>
     <p class="confirmation" id="checkbox-confirmation-message">
-      <span>bevestiging:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-check" aria-hidden="true"></span>
+        Bevestiging:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
@@ -233,15 +273,16 @@ SCSS importeren:
 ```html
 <form action="" method="post">
   <div aria-describedby="checkbox-confirmation-message">
-    <input
-      type="checkbox"
-      id="checkbox-confirmation"
-      name="standaard-checkbox"
-      class="confirmation"
-    />
-    <label for="checkbox-confirmation">Lorem ipsum dolor sit amet</label>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" />
+      <label for="checkbox-example-base">Lorem ipsum dolor sit amet</label>
+    </div>
     <p class="confirmation" id="checkbox-confirmation-message">
-      <span>waarschuwing:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-check" aria-hidden="true"></span>
+        Bevestiging:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
@@ -251,16 +292,15 @@ SCSS importeren:
 
 <form action="" method="post">
   <div>
-    <input
-      type="radio"
-      id="radio-example-confirmation"
-      name="standaard-radiobutton"
-      value="value"
-      class="confirmation"
-    />
-    <label for="radio-example-confirmation">Lorem ipsum dolor sit amet</label>
+    <div class="radio">
+      <input type="radio" id="radio-example-base" name="standaard-radio" />
+      <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
+    </div>
     <p class="confirmation" id="radio-example-confirmation-message">
-      <span>bevestiging:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-check" aria-hidden="true"></span>
+        Bevestiging:
+      </span> Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>
@@ -268,16 +308,16 @@ SCSS importeren:
 ```html
 <form action="" method="post">
   <div>
-    <input
-      type="radio"
-      id="radio-example-confirmation"
-      name="standaard-radiobutton"
-      value="value"
-      class="confirmation"
-    />
-    <label for="radio-example-confirmation">Lorem ipsum dolor sit amet</label>
+    <div class="radio">
+      <input type="radio" id="radio-example-base" name="standaard-radio" />
+      <label for="radio-example-base">Lorem ipsum dolor sit amet</label>
+    </div>
     <p class="confirmation" id="radio-example-confirmation-message">
-      <span>waarschuwing:</span> Lorem ipsum dolor sit amet
+      <span class="notification-type">
+        <span class="icon icon-check" aria-hidden="true"></span>
+        Bevestiging:
+      </span>
+      Lorem ipsum dolor sit amet
     </p>
   </div>
 </form>

@@ -1,5 +1,4 @@
 @use "icon";
-@use "theming";
 @use "../variables" as theme;
 
 @mixin notification {
@@ -10,29 +9,23 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  background-color: theme.$notification-background-color;
+  color: theme.$notification-text-color;
+  padding-top: theme.$notification-padding-top;
+  padding-right: theme.$notification-padding-right;
+  padding-bottom: theme.$notification-padding-bottom;
+  padding-left: theme.$notification-padding-left;
+  border-width: theme.$notification-border-width;
+  border-style: theme.$notification-border-style;
+  gap: theme.$notification-gap;
+}
 
-  @include theming.apply-from-theme(
-    (
-      background-color: theme.$notification-background-color,
-      color: theme.$notification-text-color,
-      padding-top: theme.$notification-padding-top,
-      padding-right: theme.$notification-padding-right,
-      padding-bottom: theme.$notification-padding-bottom,
-      padding-left: theme.$notification-padding-left,
-      border-width: theme.$notification-border-width,
-      border-style: theme.$notification-border-style,
-      gap: theme.$notification-gap,
-      border-radius: theme.$notification-border-radius,
-    )
-  );
-
-  span:first-of-type {
-    @include theming.apply-from-theme(
-      (
-        font-weight: theme.$notification-span-font-weight,
-      )
-    );
-  }
+.notification-type {
+  align-items: center;
+  display: inline-flex;
+  font-weight: theme.$notification-type-font-weight;
+  order: theme.$notification-type-order;
+  gap: theme.$notification-type-gap;
 }
 
 .notification {
@@ -50,17 +43,12 @@ div {
   &.confirmation,
   &.system {
     &::before {
-      @include icon.icon;
-      @include theming.apply-from-theme(
-        (
-          font-family: theme.$notification-icon-font-family,
-          font-size: theme.$notification-icon-font-size,
-          padding-right: theme.$notification-icon-padding-right,
-          padding-left: theme.$notification-icon-padding-left,
-          color: theme.$notification-icon-text-color,
-          margin-right: theme.$notification-icon-margin-right,
-        )
-      );
+      font-family: theme.$notification-icon-font-family;
+      font-size: theme.$notification-icon-font-size;
+      padding-right: theme.$notification-icon-padding-right;
+      padding-left: theme.$notification-icon-padding-left;
+      color: theme.$notification-icon-text-color;
+      margin-right: theme.$notification-icon-margin-right;
     }
   }
 }

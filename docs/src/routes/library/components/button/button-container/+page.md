@@ -14,7 +14,7 @@ Geeft de mogelijkheid om gegroepeerde knoppen te stylen. Bijvoorbeeld door ze ho
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/button-container";
+@use "@minvws/manon/components/button-container";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

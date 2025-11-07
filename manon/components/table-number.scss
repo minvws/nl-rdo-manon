@@ -1,16 +1,6 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 .number {
-  $table-number-text-align: right !default;
-
-  @include theming.apply-from-theme(
-    (
-      font-variant-numeric: theme.$table-number-font-family,
-    )
-  );
-}
-
-td.number input {
-  text-align: inherit;
+  font-variant-numeric: theme.$table-number-font-family;
+  text-align: theme.$table-number-text-align;
 }

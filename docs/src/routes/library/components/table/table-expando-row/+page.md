@@ -17,8 +17,8 @@ voor een tabel met uitklapbare tabelrijen.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
-@use "@minvws/manon/table-expando-rows";
+@use "@minvws/manon/components/table";
+@use "@minvws/manon/components/table-expando-rows";
 ```
 
 JavaScript importeren:
@@ -28,7 +28,11 @@ import "@minvws/manon/js/expando-rows.js";
 ```
 
 <p class="warning">
-  Let op: Deze tabelstructuur kan als complex ervaren worden door gebruikers. Zeker in
+   <span class="notification-type">
+    <span class="icon icon-warning" aria-hidden="true"></span>
+    Let op
+  </span>
+  Deze tabelstructuur kan als complex ervaren worden door gebruikers. Zeker in
   combinatie met hulptechnologieën. Maak enkel gebruik van deze opzet als het de gebruiker
   helpt om complexe data te begrijpen.
 </p>
@@ -67,19 +71,20 @@ import "@minvws/manon/js/expando-rows.js";
       informatie over het toevoegen van iconensets, zie [Iconen](/library/components/icons). Voor
       een implementatievoorbeeld zie het [html-voorbeeld](#examples).
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Aandachtspunten</span>
-  <ul>
-    <li>
+<div class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+    <p>
       Let op: Deze tabelstructuur kan als complex ervaren worden door gebruikers. Zeker in combinatie met hulptechnologieën. Maak enkel gebruik van deze opzet als het de gebruiker helpt om complexe data te begrijpen.**
-    </li>
-    <li>
+    </p>
+    <p>
       Wanneer JavaScript niet beschikbaar is, worden alle uitklapbare tabelrijen uitgeklapt getoond en worden de expando-`button`s verborgen zodat alle data ook beschikbaar is voor gebruikers zonder JavaScript.
-    </li>
-    <li>
+    </p>
+    <p>
       Om een tabelrij standaard uitgeklapt te maken, voeg je `aria-expanded="true"` toe aan de `button`. Verander hierbij ook de button-tekst naar bijvoorbeeld "Sluit details", en vervang de `data-close-label` door een `data-open-label` met bijbehorende tekst zoals bijvoorbeeld "Open details.
-    </li>
-  </ul>
+    </p>
 </div>
 
 <h2 id="examples">Voorbeelden</h2>
@@ -88,22 +93,22 @@ import "@minvws/manon/js/expando-rows.js";
 
 <div class="horizontal-scroll">
   <table>
-    <caption> Voorbeeld uitklapbare tabelrijen: </caption>
+    <caption>Rapportage-overzicht: </caption>
     <thead>
       <tr>
-        <th scope="col">Risicolevel</th>
-        <th scope="col">Bevindingstype</th>
-        <th scope="col">Hoeveelheid</th>
-        <th scope="col">Status</th>
+        <th scope="col">Naam</th>
+        <th scope="col">Type</th>
+        <th scope="col">Project</th>
+        <th scope="col">Datum</th>
         <th scope="col">Details</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="critical">Critical</span></td>
-        <td>Lorem ipsum dolor sit</td>
-        <td class="number">4</td>
-        <td>New</td>
+        <td>Security overzicht Maart</td>
+        <td>Audit</td>
+        <td>Project A</td>
+        <td>03-04-2025</td>
         <td>
           <button
             class="expando-button"
@@ -118,16 +123,33 @@ import "@minvws/manon/js/expando-rows.js";
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-          <span class="sr-only">Lorem ipsum dolor sit</span>
-          <h2>Lorem ipsum details</h2>
-          <p>De extra content.</p>
+          <div class="expando-row-content">
+            <div>
+              <h2 class="heading-xs">Onderzoeksdetails</h2>
+              <dl>
+                <div>
+                  <dt>Uitgevoerende partij</dt>
+                  <dd>Partij A</dd>
+                </div>
+                <div>
+                  <dt>Datum</dt>
+                  <dd>31-3-2025</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Afgerond</dd>
+                </div>
+              </dl>
+              </div>
+              <p class="nota-bene">Dit onderzoek is uitvoerd in opdracht door het ministerie van volksgezondheid welzijn en sport</p>
+          </div>
         </td>
       </tr>
       <tr>
-        <td><span class="high">High</span></td>
-        <td>Lorem ipsum dolor sit</td>
-        <td class="number">12</td>
-        <td>New</td>
+        <td>Toegankelijkheidsrapport</td>
+        <td>Audit</td>
+        <td>Project B</td>
+        <td>12-02-2025</td>
         <td>
           <button
             class="expando-button"
@@ -142,9 +164,26 @@ import "@minvws/manon/js/expando-rows.js";
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-          <span class="sr-only">Lorem ipsum dolor sit</span>
-          <h2>Lorem ipsum details</h2>
-          <p>De extra content.</p>
+                    <div class="expando-row-content">
+            <div>
+              <h2 class="heading-xs">Onderzoeksdetails</h2>
+              <dl>
+                <div>
+                  <dt>Uitgevoerende partij</dt>
+                  <dd>Partij A</dd>
+                </div>
+                <div>
+                  <dt>Datum</dt>
+                  <dd>31-3-2025</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Afgerond</dd>
+                </div>
+              </dl>
+              </div>
+              <p class="nota-bene">Dit onderzoek is uitvoerd in opdracht door het ministerie van volksgezondheid welzijn en sport</p>
+          </div>
         </td>
       </tr>
     </tbody>
@@ -186,9 +225,11 @@ import "@minvws/manon/js/expando-rows.js";
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-          <span class="sr-only">Lorem ipsum dolor sit</span>
-          <h2>Lorem ipsum details</h2>
-          <p>De extra content.</p>
+          <h2>Extra informatie</h2>
+          <p>
+            Hier vindt u aanvullende informatie die betrekking heeft op deze rij. U kunt hier
+            context, toelichtingen of andere relevante details opnemen.
+          </p>
         </td>
       </tr>
       <tr>
@@ -210,9 +251,11 @@ import "@minvws/manon/js/expando-rows.js";
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-          <span class="sr-only">Lorem ipsum dolor sit</span>
-          <h2>Lorem ipsum details</h2>
-          <p>De extra content.</p>
+          <h2>Extra informatie</h2>
+          <p>
+            Hier vindt u aanvullende informatie die betrekking heeft op deze rij. U kunt hier
+            context, toelichtingen of andere relevante details opnemen.
+          </p>
         </td>
       </tr>
     </tbody>

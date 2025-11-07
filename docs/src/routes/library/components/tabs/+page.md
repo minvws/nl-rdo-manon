@@ -16,7 +16,7 @@ Tabbladen worden gebruikt om verschillende inhoudssecties op één pagina overzi
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/tabs";
+@use "@minvws/manon/components/tabs";
 ```
 
 JavaScript importeren:

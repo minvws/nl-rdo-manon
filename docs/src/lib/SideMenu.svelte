@@ -13,5 +13,7 @@
   aria-label="Document-navigatie"
   {...props}
 >
-  {@render props.children?.()}
+  <div class="sticky-container">
+    {@render props.children?.()}
+  </div>
 </nav>

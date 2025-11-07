@@ -16,10 +16,9 @@ Om inzicht te krijgen in de data kan het behulpzaam zijn om de gebruiker de data
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
-@use "@minvws/manon/table-checkbox";
-@use "@minvws/manon/button/button";
-@use "@minvws/manon/icon/icon-base";
+@use "@minvws/manon/components/table";
+@use "@minvws/manon/components/button";
+@use "@minvws/manon/components/icon";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
@@ -33,21 +32,21 @@ SCSS importeren:
     <thead>
       <tr>
         <th scope="col">
-          <button>
+          <button class="sortable">
             Voornaam
-            <span class="icon icon-sortable" aria-hidden="true"></span>
+            <span class="icon icon-sort" aria-hidden="true"></span>
           </button>
         </th>
         <th scope="col" abbr="Achternaam">
-          <button>
+          <button class="sortable">
             Achternaam (met tussenvoegsel)
-            <span class="icon icon-sortable" aria-hidden="true"></span>
+            <span class="icon icon-sort" aria-hidden="true"></span>
           </button>
         </th>
         <th scope="col">
-          <button>
+          <button class="sortable">
             Leeftijd
-            <span class="icon icon-sortable" aria-hidden="true"></span>
+            <span class="icon icon-sort" aria-hidden="true"></span>
           </button>
         </th>
       </tr>

@@ -18,22 +18,22 @@ Voor die situaties is dit voorbeeld geschikt.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-inline";
+@use "@minvws/manon/components/form";
+@use "@minvws/manon/components/form-inline";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
 
-Het basisvoorbeeld met een invoerveld en een verzendknop.
+Het toevoegen van de `inline` class zorgt ervoor dat de standaard opmaak van het formulier kan worden overschreven. Zo kan een formulier gemaakt worden waarbij alleen de inhoud zichtbaar is en bijvoorbeeld padding en achtergrondkleur uitgezet zijn.
 
-### Voorbeeld: Basis
+### Voorbeeld: inline formulier
 
-<form action="" method="post" class="inline">
-  <button type="submit">Haal gegevens op</button>
+<form class="inline">
+  <button type="submit">Verzend</button>
 </form>
 
 ```html
-<form action="" method="post" class="inline">
-  <button type="submit">Haal gegevens op</button>
+<form class="inline">
+  <button type="submit">Verzend</button>
 </form>
 ```
