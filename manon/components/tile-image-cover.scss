@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -16,11 +15,7 @@
     theme.$tile-padding-left
   )
   {
-    @include theming.apply-from-theme(
-      (
-        width: calc(100% + theme.$tile-padding-right + theme.$tile-padding-left),
-      )
-    );
+    width: calc(100% + theme.$tile-padding-right + theme.$tile-padding-left);
   }
 
   @if theme.$tile-padding-top {

@@ -1,7 +1,7 @@
 $radio-gap: null !default;
 $radio-align-items: center !default;
 $radio-vertical-align: null !default;
-$radio-cursor: null !default;
+$radio-cursor: pointer !default;
 $radio-width: auto !default;
 $radio-height: null !default;
 $radio-align-self: null !default;
@@ -15,7 +15,7 @@ $radio-input-accent-color: null !default;
 
 // Label
 $radio-label-font-weight: null !default;
-$radio-label-width: null !default;
+$radio-label-width: auto !default;
 $radio-label-focus-outline: null !default;
 
 // Required

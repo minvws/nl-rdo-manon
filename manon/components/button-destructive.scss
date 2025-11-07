@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 button,
@@ -7,22 +6,14 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   &.destructive {
-    @include theming.apply-from-theme(
-      (
-        background-color: theme.$button-destructive-background-color,
-        color: theme.$button-destructive-text-color,
-        border-color: theme.$button-destructive-border-color,
-      )
-    );
+    background-color: theme.$button-destructive-background-color;
+    color: theme.$button-destructive-text-color;
+    border-color: theme.$button-destructive-border-color;
 
     &:hover {
-      @include theming.apply-from-theme(
-        (
-          background-color: theme.$button-destructive-hover-background-color,
-          color: theme.$button-destructive-hover-text-color,
-          border-color: theme.$button-destructive-hover-border-color,
-        )
-      );
+      background-color: theme.$button-destructive-hover-background-color;
+      color: theme.$button-destructive-hover-text-color;
+      border-color: theme.$button-destructive-hover-border-color;
     }
   }
 }

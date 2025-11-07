@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 .hero {
@@ -8,18 +7,13 @@
     height: 100%;
     box-sizing: border-box;
     z-index: 1;
-
-    @include theming.apply-from-theme(
-      (
-        flex-direction: theme.$hero-content-container-flex-direction,
-        justify-content: theme.$hero-content-container-justify-content,
-        align-items: theme.$hero-content-container-align-items,
-        padding-top: theme.$hero-content-container-padding-top,
-        padding-right: theme.$hero-content-container-padding-right,
-        padding-bottom: theme.$hero-content-container-padding-bottom,
-        padding-left: theme.$hero-content-container-padding-left,
-        color: theme.$hero-content-container-text-color,
-      )
-    );
+    flex-direction: theme.$hero-content-container-flex-direction;
+    justify-content: theme.$hero-content-container-justify-content;
+    align-items: theme.$hero-content-container-align-items;
+    padding-top: theme.$hero-content-container-padding-top;
+    padding-right: theme.$hero-content-container-padding-right;
+    padding-bottom: theme.$hero-content-container-padding-bottom;
+    padding-left: theme.$hero-content-container-padding-left;
+    color: theme.$hero-content-container-text-color;
   }
 }
