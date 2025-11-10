@@ -18,4 +18,8 @@ input {
   border-style: theme.$form-input-border-style;
   border-color: theme.$form-input-border-color;
   border-radius: theme.$form-input-border-radius;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 }
