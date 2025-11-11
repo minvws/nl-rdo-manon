@@ -43,7 +43,7 @@ $footer-navigation-padding-bottom: null !default;
 $footer-navigation-padding-left: null !default;
 
 // link
-$footer-link-text-color: null !default;
+$footer-link-text-color: inherit !default;
 $footer-link-hover-text-color: null !default;
 $footer-link-visited-text-color: null !default;
 $footer-link-visited-hover-text-color: null !default;
@@ -68,5 +68,5 @@ $footer-list-item-justify-content: null !default;
 $footer-list-item-align-items: null !default;
 $footer-list-item-text-color: null !default;
 $footer-list-item-background-color: null !default;
-$footer-list-flex-direction: null !default;
+$footer-list-flex-direction: row !default;
 $footer-list-padding: null !default;

@@ -93,22 +93,22 @@ import "@minvws/manon/js/expando-rows.js";
 
 <div class="horizontal-scroll">
   <table>
-    <caption> Voorbeeld uitklapbare tabelrijen: </caption>
+    <caption>Rapportage-overzicht: </caption>
     <thead>
       <tr>
-        <th scope="col">Risicolevel</th>
-        <th scope="col">Bevindingstype</th>
-        <th scope="col">Hoeveelheid</th>
-        <th scope="col">Status</th>
+        <th scope="col">Naam</th>
+        <th scope="col">Type</th>
+        <th scope="col">Project</th>
+        <th scope="col">Datum</th>
         <th scope="col">Details</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="critical">Critical</span></td>
-        <td>Lorem ipsum dolor sit</td>
-        <td class="number">4</td>
-        <td>New</td>
+        <td>Security overzicht Maart</td>
+        <td>Audit</td>
+        <td>Project A</td>
+        <td>03-04-2025</td>
         <td>
           <button
             class="expando-button"
@@ -123,16 +123,33 @@ import "@minvws/manon/js/expando-rows.js";
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-          <span class="sr-only">Lorem ipsum dolor sit</span>
-          <h2>Lorem ipsum details</h2>
-          <p>De extra content.</p>
+          <div class="expando-row-content">
+            <div>
+              <h2 class="heading-xs">Onderzoeksdetails</h2>
+              <dl>
+                <div>
+                  <dt>Uitgevoerende partij</dt>
+                  <dd>Partij A</dd>
+                </div>
+                <div>
+                  <dt>Datum</dt>
+                  <dd>31-3-2025</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Afgerond</dd>
+                </div>
+              </dl>
+              </div>
+              <p class="nota-bene">Dit onderzoek is uitvoerd in opdracht door het ministerie van volksgezondheid welzijn en sport</p>
+          </div>
         </td>
       </tr>
       <tr>
-        <td><span class="high">High</span></td>
-        <td>Lorem ipsum dolor sit</td>
-        <td class="number">12</td>
-        <td>New</td>
+        <td>Toegankelijkheidsrapport</td>
+        <td>Audit</td>
+        <td>Project B</td>
+        <td>12-02-2025</td>
         <td>
           <button
             class="expando-button"
@@ -147,9 +164,26 @@ import "@minvws/manon/js/expando-rows.js";
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-          <span class="sr-only">Lorem ipsum dolor sit</span>
-          <h2>Lorem ipsum details</h2>
-          <p>De extra content.</p>
+                    <div class="expando-row-content">
+            <div>
+              <h2 class="heading-xs">Onderzoeksdetails</h2>
+              <dl>
+                <div>
+                  <dt>Uitgevoerende partij</dt>
+                  <dd>Partij A</dd>
+                </div>
+                <div>
+                  <dt>Datum</dt>
+                  <dd>31-3-2025</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Afgerond</dd>
+                </div>
+              </dl>
+              </div>
+              <p class="nota-bene">Dit onderzoek is uitvoerd in opdracht door het ministerie van volksgezondheid welzijn en sport</p>
+          </div>
         </td>
       </tr>
     </tbody>
@@ -191,9 +225,11 @@ import "@minvws/manon/js/expando-rows.js";
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-          <span class="sr-only">Lorem ipsum dolor sit</span>
-          <h2>Lorem ipsum details</h2>
-          <p>De extra content.</p>
+          <h2>Extra informatie</h2>
+          <p>
+            Hier vindt u aanvullende informatie die betrekking heeft op deze rij. U kunt hier
+            context, toelichtingen of andere relevante details opnemen.
+          </p>
         </td>
       </tr>
       <tr>
@@ -215,9 +251,11 @@ import "@minvws/manon/js/expando-rows.js";
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-          <span class="sr-only">Lorem ipsum dolor sit</span>
-          <h2>Lorem ipsum details</h2>
-          <p>De extra content.</p>
+          <h2>Extra informatie</h2>
+          <p>
+            Hier vindt u aanvullende informatie die betrekking heeft op deze rij. U kunt hier
+            context, toelichtingen of andere relevante details opnemen.
+          </p>
         </td>
       </tr>
     </tbody>

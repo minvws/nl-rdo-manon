@@ -1,4 +1,4 @@
-$button-font-size: null !default;
+$button-font-size: inherit !default;
 $button-font-weight: null !default;
 $button-font-family: null !default;
 $button-background-color: null !default;
@@ -22,7 +22,7 @@ $button-min-height: null !default;
 $button-appearance: null !default;
 $button-z-index: null !default;
 $button-box-shadow: null !default;
-$button-margin: null !default;
+$button-margin: 0 !default;
 
 /* hover */
 $button-hover-background-color: null !default;

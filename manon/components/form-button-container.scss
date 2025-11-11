@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -8,35 +7,18 @@ $breakpoint: 24rem !default;
   /* Removing gap as it is not supported within fieldsets */
   gap: 0;
   width: auto;
-
-  @include theming.apply-from-theme(
-    (
-      float: theme.$form-button-container-fieldset-float,
-    )
-  );
+  float: theme.$form-button-container-fieldset-float;
 
   @if validators.args-not-null(theme.$button-container-gap) {
-    @include theming.apply-from-theme(
-      (
-        margin-right: calc(theme.$button-container-gap * -1 / 2),
-      )
-    );
+    margin-right: calc(theme.$button-container-gap * -1 / 2);
   }
 
   @if validators.args-not-null(theme.$button-container-gap) {
-    @include theming.apply-from-theme(
-      (
-        margin-bottom: calc(theme.$button-container-gap * -1 / 2),
-      )
-    );
+    margin-bottom: calc(theme.$button-container-gap * -1 / 2);
   }
 
   @if validators.args-not-null(theme.$button-container-gap) {
-    @include theming.apply-from-theme(
-      (
-        margin-left: calc(theme.$button-container-gap * -1 / 2),
-      )
-    );
+    margin-left: calc(theme.$button-container-gap * -1 / 2);
   }
 
   button,
@@ -46,42 +28,16 @@ $breakpoint: 24rem !default;
   input[type="reset"] {
     float: left;
 
-    @include theming.apply-from-theme(
-      (
-        width: theme.$button-container-button-width,
-      )
-    );
+    width: theme.$button-container-button-width;
 
     @if validators.args-not-null(theme.$button-container-gap) {
-      @include theming.apply-from-theme(
-        (
-          margin-right: calc(theme.$button-container-gap * -1 / 2),
-        )
-      );
-    }
-
-    @if validators.args-not-null(theme.$button-container-gap) {
-      @include theming.apply-from-theme(
-        (
-          margin-bottom: calc(theme.$button-container-gap * -1 / 2),
-        )
-      );
-    }
-
-    @if validators.args-not-null(theme.$button-container-gap) {
-      @include theming.apply-from-theme(
-        (
-          margin-left: calc(theme.$button-container-gap * -1 / 2),
-        )
-      );
+      margin-right: calc(theme.$button-container-gap * -1 / 2);
+      margin-bottom: calc(theme.$button-container-gap * -1 / 2);
+      margin-left: calc(theme.$button-container-gap * -1 / 2);
     }
 
     @media (width >= $breakpoint) {
-      @include theming.apply-from-theme(
-        (
-          width: theme.$button-container-button-after-breakpoint-width,
-        )
-      );
+      width: theme.$button-container-button-after-breakpoint-width;
     }
   }
 }
@@ -89,12 +45,7 @@ $breakpoint: 24rem !default;
 form {
   .button-container {
     width: auto;
-
-    @include theming.apply-from-theme(
-      (
-        align-self: theme.$form-button-container-align-self,
-      )
-    );
+    align-self: theme.$form-button-container-align-self;
   }
 
   fieldset {
@@ -120,27 +71,19 @@ form {
             theme.$button-container-gap
           )
           {
-            @include theming.apply-from-theme(
+            margin-left: calc(
               (
-                margin-left: calc(
-                    (
-                        #{theme.$form-button-container-label-column} -
-                          #{theme.$button-container-gap}
-                      ) /
-                      2
-                  ),
-              )
+                  #{theme.$form-button-container-label-column} -
+                    #{theme.$button-container-gap}
+                ) /
+                2
             );
           }
         }
       }
 
       > div.button-container {
-        @include theming.apply-from-theme(
-          (
-            gap: theme.$button-container-gap,
-          )
-        );
+        gap: theme.$button-container-gap;
       }
     }
   }

@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 .overlay {
@@ -23,10 +22,5 @@
 *:has(> .overlay) {
   position: relative;
   z-index: 0;
-
-  @include theming.apply-from-theme(
-    (
-      color: theme.$overlay-text-color,
-    )
-  );
+  color: theme.$overlay-text-color;
 }

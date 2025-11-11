@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 button,
@@ -7,102 +6,76 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   &.cta {
-    @include theming.apply-from-theme(
-      (
-        justify-content: theme.$button-cta-justify-content,
-        gap: theme.$button-cta-gap,
-        background-color: theme.$button-cta-background-color,
-        color: theme.$button-cta-text-color,
-        font-family: theme.$button-cta-font-family,
-        font-size: theme.$button-cta-font-size,
-        font-weight: theme.$button-cta-font-weight,
-        line-height: theme.$button-cta-line-height,
-        text-decoration: theme.$button-cta-text-decoration,
-        text-align: theme.$button-cta-text-align,
-        padding-top: theme.$button-cta-padding-top,
-        padding-right: theme.$button-cta-padding-right,
-        padding-bottom: theme.$button-cta-padding-bottom,
-        padding-left: theme.$button-cta-padding-left,
-        min-width: theme.$button-cta-min-width,
-        height: theme.$button-cta-height,
-        min-height: theme.$button-cta-min-height,
-        border-width: theme.$button-cta-border-width,
-        border-style: theme.$button-cta-border-style,
-        border-color: theme.$button-cta-border-color,
-        border-radius: theme.$button-cta-border-radius,
-        webkit-border-radius: theme.$button-cta-border-radius,
-        webkit-appearance: theme.$button-cta-appearance,
-      )
-    );
+    justify-content: theme.$button-cta-justify-content;
+    gap: theme.$button-cta-gap;
+    background-color: theme.$button-cta-background-color;
+    color: theme.$button-cta-text-color;
+    font-family: theme.$button-cta-font-family;
+    font-size: theme.$button-cta-font-size;
+    font-weight: theme.$button-cta-font-weight;
+    line-height: theme.$button-cta-line-height;
+    text-decoration: theme.$button-cta-text-decoration;
+    text-align: theme.$button-cta-text-align;
+    padding-top: theme.$button-cta-padding-top;
+    padding-right: theme.$button-cta-padding-right;
+    padding-bottom: theme.$button-cta-padding-bottom;
+    padding-left: theme.$button-cta-padding-left;
+    min-width: theme.$button-cta-min-width;
+    height: theme.$button-cta-height;
+    min-height: theme.$button-cta-min-height;
+    border-width: theme.$button-cta-border-width;
+    border-style: theme.$button-cta-border-style;
+    border-color: theme.$button-cta-border-color;
+    border-radius: theme.$button-cta-border-radius;
 
     &:hover,
     &.hover {
-      @include theming.apply-from-theme(
-        (
-          background-color: theme.$button-cta-hover-background-color,
-          color: theme.$button-cta-hover-text-color,
-          border-color: theme.$button-cta-hover-border-color,
-          border-width: theme.$button-cta-hover-border-width,
-          border-style: theme.$button-cta-hover-border-style,
-          border-radius: theme.$button-cta-hover-border-radius,
-        )
-      );
+      background-color: theme.$button-cta-hover-background-color;
+      color: theme.$button-cta-hover-text-color;
+      border-color: theme.$button-cta-hover-border-color;
+      border-width: theme.$button-cta-hover-border-width;
+      border-style: theme.$button-cta-hover-border-style;
+      border-radius: theme.$button-cta-hover-border-radius;
     }
 
     &:active,
     &.active {
-      @include theming.apply-from-theme(
-        (
-          background-color: theme.$button-cta-active-background-color,
-          color: theme.$button-cta-active-text-color,
-          border-style: theme.$button-cta-active-border-style,
-          border-color: theme.$button-cta-active-border-color,
-          border-width: theme.$button-cta-active-border-width,
-          border-radius: theme.$button-cta-active-border-radius,
-        )
-      );
+      background-color: theme.$button-cta-active-background-color;
+      color: theme.$button-cta-active-text-color;
+      border-style: theme.$button-cta-active-border-style;
+      border-color: theme.$button-cta-active-border-color;
+      border-width: theme.$button-cta-active-border-width;
+      border-radius: theme.$button-cta-active-border-radius;
     }
 
     &:focus,
     &.focus {
-      @include theming.apply-from-theme(
-        (
-          border-style: theme.$button-cta-focus-border-style,
-          border-color: theme.$button-cta-focus-border-color,
-          border-width: theme.$button-cta-focus-border-width,
-          border-radius: theme.$button-cta-focus-border-radius,
-          background-color: theme.$button-cta-focus-background-color,
-          color: theme.$button-cta-focus-text-color,
-          outline: theme.$button-cta-outline,
-          outline-offset: theme.$button-cta-outline-offset,
-          outline-color: theme.$button-cta-outline-color,
-          z-index: theme.$button-cta-z-index,
-          box-shadow: theme.$button-cta-box-shadow,
-        )
-      );
+      border-style: theme.$button-cta-focus-border-style;
+      border-color: theme.$button-cta-focus-border-color;
+      border-width: theme.$button-cta-focus-border-width;
+      border-radius: theme.$button-cta-focus-border-radius;
+      background-color: theme.$button-cta-focus-background-color;
+      color: theme.$button-cta-focus-text-color;
+      outline: theme.$button-cta-outline;
+      outline-offset: theme.$button-cta-outline-offset;
+      outline-color: theme.$button-cta-outline-color;
+      z-index: theme.$button-cta-z-index;
+      box-shadow: theme.$button-cta-box-shadow;
     }
   }
 }
 
 a.button {
-  @include theming.apply-from-theme(
-    (
-      color: theme.$button-cta-text-color,
-    )
-  );
+  color: theme.$button-cta-text-color;
 
   &:visited,
   &.visited {
-    @include theming.apply-from-theme(
-      (
-        outline: theme.$button-cta-outline,
-        outline-offset: theme.$button-cta-outline-offset,
-        outline-color: theme.$button-cta-outline-color,
-        z-index: theme.$button-cta-z-index,
-        box-shadow: theme.$button-cta-box-shadow,
-        border-radius: theme.$button-cta-outline-border-radius,
-        color: theme.$button-cta-text-color,
-      )
-    );
+    outline: theme.$button-cta-outline;
+    outline-offset: theme.$button-cta-outline-offset;
+    outline-color: theme.$button-cta-outline-color;
+    z-index: theme.$button-cta-z-index;
+    box-shadow: theme.$button-cta-box-shadow;
+    border-radius: theme.$button-cta-outline-border-radius;
+    color: theme.$button-cta-text-color;
   }
 }

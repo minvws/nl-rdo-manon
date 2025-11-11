@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 form {
@@ -6,45 +5,26 @@ form {
     .radio {
       padding: 0;
       display: initial;
-
-      @include theming.apply-from-theme(
-        (
-          margin: theme.$form-fieldset-radio-margin,
-        )
-      );
+      margin: theme.$form-fieldset-radio-margin;
 
       input[type="radio"] {
         padding: 0;
         cursor: pointer;
         margin: 0;
-
-        @include theming.apply-from-theme(
-          (
-            width: theme.$form-fieldset-radio-input-width,
-            min-width: theme.$form-fieldset-radio-input-width,
-            height: theme.$form-fieldset-radio-input-height,
-            accent-color: theme.$form-fieldset-radio-input-accent-color,
-            margin-top: theme.$form-fieldset-radio-input-margin-top,
-          )
-        );
+        width: theme.$form-fieldset-radio-input-width;
+        min-width: theme.$form-fieldset-radio-input-width;
+        height: theme.$form-fieldset-radio-input-height;
+        accent-color: theme.$form-fieldset-radio-input-accent-color;
+        margin-top: theme.$form-fieldset-radio-input-margin-top;
 
         & + label {
           cursor: pointer;
           margin: 0;
+          padding-left: theme.$radio-gap;
 
           @if theme.$form-fieldset-radio-input-width {
-            @include theming.apply-from-theme(
-              (
-                width: calc(100% - #{theme.$form-fieldset-radio-input-width}),
-              )
-            );
+            width: calc(100% - #{theme.$form-fieldset-radio-input-width});
           }
-
-          @include theming.apply-from-theme(
-            (
-              padding-left: theme.$radio-gap,
-            )
-          );
         }
 
         &:disabled {
@@ -60,11 +40,7 @@ form {
         flex-direction: column;
 
         span {
-          @include theming.apply-from-theme(
-            (
-              margin-bottom: theme.$form-fieldset-radio-required-margin-bottom,
-            )
-          );
+          margin-bottom: theme.$form-fieldset-radio-required-margin-bottom;
         }
 
         > div {
@@ -76,11 +52,7 @@ form {
 
     fieldset {
       .radio {
-        @include theming.apply-from-theme(
-          (
-            margin: theme.$form-fieldset-radio-margin,
-          )
-        );
+        margin: theme.$form-fieldset-radio-margin;
       }
     }
   }

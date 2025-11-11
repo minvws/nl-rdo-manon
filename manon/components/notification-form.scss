@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 form {
@@ -8,38 +7,22 @@ form {
   div.confirmation,
   div.explanation,
   div.system {
-    @include theming.apply-from-theme(
-      (
-        gap: theme.$notification-form-block-gap,
-        padding-top: theme.$notification-form-block-padding-top,
-        padding-right: theme.$notification-form-block-padding-right,
-        padding-bottom: theme.$notification-form-block-padding-bottom,
-        padding-left: theme.$notification-form-block-padding-left,
-      )
-    );
+    gap: theme.$notification-form-block-gap;
+    padding-top: theme.$notification-form-block-padding-top;
+    padding-right: theme.$notification-form-block-padding-right;
+    padding-bottom: theme.$notification-form-block-padding-bottom;
+    padding-left: theme.$notification-form-block-padding-left;
 
     > .notification-type {
-      @include theming.apply-from-theme(
-        (
-          font-weight: theme.$notification-form-span-font-weight,
-        )
-      );
+      font-weight: theme.$notification-form-span-font-weight;
     }
 
     &::before {
-      @include theming.apply-from-theme(
-        (
-          content: theme.$notification-form-block-icon-before-content,
-        )
-      );
+      content: theme.$notification-form-block-icon-before-content;
     }
 
     &::after {
-      @include theming.apply-from-theme(
-        (
-          content: theme.$notification-form-block-icon-after-content,
-        )
-      );
+      content: theme.$notification-form-block-icon-after-content;
     }
 
     p {
@@ -52,11 +35,7 @@ form {
     span {
       /* Message types that come after fields */
       &.error {
-        @include theming.apply-from-theme(
-          (
-            margin-top: theme.$notification-form-fields-gap,
-          )
-        );
+        margin-top: theme.$notification-form-fields-gap;
       }
 
       /* Message types that come before fields */
@@ -64,56 +43,32 @@ form {
       &.confirmation,
       &.system,
       &.explanation {
-        @include theming.apply-from-theme(
-          (
-            margin-bottom: theme.$notification-form-fields-gap,
-          )
-        );
+        margin-bottom: theme.$notification-form-fields-gap;
       }
 
       &::before {
-        @include theming.apply-from-theme(
-          (
-            font-family: theme.$notification-form-fields-icon-font-family,
-            font-size: theme.$notification-form-fields-icon-font-size,
-            padding-right: theme.$notification-form-fields-icon-padding-right,
-            padding-left: theme.$notification-form-fields-icon-padding-left,
-            color: theme.$notification-form-fields-icon-text-color,
-            margin-right: theme.$notification-form-fields-icon-margin-right,
-          )
-        );
+        font-family: theme.$notification-form-fields-icon-font-family;
+        font-size: theme.$notification-form-fields-icon-font-size;
+        padding-right: theme.$notification-form-fields-icon-padding-right;
+        padding-left: theme.$notification-form-fields-icon-padding-left;
+        color: theme.$notification-form-fields-icon-text-color;
+        margin-right: theme.$notification-form-fields-icon-margin-right;
       }
 
       &.error::before {
-        @include theming.apply-from-theme(
-          (
-            content: theme.$notification-form-fields-error-icon,
-          )
-        );
+        content: theme.$notification-form-fields-error-icon;
       }
 
       &.warning::before {
-        @include theming.apply-from-theme(
-          (
-            content: theme.$notification-form-fields-warning-icon,
-          )
-        );
+        content: theme.$notification-form-fields-warning-icon;
       }
 
       &.explanation::before {
-        @include theming.apply-from-theme(
-          (
-            content: theme.$notification-form-fields-explanation-icon,
-          )
-        );
+        content: theme.$notification-form-fields-explanation-icon;
       }
 
       &.confirmation::before {
-        @include theming.apply-from-theme(
-          (
-            content: theme.$notification-form-fields-confirmation-icon,
-          )
-        );
+        content: theme.$notification-form-fields-confirmation-icon;
       }
     }
   }
@@ -126,53 +81,28 @@ form {
     &.warning,
     &.confirmation,
     &.system {
-      @include theming.apply-from-theme(
-        (
-          border-width: theme.$notification-form-fields-border-width,
-          border-style: theme.$notification-form-fields-border-style,
-        )
-      );
+      border-width: theme.$notification-form-fields-border-width;
+      border-style: theme.$notification-form-fields-border-style;
     }
 
     &.error {
-      @include theming.apply-from-theme(
-        (
-          border-color: theme.$notification-form-fields-error-border-color,
-        )
-      );
+      border-color: theme.$notification-form-fields-error-border-color;
     }
 
     &.explanation {
-      @include theming.apply-from-theme(
-        (
-          border-color: theme.$notification-form-fields-explanation-border-color,
-        )
-      );
+      border-color: theme.$notification-form-fields-explanation-border-color;
     }
 
     &.warning {
-      @include theming.apply-from-theme(
-        (
-          border-color: theme.$notification-form-fields-warning-border-color,
-        )
-      );
+      border-color: theme.$notification-form-fields-warning-border-color;
     }
 
     &.confirmation {
-      @include theming.apply-from-theme(
-        (
-          border-color:
-            theme.$notification-form-fields-confirmation-border-color,
-        )
-      );
+      border-color: theme.$notification-form-fields-confirmation-border-color;
     }
 
     &.system {
-      @include theming.apply-from-theme(
-        (
-          border-color: theme.$notification-form-fields-system-border-color,
-        )
-      );
+      border-color: theme.$notification-form-fields-system-border-color;
     }
   }
 }

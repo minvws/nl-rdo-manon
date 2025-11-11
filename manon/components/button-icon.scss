@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 @use "../functions/validators";
 
@@ -10,56 +9,45 @@ input[type="reset"] {
   &.icon {
     gap: 0;
     min-width: 0;
-
-    @include theming.apply-from-theme(
-      (
-        justify-content: theme.$button-icon-justify-content,
-        align-items: center,
-        align-self: flex-start,
-        background-color: theme.$button-icon-background-color,
-        color: theme.$button-icon-text-color,
-        font-family: theme.$button-icon-font-family,
-        font-size: theme.$button-icon-font-size,
-        font-weight: theme.$button-icon-font-weight,
-        line-height: theme.$button-icon-line-height,
-        text-decoration: theme.$button-icon-text-decoration,
-        text-align: theme.$button-icon-text-align,
-        padding-top: theme.$button-icon-padding-top,
-        padding-right: theme.$button-icon-padding-right,
-        padding-bottom: theme.$button-icon-padding-bottom,
-        padding-left: theme.$button-icon-padding-left,
-        margin: theme.$button-icon-margin,
-        box-sizing: theme.$button-icon-box-sizing,
-        width: theme.$button-icon-width,
-        height: theme.$button-icon-height,
-        min-height: theme.$button-icon-min-height,
-        border-width: theme.$button-icon-border-width,
-        border-style: theme.$button-icon-border-style,
-        border-color: theme.$button-icon-border-color,
-        border-radius: theme.$button-icon-border-radius,
-        webkit-border-radius: theme.$button-icon-webkit-border-radius,
-        webkit-appearance: theme.$button-icon-webkit-appearance,
-        cursor: theme.$button-icon-cursor,
-        overflow-wrap: theme.$button-icon-overflow-wrap,
-        max-width: theme.$button-icon-image-max-width,
-      )
-    );
+    justify-content: theme.$button-icon-justify-content;
+    align-items: center;
+    align-self: flex-start;
+    background-color: theme.$button-icon-background-color;
+    color: theme.$button-icon-text-color;
+    font-family: theme.$button-icon-font-family;
+    font-size: theme.$button-icon-font-size;
+    font-weight: theme.$button-icon-font-weight;
+    line-height: theme.$button-icon-line-height;
+    text-decoration: theme.$button-icon-text-decoration;
+    text-align: theme.$button-icon-text-align;
+    padding-top: theme.$button-icon-padding-top;
+    padding-right: theme.$button-icon-padding-right;
+    padding-bottom: theme.$button-icon-padding-bottom;
+    padding-left: theme.$button-icon-padding-left;
+    margin: theme.$button-icon-margin;
+    box-sizing: theme.$button-icon-box-sizing;
+    width: theme.$button-icon-width;
+    height: theme.$button-icon-height;
+    min-height: theme.$button-icon-min-height;
+    border-width: theme.$button-icon-border-width;
+    border-style: theme.$button-icon-border-style;
+    border-color: theme.$button-icon-border-color;
+    border-radius: theme.$button-icon-border-radius;
+    cursor: theme.$button-icon-cursor;
+    overflow-wrap: theme.$button-icon-overflow-wrap;
+    max-width: theme.$button-icon-image-max-width;
   }
 
   .icon {
     &::before {
-      @include theming.apply-from-theme(
-        (
-          font-size: theme.$button-icon-icon-font-size,
-          font-weight: theme.$button-icon-icon-font-weight,
-          line-height: theme.$button-icon-icon-line-height,
-          text-decoration: theme.$button-icon-icon-text-decoration,
-          padding-right: theme.$button-icon-icon-padding-right,
-          padding-left: theme.$button-icon-icon-padding-left,
-          background-color: theme.$button-icon-icon-background-color,
-          color: theme.$button-icon-icon-text-color,
-        )
-      );
+      font-size: theme.$button-icon-icon-font-size;
+      font-weight: theme.$button-icon-icon-font-weight;
+      line-height: theme.$button-icon-icon-line-height;
+      text-decoration: theme.$button-icon-icon-text-decoration;
+      padding-right: theme.$button-icon-icon-padding-right;
+      padding-left: theme.$button-icon-icon-padding-left;
+      background-color: theme.$button-icon-icon-background-color;
+      color: theme.$button-icon-icon-text-color;
     }
   }
 }
@@ -75,16 +63,12 @@ a.button {
   &.icon {
     &:visited,
     &.visited {
-      @include theming.apply-from-theme(
-        (
-          outline: theme.$button-icon-outline,
-          outline-offset: theme.$button-icon-outline-offset,
-          outline-color: theme.$button-icon-outline-color,
-          z-index: theme.$button-icon-z-index,
-          box-shadow: theme.$button-icon-box-shadow,
-          border-radius: theme.$button-icon-outline-border-radius,
-        )
-      );
+      outline: theme.$button-icon-outline;
+      outline-offset: theme.$button-icon-outline-offset;
+      outline-color: theme.$button-icon-outline-color;
+      z-index: theme.$button-icon-z-index;
+      box-shadow: theme.$button-icon-box-shadow;
+      border-radius: theme.$button-icon-outline-border-radius;
     }
   }
 }

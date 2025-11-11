@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 main {
@@ -6,28 +5,18 @@ main {
   > article,
   > div {
     > *:nth-child(even) {
-      @include theming.apply-from-theme(
-        (
-          border-width: theme.$divider-striping-content-block-border-width,
-          border-style: theme.$divider-striping-content-block-border-style,
-          border-color: theme.$divider-striping-content-block-border-color,
-          background-color:
-            theme.$divider-striping-content-block-background-color,
-        )
-      );
+      border-width: theme.$divider-striping-content-block-border-width;
+      border-style: theme.$divider-striping-content-block-border-style;
+      border-color: theme.$divider-striping-content-block-border-color;
+      background-color: theme.$divider-striping-content-block-background-color;
     }
 
     > div {
       > *:nth-child(even) {
-        @include theming.apply-from-theme(
-          (
-            border-width: theme.$divider-striping-content-block-border-width,
-            border-style: theme.$divider-striping-content-block-border-style,
-            border-color: theme.$divider-striping-content-block-border-color,
-            background-color:
-              theme.$divider-striping-content-block-background-color,
-          )
-        );
+        border-width: theme.$divider-striping-content-block-border-width;
+        border-style: theme.$divider-striping-content-block-border-style;
+        border-color: theme.$divider-striping-content-block-border-color;
+        background-color: theme.$divider-striping-content-block-background-color;
       }
     }
   }
