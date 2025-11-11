@@ -4,6 +4,7 @@
 %accordion {
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   @include theming.apply-from-theme(
     (
@@ -42,6 +43,10 @@
         border-color: theme.$accordion-button-hover-border-color,
       )
     );
+  }
+
+  &[aria-expanded="true"] {
+    border-radius: theme.$accordion-expanded-button-border-radius;
   }
 }
 
@@ -83,6 +88,7 @@ ul.accordion {
     width: 100%;
     max-width: 100%;
     padding: 0;
+    gap: 0;
 
     > button {
       @extend %accordion-button;
@@ -114,6 +120,7 @@ ul.accordion {
   /* Accordion item */
   > div {
     width: 100%;
+    gap: 0;
 
     > button {
       @extend %accordion-button;

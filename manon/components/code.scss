@@ -4,7 +4,7 @@
 $breakpoint: 24rem !default;
 
 %code {
-  width: 100%;
+  width: auto;
   box-sizing: border-box;
 
   @include theming.apply-from-theme(
