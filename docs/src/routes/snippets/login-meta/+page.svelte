@@ -30,3 +30,5 @@
     </nav>
   </div>
 </header>
+
+<main id="main-content"></main>
