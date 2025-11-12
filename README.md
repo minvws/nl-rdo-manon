@@ -90,17 +90,20 @@ volgende regel toe aan de `<head>` van je HTML-bestand:
 npm install @minvws/manon @minvws/manon-themes
 ```
 
-Je kunt dan een thema van Manon importeren in je Sass-bestand:
+Je kunt dan een thema van Manon en de volledige componenten bibliotheek
+importeren in je Sass-bestand:
 
 ```scss
 @use "@minvws/manon-themes/icore-open";
+@use "@minvws/manon/components/bundles/all";
 ```
 
-Je hebt dan de mogelijkheid om specifieke componenten te importeren indien je
-niet de volledige set nodig hebt:
+Als je niet de volledige set wilt gebruiken dan heb je de mogelijkheid om
+specifieke componenten te importeren:
 
 ```scss
-@use "@minvws/manon/components/hero";
+@use "@minvws/manon/components/breadcrumb-bar";
+@use "@minvws/manon/components/checkbox";
 ```
 
 Lees meer informatie in de
