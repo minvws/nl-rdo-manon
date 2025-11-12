@@ -813,6 +813,7 @@ and spacing sets */
 
   // tile groups (group of tiles)
   $tile-groups-gap: spacing.$spacing-100,
+  $tile-gap: spacing.$spacing-050,
 
   // tile group (grouping within a tile)
   $tile-group-margin: spacing.$spacing-050 0 0 0,
