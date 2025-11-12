@@ -26,3 +26,9 @@ nav:
 ```html
 <p class="login-meta">Ingelogd als: <a href="">Jane Doe</a></p>
 ```
+
+### Voorbeeld: Binnen header
+
+<div class="resize">
+  <iframe src="/snippets/login-meta" title="Voorbeeld" height="72px"></iframe>
+</div>
