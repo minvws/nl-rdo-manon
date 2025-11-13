@@ -3,6 +3,6 @@
 @use "@minvws/manon/utility/focus-only" as focus-only;
 
 a.button.focus-only.skip-to-content.focussed {
-    @include focus-only.in-focus;
-    @include skip-to-content.in-focus;
-  }
+  @include focus-only.in-focus;
+  @include skip-to-content.in-focus;
+}
