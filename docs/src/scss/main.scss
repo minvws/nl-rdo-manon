@@ -1,6 +1,7 @@
-@use "@minvws/manon-themes/icore-open";
-// @use "@minvws/manon-themes/kat";
+ @use "@minvws/manon-themes/icore-open";
+ // @use "@minvws/manon-themes/kat";
 
+// Manon components
 @use "@minvws/manon/components/accordion";
 @use "@minvws/manon/components/article";
 @use "@minvws/manon/components/article-section";
@@ -25,7 +26,6 @@
 @use "@minvws/manon/components/de-emphasized";
 @use "@minvws/manon/components/description-list";
 @use "@minvws/manon/components/disabled";
-// @use "@minvws/manon/components/div";
 @use "@minvws/manon/components/divider-lines-content-block";
 @use "@minvws/manon/components/divider-striping-top";
 @use "@minvws/manon/components/emphasized";
@@ -127,6 +127,7 @@
 @use "@minvws/manon/utility/background-color-offset";
 
 // Docs specific styling
+@use "test-states";
 @use "iframe";
 @use "layout";
 @use "sticky-table";

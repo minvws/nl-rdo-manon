@@ -14,17 +14,10 @@ hulptechnologiën of enkel met toetsenbord navigeren. Deze knop geeft gebruikers
 de mogelijkheid om direct naar de inhoud van de pagina te springen. Hiermee
 wordt voorkomen dat de gebruiker langs onnodig veel elementen moet navigeren.
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Toelichting:</span>
-  <p>
-    De <strong>"Ga direct naar inhoud"-knop</strong> is standaard verborgen
-    voor visuele gebruikers, maar wordt zichtbaar wanneer deze focus krijgt
-    via toetsenbordnavigatie. Dit zorgt ervoor dat de knop niet de visuele
-    opmaak verstoort, maar wel beschikbaar blijft voor gebruikers die er
-    baat bij hebben. Gebruik de <strong>Tab-toets</strong> om de knop te
-    activeren en zichtbaar te maken in het onderstaande voorbeeld.
-  </p>
-</div>
+De knop is standaard verborgen maar wordt zichtbaar wanneer deze focus krijgt
+via toetsenbordnavigatie. Dit zorgt ervoor dat de knop niet de visuele
+opmaak verstoort, maar wel beschikbaar blijft voor gebruikers die er
+baat bij hebben.
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -34,19 +27,17 @@ SCSS importeren:
 @use "@minvws/manon/components/skip-to-content";
 ```
 
-### Benodigde stappen
-
-- Voeg de knop als eerste element binnen de header toe.
-- Verwijs met een `a` naar het blok waar de content begint. Dit zal meestal de
-  `main` zijn.
-- **Let op**: de knop is alleen zichtbaar wanneer deze focus krijgt. Gebruik
-  `tab` om de knop te zien.
-- Voeg `tabindex="-1"` toe aan de main. De `main` is een element dat standaard
-  geen focus kan accepteren aangezien het geen control of interactieve content
-  is. Het toevoegen van de tabindex stelt het in staat om toch focus te
-  accepteren.
-
 <h2 id="examples">Voorbeelden</h2>
+
+### Geactiveerd voorbeeld
+<div class="resize">
+  <iframe src="/snippets/skip-to-content-active" title="Voorbeeld" height="240px"></iframe>
+</div>
+
+### Standaard weergave
+
+Gebruik de Tab-toets om de knop te
+activeren en zichtbaar te maken in het onderstaande voorbeeld.
 
 <div class="resize">
   <iframe src="/snippets/skip-to-content" title="Voorbeeld" height="240px"></iframe>
@@ -75,3 +66,15 @@ Voeg aan het naar toe te springen element de corresponderende `id` toe.
   <!-- page content -->
 </main>
 ```
+
+### Benodigde stappen
+
+- Voeg de knop als eerste element binnen de header toe.
+- Verwijs met een `a` naar het blok waar de content begint. Dit zal meestal de
+  `main` zijn.
+- **Let op**: de knop is alleen zichtbaar wanneer deze focus krijgt. Gebruik
+  `tab` om de knop te zien.
+- Voeg `tabindex="-1"` toe aan de main. De `main` is een element dat standaard
+  geen focus kan accepteren aangezien het geen control of interactieve content
+  is. Het toevoegen van de tabindex stelt het in staat om toch focus te
+  accepteren.
