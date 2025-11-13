@@ -23,9 +23,7 @@ Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in mee
 
 <nav class="pagination" aria-label="Paginering" id="pagination-nav">
   <ul>
-    <li>
-      <a href="#pagination-nav" aria-label="Ga naar pagina 1" aria-current="page">1</a>
-    </li>
+    <li><span aria-current="page">1</span></li>
     <li><a href="#pagination-nav" aria-label="Ga naar pagina 2">2</a></li>
     <li><a href="#pagination-nav" aria-label="Ga naar pagina 3">3</a></li>
     <li><a href="#pagination-nav" aria-label="Ga naar pagina 4">4</a></li>
@@ -34,13 +32,13 @@ Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in mee
 </nav>
 
 ```html
-<nav class="pagination" aria-label="Paginering">
+<nav class="pagination" aria-label="Paginering" id="pagination-nav">
   <ul>
-    <li><a href="#" aria-label="Ga naar pagina 1" aria-current="page">1</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 2">2</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
+    <li><span aria-current="page">1</span></li>
+    <li><a href="#pagination-nav" aria-label="Ga naar pagina 2">2</a></li>
+    <li><a href="#pagination-nav" aria-label="Ga naar pagina 3">3</a></li>
+    <li><a href="#pagination-nav" aria-label="Ga naar pagina 4">4</a></li>
+    <li><a href="#pagination-nav" aria-label="Ga naar pagina 5">5</a></li>
   </ul>
 </nav>
 ```
@@ -53,7 +51,7 @@ Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in mee
     aria-label="Ga naar de vorige pagina"
     class="adjacent previous">Vorige</a>
   <ul>
-    <li><a href="#pagination-next-prev" aria-label="Ga naar pagina 1">1</a></li>
+    <li><span>1</span></li>
     <li>
       <a href="#pagination-next-prev" aria-label="Ga naar pagina 2" aria-current="page">2</a>
     </li>
@@ -68,16 +66,22 @@ Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in mee
 </nav>
 
 ```html
-<nav class="pagination" aria-label="Paginering">
-  <a href="#" aria-label="Ga naar de vorige pagina" class="adjacent previous">Vorige</a>
+<nav class="pagination" aria-label="Paginering" id="pagination-next-prev">
+  <a href="#pagination-next-prev" aria-label="Ga naar de vorige pagina" class="adjacent previous"
+    >Vorige</a
+  >
   <ul>
-    <li><a href="#" aria-label="Ga naar pagina 1">1</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 2" aria-current="page">2</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 3">3</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 4">4</a></li>
-    <li><a href="#" aria-label="Ga naar pagina 5">5</a></li>
+    <li><span>1</span></li>
+    <li>
+      <a href="#pagination-next-prev" aria-label="Ga naar pagina 2" aria-current="page">2</a>
+    </li>
+    <li><a href="#pagination-next-prev" aria-label="Ga naar pagina 3">3</a></li>
+    <li><a href="#pagination-next-prev" aria-label="Ga naar pagina 4">4</a></li>
+    <li><a href="#pagination-next-prev" aria-label="Ga naar pagina 5">5</a></li>
   </ul>
-  <a href="#" aria-label="Ga naar de volgende pagina" class="adjacent next">Volgende</a>
+  <a href="#pagination-next-prev" aria-label="Ga naar de volgende pagina" class="adjacent next"
+    >Volgende</a
+  >
 </nav>
 ```
 
