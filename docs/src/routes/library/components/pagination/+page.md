@@ -67,10 +67,9 @@ Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in mee
 
 ```html
 <nav class="pagination" aria-label="Paginering" id="pagination-next-prev">
-  <a
-    href="#pagination-next-prev"
-    aria-label="Ga naar de vorige pagina"
-    class="adjacent previous">Vorige</a>
+  <a href="#pagination-next-prev" aria-label="Ga naar de vorige pagina" class="adjacent previous"
+    >Vorige</a
+  >
   <ul>
     <li><span>1</span></li>
     <li>
@@ -80,10 +79,9 @@ Paginering is een navigatie-element dat lange lijsten of inhoud opsplitst in mee
     <li><a href="#pagination-next-prev" aria-label="Ga naar pagina 4">4</a></li>
     <li><a href="#pagination-next-prev" aria-label="Ga naar pagina 5">5</a></li>
   </ul>
-  <a
-    href="#pagination-next-prev"
-    aria-label="Ga naar de volgende pagina"
-    class="adjacent next">Volgende</a>
+  <a href="#pagination-next-prev" aria-label="Ga naar de volgende pagina" class="adjacent next"
+    >Volgende</a
+  >
 </nav>
 ```
 
