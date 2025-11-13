@@ -21,13 +21,17 @@ SCSS importeren:
 
 <h2 id="examples">Voorbeelden</h2>
 
+### Geactiveerd voorbeeld
+
+<button class="focus-only focussed">Gefocussed element</button>
+
+### Standaard weergave
+
+Gebruik de Tab-toets om de knop te
+activeren en zichtbaar te maken in het onderstaande voorbeeld.
+
 <button class="focus-only">Gefocussed element</button>
 
 ```html
 <button class="focus-only">Gefocussed element</button>
 ```
-
- <p class="warning">
-   <strong>Let op</strong>: Alleen zichtbaar als het element "in focus" is. Navigeer naar het
-   voorbeeld-element met <i>tab</i>.
- </p>

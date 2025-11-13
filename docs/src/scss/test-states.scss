@@ -1,0 +1,12 @@
+@use "@minvws/manon/variables" as theme;
+@use "@minvws/manon/components/skip-to-content" as skip-to-content;
+@use "@minvws/manon/utility/focus-only" as focus-only;
+
+a.button.focus-only.skip-to-content.focussed {
+  @include focus-only.in-focus;
+  @include skip-to-content.in-focus;
+}
+
+button.focus-only.focussed {
+  @include focus-only.in-focus;
+}
