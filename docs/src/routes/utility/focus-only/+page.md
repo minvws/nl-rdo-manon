@@ -22,6 +22,7 @@ SCSS importeren:
 <h2 id="examples">Voorbeelden</h2>
 
 ### Geactiveerd voorbeeld
+
 <button class="focus-only focussed">Gefocussed element</button>
 
 ### Standaard weergave

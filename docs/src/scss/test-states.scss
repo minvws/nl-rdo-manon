@@ -8,5 +8,5 @@ a.button.focus-only.skip-to-content.focussed {
 }
 
 button.focus-only.focussed {
-   @include focus-only.in-focus;
+  @include focus-only.in-focus;
 }
