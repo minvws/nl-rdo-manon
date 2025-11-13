@@ -31,7 +31,10 @@ SCSS importeren:
 ```html
 <section class="background-color-offset">
   <div class="content-wrapper">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non volutpat lacus. Pellentesque quis malesuada est</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non volutpat lacus. Pellentesque
+      quis malesuada est
+    </p>
   </div>
 </section>
 ```
@@ -47,7 +50,10 @@ SCSS importeren:
 ```html
 <section class="background-color-offset-1">
   <div class="content-wrapper">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non volutpat lacus. Pellentesque quis malesuada est</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non volutpat lacus. Pellentesque
+      quis malesuada est
+    </p>
   </div>
 </section>
 ```
