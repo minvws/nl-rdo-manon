@@ -18,3 +18,7 @@ main:empty {
   min-height: 0;
   padding: 0;
 }
+
+main:has(.hero:only-child) {
+  padding-bottom: 0;
+}
