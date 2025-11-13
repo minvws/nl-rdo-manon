@@ -21,6 +21,15 @@ $breakpoint: 50rem !default;
   @extend %horizontal;
 }
 
-.horizontal-group > div {
-  @extend %horizontal;
+.horizontal-group {
+  @if theme.$horizontal-group-gap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  gap: theme.$horizontal-group-gap;
+
+  > div {
+    @extend %horizontal;
+  }
 }
