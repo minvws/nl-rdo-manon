@@ -13,6 +13,7 @@ main.sidemenu div > section > div {
   &.card {
     display: flex;
     box-sizing: border-box;
+    flex-direction: column;
     align-items: theme.$card-align-items;
     gap: theme.$card-gap;
     padding-top: theme.$card-padding-top;
