@@ -28,7 +28,7 @@
     "@minvws/manon": "workspace:*"
   },
   "devDependencies": {
-    "glob": "^11.0.3",
+    "glob": "^12.0.0",
     "sass": "^1.93.3"
   },
   "repository": {
