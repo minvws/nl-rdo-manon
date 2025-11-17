@@ -1,13 +1,16 @@
 @use "../variables" as theme;
 
-%notifictions-error-page-styling {
+%notifictions-page-styling {
   max-width: 100%;
   width: 100%;
-  background-color: theme.$notification-error-page-background-color;
-  color: theme.$notification-error-page-text-color;
+
+  &.error {
+    background-color: theme.$notification-error-page-background-color;
+    color: theme.$notification-error-page-text-color;
+  }
 
   .notification-type {
-    font-weight: theme.$notification-error-page-span-font-weight;
+    font-weight: theme.$notification-page-span-font-weight;
   }
 
   p,

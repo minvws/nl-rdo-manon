@@ -5,26 +5,4 @@ p.system,
 span.system,
 section.system,
 div.system {
-  @include notification.notification;
-
-  background-color: theme.$notification-system-background-color;
-  color: theme.$notification-system-text-color;
-  border-width: theme.$notification-system-border-width;
-  border-style: theme.$notification-system-border-style;
-  border-color: theme.$notification-system-border-color;
-
-  &::before {
-    font-family: theme.$notification-system-icon-font-family;
-    font-size: theme.$notification-system-icon-font-size;
-    padding-right: theme.$notification-system-icon-padding-right;
-    padding-left: theme.$notification-system-icon-padding-left;
-    color: theme.$notification-system-icon-text-color;
-    margin-right: theme.$notification-system-icon-margin-right;
-    content: theme.$notification-system-icon;
-  }
-
-  .icon {
-    background-color: theme.$notification-system-icon-color;
-    color: theme.$notification-system-icon-color;
-  }
 }

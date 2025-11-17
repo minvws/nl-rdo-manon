@@ -2,53 +2,53 @@
 @use "../variables" as theme;
 
 @mixin notification {
-  max-width: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: theme.$notification-background-color;
-  color: theme.$notification-text-color;
-  padding-top: theme.$notification-padding-top;
-  padding-right: theme.$notification-padding-right;
-  padding-bottom: theme.$notification-padding-bottom;
-  padding-left: theme.$notification-padding-left;
-  border-width: theme.$notification-border-width;
-  border-style: theme.$notification-border-style;
-  gap: theme.$notification-gap;
+  // max-width: 100%;
+  // width: 100%;
+  // box-sizing: border-box;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
+  // align-items: flex-start;
+  // background-color: theme.$notification-background-color;
+  // color: theme.$notification-text-color;
+  // padding-top: theme.$notification-padding-top;
+  // padding-right: theme.$notification-padding-right;
+  // padding-bottom: theme.$notification-padding-bottom;
+  // padding-left: theme.$notification-padding-left;
+  // border-width: theme.$notification-border-width;
+  // border-style: theme.$notification-border-style;
+  // gap: theme.$notification-gap;
 }
 
-.notification-type {
-  align-items: center;
-  display: inline-flex;
-  font-weight: theme.$notification-type-font-weight;
-  order: theme.$notification-type-order;
-  gap: theme.$notification-type-gap;
-}
+// .notification-type {
+//   align-items: center;
+//   display: inline-flex;
+//   font-weight: theme.$notification-type-font-weight;
+//   order: theme.$notification-type-order;
+//   gap: theme.$notification-type-gap;
+// }
 
-.notification {
-  @include notification;
-}
+// .notification {
+//   @include notification;
+// }
 
-/* Icon */
-p,
-span,
-section,
-div {
-  &.error,
-  &.warning,
-  &.explanation,
-  &.confirmation,
-  &.system {
-    &::before {
-      font-family: theme.$notification-icon-font-family;
-      font-size: theme.$notification-icon-font-size;
-      padding-right: theme.$notification-icon-padding-right;
-      padding-left: theme.$notification-icon-padding-left;
-      color: theme.$notification-icon-text-color;
-      margin-right: theme.$notification-icon-margin-right;
-    }
-  }
-}
+// /* Icon */
+// p,
+// span,
+// section,
+// div {
+//   &.error,
+//   &.warning,
+//   &.explanation,
+//   &.confirmation,
+//   &.system {
+//     &::before {
+//       font-family: theme.$notification-icon-font-family;
+//       font-size: theme.$notification-icon-font-size;
+//       padding-right: theme.$notification-icon-padding-right;
+//       padding-left: theme.$notification-icon-padding-left;
+//       color: theme.$notification-icon-text-color;
+//       margin-right: theme.$notification-icon-margin-right;
+//     }
+//   }
+// }
