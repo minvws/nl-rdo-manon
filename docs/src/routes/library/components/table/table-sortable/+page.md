@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Om inzicht te krijgen in de data kan het behulpzaam zijn om de gebruiker de data te laten sorteren.
+Om inzicht te krijgen in de data kan het behulpzaam zijn om de gebruiker de data te laten sorteren. Dit component biedt hiervoor de visuele weergave.
 
 <h2 id="quickstart">Snelstart</h2>
 

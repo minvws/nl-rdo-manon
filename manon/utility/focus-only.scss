@@ -1,8 +1,12 @@
-*.focus-only,
-*.button.focus-only {
+@mixin in-focus {
   transform: scale(1, 1);
   font-size: inherit;
   padding: inherit;
+}
+
+*.focus-only,
+*.button.focus-only {
+  @include in-focus;
 
   &:not(:focus) {
     transform: scale(1, 0);

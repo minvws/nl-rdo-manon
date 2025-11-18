@@ -40,16 +40,18 @@ and spacing sets */
   $accordion-button-border-color: color-scheme.$oc-gray-2,
   $accordion-button-font-weight: bold,
   $accordion-button-font-size: body-text.$body-text-m,
-  $accordion-content-border-width: 0 1px,
+  $accordion-content-border-width: 0 1px 1px 1px,
   $accordion-content-border-style: solid,
   $accordion-content-border-color: color-scheme.$oc-gray-2,
   $accordion-content-padding: spacing.$spacing-100,
   $accordion-content-gap: spacing.$spacing-050,
-  $accordion-content-font-size: body-text.$body-text-s,
+  $accordion-content-font-size: body-text.$body-text-m,
   $accordion-button-border-radius: border-radii.$border-radius-s
-    border-radii.$border-radius-s 0 0,
+    border-radii.$border-radius-s,
   $accordion-content-border-radius: 0 0 border-radii.$border-radius-s
     border-radii.$border-radius-s,
+  $accordion-expanded-button-border-radius: border-radii.$border-radius-s
+    border-radii.$border-radius-s 0 0,
 
   // accordion icon open
   $accordion-button-icon-after-color: semantic.$color-text-default,
@@ -195,6 +197,10 @@ and spacing sets */
   $card-border-radius: border-radii.$border-radius-s,
   $card-gap: spacing.$spacing-100,
 
+  // code
+  $code-background-color: color-scheme.$oc-gray-1,
+  $code-padding: spacing.$spacing-0125,
+
   // code block
   $code-block-padding: spacing.$spacing-200,
   $code-block-background-color: color-scheme.$oc-gray-1,
@@ -202,7 +208,7 @@ and spacing sets */
 
   // collapsing element
   $collapsing-element-justify-content: space-between,
-  $collapsing-element-align-items: flex-start,
+  $collapsing-element-align-items: center,
   $collapsing-element-flex-direction: column,
   $collapsing-element-gap: 0,
   $collapsing-element-width: auto,
@@ -487,6 +493,7 @@ and spacing sets */
 
   // utility
   $horizontal-gap: spacing.$spacing-100,
+  $horizontal-group-gap: spacing.$spacing-100,
 
   // icon
   $icon-height: 1.5rem,
@@ -639,6 +646,7 @@ and spacing sets */
   $pagination-link-border-color: color-scheme.$oc-white,
   $pagination-link-border-width: 1px,
   $pagination-link-border-style: solid,
+  $pagination-link-text-color: color-scheme.$oc-blue-8,
 
   // pagination link hover
   $pagination-link-hover-background-color: semantic.$color-brand-primary-subtle,
@@ -807,6 +815,7 @@ and spacing sets */
 
   // tile groups (group of tiles)
   $tile-groups-gap: spacing.$spacing-100,
+  $tile-gap: spacing.$spacing-050,
 
   // tile group (grouping within a tile)
   $tile-group-margin: spacing.$spacing-050 0 0 0,
@@ -817,6 +826,9 @@ and spacing sets */
 
   // tile image
   $tile-image-cover-margin-bottom: spacing.$spacing-100,
+
+  // Login meta
+  $login-meta-gap: spacing.$spacing-050,
 
   // Language Selector
   $language-selector-list-background-color: color-scheme.$oc-white,

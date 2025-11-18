@@ -8,6 +8,10 @@
 .collapsing-element {
   justify-content: theme.$collapsing-element-justify-content;
   align-items: theme.$collapsing-element-align-items;
+
+  form {
+    width: auto;
+  }
 }
 
 .collapsible.collapsed {
