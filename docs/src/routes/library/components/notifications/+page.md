@@ -62,11 +62,6 @@ Notificaties kunnen verborgen worden door de class hidden toe te voegen aan de n
           >
         </li>
         <li>
-          <a href="/library/components/notifications/notifications-page"
-            >Pagina-notificatie</a
-          >
-        </li>
-        <li>
           <a href="/library/components/notifications/notifications-table">Tabel</a>
         </li>
       </ul>

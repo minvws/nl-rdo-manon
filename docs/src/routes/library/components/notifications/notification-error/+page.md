@@ -100,39 +100,41 @@ SCSS importeren:
         </li>
       </ul>
       <button type="button">Lorem</button>
-    </div>  
+    </div>
 
     <p>HTML-Voorbeeld:</p>
     <pre>
       <code>
+
 &lt;div class="error">
-  &lt;h2>Lorem ipsum dolor sit&lt;/h2>
-  &lt;span class="notification-type">
-    &lt;span class="icon icon-error" aria-hidden="true">&lt;/span>
-    Foutmelding:
-  &lt;/span>
-  &lt;p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
-    Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam
-    efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac
-    bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget.
-    Mauris euismod a augue sit amet condimentum.
-  &lt;/p>
-  &lt;ul>
-    &lt;li>Lorem ipsum&lt;/li>
-    &lt;li>Lorem ipsum&lt;/li>
-    &lt;li>Lorem ipsum&lt;/li>
-    &lt;li>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
-      consequat facilisis ac eu velit.
-      &lt;a href="/library/components/notifications/notifications-block-element">Lorem ipsum&lt;/a> consectetur adipiscing elit.
-    &lt;/li>
-  &lt;/ul>
-  &lt;button type="button">Lorem&lt;/button>
+&lt;h2>Lorem ipsum dolor sit&lt;/h2>
+&lt;span class="notification-type">
+&lt;span class="icon icon-error" aria-hidden="true">&lt;/span>
+Foutmelding:
+&lt;/span>
+&lt;p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
+Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam
+efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac
+bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget.
+Mauris euismod a augue sit amet condimentum.
+&lt;/p>
+&lt;ul>
+&lt;li>Lorem ipsum&lt;/li>
+&lt;li>Lorem ipsum&lt;/li>
+&lt;li>Lorem ipsum&lt;/li>
+&lt;li>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+consequat facilisis ac eu velit.
+&lt;a href="/library/components/notifications/notifications-block-element">Lorem ipsum&lt;/a> consectetur adipiscing elit.
+&lt;/li>
+&lt;/ul>
+&lt;button type="button">Lorem&lt;/button>
 &lt;/div>
-      </code>
-    </pre>
+</code>
+</pre>
+
   </div>
 
   <div id="section">
@@ -161,43 +163,46 @@ SCSS importeren:
         </li>
       </ul>
       <button type="button">Lorem</button>
-    </section>  
+    </section>
 
     <p>HTML-Voorbeeld:</p>
     <pre>
       <code>
+
 &lt;section class="error">
-  &lt;h2>Lorem ipsum dolor sit&lt;/h2>
-  &lt;span class="notification-type">
-    &lt;span class="icon icon-error" aria-hidden="true">&lt;/span>
-    Foutmelding:
-  &lt;/span>
-  &lt;p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
-    Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam
-    efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac
-    bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget.
-    Mauris euismod a augue sit amet condimentum.
-  &lt;/p>
-  &lt;ul>
-    &lt;li>Lorem ipsum&lt;/li>
-    &lt;li>Lorem ipsum&lt;/li>
-    &lt;li>Lorem ipsum&lt;/li>
-    &lt;li>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
-      consequat facilisis ac eu velit.
-      &lt;a href="/library/components/notifications/notifications-block-element">Lorem ipsum&lt;/a> consectetur adipiscing elit.
-    &lt;/li>
-  &lt;/ul>
-  &lt;button type="button">Lorem&lt;/button>
+&lt;h2>Lorem ipsum dolor sit&lt;/h2>
+&lt;span class="notification-type">
+&lt;span class="icon icon-error" aria-hidden="true">&lt;/span>
+Foutmelding:
+&lt;/span>
+&lt;p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
+Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam
+efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac
+bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget.
+Mauris euismod a augue sit amet condimentum.
+&lt;/p>
+&lt;ul>
+&lt;li>Lorem ipsum&lt;/li>
+&lt;li>Lorem ipsum&lt;/li>
+&lt;li>Lorem ipsum&lt;/li>
+&lt;li>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+consequat facilisis ac eu velit.
+&lt;a href="/library/components/notifications/notifications-block-element">Lorem ipsum&lt;/a> consectetur adipiscing elit.
+&lt;/li>
+&lt;/ul>
+&lt;button type="button">Lorem&lt;/button>
 &lt;/section>
-      </code>
-    </pre>
+</code>
+</pre>
+
   </div>
 </manon-tabs>
 
 ### Form elementen
+
 <manon-tabs>
   <ul>
     <li><a href="#textarea">textarea</a></li>

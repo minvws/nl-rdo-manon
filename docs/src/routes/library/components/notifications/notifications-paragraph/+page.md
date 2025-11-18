@@ -22,6 +22,7 @@ SCSS importeren:
 <h2 id="examples">Voorbeelden</h2>
 
 ### paragraaf
+
 <manon-tabs>
   <ul>
     <li><a href="#error">Error</a></li>
@@ -141,11 +142,10 @@ SCSS importeren:
     </pre>
   </div>
 
-
 </manon-tabs>
 
-
 ### span
+
 <manon-tabs>
   <ul>
     <li><a href="#error">Error</a></li>
@@ -264,6 +264,5 @@ SCSS importeren:
       </code>
     </pre>
   </div>
-
 
 </manon-tabs>
