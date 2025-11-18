@@ -44,9 +44,9 @@
                 <li>
                   <a href="{base}/library/typography/max-line-length">Max line length</a>
                 </li>
+                <li><a href="{base}/library/typography/nota-bene">Nota bene</a></li>
                 <li><a href="{base}/library/typography/paragraph">Paragraph</a></li>
                 <li><a href="{base}/library/typography/page-title">Page-title</a></li>
-                <li><a href="{base}/library/typography/nota-bene">Nota bene</a></li>
                 <li><a href="{base}/library/typography/slogan">Slogan</a></li>
               </ul>
             </nav>
@@ -69,7 +69,6 @@
               <li><a href="{base}/library/components/collapsible-menu">Collapsible menu</a></li>
               <li><a href="{base}/library/components/description-list">Description list</a></li>
               <li><a href="{base}/library/components/filter">Filter</a></li>
-              <li><a href="{base}/library/components/logo">logo</a></li>
             </ul>
           </nav>
           <nav>
@@ -78,20 +77,22 @@
               <li>
                 <a href="{base}/library/components/header">Header</a>
               </li>
+              <li><a href="{base}/library/components/hero">Hero</a></li>
               <li><a href="{base}/library/components/icons">Icons</a></li>
               <li><a href="{base}/library/components/image">Image</a></li>
-              <li><a href="{base}/library/components/hero">Hero</a></li>
               <li>
                 <a href="{base}/library/components/language-selector">Language selector</a>
               </li>
               <li><a href="{base}/library/components/link">Link</a></li>
               <li><a href="{base}/library/components/login-meta">Login Meta</a></li>
+              <li><a href="{base}/library/components/logo">Logo</a></li>
               <li><a href="{base}/library/components/navigation">Navigation</a></li>
             </ul>
           </nav>
           <nav>
             <ul>
               <li><a href="{base}/library/components/notifications">Notifications</a></li>
+              <li><a href="{base}/library/components/message-counter">Notificatie-teller</a></li>
               <li><a href="{base}/library/components/pagination">Pagination</a></li>
               <li><a href="{base}/library/components/sidemenu">Sidemenu</a></li>
               <li><a href="{base}/library/components/skip-to-content">Skip to content</a></li>
