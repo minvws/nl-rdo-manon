@@ -16,7 +16,7 @@ Voor het weergeven van grotere notificaties.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/components/notification-block-element";
+@use "@minvws/manon/components/notification";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
@@ -59,11 +59,9 @@ SCSS importeren:
       </ul>
       <button type="button">Lorem</button>
     </div>
-
     <p>HTML-Voorbeeld:</p>
     <pre>
       <code>
-
 &lt;div class="error">
 &lt;h2>Lorem ipsum dolor sit&lt;/h2>
 &lt;span class="notification-type">
