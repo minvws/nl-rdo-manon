@@ -9,7 +9,9 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Een inklapbaar menu is een navigatie-element dat standaard verborgen of ingeklapt is en pas uitklapt wanneer de gebruiker erop klikt of tapt. Zo blijft de interface overzichtelijk, vooral op kleinere schermen.
+Een inklapbaar menu is een navigatie-element dat standaard verborgen of
+ingeklapt is en pas uitklapt wanneer de gebruiker erop klikt of tapt. Zo blijft
+de interface overzichtelijk, vooral op kleinere schermen.
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -22,7 +24,7 @@ SCSS importeren:
 JavaScript importeren:
 
 ```javascript
-import "@minvws/manon/js/collapsible-menu";
+import "@minvws/manon/js/collapsible-menu.js";
 ```
 
 ### Benodigde stappen
