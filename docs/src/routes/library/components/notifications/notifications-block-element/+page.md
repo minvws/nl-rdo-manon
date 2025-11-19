@@ -367,6 +367,7 @@ Bevestiging:
 &lt;!-- content -->
 &lt;/section>
 </code>
+
 </pre>
 
   </div>
@@ -430,6 +431,7 @@ consequat facilisis ac eu velit.
 &lt;button type="button">Lorem&lt;/button>
 &lt;/section>
 </code>
+
 </pre>
 
   </div>

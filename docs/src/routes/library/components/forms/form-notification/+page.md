@@ -21,6 +21,7 @@ SCSS importeren:
 @use "@minvws/manon/components/notification";
 @use "@minvws/manon/components/notification-form";
 ```
+
 <h2 id="examples">Voorbeelden</h2>
 
 ### Input field
@@ -265,7 +266,6 @@ SCSS importeren:
   </div>
 
 </manon-tabs>
-
 
 ### Textarea
 
@@ -1068,6 +1068,7 @@ SCSS importeren:
 </manon-tabs>
 
 ### Checklist
+
 <manon-tabs>
   <ul>
     <li><a href="#error">error</a></li>
@@ -1270,6 +1271,7 @@ SCSS importeren:
   </manon-tabs>
 
 ### Radio button
+
 <manon-tabs>
   <ul>
     <li><a href="#error">error</a></li>
