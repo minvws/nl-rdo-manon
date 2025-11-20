@@ -26,7 +26,7 @@ Voor het horizontaal uitlijnen van de invoervelden en labels binnen het formulie
 ### Voorbeeld: Basis
 
 <form action="" method="post" class="horizontal">
-  <div>
+  <div class="form-group">
     <label for="form-example-1">Voorbeeld text input</label>
     <input id="form-example-1" name="form-example-1" type="text" />
   </div>
@@ -35,7 +35,7 @@ Voor het horizontaal uitlijnen van de invoervelden en labels binnen het formulie
 
 ```html
 <form action="" method="post" class="horizontal">
-  <div>
+  <div class="form-group">
     <label for="form-example-1">Voorbeeld text input</label>
     <input id="form-example-1" name="form-example-1" type="text" />
   </div>
