@@ -7,7 +7,7 @@ var initiatedAccordions = new WeakMap();
 onDomReady(initAccordions);
 onDomUpdate(initAccordions);
 
-function initAccordions() {
+export function initAccordions() {
   var accordions = document.querySelectorAll(".accordion");
   for (var i = 0; i < accordions.length; i++) {
     var accordion = accordions[i];

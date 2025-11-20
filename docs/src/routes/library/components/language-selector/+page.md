@@ -9,7 +9,8 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Een taalselectie is een dropdown-menu waarmee gebruikers uit een verticale lijst van talen kunnen kiezen door het menu uit te klappen.
+Een taalselectie is een dropdown-menu waarmee gebruikers uit een verticale lijst
+van talen kunnen kiezen door het menu uit te klappen.
 
 <h2 id="quickstart">Snelstart</h2>
 
@@ -20,7 +21,7 @@ Een taalselectie is een dropdown-menu waarmee gebruikers uit een verticale lijst
 Javascript importeren:
 
 ```javascript
-import "@minvws/manon/js/language-selector";
+import "@minvws/manon/js/language-selector.js";
 ```
 
 <h2 id="examples">Voorbeelden:</h2>

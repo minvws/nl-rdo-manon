@@ -47,13 +47,15 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/library">Componenten</a></li>
-        <li><a href="/documentation">Documentatie</a></li>
+        <li><a href="#">Voorbeeld-link 1</a></li>
+        <li><a href="#">Voorbeeld-link 2</a></li>
+        <li><a href="#">Voorbeeld-link 3</a></li>
       </ul>
     </div>
   </nav>
 </header>
+
+<main id="main-content"></main>
 ```
 
 ### Voorbeeld: Navigatie met content wrapper
@@ -80,9 +82,9 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
     >
       <div class="collapsing-element">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/library">Componenten</a></li>
-          <li><a href="/documentation">Documentatie</a></li>
+          <li><a href="#">Voorbeeld-link 1</a></li>
+          <li><a href="#">Voorbeeld-link 2</a></li>
+          <li><a href="#">Voorbeeld-link 3</a></li>
         </ul>
       </div>
     </nav>
@@ -113,20 +115,20 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/library">Componenten</a></li>
-        <li><a href="/documentation">Documentatie</a></li>
+        <li><a href="#">Voorbeeld-link 1</a></li>
+        <li><a href="#">Voorbeeld-link 2</a></li>
+        <li><a href="#">Voorbeeld-link 3</a></li>
       </ul>
 
-      <div>
-        <form class="inline">
-          <input type="text" placeholder="Zoeken" />
-          <button type="submit">
-            <span class="icon icon-search" aria-hidden="true"></span>
-            <span class="visually-hidden">Zoeken</span>
-          </button>
-        </form>
-      </div>
+      <form action="">
+        <div>
+          <label for="voorbeeld-1-date-1-start" class="visually-hidden">Zoeken</label>
+          <div class="combined-field">
+            <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" type="text" />
+            <button><span class="icon icon-search"></span></button>
+          </div>
+        </div>
+      </form>
     </div>
   </nav>
 </header>
@@ -151,13 +153,13 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-      <a href="/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
+      <a href="#" class="logo"> <img src="$img/logo.svg" alt="Placeholder logo" />Manon </a>
 
       <div class="collapsing-element">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/library">Componenten</a></li>
-          <li><a href="/documentation">Documentatie</a></li>
+          <li><a href="#">Voorbeeld-link 1</a></li>
+          <li><a href="#">Voorbeeld-link 2</a></li>
+          <li><a href="#">Voorbeeld-link 3</a></li>
         </ul>
       </div>
     </nav>
@@ -189,13 +191,13 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
     >
       <div class="collapsing-element">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/library">Componenten</a></li>
-          <li><a href="/documentation">Documentatie</a></li>
+          <li><a href="#">Voorbeeld-link 1</a></li>
+          <li><a href="#">Voorbeeld-link 2</a></li>
+          <li><a href="#">Voorbeeld-link 3</a></li>
         </ul>
 
         <ul>
-          <li><a href="/logout">Logout</a></li>
+          <li><a href="#">Logout</a></li>
         </ul>
       </div>
     </nav>
@@ -227,17 +229,15 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
     >
       <div class="collapsing-element">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/library">Componenten</a></li>
-          <li><a href="/documentation">Documentatie</a></li>
+          <li><a href="#">Voorbeeld-link 1</a></li>
+          <li><a href="#">Voorbeeld-link 2</a></li>
+          <li><a href="#">Voorbeeld-link 3</a></li>
         </ul>
 
         <ul class="actions">
+          <li><a href="#" class="avatar">A</a></li>
           <li>
-            <a href="/snippets/header-navigation-with-form-button" class="avatar">A</a>
-          </li>
-          <li>
-            <form action="/logout" method="POST" class="inline">
+            <form action="#" method="POST" class="inline">
               <input type="hidden" name="_token" value="" />
               <button type="submit">Logout</button>
             </form>
@@ -261,28 +261,26 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+  <div class="content-wrapper">
+    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-  <a href="/" class="logo"> <img src="/img/logo.svg" alt="Placeholder logo" />Manon </a>
+    <nav
+      data-open-label="Menu"
+      data-close-label="Sluit menu"
+      data-media="(min-width: 30rem)"
+      aria-label="Hoofdnavigatie"
+      class="collapsible"
+    >
+      <a href="#" class="logo"> <img src="$img/logo.svg" alt="Placeholder logo" />Manon </a>
 
-  <nav
-    data-open-label="Menu"
-    data-close-label="Sluit menu"
-    data-media="(min-width: 30rem)"
-    aria-label="Hoofdnavigatie"
-    class="collapsible"
-  >
-    <div class="collapsing-element">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/library">Componenten</a></li>
-        <li><a href="/documentation">Documentatie</a></li>
-      </ul>
-
-      <ul>
-        <li><a href="/logout">Logout</a></li>
-      </ul>
-    </div>
-  </nav>
+      <div class="collapsing-element">
+        <ul>
+          <li><a href="#">Voorbeeld-link 1</a></li>
+          <li><a href="#">Voorbeeld-link 2</a></li>
+          <li><a href="#">Voorbeeld-link 3</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
 ```
