@@ -29,6 +29,8 @@ SCSS importeren:
 
 <h2 id="examples">Voorbeelden</h2>
 
+### Component
+
 <a href="#main-content" class="button to-top" title="Terug naar het hoofdmenu">Terug
 naar het hoofdmenu</a>
 
@@ -37,6 +39,8 @@ naar het hoofdmenu</a>
   >Terug naar het hoofdmenu</a
 >
 ```
+
+### Structuur
 
 ```html
 <main id="main-content">
