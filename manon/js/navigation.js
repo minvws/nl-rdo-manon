@@ -2,13 +2,13 @@
 
 import { ensureElementHasId, onMediaQueryMatch, onDomReady } from "./utils.js";
 
-onDomReady(initNaviation);
+onDomReady(initNavigation);
 
 /**
  * Add responsive behaviour to header navigation. Safe to call again to make a
  * newly added header navigation responsive.
  */
-export function initNaviation() {
+export function initNavigation() {
   var headers = document.querySelectorAll("header:not(.breadcrumbs)");
   for (var i = 0; i < headers.length; i++) {
     var nav = headers[i].querySelector("nav");

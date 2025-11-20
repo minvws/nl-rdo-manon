@@ -3,7 +3,7 @@ import { onDomReady, onDomUpdate } from "./utils.js";
 onDomReady(initLanguageSelector);
 onDomUpdate(initLanguageSelector);
 
-function initLanguageSelector() {
+export function initLanguageSelector() {
   var languageSelectorElements = document.querySelectorAll(
     ".language-selector-options"
   );
