@@ -13,6 +13,7 @@ table {
     &.confirmation,
     &.system {
       & > div {
+        display: flex;
         gap: theme.$notification-table-gap;
         align-items: theme.$notification-table-align-items;
       }

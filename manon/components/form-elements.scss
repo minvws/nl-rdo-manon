@@ -12,8 +12,4 @@ input[type="radio"]:not(:checked) {
     border-style: solid;
     background-color: #fff;
   }
-
-  &.primary {
-    @extend %primary-inverse;
-  }
 }

@@ -22,7 +22,7 @@ SCSS importeren:
 <h2 id="examples">Voorbeelden:</h2>
 
 <div class="resize">
-  <iframe src="/snippets/hero" title="Voorbeeld" height="240px"></iframe>
+  <iframe src="/snippets/hero" title="Voorbeeld" height="400px"></iframe>
 </div>
 
 ```html
@@ -31,8 +31,7 @@ SCSS importeren:
     <img src="$img/strand.jpg" alt="Foto van een strand" />
   </div>
   <div class="content-wrapper">
-    <h1>Welkom op het homepage-voorbeeld</h1>
-    <p>Een voorbeeld van een landingspagina.</p>
+    <h1>Hero title</h1>
   </div>
 </section>
 ```

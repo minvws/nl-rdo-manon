@@ -3,7 +3,7 @@
 $breakpoint: 24rem !default;
 
 %code {
-  width: 100%;
+  width: auto;
   box-sizing: border-box;
   background-color: theme.$code-background-color;
   color: theme.$code-text-color;

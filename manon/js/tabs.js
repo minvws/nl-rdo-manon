@@ -1,4 +1,4 @@
-import { ensureElementHasId } from "./utils.js";
+import { onDomReady, ensureElementHasId } from "./utils.js";
 
 class ManonTabs extends HTMLElement {
   constructor() {
@@ -143,4 +143,8 @@ class ManonTabs extends HTMLElement {
   }
 }
 
-window.customElements.define("manon-tabs", ManonTabs);
+onDomReady(initTabs);
+
+export function initTabs() {
+  window.customElements.define("manon-tabs", ManonTabs);
+}

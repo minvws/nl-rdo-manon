@@ -3,11 +3,22 @@
   align-items: stretch;
   width: 100%;
   margin: 0;
-  resize: both;
+  resize: none;
   overflow: hidden;
 
   iframe {
     flex-grow: 1;
     border: 2px solid black;
   }
+}
+
+// Visually hiding empty main's that are technically needed for examples.
+// But only add clutter and confusion visually.
+main:empty {
+  min-height: 0;
+  padding: 0;
+}
+
+main:has(.hero:only-child) {
+  padding-bottom: 0;
 }

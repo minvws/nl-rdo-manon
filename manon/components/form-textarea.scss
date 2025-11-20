@@ -4,7 +4,6 @@ form {
   textarea {
     box-sizing: border-box;
     width: theme.$form-textarea-width;
-    resize: theme.$form-textarea-resize;
     padding: theme.$form-textarea-padding;
     font-size: theme.$form-textarea-font-size;
     font-family: theme.$form-textarea-font-family;
@@ -15,5 +14,7 @@ form {
     border-width: theme.$form-textarea-border-width;
     border-style: theme.$form-textarea-border-style;
     border-color: theme.$form-textarea-border-color;
+    max-width: theme.$form-textarea-max-width;
+    resize: theme.$form-textarea-resize;
   }
 }

@@ -1,6 +1,6 @@
 ---
-title: "sticky header"
-breadcrumb: "sticky header"
+title: "Sticky header"
+breadcrumb: "Sticky header"
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"

@@ -28,6 +28,10 @@
     border-width: theme.$accordion-button-hover-border-width;
     border-color: theme.$accordion-button-hover-border-color;
   }
+
+  &[aria-expanded="true"] {
+    border-radius: theme.$accordion-expanded-button-border-radius;
+  }
 }
 
 %accordion-content {
@@ -63,6 +67,7 @@ ul.accordion {
     width: 100%;
     max-width: 100%;
     padding: 0;
+    gap: 0;
 
     > button {
       @extend %accordion-button;
@@ -90,6 +95,7 @@ ul.accordion {
   /* Accordion item */
   > div {
     width: 100%;
+    gap: 0;
 
     > button {
       @extend %accordion-button;

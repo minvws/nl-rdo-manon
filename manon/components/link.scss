@@ -10,6 +10,7 @@ a {
   span.icon {
     width: theme.$link-icon-width;
     height: theme.$link-icon-height;
+    min-width: theme.$link-icon-width;
     margin: theme.$link-icon-margin;
     padding: theme.$link-icon-padding;
     color: theme.$link-icon-color;

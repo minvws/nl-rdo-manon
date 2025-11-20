@@ -16,8 +16,7 @@ Een kleurselector stelt de gebruiker in staat om een kleur te kiezen uit een vis
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/components/form";
-@use "@minvws/manon/components/form-input-color";
+@use "@minvws/manon/components/color-picker";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
