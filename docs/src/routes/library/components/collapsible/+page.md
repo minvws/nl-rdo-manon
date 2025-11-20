@@ -330,37 +330,19 @@ het component terugvallen op respectievelijk "Menu" en "Sluit menu".
   <div class="collapsing-element">
     <ul role="listbox">
       <li role="option" aria-selected="false">
-        <a hreflang="nl" href="collapsible" data-value="Nederlands" lang="nl"
-          >Nederlands</a
-        >
+        <a hreflang="nl" href="collapsible" data-value="Nederlands" lang="nl">Nederlands</a>
       </li>
       <li role="option" aria-selected="false">
-        <a hreflang="en" href="collapsible" data-value="English" lang="en"
-          >English</a
-        >
+        <a hreflang="en" href="collapsible" data-value="English" lang="en">English</a>
       </li>
       <li role="option" aria-selected="false">
-        <a hreflang="fy" href="collapsible" data-value="Frysk" lang="fy"
-          >Frysk</a
-        >
+        <a hreflang="fy" href="collapsible" data-value="Frysk" lang="fy">Frysk</a>
       </li>
       <li role="option" aria-selected="true" aria-current="true">
-        <a
-          hreflang="pap-CW"
-          href="collapsible"
-          data-value="Papiamentu"
-          lang="pap-CW"
-          >Papiamentu</a
-        >
+        <a hreflang="pap-CW" href="collapsible" data-value="Papiamentu" lang="pap-CW">Papiamentu</a>
       </li>
       <li role="option" aria-selected="false">
-        <a
-          hreflang="pap-AW"
-          href="collapsible"
-          data-value="Papiamento"
-          lang="pap-AW"
-          >Papiamento</a
-        >
+        <a hreflang="pap-AW" href="collapsible" data-value="Papiamento" lang="pap-AW">Papiamento</a>
       </li>
     </ul>
   </div>
