@@ -40,6 +40,7 @@ main.sidemenu {
 
   > nav {
     display: none;
+    min-width: theme.$sidemenu-nav-min-width;
     width: theme.$sidemenu-nav-width;
     padding-top: theme.$sidemenu-nav-padding-top;
     padding-right: theme.$sidemenu-nav-padding-right;
@@ -53,6 +54,7 @@ main.sidemenu {
     background-repeat: theme.$sidemenu-nav-background-repeat;
     background-size: theme.$sidemenu-nav-background-size;
     background-position: theme.$sidemenu-nav-background-position;
+    gap: theme.$sidemenu-nav-gap;
 
     @media (width >= $sidemenu-breakpoint) {
       /* nav */
@@ -69,7 +71,6 @@ main.sidemenu {
 
       /* List */
       .sticky-container {
-        position: -webkit-sticky;
         position: sticky;
         top: 0;
         overflow: auto;
@@ -105,7 +106,6 @@ main.sidemenu {
         display: flex;
         align-items: center;
         justify-content: center;
-        position: -webkit-sticky;
         position: sticky;
         z-index: 2;
 
@@ -187,4 +187,8 @@ main.sidemenu {
 /* Use to set the width of the page content. */
 .page-content {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: theme.$page-content-gap;
+  padding: theme.$page-content-padding;
 }

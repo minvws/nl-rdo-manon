@@ -11,8 +11,13 @@ $sidemenu-main-padding-bottom: null !default;
 $sidemenu-main-gap: null !default;
 $sidemenu-main-max-height: null !default;
 
+// Page content
+$page-content-gap: null !default;
+$page-content-padding: null !default;
+
 // Nav
 $sidemenu-nav-width: null !default;
+$sidemenu-nav-min-width: null !default;
 $sidemenu-nav-padding-top: null !default;
 $sidemenu-nav-padding-right: null !default;
 $sidemenu-nav-padding-bottom: null !default;
@@ -25,6 +30,7 @@ $sidemenu-nav-background-image: null !default;
 $sidemenu-nav-background-repeat: null !default;
 $sidemenu-nav-background-size: null !default;
 $sidemenu-nav-background-position: null !default;
+$sidemenu-nav-gap: null !default;
 
 // Link
 $sidemenu-text-decoration: null !default;
