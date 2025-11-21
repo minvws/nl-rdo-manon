@@ -105,51 +105,6 @@
           </nav>
         </div>
       </section>
-
-      <section id="status">
-        <h2>Component Status</h2>
-        <div class="horizontal-scroll">
-          <table>
-            <thead>
-              <tr>
-                <th>Component</th>
-                <th>Status</th>
-                <th>UX</th>
-                <th>Privacy</th>
-                <th>Accessibility</th>
-                <th>Known issues</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Accordion</td>
-                <td>Voltooid</td>
-                <td>Goedgekeurd</td>
-                <td>Goedgekeurd</td>
-                <td>Goedgekeurd</td>
-                <td>Geen</td>
-              </tr>
-              <tr>
-                <td>Avatar</td>
-                <td>Voltooid</td>
-                <td>Goedgekeurd</td>
-                <td>Goedgekeurd</td>
-                <td>Goedgekeurd</td>
-                <td>Geen</td>
-              </tr>
-              <tr>
-                <td>Breadcrumb</td>
-                <td>Voltooid</td>
-                <td>Goedgekeurd</td>
-                <td>Goedgekeurd</td>
-                <td>Goedgekeurd</td>
-                <td>Geen</td>
-              </tr>
-              <!-- Add more component status rows as needed -->
-            </tbody>
-          </table>
-        </div>
-      </section>
     </div>
   </section>
 </main>
