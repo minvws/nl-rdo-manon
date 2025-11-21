@@ -69,6 +69,7 @@ import "@minvws/manon/js/sidemenu.js";
   </section>
 </main>
 ```
+
     <p>Structuur voorbeeld:</p>
 
 ```html
@@ -92,6 +93,7 @@ import "@minvws/manon/js/sidemenu.js";
   </div>
 </body>
 ```
+
     <h3>Benodigde stappen</h3>
 
     <ol>
@@ -100,6 +102,7 @@ import "@minvws/manon/js/sidemenu.js";
       <li>Groepeer de overige content in een enkel element indien dat nog niet gebeurd
         is. Bijvoorbeeld: `div`.</li>
     </ol>
+
   </div>
 
   <div id="content-navigation">
@@ -107,7 +110,7 @@ import "@minvws/manon/js/sidemenu.js";
       <iframe src="/snippets/sidemenu-in-page" title="Voorbeeld" height="320px"></iframe>
     </div>
 
-HTML voorbeeld: 
+HTML voorbeeld:
 
 ```html
 <header>
@@ -122,7 +125,7 @@ HTML voorbeeld:
   >
     <div class="collapsing-element">
       <ul>
-        <li><a href={page.url.pathname}>Home</a></li>
+        <li><a href="{page.url.pathname}">Home</a></li>
       </ul>
     </div>
   </nav>
@@ -131,10 +134,10 @@ HTML voorbeeld:
 <main class="sidemenu">
   <nav aria-label="Zijbalknavigatie">
     <ul>
-      <li><a href={page.url.pathname}>Introductie</a></li>
-      <li><a href={page.url.pathname}>Component</a></li>
-      <li><a href={page.url.pathname}>Voorbeeld</a></li>
-      <li><a href={page.url.pathname}>Gerelateerd</a></li>
+      <li><a href="{page.url.pathname}">Introductie</a></li>
+      <li><a href="{page.url.pathname}">Component</a></li>
+      <li><a href="{page.url.pathname}">Voorbeeld</a></li>
+      <li><a href="{page.url.pathname}">Gerelateerd</a></li>
     </ul>
   </nav>
 
@@ -161,7 +164,8 @@ HTML voorbeeld:
 </main>
 ```
 
-Structuur voorbeeld: 
+Structuur voorbeeld:
+
 ```html
 <main class="sidemenu">
   <nav>
@@ -220,6 +224,7 @@ Structuur voorbeeld:
 ## Toegankelijkheid
 
 ### Skip to content link binnen zijnavigatie
+
 <p>Bij een lange table of content kan een <a href="/library/components/skip-to-content">skip to content link</a> toegevoegd worden. Dit geeft oetsenbordgebruikers de mogelijkheid om de inhoud van de table of contents over te slaan. Dit voegt wel een extra tabstop toe dus het is raadzaam om het enkel bij lange table of contents te gebruiken. Screenreader gebruikers maken over het algemeen gebruik van landmarks om te navigeren. Waardoor een losse skip to content link geen tot weinig toegevoegde waarde heeft.</p>
 
 Als er in de header een skip to content link staat. Laat deze in dat geval naar de start van de main verwijzen. Indien er een table of content aanwezig is, zal het zijmenu het eerste component binnen de main zijn.
