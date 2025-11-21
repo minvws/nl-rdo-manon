@@ -556,6 +556,9 @@ and spacing sets */
   $main-padding-left: spacing.$spacing-400,
   $main-gap: spacing.$spacing-400,
 
+  // main content when a sidemenu is in use
+  $page-content-gap: spacing.$spacing-400,
+
   // nota bene
   $nota-bene-font-size: 0.75rem,
   $nota-bene-text-color: color-scheme.$oc-gray-7,
@@ -683,8 +686,11 @@ and spacing sets */
   $sidemenu-nav-padding-right: spacing.$spacing-200,
   $sidemenu-nav-padding-bottom: spacing.$spacing-100,
   $sidemenu-nav-padding-left: spacing.$spacing-200,
+  $sidemenu-nav-width: 15rem,
+  $sidemenu-nav-gap: spacing.$spacing-100,
 
   // sidemenu main content
+  $sidemenu-page-padding-top: spacing.$spacing-200,
   $sidemenu-page-padding-right: spacing.$spacing-200,
   $sidemenu-page-padding-left: spacing.$spacing-200,
 
