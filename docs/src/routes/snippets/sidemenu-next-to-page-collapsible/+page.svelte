@@ -10,10 +10,10 @@
 
 <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie">
   <ul>
-    <li><a href={page.url.pathname}>Home</a></li>
-    <li><a href={page.url.pathname}>Oorsprong</a></li>
-    <li><a href={page.url.pathname}>Projecten</a></li>
-    <li><a href={page.url.pathname}>Documentatie</a></li>
+    <li><a href={page.url.pathname}>Voorbeeld-link 1</a></li>
+    <li><a href={page.url.pathname}>Voorbeeld-link 2</a></li>
+    <li><a href={page.url.pathname}>Voorbeeld-link 3</a></li>
+    <li><a href={page.url.pathname}>Voorbeeld-link 4</a></li>
   </ul>
 </nav>
 <main class="page-content">
