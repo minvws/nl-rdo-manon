@@ -23,9 +23,32 @@
     code?: string;
   }
 
+  let showCopiedMessage = $state(false);
+  async function copyCode() {
+    try {
+      await navigator.clipboard.writeText(code);
+    } catch (err) {
+      console.error("Failed to copy code to clipboard:", err);
+      return;
+    }
+
+    showCopiedMessage = true;
+    setTimeout(() => {
+      showCopiedMessage = false;
+    }, 2000);
+  }
+
   let { language = "plaintext", code = "" }: Props = $props();
   let trimmed = $derived(code.replace(/^(\s*\n)+/, "").replace(/\n\s*$/, ""));
   let highlighted = $derived(hljs.highlight(trimmed, { language }).value);
 </script>
+
+<button onclick={copyCode} aria-label="Copy code to clipboard">
+  {#if showCopiedMessage}
+    Copied!
+  {:else}
+    Copy
+  {/if}
+</button>
 
 <pre><code>{@html highlighted}</code></pre>
