@@ -1,19 +1,16 @@
 <script lang="ts">
-  import { onMount } from "svelte";
   import { page } from "$app/state";
   import { sidemenuAction } from "$lib/sidemenuAction";
-  import { initSidemenus } from "$lib/manon";
-  onMount(initSidemenus);
 </script>
 
 <svelte:body use:sidemenuAction />
 
-<nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie">
+<nav>
   <ul>
-    <li><a href={page.url.pathname}>Voorbeeld-link 1</a></li>
-    <li><a href={page.url.pathname}>Voorbeeld-link 2</a></li>
-    <li><a href={page.url.pathname}>Voorbeeld-link 3</a></li>
-    <li><a href={page.url.pathname}>Voorbeeld-link 4</a></li>
+    <li><a href={page.url.pathname}>Home</a></li>
+    <li><a href={page.url.pathname}>Over ons</a></li>
+    <li><a href={page.url.pathname}>Projecten</a></li>
+    <li><a href={page.url.pathname}>Blog</a></li>
   </ul>
 </nav>
 <main class="page-content">
