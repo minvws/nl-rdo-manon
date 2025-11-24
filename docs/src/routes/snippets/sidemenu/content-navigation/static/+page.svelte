@@ -20,7 +20,7 @@
   </nav>
 </header>
 
-<main class="sidemenu">
+<main class="sidemenu" id="main-content">
   <nav aria-label="Zijbalknavigatie">
     <ul>
       <li><a href={page.url.pathname}>Introductie</a></li>

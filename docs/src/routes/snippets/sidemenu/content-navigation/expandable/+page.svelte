@@ -5,19 +5,25 @@
   onMount(initSidemenus);
 </script>
 
-<header class="page-header">
-  <div>
-    <nav>
-      <div class="collapsing-element">
-        <ul>
-          <li><a href={page.url.pathname}>Home</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+<header>
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+  <nav
+    data-open-label="Menu"
+    data-close-label="Sluit menu"
+    data-media="(min-width: 30rem)"
+    aria-label="Hoofdnavigatie"
+    class="collapsible"
+  >
+    <div class="collapsing-element">
+      <ul>
+        <li><a href={page.url.pathname}>Home</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
 
-<main class="sidemenu sidemenu-closed">
+<main class="sidemenu sidemenu-closed" id="main-content">
   <nav data-open-label="Zijbalknavigatie" data-close-label="Sluit zijbalknavigatie">
     <ul>
       <li><a href={page.url.pathname}>Introductie</a></li>
