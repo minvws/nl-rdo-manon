@@ -74,13 +74,16 @@ import "@minvws/manon/js/sidemenu.js";
 ```scss
 @use "@minvws/manon/components/sidemenu";
 ```
+
       JavaScript importeren:
 
 ```javascript
 import "@minvws/manon/js/sidemenu.js";
 ```
+
       </div>
     </manon-tabs>
+
   </div>
   <div id="page-navigation-expandable">
     <div class="resize">
@@ -119,13 +122,16 @@ import "@minvws/manon/js/sidemenu.js";
 ```scss
 @use "@minvws/manon/components/sidemenu";
 ```
+
       JavaScript importeren:
 
 ```javascript
 import "@minvws/manon/js/sidemenu.js";
 ```
+
       </div>
     </manon-tabs>
+
   </div>
   <div id="page-navigation-static">
     <div class="resize">
@@ -164,8 +170,10 @@ import "@minvws/manon/js/sidemenu.js";
 ```scss
 @use "@minvws/manon/components/sidemenu";
 ```
+
       </div>
     </manon-tabs>
+
   </div>
 </manon-tabs>
 
@@ -215,13 +223,16 @@ import "@minvws/manon/js/sidemenu.js";
 ```scss
 @use "@minvws/manon/components/sidemenu";
 ```
+
       JavaScript importeren:
 
 ```javascript
 import "@minvws/manon/js/sidemenu.js";
 ```
+
       </div>
     </manon-tabs>
+
   </div>
   <div id="content-navigation-expandable">
     <div class="resize">
@@ -260,13 +271,16 @@ import "@minvws/manon/js/sidemenu.js";
 ```scss
 @use "@minvws/manon/components/sidemenu";
 ```
+
       JavaScript importeren:
 
 ```javascript
 import "@minvws/manon/js/sidemenu.js";
 ```
+
       </div>
     </manon-tabs>
+
   </div>
   <div id="content-navigation-static">
     <div class="resize">
@@ -305,11 +319,12 @@ import "@minvws/manon/js/sidemenu.js";
 ```scss
 @use "@minvws/manon/components/sidemenu";
 ```
+
       </div>
     </manon-tabs>
+
   </div>
 </manon-tabs>
-
 
 ## Kies de juiste HTML-Structuur
 
