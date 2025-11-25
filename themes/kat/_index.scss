@@ -322,8 +322,11 @@ and spacing sets */
   $section-padding-bottom: spacing.$spacing-100,
   $section-padding-left: 0,
   $section-max-width: 90rem,
-  $section-gap: spacing.$spacing-250,
+  $section-gap: spacing.$spacing-100,
   $section-flex-direction: column,
+
+  //article
+  $article-content-wrapper-gap: spacing.$spacing-100,
 
   // section content wrapper
   $section-content-wrapper-background-color: color-scheme.$white,
