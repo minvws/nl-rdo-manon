@@ -208,6 +208,13 @@ and spacing sets */
   $code-block-background-color: color-scheme.$oc-gray-1,
   $code-block-border-radius: border-radii.$border-radius-s,
 
+  // code block copy icon
+  $code-block-copy-button-background-color: transparent,
+  $code-block-copy-button-text-color: color-scheme.$oc-gray-5,
+  $code-block-copy-button-padding: 0.5rem,
+  $code-block-copy-button-hover-background-color: color-scheme.$oc-gray-3,
+  $code-block-copy-button-hover-text-color: color-scheme.$oc-gray-7,
+
   // collapsing element
   $collapsing-element-justify-content: space-between,
   $collapsing-element-align-items: center,
