@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     padding: 0;
     width: 100%;
+    justify-content: theme.$filter-intro-justify-content;
     border-width: theme.$filter-intro-border-width;
     border-style: theme.$filter-intro-border-style;
     border-color: theme.$filter-intro-border-color;
