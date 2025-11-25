@@ -52,10 +52,13 @@
   // Use Vite's `import.meta.glob` to find all potential snippet files.
   // The `{ query: "?raw", import: "default" }` options mean we get the raw text content
   // of the files, and the import function will resolve to the default export.
-  const modules = import.meta.glob("/src/routes/snippets/**/*.{html,svelte}", {
-    query: "?raw",
-    import: "default",
-  });
+  const modules: Record<string, () => Promise<unknown>> = import.meta.glob(
+    "/src/routes/snippets/**/*.{html,svelte}",
+    {
+      query: "?raw",
+      import: "default",
+    },
+  );
 
   // A Svelte 5 effect that runs whenever its dependencies (`path` or `code`) change.
   // It's used here to load file content asynchronously when the `path` prop is updated.
