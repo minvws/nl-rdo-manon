@@ -54,7 +54,7 @@
     import: "default",
   });
 
-  $effect(async () => {
+  $effect(() => {
     if (!path) {
       content = code;
       return;
@@ -66,20 +66,25 @@
       return;
     }
 
-    let loadedContent: string;
-    try {
-      loadedContent = await modules[key]();
-    } catch (err) {
-      content = `<p style="color: red;">Error loading snippet ${path}</p>`;
-      return;
-    }
+    modules[key]()
+      .then((loadedContent: unknown) => {
+        if (typeof loadedContent !== 'string') {
+          content = `<p style="color: red;">Error: Snippet content is not a string for "${path}"</p>`;
+          console.error('Snippet content is not a string:', loadedContent);
+          return;
+        }
 
-    if (as === "code") {
-      // Strip script blocks for Svelte pages
-      content = loadedContent.replace(/^<script[\s\S]*?<\/script>\s*/i, "").trim();
-    } else {
-      content = loadedContent;
-    }
+        if (as === 'code') {
+          // Strip script blocks for Svelte pages
+          content = loadedContent.replace(/^<script[\s\S]*?<\/script>\s*/i, '').trim();
+        } else {
+          content = loadedContent;
+        }
+      })
+      .catch((err) => {
+        content = `<p style="color: red;">Error loading snippet ${path}</p>`;
+        console.error(`Error loading snippet ${path}:`, err);
+      });
   });
 
   function highlight(code: string, lang: Language) {
