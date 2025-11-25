@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 body > footer,
@@ -19,32 +18,36 @@ body > footer,
   }
 
   box-sizing: border-box;
-
-  @include theming.apply-from-theme(
-    (
-      flex-direction: theme.$footer-flex-direction,
-      gap: theme.$footer-gap,
-      justify-content: theme.$footer-justify-content,
-      align-items: theme.$footer-align-items,
-      flex-wrap: theme.$footer-flex-wrap,
-      min-height: theme.$footer-min-height,
-      background-color: theme.$footer-background-color,
-      color: theme.$footer-text-color,
-      text-align: theme.$footer-text-align,
-      padding-top: theme.$footer-padding-top,
-      padding-right: theme.$footer-padding-right,
-      padding-bottom: theme.$footer-padding-bottom,
-      padding-left: theme.$footer-padding-left,
-      max-width: theme.$footer-max-width,
-      border-width: theme.$footer-border-width,
-      border-style: theme.$footer-border-style,
-      border-color: theme.$footer-border-color,
-    )
-  );
+  flex-direction: theme.$footer-flex-direction;
+  gap: theme.$footer-gap;
+  justify-content: theme.$footer-justify-content;
+  align-items: theme.$footer-align-items;
+  flex-wrap: theme.$footer-flex-wrap;
+  min-height: theme.$footer-min-height;
+  background-color: theme.$footer-background-color;
+  color: theme.$footer-text-color;
+  text-align: theme.$footer-text-align;
+  padding-top: theme.$footer-padding-top;
+  padding-right: theme.$footer-padding-right;
+  padding-bottom: theme.$footer-padding-bottom;
+  padding-left: theme.$footer-padding-left;
+  max-width: theme.$footer-max-width;
+  border-width: theme.$footer-border-width;
+  border-style: theme.$footer-border-style;
+  border-color: theme.$footer-border-color;
 
   .content-wrapper {
     flex-direction: theme.$footer-content-wrapper-flex-direction;
     align-items: theme.$footer-content-wrapper-align-items;
+    background-color: theme.$footer-content-wrapper-background-color;
+    justify-content: theme.$footer-content-wrapper-justify-content;
+    gap: theme.$footer-content-wrapper-gap;
+    padding-top: theme.$footer-content-wrapper-padding-top;
+    padding-right: theme.$footer-content-wrapper-padding-right;
+    padding-bottom: theme.$footer-content-wrapper-padding-bottom;
+    padding-left: theme.$footer-content-wrapper-padding-left;
+    max-width: theme.$footer-content-wrapper-max-width;
+    border-radius: theme.$footer-content-wrapper-border-radius;
 
     @if theme.$footer-content-wrapper-gap or
       theme.$footer-content-wrapper-justify-content
@@ -64,53 +67,21 @@ body > footer,
     {
       box-sizing: border-box;
     }
-
-    @include theming.apply-from-theme(
-      (
-        background-color: theme.$footer-content-wrapper-background-color,
-        justify-content: theme.$footer-content-wrapper-justify-content,
-        gap: theme.$footer-content-wrapper-gap,
-        padding-top: theme.$footer-content-wrapper-padding-top,
-        padding-right: theme.$footer-content-wrapper-padding-right,
-        padding-bottom: theme.$footer-content-wrapper-padding-bottom,
-        padding-left: theme.$footer-content-wrapper-padding-left,
-        max-width: theme.$footer-content-wrapper-max-width,
-        border-radius: theme.$footer-content-wrapper-border-radius,
-      )
-    );
   }
 
   a {
-    color: inherit;
     text-decoration: theme.$footer-link-text-decoration;
-
-    @include theming.apply-from-theme(
-      (
-        color: theme.$footer-link-text-color,
-      )
-    );
+    color: theme.$footer-link-text-color;
 
     &:hover {
-      @include theming.apply-from-theme(
-        (
-          color: theme.$footer-link-hover-text-color,
-        )
-      );
+      color: theme.$footer-link-hover-text-color;
     }
 
     &:visited {
-      @include theming.apply-from-theme(
-        (
-          color: theme.$footer-link-visited-text-color,
-        )
-      );
+      color: theme.$footer-link-visited-text-color;
 
       &:hover {
-        @include theming.apply-from-theme(
-          (
-            color: theme.$footer-link-visited-hover-text-color,
-          )
-        );
+        color: theme.$footer-link-visited-hover-text-color;
       }
     }
 
@@ -119,52 +90,37 @@ body > footer,
     &:hover,
     &:visited:hover,
     &[aria-current="page"]:visited:hover {
-      @include theming.apply-from-theme(
-        (
-          color: theme.$footer-link-current-text-color,
-          background-color: theme.$footer-link-current-background-color,
-          text-decoration: theme.$footer-link-current-text-decoration,
-          border-width: theme.$footer-link-current-border-width,
-          border-style: theme.$footer-link-current-border-style,
-          border-color: theme.$footer-link-current-border-color,
-        )
-      );
+      color: theme.$footer-link-current-text-color;
+      background-color: theme.$footer-link-current-background-color;
+      text-decoration: theme.$footer-link-current-text-decoration;
+      border-width: theme.$footer-link-current-border-width;
+      border-style: theme.$footer-link-current-border-style;
+      border-color: theme.$footer-link-current-border-color;
     }
   }
 
   ul,
   ol {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
-
-    @include theming.apply-from-theme(
-      (
-        gap: theme.$footer-list-gap,
-        justify-content: theme.$footer-list-justify-content,
-        align-items: theme.$footer-list-align-items,
-        color: theme.$footer-list-text-color,
-        font-weight: theme.$footer-list-font-weight,
-        width: theme.$footer-list-width,
-        flex-direction: theme.$footer-list-flex-direction,
-        padding: theme.$footer-list-padding,
-      )
-    );
+    gap: theme.$footer-list-gap;
+    justify-content: theme.$footer-list-justify-content;
+    align-items: theme.$footer-list-align-items;
+    color: theme.$footer-list-text-color;
+    font-weight: theme.$footer-list-font-weight;
+    width: theme.$footer-list-width;
+    flex-direction: theme.$footer-list-flex-direction;
+    padding: theme.$footer-list-padding;
 
     li {
       display: flex;
       list-style: none;
       box-sizing: border-box;
-
-      @include theming.apply-from-theme(
-        (
-          justify-content: theme.$footer-list-item-justify-content,
-          align-items: theme.$footer-list-item-align-items,
-          color: theme.$footer-list-item-text-color,
-          background-color: theme.$footer-list-item-background-color,
-        )
-      );
+      justify-content: theme.$footer-list-item-justify-content;
+      align-items: theme.$footer-list-item-align-items;
+      color: theme.$footer-list-item-text-color;
+      background-color: theme.$footer-list-item-background-color;
 
       &::before {
         /* Preventing default nav before to show up */
@@ -196,21 +152,15 @@ body > footer,
       width: 100%;
     }
 
+    gap: theme.$footer-navigation-gap;
     flex-direction: theme.$footer-navigation-flex-direction;
-
-    @include theming.apply-from-theme(
-      (
-        gap: theme.$footer-navigation-gap,
-        flex-direction: theme.$footer-navigation-flex-direction,
-        justify-content: theme.$footer-navigation-justify-content,
-        align-items: theme.$footer-navigation-align-items,
-        flex-wrap: theme.$footer-navigation-flex-wrap,
-        padding-top: theme.$footer-navigation-padding-top,
-        padding-right: theme.$footer-navigation-padding-right,
-        padding-bottom: theme.$footer-navigation-padding-bottom,
-        padding-left: theme.$footer-navigation-padding-left,
-      )
-    );
+    justify-content: theme.$footer-navigation-justify-content;
+    align-items: theme.$footer-navigation-align-items;
+    flex-wrap: theme.$footer-navigation-flex-wrap;
+    padding-top: theme.$footer-navigation-padding-top;
+    padding-right: theme.$footer-navigation-padding-right;
+    padding-bottom: theme.$footer-navigation-padding-bottom;
+    padding-left: theme.$footer-navigation-padding-left;
 
     ul,
     ol {

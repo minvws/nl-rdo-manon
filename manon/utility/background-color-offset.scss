@@ -1,22 +1,19 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 .background-color-offset {
   background-color: theme.$background-color-offset-background-color;
+  color: theme.$background-color-offset-text-color;
 
-  @include theming.apply-from-theme(
-    (
-      color: theme.$background-color-offset-text-color,
-    )
-  );
+  .content-wrapper {
+    background-color: transparent;
+  }
 }
 
 .background-color-offset-1 {
   background-color: theme.$background-color-offset-1-background-color;
+  color: theme.$background-color-offset-1-text-color;
 
-  @include theming.apply-from-theme(
-    (
-      color: theme.$background-color-offset-1-text-color,
-    )
-  );
+  .content-wrapper {
+    background-color: transparent;
+  }
 }

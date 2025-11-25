@@ -18,8 +18,8 @@ Als de meeste velden binnen het formulier verplicht zijn, kan de uitzondering â€
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-nota-bene";
+@use "@minvws/manon/components/form";
+@use "@minvws/manon/components/form-nota-bene";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

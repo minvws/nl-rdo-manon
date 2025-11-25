@@ -16,7 +16,7 @@ Voor een subtielere weergave van bepaalde teksten kan de class `de-emphasized` w
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/de-emphasized";
+@use "@minvws/manon/components/de-emphasized";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

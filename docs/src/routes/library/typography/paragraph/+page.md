@@ -14,7 +14,7 @@ Voor leesbaarheid en toegankelijkheid wordt aangeraden om de maximale regellengt
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/p";
+@use "@minvws/manon/components/p";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

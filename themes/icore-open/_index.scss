@@ -40,16 +40,18 @@ and spacing sets */
   $accordion-button-border-color: color-scheme.$oc-gray-2,
   $accordion-button-font-weight: bold,
   $accordion-button-font-size: body-text.$body-text-m,
-  $accordion-content-border-width: 0 1px,
+  $accordion-content-border-width: 0 1px 1px 1px,
   $accordion-content-border-style: solid,
   $accordion-content-border-color: color-scheme.$oc-gray-2,
   $accordion-content-padding: spacing.$spacing-100,
   $accordion-content-gap: spacing.$spacing-050,
-  $accordion-content-font-size: body-text.$body-text-s,
+  $accordion-content-font-size: body-text.$body-text-m,
   $accordion-button-border-radius: border-radii.$border-radius-s
-    border-radii.$border-radius-s 0 0,
+    border-radii.$border-radius-s,
   $accordion-content-border-radius: 0 0 border-radii.$border-radius-s
     border-radii.$border-radius-s,
+  $accordion-expanded-button-border-radius: border-radii.$border-radius-s
+    border-radii.$border-radius-s 0 0,
 
   // accordion icon open
   $accordion-button-icon-after-color: semantic.$color-text-default,
@@ -98,6 +100,8 @@ and spacing sets */
 
   // background-color offset
   $background-color-offset-background-color: semantic.$base-background-color,
+  $background-color-offset-1-background-color: color-scheme.$oc-blue-7,
+  $background-color-offset-1-text-color: color-scheme.$oc-white,
 
   //base
   $base-background-color: semantic.$base-background-color,
@@ -122,6 +126,9 @@ and spacing sets */
   $button-hover-background-color: color-scheme.$oc-blue-7,
   $button-hover-text-color: color-scheme.$oc-white,
   $button-hover-border-color: color-scheme.$oc-blue-7,
+
+  // button container
+  $button-container-flex-direction: row,
 
   // button secondary
   $button-secondary-background-color: color-scheme.$oc-white,
@@ -155,6 +162,7 @@ and spacing sets */
   $button-to-top-icon-color: color-scheme.$oc-white,
   $button-to-top-icon-width: 1.5rem,
   $button-to-top-icon-height: 1.5rem,
+
   // button cta
   $button-cta-background-color: color-scheme.$oc-blue-9,
   $button-cta-hover-background-color: color-scheme.$oc-blue-8,
@@ -191,6 +199,10 @@ and spacing sets */
   $card-border-radius: border-radii.$border-radius-s,
   $card-gap: spacing.$spacing-100,
 
+  // code
+  $code-background-color: color-scheme.$oc-gray-1,
+  $code-padding: spacing.$spacing-0125,
+
   // code block
   $code-block-padding: spacing.$spacing-200,
   $code-block-background-color: color-scheme.$oc-gray-1,
@@ -199,6 +211,49 @@ and spacing sets */
   // collapsing element
   $collapsing-element-justify-content: space-between,
   $collapsing-element-align-items: center,
+  $collapsing-element-flex-direction: column,
+  $collapsing-element-gap: 0,
+  $collapsing-element-width: auto,
+  $collapsing-element-max-width: 250px,
+  $collapsing-element-z-index: 20,
+  $collapsing-element-padding-top: 0,
+  $collapsing-element-padding-right: 0,
+  $collapsing-element-padding-bottom: 0,
+  $collapsing-element-padding-left: 0,
+  $collapsing-element-border-width: 0,
+  $collapsing-element-border-style: solid,
+  $collapsing-element-border-color: transparent,
+  $collapsing-element-background-color: #fff,
+  $collapsing-element-text-color: semantic.$color-text-default,
+  $collapsing-element-box-shadow: 0px 4px 20px 0px rgb(0 0 0 / 10%),
+  $collapsing-element-top: 100%,
+  $collapsing-element-left: 0,
+  $collapsing-element-right: 0,
+
+  $collapsing-element-list-gap: 0,
+
+  $collapsing-element-list-item-align-items: flex-start,
+  $collapsing-element-list-item-background-color: transparent,
+  $collapsing-element-list-item-text-color: semantic.$color-text-default,
+  $collapsing-element-list-item-border-width: 0 0 1px 0,
+  $collapsing-element-list-item-border-style: solid,
+  $collapsing-element-list-item-border-color: color-scheme.$oc-gray-1,
+
+  $collapsing-element-list-item-min-height: 3rem,
+
+  $collapsing-element-list-item-link-padding-top: 0,
+  $collapsing-element-list-item-link-padding-right: spacing.$spacing-100,
+  $collapsing-element-list-item-link-padding-bottom: 0,
+  $collapsing-element-list-item-link-padding-left: spacing.$spacing-100,
+  $collapsing-element-list-item-link-text-color: semantic.$color-text-default,
+  $collapsing-element-list-item-link-text-decoration: none,
+
+  $collapsing-element-list-item-link-hover-background-color:
+    color-scheme.$oc-blue-0,
+
+  $collapsing-element-list-icon-font-size: spacing.$spacing-100,
+
+  $collapsing-element-list-link-selected-font-weight: bold,
 
   // color picker
   $color-picker-border-radius: border-radii.$border-radius-s,
@@ -214,9 +269,6 @@ and spacing sets */
   // de-emphasized
   $de-emphasized-font-size: body-text.$body-text-s,
   $de-emphasized-text-color: color-scheme.$oc-gray-7,
-
-  // div
-  $div-gap: spacing.$spacing-050,
 
   // description list
   $description-list-width: 100%,
@@ -235,12 +287,21 @@ and spacing sets */
   // form
   $form-align-items: flex-start,
   $form-text-color: semantic.$color-text-default,
-  $form-gap: spacing.$spacing-200,
+  $form-gap: spacing.$spacing-100,
   $form-max-width: 40rem,
   $form-table-width: 100%,
 
   // form fieldset
   $form-fieldset-border-width: 0,
+  $form-fieldset-padding: 0,
+  $form-fieldset-margin: 0,
+  $form-fieldset-legend-font-weight: bold,
+  $form-fieldset-legend-margin-bottom: null,
+  $form-fieldset-legend-margin: 0 0 1rem 0,
+  $form-fieldset-legend-padding: 0,
+  $form-fieldset-input-margin: 0.5rem 0 1rem 0,
+  $form-fieldset-fields-padding: 0,
+  $form-fieldset-fields-margin: 0,
 
   // form group
   $form-group-gap: spacing.$spacing-050,
@@ -260,6 +321,14 @@ and spacing sets */
   $form-textarea-font-size: inherit,
   $form-textarea-padding: 1rem,
 
+  //radio
+  $radio-width: 1rem,
+  $radio-height: 1rem,
+  $radio-accent-color: color-scheme.$oc-blue-8,
+  $radio-label-font-weight: normal,
+  $radio-label-focus-outline: 2px solid color-scheme.$oc-blue-8,
+  $form-fieldset-radio-margin: 0 0 0.5rem,
+
   // form horizontal
   $form-horizontal-button-margin: 0 0 0 calc(33.33% + 0.5rem),
   $form-horizontal-label-max-width: 33.33%,
@@ -269,6 +338,12 @@ and spacing sets */
     border-radii.$border-radius-m,
   $form-combined-field-button-border-radius: 0 border-radii.$border-radius-m
     border-radii.$border-radius-m 0,
+  $form-combined-field-button-padding: 0 1rem,
+  $form-combined-field-button-min-width: fit-content,
+  $form-combined-field-button-justify-content: center,
+
+  //Nota bene
+  $form-fieldset-nota-bene-padding-bottom: 0.5rem,
 
   // focus
   $focus-outline: 2px solid,
@@ -314,15 +389,34 @@ and spacing sets */
   $form-help-button-background-color: transparent,
   $form-help-button-margin: 1rem -2.5rem 0 0,
 
+  // checkbox
+  $checkbox-width: 1.25rem,
+  $checkbox-height: 1.25rem,
+  $checkbox-accent-color: color-scheme.$oc-blue-8,
+  $checkbox-label-font-weight: normal,
+  $checkbox-label-focus-outline: 2px solid color-scheme.$oc-blue-8,
+  $form-fieldset-checkbox-margin: 0 0 0.5rem,
+
+  // form select field
+  $form-select-font-size: body-text.$body-text-m,
+  $form-select-color: color-scheme.$oc-gray-9,
+  $form-select-min-width: 15rem,
+  $form-select-max-width: 100%,
+  $form-select-min-height: spacing.$spacing-300,
+  $form-select-border: 1px solid color-scheme.$oc-gray-4,
+  $form-select-border-radius: spacing.$spacing-050,
+  $form-select-padding: spacing.$spacing-075 spacing.$spacing-100,
+
   // filter
   $filter-icon-color: semantic.$color-brand-primary-default,
-  $filter-icon-mask: icons.$chevron-down,
-  $filter-icon-width: 1.5rem,
-  $filter-icon-height: 1.5rem,
+  $filter-icon-mask: icons.$filter,
+  $filter-icon-width: 1rem,
+  $filter-icon-height: 1rem,
   $filter-button-font-size: 0,
-  $filter-close-icon-mask: icons.$chevron-up,
+  $filter-close-icon-mask: icons.$close,
   $filter-button-background-color: transparent,
   $filter-button-padding: 0,
+  $filter-button-gap: 0,
 
   // header
   $header-background-color: color-scheme.$oc-gray-9,
@@ -398,6 +492,7 @@ and spacing sets */
 
   // utility
   $horizontal-gap: spacing.$spacing-100,
+  $horizontal-group-gap: spacing.$spacing-100,
 
   // icon
   $icon-height: 1.5rem,
@@ -415,9 +510,12 @@ and spacing sets */
   $icon-mask-close: icons.$close,
   $icon-mask-descending: icons.$descending,
   $icon-mask-download: icons.$download,
+  $icon-mask-error: icons.$error,
+  $icon-mask-filter: icons.$filter,
   $icon-mask-hamburger: icons.$hamburger,
   $icon-mask-heart: icons.$heart,
   $icon-mask-home: icons.$home,
+  $icon-mask-informative: icons.$informative,
   $icon-mask-lock-closed: icons.$lock-closed,
   $icon-mask-on-off: icons.$on-off,
   $icon-mask-outgoing: icons.$outgoing,
@@ -429,6 +527,7 @@ and spacing sets */
   $icon-mask-to-top: icons.$to-top,
   $icon-mask-trash: icons.$trash,
   $icon-mask-user: icons.$user,
+  $icon-mask-warning: icons.$warning,
 
   // layout
   $layout-gap: 2.5rem,
@@ -438,6 +537,11 @@ and spacing sets */
   $link-hover-text-color: color-scheme.$oc-blue-9,
   $link-visited-text-color: color-scheme.$oc-violet-8,
   $link-visited-hover-text-color: color-scheme.$oc-violet-9,
+  $link-icon-width: 1rem,
+  $link-icon-height: 1rem,
+
+  // list
+  $list-item-padding: 0.25rem 0,
 
   // logo
   $logo-font-size: 0,
@@ -447,9 +551,9 @@ and spacing sets */
 
   // main
   $main-padding-top: spacing.$spacing-400,
-  $main-padding-right: 4rem,
+  $main-padding-right: spacing.$spacing-400,
   $main-padding-bottom: spacing.$spacing-400,
-  $main-padding-left: 4rem,
+  $main-padding-left: spacing.$spacing-400,
   $main-gap: spacing.$spacing-400,
 
   // nota bene
@@ -471,9 +575,14 @@ and spacing sets */
   $notification-border-width: 1px,
   $notification-gap: spacing.$spacing-100,
   $notification-border-radius: border-radii.$border-radius-m,
+  $notification-paragraph-gap: spacing.$spacing-050,
+  $notification-table-gap: spacing.$spacing-025,
 
   // notification type
-  $notification-span-font-weight: bold,
+  $notification-type-font-weight: bold,
+  $notification-type-order: -1,
+  $notification-type-gap: spacing.$spacing-025,
+  $notification-type-table-font-size: 0,
 
   // notification error
   $notification-error-background-color:
@@ -481,9 +590,7 @@ and spacing sets */
   $notification-error-text-color: semantic.$color-text-default,
   $notification-error-border-color:
     color-scheme.$color-notification-error-intense,
-  $notification-table-error-background-color:
-    color-scheme.$color-notification-error-subtle,
-  $notification-table-error-text-color: semantic.$color-text-default,
+  $notification-error-icon-color: color-scheme.$color-notification-error-intense,
 
   // notification warning
   $notification-warning-background-color:
@@ -491,9 +598,8 @@ and spacing sets */
   $notification-warning-text-color: semantic.$color-text-default,
   $notification-warning-border-color:
     color-scheme.$color-notification-warning-intense,
-  $notification-table-warning-background-color:
-    color-scheme.$color-notification-warning-subtle,
-  $notification-table-warning-text-color: semantic.$color-text-default,
+  $notification-warning-icon-color:
+    color-scheme.$color-notification-warning-intense,
 
   // notification explanation
   $notification-explanation-background-color:
@@ -501,9 +607,8 @@ and spacing sets */
   $notification-explanation-text-color: semantic.$color-text-default,
   $notification-explanation-border-color:
     color-scheme.$color-notification-explanation-intense,
-  $notification-table-explanation-background-color:
-    color-scheme.$color-notification-explanation-subtle,
-  $notification-table-explanation-text-color: semantic.$color-text-default,
+  $notification-explanation-icon-color:
+    color-scheme.$color-notification-explanation-intense,
 
   // notification confirmation
   $notification-confirmation-background-color:
@@ -511,9 +616,8 @@ and spacing sets */
   $notification-confirmation-text-color: semantic.$color-text-default,
   $notification-confirmation-border-color:
     color-scheme.$color-notification-confirmation-intense,
-  $notification-table-confirmation-background-color:
-    color-scheme.$color-notification-confirmation-subtle,
-  $notification-table-confirmation-text-color: semantic.$color-text-default,
+  $notification-confirmation-icon-color:
+    color-scheme.$color-notification-confirmation-intense,
 
   // notification system
   $notification-system-background-color:
@@ -521,9 +625,8 @@ and spacing sets */
   $notification-system-text-color: semantic.$color-text-default,
   $notification-system-border-color:
     color-scheme.$color-notification-system-intense,
-  $notification-table-system-background-color:
-    color-scheme.$color-notification-system-subtle,
-  $notification-table-system-text-color: semantic.$color-text-default,
+  $notification-system-icon-color:
+    color-scheme.$color-notification-system-intense,
 
   // p {
   $p-max-width: 42rem,
@@ -542,6 +645,7 @@ and spacing sets */
   $pagination-link-border-color: color-scheme.$oc-white,
   $pagination-link-border-width: 1px,
   $pagination-link-border-style: solid,
+  $pagination-link-text-color: color-scheme.$oc-blue-8,
 
   // pagination link hover
   $pagination-link-hover-background-color: semantic.$color-brand-primary-subtle,
@@ -580,6 +684,10 @@ and spacing sets */
   $sidemenu-nav-padding-bottom: spacing.$spacing-100,
   $sidemenu-nav-padding-left: spacing.$spacing-200,
 
+  // sidemenu main content
+  $sidemenu-page-padding-right: spacing.$spacing-200,
+  $sidemenu-page-padding-left: spacing.$spacing-200,
+
   // sidemenu button
   $sidemenu-button-background-color: color-scheme.$oc-white,
   $sidemenu-button-padding: spacing.$spacing-050,
@@ -599,6 +707,12 @@ and spacing sets */
   // sidemenu list
   $sidemenu-ul-padding: spacing.$spacing-100 0,
   $sidemenu-list-item-padding: spacing.$spacing-025 0,
+
+  // skip to content
+  $skip-to-content-padding: spacing.$spacing-050,
+  $skip-to-content-margin: 0 spacing.$spacing-100 0 0,
+  $skip-to-content-align-self: center,
+  $skip-to-content-order: 1,
 
   // slogan
   $slogan-text-color: semantic.$color-text-default,
@@ -635,6 +749,9 @@ and spacing sets */
   $tabs-item-current-font-weight: bold,
   $tabs-item-hover-text-color: color-scheme.$oc-blue-9,
 
+  // tab panel
+  $tab-panel-gap: spacing.$spacing-100,
+
   // set to focus border-width
   $tabs-outline-offset: -2px,
 
@@ -652,9 +769,36 @@ and spacing sets */
   $table-row-border-style: solid,
   $table-row-border-color: color-scheme.$oc-gray-1,
 
+  // Table body
+  $table-body-head-cell-padding: spacing.$spacing-075 spacing.$spacing-100,
+
   // table caption
   $table-caption-text-align: left,
   $table-caption-padding: spacing.$spacing-100 0,
+
+  // table condenced
+  $table-condensed-head-cell-padding: spacing.$spacing-025 spacing.$spacing-100,
+  $table-condensed-cell-padding: spacing.$spacing-025 spacing.$spacing-100,
+  $table-condensed-font-size: body-text.$body-text-s,
+
+  // table rowspan
+  $table-rowspan-border: 1px solid color-scheme.$oc-gray-1,
+
+  // table summary
+  $table-summary-max-width: 30rem,
+
+  // table sortable
+  $sortable-button-icon-width: 0.8rem,
+  $sortable-button-icon-height: 0.8rem,
+
+  //table footer
+  $table-foot-header-padding: spacing.$spacing-075 spacing.$spacing-100,
+
+  // table expando rows
+  $expando-rows-table-cell-padding: 0,
+  $expando-rows-content-gap: spacing.$spacing-150,
+  $expando-rows-row-background-color: color-scheme.$oc-blue-0,
+  $expando-rows-content-padding: spacing.$spacing-050,
 
   // tile
   $tile-background-color: color-scheme.$oc-white,
@@ -668,9 +812,37 @@ and spacing sets */
   $tile-border-radius: border-radii.$border-radius-m,
   $tile-text-color: semantic.$color-text-default,
 
-  // tile groups
+  // tile groups (group of tiles)
   $tile-groups-gap: spacing.$spacing-100,
+  $tile-gap: spacing.$spacing-050,
+
+  // tile group (grouping within a tile)
+  $tile-group-margin: spacing.$spacing-050 0 0 0,
+  $tile-group-border-width: 1px 0 0 0,
+  $tile-group-border-style: solid,
+  $tile-group-border-color: color-scheme.$oc-gray-2,
+  $tile-group-padding: spacing.$spacing-100 0 0 0,
 
   // tile image
-  $tile-image-cover-margin-bottom: spacing.$spacing-100
+  $tile-image-cover-margin-bottom: spacing.$spacing-100,
+
+  // Login meta
+  $login-meta-gap: spacing.$spacing-050,
+
+  // Language Selector
+  $language-selector-list-background-color: color-scheme.$oc-white,
+  $language-selector-list-box-shadow: 0px 4px 20px 0px rgb(0 0 0 / 10%),
+  $language-selector-list-max-width: 250px,
+  $language-selector-list-item-border-width: 0 0 1px 0,
+  $language-selector-list-item-border-style: solid,
+  $language-selector-list-item-border-color: color-scheme.$oc-gray-3,
+  $language-selector-list-item-hover-text-color: semantic.$color-text-default,
+  $language-selector-list-item-hover-background-color: color-scheme.$oc-blue-0,
+  $language-selector-list-item-link-padding: 0 1rem,
+  $language-selector-list-item-link-min-height: 3rem,
+  $language-selector-list-item-active-font-weight: bold,
+
+  // image background
+  $image-background-object-position: center,
+  $image-background-elements-padding: spacing.$spacing-150
 );

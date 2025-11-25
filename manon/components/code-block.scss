@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 pre,
@@ -9,29 +8,19 @@ div.code-block {
   width: 100%;
   box-sizing: border-box;
   margin: 0;
-
-  @include theming.apply-from-theme(
-    (
-      max-width: theme.$code-block-max-width,
-      padding: theme.$code-block-padding,
-      background-color: theme.$code-block-background-color,
-      color: theme.$code-block-text-color,
-      border-width: theme.$code-block-border-width,
-      border-style: theme.$code-block-border-style,
-      border-color: theme.$code-block-border-color,
-      border-radius: theme.$code-block-border-radius,
-    )
-  );
+  max-width: theme.$code-block-max-width;
+  padding: theme.$code-block-padding;
+  background-color: theme.$code-block-background-color;
+  color: theme.$code-block-text-color;
+  border-width: theme.$code-block-border-width;
+  border-style: theme.$code-block-border-style;
+  border-color: theme.$code-block-border-color;
+  border-radius: theme.$code-block-border-radius;
 
   > code {
     white-space: unset;
-
-    @include theming.apply-from-theme(
-      (
-        background-color: theme.$code-block-code-background-color,
-        padding: theme.$code-block-code-padding,
-      )
-    );
+    background-color: theme.$code-block-code-background-color;
+    padding: theme.$code-block-code-padding;
   }
 }
 

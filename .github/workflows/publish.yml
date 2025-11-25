@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Setup
         uses: ./.github/actions/setup
@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Setup
         uses: ./.github/actions/setup
@@ -74,3 +74,13 @@ jobs:
           pnpm --recursive publish --no-git-checks --access public --tag ${{ env.NPM_TAG }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Package themes
+        working-directory: themes
+        run: |
+          zip -r manon-themes.zip dist
+
+      - name: Upload themes to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: themes/manon-themes.zip

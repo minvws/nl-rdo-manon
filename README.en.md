@@ -86,17 +86,20 @@ following line to the `<head>` of your HTML file:
 npm install @minvws/manon @minvws/manon-themes
 ```
 
-You can then import a Manon theme in your Sass file:
+You can then import a theme from Manon and the complete component library into
+your Sass file:
 
 ```scss
 @use "@minvws/manon-themes/icore-open";
+@use "@minvws/manon/components/bundles/all";
 ```
 
-You also have the option to import specific components if you don’t need the
-full set:
+If you don’t want to use the full set, you have the option to import specific
+components instead:
 
 ```scss
-@use "@minvws/manon/components/hero";
+@use "@minvws/manon/components/breadcrumb-bar";
+@use "@minvws/manon/components/checkbox";
 ```
 
 Read more in the

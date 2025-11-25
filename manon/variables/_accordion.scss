@@ -15,6 +15,9 @@ $accordion-button-font-size: null !default;
 $accordion-button-font-weight: null !default;
 $accordion-button-border-radius: null !default;
 
+// Expaded button
+$accordion-expanded-button-border-radius: null !default;
+
 // First button
 $accordion-button-first-border-width: null !default;
 
@@ -59,7 +62,7 @@ $accordion-button-icon-before-closed-width: null !default;
 $accordion-button-icon-before-closed-height: null !default;
 
 // After icon (open)
-$accordion-button-icon-after-margin-left: null !default;
+$accordion-button-icon-after-margin-left: auto !default;
 $accordion-button-icon-after-margin-right: null !default;
 $accordion-button-icon-after-padding-right: null !default;
 $accordion-button-icon-after-padding-left: null !default;
@@ -69,7 +72,7 @@ $accordion-button-icon-after-width: null !default;
 $accordion-button-icon-after-height: null !default;
 
 // After icon (closed)
-$accordion-button-icon-after-closed-margin-left: null !default;
+$accordion-button-icon-after-closed-margin-left: auto !default;
 $accordion-button-icon-after-closed-margin-right: null !default;
 $accordion-button-icon-after-closed-padding-right: null !default;
 $accordion-button-icon-after-closed-padding-left: null !default;

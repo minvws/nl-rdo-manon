@@ -1,47 +1,36 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 %accordion {
   display: flex;
   flex-direction: column;
-
-  @include theming.apply-from-theme(
-    (
-      gap: theme.$accordion-gap,
-    )
-  );
+  gap: theme.$accordion-gap;
 }
 
 %accordion-button {
   width: 100%;
   text-decoration: none;
-
-  @include theming.apply-from-theme(
-    (
-      display: theme.$accordion-button-display,
-      padding: theme.$accordion-button-padding,
-      font-size: theme.$accordion-button-font-size,
-      font-weight: theme.$accordion-button-font-weight,
-      justify-content: theme.$accordion-button-justify-content,
-      line-height: theme.$accordion-button-line-height,
-      color: theme.$accordion-button-text-color,
-      background-color: theme.$accordion-button-background-color,
-      border-width: theme.$accordion-button-border-width,
-      border-style: theme.$accordion-button-border-style,
-      border-color: theme.$accordion-button-border-color,
-      border-radius: theme.$accordion-button-border-radius,
-    )
-  );
+  display: theme.$accordion-button-display;
+  padding: theme.$accordion-button-padding;
+  font-size: theme.$accordion-button-font-size;
+  font-weight: theme.$accordion-button-font-weight;
+  justify-content: theme.$accordion-button-justify-content;
+  line-height: theme.$accordion-button-line-height;
+  color: theme.$accordion-button-text-color;
+  background-color: theme.$accordion-button-background-color;
+  border-width: theme.$accordion-button-border-width;
+  border-style: theme.$accordion-button-border-style;
+  border-color: theme.$accordion-button-border-color;
+  border-radius: theme.$accordion-button-border-radius;
 
   &:hover {
-    @include theming.apply-from-theme(
-      (
-        color: theme.$accordion-button-hover-text-color,
-        background-color: theme.$accordion-button-hover-background-color,
-        border-width: theme.$accordion-button-hover-border-width,
-        border-color: theme.$accordion-button-hover-border-color,
-      )
-    );
+    color: theme.$accordion-button-hover-text-color;
+    background-color: theme.$accordion-button-hover-background-color;
+    border-width: theme.$accordion-button-hover-border-width;
+    border-color: theme.$accordion-button-hover-border-color;
+  }
+
+  &[aria-expanded="true"] {
+    border-radius: theme.$accordion-expanded-button-border-radius;
   }
 }
 
@@ -50,22 +39,17 @@
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
-
-  @include theming.apply-from-theme(
-    (
-      gap: theme.$accordion-content-gap,
-      padding: theme.$accordion-content-padding,
-      font-size: theme.$accordion-content-font-size,
-      font-weight: theme.$accordion-content-font-weight,
-      line-height: theme.$accordion-content-line-height,
-      border-width: theme.$accordion-content-border-width,
-      border-style: theme.$accordion-content-border-style,
-      border-color: theme.$accordion-content-border-color,
-      background-color: theme.$accordion-content-background-color,
-      color: theme.$accordion-content-text-color,
-      border-radius: theme.$accordion-content-border-radius,
-    )
-  );
+  gap: theme.$accordion-content-gap;
+  padding: theme.$accordion-content-padding;
+  font-size: theme.$accordion-content-font-size;
+  font-weight: theme.$accordion-content-font-weight;
+  line-height: theme.$accordion-content-line-height;
+  border-width: theme.$accordion-content-border-width;
+  border-style: theme.$accordion-content-border-style;
+  border-color: theme.$accordion-content-border-color;
+  background-color: theme.$accordion-content-background-color;
+  color: theme.$accordion-content-text-color;
+  border-radius: theme.$accordion-content-border-radius;
 
   > *:first-child {
     margin-top: 0;
@@ -83,6 +67,7 @@ ul.accordion {
     width: 100%;
     max-width: 100%;
     padding: 0;
+    gap: 0;
 
     > button {
       @extend %accordion-button;
@@ -102,11 +87,7 @@ ul.accordion {
   li {
     &:first-child {
       button {
-        @include theming.apply-from-theme(
-          (
-            border-width: theme.$accordion-button-first-border-width,
-          )
-        );
+        border-width: theme.$accordion-button-first-border-width;
       }
     }
   }
@@ -114,6 +95,7 @@ ul.accordion {
   /* Accordion item */
   > div {
     width: 100%;
+    gap: 0;
 
     > button {
       @extend %accordion-button;
@@ -145,19 +127,14 @@ section.accordion {
         &::before {
           mask-size: contain;
           content: "";
-
-          @include theming.apply-from-theme(
-            (
-              margin-right: theme.$accordion-button-icon-before-margin-right,
-              margin-left: theme.$accordion-button-icon-before-margin-left,
-              padding-right: theme.$accordion-button-icon-before-padding-right,
-              padding-left: theme.$accordion-button-icon-before-padding-left,
-              background-color: theme.$accordion-button-icon-before-color,
-              mask-image: theme.$accordion-button-icon-before-mask,
-              width: theme.$accordion-button-icon-before-width,
-              height: theme.$accordion-button-icon-before-height,
-            )
-          );
+          margin-right: theme.$accordion-button-icon-before-margin-right;
+          margin-left: theme.$accordion-button-icon-before-margin-left;
+          padding-right: theme.$accordion-button-icon-before-padding-right;
+          padding-left: theme.$accordion-button-icon-before-padding-left;
+          background-color: theme.$accordion-button-icon-before-color;
+          mask-image: theme.$accordion-button-icon-before-mask;
+          width: theme.$accordion-button-icon-before-width;
+          height: theme.$accordion-button-icon-before-height;
         }
       }
 
@@ -165,20 +142,14 @@ section.accordion {
         &::after {
           mask-size: contain;
           content: "";
-          margin-left: auto;
-
-          @include theming.apply-from-theme(
-            (
-              margin-right: theme.$accordion-button-icon-after-margin-right,
-              margin-left: theme.$accordion-button-icon-after-margin-left,
-              padding-right: theme.$accordion-button-icon-after-padding-right,
-              padding-left: theme.$accordion-button-icon-after-padding-left,
-              background-color: theme.$accordion-button-icon-after-color,
-              mask-image: theme.$accordion-button-icon-after-mask,
-              width: theme.$accordion-button-icon-after-width,
-              height: theme.$accordion-button-icon-after-height,
-            )
-          );
+          margin-right: theme.$accordion-button-icon-after-margin-right;
+          margin-left: theme.$accordion-button-icon-after-margin-left;
+          padding-right: theme.$accordion-button-icon-after-padding-right;
+          padding-left: theme.$accordion-button-icon-after-padding-left;
+          background-color: theme.$accordion-button-icon-after-color;
+          mask-image: theme.$accordion-button-icon-after-mask;
+          width: theme.$accordion-button-icon-after-width;
+          height: theme.$accordion-button-icon-after-height;
         }
       }
 
@@ -189,37 +160,24 @@ section.accordion {
 
     /* The expanded state */
     button[aria-expanded="true"] {
-      @include theming.apply-from-theme(
-        (
-          color: theme.$accordion-button-expanded-text-color,
-          background-color: theme.$accordion-button-expanded-background-color,
-          border-width: theme.$accordion-button-expanded-border-width,
-          border-color: theme.$accordion-button-expanded-border-color,
-        )
-      );
+      color: theme.$accordion-button-expanded-text-color;
+      background-color: theme.$accordion-button-expanded-background-color;
+      border-width: theme.$accordion-button-expanded-border-width;
+      border-color: theme.$accordion-button-expanded-border-color;
 
       // /* Close icon */
       @if theme.$accordion-button-icon-before-closed-mask {
         &::before {
           mask-size: contain;
           content: "";
-
-          @include theming.apply-from-theme(
-            (
-              margin-right:
-                theme.$accordion-button-icon-before-closed-margin-right,
-              margin-left:
-                theme.$accordion-button-icon-before-closed-margin-left,
-              padding-right:
-                theme.$accordion-button-icon-before-closed-padding-right,
-              padding-left:
-                theme.$accordion-button-icon-before-closed-padding-left,
-              background-color: theme.$accordion-button-icon-before-closed-color,
-              mask-image: theme.$accordion-button-icon-before-closed-mask,
-              width: theme.$accordion-button-icon-before-closed-width,
-              height: theme.$accordion-button-icon-before-closed-height,
-            )
-          );
+          margin-right: theme.$accordion-button-icon-before-closed-margin-right;
+          margin-left: theme.$accordion-button-icon-before-closed-margin-left;
+          padding-right: theme.$accordion-button-icon-before-closed-padding-right;
+          padding-left: theme.$accordion-button-icon-before-closed-padding-left;
+          background-color: theme.$accordion-button-icon-before-closed-color;
+          mask-image: theme.$accordion-button-icon-before-closed-mask;
+          width: theme.$accordion-button-icon-before-closed-width;
+          height: theme.$accordion-button-icon-before-closed-height;
         }
       }
 
@@ -227,23 +185,14 @@ section.accordion {
         &::after {
           mask-size: contain;
           content: "";
-          margin-left: auto;
-
-          @include theming.apply-from-theme(
-            (
-              margin-right:
-                theme.$accordion-button-icon-after-closed-margin-right,
-              margin-left: theme.$accordion-button-icon-after-closed-margin-left,
-              padding-right:
-                theme.$accordion-button-icon-after-closed-padding-right,
-              padding-left:
-                theme.$accordion-button-icon-after-closed-padding-left,
-              background-color: theme.$accordion-button-icon-after-closed-color,
-              mask-image: theme.$accordion-button-icon-after-closed-mask,
-              width: theme.$accordion-button-icon-after-closed-width,
-              height: theme.$accordion-button-icon-after-closed-height,
-            )
-          );
+          margin-right: theme.$accordion-button-icon-after-closed-margin-right;
+          margin-left: theme.$accordion-button-icon-after-closed-margin-left;
+          padding-right: theme.$accordion-button-icon-after-closed-padding-right;
+          padding-left: theme.$accordion-button-icon-after-closed-padding-left;
+          background-color: theme.$accordion-button-icon-after-closed-color;
+          mask-image: theme.$accordion-button-icon-after-closed-mask;
+          width: theme.$accordion-button-icon-after-closed-width;
+          height: theme.$accordion-button-icon-after-closed-height;
         }
       }
     }

@@ -14,7 +14,7 @@ Voor het weergeven van content binnen een article
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/article";
+@use "@minvws/manon/components/article";
 ```
 
 ### Benodigde stappen

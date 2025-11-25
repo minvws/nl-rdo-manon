@@ -17,8 +17,8 @@ een toelichting.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
-@use "@minvws/manon/notification";
+@use "@minvws/manon/components/table";
+@use "@minvws/manon/components/notification";
 ```
 
 ### Benodigde stappen
@@ -40,39 +40,73 @@ SCSS importeren:
 
 <div class="horizontal-scroll">
   <table>
-    <caption> Tabelvoorbeeld meldingen: </caption>
+    <caption>Voorbeeldtabel met medische middelen: </caption>
     <thead>
       <tr>
-        <th scope="col">Table header heading 1</th>
-        <th scope="col">Table header heading 2</th>
-        <th scope="col">Table header heading 3</th>
+        <th scope="col">Middel</th>
+        <th scope="col">Voorraad</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="error">Foutmelding op tabelrij</td>
-        <td class="error">Foutmelding op tabelrij</td>
-        <td class="error">Foutmelding op tabelrij</td>
+        <td>Alcohol wipes</td>
+        <td class="warning"> 
+          <div>
+            <span class="notification-type">
+              <span class="icon icon-warning" aria-hidden="true"></span>
+              Waarschuwing:
+            </span>
+            Onvoldoende op vooraad
+          </div>
+        </td>
       </tr>
       <tr>
-        <td class="warning">Waarschuwing op tabelrij</td>
-        <td class="warning">Waarschuwing op tabelrij</td>
-        <td class="warning">Waarschuwing op tabelrij</td>
+        <td >Steriele gaasjes</td>
+        <td class="error">
+          <div>
+            <span class="notification-type">
+              <span class="icon icon-error" aria-hidden="true"></span>
+              Foutmelding:
+            </span>
+            Momenteel niet beschikbaar
+          </div>
+        </td>
       </tr>
       <tr>
-        <td class="confirmation">Bevestiging op tabelrij</td>
-        <td class="confirmation">Bevestiging op tabelrij</td>
-        <td class="confirmation">Bevestiging op tabelrij</td>
+        <td>Chirurgisch mondmaskers</td>
+        <td class="explanation">
+          <div>
+            <span class="notification-type">
+              <span class="icon icon-informative" aria-hidden="true"></span>
+              Toelichting:
+            </span>
+            Let op er zijn verschillende types op voorraad
+          </div>
+        </td>
       </tr>
       <tr>
-        <td class="explanation">Toelichting op tabelrij</td>
-        <td class="explanation">Toelichting op tabelrij</td>
-        <td class="explanation">Toelichting op tabelrij</td>
+        <td>Zoutoplossing (fysiologisch serum)</td>
+        <td class="confirmation">
+          <div>
+            <span class="notification-type">
+              <span class="icon icon-check" aria-hidden="true"></span>
+              Bevestiging:
+            </span>
+            Voldoende op voorraad
+          </div>
+        </td>
       </tr>
-      <tr>
-        <td class="primary">Primair op tabelrij</td>
-        <td class="primary">Primair op tabelrij</td>
-        <td class="primary">Primair op tabelrij</td>
+       <tr>
+        <td>Wegwerphandschoenen</td>
+        <td class="system">
+          <div>
+            <span class="notification-type">
+              <span class="icon icon-informative" aria-hidden="true"></span>
+              Systeembericht:
+            </span>
+            Momenteel geen status beschikbaar
+          </div>
+        </td>
       </tr>
     </tbody>
   </table>
@@ -82,40 +116,74 @@ SCSS importeren:
 <div class="horizontal-scroll">
   <table>
     <caption>
-      Tabelvoorbeeld meldingen:
+      Voorbeeldtabel met medische middelen:
     </caption>
     <thead>
       <tr>
-        <th scope="col">Table header heading 1</th>
-        <th scope="col">Table header heading 2</th>
-        <th scope="col">Table header heading 3</th>
+        <th scope="col">Middel</th>
+        <th scope="col">Voorraad</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="error">Foutmelding op tabelrij</td>
-        <td class="error">Foutmelding op tabelrij</td>
-        <td class="error">Foutmelding op tabelrij</td>
+        <td>Alcohol wipes</td>
+        <td class="warning">
+          <div>
+            <span class="notification-type">
+              <span class="icon icon-warning" aria-hidden="true"></span>
+              Waarschuwing:
+            </span>
+            Onvoldoende op vooraad
+          </div>
+        </td>
       </tr>
       <tr>
-        <td class="warning">Waarschuwing op tabelrij</td>
-        <td class="warning">Waarschuwing op tabelrij</td>
-        <td class="warning">Waarschuwing op tabelrij</td>
+        <td>Steriele gaasjes</td>
+        <td class="error">
+          <div>
+            <span class="notification-type">
+              <span class="icon icon-error" aria-hidden="true"></span>
+              Foutmelding:
+            </span>
+            Momenteel niet beschikbaar
+          </div>
+        </td>
       </tr>
       <tr>
-        <td class="confirmation">Bevestiging op tabelrij</td>
-        <td class="confirmation">Bevestiging op tabelrij</td>
-        <td class="confirmation">Bevestiging op tabelrij</td>
+        <td>Chirurgisch mondmaskers</td>
+        <td class="explanation">
+          <div>
+            <span class="notification-type">
+              <span class="icon icon-informative" aria-hidden="true"></span>
+              Toelichting:
+            </span>
+            Let op er zijn verschillende types op voorraad
+          </div>
+        </td>
       </tr>
       <tr>
-        <td class="explanation">Toelichting op tabelrij</td>
-        <td class="explanation">Toelichting op tabelrij</td>
-        <td class="explanation">Toelichting op tabelrij</td>
+        <td>Zoutoplossing (fysiologisch serum)</td>
+        <td class="confirmation">
+          <div>
+            <span class="notification-type">
+              <span class="icon icon-check" aria-hidden="true"></span>
+              Bevestiging:
+            </span>
+            Voldoende op voorraad
+          </div>
+        </td>
       </tr>
       <tr>
-        <td class="primary">Primair op tabelrij</td>
-        <td class="primary">Primair op tabelrij</td>
-        <td class="primary">Primair op tabelrij</td>
+        <td>Wegwerphandschoenen</td>
+        <td class="system">
+          <div>
+            <span class="notification-type">
+              <span class="icon icon-informative" aria-hidden="true"></span>
+              Systeembericht:
+            </span>
+            Momenteel geen status beschikbaar
+          </div>
+        </td>
       </tr>
     </tbody>
   </table>

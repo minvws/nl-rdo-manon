@@ -16,7 +16,7 @@ Subtielere weergave om knoppen die ondergeschikt zijn aan standaard knoppen visu
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/button-secondary";
+@use "@minvws/manon/components/button-secondary";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

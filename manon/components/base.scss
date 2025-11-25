@@ -1,10 +1,16 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  background-color: theme.$base-background-color;
+  color: theme.$base-text-color;
+  font-family: theme.$base-font-family;
+  font-size: theme.$base-font-size;
+  line-height: theme.$base-line-height;
+  font-weight: theme.$base-font-weight;
+  text-align: theme.$base-text-align;
 
   /* Set to always fill the page and the footer
   will never be in the middle of the screen  		*/
@@ -25,16 +31,4 @@ body {
     flex-direction: column;
     position: relative;
   }
-
-  @include theming.apply-from-theme(
-    (
-      background-color: theme.$base-background-color,
-      color: theme.$base-text-color,
-      font-family: theme.$base-font-family,
-      font-size: theme.$base-font-size,
-      line-height: theme.$base-line-height,
-      font-weight: theme.$base-font-weight,
-      text-align: theme.$base-text-align,
-    )
-  );
 }

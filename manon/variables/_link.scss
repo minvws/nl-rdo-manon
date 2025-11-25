@@ -1,4 +1,7 @@
 $link-text-color: null !default;
+$link-text-decoration: null !default;
+$link-display: inline-flex !default;
+$link-align-items: center !default;
 
 // hover
 $link-hover-text-color: null !default;
@@ -6,3 +9,10 @@ $link-hover-text-color: null !default;
 // visited
 $link-visited-text-color: null !default;
 $link-visited-hover-text-color: null !default;
+
+// Icon
+$link-icon-margin: null !default;
+$link-icon-padding: null !default;
+$link-icon-color: null !default;
+$link-icon-width: null !default;
+$link-icon-height: null !default;

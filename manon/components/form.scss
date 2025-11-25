@@ -1,55 +1,37 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
-form,
-main section form,
-main article form,
-main div form {
+form {
   display: flex;
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
-
-  @include theming.apply-from-theme(
-    (
-      align-items: theme.$form-align-items,
-      justify-content: theme.$form-justify-content,
-      padding-top: theme.$form-padding-top,
-      padding-right: theme.$form-padding-right,
-      padding-bottom: theme.$form-padding-bottom,
-      padding-left: theme.$form-padding-left,
-      background-color: theme.$form-background-color,
-      color: theme.$form-text-color,
-      font-size: theme.$form-font-size,
-      line-height: theme.$form-line-height,
-      font-weight: theme.$form-font-weight,
-      gap: theme.$form-gap,
-      border-width: theme.$form-border-width,
-      border-style: theme.$form-border-style,
-      border-color: theme.$form-border-color,
-      max-width: theme.$form-max-width,
-    )
-  );
+  align-items: theme.$form-align-items;
+  justify-content: theme.$form-justify-content;
+  padding-top: theme.$form-padding-top;
+  padding-right: theme.$form-padding-right;
+  padding-bottom: theme.$form-padding-bottom;
+  padding-left: theme.$form-padding-left;
+  background-color: theme.$form-background-color;
+  color: theme.$form-text-color;
+  font-size: theme.$form-font-size;
+  line-height: theme.$form-line-height;
+  font-weight: theme.$form-font-weight;
+  gap: theme.$form-gap;
+  border-width: theme.$form-border-width;
+  border-style: theme.$form-border-style;
+  border-color: theme.$form-border-color;
+  max-width: theme.$form-max-width;
 
   div,
   div.form-group {
     display: flex;
-
-    @include theming.apply-from-theme(
-      (
-        gap: theme.$form-group-gap,
-        flex-direction: theme.$form-group-flex-direction,
-        align-items: theme.$form-group-align-items,
-        justify-content: theme.$form-group-justify-content,
-      )
-    );
+    gap: theme.$form-group-gap;
+    flex-direction: theme.$form-group-flex-direction;
+    align-items: theme.$form-group-align-items;
+    justify-content: theme.$form-group-justify-content;
 
     label {
-      @include theming.apply-from-theme(
-        (
-          order: theme.$form-group-label-order,
-        )
-      );
+      order: theme.$form-group-label-order;
     }
   }
 
@@ -66,21 +48,5 @@ main div form {
     display: table-cell;
     width: auto;
     text-align: center;
-  }
-}
-
-/* Resetting inherited layout padding */
-main {
-  div,
-  div div,
-  section,
-  section div,
-  article,
-  article div {
-    form {
-      div {
-        padding: 0;
-      }
-    }
   }
 }

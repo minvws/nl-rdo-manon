@@ -16,8 +16,7 @@ Een kleurselector stelt de gebruiker in staat om een kleur te kiezen uit een vis
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/form";
-@use "@minvws/manon/form-input-color";
+@use "@minvws/manon/components/color-picker";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
@@ -39,17 +38,16 @@ SCSS importeren:
 </form>
 ```
 
-<div class="explanation" role="group" aria-label="Toelichting">
-  <span>Aandachtspunten</span>
-  <ul>
-    <li>
-      Voeg `type="color"` toe aan het invoerveld.
-    </li>
-    <li>
+<div class="explanation">
+  <span class="notification-type">
+    <span class="icon icon-informative" aria-hidden="true"></span>
+    Aandachtspunten
+  </span>
+    <p>Voeg `type="color"` toe aan het invoerveld.</p>
+    <p>
       Voeg basiskleurwaarde met een hexidecimalekleurcode aan binnen: `value`.
       Voorbeeld: `value="#ffffff"`. De ingevoerde kleur is de kleur waarin het
       selectievak getoont wordt binnen het formulier voordat de gebruiker een
       andere keuze maakt.
-    </li>
-  </ul>
+    </p>
 </div>

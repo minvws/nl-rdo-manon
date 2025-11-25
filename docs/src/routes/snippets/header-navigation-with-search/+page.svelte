@@ -22,18 +22,15 @@
         <li><a href={page.url.pathname}>Voorbeeld-link 3</a></li>
       </ul>
 
-      <div>
-        <form action="" method="post" class="inline">
-          <div>
-            <div class="combined-field">
-              <input type="text" placeholder="Zoeken" />
-              <button type="submit">
-                <span class="icon icon-search" aria-hidden="true">Zoek</span>
-              </button>
-            </div>
+      <form action="">
+        <div>
+          <label for="voorbeeld-1-date-1-start" class="visually-hidden">Zoeken</label>
+          <div class="combined-field">
+            <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" type="text" />
+            <button><span class="icon icon-search"></span></button>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   </nav>
 </header>

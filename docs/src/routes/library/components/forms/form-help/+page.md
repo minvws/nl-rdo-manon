@@ -16,7 +16,7 @@ Hulptesksten (extra toelichting) bij een invoerveld geeft de gebruiker duidelijk
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/form-help";
+@use "@minvws/manon/components/form-help";
 ```
 
 JavaScript importeren:
@@ -44,7 +44,7 @@ import "@minvws/manon/js/form-help.js";
   <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
     >Help op simpel formulierveld</label
   >
-  <div>
+  <div class="help-container">
     <input
       id="voorbeeld-text-input-met-hulptekst-simpel-1"
       name="voorbeeld-text-input"
@@ -68,7 +68,7 @@ import "@minvws/manon/js/form-help.js";
 ```html
 <form action="" method="post" class="help">
   <label for="voorbeeld-text-input-met-hulptekst-simpel-1">Help op simpel formulierveld</label>
-  <div>
+  <div class="help-container">
     <input
       id="voorbeeld-text-input-met-hulptekst-simpel-1"
       name="voorbeeld-text-input"
@@ -95,9 +95,9 @@ import "@minvws/manon/js/form-help.js";
   <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
     >Help op simpel formulierveld</label
   >
-  <div>
+  <div class="help-container">
     <span class="nota-bene">Dit veld is verplicht</span>
-    <div>
+    <div class="help-container">
       <input
         id="example-input-help-required"
         name="voorbeeld-text-input"
@@ -123,7 +123,7 @@ import "@minvws/manon/js/form-help.js";
 ```html
 <form action="" method="post" class="help">
   <label for="example-input-help-required">Help op simpel formulierveld</label>
-  <div>
+  <div class="help-container">
     <span class="nota-bene">Dit veld is verplicht</span>
     <div>
       <input

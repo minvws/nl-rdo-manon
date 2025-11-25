@@ -17,7 +17,7 @@ Ook kan het een manier zijn om aan te geven waar de gebruikers-specifieke instel
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/avatar";
+@use "@minvws/manon/components/avatar";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

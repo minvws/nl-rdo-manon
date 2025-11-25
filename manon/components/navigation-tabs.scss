@@ -1,4 +1,3 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 nav.tabs {
@@ -19,22 +18,12 @@ nav.tabs {
         color: inherit;
         height: 100%;
         box-sizing: border-box;
-
-        @include theming.apply-from-theme(
-          (
-            padding: theme.$navigation-tabs-list-item-padding,
-          )
-        );
+        padding: theme.$navigation-tabs-list-item-padding;
 
         &:hover {
-          @include theming.apply-from-theme(
-            (
-              background-color:
-                theme.$navigation-tabs-list-item-hover-background-color,
-              color: theme.$navigation-tabs-list-item-hover-text-color,
-              text-decoration: theme.$navigation-tabs-link-text-decoration,
-            )
-          );
+          background-color: theme.$navigation-tabs-list-item-hover-background-color;
+          color: theme.$navigation-tabs-list-item-hover-text-color;
+          text-decoration: theme.$navigation-tabs-link-text-decoration;
         }
       }
     }

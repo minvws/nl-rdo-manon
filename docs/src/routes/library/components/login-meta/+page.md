@@ -14,7 +14,7 @@ nav:
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/login-meta";
+@use "@minvws/manon/components/login-meta";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
@@ -25,4 +25,40 @@ nav:
 
 ```html
 <p class="login-meta">Ingelogd als: <a href="">Jane Doe</a></p>
+```
+
+### Voorbeeld: Binnen header
+
+<div class="resize">
+  <iframe src="/snippets/login-meta" title="Voorbeeld" height="72px"></iframe>
+</div>
+
+```html
+<header>
+  <div class="content-wrapper">
+    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+
+    <nav
+      data-open-label="Menu"
+      data-close-label="Sluit menu"
+      data-media="(min-width: 30rem)"
+      aria-label="Hoofdnavigatie"
+      class="collapsible"
+    >
+      <div class="collapsing-element">
+        <ul>
+          <li><a href="{page.url.pathname}">Voorbeeld-link 1</a></li>
+          <li><a href="{page.url.pathname}">Voorbeeld-link 2</a></li>
+          <li><a href="{page.url.pathname}">Voorbeeld-link 3</a></li>
+        </ul>
+
+        <ul class="actions">
+          <p class="login-meta">Ingelogd als: <a href="login-meta">Jane Doe</a></p>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content"></main>
 ```

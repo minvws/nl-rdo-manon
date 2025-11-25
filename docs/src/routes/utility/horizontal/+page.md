@@ -18,7 +18,7 @@ elkaar moeten staan.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/horizontal";
+@use "@minvws/manon/utility/horizontal";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
@@ -26,14 +26,14 @@ SCSS importeren:
 ### Voorbeeld: Horizontaal uitgelijnd
 
 <div class="horizontal">
-  <button class="ghost">Terug</button>
+  <button class="secondary">Terug</button>
   <button>Verder</button>
 </div>
 
 ```html
 <div class="horizontal">
   <!-- horizontaal uit te lijnen content -->
-  <button class="ghost">Terug</button>
+  <button class="secondary">Terug</button>
   <button>Verder</button>
 </div>
 ```
@@ -44,12 +44,12 @@ Voeg de class `horizontal` toe op het horizontaal uit te lijnen element.
 
 <div class="horizontal-group" id="horizontal-group">
   <div>
-    <button class="ghost">Terug</button>
+    <button class="secondary">Terug</button>
     <button>Verder</button>
   </div>
 
   <div>
-    <button class="ghost">Terug</button>
+    <button class="secondary">Terug</button>
     <button>Verder</button>
   </div>
 </div>
@@ -58,13 +58,13 @@ Voeg de class `horizontal` toe op het horizontaal uit te lijnen element.
 <div class="horizontal-group">
   <div>
     <!-- horizontaal uit te lijnen content -->
-    <button class="ghost">Terug</button>
+    <button class="secondary">Terug</button>
     <button>Verder</button>
   </div>
 
   <div>
     <!-- horizontaal uit te lijnen content -->
-    <button class="ghost">Terug</button>
+    <button class="secondary">Terug</button>
     <button>Verder</button>
   </div>
 </div>

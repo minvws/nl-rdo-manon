@@ -22,7 +22,7 @@ een extra toevoeging zijn voor lange pagina’s.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/breadcrumb-bar";
+@use "@minvws/manon/components/breadcrumb-bar";
 ```
 
 <h2 id="examples">Voorbeelden:</h2>

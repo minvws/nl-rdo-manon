@@ -1,5 +1,23 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
+
+@mixin in-focus {
+  position: static;
+  display: flex;
+  height: auto;
+  width: theme.$skip-to-content-width;
+  padding: theme.$skip-to-content-padding;
+  margin: theme.$skip-to-content-margin;
+  min-height: theme.$skip-to-content-min-height;
+  border-width: theme.$skip-to-content-border-width;
+  border-style: theme.$skip-to-content-border-style;
+  border-color: theme.$skip-to-content-border-color;
+  background-color: theme.$skip-to-content-background-color;
+  color: theme.$skip-to-content-text-color;
+  align-self: theme.$skip-to-content-align-self;
+  order: theme.$skip-to-content-order;
+  font-size: theme.$skip-to-content-font-size;
+  text-align: theme.$skip-to-content-text-align;
+}
 
 .skip-to-content,
 a.button.skip-to-content {
@@ -7,41 +25,20 @@ a.button.skip-to-content {
 	from the flow. */
   display: block;
   min-height: 0;
-  font-size: 0;
   padding: 0;
   border: 0;
   max-width: 100%;
+  font-size: 0;
 
   &:focus {
-    position: static;
-    display: flex;
-    height: auto;
-
-    @include theming.apply-from-theme(
-      (
-        width: theme.$skip-to-content-width,
-        padding: theme.$skip-to-content-padding,
-        text-align: theme.$skip-to-content-text-align,
-        font-size: theme.$skip-to-content-font-size,
-        min-height: theme.$skip-to-content-min-height,
-        border-width: theme.$skip-to-content-border-width,
-        border-style: theme.$skip-to-content-border-style,
-        border-color: theme.$skip-to-content-border-color,
-        background-color: theme.$skip-to-content-background-color,
-        color: theme.$skip-to-content-text-color,
-      )
-    );
+    @include in-focus;
   }
 
   &:hover {
-    @include theming.apply-from-theme(
-      (
-        background-color: theme.$skip-to-content-hover-background-color,
-        color: theme.$skip-to-content-hover-text-color,
-        border-width: theme.$skip-to-content-hover-border-width,
-        border-style: theme.$skip-to-content-hover-border-style,
-        border-color: theme.$skip-to-content-hover-border-color,
-      )
-    );
+    background-color: theme.$skip-to-content-hover-background-color;
+    color: theme.$skip-to-content-hover-text-color;
+    border-width: theme.$skip-to-content-hover-border-width;
+    border-style: theme.$skip-to-content-hover-border-style;
+    border-color: theme.$skip-to-content-hover-border-color;
   }
 }

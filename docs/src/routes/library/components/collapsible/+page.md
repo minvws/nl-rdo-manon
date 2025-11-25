@@ -9,33 +9,44 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Een inklapbaar component is een element op een website dat extra informatie verbergt en pas toont wanneer de gebruiker erop klikt of tapt. Zo blijft de pagina overzichtelijk en kan de gebruiker zelf bepalen wat hij wil uitklappen.
+Een inklapbaar component is een element op een website dat extra informatie
+verbergt en pas toont wanneer de gebruiker erop klikt of tapt. Zo blijft de
+pagina overzichtelijk en kan de gebruiker zelf bepalen wat hij wil uitklappen.
 
 <h2 id="quickstart">Snelstart</h2>
 
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/collapsible";
+@use "@minvws/manon/components/collapsible";
 ```
 
 Javascript importeren:
 
 ```javascript
-import "@minvws/manon/collapsible";
+import "@minvws/manon/js/collapsible.js";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
 
 ### Voorbeeld: Collapsible zonder gedefinieerde `button` labels
 
-In het attribuut `data-open-label` kan tekst worden geplaatst om de gebruiker te informeren over het element wat gaat openklappen. Voor `data-close-label` geldt hetzelfde, maar dan voor het sluiten van het element.
+In het attribuut `data-open-label` kan tekst worden geplaatst om de gebruiker te
+informeren over het element wat gaat openklappen. Voor `data-close-label` geldt
+hetzelfde, maar dan voor het sluiten van het element.
 
 Deze teksten worden zowel visueel op de knop, als voor screen-readers gebruikt.
 
-Als er verschillende teksten nodig zijn voor screenreadable-gebruikers en overige gebruikers kan er een extra knoptekst worden toegevoegd. Voor screenreader gebruikers worden in dat geval beide teksten opgelezen. Eerst de tekst zoals deze in `data-open-label/data-close-label` staat. En daaropvolgend de inhoud van `data-button-open-label/data-button-close-label`. Overige gebruikers zien alleen de inhoud van `data-button-open-label/data-button-close-label` als inhoud van de knop.
+Als er verschillende teksten nodig zijn voor screenreadable-gebruikers en
+overige gebruikers kan er een extra knoptekst worden toegevoegd. Voor
+screenreader gebruikers worden in dat geval beide teksten opgelezen. Eerst de
+tekst zoals deze in `data-open-label/data-close-label` staat. En daaropvolgend
+de inhoud van `data-button-open-label/data-button-close-label`. Overige
+gebruikers zien alleen de inhoud van
+`data-button-open-label/data-button-close-label` als inhoud van de knop.
 
-Als er geen `data-open-label en/of data-close-label` wordt/worden gedefinieerd, dan zal het component terugvallen op respectievelijk "Menu" en "Sluit menu".
+Als er geen `data-open-label en/of data-close-label` wordt/worden gedefinieerd,
+dan zal het component terugvallen op respectievelijk "Menu" en "Sluit menu".
 
 <div
   data-open-label="Dropdown menu"
@@ -71,11 +82,21 @@ Als er geen `data-open-label en/of data-close-label` wordt/worden gedefinieerd, 
 
 ### Voorbeeld: Collapsible met gedefinieerde `button` labels
 
-In het attribuut `data-button-open-label` kan tekst worden geplaatst die visueel op de knop wordt getoond, om de gebruiker te informeren over het element wat gaat openklappen. Voor `data-button-close-label` geldt hetzelfde, maar dan voor het sluiten van het element.
+In het attribuut `data-button-open-label` kan tekst worden geplaatst die visueel
+op de knop wordt getoond, om de gebruiker te informeren over het element wat
+gaat openklappen. Voor `data-button-close-label` geldt hetzelfde, maar dan voor
+het sluiten van het element.
 
-Deze teksten gelden enkel als visuele weergave op de knop, voor screen-readers gebruikt het component de attributen `data-open-label` en `data-close-label` zijn gedefinieerd. In dat geval worden beide teksten opgelezen. Eerst de tekst zoals deze in `data-open-label/data-close-label` staat. En daaropvolgend de inhoud van `data-button-open-label/data-button-close-label`. Overige gebruikers zien alleen de inhoud van `data-button-open-label/data-button-close-label` als inhoud van de knop.
+Deze teksten gelden enkel als visuele weergave op de knop, voor screen-readers
+gebruikt het component de attributen `data-open-label` en `data-close-label`
+zijn gedefinieerd. In dat geval worden beide teksten opgelezen. Eerst de tekst
+zoals deze in `data-open-label/data-close-label` staat. En daaropvolgend de
+inhoud van `data-button-open-label/data-button-close-label`. Overige gebruikers
+zien alleen de inhoud van `data-button-open-label/data-button-close-label` als
+inhoud van de knop.
 
-Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal het component terugvallen op respectievelijk "Menu" en "Sluit menu".
+Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
+het component terugvallen op respectievelijk "Menu" en "Sluit menu".
 
 <div
   data-button-open-label="Gedefinieerde open menu text"
@@ -151,13 +172,13 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
 </div>
 ```
 
-### Voorbeeld: Inklapbare ghost button
+### Voorbeeld: Inklapbare secondary button
 
 <div
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  data-button-classes="ghost"
+  data-button-classes="secondary"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -174,7 +195,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  data-button-classes="ghost"
+  data-button-classes="secondary"
   class="collapsible"
 >
   <div class="collapsing-element">
@@ -193,7 +214,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  data-button-classes="icon icon-cat"
+  data-button-classes="icon icon-chevron-down"
   class="collapsible">
 
   <div class="collapsing-element">
@@ -210,7 +231,7 @@ Als er geen `data-open-label` of `data-close-label` worden gedefinieerd, dan zal
   data-open-label="Dropdown menu"
   data-close-label="Sluit dropdown menu"
   data-media="(min-width: 100%)"
-  data-button-classes="icon icon-cat"
+  data-button-classes="icon icon-chevron-down"
   class="collapsible"
 >
   <div class="collapsing-element">

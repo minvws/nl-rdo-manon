@@ -1,31 +1,23 @@
-@use "../mixins/theming";
 @use "../variables" as theme;
 
 .combined-field {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: flex-start;
   gap: theme.$form-combined-field-gap;
   flex-wrap: nowrap;
 
   input {
-    @include theming.apply-from-theme(
-      (
-        border-radius: theme.$form-combined-field-input-border-radius,
-      )
-    );
+    border-radius: theme.$form-combined-field-input-border-radius;
   }
 
   button {
     min-height: theme.$form-combined-field-button-min-height;
-
-    @include theming.apply-from-theme(
-      (
-        border-radius: theme.$form-combined-field-button-border-radius,
-        border-width: theme.$form-combined-field-input-border-width,
-        border-color: theme.$form-button-background-color,
-      )
-    );
+    border-radius: theme.$form-combined-field-button-border-radius;
+    border-width: theme.$form-combined-field-button-border-width;
+    border-color: theme.$form-combined-field-button-border-color;
+    padding: theme.$form-combined-field-button-padding;
+    min-width: theme.$form-combined-field-button-min-width;
+    justify-content: theme.$form-combined-field-button-justify-content;
   }
 }

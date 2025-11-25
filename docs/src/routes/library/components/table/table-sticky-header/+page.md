@@ -1,6 +1,6 @@
 ---
-title: "sticky header"
-breadcrumb: "sticky header"
+title: "Sticky header"
+breadcrumb: "Sticky header"
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
@@ -17,8 +17,8 @@ houden zodat de gebruiker de titels kan zien.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/table";
-@use "@minvws/manon/sticky-header";
+@use "@minvws/manon/components/table";
+@use "@minvws/manon/components/sticky-header";
 ```
 
 ### Benodigde stappen
