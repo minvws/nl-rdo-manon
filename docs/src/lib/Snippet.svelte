@@ -1,21 +1,14 @@
 <!--
-  Snippet.svelte
+  @component
 
-  A component to display content from a file snippet, with options for rendering.
+  Snippet is a Svelte component for displaying code snippets with syntax
+  highlighting.
 
-  Props:
-    - as: "code" | "raw" | "text"
-        Determines how the content is rendered.
-        - "code": (Default) Renders with syntax highlighting in a <pre><code> block.
-        - "raw": Renders as raw HTML using {@html}.
-        - "text": Renders as plain text.
-    - language: "html" | "css" | "scss" | "javascript" | "shell" | "plaintext"
-        The language for syntax highlighting when `as` is "code".
-    - code: string
-        Static code content to display. Used if `path` is not provided.
-    - path: string
-        Relative path to a snippet file (e.g., "accordion/ul.html").
-        If provided, the file is loaded asynchronously and overrides `code`.
+  @prop { "code" | "raw" | "text" } [as="code"] - How to render the snippet content.
+  @prop { "html" | "css" | "scss" | "javascript" | "shell" | "plaintext" } [language="plaintext"] - Language for syntax highlighting.
+  @prop {string} [code=""] - Static code content to display.
+  @prop {string} [path=""] - Relative path to a snippet file to load content from.
+
 -->
 <script module lang="ts">
   // This script runs once when the module is first evaluated.
