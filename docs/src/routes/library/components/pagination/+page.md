@@ -16,7 +16,7 @@ bladeren.
 <h2 id="quickstart">Snelstart</h2>
 
 ```scss
-@use "@minvws/manon/pagination";
+@use "@minvws/manon/components/pagination";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
@@ -28,7 +28,7 @@ bladeren.
 <Components.Snippet path="pagination/pagination.html" as="code" language="html"
 />
 
-### Voorbeeld: Met class `pagination` en "vorige" en "volgende links.
+### Voorbeeld: Met class `pagination` en "vorige" en "volgende links
 
 <Components.Snippet path="pagination/pagination-with-links.html" as="raw" />
 
