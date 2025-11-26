@@ -32,7 +32,7 @@ SCSS importeren:
 ### Geactiveerd voorbeeld
 
 <div class="resize">
-  <iframe src="/snippets/skip-to-content-active" title="Voorbeeld" height="240px"></iframe>
+  <iframe src="/snippets/skip-to-content-active" title="Voorbeeld"></iframe>
 </div>
 
 ### Standaard weergave
@@ -41,7 +41,7 @@ Gebruik de Tab-toets om de knop te
 activeren en zichtbaar te maken in het onderstaande voorbeeld.
 
 <div class="resize">
-  <iframe src="/snippets/skip-to-content" title="Voorbeeld" height="240px"></iframe>
+  <iframe src="/snippets/skip-to-content" title="Voorbeeld"></iframe>
 </div>
 
 ```html
