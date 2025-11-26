@@ -58,9 +58,7 @@
         d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1"
       />
   </svg>
-</button>
+  </button>
 
-  <code>
-    {@html highlighted}
-  </code>
+  <code>{@html highlighted}</code>
 </pre>
