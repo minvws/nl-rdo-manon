@@ -22,7 +22,7 @@ SCSS importeren:
 <h2 id="examples">Voorbeelden:</h2>
 
 <div class="resize">
-  <iframe src="/snippets/hero" title="Voorbeeld" height="400px"></iframe>
+  <iframe src="/snippets/hero" title="Voorbeeld"></iframe>
 </div>
 
 ```html

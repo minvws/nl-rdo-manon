@@ -39,11 +39,7 @@ import "@minvws/manon/js/sidemenu.js";
 
   <div id="page-navigation-collapsible">
     <div class="resize">
-      <iframe
-        src="/snippets/sidemenu/page-navigation/collapsible"
-        title="Voorbeeld"
-        height="320px"
-      ></iframe>
+      <iframe src="/snippets/sidemenu/page-navigation/collapsible" title="Voorbeeld"></iframe>
     </div>
     <h4>Implementatiedetails</h4>
     <manon-tabs>
@@ -87,11 +83,7 @@ import "@minvws/manon/js/sidemenu.js";
   </div>
   <div id="page-navigation-expandable">
     <div class="resize">
-      <iframe
-        src="/snippets/sidemenu/page-navigation/expandable"
-        title="Voorbeeld"
-        height="320px"
-      ></iframe>
+      <iframe src="/snippets/sidemenu/page-navigation/expandable" title="Voorbeeld"></iframe>
     </div>
     <h4>Instructiesdetails</h4>
     <manon-tabs>
@@ -135,11 +127,7 @@ import "@minvws/manon/js/sidemenu.js";
   </div>
   <div id="page-navigation-static">
     <div class="resize">
-      <iframe
-        src="/snippets/sidemenu/page-navigation/static"
-        title="Voorbeeld"
-        height="320px"
-      ></iframe>
+      <iframe src="/snippets/sidemenu/page-navigation/static" title="Voorbeeld"></iframe>
     </div>
     <h4>Instructiesdetails</h4>
     <manon-tabs>
@@ -188,11 +176,7 @@ import "@minvws/manon/js/sidemenu.js";
 
   <div id="content-navigation-collapsible">
     <div class="resize">
-      <iframe
-        src="/snippets/sidemenu/content-navigation/collapsible"
-        title="Voorbeeld"
-        height="320px"
-      ></iframe>
+      <iframe src="/snippets/sidemenu/content-navigation/collapsible" title="Voorbeeld"></iframe>
     </div>
     <h4>Implementatiedetails</h4>
     <manon-tabs>
@@ -236,11 +220,7 @@ import "@minvws/manon/js/sidemenu.js";
   </div>
   <div id="content-navigation-expandable">
     <div class="resize">
-      <iframe
-        src="/snippets/sidemenu/content-navigation/expandable"
-        title="Voorbeeld"
-        height="320px"
-      ></iframe>
+      <iframe src="/snippets/sidemenu/content-navigation/expandable" title="Voorbeeld"></iframe>
     </div>
     <h4>Instructiesdetails</h4>
     <manon-tabs>
@@ -284,11 +264,7 @@ import "@minvws/manon/js/sidemenu.js";
   </div>
   <div id="content-navigation-static">
     <div class="resize">
-      <iframe
-        src="/snippets/sidemenu/content-navigation/static"
-        title="Voorbeeld"
-        height="320px"
-      ></iframe>
+      <iframe src="/snippets/sidemenu/content-navigation/static" title="Voorbeeld"></iframe>
     </div>
     <h4>Instructiesdetails</h4>
     <manon-tabs>

@@ -30,7 +30,7 @@ nav:
 ### Voorbeeld: Binnen header
 
 <div class="resize">
-  <iframe src="/snippets/login-meta" title="Voorbeeld" height="72px"></iframe>
+  <iframe src="/snippets/login-meta" title="Voorbeeld"></iframe>
 </div>
 
 ```html
