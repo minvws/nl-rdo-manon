@@ -21,11 +21,22 @@ Je kunt
 
 ## Installatie
 
-Voor deze tutorial gebruiken we `npm` om onze dependencies te beheren. Zorg er
-dus voor dat `npm` op je systeem is geïnstalleerd. Zodra dit is geïnstalleerd,
-kunnen we beginnen met het bouwen van ons Manon-project.
+Voor de installatie of het gebruik van Manon hebben we drie opties:
 
-Eerst moeten we een nieuwe projectmap aanmaken en initialiseren met npm.
+1. Handmatige installatie
+2. Installatie via een CDN
+3. Installatie via npm
+
+In deze tutorial gaan wij uit van de derde optie: installatie via npm. Dit is de
+aanbevolen methode voor het gebruik van Manon in een project. Zie de
+[Readme op GitHub](https://github.com/minvws/nl-rdo-manon?tab=readme-ov-file#-aan-de-slag)
+voor meer informatie over de andere installatie-opties.
+
+Zoals eerder vermeld, gebruiken we `npm` om onze dependencies te beheren. Zorg
+er dus voor dat `npm` op je systeem is geïnstalleerd. Zodra dit is
+geïnstalleerd, kunnen we beginnen met het bouwen van ons Manon-project.
+
+Eerst moeten we een nieuwe projectmap aanmaken en initialiseren met `npm`.
 
 ```plaintext
 # Maak een nieuwe map voor het project
@@ -115,21 +126,32 @@ je projectdirectory. Dit wordt het hoofd-HTML-bestand voor onze pagina.
 ```
 
 Maak vervolgens een `main.scss`-bestand in de root van je projectdirectory. In
-dit bestand voegen we de afzonderlijke componenten toe die we op onze pagina
-gaan gebruiken, evenals het thema dat we willen toepassen. Gedurende de tutorial
-voegen we meer componenten toe aan deze bestanden naarmate we onze pagina
-uitbreiden.
+dit bestand voegen we eerst het thema toe dat wij willen gebruiken. In onze
+tutorial gebruiken we het `icore-open`-thema.
+
+Daarna importeren we alle componenten van Manon door het
+`@minvws/manon/components/bundle/all`-bestand te gebruiken. Dit bestand bevat
+alle beschikbare componenten in Manon, zodat we ze allemaal in één keer kunnen
+laden.
+
+Als je niet de hele bundel wilt importeren, kun je ook alleen de specifieke
+componenten importeren die je nodig hebt. Voor nu gebruiken we de bundel om het
+proces te vereenvoudigen. Lees meer informatie over het importeren van
+specifieke componenten in de
+[installatie documentatie](/getting-started/installation). En voor een lijst van
+beschikbare componenten, zie de [Manon componenten documentatie](/library).
+
+Ons `main.scss`-bestand zou er nu als volgt uit moeten zien:
 
 ```scss
 // main.scss
 
-// Theme
+// Thema dat we gaan gebruiken voor onze pagina
 @use "@minvws/manon-themes/icore-open";
-```
 
-Wanneer je extra componenten wilt gebruiken, kun je ze importeren in dit
-`main.scss`-bestand. Zie de beschikbare componenten in de
-[Manon documentatie](/library).
+// Importeer alle componenten van Manon
+@use "@minvws/manon/components/bundle/all";
+```
 
 Nu kunnen we onze stijlen bouwen door het volgende commando uit te voeren:
 
@@ -151,52 +173,19 @@ Manon-framework.
 We gaan een basislayout maken voor onze pagina met het Manon-framework. We
 beginnen met de header, hoofdinhoud en footer-secties.
 
-Allereerst laden we de basis-settings van het thema in.
-
-```scss
-@use "@minvws/manon/components/base";
-```
-
-Ons SCSS-bestand zou er nu zo uit moeten zien:
-
-```scss
-// main.scss
-
-// Theme
-@use "@minvws/manon-themes/icore-open";
-
-// Components
-@use "@minvws/manon/components/base";
-```
-
 ### Header
 
-Importeer het
-[header component](/library/components/header) in ons `main.scss`-bestand:
-
-```scss
-@use "@minvws/manon/components/header";
-```
-
-Ons SCSS-bestand zou er nu zo uit moeten zien:
-
-```scss
-// main.scss
-
-// Theme
-@use "@minvws/manon-themes/icore-open";
-
-// Components
-@use "@minvws/manon/components/base";
-@use "@minvws/manon/components/header";
-```
-
-Vervolgens voegen we de volgende HTML toe aan ons `index.html`-bestand om een
+Voor de header gebruiken we het [`header` component](/library/layout/header) en
+het [`navigation` component](/library/layout/navigation). Hiermee kunnen we een
+navigatiebalk in onze header maken met links naar verschillende secties van onze
+pagina. We voegen de volgende HTML toe aan ons `index.html`-bestand om een
 header met navigatielinks te maken:
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content">Sla inhoud over</a>
+  <a href="#main-content" class="button focus-only skip-to-content"
+    >Sla inhoud over</a
+  >
   <nav
     data-open-label="Menu"
     data-close-label="Sluit menu"
@@ -215,7 +204,7 @@ header met navigatielinks te maken:
 </header>
 ```
 
-Nu zou ons index.html-bestand er als volgt uit moeten zien:
+Nu zou ons `index.html`-bestand er als volgt uit moeten zien:
 
 ```html
 <!doctype html>
@@ -228,7 +217,9 @@ Nu zou ons index.html-bestand er als volgt uit moeten zien:
   </head>
   <body>
     <header>
-      <a href="#main-content" class="button focus-only skip-to-content">Sla inhoud over</a>
+      <a href="#main-content" class="button focus-only skip-to-content"
+        >Sla inhoud over</a
+      >
       <nav
         data-open-label="Menu"
         data-close-label="Sluit menu"
@@ -250,68 +241,15 @@ Nu zou ons index.html-bestand er als volgt uit moeten zien:
 </html>
 ```
 
-Binnen onze voorbeeld-header maken we gebruik van een aantal componenten. Laten we deze in een keer toevoegen.
-
-```scss
-@use "@minvws/manon/components/link";
-@use "@minvws/manon/components/list";
-@use "@minvws/manon/components/navigation";
-@use "@minvws/manon/components/skip-to-content";
-```
-
-Ons SCSS-bestand zou er nu zo uit moeten zien:
-
-```scss
-// main.scss
-
-// Theme
-@use "@minvws/manon-themes/icore-open";
-
-// Components
-@use "@minvws/manon/components/base";
-@use "@minvws/manon/components/header";
-@use "@minvws/manon/components/link";
-@use "@minvws/manon/components/list";
-@use "@minvws/manon/components/navigation";
-@use "@minvws/manon/components/skip-to-content";
-```
-
 ### Main
 
-Voor de hoofdinhoud moeten we de [`main` component](/library/layout/main), en
-het [`section` component](/library/layout/section) importeren in ons
-`main.scss`-bestand. Hiermee kunnen we een gestructureerde layout voor onze
-pagina maken.
+Voor de hoofdinhoud gebruiken we het [`main` component](/library/layout/main),
+en het [`section` component](/library/layout/section). Hiermee kunnen we een
+gestructureerde layout voor onze pagina maken.
 
-Voeg de volgende imports toe aan je `main.scss`:
-
-```scss
-@use "@minvws/manon/components/main";
-@use "@minvws/manon/components/section";
-```
-
-Ons `main.scss`-bestand zou er nu als volgt uit moeten zien:
-
-```scss
-// main.scss
-
-// Theme
-@use "@minvws/manon-themes/icore-open";
-
-// Components
-@use "@minvws/manon/components/base";
-@use "@minvws/manon/components/header";
-@use "@minvws/manon/components/link";
-@use "@minvws/manon/components/list";
-@use "@minvws/manon/components/main";
-@use "@minvws/manon/components/navigation";
-@use "@minvws/manon/components/section";
-@use "@minvws/manon/components/skip-to-content";
-```
-
-Vervolgens updaten we ons `index.html`-bestand om het hoofdinhoudgebied op te
-nemen. Voeg de volgende HTML toe, direct na de headersectie, ter vervanging van
-de bestaande `<h1>`-tag:
+We updaten ons `index.html`-bestand om het hoofdinhoudgebied op te nemen. Voeg
+de volgende HTML toe, direct na de headersectie, ter vervanging van de bestaande
+`<h1>`-tag:
 
 ```html
 <main>
@@ -319,8 +257,8 @@ de bestaande `<h1>`-tag:
     <h1 class="page-title">Hallo, Manon!</h1>
     <h2>Welkom bij de Manon Tutorial</h2>
     <p>
-      Welkom bij de Manon-tutorial. In deze tutorial leren we hoe we Manon kunnen gebruiken om een
-      basiswebpagina te maken.
+      Welkom bij de Manon-tutorial. In deze tutorial leren we hoe we Manon
+      kunnen gebruiken om een basiswebpagina te maken.
     </p>
     <p>We behandelen de volgende onderwerpen:</p>
     <ol>
@@ -335,38 +273,11 @@ de bestaande `<h1>`-tag:
 
 ### Footer
 
-Om een footer toe te voegen aan onze pagina importeren we de
-[`footer` component](/library/layout/footer) in ons `main.scss`-bestand.
-Hiermee kunnen we een `footer`-sectie aan onze pagina toevoegen.
-
-Voeg de volgende import toe aan je `main.scss`:
-
-```scss
-@use "@minvws/manon/components/footer";
-```
-
-Ons `main.scss`-bestand zou er nu als volgt uit moeten zien:
-
-```scss
-// main.scss
-
-// Theme
-@use "@minvws/manon-themes/icore-open";
-
-// Components
-@use "@minvws/manon/components/base";
-@use "@minvws/manon/components/footer";
-@use "@minvws/manon/components/header";
-@use "@minvws/manon/components/link";
-@use "@minvws/manon/components/list";
-@use "@minvws/manon/components/main";
-@use "@minvws/manon/components/navigation";
-@use "@minvws/manon/components/section";
-@use "@minvws/manon/components/skip-to-content";
-```
-
-Vervolgens updaten we ons `index.html`-bestand om de footer-sectie op te nemen.
-Voeg de volgende HTML toe, net voor de sluitende `</body>`-tag:
+Voor een footer toe te voegen aan onze pagina gebruiken we het
+[`footer` component](/library/layout/footer) in ons `main.scss`-bestand. Hiermee
+kunnen we een `footer`-sectie aan onze pagina toevoegen. We updaten ons
+`index.html`-bestand om de footer-sectie op te nemen. Voeg de volgende HTML toe,
+net voor de sluitende `</body>`-tag:
 
 ```html
 <footer>
@@ -387,5 +298,5 @@ Nu we onze basislayout hebben met `header`, `main` en `footer`, kunnen we
 beginnen met het toevoegen van meer componenten aan onze pagina. We kunnen het
 Manon-framework gebruiken om verschillende componenten zoals knoppen,
 formulieren en meer toe te voegen. Zie de
-[Manon-documentatie - Componenten](/library) voor een lijst van
-beschikbare componenten en hoe je ze kunt gebruiken.
+[Manon-documentatie - Componenten](/library) voor een lijst van beschikbare
+componenten en hoe je ze kunt gebruiken.
