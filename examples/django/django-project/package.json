@@ -1,17 +1,21 @@
 {
+  "private": true,
+  "license": "EUPL-1.2",
+  "type": "module",
   "scripts": {
-    "build": "npm run css:build && npm run img:build",
+    "build": "npm run css:build && npm run img:build && npm run fonts:build",
     "watch": "concurrently \"npm run css:watch\"",
     "css:build": "sass assets/scss/main.scss app/static/css/main.css --load-path=node_modules/",
     "css:watch": "sass -w assets/scss/main.scss app/static/css/main.css --load-path=node_modules/",
-    "img:build": "mkdir -p app/static/img/ && cp -r assets/img/* app/static/img/"
+    "img:build": "mkdir -p app/static/img/ && cp -r assets/img/* app/static/img/",
+    "fonts:build": "mkdir -p app/static/fonts/ && cp -r node_modules/@minvws/manon-themes/icore-open/fonts/* app/static/fonts/"
+  },
+  "dependencies": {
+    "@minvws/manon": "18.0.0-alpha.3",
+    "@minvws/manon-themes": "18.0.0-alpha.3"
   },
   "devDependencies": {
     "concurrently": "^9.2.1",
-    "sass": "^1.92.1"
-  },
-  "dependencies": {
-    "@minvws/manon": "18.0.0",
-    "@minvws/manon-themes": "18.0.0"
+    "sass": "^1.94.2"
   }
 }

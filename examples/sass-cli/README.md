@@ -26,6 +26,4 @@ pnpm run build
 
 Preview the project:
 
-```console
-pnpm run preview
-```
+Open the `index.html` file in your web browser.
