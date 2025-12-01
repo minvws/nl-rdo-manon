@@ -175,15 +175,17 @@ beginnen met de header, hoofdinhoud en footer-secties.
 
 ### Header
 
-Voor de header gebruiken we het [`header` component](/library/layout/header) en
-het [`navigation` component](/library/layout/navigation). Hiermee kunnen we een
-navigatiebalk in onze header maken met links naar verschillende secties van onze
-pagina. We voegen de volgende HTML toe aan ons `index.html`-bestand om een
-header met navigatielinks te maken:
+Voor de header gebruiken we het [`header` component](/library/components/header)
+en het [`navigation` component](/library/components/navigation). Hiermee kunnen
+we een navigatiebalk in onze header maken met links naar verschillende secties
+van onze pagina. We voegen de volgende HTML toe aan ons `index.html`-bestand om
+een header met navigatielinks te maken:
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content">Sla inhoud over</a>
+  <a href="#main-content" class="button focus-only skip-to-content"
+    >Sla inhoud over</a
+  >
   <nav
     data-open-label="Menu"
     data-close-label="Sluit menu"
@@ -215,7 +217,9 @@ Nu zou ons `index.html`-bestand er als volgt uit moeten zien:
   </head>
   <body>
     <header>
-      <a href="#main-content" class="button focus-only skip-to-content">Sla inhoud over</a>
+      <a href="#main-content" class="button focus-only skip-to-content"
+        >Sla inhoud over</a
+      >
       <nav
         data-open-label="Menu"
         data-close-label="Sluit menu"
@@ -253,8 +257,8 @@ de volgende HTML toe, direct na de headersectie, ter vervanging van de bestaande
     <h1 class="page-title">Hallo, Manon!</h1>
     <h2>Welkom bij de Manon Tutorial</h2>
     <p>
-      Welkom bij de Manon-tutorial. In deze tutorial leren we hoe we Manon kunnen gebruiken om een
-      basiswebpagina te maken.
+      Welkom bij de Manon-tutorial. In deze tutorial leren we hoe we Manon
+      kunnen gebruiken om een basiswebpagina te maken.
     </p>
     <p>We behandelen de volgende onderwerpen:</p>
     <ol>
