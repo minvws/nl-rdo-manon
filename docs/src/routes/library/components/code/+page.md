@@ -42,7 +42,7 @@ Code(blokken) kunnen gebruikt worden voor het weergevan van code. Bij het weerge
 
   &lt;button type="submit">Verzend&lt;/button>
 &lt;/form>
-code>
+  </code>
 </pre>
 
 ```html
