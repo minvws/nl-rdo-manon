@@ -1,5 +1,8 @@
-@use "manon-components";
-@use "@minvws/manon-themes/basic-bold";
+@use "@minvws/manon-themes/icore-open" with (
+  $font-path: "/static/fonts"
+);
+
+@use "@minvws/manon/components/bundles/all";
 
 // logo
 :root {
