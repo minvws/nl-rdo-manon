@@ -22,6 +22,7 @@ div.code-block {
     white-space: unset;
     background-color: theme.$code-block-code-background-color;
     padding: theme.$code-block-code-padding;
+    width: 100%;
   }
 
   button {

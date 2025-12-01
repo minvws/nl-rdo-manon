@@ -164,7 +164,7 @@ veelvoorkomende voorbeelden.</p>
           <div>
             <span class="icon icon-check" aria-hidden="true"></span>
             Semantisch correct en het gewenste html-element voor hulptechnologiën.
-          <div>
+          </div>
         </td>
         <td class="warning">
           <div>
