@@ -126,6 +126,38 @@ Daarnaast hebben we
 [enkele voorbeeldimplementaties](https://github.com/minvws/nl-rdo-manon/tree/main/examples/)
 geleverd in verschillende frameworks.
 
+## 🏗️ Projecten gebouwd met Manon
+
+### Dus-i Burgerportaal
+
+- 💻 Code: <https://github.com/minvws/nl-rdo-dusi-portal-web-frontend>
+
+### GF-Modules
+
+- 🌐 Website: <https://irealisatie.nl/projecten/gf-modules>
+- 💻 Code: <https://github.com/minvws/gfmodules-coordination>
+
+### iCore Open Theme for Sphinx
+
+- 💻 Code: <https://github.com/minvws/manon-icore-open-sphinx-theme>
+
+### iRealisatie Website
+
+- 🌐 Website: <https://irealisatie.nl>
+
+### Mijn Gezondheidsoverzicht
+
+- 🌐 Website: <https://irealisatie.nl/projecten/mijn-gezondheidsoverzicht>
+
+### OpenKAT
+
+- 🌐 Website: <https://openkat.nl>
+- 💻 Code: <https://github.com/minvws/nl-kat-coordination>
+
+### ZaakVolgSysteem
+
+- 🌐 Website: <https://irealisatie.nl/projecten/zaakvolgsysteem>
+
 ## 🌱 Oorsprong
 
 Manon is ontstaan uit de behoefte aan een flexibel design framework voor de
