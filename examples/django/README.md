@@ -13,7 +13,7 @@ The following versions are used in this example project:
 | Stack        | Version |
 | ------------ | ------- |
 | python       | 3.12    |
-| django       | 5.0     |
+| django       | 5.2.8   |
 | node         | 22      |
 | manon        | 18.0.0  |
 | manon-themes | 18.0.0  |
@@ -28,18 +28,14 @@ The project is structured as follows:
 │   ├── app
 │   │   ├── app
 │   │   ├── polls
-│   │   ├── static
 │   │   ├── templates
-│   │   ├── db.sqlite3
 │   │   └── manage.py
 │   ├── assets
 │   │   ├── img
 │   │   └── scss
-│   │       ├── main.scss
-│   │       └── manon-components.scss
+│   │       └── main.scss
 │   ├── Dockerfile
 │   ├── package.json
-│   ├── package-lock.json
 │   ├── requirements.txt
 │   └── run.sh
 ├── docker-compose.yml
@@ -57,11 +53,10 @@ and the
 of the official Django documentation for more information.
 
 In this example we've created a `main.scss` file in the `assets/scss` folder
-which imports the `manon-components.scss` file. Additionally, we import the
-`@minvws/manon-themes/icore-open` theme. These dependencies are managed by npm
-and the `package.json` file.
+which imports the `@minvws/manon-themes/icore-open` theme. These dependencies
+are managed by npm and the `package.json` file.
 
-> [!NOTE] This example doesn't use `pnpm`, meaning local changes done to `manon`
+> [!NOTE] This example _doesn't_ use `pnpm`, meaning local changes done to `manon`
 > or `manon-themes` will not be reflected in the example project.
 
 ## Running the example
