@@ -117,7 +117,7 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
           <label for="voorbeeld-1-date-1-start" class="visually-hidden">Zoeken</label>
           <div class="combined-field">
             <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" type="text" />
-            <button><span class="icon icon-search"></span></button>
+            <button aria-label="zoeken"><span class="icon icon-search"></span></button>
           </div>
         </div>
       </form>
