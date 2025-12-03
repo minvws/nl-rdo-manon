@@ -8,6 +8,8 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    cooldown:
+      default-days: 7
 
   # Maintain dependencies for pnpm
   - package-ecosystem: "npm"
@@ -30,3 +32,5 @@ updates:
           - "prettier-*"
           - "stylelint"
           - "stylelint-*"
+    cooldown:
+      default-days: 7
