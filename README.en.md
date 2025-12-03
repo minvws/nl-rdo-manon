@@ -58,6 +58,9 @@ style.
 
 ## 🚀 Getting Started
 
+When you want to use Manon in your project, you have several options for
+installation:
+
 ### Manual installation
 
 [Download Manon](https://github.com/minvws/nl-rdo-manon/archive/refs/heads/main.zip)
@@ -123,34 +126,15 @@ in a few different frameworks.
 
 ## 🏗️ Projects built with Manon
 
-### Dus-i Burgerportaal
-
-- 💻 Code: <https://github.com/minvws/nl-rdo-dusi-portal-web-frontend>
-
-### GF-Modules
-
-- 🌐 Website: <https://irealisatie.nl/projecten/gf-modules>
-
-### iCore Open Theme for Sphinx
-
-- 💻 Code: <https://github.com/minvws/manon-icore-open-sphinx-theme>
-
-### iRealisatie Website
-
-- 🌐 Website: <https://irealisatie.nl>
-
-### Mijn Gezondheidsoverzicht
-
-- 🌐 Website: <https://irealisatie.nl/projecten/mijn-gezondheidsoverzicht>
-
-### OpenKAT
-
-- 🌐 Website: <https://openkat.nl>
-- 💻 Code: <https://github.com/minvws/nl-kat-coordination>
-
-### ZaakVolgSysteem
-
-- 🌐 Website: <https://irealisatie.nl/projecten/zaakvolgsysteem>
+| Project                         | Links                                                                                                                                                                                                    |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Dus-i Burgerportaal**         | 🧑‍💻 [https://github.com/minvws/nl-rdo-dusi-portal-web-frontend](https://github.com/minvws/nl-rdo-dusi-portal-web-frontend)                                                                                |
+| **GF-Modules**                  | 🌐 [https://irealisatie.nl/projecten/gf-modules](https://irealisatie.nl/projecten/gf-modules)<br>🧑‍💻 [https://github.com/minvws/gfmodules-coordination](https://github.com/minvws/gfmodules-coordination) |
+| **iCore Open Theme for Sphinx** | 🧑‍💻 [https://github.com/minvws/manon-icore-open-sphinx-theme](https://github.com/minvws/manon-icore-open-sphinx-theme)                                                                                    |
+| **iRealisatie Website**         | 🌐 [https://irealisatie.nl](https://irealisatie.nl)                                                                                                                                                      |
+| **Mijn Gezondheidsoverzicht**   | 🌐 [https://irealisatie.nl/projecten/mijn-gezondheidsoverzicht](https://irealisatie.nl/projecten/mijn-gezondheidsoverzicht)                                                                              |
+| **OpenKAT**                     | 🌐 [https://openkat.nl](https://openkat.nl)<br>🧑‍💻 [https://github.com/minvws/nl-kat-coordination](https://github.com/minvws/nl-kat-coordination)                                                         |
+| **ZaakVolgSysteem**             | 🌐 [https://irealisatie.nl/projecten/zaakvolgsysteem](https://irealisatie.nl/projecten/zaakvolgsysteem)                                                                                                  |
 
 ## 🌱 Origin
 
