@@ -130,7 +130,7 @@ dit bestand voegen we eerst het thema toe dat wij willen gebruiken. In onze
 tutorial gebruiken we het `icore-open`-thema.
 
 Daarna importeren we alle componenten van Manon door het
-`@minvws/manon/components/bundle/all`-bestand te gebruiken. Dit bestand bevat
+`@minvws/manon/components/bundles/all`-bestand te gebruiken. Dit bestand bevat
 alle beschikbare componenten in Manon, zodat we ze allemaal in één keer kunnen
 laden.
 
@@ -150,7 +150,7 @@ Ons `main.scss`-bestand zou er nu als volgt uit moeten zien:
 @use "@minvws/manon-themes/icore-open";
 
 // Importeer alle componenten van Manon
-@use "@minvws/manon/components/bundle/all";
+@use "@minvws/manon/components/bundles/all";
 ```
 
 Nu kunnen we onze stijlen bouwen door het volgende commando uit te voeren:
@@ -183,7 +183,9 @@ een header met navigatielinks te maken:
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content">Sla inhoud over</a>
+  <a href="#main-content" class="button focus-only skip-to-content"
+    >Sla inhoud over</a
+  >
   <nav
     data-open-label="Menu"
     data-close-label="Sluit menu"
@@ -215,7 +217,9 @@ Nu zou ons `index.html`-bestand er als volgt uit moeten zien:
   </head>
   <body>
     <header>
-      <a href="#main-content" class="button focus-only skip-to-content">Sla inhoud over</a>
+      <a href="#main-content" class="button focus-only skip-to-content"
+        >Sla inhoud over</a
+      >
       <nav
         data-open-label="Menu"
         data-close-label="Sluit menu"
@@ -253,8 +257,8 @@ de volgende HTML toe, direct na de headersectie, ter vervanging van de bestaande
     <h1 class="page-title">Hallo, Manon!</h1>
     <h2>Welkom bij de Manon Tutorial</h2>
     <p>
-      Welkom bij de Manon-tutorial. In deze tutorial leren we hoe we Manon kunnen gebruiken om een
-      basiswebpagina te maken.
+      Welkom bij de Manon-tutorial. In deze tutorial leren we hoe we Manon
+      kunnen gebruiken om een basiswebpagina te maken.
     </p>
     <p>We behandelen de volgende onderwerpen:</p>
     <ol>
