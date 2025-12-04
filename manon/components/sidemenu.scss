@@ -3,6 +3,7 @@
 $sidemenu-breakpoint: 24rem !default;
 
 body.sidemenu,
+.manon-root.sidemenu,
 main.sidemenu {
   /* Places sidemenu next to the main content of the page */
   display: flex;

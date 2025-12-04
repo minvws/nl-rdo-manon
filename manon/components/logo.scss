@@ -55,7 +55,8 @@ a:focus.logo {
   @extend %logo-styling;
 }
 
-body > header {
+body > header,
+.manon-root > header {
   .logo,
   a.logo,
   a:visited.logo,

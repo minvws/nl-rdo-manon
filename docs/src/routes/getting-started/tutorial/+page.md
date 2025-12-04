@@ -130,7 +130,7 @@ dit bestand voegen we eerst het thema toe dat wij willen gebruiken. In onze
 tutorial gebruiken we het `icore-open`-thema.
 
 Daarna importeren we alle componenten van Manon door het
-`@minvws/manon/components/bundle/all`-bestand te gebruiken. Dit bestand bevat
+`@minvws/manon/components/bundles/all`-bestand te gebruiken. Dit bestand bevat
 alle beschikbare componenten in Manon, zodat we ze allemaal in één keer kunnen
 laden.
 
@@ -150,7 +150,7 @@ Ons `main.scss`-bestand zou er nu als volgt uit moeten zien:
 @use "@minvws/manon-themes/icore-open";
 
 // Importeer alle componenten van Manon
-@use "@minvws/manon/components/bundle/all";
+@use "@minvws/manon/components/bundles/all";
 ```
 
 Nu kunnen we onze stijlen bouwen door het volgende commando uit te voeren:

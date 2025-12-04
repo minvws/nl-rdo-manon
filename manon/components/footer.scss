@@ -1,6 +1,7 @@
 @use "../variables" as theme;
 
 body > footer,
+.manon-root > footer,
 .page-footer,
 %footer-style {
   @if theme.$footer-flex-direction or
