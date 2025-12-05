@@ -1,0 +1,1 @@
+import backstop from "backstopjs";
