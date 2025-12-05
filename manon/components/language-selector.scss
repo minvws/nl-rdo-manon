@@ -46,6 +46,7 @@ body > header nav .language-selector,
       display: flex;
       order: 1;
       margin: 0;
+      overflow: auto;
       min-height: theme.$language-selector-list-item-min-height;
       border-width: theme.$language-selector-list-item-border-width;
       border-style: theme.$language-selector-list-item-border-style;
@@ -66,7 +67,6 @@ body > header nav .language-selector,
         max-width: 100%;
         box-sizing: border-box;
         text-overflow: ellipsis;
-        overflow: hidden;
         padding: theme.$language-selector-list-item-link-padding;
         border-top-width: theme.$language-selector-list-item-link-border-width;
         border-top-style: theme.$language-selector-list-item-link-border-style;

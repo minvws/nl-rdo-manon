@@ -395,5 +395,14 @@ and spacing sets */
   $table-caption-font-size: body-text.$body-text-s,
 
   // helpers
-  $horizontal-gap: spacing.$spacing-100
+  $horizontal-gap: spacing.$spacing-100,
+
+  // Language Selector
+  $language-selector-list-background-color: color-scheme.$white,
+  $language-selector-list-item-border-color: color-scheme.$grey-200,
+  $language-selector-list-item-hover-text-color: semantic.$color-text-default,
+  $language-selector-list-item-hover-background-color: color-scheme.$violet-50,
+  $language-selector-list-item-link-padding: 0 1rem,
+  $language-selector-list-item-link-min-height: 3rem,
+  $language-selector-list-item-active-font-weight: bold
 );
