@@ -65,17 +65,17 @@ $language-selector-list-item-hover-font-size: null !default;
 $language-selector-list-item-hover-font-weight: null !default;
 
 // List Item Link
-$language-selector-list-item-link-padding: null !default;
+$language-selector-list-item-link-padding: 0 1rem !default;
+$language-selector-list-item-link-min-height: 3rem !default;
 $language-selector-list-item-link-border-width: null !default;
 $language-selector-list-item-link-border-style: null !default;
 $language-selector-list-item-link-border-color: null !default;
 $language-selector-list-item-link-line-height: null !default;
 $language-selector-list-item-link-white-space: null !default;
-$language-selector-list-item-link-min-height: null !default;
 $language-selector-list-item-link-height: null !default;
 
 // List Item Active
+$language-selector-list-item-active-font-weight: bold !default;
 $language-selector-list-item-active-background-color: null !default;
 $language-selector-list-item-active-text-color: null !default;
 $language-selector-list-item-active-font-size: null !default;
-$language-selector-list-item-active-font-weight: null !default;
