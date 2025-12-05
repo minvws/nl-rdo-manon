@@ -86,13 +86,24 @@ and spacing sets */
   $breadcrumb-bar-link-text-decoration: none,
   $breadcrumb-bar-gap: spacing.$spacing-050,
 
+  // card
+  $card-background-color: color-scheme.$white,
+  $card-border-radius: border-radii.$border-radius-m,
+  $card-padding-top: spacing.$spacing-150,
+  $card-padding-right: spacing.$spacing-150,
+  $card-padding-bottom: spacing.$spacing-150,
+  $card-padding-left: spacing.$spacing-150,
+
+  // background-color-offset
+  $background-color-offset-padding: inherit spacing.$spacing-150,
+
   // code block
   $code-block-padding: spacing.$spacing-200,
   $code-block-background-color: semantic.$color-brand-secondary-subtle,
   $code-block-border-radius: border-radii.$border-radius-s,
 
   // columns
-  $columns-gap: spacing.$spacing-250,
+  $columns-gap: spacing.$spacing-300,
 
   // collapsing element
   $collapsing-element-justify-content: space-between,
@@ -136,6 +147,12 @@ and spacing sets */
   $footer-border-style: solid,
   $footer-border-color: color-scheme.$grey-200,
   $footer-min-height: 5.5rem,
+
+  // footer content-wrapper
+  $footer-content-wrapper-max-width: 100%,
+  $footer-content-wrapper-align-items: center,
+  $footer-content-wrapper-flex-direction: row,
+  $footer-content-wrapper-justify-content: space-between,
 
   // footer nav
   $footer-navigation-gap: spacing.$spacing-200,
@@ -216,9 +233,6 @@ and spacing sets */
 
   // hero
   $hero-height: 25rem,
-  $hero-max-width: calc(100% + 16rem),
-  $hero-width: calc(100% + 16rem),
-  $hero-margin: -4rem 0 0 -8rem,
   $hero-border-radius: 0,
   $hero-font-size: body-text.$body-text-l,
   $hero-background-color: color-scheme.$violet-200,
@@ -309,19 +323,11 @@ and spacing sets */
   $notification-system-text-color: semantic.$color-text-default,
   $notification-system-border-color: color-scheme.$black-05,
 
-  // main
-  $main-padding-top: #{spacing.$spacing-400},
-  $main-padding-right: #{spacing.$spacing-800},
-  $main-padding-bottom: #{spacing.$spacing-400},
-  $main-padding-left: #{spacing.$spacing-800},
-  $main-gap: #{spacing.$spacing-250},
-
   // section
   $section-padding-top: spacing.$spacing-100,
   $section-padding-right: 0,
   $section-padding-bottom: spacing.$spacing-100,
   $section-padding-left: 0,
-  $section-max-width: 90rem,
   $section-gap: spacing.$spacing-100,
   $section-flex-direction: column,
 
@@ -337,6 +343,7 @@ and spacing sets */
   $section-content-wrapper-gap: spacing.$spacing-250,
   $section-content-wrapper-flex-direction: column,
   $section-content-wrapper-border-radius: border-radii.$border-radius-m,
+  $section-content-wrapper-max-width: 90rem,
 
   // sidemenu page
   $sidemenu-page-padding-top: spacing.$spacing-400,
@@ -353,6 +360,9 @@ and spacing sets */
   $sidemenu-nav-border-width: 0 1px 0 0,
   $sidemenu-nav-border-style: solid,
   $sidemenu-nav-border-color: color-scheme.$grey-200,
+
+  // slogan
+  $slogan-font-size: body-text.$body-text-l,
 
   // tabs
   $tabs-gap: spacing.$spacing-100,
@@ -393,6 +403,19 @@ and spacing sets */
   $table-caption-text-align: left,
   $table-caption-text-color: color-scheme.$grey-700,
   $table-caption-font-size: body-text.$body-text-s,
+
+  // tiles
+  $tiles-align-items: stretch,
+
+  // tile
+  $tile-border-width: 1px,
+  $tile-border-style: solid,
+  $tile-border-color: color-scheme.$grey-200,
+  $tile-padding-top: spacing.$spacing-150,
+  $tile-padding-right: spacing.$spacing-150,
+  $tile-padding-bottom: spacing.$spacing-150,
+  $tile-padding-left: spacing.$spacing-150,
+  $tile-border-radius: border-radii.$border-radius-m,
 
   // helpers
   $horizontal-gap: spacing.$spacing-100

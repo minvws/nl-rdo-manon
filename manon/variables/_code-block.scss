@@ -5,9 +5,11 @@ $code-block-text-color: null !default;
 $code-block-border-width: null !default;
 $code-block-border-style: null !default;
 $code-block-border-color: null !default;
-$code-block-code-background-color: null !default;
-$code-block-code-padding: null !default;
 $code-block-border-radius: null !default;
+
+// Code within pre
+$code-block-code-padding: null !default;
+$code-block-code-background-color: null !default;
 
 // Copy button
 $code-block-copy-button-background-color: null !default;
