@@ -1,6 +1,7 @@
 FROM node:22.21-alpine
 
-RUN npm install -g pnpm
+# Install corepack to manage package managers like pnpm
+RUN corepack enable
 
 WORKDIR /app
 
