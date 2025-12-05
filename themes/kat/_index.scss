@@ -418,5 +418,11 @@ and spacing sets */
   $tile-border-radius: border-radii.$border-radius-m,
 
   // helpers
-  $horizontal-gap: spacing.$spacing-100
+  $horizontal-gap: spacing.$spacing-100,
+
+  // Language Selector
+  $language-selector-list-background-color: color-scheme.$white,
+  $language-selector-list-item-border-color: color-scheme.$grey-200,
+  $language-selector-list-item-hover-text-color: semantic.$color-text-default,
+  $language-selector-list-item-hover-background-color: color-scheme.$violet-50
 );
