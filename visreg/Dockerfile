@@ -1,7 +1,9 @@
-FROM node:22.21-alpine
+FROM mcr.microsoft.com/playwright:v1.57.0-jammy
 
-COPY package.json .
+WORKDIR /app
+
+COPY package.json ./
 
 RUN npm install
 
-CMD ["node", "index.js"]
+COPY . .
