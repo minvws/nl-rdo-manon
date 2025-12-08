@@ -107,6 +107,8 @@ and spacing sets */
 
   // collapsing element
   $collapsing-element-justify-content: space-between,
+  $collapsing-element-list-item-link-hover-background-color:
+    color-scheme.$violet-50,
 
   // expando rows
   $expando-rows-border-width: 0 0 2px 0,
