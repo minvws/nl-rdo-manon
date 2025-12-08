@@ -233,6 +233,7 @@ and spacing sets */
 
   // hero
   $hero-height: 25rem,
+  $hero-max-width: 100%,
   $hero-border-radius: 0,
   $hero-font-size: body-text.$body-text-l,
   $hero-background-color: color-scheme.$violet-200,
@@ -324,26 +325,25 @@ and spacing sets */
   $notification-system-border-color: color-scheme.$black-05,
 
   // section
-  $section-padding-top: spacing.$spacing-100,
-  $section-padding-right: 0,
-  $section-padding-bottom: spacing.$spacing-100,
-  $section-padding-left: 0,
   $section-gap: spacing.$spacing-100,
   $section-flex-direction: column,
-
-  //article
-  $article-content-wrapper-gap: spacing.$spacing-100,
+  $section-justify-content: flex-start,
+  $section-align-items: flex-start,
+  $section-max-width: 60rem,
 
   // section content wrapper
   $section-content-wrapper-background-color: color-scheme.$white,
   $section-content-wrapper-padding-top: spacing.$spacing-200,
-  $section-content-wrapper-padding-right: 0,
+  $section-content-wrapper-padding-right: spacing.$spacing-200,
   $section-content-wrapper-padding-bottom: spacing.$spacing-300,
-  $section-content-wrapper-padding-left: 0,
+  $section-content-wrapper-padding-left: spacing.$spacing-200,
+  $section-content-wrapper-max-width: 90rem,
   $section-content-wrapper-gap: spacing.$spacing-250,
   $section-content-wrapper-flex-direction: column,
   $section-content-wrapper-border-radius: border-radii.$border-radius-m,
-  $section-content-wrapper-max-width: 90rem,
+
+  //article
+  $article-content-wrapper-gap: spacing.$spacing-100,
 
   // sidemenu page
   $sidemenu-page-padding-top: spacing.$spacing-400,
