@@ -62,6 +62,7 @@
         width: 100%;
         max-width: 100%;
         padding: 0;
+        overflow: auto;
         align-items: theme.$collapsing-element-list-item-align-items;
         background-color: theme.$collapsing-element-list-item-background-color;
         color: theme.$collapsing-element-list-item-text-color;
