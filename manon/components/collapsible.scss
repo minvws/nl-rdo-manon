@@ -20,6 +20,8 @@
     max-height: initial;
     height: auto;
     box-sizing: border-box;
+    flex-direction: column;
+    min-width: theme.$collapsing-element-min-width;
     flex-direction: theme.$collapsing-element-flex-direction;
     justify-content: theme.$collapsing-element-justify-content;
     gap: theme.$collapsing-element-gap;
