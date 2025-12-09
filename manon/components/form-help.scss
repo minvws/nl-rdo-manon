@@ -4,20 +4,15 @@
 form.help {
   position: relative;
 
-  > div {
+  .form-group {
     width: 100%;
     position: relative;
-    padding: theme.$form-help-container-padding;
-
-    &:has(.help-container) {
-      padding: 0;
-    }
+    padding-right: theme.$form-help-container-padding-right;
   }
 
   .help-container {
-    width: 100%;
     position: relative;
-    padding: theme.$form-help-container-padding;
+    box-sizing: border-box;
   }
 
   > div,

@@ -133,7 +133,7 @@ form.horizontal {
       > a,
       > fieldset {
         padding: 0;
-        margin-left: theme.$form-horizontal-view-fieldset-label-column;
+        margin-left: 0;
       }
 
       & + button,
@@ -142,6 +142,43 @@ form.horizontal {
       & + input[type="submit"],
       & + input[type="reset"] {
         margin-left: theme.$form-horizontal-view-fieldset-label-column;
+      }
+    }
+  }
+
+  fieldset.form-group {
+    max-width: 100%;
+    margin-left: 0;
+
+    legend {
+      float: left;
+      width: 100%;
+      max-width: theme.$form-horizontal-label-max-width;
+      margin-top: theme.$form-horizontal-view-fieldset-label-margin-top;
+      font-family: theme.$form-label-font-family;
+      font-size: theme.$form-label-font-size;
+      font-weight: theme.$form-label-font-weight;
+      color: theme.$form-label-text-color;
+    }
+
+    @media (width >= $breakpoint) {
+      > div {
+        /* resetting gap as it can not be used within fieldsets */
+        gap: 0;
+
+        /* float objects to move inputs into place even when there is no label */
+        float: right;
+        width: theme.$form-horizontal-view-fieldset-input-column;
+      }
+
+      > div {
+        margin-bottom: 0;
+      }
+
+      label {
+        float: left;
+        width: theme.$form-horizontal-view-fieldset-label-column;
+        margin-top: theme.$form-horizontal-view-fieldset-label-margin-top;
       }
     }
   }
