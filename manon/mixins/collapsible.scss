@@ -22,8 +22,8 @@
       and its width adjusts automatically to maintain the correct aspect ratio. 
       */
       .icon {
-        height: 1em;
-        width: 1em;
+        height: theme.$collapsible-button-icon-height;
+        width: theme.$collapsible-button-icon-width;
       }
 
       + .collapsing-element {
