@@ -1,11 +1,5 @@
 import { test, expect } from "@playwright/test";
-
-const endpoints = [
-  "/snippets/accordion/div.html",
-  "/snippets/breadcrumb-bar",
-  "/snippets/footer",
-  "/snippets/sidemenu/page-navigation/collapsible",
-];
+import endpoints from "./endpoints.js";
 
 for (const endpoint of endpoints) {
   // Sanitize the endpoint to create a valid filename for the screenshot
