@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "report": "playwright show-report",
+    "update": "playwright test --update-snapshots",
+    "clean": "rm -r ./snapshots/** || true"
   },
   "devDependencies": {
     "@playwright/test": "^1.57.0"

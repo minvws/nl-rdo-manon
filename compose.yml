@@ -8,7 +8,7 @@ services:
     ports:
       - "5173:5173"
 
-  visreg:
+  visreg-test:
     container_name: manon-visreg
     image: manon-visreg
     build:
@@ -20,3 +20,18 @@ services:
       - ./visreg/snapshots:/app/snapshots
     depends_on:
       - docs
+
+  visreg-report:
+    container_name: manon-visreg-report
+    extends: visreg-test
+    command: ["npm", "run", "report"]
+
+  visreg-update:
+    container_name: manon-visreg-update
+    extends: visreg-test
+    command: ["npm", "run", "update"]
+
+  visreg-clean:
+    container_name: manon-visreg-clean
+    extends: visreg-test
+    command: ["npm", "run", "clean"]

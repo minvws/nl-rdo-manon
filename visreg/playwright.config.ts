@@ -1,5 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
+let BASE_URL = 'http://docs:5173';
+
 export default defineConfig({
   testDir: './tests',
   snapshotDir: './snapshots',
@@ -7,9 +9,9 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: 'html',
+  reporter: [['html', { open: 'never', outputFolder: './snapshots' }]],
   use: {
-    baseURL: 'http://docs:5173',
+    baseURL: BASE_URL,
     trace: 'on-first-retry',
   },
   projects: [
