@@ -28,6 +28,7 @@ and spacing sets */
   $theme-name: "kat",
 
   // article
+  $article-content-wrapper-gap: spacing.$spacing-100,
   $article-gap: spacing.$spacing-200,
 
   // avatar
@@ -330,9 +331,6 @@ and spacing sets */
   $section-padding-left: 0,
   $section-gap: spacing.$spacing-100,
   $section-flex-direction: column,
-
-  //article
-  $article-content-wrapper-gap: spacing.$spacing-100,
 
   // section content wrapper
   $section-content-wrapper-background-color: color-scheme.$white,
