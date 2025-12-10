@@ -1,4 +1,4 @@
-name: Deploy Latest Docs
+name: Deploy docs to latest GitHub Pages
 
 # Run this workflow when the "Deploy docs" workflow completes
 on:
