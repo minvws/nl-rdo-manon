@@ -84,3 +84,51 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: themes/manon-themes.zip
+
+  publish-ghcr:
+    name: Publish to GitHub Container Registry
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Log in to the Container registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get semver from tag
+        run: |
+          RELEASE_VERSION=${GITHUB_REF#refs/*/}
+          echo "RELEASE_VERSION=${RELEASE_VERSION}" >> $GITHUB_ENV
+
+        # TODO: multiple images
+
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ github.repository }}-manon
+
+      - name: Build and push docs Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: docs
+          push: true
+          tags: ghcr.io/${{ github.repository }}-manon:${{ env.RELEASE_VERSION }}
+          labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Build and push visreg Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: visreg
+          push: true
+          tags: ghcr.io/${{ github.repository }}-manon:${{ env.RELEASE_VERSION }}
+          labels: ${{ steps.meta.outputs.labels }}
+
+

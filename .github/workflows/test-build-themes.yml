@@ -1,12 +1,12 @@
-name: Test Manon Sass Bundle
+name: Test build themes
 
 on:
   workflow_dispatch:
   pull_request:
 
 jobs:
-  build-sass-bundle:
-    name: Build sass bundle
+  build-themes:
+    name: Build and verify themes
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
