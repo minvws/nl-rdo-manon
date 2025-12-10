@@ -48,6 +48,8 @@ $button-secondary-active-border-style: null !default;
 $button-secondary-active-border-color: null !default;
 $button-secondary-active-border-width: null !default;
 $button-secondary-active-border-radius: null !default;
+$button-secondary-active-outline: null !default;
+$button-secondary-active-outline-offset: null !default;
 
 // Focus
 $button-secondary-focus-border-style: null !default;
@@ -57,12 +59,19 @@ $button-secondary-focus-border-radius: null !default;
 $button-secondary-focus-background-color: null !default;
 $button-secondary-focus-text-color: null !default;
 
+$button-secondary-focus-outline: null !default;
+$button-secondary-focus-outline-width: null !default;
+$button-secondary-focus-outline-offset: null !default;
+$button-secondary-focus-outline-color: null !default;
+$button-secondary-focus-z-index: null !default;
+$button-secondary-focus-box-shadow: null !default;
+
 // Link
 $link-button-secondary-text-color: null !default;
 
-// Outline
-$button-secondary-outline: null !default;
-$button-secondary-outline-offset: null !default;
-$button-secondary-outline-color: null !default;
-$button-secondary-z-index: null !default;
-$button-secondary-box-shadow: null !default;
+// Visited
+$button-secondary-visited-outline: null !default;
+$button-secondary-visited-outline-offset: null !default;
+$button-secondary-visited-outline-color: null !default;
+$button-secondary-visited-z-index: null !default;
+$button-secondary-visited-box-shadow: null !default;
