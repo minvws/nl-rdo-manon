@@ -52,6 +52,8 @@ input[type="reset"] {
     border-color: theme.$button-active-border-color;
     border-width: theme.$button-active-border-width;
     border-radius: theme.$button-active-border-radius;
+    outline: theme.$button-active-outline;
+    outline-offset: theme.$button-active-outline-offset;
   }
 
   &:focus,
@@ -62,11 +64,11 @@ input[type="reset"] {
     border-radius: theme.$button-focus-border-radius;
     background-color: theme.$button-focus-background-color;
     color: theme.$button-focus-text-color;
-    outline: theme.$button-outline;
-    outline-offset: theme.$button-outline-offset;
-    outline-color: theme.$button-outline-color;
-    z-index: theme.$button-z-index;
-    box-shadow: theme.$button-box-shadow;
+    outline: theme.$button-focus-outline;
+    outline-offset: theme.$button-focus-outline-offset;
+    outline-color: theme.$button-focus-outline-color;
+    z-index: theme.$button-focus-z-index;
+    box-shadow: theme.$button-focus-box-shadow;
   }
 
   > img {
@@ -97,12 +99,12 @@ a.button {
 
   &:visited,
   &.visited {
-    outline: theme.$button-outline;
-    outline-offset: theme.$button-outline-offset;
-    outline-color: theme.$button-outline-color;
-    z-index: theme.$button-z-index;
-    box-shadow: theme.$button-box-shadow;
-    border-radius: theme.$button-outline-border-radius;
-    color: theme.$button-text-color;
+    outline: theme.$button-visited-outline;
+    outline-offset: theme.$button-visited-outline-offset;
+    outline-color: theme.$button-visited-outline-color;
+    z-index: theme.$button-visited-z-index;
+    box-shadow: theme.$button-visited-box-shadow;
+    border-radius: theme.$button-visited-outline-border-radius;
+    color: theme.$button-visited-text-color;
   }
 }
