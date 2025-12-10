@@ -54,3 +54,10 @@ dl {
     }
   }
 }
+
+fieldset {
+  dt,
+  dd {
+    float: left;
+  }
+}
