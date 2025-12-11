@@ -126,6 +126,8 @@ in a few different frameworks.
 
 ## 🏗️ Projects built with Manon
 
+Here are some projects that have been built using Manon:
+
 | Project                         | Links                                                                                                                                                                                                    |
 | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Dus-i Burgerportaal**         | 🧑‍💻 [https://github.com/minvws/nl-rdo-dusi-portal-web-frontend](https://github.com/minvws/nl-rdo-dusi-portal-web-frontend)                                                                                |
