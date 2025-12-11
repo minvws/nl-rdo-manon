@@ -3,4 +3,5 @@ packages:
   - "manon"
   - "themes"
   - "examples/*"
+  - "!examples/tutorial"
   - "icore_open_docs"

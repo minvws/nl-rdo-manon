@@ -1,12 +1,10 @@
 {
-  "private": true,
-  "type": "module",
   "scripts": {
     "build": "sass --load-path=node_modules main.scss css/main.css"
   },
   "dependencies": {
-    "@minvws/manon": "workspace:*",
-    "@minvws/manon-themes": "workspace:*"
+    "@minvws/manon": "18.0.0-alpha.3",
+    "@minvws/manon-themes": "18.0.0-alpha.3"
   },
   "devDependencies": {
     "sass": "^1.94.2"
