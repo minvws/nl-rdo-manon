@@ -80,9 +80,9 @@ import "@minvws/manon/js/filters.js";
   <form aria-label="Filters" action="" method="post" class="horizontal help">
     <fieldset>
       <legend>Filter op datum</legend>
-      <div>
+      <div class="form-group">
         <label for="keyword">Trefwoord</label>
-        <div>
+        <div class="help-container">
           <span class="nota-bene" id="keyword-explanation"
             >Bijvoorbeeld: fiets</span
           >
@@ -103,40 +103,41 @@ import "@minvws/manon/js/filters.js";
         </div>
       </div>
 
-      <fieldset>
+      <fieldset class="help-container form-group">
         <legend>Periode</legend>
-        <div class="column-2">
-          <div>
-            <label for="date-range-start">van</label>
-            <input
-              id="date-range-start"
-              name="date-range-start"
-              value="DD-MM-JJJJ"
-              type="date"
-            />
+        <div class="help-container">
+          <div class="column-2">
+            <div>
+              <label for="date-range-start">van</label>
+              <input
+                id="date-range-start"
+                name="date-range-start"
+                value="DD-MM-JJJJ"
+                type="date"
+              />
+            </div>
+            <div>
+              <label for="date-range-end">tot</label>
+              <input
+                id="date-range-end"
+                name="date-range-end"
+                value="DD-MM-JJJJ"
+                type="date"
+              />
+            </div>
           </div>
-
-          <div>
-            <label for="date-range-end">tot</label>
-            <input
-              id="date-range-end"
-              name="date-range-end"
-              value="DD-MM-JJJJ"
-              type="date"
-            />
-          </div>
-        </div>
-        <p
-          class="explanation"
-          data-open-label="Toelichting bij het veld: Periode"
-          data-close-label="Sluit toelichting bij het veld: Periode"
-        >
+          <p
+            class="explanation"
+            data-open-label="Toelichting bij het veld: Periode"
+            data-close-label="Sluit toelichting bij het veld: Periode"
+          >
           <span>toelichting:</span> Vul hier een start- en/of einddatum als
           volgt in: DD-MM-JJJJ.
         </p>
+        </div>
       </fieldset>
 
-      <div class="required">
+      <div class="required form-group">
         <label for="select">Voertuig</label>
         <div>
           <span class="nota-bene">Dit veld is verplicht</span>
@@ -163,7 +164,7 @@ import "@minvws/manon/js/filters.js";
   <form aria-label="Filters" action="" method="post" class="horizontal help">
     <fieldset>
       <legend>Filter op datum</legend>
-      <div>
+      <div class="help-container">
         <label for="keyword">Trefwoord</label>
         <div>
           <span class="nota-bene" id="keyword-explanation">Bijvoorbeeld: fiets</span>
@@ -181,7 +182,7 @@ import "@minvws/manon/js/filters.js";
 
       <fieldset>
         <legend>Periode</legend>
-        <div class="column-2">
+        <div class="column-2 help-container">
           <div>
             <label for="date-range-start">van</label>
             <input id="date-range-start" name="date-range-start" value="DD-MM-JJJJ" type="date" />

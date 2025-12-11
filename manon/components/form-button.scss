@@ -32,4 +32,14 @@ form {
       min-width: theme.$form-button-min-width;
     }
   }
+
+  > button,
+  > a.button,
+  > input[type="button"],
+  > input[type="submit"],
+  > input[type="reset"] {
+    &:last-child {
+      margin: theme.$form-button-last-child-margin;
+    }
+  }
 }

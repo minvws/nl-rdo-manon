@@ -20,6 +20,7 @@ main section form,
 main article form,
 main div form {
   > fieldset {
+    width: 100%;
     padding: theme.$form-fieldset-padding;
     margin: theme.$form-fieldset-margin;
     border-width: theme.$form-fieldset-border-width;
