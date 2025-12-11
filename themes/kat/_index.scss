@@ -30,6 +30,10 @@ and spacing sets */
   // article
   $article-gap: spacing.$spacing-200,
 
+  // article content wrapper
+  $article-content-wrapper-max-width: 90rem,
+  $article-content-wrapper-gap: spacing.$spacing-200,
+
   // avatar
   $avatar-font-weight: bold,
   $avatar-border-radius: 50%,
@@ -232,8 +236,10 @@ and spacing sets */
   $header-content-wrapper-width: 100%,
 
   // hero
+  $hero-max-width: calc(100% + 8rem),
+  $hero-width: calc(100% + 8rem),
+  $hero-margin: -4rem 0 0 -4rem,
   $hero-height: 25rem,
-  $hero-max-width: 100%,
   $hero-border-radius: 0,
   $hero-font-size: body-text.$body-text-l,
   $hero-background-color: color-scheme.$violet-200,
@@ -271,8 +277,16 @@ and spacing sets */
   $logo-img-padding: 0.25rem 0.5rem,
   $logo-img-border-radius: border-radii.$border-radius-s,
 
+  // main
+  $main-padding-top: spacing.$spacing-400,
+  $main-padding-right: spacing.$spacing-400,
+  $main-padding-bottom: spacing.$spacing-400,
+  $main-padding-left: spacing.$spacing-400,
+  $main-gap: spacing.$spacing-400,
+
   // nav
   $navigation-link-text-decoration: none,
+  $navigation-list-padding: 0,
 
   // notification
   $notification-padding-top: spacing.$spacing-100,
@@ -324,26 +338,21 @@ and spacing sets */
   $notification-system-text-color: semantic.$color-text-default,
   $notification-system-border-color: color-scheme.$black-05,
 
+  // pagetitle
+  $page-title-max-width: 90rem,
+  $page-title-margin: 0 auto,
+  $page-title-width: 100%,
+
   // section
   $section-gap: spacing.$spacing-100,
-  $section-flex-direction: column,
-  $section-justify-content: flex-start,
-  $section-align-items: flex-start,
-  $section-max-width: 60rem,
+  $section-max-width: 100%,
 
   // section content wrapper
   $section-content-wrapper-background-color: color-scheme.$white,
-  $section-content-wrapper-padding-top: spacing.$spacing-200,
-  $section-content-wrapper-padding-right: spacing.$spacing-200,
-  $section-content-wrapper-padding-bottom: spacing.$spacing-300,
-  $section-content-wrapper-padding-left: spacing.$spacing-200,
-  $section-content-wrapper-max-width: 90rem,
-  $section-content-wrapper-gap: spacing.$spacing-250,
+  $section-content-wrapper-gap: spacing.$spacing-200,
   $section-content-wrapper-flex-direction: column,
   $section-content-wrapper-border-radius: border-radii.$border-radius-m,
-
-  //article
-  $article-content-wrapper-gap: spacing.$spacing-100,
+  $section-content-wrapper-max-width: 90rem,
 
   // sidemenu page
   $sidemenu-page-padding-top: spacing.$spacing-400,
