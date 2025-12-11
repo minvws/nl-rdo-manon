@@ -132,8 +132,12 @@ and spacing sets */
   // collapsing element
   $collapsing-element-justify-content: space-between,
   $collapsing-element-list-item-link-hover-background-color:
-    color-scheme.$violet-50,
-
+    color-scheme.$grey-50,
+  $collapsing-element-text-color: color-scheme.$grey-900,
+  $collapsing-element-list-item-focus-outline: 2px solid
+    color-scheme.$violet-500,
+  $collapsing-element-list-item-link-visited-color: color-scheme.$grey-900,
+  $collapsing-element-list-item-link-destructive-color: color-scheme.$red-600,
   // expando rows
   $expando-rows-border-width: 0 0 2px 0,
   $expando-rows-border-style: solid,

@@ -2,6 +2,7 @@ $collapsible-width: null !default;
 $collapsible-max-width: null !default;
 
 // Collapsing element
+$collapsing-element-margin: 1rem 0 0 !default;
 $collapsing-element-flex-direction: column !default;
 $collapsing-element-justify-content: null !default;
 $collapsing-element-align-items: null !default;
@@ -40,6 +41,9 @@ $collapsing-element-list-item-first-item-border-width: null !default;
 $collapsing-element-list-item-link-justify-content: null !default;
 $collapsing-element-list-item-min-height: 3rem !default;
 
+// Collapsing element focus
+$collapsing-element-list-item-focus-outline: null !default;
+
 // Collapsing element link
 $collapsing-element-list-item-link-padding-top: null !default;
 $collapsing-element-list-item-link-padding-right: 1rem !default;
@@ -47,6 +51,9 @@ $collapsing-element-list-item-link-padding-bottom: null !default;
 $collapsing-element-list-item-link-padding-left: 1rem !default;
 $collapsing-element-list-item-link-text-color: null !default;
 $collapsing-element-list-item-link-text-decoration: none !default;
+
+// link visited
+$collapsing-element-list-item-link-visited-color: null !default;
 
 // Collapsing button icon
 $collapsible-button-icon-height: 1em !default;
@@ -78,3 +85,7 @@ $collapsing-element-list-item-hover-text-color: null !default;
 $collapsing-element-list-item-link-hover-text-color: null !default;
 $collapsing-element-list-link-hover-text-decoration: none !default;
 $collapsing-element-list-item-link-hover-background-color: null !default;
+
+// destructive
+
+$collapsing-element-list-item-link-destructive-color: null !default;
