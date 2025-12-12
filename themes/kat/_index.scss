@@ -138,6 +138,8 @@ and spacing sets */
     color-scheme.$violet-500,
   $collapsing-element-list-item-link-visited-color: color-scheme.$grey-900,
   $collapsing-element-list-item-link-destructive-color: color-scheme.$red-600,
+  $collapsing-element-list-link-selected-background-color: color-scheme.$grey-50,
+
   // expando rows
   $expando-rows-border-width: 0 0 2px 0,
   $expando-rows-border-style: solid,
