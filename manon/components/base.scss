@@ -1,6 +1,7 @@
 @use "../variables" as theme;
 
-body {
+body,
+.manon-root {
   display: flex;
   flex-direction: column;
   margin: 0;

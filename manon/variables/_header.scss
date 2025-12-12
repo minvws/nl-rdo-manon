@@ -70,6 +70,17 @@ $header-navigation-min-height: null !default;
 $header-navigation-position: null !default;
 $header-navigation-white-space: null !default;
 
+// Navigation content wrapper
+$header-navigation-content-wrapper-flex-direction: null !default;
+$header-navigation-content-wrapper-justify-content: null !default;
+$header-navigation-content-wrapper-align-items: null !default;
+$header-navigation-content-wrapper-gap: null !default;
+$header-navigation-content-wrapper-padding-top: null !default;
+$header-navigation-content-wrapper-padding-right: null !default;
+$header-navigation-content-wrapper-padding-bottom: null !default;
+$header-navigation-content-wrapper-padding-left: null !default;
+$header-navigation-content-wrapper-max-width: null !default;
+
 // List
 $header-list-gap: null !default;
 $header-list-justify-content: null !default;

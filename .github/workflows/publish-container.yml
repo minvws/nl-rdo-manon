@@ -1,0 +1,42 @@
+name:  Publish Docker Container Images to GitHub Container Registry
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - v*
+
+env:
+  REGISTRY: ghcr.io
+
+jobs:
+  publish-docs:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Log in to the Container registry
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/manon-docs
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: docs
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
