@@ -75,6 +75,7 @@
           /* Preventing default nav before to show up */
           display: none;
         }
+
         &:focus,
         &.focus {
           outline: theme.$collapsing-element-list-item-focus-outline;
