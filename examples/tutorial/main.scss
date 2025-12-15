@@ -1,11 +1,5 @@
 // Thema dat we gaan gebruiken voor onze pagina
 @use "@minvws/manon-themes/icore-open";
 
-// Importeer de header navigation component
-@use "@minvws/manon/components/header";
-@use "@minvws/manon/components/skip-to-content";
-
-// Layout
-@use "@minvws/manon/components/main";
-@use "@minvws/manon/components/section";
-@use "@minvws/manon/components/footer";
+// Importeer alle componenten van Manon
+@use "@minvws/manon/components/bundles/all";

@@ -42,13 +42,7 @@
   font-display: swap;
   src: url("@minvws/manon-themes/icore-open/fonts/IBMPlexSans/IBMPlexSans-BoldItalic.ttf");
 }
-@font-face {
-  font-family: "tabler-icons";
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-  src: url("@minvws/manon-themes/icore-open/fonts/tabler-icons/tabler-icons.woff2?v3.4.0") format("woff2"), url("@minvws/manon-themes/icore-open/fonts/tabler-icons/tabler-icons.woff?v3.4.0") format("woff"), url("@minvws/manon-themes/icore-open/fonts/tabler-icons/tabler-icons.ttf?v3.4.0") format("truetype");
-}
+/* Icon mask data URIs */
 /* Core variables */
 /* These are core sets like color schemes, fonts
 and spacing sets */
@@ -170,12 +164,22 @@ and spacing sets */
 /* hover */
 /* Hover */
 /* content wrapper */
-/* List */
-/* List item */
+/* Blue */
+/* Green */
+/* Yellow */
+/* Orange */
+/* Red */
+/* Violet */
+/* Color 1 */
+/* Color 2 */
+/* Color 3 */
+/* Color 4 */
+/* Color 5 */
+/* Color 6 */
 p {
-  margin: 0;
   color: inherit;
   max-width: 42rem;
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

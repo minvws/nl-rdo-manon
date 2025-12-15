@@ -5,6 +5,17 @@ $code-block-text-color: null !default;
 $code-block-border-width: null !default;
 $code-block-border-style: null !default;
 $code-block-border-color: null !default;
-$code-block-code-background-color: null !default;
-$code-block-code-padding: null !default;
 $code-block-border-radius: null !default;
+
+// Code within pre
+$code-block-code-padding: null !default;
+$code-block-code-background-color: null !default;
+
+// Copy button
+$code-block-copy-button-background-color: null !default;
+$code-block-copy-button-text-color: null !default;
+$code-block-copy-button-padding: null !default;
+$code-block-copy-button-top: 0.5rem !default;
+$code-block-copy-button-right: 0.5rem !default;
+$code-block-copy-button-hover-background-color: null !default;
+$code-block-copy-button-hover-text-color: null !default;

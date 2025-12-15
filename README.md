@@ -61,6 +61,9 @@ gewenste stijl te bereiken.
 
 ## 🚀 Aan de slag
 
+Om Manon in je project te gebruiken, kun je kiezen uit de volgende
+installatiemethoden:
+
 ### Handmatige installatie
 
 [Download Manon](https://github.com/minvws/nl-rdo-manon/archive/refs/heads/main.zip)
@@ -125,6 +128,20 @@ gebruiken.
 Daarnaast hebben we
 [enkele voorbeeldimplementaties](https://github.com/minvws/nl-rdo-manon/tree/main/examples/)
 geleverd in verschillende frameworks.
+
+## 🏗️ Projecten gebouwd met Manon
+
+Hieronder staan enkele projecten die gemaakt zijn met Manon:
+
+| Project                         | Links                                                                                                                                                                                                    |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Dus-i Burgerportaal**         | 🧑‍💻 [https://github.com/minvws/nl-rdo-dusi-portal-web-frontend](https://github.com/minvws/nl-rdo-dusi-portal-web-frontend)                                                                                |
+| **GF-Modules**                  | 🌐 [https://irealisatie.nl/projecten/gf-modules](https://irealisatie.nl/projecten/gf-modules)<br>🧑‍💻 [https://github.com/minvws/gfmodules-coordination](https://github.com/minvws/gfmodules-coordination) |
+| **iCore Open Theme for Sphinx** | 🧑‍💻 [https://github.com/minvws/manon-icore-open-sphinx-theme](https://github.com/minvws/manon-icore-open-sphinx-theme)                                                                                    |
+| **iRealisatie Website**         | 🌐 [https://irealisatie.nl](https://irealisatie.nl)                                                                                                                                                      |
+| **Mijn Gezondheidsoverzicht**   | 🌐 [https://irealisatie.nl/projecten/mijn-gezondheidsoverzicht](https://irealisatie.nl/projecten/mijn-gezondheidsoverzicht)                                                                              |
+| **OpenKAT**                     | 🌐 [https://openkat.nl](https://openkat.nl)<br>🧑‍💻 [https://github.com/minvws/nl-kat-coordination](https://github.com/SSC-ICT-Innovatie/nl-kat-coordination)                                              |
+| **ZaakVolgSysteem**             | 🌐 [https://irealisatie.nl/projecten/zaakvolgsysteem](https://irealisatie.nl/projecten/zaakvolgsysteem)                                                                                                  |
 
 ## 🌱 Oorsprong
 

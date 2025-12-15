@@ -136,6 +136,7 @@
   font-weight: theme.$notification-type-font-weight;
   order: theme.$notification-type-order;
   gap: theme.$notification-type-gap;
+  font-size: theme.$notification-type-font-size;
 }
 
 // Notification types
@@ -151,8 +152,6 @@ span {
   &.system {
     @include notification;
 
-    box-sizing: border-box;
-    display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
@@ -200,10 +199,7 @@ section {
   &.system {
     @include notification;
 
-    display: flex;
     margin: 0 auto;
-    box-sizing: border-box;
-    width: 100%;
     flex-direction: theme.$notification-block-element-flex-direction;
     justify-content: theme.$notification-block-element-justify-content;
     align-items: theme.$notification-block-element-align-items;

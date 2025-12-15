@@ -16,11 +16,27 @@ div.code-block {
   border-style: theme.$code-block-border-style;
   border-color: theme.$code-block-border-color;
   border-radius: theme.$code-block-border-radius;
+  position: relative;
 
   > code {
     white-space: unset;
     background-color: theme.$code-block-code-background-color;
     padding: theme.$code-block-code-padding;
+    width: 100%;
+  }
+
+  button {
+    background: theme.$code-block-copy-button-background-color;
+    color: theme.$code-block-copy-button-text-color;
+    padding: theme.$code-block-copy-button-padding;
+    position: absolute;
+    top: theme.$code-block-copy-button-top;
+    right: theme.$code-block-copy-button-right;
+
+    &:hover {
+      background-color: theme.$code-block-copy-button-hover-background-color;
+      color: theme.$code-block-copy-button-hover-text-color;
+    }
   }
 }
 

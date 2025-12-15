@@ -8,7 +8,13 @@
 
   iframe {
     flex-grow: 1;
-    border: 2px solid black;
+    border: 0;
+    min-height: 0;
+
+    // Resets default iframe size to 0.
+    // docs/src/markdown/components/Iframe.svelte will override it with
+    // the actual height. Based on the content of the iframe.
+    height: 0;
   }
 }
 
@@ -17,6 +23,7 @@
 main:empty {
   min-height: 0;
   padding: 0;
+  display: none;
 }
 
 main:has(.hero:only-child) {

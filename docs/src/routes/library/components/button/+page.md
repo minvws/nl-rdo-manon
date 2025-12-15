@@ -8,7 +8,10 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-Knoppen op een website zijn interactieve elementen waarmee gebruikers een actie kunnen uitvoeren, zoals het verzenden van een formulier, het starten van een download of het navigeren naar een andere pagina. Ze maken de bediening van een site duidelijk en gebruiksvriendelijk.
+Knoppen op een website zijn interactieve elementen waarmee gebruikers een actie
+kunnen uitvoeren, zoals het verzenden van een formulier, het starten van een
+download of het navigeren naar een andere pagina. Ze maken de bediening van een
+site duidelijk en gebruiksvriendelijk.
 
 <h2 id="button-types">Soorten knoppen</h2>
 
@@ -154,29 +157,29 @@ veelvoorkomende voorbeelden.</p>
 
 <div class="horizontal-scroll">
   <table>
-      <caption>Legenda</caption>
-      <tbody>
-          <tr>
-              <td class="confirmation">
-                <div>
-                  <span class="icon icon-check" aria-hidden="true"></span>
-                  Semantisch correct en het gewenste html-element voor hulptechnologiën.
-                <div>
-              </td>
-              <td class="warning">
-                <div>
-                  <span class="icon icon-warning" aria-hidden="true"></span>
-                  Semantisch correct maar geeft problemen voor bepaalde gebruikersgroepen.
-                </div>
-              </td>
-              <td class="error">
-              <div>
-                <span class="icon icon-error" aria-hidden="true"></span>
-                Semantisch incorrect.
-                </div>
-              </td>
-          </tr>
-      </tbody>
+    <caption>Legenda</caption>
+    <tbody>
+      <tr>
+        <td class="confirmation">
+          <div>
+            <span class="icon icon-check" aria-hidden="true"></span>
+            Semantisch correct en het gewenste html-element voor hulptechnologiën.
+          </div>
+        </td>
+        <td class="warning">
+          <div>
+            <span class="icon icon-warning" aria-hidden="true"></span>
+            Semantisch correct maar geeft problemen voor bepaalde gebruikersgroepen.
+          </div>
+        </td>
+        <td class="error">
+          <div>
+            <span class="icon icon-error" aria-hidden="true"></span>
+            Semantisch incorrect.
+          </div>
+        </td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
@@ -184,11 +187,14 @@ veelvoorkomende voorbeelden.</p>
 
 ### Knoppen uitschakelen
 
-Het uitschakelen van een knop “disable” wordt afgeraden vanuit zowel toegankelijkeid als gebruikerservaring.
-Het is beter om de knop functioneel te laten. Dan kan de gebruiker de knop gebruiken om erachter te komen wat er fout gaat.
+Het uitschakelen van een knop “disable” wordt afgeraden vanuit zowel
+toegankelijkeid als gebruikerservaring. Het is beter om de knop functioneel te
+laten. Dan kan de gebruiker de knop gebruiken om erachter te komen wat er fout
+gaat.
 
 ### Span of Div
 
-Hoewel bijvoorbeeld een span en een div visueel vormgegeven kunnen worden als een knop, en met behulp van bijvoorbeeld
-Javascript zich ook kunnen gedragen als een knop. Is het semantisch incorrect om deze html-elementen hiervoor te gebruiken.
-Gebruik in plaats hiervan een: button, a of input.
+Hoewel bijvoorbeeld een span en een div visueel vormgegeven kunnen worden als
+een knop, en met behulp van bijvoorbeeld Javascript zich ook kunnen gedragen als
+een knop. Is het semantisch incorrect om deze html-elementen hiervoor te
+gebruiken. Gebruik in plaats hiervan een: button, a of input.

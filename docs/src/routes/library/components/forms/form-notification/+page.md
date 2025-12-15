@@ -462,8 +462,7 @@ SCSS importeren:
     </pre>
   </div>
 
-  <div id="system">
-     <div id="textarea">
+  <div id="textarea">
     <form action="" method="post">
       <label for="voorbeeld-tekstveld-system">Voorbeeld tekstveld</label>
       <div>

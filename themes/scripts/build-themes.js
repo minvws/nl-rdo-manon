@@ -2,6 +2,7 @@
  * This script builds the themes for the Manon design system.
  *
  * It performs the following steps:
+ *
  * 1. Finds all themes by looking for `_index.scss` files in the subdirectories
  *    of the `themes` folder.
  * 2. For each theme, it checks for variants (e.g., different use of components)
@@ -82,7 +83,7 @@ for (const themeDir of themeDirs) {
       content: `@use "${theme}" with (
         $font-path: "./fonts"
       );
-      @use "./scripts/default";`,
+      @use "@minvws/manon/components/bundles/all";`,
     });
   }
 

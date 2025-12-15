@@ -31,7 +31,7 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 ### Voorbeeld: Alleen navigatie
 
 <div class="resize">
-  <iframe src="/snippets/header-navigation" title="Voorbeeld" height="240px"></iframe>
+  <iframe src="/snippets/header-navigation" title="Voorbeeld"></iframe>
 </div>
 
 ```html
@@ -61,11 +61,7 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 ### Voorbeeld: Navigatie met content wrapper
 
 <div class="resize">
-  <iframe
-    src="/snippets/header-navigation-with-content-wrapper"
-    title="Voorbeeld"
-    height="240px"
-  ></iframe>
+  <iframe src="/snippets/header-navigation-with-content-wrapper" title="Voorbeeld"></iframe>
 </div>
 
 ```html
@@ -95,11 +91,7 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 ### Voorbeeld: Navigatie met zoekveld
 
 <div class="resize">
-  <iframe
-    src="/snippets/header-navigation-with-search"
-    title="Voorbeeld"
-    height="240px"
-  ></iframe>
+  <iframe src="/snippets/header-navigation-with-search" title="Voorbeeld"></iframe>
 </div>
 
 ```html
@@ -125,7 +117,7 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
           <label for="voorbeeld-1-date-1-start" class="visually-hidden">Zoeken</label>
           <div class="combined-field">
             <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" type="text" />
-            <button><span class="icon icon-search"></span></button>
+            <button aria-label="zoeken"><span class="icon icon-search"></span></button>
           </div>
         </div>
       </form>
@@ -137,8 +129,7 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 ### Voorbeeld: Navigatie en logo
 
 <div class="resize">
-  <iframe src="/snippets/header-navigation-with-logo" title="Voorbeeld" height="240px"
-  ></iframe>
+  <iframe src="/snippets/header-navigation-with-logo" title="Voorbeeld"></iframe>
 </div>
 
 ```html
@@ -170,11 +161,7 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 ### Voorbeeld: Navigatie met meerdere menu's
 
 <div class="resize">
-  <iframe
-    src="/snippets/header-navigation-with-multiple-menus"
-    title="Voorbeeld"
-    height="240px"
-  ></iframe>
+  <iframe src="/snippets/header-navigation-with-multiple-menus" title="Voorbeeld"></iframe>
 </div>
 
 ```html
@@ -208,11 +195,7 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 ### Voorbeeld: Navigatie met formulier-knop
 
 <div class="resize">
-  <iframe
-    src="/snippets/header-navigation-with-form-button"
-    title="Voorbeeld"
-    height="240px"
-  ></iframe>
+  <iframe src="/snippets/header-navigation-with-form-button" title="Voorbeeld"></iframe>
 </div>
 
 ```html
@@ -252,11 +235,7 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 ### Voorbeeld: Navigatie met logo bovenaan
 
 <div class="resize">
-  <iframe
-    src="/snippets/header-navigation-with-logo"
-    title="Voorbeeld"
-    height="320px"
-  ></iframe>
+  <iframe src="/snippets/header-navigation-with-logo" title="Voorbeeld"></iframe>
 </div>
 
 ```html
