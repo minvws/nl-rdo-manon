@@ -15,6 +15,8 @@ services:
       context: ./playwright
     command: ["npm", "run", "test"]
     volumes:
+      - ./playwright/tests:/app/tests
+      - ./playwright/playwright.config.ts:/app/playwright.config.ts
       - ./snapshots:/app/snapshots
       - ./report:/app/report
     depends_on:
@@ -25,6 +27,8 @@ services:
       context: ./playwright
     command: ["npm", "run", "update"]
     volumes:
+      - ./playwright/tests:/app/tests
+      - ./playwright/playwright.config.ts:/app/playwright.config.ts
       - ./snapshots:/app/snapshots
       - ./report:/app/report
     depends_on:
@@ -35,6 +39,8 @@ services:
       context: ./playwright
     command: ["npm", "run", "clean"]
     volumes:
+      - ./playwright/tests:/app/tests
+      - ./playwright/playwright.config.ts:/app/playwright.config.ts
       - ./snapshots:/app/snapshots
       - ./report:/app/report
     depends_on:
