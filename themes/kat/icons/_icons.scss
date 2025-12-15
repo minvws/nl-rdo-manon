@@ -1,5 +1,11 @@
-$kat-icons-path: "..icons/kat-icons.svg";
-$tabler-icons-path: "..icons/tabler-icons.svg";
+@use "sass:map";
+
+/* KAT icons path */
+$icons-path: "@minvws/manon-themes/kat/icons" !default;
+
+/* Path to the sprite images */
+$kat-icons-path: "#{$icons-path}/kat-icons.svg";
+$tabler-icons-path: "#{$icons-path}/tabler-icons.svg";
 
 $kat-sprites: (
   paw: "#{$kat-icons-path}#paw",
@@ -95,4 +101,4 @@ $tabler-sprites: (
   x-circle: "#{$tabler-icons-path}#x-circle",
 );
 
-$sprites: map-merge($kat-sprites, $tabler-sprites);
+$sprites: map.merge($kat-sprites, $tabler-sprites);
