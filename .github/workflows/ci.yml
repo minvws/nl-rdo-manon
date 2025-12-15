@@ -115,6 +115,30 @@ jobs:
             echo "  - $file ($(du -h "$file" | cut -f1))"
           done
 
+  visreg-test:
+    name: Visual regression test
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Run visual regression tests
+        run: pnpm run visreg:test
+
+      - name: Upload visual regression report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-regression-report
+          path: visreg/report/
+
   sonarcloud:
     runs-on: ubuntu-latest
     steps:
