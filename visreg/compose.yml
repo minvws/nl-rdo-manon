@@ -1,0 +1,41 @@
+services:
+  docs:
+    build:
+      context: ../
+      dockerfile: ./docs/Dockerfile
+    ports:
+      - "5173:5173"
+    volumes:
+      - ../docs:/app/docs
+      - ../manon:/app/manon
+      - ../themes:/app/themes
+
+  visreg-test:
+    build:
+      context: ./playwright
+    command: ["npm", "run", "test"]
+    volumes:
+      - ./snapshots:/app/snapshots
+      - ./report:/app/report
+    depends_on:
+      - docs
+
+  visreg-update:
+    build:
+      context: ./playwright
+    command: ["npm", "run", "update"]
+    volumes:
+      - ./snapshots:/app/snapshots
+      - ./report:/app/report
+    depends_on:
+      - docs
+
+  visreg-clean:
+    build:
+      context: ./playwright
+    command: ["npm", "run", "clean"]
+    volumes:
+      - ./snapshots:/app/snapshots
+      - ./report:/app/report
+    depends_on:
+      - docs
