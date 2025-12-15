@@ -22,6 +22,7 @@ a.button.to-top {
   gap: theme.$button-to-top-gap;
   justify-content: theme.$button-to-top-justify-content;
   align-items: theme.$button-to-top-align-items;
+  z-index: 10;
 
   @if theme.$button-to-top-icon-mask {
     &::after {
