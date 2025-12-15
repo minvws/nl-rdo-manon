@@ -1,6 +1,6 @@
-@use "sprites";
+@use "icons";
 
-@each $name, $url in $sprites {
+@each $name, $url in icons.$sprites {
   .icon-#{$name} {
     mask-image: url("#{$url}");
   }
