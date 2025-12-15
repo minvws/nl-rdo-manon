@@ -11,7 +11,7 @@ import { remarkLinks } from "./src/markdown/remark/links.js";
 const config = {
   extensions: [".svelte", ".md"],
   kit: {
-    adapter: adapter(),
+    adapter: adapter({ fallback: "index.html" }),
     prerender: {
       entries: ["*", ...Object.keys(redirects)],
       handleMissingId: ({ path, id, referrers, message }) => {
