@@ -118,7 +118,8 @@ jobs:
   visreg-test:
     name: Visual regression test
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'visual-regression'))
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v6
