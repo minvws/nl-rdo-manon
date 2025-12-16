@@ -4,6 +4,8 @@
 /* Fonts (@font-faces) */
 @use "fonts";
 
+@use "icons";
+
 /* Core variables */
 /* These are core sets like color schemes, fonts
 and spacing sets */
@@ -444,5 +446,17 @@ and spacing sets */
   $language-selector-list-background-color: color-scheme.$white,
   $language-selector-list-item-border-color: color-scheme.$grey-200,
   $language-selector-list-item-hover-text-color: semantic.$color-text-default,
-  $language-selector-list-item-hover-background-color: color-scheme.$violet-50
+  $language-selector-list-item-hover-background-color: color-scheme.$violet-50,
+
+  // filter
+  $filter-icon-color: color-scheme.$blue-600,
+  $filter-icon-mask: icons.$filter,
+  $filter-icon-width: 1rem,
+  $filter-icon-height: 1rem,
+  $filter-intro-justify-content: space-between,
+  $filter-button-font-size: 0,
+  $filter-close-icon-mask: icons.$close,
+  $filter-button-background-color: transparent,
+  $filter-button-padding: 0,
+  $filter-button-gap: 0
 );
