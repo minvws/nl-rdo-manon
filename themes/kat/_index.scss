@@ -454,5 +454,17 @@ and spacing sets */
   $language-selector-list-background-color: color-scheme.$white,
   $language-selector-list-item-border-color: color-scheme.$grey-200,
   $language-selector-list-item-hover-text-color: semantic.$color-text-default,
-  $language-selector-list-item-hover-background-color: color-scheme.$violet-50
+  $language-selector-list-item-hover-background-color: color-scheme.$violet-50,
+
+  // form fieldset
+  $form-fieldset-border-width: 0,
+  $form-fieldset-padding: 0,
+  $form-fieldset-margin: 0,
+  $form-fieldset-legend-font-weight: bold,
+  $form-fieldset-legend-margin-bottom: null,
+  $form-fieldset-legend-margin: 0 0 1rem 0,
+  $form-fieldset-legend-padding: 0,
+  $form-fieldset-input-margin: 0.5rem 0 1rem 0,
+  $form-fieldset-fields-padding: 0,
+  $form-fieldset-fields-margin: 0
 );
