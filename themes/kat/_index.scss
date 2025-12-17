@@ -101,6 +101,9 @@ and spacing sets */
   $button-secondary-focus-outline: 2px solid color-scheme.$violet-500,
   $button-secondary-focus-outline-offset: 0.25rem,
 
+  // button container
+  $button-container-gap: 1rem,
+
   // breadcrumb bar
   $breadcrumb-bar-padding-top: spacing.$spacing-050,
   $breadcrumb-bar-padding-right: spacing.$spacing-100,
