@@ -125,6 +125,12 @@ and spacing sets */
   $code-block-padding: spacing.$spacing-200,
   $code-block-background-color: semantic.$color-brand-secondary-subtle,
   $code-block-border-radius: border-radii.$border-radius-s,
+  $code-block-copy-button-background-color: transparent,
+  $code-block-copy-button-text-color: color-scheme.$blue-600,
+  $code-block-copy-button-hover-text-color: color-scheme.$blue-600,
+  $code-block-copy-button-hover-background-color: transparent,
+  $code-block-copy-button-border: 1px solid color-scheme.$grey-200,
+  $code-block-copy-button-hover-border: 1px solid color-scheme.$blue-600,
 
   // columns
   $columns-gap: spacing.$spacing-300,
