@@ -4,7 +4,7 @@
 /* Fonts (@font-faces) */
 @use "fonts";
 
-/* Theme icons */
+/* Icons */
 @use "icons";
 
 /* Core variables */
@@ -275,6 +275,11 @@ and spacing sets */
   $hero-content-wrapper-justify-content: center,
   $hero-content-wrapper-align-items: center,
 
+  // icon
+  $icon-width: 1.5rem,
+  $icon-height: 1.5rem,
+  $icon-color: semantic.$color-text-default,
+
   // link
   $link-text-color: color-scheme.$blue-600,
 
@@ -449,3 +454,7 @@ and spacing sets */
   $language-selector-list-item-hover-text-color: semantic.$color-text-default,
   $language-selector-list-item-hover-background-color: color-scheme.$violet-50
 );
+
+// Include the mixin to generate all .icon-name classes for the theme
+@use "@minvws/manon/mixins/icon";
+@include icon.generate-icons(icons.$icon-map);

@@ -9,3 +9,12 @@
   padding: 0;
   font-style: normal;
 }
+
+@mixin generate-icons($icon-map) {
+  @each $name, $url in $icon-map {
+    .icon-#{$name} {
+      mask: url("#{$url}") no-repeat center / contain;
+      // -webkit-mask: url("#{$url}") no-repeat center / contain;
+    }
+  }
+}

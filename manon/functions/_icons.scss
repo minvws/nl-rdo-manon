@@ -1,0 +1,10 @@
+@use "sass:map";
+
+@function get-icon($icon-name, $icon-map) {
+  @if not map.has-key($icon-name, $icon-map) {
+    @warn "Icon '#{$icon-name}' not found in the theme's icon map.";
+    @return none;
+  }
+
+  @return url(map.get($icon-map, $icon-name));
+}
