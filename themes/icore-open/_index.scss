@@ -807,4 +807,8 @@ and spacing sets */
   // image background
   $image-background-object-position: center,
   $image-background-elements-padding: spacing.$spacing-150
-); ;
+);
+
+// Include the mixin to generate all .icon-name classes for the theme
+@use "@minvws/manon/mixins/icon";
+@include icon.generate-icons(icons.$icon-map);
