@@ -108,13 +108,21 @@ and spacing sets */
   $button-secondary-focus-outline-offset: 0.25rem,
 
   // breadcrumb bar
+  $breadcrumb-bar-background-color: semantic.$color-brand-secondary-subtle,
   $breadcrumb-bar-padding-top: spacing.$spacing-050,
   $breadcrumb-bar-padding-right: spacing.$spacing-100,
   $breadcrumb-bar-padding-bottom: spacing.$spacing-050,
   $breadcrumb-bar-padding-left: spacing.$spacing-100,
-  $breadcrumb-bar-background-color: semantic.$color-brand-secondary-subtle,
-  $breadcrumb-bar-link-text-decoration: none,
+  $breadcrumb-bar-text-color: semantic.$color-text-default,
   $breadcrumb-bar-gap: spacing.$spacing-050,
+  $breadcrumb-bar-list-item-last-child-font-weight: bold,
+  $breadcrumb-bar-list-item-gap: spacing.$spacing-050,
+  $breadcrumb-bar-icon-color: semantic.$color-text-default,
+  $breadcrumb-bar-icon-width: 1.5rem,
+  $breadcrumb-bar-icon-height: 1.5rem,
+
+  // breadcrumb bar link
+  $breadcrumb-bar-link-text-decoration: none,
 
   // card
   $card-background-color: color-scheme.$white,
