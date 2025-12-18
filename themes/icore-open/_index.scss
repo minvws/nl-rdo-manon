@@ -1,3 +1,5 @@
+@use "sass:map";
+
 /* Theme configuration */
 @forward "config";
 
@@ -55,13 +57,16 @@ and spacing sets */
 
   // accordion icon open
   $accordion-button-icon-after-color: semantic.$color-text-default,
-  $accordion-button-icon-after-mask: icons.$chevron-down,
+  $accordion-button-icon-after-mask: map.get(icons.$icon-map, "chevron-down"),
   $accordion-button-icon-after-width: 1.5rem,
   $accordion-button-icon-after-height: 1.5rem,
 
   // accordion icon closed
   $accordion-button-icon-after-closed-color: semantic.$color-text-default,
-  $accordion-button-icon-after-closed-mask: icons.$chevron-up,
+  $accordion-button-icon-after-closed-mask: map.get(
+      icons.$icon-map,
+      "chevron-up"
+    ),
   $accordion-button-icon-after-closed-width: 1.5rem,
   $accordion-button-icon-after-closed-height: 1.5rem,
   // article
@@ -158,7 +163,7 @@ and spacing sets */
   $button-to-top-justify-content: center,
 
   // button to top icon
-  $button-to-top-icon-mask: icons.$to-top,
+  $button-to-top-icon-mask: map.get(icons.$icon-map, "to-top"),
   $button-to-top-icon-color: color-scheme.$oc-white,
   $button-to-top-icon-width: 1.5rem,
   $button-to-top-icon-height: 1.5rem,
@@ -180,7 +185,7 @@ and spacing sets */
   $breadcrumb-bar-list-item-last-child-font-weight: bold,
   $breadcrumb-bar-list-item-gap: spacing.$spacing-050,
   $breadcrumb-bar-icon-color: semantic.$color-text-default,
-  $breadcrumb-bar-icon-mask: icons.$chevron-right,
+  $breadcrumb-bar-icon-mask: map.get(icons.$icon-map, "chevron-right"),
   $breadcrumb-bar-icon-width: 1.5rem,
   $breadcrumb-bar-icon-height: 1.5rem,
 
@@ -361,7 +366,7 @@ and spacing sets */
   $form-help-button-padding: spacing.$spacing-025,
   $form-help-button-text-color: semantic.$color-brand-primary-default,
   $form-help-button-top: spacing.$spacing-050,
-  $form-help-icon-mask: icons.$questionmark,
+  $form-help-icon-mask: map.get(icons.$icon-map, "questionmark"),
   $form-help-button-border-width: 1px,
   $form-help-button-border-style: solid,
   $form-help-button-border-color: color-scheme.$oc-gray-4,
@@ -392,12 +397,12 @@ and spacing sets */
 
   // filter
   $filter-icon-color: semantic.$color-brand-primary-default,
-  $filter-icon-mask: icons.$filter,
+  $filter-icon-mask: map.get(icons.$icon-map, "filter"),
   $filter-icon-width: 1rem,
   $filter-icon-height: 1rem,
   $filter-intro-justify-content: space-between,
   $filter-button-font-size: 0,
-  $filter-close-icon-mask: icons.$close,
+  $filter-close-icon-mask: map.get(icons.$icon-map, "close"),
   $filter-button-background-color: transparent,
   $filter-button-padding: 0,
   $filter-button-gap: 0,
@@ -480,37 +485,6 @@ and spacing sets */
   // icon
   $icon-height: 1.5rem,
   $icon-width: 1.5rem,
-  $icon-mask-ascending: icons.$ascending,
-  $icon-mask-check: icons.$check,
-  $icon-mask-chevron-down: icons.$chevron-down,
-  $icon-mask-chevron-left: icons.$chevron-left,
-  $icon-mask-chevron-light-down: icons.$chevron-light-down,
-  $icon-mask-chevron-light-left: icons.$chevron-light-left,
-  $icon-mask-chevron-light-right: icons.$chevron-light-right,
-  $icon-mask-chevron-light-up: icons.$chevron-light-up,
-  $icon-mask-chevron-right: icons.$chevron-right,
-  $icon-mask-chevron-up: icons.$chevron-up,
-  $icon-mask-close: icons.$close,
-  $icon-mask-descending: icons.$descending,
-  $icon-mask-download: icons.$download,
-  $icon-mask-error: icons.$error,
-  $icon-mask-filter: icons.$filter,
-  $icon-mask-hamburger: icons.$hamburger,
-  $icon-mask-heart: icons.$heart,
-  $icon-mask-home: icons.$home,
-  $icon-mask-informative: icons.$informative,
-  $icon-mask-lock-closed: icons.$lock-closed,
-  $icon-mask-on-off: icons.$on-off,
-  $icon-mask-outgoing: icons.$outgoing,
-  $icon-mask-questionmark: icons.$questionmark,
-  $icon-mask-reset: icons.$reset,
-  $icon-mask-search: icons.$search,
-  $icon-mask-smartphone: icons.$smartphone,
-  $icon-mask-sort: icons.$sort,
-  $icon-mask-to-top: icons.$to-top,
-  $icon-mask-trash: icons.$trash,
-  $icon-mask-user: icons.$user,
-  $icon-mask-warning: icons.$warning,
 
   // layout
   $layout-gap: 2.5rem,
@@ -649,13 +623,13 @@ and spacing sets */
 
   // Pagination previous icon
   $pagination-previous-icon-color: semantic.$color-brand-primary-default,
-  $pagination-previous-icon-mask: icons.$chevron-left,
+  $pagination-previous-icon-mask: map.get(icons.$icon-map, "chevron-left"),
   $pagination-previous-icon-width: 1.5rem,
   $pagination-previous-icon-height: 1.5rem,
 
   // Pagination next icon
   $pagination-next-icon-color: semantic.$color-brand-primary-default,
-  $pagination-next-icon-mask: icons.$chevron-right,
+  $pagination-next-icon-mask: map.get(icons.$icon-map, "chevron-right"),
   $pagination-next-icon-width: 1.5rem,
   $pagination-next-icon-height: 1.5rem,
 
@@ -684,15 +658,14 @@ and spacing sets */
   $sidemenu-button-font-size: 0,
 
   // sidemenu expanded
-  $sidemenu-expanded-icon-mask: icons.$close,
+  $sidemenu-expanded-icon-mask: map.get(icons.$icon-map, "close"),
   $sidemenu-expanded-icon-color: semantic.$color-brand-primary-default,
   $sidemenu-expanded-icon-width: 1.5rem,
   $sidemenu-expanded-icon-height: 1.5rem,
 
   // sidemenu collapsed
   $sidemenu-collapsed-button-margin-left: 2rem,
-  $sidemenu-collapsed-icon-mask: icons.$hamburger,
-
+  $sidemenu-collapsed-icon-mask: map.get(icons.$icon-map, "hamburger"),
   // sidemenu list
   $sidemenu-ul-padding: spacing.$spacing-100 0,
   $sidemenu-list-item-padding: spacing.$spacing-025 0,
@@ -834,4 +807,4 @@ and spacing sets */
   // image background
   $image-background-object-position: center,
   $image-background-elements-padding: spacing.$spacing-150
-);
+); ;
