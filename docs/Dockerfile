@@ -18,7 +18,7 @@ COPY ../themes ./themes
 COPY docs ./docs
 
 # Install dependencies
-RUN pnpm install
+RUN pnpm install --production=false
 
 WORKDIR /app/docs
 CMD ["./entrypoint.sh"]
