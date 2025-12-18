@@ -1,4 +1,5 @@
 @use "../variables" as theme;
+@use "../functions/icons";
 
 .breadcrumb-bar,
 .page-header .breadcrumb-bar {
@@ -110,7 +111,7 @@
       }
 
       // Icon
-      @if theme.$breadcrumb-bar-icon-mask {
+      @if icons.get-icon("chevron-right", theme.$icon-map) {
         &::after {
           mask-size: contain;
           content: "";
@@ -119,7 +120,7 @@
           padding-right: theme.$breadcrumb-bar-icon-padding-right;
           padding-left: theme.$breadcrumb-bar-icon-padding-left;
           background-color: theme.$breadcrumb-bar-icon-color;
-          mask-image: theme.$breadcrumb-bar-icon-mask;
+          mask-image: icons.get-icon("chevron-right", theme.$icon-map);
           width: theme.$breadcrumb-bar-icon-width;
           height: theme.$breadcrumb-bar-icon-height;
         }

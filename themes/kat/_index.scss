@@ -30,6 +30,9 @@ and spacing sets */
 @use "@minvws/manon/variables" with (
   $theme-name: "kat",
 
+  // icons
+  $icon-map: icons.$icon-map,
+
   // article
   $article-content-wrapper-gap: spacing.$spacing-100,
   $article-gap: spacing.$spacing-200,

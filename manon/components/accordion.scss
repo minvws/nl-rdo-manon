@@ -1,4 +1,5 @@
 @use "../variables" as theme;
+@use "../functions/icons";
 
 %accordion {
   display: flex;
@@ -132,7 +133,7 @@ section.accordion {
           padding-right: theme.$accordion-button-icon-before-padding-right;
           padding-left: theme.$accordion-button-icon-before-padding-left;
           background-color: theme.$accordion-button-icon-before-color;
-          mask-image: theme.$accordion-button-icon-before-mask;
+          mask-image: icons.get-icon("chevron-down", theme.$icon-map);
           width: theme.$accordion-button-icon-before-width;
           height: theme.$accordion-button-icon-before-height;
         }

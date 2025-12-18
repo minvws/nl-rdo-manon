@@ -1,7 +1,7 @@
 @use "sass:map";
 
 @function get-icon($icon-name, $icon-map) {
-  @if not map.has-key($icon-name, $icon-map) {
+  @if not map.has-key($icon-map, $icon-name) {
     @warn "Icon '#{$icon-name}' not found in the theme's icon map.";
     @return none;
   }
