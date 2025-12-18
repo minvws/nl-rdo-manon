@@ -108,7 +108,7 @@ and spacing sets */
 
   // breadcrumb bar
   $breadcrumb-bar-background-color: semantic.$color-brand-secondary-subtle,
-  $breadcrumb-bar-icon-mask: url(map.get(icons.$icon-map, "chevron-right")),
+  $breadcrumb-bar-icon-mask: map.get(icons.$icon-map, "chevron-right"),
   $breadcrumb-bar-padding-top: spacing.$spacing-050,
   $breadcrumb-bar-padding-right: spacing.$spacing-100,
   $breadcrumb-bar-padding-bottom: spacing.$spacing-050,
