@@ -1,8 +1,14 @@
+@use "sass:map";
 @use "../config";
 
 $tabler-icons-path: "#{config.$icons-path}/tabler";
+$kat-icons-path: "#{config.$icons-path}/kat";
 
-$icon-map: (
+$kat-icon-map: (
+  paw: "#{$kat-icons-path}/paw.svg",
+);
+
+$tabler-icon-map: (
   adjustments: "#{$tabler-icons-path}/adjustments.svg",
   affiliate: "#{$tabler-icons-path}/affiliate.svg",
   alert: "#{$tabler-icons-path}/alert.svg",
@@ -91,3 +97,5 @@ $icon-map: (
   x: "#{$tabler-icons-path}/x.svg",
   x-circle: "#{$tabler-icons-path}/x-circle.svg",
 );
+
+$icon-map: map.merge($kat-icon-map, $tablericon-map);
