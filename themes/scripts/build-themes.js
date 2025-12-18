@@ -62,6 +62,7 @@ for (const themeDir of themeDirs) {
 
   let variants = [];
   if (variantFiles.length > 0) {
+    // If variants found, create an entry for each
     console.log(`   Found ${variantFiles.length} variant(s):`);
     variantFiles.forEach((f) => {
       const variantName = path.basename(f, ".scss");
@@ -70,7 +71,8 @@ for (const themeDir of themeDirs) {
         name: variantName,
         file: `./${theme}/variants/${variantName}.scss`,
         content: `@use "${theme}" with (
-          $font-path: "./fonts"
+          $font-path: "./fonts",
+          $icons-path: "./img/icons"
         );
         @use "./${theme}/variants/${variantName}";`,
       });
@@ -81,7 +83,8 @@ for (const themeDir of themeDirs) {
       name: "default",
       file: null,
       content: `@use "${theme}" with (
-        $font-path: "./fonts"
+        $font-path: "./fonts",
+        $icons-path: "./img/icons"
       );
       @use "@minvws/manon/components/bundles/all";`,
     });
@@ -135,6 +138,19 @@ for (const themeDir of themeDirs) {
     console.log(`   Copied ${fontFiles.length} font file(s) to fonts folder.`);
   } else {
     console.log("   No fonts folder found - skipping.");
+  }
+
+  // Move icons in theme folder to dist. Assume icons are in a "icons"
+  // subfolder of the theme
+  const iconsSrcFolder = path.join(themesFolder, theme, "icons");
+  const iconsDestFolder = path.join(themeOutFolder, "img", "icons");
+
+  if (fs.existsSync(iconsSrcFolder)) {
+    fs.cpSync(iconsSrcFolder, iconsDestFolder, { recursive: true });
+    const iconFiles = globSync("**/*.*", { cwd: iconsSrcFolder });
+    console.log(`   Copied ${iconFiles.length} icon file(s) to icons folder.`);
+  } else {
+    console.log("   No icons folder found - skipping.");
   }
 
   // Clean up temporary file
