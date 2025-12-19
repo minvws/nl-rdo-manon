@@ -810,5 +810,5 @@ and spacing sets */
 );
 
 // Include the mixin to generate all .icon-name classes for the theme
-@use "@minvws/manon/mixins/icon";
-@include icon.generate-icons(icons.$icon-map);
+@use "@minvws/manon/mixins/icon-generator";
+@include icon-generator.generate-icons(icons.$icon-map);
