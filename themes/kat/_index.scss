@@ -1,8 +1,13 @@
+@use "sass:map";
+
 /* Theme configuration */
 @forward "config";
 
 /* Fonts (@font-faces) */
 @use "fonts";
+
+/* Icons */
+@use "icons";
 
 /* Core variables */
 /* These are core sets like color schemes, fonts
@@ -108,13 +113,22 @@ and spacing sets */
   $button-container-gap: 1rem,
 
   // breadcrumb bar
+  $breadcrumb-bar-background-color: semantic.$color-brand-secondary-subtle,
+  $breadcrumb-bar-icon-mask: map.get(icons.$icon-map, "chevron-right"),
   $breadcrumb-bar-padding-top: spacing.$spacing-050,
   $breadcrumb-bar-padding-right: spacing.$spacing-100,
   $breadcrumb-bar-padding-bottom: spacing.$spacing-050,
   $breadcrumb-bar-padding-left: spacing.$spacing-100,
-  $breadcrumb-bar-background-color: semantic.$color-brand-secondary-subtle,
-  $breadcrumb-bar-link-text-decoration: none,
+  $breadcrumb-bar-text-color: semantic.$color-text-default,
   $breadcrumb-bar-gap: spacing.$spacing-050,
+  $breadcrumb-bar-list-item-last-child-font-weight: bold,
+  $breadcrumb-bar-list-item-gap: spacing.$spacing-050,
+  $breadcrumb-bar-icon-color: semantic.$color-text-default,
+  $breadcrumb-bar-icon-width: 1.5rem,
+  $breadcrumb-bar-icon-height: 1.5rem,
+
+  // breadcrumb bar link
+  $breadcrumb-bar-link-text-decoration: none,
 
   // card
   $card-background-color: color-scheme.$white,
@@ -296,6 +310,11 @@ and spacing sets */
   $hero-content-wrapper-gap: spacing.$spacing-250,
   $hero-content-wrapper-justify-content: center,
   $hero-content-wrapper-align-items: center,
+
+  // icon
+  $icon-width: 1.5rem,
+  $icon-height: 1.5rem,
+  $icon-color: semantic.$color-text-default,
 
   // link
   $link-text-color: color-scheme.$blue-600,
@@ -492,3 +511,7 @@ and spacing sets */
   $nota-bene-font-size: body-text.$body-text-s,
   $nota-bene-text-color: color-scheme.$grey-700
 );
+
+// Include the mixin to generate all .icon-name classes for the theme
+@use "@minvws/manon/mixins/icon-generator";
+@include icon-generator.generate-icons(icons.$icon-map);
