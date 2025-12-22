@@ -58,10 +58,10 @@ body > header,
     border-radius: theme.$header-link-border-radius;
     padding: theme.$header-link-padding;
     font-weight: theme.$header-link-font-weight;
-    min-height: theme.$header-link-min-height;
     display: theme.$header-link-display;
     justify-content: theme.$header-link-justify-content;
     align-items: theme.$header-link-align-items;
+    min-height: theme.$header-link-min-height;
 
     &:visited,
     &:visited:hover {

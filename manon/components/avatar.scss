@@ -29,3 +29,16 @@
     outline-offset: theme.$avatar-focus-outline-offset;
   }
 }
+
+body > header,
+.manon-root > header,
+.page-header {
+  a.avatar {
+    width: theme.$avatar-width;
+    height: theme.$avatar-height;
+    min-width: theme.$avatar-min-width;
+    min-height: theme.$avatar-min-height;
+    max-width: theme.$avatar-max-width;
+    max-height: theme.$avatar-max-height;
+  }
+}
