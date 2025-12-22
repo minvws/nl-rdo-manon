@@ -457,6 +457,6 @@ and spacing sets */
   $language-selector-list-item-hover-background-color: color-scheme.$violet-50,
 
   // nota bene
-  $nota-bene-font-size: 0.75rem,
+  $nota-bene-font-size: body-text.$body-text-s,
   $nota-bene-text-color: color-scheme.$grey-700
 );
