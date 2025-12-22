@@ -1,6 +1,6 @@
 @use "../config";
 
-$ro-icons-path: "#{config.icons-path}/ro";
+$ro-icons-path: "#{config.$icons-path}/ro";
 
 $icon-map: (
   arrow-bar-to-up: url("#{$ro-icons-path}/arrow-bar-to-up.svg"),
