@@ -15,7 +15,7 @@
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-      <a href="/" class="logo" aria-label="Manon met iCore Open thema">
+      <a href="#" class="logo" aria-label="Manon met iCore Open thema">
         <img src="../img/logo.svg" alt="Manon met iCore Open thema" />
         Manon - iCore Open
       </a>
@@ -27,7 +27,7 @@
 
 <header {...props} class="rijkshuisstijl-2008">
   <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
-  <a href="/" class="logo" aria-label="Manon met Rijksoverheid 2008 thema">
+  <a href="#" class="logo" aria-label="Manon met Rijksoverheid 2008 thema">
     <img src="../img/ro-logo.svg" alt="Logo Rijksoverheid" />
     Rijksoverheid
   </a>
@@ -55,7 +55,7 @@
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-      <a href="/" class="logo" aria-label="Manon met Kat thema">
+      <a href="#" class="logo" aria-label="Manon met Kat thema">
         <img src="../img/kat-logo.svg" alt="Logo Kat" />
         Kat
       </a>
