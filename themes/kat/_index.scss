@@ -1,9 +1,12 @@
+@use "sass:map";
+
 /* Theme configuration */
 @forward "config";
 
 /* Fonts (@font-faces) */
 @use "fonts";
 
+/* Icons */
 @use "icons";
 
 /* Core variables */
@@ -30,8 +33,11 @@ and spacing sets */
   $theme-name: "kat",
 
   // article
-  $article-content-wrapper-gap: spacing.$spacing-100,
   $article-gap: spacing.$spacing-200,
+
+  // article content wrapper
+  $article-content-wrapper-max-width: 90rem,
+  $article-content-wrapper-gap: spacing.$spacing-200,
 
   // avatar
   $avatar-font-weight: bold,
@@ -103,14 +109,26 @@ and spacing sets */
   $button-secondary-focus-outline: 2px solid color-scheme.$violet-500,
   $button-secondary-focus-outline-offset: 0.25rem,
 
+  // button container
+  $button-container-gap: 1rem,
+
   // breadcrumb bar
+  $breadcrumb-bar-background-color: semantic.$color-brand-secondary-subtle,
+  $breadcrumb-bar-icon-mask: map.get(icons.$icon-map, "chevron-right"),
   $breadcrumb-bar-padding-top: spacing.$spacing-050,
   $breadcrumb-bar-padding-right: spacing.$spacing-100,
   $breadcrumb-bar-padding-bottom: spacing.$spacing-050,
   $breadcrumb-bar-padding-left: spacing.$spacing-100,
-  $breadcrumb-bar-background-color: semantic.$color-brand-secondary-subtle,
-  $breadcrumb-bar-link-text-decoration: none,
+  $breadcrumb-bar-text-color: semantic.$color-text-default,
   $breadcrumb-bar-gap: spacing.$spacing-050,
+  $breadcrumb-bar-list-item-last-child-font-weight: bold,
+  $breadcrumb-bar-list-item-gap: spacing.$spacing-050,
+  $breadcrumb-bar-icon-color: semantic.$color-text-default,
+  $breadcrumb-bar-icon-width: 1.5rem,
+  $breadcrumb-bar-icon-height: 1.5rem,
+
+  // breadcrumb bar link
+  $breadcrumb-bar-link-text-decoration: none,
 
   // card
   $card-background-color: color-scheme.$white,
@@ -128,11 +146,26 @@ and spacing sets */
   $code-block-background-color: semantic.$color-brand-secondary-subtle,
   $code-block-border-radius: border-radii.$border-radius-s,
 
+  // code block copy button
+  $code-block-copy-button-background-color: color-scheme.$white,
+  $code-block-copy-button-hover-text-color: color-scheme.$blue-600,
+  $code-block-copy-button-border: 1px solid color-scheme.$grey-200,
+  $code-block-copy-button-hover-background-color: color-scheme.$white,
+  $code-block-copy-button-hover-border: 1px solid color-scheme.$blue-600,
+
   // columns
   $columns-gap: spacing.$spacing-300,
 
   // collapsing element
   $collapsing-element-justify-content: space-between,
+  $collapsing-element-list-item-link-hover-background-color:
+    color-scheme.$grey-50,
+  $collapsing-element-text-color: color-scheme.$grey-900,
+  $collapsing-element-list-item-focus-outline: 2px solid
+    color-scheme.$violet-500,
+  $collapsing-element-list-item-link-visited-color: color-scheme.$grey-900,
+  $collapsing-element-list-item-link-destructive-color: color-scheme.$red-600,
+  $collapsing-element-list-link-selected-background-color: color-scheme.$grey-50,
 
   // expando rows
   $expando-rows-border-width: 0 0 2px 0,
@@ -258,6 +291,10 @@ and spacing sets */
   $header-content-wrapper-width: 100%,
 
   // hero
+  $hero-max-width: calc(100% + 8rem),
+  $hero-width: calc(100% + 8rem),
+  $hero-margin: -4rem 0 0 -4rem,
+  $hero-height: 25rem,
   $hero-border-radius: 0,
   $hero-font-size: body-text.$body-text-l,
   $hero-background-color: color-scheme.$violet-200,
@@ -273,6 +310,11 @@ and spacing sets */
   $hero-content-wrapper-gap: spacing.$spacing-250,
   $hero-content-wrapper-justify-content: center,
   $hero-content-wrapper-align-items: center,
+
+  // icon
+  $icon-width: 1.5rem,
+  $icon-height: 1.5rem,
+  $icon-color: semantic.$color-text-default,
 
   // link
   $link-text-color: color-scheme.$blue-600,
@@ -295,8 +337,16 @@ and spacing sets */
   $logo-img-padding: 0.25rem 0.5rem,
   $logo-img-border-radius: border-radii.$border-radius-s,
 
+  // main
+  $main-padding-top: spacing.$spacing-400,
+  $main-padding-right: spacing.$spacing-400,
+  $main-padding-bottom: spacing.$spacing-400,
+  $main-padding-left: spacing.$spacing-400,
+  $main-gap: spacing.$spacing-400,
+
   // nav
   $navigation-link-text-decoration: none,
+  $navigation-list-padding: 0,
 
   // notification
   $notification-padding-top: spacing.$spacing-100,
@@ -348,21 +398,18 @@ and spacing sets */
   $notification-system-text-color: semantic.$color-text-default,
   $notification-system-border-color: color-scheme.$black-05,
 
+  // pagetitle
+  $page-title-max-width: 90rem,
+  $page-title-margin: 0 auto,
+  $page-title-width: 100%,
+
   // section
-  $section-padding-top: spacing.$spacing-100,
-  $section-padding-right: 0,
-  $section-padding-bottom: spacing.$spacing-100,
-  $section-padding-left: 0,
   $section-gap: spacing.$spacing-100,
-  $section-flex-direction: column,
+  $section-max-width: 100%,
 
   // section content wrapper
   $section-content-wrapper-background-color: color-scheme.$white,
-  $section-content-wrapper-padding-top: spacing.$spacing-200,
-  $section-content-wrapper-padding-right: 0,
-  $section-content-wrapper-padding-bottom: spacing.$spacing-300,
-  $section-content-wrapper-padding-left: 0,
-  $section-content-wrapper-gap: spacing.$spacing-250,
+  $section-content-wrapper-gap: spacing.$spacing-200,
   $section-content-wrapper-flex-direction: column,
   $section-content-wrapper-border-radius: border-radii.$border-radius-m,
   $section-content-wrapper-max-width: 90rem,
@@ -458,5 +505,24 @@ and spacing sets */
   $filter-close-icon-mask: icons.$close,
   $filter-button-background-color: transparent,
   $filter-button-padding: 0,
-  $filter-button-gap: 0
+  $filter-button-gap: 0,
+  // form fieldset
+  $form-fieldset-border-width: 0,
+  $form-fieldset-padding: 0,
+  $form-fieldset-margin: 0,
+  $form-fieldset-legend-font-weight: bold,
+  $form-fieldset-legend-margin-bottom: null,
+  $form-fieldset-legend-margin: 0 0 1rem 0,
+  $form-fieldset-legend-padding: 0,
+  $form-fieldset-input-margin: 0.5rem 0 1rem 0,
+  $form-fieldset-fields-padding: 0,
+  $form-fieldset-fields-margin: 0,
+
+  // nota bene
+  $nota-bene-font-size: body-text.$body-text-s,
+  $nota-bene-text-color: color-scheme.$grey-700
 );
+
+// Include the mixin to generate all .icon-name classes for the theme
+@use "@minvws/manon/mixins/icon-generator";
+@include icon-generator.generate-icons(icons.$icon-map);

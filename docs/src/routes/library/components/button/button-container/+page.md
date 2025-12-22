@@ -21,12 +21,12 @@ SCSS importeren:
 
 <div class="button-container">
   <button>Eerste knop</button>
-  <button>Tweede knop</button>
+  <button class="secondary">Tweede knop</button>
 </div>
 
 ```html
 <div class="button-container">
   <button>Eerste knop</button>
-  <button>Tweede knop</button>
+  <button class="secondary">Tweede knop</button>
 </div>
 ```
