@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 11l5 5 5-5M12 4v12"/></svg>
-=======
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_745_3332)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 20C3 19.4477 3.44772 19 4 19H20C20.5523 19 21 19.4477 21 20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20Z" fill="#3B3B3B"/>
@@ -14,4 +11,3 @@
 </clipPath>
 </defs>
 </svg>
->>>>>>> af6cb46109b1aa27b72da69f003dba7113c17b40
