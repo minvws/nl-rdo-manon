@@ -34,7 +34,6 @@ SCSS importeren:
   <iframe src="/snippets/footer/kat" title="Voorbeeld"></iframe>
 </div>
 
-
 <div class="icore-open">
   <pre>
     <code>

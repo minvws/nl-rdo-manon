@@ -169,9 +169,6 @@ form.horizontal {
         /* float objects to move inputs into place even when there is no label */
         float: right;
         width: theme.$form-horizontal-view-fieldset-input-column;
-      }
-
-      > div {
         margin-bottom: 0;
       }
 

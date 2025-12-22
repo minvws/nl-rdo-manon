@@ -36,7 +36,7 @@
   padding: theme.$navigation-list-horizontal-padding;
   gap: theme.$navigation-list-horizontal-gap;
 
-  li:before {
+  li::before {
     padding: theme.$navigation-list-horizontal-item-icon-padding;
   }
 }
@@ -86,6 +86,11 @@ nav {
         }
       }
     }
+  }
+
+  .collapsing-element,
+  .content-wrapper {
+    justify-content: theme.$navigation-content-wrapper-justify-content;
   }
 
   .horizontal {

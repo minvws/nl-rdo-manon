@@ -47,12 +47,12 @@ over nieuwe berichten of notificaties.
 
 <a href="#">Berichten<span class="message-counter">42</span></a>
 
-
 ```html
 <a href="message-counter">Berichten <span class="message-counter">42</span></a>
 ```
 
 ### Voorbeeld: `Als een link`
+
 <a href="#" class="message-counter">42</a>
 
 ```html

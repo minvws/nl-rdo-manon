@@ -402,11 +402,6 @@ and spacing sets */
   $notification-system-text-color: semantic.$color-text-default,
   $notification-system-border-color: color-scheme.$black-05,
 
-  // pagetitle
-  $page-title-max-width: 90rem,
-  $page-title-margin: 0 auto,
-  $page-title-width: 100%,
-
   // section
   $section-gap: spacing.$spacing-100,
   $section-max-width: 100%,
@@ -503,10 +498,10 @@ and spacing sets */
 
   // Page title
   $page-title-font-size: heading.$heading-xxl,
+  $page-title-padding: 0,
+  $page-title-max-width: 90rem,
   $page-title-margin: 0 auto,
   $page-title-width: 100%,
-  $page-title-max-width: 100%,
-  $page-title-padding: 0,
 
   // helpers
   $horizontal-gap: spacing.$spacing-100,

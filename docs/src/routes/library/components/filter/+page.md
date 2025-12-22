@@ -162,23 +162,16 @@ import "@minvws/manon/js/filters.js";
       <legend>Filter op datum</legend>
       <div class="form-group">
         <label for="keyword">Trefwoord</label>
-        <span class="nota-bene" id="keyword-explanation"
-            >Bijvoorbeeld: fiets</span
-          >
+        <span class="nota-bene" id="keyword-explanation">Bijvoorbeeld: fiets</span>
         <div class="help-container">
-          <input
-            id="keyword"
-            name="keyword"
-            type="text"
-            aria-describedby="keyword-explanation"
-          />
+          <input id="keyword" name="keyword" type="text" aria-describedby="keyword-explanation" />
           <p
             class="explanation"
             data-open-label="Toelichting bij het veld: Trefwoord"
             data-close-label="Sluit toelichting bij het veld: Trefwoord"
           >
-            <span>toelichting:</span> Vul hier een trefwoord in waarop u wilt
-            filteren. Dit kan een los woord zijn of een combinatie van woorden.
+            <span>toelichting:</span> Vul hier een trefwoord in waarop u wilt filteren. Dit kan een
+            los woord zijn of een combinatie van woorden.
           </p>
         </div>
       </div>
@@ -188,30 +181,19 @@ import "@minvws/manon/js/filters.js";
           <div class="column-2">
             <div>
               <label for="date-range-start">van</label>
-              <input
-                id="date-range-start"
-                name="date-range-start"
-                value="DD-MM-JJJJ"
-                type="date"
-              />
+              <input id="date-range-start" name="date-range-start" value="DD-MM-JJJJ" type="date" />
             </div>
             <div>
               <label for="date-range-end">tot</label>
-              <input
-                id="date-range-end"
-                name="date-range-end"
-                value="DD-MM-JJJJ"
-                type="date"
-              />
+              <input id="date-range-end" name="date-range-end" value="DD-MM-JJJJ" type="date" />
             </div>
           </div>
           <p
-              class="explanation"
-              data-open-label="Toelichting bij het veld: Periode"
-              data-close-label="Sluit toelichting bij het veld: Periode"
-            >
-            <span>toelichting:</span> Vul hier een start- en/of einddatum als
-            volgt in: DD-MM-JJJJ.
+            class="explanation"
+            data-open-label="Toelichting bij het veld: Periode"
+            data-close-label="Sluit toelichting bij het veld: Periode"
+          >
+            <span>toelichting:</span> Vul hier een start- en/of einddatum als volgt in: DD-MM-JJJJ.
           </p>
         </div>
       </fieldset>

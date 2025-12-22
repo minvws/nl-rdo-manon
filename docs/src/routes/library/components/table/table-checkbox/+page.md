@@ -101,9 +101,7 @@ Complete voorbeeld tabel:
     <table>
       <caption>
         Tabelvoorbeeld met selectievak:
-        <span class="visually-hidden">
-            Selectievak in kolom 1 rij 1 selecteert alle rijen.
-        </span>
+        <span class="visually-hidden"> Selectievak in kolom 1 rij 1 selecteert alle rijen. </span>
       </caption>
       <thead>
         <tr>
@@ -124,9 +122,7 @@ Complete voorbeeld tabel:
               <input type="checkbox" id="checkbox-example-base-1" name="standaard-checkbox" />
             </div>
           </td>
-          <td>
-            Lorem ipsum dolor sit amet
-          </td>
+          <td>Lorem ipsum dolor sit amet</td>
           <td><button type="button">Actie uitvoeren</button></td>
         </tr>
         <tr>
@@ -135,9 +131,7 @@ Complete voorbeeld tabel:
               <input type="checkbox" id="checkbox-example-base-2" name="standaard-checkbox" />
             </div>
           </td>
-          <td>
-            Lorem ipsum dolor sit amet
-          </td>
+          <td>Lorem ipsum dolor sit amet</td>
           <td><button type="button">Actie uitvoeren</button></td>
         </tr>
         <tr>
@@ -146,9 +140,7 @@ Complete voorbeeld tabel:
               <input type="checkbox" id="checkbox-example-base-3" name="standaard-checkbox" />
             </div>
           </td>
-          <td>
-            Lorem ipsum dolor sit amet
-          </td>
+          <td>Lorem ipsum dolor sit amet</td>
           <td><button type="button">Actie uitvoeren</button></td>
         </tr>
       </tbody>
