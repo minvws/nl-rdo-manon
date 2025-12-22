@@ -7,4 +7,6 @@
   width: theme.$page-title-width;
   max-width: theme.$page-title-max-width;
   margin: theme.$page-title-margin;
+  box-sizing: border-box;
+  padding: theme.$page-title-padding;
 }
