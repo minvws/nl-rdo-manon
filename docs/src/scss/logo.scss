@@ -1,0 +1,31 @@
+@use "../../../manon/variables/" as theme;
+
+// Showing the logo corresponding to the theme
+.logo.rijkshuisstijl-2008,
+.logo.icore-open,
+.logo.kat {
+  display: none;
+}
+
+.logo.rijkshuisstijl-2008,
+.rijkshuisstijl-2008 .logo {
+  @if theme.$theme-name == "rijkshuisstijl-2008" {
+    display: theme.$logo-display;
+  }
+}
+
+.logo.icore-open,
+.icore-open .logo {
+  @if theme.$theme-name == "icore-open" {
+    display: theme.$logo-display;
+    padding: 1rem;
+    background-color: theme.$header-background-color;
+  }
+}
+
+.logo.kat,
+.kat .logo {
+  @if theme.$theme-name == "kat" {
+    display: theme.$logo-display;
+  }
+}

@@ -1,0 +1,47 @@
+@use "../config";
+
+// Font: Ro Serif Web - Rijksoverheid font
+
+// Regular
+@font-face {
+  font-family: "RO Serif Web";
+  font-weight: normal;
+  font-style: normal;
+  font-display: var(--text-magazine-font-display, swap);
+  src:
+    url("#{config.$font-path}/ro-serif-web/RO-SerifWeb-Regular.woff2")
+      format("woff2"),
+    url("#{config.$font-path}/ro-serif-web/RO-SerifWeb-Regular.woff")
+      format("woff"),
+    url("#{config.$font-path}/ro-serif-web/RO-SerifWeb-Regular.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "RO Serif Web";
+  font-weight: normal;
+  font-style: italic;
+  font-display: var(--text-magazine-font-display, swap);
+  src:
+    url("#{config.$font-path}/ro-serif-web/RO-SerifWeb-Italic.woff2")
+      format("woff2"),
+    url("#{config.$font-path}/ro-serif-web/RO-SerifWeb-Italic.woff")
+      format("woff"),
+    url("#{config.$font-path}/ro-serif-web/RO-SerifWeb-Italic.ttf")
+      format("truetype");
+}
+
+// Bold
+@font-face {
+  font-family: "RO Serif Web";
+  font-weight: bold;
+  font-style: normal;
+  font-display: var(--text-magazine-font-display, swap);
+  src:
+    url("#{config.$font-path}/ro-serif-web/RO-SerifWeb-Bold.woff2")
+      format("woff2"),
+    url("#{config.$font-path}/ro-serif-web/RO-SerifWeb-Bold.woff")
+      format("woff"),
+    url("#{config.$font-path}/ro-serif-web/RO-SerifWeb-Bold.ttf")
+      format("truetype");
+}

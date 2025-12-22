@@ -1,0 +1,29 @@
+@use "../../../manon/variables/" as theme;
+
+// Showing the logo corresponding to the theme
+.rijkshuisstijl-2008,
+.icore-open,
+.kat {
+  display: none;
+}
+
+header.rijkshuisstijl-2008,
+div.resize.rijkshuisstijl-2008 {
+  @if theme.$theme-name == "rijkshuisstijl-2008" {
+    display: flex;
+  }
+}
+
+header.icore-open,
+div.resize.icore-open {
+  @if theme.$theme-name == "icore-open" {
+    display: flex;
+  }
+}
+
+header.kat,
+div.resize.kat {
+  @if theme.$theme-name == "kat" {
+    display: flex;
+  }
+}
