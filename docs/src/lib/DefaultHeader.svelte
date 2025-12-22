@@ -15,12 +15,11 @@
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-
       <a href="/" class="logo" aria-label="Manon met iCore Open thema">
         <img src="../img/logo.svg" alt="Manon met iCore Open thema" />
         Manon - iCore Open
       </a>
-      
+
       <SiteNav />
     </nav>
   </div>
@@ -56,12 +55,11 @@
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-
       <a href="/" class="logo" aria-label="Manon met Kat thema">
         <img src="../img/kat-logo.svg" alt="Logo Kat" />
         Kat
       </a>
-      
+
       <SiteNav />
     </nav>
   </div>

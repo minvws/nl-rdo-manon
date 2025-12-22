@@ -38,7 +38,7 @@ SCSS importeren:
 
 ```html
 <a
-  href="/" 
+  href="/"
   class="logo"
   aria-label="Logo bedrijfs- of product-naam, ga naar de homepage van bedrijfs- of product-naam"
 >
