@@ -462,5 +462,9 @@ and spacing sets */
   $language-selector-list-background-color: color-scheme.$white,
   $language-selector-list-item-border-color: color-scheme.$grey-200,
   $language-selector-list-item-hover-text-color: semantic.$color-text-default,
-  $language-selector-list-item-hover-background-color: color-scheme.$violet-50
+  $language-selector-list-item-hover-background-color: color-scheme.$violet-50,
+
+  // nota bene
+  $nota-bene-font-size: body-text.$body-text-s,
+  $nota-bene-text-color: color-scheme.$grey-700
 );
