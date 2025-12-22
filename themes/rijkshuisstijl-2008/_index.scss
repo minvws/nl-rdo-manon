@@ -38,14 +38,17 @@
   $accordion-button-expanded-border-color: color-scheme.$sky-blue-500,
 
   // Accordion button icon (expanded)
-  $accordion-button-icon-before-mask: icons.$chevron-down,
+  $accordion-button-icon-before-mask: map.get(icons.$icon-map, "chevron-down"),
   $accordion-button-icon-before-width: 1.5rem,
   $accordion-button-icon-before-height: 1.5rem,
   $accordion-button-icon-before-color: color-scheme.$ro-blue,
   $accordion-button-icon-before-margin-right: 1rem,
 
   // Accordion button icon (closed)
-  $accordion-button-icon-before-closed-mask: icons.$chevron-up,
+  $accordion-button-icon-before-closed-mask: map.get(
+      icons.$icon-map,
+      "chevron-up"
+    ),
   $accordion-button-icon-before-closed-width: 1.5rem,
   $accordion-button-icon-before-closed-height: 1.5rem,
   $accordion-button-icon-before-closed-color: color-scheme.$ro-blue,
@@ -175,7 +178,7 @@
 
   // Breadcrumb bar icon
   $breadcrumb-bar-icon-color: semantic.$color-text-default,
-  $breadcrumb-bar-icon-mask: icons.$chevron-right,
+  $breadcrumb-bar-icon-mask: map.get(icons.$icon-map, "chevron-right"),
   $breadcrumb-bar-icon-width: 1.5rem,
   $breadcrumb-bar-icon-height: 1.5rem,
 
@@ -311,7 +314,7 @@
   $form-help-button-right: 0rem,
 
   // Form help icon
-  $form-help-icon-mask: icons.$questionmark,
+  $form-help-icon-mask: map.get(icons.$icon-map, "question-mark"),
   $form-help-icon-width: 1.5rem,
   $form-help-icon-height: 1.5rem,
   $form-help-icon-color: semantic.$color-brand-primary-text-default,
@@ -354,12 +357,12 @@
 
   // filter
   $filter-icon-color: color-scheme.$ro-blue,
-  $filter-icon-mask: icons.$chevron-down,
+  $filter-icon-mask: map.get(icons.$icon-map, "chevron-down"),
   $filter-icon-width: 1.25rem,
   $filter-icon-height: 1.25rem,
   $filter-intro-justify-content: space-between,
   $filter-button-font-size: 0,
-  $filter-close-icon-mask: icons.$chevron-up,
+  $filter-close-icon-mask: map.get(icons.$icon-map, "chevron-up"),
   $filter-button-background-color: transparent,
   $filter-button-padding: 0,
   $filter-button-gap: 0,
@@ -482,7 +485,7 @@
   $navigation-list-padding: 0,
   $navigation-list-item-padding: spacing.$spacing-050 0,
   $navigation-link-text-decoration: none,
-  $navigation-list-item-icon-mask: icons.$chevron-right,
+  $navigation-list-item-icon-mask: map.get(icons.$icon-map, "chevron-right"),
   $navigation-list-item-icon-width: 1.5rem,
   $navigation-list-item-icon-height: 1.5rem,
   $navigation-list-item-icon-color: color-scheme.$ro-blue,
@@ -676,7 +679,7 @@
   $button-to-top-text-color: semantic.$color-brand-primary-text-default,
 
   // button to top icon
-  $button-to-top-icon-mask: icons.$to-top,
+  $button-to-top-icon-mask: map.get(icons.$icon-map, "arrow-bar-to-up"),
   $button-to-top-icon-color: semantic.$color-brand-primary-text-default,
   $button-to-top-icon-width: 1.5rem,
   $button-to-top-icon-height: 1.5rem,
@@ -712,15 +715,14 @@
   $sidemenu-button-margin-left: 18rem,
 
   // sidemenu expanded
-  $sidemenu-expanded-icon-mask: icons.$close,
+  $sidemenu-expanded-icon-mask: map.get(icons.$icon-map, "close"),
   $sidemenu-expanded-icon-color: semantic.$color-brand-primary-text-default,
   $sidemenu-expanded-icon-width: 1.5rem,
   $sidemenu-expanded-icon-height: 1.5rem,
 
   // sidemenu collapsed
   $sidemenu-collapsed-button-margin-left: 0,
-  $sidemenu-collapsed-icon-mask: icons.$hamburger,
-
+  $sidemenu-collapsed-icon-mask: map.get(icons.$icon-map, "hamburger"),
   // sidemenu main
   $sidemenu-page-padding-top: spacing.$spacing-400,
   $sidemenu-page-padding-bottom: spacing.$spacing-400,
@@ -745,3 +747,7 @@
   $tile-group-padding: spacing.$spacing-100 0 0 0,
   $tile-group-margin: spacing.$spacing-050 0 0 0
 );
+
+// Include the mixin to generate all .icon-name classes for the theme
+@use "@minvws/manon/mixins/icon-generator";
+@include icon-generator.generate-icons(icons.$icon-map);
