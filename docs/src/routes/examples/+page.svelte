@@ -12,8 +12,8 @@
 
 <main id="main-content" tabindex="-1">
   <article id="example-pages">
+    
     <h1 class="page-title">Voorbeelden</h1>
-
     <div class="content-wrapper">
       <div>
         <p>
