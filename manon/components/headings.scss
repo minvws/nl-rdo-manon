@@ -17,6 +17,7 @@ h1 > a {
   font-weight: theme.$h1-font-weight;
   line-height: theme.$h1-line-height;
   margin: theme.$h1-margin;
+  font-style: theme.$h1-font-style;
 }
 
 h2,
@@ -27,6 +28,7 @@ h2 > a {
   font-weight: theme.$h2-font-weight;
   line-height: theme.$h2-line-height;
   margin: theme.$h2-margin;
+  font-style: theme.$h2-font-style;
 }
 
 h3,
@@ -37,6 +39,7 @@ h3 > a {
   font-weight: theme.$h3-font-weight;
   line-height: theme.$h3-line-height;
   margin: theme.$h3-margin;
+  font-style: theme.$h3-font-style;
 }
 
 h4,
@@ -47,6 +50,7 @@ h4 > a {
   font-weight: theme.$h4-font-weight;
   line-height: theme.$h4-line-height;
   margin: theme.$h4-margin;
+  font-style: theme.$h4-font-style;
 }
 
 h5,
@@ -57,6 +61,7 @@ h5 > a {
   font-weight: theme.$h5-font-weight;
   line-height: theme.$h5-line-height;
   margin: theme.$h5-margin;
+  font-style: theme.$h5-font-style;
 }
 
 h6,
@@ -67,4 +72,5 @@ h6 > a {
   font-weight: theme.$h6-font-weight;
   line-height: theme.$h6-line-height;
   margin: theme.$h6-margin;
+  font-style: theme.$h6-font-style;
 }

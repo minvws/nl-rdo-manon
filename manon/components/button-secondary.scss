@@ -54,6 +54,8 @@ input[type="reset"] {
       border-color: theme.$button-secondary-active-border-color;
       border-width: theme.$button-secondary-active-border-width;
       border-radius: theme.$button-secondary-active-border-radius;
+      outline: theme.$button-secondary-active-outline;
+      outline-offset: theme.$button-secondary-active-outline-offset;
     }
 
     &:focus,
@@ -64,20 +66,12 @@ input[type="reset"] {
       border-radius: theme.$button-secondary-focus-border-radius;
       background-color: theme.$button-secondary-focus-background-color;
       color: theme.$button-secondary-focus-text-color;
-      outline: theme.$button-secondary-outline;
-      outline-offset: theme.$button-secondary-outline-offset;
-      outline-color: theme.$button-secondary-outline-color;
-      z-index: theme.$button-secondary-z-index;
-      box-shadow: theme.$button-secondary-box-shadow;
-
-      &:visited,
-      &.visited {
-        outline: theme.$button-secondary-outline;
-        outline-offset: theme.$button-secondary-outline-offset;
-        outline-color: theme.$button-secondary-outline-color;
-        z-index: theme.$button-secondary-z-index;
-        box-shadow: theme.$button-secondary-box-shadow;
-      }
+      outline: theme.$button-secondary-focus-outline;
+      outline-width: theme.$button-secondary-focus-outline-width;
+      outline-offset: theme.$button-secondary-focus-outline-offset;
+      outline-color: theme.$button-secondary-focus-outline-color;
+      z-index: theme.$button-secondary-focus-z-index;
+      box-shadow: theme.$button-secondary-focus-box-shadow;
     }
 
     > img {
@@ -106,5 +100,16 @@ a.button,
 a:visited.button {
   &.secondary {
     color: theme.$link-button-secondary-text-color;
+  }
+}
+
+a.button.secondary {
+  &:visited,
+  &.visited {
+    outline: theme.$button-secondary-visited-outline;
+    outline-offset: theme.$button-secondary-visited-outline-offset;
+    outline-color: theme.$button-secondary-visited-outline-color;
+    z-index: theme.$button-secondary-visited-z-index;
+    box-shadow: theme.$button-secondary-visited-box-shadow;
   }
 }
