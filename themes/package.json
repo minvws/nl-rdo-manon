@@ -20,19 +20,14 @@
   ],
   "scripts": {
     "npm-version": "npm version",
-    "prepare-icons": "npm run prepare-icons:icore-open",
-    "prepare-icons:icore-open": "node ./scripts/prepare-icons.js ./icore-open/icons/tabler",
     "build:themes": "node ./scripts/build-themes.js"
-  },
-  "bin": {
-    "manon-prepare-icons": "./scripts/prepare-icons.js"
   },
   "peerDependencies": {
     "@minvws/manon": "workspace:*"
   },
   "devDependencies": {
     "glob": "^13.0.0",
-    "sass": "^1.94.2"
+    "sass": "^1.95.0"
   },
   "repository": {
     "type": "git",

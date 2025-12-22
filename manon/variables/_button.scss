@@ -12,7 +12,7 @@ $button-padding-right: null !default;
 $button-padding-bottom: null !default;
 $button-padding-left: null !default;
 $button-justify-content: null !default;
-$button-gap: null !default;
+$button-gap: 0.5rem !default;
 $button-line-height: null !default;
 $button-text-decoration: null !default;
 $button-text-align: null !default;
@@ -24,7 +24,7 @@ $button-z-index: null !default;
 $button-box-shadow: null !default;
 $button-margin: 0 !default;
 
-/* hover */
+// hover
 $button-hover-background-color: null !default;
 $button-hover-text-color: null !default;
 $button-hover-border-color: null !default;
@@ -39,6 +39,8 @@ $button-active-border-style: null !default;
 $button-active-border-color: null !default;
 $button-active-border-width: null !default;
 $button-active-border-radius: null !default;
+$button-active-outline: null !default;
+$button-active-outline-offset: null !default;
 
 // focus
 $button-focus-background-color: null !default;
@@ -47,12 +49,20 @@ $button-focus-border-style: null !default;
 $button-focus-border-color: null !default;
 $button-focus-border-width: null !default;
 $button-focus-border-radius: null !default;
+$button-focus-outline: null !default;
+$button-focus-outline-offset: null !default;
+$button-focus-outline-color: null !default;
+$button-focus-z-index: null !default;
+$button-focus-box-shadow: null !default;
 
-// outline
-$button-outline: null !default;
-$button-outline-offset: null !default;
-$button-outline-color: null !default;
-$button-outline-border-radius: null !default;
+// visited
+$button-visited-text-color: null !default;
+$button-visited-outline: null !default;
+$button-visited-outline-offset: null !default;
+$button-visited-outline-color: null !default;
+$button-visited-outline-border-radius: null !default;
+$button-visited-z-index: null !default;
+$button-visited-box-shadow: null !default;
 
 // img
 $button-image-max-width: null !default;

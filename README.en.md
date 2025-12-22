@@ -126,6 +126,8 @@ in a few different frameworks.
 
 ## 🏗️ Projects built with Manon
 
+Here are some projects that have been built using Manon:
+
 | Project                         | Links                                                                                                                                                                                                    |
 | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Dus-i Burgerportaal**         | 🧑‍💻 [https://github.com/minvws/nl-rdo-dusi-portal-web-frontend](https://github.com/minvws/nl-rdo-dusi-portal-web-frontend)                                                                                |
@@ -133,7 +135,7 @@ in a few different frameworks.
 | **iCore Open Theme for Sphinx** | 🧑‍💻 [https://github.com/minvws/manon-icore-open-sphinx-theme](https://github.com/minvws/manon-icore-open-sphinx-theme)                                                                                    |
 | **iRealisatie Website**         | 🌐 [https://irealisatie.nl](https://irealisatie.nl)                                                                                                                                                      |
 | **Mijn Gezondheidsoverzicht**   | 🌐 [https://irealisatie.nl/projecten/mijn-gezondheidsoverzicht](https://irealisatie.nl/projecten/mijn-gezondheidsoverzicht)                                                                              |
-| **OpenKAT**                     | 🌐 [https://openkat.nl](https://openkat.nl)<br>🧑‍💻 [https://github.com/minvws/nl-kat-coordination](https://github.com/minvws/nl-kat-coordination)                                                         |
+| **OpenKAT**                     | 🌐 [https://openkat.nl](https://openkat.nl)<br>🧑‍💻 [https://github.com/minvws/nl-kat-coordination](https://github.com/SSC-ICT-Innovatie/nl-kat-coordination)                                              |
 | **ZaakVolgSysteem**             | 🌐 [https://irealisatie.nl/projecten/zaakvolgsysteem](https://irealisatie.nl/projecten/zaakvolgsysteem)                                                                                                  |
 
 ## 🌱 Origin
