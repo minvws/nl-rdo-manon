@@ -133,8 +133,27 @@ for (const themeDir of themeDirs) {
   const fontsDestFolder = path.join(themeOutFolder, "fonts");
 
   if (fs.existsSync(fontsSrcFolder)) {
-    fs.cpSync(fontsSrcFolder, fontsDestFolder, { recursive: true });
-    const fontFiles = globSync("**/*.*", { cwd: fontsSrcFolder });
+    const fontFiles = globSync("**/*.@(ttf|otf|woff|woff2|eot|svg)", {
+      cwd: fontsSrcFolder,
+    });
+
+    if (fontFiles.length > 0) {
+      // Ensure the destination directory exists
+      fs.mkdirSync(fontsDestFolder, { recursive: true });
+
+      fontFiles.forEach((fontFile) => {
+        const srcPath = path.join(fontsSrcFolder, fontFile);
+        const destPath = path.join(fontsDestFolder, fontFile);
+
+        // Ensure subdirectory exists in destination
+        const destDir = path.dirname(destPath);
+        if (!fs.existsSync(destDir)) {
+          fs.mkdirSync(destDir, { recursive: true });
+        }
+
+        fs.copyFileSync(srcPath, destPath);
+      });
+    }
     console.log(`   Copied ${fontFiles.length} font file(s) to fonts folder.`);
   } else {
     console.log("   No fonts folder found - skipping.");
@@ -146,8 +165,28 @@ for (const themeDir of themeDirs) {
   const iconsDestFolder = path.join(themeOutFolder, "img", "icons");
 
   if (fs.existsSync(iconsSrcFolder)) {
-    fs.cpSync(iconsSrcFolder, iconsDestFolder, { recursive: true });
-    const iconFiles = globSync("**/*.svg", { cwd: iconsSrcFolder });
+    const iconFiles = globSync("**/*.svg", {
+      ignore: "**/*.svg.license",
+      cwd: iconsSrcFolder,
+    });
+
+    if (iconFiles.length > 0) {
+      // Ensure the destination directory exists
+      fs.mkdirSync(iconsDestFolder, { recursive: true });
+
+      iconFiles.forEach((iconFile) => {
+        const srcPath = path.join(iconsSrcFolder, iconFile);
+        const destPath = path.join(iconsDestFolder, iconFile);
+
+        // Ensure subdirectory exists in destination
+        const destDir = path.dirname(destPath);
+        if (!fs.existsSync(destDir)) {
+          fs.mkdirSync(destDir, { recursive: true });
+        }
+
+        fs.copyFileSync(srcPath, destPath);
+      });
+    }
     console.log(`   Copied ${iconFiles.length} icon file(s) to icons folder.`);
   } else {
     console.log("   No icons folder found - skipping.");
