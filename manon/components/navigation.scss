@@ -76,6 +76,7 @@ nav {
           mask-size: contain;
           content: "";
           display: inline-block;
+          mask-repeat: no-repeat;
           margin-right: theme.$navigation-list-item-icon-margin-right;
           margin-left: theme.$navigation-list-item-icon-margin-left;
           padding: theme.$navigation-list-item-icon-padding;
