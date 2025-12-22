@@ -147,7 +147,7 @@ for (const themeDir of themeDirs) {
 
   if (fs.existsSync(iconsSrcFolder)) {
     fs.cpSync(iconsSrcFolder, iconsDestFolder, { recursive: true });
-    const iconFiles = globSync("**/*.*", { cwd: iconsSrcFolder });
+    const iconFiles = globSync("**/*.svg", { cwd: iconsSrcFolder });
     console.log(`   Copied ${iconFiles.length} icon file(s) to icons folder.`);
   } else {
     console.log("   No icons folder found - skipping.");
