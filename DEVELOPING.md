@@ -147,6 +147,36 @@ run:
 pnpm run --dir manon test
 ```
 
+### Visual Regression
+
+The project uses Playwright for visual regression testing. The following
+commands are available:
+
+- To run the visual regression tests:
+
+  ```bash
+  pnpm run visreg:test
+  ```
+
+- To view the visual regression test report:
+
+  ```bash
+  pnpm run visreg:report
+  ```
+
+- To approve changes to the visual regression snapshots:
+
+  ```bash
+  pnpm run visreg:approve
+  ```
+
+- To reset the visual regression test environment, this will delete all
+  snapshots, and the reports:
+
+  ```bash
+  pnpm run visreg:clean
+  ```
+
 ## Type Checking
 
 To run the TypeScript type checker for the `manon` package, run:

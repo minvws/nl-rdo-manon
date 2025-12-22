@@ -10,7 +10,7 @@
   align-items: theme.$collapsing-element-align-items;
 
   form {
-    width: auto;
+    width: 100%;
   }
 }
 
@@ -20,6 +20,8 @@
     max-height: initial;
     height: auto;
     box-sizing: border-box;
+    margin: theme.$collapsing-element-margin;
+    min-width: theme.$collapsing-element-min-width;
     flex-direction: theme.$collapsing-element-flex-direction;
     justify-content: theme.$collapsing-element-justify-content;
     gap: theme.$collapsing-element-gap;
@@ -61,6 +63,7 @@
         width: 100%;
         max-width: 100%;
         padding: 0;
+        overflow: auto;
         align-items: theme.$collapsing-element-list-item-align-items;
         background-color: theme.$collapsing-element-list-item-background-color;
         color: theme.$collapsing-element-list-item-text-color;
@@ -71,6 +74,11 @@
         &::before {
           /* Preventing default nav before to show up */
           display: none;
+        }
+
+        &:focus,
+        &.focus {
+          outline: theme.$collapsing-element-list-item-focus-outline;
         }
 
         &:last-child {
@@ -98,6 +106,15 @@
           padding-left: theme.$collapsing-element-list-item-link-padding-left;
           color: theme.$collapsing-element-list-item-link-text-color;
           text-decoration: theme.$collapsing-element-list-item-link-text-decoration;
+
+          &:visited,
+          &.visited {
+            color: theme.$collapsing-element-list-item-link-visited-color;
+          }
+
+          &.destructive {
+            color: theme.$collapsing-element-list-item-link-destructive-color;
+          }
 
           &::before {
             content: theme.$collapsing-element-list-icon;

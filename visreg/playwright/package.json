@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "report": "xdg-open ../report/index.html || open ../report/index.html",
+    "update": "playwright test --update-snapshots",
+    "clean": "rm -r ./snapshots/** && rm -r ./report || true"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  }
+}

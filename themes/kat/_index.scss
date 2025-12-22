@@ -141,6 +141,14 @@ and spacing sets */
 
   // collapsing element
   $collapsing-element-justify-content: space-between,
+  $collapsing-element-list-item-link-hover-background-color:
+    color-scheme.$grey-50,
+  $collapsing-element-text-color: color-scheme.$grey-900,
+  $collapsing-element-list-item-focus-outline: 2px solid
+    color-scheme.$violet-500,
+  $collapsing-element-list-item-link-visited-color: color-scheme.$grey-900,
+  $collapsing-element-list-item-link-destructive-color: color-scheme.$red-600,
+  $collapsing-element-list-link-selected-background-color: color-scheme.$grey-50,
 
   // expando rows
   $expando-rows-border-width: 0 0 2px 0,
@@ -466,5 +474,9 @@ and spacing sets */
   $form-fieldset-legend-padding: 0,
   $form-fieldset-input-margin: 0.5rem 0 1rem 0,
   $form-fieldset-fields-padding: 0,
-  $form-fieldset-fields-margin: 0
+  $form-fieldset-fields-margin: 0,
+    
+  // nota bene
+  $nota-bene-font-size: body-text.$body-text-s,
+  $nota-bene-text-color: color-scheme.$grey-700
 );
