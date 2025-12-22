@@ -116,13 +116,18 @@
           Het voorbeeld met een pseudo-element direct op button wordt uitgefaseerd omdat het niet de
           voorkeur heeft omwille van toegankelijkheid. Gebruik in plaats hiervan een van de overige voorbeelden.
         </p>
-        <button class="icon icon-on-off" aria-label="Aan- of uitschakelen"
-          >Aan- of uitschakelen</button
-        >
+        <button>
+          <span class="icon icon-on-off" aria-label="Aan- of uitschakelen"></span>
+        </button>
+
         <h4>HTML-voorbeeld</h4>
         <Code
           language="html"
-          code={`<button class="icon icon-on-off" aria-label="Aan- of uitschakelen">Aan- of uitschakelen</button>`}
+          code={`
+<button>
+  <span class="icon icon-on-off" aria-label="Aan- of uitschakelen"></span>
+</button>
+          `}
         />
 
         <h4>Visueel voorbeeld <code>button</code> met <code>span</code></h4>

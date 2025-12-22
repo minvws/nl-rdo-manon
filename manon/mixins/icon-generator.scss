@@ -1,0 +1,8 @@
+@mixin generate-icons($icon-map) {
+  @each $name, $url in $icon-map {
+    .icon-#{$name} {
+      mask: #{$url} no-repeat center / contain;
+      -webkit-mask: #{$url} no-repeat center / contain;
+    }
+  }
+}

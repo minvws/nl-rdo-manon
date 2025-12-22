@@ -1,6 +1,7 @@
 @use "../variables" as theme;
 
 body > header,
+.manon-root > header,
 .page-header {
   display: flex;
   width: 100%;
@@ -146,6 +147,22 @@ body > header,
 
     div.collapsing-element {
       height: theme.$header-navigation-collapsing-element-height;
+    }
+
+    > div {
+      display: flex;
+      width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      flex-direction: theme.$header-navigation-content-wrapper-flex-direction;
+      justify-content: theme.$header-navigation-content-wrapper-justify-content;
+      align-items: theme.$header-navigation-content-wrapper-align-items;
+      gap: theme.$header-navigation-content-wrapper-gap;
+      padding-top: theme.$header-navigation-content-wrapper-padding-top;
+      padding-right: theme.$header-navigation-content-wrapper-padding-right;
+      padding-bottom: theme.$header-navigation-content-wrapper-padding-bottom;
+      padding-left: theme.$header-navigation-content-wrapper-padding-left;
+      max-width: theme.$header-navigation-content-wrapper-max-width;
     }
   }
 
