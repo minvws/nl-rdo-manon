@@ -3,11 +3,11 @@
 
 form.help {
   position: relative;
+  padding-right: theme.$form-help-button-space;
 
   .form-group {
     width: 100%;
     position: relative;
-    padding-right: theme.$form-help-container-padding-right;
   }
 
   .help-container {
@@ -36,6 +36,7 @@ form.help {
       border-radius: theme.$form-help-button-border-radius;
       background-color: theme.$form-help-button-background-color;
       color: theme.$form-help-button-text-color;
+      margin-right: calc(theme.$form-help-button-space * -1);
 
       &:hover {
         background-color: theme.$form-help-button-hover-background-color;
@@ -109,7 +110,6 @@ form.help {
 
     .help-button {
       display: inline-block;
-      margin: theme.$form-help-button-margin;
 
       + .explanation {
         margin-top: 0;

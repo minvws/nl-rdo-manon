@@ -123,6 +123,11 @@
           width: theme.$breadcrumb-bar-icon-width;
           height: theme.$breadcrumb-bar-icon-height;
         }
+
+        &::before {
+          // Removing any generic nav icons
+          display: none;
+        }
       }
     }
   }

@@ -1,5 +1,6 @@
-@use "@minvws/manon-themes/icore-open";
+// @use "@minvws/manon-themes/icore-open";
 // @use "@minvws/manon-themes/kat";
+@use "@minvws/manon-themes/rijkshuisstijl-2008";
 @use "@minvws/manon/components/bundles/all";
 
 // Docs specific styling
@@ -7,3 +8,6 @@
 @use "iframe";
 @use "layout";
 @use "sticky-table";
+@use "logo";
+@use "header";
+@use "theme-components";

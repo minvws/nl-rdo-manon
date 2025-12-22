@@ -41,6 +41,7 @@ $footer-navigation-padding-top: null !default;
 $footer-navigation-padding-right: null !default;
 $footer-navigation-padding-bottom: null !default;
 $footer-navigation-padding-left: null !default;
+$footer-navigation-width: null !default;
 
 // link
 $footer-link-text-color: inherit !default;
@@ -48,6 +49,7 @@ $footer-link-hover-text-color: null !default;
 $footer-link-visited-text-color: null !default;
 $footer-link-visited-hover-text-color: null !default;
 $footer-link-text-decoration: none !default;
+$footer-link-focus-outline-color: null !default;
 
 // Current page
 $footer-link-current-text-color: null !default;

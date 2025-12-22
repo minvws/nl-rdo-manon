@@ -20,53 +20,77 @@ SCSS importeren:
 ```
 
 <section id="examples">
-    <h2>Voorbeelden</h2>
-    <div class="horizontal-scroll">
-        <form class="inline">
-          <table>
-              <caption>
-              Tabelvoorbeeld met selectievak:
-              <span class="visually-hidden">
-                  Selectievak in kolom 1 rij 1 selecteert alle rijen.
-              </span>
-              </caption>
-              <thead>
-              <tr>
-                  <th scope="col">
-                  <span class="visually-hidden">Selectie</span>
-                  <input type="checkbox" />
-                  </th>
-                  <th scope="col">Naam</th>
-                  <th scope="col">Actie</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                  <td><input type="checkbox" id="lorem-input" /></td>
-                  <td><label for="lorem-input">Lorem</label></td>
-                  <td><button type="button">Actie uitvoeren</button></td>
-              </tr>
-              <tr>
-                  <td><input type="checkbox" id="ipsum-input" /></td>
-                  <td><label for="ipsum-input">Ipsum</label></td>
-                  <td><button type="button">Actie uitvoeren</button></td>
-              </tr>
-              <tr>
-                  <td><input type="checkbox" id="dolor-input" /></td>
-                  <td><label for="dolor-input">Dolor</label></td>
-                  <td><button type="button">Actie uitvoeren</button></td>
-              </tr>
-              </tbody>
-          </table>
-        <button type="submit">Actie uitvoeren op geselecteerde items</button>
-        </form>
-    </div>
+  <h2>Voorbeelden</h2>
+  <div class="horizontal-scroll">
+    <form class="inline">
+      <table>
+        <caption>
+          Tabelvoorbeeld met selectievak:
+          <span class="visually-hidden">
+              Selectievak in kolom 1 rij 1 selecteert alle rijen.
+          </span>
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">
+              <span class="visually-hidden">Selectie</span>
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-example-head-1" name="standaard-checkbox" />
+              </div>
+            </th>
+            <th scope="col">Naam</th>
+            <th scope="col">Actie</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-example-base-1" name="standaard-checkbox" />
+              </div>
+            </td>
+            <td>
+              Lorem ipsum dolor sit amet
+            </td>
+            <td><button type="button">Actie uitvoeren</button></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-example-base-2" name="standaard-checkbox" />
+              </div>
+            </td>
+            <td>
+              Lorem ipsum dolor sit amet
+            </td>
+            <td><button type="button">Actie uitvoeren</button></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-example-base-3" name="standaard-checkbox" />
+              </div>
+            </td>
+            <td>
+              Lorem ipsum dolor sit amet
+            </td>
+            <td><button type="button">Actie uitvoeren</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="submit">Actie uitvoeren op geselecteerde items</button>
+    </form>
+  </div>
 </section>
 
 Tabelcel met checkbox:
 
 ```html
-<td><input type="checkbox" id="lorem-input" /></td>
+<td>
+  <div class="checkbox">
+    <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" />
+  </div>
+</td>
 ```
 
 Complete voorbeeld tabel:
@@ -77,13 +101,17 @@ Complete voorbeeld tabel:
     <table>
       <caption>
         Tabelvoorbeeld met selectievak:
-        <span class="visually-hidden"> Selectievak in kolom 1 rij 1 selecteert alle rijen. </span>
+        <span class="visually-hidden">
+            Selectievak in kolom 1 rij 1 selecteert alle rijen.
+        </span>
       </caption>
       <thead>
         <tr>
           <th scope="col">
             <span class="visually-hidden">Selectie</span>
-            <input type="checkbox" />
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox-example-head-1" name="standaard-checkbox" />
+            </div>
           </th>
           <th scope="col">Naam</th>
           <th scope="col">Actie</th>
@@ -91,18 +119,36 @@ Complete voorbeeld tabel:
       </thead>
       <tbody>
         <tr>
-          <td><input type="checkbox" id="lorem-input" /></td>
-          <td><label for="lorem-input">Lorem</label></td>
+          <td>
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox-example-base-1" name="standaard-checkbox" />
+            </div>
+          </td>
+          <td>
+            Lorem ipsum dolor sit amet
+          </td>
           <td><button type="button">Actie uitvoeren</button></td>
         </tr>
         <tr>
-          <td><input type="checkbox" id="ipsum-input" /></td>
-          <td><label for="ipsum-input">Ipsum</label></td>
+          <td>
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox-example-base-2" name="standaard-checkbox" />
+            </div>
+          </td>
+          <td>
+            Lorem ipsum dolor sit amet
+          </td>
           <td><button type="button">Actie uitvoeren</button></td>
         </tr>
         <tr>
-          <td><input type="checkbox" id="dolor-input" /></td>
-          <td><label for="dolor-input">Dolor</label></td>
+          <td>
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox-example-base-3" name="standaard-checkbox" />
+            </div>
+          </td>
+          <td>
+            Lorem ipsum dolor sit amet
+          </td>
           <td><button type="button">Actie uitvoeren</button></td>
         </tr>
       </tbody>

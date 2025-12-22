@@ -85,6 +85,10 @@ body > footer,
       }
     }
 
+    &:focus-visible {
+      outline-color: theme.$footer-link-focus-outline-color;
+    }
+
     &[aria-current="page"],
     &[aria-current="page"]:hover,
     &:hover,
@@ -161,6 +165,7 @@ body > footer,
     padding-right: theme.$footer-navigation-padding-right;
     padding-bottom: theme.$footer-navigation-padding-bottom;
     padding-left: theme.$footer-navigation-padding-left;
+    width: theme.$footer-navigation-width;
 
     ul,
     ol {

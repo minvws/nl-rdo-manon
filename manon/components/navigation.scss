@@ -31,6 +31,16 @@
   }
 }
 
+%navigation-horizontal-list {
+  margin: theme.$navigation-list-horizontal-margin;
+  padding: theme.$navigation-list-horizontal-padding;
+  gap: theme.$navigation-list-horizontal-gap;
+
+  li:before {
+    padding: theme.$navigation-list-horizontal-item-icon-padding;
+  }
+}
+
 nav {
   font-family: theme.$navigation-font-family;
   font-size: theme.$navigation-font-size;
@@ -76,5 +86,15 @@ nav {
         }
       }
     }
+  }
+
+  .horizontal {
+    ul {
+      @extend %navigation-horizontal-list;
+    }
+  }
+
+  ul.horizontal {
+    @extend %navigation-horizontal-list;
   }
 }

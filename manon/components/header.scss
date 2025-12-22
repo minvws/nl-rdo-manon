@@ -143,6 +143,10 @@ body > header,
     input {
       align-self: theme.$header-navigation-input-algin-self;
     }
+
+    div.collapsing-element {
+      height: theme.$header-navigation-collapsing-element-height;
+    }
   }
 
   .actions {

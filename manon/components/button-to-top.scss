@@ -2,7 +2,8 @@
 
 .to-top,
 button.to-top,
-a.button.to-top {
+a.button.to-top,
+a:visited.button.to-top {
   padding: 0;
   position: theme.$button-to-top-position;
   bottom: theme.$button-to-top-bottom;

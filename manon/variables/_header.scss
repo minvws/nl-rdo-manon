@@ -19,13 +19,16 @@ $header-font-weight: null !default;
 $header-line-height: null !default;
 $header-position: null !default;
 
-/* content wrapper */
+// content wrapper
 $header-content-wrapper-flex-direction: row !default;
 $header-content-wrapper-justify-content: null !default;
 $header-content-wrapper-align-items: null !default;
 $header-content-wrapper-width: null !default;
 $header-content-wrapper-margin-top: null !default;
 $header-content-wrapper-gap: null !default;
+
+// Collapsing element
+$header-navigation-collapsing-element-height: null !default;
 
 // Header link
 $header-link-background-color: null !default;

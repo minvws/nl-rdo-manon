@@ -1,6 +1,6 @@
 ---
-title: Notificatie-teller
-breadcrumb: Notificatie-teller
+title: Message counter
+breadcrumb: Message counter
 nav:
   - Introductie: "#introduction"
   - Snelstart: "#quickstart"
@@ -9,7 +9,7 @@ nav:
 
 <h2 id="introduction">Introductie</h2>
 
-De notificatie-teller is bedoeld om de gebruiker te attenderen en te informeren
+De Message counter is bedoeld om de gebruiker te attenderen en te informeren
 over nieuwe berichten of notificaties.
 
 <h2 id="quickstart">Snelstart</h2>
@@ -21,7 +21,7 @@ over nieuwe berichten of notificaties.
 ### Benodigde stappen
 
 - Voeg de class `message-counter` toe om het aantal berichten visueel weer te
-  geven als een notificatie-teller.
+  geven als een Message counter.
 - Overweeg of het nodig is een toegankelijk label toe te voegen.
   - Is uit context duidelijk waar de teller bij hoort? Bijvoorbeeld in een link
     zoals:
@@ -35,18 +35,28 @@ over nieuwe berichten of notificaties.
 
 ### Voorbeeld: Als los element
 
-<span class="message-counter">1</span>
+<div class="horizontal">
+  <span class="message-counter" aria-label="Nieuwe berichten">1</span>
+</div>
 
 ```html
-<span class="message-counter">1</span>
+<span class="message-counter" aria-label="Nieuwe berichten">1</span>
 ```
 
 ### Voorbeeld: `In een link`
 
-<a href="message-counter">Berichten&nbsp;<span class="message-counter">42</span></a>
+<a href="#">Berichten<span class="message-counter">42</span></a>
+
 
 ```html
 <a href="message-counter">Berichten <span class="message-counter">42</span></a>
+```
+
+### Voorbeeld: `Als een link`
+<a href="#" class="message-counter">42</a>
+
+```html
+<a href="#" class="message-counter">42</a>
 ```
 
 ### Voorbeeld: Lang getal

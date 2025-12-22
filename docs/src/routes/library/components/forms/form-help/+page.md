@@ -41,24 +41,26 @@ import "@minvws/manon/js/form-help.js";
 ### Voorbeeld: Basis
 
 <form action="" method="post" class="help">
-  <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
-    >Help op simpel formulierveld</label
-  >
-  <div class="help-container">
-    <input
-      id="voorbeeld-text-input-met-hulptekst-simpel-1"
-      name="voorbeeld-text-input"
-      type="text"
-      aria-describedby="voorbeeld-text-input-met-hulptekst-simpel-1-message"
-    />
-    <p
-      class="explanation"
-      data-open-label="Toelichting bij het veld: Voorbeeld text input"
-      data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
-      id="voorbeeld-text-input-met-hulptekst-simpel-1-message"
+  <div class="form-group">
+    <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+      >Help op simpel formulierveld</label
     >
-      Lorem ipsum dolor sit amet.
-    </p>
+    <div class="help-container">
+      <input
+        id="voorbeeld-text-input-met-hulptekst-simpel-1"
+        name="voorbeeld-text-input"
+        type="text"
+        aria-describedby="voorbeeld-text-input-met-hulptekst-simpel-1-message"
+      />
+      <p
+        class="explanation"
+        data-open-label="Toelichting bij het veld: Voorbeeld text input"
+        data-close-label="Sluit toelichting bij het veld: Voorbeeld text input"
+        id="voorbeeld-text-input-met-hulptekst-simpel-1-message"
+      >
+        Lorem ipsum dolor sit amet.
+      </p>
+    </div>
   </div>
 
 <button type="submit">Verzend</button>

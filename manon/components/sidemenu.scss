@@ -175,6 +175,10 @@ main.sidemenu {
         > ul {
           display: none;
         }
+
+        .sticky-container {
+          width: 0;
+        }
       }
 
       > div {

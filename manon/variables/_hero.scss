@@ -6,10 +6,8 @@ $hero-max-width: null !default;
 $hero-background-color: null !default;
 $hero-margin: null !default;
 $hero-image-object-position: null !default;
-$hero-title-font-size: null !default;
-$hero-title-text-color: null !default;
 $hero-border-radius: null !default;
-$hero-padding: null !default;
+$hero-padding: 0 !default;
 $hero-justify-content: null !default;
 $hero-align-items: null !default;
 $hero-background-image: null !default;
@@ -31,3 +29,8 @@ $hero-content-wrapper-gap: null !default;
 
 // Background-image
 $hero-image-object-position: null !default;
+
+// Title
+$hero-title-font-size: null !default;
+$hero-title-text-color: null !default;
+$hero-title-padding: null !default;

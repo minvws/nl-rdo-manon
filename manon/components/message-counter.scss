@@ -1,6 +1,6 @@
 @use "../variables" as theme;
 
-.message-counter {
+%message-counter {
   display: inline-flex;
   flex-grow: 0;
   align-items: center;
@@ -18,4 +18,27 @@
   border-style: theme.$message-counter-base-border-style;
   border-color: theme.$message-counter-base-border-color;
   border-radius: theme.$message-counter-base-border-radius;
+  margin: theme.$message-counter-margin;
+}
+
+.message-counter {
+  @extend %message-counter;
+}
+
+a.message-counter {
+  text-decoration: none;
+
+  &:hover,
+  &:visited,
+  &:visited:hover {
+    @extend %message-counter;
+  }
+}
+
+a:has(.message-counter) {
+  text-decoration: none;
+
+  span {
+    margin: theme.$message-counter-margin;
+  }
 }

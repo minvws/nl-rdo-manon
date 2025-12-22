@@ -2,7 +2,7 @@
 
 *:focus-visible,
 *.focus {
-  position: relative;
+  // position: relative;
 
   outline: theme.$focus-outline;
   outline-offset: theme.$focus-outline-offset;

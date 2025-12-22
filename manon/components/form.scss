@@ -36,6 +36,10 @@ form {
     }
   }
 
+  .form-group:has(.help-container) {
+    padding: 0;
+  }
+
   div,
   fieldset {
     box-sizing: border-box;

@@ -109,15 +109,20 @@
   flex-direction: row;
   padding: 0;
   width: 100%;
-  overflow-x: theme.$pagination-overflow-x;
-  justify-content: theme.$pagination-justify-content;
+  align-items: theme.$pagination-list-align-items;
+  padding-top: theme.$pagination-list-padding-top;
   gap: theme.$pagination-list-gap;
-  border-top-width: theme.$pagination-border-top-width;
-  border-right-width: theme.$pagination-border-right-width;
-  border-bottom-width: theme.$pagination-border-bottom-width;
-  border-left-width: theme.$pagination-border-left-width;
-  border-style: theme.$pagination-border-style;
-  border-color: theme.$pagination-border-color;
+  overflow-x: theme.$pagination-list-overflow-x;
+  justify-content: theme.$pagination-list-justify-content;
+  gap: theme.$pagination-list-list-gap;
+  border-top-width: theme.$pagination-list-border-top-width;
+  border-right-width: theme.$pagination-list-border-right-width;
+  border-bottom-width: theme.$pagination-list-border-bottom-width;
+  border-left-width: theme.$pagination-list-border-left-width;
+  border-width: theme.$pagination-list-border-width;
+  border-style: theme.$pagination-list-border-style;
+  border-color: theme.$pagination-list-border-color;
+  margin: theme.$pagination-list-margin;
 
   li {
     padding: 0;
@@ -161,12 +166,18 @@ nav.pagination,
   display: flex;
   width: 100%;
   align-items: theme.$pagination-align-items;
+  padding-top: theme.$pagination-padding-top;
+  gap: theme.$pagination-gap;
+  overflow-x: theme.$pagination-overflow-x;
   justify-content: theme.$pagination-justify-content;
+  gap: theme.$pagination-list-gap;
+  border-top-width: theme.$pagination-border-top-width;
+  border-right-width: theme.$pagination-border-right-width;
+  border-bottom-width: theme.$pagination-border-bottom-width;
+  border-left-width: theme.$pagination-border-left-width;
   border-width: theme.$pagination-border-width;
   border-style: theme.$pagination-border-style;
   border-color: theme.$pagination-border-color;
-  padding-top: theme.$pagination-padding-top;
-  gap: theme.$pagination-gap;
 
   ul {
     @extend %pagination-list-styling;

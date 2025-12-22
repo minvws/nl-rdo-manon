@@ -3,19 +3,20 @@
 .avatar {
   width: theme.$avatar-width;
   height: theme.$avatar-height;
-  max-width: theme.$avatar-width;
-  max-height: theme.$avatar-height;
-  min-height: unset;
-  padding: 0;
+  min-width: theme.$avatar-min-width;
+  min-height: theme.$avatar-min-height;
+  max-width: theme.$avatar-max-width;
+  max-height: theme.$avatar-max-height;
+  padding: theme.$avatar-padding;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: theme.$avatar-text-text-decoration;
+  font-size: theme.$avatar-text-font-size;
   font-weight: theme.$avatar-font-weight;
   border-radius: theme.$avatar-border-radius;
   background-color: theme.$avatar-background-color;
   color: theme.$avatar-text-color;
-  font-size: theme.$avatar-text-font-size;
 
   &:hover {
     background-color: theme.$avatar-hover-background-color;

@@ -1,12 +1,17 @@
 // Avatar
 $avatar-width: 2rem !default;
 $avatar-height: 2rem !default;
+$avatar-min-width: null !default;
+$avatar-min-height: null !default;
+$avatar-max-width: null !default;
+$avatar-max-height: null !default;
+$avatar-text-font-size: null !default;
 $avatar-font-weight: null !default;
 $avatar-border-radius: null !default;
 $avatar-background-color: null !default;
 $avatar-text-color: null !default;
 $avatar-text-text-decoration: none !default;
-$avatar-text-font-size: null !default;
+$avatar-padding: null !default;
 
 // Hover
 $avatar-hover-background-color: null !default;
