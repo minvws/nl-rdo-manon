@@ -17,8 +17,10 @@
   border-radius: theme.$avatar-border-radius;
   background-color: theme.$avatar-background-color;
   color: theme.$avatar-text-color;
+  align-self: theme.$avatar-align-self;
 
-  &:hover {
+  &:hover,
+  &:visited:hover {
     background-color: theme.$avatar-hover-background-color;
     color: theme.$avatar-hover-text-color;
   }
@@ -27,6 +29,11 @@
     background-color: theme.$avatar-focus-background-color;
     outline: theme.$avatar-focus-outline;
     outline-offset: theme.$avatar-focus-outline-offset;
+  }
+
+  &:visited {
+    background-color: theme.$avatar-background-color;
+    color: theme.$avatar-text-color;
   }
 }
 

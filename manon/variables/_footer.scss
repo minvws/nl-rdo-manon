@@ -43,6 +43,10 @@ $footer-navigation-padding-bottom: null !default;
 $footer-navigation-padding-left: null !default;
 $footer-navigation-width: null !default;
 
+// nav icon
+$footer-navigation-list-icon-display: null !default;
+$footer-navigation-list-icon-color: null !default;
+
 // link
 $footer-link-text-color: inherit !default;
 $footer-link-hover-text-color: null !default;
@@ -50,6 +54,7 @@ $footer-link-visited-text-color: null !default;
 $footer-link-visited-hover-text-color: null !default;
 $footer-link-text-decoration: none !default;
 $footer-link-focus-outline-color: null !default;
+$footer-link-font-weight: null !default;
 
 // Current page
 $footer-link-current-text-color: null !default;
@@ -58,6 +63,7 @@ $footer-link-current-text-decoration: null !default;
 $footer-link-current-border-width: null !default;
 $footer-link-current-border-style: null !default;
 $footer-link-current-border-color: null !default;
+$footer-link-current-font-weight: null !default;
 
 // List
 $footer-list-gap: null !default;

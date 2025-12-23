@@ -41,8 +41,8 @@
 
   // Accordion button icon (expanded)
   $accordion-button-icon-before-mask: map.get(icons.$icon-map, "chevron-down"),
-  $accordion-button-icon-before-width: 1.5rem,
-  $accordion-button-icon-before-height: 1.5rem,
+  $accordion-button-icon-before-width: 1rem,
+  $accordion-button-icon-before-height: 1rem,
   $accordion-button-icon-before-color: color-scheme.$ro-blue,
   $accordion-button-icon-before-margin-right: 1rem,
 
@@ -51,8 +51,8 @@
       icons.$icon-map,
       "chevron-up"
     ),
-  $accordion-button-icon-before-closed-width: 1.5rem,
-  $accordion-button-icon-before-closed-height: 1.5rem,
+  $accordion-button-icon-before-closed-width: 1rem,
+  $accordion-button-icon-before-closed-height: 1rem,
   $accordion-button-icon-before-closed-color: color-scheme.$ro-blue,
   $accordion-button-icon-before-closed-margin-right: 1rem,
 
@@ -84,11 +84,11 @@
   $avatar-text-color: semantic.$color-brand-secondary-text-default,
   $avatar-border-radius: 100%,
   $avatar-padding: spacing.$spacing-025,
-  $avatar-width: unset,
-  $avatar-height: unset,
-  $avatar-min-width: 2rem,
-  $avatar-min-height: 2rem,
+  $avatar-width: 2rem,
+  $avatar-height: 2rem,
   $avatar-text-font-size: body-text.$body-text-s,
+  $avatar-align-self: center,
+  $avatar-hover-background-color: semantic.$color-brand-secondary-default,
   $avatar-hover-text-color: semantic.$color-brand-secondary-text-default,
 
   // Section
@@ -180,9 +180,9 @@
 
   // Breadcrumb bar icon
   $breadcrumb-bar-icon-color: semantic.$color-text-default,
-  $breadcrumb-bar-icon-mask: map.get(icons.$icon-map, "chevron-right"),
-  $breadcrumb-bar-icon-width: 1.5rem,
-  $breadcrumb-bar-icon-height: 1.5rem,
+  $breadcrumb-bar-icon-mask: map.get(icons.$icon-map, "chevron-compact-right"),
+  $breadcrumb-bar-icon-width: 1rem,
+  $breadcrumb-bar-icon-height: 1rem,
 
   // breadcrumb bar link
   $breadcrumb-bar-link-text-decoration: none,
@@ -262,6 +262,7 @@
   $footer-link-visited-hover-text-color: inherit,
   $footer-navigation-width: auto,
   $footer-link-focus-outline-color: semantic.$color-brand-primary-text-default,
+  $footer-navigation-list-icon-color: semantic.$color-brand-primary-text-default,
 
   // Form
   $form-padding-top: spacing.$spacing-200,
@@ -317,12 +318,13 @@
 
   // Form help icon
   $form-help-icon-mask: map.get(icons.$icon-map, "question-mark"),
-  $form-help-icon-width: 1.5rem,
-  $form-help-icon-height: 1.5rem,
+  $form-help-icon-width: 1rem,
+  $form-help-icon-height: 1rem,
   $form-help-icon-color: semantic.$color-brand-primary-text-default,
 
   // Form inline
   $form-inline-button-margin: 0,
+  $form-inline-button-align-self: stretch,
 
   // Form fieldset
   $form-fieldset-border-width: 0,
@@ -374,7 +376,7 @@
   $header-text-color: semantic.$color-brand-primary-text-default,
   $header-font-size: body-text.$body-text-m,
   $header-flex-direction: column,
-  $header-navigation-align-items: center,
+  $header-navigation-align-items: stretch,
   $header-navigation-padding-top: 0,
   $header-navigation-padding-right: 3%,
   $header-navigation-padding-bottom: 0,
@@ -387,7 +389,15 @@
   $header-link-current-background-color: semantic.$color-brand-primary-subtle,
   $header-link-current-text-color: semantic.$color-brand-primary-text-subtle,
   $header-list-gap: 0,
-  $header-navigation-collapsing-element-height: 100%,
+  $header-justify-content: stretch,
+  $header-form-justify-content: center,
+  $header-form-button-align-self: stretch,
+  $header-form-align-items: stretch,
+  $header-form-button-height: 100%,
+  $header-form-button-hover-background-color:
+    semantic.$color-brand-primary-subtle,
+  $header-form-button-hover-text-color:
+    semantic.$color-brand-primary-text-subtle,
 
   // Headings
   // h1
@@ -488,8 +498,8 @@
   $navigation-list-item-padding: spacing.$spacing-050 0,
   $navigation-link-text-decoration: none,
   $navigation-list-item-icon-mask: map.get(icons.$icon-map, "chevron-right"),
-  $navigation-list-item-icon-width: 1.5rem,
-  $navigation-list-item-icon-height: 1.5rem,
+  $navigation-list-item-icon-width: 0.8rem,
+  $navigation-list-item-icon-height: 0.8rem,
   $navigation-list-item-icon-color: color-scheme.$ro-blue,
   $navigation-list-item-icon-padding: 0 spacing.$spacing-050 0 0,
   $navigation-content-wrapper-justify-content: space-between,
@@ -683,8 +693,8 @@
   // button to top icon
   $button-to-top-icon-mask: map.get(icons.$icon-map, "arrow-bar-to-up"),
   $button-to-top-icon-color: semantic.$color-brand-primary-text-default,
-  $button-to-top-icon-width: 1.5rem,
-  $button-to-top-icon-height: 1.5rem,
+  $button-to-top-icon-width: 1rem,
+  $button-to-top-icon-height: 1rem,
 
   // background-color offset
   $background-color-offset-background-color: color-scheme.$grey-50,
@@ -695,8 +705,8 @@
   $introduction-font-size: body-text.$body-text-l,
 
   // Icon
-  $icon-height: 1.5rem,
-  $icon-width: 1.5rem,
+  $icon-height: 1rem,
+  $icon-width: 1rem,
 
   // Sidemenu
   $sidemenu-nav-width: 20rem,
@@ -719,8 +729,8 @@
   // sidemenu expanded
   $sidemenu-expanded-icon-mask: map.get(icons.$icon-map, "close"),
   $sidemenu-expanded-icon-color: semantic.$color-brand-primary-text-default,
-  $sidemenu-expanded-icon-width: 1.5rem,
-  $sidemenu-expanded-icon-height: 1.5rem,
+  $sidemenu-expanded-icon-width: 1rem,
+  $sidemenu-expanded-icon-height: 1rem,
 
   // sidemenu collapsed
   $sidemenu-collapsed-button-margin-left: 0,

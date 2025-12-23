@@ -73,6 +73,8 @@ nav {
       // Icon
       @if theme.$navigation-list-item-icon-mask {
         &::before {
+          border: 1px dashed red;
+
           mask-size: contain;
           content: "";
           display: inline-block;

@@ -27,9 +27,6 @@ $header-content-wrapper-width: null !default;
 $header-content-wrapper-margin-top: null !default;
 $header-content-wrapper-gap: null !default;
 
-// Collapsing element
-$header-navigation-collapsing-element-height: null !default;
-
 // Header link
 $header-link-background-color: null !default;
 $header-link-text-color: inherit !default;
@@ -108,3 +105,13 @@ $header-navigation-input-algin-self: null !default;
 
 // Actions
 $header-actions-gap: 1rem !default;
+
+// Form inline
+$header-form-align-items: null !default;
+$header-form-justify-content: null !default;
+$header-form-button-align-self: null !default;
+$header-form-button-height: null !default;
+$header-form-button-background-color: null !default;
+$header-form-button-text-color: null !default;
+$header-form-button-hover-background-color: null !default;
+$header-form-button-hover-text-color: null !default;

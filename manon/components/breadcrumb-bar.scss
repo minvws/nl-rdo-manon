@@ -74,6 +74,8 @@
       &::after {
         margin-left: theme.$breadcrumb-bar-icon-margin-left;
         margin-right: theme.$breadcrumb-bar-icon-margin-right;
+        mask-repeat: no-repeat;
+        mask-position: center center;
       }
 
       &:last-child {

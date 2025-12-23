@@ -37,6 +37,7 @@ main.sidemenu {
 
   a {
     text-decoration: theme.$sidemenu-text-decoration;
+    font-weight: theme.$sidemenu-list-item-font-weight;
   }
 
   > nav {

@@ -145,10 +145,6 @@ body > header,
       align-self: theme.$header-navigation-input-algin-self;
     }
 
-    div.collapsing-element {
-      height: theme.$header-navigation-collapsing-element-height;
-    }
-
     > div {
       display: flex;
       width: 100%;
@@ -168,5 +164,27 @@ body > header,
 
   .actions {
     gap: theme.$header-actions-gap;
+  }
+
+  form.inline,
+  form {
+    align-items: theme.$header-form-align-items;
+    justify-content: theme.$header-form-justify-content;
+
+    button,
+    a.button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      align-self: theme.$header-form-button-align-self;
+      height: theme.$header-form-button-height;
+      background-color: theme.$header-form-button-background-color;
+      color: theme.$header-form-button-text-color;
+
+      &:hover {
+        background-color: theme.$header-form-button-hover-background-color;
+        color: theme.$header-form-button-hover-text-color;
+      }
+    }
   }
 }
