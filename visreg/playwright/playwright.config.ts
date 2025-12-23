@@ -11,7 +11,10 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 4 : undefined,
-  reporter: [["github"], ["html", { open: "never", outputFolder: `report/${theme}` }]],
+  reporter: [
+    ["github"],
+    ["html", { open: "never", outputFolder: `report/${theme}` }],
+  ],
   use: {
     baseURL: BASE_URL,
     trace: "on-first-retry",
