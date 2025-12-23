@@ -28,10 +28,10 @@ a:active.logo,
 a:focus.logo {
   &.icore-open {
     @if theme.$theme-name == "icore-open" {
-    display: theme.$logo-display;
-    padding: 1rem;
-    background-color: theme.$header-background-color;
-  }
+      display: theme.$logo-display;
+      padding: 1rem;
+      background-color: theme.$header-background-color;
+    }
   }
 }
 
@@ -41,7 +41,7 @@ a:visited.logo,
 a:hover.logo,
 a:active.logo,
 a:focus.logo {
-  &.kat{
+  &.kat {
     @if theme.$theme-name == "kat" {
       display: theme.$logo-display;
     }
