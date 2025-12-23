@@ -712,6 +712,7 @@ and spacing sets */
 
   // tab panel
   $tab-panel-gap: spacing.$spacing-100,
+  $tab-panel-padding: spacing.$spacing-100 0,
 
   // set to focus border-width
   $tabs-outline-offset: -2px,
