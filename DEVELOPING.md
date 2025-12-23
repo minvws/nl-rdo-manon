@@ -155,19 +155,31 @@ commands are available:
 - To run the visual regression tests:
 
   ```bash
+  # Run tests for all themes
   pnpm run visreg:test
+
+  # Run tests for a specific theme (e.g., 'kat')
+  pnpm run visreg:test kat
   ```
 
 - To view the visual regression test report:
 
   ```bash
+  # View report for the default theme ('icore-open')
   pnpm run visreg:report
+
+  # View report for a specific theme (e.g., 'kat')
+  pnpm run visreg:report kat
   ```
 
 - To approve changes to the visual regression snapshots:
 
   ```bash
+  # Approve snapshots for all themes
   pnpm run visreg:approve
+
+  # Approve snapshots for a specific theme (e.g., 'kat')
+  pnpm run visreg:approve kat
   ```
 
 - To reset the visual regression test environment, this will delete all

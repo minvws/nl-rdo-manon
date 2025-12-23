@@ -5,6 +5,8 @@ services:
       dockerfile: ./docs/Dockerfile
     ports:
       - "5173:5173"
+    environment:
+      - THEME=${THEME:-icore-open}
     volumes:
       - ../docs:/app/docs
       - /app/docs/node_modules
@@ -15,6 +17,8 @@ services:
     build:
       context: ./playwright
     command: ["npm", "run", "test"]
+    environment:
+      - THEME=${THEME:-icore-open}
     volumes:
       - ./playwright/tests:/app/tests
       - ./playwright/playwright.config.ts:/app/playwright.config.ts
@@ -27,6 +31,8 @@ services:
     build:
       context: ./playwright
     command: ["npm", "run", "update"]
+    environment:
+      - THEME=${THEME:-icore-open}
     volumes:
       - ./playwright/tests:/app/tests
       - ./playwright/playwright.config.ts:/app/playwright.config.ts
