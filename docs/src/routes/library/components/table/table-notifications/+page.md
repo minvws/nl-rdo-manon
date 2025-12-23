@@ -31,8 +31,9 @@ SCSS importeren:
    - `warning`
    - `confirmation`
    - `explanation`
-   - `primary` Zie [Notifications](/library/components/notifications) voor
-     meer informatie.
+   - `primary`
+
+   Zie [Notifications](/library/components/notifications) voor meer informatie.
 
 <h2 id="examples">Voorbeelden</h2>
 

@@ -21,6 +21,12 @@
   padding: theme.$image-background-elements-padding;
 }
 
+div.image-background:has(img:only-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .image-background {
   img {
     @extend %image-background;

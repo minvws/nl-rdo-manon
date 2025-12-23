@@ -31,8 +31,16 @@ SCSS importeren:
 
 ### Geactiveerd voorbeeld
 
-<div class="resize">
-  <iframe src="/snippets/skip-to-content-active" title="Voorbeeld"></iframe>
+<div class="resize icore-open">
+  <iframe src="/snippets/skip-to-content-active/icore-open" title="Voorbeeld"></iframe>
+</div>
+
+<div class="resize rijkshuisstijl-2008">
+  <iframe src="/snippets/skip-to-content-active/rijkshuisstijl-2008" title="Voorbeeld"></iframe>
+</div>
+
+<div class="resize kat">
+  <iframe src="/snippets/skip-to-content-active/kat" title="Voorbeeld"></iframe>
 </div>
 
 ### Standaard weergave
@@ -40,8 +48,16 @@ SCSS importeren:
 Gebruik de Tab-toets om de knop te
 activeren en zichtbaar te maken in het onderstaande voorbeeld.
 
-<div class="resize">
-  <iframe src="/snippets/skip-to-content" title="Voorbeeld"></iframe>
+<div class="resize icore-open">
+  <iframe src="/snippets/skip-to-content/icore-open" title="Voorbeeld"></iframe>
+</div>
+
+<div class="resize rijkshuisstijl-2008">
+  <iframe src="/snippets/skip-to-content/rijkshuisstijl-2008" title="Voorbeeld"></iframe>
+</div>
+
+<div class="resize kat">
+  <iframe src="/snippets/skip-to-content/kat" title="Voorbeeld"></iframe>
 </div>
 
 ```html

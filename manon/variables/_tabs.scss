@@ -1,3 +1,14 @@
+// List
+$tabs-border-top-width: null !default;
+$tabs-border-right-width: null !default;
+$tabs-border-bottom-width: null !default;
+$tabs-border-left-width: null !default;
+$tabs-border-style: null !default;
+$tabs-border-color: null !default;
+$tabs-gap: null !default;
+$tabs-padding: 0 !default;
+$tabs-margin: 0 !default;
+
 // Item
 $tabs-item-border-width: null !default;
 $tabs-item-border-style: null !default;
@@ -36,15 +47,6 @@ $tabs-item-current-hover-font-weight: null !default;
 
 // Parent
 $tabs-background-color: null !default;
-
-// List
-$tabs-border-top-width: null !default;
-$tabs-border-right-width: null !default;
-$tabs-border-bottom-width: null !default;
-$tabs-border-left-width: null !default;
-$tabs-border-style: null !default;
-$tabs-border-color: null !default;
-$tabs-gap: null !default;
 
 // Focus
 $tabs-outline-offset: inherit !default;

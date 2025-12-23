@@ -10,6 +10,8 @@ form.inline {
   gap: theme.$form-inline-gap;
   color: theme.$form-inline-text-color;
   flex-direction: theme.$form-inline-flex-direction;
+  align-items: theme.$form-inline-align-items;
+  justify-content: theme.$form-inline-justify-content;
 
   button,
   a.button,

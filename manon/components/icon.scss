@@ -3,6 +3,7 @@
 .icon {
   mask-size: contain;
   mask-repeat: no-repeat;
+  mask-position: center center;
   content: "";
   background-color: theme.$icon-color;
   height: theme.$icon-height;

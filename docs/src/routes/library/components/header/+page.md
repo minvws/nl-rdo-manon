@@ -112,7 +112,7 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
         <li><a href="#">Voorbeeld-link 3</a></li>
       </ul>
 
-      <form action="">
+      <form action="" class="inline">
         <div>
           <label for="voorbeeld-1-date-1-start" class="visually-hidden">Zoeken</label>
           <div class="combined-field">
@@ -128,8 +128,16 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 
 ### Voorbeeld: Navigatie en logo
 
-<div class="resize">
-  <iframe src="/snippets/header-navigation-with-logo" title="Voorbeeld"></iframe>
+<div class="resize icore-open">
+  <iframe src="/snippets/header-navigation-with-logo/icore-open" title="Voorbeeld"></iframe>
+</div>
+
+<div class="resize rijkshuisstijl-2008">
+  <iframe src="/snippets/header-navigation-with-logo/rijkshuisstijl-2008" title="Voorbeeld"></iframe>
+</div>
+
+<div class="resize kat">
+  <iframe src="/snippets/header-navigation-with-logo/kat" title="Voorbeeld"></iframe>
 </div>
 
 ```html
@@ -225,38 +233,6 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
               <button type="submit">Logout</button>
             </form>
           </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</header>
-```
-
-### Voorbeeld: Navigatie met logo bovenaan
-
-<div class="resize">
-  <iframe src="/snippets/header-navigation-with-logo" title="Voorbeeld"></iframe>
-</div>
-
-```html
-<header>
-  <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
-
-    <nav
-      data-open-label="Menu"
-      data-close-label="Sluit menu"
-      data-media="(min-width: 30rem)"
-      aria-label="Hoofdnavigatie"
-      class="collapsible"
-    >
-      <a href="#" class="logo"> <img src="$img/logo.svg" alt="Placeholder logo" />Manon </a>
-
-      <div class="collapsing-element">
-        <ul>
-          <li><a href="#">Voorbeeld-link 1</a></li>
-          <li><a href="#">Voorbeeld-link 2</a></li>
-          <li><a href="#">Voorbeeld-link 3</a></li>
         </ul>
       </div>
     </nav>

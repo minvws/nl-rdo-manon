@@ -206,6 +206,7 @@ and spacing sets */
   $footer-border-style: solid,
   $footer-border-color: color-scheme.$grey-200,
   $footer-min-height: 5.5rem,
+  $footer-navigation-width: auto,
 
   // footer content-wrapper
   $footer-content-wrapper-max-width: 100%,
@@ -334,8 +335,11 @@ and spacing sets */
   // logo
   $logo-font-size: 0,
   $logo-img-background-color: semantic.$color-text-default,
-  $logo-img-padding: 0.25rem 0.5rem,
-  $logo-img-border-radius: border-radii.$border-radius-s,
+  $logo-img-padding: 0.5rem 0.5rem,
+  $logo-img-border-radius: border-radii.$border-radius-round,
+  $logo-img-width: 3.5rem,
+  $logo-img-height: 3.5rem,
+  $logo-display: flex,
 
   // main
   $main-padding-top: spacing.$spacing-400,
@@ -398,11 +402,6 @@ and spacing sets */
   $notification-system-text-color: semantic.$color-text-default,
   $notification-system-border-color: color-scheme.$black-05,
 
-  // pagetitle
-  $page-title-max-width: 90rem,
-  $page-title-margin: 0 auto,
-  $page-title-width: 100%,
-
   // section
   $section-gap: spacing.$spacing-100,
   $section-max-width: 100%,
@@ -413,6 +412,16 @@ and spacing sets */
   $section-content-wrapper-flex-direction: column,
   $section-content-wrapper-border-radius: border-radii.$border-radius-m,
   $section-content-wrapper-max-width: 90rem,
+
+  // skip to content
+  $skip-to-content-padding: spacing.$spacing-050,
+  $skip-to-content-background-color: color-scheme.$white,
+  $skip-to-content-text-color: color-scheme.$blue-600,
+  $skip-to-content-border-width: 1px,
+  $skip-to-content-border-style: solid,
+  $skip-to-content-border-color: color-scheme.$grey-200,
+  $skip-to-content-margin: spacing.$spacing-050 0,
+  $skip-to-content-order: 1,
 
   // sidemenu page
   $sidemenu-page-padding-top: spacing.$spacing-400,
@@ -431,7 +440,8 @@ and spacing sets */
   $sidemenu-nav-border-color: color-scheme.$grey-200,
 
   // slogan
-  $slogan-font-size: body-text.$body-text-l,
+  $slogan-font-size: body-text.$body-text-m,
+  $slogan-white-space: nowrap,
 
   // tabs
   $tabs-gap: spacing.$spacing-100,
@@ -485,6 +495,13 @@ and spacing sets */
   $tile-padding-bottom: spacing.$spacing-150,
   $tile-padding-left: spacing.$spacing-150,
   $tile-border-radius: border-radii.$border-radius-m,
+
+  // Page title
+  $page-title-font-size: heading.$heading-xxl,
+  $page-title-padding: 0,
+  $page-title-max-width: 90rem,
+  $page-title-margin: 0 auto,
+  $page-title-width: 100%,
 
   // helpers
   $horizontal-gap: spacing.$spacing-100,

@@ -1,0 +1,765 @@
+@use "sass:map";
+
+/* Theme configuration */
+@forward "config";
+
+/* Fonts (@font-faces) */
+@use "fonts";
+
+/* Icon mask data URIs */
+@use "icons";
+
+/* Semantic variables */
+/* These are variables that have a semantic value. Like branding color */
+@use "semantic" as semantic;
+@use "core/color-scheme/" as color-scheme;
+@use "core/spacing/" as spacing;
+@use "core/typography/body-text/" as body-text;
+@use "core/typography/heading/" as heading;
+
+/* Component variables */
+@use "@minvws/manon/variables" with (
+  $theme-name: "rijkshuisstijl-2008",
+
+  // Accordion
+  // Accordion button
+  $accordion-button-padding: spacing.$spacing-075 spacing.$spacing-100,
+  $accordion-button-text-color: color-scheme.$sky-blue-550,
+  $accordion-button-background-color: color-scheme.$white,
+  $accordion-button-border-style: solid,
+  $accordion-button-border-color: color-scheme.$sky-blue-500 transparent,
+  $accordion-button-border-width: 1px 0 1px 0.5rem,
+  $accordion-button-first-border-width: 1px 0 0 0.5rem,
+
+  // Accordion button hover
+  $accordion-button-hover-text-color: color-scheme.$sky-blue-800,
+  $accordion-button-hover-background-color: #f1f5f9,
+
+  // Accordion button expanded
+  $accordion-button-expanded-border-width: 1px 0 0 0.5rem,
+  $accordion-button-expanded-border-color: color-scheme.$sky-blue-500,
+
+  // Accordion button icon (expanded)
+  $accordion-button-icon-before-mask: map.get(icons.$icon-map, "chevron-down"),
+  $accordion-button-icon-before-width: 1rem,
+  $accordion-button-icon-before-height: 1rem,
+  $accordion-button-icon-before-color: color-scheme.$ro-blue,
+  $accordion-button-icon-before-margin-right: 1rem,
+
+  // Accordion button icon (closed)
+  $accordion-button-icon-before-closed-mask: map.get(
+      icons.$icon-map,
+      "chevron-up"
+    ),
+  $accordion-button-icon-before-closed-width: 1rem,
+  $accordion-button-icon-before-closed-height: 1rem,
+  $accordion-button-icon-before-closed-color: color-scheme.$ro-blue,
+  $accordion-button-icon-before-closed-margin-right: 1rem,
+
+  // Accordion content
+  $accordion-content-border-width: 0 0 0 0.5rem,
+  $accordion-content-border-style: solid,
+  $accordion-content-border-color: color-scheme.$sky-blue-500,
+  $accordion-content-padding: spacing.$spacing-100,
+  $accordion-content-gap: spacing.$spacing-050,
+
+  // Article
+  $article-padding-top: spacing.$spacing-175,
+  $article-padding-right: 0,
+  $article-padding-bottom: spacing.$spacing-175,
+  $article-padding-left: 0,
+  $article-gap: spacing.$spacing-175,
+  $article-max-width: 100%,
+
+  // Article content wrapper
+  $article-content-wrapper-padding-top: spacing.$spacing-175,
+  $article-content-wrapper-padding-right: spacing.$spacing-300,
+  $article-content-wrapper-padding-bottom: spacing.$spacing-175,
+  $article-content-wrapper-padding-left: spacing.$spacing-300,
+  $article-content-wrapper-gap: spacing.$spacing-175,
+  $article-content-wrapper-max-width: 82rem,
+
+  // Avatar
+  $avatar-background-color: semantic.$color-brand-secondary-default,
+  $avatar-text-color: semantic.$color-brand-secondary-text-default,
+  $avatar-border-radius: 100%,
+  $avatar-padding: spacing.$spacing-025,
+  $avatar-width: 2rem,
+  $avatar-height: 2rem,
+  $avatar-text-font-size: body-text.$body-text-s,
+  $avatar-align-self: center,
+  $avatar-hover-background-color: semantic.$color-brand-secondary-default,
+  $avatar-hover-text-color: semantic.$color-brand-secondary-text-default,
+
+  // Section
+  $section-padding-top: spacing.$spacing-175,
+  $section-padding-right: 0,
+  $section-padding-bottom: spacing.$spacing-175,
+  $section-padding-left: 0,
+  $section-gap: spacing.$spacing-175,
+  $section-max-width: 100%,
+
+  // Section content wrapper
+  $section-content-wrapper-padding-top: spacing.$spacing-175,
+  $section-content-wrapper-padding-right: spacing.$spacing-300,
+  $section-content-wrapper-padding-bottom: spacing.$spacing-175,
+  $section-content-wrapper-padding-left: spacing.$spacing-300,
+  $section-content-wrapper-gap: spacing.$spacing-175,
+  $section-content-wrapper-max-width: 82rem,
+
+  // Base
+  $base-font-size: 1.125rem,
+  $base-font-family: (
+    "RO Sans Web",
+    sans-serif,
+  ),
+
+  // Button
+  $button-font-size: 1.125rem,
+  $button-text-align: center,
+  $button-background-color: semantic.$color-brand-primary-default,
+  $button-text-color: semantic.$color-brand-primary-text-default,
+  $button-border-width: 0,
+  $button-border-color: semantic.$color-brand-primary-default,
+  $button-border-radius: 0,
+  $button-padding-top: spacing.$spacing-075,
+  $button-padding-right: spacing.$spacing-100,
+  $button-padding-bottom: spacing.$spacing-075,
+  $button-padding-left: spacing.$spacing-100,
+
+  // Button secondary
+  $button-secondary-background-color: color-scheme.$white,
+  $button-secondary-border-width: 2px,
+  $button-secondary-border-style: solid,
+  $button-secondary-border-color: semantic.$color-brand-primary-default,
+  $button-secondary-text-color: semantic.$color-brand-primary-text-default,
+
+  // Button secondary hover
+  $button-secondary-hover-background-color:
+    semantic.$color-brand-primary-default,
+  $button-secondary-hover-border-color: semantic.$color-brand-primary-default,
+  $button-secondary-hover-text-color: color-scheme.$white,
+
+  // Button cta
+  $button-cta-background-color: color-scheme.$green-600,
+  $button-cta-border-width: 2px,
+  $button-cta-border-style: solid,
+  $button-cta-border-color: color-scheme.$green-600,
+  $button-cta-text-color: color-scheme.$white,
+
+  // Button cta hover
+  $button-cta-hover-background-color: color-scheme.$green-700,
+  $button-cta-hover-border-color: color-scheme.$green-700,
+  $button-cta-hover-text-color: color-scheme.$white,
+
+  // Button destructive
+  $button-destructive-background-color:
+    color-scheme.$color-notification-error-intense,
+  $button-destructive-border-color:
+    color-scheme.$color-notification-error-intense,
+  $button-destructive-text-color: color-scheme.$white,
+
+  // Button destructive hover
+  $button-destructive-hover-background-color: color-scheme.$red-700,
+  $button-destructive-hover-border-color: color-scheme.$red-700,
+  $button-destructive-hover-text-color: color-scheme.$white,
+
+  // Button container
+  $button-container-align-items: flex-start,
+  $button-container-gap: spacing.$spacing-100,
+  $button-container-flex-direction: row,
+
+  // Breadcrumb bar
+  $breadcrumb-bar-background-color: color-scheme.$grey-50,
+  $breadcrumb-bar-padding-right: spacing.$spacing-100,
+  $breadcrumb-bar-padding-left: spacing.$spacing-100,
+  $breadcrumb-bar-text-color: semantic.$color-text-default,
+  $breadcrumb-bar-gap: spacing.$spacing-050,
+  $breadcrumb-bar-list-item-last-child-font-weight: bold,
+  $breadcrumb-bar-list-item-gap: spacing.$spacing-050,
+
+  // Breadcrumb bar icon
+  $breadcrumb-bar-icon-color: semantic.$color-text-default,
+  $breadcrumb-bar-icon-mask: map.get(icons.$icon-map, "chevron-compact-right"),
+  $breadcrumb-bar-icon-width: 1rem,
+  $breadcrumb-bar-icon-height: 1rem,
+
+  // breadcrumb bar link
+  $breadcrumb-bar-link-text-decoration: none,
+
+  // Card
+  $card-padding-top: spacing.$spacing-100,
+  $card-padding-right: spacing.$spacing-100,
+  $card-padding-bottom: spacing.$spacing-100,
+  $card-padding-left: spacing.$spacing-100,
+  $card-gap: spacing.$spacing-050,
+
+  // Code
+  $code-background-color: color-scheme.$grey-50,
+  $code-padding: 0 spacing.$spacing-050,
+
+  // Code block
+  $code-block-border-width: 1px,
+  $code-block-border-style: solid,
+  $code-block-border-color: color-scheme.$grey-100,
+  $code-block-code-padding: spacing.$spacing-200 spacing.$spacing-150,
+  $code-block-copy-button-top: spacing.$spacing-100,
+  $code-block-copy-button-right: spacing.$spacing-100,
+  $code-block-copy-button-padding: spacing.$spacing-050,
+  $code-block-copy-button-background-color: transparent,
+  $code-block-copy-button-text-color: color-scheme.$grey-700,
+  $code-block-copy-button-hover-background-color:
+    semantic.$color-brand-primary-default,
+  $code-block-copy-button-hover-text-color:
+    semantic.$color-brand-primary-text-default,
+
+  // Column
+  $columns-gap: spacing.$spacing-300,
+
+  // Checkbox
+  $checkbox-width: 1.5rem,
+  $checkbox-height: 1.5rem,
+
+  // collapsing element
+  $collapsing-element-list-item-border-color: color-scheme.$grey-100,
+
+  // Collapsing element list item link hover
+  $collapsing-element-list-item-link-hover-background-color:
+    color-scheme.$ro-blue,
+  $collapsing-element-list-item-link-hover-text-color: color-scheme.$white,
+
+  // De-emphasized
+  $de-emphasized-font-size: body-text.$body-text-s,
+  $de-emphasized-text-color: color-scheme.$grey-700,
+
+  // Description list
+  $description-list-width: 100%,
+  $description-list-item-data-font-weight: bold,
+  $description-list-border-width: 0 0 1px 0,
+  $description-list-border-style: solid,
+  $description-list-border-color: color-scheme.$grey-100,
+  $description-list-item-padding: spacing.$spacing-075 0,
+  $description-list-item-title-width: 15rem,
+  $description-list-item-gap: spacing.$spacing-100,
+  $description-list-item-data-width: calc(80% - 16rem),
+  // Emphasized
+  $emphasized-font-size: body-text.$body-text-l,
+
+  // Footer
+  $footer-background-color: semantic.$color-brand-primary-default,
+  $footer-text-color: semantic.$color-brand-primary-text-default,
+  $footer-min-height: 4rem,
+  $footer-justify-content: space-between,
+  $footer-padding-top: 3rem,
+  $footer-padding-right: 5%,
+  $footer-padding-bottom: 3rem,
+  $footer-padding-left: 5%,
+  $footer-flex-direction: row,
+  $footer-list-flex-direction: column,
+  $footer-link-text-color: inherit,
+  $footer-link-hover-text-color: inherit,
+  $footer-link-visited-text-color: inherit,
+  $footer-link-visited-hover-text-color: inherit,
+  $footer-navigation-width: auto,
+  $footer-link-focus-outline-color: semantic.$color-brand-primary-text-default,
+  $footer-navigation-list-icon-color: semantic.$color-brand-primary-text-default,
+
+  // Form
+  $form-padding-top: spacing.$spacing-200,
+  $form-padding-right: spacing.$spacing-200,
+  $form-padding-bottom: spacing.$spacing-200,
+  $form-padding-left: spacing.$spacing-200,
+  $form-background-color: color-scheme.$grey-50,
+  $form-gap: spacing.$spacing-150,
+  $form-align-items: flex-start,
+  $form-max-width: 50rem,
+
+  // Form accent color
+  $form-accent-color: color-scheme.$ro-blue,
+
+  // form combined field
+  $form-combined-field-button-min-width: fit-content,
+  $form-combined-field-button-justify-content: center,
+
+  // Form group
+  $form-group-gap: spacing.$spacing-050,
+
+  // Form input
+  $form-input-padding-top: spacing.$spacing-050,
+  $form-input-padding-right: spacing.$spacing-075,
+  $form-input-padding-bottom: spacing.$spacing-050,
+  $form-input-padding-left: spacing.$spacing-075,
+  $form-input-min-height: 2.75rem,
+  $form-input-border-width: 1px,
+  $form-input-border-style: solid,
+  $form-input-border-color: color-scheme.$ro-blue,
+  $form-input-font-size: inherit,
+  $form-input-background-color: color-scheme.$white,
+
+  // Form horizontal
+  $form-horizontal-view-fieldset-label-column: 33.33%,
+  $form-horizontal-label-max-width: 33.33%,
+  $form-horizontal-group-gap: 0.5rem,
+  $form-label-column: calc(33.33% + 0.5rem),
+  $form-horizontal-group-align-items: flex-start,
+
+  // Form help container
+  $form-help-button-space: 4rem,
+
+  // Form help button
+  $form-help-button-background-color: semantic.$color-brand-primary-default,
+  $form-help-button-text-color: semantic.$color-brand-primary-text-default,
+  $form-help-button-border-width: 2px,
+  $form-help-button-border-style: solid,
+  $form-help-button-border-color: semantic.$color-brand-primary-default,
+  $form-help-button-padding: spacing.$spacing-050,
+  $form-help-button-top: 0rem,
+  $form-help-button-right: 0rem,
+
+  // Form help icon
+  $form-help-icon-mask: map.get(icons.$icon-map, "question-mark"),
+  $form-help-icon-width: 1rem,
+  $form-help-icon-height: 1rem,
+  $form-help-icon-color: semantic.$color-brand-primary-text-default,
+
+  // Form inline
+  $form-inline-button-margin: 0,
+  $form-inline-button-align-self: stretch,
+
+  // Form fieldset
+  $form-fieldset-border-width: 0,
+
+  // Form button
+  $form-button-last-child-margin: 0 0 calc(spacing.$spacing-200 * -1) 0,
+
+  // Form textarea
+  $form-textarea-width: 100%,
+  $form-textarea-font-size: inherit,
+  $form-textarea-padding: 1rem,
+  $form-textarea-border-radius: 0,
+
+  // Form fieldset
+  $form-fieldset-label-margin: spacing.$spacing-150 0,
+  $form-fieldset-legend-margin: spacing.$spacing-150 0,
+  $form-fieldset-fields-margin: spacing.$spacing-150 0,
+
+  // form select field
+  $form-select-font-size: inherit,
+  $form-select-color: color-scheme.$grey-900,
+  $form-select-min-width: 15rem,
+  $form-select-max-width: 100%,
+  $form-select-min-height: 2.75rem,
+  $form-select-border: 1px solid color-scheme.$ro-blue,
+  $form-select-padding: 0 spacing.$spacing-075,
+
+  // focus
+  $focus-outline: 2px dashed,
+  // Set to negative value to prevent from being cut off
+  $focus-outline-offset: -2px,
+  $focus-outline-color: color-scheme.$black,
+  $focus-z-index: 1,
+
+  // filter
+  $filter-icon-color: color-scheme.$ro-blue,
+  $filter-icon-mask: map.get(icons.$icon-map, "chevron-down"),
+  $filter-icon-width: 1.25rem,
+  $filter-icon-height: 1.25rem,
+  $filter-intro-justify-content: space-between,
+  $filter-button-font-size: 0,
+  $filter-close-icon-mask: map.get(icons.$icon-map, "chevron-up"),
+  $filter-button-background-color: transparent,
+  $filter-button-padding: 0,
+  $filter-button-gap: 0,
+
+  // Header
+  $header-navigation-background-color: semantic.$color-brand-primary-default,
+  $header-text-color: semantic.$color-brand-primary-text-default,
+  $header-font-size: body-text.$body-text-m,
+  $header-flex-direction: column,
+  $header-navigation-align-items: stretch,
+  $header-navigation-padding-top: 0,
+  $header-navigation-padding-right: 3%,
+  $header-navigation-padding-bottom: 0,
+  $header-navigation-padding-left: 3%,
+  $header-navigation-min-height: 4.375rem,
+  $header-navigation-width: 100%,
+  $header-list-item-align-items: stretch,
+  $header-link-padding: 0 spacing.$spacing-050,
+  $header-link-text-decoration: none,
+  $header-link-current-background-color: semantic.$color-brand-primary-subtle,
+  $header-link-current-text-color: semantic.$color-brand-primary-text-subtle,
+  $header-list-gap: 0,
+  $header-justify-content: stretch,
+  $header-form-justify-content: center,
+  $header-form-button-align-self: stretch,
+  $header-form-align-items: stretch,
+  $header-form-button-height: 100%,
+  $header-form-button-hover-background-color:
+    semantic.$color-brand-primary-subtle,
+  $header-form-button-hover-text-color:
+    semantic.$color-brand-primary-text-subtle,
+
+  // Headings
+  // h1
+  $h1-margin: spacing.$spacing-100 0,
+  $h1-font-size: heading.$heading-l,
+  $h1-font-weight: bold,
+
+  // h2
+  $h2-margin: spacing.$spacing-100 0,
+  $h2-font-size: heading.$heading-m,
+  $h2-font-weight: bold,
+
+  // h3
+  $h3-margin: spacing.$spacing-050 0,
+  $h3-font-size: heading.$heading-s,
+  $h3-font-weight: normal,
+  $h3-text-color: color-scheme.$ro-blue,
+
+  // h4
+  $h4-margin: spacing.$spacing-050 0,
+  $h4-font-size: heading.$heading-xs,
+  $h4-font-weight: bold,
+
+  // h5
+  $h5-margin: spacing.$spacing-050 0,
+  $h5-font-size: heading.$heading-xs,
+  $h5-font-weight: bold,
+  // $h5-font-style: italic,
+  // h6
+  $h6-margin: spacing.$spacing-050 0,
+  $h6-font-size: initial,
+
+  // Heading base set
+  // heading xs
+  $heading-xs-margin: spacing.$spacing-050 0,
+  $heading-xs-font-size: heading.$heading-xs,
+  $heading-xs-font-weight: bold,
+
+  // heading small
+  $heading-small-margin: spacing.$spacing-050 0,
+  $heading-small-font-size: heading.$heading-s,
+  $heading-small-font-weight: normal,
+  $heading-small-text-color: color-scheme.$ro-blue,
+
+  // heading normal
+  $heading-normal-margin: spacing.$spacing-100 0,
+  $heading-normal-font-size: heading.$heading-m,
+  $heading-normal-font-weight: bold,
+
+  // heading large
+  $heading-large-margin: spacing.$spacing-100 0,
+  $heading-large-font-size: heading.$heading-l,
+  $heading-large-font-weight: bold,
+
+  // heading xl
+  $heading-xl-font-size: heading.$heading-xl,
+
+  // heading xxl
+  $heading-xxl-font-size: heading.$heading-xxl,
+
+  // hero
+  $hero-height: 25rem,
+  $hero-max-width: calc(100% + 8rem),
+  $hero-width: calc(100% + 8rem),
+  $hero-margin: -4rem 0 0 -4rem,
+  $hero-border-radius: 0,
+  $hero-font-size: body-text.$body-text-l,
+  $hero-align-items: center,
+  $hero-flex-direction: column,
+  $hero-text-color: color-scheme.$white,
+  $hero-content-wrapper-gap: spacing.$spacing-100,
+  $hero-background-color: color-scheme.$ro-blue,
+  $hero-content-wrapper-justify-content: center,
+  $hero-content-wrapper-padding: spacing.$spacing-175 spacing.$spacing-300,
+  $hero-content-wrapper-max-width: 82rem,
+  $hero-title-font-size: heading.$heading-xl,
+  $hero-title-padding: 0,
+
+  // List
+  $list-padding: spacing.$spacing-100,
+  $list-item-padding: spacing.$spacing-050,
+
+  // Link
+  $link-text-color: color-scheme.$link-text-color,
+
+  // Link hover
+  $link-hover-text-color: color-scheme.$link-text-color-hover,
+
+  // Link visited
+  $link-visited-text-color: color-scheme.$link-text-color-visited,
+  $link-visited-hover-text-color: color-scheme.$link-text-color-visited-hover,
+
+  // Main
+  $main-padding-top: spacing.$spacing-400,
+
+  // Navigation
+  $navigation-list-padding: 0,
+  $navigation-list-item-padding: spacing.$spacing-050 0,
+  $navigation-link-text-decoration: none,
+  $navigation-list-item-icon-mask: map.get(icons.$icon-map, "chevron-right"),
+  $navigation-list-item-icon-width: 0.8rem,
+  $navigation-list-item-icon-height: 0.8rem,
+  $navigation-list-item-icon-color: color-scheme.$ro-blue,
+  $navigation-list-item-icon-padding: 0 spacing.$spacing-050 0 0,
+  $navigation-content-wrapper-justify-content: space-between,
+  $navigation-list-gap: spacing.$spacing-025,
+  $navigation-list-horizontal-gap: spacing.$spacing-100,
+  $navigation-list-horizontal-item-icon-padding: 0,
+
+  // Notification
+  $notification-padding-top: spacing.$spacing-100,
+  $notification-padding-right: spacing.$spacing-100,
+  $notification-padding-bottom: spacing.$spacing-100,
+  $notification-padding-left: spacing.$spacing-100,
+  $notification-gap: spacing.$spacing-100,
+
+  // Notification type
+  $notification-type-font-weight: bold,
+
+  // Notification error
+  $notification-error-background-color:
+    color-scheme.$color-notification-error-subtle,
+  $notification-error-text-color: semantic.$color-text-default,
+
+  // Notification warning
+  $notification-warning-background-color:
+    color-scheme.$color-notification-warning-subtle,
+  $notification-warning-text-color: semantic.$color-text-default,
+
+  // Notification explanation
+  $notification-explanation-background-color:
+    color-scheme.$color-notification-explanation-subtle,
+  $notification-explanation-text-color: semantic.$color-text-default,
+
+  // Notification confirmation
+  $notification-confirmation-background-color:
+    color-scheme.$color-notification-confirmation-subtle,
+  $notification-confirmation-text-color: semantic.$color-text-default,
+
+  // Notification system
+  $notification-system-background-color:
+    color-scheme.$color-notification-system-subtle,
+  $notification-system-text-color: semantic.$color-text-default,
+
+  // Notification table
+  $notification-table-gap: spacing.$spacing-025,
+  $notification-type-table-font-size: 0,
+
+  // Nota bene
+  $nota-bene-font-size: body-text.$body-text-s,
+  $nota-bene-text-color: color-scheme.$grey-700,
+
+  // Paragraph
+  $p-line-height: 1.5,
+
+  // Pagetitle
+  $page-title-font-size: heading.$heading-l,
+  $page-title-max-width: 82rem,
+  $page-title-margin: 0 auto,
+  $page-title-width: 100%,
+  $page-title-padding: 0 0 0 spacing.$spacing-300,
+
+  // Pagination
+  $pagination-justify-content: flex-start,
+  $pagination-border-width: 2px 0 0 0,
+  $pagination-border-style: solid,
+  $pagination-border-color: color-scheme.$ro-blue,
+
+  // Pagination list
+  $pagination-list-margin: 0,
+
+  // Pagination list item
+  $pagination-item-height: 2.75rem,
+  $pagination-item-width: 2.75rem,
+
+  // Pagination link
+  $pagination-link-text-color: color-scheme.$ro-blue,
+  $pagination-link-active-background-color: color-scheme.$ro-blue,
+  $pagination-link-active-text-color: color-scheme.$white,
+  $pagination-link-hover-background-color: color-scheme.$ro-blue,
+  $pagination-link-hover-text-color: color-scheme.$white,
+  $pagination-adjacent-text-color: color-scheme.$ro-blue,
+
+  // Radio
+  $radio-width: 1.25rem,
+  $radio-height: 1.25rem,
+
+  // Skip to content
+  $skip-to-content-padding: spacing.$spacing-100,
+  $skip-to-content-background-color: color-scheme.$white,
+  $skip-to-content-border-width: 2px,
+  $skip-to-content-border-style: solid,
+  $skip-to-content-border-color: semantic.$color-brand-primary-default,
+  $skip-to-content-text-color: semantic.$color-brand-primary-default,
+  $skip-to-content-text-align: center,
+  $skip-to-content-justify-content: center,
+  $skip-to-content-margin: 0 0 spacing.$spacing-100,
+
+  // Logo
+  $logo-display: flex,
+  $logo-align-items: center,
+  $logo-gap: spacing.$spacing-100,
+  $logo-height: 6.25rem,
+  $logo-text-color: semantic.$color-text-default,
+  $logo-margin: 0 0 1.5rem 0,
+  $logo-text-decoration: none,
+  $logo-img-width: 3.125rem,
+  $logo-img-height: 6.25rem,
+  $logo-font-family: (
+    "RO Serif Web",
+    serif,
+  ),
+  $logo-img-object-position: top,
+  $logo-img-margin: 0 0 0 calc(50% - 1.25rem),
+  $logo-img-object-fit: contain,
+  $logo-width: 40rem,
+
+  // Slogan
+  $slogan-font-size: 1.80203rem,
+  $slogan-font-family: (
+    "RO Serif Web",
+    serif,
+  ),
+  $slogan-font-style: italic,
+
+  // Table
+  $table-gap: spacing.$spacing-050,
+  $table-head-text-color: color-scheme.$ro-blue,
+  $table-head-font-weight: bold,
+  $table-head-border-width: 0,
+  $table-head-background-color: color-scheme.$white,
+  $table-head-border-color: color-scheme.$grey-100,
+  $table-head-padding: spacing.$spacing-075 spacing.$spacing-100,
+  $table-head-text-align: left,
+  $table-cell-padding: spacing.$spacing-075 spacing.$spacing-100,
+  $table-cell-gap: spacing.$spacing-025,
+  $table-row-border-width: 0 0 1px 0,
+  $table-row-border-style: solid,
+  $table-row-border-color: color-scheme.$grey-100,
+  $table-margin: spacing.$spacing-200 0,
+  $table-foot-header-padding: spacing.$spacing-075 spacing.$spacing-100,
+
+  // Table condensed
+  $table-condensed-cell-padding: spacing.$spacing-050 spacing.$spacing-100,
+
+  // Table caption
+  $table-caption-text-align: left,
+  $table-caption-padding: spacing.$spacing-100 0,
+  $table-caption-font-size: body-text.$body-text-s,
+
+  // table expando rows
+  $expando-rows-table-cell-padding: spacing.$spacing-150 spacing.$spacing-050,
+  $expando-rows-table-cell-background-color: color-scheme.$light-blue-50,
+  $expando-rows-content-gap: spacing.$spacing-150,
+  $expando-rows-row-background-color: color-scheme.$light-blue-100,
+  $expando-rows-content-padding: spacing.$spacing-050,
+
+  // table multiple rows
+  $table-rowspan-border: 1px solid color-scheme.$grey-100,
+
+  // Tabs
+  $tabs-gap: spacing.$spacing-100,
+  $tabs-item-border-style: solid,
+  $tabs-item-border-width: 0,
+  $tabs-item-padding: spacing.$spacing-050 0,
+  $tabs-item-text-color: color-scheme.$ro-blue,
+  $tabs-item-text-decoration: none,
+  $tabs-item-current-border-color: color-scheme.$ro-blue,
+  $tabs-item-current-border-width: 0 0 2px 0,
+  $tabs-item-current-font-weight: bold,
+  $tabs-item-hover-text-color: color-scheme.$ro-blue,
+
+  // Tab panel
+  $tab-panel-gap: spacing.$spacing-100,
+  $tab-panel-padding: spacing.$spacing-150 0,
+
+  // To-top button
+  $button-to-top-width: 2.75rem,
+  $button-to-top-height: 2.75rem,
+  $button-to-top-border-width: 2px,
+  $button-to-top-border-style: solid,
+  $button-to-top-border-color: color-scheme.$white,
+  $button-to-top-border-radius: 50%,
+  $button-to-top-position: fixed,
+  $button-to-top-bottom: spacing.$spacing-100,
+  $button-to-top-right: spacing.$spacing-100,
+  $button-to-top-justify-content: center,
+  $button-to-top-align-items: center,
+  $button-to-top-font-size: 0,
+  $button-to-top-background-color: semantic.$color-brand-primary-default,
+  $button-to-top-text-color: semantic.$color-brand-primary-text-default,
+
+  // button to top icon
+  $button-to-top-icon-mask: map.get(icons.$icon-map, "arrow-bar-to-up"),
+  $button-to-top-icon-color: semantic.$color-brand-primary-text-default,
+  $button-to-top-icon-width: 1rem,
+  $button-to-top-icon-height: 1rem,
+
+  // background-color offset
+  $background-color-offset-background-color: color-scheme.$grey-50,
+  $background-color-offset-1-background-color: color-scheme.$ro-blue,
+  $background-color-offset-1-text-color: color-scheme.$white,
+
+  // Introduction
+  $introduction-font-size: body-text.$body-text-l,
+
+  // Icon
+  $icon-height: 1rem,
+  $icon-width: 1rem,
+
+  // Sidemenu
+  $sidemenu-nav-width: 20rem,
+  $sidemenu-nav-padding-top: spacing.$spacing-200,
+  $sidemenu-nav-padding-right: spacing.$spacing-200,
+  $sidemenu-nav-padding-bottom: spacing.$spacing-200,
+  $sidemenu-nav-padding-left: spacing.$spacing-200,
+  $sidemenu-nav-border-width: 0 1px 0 0,
+  $sidemenu-nav-border-style: solid,
+  $sidemenu-nav-border-color: color-scheme.$grey-100,
+  $sidemenu-text-decoration: none,
+
+  // sidemenu button
+  $sidemenu-button-background-color: semantic.$color-brand-primary-default,
+  $sidemenu-button-padding: spacing.$spacing-050,
+  $sidemenu-button-color: semantic.$color-brand-primary-text-default,
+  $sidemenu-button-font-size: 0,
+  $sidemenu-button-margin-left: 18rem,
+
+  // sidemenu expanded
+  $sidemenu-expanded-icon-mask: map.get(icons.$icon-map, "close"),
+  $sidemenu-expanded-icon-color: semantic.$color-brand-primary-text-default,
+  $sidemenu-expanded-icon-width: 1rem,
+  $sidemenu-expanded-icon-height: 1rem,
+
+  // sidemenu collapsed
+  $sidemenu-collapsed-button-margin-left: 0,
+  $sidemenu-collapsed-icon-mask: map.get(icons.$icon-map, "hamburger"),
+  // sidemenu main
+  $sidemenu-page-padding-top: spacing.$spacing-400,
+  $sidemenu-page-padding-bottom: spacing.$spacing-400,
+
+  // tile
+  $tile-background-color: color-scheme.$white,
+  $tile-padding-top: spacing.$spacing-100,
+  $tile-padding-right: spacing.$spacing-100,
+  $tile-padding-bottom: spacing.$spacing-100,
+  $tile-padding-left: spacing.$spacing-100,
+  $tile-border-width: 1px,
+  $tile-border-style: solid,
+  $tile-border-color: color-scheme.$grey-100,
+  $tile-text-color: semantic.$color-text-default,
+  $tile-gap: spacing.$spacing-050,
+
+  // tile groups (group of tiles)
+  $tile-groups-gap: spacing.$spacing-100,
+  $tile-group-border-width: 1px 0 0 0,
+  $tile-group-border-style: solid,
+  $tile-group-border-color: color-scheme.$grey-200,
+  $tile-group-padding: spacing.$spacing-100 0 0 0,
+  $tile-group-margin: spacing.$spacing-050 0 0 0
+);
+
+// Include the mixin to generate all .icon-name classes for the theme
+@use "@minvws/manon/mixins/icon-generator";
+@include icon-generator.generate-icons(icons.$icon-map);

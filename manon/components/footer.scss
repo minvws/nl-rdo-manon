@@ -73,6 +73,7 @@ body > footer,
   a {
     text-decoration: theme.$footer-link-text-decoration;
     color: theme.$footer-link-text-color;
+    font-weight: theme.$footer-link-font-weight;
 
     &:hover {
       color: theme.$footer-link-hover-text-color;
@@ -86,6 +87,10 @@ body > footer,
       }
     }
 
+    &:focus-visible {
+      outline-color: theme.$footer-link-focus-outline-color;
+    }
+
     &[aria-current="page"],
     &[aria-current="page"]:hover,
     &:hover,
@@ -97,6 +102,7 @@ body > footer,
       border-width: theme.$footer-link-current-border-width;
       border-style: theme.$footer-link-current-border-style;
       border-color: theme.$footer-link-current-border-color;
+      font-weight: theme.$footer-link-current-font-weight;
     }
   }
 
@@ -124,8 +130,8 @@ body > footer,
       background-color: theme.$footer-list-item-background-color;
 
       &::before {
-        /* Preventing default nav before to show up */
-        display: none;
+        display: theme.$footer-navigation-list-icon-display;
+        background-color: theme.$footer-navigation-list-icon-display;
       }
     }
   }
@@ -162,6 +168,7 @@ body > footer,
     padding-right: theme.$footer-navigation-padding-right;
     padding-bottom: theme.$footer-navigation-padding-bottom;
     padding-left: theme.$footer-navigation-padding-left;
+    width: theme.$footer-navigation-width;
 
     ul,
     ol {
@@ -171,8 +178,8 @@ body > footer,
         list-style: theme.$footer-list-style;
 
         &::before {
-          /* Preventing default nav before to show up */
-          display: none;
+          display: theme.$footer-navigation-list-icon-display;
+          background-color: theme.$footer-navigation-list-icon-color;
         }
       }
     }

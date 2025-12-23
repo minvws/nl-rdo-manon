@@ -26,10 +26,9 @@
             <nav aria-labelledby="page-layout-heading">
               <h2 id="page-layout-heading">Page layout</h2>
               <ul>
+                <li><a href="{base}/library/layout/article">Article</a></li>
                 <li><a href="{base}/library/layout/main">Main</a></li>
                 <li><a href="{base}/library/layout/section">Section</a></li>
-                <li><a href="{base}/library/layout/article">Article</a></li>
-                <li><a href="{base}/library/layout/footer">Footer</a></li>
               </ul>
             </nav>
           </div>
@@ -69,14 +68,13 @@
               <li><a href="{base}/library/components/collapsible-menu">Collapsible menu</a></li>
               <li><a href="{base}/library/components/description-list">Description list</a></li>
               <li><a href="{base}/library/components/filter">Filter</a></li>
+              <li><a href="{base}/library/components/forms">Forms</a></li>
             </ul>
           </nav>
           <nav>
             <ul>
-              <li><a href="{base}/library/components/forms">Forms</a></li>
-              <li>
-                <a href="{base}/library/components/header">Header</a>
-              </li>
+              <li><a href="{base}/library/layout/footer">Footer</a></li>
+              <li><a href="{base}/library/components/header">Header</a></li>
               <li><a href="{base}/library/components/hero">Hero</a></li>
               <li><a href="{base}/library/components/icons">Icons</a></li>
               <li><a href="{base}/library/components/image">Image</a></li>
@@ -87,11 +85,11 @@
               <li><a href="{base}/library/components/login-meta">Login Meta</a></li>
               <li><a href="{base}/library/components/logo">Logo</a></li>
               <li><a href="{base}/library/components/navigation">Navigation</a></li>
+              <li><a href="{base}/library/components/notifications">Notifications</a></li>
             </ul>
           </nav>
           <nav>
             <ul>
-              <li><a href="{base}/library/components/notifications">Notifications</a></li>
               <li><a href="{base}/library/components/message-counter">Notificatie-teller</a></li>
               <li><a href="{base}/library/components/pagination">Pagination</a></li>
               <li><a href="{base}/library/components/sidemenu">Sidemenu</a></li>

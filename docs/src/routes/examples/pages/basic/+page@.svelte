@@ -24,7 +24,7 @@
 
 <main id="main-content" tabindex="-1">
   <section>
-    <h1>Paginatitel</h1>
+    <h1 class="page-title">Paginatitel</h1>
     <div class="content-wrapper">
       <div>
         <h2>Onderwerp</h2>

@@ -126,6 +126,8 @@ section.accordion {
       @if theme.$accordion-button-icon-before-mask {
         &::before {
           mask-size: contain;
+          mask-repeat: no-repeat;
+          mask-position: center center;
           content: "";
           margin-right: theme.$accordion-button-icon-before-margin-right;
           margin-left: theme.$accordion-button-icon-before-margin-left;
@@ -141,6 +143,8 @@ section.accordion {
       @if theme.$accordion-button-icon-after-mask {
         &::after {
           mask-size: contain;
+          mask-repeat: no-repeat;
+          mask-position: center center;
           content: "";
           margin-right: theme.$accordion-button-icon-after-margin-right;
           margin-left: theme.$accordion-button-icon-after-margin-left;
@@ -169,6 +173,8 @@ section.accordion {
       @if theme.$accordion-button-icon-before-closed-mask {
         &::before {
           mask-size: contain;
+          mask-repeat: no-repeat;
+          mask-position: center center;
           content: "";
           margin-right: theme.$accordion-button-icon-before-closed-margin-right;
           margin-left: theme.$accordion-button-icon-before-closed-margin-left;
@@ -184,6 +190,8 @@ section.accordion {
       @if theme.$accordion-button-icon-after-closed-mask {
         &::after {
           mask-size: contain;
+          mask-repeat: no-repeat;
+          mask-position: center center;
           content: "";
           margin-right: theme.$accordion-button-icon-after-closed-margin-right;
           margin-left: theme.$accordion-button-icon-after-closed-margin-left;

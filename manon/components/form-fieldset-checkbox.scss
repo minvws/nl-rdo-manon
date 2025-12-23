@@ -18,11 +18,16 @@ form {
         height: theme.$form-fieldset-checkbox-height;
         accent-color: theme.$form-fieldset-checkbox-accent-color;
         margin-top: theme.$form-fieldset-checkbox-input-margin-top;
+        float: left;
 
         & + label {
           cursor: pointer;
           padding-left: 0.5rem;
           margin: 0;
+          display: block;
+          width: unset;
+          float: left;
+          line-height: theme.$checkbox-height;
 
           @if theme.$form-fieldset-checkbox-width {
             width: calc(100% - #{theme.$form-fieldset-checkbox-width});

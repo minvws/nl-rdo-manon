@@ -5,11 +5,20 @@ $navigation-font-weight: null !default;
 $navigation-line-height: null !default;
 $navigation-text-color: null !default;
 
+// Content wrapper
+$navigation-content-wrapper-justify-content: null !default;
+
 // List
 $navigation-list-margin: null !default;
 $navigation-list-padding: null !default;
 $navigation-list-gap: null !default;
 $navigation-list-background-color: null !default;
+
+// Horizontal
+$navigation-list-horizontal-margin: null !default;
+$navigation-list-horizontal-padding: null !default;
+$navigation-list-horizontal-gap: null !default;
+$navigation-list-horizontal-item-icon-padding: null !default;
 
 // List item
 $navigation-list-item-padding: null !default;
