@@ -3,6 +3,9 @@ FROM node:22.21-alpine
 # Install corepack to manage package managers like pnpm
 RUN corepack enable
 
+# Install curl for healthchecks
+RUN apk add --no-cache curl
+
 WORKDIR /app
 
 # Copy workspace configuration and root files

@@ -2,14 +2,19 @@ import { defineConfig, devices } from "@playwright/test";
 
 let BASE_URL = "http://docs:5173";
 
+const theme = process.env.THEME || "icore-open";
+
 export default defineConfig({
   testDir: "./tests",
-  snapshotDir: "./snapshots",
+  snapshotDir: `./snapshots/${theme}`,
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 4 : undefined,
-  reporter: [["github"], ["html", { open: "never", outputFolder: "report" }]],
+  reporter: [
+    ["github"],
+    ["html", { open: "never", outputFolder: `report/${theme}` }],
+  ],
   use: {
     baseURL: BASE_URL,
     trace: "on-first-retry",

@@ -22,7 +22,11 @@ commands are defined in the root `package.json` file.
 - **Run the tests:**
 
   ```bash
+  # Run tests for all themes
   pnpm run visreg:test
+
+  # Run tests for a specific theme (e.g., 'kat')
+  pnpm run visreg:test kat
   ```
 
   This command starts the Docker containers and runs the Playwright tests.
@@ -30,7 +34,11 @@ commands are defined in the root `package.json` file.
 - **Approve changes:**
 
   ```bash
+  # Approve snapshots for all themes
   pnpm run visreg:approve
+
+  # Approve snapshots for a specific theme (e.g., 'kat')
+  pnpm run visreg:approve kat
   ```
 
   If there are visual differences that are expected, you can run this command to
@@ -47,7 +55,11 @@ commands are defined in the root `package.json` file.
 - **View the report:**
 
   ```bash
+  # View report for the default theme ('icore-open')
   pnpm run visreg:report
+
+  # View report for a specific theme (e.g., 'kat')
+  pnpm run visreg:report kat
   ```
 
   This command opens the Playwright test report in your browser.

@@ -10,10 +10,10 @@
     "lint": "pnpm run --dir manon lint:css",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "visreg:test": "docker compose -f visreg/compose.yml run --rm visreg-test",
-    "visreg:approve": "docker compose -f visreg/compose.yml run --rm visreg-update",
+    "visreg:test": "visreg/scripts/visreg.sh test",
+    "visreg:approve": "visreg/scripts/visreg.sh approve",
     "visreg:clean": "docker compose -f visreg/compose.yml run --rm visreg-clean",
-    "visreg:report": "xdg-open visreg/report/index.html || open visreg/report/index.html"
+    "visreg:report": "visreg/scripts/visreg.sh report"
   },
   "pnpm": {
     "overrides": {
