@@ -21,6 +21,11 @@
   cursor: theme.$tile-cursor;
   max-width: 100%;
 
+  &.image-cover img,
+  img.image-cover {
+    order: -1;
+  }
+
   .tile-group {
     display: flex;
     width: 100%;

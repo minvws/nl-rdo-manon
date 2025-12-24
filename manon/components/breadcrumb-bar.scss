@@ -74,6 +74,8 @@
       &::after {
         margin-left: theme.$breadcrumb-bar-icon-margin-left;
         margin-right: theme.$breadcrumb-bar-icon-margin-right;
+        mask-repeat: no-repeat;
+        mask-position: center center;
       }
 
       &:last-child {
@@ -122,6 +124,11 @@
           mask-image: theme.$breadcrumb-bar-icon-mask;
           width: theme.$breadcrumb-bar-icon-width;
           height: theme.$breadcrumb-bar-icon-height;
+        }
+
+        &::before {
+          // Removing any generic nav icons
+          display: none;
         }
       }
     }

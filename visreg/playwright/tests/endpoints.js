@@ -3,7 +3,7 @@ const endpoints = [
   "/snippets/accordion/section.html",
   "/snippets/accordion/ul.html",
   "/snippets/breadcrumb-bar",
-  "/snippets/footer",
+  "/snippets/footer/icore-open",
   "/snippets/footer-link-visited",
   "/snippets/footer-navigation-link-unvisited",
   "/snippets/footer-navigation-link-visited",
@@ -12,7 +12,7 @@ const endpoints = [
   "/snippets/header-navigation-link-visited",
   "/snippets/header-navigation-with-content-wrapper",
   "/snippets/header-navigation-with-form-button",
-  "/snippets/header-navigation-with-logo",
+  "/snippets/header-navigation-with-logo/icore-open",
   "/snippets/header-navigation-with-multiple-menus",
   "/snippets/header-navigation-with-search",
   "/snippets/heading-link-external-unvisited",
@@ -51,8 +51,8 @@ const endpoints = [
   "/snippets/sidemenu/page-navigation/expandable/code-example.html",
   "/snippets/sidemenu/page-navigation/static",
   "/snippets/sidemenu/page-navigation/static/code-example.html",
-  "/snippets/skip-to-content",
-  "/snippets/skip-to-content-active",
+  "/snippets/skip-to-content/icore-open",
+  "/snippets/skip-to-content-active/icore-open",
 ];
 
 export default endpoints;

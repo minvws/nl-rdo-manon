@@ -23,7 +23,7 @@ SCSS importeren:
 
 ### Voorbeeld: div
 
-<section id="introduction">
+<section id="introduction" class="hero">
   <div class="content-wrapper">
     <h1 class="page-title heading-l">Lorem ipsum dolor sit</h1>
     <p>Consectetur adepicing elit</p>

@@ -79,6 +79,5 @@ table {
     &:nth-child(odd).even {
       background-color: theme.$notification-table-row-background-color-striping;
     }
-    filter: brightness(90%);
   }
 }

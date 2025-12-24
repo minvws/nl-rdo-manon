@@ -46,7 +46,26 @@
     </div>
   </section>
 
-    <section>
+  <section class="background-color-offset">
+    <div class="content-wrapper">
+
+      <h2>Section title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Pellentesque in tortor vel arcu scelerisque aliquet vel id tellus.
+        Sed aliquet mi sit amet suscipit sagittis. Integer facilisis tellus orci, 
+        eget pulvinar erat eleifend in.
+      </p>
+
+      <p>
+        Donec at vestibulum urna, id dapibus nibh. Nam tincidunt velit eu tincidunt cursus. 
+        Donec efficitur rutrum metus, a interdum dui lobortis at. 
+        Nam laoreet mauris vel ligula egestas porta.
+      </p>
+    </div>
+  </section>
+
+  <section>
       <div class="content-wrapper">
         <h2>Onze projecten</h2>
 
@@ -75,6 +94,92 @@
         </div> <!-- Column 3-->
         <a href="{baseUrl}">Meer projecten</a>
       </div> <!-- Content wrapper -->
+  </section>
+
+  <section class="background-color-offset">
+    <div class="content-wrapper">
+      <h2>Section title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Pellentesque in tortor vel arcu scelerisque aliquet vel id tellus.
+        Sed aliquet mi sit amet suscipit sagittis. Integer facilisis tellus orci, 
+        eget pulvinar erat eleifend in.
+      </p>
+
+      <p>
+        Donec at vestibulum urna, id dapibus nibh. Nam tincidunt velit eu tincidunt cursus. 
+        Donec efficitur rutrum metus, a interdum dui lobortis at. 
+        Nam laoreet mauris vel ligula egestas porta.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="content-wrapper">
+      <h2>Section title</h2>
+
+      <div class="column-3">
+        <div>
+          <h3>Subsection</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Pellentesque in tortor vel arcu scelerisque aliquet vel id tellus.
+            Sed aliquet mi sit amet suscipit sagittis. Integer facilisis tellus orci, 
+            eget pulvinar erat eleifend in.
+          </p>
+        </div>
+
+        <div>
+          <h3>Subsection</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Pellentesque in tortor vel arcu scelerisque aliquet vel id tellus.
+            Sed aliquet mi sit amet suscipit sagittis. Integer facilisis tellus orci, 
+            eget pulvinar erat eleifend in.
+          </p>
+        </div>
+
+        <div>
+          <h3>Subsection</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Pellentesque in tortor vel arcu scelerisque aliquet vel id tellus.
+            Sed aliquet mi sit amet suscipit sagittis. Integer facilisis tellus orci, 
+            eget pulvinar erat eleifend in.
+          </p>
+        </div>
+
+        <div>
+          <h3>Subsection</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Pellentesque in tortor vel arcu scelerisque aliquet vel id tellus.
+            Sed aliquet mi sit amet suscipit sagittis. Integer facilisis tellus orci, 
+            eget pulvinar erat eleifend in.
+          </p>
+        </div>
+
+        <div>
+          <h3>Subsection</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Pellentesque in tortor vel arcu scelerisque aliquet vel id tellus.
+            Sed aliquet mi sit amet suscipit sagittis. Integer facilisis tellus orci, 
+            eget pulvinar erat eleifend in.
+          </p>
+        </div>
+
+        <div>
+          <h3>Subsection</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Pellentesque in tortor vel arcu scelerisque aliquet vel id tellus.
+            Sed aliquet mi sit amet suscipit sagittis. Integer facilisis tellus orci, 
+            eget pulvinar erat eleifend in.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
 

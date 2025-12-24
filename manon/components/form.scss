@@ -25,6 +25,7 @@ form {
   div,
   div.form-group {
     display: flex;
+    width: 100%;
     gap: theme.$form-group-gap;
     flex-direction: theme.$form-group-flex-direction;
     align-items: theme.$form-group-align-items;
@@ -33,6 +34,10 @@ form {
     label {
       order: theme.$form-group-label-order;
     }
+  }
+
+  .form-group:has(.help-container) {
+    padding: 0;
   }
 
   div,

@@ -62,6 +62,10 @@ form {
     }
   }
 
+  .required > div.checkbox {
+    flex-direction: row;
+  }
+
   @media (width >= $breakpoint-1) {
     .option-group {
       .checkbox {

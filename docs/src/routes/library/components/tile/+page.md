@@ -113,8 +113,8 @@ Bijvoorbeeld: `<div class="tiles">`
 Voeg de class `image-cover` toe voor de correcte weergave.
 
 <div role="group" class="tile image-cover">
-  <img src="$img/strand.jpg" alt="Foto van een strand" />
   <h2 class="heading-small">Lorem ipsum</h2>
+  <img src="$img/strand.jpg" alt="Foto van een strand" />
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit
     amet convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.
@@ -123,8 +123,8 @@ Voeg de class `image-cover` toe voor de correcte weergave.
 
 ```html
 <div role="group" class="tile image-cover">
-  <img src="$img/strand.jpg" alt="Foto van een strand" />
   <h2 class="heading-small">Lorem ipsum</h2>
+  <img src="$img/strand.jpg" alt="Foto van een strand" />
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan non justo sit amet
     convallis. Phasellus auctor hendrerit fermentum. Ut et dui sapien.

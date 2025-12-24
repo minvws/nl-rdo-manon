@@ -9,5 +9,11 @@ form {
     padding-bottom: theme.$form-required-padding-bottom;
     padding-left: theme.$form-required-padding-left;
     gap: theme.$form-required-gap;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
   }
 }

@@ -48,6 +48,7 @@ and spacing sets */
   $accordion-content-padding: spacing.$spacing-100,
   $accordion-content-gap: spacing.$spacing-050,
   $accordion-content-font-size: body-text.$body-text-m,
+  $accordion-content-background-color: color-scheme.$oc-white,
   $accordion-button-border-radius: border-radii.$border-radius-s
     border-radii.$border-radius-s,
   $accordion-content-border-radius: 0 0 border-radii.$border-radius-s
@@ -281,16 +282,9 @@ and spacing sets */
   $form-table-width: 100%,
 
   // form fieldset
-  $form-fieldset-border-width: 0,
-  $form-fieldset-padding: 0,
-  $form-fieldset-margin: 0,
   $form-fieldset-legend-font-weight: bold,
   $form-fieldset-legend-margin-bottom: null,
   $form-fieldset-legend-margin: 0 0 1rem 0,
-  $form-fieldset-legend-padding: 0,
-  $form-fieldset-input-margin: 0.5rem 0 1rem 0,
-  $form-fieldset-fields-padding: 0,
-  $form-fieldset-fields-margin: 0,
 
   // form group
   $form-group-gap: spacing.$spacing-050,
@@ -363,20 +357,22 @@ and spacing sets */
   $footer-link-text-color: color-scheme.$oc-blue-8,
   $footer-link-current-text-decoration: underline,
 
-  // Form help
-  $form-help-button-padding: spacing.$spacing-025,
+  // form help button
+  $form-help-button-space: 2.5rem,
+  $form-help-button-background-color: transparent,
   $form-help-button-text-color: semantic.$color-brand-primary-default,
-  $form-help-button-top: spacing.$spacing-050,
-  $form-help-icon-mask: map.get(icons.$icon-map, "questionmark"),
   $form-help-button-border-width: 1px,
   $form-help-button-border-style: solid,
   $form-help-button-border-color: color-scheme.$oc-gray-4,
   $form-help-button-border-radius: 50%,
+  $form-help-button-padding: spacing.$spacing-025,
+  $form-help-button-top: spacing.$spacing-050,
+
+  // form help icon
+  $form-help-icon-mask: map.get(icons.$icon-map, "questionmark"),
   $form-help-icon-width: 1rem,
   $form-help-icon-height: 1rem,
   $form-help-icon-color: semantic.$color-brand-primary-default,
-  $form-help-button-background-color: transparent,
-  $form-help-button-margin: 1rem -2.5rem 0 0,
 
   // checkbox
   $checkbox-width: 1.25rem,
@@ -506,6 +502,7 @@ and spacing sets */
   $logo-padding: 0,
   $logo-img-height: 2rem,
   $logo-img-width: 2rem,
+  $logo-display: flex,
 
   // main
   $main-padding-top: spacing.$spacing-400,
@@ -594,6 +591,7 @@ and spacing sets */
 
   // pagination
   $pagination-list-gap: spacing.$spacing-025,
+  $pagination-list-justify-content: center,
 
   // pagination item
   $pagination-item-width: 2.5rem,
@@ -714,6 +712,7 @@ and spacing sets */
 
   // tab panel
   $tab-panel-gap: spacing.$spacing-100,
+  $tab-panel-padding: spacing.$spacing-100 0,
 
   // set to focus border-width
   $tabs-outline-offset: -2px,

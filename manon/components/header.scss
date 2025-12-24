@@ -58,10 +58,10 @@ body > header,
     border-radius: theme.$header-link-border-radius;
     padding: theme.$header-link-padding;
     font-weight: theme.$header-link-font-weight;
-    min-height: theme.$header-link-min-height;
     display: theme.$header-link-display;
     justify-content: theme.$header-link-justify-content;
     align-items: theme.$header-link-align-items;
+    min-height: theme.$header-link-min-height;
 
     &:visited,
     &:visited:hover {
@@ -164,5 +164,27 @@ body > header,
 
   .actions {
     gap: theme.$header-actions-gap;
+  }
+
+  form.inline,
+  form {
+    align-items: theme.$header-form-align-items;
+    justify-content: theme.$header-form-justify-content;
+
+    button,
+    a.button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      align-self: theme.$header-form-button-align-self;
+      height: theme.$header-form-button-height;
+      background-color: theme.$header-form-button-background-color;
+      color: theme.$header-form-button-text-color;
+
+      &:hover {
+        background-color: theme.$header-form-button-hover-background-color;
+        color: theme.$header-form-button-hover-text-color;
+      }
+    }
   }
 }

@@ -20,21 +20,70 @@ SCSS importeren:
 @use "@minvws/manon/components/footer";
 ```
 
-<h2 id="examples" class="page-title">Voorbeelden:</h2>
+<h2 id="examples">Voorbeelden:</h2>
 
-<div class="resize">
-  <iframe src="/snippets/footer" title="Voorbeeld"></iframe>
+<div class="resize icore-open">
+  <iframe src="/snippets/footer/icore-open" title="Voorbeeld"></iframe>
 </div>
 
-```html
-<footer>
-  <nav aria-labelledby="footer-nav-1-heading">
-    <h3 id="footer-nav-1-heading">Lorem ipsum</h3>
-    <ul>
-      <li><a href="footer" aria-current="page">Dolor</a></li>
-      <li><a href="footer">Sit</a></li>
-      <li><a href="footer">Amet</a></li>
-    </ul>
-  </nav>
-</footer>
-```
+<div class="resize rijkshuisstijl-2008">
+  <iframe src="/snippets/footer/rijkshuisstijl-2008" title="Voorbeeld"></iframe>
+</div>
+
+<div class="resize kat">
+  <iframe src="/snippets/footer/kat" title="Voorbeeld"></iframe>
+</div>
+
+<div class="icore-open">
+  <pre>
+    <code>
+&lt;footer class="icore-open">
+  &lt;span class="slogan">Manon - iCore Open thema&lt;/span>
+  &lt;nav aria-label="main navigation">
+    &lt;ul>
+      &lt;li>&lt;a href="#" aria-current="page">Dolor&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Sit&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Amet&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/nav>
+&lt;/footer>
+    </code>
+  </pre>
+</div>
+
+<div class="rijkshuisstijl-2008">
+  <pre>
+    <code>
+&lt;footer>
+  &lt;span class="slogan">Manon - Rijksoverheid 2008 thema&lt;/span>
+  &lt;nav aria-labelledby="footer-nav-1-heading">
+    &lt;h3 id="footer-nav-1-heading">Lorem ipsum&lt;/h3>
+    &lt;ul>
+      &lt;li>&lt;a href="#" aria-current="page">Dolor&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Sit&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Amet&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/nav>
+&lt;/footer>
+    </code>
+  </pre>
+</div>
+
+<div class="kat">
+  <pre>
+    <code>
+&lt;footer>
+  &lt;div class="content-wrapper">
+    &lt;span class="slogan">Manon - KAT thema&lt;/span>
+    &lt;nav aria-label="Main navigation">
+      &lt;ul>
+        &lt;li>&lt;a href="#" aria-current="page">Dolor&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Sit&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Amet&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/nav>
+  &lt;/div>
+&lt;/footer>
+    </code>
+  </pre>
+</div>

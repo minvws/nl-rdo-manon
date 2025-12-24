@@ -22,7 +22,7 @@
         <li><a href={page.url.pathname}>Voorbeeld-link 3</a></li>
       </ul>
 
-      <form action="">
+      <form action="" class="inline">
         <div>
           <label for="voorbeeld-1-date-1-start" class="visually-hidden">Zoeken</label>
           <div class="combined-field">

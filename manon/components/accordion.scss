@@ -11,6 +11,7 @@
   text-decoration: none;
   display: theme.$accordion-button-display;
   padding: theme.$accordion-button-padding;
+  font-family: theme.$accordion-button-font-family;
   font-size: theme.$accordion-button-font-size;
   font-weight: theme.$accordion-button-font-weight;
   justify-content: theme.$accordion-button-justify-content;
@@ -126,6 +127,8 @@ section.accordion {
       @if theme.$accordion-button-icon-before-mask {
         &::before {
           mask-size: contain;
+          mask-repeat: no-repeat;
+          mask-position: center center;
           content: "";
           margin-right: theme.$accordion-button-icon-before-margin-right;
           margin-left: theme.$accordion-button-icon-before-margin-left;
@@ -141,6 +144,8 @@ section.accordion {
       @if theme.$accordion-button-icon-after-mask {
         &::after {
           mask-size: contain;
+          mask-repeat: no-repeat;
+          mask-position: center center;
           content: "";
           margin-right: theme.$accordion-button-icon-after-margin-right;
           margin-left: theme.$accordion-button-icon-after-margin-left;
@@ -169,6 +174,8 @@ section.accordion {
       @if theme.$accordion-button-icon-before-closed-mask {
         &::before {
           mask-size: contain;
+          mask-repeat: no-repeat;
+          mask-position: center center;
           content: "";
           margin-right: theme.$accordion-button-icon-before-closed-margin-right;
           margin-left: theme.$accordion-button-icon-before-closed-margin-left;
@@ -184,6 +191,8 @@ section.accordion {
       @if theme.$accordion-button-icon-after-closed-mask {
         &::after {
           mask-size: contain;
+          mask-repeat: no-repeat;
+          mask-position: center center;
           content: "";
           margin-right: theme.$accordion-button-icon-after-closed-margin-right;
           margin-left: theme.$accordion-button-icon-after-closed-margin-left;

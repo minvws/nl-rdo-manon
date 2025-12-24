@@ -1,0 +1,15 @@
+@use "../variables";
+
+@font-face {
+  font-family: ro-icons-extended;
+  font-weight: normal;
+  font-style: normal;
+  font-display: var(--text-icon-font-display, block);
+  src:
+    url("#{variables.$font-path}/ro-icons-extended/ro-icons-extended-3.6.woff2")
+      format("woff2"),
+    url("#{variables.$font-path}/ro-icons-extended/ro-icons-extended-3.6.woff")
+      format("woff"),
+    url("#{variables.$font-path}/ro-icons-extended/ro-icons-extended-3.6.ttf")
+      format("truetype");
+}

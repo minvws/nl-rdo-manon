@@ -24,7 +24,7 @@
 
 <main id="main-content" tabindex="-1">
   <section class="container-s">
-    <h1>Inloggen</h1>
+    <h1 class="page-title">Inloggen</h1>
     <div class="content-wrapper">
       <form class="help">
         <div class="help-container">
