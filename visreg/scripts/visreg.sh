@@ -131,14 +131,14 @@ run_test() {
   local overall_exit_code=0
   for theme_name in "${themes_to_process[@]}"; do
     print_box "Running visual regression tests for theme: $theme_name"
-    THEME=$theme_name docker-compose -f visreg/compose.yml run --rm visreg-test
+    THEME=$theme_name docker compose -f visreg/compose.yml run --rm visreg-test
     local current_exit_code=$?
     if [ $current_exit_code -ne 0 ]; then
       overall_exit_code=$current_exit_code
     fi
   done
 
-  docker-compose -f visreg/compose.yml down
+  docker compose -f visreg/compose.yml down
   return $overall_exit_code
 }
 
@@ -158,14 +158,14 @@ run_approve() {
   local overall_exit_code=0
   for theme_name in "${themes_to_process[@]}"; do
     print_box "Updating visual regression snapshots for theme: $theme_name"
-    THEME=$theme_name docker-compose -f visreg/compose.yml run --rm visreg-update
+    THEME=$theme_name docker compose -f visreg/compose.yml run --rm visreg-update
     local current_exit_code=$?
     if [ $current_exit_code -ne 0 ]; then
       overall_exit_code=$current_exit_code
     fi
   done
 
-  docker-compose -f visreg/compose.yml down
+  docker compose -f visreg/compose.yml down
   return $overall_exit_code
 }
 
