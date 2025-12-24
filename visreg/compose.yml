@@ -12,6 +12,12 @@ services:
       - /app/docs/node_modules
       - ../manon:/app/manon
       - ../themes:/app/themes
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5173"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
 
   visreg-test:
     build:
@@ -25,7 +31,8 @@ services:
       - ./snapshots:/app/snapshots
       - ./report:/app/report
     depends_on:
-      - docs
+      docs:
+        condition: service_healthy
 
   visreg-update:
     build:
@@ -39,7 +46,8 @@ services:
       - ./snapshots:/app/snapshots
       - ./report:/app/report
     depends_on:
-      - docs
+      docs:
+        condition: service_healthy
 
   visreg-clean:
     build:
@@ -51,4 +59,5 @@ services:
       - ./snapshots:/app/snapshots
       - ./report:/app/report
     depends_on:
-      - docs
+      docs:
+        condition: service_healthy
