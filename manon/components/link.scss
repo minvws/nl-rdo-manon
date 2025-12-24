@@ -5,6 +5,7 @@ a {
   align-items: theme.$link-align-items;
   color: theme.$link-text-color;
   text-decoration: theme.$link-text-decoration;
+  font-size: theme.$link-font-size;
 
   // Icon
   span.icon {
