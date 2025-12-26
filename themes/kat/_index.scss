@@ -32,6 +32,10 @@ and spacing sets */
 @use "@minvws/manon/variables" with (
   $theme-name: "kat",
 
+  // Paragraph
+  $p-font-size: body-text.$body-text,
+  $p-line-height: line-height.$line-height-l,
+
   // accordion
   $accordion-gap: spacing.$spacing-100,
   $accordion-button-padding: spacing.$spacing-075 spacing.$spacing-100,
@@ -359,6 +363,7 @@ and spacing sets */
 
   // link
   $link-text-color: color-scheme.$blue-600,
+  $link-font-size: body-text.$body-text,
 
   // list
   $list-padding: 0 0 0 spacing.$spacing-050,
