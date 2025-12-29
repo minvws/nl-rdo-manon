@@ -24,55 +24,30 @@
   background-color: theme.$notification-error-background-color;
   color: theme.$notification-error-text-color;
   border-color: theme.$notification-error-border-color;
-
-  .icon {
-    background-color: theme.$notification-error-icon-color;
-    color: theme.$notification-error-icon-color;
-  }
 }
 
 @mixin notification-explanation {
   background-color: theme.$notification-explanation-background-color;
   color: theme.$notification-explanation-text-color;
   border-color: theme.$notification-explanation-border-color;
-
-  .icon {
-    background-color: theme.$notification-explanation-icon-color;
-    color: theme.$notification-explanation-icon-color;
-  }
 }
 
 @mixin notification-warning {
   background-color: theme.$notification-warning-background-color;
   color: theme.$notification-warning-text-color;
   border-color: theme.$notification-warning-border-color;
-
-  .icon {
-    background-color: theme.$notification-warning-icon-color;
-    color: theme.$notification-warning-icon-color;
-  }
 }
 
 @mixin notification-confirmation {
   background-color: theme.$notification-confirmation-background-color;
   color: theme.$notification-confirmation-text-color;
   border-color: theme.$notification-confirmation-border-color;
-
-  .icon {
-    background-color: theme.$notification-confirmation-icon-color;
-    color: theme.$notification-confirmation-icon-color;
-  }
 }
 
 @mixin notification-system {
   background-color: theme.$notification-system-background-color;
   color: theme.$notification-system-text-color;
   border-color: theme.$notification-system-border-color;
-
-  .icon {
-    background-color: theme.$notification-system-icon-color;
-    color: theme.$notification-system-icon-color;
-  }
 }
 
 .notification {
