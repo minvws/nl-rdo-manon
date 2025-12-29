@@ -11,20 +11,6 @@ $base-background-color: color-scheme.$white;
 $base-darker: color-scheme.$grey-50;
 $base-offset: color-scheme.$grey-50;
 
-// @use "border";
-// $color-border-default: #{color-scheme.$oc-gray-4};
-// $color-border-subtle: #{color-scheme.$oc-gray-2};
-// $color-border-intense: #{color-scheme.$oc-gray-6};
-
-// @use "brand";
-/* Primary */
-// $color-brand-primary-default: color-scheme.$ruby-red-600;
-// $color-brand-primary-text-default: color-scheme.$white;
-// $color-brand-primary-muted: color-scheme.$ruby-red-200;
-// $color-brand-primary-text-muted: color-scheme.$black;
-// $color-brand-primary-subtle: color-scheme.$ruby-red-100;
-// $color-brand-primary-text-subtle: color-scheme.$black;
-
 // RO blue
 $color-brand-primary-default: color-scheme.$ro-blue;
 $color-brand-primary-text-default: color-scheme.$white;
@@ -33,22 +19,6 @@ $color-brand-primary-text-muted: color-scheme.$black;
 $color-brand-primary-subtle: color-scheme.$dark-blue-100;
 $color-brand-primary-text-subtle: color-scheme.$black;
 
-// Sky blue
-// $color-brand-primary-default: color-scheme.$sky-blue-550;
-// $color-brand-primary-text-default: color-scheme.$white;
-// $color-brand-primary-muted: color-scheme.$sky-blue-200;
-// $color-brand-primary-text-muted: color-scheme.$black;
-// $color-brand-primary-subtle: color-scheme.$sky-blue-100;
-// $color-brand-primary-text-subtle: color-scheme.$black;
-
-// Yellow
-// $color-brand-primary-default: color-scheme.$yellow-150;
-// $color-brand-primary-text-default: color-scheme.$black;
-// $color-brand-primary-muted: color-scheme.$yellow-100;
-// $color-brand-primary-text-muted: color-scheme.$black;
-// $color-brand-primary-subtle: color-scheme.$yellow-50;
-// $color-brand-primary-text-subtle: color-scheme.$black;
-
 /* Secundary */
 $color-brand-secondary-default: color-scheme.$ro-blue;
 $color-brand-secondary-text-default: color-scheme.$white;
@@ -56,11 +26,6 @@ $color-brand-secondary-muted: color-scheme.$dark-blue-200;
 $color-brand-secondary-text-muted: color-scheme.$black;
 $color-brand-secondary-subtle: color-scheme.$dark-blue-100;
 $color-brand-secondary-text-subtle: color-scheme.$black;
-
-// @use "destructive";
-// $color-destructive-default: #{color-scheme.$oc-red-8};
-// $color-destructive-subtle: #{color-scheme.$oc-red-2};
-// $color-destructive-intense: #{color-scheme.$oc-red-9};
 
 // @use "text";
 $color-text-default: color-scheme.$black;
