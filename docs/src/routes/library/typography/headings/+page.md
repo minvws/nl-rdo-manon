@@ -51,12 +51,22 @@ Beschikbare opties:
 - heading-xl
 - heading-large
 - heading-normal
+- heading-small
 - heading-xs
+
+## Visueel voorbeeld: 
+<h3 class="heading-xxl">heading-xxl</h3>
+<h3 class="heading-xl">heading-xl</h3>
+<h3 class="heading-large">heading-large</h3>
+<h3 class="heading-normal">heading-normal</h3>
+<h3 class="heading-small">heading-small</h3>
+<h3 class="heading-xs">heading-xs</h3>
 
 ```scss
 @use "@minvws/manon/components/headings-base-set";
 ```
 
+## Voorbeeld h2
 <div class="visual-example">
   <h2>Dit is een h2</h2>
   <h2 class="heading-xs">Dit is ook een h2 maar visueel kleiner weergegeven.</h2>
