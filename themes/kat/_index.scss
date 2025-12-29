@@ -39,6 +39,16 @@ and spacing sets */
   $tab-panel-gap: spacing.$spacing-100,
   $tab-panel-padding: spacing.$spacing-150 0,
 
+  $form-help-icon-mask: map.get(icons.$icon-map, "informative", "url"),
+  $card-box-shadow: 0px shadow.$shadow-s shadow.$shadow-m 0px rgba(0, 0, 0, 0.2),
+  // checkbox
+  $checkbox-width: 1.25rem,
+  $checkbox-height: 1.25rem,
+  $checkbox-accent-color: color-scheme.$blue-600,
+  $checkbox-label-font-weight: normal,
+  $checkbox-label-focus-outline: 2px solid color-scheme.$blue-600,
+  $form-fieldset-checkbox-margin: 0 0 0.5rem,
+
   // accordion
   $accordion-gap: spacing.$spacing-100,
   $accordion-button-padding: spacing.$spacing-075 spacing.$spacing-100,
@@ -286,7 +296,7 @@ and spacing sets */
   $form-text-color: semantic.$color-text-default,
   $form-gap: spacing.$spacing-200,
   $form-max-width: 40rem,
-  $form-accent-color: semantic.$color-brand-primary,
+  $form-accent-color: color-scheme.$blue-600,
 
   // form group
   $form-group-gap: spacing.$spacing-050,
@@ -464,6 +474,14 @@ and spacing sets */
   $notification-system-text-color: semantic.$color-text-default,
   $notification-system-border-color: color-scheme.$black-05,
 
+  //radio
+  $radio-width: 1.4rem,
+  $radio-height: 1.4rem,
+  $radio-accent-color: color-scheme.$blue-800,
+  $radio-label-font-weight: normal,
+  $radio-label-focus-outline: 2px solid color-scheme.$blue-800,
+  $form-fieldset-radio-margin: 0 0 0.5rem,
+
   // section
   $section-gap: spacing.$spacing-100,
   $section-max-width: 100%,
@@ -598,9 +616,10 @@ and spacing sets */
   $form-fieldset-fields-padding: 0,
   $form-fieldset-fields-margin: 0,
 
-  // nota bene
+  // Nota bene
   $nota-bene-font-size: body-text.$body-text-s,
-  $nota-bene-text-color: color-scheme.$grey-700
+  $nota-bene-text-color: color-scheme.$grey-700,
+  $form-fieldset-nota-bene-padding-bottom: 0.5rem
 );
 
 // Include the mixin to generate all .icon-name classes for the theme
