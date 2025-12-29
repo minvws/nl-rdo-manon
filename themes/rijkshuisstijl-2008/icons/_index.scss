@@ -89,7 +89,7 @@ $icon-map: (
   ),
   warning: (
     url: url("#{$ro-icons-path}/warning.svg"),
-    type: background,
+    type: "background",
   ),
   x: (
     url: url("#{$ro-icons-path}/x.svg"),

@@ -48,12 +48,12 @@ $color-notification-confirmation-intense: #{color-scheme.$green-500};
 // warning
 $color-notification-warning-default: #{color-scheme.$ochre-50};
 $color-notification-warning-subtle: #{color-scheme.$ochre-50};
-$color-notification-warning-intense: #{color-scheme.$ochre-200};
+$color-notification-warning-intense: #{color-scheme.$ochre-500};
 
 // error
 $color-notification-error-default: #{color-scheme.$red-100};
 $color-notification-error-subtle: #{color-scheme.$red-100};
-$color-notification-error-intense: #{color-scheme.$red-500};
+$color-notification-error-intense: #{color-scheme.$red-600};
 
 // system
 $color-notification-system-default: #{color-scheme.$grey-50};

@@ -113,8 +113,8 @@
             <span class="icon icon-warning" aria-hidden="true"></span>
             Waarschuwing
           </span>
-          Het voorbeeld met een pseudo-element direct op button wordt uitgefaseerd omdat het niet de voorkeur
-          heeft omwille van toegankelijkheid. Gebruik in plaats hiervan een van de overige voorbeelden.
+          Het voorbeeld met een pseudo-element direct op button wordt uitgefaseerd omdat het niet de
+          voorkeur heeft omwille van toegankelijkheid. Gebruik in plaats hiervan een van de overige voorbeelden.
         </p>
         <button>
           <span class="icon icon-on-off" aria-label="Aan- of uitschakelen"></span>
@@ -404,12 +404,12 @@
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
   #default-iconset li {
+    align-items: center;
     padding: 1rem;
     list-style-type: none;
     background: #fff;
     hyphens: none;
-    display: grid;
-    grid-template-columns: 1rem auto;
+    display: flex;
     gap: 0.5rem;
   }
 </style>

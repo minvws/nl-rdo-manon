@@ -443,18 +443,21 @@ and spacing sets */
 
   // notification type
   $notification-type-font-weight: bold,
+  $notification-type-gap: spacing.$spacing-025,
 
   // notification error
   $notification-error-background-color:
     semantic.$color-notification-error-subtle,
   $notification-error-text-color: semantic.$color-text-default,
   $notification-error-border-color: color-scheme.$black-05,
+  $notification-error-icon-color: semantic.$color-notification-error-intense,
 
   // notification warning
   $notification-warning-background-color:
     semantic.$color-notification-warning-subtle,
   $notification-warning-text-color: semantic.$color-text-default,
   $notification-warning-border-color: color-scheme.$black-05,
+  $notification-warning-icon-color: semantic.$color-notification-warning-intense,
 
   // notification explanation
   $notification-explanation-background-color:
