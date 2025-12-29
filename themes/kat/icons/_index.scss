@@ -65,7 +65,7 @@ $tabler-icon-map: (
   check: (
     url: url("#{$tabler-icons-path}/check.svg"),
   ),
-  check-circle: (
+  confirmation: (
     url: url("#{$tabler-icons-path}/check-circle.svg"),
   ),
   chevron-down: (
@@ -109,9 +109,6 @@ $tabler-icon-map: (
   ),
   close: (
     url: url("#{$tabler-icons-path}/close.svg"),
-  ),
-  confirmation: (
-    url: url("#{$tabler-icons-path}/confirmation.svg"),
   ),
   descending: (
     url: url("#{$tabler-icons-path}/descending.svg"),

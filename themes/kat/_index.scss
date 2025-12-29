@@ -41,6 +41,7 @@ and spacing sets */
 
   $form-help-icon-mask: map.get(icons.$icon-map, "informative", "url"),
   $card-box-shadow: 0px shadow.$shadow-s shadow.$shadow-m 0px rgba(0, 0, 0, 0.2),
+  $message-counter-base-background-color: color-scheme.$violet-800,
   // checkbox
   $checkbox-width: 1.25rem,
   $checkbox-height: 1.25rem,
@@ -393,7 +394,7 @@ and spacing sets */
   $link-font-size: body-text.$body-text,
 
   // list
-  $list-padding: 0 0 0 spacing.$spacing-050,
+  $list-padding: 0 0 0 spacing.$spacing-150,
   $list-gap: spacing.$spacing-050,
   $list-item-padding: spacing.$spacing-025,
 
@@ -434,6 +435,9 @@ and spacing sets */
   $notification-gap: spacing.$spacing-100,
   $notification-border-radius: border-radii.$border-radius-m,
 
+  $notification-table-align-items: center,
+  $notification-table-gap: spacing.$spacing-050,
+
   // notification block element
   $notification-block-element-padding-top: spacing.$spacing-100,
   $notification-block-element-padding-right: spacing.$spacing-100,
@@ -464,18 +468,72 @@ and spacing sets */
     semantic.$color-notification-explanation-subtle,
   $notification-explanation-text-color: semantic.$color-text-default,
   $notification-explanation-border-color: color-scheme.$black-05,
+  $notification-explanation-icon-color:
+    semantic.$color-notification-explanation-intense,
 
   // notification confirmation
   $notification-confirmation-background-color:
     semantic.$color-notification-confirmation-subtle,
   $notification-confirmation-text-color: semantic.$color-text-default,
   $notification-confirmation-border-color: color-scheme.$black-05,
+  $notification-confirmation-icon-color:
+    semantic.$color-notification-confirmation-intense,
 
   // notification system
   $notification-system-background-color:
     semantic.$color-notification-system-subtle,
   $notification-system-text-color: semantic.$color-text-default,
   $notification-system-border-color: color-scheme.$black-05,
+
+  // pagination
+  $pagination-list-gap: spacing.$spacing-025,
+  $pagination-list-justify-content: center,
+
+  // pagination item
+  $pagination-item-width: 3rem,
+  $pagination-item-height: 3rem,
+
+  // pagination link
+  $pagination-link-background-color: color-scheme.$white,
+  $pagination-link-border-radius: border-radii.$border-radius-l,
+  $pagination-link-text-decoration: none,
+  $pagination-link-border-color: color-scheme.$white,
+  $pagination-link-border-width: 1px,
+  $pagination-link-border-style: solid,
+  $pagination-link-text-color: color-scheme.$blue-600,
+  $pagination-link-font-weight: bold,
+
+  // pagination link hover
+  $pagination-link-hover-text-color: color-scheme.$white,
+  $pagination-link-hover-background-color: color-scheme.$blue-600,
+  $pagination-link-hover-border-color: color-scheme.$blue-600,
+
+  // pagination link active
+  $pagination-link-active-background-color: color-scheme.$blue-600,
+  $pagination-link-active-border-width: 1px,
+  $pagination-link-active-border-style: solid,
+  $pagination-link-active-border-color: color-scheme.$blue-600,
+  $pagination-link-active-text-color: color-scheme.$white,
+  $pagination-link-active-font-weight: bold,
+
+  // Pagination adjecent
+  $pagination-adjacent-font-size: 0,
+
+  // Pagination previous icon
+  $pagination-previous-icon-color: color-scheme.$blue-600,
+  $pagination-previous-icon-mask: map.get(
+      icons.$icon-map,
+      "chevron-left",
+      "url"
+    ),
+  $pagination-previous-icon-width: 1.5rem,
+  $pagination-previous-icon-height: 1.5rem,
+
+  // Pagination next icon
+  $pagination-next-icon-color: color-scheme.$blue-600,
+  $pagination-next-icon-mask: map.get(icons.$icon-map, "chevron-right", "url"),
+  $pagination-next-icon-width: 1.5rem,
+  $pagination-next-icon-height: 1.5rem,
 
   //radio
   $radio-width: 1.4rem,
