@@ -9,6 +9,9 @@ $icon-map: (
   check: (
     url: url("#{$tabler-icons-path}/check.svg"),
   ),
+  confirmation: (
+    url: url("#{$tabler-icons-path}/check.svg"),
+  ),
   chevron-down: (
     url: url("#{$tabler-icons-path}/chevron-down.svg"),
   ),
@@ -60,11 +63,11 @@ $icon-map: (
   informative: (
     url: url("#{$tabler-icons-path}/informative.svg"),
   ),
-  "lock-closed": (
+  lock-closed: (
     url: url("#{$tabler-icons-path}/lock.svg"),
   ),
-  "on-off": (
-    url: url("#{$tabler-icons-path}/power.svg"),
+  on-off: (
+    url: url("#{$tabler-icons-path}/on-off.svg"),
   ),
   outgoing: (
     url: url("#{$tabler-icons-path}/arrow-up-right.svg"),
@@ -84,8 +87,8 @@ $icon-map: (
   sort: (
     url: url("#{$tabler-icons-path}/caret-up-down-filled.svg"),
   ),
-  "to-top": (
-    url: url("#{$tabler-icons-path}/arrow-bar-to-up.svg"),
+  to-top: (
+    url: url("#{$tabler-icons-path}/to-top.svg"),
   ),
   trash: (
     url: url("#{$tabler-icons-path}/trash.svg"),

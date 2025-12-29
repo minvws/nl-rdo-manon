@@ -72,7 +72,7 @@ SCSS importeren:
         <td class="confirmation">
           <div>
             <span class="notification-type">
-              <span class="icon icon-check" aria-hidden="true"></span>
+              <span class="icon icon-confirmation" aria-hidden="true"></span>
               Bevestiging:
             </span>
             Voldoende op voorraad
@@ -149,7 +149,7 @@ SCSS importeren:
         <td class="confirmation">
           <div>
             <span class="notification-type">
-              <span class="icon icon-check" aria-hidden="true"></span>
+              <span class="icon icon-confirmation" aria-hidden="true"></span>
               Bevestiging:
             </span>
             Voldoende op voorraad
