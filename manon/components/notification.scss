@@ -25,16 +25,6 @@
   color: theme.$notification-error-text-color;
   border-color: theme.$notification-error-border-color;
 
-  &::before {
-    font-family: theme.$notification-error-icon-font-family;
-    font-size: theme.$notification-error-icon-font-size;
-    padding-right: theme.$notification-error-icon-padding-right;
-    padding-left: theme.$notification-error-icon-padding-left;
-    color: theme.$notification-error-icon-text-color;
-    margin-right: theme.$notification-error-icon-margin-right;
-    content: theme.$notification-error-icon;
-  }
-
   .icon {
     background-color: theme.$notification-error-icon-color;
     color: theme.$notification-error-icon-color;
@@ -45,16 +35,6 @@
   background-color: theme.$notification-explanation-background-color;
   color: theme.$notification-explanation-text-color;
   border-color: theme.$notification-explanation-border-color;
-
-  &::before {
-    font-family: theme.$notification-explanation-icon-font-family;
-    font-size: theme.$notification-explanation-icon-font-size;
-    padding-right: theme.$notification-explanation-icon-padding-right;
-    padding-left: theme.$notification-explanation-icon-padding-left;
-    color: theme.$notification-explanation-icon-text-color;
-    margin-right: theme.$notification-explanation-icon-margin-right;
-    content: theme.$notification-explanation-icon;
-  }
 
   .icon {
     background-color: theme.$notification-explanation-icon-color;
@@ -67,16 +47,6 @@
   color: theme.$notification-warning-text-color;
   border-color: theme.$notification-warning-border-color;
 
-  &::before {
-    font-family: theme.$notification-warning-icon-font-family;
-    font-size: theme.$notification-warning-icon-font-size;
-    padding-right: theme.$notification-warning-icon-padding-right;
-    padding-left: theme.$notification-warning-icon-padding-left;
-    color: theme.$notification-warning-icon-text-color;
-    margin-right: theme.$notification-warning-icon-margin-right;
-    content: theme.$notification-warning-icon;
-  }
-
   .icon {
     background-color: theme.$notification-warning-icon-color;
     color: theme.$notification-warning-icon-color;
@@ -88,17 +58,6 @@
   color: theme.$notification-confirmation-text-color;
   border-color: theme.$notification-confirmation-border-color;
 
-  &::before {
-    font-family: theme.$notification-confirmation-icon-font-family;
-    font-size: theme.$notification-confirmation-icon-font-size;
-    padding-right: theme.$notification-confirmation-icon-padding-right;
-    padding-left: theme.$notification-confirmation-icon-padding-left;
-    color: theme.$notification-confirmation-icon-color;
-    background-color: theme.$notification-confirmation-icon-color;
-    margin-right: theme.$notification-confirmation-icon-margin-right;
-    content: theme.$notification-confirmation-icon;
-  }
-
   .icon {
     background-color: theme.$notification-confirmation-icon-color;
     color: theme.$notification-confirmation-icon-color;
@@ -109,16 +68,6 @@
   background-color: theme.$notification-system-background-color;
   color: theme.$notification-system-text-color;
   border-color: theme.$notification-system-border-color;
-
-  &::before {
-    font-family: theme.$notification-system-icon-font-family;
-    font-size: theme.$notification-system-icon-font-size;
-    padding-right: theme.$notification-system-icon-padding-right;
-    padding-left: theme.$notification-system-icon-padding-left;
-    color: theme.$notification-system-icon-text-color;
-    margin-right: theme.$notification-system-icon-margin-right;
-    content: theme.$notification-system-icon;
-  }
 
   .icon {
     background-color: theme.$notification-system-icon-color;
@@ -231,26 +180,5 @@ section {
 
   &.system {
     @include notification-system;
-  }
-}
-
-/* Icon */
-p,
-span,
-section,
-div {
-  &.error,
-  &.warning,
-  &.explanation,
-  &.confirmation,
-  &.system {
-    &::before {
-      font-family: theme.$notification-icon-font-family;
-      font-size: theme.$notification-icon-font-size;
-      padding-right: theme.$notification-icon-padding-right;
-      padding-left: theme.$notification-icon-padding-left;
-      color: theme.$notification-icon-text-color;
-      margin-right: theme.$notification-icon-margin-right;
-    }
   }
 }

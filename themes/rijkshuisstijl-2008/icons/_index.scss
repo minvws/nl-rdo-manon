@@ -3,29 +3,95 @@
 $ro-icons-path: "#{config.$icons-path}/ro";
 
 $icon-map: (
-  arrow-bar-to-up: url("#{$ro-icons-path}/arrow-bar-to-up.svg"),
-  caret-down-filled: url("#{$ro-icons-path}/caret-down-filled.svg"),
-  caret-up-down-filled: url("#{$ro-icons-path}/caret-up-down-filled.svg"),
-  caret-up-filled: url("#{$ro-icons-path}/caret-up-filled.svg"),
-  check: url("#{$ro-icons-path}/check.svg"),
-  chevron-compact-down: url("#{$ro-icons-path}/chevron-compact-down.svg"),
-  chevron-compact-left: url("#{$ro-icons-path}/chevron-compact-left.svg"),
-  chevron-compact-right: url("#{$ro-icons-path}/chevron-compact-right.svg"),
-  chevron-compact-up: url("#{$ro-icons-path}/chevron-compact-up.svg"),
-  chevron-down: url("#{$ro-icons-path}/chevron-down.svg"),
-  chevron-left: url("#{$ro-icons-path}/chevron-left.svg"),
-  chevron-right: url("#{$ro-icons-path}/chevron-right.svg"),
-  chevron-up: url("#{$ro-icons-path}/chevron-up.svg"),
-  device-mobile: url("#{$ro-icons-path}/device-mobile.svg"),
-  download: url("#{$ro-icons-path}/download.svg"),
-  home: url("#{$ro-icons-path}/home.svg"),
-  lock: url("#{$ro-icons-path}/lock.svg"),
-  menu-2: url("#{$ro-icons-path}/menu-2.svg"),
-  power: url("#{$ro-icons-path}/power.svg"),
-  question-mark: url("#{$ro-icons-path}/question-mark.svg"),
-  refresh: url("#{$ro-icons-path}/refresh.svg"),
-  search: url("#{$ro-icons-path}/search.svg"),
-  trash: url("#{$ro-icons-path}/trash.svg"),
-  user: url("#{$ro-icons-path}/user.svg"),
-  x: url("#{$ro-icons-path}/x.svg"),
+  arrow-bar-to-up: (
+    url: url("#{$ro-icons-path}/arrow-bar-to-up.svg"),
+  ),
+  caret-down-filled: (
+    url: url("#{$ro-icons-path}/caret-down-filled.svg"),
+  ),
+  caret-up-down-filled: (
+    url: url("#{$ro-icons-path}/caret-up-down-filled.svg"),
+  ),
+  caret-up-filled: (
+    url: url("#{$ro-icons-path}/caret-up-filled.svg"),
+  ),
+  check: (
+    url: url("#{$ro-icons-path}/check.svg"),
+  ),
+  chevron-compact-down: (
+    url: url("#{$ro-icons-path}/chevron-compact-down.svg"),
+  ),
+  chevron-compact-left: (
+    url: url("#{$ro-icons-path}/chevron-compact-left.svg"),
+  ),
+  chevron-compact-right: (
+    url: url("#{$ro-icons-path}/chevron-compact-right.svg"),
+  ),
+  chevron-compact-up: (
+    url: url("#{$ro-icons-path}/chevron-compact-up.svg"),
+  ),
+  chevron-down: (
+    url: url("#{$ro-icons-path}/chevron-down.svg"),
+  ),
+  chevron-left: (
+    url: url("#{$ro-icons-path}/chevron-left.svg"),
+  ),
+  chevron-right: (
+    url: url("#{$ro-icons-path}/chevron-right.svg"),
+  ),
+  chevron-up: (
+    url: url("#{$ro-icons-path}/chevron-up.svg"),
+  ),
+  confirmation: (
+    url: url("#{$ro-icons-path}/confirmation.svg"),
+    type: background,
+  ),
+  device-mobile: (
+    url: url("#{$ro-icons-path}/device-mobile.svg"),
+  ),
+  download: (
+    url: url("#{$ro-icons-path}/download.svg"),
+  ),
+  error: (
+    url: url("#{$ro-icons-path}/error.svg"),
+    type: background,
+  ),
+  home: (
+    url: url("#{$ro-icons-path}/home.svg"),
+  ),
+  informative: (
+    url: url("#{$ro-icons-path}/informative.svg"),
+    type: background,
+  ),
+  lock: (
+    url: url("#{$ro-icons-path}/lock.svg"),
+  ),
+  menu-2: (
+    url: url("#{$ro-icons-path}/menu-2.svg"),
+  ),
+  power: (
+    url: url("#{$ro-icons-path}/power.svg"),
+  ),
+  question-mark: (
+    url: url("#{$ro-icons-path}/question-mark.svg"),
+  ),
+  refresh: (
+    url: url("#{$ro-icons-path}/refresh.svg"),
+  ),
+  search: (
+    url: url("#{$ro-icons-path}/search.svg"),
+  ),
+  trash: (
+    url: url("#{$ro-icons-path}/trash.svg"),
+  ),
+  user: (
+    url: url("#{$ro-icons-path}/user.svg"),
+  ),
+  warning: (
+    url: url("#{$ro-icons-path}/warning.svg"),
+    type: background,
+  ),
+  x: (
+    url: url("#{$ro-icons-path}/x.svg"),
+  ),
 );
