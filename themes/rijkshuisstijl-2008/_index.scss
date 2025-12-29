@@ -138,7 +138,7 @@
   $button-secondary-hover-background-color:
     semantic.$color-brand-primary-default,
   $button-secondary-hover-border-color: semantic.$color-brand-primary-default,
-  $button-secondary-hover-text-color: color-scheme.$white,
+  $button-secondary-hover-text-color: semantic.$color-brand-primary-text-default,
 
   // Button cta
   $button-cta-background-color: color-scheme.$green-600,
@@ -435,6 +435,7 @@
   $heading-xs-margin: spacing.$spacing-050 0,
   $heading-xs-font-size: heading.$heading-xs,
   $heading-xs-font-weight: bold,
+  $heading-xs-text-color: inherit,
 
   // heading small
   $heading-small-margin: spacing.$spacing-050 0,
@@ -446,17 +447,21 @@
   $heading-normal-margin: spacing.$spacing-100 0,
   $heading-normal-font-size: heading.$heading-m,
   $heading-normal-font-weight: bold,
+  $heading-normal-text-color: inherit,
 
   // heading large
   $heading-large-margin: spacing.$spacing-100 0,
   $heading-large-font-size: heading.$heading-l,
   $heading-large-font-weight: bold,
+  $heading-large-text-color: inherit,
 
   // heading xl
   $heading-xl-font-size: heading.$heading-xl,
+  $heading-xl-text-color: inherit,
 
   // heading xxl
   $heading-xxl-font-size: heading.$heading-xxl,
+  $heading-xxl-text-color: inherit,
 
   // hero
   $hero-height: 25rem,
@@ -727,14 +732,14 @@
   $sidemenu-button-margin-left: 18rem,
 
   // sidemenu expanded
-  $sidemenu-expanded-icon-mask: map.get(icons.$icon-map, "close"),
+  $sidemenu-expanded-icon-mask: map.get(icons.$icon-map, "x"),
   $sidemenu-expanded-icon-color: semantic.$color-brand-primary-text-default,
   $sidemenu-expanded-icon-width: 1rem,
   $sidemenu-expanded-icon-height: 1rem,
 
   // sidemenu collapsed
   $sidemenu-collapsed-button-margin-left: 0,
-  $sidemenu-collapsed-icon-mask: map.get(icons.$icon-map, "hamburger"),
+  $sidemenu-collapsed-icon-mask: map.get(icons.$icon-map, "menu-2"),
   // sidemenu main
   $sidemenu-page-padding-top: spacing.$spacing-400,
   $sidemenu-page-padding-bottom: spacing.$spacing-400,

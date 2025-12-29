@@ -24,7 +24,9 @@ SCSS importeren:
 
 ### Voorbeeld: link
 
-<a href="#" class="avatar">AB</a>
+<div class="avatar-example">
+  <a href="#" class="avatar">AB</a>
+</div>
 
 ```html
 <a href="#" class="avatar">AB</a>

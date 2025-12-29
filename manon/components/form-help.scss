@@ -55,6 +55,8 @@ form.help {
           mask-image: theme.$form-help-icon-mask;
           width: theme.$form-help-icon-width;
           height: theme.$form-help-icon-height;
+          mask-repeat: no-repeat;
+          mask-position: center;
         }
       }
 

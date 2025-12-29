@@ -28,7 +28,7 @@
     <div class="content-wrapper">
       <div>
         <h2>Onderwerp</h2>
-        <p>Dit is een voorbeeld van nog een content-blok.</p>
+        <p>Dit is een voorbeeld van een content-blok.</p>
       </div>
     </div>
   </section>
