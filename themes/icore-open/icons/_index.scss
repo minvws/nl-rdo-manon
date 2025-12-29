@@ -3,35 +3,97 @@
 $tabler-icons-path: "#{config.$icons-path}/tabler";
 
 $icon-map: (
-  ascending: url("#{$tabler-icons-path}/caret-up-filled.svg"),
-  check: url("#{$tabler-icons-path}/check.svg"),
-  chevron-down: url("#{$tabler-icons-path}/chevron-down.svg"),
-  chevron-left: url("#{$tabler-icons-path}/chevron-left.svg"),
-  chevron-light-down: url("#{$tabler-icons-path}/chevron-compact-down.svg"),
-  chevron-light-left: url("#{$tabler-icons-path}/chevron-compact-left.svg"),
-  chevron-light-right: url("#{$tabler-icons-path}/chevron-compact-right.svg"),
-  chevron-light-up: url("#{$tabler-icons-path}/chevron-compact-up.svg"),
-  chevron-right: url("#{$tabler-icons-path}/chevron-right.svg"),
-  chevron-up: url("#{$tabler-icons-path}/chevron-up.svg"),
-  close: url("#{$tabler-icons-path}/x.svg"),
-  descending: url("#{$tabler-icons-path}/caret-down-filled.svg"),
-  download: url("#{$tabler-icons-path}/download.svg"),
-  error: url("#{$tabler-icons-path}/error.svg"),
-  filter: url("#{$tabler-icons-path}/filter.svg"),
-  hamburger: url("#{$tabler-icons-path}/menu-2.svg"),
-  heart: url("#{$tabler-icons-path}/heart.svg"),
-  home: url("#{$tabler-icons-path}/home.svg"),
-  informative: url("#{$tabler-icons-path}/informative.svg"),
-  lock-closed: url("#{$tabler-icons-path}/lock.svg"),
-  on-off: url("#{$tabler-icons-path}/power.svg"),
-  outgoing: url("#{$tabler-icons-path}/arrow-up-right.svg"),
-  questionmark: url("#{$tabler-icons-path}/question-mark.svg"),
-  reset: url("#{$tabler-icons-path}/refresh.svg"),
-  search: url("#{$tabler-icons-path}/search.svg"),
-  smartphone: url("#{$tabler-icons-path}/device-mobile.svg"),
-  sort: url("#{$tabler-icons-path}/caret-up-down-filled.svg"),
-  to-top: url("#{$tabler-icons-path}/arrow-bar-to-up.svg"),
-  trash: url("#{$tabler-icons-path}/trash.svg"),
-  user: url("#{$tabler-icons-path}/user.svg"),
-  warning: url("#{$tabler-icons-path}/warning.svg"),
+  ascending: (
+    url: url("#{$tabler-icons-path}/caret-up-filled.svg"),
+  ),
+  check: (
+    url: url("#{$tabler-icons-path}/check.svg"),
+  ),
+  chevron-down: (
+    url: url("#{$tabler-icons-path}/chevron-down.svg"),
+  ),
+  chevron-left: (
+    url: url("#{$tabler-icons-path}/chevron-left.svg"),
+  ),
+  chevron-light-down: (
+    url: url("#{$tabler-icons-path}/chevron-compact-down.svg"),
+  ),
+  chevron-light-left: (
+    url: url("#{$tabler-icons-path}/chevron-compact-left.svg"),
+  ),
+  chevron-light-right: (
+    url: url("#{$tabler-icons-path}/chevron-compact-right.svg"),
+  ),
+  chevron-light-up: (
+    url: url("#{$tabler-icons-path}/chevron-compact-up.svg"),
+  ),
+  chevron-right: (
+    url: url("#{$tabler-icons-path}/chevron-right.svg"),
+  ),
+  chevron-up: (
+    url: url("#{$tabler-icons-path}/chevron-up.svg"),
+  ),
+  close: (
+    url: url("#{$tabler-icons-path}/x.svg"),
+  ),
+  descending: (
+    url: url("#{$tabler-icons-path}/caret-down-filled.svg"),
+  ),
+  download: (
+    url: url("#{$tabler-icons-path}/download.svg"),
+  ),
+  error: (
+    url: url("#{$tabler-icons-path}/error.svg"),
+  ),
+  filter: (
+    url: url("#{$tabler-icons-path}/filter.svg"),
+  ),
+  hamburger: (
+    url: url("#{$tabler-icons-path}/menu-2.svg"),
+  ),
+  heart: (
+    url: url("#{$tabler-icons-path}/heart.svg"),
+  ),
+  home: (
+    url: url("#{$tabler-icons-path}/home.svg"),
+  ),
+  informative: (
+    url: url("#{$tabler-icons-path}/informative.svg"),
+  ),
+  "lock-closed": (
+    url: url("#{$tabler-icons-path}/lock.svg"),
+  ),
+  "on-off": (
+    url: url("#{$tabler-icons-path}/power.svg"),
+  ),
+  outgoing: (
+    url: url("#{$tabler-icons-path}/arrow-up-right.svg"),
+  ),
+  questionmark: (
+    url: url("#{$tabler-icons-path}/question-mark.svg"),
+  ),
+  reset: (
+    url: url("#{$tabler-icons-path}/refresh.svg"),
+  ),
+  search: (
+    url: url("#{$tabler-icons-path}/search.svg"),
+  ),
+  smartphone: (
+    url: url("#{$tabler-icons-path}/device-mobile.svg"),
+  ),
+  sort: (
+    url: url("#{$tabler-icons-path}/caret-up-down-filled.svg"),
+  ),
+  "to-top": (
+    url: url("#{$tabler-icons-path}/arrow-bar-to-up.svg"),
+  ),
+  trash: (
+    url: url("#{$tabler-icons-path}/trash.svg"),
+  ),
+  user: (
+    url: url("#{$tabler-icons-path}/user.svg"),
+  ),
+  warning: (
+    url: url("#{$tabler-icons-path}/warning.svg"),
+  ),
 );

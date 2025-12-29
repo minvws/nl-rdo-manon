@@ -58,7 +58,11 @@ and spacing sets */
 
   // accordion icon open
   $accordion-button-icon-before-color: color-scheme.$blue-600,
-  $accordion-button-icon-before-mask: map.get(icons.$icon-map, "chevron-down"),
+  $accordion-button-icon-before-mask: map.get(
+      icons.$icon-map,
+      "chevron-down",
+      "url"
+    ),
   $accordion-button-icon-before-width: 1.5rem,
   $accordion-button-icon-before-height: 1.5rem,
 
@@ -66,7 +70,8 @@ and spacing sets */
   $accordion-button-icon-before-closed-color: color-scheme.$blue-600,
   $accordion-button-icon-before-closed-mask: map.get(
       icons.$icon-map,
-      "chevron-up"
+      "chevron-up",
+      "url"
     ),
   $accordion-button-icon-before-closed-width: 1.5rem,
   $accordion-button-icon-before-closed-height: 1.5rem,
@@ -154,7 +159,7 @@ and spacing sets */
 
   // breadcrumb bar
   $breadcrumb-bar-background-color: semantic.$color-brand-secondary-subtle,
-  $breadcrumb-bar-icon-mask: map.get(icons.$icon-map, "chevron-right"),
+  $breadcrumb-bar-icon-mask: map.get(icons.$icon-map, "chevron-right", "url"),
   $breadcrumb-bar-padding-top: spacing.$spacing-050,
   $breadcrumb-bar-padding-right: spacing.$spacing-100,
   $breadcrumb-bar-padding-bottom: spacing.$spacing-050,
@@ -554,12 +559,12 @@ and spacing sets */
 
   // filter
   $filter-icon-color: color-scheme.$blue-600,
-  $filter-icon-mask: map.get(icons.$icon-map, "filter"),
+  $filter-icon-mask: map.get(icons.$icon-map, "filter", "url"),
   $filter-icon-width: 1rem,
   $filter-icon-height: 1rem,
   $filter-intro-justify-content: space-between,
   $filter-button-font-size: 0,
-  $filter-close-icon-mask: map.get(icons.$icon-map, "close"),
+  $filter-close-icon-mask: map.get(icons.$icon-map, "close", "url"),
   $filter-button-background-color: transparent,
   $filter-button-padding: 0,
   $filter-button-gap: 0,

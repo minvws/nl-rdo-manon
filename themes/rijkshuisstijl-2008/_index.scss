@@ -40,7 +40,11 @@
   $accordion-button-expanded-border-color: color-scheme.$sky-blue-500,
 
   // Accordion button icon (expanded)
-  $accordion-button-icon-before-mask: map.get(icons.$icon-map, "chevron-down"),
+  $accordion-button-icon-before-mask: map.get(
+      icons.$icon-map,
+      "chevron-down",
+      "url"
+    ),
   $accordion-button-icon-before-width: 1rem,
   $accordion-button-icon-before-height: 1rem,
   $accordion-button-icon-before-color: color-scheme.$ro-blue,
@@ -49,7 +53,8 @@
   // Accordion button icon (closed)
   $accordion-button-icon-before-closed-mask: map.get(
       icons.$icon-map,
-      "chevron-up"
+      "chevron-up",
+      "url"
     ),
   $accordion-button-icon-before-closed-width: 1rem,
   $accordion-button-icon-before-closed-height: 1rem,
@@ -180,7 +185,11 @@
 
   // Breadcrumb bar icon
   $breadcrumb-bar-icon-color: semantic.$color-text-default,
-  $breadcrumb-bar-icon-mask: map.get(icons.$icon-map, "chevron-compact-right"),
+  $breadcrumb-bar-icon-mask: map.get(
+      icons.$icon-map,
+      "chevron-compact-right",
+      "url"
+    ),
   $breadcrumb-bar-icon-width: 1rem,
   $breadcrumb-bar-icon-height: 1rem,
 
@@ -317,7 +326,7 @@
   $form-help-button-right: 0rem,
 
   // Form help icon
-  $form-help-icon-mask: map.get(icons.$icon-map, "question-mark"),
+  $form-help-icon-mask: map.get(icons.$icon-map, "question-mark", "url"),
   $form-help-icon-width: 1rem,
   $form-help-icon-height: 1rem,
   $form-help-icon-color: semantic.$color-brand-primary-text-default,
@@ -361,12 +370,12 @@
 
   // filter
   $filter-icon-color: color-scheme.$ro-blue,
-  $filter-icon-mask: map.get(icons.$icon-map, "chevron-down"),
+  $filter-icon-mask: map.get(icons.$icon-map, "chevron-down", "url"),
   $filter-icon-width: 1.25rem,
   $filter-icon-height: 1.25rem,
   $filter-intro-justify-content: space-between,
   $filter-button-font-size: 0,
-  $filter-close-icon-mask: map.get(icons.$icon-map, "chevron-up"),
+  $filter-close-icon-mask: map.get(icons.$icon-map, "chevron-up", "url"),
   $filter-button-background-color: transparent,
   $filter-button-padding: 0,
   $filter-button-gap: 0,
@@ -502,7 +511,11 @@
   $navigation-list-padding: 0,
   $navigation-list-item-padding: spacing.$spacing-050 0,
   $navigation-link-text-decoration: none,
-  $navigation-list-item-icon-mask: map.get(icons.$icon-map, "chevron-right"),
+  $navigation-list-item-icon-mask: map.get(
+      icons.$icon-map,
+      "chevron-right",
+      "url"
+    ),
   $navigation-list-item-icon-width: 0.8rem,
   $navigation-list-item-icon-height: 0.8rem,
   $navigation-list-item-icon-color: color-scheme.$ro-blue,
@@ -521,6 +534,7 @@
 
   // Notification type
   $notification-type-font-weight: bold,
+  $notification-type-gap: spacing.$spacing-025,
 
   // Notification error
   $notification-error-background-color:
@@ -696,7 +710,7 @@
   $button-to-top-text-color: semantic.$color-brand-primary-text-default,
 
   // button to top icon
-  $button-to-top-icon-mask: map.get(icons.$icon-map, "arrow-bar-to-up"),
+  $button-to-top-icon-mask: map.get(icons.$icon-map, "arrow-bar-to-up", "url"),
   $button-to-top-icon-color: semantic.$color-brand-primary-text-default,
   $button-to-top-icon-width: 1rem,
   $button-to-top-icon-height: 1rem,
@@ -732,14 +746,14 @@
   $sidemenu-button-margin-left: 18rem,
 
   // sidemenu expanded
-  $sidemenu-expanded-icon-mask: map.get(icons.$icon-map, "x"),
+  $sidemenu-expanded-icon-mask: map.get(icons.$icon-map, "x", "url"),
   $sidemenu-expanded-icon-color: semantic.$color-brand-primary-text-default,
   $sidemenu-expanded-icon-width: 1rem,
   $sidemenu-expanded-icon-height: 1rem,
 
   // sidemenu collapsed
   $sidemenu-collapsed-button-margin-left: 0,
-  $sidemenu-collapsed-icon-mask: map.get(icons.$icon-map, "menu-2"),
+  $sidemenu-collapsed-icon-mask: map.get(icons.$icon-map, "menu-2", "url"),
   // sidemenu main
   $sidemenu-page-padding-top: spacing.$spacing-400,
   $sidemenu-page-padding-bottom: spacing.$spacing-400,

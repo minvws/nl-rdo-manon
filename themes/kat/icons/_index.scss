@@ -5,99 +5,276 @@ $tabler-icons-path: "#{config.$icons-path}/tabler";
 $kat-icons-path: "#{config.$icons-path}/kat";
 
 $kat-icon-map: (
-  paw: url("#{$kat-icons-path}/paw.svg"),
+  paw: (
+    url: url("#{$kat-icons-path}/paw.svg"),
+  ),
 );
 
 $tabler-icon-map: (
-  adjustments: url("#{$tabler-icons-path}/adjustments.svg"),
-  affiliate: url("#{$tabler-icons-path}/affiliate.svg"),
-  alert: url("#{$tabler-icons-path}/alert.svg"),
-  alert-circle: url("#{$tabler-icons-path}/alert-circle.svg"),
-  alert-triangle: url("#{$tabler-icons-path}/alert-triangle.svg"),
-  archive: url("#{$tabler-icons-path}/archive.svg"),
-  arrow-back-up: url("#{$tabler-icons-path}/arrow-back-up.svg"),
-  arrow-down: url("#{$tabler-icons-path}/arrow-down.svg"),
-  arrow-left: url("#{$tabler-icons-path}/arrow-left.svg"),
-  arrow-right: url("#{$tabler-icons-path}/arrow-right.svg"),
-  arrow-up: url("#{$tabler-icons-path}/arrow-up.svg"),
-  ascending: url("#{$tabler-icons-path}/ascending.svg"),
-  bell: url("#{$tabler-icons-path}/bell.svg"),
-  bell-off: url("#{$tabler-icons-path}/bell-off.svg"),
-  building: url("#{$tabler-icons-path}/building.svg"),
-  bulb: url("#{$tabler-icons-path}/bulb.svg"),
-  calendar: url("#{$tabler-icons-path}/calendar.svg"),
-  check: url("#{$tabler-icons-path}/check.svg"),
-  check-circle: url("#{$tabler-icons-path}/check-circle.svg"),
-  chevron-down: url("#{$tabler-icons-path}/chevron-down.svg"),
-  chevron-left: url("#{$tabler-icons-path}/chevron-left.svg"),
-  chevron-right: url("#{$tabler-icons-path}/chevron-right.svg"),
-  chevron-up: url("#{$tabler-icons-path}/chevron-up.svg"),
-  circle-check: url("#{$tabler-icons-path}/circle-check.svg"),
-  circle-cross: url("#{$tabler-icons-path}/circle-cross.svg"),
-  circle-dash: url("#{$tabler-icons-path}/circle-dash.svg"),
-  circle-x: url("#{$tabler-icons-path}/circle-x.svg"),
-  clock: url("#{$tabler-icons-path}/clock.svg"),
-  close: url("#{$tabler-icons-path}/close.svg"),
-  confirmation: url("#{$tabler-icons-path}/confirmation.svg"),
-  descending: url("#{$tabler-icons-path}/descending.svg"),
-  dots: url("#{$tabler-icons-path}/dots.svg"),
-  dots-circle-horizontal:
-    url("#{$tabler-icons-path}/dots-circle-horizontal.svg"),
-  dots-vertical: url("#{$tabler-icons-path}/dots-vertical.svg"),
-  download: url("#{$tabler-icons-path}/download.svg"),
-  edit: url("#{$tabler-icons-path}/edit.svg"),
-  external-link: url("#{$tabler-icons-path}/external-link.svg"),
-  eye: url("#{$tabler-icons-path}/eye.svg"),
-  eye-off: url("#{$tabler-icons-path}/eye-off.svg"),
-  eye-plus: url("#{$tabler-icons-path}/eye-plus.svg"),
-  file: url("#{$tabler-icons-path}/file.svg"),
-  file-alert: url("#{$tabler-icons-path}/file-alert.svg"),
-  file-upload: url("#{$tabler-icons-path}/file-upload.svg"),
-  filter: url("#{$tabler-icons-path}/filter.svg"),
-  folder: url("#{$tabler-icons-path}/folder.svg"),
-  grid: url("#{$tabler-icons-path}/grid.svg"),
-  hamburger: url("#{$tabler-icons-path}/hamburger.svg"),
-  heart: url("#{$tabler-icons-path}/heart.svg"),
-  history: url("#{$tabler-icons-path}/history.svg"),
-  home: url("#{$tabler-icons-path}/home.svg"),
-  info: url("#{$tabler-icons-path}/info.svg"),
-  key: url("#{$tabler-icons-path}/key.svg"),
-  language: url("#{$tabler-icons-path}/language.svg"),
-  layers: url("#{$tabler-icons-path}/layers.svg"),
-  link: url("#{$tabler-icons-path}/link.svg"),
-  list: url("#{$tabler-icons-path}/list.svg"),
-  lock: url("#{$tabler-icons-path}/lock.svg"),
-  log-out: url("#{$tabler-icons-path}/log-out.svg"),
-  menu: url("#{$tabler-icons-path}/menu.svg"),
-  microphone: url("#{$tabler-icons-path}/microphone.svg"),
-  minus: url("#{$tabler-icons-path}/minus.svg"),
-  minus-circle: url("#{$tabler-icons-path}/minus-circle.svg"),
-  more-horizontal: url("#{$tabler-icons-path}/more-horizontal.svg"),
-  more-vertical: url("#{$tabler-icons-path}/more-vertical.svg"),
-  notification: url("#{$tabler-icons-path}/notification.svg"),
-  paperclip: url("#{$tabler-icons-path}/paperclip.svg"),
-  pencil: url("#{$tabler-icons-path}/pencil.svg"),
-  person: url("#{$tabler-icons-path}/person.svg"),
-  phone: url("#{$tabler-icons-path}/phone.svg"),
-  plus: url("#{$tabler-icons-path}/plus.svg"),
-  plus-circle: url("#{$tabler-icons-path}/plus-circle.svg"),
-  printer: url("#{$tabler-icons-path}/printer.svg"),
-  refresh: url("#{$tabler-icons-path}/refresh.svg"),
-  repeat: url("#{$tabler-icons-path}/repeat.svg"),
-  search: url("#{$tabler-icons-path}/search.svg"),
-  settings: url("#{$tabler-icons-path}/settings.svg"),
-  share: url("#{$tabler-icons-path}/share.svg"),
-  star: url("#{$tabler-icons-path}/star.svg"),
-  stop: url("#{$tabler-icons-path}/stop.svg"),
-  trash: url("#{$tabler-icons-path}/trash.svg"),
-  unlock: url("#{$tabler-icons-path}/unlock.svg"),
-  upload: url("#{$tabler-icons-path}/upload.svg"),
-  user: url("#{$tabler-icons-path}/user.svg"),
-  users: url("#{$tabler-icons-path}/users.svg"),
-  video: url("#{$tabler-icons-path}/video.svg"),
-  volume: url("#{$tabler-icons-path}/volume.svg"),
-  x: url("#{$tabler-icons-path}/x.svg"),
-  x-circle: url("#{$tabler-icons-path}/x-circle.svg"),
+  adjustments: (
+    url: url("#{$tabler-icons-path}/adjustments.svg"),
+  ),
+  affiliate: (
+    url: url("#{$tabler-icons-path}/affiliate.svg"),
+  ),
+  alert: (
+    url: url("#{$tabler-icons-path}/alert.svg"),
+  ),
+  alert-circle: (
+    url: url("#{$tabler-icons-path}/alert-circle.svg"),
+  ),
+  alert-triangle: (
+    url: url("#{$tabler-icons-path}/alert-triangle.svg"),
+  ),
+  archive: (
+    url: url("#{$tabler-icons-path}/archive.svg"),
+  ),
+  arrow-back-up: (
+    url: url("#{$tabler-icons-path}/arrow-back-up.svg"),
+  ),
+  arrow-down: (
+    url: url("#{$tabler-icons-path}/arrow-down.svg"),
+  ),
+  arrow-left: (
+    url: url("#{$tabler-icons-path}/arrow-left.svg"),
+  ),
+  arrow-right: (
+    url: url("#{$tabler-icons-path}/arrow-right.svg"),
+  ),
+  arrow-up: (
+    url: url("#{$tabler-icons-path}/arrow-up.svg"),
+  ),
+  ascending: (
+    url: url("#{$tabler-icons-path}/ascending.svg"),
+  ),
+  bell: (
+    url: url("#{$tabler-icons-path}/bell.svg"),
+  ),
+  bell-off: (
+    url: url("#{$tabler-icons-path}/bell-off.svg"),
+  ),
+  building: (
+    url: url("#{$tabler-icons-path}/building.svg"),
+  ),
+  bulb: (
+    url: url("#{$tabler-icons-path}/bulb.svg"),
+  ),
+  calendar: (
+    url: url("#{$tabler-icons-path}/calendar.svg"),
+  ),
+  check: (
+    url: url("#{$tabler-icons-path}/check.svg"),
+  ),
+  check-circle: (
+    url: url("#{$tabler-icons-path}/check-circle.svg"),
+  ),
+  chevron-down: (
+    url: url("#{$tabler-icons-path}/chevron-down.svg"),
+  ),
+  chevron-left: (
+    url: url("#{$tabler-icons-path}/chevron-left.svg"),
+  ),
+  chevron-right: (
+    url: url("#{$tabler-icons-path}/chevron-right.svg"),
+  ),
+  chevron-up: (
+    url: url("#{$tabler-icons-path}/chevron-up.svg"),
+  ),
+  circle-check: (
+    url: url("#{$tabler-icons-path}/circle-check.svg"),
+  ),
+  circle-cross: (
+    url: url("#{$tabler-icons-path}/circle-cross.svg"),
+  ),
+  circle-dash: (
+    url: url("#{$tabler-icons-path}/circle-dash.svg"),
+  ),
+  circle-x: (
+    url: url("#{$tabler-icons-path}/circle-x.svg"),
+  ),
+  clock: (
+    url: url("#{$tabler-icons-path}/clock.svg"),
+  ),
+  close: (
+    url: url("#{$tabler-icons-path}/close.svg"),
+  ),
+  confirmation: (
+    url: url("#{$tabler-icons-path}/confirmation.svg"),
+  ),
+  descending: (
+    url: url("#{$tabler-icons-path}/descending.svg"),
+  ),
+  dots: (
+    url: url("#{$tabler-icons-path}/dots.svg"),
+  ),
+  dots-circle-horizontal: (
+    url: url("#{$tabler-icons-path}/dots-circle-horizontal.svg"),
+  ),
+  dots-vertical: (
+    url: url("#{$tabler-icons-path}/dots-vertical.svg"),
+  ),
+  download: (
+    url: url("#{$tabler-icons-path}/download.svg"),
+  ),
+  edit: (
+    url: url("#{$tabler-icons-path}/edit.svg"),
+  ),
+  external-link: (
+    url: url("#{$tabler-icons-path}/external-link.svg"),
+  ),
+  eye: (
+    url: url("#{$tabler-icons-path}/eye.svg"),
+  ),
+  eye-off: (
+    url: url("#{$tabler-icons-path}/eye-off.svg"),
+  ),
+  eye-plus: (
+    url: url("#{$tabler-icons-path}/eye-plus.svg"),
+  ),
+  file: (
+    url: url("#{$tabler-icons-path}/file.svg"),
+  ),
+  file-alert: (
+    url: url("#{$tabler-icons-path}/file-alert.svg"),
+  ),
+  file-upload: (
+    url: url("#{$tabler-icons-path}/file-upload.svg"),
+  ),
+  filter: (
+    url: url("#{$tabler-icons-path}/filter.svg"),
+  ),
+  folder: (
+    url: url("#{$tabler-icons-path}/folder.svg"),
+  ),
+  grid: (
+    url: url("#{$tabler-icons-path}/grid.svg"),
+  ),
+  hamburger: (
+    url: url("#{$tabler-icons-path}/hamburger.svg"),
+  ),
+  heart: (
+    url: url("#{$tabler-icons-path}/heart.svg"),
+  ),
+  history: (
+    url: url("#{$tabler-icons-path}/history.svg"),
+  ),
+  home: (
+    url: url("#{$tabler-icons-path}/home.svg"),
+  ),
+  info: (
+    url: url("#{$tabler-icons-path}/info.svg"),
+  ),
+  key: (
+    url: url("#{$tabler-icons-path}/key.svg"),
+  ),
+  language: (
+    url: url("#{$tabler-icons-path}/language.svg"),
+  ),
+  layers: (
+    url: url("#{$tabler-icons-path}/layers.svg"),
+  ),
+  link: (
+    url: url("#{$tabler-icons-path}/link.svg"),
+  ),
+  list: (
+    url: url("#{$tabler-icons-path}/list.svg"),
+  ),
+  lock: (
+    url: url("#{$tabler-icons-path}/lock.svg"),
+  ),
+  log-out: (
+    url: url("#{$tabler-icons-path}/log-out.svg"),
+  ),
+  menu: (
+    url: url("#{$tabler-icons-path}/menu.svg"),
+  ),
+  microphone: (
+    url: url("#{$tabler-icons-path}/microphone.svg"),
+  ),
+  minus: (
+    url: url("#{$tabler-icons-path}/minus.svg"),
+  ),
+  minus-circle: (
+    url: url("#{$tabler-icons-path}/minus-circle.svg"),
+  ),
+  more-horizontal: (
+    url: url("#{$tabler-icons-path}/more-horizontal.svg"),
+  ),
+  more-vertical: (
+    url: url("#{$tabler-icons-path}/more-vertical.svg"),
+  ),
+  notification: (
+    url: url("#{$tabler-icons-path}/notification.svg"),
+  ),
+  paperclip: (
+    url: url("#{$tabler-icons-path}/paperclip.svg"),
+  ),
+  pencil: (
+    url: url("#{$tabler-icons-path}/pencil.svg"),
+  ),
+  person: (
+    url: url("#{$tabler-icons-path}/person.svg"),
+  ),
+  phone: (
+    url: url("#{$tabler-icons-path}/phone.svg"),
+  ),
+  plus: (
+    url: url("#{$tabler-icons-path}/plus.svg"),
+  ),
+  plus-circle: (
+    url: url("#{$tabler-icons-path}/plus-circle.svg"),
+  ),
+  printer: (
+    url: url("#{$tabler-icons-path}/printer.svg"),
+  ),
+  refresh: (
+    url: url("#{$tabler-icons-path}/refresh.svg"),
+  ),
+  repeat: (
+    url: url("#{$tabler-icons-path}/repeat.svg"),
+  ),
+  search: (
+    url: url("#{$tabler-icons-path}/search.svg"),
+  ),
+  settings: (
+    url: url("#{$tabler-icons-path}/settings.svg"),
+  ),
+  share: (
+    url: url("#{$tabler-icons-path}/share.svg"),
+  ),
+  star: (
+    url: url("#{$tabler-icons-path}/star.svg"),
+  ),
+  stop: (
+    url: url("#{$tabler-icons-path}/stop.svg"),
+  ),
+  trash: (
+    url: url("#{$tabler-icons-path}/trash.svg"),
+  ),
+  unlock: (
+    url: url("#{$tabler-icons-path}/unlock.svg"),
+  ),
+  upload: (
+    url: url("#{$tabler-icons-path}/upload.svg"),
+  ),
+  user: (
+    url: url("#{$tabler-icons-path}/user.svg"),
+  ),
+  users: (
+    url: url("#{$tabler-icons-path}/users.svg"),
+  ),
+  video: (
+    url: url("#{$tabler-icons-path}/video.svg"),
+  ),
+  volume: (
+    url: url("#{$tabler-icons-path}/volume.svg"),
+  ),
+  x: (
+    url: url("#{$tabler-icons-path}/x.svg"),
+  ),
+  x-circle: (
+    url: url("#{$tabler-icons-path}/x-circle.svg"),
+  ),
 );
 
 $icon-map: map.merge($kat-icon-map, $tabler-icon-map);
