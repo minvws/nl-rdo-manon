@@ -47,7 +47,7 @@ $icon-map: (
   ),
   confirmation: (
     url: url("#{$ro-icons-path}/confirmation.svg"),
-    type: background,
+    type: "background",
   ),
   descending: (
     url: url("#{$ro-icons-path}/descending.svg"),
@@ -60,7 +60,7 @@ $icon-map: (
   ),
   error: (
     url: url("#{$ro-icons-path}/error.svg"),
-    type: background,
+    type: "background",
   ),
   hamburger: (
     url: url("#{$ro-icons-path}/hamburger.svg"),
@@ -73,7 +73,7 @@ $icon-map: (
   ),
   informative: (
     url: url("#{$ro-icons-path}/informative.svg"),
-    type: background,
+    type: "background",
   ),
   lock-closed: (
     url: url("#{$ro-icons-path}/lock-closed.svg"),
@@ -116,6 +116,6 @@ $icon-map: (
   ),
   warning: (
     url: url("#{$ro-icons-path}/warning.svg"),
-    type: background,
+    type: "background",
   ),
 );
