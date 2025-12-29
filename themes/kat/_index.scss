@@ -36,6 +36,9 @@ and spacing sets */
   $p-font-size: body-text.$body-text,
   $p-line-height: line-height.$line-height-l,
 
+  $tab-panel-gap: spacing.$spacing-100,
+  $tab-panel-padding: spacing.$spacing-150 0,
+
   // accordion
   $accordion-gap: spacing.$spacing-100,
   $accordion-button-padding: spacing.$spacing-075 spacing.$spacing-100,
@@ -83,10 +86,19 @@ and spacing sets */
   $article-content-wrapper-gap: spacing.$spacing-200,
 
   // avatar
-  $avatar-font-weight: bold,
+  $avatar-width: 3rem,
+  $avatar-height: 3rem,
+  $avatar-min-width: 3rem,
+  $avatar-min-height: 3rem,
+  $avatar-max-width: 3rem,
+  $avatar-max-height: 3rem,
+  $avatar-text-font-family: semantic.$font-family-secondary,
+  $avatar-text-color: color-scheme.$white,
+  $avatar-hover-text-color: color-scheme.$white,
+  $avatar-font-weight: normal,
   $avatar-border-radius: 50%,
-  $avatar-background-color: semantic.$color-brand-primary,
-  $avatar-hover-background-color: semantic.$color-brand-primary-muted,
+  $avatar-background-color: color-scheme.$violet-500,
+  $avatar-hover-background-color: color-scheme.$violet-600,
 
   // base
   $base-background-color: semantic.$base-background-color,
