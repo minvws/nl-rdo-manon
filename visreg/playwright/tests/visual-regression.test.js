@@ -6,9 +6,14 @@ for (const endpoint of endpoints) {
   const sanitizedEndpoint = endpoint.replace(/^\/|\/$/g, "") || "homepage";
 
   test(`Visual regression for: ${endpoint}`, async ({ page }) => {
-    // Go to the specified endpoint, and wait for all the resources (images,
-    // stylesheets, scripts, iframes, and fonts) to load
-    await page.goto(endpoint, { waitUntil: "load" });
+    // Go to the specified endpoint, using network idle to ensure all resources
+    // are loaded.
+    await page.goto(endpoint, { waitUntil: "networkidle" });
+
+    // If the endpoint is an accordion, wait for the accordion JS to load
+    if (endpoint.includes("accordion")) {
+      await page.locator("body.js-accordion-loaded").waitFor();
+    }
 
     await expect(page).toHaveScreenshot(`${sanitizedEndpoint}.png`, {
       fullPage: true,
