@@ -119,6 +119,9 @@ $tabler-icon-map: (
   edit: (
     url: url("#{$tabler-icons-path}/edit.svg"),
   ),
+  error: (
+    url: url("#{$tabler-icons-path}/alert.svg"),
+  ),
   external-link: (
     url: url("#{$tabler-icons-path}/external-link.svg"),
   ),
