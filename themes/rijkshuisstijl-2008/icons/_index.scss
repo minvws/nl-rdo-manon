@@ -3,8 +3,8 @@
 $ro-icons-path: "#{config.$icons-path}/ro";
 
 $icon-map: (
-  arrow-bar-to-up: (
-    url: url("#{$ro-icons-path}/arrow-bar-to-up.svg"),
+  ascending: (
+    url: url("#{$ro-icons-path}/ascending.svg"),
   ),
   caret-down-filled: (
     url: url("#{$ro-icons-path}/caret-down-filled.svg"),
@@ -18,23 +18,23 @@ $icon-map: (
   check: (
     url: url("#{$ro-icons-path}/check.svg"),
   ),
-  chevron-compact-down: (
-    url: url("#{$ro-icons-path}/chevron-compact-down.svg"),
-  ),
-  chevron-compact-left: (
-    url: url("#{$ro-icons-path}/chevron-compact-left.svg"),
-  ),
-  chevron-compact-right: (
-    url: url("#{$ro-icons-path}/chevron-compact-right.svg"),
-  ),
-  chevron-compact-up: (
-    url: url("#{$ro-icons-path}/chevron-compact-up.svg"),
-  ),
   chevron-down: (
     url: url("#{$ro-icons-path}/chevron-down.svg"),
   ),
   chevron-left: (
     url: url("#{$ro-icons-path}/chevron-left.svg"),
+  ),
+  chevron-light-down: (
+    url: url("#{$ro-icons-path}/chevron-light-down.svg"),
+  ),
+  chevron-light-left: (
+    url: url("#{$ro-icons-path}/chevron-light-left.svg"),
+  ),
+  chevron-light-right: (
+    url: url("#{$ro-icons-path}/chevron-light-right.svg"),
+  ),
+  chevron-light-up: (
+    url: url("#{$ro-icons-path}/chevron-light-up.svg"),
   ),
   chevron-right: (
     url: url("#{$ro-icons-path}/chevron-right.svg"),
@@ -42,9 +42,15 @@ $icon-map: (
   chevron-up: (
     url: url("#{$ro-icons-path}/chevron-up.svg"),
   ),
+  close: (
+    url: url("#{$ro-icons-path}/close.svg"),
+  ),
   confirmation: (
     url: url("#{$ro-icons-path}/confirmation.svg"),
     type: background,
+  ),
+  descending: (
+    url: url("#{$ro-icons-path}/descending.svg"),
   ),
   device-mobile: (
     url: url("#{$ro-icons-path}/device-mobile.svg"),
@@ -56,6 +62,12 @@ $icon-map: (
     url: url("#{$ro-icons-path}/error.svg"),
     type: background,
   ),
+  hamburger: (
+    url: url("#{$ro-icons-path}/hamburger.svg"),
+  ),
+  heart: (
+    url: url("#{$ro-icons-path}/heart.svg"),
+  ),
   home: (
     url: url("#{$ro-icons-path}/home.svg"),
   ),
@@ -63,23 +75,38 @@ $icon-map: (
     url: url("#{$ro-icons-path}/informative.svg"),
     type: background,
   ),
-  lock: (
-    url: url("#{$ro-icons-path}/lock.svg"),
+  lock-closed: (
+    url: url("#{$ro-icons-path}/lock-closed.svg"),
   ),
-  menu-2: (
-    url: url("#{$ro-icons-path}/menu-2.svg"),
+  on-off: (
+    url: url("#{$ro-icons-path}/on-off.svg"),
+  ),
+  outgoing: (
+    url: url("#{$ro-icons-path}/outgoing.svg"),
   ),
   power: (
     url: url("#{$ro-icons-path}/power.svg"),
   ),
-  question-mark: (
-    url: url("#{$ro-icons-path}/question-mark.svg"),
+  questionmark: (
+    url: url("#{$ro-icons-path}/questionmark.svg"),
   ),
   refresh: (
     url: url("#{$ro-icons-path}/refresh.svg"),
   ),
+  reset: (
+    url: url("#{$ro-icons-path}/reset.svg"),
+  ),
   search: (
     url: url("#{$ro-icons-path}/search.svg"),
+  ),
+  smartphone: (
+    url: url("#{$ro-icons-path}/smartphone.svg"),
+  ),
+  sort: (
+    url: url("#{$ro-icons-path}/sort.svg"),
+  ),
+  to-top: (
+    url: url("#{$ro-icons-path}/to-top.svg"),
   ),
   trash: (
     url: url("#{$ro-icons-path}/trash.svg"),
@@ -90,8 +117,5 @@ $icon-map: (
   warning: (
     url: url("#{$ro-icons-path}/warning.svg"),
     type: background,
-  ),
-  x: (
-    url: url("#{$ro-icons-path}/x.svg"),
   ),
 );

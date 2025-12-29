@@ -33,7 +33,7 @@ SCSS importeren:
   <div id="paragraph">
     <p class="confirmation">
       <span class="notification-type">
-        <span class="icon icon-check" aria-hidden="true"></span>
+        <span class="icon icon-confirmation" aria-hidden="true"></span>
         Bevestiging:
       </span>
       Lorem ipsum dolor sit.
@@ -43,7 +43,7 @@ SCSS importeren:
       <code>
 &lt;p class="confirmation">
   &lt;span class="notification-type">
-    &lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
+    &lt;span class="icon icon-confirmation" aria-hidden="true">&lt;/span>
     Bevestiging:
   &lt;/span>
   Lorem ipsum dolor sit.
@@ -55,7 +55,7 @@ SCSS importeren:
   <div id="span">
     <span class="confirmation">
       <span class="notification-type">
-        <span class="icon icon-check" aria-hidden="true"></span>
+        <span class="icon icon-confirmation" aria-hidden="true"></span>
         Bevestiging:
       </span>
       Lorem ipsum dolor sit.
@@ -65,7 +65,7 @@ SCSS importeren:
       <code>
 &lt;span class="confirmation">
   &lt;span class="notification-type">
-    &lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
+    &lt;span class="icon icon-confirmation" aria-hidden="true">&lt;/span>
     Bevestiging:
   &lt;/span>
   Lorem ipsum dolor sit.
@@ -78,7 +78,7 @@ SCSS importeren:
     <div class="confirmation">
       <h2>Lorem ipsum dolor sit</h2>
       <span class="notification-type">
-        <span class="icon icon-check" aria-hidden="true"></span>
+        <span class="icon icon-confirmation" aria-hidden="true"></span>
         Bevestiging:
       </span>
       <p>
@@ -109,7 +109,7 @@ SCSS importeren:
 &lt;div class="confirmation">
 &lt;h2>Lorem ipsum dolor sit&lt;/h2>
 &lt;span class="notification-type">
-&lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
+&lt;span class="icon icon-confirmation" aria-hidden="true">&lt;/span>
 Bevestiging:
 &lt;/span>
 &lt;p>
@@ -142,7 +142,7 @@ consequat facilisis ac eu velit.
     <section class="confirmation">
       <h2>Lorem ipsum dolor sit</h2>
       <span class="notification-type">
-        <span class="icon icon-check" aria-hidden="true"></span>
+        <span class="icon icon-confirmation" aria-hidden="true"></span>
         Bevestiging:
       </span>
       <p>
@@ -173,7 +173,7 @@ consequat facilisis ac eu velit.
 &lt;section class="confirmation">
 &lt;h2>Lorem ipsum dolor sit&lt;/h2>
 &lt;span class="notification-type">
-&lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
+&lt;span class="icon icon-confirmation" aria-hidden="true">&lt;/span>
 Bevestiging:
 &lt;/span>
 &lt;p>
@@ -226,7 +226,7 @@ consequat facilisis ac eu velit.
         </textarea>
         <p class="confirmation" id="voorbeeld-tekstveld-confirmation-message">
           <span class="notification-type">
-            <span class="icon icon-check" aria-hidden="true"></span>
+            <span class="icon icon-confirmation" aria-hidden="true"></span>
             Bevestiging:
           </span>
           Lorem ipsum dolor sit amet
@@ -248,7 +248,7 @@ consequat facilisis ac eu velit.
     &lt;/textarea>
     &lt;p class="confirmation" id="voorbeeld-tekstveld-confirmation-message">
       &lt;span class="notification-type">
-        &lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
+        &lt;span class="icon icon-confirmation" aria-hidden="true">&lt;/span>
         Bevestiging:
       &lt;/span>
       Lorem ipsum dolor sit amet
@@ -276,7 +276,7 @@ consequat facilisis ac eu velit.
         </select>
         <p class="confirmation" id="select-confirmation-message">
           <span class="notification-type">
-            <span class="icon icon-check" aria-hidden="true"></span>
+            <span class="icon icon-confirmation" aria-hidden="true"></span>
             Bevestiging:
           </span>
           Lorem ipsum dolor sit amet
@@ -301,7 +301,7 @@ consequat facilisis ac eu velit.
     &lt;/select>
     &lt;p class="confirmation" id="select-confirmation-message">
       &lt;span class="notification-type">
-        &lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
+        &lt;span class="icon icon-confirmation" aria-hidden="true">&lt;/span>
         Bevestiging:
       &lt;/span>
       Lorem ipsum dolor sit amet
@@ -324,7 +324,7 @@ consequat facilisis ac eu velit.
         />
         <p class="confirmation" id="datalist-confirmation-message">
           <span class="notification-type">
-            <span class="icon icon-check" aria-hidden="true"></span>
+            <span class="icon icon-confirmation" aria-hidden="true"></span>
             Bevestiging:
           </span>
           Lorem ipsum dolor sit amet
@@ -350,7 +350,7 @@ consequat facilisis ac eu velit.
     />
     &lt;p class="confirmation" id="datalist-confirmation-message">
       &lt;span class="notification-type">
-        &lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
+        &lt;span class="icon icon-confirmation" aria-hidden="true">&lt;/span>
         Bevestiging:
       &lt;/span>
       Lorem ipsum dolor sit amet
@@ -375,7 +375,7 @@ consequat facilisis ac eu velit.
         </div>
         <p class="confirmation" id="checkbox-confirmation-message">
           <span class="notification-type">
-            <span class="icon icon-check" aria-hidden="true"></span>
+            <span class="icon icon-confirmation" aria-hidden="true"></span>
             Bevestiging:
           </span>
           Lorem ipsum dolor sit amet
@@ -393,7 +393,7 @@ consequat facilisis ac eu velit.
     &lt;/div>
     &lt;p class="confirmation" id="checkbox-confirmation-message">
       &lt;span class="notification-type">
-        &lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
+        &lt;span class="icon icon-confirmation" aria-hidden="true">&lt;/span>
         Bevestiging:
       &lt;/span>
       Lorem ipsum dolor sit amet
@@ -413,7 +413,7 @@ consequat facilisis ac eu velit.
         </div>
         <p class="confirmation" id="radio-example-confirmation-message">
           <span class="notification-type">
-            <span class="icon icon-check" aria-hidden="true"></span>
+            <span class="icon icon-confirmation" aria-hidden="true"></span>
             Bevestiging:
           </span> Lorem ipsum dolor sit amet
         </p>
@@ -430,7 +430,7 @@ consequat facilisis ac eu velit.
     &lt;/div>
     &lt;p class="confirmation" id="radio-example-confirmation-message">
       &lt;span class="notification-type">
-        &lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
+        &lt;span class="icon icon-confirmation" aria-hidden="true">&lt;/span>
         Bevestiging:
       &lt;/span> Lorem ipsum dolor sit amet
     &lt;/p>
