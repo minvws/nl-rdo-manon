@@ -530,11 +530,12 @@
   $notification-padding-right: spacing.$spacing-100,
   $notification-padding-bottom: spacing.$spacing-100,
   $notification-padding-left: spacing.$spacing-100,
-  $notification-gap: spacing.$spacing-100,
+  $notification-gap: spacing.$spacing-050,
 
   // Notification type
   $notification-type-font-weight: bold,
   $notification-type-gap: spacing.$spacing-025,
+  $notification-type-font-size: 0,
 
   // Notification error
   $notification-error-background-color:
