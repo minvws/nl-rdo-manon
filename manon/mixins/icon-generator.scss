@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "../variables" as theme;
 
 @mixin generate-icons($icon-map) {
   @each $name, $icon-data in $icon-map {
@@ -6,10 +7,12 @@
       @if map.get($icon-data, "type") == "background" {
         // Use 'background' for multi-color icons
         background: #{map.get($icon-data, "url")} no-repeat center / contain;
+        background-color: unset;
       } @else {
         // Default to 'mask' for single-color, recolorable icons
         mask: #{map.get($icon-data, "url")} no-repeat center / contain;
         -webkit-mask: #{map.get($icon-data, "url")} no-repeat center / contain;
+        background-color: theme.$icon-color;
       }
     }
   }

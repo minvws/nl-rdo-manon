@@ -9,6 +9,9 @@ $icon-map: (
   check: (
     url: url("#{$tabler-icons-path}/check.svg"),
   ),
+  confirmation: (
+    url: url("#{$tabler-icons-path}/check.svg"),
+  ),
   chevron-down: (
     url: url("#{$tabler-icons-path}/chevron-down.svg"),
   ),
@@ -64,7 +67,7 @@ $icon-map: (
     url: url("#{$tabler-icons-path}/lock.svg"),
   ),
   on-off: (
-    url: url("#{$tabler-icons-path}/power.svg"),
+    url: url("#{$tabler-icons-path}/on-off.svg"),
   ),
   outgoing: (
     url: url("#{$tabler-icons-path}/arrow-up-right.svg"),
@@ -85,7 +88,9 @@ $icon-map: (
     url: url("#{$tabler-icons-path}/caret-up-down-filled.svg"),
   ),
   to-top: (
-    url: url("#{$tabler-icons-path}/arrow-bar-to-up.svg"),
+    <<<<<<< HEAD url: url("#{$tabler-icons-path}/arrow-bar-to-up.svg"),
+    ======= url: url("#{$tabler-icons-path}/to-top.svg"),
+    >>>>>>> 967710434542e462b7b800ff6f613e9435657dc0,
   ),
   trash: (
     url: url("#{$tabler-icons-path}/trash.svg"),

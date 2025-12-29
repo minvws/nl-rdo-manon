@@ -17,6 +17,11 @@
   border-width: theme.$notification-border-width;
   border-style: theme.$notification-border-style;
   gap: theme.$notification-gap;
+
+  .icon {
+    width: theme.$notification-icon-width;
+    height: theme.$notification-icon-height;
+  }
 }
 
 @mixin notification-error {
