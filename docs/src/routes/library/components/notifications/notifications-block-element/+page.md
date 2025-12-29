@@ -63,30 +63,30 @@ SCSS importeren:
     <pre>
       <code>
 &lt;div class="error">
-&lt;h2>Lorem ipsum dolor sit&lt;/h2>
-&lt;span class="notification-type">
-&lt;span class="icon icon-error" aria-hidden="true">&lt;/span>
-Foutmelding:
-&lt;/span>
-&lt;p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
-Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam
-efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac
-bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget.
-Mauris euismod a augue sit amet condimentum.
-&lt;/p>
-&lt;ul>
-&lt;li>Lorem ipsum&lt;/li>
-&lt;li>Lorem ipsum&lt;/li>
-&lt;li>Lorem ipsum&lt;/li>
-&lt;li>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
-consequat facilisis ac eu velit.
-&lt;a href="/library/components/notifications/notifications-block-element">Lorem ipsum&lt;/a> consectetur adipiscing elit.
-&lt;/li>
-&lt;/ul>
-&lt;button type="button">Lorem&lt;/button>
+  &lt;h2>Lorem ipsum dolor sit&lt;/h2>
+  &lt;span class="notification-type">
+  &lt;span class="icon icon-error" aria-hidden="true">&lt;/span>
+    Foutmelding:
+  &lt;/span>
+  &lt;p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
+    Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam
+    efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac
+    bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget.
+    Mauris euismod a augue sit amet condimentum.
+  &lt;/p>
+  &lt;ul>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+      consequat facilisis ac eu velit.
+      &lt;a href="/library/components/notifications/notifications-block-element">Lorem ipsum&lt;/a> consectetur adipiscing elit.
+    &lt;/li>
+  &lt;/ul>
+  &lt;button type="button">Lorem&lt;/button>
 &lt;/div>
 </code>
 </pre>
@@ -98,7 +98,7 @@ consequat facilisis ac eu velit.
       <h2>Lorem ipsum dolor sit</h2>
       <span class="notification-type">
         <span class="icon icon-informative" aria-hidden="true"></span>
-        Foutmelding:
+        Toelichting:
       </span>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -127,7 +127,7 @@ consequat facilisis ac eu velit.
   &lt;h2>Lorem ipsum dolor sit&lt;/h2>
   &lt;span class="notification-type">
     &lt;span class="icon icon-informative" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    Toelichting:
   &lt;/span>
   &lt;p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -158,7 +158,7 @@ consequat facilisis ac eu velit.
       <h2>Lorem ipsum dolor sit</h2>
       <span class="notification-type">
         <span class="icon icon-warning" aria-hidden="true"></span>
-        Foutmelding:
+        Waarschuwing:
       </span>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -187,7 +187,7 @@ consequat facilisis ac eu velit.
   &lt;h2>Lorem ipsum dolor sit&lt;/h2>
   &lt;span class="notification-type">
     &lt;span class="icon icon-warning" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    Waarschuwing:
   &lt;/span>
   &lt;p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -217,8 +217,8 @@ consequat facilisis ac eu velit.
     <div class="confirmation">
       <h2>Lorem ipsum dolor sit</h2>
       <span class="notification-type">
-        <span class="icon icon-check" aria-hidden="true"></span>
-        Foutmelding:
+        <span class="icon icon-confirmation" aria-hidden="true"></span>
+        Bevestiging:
       </span>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -246,8 +246,8 @@ consequat facilisis ac eu velit.
 &lt;div class="confirmation">
   &lt;h2>Lorem ipsum dolor sit&lt;/h2>
   &lt;span class="notification-type">
-    &lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    &lt;span class="icon icon-confirmation" aria-hidden="true">&lt;/span>
+    Bevestiging:
   &lt;/span>
   &lt;p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -278,7 +278,7 @@ consequat facilisis ac eu velit.
       <h2>Lorem ipsum dolor sit</h2>
       <span class="notification-type">
         <span class="icon icon-warning" aria-hidden="true"></span>
-        Foutmelding:
+        Systeembericht:
       </span>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -307,7 +307,7 @@ consequat facilisis ac eu velit.
   &lt;h2>Lorem ipsum dolor sit&lt;/h2>
   &lt;span class="notification-type">
     &lt;span class="icon icon-warning" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    Systeembericht:
   &lt;/span>
   &lt;p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -349,7 +349,7 @@ consequat facilisis ac eu velit.
   <div id="structure">
     <section class="confirmation">
       <span class="notification-type">
-        <span class="icon icon-check" aria-hidden="true"></span>
+        <span class="icon icon-confirmation" aria-hidden="true"></span>
         Bevestiging:
       </span>
       <!-- content -->
@@ -358,17 +358,15 @@ consequat facilisis ac eu velit.
     <p>HTML-Voorbeeld:</p>
     <pre>
       <code>
-
 &lt;section class="confirmation">
-&lt;span class="notification-type">
-&lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
-Bevestiging:
-&lt;/span>
-&lt;!-- content -->
+  &lt;span class="notification-type">
+  &lt;span class="icon icon-confirmation" aria-hidden="true">&lt;/span>
+  Bevestiging:
+  &lt;/span>
+  &lt;!-- content -->
 &lt;/section>
-</code>
-
-</pre>
+    </code>
+  </pre>
 
   </div>
 
@@ -403,36 +401,34 @@ Bevestiging:
     <p>HTML-Voorbeeld:</p>
     <pre>
       <code>
-
 &lt;section class="error">
-&lt;h2>Lorem ipsum dolor sit&lt;/h2>
-&lt;span class="notification-type">
-&lt;span class="icon icon-error" aria-hidden="true">&lt;/span>
-Foutmelding:
-&lt;/span>
-&lt;p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
-facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
-Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam
-efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac
-bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget.
-Mauris euismod a augue sit amet condimentum.
-&lt;/p>
-&lt;ul>
-&lt;li>Lorem ipsum&lt;/li>
-&lt;li>Lorem ipsum&lt;/li>
-&lt;li>Lorem ipsum&lt;/li>
-&lt;li>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
-consequat facilisis ac eu velit.
-&lt;a href="/library/components/notifications/notifications-block-element">Lorem ipsum&lt;/a> consectetur adipiscing elit.
-&lt;/li>
-&lt;/ul>
-&lt;button type="button">Lorem&lt;/button>
+  &lt;h2>Lorem ipsum dolor sit&lt;/h2>
+  &lt;span class="notification-type">
+    &lt;span class="icon icon-error" aria-hidden="true">&lt;/span>
+    Foutmelding:
+  &lt;/span>
+  &lt;p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
+    facilisis ac eu velit. Donec luctus metus a lacus dictum, a porta ligula pellentesque.
+    Phasellus ultricies purus id viverra ultrices. Proin sagittis rhoncus tempor. Nam
+    efficitur elit commodo elit feugiat scelerisque. Nullam consectetur felis mi, ac
+    bibendum urna convallis a. Ut maximus volutpat ligula, et accumsan ipsum varius eget.
+    Mauris euismod a augue sit amet condimentum.
+  &lt;/p>
+  &lt;ul>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>Lorem ipsum&lt;/li>
+    &lt;li>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi
+      consequat facilisis ac eu velit.
+      &lt;a href="/library/components/notifications/notifications-block-element">Lorem ipsum&lt;/a> consectetur adipiscing elit.
+    &lt;/li>
+  &lt;/ul>
+  &lt;button type="button">Lorem&lt;/button>
 &lt;/section>
-</code>
-
-</pre>
+    </code>
+  </pre>
 
   </div>
 
@@ -441,7 +437,7 @@ consequat facilisis ac eu velit.
       <h2>Lorem ipsum dolor sit</h2>
       <span class="notification-type">
         <span class="icon icon-informative" aria-hidden="true"></span>
-        Foutmelding:
+        Toelichting:
       </span>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -470,7 +466,7 @@ consequat facilisis ac eu velit.
   &lt;h2>Lorem ipsum dolor sit&lt;/h2>
   &lt;span class="notification-type">
     &lt;span class="icon icon-informative" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    Toelichting:
   &lt;/span>
   &lt;p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -501,7 +497,7 @@ consequat facilisis ac eu velit.
       <h2>Lorem ipsum dolor sit</h2>
       <span class="notification-type">
         <span class="icon icon-warning" aria-hidden="true"></span>
-        Foutmelding:
+        Waarschuwing:
       </span>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -530,7 +526,7 @@ consequat facilisis ac eu velit.
   &lt;h2>Lorem ipsum dolor sit&lt;/h2>
   &lt;span class="notification-type">
     &lt;span class="icon icon-warning" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    Waarschuwing:
   &lt;/span>
   &lt;p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -560,8 +556,8 @@ consequat facilisis ac eu velit.
     <section class="confirmation">
       <h2>Lorem ipsum dolor sit</h2>
       <span class="notification-type">
-        <span class="icon icon-check" aria-hidden="true"></span>
-        Foutmelding:
+        <span class="icon icon-confirmation" aria-hidden="true"></span>
+        Bevestiging:
       </span>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -589,8 +585,8 @@ consequat facilisis ac eu velit.
 &lt;section class="confirmation">
   &lt;h2>Lorem ipsum dolor sit&lt;/h2>
   &lt;span class="notification-type">
-    &lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    &lt;span class="icon icon-confirmation" aria-hidden="true">&lt;/span>
+    Bevestiging:
   &lt;/span>
   &lt;p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -621,7 +617,7 @@ consequat facilisis ac eu velit.
       <h2>Lorem ipsum dolor sit</h2>
       <span class="notification-type">
         <span class="icon icon-warning" aria-hidden="true"></span>
-        Foutmelding:
+        Systeembericht:
       </span>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat
@@ -650,7 +646,7 @@ consequat facilisis ac eu velit.
   &lt;h2>Lorem ipsum dolor sit&lt;/h2>
   &lt;span class="notification-type">
     &lt;span class="icon icon-warning" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    Systeembericht:
   &lt;/span>
   &lt;p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ante a nisi consequat

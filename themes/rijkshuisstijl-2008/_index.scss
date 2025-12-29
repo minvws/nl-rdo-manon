@@ -397,6 +397,7 @@
   $header-link-text-decoration: none,
   $header-link-current-background-color: semantic.$color-brand-primary-subtle,
   $header-link-current-text-color: semantic.$color-brand-primary-text-subtle,
+  $header-link-focus-outline-color: semantic.$color-brand-primary-text-default,
   $header-list-gap: 0,
   $header-justify-content: stretch,
   $header-form-justify-content: center,
@@ -531,6 +532,10 @@
   $notification-padding-bottom: spacing.$spacing-100,
   $notification-padding-left: spacing.$spacing-100,
   $notification-gap: spacing.$spacing-050,
+
+  // Notification block
+  $notification-type-block-element-font-size: body-text.$body-text-m,
+  $notification-type-block-element-margin: spacing.$spacing-050 0,
 
   // Notification icon
   $notification-icon-width: 1.25rem,

@@ -79,6 +79,10 @@ body > header,
       border-style: theme.$header-link-current-border-style;
       border-color: theme.$header-link-current-border-color;
     }
+
+    &:focus-visible {
+      outline-color: theme.$header-link-focus-outline-color;
+    }
   }
 
   ul,

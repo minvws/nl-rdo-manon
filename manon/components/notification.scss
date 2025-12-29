@@ -164,6 +164,11 @@ section {
     max-width: theme.$notification-block-element-max-width;
     position: theme.$notification-block-element-position;
     color: theme.$notification-block-element-text-color;
+
+    .notification-type {
+      font-size: theme.$notification-type-block-element-font-size;
+      margin: theme.$notification-type-block-element-margin;
+    }
   }
 
   &.error {

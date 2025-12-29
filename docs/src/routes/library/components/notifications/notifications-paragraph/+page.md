@@ -58,7 +58,7 @@ SCSS importeren:
     <p class="explanation">
       <span class="notification-type">
         <span class="icon icon-informative" aria-hidden="true"></span>
-        Foutmelding:
+        Toelichting:
       </span>
       Lorem ipsum dolor sit.
     </p>
@@ -68,7 +68,7 @@ SCSS importeren:
 &lt;p class="explanation">
   &lt;span class="notification-type">
     &lt;span class="icon icon-informative" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    Toelichting:
   &lt;/span>
   Lorem ipsum dolor sit.
 &lt;/p>
@@ -80,7 +80,7 @@ SCSS importeren:
     <p class="warning">
       <span class="notification-type">
         <span class="icon icon-warning" aria-hidden="true"></span>
-        Foutmelding:
+        Waarschuwing:
       </span>
       Lorem ipsum dolor sit.
     </p>
@@ -90,7 +90,7 @@ SCSS importeren:
 &lt;p class="warning">
   &lt;span class="notification-type">
     &lt;span class="icon icon-warning" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    Waarschuwing:
   &lt;/span>
   Lorem ipsum dolor sit.
 &lt;/p>
@@ -101,8 +101,8 @@ SCSS importeren:
   <div id="confirmation">
     <p class="confirmation">
       <span class="notification-type">
-        <span class="icon icon-check" aria-hidden="true"></span>
-        Foutmelding:
+        <span class="icon icon-confirmation" aria-hidden="true"></span>
+        Bevestiging:
       </span>
       Lorem ipsum dolor sit.
     </p>
@@ -111,8 +111,8 @@ SCSS importeren:
       <code>
 &lt;p class="confirmation">
   &lt;span class="notification-type">
-    &lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    &lt;span class="icon icon-confirmation" aria-hidden="true">&lt;/span>
+    Bevestiging:
   &lt;/span>
   Lorem ipsum dolor sit.
 &lt;/p>
@@ -124,7 +124,7 @@ SCSS importeren:
     <p class="system">
       <span class="notification-type">
         <span class="icon icon-warning" aria-hidden="true"></span>
-        Foutmelding:
+        Systeembericht:
       </span>
       Lorem ipsum dolor sit.
     </p>
@@ -134,7 +134,7 @@ SCSS importeren:
 &lt;p class="system">
   &lt;span class="notification-type">
     &lt;span class="icon icon-warning" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    Systeembericht:
   &lt;/span>
   Lorem ipsum dolor sit.
 &lt;/p>
@@ -181,7 +181,7 @@ SCSS importeren:
     <span class="explanation">
       <span class="notification-type">
         <span class="icon icon-informative" aria-hidden="true"></span>
-        Foutmelding:
+        Toelichting:
       </span>
       Lorem ipsum dolor sit.
     </span>
@@ -191,7 +191,7 @@ SCSS importeren:
 &lt;span class="explanation">
   &lt;span class="notification-type">
     &lt;span class="icon icon-informative" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    Toelichting:
   &lt;/span>
   Lorem ipsum dolor sit.
 &lt;/span>
@@ -203,7 +203,7 @@ SCSS importeren:
     <span class="warning">
       <span class="notification-type">
         <span class="icon icon-warning" aria-hidden="true"></span>
-        Foutmelding:
+        Waarschuwing:
       </span>
       Lorem ipsum dolor sit.
     </span>
@@ -213,7 +213,7 @@ SCSS importeren:
 &lt;span class="warning">
   &lt;span class="notification-type">
     &lt;span class="icon icon-warning" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    Waarschuwing:
   &lt;/span>
   Lorem ipsum dolor sit.
 &lt;/span>
@@ -224,8 +224,8 @@ SCSS importeren:
   <div id="confirmation">
     <span class="confirmation">
       <span class="notification-type">
-        <span class="icon icon-check" aria-hidden="true"></span>
-        Foutmelding:
+        <span class="icon icon-confirmation" aria-hidden="true"></span>
+        Bevestiging:
       </span>
       Lorem ipsum dolor sit.
     </span>
@@ -234,8 +234,8 @@ SCSS importeren:
       <code>
 &lt;span class="confirmation">
   &lt;span class="notification-type">
-    &lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    &lt;span class="icon icon-confirmation" aria-hidden="true">&lt;/span>
+    Bevestiging:
   &lt;/span>
   Lorem ipsum dolor sit.
 &lt;/span>
@@ -247,7 +247,7 @@ SCSS importeren:
     <span class="system">
       <span class="notification-type">
         <span class="icon icon-warning" aria-hidden="true"></span>
-        Foutmelding:
+        Systeembericht:
       </span>
       Lorem ipsum dolor sit.
     </span>
@@ -257,7 +257,7 @@ SCSS importeren:
 &lt;span class="system">
   &lt;span class="notification-type">
     &lt;span class="icon icon-warning" aria-hidden="true">&lt;/span>
-    Foutmelding:
+    Systeembericht:
   &lt;/span>
   Lorem ipsum dolor sit.
 &lt;/span>
