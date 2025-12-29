@@ -6,9 +6,9 @@ for (const endpoint of endpoints) {
   const sanitizedEndpoint = endpoint.replace(/^\/|\/$/g, "") || "homepage";
 
   test(`Visual regression for: ${endpoint}`, async ({ page }) => {
-    // Go to the specified endpoint, and wait for the page to load
-    await page.goto(endpoint);
-    await page.waitForTimeout(1000);
+    // Go to the specified endpoint, and wait for all the resources (images,
+    // stylesheets, scripts, iframes, and fonts) to load
+    await page.goto(endpoint, { waitUntil: "load" });
 
     await expect(page).toHaveScreenshot(`${sanitizedEndpoint}.png`, {
       fullPage: true,
