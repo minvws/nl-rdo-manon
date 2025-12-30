@@ -17,6 +17,7 @@
   border-width: theme.$notification-border-width;
   border-style: theme.$notification-border-style;
   gap: theme.$notification-gap;
+  font-weight: theme.$notification-font-weight;
 
   .icon {
     width: theme.$notification-icon-width;
