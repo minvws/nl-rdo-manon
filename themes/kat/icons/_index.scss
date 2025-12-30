@@ -65,7 +65,7 @@ $tabler-icon-map: (
   check: (
     url: url("#{$tabler-icons-path}/check.svg"),
   ),
-  check-circle: (
+  confirmation: (
     url: url("#{$tabler-icons-path}/check-circle.svg"),
   ),
   chevron-down: (
@@ -79,6 +79,18 @@ $tabler-icon-map: (
   ),
   chevron-up: (
     url: url("#{$tabler-icons-path}/chevron-up.svg"),
+  ),
+  chevron-light-down: (
+    url: url("#{$tabler-icons-path}/chevron-compact-down.svg"),
+  ),
+  chevron-light-left: (
+    url: url("#{$tabler-icons-path}/chevron-compact-left.svg"),
+  ),
+  chevron-light-right: (
+    url: url("#{$tabler-icons-path}/chevron-compact-right.svg"),
+  ),
+  chevron-light-up: (
+    url: url("#{$tabler-icons-path}/chevron-compact-up.svg"),
   ),
   circle-check: (
     url: url("#{$tabler-icons-path}/circle-check.svg"),
@@ -97,9 +109,6 @@ $tabler-icon-map: (
   ),
   close: (
     url: url("#{$tabler-icons-path}/close.svg"),
-  ),
-  confirmation: (
-    url: url("#{$tabler-icons-path}/confirmation.svg"),
   ),
   descending: (
     url: url("#{$tabler-icons-path}/descending.svg"),
@@ -120,7 +129,7 @@ $tabler-icon-map: (
     url: url("#{$tabler-icons-path}/edit.svg"),
   ),
   error: (
-    url: url("#{$tabler-icons-path}/alert.svg"),
+    url: url("#{$tabler-icons-path}/error.svg"),
   ),
   external-link: (
     url: url("#{$tabler-icons-path}/external-link.svg"),
@@ -164,8 +173,11 @@ $tabler-icon-map: (
   home: (
     url: url("#{$tabler-icons-path}/home.svg"),
   ),
-  info: (
-    url: url("#{$tabler-icons-path}/info.svg"),
+  informative: (
+    url: url("#{$tabler-icons-path}/informative.svg"),
+  ),
+  lock-closed: (
+    url: url("#{$tabler-icons-path}/lock.svg"),
   ),
   key: (
     url: url("#{$tabler-icons-path}/key.svg"),
@@ -209,6 +221,9 @@ $tabler-icon-map: (
   notification: (
     url: url("#{$tabler-icons-path}/notification.svg"),
   ),
+  on-off: (
+    url: url("#{$tabler-icons-path}/on-off.svg"),
+  ),
   paperclip: (
     url: url("#{$tabler-icons-path}/paperclip.svg"),
   ),
@@ -230,6 +245,15 @@ $tabler-icon-map: (
   printer: (
     url: url("#{$tabler-icons-path}/printer.svg"),
   ),
+  outgoing: (
+    url: url("#{$tabler-icons-path}/arrow-up-right.svg"),
+  ),
+  questionmark: (
+    url: url("#{$tabler-icons-path}/question-mark.svg"),
+  ),
+  reset: (
+    url: url("#{$tabler-icons-path}/refresh.svg"),
+  ),
   refresh: (
     url: url("#{$tabler-icons-path}/refresh.svg"),
   ),
@@ -239,14 +263,20 @@ $tabler-icon-map: (
   search: (
     url: url("#{$tabler-icons-path}/search.svg"),
   ),
+  smartphone: (
+    url: url("#{$tabler-icons-path}/device-mobile.svg"),
+  ),
   settings: (
     url: url("#{$tabler-icons-path}/settings.svg"),
   ),
   share: (
     url: url("#{$tabler-icons-path}/share.svg"),
   ),
-  star: (
-    url: url("#{$tabler-icons-path}/star.svg"),
+  sort: (
+    url: url("#{$tabler-icons-path}/sort.svg"),
+  ),
+  to-top: (
+    url: url("#{$tabler-icons-path}/arrow-bar-to-up.svg"),
   ),
   stop: (
     url: url("#{$tabler-icons-path}/stop.svg"),
@@ -271,6 +301,9 @@ $tabler-icon-map: (
   ),
   volume: (
     url: url("#{$tabler-icons-path}/volume.svg"),
+  ),
+  warning: (
+    url: url("#{$tabler-icons-path}/warning.svg"),
   ),
   x: (
     url: url("#{$tabler-icons-path}/x.svg"),

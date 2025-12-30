@@ -47,6 +47,7 @@ form {
       padding: 0;
       margin-left: 0;
       margin-right: 0;
+      min-height: auto;
       height: theme.$radio-height;
       accent-color: theme.$radio-accent-color;
       vertical-align: theme.$radio-vertical-align;

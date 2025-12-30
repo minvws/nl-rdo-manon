@@ -404,12 +404,12 @@
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
   #default-iconset li {
+    align-items: center;
     padding: 1rem;
     list-style-type: none;
     background: #fff;
     hyphens: none;
-    display: grid;
-    grid-template-columns: 1rem auto;
+    display: flex;
     gap: 0.5rem;
   }
 </style>

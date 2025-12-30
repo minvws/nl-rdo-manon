@@ -38,22 +38,22 @@ $color-destructive-intense: #{color-scheme.$red-800};
 // explanation
 $color-notification-explanation-default: #{color-scheme.$blue-100};
 $color-notification-explanation-subtle: #{color-scheme.$blue-100};
-$color-notification-explanation-intense: #{color-scheme.$blue-200};
+$color-notification-explanation-intense: #{color-scheme.$blue-600};
 
 // confirmation
 $color-notification-confirmation-default: #{color-scheme.$green-100};
 $color-notification-confirmation-subtle: #{color-scheme.$green-50};
-$color-notification-confirmation-intense: #{color-scheme.$green-500};
+$color-notification-confirmation-intense: #{color-scheme.$green-600};
 
 // warning
 $color-notification-warning-default: #{color-scheme.$ochre-50};
 $color-notification-warning-subtle: #{color-scheme.$ochre-50};
-$color-notification-warning-intense: #{color-scheme.$ochre-200};
+$color-notification-warning-intense: #{color-scheme.$ochre-500};
 
 // error
 $color-notification-error-default: #{color-scheme.$red-100};
 $color-notification-error-subtle: #{color-scheme.$red-100};
-$color-notification-error-intense: #{color-scheme.$red-500};
+$color-notification-error-intense: #{color-scheme.$red-600};
 
 // system
 $color-notification-system-default: #{color-scheme.$grey-50};

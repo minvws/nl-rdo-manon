@@ -32,10 +32,6 @@ and spacing sets */
 @use "@minvws/manon/variables" with (
   $theme-name: "kat",
 
-  // Paragraph
-  $p-font-size: body-text.$body-text,
-  $p-line-height: line-height.$line-height-l,
-
   // accordion
   $accordion-gap: spacing.$spacing-100,
   $accordion-button-padding: spacing.$spacing-075 spacing.$spacing-100,
@@ -88,10 +84,19 @@ and spacing sets */
   $article-content-wrapper-gap: spacing.$spacing-200,
 
   // avatar
-  $avatar-font-weight: bold,
+  $avatar-width: 3rem,
+  $avatar-height: 3rem,
+  $avatar-min-width: 3rem,
+  $avatar-min-height: 3rem,
+  $avatar-max-width: 3rem,
+  $avatar-max-height: 3rem,
+  $avatar-text-font-family: semantic.$font-family-secondary,
+  $avatar-text-color: color-scheme.$white,
+  $avatar-hover-text-color: color-scheme.$white,
+  $avatar-font-weight: normal,
   $avatar-border-radius: 50%,
-  $avatar-background-color: semantic.$color-brand-primary,
-  $avatar-hover-background-color: semantic.$color-brand-primary-muted,
+  $avatar-background-color: color-scheme.$violet-500,
+  $avatar-hover-background-color: color-scheme.$violet-600,
 
   // base
   $base-background-color: semantic.$base-background-color,
@@ -180,6 +185,7 @@ and spacing sets */
   $breadcrumb-bar-link-text-decoration: none,
 
   // card
+  $card-box-shadow: 0px shadow.$shadow-s shadow.$shadow-m 0px rgba(0, 0, 0, 0.2),
   $card-background-color: color-scheme.$white,
   $card-border-radius: border-radii.$border-radius-m,
   $card-padding-top: spacing.$spacing-150,
@@ -189,6 +195,14 @@ and spacing sets */
 
   // background-color-offset
   $background-color-offset-padding: inherit spacing.$spacing-150,
+
+  // checkbox
+  $checkbox-width: 1.25rem,
+  $checkbox-height: 1.25rem,
+  $checkbox-accent-color: color-scheme.$blue-600,
+  $checkbox-label-font-weight: normal,
+  $checkbox-label-focus-outline: 2px solid color-scheme.$blue-600,
+  $form-fieldset-checkbox-margin: 0 0 0.5rem,
 
   // code block
   $code-block-padding: spacing.$spacing-200,
@@ -274,7 +288,7 @@ and spacing sets */
   $form-text-color: semantic.$color-text-default,
   $form-gap: spacing.$spacing-200,
   $form-max-width: 40rem,
-  $form-accent-color: semantic.$color-brand-primary,
+  $form-accent-color: color-scheme.$blue-600,
 
   // form group
   $form-group-gap: spacing.$spacing-050,
@@ -371,7 +385,7 @@ and spacing sets */
   $link-font-size: body-text.$body-text,
 
   // list
-  $list-padding: 0 0 0 spacing.$spacing-050,
+  $list-padding: 0 0 0 spacing.$spacing-150,
   $list-gap: spacing.$spacing-050,
   $list-item-padding: spacing.$spacing-025,
 
@@ -412,6 +426,9 @@ and spacing sets */
   $notification-gap: spacing.$spacing-100,
   $notification-border-radius: border-radii.$border-radius-m,
 
+  $notification-table-align-items: center,
+  $notification-table-gap: spacing.$spacing-050,
+
   // notification block element
   $notification-block-element-padding-top: spacing.$spacing-100,
   $notification-block-element-padding-right: spacing.$spacing-100,
@@ -421,36 +438,105 @@ and spacing sets */
 
   // notification type
   $notification-type-font-weight: bold,
+  $notification-type-gap: spacing.$spacing-025,
 
   // notification error
   $notification-error-background-color:
     semantic.$color-notification-error-subtle,
   $notification-error-text-color: semantic.$color-text-default,
   $notification-error-border-color: color-scheme.$black-05,
+  $notification-error-icon-color: semantic.$color-notification-error-intense,
 
   // notification warning
   $notification-warning-background-color:
     semantic.$color-notification-warning-subtle,
   $notification-warning-text-color: semantic.$color-text-default,
   $notification-warning-border-color: color-scheme.$black-05,
+  $notification-warning-icon-color: semantic.$color-notification-warning-intense,
 
   // notification explanation
   $notification-explanation-background-color:
     semantic.$color-notification-explanation-subtle,
   $notification-explanation-text-color: semantic.$color-text-default,
   $notification-explanation-border-color: color-scheme.$black-05,
+  $notification-explanation-icon-color:
+    semantic.$color-notification-explanation-intense,
 
   // notification confirmation
   $notification-confirmation-background-color:
     semantic.$color-notification-confirmation-subtle,
   $notification-confirmation-text-color: semantic.$color-text-default,
   $notification-confirmation-border-color: color-scheme.$black-05,
+  $notification-confirmation-icon-color:
+    semantic.$color-notification-confirmation-intense,
 
   // notification system
   $notification-system-background-color:
     semantic.$color-notification-system-subtle,
   $notification-system-text-color: semantic.$color-text-default,
   $notification-system-border-color: color-scheme.$black-05,
+
+  // pagination
+  $pagination-list-gap: spacing.$spacing-025,
+  $pagination-list-justify-content: center,
+
+  // pagination item
+  $pagination-item-width: 3rem,
+  $pagination-item-height: 3rem,
+
+  // pagination link
+  $pagination-link-background-color: color-scheme.$white,
+  $pagination-link-border-radius: border-radii.$border-radius-l,
+  $pagination-link-text-decoration: none,
+  $pagination-link-border-color: color-scheme.$white,
+  $pagination-link-border-width: 1px,
+  $pagination-link-border-style: solid,
+  $pagination-link-text-color: color-scheme.$blue-600,
+  $pagination-link-font-weight: bold,
+
+  // pagination link hover
+  $pagination-link-hover-text-color: color-scheme.$white,
+  $pagination-link-hover-background-color: color-scheme.$blue-600,
+  $pagination-link-hover-border-color: color-scheme.$blue-600,
+
+  // pagination link active
+  $pagination-link-active-background-color: color-scheme.$blue-600,
+  $pagination-link-active-border-width: 1px,
+  $pagination-link-active-border-style: solid,
+  $pagination-link-active-border-color: color-scheme.$blue-600,
+  $pagination-link-active-text-color: color-scheme.$white,
+  $pagination-link-active-font-weight: bold,
+
+  // Pagination adjecent
+  $pagination-adjacent-font-size: 0,
+
+  // Pagination previous icon
+  $pagination-previous-icon-color: color-scheme.$blue-600,
+  $pagination-previous-icon-mask: map.get(
+      icons.$icon-map,
+      "chevron-left",
+      "url"
+    ),
+  $pagination-previous-icon-width: 1.5rem,
+  $pagination-previous-icon-height: 1.5rem,
+
+  // Pagination next icon
+  $pagination-next-icon-color: color-scheme.$blue-600,
+  $pagination-next-icon-mask: map.get(icons.$icon-map, "chevron-right", "url"),
+  $pagination-next-icon-width: 1.5rem,
+  $pagination-next-icon-height: 1.5rem,
+
+  // Paragraph
+  $p-font-size: body-text.$body-text,
+  $p-line-height: line-height.$line-height-l,
+
+  //radio
+  $radio-width: 1.4rem,
+  $radio-height: 1.4rem,
+  $radio-accent-color: color-scheme.$blue-800,
+  $radio-label-font-weight: normal,
+  $radio-label-focus-outline: 2px solid color-scheme.$blue-800,
+  $form-fieldset-radio-margin: 0 0 0.5rem,
 
   // section
   $section-gap: spacing.$spacing-100,
@@ -494,6 +580,8 @@ and spacing sets */
   $slogan-white-space: nowrap,
 
   // tabs
+  $tab-panel-gap: spacing.$spacing-100,
+  $tab-panel-padding: spacing.$spacing-150 0,
   $tabs-gap: spacing.$spacing-100,
   $tabs-item-border-color: color-scheme.$grey-200,
   $tabs-item-border-style: solid,
@@ -537,6 +625,8 @@ and spacing sets */
   $tiles-align-items: stretch,
 
   // tile
+  $tile-group-gap: spacing.$spacing-100,
+  $tile-gap: spacing.$spacing-100,
   $tile-border-width: 1px,
   $tile-border-style: solid,
   $tile-border-color: color-scheme.$grey-200,
@@ -586,9 +676,15 @@ and spacing sets */
   $form-fieldset-fields-padding: 0,
   $form-fieldset-fields-margin: 0,
 
-  // nota bene
+  // Form general
+  $form-help-icon-mask: map.get(icons.$icon-map, "informative", "url"),
+  // Messages
+  $message-counter-base-background-color: color-scheme.$violet-800,
+
+  // Nota bene
   $nota-bene-font-size: body-text.$body-text-s,
-  $nota-bene-text-color: color-scheme.$grey-700
+  $nota-bene-text-color: color-scheme.$grey-700,
+  $form-fieldset-nota-bene-padding-bottom: 0.5rem
 );
 
 // Include the mixin to generate all .icon-name classes for the theme
