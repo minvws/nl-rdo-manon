@@ -31,28 +31,44 @@ SCSS importeren:
 
 ### Link met icoon voor
 
-<a href="link"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>
+<a href="link">
+  <span class="icon icon-user" aria-hidden="true"></span>
+  Inloggen
+</a>
 
 ```html
-<a href="link"><span class="icon icon-user" aria-hidden="true"></span>Inloggen</a>
+<a href="link">
+  <span class="icon icon-user" aria-hidden="true"></span>
+  Inloggen
+</a>
 ```
 
 ### Link met icoon achter
 
-<a href="link">Details<span class="icon icon-chevron-right" aria-hidden="true"></span></a>
+<a href="link">
+  Details
+  <span class="icon icon-chevron-right" aria-hidden="true"></span>
+</a>
 
 ```html
-<a href="link">Details<span class="icon icon-chevron-right" aria-hidden="true"></span></a>
+<a href="link">
+  Details
+  <span class="icon icon-chevron-right" aria-hidden="true"></span>
+</a>
 ```
 
 ### Externe link met icoon ervoor
 
-<a href="link" rel="external"><span class="icon icon-outgoing" aria-hidden="true"></span>Lorem ipsum</a>
+<a href="link" rel="external">
+  <span class="icon icon-outgoing" aria-hidden="true"></span>
+  Lorem ipsum
+</a>
 
 ```html
-<a href="link" rel="external"
-  ><span class="icon icon-outgoing" aria-hidden="true"></span>Lorem ipsum</a
->
+<a href="link" rel="external">
+  <span class="icon icon-outgoing" aria-hidden="true"></span>
+  Lorem ipsum
+</a>
 ```
 
 ## States
