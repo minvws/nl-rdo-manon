@@ -54,13 +54,12 @@
     width: theme.$radio-width;
     min-width: theme.$radio-width;
     align-self: theme.$radio-align-self;
-    vertical-align: middle;
 
     & + label {
       margin-top: 0;
       font-weight: theme.$radio-label-font-weight;
       width: theme.$radio-label-width;
-      vertical-align: middle;
+      vertical-align: theme.$radio-vertical-align;
 
       cursor: pointer;
 
