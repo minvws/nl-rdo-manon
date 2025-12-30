@@ -30,14 +30,14 @@
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/user-event": "^14.6.1",
-    "@types/node": "^25.0.2",
+    "@types/node": "^25.0.3",
     "jsdom": "^27.3.0",
     "prettier": "^3.7.4",
-    "sass": "^1.96.0",
+    "sass": "^1.97.1",
     "sass-true": "^10.1.0",
     "stylelint": "^16.26.1",
     "stylelint-config-standard-scss": "^16.0.0",
-    "vitest": "^4.0.15"
+    "vitest": "^4.0.16"
   },
   "repository": {
     "type": "git",
