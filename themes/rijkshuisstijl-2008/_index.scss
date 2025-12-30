@@ -2,6 +2,7 @@
 
 /* Theme configuration */
 @forward "config";
+@forward "semantic";
 
 /* Fonts (@font-faces) */
 @use "fonts";
@@ -9,13 +10,16 @@
 /* Icon mask data URIs */
 @use "icons";
 
+/* Core variables */
+/* These are core sets like color schemes, fonts and spacing sets */
+@use "core/color-scheme" as color-scheme;
+@use "core/spacing" as spacing;
+@use "core/typography/body-text" as body-text;
+@use "core/typography/heading" as heading;
+
 /* Semantic variables */
 /* These are variables that have a semantic value. Like branding color */
 @use "semantic" as semantic;
-@use "core/color-scheme/" as color-scheme;
-@use "core/spacing/" as spacing;
-@use "core/typography/body-text/" as body-text;
-@use "core/typography/heading/" as heading;
 
 /* Component variables */
 @use "@minvws/manon/variables" with (
