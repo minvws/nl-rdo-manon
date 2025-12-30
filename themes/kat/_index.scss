@@ -246,6 +246,16 @@ and spacing sets */
   $de-emphasized-line-height: line-height.$line-height-s,
   $de-emphasized-text-color: color-scheme.$grey-700,
 
+  // description list
+  $description-list-width: 100%,
+  $description-list-item-padding: 0.75rem 0,
+  $description-list-item-gap: 1rem,
+  $description-list-border-width: 0 0 1px,
+  $description-list-border-style: solid,
+  $description-list-border-color: color-scheme.$grey-200,
+  $description-list-item-data-font-weight: bold,
+  $description-list-item-title-width: 33.3%,
+
   // form combined field
   $form-combined-field-input-border-radius: #{border-radii.$border-radius-m} 0 0
     #{border-radii.$border-radius-m},
@@ -605,6 +615,17 @@ and spacing sets */
   $table-head-padding: spacing.$spacing-075 spacing.$spacing-075
     spacing.$spacing-075 0,
 
+  // table body head
+  $table-body-head-cell-border-width: 0 0 1px 0,
+  $table-body-head-cell-border-style: solid,
+  $table-body-head-cell-border-color: color-scheme.$grey-150,
+
+  // tbale head sticky
+  $table-sticky-header-background-color: color-scheme.$white,
+
+  //table action buttons
+  $table-action-buttons-button-hover-background-color: currentColor,
+
   // table cell
   $table-cell-border-width: 0 0 1px 0,
   $table-cell-border-style: solid,
@@ -615,6 +636,8 @@ and spacing sets */
   // table foot
   $table-foot-header-padding: spacing.$spacing-075 spacing.$spacing-075
     spacing.$spacing-075 0,
+
+  $table-foot-cell-font-weight: bold,
 
   // table caption
   $table-caption-text-align: left,
@@ -676,8 +699,18 @@ and spacing sets */
   $form-fieldset-fields-padding: 0,
   $form-fieldset-fields-margin: 0,
 
-  // Form general
+  // Form help
+  $form-help-button-padding: 0,
+  $form-help-button-justify-content: center,
+  $form-help-button-width: 1.5rem,
+  $form-help-button-height: 1.5rem,
+  $form-help-button-background-color: transparent,
   $form-help-icon-mask: map.get(icons.$icon-map, "informative", "url"),
+  $form-help-icon-color: color-scheme.$blue-700,
+  $form-help-icon-width: 1.5rem,
+  $form-help-icon-height: 1.5rem,
+  $form-help-button-top: 0.75rem,
+
   // Messages
   $message-counter-base-background-color: color-scheme.$violet-800,
 

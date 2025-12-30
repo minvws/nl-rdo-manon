@@ -27,7 +27,8 @@ form.help {
       font-size: 0;
       box-sizing: border-box;
       top: theme.$form-help-button-top;
-      width: auto;
+      width: theme.$form-help-button-width;
+      height: theme.$form-help-button-height;
       right: theme.$form-help-button-right;
       padding: theme.$form-help-button-padding;
       border-width: theme.$form-help-button-border-width;
@@ -37,6 +38,7 @@ form.help {
       background-color: theme.$form-help-button-background-color;
       color: theme.$form-help-button-text-color;
       margin-right: calc(theme.$form-help-button-space * -1);
+      justify-content: theme.$form-help-button-justify-content;
 
       &:hover {
         background-color: theme.$form-help-button-hover-background-color;
@@ -91,16 +93,6 @@ form.help {
     * {
       &:has(.help-button) {
         position: relative;
-
-        @if validators.args-not-null(
-          theme.$form-help-icon-height,
-          theme.$form-help-button-top
-        )
-        {
-          min-height: calc(
-            theme.$form-help-icon-height + theme.$form-help-button-top
-          );
-        }
       }
     }
   }

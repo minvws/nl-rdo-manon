@@ -3,7 +3,7 @@
 $breakpoint: 24rem !default;
 
 dl {
-  margin: 0;
+  margin: theme.$description-list-margin;
   width: theme.$description-list-width;
   max-width: theme.$description-list-max-width;
 
