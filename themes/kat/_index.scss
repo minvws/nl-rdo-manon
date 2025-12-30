@@ -32,27 +32,6 @@ and spacing sets */
 @use "@minvws/manon/variables" with (
   $theme-name: "kat",
 
-  // Paragraph
-  $p-font-size: body-text.$body-text,
-  $p-line-height: line-height.$line-height-l,
-
-  $tab-panel-gap: spacing.$spacing-100,
-  $tab-panel-padding: spacing.$spacing-150 0,
-
-  $form-help-icon-mask: map.get(icons.$icon-map, "informative", "url"),
-  $card-box-shadow: 0px shadow.$shadow-s shadow.$shadow-m 0px rgba(0, 0, 0, 0.2),
-  $message-counter-base-background-color: color-scheme.$violet-800,
-
-  $tile-group-gap: spacing.$spacing-100,
-  $tile-gap: spacing.$spacing-100,
-  // checkbox
-  $checkbox-width: 1.25rem,
-  $checkbox-height: 1.25rem,
-  $checkbox-accent-color: color-scheme.$blue-600,
-  $checkbox-label-font-weight: normal,
-  $checkbox-label-focus-outline: 2px solid color-scheme.$blue-600,
-  $form-fieldset-checkbox-margin: 0 0 0.5rem,
-
   // accordion
   $accordion-gap: spacing.$spacing-100,
   $accordion-button-padding: spacing.$spacing-075 spacing.$spacing-100,
@@ -206,6 +185,7 @@ and spacing sets */
   $breadcrumb-bar-link-text-decoration: none,
 
   // card
+  $card-box-shadow: 0px shadow.$shadow-s shadow.$shadow-m 0px rgba(0, 0, 0, 0.2),
   $card-background-color: color-scheme.$white,
   $card-border-radius: border-radii.$border-radius-m,
   $card-padding-top: spacing.$spacing-150,
@@ -215,6 +195,14 @@ and spacing sets */
 
   // background-color-offset
   $background-color-offset-padding: inherit spacing.$spacing-150,
+
+  // checkbox
+  $checkbox-width: 1.25rem,
+  $checkbox-height: 1.25rem,
+  $checkbox-accent-color: color-scheme.$blue-600,
+  $checkbox-label-font-weight: normal,
+  $checkbox-label-focus-outline: 2px solid color-scheme.$blue-600,
+  $form-fieldset-checkbox-margin: 0 0 0.5rem,
 
   // code block
   $code-block-padding: spacing.$spacing-200,
@@ -538,6 +526,10 @@ and spacing sets */
   $pagination-next-icon-width: 1.5rem,
   $pagination-next-icon-height: 1.5rem,
 
+  // Paragraph
+  $p-font-size: body-text.$body-text,
+  $p-line-height: line-height.$line-height-l,
+
   //radio
   $radio-width: 1.4rem,
   $radio-height: 1.4rem,
@@ -588,6 +580,8 @@ and spacing sets */
   $slogan-white-space: nowrap,
 
   // tabs
+  $tab-panel-gap: spacing.$spacing-100,
+  $tab-panel-padding: spacing.$spacing-150 0,
   $tabs-gap: spacing.$spacing-100,
   $tabs-item-border-color: color-scheme.$grey-200,
   $tabs-item-border-style: solid,
@@ -631,6 +625,8 @@ and spacing sets */
   $tiles-align-items: stretch,
 
   // tile
+  $tile-group-gap: spacing.$spacing-100,
+  $tile-gap: spacing.$spacing-100,
   $tile-border-width: 1px,
   $tile-border-style: solid,
   $tile-border-color: color-scheme.$grey-200,
@@ -679,6 +675,11 @@ and spacing sets */
   $form-fieldset-input-margin: 0.5rem 0 1rem 0,
   $form-fieldset-fields-padding: 0,
   $form-fieldset-fields-margin: 0,
+
+  // Form general
+  $form-help-icon-mask: map.get(icons.$icon-map, "informative", "url"),
+  // Messages
+  $message-counter-base-background-color: color-scheme.$violet-800,
 
   // Nota bene
   $nota-bene-font-size: body-text.$body-text-s,
