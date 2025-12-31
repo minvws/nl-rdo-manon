@@ -1,6 +1,6 @@
-@use "../core/color-scheme" as color-scheme;
-
 @forward "../config";
+
+@use "../core/color-scheme" as color-scheme;
 
 @use "../" as theme with (
   $color-brand-primary-default: color-scheme.$sky-blue-550,
