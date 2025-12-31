@@ -1,0 +1,19 @@
+@forward "../config";
+
+@use "../core/color-scheme" as color-scheme;
+
+@use "../" as theme with (
+  // Primary
+  $color-brand-primary-default: color-scheme.$orange-400,
+  $color-brand-primary-text-default: color-scheme.$black,
+  $color-brand-primary-muted: color-scheme.$orange-150,
+  $color-brand-primary-text-muted: color-scheme.$black,
+  $color-brand-primary-subtle: color-scheme.$orange-100,
+  $color-brand-primary-text-subtle: color-scheme.$black,
+
+  // Secondary
+  $color-brand-secondary-default: color-scheme.$ro-blue,
+  $color-brand-secondary-text-default: color-scheme.$white
+);
+
+@use "@minvws/manon/components/bundles/all";

@@ -6,28 +6,26 @@ $font-size: 1rem;
 $font-family: "ro-sans-web", sans-serif;
 $font-family-secondary: "ro-serif-web", serif;
 
-// @use "base";
+$color-text-default: color-scheme.$black;
+$color-text-subtle: color-scheme.$black;
+$color-text-intense: color-scheme.$black;
+
 $base-background-color: color-scheme.$white;
 $base-darker: color-scheme.$grey-50;
 $base-offset: color-scheme.$grey-50;
 
-// RO blue
-$color-brand-primary-default: color-scheme.$ro-blue;
-$color-brand-primary-text-default: color-scheme.$white;
-$color-brand-primary-muted: color-scheme.$dark-blue-200;
-$color-brand-primary-text-muted: color-scheme.$black;
-$color-brand-primary-subtle: color-scheme.$dark-blue-100;
-$color-brand-primary-text-subtle: color-scheme.$black;
+// Primary
+$color-brand-primary-default: color-scheme.$ro-blue !default;
+$color-brand-primary-text-default: color-scheme.$white !default;
+$color-brand-primary-muted: color-scheme.$dark-blue-200 !default;
+$color-brand-primary-text-muted: color-scheme.$black !default;
+$color-brand-primary-subtle: color-scheme.$dark-blue-100 !default;
+$color-brand-primary-text-subtle: color-scheme.$black !default;
 
-/* Secundary */
-$color-brand-secondary-default: color-scheme.$ro-blue;
-$color-brand-secondary-text-default: color-scheme.$white;
-$color-brand-secondary-muted: color-scheme.$dark-blue-200;
-$color-brand-secondary-text-muted: color-scheme.$black;
-$color-brand-secondary-subtle: color-scheme.$dark-blue-100;
-$color-brand-secondary-text-subtle: color-scheme.$black;
-
-// @use "text";
-$color-text-default: color-scheme.$black;
-$color-text-subtle: color-scheme.$black;
-$color-text-intense: color-scheme.$black;
+// Secondary
+$color-brand-secondary-default: color-scheme.$ro-blue !default;
+$color-brand-secondary-text-default: color-scheme.$white !default;
+$color-brand-secondary-muted: color-scheme.$dark-blue-200 !default;
+$color-brand-secondary-text-muted: color-scheme.$black !default;
+$color-brand-secondary-subtle: color-scheme.$dark-blue-100 !default;
+$color-brand-secondary-text-subtle: color-scheme.$black !default;

@@ -70,11 +70,10 @@ for (const themeDir of themeDirs) {
       variants.push({
         name: variantName,
         file: `./${theme}/variants/${variantName}.scss`,
-        content: `@use "${theme}" with (
+        content: `@use "./${theme}/variants/${variantName}" with (
           $font-path: "./fonts",
           $icons-path: "./img/icons"
-        );
-        @use "./${theme}/variants/${variantName}";`,
+        );`,
       });
     });
   } else {

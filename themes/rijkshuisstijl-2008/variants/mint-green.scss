@@ -1,0 +1,19 @@
+@forward "../config";
+
+@use "../core/color-scheme" as color-scheme;
+
+@use "../" as theme with (
+  // Primary
+  $color-brand-primary-default: color-scheme.$mint-green-300,
+  $color-brand-primary-text-default: color-scheme.$black,
+  $color-brand-primary-muted: color-scheme.$mint-green-100,
+  $color-brand-primary-text-muted: color-scheme.$black,
+  $color-brand-primary-subtle: color-scheme.$mint-green-50,
+  $color-brand-primary-text-subtle: color-scheme.$black,
+
+  // Secondary
+  $color-brand-secondary-default: color-scheme.$sky-blue-550,
+  $color-brand-secondary-text-default: color-scheme.$white
+);
+
+@use "@minvws/manon/components/bundles/all";
