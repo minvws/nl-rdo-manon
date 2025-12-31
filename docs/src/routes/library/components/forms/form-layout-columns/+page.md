@@ -86,14 +86,14 @@ Voor het weergeven van de inhoud van het formulier in kolommen.
       <label for="voorbeeld-1-date-1-start">van</label>
       <div>
         <span class="nota-bene">Dit veld is verplicht</span>
-        <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" required/>
+        <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" required />
       </div>
     </div>
     <div>
       <label for="voorbeeld-1-date-1-end">tot</label>
       <div>
         <span class="nota-bene">Dit veld is verplicht</span>
-        <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" required/>
+        <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" required />
       </div>
     </div>
   </div>
@@ -144,7 +144,7 @@ Voor het weergeven van de inhoud van het formulier in kolommen.
       <label for="voorbeeld-1-date-1-start">van</label>
       <div class="help-container">
         <span class="nota-bene">Dit veld is verplicht</span>
-        <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" required/>
+        <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" required />
         <p
           class="explanation"
           data-open-label="Toelichting bij het veld: Voorbeeld text input"
@@ -159,7 +159,7 @@ Voor het weergeven van de inhoud van het formulier in kolommen.
       <label for="voorbeeld-1-date-1-end">tot</label>
       <div class="help-container">
         <span class="nota-bene">Dit veld is verplicht</span>
-        <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" required/>
+        <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" required />
         <p
           class="explanation"
           data-open-label="Toelichting bij het veld: Voorbeeld text input"
@@ -208,7 +208,7 @@ Voor het weergeven van de inhoud van het formulier in kolommen.
       <label for="voorbeeld-1-date-1-start">van</label>
       <div class="help-container">
         <span class="nota-bene">Dit veld is verplicht</span>
-        <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" required/>
+        <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" required />
         <p
           class="explanation"
           data-open-label="Toelichting bij het veld: Voorbeeld text input"
@@ -223,7 +223,7 @@ Voor het weergeven van de inhoud van het formulier in kolommen.
       <label for="voorbeeld-1-date-1-end">tot</label>
       <div class="help-container">
         <span class="nota-bene">Dit veld is verplicht</span>
-        <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" required/>
+        <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" required />
         <p
           class="explanation"
           data-open-label="Toelichting bij het veld: Voorbeeld text input"
@@ -284,7 +284,7 @@ Voor het weergeven van de inhoud van het formulier in kolommen.
       <label for="voorbeeld-1-date-1-start">van</label>
       <div class="help-container">
         <span class="nota-bene">Dit veld is verplicht</span>
-        <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" required/>
+        <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" required />
         <p
           class="explanation"
           data-open-label="Toelichting bij het veld: Voorbeeld text input"
@@ -299,7 +299,7 @@ Voor het weergeven van de inhoud van het formulier in kolommen.
       <label for="voorbeeld-1-date-1-end">tot</label>
       <div class="help-container">
         <span class="nota-bene">Dit veld is verplicht</span>
-        <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" required/>
+        <input id="voorbeeld-1-date-1-end" name="voorbeeld-1-date-3-end" required />
         <p
           class="explanation"
           data-open-label="Toelichting bij het veld: Voorbeeld text input"
