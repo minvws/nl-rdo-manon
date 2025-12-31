@@ -13,6 +13,23 @@ form.help {
   .help-container {
     position: relative;
     box-sizing: border-box;
+
+    &:has(.column-2),
+    &:has(.column-3),
+    &:has(.column-4) {
+      .help-button {
+        top: theme.$form-help-columns-button-top;
+      }
+    }
+
+    .form-group.required {
+      border: 1px dashed red !important;
+
+      // &.required,
+      // .required {
+      //   top: theme.$form-help-columns-required-button-top;
+      // }
+    }
   }
 
   > div,
@@ -39,6 +56,8 @@ form.help {
       color: theme.$form-help-button-text-color;
       margin-right: calc(theme.$form-help-button-space * -1);
       justify-content: theme.$form-help-button-justify-content;
+      align-items: center;
+      justify-content: center;
 
       &:hover {
         background-color: theme.$form-help-button-hover-background-color;
