@@ -12,6 +12,9 @@ $form-help-button-border-radius: null !default;
 $form-help-button-background-color: null !default;
 $form-help-button-text-color: null !default;
 $form-help-button-margin: null !default;
+$form-help-button-width: null !default;
+$form-help-button-height: null !default;
+$form-help-button-justify-content: null !default;
 
 // hover
 $form-help-button-hover-background-color: null !default;
@@ -37,3 +40,7 @@ $form-help-expanded-icon-height: null !default;
 
 // Explanation
 $form-help-button-explanation-gap: null !default;
+
+// Columns
+$form-help-columns-button-top: null !default;
+$form-help-columns-required-button-top: null !default;

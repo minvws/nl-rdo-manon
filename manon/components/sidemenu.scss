@@ -171,8 +171,7 @@ main.sidemenu {
       > nav {
         border: 0;
         width: 0;
-        padding-left: 0;
-        padding-right: 0;
+        padding: theme.$sidemenu-closed-padding;
 
         > ul {
           display: none;
