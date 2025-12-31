@@ -3,12 +3,17 @@
 @use "../core/color-scheme" as color-scheme;
 
 @use "../" as theme with (
+  // Primary
   $color-brand-primary-default: color-scheme.$yellow-150,
   $color-brand-primary-text-default: color-scheme.$black,
   $color-brand-primary-muted: color-scheme.$yellow-100,
   $color-brand-primary-text-muted: color-scheme.$black,
   $color-brand-primary-subtle: color-scheme.$yellow-50,
-  $color-brand-primary-text-subtle: color-scheme.$black
+  $color-brand-primary-text-subtle: color-scheme.$black,
+
+  // Secondary
+  $color-brand-secondary-default: color-scheme.$ruby-red-600,
+  $color-brand-secondary-text-default: color-scheme.$white
 );
 
 @use "@minvws/manon/components/bundles/all";
