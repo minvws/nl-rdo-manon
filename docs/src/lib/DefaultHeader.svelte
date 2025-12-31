@@ -11,7 +11,7 @@
     <nav
       data-open-label="Menu"
       data-close-label="Sluit menu"
-      data-media="(min-width: 30rem)"
+      data-media="(min-width: 50rem)"
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
@@ -36,7 +36,7 @@
     <nav
       data-open-label="Menu"
       data-close-label="Sluit menu"
-      data-media="(min-width: 30rem)"
+      data-media="(min-width: 50rem)"
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
@@ -51,7 +51,7 @@
     <nav
       data-open-label="Menu"
       data-close-label="Sluit menu"
-      data-media="(min-width: 30rem)"
+      data-media="(min-width: 50rem)"
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
