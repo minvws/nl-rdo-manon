@@ -43,6 +43,8 @@ form.help {
       min-height: 0;
       font-size: 0;
       box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
       top: theme.$form-help-button-top;
       width: theme.$form-help-button-width;
       height: theme.$form-help-button-height;
@@ -55,9 +57,6 @@ form.help {
       background-color: theme.$form-help-button-background-color;
       color: theme.$form-help-button-text-color;
       margin-right: calc(theme.$form-help-button-space * -1);
-      justify-content: theme.$form-help-button-justify-content;
-      align-items: center;
-      justify-content: center;
 
       &:hover {
         background-color: theme.$form-help-button-hover-background-color;
