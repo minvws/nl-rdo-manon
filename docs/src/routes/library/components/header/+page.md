@@ -20,7 +20,8 @@ SCSS importeren:
 @use "@minvws/manon/components/header";
 ```
 
-In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor meer informatie hierover zie <a href="skip-to-content">Skip to content</a>
+In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor
+meer informatie hierover zie <a href="skip-to-content">Skip to content</a>
 
 ```scss
 @use "@minvws/manon/components/skip-to-content";
@@ -36,7 +37,9 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+  <a href="#main-content" class="button focus-only skip-to-content"
+    >Ga direct naar inhoud</a
+  >
 
   <nav
     data-open-label="Menu"
@@ -67,7 +70,9 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 ```html
 <header>
   <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+    <a href="#main-content" class="button focus-only skip-to-content"
+      >Ga direct naar inhoud</a
+    >
 
     <nav
       data-open-label="Menu"
@@ -96,7 +101,9 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 
 ```html
 <header>
-  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+  <a href="#main-content" class="button focus-only skip-to-content"
+    >Ga direct naar inhoud</a
+  >
 
   <nav
     data-open-label="Menu"
@@ -114,10 +121,18 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 
       <form action="" class="inline">
         <div>
-          <label for="voorbeeld-1-date-1-start" class="visually-hidden">Zoeken</label>
+          <label for="voorbeeld-1-date-1-start" class="visually-hidden"
+            >Zoeken</label
+          >
           <div class="combined-field">
-            <input id="voorbeeld-1-date-1-start" name="voorbeeld-1-date-1-start" type="text" />
-            <button aria-label="zoeken"><span class="icon icon-search"></span></button>
+            <input
+              id="voorbeeld-1-date-1-start"
+              name="voorbeeld-1-date-1-start"
+              type="text"
+            />
+            <button aria-label="zoeken">
+              <span class="icon icon-search"></span>
+            </button>
           </div>
         </div>
       </form>
@@ -128,43 +143,23 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 
 ### Voorbeeld: Navigatie en logo
 
-<div class="resize icore-open">
-  <iframe src="/snippets/header-navigation-with-logo/icore-open" title="Voorbeeld"></iframe>
+#### Logo binnen de navigatie
+
+<div class="resize">
+  <iframe src="/snippets/header-navigation-with-logo-inside" title="Voorbeeld"></iframe>
 </div>
 
-<div class="resize rijkshuisstijl-2008">
-  <iframe src="/snippets/header-navigation-with-logo/rijkshuisstijl-2008" title="Voorbeeld"></iframe>
+<Components.Snippet path="header-navigation-with-logo-inside/+page.svelte"
+as="code" language="html" />
+
+#### Logo buiten de navigatie
+
+<div class="resize">
+  <iframe src="/snippets/header-navigation-with-logo-outside" title="Voorbeeld"></iframe>
 </div>
 
-<div class="resize kat">
-  <iframe src="/snippets/header-navigation-with-logo/kat" title="Voorbeeld"></iframe>
-</div>
-
-```html
-<header>
-  <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
-
-    <nav
-      data-open-label="Menu"
-      data-close-label="Sluit menu"
-      data-media="(min-width: 30rem)"
-      aria-label="Hoofdnavigatie"
-      class="collapsible"
-    >
-      <a href="#" class="logo"> <img src="$img/logo.svg" alt="Placeholder logo" />Manon </a>
-
-      <div class="collapsing-element">
-        <ul>
-          <li><a href="#">Voorbeeld-link 1</a></li>
-          <li><a href="#">Voorbeeld-link 2</a></li>
-          <li><a href="#">Voorbeeld-link 3</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</header>
-```
+<Components.Snippet path="header-navigation-with-logo-outside/+page.svelte"
+as="code" language="html" />
 
 ### Voorbeeld: Navigatie met meerdere menu's
 
@@ -175,7 +170,9 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 ```html
 <header>
   <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+    <a href="#main-content" class="button focus-only skip-to-content"
+      >Ga direct naar inhoud</a
+    >
 
     <nav
       data-open-label="Menu"
@@ -209,7 +206,9 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 ```html
 <header>
   <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+    <a href="#main-content" class="button focus-only skip-to-content"
+      >Ga direct naar inhoud</a
+    >
 
     <nav
       data-open-label="Menu"
