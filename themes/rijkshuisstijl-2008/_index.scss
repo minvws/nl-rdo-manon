@@ -263,7 +263,7 @@
   $footer-padding-right: 5%,
   $footer-padding-bottom: 3rem,
   $footer-padding-left: 5%,
-  $footer-flex-direction: row,
+  $footer-flex-direction: column,
   $footer-list-flex-direction: column,
   $footer-link-text-color: inherit,
   $footer-link-hover-text-color: inherit,
@@ -272,6 +272,15 @@
   $footer-navigation-width: auto,
   $footer-link-focus-outline-color: semantic.$color-brand-primary-text-default,
   $footer-navigation-list-icon-color: semantic.$color-brand-primary-text-default,
+  $footer-content-wrapper-flex-direction: row,
+  $footer-content-wrapper-justify-content: space-between,
+
+  // Footer meta
+  $footer-meta-border-top: 1px solid color-scheme.$white,
+  $footer-meta-padding: spacing.$spacing-100 0,
+  $footer-meta-align-items: flex-end,
+  $footer-meta-justify-content: flex-end,
+  $footer-meta-margin: spacing.$spacing-300 0 0 0,
 
   // Form
   $form-padding-top: spacing.$spacing-200,

@@ -271,6 +271,10 @@ and spacing sets */
   $footer-min-height: 5.5rem,
   $footer-navigation-width: auto,
 
+  // footer meta
+  $footer-meta-font-size: body-text.$body-text-s,
+  $footer-meta-text-color: color-scheme.$grey-700,
+
   // footer content-wrapper
   $footer-content-wrapper-max-width: 100%,
   $footer-content-wrapper-align-items: center,
