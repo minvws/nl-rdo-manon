@@ -31,6 +31,7 @@ $sidemenu-nav-background-repeat: null !default;
 $sidemenu-nav-background-size: null !default;
 $sidemenu-nav-background-position: null !default;
 $sidemenu-nav-gap: null !default;
+$sidemenu-background-color: null !default;
 
 // Link
 $sidemenu-text-decoration: null !default;
@@ -92,3 +93,10 @@ $sidemenu-collapsed-icon-color: null !default;
 $sidemenu-collapsed-icon-mask: null !default;
 $sidemenu-collapsed-icon-width: null !default;
 $sidemenu-collapsed-icon-height: null !default;
+
+// Breakpoint
+$sidemenu-button-breakpoint-margin-left: null !default;
+$sidemenu-breakpoint-background-color: null !default;
+$sidemenu-nav-breakpoint-border-width: null !default;
+$sidemenu-nav-breakpoint-border-style: null !default;
+$sidemenu-nav-breakpoint-border-color: null !default;

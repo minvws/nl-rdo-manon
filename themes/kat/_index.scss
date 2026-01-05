@@ -83,6 +83,11 @@ and spacing sets */
   $article-content-wrapper-max-width: 90rem,
   $article-content-wrapper-gap: spacing.$spacing-200,
 
+  $article-breakpoint-1-padding-top: spacing.$spacing-100,
+  $article-breakpoint-1-padding-right: spacing.$spacing-100,
+  $article-breakpoint-1-padding-bottom: spacing.$spacing-100,
+  $article-breakpoint-1-padding-left: spacing.$spacing-100,
+
   // avatar
   $avatar-width: 3rem,
   $avatar-height: 3rem,
@@ -368,7 +373,6 @@ and spacing sets */
   $hero-max-width: calc(100% + 8rem),
   $hero-width: calc(100% + 8rem),
   $hero-margin: -4rem 0 0 -4rem,
-  $hero-height: 25rem,
   $hero-border-radius: 0,
   $hero-font-size: body-text.$body-text-l,
   $hero-background-color: color-scheme.$violet-200,
@@ -384,6 +388,7 @@ and spacing sets */
   $hero-content-wrapper-gap: spacing.$spacing-250,
   $hero-content-wrapper-justify-content: center,
   $hero-content-wrapper-align-items: center,
+  $hero-breakpoint-1-padding: spacing.$spacing-200,
 
   // icon
   $icon-width: 1.5rem,
