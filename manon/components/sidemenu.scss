@@ -1,10 +1,11 @@
 @use "../variables" as theme;
 
-$sidemenu-breakpoint: 50rem !default;
-
 body.sidemenu,
 .manon-root.sidemenu,
 main.sidemenu {
+  $sidemenu-width: theme.$sidemenu-nav-width;
+  $sidemenu-breakpoint: 50rem !default;
+
   /* Places sidemenu next to the main content of the page */
   display: flex;
   flex-direction: row;
@@ -66,7 +67,7 @@ main.sidemenu {
     display: block;
     box-sizing: border-box;
 
-    @media (width >= theme.$sidemenu-nav-width) {
+    @media (width >= $sidemenu-width) {
       width: theme.$sidemenu-nav-width;
     }
 
