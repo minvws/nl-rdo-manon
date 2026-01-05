@@ -328,6 +328,8 @@
   $form-help-button-padding: spacing.$spacing-050,
   $form-help-button-top: 0rem,
   $form-help-button-right: 0rem,
+  $form-help-button-width: 2.75rem,
+  $form-help-button-height: 2.75rem,
 
   // Form help icon
   $form-help-icon-mask: map.get(icons.$icon-map, "questionmark", "url"),
@@ -375,8 +377,8 @@
   // filter
   $filter-icon-color: color-scheme.$ro-blue,
   $filter-icon-mask: map.get(icons.$icon-map, "chevron-down", "url"),
-  $filter-icon-width: 1.25rem,
-  $filter-icon-height: 1.25rem,
+  $filter-icon-width: 1rem,
+  $filter-icon-height: 1rem,
   $filter-intro-justify-content: space-between,
   $filter-button-font-size: 0,
   $filter-close-icon-mask: map.get(icons.$icon-map, "chevron-up", "url"),
