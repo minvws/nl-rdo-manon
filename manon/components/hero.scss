@@ -75,7 +75,7 @@
     padding: theme.$hero-title-padding;
   }
 
-  @media (min-width: 50rem) {
+  @media (width >= 50rem) {
     padding: theme.$hero-padding;
   }
 }
