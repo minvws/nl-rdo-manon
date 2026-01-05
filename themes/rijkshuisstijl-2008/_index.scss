@@ -2,6 +2,7 @@
 
 /* Theme configuration */
 @forward "config";
+@forward "semantic";
 
 /* Fonts (@font-faces) */
 @use "fonts";
@@ -9,13 +10,16 @@
 /* Icon mask data URIs */
 @use "icons";
 
+/* Core variables */
+/* These are core sets like color schemes, fonts and spacing sets */
+@use "core/color-scheme" as color-scheme;
+@use "core/spacing" as spacing;
+@use "core/typography/body-text" as body-text;
+@use "core/typography/heading" as heading;
+
 /* Semantic variables */
 /* These are variables that have a semantic value. Like branding color */
 @use "semantic" as semantic;
-@use "core/color-scheme/" as color-scheme;
-@use "core/spacing/" as spacing;
-@use "core/typography/body-text/" as body-text;
-@use "core/typography/heading/" as heading;
 
 /* Component variables */
 @use "@minvws/manon/variables" with (
@@ -335,6 +339,8 @@
   $form-help-button-padding: spacing.$spacing-050,
   $form-help-button-top: 0rem,
   $form-help-button-right: 0rem,
+  $form-help-button-width: 2.75rem,
+  $form-help-button-height: 2.75rem,
 
   // Form help icon
   $form-help-icon-mask: map.get(icons.$icon-map, "questionmark", "url"),
@@ -382,8 +388,8 @@
   // filter
   $filter-icon-color: color-scheme.$ro-blue,
   $filter-icon-mask: map.get(icons.$icon-map, "chevron-down", "url"),
-  $filter-icon-width: 1.25rem,
-  $filter-icon-height: 1.25rem,
+  $filter-icon-width: 1rem,
+  $filter-icon-height: 1rem,
   $filter-intro-justify-content: space-between,
   $filter-button-font-size: 0,
   $filter-close-icon-mask: map.get(icons.$icon-map, "chevron-up", "url"),
@@ -406,8 +412,8 @@
   $header-list-item-align-items: stretch,
   $header-link-padding: 0 spacing.$spacing-050,
   $header-link-text-decoration: none,
-  $header-link-current-background-color: semantic.$color-brand-primary-subtle,
-  $header-link-current-text-color: semantic.$color-brand-primary-text-subtle,
+  $header-link-current-background-color: semantic.$color-brand-primary-muted,
+  $header-link-current-text-color: semantic.$color-brand-primary-text-muted,
   $header-list-gap: 0,
   $header-justify-content: stretch,
   $header-form-justify-content: center,
@@ -489,9 +495,9 @@
   $hero-font-size: body-text.$body-text-l,
   $hero-align-items: center,
   $hero-flex-direction: column,
-  $hero-text-color: color-scheme.$white,
+  $hero-text-color: semantic.$color-brand-secondary-text-default,
   $hero-content-wrapper-gap: spacing.$spacing-100,
-  $hero-background-color: color-scheme.$ro-blue,
+  $hero-background-color: semantic.$color-brand-secondary-default,
   $hero-content-wrapper-justify-content: center,
   $hero-content-wrapper-padding: spacing.$spacing-175 spacing.$spacing-300,
   $hero-content-wrapper-max-width: 82rem,

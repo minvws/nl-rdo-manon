@@ -10,8 +10,7 @@
 @use "icons";
 
 /* Core variables */
-/* These are core sets like color schemes, fonts
-and spacing sets */
+/* These are core sets like color schemes, fonts and spacing sets */
 @use "core/border-radii" as border-radii;
 @use "core/color-scheme" as color-scheme;
 @use "core/shadow" as shadow;
@@ -377,6 +376,7 @@ and spacing sets */
   $form-help-button-border-radius: 50%,
   $form-help-button-padding: spacing.$spacing-025,
   $form-help-button-top: spacing.$spacing-050,
+  $form-help-columns-button-top: 2.5rem,
 
   // form help icon
   $form-help-icon-mask: map.get(icons.$icon-map, "questionmark", "url"),
