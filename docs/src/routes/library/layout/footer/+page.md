@@ -55,15 +55,17 @@ SCSS importeren:
   <pre>
     <code>
 &lt;footer>
-  &lt;span class="slogan">Manon - Rijksoverheid 2008 thema&lt;/span>
-  &lt;nav aria-labelledby="footer-nav-1-heading">
-    &lt;h3 id="footer-nav-1-heading">Lorem ipsum&lt;/h3>
-    &lt;ul>
-      &lt;li>&lt;a href="#" aria-current="page">Dolor&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="#">Sit&lt;/a>&lt;/li>
-      &lt;li>&lt;a href="#">Amet&lt;/a>&lt;/li>
-    &lt;/ul>
-  &lt;/nav>
+  &lt;div class="content-wrapper">
+    &lt;span class="slogan">De Rijksoverheid. Voor Nederland&lt;/span>
+    &lt;nav aria-labelledby="footer-nav-1-heading">
+      &lt;h3 id="footer-nav-1-heading">Lorem ipsum&lt;/h3>
+      &lt;ul>
+        &lt;li>&lt;a href="#" aria-current="page">Dolor&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Sit&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Amet&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/nav>
+  &lt;/div>
 &lt;/footer>
     </code>
   </pre>
