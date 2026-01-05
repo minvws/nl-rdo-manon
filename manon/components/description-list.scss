@@ -1,8 +1,9 @@
 @use "../variables" as theme;
 
-$breakpoint: 24rem !default;
-
 dl {
+  $breakpoint-1: 24rem !default;
+  $breakpoint-2: 50rem !default;
+
   margin: 0;
   width: theme.$description-list-width;
   max-width: theme.$description-list-max-width;
@@ -48,9 +49,31 @@ dl {
     width: theme.$description-list-item-data-width;
   }
 
-  @media (width >= $breakpoint) {
+  @media (width >= $breakpoint-1) {
     div {
-      flex-direction: theme.$description-list-item-flex-direction-after-breakpoint;
+      flex-direction: theme.$description-list-item-breakpoint-1-flex-direction;
+
+      dt {
+        width: theme.$description-list-item-title-breakpoint-1-width;
+      }
+
+      dd {
+        width: theme.$description-list-item-data-breakpoint-1-width;
+      }
+    }
+  }
+
+  @media (width >= $breakpoint-2) {
+    div {
+      flex-direction: theme.$description-list-item-breakpoint-2-flex-direction;
+
+      dt {
+        width: theme.$description-list-item-title-breakpoint-2-width;
+      }
+
+      dd {
+        width: theme.$description-list-item-data-breakpoint-2-width;
+      }
     }
   }
 }

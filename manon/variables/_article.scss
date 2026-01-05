@@ -1,3 +1,4 @@
+// Article
 $article-background-color: null !default;
 $article-flex-direction: column !default;
 $article-justify-content: null !default;
@@ -9,8 +10,12 @@ $article-padding-bottom: null !default;
 $article-padding-left: null !default;
 $article-max-width: null !default;
 $article-border-radius: null !default;
+$article-breakpoint-1-padding-top: null !default;
+$article-breakpoint-1-padding-right: null !default;
+$article-breakpoint-1-padding-bottom: null !default;
+$article-breakpoint-1-padding-left: null !default;
 
-// content wrapper
+// Content wrapper
 $article-content-wrapper-background-color: null !default;
 $article-content-wrapper-flex-direction: column !default;
 $article-content-wrapper-justify-content: null !default;
@@ -22,3 +27,23 @@ $article-content-wrapper-padding-bottom: null !default;
 $article-content-wrapper-padding-left: null !default;
 $article-content-wrapper-max-width: null !default;
 $article-content-wrapper-border-radius: null !default;
+
+// Breakpoint 1
+$article-breakpoint-1-padding-top: null !default;
+$article-breakpoint-1-padding-right: null !default;
+$article-breakpoint-1-padding-bottom: null !default;
+$article-breakpoint-1-padding-left: null !default;
+$article-content-wrapper-breakpoint-1-padding-top: null !default;
+$article-content-wrapper-breakpoint-1-padding-right: null !default;
+$article-content-wrapper-breakpoint-1-padding-bottom: null !default;
+$article-content-wrapper-breakpoint-1-padding-left: null !default;
+
+// Breakpoint 2
+$article-breakpoint-2-padding-top: null !default;
+$article-breakpoint-2-padding-right: null !default;
+$article-breakpoint-2-padding-bottom: null !default;
+$article-breakpoint-2-padding-left: null !default;
+$article-content-wrapper-breakpoint-2-padding-top: null !default;
+$article-content-wrapper-breakpoint-2-padding-right: null !default;
+$article-content-wrapper-breakpoint-2-padding-bottom: null !default;
+$article-content-wrapper-breakpoint-2-padding-left: null !default;

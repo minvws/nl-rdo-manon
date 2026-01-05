@@ -51,7 +51,7 @@
     <nav
       data-open-label="Menu"
       data-close-label="Sluit menu"
-      data-media="(min-width: 50rem)"
+      data-media="(min-width: 65rem)"
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >

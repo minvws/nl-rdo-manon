@@ -1,6 +1,8 @@
 @use "../variables" as theme;
 
 %logo-styling {
+  $breakpoint-1: 24rem !default;
+
   align-self: theme.$logo-align-self;
   background-color: theme.$logo-background-color;
   border: 0;
@@ -43,6 +45,10 @@
     object-fit: theme.$logo-img-object-fit;
     padding: theme.$logo-img-padding;
     background-color: theme.$logo-img-background-color;
+  }
+
+  @media (width >= $breakpoint-1) {
+    font-size: theme.$logo-breakpoint-1-font-size;
   }
 }
 

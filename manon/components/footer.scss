@@ -4,6 +4,8 @@ body > footer,
 .manon-root > footer,
 .page-footer,
 %footer-style {
+  $breakpoint-1: 24rem !default;
+
   @if theme.$footer-flex-direction or
     theme.$footer-gap or
     theme.$footer-justify-content or
@@ -36,6 +38,10 @@ body > footer,
   border-width: theme.$footer-border-width;
   border-style: theme.$footer-border-style;
   border-color: theme.$footer-border-color;
+
+  @media (width >= $breakpoint-1) {
+    flex-wrap: theme.$footer-breakpoint-1-flex-wrap;
+  }
 
   .content-wrapper {
     flex-direction: theme.$footer-content-wrapper-flex-direction;

@@ -10,7 +10,7 @@
   background-color: theme.$hero-background-color;
   margin: theme.$hero-margin;
   border-radius: theme.$hero-border-radius;
-  padding: theme.$hero-padding;
+  padding: theme.$hero-breakpoint-1-padding;
   justify-content: theme.$hero-justify-content;
   align-items: theme.$hero-align-items;
   flex-direction: theme.$hero-flex-direction;
@@ -18,6 +18,7 @@
   background-repeat: theme.$hero-background-repeat;
   color: theme.$hero-text-color;
   font-size: theme.$hero-font-size;
+  box-sizing: border-box;
 
   @if theme.$hero-justify-content or
     theme.$hero-align-items or
@@ -72,5 +73,9 @@
     font-size: theme.$hero-title-font-size;
     color: theme.$hero-title-text-color;
     padding: theme.$hero-title-padding;
+  }
+
+  @media (min-width: 50rem) {
+    padding: theme.$hero-padding;
   }
 }

@@ -83,6 +83,11 @@ and spacing sets */
   $article-align-items: flex-start,
   $article-max-width: 60rem,
 
+  $article-breakpoint-1-padding-top: spacing.$spacing-100,
+  $article-breakpoint-1-padding-right: spacing.$spacing-100,
+  $article-breakpoint-1-padding-bottom: spacing.$spacing-100,
+  $article-breakpoint-1-padding-left: spacing.$spacing-100,
+
   // article content wrapper
   $article-content-wrapper-background-color: color-scheme.$oc-white,
   $article-content-wrapper-padding-top: spacing.$spacing-200,
@@ -471,6 +476,7 @@ and spacing sets */
   $hero-content-wrapper-gap: spacing.$spacing-100,
   $hero-content-wrapper-justify-content: center,
   $hero-content-wrapper-align-items: center,
+  $hero-breakpoint-1-padding: spacing.$spacing-200,
 
   // Heading base set
   $heading-xs-font-size: 1rem,
@@ -653,6 +659,12 @@ and spacing sets */
   $sidemenu-nav-padding-left: spacing.$spacing-200,
   $sidemenu-nav-width: 15rem,
   $sidemenu-nav-gap: spacing.$spacing-100,
+  $sidemenu-background-color: color-scheme.$oc-white,
+  $sidemenu-breakpoint-background-color: transparent,
+  $sidemenu-nav-border-width: 1px,
+  $sidemenu-nav-border-style: solid,
+  $sidemenu-nav-border-color: color-scheme.$oc-gray-3,
+  $sidemenu-nav-breakpoint-border-width: 0,
 
   // sidemenu main content
   $sidemenu-page-padding-top: spacing.$spacing-200,
