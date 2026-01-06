@@ -1,11 +1,12 @@
 name: Deploy docs to latest GitHub Pages
 
-# Run this workflow when the "Deploy docs" workflow completes
+# Run this workflow when the "Deploy docs to versioned GitHub Pages" workflow completes
 on:
   workflow_run:
-    workflows: ["Deploy docs"]
+    workflows: ["Deploy docs to versioned GitHub Pages"]
     types:
       - completed
+  workflow_dispatch:
 
 permissions:
   contents: read
