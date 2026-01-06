@@ -17,7 +17,6 @@ concurrency:
 
 jobs:
   deploy-latest:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
@@ -25,19 +24,19 @@ jobs:
         with:
           fetch-depth: 0 # Fetch all history for tags
 
-      - name: Ensure this is the latest tag
+      - name: Get latest tag and verify for push events
         run: |
           # Get all tags, sort them semantically, and pick the highest stable version
           LATEST_TAG=$(git tag --sort=-v:refname | grep -v - | head -n 1)
-          TRIGGER_TAG=$(git tag --points-at ${{ github.event.workflow_run.head_sha }} | head -n 1)
-
-          if [ "$TRIGGER_TAG" != "$LATEST_TAG" ]; then
-            echo "The triggered tag ($TRIGGER_TAG) is not the latest tag ($LATEST_TAG). Exiting."
-            gh run cancel ${{ github.run_id }}
-            gh run watch ${{ github.run_id }}
-          fi
-
           echo "LATEST_TAG=$LATEST_TAG" >> $GITHUB_ENV
+
+          if [ "${{ github.event_name }}" == "push" ]; then
+            TRIGGER_TAG=${{ github.ref_name }}
+            if [ "$TRIGGER_TAG" != "$LATEST_TAG" ]; then
+              echo "The triggered tag ($TRIGGER_TAG) is not the latest tag ($LATEST_TAG). Not deploying to 'latest'."
+              exit 1
+            fi
+          fi
 
       - name: Checkout latest tag
         uses: actions/checkout@v6
