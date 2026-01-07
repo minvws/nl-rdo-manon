@@ -147,9 +147,9 @@
           <h3>Installatie</h3>
           <p>
             Bekijk de <a href="{base}/getting-started/installation">installatiehandleiding</a>
-            voor een gedetailleerde uitleg over de installatie, configuratie en integratie van Manon in
-            je project. Deze gids behandelt alle benodigde stappen om Manon correct te installeren en
-            te configureren. Dit omvat eveneens informatie over het integreren van eventuele JavaScript-bestanden
+            voor een gedetailleerde uitleg over de installatie, configuratie en integratie van Manon
+            in je project. Deze gids behandelt alle benodigde stappen om Manon correct te installeren
+            en te configureren. Dit omvat eveneens informatie over het integreren van eventuele JavaScript-bestanden
             die nodig zijn voor bepaalde functionaliteiten.
           </p>
         </div>
@@ -168,7 +168,8 @@
         <ul>
           {#each previousVersions as version}
             <li>
-              <a href="https://minvws.github.io/nl-rdo-manon/{version}" target="_blank">{version}</a>
+              <a href="https://minvws.github.io/nl-rdo-manon/{version}" target="_blank">{version}</a
+              >
             </li>
           {/each}
         </ul>
@@ -178,4 +179,3 @@
 </main>
 
 <DefaultFooter />
-

@@ -113,8 +113,8 @@
             <span class="icon icon-warning" aria-hidden="true"></span>
             Waarschuwing
           </span>
-          Het voorbeeld met een pseudo-element direct op button wordt uitgefaseerd omdat het niet de voorkeur
-          heeft omwille van toegankelijkheid. Gebruik in plaats hiervan een van de overige voorbeelden.
+          Het voorbeeld met een pseudo-element direct op button wordt uitgefaseerd omdat het niet de
+          voorkeur heeft omwille van toegankelijkheid. Gebruik in plaats hiervan een van de overige voorbeelden.
         </p>
         <button>
           <span class="icon icon-on-off" aria-label="Aan- of uitschakelen"></span>
