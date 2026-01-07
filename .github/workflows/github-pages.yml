@@ -1,0 +1,122 @@
+name: Deploy docs to GitHub Pages
+
+on:
+  push:
+    tags:
+      - 'v**'
+    tags-ignore:
+      - 'v*-*'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build Docs
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Create build directory
+        run: mkdir -p pages_build
+
+      - name: Get latest 5 tags
+        id: get_tags
+        run: |
+          TAGS=$(git tag --sort=-v:refname | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | head -n 5)
+          echo "TAGS<<EOF" >> $GITHUB_OUTPUT
+          echo "$TAGS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+          LATEST_TAG=$(echo "$TAGS" | head -n 1)
+          echo "LATEST_TAG=$LATEST_TAG" >> $GITHUB_OUTPUT
+          echo "Deploying docs for these tags:"
+          echo "$TAGS"
+          echo "The 'latest' documentation will be from tag: $LATEST_TAG"
+
+      - name: Build versioned docs for latest 5 tags
+        run: |
+          ORIGINAL_HEAD=$(git rev-parse HEAD)
+          REPO_NAME="${{ github.event.repository.name }}"
+          TAG_LIST="${{ steps.get_tags.outputs.TAGS }}"
+          JSON_ARRAY=$(echo "$TAG_LIST" | awk -v ORS=, '{print "\""$0"\""}' | sed 's/,$//')
+          VERSIONS_JSON="{\"versions\": [$JSON_ARRAY]}"
+
+          for TAG in $TAG_LIST; do
+            echo "--- Processing tag: $TAG ---"
+            git checkout "$TAG"
+
+            echo "$VERSIONS_JSON" > docs/src/lib/versions.json
+            echo "Created versions.json for $TAG"
+
+            echo "Installing dependencies for $TAG..."
+            pnpm install --frozen-lockfile
+
+            echo "Building versioned docs for $TAG..."
+            export BASE_PATH="/$REPO_NAME/$TAG"
+            pnpm --dir docs run build
+
+            echo "Copying docs to pages_build/$TAG..."
+            mkdir -p "pages_build/$TAG"
+            mv docs/build/* "pages_build/$TAG/"
+          done
+
+          echo "--- Restoring HEAD to $ORIGINAL_HEAD ---"
+          git checkout "$ORIGINAL_HEAD" >/dev/null 2>&1
+
+      - name: Build docs for 'latest'
+        run: |
+          LATEST_TAG="${{ steps.get_tags.outputs.LATEST_TAG }}"
+          REPO_NAME="${{ github.event.repository.name }}"
+          TAG_LIST="${{ steps.get_tags.outputs.TAGS }}"
+          JSON_ARRAY=$(echo "$TAG_LIST" | awk -v ORS=, '{print "\""$0"\""}' | sed 's/,$//')
+          VERSIONS_JSON="{\"versions\": [$JSON_ARRAY]}"
+
+          echo "--- Building 'latest' docs from tag: $LATEST_TAG ---"
+          git checkout "$LATEST_TAG"
+
+          echo "$VERSIONS_JSON" > docs/src/lib/versions.json
+          echo "Created versions.json for latest build"
+
+          echo "Installing dependencies for $LATEST_TAG..."
+          pnpm install --frozen-lockfile
+
+          echo "Building 'latest' docs..."
+          export BASE_PATH="/$REPO_NAME"
+          pnpm --dir docs run build
+
+          echo "Copying 'latest' docs to root of pages_build..."
+          mv docs/build/* pages_build/
+
+      - name: List final build structure
+        run: ls -R pages_build
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: pages_build/
+
+  # deploy:
+  #   name: Deploy Docs
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   runs-on: ubuntu-24.04
+  #   needs: build
+  #   steps:
+  #     - name: Deploy to GitHub Pages
+  #       id: deployment
+  #       uses: actions/deploy-pages@v4
