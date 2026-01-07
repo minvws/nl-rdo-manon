@@ -6,6 +6,11 @@
   import { base } from "$app/paths";
   import DefaultHeader from "$lib/DefaultHeader.svelte";
   import DefaultFooter from "$lib/DefaultFooter.svelte";
+  import versionsData from "$lib/versions.json";
+
+  const versions = versionsData.versions;
+  const latestVersion = versions[0];
+  const previousVersions = versions.slice(1);
 </script>
 
 <svelte:head>
@@ -157,13 +162,15 @@
       <div>
         <h2>📚 Versies</h2>
         <p>
-          De huidige versie van Manon is versie <code>v18.0.0</code>. Eerdere versies van de
+          De huidige versie van Manon is versie <code>{latestVersion}</code>. Eerdere versies van de
           documentatie zijn nog beschikbaar:
         </p>
         <ul>
-          <li>
-            <a href="https://minvws.github.io/nl-rdo-manon/v17.0.0" target="_blank">v17.0.0</a>
-          </li>
+          {#each previousVersions as version}
+            <li>
+              <a href="https://minvws.github.io/nl-rdo-manon/{version}" target="_blank">{version}</a>
+            </li>
+          {/each}
         </ul>
       </div>
     </div>
@@ -171,3 +178,4 @@
 </main>
 
 <DefaultFooter />
+
