@@ -66,7 +66,7 @@ installatiemethoden:
 
 ### Handmatige installatie
 
-[Download Manon](https://github.com/minvws/nl-rdo-manon/archive/refs/heads/main.zip)
+[Download Manon](https://github.com/minvws/nl-rdo-manon/releases/latest/download/manon-themes.zip)
 en link het `manon-themes/dist/manon.min.css` in de `<head>` van je
 HTML-bestand:
 
@@ -140,7 +140,7 @@ Hieronder staan enkele projecten die gemaakt zijn met Manon:
 | **iCore Open Theme for Sphinx** | 🧑‍💻 [https://github.com/minvws/manon-icore-open-sphinx-theme](https://github.com/minvws/manon-icore-open-sphinx-theme)                                                                                    |
 | **iRealisatie Website**         | 🌐 [https://irealisatie.nl](https://irealisatie.nl)                                                                                                                                                      |
 | **Mijn Gezondheidsoverzicht**   | 🌐 [https://irealisatie.nl/projecten/mijn-gezondheidsoverzicht](https://irealisatie.nl/projecten/mijn-gezondheidsoverzicht)                                                                              |
-| **OpenKAT**                     | 🌐 [https://openkat.nl](https://openkat.nl)<br>🧑‍💻 [https://github.com/minvws/nl-kat-coordination](https://github.com/SSC-ICT-Innovatie/nl-kat-coordination)                                              |
+| **OpenKAT**                     | 🌐 [https://openkat.nl](https://openkat.nl)<br>🧑‍💻 [https://github.com/SSC-ICT-Innovatie/nl-kat-coordination](https://github.com/SSC-ICT-Innovatie/nl-kat-coordination)                                   |
 | **ZaakVolgSysteem**             | 🌐 [https://irealisatie.nl/projecten/zaakvolgsysteem](https://irealisatie.nl/projecten/zaakvolgsysteem)                                                                                                  |
 
 ## 🌱 Oorsprong
