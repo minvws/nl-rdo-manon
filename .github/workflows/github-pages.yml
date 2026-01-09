@@ -62,7 +62,7 @@ jobs:
             echo "Created versions.json for $TAG"
 
             echo "Installing dependencies for $TAG..."
-            pnpm install --frozen-lockfile
+            pnpm install
 
             echo "Building versioned docs for $TAG..."
             export BASE_PATH="/$REPO_NAME/$TAG"
