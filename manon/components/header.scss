@@ -62,6 +62,12 @@ body > header,
     justify-content: theme.$header-link-justify-content;
     align-items: theme.$header-link-align-items;
     min-height: theme.$header-link-min-height;
+    gap: theme.$header-link-gap;
+
+    .icon {
+      height: theme.$header-link-icon-height;
+      width: theme.$header-link-icon-width;
+    }
 
     &:visited,
     &:visited:hover {
