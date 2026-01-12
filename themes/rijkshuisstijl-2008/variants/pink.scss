@@ -12,8 +12,12 @@
   $color-brand-primary-text-subtle: color-scheme.$black,
 
   // Secondary
-  $color-brand-secondary-default: color-scheme.$ro-blue,
-  $color-brand-secondary-text-default: color-scheme.$white
+  $color-brand-secondary-default: color-scheme.$pink-50,
+  $color-brand-secondary-text-default: color-scheme.$black,
+  $color-brand-secondary-muted: color-scheme.$pink-200,
+  $color-brand-secondary-text-muted: color-scheme.$black,
+  $color-brand-secondary-subtle: color-scheme.$pink-50,
+  $color-brand-secondary-text-subtle: color-scheme.$black
 );
 
 @use "@minvws/manon/components/bundles/all";

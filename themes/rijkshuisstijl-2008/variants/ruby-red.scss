@@ -8,7 +8,15 @@
   $color-brand-primary-muted: color-scheme.$ruby-red-200,
   $color-brand-primary-text-muted: color-scheme.$black,
   $color-brand-primary-subtle: color-scheme.$ruby-red-100,
-  $color-brand-primary-text-subtle: color-scheme.$black
+  $color-brand-primary-text-subtle: color-scheme.$black,
+
+  // Secondary
+  $color-brand-secondary-default: color-scheme.$ruby-red-100,
+  $color-brand-secondary-text-default: color-scheme.$black,
+  $color-brand-secondary-muted: color-scheme.$ruby-red-200,
+  $color-brand-secondary-text-muted: color-scheme.$black,
+  $color-brand-secondary-subtle: color-scheme.$ruby-red-100,
+  $color-brand-secondary-text-subtle: color-scheme.$black
 );
 
 @use "@minvws/manon/components/bundles/all";
