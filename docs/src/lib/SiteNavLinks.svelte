@@ -7,7 +7,7 @@
 </script>
 
 <ul {...props}>
-  <li><NavLink href="{base}/">Home</NavLink></li>
+  <li><NavLink href="{base}/"><span class="icon icon-home">Hoofdpagina</span> Home</NavLink></li>
   <li><NavLink href="{base}/getting-started">Aan de slag</NavLink></li>
   <li><NavLink href="{base}/library">Bibliotheek</NavLink></li>
   <li><NavLink href="{base}/utility">Utility Classes</NavLink></li>

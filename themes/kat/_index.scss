@@ -341,6 +341,9 @@ and spacing sets */
   $header-border-width: 0 0 1px 0,
   $header-border-style: solid,
   $header-border-color: color-scheme.$violet-200,
+  $header-link-gap: spacing.$spacing-025,
+  $header-link-icon-height: 1rem,
+  $header-link-icon-width: 1rem,
 
   // header nav
   $header-navigation-width: 100%,
