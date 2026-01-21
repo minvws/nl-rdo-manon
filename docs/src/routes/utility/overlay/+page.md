@@ -21,20 +21,24 @@ SCSS importeren:
 
 <h2 id="examples">Voorbeelden</h2>
 
-### Voorbeeld: div
+### Voorbeeld: Hero
 
-<section id="introduction" class="hero">
-  <div class="content-wrapper">
-    <h1 class="page-title heading-l">Lorem ipsum dolor sit</h1>
-    <p>Consectetur adepicing elit</p>
-    <button>Aan de slag</button>
-    <span class="overlay"></span>
-    <img src="$img/strand.jpg" alt="Foto van een strand" class="image-background">
-  </div>
-</section>
+<div class="resize">
+  <iframe src="/snippets/hero-overlay" title="Voorbeeld"></iframe>
+</div>
 
 ```html
-<div class="overlay">
-  <img src="$img/strand.jpg" alt="Foto van een strand" class="image-background" />
-</div>
+<main>
+  <section class="hero">
+    <span class="overlay"></span>
+    <div class="image-background">
+      <img src="$img/strand.jpg" alt="Foto van een strand" />
+    </div>
+    <div class="content-wrapper">
+      <h1 class="page-title heading-l">Lorem ipsum dolor sit</h1>
+      <p>Consectetur adepicing elit</p>
+      <button>Aan de slag</button>
+    </div>
+  </section>
+</main>
 ```
