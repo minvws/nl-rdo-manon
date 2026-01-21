@@ -2,6 +2,7 @@
 
 /* Theme configuration */
 @forward "config";
+@forward "semantic";
 
 /* Fonts (@font-faces) */
 @use "fonts";
@@ -9,13 +10,16 @@
 /* Icon mask data URIs */
 @use "icons";
 
+/* Core variables */
+/* These are core sets like color schemes, fonts and spacing sets */
+@use "core/color-scheme" as color-scheme;
+@use "core/spacing" as spacing;
+@use "core/typography/body-text" as body-text;
+@use "core/typography/heading" as heading;
+
 /* Semantic variables */
 /* These are variables that have a semantic value. Like branding color */
 @use "semantic" as semantic;
-@use "core/color-scheme/" as color-scheme;
-@use "core/spacing/" as spacing;
-@use "core/typography/body-text/" as body-text;
-@use "core/typography/heading/" as heading;
 
 /* Component variables */
 @use "@minvws/manon/variables" with (
@@ -78,11 +82,13 @@
 
   // Article content wrapper
   $article-content-wrapper-padding-top: spacing.$spacing-175,
-  $article-content-wrapper-padding-right: spacing.$spacing-300,
+  $article-content-wrapper-padding-right: spacing.$spacing-100,
   $article-content-wrapper-padding-bottom: spacing.$spacing-175,
-  $article-content-wrapper-padding-left: spacing.$spacing-300,
+  $article-content-wrapper-padding-left: spacing.$spacing-100,
   $article-content-wrapper-gap: spacing.$spacing-175,
   $article-content-wrapper-max-width: 82rem,
+  $article-content-wrapper-breakpoint-1-padding-right: spacing.$spacing-300,
+  $article-content-wrapper-breakpoint-1-padding-left: spacing.$spacing-300,
 
   // Avatar
   $avatar-background-color: semantic.$color-brand-secondary-default,
@@ -106,11 +112,13 @@
 
   // Section content wrapper
   $section-content-wrapper-padding-top: spacing.$spacing-175,
-  $section-content-wrapper-padding-right: spacing.$spacing-300,
+  $section-content-wrapper-padding-right: spacing.$spacing-100,
   $section-content-wrapper-padding-bottom: spacing.$spacing-175,
-  $section-content-wrapper-padding-left: spacing.$spacing-300,
+  $section-content-wrapper-padding-left: spacing.$spacing-100,
   $section-content-wrapper-gap: spacing.$spacing-175,
   $section-content-wrapper-max-width: 82rem,
+  $section-content-wrapper-breakpoint-1-padding-right: spacing.$spacing-300,
+  $section-content-wrapper-breakpoint-1-padding-left: spacing.$spacing-300,
 
   // Base
   $base-font-size: 1.125rem,
@@ -212,8 +220,8 @@
   $code-block-border-style: solid,
   $code-block-border-color: color-scheme.$grey-100,
   $code-block-code-padding: spacing.$spacing-200 spacing.$spacing-150,
-  $code-block-copy-button-top: spacing.$spacing-100,
-  $code-block-copy-button-right: spacing.$spacing-100,
+  $code-block-copy-button-top: 0,
+  $code-block-copy-button-right: 0,
   $code-block-copy-button-padding: spacing.$spacing-050,
   $code-block-copy-button-background-color: transparent,
   $code-block-copy-button-text-color: color-scheme.$grey-700,
@@ -231,6 +239,9 @@
 
   // collapsing element
   $collapsing-element-list-item-border-color: color-scheme.$grey-100,
+  $collapsing-element-max-width: 100%,
+  $collapsing-element-top: 3.5rem,
+  $collapsing-element-list-item-link-text-color: semantic.$color-text-default,
 
   // Collapsing element list item link hover
   $collapsing-element-list-item-link-hover-background-color:
@@ -250,7 +261,9 @@
   $description-list-item-padding: spacing.$spacing-075 0,
   $description-list-item-title-width: 15rem,
   $description-list-item-gap: spacing.$spacing-100,
-  $description-list-item-data-width: calc(80% - 16rem),
+  $description-list-item-data-breakpoint-2-width: calc(80% - 16rem),
+  $description-list-item-flex-direction: column,
+
   // Emphasized
   $emphasized-font-size: body-text.$body-text-l,
 
@@ -264,6 +277,8 @@
   $footer-padding-bottom: 3rem,
   $footer-padding-left: 5%,
   $footer-flex-direction: column,
+  $footer-flex-wrap: wrap,
+  $footer-gap: spacing.$spacing-100,
   $footer-list-flex-direction: column,
   $footer-link-text-color: inherit,
   $footer-link-hover-text-color: inherit,
@@ -333,6 +348,8 @@
   $form-help-button-padding: spacing.$spacing-050,
   $form-help-button-top: 0rem,
   $form-help-button-right: 0rem,
+  $form-help-button-width: 2.75rem,
+  $form-help-button-height: 2.75rem,
 
   // Form help icon
   $form-help-icon-mask: map.get(icons.$icon-map, "questionmark", "url"),
@@ -380,8 +397,8 @@
   // filter
   $filter-icon-color: color-scheme.$ro-blue,
   $filter-icon-mask: map.get(icons.$icon-map, "chevron-down", "url"),
-  $filter-icon-width: 1.25rem,
-  $filter-icon-height: 1.25rem,
+  $filter-icon-width: 1rem,
+  $filter-icon-height: 1rem,
   $filter-intro-justify-content: space-between,
   $filter-button-font-size: 0,
   $filter-close-icon-mask: map.get(icons.$icon-map, "chevron-up", "url"),
@@ -404,9 +421,10 @@
   $header-list-item-align-items: stretch,
   $header-link-padding: 0 spacing.$spacing-050,
   $header-link-text-decoration: none,
-  $header-link-current-background-color: semantic.$color-brand-primary-subtle,
-  $header-link-current-text-color: semantic.$color-brand-primary-text-subtle,
+  $header-link-current-background-color: semantic.$color-brand-primary-muted,
+  $header-link-current-text-color: semantic.$color-brand-primary-text-muted,
   $header-list-gap: 0,
+  $header-link-gap: spacing.$spacing-050,
   $header-justify-content: stretch,
   $header-form-justify-content: center,
   $header-form-button-align-self: stretch,
@@ -482,22 +500,20 @@
   $heading-xxl-text-color: inherit,
 
   // hero
-  $hero-height: 25rem,
-  $hero-max-width: calc(100% + 8rem),
-  $hero-width: calc(100% + 8rem),
-  $hero-margin: -4rem 0 0 -4rem,
+  $hero-margin: -4rem 0 0 0,
   $hero-border-radius: 0,
   $hero-font-size: body-text.$body-text-l,
   $hero-align-items: center,
   $hero-flex-direction: column,
-  $hero-text-color: color-scheme.$white,
+  $hero-text-color: semantic.$color-brand-secondary-text-subtle,
   $hero-content-wrapper-gap: spacing.$spacing-100,
-  $hero-background-color: color-scheme.$ro-blue,
+  $hero-background-color: semantic.$color-brand-secondary-subtle,
   $hero-content-wrapper-justify-content: center,
   $hero-content-wrapper-padding: spacing.$spacing-175 spacing.$spacing-300,
   $hero-content-wrapper-max-width: 82rem,
   $hero-title-font-size: heading.$heading-xl,
   $hero-title-padding: 0,
+  $hero-justify-content: center,
 
   // List
   $list-padding: spacing.$spacing-100,
@@ -591,7 +607,8 @@
   $page-title-max-width: 82rem,
   $page-title-margin: 0 auto,
   $page-title-width: 100%,
-  $page-title-padding: 0 0 0 spacing.$spacing-300,
+  $page-title-padding: 0 0 0 spacing.$spacing-100,
+  $page-title-padding-breakpoint-1: 0 0 0 spacing.$spacing-300,
 
   // Pagination
   $pagination-justify-content: flex-start,
@@ -647,6 +664,9 @@
   $logo-img-margin: 0 0 0 calc(50% - 1.25rem),
   $logo-img-object-fit: contain,
   $logo-width: 40rem,
+
+  $logo-font-size: body-text.$body-text-s,
+  $logo-breakpoint-1-font-size: body-text.$body-text-m,
 
   // Slogan
   $slogan-font-size: 1.80203rem,
@@ -751,13 +771,15 @@
   $sidemenu-nav-border-style: solid,
   $sidemenu-nav-border-color: color-scheme.$grey-100,
   $sidemenu-text-decoration: none,
+  $sidemenu-background-color: white,
 
   // sidemenu button
   $sidemenu-button-background-color: semantic.$color-brand-primary-default,
   $sidemenu-button-padding: spacing.$spacing-050,
   $sidemenu-button-color: semantic.$color-brand-primary-text-default,
   $sidemenu-button-font-size: 0,
-  $sidemenu-button-margin-left: 18rem,
+  $sidemenu-button-margin-left: 0,
+  $sidemenu-button-breakpoint-margin-left: 18rem,
 
   // sidemenu expanded
   $sidemenu-expanded-icon-mask: map.get(icons.$icon-map, "close", "url"),

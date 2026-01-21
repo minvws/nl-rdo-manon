@@ -13,6 +13,18 @@ form.help {
   .help-container {
     position: relative;
     box-sizing: border-box;
+
+    &:has(.column-2),
+    &:has(.column-3),
+    &:has(.column-4) {
+      .help-button {
+        top: theme.$form-help-columns-button-top;
+      }
+    }
+
+    .form-group.required {
+      border: 1px dashed red !important;
+    }
   }
 
   > div,
@@ -26,8 +38,11 @@ form.help {
       min-height: 0;
       font-size: 0;
       box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
       top: theme.$form-help-button-top;
-      width: auto;
+      width: theme.$form-help-button-width;
+      height: theme.$form-help-button-height;
       right: theme.$form-help-button-right;
       padding: theme.$form-help-button-padding;
       border-width: theme.$form-help-button-border-width;
@@ -91,16 +106,6 @@ form.help {
     * {
       &:has(.help-button) {
         position: relative;
-
-        @if validators.args-not-null(
-          theme.$form-help-icon-height,
-          theme.$form-help-button-top
-        )
-        {
-          min-height: calc(
-            theme.$form-help-icon-height + theme.$form-help-button-top
-          );
-        }
       }
     }
   }

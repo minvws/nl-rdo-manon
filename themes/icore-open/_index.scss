@@ -10,8 +10,7 @@
 @use "icons";
 
 /* Core variables */
-/* These are core sets like color schemes, fonts
-and spacing sets */
+/* These are core sets like color schemes, fonts and spacing sets */
 @use "core/border-radii" as border-radii;
 @use "core/color-scheme" as color-scheme;
 @use "core/shadow" as shadow;
@@ -82,6 +81,11 @@ and spacing sets */
   $article-justify-content: flex-start,
   $article-align-items: flex-start,
   $article-max-width: 60rem,
+
+  $article-breakpoint-1-padding-top: spacing.$spacing-100,
+  $article-breakpoint-1-padding-right: spacing.$spacing-100,
+  $article-breakpoint-1-padding-bottom: spacing.$spacing-100,
+  $article-breakpoint-1-padding-left: spacing.$spacing-100,
 
   // article content wrapper
   $article-content-wrapper-background-color: color-scheme.$oc-white,
@@ -372,6 +376,7 @@ and spacing sets */
   $form-help-button-border-radius: 50%,
   $form-help-button-padding: spacing.$spacing-025,
   $form-help-button-top: spacing.$spacing-050,
+  $form-help-columns-button-top: 2.5rem,
 
   // form help icon
   $form-help-icon-mask: map.get(icons.$icon-map, "questionmark", "url"),
@@ -418,6 +423,7 @@ and spacing sets */
   $header-padding-right: spacing.$spacing-300,
   $header-padding-left: spacing.$spacing-300,
   $header-align-items: stretch,
+  $header-link-gap: spacing.$spacing-050,
 
   // header content wrapper
   $header-content-wrapper-align-items: stretch,
@@ -471,6 +477,7 @@ and spacing sets */
   $hero-content-wrapper-gap: spacing.$spacing-100,
   $hero-content-wrapper-justify-content: center,
   $hero-content-wrapper-align-items: center,
+  $hero-breakpoint-1-padding: spacing.$spacing-200,
 
   // Heading base set
   $heading-xs-font-size: 1rem,
@@ -653,6 +660,8 @@ and spacing sets */
   $sidemenu-nav-padding-left: spacing.$spacing-200,
   $sidemenu-nav-width: 15rem,
   $sidemenu-nav-gap: spacing.$spacing-100,
+  $sidemenu-background-color: color-scheme.$oc-gray-1,
+  $sidemenu-breakpoint-background-color: transparent,
 
   // sidemenu main content
   $sidemenu-page-padding-top: spacing.$spacing-200,

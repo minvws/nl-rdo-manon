@@ -1,0 +1,76 @@
+name: Deploy docs to GitHub Pages
+
+on:
+  push:
+    tags:
+      - 'v**'
+      - '!v*-*'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy-latest:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0 # Fetch all history for tags
+
+      - name: Determine latest tag and check if deployment should proceed
+        id: tag_check
+        run: |
+          LATEST_TAG=$(git tag --sort=-v:refname | grep -v - | head -n 1)
+          echo "latest_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+
+          SHOULD_DEPLOY="false"
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            SHOULD_DEPLOY="true"
+            echo "Workflow manually dispatched. Proceeding with deployment of latest tag: $LATEST_TAG"
+          elif [[ "${{ github.event_name }}" == "push" && "${{ github.ref_name }}" == "$LATEST_TAG" ]]; then
+            SHOULD_DEPLOY="true"
+            echo "Triggered tag (${{ github.ref_name }}) is the latest stable tag. Proceeding with deployment."
+          else
+            echo "Triggered tag (${{ github.ref_name }}) is not the latest stable tag ($LATEST_TAG). Skipping deployment."
+          fi
+          echo "should_deploy=$SHOULD_DEPLOY" >> $GITHUB_OUTPUT
+
+      - name: Checkout latest tag
+        if: steps.tag_check.outputs.should_deploy == 'true'
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ steps.tag_check.outputs.latest_tag }}
+
+      - name: Configure GitHub Pages
+        if: steps.tag_check.outputs.should_deploy == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Setup
+        if: steps.tag_check.outputs.should_deploy == 'true'
+        uses: ./.github/actions/setup
+
+      - name: Build
+        if: steps.tag_check.outputs.should_deploy == 'true'
+        working-directory: docs
+        env:
+          BASE_PATH: "/${{ github.event.repository.name }}"
+        run: pnpm run build
+
+      - name: Upload GitHub Pages artifact
+        if: steps.tag_check.outputs.should_deploy == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs/build/
+
+      - name: Deploy to GitHub Pages
+        if: steps.tag_check.outputs.should_deploy == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4

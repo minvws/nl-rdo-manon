@@ -1,6 +1,9 @@
 @use "../variables" as theme;
 
 .page-title {
+  $breakpoint-1: 24rem !default;
+  $breakpoint-2: 50rem !default;
+
   line-height: theme.$page-title-line-height;
   font-size: theme.$page-title-font-size;
   font-weight: theme.$page-title-font-weight;
@@ -9,4 +12,12 @@
   margin: theme.$page-title-margin;
   box-sizing: border-box;
   padding: theme.$page-title-padding;
+
+  @media (width >= $breakpoint-1) {
+    padding: theme.$page-title-padding-breakpoint-1;
+  }
+
+  @media (width >= $breakpoint-2) {
+    padding: theme.$page-title-padding-breakpoint-2;
+  }
 }
