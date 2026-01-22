@@ -38,15 +38,6 @@
   }
 }
 
-.logo.icore-open,
-.icore-open .logo {
-  @if theme.$theme-name == "icore-open" {
-    display: theme.$logo-display;
-    padding: 1rem;
-    background-color: theme.$header-background-color;
-  }
-}
-
 .logo.kat,
 .kat .logo {
   @if theme.$theme-name == "kat" {
