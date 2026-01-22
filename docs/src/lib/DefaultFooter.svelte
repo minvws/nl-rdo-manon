@@ -11,10 +11,12 @@
 </footer>
 
 <footer class="rijkshuisstijl-2008">
-  <span class="slogan">Manon - Rijkshuisstijl 2008 thema</span>
-  <nav aria-label="main navigation">
-    <SiteNavLinks />
-  </nav>
+  <div class="content-wrapper">
+    <span class="slogan">Manon - Rijkshuisstijl 2008 thema</span>
+    <nav aria-label="main navigation">
+      <SiteNavLinks />
+    </nav>
+  </div>
 </footer>
 
 <footer class="kat">

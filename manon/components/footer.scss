@@ -190,4 +190,22 @@ body > footer,
       }
     }
   }
+
+  .meta {
+    border-top: theme.$footer-meta-border-top;
+    padding: theme.$footer-meta-padding;
+    align-items: theme.$footer-meta-align-items;
+    justify-content: theme.$footer-meta-justify-content;
+    margin: theme.$footer-meta-margin;
+
+    p,
+    span {
+      font-size: theme.$footer-meta-font-size;
+      color: theme.$footer-meta-text-color;
+    }
+
+    @if theme.$footer-meta-align-items or theme.$footer-meta-justify-content {
+      display: flex;
+    }
+  }
 }
