@@ -37,7 +37,7 @@
     "sass-true": "^10.1.0",
     "stylelint": "^17.0.0",
     "stylelint-config-standard-scss": "^17.0.0",
-    "vitest": "^4.0.17"
+    "vitest": "^4.0.18"
   },
   "repository": {
     "type": "git",
