@@ -151,7 +151,7 @@ body > header,
       align-self: theme.$header-navigation-input-algin-self;
     }
 
-    > div {
+    .content-wrapper {
       display: flex;
       width: 100%;
       margin: 0 auto;

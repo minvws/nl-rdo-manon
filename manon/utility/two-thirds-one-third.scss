@@ -23,6 +23,9 @@ $breakpoint: 42rem !default;
   > article,
   > div {
     padding: 0;
+    gap: theme.$layout-gap;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (width >= $breakpoint) {
