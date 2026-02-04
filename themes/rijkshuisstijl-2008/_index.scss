@@ -522,7 +522,8 @@
   $hero-justify-content: center,
 
   // Layout
-  $layout-gap: spacing.$spacing-200,
+  $layout-gap: spacing.$spacing-300,
+  $layout-gap-nested: spacing.$spacing-200,
 
   // List
   $list-padding: 0 spacing.$spacing-100,

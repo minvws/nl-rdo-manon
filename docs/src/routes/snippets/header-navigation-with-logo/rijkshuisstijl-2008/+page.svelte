@@ -16,16 +16,16 @@
     Rijksoverheid
   </a>
 
-  <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
+  <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
 
-    <nav
-      data-open-label="Menu"
-      data-close-label="Sluit menu"
-      data-media="(min-width: 30rem)"
-      aria-label="Hoofdnavigatie"
-      class="collapsible"
-    >
+  <nav
+    data-open-label="Menu"
+    data-close-label="Sluit menu"
+    data-media="(min-width: 30rem)"
+    aria-label="Hoofdnavigatie"
+    class="collapsible"
+  >
+    <div class="content-wrapper">
       <div class="collapsing-element">
         <ul>
           <li><a href={page.url.pathname}>Voorbeeld-link 1</a></li>
@@ -33,8 +33,8 @@
           <li><a href={page.url.pathname}>Voorbeeld-link 3</a></li>
         </ul>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
 
 <main id="main-content"></main>

@@ -6,6 +6,9 @@
   width: 100%;
   box-sizing: border-box;
   margin: theme.$container-s-margin;
+  gap: theme.$container-gap;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-s {

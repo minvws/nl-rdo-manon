@@ -45,7 +45,7 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
     aria-label="Hoofdnavigatie"
     class="collapsible"
   >
-    <div class="collapsing-element">
+    <div class="content-wrapper collapsing-element">
       <ul>
         <li><a href="#">Voorbeeld-link 1</a></li>
         <li><a href="#">Voorbeeld-link 2</a></li>
@@ -56,36 +56,6 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
 </header>
 
 <main id="main-content"></main>
-```
-
-### Voorbeeld: Navigatie met content wrapper
-
-<div class="resize">
-  <iframe src="/snippets/header-navigation-with-content-wrapper" title="Voorbeeld"></iframe>
-</div>
-
-```html
-<header>
-  <div class="content-wrapper">
-    <a href="#main-content" class="button focus-only skip-to-content">Ga direct naar inhoud</a>
-
-    <nav
-      data-open-label="Menu"
-      data-close-label="Sluit menu"
-      data-media="(min-width: 30rem)"
-      aria-label="Hoofdnavigatie"
-      class="collapsible"
-    >
-      <div class="collapsing-element">
-        <ul>
-          <li><a href="#">Voorbeeld-link 1</a></li>
-          <li><a href="#">Voorbeeld-link 2</a></li>
-          <li><a href="#">Voorbeeld-link 3</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</header>
 ```
 
 ### Voorbeeld: Navigatie met zoekveld
@@ -105,7 +75,7 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
     aria-label="Hoofdnavigatie"
     class="collapsible"
   >
-    <div class="collapsing-element">
+    <div class="content-wrapper collapsing-element">
       <ul>
         <li><a href="#">Voorbeeld-link 1</a></li>
         <li><a href="#">Voorbeeld-link 2</a></li>
@@ -124,6 +94,8 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
     </div>
   </nav>
 </header>
+
+<main id="main-content"></main>
 ```
 
 ### Voorbeeld: Navigatie en logo
@@ -184,7 +156,7 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-      <div class="collapsing-element">
+      <div class="content-wrapper collapsing-element">
         <ul>
           <li><a href="#">Voorbeeld-link 1</a></li>
           <li><a href="#">Voorbeeld-link 2</a></li>
@@ -218,7 +190,7 @@ In de voorbeelden wordt ook gebruikt gemaakt van de skip to content knop. Voor m
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-      <div class="collapsing-element">
+      <div class="content-wrapper collapsing-element">
         <ul>
           <li><a href="#">Voorbeeld-link 1</a></li>
           <li><a href="#">Voorbeeld-link 2</a></li>

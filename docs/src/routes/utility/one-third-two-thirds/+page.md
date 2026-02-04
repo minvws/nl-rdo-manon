@@ -25,7 +25,7 @@ SCSS importeren:
 ### Voorbeeld: `div`
 
 <div class="one-third-two-thirds">
-  <div>
+  <div class="content-wrapper">
     <h2>Lorem ipsum dolor sit</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
@@ -34,8 +34,13 @@ SCSS importeren:
     </p>
   </div>
 
-  <div>
+  <div class="content-wrapper">
     <h2>Lorem ipsum dolor sit</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
+      luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie
+      sed, tempus in massa.
+    </p>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
       luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie
@@ -46,11 +51,11 @@ SCSS importeren:
 
 ```html
 <div class="one-third-two-thirds">
-  <div>
+  <div class="content-wrapper">
     <!-- Content -->
   </div>
 
-  <div>
+  <div class="content-wrapper">
     <!-- Content -->
   </div>
 </div>
@@ -60,11 +65,11 @@ SCSS importeren:
 
 ```html
 <section class="one-third-two-thirds">
-  <div>
+  <div class="content-wrapper">
     <!-- Content -->
   </div>
 
-  <div>
+  <div class="content-wrapper">
     <!-- Content -->
   </div>
 </section>
@@ -74,11 +79,11 @@ SCSS importeren:
 
 ```html
 <article class="one-third-two-thirds">
-  <div>
+  <div class="content-wrapper">
     <!-- Content -->
   </div>
 
-  <div>
+  <div class="content-wrapper">
     <!-- Content -->
   </div>
 </article>

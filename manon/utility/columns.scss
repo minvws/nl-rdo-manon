@@ -18,6 +18,15 @@ $columns-breakpoint-3: 70rem !default;
     box-sizing: border-box;
   }
 
+  > section,
+  > article,
+  > div {
+    padding: 0;
+    gap: theme.$layout-gap-nested;
+    display: flex;
+    flex-direction: column;
+  }
+
   img {
     max-width: 100%;
   }
