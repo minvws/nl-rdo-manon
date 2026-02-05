@@ -12,7 +12,7 @@
 
 <main id="main-content" tabindex="-1">
   <article id="example-pages">
-    
+
     <h1 class="page-title">Voorbeelden</h1>
     <div class="content-wrapper">
       <div>
@@ -28,7 +28,7 @@
           <p class="de-emphasized" aria-hidden="true">Voorbeelden openen een nieuw venster.</p>
           <ul>
             <li><a href="{base}/examples/pages/basic" target=”_blank”>Basic <span class="visually-hidden">Opent in een nieuw venster</span></a></li>
-            <li><a href="{base}/examples/pages/landing/" target=”_blank”>Landing Page <span class="visually-hidden">Opent in een nieuw venster</span></a></li>
+            <li><a href="{base}/examples/pages/landing" target=”_blank”>Landing Page <span class="visually-hidden">Opent in een nieuw venster</span></a></li>
             <li><a href="{base}/examples/pages/login" target=”_blank”>Login <span class="visually-hidden">Opent in een nieuw venster</span></a></li>
           </ul>
         </nav>
