@@ -34,3 +34,11 @@ updates:
           - "stylelint-*"
     cooldown:
       default-days: 7
+
+  # Maintain dependencies for Docker
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
