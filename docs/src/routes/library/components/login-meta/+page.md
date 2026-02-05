@@ -45,11 +45,11 @@ nav:
       aria-label="Hoofdnavigatie"
       class="collapsible"
     >
-      <div class="collapsing-element">
+      <div class="content-wrapper collapsing-element">
         <ul>
-          <li><a href="{page.url.pathname}">Voorbeeld-link 1</a></li>
-          <li><a href="{page.url.pathname}">Voorbeeld-link 2</a></li>
-          <li><a href="{page.url.pathname}">Voorbeeld-link 3</a></li>
+          <li><a href="#">Voorbeeld-link 1</a></li>
+          <li><a href="#">Voorbeeld-link 2</a></li>
+          <li><a href="#">Voorbeeld-link 3</a></li>
         </ul>
 
         <ul class="actions">

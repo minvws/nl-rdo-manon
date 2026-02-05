@@ -35,7 +35,6 @@ const endpoints = [
   "/snippets/navigation-horizontal",
   "/snippets/navigation-link-unvisited",
   "/snippets/navigation-link-visited",
-  "/snippets/navigation-with-list-of-links",
   "/snippets/pagination/pagination-with-links.html",
   "/snippets/pagination/pagination.html",
   "/snippets/sidemenu/content-navigation/collapsible",

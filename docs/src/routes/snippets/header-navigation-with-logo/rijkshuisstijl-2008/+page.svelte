@@ -26,7 +26,7 @@
     class="collapsible"
   >
     <div class="content-wrapper">
-      <div class="collapsing-element">
+      <div class="content-wrapper collapsing-element">
         <ul>
           <li><a href={page.url.pathname}>Voorbeeld-link 1</a></li>
           <li><a href={page.url.pathname}>Voorbeeld-link 2</a></li>
