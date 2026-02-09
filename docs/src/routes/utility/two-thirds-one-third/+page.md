@@ -32,6 +32,11 @@ SCSS importeren:
       luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie
       sed, tempus in massa.
     </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue ac enim
+      luctus, vitae iaculis magna vestibulum. Aenean est mauris, condimentum et molestie
+      sed, tempus in massa.
+    </p>
   </div>
 
   <div>

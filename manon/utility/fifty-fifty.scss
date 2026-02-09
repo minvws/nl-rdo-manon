@@ -20,6 +20,10 @@ header nav {
       box-sizing: border-box;
     }
 
+    &.content-wrapper {
+      gap: theme.$layout-gap-nested;
+    }
+
     img {
       max-width: 100%;
     }

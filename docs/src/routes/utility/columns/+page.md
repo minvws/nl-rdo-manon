@@ -31,10 +31,16 @@ Beschikbare classes: `column-2`, `column-3`, `column-4`
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
   </div>
 
   <div>
     <h2>Lorem ipsum</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </p>

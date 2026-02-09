@@ -289,6 +289,9 @@
   $footer-navigation-list-icon-color: semantic.$color-brand-primary-text-default,
   $footer-content-wrapper-flex-direction: row,
   $footer-content-wrapper-justify-content: space-between,
+  $footer-content-wrapper-max-width: 82rem,
+  $footer-content-wrapper-padding-right: spacing.$spacing-300,
+  $footer-content-wrapper-padding-left: spacing.$spacing-300,
 
   // Footer meta
   $footer-meta-border-top: 1px solid color-scheme.$white,
@@ -413,11 +416,14 @@
   $header-flex-direction: column,
   $header-navigation-align-items: stretch,
   $header-navigation-padding-top: 0,
-  $header-navigation-padding-right: 3%,
+  $header-navigation-padding-right: 0,
   $header-navigation-padding-bottom: 0,
-  $header-navigation-padding-left: 3%,
+  $header-navigation-padding-left: 0,
   $header-navigation-min-height: 4.375rem,
   $header-navigation-width: 100%,
+  $header-navigation-content-wrapper-max-width: 82rem,
+  $header-navigation-content-wrapper-padding-right: spacing.$spacing-300,
+  $header-navigation-content-wrapper-padding-left: spacing.$spacing-300,
   $header-list-item-align-items: stretch,
   $header-link-padding: 0 spacing.$spacing-050,
   $header-link-text-decoration: none,
@@ -515,9 +521,14 @@
   $hero-title-padding: 0,
   $hero-justify-content: center,
 
+  // Layout
+  $layout-gap: spacing.$spacing-300,
+  $layout-gap-nested: spacing.$spacing-200,
+
   // List
-  $list-padding: spacing.$spacing-100,
+  $list-padding: 0 spacing.$spacing-100,
   $list-item-padding: spacing.$spacing-050,
+  $list-margin: 0,
 
   // Link
   $link-text-color: color-scheme.$link-text-color,
@@ -806,6 +817,7 @@
   $tile-border-color: color-scheme.$grey-100,
   $tile-text-color: semantic.$color-text-default,
   $tile-gap: spacing.$spacing-050,
+  $tiles-align-items: stretch,
 
   // tile groups (group of tiles)
   $tile-groups-gap: spacing.$spacing-100,

@@ -23,13 +23,18 @@ $breakpoint: 42rem !default;
   > article,
   > div {
     padding: 0;
+    gap: theme.$layout-gap-nested;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (width >= $breakpoint) {
     gap: theme.$layout-gap;
 
     > * {
-      width: calc(33.33% - (theme.$layout-gap / 2));
+      &:nth-child(even) {
+        width: calc(33.33% - (theme.$layout-gap / 2));
+      }
 
       &:nth-child(odd) {
         width: calc(66.66% - (theme.$layout-gap / 2));

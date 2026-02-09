@@ -31,18 +31,17 @@
     <img src="../img/ro-logo.svg" alt="Logo Rijksoverheid" />
     Rijksoverheid
   </a>
-
-  <div class="content-wrapper">
-    <nav
-      data-open-label="Menu"
-      data-close-label="Sluit menu"
-      data-media="(min-width: 50rem)"
-      aria-label="Hoofdnavigatie"
-      class="collapsible"
-    >
+  <nav
+    data-open-label="Menu"
+    data-close-label="Sluit menu"
+    data-media="(min-width: 50rem)"
+    aria-label="Hoofdnavigatie"
+    class="collapsible"
+  >
+    <div class="content-wrapper">
       <SiteNav />
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
 
 <header {...props} class="kat">

@@ -73,8 +73,6 @@ nav {
       // Icon
       @if theme.$navigation-list-item-icon-mask {
         &::before {
-          border: 1px dashed red;
-
           mask-size: contain;
           content: "";
           display: inline-block;
@@ -93,6 +91,8 @@ nav {
 
   .collapsing-element,
   .content-wrapper {
+    display: flex;
+    width: 100%;
     justify-content: theme.$navigation-content-wrapper-justify-content;
   }
 
