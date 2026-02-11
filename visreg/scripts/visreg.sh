@@ -128,6 +128,12 @@ run_test() {
   local available_themes=("$@")
   local themes_to_process=($(get_themes_to_process "$theme" "${available_themes[@]}"))
 
+  echo "Building docs service image..."
+  docker compose -f visreg/compose.yml build --no-cache docs >/dev/null 2>&1
+
+  echo "Building visreg-test service image..."
+  docker compose -f visreg/compose.yml build --no-cache visreg-test >/dev/null 2>&1
+
   local overall_exit_code=0
   for theme_name in "${themes_to_process[@]}"; do
     print_box "Running visual regression tests for theme: $theme_name"
@@ -153,6 +159,12 @@ run_approve() {
   shift
   local available_themes=("$@")
   local themes_to_process=($(get_themes_to_process "$theme" "${available_themes[@]}"))
+
+  echo "Building docs service image..."
+  docker compose -f visreg/compose.yml build --no-cache docs >/dev/null 2>&1
+
+  echo "Building visreg-update service image..."
+  docker compose -f visreg/compose.yml build --no-cache visreg-update >/dev/null 2>&1
 
   local overall_exit_code=0
   for theme_name in "${themes_to_process[@]}"; do
