@@ -31,7 +31,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/user-event": "^14.6.1",
     "@types/node": "^25.0.10",
-    "jsdom": "^27.4.0",
+    "jsdom": "^28.0.0",
     "prettier": "^3.8.1",
     "sass": "^1.97.3",
     "sass-true": "^10.1.0",
