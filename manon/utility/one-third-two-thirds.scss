@@ -23,10 +23,12 @@ $breakpoint: 42rem !default;
   > section,
   > article,
   > div {
-    padding: 0;
-    gap: theme.$layout-gap-nested;
-    display: flex;
-    flex-direction: column;
+    &.content-wrapper {
+      padding: 0;
+      gap: theme.$layout-gap-nested;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   @media (width >= $breakpoint) {
