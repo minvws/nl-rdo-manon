@@ -3,8 +3,8 @@ packages:
   - manon
   - themes
   - examples/*
-  - '!examples/tutorial'
+  - "!examples/tutorial"
   - icore_open_docs
 
 overrides:
-  cookie@<0.7.0: '>=0.7.0'
+  cookie@<0.7.0: ">=0.7.0"
