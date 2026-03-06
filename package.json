@@ -15,17 +15,6 @@
     "visreg:clean": "docker compose -f visreg/compose.yml run --rm visreg-clean",
     "visreg:report": "visreg/scripts/visreg.sh report"
   },
-  "pnpm": {
-    "overrides": {
-      "cookie@<0.7.0": ">=0.7.0",
-      "js-yaml": "^4.1.1",
-      "rollup@>=4.0.0 <4.59.0": ">=4.59.0",
-      "minimatch@>=10.0.0 <10.2.3": ">=10.2.3",
-      "svelte@>=5.53.0 <5.53.5": ">=5.53.5",
-      "svelte@<=5.53.4": ">=5.53.5",
-      "@sveltejs/kit@>=2.49.0 <=2.53.2": ">=2.53.3"
-    }
-  },
   "devDependencies": {
     "prettier": "^3.8.1",
     "typescript": "^5.9.3"
