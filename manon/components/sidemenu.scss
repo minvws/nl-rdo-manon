@@ -91,9 +91,9 @@ main.sidemenu {
       overflow: auto;
       padding: theme.$sidemenu-ul-padding;
       max-height: theme.$sidemenu-main-max-height;
-
-      /* Solves a bug in older safari versions where position sticky blocks overflow auto */
-      display: block;
+      display: theme.$sidemenu-sticky-display;
+      flex-direction: theme.$sidemenu-sticky-flex-direction;
+      gap: theme.$sidemenu-nav-gap;
     }
 
     button + ul {

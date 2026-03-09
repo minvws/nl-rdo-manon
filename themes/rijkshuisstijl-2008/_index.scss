@@ -785,6 +785,9 @@
   $sidemenu-nav-border-color: color-scheme.$grey-100,
   $sidemenu-text-decoration: none,
   $sidemenu-background-color: white,
+  $sidemenu-nav-gap: spacing.$spacing-150,
+  $sidemenu-sticky-display: flex,
+  $sidemenu-sticky-flex-direction: column,
 
   // sidemenu button
   $sidemenu-button-background-color: semantic.$color-brand-primary-default,
