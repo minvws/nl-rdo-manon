@@ -102,6 +102,7 @@ $sidemenu-nav-breakpoint-border-style: null !default;
 $sidemenu-nav-breakpoint-border-color: null !default;
 
 // Sticky sidemenu (container)
-/* Solves a bug in older safari versions where position sticky blocks overflow auto */
+
+// Solves a bug in older safari versions where position sticky blocks overflow auto
 $sidemenu-sticky-display: block !default;
 $sidemenu-sticky-flex-direction: null !default;
