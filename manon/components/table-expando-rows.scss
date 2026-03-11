@@ -38,6 +38,14 @@ table {
   table {
     button.expando-button {
       display: inline-flex;
+
+      &:focus-visible {
+        outline: theme.$focus-outline;
+        outline-offset: 2px;
+        outline-color: theme.$focus-outline-color;
+        z-index: theme.$focus-z-index;
+        border-radius: theme.$focus-border-radius;
+      }
     }
   }
 }
