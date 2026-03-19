@@ -82,14 +82,15 @@
                 <a href="{base}/library/components/language-selector">Language selector</a>
               </li>
               <li><a href="{base}/library/components/link">Link</a></li>
+              <li><a href="{base}/library/components/list">List</a></li>
               <li><a href="{base}/library/components/login-meta">Login Meta</a></li>
               <li><a href="{base}/library/components/logo">Logo</a></li>
               <li><a href="{base}/library/components/navigation">Navigation</a></li>
-              <li><a href="{base}/library/components/notifications">Notifications</a></li>
             </ul>
           </nav>
           <nav>
             <ul>
+              <li><a href="{base}/library/components/notifications">Notifications</a></li>
               <li><a href="{base}/library/components/message-counter">Notificatie-teller</a></li>
               <li><a href="{base}/library/components/pagination">Pagination</a></li>
               <li><a href="{base}/library/components/sidemenu">Sidemenu</a></li>
