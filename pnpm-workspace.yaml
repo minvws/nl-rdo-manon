@@ -3,9 +3,9 @@ packages:
   - manon
   - themes
   - examples/*
-  - '!examples/tutorial'
+  - "!examples/tutorial"
   - icore_open_docs
 
 overrides:
-  cookie@<0.7.0: '>=0.7.0'
-  flatted@<=3.4.1: '>=3.4.2'
+  cookie@<0.7.0: ">=0.7.0"
+  flatted@<=3.4.1: ">=3.4.2"
