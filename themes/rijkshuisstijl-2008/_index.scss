@@ -298,7 +298,8 @@
   $footer-meta-padding: spacing.$spacing-100 0,
   $footer-meta-align-items: flex-end,
   $footer-meta-justify-content: flex-end,
-  $footer-meta-margin: spacing.$spacing-300 0 0 0,
+  $footer-meta-margin: spacing.$spacing-300 auto 0 auto,
+  $footer-meta-width: 100%,
   $footer-meta-max-width: 82rem,
 
   // Form
