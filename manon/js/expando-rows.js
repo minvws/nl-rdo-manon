@@ -90,10 +90,13 @@ function initExpandoButton(button) {
     );
     button.setAttribute("disabled", "");
     button.classList.add("action-button");
-    button.classList.add.apply(
-      button.classList,
+    const disabledIconSpan = document.createElement("span");
+    disabledIconSpan.setAttribute("aria-hidden", "true");
+    disabledIconSpan.classList.add.apply(
+      disabledIconSpan.classList,
       expanded ? iconCloseClasses : iconOpenClasses
     );
+    button.appendChild(disabledIconSpan);
     return;
   }
 
@@ -116,28 +119,37 @@ function initExpandoButton(button) {
   ensureElementHasId(row);
   button.setAttribute("aria-controls", row.id);
   button.classList.add("action-button");
-  button.classList.add.apply(
-    button.classList,
+
+  const labelSpan = document.createElement("span");
+  labelSpan.classList.add("visually-hidden");
+  labelSpan.textContent = expanded ? closeLabel : openLabel;
+  const iconSpan = document.createElement("span");
+  iconSpan.setAttribute("aria-hidden", "true");
+  iconSpan.classList.add.apply(
+    iconSpan.classList,
     expanded ? iconCloseClasses : iconOpenClasses
   );
+  button.textContent = "";
+  button.appendChild(labelSpan);
+  button.appendChild(iconSpan);
 
   button.addEventListener("click", function () {
     const expand = button.getAttribute("aria-expanded") === "false";
 
     if (expand) {
-      button.innerText = closeLabel;
+      labelSpan.textContent = closeLabel;
 
       button.setAttribute("aria-expanded", "true");
-      button.classList.remove.apply(button.classList, iconOpenClasses);
-      button.classList.add.apply(button.classList, iconCloseClasses);
+      iconSpan.classList.remove.apply(iconSpan.classList, iconOpenClasses);
+      iconSpan.classList.add.apply(iconSpan.classList, iconCloseClasses);
       button.parentElement?.parentElement?.classList.add("expanded-row");
       row.removeAttribute("hidden");
     } else {
-      button.innerText = openLabel;
+      labelSpan.textContent = openLabel;
 
       button.setAttribute("aria-expanded", "false");
-      button.classList.remove.apply(button.classList, iconCloseClasses);
-      button.classList.add.apply(button.classList, iconOpenClasses);
+      iconSpan.classList.remove.apply(iconSpan.classList, iconCloseClasses);
+      iconSpan.classList.add.apply(iconSpan.classList, iconOpenClasses);
       button.parentElement?.parentElement?.classList.remove("expanded-row");
       row.setAttribute("hidden", "");
     }
