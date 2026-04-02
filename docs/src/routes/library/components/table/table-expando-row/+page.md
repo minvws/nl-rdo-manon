@@ -231,8 +231,19 @@ import "@minvws/manon/js/expando-rows.js";
       de rij zal openklappen, zoals bijvoorbeeld "Open details". Geef de
       `button` daarnaast een `data-close-label=""` met de bijbehorende tekst
       voor het dichtklappen van de rij. Bijvoorbeeld: "Sluit details".
+    - **Opmerking:** De JavaScript zal automatisch de button-tekst omzetten naar een visueel verborgen `<span class="visually-hidden">` element en het icoon in een apart `<span aria-hidden="true">` element plaatsen voor optimale toegankelijkheid.
     - **HTML-voorbeeld:**
-      `  <button class="expando-button" data-close-label="Sluit details"   data-icon-open-class="icon icon-chevron-down" data-icon-close-class="icon   icon-chevron-up" type="button"> Open details </button>`
+      ```html
+      <button
+        class="expando-button"
+        data-close-label="Sluit details"
+        data-icon-open-class="icon icon-chevron-down"
+        data-icon-close-class="icon icon-chevron-up"
+        type="button"
+      >
+        Open details
+      </button>
+      ```
 7.  Open/sluit-icoon toevoegen:
     - Voeg de gewenste icoon-classes toe via het HTML-attribuut
       `data-icon-open-class=""` voor het open-icoon en
