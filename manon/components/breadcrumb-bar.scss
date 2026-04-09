@@ -130,6 +130,11 @@
           // Removing any generic nav icons
           display: none;
         }
+
+        // Removing styling used to keep navigation icons and item text on the same line
+        a {
+          max-width: unset;
+        }
       }
     }
   }

@@ -9,6 +9,7 @@
     border-style: theme.$navigation-link-border-style;
     border-color: theme.$navigation-link-border-color;
     border-radius: theme.$navigation-link-border-radius;
+    word-break: theme.$navigation-link-word-break;
 
     // Outline
     outline: theme.$navigation-link-outline;
@@ -84,6 +85,10 @@ nav {
           mask-image: theme.$navigation-list-item-icon-mask;
           width: theme.$navigation-list-item-icon-width;
           height: theme.$navigation-list-item-icon-height;
+        }
+
+        a {
+          max-width: theme.$navigation-list-item-link-max-width;
         }
       }
     }
