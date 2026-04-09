@@ -23,3 +23,21 @@ input {
     cursor: not-allowed;
   }
 }
+
+header input {
+  padding-top: theme.$form-input-header-padding-top;
+  padding-right: theme.$form-input-header-padding-right;
+  padding-bottom: theme.$form-input-header-padding-bottom;
+  padding-left: theme.$form-input-header-padding-left;
+  background-color: theme.$form-input-header-background-color;
+  color: theme.$form-input-header-text-color;
+  font-family: theme.$form-input-header-font-family;
+  font-size: theme.$form-input-header-font-size;
+  line-height: theme.$form-input-header-line-height;
+  font-weight: theme.$form-input-header-font-weight;
+  min-height: theme.$form-input-header-min-height;
+  border-width: theme.$form-input-header-border-width;
+  border-style: theme.$form-input-header-border-style;
+  border-color: theme.$form-input-header-border-color;
+  border-radius: theme.$form-input-header-border-radius;
+}
