@@ -13,7 +13,7 @@ importers:
   .:
     devDependencies:
       prettier:
-        specifier: ^3.8.2
+        specifier: ^3.8.1
         version: 3.8.2
       typescript:
         specifier: ^6.0.2
@@ -2184,10 +2184,10 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@prettier/sync@0.6.1(prettier@3.8.1)':
+  '@prettier/sync@0.6.1(prettier@3.8.2)':
     dependencies:
       make-synchronized: 0.8.0
-      prettier: 3.8.1
+      prettier: 3.8.2
 
   '@rolldown/binding-android-arm64@1.0.0-rc.15':
     optional: true
@@ -3014,10 +3014,10 @@ snapshots:
 
   sass-true@10.1.0(sass@1.99.0):
     dependencies:
-      '@prettier/sync': 0.6.1(prettier@3.8.1)
+      '@prettier/sync': 0.6.1(prettier@3.8.2)
       jest-diff: 30.2.0
       postcss: 8.5.8
-      prettier: 3.8.1
+      prettier: 3.8.2
     optionalDependencies:
       sass: 1.99.0
 
