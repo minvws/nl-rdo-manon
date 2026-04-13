@@ -48,6 +48,7 @@ $navigation-link-text-color: null !default;
 $navigation-link-hover-text-color: null !default;
 $navigation-link-visited-text-color: null !default;
 $navigation-link-visited-hover-text-color: null !default;
+$navigation-link-word-break: null !default;
 
 // Outline
 $navigation-link-outline: null !default;
@@ -55,3 +56,6 @@ $navigation-link-outline-offset: null !default;
 $navigation-link-outline-color: null !default;
 $navigation-link-z-index: null !default;
 $navigation-link-box-shadow: null !default;
+
+// Link within list
+$navigation-list-item-link-max-width: null !default;

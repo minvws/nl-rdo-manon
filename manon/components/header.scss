@@ -121,6 +121,11 @@ body > header,
         /* Preventing default nav before to show up */
         display: none;
       }
+
+      // Removing styling used to keep navigation icons and item text on the same line
+      a {
+        max-width: unset;
+      }
     }
   }
 
