@@ -132,7 +132,7 @@ run_test() {
   docker compose -f visreg/compose.yml build --no-cache docs >/dev/null 2>&1
 
   echo "Building visreg-test service image..."
-  docker compose -f visreg/compose.yml build --no-cache visreg-test
+  docker compose -f visreg/compose.yml build --no-cache visreg-test >/dev/null 2>&1
 
   local overall_exit_code=0
   for theme_name in "${themes_to_process[@]}"; do
