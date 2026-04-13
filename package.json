@@ -16,7 +16,7 @@
     "visreg:report": "visreg/scripts/visreg.sh report"
   },
   "devDependencies": {
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.2",
     "typescript": "^6.0.2"
   }
 }
