@@ -4,7 +4,7 @@ packages:
   - themes
   - examples/*
   - "!examples/tutorial"
-  - icore_open_docs
+  - visreg/playwright
 
 overrides:
   "@sveltejs/kit@<=2.57.0": ">=2.57.1"
