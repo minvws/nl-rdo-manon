@@ -73,4 +73,4 @@ jobs:
       - name: Deploy to GitHub Pages
         if: steps.tag_check.outputs.should_deploy == 'true'
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
