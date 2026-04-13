@@ -51,7 +51,7 @@ jobs:
 
       - name: Configure GitHub Pages
         if: steps.tag_check.outputs.should_deploy == 'true'
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Setup
         if: steps.tag_check.outputs.should_deploy == 'true'
