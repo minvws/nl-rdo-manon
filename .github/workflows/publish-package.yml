@@ -81,6 +81,6 @@ jobs:
           zip -r manon-themes.zip dist
 
       - name: Upload themes to release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: themes/manon-themes.zip
