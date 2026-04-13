@@ -4,8 +4,8 @@ packages:
   - themes
   - examples/*
   - "!examples/tutorial"
-  - icore_open_docs
+  - visreg/playwright
 
 overrides:
+  "@sveltejs/kit@<=2.57.0": ">=2.57.1"
   cookie@<0.7.0: ">=0.7.0"
-  flatted@<=3.4.1: ">=3.4.2"
