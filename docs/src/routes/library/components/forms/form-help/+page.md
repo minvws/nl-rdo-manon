@@ -94,17 +94,17 @@ import "@minvws/manon/js/form-help.js";
 ### Voorbeeld: Verplicht invoerveld
 
 <form action="" method="post" class="help">
-  <label for="voorbeeld-text-input-met-hulptekst-simpel-1"
+  <label for="example-input-help-required"
     >Help op simpel formulierveld</label
   >
   <div class="help-container">
-    <span class="nota-bene">Dit veld is verplicht</span>
+    <span class="nota-bene" id="example-input-help-required-nota-bene">Dit veld is verplicht</span>
     <div class="help-container">
       <input
         id="example-input-help-required"
         name="voorbeeld-text-input"
         type="text"
-        aria-describedby="example-input-help-required-message"
+        aria-describedby="example-input-help-required-message example-input-help-required-nota-bene"
         required
       />
       <p
@@ -217,18 +217,18 @@ import "@minvws/manon/js/form-help.js";
   <div class="help-container">
     <div class="column-2">
       <div>
-        <label for="date-range-start">van</label>
+        <label for="date-range-start-1">van</label>
         <input
-          id="date-range-start"
+          id="date-range-start-1"
           name="date-range-start"
           value="DD-MM-JJJJ"
           type="date"
         />
       </div>
       <div>
-        <label for="date-range-end">tot</label>
+        <label for="date-range-end-1">tot</label>
         <input
-          id="date-range-end"
+          id="date-range-end-1"
           name="date-range-end"
           value="DD-MM-JJJJ"
           type="date"
@@ -252,12 +252,12 @@ import "@minvws/manon/js/form-help.js";
   <div class="help-container">
     <div class="column-2">
       <div>
-        <label for="date-range-start">van</label>
-        <input id="date-range-start" name="date-range-start" value="DD-MM-JJJJ" type="date" />
+        <label for="date-range-start-1">van</label>
+        <input id="date-range-start-1" name="date-range-start" value="DD-MM-JJJJ" type="date" />
       </div>
       <div>
-        <label for="date-range-end">tot</label>
-        <input id="date-range-end" name="date-range-end" value="DD-MM-JJJJ" type="date" />
+        <label for="date-range-end-1">tot</label>
+        <input id="date-range-end-1" name="date-range-end" value="DD-MM-JJJJ" type="date" />
       </div>
     </div>
     <p
@@ -282,18 +282,18 @@ import "@minvws/manon/js/form-help.js";
         <div class="help-container">
           <div class="column-2">
             <div>
-              <label for="date-range-start">van</label>
+              <label for="date-range-start-2">van</label>
               <input
-                id="date-range-start"
+                id="date-range-start-2"
                 name="date-range-start"
                 value="DD-MM-JJJJ"
                 type="date"
               />
             </div>
             <div>
-              <label for="date-range-end">tot</label>
+              <label for="date-range-end-2">tot</label>
               <input
-                id="date-range-end"
+                id="date-range-end-2"
                 name="date-range-end"
                 value="DD-MM-JJJJ"
                 type="date"
@@ -323,12 +323,12 @@ import "@minvws/manon/js/form-help.js";
       <div class="help-container">
         <div class="column-2">
           <div>
-            <label for="date-range-start">van</label>
-            <input id="date-range-start" name="date-range-start" value="DD-MM-JJJJ" type="date" />
+            <label for="date-range-start-2">van</label>
+            <input id="date-range-start-2" name="date-range-start" value="DD-MM-JJJJ" type="date" />
           </div>
           <div>
-            <label for="date-range-end">tot</label>
-            <input id="date-range-end" name="date-range-end" value="DD-MM-JJJJ" type="date" />
+            <label for="date-range-end-2">tot</label>
+            <input id="date-range-end-2" name="date-range-end" value="DD-MM-JJJJ" type="date" />
           </div>
         </div>
         <p
