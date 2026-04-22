@@ -179,35 +179,40 @@ body > footer,
     ul,
     ol {
       background-color: transparent;
+      gap: theme.$footer-list-gap;
 
       li {
         list-style: theme.$footer-list-style;
 
-        &::before {
-          display: theme.$footer-navigation-list-icon-display;
-          background-color: theme.$footer-navigation-list-icon-color;
+        a {
+          max-width: theme.$footer-list-link-max-width;
+
+          &::before {
+            display: theme.$footer-navigation-list-icon-display;
+            background-color: theme.$footer-navigation-list-icon-color;
+          }
         }
       }
     }
-  }
 
-  .meta {
-    border-top: theme.$footer-meta-border-top;
-    padding: theme.$footer-meta-padding;
-    align-items: theme.$footer-meta-align-items;
-    justify-content: theme.$footer-meta-justify-content;
-    margin: theme.$footer-meta-margin;
-    width: theme.$footer-meta-width;
-    max-width: theme.$footer-meta-max-width;
+    .meta {
+      border-top: theme.$footer-meta-border-top;
+      padding: theme.$footer-meta-padding;
+      align-items: theme.$footer-meta-align-items;
+      justify-content: theme.$footer-meta-justify-content;
+      margin: theme.$footer-meta-margin;
+      width: theme.$footer-meta-width;
+      max-width: theme.$footer-meta-max-width;
 
-    p,
-    span {
-      font-size: theme.$footer-meta-font-size;
-      color: theme.$footer-meta-text-color;
-    }
+      p,
+      span {
+        font-size: theme.$footer-meta-font-size;
+        color: theme.$footer-meta-text-color;
+      }
 
-    @if theme.$footer-meta-align-items or theme.$footer-meta-justify-content {
-      display: flex;
+      @if theme.$footer-meta-align-items or theme.$footer-meta-justify-content {
+        display: flex;
+      }
     }
   }
 }
