@@ -75,6 +75,8 @@ function initExpandoButton(button) {
   const iconOpenClasses = button.dataset.iconOpenClass?.split(/\s+/) || [];
   const iconCloseClasses = button.dataset.iconCloseClass?.split(/\s+/) || [];
 
+  // Get the expando row corresponding to the expando button, and check if it
+  // has the expected structure.
   const buttonRow = button.closest("tr");
   const row = buttonRow?.nextElementSibling;
   const expanded = button.getAttribute("aria-expanded") === "true";
@@ -84,19 +86,31 @@ function initExpandoButton(button) {
     !(row.tagName === "TR") ||
     !row.classList.contains("expando-row")
   ) {
+    // The expando row is missing or has an unexpected structure. Disable the
+    // button and log a warning.
     console.warn(
       "Could not find .expando-row corresponding to .expando-button:",
       button
     );
+
     button.setAttribute("disabled", "");
     button.classList.add("action-button");
+
+    const disabledLabelSpan = document.createElement("span");
+    disabledLabelSpan.classList.add("visually-hidden");
+    disabledLabelSpan.textContent = "Details kunnen niet worden geopend";
+
     const disabledIconSpan = document.createElement("span");
     disabledIconSpan.setAttribute("aria-hidden", "true");
     disabledIconSpan.classList.add.apply(
       disabledIconSpan.classList,
       expanded ? iconCloseClasses : iconOpenClasses
     );
+
+    button.textContent = "";
     button.appendChild(disabledIconSpan);
+    button.appendChild(disabledLabelSpan);
+
     return;
   }
 
@@ -105,6 +119,8 @@ function initExpandoButton(button) {
   /** @type {string} */
   let openLabel;
 
+  // Set the initial state of the expando row and button based on the button's
+  // aria-expanded attribute, and store the open/close labels for later use.
   if (expanded) {
     closeLabel = button.textContent.trim();
     openLabel = (button.dataset.openLabel || "Open details").trim();
@@ -120,19 +136,30 @@ function initExpandoButton(button) {
   button.setAttribute("aria-controls", row.id);
   button.classList.add("action-button");
 
+  // We're clearing the button's content and add a visually hidden label and an
+  // icon span. The label's text content and the icon's classes depend on the
+  // initial state of the button. Adding the `labelSpan` ensures screen readers
+  // have a clear, text-only description. The `iconSpan` with
+  // `aria-hidden="true"` ensures that screen readers ignore the icon, which is
+  // purely decorative.
   const labelSpan = document.createElement("span");
   labelSpan.classList.add("visually-hidden");
   labelSpan.textContent = expanded ? closeLabel : openLabel;
+
   const iconSpan = document.createElement("span");
   iconSpan.setAttribute("aria-hidden", "true");
   iconSpan.classList.add.apply(
     iconSpan.classList,
     expanded ? iconCloseClasses : iconOpenClasses
   );
+
   button.textContent = "";
   button.appendChild(labelSpan);
   button.appendChild(iconSpan);
 
+  // Handle clicks on the button to toggle the visibility of the expando row,
+  // aria-expanded attribute, button label and icon, and the expanded-row class
+  // on the button's parent row.
   button.addEventListener("click", function () {
     const expand = button.getAttribute("aria-expanded") === "false";
 
