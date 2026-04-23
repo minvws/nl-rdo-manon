@@ -102,9 +102,8 @@ function initExpandoButton(button) {
 
     const disabledIconSpan = document.createElement("span");
     disabledIconSpan.setAttribute("aria-hidden", "true");
-    disabledIconSpan.classList.add.apply(
-      disabledIconSpan.classList,
-      expanded ? iconCloseClasses : iconOpenClasses
+    disabledIconSpan.classList.add(
+      ...(expanded ? iconCloseClasses : iconOpenClasses)
     );
 
     button.textContent = "";
@@ -148,10 +147,7 @@ function initExpandoButton(button) {
 
   const iconSpan = document.createElement("span");
   iconSpan.setAttribute("aria-hidden", "true");
-  iconSpan.classList.add.apply(
-    iconSpan.classList,
-    expanded ? iconCloseClasses : iconOpenClasses
-  );
+  iconSpan.classList.add(...(expanded ? iconCloseClasses : iconOpenClasses));
 
   button.textContent = "";
   button.appendChild(labelSpan);
@@ -167,16 +163,16 @@ function initExpandoButton(button) {
       labelSpan.textContent = closeLabel;
 
       button.setAttribute("aria-expanded", "true");
-      iconSpan.classList.remove.apply(iconSpan.classList, iconOpenClasses);
-      iconSpan.classList.add.apply(iconSpan.classList, iconCloseClasses);
+      iconSpan.classList.remove(...iconOpenClasses);
+      iconSpan.classList.add(...iconCloseClasses);
       button.parentElement?.parentElement?.classList.add("expanded-row");
       row.removeAttribute("hidden");
     } else {
       labelSpan.textContent = openLabel;
 
       button.setAttribute("aria-expanded", "false");
-      iconSpan.classList.remove.apply(iconSpan.classList, iconCloseClasses);
-      iconSpan.classList.add.apply(iconSpan.classList, iconOpenClasses);
+      iconSpan.classList.remove(...iconCloseClasses);
+      iconSpan.classList.add(...iconOpenClasses);
       button.parentElement?.parentElement?.classList.remove("expanded-row");
       row.setAttribute("hidden", "");
     }
