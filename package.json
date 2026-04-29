@@ -17,6 +17,12 @@
   },
   "devDependencies": {
     "prettier": "^3.8.3",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "postcss": ">=8.5.10",
+      "cookie": ">=0.7.0"
+    }
   }
 }
