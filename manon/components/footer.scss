@@ -186,11 +186,11 @@ body > footer,
 
         a {
           max-width: theme.$footer-list-link-max-width;
+        }
 
-          &::before {
-            display: theme.$footer-navigation-list-icon-display;
-            background-color: theme.$footer-navigation-list-icon-color;
-          }
+        &::before {
+          display: theme.$footer-navigation-list-icon-display;
+          background-color: theme.$footer-navigation-list-icon-color;
         }
       }
     }
