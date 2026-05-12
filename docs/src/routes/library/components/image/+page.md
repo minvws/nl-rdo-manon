@@ -4,6 +4,7 @@ breadcrumb: Image
 nav:
   - Introductie: "#introduction"
   - Beschikbare weergaven: "#available-types"
+  - Toegankelijkheid: "#a11y"
 ---
 
 <h2 id="introduction">Introductie</h2>
