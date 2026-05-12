@@ -5,7 +5,3 @@ packages:
   - examples/*
   - "!examples/tutorial"
   - visreg/playwright
-
-overrides:
-  "@sveltejs/kit@<=2.57.0": ">=2.57.1"
-  cookie@<0.7.0: ">=0.7.0"
