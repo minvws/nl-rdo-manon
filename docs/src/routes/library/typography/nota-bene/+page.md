@@ -41,10 +41,10 @@ nav:
 
 <form action="" method="post">
   <div>
-    <label for="nota-bene-input">Ipsum</label>
+    <label for="username">Gebruikersnaam</label>
     <div>
-      <span class="nota-bene">Dit veld is verplicht</span>
-      <input id="nota-bene-input" name="nota-bene-input" type="text" />
+      <span class="nota-bene" id="username-nota-bene">Dit veld is verplicht</span>
+      <input id="username" name="username" type="text" required aria-describedby="username-nota-bene" />
     </div>
   </div>
   <button type="submit">Verzend</button>
@@ -53,10 +53,16 @@ nav:
 ```html
 <form action="" method="post">
   <div>
-    <label for="nota-bene-input">Ipsum</label>
+    <label for="username">Gebruikersnaam</label>
     <div>
-      <span class="nota-bene">Dit veld is verplicht</span>
-      <input id="nota-bene-input" name="nota-bene-input" type="text" />
+      <span class="nota-bene" id="username-nota-bene">Dit veld is verplicht</span>
+      <input
+        id="username"
+        name="username"
+        type="text"
+        required
+        aria-describedby="username-nota-bene"
+      />
     </div>
   </div>
   <button type="submit">Verzend</button>

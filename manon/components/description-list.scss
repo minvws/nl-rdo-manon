@@ -38,7 +38,8 @@ dl {
     color: theme.$description-list-item-title-text-color;
     padding: theme.$description-list-item-title-padding;
     width: theme.$description-list-item-title-width;
-    max-width: theme.$description-list-tite-max-width;
+    max-width: theme.$description-list-title-max-width;
+    min-width: theme.$description-list-title-min-width;
   }
 
   dd {

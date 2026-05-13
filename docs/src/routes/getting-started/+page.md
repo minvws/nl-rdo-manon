@@ -46,7 +46,7 @@ integreren in hun projecten.
   </p>
 </section>
 
-<section id="examples">
+<section id="notes">
   <h2>Overige benodigdheden</h2>
   <p>
     Staan de header en footer elementen niet direct binnen de body? Voeg dan de class <code>manon-root</code> toe aan het element waar de header en footer zich wel bevinden.

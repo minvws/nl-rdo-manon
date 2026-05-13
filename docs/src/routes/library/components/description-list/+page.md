@@ -108,17 +108,10 @@ Een description list is een HTML-lijst waarin je termen en hun beschrijvingen ov
     <legend>Persoonsgegevens</legend>
 
     <div>
-      <label>Gebruikersnaam</label>
+      <label for="username">Gebruikersnaam</label>
       <div>
-        <span class="nota-bene" id="voorbeeld-text-input-1-explanation"
-          >Bijvoorbeeld Jane Doe
-        </span>
-        <input
-          id="voorbeeld-text-input-1"
-          name="voorbeeld-text-input-1"
-          type="text"
-          aria-describedby="voorbeeld-text-input-1-explanation"
-        />
+        <span class="nota-bene" id="username-explanation">Bijvoorbeeld Jane Doe </span>
+        <input id="username" name="username" type="text" aria-describedby="username-explanation" />
       </div>
     </div>
 
