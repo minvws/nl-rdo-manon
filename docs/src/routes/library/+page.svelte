@@ -20,8 +20,8 @@
         bevorderen, en kunnen eenvoudig worden aangepast aan specifieke behoeften.
       </p>
 
-      <section id="layout">
-        <div class="column-2">
+      <section>
+        <div class="column-2" id="layout">
           <div>
             <nav aria-labelledby="page-layout-heading">
               <h2 id="page-layout-heading">Page layout</h2>

@@ -158,6 +158,13 @@ veelvoorkomende voorbeelden.</p>
 <div class="horizontal-scroll">
   <table>
     <caption>Legenda</caption>
+    <thead>
+      <tr>
+        <th scope="col">Correct</th>
+        <th scope="col">Correct met waarschuwing</th>
+        <th scope="col">Incorrect</th>
+      </tr>
+    </thead>
     <tbody>
       <tr>
         <td class="confirmation">
