@@ -5,3 +5,11 @@ packages:
   - examples/*
   - "!examples/tutorial"
   - visreg/playwright
+
+overrides:
+  brace-expansion@>=5.0.0 <5.0.6: ">=5.0.6"
+  cookie@<0.7.0: ">=0.7.0"
+  devalue@>=5.6.3 <=5.8.0: ">=5.8.1"
+  svelte@<=5.55.6: ">=5.55.7"
+  svelte@>=5.46.0 <=5.55.6: ">=5.55.7"
+  svelte@>=5.51.5 <=5.55.6: ">=5.55.7"
