@@ -8,6 +8,9 @@ jobs:
   publish-npm:
     name: Publish to npm
     runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -38,7 +41,7 @@ jobs:
           pnpm --recursive npm-version --no-git-tag-version ${{ env.RELEASE_VERSION }}
           pnpm --recursive publish --no-git-checks --access public --tag ${{ env.NPM_TAG }}
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_CONFIG_PROVENANCE: "true"
 
   publish-github:
     name: Publish to GitHub
