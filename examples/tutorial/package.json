@@ -1,4 +1,5 @@
 {
+  "private": true,
   "scripts": {
     "build": "sass --load-path=node_modules main.scss css/main.css"
   },
