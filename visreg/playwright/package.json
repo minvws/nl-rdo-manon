@@ -8,6 +8,6 @@
     "clean": "rm -r ./snapshots/** && rm -r ./report || true"
   },
   "devDependencies": {
-    "@playwright/test": "^1.60.0"
+    "@playwright/test": "^1.61.0"
   }
 }
