@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v6.0.3
         with:
           fetch-depth: 0 # Fetch all history for tags
 
@@ -45,7 +45,7 @@ jobs:
 
       - name: Checkout latest tag
         if: steps.tag_check.outputs.should_deploy == 'true'
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v6.0.3
         with:
           ref: ${{ steps.tag_check.outputs.latest_tag }}
 
