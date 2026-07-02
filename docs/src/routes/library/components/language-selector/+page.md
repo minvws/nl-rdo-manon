@@ -32,10 +32,9 @@ import "@minvws/manon/js/language-selector.js";
   <p id="language-selector-description">Kies een taal:</p>
   <div
     class="language-selector-options"
-    aria-describedby="language-selector-description"
     aria-expanded="false"
   >
-    <button aria-haspopup="listbox" aria-current="true"> Papiamentu </button>
+    <button aria-haspopup="listbox" aria-current="true" aria-describedby="language-selector-description"> Papiamentu </button>
     <ul role="listbox">
       <li role="option" aria-selected="false">
         <a hreflang="nl" href="language-selector" data-value="Nederlands" lang="nl"
@@ -65,12 +64,14 @@ import "@minvws/manon/js/language-selector.js";
 ```html
 <div class="language-selector">
   <p id="language-selector-description">Kies een taal:</p>
-  <div
-    class="language-selector-options"
-    aria-describedby="language-selector-description"
-    aria-expanded="false"
-  >
-    <button aria-haspopup="listbox" aria-current="true">Papiamentu</button>
+  <div class="language-selector-options" aria-expanded="false">
+    <button
+      aria-haspopup="listbox"
+      aria-current="true"
+      aria-describedby="language-selector-description"
+    >
+      Papiamentu
+    </button>
     <ul role="listbox">
       <li role="option" aria-selected="false">
         <a hreflang="nl" href="#" data-value="Nederlands" lang="nl">Nederlands</a>
