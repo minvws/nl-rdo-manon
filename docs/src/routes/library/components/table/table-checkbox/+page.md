@@ -35,7 +35,7 @@ SCSS importeren:
             <th scope="col">
               <span class="visually-hidden">Selectie</span>
               <div class="checkbox">
-                <input type="checkbox" id="checkbox-example-head-1" name="standaard-checkbox" />
+                <input type="checkbox" id="checkbox-example-head-1" name="standaard-checkbox" aria-label="Select all rows in this table" />
               </div>
             </th>
             <th scope="col">Naam</th>
@@ -108,7 +108,12 @@ Complete voorbeeld tabel:
           <th scope="col">
             <span class="visually-hidden">Selectie</span>
             <div class="checkbox">
-              <input type="checkbox" id="checkbox-example-head-1" name="standaard-checkbox" />
+              <input
+                type="checkbox"
+                id="checkbox-example-head-1"
+                name="standaard-checkbox"
+                aria-label="Select all rows in this table"
+              />
             </div>
           </th>
           <th scope="col">Naam</th>
