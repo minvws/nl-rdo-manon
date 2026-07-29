@@ -3,7 +3,7 @@ packages:
   - manon
   - themes
   - examples/*
-  - '!examples/tutorial'
+  - "!examples/tutorial"
   - visreg/playwright
 
 overrides:
