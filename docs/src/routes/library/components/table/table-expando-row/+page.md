@@ -49,7 +49,7 @@ import "@minvws/manon/js/expando-rows.js";
     </thead>
     <tbody>
       <tr>
-        <th>Security overzicht Maart</th>
+        <th scope="row">Security overzicht Maart</th>
         <td>Audit</td>
         <td>Project A</td>
         <td>03-04-2025</td>
@@ -84,13 +84,13 @@ import "@minvws/manon/js/expando-rows.js";
                   <dd>Afgerond</dd>
                 </div>
               </dl>
-              </div>
-              <p class="nota-bene">Dit onderzoek is uitvoerd in opdracht door het ministerie van volksgezondheid welzijn en sport</p>
+            </div>
+            <p class="nota-bene">Dit onderzoek is uitvoerd in opdracht door het ministerie van volksgezondheid welzijn en sport</p>
           </div>
         </td>
       </tr>
       <tr>
-        <th>Toegankelijkheidsrapport</th>
+        <th scope="row">Toegankelijkheidsrapport</th>
         <td>Audit</td>
         <td>Project B</td>
         <td>12-02-2025</td>
@@ -108,25 +108,25 @@ import "@minvws/manon/js/expando-rows.js";
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-                    <div class="expando-row-content">
+          <div class="expando-row-content">
             <div>
               <h2 class="heading-xs">Onderzoeksdetails</h2>
               <dl>
                 <div>
                   <dt>Uitgevoerende partij</dt>
-                  <dd>Partij A</dd>
+                  <dd>Partij B</dd>
                 </div>
                 <div>
                   <dt>Datum</dt>
-                  <dd>31-3-2025</dd>
+                  <dd>12-2-2025</dd>
                 </div>
                 <div>
                   <dt>Status</dt>
                   <dd>Afgerond</dd>
                 </div>
               </dl>
-              </div>
-              <p class="nota-bene">Dit onderzoek is uitvoerd in opdracht door het ministerie van volksgezondheid welzijn en sport</p>
+            </div>
+            <p class="nota-bene">Dit onderzoek is uitvoerd in opdracht door het ministerie van volksgezondheid welzijn en sport</p>
           </div>
         </td>
       </tr>
@@ -139,9 +139,14 @@ import "@minvws/manon/js/expando-rows.js";
   <table>
     <caption>
       Rapportage-overzicht:
+      Rapportage-overzicht:
     </caption>
     <thead>
       <tr>
+        <th scope="col">Naam</th>
+        <th scope="col">Type</th>
+        <th scope="col">Project</th>
+        <th scope="col">Datum</th>
         <th scope="col">Naam</th>
         <th scope="col">Type</th>
         <th scope="col">Project</th>
@@ -151,7 +156,7 @@ import "@minvws/manon/js/expando-rows.js";
     </thead>
     <tbody>
       <tr>
-        <th>Security overzicht Maart</th>
+        <th scope="row">Security overzicht Maart</th>
         <td>Audit</td>
         <td>Project A</td>
         <td>03-04-2025</td>
@@ -192,10 +197,33 @@ import "@minvws/manon/js/expando-rows.js";
               en sport
             </p>
           </div>
+          <div class="expando-row-content">
+            <div>
+              <h2 class="heading-xs">Onderzoeksdetails</h2>
+              <dl>
+                <div>
+                  <dt>Uitgevoerende partij</dt>
+                  <dd>Partij A</dd>
+                </div>
+                <div>
+                  <dt>Datum</dt>
+                  <dd>31-3-2025</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Afgerond</dd>
+                </div>
+              </dl>
+            </div>
+            <p class="nota-bene">
+              Dit onderzoek is uitvoerd in opdracht door het ministerie van volksgezondheid welzijn
+              en sport
+            </p>
+          </div>
         </td>
       </tr>
       <tr>
-        <th>Toegankelijkheidsrapport</th>
+        <th scope="row">Toegankelijkheidsrapport</th>
         <td>Audit</td>
         <td>Project B</td>
         <td>12-02-2025</td>
@@ -219,11 +247,11 @@ import "@minvws/manon/js/expando-rows.js";
               <dl>
                 <div>
                   <dt>Uitgevoerende partij</dt>
-                  <dd>Partij A</dd>
+                  <dd>Partij B</dd>
                 </div>
                 <div>
                   <dt>Datum</dt>
-                  <dd>31-3-2025</dd>
+                  <dd>12-2-2025</dd>
                 </div>
                 <div>
                   <dt>Status</dt>
@@ -257,7 +285,15 @@ import "@minvws/manon/js/expando-rows.js";
     span de class `sr-only` toe om de span visueel te verbergen voor overige
     gebruikers.
 5.  Vul de uitklapbare tabel met de gewenste data.
-6.  Voeg aan de tabel een extra kolom toe met knoppen voor het bedienen van de
+6.  Maak de eerste kolom van de tabel op als rijkoppen: gebruik in iedere
+    zichtbare rij een `<th scope="row">` in plaats van een `<td>`. Hiermee is
+    voor gebruikers van hulpsoftware duidelijk bij welke rij de uitklapknop
+    hoort. De JavaScript neemt de tekst van de rijkop namelijk automatisch op in
+    de toegankelijke naam van de knop, bijvoorbeeld "Open details, Security
+    overzicht Maart". Ontbreekt de rijkop, dan heet iedere knop alleen "Open
+    details" en zijn de knoppen onderling niet te onderscheiden. Zie ook
+    [Tabel scope](/library/components/table/table-scope).
+7.  Voeg aan de tabel een extra kolom toe met knoppen voor het bedienen van de
     uitklapbare rijen.
     - Gebruik als kolomtitel een korte omschrijvende tekst. Bijvoorbeeld met de
       tekst "details".
@@ -280,7 +316,7 @@ import "@minvws/manon/js/expando-rows.js";
         Open details
       </button>
       ```
-7.  Open/sluit-icoon toevoegen:
+8.  Open/sluit-icoon toevoegen:
     - Voeg de gewenste icoon-classes toe via het HTML-attribuut
       `data-icon-open-class=""` voor het open-icoon en
       `data-icon-close-class=""` voor het sluit-icoon. Vul tussen de "" de
