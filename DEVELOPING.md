@@ -44,10 +44,10 @@ browser at the address provided.
 
 To run the documentation website using Docker, follow these steps:
 
-1. Build the Docker image:
+1. Build the Docker image from the root of the repository:
 
    ```bash
-   docker build -t manon-docs .
+   docker build -f docs/Dockerfile -t manon-docs .
    ```
 
    If you want to run a specific version of the documentation, you can use one
