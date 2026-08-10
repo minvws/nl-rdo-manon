@@ -153,6 +153,17 @@ function initExpandoButton(button) {
   button.appendChild(labelSpan);
   button.appendChild(iconSpan);
 
+  // Relate the button to the row it expands
+  const rowHeader =
+    buttonRow?.querySelector("th[scope='row']") ||
+    buttonRow?.querySelector("th");
+
+  if (rowHeader instanceof HTMLElement && !rowHeader.contains(button)) {
+    ensureElementHasId(labelSpan);
+    ensureElementHasId(rowHeader);
+    button.setAttribute("aria-labelledby", labelSpan.id + " " + rowHeader.id);
+  }
+
   // Handle clicks on the button to toggle the visibility of the expando row,
   // aria-expanded attribute, button label and icon, and the expanded-row class
   // on the button's parent row.
