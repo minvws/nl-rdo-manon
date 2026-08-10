@@ -3,13 +3,13 @@ packages:
   - manon
   - themes
   - examples/*
-  - '!examples/tutorial'
+  - "!examples/tutorial"
   - visreg/playwright
 
 overrides:
-  '@sveltejs/kit@<=2.70.1': '>=2.70.2'
-  brace-expansion@>=4.0.0 <5.0.9: '>=5.0.9'
-  cookie@<0.7.0: '>=0.7.0 <2'
-  fast-uri@>=3.0.0 <3.1.5: '>=3.1.5'
-  js-yaml@>=4.0.0 <4.3.1: '>=4.3.1'
-  nanoid@<3.3.17: '>=3.3.17'
+  "@sveltejs/kit@<=2.70.1": ">=2.70.2"
+  brace-expansion@>=4.0.0 <5.0.9: ">=5.0.9"
+  cookie@<0.7.0: ">=0.7.0 <2"
+  fast-uri@>=3.0.0 <3.1.5: ">=3.1.5"
+  js-yaml@>=4.0.0 <4.3.1: ">=4.3.1"
+  nanoid@<3.3.17: ">=3.3.17"
