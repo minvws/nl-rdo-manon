@@ -82,12 +82,14 @@ test("gives each row's button a distinguishable accessible name", () => {
     "Toegankelijkheidsrapport",
   ]);
 
-  getByRole(container, "button", {
+  const firstButton = getByRole(container, "button", {
     name: "Open details Security overzicht Maart",
   });
-  getByRole(container, "button", {
+  const secondButton = getByRole(container, "button", {
     name: "Open details Toegankelijkheidsrapport",
   });
+
+  expect(firstButton).not.toBe(secondButton);
 });
 
 test("keeps the row header in the accessible name after expanding", async () => {
@@ -98,9 +100,11 @@ test("keeps the row header in the accessible name after expanding", async () => 
 
   expect(button).toHaveAttribute("aria-expanded", "true");
   expect(container.querySelector(".expando-row")).not.toHaveAttribute("hidden");
-  getByRole(container, "button", {
-    name: "Sluit details Security overzicht Maart",
-  });
+  expect(
+    getByRole(container, "button", {
+      name: "Sluit details Security overzicht Maart",
+    })
+  ).toBe(button);
 });
 
 test("falls back to the label alone when the row has no header cell", () => {
