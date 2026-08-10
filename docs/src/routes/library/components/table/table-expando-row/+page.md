@@ -139,14 +139,9 @@ import "@minvws/manon/js/expando-rows.js";
   <table>
     <caption>
       Rapportage-overzicht:
-      Rapportage-overzicht:
     </caption>
     <thead>
       <tr>
-        <th scope="col">Naam</th>
-        <th scope="col">Type</th>
-        <th scope="col">Project</th>
-        <th scope="col">Datum</th>
         <th scope="col">Naam</th>
         <th scope="col">Type</th>
         <th scope="col">Project</th>
@@ -174,29 +169,6 @@ import "@minvws/manon/js/expando-rows.js";
       </tr>
       <tr class="expando-row">
         <td colspan="5">
-          <div class="expando-row-content">
-            <div>
-              <h2 class="heading-xs">Onderzoeksdetails</h2>
-              <dl>
-                <div>
-                  <dt>Uitgevoerende partij</dt>
-                  <dd>Partij A</dd>
-                </div>
-                <div>
-                  <dt>Datum</dt>
-                  <dd>31-3-2025</dd>
-                </div>
-                <div>
-                  <dt>Status</dt>
-                  <dd>Afgerond</dd>
-                </div>
-              </dl>
-            </div>
-            <p class="nota-bene">
-              Dit onderzoek is uitvoerd in opdracht door het ministerie van volksgezondheid welzijn
-              en sport
-            </p>
-          </div>
           <div class="expando-row-content">
             <div>
               <h2 class="heading-xs">Onderzoeksdetails</h2>
