@@ -1,4 +1,5 @@
-FROM mcr.microsoft.com/playwright:v1.61.1-jammy
+# Keep in sync with the exact @playwright/test version in package.json
+FROM mcr.microsoft.com/playwright:v1.62.1-jammy
 
 WORKDIR /app
 
