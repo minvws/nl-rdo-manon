@@ -21,7 +21,9 @@
     "check": "tsc",
     "check:watch": "tsc --watch",
     "npm-version": "npm version",
-    "test": "vitest run"
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage && npm run coverage:rebase-paths",
+    "coverage:rebase-paths": "node -e \"const fs=require('fs'),f='coverage/lcov.info';fs.writeFileSync(f,fs.readFileSync(f,'utf8').replace(/^SF:/gm,'SF:manon/'))\""
   },
   "peerDependencies": {
     "sass": ">=1.77.6"
@@ -31,6 +33,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/user-event": "^14.6.1",
     "@types/node": "^26.0.1",
+    "@vitest/coverage-v8": "^4.1.10",
     "jsdom": "^29.1.1",
     "prettier": "^3.8.4",
     "sass": "^1.99.0",
