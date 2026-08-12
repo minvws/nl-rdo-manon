@@ -34,7 +34,7 @@
     "@testing-library/user-event": "^14.6.1",
     "@types/node": "^26.1.2",
     "@vitest/coverage-v8": "^4.1.10",
-    "jsdom": "^29.1.1",
+    "jsdom": "^30.0.1",
     "prettier": "^3.8.4",
     "sass": "^1.99.0",
     "sass-true": "^10.1.0",
