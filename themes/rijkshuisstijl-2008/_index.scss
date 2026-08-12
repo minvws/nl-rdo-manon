@@ -803,6 +803,7 @@
   $sidemenu-button-font-size: 0,
   $sidemenu-button-margin-left: 0,
   $sidemenu-button-breakpoint-margin-left: 18rem,
+  $sidemenu-button-min-height: 1.25rem,
 
   // sidemenu expanded
   $sidemenu-expanded-icon-mask: map.get(icons.$icon-map, "close", "url"),
