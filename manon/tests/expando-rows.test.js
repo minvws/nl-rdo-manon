@@ -114,3 +114,13 @@ test("falls back to the label alone when the row has no header cell", () => {
 
   expect(button).not.toHaveAttribute("aria-labelledby");
 });
+
+test("falls back to the label alone when the row header is empty", () => {
+  const { container } = renderTable([""]);
+
+  const button = getByRole(container, "button", { name: "Open details" });
+  const rowHeader = container.querySelector("th[scope='row']");
+
+  expect(button).not.toHaveAttribute("aria-labelledby");
+  expect(rowHeader).not.toHaveAttribute("id");
+});

@@ -158,7 +158,11 @@ function initExpandoButton(button) {
     buttonRow?.querySelector("th[scope='row']") ||
     buttonRow?.querySelector("th");
 
-  if (rowHeader instanceof HTMLElement && !rowHeader.contains(button)) {
+  if (
+    rowHeader instanceof HTMLElement &&
+    !rowHeader.contains(button) &&
+    rowHeader.textContent.trim() !== ""
+  ) {
     ensureElementHasId(labelSpan);
     ensureElementHasId(rowHeader);
     button.setAttribute("aria-labelledby", labelSpan.id + " " + rowHeader.id);
