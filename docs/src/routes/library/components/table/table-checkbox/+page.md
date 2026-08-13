@@ -50,7 +50,7 @@ SCSS importeren:
               </div>
             </td>
             <td>
-              Lorem ipsum dolor sit amet
+              <label for="checkbox-example-base-1">Manon</label>
             </td>
             <td><button type="button">Actie uitvoeren</button></td>
           </tr>
@@ -61,7 +61,7 @@ SCSS importeren:
               </div>
             </td>
             <td>
-              Lorem ipsum dolor sit amet
+              <label for="checkbox-example-base-2">Max</label>
             </td>
             <td><button type="button">Actie uitvoeren</button></td>
           </tr>
@@ -72,7 +72,7 @@ SCSS importeren:
               </div>
             </td>
             <td>
-              Lorem ipsum dolor sit amet
+              <label for="checkbox-example-base-3">Keiko</label>
             </td>
             <td><button type="button">Actie uitvoeren</button></td>
           </tr>
@@ -83,13 +83,16 @@ SCSS importeren:
   </div>
 </section>
 
-Tabelcel met checkbox:
+Tabelcel met checkbox, gekoppeld aan de tekst die de rij identificeert:
 
 ```html
 <td>
   <div class="checkbox">
     <input type="checkbox" id="checkbox-example-base" name="standaard-checkbox" />
   </div>
+</td>
+<td>
+  <label for="checkbox-example-base">Manon</label>
 </td>
 ```
 
@@ -127,7 +130,7 @@ Complete voorbeeld tabel:
               <input type="checkbox" id="checkbox-example-base-1" name="standaard-checkbox" />
             </div>
           </td>
-          <td>Lorem ipsum dolor sit amet</td>
+          <td><label for="checkbox-example-base-1">Manon</label></td>
           <td><button type="button">Actie uitvoeren</button></td>
         </tr>
         <tr>
@@ -136,7 +139,7 @@ Complete voorbeeld tabel:
               <input type="checkbox" id="checkbox-example-base-2" name="standaard-checkbox" />
             </div>
           </td>
-          <td>Lorem ipsum dolor sit amet</td>
+          <td><label for="checkbox-example-base-2">Max</label></td>
           <td><button type="button">Actie uitvoeren</button></td>
         </tr>
         <tr>
@@ -145,7 +148,7 @@ Complete voorbeeld tabel:
               <input type="checkbox" id="checkbox-example-base-3" name="standaard-checkbox" />
             </div>
           </td>
-          <td>Lorem ipsum dolor sit amet</td>
+          <td><label for="checkbox-example-base-3">Keiko</label></td>
           <td><button type="button">Actie uitvoeren</button></td>
         </tr>
       </tbody>
