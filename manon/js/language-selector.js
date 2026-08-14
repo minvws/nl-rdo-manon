@@ -15,6 +15,42 @@ export function initLanguageSelector() {
 }
 
 /**
+ * Returns the button that expands and collapses the list of languages.
+ *
+ * @param {Element} el
+ * @returns {HTMLButtonElement | null}
+ */
+function getSelectorButton(el) {
+  return el.querySelector(":scope > button");
+}
+
+/**
+ * @param {HTMLElement} btn
+ * @param {boolean} expanded
+ */
+function setExpanded(btn, expanded) {
+  btn.setAttribute("aria-expanded", expanded ? "true" : "false");
+}
+
+/**
+ * @param {HTMLElement} btn
+ * @returns {boolean}
+ */
+function isExpanded(btn) {
+  return btn.getAttribute("aria-expanded") === "true";
+}
+
+/**
+ * Give focus to the language within the given list item.
+ *
+ * @param {Element | null} listItem
+ */
+function focusOption(listItem) {
+  const option = listItem?.querySelector("a");
+  if (option instanceof HTMLElement) option.focus();
+}
+
+/**
  * @param {Event} event
  */
 function onClick(event) {
@@ -24,12 +60,10 @@ function onClick(event) {
   );
   if (!languageSelectorElement) return;
 
-  const expanded =
-    languageSelectorElement.getAttribute("aria-expanded") === "true";
-  languageSelectorElement.setAttribute(
-    "aria-expanded",
-    expanded ? "false" : "true"
-  );
+  const selectorButton = getSelectorButton(languageSelectorElement);
+  if (!selectorButton) return;
+
+  setExpanded(selectorButton, !isExpanded(selectorButton));
 }
 
 /**
@@ -42,11 +76,10 @@ function onKeyPress(event) {
     ".language-selector-options"
   );
   if (!languageSelectorElement) return;
-  const expanded =
-    languageSelectorElement.getAttribute("aria-expanded") === "true";
+  const selectorButton = getSelectorButton(languageSelectorElement);
+  if (!selectorButton) return;
+  const expanded = isExpanded(selectorButton);
   const listLength = languageSelectorElement.getElementsByTagName("li").length;
-  const selectorButton =
-    languageSelectorElement.getElementsByTagName("button")[0];
   const firstOption =
     languageSelectorElement.querySelector("li:first-of-type a");
   const lastOption = languageSelectorElement.querySelector("li:last-of-type a");
@@ -56,24 +89,18 @@ function onKeyPress(event) {
   if (selectorButton === document.activeElement) {
     switch (event.code) {
       case "Enter":
-        languageSelectorElement.setAttribute(
-          "aria-expanded",
-          expanded ? "false" : "true"
-        );
+        setExpanded(selectorButton, !expanded);
         event.preventDefault();
         break;
       case "Space":
-        languageSelectorElement.setAttribute(
-          "aria-expanded",
-          expanded ? "false" : "true"
-        );
+        setExpanded(selectorButton, !expanded);
         event.preventDefault();
         break;
       case "Escape":
-        languageSelectorElement.setAttribute("aria-expanded", "false");
+        setExpanded(selectorButton, false);
         break;
       case "ArrowUp":
-        languageSelectorElement.setAttribute("aria-expanded", "true");
+        setExpanded(selectorButton, true);
         languageSelectorElement
           .getElementsByTagName("li")
           [listLength - 1].getElementsByTagName("a")[0]
@@ -81,7 +108,7 @@ function onKeyPress(event) {
         event.preventDefault();
         break;
       case "ArrowDown":
-        languageSelectorElement.setAttribute("aria-expanded", "true");
+        setExpanded(selectorButton, true);
         firstOption.focus();
         event.preventDefault();
         break;
@@ -92,15 +119,25 @@ function onKeyPress(event) {
 
   // If the element that has focus is a decendent of the language selector element.
   if (languageSelectorElement.contains(document.activeElement)) {
-    const focusParent = document.activeElement;
-    if (!(focusParent instanceof HTMLElement)) return;
+    const focusedOption = document.activeElement;
+    if (!(focusedOption instanceof HTMLElement)) return;
+    // Go up from the focused element -> <a> to its <li>, so its siblings are the other languages.
+    const focusedItem = focusedOption.closest("li");
+    if (!focusedItem) return;
     switch (event.code) {
       // If the ESCAPE key is pressed.
       case "Escape":
         // Give focus to the selector button.
         selectorButton.focus();
         // Close the drop down.
-        languageSelectorElement.setAttribute("aria-expanded", "false");
+        setExpanded(selectorButton, false);
+        break;
+      // On SPACE key, select the focused language
+      case "Space":
+        if (focusedOption instanceof HTMLAnchorElement) {
+          focusedOption.click();
+          event.preventDefault();
+        }
         break;
       // If the UP key is pressed.
       case "ArrowUp":
@@ -108,10 +145,7 @@ function onKeyPress(event) {
           // Stop the script if the focus is on the first element.
           break;
         }
-        // Target the currently focused element -> <a>, go up a node -> <li>, select the previous sibling of the previous sibling and the a-node within and focus it.
-        focusParent.previousElementSibling
-          ?.getElementsByTagName("a")[0]
-          .focus();
+        focusOption(focusedItem.previousElementSibling);
         event.preventDefault();
         break;
       // If the DOWN key is pressed.
@@ -120,8 +154,7 @@ function onKeyPress(event) {
           // Stop the script if the focus is on the last element.
           break;
         }
-        // Target the currently focused element -> <a>, go up a node -> <li>, select the next sibling of the next sibling and the a-node within and focus it.
-        focusParent.nextElementSibling?.getElementsByTagName("a")[0].focus();
+        focusOption(focusedItem.nextElementSibling);
         event.preventDefault();
         break;
     }

@@ -24,6 +24,7 @@ body > header nav .language-selector,
   }
 
   ul {
+    display: none;
     position: static;
     padding: 0;
     margin: 0;
@@ -120,28 +121,18 @@ body > header nav .language-selector,
     }
   }
 
-  /* Hide option list */
-  div[aria-expanded="false"] {
-    ul,
-    ul li {
-      display: none;
-    }
-  }
-
   /* Expand option list */
-  div[aria-expanded="true"] {
-    ul {
+  button[aria-expanded="true"] + ul {
+    display: block;
+    position: absolute;
+
+    li {
       display: block;
-      position: absolute;
 
-      li {
-        display: block;
-
-        /* Selected language */
-        &[aria-current="true"] {
-          a {
-            cursor: default;
-          }
+      /* Selected language */
+      &[aria-current="true"] {
+        a {
+          cursor: default;
         }
       }
     }
@@ -189,13 +180,13 @@ body > header nav .language-selector,
       }
     }
 
-    &[aria-expanded="true"] > button {
+    > button[aria-expanded="true"] {
       &::after {
         content: theme.$language-selector-list-closed-button-icon;
       }
     }
 
-    &[aria-expanded="false"] > button {
+    > button[aria-expanded="false"] {
       &::after {
         content: theme.$language-selector-list-open-button-icon;
       }
