@@ -20,6 +20,10 @@
     input[type="checkbox"]:only-child {
       margin: 0 auto;
     }
+
+    label[for] {
+      cursor: pointer;
+    }
   }
 }
 
