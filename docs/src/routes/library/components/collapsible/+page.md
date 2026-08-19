@@ -392,7 +392,7 @@ plaatst de knop er direct vóór. De knop verwijst via `aria-controls` naar dat
 
 De teksten op de knop komen uit de `data-*`-attributen die je zelf meegeeft, en
 worden bij het in- en uitklappen omgewisseld naar `data-close-label` en
-`data-button-close-label`. 
+`data-button-close-label`.
 
 Werkt de JavaScript niet, dan gebeurt dit alles niet: er is geen knop, er is geen
 `collapsed`-class, en het `.collapsing-element` staat gewoon uitgeklapt in de
