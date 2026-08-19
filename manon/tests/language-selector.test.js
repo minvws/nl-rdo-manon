@@ -158,3 +158,36 @@ test("collapses and returns focus to the button when Escape is pressed", async (
   expect(button).toHaveAttribute("aria-expanded", "false");
   expect(button).toHaveFocus();
 });
+
+test("collapses the list when focus moves out of the language selector", async () => {
+  const { button, user } = renderLanguageSelector();
+
+  button.focus();
+  await user.keyboard("{ArrowUp}");
+  expect(button).toHaveAttribute("aria-expanded", "true");
+
+  // Tab from the last language to outside the language selector.
+  await user.tab();
+
+  expect(button).toHaveAttribute("aria-expanded", "false");
+});
+
+test("collapses the list when clicking outside the language selector", async () => {
+  const { button, user } = renderLanguageSelector();
+
+  await user.click(button);
+  expect(button).toHaveAttribute("aria-expanded", "true");
+
+  await user.click(document.body);
+
+  expect(button).toHaveAttribute("aria-expanded", "false");
+});
+
+test("collapses on Escape even when focus is outside the language selector", async () => {
+  const { button, user } = renderLanguageSelector();
+  button.setAttribute("aria-expanded", "true");
+
+  await user.keyboard("{Escape}");
+
+  expect(button).toHaveAttribute("aria-expanded", "false");
+});

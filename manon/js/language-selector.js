@@ -16,7 +16,10 @@ export function initLanguageSelector() {
     }
     languageSelectorElement.addEventListener("click", onClick);
     languageSelectorElement.addEventListener("keydown", onKeyPress);
+    languageSelectorElement.addEventListener("focusout", onFocusOut);
   });
+  document.addEventListener("click", onDocumentInteraction);
+  document.addEventListener("keydown", onDocumentInteraction);
   document.body.classList.add("js-language-selector-loaded");
 }
 
@@ -70,6 +73,54 @@ function onClick(event) {
   if (!selectorButton) return;
 
   setExpanded(selectorButton, !isExpanded(selectorButton));
+}
+
+/**
+ * Collapse the language selector when focus moves out of it, e.g. by tabbing
+ * to the next element on the page.
+ *
+ * @param {Event} event
+ */
+function onFocusOut(event) {
+  if (!(event.currentTarget instanceof Element)) return;
+  const languageSelectorElement = event.currentTarget;
+  if (
+    event instanceof FocusEvent &&
+    event.relatedTarget instanceof Node &&
+    languageSelectorElement.contains(event.relatedTarget)
+  ) {
+    // Focus stays within the language selector.
+    return;
+  }
+  const selectorButton = getSelectorButton(languageSelectorElement);
+  if (!selectorButton) return;
+  setExpanded(selectorButton, false);
+}
+
+/**
+ * Collapse every expanded language selector on ESCAPE or on a click outside
+ * of it, even when the focus is not within the language selector. Not every
+ * browser gives the selector button focus when it is clicked.
+ *
+ * @param {Event} event
+ */
+function onDocumentInteraction(event) {
+  if (event instanceof KeyboardEvent && event.code !== "Escape") return;
+  document
+    .querySelectorAll(".language-selector-options")
+    .forEach((languageSelectorElement) => {
+      if (
+        event.type === "click" &&
+        event.target instanceof Node &&
+        languageSelectorElement.contains(event.target)
+      ) {
+        // Clicks within the language selector are handled by onClick.
+        return;
+      }
+      const selectorButton = getSelectorButton(languageSelectorElement);
+      if (!selectorButton || !isExpanded(selectorButton)) return;
+      setExpanded(selectorButton, false);
+    });
 }
 
 /**
