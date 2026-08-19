@@ -132,8 +132,8 @@ function onKeyPress(event) {
         // Close the drop down.
         setExpanded(selectorButton, false);
         break;
-      // On SPACE key, select the focused language
       case "Space":
+      // On SPACE key, select the focused language
         if (focusedOption instanceof HTMLAnchorElement) {
           focusedOption.click();
           event.preventDefault();
