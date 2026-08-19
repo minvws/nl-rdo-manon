@@ -58,10 +58,10 @@ import "@minvws/manon/js/sidemenu.js";
       </div>
       <div id="page-navigation-collapsible-implementation">
         <ol>
-          <li>Voeg de class `sidemenu` toe aan de `body`.</li>
-          <li>Voeg direct binnen de `body` een `nav` toe met de gewenste inhoud.</li>
+          <li>Voeg de class <code>sidemenu</code> toe aan de <code>body</code>.</li>
+          <li>Voeg direct binnen de <code>body</code> een <code>nav</code> toe met de gewenste inhoud.</li>
           <li>Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-            is. Bijvoorbeeld: `div` 'article' of 'section'. Eventueel met de class page-content.</li>
+            is. Bijvoorbeeld: <code>div</code> 'article' of 'section'. Eventueel met de class page-content.</li>
         </ol>
       </div>
       <div id="page-navigation-collapsible-imports">
@@ -102,10 +102,10 @@ import "@minvws/manon/js/sidemenu.js";
       </div>
       <div id="page-navigation-expandable-implementation">
         <ol>
-          <li>Voeg de class `sidemenu-closed` toe aan de body.</li>
-          <li>Voeg direct binnen de `body` een `nav` toe met de gewenste inhoud.</li>
+          <li>Voeg de class <code>sidemenu-closed</code> toe aan de body.</li>
+          <li>Voeg direct binnen de <code>body</code> een <code>nav</code> toe met de gewenste inhoud.</li>
           <li>Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-            is. Bijvoorbeeld: `div` 'article' of 'section'. Eventueel met de class page-content.</li>
+            is. Bijvoorbeeld: <code>div</code> 'article' of 'section'. Eventueel met de class page-content.</li>
         </ol>
       </div>
       <div id="page-navigation-expandable-imports">
@@ -146,10 +146,10 @@ import "@minvws/manon/js/sidemenu.js";
       </div>
       <div id="page-navigation-static-implementation">
         <ol>
-          <li>Voeg de class `sidemenu` toe aan de `body`.</li>
-          <li>Voeg direct binnen de `body` een `nav` toe met de gewenste inhoud.</li>
+          <li>Voeg de class <code>sidemenu</code> toe aan de <code>body</code>.</li>
+          <li>Voeg direct binnen de <code>body</code> een <code>nav</code> toe met de gewenste inhoud.</li>
           <li>Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-            is. Bijvoorbeeld: `div` 'article' of 'section'. Eventueel met de class page-content.</li>
+            is. Bijvoorbeeld: <code>div</code> 'article' of 'section'. Eventueel met de class page-content.</li>
         </ol>
       </div>
       <div id="page-navigation-static-imports">
@@ -195,10 +195,10 @@ import "@minvws/manon/js/sidemenu.js";
       </div>
       <div id="content-navigation-collapsible-implementation">
         <ol>
-          <li>Voeg de class `sidemenu` toe aan de `main`.</li>
-          <li>Voeg direct binnen de `main` een `nav` toe met de gewenste inhoud.</li>
+          <li>Voeg de class <code>sidemenu</code> toe aan de <code>main</code>.</li>
+          <li>Voeg direct binnen de <code>main</code> een <code>nav</code> toe met de gewenste inhoud.</li>
           <li>Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-            is. Bijvoorbeeld: `div` 'article' of 'section'. Eventueel met de class page-content.</li>
+            is. Bijvoorbeeld: <code>div</code> 'article' of 'section'. Eventueel met de class page-content.</li>
         </ol>
       </div>
       <div id="content-navigation-collapsible-imports">
@@ -239,10 +239,10 @@ import "@minvws/manon/js/sidemenu.js";
       </div>
       <div id="content-navigation-expandable-implementation">
         <ol>
-          <li>Voeg de class `sidemenu-closed` toe aan de main.</li>
-          <li>Voeg direct binnen de `main` een `nav` toe met de gewenste inhoud.</li>
+          <li>Voeg de class <code>sidemenu-closed</code> toe aan de main.</li>
+          <li>Voeg direct binnen de <code>main</code> een <code>nav</code> toe met de gewenste inhoud.</li>
           <li>Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-            is. Bijvoorbeeld: `div` 'article' of 'section'. Eventueel met de class page-content.</li>
+            is. Bijvoorbeeld: <code>div</code> 'article' of 'section'. Eventueel met de class page-content.</li>
         </ol>
       </div>
       <div id="content-navigation-expandable-imports">
@@ -283,10 +283,10 @@ import "@minvws/manon/js/sidemenu.js";
       </div>
       <div id="content-navigation-static-implementation">
         <ol>
-          <li>Voeg de class `sidemenu` toe aan de `main`.</li>
-          <li>Voeg direct binnen de `main` een `nav` toe met de gewenste inhoud.</li>
+          <li>Voeg de class <code>sidemenu</code> toe aan de <code>main</code>.</li>
+          <li>Voeg direct binnen de <code>main</code> een <code>nav</code> toe met de gewenste inhoud.</li>
           <li>Groepeer de overige content in een enkel element indien dat nog niet gebeurd
-            is. Bijvoorbeeld: `div` 'article' of 'section'. Eventueel met de class page-content.</li>
+            is. Bijvoorbeeld: <code>div</code> 'article' of 'section'. Eventueel met de class page-content.</li>
         </ol>
       </div>
       <div id="content-navigation-static-imports">

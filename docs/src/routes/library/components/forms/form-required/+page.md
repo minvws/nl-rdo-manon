@@ -57,7 +57,7 @@ SCSS importeren:
 
 <p class="explanation">
   <span>Aandachtspunten:</span>
-  Voeg een `span` toe boven het inputveld. Het is belangrijk om het bericht
+  Voeg een <code>span</code> toe boven het inputveld. Het is belangrijk om het bericht
   boven het invoerveld te plaatsen zodat de volgorde ook klopt voor gebruikers
   die gebruik maken van hulpmiddelen zoals een screenreader.
 </p>

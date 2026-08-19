@@ -43,12 +43,12 @@ gebruikers.</p>
         <li><a href="/library/components/forms/form-fieldset">Fieldset</a></li>
         <li>
           <a href="/library/components/forms/form-fieldset-radio"
-            >Fieldset radio-selecteerknop - `radio`</a
+            >Fieldset radio-selecteerknop - <code>radio</code></a
           >
         </li>
         <li>
           <a href="/library/components/forms/form-fieldset-checkbox"
-            >Fieldset selectievak - `checkbox`</a
+            >Fieldset selectievak - <code>checkbox</code></a
           >
         </li>
       </ul>
@@ -59,19 +59,19 @@ gebruikers.</p>
       <ul>
         <li>
           <a href="/library/components/forms/form-input-range"
-            >Bereik - `range`</a
+            >Bereik - <code>range</code></a
           >
         </li>
         <li>
           <a href="/library/components/forms/form-input-file"
-            >Bestand - `file`</a
+            >Bestand - <code>file</code></a
           >
         </li>
         <li><a href="/library/components/forms/form-input-date">Datum</a></li>
         <li><a href="/library/components/forms/form-input-email">Email</a></li>
         <li>
           <a href="/library/components/forms/form-input"
-            >Invoerveld - `input`</a
+            >Invoerveld - <code>input</code></a
           >
         </li>
             <li>
@@ -83,7 +83,7 @@ gebruikers.</p>
         </li>
         <li>
           <a href="/library/components/forms/form-input-radio"
-            >Radio-selecteerknop - `radio`</a
+            >Radio-selecteerknop - <code>radio</code></a
           >
         </li>
         <li>
@@ -91,17 +91,17 @@ gebruikers.</p>
         </li>
         <li>
           <a href="/library/components/forms/form-checkbox"
-            >Selectievak - `checkbox`</a
+            >Selectievak - <code>checkbox</code></a
           >
         </li>
         <li>
           <a href="/library/components/forms/form-input-textarea"
-            >Tekstveld - `textarea`</a
+            >Tekstveld - <code>textarea</code></a
           >
         </li>
         <li>
           <a href="/library/components/forms/form-select"
-            >Selectielijst - `select`</a
+            >Selectielijst - <code>select</code></a
           >
         </li>
       </ul>

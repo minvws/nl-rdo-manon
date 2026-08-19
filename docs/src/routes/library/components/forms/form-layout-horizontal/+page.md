@@ -76,14 +76,14 @@ Voor het horizontaal uitlijnen van de invoervelden en labels binnen het formulie
   </span>
     <p>
       Een fieldset is een groep met bij elkaar horende formuliervragen. Groepeer deze vragen
-      binnen een fieldset met in de `legend` een omschrijvende naam.
+      binnen een fieldset met in de <code>legend</code> een omschrijvende naam.
     </p>
     <p>
       Fieldsets kunnen geen gebruik maken van flex-box. Hierdoor hebben fieldset andere
-      styling nodig dan de overige elementen. **Voeg het .scss bestand: `form-horizontal-fieldset.scss` toe** aan het project om gebruik te maken van fieldsets en een horizontaal weergegeven formulier.
+      styling nodig dan de overige elementen. <strong>Voeg het .scss bestand: <code>form-horizontal-fieldset.scss</code> toe</strong> aan het project om gebruik te maken van fieldsets en een horizontaal weergegeven formulier.
     </p>
     <p>
-      Voeg optioneel het bestand:`form-horizontal-fieldset-variables.scss` toe om de
+      Voeg optioneel het bestand: <code>form-horizontal-fieldset-variables.scss</code> toe om de
       uitlijning van de labels ten opzichte van de velden aan te passen.
     </p>
 </div>

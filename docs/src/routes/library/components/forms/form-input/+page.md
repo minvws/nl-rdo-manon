@@ -62,8 +62,8 @@ SCSS importeren:
     Aandachtspunten
   </span>
   <p>
-    Geef op de `input` aan dat het invoerveld verplicht is met het
-    `required` attribuut.
+    Geef op de <code>input</code> aan dat het invoerveld verplicht is met het
+    <code>required</code> attribuut.
   </p>
   <p>
     Voeg een span toe boven het invoerveld. Het is belangrijk om het bericht boven het
@@ -71,7 +71,7 @@ SCSS importeren:
     hulpmiddelen zoals een screenreader.
   </p>
   <p>
-    Groeppeer de `input` en de `span` samen in een `div` binnen horizontaal uitgelijnde formulieren.
+    Groeppeer de <code>input</code> en de <code>span</code> samen in een <code>div</code> binnen horizontaal uitgelijnde formulieren.
   </p>
 </div>
 
@@ -96,6 +96,6 @@ SCSS importeren:
     <span class="icon icon-informative" aria-hidden="true"></span>
     Aandachtspunten
   </span>
-  Geef op de `input` aan dat het invoerveld uitgeschakeld is met het
-  `disabled` attribuut.
+  Geef op de <code>input</code> aan dat het invoerveld uitgeschakeld is met het
+  <code>disabled</code> attribuut.
 </p>
