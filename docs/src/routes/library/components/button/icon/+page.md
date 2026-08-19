@@ -15,7 +15,7 @@ SCSS importeren:
 ```scss
 @use "@minvws/manon/components/button";
 @use "@minvws/manon/components/icon";
-@use "@minvws/manon/components/visually-hidden";
+@use "@minvws/manon/utility/visually-hidden";
 @use "@minvws/manon/components/button-icon";
 ```
 

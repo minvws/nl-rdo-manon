@@ -16,7 +16,7 @@ Knop met openklapbaar menu.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/components/dropdown";
+@use "@minvws/manon/components/button-dropdown";
 ```
 
 JavaScript importeren:

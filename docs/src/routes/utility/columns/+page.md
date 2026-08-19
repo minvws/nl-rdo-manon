@@ -16,7 +16,7 @@ Het verdelen van de content over kolommen.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/components/columns";
+@use "@minvws/manon/utility/columns";
 ```
 
 Beschikbare classes: `column-2`, `column-3`, `column-4`

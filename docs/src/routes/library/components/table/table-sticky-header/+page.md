@@ -18,7 +18,7 @@ SCSS importeren:
 
 ```scss
 @use "@minvws/manon/components/table";
-@use "@minvws/manon/components/sticky-header";
+@use "@minvws/manon/components/table-sticky-header";
 ```
 
 ### Benodigde stappen

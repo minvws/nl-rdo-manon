@@ -17,7 +17,7 @@ regel blijven doorlopen.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/components/nowrap";
+@use "@minvws/manon/utility/nowrap";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

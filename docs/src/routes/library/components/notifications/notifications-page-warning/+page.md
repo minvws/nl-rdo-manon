@@ -25,8 +25,7 @@ Voor het weergeven van notificaties op paginaniveau.
 SCSS importeren:
 
 ```scss
-@use "@minvws/manon/components/notification-warning-message";
-@use "@minvws/manon/components/notification-warning-page";
+@use "@minvws/manon/components/notification";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
