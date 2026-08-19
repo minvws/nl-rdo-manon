@@ -9,6 +9,11 @@ export function initLanguageSelector() {
   );
 
   languageSelectorElements.forEach((languageSelectorElement) => {
+    // Set up the initial `aria-expanded` state.
+    const selectorButton = getSelectorButton(languageSelectorElement);
+    if (selectorButton && !selectorButton.hasAttribute("aria-expanded")) {
+      setExpanded(selectorButton, false);
+    }
     languageSelectorElement.addEventListener("click", onClick);
     languageSelectorElement.addEventListener("keydown", onKeyPress);
   });
@@ -133,7 +138,7 @@ function onKeyPress(event) {
         setExpanded(selectorButton, false);
         break;
       case "Space":
-      // On SPACE key, select the focused language
+        // On SPACE key, select the focused language
         if (focusedOption instanceof HTMLAnchorElement) {
           focusedOption.click();
           event.preventDefault();

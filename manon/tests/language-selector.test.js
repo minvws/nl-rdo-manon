@@ -75,7 +75,7 @@ test.each([["{Enter}"], ["{ }"]])(
   }
 );
 
-test("treats a button without aria-expanded as collapsed", async () => {
+test("adds aria-expanded to a button without it on initialization", async () => {
   const { container, user } = render(`
     <div class="language-selector">
       <div class="language-selector-options">
@@ -89,8 +89,9 @@ test("treats a button without aria-expanded as collapsed", async () => {
   initLanguageSelector();
 
   const button = getByRole(container, "button");
-  await user.click(button);
+  expect(button).toHaveAttribute("aria-expanded", "false");
 
+  await user.click(button);
   expect(button).toHaveAttribute("aria-expanded", "true");
 });
 
