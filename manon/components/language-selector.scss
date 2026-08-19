@@ -24,7 +24,6 @@ body > header nav .language-selector,
   }
 
   ul {
-    display: none;
     position: static;
     padding: 0;
     margin: 0;
@@ -192,4 +191,8 @@ body > header nav .language-selector,
       }
     }
   }
+}
+
+.js-language-selector-loaded .language-selector ul {
+  display: none;
 }

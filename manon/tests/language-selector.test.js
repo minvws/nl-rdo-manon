@@ -43,6 +43,12 @@ function renderLanguageSelector() {
   };
 }
 
+test("adds a body class on initialization", () => {
+  renderLanguageSelector();
+
+  expect(document.body).toHaveClass("js-language-selector-loaded");
+});
+
 test("reports the collapsed state on the button, not on the wrapper", () => {
   const { button, wrapper } = renderLanguageSelector();
 

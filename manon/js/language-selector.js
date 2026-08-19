@@ -17,6 +17,7 @@ export function initLanguageSelector() {
     languageSelectorElement.addEventListener("click", onClick);
     languageSelectorElement.addEventListener("keydown", onKeyPress);
   });
+  document.body.classList.add("js-language-selector-loaded");
 }
 
 /**

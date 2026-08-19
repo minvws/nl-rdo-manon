@@ -33,7 +33,6 @@ import "@minvws/manon/js/language-selector.js";
   <div class="language-selector-options">
     <button
       aria-haspopup="listbox"
-      aria-expanded="false"
       aria-controls="language-selector-list"
       aria-describedby="language-selector-description"
     > Papiamentu </button>
@@ -69,7 +68,6 @@ import "@minvws/manon/js/language-selector.js";
   <div class="language-selector-options">
     <button
       aria-haspopup="listbox"
-      aria-expanded="false"
       aria-controls="language-selector-list"
       aria-describedby="language-selector-description"
     >
