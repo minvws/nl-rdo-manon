@@ -125,7 +125,7 @@
    */
   function copyCode() {
     try {
-      navigator.clipboard.writeText(code);
+      navigator.clipboard.writeText(content);
     } catch (err) {
       console.error("Failed to copy code to clipboard:", err);
       return;
