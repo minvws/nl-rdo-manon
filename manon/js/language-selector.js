@@ -72,7 +72,28 @@ function onClick(event) {
   const selectorButton = getSelectorButton(languageSelectorElement);
   if (!selectorButton) return;
 
+  const listItem = event.target.closest("li");
+  if (listItem) selectOption(languageSelectorElement, selectorButton, listItem);
+
   setExpanded(selectorButton, !isExpanded(selectorButton));
+}
+
+/**
+ * Mark the given option as selected, so the 
+ * state is also correct without a page reload
+ *
+ * @param {Element} languageSelectorElement
+ * @param {HTMLElement} selectorButton
+ * @param {Element} listItem
+ */
+function selectOption(languageSelectorElement, selectorButton, listItem) {
+  languageSelectorElement.querySelectorAll("li").forEach((item) => {
+    const selected = item === listItem ? "true" : "false";
+    item.setAttribute("aria-selected", selected);
+    item.setAttribute("aria-current", selected);
+  });
+  const label = listItem.querySelector("a")?.textContent?.trim();
+  if (label) selectorButton.textContent = label;
 }
 
 /**

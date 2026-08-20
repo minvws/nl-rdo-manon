@@ -183,6 +183,24 @@ test("collapses the list when clicking outside the language selector", async () 
   expect(button).toHaveAttribute("aria-expanded", "false");
 });
 
+test("moves aria-selected and the button label to a language selected without a page load", async () => {
+  const { button, languages, user } = renderLanguageSelector();
+  const [dutch] = languages;
+  const papiamentu = languages[languages.length - 1];
+
+  dutch.addEventListener("click", (event) => event.preventDefault());
+
+  await user.click(button);
+  await user.click(dutch);
+
+  expect(dutch.closest("li")).toHaveAttribute("aria-selected", "true");
+  expect(dutch.closest("li")).toHaveAttribute("aria-current", "true");
+  expect(papiamentu.closest("li")).toHaveAttribute("aria-selected", "false");
+  expect(papiamentu.closest("li")).toHaveAttribute("aria-current", "false");
+  expect(button).toHaveTextContent("Nederlands");
+  expect(button).toHaveAttribute("aria-expanded", "false");
+});
+
 test("collapses on Escape even when focus is outside the language selector", async () => {
   const { button, user } = renderLanguageSelector();
   button.setAttribute("aria-expanded", "true");
