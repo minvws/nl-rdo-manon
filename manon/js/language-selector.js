@@ -79,7 +79,7 @@ function onClick(event) {
 }
 
 /**
- * Mark the given option as selected, so the 
+ * Mark the given option as selected, so the
  * state is also correct without a page reload
  *
  * @param {Element} languageSelectorElement
