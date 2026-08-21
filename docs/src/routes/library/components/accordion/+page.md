@@ -42,21 +42,10 @@ import "@minvws/manon/js/accordion.js";
     <span class="icon icon-informative" aria-hidden="true"></span>
     Aandachtspunten
   </span>
-  <p>
-    Standaard is het eerste onderdeel opengeklapt. Dit kan aangepast worden
-    middels het `aria-expanded`-attribuut van de `button`.
-  </p>
-  <p>
-    Voeg `aria-expanded="false"` toe aan de `button` van het eerste onderdeel
-    om te voorkomen dat het standaard opengeklapt is.
-  </p>
-  <p>
-    Voeg `aria-expanded="true"` toe aan de `button` van een ander onderdeel
-    om te zorgen dat dat onderdeel standaard opengeklapt is. Let op: dit
-    zorgt ervoor dat het eerste onderdeel niet meer standaard opengeklapt is.
-    Om te zorgen dat het eerste onderdeel óók standaard opengeklapt is, kan
-    je ook daar `aria-expanded="true"` toevoegen.
-  </p>
+  <p>Standaard is het eerste onderdeel opengeklapt. Dit kan aangepast worden middels het <code>aria-expanded</code>-attribuut van de <code>button</code>.</p>
+  <p>Voeg <code>aria-expanded="false"</code> toe aan de <code>button</code> van het eerste onderdeel om te voorkomen dat het standaard opengeklapt is.</p>
+  <p>Voeg <code>aria-expanded="true"</code> toe aan de <code>button</code> van een ander onderdeel om te zorgen dat dat onderdeel standaard opengeklapt is. Let op: dit zorgt ervoor dat het eerste onderdeel niet meer standaard opengeklapt is. Om te zorgen dat het eerste onderdeel óók standaard opengeklapt is, kan je ook daar <code>aria-expanded="true"</code> toevoegen.</p>
+  <p>Zet verder geen <code>aria-expanded</code> of <code>aria-controls</code> in je HTML: <code>accordion.js</code> voegt die bij het initialiseren zelf toe. Werkt de JavaScript niet, dan staan alle onderdelen opengeklapt en blijft alle content beschikbaar. Zie <a href="/getting-started/installation#no-javascript">werken zonder JavaScript</a>.</p>
 </div>
 
 <h2 id="examples">Voorbeelden</h2>
@@ -78,3 +67,30 @@ import "@minvws/manon/js/accordion.js";
 <Components.Snippet path="accordion/section.html" as="raw"/>
 
 <Components.Snippet path="accordion/section.html" as="code" language="html" />
+
+### Resultaat na initialisatie
+
+Deze markup schrijf je niet zelf. Ter illustratie: zo ziet het eerste onderdeel
+van het `ul`-voorbeeld eruit nádat `accordion.js` het component heeft
+geïnitialiseerd.
+
+```html
+<ul class="accordion">
+  <li>
+    <button id="example-1-accordion-item-1" aria-controls="DIV-3b9aca01" aria-expanded="true">
+      Voorbeeld-onderwerp 1
+    </button>
+    <div id="DIV-3b9aca01" aria-labelledby="example-1-accordion-item-1">…</div>
+  </li>
+</ul>
+```
+
+Het script koppelt elke `button` via `aria-controls` aan de `div` die erop volgt.
+Heeft die `div` nog geen `id`, dan genereert het script er een. Vandaar de
+willekeurige waarde hierboven. Geef je de `div` zelf een `id`, dan wordt die
+gebruikt.
+
+Daarnaast krijgt elke `button` een `aria-expanded`-attribuut, en wordt op de
+`body` de class `js-accordion-loaded` gezet. Pas met die class klapt de CSS
+onderdelen in. Werkt de JavaScript niet, dan gebeurt dit alles niet en staan alle
+onderdelen open.

@@ -88,9 +88,10 @@ Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
 
 ## Javascript
 
-Manon bevat verschillende interactieve componenten die JavaScript vereisen om
-correct te functioneren. Deze componenten zijn ontworpen om eenvoudig te
-integreren in je project.
+Manon bevat verschillende interactieve componenten die JavaScript gebruiken voor
+hun interactieve gedrag. Deze componenten zijn opgebouwd volgens _progressive
+enhancement_: de HTML werkt op zichzelf, JavaScript maakt hem interactief. Ze
+zijn ontworpen om eenvoudig te integreren in je project.
 
 ### Automatische initialisatie
 
@@ -103,6 +104,17 @@ Bijvoorbeeld, om de accordion component te gebruiken, neem je het bestand
 `accordion.js` op, en het script zal automatisch elk `.accordion` element
 initialiseren. Er is dan geen extra JavaScript-code nodig om het component
 werkend te krijgen.
+
+<h3 id="no-javascript">Werken zonder JavaScript</h3>
+
+De HTML die je zelf schrijft bevat alleen de structuur van een component.
+Attributen die een interactieve toestand beschrijven, zoals `aria-expanded` en
+`aria-controls`, en elementen die alleen bestaan om het component te bedienen,
+zoals de knop van een inklapbaar component, worden door de JavaScript
+toegevoegd.
+
+Indien Javascript is uitgeschakeld, dan blijven componenten in hun uitgeklapte
+uitgangstoestand staan. Alle content is dan gewoon beschikbaar en er is geen knop die niets doet.
 
 ### Manon gebruiken met een bundler
 
