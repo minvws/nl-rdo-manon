@@ -1,5 +1,7 @@
+@use "../variables" as theme;
+
 .horizontal-center {
   /* Preventing specificity issues */
   margin: 0 auto;
-  max-width: theme.$horizontal-centered-max-width;
+  max-width: theme.$horizontal-center-max-width;
 }

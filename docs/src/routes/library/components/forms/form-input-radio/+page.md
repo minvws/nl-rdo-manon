@@ -19,7 +19,6 @@ SCSS importeren:
 
 ```scss
 @use "@minvws/manon/components/radio";
-@use "@minvws/manon/components/form-radio";
 ```
 
 <h2 id="examples">Voorbeelden</h2>

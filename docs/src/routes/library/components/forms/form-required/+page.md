@@ -19,7 +19,7 @@ SCSS importeren:
 
 ```scss
 @use "@minvws/manon/components/form";
-@use "@minvws/manon/components/form-nota-bene";
+@use "@minvws/manon/components/nota-bene";
 ```
 
 <h2 id="examples">Voorbeelden</h2>
