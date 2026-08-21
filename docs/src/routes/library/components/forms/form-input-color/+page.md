@@ -43,10 +43,10 @@ SCSS importeren:
     <span class="icon icon-informative" aria-hidden="true"></span>
     Aandachtspunten
   </span>
-    <p>Voeg `type="color"` toe aan het invoerveld.</p>
+    <p>Voeg <code>type="color"</code> toe aan het invoerveld.</p>
     <p>
-      Voeg basiskleurwaarde met een hexidecimalekleurcode aan binnen: `value`.
-      Voorbeeld: `value="#ffffff"`. De ingevoerde kleur is de kleur waarin het
+      Voeg basiskleurwaarde met een hexidecimalekleurcode aan binnen: <code>value</code>.
+      Voorbeeld: <code>value="#ffffff"</code>. De ingevoerde kleur is de kleur waarin het
       selectievak getoont wordt binnen het formulier voordat de gebruiker een
       andere keuze maakt.
     </p>

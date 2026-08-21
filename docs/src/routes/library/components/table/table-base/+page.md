@@ -22,8 +22,8 @@ SCSS importeren:
 <p class="explanation">
   <span>Aandachtspunten:</span>
   Om tabellen correct weer te geven op smallere schermresoluties, denk hierbij
-  aan mobiele apparaten, dient er een `div` om de `table` te staan met de
-  class `horizontal-scroll`.
+  aan mobiele apparaten, dient er een <code>div</code> om de <code>table</code> te staan met de
+  class <code>horizontal-scroll</code>.
 </p>
 
 <h2 id="examples">Voorbeelden</h2>
@@ -197,7 +197,7 @@ SCSS importeren:
 <p class="explanation">
   Om de gebruiker te informeren over de inhoud van de tabel, is het aan te raden om een
   titel toe te voegen met daarin de omschrijving van de tabel. Voeg direct binnen de
-  `table` een `caption` toe om de titel toe te voegen.
+  <code>table</code> een <code>caption</code> toe om de titel toe te voegen.
 </p>
 
 ### Voorbeeld: Tabel met rij-headers

@@ -62,7 +62,7 @@ SCSS importeren:
     <span class="icon icon-warning" aria-hidden="true"></span>
     Let op
   </span>
-  Een icoon op een knop zonder tekst is per definitie informatief. Zorg er daarom altijd voor dat de knop een toegankelijk naam heeft. Dit kan bijvoorbeeld middels een `aria-label` op het icoon of middels visueel verborgen tekst naast het icoon. Visueel verborgen tekst heeft de voorkeur, omdat die ook als visuele fallback kan dienen voor het icoon wanneer CSS en afbeeldingen niet geladen konden worden.
+  Een icoon op een knop zonder tekst is per definitie informatief. Zorg er daarom altijd voor dat de knop een toegankelijk naam heeft. Dit kan bijvoorbeeld middels een <code>aria-label</code> op het icoon of middels visueel verborgen tekst naast het icoon. Visueel verborgen tekst heeft de voorkeur, omdat die ook als visuele fallback kan dienen voor het icoon wanneer CSS en afbeeldingen niet geladen konden worden.
 </p>
 
 <h2 id="examples">Voorbeelden</h2>

@@ -25,7 +25,7 @@ Een tabel is een gestructureerd overzicht van gegevens, weergegeven in rijen en 
 - <a href="table/table-action-buttons">Actieknoppen</a>
 - <a href="table/table-checkbox">Checkboxes</a>
 - <a href="table/table-numerical-data">Numerieke data</a>
-- <a href="table/table-caption">Tabel bijschrift `caption`</a>
+- <a href="table/table-caption">Tabel bijschrift <code>caption</code></a>
 - <a href="table/table-notifications">Meldingen</a>
 
 ### Opmaak-opties

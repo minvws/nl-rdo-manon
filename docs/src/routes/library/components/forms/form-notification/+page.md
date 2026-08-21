@@ -834,7 +834,7 @@ SCSS importeren:
       &lt;span class="notification-type">
         &lt;span class="icon icon-error" aria-hidden="true">&lt;/span>
         Foutmelding:
-      &lt;/s``pan>
+      &lt;/span>
       Lorem ipsum dolor sit amet
     &lt;/p>
   &lt;/div>
@@ -888,7 +888,7 @@ SCSS importeren:
       &lt;span class="notification-type">
         &lt;span class="icon icon-warning" aria-hidden="true">&lt;/span>
         Waarschuwing:
-      &lt;/s``pan>
+      &lt;/span>
       Lorem ipsum dolor sit amet
     &lt;/p>
   &lt;/div>
@@ -942,7 +942,7 @@ SCSS importeren:
       &lt;span class="notification-type">
         &lt;span class="icon icon-informative" aria-hidden="true">&lt;/span>
         Toelichting:
-      &lt;/s``pan>
+      &lt;/span>
       Lorem ipsum dolor sit amet
     &lt;/p>
   &lt;/div>
@@ -996,7 +996,7 @@ SCSS importeren:
       &lt;span class="notification-type">
         &lt;span class="icon icon-check" aria-hidden="true">&lt;/span>
         Bevestiging:
-      &lt;/s``pan>
+      &lt;/span>
       Lorem ipsum dolor sit amet
     &lt;/p>
   &lt;/div>
@@ -1050,7 +1050,7 @@ SCSS importeren:
       &lt;span class="notification-type">
         &lt;span class="icon icon-warning" aria-hidden="true">&lt;/span>
         Systeembericht:
-      &lt;/s``pan>
+      &lt;/span>
       Lorem ipsum dolor sit amet
     &lt;/p>
   &lt;/div>
@@ -1486,10 +1486,10 @@ SCSS importeren:
     <p>
       Voeg de class toe met het type melding op het invoerveld om gebruik te
       maken van visuele feedback direct op het invoerveld. Voorbeeld:
-      `class="error"`.
+      <code>class="error"</code>.
     </p>
     <p>
-      Voeg voor screenreader gebruikers `aria-invalid="true"` toe aan
+      Voeg voor screenreader gebruikers <code>aria-invalid="true"</code> toe aan
       invoervelden met een error. In de HTML-voorbeelden is dit meegenomen.
     </p>
 </div>

@@ -3,7 +3,7 @@ title: Main testpagina
 breadcrumb: Main testpagina
 ---
 
-<p id="introduction">Componenten direct binnen de `main` geplaatst.</p>
+<p id="introduction">Componenten direct binnen de <code>main</code> geplaatst.</p>
 
 <h2>HTML-voorbeeld:</h2>
 
