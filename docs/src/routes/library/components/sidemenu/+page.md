@@ -54,7 +54,7 @@ import "@minvws/manon/js/sidemenu.js";
       </div>
       <div id="page-navigation-collapsible-structure">
         <Components.Snippet path="sidemenu/page-navigation/collapsible/structure.html" as="code" language="html"/>
-        
+
       </div>
       <div id="page-navigation-collapsible-implementation">
         <ol>
@@ -98,7 +98,7 @@ import "@minvws/manon/js/sidemenu.js";
       </div>
       <div id="page-navigation-expandable-structure">
         <Components.Snippet path="sidemenu/page-navigation/expandable/structure.html" as="code" language="html"/>
-        
+
       </div>
       <div id="page-navigation-expandable-implementation">
         <ol>
@@ -142,7 +142,7 @@ import "@minvws/manon/js/sidemenu.js";
       </div>
       <div id="page-navigation-static-structure">
         <Components.Snippet path="sidemenu/page-navigation/static/structure.html" as="code" language="html"/>
-        
+
       </div>
       <div id="page-navigation-static-implementation">
         <ol>
@@ -191,7 +191,7 @@ import "@minvws/manon/js/sidemenu.js";
       </div>
       <div id="content-navigation-collapsible-structure">
         <Components.Snippet path="sidemenu/content-navigation/collapsible/structure.html" as="code" language="html"/>
-        
+
       </div>
       <div id="content-navigation-collapsible-implementation">
         <ol>
@@ -235,7 +235,7 @@ import "@minvws/manon/js/sidemenu.js";
       </div>
       <div id="content-navigation-expandable-structure">
         <Components.Snippet path="sidemenu/content-navigation/expandable/structure.html" as="code" language="html"/>
-        
+
       </div>
       <div id="content-navigation-expandable-implementation">
         <ol>
@@ -279,7 +279,7 @@ import "@minvws/manon/js/sidemenu.js";
       </div>
       <div id="content-navigation-static-structure">
         <Components.Snippet path="sidemenu/content-navigation/static/structure.html" as="code" language="html"/>
-        
+
       </div>
       <div id="content-navigation-static-implementation">
         <ol>

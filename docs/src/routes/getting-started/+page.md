@@ -51,7 +51,7 @@ integreren in hun projecten.
   <p>
     Staan de header en footer elementen niet direct binnen de body? Voeg dan de class <code>manon-root</code> toe aan het element waar de header en footer zich wel bevinden.
   </p>
- 
+
   <p>
     Als alleen de header of footer van Manon gebruikt wordt. Kan er ook gebruik gemaakt worden van de losse classes <code>page-header</code> en <code>page-footer</code>. Deze zijn niet nodig als <code>manon-root</code> al toegevoegd is.
   </p>

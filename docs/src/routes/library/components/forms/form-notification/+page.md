@@ -507,7 +507,7 @@ SCSS importeren:
       </code>
     </pre>
   </div>
-  
+
 </manon-tabs>
 
 ### Select
@@ -1152,7 +1152,7 @@ SCSS importeren:
       </code>
     </pre>
   </div>
-  
+
   <div id="explanation">
     <form action="" method="post">
       <div aria-describedby="checkbox-explanation-message">
@@ -1355,7 +1355,7 @@ SCSS importeren:
       </code>
     </pre>
   </div>
-  
+
   <div id="explanation">
     <form action="" method="post">
       <div aria-describedby="radio-explanation-message">
