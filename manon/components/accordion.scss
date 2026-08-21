@@ -35,6 +35,15 @@
   }
 }
 
+%accordion-item-heading {
+  &:has(> button) {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    hyphens: manual;
+  }
+}
+
 %accordion-content {
   display: flex;
   flex-direction: column;
@@ -70,6 +79,14 @@ ul.accordion {
     padding: 0;
     gap: 0;
 
+    > :is(h2, h3, h4, h5, h6) {
+      @extend %accordion-item-heading;
+
+      > button {
+        @extend %accordion-button;
+      }
+    }
+
     > button {
       @extend %accordion-button;
     }
@@ -97,6 +114,14 @@ ul.accordion {
   > div {
     width: 100%;
     gap: 0;
+
+    > :is(h2, h3, h4, h5, h6) {
+      @extend %accordion-item-heading;
+
+      > button {
+        @extend %accordion-button;
+      }
+    }
 
     > button {
       @extend %accordion-button;
@@ -161,6 +186,11 @@ section.accordion {
       & + div {
         display: none;
       }
+    }
+
+    /* Collapsed content when the toggle button was generated inside a heading */
+    :is(h2, h3, h4, h5, h6):has(> button[aria-expanded="false"]) + div {
+      display: none;
     }
 
     /* The expanded state */
