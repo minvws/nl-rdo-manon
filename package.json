@@ -1,8 +1,8 @@
 {
   "private": true,
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@11.24.0",
   "engines": {
-    "pnpm": ">=10"
+    "pnpm": ">=11"
   },
   "scripts": {
     "dev": "pnpm run --dir docs dev",
