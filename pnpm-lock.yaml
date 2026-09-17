@@ -7,8 +7,11 @@ settings:
 overrides:
   '@sveltejs/kit@<=2.70.1': '>=2.70.2'
   brace-expansion@>=4.0.0 <5.0.9: '>=5.0.9'
+  colord@<2.9.4: ^2.9.4
   cookie@<0.7.0: '>=0.7.0 <2'
   fast-uri@>=3.0.0 <3.1.5: '>=3.1.5'
+  fast-uri@>=4.0.0 <4.1.3: ^4.1.3
+  fast-uri@>=4.0.1 <4.1.3: ^4.1.3
   js-yaml@>=4.0.0 <4.3.1: '>=4.3.1'
   nanoid@<3.3.17: '>=3.3.17'
 
@@ -39,7 +42,7 @@ importers:
         specifier: ^3.0.10
         version: 3.0.10(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.55.9(@typescript-eslint/types@8.57.2))(vite@8.0.16(@types/node@26.2.0)(sass@1.99.0)))(svelte@5.55.9(@typescript-eslint/types@8.57.2))(typescript@6.0.3)(vite@8.0.16(@types/node@26.2.0)(sass@1.99.0)))
       '@sveltejs/kit':
-        specifier: '>=2.70.2'
+        specifier: ^2.70.2
         version: 2.70.2(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.55.9(@typescript-eslint/types@8.57.2))(vite@8.0.16(@types/node@26.2.0)(sass@1.99.0)))(svelte@5.55.9(@typescript-eslint/types@8.57.2))(typescript@6.0.3)(vite@8.0.16(@types/node@26.2.0)(sass@1.99.0))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^7.1.2
@@ -57,7 +60,7 @@ importers:
         specifier: ^1.99.0
         version: 1.99.0
       svelte:
-        specifier: ^5.55.5
+        specifier: ^5.55.9
         version: 5.55.9(@typescript-eslint/types@8.57.2)
       svelte-check:
         specifier: ^4.4.8
@@ -72,7 +75,7 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0
       vite:
-        specifier: ^8.0.14
+        specifier: ^8.0.16
         version: 8.0.16(@types/node@26.2.0)(sass@1.99.0)
 
   examples/sass-cli:
@@ -101,7 +104,7 @@ importers:
         specifier: ^1.99.0
         version: 1.99.0
       vite:
-        specifier: ^8.0.14
+        specifier: ^8.0.16
         version: 8.0.16(@types/node@26.2.0)(sass@1.99.0)
 
   manon:
@@ -794,8 +797,8 @@ packages:
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
-  colord@2.9.3:
-    resolution: {integrity: sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw==}
+  colord@2.10.0:
+    resolution: {integrity: sha512-AidJptpBJmjTclAp9BkLwJi0T93fo5epJnbaZslpg6QVzpHjAiveF55mE9AcUJiGMqRHgMDY8soMsQtuNYMHfw==}
 
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
@@ -908,8 +911,8 @@ packages:
     resolution: {integrity: sha512-7MptL8U0cqcFdzIzwOTHoilX9x5BrNqye7Z/LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2TCvYLg==}
     engines: {node: '>=8.6.0'}
 
-  fast-uri@4.1.2:
-    resolution: {integrity: sha512-TyGmBcbDTZXcb2cj5MV89DrF42DKvb3y5DDUNh95iO+IMeAzMkVSxK1PZRrRIpc9yg8U2GhGdbofNa0LS/a4Bw==}
+  fast-uri@4.1.5:
+    resolution: {integrity: sha512-vZeoMRB4epNr7QfdHxel7te/RcX16CxyXI07JCCTFWZA2s4v1azGNESRj+2EoaHSaWFL/Z3GmKT2jF6A202jLg==}
 
   fastest-levenshtein@1.0.16:
     resolution: {integrity: sha512-eRnCtTTtGZFpQCwhJiUOuxPQWRXVKYDn0b2PeHfXL6/Zi53SLAzAHfVhVWK2AryC/WH05kGfxhFIPvTF0SXQzg==}
@@ -2310,7 +2313,7 @@ snapshots:
   ajv@8.20.0:
     dependencies:
       fast-deep-equal: 3.1.3
-      fast-uri: 4.1.2
+      fast-uri: 4.1.5
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
 
@@ -2389,7 +2392,7 @@ snapshots:
 
   color-name@1.1.4: {}
 
-  colord@2.9.3: {}
+  colord@2.10.0: {}
 
   convert-source-map@2.0.0: {}
 
@@ -2478,7 +2481,7 @@ snapshots:
       merge2: 1.4.1
       micromatch: 4.0.8
 
-  fast-uri@4.1.2: {}
+  fast-uri@4.1.5: {}
 
   fastest-levenshtein@1.0.16: {}
 
@@ -2489,6 +2492,10 @@ snapshots:
   fdir@6.5.0(picomatch@4.0.4):
     optionalDependencies:
       picomatch: 4.0.4
+
+  fdir@6.5.0(picomatch@4.0.5):
+    optionalDependencies:
+      picomatch: 4.0.5
 
   file-entry-cache@11.1.5:
     dependencies:
@@ -2829,7 +2836,8 @@ snapshots:
 
   picomatch@2.3.2: {}
 
-  picomatch@4.0.4: {}
+  picomatch@4.0.4:
+    optional: true
 
   picomatch@4.0.5: {}
 
@@ -3068,7 +3076,7 @@ snapshots:
       '@csstools/media-query-list-parser': 5.0.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)
       '@csstools/selector-resolve-nested': 4.0.1(postcss-selector-parser@7.1.5)
       '@csstools/selector-specificity': 6.0.0(postcss-selector-parser@7.1.5)
-      colord: 2.9.3
+      colord: 2.10.0
       cosmiconfig: 9.0.2(typescript@6.0.3)
       css-functions-list: 3.3.3
       css-tree: 3.2.1
@@ -3173,8 +3181,8 @@ snapshots:
 
   tinyglobby@0.2.17:
     dependencies:
-      fdir: 6.5.0(picomatch@4.0.4)
-      picomatch: 4.0.4
+      fdir: 6.5.0(picomatch@4.0.5)
+      picomatch: 4.0.5
 
   tinyrainbow@3.1.1: {}
 
@@ -3251,8 +3259,8 @@ snapshots:
   vite@8.0.16(@types/node@26.2.0)(sass@1.99.0):
     dependencies:
       lightningcss: 1.32.0
-      picomatch: 4.0.4
-      postcss: 8.5.24
+      picomatch: 4.0.5
+      postcss: 8.5.26
       rolldown: 1.0.3
       tinyglobby: 0.2.17
     optionalDependencies:
