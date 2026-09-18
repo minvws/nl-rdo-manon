@@ -27,59 +27,123 @@ export function initAccordions() {
  * @param {HTMLElement} accordion
  */
 function initAccordion(accordion) {
-  var hasAriaExpandedMarkup = false;
-  var buttons = getButtons(accordion);
+  var hasExpandedMarkup = false;
+  var headers = getItemHeaders(accordion);
+  var buttons = [];
 
-  for (var i = 0; i < buttons.length; i++) {
-    var button = buttons[i];
-
-    // Make sure the button `aria-control`s its sibling <div> by id.
-    if (!button.getAttribute("aria-controls")) {
-      var sibling = button.nextElementSibling;
-      if (!(sibling instanceof HTMLElement) || sibling.tagName !== "DIV") {
-        console.error("No sibling <div> found for accordion button:", button);
-        continue;
-      }
-      ensureElementHasId(sibling);
-      button.setAttribute("aria-controls", sibling.id);
+  for (var i = 0; i < headers.length; i++) {
+    var header = headers[i];
+    var button =
+      header.tagName === "BUTTON" ? initButton(header) : initHeading(header);
+    if (!button) {
+      continue;
     }
 
     // Set up the initial `aria-expanded` state.
     if (button.hasAttribute("aria-expanded")) {
-      hasAriaExpandedMarkup = true;
+      hasExpandedMarkup = true;
     } else {
       button.setAttribute("aria-expanded", "false");
     }
 
-    button.addEventListener("click", function (event) {
-      var target = event.target;
-      if (!(target instanceof HTMLElement)) {
-        return;
-      }
-      var expanded = target.getAttribute("aria-expanded") === "true";
-      target.setAttribute("aria-expanded", expanded ? "false" : "true");
-    });
+    button.addEventListener("click", onButtonClick);
+    buttons.push(button);
   }
 
   // Expand the first item by default
-  if (!hasAriaExpandedMarkup && buttons.length) {
+  if (!hasExpandedMarkup && buttons.length) {
     buttons[0].setAttribute("aria-expanded", "true");
   }
 }
 
 /**
- * @param {HTMLElement} accordion
+ * Links a hand-written button to the content it opens. This is the old markup:
+ * such a button does nothing until this script runs
+ *
+ * @param {Element} button
+ * @returns {Element | null}
  */
-function getButtons(accordion) {
-  var buttons = [];
+function initButton(button) {
+  if (!button.getAttribute("aria-controls")) {
+    var sibling = button.nextElementSibling;
+    if (!(sibling instanceof HTMLElement) || sibling.tagName !== "DIV") {
+      return null;
+    }
+    ensureElementHasId(sibling);
+    button.setAttribute("aria-controls", sibling.id);
+  }
+  return button;
+}
+
+/**
+ * Creates the toggle button inside an item heading and
+ * moves the heading text into that button
+ *
+ * @param {Element} heading
+ * @returns {Element | null}
+ */
+function initHeading(heading) {
+  // Aleady initialized
+  var firstChild = heading.firstElementChild;
+  if (firstChild && firstChild.tagName === "BUTTON") {
+    return null;
+  }
+
+  var sibling = heading.nextElementSibling;
+  if (!(sibling instanceof HTMLElement) || sibling.tagName !== "DIV") {
+    console.error("No sibling <div> found for accordion heading:", heading);
+    return null;
+  }
+
+  var button = document.createElement("button");
+  button.type = "button";
+  while (heading.firstChild) {
+    button.appendChild(heading.firstChild);
+  }
+  heading.appendChild(button);
+
+  // Point the button at the content <div>, which needs an id to point at
+  ensureElementHasId(sibling);
+  button.setAttribute("aria-controls", sibling.id);
+
+  // `aria-expanded` is not allowed on headings, so `data-expanded`
+  // used there instead and copied to the button
+  if (heading.hasAttribute("data-expanded")) {
+    var expanded = heading.getAttribute("data-expanded") === "true";
+    button.setAttribute("aria-expanded", expanded ? "true" : "false");
+  }
+
+  return button;
+}
+
+/**
+ * @param {Event} event
+ */
+function onButtonClick(event) {
+  var target = event.currentTarget;
+  if (!(target instanceof HTMLElement)) {
+    return;
+  }
+  var expanded = target.getAttribute("aria-expanded") === "true";
+  target.setAttribute("aria-expanded", expanded ? "false" : "true");
+}
+
+/**
+ * Get item headers, which are either <button> (deprecated) or <h2>-<h6> elements
+ *
+ * @param {HTMLElement} accordion
+ * @returns {Element[]}
+ */
+function getItemHeaders(accordion) {
+  var headers = [];
   for (var i = 0; i < accordion.children.length; i++) {
     var container = accordion.children[i];
     for (var j = 0; j < container.children.length; j++) {
       var child = container.children[j];
-      if (child.tagName === "BUTTON") {
-        buttons.push(child);
+      if (child.tagName === "BUTTON" || /^H[2-6]$/.test(child.tagName)) {
+        headers.push(child);
       }
     }
   }
-  return buttons;
+  return headers;
 }

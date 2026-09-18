@@ -102,8 +102,9 @@ interactief.
 
 Bijvoorbeeld, om de accordion component te gebruiken, neem je het bestand
 `accordion.js` op, en het script zal automatisch elk `.accordion` element
-initialiseren. Er is dan geen extra JavaScript-code nodig om het component
-werkend te krijgen.
+initialiseren en de toggle-buttons in de koppen van de onderdelen genereren.
+Er is dan geen extra JavaScript-code nodig om het component werkend te
+krijgen.
 
 <h3 id="no-javascript">Werken zonder JavaScript</h3>
 
