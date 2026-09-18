@@ -26,6 +26,11 @@ updates:
           - "@sveltejs/*"
           - typescript
           - vite
+      test:
+        patterns:
+          - "vitest"
+          - "@vitest/*"
+          - "@testing-library/*"
       lint:
         patterns:
           - "prettier"
