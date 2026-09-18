@@ -115,6 +115,24 @@ get_themes_to_process() {
   echo "${themes_to_process[@]}"
 }
 
+# Builds the Docker Compose image for a service. The build output is kept quiet
+# on success and printed in full when the build fails, so failures are not
+# silently swallowed.
+#
+# Arguments:
+#   $1: The name of the service to build.
+build_service() {
+  local service=$1
+  local output
+
+  echo "Building $service service image..."
+  if ! output=$(docker compose -f visreg/compose.yml build --no-cache "$service" 2>&1); then
+    echo "$output" >&2
+    echo "Building the '$service' image failed." >&2
+    exit 1
+  fi
+}
+
 # Runs the visual regression tests for the specified theme(s).
 # It iterates through the themes, setting the `THEME` environment variable and
 # running the `visreg-test` service via Docker Compose.
@@ -128,11 +146,8 @@ run_test() {
   local available_themes=("$@")
   local themes_to_process=($(get_themes_to_process "$theme" "${available_themes[@]}"))
 
-  echo "Building docs service image..."
-  docker compose -f visreg/compose.yml build --no-cache docs >/dev/null 2>&1
-
-  echo "Building visreg-test service image..."
-  docker compose -f visreg/compose.yml build --no-cache visreg-test >/dev/null 2>&1
+  build_service docs
+  build_service visreg-test
 
   local overall_exit_code=0
   for theme_name in "${themes_to_process[@]}"; do
@@ -160,11 +175,8 @@ run_approve() {
   local available_themes=("$@")
   local themes_to_process=($(get_themes_to_process "$theme" "${available_themes[@]}"))
 
-  echo "Building docs service image..."
-  docker compose -f visreg/compose.yml build --no-cache docs >/dev/null 2>&1
-
-  echo "Building visreg-update service image..."
-  docker compose -f visreg/compose.yml build --no-cache visreg-update >/dev/null 2>&1
+  build_service docs
+  build_service visreg-update
 
   local overall_exit_code=0
   for theme_name in "${themes_to_process[@]}"; do
