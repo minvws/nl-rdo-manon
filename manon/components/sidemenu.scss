@@ -128,12 +128,14 @@ main.sidemenu {
       top: theme.$sidemenu-button-margin-top;
       margin-left: theme.$sidemenu-button-margin-left;
 
-      margin-bottom: calc(theme.$sidemenu-nav-gap * -1);
+      @if theme.$sidemenu-nav-gap {
+        margin-bottom: calc(theme.$sidemenu-nav-gap * -1);
 
-      @if theme.$sidemenu-button-min-height {
-        margin-bottom: calc(
-          (theme.$sidemenu-nav-gap + theme.$sidemenu-button-min-height) * -1
-        );
+        @if theme.$sidemenu-button-min-height {
+          margin-bottom: calc(
+            (theme.$sidemenu-nav-gap + theme.$sidemenu-button-min-height) * -1
+          );
+        }
       }
 
       min-width: theme.$sidemenu-button-min-width;
