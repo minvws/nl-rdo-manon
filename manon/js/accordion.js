@@ -28,13 +28,11 @@ export function initAccordions() {
  */
 function initAccordion(accordion) {
   var hasExpandedMarkup = false;
-  var headers = getItemHeaders(accordion);
+  var headings = getItemHeadings(accordion);
   var buttons = [];
 
-  for (var i = 0; i < headers.length; i++) {
-    var header = headers[i];
-    var button =
-      header.tagName === "BUTTON" ? initButton(header) : initHeading(header);
+  for (var i = 0; i < headings.length; i++) {
+    var button = initHeading(headings[i]);
     if (!button) {
       continue;
     }
@@ -57,25 +55,6 @@ function initAccordion(accordion) {
 }
 
 /**
- * Links a hand-written button to the content it opens. This is the old markup:
- * such a button does nothing until this script runs
- *
- * @param {Element} button
- * @returns {Element | null}
- */
-function initButton(button) {
-  if (!button.getAttribute("aria-controls")) {
-    var sibling = button.nextElementSibling;
-    if (!(sibling instanceof HTMLElement) || sibling.tagName !== "DIV") {
-      return null;
-    }
-    ensureElementHasId(sibling);
-    button.setAttribute("aria-controls", sibling.id);
-  }
-  return button;
-}
-
-/**
  * Creates the toggle button inside an item heading and
  * moves the heading text into that button
  *
@@ -83,9 +62,11 @@ function initButton(button) {
  * @returns {Element | null}
  */
 function initHeading(heading) {
-  // Aleady initialized
-  var firstChild = heading.firstElementChild;
-  if (firstChild && firstChild.tagName === "BUTTON") {
+  if (heading.querySelector("button")) {
+    console.error(
+      "Accordion heading already contains a <button>, accordion.js generates it:",
+      heading
+    );
     return null;
   }
 
@@ -129,21 +110,26 @@ function onButtonClick(event) {
 }
 
 /**
- * Get item headers, which are either <button> (deprecated) or <h2>-<h6> elements
+ * Get the <h2>-<h6> item headings. Logs an error for a <button> item header
  *
  * @param {HTMLElement} accordion
  * @returns {Element[]}
  */
-function getItemHeaders(accordion) {
-  var headers = [];
+function getItemHeadings(accordion) {
+  var headings = [];
   for (var i = 0; i < accordion.children.length; i++) {
     var container = accordion.children[i];
     for (var j = 0; j < container.children.length; j++) {
       var child = container.children[j];
-      if (child.tagName === "BUTTON" || /^H[2-6]$/.test(child.tagName)) {
-        headers.push(child);
+      if (/^H[2-6]$/.test(child.tagName)) {
+        headings.push(child);
+      } else if (child.tagName === "BUTTON") {
+        console.error(
+          "Accordion items need a heading (h2-h6) instead of a <button>:",
+          child
+        );
       }
     }
   }
-  return headers;
+  return headings;
 }

@@ -36,25 +36,6 @@ function renderHeadingAccordion({ first = "", second = "" } = {}) {
   };
 }
 
-function renderLegacyAccordion({ first = "" } = {}) {
-  const result = renderAccordion(`
-    <ul class="accordion">
-      <li>
-        <button id="accordion-item-1" ${first}>Onderwerp 1</button>
-        <div aria-labelledby="accordion-item-1"><p>Content 1</p></div>
-      </li>
-      <li>
-        <button id="accordion-item-2">Onderwerp 2</button>
-        <div aria-labelledby="accordion-item-2"><p>Content 2</p></div>
-      </li>
-    </ul>`);
-
-  return {
-    ...result,
-    buttons: getAllByRole(result.container, "button"),
-  };
-}
-
 test("adds a body class on initialization", () => {
   renderHeadingAccordion();
 
@@ -223,23 +204,45 @@ test("skips a heading without a sibling content <div>", () => {
   errorSpy.mockRestore();
 });
 
-test("keeps supporting legacy markup with a <button> in it", async () => {
-  const { buttons, user } = renderLegacyAccordion();
-  const content = buttons[0].nextElementSibling;
+test("logs an error and skips a <button> item header", () => {
+  const errorSpy = vi.spyOn(console, "error").mockImplementation(() => {});
 
-  expect(buttons[0].parentElement.tagName).toBe("LI");
-  expect(content.id).toBeTruthy();
-  expect(buttons[0]).toHaveAttribute("aria-controls", content.id);
-  expect(buttons[0]).toHaveAttribute("aria-expanded", "true");
-  expect(buttons[1]).toHaveAttribute("aria-expanded", "false");
+  const { container } = renderAccordion(`
+    <ul class="accordion">
+      <li>
+        <button id="accordion-item-1">Onderwerp 1</button>
+        <div aria-labelledby="accordion-item-1"><p>Content 1</p></div>
+      </li>
+    </ul>`);
 
-  await user.click(buttons[0]);
-  expect(buttons[0]).toHaveAttribute("aria-expanded", "false");
+  expect(errorSpy).toHaveBeenCalledOnce();
+  const button = getByRole(container, "button");
+  expect(button).not.toHaveAttribute("aria-controls");
+  expect(button).not.toHaveAttribute("aria-expanded");
+
+  errorSpy.mockRestore();
 });
 
-test("respects authored aria-expanded on a legacy button", () => {
-  const { buttons } = renderLegacyAccordion({ first: 'aria-expanded="false"' });
+test("logs an error and skips a heading that already contains a <button>", () => {
+  const errorSpy = vi.spyOn(console, "error").mockImplementation(() => {});
 
-  expect(buttons[0]).toHaveAttribute("aria-expanded", "false");
-  expect(buttons[1]).toHaveAttribute("aria-expanded", "false");
+  const { container } = renderAccordion(`
+    <ul class="accordion">
+      <li>
+        <h3><button type="button">Onderwerp 1</button></h3>
+        <div><p>Content 1</p></div>
+      </li>
+      <li>
+        <h3>Onderwerp 2</h3>
+        <div><p>Content 2</p></div>
+      </li>
+    </ul>`);
+
+  expect(errorSpy).toHaveBeenCalledOnce();
+  const buttons = getAllByRole(container, "button");
+  expect(buttons).toHaveLength(2);
+  expect(buttons[0]).not.toHaveAttribute("aria-expanded");
+  expect(buttons[1]).toHaveAttribute("aria-expanded", "true");
+
+  errorSpy.mockRestore();
 });
