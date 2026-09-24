@@ -50,9 +50,7 @@ kop en is alle content zichtbaar.
   <p>Standaard is het eerste onderdeel opengeklapt. Dit kan aangepast worden middels het <code>data-expanded</code>-attribuut van de kop.</p>
   <p>Voeg <code>data-expanded="false"</code> toe aan de kop van het eerste onderdeel om te voorkomen dat het standaard opengeklapt is.</p>
   <p>Voeg <code>data-expanded="true"</code> toe aan de kop van een ander onderdeel om te zorgen dat dat onderdeel standaard opengeklapt is. Let op: dit zorgt ervoor dat het eerste onderdeel niet meer standaard opengeklapt is. Om te zorgen dat het eerste onderdeel óók standaard opengeklapt is, kan je ook daar <code>data-expanded="true"</code> toevoegen.</p>
-  <p>Zet verder geen <code>button</code>, <code>aria-expanded</code> of <code>aria-controls</code> in je HTML: <code>accordion.js</code> voegt die bij het initialiseren zelf toe. Werkt de JavaScript niet, dan blijven de koppen gewone koppen, staan alle onderdelen opengeklapt en blijft alle content beschikbaar. Zie <a href="/getting-started/installation#no-javascript">werken zonder JavaScript</a>.</p>
-  <p>Oudere markup met een <code>button</code> in plaats van een kop blijft werken, inclusief <code>aria-expanded</code> op die <code>button</code>, maar de kop-variant is de aanbevolen markup.</p>
-</div>
+  <p>Zet verder geen <code>button</code>, <code>aria-expanded</code> of <code>aria-controls</code> in je HTML: <code>accordion.js</code> voegt die bij het initialiseren zelf toe. Werkt de JavaScript niet, dan blijven de koppen gewone koppen, staan alle onderdelen opengeklapt en blijft alle content beschikbaar. Zie <a href="/getting-started/installation#no-javascript">werken zonder JavaScript</a>.</p></div>
 
 <h2 id="examples">Voorbeelden</h2>
 
