@@ -35,6 +35,16 @@
   }
 }
 
+%accordion-item-heading {
+  &:has(> button) {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    hyphens: manual;
+    max-width: 100%;
+  }
+}
+
 %accordion-content {
   display: flex;
   flex-direction: column;
@@ -70,8 +80,12 @@ ul.accordion {
     padding: 0;
     gap: 0;
 
-    > button {
-      @extend %accordion-button;
+    > :is(h2, h3, h4, h5, h6) {
+      @extend %accordion-item-heading;
+
+      > button {
+        @extend %accordion-button;
+      }
     }
 
     > div {
@@ -98,8 +112,12 @@ ul.accordion {
     width: 100%;
     gap: 0;
 
-    > button {
-      @extend %accordion-button;
+    > :is(h2, h3, h4, h5, h6) {
+      @extend %accordion-item-heading;
+
+      > button {
+        @extend %accordion-button;
+      }
     }
 
     > div {
@@ -157,10 +175,11 @@ section.accordion {
           height: theme.$accordion-button-icon-after-height;
         }
       }
+    }
 
-      & + div {
-        display: none;
-      }
+    /* Collapsed content */
+    :is(h2, h3, h4, h5, h6):has(> button[aria-expanded="false"]) + div {
+      display: none;
     }
 
     /* The expanded state */
