@@ -88,10 +88,6 @@ ul.accordion {
       }
     }
 
-    > button {
-      @extend %accordion-button;
-    }
-
     > div {
       @extend %accordion-content;
     }
@@ -122,10 +118,6 @@ ul.accordion {
       > button {
         @extend %accordion-button;
       }
-    }
-
-    > button {
-      @extend %accordion-button;
     }
 
     > div {
@@ -183,13 +175,9 @@ section.accordion {
           height: theme.$accordion-button-icon-after-height;
         }
       }
-
-      & + div {
-        display: none;
-      }
     }
 
-    /* Collapsed content when the toggle button was generated inside a heading */
+    /* Collapsed content */
     :is(h2, h3, h4, h5, h6):has(> button[aria-expanded="false"]) + div {
       display: none;
     }
