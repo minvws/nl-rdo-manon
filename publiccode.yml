@@ -1,0 +1,72 @@
+publiccodeYmlVersion: "0.7"
+name: Manon
+url: https://github.com/minvws/nl-rdo-manon
+landingURL: https://minvws.github.io/nl-rdo-manon
+logo: docs/src/img/logo-dark.svg
+softwareType: library
+developmentStatus: stable
+
+platforms:
+  - web
+
+categories:
+  - design-system
+
+organisation:
+  uri: https://github.com/minvws
+  name: Ministerie van Volksgezondheid, Welzijn en Sport
+
+description:
+  nl:
+    localisedName: Manon
+    shortDescription: >-
+      Een flexibel en toegankelijk design framework voor semantische HTML.
+    longDescription: |
+      Manon is een design framework dat de voorkeur geeft aan styling op basis
+      van de HTML-structuur, wat zorgt voor overzichtelijke en goed
+      onderhoudbare code. Manon streeft ernaar om de toegankelijkheid van
+      webapplicaties te verbeteren door het bieden van toegankelijke
+      componenten die voldoen aan de WCAG-richtlijnen. Het framework bestaat
+      uit losse componenten die afzonderlijk geïmporteerd kunnen worden, zodat
+      je niet de hele set hoeft te gebruiken. Naast een aantal meegeleverde
+      thema's kun je ook je eigen thema samenstellen door de variabelen van de
+      componenten te overschrijven.
+    documentation: https://minvws.github.io/nl-rdo-manon
+    features:
+      - Classless styling op basis van semantische HTML
+      - Toegankelijke componenten volgens de WCAG-richtlijnen
+      - Losse componenten die afzonderlijk te importeren zijn
+      - Aanpasbare thema's
+  en:
+    localisedName: Manon
+    shortDescription: >-
+      A flexible and accessible design framework for semantic HTML.
+    longDescription: |
+      Manon is a design framework that prioritizes styling based on HTML
+      structure, leading to clean and maintainable code. It strives to improve
+      the accessibility of web applications by providing accessible components
+      that comply with the WCAG guidelines. Manon consists of individual
+      components that can be imported separately, so you don't have to use the
+      entire set. In addition to offering a number of themes, Manon also allows
+      you to create your own by overriding the components' variables.
+    documentation: https://minvws.github.io/nl-rdo-manon
+    features:
+      - Classless styling based on semantic HTML
+      - Accessible components that comply with the WCAG guidelines
+      - Individual components that can be imported separately
+      - Customisable themes
+
+legal:
+  license: EUPL-1.2
+  mainCopyrightOwner: Ministerie van Volksgezondheid, Welzijn en Sport
+
+maintenance:
+  type: internal
+  contacts:
+    - name: Ministerie van Volksgezondheid, Welzijn en Sport
+
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - nl
+    - en
