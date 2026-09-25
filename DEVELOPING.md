@@ -197,6 +197,38 @@ To run the TypeScript type checker for the `manon` package, run:
 pnpm run --dir manon check
 ```
 
+## Changelog
+
+Notable changes are recorded in [CHANGELOG.md](CHANGELOG.md), following
+[Keep a Changelog](https://keepachangelog.com/en/1.1.0/). When your pull request
+contains a user-facing change, add an entry under the `[Unreleased]` section.
+
+Prefix breaking changes with `**BREAKING:**` and file them under the category
+that fits (usually `Changed` or `Removed`). Describe what users need to do to
+upgrade, for example:
+
+```markdown
+### Removed
+
+- **BREAKING:** Removed the `$legacy-color` variable. Use `$primary-color`
+  instead.
+```
+
+For major releases, add a short migration note directly under the release
+heading that summarizes how to upgrade, and link to a migration guide in the
+documentation when the changes need more explanation:
+
+```markdown
+## [19.0.0] - 2026-10-01
+
+This release contains breaking changes to the accordion markup and removes
+deprecated variables.
+
+### Changed
+
+- **BREAKING:** ...
+```
+
 ## Monorepo Structure
 
 The project is a monorepo managed with pnpm workspaces. The main packages are:
