@@ -222,8 +222,7 @@ documentation when the changes need more explanation:
 ## [19.0.0] - 2026-10-01
 
 This release contains breaking changes to the accordion markup and removes
-deprecated variables. See the [migration guide](https://example.com) for
-upgrade instructions.
+deprecated variables.
 
 ### Changed
 
