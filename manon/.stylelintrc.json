@@ -1,6 +1,15 @@
 {
   "extends": "stylelint-config-standard-scss",
+  "plugins": ["stylelint-no-unsupported-browser-features"],
   "rules": {
+    "plugin/no-unsupported-browser-features": [
+      true,
+      {
+        "severity": "warning",
+        "ignorePartialSupport": true,
+        "ignore": ["css3-cursors", "css-resize", "css-when-else"]
+      }
+    ],
     "color-hex-length": null,
     "comment-whitespace-inside": null,
     "custom-property-empty-line-before": null,

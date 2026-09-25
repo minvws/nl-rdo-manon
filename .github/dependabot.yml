@@ -37,6 +37,7 @@ updates:
           - "prettier-*"
           - "stylelint"
           - "stylelint-*"
+          - "caniuse-lite"
     ignore:
       # svelte-check does not yet support a plain TypeScript 7 install; it
       # requires TS 6 and TS 7 side by side plus the experimental --tsgo flag.

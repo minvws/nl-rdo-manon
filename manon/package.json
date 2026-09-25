@@ -34,12 +34,14 @@
     "@testing-library/user-event": "^14.6.7",
     "@types/node": "^26.6.1",
     "@vitest/coverage-v8": "^5.0.1",
+    "caniuse-lite": "^1.0.30001810",
     "jsdom": "^30.0.1",
     "prettier": "^3.9.6",
     "sass": "^1.104.1",
     "sass-true": "^10.1.0",
     "stylelint": "^17.15.0",
     "stylelint-config-standard-scss": "^17.0.0",
+    "stylelint-no-unsupported-browser-features": "^8.1.2",
     "vitest": "^5.0.1"
   },
   "repository": {
