@@ -692,10 +692,15 @@
   $sidemenu-list-item-padding: spacing.$spacing-025 0,
 
   // skip to content
+  $skip-to-content-width: max-content,
   $skip-to-content-padding: spacing.$spacing-050,
-  $skip-to-content-margin: 0 spacing.$spacing-100 0 0,
   $skip-to-content-align-self: center,
   $skip-to-content-order: 1,
+  $skip-to-content-position: absolute,
+  $skip-to-content-top: spacing.$spacing-100,
+  $skip-to-content-left: 50%,
+  $skip-to-content-transform: translateX(-50%),
+  $skip-to-content-z-index: 30,
 
   // slogan
   $slogan-text-color: semantic.$color-text-default,
