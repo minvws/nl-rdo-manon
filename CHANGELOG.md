@@ -57,6 +57,8 @@ Changes for releases up to and including v18.6.2 are documented in the
 
 ### Fixed
 
+- Buttons, inputs, selects and textareas now use the font of the page when the
+  theme does not set a font for them.
 - Sidemenu nav gap calculation no longer fails when the element is missing
   ([#1538](https://github.com/minvws/nl-rdo-manon/pull/1538)).
 - Removed unnecessary whitespace within the sidemenu in Rijkshuisstijl 2008
