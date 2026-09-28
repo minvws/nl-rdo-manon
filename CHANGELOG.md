@@ -25,6 +25,8 @@ Changes for releases up to and including v18.6.2 are documented in the
   [#1519](https://github.com/minvws/nl-rdo-manon/pull/1519)).
 - This changelog
   ([#1547](https://github.com/minvws/nl-rdo-manon/pull/1547)).
+- `$form-fieldset-group-margin-bottom` and `$form-fieldset-label-display`
+  variables to space labels, fields and groups inside a fieldset.
 
 ### Changed
 
@@ -59,6 +61,8 @@ Changes for releases up to and including v18.6.2 are documented in the
 
 - Buttons, inputs, selects and textareas now use the font of the page when the
   theme does not set a font for them.
+- Icore Open: spacing between label and field, and between groups, inside a
+  fieldset now matches forms without a fieldset.
 - Sidemenu nav gap calculation no longer fails when the element is missing
   ([#1538](https://github.com/minvws/nl-rdo-manon/pull/1538)).
 - Removed unnecessary whitespace within the sidemenu in Rijkshuisstijl 2008
