@@ -51,11 +51,11 @@ importers:
         specifier: ^0.12.8
         version: 0.12.8(svelte@5.57.0(@typescript-eslint/types@8.57.2))
       prettier:
-        specifier: ^3.9.6
-        version: 3.9.6
+        specifier: ^3.9.9
+        version: 3.9.9
       prettier-plugin-svelte:
         specifier: ^4.1.1
-        version: 4.1.1(prettier@3.9.6)(svelte@5.57.0(@typescript-eslint/types@8.57.2))
+        version: 4.1.1(prettier@3.9.9)(svelte@5.57.0(@typescript-eslint/types@8.57.2))
       sass:
         specifier: ^1.104.1
         version: 1.104.1
@@ -128,8 +128,8 @@ importers:
         specifier: ^30.0.1
         version: 30.0.1
       prettier:
-        specifier: ^3.9.6
-        version: 3.9.6
+        specifier: ^3.9.9
+        version: 3.9.9
       sass:
         specifier: ^1.104.1
         version: 1.104.1
@@ -1333,11 +1333,6 @@ packages:
       prettier: ^3.0.0
       svelte: ^5.0.0
 
-  prettier@3.9.6:
-    resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
-    engines: {node: '>=14'}
-    hasBin: true
-
   prettier@3.9.9:
     resolution: {integrity: sha512-Z/CJHIkdujO/OtN7nXUii0Rf3VT5SRuhjBA82Xvu2XhBUgX3nhP67T0LHceBdQLex7OOFGTox+Q5Yg8Jk2Qivg==}
     engines: {node: '>=14'}
@@ -2007,10 +2002,10 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@prettier/sync@0.6.1(prettier@3.9.6)':
+  '@prettier/sync@0.6.1(prettier@3.9.9)':
     dependencies:
       make-synchronized: 0.8.0
-      prettier: 3.9.6
+      prettier: 3.9.9
 
   '@rolldown/binding-android-arm-eabi@1.2.8':
     optional: true
@@ -2738,12 +2733,10 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  prettier-plugin-svelte@4.1.1(prettier@3.9.6)(svelte@5.57.0(@typescript-eslint/types@8.57.2)):
+  prettier-plugin-svelte@4.1.1(prettier@3.9.9)(svelte@5.57.0(@typescript-eslint/types@8.57.2)):
     dependencies:
-      prettier: 3.9.6
+      prettier: 3.9.9
       svelte: 5.57.0(@typescript-eslint/types@8.57.2)
-
-  prettier@3.9.6: {}
 
   prettier@3.9.9: {}
 
@@ -2821,10 +2814,10 @@ snapshots:
 
   sass-true@10.1.0(sass@1.104.1):
     dependencies:
-      '@prettier/sync': 0.6.1(prettier@3.9.6)
+      '@prettier/sync': 0.6.1(prettier@3.9.9)
       jest-diff: 30.2.0
       postcss: 8.5.24
-      prettier: 3.9.6
+      prettier: 3.9.9
     optionalDependencies:
       sass: 1.104.1
 
