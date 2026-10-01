@@ -36,7 +36,7 @@
     "@vitest/coverage-v8": "^5.0.1",
     "caniuse-lite": "^1.0.30001810",
     "jsdom": "^30.0.1",
-    "prettier": "^3.9.6",
+    "prettier": "^3.9.9",
     "sass": "^1.104.1",
     "sass-true": "^10.1.0",
     "stylelint": "^17.15.0",
