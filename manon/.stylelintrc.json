@@ -5,7 +5,6 @@
     "plugin/no-unsupported-browser-features": [
       true,
       {
-        "severity": "warning",
         "ignorePartialSupport": true,
         "ignore": ["css3-cursors", "css-resize", "css-when-else"]
       }
