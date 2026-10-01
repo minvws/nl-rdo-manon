@@ -1,0 +1,12 @@
+# Supported browsers, based on the Rijksoverheid browser support guideline:
+# https://www.communicatierijk.nl/vakkennis/rijkswebsites/aanbevolen-richtlijnen/browsersupport
+#
+# Chrome on iOS uses WebKit and is covered by the iOS Safari entry.
+
+last 2 Chrome versions
+last 2 Firefox versions
+last 2 Edge versions
+last 2 Safari major versions
+last 2 iOS major versions
+last 2 ChromeAndroid versions
+last 2 Samsung versions

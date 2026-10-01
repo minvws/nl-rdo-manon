@@ -129,6 +129,19 @@ Daarnaast hebben we
 [enkele voorbeeldimplementaties](https://github.com/minvws/nl-rdo-manon/tree/main/examples/)
 geleverd in verschillende frameworks.
 
+## 🌐 Browserondersteuning
+
+Manon ondersteunt de browsers uit de
+[Rijksrichtlijn voor browsersupport](https://www.communicatierijk.nl/vakkennis/rijkswebsites/aanbevolen-richtlijnen/browsersupport):
+de laatste twee versies van
+
+- Chrome, Firefox, Edge en Safari op desktop
+- Safari en Chrome op iOS
+- Chrome en Samsung Internet op Android
+
+Deze afspraak is vastgelegd in [`.browserslistrc`](./.browserslistrc). Met
+`npx browserslist` zie je welke versies daar op dit moment onder vallen.
+
 ## 🏗️ Projecten gebouwd met Manon
 
 Hieronder staan enkele projecten die gemaakt zijn met Manon:

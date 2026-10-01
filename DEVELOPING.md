@@ -138,6 +138,37 @@ To automatically fix linting issues, run:
 pnpm run --dir manon lint:css:fix
 ```
 
+### Browser Support
+
+The supported browsers are defined in [`.browserslistrc`](./.browserslistrc).
+Run `npx browserslist` to see which browser versions this currently resolves
+to.
+
+Stylelint checks the SCSS in `manon` against this policy using
+[stylelint-no-unsupported-browser-features](https://github.com/RJWadley/stylelint-no-unsupported-browser-features).
+Using a CSS feature that is not supported by all of these browsers fails the
+lint.
+
+The check only knows features that are in the caniuse data, so it does not
+catch everything. For example, `field-sizing` is not detected. Check browser
+support for new CSS features yourself as well, for example on
+[caniuse.com](https://caniuse.com) or [MDN](https://developer.mozilla.org).
+
+The check does not take `@supports` into account. If you deliberately use a
+newer feature with a fallback, disable the rule for that line and explain why:
+
+```scss
+// Progressive enhancement: older browsers fall back to the default layout.
+/* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+.example:has(> img) {
+  display: grid;
+}
+```
+
+The browser versions are resolved using the data in `caniuse-lite`. It is a
+direct devDependency of `manon` so that Dependabot keeps it up to date, which it
+does not do for transitive dependencies. Do not remove it.
+
 ## Testing
 
 The project uses vitest for testing. To run the tests for the `manon` package,
