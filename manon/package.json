@@ -35,7 +35,7 @@
     "@types/node": "^26.6.2",
     "@vitest/coverage-v8": "^5.0.1",
     "caniuse-lite": "^1.0.30001810",
-    "jsdom": "^30.0.1",
+    "jsdom": "^30.1.1",
     "prettier": "^3.9.9",
     "sass": "^1.105.0",
     "sass-true": "^10.1.0",
