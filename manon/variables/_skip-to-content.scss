@@ -13,6 +13,13 @@ $skip-to-content-align-self: null !default;
 $skip-to-content-order: null !default;
 $skip-to-content-justify-content: null !default;
 
+// Positioning
+$skip-to-content-position: static !default;
+$skip-to-content-top: null !default;
+$skip-to-content-left: null !default;
+$skip-to-content-transform: null !default;
+$skip-to-content-z-index: null !default;
+
 // Hover
 $skip-to-content-hover-background-color: null !default;
 $skip-to-content-hover-text-color: null !default;
