@@ -1,7 +1,11 @@
 @use "../variables" as theme;
 
 @mixin in-focus {
-  position: static;
+  position: theme.$skip-to-content-position;
+  top: theme.$skip-to-content-top;
+  left: theme.$skip-to-content-left;
+  transform: theme.$skip-to-content-transform;
+  z-index: theme.$skip-to-content-z-index;
   display: flex;
   height: auto;
   width: theme.$skip-to-content-width;

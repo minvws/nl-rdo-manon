@@ -25,6 +25,13 @@ Changes for releases up to and including v18.6.2 are documented in the
   [#1519](https://github.com/minvws/nl-rdo-manon/pull/1519)).
 - This changelog
   ([#1547](https://github.com/minvws/nl-rdo-manon/pull/1547)).
+- `$form-fieldset-group-margin-bottom` and `$form-fieldset-label-display`
+  variables to space labels, fields and groups inside a fieldset
+  ([#1548](https://github.com/minvws/nl-rdo-manon/pull/1548)).
+- `$skip-to-content-position`, `$skip-to-content-top`, `$skip-to-content-left`,
+  `$skip-to-content-transform` and `$skip-to-content-z-index` variables to
+  position the focused skip link
+  ([#1548](https://github.com/minvws/nl-rdo-manon/pull/1548)).
 
 ### Changed
 
@@ -57,6 +64,17 @@ Changes for releases up to and including v18.6.2 are documented in the
 
 ### Fixed
 
+- Buttons, inputs, selects and textareas now use the font of the page when the
+  theme does not set a font for them
+  ([#1548](https://github.com/minvws/nl-rdo-manon/pull/1548)).
+- Icore Open: spacing between label and field, and between groups, inside a
+  fieldset now matches forms without a fieldset
+  ([#1548](https://github.com/minvws/nl-rdo-manon/pull/1548)).
+- Icore Open: the focused skip link is shown on top of the header instead of
+  being squeezed into it, so the navigation no longer shifts
+  ([#1548](https://github.com/minvws/nl-rdo-manon/pull/1548)).
+- Secondary link buttons keep their styling after the link has been visited
+  ([#1548](https://github.com/minvws/nl-rdo-manon/pull/1548)).
 - Sidemenu nav gap calculation no longer fails when the element is missing
   ([#1538](https://github.com/minvws/nl-rdo-manon/pull/1538)).
 - Removed unnecessary whitespace within the sidemenu in Rijkshuisstijl 2008
