@@ -10,6 +10,8 @@ Changes for releases up to and including v18.6.2 are documented in the
 
 ## [Unreleased]
 
+## [19.0.0] - 2026-10-05
+
 ### Added
 
 - `publiccode.yml` describing the project
@@ -90,4 +92,5 @@ Changes for releases up to and including v18.6.2 are documented in the
 - Documentation: corrected SCSS import paths in the quick start guide
   ([#1511](https://github.com/minvws/nl-rdo-manon/pull/1511)).
 
-[unreleased]: https://github.com/minvws/nl-rdo-manon/compare/v18.6.2...HEAD
+[unreleased]: https://github.com/minvws/nl-rdo-manon/compare/v19.0.0...HEAD
+[19.0.0]: https://github.com/minvws/nl-rdo-manon/compare/v18.6.2...v19.0.0
