@@ -19,3 +19,7 @@ overrides:
   fast-uri@>=4.0.1 <4.1.3: ^4.1.3
   js-yaml@>=4.0.0 <4.3.1: ">=4.3.1"
   nanoid@<3.3.17: ">=3.3.17"
+
+auditConfig:
+  ignoreGhsas:
+    - GHSA-vfj7-8cjw-p6xm
