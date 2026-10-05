@@ -33,3 +33,8 @@ body,
     position: relative;
   }
 }
+
+/* Form controls use the font of their parent */
+:where(button, input, select, textarea) {
+  font: inherit;
+}
