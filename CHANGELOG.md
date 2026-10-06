@@ -10,6 +10,11 @@ Changes for releases up to and including v18.6.2 are documented in the
 
 ## [Unreleased]
 
+### Fixed
+
+- Sidemenu: nested lists no longer add extra space below the item that contains
+  them, so all items in the menu are spaced evenly
+
 ## [19.0.0] - 2026-10-05
 
 ### Added
