@@ -1,0 +1,28 @@
+name: Audit
+
+# Audits the full dependency tree, including dev and build tooling. This runs
+# on a schedule instead of on pull requests, so new advisories in tooling we
+# don't ship don't block unrelated PRs. Findings are fixed in one batch.
+
+on:
+  schedule:
+    # Mondays at 06:00 UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: Audit all dependencies
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Audit all dependencies
+        run: pnpm audit --audit-level=high

@@ -11,33 +11,22 @@ updates:
     cooldown:
       default-days: 7
 
-  # Maintain dependencies for pnpm
+  # Maintain dependencies for pnpm. Version updates are grouped by dependency
+  # type and run monthly; security updates arrive separately as advisories
+  # are published, grouped into a single PR.
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
     groups:
-      build:
+      dev-dependencies:
+        dependency-type: "development"
+      production-dependencies:
+        dependency-type: "production"
+      security:
+        applies-to: security-updates
         patterns:
-          - mdsvex
-          - sass
-          - "svelte"
-          - "svelte-*"
-          - "@sveltejs/*"
-          - typescript
-          - vite
-      test:
-        patterns:
-          - "vitest"
-          - "@vitest/*"
-          - "@testing-library/*"
-      lint:
-        patterns:
-          - "prettier"
-          - "prettier-*"
-          - "stylelint"
-          - "stylelint-*"
-          - "caniuse-lite"
+          - "*"
     ignore:
       # svelte-check does not yet support a plain TypeScript 7 install; it
       # requires TS 6 and TS 7 side by side plus the experimental --tsgo flag.
