@@ -13,7 +13,7 @@ Changes for releases up to and including v18.6.2 are documented in the
 ### Fixed
 
 - Sidemenu: nested lists no longer add extra space below the item that contains
-  them, so all items in the menu are spaced evenly
+  them, so all items in the menu are spaced evenly ([#1569](https://github.com/minvws/nl-rdo-manon/pull/1569))
 
 ## [19.0.0] - 2026-10-05
 
