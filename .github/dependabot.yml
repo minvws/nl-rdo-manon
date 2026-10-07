@@ -11,9 +11,10 @@ updates:
     cooldown:
       default-days: 7
 
-  # Maintain dependencies for pnpm. Version updates are grouped by dependency
-  # type and run monthly; security updates arrive separately as advisories
-  # are published, grouped into a single PR.
+  # Maintain dependencies for pnpm. Minor and patch updates are grouped by
+  # dependency type and run monthly; major updates get their own PR so a
+  # breaking change doesn't hold back the rest. Security updates arrive
+  # separately as advisories are published, grouped into a single PR.
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -21,8 +22,10 @@ updates:
     groups:
       dev-dependencies:
         dependency-type: "development"
+        update-types: ["minor", "patch"]
       production-dependencies:
         dependency-type: "production"
+        update-types: ["minor", "patch"]
       security:
         applies-to: security-updates
         patterns:
