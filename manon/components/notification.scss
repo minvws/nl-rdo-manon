@@ -28,6 +28,8 @@
 @mixin notification-error {
   background-color: theme.$notification-error-background-color;
   color: theme.$notification-error-text-color;
+  border-width: theme.$notification-error-border-width;
+  border-style: theme.$notification-error-border-style;
   border-color: theme.$notification-error-border-color;
 
   .icon {
@@ -39,6 +41,8 @@
 @mixin notification-explanation {
   background-color: theme.$notification-explanation-background-color;
   color: theme.$notification-explanation-text-color;
+  border-width: theme.$notification-explanation-border-width;
+  border-style: theme.$notification-explanation-border-style;
   border-color: theme.$notification-explanation-border-color;
 
   .icon {
@@ -50,6 +54,8 @@
 @mixin notification-warning {
   background-color: theme.$notification-warning-background-color;
   color: theme.$notification-warning-text-color;
+  border-width: theme.$notification-warning-border-width;
+  border-style: theme.$notification-warning-border-style;
   border-color: theme.$notification-warning-border-color;
 
   .icon {
@@ -61,6 +67,8 @@
 @mixin notification-confirmation {
   background-color: theme.$notification-confirmation-background-color;
   color: theme.$notification-confirmation-text-color;
+  border-width: theme.$notification-confirmation-border-width;
+  border-style: theme.$notification-confirmation-border-style;
   border-color: theme.$notification-confirmation-border-color;
 
   .icon {
@@ -72,6 +80,8 @@
 @mixin notification-system {
   background-color: theme.$notification-system-background-color;
   color: theme.$notification-system-text-color;
+  border-width: theme.$notification-system-border-width;
+  border-style: theme.$notification-system-border-style;
   border-color: theme.$notification-system-border-color;
 
   .icon {
