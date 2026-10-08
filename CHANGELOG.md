@@ -10,10 +10,13 @@ Changes for releases up to and including v18.6.2 are documented in the
 
 ## [Unreleased]
 
+## [19.0.1] - 2026-10-08
+
 ### Fixed
 
 - Sidemenu: nested lists no longer add extra space below the item that contains
-  them, so all items in the menu are spaced evenly ([#1569](https://github.com/minvws/nl-rdo-manon/pull/1569))
+  them, so all items in the menu are spaced evenly
+  ([#1569](https://github.com/minvws/nl-rdo-manon/pull/1569)).
 
 ## [19.0.0] - 2026-10-05
 
@@ -97,5 +100,6 @@ Changes for releases up to and including v18.6.2 are documented in the
 - Documentation: corrected SCSS import paths in the quick start guide
   ([#1511](https://github.com/minvws/nl-rdo-manon/pull/1511)).
 
-[unreleased]: https://github.com/minvws/nl-rdo-manon/compare/v19.0.0...HEAD
+[unreleased]: https://github.com/minvws/nl-rdo-manon/compare/v19.0.1...HEAD
+[19.0.1]: https://github.com/minvws/nl-rdo-manon/compare/v19.0.0...v19.0.1
 [19.0.0]: https://github.com/minvws/nl-rdo-manon/compare/v18.6.2...v19.0.0
