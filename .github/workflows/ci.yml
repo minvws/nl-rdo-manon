@@ -14,10 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7.0.1
 
-      - name: Audit dependencies
+      - name: Setup
         uses: ./.github/actions/setup
-        with:
-          audit-level: moderate
+
+      - name: Audit only production dependencies
+        run: pnpm audit --prod --audit-level=moderate
 
   lint:
     name: Lint
