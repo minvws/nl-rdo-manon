@@ -116,6 +116,15 @@ main.sidemenu {
       list-style: theme.$sidemenu-list-item-list-style;
     }
 
+    /* Nested lists */
+    li:has(ul) {
+      padding-bottom: 0;
+
+      > ul {
+        margin-bottom: 0;
+      }
+    }
+
     /* Button */
     .sidemenu-toggle {
       display: flex;
