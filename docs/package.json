@@ -20,14 +20,14 @@
     "@sveltejs/kit": "^2.70.3",
     "@sveltejs/vite-plugin-svelte": "^7.3.1",
     "mdsvex": "^0.12.8",
-    "prettier": "^3.9.9",
+    "prettier": "^3.9.10",
     "prettier-plugin-svelte": "^4.1.1",
-    "sass": "^1.105.1",
-    "svelte": "^5.57.1",
-    "svelte-check": "^4.7.6",
+    "sass": "^1.106.1",
+    "svelte": "^5.57.2",
+    "svelte-check": "^4.7.7",
     "svelte-preprocess-import-assets": "^1.1.0",
     "typescript": "^6.0.3",
-    "unist-util-visit": "^5.1.0",
-    "vite": "^8.3.3"
+    "unist-util-visit": "^5.2.0",
+    "vite": "^8.3.5"
   }
 }
