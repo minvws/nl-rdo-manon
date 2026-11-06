@@ -13,6 +13,20 @@ Daarnaast hebben we
 [enkele voorbeeldimplementaties](https://github.com/minvws/nl-rdo-manon/tree/main/examples/)
 geleverd in verschillende frameworks.
 
+## Sass of kant-en-klare CSS
+
+Je kunt Manon op twee manieren in je project opnemen:
+
+- **Kant-en-klare CSS**: de CSS-bestanden in `@minvws/manon-themes/dist` (ook
+  beschikbaar via de CDN, zie de [snelstart](/getting-started/quickstart))
+  bevatten een thema **en alle componenten**. Je hoeft verder niets te
+  importeren.
+- **Sass**: wanneer je een thema met `@use` importeert, krijg je **alleen de
+  configuratie** van dat thema: de Sass-variabelen, de fonts en de
+  icon classes. Het thema bevat geen componenten. Je kiest zelf welke
+  componenten je importeert: de volledige bundel, een deelbundel of losse
+  componenten. Dit is de manier die hieronder beschreven wordt.
+
 ## Vereisten
 
 Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
@@ -52,39 +66,63 @@ Voordat je begint, zorg ervoor dat je project voldoet aan de volgende vereisten:
    npm install @minvws/manon @minvws/manon-themes
    ```
 
-3. **Importeer in je SCSS**
+3. **Importeer een thema**
 
    In je hoofd SCSS-bestand (bijv. `main.scss`), importeer je eerst een thema.
-   Daarna kun je de benodigde componenten importeren. In dit voorbeeld gebruiken
-   we het `icore-open` thema.
+   In dit voorbeeld gebruiken we het `icore-open` thema.
 
    ```scss
-   // Importeer een thema naar keuze. Hier gebruiken we het iCore Open thema als voorbeeld.
+   // Importeer een thema naar keuze. Hier gebruiken we het icore-open thema als voorbeeld.
    @use "@minvws/manon-themes/icore-open";
    ```
 
-4. **Importeer componenten**
+   Het thema stelt de Sass-variabelen van Manon in, laadt de fonts en maakt de
+   icon classes aan. Het bevat zelf geen componenten: met alleen deze regel
+   bevat je CSS nog geen styling voor bijvoorbeeld knoppen of formulieren.
 
-   Je kunt nu individuele Manon componenten importeren als je niet het hele
-   framework nodig hebt.
+   Importeer het thema altijd als eerste. Het thema configureert
+   `@minvws/manon/variables`. Wordt er eerst een component geladen, dan zijn de
+   variabelen al met hun standaardwaarden geladen en kan het thema ze niet meer
+   instellen.
 
-   ```scss
-   // Voorbeeld: Importeer de button component
-   @use "@minvws/manon/components/button";
-   ```
+4. **Importeer de componenten**
 
-   Importeer de componenten die je nodig hebt in je project. Voor een lijst van
-   beschikbare componenten, zie de [componenten documentatie](/library). Bij elk
-   component vind je een voorbeeld van hoe je deze kunt importeren en gebruiken.
+   Na het thema importeer je de componenten die je wilt gebruiken. Je hebt
+   daarvoor de volgende mogelijkheden:
 
-   Importeer de componenten ná het importeren van het thema, zodat je de
-   componenten kunt gebruiken met de juiste styling. De import volgorde is
-   bijvoorbeeld dan als volgt:
+   - **Alle componenten**: de bundel `all` bevat alle componenten en
+     utility-klassen. Dit is de eenvoudigste manier om te beginnen.
 
-   ```scss
-   @use "@minvws/manon-themes/icore-open";
-   @use "@minvws/manon/components/button";
-   ```
+     ```scss
+     @use "@minvws/manon-themes/icore-open";
+     @use "@minvws/manon/components/bundles/all";
+     ```
+
+   - **Losse componenten**: importeer alleen de componenten die je nodig hebt.
+     Dit houdt je CSS kleiner.
+
+     ```scss
+     @use "@minvws/manon-themes/icore-open";
+     @use "@minvws/manon/components/base";
+     @use "@minvws/manon/components/button";
+     ```
+
+     Voor een lijst van beschikbare componenten, zie de
+     [componenten documentatie](/library). Bij elk component vind je een
+     voorbeeld van hoe je deze kunt importeren en gebruiken.
+
+   - **Deelbundels**: in `@minvws/manon/components/bundles` vind je ook bundels
+     per onderwerp, zoals `buttons`, `layout`, `navigation`, `notifications`
+     en `tables`. Deze bevatten niet de basisstijlen (zoals
+     `base` en `focus`) en de utility-klassen. Die importeer je dan los, zoals
+     `@minvws/manon/utility/visually-hidden`.
+
+     ```scss
+     @use "@minvws/manon-themes/icore-open";
+     @use "@minvws/manon/components/base";
+     @use "@minvws/manon/components/bundles/buttons";
+     @use "@minvws/manon/components/bundles/tables";
+     ```
 
 ## Javascript
 
