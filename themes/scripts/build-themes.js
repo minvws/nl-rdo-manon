@@ -11,8 +11,11 @@
  *    as the default variant and does not get a special suffix in the output
  *    filename.
  * 3. If no variants are found, it creates a default version of the theme.
- * 4. It compiles each theme's SCSS into both regular and minified CSS using
- *    the `sass` library.
+ * 4. It compiles each theme's SCSS, together with the complete component
+ *    bundle (`@minvws/manon/components/bundles/all`), into both regular and
+ *    minified CSS using the `sass` library. The themes' Sass entry points only
+ *    configure Manon, so the prebuilt CSS is the only place where a theme and
+ *    the components are combined.
  * 5. It copies any font files associated with a theme to the `dist` folder.
  * 6. The final CSS and font files are placed in a `dist` folder, organized by
  *    theme.
@@ -28,6 +31,9 @@ import * as sass from "sass";
 
 const themesFolder = path.resolve("../themes");
 const themeDirs = globSync("./*/_index.scss", { cwd: themesFolder });
+
+// Every prebuilt CSS file contains all components
+const componentsBundle = `@use "@minvws/manon/components/bundles/all";`;
 const outFolder = path.resolve("./dist");
 const tempOutFolder = path.resolve("./.manon");
 
@@ -73,7 +79,8 @@ for (const themeDir of themeDirs) {
         content: `@use "./${theme}/variants/${variantName}" with (
           $font-path: "./fonts",
           $icons-path: "./img/icons"
-        );`,
+        );
+        ${componentsBundle}`,
       });
     });
   } else {
@@ -85,7 +92,7 @@ for (const themeDir of themeDirs) {
         $font-path: "./fonts",
         $icons-path: "./img/icons"
       );
-      @use "@minvws/manon/components/bundles/all";`,
+      ${componentsBundle}`,
     });
   }
 

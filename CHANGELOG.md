@@ -10,6 +10,20 @@ Changes for releases up to and including v18.6.2 are documented in the
 
 ## [Unreleased]
 
+### Changed
+
+- **Breaking:** the `rijkshuisstijl-2008` theme variants
+  (`@minvws/manon-themes/rijkshuisstijl-2008/variants/*`) no longer include all
+  components. Like the other themes, a variant now only configures Manon when
+  imported with Sass. Add `@use "@minvws/manon/components/bundles/all";` (or the
+  components you need) after the variant. The prebuilt CSS in `dist/` is
+  unchanged and still contains all components.
+
+### Fixed
+
+- Documentation: clarified that a Sass theme contains no components, while the
+  prebuilt CSS does. Fixed broken download, CDN and installation links.
+
 ## [19.0.1] - 2026-10-08
 
 ### Fixed
