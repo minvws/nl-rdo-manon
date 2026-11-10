@@ -89,6 +89,8 @@ main.sidemenu {
       position: sticky;
       top: 0;
       overflow: auto;
+      overscroll-behavior: contain;
+      box-sizing: border-box;
       padding: theme.$sidemenu-ul-padding;
       max-height: theme.$sidemenu-main-max-height;
       display: theme.$sidemenu-sticky-display;

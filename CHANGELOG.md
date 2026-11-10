@@ -10,6 +10,11 @@ Changes for releases up to and including v18.6.2 are documented in the
 
 ## [Unreleased]
 
+### Fixed
+
+- Sidemenu: menus taller than the viewport now scroll, so every item can be
+  reached. `$sidemenu-main-max-height` now defaults to `100dvh`.
+
 ## [19.0.1] - 2026-10-08
 
 ### Fixed
