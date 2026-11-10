@@ -13,7 +13,8 @@ Changes for releases up to and including v18.6.2 are documented in the
 ### Fixed
 
 - Sidemenu: menus taller than the viewport now scroll, so every item can be
-  reached. `$sidemenu-main-max-height` now defaults to `100dvh`.
+  reached. `$sidemenu-main-max-height` now defaults to `100dvh`
+  ([#1593](https://github.com/minvws/nl-rdo-manon/pull/1593)).
 
 ## [19.0.1] - 2026-10-08
 
