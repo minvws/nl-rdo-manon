@@ -8,6 +8,6 @@
     "@minvws/manon-themes": "18.0.0-alpha.3"
   },
   "devDependencies": {
-    "sass": "^1.106.1"
+    "sass": "^1.107.1"
   }
 }
