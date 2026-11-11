@@ -63,12 +63,14 @@ installation:
 
 ### Manual installation
 
-[Download Manon](https://github.com/minvws/nl-rdo-manon/releases/latest/download/manon-themes.zip)
-and link `manon-themes/dist/manon.min.css` in the `<head>` of your HTML file:
+[Download Manon](https://github.com/minvws/nl-rdo-manon/releases/latest/download/manon-themes.zip),
+unzip it and link `dist/manon.min.css` in the `<head>` of your HTML file:
 
 ```html
 <link rel="stylesheet" href="path/to/manon.min.css" />
 ```
+
+The prebuilt CSS files in `dist` contain a theme and all components.
 
 ### Installation via CDN
 
@@ -89,8 +91,9 @@ following line to the `<head>` of your HTML file:
 npm install @minvws/manon @minvws/manon-themes
 ```
 
-You can then import a theme from Manon and the complete component library into
-your Sass file:
+Importing a theme with Sass only gives you the theme's configuration
+(variables, fonts and icons), not the components. Import the components as
+well, for example the complete component library:
 
 ```scss
 @use "@minvws/manon-themes/icore-open";
@@ -98,7 +101,7 @@ your Sass file:
 ```
 
 If you don’t want to use the full set, you have the option to import specific
-components instead:
+components instead, after the theme:
 
 ```scss
 @use "@minvws/manon/components/breadcrumb-bar";
@@ -106,7 +109,7 @@ components instead:
 ```
 
 Read more in the
-[installation documentation](https://minvws.github.io/nl-rdo-manon/getting-started/customization)
+[installation documentation](https://minvws.github.io/nl-rdo-manon/getting-started/installation)
 about using Manon with Sass in your project for more customization options.
 
 ### Ready to use

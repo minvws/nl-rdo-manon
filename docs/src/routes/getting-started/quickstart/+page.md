@@ -12,13 +12,17 @@ geleverd in verschillende frameworks.
 
 ## Handmatige installatie
 
-[Download Manon](https://github.com/minvws/nl-rdo-manon/archive/refs/heads/main.zip)
-en link het `manon-themes/dist/manon.min.css` in de `<head>` van je
+[Download Manon](https://github.com/minvws/nl-rdo-manon/releases/latest/download/manon-themes.zip),
+pak het uit en link `dist/manon.min.css` in de `<head>` van je
 HTML-bestand:
 
 ```html
 <link rel="stylesheet" href="path/to/manon.min.css" />
 ```
+
+Dit CSS-bestand bevat het `icore-open` thema en alle componenten. In
+`dist` vind je ook de andere thema's, zoals
+`rijkshuisstijl-2008/manon.rijkshuisstijl-2008.min.css`.
 
 ## Installatie via CDN
 
@@ -27,7 +31,10 @@ Je kunt ook een thema van Manon gebruiken via
 volgende regel toe aan de `<head>` van je HTML-bestand:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@minvws/manon-themes/manon.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@minvws/manon-themes/dist/manon.min.css"
+/>
 ```
 
 ## Installatie via npm
@@ -36,21 +43,26 @@ volgende regel toe aan de `<head>` van je HTML-bestand:
 npm install @minvws/manon @minvws/manon-themes
 ```
 
-Je kunt dan een thema van Manon importeren in je Sass-bestand:
+Wanneer je Manon via Sass gebruikt, importeer je eerst een thema en daarna de
+componenten. Het thema bevat alleen de configuratie (variabelen, fonts en
+iconen), geen componenten. Importeer daarom ook de bundel met alle
+componenten:
 
 ```scss
 @use "@minvws/manon-themes/icore-open";
+@use "@minvws/manon/components/bundles/all";
 ```
 
-Je hebt dan de mogelijkheid om specifieke componenten te importeren indien je
-niet de volledige set nodig hebt:
+Of importeer alleen de componenten die je nodig hebt:
 
 ```scss
+@use "@minvws/manon-themes/icore-open";
+@use "@minvws/manon/components/base";
 @use "@minvws/manon/components/hero";
 ```
 
 Lees meer informatie in de
-[installatie documentatie](https://minvws.github.io/nl-rdo-manon/getting-started/installation)
+[installatie documentatie](/getting-started/installation)
 over het gebruik van Manon met Sass in je project voor meer maatwerkopties.
 
 ## Gebruik
