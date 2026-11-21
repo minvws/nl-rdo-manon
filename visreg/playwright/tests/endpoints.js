@@ -41,6 +41,8 @@ const endpoints = [
   "/snippets/sidemenu/content-navigation/collapsible/code-example.html",
   "/snippets/sidemenu/content-navigation/expandable",
   "/snippets/sidemenu/content-navigation/expandable/code-example.html",
+  "/snippets/sidemenu/content-navigation/scrollable",
+  "/snippets/sidemenu/content-navigation/scrollable/code-example.html",
   "/snippets/sidemenu/content-navigation/static",
   "/snippets/sidemenu/content-navigation/static/code-example.html",
   "/snippets/sidemenu/page-navigation/collapsible",
